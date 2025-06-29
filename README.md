@@ -1,4 +1,4 @@
-# Agentic RAG System for Estimation of Distribution Algorithms
+# Agentic RAG for Estimation of Distribution Algorithms
 
 An intelligent document processing and retrieval system that combines OCR processing with Retrieval-Augmented Generation (RAG) capabilities.
 
