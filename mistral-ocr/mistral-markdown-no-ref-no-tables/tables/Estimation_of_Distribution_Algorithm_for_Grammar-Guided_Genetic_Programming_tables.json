@@ -1,0 +1,662 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Estimation of Distribution Algorithm for Grammar-Guided Genetic Programming.md",
+    "filename": "Estimation of Distribution Algorithm for Grammar-Guided Genetic Programming.md",
+    "title": "Estimation of Distribution Algorithm for Grammar-Guided Genetic Programming",
+    "year": "2024"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 shows comparisons of the average number of evaluations performed to reach a stop criterion, using GGGP with an incremental EDA approach and WX as variation operators, when searching for specific uniformly generated target derivation trees of $G_{\\text {rec }}$ with 5 and 10 recursions. The stop criterion is met for both GGGP approaches",
+      "headers": [
+        "",
+        "5 recursions",
+        "",
+        "10 recursions",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Evaluations",
+          "Fitness",
+          "Evaluations",
+          "Fitness"
+        ],
+        [
+          "EDA",
+          "$3,200(4,664.8)$",
+          "$3.89(0.35)$",
+          "$9,800(1,400)$",
+          "$5.79(1.21)$"
+        ],
+        [
+          "WX",
+          "$9.72(20.23)$",
+          "$0.32(0.47)$",
+          "$136.24(58.89)$",
+          "$3.76(1.23)$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 reports that WX consistently outperforms EDA, since WX achieves lower fitness values than EDA with fewer evaluations. WX can recombine parent derivation",
+      "headers": [
+        "Pop.",
+        "Initialization",
+        "Selection",
+        "Replacement",
+        "Execs.",
+        "Stop criteria"
+      ],
+      "rows": [
+        [
+          100,
+          "Equiprobable",
+          5,
+          "Sub. the worst <br> indiv. with off.",
+          100,
+          10000
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "CFG that define the problems under study.",
+      "headers": [
+        "$G_{D F F N N}=$ <br> $(V, \\Sigma, R, L)$",
+        "$G_{R B S}=(V, \\Sigma, R, R B S)$",
+        "$G_{S R}=(V, \\Sigma, R, E)$"
+      ],
+      "rows": [
+        [
+          "$V=\\{L, N\\}$",
+          "$V=\\{R B S, R, A, C, C L, E V, O P, V L, E Q, V A\\}$",
+          "$V=\\{E, O P 1, O P 2\\}$"
+        ],
+        [
+          "$R=\\{$",
+          "$R=\\{$",
+          "$R=\\{$"
+        ],
+        [
+          "$r_{1}: L::=N / L$",
+          "$r_{1}: R B S::=R R B S \\mid R$",
+          "$r_{1}: E::=O P 1 E$"
+        ],
+        [
+          "$r_{2}: L::=N$",
+          "$r_{2}: R::=i f A$ then $C$",
+          "$r_{2}: E::=O P 2 E E$"
+        ],
+        [
+          "$r_{3}: N::=n N$",
+          "$r_{3}: A::=C L A \\mid C L$",
+          "$r_{3}: E::=v$"
+        ],
+        [
+          "$r_{4}: N::=n\\}$",
+          "$r_{4}: C L::=E V O P E V$",
+          "$r_{4}: O P 1::=\\sin \\mid \\cos$"
+        ],
+        [
+          "",
+          "$r_{9}: V L::=t \\mid f$",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "4",
+      "table_title": "Configurations employed in the experiments.",
+      "headers": [
+        "Hyperparameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "GGGP approaches",
+          "WX, EDA, and SEDA"
+        ],
+        [
+          "Population size",
+          100
+        ],
+        [
+          "Initialization algorithm",
+          "Grammatically uniform"
+        ],
+        [
+          "Selection operator",
+          5
+        ],
+        [
+          "Replacement",
+          "Substitutes the worst individuals with the offspring"
+        ],
+        [
+          "Mutation",
+          "None"
+        ],
+        [
+          "Replacement rates",
+          "$20 \\%, 40 \\%, 60 \\%, 80 \\%$, and $100 \\%$"
+        ],
+        [
+          "SEDA smoothing factors $\\sigma$",
+          "$10^{-4}, 10^{-3}, 10^{-2}$, and $10^{-1}$"
+        ],
+        [
+          "Fitness function",
+          3
+        ],
+        [
+          "Executions run",
+          100
+        ],
+        [
+          "Target derivation tree size",
+          50
+        ],
+        [
+          "Target derivation trees",
+          100
+        ],
+        [
+          "",
+          "approach"
+        ],
+        [
+          "Stop criteria",
+          "1. The target derivation tree is found."
+        ],
+        [
+          "",
+          "2. The avg. population fitness improves less than $1 \\%$ in 25"
+        ],
+        [
+          "",
+          "evaluations."
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Post hoc test: hyperparameter configurations included in the homogeneous subset $(\\alpha=0.05)$ with the best fitness means for SEDA with $G_{D F F N N}$, WX with $G_{R B S}$, and SEDA with $G_{R B S}$. Tukey HSD test. Dependent variable: fitness of the final solution. 100 executions are run in all cases. Asterisks in brackets mark the hyperparameters chosen in the subsequent performance comparisons.",
+      "headers": [
+        "SEDA with $G_{D F F N N}$",
+        "",
+        "WX with $G_{R B S}$",
+        "",
+        "SEDA with $G_{R B S}$",
+        ""
+      ],
+      "rows": [
+        [
+          "Hyperparams.",
+          "Mean",
+          "Hyperparams.",
+          "Mean",
+          "Hyperparams.",
+          "Mean"
+        ],
+        [
+          "$100 \\%, 10^{-2}$",
+          0.39,
+          "$100 \\%$ (*)",
+          63.9,
+          "$100 \\%, 10^{-3}$",
+          15.12
+        ],
+        [
+          "$80 \\%, 10^{-2}(*)$",
+          0.49,
+          "$80 \\%$",
+          65.88,
+          "$80 \\%, 10^{-2}(*)$",
+          16.69
+        ],
+        [
+          "$60 \\%, 10^{-2}$",
+          0.57,
+          "$60 \\%$",
+          70.58,
+          "$80 \\%, 10^{-3}$",
+          17.02
+        ],
+        [
+          "$40 \\%, 10^{-2}$",
+          0.73,
+          "",
+          "",
+          "$60 \\%, 10^{-2}$",
+          17.65
+        ],
+        [
+          "$20 \\%, 10^{-2}$",
+          0.85,
+          "",
+          "",
+          "$60 \\%, 10^{-3}$",
+          18.77
+        ],
+        [
+          "$40 \\%, 10^{-3}$",
+          1.29,
+          "",
+          "",
+          "$40 \\%, 10^{-3}$",
+          19.15
+        ],
+        [
+          "$100 \\%, 10^{-3}$",
+          1.32,
+          "",
+          "",
+          "$40 \\%, 10^{-2}$",
+          22.33
+        ],
+        [
+          "$80 \\%, 10^{-3}$",
+          1.44,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$80 \\%, 10^{-1}$",
+          1.49,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$40 \\%, 10^{-1}$",
+          1.59,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$60 \\%, 10^{-1}$",
+          1.66,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$60 \\%, 10^{-3}$",
+          1.85,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$20 \\%, 10^{-3}$",
+          1.97,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$100 \\%, 10^{-4}$",
+          2.02,
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Post hoc test: hyperparameter configurations included in the homogeneous subset $(\\alpha=0.05)$ with the best fitness means for the three evolutionary approaches working with $G_{S R}$. Tukey HSD test. Dependent variable: fitness of the final solution. 100 executions are run in all cases. Asterisks in brackets mark the hyperparameters chosen in the subsequent performance comparisons.",
+      "headers": [
+        "WX with $G_{S R}$",
+        "",
+        "EDA with $G_{S R}$",
+        "",
+        "SEDA with $G_{S R}$",
+        ""
+      ],
+      "rows": [
+        [
+          "Hyperparams.",
+          "Mean",
+          "Hyperparams.",
+          "Mean",
+          "Hyperparams.",
+          "Mean"
+        ],
+        [
+          "$100 \\%$ (*)",
+          99.27,
+          "$80 \\%$ (*)",
+          116.26,
+          "$80 \\%, 10^{-2}(*)$",
+          97.77
+        ],
+        [
+          "$80 \\%$",
+          102.17,
+          "$60 \\%$",
+          116.88,
+          "$60 \\%, 10^{-2}$",
+          98.54
+        ],
+        [
+          "",
+          "",
+          "$40 \\%$",
+          117.67,
+          "$80 \\%, 10^{-3}$",
+          99.6
+        ],
+        [
+          "",
+          "",
+          "$20 \\%$",
+          118.62,
+          "$100 \\%, 10^{-3}$",
+          99.79
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Average fitness of the final solutions and average evaluations, in thousands, performed to meet a stop criterion using $G_{D F F N N}$ after running 100 executions for each evolutionary algorithm and target derivation tree size. Significant best values are marked with an asterisk in brackets.",
+      "headers": [
+        "Average fitness of the final solutions",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          10,
+          "",
+          "",
+          20,
+          "",
+          "",
+          50,
+          "",
+          "",
+          75,
+          "",
+          "",
+          100,
+          "",
+          ""
+        ],
+        [
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA"
+        ],
+        [
+          "$0.0^{(*)}$",
+          0.32,
+          0.07,
+          "$0.05^{(*)}$",
+          1.09,
+          0.23,
+          0.4,
+          2.47,
+          0.49,
+          1.87,
+          4.25,
+          "$0.99^{(*)}$",
+          3.3,
+          5.87,
+          "$1.33^{(*)}$"
+        ],
+        [
+          "Average evaluations performed (in thousands)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$0.26^{(*)}$",
+          0.79,
+          0.5,
+          0.98,
+          1.79,
+          1.21,
+          3.97,
+          2.81,
+          2.56,
+          4.79,
+          2.91,
+          3.1,
+          6.21,
+          "$2.95^{(*)}$",
+          3.56
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 15
+    },
+    {
+      "table_number": "8",
+      "table_title": "Average fitness of the final solutions and average evaluations, in thousands, performed to meet a stop criterion using $G_{R B S}$ after running 100 executions for each evolutionary algorithm and target derivation tree size. Significant best values are marked with an asterisk in brackets.",
+      "headers": [
+        "Average fitness of the final solutions",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          10,
+          "",
+          "",
+          20,
+          "",
+          "",
+          50,
+          "",
+          "",
+          75,
+          "",
+          "",
+          100,
+          ""
+        ],
+        [
+          "Average evaluations performed (in thousands)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 14
+    },
+    {
+      "table_number": "9",
+      "table_title": "Average fitness of the final solutions and average evaluations, in thousands, performed to meet a stop criterion using $G_{S R}$ after running 100 executions for each evolutionary algorithm and target derivation tree size. Significant best values are marked with an asterisk in brackets.",
+      "headers": [
+        "Average fitness of the final solutions",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          10,
+          "",
+          "",
+          20,
+          "",
+          "",
+          50,
+          "",
+          "",
+          75,
+          "",
+          "",
+          100,
+          "",
+          ""
+        ],
+        [
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA"
+        ],
+        [
+          11.4,
+          16.2,
+          "$9.96^{(*)}$",
+          30.3,
+          40.5,
+          "$27.8^{(*)}$",
+          99.3,
+          116.3,
+          "$97.8^{(*)}$",
+          151.2,
+          181.9,
+          "$147.4^{(*)}$",
+          "$212.2^{(*)}$",
+          249.1,
+          223.3
+        ],
+        [
+          "Average evaluations performed (in thousands)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          6.7,
+          "$3.03^{(*)}$",
+          4.7,
+          7.2,
+          "$3.1^{(*)}$",
+          5.5,
+          8.2,
+          "$3.1^{(*)}$",
+          7.4,
+          7.9,
+          "$3.1^{(*)}$",
+          7.1,
+          7.6,
+          "$3.1^{(*)}$",
+          5.4
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 15
+    }
+  ]
+}

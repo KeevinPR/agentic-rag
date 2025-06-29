@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Parameter Calibration of the Patch Growing Algorithm for Urban Land Change Simulations.md",
+    "filename": "Parameter Calibration of the Patch Growing Algorithm for Urban Land Change Simulations.md",
+    "title": "Parameter Calibration of the Patch Growing Algorithm for Urban Land Change Simulations",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Coeff.",
+        "Values",
+        "Map (variables $x$ )",
+        "Base Map"
+      ],
+      "rows": [
+        [
+          "$a$",
+          0.19,
+          "Intercept",
+          "N/A"
+        ],
+        [
+          "$\\beta_{0}$",
+          0.03,
+          "Development Pressure",
+          2011
+        ],
+        [
+          "$\\beta_{1}$",
+          0.0,
+          "Distance to interchanges",
+          2011
+        ],
+        [
+          "$\\beta_{2}$",
+          "$-0.48$",
+          "Distance to protected areas (in kms)",
+          "Protected Areas"
+        ],
+        [
+          "$\\beta_{3}$",
+          0.21,
+          "Dist to water shapes",
+          "Water Shape"
+        ],
+        [
+          "$\\beta_{4}$",
+          "$-0.01$",
+          "Smoothing map of forest",
+          "Forest"
+        ],
+        [
+          "$\\beta_{5}$",
+          "$-700.33$",
+          "Road Density",
+          2011
+        ],
+        [
+          "$\\beta_{6}$",
+          0.03,
+          "Travel time to city center",
+          2011
+        ],
+        [
+          "$\\beta_{7}$",
+          "$-0.02$",
+          "Slope",
+          "Elevation"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "run",
+        "EDALNFE",
+        "\\#Eval.",
+        "Time",
+        "DE",
+        "\\#Eval.",
+        "Time"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\mathbf{2 6 . 9 5}$",
+          92,
+          "$17.97 \\%$",
+          18.43,
+          512,
+          "$100 \\%$"
+        ],
+        [
+          2,
+          20.19,
+          119,
+          "$23.93 \\%$",
+          18.59,
+          512,
+          "$100 \\%$"
+        ],
+        [
+          3,
+          20.74,
+          100,
+          "$19.53 \\%$",
+          18.7,
+          512,
+          "$100 \\%$"
+        ],
+        [
+          4,
+          18.97,
+          131,
+          "$25.59 \\%$",
+          18.48,
+          512,
+          "$100 \\%$"
+        ],
+        [
+          5,
+          18.22,
+          512,
+          "$100.00 \\%$",
+          18.64,
+          512,
+          "$100 \\%$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    }
+  ]
+}

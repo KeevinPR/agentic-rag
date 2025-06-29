@@ -1,0 +1,735 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/A hybrid multi-objective EDA for robust resource constraint project scheduling with uncertainty.md",
+    "filename": "A hybrid multi-objective EDA for robust resource constraint project scheduling with uncertainty.md",
+    "title": "A hybrid multi-objective EDA for robust resource constraint project scheduling with uncertainty",
+    "year": "2019"
+  },
+  "references": {
+    "header": "## References",
+    "content": "Brucker, F., Dreal, A., Möhring, R., Neumann, K., \\& Pesch, E. (1999). Resource-constrained project scheduling: Notation, classification, models, and methods. European Journal of Operational Research, 112-1, 3-41.\nChen, X., Asuntha, G., \\& Lin, X. (2008). Improving Bayesian network structure learning with mutual information-based node ordering in the E2 algorithm. IEEE Transactions on Knowledge and Data Engineering, 20-5, 628-640.\nGrefenstette, J. J. (1986). Optimization of control parameters for genetic algorithms. IEEE Transactions on Systems, Man, and Cybernetics, 16(1), 122-128.\nHansen, P., \\& Mladenović, N. (2005). Variable neighborhood search. In E. K. Burke, \\& G. Kendall (Eds.). Search methodologies (pp. 211-238). US: Springer.\nHao, X., Lin, H. W., Chen, X., \\& Murata, T. (2012). Cooperative Bayesian optimization algorithm: A novel approach to multiple resources scheduling problem. IEEJ Transactions on Electronics, Information and Systems, 132-12, 2007-2018.\nHerroelen, W., \\& Leus, R. (2004). The construction of stable project baseline schedules. European Journal of Operational Research, 156, 550-565.\nHerroelen, W., \\& Leus, R. (2005). Project scheduling under uncertainty: Survey and research potentials. Project Management and Scheduling, 165, 289-306.\nJensen, M. T. (2001). Robust and flexible scheduling with evolutionary computation. Ph.D. thesisDepartment of Computer Science, University of Aarhus.\nKolisch, R., \\& Sprecher, A. (1997). PSPLIB - A project scheduling problem library: OR Software - OBSEP operations research software exchange program. European Journal of Operational Research, 96-1, 205-216.\nLarrañaga, P., Karshenas, H., Bielza, C., \\& Santana, R. (2012). A review on probabilistic graphical models in evolutionary computation. Journal of Heuristics, 18-5, 795-819.\nLarraraga, P., \\& Lozano, J. A. (2002). Estimation of distribution algorithms: A new tool for evolu-tionary computation. Springer.\nMichiels, W., Aarts, E., \\& Korst, J. (2007). Theoretical aspects of local search. Springer Science \\& Business Media.\nSchott, J. B. (1995). Fault tolerant design using single and multicriteria genetic algorithm optimization. Massachusetts Institute of Technology.\nShakyu, S. K. (2006). DEUM: A framework for an estimation of distribution algorithm based on markov random fields. The Robert Gordon University.\nShakyu, S., Santana, R., \\& Lozano, J. A. (2011). A Markovianity based optimisation algorithm. Genetic Programming and Evolvable Machines, 13-2, 159-195.\nTien, J., Hao, X., \\& Murata, T. (2014). Markov network based EDA and robust project scheduling with multi-mode resource constraint and rework uncertainty. The Third Asian Conference on Information Systems, 370-377.\nTien, J., Hao, X., \\& Murata, T. (2016). Markov network based multi-objective EDA and its application for resource constrained project scheduling. IEEJ Transactions on Electronics, Information and Systems, 136-3, 290-298.\nWestera, W. (2006). Decathlon, towards a balanced and sustainable performance assessment method. New Studies in Athletics, IAAF, 21-1, 39-51.\nZhang, W., Gen, M., \\& Jo, J. (2014). Hybrid sampling strategy-based multiobjective evolutionary algorithm for process planning and scheduling problem. Journal of Intelligent Manufacturing, 25(5), 881-897.\nZhang, W., Wang, Y., Wang, C., Xiao, L., \\& Gen, M. (2017). Fast multiobjective hybrid evolutionary algorithm based on mixed sampling strategy. International conference on management science and engineering management (pp. 106-116). Cham: Springer.\nZhang, W., Xu, W., Liu, G., \\& Gen, M. (2017). An effective hybrid evolutionary algorithm for stochastic multiobjective assembly line balancing problem. Journal of Intelligent Manufacturing, 28(3), 783-790.\nZitzler, E., Laumann, M., \\& Thiele, L. (2001). SPEA2: Improving the strength Pareto evolutionary algorithm.\nZitzler, E., \\& Thiele, L. (1999). Multiobjective evolutionary algorithms: A comparative case study and the strength Pareto approach. IEEE Transactions on Evolutionary Computation, 3(4), 257-271.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Brucker, F., Dreal, A., Möhring, R., Neumann, K., \\& Pesch, E. (1999). Resource-constrained project scheduling: Notation, classification, models, and methods. European Journal of Operational Research, 112-1, 3-41."
+      },
+      {
+        "ref_id": "2",
+        "text": "Chen, X., Asuntha, G., \\& Lin, X. (2008). Improving Bayesian network structure learning with mutual information-based node ordering in the E2 algorithm. IEEE Transactions on Knowledge and Data Engineering, 20-5, 628-640."
+      },
+      {
+        "ref_id": "3",
+        "text": "Grefenstette, J. J. (1986). Optimization of control parameters for genetic algorithms. IEEE Transactions on Systems, Man, and Cybernetics, 16(1), 122-128."
+      },
+      {
+        "ref_id": "4",
+        "text": "Hansen, P., \\& Mladenović, N. (2005). Variable neighborhood search. In E. K. Burke, \\& G. Kendall (Eds.). Search methodologies (pp. 211-238). US: Springer."
+      },
+      {
+        "ref_id": "5",
+        "text": "Hao, X., Lin, H. W., Chen, X., \\& Murata, T. (2012). Cooperative Bayesian optimization algorithm: A novel approach to multiple resources scheduling problem. IEEJ Transactions on Electronics, Information and Systems, 132-12, 2007-2018."
+      },
+      {
+        "ref_id": "6",
+        "text": "Herroelen, W., \\& Leus, R. (2004). The construction of stable project baseline schedules. European Journal of Operational Research, 156, 550-565."
+      },
+      {
+        "ref_id": "7",
+        "text": "Herroelen, W., \\& Leus, R. (2005). Project scheduling under uncertainty: Survey and research potentials. Project Management and Scheduling, 165, 289-306."
+      },
+      {
+        "ref_id": "8",
+        "text": "Jensen, M. T. (2001). Robust and flexible scheduling with evolutionary computation. Ph.D. thesisDepartment of Computer Science, University of Aarhus."
+      },
+      {
+        "ref_id": "9",
+        "text": "Kolisch, R., \\& Sprecher, A. (1997). PSPLIB - A project scheduling problem library: OR Software - OBSEP operations research software exchange program. European Journal of Operational Research, 96-1, 205-216."
+      },
+      {
+        "ref_id": "10",
+        "text": "Larrañaga, P., Karshenas, H., Bielza, C., \\& Santana, R. (2012). A review on probabilistic graphical models in evolutionary computation. Journal of Heuristics, 18-5, 795-819."
+      },
+      {
+        "ref_id": "11",
+        "text": "Larraraga, P., \\& Lozano, J. A. (2002). Estimation of distribution algorithms: A new tool for evolu-tionary computation. Springer."
+      },
+      {
+        "ref_id": "12",
+        "text": "Michiels, W., Aarts, E., \\& Korst, J. (2007). Theoretical aspects of local search. Springer Science \\& Business Media."
+      },
+      {
+        "ref_id": "13",
+        "text": "Schott, J. B. (1995). Fault tolerant design using single and multicriteria genetic algorithm optimization. Massachusetts Institute of Technology."
+      },
+      {
+        "ref_id": "14",
+        "text": "Shakyu, S. K. (2006). DEUM: A framework for an estimation of distribution algorithm based on markov random fields. The Robert Gordon University."
+      },
+      {
+        "ref_id": "15",
+        "text": "Shakyu, S., Santana, R., \\& Lozano, J. A. (2011). A Markovianity based optimisation algorithm. Genetic Programming and Evolvable Machines, 13-2, 159-195."
+      },
+      {
+        "ref_id": "16",
+        "text": "Tien, J., Hao, X., \\& Murata, T. (2014). Markov network based EDA and robust project scheduling with multi-mode resource constraint and rework uncertainty. The Third Asian Conference on Information Systems, 370-377."
+      },
+      {
+        "ref_id": "17",
+        "text": "Tien, J., Hao, X., \\& Murata, T. (2016). Markov network based multi-objective EDA and its application for resource constrained project scheduling. IEEJ Transactions on Electronics, Information and Systems, 136-3, 290-298."
+      },
+      {
+        "ref_id": "18",
+        "text": "Westera, W. (2006). Decathlon, towards a balanced and sustainable performance assessment method. New Studies in Athletics, IAAF, 21-1, 39-51."
+      },
+      {
+        "ref_id": "19",
+        "text": "Zhang, W., Gen, M., \\& Jo, J. (2014). Hybrid sampling strategy-based multiobjective evolutionary algorithm for process planning and scheduling problem. Journal of Intelligent Manufacturing, 25(5), 881-897."
+      },
+      {
+        "ref_id": "20",
+        "text": "Zhang, W., Wang, Y., Wang, C., Xiao, L., \\& Gen, M. (2017). Fast multiobjective hybrid evolutionary algorithm based on mixed sampling strategy. International conference on management science and engineering management (pp. 106-116). Cham: Springer."
+      },
+      {
+        "ref_id": "21",
+        "text": "Zhang, W., Xu, W., Liu, G., \\& Gen, M. (2017). An effective hybrid evolutionary algorithm for stochastic multiobjective assembly line balancing problem. Journal of Intelligent Manufacturing, 28(3), 783-790."
+      },
+      {
+        "ref_id": "22",
+        "text": "Zitzler, E., Laumann, M., \\& Thiele, L. (2001). SPEA2: Improving the strength Pareto evolutionary algorithm."
+      },
+      {
+        "ref_id": "23",
+        "text": "Zitzler, E., \\& Thiele, L. (1999). Multiobjective evolutionary algorithms: A comparative case study and the strength Pareto approach. IEEE Transactions on Evolutionary Computation, 3(4), 257-271."
+      }
+    ],
+    "reference_count": 23,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Resource requirement and duration.",
+      "headers": [
+        "Activity",
+        "Mode 1",
+        "",
+        "",
+        "Mode 2",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$r_{j, k 1, m 1}{ }^{a}$",
+          "$r_{j, k 2, m 1}$",
+          "$d_{j, 1}{ }^{b}$",
+          "$r_{j, k 1, m 2}$",
+          "$r_{j, k 2, m 2}$",
+          "$d_{j, 2}$"
+        ],
+        [
+          1,
+          2,
+          5,
+          2,
+          4,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          5,
+          3,
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1
+        ],
+        [
+          4,
+          2,
+          5,
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          5,
+          2,
+          4,
+          1,
+          1,
+          3,
+          3
+        ],
+        [
+          6,
+          3,
+          3,
+          2,
+          5,
+          2,
+          1
+        ],
+        [
+          7,
+          2,
+          3,
+          3,
+          1,
+          2,
+          5
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$N$",
+        "number of activities"
+      ],
+      "rows": [
+        [
+          "$M_{i}$",
+          "number of modes of activity $j, j=1, \\ldots, N$"
+        ],
+        [
+          "$K$",
+          "number of renewable resources"
+        ],
+        [
+          "$N_{b}$",
+          "number of available units of renewable resource $k, k=1, \\ldots, K$"
+        ],
+        [
+          "$G_{b}$",
+          "the recommendation level of resource $k$"
+        ],
+        [
+          "$d_{j m}^{j}$",
+          "duration of activity $j$ performed in mode $m$ under the scenario $\\xi, j=1, \\ldots$,"
+        ],
+        [
+          "$N_{c} \\xi \\in \\Xi$",
+          ""
+        ],
+        [
+          "$s_{j m}^{j}$",
+          "starting time of activity $j$ under the scenario $\\xi, \\xi \\in \\Xi$"
+        ],
+        [
+          "$c_{j m}^{j}$",
+          "completion time of activity $j$ under the scenario $\\xi, \\xi \\in \\Xi$"
+        ],
+        [
+          "$r_{d o n}$",
+          "amount of the resource $k$ occupied by the activity $j$ in mode $m$"
+        ],
+        [
+          "$p_{j}$",
+          "set of all predecessors of activity $j$"
+        ],
+        [
+          "$A_{j}$",
+          "set of available modes for activity $j$"
+        ],
+        [
+          "$N S u c_{j}$",
+          "number of immediate successors of activity $j$"
+        ],
+        [
+          "$s_{j}$",
+          "slack time of activity $j$"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "The parameters of algorithms compared.",
+      "headers": [
+        "",
+        "Generation",
+        "Pop_Size",
+        "Operator",
+        "Parameter"
+      ],
+      "rows": [
+        [
+          2,
+          1000,
+          100,
+          "Crossover $\\left(P_{c}\\right)$",
+          "$P_{c}=0.80$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Mutation $\\left(P_{m}\\right)$",
+          "$P_{m}=0.20$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Tournament $(k)$",
+          "elimRate $=0.1$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "$k=2$"
+        ],
+        [
+          "MOHEA",
+          1000,
+          100,
+          "Crossover $\\left(P_{c}\\right)$",
+          "film_pop_size $=100$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Mutation $\\left(P_{m}\\right)$",
+          "$P_{c}=0.4$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Tournament $(k)$",
+          "$P_{m}=0.8$"
+        ],
+        [
+          "Robust hGMEDA",
+          1000,
+          100,
+          "Tournament $(k)$",
+          "promisingRate $=0.7$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Gibbs sampling",
+          "elimRate $=0.1$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Local search",
+          "$k=2$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "$P_{c}=0.80$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "$P_{m}=0.20$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "$\\omega_{c}=3.0$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "$\\alpha=0.8$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "$\\beta=0.95$"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison on calculation time with different $a$ values.",
+      "headers": [
+        "Value of $a$",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.5"
+      ],
+      "rows": [
+        [
+          "Calculation time (s)",
+          185.4,
+          176.1,
+          171.4,
+          165.9,
+          162.2
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Comparison on expected makespan.",
+      "headers": [
+        "Problem",
+        "Mean value of makespan [time] (30 trials)",
+        "",
+        "",
+        "Improvement",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Robust hGMEDA",
+          "hGMEDA",
+          2,
+          "Decreased (vs hGMEDA)",
+          2
+        ],
+        [
+          411,
+          29.9,
+          29.1,
+          28.7,
+          "$-2.75 \\%$",
+          "$-4.18 \\%$"
+        ],
+        [
+          421,
+          35.1,
+          34.2,
+          34.6,
+          "$-2.63 \\%$",
+          "$-1.45 \\%$"
+        ],
+        [
+          431,
+          39.3,
+          37.9,
+          38.3,
+          "$-3.69 \\%$",
+          "$-2.61 \\%$"
+        ],
+        [
+          441,
+          32.2,
+          31.3,
+          30.7,
+          "$-2.88 \\%$",
+          "$-4.89 \\%$"
+        ],
+        [
+          451,
+          42.7,
+          41.1,
+          40.7,
+          "$-3.89 \\%$",
+          "$-4.91 \\%$"
+        ],
+        [
+          "Avg.",
+          35.84,
+          34.72,
+          34.6,
+          "$-3.17 \\%$",
+          "$-3.61 \\%$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "Comparison on variance of makespan.",
+      "headers": [
+        "Problem",
+        "Mean value of variance [time] (30 trials)",
+        "",
+        "",
+        "Decrease of variance",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Robust hGMEDA",
+          "hGMEDA",
+          2,
+          "Decreased (vs hGMEDA)",
+          2
+        ],
+        [
+          411,
+          2.1,
+          2.4,
+          2.5,
+          "$14.29 \\%$",
+          "$19.05 \\%$"
+        ],
+        [
+          421,
+          2.5,
+          2.7,
+          2.9,
+          "$8.00 \\%$",
+          "$16.00 \\%$"
+        ],
+        [
+          431,
+          3.2,
+          3.5,
+          3.4,
+          "$9.37 \\%$",
+          "$6.25 \\%$"
+        ],
+        [
+          441,
+          2.7,
+          2.9,
+          2.9,
+          "$7.41 \\%$",
+          "$7.41 \\%$"
+        ],
+        [
+          451,
+          3.8,
+          4.1,
+          4.3,
+          "$7.89 \\%$",
+          "$13.16 \\%$"
+        ],
+        [
+          "Avg.",
+          2.86,
+          3.12,
+          3.2,
+          "$9.39 \\%$",
+          "$12.37 \\%$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Comparison on percentage of satisfying chance constraint.",
+      "headers": [
+        "Problem",
+        "Mean value of percentage (30 trials)",
+        "",
+        "",
+        "Improvement",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Robust hGMEDA",
+          "hGMEDA",
+          2,
+          "Increased (vs hGMEDA)",
+          2
+        ],
+        [
+          411,
+          "$85.4 \\%$",
+          "$74.5 \\%$",
+          "$75.1 \\%$",
+          "$10.9 \\%$",
+          "$10.3 \\%$"
+        ],
+        [
+          421,
+          "$86.2 \\%$",
+          "$77.3 \\%$",
+          "$76.8 \\%$",
+          "$8.9 \\%$",
+          "$9.4 \\%$"
+        ],
+        [
+          431,
+          "$85.8 \\%$",
+          "$72.1 \\%$",
+          "$73.9 \\%$",
+          "$13.7 \\%$",
+          "$11.9 \\%$"
+        ],
+        [
+          441,
+          "$83.7 \\%$",
+          "$70.1 \\%$",
+          "$72.7 \\%$",
+          "$13.6 \\%$",
+          "$11.0 \\%$"
+        ],
+        [
+          451,
+          "$82.1 \\%$",
+          "$71.7 \\%$",
+          "$73.5 \\%$",
+          "$10.4 \\%$",
+          "$8.6 \\%$"
+        ],
+        [
+          "Avg.",
+          "$84.6 \\%$",
+          "$73.1 \\%$",
+          "$74.4 \\%$",
+          "$11.5 \\%$",
+          "$10.2 \\%$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Comparison on coverage of robust hGMEDA and MOHEA.",
+      "headers": [
+        "Problem",
+        "Mean value (30 trials)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\mathrm{A}_{1}{ }^{*}$",
+          "$\\mathrm{~A}_{2}{ }^{*}$",
+          "Improved $\\left(\\mathrm{A}_{1}-\\mathrm{A}_{2}\\right)$"
+        ],
+        [
+          "$\\# n 041 \\_1$",
+          0.323,
+          0.302,
+          0.021
+        ],
+        [
+          "$\\# n 042 \\_1$",
+          0.367,
+          0.344,
+          0.023
+        ],
+        [
+          "$\\# n 043 \\_1$",
+          0.218,
+          0.209,
+          0.009
+        ],
+        [
+          "$\\# n 044 \\_1$",
+          0.387,
+          0.346,
+          0.041
+        ],
+        [
+          "$\\# n 045 \\_1$",
+          0.225,
+          0.204,
+          0.021
+        ],
+        [
+          "Avg.",
+          0.304,
+          0.281,
+          0.023
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Comparison on spacing of robust hGMEDA and MOHEA.",
+      "headers": [
+        "Problem",
+        "Mean value (30 trials)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\mathrm{A}_{3}{ }^{*}$",
+          "$\\mathrm{~A}_{4}{ }^{*}$",
+          "Improved $\\left(\\mathrm{A}_{3}-\\mathrm{A}_{4}\\right)$"
+        ],
+        [
+          "$\\# n 041 \\_1$",
+          37.26,
+          38.04,
+          0.78
+        ],
+        [
+          "$\\# n 042 \\_1$",
+          35.31,
+          36.12,
+          0.81
+        ],
+        [
+          "$\\# n 043 \\_1$",
+          31.97,
+          32.27,
+          0.3
+        ],
+        [
+          "$\\# n 044 \\_1$",
+          35.24,
+          36.15,
+          0.91
+        ],
+        [
+          "$\\# n 045 \\_1$",
+          29.83,
+          30.58,
+          0.75
+        ],
+        [
+          "Avg.",
+          33.92,
+          34.63,
+          0.71
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    }
+  ]
+}

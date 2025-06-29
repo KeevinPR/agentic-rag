@@ -1,0 +1,450 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2017/Effective multiobjective EDA for bi-criteria stochastic job-shop scheduling problem.md",
+    "filename": "Effective multiobjective EDA for bi-criteria stochastic job-shop scheduling problem.md",
+    "title": "Effective multiobjective EDA for bi-criteria stochastic job-shop scheduling problem",
+    "year": "2017"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 The published journal paper for solving JSP under uncertainty",
+      "headers": [
+        "Uncertainty",
+        "Modelling technique",
+        "Objectives",
+        "Authors",
+        "Methodology"
+      ],
+      "rows": [
+        [
+          "Processing time and machine breakdown",
+          "Stochastic",
+          "Total weighted tardiness",
+          2001,
+          "Simulation methods"
+        ],
+        [
+          "Processing time",
+          "Stochastic",
+          "Penalty costs",
+          -2002,
+          "Decision-making rules"
+        ],
+        [
+          "Processing time",
+          "Stochastic",
+          "Makespan",
+          2003,
+          "Genetic algorithm and Monte Carlo method"
+        ],
+        [
+          "Processing time",
+          "Stochastic",
+          "Makespan",
+          -0.2005,
+          "Co-evolutionary quantum genetic algorithm"
+        ],
+        [
+          "Processing time",
+          "Stochastic",
+          "Makespan",
+          0.2005,
+          "Hybrid particle swarm optimization"
+        ],
+        [
+          "Processing time",
+          "Stochastic",
+          "Expected makespan and expected total tardiness",
+          2007,
+          "Multiobjective genetic algorithm"
+        ],
+        [
+          "Processing time and dual date",
+          "Fuzzy rule",
+          "Expected makespan and expected total tardiness",
+          2008,
+          "Multiobjective particle swarm optimization"
+        ],
+        [
+          "Lot-size and priority of the job",
+          "Fuzzy sets",
+          "Average weighted tardiness",
+          0.2008,
+          "Multiobjective genetic algorithm"
+        ],
+        [
+          "Machine unavailability and breakdown",
+          "Stochastic",
+          "Average makespan",
+          0.2011,
+          "Hybrid genetic algorithm"
+        ],
+        [
+          "Processing time",
+          "Stochastic",
+          "Makespan",
+          0.2011,
+          "Simulation-artificial neural network algorithm"
+        ],
+        [
+          "Processing time",
+          "Stochastic",
+          "Expected total weighted tardiness",
+          0.2013,
+          "Hybrid particle swarm optimization"
+        ],
+        [
+          "Processing time",
+          "Stochastic",
+          "Expected sum of earliness and tardiness",
+          0.2014,
+          "Hybrid evolutionary strategy"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Example of a 3-job 3-machine problem",
+      "headers": [
+        "Processing time",
+        "",
+        "",
+        "",
+        "Machine sequence",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Jobs",
+          "Operations",
+          "",
+          "",
+          "Jobs",
+          "Operations",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          1,
+          2,
+          3,
+          "",
+          1,
+          2,
+          3,
+          ""
+        ],
+        [
+          "$J_{1}$",
+          3,
+          3,
+          2,
+          "$J_{1}$",
+          "$M_{1}$",
+          "$M_{2}$",
+          "$M_{3}$",
+          ""
+        ],
+        [
+          "$J_{2}$",
+          1,
+          5,
+          2,
+          "$J_{2}$",
+          "$M_{1}$",
+          "$M_{3}$",
+          "$M_{2}$",
+          ""
+        ],
+        [
+          "$J_{3}$",
+          3,
+          2,
+          3,
+          "$J_{3}$",
+          "$M_{2}$",
+          "$M_{1}$",
+          "$M_{3}$",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 9
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 The parameters of NSGA-II, SPEA2, AWGA and h-MoEDA for S-JSP",
+      "headers": [
+        "",
+        "NSGA-II, SPEA2 <br> and awGA",
+        "MoEDA"
+      ],
+      "rows": [
+        [
+          "Iteration",
+          1000,
+          1000
+        ],
+        [
+          "Population",
+          200,
+          200
+        ],
+        [
+          "Selection",
+          "Roulette",
+          "Tournament $(k)$"
+        ],
+        [
+          "Operators",
+          "Crossover $\\left(P_{c}\\right)$",
+          "Sampling"
+        ],
+        [
+          "",
+          "Mutation $\\left(P_{m}\\right)$",
+          "Improvement $\\left(P_{i}\\right)$"
+        ],
+        [
+          "Parameters",
+          "$P_{m}=0.20$",
+          "promisingRate $=0.7$"
+        ],
+        [
+          "",
+          "$P_{c}=0.80$",
+          "$\\alpha=0.02 \\beta=0.02$"
+        ],
+        [
+          "",
+          "$\\mathrm{w}_{1}=0.4, \\mathrm{w}_{2}=0.6$",
+          "$P_{m}=0.4 \\mathrm{k}=2$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Comparison of coverage measure by h-MoEDA, AWGA, NSGA-II, SPEA2 and AWGA",
+      "headers": [
+        "Problem",
+        "Algorithm (A)",
+        "Mean",
+        "",
+        "Improved <br> (C(h-MoEDA, A)- <br> C(A, h-MoEDA)) (\\%)",
+        "SD",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "C(h-MoEDA, A)",
+          "C(A, h-MoEDA)",
+          "",
+          "C(h-MoEDA, A)",
+          "C(A, h-MoEDA)"
+        ],
+        [
+          29,
+          "NSGA-II",
+          0.4669,
+          0.3524,
+          11.45,
+          0.0842,
+          0.0709
+        ],
+        [
+          "",
+          2,
+          0.4965,
+          0.3224,
+          17.41,
+          0.0696,
+          0.0603
+        ],
+        [
+          "",
+          "awGA",
+          0.5731,
+          0.2541,
+          31.9,
+          0.0451,
+          0.0553
+        ],
+        [
+          35,
+          "NSGA-II",
+          0.6486,
+          0.2824,
+          36.63,
+          0.0777,
+          0.0794
+        ],
+        [
+          "",
+          2,
+          0.6606,
+          0.2618,
+          39.89,
+          0.086,
+          0.0631
+        ],
+        [
+          "",
+          "awGA",
+          0.6844,
+          0.2171,
+          46.73,
+          0.0672,
+          0.046
+        ],
+        [
+          38,
+          "NSGA-II",
+          0.4543,
+          0.3425,
+          11.19,
+          0.0799,
+          0.0754
+        ],
+        [
+          "",
+          2,
+          0.5063,
+          0.3412,
+          16.52,
+          0.0696,
+          0.0603
+        ],
+        [
+          "",
+          "awGA",
+          0.5625,
+          0.2767,
+          28.58,
+          0.0572,
+          0.0619
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Comparison of the spacing measure by h-MoEDA, NSGA-II, and SPEA2 and AWGA",
+      "headers": [
+        "Problem",
+        "Algorithm (A)",
+        "Mean",
+        "",
+        "Reduced <br> (SP(h-MoEDA)- <br> SP(A))/SP(A) (\\%)",
+        "SD",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "SP(h-MoEDA)",
+          "SP(A)",
+          "",
+          "SP(h-MoEDA)",
+          "SP(A)"
+        ],
+        [
+          29,
+          "NSGA-II",
+          16.3568,
+          20.1712,
+          "$-18.91$",
+          4.4081,
+          6.4981
+        ],
+        [
+          "",
+          2,
+          16.3568,
+          22.2868,
+          "$-26.61$",
+          4.4081,
+          6.7942
+        ],
+        [
+          "",
+          "awGA",
+          16.3568,
+          25.8421,
+          "$-36.70$",
+          4.4081,
+          7.2521
+        ],
+        [
+          35,
+          "NSGA-II",
+          19.0001,
+          23.8413,
+          "$-20.31$",
+          4.9569,
+          6.2297
+        ],
+        [
+          "",
+          2,
+          19.0001,
+          24.951,
+          "$-23.85$",
+          4.9569,
+          7.0526
+        ],
+        [
+          "",
+          "awGA",
+          19.0001,
+          33.241,
+          "$-42.84$",
+          4.9569,
+          7.1686
+        ],
+        [
+          38,
+          "NSGA-II",
+          17.1736,
+          21.4569,
+          "$-19.96$",
+          5.2566,
+          6.9774
+        ],
+        [
+          "",
+          2,
+          17.1736,
+          24.0161,
+          "$-28.49$",
+          5.2566,
+          7.1136
+        ],
+        [
+          "",
+          "awGA",
+          17.1736,
+          27.0155,
+          "$-36.43$",
+          5.2566,
+          7.9576
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 7
+    }
+  ]
+}

@@ -1,0 +1,1418 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/An EDA-based method for solving electric vehicle charging scheduling problem under limited power and maximum imbalance constraints.md",
+    "filename": "An EDA-based method for solving electric vehicle charging scheduling problem under limited power and maximum imbalance constraints.md",
+    "title": "An EDA-based method for solving electric vehicle charging scheduling problem under limited power and maximum imbalance constraints",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Problem parameters and variables in the static EVCSP variant.",
+      "headers": [
+        "Parameters",
+        ""
+      ],
+      "rows": [
+        [
+          "$N_{i}(t)$",
+          "Number of active EVs in charging lines in time $t$"
+        ],
+        [
+          "$a_{i}$",
+          "Arrival time corresponding to $j^{th}$ EV"
+        ],
+        [
+          "$c_{i}$",
+          "Charging time corresponding to $j^{\\text {th }}$ EV"
+        ],
+        [
+          "$d_{i}$",
+          "The due time corresponding to $j^{\\text {th }}$ EV"
+        ],
+        [
+          "$N$",
+          "Maximum number of active EVs in all charging lines at any given time"
+        ],
+        [
+          "$M$",
+          "Total Number of EVs"
+        ],
+        [
+          "$\\begin{gathered} \\Delta \\quad \\Delta \\in[0, \\\\ 1] \\end{gathered}$",
+          "The maximum possible imbalance between lines"
+        ],
+        [
+          "Variables",
+          ""
+        ],
+        [
+          "$s_{0}$",
+          "Start of charging time corresponding to $j^{\\text {th }}$ EV, which is assigned to $t^{\\text {th }}$ charging line"
+        ],
+        [
+          "$\\varepsilon_{0}$",
+          "End of charging time corresponding to $j^{\\text {th }}$ EV, which is assigned to $t^{\\text {th }}$ charging line"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Review of recent centralized EVCSP studies from an operations research perspective.",
+      "headers": [
+        "Related Studies",
+        "Objective <br> function",
+        "Constraints",
+        "Optimization method"
+      ],
+      "rows": [
+        [
+          "(Z. Wang et al., 2020]",
+          "minimize the overall peakvalley load difference",
+          "EV State-ofcharge Capacity power limit",
+          "A scenario-based stochastic linear programming"
+        ],
+        [
+          0.202,
+          "minimize the overall peakvalley load difference",
+          "Slow/fast charging EVs",
+          "Heuristic coordinated charging scheduling"
+        ],
+        [
+          0.2019,
+          "minimize the total cost",
+          "EV State-ofcharge Slow/medium/ fast chargers",
+          "Particle swarm optimization"
+        ],
+        [
+          0.2019,
+          "minimize the total cost",
+          "EV State-ofcharge",
+          "Mixed Integer"
+        ],
+        [
+          0.2019,
+          "minimize the total tardiness",
+          "Power and balance constraints",
+          "programing <br> ant colony optimization"
+        ],
+        [
+          0.2018,
+          "minimize the total tardiness",
+          "Power and balance constraints",
+          "artificial bee colony"
+        ],
+        [
+          -0.2018,
+          "minimize the total tardiness",
+          "Power and balance constraints",
+          "Greedy <br> Randomized <br> Adaptive Search <br> Procedure"
+        ],
+        [
+          0.2017,
+          "minimize the overall peakvalley",
+          "EV State-ofcharge Slow/medium/ fast chargers",
+          "valley-filling strategy"
+        ],
+        [
+          0.2017,
+          "minimize the total tardiness",
+          "EV State-ofcharge",
+          "Genetic algorithm"
+        ],
+        [
+          -0.2015,
+          "minimize the total tardiness",
+          "Power and balance constraints",
+          "Dynamic <br> Constraint <br> Satisfaction <br> Problems"
+        ],
+        [
+          -0.2015,
+          "minimize the total tardiness",
+          "Power and balance constraints",
+          "Genetic algorithm"
+        ],
+        [
+          0.2014,
+          "maximize the profit of the parking operator and the costs of EV owners",
+          "Upper bound for active EVs in charging lines",
+          "Particle swarm optimization"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Review of recent EDA-based method in solving the scheduling problem.",
+      "headers": [
+        "Related Studies",
+        "Problem",
+        "EDA Type"
+      ],
+      "rows": [
+        [
+          0.2021,
+          "distributed flexible job shop scheduling with crane transportations",
+          "Order statistics"
+        ],
+        [
+          2020,
+          "Multi-objective green flowshop scheduling problem",
+          "Order statistics"
+        ],
+        [
+          0.2019,
+          "the unrelated parallel-machine green scheduling problem",
+          "Order statistics"
+        ],
+        [
+          0.2019,
+          "Multiobjective Distributed, NoWait Flow-Shop Scheduling Problem",
+          "Order statistics"
+        ],
+        [
+          "(Pérez-Rodríguez \\& Hernández-Aguirre, 2019)",
+          "vehicle routing problem with time windows",
+          "Mallows Estimation of Distribution"
+        ],
+        [
+          0.2019,
+          "Energy-Efficient Job-Shop Scheduling Problem",
+          "Order statistics"
+        ],
+        [
+          "(C. Liu et al., 2018)",
+          "resource consumption of heterogeneous, batch processing machines",
+          "copula-based EDA"
+        ],
+        [
+          0.2017,
+          "Permutation Flowshop, Scheduling Problem",
+          "Mallows Estimation of Distribution copula-based EDA"
+        ],
+        [
+          0.2017,
+          "m-machine reentrant permutation flow-shop scheduling problem",
+          ""
+        ],
+        [
+          "(K. Wang et al., 2015)",
+          "Stochastic Permutation Flowshop",
+          "Order statistics"
+        ],
+        [
+          0.2015,
+          "multi-objective permutation flow shop scheduling problem",
+          "Order statistics"
+        ],
+        [
+          0.2014,
+          "robust Resource, Constrained Project Scheduling",
+          "Markov networkbased EDA"
+        ],
+        [
+          "(S. Wang et al., 2013)",
+          "distributed permutation flowshop scheduling problem",
+          "Order statistics"
+        ],
+        [
+          0.2012,
+          "Permutation flow shop scheduling",
+          "Order statistics"
+        ],
+        [
+          "(H. Liu et al., 2011)",
+          "permutation flowshop scheduling problem",
+          "Order statistics"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$R$",
+        "$r_{1}$",
+        "$\\cdots$",
+        "$r_{j}$",
+        "$\\cdots$",
+        "$r_{M}$"
+      ],
+      "rows": [
+        [
+          "",
+          "$l_{1}$",
+          "$\\cdots$",
+          "$l_{j}$",
+          "$\\cdots$",
+          "$l_{M}$"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Parameter setting of meta-heuristics based on the previous studies parameter settings.",
+      "headers": [
+        "Algorithms",
+        "Parameter",
+        "Description",
+        "Value",
+        "Reference"
+      ],
+      "rows": [
+        [
+          "PSO",
+          "w",
+          "Inertia weight which is used to control the velocity",
+          0.7298,
+          2002
+        ],
+        [
+          "",
+          "$c_{1}$",
+          "Personal acceleration coefficient",
+          1.49618,
+          2002
+        ],
+        [
+          "",
+          "$c_{2}$",
+          "Social acceleration coefficient",
+          1.49618,
+          2002
+        ],
+        [
+          "",
+          "$\\mathrm{T}_{0}$",
+          "Initial temperature",
+          "$-\\Delta \\mathrm{F} / \\mathrm{in}\\left(\\rho_{0}\\right)$",
+          0.1991
+        ],
+        [
+          "ABC",
+          "L",
+          "Abandonment limit parameter",
+          "$\\begin{gathered} 0.1\\left(\\kappa_{\\mathrm{ABC}}=\\right. \\\\ \\left.D^{-}\\right) \\end{gathered}$",
+          2009
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "The level of factors used for the L27 orthogonal designing method and the best level.",
+      "headers": [
+        "Algorithms",
+        "Parameter",
+        "Description",
+        "Level",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "L",
+          "M",
+          "H"
+        ],
+        [
+          "HMM-EDA",
+          "$n_{\\text {HMM }}$",
+          "HMM-EDA population size",
+          50,
+          100,
+          200
+        ],
+        [
+          "",
+          "$g_{a w}$",
+          "MN part: maximum number of neighbors in each clique",
+          5,
+          10,
+          15
+        ],
+        [
+          "",
+          "$\\alpha$",
+          "MN part: significance parameter to control the density of the edges in the MN",
+          0.5,
+          1.5,
+          3
+        ],
+        [
+          "PSO",
+          "$n_{\\text {PSO }}$",
+          "PSO population size (swarm size)",
+          50,
+          100,
+          200
+        ],
+        [
+          "SA",
+          "$n_{\\text {SA }}$",
+          "SA population size",
+          50,
+          100,
+          200
+        ],
+        [
+          "",
+          "$m_{\\text {SA }}$",
+          "SA number of neighbors per individual",
+          5,
+          10,
+          20
+        ],
+        [
+          "",
+          "$\\operatorname{Sub}_{\\text {SA }}$",
+          "SA maximum number of subiterations",
+          10,
+          20,
+          30
+        ],
+        [
+          "ABC",
+          "$n_{\\text {ABC }}$",
+          "ABC number of onlooker bees",
+          50,
+          100,
+          200
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "The total objective function values in scenario 1 with corresponding N and $\\Delta$ values.",
+      "headers": [
+        "N",
+        "$\\Delta$",
+        "Static Problem",
+        "",
+        "",
+        "",
+        "",
+        "Dynamic Problem",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Obj*",
+          "ABC",
+          "SA",
+          "PSO",
+          "HMM-EDA",
+          "ABC",
+          "SA",
+          "PSO",
+          "HMM-EDA"
+        ],
+        [
+          20,
+          0.2,
+          934,
+          1777.2,
+          1602.3,
+          1752.1,
+          1495.1,
+          2246.9,
+          2037.5,
+          2236.5,
+          1794.5
+        ],
+        [
+          20,
+          0.4,
+          645,
+          1251.3,
+          1224.9,
+          1270.9,
+          1112.2,
+          1700.6,
+          1651.8,
+          1755.8,
+          1536.3
+        ],
+        [
+          20,
+          0.6,
+          513,
+          944.3,
+          934.6,
+          929,
+          921.2,
+          1530.6,
+          1623.8,
+          1640.2,
+          1444.6
+        ],
+        [
+          20,
+          0.8,
+          498,
+          731.4,
+          741.2,
+          729.4,
+          725.4,
+          1272.2,
+          1369.5,
+          1322.7,
+          1266.5
+        ],
+        [
+          30,
+          0.2,
+          124,
+          342.2,
+          359.5,
+          344.8,
+          338.6,
+          632.0,
+          671.7,
+          624.7,
+          547.0
+        ],
+        [
+          30,
+          0.4,
+          11,
+          25.6,
+          26.1,
+          34.2,
+          18.1,
+          159.1,
+          142.7,
+          216.9,
+          84.6
+        ],
+        [
+          30,
+          0.6,
+          0,
+          10.2,
+          9.8,
+          9.7,
+          5.2,
+          51.6,
+          61.6,
+          66.1,
+          28.4
+        ],
+        [
+          30,
+          0.8,
+          0,
+          5.1,
+          4.2,
+          4.9,
+          3.9,
+          37.6,
+          32.8,
+          32.3,
+          24.7
+        ],
+        [
+          40,
+          0.2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6.2,
+          6.2,
+          6.2,
+          6.2
+        ],
+        [
+          40,
+          0.4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4.9,
+          4.9,
+          4.9,
+          4.9
+        ],
+        [
+          40,
+          0.6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2.3,
+          2.3,
+          2.3,
+          2.3
+        ],
+        [
+          40,
+          0.8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2.3,
+          2.3,
+          2.3,
+          2.3
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 11
+    },
+    {
+      "table_number": "7",
+      "table_title": "The total objective function values in scenario 2 with corresponding N and $\\Delta$ values.",
+      "headers": [
+        "N",
+        "$\\Delta$",
+        "Static Problem",
+        "",
+        "",
+        "",
+        "",
+        "Dynamic Problem",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Obj*",
+          "ABC",
+          "SA",
+          "PSO",
+          "HMM-EDA",
+          "ABC",
+          "SA",
+          "PSO",
+          "HMM-EDA"
+        ],
+        [
+          20,
+          0.2,
+          3811,
+          4609.3,
+          4707.6,
+          4740.4,
+          4586.9,
+          7419.5,
+          5503.2,
+          6061.3,
+          5021.1
+        ],
+        [
+          20,
+          0.4,
+          3123,
+          3817.3,
+          3791.8,
+          3832.5,
+          3770.9,
+          5869.8,
+          4553.2,
+          4493.2,
+          4423.7
+        ],
+        [
+          20,
+          0.6,
+          3012,
+          3591.6,
+          3597.2,
+          3585.6,
+          3526.2,
+          5606.0,
+          4548.7,
+          4286.1,
+          4187.2
+        ],
+        [
+          20,
+          0.8,
+          2988,
+          3386.2,
+          3272.1,
+          3418.1,
+          3183.5,
+          4958.1,
+          3978.3,
+          4048.5,
+          3766.0
+        ],
+        [
+          30,
+          0.2,
+          433,
+          1107.7,
+          1077.7,
+          1057.6,
+          958,
+          1577.9,
+          1310.0,
+          1315.2,
+          1071.5
+        ],
+        [
+          30,
+          0.4,
+          362,
+          940.4,
+          958.2,
+          927.2,
+          841.7,
+          1263.2,
+          1273.7,
+          1155.3,
+          988.8
+        ],
+        [
+          30,
+          0.6,
+          320,
+          807.8,
+          801.4,
+          753,
+          716.4,
+          997.7,
+          1067.0,
+          1012.4,
+          882.9
+        ],
+        [
+          30,
+          0.8,
+          319,
+          626.9,
+          652.2,
+          684.7,
+          605,
+          834.5,
+          864.8,
+          958.4,
+          796.1
+        ],
+        [
+          40,
+          0.2,
+          0,
+          121.3,
+          119.3,
+          131,
+          110.1,
+          330.4,
+          425.3,
+          374.6,
+          232.7
+        ],
+        [
+          40,
+          0.4,
+          0,
+          110.2,
+          102.1,
+          107,
+          85.5,
+          309.8,
+          396.2,
+          332.8,
+          187.9
+        ],
+        [
+          40,
+          0.6,
+          0,
+          92.2,
+          89.2,
+          95.1,
+          70.2,
+          292.5,
+          345.4,
+          324.3,
+          181.2
+        ],
+        [
+          40,
+          0.8,
+          0,
+          80.4,
+          84.2,
+          82.6,
+          55.3,
+          249.8,
+          310.7,
+          309.1,
+          139.1
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 11
+    },
+    {
+      "table_number": "8",
+      "table_title": "The total objective function values in scenario 3 with corresponding N and $\\Delta$ values.",
+      "headers": [
+        "N",
+        "$\\Delta$",
+        "Static Problem",
+        "",
+        "",
+        "",
+        "",
+        "Dynamic Problem",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Obj*",
+          "ABC",
+          "SA",
+          "PSO",
+          "HMM-EDA",
+          "ABC",
+          "SA",
+          "PSO",
+          "HMM-EDA"
+        ],
+        [
+          20,
+          0.2,
+          4791,
+          5988.3,
+          5836.7,
+          6064.6,
+          5645,
+          6897.3,
+          7110.0,
+          7231.4,
+          6825.9
+        ],
+        [
+          20,
+          0.4,
+          4055,
+          5194,
+          5164.8,
+          5218.7,
+          5061.8,
+          6382.7,
+          6398.7,
+          6097.8,
+          5766.6
+        ],
+        [
+          20,
+          0.6,
+          3934,
+          4789.1,
+          4848.6,
+          4891,
+          4773.6,
+          5772.3,
+          5986.8,
+          5747.0,
+          5685.3
+        ],
+        [
+          20,
+          0.8,
+          3876,
+          4776.1,
+          4730.2,
+          4864.6,
+          4330.7,
+          5624.7,
+          5665.7,
+          5382.4,
+          4776.3
+        ],
+        [
+          30,
+          0.2,
+          1068,
+          2272.7,
+          1989.5,
+          2012.5,
+          1964.3,
+          2728.3,
+          2550.4,
+          2595.3,
+          2522.6
+        ],
+        [
+          30,
+          0.4,
+          925,
+          1752.7,
+          1783.5,
+          1846.9,
+          1712.6,
+          2355.7,
+          2478.2,
+          2468.0,
+          2322.2
+        ],
+        [
+          30,
+          0.6,
+          927,
+          1724.7,
+          1744.4,
+          1772.5,
+          1712.3,
+          2180.4,
+          2315.5,
+          2304.7,
+          2126.2
+        ],
+        [
+          30,
+          0.8,
+          934,
+          1701.7,
+          1720.5,
+          1736,
+          1651.9,
+          2140.2,
+          2253.8,
+          2119.2,
+          2118.2
+        ],
+        [
+          40,
+          0.2,
+          155,
+          751.2,
+          655.6,
+          737.4,
+          650.2,
+          1017.1,
+          893.8,
+          983.0,
+          874.8
+        ],
+        [
+          40,
+          0.4,
+          155,
+          623.3,
+          557.8,
+          588,
+          532.1,
+          814.7,
+          752.2,
+          750.3,
+          619.2
+        ],
+        [
+          40,
+          0.6,
+          155,
+          620.2,
+          521.8,
+          574.5,
+          492.2,
+          788.0,
+          719.7,
+          675.5,
+          543.6
+        ],
+        [
+          40,
+          0.8,
+          155,
+          417.9,
+          471.9,
+          402.3,
+          389.6,
+          483.1,
+          600.9,
+          478.5,
+          445.6
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 11
+    },
+    {
+      "table_number": "9",
+      "table_title": "Total gap values from the best solution with respect to the objective (CP results) in the static variant.",
+      "headers": [
+        "Scenario No./Method",
+        "ABC",
+        "SA",
+        "PSO",
+        "HMM-EDA"
+      ],
+      "rows": [
+        [
+          1,
+          2362.3,
+          2177.6,
+          2350,
+          "$\\underline{\\mathbf{1 8 9 4 . 7}}$"
+        ],
+        [
+          2,
+          4923.3,
+          4885,
+          5046.8,
+          "$\\underline{\\mathbf{4 1 4 1 . 7}}$"
+        ],
+        [
+          3,
+          9481.9,
+          8895.3,
+          9579,
+          "$\\underline{\\mathbf{7 7 7 6 . 3}}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "10",
+      "table_title": "The total objective function values in scenario 1 with the corresponding type, N , and $\\Delta$ values (based on the EVCSP introduced in (Garcia Alvarez et al., 2018)). Value in parenthesis represents the rank of its corresponding method.",
+      "headers": [
+        "N",
+        "$\\Delta$",
+        "Static Problem",
+        "",
+        "",
+        "",
+        "Dynamic Problem",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          1,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 10
+    },
+    {
+      "table_number": "11",
+      "table_title": "The total objective function values in scenario 2 with the corresponding type, N , and $\\Delta$ values (based on the EVCSP introduced in (Garcia Alvarez et al., 2018)). Value in parenthesis represents the rank of its corresponding method.",
+      "headers": [
+        "N",
+        "$\\Delta$",
+        "Static Problem",
+        "",
+        "",
+        "Dynamic Problem",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "MA",
+          "bABC",
+          "MM-EDA",
+          "EVS",
+          "MA",
+          "ABC",
+          "MM-EDA",
+          ""
+        ],
+        [
+          1,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          20,
+          0.2,
+          14411.53,
+          14097.91,
+          14382.42,
+          168864,
+          16176.33,
+          15933.81,
+          16055.72,
+          ""
+        ],
+        [
+          20,
+          0.4,
+          11703.61,
+          11713.93,
+          11705.22,
+          14131.24,
+          13915.93,
+          13869.91,
+          13888.72,
+          ""
+        ],
+        [
+          20,
+          0.6,
+          11328.32,
+          11335.73,
+          11320.31,
+          13648.34,
+          13559.13,
+          13534.82,
+          13.5331,
+          ""
+        ],
+        [
+          20,
+          0.8,
+          11242.12,
+          11242.93,
+          11240.11,
+          13547.94,
+          13492.73,
+          13464.71,
+          13475.82,
+          ""
+        ],
+        [
+          30,
+          0.2,
+          3920.63,
+          3887.32,
+          3880.61,
+          6394.74,
+          5821.53,
+          5798.82,
+          5775.51,
+          ""
+        ],
+        [
+          30,
+          0.4,
+          2726.23,
+          2717.11,
+          2720.22,
+          4824.34,
+          4688.43,
+          4687.22,
+          4685.31,
+          ""
+        ],
+        [
+          30,
+          0.6,
+          2592.83,
+          2588.32,
+          2580.31,
+          4668.64,
+          4560.33,
+          4559.32,
+          4541.81,
+          ""
+        ],
+        [
+          30,
+          0.8,
+          2591.43,
+          2587.22,
+          2585.91,
+          4672.64,
+          45593,
+          4556.72,
+          4551.91,
+          ""
+        ],
+        [
+          40,
+          0.2,
+          6381,
+          662.13,
+          6422,
+          1951.44,
+          1593.53,
+          15902,
+          1572.61,
+          ""
+        ],
+        [
+          40,
+          0.4,
+          186.41,
+          186.41,
+          186.41,
+          1212.74,
+          11023,
+          1101.52,
+          1088.91,
+          ""
+        ],
+        [
+          40,
+          0.6,
+          172.23,
+          171.52,
+          170.51,
+          1210.74,
+          1103.33,
+          1102.82,
+          1094.41,
+          ""
+        ],
+        [
+          40,
+          0.8,
+          171.92,
+          171.61,
+          171.92,
+          1210.64,
+          1102.72,
+          1102.51,
+          1103.63,
+          ""
+        ],
+        [
+          2,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          20,
+          0.2,
+          1372042,
+          1372713,
+          137195.21,
+          1438834,
+          1391923,
+          138.9611,
+          139033.72,
+          ""
+        ],
+        [
+          20,
+          0.4,
+          57453.43,
+          57295.21,
+          57352.12,
+          62246.24,
+          591943,
+          59065.21,
+          59106.72,
+          ""
+        ],
+        [
+          20,
+          0.6,
+          34548.23,
+          34499.52,
+          34.4521,
+          39869.44,
+          36298.43,
+          36231.72,
+          36189.61,
+          ""
+        ],
+        [
+          20,
+          0.8,
+          27735.13,
+          27.7111,
+          27725.22,
+          30887.24,
+          297913,
+          29747.51,
+          29771.62,
+          ""
+        ],
+        [
+          30,
+          0.2,
+          829702,
+          83224.23,
+          82851.21,
+          863924,
+          844703,
+          84297.42,
+          84134.31,
+          ""
+        ],
+        [
+          30,
+          0.4,
+          32714.92,
+          32659.21,
+          32725.23,
+          34475.44,
+          33936.83,
+          33891.52,
+          33626.51,
+          ""
+        ],
+        [
+          30,
+          0.6,
+          17077.32,
+          17069.91,
+          17085.33,
+          19355.74,
+          18709.83,
+          18682.51,
+          187092,
+          ""
+        ],
+        [
+          30,
+          0.8,
+          12364.53,
+          12359.52,
+          12325.21,
+          14375.14,
+          14201.73,
+          14182.42,
+          14149.81,
+          ""
+        ],
+        [
+          40,
+          0.2,
+          576523,
+          57.6301,
+          57642.22,
+          597754,
+          58714.13,
+          58591.21,
+          58653.92,
+          ""
+        ],
+        [
+          40,
+          0.4,
+          20786.92,
+          20765.51,
+          20800.33,
+          222544,
+          21984.23,
+          21947.12,
+          21793.11,
+          ""
+        ],
+        [
+          40,
+          0.6,
+          9582.43,
+          9581.72,
+          9581.51,
+          10991.34,
+          10815.93,
+          10808.52,
+          10715.81,
+          ""
+        ],
+        [
+          40,
+          0.8,
+          58061,
+          5814.13,
+          5812.22,
+          7260.54,
+          7178.53,
+          7170.92,
+          7119.21,
+          ""
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 10
+    },
+    {
+      "table_number": "13",
+      "table_title": "Method comparison in terms of ranking from their objective function perspective in solving the introduced EVCSP in (Garcia Alvarez et al., 2018).",
+      "headers": [
+        "Methods",
+        "MA",
+        "hABC",
+        "MM-EDA"
+      ],
+      "rows": [
+        [
+          1,
+          19,
+          47,
+          "$\\underline{\\mathbf{9 3}}$"
+        ],
+        [
+          "Average Rank",
+          2.6,
+          1.9,
+          "$\\underline{\\mathbf{1 . 5}}$"
+        ],
+        [
+          "Sum of gaps from the best values",
+          10515.1,
+          6697.9,
+          "$\\underline{\\mathbf{1 4 9 1 . 9}}$"
+        ],
+        [
+          "Final Ranking",
+          3,
+          2,
+          "$\\underline{\\mathbf{1}}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    }
+  ]
+}

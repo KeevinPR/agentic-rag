@@ -1,0 +1,728 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/Simultaneous Scheduling of Processing Machines and Automated Guided Vehicles via a Multi-View Modeling-Based Hybrid Algorithm.md",
+    "filename": "Simultaneous Scheduling of Processing Machines and Automated Guided Vehicles via a Multi-View Modeling-Based Hybrid Algorithm.md",
+    "title": "Simultaneous Scheduling of Processing Machines and Automated Guided Vehicles via a Multi-View Modeling-Based Hybrid Algorithm",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "DESCRIPTION OF KEY SYMBOLS",
+      "headers": [
+        "Symbol",
+        "Description"
+      ],
+      "rows": [
+        [
+          "$N_{J}$",
+          "The number of jobs to be processed."
+        ],
+        [
+          "$N_{M}$",
+          "The number of machines in FMS."
+        ],
+        [
+          "$N_{A}$",
+          "The number of AGVs in FMS."
+        ],
+        [
+          "$J$",
+          "The index set of jobs, $J=\\{1,2, \\ldots, N_{J}\\}$."
+        ],
+        [
+          "$J_{j}$",
+          "The $j$-th job, $j \\in J$."
+        ],
+        [
+          "$M$",
+          "The index set of machines, $M=\\{1,2, \\ldots, N_{M}\\}$."
+        ],
+        [
+          "$M_{m}$",
+          "The $m$-th machine, $m \\in M$."
+        ],
+        [
+          "$A$",
+          "The index set of AGVs, $A=\\left\\{1,2, \\ldots, N_{A}\\right\\}$."
+        ],
+        [
+          "$A_{k}$",
+          "The $k$-th AGV, $k \\in A$."
+        ],
+        [
+          "$N_{j}^{o p r}$",
+          "The total number of the operations of $J_{j}, j \\in J$."
+        ],
+        [
+          "$N_{O}$",
+          "The total number of all the operations, $N_{O}=\\sum_{i=1}^{N_{J}} N_{j}^{\\text {opr }}$."
+        ],
+        [
+          "$O_{j}^{\\text {opr }}$",
+          "The index set of the operations of $J_{j}, O_{j}^{\\text {opr }}=\\left\\{1,2, \\ldots, N_{j}^{\\text {opr }}\\right\\}, j \\in J$."
+        ],
+        [
+          "$O_{j}^{C}$",
+          "The $i$-th operation of $J_{j}, i \\in O_{j}^{\\text {opr }}$."
+        ],
+        [
+          "$S_{j}^{D}$",
+          "The processing stage of $O_{j i}$."
+        ],
+        [
+          "$S_{j}^{D}$",
+          "The loaded transportation stage of $O_{j i}$."
+        ],
+        [
+          "$S_{j}^{D}$",
+          "The no-load moving stage of $O_{j i}$."
+        ],
+        [
+          "$\\Omega_{j i}$",
+          "The index set of machines which can handle $O_{j i}$."
+        ],
+        [
+          "$t_{j i m}^{D}$",
+          "The processing time of $O_{j i}$ on $M_{m}, m \\in \\Omega_{j i}$."
+        ],
+        [
+          "$D$",
+          "The position index set of the raw material area and machines, $D=\\left\\{0,1, \\ldots, N_{M}\\right\\}$."
+        ],
+        [
+          "$D_{d}$",
+          "The position set of the raw material area and machines, $d \\in D, D_{0}$. means the position of raw material and $M_{m}$ is located at $D_{m}, m \\in M$."
+        ],
+        [
+          "$t_{d_{1} d_{2}}^{r}$",
+          "The no-load time between two positions, $\\forall d_{1}, d_{2} \\in D$."
+        ],
+        [
+          "$t_{d_{1} d_{2}}^{r}$",
+          "The transportation time between two positions, $\\forall d_{1}, d_{2} \\in D$."
+        ],
+        [
+          "$T s t_{j_{1}}^{r}$",
+          "The starting time of the no-load stage $S_{j_{1}}^{D}$ for $O_{j i}$."
+        ],
+        [
+          "$T s t_{j_{2}}^{r}$",
+          "The ending time of the no-load stage $S_{j_{2}}^{D}$ for $O_{j i}$."
+        ],
+        [
+          "$T s t_{j_{3}}^{r}$",
+          "The starting time of the transportation stage $S_{j_{3}}^{T}$ for $O_{j i}$."
+        ],
+        [
+          "$T s t_{j_{3}}$",
+          "The ending time of the transportation stage $S_{j_{3}}^{T}$ for $O_{j i}$."
+        ],
+        [
+          "$T s p_{j i}$",
+          "The starting time of the processing stage $S_{j_{3}}^{P}$ of $O_{j i}$."
+        ],
+        [
+          "$T s p_{j k}$",
+          "The ending time of the processing stage $S_{j_{3}}^{P}$ of $O_{j i}$."
+        ],
+        [
+          "$X_{j i m}$",
+          "If $O_{j i}$ is processed on $M_{m}, X_{j i m}=1$; otherwise, $X_{j i m}=0$."
+        ],
+        [
+          "$Y_{j i}^{m}$",
+          "If $O_{j_{1} i_{1}}$ is processed on $M_{m}$ before $O_{j_{2} i_{2}}, Y_{j_{1} i_{1}, j_{2} i_{2}}^{m}=1$; otherwise, $Y_{j_{1} i_{1}, j_{2} i_{2}}^{m}=0$."
+        ],
+        [
+          "$Z_{j i k}$",
+          "If $A_{k}$ takes $O_{j i}, Z_{j i k}=1$; otherwise, $Z_{j i k}=0$."
+        ],
+        [
+          "$W_{j_{1} i_{1}, j_{2} i_{2}}^{k}$",
+          "If $A_{k}$ takes $O_{j_{1} i_{1}}$ before $O_{j_{2} i_{2}}, W_{j_{1} i_{1}, j_{2} i_{2}}^{k}=1$; otherwise, $W_{j_{1} i_{1}, j_{2} i_{2}}^{k}=0$."
+        ]
+      ],
+      "row_count": 32,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "Selection Rules of AGVs and Machines for Processing $O_{j(i \\times 1)}$",
+      "headers": [
+        "Rule",
+        "Description"
+      ],
+      "rows": [
+        [
+          1,
+          "Select the AGV that reaches the material area the earliest."
+        ],
+        [
+          2,
+          "Select the AGV that is available the earliest."
+        ],
+        [
+          3,
+          "Select the AGV that reaches the current machine the latest before <br> $O_{j i}$ is finished, if one exists. Otherwise, select the AGV that <br> reaches the machine the earliest."
+        ],
+        [
+          4,
+          "Select the AGV that reaches the current machine the earliest after <br> $O_{j i}$ is finished, if one exists. Otherwise, select the AGV that <br> reaches the machine the latest."
+        ],
+        [
+          5,
+          "Select the AGV that minimizes waiting time for each other."
+        ],
+        [
+          6,
+          "Select the AGV that reaches the machine the earliest."
+        ],
+        [
+          7,
+          "Select the AGV that is available the earliest."
+        ],
+        [
+          1,
+          "Select the machine that finishes the operation the earliest."
+        ],
+        [
+          2,
+          "Select the machine that is available the earliest."
+        ],
+        [
+          3,
+          "Select the machine that is available the latest before $J_{j}$ reaches it, <br> if one exists. Otherwise, select the machine that is available the <br> earliest."
+        ],
+        [
+          4,
+          "Select the machine that is available the earliest after $J_{j}$ reaches it, <br> if one exists. Otherwise, select the machine that is available the <br> latest."
+        ],
+        [
+          5,
+          "Select the machine that minimizes waiting time for each other."
+        ],
+        [
+          6,
+          "Select the machine that finishes processing $O_{i j}$ the earliest."
+        ],
+        [
+          7,
+          "Select the machine that is available the earliest."
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "Time COMPLEXITY ANALYSIS",
+      "headers": [
+        "Procedure",
+        "Time complexity"
+      ],
+      "rows": [
+        [
+          "Generating a new population",
+          "$O\\left(N \\cdot N_{J}^{S}\\right)$"
+        ],
+        [
+          "Selecting elite individuals",
+          "$O\\left(N_{x}\\right)$"
+        ],
+        [
+          "Updating models of EDA and ACO",
+          "$O\\left(N_{x} \\cdot N_{J}^{S}\\right)$"
+        ],
+        [
+          "Improving a solution by local search",
+          "$O\\left(\\right.$ Iter $\\left._{\\max }^{\\text {LSS }}\\right)$"
+        ],
+        [
+          "Updating ratio of selecting EDA/ACO",
+          "$O\\left(N_{x}\\right)$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Orthogonal Array and RV Values",
+      "headers": [
+        "Experiment",
+        "Factor Level",
+        "",
+        "",
+        "",
+        "Makespan",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Number",
+          "N",
+          "$P_{s}$",
+          "$\\lambda^{\\text {e } d a}$",
+          "$\\xi^{\\text {aco }}$",
+          "$\\omega$",
+          1,
+          2
+        ],
+        [
+          1,
+          100,
+          0.1,
+          0.2,
+          0.2,
+          0.2,
+          1156.3,
+          192.5
+        ],
+        [
+          2,
+          100,
+          0.2,
+          0.4,
+          0.4,
+          0.4,
+          1158.2,
+          192.1
+        ],
+        [
+          3,
+          100,
+          0.3,
+          0.6,
+          0.6,
+          0.6,
+          1156.7,
+          192.8
+        ],
+        [
+          4,
+          100,
+          0.4,
+          0.8,
+          0.8,
+          0.8,
+          1166.0,
+          195.3
+        ],
+        [
+          5,
+          200,
+          0.1,
+          0.4,
+          0.6,
+          0.8,
+          1143.4,
+          191.8
+        ],
+        [
+          6,
+          200,
+          0.2,
+          0.2,
+          0.8,
+          0.6,
+          1142.4,
+          194.6
+        ],
+        [
+          7,
+          200,
+          0.3,
+          0.8,
+          0.2,
+          0.4,
+          1131.5,
+          190.5
+        ],
+        [
+          8,
+          200,
+          0.4,
+          0.6,
+          0.4,
+          0.2,
+          1144.7,
+          192.6
+        ],
+        [
+          9,
+          300,
+          0.1,
+          0.6,
+          0.8,
+          0.4,
+          1141.2,
+          190.6
+        ],
+        [
+          10,
+          300,
+          0.2,
+          0.8,
+          0.6,
+          0.2,
+          1132.3,
+          190.3
+        ],
+        [
+          11,
+          300,
+          0.3,
+          0.2,
+          0.4,
+          0.8,
+          1130.5,
+          192.7
+        ],
+        [
+          12,
+          300,
+          0.4,
+          0.4,
+          0.2,
+          0.6,
+          1137.1,
+          193.0
+        ],
+        [
+          13,
+          400,
+          0.1,
+          0.8,
+          0.4,
+          0.6,
+          1122.2,
+          190.0
+        ],
+        [
+          14,
+          400,
+          0.2,
+          0.6,
+          0.2,
+          0.8,
+          1133.7,
+          191.3
+        ],
+        [
+          15,
+          400,
+          0.3,
+          0.2,
+          0.8,
+          0.2,
+          1135.0,
+          191.9
+        ],
+        [
+          16,
+          400,
+          0.4,
+          0.2,
+          0.6,
+          0.4,
+          1135.0,
+          192.5
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 8
+    },
+    {
+      "table_number": "V",
+      "table_title": "Response Table For ExPI",
+      "headers": [
+        "Factor Level",
+        "N",
+        "$P_{s}$",
+        "$\\lambda^{\\text {e } d a}$",
+        "$\\xi^{\\text {aco }}$",
+        "$\\omega$"
+      ],
+      "rows": [
+        [
+          1,
+          1159,
+          1141,
+          1141,
+          1140,
+          1142
+        ],
+        [
+          2,
+          1140,
+          1142,
+          1143,
+          "$\\mathbf{1 1 3 9}$",
+          1141
+        ],
+        [
+          3,
+          1135,
+          "$\\mathbf{1 1 3 8}$",
+          1144,
+          1142,
+          "$\\mathbf{1 1 4 0}$"
+        ],
+        [
+          4,
+          "$\\mathbf{1 1 3 1}$",
+          1146,
+          "$\\mathbf{1 1 3 8}$",
+          1146,
+          1143
+        ],
+        [
+          "Delta",
+          29,
+          8,
+          6,
+          7,
+          4
+        ],
+        [
+          "Rank",
+          1,
+          2,
+          4,
+          3,
+          5
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "VI",
+      "table_title": "RESPONSE TABLE FOR EXP2",
+      "headers": [
+        "Factor Level",
+        "$N$",
+        "$P_{x}$",
+        "$\\lambda^{\\text {cdo }}$",
+        "$\\xi^{\\text {inco }}$",
+        "$\\omega$"
+      ],
+      "rows": [
+        [
+          1,
+          193.2,
+          "$\\mathbf{1 9 1 . 3}$",
+          193.1,
+          "$\\mathbf{1 9 1 . 8}$",
+          191.8
+        ],
+        [
+          2,
+          192.4,
+          192.1,
+          192.2,
+          "$\\mathbf{1 9 1 . 8}$",
+          "$\\mathbf{1 9 1 . 4}$"
+        ],
+        [
+          3,
+          191.7,
+          192.0,
+          191.8,
+          191.9,
+          192.6
+        ],
+        [
+          4,
+          "$\\mathbf{1 9 1 . 4}$",
+          193.3,
+          "$\\mathbf{1 9 1 . 5}$",
+          193.1,
+          192.8
+        ],
+        [
+          "Delta",
+          1.7,
+          2.1,
+          1.5,
+          1.3,
+          1.3
+        ],
+        [
+          "Rank",
+          2,
+          1,
+          3,
+          5,
+          4
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "VII",
+      "table_title": "Suggested COMBinaTION OF PARAMETERS",
+      "headers": [
+        "Instance",
+        "$N$",
+        "$P_{x}$",
+        "$\\lambda^{\\text {cdo }}$",
+        "$\\xi^{\\text {inco }}$",
+        "$\\omega$"
+      ],
+      "rows": [
+        [
+          "$t / p \\leq 0.5$",
+          400,
+          0.3,
+          0.8,
+          0.4,
+          0.6
+        ],
+        [
+          "$t / p>0.5$",
+          400,
+          0.1,
+          0.8,
+          0.4,
+          0.4
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "Results of the Case Study in a Hardware Factory",
+      "headers": [
+        "$1 / p$",
+        "EDA_ACO_LS",
+        "",
+        "",
+        "RGA",
+        "",
+        "",
+        "PDE",
+        "",
+        "",
+        "GATS",
+        "",
+        "",
+        "BRKGA",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Best(min)",
+          "Aver(min)",
+          "Die",
+          "Best(min)",
+          "Aver(min)",
+          "Die",
+          "Best(min)",
+          "Aver(min)",
+          "Die",
+          "Best(min)",
+          "Aver(min)",
+          "Die",
+          "Best(min)",
+          "Aver(min)",
+          "Die"
+        ],
+        [
+          0.11,
+          403.7,
+          411.2,
+          "7.40e-02",
+          "422.4 (-)",
+          432.7,
+          "2.27e-01",
+          "418.9 (-)",
+          427.9,
+          "6.82e-02",
+          "411 (-)",
+          426.5,
+          "1.57e-01",
+          "457 (-)",
+          466.0,
+          "1.34e-01"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 16
+    },
+    {
+      "table_number": "IX",
+      "table_title": "The Information on the New Upper Bounds",
+      "headers": [
+        "Ins85",
+        "Hom_11_44_8_2",
+        "Best makespan $=1113.0$"
+      ],
+      "rows": [
+        [
+          "job layer:",
+          946203514472103659411038262917958101300710588670,
+          ""
+        ],
+        [
+          "machine layer:",
+          31202010453614225712314674657426453367345467,
+          ""
+        ],
+        [
+          "AGV layer:",
+          10011011111111001011111100000111010001100010101,
+          ""
+        ],
+        [
+          86,
+          124882,
+          "Best makespan $=1233.0$"
+        ],
+        [
+          "job layer:",
+          24071132148403985204178112697111100387656310951110169105,
+          ""
+        ],
+        [
+          "machine layer:",
+          102310604256432346715427154641735623452647674653,
+          ""
+        ],
+        [
+          "AGV layer:",
+          10011110010011100101001101110111101111011101001001010,
+          ""
+        ],
+        [
+          88,
+          105862,
+          147.0
+        ],
+        [
+          "job layer:",
+          5335831068527326180499721009264978254615307948150926441773,
+          ""
+        ],
+        [
+          "machine layer:",
+          5115114515501144455134144014441545413411145541154544111552,
+          ""
+        ],
+        [
+          "AGV layer:",
+          11100101111001011110010000111010101100000000100010111110011,
+          ""
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 3
+    }
+  ]
+}

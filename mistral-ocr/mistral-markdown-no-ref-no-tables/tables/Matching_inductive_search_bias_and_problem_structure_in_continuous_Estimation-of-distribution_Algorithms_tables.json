@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/Matching inductive search bias and problem structure in continuous Estimation-of-distribution Algorithms.md",
+    "filename": "Matching inductive search bias and problem structure in continuous Estimation-of-distribution Algorithms.md",
+    "title": "Matching inductive search bias and problem structure in continuous Estimation-of-distribution Algorithms",
+    "year": "2008"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Numerical optimization test problems (optimal values given with 7-digit precision)",
+      "headers": [
+        "Name",
+        "Definition",
+        "Initial range",
+        "Optimal value"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "Minimize $\\sum_{i=0}^{l-1} x_{i}^{2}$",
+          "$x_{i} \\in[-5,5](0 \\leqslant i<l)$",
+          0
+        ],
+        [
+          "Parabolic Ridge",
+          "Minimize $-x_{0}+100 \\sum_{i=1}^{l-1} x_{i}^{2}$",
+          "$x_{i} \\in[-5,5](0 \\leqslant i<l)$",
+          "$-\\infty$"
+        ],
+        [
+          "Griewank",
+          "$\\operatorname{Minimize} \\frac{1}{4000} \\sum_{i=0}^{l-1}\\left(x_{i}-100\\right)^{2}-\\prod_{i=0}^{l-1} \\cos \\left(\\frac{x_{i}-100}{x_{i}^{2}+1}\\right)+1$",
+          "$x_{i} \\in[-600,600](0 \\leqslant i<l)$",
+          0
+        ],
+        [
+          "Michalewicz",
+          "Minimize $-\\sum_{i=0}^{l-1} \\sin \\left(x_{i}\\right) \\sin ^{20}\\left(\\frac{(i+1) x_{i}^{2}}{2}\\right)$",
+          "$x_{i} \\in[0, \\pi](0 \\leqslant i<l)$",
+          "$\\begin{aligned} & -4.687658(l=5) \\\\ & -24.63319(l=25) \\end{aligned}$"
+        ],
+        [
+          "Rosenbrock",
+          "Minimize $\\sum_{i=0}^{l-2} 100\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(1-x_{i}\\right)^{2}$",
+          "$x_{i} \\in[-5.12,5.12](0 \\leqslant i<l)$",
+          0
+        ],
+        [
+          "Cancellation",
+          "where $\\gamma_{0}=x_{0}, \\gamma_{i}=x_{i}+\\gamma_{i-1}$",
+          "$x_{i} \\in[-3,3](0 \\leqslant i<l)$",
+          "$1 \\times 10^{7}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Values-to-reach for all problems and dimensionalities",
+      "headers": [
+        "Dimensionality",
+        "Sphere",
+        "Parabolic ridge",
+        "Griewank",
+        "Michalewicz",
+        "Rosenbrock",
+        "Summation cancellation"
+      ],
+      "rows": [
+        [
+          "$l=5$",
+          "$1 \\times 10^{-20}$",
+          "$-1 \\times 10^{10}$",
+          "$1 \\times 10^{-10}$",
+          -4.687658,
+          "$1 \\times 10^{-10}$",
+          "$1 \\times 10^{7}$"
+        ],
+        [
+          "$l=25$",
+          "$1 \\times 10^{-20}$",
+          "$-1 \\times 10^{10}$",
+          "$1 \\times 10^{-10}$",
+          -24.63319,
+          "$1 \\times 10^{-10}$",
+          "$1 \\times 10^{7}$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Selected population sizes and associated probabilities of success",
+      "headers": [
+        "EA",
+        "Dimensionality",
+        "Sphere",
+        "",
+        "Parabolic <br> ridge",
+        "",
+        "Griewank",
+        "",
+        "Michalewicz",
+        "",
+        "Rosenbrock",
+        "",
+        "Summation <br> cancellation",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "n",
+          "Pr.(S)",
+          "n",
+          "Pr.(S)",
+          "n",
+          "Pr.(S)",
+          "n",
+          "Pr.(S)",
+          "n",
+          "Pr.(S)",
+          "n",
+          "Pr.(S)"
+        ],
+        [
+          "Normal",
+          "$l=5$",
+          100,
+          1.0,
+          12800,
+          0.0,
+          800,
+          0.0,
+          100,
+          0.2,
+          12800,
+          0.0,
+          400,
+          1.0
+        ],
+        [
+          "",
+          "$l=25$",
+          400,
+          1.0,
+          12800,
+          0.0,
+          400,
+          1.0,
+          800,
+          0.0,
+          12800,
+          0.0,
+          12800,
+          0.03
+        ],
+        [
+          "Normal + AVS",
+          "$l=5$",
+          25,
+          1.0,
+          25,
+          1.0,
+          800,
+          1.0,
+          50,
+          0.21,
+          50,
+          1.0,
+          50,
+          1.0
+        ],
+        [
+          "",
+          "$l=25$",
+          50,
+          1.0,
+          50,
+          1.0,
+          100,
+          1.0,
+          6400,
+          0.01,
+          100,
+          1.0,
+          800,
+          1.0
+        ],
+        [
+          "Normal + AVS+CT",
+          "$l=5$",
+          50,
+          1.0,
+          50,
+          1.0,
+          800,
+          1.0,
+          200,
+          0.3,
+          50,
+          1.0,
+          50,
+          1.0
+        ],
+        [
+          "",
+          "$l=25$",
+          50,
+          1.0,
+          50,
+          1.0,
+          100,
+          1.0,
+          12800,
+          0.0,
+          200,
+          1.0,
+          1600,
+          1.0
+        ],
+        [
+          "CMA-ES",
+          "$l=5$",
+          25,
+          1.0,
+          25,
+          1.0,
+          200,
+          1.0,
+          25,
+          0.05,
+          25,
+          1.0,
+          25,
+          1.0
+        ],
+        [
+          "",
+          "$l=25$",
+          25,
+          1.0,
+          25,
+          1.0,
+          50,
+          1.0,
+          200,
+          0.0,
+          25,
+          1.0,
+          25,
+          1.0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 14
+    }
+  ]
+}

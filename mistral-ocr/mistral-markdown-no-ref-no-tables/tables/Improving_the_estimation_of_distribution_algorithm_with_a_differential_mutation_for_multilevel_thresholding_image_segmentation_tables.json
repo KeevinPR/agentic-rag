@@ -1,0 +1,986 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Improving the estimation of distribution algorithm with a differential mutation for multilevel thresholding image segmentation.md",
+    "filename": "Improving the estimation of distribution algorithm with a differential mutation for multilevel thresholding image segmentation.md",
+    "title": "Improving the estimation of distribution algorithm with a differential mutation for multilevel thresholding image segmentation",
+    "year": "2024"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Algorithms parameter settings",
+      "headers": [
+        "Algorithm",
+        "Parameters"
+      ],
+      "rows": [
+        [
+          "DMEDA",
+          "$\\mathrm{N}=100$, iters $=500$, scaling_factor $=0.2$"
+        ],
+        [
+          "EDA",
+          "$\\mathrm{N}=100$, iters $=500$"
+        ],
+        [
+          "CS",
+          "$\\mathrm{N}=100$, iters $=500$, ap $=0.25$, n_nest $=25$"
+        ],
+        [
+          "GSA",
+          "$\\mathrm{N}=100$, iters $=500$, boundary_points $=[-\\mathrm{pi}, \\mathrm{pi}]$"
+        ],
+        [
+          "JF",
+          "$\\mathrm{N}=100$, iters $=500$"
+        ],
+        [
+          "SCA",
+          "$\\mathrm{N}=100$, iters $=500, \\mathrm{a}=2$"
+        ],
+        [
+          "AHA",
+          "$\\mathrm{N}=100$, iters $=500$"
+        ],
+        [
+          "OOA",
+          "$\\mathrm{N}=100$, iters $=500$"
+        ],
+        [
+          "SSA",
+          "$\\mathrm{N}=100$, iters $=500, \\mathrm{st}=0.8$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "18",
+      "table_title": "Table 18 Comparison of using Otsu's between-class variance over the BSD300 for two thresholds",
+      "headers": [
+        "Metric",
+        "Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "DMEDA",
+          "EDA",
+          "CS",
+          "GSA",
+          "JF",
+          "SCA",
+          "AHA",
+          "OOA",
+          "SSA"
+        ],
+        [
+          "Otsu",
+          "$\\mathbf{2 . 0 4 E + 0 3}$",
+          "$2.04 \\mathrm{E}+03$",
+          "$2.04 \\mathrm{E}+03$",
+          "$2.02 \\mathrm{E}+03$",
+          "$\\mathbf{2 . 0 4 E + 0 3}$",
+          "$2.04 \\mathrm{E}+03$",
+          "$2.03 \\mathrm{E}+03$",
+          "$2.04 \\mathrm{E}+03$",
+          "$2.04 \\mathrm{E}+03$"
+        ],
+        [
+          "PSNR",
+          "$1.54 \\mathrm{E}+01$",
+          "$1.53 \\mathrm{E}+01$",
+          "$1.20 \\mathrm{E}+01$",
+          "$1.52 \\mathrm{E}+01$",
+          "$\\mathbf{1 . 5 5 E + 0 1}$",
+          "$1.54 \\mathrm{E}+01$",
+          "$1.51 \\mathrm{E}+01$",
+          "$1.55 \\mathrm{E}+01$",
+          "$1.50 \\mathrm{E}+01$"
+        ],
+        [
+          "SSIM",
+          "$5.98 \\mathrm{E}-01$",
+          "$5.92 \\mathrm{E}-01$",
+          "$4.80 \\mathrm{E}-01$",
+          "$5.87 \\mathrm{E}-01$",
+          "$\\mathbf{5 . 9 9 E - 0 1}$",
+          "$5.97 \\mathrm{E}-01$",
+          "$5.83 \\mathrm{E}-01$",
+          "$5.97 \\mathrm{E}-01$",
+          "$5.78 \\mathrm{E}-01$"
+        ],
+        [
+          "FSIM",
+          "$7.15 \\mathrm{E}-01$",
+          "$7.09 \\mathrm{E}-01$",
+          "$5.93 \\mathrm{E}-01$",
+          "$7.04 \\mathrm{E}-01$",
+          "$7.19 \\mathrm{E}-01$",
+          "$\\mathbf{7 . 1 9 E - 0 1}$",
+          "$7.00 \\mathrm{E}-01$",
+          "$7.17 \\mathrm{E}-01$",
+          "$7.00 \\mathrm{E}-01$"
+        ],
+        [
+          "QILV",
+          "$7.98 \\mathrm{E}-01$",
+          "$7.80 \\mathrm{E}-01$",
+          "$1.98 \\mathrm{E}-01$",
+          "$7.67 \\mathrm{E}-01$",
+          "$8.10 \\mathrm{E}-01$",
+          "$\\mathbf{8 . 1 0 E - 0 1}$",
+          "$7.48 \\mathrm{E}-01$",
+          "$8.01 \\mathrm{E}-01$",
+          "$7.34 \\mathrm{E}-01$"
+        ],
+        [
+          "HPSI",
+          "$4.21 \\mathrm{E}-01$",
+          "$4.11 \\mathrm{E}-01$",
+          "$2.45 \\mathrm{E}-01$",
+          "$4.05 \\mathrm{E}-01$",
+          "$4.23 \\mathrm{E}-01$",
+          "$\\mathbf{4 . 2 3 E - 0 1}$",
+          "$3.99 \\mathrm{E}-01$",
+          "$4.22 \\mathrm{E}-01$",
+          "$3.93 \\mathrm{E}-01$"
+        ],
+        [
+          "UIQI",
+          "$8.92 \\mathrm{E}-01$",
+          "$8.85 \\mathrm{E}-01$",
+          "$6.68 \\mathrm{E}-01$",
+          "$8.77 \\mathrm{E}-01$",
+          "$\\mathbf{8 . 9 8 E - 0 1}$",
+          "$8.95 \\mathrm{E}-01$",
+          "$8.68 \\mathrm{E}-01$",
+          "$8.95 \\mathrm{E}-01$",
+          "$8.49 \\mathrm{E}-01$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    },
+    {
+      "table_number": "19",
+      "table_title": "Table 19 Comparison of using Otsu's between-class variance over the BSD300 for three thresholds",
+      "headers": [
+        "Metric",
+        "Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "DMEDA",
+          "EDA",
+          "CS",
+          "GSA",
+          "JF",
+          "SCA",
+          "AHA",
+          "OOA",
+          "SSA"
+        ],
+        [
+          "Otsu",
+          "$\\mathbf{2 . 2 0 E + 0 3}$",
+          "$2.18 \\mathrm{E}+03$",
+          "$2.19 \\mathrm{E}+03$",
+          "$2.16 \\mathrm{E}+03$",
+          "$2.20 \\mathrm{E}+03$",
+          "$2.19 \\mathrm{E}+03$",
+          "$2.17 \\mathrm{E}+03$",
+          "$2.20 \\mathrm{E}+03$",
+          "$2.19 \\mathrm{E}+03$"
+        ],
+        [
+          "PSNR",
+          "$1.80 \\mathrm{E}+01$",
+          "$1.75 \\mathrm{E}+01$",
+          "$1.49 \\mathrm{E}+01$",
+          "$1.73 \\mathrm{E}+01$",
+          "$1.80 \\mathrm{E}+01$",
+          "$1.79 \\mathrm{E}+01$",
+          "$1.71 \\mathrm{E}+01$",
+          "$\\mathbf{1 . 8 0 E + 0 1}$",
+          "$1.70 \\mathrm{E}+01$"
+        ],
+        [
+          "SSIM",
+          "$7.06 \\mathrm{E}-01$",
+          "$6.93 \\mathrm{E}-01$",
+          "$6.40 \\mathrm{E}-01$",
+          "$6.87 \\mathrm{E}-01$",
+          "$7.05 \\mathrm{E}-01$",
+          "$7.04 \\mathrm{E}-01$",
+          "$6.80 \\mathrm{E}-01$",
+          "$\\mathbf{7 . 0 6 E - 0 1}$",
+          "$6.76 \\mathrm{E}-01$"
+        ],
+        [
+          "FSIM",
+          "$7.73 \\mathrm{E}-01$",
+          "$7.61 \\mathrm{E}-01$",
+          "$6.87 \\mathrm{E}-01$",
+          "$7.54 \\mathrm{E}-01$",
+          "$7.74 \\mathrm{E}-01$",
+          "$7.74 \\mathrm{E}-01$",
+          "$7.48 \\mathrm{E}-01$",
+          "$\\mathbf{7 . 7 5 E - 0 1}$",
+          "$7.49 \\mathrm{E}-01$"
+        ],
+        [
+          "QILV",
+          "$8.81 \\mathrm{E}-01$",
+          "$8.58 \\mathrm{E}-01$",
+          "$5.05 \\mathrm{E}-01$",
+          "$8.47 \\mathrm{E}-01$",
+          "$8.85 \\mathrm{E}-01$",
+          "$\\mathbf{8 . 8 6 E - 0 1}$",
+          "$8.30 \\mathrm{E}-01$",
+          "$8.85 \\mathrm{E}-01$",
+          "$8.22 \\mathrm{E}-01$"
+        ],
+        [
+          "HPSI",
+          "$5.21 \\mathrm{E}-01$",
+          "$5.00 \\mathrm{E}-01$",
+          "$3.74 \\mathrm{E}-01$",
+          "$4.91 \\mathrm{E}-01$",
+          "$5.23 \\mathrm{E}-01$",
+          "$\\mathbf{5 . 2 3 E - 0 1}$",
+          "$4.79 \\mathrm{E}-01$",
+          "$5.23 \\mathrm{E}-01$",
+          "$4.80 \\mathrm{E}-01$"
+        ],
+        [
+          "UIQI",
+          "$9.42 \\mathrm{E}-01$",
+          "$9.34 \\mathrm{E}-01$",
+          "$8.70 \\mathrm{E}-01$",
+          "$9.29 \\mathrm{E}-01$",
+          "$9.44 \\mathrm{E}-01$",
+          "$9.43 \\mathrm{E}-01$",
+          "$9.18 \\mathrm{E}-01$",
+          "$\\mathbf{9 . 4 4 E - 0 1}$",
+          "$9.05 \\mathrm{E}-01$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    },
+    {
+      "table_number": "20",
+      "table_title": "Table 20 Comparison of using Otsu's between-class variance over the BSD300 for four thresholds",
+      "headers": [
+        "Metric",
+        "Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "DMEDA",
+          "EDA",
+          "CS",
+          "GSA",
+          "JF",
+          "SCA",
+          "AHA",
+          "OOA",
+          "SSA"
+        ],
+        [
+          "Otsu",
+          "$\\mathbf{2 . 2 6 E + 0 3}$",
+          "$2.24 \\mathrm{E}+03$",
+          "$2.25 \\mathrm{E}+03$",
+          "$2.23 \\mathrm{E}+03$",
+          "$2.26 \\mathrm{E}+03$",
+          "$2.25 \\mathrm{E}+03$",
+          "$2.23 \\mathrm{E}+03$",
+          "$2.26 \\mathrm{E}+03$",
+          "$2.26 \\mathrm{E}+03$"
+        ],
+        [
+          "PSNR",
+          "$1.96 \\mathrm{E}+01$",
+          "$1.90 \\mathrm{E}+01$",
+          "$1.70 \\mathrm{E}+01$",
+          "$1.87 \\mathrm{E}+01$",
+          "$\\mathbf{1 . 9 7 E + 0 1}$",
+          "$1.96 \\mathrm{E}+01$",
+          "$1.85 \\mathrm{E}+01$",
+          "$1.97 \\mathrm{E}+01$",
+          "$1.85 \\mathrm{E}+01$"
+        ],
+        [
+          "SSIM",
+          "$\\mathbf{7 . 8 1 E - 0 1}$",
+          "$7.56 \\mathrm{E}-01$",
+          "$7.26 \\mathrm{E}-01$",
+          "$7.48 \\mathrm{E}-01$",
+          "$7.81 \\mathrm{E}-01$",
+          "$7.72 \\mathrm{E}-01$",
+          "$7.38 \\mathrm{E}-01$",
+          "$7.79 \\mathrm{E}-01$",
+          "$7.38 \\mathrm{E}-01$"
+        ],
+        [
+          "FSIM",
+          "$8.13 \\mathrm{E}-01$",
+          "$7.94 \\mathrm{E}-01$",
+          "$7.48 \\mathrm{E}-01$",
+          "$7.87 \\mathrm{E}-01$",
+          "$8.16 \\mathrm{E}-01$",
+          "$8.12 \\mathrm{E}-01$",
+          "$7.82 \\mathrm{E}-01$",
+          "$\\mathbf{8 . 1 7 E - 0 1}$",
+          "$7.84 \\mathrm{E}-01$"
+        ],
+        [
+          "QILV",
+          "$9.23 \\mathrm{E}-01$",
+          "$9.00 \\mathrm{E}-01$",
+          "$6.96 \\mathrm{E}-01$",
+          "$8.91 \\mathrm{E}-01$",
+          "$\\mathbf{9 . 2 7 E - 0 1}$",
+          "$9.25 \\mathrm{E}-01$",
+          "$8.75 \\mathrm{E}-01$",
+          "$9.26 \\mathrm{E}-01$",
+          "$8.62 \\mathrm{E}-01$"
+        ],
+        [
+          "HPSI",
+          "$6.03 \\mathrm{E}-01$",
+          "$5.62 \\mathrm{E}-01$",
+          "$4.68 \\mathrm{E}-01$",
+          "$5.50 \\mathrm{E}-01$",
+          "$\\mathbf{6 . 0 5 E - 0 1}$",
+          "$5.95 \\mathrm{E}-01$",
+          "$5.37 \\mathrm{E}-01$",
+          "$6.03 \\mathrm{E}-01$",
+          "$5.40 \\mathrm{E}-01$"
+        ],
+        [
+          "UIQI",
+          "$9.65 \\mathrm{E}-01$",
+          "$9.56 \\mathrm{E}-01$",
+          "$9.32 \\mathrm{E}-01$",
+          "$9.50 \\mathrm{E}-01$",
+          "$\\mathbf{9 . 6 5 E - 0 1}$",
+          "$9.63 \\mathrm{E}-01$",
+          "$9.44 \\mathrm{E}-01$",
+          "$9.65 \\mathrm{E}-01$",
+          "$9.33 \\mathrm{E}-01$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    },
+    {
+      "table_number": "21",
+      "table_title": "Table 21 Comparison of using Otsu's between-class variance over the BSD300 for five thresholds",
+      "headers": [
+        "Metric",
+        "Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "DMEDA",
+          "EDA",
+          "CS",
+          "GSA",
+          "JF",
+          "SCA",
+          "AHA",
+          "OOA",
+          "SSA"
+        ],
+        [
+          "Otsu",
+          "$\\mathbf{2 . 3 0 E + 0 3}$",
+          "$2.27 \\mathrm{E}+03$",
+          "$2.28 \\mathrm{E}+03$",
+          "$2.26 \\mathrm{E}+03$",
+          "$\\mathbf{2 . 3 0 E + 0 3}$",
+          "$2.29 \\mathrm{E}+03$",
+          "$2.27 \\mathrm{E}+03$",
+          "$2.29 \\mathrm{E}+03$",
+          "$2.28 \\mathrm{E}+03$"
+        ],
+        [
+          "PSNR",
+          "$2.13 \\mathrm{E}+01$",
+          "$2.04 \\mathrm{E}+01$",
+          "$1.86 \\mathrm{E}+01$",
+          "$1.99 \\mathrm{E}+01$",
+          "$\\mathbf{2 . 1 3 E + 0 1}$",
+          "$2.11 \\mathrm{E}+01$",
+          "$1.98 \\mathrm{E}+01$",
+          "$2.13 \\mathrm{E}+01$",
+          "$1.98 \\mathrm{E}+01$"
+        ],
+        [
+          "SSIM",
+          "$\\mathbf{8 . 2 8 E - 0 1}$",
+          "$8.00 \\mathrm{E}-01$",
+          "$7.80 \\mathrm{E}-01$",
+          "$7.90 \\mathrm{E}-01$",
+          "$8.27 \\mathrm{E}-01$",
+          "$8.16 \\mathrm{E}-01$",
+          "$7.81 \\mathrm{E}-01$",
+          "$8.23 \\mathrm{E}-01$",
+          "$7.80 \\mathrm{E}-01$"
+        ],
+        [
+          "FSIM",
+          "$8.44 \\mathrm{E}-01$",
+          "$8.20 \\mathrm{E}-01$",
+          "$7.86 \\mathrm{E}-01$",
+          "$8.11 \\mathrm{E}-01$",
+          "$8.45 \\mathrm{E}-01$",
+          "$8.40 \\mathrm{E}-01$",
+          "$8.06 \\mathrm{E}-01$",
+          "$\\mathbf{8 . 4 5 E - 0 1}$",
+          "$8.10 \\mathrm{E}-01$"
+        ],
+        [
+          "QILV",
+          "$9.45 \\mathrm{E}-01$",
+          "$9.24 \\mathrm{E}-01$",
+          "$7.94 \\mathrm{E}-01$",
+          "$9.16 \\mathrm{E}-01$",
+          "$9.48 \\mathrm{E}-01$",
+          "$9.46 \\mathrm{E}-01$",
+          "$9.02 \\mathrm{E}-01$",
+          "$\\mathbf{9 . 4 8 E - 0 1}$",
+          "$8.92 \\mathrm{E}-01$"
+        ],
+        [
+          "HPSI",
+          "$6.61 \\mathrm{E}-01$",
+          "$6.09 \\mathrm{E}-01$",
+          "$5.36 \\mathrm{E}-01$",
+          "$5.96 \\mathrm{E}-01$",
+          "$6.63 \\mathrm{E}-01$",
+          "$6.52 \\mathrm{E}-01$",
+          "$5.87 \\mathrm{E}-01$",
+          "$\\mathbf{6 . 6 4 E - 0 1}$",
+          "$5.88 \\mathrm{E}-01$"
+        ],
+        [
+          "UIQI",
+          "$9.76 \\mathrm{E}-01$",
+          "$9.69 \\mathrm{E}-01$",
+          "$9.56 \\mathrm{E}-01$",
+          "$9.64 \\mathrm{E}-01$",
+          "$9.76 \\mathrm{E}-01$",
+          "$9.75 \\mathrm{E}-01$",
+          "$9.59 \\mathrm{E}-01$",
+          "$\\mathbf{9 . 7 7 E - 0 1}$",
+          "$9.51 \\mathrm{E}-01$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    },
+    {
+      "table_number": "22",
+      "table_title": "Table 22 Comparison of using Kapur's entropy over the BSD300 for two thresholds",
+      "headers": [
+        "Metric",
+        "Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "DMEDA",
+          "EDA",
+          "CS",
+          "GSA",
+          "JF",
+          "SCA",
+          "AHA",
+          "OOA",
+          "SSA"
+        ],
+        [
+          "Kapur",
+          "$1.29 \\mathrm{E}+01$",
+          "$1.28 \\mathrm{E}+01$",
+          "$1.29 \\mathrm{E}+01$",
+          "$1.28 \\mathrm{E}+01$",
+          "$1.27 \\mathrm{E}+01$",
+          "$5.54 \\mathrm{E}+00$",
+          "$1.28 \\mathrm{E}+01$",
+          "$\\mathbf{1 . 2 9 E + 0 1}$",
+          "$1.27 \\mathrm{E}+01$"
+        ],
+        [
+          "PSNR",
+          "$1.07 \\mathrm{E}+01$",
+          "$1.08 \\mathrm{E}+01$",
+          "$1.03 \\mathrm{E}+01$",
+          "$1.10 \\mathrm{E}+01$",
+          "$1.10 \\mathrm{E}+01$",
+          "$8.53 \\mathrm{E}+00$",
+          "$1.10 \\mathrm{E}+01$",
+          "$1.06 \\mathrm{E}+01$",
+          "$\\mathbf{1 . 1 6 E + 0 1}$"
+        ],
+        [
+          "SSIM",
+          "$3.14 \\mathrm{E}-01$",
+          "$3.18 \\mathrm{E}-01$",
+          "$3.02 \\mathrm{E}-01$",
+          "$3.31 \\mathrm{E}-01$",
+          "$3.35 \\mathrm{E}-01$",
+          "$2.65 \\mathrm{E}-01$",
+          "$3.35 \\mathrm{E}-01$",
+          "$2.99 \\mathrm{E}-01$",
+          "$\\mathbf{4 . 3 7 E - 0 1}$"
+        ],
+        [
+          "FSIM",
+          "$5.79 \\mathrm{E}-01$",
+          "$5.83 \\mathrm{E}-01$",
+          "$5.75 \\mathrm{E}-01$",
+          "$5.86 \\mathrm{E}-01$",
+          "$\\mathbf{5 . 8 7 E - 0 1}$",
+          "$4.62 \\mathrm{E}-01$",
+          "$5.71 \\mathrm{E}-01$",
+          "$5.62 \\mathrm{E}-01$",
+          "$5.73 \\mathrm{E}-01$"
+        ],
+        [
+          "QILV",
+          "$3.49 \\mathrm{E}-01$",
+          "$3.69 \\mathrm{E}-01$",
+          "$2.80 \\mathrm{E}-01$",
+          "$\\mathbf{3 . 9 2 E - 0 1}$",
+          "$3.92 \\mathrm{E}-01$",
+          "$5.76 \\mathrm{E}-02$",
+          "$3.81 \\mathrm{E}-01$",
+          "$3.45 \\mathrm{E}-01$",
+          "$3.55 \\mathrm{E}-01$"
+        ],
+        [
+          "HPSI",
+          "$2.18 \\mathrm{E}-01$",
+          "$2.22 \\mathrm{E}-01$",
+          "$2.09 \\mathrm{E}-01$",
+          "$2.28 \\mathrm{E}-01$",
+          "$2.30 \\mathrm{E}-01$",
+          "$1.02 \\mathrm{E}-01$",
+          "$2.27 \\mathrm{E}-01$",
+          "$2.13 \\mathrm{E}-01$",
+          "$\\mathbf{2 . 3 4 E - 0 1}$"
+        ],
+        [
+          "UIQI",
+          "$2.49 \\mathrm{E}-01$",
+          "$-1.88 \\mathrm{E}-01$",
+          "$\\mathbf{7 . 5 6 E - 0 1}$",
+          "$2.61 \\mathrm{E}-01$",
+          "$-1.23 \\mathrm{E}-01$",
+          "$2.16 \\mathrm{E}-01$",
+          "$2.21 \\mathrm{E}-01$",
+          "$8.39 \\mathrm{E}-02$",
+          "$2.42 \\mathrm{E}-01$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    },
+    {
+      "table_number": "23",
+      "table_title": "Table 23 Comparison of using Kapur's entropy over the BSD300 for three thresholds",
+      "headers": [
+        "Metric",
+        "Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "DMEDA",
+          "EDA",
+          "CS",
+          "GSA",
+          "JF",
+          "SCA",
+          "AHA",
+          "OOA",
+          "SSA"
+        ],
+        [
+          "Kapur",
+          "$\\mathbf{1 . 8 0 E + 0 1}$",
+          "$1.77 \\mathrm{E}+01$",
+          "$1.79 \\mathrm{E}+01$",
+          "$1.76 \\mathrm{E}+01$",
+          "$1.76 \\mathrm{E}+01$",
+          "$8.08 \\mathrm{E}+00$",
+          "$1.76 \\mathrm{E}+01$",
+          "$1.79 \\mathrm{E}+01$",
+          "$1.75 \\mathrm{E}+01$"
+        ],
+        [
+          "PSNR",
+          "$\\mathbf{1 . 4 0 E + 0 1}$",
+          "$1.38 \\mathrm{E}+01$",
+          "$1.35 \\mathrm{E}+01$",
+          "$1.39 \\mathrm{E}+01$",
+          "$1.39 \\mathrm{E}+01$",
+          "$9.38 \\mathrm{E}+00$",
+          "$1.38 \\mathrm{E}+01$",
+          "$1.36 \\mathrm{E}+01$",
+          "$1.33 \\mathrm{E}+01$"
+        ],
+        [
+          "SSIM",
+          "$5.23 \\mathrm{E}-01$",
+          "$5.14 \\mathrm{E}-01$",
+          "$5.09 \\mathrm{E}-01$",
+          "$5.20 \\mathrm{E}-01$",
+          "$5.19 \\mathrm{E}-01$",
+          "$3.36 \\mathrm{E}-01$",
+          "$5.18 \\mathrm{E}-01$",
+          "$4.91 \\mathrm{E}-01$",
+          "$\\mathbf{5 . 3 7 E - 0 1}$"
+        ],
+        [
+          "FSIM",
+          "$\\mathbf{6 . 6 7 E - 0 1}$",
+          "$6.65 \\mathrm{E}-01$",
+          "$6.60 \\mathrm{E}-01$",
+          "$6.67 \\mathrm{E}-01$",
+          "$6.66 \\mathrm{E}-01$",
+          "$4.94 \\mathrm{E}-01$",
+          "$6.61 \\mathrm{E}-01$",
+          "$6.59 \\mathrm{E}-01$",
+          "$6.39 \\mathrm{E}-01$"
+        ],
+        [
+          "QILV",
+          "$6.29 \\mathrm{E}-01$",
+          "$6.27 \\mathrm{E}-01$",
+          "$5.71 \\mathrm{E}-01$",
+          "$\\mathbf{6 . 3 2 E - 0 1}$",
+          "$6.29 \\mathrm{E}-01$",
+          "$9.66 \\mathrm{E}-02$",
+          "$6.15 \\mathrm{E}-01$",
+          "$6.28 \\mathrm{E}-01$",
+          "$4.96 \\mathrm{E}-01$"
+        ],
+        [
+          "HPSI",
+          "$\\mathbf{3 . 4 8 E - 0 1}$",
+          "$3.44 \\mathrm{E}-01$",
+          "$3.35 \\mathrm{E}-01$",
+          "$3.45 \\mathrm{E}-01$",
+          "$3.43 \\mathrm{E}-01$",
+          "$1.30 \\mathrm{E}-01$",
+          "$3.39 \\mathrm{E}-01$",
+          "$3.37 \\mathrm{E}-01$",
+          "$3.01 \\mathrm{E}-01$"
+        ],
+        [
+          "UIQI",
+          "$7.24 \\mathrm{E}-01$",
+          "$6.29 \\mathrm{E}-01$",
+          "$-8.53 \\mathrm{E}-02$",
+          "$5.65 \\mathrm{E}-01$",
+          "$8.26 \\mathrm{E}-01$",
+          "$3.20 \\mathrm{E}-01$",
+          "$\\mathbf{9 . 1 1 E - 0 1}$",
+          "$6.88 \\mathrm{E}-01$",
+          "$6.60 \\mathrm{E}-01$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    },
+    {
+      "table_number": "24",
+      "table_title": "Table 24 Comparison of using Kapur's entropy over the BSD300 for four thresholds",
+      "headers": [
+        "Metric",
+        "Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "DMEDA",
+          "EDA",
+          "CS",
+          "GSA",
+          "JF",
+          "SCA",
+          "AHA",
+          "OOA",
+          "SSA"
+        ],
+        [
+          "Kapur",
+          "$\\mathbf{2 . 2 6 E + 0 1}$",
+          "$2.21 \\mathrm{E}+01$",
+          "$2.24 \\mathrm{E}+01$",
+          "$2.19 \\mathrm{E}+01$",
+          "$2.19 \\mathrm{E}+01$",
+          "$1.04 \\mathrm{E}+01$",
+          "$2.20 \\mathrm{E}+01$",
+          "$2.25 \\mathrm{E}+01$",
+          "$2.18 \\mathrm{E}+01$"
+        ],
+        [
+          "PSNR",
+          "$\\mathbf{1 . 6 7 E + 0 1}$",
+          "$1.61 \\mathrm{E}+01$",
+          "$1.59 \\mathrm{E}+01$",
+          "$1.59 \\mathrm{E}+01$",
+          "$1.60 \\mathrm{E}+01$",
+          "$1.00 \\mathrm{E}+01$",
+          "$1.59 \\mathrm{E}+01$",
+          "$1.61 \\mathrm{E}+01$",
+          "$1.48 \\mathrm{E}+01$"
+        ],
+        [
+          "SSIM",
+          "$\\mathbf{6 . 5 8 E - 0 1}$",
+          "$6.36 \\mathrm{E}-01$",
+          "$6.37 \\mathrm{E}-01$",
+          "$6.30 \\mathrm{E}-01$",
+          "$6.31 \\mathrm{E}-01$",
+          "$3.83 \\mathrm{E}-01$",
+          "$6.29 \\mathrm{E}-01$",
+          "$6.17 \\mathrm{E}-01$",
+          "$6.13 \\mathrm{E}-01$"
+        ],
+        [
+          "FSIM",
+          "$\\mathbf{7 . 3 3 E - 0 1}$",
+          "$7.21 \\mathrm{E}-01$",
+          "$7.20 \\mathrm{E}-01$",
+          "$7.18 \\mathrm{E}-01$",
+          "$7.19 \\mathrm{E}-01$",
+          "$5.14 \\mathrm{E}-01$",
+          "$7.15 \\mathrm{E}-01$",
+          "$7.25 \\mathrm{E}-01$",
+          "$6.78 \\mathrm{E}-01$"
+        ],
+        [
+          "QILV",
+          "$\\mathbf{7 . 8 3 E - 0 1}$",
+          "$7.58 \\mathrm{E}-01$",
+          "$7.28 \\mathrm{E}-01$",
+          "$7.50 \\mathrm{E}-01$",
+          "$7.52 \\mathrm{E}-01$",
+          "$1.30 \\mathrm{E}-01$",
+          "$7.37 \\mathrm{E}-01$",
+          "$7.82 \\mathrm{E}-01$",
+          "$5.96 \\mathrm{E}-01$"
+        ],
+        [
+          "HPSI",
+          "$\\mathbf{4 . 5 5 E - 0 1}$",
+          "$4.33 \\mathrm{E}-01$",
+          "$4.30 \\mathrm{E}-01$",
+          "$4.26 \\mathrm{E}-01$",
+          "$4.27 \\mathrm{E}-01$",
+          "$1.51 \\mathrm{E}-01$",
+          "$4.22 \\mathrm{E}-01$",
+          "$4.38 \\mathrm{E}-01$",
+          "$3.58 \\mathrm{E}-01$"
+        ],
+        [
+          "UIQI",
+          "$8.60 \\mathrm{E}-01$",
+          "$8.81 \\mathrm{E}-01$",
+          "$\\mathbf{1 . 0 2 E + 0 0}$",
+          "$8.61 \\mathrm{E}-01$",
+          "$8.47 \\mathrm{E}-01$",
+          "$3.97 \\mathrm{E}-01$",
+          "$8.54 \\mathrm{E}-01$",
+          "$8.36 \\mathrm{E}-01$",
+          "$8.07 \\mathrm{E}-01$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    },
+    {
+      "table_number": "25",
+      "table_title": "Table 25 Comparison of using Kapur's entropy over the BSD300 for five thresholds",
+      "headers": [
+        "Metric",
+        "Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "DMEDA",
+          "EDA",
+          "CS",
+          "GSA",
+          "JF",
+          "SCA",
+          "AHA",
+          "OOA",
+          "SSA"
+        ],
+        [
+          "Kapur",
+          "$\\mathbf{2 . 6 9 E + 0 1}$",
+          "$2.61 \\mathrm{E}+01$",
+          "$2.65 \\mathrm{E}+01$",
+          "$2.58 \\mathrm{E}+01$",
+          "$2.58 \\mathrm{E}+01$",
+          "$1.23 \\mathrm{E}+01$",
+          "$2.60 \\mathrm{E}+01$",
+          "$2.68 \\mathrm{E}+01$",
+          "$2.57 \\mathrm{E}+01$"
+        ],
+        [
+          "PSNR",
+          "$\\mathbf{1 . 8 7 E + 0 1}$",
+          "$1.77 \\mathrm{E}+01$",
+          "$1.77 \\mathrm{E}+01$",
+          "$1.75 \\mathrm{E}+01$",
+          "$1.75 \\mathrm{E}+01$",
+          "$1.05 \\mathrm{E}+01$",
+          "$1.75 \\mathrm{E}+01$",
+          "$1.80 \\mathrm{E}+01$",
+          "$1.59 \\mathrm{E}+01$"
+        ],
+        [
+          "SSIM",
+          "$\\mathbf{7 . 4 1 E - 0 1}$",
+          "$7.08 \\mathrm{E}-01$",
+          "$7.14 \\mathrm{E}-01$",
+          "$7.00 \\mathrm{E}-01$",
+          "$7.01 \\mathrm{E}-01$",
+          "$4.16 \\mathrm{E}-01$",
+          "$7.01 \\mathrm{E}-01$",
+          "$7.01 \\mathrm{E}-01$",
+          "$6.60 \\mathrm{E}-01$"
+        ],
+        [
+          "FSIM",
+          "$\\mathbf{7 . 8 3 E - 0 1}$",
+          "$7.61 \\mathrm{E}-01$",
+          "$7.63 \\mathrm{E}-01$",
+          "$7.55 \\mathrm{E}-01$",
+          "$7.55 \\mathrm{E}-01$",
+          "$5.31 \\mathrm{E}-01$",
+          "$7.53 \\mathrm{E}-01$",
+          "$7.73 \\mathrm{E}-01$",
+          "$7.04 \\mathrm{E}-01$"
+        ],
+        [
+          "QILV",
+          "$\\mathbf{8 . 6 1 E - 0 1}$",
+          "$8.29 \\mathrm{E}-01$",
+          "$8.14 \\mathrm{E}-01$",
+          "$8.19 \\mathrm{E}-01$",
+          "$8.20 \\mathrm{E}-01$",
+          "$1.59 \\mathrm{E}-01$",
+          "$8.09 \\mathrm{E}-01$",
+          "$8.60 \\mathrm{E}-01$",
+          "$6.64 \\mathrm{E}-01$"
+        ],
+        [
+          "HPSI",
+          "$\\mathbf{5 . 4 0 E - 0 1}$",
+          "$5.00 \\mathrm{E}-01$",
+          "$5.04 \\mathrm{E}-01$",
+          "$4.89 \\mathrm{E}-01$",
+          "$4.89 \\mathrm{E}-01$",
+          "$1.70 \\mathrm{E}-01$",
+          "$4.85 \\mathrm{E}-01$",
+          "$5.19 \\mathrm{E}-01$",
+          "$3.99 \\mathrm{E}-01$"
+        ],
+        [
+          "UIQI",
+          "$9.07 \\mathrm{E}-01$",
+          "$9.44 \\mathrm{E}-01$",
+          "$9.03 \\mathrm{E}-01$",
+          "$8.84 \\mathrm{E}-01$",
+          "$9.42 \\mathrm{E}-01$",
+          "$6.02 \\mathrm{E}-02$",
+          "$\\mathbf{1 . 2 1 E + 0 0}$",
+          "$1.20 \\mathrm{E}+00$",
+          "$8.31 \\mathrm{E}-01$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/The experimental study of population-based parameter optimization algorithms on rule-based ecological modelling.md",
+    "filename": "The experimental study of population-based parameter optimization algorithms on rule-based ecological modelling.md",
+    "title": "The experimental study of population-based parameter optimization algorithms on rule-based ecological modelling",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "PARAMETERS USED AS INPUT AND OUTPUT",
+      "headers": [
+        "Division",
+        "Variables",
+        "Unit",
+        "Mean $\\pm$ STDEV"
+      ],
+      "rows": [
+        [
+          "Input <br> Variables",
+          "Electrical Conductivity (EC)",
+          "$\\mathrm{pS} / \\mathrm{cm}$",
+          "$354.90 \\pm 72.64$"
+        ],
+        [
+          "",
+          "Turbidity (NTU)",
+          "NTU",
+          "$12.92 \\pm 56.76$"
+        ],
+        [
+          "",
+          "Water Temperature (WT)",
+          "${ }^{\\circ} \\mathrm{C}$",
+          "$22.66 \\pm 3.70$"
+        ],
+        [
+          "",
+          "Dissolved Oxygen (DO)",
+          "$\\mathrm{mg} / \\mathrm{L}$",
+          "$8.67 \\pm 1.25$"
+        ],
+        [
+          "",
+          "pH ( pH )",
+          "",
+          "$8.21 \\pm 0.32$"
+        ],
+        [
+          "",
+          "Reactive $\\mathrm{SiO}_{2}\\left(\\mathrm{SiO}_{2}\\right)$",
+          "$\\mathrm{mg} / \\mathrm{L}$",
+          "$3.24 \\pm 2.69$"
+        ],
+        [
+          "",
+          "Total Nitrogen (TN)",
+          "$\\mathrm{mg} / \\mathrm{L}$",
+          "$0.48 \\pm 0.078$"
+        ],
+        [
+          "",
+          "Total Phosphorus (TP)",
+          "$\\mathrm{mg} / \\mathrm{L}$",
+          "$0.019 \\pm 0.012$"
+        ],
+        [
+          "Output <br> Variable",
+          "Cylindrospermopsis (Cylind.)",
+          "cells $/ \\mathrm{mL}$",
+          "$10108 \\pm 20698$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "shows the statistical results of six PO algorithms in 100 runs. In terms of the RMSE and $\\mathrm{R}^{2}$ values, the rank of the average performance of those six algorithms is: HC, SA, DE, GA, EDA, and CMA-ES. In terms of computational efforts, HC and CMA-ES are the two most time-consuming algorithms, whereas the average running time for other four algorithms are very close.",
+      "headers": [
+        "No.",
+        "Algs.",
+        "Total RMSE <br> (MeansSTDEV)",
+        "Total R $^{2}$",
+        "Run-Time (h)"
+      ],
+      "rows": [
+        [
+          1,
+          "HC",
+          "14320.776 (280.43)",
+          0.53,
+          3.3
+        ],
+        [
+          2,
+          "SA",
+          14467.44,
+          0.51,
+          2.8
+        ],
+        [
+          3,
+          "GA",
+          13674.24,
+          0.43,
+          2.4
+        ],
+        [
+          4,
+          "DE",
+          15217.4,
+          0.46,
+          2.6
+        ],
+        [
+          5,
+          "CMA-ES",
+          18772.74,
+          0.19,
+          3.5
+        ],
+        [
+          6,
+          "EDA",
+          16373.12,
+          0.38,
+          2.7
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "III",
+      "table_title": "THE BEST MODELS OBTAINED BY SIX PO ALGORITHMS IN 100 RUNS",
+      "headers": [
+        "Algs.",
+        "Best model",
+        ""
+      ],
+      "rows": [
+        [
+          "HC",
+          "$\\begin{aligned} & \\text { IF((SiO) }<6.41) \\text { AND((WT*SiO) }>126.63) \\text { AND(EC }>=257.98) \\\\ & \\text { AND(NTU }=2.37)) \\\\ & \\text { THEN Cylind. }=(2 * \\text { NTU } * \\exp (\\mathrm{pH})-498.51) * 16.65 \\\\ & \\text { ELSE Cylind. }=(\\text { WT-In((TN) }=21.73) *(\\text { WT-TN/DO }=20.54)^{*} \\\\ & \\quad(\\text { NTU } * 5.38=296.45) \\\\ & \\quad(\\text { RMSE }=11566.96 \\quad \\mathrm{R}^{2}=0.69) \\end{aligned}$",
+          ""
+        ],
+        [
+          "SA",
+          "$\\begin{aligned} & \\text { IF ((TP }<=0.028) \\text { AND((SiO) } / \\mathrm{pH}) \\mathrm{~K}=0.73)) \\\\ & \\text { THEN Cylind. }=(\\text { NTU } * \\exp (\\mathrm{SiO}) * \\text { WT* } * 15.93-355.93)^{*} \\\\ & \\quad(\\text { WT* } * 21.91-445.93) \\\\ & \\text { ELSE Cylind. }=(2 * \\text { WT* }+152.23) *(\\text { WT* } * 19.64-452.54) \\\\ & \\quad(\\text { RMSE }=12053.33 \\quad \\mathrm{R}^{2}=0.66) \\end{aligned}$",
+          ""
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "TABLE IV. RESULTS FOR TUEEY'S HSD POST HOC TEST",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Pairs",
+          "$(\\mathbf{A 1}, \\mathbf{A 2})$",
+          "$(\\mathbf{A 1}, \\mathbf{A 3})$",
+          "$(\\mathbf{A 1}, \\mathbf{A 4})$",
+          "$(\\mathbf{A 1}, \\mathbf{A 5})$",
+          "$(\\mathbf{A 1}, \\mathbf{A 6})$"
+        ],
+        [
+          "Q-value",
+          "$-1.63$",
+          "$-15.13$",
+          "$-10.02$",
+          "$-49.79$",
+          "$-22.95$"
+        ],
+        [
+          "$\\begin{gathered} \\text { Sign } 7 \\\\ (\\mathrm{Y} / \\mathrm{N}) \\end{gathered}$",
+          "N",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        [
+          "Order",
+          "-",
+          "$\\mathrm{A} 1 \\rightarrow \\mathrm{~A} 3$",
+          "$\\mathrm{~A} 1 \\rightarrow \\mathrm{~A} 4$",
+          "$\\mathrm{~A} 1 \\rightarrow \\mathrm{~A} 5$",
+          "$\\mathrm{~A} 1 \\rightarrow \\mathrm{~A} 6$"
+        ],
+        [
+          "Pairs",
+          "$(\\mathbf{A 2}, \\mathbf{A 3})$",
+          "$(\\mathbf{A 2}, \\mathbf{A 4})$",
+          "$(\\mathbf{A 2}, \\mathbf{A 5})$",
+          "$(\\mathbf{A 2}, \\mathbf{A 6})$",
+          "$(\\mathbf{A 3}, \\mathbf{A 4})$"
+        ],
+        [
+          "Q-value",
+          "$-13.50$",
+          "$-8.39$",
+          "$-48.16$",
+          "$-21.32$",
+          "$-5.11$"
+        ],
+        [
+          "$\\begin{gathered} \\text { Sign } 7 \\\\ (\\mathrm{Y} / \\mathrm{N}) \\end{gathered}$",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        [
+          "Order",
+          "$\\mathrm{A} 2 \\rightarrow \\mathrm{~A} 3$",
+          "$\\mathrm{~A} 2 \\rightarrow \\mathrm{~A} 4$",
+          "$\\mathrm{~A} 2 \\rightarrow \\mathrm{~A} 5$",
+          "$\\mathrm{~A} 2 \\rightarrow \\mathrm{~A} 6$",
+          "$\\mathrm{~A} 4 \\rightarrow \\mathrm{~A} 3$"
+        ],
+        [
+          "Pairs",
+          "$(\\mathbf{A 3}, \\mathbf{A 5})$",
+          "$(\\mathbf{A 3}, \\mathbf{A 6})$",
+          "$(\\mathbf{A 4}, \\mathbf{A 5})$",
+          "$(\\mathbf{A 4}, \\mathbf{A 6})$",
+          "$(\\mathbf{A 5}, \\mathbf{A 6})$"
+        ],
+        [
+          "Q-value",
+          "$-34.66$",
+          "$-7.82$",
+          "$-39.77$",
+          "$-12.93$",
+          "$-26.84$"
+        ],
+        [
+          "$\\begin{gathered} \\text { Sign } 7 \\\\ (\\mathrm{Y} / \\mathrm{N}) \\end{gathered}$",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        [
+          "Order",
+          "$\\mathrm{A} 3 \\rightarrow \\mathrm{~A} 5$",
+          "$\\mathrm{~A} 3 \\rightarrow \\mathrm{~A} 6$",
+          "$\\mathrm{~A} 4 \\rightarrow \\mathrm{~A} 5$",
+          "$\\mathrm{~A} 4 \\rightarrow \\mathrm{~A} 6$",
+          "$\\mathrm{~A} 6 \\rightarrow \\mathrm{~A} 5$"
+        ],
+        [
+          "Total <br> Order",
+          "",
+          "$\\mathrm{A} 1 \\rightarrow \\mathrm{~A} 2 \\rightarrow \\mathrm{~A} 4 \\rightarrow \\mathrm{~A} 3 \\rightarrow \\mathrm{~A} 6 \\rightarrow \\mathrm{~A} 5$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 6
+    }
+  ]
+}

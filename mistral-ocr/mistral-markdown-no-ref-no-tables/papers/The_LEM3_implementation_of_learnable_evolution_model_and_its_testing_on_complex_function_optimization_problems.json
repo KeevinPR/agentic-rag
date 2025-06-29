@@ -1,0 +1,820 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/The LEM3 implementation of learnable evolution model and its testing on complex function optimization problems.md",
+    "filename": "The LEM3 implementation of learnable evolution model and its testing on complex function optimization problems.md",
+    "title": "The LEM3 implementation of learnable evolution model and its testing on complex function optimization problems",
+    "year": "2006"
+  },
+  "references": {
+    "header": "## 6. REFERENCES",
+    "content": "[1] Bengoextea, E., Miquelez, T., Larranaga, P., and Lozano, J.A., \"Experimental Results in Function Optimization with EDAs in Continuous Domain,\" In Pedro Larranaga and Jose A. Lozano Estimation of Distribution Algorithms, Kluwer Academic Publishers, 2002.\n[2] Cervone, G., Kaufman, K. and Michalski, R. S., \"Recent Results from the Experimental Evaluation of the Learnable Evolution Model,\" Proc. of the Genetic and Evolutionary Computation Conference, GECCO-2002, 2002.\n[3] Domanski, P.A., Yashar, D., Kaufman K. and Michalski R.S., \"An Optimized Design of Finned-Tube Evaporators Using the Learnable Evolution Model,\" International Journal of Heating, Ventilating, Air-Conditioning and Refrigerating Research, 10, April, 2004, pp 201-211.\n[4] Evolutionary Objects Library, downloadable from the website: http://eodev.sourceforge.net\n[5] Jourdan, L.; Corne, D.; Savic, D.; and Walters, G., \"Preliminary Investigation of the 'Learnable Evolution Model' for Faster/Better Multiobjective Water Systems Design,\" Proceedings of The Third Int. Conference on Evolutionary Multi-Criterion Optimization, EMO’05, 2005.\n[6] Michalski, R. S. and Kaufman, K., \"The AQ19 System for Machine Learning and Pattern Discovery: A General Description and User's Guide,\" Reports of the Machine\n\nLearning and Inference Laboratory, MLI 01-2, George Mason University, Fairfax, VA, 2001.\n[7] Larranaga, P., Lozano, J. A., and Bengoetxea, E., \"Estimation of Distribution Algorithms Based on Multivariate Normal and Gaussian Networks,\" Technical Report KZZA-IK-1-01, Dept. of Computer Science and Artificial Intelligence, University of Basque Country, 2001.\n[8] Larrañaga, P. and Lozano, J. (eds.), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2002.\n[9] Michalski, R.S., \"Learnable Evolution: Combining Symbolic and Evolutionary Learning,\" Proceedings of the Fourth International Workshop on Multistrategy Learning (MSL'98), Italy, June 11-13, 1998.\n[10] Michalski, R.S., \"LEARNABLE EVOLUTION MODEL Evolutionary Processes Guided by Machine Learning,\" Machine Learning, Vol. 38, 2000, pp. 9-40.\n[11] Michalski, R.S., \"ATTRIBUTIONAL CALCULUS: A Logic and Representation Language for Natural Induction,\" Reports of the Machine Learning and Inference Laboratory, MLI 042, George Mason University, Fairfax, VA, April, 2004.\n[12] Michalski, R.S. and Cervone, G., \"Adaptive Anchoring Discretization for Learnable Evolution Model,\" Reports of the Machine Learning and Inference Laboratory, MLI 01-3, George Mason University, Fairfax, VA, 2001.\n[13] Miquelez, T., Bengoetxea, E., and Larranaga, P., \"Evolutionary Computation Based on Bayesian Classifiers,\" International Journal of Applied Mathematics and Computer Science, 14, 2004.\n[14] Mühlenbein, H and Paaß, G., \"From Recombination of Genes to the Estimation of Distributions I. Binary Parameters,\" Proceedings of The 4th International Conference on Parallel Problem Solving from Nature, Berlin, Germany, September 22-26, 1996.\n[15] Reynolds, R. G. and Zhu, S., \"Knowledge-Based Function Optimization Using Fuzzy Cultural Algorithms with Evolutionary Programming,\" IEEE Transactions on Systems, Man, and Cybernetics, 31, 2001.\n[16] Reynolds, R. G., Peng, B., \"Cultural Algorithms: Modeling of How Cultures Learn to Solve Problems,\" 16th IEEE International Conference on Tools for Artificial Intelligence (ICTAI'04), Florida, 2004.\n[17] Whitley, D., Soraya, R., Dzubera, J., Mathias, K. E., \"Evaluating Evolutionary Algorithms,\" Artificial Intelligence, 85, 1996.\n[18] Wojtusiak, J., \"AQ21 User's Guide, \" Reports of the Machine Learning and Inference Laboratory, George Mason University, MLI 04-3, Fairfax, VA, 2004.\n[19] Wojtusiak, J., \"The LEM3 Implementation of Learnable Evolution Model: User's Guide, \" Reports of the Machine Learning and Inference Laboratory, George Mason University, MLI 04-5, Fairfax, VA, 2004.\n[20] Wojtusiak, J., and Michalski R.S., \"The LEM3 System for Non-Darwinian Evolutionary Computation and its Application to Complex Function Optimization,\" Reports of the Machine Learning and Inference Laboratory, George Mason University, MLI 05-2, Fairfax, VA, 2005.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Bengoextea, E., Miquelez, T., Larranaga, P., and Lozano, J.A., \"Experimental Results in Function Optimization with EDAs in Continuous Domain,\" In Pedro Larranaga and Jose A. Lozano Estimation of Distribution Algorithms, Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "2",
+        "text": "Cervone, G., Kaufman, K. and Michalski, R. S., \"Recent Results from the Experimental Evaluation of the Learnable Evolution Model,\" Proc. of the Genetic and Evolutionary Computation Conference, GECCO-2002, 2002."
+      },
+      {
+        "ref_id": "3",
+        "text": "Domanski, P.A., Yashar, D., Kaufman K. and Michalski R.S., \"An Optimized Design of Finned-Tube Evaporators Using the Learnable Evolution Model,\" International Journal of Heating, Ventilating, Air-Conditioning and Refrigerating Research, 10, April, 2004, pp 201-211."
+      },
+      {
+        "ref_id": "4",
+        "text": "Evolutionary Objects Library, downloadable from the website: http://eodev.sourceforge.net"
+      },
+      {
+        "ref_id": "5",
+        "text": "Jourdan, L.; Corne, D.; Savic, D.; and Walters, G., \"Preliminary Investigation of the 'Learnable Evolution Model' for Faster/Better Multiobjective Water Systems Design,\" Proceedings of The Third Int. Conference on Evolutionary Multi-Criterion Optimization, EMO’05, 2005."
+      },
+      {
+        "ref_id": "6",
+        "text": "Michalski, R. S. and Kaufman, K., \"The AQ19 System for Machine Learning and Pattern Discovery: A General Description and User's Guide,\" Reports of the Machine"
+      },
+      {
+        "ref_id": "7",
+        "text": "Larranaga, P., Lozano, J. A., and Bengoetxea, E., \"Estimation of Distribution Algorithms Based on Multivariate Normal and Gaussian Networks,\" Technical Report KZZA-IK-1-01, Dept. of Computer Science and Artificial Intelligence, University of Basque Country, 2001."
+      },
+      {
+        "ref_id": "8",
+        "text": "Larrañaga, P. and Lozano, J. (eds.), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "9",
+        "text": "Michalski, R.S., \"Learnable Evolution: Combining Symbolic and Evolutionary Learning,\" Proceedings of the Fourth International Workshop on Multistrategy Learning (MSL'98), Italy, June 11-13, 1998."
+      },
+      {
+        "ref_id": "10",
+        "text": "Michalski, R.S., \"LEARNABLE EVOLUTION MODEL Evolutionary Processes Guided by Machine Learning,\" Machine Learning, Vol. 38, 2000, pp. 9-40."
+      },
+      {
+        "ref_id": "11",
+        "text": "Michalski, R.S., \"ATTRIBUTIONAL CALCULUS: A Logic and Representation Language for Natural Induction,\" Reports of the Machine Learning and Inference Laboratory, MLI 042, George Mason University, Fairfax, VA, April, 2004."
+      },
+      {
+        "ref_id": "12",
+        "text": "Michalski, R.S. and Cervone, G., \"Adaptive Anchoring Discretization for Learnable Evolution Model,\" Reports of the Machine Learning and Inference Laboratory, MLI 01-3, George Mason University, Fairfax, VA, 2001."
+      },
+      {
+        "ref_id": "13",
+        "text": "Miquelez, T., Bengoetxea, E., and Larranaga, P., \"Evolutionary Computation Based on Bayesian Classifiers,\" International Journal of Applied Mathematics and Computer Science, 14, 2004."
+      },
+      {
+        "ref_id": "14",
+        "text": "Mühlenbein, H and Paaß, G., \"From Recombination of Genes to the Estimation of Distributions I. Binary Parameters,\" Proceedings of The 4th International Conference on Parallel Problem Solving from Nature, Berlin, Germany, September 22-26, 1996."
+      },
+      {
+        "ref_id": "15",
+        "text": "Reynolds, R. G. and Zhu, S., \"Knowledge-Based Function Optimization Using Fuzzy Cultural Algorithms with Evolutionary Programming,\" IEEE Transactions on Systems, Man, and Cybernetics, 31, 2001."
+      },
+      {
+        "ref_id": "16",
+        "text": "Reynolds, R. G., Peng, B., \"Cultural Algorithms: Modeling of How Cultures Learn to Solve Problems,\" 16th IEEE International Conference on Tools for Artificial Intelligence (ICTAI'04), Florida, 2004."
+      },
+      {
+        "ref_id": "17",
+        "text": "Whitley, D., Soraya, R., Dzubera, J., Mathias, K. E., \"Evaluating Evolutionary Algorithms,\" Artificial Intelligence, 85, 1996."
+      },
+      {
+        "ref_id": "18",
+        "text": "Wojtusiak, J., \"AQ21 User's Guide, \" Reports of the Machine Learning and Inference Laboratory, George Mason University, MLI 04-3, Fairfax, VA, 2004."
+      },
+      {
+        "ref_id": "19",
+        "text": "Wojtusiak, J., \"The LEM3 Implementation of Learnable Evolution Model: User's Guide, \" Reports of the Machine Learning and Inference Laboratory, George Mason University, MLI 04-5, Fairfax, VA, 2004."
+      },
+      {
+        "ref_id": "20",
+        "text": "Wojtusiak, J., and Michalski R.S., \"The LEM3 System for Non-Darwinian Evolutionary Computation and its Application to Complex Function Optimization,\" Reports of the Machine Learning and Inference Laboratory, George Mason University, MLI 05-2, Fairfax, VA, 2005."
+      }
+    ],
+    "reference_count": 20,
+    "pattern_matched": "(?:^|\\n)#+\\s*\\d+\\.\\s*REFERENCES?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparison of LEM3 with CA on the Rastrigin, Griewangk, and Rosenbrock functions.",
+      "headers": [
+        "Function <br> $\\#$ vars.",
+        "Method",
+        "Best fitness <br> Value",
+        "Evolution <br> Length",
+        "LEM3/CA <br> Speedup"
+      ],
+      "rows": [
+        [
+          5.0,
+          3,
+          0,
+          687,
+          "$\\mathbf{- 7 2 8}$"
+        ],
+        [
+          "",
+          "CA",
+          "$5.4532 \\mathrm{e}-05$",
+          "$-500,000$",
+          ""
+        ],
+        [
+          "Griewangk",
+          3,
+          0,
+          1.521,
+          "$\\mathbf{- 5 3}$"
+        ],
+        [
+          3.0,
+          "CA",
+          "$1.0 \\mathrm{E}-10$",
+          "$-79,900$",
+          ""
+        ],
+        [
+          "Rosenbrock",
+          3,
+          0,
+          219,
+          "$\\mathbf{- 2 4 3}$"
+        ],
+        [
+          2.0,
+          "CA",
+          "$1.0 \\mathrm{e}-10$",
+          "$-53,200$",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison of LEM3 with EDA on the Rastrigin, Griewangk, and Rosenbrock functions.",
+      "headers": [
+        "Function <br> $\\#$ vars.",
+        "Method",
+        "Best fitness <br> Value",
+        "Evolution <br> Length",
+        "LEM3/EDA <br> Speedup"
+      ],
+      "rows": [
+        [
+          "Griewangk",
+          3,
+          0,
+          1305,
+          "$\\mathbf{- 2 3 1}$"
+        ],
+        [
+          10.0,
+          "EDA",
+          0.051166,
+          301850,
+          ""
+        ],
+        [
+          "Griewangk",
+          3,
+          0,
+          4005,
+          "$\\mathbf{- 5 4}$"
+        ],
+        [
+          50.0,
+          "EDA",
+          "$8.7673 \\mathrm{E}-6$",
+          216292,
+          ""
+        ],
+        [
+          "Rosenbrock",
+          3,
+          1.2,
+          1389,
+          "$\\mathbf{- 1 1 8}$"
+        ],
+        [
+          10.0,
+          "EDA",
+          8.6807,
+          164519,
+          ""
+        ],
+        [
+          "Rosenbrock",
+          3,
+          46.74,
+          7875,
+          "$\\mathbf{- 1 5}$"
+        ],
+        [
+          50.0,
+          "EDS",
+          48.8234,
+          275663,
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "LEM3. LEM2 and EA evolution length and speedup on optimizing Rastrigin function for $\\delta=0.1$.",
+      "headers": [
+        "$\\#$ of <br> Variables",
+        "Evolution Length for $\\delta=0.1$",
+        "",
+        "",
+        "LEM3/EA <br> Speedup"
+      ],
+      "rows": [
+        [
+          "",
+          2,
+          "EA",
+          3,
+          ""
+        ],
+        [
+          10,
+          374,
+          2673,
+          415,
+          "$\\mathbf{\\sim 4}$"
+        ],
+        [
+          100,
+          2451,
+          28402,
+          2270,
+          "$\\mathbf{\\sim 1 3}$"
+        ],
+        [
+          200,
+          "--",
+          56465,
+          3302,
+          "$\\mathbf{\\sim 1 7}$"
+        ],
+        [
+          300,
+          "--",
+          82809,
+          4113,
+          "$\\mathbf{\\sim 2 0}$"
+        ],
+        [
+          400,
+          "--",
+          106687,
+          4820,
+          "$\\mathbf{\\sim 2 2}$"
+        ],
+        [
+          500,
+          "--",
+          128184,
+          5252,
+          "$\\mathbf{\\sim 2 4}$"
+        ],
+        [
+          600,
+          "--",
+          152291,
+          5652,
+          "$\\mathbf{\\sim 2 7}$"
+        ],
+        [
+          700,
+          "--",
+          184172,
+          6053,
+          "$\\mathbf{\\sim 2 8}$"
+        ],
+        [
+          800,
+          "--",
+          191768,
+          6440,
+          "$\\mathbf{\\sim 3 0}$"
+        ],
+        [
+          900,
+          "--",
+          208246,
+          7491,
+          "$\\mathbf{\\sim 2 8}$"
+        ],
+        [
+          1000,
+          "--",
+          244408,
+          7481,
+          "$\\mathbf{\\sim 3 3}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "LEM3, LEM2 and EA evolution length and speedup on optimizing Rastrigin function for $\\delta=0.01$.",
+      "headers": [
+        "$\\#$ of <br> Variables",
+        "Evolution Length for $\\delta=0.01$",
+        "",
+        "",
+        "LEM3/EA <br> Speedup"
+      ],
+      "rows": [
+        [
+          "",
+          2,
+          "EA",
+          3,
+          ""
+        ],
+        [
+          10,
+          859,
+          12419,
+          1000,
+          "$\\mathbf{\\sim 1 2}$"
+        ],
+        [
+          100,
+          6723,
+          114445,
+          5298,
+          "$\\mathbf{\\sim 2 2}$"
+        ],
+        [
+          200,
+          "--",
+          283523,
+          7705,
+          "$\\mathbf{\\sim 3 7}$"
+        ],
+        [
+          300,
+          "--",
+          409591,
+          10471,
+          "$\\mathbf{\\sim 3 9}$"
+        ],
+        [
+          400,
+          "--",
+          584363,
+          12708,
+          "$\\mathbf{\\sim 4 6}$"
+        ],
+        [
+          500,
+          "--",
+          631218,
+          16195,
+          "$\\mathbf{\\sim 4 0}$"
+        ],
+        [
+          600,
+          "--",
+          727158,
+          22173,
+          "$\\mathbf{\\sim 3 3}$"
+        ],
+        [
+          700,
+          "--",
+          1134610,
+          26375,
+          "$\\mathbf{\\sim 4 3}$"
+        ],
+        [
+          800,
+          "--",
+          884545,
+          30124,
+          "$\\mathbf{\\sim 2 9}$"
+        ],
+        [
+          900,
+          "--",
+          1214476,
+          37026,
+          "$\\mathbf{\\sim 3 3}$"
+        ],
+        [
+          1000,
+          "--",
+          1418323,
+          43090,
+          "$\\mathbf{\\sim 3 3}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "LEM3 and EA evolution length and speedup on optimizing Griewangk function, $\\delta=0.1$.",
+      "headers": [
+        "$\\#$ of <br> Variables",
+        "Evolution Length for $\\delta=0.1$",
+        "",
+        "",
+        "LEM3/EA <br> Speedup"
+      ],
+      "rows": [
+        [
+          "",
+          "EA",
+          3,
+          "",
+          ""
+        ],
+        [
+          10,
+          2579,
+          268,
+          "$\\mathbf{\\sim 1 0}$",
+          ""
+        ],
+        [
+          100,
+          24611,
+          1797,
+          "$\\mathbf{\\sim 1 4}$",
+          ""
+        ],
+        [
+          200,
+          50145,
+          2985,
+          "$\\mathbf{\\sim 1 7}$",
+          ""
+        ],
+        [
+          300,
+          75345,
+          4370,
+          "$\\mathbf{\\sim 1 7}$",
+          ""
+        ],
+        [
+          400,
+          101810,
+          5401,
+          "$\\mathbf{\\sim 1 9}$",
+          ""
+        ],
+        [
+          500,
+          126057,
+          6547,
+          "$\\mathbf{\\sim 1 9}$",
+          ""
+        ],
+        [
+          600,
+          151382,
+          7227,
+          "$\\mathbf{\\sim 2 1}$",
+          ""
+        ],
+        [
+          700,
+          177221,
+          8161,
+          "$\\mathbf{\\sim 2 2}$",
+          ""
+        ],
+        [
+          800,
+          202317,
+          9001,
+          "$\\mathbf{\\sim 2 2}$",
+          ""
+        ],
+        [
+          900,
+          226499,
+          9959,
+          "$\\mathbf{\\sim 2 3}$",
+          ""
+        ],
+        [
+          1000,
+          251233,
+          10780,
+          "$\\mathbf{\\sim 2 3}$",
+          ""
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "LEM3, and EA evolution length and speedup on optimizing Griewangk function, $\\delta=0.01$.",
+      "headers": [
+        "$\\#$ of <br> Variables",
+        "Evolution Length for $\\delta=0.01$",
+        "",
+        "",
+        "LEM3/EA <br> Speedup"
+      ],
+      "rows": [
+        [
+          "",
+          "EA",
+          3,
+          "",
+          ""
+        ],
+        [
+          10,
+          7367,
+          3223,
+          "$\\mathbf{\\sim 2}$",
+          ""
+        ],
+        [
+          100,
+          52632,
+          10486,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ],
+        [
+          200,
+          105453,
+          20003,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ],
+        [
+          300,
+          157320,
+          29799,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ],
+        [
+          400,
+          211341,
+          40215,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ],
+        [
+          500,
+          263801,
+          51564,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ],
+        [
+          600,
+          314888,
+          59881,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ],
+        [
+          700,
+          369915,
+          72437,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ],
+        [
+          800,
+          422357,
+          86017,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ],
+        [
+          900,
+          473310,
+          97606,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ],
+        [
+          1000,
+          525096,
+          112600,
+          "$\\mathbf{\\sim 5}$",
+          ""
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "LEM3, LEM2 and EA evolution length and speedup on optimizing Rosenbrock function for $\\delta=0.1$.",
+      "headers": [
+        "$\\#$ of <br> Variables",
+        "Evolution Length for $\\delta=0.1$",
+        "",
+        "",
+        "LEM3/EA <br> Speedup"
+      ],
+      "rows": [
+        [
+          "",
+          2,
+          "EA",
+          3,
+          ""
+        ],
+        [
+          10,
+          275,
+          541,
+          325,
+          "$\\mathbf{\\sim 2}$"
+        ],
+        [
+          100,
+          918,
+          3367,
+          1906,
+          "$\\mathbf{\\sim 2}$"
+        ],
+        [
+          200,
+          "--",
+          5699,
+          2625,
+          "$\\mathbf{\\sim 2}$"
+        ],
+        [
+          300,
+          "--",
+          8547,
+          3518,
+          "$\\mathbf{\\sim 2}$"
+        ],
+        [
+          400,
+          "--",
+          11690,
+          4038,
+          "$\\mathbf{\\sim 3}$"
+        ],
+        [
+          500,
+          "--",
+          14960,
+          4519,
+          "$\\mathbf{\\sim 3}$"
+        ],
+        [
+          600,
+          "--",
+          15606,
+          5013,
+          "$\\mathbf{\\sim 3}$"
+        ],
+        [
+          700,
+          "--",
+          19448,
+          5491,
+          "$\\mathbf{\\sim 4}$"
+        ],
+        [
+          800,
+          "--",
+          22731,
+          5710,
+          "$\\mathbf{\\sim 4}$"
+        ],
+        [
+          900,
+          "--",
+          25216,
+          6835,
+          "$\\mathbf{\\sim 4}$"
+        ],
+        [
+          1000,
+          "--",
+          28468,
+          6851,
+          "$\\mathbf{\\sim 4}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "8",
+      "table_title": "LEM3, LEM2 and EA evolution length and speedup on optimizing Rosenbrock function for $\\delta=0.01$.",
+      "headers": [
+        "$\\#$ of <br> Variables",
+        "Evolution Length for $\\delta=0.01$",
+        "",
+        "",
+        "LEM3/EA <br> Speedup"
+      ],
+      "rows": [
+        [
+          "",
+          2,
+          "EA",
+          3,
+          ""
+        ],
+        [
+          10,
+          492,
+          2027,
+          682,
+          "$\\mathbf{\\sim 3}$"
+        ],
+        [
+          100,
+          2348,
+          26944,
+          3495,
+          "$\\mathbf{\\sim 8}$"
+        ],
+        [
+          200,
+          "--",
+          57588,
+          4922,
+          "$\\mathbf{\\sim 1 2}$"
+        ],
+        [
+          300,
+          "--",
+          89280,
+          6158,
+          "$\\mathbf{\\sim 1 8}$"
+        ],
+        [
+          400,
+          "--",
+          120056,
+          9872,
+          "$\\mathbf{\\sim 1 2}$"
+        ],
+        [
+          500,
+          "--",
+          145984,
+          12655,
+          "$\\mathbf{\\sim 1 2}$"
+        ],
+        [
+          600,
+          "--",
+          178358,
+          15951,
+          "$\\mathbf{\\sim 1 1}$"
+        ],
+        [
+          700,
+          "--",
+          209274,
+          16931,
+          "$\\mathbf{\\sim 1 2}$"
+        ],
+        [
+          800,
+          "--",
+          234348,
+          22843,
+          "$\\mathbf{\\sim 1 0}$"
+        ],
+        [
+          900,
+          "--",
+          259168,
+          25065,
+          "$\\mathbf{\\sim 1 0}$"
+        ],
+        [
+          1000,
+          "--",
+          296879,
+          29691,
+          "$\\mathbf{\\sim 1 0}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    }
+  ]
+}

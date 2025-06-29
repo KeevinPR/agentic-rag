@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/Optimization of Thorium loading in fresh core of Indian PHWR by evolutionary algorithms.md",
+    "filename": "Optimization of Thorium loading in fresh core of Indian PHWR by evolutionary algorithms.md",
+    "title": "Optimization of Thorium loading in fresh core of Indian PHWR by evolutionary algorithms",
+    "year": "2009"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparison of the results obtained by in-house code DOLP with the earlier work (Balakrishnan and Kakodkar, 1994) for configuration shown in Fig. 1.",
+      "headers": [
+        "Sr. No.",
+        "Characteristics",
+        "Reference",
+        "DOLP"
+      ],
+      "rows": [
+        [
+          1,
+          "No. of Thorium bundles",
+          35,
+          35
+        ],
+        [
+          2,
+          "Maximum channel power (MW)",
+          3.01,
+          3.02
+        ],
+        [
+          3,
+          "Maximum bundle power (KW)",
+          440.0,
+          445.6
+        ],
+        [
+          4,
+          "Maximum coolant outlet temperature $\\left({ }^{\\circ} \\mathrm{C}\\right)$",
+          298.2,
+          297.9
+        ],
+        [
+          5,
+          "Allowed reactor power (XFP)",
+          95.5,
+          95.5
+        ],
+        [
+          6,
+          "Reactivity load due to thorium (mk)",
+          13.6,
+          12.2
+        ],
+        [
+          7,
+          -1,
+          32.9,
+          33.1
+        ],
+        [
+          8,
+          -2,
+          33.1,
+          33.2
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "1. Initialize the population (Size=N) randomly.",
+        ""
+      ],
+      "rows": [
+        [
+          "2. Evaluate the fitness of each individual based on their $\\mathrm{K}_{\\text {eff }}$, maximum permissible reactor power, channel power, channel outlet temperature, bundle power and the worths of PSS and SSS as obtained by diffusion code DOLP using Eq.(1) in section 4.3.",
+          ""
+        ],
+        [
+          "3. Either continue for new generation calculations or terminate the execution.",
+          ""
+        ],
+        [
+          "4. Select $\\mathrm{Me} / \\mathrm{N}$ candidates based on termination selection method (the best fit M individuals among total N individuals).",
+          ""
+        ],
+        [
+          "5. Calculate Probability Distribution Function (PDF) using selected M individuals. At any generation (t) the PDF has been estimated as given below for each location.",
+          ""
+        ],
+        [
+          "$\\operatorname{PDF}(t+1)=\\operatorname{PDF}(t) \\cdot(1-\\alpha)+\\alpha \\frac{1}{M} \\sum_{m=1}^{M} X_{m}(t)$",
+          ""
+        ],
+        [
+          "where $\\alpha$ is constant between $[0,1] . \\mathrm{X}$ is binary matrix representation of loading pattern.",
+          ""
+        ],
+        [
+          "6. Generate new population (Size=N) using this new probability distribution function (PDF).",
+          ""
+        ],
+        [
+          "7. The newly generated individuals may not have desired number of NU or Th bundles. Hence a correction operator is applied. The fuel type which is more in number than the specified value is randomly changed into other type.",
+          ""
+        ],
+        [
+          "8. The fitness of new N individuals is found out as in step 2.",
+          ""
+        ],
+        [
+          "9. Go to step 3.",
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Optimization results with $36 \\pm 4$ Thorium bundles for different population size using EDA.",
+      "headers": [
+        "Case",
+        "\\# Configurations <br> evaluated",
+        "Total Th <br> bundles",
+        "Maximum <br> allowable $\\%$",
+        "MCP (MW)",
+        "MBP (KW)",
+        "MCOT ( ${ }^{\\circ} \\mathrm{C}$ )",
+        "Reactivity load <br> due to Th (mk)",
+        "SDS-1 worth <br> (mk)",
+        "SDS-2 worth <br> (mk)"
+      ],
+      "rows": [
+        [
+          1994.1,
+          "",
+          35,
+          95.5,
+          3.02,
+          445.58,
+          297.87,
+          12.15,
+          33.09,
+          33.15
+        ],
+        [
+          1000.1,
+          5.995,
+          32,
+          97.45,
+          3.08,
+          440.99,
+          296.26,
+          12.45,
+          32.41,
+          32.25
+        ],
+        [
+          4000,
+          5.125,
+          32,
+          94.82,
+          3.08,
+          440.47,
+          297.58,
+          12.71,
+          32.32,
+          31.9
+        ],
+        [
+          6000,
+          11.705,
+          32,
+          95.72,
+          3.08,
+          442.64,
+          295.31,
+          13.78,
+          32.34,
+          32.05
+        ],
+        [
+          8000,
+          5.925,
+          34,
+          97.34,
+          3.08,
+          453.36,
+          296.78,
+          12.26,
+          32.6,
+          31.83
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 10
+    },
+    {
+      "table_number": "3",
+      "table_title": "Optimization results with different Thorium bundles for 1000 population size using EDA.",
+      "headers": [
+        "Case",
+        "\\# Configurations <br> evaluated",
+        "Total Th <br> bundles",
+        "Maximum <br> allowable $\\%$",
+        "MCP (MW)",
+        "MBP (KW)",
+        "MCOT ( ${ }^{\\circ} \\mathrm{C}$ )",
+        "Reactivity load <br> due to Th (mk)",
+        "SDS-1 <br> worth (mk)",
+        "SDS-2 <br> worth (mk)"
+      ],
+      "rows": [
+        [
+          0.11,
+          4.875,
+          30,
+          95.8,
+          3.08,
+          438.38,
+          296.37,
+          11.58,
+          33.16,
+          33.12
+        ],
+        [
+          0.12,
+          4.665,
+          24,
+          96.67,
+          3.08,
+          440.33,
+          295.86,
+          10.47,
+          32.03,
+          31.85
+        ],
+        [
+          0.13,
+          2.685,
+          22,
+          95.79,
+          3.08,
+          438.56,
+          296.64,
+          10.37,
+          31.92,
+          30.9
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 10
+    }
+  ]
+}

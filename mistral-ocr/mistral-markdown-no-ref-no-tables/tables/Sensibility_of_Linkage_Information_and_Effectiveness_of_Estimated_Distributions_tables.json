@@ -1,0 +1,671 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Sensibility of Linkage Information and Effectiveness of Estimated Distributions.md",
+    "filename": "Sensibility of Linkage Information and Effectiveness of Estimated Distributions.md",
+    "title": "Sensibility of Linkage Information and Effectiveness of Estimated Distributions",
+    "year": "2010"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Marginal product models built by ECGA when solving an exponentially scaled problem. Each group of variables represents a marginal model in which a marginal distribution resides. The converged variables are crossed out.",
+      "headers": [
+        "Generation",
+        "Marginal product model"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\left[s_{1} s_{2} s_{3} s_{4}\\right]\\left[s_{5} s_{10} s_{16}\\right]\\left[s_{6} s_{7}\\right]\\left[s_{8} s_{9} s_{12}\\right]\\left[s_{11} s_{14} s_{15}\\right]\\left[s_{13}\\right]$"
+        ],
+        [
+          2,
+          "$\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{8} s_{6} s_{7} s_{8}\\right]\\left[s_{9} s_{13} s_{16}\\right]\\left[s_{10} s_{14} s_{15}\\right]\\left[s_{11} s_{12}\\right]$"
+        ],
+        [
+          3,
+          "$\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{9}\\right]\\left[s_{9} s_{10} s_{11} s_{12}\\right]\\left[s_{13} s_{16}\\right]\\left[s_{14} s_{15}\\right]$"
+        ],
+        [
+          4,
+          "$\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{7}\\right]\\left[s_{9}\\right]\\left[s_{9}\\right]\\left[s_{10}\\right]\\left[s_{11}\\right]\\left[s_{12}\\right]\\left[s_{13} s_{14} s_{15} s_{16}\\right]$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "An example of a marginal product model that defines a probability distribution over four variables. The variables enclosed in the same brackets are modeled jointly, and each variable subset is considered independent of the other variable subsets.",
+      "headers": [
+        "$\\left[s_{1}\\right]$",
+        "$\\left[s_{2} s_{4}\\right]$",
+        "$\\left[s_{3}\\right]$"
+      ],
+      "rows": [
+        [
+          "$P\\left(s_{1}=0\\right)=0.4$",
+          "$P\\left(s_{2}=0, s_{4}=0\\right)=0.2$",
+          "$P\\left(s_{3}=0\\right)=0.5$"
+        ],
+        [
+          "$P\\left(s_{1}=1\\right)=0.6$",
+          "$P\\left(s_{2}=0, s_{4}=1\\right)=0.1$",
+          "$P\\left(s_{3}=1\\right)=0.5$"
+        ],
+        [
+          "",
+          "$P\\left(s_{2}=1, s_{4}=0\\right)=0.1$",
+          ""
+        ],
+        [
+          "",
+          "$P\\left(s_{2}=1, s_{4}=1\\right)=0.6$",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Marginal product models before and after pruning when solving a 16-bit exponentially scaled problem with the proposed approach.",
+      "headers": [
+        "Generation",
+        "Marginal product model (before and after pruning)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          1,
+          "Before",
+          "$\\left[s_{1} s_{2} s_{3} s_{4}\\right]$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "After",
+          "$\\left[s_{1} s_{2} s_{3} s_{4}\\right]$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          2,
+          "Before",
+          "$\\left\\{\\pi_{7}\\right\\}$",
+          "$\\left\\{\\pi_{7}\\right\\}$",
+          "$\\left\\{\\pi_{7}\\right\\}$",
+          "$\\left\\{s_{5} s_{6} s_{7} s_{8}\\right]$",
+          "$\\left[s_{9} s_{14}\\right]$",
+          "$\\left[s_{10} s_{15}\\right]$",
+          "$\\left[s_{11} s_{13} s_{16}\\right]$",
+          "$\\left[s_{12}\\right]$"
+        ],
+        [
+          "",
+          "After",
+          "$\\left\\{\\pi_{7}\\right\\}$",
+          "$\\left\\{\\pi_{7}\\right\\}$",
+          "$\\left\\{\\pi_{7}\\right\\}$",
+          "$\\left\\{s_{7}\\right\\}$",
+          "$\\left[s_{5} s_{6} s_{7} s_{8}\\right]$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 10
+    },
+    {
+      "table_number": "4",
+      "table_title": "Marginal product models before and after pruning when solving a 16-bit problem of the overloaded scaling with the proposed approach.",
+      "headers": [
+        "Generation",
+        "Marginal product model (before and after pruning)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          1,
+          "Before",
+          "$\\left[s_{1} s_{2} s_{3} s_{4}\\right.$",
+          "$\\left[s_{5} s_{6} s_{7} s_{8}\\right.$",
+          "$\\left[s_{9} s_{16}\\right.$",
+          "$\\left[s_{10} s_{14} s_{15}\\right.$",
+          "$\\left[s_{11} s_{13}\\right.$",
+          "$\\left[s_{12}\\right]$",
+          ""
+        ],
+        [
+          "",
+          "After",
+          "$\\left[s_{1} s_{2} s_{3} s_{4}\\right.$",
+          "$\\left[s_{5} s_{6} s_{7} s_{8}\\right]$",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          2,
+          "Before",
+          "$\\left[s_{1} s_{2} s_{3} s_{4}\\right.$",
+          "$\\left[s_{5} s_{6} s_{7} s_{8}\\right.$",
+          "$\\left[s_{9} s_{13} s_{14}\\right.$",
+          "$\\left[s_{10} s_{12}\\right.$",
+          "$\\left[s_{11} s_{15}\\right.$",
+          "$\\left[s_{16}\\right]$",
+          ""
+        ],
+        [
+          "",
+          "After",
+          "$\\left[s_{1} s_{2} s_{3} s_{4}\\right.$",
+          "$\\left[s_{5} s_{6} s_{7} s_{8}\\right]$",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 9
+    },
+    {
+      "table_number": "5",
+      "table_title": "Empirical results of the proposed method and original ECGA using a tournament size of 4 . Experiments were conducted on 40 - and 80 -bit problems formed by concatenating 4 -bit trap functions with three different scalings. The symbols $\\ell, n$, and $f_{e v}$ denote problem size, population size, and function evaluations, respectively.",
+      "headers": [
+        "",
+        "",
+        "$\\ell$",
+        "$n$",
+        "$f_{e v}$",
+        "SD $f_{e v}$"
+      ],
+      "rows": [
+        [
+          "Exponential",
+          "ECGA",
+          40,
+          1719,
+          44487.72,
+          2682.02
+        ],
+        [
+          "",
+          "",
+          80,
+          3748,
+          187549.92,
+          5912.06
+        ],
+        [
+          "",
+          "ECGA+MP",
+          40,
+          1405,
+          37373.0,
+          2027.11
+        ],
+        [
+          "",
+          "",
+          80,
+          4221,
+          210881.16,
+          8568.54
+        ],
+        [
+          "Power law",
+          "ECGA",
+          40,
+          1604,
+          32946.16,
+          2105.37
+        ],
+        [
+          "",
+          "",
+          80,
+          5507,
+          163557.9,
+          6017.21
+        ],
+        [
+          "",
+          "ECGA+MP",
+          40,
+          1248,
+          27755.52,
+          1929.44
+        ],
+        [
+          "",
+          "",
+          80,
+          4361,
+          141034.74,
+          5884.63
+        ],
+        [
+          "Uniform",
+          "ECGA",
+          40,
+          1346,
+          17228.8,
+          1489.44
+        ],
+        [
+          "",
+          "",
+          80,
+          3479,
+          58308.04,
+          3411.61
+        ],
+        [
+          "",
+          "ECGA+MP",
+          40,
+          2181,
+          30446.76,
+          2411.81
+        ],
+        [
+          "",
+          "",
+          80,
+          5598,
+          100540.08,
+          5535.96
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Welch's $t$-test on empirical results presented in Figures 4, 5, and 6. The null hypothesis is that the number of function evaluations spent by ECGA and the number of function evaluations spent by ECGA-MP are with equal means (against the alternative that the means are not equal). The first three rows indicate whether the null hypothesis is rejected, the $p$-value, and the $t$-statistics from the tests, respectively. The last row lists whether the number of average function evaluations needed by ECGA-MP is smaller $(<)$ or larger $(>)$ than the number needed by the original ECGA.",
+      "headers": [
+        "Problem size",
+        "40",
+        "48",
+        "56",
+        "64",
+        "72",
+        "80"
+      ],
+      "rows": [
+        [
+          12,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Reject null",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        [
+          "$p$-value",
+          "$4.409 \\times 10^{-48}$",
+          "$2.137 \\times 10^{-60}$",
+          "$2.031 \\times 10^{-69}$",
+          "$1.102 \\times 10^{-56}$",
+          "$2.053 \\times 10^{-70}$",
+          "$5.563 \\times 10^{-63}$"
+        ],
+        [
+          "$t$-statistics",
+          41.9194,
+          64.0567,
+          82.6409,
+          66.3387,
+          97.266,
+          82.4819
+        ],
+        [
+          "Comparison",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$"
+        ],
+        [
+          16,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Reject null",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        [
+          "$p$-value",
+          "$1.458 \\times 10^{-48}$",
+          "$6.409 \\times 10^{-53}$",
+          "$2.149 \\times 10^{-54}$",
+          "$1.847 \\times 10^{-58}$",
+          "$4.341 \\times 10^{-60}$",
+          "$8.518 \\times 10^{-58}$"
+        ],
+        [
+          "$t$-statistics",
+          40.7834,
+          60.9651,
+          71.7845,
+          81.9204,
+          89.1136,
+          87.8952
+        ],
+        [
+          "Comparison",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$"
+        ],
+        [
+          12,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Reject null",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        [
+          "$p$-value",
+          "$1.094 \\times 10^{-25}$",
+          "$1.208 \\times 10^{-33}$",
+          "$5.515 \\times 10^{-48}$",
+          "$4.294 \\times 10^{-61}$",
+          "$6.05 \\times 10^{-53}$",
+          "$1.608 \\times 10^{-72}$"
+        ],
+        [
+          "$t$-statistics",
+          14.5298,
+          18.4542,
+          29.4004,
+          48.5933,
+          44.0576,
+          63.2243
+        ],
+        [
+          "Comparison",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$"
+        ],
+        [
+          16,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Reject null",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        [
+          "$p$-value",
+          "$1.582 \\times 10^{-22}$",
+          "$6.032 \\times 10^{-50}$",
+          "$1.047 \\times 10^{-47}$",
+          "$1.717 \\times 10^{-59}$",
+          "$3.383 \\times 10^{-56}$",
+          "$7.91 \\times 10^{-69}$"
+        ],
+        [
+          "$t$-statistics",
+          12.7581,
+          30.2641,
+          28.5023,
+          37.5145,
+          38.8386,
+          49.2693
+        ],
+        [
+          "Comparison",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$",
+          "$<$"
+        ],
+        [
+          12,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Reject null",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        [
+          "$p$-value",
+          "$3.356 \\times 10^{-35}$",
+          "$1.23 \\times 10^{-39}$",
+          "$4.264 \\times 10^{-33}$",
+          "$3.399 \\times 10^{-33}$",
+          "$4.006 \\times 10^{-45}$",
+          "$4.903 \\times 10^{-53}$"
+        ],
+        [
+          "$t$-statistic",
+          "$-25.4683$",
+          "$-26.7928$",
+          "$-23.7365$",
+          "$-22.9905$",
+          "$-29.0505$",
+          "$-33.4524$"
+        ],
+        [
+          "Comparison",
+          "$>$",
+          "$>$",
+          "$>$",
+          "$>$",
+          "$>$",
+          "$>$"
+        ],
+        [
+          16,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Reject null",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        [
+          "$p$-value",
+          "$1.126 \\times 10^{-34}$",
+          "$1.776 \\times 10^{-33}$",
+          "$8.802 \\times 10^{-40}$",
+          "$6.649 \\times 10^{-32}$",
+          "$3.684 \\times 10^{-38}$",
+          "$4.062 \\times 10^{-44}$"
+        ],
+        [
+          "$t$-statistic",
+          "$-25.7066$",
+          "$-25.9356$",
+          "$-31.5460$",
+          "$-25.0263$",
+          "$-28.6037$",
+          "$-34.0405$"
+        ],
+        [
+          "Comparison",
+          "$>$",
+          "$>$",
+          "$>$",
+          "$>$",
+          "$>$",
+          "$>$"
+        ]
+      ],
+      "row_count": 30,
+      "column_count": 7
+    },
+    {
+      "table_number": "7",
+      "table_title": "Empirical results of the original ECGA using tournament size 12. Experiments were conducted on 40-bit and 80-bit uniformly scaled problems formed by concatenating 4 -bit trap functions. The symbols $\\ell, n, g$, and $f_{e v}$ denote problem size, population size, generation, and function evaluations, respectively.",
+      "headers": [
+        "",
+        "$\\ell$",
+        "$n$",
+        "$g$",
+        "$S D g$",
+        "$f_{e v}$",
+        "$S D f_{e v}$"
+      ],
+      "rows": [
+        [
+          "ECGA",
+          40,
+          646,
+          8.36,
+          0.92,
+          "$5,400.56$",
+          594.65
+        ],
+        [
+          "",
+          80,
+          2042,
+          10.72,
+          1.01,
+          "$21,890.24$",
+          "$2,064.38$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": "8",
+      "table_title": "Empirical results of the proposed approach using a tournament size of 12. Experiments were conducted on 40-bit and 80-bit uniformly scaled problems formed by concatenating 4 -bit trap functions. The symbols $\\ell, 2 n, g$, and $f_{e v}$ denote problem size, twice the population size required by the original ECGA, generation, and function evaluations, respectively.",
+      "headers": [
+        "",
+        "$\\ell$",
+        "$2 n$",
+        "$g$",
+        "$S D g$",
+        "$f_{e v}$",
+        "$S D f_{e v}$"
+      ],
+      "rows": [
+        [
+          "ECGA+MP",
+          40,
+          1292,
+          9.24,
+          0.89,
+          "$11,938.08$",
+          "$1,154.42$"
+        ],
+        [
+          "",
+          80,
+          4084,
+          10.58,
+          0.7,
+          "$43,208.72$",
+          "$2,868.90$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    }
+  ]
+}

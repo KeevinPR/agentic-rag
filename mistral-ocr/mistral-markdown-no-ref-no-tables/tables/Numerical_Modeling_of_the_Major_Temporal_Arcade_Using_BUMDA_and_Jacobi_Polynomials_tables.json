@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/Numerical Modeling of the Major Temporal Arcade Using BUMDA and Jacobi Polynomials.md",
+    "filename": "Numerical Modeling of the Major Temporal Arcade Using BUMDA and Jacobi Polynomials.md",
+    "title": "Numerical Modeling of the Major Temporal Arcade Using BUMDA and Jacobi Polynomials",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Statistical values obtained from 30 runs by the proposed method using the test set of 20 retinal fundus images.",
+      "headers": [
+        "",
+        "MDCP (px.)",
+        "Hausdorff (px.)",
+        "Time (s)"
+      ],
+      "rows": [
+        [
+          "Mean",
+          7.51,
+          26.27,
+          3.44
+        ],
+        [
+          "Median",
+          6.17,
+          21.29,
+          3.43
+        ],
+        [
+          "Variance",
+          16.3,
+          190.91,
+          0.001
+        ],
+        [
+          "Maximum",
+          21.36,
+          69.92,
+          3.54
+        ],
+        [
+          "Minimum",
+          4.34,
+          14.43,
+          3.4
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Mean Distance to the Closest Point and Hausdorff distance values for proposed method and the methods reported in the literature for several types of modeling approximation for MTA.",
+      "headers": [
+        "Method",
+        "MDCP (px.) <br> Mean $\\pm$ Std.",
+        "Hausdorff (px.) <br> Mean $\\pm$ Std."
+      ],
+      "rows": [
+        [
+          "General Hough",
+          "$31.28 \\pm 0.00$",
+          "$64.49 \\pm 0.00$"
+        ],
+        [
+          "MIPAV",
+          "$25.69 \\pm 0.00$",
+          "$59.91 \\pm 0.00$"
+        ],
+        [
+          "UMDA + SA",
+          "$30.45 \\pm 12.94$",
+          "$105.8 \\pm 27.54$"
+        ],
+        [
+          "weighted-RANSAC",
+          "$7.40 \\pm 5.34$",
+          "$27.96 \\pm 17.66$"
+        ],
+        [
+          "Proposed Method",
+          "$\\mathbf{7 . 5 1} \\pm \\mathbf{4 . 1}$",
+          "$\\mathbf{2 6 . 2 7} \\pm \\mathbf{1 4 . 0 5}$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 shows the execution time used by each method; it is observed that the UMDA + SA method is the one that requires the least time during its execution; however, the BUMDA method is less than two seconds above it, unlike the two others where the time required is much longer.",
+      "headers": [
+        "Method",
+        "Execution Time (s)"
+      ],
+      "rows": [
+        [
+          "General Hough",
+          4.7641
+        ],
+        [
+          "MIPAV",
+          230
+        ],
+        [
+          "UMDA + SA",
+          1.68
+        ],
+        [
+          "weighted-RANSAC",
+          9.93
+        ],
+        [
+          "Proposed method",
+          3.4
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Comparison table for MDCP and Hausdorff distance between the four methods in literature and proposed method.",
+      "headers": [
+        "Method Compared",
+        "MDCP (px.)",
+        "Hausdorff (px.)"
+      ],
+      "rows": [
+        [
+          "General Hough",
+          23.77,
+          38.22
+        ],
+        [
+          "MIPAV",
+          18.18,
+          33.64
+        ],
+        [
+          "UMDA + SA",
+          22.94,
+          79.53
+        ],
+        [
+          "weigthed-RANSAC",
+          "$-0.11$",
+          1.69
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "Difference for the execution time between proposed method and literature methods.",
+      "headers": [
+        "Method Compared",
+        "Execution Time Difference (s)"
+      ],
+      "rows": [
+        [
+          "General Hough",
+          "very high"
+        ],
+        [
+          "MIPAV",
+          226.6
+        ],
+        [
+          "UMDA + SA",
+          "$-1.72$"
+        ],
+        [
+          "weighted-RANSAC",
+          6.54
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "6",
+      "table_title": "Fourth-order polynomial series for each MTA fit from images of Figure 3 (in order, left to right and upper to bottom).",
+      "headers": [
+        "Image",
+        "$(\\boldsymbol{\\alpha}, \\boldsymbol{\\beta})$",
+        "Polynomial Serie"
+      ],
+      "rows": [
+        [
+          1,
+          "$(-0.6190,-0.6274)$",
+          "$154.37-203.8 f_{1}^{\\alpha, \\beta}+139.89 f_{2}^{\\alpha, \\beta}-22.28 f_{3}^{\\alpha, \\beta}+36.52 f_{4}^{\\alpha, \\beta}$"
+        ],
+        [
+          3,
+          "$(-0.8510,-0.7823)$",
+          "$138.51-134.27 f_{1}^{\\alpha, \\beta}+172.28 f_{2}^{\\alpha, \\beta}+2.54 f_{3}^{\\alpha, \\beta}+32.49 f_{4}^{\\alpha, \\beta}$"
+        ],
+        [
+          6,
+          "$(-0.5412,-0.9929)$",
+          "$148.23-6.32 f_{1}^{\\alpha, \\beta}+165.49 f_{2}^{\\alpha, \\beta}-16.78 f_{3}^{\\alpha, \\beta}+16.07 f_{4}^{\\alpha, \\beta}$"
+        ],
+        [
+          7,
+          "$(-0.9687,-0.4990)$",
+          "$103.17-34.92 f_{1}^{\\alpha, \\beta}+125.34 f_{2}^{\\alpha, \\beta}-15.44 f_{3}^{\\alpha, \\beta} 3.98 f_{4}^{\\alpha, \\beta}$"
+        ],
+        [
+          9,
+          "$(-0.9713,-0.1148)$",
+          "$102.76-67.39 f_{1}^{\\alpha, \\beta}+114.92 f_{2}^{\\alpha, \\beta}-5.16 f_{3}^{\\alpha, \\beta}+20.85 f_{4}^{\\alpha, \\beta}$"
+        ],
+        [
+          12,
+          "$(-0.5027,-0.4413)$",
+          "$139.96+5.90 f_{1}^{\\alpha, \\beta}+137.52 f_{2}^{\\alpha, \\beta}+32.75 f_{3}^{\\alpha, \\beta}+14.43 f_{4}^{\\alpha, \\beta}$"
+        ],
+        [
+          14,
+          "$(-0.6905,-0.9758)$",
+          "$134.44-8.25 f_{1}^{\\alpha, \\beta}+207.18 f_{2}^{\\alpha, \\beta}+6.35 f_{3}^{\\alpha, \\beta}+16.69 f_{4}^{\\alpha, \\beta}$"
+        ],
+        [
+          16,
+          "$(-0.7432,-0.6318)$",
+          "$141.09-11.64 f_{1}^{\\alpha, \\beta}+195.86 f_{2}^{\\alpha, \\beta}-1.14 f_{3}^{\\alpha, \\beta}+8.98 f_{4}^{\\alpha, \\beta}$"
+        ],
+        [
+          17,
+          "$(-0.9920,-0.4718)$",
+          "$81.91-88.11 f_{1}^{\\alpha, \\beta}+159.60 f_{2}^{\\alpha, \\beta}-1.82 f_{3}^{\\alpha, \\beta}+28.04 f_{4}^{\\alpha, \\beta}$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    }
+  ]
+}

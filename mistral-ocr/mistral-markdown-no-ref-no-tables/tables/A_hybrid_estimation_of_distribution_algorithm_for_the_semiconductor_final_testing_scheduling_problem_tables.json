@@ -1,0 +1,629 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2015/A hybrid estimation of distribution algorithm for the semiconductor final testing scheduling problem.md",
+    "filename": "A hybrid estimation of distribution algorithm for the semiconductor final testing scheduling problem.md",
+    "title": "A hybrid estimation of distribution algorithm for the semiconductor final testing scheduling problem",
+    "year": "2015"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Processing time table",
+      "headers": [
+        "Operations",
+        "Machines",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$M_{1}$",
+          "$M_{2}$",
+          "$M_{3}$"
+        ],
+        [
+          "$O_{1,1}$",
+          4,
+          7,
+          6
+        ],
+        [
+          "$O_{1,2}$",
+          2,
+          6,
+          "$\\infty$"
+        ],
+        [
+          "$O_{2,1}$",
+          4,
+          5,
+          7
+        ],
+        [
+          "$O_{2,2}$",
+          3,
+          "$\\infty$",
+          3
+        ],
+        [
+          "$O_{3,1}$",
+          2,
+          5,
+          6
+        ],
+        [
+          "$O_{3,2}$",
+          "$\\infty$",
+          3,
+          2
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Setup time table",
+      "headers": [
+        "Machines",
+        "$M_{1}$",
+        "$M_{2}$",
+        "$M_{3}$"
+      ],
+      "rows": [
+        [
+          "$M_{1}$",
+          0,
+          4,
+          3
+        ],
+        [
+          "$M_{2}$",
+          2,
+          0,
+          2
+        ],
+        [
+          "$M_{3}$",
+          3,
+          1,
+          0
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Parameters of the instances",
+      "headers": [
+        "Instance",
+        "$n$",
+        "$m$",
+        "Processing time",
+        "Setup time",
+        "Numbers of resources",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Tester",
+          "Handler",
+          "Accessory"
+        ],
+        [
+          "Large-scale (LS)",
+          100,
+          36,
+          "$\\{1,2, \\ldots, 15\\}$",
+          "$\\{1,2, \\ldots, 5\\}$",
+          "$\\{10,5,3\\}$",
+          "$\\{10,8,4\\}$",
+          "$\\{7,7,5,5\\}$"
+        ],
+        [
+          "Wide-range (WR)",
+          60,
+          "",
+          "$\\{1,2, \\ldots, 50\\}$",
+          "$\\{1,2, \\ldots, 15\\}$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 8
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Combinations of parameter values",
+      "headers": [
+        "Parameters",
+        "Factor level",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "$P$",
+          50,
+          100,
+          150,
+          200
+        ],
+        [
+          "$S P$",
+          10,
+          20,
+          30,
+          40
+        ],
+        [
+          "$\\alpha$",
+          0.1,
+          0.2,
+          0.3,
+          0.4
+        ],
+        [
+          "$\\beta$",
+          0.1,
+          0.2,
+          0.3,
+          0.4
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Orthogonal array and RV values",
+      "headers": [
+        "Experiment number",
+        "Factor",
+        "",
+        "",
+        "",
+        "RV"
+      ],
+      "rows": [
+        [
+          "",
+          "$P$",
+          "$S P$",
+          "$\\alpha$",
+          "$\\beta$",
+          ""
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          123.05
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          2,
+          111.25
+        ],
+        [
+          3,
+          1,
+          3,
+          3,
+          3,
+          107.1
+        ],
+        [
+          4,
+          1,
+          4,
+          4,
+          4,
+          124.25
+        ],
+        [
+          5,
+          2,
+          1,
+          2,
+          3,
+          107.55
+        ],
+        [
+          6,
+          2,
+          2,
+          1,
+          4,
+          104.8
+        ],
+        [
+          7,
+          2,
+          3,
+          4,
+          1,
+          131.65
+        ],
+        [
+          8,
+          2,
+          4,
+          3,
+          2,
+          119.35
+        ],
+        [
+          9,
+          3,
+          1,
+          3,
+          4,
+          109.8
+        ],
+        [
+          10,
+          3,
+          2,
+          4,
+          3,
+          104.4
+        ],
+        [
+          11,
+          3,
+          3,
+          1,
+          2,
+          119.85
+        ],
+        [
+          12,
+          3,
+          4,
+          2,
+          1,
+          141.6
+        ],
+        [
+          13,
+          4,
+          1,
+          4,
+          2,
+          125.35
+        ],
+        [
+          14,
+          4,
+          2,
+          3,
+          1,
+          141.55
+        ],
+        [
+          15,
+          4,
+          3,
+          2,
+          4,
+          108.65
+        ],
+        [
+          16,
+          4,
+          4,
+          1,
+          3,
+          117.4
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Average response value",
+      "headers": [
+        "Level",
+        "$P$",
+        "$S P$",
+        "$\\alpha$",
+        "$\\beta$"
+      ],
+      "rows": [
+        [
+          1,
+          116.4125,
+          116.4375,
+          116.275,
+          134.4625
+        ],
+        [
+          2,
+          115.8375,
+          115.5,
+          117.2625,
+          118.95
+        ],
+        [
+          3,
+          118.9125,
+          116.8125,
+          119.45,
+          109.1125
+        ],
+        [
+          4,
+          123.2375,
+          125.65,
+          121.4125,
+          111.875
+        ],
+        [
+          "Delta",
+          7.4,
+          10.15,
+          5.1375,
+          25.35
+        ],
+        [
+          "Rank",
+          3,
+          2,
+          4,
+          1
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Simulation results",
+      "headers": [
+        "Instance",
+        "wcGA",
+        "",
+        "bvGA",
+        "",
+        "CEDA",
+        "",
+        "HEDA",
+        "",
+        "",
+        "",
+        "Hypothesis test",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Mean",
+          "SD",
+          "Mean",
+          "SD",
+          "Mean",
+          "SD",
+          "Best",
+          "Mean",
+          "SD",
+          "CPU(s)",
+          "$p$ value",
+          "Sig $(p<0.05)$"
+        ],
+        [
+          1,
+          127.33,
+          1.42,
+          124.2,
+          1.72,
+          121.83,
+          1.39,
+          102,
+          "$\\mathbf{1 0 3 . 7 3}$",
+          "$\\mathbf{1 . 1 8}$",
+          4.19,
+          0.0,
+          "Y"
+        ],
+        [
+          2,
+          143.3,
+          2.07,
+          137.3,
+          2.22,
+          135.2,
+          1.76,
+          111,
+          "$\\mathbf{1 1 2 . 9 0}$",
+          "$\\mathbf{1 . 3 7}$",
+          4.06,
+          0.0,
+          "Y"
+        ],
+        [
+          3,
+          135.27,
+          3.57,
+          131.13,
+          1.94,
+          123.6,
+          1.99,
+          101,
+          "$\\mathbf{1 0 4 . 4 3}$",
+          "$\\mathbf{1 . 8 5}$",
+          3.89,
+          0.0,
+          "Y"
+        ],
+        [
+          4,
+          158.8,
+          2.15,
+          148.63,
+          2.41,
+          137.87,
+          2.16,
+          118,
+          "$\\mathbf{1 2 1 . 4 3}$",
+          "$\\mathbf{1 . 8 5}$",
+          4.15,
+          0.0,
+          "Y"
+        ],
+        [
+          5,
+          143.97,
+          2.02,
+          142.47,
+          1.84,
+          138.23,
+          1.67,
+          112,
+          "$\\mathbf{1 1 4 . 3 0}$",
+          "$\\mathbf{1 . 5 5}$",
+          4.1,
+          0.0,
+          "Y"
+        ],
+        [
+          1,
+          322.7,
+          5.45,
+          307.2,
+          4.74,
+          302.63,
+          4.05,
+          245,
+          "$\\mathbf{2 5 1 . 0 7}$",
+          "$\\mathbf{3 . 7 4}$",
+          2.82,
+          0.0,
+          "Y"
+        ],
+        [
+          2,
+          248.37,
+          5.65,
+          240.53,
+          3.69,
+          234.83,
+          3.47,
+          202,
+          "$\\mathbf{2 0 7 . 2 3}$",
+          "$\\mathbf{2 . 9 9}$",
+          2.35,
+          0.0,
+          "Y"
+        ],
+        [
+          3,
+          280.7,
+          4.05,
+          275.4,
+          3.93,
+          269.03,
+          3.99,
+          220,
+          "$\\mathbf{2 2 5 . 3 3}$",
+          "$\\mathbf{3 . 9 5}$",
+          2.51,
+          0.0,
+          "Y"
+        ],
+        [
+          4,
+          229.23,
+          4.57,
+          220.2,
+          3.97,
+          209.3,
+          4.56,
+          185,
+          "$\\mathbf{1 9 1 . 2 3}$",
+          "$\\mathbf{4 . 3 3}$",
+          2.36,
+          0.0,
+          "Y"
+        ],
+        [
+          5,
+          284.37,
+          6.46,
+          260.17,
+          4.01,
+          246.63,
+          4.01,
+          222,
+          "$\\mathbf{2 2 9 . 2 7}$",
+          "$\\mathbf{3 . 9 2}$",
+          2.58,
+          0.0,
+          "Y"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 13
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 CPU time spent by the algorithms (s)",
+      "headers": [
+        "",
+        "$\\mathrm{wcGA}^{\\mathrm{a}}$",
+        "bvGA $^{\\mathrm{b}}$",
+        "CEDA $^{\\mathrm{c}}$",
+        "HEDA $^{\\mathrm{d}}$"
+      ],
+      "rows": [
+        [
+          "LS instances",
+          448.83,
+          175.86,
+          194.85,
+          "$\\mathbf{4 . 0 8}$"
+        ],
+        [
+          "WR instances",
+          179.82,
+          94.93,
+          105.87,
+          "$\\mathbf{2 . 5 2}$"
+        ],
+        [
+          "Average",
+          314.33,
+          135.4,
+          150.36,
+          "$\\mathbf{3 . 3 0}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+cat <<EOF > .gitignore
+# Ignore everything by default
+*
+
+# Allow .gitignore itself
+!.gitignore
+
+# Allow specific folders and their contents
+!chainlit/
+!chainlit/**
+
+!mistral/
+!mistral/**
+
+# Ignore local Git backup folder (you renamed .git → .git_backup)
+chainlit/.git_backup/
+
+# Ignore config files and secrets
+*.env
+.env
+.env.local
+
+# Also ignore environments inside them
+chainlit/env/
+mistral/conda_env/
+mistral/eda-rag-db
+mistral/scrape
+__pycache__/
+*.pyc
+.DS_Store
+EOF

@@ -1,0 +1,1181 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Cellular estimation of distribution algorithm designed to solve the energy resource management problem under uncertainty.md",
+    "filename": "Cellular estimation of distribution algorithm designed to solve the energy resource management problem under uncertainty.md",
+    "title": "Cellular estimation of distribution algorithm designed to solve the energy resource management problem under uncertainty",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Available energy resources.",
+      "headers": [
+        "Energy resources",
+        "",
+        "Prices (m.u./kWh)",
+        "Capacity (kW)",
+        "Units"
+      ],
+      "rows": [
+        [
+          "Dispatchable DGs",
+          "",
+          "$0.07-0.11$",
+          "$10-100$",
+          5
+        ],
+        [
+          "External suppliers",
+          "",
+          "$0.07-0.16$",
+          "$0-150$",
+          1
+        ],
+        [
+          "ESS",
+          "Charge",
+          "$-$",
+          "$0-16.6$",
+          ""
+        ],
+        [
+          "",
+          "Discharge",
+          0.03,
+          "$0-16-6$",
+          2
+        ],
+        [
+          "EV",
+          "Charge",
+          "$-$",
+          "$0-111$",
+          34
+        ],
+        [
+          "",
+          "Discharge",
+          0.06,
+          "$0-111$",
+          ""
+        ],
+        [
+          "DR curtailable loads",
+          "",
+          0.04,
+          "$4.06-8.95$",
+          90
+        ],
+        [
+          "Forecast (kW)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Photovoltaic",
+          "",
+          "-",
+          "$0-106.81$",
+          117
+        ],
+        [
+          "Load",
+          "",
+          "-",
+          "$35.82-83.39$",
+          90
+        ],
+        [
+          "Limits (kW)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          1,
+          "",
+          "$0.021-0.039$",
+          "$0-85$",
+          1
+        ],
+        [
+          2,
+          "",
+          "$0.021-0.039$",
+          "$0-40$",
+          1
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Set of algorithms and case study for experiments i, ii, iii and iv.",
+      "headers": [
+        "Experiment",
+        "Set of algorithms",
+        "",
+        "",
+        "Case study",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          2018,
+          2019,
+          2020,
+          1,
+          2
+        ],
+        [
+          "i",
+          "$\\checkmark$",
+          "",
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          "ii",
+          "$\\checkmark$",
+          "",
+          "",
+          "",
+          "$\\checkmark$"
+        ],
+        [
+          "iii",
+          "",
+          "$\\checkmark$",
+          "",
+          "",
+          "$\\checkmark$"
+        ],
+        [
+          "iv",
+          "",
+          "",
+          "$\\checkmark$",
+          "",
+          "$\\checkmark$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Runtime of CUMDANCauchy and the 2018 algorithms in case study 1 .",
+      "headers": [
+        "Algorithms",
+        "Time (sec)"
+      ],
+      "rows": [
+        [
+          "VNS-DEEPSO",
+          246.47
+        ],
+        [
+          "EV-DEPSO",
+          53.57
+        ],
+        [
+          "CUMDANCauchy",
+          267.72
+        ],
+        [
+          "CEPSO",
+          47.04
+        ],
+        [
+          "PSO-GBP",
+          54.25
+        ],
+        [
+          "IC-DEEPSO",
+          42.11
+        ],
+        [
+          "UPSO",
+          19.82
+        ],
+        [
+          "Improved DE",
+          45.66
+        ],
+        [
+          "Firefly",
+          483.69
+        ],
+        [
+          "DESS",
+          37.67
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Runtime of CUMDANCauchy and the 2018 algorithms in case study 2 .",
+      "headers": [
+        "Algorithms",
+        "Time (sec)"
+      ],
+      "rows": [
+        [
+          "CUMDANCauchy",
+          53.73
+        ],
+        [
+          "VNS-DEEPSO",
+          116.85
+        ],
+        [
+          "CEPSO",
+          311.06
+        ],
+        [
+          "EV-DEPSO",
+          519.9
+        ],
+        [
+          "PSO-GBP",
+          95.36
+        ],
+        [
+          "IC-DEEPSO",
+          247.35
+        ],
+        [
+          "UPSO",
+          151.9
+        ],
+        [
+          "Firefly",
+          2790.29
+        ],
+        [
+          "Improved DE",
+          786.05
+        ],
+        [
+          "DESS",
+          400.55
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Runtime of CUMDANCauchy and the 2019 algorithms in case study 2 .",
+      "headers": [
+        "Algorithms",
+        "Time Speed(sec)"
+      ],
+      "rows": [
+        [
+          "VNS-DEEPSO",
+          116.85
+        ],
+        [
+          "HL-PSVNSO",
+          101.1
+        ],
+        [
+          "GM-VNPSO",
+          103.2
+        ],
+        [
+          "CUMDANCauchy",
+          53.73
+        ],
+        [
+          "PSO-GBP",
+          95.36
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "6",
+      "table_title": "Runtime of CUMDANCauchy and the 2020 algorithms in case study 2 .",
+      "headers": [
+        "Algorithms",
+        "Time (sec)"
+      ],
+      "rows": [
+        [
+          "CUMDANCauchy",
+          53.73
+        ],
+        [
+          "DE-TLBO",
+          839.49
+        ],
+        [
+          "GASAPSO",
+          607.89
+        ],
+        [
+          "HFEABC",
+          178.77
+        ],
+        [
+          "CE-CMAES",
+          1430.99
+        ],
+        [
+          "AJSO",
+          404.76
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "7",
+      "table_title": "Results of Shapiro-Wilks test for the runtime of all algorithms in case study 2.",
+      "headers": [
+        "Algorithms",
+        "W",
+        "$p-$ value",
+        "Hypothesis"
+      ],
+      "rows": [
+        [
+          "CUMDANCauchy",
+          0.92605,
+          0.1296,
+          "Accept"
+        ],
+        [
+          "Firefly",
+          0.7583,
+          0.0002198,
+          "Reject"
+        ],
+        [
+          "UPSO",
+          0.46917,
+          "$1.69 \\mathrm{E}-07$",
+          "Reject"
+        ],
+        [
+          "Improved DE",
+          0.90065,
+          0.04242,
+          "Reject"
+        ],
+        [
+          "IC-DEEPSO",
+          0.97181,
+          0.7926,
+          "Accept"
+        ],
+        [
+          "EVDEPSO",
+          0.70535,
+          "$4.53 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "CEPSO",
+          0.94023,
+          0.2421,
+          "Accept"
+        ],
+        [
+          "DESS",
+          0.73527,
+          0.0001084,
+          "Reject"
+        ],
+        [
+          "PSO-GBP",
+          0.97951,
+          0.9276,
+          "Accept"
+        ],
+        [
+          "VNS-DEEPSO",
+          0.91766,
+          0.08932,
+          "Accept"
+        ],
+        [
+          "GM-VNPSO",
+          0.8675,
+          0.01062,
+          "Reject"
+        ],
+        [
+          "HL-PSVNSO",
+          0.83135,
+          0.002637,
+          "Reject"
+        ],
+        [
+          "DE-TLBO",
+          0.41081,
+          "$5.46 \\mathrm{E}-08$",
+          "Reject"
+        ],
+        [
+          "HFEARC",
+          0.83267,
+          0.002768,
+          "Reject"
+        ],
+        [
+          "CE-CMAES",
+          0.43142,
+          "$8.07 \\mathrm{E}-08$",
+          "Reject"
+        ],
+        [
+          "AISO",
+          0.44959,
+          "$1.15 \\mathrm{E}-07$",
+          "Reject"
+        ],
+        [
+          "GASAPSO",
+          0.89514,
+          0.03346,
+          "Reject"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Ranking of runtime of all algorithms in case study 2.",
+      "headers": [
+        "Algorithms",
+        "Ranking"
+      ],
+      "rows": [
+        [
+          "CUMDANCauchy",
+          1.0
+        ],
+        [
+          "PSO-GBP",
+          2.15
+        ],
+        [
+          "HL-PSVNSO",
+          3.2
+        ],
+        [
+          "GM-VNPSO",
+          3.75
+        ],
+        [
+          "VNS-DEEPSO",
+          5.8
+        ],
+        [
+          "UPSO",
+          5.85
+        ],
+        [
+          "HFEABC",
+          6.95
+        ],
+        [
+          "IC-DEEPSO",
+          7.75
+        ],
+        [
+          "CEPSO",
+          10.45
+        ],
+        [
+          "DESS",
+          10.85
+        ],
+        [
+          "DE-TLBO",
+          11.25
+        ],
+        [
+          "AJSO",
+          11.7
+        ],
+        [
+          "EVDEPSO",
+          12.35
+        ],
+        [
+          "GASAPSO",
+          13.15
+        ],
+        [
+          "Improved DE",
+          14.1
+        ],
+        [
+          "CE-CMAES",
+          15.8
+        ],
+        [
+          "Firefly",
+          16.9
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 2
+    },
+    {
+      "table_number": "9",
+      "table_title": "Results of the Wilcoxon test for the runtime of all algorithms in case study 2.",
+      "headers": [
+        "CUMDANCauchy vs",
+        "$\\mathbf{R}+$",
+        "$\\mathbf{R}-$",
+        "$p-value$",
+        "Hypothesis"
+      ],
+      "rows": [
+        [
+          "CUMDANCauchy",
+          210,
+          0,
+          "$1.00 \\mathrm{E}+00$",
+          "Accept"
+        ],
+        [
+          "Firefly",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "UPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "Improved DE",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "IC-DEEPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "EVDEPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "CEPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "DESS",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "PSO-GBP",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "VNS-DEEPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "GM-VNPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "HL-PSVNSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "DE-TLBO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "HFEABC",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "CE-CMAES",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "AJSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "GASAPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 5
+    },
+    {
+      "table_number": "10",
+      "table_title": "Results of Shapiro-Wilks test of global fitness of all algorithms in case study 2.",
+      "headers": [
+        "Algorithms",
+        "W",
+        "$p$-value",
+        "Hypothesis"
+      ],
+      "rows": [
+        [
+          "CUMDANCauchy",
+          0.86407,
+          0.00926,
+          "Reject"
+        ],
+        [
+          "Firefly",
+          0.92182,
+          0.1074,
+          "Accept"
+        ],
+        [
+          "UPSO",
+          0.9682,
+          0.7166,
+          "Accept"
+        ],
+        [
+          "Improved DE",
+          0.93758,
+          0.2158,
+          "Accept"
+        ],
+        [
+          "IC-DEEPSO",
+          0.92916,
+          0.1488,
+          "Accept"
+        ],
+        [
+          "EVDEPSO",
+          0.77524,
+          0.0003777,
+          "Reject"
+        ],
+        [
+          "CEPSO",
+          0.95472,
+          0.4445,
+          "Accept"
+        ],
+        [
+          "DESS",
+          0.97403,
+          0.8366,
+          "Accept"
+        ],
+        [
+          "PSO-GBP",
+          0.90191,
+          0.0448,
+          "Reject"
+        ],
+        [
+          "VNS-DEEPSO",
+          0.52072,
+          "$4.92 \\mathrm{E}-07$",
+          "Reject"
+        ],
+        [
+          "GM-VNPSO",
+          0.96725,
+          0.696,
+          "Accept"
+        ],
+        [
+          "HL-PSVNSO",
+          0.81694,
+          0.001563,
+          "Accept"
+        ],
+        [
+          "DE-TLBO",
+          0.87052,
+          0.012,
+          "Reject"
+        ],
+        [
+          "HFEABC",
+          0.78468,
+          0.000515,
+          "Reject"
+        ],
+        [
+          "CE-CMAES",
+          0.7593,
+          "$2.27 \\mathrm{E}-04$",
+          "Reject"
+        ],
+        [
+          "AJSO",
+          0.90803,
+          0.05847,
+          "Accept"
+        ],
+        [
+          "GASAPSO",
+          0.6849,
+          "$2.57 \\mathrm{E}-05$",
+          "Reject"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 4
+    },
+    {
+      "table_number": "11",
+      "table_title": "Ranking of global fitness of all algorithms in case study 2.",
+      "headers": [
+        "Algorithms",
+        "Ranking"
+      ],
+      "rows": [
+        [
+          "VNS-DEEPSO",
+          1.0
+        ],
+        [
+          "GM-VNPSO",
+          2.25
+        ],
+        [
+          "HL-PSVNSO",
+          2.75
+        ],
+        [
+          "CUMDANCauchy",
+          4.2
+        ],
+        [
+          "EVDEPSO",
+          5.65
+        ],
+        [
+          "PSO-GBP",
+          7.05
+        ],
+        [
+          "CEPSO",
+          7.75
+        ],
+        [
+          "DE-TLBO",
+          7.95
+        ],
+        [
+          "IC-DEEPSO",
+          9.3
+        ],
+        [
+          "GASAPSO",
+          9.35
+        ],
+        [
+          "UPSO",
+          10.9
+        ],
+        [
+          "Firefly",
+          11.65
+        ],
+        [
+          "Improved DE",
+          12.0
+        ],
+        [
+          "HFEABC",
+          13.65
+        ],
+        [
+          "DESS",
+          15.25
+        ],
+        [
+          "CE-CMAES",
+          15.4
+        ],
+        [
+          "AISO",
+          16.9
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "CUMDANCauchy",
+        "210",
+        "0",
+        "$1.00 \\mathrm{E}+00$",
+        "Accept"
+      ],
+      "rows": [
+        [
+          "Firefly",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "UPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "Improved DE",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "IC-DEEPSO",
+          39,
+          181,
+          "$6.87 \\mathrm{E}-03$",
+          "Reject"
+        ],
+        [
+          "EVDEPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "CEPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "DESS",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "PSO-GBP",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "VNS-DEEPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "GM-VNPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "HL-PSVNSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "DE-TLBO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "HFEABC",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "CE-CMAES",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "AISO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ],
+        [
+          "GASAPSO",
+          0,
+          210,
+          "$4.43 \\mathrm{E}-05$",
+          "Reject"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": "Nomenclature of indices, variables and parameters.",
+      "headers": [
+        "Indices",
+        ""
+      ],
+      "rows": [
+        [
+          "i",
+          "Distributed generation (DG) units"
+        ],
+        [
+          "j",
+          "PV units"
+        ],
+        [
+          "k",
+          "External suppliers"
+        ],
+        [
+          "e",
+          "Energy storage systems (ESSs)"
+        ],
+        [
+          "v",
+          "Electric vehicles (EVs)"
+        ],
+        [
+          "l",
+          "loads (EVs)"
+        ],
+        [
+          "m",
+          "Markets"
+        ],
+        [
+          "$\\mathrm{s}^{-}$",
+          "Scenarios"
+        ],
+        [
+          "t",
+          "Periods"
+        ],
+        [
+          "Variables",
+          ""
+        ],
+        [
+          "$P_{D G}$",
+          "Active power generation (kW)"
+        ],
+        [
+          "$P_{c o t}$",
+          "External supplied power (kW)"
+        ],
+        [
+          "$P_{E X V^{-}}$",
+          "Discharge power of ESS (kW)"
+        ],
+        [
+          "$P_{E V^{-}}$",
+          "Discharge power of EV (kW)"
+        ],
+        [
+          "$P_{E X V^{-}}$",
+          "Charge power of ESS (kW)"
+        ],
+        [
+          "$P_{E V^{-}}$",
+          "Charge power of EV (kW)"
+        ],
+        [
+          "$P_{c o t}$",
+          "Power reduction of load (kW)"
+        ],
+        [
+          "$P_{i n d}$",
+          "Non-supplied power for load (kW)"
+        ],
+        [
+          "$P_{i n d}$",
+          "Exceeded power of DG unit (kW)"
+        ],
+        [
+          "$P_{D G}$",
+          "Power buy to the market (kW)"
+        ],
+        [
+          "$P_{c o t}$",
+          "Power sell to the market (kW)"
+        ],
+        [
+          "$X_{D G}$",
+          "Binary variable for DG status"
+        ],
+        [
+          "Parameters",
+          ""
+        ],
+        [
+          "$N_{D G}$",
+          "Number of DG"
+        ],
+        [
+          "$N_{E V}$",
+          "Number of PV"
+        ],
+        [
+          "$N_{L}$",
+          "Number of external suppliers"
+        ],
+        [
+          "$N_{i}$",
+          "Number of ESSss"
+        ],
+        [
+          "$N_{i}$",
+          "Number of EVs"
+        ],
+        [
+          "$N_{L}$",
+          "Number of loads"
+        ],
+        [
+          "$N_{m}$",
+          "Number of market"
+        ],
+        [
+          "$N_{i}$",
+          "Number of scenario"
+        ],
+        [
+          "$T$",
+          "Number of periods"
+        ],
+        [
+          "$C_{D G}$",
+          "Generation cost of DG (m.u./kWh)"
+        ],
+        [
+          "$C_{c o t}$",
+          "Cost of external supplier (m.u./kWh)"
+        ],
+        [
+          "$C_{d v}$",
+          "Cost of PV generation (m.u./kWh)"
+        ],
+        [
+          "$C_{E X V^{-}}$",
+          "Discharging cost of ESS (m.u./kWh)"
+        ],
+        [
+          "$C_{E V^{-}}$",
+          "Discharging cost of EV (m.u./kWh)"
+        ],
+        [
+          "$C_{c o t}$",
+          "Load curtailment cost (m.u./kWh"
+        ],
+        [
+          "$C_{i n d}$",
+          "Grid imbalance cost (m.u./kWh)"
+        ],
+        [
+          "$n(v)$",
+          "Probability of scenario v"
+        ],
+        [
+          "$P_{P V}$",
+          "Photovoltaic generation (kW)"
+        ],
+        [
+          "$P_{i n d}$",
+          "Forecasted load"
+        ],
+        [
+          "$M P$",
+          "Electricity market price (m.u./kWh)"
+        ]
+      ],
+      "row_count": 43,
+      "column_count": 2
+    }
+  ]
+}

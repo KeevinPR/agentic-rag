@@ -1,0 +1,320 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Development of a time-dependent economic method with start time consideration to optimise gas-lift allocation and scheduling.md",
+    "filename": "Development of a time-dependent economic method with start time consideration to optimise gas-lift allocation and scheduling.md",
+    "title": "Development of a time-dependent economic method with start time consideration to optimise gas-lift allocation and scheduling",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Economic parameters for NPV calculations",
+      "headers": [
+        "Oil price",
+        "",
+        "$\\$ 92$"
+      ],
+      "rows": [
+        [
+          "OPEX",
+          "Gas-lift operation cost",
+          2
+        ],
+        [
+          "(variable part)",
+          "Natural operation cost",
+          0.5
+        ],
+        [
+          "OPEX (fixed part)",
+          "",
+          "$20 \\%$"
+        ],
+        [
+          "CAPEX",
+          "",
+          20
+        ],
+        [
+          "Tax rate",
+          "$40 \\%$",
+          ""
+        ],
+        [
+          "Discount rate",
+          "$12 \\%$",
+          ""
+        ],
+        [
+          "Royalty rate",
+          "$15 \\%$",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 List of EDA parameters",
+      "headers": [
+        "Maximum number of parents in DAG",
+        "",
+        "2",
+        ""
+      ],
+      "rows": [
+        [
+          "Sample size",
+          "",
+          200,
+          ""
+        ],
+        [
+          "Selection pressure",
+          "",
+          0.6,
+          ""
+        ],
+        [
+          "Maximum number of iterations",
+          "",
+          100,
+          ""
+        ],
+        [
+          "Initial population size",
+          "",
+          10,
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Results of NPV maximisation problem",
+      "headers": [
+        "Well <br> number",
+        "Start time <br> (year from <br> start of <br> analysis)",
+        "Average <br> injection rate <br> in 1st year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 2nd year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 3rd year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 4th year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 5th year <br> (MM scf/day)"
+      ],
+      "rows": [
+        [
+          1,
+          0,
+          5.03,
+          5.45,
+          5.74,
+          4.27,
+          5.02
+        ],
+        [
+          2,
+          3,
+          0,
+          0,
+          0,
+          0.32,
+          0.26
+        ],
+        [
+          3,
+          3,
+          0,
+          0,
+          0,
+          2.15,
+          1.76
+        ],
+        [
+          4,
+          0,
+          3.65,
+          4.08,
+          4.26,
+          3.23,
+          2.96
+        ],
+        [
+          "Sum",
+          "",
+          8.68,
+          9.53,
+          10,
+          9.97,
+          10
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Summary of different gas-lift scenario results",
+      "headers": [
+        "Scenario",
+        "Total gas usage <br> (MMscf/day)",
+        "Total production <br> (MMSTB)",
+        "Net present value <br> (MMS)"
+      ],
+      "rows": [
+        [
+          "Base",
+          50,
+          17,
+          543
+        ],
+        [
+          "GA",
+          46.35,
+          19.11,
+          628
+        ],
+        [
+          "PSO",
+          46.33,
+          19.11,
+          628
+        ],
+        [
+          "EDA",
+          48.18,
+          19.38,
+          637
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Well <br> number",
+        "Start time <br> (year from <br> start of <br> analysis)",
+        "Average <br> injection rate <br> in 1st year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 2nd year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 3rd year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 4th year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 5th year <br> (MM scf/day)"
+      ],
+      "rows": [
+        [
+          1,
+          0,
+          5.11,
+          5.4,
+          5.32,
+          3.81,
+          5.08
+        ],
+        [
+          2,
+          3,
+          0,
+          0,
+          0,
+          0.38,
+          0.3
+        ],
+        [
+          3,
+          3,
+          0,
+          0,
+          0,
+          1.86,
+          1.44
+        ],
+        [
+          4,
+          0,
+          3.57,
+          4.12,
+          4.37,
+          2.38,
+          3.18
+        ],
+        [
+          "Sum",
+          "",
+          8.68,
+          9.52,
+          9.69,
+          8.43,
+          10
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Well <br> number",
+        "Start time <br> (year from <br> start of <br> analysis)",
+        "Average <br> injection rate <br> in 1st year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 2nd year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 3rd year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 4th year <br> (MM scf/day)",
+        "Average <br> injection rate <br> in 5th year <br> (MM scf/day)"
+      ],
+      "rows": [
+        [
+          1,
+          0,
+          5.0,
+          5.47,
+          5.55,
+          3.81,
+          4.92
+        ],
+        [
+          2,
+          3,
+          0,
+          0,
+          0,
+          0.33,
+          0.25
+        ],
+        [
+          3,
+          3,
+          0,
+          0,
+          0,
+          1.95,
+          1.51
+        ],
+        [
+          4,
+          0,
+          3.69,
+          4.06,
+          4.14,
+          2.37,
+          3.32
+        ],
+        [
+          "Sum",
+          "",
+          8.69,
+          9.53,
+          9.69,
+          8.46,
+          10
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    }
+  ]
+}

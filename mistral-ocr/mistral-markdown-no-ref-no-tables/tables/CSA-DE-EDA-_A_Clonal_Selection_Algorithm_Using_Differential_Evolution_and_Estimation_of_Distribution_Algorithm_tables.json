@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/CSA-DE-EDA- A Clonal Selection Algorithm Using Differential Evolution and Estimation of Distribution Algorithm.md",
+    "filename": "CSA-DE-EDA- A Clonal Selection Algorithm Using Differential Evolution and Estimation of Distribution Algorithm.md",
+    "title": "CSA-DE-EDA- A Clonal Selection Algorithm Using Differential Evolution and Estimation of Distribution Algorithm",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The CSA-DE/EDA algorithm.",
+      "headers": [
+        "Line",
+        "Pseudo code of CSA-DE/EDA"
+      ],
+      "rows": [
+        [
+          1,
+          "Initialization: Randomly generate N antibodies $\\boldsymbol{A} \\boldsymbol{b}^{\\mathbf{0}}(k=0)$"
+        ],
+        [
+          2,
+          "while the stopping criterion is not met"
+        ],
+        [
+          3,
+          "Evaluate the vector $\\boldsymbol{f}^{\\boldsymbol{k}}$"
+        ],
+        [
+          4,
+          "Select $\\boldsymbol{A} \\boldsymbol{b}_{\\{\\boldsymbol{n}\\}}^{k}$"
+        ],
+        [
+          5,
+          "Select $\\boldsymbol{A} \\boldsymbol{b}_{\\{\\boldsymbol{M}\\}}^{k}$"
+        ],
+        [
+          6,
+          "Clone $\\boldsymbol{A} \\boldsymbol{b}_{\\{\\boldsymbol{n}\\}}^{k} \\rightarrow \\boldsymbol{C}^{\\boldsymbol{k}}$"
+        ],
+        [
+          7,
+          "DE-based hypermutation $\\boldsymbol{C}^{\\boldsymbol{k}} \\rightarrow \\boldsymbol{C}^{* \\boldsymbol{k}}$"
+        ],
+        [
+          8,
+          "Reselect from $\\boldsymbol{C}^{* \\boldsymbol{k}}$ to obtain $\\boldsymbol{A} \\boldsymbol{b}^{\\boldsymbol{k}+1}$"
+        ],
+        [
+          9,
+          "EDA-based receptor editing to replace the $r * N$ lowest affinity anti-"
+        ],
+        [
+          10,
+          "bodies from $\\boldsymbol{A} \\boldsymbol{b}^{\\boldsymbol{k}+1}$"
+        ],
+        [
+          "",
+          "end"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Average segmentation accuracy of six algorithms on the IBSR_V2.0 dataset.",
+      "headers": [
+        "Accuracy",
+        "FSL",
+        "D-C",
+        "SPM",
+        "GA-EM",
+        "HMRF-CSA",
+        "HMRF-CSA/DE/EDA"
+      ],
+      "rows": [
+        [
+          "Overall",
+          "$75.06 \\%$",
+          "$75.02 \\%$",
+          "$81.02 \\%$",
+          "$74.97 \\%$",
+          "$82.95 \\%$",
+          "$\\mathbf{8 9 . 9 0 \\%}$"
+        ],
+        [
+          "GM",
+          "$77.35 \\%$",
+          "$73.80 \\%$",
+          "$84.42 \\%$",
+          "$77.90 \\%$",
+          "$84.92 \\%$",
+          "$\\mathbf{9 2 . 0 2 \\%}$"
+        ],
+        [
+          "WM",
+          "$87.08 \\%$",
+          "$\\mathbf{8 8 . 4 1 \\%}$",
+          "$87.38 \\%$",
+          "$87.23 \\%$",
+          "$83.88 \\%$",
+          "$87.52 \\%$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Average accuracy and time cost of PHMRF-CSA/DE/EDA and HMRF-CSA/DE/EDA",
+      "headers": [
+        "",
+        "Accuracy",
+        "GM",
+        "WM",
+        "Time"
+      ],
+      "rows": [
+        [
+          "HMRF-CSA/DE/EDA",
+          "$\\mathbf{8 9 . 9 0 \\%}$",
+          "$\\mathbf{9 2 . 0 2 \\%}$",
+          "$\\mathbf{8 7 . 5 2 \\%}$",
+          "$\\mathbf{1 5 1 0} \\mathbf{~ s}$"
+        ],
+        [
+          "PHMRF-CSA/DE/EDA",
+          "$85.09 \\%$",
+          "$86.85 \\%$",
+          "$86.66 \\%$",
+          2164
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    }
+  ]
+}

@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2013/Regularized continuous estimation of distribution algorithms.md",
+    "filename": "Regularized continuous estimation of distribution algorithms.md",
+    "title": "Regularized continuous estimation of distribution algorithms",
+    "year": "2013"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions I. B inary parameters, in: H.-M. Voigt, W. Ebeling, I. Rechenberger, H.-P. Schwefel (Eds.), Proceedings of the Fourth International Conference on Parallel Problem Solving from Nature (PPSN IV), vol. 114 of Lecture Notes in Computer Science, Springer, 1996, pp. 178-187.\n[2] P. Larrañaga, J. Lozano (Eds.), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Norwell, MA, USA, 2001.\n[3] J. Lozano, P. Larrañaga, I. Inza, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, vol. 192 of Studies in Fuzziness and Soft Computing, Springer, Secaucus, NJ, USA, 2006.\n[4] M. Pelikan, K. Sastry, E. Camó-Paz (Eds.), Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, Studies in Computational Intelligence, Springer, Secaucus, NJ, USA, 2006.\n[5] I. Segovia-Domínguez, A. Hernández-Aguirre, E. Villa-Diñarce, The Gaussian polytree EDA for global optimization, in: Proceedings of the 13th Annual Conference Companion on Genetic and Evolutionary Computation (GECCO'11), ACM, New York, NY, USA, 2011, pp. 69-70.\n[6] P. Larrañaga, H. Karshenas, C. Bielza, R. Santana, A review on probabilistic graphical models in evolutionary computation, Journal of Heuristics 18 (5) (2012) 795-819.\n[7] I. Inza, P. Larrañaga, R. Etxeberria, R. Sierra, Feature subset selection by Bayesian network-based optimization, Artificial Intelligence 123 (1-2) (2000) 157-184.\n[8] I. Inza, P. Larrañaga, B. Sierra, Feature subset selection by Bayesian networks: a comparison with genetic and sequential algorithms, International Journal of Approximate Reasoning 27 (2) (2001) 143-164.\n[9] R. Armañanzas, I. Inza, R. Santana, Y. Saeys, J. Flores, J. Lozano, Y. Van de Peer, R. Blanco, V. Robles, C. Bielza, P. Larrañaga, A review of estimation of distribution algorithms in bioinformatics, BioData Mining 1 (6) (2008), http://dx.doi.org/10.1186/1756-0381-1-6.\n[10] R. Santana, A. Mendilnuru, N. Zaitlen, E. Eskin, J.A. Lozano, Multi-marker tagging single nucleotide polymorphism selection using estimation of distribution algorithms, Artificial Intelligence in Medicine 50 (3) (2010) 193-201.\n[11] R. Armañanzas, Y. Saeys, I. Inza, M. Garcia-Torres, C. Bielza, Y. van de Peer, P. Larrañaga, Peakbin selection in mass spectrometry data using a consensus approach with estimation of distribution algorithms, IEEE/ACM Transactions on Computational Biology and Bioinformatics 8 (3) (2011) 760-774.\n[12] Y. Zhang, X. Li, Estimation of distribution algorithm for permutation flow shops with total flowtime minimization, Computers \\& Industrial Engineering 60 (4) (2011) $706-718$.\n[13] L. Wang, C. Fang, An effective estimation of distribution algorithm for the multi-mode resource-constrained project scheduling problem, Computers \\& Operations Research 39 (2) (2012) 449-460.\n[14] S.-H. Chen, M.-C. Chen, Addressing the advantages of using ensemble probabilistic models in estimation of distribution algorithms for scheduling problems, International Journal of Production Economics 141 (1)(2013) 24-33.\n[15] J. Sun, Q. Zhang, J. Li, X. Yao, A hybrid estimation of distribution algorithm for CDMA cellular system design, International Journal of Computational Intelligence and Applications 7 (2) (2008) 187-200.\n[16] S. Jiang, X. Ziver, J. Carter, C. Pain, A. Goddard, S. Franklin, H. Phillips, Estimation of distribution algorithms for nuclear reactor fuel management optimisation, Annals of Nuclear Energy 33 (11-12) (2006) 1039-1057.\n\n[17] R. Santana, P. Larrañaga, J.A. Lozano, Side chain placement using estimation of distribution algorithms, Artificial Intelligence in Medicine 39 (1) (2007) 49-63.\n[18] R. Santana, P. Larrañaga, J. Lozano, Protein folding in simplified models with estimation of distribution algorithms, IEEE Transactions on Evolutionary Computation 12 (4) (2008) 418-438.\n[19] R. Sagarna, J.A. Lozano, Scatter search in software testing, comparison and collaboration with estimation of distribution algorithms, European Journal of Operational Research 169 (2) (2006) 392-412.\n[20] L. Grosset, R. LeRiche, R. Haftka, A double-distribution statistical algorithm for composite laminate optimization, Structural and Multidisciplinary Optimization 31 (2006) 49-59.\n[21] H. Mühlenbein, T. Mahnig, A. Ochsa Rodríguez, Schemata, distributions and graphical models in evolutionary optimization, Journal of Heuristics 5 (2) (1999) 215-247.\n[22] M. Pelikan, E. Cantú-Paz, D.E. Goldberg, Bayesian optimization algorithm, population sizing, and time to convergence, in: L.D. Whitley, D.E. Goldberg, E. Cantú-Paz, L. Spector, I.C. Parmee, H.-G. Beyer (Eds.), Proceedings of the Conference on Genetic and Evolutionary Computation (GECCO'09), Morgan Kaufmann, 2000, pp. 275-282.\n[23] C. González, J. Lozano, P. Larrañaga, Mathematical modelling of UMDAs: algorithm with tournament selection: behaviour on linear and quadratic functions, International Journal of Approximate Reasoning 31 (3) (2002) 313-340.\n[24] Q. Zhang, H. Mühlenbein, On the convergence of a class of estimation of distribution algorithms, IEEE Transactions on Evolutionary Computation 8 (2) (2004) $127-136$.\n[25] J. Grahl, S. Minner, F. Rothlauf, Behaviour of UMDA, with truncation selection on monotonous functions, in: Proceedings of the IEEE Congress on Evolutionary Computation (CEC'05), vol. 3, 2005, pp. 2553-2559.\n[26] B. Yuan, M. Gallagher, Convergence analysis of UMDA ${ }_{E}$ with finite populations: a case study on flat landscapes, in: F. Rothlauf (Ed.), Proceedings of the 11th Annual Conference on Genetic and Evolutionary Computation(GECCO'09), ACM, New York, NY, USA, 2009, pp. 477-482.\n[27] P.A.N. Bosman, J. Grahl, Matching inductive search bias and problem structure in continuous estimation of distribution algorithms, European Journal of Operational Research 185 (3) (2008) 1246-1264.\n[28] M. Sehag, A. Ducoulombier, Extending population-based incremental learning to continuous search spaces, in: A. Eiben, T. Bäck, M. Schoenauer, H.-P. Schwefel (Eds.), Proceedings of the Fifth International Conference on Parallel Problem Solving from Nature (PPSN VI), vol. 1498 of Lecture Notes in Computer Science, Springer, London, UK, 1998, pp. 418-427.\n[29] P.A.N. Bosman, D. Thierens, Expanding from discrete to continuous estimation of distribution algorithms: the IDEA, in: M. Schoenauer, K. Deb, G. Rudolph, X. Yao, E. Lutton, J.J.M. Guervés, H.-P. Schwefel (Eds.), Proceedings of the Sixth International Conference on Parallel Problem Solving from Nature (PPSN VI), vol. 1917 of Lecture Notes in Computer Science, Springer-Verlag, London, UK, 2000, pp. 767-776.\n[30] P. Larrañaga, R. Etxeberria, J. Lozano, J. Peña, Optimization in continuous domain by learning and simulation of Gaussian networks, in: A. Wu (Ed.), Proceedings of the Workshop on Optimization by Building and Using Probabilistic Models (OBUPM), Conference on Genetic and Evolutionary Computation (GECCO'09), Morgan Kaufmann, 2000, pp. 201-204.\n[31] C. Ahn, R. Ramakrishna, D. Goldberg, Real-coded Bayesian optimization algorithm: bringing the strength of BOA into the continuous world, in: K. Deb, R. Poli, W. Banzhaf, H.-G. Beyer, E. Burke, P. Darwen, D. Dasgupta, D. Floreano, J. Foster, M. Harman, O. Holland, P.L. Lanzi, L. Spector, A. Tettamanzi, D. Thierens, A. Tyrrell (Eds.), Proceedings of the Sixth Annual Conference on Genetic and Evolutionary Computation (GECCO'04), vol. 3102 of Lecture Notes in Computer Science, Springer, 2004, pp. 840-851.\n[32] B. Yuan, M. Gallagher, On the importance of diversity maintenance in estimation of distribution algorithms, in: H.-G. Beyer, U.-M. O'Reilly (Eds.), Proceedings of the Sixth Annual Conference on Genetic and Evolutionary Computation (GECCO'05), ACM, New York, NY, USA, 2005, pp. 719726 .\n[33] P.A.N. Bosman, D. Thierens, Adaptive variance scaling in continuous multiobjective estimation of distribution algorithms, in: H. Lipson (Ed.), Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation (GECCO'07), ACM, New York, NY, USA, 2007, pp. 500-507.\n[34] P. Polik, Preventing premature convergenc in a simple EDA via global step size setting, in: G. Rudolph, T. Jansen, S. Lucas, C. Poloni, N. Beume (Eds.), Proceedings of the 10th International Conference on Parallel Problem Solving from Nature (PPSN X), vol. 5199 of Lecture Notes in Computer Science, Springer, Berlin, 2008, pp. 549-558.\n[35] M. Wagoner, A. Auger, M. Schoenauer, EEDA: a new robust estimation of distribution algorithm, Tech. Rep. 5190, Institut National de Recherche en Informatique et en Automatique (INRIA), Recquencourt, France, 2004.\n[36] W. Dong, X. Yao, Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms, Information Sciences 178 (15) (2008) $3000-3023$.\n[37] H. Zou, T. Hastie, Regularization and variable selection via the elastic net, Journal of the Royal Statistical Society, Series B (Methodological) 67 (2) (2005) $301-320$.\n[38] N. Meinshausen, P. Bühlmann, High-dimensional graphs and variable selection with the LASSO, Annals of Statistics 34 (3) (2006) 1436-1462.\n[39] T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning: Data Mining, Inference, and Prediction, Springer Series in Statistics, second ed., Springer, New York, 2009.\n[40] J. Friedman, T. Hastie, R. Tibshirani, Regularization paths for generalized linear models via coordinate descent, Journal of Statistical Software 33 (1) (2010) $1-22$.\n[41] C. Stein, Inadmissibility to the usual estimator for the mean of a multivariate normal distribution, in: J. Neyman (Ed.), Proceedings of the Third Berkeley Symposium on Mathematical Statistics and Probability, vol. 1, University of California Press, 1956, pp. 197-206.\n[42] B. Efron, Maximum likelihood and decision theory, Annals of Statistics 10 (2) (1982) $340-356$.\n[43] J. Yang, H. Xu, Y. Cai, P. Jia, Effective structure learning for EDA via l1-regularized Bayesian networks, in: M. Pelikan, J. Branke (Eds.), Proceedings of the 12th Annual Conference on Genetic and Evolutionary Computation (GECCO'10), ACM, New York, NY, USA, 2010, pp. 327-334.\n[44] M. Pelikan, D.E. Goldberg, E. Cantú-Paz, BOA The Bayesian optimization algorithm, in: W. Banzhaf, J. Luida, A.E. Eiben, M.H. Garzon, V. Honavar, M. Jakiela, R.E. Smith (Eds.), Proceedings of the Conference on Genetic and Evolutionary Computation (GECCO'09), vol. 1, Morgan Kaufmann Publishers, Orlando, FL, USA, 1999, pp. 525-532.\n[45] M. Luigi, M. Matteos, V. Gabriele, Introducing $\\ell_{1}$-regularized logistic regression in Markov networks based EDAs, in: Proceedings of the IEEE Congress on Evolutionary Computation (CEC'11), 2011, pp. 15811588.\n[46] S. Shakya, DEUM: a framework for an estimation of distribution algorithm based on Markov random fields, Ph.D. Thesis, Robert Gordon University, 2006.\n[47] H. Karshenas, R. Santana, C. Biefza, P., Larrañaga, Regularized model learning in estimation of distribution algorithms for continuous optimization problems, Tech. Rep. UPM-F(20A/2011-1, Computational Intelligence Group, School of Computer Science, Technical University of Madrid, Madrid, Spain, 2011.\n[48] M. Bilodeau, D. Brenner, Theory of Multivariate Statistics, Springer-Verlag, 1999.\n[49] J. Schäfer, K. Strimmer, A shrinkage approach to large-scale covariance matrix estimation and implications for functional genomics, Statistical Applications in Genetics and Molecular Biology 4 (1) (2005), http://dx.doi.org/10.2202/1544-0115.1175.\n[50] A.E. Hoert, R.W. Kennan, Ridge regression: applications to nonorthogonal problems, Technometrics 12 (1) (1970) 69-82.\n[51] R. Tibshirani, Regression shrinkage and selection via the LASSO, Journal of the Royal Statistical Society, Series B (Methodological) 58 (1) (1996) 267288.\n[52] O. Ledoit, M. Wolf, A well-conditioned estimator for large-dimensional covariance matrices, Journal of Multivariate Analysis 88 (2) (2004) 365411.\n[53] B. Efron, T. Hastie, I. Johnstone, R. Tibshirani, Least angle regression, The Annals of Statistics 21 (2) (2004) 407-451.\n[54] T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning, Springer Series in Statistics, Springer-Verlag, New York, 2001.\n[55] M. Schmidt, A. Nicolesco-Mizil, K. Murphy, Learning graphical model structure using 11-regularization paths, in: Proceedings of the 22nd National Conference on Artificial Intelligence (AAAI'07), vol. 2, AAAI Press, 2007, pp. 12781283.\n[56] D. Vidaurre, C. Biefza, P. Larrañaga, Learning an $\\hat{\\mathrm{t}}_{\\mathrm{r}}$-regularized Gaussian Bayesian network in the equivalence class space, IEEE Transactions on Systems, Man and Cybernetics, Part B: Cybernetics 40 (2010) 12311242.\n[57] J. Friedman, T. Hastie, R. Tibshirani, Sparse inverse covariance estimation with the graphical LASSO, Biostatistics 9 (3) (2008) 432-441.\n[58] C.L. Mallows, Some comments on $\\mathrm{C}_{\\mathrm{P}}$, Technometrics 15 (4) (1973) 661675.\n[59] H. Akaike, A new look at the statistical model identification, IEEE Transactions on Automatic Control 19 (6) (1974) 716-723.\n[60] G. Schwarz, Estimating the dimension of a model, Annals of Statistics 6 (2) (1978) 461-464.\n[61] S.L. Lauritzen, Graphical Models, vol. 17 of Oxford Statistical Science Series, Clarendon Press, Oxford, 1996.\n[62] D. Heckerman, D.M. Chickering, C. Meek, R. Rounthwaite, C. Kadie, Dependency networks for inference, collaborative filtering, and data visualization, Journal of Machine Learning Research 1 (2001) 49-75.\n[63] S. Chaudhuri, M. Drton, T.S. Richardson, Estimation of a covariance matrix with zeros, Biometrika 94 (1) (2007) 199-216.\n[64] J. Bien, R.J. Tibshirani, Sparse estimation of a covariance matrix, Biometrika 98 (4) (2011) 807-820.\n[65] W. Buntiner, Theory refinement on Bayesian networks, in: B. D'Ambrosio, P. Smets (Eds.), Proceedings of the 7th Annual Conference on Uncertainty in Artificial Intelligence (UAI'91), Morgan Kaufmann, San Francisco, CA, USA, 1991, pp. 52-60.\n[66] M. Henrion, Propagating uncertainty in Bayesian networks by probabilistic logic sampling, in: J.F. Lemmer, L.N. Kanal (Eds.), Proceedings of the Second Annual Conference on Uncertainty in Artificial Intelligence (UAI'86), vol. 2, Elsevier, 1986, pp. 149-163.\n[67] S. Kullback, R.A. Leibler, On information and sufficiency, Annals of Mathematical Statistics 22 (1) (1951) 79-86.\n[68] L. Le Cam, G. Lo Yang, Asymptotics in Statistics: Some Basic Concepts. Springer Series in Statistics, second ed., Springer, 2000.\n[69] N. Hansen, The CMA evolution strategy: a comparing review, in: Lozano et al. [3], pp. $75-102$.\n\n[70] R. Santana, C. Bielza, P. Larrañaga, J.A. Lozano, C. Echegoyen, A. Mendiburu, R. Armañanzas, S. Shakya, Mateda-2.0: estimation of distribution algorithms in MATLAB, Journal of Statistical Software 35 (7) (2010) 1-30.\n[71] J. Derrac, S. García, D. Molina, F. Herrera, A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary and swarm intelligence algorithms, Swarm and Evolutionary Computation 1 (1) (2011) $3-18$.\n[72] C. Bielza, V. Robles, P. Larrañaga, Estimation of distribution algorithms as logistic regression regularizers of microarray classifiers, Methods of Information in Medicine 16 (2008) 345-366.\n[73] E. Bengoetxea, P. Larrañaga, C. Bielza, J. Fernández del Pozo, Optimal row and column ordering to improve table interpretation using estimation of distribution algorithms, Journal of Heuristics 17 (5) (2011) $567-588$.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions I. B inary parameters, in: H.-M. Voigt, W. Ebeling, I. Rechenberger, H.-P. Schwefel (Eds.), Proceedings of the Fourth International Conference on Parallel Problem Solving from Nature (PPSN IV), vol. 114 of Lecture Notes in Computer Science, Springer, 1996, pp. 178-187."
+      },
+      {
+        "ref_id": "2",
+        "text": "P. Larrañaga, J. Lozano (Eds.), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Norwell, MA, USA, 2001."
+      },
+      {
+        "ref_id": "3",
+        "text": "J. Lozano, P. Larrañaga, I. Inza, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, vol. 192 of Studies in Fuzziness and Soft Computing, Springer, Secaucus, NJ, USA, 2006."
+      },
+      {
+        "ref_id": "4",
+        "text": "M. Pelikan, K. Sastry, E. Camó-Paz (Eds.), Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, Studies in Computational Intelligence, Springer, Secaucus, NJ, USA, 2006."
+      },
+      {
+        "ref_id": "5",
+        "text": "I. Segovia-Domínguez, A. Hernández-Aguirre, E. Villa-Diñarce, The Gaussian polytree EDA for global optimization, in: Proceedings of the 13th Annual Conference Companion on Genetic and Evolutionary Computation (GECCO'11), ACM, New York, NY, USA, 2011, pp. 69-70."
+      },
+      {
+        "ref_id": "6",
+        "text": "P. Larrañaga, H. Karshenas, C. Bielza, R. Santana, A review on probabilistic graphical models in evolutionary computation, Journal of Heuristics 18 (5) (2012) 795-819."
+      },
+      {
+        "ref_id": "7",
+        "text": "I. Inza, P. Larrañaga, R. Etxeberria, R. Sierra, Feature subset selection by Bayesian network-based optimization, Artificial Intelligence 123 (1-2) (2000) 157-184."
+      },
+      {
+        "ref_id": "8",
+        "text": "I. Inza, P. Larrañaga, B. Sierra, Feature subset selection by Bayesian networks: a comparison with genetic and sequential algorithms, International Journal of Approximate Reasoning 27 (2) (2001) 143-164."
+      },
+      {
+        "ref_id": "9",
+        "text": "R. Armañanzas, I. Inza, R. Santana, Y. Saeys, J. Flores, J. Lozano, Y. Van de Peer, R. Blanco, V. Robles, C. Bielza, P. Larrañaga, A review of estimation of distribution algorithms in bioinformatics, BioData Mining 1 (6) (2008), http://dx.doi.org/10.1186/1756-0381-1-6."
+      },
+      {
+        "ref_id": "10",
+        "text": "R. Santana, A. Mendilnuru, N. Zaitlen, E. Eskin, J.A. Lozano, Multi-marker tagging single nucleotide polymorphism selection using estimation of distribution algorithms, Artificial Intelligence in Medicine 50 (3) (2010) 193-201."
+      },
+      {
+        "ref_id": "11",
+        "text": "R. Armañanzas, Y. Saeys, I. Inza, M. Garcia-Torres, C. Bielza, Y. van de Peer, P. Larrañaga, Peakbin selection in mass spectrometry data using a consensus approach with estimation of distribution algorithms, IEEE/ACM Transactions on Computational Biology and Bioinformatics 8 (3) (2011) 760-774."
+      },
+      {
+        "ref_id": "12",
+        "text": "Y. Zhang, X. Li, Estimation of distribution algorithm for permutation flow shops with total flowtime minimization, Computers \\& Industrial Engineering 60 (4) (2011) $706-718$."
+      },
+      {
+        "ref_id": "13",
+        "text": "L. Wang, C. Fang, An effective estimation of distribution algorithm for the multi-mode resource-constrained project scheduling problem, Computers \\& Operations Research 39 (2) (2012) 449-460."
+      },
+      {
+        "ref_id": "14",
+        "text": "S.-H. Chen, M.-C. Chen, Addressing the advantages of using ensemble probabilistic models in estimation of distribution algorithms for scheduling problems, International Journal of Production Economics 141 (1)(2013) 24-33."
+      },
+      {
+        "ref_id": "15",
+        "text": "J. Sun, Q. Zhang, J. Li, X. Yao, A hybrid estimation of distribution algorithm for CDMA cellular system design, International Journal of Computational Intelligence and Applications 7 (2) (2008) 187-200."
+      },
+      {
+        "ref_id": "16",
+        "text": "S. Jiang, X. Ziver, J. Carter, C. Pain, A. Goddard, S. Franklin, H. Phillips, Estimation of distribution algorithms for nuclear reactor fuel management optimisation, Annals of Nuclear Energy 33 (11-12) (2006) 1039-1057."
+      },
+      {
+        "ref_id": "17",
+        "text": "R. Santana, P. Larrañaga, J.A. Lozano, Side chain placement using estimation of distribution algorithms, Artificial Intelligence in Medicine 39 (1) (2007) 49-63."
+      },
+      {
+        "ref_id": "18",
+        "text": "R. Santana, P. Larrañaga, J. Lozano, Protein folding in simplified models with estimation of distribution algorithms, IEEE Transactions on Evolutionary Computation 12 (4) (2008) 418-438."
+      },
+      {
+        "ref_id": "19",
+        "text": "R. Sagarna, J.A. Lozano, Scatter search in software testing, comparison and collaboration with estimation of distribution algorithms, European Journal of Operational Research 169 (2) (2006) 392-412."
+      },
+      {
+        "ref_id": "20",
+        "text": "L. Grosset, R. LeRiche, R. Haftka, A double-distribution statistical algorithm for composite laminate optimization, Structural and Multidisciplinary Optimization 31 (2006) 49-59."
+      },
+      {
+        "ref_id": "21",
+        "text": "H. Mühlenbein, T. Mahnig, A. Ochsa Rodríguez, Schemata, distributions and graphical models in evolutionary optimization, Journal of Heuristics 5 (2) (1999) 215-247."
+      },
+      {
+        "ref_id": "22",
+        "text": "M. Pelikan, E. Cantú-Paz, D.E. Goldberg, Bayesian optimization algorithm, population sizing, and time to convergence, in: L.D. Whitley, D.E. Goldberg, E. Cantú-Paz, L. Spector, I.C. Parmee, H.-G. Beyer (Eds.), Proceedings of the Conference on Genetic and Evolutionary Computation (GECCO'09), Morgan Kaufmann, 2000, pp. 275-282."
+      },
+      {
+        "ref_id": "23",
+        "text": "C. González, J. Lozano, P. Larrañaga, Mathematical modelling of UMDAs: algorithm with tournament selection: behaviour on linear and quadratic functions, International Journal of Approximate Reasoning 31 (3) (2002) 313-340."
+      },
+      {
+        "ref_id": "24",
+        "text": "Q. Zhang, H. Mühlenbein, On the convergence of a class of estimation of distribution algorithms, IEEE Transactions on Evolutionary Computation 8 (2) (2004) $127-136$."
+      },
+      {
+        "ref_id": "25",
+        "text": "J. Grahl, S. Minner, F. Rothlauf, Behaviour of UMDA, with truncation selection on monotonous functions, in: Proceedings of the IEEE Congress on Evolutionary Computation (CEC'05), vol. 3, 2005, pp. 2553-2559."
+      },
+      {
+        "ref_id": "26",
+        "text": "B. Yuan, M. Gallagher, Convergence analysis of UMDA ${ }_{E}$ with finite populations: a case study on flat landscapes, in: F. Rothlauf (Ed.), Proceedings of the 11th Annual Conference on Genetic and Evolutionary Computation(GECCO'09), ACM, New York, NY, USA, 2009, pp. 477-482."
+      },
+      {
+        "ref_id": "27",
+        "text": "P.A.N. Bosman, J. Grahl, Matching inductive search bias and problem structure in continuous estimation of distribution algorithms, European Journal of Operational Research 185 (3) (2008) 1246-1264."
+      },
+      {
+        "ref_id": "28",
+        "text": "M. Sehag, A. Ducoulombier, Extending population-based incremental learning to continuous search spaces, in: A. Eiben, T. Bäck, M. Schoenauer, H.-P. Schwefel (Eds.), Proceedings of the Fifth International Conference on Parallel Problem Solving from Nature (PPSN VI), vol. 1498 of Lecture Notes in Computer Science, Springer, London, UK, 1998, pp. 418-427."
+      },
+      {
+        "ref_id": "29",
+        "text": "P.A.N. Bosman, D. Thierens, Expanding from discrete to continuous estimation of distribution algorithms: the IDEA, in: M. Schoenauer, K. Deb, G. Rudolph, X. Yao, E. Lutton, J.J.M. Guervés, H.-P. Schwefel (Eds.), Proceedings of the Sixth International Conference on Parallel Problem Solving from Nature (PPSN VI), vol. 1917 of Lecture Notes in Computer Science, Springer-Verlag, London, UK, 2000, pp. 767-776."
+      },
+      {
+        "ref_id": "30",
+        "text": "P. Larrañaga, R. Etxeberria, J. Lozano, J. Peña, Optimization in continuous domain by learning and simulation of Gaussian networks, in: A. Wu (Ed.), Proceedings of the Workshop on Optimization by Building and Using Probabilistic Models (OBUPM), Conference on Genetic and Evolutionary Computation (GECCO'09), Morgan Kaufmann, 2000, pp. 201-204."
+      },
+      {
+        "ref_id": "31",
+        "text": "C. Ahn, R. Ramakrishna, D. Goldberg, Real-coded Bayesian optimization algorithm: bringing the strength of BOA into the continuous world, in: K. Deb, R. Poli, W. Banzhaf, H.-G. Beyer, E. Burke, P. Darwen, D. Dasgupta, D. Floreano, J. Foster, M. Harman, O. Holland, P.L. Lanzi, L. Spector, A. Tettamanzi, D. Thierens, A. Tyrrell (Eds.), Proceedings of the Sixth Annual Conference on Genetic and Evolutionary Computation (GECCO'04), vol. 3102 of Lecture Notes in Computer Science, Springer, 2004, pp. 840-851."
+      },
+      {
+        "ref_id": "32",
+        "text": "B. Yuan, M. Gallagher, On the importance of diversity maintenance in estimation of distribution algorithms, in: H.-G. Beyer, U.-M. O'Reilly (Eds.), Proceedings of the Sixth Annual Conference on Genetic and Evolutionary Computation (GECCO'05), ACM, New York, NY, USA, 2005, pp. 719726 ."
+      },
+      {
+        "ref_id": "33",
+        "text": "P.A.N. Bosman, D. Thierens, Adaptive variance scaling in continuous multiobjective estimation of distribution algorithms, in: H. Lipson (Ed.), Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation (GECCO'07), ACM, New York, NY, USA, 2007, pp. 500-507."
+      },
+      {
+        "ref_id": "34",
+        "text": "P. Polik, Preventing premature convergenc in a simple EDA via global step size setting, in: G. Rudolph, T. Jansen, S. Lucas, C. Poloni, N. Beume (Eds.), Proceedings of the 10th International Conference on Parallel Problem Solving from Nature (PPSN X), vol. 5199 of Lecture Notes in Computer Science, Springer, Berlin, 2008, pp. 549-558."
+      },
+      {
+        "ref_id": "35",
+        "text": "M. Wagoner, A. Auger, M. Schoenauer, EEDA: a new robust estimation of distribution algorithm, Tech. Rep. 5190, Institut National de Recherche en Informatique et en Automatique (INRIA), Recquencourt, France, 2004."
+      },
+      {
+        "ref_id": "36",
+        "text": "W. Dong, X. Yao, Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms, Information Sciences 178 (15) (2008) $3000-3023$."
+      },
+      {
+        "ref_id": "37",
+        "text": "H. Zou, T. Hastie, Regularization and variable selection via the elastic net, Journal of the Royal Statistical Society, Series B (Methodological) 67 (2) (2005) $301-320$."
+      },
+      {
+        "ref_id": "38",
+        "text": "N. Meinshausen, P. Bühlmann, High-dimensional graphs and variable selection with the LASSO, Annals of Statistics 34 (3) (2006) 1436-1462."
+      },
+      {
+        "ref_id": "39",
+        "text": "T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning: Data Mining, Inference, and Prediction, Springer Series in Statistics, second ed., Springer, New York, 2009."
+      },
+      {
+        "ref_id": "40",
+        "text": "J. Friedman, T. Hastie, R. Tibshirani, Regularization paths for generalized linear models via coordinate descent, Journal of Statistical Software 33 (1) (2010) $1-22$."
+      },
+      {
+        "ref_id": "41",
+        "text": "C. Stein, Inadmissibility to the usual estimator for the mean of a multivariate normal distribution, in: J. Neyman (Ed.), Proceedings of the Third Berkeley Symposium on Mathematical Statistics and Probability, vol. 1, University of California Press, 1956, pp. 197-206."
+      },
+      {
+        "ref_id": "42",
+        "text": "B. Efron, Maximum likelihood and decision theory, Annals of Statistics 10 (2) (1982) $340-356$."
+      },
+      {
+        "ref_id": "43",
+        "text": "J. Yang, H. Xu, Y. Cai, P. Jia, Effective structure learning for EDA via l1-regularized Bayesian networks, in: M. Pelikan, J. Branke (Eds.), Proceedings of the 12th Annual Conference on Genetic and Evolutionary Computation (GECCO'10), ACM, New York, NY, USA, 2010, pp. 327-334."
+      },
+      {
+        "ref_id": "44",
+        "text": "M. Pelikan, D.E. Goldberg, E. Cantú-Paz, BOA The Bayesian optimization algorithm, in: W. Banzhaf, J. Luida, A.E. Eiben, M.H. Garzon, V. Honavar, M. Jakiela, R.E. Smith (Eds.), Proceedings of the Conference on Genetic and Evolutionary Computation (GECCO'09), vol. 1, Morgan Kaufmann Publishers, Orlando, FL, USA, 1999, pp. 525-532."
+      },
+      {
+        "ref_id": "45",
+        "text": "M. Luigi, M. Matteos, V. Gabriele, Introducing $\\ell_{1}$-regularized logistic regression in Markov networks based EDAs, in: Proceedings of the IEEE Congress on Evolutionary Computation (CEC'11), 2011, pp. 15811588."
+      },
+      {
+        "ref_id": "46",
+        "text": "S. Shakya, DEUM: a framework for an estimation of distribution algorithm based on Markov random fields, Ph.D. Thesis, Robert Gordon University, 2006."
+      },
+      {
+        "ref_id": "47",
+        "text": "H. Karshenas, R. Santana, C. Biefza, P., Larrañaga, Regularized model learning in estimation of distribution algorithms for continuous optimization problems, Tech. Rep. UPM-F(20A/2011-1, Computational Intelligence Group, School of Computer Science, Technical University of Madrid, Madrid, Spain, 2011."
+      },
+      {
+        "ref_id": "48",
+        "text": "M. Bilodeau, D. Brenner, Theory of Multivariate Statistics, Springer-Verlag, 1999."
+      },
+      {
+        "ref_id": "49",
+        "text": "J. Schäfer, K. Strimmer, A shrinkage approach to large-scale covariance matrix estimation and implications for functional genomics, Statistical Applications in Genetics and Molecular Biology 4 (1) (2005), http://dx.doi.org/10.2202/1544-0115.1175."
+      },
+      {
+        "ref_id": "50",
+        "text": "A.E. Hoert, R.W. Kennan, Ridge regression: applications to nonorthogonal problems, Technometrics 12 (1) (1970) 69-82."
+      },
+      {
+        "ref_id": "51",
+        "text": "R. Tibshirani, Regression shrinkage and selection via the LASSO, Journal of the Royal Statistical Society, Series B (Methodological) 58 (1) (1996) 267288."
+      },
+      {
+        "ref_id": "52",
+        "text": "O. Ledoit, M. Wolf, A well-conditioned estimator for large-dimensional covariance matrices, Journal of Multivariate Analysis 88 (2) (2004) 365411."
+      },
+      {
+        "ref_id": "53",
+        "text": "B. Efron, T. Hastie, I. Johnstone, R. Tibshirani, Least angle regression, The Annals of Statistics 21 (2) (2004) 407-451."
+      },
+      {
+        "ref_id": "54",
+        "text": "T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning, Springer Series in Statistics, Springer-Verlag, New York, 2001."
+      },
+      {
+        "ref_id": "55",
+        "text": "M. Schmidt, A. Nicolesco-Mizil, K. Murphy, Learning graphical model structure using 11-regularization paths, in: Proceedings of the 22nd National Conference on Artificial Intelligence (AAAI'07), vol. 2, AAAI Press, 2007, pp. 12781283."
+      },
+      {
+        "ref_id": "56",
+        "text": "D. Vidaurre, C. Biefza, P. Larrañaga, Learning an $\\hat{\\mathrm{t}}_{\\mathrm{r}}$-regularized Gaussian Bayesian network in the equivalence class space, IEEE Transactions on Systems, Man and Cybernetics, Part B: Cybernetics 40 (2010) 12311242."
+      },
+      {
+        "ref_id": "57",
+        "text": "J. Friedman, T. Hastie, R. Tibshirani, Sparse inverse covariance estimation with the graphical LASSO, Biostatistics 9 (3) (2008) 432-441."
+      },
+      {
+        "ref_id": "58",
+        "text": "C.L. Mallows, Some comments on $\\mathrm{C}_{\\mathrm{P}}$, Technometrics 15 (4) (1973) 661675."
+      },
+      {
+        "ref_id": "59",
+        "text": "H. Akaike, A new look at the statistical model identification, IEEE Transactions on Automatic Control 19 (6) (1974) 716-723."
+      },
+      {
+        "ref_id": "60",
+        "text": "G. Schwarz, Estimating the dimension of a model, Annals of Statistics 6 (2) (1978) 461-464."
+      },
+      {
+        "ref_id": "61",
+        "text": "S.L. Lauritzen, Graphical Models, vol. 17 of Oxford Statistical Science Series, Clarendon Press, Oxford, 1996."
+      },
+      {
+        "ref_id": "62",
+        "text": "D. Heckerman, D.M. Chickering, C. Meek, R. Rounthwaite, C. Kadie, Dependency networks for inference, collaborative filtering, and data visualization, Journal of Machine Learning Research 1 (2001) 49-75."
+      },
+      {
+        "ref_id": "63",
+        "text": "S. Chaudhuri, M. Drton, T.S. Richardson, Estimation of a covariance matrix with zeros, Biometrika 94 (1) (2007) 199-216."
+      },
+      {
+        "ref_id": "64",
+        "text": "J. Bien, R.J. Tibshirani, Sparse estimation of a covariance matrix, Biometrika 98 (4) (2011) 807-820."
+      },
+      {
+        "ref_id": "65",
+        "text": "W. Buntiner, Theory refinement on Bayesian networks, in: B. D'Ambrosio, P. Smets (Eds.), Proceedings of the 7th Annual Conference on Uncertainty in Artificial Intelligence (UAI'91), Morgan Kaufmann, San Francisco, CA, USA, 1991, pp. 52-60."
+      },
+      {
+        "ref_id": "66",
+        "text": "M. Henrion, Propagating uncertainty in Bayesian networks by probabilistic logic sampling, in: J.F. Lemmer, L.N. Kanal (Eds.), Proceedings of the Second Annual Conference on Uncertainty in Artificial Intelligence (UAI'86), vol. 2, Elsevier, 1986, pp. 149-163."
+      },
+      {
+        "ref_id": "67",
+        "text": "S. Kullback, R.A. Leibler, On information and sufficiency, Annals of Mathematical Statistics 22 (1) (1951) 79-86."
+      },
+      {
+        "ref_id": "68",
+        "text": "L. Le Cam, G. Lo Yang, Asymptotics in Statistics: Some Basic Concepts. Springer Series in Statistics, second ed., Springer, 2000."
+      },
+      {
+        "ref_id": "69",
+        "text": "N. Hansen, The CMA evolution strategy: a comparing review, in: Lozano et al. [3], pp. $75-102$."
+      },
+      {
+        "ref_id": "70",
+        "text": "R. Santana, C. Bielza, P. Larrañaga, J.A. Lozano, C. Echegoyen, A. Mendiburu, R. Armañanzas, S. Shakya, Mateda-2.0: estimation of distribution algorithms in MATLAB, Journal of Statistical Software 35 (7) (2010) 1-30."
+      },
+      {
+        "ref_id": "71",
+        "text": "J. Derrac, S. García, D. Molina, F. Herrera, A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary and swarm intelligence algorithms, Swarm and Evolutionary Computation 1 (1) (2011) $3-18$."
+      },
+      {
+        "ref_id": "72",
+        "text": "C. Bielza, V. Robles, P. Larrañaga, Estimation of distribution algorithms as logistic regression regularizers of microarray classifiers, Methods of Information in Medicine 16 (2008) 345-366."
+      },
+      {
+        "ref_id": "73",
+        "text": "E. Bengoetxea, P. Larrañaga, C. Bielza, J. Fernández del Pozo, Optimal row and column ordering to improve table interpretation using estimation of distribution algorithms, Journal of Heuristics 17 (5) (2011) $567-588$."
+      }
+    ],
+    "reference_count": 73,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Synthesized Gaussian distributions used as reference models.",
+      "headers": [
+        "Name",
+        "Block size",
+        "No. blocks",
+        "No. dependencies",
+        "No. independencies"
+      ],
+      "rows": [
+        [
+          "Uni",
+          1,
+          100,
+          0,
+          10000
+        ],
+        [
+          "Bi",
+          2,
+          50,
+          100,
+          9900
+        ],
+        [
+          "Tri",
+          3,
+          33,
+          198,
+          9603
+        ],
+        [
+          "Quad",
+          4,
+          25,
+          300,
+          9700
+        ],
+        [
+          "Quint",
+          5,
+          20,
+          400,
+          9600
+        ],
+        [
+          "Vigint",
+          20,
+          5,
+          1900,
+          8100
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Name",
+        "Type",
+        "Domain",
+        "$\\boldsymbol{x}^{*}$",
+        "$f^{*}$"
+      ],
+      "rows": [
+        [
+          1,
+          "Sphere",
+          "min",
+          "$[-5,5]^{\\mathrm{n}}$",
+          "$\\mathbf{0}$",
+          0
+        ],
+        [
+          2,
+          "Ackley",
+          "min",
+          "$[-32,32]^{\\mathrm{a}}$",
+          "$\\mathbf{0}$",
+          0
+        ],
+        [
+          3,
+          "Tablet",
+          "min",
+          "$[-7.5,7.5]^{\\mathrm{b}}$",
+          "$\\mathbf{0}$",
+          0
+        ],
+        [
+          4,
+          "Cigar-Tablet",
+          "min",
+          "$[-7.5,7.5]^{\\mathrm{b}}$",
+          "$\\mathbf{0}$",
+          0
+        ],
+        [
+          5,
+          "Michalewicz",
+          "min",
+          "$[0, \\pi]^{\\mathrm{b}}$",
+          "$\\sim^{\\mathrm{a}}$",
+          "$\\sim^{\\mathrm{b}}$"
+        ],
+        [
+          6,
+          "Sum Cancellation",
+          "max",
+          "$[-0.16,0.16]^{\\mathrm{a}}$",
+          "$\\mathbf{0}$",
+          "$10^{5}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "The results of statistical tests on BAVs of the algorithms (refer to text for more explanation).",
+      "headers": [
+        "Function",
+        "Dim.",
+        "UMDA",
+        "EMNA",
+        "EGNA-PLS",
+        "CMA-ES",
+        "RegEDA-LARS-OR",
+        "RegEDA-LARS-AND",
+        "RegEDA-Shr",
+        "RegEDA-GL"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          10,
+          "$2.67 \\mathrm{e}+01(0,6)$",
+          "$2.81 \\mathrm{e}+01(0,6)$",
+          "$2.50 \\mathrm{e}-01(2,1)$",
+          "$5.53 \\mathrm{e}-15(7,0)$",
+          "$4.10 \\mathrm{e}-01(2,1)$",
+          "$2.31 \\mathrm{e}-01(2,1)$",
+          "$1.61 \\mathrm{e}-01(2,1)$",
+          "$1.55 \\mathrm{e}-01(2,1)$"
+        ],
+        [
+          "",
+          20,
+          "$3.58 \\mathrm{e}+02(0,5)$",
+          "$2.90 \\mathrm{e}+02(0,5)$",
+          "$4.76 \\mathrm{e}-03(4,0)$",
+          "$1.33 \\mathrm{e}-14(6,0)$",
+          "$1.50 \\mathrm{e}+00(0,4)$",
+          "$3.22 \\mathrm{e}-01(3,1)$",
+          "$2.10 \\mathrm{e}-01(3,1)$",
+          "$9.15 \\mathrm{e}-01(2,2)$"
+        ],
+        [
+          "",
+          50,
+          "$1.58 \\mathrm{e}+03(0,4)$",
+          "$4.88 \\mathrm{e}+03(0,5)$",
+          "$2.35 \\mathrm{e}+01(0,3)$",
+          "$1.50 \\mathrm{e}-14(5,0)$",
+          "$1.40 \\mathrm{e}+01(1,2)$",
+          "$1.53 \\mathrm{e}+00(3,0)$",
+          "$5.66 \\mathrm{e}-01(4,0)$",
+          "$6.51 \\mathrm{e}+00(2,1)$"
+        ],
+        [
+          "",
+          100,
+          "$4.35 \\mathrm{e}+03(0,4)$",
+          "$2.30 \\mathrm{e}+04(0,5)$",
+          "$5.78 \\mathrm{e}+01(1,3)$",
+          "$6.02 \\mathrm{e}-11(5,0)$",
+          "$3.05 \\mathrm{e}+01(2,1)$",
+          "$5.13 \\mathrm{e}+00(4,0)$",
+          "$2.12 \\mathrm{e}+00(4,0)$",
+          "$3.44 \\mathrm{e}+02(0,3)$"
+        ],
+        [
+          "",
+          200,
+          "$1.84 \\mathrm{e}+04(0,5)$",
+          "$6.99 \\mathrm{e}+04(0,5)$",
+          "$1.41 \\mathrm{e}+02(2,2)$",
+          "$1.98 \\mathrm{e}-05(5,0)$",
+          "$3.21 \\mathrm{e}+02(2,2)$",
+          "$2.15 \\mathrm{e}+01(3,0)$",
+          "$1.35 \\mathrm{e}+01(5,0)$",
+          "$1.38 \\mathrm{e}+04(0,3)$"
+        ],
+        [
+          "Ackley",
+          10,
+          "$2.81 \\mathrm{e}+00(1,0)$",
+          "$8.22 \\mathrm{e}+00(0,6)$",
+          "$2.20 \\mathrm{e}+00(2,0)$",
+          "$3.97 \\mathrm{e}+00(3,0)$",
+          "$4.12 \\mathrm{e}+00(0,3)$",
+          "$2.70 \\mathrm{e}+00(1,0)$",
+          "$3.62 \\mathrm{e}+00(1,2)$",
+          "$1.17 \\mathrm{e}+00(3,0)$"
+        ],
+        [
+          "",
+          20,
+          "$1.65 \\mathrm{e}+00(2,0)$",
+          "$1.09 \\mathrm{e}+01(0,6)$",
+          "$7.27 \\mathrm{e}-01(2,0)$",
+          "$3.99 \\mathrm{e}+00(2,0)$",
+          "$3.81 \\mathrm{e}+00(0,3)$",
+          "$2.15 \\mathrm{e}+00(1,0)$",
+          "$2.45 \\mathrm{e}+00(1,0)$",
+          "$2.01 \\mathrm{e}+00(1,0)$"
+        ],
+        [
+          "",
+          50,
+          "$2.87 \\mathrm{e}+00(3,0)$",
+          "$1.20 \\mathrm{e}+01(0,5)$",
+          "$2.22 \\mathrm{e}+00(4,0)$",
+          "$1.40 \\mathrm{e}+01(0,4)$",
+          "$6.22 \\mathrm{e}+00(0,4)$",
+          "$3.24 \\mathrm{e}+00(3,0)$",
+          "$3.73 \\mathrm{e}+00(1,1)$",
+          "$2.89 \\mathrm{e}+00(3,0)$"
+        ],
+        [
+          "",
+          100,
+          "$3.42 \\mathrm{e}+00(3,0)$",
+          "$1.22 \\mathrm{e}+01(0,5)$",
+          "$2.48 \\mathrm{e}+00(5,0)$",
+          "$2.00 \\mathrm{e}+01(0,5)$",
+          "$7.46 \\mathrm{e}+00(0,4)$",
+          "$3.84 \\mathrm{e}+00(3,1)$",
+          "$4.07 \\mathrm{e}+00(2,1)$",
+          "$3.39 \\mathrm{e}+00(3,0)$"
+        ],
+        [
+          "",
+          200,
+          "$6.56 \\mathrm{e}+00(2,2)$",
+          "$1.26 \\mathrm{e}+01(0,5)$",
+          "$4.82 \\mathrm{e}+00(5,0)$",
+          "$2.00 \\mathrm{e}+01(0,5)$",
+          "$9.97 \\mathrm{e}+00(0,3)$",
+          "$6.45 \\mathrm{e}+00(3,1)$",
+          "$6.64 \\mathrm{e}+00(2,2)$",
+          "$3.87 \\mathrm{e}+00(6,0)$"
+        ],
+        [
+          "Tablet",
+          10,
+          "$3.40 \\mathrm{e}+00(2,1)$",
+          "$2.32 \\mathrm{e}+01(0,6)$",
+          "$8.07 \\mathrm{e}-01(2,0)$",
+          "$6.84 \\mathrm{e}-15(6,0)$",
+          "$3.55 \\mathrm{e}+00(2,1)$",
+          "$3.40 \\mathrm{e}+00(2,1)$",
+          "$3.62 \\mathrm{e}+00(2,1)$",
+          "$2.55 \\mathrm{e}+01(0,6)$"
+        ],
+        [
+          "",
+          20,
+          "$4.73 \\mathrm{e}-01(2,1)$",
+          "$2.84 \\mathrm{e}+01(0,5)$",
+          "$1.36 \\mathrm{e}-02(5,0)$",
+          "$8.63 \\mathrm{e}-06(6,0)$",
+          "$4.07 \\mathrm{e}+00(1,2)$",
+          "$2.10 \\mathrm{e}+00(2,2)$",
+          "$1.21 \\mathrm{e}+00(2,2)$",
+          "$4.30 \\mathrm{e}+01(0,6)$"
+        ],
+        [
+          "",
+          50,
+          "$2.96 \\mathrm{e}+00(5,0)$",
+          "$5.88 \\mathrm{e}+01(0,3)$",
+          "$3.86 \\mathrm{e}+01(2,3)$",
+          "$4.39 \\mathrm{e}+02(0,5)$",
+          "$3.18 \\mathrm{e}+01(2,3)$",
+          "$3.53 \\mathrm{e}+00(5,0)$",
+          "$2.97 \\mathrm{e}+00(5,0)$",
+          "$1.05 \\mathrm{e}+02(0,5)$"
+        ],
+        [
+          "",
+          100,
+          "$5.17 \\mathrm{e}+00(5,0)$",
+          "$1.10 \\mathrm{e}+02(1,3)$",
+          "$8.32 \\mathrm{e}+01(2,3)$",
+          "$1.15 \\mathrm{e}+03(0,6)$",
+          "$7.69 \\mathrm{e}+01(2,2)$",
+          "$8.97 \\mathrm{e}+00(4,0)$",
+          "$5.04 \\mathrm{e}+00(5,0$",
+          "$1.78 \\mathrm{e}+02(0,5)$"
+        ],
+        [
+          "",
+          200,
+          "$3.23 \\mathrm{e}+01(5,0)$",
+          "$2.43 \\mathrm{e}+02(1,3)$",
+          "$1.78 \\mathrm{e}+02(2,2)$",
+          "$2.95 \\mathrm{e}+03(0,6)$",
+          "$3.08 \\mathrm{e}+02(1,3)$",
+          "$4.51 \\mathrm{e}+01(4,0)$",
+          "$3.69 \\mathrm{e}+01(5,0)$",
+          "$3.74 \\mathrm{e}+02(0,4)$"
+        ],
+        [
+          "Cigar-Tablet",
+          10,
+          "$5.01 \\mathrm{e}+03(1,1)$",
+          "$1.13 \\mathrm{e}+05(0,6)$",
+          "$4.53 \\mathrm{e}+03(1,1)$",
+          "$3.77 \\mathrm{e}-15(7,0)$",
+          "$6.04 \\mathrm{e}+03(1,1)$",
+          "$7.80 \\mathrm{e}+03(1,1)$",
+          "$1.20 \\mathrm{e}+04(1,1)$",
+          "$9.46 \\mathrm{e}+03(0,1)$"
+        ],
+        [
+          "",
+          20,
+          "$8.61 \\mathrm{e}+03(3,1)$",
+          "$1.95 \\mathrm{e}+05(0,5)$",
+          "$2.85 \\mathrm{e}+02(4,0)$",
+          "$4.91 \\mathrm{e}-05(6,0)$",
+          "$3.72 \\mathrm{e}+04(0,4)$",
+          "$6.75 \\mathrm{e}+03(3,1)$",
+          "$8.98 \\mathrm{e}+03(1,2)$",
+          "$3.05 \\mathrm{e}+04(0,4)$"
+        ],
+        [
+          "",
+          50,
+          "$1.93 \\mathrm{e}+04(3,0)$",
+          "$5.17 \\mathrm{e}+05(0,5)$",
+          "$4.71 \\mathrm{e}+03(5,0)$",
+          "$2.57 \\mathrm{e}+04(3,1)$",
+          "$2.41 \\mathrm{e}+05(0,5)$",
+          "$2.71 \\mathrm{e}+04(3,1)$",
+          "$1.47 \\mathrm{e}+04(3,0)$",
+          "$1.42 \\mathrm{e}+05(0,5)$"
+        ],
+        [
+          "",
+          100,
+          "$3.61 \\mathrm{e}+04(4,0)$",
+          "$1.00 \\mathrm{e}+06(0,4)$",
+          "$1.44 \\mathrm{e}+04(5,0)$",
+          "$2.24 \\mathrm{e}+06(0,5)$",
+          "$7.00 \\mathrm{e}+05(0,4)$",
+          "$7.93 \\mathrm{e}+04(3,1)$",
+          "$5.30 \\mathrm{e}+04(3,0)$",
+          "$4.42 \\mathrm{e}+05(1,2)$"
+        ],
+        [
+          "",
+          200,
+          "$2.85 \\mathrm{e}+05(4,0)$",
+          "$2.05 \\mathrm{e}+06(0,4)$",
+          "$1.25 \\mathrm{e}+05(6,0)$",
+          "$1.44 \\mathrm{e}+07(0,5)$",
+          "$1.82 \\mathrm{e}+06(0,4)$",
+          "$3.86 \\mathrm{e}+05(3,1)$",
+          "$3.64 \\mathrm{e}+05(3,1)$",
+          "$1.34 \\mathrm{e}+06(1,2)$"
+        ],
+        [
+          "Michalewicz",
+          10,
+          "$-8.90 \\mathrm{e}+00(2,0)$",
+          "$-6.53 \\mathrm{e}+00(0,5)$",
+          "$-7.85 \\mathrm{e}+00(1,0)$",
+          "$-8.27 \\mathrm{e}+00(2,0)$",
+          "$-8.47 \\mathrm{e}+00(2,0)$",
+          "$-8.43 \\mathrm{e}+00(2,0)$",
+          "$-8.91 \\mathrm{e}+00(2,0)$",
+          "$-5.58 \\mathrm{e}+00(0,6)$"
+        ],
+        [
+          "",
+          20,
+          "$-1.10 \\mathrm{e}+01(2,1)$",
+          "$-1.14 \\mathrm{e}+01(2,1)$",
+          "$-8.54 \\mathrm{e}+00(0,5)$",
+          "$-1.66 \\mathrm{e}+01(7,0)$",
+          "$-1.20 \\mathrm{e}+01(2,1)$",
+          "$-1.16 \\mathrm{e}+01(2,1)$",
+          "$-1.00 \\mathrm{e}+01(0,1)$",
+          "$-8.30 \\mathrm{e}+00(0,5)$"
+        ],
+        [
+          "",
+          50,
+          "$-1.61 \\mathrm{e}+01(2,1)$",
+          "$-1.71 \\mathrm{e}+01(2,1)$",
+          "$-1.18 \\mathrm{e}+01(0,6)$",
+          "$-3.04 \\mathrm{e}+01(6,0)$",
+          "$-1.68 \\mathrm{e}+01(2,0)$",
+          "$-1.63 \\mathrm{e}+01(2,1)$",
+          "$-1.64 \\mathrm{e}+01(2,1)$",
+          "$-1.48 \\mathrm{e}+01(0,6)$"
+        ],
+        [
+          "",
+          100,
+          "$-2.64 \\mathrm{e}+01(2,2)$",
+          "$-2.87 \\mathrm{e}+01(5,0)$",
+          "$-1.95 \\mathrm{e}+01(0,6)$",
+          "$-2.59 \\mathrm{e}+01(1,2)$",
+          "$-2.85 \\mathrm{e}+01(5,0)$",
+          "$-2.70 \\mathrm{e}+01(2,0)$",
+          "$-2.68 \\mathrm{e}+01(2,2)$",
+          "$-2.45 \\mathrm{e}+01(0,5)$"
+        ],
+        [
+          "",
+          200,
+          "$-4.60 \\mathrm{e}+01(2,2)$",
+          "$-5.01 \\mathrm{e}+01(5,0)$",
+          "$-3.39 \\mathrm{e}+01(0,5)$",
+          "$-3.84 \\mathrm{e}+01(0,5)$",
+          "$-4.98 \\mathrm{e}+01(5,0)$",
+          "$-4.72 \\mathrm{e}+01(3,0)$",
+          "$-4.63 \\mathrm{e}+01(2,2)$",
+          "$-4.22 \\mathrm{e}+01(0,3)$"
+        ],
+        [
+          "SumCan",
+          10,
+          "$1.58 \\mathrm{e}+01(1,2)$",
+          "$1.09 \\mathrm{e}+01(0,2)$",
+          "$1.91 \\mathrm{e}+02(4,0)$",
+          "$9.00 \\mathrm{e}+04(6,0)$",
+          "$1.16 \\mathrm{e}+01(1,2)$",
+          "$2.05 \\mathrm{e}+01(1,1)$",
+          "$2.11 \\mathrm{e}+01(1,1)$",
+          "$6.07 \\mathrm{e}+00(0,6)$"
+        ],
+        [
+          "",
+          20,
+          "$7.51 \\mathrm{e}+00(3,0)$",
+          "$3.28 \\mathrm{e}+00(0,5)$",
+          "$1.29 \\mathrm{e}+01(3,0)$",
+          "$5.00 \\mathrm{e}+04(3,0)$",
+          "$3.76 \\mathrm{e}+00(0,5)$",
+          "$7.74 \\mathrm{e}+00(3,0)$",
+          "$6.83 \\mathrm{e}+00(3,0)$",
+          "$1.63 \\mathrm{e}+00(0,5)$"
+        ],
+        [
+          "",
+          50,
+          "$1.50 \\mathrm{e}+00(2,0)$",
+          "$1.03 \\mathrm{e}+00(1,3)$",
+          "$2.87 \\mathrm{e}-01(0,6)$",
+          "$2.38 \\mathrm{e}+00(4,0)$",
+          "$1.09 \\mathrm{e}+00(1,3)$",
+          "$1.77 \\mathrm{e}+00(4,0)$",
+          "$1.73 \\mathrm{e}+00(4,0)$",
+          "$3.93 \\mathrm{e}-01(0,4)$"
+        ],
+        [
+          "",
+          100,
+          "$2.59 \\mathrm{e}-01(2,2)$",
+          "$3.88 \\mathrm{e}-01(3,0)$",
+          "$1.05 \\mathrm{e}-01(0,6)$",
+          "$2.02 \\mathrm{e}-01(1,3)$",
+          "$4.62 \\mathrm{e}-01(5,0)$",
+          "$6.94 \\mathrm{e}-01(5,0)$",
+          "$2.83 \\mathrm{e}-01(2,2)$",
+          "$1.38 \\mathrm{e}-01(0,5)$"
+        ],
+        [
+          "",
+          200,
+          "$7.77 \\mathrm{e}-02(2,1)$",
+          "$1.53 \\mathrm{e}-01(3,0)$",
+          "$3.63 \\mathrm{e}-02(0,6)$",
+          "$5.36 \\mathrm{e}-02(1,2)$",
+          "$1.19 \\mathrm{e}-01(2,1)$",
+          "$2.50 \\mathrm{e}-01(6,0)$",
+          "$8.01 \\mathrm{e}-02(2,1)$",
+          "$4.66 \\mathrm{e}-02(0,5)$"
+        ]
+      ],
+      "row_count": 30,
+      "column_count": 10
+    }
+  ]
+}

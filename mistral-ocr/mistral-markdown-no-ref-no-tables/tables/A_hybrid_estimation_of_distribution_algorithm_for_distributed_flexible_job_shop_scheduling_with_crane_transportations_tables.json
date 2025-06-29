@@ -1,0 +1,1207 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/A hybrid estimation of distribution algorithm for distributed flexible job shop scheduling with crane transportations.md",
+    "filename": "A hybrid estimation of distribution algorithm for distributed flexible job shop scheduling with crane transportations.md",
+    "title": "A hybrid estimation of distribution algorithm for distributed flexible job shop scheduling with crane transportations",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Representative Studies on distributed scheduling problems.",
+      "headers": [
+        "Problem",
+        "Objective(s)",
+        "Methodology",
+        "Reference(s)"
+      ],
+      "rows": [
+        [
+          "DPFSP",
+          "makespan",
+          "MILP, heuristics and variable neighborhood descent VND methods",
+          5
+        ],
+        [
+          "",
+          "makespan",
+          "developed EDA",
+          "$[6,7]$"
+        ],
+        [
+          "",
+          "makespan",
+          "developed ABC",
+          "$[5,13,25,26]$"
+        ],
+        [
+          "",
+          "makespan",
+          "developed VNS, ABC, IG",
+          10
+        ],
+        [
+          "",
+          "makespan",
+          "developed IG",
+          "$[11,22]$"
+        ],
+        [
+          "",
+          "makespan, negative social impact, total energy consumption",
+          "knowledge-based multi-objective memetic optimization algorithm",
+          24
+        ],
+        [
+          "",
+          "makespan, total cost, average tardiness",
+          "multi-objective adaptive large neighborhood search",
+          14
+        ],
+        [
+          "",
+          "makespan, total energy consumption",
+          "knowledge-based cooperative algorithm",
+          12
+        ],
+        [
+          "",
+          "makespan, total tardiness",
+          "competitive memetic algorithm",
+          8
+        ],
+        [
+          "",
+          "makespan, total weight tardiness",
+          "Pareto-based EDA",
+          15
+        ],
+        [
+          "",
+          "total flowtime",
+          "three constructive heuristics and four metaheuristics",
+          18
+        ],
+        [
+          "",
+          "total weighted earliness and tardiness",
+          "effective IG algorithm",
+          23
+        ],
+        [
+          "DAPFSP",
+          "makespan",
+          "EDA-based memetic algorithm",
+          16
+        ],
+        [
+          "",
+          "makespan",
+          "a MILP, three constructive heuristics, two VNS methods, and an IG algorithm",
+          17
+        ],
+        [
+          "",
+          "makespan",
+          "biased-randomized iterated local search",
+          19
+        ],
+        [
+          "",
+          "makespan",
+          "cooperative co-evolutionary algorithm",
+          21
+        ],
+        [
+          "",
+          "total flowtime",
+          "effective invasive weed optimization algorithms",
+          20
+        ],
+        [
+          "DFJSP",
+          "makespan",
+          "developed GA",
+          "$[31,33-36]$"
+        ],
+        [
+          "",
+          "makespan",
+          "fast heuristic algorithm",
+          32
+        ],
+        [
+          "",
+          "makespan",
+          "chemical reaction optimization metaheuristics",
+          38
+        ],
+        [
+          "",
+          "makespan",
+          "four MILP models and a CP model",
+          39
+        ],
+        [
+          "",
+          "makespan, maximum workload, total workload, earliness/tardiness",
+          "hybrid Pareto-based TS",
+          2
+        ],
+        [
+          "",
+          "makespan, maximum workload, total energy consumption of factories",
+          "EMA",
+          40
+        ],
+        [
+          "",
+          "earliness/tardiness and total cost",
+          "DE-SA",
+          37
+        ],
+        [
+          "DHFS",
+          "makespan",
+          "discrete ABC",
+          1
+        ],
+        [
+          "",
+          "makespan",
+          "smallest-medium rule and multi-neighborhood IG",
+          30
+        ],
+        [
+          "",
+          "fuzzy total tardiness, robustness",
+          "EDA and IG",
+          29
+        ],
+        [
+          "DJSP",
+          "makespan",
+          "agent-based fuzzy constraint-directed negotiation mechanism",
+          27
+        ]
+      ],
+      "row_count": 28,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Experimental parameters and factor level values.",
+      "headers": [
+        "Parameters",
+        "Factor level",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "$\\eta$",
+          0.2,
+          0.3,
+          0.4,
+          0.5
+        ],
+        [
+          "$\\sigma_{\\max }$",
+          0.2,
+          0.3,
+          0.4,
+          0.5
+        ],
+        [
+          "$\\beta_{\\max }$",
+          0.2,
+          0.3,
+          0.4,
+          0.5
+        ],
+        [
+          "$\\gamma_{\\max }$",
+          0.2,
+          0.3,
+          0.4,
+          0.5
+        ],
+        [
+          "Gen $_{\\max }$",
+          100,
+          200,
+          300,
+          400
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Comparison between proposed algorithm (EDA-VNS) and CPLEX solver.",
+      "headers": [
+        "Instance",
+        "Scale",
+        "Best",
+        "Fitness <br> EDA-VNS (30 s)",
+        "CPLEX (3 h)",
+        "RPI <br> EDA-VNS (30 s)",
+        "CPLEX (3 h)"
+      ],
+      "rows": [
+        [
+          1,
+          322,
+          63.44,
+          63.44,
+          63.44,
+          0.0,
+          0.0
+        ],
+        [
+          2,
+          323,
+          59.86,
+          59.86,
+          61.77,
+          0.0,
+          3.18
+        ],
+        [
+          3,
+          422,
+          77.91,
+          77.91,
+          78.78,
+          0.0,
+          1.12
+        ],
+        [
+          4,
+          423,
+          74.45,
+          74.45,
+          75.36,
+          0.0,
+          1.21
+        ],
+        [
+          5,
+          432,
+          78.0,
+          78.0,
+          78.27,
+          0.0,
+          0.34
+        ],
+        [
+          6,
+          433,
+          61.33,
+          61.33,
+          64.98,
+          0.0,
+          5.95
+        ],
+        [
+          7,
+          522,
+          94.85,
+          94.85,
+          96.71,
+          0.0,
+          1.97
+        ],
+        [
+          8,
+          523,
+          78.17,
+          78.17,
+          90.73,
+          0.0,
+          16.07
+        ],
+        [
+          9,
+          532,
+          81.91,
+          81.91,
+          94.95,
+          0.0,
+          15.92
+        ],
+        [
+          10,
+          533,
+          72.03,
+          72.03,
+          81.78,
+          0.0,
+          13.53
+        ],
+        [
+          11,
+          622,
+          111.21,
+          111.21,
+          129.49,
+          0.0,
+          16.44
+        ],
+        [
+          12,
+          623,
+          96.3,
+          96.3,
+          124.72,
+          0.0,
+          29.51
+        ],
+        [
+          "average",
+          79.12,
+          79.12,
+          86.75,
+          0.0,
+          8.77,
+          ""
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Parameters of compared algorithms.",
+      "headers": [
+        "Parameters",
+        "EMA [40]",
+        "DE-SA [37]",
+        "TS [2]"
+      ],
+      "rows": [
+        [
+          "size of population",
+          150,
+          100,
+          ""
+        ],
+        [
+          "crossover probability",
+          0.7,
+          "randomly between 0.5 to 0.1",
+          "$\\backslash$"
+        ],
+        [
+          "mutation probability",
+          0.4,
+          "randomly between 0.5 to 0.1",
+          "$\\backslash$"
+        ],
+        [
+          "population proportion of local search",
+          0.15,
+          0.25,
+          ""
+        ],
+        [
+          "initial temperature of SA",
+          "$\\checkmark$",
+          0.5,
+          "$\\checkmark$"
+        ],
+        [
+          "tabu tenure",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "$L / 2$"
+        ],
+        [
+          "tabu neighborhood size",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "from $L / 5$ to $L$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Performance comparison between EDA-VNS, EMA [40], DE-SA [37] and TS [2] to solve DFJSPC (average value over 30 runs).",
+      "headers": [
+        "Instance",
+        "Scale",
+        "Best",
+        "Fitness <br> EMA [40]",
+        "DE-SA [37]",
+        "TS [2]",
+        "EDA-VNS",
+        "RPI <br> EMA [40]",
+        "DE-SA [37]",
+        "TS [2]",
+        "EDA-VNS"
+      ],
+      "rows": [
+        [
+          1,
+          2023,
+          530.47,
+          554.34,
+          562.29,
+          537.49,
+          530.47,
+          4.5,
+          6.0,
+          1.32,
+          0.0
+        ],
+        [
+          2,
+          2025,
+          420.98,
+          463.31,
+          475.37,
+          430.89,
+          420.98,
+          10.06,
+          12.92,
+          2.36,
+          0.0
+        ],
+        [
+          3,
+          2033,
+          417.56,
+          431.69,
+          438.33,
+          418.91,
+          417.56,
+          3.38,
+          4.98,
+          0.32,
+          0.0
+        ],
+        [
+          4,
+          2035,
+          402.2,
+          436.97,
+          444.07,
+          405.04,
+          402.2,
+          8.65,
+          10.41,
+          0.71,
+          0.0
+        ],
+        [
+          5,
+          2053,
+          414.05,
+          454.79,
+          454.73,
+          414.05,
+          423.98,
+          9.84,
+          9.82,
+          0.0,
+          2.4
+        ],
+        [
+          6,
+          2055,
+          381.89,
+          428.49,
+          429.93,
+          381.89,
+          386.08,
+          12.2,
+          12.58,
+          0.0,
+          1.1
+        ],
+        [
+          7,
+          4023,
+          966.75,
+          1006.78,
+          1050.59,
+          992.98,
+          966.75,
+          4.14,
+          8.67,
+          2.71,
+          0.0
+        ],
+        [
+          8,
+          4025,
+          925.04,
+          1052.7,
+          1063.72,
+          954.96,
+          925.04,
+          13.8,
+          14.99,
+          3.23,
+          0.0
+        ],
+        [
+          9,
+          4033,
+          833.51,
+          912.02,
+          895.39,
+          845.1,
+          833.51,
+          9.42,
+          7.42,
+          1.39,
+          0.0
+        ],
+        [
+          10,
+          4035,
+          830.74,
+          980.11,
+          938.23,
+          849.91,
+          830.74,
+          17.98,
+          12.94,
+          2.31,
+          0.0
+        ],
+        [
+          11,
+          4053,
+          807.05,
+          923.42,
+          885.41,
+          819.51,
+          807.05,
+          14.42,
+          9.71,
+          1.54,
+          0.0
+        ],
+        [
+          12,
+          4055,
+          776.9,
+          876.76,
+          889.42,
+          800.58,
+          776.9,
+          12.85,
+          14.48,
+          3.05,
+          0.0
+        ],
+        [
+          13,
+          6023,
+          1621.0,
+          1674.53,
+          1748.29,
+          1661.44,
+          1621.0,
+          3.3,
+          7.85,
+          2.49,
+          0.0
+        ],
+        [
+          14,
+          6025,
+          1304.34,
+          1477.16,
+          1521.57,
+          1381.38,
+          1304.34,
+          13.25,
+          16.65,
+          5.91,
+          0.0
+        ],
+        [
+          15,
+          6033,
+          1413.28,
+          1512.38,
+          1544.33,
+          1465.46,
+          1413.28,
+          7.01,
+          9.27,
+          3.69,
+          0.0
+        ],
+        [
+          16,
+          6035,
+          1269.97,
+          1434.09,
+          1437.36,
+          1331.8,
+          1269.97,
+          12.92,
+          13.18,
+          4.87,
+          0.0
+        ],
+        [
+          17,
+          6053,
+          1268.57,
+          1390.08,
+          1377.44,
+          1289.36,
+          1268.57,
+          9.58,
+          8.58,
+          1.64,
+          0.0
+        ],
+        [
+          18,
+          6055,
+          1202.5,
+          1407.4,
+          1359.13,
+          1227.73,
+          1202.5,
+          17.04,
+          13.03,
+          2.1,
+          0.0
+        ],
+        [
+          19,
+          8023,
+          2128.69,
+          2352.94,
+          2337.15,
+          2195.04,
+          2128.69,
+          10.53,
+          9.79,
+          3.12,
+          0.0
+        ],
+        [
+          20,
+          8025,
+          1848.41,
+          2158.49,
+          2142.79,
+          1922.7,
+          1848.41,
+          16.78,
+          15.93,
+          4.02,
+          0.0
+        ],
+        [
+          21,
+          8033,
+          1801.38,
+          2019.36,
+          1963.29,
+          1831.26,
+          1801.38,
+          12.1,
+          8.99,
+          1.66,
+          0.0
+        ],
+        [
+          22,
+          8035,
+          1669.96,
+          1903.56,
+          1918.27,
+          1723.63,
+          1669.96,
+          13.99,
+          14.87,
+          3.21,
+          0.0
+        ],
+        [
+          23,
+          8053,
+          1597.35,
+          1751.13,
+          1765.01,
+          1620.98,
+          1597.35,
+          9.63,
+          10.5,
+          1.48,
+          0.0
+        ],
+        [
+          24,
+          8055,
+          1593.35,
+          1834.21,
+          1800.38,
+          1597.02,
+          1593.35,
+          15.12,
+          12.99,
+          0.23,
+          0.0
+        ],
+        [
+          25,
+          10023,
+          2589.78,
+          2874.43,
+          2818.83,
+          2649.58,
+          2589.78,
+          10.99,
+          8.84,
+          2.31,
+          0.0
+        ],
+        [
+          26,
+          10025,
+          2159.2,
+          2605.58,
+          2543.47,
+          2287.09,
+          2159.2,
+          20.67,
+          17.8,
+          5.92,
+          0.0
+        ],
+        [
+          27,
+          10033,
+          2315.98,
+          2560.05,
+          2540.81,
+          2363.24,
+          2315.98,
+          10.54,
+          9.71,
+          2.04,
+          0.0
+        ],
+        [
+          28,
+          10035,
+          2181.31,
+          2545.85,
+          2523.09,
+          2249.97,
+          2181.31,
+          16.71,
+          15.67,
+          3.15,
+          0.0
+        ],
+        [
+          29,
+          10053,
+          2104.46,
+          2339.59,
+          2311.59,
+          2134.09,
+          2104.46,
+          11.17,
+          9.84,
+          1.41,
+          0.0
+        ],
+        [
+          30,
+          10055,
+          1963.44,
+          2278.51,
+          2251.73,
+          2046.33,
+          1963.44,
+          16.05,
+          14.68,
+          4.22,
+          0.0
+        ],
+        [
+          31,
+          20023,
+          5382.33,
+          6031.15,
+          6032.7,
+          5516.23,
+          5382.33,
+          12.05,
+          12.08,
+          2.49,
+          0.0
+        ],
+        [
+          32,
+          20025,
+          4744.29,
+          5588.01,
+          5650.78,
+          4955.44,
+          4744.29,
+          17.78,
+          19.11,
+          4.45,
+          0.0
+        ],
+        [
+          33,
+          20033,
+          4745.72,
+          5267.8,
+          5205.51,
+          4771.9,
+          4745.72,
+          11.0,
+          9.69,
+          0.55,
+          0.0
+        ],
+        [
+          34,
+          20035,
+          4400.32,
+          5245.83,
+          5115.39,
+          4556.62,
+          4400.32,
+          19.21,
+          16.25,
+          3.55,
+          0.0
+        ],
+        [
+          35,
+          20053,
+          4248.63,
+          4749.86,
+          4727.04,
+          4318.31,
+          4248.63,
+          11.8,
+          11.26,
+          1.64,
+          0.0
+        ],
+        [
+          36,
+          20055,
+          4046.98,
+          4791.7,
+          4666.89,
+          4300.56,
+          4046.98,
+          18.4,
+          15.32,
+          6.27,
+          0.0
+        ],
+        [
+          "average",
+          1869.68,
+          2119.86,
+          2106.4,
+          1923.57,
+          1870.07,
+          12.19,
+          11.86,
+          2.54,
+          0.1,
+          ""
+        ]
+      ],
+      "row_count": 37,
+      "column_count": 11
+    },
+    {
+      "table_number": "7",
+      "table_title": "Machine process time of 4J2F2M.",
+      "headers": [
+        "Operation",
+        "Job weight $W_{j}(\\mathrm{~kg})$",
+        "Factory $1 T_{1, f}(\\mathrm{~min})$",
+        "",
+        "Factory $2 T_{1, f}(\\mathrm{~min})$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "$M_{1}$",
+          "$M_{2}$",
+          "$M_{3}$",
+          "$M_{4}$"
+        ],
+        [
+          "$O_{1,1}$",
+          2100,
+          8,
+          6,
+          5,
+          10
+        ],
+        [
+          "$O_{1,2}$",
+          2100,
+          5,
+          12,
+          8,
+          6
+        ],
+        [
+          "$O_{2,1}$",
+          1510,
+          "-",
+          7,
+          8,
+          10
+        ],
+        [
+          "$O_{2,2}$",
+          1510,
+          6,
+          4,
+          15,
+          "-"
+        ],
+        [
+          "$O_{3,1}$",
+          1100,
+          "-",
+          10,
+          5,
+          8
+        ],
+        [
+          "$O_{3,2}$",
+          1100,
+          8,
+          7,
+          8,
+          6
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "8",
+      "table_title": "Parameters of machines.",
+      "headers": [
+        "Machine",
+        "Operating power (W)",
+        "Location (m) <br> $x$ position",
+        "$y$ position"
+      ],
+      "rows": [
+        [
+          "$M_{1}$",
+          1100,
+          20,
+          20
+        ],
+        [
+          "$M_{2}$",
+          1350,
+          20,
+          60
+        ],
+        [
+          "$M_{3}$",
+          1200,
+          160,
+          20
+        ],
+        [
+          "$M_{4}$",
+          1050,
+          160,
+          60
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "9",
+      "table_title": "Calculation of machine process energy consumption.",
+      "headers": [
+        "Operation",
+        "Assigned machine",
+        "$E_{c, j}(\\mathrm{~W})$",
+        "$T_{c, j}(\\min )$",
+        "$E_{\\text {eq }}\\left(O_{c, j}\\right)=E_{c, j} \\cdot T_{c, j}$"
+      ],
+      "rows": [
+        [
+          "$O_{1,1}$",
+          "$M_{3}$",
+          1200,
+          5,
+          "$1200 \\bullet 5 \\bullet 60 / 1000=360(\\mathrm{~kJ})$"
+        ],
+        [
+          "$O_{1,2}$",
+          "$M_{4}$",
+          1050,
+          6,
+          "$1050 \\bullet 6 \\bullet 60 / 1000=378(\\mathrm{~kJ})$"
+        ],
+        [
+          "$O_{2,1}$",
+          "$M_{2}$",
+          1350,
+          7,
+          "$1350 \\bullet 7 \\bullet 60 / 1000=567(\\mathrm{~kJ})$"
+        ],
+        [
+          "$O_{2,2}$",
+          "$M_{1}$",
+          1100,
+          4,
+          "$1100 \\bullet 4 \\bullet 60 / 1000=264(\\mathrm{~kJ})$"
+        ],
+        [
+          "$O_{3,1}$",
+          "$M_{3}$",
+          1200,
+          5,
+          "$1200 \\bullet 5 \\bullet 60 / 1000=360(\\mathrm{~kJ})$"
+        ],
+        [
+          "$O_{3,2}$",
+          "$M_{4}$",
+          1050,
+          6,
+          "$1050 \\bullet 6 \\bullet 60 / 1000=378(\\mathrm{~kJ})$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "10",
+      "table_title": "start time and completion time of all operations in machine process and crane transportation (unit: min).",
+      "headers": [
+        "Operation",
+        "$T t_{m c_{2}}\\left(O_{t_{2}}\\right)$",
+        "$T c_{m c_{2}}\\left(O_{t_{2}}\\right)$",
+        "$T t_{m c_{2}}\\left(O_{t_{2}}\\right)$",
+        "$T c_{m_{c_{2}}}\\left(O_{t_{2}}\\right)$",
+        "$T t_{c_{2} c_{1}}\\left(O_{t_{2}}\\right)$",
+        "$T c_{m_{c_{2}}}\\left(O_{t_{2}}\\right)$",
+        "$T c_{m_{c_{2}}}\\left(O_{t_{2}}\\right)$",
+        "$T c_{m_{c_{2}}}\\left(O_{t_{2}}\\right)$",
+        "$T c\\left(O_{t_{2}}\\right)$",
+        "$T c\\left(O_{t_{2}}\\right)$"
+      ],
+      "rows": [
+        [
+          "$O_{t 1}$",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0,
+          7
+        ],
+        [
+          "$O_{t 2}$",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          7,
+          11
+        ],
+        [
+          "$O_{t 3}$",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0,
+          5
+        ],
+        [
+          "$O_{t 1}$",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          5,
+          10
+        ],
+        [
+          "$O_{t 2}$",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          5,
+          6.3725,
+          6.3725,
+          12.3725
+        ],
+        [
+          "$O_{t 3}$",
+          6.3725,
+          7.7418,
+          7.7418,
+          10,
+          10,
+          12.3725,
+          12.3725,
+          13.748,
+          13.748,
+          19.748
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 11
+    }
+  ]
+}

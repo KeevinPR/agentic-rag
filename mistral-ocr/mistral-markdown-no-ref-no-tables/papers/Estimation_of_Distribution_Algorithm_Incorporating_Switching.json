@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Estimation of Distribution Algorithm Incorporating Switching.md",
+    "filename": "Estimation of Distribution Algorithm Incorporating Switching.md",
+    "title": "Estimation of Distribution Algorithm Incorporating Switching",
+    "year": "2010"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] J.H. Holland, Adaptation in Natural and Artificial Systems, University of Michigan Press, Ann Arbor, 1975.\n[2] J.H. Holland, \"Genetic algorithms,\" Scientific American, vol.267, pp.66-72, July 1992.\n[3] H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. binary parameters,\" Parallel Problem Solving from Nature-PPSN IV, Lect. Notes Comput. Sci., vol.1411, pp.178-187, 1996.\n[4] J. Pearl, Probabilistic Reasoning in Intelligent Systems: Network of Plausible Inference, Morgan Kaufmann Publishers, San Mateo, California, 1988.\n[5] M. Pelikan, D.E. Goldberg, and E. Cautü-Pas, \"BOA: The Bayesian optimization algorithm,\" IlliGAL Report no.99003, Jan. 1999.\n[6] H. Iba, \"Estimation of distribution algorithm and programming,\" Proc. 2006 Workshop on Information-Based Induction Sciences, pp.9-16, Osaka, Oct. 2006.\n[7] D. Heckerman, D. Geiger, and M. Chickering, \"Learning Bayesian networks: The combination of knowledge and statistical data,\" Mach. Learn., vol.20, no.3, pp.197-243, 1994.\n[8] D.E. Goldberg, Genetic Algorithms in Search, Optimization and Machine Learning, Kluwer Academic Publishers, Boston, MA, 1989.\n[9] K. Deb and D.E. Goldberg, \"Analyzing deception in trap function,\" in Foundations of Genetic Algorithms 2, ed. L.D. Whitley, pp.93108, Morgan Kaufmann Publishers, 1993.\n[10] M. Pelikan, K. Sastry, M.V. Butz, and D.E. Goldberg, \"Hierarchical boa on random decomposable problems,\" MEDAL Report no.2006001, Missouri Estimation of Distribution Algorithms Laboratory, March 2006.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "J.H. Holland, Adaptation in Natural and Artificial Systems, University of Michigan Press, Ann Arbor, 1975."
+      },
+      {
+        "ref_id": "2",
+        "text": "J.H. Holland, \"Genetic algorithms,\" Scientific American, vol.267, pp.66-72, July 1992."
+      },
+      {
+        "ref_id": "3",
+        "text": "H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. binary parameters,\" Parallel Problem Solving from Nature-PPSN IV, Lect. Notes Comput. Sci., vol.1411, pp.178-187, 1996."
+      },
+      {
+        "ref_id": "4",
+        "text": "J. Pearl, Probabilistic Reasoning in Intelligent Systems: Network of Plausible Inference, Morgan Kaufmann Publishers, San Mateo, California, 1988."
+      },
+      {
+        "ref_id": "5",
+        "text": "M. Pelikan, D.E. Goldberg, and E. Cautü-Pas, \"BOA: The Bayesian optimization algorithm,\" IlliGAL Report no.99003, Jan. 1999."
+      },
+      {
+        "ref_id": "6",
+        "text": "H. Iba, \"Estimation of distribution algorithm and programming,\" Proc. 2006 Workshop on Information-Based Induction Sciences, pp.9-16, Osaka, Oct. 2006."
+      },
+      {
+        "ref_id": "7",
+        "text": "D. Heckerman, D. Geiger, and M. Chickering, \"Learning Bayesian networks: The combination of knowledge and statistical data,\" Mach. Learn., vol.20, no.3, pp.197-243, 1994."
+      },
+      {
+        "ref_id": "8",
+        "text": "D.E. Goldberg, Genetic Algorithms in Search, Optimization and Machine Learning, Kluwer Academic Publishers, Boston, MA, 1989."
+      },
+      {
+        "ref_id": "9",
+        "text": "K. Deb and D.E. Goldberg, \"Analyzing deception in trap function,\" in Foundations of Genetic Algorithms 2, ed. L.D. Whitley, pp.93108, Morgan Kaufmann Publishers, 1993."
+      },
+      {
+        "ref_id": "10",
+        "text": "M. Pelikan, K. Sastry, M.V. Butz, and D.E. Goldberg, \"Hierarchical boa on random decomposable problems,\" MEDAL Report no.2006001, Missouri Estimation of Distribution Algorithms Laboratory, March 2006."
+      }
+    ],
+    "reference_count": 10,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Operation of processes in SEDA.",
+      "headers": [
+        "step",
+        "process"
+      ],
+      "rows": [
+        [
+          1,
+          "Set $t=0$, randomly generate initial population $P(0)$, <br> clear the switching flag."
+        ],
+        [
+          2,
+          "Select a set of promising individuals $S(t)$ from $P(t)$."
+        ],
+        [
+          3,
+          "Construct the Bayesian network $B$ on $S(t)$."
+        ],
+        [
+          4,
+          "Generate a set of new individuals $O(t)$ according to <br> distribution $p(X)$ based on $B$."
+        ],
+        [
+          5,
+          9.0
+        ],
+        [
+          6,
+          "Select a set of promising individuals $Q(t)$ from $P(t)$."
+        ],
+        [
+          7,
+          "Create a new population $Q^{\\prime}(t)$ by applying crossover <br> to $Q(t)$."
+        ],
+        [
+          8,
+          "Create a new population $P(t+1)$ by applying mutation <br> to $Q^{\\prime}(t)$, set $t=t+1$."
+        ],
+        [
+          9,
+          10.0
+        ],
+        [
+          10,
+          "If the switching flag is cleared and the switching cri- <br> terion (EDA $\\rightarrow$ GA) is satisfied, set the switching flag. <br> If the switching flag is set and the switching criterion <br> (GA $\\rightarrow$ EDA) is satisfied, clear the switching flag."
+        ],
+        [
+          11,
+          "If the switching flag is cleared, return to step 2. <br> If the switching flag is set, return to step 6."
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    }
+  ]
+}

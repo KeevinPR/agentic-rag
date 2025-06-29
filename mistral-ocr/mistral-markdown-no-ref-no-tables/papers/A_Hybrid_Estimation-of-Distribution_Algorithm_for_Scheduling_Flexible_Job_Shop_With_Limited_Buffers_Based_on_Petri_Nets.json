@@ -1,0 +1,757 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/A Hybrid Estimation-of-Distribution Algorithm for Scheduling Flexible Job Shop With Limited Buffers Based on Petri Nets.md",
+    "filename": "A Hybrid Estimation-of-Distribution Algorithm for Scheduling Flexible Job Shop With Limited Buffers Based on Petri Nets.md",
+    "title": "A Hybrid Estimation-of-Distribution Algorithm for Scheduling Flexible Job Shop With Limited Buffers Based on Petri Nets",
+    "year": "2020"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] I. A. Chaudhry and A. A. Khan, \"A research survey: Review of flexible job shop scheduling techniques,\" Int. Trans. Oper. Res., vol. 23, no. 3, pp. 551-591, May 2016.\n[2] M. Pinedo, Scheduling: Theory, Algorithms and Systems, 3rd ed. Upper Saddle River, NJ, USA: Prentice-Hall, 2008.\n[3] O. Holthaus and C. Rajendran, \"A study on the performance of scheduling rules in buffer-constrained dynamic flowshops,\" Int. J. Prod. Res., vol. 40, no. 13, pp. 3041-3052, Jan. 2002.\n[4] B. Liu, L. Wang, and Y.-H. Jin, \"An effective hybrid PSO-based algorithm for flow shop scheduling with limited buffers,\" Comput. Oper. Res., vol. 35, no. 9, pp. 2791-2806, Sep. 2008.\n[5] Q.-K. Pan, L. Wang, L. Gao, and W. D. Li, \"An effective hybrid discrete differential evolution algorithm for the flow shop scheduling with intermediate buffers,\" Inf. Sci., vol. 181, no. 3, pp. 668-685, Feb. 2011.\n[6] C. H. Papadimitriou and P. C. Kanellakis, \"Flowshop scheduling with limited temporary storage,\" $J . A C M$, vol. 27, no. 3, pp. 533-549, Jul. 1980.\n[7] B. Qian, L. Wang, D.-X. Huang, W.-L. Wang, and X. Wang, \"An effective hybrid DE-based algorithm for multi-objective flow shop scheduling with limited buffers,\" Comput. Oper. Res., vol. 36, no. 1, pp. 209-233, Jan. 2009.\n[8] C. Zhang, Z. Shi, Z. Huang, Y. Wu, and L. Shi, \"Flow shop scheduling with a batch processor and limited buffer,\" Int. J. Prod. Res., vol. 55, no. 11, pp. 3217-3233, Jun. 2017.\n[9] P. Brucker, S. Heitmann, J. Hurink, and T. Nieberg, \"Job-shop scheduling with limited capacity buffers,\" OR Spectr., vol. 28, no. 2, pp. 151-176, Apr. 2006.\n[10] A. D'Ariano, D. Pacciarelli, and M. Pranzo, \"A branch and bound algorithm for scheduling trains in a railway network,\" Eur. J. Oper. Res., vol. 183, no. 2, pp. 643-657, Dec. 2007.\n[11] S. A. Fahmy, T. Y. ElMekkawy, and S. Balakrishnan, \"Deadlock-free scheduling of flexible job shops with limited capacity buffers,\" Eur. J. Ind. Eng., vol. 2, no. 3, pp. 231-252, Feb. 2008.\n[12] S. A. Fahmy, T. Y. ElMekkawy, and S. Balakrishnan, \"Mathematical formulations for scheduling in manufacturing cells with limited capacity buffers,\" Int. J. Oper. Res., vol. 7, no. 4, pp. 463-486, Apr. 2010.\n[13] M. C. Gomes, A. P. Barbosa-Póvoa, and A. Q. Novais, \"Optimal scheduling for flexible job shop operation,\" Int. J. Prod. Res., vol. 43, no. 11, pp. 2323-2353, Jun. 2005.\n[14] S. Heitmann, \"Job-shop scheduling with limited buffer capacities,\" Ph.D. dissertation, Dept. Math./Inform., Univ. Osnabrück, Osnabrück, Germany, 2007.\n[15] S. Q. Liu, E. Kozan, M. Masoud, Y. Zhang, and F. T. S. Chan, \"Job shop scheduling with a combination of four buffering constraints,\" Int. J. Prod. Res., vol. 56, no. 9, pp. 3274-3293, May 2018.\n[16] M. Pranzo and D. Pacciarelli, \"An iterated greedy metahearistic for the blocking job shop scheduling problem,\" J. Heuristics, vol. 22, no. 4, pp. 587-611, Aug. 2016.\n[17] M. Sama, A. D’Ariano, P. D’Ariano, and D. Pacciarelli, \"Scheduling models for optimal aircraft traffic control at busy airports: Tardiness, priorities, equity and violations considerations,\" Omega, vol. 67, pp. 81-98, Mar. 2017.\n[18] H. Toba, \"A tight flow control for job-shop fabrication lines with finite buffers,\" IEEE Trans. Autom. Sci. Eng., vol. 2, no. 1, pp. 78-83, Jan. 2005.\n[19] A. Witt and S. Vo beta, \"Job shop scheduling with buffer constraints and jobs consuming variable buffer space,\" in Proc. Int. Heinz Nisdorf Symp. Berlin, Germany: Springer, 2010.\n[20] M. P. Fanti and M. Zhou, \"Deadlock control methods in automated manufacturing systems,\" IEEE Trans. Syst., Man, Cybern. A, Syst. Humans, vol. 34, no. 1, pp. 5-22, Jun. 2004.\n[21] Z. Li, N. Wu, and M. Zhou, \"Deadlock control of automated manufacturing systems based on Petri nets-A literature review,\" IEEE Trans. Syst., Man, Cybern. C, Appl. Rev., vol. 42, no. 4, pp. 437-462, Jul. 2012.\n[22] Y. Feng, K. Xing, H. Liu, and Y. Wu, \"Two-stage design method of robust deadlock control for automated manufacturing systems with a type of unreliable resources,\" Inf. Sci., vol. 484, pp. 286-301, May 2019.\n[23] N. Wu and M. Zhou, \"Deadlock resolution in automated manufacturing systems with robots,\" IEEE Trans. Autom. Sci. Eng., vol. 4, no. 3, pp. 474-480, Jul. 2007.\n[24] K. Xing, M. Chu Zhou, H. Liu, and F. Tian, \"Optimal Petri-net-based polynomial-complexity deadlock-avoidance policies for automated manufacturing systems,\" IEEE Trans. Syst., Man, Cybern. A, Syst. Humans, vol. 39, no. 1, pp. 188-199, Jan. 2009.\n[25] K. Xing, L. Han, M. Zhou, and F. Wang, \"Deadlock-free genetic scheduling algorithm for automated manufacturing systems based on deadlock control policy,\" IEEE Trans. Syst., Man, Cybern., B, Cybern., vol. 42, no. 3, pp. 603-615, Jun. 2012.\n[26] R. Leisten, \"Flowshop sequencing problems with limited buffer storage,\" Int. J. Prod. Res., vol. 28, no. 11, pp. 2085-2100, Nov. 1990.\n[27] J.-Q. Li and Q.-K. Pan, \"Solving the large-scale hybrid flow shop scheduling problem with limited buffers by a hybrid artificial bee colony algorithm,\" Inf. Sci., vol. 316, pp. 487-502, Sep. 2015.\n[28] R. S. Hansmann, T. Rieger, and U. T. Zimmermann, \"Flexible job shop scheduling with blockages,\" Math. Methods Oper. Res., vol. 79, no. 2, pp. 135-161, Apr. 2014.\n[29] J. Lange and F. Werner, \"Approaches to modeling train scheduling problems as job-shop problems with blocking constraints,\" J. Scheduling, vol. 21, no. 2, pp. 191-207, Apr. 2018.\n[30] A. Mascis and D. Pacciarelli, \"Job-shop scheduling with blocking and no-wait constraints,\" Eur. J. Oper. Res., vol. 143, no. 3, pp. 498-517, Dec. 2002.\n[31] Y. Mati, C. Lahlou, and S. Dauzère-Pérés, \"Modelling and solving a practical flexible job-shop scheduling problem with blocking constraints,\" Int. J. Prod. Res., vol. 49, no. 8, pp. 2169-2182, Apr. 2011.\n[32] P. Larra naga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation., Boston, MA, USA: Kluwer, 2001.\n[33] B. Jarboui, M. Eddaly, and P. Siarry, \"An estimation of distribution algorithm for minimizing the total flowtime in permutation flowshop scheduling problems,\" Comput. Oper. Res., vol. 36, no. 9, pp. 2638-2646, Sep. 2009.\n[34] M. C. Zhou and K. Venkatesh, Modeling, Simulation, and Control of Flexible Manufacturing Systems: A Petri Net Approach. Singapore: World Scientific, 1998.\n[35] K. Gao, Z. Cao, L. Zhang, Z. Chen, Y. Han, and Q. Pan, \"A review on swarm intelligence and evolutionary algorithms for solving flexible job shop scheduling problems,\" IEEE/CAA J. Autom. Sinica, vol. 6, no. 4, pp. 904-916, Jul. 2019.\n[36] D. C. Montgomery, Design and Analysis of Experiments. Hoboken, NJ, USA, Wiley, 2005.\n[37] N. Qi Wu and M. Zhou, \"Modeling, analysis and control of dual-arm cluster tools with residency time constraint and activity time variation based on Petri nets,\" IEEE Trans. Autom. Sci. Eng., vol. 9, no. 2, pp. 446-454, Apr. 2012.\n[38] L. Bai, N. Wu, Z. Li, and M. Zhou, \"Optimal one-wafer cyclic scheduling and buffer space configuration for single-arm multicluster tools with linear topology,\" IEEE Trans. Syst., Man, Cybern. Syst., vol. 46, no. 10, pp. 1456-1467, Oct. 2016.\n[39] Q. Zhu, Y. Qiao, and N. Wu, \"Optimal integrated schedule of entire process of dual-blade multi-cluster tools from start-up to close-down,\" IEEE/CAA J. Autom. Sinica, vol. 6, no. 2, pp. 553-565, Mar. 2019.\n[40] Q. Zhu, Y. Qiao, N. Wu, and Y. Hou, \"Post-processing time-aware optimal scheduling of single robotic cluster tools,\" IEEE/CAA J. Autom. Sinica, vol. 7, no. 2, pp. 597-605, Mar. 2020.\n[41] Y. Hou, N. Wu, Z. Li, Y. Zhang, T. Qu, and Q. Zhu, \"Many-objective optimization for scheduling of crude oil operations based on NSGA-III with consideration of energy efficiency,\" Swarm Evol. Comput., vol. 57, Sep. 2020, Art. no. 100714.\n[42] J. Luo, Z. Liu, S. Wang, and K. Xing, \"Robust deadlock avoidance policy for automated manufacturing system with multiple unreliable resources,\" IEEE/CAA J. Autom. Sinica, vol. 7, no. 3, pp. 812-821, May 2020.\n[43] S. Wang, W. Duo, X. Guo, X. Jiang, D. You, K. Barkasou, and M. Zhou, \"Computation of an emptiable minimal siphon in a subclass of Petri nets using mixed-integer programming,\" IEEE/CAA J. Autom. Sinica, early access, Jun. 2, 2020, doi: 10.1109/JAS.2020.1003210.\n[44] B. Huang, M. Zhou, C. Wang, A. Abusseruh, and Y. Al-Turki, \"Deadlockfree supervisor design for robotic manufacturing cells with uncontrollable and unobservable events,\" IEEE/CAA J. Autom. Sinica, early access, Jun. 2, 2020, doi: 10.1109/JAS.2020.1003207.\n\n![img-3.jpeg](img-3.jpeg)\n\nZHENXIN GAO received the B.S. degree in automation science and technology from the Xi'an University of Posts and Telecommunications, Xi'an, China, in 2010. He is currently pursuing the Ph.D. degree with the Systems Engineering Institute, Xi'an Jiaotong University, Xi'an.\nHis research interest includes control and scheduling of automated manufacturing systems.\n![img-4.jpeg](img-4.jpeg)\n\nYANXIANG FENG received the B.S. degree in automation science and technology and the Ph.D. degree in systems engineering from Xi'an Jiaotong University, Xi'an, China, in 2010 and 2017, respectively.\nHe is currently with the State Key Laboratory for Manufacturing Systems Engineering, Xi'an Jiaotong University. His current research interests include petri net, discrete event systems, and robust control.\n![img-5.jpeg](img-5.jpeg)\n\nKEYI XING received the B.S. degree in mathematics from Northwest University, Xi'an, China, in 1982, the M.S. degree in applied mathematics from Xidian University, Xi'an, in 1985, and the Ph.D. degree in systems engineering from Xi'an Jiaotong University, Xi'an, in 1994.\nHe was with Xidian University, in 1985. Since 2004, he has been with Xi'an Jiaotong University, where he is currently a Professor of systems engineering with the State Key Laboratory for Manufacturing Systems Engineering and the Systems Engineering Institute. His current research interests include control and scheduling of automated manufacturing, discrete-event, and hybrid systems.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "I. A. Chaudhry and A. A. Khan, \"A research survey: Review of flexible job shop scheduling techniques,\" Int. Trans. Oper. Res., vol. 23, no. 3, pp. 551-591, May 2016."
+      },
+      {
+        "ref_id": "2",
+        "text": "M. Pinedo, Scheduling: Theory, Algorithms and Systems, 3rd ed. Upper Saddle River, NJ, USA: Prentice-Hall, 2008."
+      },
+      {
+        "ref_id": "3",
+        "text": "O. Holthaus and C. Rajendran, \"A study on the performance of scheduling rules in buffer-constrained dynamic flowshops,\" Int. J. Prod. Res., vol. 40, no. 13, pp. 3041-3052, Jan. 2002."
+      },
+      {
+        "ref_id": "4",
+        "text": "B. Liu, L. Wang, and Y.-H. Jin, \"An effective hybrid PSO-based algorithm for flow shop scheduling with limited buffers,\" Comput. Oper. Res., vol. 35, no. 9, pp. 2791-2806, Sep. 2008."
+      },
+      {
+        "ref_id": "5",
+        "text": "Q.-K. Pan, L. Wang, L. Gao, and W. D. Li, \"An effective hybrid discrete differential evolution algorithm for the flow shop scheduling with intermediate buffers,\" Inf. Sci., vol. 181, no. 3, pp. 668-685, Feb. 2011."
+      },
+      {
+        "ref_id": "6",
+        "text": "C. H. Papadimitriou and P. C. Kanellakis, \"Flowshop scheduling with limited temporary storage,\" $J . A C M$, vol. 27, no. 3, pp. 533-549, Jul. 1980."
+      },
+      {
+        "ref_id": "7",
+        "text": "B. Qian, L. Wang, D.-X. Huang, W.-L. Wang, and X. Wang, \"An effective hybrid DE-based algorithm for multi-objective flow shop scheduling with limited buffers,\" Comput. Oper. Res., vol. 36, no. 1, pp. 209-233, Jan. 2009."
+      },
+      {
+        "ref_id": "8",
+        "text": "C. Zhang, Z. Shi, Z. Huang, Y. Wu, and L. Shi, \"Flow shop scheduling with a batch processor and limited buffer,\" Int. J. Prod. Res., vol. 55, no. 11, pp. 3217-3233, Jun. 2017."
+      },
+      {
+        "ref_id": "9",
+        "text": "P. Brucker, S. Heitmann, J. Hurink, and T. Nieberg, \"Job-shop scheduling with limited capacity buffers,\" OR Spectr., vol. 28, no. 2, pp. 151-176, Apr. 2006."
+      },
+      {
+        "ref_id": "10",
+        "text": "A. D'Ariano, D. Pacciarelli, and M. Pranzo, \"A branch and bound algorithm for scheduling trains in a railway network,\" Eur. J. Oper. Res., vol. 183, no. 2, pp. 643-657, Dec. 2007."
+      },
+      {
+        "ref_id": "11",
+        "text": "S. A. Fahmy, T. Y. ElMekkawy, and S. Balakrishnan, \"Deadlock-free scheduling of flexible job shops with limited capacity buffers,\" Eur. J. Ind. Eng., vol. 2, no. 3, pp. 231-252, Feb. 2008."
+      },
+      {
+        "ref_id": "12",
+        "text": "S. A. Fahmy, T. Y. ElMekkawy, and S. Balakrishnan, \"Mathematical formulations for scheduling in manufacturing cells with limited capacity buffers,\" Int. J. Oper. Res., vol. 7, no. 4, pp. 463-486, Apr. 2010."
+      },
+      {
+        "ref_id": "13",
+        "text": "M. C. Gomes, A. P. Barbosa-Póvoa, and A. Q. Novais, \"Optimal scheduling for flexible job shop operation,\" Int. J. Prod. Res., vol. 43, no. 11, pp. 2323-2353, Jun. 2005."
+      },
+      {
+        "ref_id": "14",
+        "text": "S. Heitmann, \"Job-shop scheduling with limited buffer capacities,\" Ph.D. dissertation, Dept. Math./Inform., Univ. Osnabrück, Osnabrück, Germany, 2007."
+      },
+      {
+        "ref_id": "15",
+        "text": "S. Q. Liu, E. Kozan, M. Masoud, Y. Zhang, and F. T. S. Chan, \"Job shop scheduling with a combination of four buffering constraints,\" Int. J. Prod. Res., vol. 56, no. 9, pp. 3274-3293, May 2018."
+      },
+      {
+        "ref_id": "16",
+        "text": "M. Pranzo and D. Pacciarelli, \"An iterated greedy metahearistic for the blocking job shop scheduling problem,\" J. Heuristics, vol. 22, no. 4, pp. 587-611, Aug. 2016."
+      },
+      {
+        "ref_id": "17",
+        "text": "M. Sama, A. D’Ariano, P. D’Ariano, and D. Pacciarelli, \"Scheduling models for optimal aircraft traffic control at busy airports: Tardiness, priorities, equity and violations considerations,\" Omega, vol. 67, pp. 81-98, Mar. 2017."
+      },
+      {
+        "ref_id": "18",
+        "text": "H. Toba, \"A tight flow control for job-shop fabrication lines with finite buffers,\" IEEE Trans. Autom. Sci. Eng., vol. 2, no. 1, pp. 78-83, Jan. 2005."
+      },
+      {
+        "ref_id": "19",
+        "text": "A. Witt and S. Vo beta, \"Job shop scheduling with buffer constraints and jobs consuming variable buffer space,\" in Proc. Int. Heinz Nisdorf Symp. Berlin, Germany: Springer, 2010."
+      },
+      {
+        "ref_id": "20",
+        "text": "M. P. Fanti and M. Zhou, \"Deadlock control methods in automated manufacturing systems,\" IEEE Trans. Syst., Man, Cybern. A, Syst. Humans, vol. 34, no. 1, pp. 5-22, Jun. 2004."
+      },
+      {
+        "ref_id": "21",
+        "text": "Z. Li, N. Wu, and M. Zhou, \"Deadlock control of automated manufacturing systems based on Petri nets-A literature review,\" IEEE Trans. Syst., Man, Cybern. C, Appl. Rev., vol. 42, no. 4, pp. 437-462, Jul. 2012."
+      },
+      {
+        "ref_id": "22",
+        "text": "Y. Feng, K. Xing, H. Liu, and Y. Wu, \"Two-stage design method of robust deadlock control for automated manufacturing systems with a type of unreliable resources,\" Inf. Sci., vol. 484, pp. 286-301, May 2019."
+      },
+      {
+        "ref_id": "23",
+        "text": "N. Wu and M. Zhou, \"Deadlock resolution in automated manufacturing systems with robots,\" IEEE Trans. Autom. Sci. Eng., vol. 4, no. 3, pp. 474-480, Jul. 2007."
+      },
+      {
+        "ref_id": "24",
+        "text": "K. Xing, M. Chu Zhou, H. Liu, and F. Tian, \"Optimal Petri-net-based polynomial-complexity deadlock-avoidance policies for automated manufacturing systems,\" IEEE Trans. Syst., Man, Cybern. A, Syst. Humans, vol. 39, no. 1, pp. 188-199, Jan. 2009."
+      },
+      {
+        "ref_id": "25",
+        "text": "K. Xing, L. Han, M. Zhou, and F. Wang, \"Deadlock-free genetic scheduling algorithm for automated manufacturing systems based on deadlock control policy,\" IEEE Trans. Syst., Man, Cybern., B, Cybern., vol. 42, no. 3, pp. 603-615, Jun. 2012."
+      },
+      {
+        "ref_id": "26",
+        "text": "R. Leisten, \"Flowshop sequencing problems with limited buffer storage,\" Int. J. Prod. Res., vol. 28, no. 11, pp. 2085-2100, Nov. 1990."
+      },
+      {
+        "ref_id": "27",
+        "text": "J.-Q. Li and Q.-K. Pan, \"Solving the large-scale hybrid flow shop scheduling problem with limited buffers by a hybrid artificial bee colony algorithm,\" Inf. Sci., vol. 316, pp. 487-502, Sep. 2015."
+      },
+      {
+        "ref_id": "28",
+        "text": "R. S. Hansmann, T. Rieger, and U. T. Zimmermann, \"Flexible job shop scheduling with blockages,\" Math. Methods Oper. Res., vol. 79, no. 2, pp. 135-161, Apr. 2014."
+      },
+      {
+        "ref_id": "29",
+        "text": "J. Lange and F. Werner, \"Approaches to modeling train scheduling problems as job-shop problems with blocking constraints,\" J. Scheduling, vol. 21, no. 2, pp. 191-207, Apr. 2018."
+      },
+      {
+        "ref_id": "30",
+        "text": "A. Mascis and D. Pacciarelli, \"Job-shop scheduling with blocking and no-wait constraints,\" Eur. J. Oper. Res., vol. 143, no. 3, pp. 498-517, Dec. 2002."
+      },
+      {
+        "ref_id": "31",
+        "text": "Y. Mati, C. Lahlou, and S. Dauzère-Pérés, \"Modelling and solving a practical flexible job-shop scheduling problem with blocking constraints,\" Int. J. Prod. Res., vol. 49, no. 8, pp. 2169-2182, Apr. 2011."
+      },
+      {
+        "ref_id": "32",
+        "text": "P. Larra naga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation., Boston, MA, USA: Kluwer, 2001."
+      },
+      {
+        "ref_id": "33",
+        "text": "B. Jarboui, M. Eddaly, and P. Siarry, \"An estimation of distribution algorithm for minimizing the total flowtime in permutation flowshop scheduling problems,\" Comput. Oper. Res., vol. 36, no. 9, pp. 2638-2646, Sep. 2009."
+      },
+      {
+        "ref_id": "34",
+        "text": "M. C. Zhou and K. Venkatesh, Modeling, Simulation, and Control of Flexible Manufacturing Systems: A Petri Net Approach. Singapore: World Scientific, 1998."
+      },
+      {
+        "ref_id": "35",
+        "text": "K. Gao, Z. Cao, L. Zhang, Z. Chen, Y. Han, and Q. Pan, \"A review on swarm intelligence and evolutionary algorithms for solving flexible job shop scheduling problems,\" IEEE/CAA J. Autom. Sinica, vol. 6, no. 4, pp. 904-916, Jul. 2019."
+      },
+      {
+        "ref_id": "36",
+        "text": "D. C. Montgomery, Design and Analysis of Experiments. Hoboken, NJ, USA, Wiley, 2005."
+      },
+      {
+        "ref_id": "37",
+        "text": "N. Qi Wu and M. Zhou, \"Modeling, analysis and control of dual-arm cluster tools with residency time constraint and activity time variation based on Petri nets,\" IEEE Trans. Autom. Sci. Eng., vol. 9, no. 2, pp. 446-454, Apr. 2012."
+      },
+      {
+        "ref_id": "38",
+        "text": "L. Bai, N. Wu, Z. Li, and M. Zhou, \"Optimal one-wafer cyclic scheduling and buffer space configuration for single-arm multicluster tools with linear topology,\" IEEE Trans. Syst., Man, Cybern. Syst., vol. 46, no. 10, pp. 1456-1467, Oct. 2016."
+      },
+      {
+        "ref_id": "39",
+        "text": "Q. Zhu, Y. Qiao, and N. Wu, \"Optimal integrated schedule of entire process of dual-blade multi-cluster tools from start-up to close-down,\" IEEE/CAA J. Autom. Sinica, vol. 6, no. 2, pp. 553-565, Mar. 2019."
+      },
+      {
+        "ref_id": "40",
+        "text": "Q. Zhu, Y. Qiao, N. Wu, and Y. Hou, \"Post-processing time-aware optimal scheduling of single robotic cluster tools,\" IEEE/CAA J. Autom. Sinica, vol. 7, no. 2, pp. 597-605, Mar. 2020."
+      },
+      {
+        "ref_id": "41",
+        "text": "Y. Hou, N. Wu, Z. Li, Y. Zhang, T. Qu, and Q. Zhu, \"Many-objective optimization for scheduling of crude oil operations based on NSGA-III with consideration of energy efficiency,\" Swarm Evol. Comput., vol. 57, Sep. 2020, Art. no. 100714."
+      },
+      {
+        "ref_id": "42",
+        "text": "J. Luo, Z. Liu, S. Wang, and K. Xing, \"Robust deadlock avoidance policy for automated manufacturing system with multiple unreliable resources,\" IEEE/CAA J. Autom. Sinica, vol. 7, no. 3, pp. 812-821, May 2020."
+      },
+      {
+        "ref_id": "43",
+        "text": "S. Wang, W. Duo, X. Guo, X. Jiang, D. You, K. Barkasou, and M. Zhou, \"Computation of an emptiable minimal siphon in a subclass of Petri nets using mixed-integer programming,\" IEEE/CAA J. Autom. Sinica, early access, Jun. 2, 2020, doi: 10.1109/JAS.2020.1003210."
+      },
+      {
+        "ref_id": "44",
+        "text": "B. Huang, M. Zhou, C. Wang, A. Abusseruh, and Y. Al-Turki, \"Deadlockfree supervisor design for robotic manufacturing cells with uncontrollable and unobservable events,\" IEEE/CAA J. Autom. Sinica, early access, Jun. 2, 2020, doi: 10.1109/JAS.2020.1003207."
+      }
+    ],
+    "reference_count": 44,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Job numbers in different instances.",
+      "headers": [
+        "Instances",
+        "$n_{1}$",
+        "$n_{2}$",
+        "$n_{3}$"
+      ],
+      "rows": [
+        [
+          1,
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          5,
+          4
+        ],
+        [
+          3,
+          5,
+          7,
+          6
+        ],
+        [
+          4,
+          7,
+          7,
+          8
+        ],
+        [
+          5,
+          8,
+          10,
+          10
+        ],
+        [
+          6,
+          10,
+          10,
+          10
+        ],
+        [
+          7,
+          12,
+          10,
+          10
+        ],
+        [
+          8,
+          12,
+          12,
+          10
+        ],
+        [
+          9,
+          12,
+          12,
+          12
+        ],
+        [
+          10,
+          14,
+          12,
+          14
+        ],
+        [
+          11,
+          16,
+          14,
+          14
+        ],
+        [
+          12,
+          16,
+          16,
+          16
+        ],
+        [
+          13,
+          16,
+          18,
+          16
+        ],
+        [
+          14,
+          18,
+          18,
+          18
+        ],
+        [
+          15,
+          18,
+          18,
+          20
+        ],
+        [
+          16,
+          20,
+          20,
+          20
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Processing time for operations.",
+      "headers": [
+        "Type- $q_{1}$",
+        "Type- $q_{2}$",
+        "",
+        "Type- $q_{3}$"
+      ],
+      "rows": [
+        [
+          "$\\pi_{1}$",
+          "$\\pi_{2}$",
+          "$\\pi_{3}$",
+          "$\\pi_{4}$"
+        ],
+        [
+          "$o_{11}: 8$",
+          "",
+          "$o_{21}: 4$",
+          "$o_{41}: 5$"
+        ],
+        [
+          "$o_{12}: 24$",
+          "$o_{22}: 23$",
+          "",
+          "$o_{32}: 32$"
+        ],
+        [
+          "$o_{13}: 5$",
+          "$o_{23}: 8$",
+          "",
+          "$o_{33}: 6$"
+        ],
+        [
+          "$o_{14}: 21$",
+          "$o_{24}: 38$",
+          "",
+          "$o_{34}: 20$"
+        ],
+        [
+          "$o_{15}: 4$",
+          "",
+          "$o_{25}: 5$",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Parameter values of different factor level.",
+      "headers": [
+        "Parameters",
+        "Factor level",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3
+        ],
+        [
+          "$\\rho$",
+          0.1,
+          0.3,
+          0.5
+        ],
+        [
+          "$N_{\\text {new }}$",
+          10,
+          20,
+          30
+        ],
+        [
+          "$\\rho_{\\alpha}$",
+          0.02,
+          0.04,
+          0.08
+        ],
+        [
+          "$U$",
+          14,
+          16,
+          18
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Orthogonal array $L_{\\theta}\\left(3^{4}\\right)$ and response variable values.",
+      "headers": [
+        "Trail",
+        "Factor level",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\rho$",
+          "$N_{\\text {new }}$",
+          "$\\rho_{\\alpha}$",
+          "$U$",
+          "RV"
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          277.1
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          2,
+          264.5
+        ],
+        [
+          3,
+          1,
+          3,
+          3,
+          3,
+          260.8
+        ],
+        [
+          4,
+          2,
+          1,
+          2,
+          3,
+          266.8
+        ],
+        [
+          5,
+          2,
+          2,
+          3,
+          1,
+          261.5
+        ],
+        [
+          6,
+          2,
+          3,
+          1,
+          2,
+          271.7
+        ],
+        [
+          7,
+          3,
+          1,
+          3,
+          2,
+          270.8
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          3,
+          275.8
+        ],
+        [
+          9,
+          3,
+          3,
+          2,
+          1,
+          260.1
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "Statistic results.",
+      "headers": [
+        "Factor level",
+        "RV",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\rho$",
+          "$N_{\\text {new }}$",
+          "$\\rho_{\\alpha}$",
+          "$U$"
+        ],
+        [
+          1,
+          267.47,
+          271.57,
+          274.87,
+          266.23
+        ],
+        [
+          2,
+          266.67,
+          267.27,
+          263.8,
+          269
+        ],
+        [
+          3,
+          268.9,
+          264.2,
+          264.37,
+          267.8
+        ],
+        [
+          "Delta",
+          2.23,
+          7.37,
+          11.07,
+          2.77
+        ],
+        [
+          "Rank",
+          4,
+          2,
+          1,
+          3
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Comparison of simulation results and runtime of EDA and HEDA.",
+      "headers": [
+        "Instances",
+        "EDA",
+        "",
+        "",
+        "",
+        "HEDA",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "BST",
+          "TIME/B",
+          "AVG",
+          "TIME/A",
+          "BST",
+          "TIME/B",
+          "AVG",
+          "TIME/A"
+        ],
+        [
+          1,
+          118,
+          2,
+          124.5,
+          2.0,
+          108,
+          4,
+          109.2,
+          4.9
+        ],
+        [
+          2,
+          196,
+          12,
+          208.9,
+          12.0,
+          174,
+          26,
+          179.5,
+          26.1
+        ],
+        [
+          3,
+          303,
+          44,
+          312.0,
+          43.1,
+          247,
+          93,
+          264.2,
+          100.5
+        ],
+        [
+          4,
+          378,
+          76,
+          389.9,
+          79.3,
+          295,
+          183,
+          327.3,
+          177.4
+        ],
+        [
+          5,
+          490,
+          162,
+          505.6,
+          169.2,
+          402,
+          374,
+          422.3,
+          376.8
+        ],
+        [
+          6,
+          540,
+          184,
+          558.1,
+          198.0,
+          406,
+          445,
+          452.7,
+          444.3
+        ],
+        [
+          7,
+          597,
+          245,
+          608.2,
+          245.6,
+          453,
+          542,
+          500.3,
+          503.0
+        ],
+        [
+          8,
+          655,
+          270,
+          666.5,
+          282.8,
+          491,
+          656,
+          528.0,
+          655.2
+        ],
+        [
+          9,
+          667,
+          336,
+          695.3,
+          347.6,
+          495,
+          748,
+          542.3,
+          755.3
+        ],
+        [
+          10,
+          747,
+          467,
+          777.6,
+          478.5,
+          578,
+          997,
+          620.1,
+          1025.7
+        ],
+        [
+          11,
+          845,
+          581,
+          867.8,
+          640.8,
+          668,
+          1308,
+          714.6,
+          1259.9
+        ],
+        [
+          12,
+          922,
+          887,
+          949.1,
+          833.0,
+          714,
+          1696,
+          754.6,
+          1643.2
+        ],
+        [
+          13,
+          980,
+          883,
+          993.8,
+          862.5,
+          759,
+          1778,
+          806.3,
+          1794.4
+        ],
+        [
+          14,
+          1049,
+          978,
+          1079.5,
+          1126.5,
+          805,
+          2326,
+          861.1,
+          2313.9
+        ],
+        [
+          15,
+          1082,
+          1470,
+          1107.2,
+          1323.7,
+          800,
+          2622,
+          886.5,
+          2565.5
+        ],
+        [
+          16,
+          1173,
+          1383,
+          1210.9,
+          1490.1,
+          893,
+          3273,
+          964.6,
+          2993.3
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 9
+    }
+  ]
+}

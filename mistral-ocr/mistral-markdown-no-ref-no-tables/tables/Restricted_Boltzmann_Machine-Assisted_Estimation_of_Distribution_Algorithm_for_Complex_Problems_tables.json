@@ -1,0 +1,533 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Restricted Boltzmann Machine-Assisted Estimation of Distribution Algorithm for Complex Problems.md",
+    "filename": "Restricted Boltzmann Machine-Assisted Estimation of Distribution Algorithm for Complex Problems.md",
+    "title": "Restricted Boltzmann Machine-Assisted Estimation of Distribution Algorithm for Complex Problems",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$V$",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "I"
+      ],
+      "rows": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          ""
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          ""
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          ""
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          ""
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          ""
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          ""
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          ""
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          ""
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "1",
+      "table_title": "Benchmark test problems.",
+      "headers": [
+        "Problem",
+        "Function",
+        "Dimension",
+        "Property"
+      ],
+      "rows": [
+        [
+          1,
+          "Sphere",
+          6,
+          "Multimodal"
+        ],
+        [
+          2,
+          "Rastrigrin",
+          10,
+          "Very rugged"
+        ],
+        [
+          3,
+          "Ellipsoid",
+          10,
+          "Unimodal"
+        ],
+        [
+          4,
+          2.4,
+          15,
+          "Multimodal"
+        ],
+        [
+          5,
+          "Rosenbrock",
+          15,
+          "Narrow valley"
+        ],
+        [
+          6,
+          "Step",
+          20,
+          "Unimodal"
+        ],
+        [
+          7,
+          "Ackley",
+          20,
+          "Rugged"
+        ],
+        [
+          8,
+          "Rastrigrin",
+          30,
+          "Very rugged"
+        ],
+        [
+          9,
+          "Griewank",
+          30,
+          "Rugged"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Experimental parameters.",
+      "headers": [
+        "Parameter",
+        "Setting"
+      ],
+      "rows": [
+        [
+          "Population",
+          "$(70-90)^{*} \\text { dimension }$"
+        ],
+        [
+          "Termination conditions",
+          200
+        ],
+        [
+          "Number of independent runs",
+          10
+        ],
+        [
+          "Number of hidden units in RBM",
+          "$2^{*}$ number of visible units"
+        ],
+        [
+          "Learning rate",
+          0.1
+        ],
+        [
+          "Momentum",
+          "$0.5-0.9$"
+        ],
+        [
+          "Number of training epochs in the RBM",
+          10
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparative experimental results.",
+      "headers": [
+        "Problem",
+        "EDA",
+        "",
+        "",
+        "REDA-E",
+        "",
+        "",
+        "softmaxRBM-EDA",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Avg. $\\pm$ St",
+          "Rate",
+          "Time",
+          "Avg. $\\pm$ St",
+          "Rate",
+          "Time",
+          "Avg. $\\pm$ St",
+          "Rate",
+          "Time"
+        ],
+        [
+          1,
+          "$0 \\pm 0$",
+          100,
+          0.12,
+          "$0 \\pm 0$",
+          100,
+          48.54,
+          "$0 \\pm 0$",
+          100,
+          2.88
+        ],
+        [
+          2,
+          "$0 \\pm 0$",
+          100,
+          0.75,
+          "$0 \\pm 0$",
+          100,
+          70.75,
+          "$0 \\pm 0$",
+          100,
+          23.45
+        ],
+        [
+          3,
+          "$0 \\pm 0$",
+          100,
+          0.59,
+          "$0 \\pm 0$",
+          100,
+          78.81,
+          "$0 \\pm 0$",
+          100,
+          42.07
+        ],
+        [
+          4,
+          "$9.0 \\pm 1.94$",
+          0,
+          2.77,
+          "$21.0 \\pm 20.73$",
+          40,
+          177.51,
+          "$7.40 \\pm 16.94$",
+          80,
+          153.5
+        ],
+        [
+          5,
+          "$33.70 \\pm 62.30$",
+          0,
+          2.62,
+          "$2146.20 \\pm 1885.78$",
+          0,
+          220.39,
+          "$258.0 \\pm 355.60$",
+          30,
+          146.11
+        ],
+        [
+          6,
+          "$0 \\pm 0$",
+          100,
+          5.27,
+          "$0 \\pm 0$",
+          100,
+          272.49,
+          "$0 \\pm 0$",
+          100,
+          242.45
+        ],
+        [
+          7,
+          "$0 \\pm 0$",
+          100,
+          9.3,
+          "$0 \\pm 0$",
+          100,
+          295.22,
+          "$0 \\pm 0$",
+          100,
+          129.92
+        ],
+        [
+          8,
+          "$0 \\pm 0$",
+          100,
+          10.33,
+          "$1.0 \\pm 1.70$",
+          60,
+          1012.42,
+          "$0 \\pm 0$",
+          100,
+          222.02
+        ],
+        [
+          9,
+          "$0 \\pm 0$",
+          100,
+          11.88,
+          "$1.89 e-03 \\pm 4.93 e-03$",
+          60,
+          1066.39,
+          "$0 \\pm 0$",
+          100,
+          332.95
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 10
+    },
+    {
+      "table_number": "4",
+      "table_title": "Experimental results comparing with CAL-SAPSO.",
+      "headers": [
+        "Problem (dimensions)",
+        "CAL-SAPSO <br> Avg. $\\pm$ St",
+        "RBMAEDA <br> Avg. $\\pm$ St"
+      ],
+      "rows": [
+        [
+          10,
+          "$8.79 E-01 \\pm 8.51 E-01$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          10,
+          "$2.01 E+01 \\pm 2.44 E-01$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          10,
+          "$1.12 \\pm 1.21 E-01$",
+          "$\\mathbf{2 . 7 2 E} \\mathbf{- 0 5} \\pm \\mathbf{8 . 5 9 E} \\mathbf{- 0 5}$"
+        ],
+        [
+          10,
+          "$8.88 E+01 \\pm 2.26 E+01$",
+          "$\\mathbf{1 . 0 E} \\mathbf{- 0 1} \\pm \\mathbf{3 . 1 6 E} \\mathbf{- 0 1}$"
+        ],
+        [
+          10,
+          "$\\mathbf{1 . 7 7} \\pm \\mathbf{3 . 8 0 E} \\mathbf{- 0 1}$",
+          "$9.55 E+01 \\pm 9.29 E+01$"
+        ],
+        [
+          20,
+          "$\\mathbf{1 . 5 8} \\pm \\mathbf{4 . 8 3 E} \\mathbf{- 0 1}$",
+          "$2.80 \\pm 8.51$"
+        ],
+        [
+          20,
+          "$2.01 E+01 \\pm 0$",
+          "$\\mathbf{3 . 9 7 E} \\mathbf{- 0 2} \\pm \\mathbf{1 . 2 5 E} \\mathbf{- 0 1}$"
+        ],
+        [
+          20,
+          "$1.06 \\pm 3.66 E-02$",
+          "$\\mathbf{2 . 7 5 E} \\mathbf{- 0 5} \\pm \\mathbf{8 . 7 1 E} \\mathbf{- 0 5}$"
+        ],
+        [
+          20,
+          "$7.51 E+01 \\pm 1.44 E+01$",
+          "$\\mathbf{5 . 0 E} \\mathbf{- 0 1} \\pm \\mathbf{8 . 5 0 E} \\mathbf{- 0 1}$"
+        ],
+        [
+          20,
+          "$\\mathbf{1 . 8 9} \\pm \\mathbf{3 . 3 2 E} \\mathbf{- 0 1}$",
+          "$2.63 E+02 \\pm 1.72 E+02$"
+        ],
+        [
+          30,
+          "$4.02 \\pm 1.08$",
+          "$\\mathbf{3 . 0} \\pm \\mathbf{6 . 6 0}$"
+        ],
+        [
+          30,
+          "$1.62 E+01 \\pm 4.13 E-01$",
+          "$\\mathbf{2 . 7 3 E} \\mathbf{- 0 1} \\pm \\mathbf{5 . 7 6 E} \\mathbf{- 0 1}$"
+        ],
+        [
+          30,
+          "$9.95 E-01 \\pm 3.99 E-02$",
+          "$\\mathbf{2 . 3 2 E} \\mathbf{- 0 4} \\pm \\mathbf{4 . 8 0 E} \\mathbf{- 0 4}$"
+        ],
+        [
+          30,
+          "$8.78 E+01 \\pm 1.65 E+01$",
+          "$\\mathbf{4 . 0 E} \\mathbf{- 0 1} \\pm \\mathbf{6 . 9 9 E} \\mathbf{- 0 1}$"
+        ],
+        [
+          30,
+          "$\\mathbf{1 . 7 6} \\pm \\mathbf{3 . 9 6 E} \\mathbf{- 0 1}$",
+          "$1.39 E+03 \\pm 9.66 E+02$"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "Experimental results comparing with SMAS and SMDN.",
+      "headers": [
+        "Problem (dimensions)",
+        "SMAS",
+        "",
+        "SMDN",
+        "",
+        "RBMAEDA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Avg. $\\pm$ St",
+          "Rate",
+          "Avg. $\\pm$ St",
+          "Rate",
+          "Avg. $\\pm$ St",
+          "Rate"
+        ],
+        [
+          8.35,
+          "$-733.35 \\pm 3.62$",
+          45,
+          "$-737 \\pm 0$",
+          100,
+          "$\\mathbf{- 7 3 7} \\pm \\mathbf{0}$",
+          "$\\mathbf{1 0 0}$"
+        ],
+        [
+          10,
+          "$8.30 \\pm 5.12$",
+          0,
+          "$1.25 \\pm 1.16$",
+          30,
+          "$\\mathbf{0 . 1} \\pm \\mathbf{0 . 3 2}$",
+          "$\\mathbf{9 0}$"
+        ],
+        [
+          15,
+          "$0 \\pm 0$",
+          100,
+          "$0 \\pm 0$",
+          100,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{1 0 0}$"
+        ],
+        [
+          15,
+          "$84.53 \\pm 99.44$",
+          10,
+          "$\\mathbf{0 . 2} \\pm \\mathbf{0 . 8 9}$",
+          "$\\mathbf{9 5}$",
+          "$3.03 E+02 \\pm 1.89 E+02$",
+          10
+        ],
+        [
+          20,
+          "$0.05 \\pm 0.22$",
+          95,
+          "$0 \\pm 0$",
+          100,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{1 0 0}$"
+        ],
+        [
+          20,
+          "$0 \\pm 0$",
+          100,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{1 0 0}$",
+          "$3.97 E-02 \\pm 1.25 E-01$",
+          90
+        ],
+        [
+          20,
+          "$0.96 \\pm 0.04$",
+          0,
+          "$0.87 \\pm 0.08$",
+          0,
+          "$\\mathbf{2 . 7 5 E} \\mathbf{- 0 5} \\pm \\mathbf{8 . 7 1 E} \\mathbf{- 0 5}$",
+          "$\\mathbf{9 0}$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    }
+  ]
+}

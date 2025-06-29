@@ -1,0 +1,539 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/A novel strategy for power sources management in connected plug-in hybrid electric vehicles based on mobile edge computation framework.md",
+    "filename": "A novel strategy for power sources management in connected plug-in hybrid electric vehicles based on mobile edge computation framework.md",
+    "title": "A novel strategy for power sources management in connected plug-in hybrid electric vehicles based on mobile edge computation framework",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Specifications of components.",
+      "headers": [
+        "Components",
+        "Variable",
+        "Values"
+      ],
+      "rows": [
+        [
+          "Engine",
+          "Type",
+          "In-line four-cylinder petrol engine"
+        ],
+        [
+          "",
+          "Displacement",
+          2.0
+        ],
+        [
+          "",
+          "Maximum Power",
+          1036200
+        ],
+        [
+          "",
+          "Maximum Torque",
+          "270 Nm @2500-6000 rpm"
+        ],
+        [
+          "Motor",
+          "Maximum Power",
+          124
+        ],
+        [
+          "",
+          "Maximum Torque",
+          305
+        ],
+        [
+          "",
+          "Maximum Speed",
+          12480
+        ],
+        [
+          "Battery",
+          "Type",
+          "Lithium-ion battery"
+        ],
+        [
+          "",
+          "Capacity",
+          "$21 \\mathrm{~Ah} / 6.7 \\mathrm{kWh}$"
+        ],
+        [
+          "",
+          "Nominal Voltage",
+          300
+        ],
+        [
+          "Generator (Starter)",
+          "Maximum Power",
+          8.5
+        ],
+        [
+          "",
+          "Maximum Torque",
+          45
+        ],
+        [
+          "Gearbox",
+          "Type",
+          "6-Speed AT"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Experimental setup.",
+      "headers": [
+        "Experimental Setup",
+        "Detailed Information/Values"
+      ],
+      "rows": [
+        [
+          "Operation platform",
+          "Matlab/Simulink"
+        ],
+        [
+          "Operation hardware",
+          "Workstation with Intel Xeon E3-1270@ 3.4 GHz with"
+        ],
+        [
+          "",
+          32
+        ],
+        [
+          "Population in EDA",
+          200
+        ],
+        [
+          "algorithm",
+          ""
+        ],
+        [
+          "Iteration in EDA",
+          800
+        ],
+        [
+          "algorithm",
+          ""
+        ],
+        [
+          "Sample step in EDA",
+          10
+        ],
+        [
+          "algorithm",
+          ""
+        ],
+        [
+          "Prediction length in MPC",
+          10
+        ],
+        [
+          "Sample step in MPC",
+          2
+        ],
+        [
+          "Vehicle Mass",
+          1700
+        ],
+        [
+          "Rolling resistance ratio",
+          0.0015
+        ],
+        [
+          "Aero dynamic drag ratio",
+          0.31
+        ],
+        [
+          "Vehicle frontal area",
+          2
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Energy consumption in whole trips by different EDA methods.",
+      "headers": [
+        "Trip",
+        "Control <br> Strategy",
+        "Fuel Consumption",
+        "",
+        "Electric Energy Consumption <br> (kWh)"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "(g)",
+          100,
+          ""
+        ],
+        [
+          1,
+          "EDA-W",
+          72.88,
+          2.23,
+          1.39
+        ],
+        [
+          "",
+          "EDA-Seg",
+          102.36,
+          3.14,
+          1.24
+        ],
+        [
+          "",
+          "AEDA-Seg",
+          93.47,
+          2.87,
+          1.26
+        ],
+        [
+          2,
+          "EDA-W",
+          78.09,
+          2.39,
+          1.34
+        ],
+        [
+          "",
+          "EDA-Seg",
+          112.05,
+          3.43,
+          1.16
+        ],
+        [
+          "",
+          "AEDA-Seg",
+          80.51,
+          2.46,
+          1.31
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Energy consumption in whole trips by different strategies.",
+      "headers": [
+        "Trip",
+        "Control <br> Strategy",
+        "Fuel Consumption",
+        "",
+        "Electric Energy Consumption <br> (kWh)"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "(g)",
+          100,
+          ""
+        ],
+        [
+          1,
+          "EDA-W",
+          72.88,
+          2.23,
+          1.39
+        ],
+        [
+          "",
+          "DP",
+          72.19,
+          2.22,
+          1.4
+        ],
+        [
+          "",
+          "IDP",
+          95.21,
+          2.91,
+          1.24
+        ],
+        [
+          "",
+          "AEDA-Seg",
+          93.47,
+          2.87,
+          1.26
+        ],
+        [
+          2,
+          "EDA-W",
+          78.09,
+          2.39,
+          1.34
+        ],
+        [
+          "",
+          "DP",
+          77.43,
+          2.37,
+          1.35
+        ],
+        [
+          "",
+          "IDP",
+          82.12,
+          2.51,
+          1.29
+        ],
+        [
+          "",
+          "AEDA-Seg",
+          80.51,
+          2.46,
+          1.31
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Computation time in whole trips by different strategies.",
+      "headers": [
+        "Driving <br> Cycle",
+        "Control <br> Strategy",
+        "Travel <br> Distance (m)",
+        "Travel <br> Time (s)",
+        "Computation <br> Time (s)"
+      ],
+      "rows": [
+        [
+          1,
+          "EDA-W",
+          4500,
+          473,
+          447.13
+        ],
+        [
+          "",
+          "EDA-Seg",
+          4500,
+          473,
+          396.45
+        ],
+        [
+          "",
+          "AEDA-Seg",
+          4500,
+          473,
+          399.69
+        ],
+        [
+          2,
+          "EDA-W",
+          4500,
+          654,
+          431.49
+        ],
+        [
+          "",
+          "EDA-Seg",
+          4500,
+          654,
+          382.46
+        ],
+        [
+          "",
+          "AEDA-Seg",
+          4500,
+          654,
+          383.67
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Energy consumption in each segment by different strategies.",
+      "headers": [
+        "Drive <br> Cycle",
+        "Control <br> Strategy",
+        "Route <br> Segment",
+        "Traffic <br> Factor <br> Value",
+        "Fuel <br> Consumption <br> (g)",
+        "Electric Energy <br> Consumption <br> (kWh)"
+      ],
+      "rows": [
+        [
+          1,
+          "EDA-Seg",
+          1,
+          1.223,
+          48.56,
+          0.48
+        ],
+        [
+          "",
+          "",
+          2,
+          0.955,
+          23.84,
+          0.42
+        ],
+        [
+          "",
+          "",
+          3,
+          0.989,
+          29.96,
+          0.34
+        ],
+        [
+          "",
+          "AEDA-",
+          1,
+          1.223,
+          36.53,
+          0.53
+        ],
+        [
+          "",
+          "Seg",
+          2,
+          0.955,
+          27.91,
+          0.41
+        ],
+        [
+          "",
+          "",
+          3,
+          0.989,
+          29.03,
+          0.32
+        ],
+        [
+          2,
+          "EDA-Seg",
+          1,
+          1.031,
+          34.87,
+          0.35
+        ],
+        [
+          "",
+          "",
+          2,
+          0.931,
+          35.44,
+          0.32
+        ],
+        [
+          "",
+          "",
+          3,
+          1.226,
+          41.74,
+          0.49
+        ],
+        [
+          "",
+          "AEDA-",
+          1,
+          1.031,
+          25.72,
+          0.41
+        ],
+        [
+          "",
+          "Seg",
+          2,
+          0.931,
+          38.16,
+          0.29
+        ],
+        [
+          "",
+          "",
+          3,
+          1.226,
+          16.63,
+          0.61
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Energy consumption in various driving conditions by different strategies.",
+      "headers": [
+        "Drive Cycle",
+        "Control <br> Strategy",
+        "Fuel Consumption <br> $(\\mathrm{g})$",
+        "Electric Energy <br> Consumption $(\\mathrm{kWh})$"
+      ],
+      "rows": [
+        [
+          "City Urban",
+          "EDA-W",
+          23.69,
+          0.78
+        ],
+        [
+          "",
+          "EDA-Seg",
+          35.43,
+          0.64
+        ],
+        [
+          "",
+          "AEDA-Seg",
+          24.31,
+          0.73
+        ],
+        [
+          "City",
+          "EDA-W",
+          31.61,
+          0.59
+        ],
+        [
+          "Suburban",
+          "EDA-Seg",
+          41.87,
+          0.49
+        ],
+        [
+          "",
+          "AEDA-Seg",
+          32.72,
+          0.57
+        ],
+        [
+          "Highway",
+          "EDA-W",
+          49.04,
+          0.27
+        ],
+        [
+          "",
+          "EDA-Seg",
+          55.43,
+          0.25
+        ],
+        [
+          "",
+          "AEDA-Seg",
+          49.72,
+          0.28
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    }
+  ]
+}

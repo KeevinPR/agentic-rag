@@ -1,0 +1,1312 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/Biomedical Classification Problems Automatically Solved by Computational Intelligence Methods.md",
+    "filename": "Biomedical Classification Problems Automatically Solved by Computational Intelligence Methods.md",
+    "title": "Biomedical Classification Problems Automatically Solved by Computational Intelligence Methods",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "CLASSIC, WAVELET, NON-PARAMETRIC, AND ORTHOGONAL POLYNOMIAL KERNELS",
+      "headers": [
+        "Kernel (short <br> label)",
+        "Expression",
+        "Eq."
+      ],
+      "rows": [
+        [
+          "Linear (L)",
+          "$K_{L i n}(\\mathbf{x}, \\mathbf{z})=\\mathbf{x}^{T} \\mathbf{z}$",
+          "$(2)$"
+        ],
+        [
+          "Polynomial (P)",
+          "$K_{P a l}(\\mathbf{x}, \\mathbf{z})=\\left(a \\mathbf{x}^{T} \\mathbf{z}+\\mathrm{b}\\right)^{\\mathrm{n}}$",
+          "$(3)$"
+        ],
+        [
+          "",
+          "with $h=\\cos \\left(1.75 \\times\\left(\\mathbf{x}_{i}-\\mathbf{z}_{i}\\right) / a\\right)$",
+          ""
+        ],
+        [
+          "Legendre (E)",
+          "$K_{\\text {Leg }}(\\mathbf{x}, \\mathbf{z})=\\prod_{i=1}^{d} \\sum_{j=0}^{s} P_{i}\\left(x_{j}\\right) H e_{i}\\left(z_{j}\\right)$",
+          "$(8)$"
+        ],
+        [
+          "s-Hermite (H)",
+          "$K_{H a r}(\\mathbf{x}, \\mathbf{z})=\\prod_{i=1}^{d} \\sum_{j=0}^{s} P_{i}\\left(x_{j}\\right) H e_{i}\\left(z_{j}\\right)\\left(2^{-2 n}\\right)$",
+          "$(9)$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "CLOSURES ALLOWING THE VALID COMBINATION OF KERNELS",
+      "headers": [
+        "$K(x, z)$",
+        "Description"
+      ],
+      "rows": [
+        [
+          "$K(x, z)=K_{1}(x, z)+K_{2}(x, z)$",
+          "Closure under the sum."
+        ],
+        [
+          "$K(x, z)=a K_{1}(x, z)$",
+          "Multiplication by a scalar, $a \\in R^{+}$."
+        ],
+        [
+          "$K(x, z)=K_{1}(x, z) K_{2}(x, z)$",
+          "Closure under product."
+        ],
+        [
+          "$K(x, z)=f(x) f(z)$",
+          "$f(\\cdot)$ is a real-valued function on $X$."
+        ],
+        [
+          "$K(x, z)=K_{2}(\\phi(x), \\phi(z))$",
+          "Kernel composition."
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "LISTING 2. General Genetic Programming Algorithm",
+        ""
+      ],
+      "rows": [
+        [
+          1,
+          "Generate an initial population of solutions: $S^{(0)}=\\left\\{\\mathbf{s}_{i}\\right\\}_{i=1}^{N}$ at iteration $t=0$, uniformly"
+        ],
+        [
+          2,
+          "while (stop criteria are not met)"
+        ],
+        [
+          3,
+          "Compute objective function of each solution $g\\left(S^{(t)}\\right)$"
+        ],
+        [
+          4,
+          "Select $m$ individuals for reproduction $S_{r}^{(t)} \\subset S^{(t)}$"
+        ],
+        [
+          5,
+          "Apply variation operators to $S_{r}^{(t)}$ and keep the offspring $S_{o}^{(t)}$"
+        ],
+        [
+          6,
+          "Compute objective function of each new candidate solution $g\\left(S_{o}^{(t)}\\right)$"
+        ],
+        [
+          7,
+          "Integrate candidates $S_{o}^{(t)}$ to the new population according to replacement operators"
+        ],
+        [
+          8,
+          "Update $t=t+1$"
+        ],
+        [
+          9,
+          "end while"
+        ],
+        [
+          10,
+          "Output the best solution found, $\\mathbf{s}^{*}$, as a result."
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "SUMMARY OF BIOMEDICAL CLASSIFICATION PROBLEMS",
+      "headers": [
+        "Dataset short label",
+        "Total cases (positive - negative)",
+        "Fts $^{1}$",
+        "Best Accuracy ${ }^{2}$ reported with RBF or Multiple Kernels",
+        "References"
+      ],
+      "rows": [
+        [
+          2,
+          "400 (150-250)",
+          24,
+          99.6,
+          ""
+        ],
+        [
+          4,
+          "90 (43-47)",
+          6,
+          91.0,
+          50
+        ],
+        [
+          11,
+          "961(445-516)",
+          5,
+          86.44,
+          52
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "IV",
+      "table_title": "CONFIGURATION OF SEEKS FOR KERNEL EVOLUTION",
+      "headers": [
+        "Parameter",
+        "Koch et al. 2012",
+        "Diosan et al. 2012",
+        "Souza et al. 2017",
+        "SEEKS"
+      ],
+      "rows": [
+        [
+          "Population size",
+          20,
+          50,
+          200,
+          100
+        ],
+        [
+          "Max Tree depth",
+          "---",
+          10,
+          "$100^{1}$",
+          "2-5"
+        ],
+        [
+          "Generations",
+          "$2500^{2}$",
+          50,
+          100,
+          15
+        ],
+        [
+          "Mutation rate",
+          "--- $^{3}$",
+          "$30 \\%$",
+          "$30 \\%$",
+          "$30 \\%$"
+        ],
+        [
+          "Crossover rate",
+          "---",
+          "$80 \\%$",
+          "$90 \\%$",
+          "$90 \\%$"
+        ],
+        [
+          "Function set (FS)",
+          "$\\begin{aligned} & +,-, \\times, \\\\ & \\%, \\exp \\\\ & \\text { norm } \\end{aligned}$",
+          "$\\times,+, \\exp$",
+          "$\\begin{gathered} \\mathrm{x},+, \\exp \\\\ \\log , \\tanh \\end{gathered}$",
+          "$\\times,+$"
+        ],
+        [
+          "Initialization",
+          "Grow",
+          "Grow",
+          "GE",
+          "Grow"
+        ],
+        [
+          "Selection method",
+          -8,
+          -2,
+          -2,
+          -2
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "TABLE V",
+        ""
+      ],
+      "rows": [
+        [
+          "CONFIGURATION OF SEEKS FOR HYPER-PARAMETER TUNING",
+          ""
+        ],
+        [
+          "Parameter",
+          "Experimental Setting"
+        ],
+        [
+          "Previous Works",
+          ""
+        ],
+        [
+          "RBF kernel decaying $\\gamma[18]$",
+          "$\\begin{gathered} \\gamma_{\\mathrm{gr}}=q \\cdot 10^{4} \\\\ q=\\{1,2, \\ldots, 9\\} \\\\ t=\\{-5,-4, \\ldots,-1\\} \\end{gathered}$"
+        ],
+        [
+          "Polynomial order $n[18]$",
+          "$n \\in\\{1,2, \\ldots, 15\\}$"
+        ],
+        [
+          "Regularization $C$,",
+          "$C \\in\\left\\{2^{-1}, 1,2^{1}, \\ldots 2^{5}\\right\\}$"
+        ],
+        [
+          "Kernel decaying $\\gamma[51]$",
+          "$\\gamma \\in\\left\\{2^{-6}, 2^{-5}, \\ldots, 1\\right\\}$"
+        ],
+        [
+          "Polynomial order $n$",
+          "$n \\in\\{2,3, \\ldots, 6\\}$"
+        ],
+        [
+          "Kernel decaying $\\gamma,[51]$",
+          "$\\begin{gathered} \\gamma \\\\ \\in\\{0.1,0.25,0.5,1,1.5,2,2.5,3\\} \\end{gathered}$"
+        ],
+        [
+          "SEEKS",
+          ""
+        ],
+        [
+          "Regularization $C$",
+          "$C \\in(0,32]$"
+        ],
+        [
+          "RBF kernel decaying $\\gamma$",
+          "$\\gamma \\in(0,4]$"
+        ],
+        [
+          "Polynomial order $n$",
+          "$n \\in\\{1,2, \\ldots, 6\\}$"
+        ],
+        [
+          "Wavelet dilation factor and classic polynomial scale $a$",
+          "$a \\in(0,2]$"
+        ],
+        [
+          "Classic polynomial offset $b$",
+          "$b \\in[0,5]$"
+        ],
+        [
+          "Gegenbauer $a$",
+          "$a \\in(-1,1]$"
+        ],
+        [
+          "UMDA-Sample size $M$",
+          "$25 \\%$ of the population"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 2
+    },
+    {
+      "table_number": "VII",
+      "table_title": "AVERAGE RANKS AND P-VALUES OF STATISTICAL TESTS ON THE NINE ALGORITHMS FOR KERNEL EVOLUTION",
+      "headers": [
+        "Test",
+        "Friedman",
+        "Aligned Friedman",
+        "Quade"
+      ],
+      "rows": [
+        [
+          "Algorithm",
+          "",
+          "",
+          ""
+        ],
+        [
+          "GP_clas",
+          8.033,
+          106.033,
+          8.092
+        ],
+        [
+          "GP-U_clas",
+          5.967,
+          90.367,
+          6.079
+        ],
+        [
+          "GP-B_clas",
+          6.267,
+          92.8,
+          6.317
+        ],
+        [
+          "GP_mod",
+          6.0,
+          80.133,
+          5.917
+        ],
+        [
+          "GP-U_mod",
+          4.067,
+          55.267,
+          3.838
+        ],
+        [
+          "GP-B_mod",
+          "$\\mathbf{2 . 4 0 0}$",
+          32.533,
+          "$\\mathbf{2 . 4 7 1}$"
+        ],
+        [
+          "GP_all",
+          5.833,
+          78.033,
+          5.829
+        ],
+        [
+          "GP-U_all",
+          3.7,
+          45.267,
+          3.892
+        ],
+        [
+          "GP-B_all",
+          2.733,
+          "$\\mathbf{3 1 . 5 6 7}$",
+          2.567
+        ],
+        [
+          "p-value",
+          "$\\mathbf{3 . 1 4 E - 0 9}$",
+          0.093,
+          "$\\mathbf{8 . 4 1 E - 0 9}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 4
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "POST HOC TEST FOR THE CONTROL METHOD (GP-B_mod) SUGGESTED BY THE FRIEDMAN TEST. ALGORITHMS ARE SORTED p-VALUE",
+      "headers": [
+        "Algorithm",
+        "Test Bonferroni - <br> Dunn",
+        "Holm",
+        "Holland",
+        "Rom",
+        "Finner"
+      ],
+      "rows": [
+        [
+          "GP_clas",
+          0.0,
+          0.0063,
+          0.0064,
+          0.0066,
+          0.0064
+        ],
+        [
+          "GP-B_clas",
+          0.0001,
+          0.0071,
+          0.0073,
+          0.0075,
+          0.0127
+        ],
+        [
+          "GP_mod",
+          0.0003,
+          0.0083,
+          0.0085,
+          0.0088,
+          0.0191
+        ],
+        [
+          "GP-U_clas",
+          0.0004,
+          0.01,
+          0.0102,
+          0.0105,
+          0.0253
+        ],
+        [
+          "GP_all",
+          0.0006,
+          0.0125,
+          0.0127,
+          0.0131,
+          0.0315
+        ],
+        [
+          "GP-U_mod",
+          0.0956,
+          0.0167,
+          0.017,
+          0.0167,
+          0.0377
+        ],
+        [
+          "GP-U_all",
+          0.1936,
+          0.025,
+          0.0253,
+          0.025,
+          0.0439
+        ],
+        [
+          "GP-B_all",
+          0.7389,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          "p-threshold",
+          0.0063,
+          0.0167,
+          0.017,
+          0.0131,
+          0.0377
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "IX",
+      "table_title": "POST HOC TEST FOR THE CONTROL METHOD (GP-B_mod) SUGGESTED BY THE QUADE TEST. ALGORITHMS ARE SORTED p-VALUE",
+      "headers": [
+        "",
+        "Test Bonferroni - <br> Dunn",
+        "Holm",
+        "Holland",
+        "Rom",
+        "Finner"
+      ],
+      "rows": [
+        [
+          "Algorithm",
+          0.013,
+          "$\\mathbf{0 . 0 0 6 3}$",
+          "$\\mathbf{0 . 0 0 6 4}$",
+          0.0066,
+          "$\\mathbf{0 . 0 0 6 4}$"
+        ],
+        [
+          "GP_clas",
+          0.091,
+          0.0071,
+          0.0073,
+          0.0075,
+          0.0127
+        ],
+        [
+          "GP-U_clas",
+          0.112,
+          0.0083,
+          0.0085,
+          0.0088,
+          0.0191
+        ],
+        [
+          "GP_mod",
+          0.13,
+          0.01,
+          0.0102,
+          0.0105,
+          0.0253
+        ],
+        [
+          "GP_all",
+          0.14,
+          0.0125,
+          0.0127,
+          0.0131,
+          0.0315
+        ],
+        [
+          "GP-U_all",
+          0.532,
+          0.0167,
+          0.017,
+          0.0167,
+          0.0377
+        ],
+        [
+          "GP-U_mod",
+          0.548,
+          0.025,
+          0.0253,
+          0.025,
+          0.0439
+        ],
+        [
+          "GP-B_all",
+          0.966,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          "p-threshold",
+          0.0063,
+          0.0063,
+          0.0063,
+          0.0064,
+          0.0064
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "X",
+      "table_title": "RANKS AND $p$-VALUES OF STATISTICAL TESTS APPLIED TO THE ALGORITHMS FOR KERNEL EVOLUTION",
+      "headers": [
+        "",
+        "Test",
+        "Friedman",
+        "Aligned Friedman",
+        "Quade"
+      ],
+      "rows": [
+        [
+          "GP_clas",
+          2.6,
+          32.2,
+          2.61,
+          ""
+        ],
+        [
+          "GP_mod",
+          1.8,
+          20.07,
+          1.8,
+          ""
+        ],
+        [
+          "GP_all",
+          "$\\mathbf{1 . 6 0}$",
+          "$\\mathbf{1 6 . 7 3}$",
+          "$\\mathbf{1 . 5 9}$",
+          ""
+        ],
+        [
+          "$p$-value",
+          "$\\mathbf{0 . 0 1 4 9}$",
+          "$\\mathbf{0 . 0 0 3 8}$",
+          "$\\mathbf{0 . 0 2 7 4}$",
+          ""
+        ],
+        [
+          "GP-U_clas",
+          2.33,
+          32.1,
+          2.58,
+          ""
+        ],
+        [
+          "GP-U_mod",
+          1.93,
+          19.87,
+          1.78,
+          ""
+        ],
+        [
+          "GP-U_all",
+          1.73,
+          "$\\mathbf{1 7 . 0 3}$",
+          "$\\mathbf{1 . 6 4}$",
+          ""
+        ],
+        [
+          "$p$-value",
+          0.2465,
+          "$\\mathbf{0 . 0 0 3 9}$",
+          "$\\mathbf{0 . 0 4 4 8}$",
+          ""
+        ],
+        [
+          "GP-B_clas",
+          2.8,
+          35.63,
+          2.84,
+          ""
+        ],
+        [
+          "GP-B_mod",
+          "$\\mathbf{1 . 5 3}$",
+          "$\\mathbf{1 6 . 5 7}$",
+          "$\\mathbf{1 . 4 9}$",
+          ""
+        ],
+        [
+          "GP-B_all",
+          1.67,
+          16.8,
+          1.67,
+          ""
+        ],
+        [
+          "$p$-value",
+          "$\\mathbf{6 . 9 8 E - 0 4}$",
+          "$\\mathbf{0 . 0 0 4 7}$",
+          "$\\mathbf{5 . 2 1 E - 0 4}$",
+          ""
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "XI",
+      "table_title": "BONFERRONI-DUNN POST HOC TESTS TO DETERMINE WHICH TERMINAL SETS OF KERNELS ARE STATISTICALLY DIFFERENT.",
+      "headers": [
+        "Algorithm/Test",
+        "Friedman",
+        "Aligned Friedman",
+        "Quade"
+      ],
+      "rows": [
+        [
+          "GP_clas",
+          "$\\mathbf{0 . 0 0 6}$",
+          "$\\mathbf{0 . 0 0 1}$",
+          "$\\mathbf{0 . 0 1 3}$"
+        ],
+        [
+          "GP_mod",
+          0.584,
+          0.487,
+          0.608
+        ],
+        [
+          "$p$-treshold",
+          "$\\mathbf{0 . 0 2 5}$",
+          "$\\mathbf{0 . 0 2 5}$",
+          "$\\mathbf{0 . 0 2 5}$"
+        ],
+        [
+          "GP-U_clas",
+          "-",
+          "$\\mathbf{0 . 0 0 1 7}$",
+          "$\\mathbf{0 . 0 2 3}$"
+        ],
+        [
+          "GP-U_mod",
+          "-",
+          0.554,
+          0.725
+        ],
+        [
+          "$p$-treshold",
+          "",
+          "$\\mathbf{0 . 0 2 5}$",
+          "$\\mathbf{0 . 0 2 5}$"
+        ],
+        [
+          "GP-B_clas",
+          "$\\mathbf{5 . 2 3 E - 0 4}$",
+          "$\\mathbf{7 . 0 2 E - 0 5}$",
+          "$\\mathbf{0 . 0 0 1 1}$"
+        ],
+        [
+          "GP-B_all",
+          0.715,
+          0.961,
+          0.673
+        ],
+        [
+          "$p$-treshold",
+          "$\\mathbf{0 . 0 2 5}$",
+          "$\\mathbf{0 . 0 2 5}$",
+          "$\\mathbf{0 . 0 2 5}$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "XII",
+      "table_title": "BEST KERNELS FOUND ON DIFFERENT RUNS OF THE EVOLUTIONARY METHODS REPORTED IN TABLE VI (HIGHLIGHTED IN GRAY). KERNEL EXPRESSIONS ARE FACTORED WHEN POSSIBLE",
+      "headers": [
+        "Dataset",
+        "Acc.",
+        "PSV",
+        "Kernels with highest Acc.",
+        "Run"
+      ],
+      "rows": [
+        [
+          "breast",
+          97.81,
+          0.254,
+          "$W+K_{11}$",
+          1
+        ],
+        [
+          "",
+          97.95,
+          0.23,
+          "$W+K_{11}+2 K_{13}$",
+          2
+        ],
+        [
+          "",
+          97.95,
+          0.287,
+          "$W+K_{11}$",
+          3
+        ],
+        [
+          "chronic",
+          100,
+          0.091,
+          "G",
+          1
+        ],
+        [
+          "",
+          100,
+          0.089,
+          "H",
+          2
+        ],
+        [
+          "",
+          100,
+          0.089,
+          "G",
+          3
+        ],
+        [
+          2,
+          88.06,
+          0.47,
+          "H",
+          1
+        ],
+        [
+          "",
+          87.42,
+          0.346,
+          "$G \\times H$",
+          2
+        ],
+        [
+          "",
+          87.41,
+          0.367,
+          "$K_{11}+G$",
+          3
+        ],
+        [
+          "cryotherapy",
+          97.78,
+          0.23,
+          "$(H \\times G)+L$",
+          1
+        ],
+        [
+          "",
+          96.72,
+          0.369,
+          "$H+G$",
+          2
+        ],
+        [
+          "",
+          97.78,
+          0.328,
+          "$(H \\times G)+H$",
+          3
+        ],
+        [
+          "diabetes",
+          80.99,
+          0.516,
+          "H",
+          1
+        ],
+        [
+          "",
+          80.46,
+          0.551,
+          "H",
+          2
+        ],
+        [
+          "",
+          79.55,
+          0.52,
+          "H",
+          3
+        ],
+        [
+          "fertility",
+          92.03,
+          0.945,
+          "$\\left(E \\times K_{13}\\right) \\times\\left(2+K_{13}\\right)$",
+          1
+        ],
+        [
+          "",
+          91.03,
+          0.364,
+          "G",
+          2
+        ],
+        [
+          "",
+          92.99,
+          0.392,
+          "$G+K_{11}$",
+          3
+        ],
+        [
+          "haberman",
+          77.79,
+          0.523,
+          "$2 H^{2}+E$",
+          1
+        ],
+        [
+          "",
+          78.11,
+          0.522,
+          "$E+H$",
+          2
+        ],
+        [
+          "",
+          79.1,
+          0.534,
+          "$E+G$",
+          3
+        ],
+        [
+          "heart",
+          86.67,
+          0.498,
+          "G",
+          1
+        ],
+        [
+          "",
+          86.67,
+          0.425,
+          "H",
+          2
+        ],
+        [
+          "",
+          86.67,
+          0.487,
+          "G",
+          3
+        ],
+        [
+          "immuno",
+          88.82,
+          0.417,
+          "H",
+          1
+        ],
+        [
+          "",
+          89.05,
+          0.43,
+          "$3 G$",
+          2
+        ],
+        [
+          "",
+          88.99,
+          0.491,
+          "G",
+          3
+        ],
+        [
+          "liver",
+          77.97,
+          0.636,
+          "$3 H+2 G+L$",
+          1
+        ],
+        [
+          "",
+          73.91,
+          0.745,
+          "$E+H$",
+          2
+        ],
+        [
+          "",
+          76.52,
+          0.631,
+          "$H \\times(2 L+2 H)$",
+          3
+        ],
+        [
+          "mammo",
+          83.36,
+          0.433,
+          "$L+H$",
+          1
+        ],
+        [
+          "",
+          83.15,
+          0.418,
+          "$L \\times L$",
+          2
+        ],
+        [
+          "",
+          83.98,
+          0.391,
+          "G",
+          3
+        ],
+        [
+          "parkinsons",
+          96.93,
+          0.461,
+          "$W+\\left(K_{11} \\times L\\right)$",
+          1
+        ],
+        [
+          "",
+          97.44,
+          0.501,
+          "$K_{11} \\times(2 L+3 R+P)$",
+          2
+        ],
+        [
+          "",
+          96.42,
+          0.495,
+          "$R+W$",
+          3
+        ],
+        [
+          "thoracic",
+          87.66,
+          0.394,
+          "H",
+          1
+        ],
+        [
+          "",
+          87.45,
+          0.419,
+          "H",
+          2
+        ],
+        [
+          "",
+          87.23,
+          0.415,
+          "H",
+          3
+        ],
+        [
+          "transfusion",
+          80.08,
+          0.484,
+          "$R^{2} \\times H$",
+          1
+        ],
+        [
+          "",
+          81.02,
+          0.476,
+          "$L \\times R \\times G$",
+          2
+        ],
+        [
+          "",
+          80.74,
+          0.478,
+          "$L+L \\times(H+R)^{2}$",
+          3
+        ],
+        [
+          "wpbc",
+          82.52,
+          0.66,
+          "$L \\times(R+L)^{2}+L^{2} \\times(R+L)$",
+          1
+        ],
+        [
+          "",
+          83.52,
+          0.838,
+          "$R \\times(L+P)+L$",
+          2
+        ],
+        [
+          "",
+          84.03,
+          0.628,
+          "$6 R+L$",
+          3
+        ]
+      ],
+      "row_count": 45,
+      "column_count": 5
+    },
+    {
+      "table_number": "XIII",
+      "table_title": "EVOLVED KERNEL SELECTION BY THE HIGHEST COMBINED INDEX OF ACCURACY AND PSV",
+      "headers": [
+        "dataset",
+        "Previous Works Acc. ${ }^{\\text {MV }}$",
+        "",
+        "Acc.",
+        "PSV",
+        "$\\begin{gathered} 100 \\times \\\\ \\text { Cmbldx } \\end{gathered}$",
+        "G_mean",
+        "Time (ms)",
+        "Kernel",
+        "Hyper-parameters"
+      ],
+      "rows": [
+        [
+          "breast",
+          98.031,
+          "--- 1",
+          97.22,
+          0.087,
+          98.27,
+          97.07,
+          28,
+          "$G+G$",
+          "$C=23.06, \\alpha=-0.041, n=1$"
+        ],
+        [
+          "chronic",
+          "$99.57^{2}$",
+          "$0.135^{2}$",
+          99.75,
+          0.079,
+          99.14,
+          99.8,
+          28,
+          "H",
+          "$C=08.29, n=3$"
+        ],
+        [
+          2,
+          "$86.02^{2}$",
+          "$0.416^{2}$",
+          87.42,
+          0.346,
+          78.09,
+          90.53,
+          70,
+          "$G \\times H$",
+          "$C=31.15, \\alpha=-0.057, n=3$"
+        ],
+        [
+          "cryotherapy",
+          "$91.00^{3}$",
+          "--- 3",
+          97.78,
+          0.197,
+          97.05,
+          98.97,
+          6,
+          "$3 G+L+H$",
+          "$C=16.45, \\alpha=-0.065, n=2$"
+        ],
+        [
+          "diabetes",
+          81.001,
+          "--- 1",
+          80.99,
+          0.517,
+          54.17,
+          74.71,
+          56,
+          "H",
+          "$C=19.76, n=2$"
+        ],
+        [
+          "fertility",
+          "$89.19^{2}$",
+          "$0.943^{2}$",
+          92.99,
+          0.383,
+          88.07,
+          56.16,
+          16,
+          "$G+K_{13}$",
+          "$C=03.99, \\alpha=0.217, n=6, \\tau=4.759$"
+        ],
+        [
+          "haberman",
+          "$75.77^{4}$",
+          "--- 4",
+          79.1,
+          0.534,
+          48.34,
+          "$0^{1}$",
+          78,
+          "$G+E$",
+          "$C=28.23, \\alpha=0.402, n=2$"
+        ],
+        [
+          "heart",
+          "$84.67^{2}$",
+          "$0.459^{2}$",
+          86.67,
+          0.425,
+          73.27,
+          86.31,
+          7878,
+          "H",
+          "$C=13.29, n=6$"
+        ],
+        [
+          "immuno",
+          "$88.00^{3}$",
+          "--- 5",
+          89.06,
+          0.411,
+          79.43,
+          97.14,
+          28,
+          "$3 G$",
+          "$C=17.97, \\alpha=0.031, n=5$"
+        ],
+        [
+          "liver",
+          "$74.15^{2}$",
+          "$0.712^{2}$",
+          77.97,
+          0.636,
+          39.07,
+          "$0^{1}$",
+          249,
+          "$3 H+2 G+L$",
+          "$C=25.38, \\alpha=0.429, n=1$"
+        ],
+        [
+          "mammo",
+          86.444,
+          "--- 4",
+          83.97,
+          0.392,
+          68.03,
+          91.65,
+          846,
+          "G",
+          "$C=26.77, \\alpha=-0.102, n=5$"
+        ],
+        [
+          "parkinsons",
+          "$95.98^{2}$",
+          "$0.561^{2}$",
+          96.42,
+          0.353,
+          93.21,
+          94.02,
+          8,
+          "$L+R$",
+          "$C=19.30, \\gamma=1.403$"
+        ],
+        [
+          "thoracic",
+          "$85.15^{2}$",
+          "$0.588^{2}$",
+          87.23,
+          0.337,
+          77.97,
+          20,
+          11350,
+          "H",
+          "$C=04.43, n=6$"
+        ],
+        [
+          "transfusion",
+          80.534,
+          "--- 9",
+          80.22,
+          0.431,
+          56.76,
+          49.26,
+          322,
+          "$G^{2} \\times R \\times L$",
+          "$C=25.93, \\alpha=0.464, n=1, \\gamma=2.234$"
+        ],
+        [
+          "wphe",
+          "$81.22^{4}$",
+          "--- 4",
+          81.38,
+          0.42,
+          60.22,
+          67.04,
+          14,
+          "$L$",
+          "$C=16.28$"
+        ],
+        [
+          "${ }^{1}$ Genetic Programing for kernel Evolution and hyper-parameter tuning of SVMs with classic kernels, PSV was not reported [18]. ${ }^{2}$ SVMs hyper-parameter tuning by BUMDA [27]. ${ }^{3}$ Grid Search for hyper-parameter tuning of the RBF kernel function, PSV was not reported [50]. ${ }^{4}$ The Particle Swarm Optimization (PSO) was applied to optimize the RBF kernel hyper-parameters, PSV was not reported [52]. ${ }^{5} \\mathrm{~A}$ zero value in the G -mean index in combination with high accuracy indicates that all test data were assigned to the majority class.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 10
+    },
+    {
+      "table_number": "XIV",
+      "table_title": "TIME COMPLEXITY OF SEEKS AND ITS BASE TECHNIQUES",
+      "headers": [
+        "Algorithm",
+        "Time Complexity by steps: $\\mathbf{A}+\\mathbf{B}+\\mathbf{C}+\\mathbf{D}$"
+      ],
+      "rows": [
+        [
+          "BUMDA",
+          "$\\begin{gathered} O\\left(p N^{3}\\right)+O(p \\log p)+0+G\\left[O\\left(p N^{3}\\right)+\\right. \\\\ O(p \\log (p))] \\end{gathered}$"
+        ],
+        [
+          "UMDA",
+          "$\\begin{gathered} O\\left(p N^{3}\\right)+O(p \\log p)+0+G\\left[O\\left(p N^{3}\\right)+\\right. \\\\ O(p \\log (p))] \\end{gathered}$"
+        ],
+        [
+          "GP",
+          "$\\begin{gathered} O\\left(p N^{3}\\right)+O(p \\log p)+O(p m G)+G\\left[O\\left(p N^{3}\\right)+\\right. \\\\ O(p \\log (p))] \\end{gathered}$"
+        ],
+        [
+          "SEEKS",
+          "$\\begin{gathered} O\\left(p N^{3}\\right)+O(p \\log p)+O(p m G)+G\\left[O\\left(p N^{3}\\right)+\\right. \\\\ O(p \\log (p))]+O(d p) \\end{gathered}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2015/Design of Passive Analog Electronic Circuits using Hybrid Modified UMDA Algorithm.md",
+    "filename": "Design of Passive Analog Electronic Circuits using Hybrid Modified UMDA Algorithm.md",
+    "title": "Design of Passive Analog Electronic Circuits using Hybrid Modified UMDA Algorithm",
+    "year": "2015"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] SLEZÁK, J. Evolutionary Synthesis of Analog Electronic Circuits Using EDA Algorithms. Ph.D. Thesis, Brno: Brno University of Technology, The Faculty of Electrical Engineering and Communication, 2014. 123 pages.\n[2] ZINCHENKO, L., MÜHLENBEIN, H., KUREICHIK, V., MAHNING, T. Application of the univariate marginal distribution algorithm to analog circuit design. In Proceedings of NASA/DoD Conference on Evolvable Hardware, 2002, p. 93-101. DOI: 10.1109/EH.2002.1029871\n[3] TORRES, A., PONCE, E. E., TORRES, M. D., DIAZ, E., PADILLA, F. Comparison of two evolvable systems in the automated analog circuit synthesis. In Proceedings of Eighth Mexican International Conference on Artificial Intelligence (MICAI 2009) Mexico, 2009, p. 3-8, ISBN 978-0-7695-3933-1. DOI: 10.1109/MiCAI.2009.25\n[4] TANG, M., LAU, R. Y. K. A hybrid estimation of distribution algorithm for the minimal switching graph problem. In Proceedings of International Conference on Computational Intelligence for Modelling, Control and Automation and International Conference on Intelligent Agents, Web Technologies and Internet Commerce, Austria 2005, p. 708-713. DOI: 10.1109/CIMCA.2005.1631347\n[5] MÜHLENBEIN, H., PAAB, G. From recombination of genes to the estimation of distributions I. Binary parameters. Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature PPSN IV, p. 178-187. DOI: 10.1007/3-540-61723-X_982\n[6] SANTANA, R., OCHOA, A., SOTO, M. R. Factorized distribution algorithms for functions with unitation constraints. In Proceedings of the Third Symposium on Adaptive Systems (ISAS-2001), 2001, p. $158-165$.\n[7] MÜHLENBEIN, H., MAHNIG, T., OCHOA, A. Schemata, distributions and graphical models in evolutionary optimization. Journal of Heuristics, 1999, p. 215-247.\n[8] SANTANA, R., ECHEGOYEN, C., MENDIBURU, A., BIELZA, C., LOZANO, J. A., LARRAÑAGA, P., ARMAÑANZAS, R., SHAKYA, S. MATEDA: A suite of EDA programs in Matlab. Technical Report EHU-KZAA-IK-2/09, University of the Basque Country, 2009.\n[9] CARLSON, G. E., HALIJAK, C. A. Approximation of fractional capacitors $(1 / s)^{(1 / s)}$ by a regular Newton process. IEEE Transactions on Circuit Theory, 1964, vol. 11, no. 2, p. 210-213, ISSN 0018-9324. DOI: 10.1109/TCT.1964.1082270\n[10] BALAKRISHNAN, V. K. Graph Theory, McGraw-Hill, 1997, ISBN $0-07-005489-4$.\n[11] EL-MIHOUB, T. A., HOPGOOD, A. A., NOLLE, L., BATTERSBY, A. Hybrid genetic algorithms: A review. Engineering Letters, 2006, vol. 13, no. 2, p. 124-137, ISSN: 1816-093X.\n[12] SLEZAK, J., GOTTHANS, T., DRINOVSKY, J. Evolutionary Synthesis of Fractional Capacitor Using Simulated Annealing Method. Radioengineering, 2012, vol. 21, no. 4, p. 1252-1259, ISSN 12102512.\n[13] FELDMANN, P. Model order reduction techniques for linear systems with large numbers of terminals. In Proceedings of Design, Automation and Test in Europe Conference and Exhibition, 2004, vol. 2.1, p. 944-947. DOI: 10.1109/DATE.2004.1269013",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "SLEZÁK, J. Evolutionary Synthesis of Analog Electronic Circuits Using EDA Algorithms. Ph.D. Thesis, Brno: Brno University of Technology, The Faculty of Electrical Engineering and Communication, 2014. 123 pages."
+      },
+      {
+        "ref_id": "2",
+        "text": "ZINCHENKO, L., MÜHLENBEIN, H., KUREICHIK, V., MAHNING, T. Application of the univariate marginal distribution algorithm to analog circuit design. In Proceedings of NASA/DoD Conference on Evolvable Hardware, 2002, p. 93-101. DOI: 10.1109/EH.2002.1029871"
+      },
+      {
+        "ref_id": "3",
+        "text": "TORRES, A., PONCE, E. E., TORRES, M. D., DIAZ, E., PADILLA, F. Comparison of two evolvable systems in the automated analog circuit synthesis. In Proceedings of Eighth Mexican International Conference on Artificial Intelligence (MICAI 2009) Mexico, 2009, p. 3-8, ISBN 978-0-7695-3933-1. DOI: 10.1109/MiCAI.2009.25"
+      },
+      {
+        "ref_id": "4",
+        "text": "TANG, M., LAU, R. Y. K. A hybrid estimation of distribution algorithm for the minimal switching graph problem. In Proceedings of International Conference on Computational Intelligence for Modelling, Control and Automation and International Conference on Intelligent Agents, Web Technologies and Internet Commerce, Austria 2005, p. 708-713. DOI: 10.1109/CIMCA.2005.1631347"
+      },
+      {
+        "ref_id": "5",
+        "text": "MÜHLENBEIN, H., PAAB, G. From recombination of genes to the estimation of distributions I. Binary parameters. Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature PPSN IV, p. 178-187. DOI: 10.1007/3-540-61723-X_982"
+      },
+      {
+        "ref_id": "6",
+        "text": "SANTANA, R., OCHOA, A., SOTO, M. R. Factorized distribution algorithms for functions with unitation constraints. In Proceedings of the Third Symposium on Adaptive Systems (ISAS-2001), 2001, p. $158-165$."
+      },
+      {
+        "ref_id": "7",
+        "text": "MÜHLENBEIN, H., MAHNIG, T., OCHOA, A. Schemata, distributions and graphical models in evolutionary optimization. Journal of Heuristics, 1999, p. 215-247."
+      },
+      {
+        "ref_id": "8",
+        "text": "SANTANA, R., ECHEGOYEN, C., MENDIBURU, A., BIELZA, C., LOZANO, J. A., LARRAÑAGA, P., ARMAÑANZAS, R., SHAKYA, S. MATEDA: A suite of EDA programs in Matlab. Technical Report EHU-KZAA-IK-2/09, University of the Basque Country, 2009."
+      },
+      {
+        "ref_id": "9",
+        "text": "CARLSON, G. E., HALIJAK, C. A. Approximation of fractional capacitors $(1 / s)^{(1 / s)}$ by a regular Newton process. IEEE Transactions on Circuit Theory, 1964, vol. 11, no. 2, p. 210-213, ISSN 0018-9324. DOI: 10.1109/TCT.1964.1082270"
+      },
+      {
+        "ref_id": "10",
+        "text": "BALAKRISHNAN, V. K. Graph Theory, McGraw-Hill, 1997, ISBN $0-07-005489-4$."
+      },
+      {
+        "ref_id": "11",
+        "text": "EL-MIHOUB, T. A., HOPGOOD, A. A., NOLLE, L., BATTERSBY, A. Hybrid genetic algorithms: A review. Engineering Letters, 2006, vol. 13, no. 2, p. 124-137, ISSN: 1816-093X."
+      },
+      {
+        "ref_id": "12",
+        "text": "SLEZAK, J., GOTTHANS, T., DRINOVSKY, J. Evolutionary Synthesis of Fractional Capacitor Using Simulated Annealing Method. Radioengineering, 2012, vol. 21, no. 4, p. 1252-1259, ISSN 12102512."
+      },
+      {
+        "ref_id": "13",
+        "text": "FELDMANN, P. Model order reduction techniques for linear systems with large numbers of terminals. In Proceedings of Design, Automation and Test in Europe Conference and Exhibition, 2004, vol. 2.1, p. 944-947. DOI: 10.1109/DATE.2004.1269013"
+      }
+    ],
+    "reference_count": 13,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Magnitude",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$\\omega[\\mathrm{rad} / \\mathrm{s}]$",
+          0.01,
+          100,
+          0.33
+        ],
+        [
+          "$\\Delta_{\\mathrm{m}}[\\mathrm{dB}]$",
+          0.71,
+          0.46,
+          0.61
+        ],
+        [
+          "Phase",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\omega[\\mathrm{rad} / \\mathrm{s}]$",
+          0.01,
+          100,
+          0.14
+        ],
+        [
+          "$\\Delta_{\\mathrm{p}}[\\circ]$",
+          26.3,
+          7.98,
+          5.2
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "angular frequency range:",
+        "$w_{d m}$",
+        "$w_{d p}$"
+      ],
+      "rows": [
+        [
+          "$0.01 \\mathrm{rad} / \\mathrm{s}$ to $0.0398 \\mathrm{rad} / \\mathrm{s}$",
+          1.3,
+          1.3
+        ],
+        [
+          "$0.0437 \\mathrm{rad} / \\mathrm{s}$ to $20.8930 \\mathrm{rad} / \\mathrm{s}$",
+          1,
+          1
+        ],
+        [
+          "$22.9087 \\mathrm{rad} / \\mathrm{s}$ to $100 \\mathrm{rad} / \\mathrm{s}$",
+          1.3,
+          1.3
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "maximum number of the nodes $\\left(n_{n}\\right)$",
+        "$10(0$ to 9$)$"
+      ],
+      "rows": [
+        [
+          "maximum number of the components $\\left(n_{c}\\right)$",
+          10
+        ],
+        [
+          "used types of the components",
+          "R.L.C"
+        ],
+        [
+          "negative resistors",
+          "not allowed"
+        ],
+        [
+          "angular frequency range",
+          "$0.01 \\mathrm{rad} / \\mathrm{s}$ to $100 \\mathrm{rad} / \\mathrm{s}$"
+        ],
+        [
+          "number of the points ( $m$ )",
+          "$101(25$ points/decade)"
+        ],
+        [
+          "population size (PopSize)",
+          200
+        ],
+        [
+          "number of generations (MaxGen)",
+          200
+        ],
+        [
+          "probability of execution of LSA $\\left(P_{L S A}\\right)$",
+          0.02
+        ],
+        [
+          "$w_{c m}$",
+          1
+        ],
+        [
+          "$w_{c p}$",
+          2
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "id of run",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "rows": [
+        [
+          "cost value",
+          3.805,
+          2.442,
+          3.805,
+          2.431,
+          2.428
+        ],
+        [
+          "id of run",
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        [
+          "cost value",
+          2.437,
+          2.443,
+          3.653,
+          2.433,
+          2.436
+        ],
+        [
+          "id of run",
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          "cost value",
+          2.432,
+          3.662,
+          5.197,
+          5.663,
+          5.353
+        ],
+        [
+          "id of run",
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        [
+          "cost value",
+          6.071,
+          3.805,
+          5.691,
+          6.072,
+          2.429
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Magnitude",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$\\omega[\\mathrm{rad} / \\mathrm{s}]$",
+          0.01,
+          100,
+          3.02,
+          ""
+        ],
+        [
+          "$\\Delta_{\\mathrm{m}}[d B]$",
+          0.9,
+          0.78,
+          0.3,
+          ""
+        ],
+        [
+          "Phase",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\omega[\\mathrm{rad} / \\mathrm{s}]$",
+          0.01,
+          100,
+          17.4,
+          ""
+        ],
+        [
+          "$\\Delta_{\\mathrm{p}}[\\mathrm{o}]$",
+          2.78,
+          3.97,
+          1.64,
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "original <br> circuit",
+        "$\\omega[\\mathrm{rad} / \\mathrm{s}]$",
+        "0.01",
+        "100",
+        "0.33"
+      ],
+      "rows": [
+        [
+          "$\\Delta_{\\mathrm{m}}[\\mathrm{dB}]$",
+          0.71,
+          0.46,
+          0.61,
+          ""
+        ],
+        [
+          "synthesized <br> circuit",
+          "$\\omega[\\mathrm{rad} / \\mathrm{s}]$",
+          0.01,
+          100,
+          0.3
+        ],
+        [
+          "$\\Delta_{\\mathrm{m}}[\\mathrm{dB}]$",
+          0.93,
+          0.92,
+          0.27,
+          ""
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "original",
+        "$\\omega[\\mathrm{rad} / \\mathrm{s}]$",
+        "0.01",
+        "100",
+        "0.14"
+      ],
+      "rows": [
+        [
+          "circuit",
+          "$\\Delta_{\\mathrm{p}}[\\mathrm{o}]$",
+          26.3,
+          7.98,
+          5.2
+        ],
+        [
+          "synthesized",
+          "$\\omega[\\mathrm{rad} / \\mathrm{s}]$",
+          0.01,
+          100,
+          0.58
+        ],
+        [
+          "circuit",
+          "$\\Delta_{\\mathrm{p}}[\\mathrm{o}]$",
+          3.0,
+          4.2,
+          1.5
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "simulated annealing <br> method [12]",
+        "best cost",
+        "evals"
+      ],
+      "rows": [
+        [
+          "the proposed",
+          "best cost",
+          "evals"
+        ],
+        [
+          "EDA method",
+          2.43,
+          "$120 \\mathrm{e} 3$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    }
+  ]
+}

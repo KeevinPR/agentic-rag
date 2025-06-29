@@ -1,0 +1,455 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/A new initialization procedure for the distributed estimation of distribution algorithms.md",
+    "filename": "A new initialization procedure for the distributed estimation of distribution algorithms.md",
+    "title": "A new initialization procedure for the distributed estimation of distribution algorithms",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Parameters chosen for the experiments",
+      "headers": [
+        "Population size",
+        "64, 100 and 200 individuals per island (i.e. 512, 800 and 1,600 of global population). For the proposed method, $k$ has been fixed to 10"
+      ],
+      "rows": [
+        [
+          "Offspring size",
+          "Equal to the population size"
+        ],
+        [
+          "Selected individuals for learning",
+          "$100 \\%$ of the population size"
+        ],
+        [
+          "Learning model",
+          "$\\mathrm{UMDA}_{R}$"
+        ],
+        [
+          "N \\# islands",
+          8
+        ],
+        [
+          "Migration ratio",
+          148
+        ],
+        [
+          "Migration period",
+          102040
+        ],
+        [
+          "Acceptance criterion",
+          "Select the best individuals between the immigrants and the resident population"
+        ],
+        [
+          "Topology",
+          "Ring and hypercube"
+        ],
+        [
+          "Selected emigrants",
+          "Best and random policies"
+        ],
+        [
+          "Full elitism",
+          "Best individuals from the parent and the offspring populations"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 \\# $N$ of configurations in 10D with significant differences",
+      "headers": [
+        "",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15"
+      ],
+      "rows": [
+        [
+          "Voronoi $>$ Uniform",
+          4,
+          11,
+          3,
+          2,
+          0,
+          9,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          "Uniform $>$ Voronoi",
+          0,
+          0,
+          0,
+          6,
+          2,
+          1,
+          30,
+          0,
+          6,
+          3
+        ],
+        [
+          "",
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        [
+          "Voronoi $>$ Uniform",
+          1,
+          1,
+          63,
+          59,
+          57,
+          59,
+          18,
+          62,
+          83,
+          31464
+        ],
+        [
+          "Uniform $>$ Voronoi",
+          15,
+          12,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          76
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 11
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 \\# $N$ of configurations in 30D with significant differences",
+      "headers": [
+        "",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15"
+      ],
+      "rows": [
+        [
+          "Voronoi $>$ Uniform",
+          2,
+          14,
+          1,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          "Uniform $>$ Voronoi",
+          1,
+          0,
+          1,
+          4,
+          2,
+          0,
+          0,
+          0,
+          0,
+          11
+        ],
+        [
+          "",
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        [
+          "Voronoi $>$ Uniform",
+          1,
+          0,
+          13,
+          21,
+          20,
+          0,
+          5,
+          1,
+          0,
+          29112
+        ],
+        [
+          "Uniform $>$ Voronoi",
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          28
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 11
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Average ranking of the best algorithms",
+      "headers": [
+        "Algorithm",
+        "10D",
+        "Algorithm",
+        "30D"
+      ],
+      "rows": [
+        [
+          "G-CMA-ES",
+          1.75,
+          512,
+          3.075
+        ],
+        [
+          512,
+          2.8,
+          512,
+          3.15
+        ],
+        [
+          512,
+          4.72,
+          "G-CMA-ES",
+          3.85
+        ],
+        [
+          800,
+          5.3,
+          800,
+          4.57
+        ],
+        [
+          800,
+          6.72,
+          800,
+          5.82
+        ],
+        [
+          1600,
+          7.1,
+          1600,
+          7.22
+        ],
+        [
+          64,
+          7.1,
+          1600,
+          7.52
+        ],
+        [
+          512,
+          7.57,
+          128,
+          7.87
+        ],
+        [
+          128,
+          7.8,
+          800,
+          7.87
+        ],
+        [
+          1600,
+          8.32,
+          512,
+          8.02
+        ],
+        [
+          800,
+          8.42,
+          1600,
+          9.3
+        ],
+        [
+          1600,
+          10.3,
+          64,
+          9.7
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": "Table $5 p$-Values of the comparisons of the best configurations",
+      "headers": [
+        "vorodeda512 VS",
+        "10D",
+        "",
+        "30D",
+        ""
+      ],
+      "rows": [
+        [
+          512,
+          "$1.3065 \\mathrm{E}-04$",
+          "$\\checkmark$",
+          "$2.1046 \\mathrm{E}-01$",
+          "$\\times$"
+        ],
+        [
+          800,
+          "$2.6585 \\mathrm{E}-02$",
+          "$\\times$",
+          "$4.1275 \\mathrm{E}-02$",
+          "$\\times$"
+        ],
+        [
+          800,
+          "$1.8120 \\mathrm{E}-05$",
+          "$\\checkmark$",
+          "$5.0831 \\mathrm{E}-04$",
+          "$\\checkmark$"
+        ],
+        [
+          1600,
+          "$2.4300 \\mathrm{E}-03$",
+          "$\\checkmark$",
+          "$3.1243 \\mathrm{E}-04$",
+          "$\\checkmark$"
+        ],
+        [
+          1600,
+          "$9.5367 \\mathrm{E}-07$",
+          "$\\checkmark$",
+          "$1.4628 \\mathrm{E}-04$",
+          "$\\checkmark$"
+        ],
+        [
+          64,
+          "$6.0396 \\mathrm{E}-03$",
+          "$\\checkmark$",
+          "$1.9073 \\mathrm{E}-06$",
+          "$\\checkmark$"
+        ],
+        [
+          128,
+          "$6.6757 \\mathrm{E}-05$",
+          "$\\checkmark$",
+          "$9.5367 \\mathrm{E}-06$",
+          "$\\checkmark$"
+        ],
+        [
+          512,
+          "$4.7684 \\mathrm{E}-06$",
+          "$\\checkmark$",
+          "$1.3351 \\mathrm{E}-05$",
+          "$\\checkmark$"
+        ],
+        [
+          800,
+          "$9.5367 \\mathrm{E}-07$",
+          "$\\checkmark$",
+          "$1.3351 \\mathrm{E}-05$",
+          "$\\checkmark$"
+        ],
+        [
+          1600,
+          "$9.5367 \\mathrm{E}-07$",
+          "$\\checkmark$",
+          "$2.8610 \\mathrm{E}-06$",
+          "$\\checkmark$"
+        ],
+        [
+          "G-CMA-ES",
+          "$9.9953 \\mathrm{E}-01$",
+          "$\\times$",
+          "$5.7959 \\mathrm{E}-01$",
+          "$\\times$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Number of individuals exchanged between the best configurations",
+      "headers": [
+        "Popsize",
+        "10 D",
+        "",
+        "30 D",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Voronoi",
+          "Uniform",
+          "Voronoi",
+          "Uniform"
+        ],
+        [
+          512,
+          331.05,
+          480.47,
+          244.14,
+          295.44
+        ],
+        [
+          800,
+          288.75,
+          405,
+          180,
+          213.75
+        ],
+        [
+          1600,
+          60.94,
+          168.75,
+          64.49,
+          63.48
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    }
+  ]
+}

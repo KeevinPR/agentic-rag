@@ -1,0 +1,2186 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/An efficient mixture sampling model for gaussian estimation of distribution algorithm.md",
+    "filename": "An efficient mixture sampling model for gaussian estimation of distribution algorithm.md",
+    "title": "An efficient mixture sampling model for gaussian estimation of distribution algorithm",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test functions.",
+      "headers": [
+        "IEEE CEC2013",
+        ""
+      ],
+      "rows": [
+        [
+          "$\\mathrm{CEC} 2013_{1}-\\mathrm{CEC} 2013_{9}$",
+          "unimodal functions"
+        ],
+        [
+          "$\\mathrm{CEC} 2013_{9}-\\mathrm{CEC} 2013_{20}$",
+          "simple multimodal functions"
+        ],
+        [
+          "$\\mathrm{CEC} 2013_{21}-\\mathrm{CEC} 2013_{28}$",
+          "composition functions"
+        ],
+        [
+          2014,
+          ""
+        ],
+        [
+          "$\\mathrm{CEC} 2014_{1}-\\mathrm{CEC} 2014_{3}$",
+          "unimodal functions"
+        ],
+        [
+          "$\\mathrm{CEC} 2014_{4}-\\mathrm{CEC} 2014_{16}$",
+          "simple multimodal functions"
+        ],
+        [
+          "$\\mathrm{CEC} 2014_{17}-\\mathrm{CEC} 2014_{22}$",
+          "hybrid functions"
+        ],
+        [
+          "$\\mathrm{CEC} 2014_{23}-\\mathrm{CEC} 2014_{30}$",
+          "composition functions"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "The means and the standard deviations of FEVs obtained by the two algorithms over 25 independent runs on 28 CEC2013 benchmark functions with 30D, 50D, and 100D.",
+      "headers": [
+        "Functions",
+        "EMSM-EDA(30D)",
+        "$\\mathrm{EDA}^{2}(30 \\mathrm{D})$",
+        "EMSM-EDA(50D)",
+        "$\\mathrm{EDA}^{2}(50 \\mathrm{D})$",
+        "EMSM-EDA(100D)",
+        "$\\mathrm{EDA}^{2}(100 \\mathrm{D})$"
+      ],
+      "rows": [
+        [
+          2013,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$"
+        ],
+        [
+          2013,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$1.55 \\mathrm{E}+04 \\pm 1.44 \\mathrm{E}+04$"
+        ],
+        [
+          2013,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$5.00 \\mathrm{E}-04 \\pm 2.23 \\mathrm{E}-04$",
+          "$1.07 \\mathrm{E}-06 \\pm 3.22 \\mathrm{E}-07+$",
+          "$1.68 \\mathrm{E}+02 \\pm 1.79 \\mathrm{E}+02$",
+          "$4.41 \\mathrm{E}+07 \\pm 4.81 \\mathrm{E}+07-$"
+        ],
+        [
+          2013,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$"
+        ],
+        [
+          2013,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$3.67 \\mathrm{E}-04 \\pm 4.25 \\mathrm{E}-04-$"
+        ],
+        [
+          2013,
+          "$1.06 \\mathrm{E}+00 \\pm 5.28 \\mathrm{E}+00$",
+          "$1.06 \\mathrm{E}+00 \\pm 5.28 \\mathrm{E}+00 \\approx$",
+          "$4.34 \\mathrm{E}+01 \\pm 0.00 \\mathrm{E}+00$",
+          "$4.34 \\mathrm{E}+01 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$2.10 \\mathrm{E}+02 \\pm 4.51 \\mathrm{E}+01$",
+          "$2.15 \\mathrm{E}+02 \\pm 3.00 \\mathrm{E}+01 \\approx$"
+        ],
+        [
+          2013,
+          "$5.93 \\mathrm{E}-06 \\pm 1.04 \\mathrm{E}-05$",
+          "$1.81 \\mathrm{E}-05 \\pm 3.26 \\mathrm{E}-05$",
+          "$2.01 \\mathrm{E}-04 \\pm 3.57 \\mathrm{E}-05$",
+          "$3.10 \\mathrm{E}-05 \\pm 1.06 \\mathrm{E}-05+$",
+          "$4.50 \\mathrm{E}-03 \\pm 1.67 \\mathrm{E}-03$",
+          "$4.68 \\mathrm{E}+00 \\pm 1.90 \\mathrm{E}+00-$"
+        ],
+        [
+          2013,
+          "$2.09 \\mathrm{E}+01 \\pm 3.99 \\mathrm{E}-02$",
+          "$2.09 \\mathrm{E}+01 \\pm 5.49 \\mathrm{E}-02 \\approx$",
+          "$2.11 \\mathrm{E}+01 \\pm 4.12 \\mathrm{E}-02$",
+          "$2.11 \\mathrm{E}+01 \\pm 4.30 \\mathrm{E}-02 \\approx$",
+          "$2.12 \\mathrm{E}+01 \\pm 5.19 \\mathrm{E}-02$",
+          "$2.12 \\mathrm{E}+01 \\pm 4.39 \\mathrm{E}-02 \\approx$"
+        ],
+        [
+          2013,
+          "$3.44 \\mathrm{E}+00 \\pm 1.17 \\mathrm{E}+00$",
+          "$4.19 \\mathrm{E}+00 \\pm 1.75 \\mathrm{E}+00$",
+          "$4.40 \\mathrm{E}+00 \\pm 2.57 \\mathrm{E}+00$",
+          "$5.78 \\mathrm{E}+00 \\pm 3.52 \\mathrm{E}+00$",
+          "$1.10 \\mathrm{E}+01 \\pm 2.69 \\mathrm{E}+00$",
+          "$2.49 \\mathrm{E}+01 \\pm 2.73 \\mathrm{E}+00$"
+        ],
+        [
+          2013,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\approx$"
+        ],
+        [
+          2013,
+          "$3.94 \\mathrm{E}+00 \\pm 3.44 \\mathrm{E}+00$",
+          "$5.21 \\mathrm{E}+00 \\pm 2.23 \\mathrm{E}+00$",
+          "$3.74 \\mathrm{E}+00 \\pm 1.80 \\mathrm{E}+00$",
+          "$6.09 \\mathrm{E}+00 \\pm 2.67 \\mathrm{E}+00$",
+          "$1.69 \\mathrm{E}+01 \\pm 3.83 \\mathrm{E}+00$",
+          "$7.46 \\mathrm{E}+01 \\pm 1.20 \\mathrm{E}+01-$"
+        ],
+        [
+          2013,
+          "$2.79 \\mathrm{E}+00 \\pm 1.75 \\mathrm{E}+00$",
+          "$5.29 \\mathrm{E}+00 \\pm 2.20 \\mathrm{E}+00$",
+          "$3.24 \\mathrm{E}+00 \\pm 1.79 \\mathrm{E}+00$",
+          "$5.89 \\mathrm{E}+00 \\pm 2.83 \\mathrm{E}+00$",
+          "$1.62 \\mathrm{E}+01 \\pm 3.87 \\mathrm{E}+00$",
+          "$8.53 \\mathrm{E}+01 \\pm 1.92 \\mathrm{E}+01-$"
+        ],
+        [
+          2013,
+          "$2.99 \\mathrm{E}+00 \\pm 1.66 \\mathrm{E}+00$",
+          "$6.18 \\mathrm{E}+00 \\pm 6.37 \\mathrm{E}+00$",
+          "$2.82 \\mathrm{E}+00 \\pm 1.37 \\mathrm{E}+00$",
+          "$5.17 \\mathrm{E}+00 \\pm 2.46 \\mathrm{E}+00$",
+          "$1.59 \\mathrm{E}+01 \\pm 5.00 \\mathrm{E}+00$",
+          "$1.36 \\mathrm{E}+02 \\pm 3.22 \\mathrm{E}+01-$"
+        ],
+        [
+          2013,
+          "$5.49 \\mathrm{E}+02 \\pm 5.36 \\mathrm{E}+02$",
+          "$1.74 \\mathrm{E}+03 \\pm 1.68 \\mathrm{E}+03$",
+          "$1.48 \\mathrm{E}+02 \\pm 1.20 \\mathrm{E}+02$",
+          "$3.96 \\mathrm{E}+03 \\pm 3.09 \\mathrm{E}+03$",
+          "$1.56 \\mathrm{E}+03 \\pm 4.97 \\mathrm{E}+02$",
+          "$4.54 \\mathrm{E}+03 \\pm 6.89 \\mathrm{E}+02$"
+        ],
+        [
+          2013,
+          "$3.88 \\mathrm{E}+02 \\pm 7.24 \\mathrm{E}+02$",
+          "$9.06 \\mathrm{E}+02 \\pm 1.41 \\mathrm{E}+03$",
+          "$4.26 \\mathrm{E}+02 \\pm 1.80 \\mathrm{E}+02$",
+          "$7.51 \\mathrm{E}+02 \\pm 5.74 \\mathrm{E}+02$",
+          "$1.95 \\mathrm{E}+03 \\pm 5.00 \\mathrm{E}+02$",
+          "$4.64 \\mathrm{E}+03 \\pm 7.15 \\mathrm{E}+02$"
+        ],
+        [
+          2013,
+          "$2.44 \\mathrm{E}+00 \\pm 2.82 \\mathrm{E}-01$",
+          "$2.39 \\mathrm{E}+00 \\pm 2.35 \\mathrm{E}-01+$",
+          "$3.24 \\mathrm{E}+00 \\pm 3.24 \\mathrm{E}-01$",
+          "$3.22 \\mathrm{E}+00 \\pm 3.35 \\mathrm{E}-01+$",
+          "$4.00 \\mathrm{E}+00 \\pm 2.95 \\mathrm{E}-01$",
+          "$3.95 \\mathrm{E}+00 \\pm 3.04 \\mathrm{E}-01 \\approx$"
+        ],
+        [
+          2013,
+          "$1.69 \\mathrm{E}+02 \\pm 7.79 \\mathrm{E}+00$",
+          "$1.71 \\mathrm{E}+02 \\pm 1.13 \\mathrm{E}+01$",
+          "$3.27 \\mathrm{E}+02 \\pm 1.69 \\mathrm{E}+01$",
+          "$3.46 \\mathrm{E}+02 \\pm 1.16 \\mathrm{E}+01$",
+          "$7.34 \\mathrm{E}+02 \\pm 4.82 \\mathrm{E}+01$",
+          "$3.98 \\mathrm{E}+02 \\pm 2.10 \\mathrm{E}+02+$"
+        ],
+        [
+          2013,
+          "$1.73 \\mathrm{E}+02 \\pm 8.83 \\mathrm{E}+00$",
+          "$1.75 \\mathrm{E}+02 \\pm 8.00 \\mathrm{E}+00$",
+          "$3.36 \\mathrm{E}+02 \\pm 1.52 \\mathrm{E}+01$",
+          "$3.44 \\mathrm{E}+02 \\pm 1.03 \\mathrm{E}+01$",
+          "$7.97 \\mathrm{E}+02 \\pm 1.92 \\mathrm{E}+01$",
+          "$8.27 \\mathrm{E}+02 \\pm 2.12 \\mathrm{E}+01-$"
+        ],
+        [
+          2013,
+          "$4.09 \\mathrm{E}+00 \\pm 1.71 \\mathrm{E}+00$",
+          "$4.55 \\mathrm{E}+00 \\pm 1.14 \\mathrm{E}+00$",
+          "$9.79 \\mathrm{E}+00 \\pm 2.47 \\mathrm{E}+00$",
+          "$1.05 \\mathrm{E}+01 \\pm 2.47 \\mathrm{E}+00$",
+          "$9.84 \\mathrm{E}+00 \\pm 9.22 \\mathrm{E}-01$",
+          "$1.15 \\mathrm{E}+01 \\pm 1.15 \\mathrm{E}+01-$"
+        ],
+        [
+          2013,
+          "$1.16 \\mathrm{E}+01 \\pm 3.12 \\mathrm{E}-01$",
+          "$1.19 \\mathrm{E}+01 \\pm 2.57 \\mathrm{E}-01-$",
+          "$2.12 \\mathrm{E}+01 \\pm 3.40 \\mathrm{E}-01$",
+          "$2.15 \\mathrm{E}+01 \\pm 2.87 \\mathrm{E}-01-$",
+          "$4.99 \\mathrm{E}+01 \\pm 6.54 \\mathrm{E}-01$",
+          "$5.00 \\mathrm{E}+01 \\pm 4.32 \\mathrm{E}-06 \\approx$"
+        ],
+        [
+          2013,
+          "$2.78 \\mathrm{E}+02 \\pm 7.09 \\mathrm{E}+01$",
+          "$2.93 \\mathrm{E}+02 \\pm 7.09 \\mathrm{E}+01$",
+          "$6.80 \\mathrm{E}+02 \\pm 4.70 \\mathrm{E}+02$",
+          "$5.46 \\mathrm{E}+02 \\pm 4.39 \\mathrm{E}+02+$",
+          "$3.28 \\mathrm{E}+02 \\pm 4.58 \\mathrm{E}+01$",
+          "$3.48 \\mathrm{E}+02 \\pm 5.10 \\mathrm{E}+01-$"
+        ],
+        [
+          2013,
+          "$1.95 \\mathrm{E}+02 \\pm 7.65 \\mathrm{E}+01$",
+          "$2.26 \\mathrm{E}+02 \\pm 6.67 \\mathrm{E}+01$",
+          "$1.97 \\mathrm{E}+02 \\pm 8.99 \\mathrm{E}+01$",
+          "$3.37 \\mathrm{E}+02 \\pm 6.32 \\mathrm{E}+02$",
+          "$1.63 \\mathrm{E}+03 \\pm 5.13 \\mathrm{E}+02$",
+          "$4.83 \\mathrm{E}+03 \\pm 7.71 \\mathrm{E}+02$"
+        ],
+        [
+          2013,
+          "$2.85 \\mathrm{E}+02 \\pm 1.29 \\mathrm{E}+02$",
+          "$3.20 \\mathrm{E}+02 \\pm 2.86 \\mathrm{E}+02$",
+          "$4.98 \\mathrm{E}+02 \\pm 2.08 \\mathrm{E}+02$",
+          "$6.72 \\mathrm{E}+02 \\pm 1.81 \\mathrm{E}+02$",
+          "$2.40 \\mathrm{E}+03 \\pm 5.12 \\mathrm{E}+02$",
+          "$5.74 \\mathrm{E}+03 \\pm 9.92 \\mathrm{E}+02$"
+        ],
+        [
+          2013,
+          "$2.18 \\mathrm{E}+02 \\pm 1.45 \\mathrm{E}+01$",
+          "$2.18 \\mathrm{E}+02 \\pm 1.41 \\mathrm{E}+01 \\approx$",
+          "$2.22 \\mathrm{E}+02 \\pm 2.17 \\mathrm{E}+01$",
+          "$2.24 \\mathrm{E}+02 \\pm 2.13 \\mathrm{E}+01-$",
+          "$2.50 \\mathrm{E}+02 \\pm 4.98 \\mathrm{E}+01$",
+          "$2.80 \\mathrm{E}+02 \\pm 4.51 \\mathrm{E}+01-$"
+        ],
+        [
+          2013,
+          "$2.44 \\mathrm{E}+02 \\pm 5.55 \\mathrm{E}+00$",
+          "$2.45 \\mathrm{E}+02 \\pm 7.66 \\mathrm{E}+00$",
+          "$2.77 \\mathrm{E}+02 \\pm 7.73 \\mathrm{E}+00$",
+          "$2.81 \\mathrm{E}+02 \\pm 9.21 \\mathrm{E}+00-$",
+          "$3.72 \\mathrm{E}+02 \\pm 2.32 \\mathrm{E}+01$",
+          "$4.17 \\mathrm{E}+02 \\pm 1.91 \\mathrm{E}+01-$"
+        ],
+        [
+          2013,
+          "$2.78 \\mathrm{E}+02 \\pm 3.69 \\mathrm{E}+01$",
+          "$2.72 \\mathrm{E}+02 \\pm 4.18 \\mathrm{E}+01+$",
+          "$3.04 \\mathrm{E}+02 \\pm 1.19 \\mathrm{E}+01$",
+          "$3.04 \\mathrm{E}+02 \\pm 8.76 \\mathrm{E}+00 \\approx$",
+          "$3.18 \\mathrm{E}+02 \\pm 1.76 \\mathrm{E}+01$",
+          "$3.53 \\mathrm{E}+02 \\pm 1.60 \\mathrm{E}+01-$"
+        ],
+        [
+          2013,
+          "$3.57 \\mathrm{E}+02 \\pm 8.25 \\mathrm{E}+01$",
+          "$3.64 \\mathrm{E}+02 \\pm 9.00 \\mathrm{E}+01-$",
+          "$4.84 \\mathrm{E}+02 \\pm 1.47 \\mathrm{E}+02$",
+          "$5.66 \\mathrm{E}+02 \\pm 1.22 \\mathrm{E}+02-$",
+          "$8.98 \\mathrm{E}+02 \\pm 1.72 \\mathrm{E}+02$",
+          "$1.22 \\mathrm{E}+03 \\pm 1.37 \\mathrm{E}+02-$"
+        ],
+        [
+          2013,
+          "$3.00 \\mathrm{E}+02 \\pm 0.00 \\mathrm{E}+00$",
+          "$3.00 \\mathrm{E}+02 \\pm 0.00 \\mathrm{E}+00 \\approx$",
+          "$4.00 \\mathrm{E}+02 \\pm 2.82 \\mathrm{E}-08$",
+          "$7.47 \\mathrm{E}+02 \\pm 9.58 \\mathrm{E}+02-$",
+          "$4.00 \\mathrm{E}+03 \\pm 8.97 \\mathrm{E}+02$",
+          "$3.71 \\mathrm{E}+03 \\pm 1.04 \\mathrm{E}+03+$"
+        ],
+        [
+          "No.of $+\\sim /-$",
+          "NA",
+          21016,
+          "NA",
+          4816,
+          "NA",
+          2719
+        ]
+      ],
+      "row_count": 29,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results obtained by the Wilcoxon's test on CEC2013 Benchmark functions with 30D, 50D, and 100D.",
+      "headers": [
+        "VS",
+        "$R^{+}$",
+        "$R^{-}$",
+        "$p$-value"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{EDA}^{2}(30 \\mathrm{D})$",
+          344.5,
+          61.5,
+          0.001184
+        ],
+        [
+          "$\\mathrm{EDA}^{2}(50 \\mathrm{D})$",
+          335.0,
+          71.0,
+          0.002551
+        ],
+        [
+          "$\\mathrm{EDA}^{2}(100 \\mathrm{D})$",
+          353.0,
+          53.0,
+          0.000588
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "The means and the standard deviations of FEVs obtained by the two algorithms over 25 independent runs on 30 CEC2014 benchmark functions with 30D, 50D, and 100D.",
+      "headers": [
+        "Functions",
+        "EMSM-EDA(30D)",
+        "$\\mathrm{EDA}^{2}(30 \\mathrm{D})$",
+        "EMSM-EDA(50D)",
+        "$\\mathrm{EDA}^{2}(50 \\mathrm{D})$",
+        "EMSM-EDA(100D)",
+        "$\\mathrm{EDA}^{2}(100 \\mathrm{D})$"
+      ],
+      "rows": [
+        [
+          20141,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$1.26 \\mathrm{E}-08 \\pm 1.18 \\mathrm{E}-08$",
+          "$1.51 \\mathrm{E}+04 \\pm 1.34 \\mathrm{E}+04$"
+        ],
+        [
+          20142,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$1.37 \\mathrm{E}-06 \\pm 1.00 \\mathrm{E}-06$",
+          "$4.14 \\mathrm{E}+03 \\pm 1.05 \\mathrm{E}+04$"
+        ],
+        [
+          20143,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$"
+        ],
+        [
+          20144,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$4.77 \\mathrm{E}+01 \\pm 4.95 \\mathrm{E}+01$",
+          "$4.96 \\mathrm{E}+01 \\pm 4.75 \\mathrm{E}+01$",
+          "$1.79 \\mathrm{E}+02 \\pm 2.95 \\mathrm{E}+01$",
+          "$1.92 \\mathrm{E}+02 \\pm 2.57 \\mathrm{E}+01$"
+        ],
+        [
+          20145,
+          "$2.09 \\mathrm{E}+01 \\pm 5.11 \\mathrm{E}-02$",
+          "$2.10 \\mathrm{E}+01 \\pm 3.40 \\mathrm{E}-02$",
+          "$2.11 \\mathrm{E}+01 \\pm 4.30 \\mathrm{E}-02 \\times$",
+          "$2.11 \\mathrm{E}+01 \\pm 3.87 \\mathrm{E}-02 \\times$",
+          "$2.13 \\mathrm{E}+01 \\pm 2.55 \\mathrm{E}-02$",
+          "$2.13 \\mathrm{E}+01 \\pm 1.92 \\mathrm{E}-02 \\times$"
+        ],
+        [
+          20146,
+          "$1.60 \\mathrm{E}-01 \\pm 4.09 \\mathrm{E}-01$",
+          "$1.89 \\mathrm{E}-01 \\pm 4.75 \\mathrm{E}-01$",
+          "$2.55 \\mathrm{E}-01 \\pm 4.49 \\mathrm{E}-01$",
+          "$2.63 \\mathrm{E}-01 \\pm 5.20 \\mathrm{E}-01$",
+          "$2.47 \\mathrm{E}+00 \\pm 1.68 \\mathrm{E}+00$",
+          "$4.48 \\mathrm{E}+00 \\pm 2.51 \\mathrm{E}+00$"
+        ],
+        [
+          20147,
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00 \\pm 0.00 \\mathrm{E}+00 \\times$"
+        ],
+        [
+          20148,
+          "$4.42 \\mathrm{E}+00 \\pm 2.28 \\mathrm{E}+00$",
+          "$6.13 \\mathrm{E}+00 \\pm 2.47 \\mathrm{E}+00$",
+          "$5.53 \\mathrm{E}+00 \\pm 1.89 \\mathrm{E}+00$",
+          "$8.04 \\mathrm{E}+00 \\pm 1.97 \\mathrm{E}+00$",
+          "$2.37 \\mathrm{E}+01 \\pm 5.27 \\mathrm{E}+00$",
+          "$5.77 \\mathrm{E}+01 \\pm 1.03 \\mathrm{E}+01$"
+        ],
+        [
+          20149,
+          "$3.98 \\mathrm{E}+00 \\pm 1.84 \\mathrm{E}+00$",
+          "$6.49 \\mathrm{E}+00 \\pm 2.26 \\mathrm{E}+00$",
+          "$5.25 \\mathrm{E}+00 \\pm 2.25 \\mathrm{E}+00$",
+          "$7.84 \\mathrm{E}+00 \\pm 2.19 \\mathrm{E}+00$",
+          "$2.09 \\mathrm{E}+01 \\pm 4.08 \\mathrm{E}+00$",
+          "$8.19 \\mathrm{E}+01 \\pm 1.47 \\mathrm{E}+01$"
+        ],
+        [
+          201410,
+          "$1.88 \\mathrm{E}+01 \\pm 3.87 \\mathrm{E}+01$",
+          "$2.85 \\mathrm{E}+01 \\pm 5.60 \\mathrm{E}+01$",
+          "$9.33 \\mathrm{E}+01 \\pm 1.48 \\mathrm{E}+02$",
+          "$1.76 \\mathrm{E}+02 \\pm 1.93 \\mathrm{E}+02$",
+          "$1.14 \\mathrm{E}+03 \\pm 5.31 \\mathrm{E}+02$",
+          "$3.35 \\mathrm{E}+03 \\pm 6.77 \\mathrm{E}+02$"
+        ],
+        [
+          201411,
+          "$9.42 \\mathrm{E}+01 \\pm 7.83 \\mathrm{E}+01$",
+          "$1.24 \\mathrm{E}+02 \\pm 1.01 \\mathrm{E}+02$",
+          "$8.27 \\mathrm{E}+01 \\pm 1.12 \\mathrm{E}+02$",
+          "$1.86 \\mathrm{E}+02 \\pm 1.48 \\mathrm{E}+02$",
+          "$1.32 \\mathrm{E}+03 \\pm 4.58 \\mathrm{E}+02$",
+          "$3.73 \\mathrm{E}+03 \\pm 7.75 \\mathrm{E}+02$"
+        ],
+        [
+          201412,
+          "$2.45 \\mathrm{E}+00 \\pm 2.71 \\mathrm{E}-01$",
+          "$2.48 \\mathrm{E}+00 \\pm 2.41 \\mathrm{E}-01$",
+          "$3.38 \\mathrm{E}+00 \\pm 3.59 \\mathrm{E}-01$",
+          "$3.43 \\mathrm{E}+00 \\pm 1.93 \\mathrm{E}-01 \\times$",
+          "$4.03 \\mathrm{E}+00 \\pm 1.90 \\mathrm{E}-01$",
+          "$3.91 \\mathrm{E}+00 \\pm 2.56 \\mathrm{E}-01 \\times$"
+        ],
+        [
+          201413,
+          "$3.62 \\mathrm{E}-02 \\pm 1.01 \\mathrm{E}-02$",
+          "$4.52 \\mathrm{E}-02 \\pm 1.02 \\mathrm{E}-02$",
+          "$6.31 \\mathrm{E}-02 \\pm 9.91 \\mathrm{E}-03$",
+          "$7.22 \\mathrm{E}-02 \\pm 9.66 \\mathrm{E}-03$",
+          "$1.27 \\mathrm{E}-01 \\pm 2.04 \\mathrm{E}-02$",
+          "$1.62 \\mathrm{E}-01 \\pm 1.98 \\mathrm{E}-02$"
+        ],
+        [
+          201414,
+          "$3.62 \\mathrm{E}-0 \\pm 5.66 \\mathrm{E}-02$",
+          "$4.08 \\mathrm{E}-01 \\pm 3.53 \\mathrm{E}-02$",
+          "$3.57 \\mathrm{E}-01 \\pm 5.11 \\mathrm{E}-02$",
+          "$3.96 \\mathrm{E}-01 \\pm 4.63 \\mathrm{E}-02$",
+          "$3.76 \\mathrm{E}-01 \\pm 4.66 \\mathrm{E}-02$",
+          "$3.97 \\mathrm{E}-01 \\pm 4.19 \\mathrm{E}-02$"
+        ],
+        [
+          201415,
+          "$4.11 \\mathrm{E}+00 \\pm 1.37 \\mathrm{E}+00$",
+          "$4.09 \\mathrm{E}+00 \\pm 1.27 \\mathrm{E}+00+$",
+          "$1.07 \\mathrm{E}+01 \\pm 2.25 \\mathrm{E}+00$",
+          "$1.12 \\mathrm{E}+01 \\pm 1.60 \\mathrm{E}+00$",
+          "$1.00 \\mathrm{E}+01 \\pm 8.77 \\mathrm{E}-01$",
+          "$1.17 \\mathrm{E}+01 \\pm 1.07 \\mathrm{E}+00$"
+        ],
+        [
+          201416,
+          "$1.20 \\mathrm{E}+01 \\pm 3.30 \\mathrm{E}-01$",
+          "$1.22 \\mathrm{E}+01 \\pm 1.85 \\mathrm{E}-01$",
+          "$2.15 \\mathrm{E}+01 \\pm 2.55 \\mathrm{E}-01$",
+          "$2.19 \\mathrm{E}+01 \\pm 1.75 \\mathrm{E}-01$",
+          "$4.57 \\mathrm{E}+01 \\pm 4.03 \\mathrm{E}-01$",
+          "$4.60 \\mathrm{E}+01 \\pm 3.10 \\mathrm{E}-01$"
+        ],
+        [
+          201417,
+          "$5.35 \\mathrm{E}+00 \\pm 5.19 \\mathrm{E}+00$",
+          "$1.40 \\mathrm{E}+01 \\pm 8.26 \\mathrm{E}+00$",
+          "$2.39 \\mathrm{E}+01 \\pm 1.51 \\mathrm{E}+01$",
+          "$2.92 \\mathrm{E}+01 \\pm 1.62 \\mathrm{E}+01$",
+          "$8.44 \\mathrm{E}+01 \\pm 2.69 \\mathrm{E}+01$",
+          "$1.89 \\mathrm{E}+03 \\pm 5.60 \\mathrm{E}+02$"
+        ],
+        [
+          201418,
+          "$5.56 \\mathrm{E}-01 \\pm 2.64 \\mathrm{E}-01$",
+          "$8.74 \\mathrm{E}-01 \\pm 6.12 \\mathrm{E}-01$",
+          "$1.08 \\mathrm{E}+00 \\pm 7.96 \\mathrm{E}-01$",
+          "$1.44 \\mathrm{E}+00 \\pm 1.04 \\mathrm{E}+00$",
+          "$3.65 \\mathrm{E}+00 \\pm 1.66 \\mathrm{E}+00$",
+          "$1.50 \\mathrm{E}+02 \\pm 3.75 \\mathrm{E}=01$"
+        ],
+        [
+          201419,
+          "$3.15 \\mathrm{E}+00 \\pm 2.98 \\mathrm{E}-01$",
+          "$3.88 \\mathrm{E}+00 \\pm 6.63 \\mathrm{E}-01$",
+          "$6.51 \\mathrm{E}+00 \\pm 5.27 \\mathrm{E}-01$",
+          "$7.38 \\mathrm{E}+00 \\pm 7.50 \\mathrm{E}-01$",
+          "$9.17 \\mathrm{E}+01 \\pm 1.14 \\mathrm{E}+00$",
+          "$9.52 \\mathrm{E}+01 \\pm 1.59 \\mathrm{E}+00$"
+        ],
+        [
+          201420,
+          "$1.45 \\mathrm{E}+00 \\pm 3.48 \\mathrm{E}-01$",
+          "$1.48 \\mathrm{E}+00 \\pm 2.80 \\mathrm{E}-01$",
+          "$2.24 \\mathrm{E}+00 \\pm 3.59 \\mathrm{E}-01$",
+          "$2.64 \\mathrm{E}+00 \\pm 5.44 \\mathrm{E}-01$",
+          "$4.32 \\mathrm{E}+00 \\pm 1.16 \\mathrm{E}+00$",
+          "$4.31 \\mathrm{E}+01 \\pm 1.31 \\mathrm{E}+01$"
+        ],
+        [
+          201421,
+          "$1.97 \\mathrm{E}+00 \\pm 4.06 \\mathrm{E}+00$",
+          "$6.28 \\mathrm{E}+00 \\pm 2.37 \\mathrm{E}+01$",
+          "$1.48 \\mathrm{E}+02 \\pm 7.65 \\mathrm{E}+01$",
+          "$1.24 \\mathrm{E}+02 \\pm 9.92 \\mathrm{E}+01+$",
+          "$1.43 \\mathrm{E}+02 \\pm 7.01 \\mathrm{E}+01$",
+          "$4.97 \\mathrm{E}+02 \\pm 1.98 \\mathrm{E}+02$"
+        ],
+        [
+          201422,
+          "$4.70 \\mathrm{E}+01 \\pm 4.46 \\mathrm{E}+01$",
+          "$4.73 \\mathrm{E}+01 \\pm 4.54 \\mathrm{E}+01$",
+          "$2.95 \\mathrm{E}+01 \\pm 6.27 \\mathrm{E}-01$",
+          "$2.98 \\mathrm{E}+01 \\pm 5.88 \\mathrm{E}-01$",
+          "$4.83 \\mathrm{E}+01 \\pm 5.36 \\mathrm{E}+01$",
+          "$7.17 \\mathrm{E}+01 \\pm 6.14 \\mathrm{E}+01$"
+        ],
+        [
+          201423,
+          "$3.15 \\mathrm{E}+02 \\pm 0.00 \\mathrm{E}+00$",
+          "$3.15 \\mathrm{E}+02 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$3.44 \\mathrm{E}+02 \\pm 0.00 \\mathrm{E}+00$",
+          "$3.44 \\mathrm{E}+02 \\pm 0.00 \\mathrm{E}+00$",
+          "$3.48 \\mathrm{E}+02 \\pm 0.00 \\mathrm{E}+00$",
+          "$3.48 \\mathrm{E}+02 \\pm 6.33 \\mathrm{E}-04 \\times$"
+        ],
+        [
+          201424,
+          "$2.00 \\mathrm{E}+02 \\pm 2.91 \\mathrm{E}-08$",
+          "$2.00 \\mathrm{E}+02 \\pm 0.00 \\mathrm{E}+00 \\times$",
+          "$2.66 \\mathrm{E}+02 \\pm 2.49 \\mathrm{E}+00$",
+          "$2.68 \\mathrm{E}+02 \\pm 1.57 \\mathrm{E}+00$",
+          "$3.65 \\mathrm{E}+02 \\pm 7.59 \\mathrm{E}-01$",
+          "$3.78 \\mathrm{E}+02 \\pm 3.04 \\mathrm{E}+00$"
+        ],
+        [
+          201425,
+          "$2.03 \\mathrm{E}+02 \\pm 2.12 \\mathrm{E}-02$",
+          "$2.03 \\mathrm{E}+02 \\pm 3.11 \\mathrm{E}-02 \\times$",
+          "$2.04 \\mathrm{E}+02 \\pm 1.55 \\mathrm{E}-01$",
+          "$2.04 \\mathrm{E}+02 \\pm 1.16 \\mathrm{E}-01 \\times$",
+          "$2.14 \\mathrm{E}+02 \\pm 2.83 \\mathrm{E}-01$",
+          "$2.18 \\mathrm{E}+02 \\pm 1.42 \\mathrm{E}+00$"
+        ],
+        [
+          201426,
+          "$1.00 \\mathrm{E}+02 \\pm 7.73 \\mathrm{E}-03$",
+          "$1.00 \\mathrm{E}+02 \\pm 1.10 \\mathrm{E}-02 \\times$",
+          "$1.00 \\mathrm{E}+02 \\pm 1.24 \\mathrm{E}-02$",
+          "$1.00 \\mathrm{E}+02 \\pm 1.60 \\mathrm{E}-02 \\times$",
+          "$2.00 \\mathrm{E}+02 \\pm 9.51 \\mathrm{E}-07$",
+          "$2.00 \\mathrm{E}+02 \\pm 1.56 \\mathrm{E}-02 \\times$"
+        ],
+        [
+          201427,
+          "$3.29 \\mathrm{E}+02 \\pm 4.22 \\mathrm{E}+01$",
+          "$3.49 \\mathrm{E}+02 \\pm 4.41 \\mathrm{E}+01$",
+          "$4.00 \\mathrm{E}+02 \\pm 5.23 \\mathrm{E}+01$",
+          "$4.09 \\mathrm{E}+02 \\pm 5.16 \\mathrm{E}+01$",
+          "$4.37 \\mathrm{E}+02 \\pm 9.29 \\mathrm{E}+01$",
+          "$6.50 \\mathrm{E}+02 \\pm 1.60 \\mathrm{E}+02$"
+        ],
+        [
+          201428,
+          "$8.06 \\mathrm{E}+02 \\pm 4.32 \\mathrm{E}+01$",
+          "$8.12 \\mathrm{E}+02 \\pm 4.36 \\mathrm{E}+01$",
+          "$1.18 \\mathrm{E}+03 \\pm 1.83 \\mathrm{E}+02$",
+          "$1.21 \\mathrm{E}+03 \\pm 1.91 \\mathrm{E}+02$",
+          "$2.50 \\mathrm{E}+03 \\pm 3.80 \\mathrm{E}+02$",
+          "$3.02 \\mathrm{E}+03 \\pm 5.24 \\mathrm{E}+02$"
+        ],
+        [
+          201429,
+          "$6.21 \\mathrm{E}+02 \\pm 2.22 \\mathrm{E}+02$",
+          "$7.65 \\mathrm{E}+05 \\pm 2.67 \\mathrm{E}+06$",
+          "$7.36 \\mathrm{E}+02 \\pm 1.27 \\mathrm{E}+02$",
+          "$7.08 \\mathrm{E}+02 \\pm 1.20 \\mathrm{E}+02+$",
+          "$4.75 \\mathrm{E}+06 \\pm 2.37 \\mathrm{E}+07$",
+          "$1.35 \\mathrm{E}+07 \\pm 4.81 \\mathrm{E}+07$"
+        ],
+        [
+          201430,
+          "$9.04 \\mathrm{E}+02 \\pm 4.30 \\mathrm{E}+02$",
+          "$1.05 \\mathrm{E}+03 \\pm 4.44 \\mathrm{E}+02$",
+          "$9.14 \\mathrm{E}+03 \\pm 6.14 \\mathrm{E}+02$",
+          "$9.37 \\mathrm{E}+03 \\pm 8.11 \\mathrm{E}+02$",
+          "$3.23 \\mathrm{E}+03 \\pm 6.92 \\mathrm{E}+02$",
+          "$4.93 \\mathrm{E}+03 \\pm 1.27 \\mathrm{E}+03$"
+        ],
+        [
+          "No.of $+1 \\times-1$",
+          "NA",
+          1920,
+          "NA",
+          2919,
+          "NA",
+          624
+        ]
+      ],
+      "row_count": 31,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Results obtained by the Wilcoxon's test on CEC2014 Benchmark functions with 30D, 50D, and 100D.",
+      "headers": [
+        "VS",
+        "$R^{\\circ}$",
+        "$R^{\\prime}$",
+        "$p$-value"
+      ],
+      "rows": [
+        [
+          "$\\operatorname{EDA}^{2}(30 \\mathrm{D})$",
+          407.0,
+          28.0,
+          4e-05
+        ],
+        [
+          "$\\operatorname{EDA}^{2}(50 \\mathrm{D})$",
+          396.0,
+          69.0,
+          0.000743
+        ],
+        [
+          "$\\operatorname{EDA}^{2}(100 \\mathrm{D})$",
+          423.0,
+          12.0,
+          8e-06
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "The means and the standard deviations of FEVs obtained by the five algorithms over 25 independent runs on 30 CEC2014 benchmark functions with 30D.",
+      "headers": [
+        "Functions",
+        "$\\mathrm{EDA}^{2}$",
+        "$\\mathrm{U}-\\mathrm{EDA}^{2}$",
+        "$\\mathrm{U}-\\mathrm{EDA}^{2}$",
+        "$\\mathrm{M}-\\mathrm{EDA}^{2}$",
+        "EMSM-EDA"
+      ],
+      "rows": [
+        [
+          2014,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2014,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2014,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2014,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2014,
+          2.1001,
+          2.0901,
+          2.1001,
+          2.1001,
+          2.0901
+        ],
+        [
+          2014,
+          "1.89E-01 $\\pm 4.75 \\mathrm{E}-01-$",
+          "1.72E-01 $\\pm 5.13 \\mathrm{E}-01-$",
+          "1.80E-01 $\\pm 2.53 \\mathrm{E}-01-$",
+          "1.78E-01 $\\pm 3.92 \\mathrm{E}-01-$",
+          "1.60E-01 $\\pm 4.09 \\mathrm{E}-01$"
+        ],
+        [
+          2014,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2014,
+          6.13,
+          5.43,
+          4.97,
+          4.81,
+          4.42
+        ],
+        [
+          2014,
+          6.49,
+          4.98,
+          5.36,
+          6.51,
+          3.98
+        ],
+        [
+          2014,
+          2.8501,
+          2.8401,
+          2.5301,
+          2.0201,
+          1.8801
+        ],
+        [
+          2014,
+          1.2402,
+          1.0202,
+          1.2002,
+          9.8701,
+          9.4201
+        ],
+        [
+          2014,
+          2.48,
+          2.49,
+          2.48,
+          2.46,
+          2.45
+        ],
+        [
+          2014,
+          "4.52E-02 $\\pm 1.02 \\mathrm{E}-02-$",
+          "4.47E-02 $\\pm 1.32 \\mathrm{E}-02-$",
+          "3.84E-02 $\\pm 4.36 \\mathrm{E}-02-$",
+          "4.01E-02 $\\pm 3.47 \\mathrm{E}-02-$",
+          "3.62E-02 $\\pm 3.62 \\mathrm{E}-02$"
+        ],
+        [
+          2014,
+          "4.08E-01 $\\pm 3.53 \\mathrm{E}-02-$",
+          "3.84E-01 $\\pm 4.52 \\mathrm{E}-01-$",
+          "3.97E-01 $\\pm 5.13 \\mathrm{E}-01-$",
+          "4.01E-01 $\\pm 6.42 \\mathrm{E}-01-$",
+          "3.62E-01 $\\pm 5.66 \\mathrm{E}-02$"
+        ],
+        [
+          2014,
+          4.09,
+          4.31,
+          4.24,
+          4.19,
+          4.11
+        ],
+        [
+          2014,
+          1.2201,
+          1.2001,
+          1.2101,
+          1.2301,
+          1.2001
+        ],
+        [
+          2014,
+          1.4001,
+          6.73,
+          1.2301,
+          1.3701,
+          5.35
+        ],
+        [
+          2014,
+          "8.74E-01 $\\pm 6.12 \\mathrm{E}-01-$",
+          "7.72E-01 $\\pm 5.48 \\mathrm{E}-01-$",
+          "6.13E-01 $\\pm 5.62 \\mathrm{E}-01-$",
+          "8.02E-01 $\\pm 6.04 \\mathrm{E}-01-$",
+          "5.56E-01 $\\pm 2.64 \\mathrm{E}-01$"
+        ],
+        [
+          2014,
+          3.88,
+          3.54,
+          3.21,
+          3.19,
+          3.15
+        ],
+        [
+          2014,
+          1.48,
+          1.48,
+          1.47,
+          1.47,
+          1.45
+        ],
+        [
+          2014,
+          6.28,
+          3.01,
+          4.72,
+          2.03,
+          1.97
+        ],
+        [
+          2014,
+          4.7301,
+          4.62,
+          4.72,
+          4.74,
+          4.7001
+        ],
+        [
+          2014,
+          3.1502,
+          3.1502,
+          3.1502,
+          3.1502,
+          3.1502
+        ],
+        [
+          2014,
+          2.0002,
+          2.0002,
+          2.0002,
+          2.0002,
+          2.0002
+        ],
+        [
+          2014,
+          2.0302,
+          2.0302,
+          2.0302,
+          2.0302,
+          2.0302
+        ],
+        [
+          2014,
+          1.0002,
+          1.0002,
+          1.0002,
+          1.0002,
+          1.0002
+        ],
+        [
+          2014,
+          3.4902,
+          3.4502,
+          3.3702,
+          3.3102,
+          3.2902
+        ],
+        [
+          2014,
+          8.1202,
+          8.12,
+          8.08,
+          8.09,
+          8.0602
+        ],
+        [
+          2014,
+          7.6505,
+          9.7302,
+          7.2102,
+          1.0403,
+          6.2102
+        ],
+        [
+          2014,
+          1.0503,
+          1.0203,
+          9.7702,
+          1.0403,
+          9.0402
+        ],
+        [
+          "No. of $+1 \\infty /-$",
+          1920,
+          11118,
+          921,
+          921,
+          "NA"
+        ]
+      ],
+      "row_count": 31,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "The means and the standard deviations of FEVs obtained by the five algorithms over 25 independent runs on 28 CEC2013 benchmark functions with 50D.",
+      "headers": [
+        "Functions",
+        "EMNA $_{\\text {g }}$",
+        "AMaLGaM",
+        "JADE",
+        "SaDE",
+        "EMSM-EDA"
+      ],
+      "rows": [
+        [
+          2013,
+          "1.29E+04 $\\pm$ 1.12E+03-",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "6.49E+07 $\\pm$ 2.05E+07-",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "5.70E+03 $\\pm$ 4.20E+03-",
+          "4.06E+05 $\\pm$ 3.94E+05-",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "1.06E+13 $\\pm$ 1.28E+13-",
+          "5.95E-02 $\\pm$ 2.48E-01-",
+          "6.48E+05 $\\pm$ 3.18E+06-",
+          "1.66E+07 $\\pm$ 1.82E+07-",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "2.52E+04 $\\pm$ 2.56E+03-",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "4.37E+03 $\\pm$ 1.21E+04-",
+          "3.90E+03 $\\pm$ 1.90E+03-",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "1.11E+03 $\\pm$ 3.38E+02-",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "2.01E+03 $\\pm$ 2.33E+02-",
+          "1.04E+01 $\\pm$ 3.75E+00-",
+          "2.11E+00 $\\pm$ 7.31E+00-",
+          "3.43E+01 $\\pm$ 2.76E+01-",
+          "1.06E+00 $\\pm$ 5.28E+00"
+        ],
+        [
+          2013,
+          "1.10E+03 $\\pm$ 1.03E+03-",
+          "6.60E-01 $\\pm$ 9.65E-01-",
+          "4.65E+00 $\\pm$ 4.99E+00-",
+          "2.60E+01 $\\pm$ 1.32E+01-",
+          "5.93E-06 $\\pm$ 1.04E-05"
+        ],
+        [
+          2013,
+          "2.09E+01 $\\pm$ 4.51E-02-",
+          "2.09E+01 $\\pm$ 5.58E-02-",
+          "2.09E+01 $\\pm$ 6.10E-02-",
+          "2.09E+01 $\\pm$ 3.52E-02-",
+          "2.09E+01 $\\pm$ 3.99E-02"
+        ],
+        [
+          2013,
+          "1.21E+01 $\\pm$ 1.79E+00-",
+          "6.25E+00 $\\pm$ 1.72E+00-",
+          "2.67E+01 $\\pm$ 1.33E+00-",
+          "1.76E+01 $\\pm$ 3.16E+00-",
+          "3.44E+00 $\\pm$ 1.17E+00"
+        ],
+        [
+          2013,
+          "1.94E+03 $\\pm$ 2.88E+02-",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "4.08E-02 $\\pm$ 2.76E-02-",
+          "3.23E-01 $\\pm$ 1.95E-01-",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "9.72E+01 $\\pm$ 1.56E+01-",
+          "4.01E+00 $\\pm$ 1.78E+00-",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "1.99E-01 $\\pm$ 4.06E-01+",
+          "3.94E+06 $\\pm$ 1.94E+00"
+        ],
+        [
+          2013,
+          "1.07E+02 $\\pm$ 1.59E+01-",
+          "3.10E+00 $\\pm$ 1.75E+00-",
+          "2.36E+01 $\\pm$ 4.40E+00-",
+          "4.59E+01 $\\pm$ 1.33E+01-",
+          "2.79E+00-1.75E+00"
+        ],
+        [
+          2013,
+          "1.88E+02 $\\pm$ 2.56E+01-",
+          "3.08E+00 $\\pm$ 1.82E+00-",
+          "4.67E+01 $\\pm$ 9.63E+00-",
+          "1.07E+02 $\\pm$ 2.81E+01-",
+          "2.99E+00 $\\pm$ 1.66E+00"
+        ],
+        [
+          2013,
+          "1.76E+03 $\\pm$ 4.63E+02-",
+          "7.61E+02 $\\pm$ 4.89E+02-",
+          "2.08E-02 $\\pm$ 2.17E-02+",
+          "6.89E-01 $\\pm$ 1.03E+00+",
+          "5.49E+02 $\\pm$ 5.36E+02"
+        ],
+        [
+          2013,
+          "1.32E+03 $\\pm$ 4.08E+02-",
+          "7.18E+02 $\\pm$ 2.22E+02-",
+          "3.25E+03 $\\pm$ 2.61E+02-",
+          "4.50E+03 $\\pm$ 1.04E+03-",
+          "3.88E+02 $\\pm$ 7.24E+02"
+        ],
+        [
+          2013,
+          "2.36E+00 $\\pm$ 2.89E-01+",
+          "2.35E+00 $\\pm$ 1.07E+00+",
+          "1.90E+00 $\\pm$ 6.98E-01+",
+          "2.25E+00 $\\pm$ 2.07E-01+",
+          "2.44E+00 $\\pm$ 2.82E-01"
+        ],
+        [
+          2013,
+          "4.84E+01 $\\pm$ 6.96E+00+",
+          "3.26E+01 $\\pm$ 7.30E-01+",
+          "3.04E+01 $\\pm$ 6.00E+00+",
+          "3.05E+01 $\\pm$ 4.38E-02+",
+          "1.69E+02 $\\pm$ 7.79E+00"
+        ],
+        [
+          2013,
+          "1.13E+02 $\\pm$ 1.15E+01+",
+          "9.94E+01 $\\pm$ 7.05E+01+",
+          "7.60E+01 $\\pm$ 6.65E+00+",
+          "1.22E+02 $\\pm$ 4.09E+01+",
+          "1.73E+02 $\\pm$ 8.83E+00"
+        ],
+        [
+          2013,
+          "1.60E+03 $\\pm$ 6.07E+02-",
+          "3.02E+00 $\\pm$ 3.52E-01+",
+          "1.41E+00 $\\pm$ 1.39E-01+",
+          "4.04E+00 $\\pm$ 8.57E-01+",
+          "4.09E+00 $\\pm$ 1.71E+00"
+        ],
+        [
+          2013,
+          "1.29E+01 $\\pm$ 1.19E+00-",
+          "1.19E+01 $\\pm$ 1.15E+00-",
+          "1.05E+01 $\\pm$ 6.34E-01+",
+          "1.08E+01 $\\pm$ 6.34E-01+",
+          "1.16E+01 $\\pm$ 3.12E-01"
+        ],
+        [
+          2013,
+          "8.30E+02 $\\pm$ 2.49E+02-",
+          "3.01E+02 $\\pm$ 6.51E+01-",
+          "3.16E+02 $\\pm$ 9.08E+01-",
+          "3.18E+02 $\\pm$ 8.04E+01-",
+          "2.78E+02 $\\pm$ 5.71E+01"
+        ],
+        [
+          2013,
+          "1.43E+03 $\\pm$ 2.69E+02-",
+          "7.27E+02 $\\pm$ 2.47E+02-",
+          "8.78E+01 $\\pm$ 3.79E+01+",
+          "1.13E+02 $\\pm$ 5.75E+00+",
+          "1.95E+02 $\\pm$ 7.65E+01"
+        ],
+        [
+          2013,
+          "1.48E+03 $\\pm$ 4.99E+02-",
+          "7.55E+02 $\\pm$ 2.74E+02-",
+          "3.51E+03 $\\pm$ 3.68E+02-",
+          "4.73E+03 $\\pm$ 1.00E+03-",
+          "2.85E+02 $\\pm$ 1.29E+02"
+        ],
+        [
+          2013,
+          "2.80E+02 $\\pm$ 8.13E+00-",
+          "2.00E+02 $\\pm$ 1.51E-02+",
+          "2.14E+02 $\\pm$ 1.41E+01+",
+          "2.29E+02 $\\pm$ 6.95E+00-",
+          "2.18E+02 $\\pm$ 1.45E+01"
+        ],
+        [
+          2013,
+          "2.77E+02 $\\pm$ 8.28E+00-",
+          "2.45E+02 $\\pm$ 6.19E+00-",
+          "2.78E+02 $\\pm$ 1.15E+01-",
+          "2.65E+02 $\\pm$ 1.73E+01-",
+          "2.44E+02 $\\pm$ 5.55E+00"
+        ],
+        [
+          2013,
+          "2.79E+02 $\\pm$ 2.38E+01-",
+          "2.87E+02 $\\pm$ 1.86E+01-",
+          "2.06E+02 $\\pm$ 3.07E+01+",
+          "2.10E+02 $\\pm$ 3.51E+01+",
+          "2.78E+02 $\\pm$ 3.69E+01"
+        ],
+        [
+          2013,
+          "6.62E+02 $\\pm$ 3.24E+01-",
+          "3.00E+02 $\\pm$ 3.17E-01+",
+          "6.69E+02 $\\pm$ 2.15E+02-",
+          "6.00E+02 $\\pm$ 5.79E+01-",
+          "3.57E+02 $\\pm$ 8.25E+01"
+        ],
+        [
+          2013,
+          "1.57E+03 $\\pm$ 4.84E+02-",
+          "3.00E+02 $\\pm$ 6.00E+00-",
+          "3.00E+02 $\\pm$ 6.00E+00-",
+          "3.00E+02 $\\pm$ 6.00E+00-",
+          "3.00E+02 $\\pm$ 6.00E+00"
+        ],
+        [
+          "No.of $+1 / 4 / 2$",
+          "",
+          6715,
+          10414,
+          9415,
+          "NA"
+        ]
+      ],
+      "row_count": 29,
+      "column_count": 6
+    },
+    {
+      "table_number": "8",
+      "table_title": "The means and the standard deviations of FEVs obtained by the five algorithms over 25 independent runs on 28 CEC2013 benchmark functions with 50D.",
+      "headers": [
+        "Functions",
+        "EMNA $_{\\text {g }}$",
+        "AMaLGaM",
+        "JADE",
+        "SaDE",
+        "EMSM-EDA"
+      ],
+      "rows": [
+        [
+          2013,
+          "1.97E+04 $\\pm$ 1.22E+03-",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "2.37E+08 $\\pm$ 4.77E+07-",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "2.51E+04 $\\pm$ 1.58E+04-",
+          "7.99E+05 $\\pm$ 3.24E+05-",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "3.62E+10 $\\pm$ 8.14E+09-",
+          "3.91E+00 $\\pm$ 1.95E+01-",
+          "3.24E+06 $\\pm$ 5.72E+06-",
+          "6.29E+07 $\\pm$ 5.95E+07-",
+          "5.00E-04 $\\pm$ 2.23E-04"
+        ],
+        [
+          2013,
+          "3.64E+04 $\\pm$ 3.04E+03-",
+          "3.13E-08 $\\pm$ 1.18E-07-",
+          "6.01E+03 $\\pm$ 1.67E+04-",
+          "4.42E+03 $\\pm$ 1.65E+03-",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "1.12E+03 $\\pm$ 2.09E+02-",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\pm$",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          2013,
+          "1.00E+03 $\\pm$ 1.30E+02-",
+          "4.38E+01 $\\pm$ 5.77E-01-",
+          "4.34E+01 $\\pm$ 6.00E+00 $\\pm$",
+          "4.89E+01 $\\pm$ 1.76E+01-",
+          "4.34E+01 $\\pm$ 6.00E+00"
+        ],
+        [
+          2013,
+          "4.03E+01 $\\pm$ 4.99E+00-",
+          "6.84E-01 $\\pm$ 1.20E+00-",
+          "2.09E+01 $\\pm$ 1.17E+01-",
+          "4.96E+01 $\\pm$ 1.01E+01-",
+          "2.01E-04 $\\pm$ 3.57E-05"
+        ],
+        [
+          2013,
+          "2.11E+01 $\\pm$ 4.49E-02-",
+          "2.11E+01 $\\pm$ 3.12E-02-",
+          "2.11E+01 $\\pm$ 2.76E-02-",
+          "2.11E+01 $\\pm$ 3.71E-02-",
+          "2.11E+01 $\\pm$ 4.12E-02"
+        ],
+        [
+          2013,
+          "2.15E+01 $\\pm$ 2.29E+00-",
+          "9.00E+00 $\\pm$ 3.55E+00-",
+          "5.40E+01 $\\pm$ 2.24E+00-",
+          "3.91E+01 $\\pm$ 4.13E+00-",
+          "4.40E+00 $\\pm$ 2.57E+00"
+        ],
+        [
+          2013,
+          "2.56E+03 $\\pm$ 2.27E+02-",
+          "1.51E+03 $\\pm$ 4.21E+02-",
+          "6.87E+03 $\\pm$ 5.26E+02-",
+          "8.93E+03 $\\pm$ 2.23E+03-",
+          "4.26E+02 $\\pm$ 1.80E+02"
+        ],
+        [
+          2013,
+          "3.28E+00 $\\pm$ 3.36E-01-",
+          "3.17E+00 $\\pm$ 9.85E-01+",
+          "2.03E+00 $\\pm$ 7.42E-01+",
+          "3.00E+00 $\\pm$ 2.96E-01+",
+          "3.24E+00 $\\pm$ 1.24E-01"
+        ],
+        [
+          2013,
+          "9.10E+01 $\\pm$ 1.23E+01+",
+          "5.76E+01 $\\pm$ 3.04E+00+",
+          "5.08E+01 $\\pm$ 3.41E-14+",
+          "5.14E+01 $\\pm$ 3.11E-01+",
+          "3.27E+02 $\\pm$ 1.69E+01"
+        ],
+        [
+          2013,
+          "3.26E+02 $\\pm$ 3.15E+01+",
+          "2.56E+02 $\\pm$ 1.09E+02+",
+          "1.43E+02 $\\pm$ 1.18E+01+",
+          "1.67E+02 $\\pm$ 8.28E+01+",
+          "3.36E+02 $\\pm$ 1.52E+01"
+        ],
+        [
+          2013,
+          "5.96E+03 $\\pm$ 2.42E+03-",
+          "5.20E+00 $\\pm$ 4.74E-01+",
+          "2.78E+00 $\\pm$ 1.93E-01-",
+          "1.25E+01 $\\pm$ 2.48E+00-",
+          "9.79E+00 $\\pm$ 2.47E+00"
+        ],
+        [
+          2013,
+          "1.14E+03 $\\pm$ 3.10E+02-",
+          "3.47E+02 $\\pm$ 3.45E+02+",
+          "8.04E+02 $\\pm$ 4.30E+02-",
+          "8.72E+02 $\\pm$ 3.27E+02-",
+          "6.80E+02 $\\pm$ 4.70E+02"
+        ],
+        [
+          2013,
+          "3.29E+03 $\\pm$ 5.72E+02-",
+          "1.17E+03 $\\pm$ 5.02E+02-",
+          "1.38E+01 $\\pm$ 1.14E+01+",
+          "2.39E+01 $\\pm$ 6.01E+00+",
+          "1.97E+02 $\\pm$ 8.99E+01"
+        ],
+        [
+          2013,
+          "2.84E+03 $\\pm$ 6.97E+02-",
+          "1.45E+03 $\\pm$ 4.69E+02-",
+          "7.09E+03 $\\pm$ 4.78E+02-",
+          "8.85E+03 $\\pm$ 2.04E+03-",
+          "4.98E+02 $\\pm$ 2.08E+02"
+        ],
+        [
+          2013,
+          "4.54E+02 $\\pm$ 2.43E+01-",
+          "2.00E+02 $\\pm$ 2.88E-01+",
+          "2.52E+02 $\\pm$ 2.12E+01-",
+          "2.79E+02 $\\pm$ 1.05E+01-",
+          "2.22E+02 $\\pm$ 2.17E+01"
+        ],
+        [
+          2013,
+          "3.72E+02 $\\pm$ 1.27E+01-",
+          "2.82E+02 $\\pm$ 6.15E+00-",
+          "3.53E+02 $\\pm$ 1.79E+01-",
+          "3.46E+02 $\\pm$ 1.03E+01-",
+          "2.77E+02 $\\pm$ 7.73E+00"
+        ],
+        [
+          2013,
+          "3.42E+02 $\\pm$ 1.97E+01-",
+          "3.00E+02 $\\pm$ 3.65E+00+",
+          "3.35E+02 $\\pm$ 1.05E+02-",
+          "2.57E+02 $\\pm$ 8.51E+01+",
+          "3.04E+02 $\\pm$ 1.19E+01"
+        ],
+        [
+          2013,
+          "1.31E+03 $\\pm$ 6.48E+01-",
+          "3.33E+02 $\\pm$ 1.12E+02+",
+          "1.43E+03 $\\pm$ 3.20E+02-",
+          "1.20E+03 $\\pm$ 1.18E+02-",
+          "4.84E+02 $\\pm$ 1.47E+02"
+        ],
+        [
+          2013,
+          "2.30E+03 $\\pm$ 1.98E+02-",
+          "4.00E+02 $\\pm$ 0.00E+00-",
+          "8.75E+02 $\\pm$ 1.11E+03-",
+          "4.00E+02 $\\pm$ 0.00E+00-",
+          "4.00E+02 $\\pm$ 2.82E-08"
+        ],
+        [
+          "No.of $+1 / 4 / 2$",
+          "",
+          9613,
+          8416,
+          8416,
+          "NA"
+        ]
+      ],
+      "row_count": 23,
+      "column_count": 6
+    },
+    {
+      "table_number": "9",
+      "table_title": "The means and the standard deviations of FEVs obtained by the six algorithms over 25 independent runs on 30 CEC2014 benchmark functions with 30D.",
+      "headers": [
+        "Functions",
+        "$\\mathrm{EMNA}_{8}$",
+        "AMaLGaM",
+        "BL-PSO-5",
+        "JADE",
+        "SaDE",
+        "EMSM-EDA"
+      ],
+      "rows": [
+        [
+          20141,
+          1.5408,
+          0.0,
+          2.9906,
+          4.4002,
+          3.6205,
+          0.0
+        ],
+        [
+          20142,
+          1.391,
+          0.0,
+          5.0903,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          20143,
+          1.8004,
+          0.0,
+          3.67,
+          "1.74E-03 $\\pm 6.43 \\mathrm{E}-03-$",
+          1.78,
+          0.0
+        ],
+        [
+          20144,
+          1.6403,
+          1.0501,
+          2.6801,
+          2.54,
+          3.9501,
+          0.0
+        ],
+        [
+          20145,
+          2.0901,
+          2.0901,
+          2.0801,
+          2.0301,
+          2.0501,
+          2.0901
+        ],
+        [
+          20146,
+          4.69,
+          "1.83E-02 $\\pm 9.18 \\mathrm{E}-02+$",
+          "9.37E-06 $\\pm 3.20 \\mathrm{E}-05+$",
+          9.47,
+          5.38,
+          "1.60E-01 $\\pm 4.09 \\mathrm{E}-01$"
+        ],
+        [
+          20147,
+          1.6202,
+          0.0,
+          0.0,
+          "2.96E-04 $\\pm 1.48 \\mathrm{E}-03-$",
+          "7.08E-03 $\\pm 1.43 \\mathrm{E}-02-$",
+          0.0
+        ],
+        [
+          20148,
+          3.7001,
+          3.86,
+          "2.32E-01 $\\pm 5.65 \\mathrm{E}-01+$",
+          0.0,
+          "3.98E-02 $\\pm 1.99 \\mathrm{E}-01+$",
+          4.42
+        ],
+        [
+          20149,
+          3.3101,
+          4.01,
+          3.5401,
+          2.6101,
+          3.8001,
+          3.98
+        ],
+        [
+          201410,
+          9.7302,
+          4.4102,
+          8.8301,
+          "7.49E-03 $\\pm 1.33 \\mathrm{E}-02+$",
+          "2.17E-01 $\\pm 5.00 \\mathrm{E}-01+$",
+          1.8801
+        ],
+        [
+          201411,
+          1.2603,
+          5.1702,
+          2.0803,
+          1.6503,
+          3.1503,
+          9.4201
+        ],
+        [
+          201412,
+          2.43,
+          2.45,
+          "8.83E-01 $\\pm 1.49 \\mathrm{E}-01+$",
+          "2.65E-01 $\\pm 3.52 \\mathrm{E}-02+$",
+          "7.91E-01 $\\pm 1.09 \\mathrm{E}-01+$",
+          2.45
+        ],
+        [
+          201413,
+          4.07,
+          "5.63E-02 $\\pm 1.12 \\mathrm{E}-02-$",
+          "2.21E-01 $\\pm 2.85 \\mathrm{E}-02-$",
+          "2.17E-01 $\\pm 4.26 \\mathrm{E}-02-$",
+          "2.58E-01 $\\pm 3.89 \\mathrm{E}-02-$",
+          "3.62E-02 $\\pm 3.62 \\mathrm{E}-02$"
+        ],
+        [
+          201414,
+          7.9201,
+          "4.18E-01 $\\pm 3.87 \\mathrm{E}-02-$",
+          "2.14E-01 $\\pm 2.88 \\mathrm{E}-02+$",
+          "2.32E-01 $\\pm 3.23 \\mathrm{E}-02+$",
+          "2.37E-01 $\\pm 3.55 \\mathrm{E}-02+$",
+          "3.62E-01 $\\pm 5.66 \\mathrm{E}-02$"
+        ],
+        [
+          201415,
+          2.6901,
+          3.03,
+          7.41,
+          3.16,
+          4.11,
+          4.11
+        ],
+        [
+          201416,
+          1.1001,
+          1.0801,
+          9.67,
+          9.38,
+          1.1001,
+          1.2001
+        ],
+        [
+          201417,
+          1.3006,
+          2.3102,
+          1.8605,
+          1.3103,
+          1.0004,
+          5.35
+        ],
+        [
+          201418,
+          6.4701,
+          1.6401,
+          9.0502,
+          8.9201,
+          5.1902,
+          "5.56E-01 $\\pm 2.64 \\mathrm{E}-01$"
+        ],
+        [
+          201419,
+          1.5201,
+          3.78,
+          3.74,
+          4.35,
+          3.85,
+          3.15
+        ],
+        [
+          201420,
+          2.7903,
+          3.05,
+          3.1202,
+          3.4103,
+          9.2801,
+          1.45
+        ],
+        [
+          201421,
+          2.7604,
+          7.8001,
+          3.8504,
+          2.9802,
+          2.0703,
+          1.97
+        ],
+        [
+          201422,
+          1.1102,
+          9.2201,
+          1.1602,
+          1.7602,
+          1.5602,
+          4.7001
+        ],
+        [
+          201423,
+          3.6302,
+          3.1502,
+          3.1502,
+          3.1502,
+          3.1502,
+          3.1502
+        ],
+        [
+          201424,
+          2.3102,
+          2.2302,
+          2.2202,
+          2.2502,
+          2.2502,
+          2.0002
+        ],
+        [
+          201425,
+          2.0902,
+          2.0202,
+          2.0502,
+          2.0402,
+          2.0902,
+          2.0302
+        ],
+        [
+          201426,
+          1.0402,
+          1.0002,
+          1.0402,
+          1.0002,
+          1.0802,
+          1.0002
+        ],
+        [
+          201427,
+          5.6502,
+          3.0202,
+          3.0802,
+          3.3102,
+          4.2502,
+          3.2902
+        ],
+        [
+          201428,
+          9.5902,
+          9.1102,
+          7.8702,
+          7.9002,
+          8.8802,
+          8.0602
+        ],
+        [
+          201429,
+          1.7803,
+          7.3202,
+          1.3903,
+          7.3102,
+          1.0503,
+          6.2102
+        ],
+        [
+          201430,
+          3.8103,
+          1.6003,
+          1.1903,
+          1.6603,
+          1.8503,
+          9.0402
+        ],
+        [
+          "No.of $+1 \\approx 1-$",
+          2127,
+          6816,
+          7320,
+          8319,
+          6321,
+          "NA"
+        ]
+      ],
+      "row_count": 31,
+      "column_count": 7
+    },
+    {
+      "table_number": "10",
+      "table_title": "The means and the standard deviations of FEVs obtained by the six algorithms over 25 independent runs on 30 CEC2014 benchmark functions with 50D.",
+      "headers": [
+        "Functions",
+        "$\\mathrm{EMNA}_{\\mathrm{R}}$",
+        "AMaLGaM",
+        "BL-PSO-5",
+        "JADE",
+        "SaDE",
+        "EMSM-EDA"
+      ],
+      "rows": [
+        [
+          20141,
+          8.6608,
+          "0.00E+00 $\\pm$ 0.00E+00 $\\infty$",
+          "$5.10 \\mathrm{E}+06 \\pm 1.28 \\mathrm{E}+06-$",
+          "$1.25 \\mathrm{E}+04 \\pm 8.85 \\mathrm{E}+03-$",
+          "$9.43 \\mathrm{E}+05 \\pm 2.70 \\mathrm{E}+05-$",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          20142,
+          "$5.39 \\mathrm{E}+10 \\pm 3.83 \\mathrm{E}+09-$",
+          "2.77E-07 $\\pm 5.83 \\mathrm{E}-07-$",
+          "$3.44 \\mathrm{E}+03 \\pm 2.35 \\mathrm{E}+03-$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\infty$",
+          "$4.14 \\mathrm{E}+03 \\pm 4.22 \\mathrm{E}+03-$",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          20143,
+          "$5.13 \\mathrm{E}+04 \\pm 5.76 \\mathrm{E}+03-$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\infty$",
+          "$4.23 \\mathrm{E}+01 \\pm 8.97 \\mathrm{E}+01-$",
+          "$3.28 \\mathrm{E}+03 \\pm 2.56 \\mathrm{E}+03-$",
+          "$4.28 \\mathrm{E}+03 \\pm 2.45 \\mathrm{E}+03-$",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          20144,
+          "$8.37 \\mathrm{E}+03 \\pm 1.02 \\mathrm{E}+03-$",
+          "$9.46 \\mathrm{E}+01 \\pm 6.19 \\mathrm{E}+00-$",
+          "8.64E+00 $\\pm$ 5.04E+00+",
+          "$1.21 \\mathrm{E}+01 \\pm 3.24 \\mathrm{E}+01+$",
+          "$7.09 \\mathrm{E}+01 \\pm 4.08 \\mathrm{E}+01-$",
+          "$4.77 \\mathrm{E}+01 \\pm 4.95 \\mathrm{E}+01$"
+        ],
+        [
+          20145,
+          "$2.11 \\mathrm{E}+01 \\pm 3.61 \\mathrm{E}-02 \\infty$",
+          "$2.11 \\mathrm{E}+01 \\pm 4.26 \\mathrm{E}-02 \\infty$",
+          "$2.09 \\mathrm{E}+01 \\pm 5.07 \\mathrm{E}-02+$",
+          "2.04E+01 $\\pm$ 3.29E-02+",
+          "$2.07 \\mathrm{E}+01 \\pm 2.89 \\mathrm{E}-02+$",
+          "$2.11 \\mathrm{E}+01 \\pm 4.30 \\mathrm{E}-02$"
+        ],
+        [
+          20146,
+          "$2.08 \\mathrm{E}+01 \\pm 2.08 \\mathrm{E}+00-$",
+          "0.00E+00 $\\pm$ 0.00E+00+",
+          "$9.22 \\mathrm{E}-02 \\pm 3.21 \\mathrm{E}-01+$",
+          "$1.82 \\mathrm{E}+01 \\pm 5.61 \\mathrm{E}+00-$",
+          "$1.88 \\mathrm{E}+01 \\pm 3.73 \\mathrm{E}+00-$",
+          "$2.55 \\mathrm{E}-01 \\pm 4.49 \\mathrm{E}-01$"
+        ],
+        [
+          20147,
+          "$5.04 \\mathrm{E}+02 \\pm 3.00 \\mathrm{E}+01-$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\infty$",
+          "0.00E+00 $\\pm$ 0.00E+00 $\\infty$",
+          "$1.77 \\mathrm{E}-03 \\pm 4.63 \\mathrm{E}-03-$",
+          "$1.39 \\mathrm{E}-02 \\pm 1.42 \\mathrm{E}-02-$",
+          "0.00E+00 $\\pm$ 0.00E+00"
+        ],
+        [
+          20148,
+          "$1.80 \\mathrm{E}+02 \\pm 1.85 \\mathrm{E}+01-$",
+          "$5.45 \\mathrm{E}+00 \\pm 2.20 \\mathrm{E}+00 \\infty$",
+          "$4.97 \\mathrm{E}-01 \\pm 8.16 \\mathrm{E}-01+$",
+          "0.00E+00 $\\pm$ 0.00E+00+",
+          "$1.67 \\mathrm{E}+00 \\pm 1.34 \\mathrm{E}+00+$",
+          "$5.53 \\mathrm{E}+00 \\pm 1.89 \\mathrm{E}+00$"
+        ],
+        [
+          20149,
+          "$1.77 \\mathrm{E}+02 \\pm 1.89 \\mathrm{E}+01-$",
+          "$5.37 \\mathrm{E}+00 \\pm 2.24 \\mathrm{E}+00-$",
+          "$7.10 \\mathrm{E}+01 \\pm 9.02 \\mathrm{E}+00-$",
+          "$5.18 \\mathrm{E}+01 \\pm 8.61 \\mathrm{E}+00-$",
+          "$8.90 \\mathrm{E}+01 \\pm 1.35 \\mathrm{E}+01-$",
+          "5.25E+00 $\\pm$ 2.25E+00"
+        ],
+        [
+          201410,
+          "$4.87 \\mathrm{E}+03 \\pm 7.16 \\mathrm{E}+02-$",
+          "$8.91 \\mathrm{E}+02 \\pm 3.46 \\mathrm{E}+02-$",
+          "$3.63 \\mathrm{E}+02 \\pm 1.81 \\mathrm{E}+02-$",
+          "1.35E-02 $\\pm$ 1.57E-02+",
+          "$1.28 \\mathrm{E}+00 \\pm 1.10 \\mathrm{E}+00+$",
+          "$9.33 \\mathrm{E}+01 \\pm 1.48 \\mathrm{E}+02$"
+        ],
+        [
+          201411,
+          "$4.98 \\mathrm{E}+03 \\pm 5.43 \\mathrm{E}+02-$",
+          "$1.07 \\mathrm{E}+03 \\pm 4.05 \\mathrm{E}+02-$",
+          "$4.46 \\mathrm{E}+03 \\pm 4.77 \\mathrm{E}+02-$",
+          "$3.85 \\mathrm{E}+03 \\pm 3.50 \\mathrm{E}+02-$",
+          "$6.61 \\mathrm{E}+03 \\pm 1.61 \\mathrm{E}+03-$",
+          "8.27E+01 $\\pm$ 1.12E+02"
+        ],
+        [
+          201412,
+          "$1.40 \\mathrm{E}+00 \\pm 1.19 \\mathrm{E}+00+$",
+          "$3.04 \\mathrm{E}+00 \\pm 1.17 \\mathrm{E}+00+$",
+          "$8.77 \\mathrm{E}-01 \\pm 1.18 \\mathrm{E}-01+$",
+          "2.62E-01 $\\pm$ 3.40E-02+",
+          "$1.04 \\mathrm{E}+00 \\pm 9.30 \\mathrm{E}-02+$",
+          "$3.38 \\mathrm{E}+00 \\pm 3.59 \\mathrm{E}-01$"
+        ],
+        [
+          201413,
+          "$4.69 \\mathrm{E}+00 \\pm 1.78 \\mathrm{E}-01-$",
+          "$1.27 \\mathrm{E}-01 \\pm 2.24 \\mathrm{E}-02-$",
+          "$2.86 \\mathrm{E}-01 \\pm 3.72 \\mathrm{E}-02-$",
+          "$3.26 \\mathrm{E}-01 \\pm 4.98 \\mathrm{E}-02-$",
+          "$4.39 \\mathrm{E}-01 \\pm 5.68 \\mathrm{E}-02-$",
+          "6.31E-02 $\\pm$ 9.91E-03"
+        ],
+        [
+          201414,
+          "$1.21 \\mathrm{E}+02 \\pm 1.07 \\mathrm{E}+01-$",
+          "$4.23 \\mathrm{E}-01 \\pm 3.68 \\mathrm{E}-02-$",
+          "2.65E-01 $\\pm$ 2.42E-02+",
+          "$2.87 \\mathrm{E}-01 \\pm 3.01 \\mathrm{E}-02+$",
+          "$2.99 \\mathrm{E}-01 \\pm 3.57 \\mathrm{E}-02+$",
+          "$3.57 \\mathrm{E}-01 \\pm 5.11 \\mathrm{E}-02$"
+        ],
+        [
+          201415,
+          "$2.59 \\mathrm{E}+04 \\pm 1.29 \\mathrm{E}+04-$",
+          "5.33E+00 $\\pm$ 7.37E-01+",
+          "$1.48 \\mathrm{E}+01 \\pm 1.33 \\mathrm{E}+00-$",
+          "$7.20 \\mathrm{E}+00 \\pm 8.22 \\mathrm{E}-01+$",
+          "$1.69 \\mathrm{E}+01 \\pm 4.07 \\mathrm{E}+00-$",
+          "$1.07 \\mathrm{E}+01 \\pm 2.25 \\mathrm{E}+00$"
+        ],
+        [
+          201416,
+          "$2.01 \\mathrm{E}+01 \\pm 5.42 \\mathrm{E}-01+$",
+          "$2.01 \\mathrm{E}+01 \\pm 6.94 \\mathrm{E}-01+$",
+          "$1.82 \\mathrm{E}+01 \\pm 4.73 \\mathrm{E}-01+$",
+          "1.78E+01 $\\pm$ 3.92E-01+",
+          "$2.02 \\mathrm{E}+01 \\pm 3.17 \\mathrm{E}-01+$",
+          "$2.15 \\mathrm{E}+01 \\pm 2.55 \\mathrm{E}-01$"
+        ],
+        [
+          201417,
+          "$6.84 \\mathrm{E}+07 \\pm 1.92 \\mathrm{E}+07-$",
+          "$3.61 \\mathrm{E}+02 \\pm 1.82 \\mathrm{E}+02-$",
+          "$5.97 \\mathrm{E}+05 \\pm 2.10 \\mathrm{E}+05-$",
+          "$2.52 \\mathrm{E}+03 \\pm 5.52 \\mathrm{E}+02-$",
+          "$7.60 \\mathrm{E}+04 \\pm 5.80 \\mathrm{E}+04-$",
+          "2.39E+01 $\\pm$ 1.51E+01"
+        ],
+        [
+          201418,
+          "$2.27 \\mathrm{E}+09 \\pm 5.30 \\mathrm{E}+08-$",
+          "$2.71 \\mathrm{E}+01 \\pm 8.65 \\mathrm{E}+00-$",
+          "$3.73 \\mathrm{E}+02 \\pm 3.68 \\mathrm{E}+02-$",
+          "$1.76 \\mathrm{E}+02 \\pm 4.96 \\mathrm{E}+01-$",
+          "$6.41 \\mathrm{E}+02 \\pm 4.98 \\mathrm{E}+02-$",
+          "1.08E+00 $\\pm$ 7.96E-01"
+        ],
+        [
+          201419,
+          "$1.90 \\mathrm{E}+02 \\pm 4.03 \\mathrm{E}+01-$",
+          "$1.22 \\mathrm{E}+01 \\pm 1.24 \\mathrm{E}+00-$",
+          "$2.16 \\mathrm{E}+01 \\pm 9.78 \\mathrm{E}+00-$",
+          "$1.15 \\mathrm{E}+01 \\pm 3.26 \\mathrm{E}+00-$",
+          "$1.54 \\mathrm{E}+01 \\pm 8.07 \\mathrm{E}+00-$",
+          "6.51E+00 $\\pm$ 5.27E-01"
+        ],
+        [
+          201420,
+          "$2.81 \\mathrm{E}+03 \\pm 1.56 \\mathrm{E}+03-$",
+          "$5.72 \\mathrm{E}+00 \\pm 1.63 \\mathrm{E}+00-$",
+          "$2.57 \\mathrm{E}+02 \\pm 1.41 \\mathrm{E}+02-$",
+          "$6.73 \\mathrm{E}+03 \\pm 7.41 \\mathrm{E}+03-$",
+          "$1.01 \\mathrm{E}+03 \\pm 1.01 \\mathrm{E}+03-$",
+          "2.24E+00 $\\pm$ 3.59E-01"
+        ],
+        [
+          201421,
+          "$7.73 \\mathrm{E}+04 \\pm 5.85 \\mathrm{E}+04-$",
+          "$2.70 \\mathrm{E}+02 \\pm 1.14 \\mathrm{E}+02-$",
+          "$3.80 \\mathrm{E}+05 \\pm 1.44 \\mathrm{E}+05-$",
+          "$1.43 \\mathrm{E}+03 \\pm 3.76 \\mathrm{E}+02-$",
+          "$5.57 \\mathrm{E}+04 \\pm 3.38 \\mathrm{E}+04-$",
+          "1.48E+02 $\\pm$ 7.65E+01"
+        ],
+        [
+          201422,
+          "$8.17 \\mathrm{E}+02 \\pm 3.63 \\mathrm{E}+02-$",
+          "$6.74 \\mathrm{E}+01 \\pm 5.78 \\mathrm{E}+01-$",
+          "$2.64 \\mathrm{E}+02 \\pm 1.30 \\mathrm{E}+00-$",
+          "$4.74 \\mathrm{E}+02 \\pm 1.79 \\mathrm{E}+02-$",
+          "$5.39 \\mathrm{E}+01 \\pm 6.27 \\mathrm{E}-01$",
+          "2.95E+01 $\\pm$ 6.27E-01"
+        ],
+        [
+          201423,
+          "$5.42 \\mathrm{E}+02 \\pm 2.36 \\mathrm{E}+01-$",
+          "3.44E+02 $\\pm$ 0.00E+00 $\\infty$",
+          "3.44E+02 $\\pm$ 0.00E+00 $\\infty$",
+          "3.44E+02 $\\pm$ 0.00E+00 $\\infty$",
+          "3.44E+02 $\\pm$ 0.00E+00 $\\infty$",
+          "3.44E+02 $\\pm$ 0.00E+00"
+        ],
+        [
+          201424,
+          "$2.78 \\mathrm{E}+02 \\pm 1.76 \\mathrm{E}+00-$",
+          "$2.72 \\mathrm{E}+02 \\pm 1.85 \\mathrm{E}+00-$",
+          "2.58E+02 $\\pm$ 4.07E+00+",
+          "$2.74 \\mathrm{E}+02 \\pm 2.06 \\mathrm{E}+00-$",
+          "$2.75 \\mathrm{E}+02 \\pm 4.80 \\mathrm{E}+00-$",
+          "$2.66 \\mathrm{E}+02 \\pm 2.49 \\mathrm{E}+00$"
+        ],
+        [
+          201425,
+          "$2.20 \\mathrm{E}+02 \\pm 1.68 \\mathrm{E}+00-$",
+          "2.04E+02 $\\pm$ 1.51E-01 $\\infty$",
+          "$2.10 \\mathrm{E}+02 \\pm 7.36 \\mathrm{E}-01-$",
+          "$2.16 \\mathrm{E}+02 \\pm 6.50 \\mathrm{E}+00-$",
+          "$2.16 \\mathrm{E}+02 \\pm 9.81 \\mathrm{E}+00-$",
+          "2.04E+02 $\\pm$ 1.55E-01"
+        ],
+        [
+          201426,
+          "$1.75 \\mathrm{E}+02 \\pm 3.63 \\mathrm{E}+01-$",
+          "$1.02 \\mathrm{E}+02 \\pm 1.19 \\mathrm{E}+01-$",
+          "$1.47 \\mathrm{E}+02 \\pm 8.00 \\mathrm{E}-01-$",
+          "1.00E+02 $\\pm$ 1.14E-01 $\\infty$",
+          "$1.84 \\mathrm{E}+02 \\pm 3.73 \\mathrm{E}+01-$",
+          "1.00E+02 $\\pm$ 1.24E-02"
+        ],
+        [
+          201427,
+          "$1.19 \\mathrm{E}+03 \\pm 7.05 \\mathrm{E}+01-$",
+          "3.12E+02 $\\pm$ 2.11E+01+",
+          "$3.24 \\mathrm{E}+02 \\pm 2.85 \\mathrm{E}+01+$",
+          "$4.48 \\mathrm{E}+02 \\pm 7.00 \\mathrm{E}+01-$",
+          "$7.67 \\mathrm{E}+02 \\pm 9.06 \\mathrm{E}+01-$",
+          "$4.00 \\mathrm{E}+02 \\pm 5.23 \\mathrm{E}+01$"
+        ],
+        [
+          201428,
+          "$2.81 \\mathrm{E}+03 \\pm 5.55 \\mathrm{E}+02-$",
+          "$1.23 \\mathrm{E}+03 \\pm 5.73 \\mathrm{E}+01-$",
+          "$1.14 \\mathrm{E}+03 \\pm 4.20 \\mathrm{E}+01+$",
+          "1.13E+03 $\\pm$ 5.48E+01+",
+          "$1.40 \\mathrm{E}+03 \\pm 9.63 \\mathrm{E}+01-$",
+          "$1.18 \\mathrm{E}+03 \\pm 1.83 \\mathrm{E}+02$"
+        ],
+        [
+          201429,
+          "$1.42 \\mathrm{E}+05 \\pm 1.15 \\mathrm{E}+05-$",
+          "$8.38 \\mathrm{E}+02 \\pm 1.06 \\mathrm{E}+02-$",
+          "$1.36 \\mathrm{E}+03 \\pm 1.82 \\mathrm{E}+02-$",
+          "$8.93 \\mathrm{E}+02 \\pm 7.49 \\mathrm{E}+01-$",
+          "$1.61 \\mathrm{E}+03 \\pm 4.45 \\mathrm{E}+02-$",
+          "7.36E+02 $\\pm$ 1.27E+07"
+        ],
+        [
+          201430,
+          "$4.48 \\mathrm{E}+05 \\pm 2.03 \\mathrm{E}+05-$",
+          "8.96E+03 $\\pm$ 6.14E+02+",
+          "$9.09 \\mathrm{E}+03 \\pm 3.05 \\mathrm{E}+02+$",
+          "$9.59 \\mathrm{E}+03 \\pm 7.94 \\mathrm{E}+02-$",
+          "$1.22 \\mathrm{E}+04 \\pm 1.91 \\mathrm{E}+03-$",
+          "$9.14 \\mathrm{E}+03 \\pm 6.14 \\mathrm{E}+02$"
+        ],
+        [
+          "No.of $+1 \\infty$",
+          2127,
+          6717,
+          11217,
+          9318,
+          6123,
+          "NA"
+        ]
+      ],
+      "row_count": 31,
+      "column_count": 7
+    },
+    {
+      "table_number": "11",
+      "table_title": "Rankings of EMSM-EDA, AMaLGaM, JADE, and SaDE on 58 test functions based on Friedman's test.",
+      "headers": [
+        "Algorithms",
+        "Ranking",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          30,
+          50
+        ],
+        [
+          "EMSM-EDA",
+          "$\\mathbf{2 . 0 2 5 8}$",
+          "$\\mathbf{2 . 0 1 7 2}$"
+        ],
+        [
+          "AMaLGaM",
+          2.3276,
+          2.2845
+        ],
+        [
+          "JADE",
+          2.4397,
+          2.431
+        ],
+        [
+          "SaDE",
+          3.2069,
+          3.2672
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "13",
+      "table_title": "Table 13 summarizes the test results of $\\mathrm{EMNA}_{\\mathrm{g}}, \\mathrm{AMaLGaM}, \\mathrm{JADE}, \\mathrm{SaDE}$, and EMSM-EDA on seven real-world optimization problems. As shown in Table 13, EMSM-EDA surpasses $\\mathrm{EMNA}_{\\mathrm{g}}, \\mathrm{AMaLGaM}, \\mathrm{JADE}$, and SaDE on 7, 5, 6, and 6 problems, respectively. As a contrast, EMSM-EDA is defeated by $\\mathrm{EMNA}_{\\mathrm{g}}, \\mathrm{AMaLGaM}, \\mathrm{JADE}$, and SaDE on 0, 1, 0, and 0 problems, respectively. This indicates that EMSM-EDA can achieve the excellent performance on these real-world optimization problems. Furthermore, this paper conducts Friedman's test on five comparison algorithms based on seven real-world engineering optimization problems. Table 14 shows that EMSM-EDA has the best ranking, sequentially followed by AMaLGaM, SaDE, JADE, and $\\mathrm{EMNA}_{\\mathrm{g}}$. Therefore, the above results demonstrate the potential of EMSM-EDA on the real-world optimization problems.",
+      "headers": [
+        "Problems",
+        "Name of the problems"
+      ],
+      "rows": [
+        [
+          "$P_{1}$",
+          "parameter estimation for frequency-modulated sound waves"
+        ],
+        [
+          "$P_{2}$",
+          "spread spectrum radar polly phase code design"
+        ],
+        [
+          "$P_{3}$",
+          "large scale transmission pricing problem"
+        ],
+        [
+          "$P_{4}$",
+          "dynamic economic dispatch problem"
+        ],
+        [
+          "$P_{5}$",
+          "static economic load dispatch problem"
+        ],
+        [
+          "$P_{6}$",
+          "hydrothermal scheduling problem"
+        ],
+        [
+          "$P_{7}$",
+          "messenger: spacecraft trajectory optimization problem"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    },
+    {
+      "table_number": "13",
+      "table_title": "The means and the standard deviations of FEVs obtained by the five algorithms over 25 independent runs on seven real-world optimization problems.",
+      "headers": [
+        "Problems",
+        "$\\mathrm{EMNA}_{\\mathrm{g}}$",
+        "AMaLGaM",
+        "JADE",
+        "SaDE",
+        "EMSM-EDA"
+      ],
+      "rows": [
+        [
+          "$P_{1}$",
+          "7.83E-01 $\\pm 6.52 \\mathrm{E}-01-$",
+          "4.27E-01 $\\pm 7.69 \\mathrm{E}-01-$",
+          "4.63E-01 $\\pm 8.04 \\mathrm{E}-01-$",
+          0.0,
+          0.0
+        ],
+        [
+          "$P_{2}$",
+          1.68,
+          1.14,
+          1.17,
+          1.09,
+          "4.78E-01 $\\pm 1.02 \\mathrm{E}-01$"
+        ],
+        [
+          "$P_{3}$",
+          7.9303,
+          3.4803,
+          2.0403,
+          6.4803,
+          1.6803
+        ],
+        [
+          "$P_{4}$",
+          5.9304,
+          5.1304,
+          5.1404,
+          5.6104,
+          5.1104
+        ],
+        [
+          "$P_{5}$",
+          1.3605,
+          1.3505,
+          1.3205,
+          1.3205,
+          1.2405
+        ],
+        [
+          "$P_{6}$",
+          9.8705,
+          9.3605,
+          9.4005,
+          9.7605,
+          8.1405
+        ],
+        [
+          "$P_{7}$",
+          2.9801,
+          1.3901,
+          1.7401,
+          1.5601,
+          1.4901
+        ],
+        [
+          "No. $\\alpha f+1 \\approx 1-$",
+          7,
+          115,
+          16,
+          16,
+          "NA"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "14",
+      "table_title": "Rankings of EMSM-EDA, AMaLGaM, SaDE, JADE, and EMNA $_{\\mathrm{R}}$ on seven real-world optimization problems based on Friedman's test.",
+      "headers": [
+        "Algorithms",
+        "Ranking"
+      ],
+      "rows": [
+        [
+          "EMSM-EDA",
+          "$\\mathbf{1 . 2 1 4 3}$"
+        ],
+        [
+          "AMaLGaM",
+          2.5714
+        ],
+        [
+          "SaDE",
+          3.0
+        ],
+        [
+          "JADE",
+          3.2143
+        ],
+        [
+          "EMNA $_{\\mathrm{R}}$",
+          5.0
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    }
+  ]
+}

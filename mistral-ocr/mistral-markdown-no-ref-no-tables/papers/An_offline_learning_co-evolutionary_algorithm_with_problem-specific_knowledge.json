@@ -1,0 +1,1820 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/An offline learning co-evolutionary algorithm with problem-specific knowledge.md",
+    "filename": "An offline learning co-evolutionary algorithm with problem-specific knowledge.md",
+    "title": "An offline learning co-evolutionary algorithm with problem-specific knowledge",
+    "year": "2022"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] Z.H. Zhan, L. Shi, K.C. Tan, J. Zhang, A Survey On Evolutionary Computation For Complex Continuous Optimization, Springer, Netherlands, 2021, https://doi.org/ 10.1007/s10462-021-10642-y, 0123456789.\n[2] Z. Tan, K. Li, Y. Wang, Differential evolution with adaptive mutation strategy based on fitness landscape analysis, Inf. Sci. 549 (2021) 142-163, https://doi. org/10.1016/j.ins.2020.11.023.\n[3] M.N. Omidvar, X. Li, X. Yao, A review of population-based metaheuristics for large-scale black-box global optimization: part A, IEEE Trans. Evol. Comput. (2021), https://doi.org/10.1109/tevc.2021.3130838, 1-1Nov.\n[4] M.N. Omidvar, X. Li, X. Yao, A review of population-based metaheuristics for large-scale black-box global optimization: part B, IEEE Trans. Evol. Comput. (2021), https://doi.org/10.1109/tevc.2021.3130835, 1-1Nov.\n[5] H. Dong, Z. Dong, Surrogate-assisted grey wolf optimization for highdimensional, computationally expensive black-box problems, Swarm Evol. Comput. 57 (2020), https://doi.org/10.1016/j.swevo.2020.100713. Sep.\n[6] K.Z. Gao, Z.M. He, Y. Huang, P.Y. Duan, P.N. Suganthan, A survey on metaheuristics for solving disassembly line balancing, planning and scheduling problems in remanufacturing, Swarm Evol. Comput. 57 (2020), https://doi.org/ 10.1016/j.swevo.2020.100719. Sep.\n[7] C. Witt, Theory of estimation-of-distribution algorithms, GECCO 2020 Companion, in: Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion, 2020, pp. 1254-1282, https://doi.org/10.1145/ 3377929.3389888. Jul.\n[8] B.B. Oliveira, M.A. Carravilla, J.F. Oliveira, A diversity-based genetic algorithm for scenario generation, Eur. J. Oper. Res. (2021), https://doi.org/10.1016/j. ejor.2021.09.047 xxx.\n[9] L. Manzoni, L. Mariot, E. Tuba, Balanced crossover operators in genetic algorithms, Swarm Evol. Comput. 54 (2020), https://doi.org/10.1016/j. swevo.2020.100646. May.\n[10] A. Kumar, P.P. Biswas, P.N. Suganthan, Differential evolution with orthogonal array-based initialization and a novel selection strategy, Swarm Evol. Comput. 68 (2022), https://doi.org/10.1016/j.swevo.2021.101010. Feb.\n[11] J. Chong, Z. Pan, H. Liang, Z. Gao, J. Gao, Differential evolution algorithm with fitness and diversity ranking-based mutation operator, Swarm Evol. Comput. 61 (2021), https://doi.org/10.1016/j.swevo.2020.100816. Mar.\n[12] S. Das, S.S. Mullick, P.N. Suganthan, Recent advances in differential evolution-an updated survey, Swarm Evol. Comput. 27 (2016) 1-30, https://doi.org/10.1016/ j.swevo.2016.01.004. Apr.\n[13] F. Zhao, L. Zhao, L. Wang, H. Song, A collaborative LSHADE algorithm with comprehensive learning mechanism, Appl. Soft Comput. J. 96 (2020), https:// doi.org/10.1016/j.asoc.2020.106609. Nov.\n[14] A.P. Piotrowski, J.J. Napiorkowski, A.E. Piotrowska, Population size in particle swarm optimization, Swarm Evol. Comput. 58 (2020), https://doi.org/10.1016/j. swevo. 2020.100718. Nov.\n[15] E.H. Houssein, A.G. Gad, K. Hussain, P.N. Suganthan, Major advances in particle swarm optimization: theory, analysis, and application, Swarm Evol. Comput. 63 (2021), https://doi.org/10.1016/j.swevo.2021.100868. Jun.\n[16] M. Hauschild, M. Pelikan, An introduction and survey of estimation of distribution algorithms, Swarm Evol. Comput. 1 (3) (2011) 111-128, https://doi. org/10.1016/j.swevo.2011.08.003. Sep.\n[17] J.P. Martins, A.C.B. Delhem, Pairwise independence and its impact on estimation of distribution algorithms, Swarm Evol. Comput. 27 (2016) 80-96, https://doi. org/10.1016/j.swevo.2015.10.001. Apr.\n[18] M. Gendreau, J.V. Potvin, Eds., Handbook of Metaheuristics, 272, Springer, 2019.\n[19] D.H. Wolpert and W.G. Macready, \"No free lunch theorems for optimization,\" 1997.\n[20] J.R. Rice, The algorithm selection problem, Adv. Comput. 15 (1976) 65-118, https://doi.org/10.1016/S0065-2458(08)60520-5. CAm.\n[21] F. Zhao, S. Di, J. Cao, J. Tang, A novel cooperative multi-stage hyper-heuristic for combination optimization problems, Complex Syst. Model. Simul. 1 (2) (2021), https://doi.org/10.23919/csma.2021.0010.\n[22] L. Wang, J.N. Shen, S.Y. Wang, J. Deng, Advances in co-evolutionary algorithms, in: Kongshi Yu Jueco/Control and Decision, 30, Northeast University, 2015, pp. 193-202, https://doi.org/10.13195/j.kzyje.2014.0624. Feb. 01.\n[23] K.M. Malan, A.P. Engelbrecht, A survey of techniques for characterizing fitness landscapes and some possible ways forward, Inf. Sci. 241 (2013) 148-163, https://doi.org/10.1016/j.ins.2013.04.015. Aug.\n[24] M. Karimi-Managhan, M. Mohammadi, F. Meyer, A.M. Karimi-Managhan, E. G. Tulhi, Machine learning at the service of meta-heuristics for solving combinatorial optimization problems: a state-of-the-art, Eur. J. Oper. Res. 296 (2) (2022) 393-422, https://doi.org/10.1016/j.ejor.2021.04.032.\n[25] S. Wagner, M. Alfenseller, HeuristicLab: a generic and extensible optimization environment. Adaptive and Natural Computing Algorithms, Springer, 2005, pp. 538-541. Dec.\n[26] P. Kerschke, H.H. Hoos, F. Neumann, H. Trautmann, Automated algorithm selection: survey and perspectives, Evol. Comput. 27 (1) (2018) 3-45, https://doi. org/10.1162/tevcc. 99242.\n[27] J. Wawrzyniak, M. Drozdowski, É. Sanlaville, Selecting algorithms for large berth allocation problems, Eur. J. Oper. Res. 283 (3) (2020) 844-862, https://doi.org/ 10.1016/J.EJOB.2019.11.050. Jun.\n[28] H. Mühlenbein, J. Bendisch, H.M. Voigt, From recombination of genes to the estimation of distributions II. Continuous parameters, in: Lecture Notes in Computer Science, 1141, Springer, 1996 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics).\n[29] Y. Liang, et al., An efficient estimation of distribution algorithm with rank-one modification and population reduction, Biosystems 181 (2019), https://doi.org/ 10.1016/j.biosystems.2019.04.001.\n[30] S. Baluja, \"Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning,\" Tech. Rep. CMU-CS94-163, School Comput. Sci., Carnegie Mellon Univ., Pittsburgh, PA, 1994.\n[31] J.S. de Bonet, C.L. Izbell, P. Viola, MIMIC: Finding Optima By Estimating Probability Desorbes, MIT Press, 1997.\n[32] M. Pelikan, D.E. Goldberg, and E. Canit U-Paz, \"BOA: the Bayesian optimization algorithm,\" 1999.\n[33] J. Osmasek, S. Kern, N. Hansen, P. Koumoutsakos, A mixed Bayesian optimization algorithm with variance adaptation, in: Lecture Notes in Computer Science, 3242, Springer, 2004 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics).\n[34] J. Grahl, P.A.N. Bosman, F. Rothlauf, The correlation-triggered adaptive variance scaling IDEA, in: Proceedings of the GECCO Genetic and Evolutionary Computation Conference 1, 2006, https://doi.org/10.1145/1143997.1144071.\n[35] W. Dong, X. Yao, Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms, Inf. Sci. 178 (15) (2008), https://doi.org/ 10.1016/j.ins. 2008.01.021.\n[36] M. Wagner, A. Auger, and M. Schoenauer, \"EEDA : A new robust estimation of distribution algorithms,\" 2006, [Online]. Available: https://hal.inria.fr/inria -00070802.\n[37] Y. Cai, X. Sun, H. Xu, and P. Jia, \"Cross entropy and adaptive variance scaling in continuous EDA,\" 2007, doi:10.1145/1276958.1277081.\n[38] P.A.N. Bosman, J. Grahl, D. Thierens, Enhancing the performance of maximumlikelihood gaussian EDA using anticipated mean shift, in: Lecture Notes in Computer Science, 5199, Springer, 2008 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics).NCS.\n[39] Y. Liang, Z. Ren, X. Yao, Z. Feng, A. Chen, W. Guo, Enhancing gaussian estimation of distribution algorithm by exploiting evolution direction with archive, IEEE Trans. Cybern. 50 (1) (2020), https://doi.org/10.1109/TCYE.2018.2869567.\n[40] N. Hansen, A. Ostermeter, Completely derandomized self-adaptation in evolution strategies, Evol. Comput. 9 (2) (2001), https://doi.org/10.1162/ 106365601750190398.\n\n[41] W. Dong, T. Chen, P. Tino, X. Yao, Scaling up estimation of distribution algorithms for continuous optimization, IEEE Trans. Evol. Comput. 17 (6) (2013), https://doi.org/10.1109/TEVC.2013.2247404.\n[42] F. Zhao, Z. Shao, J. Wang, C. Zhang, A hybrid differential evolution and estimation of distribution algorithm based on neighborhood search for job shop scheduling problems, Int. J. Prod. Res. 54 (4) (2016), https://doi.org/10.1080/ 00207543.2015.1041575.\n[43] Z. Ren, Y. Liang, L. Wang, A. Zhang, B. Pang, B. Li, Anisotropic adaptive variance scaling for Gaussian estimation of distribution algorithm, Knowl. Based Syst. 146 (2018) 142-151, https://doi.org/10.1016/j.knowa.2018.02.001. Apr.\n[44] L. Tang, X. Song, J. Liu, C. Liu, An estimation of distribution algorithm with filtering and learning, IEEE Trans. Autom. Sci. Eng. 18 (3) (2021), https://doi. org/10.1109/TASE.2020.3019694.\n[45] S. Das, S.S. Mullick, P.N. Suganthan, Recent advances in differential evolution-an updated survey, Swarm Evol. Comput. 27 (2016), https://doi.org/10.1016/j. swarm.2016.01.004.\n[46] A.K. Qin, P.N. Suganthan, Self-adaptive differential evolution algorithm for numerical optimization, in: Proceedings of the IEEE Congress on Evolutionary Computation, IEEE CEC 2, 2005, https://doi.org/10.1109/eec.2005.1554904.\n[47] G. Wu, R. Malliperdi, P.N. Suganthan, R. Wang, H. Chen, Differential evolution with multi-population based ensemble of mutation strategies, Inf. Sci. 329 (2016), https://doi.org/10.1016/j.ins.2015.09.009.\n[48] J. Zhang, A.C. Sanderson, JADE: adaptive differential evolution with optional external archive, IEEE Trans. Evol. Comput. 13 (5) (2009), https://doi.org/ 10.1109/TEVC.2009.2014613.\n[49] R. Tanabe, A. Fukunaga, Success-history based parameter adaptation for differential evolution, in: Proceedings of the IEEE Congress on Evolutionary Computation, 2013, pp. 71-78, https://doi.org/10.1109/CEC.2013.6557555, CEC2013.\n[50] R. Tanabe and A.S. Fukunaga, \"Improving the search performance of SHADE using linear population size reduction\".\n[51] S.M. Elsayed, R.A. Sarker, and D.L. Essam, \"GA with a new multi-parent crossover for solving IEEE-CEC2011 competition problems,\" 2011. doi:10.1109/CEC. 2011 .5949751 .\n[52] I. Boussaiil, A. Chatterjee, P. Siarry, M. Ahmed-Nacer, Hybridizing biogeographybased optimization with differential evolution for optimal power allocation in wireless sensor networks, IEEE Trans. Veh. Technol. 60 (5) (2011), https://doi. org/10.1109/TVT.2011.2151215.\n[53] T.L. Li, Z.H. Zhao, Y.J. Gong, W.N. Chen, J. Zhang, Y. Li, Differential evolution with an evolution path: a DEEP evolutionary algorithm, IEEE Trans. Cybern. 45 (9) (2015), https://doi.org/10.1109/TCYB.2014.2360752.\n[54] P. Rakehit, et al., Realization of an adaptive memetic algorithm using differential evolution and q-learning: a case study in multirobot path planning, IEEE Trans. Syst. Man Cybern. Part A Syst. Hum. 43 (4) (2013), https://doi.org/10.1109/ TSMCA.2012.2226024.\n[55] I. Poikolainen and F. Neri, \"Differential evolution with concurrent fitness based local search,\" 2013. doi:10.1109/CEC.2013.6557585.\n[56] K.M. Malan, A.P. Engelbrecht, A survey of techniques for characterising fitness landscapes and some possible ways forward, Inf. Sci. 241 (2013) 148-163, https://doi.org/10.1016/j.ins.2013.04.015.\n[57] K.M. Malan, A survey of advances in landscape analysis for optimisation, Algorithms 14 (2) (2021), https://doi.org/10.3390/a14020046.\n[58] F. Xia, J. Liu, H. Niu, Y. Fu, L. Wan, and X. Kong, \"Random walks: a review of algorithms and applications,\" Aug. 2020, doi:10.1109/TEYC1.2019.2952908.\n[59] K.M. Malan and A.P. Engelbrecht, \"A progressive random walk algorithm for sampling continuous fitness landscapes,\" 2014. doi:10.1109/CEC.2014.6900576.\n[60] G. Ochoa, M. Tomassini, C. Darabos, S. Verei, A study of NK landscapes' basins and local optima networks, in: Proceedings of the GECCO'08: 10th Annual Conference on Genetic and Evolutionary Computation, 2008, pp. 555-562, https://doi.org/10.1145/1389095.1389204.\n[61] G. Ochoa, K.M. Malan, C. Blum, Search trajectory networks: a tool for analysing and visualising the behaviour of metaheuristics, Appl. Soft Comput. 109 (2021), 107492, https://doi.org/10.1016/j.asoc.2021.107492.\n[62] E.M. Malan, A.P. Engelbrecht, Quantifying raggedness of continuous landscapes using entropy, in: Proceedings of the IEEE Congress on Evolutionary Computation, CEC, 2009, pp. 1440-1447, https://doi.org/10.1109/ CEC.2009.4903112, 2009.\n[63] O. Mersmann, B. Biochl, H. Trautmann, M. Preuss, C. Weils, G. Rudolph, Exploratory landscape analysis, in: Proceedings of the Genetic and Evolutionary Computation Conference 11, GECCO, 2011, pp. 829-836, https://doi.org/ 10.1145/2001576.2001690. February 2014.\n[64] A. Liehseghe, F. Daolin, S. Verei, B. Derbel, H. Aguirre, K. Tanaka, Landscapeaware performance prediction for evolutionary multiobjective optimization, IEEE Trans. Evol. Comput. 24 (6) (2020) 1063-1077, https://doi.org/10.1109/ TEVC.2019.2940828.\n[65] Y. Sun, M. Kirley, S.K. Halgamuge, Quantifying variable interactions in continuous optimization problems, IEEE Trans. Evol. Comput. 21 (2) (2017) 249-264, https://doi.org/10.1109/TEVC.2016.2599164.\n[66] C. Pexhap, D. Robilliard, P. Preuss, A bit-wise epistasis measure for binary search spaces, in: Lecture Notes in Computer Science, 1498, Springer, 1998, pp. 47-56 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)LNCS.\n[67] Y. Davidor, \"Epistasis variance: a viewpoint on GA-hardness,\" vol. 1, pp. 23-35, Jan. 1991, doi:10.1016/0978-0-08-050684-5.50005-7.\n[68] F. Zhao, R. Ma, L. Wang, A self-learning discrete jaya algorithm for multiobjective energy-efficient distributed no-idle flow-shop scheduling problem in\nheterogeneous factory system, IEEE Trans. Cybern. (2021), https://doi.org/ 10.1109/TCYB.2021.3086181.\n[69] F. Zhao, X. He, L. Wang, A two-stage cooperative evolutionary algorithm with problem-specific knowledge for energy-efficient scheduling of no-wait flow-shop problem, IEEE Trans. Cybern. 31 (11) (2021) 5291-5303, https://doi.org/ 10.1109/TCYB.2020.3025662 . Nov.\n[70] F. Zhao, L. Zhang, J. Cao, J. Tang, A cooperative water wave optimization algorithm with reinforcement learning for the distributed assembly no-idle flowshop scheduling problem, Comput. Ind. Eng. 153 (2021), https://doi.org/ 10.1016/j.cie.2020.107082. Mar.\n[71] F. Zhao, L. Zhang, Y. Zhang, W. Ma, C. Zhang, H. Song, A hybrid discrete water wave optimization algorithm for the no-idle flowshop scheduling problem with total tardiness criterion, Expert Syst. Appl. 146 (2020), https://doi.org/10.1016/ j.essca.2019.113166.\n[72] S. Fairec, C. Khompatraporn, A. From-On, B. Sirinaovakul, Combinatorial artificial bee colony optimization with reinforcement learning updating for travelling salesman problem, in: Proceedings of the 16th International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology, ECT+C0N, 2019, pp. 93-96, https://doi.org/10.1109/ ECT-CON47248.2019.8955176, 2019Jul.\n[73] C.Y. Cheng, P. Pourbejary, K.C. Ying, C.F. Lin, Unsupervised learning-based artificial bee colony for minimizing non-value-adding operations, Appl. Soft Comput. 105 (2021), 107288, https://doi.org/10.1016/J.ASOC.2021.107288. Jul.\n[74] A. Dantaz, A. Pozo, On the use of fitness landscape features in meta-learning based algorithm selection for the quadratic assignment problem, Theor. Comput. Sci. 805 (2020) 62-70, https://doi.org/10.1016/J.TCS.2019.10.033. Jan.\n[75] F. de la Rosa-Rivera, J.I. Nunez-Varela, J.C. Ortiz-Baylón, H. Terashima-Marin, Algorithm selection for solving educational timetabling problems, Expert Syst. Appl. 174 (2021), 114694, https://doi.org/10.1016/J.TS98.8.2021.114694. Jul.\n[76] F. Arnold, K. Sörensen, What makes a VRP solution good? The generation of problem-specific knowledge for heuristics, Comput. Oper. Res. 106 (2019) 280-288, https://doi.org/10.1016/J.TOIR.2018.02.007. Jun.\n[77] M.M. Nasiri, S. Salesi, A. Rahbari, N. Salmanzadeh Meydani, M. Abdollai, A data mining approach for population-based methods to solve the JSSP, Soft Comput. 23 (21) (2019) 11107-11122, https://doi.org/10.1007/S00500-018-3663-2/ TABLÉS/11. Nov.\n[78] Y. Bengio, E. Prejinger, A. Lodi, B. Patel, and S. Sankaranarayanan, \"A learningbased algorithm to quickly compute good primal solutions for stochastic integer programs,\" Dec. 2019, (Online). Available: http://arxiv.org/abc/1912.08112.\n[79] F. Lucas, R. Billot, M. Sevaue, K. Sörensen, Reducing space search in combinatorial optimization using machine learning tools, in: Lecture Notes in Computer Science, 12096, Springer, 2020, pp. 143-150 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)LNCSMay.\n[80] N. Ghalavand, E. Khorram, V. Morovati, An adaptive nonmonotone line search for multiobjective optimization problems, Comput. Oper. Res. 136 (2021), https:// doi.org/10.1016/j.cue.2021.105506.\n[81] B. Ivorra, B. Mohammadi, A. Manuel Ramos, A multi-layer line search method to improve the initialization of optimization algorithms, Eur. J. Oper. Res. 247 (3) (2015), https://doi.org/10.1016/j.epw.2015.06.044.\n[82] X. Zhao, W. Lin, Q. Zhang, Enhanced particle swarm optimization based on principal component analysis and line search, Appl. Math. Comput. 229 (2014), https://doi.org/10.1016/j.amc.2013.12.068.\n[83] M. Schonlan, R.Y. Zou, The random forest algorithm for statistical learning, Stata J. 20 (1) (2020), https://doi.org/10.1177/1536897X20909688.\n[84] L. Breiman, Random forests, Mach. Learn. 45 (1) (2001), https://doi.org/ 10.1023/A:1010933404324.\n[85] J.L. Speiser, M.E. Miller, J. Tooze, E. Ip, A comparison of random forest variable selection methods for classification prediction modeling, Expert Syst. Appl. 134 (2019), https://doi.org/10.1016/j.essca.2019.05.020.\n[86] S. Sundaramurthy, P. Jayavel, A hybrid grey wolf optimization and particle swarm optimization with C4.5 approach for prediction of rheumatoid arthritis, Appl. Soft Comput. J. 94 (2020), https://doi.org/10.1016/j.asoc.2020.106500.\n[87] J.J. Liang, B.Y. Qu, and P.N. Suganthan, \"Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective realparameter numerical optimization,\" 2013, (Online). Available: http://www.ntu. edu.ag/home/87905qgan/index. files/CEC2014.\n[88] J.J. Liang, B.Y. Qu, P.N. Suganthan, and Q. Chen, \"Problem definitions and evaluation criteria for the CEC 2015 competition on learning-based realparameter single objective optimization,\" 2014, (Online). Available: http://www ncu.edu.eg/home/87905qgan/index. files/CEC2015/CEC2015.htm.\n[89] N.H. Awad, M.Z. Ali, J. Liang, B.Y. Qu, and P.N. Suganthan, Problem definitions and evaluation criteria for the CEC 2017 special session and competition on realparameter optimization, in: August. 2016.\n[90] X. Meng, P. Zhang, Y. Xu, H. Xie, Construction of decision tree based on C4.5 algorithm for online voltage stability assessment, Int. J. Electr. Power Energy Syst. 118 (2020), https://doi.org/10.1016/j.ippos.2019.105793.\n[91] B.F. Tanyu, A. Abbaspour, Y. Almohammadlou, G. Treuci, Landslide susceptibility analyses using Random Forest, C4.5, and C5.0 with balanced and unbalanced datasets, Cotens 203 (2021), https://doi.org/10.1016/j. cotens.2021.105355 (Amst).\n[92] X. Tong, B. Yuan, B. Li, Model complex control CMA-ES, Swarm Evol. Comput. 50 (2019), https://doi.org/10.1016/j.swarw.2019.100558. Nov.\n[93] J. Brest, M.S. Mauëze, and B. Boikovic, \"Single objective real-parameter optimization: algorithm JSO,\" 2017. doi:10.1109/CEC.2017.7969456.\n\n[94] J. Brest, M.S. Maučec, B. Bošković, IL-SHADE: improved L-SHADE algorithm for single objective real-parameter optimization, in: Proceedings of the IEEE Congress on Evolutionary Computation, 2016, pp. 1188-1195, https://doi.org/ 10.1109/CEC.2016.7743922. CECNov. 2016.\n[95] M. Sebag and A. Ducoulombier, \"Extending population-based incremental learning to continuous search spaces, 2022\".\n[96] F. Zhao, Z. Shao, R. Wang, C. Zhang, J. Wang, A hybrid EDA with Chaotic DE algorithm and its performance analysis, J. Comput. Inf. Syst. 11 (4) (2015) 1505-1512, https://doi.org/10.12733/jcis13564. Feb.\n[97] K. Hinkelmann, Design and analysis of experiments, vol. 3. 2012. doi:10.100 2/9781118147634.\n[98] R. Salomon, Re-evaluating genetic algorithm performance under coordinate rotation of benchmark functions. A survey of some theoretical and practical aspects of genetic algorithms, Biosystems 39 (3) (1996) 263-278, https://doi. org/10.1016/0303-2647(96)01621-8.\n[99] A. Vikstein, R. Senkerik, M. Pluhacek, T. Kadavy, A. Zamuda, Distance based parameter adaptation for success-history based differential evolution, Swarm Evol. Comput. 50 (2019), 100462, https://doi.org/10.1016/J. SWEVO.2018.10.013. Nov.\n[100] S. Das, P.N. Suganthan, and P.K. Rout, \"Problem definitions and evaluation criteria for CEC 2011 competition on testing evolutionary algorithms on real world optimization problems,\" 2010. [Online]. Available: http://www.esa.int/act",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Z.H. Zhan, L. Shi, K.C. Tan, J. Zhang, A Survey On Evolutionary Computation For Complex Continuous Optimization, Springer, Netherlands, 2021, https://doi.org/ 10.1007/s10462-021-10642-y, 0123456789."
+      },
+      {
+        "ref_id": "2",
+        "text": "Z. Tan, K. Li, Y. Wang, Differential evolution with adaptive mutation strategy based on fitness landscape analysis, Inf. Sci. 549 (2021) 142-163, https://doi. org/10.1016/j.ins.2020.11.023."
+      },
+      {
+        "ref_id": "3",
+        "text": "M.N. Omidvar, X. Li, X. Yao, A review of population-based metaheuristics for large-scale black-box global optimization: part A, IEEE Trans. Evol. Comput. (2021), https://doi.org/10.1109/tevc.2021.3130838, 1-1Nov."
+      },
+      {
+        "ref_id": "4",
+        "text": "M.N. Omidvar, X. Li, X. Yao, A review of population-based metaheuristics for large-scale black-box global optimization: part B, IEEE Trans. Evol. Comput. (2021), https://doi.org/10.1109/tevc.2021.3130835, 1-1Nov."
+      },
+      {
+        "ref_id": "5",
+        "text": "H. Dong, Z. Dong, Surrogate-assisted grey wolf optimization for highdimensional, computationally expensive black-box problems, Swarm Evol. Comput. 57 (2020), https://doi.org/10.1016/j.swevo.2020.100713. Sep."
+      },
+      {
+        "ref_id": "6",
+        "text": "K.Z. Gao, Z.M. He, Y. Huang, P.Y. Duan, P.N. Suganthan, A survey on metaheuristics for solving disassembly line balancing, planning and scheduling problems in remanufacturing, Swarm Evol. Comput. 57 (2020), https://doi.org/ 10.1016/j.swevo.2020.100719. Sep."
+      },
+      {
+        "ref_id": "7",
+        "text": "C. Witt, Theory of estimation-of-distribution algorithms, GECCO 2020 Companion, in: Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion, 2020, pp. 1254-1282, https://doi.org/10.1145/ 3377929.3389888. Jul."
+      },
+      {
+        "ref_id": "8",
+        "text": "B.B. Oliveira, M.A. Carravilla, J.F. Oliveira, A diversity-based genetic algorithm for scenario generation, Eur. J. Oper. Res. (2021), https://doi.org/10.1016/j. ejor.2021.09.047 xxx."
+      },
+      {
+        "ref_id": "9",
+        "text": "L. Manzoni, L. Mariot, E. Tuba, Balanced crossover operators in genetic algorithms, Swarm Evol. Comput. 54 (2020), https://doi.org/10.1016/j. swevo.2020.100646. May."
+      },
+      {
+        "ref_id": "10",
+        "text": "A. Kumar, P.P. Biswas, P.N. Suganthan, Differential evolution with orthogonal array-based initialization and a novel selection strategy, Swarm Evol. Comput. 68 (2022), https://doi.org/10.1016/j.swevo.2021.101010. Feb."
+      },
+      {
+        "ref_id": "11",
+        "text": "J. Chong, Z. Pan, H. Liang, Z. Gao, J. Gao, Differential evolution algorithm with fitness and diversity ranking-based mutation operator, Swarm Evol. Comput. 61 (2021), https://doi.org/10.1016/j.swevo.2020.100816. Mar."
+      },
+      {
+        "ref_id": "12",
+        "text": "S. Das, S.S. Mullick, P.N. Suganthan, Recent advances in differential evolution-an updated survey, Swarm Evol. Comput. 27 (2016) 1-30, https://doi.org/10.1016/ j.swevo.2016.01.004. Apr."
+      },
+      {
+        "ref_id": "13",
+        "text": "F. Zhao, L. Zhao, L. Wang, H. Song, A collaborative LSHADE algorithm with comprehensive learning mechanism, Appl. Soft Comput. J. 96 (2020), https:// doi.org/10.1016/j.asoc.2020.106609. Nov."
+      },
+      {
+        "ref_id": "14",
+        "text": "A.P. Piotrowski, J.J. Napiorkowski, A.E. Piotrowska, Population size in particle swarm optimization, Swarm Evol. Comput. 58 (2020), https://doi.org/10.1016/j. swevo. 2020.100718. Nov."
+      },
+      {
+        "ref_id": "15",
+        "text": "E.H. Houssein, A.G. Gad, K. Hussain, P.N. Suganthan, Major advances in particle swarm optimization: theory, analysis, and application, Swarm Evol. Comput. 63 (2021), https://doi.org/10.1016/j.swevo.2021.100868. Jun."
+      },
+      {
+        "ref_id": "16",
+        "text": "M. Hauschild, M. Pelikan, An introduction and survey of estimation of distribution algorithms, Swarm Evol. Comput. 1 (3) (2011) 111-128, https://doi. org/10.1016/j.swevo.2011.08.003. Sep."
+      },
+      {
+        "ref_id": "17",
+        "text": "J.P. Martins, A.C.B. Delhem, Pairwise independence and its impact on estimation of distribution algorithms, Swarm Evol. Comput. 27 (2016) 80-96, https://doi. org/10.1016/j.swevo.2015.10.001. Apr."
+      },
+      {
+        "ref_id": "18",
+        "text": "M. Gendreau, J.V. Potvin, Eds., Handbook of Metaheuristics, 272, Springer, 2019."
+      },
+      {
+        "ref_id": "19",
+        "text": "D.H. Wolpert and W.G. Macready, \"No free lunch theorems for optimization,\" 1997."
+      },
+      {
+        "ref_id": "20",
+        "text": "J.R. Rice, The algorithm selection problem, Adv. Comput. 15 (1976) 65-118, https://doi.org/10.1016/S0065-2458(08)60520-5. CAm."
+      },
+      {
+        "ref_id": "21",
+        "text": "F. Zhao, S. Di, J. Cao, J. Tang, A novel cooperative multi-stage hyper-heuristic for combination optimization problems, Complex Syst. Model. Simul. 1 (2) (2021), https://doi.org/10.23919/csma.2021.0010."
+      },
+      {
+        "ref_id": "22",
+        "text": "L. Wang, J.N. Shen, S.Y. Wang, J. Deng, Advances in co-evolutionary algorithms, in: Kongshi Yu Jueco/Control and Decision, 30, Northeast University, 2015, pp. 193-202, https://doi.org/10.13195/j.kzyje.2014.0624. Feb. 01."
+      },
+      {
+        "ref_id": "23",
+        "text": "K.M. Malan, A.P. Engelbrecht, A survey of techniques for characterizing fitness landscapes and some possible ways forward, Inf. Sci. 241 (2013) 148-163, https://doi.org/10.1016/j.ins.2013.04.015. Aug."
+      },
+      {
+        "ref_id": "24",
+        "text": "M. Karimi-Managhan, M. Mohammadi, F. Meyer, A.M. Karimi-Managhan, E. G. Tulhi, Machine learning at the service of meta-heuristics for solving combinatorial optimization problems: a state-of-the-art, Eur. J. Oper. Res. 296 (2) (2022) 393-422, https://doi.org/10.1016/j.ejor.2021.04.032."
+      },
+      {
+        "ref_id": "25",
+        "text": "S. Wagner, M. Alfenseller, HeuristicLab: a generic and extensible optimization environment. Adaptive and Natural Computing Algorithms, Springer, 2005, pp. 538-541. Dec."
+      },
+      {
+        "ref_id": "26",
+        "text": "P. Kerschke, H.H. Hoos, F. Neumann, H. Trautmann, Automated algorithm selection: survey and perspectives, Evol. Comput. 27 (1) (2018) 3-45, https://doi. org/10.1162/tevcc. 99242."
+      },
+      {
+        "ref_id": "27",
+        "text": "J. Wawrzyniak, M. Drozdowski, É. Sanlaville, Selecting algorithms for large berth allocation problems, Eur. J. Oper. Res. 283 (3) (2020) 844-862, https://doi.org/ 10.1016/J.EJOB.2019.11.050. Jun."
+      },
+      {
+        "ref_id": "28",
+        "text": "H. Mühlenbein, J. Bendisch, H.M. Voigt, From recombination of genes to the estimation of distributions II. Continuous parameters, in: Lecture Notes in Computer Science, 1141, Springer, 1996 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)."
+      },
+      {
+        "ref_id": "29",
+        "text": "Y. Liang, et al., An efficient estimation of distribution algorithm with rank-one modification and population reduction, Biosystems 181 (2019), https://doi.org/ 10.1016/j.biosystems.2019.04.001."
+      },
+      {
+        "ref_id": "30",
+        "text": "S. Baluja, \"Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning,\" Tech. Rep. CMU-CS94-163, School Comput. Sci., Carnegie Mellon Univ., Pittsburgh, PA, 1994."
+      },
+      {
+        "ref_id": "31",
+        "text": "J.S. de Bonet, C.L. Izbell, P. Viola, MIMIC: Finding Optima By Estimating Probability Desorbes, MIT Press, 1997."
+      },
+      {
+        "ref_id": "32",
+        "text": "M. Pelikan, D.E. Goldberg, and E. Canit U-Paz, \"BOA: the Bayesian optimization algorithm,\" 1999."
+      },
+      {
+        "ref_id": "33",
+        "text": "J. Osmasek, S. Kern, N. Hansen, P. Koumoutsakos, A mixed Bayesian optimization algorithm with variance adaptation, in: Lecture Notes in Computer Science, 3242, Springer, 2004 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)."
+      },
+      {
+        "ref_id": "34",
+        "text": "J. Grahl, P.A.N. Bosman, F. Rothlauf, The correlation-triggered adaptive variance scaling IDEA, in: Proceedings of the GECCO Genetic and Evolutionary Computation Conference 1, 2006, https://doi.org/10.1145/1143997.1144071."
+      },
+      {
+        "ref_id": "35",
+        "text": "W. Dong, X. Yao, Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms, Inf. Sci. 178 (15) (2008), https://doi.org/ 10.1016/j.ins. 2008.01.021."
+      },
+      {
+        "ref_id": "36",
+        "text": "M. Wagner, A. Auger, and M. Schoenauer, \"EEDA : A new robust estimation of distribution algorithms,\" 2006, [Online]. Available: https://hal.inria.fr/inria -00070802."
+      },
+      {
+        "ref_id": "37",
+        "text": "Y. Cai, X. Sun, H. Xu, and P. Jia, \"Cross entropy and adaptive variance scaling in continuous EDA,\" 2007, doi:10.1145/1276958.1277081."
+      },
+      {
+        "ref_id": "38",
+        "text": "P.A.N. Bosman, J. Grahl, D. Thierens, Enhancing the performance of maximumlikelihood gaussian EDA using anticipated mean shift, in: Lecture Notes in Computer Science, 5199, Springer, 2008 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics).NCS."
+      },
+      {
+        "ref_id": "39",
+        "text": "Y. Liang, Z. Ren, X. Yao, Z. Feng, A. Chen, W. Guo, Enhancing gaussian estimation of distribution algorithm by exploiting evolution direction with archive, IEEE Trans. Cybern. 50 (1) (2020), https://doi.org/10.1109/TCYE.2018.2869567."
+      },
+      {
+        "ref_id": "40",
+        "text": "N. Hansen, A. Ostermeter, Completely derandomized self-adaptation in evolution strategies, Evol. Comput. 9 (2) (2001), https://doi.org/10.1162/ 106365601750190398."
+      },
+      {
+        "ref_id": "41",
+        "text": "W. Dong, T. Chen, P. Tino, X. Yao, Scaling up estimation of distribution algorithms for continuous optimization, IEEE Trans. Evol. Comput. 17 (6) (2013), https://doi.org/10.1109/TEVC.2013.2247404."
+      },
+      {
+        "ref_id": "42",
+        "text": "F. Zhao, Z. Shao, J. Wang, C. Zhang, A hybrid differential evolution and estimation of distribution algorithm based on neighborhood search for job shop scheduling problems, Int. J. Prod. Res. 54 (4) (2016), https://doi.org/10.1080/ 00207543.2015.1041575."
+      },
+      {
+        "ref_id": "43",
+        "text": "Z. Ren, Y. Liang, L. Wang, A. Zhang, B. Pang, B. Li, Anisotropic adaptive variance scaling for Gaussian estimation of distribution algorithm, Knowl. Based Syst. 146 (2018) 142-151, https://doi.org/10.1016/j.knowa.2018.02.001. Apr."
+      },
+      {
+        "ref_id": "44",
+        "text": "L. Tang, X. Song, J. Liu, C. Liu, An estimation of distribution algorithm with filtering and learning, IEEE Trans. Autom. Sci. Eng. 18 (3) (2021), https://doi. org/10.1109/TASE.2020.3019694."
+      },
+      {
+        "ref_id": "45",
+        "text": "S. Das, S.S. Mullick, P.N. Suganthan, Recent advances in differential evolution-an updated survey, Swarm Evol. Comput. 27 (2016), https://doi.org/10.1016/j. swarm.2016.01.004."
+      },
+      {
+        "ref_id": "46",
+        "text": "A.K. Qin, P.N. Suganthan, Self-adaptive differential evolution algorithm for numerical optimization, in: Proceedings of the IEEE Congress on Evolutionary Computation, IEEE CEC 2, 2005, https://doi.org/10.1109/eec.2005.1554904."
+      },
+      {
+        "ref_id": "47",
+        "text": "G. Wu, R. Malliperdi, P.N. Suganthan, R. Wang, H. Chen, Differential evolution with multi-population based ensemble of mutation strategies, Inf. Sci. 329 (2016), https://doi.org/10.1016/j.ins.2015.09.009."
+      },
+      {
+        "ref_id": "48",
+        "text": "J. Zhang, A.C. Sanderson, JADE: adaptive differential evolution with optional external archive, IEEE Trans. Evol. Comput. 13 (5) (2009), https://doi.org/ 10.1109/TEVC.2009.2014613."
+      },
+      {
+        "ref_id": "49",
+        "text": "R. Tanabe, A. Fukunaga, Success-history based parameter adaptation for differential evolution, in: Proceedings of the IEEE Congress on Evolutionary Computation, 2013, pp. 71-78, https://doi.org/10.1109/CEC.2013.6557555, CEC2013."
+      },
+      {
+        "ref_id": "50",
+        "text": "R. Tanabe and A.S. Fukunaga, \"Improving the search performance of SHADE using linear population size reduction\"."
+      },
+      {
+        "ref_id": "51",
+        "text": "S.M. Elsayed, R.A. Sarker, and D.L. Essam, \"GA with a new multi-parent crossover for solving IEEE-CEC2011 competition problems,\" 2011. doi:10.1109/CEC. 2011 .5949751 ."
+      },
+      {
+        "ref_id": "52",
+        "text": "I. Boussaiil, A. Chatterjee, P. Siarry, M. Ahmed-Nacer, Hybridizing biogeographybased optimization with differential evolution for optimal power allocation in wireless sensor networks, IEEE Trans. Veh. Technol. 60 (5) (2011), https://doi. org/10.1109/TVT.2011.2151215."
+      },
+      {
+        "ref_id": "53",
+        "text": "T.L. Li, Z.H. Zhao, Y.J. Gong, W.N. Chen, J. Zhang, Y. Li, Differential evolution with an evolution path: a DEEP evolutionary algorithm, IEEE Trans. Cybern. 45 (9) (2015), https://doi.org/10.1109/TCYB.2014.2360752."
+      },
+      {
+        "ref_id": "54",
+        "text": "P. Rakehit, et al., Realization of an adaptive memetic algorithm using differential evolution and q-learning: a case study in multirobot path planning, IEEE Trans. Syst. Man Cybern. Part A Syst. Hum. 43 (4) (2013), https://doi.org/10.1109/ TSMCA.2012.2226024."
+      },
+      {
+        "ref_id": "55",
+        "text": "I. Poikolainen and F. Neri, \"Differential evolution with concurrent fitness based local search,\" 2013. doi:10.1109/CEC.2013.6557585."
+      },
+      {
+        "ref_id": "56",
+        "text": "K.M. Malan, A.P. Engelbrecht, A survey of techniques for characterising fitness landscapes and some possible ways forward, Inf. Sci. 241 (2013) 148-163, https://doi.org/10.1016/j.ins.2013.04.015."
+      },
+      {
+        "ref_id": "57",
+        "text": "K.M. Malan, A survey of advances in landscape analysis for optimisation, Algorithms 14 (2) (2021), https://doi.org/10.3390/a14020046."
+      },
+      {
+        "ref_id": "58",
+        "text": "F. Xia, J. Liu, H. Niu, Y. Fu, L. Wan, and X. Kong, \"Random walks: a review of algorithms and applications,\" Aug. 2020, doi:10.1109/TEYC1.2019.2952908."
+      },
+      {
+        "ref_id": "59",
+        "text": "K.M. Malan and A.P. Engelbrecht, \"A progressive random walk algorithm for sampling continuous fitness landscapes,\" 2014. doi:10.1109/CEC.2014.6900576."
+      },
+      {
+        "ref_id": "60",
+        "text": "G. Ochoa, M. Tomassini, C. Darabos, S. Verei, A study of NK landscapes' basins and local optima networks, in: Proceedings of the GECCO'08: 10th Annual Conference on Genetic and Evolutionary Computation, 2008, pp. 555-562, https://doi.org/10.1145/1389095.1389204."
+      },
+      {
+        "ref_id": "61",
+        "text": "G. Ochoa, K.M. Malan, C. Blum, Search trajectory networks: a tool for analysing and visualising the behaviour of metaheuristics, Appl. Soft Comput. 109 (2021), 107492, https://doi.org/10.1016/j.asoc.2021.107492."
+      },
+      {
+        "ref_id": "62",
+        "text": "E.M. Malan, A.P. Engelbrecht, Quantifying raggedness of continuous landscapes using entropy, in: Proceedings of the IEEE Congress on Evolutionary Computation, CEC, 2009, pp. 1440-1447, https://doi.org/10.1109/ CEC.2009.4903112, 2009."
+      },
+      {
+        "ref_id": "63",
+        "text": "O. Mersmann, B. Biochl, H. Trautmann, M. Preuss, C. Weils, G. Rudolph, Exploratory landscape analysis, in: Proceedings of the Genetic and Evolutionary Computation Conference 11, GECCO, 2011, pp. 829-836, https://doi.org/ 10.1145/2001576.2001690. February 2014."
+      },
+      {
+        "ref_id": "64",
+        "text": "A. Liehseghe, F. Daolin, S. Verei, B. Derbel, H. Aguirre, K. Tanaka, Landscapeaware performance prediction for evolutionary multiobjective optimization, IEEE Trans. Evol. Comput. 24 (6) (2020) 1063-1077, https://doi.org/10.1109/ TEVC.2019.2940828."
+      },
+      {
+        "ref_id": "65",
+        "text": "Y. Sun, M. Kirley, S.K. Halgamuge, Quantifying variable interactions in continuous optimization problems, IEEE Trans. Evol. Comput. 21 (2) (2017) 249-264, https://doi.org/10.1109/TEVC.2016.2599164."
+      },
+      {
+        "ref_id": "66",
+        "text": "C. Pexhap, D. Robilliard, P. Preuss, A bit-wise epistasis measure for binary search spaces, in: Lecture Notes in Computer Science, 1498, Springer, 1998, pp. 47-56 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)LNCS."
+      },
+      {
+        "ref_id": "67",
+        "text": "Y. Davidor, \"Epistasis variance: a viewpoint on GA-hardness,\" vol. 1, pp. 23-35, Jan. 1991, doi:10.1016/0978-0-08-050684-5.50005-7."
+      },
+      {
+        "ref_id": "68",
+        "text": "F. Zhao, R. Ma, L. Wang, A self-learning discrete jaya algorithm for multiobjective energy-efficient distributed no-idle flow-shop scheduling problem in"
+      },
+      {
+        "ref_id": "69",
+        "text": "F. Zhao, X. He, L. Wang, A two-stage cooperative evolutionary algorithm with problem-specific knowledge for energy-efficient scheduling of no-wait flow-shop problem, IEEE Trans. Cybern. 31 (11) (2021) 5291-5303, https://doi.org/ 10.1109/TCYB.2020.3025662 . Nov."
+      },
+      {
+        "ref_id": "70",
+        "text": "F. Zhao, L. Zhang, J. Cao, J. Tang, A cooperative water wave optimization algorithm with reinforcement learning for the distributed assembly no-idle flowshop scheduling problem, Comput. Ind. Eng. 153 (2021), https://doi.org/ 10.1016/j.cie.2020.107082. Mar."
+      },
+      {
+        "ref_id": "71",
+        "text": "F. Zhao, L. Zhang, Y. Zhang, W. Ma, C. Zhang, H. Song, A hybrid discrete water wave optimization algorithm for the no-idle flowshop scheduling problem with total tardiness criterion, Expert Syst. Appl. 146 (2020), https://doi.org/10.1016/ j.essca.2019.113166."
+      },
+      {
+        "ref_id": "72",
+        "text": "S. Fairec, C. Khompatraporn, A. From-On, B. Sirinaovakul, Combinatorial artificial bee colony optimization with reinforcement learning updating for travelling salesman problem, in: Proceedings of the 16th International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology, ECT+C0N, 2019, pp. 93-96, https://doi.org/10.1109/ ECT-CON47248.2019.8955176, 2019Jul."
+      },
+      {
+        "ref_id": "73",
+        "text": "C.Y. Cheng, P. Pourbejary, K.C. Ying, C.F. Lin, Unsupervised learning-based artificial bee colony for minimizing non-value-adding operations, Appl. Soft Comput. 105 (2021), 107288, https://doi.org/10.1016/J.ASOC.2021.107288. Jul."
+      },
+      {
+        "ref_id": "74",
+        "text": "A. Dantaz, A. Pozo, On the use of fitness landscape features in meta-learning based algorithm selection for the quadratic assignment problem, Theor. Comput. Sci. 805 (2020) 62-70, https://doi.org/10.1016/J.TCS.2019.10.033. Jan."
+      },
+      {
+        "ref_id": "75",
+        "text": "F. de la Rosa-Rivera, J.I. Nunez-Varela, J.C. Ortiz-Baylón, H. Terashima-Marin, Algorithm selection for solving educational timetabling problems, Expert Syst. Appl. 174 (2021), 114694, https://doi.org/10.1016/J.TS98.8.2021.114694. Jul."
+      },
+      {
+        "ref_id": "76",
+        "text": "F. Arnold, K. Sörensen, What makes a VRP solution good? The generation of problem-specific knowledge for heuristics, Comput. Oper. Res. 106 (2019) 280-288, https://doi.org/10.1016/J.TOIR.2018.02.007. Jun."
+      },
+      {
+        "ref_id": "77",
+        "text": "M.M. Nasiri, S. Salesi, A. Rahbari, N. Salmanzadeh Meydani, M. Abdollai, A data mining approach for population-based methods to solve the JSSP, Soft Comput. 23 (21) (2019) 11107-11122, https://doi.org/10.1007/S00500-018-3663-2/ TABLÉS/11. Nov."
+      },
+      {
+        "ref_id": "78",
+        "text": "Y. Bengio, E. Prejinger, A. Lodi, B. Patel, and S. Sankaranarayanan, \"A learningbased algorithm to quickly compute good primal solutions for stochastic integer programs,\" Dec. 2019, (Online). Available: http://arxiv.org/abc/1912.08112."
+      },
+      {
+        "ref_id": "79",
+        "text": "F. Lucas, R. Billot, M. Sevaue, K. Sörensen, Reducing space search in combinatorial optimization using machine learning tools, in: Lecture Notes in Computer Science, 12096, Springer, 2020, pp. 143-150 (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)LNCSMay."
+      },
+      {
+        "ref_id": "80",
+        "text": "N. Ghalavand, E. Khorram, V. Morovati, An adaptive nonmonotone line search for multiobjective optimization problems, Comput. Oper. Res. 136 (2021), https:// doi.org/10.1016/j.cue.2021.105506."
+      },
+      {
+        "ref_id": "81",
+        "text": "B. Ivorra, B. Mohammadi, A. Manuel Ramos, A multi-layer line search method to improve the initialization of optimization algorithms, Eur. J. Oper. Res. 247 (3) (2015), https://doi.org/10.1016/j.epw.2015.06.044."
+      },
+      {
+        "ref_id": "82",
+        "text": "X. Zhao, W. Lin, Q. Zhang, Enhanced particle swarm optimization based on principal component analysis and line search, Appl. Math. Comput. 229 (2014), https://doi.org/10.1016/j.amc.2013.12.068."
+      },
+      {
+        "ref_id": "83",
+        "text": "M. Schonlan, R.Y. Zou, The random forest algorithm for statistical learning, Stata J. 20 (1) (2020), https://doi.org/10.1177/1536897X20909688."
+      },
+      {
+        "ref_id": "84",
+        "text": "L. Breiman, Random forests, Mach. Learn. 45 (1) (2001), https://doi.org/ 10.1023/A:1010933404324."
+      },
+      {
+        "ref_id": "85",
+        "text": "J.L. Speiser, M.E. Miller, J. Tooze, E. Ip, A comparison of random forest variable selection methods for classification prediction modeling, Expert Syst. Appl. 134 (2019), https://doi.org/10.1016/j.essca.2019.05.020."
+      },
+      {
+        "ref_id": "86",
+        "text": "S. Sundaramurthy, P. Jayavel, A hybrid grey wolf optimization and particle swarm optimization with C4.5 approach for prediction of rheumatoid arthritis, Appl. Soft Comput. J. 94 (2020), https://doi.org/10.1016/j.asoc.2020.106500."
+      },
+      {
+        "ref_id": "87",
+        "text": "J.J. Liang, B.Y. Qu, and P.N. Suganthan, \"Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective realparameter numerical optimization,\" 2013, (Online). Available: http://www.ntu. edu.ag/home/87905qgan/index. files/CEC2014."
+      },
+      {
+        "ref_id": "88",
+        "text": "J.J. Liang, B.Y. Qu, P.N. Suganthan, and Q. Chen, \"Problem definitions and evaluation criteria for the CEC 2015 competition on learning-based realparameter single objective optimization,\" 2014, (Online). Available: http://www ncu.edu.eg/home/87905qgan/index. files/CEC2015/CEC2015.htm."
+      },
+      {
+        "ref_id": "89",
+        "text": "N.H. Awad, M.Z. Ali, J. Liang, B.Y. Qu, and P.N. Suganthan, Problem definitions and evaluation criteria for the CEC 2017 special session and competition on realparameter optimization, in: August. 2016."
+      },
+      {
+        "ref_id": "90",
+        "text": "X. Meng, P. Zhang, Y. Xu, H. Xie, Construction of decision tree based on C4.5 algorithm for online voltage stability assessment, Int. J. Electr. Power Energy Syst. 118 (2020), https://doi.org/10.1016/j.ippos.2019.105793."
+      },
+      {
+        "ref_id": "91",
+        "text": "B.F. Tanyu, A. Abbaspour, Y. Almohammadlou, G. Treuci, Landslide susceptibility analyses using Random Forest, C4.5, and C5.0 with balanced and unbalanced datasets, Cotens 203 (2021), https://doi.org/10.1016/j. cotens.2021.105355 (Amst)."
+      },
+      {
+        "ref_id": "92",
+        "text": "X. Tong, B. Yuan, B. Li, Model complex control CMA-ES, Swarm Evol. Comput. 50 (2019), https://doi.org/10.1016/j.swarw.2019.100558. Nov."
+      },
+      {
+        "ref_id": "93",
+        "text": "J. Brest, M.S. Mauëze, and B. Boikovic, \"Single objective real-parameter optimization: algorithm JSO,\" 2017. doi:10.1109/CEC.2017.7969456."
+      },
+      {
+        "ref_id": "94",
+        "text": "J. Brest, M.S. Maučec, B. Bošković, IL-SHADE: improved L-SHADE algorithm for single objective real-parameter optimization, in: Proceedings of the IEEE Congress on Evolutionary Computation, 2016, pp. 1188-1195, https://doi.org/ 10.1109/CEC.2016.7743922. CECNov. 2016."
+      },
+      {
+        "ref_id": "95",
+        "text": "M. Sebag and A. Ducoulombier, \"Extending population-based incremental learning to continuous search spaces, 2022\"."
+      },
+      {
+        "ref_id": "96",
+        "text": "F. Zhao, Z. Shao, R. Wang, C. Zhang, J. Wang, A hybrid EDA with Chaotic DE algorithm and its performance analysis, J. Comput. Inf. Syst. 11 (4) (2015) 1505-1512, https://doi.org/10.12733/jcis13564. Feb."
+      },
+      {
+        "ref_id": "97",
+        "text": "K. Hinkelmann, Design and analysis of experiments, vol. 3. 2012. doi:10.100 2/9781118147634."
+      },
+      {
+        "ref_id": "98",
+        "text": "R. Salomon, Re-evaluating genetic algorithm performance under coordinate rotation of benchmark functions. A survey of some theoretical and practical aspects of genetic algorithms, Biosystems 39 (3) (1996) 263-278, https://doi. org/10.1016/0303-2647(96)01621-8."
+      },
+      {
+        "ref_id": "99",
+        "text": "A. Vikstein, R. Senkerik, M. Pluhacek, T. Kadavy, A. Zamuda, Distance based parameter adaptation for success-history based differential evolution, Swarm Evol. Comput. 50 (2019), 100462, https://doi.org/10.1016/J. SWEVO.2018.10.013. Nov."
+      },
+      {
+        "ref_id": "100",
+        "text": "S. Das, P.N. Suganthan, and P.K. Rout, \"Problem definitions and evaluation criteria for CEC 2011 competition on testing evolutionary algorithms on real world optimization problems,\" 2010. [Online]. Available: http://www.esa.int/act"
+      }
+    ],
+    "reference_count": 100,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The optimal strategy for training functions.",
+      "headers": [
+        "CEC 2014",
+        "10D",
+        "30D",
+        "50D",
+        "100D",
+        "CEC 2014",
+        "10D",
+        "30D",
+        "50D",
+        "100D",
+        "CEC 2015",
+        "10D",
+        "30D",
+        "50D",
+        "100D"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          12,
+          12,
+          1,
+          1,
+          "$f_{16}$",
+          2,
+          2,
+          2,
+          2,
+          "$f_{1}$",
+          12,
+          12,
+          1,
+          1
+        ],
+        [
+          "$f_{2}$",
+          12,
+          12,
+          12,
+          2,
+          "$f_{17}$",
+          2,
+          1,
+          1,
+          1,
+          "$f_{2}$",
+          12,
+          12,
+          12,
+          2
+        ],
+        [
+          "$f_{3}$",
+          12,
+          12,
+          12,
+          12,
+          "$f_{18}$",
+          1,
+          1,
+          1,
+          1,
+          "$f_{3}$",
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          "$f_{4}$",
+          2,
+          2,
+          2,
+          12,
+          "$f_{19}$",
+          2,
+          1,
+          2,
+          2,
+          "$f_{4}$",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "$f_{5}$",
+          1,
+          2,
+          2,
+          2,
+          "$f_{20}$",
+          2,
+          1,
+          1,
+          1,
+          "$f_{5}$",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "$f_{6}$",
+          12,
+          12,
+          1,
+          1,
+          "$f_{21}$",
+          2,
+          1,
+          1,
+          1,
+          "$f_{6}$",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "$f_{7}$",
+          1,
+          12,
+          12,
+          12,
+          "$f_{22}$",
+          2,
+          2,
+          1,
+          1,
+          "$f_{7}$",
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          "$f_{8}$",
+          2,
+          2,
+          2,
+          2,
+          "$f_{23}$",
+          12,
+          12,
+          12,
+          12,
+          "$f_{8}$",
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          "$f_{9}$",
+          1,
+          1,
+          1,
+          1,
+          "$f_{24}$",
+          1,
+          1,
+          1,
+          1,
+          "$f_{9}$",
+          12,
+          1,
+          2,
+          12
+        ],
+        [
+          "$f_{10}$",
+          2,
+          2,
+          2,
+          2,
+          "$f_{25}$",
+          2,
+          12,
+          2,
+          2,
+          "$f_{10}$",
+          12,
+          1,
+          1,
+          1
+        ],
+        [
+          "$f_{11}$",
+          1,
+          1,
+          1,
+          1,
+          "$f_{26}$",
+          12,
+          12,
+          12,
+          12,
+          "$f_{11}$",
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          "$f_{12}$",
+          2,
+          2,
+          2,
+          2,
+          "$f_{27}$",
+          2,
+          12,
+          2,
+          1,
+          "$f_{12}$",
+          1,
+          1,
+          2,
+          12
+        ],
+        [
+          "$f_{13}$",
+          1,
+          1,
+          1,
+          1,
+          "$f_{28}$",
+          2,
+          1,
+          2,
+          1,
+          "$f_{13}$",
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          "$f_{14}$",
+          2,
+          2,
+          2,
+          2,
+          "$f_{29}$",
+          12,
+          1,
+          1,
+          1,
+          "$f_{14}$",
+          2,
+          1,
+          1,
+          2
+        ],
+        [
+          "$f_{15}$",
+          2,
+          2,
+          1,
+          1,
+          "$f_{30}$",
+          2,
+          1,
+          2,
+          1,
+          "$f_{15}$",
+          12,
+          12,
+          12,
+          12
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 15
+    },
+    {
+      "table_number": "2",
+      "table_title": "The ANOVA results of parameters.",
+      "headers": [
+        "Source",
+        "Sum of <br> squares",
+        "Degrees of <br> freedom",
+        "Mean <br> Squares",
+        "F- <br> ratio",
+        "$p-$ <br> value"
+      ],
+      "rows": [
+        [
+          "$N P$",
+          "$4.453 \\mathrm{e}+10$",
+          5,
+          "$8.907 \\mathrm{e}+09$",
+          49.96,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$\\tau$",
+          "$2.291 \\mathrm{e}+10$",
+          4,
+          "$5.728 \\mathrm{e}+09$",
+          32.13,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$N T$",
+          "$4.396 \\mathrm{e}+08$",
+          4,
+          "$1.099 \\mathrm{e}+08$",
+          0.62,
+          0.652
+        ],
+        [
+          "Interactions",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$N P \\times \\tau$",
+          "$7.181 \\mathrm{e}+10$",
+          20,
+          "$3.591 \\mathrm{e}+09$",
+          20.14,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$N P \\times N T$",
+          "$3.134 \\mathrm{e}+09$",
+          20,
+          "$1.567 \\mathrm{e}+08$",
+          0.88,
+          0.613
+        ],
+        [
+          "$\\tau \\times N T$",
+          "$4.314 \\mathrm{e}+09$",
+          16,
+          "$2.697 \\mathrm{e}+08$",
+          1.51,
+          0.116
+        ],
+        [
+          "Error",
+          "$1.426 \\mathrm{e}+10$",
+          80,
+          "$1.783 \\mathrm{e}+08$",
+          "",
+          ""
+        ],
+        [
+          "Total",
+          "$1.614 \\mathrm{e}+11$",
+          149,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison results on 100D benchmark functions.",
+      "headers": [
+        "Function",
+        "",
+        "CMA-ES [81]",
+        "jSO [82]",
+        "LSHADE [49]",
+        "iL-SHADE [83]",
+        "AAVS_EDA [42]",
+        "PBLc [84]",
+        "cDE/EDA [85]",
+        "RSCA",
+        "OLCA"
+      ],
+      "rows": [
+        [
+          1,
+          "Mean",
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          9.3709,
+          2.4107,
+          6.0503,
+          0.0,
+          0.0
+        ],
+        [
+          "",
+          "Std.",
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4.3909,
+          3.5407,
+          7.9903,
+          0.0,
+          0.0
+        ],
+        [
+          2,
+          "Mean",
+          0.0,
+          8.94,
+          4.2301,
+          1.0302,
+          1.003,
+          1.003,
+          8.6229,
+          1.8303,
+          2.04
+        ],
+        [
+          "",
+          "Std.",
+          "1.03E-08",
+          2.4201,
+          1.4302,
+          3.7702,
+          2.8414,
+          2.8414,
+          3.2129,
+          7.03,
+          6.1903
+        ],
+        [
+          3,
+          "Mean",
+          0.0,
+          "2.39E-06",
+          "1.23E-06",
+          "9.62E-07",
+          5.6504,
+          4.1405,
+          6.4404,
+          0.0,
+          0.0
+        ],
+        [
+          "",
+          "Std.",
+          0.0,
+          "2.72E-06",
+          "3.17E-06",
+          "7.73E-07",
+          1.0104,
+          4.1804,
+          1.6104,
+          0.0,
+          0.0
+        ],
+        [
+          4,
+          "Mean",
+          1.7201,
+          1.9002,
+          1.9802,
+          1.9402,
+          7.2003,
+          4.5602,
+          1.5502,
+          2.7702,
+          1.9602
+        ],
+        [
+          "",
+          "Std.",
+          "5.09E-01",
+          2.8901,
+          7.98,
+          1.5401,
+          1.4203,
+          3.9601,
+          4.5901,
+          3.2301,
+          9.09
+        ],
+        [
+          5,
+          "Mean",
+          3.4301,
+          4.3901,
+          3.8601,
+          1.7001,
+          2.2002,
+          5.5101,
+          1.9402,
+          3.7001,
+          3.6201
+        ],
+        [
+          "",
+          "Std.",
+          4.52,
+          5.61,
+          4.8,
+          3.4,
+          3.6401,
+          7.76,
+          3.2401,
+          4.22,
+          5.3
+        ],
+        [
+          6,
+          "Mean",
+          2.1401,
+          "2.02E-04",
+          "7.05E-03",
+          "1.07E-03",
+          2.0801,
+          "4.55E-05",
+          "5.07E-01",
+          "6.05E-03",
+          "2.01E-06"
+        ],
+        [
+          "",
+          "Std.",
+          2.8101,
+          "6.20E-04",
+          "5.08E-03",
+          "1.13E-03",
+          3.52,
+          "2.96E-04",
+          "2.22E-01",
+          "2.43E-07",
+          "3.18E-07"
+        ],
+        [
+          7,
+          "Mean",
+          1.3202,
+          1.4502,
+          1.4002,
+          4.5902,
+          4.4902,
+          1.3602,
+          3.2302,
+          1.3802,
+          1.1302
+        ],
+        [
+          "",
+          "Std.",
+          3.77,
+          6.7,
+          4.65,
+          2.9601,
+          5.2501,
+          4.41,
+          3.7401,
+          4.48,
+          2.23
+        ],
+        [
+          8,
+          "Mean",
+          3.4601,
+          4.2201,
+          3.7701,
+          1.6901,
+          2.4502,
+          5.1301,
+          1.9602,
+          2.1801,
+          3.7701
+        ],
+        [
+          "",
+          "Std.",
+          5.48,
+          5.52,
+          4.52,
+          3.42,
+          4.0601,
+          7.72,
+          3.3601,
+          4.64,
+          4.69
+        ],
+        [
+          9,
+          "Mean",
+          2.2104,
+          "4.59E-02",
+          "4.93E-01",
+          "1.23E-02",
+          4.1003,
+          6.0801,
+          6.0102,
+          "6.33E-01",
+          0.0
+        ],
+        [
+          "",
+          "Std.",
+          7.9801,
+          "1.15E-01",
+          "4.12E-01",
+          "3.11E-02",
+          9.6502,
+          2.5401,
+          3.8802,
+          0.0,
+          "3.78E-01"
+        ],
+        [
+          10,
+          "Mean",
+          9.5003,
+          9.7003,
+          1.0404,
+          2.2304,
+          7.7803,
+          4.9603,
+          1.4004,
+          1.3303,
+          1.4103
+        ],
+        [
+          "",
+          "Std.",
+          1.3103,
+          6.8202,
+          4.6902,
+          6.7002,
+          1.1303,
+          9.8402,
+          1.3603,
+          4.7202,
+          5.4402
+        ],
+        [
+          11,
+          "Mean",
+          1.1303,
+          1.1302,
+          4.6902,
+          1.2202,
+          1.0304,
+          5.1604,
+          7.0402,
+          4.4902,
+          3.7201
+        ],
+        [
+          "",
+          "Std.",
+          2.8202,
+          4.3201,
+          1.1902,
+          3.4801,
+          4.2103,
+          1.0604,
+          2.5902,
+          2.8801,
+          2.3601
+        ],
+        [
+          12,
+          "Mean",
+          5.3303,
+          1.8404,
+          2.2904,
+          1.7704,
+          2.391,
+          6.9907,
+          4.1106,
+          3.1603,
+          3.1603
+        ],
+        [
+          "",
+          "Std.",
+          8.8102,
+          8.3503,
+          7.3703,
+          6.4803,
+          4.4609,
+          2.2607,
+          2.3206,
+          4.5702,
+          7.5802
+        ],
+        [
+          13,
+          "Mean",
+          3.9003,
+          1.4502,
+          4.1502,
+          1.5102,
+          1.1609,
+          4.3603,
+          4.5003,
+          4.6502,
+          8.3201
+        ],
+        [
+          "",
+          "Std.",
+          9.3202,
+          3.8001,
+          1.8702,
+          4.1901,
+          7.1008,
+          1.7703,
+          3.8203,
+          3.6901,
+          3.5901
+        ],
+        [
+          14,
+          "Mean",
+          3.2602,
+          6.4301,
+          2.4902,
+          9.5901,
+          2.3402,
+          7.4006,
+          2.1305,
+          2.6401,
+          2.6701
+        ],
+        [
+          "",
+          "Std.",
+          6.8301,
+          1.0901,
+          3.2801,
+          2.3201,
+          5.4501,
+          2.1806,
+          1.8505,
+          3.4002,
+          2.41
+        ],
+        [
+          15,
+          "Mean",
+          4.4402,
+          1.6202,
+          2.4702,
+          2.3302,
+          1.1207,
+          8.3302,
+          2.2703,
+          5.7901,
+          2.3102
+        ],
+        [
+          "",
+          "Std.",
+          1.1902,
+          3.8101,
+          4.4701,
+          4.6701,
+          3.7907,
+          3.7002,
+          1.9103,
+          5.8201,
+          4.0501
+        ],
+        [
+          16,
+          "Mean",
+          4.6102,
+          1.8603,
+          1.6303,
+          2.5403,
+          1.4703,
+          1.5003,
+          3.1003,
+          1.6003,
+          1.7503
+        ],
+        [
+          "",
+          "Std.",
+          2.3102,
+          3.4902,
+          2.9302,
+          3.2902,
+          4.1602,
+          4.3902,
+          4.9202,
+          3.7502,
+          3.5702
+        ],
+        [
+          17,
+          "Mean",
+          1.3103,
+          1.2803,
+          1.1603,
+          1.6603,
+          1.1503,
+          8.8102,
+          2.6403,
+          1.1102,
+          1.1002
+        ],
+        [
+          "",
+          "Std.",
+          4.2702,
+          2.3802,
+          1.8602,
+          2.4502,
+          3.4702,
+          3.0902,
+          4.6602,
+          6.7001,
+          6.4601
+        ],
+        [
+          18,
+          "Mean",
+          2.1602,
+          1.6702,
+          2.3202,
+          2.1202,
+          6.8703,
+          4.6506,
+          5.1205,
+          2.2302,
+          2.8201
+        ],
+        [
+          "",
+          "Std.",
+          5.0501,
+          3.6501,
+          6.2701,
+          4.3501,
+          6.7303,
+          1.6906,
+          2.5405,
+          6.5201,
+          2.48
+        ],
+        [
+          19,
+          "Mean",
+          3.7302,
+          1.0502,
+          1.8002,
+          1.6202,
+          7.5906,
+          1.1003,
+          2.9803,
+          1.6902,
+          1.6802
+        ],
+        [
+          "",
+          "Std.",
+          9.8901,
+          2.0101,
+          2.6401,
+          2.3301,
+          4.5607,
+          9.2502,
+          3.9603,
+          5.55,
+          2.2101
+        ],
+        [
+          20,
+          "Mean",
+          3.8903,
+          1.3803,
+          1.5303,
+          2.0703,
+          7.5802,
+          7.4102,
+          2.3303,
+          1.5603,
+          1.5503
+        ],
+        [
+          "",
+          "Std.",
+          1.8402,
+          2.4302,
+          2.2102,
+          2.1302,
+          1.9702,
+          2.6502,
+          4.1002,
+          9.35,
+          2.1802
+        ],
+        [
+          21,
+          "Mean",
+          2.5802,
+          2.6402,
+          2.6002,
+          2.4602,
+          4.4402,
+          2.7202,
+          4.3502,
+          2.5802,
+          2.4202
+        ],
+        [
+          "",
+          "Std.",
+          5.82,
+          6.43,
+          4.3,
+          4.03,
+          4.3301,
+          9.06,
+          3.0501,
+          5.95,
+          6.25
+        ],
+        [
+          22,
+          "Mean",
+          1.8403,
+          1.0204,
+          1.1304,
+          2.2504,
+          3.8003,
+          5.8503,
+          1.4504,
+          1.1304,
+          1.1404
+        ],
+        [
+          "",
+          "Std.",
+          8.8302,
+          2.1803,
+          5.2702,
+          8.6602,
+          3.2503,
+          8.8002,
+          1.3303,
+          6.8902,
+          5.2902
+        ],
+        [
+          23,
+          "Mean",
+          5.6602,
+          5.7102,
+          5.7002,
+          5.7102,
+          7.4802,
+          6.1502,
+          7.6902,
+          5.5802,
+          5.6902
+        ],
+        [
+          "",
+          "Std.",
+          1.1101,
+          1.0701,
+          8.75,
+          1.0301,
+          6.5001,
+          1.3301,
+          3.7301,
+          1.2101,
+          1.0001
+        ],
+        [
+          24,
+          "Mean",
+          8.9502,
+          9.0202,
+          9.0902,
+          9.1202,
+          1.4903,
+          9.3602,
+          1.1203,
+          9.0802,
+          7.8602
+        ],
+        [
+          "",
+          "Std.",
+          7.15,
+          7.89,
+          8.46,
+          7.92,
+          4.0502,
+          1.4401,
+          4.8301,
+          8.03,
+          2.2201
+        ],
+        [
+          25,
+          "Mean",
+          7.3302,
+          7.3602,
+          7.3502,
+          7.4302,
+          2.8503,
+          1.0803,
+          7.6902,
+          6.7102,
+          6.6002
+        ],
+        [
+          "",
+          "Std.",
+          3.4701,
+          3.5301,
+          3.9101,
+          3.5901,
+          4.7202,
+          5.1901,
+          7.3001,
+          3.4301,
+          3.2901
+        ],
+        [
+          26,
+          "Mean",
+          3.2303,
+          3.2703,
+          3.3003,
+          3.3103,
+          2.5203,
+          3.7203,
+          6.0903,
+          3.2903,
+          2.4503
+        ],
+        [
+          "",
+          "Std.",
+          1.4902,
+          8.0201,
+          7.3701,
+          8.6401,
+          1.0803,
+          1.8702,
+          4.7502,
+          6.0101,
+          2.1802
+        ],
+        [
+          27,
+          "Mean",
+          5.0002,
+          5.8502,
+          6.2902,
+          6.1202,
+          6.3402,
+          7.9602,
+          5.0002,
+          6.0202,
+          5.4902
+        ],
+        [
+          "",
+          "Std.",
+          "3.87E-04",
+          2.1701,
+          1.8501,
+          1.7501,
+          3.2501,
+          3.0401,
+          "2.67E-04",
+          2.4201,
+          7.75
+        ],
+        [
+          28,
+          "Mean",
+          5.0002,
+          5.2702,
+          5.2402,
+          5.2802,
+          4.1903,
+          1.5203,
+          5.0202,
+          6.2902,
+          5.3602
+        ],
+        [
+          "",
+          "Std.",
+          "6.22E-04",
+          2.7301,
+          2.6401,
+          2.2801,
+          6.5902,
+          1.7902,
+          1.0301,
+          2.6501,
+          3.3901
+        ],
+        [
+          29,
+          "Mean",
+          1.6103,
+          1.2603,
+          1.2203,
+          2.1203,
+          2.2203,
+          1.9203,
+          2.6703,
+          8.1302,
+          7.9702
+        ],
+        [
+          "",
+          "Std.",
+          3.1402,
+          1.9102,
+          1.5802,
+          2.2602,
+          3.2802,
+          4.2202,
+          6.7902,
+          5.6901,
+          8.7901
+        ],
+        [
+          30,
+          "Mean",
+          1.3803,
+          2.3303,
+          2.4403,
+          2.3403,
+          1.1007,
+          2.6305,
+          4.0903,
+          2.3903,
+          2.4103
+        ],
+        [
+          "",
+          "Std.",
+          3.7102,
+          1.1902,
+          1.5302,
+          1.2802,
+          2.4107,
+          6.4605,
+          4.5703,
+          7.5401,
+          1.7302
+        ],
+        [
+          "W/L/T",
+          10182,
+          7221,
+          4242,
+          6240,
+          3270,
+          3270,
+          8193,
+          "-",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 61,
+      "column_count": 11
+    },
+    {
+      "table_number": "4",
+      "table_title": "$p$-value of Wilcoxon's rank-sum test for $D=10$.",
+      "headers": [
+        "OLCA vs",
+        "$R+$",
+        "$R-$",
+        "$+$",
+        "$\\infty$",
+        "$\\sim$",
+        "Z",
+        "$p$-value",
+        "$\\alpha=0.05$",
+        "$\\alpha=0.1$"
+      ],
+      "rows": [
+        [
+          "CMAES",
+          274.0,
+          51.0,
+          22,
+          5,
+          3,
+          -3.0,
+          "2.70E-03",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "jSO",
+          102.0,
+          129.0,
+          13,
+          9,
+          8,
+          -0.469,
+          "6.39E-01",
+          "No",
+          "No"
+        ],
+        [
+          "LSHADE",
+          148.0,
+          105.0,
+          15,
+          8,
+          7,
+          -0.698,
+          "4.85E-01",
+          "No",
+          "No"
+        ],
+        [
+          "iL-SHADE",
+          144.5,
+          86.5,
+          14,
+          9,
+          7,
+          -1.008,
+          "3.13E-01",
+          "No",
+          "No"
+        ],
+        [
+          "AAVS_EDA",
+          228.5,
+          96.5,
+          20,
+          5,
+          5,
+          -1.776,
+          "7.57E-02",
+          "No",
+          "Yes"
+        ],
+        [
+          "PBILc",
+          378.0,
+          0.0,
+          27,
+          3,
+          0,
+          -4.541,
+          "6.00E-06",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "cDE/EDA",
+          291.0,
+          60.0,
+          23,
+          4,
+          3,
+          -2.933,
+          "3.35E-03",
+          "Yes",
+          "Yes"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 10
+    },
+    {
+      "table_number": "5",
+      "table_title": "The statistical results of Wilcoxon's rank-sum test.",
+      "headers": [
+        "OLCA vs",
+        "$\\mathrm{R}+$",
+        "$\\mathrm{R}-$",
+        "$+$",
+        "$\\approx$",
+        "-",
+        "Z",
+        "$p$-value",
+        "$\\alpha=0.05$",
+        "$\\alpha=0.1$"
+      ],
+      "rows": [
+        [
+          "JADE",
+          141.0,
+          12.0,
+          16,
+          2,
+          1,
+          "$-3.054$",
+          "2.26E-03",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "jSO",
+          54.0,
+          12.0,
+          9,
+          8,
+          2,
+          "$-1.868$",
+          "6.18E-02",
+          "No",
+          "No"
+        ],
+        [
+          "LSHADE",
+          27.0,
+          9.0,
+          6,
+          11,
+          2,
+          "$-1.262$",
+          "2.07E-01",
+          "No",
+          "No"
+        ],
+        [
+          "iL-SHADE",
+          85.0,
+          20.0,
+          12,
+          5,
+          2,
+          "$-2.042$",
+          "4.11E-02",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "GA-MPC",
+          141.0,
+          30.0,
+          12,
+          1,
+          6,
+          "$-2.417$",
+          "1.56E-02",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "AAVS_EDA",
+          171.0,
+          0.0,
+          18,
+          1,
+          0,
+          "$-3.724$",
+          "1.96E-04",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "DE",
+          190.0,
+          0.0,
+          19,
+          0,
+          0,
+          "$-3.823$",
+          "1.32E-04",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "cDE/EDA",
+          178.0,
+          12.0,
+          18,
+          0,
+          1,
+          "$-3.341$",
+          "8.33E-04",
+          "Yes",
+          "Yes"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    }
+  ]
+}

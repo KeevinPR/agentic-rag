@@ -1,0 +1,576 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Online_Ecological_Energy_Management_for_Plug-In_HEVs_Using_Optimal_SOC_Prediction_and_Stochastic_Optimization.md",
+    "filename": "Online_Ecological_Energy_Management_for_Plug-In_HEVs_Using_Optimal_SOC_Prediction_and_Stochastic_Optimization.md",
+    "title": "Online_Ecological_Energy_Management_for_Plug-In_HEVs_Using_Optimal_SOC_Prediction_and_Stochastic_Optimization",
+    "year": "2024"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] N. Jalil, N. A. Kheir, and M. Salman, \"A rule-based energy management strategy for a series hybrid vehicle,\" in Proc. Amer. Control Conf., Albuquerque, NM, USA, 1997, pp. 689-693.\n[2] Y. Zhu, Y. Chen, G. Tian, H. Wu, and Q. Chen, \"A four-step method to design an energy management strategy for hybrid vehicles,\" in Proc. Amer. Control Conf., Boston, MA, USA, 2004, pp. 156-161.\n[3] N. J. Schouten, M. A. Salman, and N. A. Kheir, \"Fuzzy logic control for parallel hybrid vehicles,\" IEEE Trans. Control Syst. Technol., vol. 10, no. 3, pp. 460-468, May 2002.\n[4] Y. Li, X. Lu, and N. C. Kar, \"Rule-based control strategy with novel parameters optimization using NSGA-II for power-split PHEV operation cost minimization,\" IEEE Trans. Veh. Technol., vol. 63, no. 7, pp. 3051-3061, Sep. 2014.\n[5] R. Lian, J. Peng, Y. Wu, H. Tan, and H. Zhang, \"Rule-interposing deep reinforcement learning based energy management strategy for power-split hybrid electric vehicle,\" Energy, vol. 197, Apr. 2020, Art. no. 117297.\n\n[6] J. Liu and H. Peng, \"Modeling and control of a power-split hybrid vehicle,\" IEEE Trans. Control Syst. Technol., vol. 16, no. 6, pp. 1242-1251, Nov. 2008.\n[7] Z. Chen, C. C. Mi, J. Xu, X. Gong, and C. You, \"Energy management for a power-split plug-in hybrid electric vehicle based on dynamic programming and neural networks,\" IEEE Trans. Veh. Technol., vol. 63, no. 4, pp. 1567-1580, May 2014.\n[8] Q. Gong, Y. Li, and Z.-R. Peng, \"Trip-based optimal power management of plug-in hybrid electric vehicles,\" IEEE Trans. Veh. Technol., vol. 57, no. 6, pp. 3393-3401, Nov. 2008.\n[9] T. Choe, A. Skabardonis, and P. Varaiya, \"Freeway performance measurement system: Operational analysis tool,\" Transp. Res. Rec., J. Transp. Res. Board, vol. 1811, no. 1, pp. 67-75, Jan. 2002.\n[10] California Dept. Transp., Sacramento, CA, USA. PeMS. [Online]. Available: http://pems.dot.ca.gov\n[11] Wisconsin Traffic Operations and Safety Laboratory. Accessed: Mar. 17, 2020. [Online]. Available: http://transportal.cee.wisc.edu\n[12] C. Musardo, G. Rizzoni, and B. Staccia, \"A-ECMS: An adaptive algorithm for hybrid electric vehicle energy management,\" in Proc. 44th IEEE Conf. Decis. Control, Seville, Spain, Sep. 2005, pp. 1816-1823.\n[13] D. Karbowski, J. Kwon, N. Kim, and A. Rousseau, \"Instantaneously optimized controller for a multimode hybrid electric vehicle,\" in Proc. SAE, Detroit, MI, USA, Apr. 2010, pp. 1-22.\n[14] D. Zhao, R. Stobart, G. Dong, and E. Winward, \"Real-time energy management for diesel heavy duty hybrid electric vehicles,\" IEEE Trans. Control Syst. Technol., vol. 23, no. 3, pp. 829-841, May 2015.\n[15] M. Montazeri-Gh and Z. Pourbafarani, \"Near-optimal SOC trajectory for traffic-based adaptive PHEV control strategy,\" IEEE Trans. Veh. Technol., vol. 66, no. 11, pp. 9753-9760, Nov. 2017.\n[16] D. Shi, S. Liy, Y. Cai, S. Wang, H. Li, and L. Chen, \"Pontryagin's minimum principle based fuzzy adaptive energy management for hybrid electric vehicle using real-time traffic information,\" Appl. Energy, vol. 286, pp. 1-15, Jun. 2021.\n[17] W. Lee, H. Jeoung, D. Park, T. Kim, H. Lee, and N. Kim, \"A real-time intelligent energy management strategy for hybrid electric vehicles using reinforcement learning,\" IEEE Access, vol. 9, pp. 72759-72768, 2021.\n[18] C. Sun, X. Hu, S. J. Moura, and F. Sun, \"Velocity predictors for predictive energy management in hybrid electric vehicles,\" IEEE Trans. Control Syst. Technol., vol. 23, no. 3, pp. 1197-1204, May 2015.\n[19] Y. Du et al., \"The vehicle's velocity prediction methods based on RNN and LSTM neural network,\" in Proc. Chin. Control Decis. Conf. (CCDC), Hefei, China, Aug. 2020, pp. 99-102.\n[20] J. Shin, K. Yeon, S. Kim, M. Sunwoo, and M. Han, \"Comparative study of Markov chain with recurrent neural network for short term velocity prediction implemented on an embedded system,\" IEEE Access, vol. 9, pp. 24755-24767, 2021.\n[21] X. Ma, Z. Tao, Y. Wang, H. Yu, and Y. Wang, \"Long short-term memory neural network for traffic speed prediction using remote microwave sensor data,\" Transp. Res. C, Emerg. Technol., vol. 54, pp. 187-197, May 2015.\n[22] K. Yeon, K. Min, J. Shin, M. Sunwoo, and M. Han, \"Ego-vehicle speed prediction using a long short-term memory based recurrent neural network,\" Int. J. Automot. Technol., vol. 20, no. 4, pp. 713-722, Aug. 2019.\n[23] P. G. Anselma, Y. Huo, J. Roeleveld, G. Belingardi, and A. Emadi, \"Integration of on-line control in optimal design of multimode powersplit hybrid electric vehicle powertrains,\" IEEE Trans. Veh. Technol., vol. 68, no. 4, pp. 3436-3445, Apr. 2019.\n[24] Z. Chen, C. Yang, and S. Fang, \"A convolutional neural network-based driving cycle prediction method for plug-in hybrid electric vehicles with bus route,\" IEEE Access, vol. 8, pp. 3255-3264, 2020.\n[25] J. Park, Z. Chen, and Y. L. Murphey, \"Intelligent vehicle power management through neural learning,\" in Proc. Int. Joint Conf. Neural Netw. (IJCNN), Barcelona, Spain, Jul. 2010, pp. 1-7.\n[26] T. Liu, X. Hu, S. E. Li, and D. Cao, \"Reinforcement learning optimized look-ahead energy management of a parallel hybrid electric vehicle,\" IEEE/ASME Trans. Mechatronics, vol. 22, no. 4, pp. 1497-1507, Aug. 2017.\n[27] A. Biswas, P. G. Anselma, and A. Emadi, \"Real-time optimal energy management of electrified powertrains with reinforcement learning,\" in Proc. IEEE Transp. Electrific. Conf. Expo (ITEC), Detroit, MI, USA, Jun. 2019, pp. 1-6.\n[28] C. Liu and Y. L. Murphey, \"Optimal power management based on Q-learning and neuro-dynamic programming for plug-in hybrid electric vehicles,\" IEEE Trans. Neural Netw. Learn. Syst., vol. 31, no. 6, pp. 1942-1954, Jun. 2020.\n[29] G. Du, Y. Zou, X. Zhang, T. Liu, J. Wu, and D. He, \"Deep reinforcement learning based energy management for a hybrid electric vehicle,\" Energy, vol. 201, Jun. 2020, Art. no. 117591.\n[30] T. Liu, X. Tang, H. Wang, H. Yu, and X. Hu, \"Adaptive hierarchical energy management design for a plug-in hybrid electric vehicle,\" IEEE Trans. Veh. Technol., vol. 68, no. 12, pp. 11513-11522, Dec. 2019.\n[31] H. He, Y. Wang, J. Li, J. Dou, R. Lian, and Y. Li, \"An improved energy management strategy for hybrid electric vehicles integrating multistates of vehicle-traffic information,\" IEEE Trans. Transport. Electrific., vol. 7, no. 3, pp. 1161-1172, Sep. 2021.\n[32] G. Li, J. Zhang, and H. He, \"Battery SOC constraint comparison for predictive energy management of plug-in hybrid electric bus,\" Appl. Energy, vol. 194, pp. 578-587, May 2017.\n[33] Y. Liu, J. Li, Z. Chen, D. Qin, and Y. Zhang, \"Research on a multiobjective hierarchical prediction energy management strategy for range extended fuel cell vehicles,\" J. Power Sources, vol. 429, pp. 55-66, Jul. 2019.\n[34] C. Sun, S. J. Moura, X. Hu, J. K. Hedrick, and F. Sun, \"Dynamic traffic feedback data enabled energy management in plug-in hybrid electric vehicles,\" IEEE Trans. Control Syst. Technol., vol. 23, no. 3, pp. 1075-1086, May 2015.\n[35] Z. Lei, D. Sun, J. Liu, D. Chen, Y. Liu, and Z. Chen, \"Trip-oriented model predictive energy management strategy for plug-in hybrid electric vehicles,\" IEEE Access, vol. 7, pp. 113771-113785, 2019.\n[36] H.-Q. Guo, G. Wei, F. Wang, C. Wang, and S. Du, \"Self-learning enhanced energy management for plug-in hybrid electric bus with a target preview based SOC plan method,\" IEEE Access, vol. 7, pp. 103153-103166, 2019.\n[37] H. Tian, X. Wang, Z. Lu, Y. Huang, and G. Tian, \"Adaptive fuzzy logic energy management strategy based on reasonable SOC reference curve for online control of plug-in hybrid electric city bus,\" IEEE Trans. Intell. Transp. Syst., vol. 19, no. 5, pp. 1607-1617, May 2018.\n[38] D. Hu, S. Cheng, J. Zhou, and L. Hu, \"Energy management optimization method of plug-in hybrid-electric bus based on incremental learning,\" IEEE J. Emerg. Sel. Topics Power Electron., vol. 11, no. 1, pp. 7-18, Feb. 2023.\n[39] C. Zheng, G. Xu, K. Xu, Z. Pan, and Q. Liang, \"An energy management approach of hybrid vehicles using traffic preview information for energy saving,\" Energy Convers. Manage., vol. 105, pp. 462-470, Nov. 2015.\n[40] L. Guo, B. Gao, Y. Gao, and H. Chen, \"Optimal energy management for HEVs in eco-driving applications using bi-level MPC,\" IEEE Trans. Intell. Transp. Syst., vol. 18, no. 8, pp. 2153-2162, Aug. 2017.\n[41] H. Lim and W. Su, \"Hierarchical energy management for power-split plug-in HEVs using distance-based optimized speed and SOC profiles,\" IEEE Trans. Veh. Technol., vol. 67, no. 10, pp. 9312-9323, Oct. 2018.\n[42] Argonne Nat. Lab., Lemont, IL, USA. (2017). Autonomie. [Online]. Available: http://www.autonomie.net\n[43] N. Kim, M. Duoba, N. Kim, and A. Rousseau, \"Validating volt PHEV model with dynamometer test data using autonomie,\" SAE Int. J. Passenger Cars-Mech. Syst., vol. 6, no. 2, pp. 985-992, Apr. 2013.\n[44] H. Lim, W. Su, and C. C. Mi, \"Distance-based ecological driving scheme using a two-stage hierarchy for long-term optimization and short-term adaptation,\" IEEE Trans. Veh. Technol., vol. 66, no. 3, pp. 1940-1949, Mar. 2017.\n![img-15.jpeg](img-15.jpeg)\n\nHansang Lim (Senior Member, IEEE) received the B.S., M.S., and Ph.D. degrees from the School of Electrical Engineering, Seoul National University, Seoul, South Korea, in 1996, 1998, and 2004, respectively. He was with the Telecommunications Research and Development Center, Samsung Electronics Company Ltd., from 2004 to 2007. He is currently a Professor with the Department of Electronics Convergence Engineering, Kwangwoon University, Seoul. His research interests include low-noise, high-speed signal conditioning circuits, precise time measurements, electrical power distribution, in-vehicle network designs, and energy management in electrified vehicles.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "N. Jalil, N. A. Kheir, and M. Salman, \"A rule-based energy management strategy for a series hybrid vehicle,\" in Proc. Amer. Control Conf., Albuquerque, NM, USA, 1997, pp. 689-693."
+      },
+      {
+        "ref_id": "2",
+        "text": "Y. Zhu, Y. Chen, G. Tian, H. Wu, and Q. Chen, \"A four-step method to design an energy management strategy for hybrid vehicles,\" in Proc. Amer. Control Conf., Boston, MA, USA, 2004, pp. 156-161."
+      },
+      {
+        "ref_id": "3",
+        "text": "N. J. Schouten, M. A. Salman, and N. A. Kheir, \"Fuzzy logic control for parallel hybrid vehicles,\" IEEE Trans. Control Syst. Technol., vol. 10, no. 3, pp. 460-468, May 2002."
+      },
+      {
+        "ref_id": "4",
+        "text": "Y. Li, X. Lu, and N. C. Kar, \"Rule-based control strategy with novel parameters optimization using NSGA-II for power-split PHEV operation cost minimization,\" IEEE Trans. Veh. Technol., vol. 63, no. 7, pp. 3051-3061, Sep. 2014."
+      },
+      {
+        "ref_id": "5",
+        "text": "R. Lian, J. Peng, Y. Wu, H. Tan, and H. Zhang, \"Rule-interposing deep reinforcement learning based energy management strategy for power-split hybrid electric vehicle,\" Energy, vol. 197, Apr. 2020, Art. no. 117297."
+      },
+      {
+        "ref_id": "6",
+        "text": "J. Liu and H. Peng, \"Modeling and control of a power-split hybrid vehicle,\" IEEE Trans. Control Syst. Technol., vol. 16, no. 6, pp. 1242-1251, Nov. 2008."
+      },
+      {
+        "ref_id": "7",
+        "text": "Z. Chen, C. C. Mi, J. Xu, X. Gong, and C. You, \"Energy management for a power-split plug-in hybrid electric vehicle based on dynamic programming and neural networks,\" IEEE Trans. Veh. Technol., vol. 63, no. 4, pp. 1567-1580, May 2014."
+      },
+      {
+        "ref_id": "8",
+        "text": "Q. Gong, Y. Li, and Z.-R. Peng, \"Trip-based optimal power management of plug-in hybrid electric vehicles,\" IEEE Trans. Veh. Technol., vol. 57, no. 6, pp. 3393-3401, Nov. 2008."
+      },
+      {
+        "ref_id": "9",
+        "text": "T. Choe, A. Skabardonis, and P. Varaiya, \"Freeway performance measurement system: Operational analysis tool,\" Transp. Res. Rec., J. Transp. Res. Board, vol. 1811, no. 1, pp. 67-75, Jan. 2002."
+      },
+      {
+        "ref_id": "10",
+        "text": "California Dept. Transp., Sacramento, CA, USA. PeMS. [Online]. Available: http://pems.dot.ca.gov"
+      },
+      {
+        "ref_id": "11",
+        "text": "Wisconsin Traffic Operations and Safety Laboratory. Accessed: Mar. 17, 2020. [Online]. Available: http://transportal.cee.wisc.edu"
+      },
+      {
+        "ref_id": "12",
+        "text": "C. Musardo, G. Rizzoni, and B. Staccia, \"A-ECMS: An adaptive algorithm for hybrid electric vehicle energy management,\" in Proc. 44th IEEE Conf. Decis. Control, Seville, Spain, Sep. 2005, pp. 1816-1823."
+      },
+      {
+        "ref_id": "13",
+        "text": "D. Karbowski, J. Kwon, N. Kim, and A. Rousseau, \"Instantaneously optimized controller for a multimode hybrid electric vehicle,\" in Proc. SAE, Detroit, MI, USA, Apr. 2010, pp. 1-22."
+      },
+      {
+        "ref_id": "14",
+        "text": "D. Zhao, R. Stobart, G. Dong, and E. Winward, \"Real-time energy management for diesel heavy duty hybrid electric vehicles,\" IEEE Trans. Control Syst. Technol., vol. 23, no. 3, pp. 829-841, May 2015."
+      },
+      {
+        "ref_id": "15",
+        "text": "M. Montazeri-Gh and Z. Pourbafarani, \"Near-optimal SOC trajectory for traffic-based adaptive PHEV control strategy,\" IEEE Trans. Veh. Technol., vol. 66, no. 11, pp. 9753-9760, Nov. 2017."
+      },
+      {
+        "ref_id": "16",
+        "text": "D. Shi, S. Liy, Y. Cai, S. Wang, H. Li, and L. Chen, \"Pontryagin's minimum principle based fuzzy adaptive energy management for hybrid electric vehicle using real-time traffic information,\" Appl. Energy, vol. 286, pp. 1-15, Jun. 2021."
+      },
+      {
+        "ref_id": "17",
+        "text": "W. Lee, H. Jeoung, D. Park, T. Kim, H. Lee, and N. Kim, \"A real-time intelligent energy management strategy for hybrid electric vehicles using reinforcement learning,\" IEEE Access, vol. 9, pp. 72759-72768, 2021."
+      },
+      {
+        "ref_id": "18",
+        "text": "C. Sun, X. Hu, S. J. Moura, and F. Sun, \"Velocity predictors for predictive energy management in hybrid electric vehicles,\" IEEE Trans. Control Syst. Technol., vol. 23, no. 3, pp. 1197-1204, May 2015."
+      },
+      {
+        "ref_id": "19",
+        "text": "Y. Du et al., \"The vehicle's velocity prediction methods based on RNN and LSTM neural network,\" in Proc. Chin. Control Decis. Conf. (CCDC), Hefei, China, Aug. 2020, pp. 99-102."
+      },
+      {
+        "ref_id": "20",
+        "text": "J. Shin, K. Yeon, S. Kim, M. Sunwoo, and M. Han, \"Comparative study of Markov chain with recurrent neural network for short term velocity prediction implemented on an embedded system,\" IEEE Access, vol. 9, pp. 24755-24767, 2021."
+      },
+      {
+        "ref_id": "21",
+        "text": "X. Ma, Z. Tao, Y. Wang, H. Yu, and Y. Wang, \"Long short-term memory neural network for traffic speed prediction using remote microwave sensor data,\" Transp. Res. C, Emerg. Technol., vol. 54, pp. 187-197, May 2015."
+      },
+      {
+        "ref_id": "22",
+        "text": "K. Yeon, K. Min, J. Shin, M. Sunwoo, and M. Han, \"Ego-vehicle speed prediction using a long short-term memory based recurrent neural network,\" Int. J. Automot. Technol., vol. 20, no. 4, pp. 713-722, Aug. 2019."
+      },
+      {
+        "ref_id": "23",
+        "text": "P. G. Anselma, Y. Huo, J. Roeleveld, G. Belingardi, and A. Emadi, \"Integration of on-line control in optimal design of multimode powersplit hybrid electric vehicle powertrains,\" IEEE Trans. Veh. Technol., vol. 68, no. 4, pp. 3436-3445, Apr. 2019."
+      },
+      {
+        "ref_id": "24",
+        "text": "Z. Chen, C. Yang, and S. Fang, \"A convolutional neural network-based driving cycle prediction method for plug-in hybrid electric vehicles with bus route,\" IEEE Access, vol. 8, pp. 3255-3264, 2020."
+      },
+      {
+        "ref_id": "25",
+        "text": "J. Park, Z. Chen, and Y. L. Murphey, \"Intelligent vehicle power management through neural learning,\" in Proc. Int. Joint Conf. Neural Netw. (IJCNN), Barcelona, Spain, Jul. 2010, pp. 1-7."
+      },
+      {
+        "ref_id": "26",
+        "text": "T. Liu, X. Hu, S. E. Li, and D. Cao, \"Reinforcement learning optimized look-ahead energy management of a parallel hybrid electric vehicle,\" IEEE/ASME Trans. Mechatronics, vol. 22, no. 4, pp. 1497-1507, Aug. 2017."
+      },
+      {
+        "ref_id": "27",
+        "text": "A. Biswas, P. G. Anselma, and A. Emadi, \"Real-time optimal energy management of electrified powertrains with reinforcement learning,\" in Proc. IEEE Transp. Electrific. Conf. Expo (ITEC), Detroit, MI, USA, Jun. 2019, pp. 1-6."
+      },
+      {
+        "ref_id": "28",
+        "text": "C. Liu and Y. L. Murphey, \"Optimal power management based on Q-learning and neuro-dynamic programming for plug-in hybrid electric vehicles,\" IEEE Trans. Neural Netw. Learn. Syst., vol. 31, no. 6, pp. 1942-1954, Jun. 2020."
+      },
+      {
+        "ref_id": "29",
+        "text": "G. Du, Y. Zou, X. Zhang, T. Liu, J. Wu, and D. He, \"Deep reinforcement learning based energy management for a hybrid electric vehicle,\" Energy, vol. 201, Jun. 2020, Art. no. 117591."
+      },
+      {
+        "ref_id": "30",
+        "text": "T. Liu, X. Tang, H. Wang, H. Yu, and X. Hu, \"Adaptive hierarchical energy management design for a plug-in hybrid electric vehicle,\" IEEE Trans. Veh. Technol., vol. 68, no. 12, pp. 11513-11522, Dec. 2019."
+      },
+      {
+        "ref_id": "31",
+        "text": "H. He, Y. Wang, J. Li, J. Dou, R. Lian, and Y. Li, \"An improved energy management strategy for hybrid electric vehicles integrating multistates of vehicle-traffic information,\" IEEE Trans. Transport. Electrific., vol. 7, no. 3, pp. 1161-1172, Sep. 2021."
+      },
+      {
+        "ref_id": "32",
+        "text": "G. Li, J. Zhang, and H. He, \"Battery SOC constraint comparison for predictive energy management of plug-in hybrid electric bus,\" Appl. Energy, vol. 194, pp. 578-587, May 2017."
+      },
+      {
+        "ref_id": "33",
+        "text": "Y. Liu, J. Li, Z. Chen, D. Qin, and Y. Zhang, \"Research on a multiobjective hierarchical prediction energy management strategy for range extended fuel cell vehicles,\" J. Power Sources, vol. 429, pp. 55-66, Jul. 2019."
+      },
+      {
+        "ref_id": "34",
+        "text": "C. Sun, S. J. Moura, X. Hu, J. K. Hedrick, and F. Sun, \"Dynamic traffic feedback data enabled energy management in plug-in hybrid electric vehicles,\" IEEE Trans. Control Syst. Technol., vol. 23, no. 3, pp. 1075-1086, May 2015."
+      },
+      {
+        "ref_id": "35",
+        "text": "Z. Lei, D. Sun, J. Liu, D. Chen, Y. Liu, and Z. Chen, \"Trip-oriented model predictive energy management strategy for plug-in hybrid electric vehicles,\" IEEE Access, vol. 7, pp. 113771-113785, 2019."
+      },
+      {
+        "ref_id": "36",
+        "text": "H.-Q. Guo, G. Wei, F. Wang, C. Wang, and S. Du, \"Self-learning enhanced energy management for plug-in hybrid electric bus with a target preview based SOC plan method,\" IEEE Access, vol. 7, pp. 103153-103166, 2019."
+      },
+      {
+        "ref_id": "37",
+        "text": "H. Tian, X. Wang, Z. Lu, Y. Huang, and G. Tian, \"Adaptive fuzzy logic energy management strategy based on reasonable SOC reference curve for online control of plug-in hybrid electric city bus,\" IEEE Trans. Intell. Transp. Syst., vol. 19, no. 5, pp. 1607-1617, May 2018."
+      },
+      {
+        "ref_id": "38",
+        "text": "D. Hu, S. Cheng, J. Zhou, and L. Hu, \"Energy management optimization method of plug-in hybrid-electric bus based on incremental learning,\" IEEE J. Emerg. Sel. Topics Power Electron., vol. 11, no. 1, pp. 7-18, Feb. 2023."
+      },
+      {
+        "ref_id": "39",
+        "text": "C. Zheng, G. Xu, K. Xu, Z. Pan, and Q. Liang, \"An energy management approach of hybrid vehicles using traffic preview information for energy saving,\" Energy Convers. Manage., vol. 105, pp. 462-470, Nov. 2015."
+      },
+      {
+        "ref_id": "40",
+        "text": "L. Guo, B. Gao, Y. Gao, and H. Chen, \"Optimal energy management for HEVs in eco-driving applications using bi-level MPC,\" IEEE Trans. Intell. Transp. Syst., vol. 18, no. 8, pp. 2153-2162, Aug. 2017."
+      },
+      {
+        "ref_id": "41",
+        "text": "H. Lim and W. Su, \"Hierarchical energy management for power-split plug-in HEVs using distance-based optimized speed and SOC profiles,\" IEEE Trans. Veh. Technol., vol. 67, no. 10, pp. 9312-9323, Oct. 2018."
+      },
+      {
+        "ref_id": "42",
+        "text": "Argonne Nat. Lab., Lemont, IL, USA. (2017). Autonomie. [Online]. Available: http://www.autonomie.net"
+      },
+      {
+        "ref_id": "43",
+        "text": "N. Kim, M. Duoba, N. Kim, and A. Rousseau, \"Validating volt PHEV model with dynamometer test data using autonomie,\" SAE Int. J. Passenger Cars-Mech. Syst., vol. 6, no. 2, pp. 985-992, Apr. 2013."
+      },
+      {
+        "ref_id": "44",
+        "text": "H. Lim, W. Su, and C. C. Mi, \"Distance-based ecological driving scheme using a two-stage hierarchy for long-term optimization and short-term adaptation,\" IEEE Trans. Veh. Technol., vol. 66, no. 3, pp. 1940-1949, Mar. 2017."
+      }
+    ],
+    "reference_count": 44,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "ParameTers of The Vehicle Model",
+      "headers": [
+        "Symbol",
+        "Quantity",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$f_{r}$",
+          "Gear ratio of the final drive",
+          4.06
+        ],
+        [
+          "$G_{T C}$",
+          "Gear ratio of the torque coupler",
+          2.5
+        ],
+        [
+          "$R_{v}$",
+          "Wheel radius",
+          0.317
+        ],
+        [
+          "$m$",
+          "mass",
+          1470
+        ],
+        [
+          "$\\rho$",
+          "Air density",
+          "$1.19854 \\mathrm{~kg} / \\mathrm{m}^{3}$"
+        ],
+        [
+          "$C_{d}$",
+          "Air drag coefficient",
+          0.3
+        ],
+        [
+          "$A_{d}$",
+          "Frontal area",
+          "$2.2508 \\mathrm{~m}^{2}$"
+        ],
+        [
+          "g",
+          "Gravity",
+          "$9.81 \\mathrm{~m} / \\mathrm{s}^{2}$"
+        ],
+        [
+          "C",
+          "Rolling resistance coefficient",
+          "-"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "Results for Diverse Trained Driving Cycles",
+      "headers": [
+        "Driving cycles",
+        "Initial SOC",
+        "Results",
+        "Off-line optimized",
+        "Proposed strategy"
+      ],
+      "rows": [
+        [
+          -2,
+          0.6,
+          "Total cost (\\$)",
+          1.1717,
+          1.1299
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1544.6,
+          1560.5
+        ],
+        [
+          "ARTEMIS",
+          0.6,
+          "Total cost (\\$)",
+          1.3231,
+          1.2612
+        ],
+        [
+          "Motorway",
+          "",
+          "Driving time (s)",
+          1075.7,
+          1088.3
+        ],
+        [
+          -2,
+          0.6,
+          "Total cost (\\$)",
+          0.6326,
+          0.5838
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          2027.6,
+          2044.6
+        ],
+        [
+          6,
+          0.7,
+          "Total cost (\\$)",
+          0.3267,
+          0.3254
+        ],
+        [
+          "HWY",
+          "",
+          "Driving time (s)",
+          371.0,
+          372.2
+        ],
+        [
+          "UDDS",
+          0.7,
+          "Total cost (\\$)",
+          0.2541,
+          0.262
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1051.8,
+          1051.8
+        ],
+        [
+          -6,
+          0.7,
+          "Total cost (\\$)",
+          1.0128,
+          0.9927
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1308.1,
+          1314.5
+        ],
+        [
+          6,
+          0.8,
+          "Total cost (\\$)",
+          0.4004,
+          0.4089
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          537.2,
+          527.1
+        ],
+        [
+          "HWFET- <br> UDDS",
+          0.8,
+          "Total cost (\\$)",
+          0.8585,
+          0.7822
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1775.0,
+          1798.2
+        ],
+        [
+          "WLTC",
+          0.8,
+          "Total cost (\\$)",
+          0.6845,
+          0.6628
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1509.8,
+          1523.1
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Driving cycles",
+        "Initial SOC",
+        "Results",
+        "Off-line optimized",
+        "Proposed strategy"
+      ],
+      "rows": [
+        [
+          "UDDS- <br> HWFET",
+          0.6,
+          "Total cost (\\$)",
+          0.918,
+          0.8597
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1803.9,
+          1823.0
+        ],
+        [
+          "",
+          0.7,
+          "Total cost (\\$)",
+          0.8702,
+          0.8293
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1810.7,
+          1823.9
+        ],
+        [
+          "",
+          0.8,
+          "Total cost (\\$)",
+          0.8299,
+          0.7974
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1812.3,
+          1825.1
+        ],
+        [
+          "$\\begin{aligned} & \\text { US06- } \\\\ & \\text { SC03 } \\end{aligned}$",
+          0.6,
+          "Total cost (\\$)",
+          0.609,
+          0.577
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          983.1,
+          997.1
+        ],
+        [
+          "",
+          0.7,
+          "Total cost (\\$)",
+          0.5791,
+          0.5493
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          983.3,
+          997.8
+        ],
+        [
+          "",
+          0.8,
+          "Total cost (\\$)",
+          0.529,
+          0.5303
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          986.1,
+          996.1
+        ],
+        [
+          "FU505- <br> US06",
+          0.6,
+          "Total cost (\\$)",
+          0.6425,
+          0.601
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          918.4,
+          933.2
+        ],
+        [
+          "",
+          0.7,
+          "Total cost (\\$)",
+          0.5987,
+          0.5751
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          923.2,
+          933.2
+        ],
+        [
+          "",
+          0.8,
+          "Total cost (\\$)",
+          0.553,
+          0.5564
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          924.6,
+          929.5
+        ],
+        [
+          "$\\begin{aligned} & \\text { SC03- } \\\\ & \\text { UDDS } \\end{aligned}$",
+          0.6,
+          "Total cost (\\$)",
+          0.4408,
+          0.4051
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1470.8,
+          1495.2
+        ],
+        [
+          "",
+          0.7,
+          "Total cost (\\$)",
+          0.3847,
+          0.3969
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1464.5,
+          1465.6
+        ],
+        [
+          "",
+          0.8,
+          "Total cost (\\$)",
+          0.3851,
+          0.3867
+        ],
+        [
+          "",
+          "",
+          "Driving time (s)",
+          1466.8,
+          1496.4
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 5
+    }
+  ]
+}

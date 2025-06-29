@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/A memetic based on-state for max-cut.md",
+    "filename": "A memetic based on-state for max-cut.md",
+    "title": "A memetic based on-state for max-cut",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Settings of important parameters on the two benchmark sets.",
+      "headers": [
+        "Parameter",
+        "Section",
+        "Description",
+        "Values",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "G-set",
+          "Cubic lattice",
+          ""
+        ],
+        [
+          "$p$",
+          "$2.1-2.2$",
+          "Population size",
+          640,
+          160,
+          ""
+        ],
+        [
+          "$\\zeta$",
+          2.1,
+          "Probability of choosing Path-relinking",
+          0.33,
+          0.33,
+          ""
+        ],
+        [
+          "$\\eta$",
+          2.3,
+          "Perturbation strength of EDA operator",
+          "rand $[\\mid V] / 6, \\ldots,[V] / 4]$",
+          "rand $[200, \\ldots, 400]$",
+          ""
+        ],
+        [
+          "$\\mu$",
+          2.3,
+          "Path-relinking length",
+          "rand $[d_{c m}] / 3, \\ldots, 2 d_{c m} / 3]$",
+          "rand $\\left[d_{c m} / 3, \\ldots, 2 d_{c m} / 3\\right]$",
+          ""
+        ],
+        [
+          "$\\rho$",
+          2.4,
+          "Probability of choosing swap moves in TS",
+          0.15,
+          0.15,
+          ""
+        ],
+        [
+          "$\\Pi$",
+          2.4,
+          "Taba tenure",
+          "rand $[6, \\ldots, 0.2] V]$",
+          "rand $[6, \\ldots, 0.2] V]$",
+          ""
+        ],
+        [
+          "$i c$",
+          2.4,
+          "Improvement cutoff of TS",
+          10000,
+          10000,
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Distortion Tolerant Method for Fiber Bragg Grating Sensor Network Using Estimation of Distribution Algorithm and Convolutional Neural Network.md",
+    "filename": "Distortion Tolerant Method for Fiber Bragg Grating Sensor Network Using Estimation of Distribution Algorithm and Convolutional Neural Network.md",
+    "title": "Distortion Tolerant Method for Fiber Bragg Grating Sensor Network Using Estimation of Distribution Algorithm and Convolutional Neural Network",
+    "year": "2024"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Structural Parameters of CNN Network",
+      "headers": [
+        "Layers",
+        "Input size",
+        "Channel",
+        "Kernels",
+        "Output size"
+      ],
+      "rows": [
+        [
+          1,
+          "$3 \\times 3 \\times 1$",
+          32,
+          "$2 \\times 2$",
+          "$3 \\times 3 \\times 32$"
+        ],
+        [
+          2,
+          "$3 \\times 3 \\times 32$",
+          64,
+          "$2 \\times 2$",
+          "$3 \\times 3 \\times 64$"
+        ],
+        [
+          3,
+          "$3 \\times 3 \\times 64$",
+          128,
+          "$2 \\times 2$",
+          "$3 \\times 3 \\times 128$"
+        ],
+        [
+          "Max-pooling",
+          "$3 \\times 3 \\times 128$",
+          128,
+          "$2 \\times 2$",
+          "$2 \\times 2 \\times 128$"
+        ],
+        [
+          "Fully-connected",
+          "$2 \\times 2 \\times 128$",
+          512,
+          "-",
+          512
+        ],
+        [
+          "Output",
+          512,
+          1,
+          "-",
+          2
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "RMSE $_{L}$ Under Different Number of Failed FBGs",
+      "headers": [
+        "Failed FBG number",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "rows": [
+        [
+          "RMSE $_{L}(\\mathrm{~mm})$",
+          1.4631,
+          1.4863,
+          1.5383,
+          1.61,
+          1.6888
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    },
+    {
+      "table_number": "III",
+      "table_title": "LOCALIZATION PERFORMANCE COMPARISON OF DIFFERENT DETECTION METHODS",
+      "headers": [
+        "Detection method",
+        "Maximum",
+        "Centroid",
+        "Polynomial",
+        "Proposed"
+      ],
+      "rows": [
+        [
+          "RMSE $_{L}(\\mathrm{~mm})$",
+          6.2463,
+          10.5268,
+          7.9503,
+          1.4503
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 5
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Architectures and Hyperparameters of Different Training Methods",
+      "headers": [
+        "Training method",
+        "Architecture Details",
+        "Hyperparameters"
+      ],
+      "rows": [
+        [
+          "CNN",
+          332641281,
+          0.0011
+        ],
+        [
+          "BP Neural Network",
+          35010050,
+          0.9
+        ],
+        [
+          "SVR",
+          "Radial Basis Function (RBF) kernel",
+          "Cost (C): 1.0, Epsilon: 0.1"
+        ],
+        [
+          "ELM",
+          1000,
+          0.001
+        ],
+        [
+          "DenseNet",
+          12132,
+          0.216
+        ],
+        [
+          -18,
+          182,
+          "$\\mathrm{l} r: 0.001$, Batch Normalization"
+        ],
+        [
+          -16,
+          16133,
+          0.0005
+        ],
+        [
+          2,
+          1.1,
+          0.3
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    }
+  ]
+}

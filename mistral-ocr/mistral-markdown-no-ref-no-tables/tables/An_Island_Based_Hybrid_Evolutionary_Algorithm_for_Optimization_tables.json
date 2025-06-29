@@ -1,0 +1,349 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/An Island Based Hybrid Evolutionary Algorithm for Optimization.md",
+    "filename": "An Island Based Hybrid Evolutionary Algorithm for Optimization.md",
+    "title": "An Island Based Hybrid Evolutionary Algorithm for Optimization",
+    "year": "2008"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Details of the test functions, where $n$ and $f_{\\text {min }}$ are the dimension and the minimum value of a function respectively and $S \\in R_{n}$",
+      "headers": [
+        "Test Function",
+        "$n$",
+        "$S$",
+        "$f_{\\text {min }}$"
+      ],
+      "rows": [
+        [
+          "$f_{1}(x)=\\sum_{i=1}^{n} x_{i}^{2}$",
+          "$30(-5.12,5.12)$",
+          0,
+          ""
+        ],
+        [
+          "$f_{2}(x)=100\\left(x_{1}^{2}-x_{2}\\right)^{2}+\\left(x_{1}-1\\right)^{2}$",
+          "$2(-2.048,2.048)$",
+          0,
+          ""
+        ],
+        [
+          "$f_{3}(x)=\\frac{1}{4000} \\sum_{i=1}^{n}\\left(x_{i}-100\\right)^{2}-\\prod_{i=1}^{n} \\cos \\left(\\frac{x_{i}-100}{\\sqrt{i}}\\right)+1$",
+          "$30(-300,300)$",
+          0,
+          ""
+        ],
+        [
+          "$f_{4}(x)=-20 \\exp \\left(-0.2 \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} x_{i}^{2}}\\right)-$",
+          "$30(-30,30)$",
+          0,
+          ""
+        ],
+        [
+          "$\\exp \\left(\\frac{1}{n} \\sum_{i=1}^{n} \\cos \\left(2 \\pi x_{i}\\right)\\right)+20+e$",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$f_{5}(x)=\\sum_{i=1}^{n} 100\\left(x_{i+1}^{2}-x_{i}\\right)^{2}+\\left(x_{i}-1\\right)^{2}$ )",
+          "$30(-2.048,2.048)$",
+          0,
+          ""
+        ],
+        [
+          "$f_{6}(x)=\\sum_{i=1}^{n}\\left(x_{i}^{2}-10 \\cos \\left(2 \\pi x_{i}\\right)+10\\right)$",
+          "$30(-5.12,5.12)$",
+          0,
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Population size of the three islands in IHEA algorithm",
+      "headers": [
+        "Island",
+        "$f_{1}$",
+        "$f_{2}$",
+        "$f_{3}$",
+        "$f_{4}$",
+        "$f_{5}$",
+        "$f_{6}$",
+        "$f_{7}$",
+        "$f_{8}$"
+      ],
+      "rows": [
+        [
+          "PSO",
+          10,
+          15,
+          10,
+          10,
+          15,
+          5,
+          10,
+          10
+        ],
+        [
+          "$\\operatorname{FEP}(q)$",
+          53,
+          104,
+          155,
+          53,
+          104,
+          104,
+          155,
+          155
+        ],
+        [
+          "EDA",
+          15,
+          5,
+          5,
+          15,
+          5,
+          15,
+          5,
+          5
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 9
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison of PSO, EDA, FEP and IHEA. The results are mean best function values found at generation 1500 over 50 runs.",
+      "headers": [
+        "Test function",
+        "PSO",
+        "EDA",
+        "FEP",
+        "IHEA"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$1.218 \\mathrm{e}-021$",
+          0,
+          1.0219,
+          0
+        ],
+        [
+          "$f_{2}$",
+          0,
+          0.3835,
+          "$3.26304 \\mathrm{e}-005$",
+          0
+        ],
+        [
+          "$f_{3}$",
+          0.0291024,
+          54.8026,
+          1.29825,
+          0.0559343
+        ],
+        [
+          "$f_{4}$",
+          2.09482,
+          "$4.44089 \\mathrm{e}-016$",
+          4.77732,
+          "$4.44089 \\mathrm{e}-016$"
+        ],
+        [
+          "$f_{5}$",
+          "$9.09728 \\mathrm{e}-012$",
+          2545.73,
+          80.2489,
+          "$1.71309 \\mathrm{e}-009$"
+        ],
+        [
+          "$f_{6}$",
+          50.7826,
+          0,
+          26.0043,
+          0
+        ],
+        [
+          "$f_{7}$",
+          -7431.63,
+          -2343.9,
+          -12307,
+          -12522.4
+        ],
+        [
+          "$f_{8}$",
+          5043.08,
+          10348.7,
+          314.947,
+          71.0184
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "The T-test results between IHEA and the other three algorithms,where \"***\" means the results of each run is the same",
+      "headers": [
+        "$f_{1}$",
+        "$f_{2}$",
+        "$f_{3}$",
+        "$f_{4}$",
+        "$f_{5}$",
+        "$f_{6}$",
+        "$f_{7}$",
+        "$f_{8}$"
+      ],
+      "rows": [
+        [
+          -1.17951,
+          "$* * *$",
+          3.13962,
+          -12.9764,
+          2.03565,
+          -26.3966,
+          -73.2857,
+          -71.1316
+        ],
+        [
+          "EDA $* * *$",
+          -13.8161,
+          -108.133,
+          0,
+          -250.172,
+          "$* * *$",
+          -137.587,
+          -183.923
+        ],
+        [
+          -4.18079,
+          -1.31905,
+          -10.73,
+          -14.7223,
+          -9.02354,
+          -21.3865,
+          -6.90319,
+          -7.33192
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 8
+    },
+    {
+      "table_number": "5",
+      "table_title": "Comparison of PSO, EDA, FEP and IHEA on problems of 10 dimensions. The results are mean best function values found at generation 1500 over 50 runs.",
+      "headers": [
+        "Test function",
+        "PSO",
+        "EDA",
+        "FEP",
+        "IHEA"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$6.98296 \\mathrm{e}-072$",
+          0,
+          0.00744029,
+          0
+        ],
+        [
+          "$f_{3}$",
+          0.0866419,
+          11.5354,
+          0.18873,
+          0.073003
+        ],
+        [
+          "$f_{4}$",
+          "$4.06785 \\mathrm{e}-015$",
+          "$4.44089 \\mathrm{e}-016$",
+          0.575907,
+          "$4.44089 \\mathrm{e}-016$"
+        ],
+        [
+          "$f_{5}$",
+          "$1.97215 \\mathrm{e}-031$",
+          599.55,
+          0.0918242,
+          "$4.19082 \\mathrm{e}-030$"
+        ],
+        [
+          "$f_{6}$",
+          6.18864,
+          0,
+          6.41484,
+          0
+        ],
+        [
+          "$f_{7}$",
+          -3431.8,
+          -1317.14,
+          -4177.4,
+          -4189.83
+        ],
+        [
+          "$f_{8}$",
+          725.257,
+          2881.37,
+          10.2413,
+          0.000127276
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "The T-test results between IHEA and the other three algorithms on problems of 10 dimensions, where \"***\" means the results of each run is the same",
+      "headers": [
+        "",
+        "$f_{1}$",
+        "$f_{3}$",
+        "$f_{4}$",
+        "$f_{5}$",
+        "$f_{6}$",
+        "$f_{7}$",
+        "$f_{8}$"
+      ],
+      "rows": [
+        [
+          "PSO",
+          -1.90455,
+          -1.84457,
+          -50.9999,
+          3.20954,
+          -15.5783,
+          -21.8944,
+          -20.3932
+        ],
+        [
+          "EDA",
+          "***",
+          -37.4252,
+          0,
+          -51.6912,
+          "***",
+          -80.4453,
+          -66.1889
+        ],
+        [
+          "FEP",
+          -1.94113,
+          -2.24096,
+          -4.50941,
+          -1.67656,
+          -11.619,
+          -2.54557,
+          -1.97234
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 8
+    }
+  ]
+}

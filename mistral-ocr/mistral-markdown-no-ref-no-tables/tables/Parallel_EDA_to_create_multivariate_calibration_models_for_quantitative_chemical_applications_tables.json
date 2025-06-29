@@ -1,0 +1,421 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/Parallel EDA to create multivariate calibration models for quantitative chemical applications.md",
+    "filename": "Parallel EDA to create multivariate calibration models for quantitative chemical applications.md",
+    "title": "Parallel EDA to create multivariate calibration models for quantitative chemical applications",
+    "year": "2006"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Characteristics of the problems used in the experiments",
+      "headers": [
+        "",
+        "Small",
+        "Medium",
+        "Large"
+      ],
+      "rows": [
+        [
+          "Time interval (step)",
+          "$3-903(30 \\mathrm{~s})$",
+          "$3-501(6 \\mathrm{~s})$",
+          "$2-602(10 \\mathrm{~s})$"
+        ],
+        [
+          "Wavelength interval",
+          "$300-390(2 \\mathrm{~nm})$",
+          "$250-496(6 \\mathrm{~nm})$",
+          "$290-470(2 \\mathrm{~nm})$"
+        ],
+        [
+          "Features",
+          1426,
+          3528,
+          5551
+        ],
+        [
+          "Samples",
+          76,
+          58,
+          181
+        ],
+        [
+          "Targets",
+          2,
+          3,
+          3
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "\\# Input variables, \\# neurons in the hidden layer and MSEP for the PCA + MLP and Filter + MLP approaches",
+      "headers": [
+        "",
+        "Small",
+        "",
+        "",
+        "Medium",
+        "",
+        "",
+        "Large",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "\\#i",
+          "\\#n",
+          "Error",
+          "\\#i",
+          "\\#n",
+          "Error",
+          "\\#i",
+          "\\#n",
+          "Error"
+        ],
+        [
+          "PCA + MLP",
+          23,
+          33,
+          "$6.942 \\mathrm{e}^{-3}$",
+          25,
+          49,
+          "$1.521 \\mathrm{e}^{-2}$",
+          24,
+          22,
+          "$1.473 \\mathrm{e}^{-2}$"
+        ],
+        [
+          "Filter + MLP",
+          33,
+          6,
+          "$6.434 \\mathrm{e}^{-3}$",
+          55,
+          17,
+          "$1.510 \\mathrm{e}^{-2}$",
+          31,
+          8,
+          "$1.057 \\mathrm{e}^{-2}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 10
+    },
+    {
+      "table_number": "3",
+      "table_title": "\\# Input variables, \\# principal components and MSEP for the PLS and Filter + PLS approaches",
+      "headers": [
+        "",
+        "Small",
+        "",
+        "",
+        "Medium",
+        "",
+        "",
+        "Large",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "\\#i",
+          "\\#p",
+          "Error",
+          "\\#i",
+          "\\#p",
+          "Error",
+          "\\#i",
+          "\\#p",
+          "Error"
+        ],
+        [
+          "PLS",
+          1426,
+          12,
+          "$4.723 \\mathrm{e}^{-3}$",
+          3528,
+          12,
+          "$8.982 \\mathrm{e}^{-3}$",
+          5551,
+          16,
+          "$4.058 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "Filter + PLS",
+          33,
+          11,
+          "$5.231 \\mathrm{e}^{-3}$",
+          55,
+          7,
+          "$1.890 \\mathrm{e}^{-2}$",
+          31,
+          8,
+          "$6.644 \\mathrm{e}^{-3}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 10
+    },
+    {
+      "table_number": "4",
+      "table_title": "MSEP and deviations (considering all executions ${ }_{m}$, and only the best execution ${ }_{b}$ )",
+      "headers": [
+        "",
+        "Error $_{m}$",
+        "Dev $_{m}$",
+        "Error $_{b}$",
+        "Dev $_{b}$"
+      ],
+      "rows": [
+        [
+          "Small problem",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "PCA + MLP",
+          "$6.942 \\mathrm{e}^{-3}$",
+          "$3.287 \\mathrm{e}^{-3}$",
+          "$6.832 \\mathrm{e}^{-3}$",
+          "$4.141 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "Filter + MLP",
+          "$6.434 \\mathrm{e}^{-3}$",
+          "$2.931 \\mathrm{e}^{-3}$",
+          "$6.226 \\mathrm{e}^{-3}$",
+          "$2.929 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "PLS",
+          "$4.723 \\mathrm{e}^{-3}$",
+          "$4.133 \\mathrm{e}^{-3}$",
+          "$2.582 \\mathrm{e}^{-3}$",
+          "$7.733 \\mathrm{e}^{-4}$"
+        ],
+        [
+          "Filter + PLS",
+          "$5.231 \\mathrm{e}^{-3}$",
+          "$1.411 \\mathrm{e}^{-3}$",
+          "$4.692 \\mathrm{e}^{-3}$",
+          "$9.504 \\mathrm{e}^{-4}$"
+        ],
+        [
+          "EDA + PLS",
+          "$1.716 \\mathrm{e}^{-3}$",
+          "$6.241 \\mathrm{e}^{-4}$",
+          "$1.458 \\mathrm{e}^{-3}$",
+          "$5.516 \\mathrm{e}^{-4}$"
+        ],
+        [
+          "Medium problem",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "PCA + MLP",
+          "$1.521 \\mathrm{e}^{-2}$",
+          "$4.105 \\mathrm{e}^{-3}$",
+          "$1.435 \\mathrm{e}^{-2}$",
+          "$3.955 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "Filter + MLP",
+          "$1.510 \\mathrm{e}^{-2}$",
+          "$5.573 \\mathrm{e}^{-3}$",
+          "$1.431 \\mathrm{e}^{-2}$",
+          "$5.053 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "PLS",
+          "$8.982 \\mathrm{e}^{-3}$",
+          "$3.260 \\mathrm{e}^{-3}$",
+          "$6.567 \\mathrm{e}^{-3}$",
+          "$1.671 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "Filter + PLS",
+          "$1.890 \\mathrm{e}^{-2}$",
+          "$6.178 \\mathrm{e}^{-3}$",
+          "$1.640 \\mathrm{e}^{-2}$",
+          "$4.754 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "EDA + PLS",
+          "$4.678 \\mathrm{e}^{-3}$",
+          "$1.806 \\mathrm{e}^{-3}$",
+          "$4.006 \\mathrm{e}^{-3}$",
+          "$1.548 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "Large problem",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "PCA + MLP",
+          "$1.473 \\mathrm{e}^{-2}$",
+          "$2.747 \\mathrm{e}^{-3}$",
+          "$1.347 \\mathrm{e}^{-2}$",
+          "$3.749 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "Filter + MLP",
+          "$1.057 \\mathrm{e}^{-2}$",
+          "$1.539 \\mathrm{e}^{-3}$",
+          "$9.866 \\mathrm{e}^{-3}$",
+          "$1.863 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "PLS",
+          "$4.058 \\mathrm{e}^{-3}$",
+          "$7.514 \\mathrm{e}^{-4}$",
+          "$3.907 \\mathrm{e}^{-3}$",
+          "$6.209 \\mathrm{e}^{-4}$"
+        ],
+        [
+          "Filter + PLS",
+          "$6.644 \\mathrm{e}^{-3}$",
+          "$1.316 \\mathrm{e}^{-3}$",
+          "$5.851 \\mathrm{e}^{-3}$",
+          "$1.151 \\mathrm{e}^{-3}$"
+        ],
+        [
+          "EDA + PLS",
+          "$3.154 \\mathrm{e}^{-3}$",
+          "$6.016 \\mathrm{e}^{-4}$",
+          "$2.855 \\mathrm{e}^{-3}$",
+          "$7.730 \\mathrm{e}^{-4}$"
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Mean error percentages (only for the best execution) for PLS and EDA + PLS approaches",
+      "headers": [
+        "",
+        "Small",
+        "Medium",
+        "Large"
+      ],
+      "rows": [
+        [
+          "PLS",
+          9.16,
+          14.72,
+          5.38
+        ],
+        [
+          "EDA + PLS",
+          5.37,
+          9.71,
+          4.62
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Summary of execution times for each approach and problem using 8 CPUs",
+      "headers": [
+        "",
+        "Small",
+        "Medium",
+        "Large"
+      ],
+      "rows": [
+        [
+          "PCA + MLP",
+          "$2 \\mathrm{~h} 06^{\\prime}$",
+          "$1 \\mathrm{~h} 34^{\\prime}$",
+          "$4 \\mathrm{~h} 43^{\\prime}$"
+        ],
+        [
+          "Filter + MLP",
+          "$3^{\\prime}$",
+          "$2^{\\prime}$",
+          "$6^{\\prime}$"
+        ],
+        [
+          1,
+          "$1^{\\prime}$",
+          "$1^{\\prime}$",
+          "$1^{\\prime}$"
+        ],
+        [
+          1,
+          "$1^{\\prime}$",
+          "$1^{\\prime}$",
+          "$1^{\\prime}$"
+        ],
+        [
+          "EDA + PLS",
+          "$6 \\mathrm{~h} 54^{\\prime}$",
+          "$7 \\mathrm{~h} 02^{\\prime}$",
+          "$9 \\mathrm{~h} 13^{\\prime}$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Speed up and efficiency results for the EDA and PLS approach with the medium dataset",
+      "headers": [
+        "\\#CPUs",
+        "Time",
+        "Speed up",
+        "Efficiency"
+      ],
+      "rows": [
+        [
+          "Sequential",
+          "$51 \\mathrm{~h} 53^{\\prime} 25^{\\prime \\prime}$",
+          "-",
+          "-"
+        ],
+        [
+          2,
+          "$25 \\mathrm{~h} 57^{\\prime} 11^{\\prime \\prime}$",
+          2.0,
+          1.0
+        ],
+        [
+          4,
+          "$13 \\mathrm{~h} 18^{\\prime} 24^{\\prime \\prime}$",
+          3.9,
+          0.97
+        ],
+        [
+          8,
+          "$7 \\mathrm{~h} 01^{\\prime} 49^{\\prime \\prime}$",
+          7.38,
+          0.92
+        ],
+        [
+          16,
+          "$3 \\mathrm{~h} 46^{\\prime} 01^{\\prime \\prime}$",
+          13.78,
+          0.86
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    }
+  ]
+}

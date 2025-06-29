@@ -1,0 +1,527 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2005/DE EDA  A new evolutionary algorithm for global optimization.md",
+    "filename": "DE EDA  A new evolutionary algorithm for global optimization.md",
+    "title": "DE EDA  A new evolutionary algorithm for global optimization",
+    "year": "2005"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] A. Torn, A. Zilinskas, Global Optimization, Springer-Verlag, Berlin, 1989.\n[2] W.W. Hager, D.W. Hearn, P.M. Pardalos (Eds.), Large Scale Optimzation: State of the Art, Kluwer Academic Publishers, 1994.\n\n[3] C.A. Floudas, P.M. Pardalos (Eds.), State of the Art in Global Optimization: Computational Methods and Applications, Kluwer Academic Publishers, 1996.\n[4] R. Storn, K. Price, Differential evolution-A simple and efficient adaptive scheme for global optimization over continuous spaces, Technical Report TR-95-012, International Computer Science Instititute, Berkely, California, 1995.\n[5] K. Price, Differential Evolution vs. the Functions of the 2nd ICEO, In: Proceedings of 1997 IEEE International Conference on Evolutionary Computation (ICEC '97), Indianapolis, USA, 13-16 April 1997, pp. 153-157.\n[6] H. Mühlenbein, The equation for response to selection and its use for prediction, Evolutionary Computation 5 (3) (1998) 303-346.\n[7] B.T. Zhang, A bayesian framework for evolutionary computation, In: Proceedings of the 1999 Congress on Evolutionary Computation 1 (1999) 722-728.\n[8] A. Ochoa, EBBA-an evolutionary best-basis algorithm. In: Proceedings of the Second Symposium on Artificial Intelligence, ISAS' 99, 1999, pp. 93-98.\n[9] A. Ochoa, H. Mühlenbein, M. Soto, A factorized distribution algorithm using single connected bayesian networks, PPSN (2000) 787-796.\n[10] M. Pelikan, D.E. Goldberg, E. Cantú-Paz, BOA: The Bayesian optimization algorithm, In: Proceedings of the Genetic and Evolutionary Computation Conference (GECCO99), I, 1999, pp. 525-532. Also IlliGAL Report No. 99003.\n[11] S. Rudlof, M. Koppen, Stochastic Hill-Climbing with Learning by Vectors of Normal Distributions, Nagoya, Japan, 1996.\n[12] P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, sdsdsd, 2001.\n[13] P.A.N. Bosman, D. Thierens, Expanding from Discrete to Continuous EDAs: The IDEA, In: Proceedings of Parallel Problem Solving from Nature, PPSN-VI, 2000, pp. 767-776.\n[14] S. Tsutsui, M. Pelikan, D.E. Goldberg, Evolutionary Algorithm Using Marginal Histogram Models in Continuous Domain, In Proceedings of the 2001 Genetic and Evolutionary Computation Conference Workshop, 2001, pp.230-233, San Francisco, CA.\n[15] R. Fletcher, Practical Methods of Optimization, Vol. 1, John Wiley and Sons, New York, 1980.\n[16] L. Davis, Handbook of Genetic Algorithms, Van Nostrand Reinhold, New York, 1991.\n[17] D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison-Wesley, Reading, MA, 1989.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "A. Torn, A. Zilinskas, Global Optimization, Springer-Verlag, Berlin, 1989."
+      },
+      {
+        "ref_id": "2",
+        "text": "W.W. Hager, D.W. Hearn, P.M. Pardalos (Eds.), Large Scale Optimzation: State of the Art, Kluwer Academic Publishers, 1994."
+      },
+      {
+        "ref_id": "3",
+        "text": "C.A. Floudas, P.M. Pardalos (Eds.), State of the Art in Global Optimization: Computational Methods and Applications, Kluwer Academic Publishers, 1996."
+      },
+      {
+        "ref_id": "4",
+        "text": "R. Storn, K. Price, Differential evolution-A simple and efficient adaptive scheme for global optimization over continuous spaces, Technical Report TR-95-012, International Computer Science Instititute, Berkely, California, 1995."
+      },
+      {
+        "ref_id": "5",
+        "text": "K. Price, Differential Evolution vs. the Functions of the 2nd ICEO, In: Proceedings of 1997 IEEE International Conference on Evolutionary Computation (ICEC '97), Indianapolis, USA, 13-16 April 1997, pp. 153-157."
+      },
+      {
+        "ref_id": "6",
+        "text": "H. Mühlenbein, The equation for response to selection and its use for prediction, Evolutionary Computation 5 (3) (1998) 303-346."
+      },
+      {
+        "ref_id": "7",
+        "text": "B.T. Zhang, A bayesian framework for evolutionary computation, In: Proceedings of the 1999 Congress on Evolutionary Computation 1 (1999) 722-728."
+      },
+      {
+        "ref_id": "8",
+        "text": "A. Ochoa, EBBA-an evolutionary best-basis algorithm. In: Proceedings of the Second Symposium on Artificial Intelligence, ISAS' 99, 1999, pp. 93-98."
+      },
+      {
+        "ref_id": "9",
+        "text": "A. Ochoa, H. Mühlenbein, M. Soto, A factorized distribution algorithm using single connected bayesian networks, PPSN (2000) 787-796."
+      },
+      {
+        "ref_id": "10",
+        "text": "M. Pelikan, D.E. Goldberg, E. Cantú-Paz, BOA: The Bayesian optimization algorithm, In: Proceedings of the Genetic and Evolutionary Computation Conference (GECCO99), I, 1999, pp. 525-532. Also IlliGAL Report No. 99003."
+      },
+      {
+        "ref_id": "11",
+        "text": "S. Rudlof, M. Koppen, Stochastic Hill-Climbing with Learning by Vectors of Normal Distributions, Nagoya, Japan, 1996."
+      },
+      {
+        "ref_id": "12",
+        "text": "P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, sdsdsd, 2001."
+      },
+      {
+        "ref_id": "13",
+        "text": "P.A.N. Bosman, D. Thierens, Expanding from Discrete to Continuous EDAs: The IDEA, In: Proceedings of Parallel Problem Solving from Nature, PPSN-VI, 2000, pp. 767-776."
+      },
+      {
+        "ref_id": "14",
+        "text": "S. Tsutsui, M. Pelikan, D.E. Goldberg, Evolutionary Algorithm Using Marginal Histogram Models in Continuous Domain, In Proceedings of the 2001 Genetic and Evolutionary Computation Conference Workshop, 2001, pp.230-233, San Francisco, CA."
+      },
+      {
+        "ref_id": "15",
+        "text": "R. Fletcher, Practical Methods of Optimization, Vol. 1, John Wiley and Sons, New York, 1980."
+      },
+      {
+        "ref_id": "16",
+        "text": "L. Davis, Handbook of Genetic Algorithms, Van Nostrand Reinhold, New York, 1991."
+      },
+      {
+        "ref_id": "17",
+        "text": "D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison-Wesley, Reading, MA, 1989."
+      }
+    ],
+    "reference_count": 17,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The comparison results $(D=5)$",
+      "headers": [
+        "Fun.",
+        "VTR",
+        "DE",
+        "",
+        "",
+        "EDA",
+        "",
+        "",
+        "DE/EDA",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "$\\bar{f}$",
+          "BVAT",
+          "ENES",
+          "$\\bar{f}$",
+          "BVAT",
+          "ENES",
+          "$\\bar{f}$",
+          "$B V A T$",
+          "ENES"
+        ],
+        [
+          "G.Ros.",
+          "$1.0 \\mathrm{e}-6$",
+          "VTR",
+          0.0,
+          4561,
+          2.442,
+          1.392,
+          "N/A",
+          "VTR",
+          0.0,
+          4554
+        ],
+        [
+          "M.Lan.",
+          "N/A",
+          "$-0.963$",
+          "$-0.965$",
+          "N/A",
+          "$-0.899$",
+          "$-0.947$",
+          "N/A",
+          "$-0.964$",
+          "$-0.965$",
+          "N/A"
+        ],
+        [
+          "S. Fox.",
+          "N/A",
+          "$-10.20$",
+          "$-10.40$",
+          "N/A",
+          "$-6.342$",
+          "$-8.439$",
+          "N/A",
+          "$-10.40$",
+          "$-10.40$",
+          "N/A"
+        ],
+        [
+          "E.Mic.",
+          "$-4.687$",
+          "$-4.67$",
+          "$-4.826$",
+          5339,
+          "$-3.745$",
+          "$-4.628$",
+          "N/A",
+          "$-4.680$",
+          "$-4.687$",
+          2894
+        ],
+        [
+          "T.Pol.",
+          "$1.0 \\mathrm{e}-7$",
+          "VTR",
+          "$4.3 \\mathrm{e}-29$",
+          17325,
+          "$5.24 \\mathrm{e}+2$",
+          "$2.69 \\mathrm{e}+2$",
+          "N/A",
+          "VTR",
+          0.0,
+          14009
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 11
+    },
+    {
+      "table_number": "2",
+      "table_title": "The comparison results $(D=10)$",
+      "headers": [
+        "Fun.",
+        "VTR",
+        "DE",
+        "",
+        "",
+        "EDA",
+        "",
+        "",
+        "DE/EDA",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "$\\bar{f}$",
+          "BVAT",
+          "ENES",
+          "$\\bar{f}$",
+          "BVAT",
+          "ENES",
+          "$\\bar{f}$",
+          "BVAT",
+          "ENES"
+        ],
+        [
+          "G.Ros.",
+          "$1.0 \\mathrm{e}-6$",
+          "VTR",
+          0.0,
+          27169,
+          8.168,
+          7.755,
+          "N/A",
+          "VTR",
+          0.0,
+          22709
+        ],
+        [
+          "M.Lan.",
+          "N/A",
+          "$-0.8343$",
+          "$-0.965$",
+          "N/A",
+          "$-0.180$",
+          "$-0.617$",
+          "N/A",
+          "$-0.902$",
+          "$-0.965$",
+          "N/A"
+        ],
+        [
+          "S.Fox.",
+          "N/A",
+          "$-10.20$",
+          "$-10.28$",
+          "N/A",
+          "$-0.900$",
+          "$-1.446$",
+          "N/A",
+          "$-10.26$",
+          "$-10.28$",
+          "N/A"
+        ],
+        [
+          "E.Mic.",
+          "$-9.660$",
+          "$-9.44$",
+          "$-9.660$",
+          77365,
+          "$-7.166$",
+          "$-9.184$",
+          "N/A",
+          "$-9.450$",
+          "$-9.660$",
+          57892
+        ],
+        [
+          "T.Pol.",
+          "$1.0 \\mathrm{e}-7$",
+          "VTR",
+          "$5.7 \\mathrm{e}-29$",
+          78937,
+          "$3.39 \\mathrm{e}+6$",
+          "$1.69 \\mathrm{e}+6$",
+          "N/A",
+          "VTR",
+          0.0,
+          71293
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 11
+    },
+    {
+      "table_number": "3",
+      "table_title": "Parameter settings of DE/EDA",
+      "headers": [
+        "Function",
+        "$D$",
+        "Parameter settings",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "N",
+          "F",
+          "$\\delta$"
+        ],
+        [
+          "G.Ros.",
+          5,
+          20,
+          0.6,
+          0.9
+        ],
+        [
+          "",
+          10,
+          40,
+          0.6,
+          0.9
+        ],
+        [
+          "M.Lan.",
+          5,
+          100,
+          0.4,
+          0.3
+        ],
+        [
+          "",
+          10,
+          150,
+          0.5,
+          0.8
+        ],
+        [
+          "S.Fox.",
+          5,
+          150,
+          "$-0.5$",
+          0.9
+        ],
+        [
+          "",
+          10,
+          150,
+          "$-0.5$",
+          0.9
+        ],
+        [
+          "E.Mic.",
+          5,
+          40,
+          0.5,
+          0.7
+        ],
+        [
+          "",
+          10,
+          40,
+          0.4,
+          0.7
+        ],
+        [
+          "T.Pol.",
+          9,
+          81,
+          0.5,
+          0.9
+        ],
+        [
+          "",
+          17,
+          170,
+          0.5,
+          0.9
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "The effect of $\\delta$ to the performance of DE/EDA",
+      "headers": [
+        "$\\delta$",
+        "S.Fox. $(D=10)$",
+        "",
+        "G.Ros. $(D=5)$",
+        "",
+        "G.Ros. $(D=10)$",
+        "",
+        "M.Lan. $(D=10)$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\bar{f}$",
+          "$n f e$",
+          "$\\bar{f}$",
+          "$n f e$",
+          "$\\bar{f}$",
+          "$n f e$",
+          "$\\bar{f}$",
+          "$n f e$"
+        ],
+        [
+          0.0,
+          -1.219,
+          29160,
+          2.669,
+          3600,
+          7.801,
+          7892,
+          -0.255,
+          39315
+        ],
+        [
+          0.1,
+          -1.477,
+          25875,
+          2.56,
+          3960,
+          7.773,
+          9928,
+          -0.341,
+          43635
+        ],
+        [
+          0.2,
+          -1.477,
+          26745,
+          2.348,
+          4700,
+          7.224,
+          15536,
+          -0.452,
+          44985
+        ],
+        [
+          0.3,
+          -1.477,
+          27420,
+          1.671,
+          8112,
+          3.992,
+          82300,
+          -0.688,
+          58350
+        ],
+        [
+          0.4,
+          -1.477,
+          28920,
+          1.074,
+          14206,
+          2.132,
+          82470,
+          -0.711,
+          55155
+        ],
+        [
+          0.5,
+          -1.474,
+          36405,
+          0.957,
+          12782,
+          0.389,
+          79428,
+          -0.638,
+          54675
+        ],
+        [
+          0.6,
+          -1.475,
+          45015,
+          0.248,
+          11534,
+          0.024,
+          57008,
+          -0.882,
+          62010
+        ],
+        [
+          0.7,
+          -1.471,
+          61410,
+          0.053,
+          9214,
+          "$8.36 \\mathrm{e}-04$",
+          29120,
+          -0.888,
+          61695
+        ],
+        [
+          0.8,
+          -7.608,
+          152355,
+          "$3.93 \\mathrm{e}-03$",
+          4958,
+          "$1.21 \\mathrm{e}-04$",
+          23328,
+          -0.902,
+          50295
+        ],
+        [
+          0.9,
+          -10.26,
+          114060,
+          "$6.87 \\mathrm{e}-07$",
+          4118,
+          "$1.48 \\mathrm{e}-05$",
+          19852,
+          -0.609,
+          38280
+        ],
+        [
+          1.0,
+          -9.488,
+          100275,
+          "$1.50 \\mathrm{e}-03$",
+          5762,
+          1.93,
+          30672,
+          -0.568,
+          30360
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 9
+    }
+  ]
+}

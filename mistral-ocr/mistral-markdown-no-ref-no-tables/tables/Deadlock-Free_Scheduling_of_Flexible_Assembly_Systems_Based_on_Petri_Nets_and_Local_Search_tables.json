@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Deadlock-Free Scheduling of Flexible Assembly Systems Based on Petri Nets and Local Search.md",
+    "filename": "Deadlock-Free Scheduling of Flexible Assembly Systems Based on Petri Nets and Local Search.md",
+    "title": "Deadlock-Free Scheduling of Flexible Assembly Systems Based on Petri Nets and Local Search",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$\\mathbb{N}^{+}$",
+        "$\\{1,2,3, \\ldots\\}$"
+      ],
+      "rows": [
+        [
+          "$\\mathbb{N}_{k}$",
+          "$\\{1,2, \\ldots, k\\}$"
+        ],
+        [
+          "$N^{-1}$",
+          "$\\left(P \\cup P_{s} \\cup P_{e} \\cup P_{R}, T, F^{-1}\\right)$, reverse of $N$."
+        ],
+        [
+          "$F^{-1}$",
+          "$\\{(x, y) \\mid(y, x) \\in F\\}$, the set of arcs in $N^{-1}$."
+        ],
+        [
+          "$f(x)$",
+          "A vertex $x \\in P \\cup P_{s} \\cup P_{e} \\cup P_{R} \\cup T$ in $N^{-1}$."
+        ],
+        [
+          "$d(p)$",
+          "Processing time of the activity modeled by $p$."
+        ],
+        [
+          "$\\wp(\\pi)$",
+          "Set of places in A-chain $\\pi$."
+        ],
+        [
+          "$\\mathfrak{J}(\\pi)$",
+          "Set of transitions in A-chain $\\pi$."
+        ],
+        [
+          "$R(\\pi)$",
+          "Set of all resource types required by places"
+        ],
+        [
+          "",
+          "in $\\wp(\\pi)$."
+        ],
+        [
+          "span $(s)$",
+          "Makespan of schedule $s$."
+        ],
+        [
+          "$o(\\Gamma)$",
+          "Sequence of activities corresponding to chromo-"
+        ],
+        [
+          "",
+          "some $\\Gamma$."
+        ],
+        [
+          "$\\alpha(\\Gamma)$",
+          "Sequence of transitions corresponds to $\\Gamma$."
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 2
+    },
+    {
+      "table_number": "I",
+      "table_title": "Processing Times of Activities of the APNS in Fig. 1",
+      "headers": [
+        "$d\\left(p_{1}\\right): 27$",
+        "$d\\left(p_{2}\\right): 29$",
+        "$d\\left(p_{3}\\right): 31$",
+        "$d\\left(p_{4}\\right): 25$"
+      ],
+      "rows": [
+        [
+          "$d\\left(p_{1}\\right): 16$",
+          "$d\\left(p_{2}\\right): 18$",
+          "$d\\left(p_{3}\\right): 23$",
+          "$d\\left(p_{4}\\right): 19$"
+        ],
+        [
+          "$d\\left(p_{1}\\right): 34$",
+          "",
+          "$d\\left(p_{3}\\right): 24$",
+          "$d\\left(p_{4}\\right): 38$"
+        ],
+        [
+          "$d\\left(p_{1}\\right): 22$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "Parameter LeVels",
+      "headers": [
+        "$\\begin{aligned} & \\text { factors } \\\\ & \\text { levels } \\end{aligned}$",
+        "$\\zeta_{e}$",
+        "$\\zeta_{l}$",
+        "AC"
+      ],
+      "rows": [
+        [
+          1,
+          0.2,
+          0.02,
+          "RW-AC"
+        ],
+        [
+          "$\\frac{3}{4}$",
+          0.4,
+          0.05,
+          "B-AC"
+        ],
+        [
+          3,
+          0.6,
+          0.08,
+          "PD-AC"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "Orthogonal Table and Average MAKEsPan",
+      "headers": [
+        "columns <br> experiments",
+        "$\\zeta_{c}$",
+        "$\\zeta_{l}$",
+        "AC",
+        "",
+        "Average <br> makespan"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          2,
+          3,
+          4,
+          ""
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          580.8
+        ],
+        [
+          3,
+          1,
+          2,
+          2,
+          2,
+          578.9
+        ],
+        [
+          4,
+          2,
+          1,
+          2,
+          3,
+          574.2
+        ],
+        [
+          5,
+          2,
+          2,
+          3,
+          1,
+          568.0
+        ],
+        [
+          6,
+          2,
+          3,
+          1,
+          2,
+          568.8
+        ],
+        [
+          7,
+          3,
+          1,
+          3,
+          2,
+          576.4
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          3,
+          570.7
+        ],
+        [
+          9,
+          3,
+          3,
+          2,
+          1,
+          581.9
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Response Table",
+      "headers": [
+        "$\\begin{aligned} & \\text { factors } \\\\ & \\text { levels } \\end{aligned}$",
+        "$\\zeta_{c}$",
+        "$\\zeta_{l}$",
+        "AC"
+      ],
+      "rows": [
+        [
+          1,
+          1733.9,
+          1732,
+          1720.3
+        ],
+        [
+          2,
+          1711.6,
+          1717.6,
+          1735.6
+        ],
+        [
+          3,
+          1729,
+          1724.9,
+          1718.6
+        ],
+        [
+          "range",
+          22.3,
+          14.4,
+          17
+        ],
+        [
+          "rank",
+          1,
+          3,
+          2
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "V",
+      "table_title": "Simulation Results Under Different Perturbation Policy",
+      "headers": [
+        "EDA-P",
+        "",
+        "R-P (0.1)",
+        "",
+        "R-P (0,2)",
+        ""
+      ],
+      "rows": [
+        [
+          "Makespan",
+          "RT(s)",
+          "Makespan",
+          "RT(s)",
+          "Makespan",
+          "RT(s)"
+        ],
+        [
+          570,
+          81,
+          558,
+          83,
+          590,
+          82
+        ],
+        [
+          585,
+          79,
+          578,
+          76,
+          581,
+          78
+        ],
+        [
+          572,
+          76,
+          573,
+          75,
+          588,
+          71
+        ],
+        [
+          562,
+          79,
+          561,
+          78,
+          580,
+          81
+        ],
+        [
+          575,
+          74,
+          586,
+          79,
+          587,
+          76
+        ],
+        [
+          585,
+          73,
+          538,
+          77,
+          563,
+          79
+        ],
+        [
+          598,
+          79,
+          567,
+          81,
+          573,
+          74
+        ],
+        [
+          578,
+          78,
+          575,
+          78,
+          596,
+          76
+        ],
+        [
+          558,
+          75,
+          566,
+          79,
+          574,
+          73
+        ],
+        [
+          575,
+          79,
+          578,
+          78,
+          547,
+          77
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 6
+    }
+  ]
+}

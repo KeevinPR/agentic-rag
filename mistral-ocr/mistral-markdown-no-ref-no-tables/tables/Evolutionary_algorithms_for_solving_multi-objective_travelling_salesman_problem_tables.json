@@ -1,0 +1,365 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Evolutionary algorithms for solving multi-objective travelling salesman problem.md",
+    "filename": "Evolutionary algorithms for solving multi-objective travelling salesman problem.md",
+    "title": "Evolutionary algorithms for solving multi-objective travelling salesman problem",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Notations",
+      "headers": [
+        "Notations",
+        "Description"
+      ],
+      "rows": [
+        [
+          "$F$",
+          "Objective function, $F=F_{1}, \\ldots F_{m}$"
+        ],
+        [
+          "$m$",
+          "Number of objective functions"
+        ],
+        [
+          "$x_{i}$",
+          "The representative integer of a city at $i$ th position of a chromosome, $x=x_{1}, \\ldots x_{m}$"
+        ],
+        [
+          "$D^{m}$",
+          "The objective considered in the $m$ th objective function"
+        ],
+        [
+          "$n$",
+          "Number of cities or number of decision variables"
+        ],
+        [
+          "$\\operatorname{Pr}_{q}\\left(x_{i}\\right)$",
+          "Probability matrix modeled by EDAs at generation $g$"
+        ],
+        [
+          "$\\operatorname{Pr}_{q}\\left(x_{i}=c_{j}\\right)$",
+          "Probability of city $j$ at the $i$ th position of the chromosome at generation $g$"
+        ],
+        [
+          "$c_{j}$",
+          "City $j\\left(c_{j}=j\\right)$"
+        ],
+        [
+          "$N$",
+          "Population size"
+        ],
+        [
+          "$\\alpha$",
+          "Learning parameter in PBIL"
+        ],
+        [
+          "$w_{i j}$",
+          "Connection weight between the $i$ th visible unit and the $j$ th hidden unit of RBM"
+        ],
+        [
+          "$b_{i}$",
+          "Bias for the $i$ th visible unit of RBM"
+        ],
+        [
+          "$b_{j}$",
+          "Bias for the $j$ th hidden unit of RBM"
+        ],
+        [
+          "E",
+          "Energy function of a RBM"
+        ],
+        [
+          "$v_{i}$",
+          "State of the $i$ th visible unit of RBM"
+        ],
+        [
+          "$h_{j}$",
+          "State of the $j$ th hidden unit of RBM"
+        ],
+        [
+          "$Z$",
+          "Normalizing constant in RBM"
+        ],
+        [
+          "$L_{i}$",
+          "Location of repeated cities"
+        ],
+        [
+          "$V_{j}$",
+          "Unvisited cities"
+        ],
+        [
+          "$R$",
+          "Number of repeated cities in a chromosome before refinement"
+        ],
+        [
+          "Score $1(j)$",
+          "Score for the $V_{j}$ as used in the refinement operator"
+        ],
+        [
+          "$\\kappa$",
+          "Number of cities to be relocated as used in the local search operator"
+        ],
+        [
+          "$\\ell$",
+          "The $i$ th position of a chromosome used in the local search operator"
+        ],
+        [
+          "$U_{j}$",
+          "City to be relocated as used in the local search operator"
+        ],
+        [
+          "Score $2(j)$",
+          "Score for the $U_{j}$ used in the local search operator"
+        ],
+        [
+          "$H$",
+          "Number of hidden units in RBM"
+        ],
+        [
+          "$L S$",
+          "Local search rate"
+        ],
+        [
+          "$f r$",
+          "Frequency of alternation in hybrid algorithms"
+        ]
+      ],
+      "row_count": 28,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Parameter settings for experiments",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Population size (N)",
+          "Number of cities"
+        ],
+        [
+          2,
+          "$2 \\times$ Number of cities"
+        ],
+        [
+          "Number of cities",
+          "$100,200,500$"
+        ],
+        [
+          "Fitness evaluations",
+          2000
+        ],
+        [
+          "Local search rate $(L S)$",
+          0.5
+        ],
+        [
+          "Frequency of alternation $(f r)$",
+          500
+        ],
+        [
+          "Crossover rate in GA",
+          0.8
+        ],
+        [
+          "Mutation rate in GA",
+          0.05
+        ],
+        [
+          "Independent runs",
+          10
+        ],
+        [
+          "$\\alpha$ in PBIL",
+          0.9
+        ],
+        [
+          "Hidden unit in RBM $(H)$",
+          10
+        ],
+        [
+          "Training epoch in RBM",
+          10
+        ],
+        [
+          "$k$",
+          10
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Algorithms' abbreviation",
+      "headers": [
+        "Algorithms' <br> abbreviation",
+        "Description"
+      ],
+      "rows": [
+        [
+          "RBM-GA",
+          "A hybrid algorithm of RBM and GA"
+        ],
+        [
+          "UM-GA",
+          "A hybrid algorithm of UMDA and GA"
+        ],
+        [
+          "PB-GA",
+          "A hybrid algorithm of PBIL and GA"
+        ],
+        [
+          "RBM",
+          "Restricted Boltzmann machine"
+        ],
+        [
+          "UMDA",
+          "Univariate marginal distribution algorithm"
+        ],
+        [
+          "PBIL",
+          "Population-based incremental learning"
+        ],
+        [
+          "GA",
+          "Genetic algorithm"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Performance indicator of IGD after running the various algorithms with permutation refinement operator or permutation correction operator on MOTSP with 100 and 200 cities",
+      "headers": [
+        "Algorithms",
+        "100 cities",
+        "",
+        "200 cities",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "P. Refinement",
+          "P. Correction",
+          "P. Refinement",
+          "P. Correction"
+        ],
+        [
+          "RBM-GA",
+          "$2998.6 \\pm 964.40$",
+          "$6878.7 \\pm 1086.4$",
+          "$2689.0 \\pm 1193.9$",
+          "$19560 \\pm 1455.9$"
+        ],
+        [
+          "UM-GA",
+          "$2888.1 \\pm 831.30$",
+          "$7993.2 \\pm 1458.4$",
+          "$3456.0 \\pm 1101.2$",
+          "$21448 \\pm 1648.8$"
+        ],
+        [
+          "PB-GA",
+          "$2504.0 \\pm 734.50$",
+          "$7881.7 \\pm 792.76$",
+          "$4161.0 \\pm 1571.9$",
+          "$20936 \\pm 4019.7$"
+        ],
+        [
+          "RBM",
+          "$3418.8 \\pm 718.10$",
+          "$8391.7 \\pm 1212.6$",
+          "$3141.0 \\pm 587.00$",
+          "$30030 \\pm 10673$"
+        ],
+        [
+          "UMDA",
+          "$2349.8 \\pm 552.70$",
+          "$8949.1 \\pm 3862.7$",
+          "$8955.0 \\pm 1459.1$",
+          "$67774 \\pm 5459.7$"
+        ],
+        [
+          "PBIL",
+          "$2397.5 \\pm 696.40$",
+          "$8890.5 \\pm 3875.4$",
+          "$10205 \\pm 982.6$",
+          "$65984 \\pm 4161.8$"
+        ],
+        [
+          "GA",
+          "$5371.0 \\pm 848.26$",
+          "$7493.6 \\pm 926.75$",
+          "$9530.0 \\pm 2098.5$",
+          "$15917 \\pm 2818.2$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Computational time (in second) used by the various algorithms for solving MOTSP with 100, 200, and 500 cities",
+      "headers": [
+        "Algorithms",
+        "100 cities",
+        "200 cities",
+        "500 cities"
+      ],
+      "rows": [
+        [
+          "RBM-GA",
+          "$628.33 \\pm 14.460$",
+          "$2994.5 \\pm 7.3088$",
+          "$35486 \\pm 511.92$"
+        ],
+        [
+          "UM-GA",
+          "$27.805 \\pm 1.0947$",
+          "$194.28 \\pm 3.1202$",
+          "$2987.4 \\pm 136.29$"
+        ],
+        [
+          "PB-GA",
+          "$27.810 \\pm 0.8897$",
+          "$199.71 \\pm 3.7931$",
+          "$3141.1 \\pm 145.50$"
+        ],
+        [
+          "RBM",
+          "$2689.7 \\pm 91.703$",
+          "$10481 \\pm 159.82$",
+          "$68792 \\pm 355.56$"
+        ],
+        [
+          "UMDA",
+          "$28.714 \\pm 0.9036$",
+          "$332.55 \\pm 8.1735$",
+          "$4648.8 \\pm 30.824$"
+        ],
+        [
+          "PBIL",
+          "$29.167 \\pm 1.3288$",
+          "$337.84 \\pm 6.6643$",
+          "$4836.5 \\pm 25.803$"
+        ],
+        [
+          "GA",
+          "$19.005 \\pm 0.1993$",
+          "$124.98 \\pm 4.2990$",
+          "$1665.6 \\pm 43.812$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    }
+  ]
+}

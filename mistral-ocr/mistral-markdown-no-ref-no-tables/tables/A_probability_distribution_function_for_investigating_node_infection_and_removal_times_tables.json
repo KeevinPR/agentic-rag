@@ -1,0 +1,860 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/A probability distribution function for investigating node infection and removal times.md",
+    "filename": "A probability distribution function for investigating node infection and removal times.md",
+    "title": "A probability distribution function for investigating node infection and removal times",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "TABLE 1 Bayesian network learning algorithms and tools",
+      "headers": [
+        "Algorithm",
+        "Ref.",
+        "Matlab tool ${ }^{15}$"
+      ],
+      "rows": [
+        [
+          "PC",
+          16,
+          "learn_struct_pdag_pc"
+        ],
+        [
+          "MWST",
+          1920,
+          "learn_struct_mwst"
+        ],
+        [
+          2,
+          21,
+          2
+        ],
+        [
+          "Markov Chain Monte Carlo (MCMC)",
+          22,
+          "learn_struct_mcmc"
+        ],
+        [
+          "Greedy search",
+          "-",
+          2
+        ],
+        [
+          "Greedy search in the Markov equivalent space",
+          23,
+          "learn_struct_ges"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "TABLE 2 Worm scan parameters",
+      "headers": [
+        "Simulation parameters",
+        "Calculation method",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Local subnet scan prob.",
+          "Set",
+          0.6
+        ],
+        [
+          "Remote subnet scan prob.",
+          "Set",
+          0.4
+        ],
+        [
+          "Local subnet RTT",
+          "Measured",
+          0.1
+        ],
+        [
+          "Remote subnet RTT",
+          "Measured",
+          0.2
+        ],
+        [
+          "Total spread time",
+          "Measured",
+          300
+        ],
+        [
+          "Connections",
+          "Set",
+          4
+        ],
+        [
+          "Local scan time",
+          "Measured",
+          7
+        ],
+        [
+          "Remote scan time",
+          "Measured",
+          8
+        ],
+        [
+          "Scan rate",
+          "Resulted",
+          0.54
+        ],
+        [
+          "$\\beta$",
+          "Resulted",
+          0.02
+        ],
+        [
+          "$\\gamma$",
+          "Resulted",
+          0.01
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "TABLE 3 Feature list",
+      "headers": [
+        "no",
+        "Name",
+        "Description"
+      ],
+      "rows": [
+        [
+          1,
+          "$A C K$",
+          "\\# of received acknowledgement packets by $i$ th host every msec"
+        ],
+        [
+          2,
+          "DST IP",
+          "\\# of unique destination addresses the ith host connected to every msec"
+        ],
+        [
+          3,
+          "DST Port",
+          "\\# of unique destination ports that ith host connected to every msec"
+        ],
+        [
+          4,
+          "SRC Port",
+          "\\# of unique source ports that ith host uses to every msec"
+        ],
+        [
+          5,
+          "SYN CNT",
+          "\\# of SYN packets sent by $i$ th host every msec"
+        ],
+        [
+          6,
+          "TCP CNT",
+          "\\# of TCP packets sent by host $i$ every msec"
+        ],
+        [
+          7,
+          "INF CNT",
+          "\\# of infectious nodes per subnet every msec"
+        ],
+        [
+          8,
+          "OUT Degree",
+          "\\# of connections made from ith host every msec"
+        ],
+        [
+          9,
+          "Infection",
+          "The status of ith host every msec ( $1=$ infectious; $0=$ susceptible or removed)"
+        ],
+        [
+          10,
+          "SRC CNT",
+          "\\# of unique SRC addresses in packets in subnet every msec"
+        ],
+        [
+          11,
+          "UDP CNT",
+          "\\# of UDP packets sent by node $i$ every msec"
+        ],
+        [
+          12,
+          "Ent node",
+          50
+        ],
+        [
+          13,
+          "Ent port",
+          50
+        ],
+        [
+          14,
+          "Bandwidth_in",
+          "The bandwidth consumed by the hosts outside subnet to connect to the subnet"
+        ],
+        [
+          15,
+          "Bandwidth_inside",
+          "The bandwidth consumed by the hosts inside subnet to connect to the same subnet"
+        ],
+        [
+          16,
+          "Bandwidth_out",
+          "The bandwidth consumed by the hosts inside subnet to connect to the outside"
+        ],
+        [
+          17,
+          "SYN ratio",
+          "The ratio of SYN packets to unique dst addresses node $i$ connects to every msec"
+        ],
+        [
+          18,
+          "Port ratio",
+          "The ratio of unique src ports to unique dst ports for node $i$ every msec"
+        ],
+        [
+          19,
+          "Inf Path to $j$",
+          1
+        ],
+        [
+          20,
+          "Connection to $j$",
+          1.0
+        ],
+        [
+          21,
+          "Inf Stat_ $j$",
+          "The infection status of node $j$ every msec."
+        ]
+      ],
+      "row_count": 21,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "ACK",
+        "DST IP",
+        "DST Port",
+        "SRC Port",
+        "SYN CNT",
+        "TCP CNT",
+        "Infection"
+      ],
+      "rows": [
+        [
+          "ACK",
+          0,
+          4,
+          2,
+          2,
+          2,
+          5,
+          1
+        ],
+        [
+          "DST IP",
+          2,
+          0,
+          3,
+          3,
+          2,
+          1,
+          1
+        ],
+        [
+          "DST Port",
+          2,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          "SRC Port",
+          1,
+          4,
+          2,
+          0,
+          2,
+          1,
+          1
+        ],
+        [
+          "SYN CNT",
+          3,
+          4,
+          5,
+          5,
+          0,
+          3,
+          1
+        ],
+        [
+          "TCP CNT",
+          2,
+          3,
+          2,
+          3,
+          4,
+          0,
+          2
+        ],
+        [
+          "Infection",
+          1,
+          2,
+          1,
+          1,
+          4,
+          4,
+          0
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": "5",
+      "table_title": "TABLE 5 The number of mismatches between the directed acyclic graph (DAG) learned by each algorithm and the final merged DAG",
+      "headers": [
+        "Algorithm",
+        "\\# of mismatches"
+      ],
+      "rows": [
+        [
+          "PC-DAG",
+          26
+        ],
+        [
+          "MWST",
+          13
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          "Monte Carlo Markov Chain",
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          "Ges",
+          12
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "6",
+      "table_title": "TABLE 6 Estimation of distribution algorithm components",
+      "headers": [
+        "Sampling method",
+        "Sample BN",
+        "Samples a population of individuals from Bayesian Network (BN)"
+      ],
+      "rows": [
+        [
+          "Replacement method",
+          "Best Elitism",
+          "Joins the selected individuals with the sample individuals to formthe next population."
+        ],
+        [
+          "Selection method",
+          "Truncation - selection",
+          "Samples a population of individuals from a Bayesian or Gaussian network"
+        ],
+        [
+          "Learning method",
+          "Learn - BN",
+          "Learns a Bayesian Network from data using a greedy search algorithm (learn-struct-gs2) <br> from Bayes Net Toolbox Structure Learning Package"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "7",
+      "table_title": "TABLE 7 Fitness function thresholds",
+      "headers": [
+        "\\#",
+        "Feature",
+        "Threshold"
+      ],
+      "rows": [
+        [
+          1,
+          "$A C K$",
+          "$\\geq 2$"
+        ],
+        [
+          2,
+          "DST IP",
+          "$\\geq 2$"
+        ],
+        [
+          3,
+          "DST Port",
+          "$\\geq 2$"
+        ],
+        [
+          4,
+          "SRC Port",
+          "$\\geq 1$"
+        ],
+        [
+          5,
+          "STN CNT",
+          "$\\geq 2$"
+        ],
+        [
+          6,
+          "TCP CNT",
+          "$\\geq 2$"
+        ],
+        [
+          7,
+          "INF CNT",
+          "$\\geq 0$"
+        ],
+        [
+          8,
+          "OUT Degree",
+          "$\\geq 1$"
+        ],
+        [
+          9,
+          "Infection",
+          "$=1$"
+        ],
+        [
+          10,
+          "Inf Path to j",
+          "$=1$"
+        ],
+        [
+          11,
+          "Connection to j",
+          "$=1$"
+        ],
+        [
+          12,
+          "Inf Stat_ $j$",
+          "$=1$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 3
+    },
+    {
+      "table_number": "8",
+      "table_title": "TABLE 8 Infection and removal times of nodes in three scenarios",
+      "headers": [
+        "Scenario no.",
+        "Test no.",
+        "IP add.",
+        "Inferred infection <br> Time, ms",
+        "Inferred removal <br> Time, ms",
+        "Origin",
+        "Real infection <br> time",
+        "Real removal <br> time"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          "192.168 .1 .101",
+          1,
+          24,
+          "$*$",
+          1,
+          28
+        ],
+        [
+          1,
+          1,
+          "192.168 .1 .102",
+          16,
+          98,
+          "",
+          11,
+          101
+        ],
+        [
+          1,
+          1,
+          "192.168 .1 .104",
+          53,
+          60,
+          "",
+          46,
+          59
+        ],
+        [
+          2,
+          1,
+          "192.168 .1 .101",
+          1,
+          23,
+          "$*$",
+          1,
+          28
+        ],
+        [
+          2,
+          1,
+          "192.168 .1 .102",
+          17,
+          92,
+          "",
+          11,
+          101
+        ],
+        [
+          2,
+          1,
+          "192.168 .1 .104",
+          43,
+          58,
+          "",
+          46,
+          59
+        ],
+        [
+          1,
+          2,
+          "192.168 .1 .103",
+          1,
+          28,
+          "$*$",
+          1,
+          23
+        ],
+        [
+          1,
+          2,
+          "192.168 .2 .110",
+          34,
+          78,
+          "",
+          40,
+          80
+        ],
+        [
+          1,
+          3,
+          "192.168 .2 .111",
+          1,
+          40,
+          "$*$",
+          1,
+          38
+        ],
+        [
+          1,
+          3,
+          "192.168 .3 .117",
+          "-",
+          "-",
+          "",
+          54,
+          87
+        ],
+        [
+          1,
+          4,
+          "192.168 .3 .115",
+          1,
+          35,
+          "$*$",
+          1,
+          35
+        ],
+        [
+          1,
+          4,
+          "192.168 .4 .120",
+          80,
+          115,
+          "",
+          67,
+          110
+        ],
+        [
+          1,
+          5,
+          "192.168 .1 .105",
+          "-",
+          "-",
+          "$*$",
+          1,
+          20
+        ],
+        [
+          1,
+          5,
+          "192.168 .4 .118",
+          20,
+          40,
+          "",
+          16,
+          45
+        ],
+        [
+          1,
+          6,
+          "192.168 .2 .107",
+          1,
+          35,
+          "$*$",
+          1,
+          30
+        ],
+        [
+          1,
+          6,
+          "192.168 .3 .117",
+          50,
+          70,
+          "",
+          45,
+          80
+        ],
+        [
+          1,
+          7,
+          "192.168 .4 .119",
+          1,
+          25,
+          "$*$",
+          1,
+          27
+        ],
+        [
+          1,
+          7,
+          "192.168 .1 .103",
+          90,
+          115,
+          "",
+          88,
+          120
+        ],
+        [
+          1,
+          8,
+          "192.168 .5 .122",
+          1,
+          18,
+          "$*$",
+          1,
+          18
+        ],
+        [
+          1,
+          8,
+          "192.168 .1 .101",
+          35,
+          80,
+          "",
+          36,
+          76
+        ],
+        [
+          1,
+          9,
+          "192.168 .1 .101",
+          1,
+          23,
+          "$*$",
+          1,
+          20
+        ],
+        [
+          1,
+          9,
+          "192.168 .2 .106",
+          43,
+          56,
+          "",
+          40,
+          60
+        ],
+        [
+          1,
+          10,
+          "192.168 .3 .116",
+          1,
+          30,
+          "$*$",
+          1,
+          30
+        ],
+        [
+          1,
+          10,
+          "192.168 .2 .108",
+          50,
+          66,
+          "",
+          51,
+          67
+        ],
+        [
+          1,
+          11,
+          "192.168 .1 .102",
+          1,
+          27,
+          "$*$",
+          1,
+          28
+        ],
+        [
+          1,
+          11,
+          "192.168 .2 .109",
+          40,
+          67,
+          "",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 8
+    },
+    {
+      "table_number": "9",
+      "table_title": "TABLE 9 Match and mismatch results for experiments",
+      "headers": [
+        "",
+        "Matches <br> (true positive)",
+        "Mismatches <br> (false negative)",
+        "False <br> (false positive)",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Experiments",
+          23,
+          2,
+          1,
+          26
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 5
+    },
+    {
+      "table_number": "10",
+      "table_title": "TABLE 10 The accuracy of our proposed method",
+      "headers": [
+        "",
+        "Precision",
+        "Recall"
+      ],
+      "rows": [
+        [
+          "Experiments",
+          "$\\frac{23}{23+1}=0.96$",
+          "$\\frac{23}{23+2}=0.92$"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 3
+    },
+    {
+      "table_number": "11",
+      "table_title": "We used detection accuracy and complexity as two metrics for comparing our method with mentioned state-of-the-art methods. From the perspective of detection accuracy, the comparison is as follows. The detection accuracy of each method was extracted from the simulation data reported in the corresponding paper and we did not perform any experiments on them. The detection accuracy of the random moonwalk algorithm, ${ }^{10}$ measured in different simulations using various parameter levels, has been reported to be in the range of 0.472 to 0.614 for different host degree distributions. The virus",
+      "headers": [
+        "Paper and method",
+        "Approach",
+        "Epidemic model",
+        "Snapshot info",
+        "Infection network topology",
+        "Knowledge of network",
+        "Number of originators",
+        "Complexity"
+      ],
+      "rows": [
+        [
+          "Our method",
+          "Probabilistic Backward modeling",
+          "N.A.",
+          "Network parameters",
+          "N.A.",
+          "N.A.",
+          "Any number",
+          "$O(K)$"
+        ],
+        [
+          "Random Moonwalk ${ }^{10}$",
+          "Walking backwards in time and sampling",
+          "N.A.",
+          "The whole comm. net. at all times",
+          "Tree networks",
+          "Employed",
+          "Single <br> Origin",
+          "Not Indicated"
+        ],
+        [
+          "Virus source estimator ${ }^{3}$",
+          "Rumor <br> Centrality",
+          "SI",
+          "Infected nodes at a snapshot",
+          "Tree networks",
+          "Infection graph",
+          "Single <br> Origin",
+          "$O\\left(N^{2}\\right)$"
+        ],
+        [
+          "NetSleuth ${ }^{8}$",
+          "MDL",
+          "SI",
+          "Infected nodes at a snapshot",
+          "General graph",
+          "Infection graph",
+          "Any number",
+          "$O\\left(k\\left(c_{I}+c_{F}+v_{I}\\right)\\right)$"
+        ],
+        [
+          "Back-to-the-past ${ }^{11}$",
+          "Historical diffusion model learning",
+          "SI",
+          "Incomplete diffusion traces",
+          "N.A.",
+          "Contact network",
+          "Single <br> Origin",
+          "Not indicated"
+        ],
+        [
+          "Information source detector ${ }^{6}$",
+          "Jordan Center",
+          "SIR",
+          "Complete snapshot",
+          "Tree networks",
+          "Network topology",
+          "Single <br> Origin",
+          "Not Indicated"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 8
+    }
+  ]
+}

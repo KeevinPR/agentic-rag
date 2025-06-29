@@ -1,0 +1,942 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/An Estimation of Distribution Algorithm for Mixed-Variable Newsvendor Problems.md",
+    "filename": "An Estimation of Distribution Algorithm for Mixed-Variable Newsvendor Problems.md",
+    "title": "An Estimation of Distribution Algorithm for Mixed-Variable Newsvendor Problems",
+    "year": "2020"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] S. C. Chiam, K. C. Tan, and A. A. Mamun, \"Investigating technical trading strategy via an multi-objective evolutionary platform,\" Expert Syst. Appl., vol. 36, no. 7, pp. 10408-10423, 2009.\n[2] V. Deshpande and M. Arikan, \"The impact of airline flight schedules on flight delays,\" Manaf. Service Oper. Manag., vol. 14, no. 3, pp. 423-440, 2012.\n[3] M. Densing, \"Dispatch planning using newsvendor dual problems and occupation times: Application to hydropower,\" Eur. J. Oper. Res., vol. 228, no. 2, pp. 321-330, 2013.\n[4] F. Zaman, S. M. Elsayed, T. Ray, and R. A. Sarkerr, \"Evolutionary algorithms for finding Nash equilibria in electricity markets,\" IEEE Trans. Evol. Comput., vol. 22, no. 4, pp. 536-549, Aug. 2018.\n[5] M. A. Pearson, \"The incorporation of target performance measures and constrained optimisation in the newsboy problem,\" J. Oper. Res. Soc., vol. 51, no. 6, pp. 744-754, 2000.\n[6] W. Jammermegg and P. Kischka, \"Risk-averse and risk-taking newsvendors: A conditional expected value approach,\" Rev. Manag. Sci., vol. 1, no. 1, pp. 93-110, 2007.\n[7] B. Zhang, \"Multi-tier binary solution method for multi-product newsvendor problem with multiple constraints,\" Eur. J. Oper. Res., vol. 218, no. 2, pp. 426-434, 2012.\n[8] L. L. Abdel-Malek and N. Areeratchakul, \"A quadratic programming approach to the multi-product newsvendor problem with side constraints,\" Eur. J. Oper. Res., vol. 176, no. 3, pp. 1607-1619, 2007.\n[9] M. Cherikh, \"On the effect of centralisation on expected profits in a multi-location newsboy problem,\" J. Oper. Res. Soc., vol. 51, no. 6, pp. 755-761, 2000.\n[10] M. Ujjwal, S. Vishakha, T. S. Lakshman, and K. T. Manoj, \"Multiple criteria risk averse model for multi-product newsvendor problem using conditional value at risk constraints,\" Inf. Sci., vol. 478, pp. 595-605, Apr. 2019.\n[11] W. Mei, L. Du, B. Niu, J. Wang, and J. Feng, \"The effects of an undisclosed regular price and a positive leadtime in a presale mechanism,\" Eur. J. Oper. Res., vol. 250, no. 3, pp. 1013-1025, 2016.\n[12] E. M. Gerber and J. Hui, \"Crowdfunding: Motivations and deterrents for participation,\" ACM Trans. Comput.-Human Interact., vol. 20, no. 6, p. 34, 2013.\n[13] G. J. Kyparisis and C. Koulamas, \"The price-setting newsvendor problem with nonnegative linear additive demand,\" Eur. J. Oper. Res., vol. 269, no. 2, pp. 695-698, 2018.\n[14] L. Xin, H. Long, J. Bewli, J. Bowman, H. Feng, and Z. Qin, On the Performance of Tailored Base-Surge Policies: Theory and Application or Walmart.com. Rochester, NY, USA: Soc. Sci. Electron., 2017.\n[15] C. Erbas, S. Cerav-Erbas, and A. D. Pimentel, \"Multiobjective optimization and evolutionary algorithms for the application mapping problem in multiprocessor system-on-chip design,\" IEEE Trans. Evol. Comput., vol. 10, no. 3, pp. 358-374, Jun. 2006.\n[16] T. Tometzki and S. Engell, \"Systematic initialization techniques for hybrid evolutionary algorithms for solving two-stage stochastic mixedinteger programs,\" IEEE Trans. Evol. Comput., vol. 15, no. 2, pp. 196-214, Apr. 2011.\n[17] Q. N. Huynh, S. Chand, H. K. Singh, and T. Ray, \"Genetic programming with mixed integer linear programming based library search,\" IEEE Trans. Evol. Comput., vol. 22, no. 5, pp. 733-747, Oct. 2018.\n[18] L. L. Abdel-Malek and R. Montanari, \"On the multi-product newsboy problem with two constraints,\" Comput. Oper. Res., vol. 32, no. 8, pp. 2095-2116, 2005.\n[19] J. Rubio-Herrero and M. Baykal-Gürsoy, \"On the unimodality of the price-setting newsvendor problem with additive demand under risk considerations,\" Eur. J. Oper. Res., vol. 265, no. 3, pp. 962-974, 2018.\n[20] L. Yu, W. Fan, J. Pei, and P. M. Pardalos, \"A study on the effect of yield uncertainty in price-setting newsvendor models with additivemultiplicative demand,\" Optim. Lett., vol. 12, no. 6, pp. 1421-1441, 2017.\n[21] M. Xu, Y. Chen, and X. Xu, \"The effect of demand uncertainty in a price-setting newsvendor model,\" Eur. J. Oper. Res., vol. 207, no. 2, pp. 946-957, 2010.\n[22] S. Zhang and Y. Xia, \"Solving nonlinear optimization problems of real functions in complex variables by complex-valued iterative methods,\" IEEE Trans. Cybern., vol. 48, no. 1, pp. 277-287, Jan. 2018.\n[23] Y. Merzifonlaoglu and Y. Feng, \"Newsvendor problem with multiple unreliable suppliers,\" Int. J. Prod. Res., vol. 52, no. 1, pp. 221-242, 2014.\n[24] B. Zhang, X. Xu, and Z. Hua, \"A binary solution method for the multiproduct newsboy problem with budget constraint,\" Int. J. Prod. Econ., vol. 117, no. 1, pp. 136-141, 2009.\n[25] R. Li et al., \"Mixed integer evolution strategies for parameter optimization,\" Evol. Comput., vol. 21, no. 1, pp. 29-64, 2013.\n[26] K. L. Sadowski, P. A. N. Bosman, and D. Thierens, \"A clusteringbased model-building EA for optimization problems with binary and real-valued variables,\" in Proc. Genet. Evol. Comput. Conf. (GECCO), 2015, pp. 911-918.\n[27] K. L. Sadowski, P. A. N. Bosman, and D. Thierens, \"Learning and exploiting mixed variable dependencies with a model-based EA,\" in Proc. IEEE Congr. Evol. Comput. (CEC), 2016, pp. 4382-4389.\n[28] L. J. Li, Z. B. Huang, and F. Liu, \"A heuristic particle swarm optimization method for truss structures with discrete variables,\" Comput. Struct., vol. 87, nos. 7-8, pp. 435-443, 2009.\n[29] C. L. Sun, J. C. Zeng, and J. S. Pan, \"An improved particle swarm optimization with feasibility-based rules for constrained optimization problems,\" in Next-Generation Applied Intelligence. IEAAIE, vol. 5579. Heidelberg, Germany: Springer, Jun. 2009, pp. 202-211.\n[30] T. Liao, K. Socha, M. A. M. D. Oca, T. Stützle, and M. Dorigo, \"Ant colony optimization for mixed-variable optimization problems,\" IEEE Trans. Evol. Comput., vol. 18, no. 4, pp. 503-518, Aug. 2014.\n[31] L. Sahoo, A. Banerjee, A. K. Bhunia, and S. Chattopadhyay, \"An efficient GA-CPSO approach for solving mixed-integer nonlinear programming problem in reliability optimization,\" Swarm Evol. Comput., vol. 19, pp. 43-51, Dec. 2014.\n[32] G.-C. Luh, C.-Y. Lin, and Y.-S. Lin, \"A binary particle swarm optimization for continuum structural topology optimization,\" Appl. Soft Comput., vol. 11, no. 2, pp. 2833-2844, 2011.\n\n[33] S. He, E. Prempain, and Q. H. Wu, \"An improved particle swarm optimizer for mechanical design optimization problems,\" Eng. Optim., vol. 36, no. 5, pp. 585-605, 2004.\n[34] A. H. Gandomi, X.-S. Yang, and A. H. Alavi, \"Mixed variable structural optimization using Firefly algorithm,\" Comput. Struct., vol. 89, no. 23, pp. 2325-2336, 2011.\n[35] M. Urselmann, S. Barkmann, G. Sand, and S. Engell, \"A memetic algorithm for global optimization in chemical process synthesis problems,\" IEEE Trans. Evol. Comput., vol. 15, no. 5, pp. 659-683, Oct. 2011.\n[36] Y. Lin, W. Du, T. Liao, and T. Stützle, \"Three L-SHADE based algorithms on mixed-variables optimization problems,\" in Proc. IEEE Congr. Evol. Comput. (CEC), 2017, pp. 2274-2281.\n[37] K. P. Dahal, G. M. Burt, J. R. McDonald, and A. Moyes, \"A case study of scheduling storage tanks using a hybrid genetic algorithm,\" IEEE Trans. Evol. Comput., vol. 5, no. 3, pp. 283-294, Jun. 2001.\n[38] W. Shi, W. N. Chen, Y. Lin, T. Gu, S. Kwong, and J. Zhang, \"An adaptive estimation of distribution algorithm for multi-policy insurance investment planning,\" IEEE Trans. Evol. Comput., vol. 23, no. 1, pp. 1-14, Feb. 2019.\n[39] A. A. Taleizadeh, S. T. A. Niaki, and V. Hoseini, \"Optimizing the multiproduct, multi-constraint, bi-objective newsboy problem with discount by a hybrid method of goal programming and genetic algorithm,\" Eng. Optim., vol. 41, no. 5, pp. 437-457, 2009.\n[40] M. Keramatpour, S. T. A. Niaki, and S. H. R. Pasandideh, \"A bi-objective two-level newsvendor problem with discount policies and budget constraint,\" Comput. Ind. Eng., vol. 120, pp. 192-205, Jun. 2018.\n[41] D. Nan, S.-D. Zhou, and Z.-Q. Sun, \"Histogram-based estimation of distribution algorithm: A competent method for continuous optimization,\" J. Comput. Sci. Technol., vol. 23, no. 1, pp. 35-43, 2008.\n[42] X. Jing, Y. P. Yan, and J. Zhang, \"HPBILc: A histogram-based EDA for continuous optimization,\" Appl. Math. Comput., vol. 215, no. 3, pp. 973-982, 2009.\n[43] Y. Hasegawa and H. Iba, \"Latent variable model for estimation of distribution algorithm based on a probabilistic context-free grammar,\" IEEE Trans. Evol. Comput., vol. 13, no. 4, pp. 858-878, Aug. 2009.\n[44] X. Li, S. Mabu, and K. Hirasawa, \"A novel graph-based estimation of the distribution algorithm and its extension using reinforcement learning,\" IEEE Trans. Evol. Comput., vol. 18, no. 1, pp. 98-113, Feb. 2014.\n[45] Y. Chen, X. Y. Sun, D. W. Gong, Y. Zhang, J. Choi, and S. Klasky, \"Personalized search inspired fast interactive estimation of distribution algorithm and its application,\" IEEE Trans. Evol. Comput., vol. 21, no. 4, pp. 588-600, Aug. 2017.\n[46] J. Ceberio, E. Irurozqui, A. Mendiburu, and J. A. Lozano, \"A distancebased ranking model estimation of distribution algorithm for the flowshop scheduling problem,\" IEEE Trans. Evol. Comput., vol. 18, no. 2, pp. 286-300, Apr. 2014.\n[47] X. Liang, H. Chen, and J. A. Lozano, \"A Boltzmann-based estimation of distribution algorithm for a general resource scheduling model,\" IEEE Trans. Evol. Comput., vol. 19, no. 6, pp. 793-806, Dec. 2015.\n[48] A. Zhou, J. Sun, and Q. Zhang, \"An estimation of distribution algorithm with cheap and expensive local search methods,\" IEEE Trans. Evol. Comput., vol. 19, no. 6, pp. 807-822, Dec. 2015.\n[49] P. Yang, K. Tang, and X. Yao, \"Turning high-dimensional optimization into computationally expensive optimization,\" IEEE Trans. Evol. Comput., vol. 22, no. 1, pp. 143-156, Feb. 2018.\n[50] Z. Li and Q. Zhang, \"A simple yet efficient evolution strategy for large scale black-box optimization,\" IEEE Trans. Evol. Comput., vol. 22, no. 5, pp. 637-646, Oct. 2018.\n[51] L. Abdel-Malek, R. Montanari, and L. C. Morales, \"Exact, approximate, and generic iterative models for the multi-product newsboy problem with budget constraint,\" Int. J. Prod. Econ., vol. 91, no. 2, pp. 189-198, 2004.\n[52] H. Hongfu, H. Yong, and L. Dong, \"Coordination of pricing, inventory, and production reliability decisions in deteriorating product supply chains,\" Int. J. Prod. Res., vol. 56, no. 18, pp. 6201-6224, 2018.\n[53] Y. Lin, Y. Liu, W. N. Chen, and J. Zhang, \"A hybrid differential evolution algorithm for mixed-variable optimization problems,\" Inf. Sci., vol. 466, pp. 170-188, Oct. 2018.\n![img-6.jpeg](img-6.jpeg)\n\nFeng Wang (M'09) received the B.Sc. and Ph.D. degrees in computer science from Wuhan University, Wuhan, China, in 2003 and 2008, respectively.\n\nShe is currently an Associate Professor with the School of Computer Science, Wuhan University. Her current research interests include evolutionary computation, intelligent information retrieval, and machine learning.\n\nDr. Wang serves as a reviewer for several international journals and conferences.\n![img-7.jpeg](img-7.jpeg)\n\nVivuan Li received the B.Eng. degree in engineering from Wuhan University, Wuhan, China, in 2015, where he is currently pursuing the postgraduate degree.\n\nHis current research interests include multiobjective evolutionary computation and evolutionary learning.\n![img-8.jpeg](img-8.jpeg)\n\nAimin Zhou (S'08-M'10-SM'17) received the B.Sc. and M.Sc. degrees from Wuhan University, Wuhan, China, in 2001 and 2003, respectively, and the Ph.D. degree from the University of Essex, Colchester, U.K., in 2009, all in computer science.\n\nHe is currently a Professor with the School of Computer Science and Technology, East China Normal University, Shanghai, China. He has authored over 70 peer-reviewed papers. His current research interests include evolutionary computation and optimization, machine learning, image processing, and their applications.\n\nProf. Zhou is an Associate Editor of Swarm and Evolutionary Computation, and an Editorial Board Member of Complex and Intelligent Systems.\n![img-9.jpeg](img-9.jpeg)\n\nKe Tang (M'07-SM'13) received the B.Eng. degree from the Huazhong University of Science and Technology, Wuhan, China, in 2002, and the Ph.D. degree from Nanyang Technological University, Singapore, in 2007.\n\nFrom 2007 to 2017, he was with the School of Computer Science and Technology, University of Science and Technology of China, Hefei, China, first as an Associate Professor from 2007 to 2011 and later as a Professor from 2011 to 2017. He is currently a Professor with the Department of Computer Science and Engineering, Southern University of Science and Technology, Shenzhen, China. He has published over 60 journal papers and over 80 conference papers. He has over 6000 Google Scholar citations with an $H$-index of 36. His current research interests include evolutionary computation, machine learning, and their applications.\n\nDr. Tang was a recipient of the Royal Society Newton Advanced Fellowship in 2015 and the 2018 IEEE Computational Intelligence Society Outstanding Early Career Award. He is an Associate Editor of the IEEE Transactions on Evolutionary Computation and served as an Editorial Board Member for a few other journals.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "S. C. Chiam, K. C. Tan, and A. A. Mamun, \"Investigating technical trading strategy via an multi-objective evolutionary platform,\" Expert Syst. Appl., vol. 36, no. 7, pp. 10408-10423, 2009."
+      },
+      {
+        "ref_id": "2",
+        "text": "V. Deshpande and M. Arikan, \"The impact of airline flight schedules on flight delays,\" Manaf. Service Oper. Manag., vol. 14, no. 3, pp. 423-440, 2012."
+      },
+      {
+        "ref_id": "3",
+        "text": "M. Densing, \"Dispatch planning using newsvendor dual problems and occupation times: Application to hydropower,\" Eur. J. Oper. Res., vol. 228, no. 2, pp. 321-330, 2013."
+      },
+      {
+        "ref_id": "4",
+        "text": "F. Zaman, S. M. Elsayed, T. Ray, and R. A. Sarkerr, \"Evolutionary algorithms for finding Nash equilibria in electricity markets,\" IEEE Trans. Evol. Comput., vol. 22, no. 4, pp. 536-549, Aug. 2018."
+      },
+      {
+        "ref_id": "5",
+        "text": "M. A. Pearson, \"The incorporation of target performance measures and constrained optimisation in the newsboy problem,\" J. Oper. Res. Soc., vol. 51, no. 6, pp. 744-754, 2000."
+      },
+      {
+        "ref_id": "6",
+        "text": "W. Jammermegg and P. Kischka, \"Risk-averse and risk-taking newsvendors: A conditional expected value approach,\" Rev. Manag. Sci., vol. 1, no. 1, pp. 93-110, 2007."
+      },
+      {
+        "ref_id": "7",
+        "text": "B. Zhang, \"Multi-tier binary solution method for multi-product newsvendor problem with multiple constraints,\" Eur. J. Oper. Res., vol. 218, no. 2, pp. 426-434, 2012."
+      },
+      {
+        "ref_id": "8",
+        "text": "L. L. Abdel-Malek and N. Areeratchakul, \"A quadratic programming approach to the multi-product newsvendor problem with side constraints,\" Eur. J. Oper. Res., vol. 176, no. 3, pp. 1607-1619, 2007."
+      },
+      {
+        "ref_id": "9",
+        "text": "M. Cherikh, \"On the effect of centralisation on expected profits in a multi-location newsboy problem,\" J. Oper. Res. Soc., vol. 51, no. 6, pp. 755-761, 2000."
+      },
+      {
+        "ref_id": "10",
+        "text": "M. Ujjwal, S. Vishakha, T. S. Lakshman, and K. T. Manoj, \"Multiple criteria risk averse model for multi-product newsvendor problem using conditional value at risk constraints,\" Inf. Sci., vol. 478, pp. 595-605, Apr. 2019."
+      },
+      {
+        "ref_id": "11",
+        "text": "W. Mei, L. Du, B. Niu, J. Wang, and J. Feng, \"The effects of an undisclosed regular price and a positive leadtime in a presale mechanism,\" Eur. J. Oper. Res., vol. 250, no. 3, pp. 1013-1025, 2016."
+      },
+      {
+        "ref_id": "12",
+        "text": "E. M. Gerber and J. Hui, \"Crowdfunding: Motivations and deterrents for participation,\" ACM Trans. Comput.-Human Interact., vol. 20, no. 6, p. 34, 2013."
+      },
+      {
+        "ref_id": "13",
+        "text": "G. J. Kyparisis and C. Koulamas, \"The price-setting newsvendor problem with nonnegative linear additive demand,\" Eur. J. Oper. Res., vol. 269, no. 2, pp. 695-698, 2018."
+      },
+      {
+        "ref_id": "14",
+        "text": "L. Xin, H. Long, J. Bewli, J. Bowman, H. Feng, and Z. Qin, On the Performance of Tailored Base-Surge Policies: Theory and Application or Walmart.com. Rochester, NY, USA: Soc. Sci. Electron., 2017."
+      },
+      {
+        "ref_id": "15",
+        "text": "C. Erbas, S. Cerav-Erbas, and A. D. Pimentel, \"Multiobjective optimization and evolutionary algorithms for the application mapping problem in multiprocessor system-on-chip design,\" IEEE Trans. Evol. Comput., vol. 10, no. 3, pp. 358-374, Jun. 2006."
+      },
+      {
+        "ref_id": "16",
+        "text": "T. Tometzki and S. Engell, \"Systematic initialization techniques for hybrid evolutionary algorithms for solving two-stage stochastic mixedinteger programs,\" IEEE Trans. Evol. Comput., vol. 15, no. 2, pp. 196-214, Apr. 2011."
+      },
+      {
+        "ref_id": "17",
+        "text": "Q. N. Huynh, S. Chand, H. K. Singh, and T. Ray, \"Genetic programming with mixed integer linear programming based library search,\" IEEE Trans. Evol. Comput., vol. 22, no. 5, pp. 733-747, Oct. 2018."
+      },
+      {
+        "ref_id": "18",
+        "text": "L. L. Abdel-Malek and R. Montanari, \"On the multi-product newsboy problem with two constraints,\" Comput. Oper. Res., vol. 32, no. 8, pp. 2095-2116, 2005."
+      },
+      {
+        "ref_id": "19",
+        "text": "J. Rubio-Herrero and M. Baykal-Gürsoy, \"On the unimodality of the price-setting newsvendor problem with additive demand under risk considerations,\" Eur. J. Oper. Res., vol. 265, no. 3, pp. 962-974, 2018."
+      },
+      {
+        "ref_id": "20",
+        "text": "L. Yu, W. Fan, J. Pei, and P. M. Pardalos, \"A study on the effect of yield uncertainty in price-setting newsvendor models with additivemultiplicative demand,\" Optim. Lett., vol. 12, no. 6, pp. 1421-1441, 2017."
+      },
+      {
+        "ref_id": "21",
+        "text": "M. Xu, Y. Chen, and X. Xu, \"The effect of demand uncertainty in a price-setting newsvendor model,\" Eur. J. Oper. Res., vol. 207, no. 2, pp. 946-957, 2010."
+      },
+      {
+        "ref_id": "22",
+        "text": "S. Zhang and Y. Xia, \"Solving nonlinear optimization problems of real functions in complex variables by complex-valued iterative methods,\" IEEE Trans. Cybern., vol. 48, no. 1, pp. 277-287, Jan. 2018."
+      },
+      {
+        "ref_id": "23",
+        "text": "Y. Merzifonlaoglu and Y. Feng, \"Newsvendor problem with multiple unreliable suppliers,\" Int. J. Prod. Res., vol. 52, no. 1, pp. 221-242, 2014."
+      },
+      {
+        "ref_id": "24",
+        "text": "B. Zhang, X. Xu, and Z. Hua, \"A binary solution method for the multiproduct newsboy problem with budget constraint,\" Int. J. Prod. Econ., vol. 117, no. 1, pp. 136-141, 2009."
+      },
+      {
+        "ref_id": "25",
+        "text": "R. Li et al., \"Mixed integer evolution strategies for parameter optimization,\" Evol. Comput., vol. 21, no. 1, pp. 29-64, 2013."
+      },
+      {
+        "ref_id": "26",
+        "text": "K. L. Sadowski, P. A. N. Bosman, and D. Thierens, \"A clusteringbased model-building EA for optimization problems with binary and real-valued variables,\" in Proc. Genet. Evol. Comput. Conf. (GECCO), 2015, pp. 911-918."
+      },
+      {
+        "ref_id": "27",
+        "text": "K. L. Sadowski, P. A. N. Bosman, and D. Thierens, \"Learning and exploiting mixed variable dependencies with a model-based EA,\" in Proc. IEEE Congr. Evol. Comput. (CEC), 2016, pp. 4382-4389."
+      },
+      {
+        "ref_id": "28",
+        "text": "L. J. Li, Z. B. Huang, and F. Liu, \"A heuristic particle swarm optimization method for truss structures with discrete variables,\" Comput. Struct., vol. 87, nos. 7-8, pp. 435-443, 2009."
+      },
+      {
+        "ref_id": "29",
+        "text": "C. L. Sun, J. C. Zeng, and J. S. Pan, \"An improved particle swarm optimization with feasibility-based rules for constrained optimization problems,\" in Next-Generation Applied Intelligence. IEAAIE, vol. 5579. Heidelberg, Germany: Springer, Jun. 2009, pp. 202-211."
+      },
+      {
+        "ref_id": "30",
+        "text": "T. Liao, K. Socha, M. A. M. D. Oca, T. Stützle, and M. Dorigo, \"Ant colony optimization for mixed-variable optimization problems,\" IEEE Trans. Evol. Comput., vol. 18, no. 4, pp. 503-518, Aug. 2014."
+      },
+      {
+        "ref_id": "31",
+        "text": "L. Sahoo, A. Banerjee, A. K. Bhunia, and S. Chattopadhyay, \"An efficient GA-CPSO approach for solving mixed-integer nonlinear programming problem in reliability optimization,\" Swarm Evol. Comput., vol. 19, pp. 43-51, Dec. 2014."
+      },
+      {
+        "ref_id": "32",
+        "text": "G.-C. Luh, C.-Y. Lin, and Y.-S. Lin, \"A binary particle swarm optimization for continuum structural topology optimization,\" Appl. Soft Comput., vol. 11, no. 2, pp. 2833-2844, 2011."
+      },
+      {
+        "ref_id": "33",
+        "text": "S. He, E. Prempain, and Q. H. Wu, \"An improved particle swarm optimizer for mechanical design optimization problems,\" Eng. Optim., vol. 36, no. 5, pp. 585-605, 2004."
+      },
+      {
+        "ref_id": "34",
+        "text": "A. H. Gandomi, X.-S. Yang, and A. H. Alavi, \"Mixed variable structural optimization using Firefly algorithm,\" Comput. Struct., vol. 89, no. 23, pp. 2325-2336, 2011."
+      },
+      {
+        "ref_id": "35",
+        "text": "M. Urselmann, S. Barkmann, G. Sand, and S. Engell, \"A memetic algorithm for global optimization in chemical process synthesis problems,\" IEEE Trans. Evol. Comput., vol. 15, no. 5, pp. 659-683, Oct. 2011."
+      },
+      {
+        "ref_id": "36",
+        "text": "Y. Lin, W. Du, T. Liao, and T. Stützle, \"Three L-SHADE based algorithms on mixed-variables optimization problems,\" in Proc. IEEE Congr. Evol. Comput. (CEC), 2017, pp. 2274-2281."
+      },
+      {
+        "ref_id": "37",
+        "text": "K. P. Dahal, G. M. Burt, J. R. McDonald, and A. Moyes, \"A case study of scheduling storage tanks using a hybrid genetic algorithm,\" IEEE Trans. Evol. Comput., vol. 5, no. 3, pp. 283-294, Jun. 2001."
+      },
+      {
+        "ref_id": "38",
+        "text": "W. Shi, W. N. Chen, Y. Lin, T. Gu, S. Kwong, and J. Zhang, \"An adaptive estimation of distribution algorithm for multi-policy insurance investment planning,\" IEEE Trans. Evol. Comput., vol. 23, no. 1, pp. 1-14, Feb. 2019."
+      },
+      {
+        "ref_id": "39",
+        "text": "A. A. Taleizadeh, S. T. A. Niaki, and V. Hoseini, \"Optimizing the multiproduct, multi-constraint, bi-objective newsboy problem with discount by a hybrid method of goal programming and genetic algorithm,\" Eng. Optim., vol. 41, no. 5, pp. 437-457, 2009."
+      },
+      {
+        "ref_id": "40",
+        "text": "M. Keramatpour, S. T. A. Niaki, and S. H. R. Pasandideh, \"A bi-objective two-level newsvendor problem with discount policies and budget constraint,\" Comput. Ind. Eng., vol. 120, pp. 192-205, Jun. 2018."
+      },
+      {
+        "ref_id": "41",
+        "text": "D. Nan, S.-D. Zhou, and Z.-Q. Sun, \"Histogram-based estimation of distribution algorithm: A competent method for continuous optimization,\" J. Comput. Sci. Technol., vol. 23, no. 1, pp. 35-43, 2008."
+      },
+      {
+        "ref_id": "42",
+        "text": "X. Jing, Y. P. Yan, and J. Zhang, \"HPBILc: A histogram-based EDA for continuous optimization,\" Appl. Math. Comput., vol. 215, no. 3, pp. 973-982, 2009."
+      },
+      {
+        "ref_id": "43",
+        "text": "Y. Hasegawa and H. Iba, \"Latent variable model for estimation of distribution algorithm based on a probabilistic context-free grammar,\" IEEE Trans. Evol. Comput., vol. 13, no. 4, pp. 858-878, Aug. 2009."
+      },
+      {
+        "ref_id": "44",
+        "text": "X. Li, S. Mabu, and K. Hirasawa, \"A novel graph-based estimation of the distribution algorithm and its extension using reinforcement learning,\" IEEE Trans. Evol. Comput., vol. 18, no. 1, pp. 98-113, Feb. 2014."
+      },
+      {
+        "ref_id": "45",
+        "text": "Y. Chen, X. Y. Sun, D. W. Gong, Y. Zhang, J. Choi, and S. Klasky, \"Personalized search inspired fast interactive estimation of distribution algorithm and its application,\" IEEE Trans. Evol. Comput., vol. 21, no. 4, pp. 588-600, Aug. 2017."
+      },
+      {
+        "ref_id": "46",
+        "text": "J. Ceberio, E. Irurozqui, A. Mendiburu, and J. A. Lozano, \"A distancebased ranking model estimation of distribution algorithm for the flowshop scheduling problem,\" IEEE Trans. Evol. Comput., vol. 18, no. 2, pp. 286-300, Apr. 2014."
+      },
+      {
+        "ref_id": "47",
+        "text": "X. Liang, H. Chen, and J. A. Lozano, \"A Boltzmann-based estimation of distribution algorithm for a general resource scheduling model,\" IEEE Trans. Evol. Comput., vol. 19, no. 6, pp. 793-806, Dec. 2015."
+      },
+      {
+        "ref_id": "48",
+        "text": "A. Zhou, J. Sun, and Q. Zhang, \"An estimation of distribution algorithm with cheap and expensive local search methods,\" IEEE Trans. Evol. Comput., vol. 19, no. 6, pp. 807-822, Dec. 2015."
+      },
+      {
+        "ref_id": "49",
+        "text": "P. Yang, K. Tang, and X. Yao, \"Turning high-dimensional optimization into computationally expensive optimization,\" IEEE Trans. Evol. Comput., vol. 22, no. 1, pp. 143-156, Feb. 2018."
+      },
+      {
+        "ref_id": "50",
+        "text": "Z. Li and Q. Zhang, \"A simple yet efficient evolution strategy for large scale black-box optimization,\" IEEE Trans. Evol. Comput., vol. 22, no. 5, pp. 637-646, Oct. 2018."
+      },
+      {
+        "ref_id": "51",
+        "text": "L. Abdel-Malek, R. Montanari, and L. C. Morales, \"Exact, approximate, and generic iterative models for the multi-product newsboy problem with budget constraint,\" Int. J. Prod. Econ., vol. 91, no. 2, pp. 189-198, 2004."
+      },
+      {
+        "ref_id": "52",
+        "text": "H. Hongfu, H. Yong, and L. Dong, \"Coordination of pricing, inventory, and production reliability decisions in deteriorating product supply chains,\" Int. J. Prod. Res., vol. 56, no. 18, pp. 6201-6224, 2018."
+      },
+      {
+        "ref_id": "53",
+        "text": "Y. Lin, Y. Liu, W. N. Chen, and J. Zhang, \"A hybrid differential evolution algorithm for mixed-variable optimization problems,\" Inf. Sci., vol. 466, pp. 170-188, Oct. 2018."
+      }
+    ],
+    "reference_count": 53,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "FACTORS AND LEVELS FOR ORTHOGONAL EXPERIMENT",
+      "headers": [
+        "Factor",
+        "level 1",
+        "level 2",
+        "level 3",
+        "level 4"
+      ],
+      "rows": [
+        [
+          "M",
+          20,
+          40,
+          80,
+          100
+        ],
+        [
+          "$\\overline{x^{m}}$",
+          50,
+          100,
+          "$\\backslash$",
+          "$\\backslash$"
+        ],
+        [
+          "CF",
+          "Weak",
+          "Strong",
+          "$\\backslash$",
+          "$\\backslash$"
+        ],
+        [
+          "PS",
+          "Yes",
+          "No",
+          "$\\backslash$",
+          "$\\backslash$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "Synthetic Benchmark Suite for Mixed-Variable Newsvendor Problems. The Numbers in Parentheses Represent the Level of Each Value Corresponding to Table I",
+      "headers": [
+        "Instance",
+        "Factors",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "M",
+          "$\\overline{x^{m}}$",
+          "CF",
+          "PS"
+        ],
+        [
+          "$F_{1}$",
+          201,
+          501,
+          1,
+          1
+        ],
+        [
+          "$F_{2}$",
+          201,
+          1002,
+          2,
+          2
+        ],
+        [
+          "$F_{3}$",
+          402,
+          501,
+          1,
+          2
+        ],
+        [
+          "$F_{4}$",
+          402,
+          1002,
+          2,
+          1
+        ],
+        [
+          "$F_{5}$",
+          803,
+          501,
+          2,
+          2
+        ],
+        [
+          "$F_{6}$",
+          803,
+          1002,
+          1,
+          1
+        ],
+        [
+          "$F_{7}$",
+          1004,
+          501,
+          2,
+          1
+        ],
+        [
+          "$F_{8}$",
+          1004,
+          1002,
+          1,
+          2
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "III",
+      "table_title": "Comparison Results Between the Mixed-Variable Newsvendor Model and Classical Model on the Benchmark Suite. The Best Results Are Shown in Bold Type. \" + ,\" \" - \" or \" $\\infty$ \" Indicates the Performance of $\\mathrm{EDA}_{m v n}$ on the Classical Model Is Better Than, Worse Than or Similar to the Mixed-Variable Newsvendor Model at 0.95 Significance LeveL by a Wilcoxon Rank Sum Test",
+      "headers": [
+        "Instance",
+        "",
+        "Mixed-variable <br> Model",
+        "Classical <br> Model",
+        "Improvement Ratio"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          "MEAN",
+          1.57201,
+          "$1.347 \\mathrm{E}+01^{-}$",
+          "$16.67 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          1.053,
+          "$3.892 \\mathrm{E}-14$",
+          ""
+        ],
+        [
+          "$F_{2}$",
+          "MEAN",
+          5.70902,
+          "$4.883 \\mathrm{E}+02^{-}$",
+          "$16.93 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          7.159,
+          "$1.245 \\mathrm{E}-12$",
+          ""
+        ],
+        [
+          "$F_{3}$",
+          "MEAN",
+          1.90603,
+          "$1.632 \\mathrm{E}+03^{-}$",
+          "$16.81 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          2.72301,
+          "$0.000 \\mathrm{E}+00$",
+          ""
+        ],
+        [
+          "$F_{4}$",
+          "MEAN",
+          1.26002,
+          "$1.070 \\mathrm{E}+02^{-}$",
+          "$17.70 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          4.519,
+          "$7.784 \\mathrm{E}-14$",
+          ""
+        ],
+        [
+          "$F_{5}$",
+          "MEAN",
+          3.58803,
+          3.64303,
+          "$-1.50 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          5.96201,
+          1.279,
+          ""
+        ],
+        [
+          "$F_{6}$",
+          "MEAN",
+          2.93102,
+          "$1.985 \\mathrm{E}+02^{-}$",
+          "$47.67 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          2.20901,
+          "$6.227 \\mathrm{E}-13$",
+          ""
+        ],
+        [
+          "$F_{7}$",
+          "MEAN",
+          2.16602,
+          "$1.994 \\mathrm{E}+02^{-}$",
+          "$8.63 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          3.538,
+          "$0.000 \\mathrm{E}+00$",
+          ""
+        ],
+        [
+          "$F_{8}$",
+          "MEAN",
+          2.15803,
+          "$1.886 \\mathrm{E}+03^{-}$",
+          "$14.39 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          5.82801,
+          "$4.982 \\mathrm{E}-12$",
+          ""
+        ],
+        [
+          "RMdata",
+          "MEAN",
+          3.07605,
+          "$2.575 \\mathrm{E}+05^{-}$",
+          "$19.46 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          2.18403,
+          "$7.970 \\mathrm{E}-10$",
+          ""
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 5
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Comparison Results for $\\mathrm{EDA}_{m v n}$, GA-PSO, $\\mathrm{ACO}_{m v}$, $\\mathrm{DE}_{m v}$, AEDA, and Lingo on the Benchmark Suite. The Best Results Are Shown in Bold TyPe. \" + ,\" \" - ,\" or \"n\" Indicates the Performance Is Better Than, Worse Than or Similar to the Performance of $\\mathrm{EDA}_{m v n}$ at 0.95 Significance Level by a Wilcoxon Rank Sum Test",
+      "headers": [
+        "Instance",
+        "",
+        "$E D A_{m v n}$",
+        "GA-PSO",
+        "$A C O_{m v}$",
+        "$D E_{m v}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          "MEAN",
+          1.57201,
+          1.55601,
+          1.55101,
+          1.59801,
+          1.54801,
+          1.53901
+        ],
+        [
+          "",
+          "SD",
+          1.053,
+          1.401,
+          2.352,
+          "1.550E-01",
+          "8.548E-01",
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          0.555,
+          0.284,
+          0.205,
+          1.0,
+          0.156,
+          0.0
+        ],
+        [
+          "$F_{2}$",
+          "MEAN",
+          5.70902,
+          5.68502,
+          "$5.437 \\mathrm{E}+02^{-}$",
+          5.69302,
+          "$5.454 \\mathrm{E}+02^{-}$",
+          5.38502
+        ],
+        [
+          "",
+          "SD",
+          7.159,
+          2.15901,
+          1.15602,
+          1.31001,
+          1.81001,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.924,
+          0.158,
+          0.952,
+          0.213,
+          0.0
+        ],
+        [
+          "$F_{3}$",
+          "MEAN",
+          1.90603,
+          1.77503,
+          "$1.715 \\mathrm{E}+03^{-}$",
+          1.83803,
+          "$1.776 \\mathrm{E}+03^{-}$",
+          1.65403
+        ],
+        [
+          "",
+          "SD",
+          2.72301,
+          2.06202,
+          4.76602,
+          6.65601,
+          6.09201,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.479,
+          0.243,
+          0.729,
+          0.482,
+          0.0
+        ],
+        [
+          "$F_{4}$",
+          "MEAN",
+          1.26002,
+          1.27102,
+          1.19702,
+          1.36002,
+          1.26202,
+          1.21102
+        ],
+        [
+          "",
+          "SD",
+          4.519,
+          8.103,
+          1.46802,
+          7.69,
+          6.229,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          0.386,
+          0.452,
+          0.0,
+          1.0,
+          0.398,
+          0.09
+        ],
+        [
+          "$F_{5}$",
+          "MEAN",
+          3.58803,
+          2.82303,
+          2.25203,
+          "$3.175 \\mathrm{E}+03^{-}$",
+          2.86103,
+          "$3.132 \\mathrm{E}+03^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          5.96201,
+          1.11103,
+          2.66703,
+          3.24802,
+          2.45202,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.427,
+          0.0,
+          0.691,
+          0.456,
+          0.659
+        ],
+        [
+          "$F_{6}$",
+          "MEAN",
+          2.93102,
+          2.28902,
+          "$1.420 \\mathrm{E}+02^{-}$",
+          2.78302,
+          2.88002,
+          "$1.902 \\mathrm{E}+02^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          2.20901,
+          9.41801,
+          5.26802,
+          3.18801,
+          1.34501,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.575,
+          0.0,
+          0.902,
+          0.967,
+          0.319
+        ],
+        [
+          "$F_{7}$",
+          "MEAN",
+          2.16602,
+          1.88102,
+          "$1.014 \\mathrm{E}+02^{-}$",
+          2.12702,
+          2.01502,
+          "$1.675 \\mathrm{E}+02^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          3.538,
+          8.05701,
+          4.33702,
+          8.882,
+          7.238,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.753,
+          0.0,
+          0.967,
+          0.869,
+          0.574
+        ],
+        [
+          "$F_{8}$",
+          "MEAN",
+          2.15803,
+          1.65803,
+          "$9.364 \\mathrm{E}+02^{-}$",
+          1.96303,
+          2.06703,
+          "$1.836 \\mathrm{E}+03^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          5.82801,
+          4.62002,
+          1.77303,
+          1.00302,
+          6.01101,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.591,
+          0.0,
+          0.841,
+          0.926,
+          0.737
+        ],
+        [
+          "R.M data",
+          "MEAN",
+          3.07605,
+          2.98705,
+          2.30305,
+          2.98805,
+          2.92605,
+          "$2.869 \\mathrm{E}+05^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          2.18403,
+          1.32604,
+          1.69705,
+          6.89803,
+          8.09503,
+          ""
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 8
+    },
+    {
+      "table_number": "V",
+      "table_title": "Comparison Results on the Synthetic Benchmark Suite With Different Dimensions of the Search Space. The Results Shown by the Normalized Values. Each Row Shows the Results of Different Algorithms Under a Certain Factor Level. The Best Results Are Shown in Bold Type",
+      "headers": [
+        "",
+        "$M$",
+        "$E D A_{m v n}$",
+        "GA-PSO",
+        "$A C O_{m v}$",
+        "$D E_{m v}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$k_{1}^{1}$",
+          20,
+          0.778,
+          0.604,
+          0.181,
+          0.976,
+          0.185,
+          0.0
+        ],
+        [
+          "$k_{2}^{2}$",
+          40,
+          0.693,
+          0.465,
+          0.121,
+          0.864,
+          0.44,
+          0.045
+        ],
+        [
+          "$k_{3}^{3}$",
+          80,
+          1.0,
+          0.501,
+          0.0,
+          0.797,
+          0.711,
+          0.489
+        ],
+        [
+          "$k_{4}^{4}$",
+          100,
+          1.0,
+          0.672,
+          0.0,
+          0.904,
+          0.897,
+          0.656
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "VI",
+      "table_title": "COMPARISON RESULTS ON THE SYnTHETIC BENCHMARK SUIte WITH DIPFERENT NUMber OF AVAILABLE Values of DISCRETE Variables. The Results Shown by the Normalized Values. Each Row Shows the Results of DIPFERENT Algorithms Under a Certain Factor Level. The Best Results Are Shown in Bold Type",
+      "headers": [
+        "",
+        "Range",
+        "$E D A_{m v n}$",
+        "GA-PSO",
+        "$A C O_{m v}$",
+        "$D E_{m v}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$k_{1}^{0}$",
+          "$[0,50]$",
+          0.889,
+          0.486,
+          0.112,
+          0.847,
+          0.491,
+          0.308
+        ],
+        [
+          "$k_{2}^{0}$",
+          "$[0,100]$",
+          0.846,
+          0.636,
+          0.04,
+          0.924,
+          0.626,
+          0.286
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    },
+    {
+      "table_number": "VII",
+      "table_title": "Comparison Results on the Synthetic Benchmark Suite With Different Degree of CFs. The Results Shown by the Normalized Values. Each Row Shows the Results of Different Algorithms Under a Certain Factor Level. The Best Results Are Shown in Bold Type",
+      "headers": [
+        "",
+        "$C F$",
+        "$E D A_{\\text {mom }}$",
+        "GA-PSO",
+        "$A C O_{\\text {mix }}$",
+        "$D E_{\\text {mix }}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$k_{1}^{\\mathrm{a}}$",
+          "Weak",
+          "$\\mathbf{0 . 8 8 9}$",
+          0.482,
+          0.112,
+          0.868,
+          0.633,
+          0.264
+        ],
+        [
+          "$k_{2}^{\\mathrm{a}}$",
+          "Strong",
+          0.846,
+          0.639,
+          0.04,
+          "$\\mathbf{0 . 9 0 2}$",
+          0.484,
+          0.331
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "Comparison Results on the Synthetic Benchmark Suite With Different PS. The Results Shown by the Normalized Values. Each Row Shows the Results of Different Algorithms Under a Certain Factor Level. The Best Results Are Shown in Bold Type",
+      "headers": [
+        "",
+        "$P S$",
+        "$E D A_{\\text {mom }}$",
+        "GA-PSO",
+        "$A C O_{\\text {mix }}$",
+        "$D E_{\\text {mix }}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$k_{1}^{\\mathrm{a}}$",
+          "Yes",
+          0.735,
+          0.516,
+          0.051,
+          "$\\mathbf{0 . 9 6 7}$",
+          0.597,
+          0.246
+        ],
+        [
+          "$k_{2}^{\\mathrm{a}}$",
+          "No",
+          "$\\mathbf{1 . 0 0 0}$",
+          0.605,
+          0.1,
+          0.803,
+          0.519,
+          0.349
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    }
+  ]
+}

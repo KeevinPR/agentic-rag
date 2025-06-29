@@ -1,0 +1,606 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Online Learning in Estimation of Distribution Algorithms for Dynamic Environments.md",
+    "filename": "Online Learning in Estimation of Distribution Algorithms for Dynamic Environments.md",
+    "title": "Online Learning in Estimation of Distribution Algorithms for Dynamic Environments",
+    "year": "2011"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] Y. Jin and J. Branke, \"Evolutionary optimization in uncertain environments-a survey,\" Evolutionary Computation, IEEE Transactions on, vol. 9, no. 3, pp. 303-317, 2005.\n[2] R. Tinós and S. Yang, \"A self-organizing random immigrants genetic algorithm for dynamic optimization problems,\" Genetic Programming and Evolvable Machines, vol. 8, no. 3, pp. 255-286, 2007.\n[3] S. Yang and X. Yao, \"Population-based incremental learning with associative memory for dynamic environments,\" Evolutionary Computation, IEEE Transactions on, vol. 12, no. 5, pp. 542 -561, 2008.\n[4] R. Mendes, J. Kennedy, and J. Neves, \"The fully informed particle swarm: simpler, maybe better,\" Evolutionary Computation, IEEE Transactions on, vol. 8, no. 3, pp. 204-210, June 2004.\n[5] X. Li, J. Branke, and T. Blackwell, \"Particle swarm with speciation and adaptation in dynamic environments,\" in Proceedings of the 8th Genetic and Evolutionary Computation Conference, ser. GECCO '06. New York, USA: ACM, 2006, pp. 51-58.\n[6] F. de França, F. von Zuben, and L. de Castro, \"An artificial immune network for multimodal function optimization on dynamic environments,\" in Proceedings of the 2005 conference on Genetic and evolutionary computation. ACM, 2005, p. 296.\n[7] F. de França and F. Von Zuben, \"A dynamic artificial immune algorithm applied to challenging benchmarking problems,\" in Proceedings of the Eleventh conference on Congress on Evolutionary Computation, ser. CEC'09. Piscataway, NJ, USA: IEEE Press, 2009, pp. 423-430.\n[8] S. Yang and X. Yao, \"Experimental study on population-based incremental learning algorithms for dynamic optimization problems,\" Soft Comp., vol. 9, no. 0, pp. 815-834, 2005.\n\n[9] X. Liu, Y. Wu, and J. Ye, \"An Improved Estimation of Distribution Algorithm in Dynamic Environments,\" in Fourth International Conference on Natural Computation. IEEE Computer Society, 2008, pp. 269-272.\n[10] A. Gonçalves and F. Von Zuben, \"Hybrid evolutionary algorithm guided by a fast adaptive gaussian mixture model applied to dynamic optimization problems,\" in III Workshop on Computational Intelligence - Joint Conference, 2010, pp. 553-558.\n[11] P. Larrañaga and J. Lozano, Estimation of distribution algorithms: A new tool for evolutionary computation. Springer Netherlands, 2002.\n[12] P. Larrañaga, \"A Review of Estimation of Distribution Algorithms,\" in Estimation of Distribution Algorithms: A new tool for Evolutionary Computation, P. Larrañaga, J.A. Lozano, Ed. Kluwer Academic Publishers, 2001.\n[13] C. Bishop, Pattern Recognition and Machine Learning (Information Science and Statistics), 1st ed. Springer, October 2007.\n[14] R. Duda, P. Hart, and D. Stork, Pattern classification, 2nd ed. Wiley, November 2001.\n[15] A. Dempster, N. Laird, and D. Rubin, \"Maximum Likelihood from Incomplete Data via the EM Algorithm,\" Journal of the Royal Statistical Society, Series B (Methodological), vol. 39, no. 1, pp. 1-38, 1977.\n[16] S. Nowlan, \"Soft competitive adaptation: neural network learning algorithms based on fitting statistical mixtures,\" Ph.D. dissertation, Carnegie Mellon University, Pittsburgh, PA, USA, 1991.\n[17] R. Neal and G. Hinton, \"A view of the EM algorithm that justifies incremental, sparse and other variants,\" in Learning in Graphical Models. Kluwer Academic Publishers, 1998, pp. 355-368.\n[18] J. Branke, \"Memory enhanced evolutionary algorithms for changing optimization problems,\" in Congress on Evolutionary Computation CEC99, vol. 3, 1999, pp. 1875-1882.\n[19] C. Li and S. Yang, \"A generalized approach to construct benchmark problems for dynamic optimization,\" in Proc. of the 7th Int. Conf. on Simulated Evolution and Learning, 2008.\n[20] C. Li, S. Yang, T. Nguyen, E. Yu, X. Yao, Y. Jin, H. Beyer, and P. Suganthan, \"Benchmark Generator for CEC'2009 Competition on Dynamic Optimization,\" University of Leicester, Tech. Rep., 2008.\n[21] B. Yuan, M. Orlowska, and S. Sadiq, \"Extending a class of continuous estimation of distribution algorithms to dynamic problems,\" Optimization Letters, vol. 2, no. 3, pp. 433-443, 2008.\n[22] H. Cobb, \"An investigation into the use of hypermutation as an adaptive operator in genetic algorithms having continuous, time-dependent nonstationary environments,\" Naval Research Laboratory, Tech. Rep., 1990.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Y. Jin and J. Branke, \"Evolutionary optimization in uncertain environments-a survey,\" Evolutionary Computation, IEEE Transactions on, vol. 9, no. 3, pp. 303-317, 2005."
+      },
+      {
+        "ref_id": "2",
+        "text": "R. Tinós and S. Yang, \"A self-organizing random immigrants genetic algorithm for dynamic optimization problems,\" Genetic Programming and Evolvable Machines, vol. 8, no. 3, pp. 255-286, 2007."
+      },
+      {
+        "ref_id": "3",
+        "text": "S. Yang and X. Yao, \"Population-based incremental learning with associative memory for dynamic environments,\" Evolutionary Computation, IEEE Transactions on, vol. 12, no. 5, pp. 542 -561, 2008."
+      },
+      {
+        "ref_id": "4",
+        "text": "R. Mendes, J. Kennedy, and J. Neves, \"The fully informed particle swarm: simpler, maybe better,\" Evolutionary Computation, IEEE Transactions on, vol. 8, no. 3, pp. 204-210, June 2004."
+      },
+      {
+        "ref_id": "5",
+        "text": "X. Li, J. Branke, and T. Blackwell, \"Particle swarm with speciation and adaptation in dynamic environments,\" in Proceedings of the 8th Genetic and Evolutionary Computation Conference, ser. GECCO '06. New York, USA: ACM, 2006, pp. 51-58."
+      },
+      {
+        "ref_id": "6",
+        "text": "F. de França, F. von Zuben, and L. de Castro, \"An artificial immune network for multimodal function optimization on dynamic environments,\" in Proceedings of the 2005 conference on Genetic and evolutionary computation. ACM, 2005, p. 296."
+      },
+      {
+        "ref_id": "7",
+        "text": "F. de França and F. Von Zuben, \"A dynamic artificial immune algorithm applied to challenging benchmarking problems,\" in Proceedings of the Eleventh conference on Congress on Evolutionary Computation, ser. CEC'09. Piscataway, NJ, USA: IEEE Press, 2009, pp. 423-430."
+      },
+      {
+        "ref_id": "8",
+        "text": "S. Yang and X. Yao, \"Experimental study on population-based incremental learning algorithms for dynamic optimization problems,\" Soft Comp., vol. 9, no. 0, pp. 815-834, 2005."
+      },
+      {
+        "ref_id": "9",
+        "text": "X. Liu, Y. Wu, and J. Ye, \"An Improved Estimation of Distribution Algorithm in Dynamic Environments,\" in Fourth International Conference on Natural Computation. IEEE Computer Society, 2008, pp. 269-272."
+      },
+      {
+        "ref_id": "10",
+        "text": "A. Gonçalves and F. Von Zuben, \"Hybrid evolutionary algorithm guided by a fast adaptive gaussian mixture model applied to dynamic optimization problems,\" in III Workshop on Computational Intelligence - Joint Conference, 2010, pp. 553-558."
+      },
+      {
+        "ref_id": "11",
+        "text": "P. Larrañaga and J. Lozano, Estimation of distribution algorithms: A new tool for evolutionary computation. Springer Netherlands, 2002."
+      },
+      {
+        "ref_id": "12",
+        "text": "P. Larrañaga, \"A Review of Estimation of Distribution Algorithms,\" in Estimation of Distribution Algorithms: A new tool for Evolutionary Computation, P. Larrañaga, J.A. Lozano, Ed. Kluwer Academic Publishers, 2001."
+      },
+      {
+        "ref_id": "13",
+        "text": "C. Bishop, Pattern Recognition and Machine Learning (Information Science and Statistics), 1st ed. Springer, October 2007."
+      },
+      {
+        "ref_id": "14",
+        "text": "R. Duda, P. Hart, and D. Stork, Pattern classification, 2nd ed. Wiley, November 2001."
+      },
+      {
+        "ref_id": "15",
+        "text": "A. Dempster, N. Laird, and D. Rubin, \"Maximum Likelihood from Incomplete Data via the EM Algorithm,\" Journal of the Royal Statistical Society, Series B (Methodological), vol. 39, no. 1, pp. 1-38, 1977."
+      },
+      {
+        "ref_id": "16",
+        "text": "S. Nowlan, \"Soft competitive adaptation: neural network learning algorithms based on fitting statistical mixtures,\" Ph.D. dissertation, Carnegie Mellon University, Pittsburgh, PA, USA, 1991."
+      },
+      {
+        "ref_id": "17",
+        "text": "R. Neal and G. Hinton, \"A view of the EM algorithm that justifies incremental, sparse and other variants,\" in Learning in Graphical Models. Kluwer Academic Publishers, 1998, pp. 355-368."
+      },
+      {
+        "ref_id": "18",
+        "text": "J. Branke, \"Memory enhanced evolutionary algorithms for changing optimization problems,\" in Congress on Evolutionary Computation CEC99, vol. 3, 1999, pp. 1875-1882."
+      },
+      {
+        "ref_id": "19",
+        "text": "C. Li and S. Yang, \"A generalized approach to construct benchmark problems for dynamic optimization,\" in Proc. of the 7th Int. Conf. on Simulated Evolution and Learning, 2008."
+      },
+      {
+        "ref_id": "20",
+        "text": "C. Li, S. Yang, T. Nguyen, E. Yu, X. Yao, Y. Jin, H. Beyer, and P. Suganthan, \"Benchmark Generator for CEC'2009 Competition on Dynamic Optimization,\" University of Leicester, Tech. Rep., 2008."
+      },
+      {
+        "ref_id": "21",
+        "text": "B. Yuan, M. Orlowska, and S. Sadiq, \"Extending a class of continuous estimation of distribution algorithms to dynamic problems,\" Optimization Letters, vol. 2, no. 3, pp. 433-443, 2008."
+      },
+      {
+        "ref_id": "22",
+        "text": "H. Cobb, \"An investigation into the use of hypermutation as an adaptive operator in genetic algorithms having continuous, time-dependent nonstationary environments,\" Naval Research Laboratory, Tech. Rep., 1990."
+      }
+    ],
+    "reference_count": 22,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "SETTINGS OF DYNAMIC ENVIRONMENTS.",
+      "headers": [
+        "",
+        "Period between changes <br> (\\# of FEs)",
+        "Multimodality <br> (\\# of peaks)"
+      ],
+      "rows": [
+        [
+          1,
+          5000,
+          10
+        ],
+        [
+          2,
+          5000,
+          50
+        ],
+        [
+          3,
+          20000,
+          10
+        ],
+        [
+          4,
+          20000,
+          50
+        ],
+        [
+          5,
+          50000,
+          10
+        ],
+        [
+          6,
+          50000,
+          50
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "Parameter SETTINGS FOR THE ALGORITHMS.",
+      "headers": [
+        "Algorithm",
+        "Free parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "IUMDA",
+          "$\\mu$",
+          0.2
+        ],
+        [
+          "",
+          "$P_{\\text {mut. }}$",
+          0.01
+        ],
+        [
+          "",
+          "$\\sigma_{\\text {mut. }}$",
+          0.05
+        ],
+        [
+          "Tri-EDA $_{G}$",
+          "$\\rho$",
+          0.3
+        ],
+        [
+          "",
+          "$\\lambda$",
+          0.8
+        ],
+        [
+          "HGA",
+          "$P_{\\text {cross. }}$",
+          0.8
+        ],
+        [
+          "",
+          "$P_{\\text {mut. }}$",
+          0.01
+        ],
+        [
+          "",
+          "$P_{\\text {Hyp.mut. }}$",
+          0.8
+        ],
+        [
+          "",
+          "$\\sigma_{\\text {mut. }}$",
+          0.05
+        ],
+        [
+          "EDA $_{\\text {OGM }}$",
+          "$\\eta$",
+          0.6
+        ],
+        [
+          "",
+          "$\\gamma$",
+          0.5
+        ],
+        [
+          "",
+          "$\\epsilon$",
+          0.01
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "AVERAGE OFFLINE ERROR AND STANDARD ERROR FOR SCENARIO 1.",
+      "headers": [
+        "",
+        "IUMDA",
+        "Tri-EDA $_{G}$",
+        "HGA",
+        "EDA $_{\\text {OGM }}$"
+      ],
+      "rows": [
+        [
+          "$T_{1}$",
+          "$77.43(\\pm 0.75)$",
+          "$47.64(\\pm 1.26)$",
+          "$79.73(\\pm 0.88)$",
+          "$6.89(\\pm 0.94)$"
+        ],
+        [
+          "$T_{2}$",
+          "$76.78(\\pm 1.13)$",
+          "$48.75(\\pm 1.23)$",
+          "$82.02(\\pm 1.01)$",
+          "$16.66(\\pm 2.43)$"
+        ],
+        [
+          "$T_{3}$",
+          "$62.09(\\pm 1.30)$",
+          "$35.91(\\pm 1.54)$",
+          "$66.23(\\pm 1.36)$",
+          "$18.24(\\pm 1.89)$"
+        ],
+        [
+          "$T_{4}$",
+          "$76.21(\\pm 0.23)$",
+          "$53.06(\\pm 0.48)$",
+          "$78.89(\\pm 0.08)$",
+          "$9.93(\\pm 1.33)$"
+        ],
+        [
+          "$T_{5}$",
+          "$77.08(\\pm 0.50)$",
+          "$74.51(\\pm 0.32)$",
+          "$77.90(\\pm 0.91)$",
+          "$37.53(\\pm 1.05)$"
+        ],
+        [
+          "$T_{6}$",
+          "$73.11(\\pm 0.83)$",
+          "$68.34(\\pm 0.74)$",
+          "$76.18(\\pm 0.58)$",
+          "$38.82(\\pm 1.36)$"
+        ],
+        [
+          "$T_{7}$",
+          "$60.61(\\pm 1.42)$",
+          "$35.92(\\pm 2.48)$",
+          "$64.38(\\pm 1.74)$",
+          "$24.89(\\pm 2.11)$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "IV",
+      "table_title": "AVERAGE OFFLINE ERROR AND STANDARD ERROR FOR SCENARIO 2.",
+      "headers": [
+        "",
+        "IUMDA",
+        "Tri-EDA $_{G}$",
+        "HGA",
+        "EDA $_{\\text {OGM }}$"
+      ],
+      "rows": [
+        [
+          "$T_{1}$",
+          "$80.18(\\pm 1.37)$",
+          "$48.34(\\pm 0.49)$",
+          "$83.77(\\pm 1.32)$",
+          "$17.60(\\pm 1.57)$"
+        ],
+        [
+          "$T_{2}$",
+          "$73.00(\\pm 0.94)$",
+          "$37.79(\\pm 1.34)$",
+          "$77.87(\\pm 0.92)$",
+          "$14.43(\\pm 1.48)$"
+        ],
+        [
+          "$T_{3}$",
+          "$62.98(\\pm 1.01)$",
+          "$35.86(\\pm 1.27)$",
+          "$68.95(\\pm 0.89)$",
+          "$20.36(\\pm 2.12)$"
+        ],
+        [
+          "$T_{4}$",
+          "$76.36(\\pm 0.19)$",
+          "$47.44(\\pm 0.57)$",
+          "$78.37(\\pm 0 / 08)$",
+          "$18.06(\\pm 1.70)$"
+        ],
+        [
+          "$T_{5}$",
+          "$78.87(\\pm 0.62)$",
+          "$73.47(\\pm 0.49)$",
+          "$80.25(\\pm 0.83)$",
+          "$44.50(\\pm 1.14)$"
+        ],
+        [
+          "$T_{6}$",
+          "$74.93(\\pm 0.96)$",
+          "$64.61(\\pm 0.46)$",
+          "$79.02(\\pm 0.92)$",
+          "$49.74(\\pm 1.63)$"
+        ],
+        [
+          "$T_{7}$",
+          "$65.46(\\pm 1.02)$",
+          "$36.80(\\pm 1.57)$",
+          "$69.47(\\pm 1.12)$",
+          "$32.77(\\pm 1.66)$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "V",
+      "table_title": "AVERAGE OFFLINE ERROR AND STANDARD ERROR FOR SCENARIO 3.",
+      "headers": [
+        "",
+        "IUMDA",
+        "Tri-EDA $_{G}$",
+        "HGA",
+        "EDA $_{\\text {OGM }}$"
+      ],
+      "rows": [
+        [
+          "$T_{1}$",
+          "$40.30(\\pm 2.84)$",
+          "$11.66(\\pm 0.64)$",
+          "$52.94(\\pm 5.13)$",
+          "$2.02(\\pm 0.19)$"
+        ],
+        [
+          "$T_{2}$",
+          "$37.40(\\pm 2.27)$",
+          "$14.75(\\pm 0.64)$",
+          "$51.19(\\pm 3.07)$",
+          "$7.91(\\pm 0.92)$"
+        ],
+        [
+          "$T_{3}$",
+          "$36.47(\\pm 2.26)$",
+          "$14.75(\\pm 1.81)$",
+          "$45.22(\\pm 1.70)$",
+          "$11.40(\\pm 1.82)$"
+        ],
+        [
+          "$T_{4}$",
+          "$41.94(\\pm 1.12)$",
+          "$13.57(\\pm 0.17)$",
+          "$60.01(\\pm 0.51)$",
+          "$5.67(\\pm 0.22)$"
+        ],
+        [
+          "$T_{5}$",
+          "$47.64(\\pm 0.55)$",
+          "$47.13(\\pm 0.93)$",
+          "$43.38(\\pm 0.01)$",
+          "$14.92(\\pm 0.81)$"
+        ],
+        [
+          "$T_{6}$",
+          "$47.77(\\pm 0.61)$",
+          "$38.98(\\pm 0.81)$",
+          "$42.66(\\pm 0.36)$",
+          "$25.09(\\pm 0.98)$"
+        ],
+        [
+          "$T_{7}$",
+          "$37.54(\\pm 2.24)$",
+          "$17.64(\\pm 1.67)$",
+          "$46.71(\\pm 2.73)$",
+          "$11.87(\\pm 1.46)$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "VI",
+      "table_title": "AVERAGE OFFLINE ERROR AND STANDARD ERROR FOR SCENARIO 4.",
+      "headers": [
+        "",
+        "IUMDA",
+        "Tri-EDA $_{G}$",
+        "HGA",
+        "EDA $_{\\text {OGM }}$"
+      ],
+      "rows": [
+        [
+          "$T_{1}$",
+          "$37.57(\\pm 1.39)$",
+          "$12.55(\\pm 0.70)$",
+          "$51.04(\\pm 4.08)$",
+          "$3.57(\\pm 0.36)$"
+        ],
+        [
+          "$T_{2}$",
+          "$34.68(\\pm 1.35)$",
+          "$10.05(\\pm 0.49)$",
+          "$47.74(\\pm 2.32)$",
+          "$5.54(\\pm 0.62)$"
+        ],
+        [
+          "$T_{3}$",
+          "$34.85(\\pm 1.23)$",
+          "$17.07(\\pm 1.45)$",
+          "$43.10(\\pm 1.19)$",
+          "$13.95(\\pm 1.28)$"
+        ],
+        [
+          "$T_{4}$",
+          "$33.23(\\pm 0.93)$",
+          "$11.12(\\pm 0.23)$",
+          "$53.10(\\pm 0.60)$",
+          "$4.84(\\pm 0.14)$"
+        ],
+        [
+          "$T_{5}$",
+          "$50.21(\\pm 0.64)$",
+          "$40.36(\\pm 1.46)$",
+          "$45.63(\\pm 0.27)$",
+          "$13.40(\\pm 0.77)$"
+        ],
+        [
+          "$T_{6}$",
+          "$46.55(\\pm 1.57)$",
+          "$40.53(\\pm 1.11)$",
+          "$44.54(\\pm 1.36)$",
+          "$35.10(\\pm 1.32)$"
+        ],
+        [
+          "$T_{7}$",
+          "$35.73(\\pm 1.35)$",
+          "$20.00(\\pm 1.45)$",
+          "$43.80(\\pm 1.26)$",
+          "$15.10(\\pm 1.26)$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "VII",
+      "table_title": "AVERAGE OFFLINE ERROR AND STANDARD ERROR FOR SCENARIO 5.",
+      "headers": [
+        "",
+        "IUMDA",
+        "Tri-EDA $_{G}$",
+        "HGA",
+        "EDA $_{\\text {OGM }}$"
+      ],
+      "rows": [
+        [
+          "$T_{1}$",
+          "$10.47(\\pm 0.85)$",
+          "$6.48(\\pm 0.57)$",
+          "$12.51(\\pm 1.15)$",
+          "$1.93(\\pm 0.24)$"
+        ],
+        [
+          "$T_{2}$",
+          "$14.29(\\pm 0.97)$",
+          "$11.64(\\pm 0.86)$",
+          "$16.86(\\pm 1.22)$",
+          "$8.89(\\pm 0.85)$"
+        ],
+        [
+          "$T_{3}$",
+          "$18.16(\\pm 2.09)$",
+          "$15.65(\\pm 2.00)$",
+          "$19.68(\\pm 1.94)$",
+          "$14.00(\\pm 1.95)$"
+        ],
+        [
+          "$T_{4}$",
+          "$8.13(\\pm 0.11)$",
+          "$7.01(\\pm 0.16)$",
+          "$8.86(\\pm 0.08)$",
+          "$5.07(\\pm 0.07)$"
+        ],
+        [
+          "$T_{5}$",
+          "$43.32(\\pm 0.01)$",
+          "$40.36(\\pm 1.10)$",
+          "$43.25(\\pm 0.01)$",
+          "$10.00(\\pm 0.41)$"
+        ],
+        [
+          "$T_{6}$",
+          "$41.91(\\pm 0.65)$",
+          "$36.25(\\pm 0.93)$",
+          "$41.44(\\pm 0.56)$",
+          "$21.85(\\pm 0.90)$"
+        ],
+        [
+          "$T_{7}$",
+          "$16.63(\\pm 2.37)$",
+          "$15.49(\\pm 2.31)$",
+          "$21.76(\\pm 2.79)$",
+          "$12.77(\\pm 2.28)$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "AVERAGE OFFLINE ERROR AND STANDARD ERROR FOR SCENARIO 6.",
+      "headers": [
+        "",
+        "IUMDA",
+        "Tri-EDA $_{G}$",
+        "HGA",
+        "EDA $_{\\text {OGM }}$"
+      ],
+      "rows": [
+        [
+          "$T_{1}$",
+          "$14.17(\\pm 2.30)$",
+          "$8.62(\\pm 1.16)$",
+          "$13.45(\\pm 2.04)$",
+          "$2.61(\\pm 0.43)$"
+        ],
+        [
+          "$T_{2}$",
+          "$12.96(\\pm 1.53)$",
+          "$8.93(\\pm 1.00)$",
+          "$13.50(\\pm 1.44)$",
+          "$5.93(\\pm 0.60)$"
+        ],
+        [
+          "$T_{3}$",
+          "$16.19(\\pm 1.18)$",
+          "$14.10(\\pm 1.81)$",
+          "$16.57(\\pm 1.44)$",
+          "$12.33(\\pm 1.65)$"
+        ],
+        [
+          "$T_{4}$",
+          "$7.34(\\pm 0.30)$",
+          "$6.11(\\pm 0.12)$",
+          "$6.55(\\pm 0.12)$",
+          "$3.37(\\pm 0.1)$"
+        ],
+        [
+          "$T_{5}$",
+          "$45.03(\\pm 0.01)$",
+          "$32.54(\\pm 0.86)$",
+          "$45.04(\\pm 0.05)$",
+          "$9.39(\\pm 0.51)$"
+        ],
+        [
+          "$T_{6}$",
+          "$39.72(\\pm 1.63)$",
+          "$35.79(\\pm 0.83)$",
+          "$39.41(\\pm 1.81)$",
+          "$32.85(\\pm 0.87)$"
+        ],
+        [
+          "$T_{7}$",
+          "$17.42(\\pm 0.81)$",
+          "$15.58(\\pm 0.60)$",
+          "$18.94(\\pm 0.84)$",
+          "$12.97(\\pm 0.53)$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    }
+  ]
+}

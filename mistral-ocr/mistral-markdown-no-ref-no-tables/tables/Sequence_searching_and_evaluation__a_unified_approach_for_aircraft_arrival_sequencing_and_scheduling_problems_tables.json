@@ -1,0 +1,398 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Sequence searching and evaluation  a unified approach for aircraft arrival sequencing and scheduling problems.md",
+    "filename": "Sequence searching and evaluation  a unified approach for aircraft arrival sequencing and scheduling problems.md",
+    "title": "Sequence searching and evaluation  a unified approach for aircraft arrival sequencing and scheduling problems",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Minimal LTI between the aircraft [18]",
+      "headers": [
+        "LTI (i, j) Seconds",
+        "",
+        "Type of the later landing aircraft j",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "Type of the earlier <br> landing aircraft i",
+          1,
+          96,
+          200,
+          181,
+          228
+        ],
+        [
+          "",
+          2,
+          72,
+          80,
+          70,
+          110
+        ],
+        [
+          "",
+          3,
+          72,
+          100,
+          70,
+          130
+        ],
+        [
+          "",
+          4,
+          72,
+          80,
+          70,
+          90
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Results compared with the extended works of RHC",
+      "headers": [
+        "Case",
+        "Num",
+        "Time <br> Span (s)",
+        "RHC-GA",
+        "",
+        "RHC-BRGA",
+        "",
+        "RHC-ACS-ASS",
+        "",
+        "SSE",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "Result",
+          "CPU <br> Time (s)",
+          "Result",
+          "CPU <br> Time (s)",
+          "Result",
+          "CPU <br> Time (s)",
+          "Mean",
+          "Std",
+          "CPU <br> Time (s)"
+        ],
+        [
+          1,
+          20,
+          1800,
+          4383,
+          12.4,
+          4910,
+          22.2,
+          4731,
+          10.5,
+          3584.7,
+          80.0,
+          6.4
+        ],
+        [
+          2,
+          20,
+          2400,
+          5860,
+          16.1,
+          5876,
+          29.5,
+          5851,
+          12.4,
+          2702.0,
+          0,
+          6.8
+        ],
+        [
+          3,
+          20,
+          3000,
+          769,
+          19.2,
+          769,
+          29.6,
+          769,
+          12.9,
+          769.0,
+          0,
+          6.6
+        ],
+        [
+          4,
+          30,
+          2400,
+          30897,
+          24.5,
+          26631,
+          37.1,
+          28294,
+          19.1,
+          22969.2,
+          361.7,
+          13.3
+        ],
+        [
+          5,
+          30,
+          3000,
+          6380,
+          20.8,
+          6267,
+          38.7,
+          7017,
+          19.1,
+          5190.4,
+          91.5,
+          14.3
+        ],
+        [
+          6,
+          30,
+          3600,
+          5881,
+          22.8,
+          4908,
+          42.6,
+          5877,
+          18.6,
+          3721.0,
+          0,
+          14.3
+        ],
+        [
+          7,
+          40,
+          2400,
+          39963,
+          27.2,
+          37640,
+          51.4,
+          35948,
+          24.3,
+          29769.4,
+          327.2,
+          31.3
+        ],
+        [
+          8,
+          40,
+          3000,
+          19995,
+          28.2,
+          20483,
+          48.2,
+          20383,
+          19.5,
+          15856.1,
+          262.8,
+          32.2
+        ],
+        [
+          9,
+          40,
+          3600,
+          19292,
+          31.4,
+          23458,
+          51.8,
+          20030,
+          22.0,
+          15150.5,
+          267.5,
+          34.5
+        ],
+        [
+          10,
+          50,
+          2400,
+          89539,
+          39.9,
+          84446,
+          68.1,
+          80316,
+          32.8,
+          62154.1,
+          599.5,
+          53.4
+        ],
+        [
+          11,
+          50,
+          3000,
+          45000,
+          37.7,
+          42209,
+          62.0,
+          43297,
+          29.0,
+          34394.1,
+          478.3,
+          54.3
+        ],
+        [
+          12,
+          50,
+          3600,
+          42737,
+          37.6,
+          42707,
+          67.0,
+          37210,
+          30.6,
+          26865.3,
+          367.4,
+          57.4
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 12
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Performance influence of the parameters in Problem 1",
+      "headers": [
+        "Average value / CPU time",
+        "$\\theta=0.1$",
+        "$\\theta=0.2$",
+        "$\\theta=0.3$",
+        "$\\theta=0.4$",
+        "$\\theta=0.5$"
+      ],
+      "rows": [
+        [
+          "$k=2$",
+          "$2325.0 /$",
+          "$2430.0 /$",
+          "$2430.0 /$",
+          "$2430.0 /$",
+          "$2430.0 /$"
+        ],
+        [
+          "",
+          431.17,
+          126.74,
+          104.26,
+          90.11,
+          77.83
+        ],
+        [
+          "$k=3$",
+          "$2325.0 /$",
+          "$2325.0 /$",
+          "$2360.0 /$",
+          "$2395.0 /$",
+          "$2430.0 /$"
+        ],
+        [
+          "",
+          474.86,
+          224.37,
+          131.94,
+          104.88,
+          98.65
+        ],
+        [
+          "$k=4$",
+          "$2325.0 /$",
+          "$2325.0 /$",
+          "$2325.0 /$",
+          "$2325.0 /$",
+          "$2325.0 /$"
+        ],
+        [
+          "",
+          650.8,
+          432.74,
+          234.78,
+          212.04,
+          197.32
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Performance influence of the parameters in Problem 2",
+      "headers": [
+        "Average value / CPU time",
+        "$\\theta=0.1$",
+        "$\\theta=0.2$",
+        "$\\theta=0.3$",
+        "$\\theta=0.4$",
+        "$\\theta=0.5$"
+      ],
+      "rows": [
+        [
+          "$k=2$",
+          "$26917.6 /$",
+          "$26213.3 /$",
+          "$27005.5 /$",
+          "$27885.3 /$",
+          "$27519.7 /$"
+        ],
+        [
+          "",
+          233.44,
+          107.91,
+          64.77,
+          48.92,
+          36.66
+        ],
+        [
+          "$k=3$",
+          "$26317.0 /$",
+          "$26262.0 /$",
+          "$26500.0 /$",
+          "$26729.0 /$",
+          "$28391.7 /$"
+        ],
+        [
+          "",
+          239.4,
+          117.65,
+          66.96,
+          52.01,
+          40.67
+        ],
+        [
+          "$k=4$",
+          "$26971.6 /$",
+          "$26180.7 /$",
+          "$27247.0 /$",
+          "$28009.7 /$",
+          "$26771.0 /$"
+        ],
+        [
+          "",
+          255.89,
+          118.22,
+          73.35,
+          56.4,
+          43.66
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    }
+  ]
+}

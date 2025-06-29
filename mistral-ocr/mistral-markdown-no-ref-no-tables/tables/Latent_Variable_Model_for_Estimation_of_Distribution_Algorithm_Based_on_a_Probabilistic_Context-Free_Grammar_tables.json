@@ -1,0 +1,757 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/Latent Variable Model for Estimation of Distribution Algorithm Based on a Probabilistic Context-Free Grammar.md",
+    "filename": "Latent Variable Model for Estimation of Distribution Algorithm Based on a Probabilistic Context-Free Grammar.md",
+    "title": "Latent Variable Model for Estimation of Distribution Algorithm Based on a Probabilistic Context-Free Grammar",
+    "year": "2009"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "COMPARISON OF THE FEATURES OF TWO PROPOSED METHODS: PAGE-EM AND PAGE-VB",
+      "headers": [
+        "",
+        "Estimation <br> method",
+        "Estimation <br> target",
+        "Annotation <br> size selection"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          "EM algorithm",
+          "Parameter",
+          "Impossible"
+        ],
+        [
+          "PAGE-VB",
+          "VB",
+          "Distribution",
+          "Possible"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "Main Parameters for PAGE-EM and PAGE-VB. DMAX WEAK and DMAX StRong DENTE DMAX Problem with Weak DeCEPtiVeness AND DMAX Problem with Strong Deceptiveness, RESPECTively",
+      "headers": [
+        "PAGE-EM",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Variable",
+          "Parameter",
+          "Value"
+        ],
+        [
+          "$M$",
+          "Population size",
+          10002500
+        ],
+        [
+          "$h$",
+          "Annotation size",
+          "$\\begin{gathered} 2,4,8,16 \\text { (Royal Tree at level } d) \\\\ 16 \\text { (Royal Tree at level } e, \\text { DMAX weak) } \\\\ 8 \\text { (DMAX strong) } \\end{gathered}$"
+        ],
+        [
+          "$D_{P}$",
+          "Maximum depth",
+          "$\\begin{gathered} 5 \\text { (Royal Tree at level } d, \\text { DMAX weak) } \\\\ 6 \\text { (Royal Tree at level } e) \\\\ 4 \\text { (DMAX strong) } \\end{gathered}$"
+        ],
+        [
+          "$P_{e}$",
+          "Selection rate",
+          "0.1 (Royal Tree at level $d$, DMAX weak, DMAX strong) 0.05 (Royal Tree at level $e$ )"
+        ],
+        [
+          "$P_{e}$",
+          "Elite rate",
+          "0.1 (Royal Tree at level $d$, DMAX weak, DMAX strong) 0.05 (Royal Tree at level $e$ )"
+        ],
+        [
+          "PAGE-VB",
+          "",
+          ""
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:"
+        ],
+        [
+          "Variable",
+          "Parameter",
+          "Value"
+        ],
+        [
+          "$M$",
+          "Population size",
+          10004000
+        ],
+        [
+          "$\\mathcal{H}_{0}$",
+          "Annotation to explore",
+          "$[1,2,4,8,16]$"
+        ],
+        [
+          "$h_{\\text {range }}$",
+          "Annotation exploration range",
+          2
+        ],
+        [
+          "$D_{P}$",
+          "Maximum depth",
+          564
+        ],
+        [
+          "$P_{e}$",
+          "Selection rate",
+          "0.1 (Royal Tree level $d$, DMAX weak, DMAX strong) 0.05 (Royal Tree level $e$ )"
+        ],
+        [
+          "$P_{e}$",
+          "Elite rate",
+          "0.1 (Royal Tree level $d$, DMAX weak, DMAX strong) 0.05 (Royal Tree level $e$ )"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "Probabilities Obtained for the Royal Tree Problem (LeVEl $d$ ) BY PAGE WITH $h=8$ AND $h=16$",
+      "headers": [
+        "Production rule (PAGE-EM, $h=8$ )",
+        "$\\pi, \\beta$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{S}[3]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow b \\mathcal{S}[6] \\mathcal{S}[6]$",
+          0.018
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow c \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6]$",
+          0.972
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow a \\mathcal{S}[1]$",
+          0.09
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow a \\mathcal{S}[4]$",
+          0.538
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow a \\mathcal{S}[7]$",
+          0.075
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow b \\mathcal{S}[1] \\mathcal{S}[1]$",
+          0.014
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow b \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.022
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow b \\mathcal{S}[7] \\mathcal{S}[7]$",
+          0.025
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow c \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.059
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow c \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7]$",
+          0.032
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow d \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.068
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow s$",
+          0.061
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow d \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow a \\mathcal{S}[1]$",
+          0.161
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow a \\mathcal{S}[4]$",
+          0.468
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow a \\mathcal{S}[7]$",
+          0.356
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow a \\mathcal{S}[2]$",
+          0.012
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow b \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.467
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow b \\mathcal{S}[5] \\mathcal{S}[5]$",
+          0.399
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow c \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.03
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow d \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.055
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow s$",
+          0.029
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "Production rule (PAGE-EM, $h=16$ )",
+          "$\\pi, \\beta$"
+        ],
+        [
+          ":--",
+          ":--"
+        ],
+        [
+          "$\\mathcal{S}[5]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow c \\mathcal{S}[13] \\mathcal{S}[13] \\mathcal{S}[13]$",
+          0.063
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow c \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14]$",
+          0.131
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow c \\mathcal{S}[9] \\mathcal{S}[9] \\mathcal{S}[9]$",
+          0.093
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow d \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14]$",
+          0.054
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow d \\mathcal{S}[9] \\mathcal{S}[9] \\mathcal{S}[9] \\mathcal{S}[9]$",
+          0.06
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow s$",
+          0.329
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow a \\mathcal{S}[1]$",
+          0.154
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow a \\mathcal{S}[14]$",
+          0.257
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow a \\mathcal{S}[2]$",
+          0.189
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow a \\mathcal{S}[9]$",
+          0.238
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow d \\mathcal{S}[10] \\mathcal{S}[10] \\mathcal{S}[10] \\mathcal{S}[10]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow a \\mathcal{S}[14]$",
+          0.144
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow a \\mathcal{S}[9]$",
+          0.092
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow b \\mathcal{S}[1] \\mathcal{S}[1]$",
+          0.07
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow b \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.079
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow d \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14]$",
+          0.167
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow a \\mathcal{S}[14]$",
+          0.152
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow a \\mathcal{S}[9]$",
+          0.184
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow c \\mathcal{S}[9] \\mathcal{S}[9] \\mathcal{S}[9]$",
+          0.071
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow s$",
+          0.319
+        ],
+        [
+          "$\\mathcal{S}[8] \\rightarrow b \\mathcal{S}[11] \\mathcal{S}[11]$",
+          0.188
+        ],
+        [
+          "$\\mathcal{S}[8] \\rightarrow b \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.397
+        ],
+        [
+          "$\\mathcal{S}[8] \\rightarrow b \\mathcal{S}[6] \\mathcal{S}[6]$",
+          0.079
+        ],
+        [
+          "$\\mathcal{S}[8] \\rightarrow c \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3]$",
+          0.053
+        ],
+        [
+          "$\\mathcal{S}[9] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[10] \\rightarrow c \\mathcal{S}[15] \\mathcal{S}[15] \\mathcal{S}[15]$",
+          0.9
+        ],
+        [
+          "$\\mathcal{S}[10] \\rightarrow c \\mathcal{S}[8] \\mathcal{S}[8] \\mathcal{S}[8]$",
+          0.093
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[1]$",
+          0.167
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[12]$",
+          0.08
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[13]$",
+          0.181
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[14]$",
+          0.209
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[2]$",
+          0.143
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[9]$",
+          0.208
+        ],
+        [
+          "$\\mathcal{S}[12] \\rightarrow s$",
+          0.993
+        ],
+        [
+          "$\\mathcal{S}[13] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[14] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[15] \\rightarrow b \\mathcal{S}[11] \\mathcal{S}[11]$",
+          0.648
+        ],
+        [
+          "$\\mathcal{S}[15] \\rightarrow b \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.239
+        ]
+      ],
+      "row_count": 70,
+      "column_count": 2
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Number of Average Fitness Evaluations Required to Obtain the Optimum in Royal Tree Problem at Level $e$ (the Top $90 \\%$ of Results Were Used). Since the Results of GMPE Were Inferred from a Scanned Image, They Were Subject to Errors",
+      "headers": [
+        "Algorithm",
+        "Number of fitness <br> evaluations",
+        "Sample standard <br> deviation"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          61809,
+          15341
+        ],
+        [
+          "PAGE-VB",
+          263720,
+          63528
+        ],
+        [
+          "GMPE",
+          90525,
+          79774
+        ],
+        [
+          "PCFG-GP",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "V",
+      "table_title": "Results of a $t$-Test for the Royal Tree Problem at Level $e$. The Value in the Table Is a $p$-Value",
+      "headers": [
+        "$\\searrow$",
+        "PAGE-EM",
+        "PAGE-VB"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          "$\\searrow$",
+          "$5.90 \\times 10^{-25}$"
+        ],
+        [
+          "PAGE-VB",
+          "-",
+          "$\\searrow$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "VI",
+      "table_title": "NUMBER OF AVERAGE Fitness Evaluations Required to Obtain the Optimum in the DMAX Problem with Weak Deceptiveness",
+      "headers": [
+        "Algorithm",
+        "Number of fitness <br> evaluations",
+        "Sample standard <br> deviation"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          14922,
+          1287
+        ],
+        [
+          "PAGE-VB",
+          25542,
+          5229
+        ],
+        [
+          "PCFG-GP",
+          "-",
+          "-"
+        ],
+        [
+          "GP",
+          82332,
+          20874
+        ],
+        [
+          "POLE",
+          72516,
+          4381
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "VII",
+      "table_title": "REULTS OF A $t$-TEST FOR DMAX Problem with WEAK Deceptiveness. The Value in the Table Is a $p$-Value",
+      "headers": [
+        "$\\searrow$",
+        "PAGE-EM",
+        "PAGE-VB",
+        "GP",
+        "POLE"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          "$\\searrow$",
+          "$1.68 \\times 10^{-19}$",
+          "$1.16 \\times 10^{-27}$",
+          "$5.28 \\times 10^{-63}$"
+        ],
+        [
+          "PAGE-VB",
+          "-",
+          "$\\searrow$",
+          "$2.79 \\times 10^{-25}$",
+          "$1.27 \\times 10^{-68}$"
+        ],
+        [
+          "GP",
+          "-",
+          "-",
+          "$\\searrow$",
+          "$2.17 \\times 10^{-3}$"
+        ],
+        [
+          "POLE",
+          "-",
+          "-",
+          "-",
+          "$\\searrow$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "NUMBER OF AVERAGE Fitness Evaluations Required to Obtain the Optimum for $P_{s}=0.1,0.2,0.5$ in the DMAX Problem with WEAK DECEPTIVENESS",
+      "headers": [
+        "Algorithm $\\left(P_{s}\\right)$",
+        "Number of fitness <br> evaluations",
+        "Sample standard <br> deviation"
+      ],
+      "rows": [
+        [
+          "PAGE-EM $(0.1)$",
+          14922,
+          1287
+        ],
+        [
+          "PAGE-EM $(0.2)$",
+          21024,
+          2352
+        ],
+        [
+          "PAGE-EM $(0.5)$",
+          56610,
+          4804
+        ],
+        [
+          "PAGE-VB $(0.1)$",
+          25542,
+          5229
+        ],
+        [
+          "PAGE-VB $(0.2)$",
+          34902,
+          9364
+        ],
+        [
+          "PAGE-VB $(0.5)$",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "IX",
+      "table_title": "NUMBER OF AVERAGE Fitness Evaluations Required to Obtain the Optimum with a Probability of $90 \\%$ in DMAX Problem with Strong Deceptiveness",
+      "headers": [
+        "",
+        "Number of fitness <br> evaluations",
+        "Sample standard <br> deviation"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          16043,
+          1189
+        ],
+        [
+          "PAGE-VB",
+          18293,
+          1688
+        ],
+        [
+          "PCFG-GP",
+          "-",
+          "-"
+        ],
+        [
+          "POLE",
+          119572,
+          4295
+        ],
+        [
+          "GP",
+          1477376,
+          293890
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "X",
+      "table_title": "$t$-TEST FOR THE DMAX Problem WITH StRONG Deceptiveness. THE Value in the Table Is a $p$-Value",
+      "headers": [
+        "$\\backslash$",
+        "PAGE-EM",
+        "PAGE-VB",
+        "GP",
+        "POLE"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          "$\\backslash$",
+          "$2.82 \\times 10^{-9}$",
+          "$4.62 \\times 10^{-29}$",
+          "$1.10 \\times 10^{-61}$"
+        ],
+        [
+          "PAGE-VB",
+          "-",
+          "$\\backslash$",
+          "$4.89 \\times 10^{-29}$",
+          "$6.58 \\times 10^{-67}$"
+        ],
+        [
+          "GP",
+          "-",
+          "-",
+          "$\\backslash$",
+          "$7.13 \\times 10^{-26}$"
+        ],
+        [
+          "POLE",
+          "-",
+          "-",
+          "-",
+          "$\\backslash$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "XI",
+      "table_title": "Estimated Probabilities for the DMAX Problem with Strong Deceptiveness with $h=8$ Found by PAGE-EM. Rules with Probabilities Smaller than 0.01 Are Omitted Due to Limitations of Space",
+      "headers": [
+        "Production rule (PAGE-EM, $h=8$ )",
+        "$\\pi, \\beta$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{S}[4]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow \\lambda$",
+          0.983
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow 0.95$",
+          0.017
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow \\lambda$",
+          0.941
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow 0.95$",
+          0.059
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow \\times_{5} \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow \\lambda$",
+          0.989
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow 0.95$",
+          0.011
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow \\times_{5} \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow \\lambda$",
+          0.995
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0]$",
+          0.399
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[1] \\mathcal{S}[1] \\mathcal{S}[1] \\mathcal{S}[1] \\mathcal{S}[1]$",
+          0.01
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3]$",
+          0.234
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[5] \\mathcal{S}[5] \\mathcal{S}[5] \\mathcal{S}[5] \\mathcal{S}[5]$",
+          0.096
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7]$",
+          0.261
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow \\lambda$",
+          0.025
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow 0.95$",
+          0.975
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 2
+    }
+  ]
+}

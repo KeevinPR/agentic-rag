@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/Optimizing logistic regression coefficients for discrimination and calibration using estimation of distribution algorithms.md",
+    "filename": "Optimizing logistic regression coefficients for discrimination and calibration using estimation of distribution algorithms.md",
+    "title": "Optimizing logistic regression coefficients for discrimination and calibration using estimation of distribution algorithms",
+    "year": "2008"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Data sets characteristics",
+      "headers": [
+        "Data set",
+        "Variables",
+        "Instances",
+        "Positive instances"
+      ],
+      "rows": [
+        [
+          "Breast",
+          10,
+          699,
+          458
+        ],
+        [
+          "Diabetes",
+          9,
+          768,
+          268
+        ],
+        [
+          "ICU",
+          20,
+          200,
+          40
+        ],
+        [
+          "Prostate",
+          8,
+          380,
+          153
+        ],
+        [
+          "UIS",
+          8,
+          575,
+          147
+        ],
+        [
+          "Adult-r",
+          14,
+          8000,
+          1912
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Summary of the experimental results reflecting the average and standard deviation of all performance measures over the five executions, besides the average computation time for each fold. $\\Delta$ means that EDA exhibits a statistically significant better behavior when compared to R-glm ( $p$-value $<0.05$ ). $\\nabla$ is for the opposite significance. Filled symbols are used for the performance measure that is being optimized by the associated algorithm",
+      "headers": [
+        "Data set",
+        "Algorithm",
+        "Model performance measures",
+        "",
+        "Computation time (s)"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "$\\log \\mathcal{L}$",
+          "AUC",
+          ""
+        ],
+        [
+          "Breast",
+          "R-glm",
+          "$-70.97 \\pm 2.34$",
+          "$0.9936 \\pm 0.0003$",
+          0.24
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-logL",
+          "$-70.36 \\pm 0.84$",
+          "$0.9937 \\pm 0.0001$",
+          2.8
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-AUC",
+          "$-84.70 \\pm 6.20 \\nabla$",
+          "$0.9930 \\pm 0.0015$",
+          3.13
+        ],
+        [
+          "Diabetes",
+          "R-glm",
+          "$-320.85 \\pm 1.60$",
+          "$0.8298 \\pm 0.0008$",
+          0.32
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-logL",
+          "$-319.48 \\pm 1.76$",
+          "$0.8318 \\pm 0.0011$",
+          4.24
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-AUC",
+          "$-1526.52 \\pm 241.56 \\nabla$",
+          "$0.8267 \\pm 0.0082$",
+          5.48
+        ],
+        [
+          "ICU",
+          "R-glm",
+          "$-142.72 \\pm 25.70$",
+          "$0.7754 \\pm 0.0183$",
+          0.49
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-logL",
+          "$-138.67 \\pm 16.79$",
+          "$0.7617 \\pm 0.0068$",
+          4.66
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-AUC",
+          "$-497.73 \\pm 40.19 \\nabla$",
+          "$0.7773 \\pm 0.0082$",
+          9.89
+        ],
+        [
+          "Prostate",
+          "R-glm",
+          "$-202.09 \\pm 2.18$",
+          "$0.8017 \\pm 0.0041$",
+          0.2
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-logL",
+          "$-199.25 \\pm 1.94$",
+          "$0.8066 \\pm 0.0051$",
+          1.82
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-AUC",
+          "$-206.02 \\pm 2.60 \\nabla$",
+          "$0.8096 \\pm 0.0076 \\Delta$",
+          2.84
+        ],
+        [
+          "UIS",
+          "R-glm",
+          "$-320.77 \\pm 0.64$",
+          "$0.6220 \\pm 0.0030$",
+          0.18
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-logL",
+          "$-318.98 \\pm 0.95 \\Delta$",
+          "$0.6307 \\pm 0.0037 \\Delta$",
+          3.99
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-AUC",
+          "$-485.15 \\pm 29.92 \\nabla$",
+          "$0.6417 \\pm 0.0106 \\Delta$",
+          6.94
+        ],
+        [
+          "Adult-r",
+          "R-glm",
+          "$-2832.48 \\pm 8.78$",
+          "$0.8449 \\pm 0.0015$",
+          1.59
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-logL",
+          "$-2843.57 \\pm 5.37$",
+          "$0.8442 \\pm 0.0018$",
+          218.37
+        ],
+        [
+          "",
+          "UMDA ${ }_{c}^{G}$-AUC",
+          "$-12821.53 \\pm 418.47 \\nabla$",
+          "$0.8447 \\pm 0.0012$",
+          371.59
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 UMDA ${ }_{c}^{G}$-AUC algorithm final results of the five executions for Diabetes",
+      "headers": [
+        "Execution",
+        "Final $\\log \\mathcal{L}$",
+        "Final AUC"
+      ],
+      "rows": [
+        [
+          1,
+          -1440.478,
+          0.84
+        ],
+        [
+          2,
+          -1413.735,
+          0.8397
+        ],
+        [
+          3,
+          -1395.572,
+          0.8334
+        ],
+        [
+          4,
+          -1096.662,
+          0.8398
+        ],
+        [
+          5,
+          -1407.625,
+          0.8332
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    }
+  ]
+}

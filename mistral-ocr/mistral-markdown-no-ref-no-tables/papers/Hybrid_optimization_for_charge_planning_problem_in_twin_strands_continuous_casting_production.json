@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Hybrid optimization for charge planning problem in twin strands continuous casting production.md",
+    "filename": "Hybrid optimization for charge planning problem in twin strands continuous casting production.md",
+    "title": "Hybrid optimization for charge planning problem in twin strands continuous casting production",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] H. Missbauer, W. Hauber, W. Stadler, Int. J. Prod. Res. 47 (2009) 4147-4172.\n[2] J.Y. Long, Z. Zheng, X.Q. Gao, Y.M. Gong, J. Iron Steel Res. Int. 21 (2014) No. S1, 44-50.\n[3] L.X. Tang, J.Y. Liu, A.Y. Rong, Z.H. Yang, Eur. J. Oper. Res. 133 (2001) 1-20.\n[4] L.X. Tang, G.S. Wang, Omega 36 (2008) 976-991.\n[5] I. Harjunkoski, I.E. Grossmann, Comput. Chem. Eng. 25 (2001) $1647-1660$.\n[6] A. Atighehchian, M. Bijari, H. Tarkesh, Comput. Oper. Res. 36 (2009) 2450-2461.\n[7] S.P. Yu, Q.K. Pan, J. Iron Steel Res. Int. 19 (2012) No. 12, $33-41$.\n[8] L.X. Tang, Y. Zhao, J.Y. Liu, IEEE Trans. Evol. Comput. 18 (2014) 209-225.\n[9] J.H. Hao, M. Liu, S.L. Jiang, C. Wu, Eur. J. Oper. Res. 244 (2015) 966-979.\n[10] Q.K. Pan, Eur. J. Oper. Res. 250 (2016) 702-714.\n[11] Z. Zheng, J.Y. Long, X.Q. Gao, J. Iron Steel Res. Int. 24 (2017) 586-594.\n[12] J. Mori, V. Mahalec, Comput. Chem. Eng. 101 (2017) 312-325.\n[13] S.L. Jiang, Z. Zheng, M. Liu, Comput. Ind. Eng. 115 (2018) $582-594$.\n[14] S. Kammammettu, Z.K. Li, IFAC-PapersOnLine 51 (2018) 262-267.\n[15] A. Bellabdaoui, J. Teghem, Int. J. Prod. Econ. 104 (2006) 260-270.\n[16] L.X. Tang, G.S. Wang, Z.L. Chen, Oper. Res. 62 (2014) 772-787.\n[17] J. Yi, S.J. Jia, B. Du, Q. Liu, J. Iron Steel Res. Int. 26 (2019) 242-250.\n[18] H.Y. Dong, M. Huang, W.H. Ip, X.W. Wang, Int. J. Prod. Res. 50 (2012) 5747-5761.\n[19] S.H. Song, Int. J. Prod. Res. 52 (2014) 1443-1454.\n[20] S.X. Liu, J.F. Tang, J.H. Song, Int. J. Prod. Econ. 100 (2006) $30-43$.\n[21] J.Q. Li, Q.K. Pan, K. Mao, P.N. Suganthan, Knowl.-Based Syst. 72 (2014) 28-36.\n[22] J.H. Lin, M. Liu, J.H. Hao, S.L. Jiang, Comput. Oper. Res. 72 (2016) 189-203.\n[23] D.F. Zhu, Z. Zheng, X.Q. Gao, J. Iron Steel Res. Int. 17 (2010) No. 9, 19-24.\n[24] L.L. Sun, F.J. Luan, T.M. Ma, IFAC-PapersOnLine 48 (2015) $144-149$.\n[25] P. Larrañaga, J.A. Lozano, Estimation of distribution algorithms: a new tool for evolutionary computation, Kluwer Press, Boston, USA, 2002.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "H. Missbauer, W. Hauber, W. Stadler, Int. J. Prod. Res. 47 (2009) 4147-4172."
+      },
+      {
+        "ref_id": "2",
+        "text": "J.Y. Long, Z. Zheng, X.Q. Gao, Y.M. Gong, J. Iron Steel Res. Int. 21 (2014) No. S1, 44-50."
+      },
+      {
+        "ref_id": "3",
+        "text": "L.X. Tang, J.Y. Liu, A.Y. Rong, Z.H. Yang, Eur. J. Oper. Res. 133 (2001) 1-20."
+      },
+      {
+        "ref_id": "4",
+        "text": "L.X. Tang, G.S. Wang, Omega 36 (2008) 976-991."
+      },
+      {
+        "ref_id": "5",
+        "text": "I. Harjunkoski, I.E. Grossmann, Comput. Chem. Eng. 25 (2001) $1647-1660$."
+      },
+      {
+        "ref_id": "6",
+        "text": "A. Atighehchian, M. Bijari, H. Tarkesh, Comput. Oper. Res. 36 (2009) 2450-2461."
+      },
+      {
+        "ref_id": "7",
+        "text": "S.P. Yu, Q.K. Pan, J. Iron Steel Res. Int. 19 (2012) No. 12, $33-41$."
+      },
+      {
+        "ref_id": "8",
+        "text": "L.X. Tang, Y. Zhao, J.Y. Liu, IEEE Trans. Evol. Comput. 18 (2014) 209-225."
+      },
+      {
+        "ref_id": "9",
+        "text": "J.H. Hao, M. Liu, S.L. Jiang, C. Wu, Eur. J. Oper. Res. 244 (2015) 966-979."
+      },
+      {
+        "ref_id": "10",
+        "text": "Q.K. Pan, Eur. J. Oper. Res. 250 (2016) 702-714."
+      },
+      {
+        "ref_id": "11",
+        "text": "Z. Zheng, J.Y. Long, X.Q. Gao, J. Iron Steel Res. Int. 24 (2017) 586-594."
+      },
+      {
+        "ref_id": "12",
+        "text": "J. Mori, V. Mahalec, Comput. Chem. Eng. 101 (2017) 312-325."
+      },
+      {
+        "ref_id": "13",
+        "text": "S.L. Jiang, Z. Zheng, M. Liu, Comput. Ind. Eng. 115 (2018) $582-594$."
+      },
+      {
+        "ref_id": "14",
+        "text": "S. Kammammettu, Z.K. Li, IFAC-PapersOnLine 51 (2018) 262-267."
+      },
+      {
+        "ref_id": "15",
+        "text": "A. Bellabdaoui, J. Teghem, Int. J. Prod. Econ. 104 (2006) 260-270."
+      },
+      {
+        "ref_id": "16",
+        "text": "L.X. Tang, G.S. Wang, Z.L. Chen, Oper. Res. 62 (2014) 772-787."
+      },
+      {
+        "ref_id": "17",
+        "text": "J. Yi, S.J. Jia, B. Du, Q. Liu, J. Iron Steel Res. Int. 26 (2019) 242-250."
+      },
+      {
+        "ref_id": "18",
+        "text": "H.Y. Dong, M. Huang, W.H. Ip, X.W. Wang, Int. J. Prod. Res. 50 (2012) 5747-5761."
+      },
+      {
+        "ref_id": "19",
+        "text": "S.H. Song, Int. J. Prod. Res. 52 (2014) 1443-1454."
+      },
+      {
+        "ref_id": "20",
+        "text": "S.X. Liu, J.F. Tang, J.H. Song, Int. J. Prod. Econ. 100 (2006) $30-43$."
+      },
+      {
+        "ref_id": "21",
+        "text": "J.Q. Li, Q.K. Pan, K. Mao, P.N. Suganthan, Knowl.-Based Syst. 72 (2014) 28-36."
+      },
+      {
+        "ref_id": "22",
+        "text": "J.H. Lin, M. Liu, J.H. Hao, S.L. Jiang, Comput. Oper. Res. 72 (2016) 189-203."
+      },
+      {
+        "ref_id": "23",
+        "text": "D.F. Zhu, Z. Zheng, X.Q. Gao, J. Iron Steel Res. Int. 17 (2010) No. 9, 19-24."
+      },
+      {
+        "ref_id": "24",
+        "text": "L.L. Sun, F.J. Luan, T.M. Ma, IFAC-PapersOnLine 48 (2015) $144-149$."
+      },
+      {
+        "ref_id": "25",
+        "text": "P. Larrañaga, J.A. Lozano, Estimation of distribution algorithms: a new tool for evolutionary computation, Kluwer Press, Boston, USA, 2002."
+      }
+    ],
+    "reference_count": 25,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Four groups of order data",
+      "headers": [
+        "Case",
+        "$i$",
+        "$D_{i}$",
+        "$G_{i} / t$",
+        "$\\left(W_{i}^{\\min }-W_{i}^{\\max }\\right) / \\mathrm{mm}$",
+        "$S_{i}$"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          6,
+          12.47,
+          "$1132-1269$",
+          "\\{JL6103E5, GL6102E1, ...\\}"
+        ],
+        [
+          "",
+          "...",
+          "...",
+          "...",
+          "...",
+          "..."
+        ],
+        [
+          "",
+          20,
+          15,
+          24.16,
+          "$1723-1970$",
+          "\\{JT6103D1, IL6205D2, ...\\}"
+        ],
+        [
+          2,
+          1,
+          8,
+          17.09,
+          "$900-1095$",
+          "\\{IV7105G1, JX1140E5, ...\\}"
+        ],
+        [
+          "",
+          "...",
+          "...",
+          "...",
+          "...",
+          "..."
+        ],
+        [
+          "",
+          50,
+          9,
+          30.52,
+          "$1450-1730$",
+          "\\{IV8106G2, JU1150H1, ...\\}"
+        ],
+        [
+          3,
+          1,
+          25,
+          19.87,
+          "$951-1098$",
+          "\\{IV4355E5, JU1150H1, ...\\}"
+        ],
+        [
+          "",
+          "...",
+          "...",
+          "...",
+          "...",
+          "..."
+        ],
+        [
+          "",
+          100,
+          3,
+          27.48,
+          "$1495-1658$",
+          "\\{IV4355E5, JU1250H1, ...\\}"
+        ],
+        [
+          4,
+          1,
+          10,
+          23.29,
+          "$1214-1380$",
+          "\\{EU6814A6, EU6810A6, ...\\}"
+        ],
+        [
+          "",
+          "...",
+          "...",
+          "...",
+          "...",
+          "..."
+        ],
+        [
+          "",
+          200,
+          8,
+          16.24,
+          "$1819-2030$",
+          "\\{GV4924E1, IV5937E1, ...\\}"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Results of proposed algorithm and manual method",
+      "headers": [
+        "Case",
+        "Condition",
+        "Method",
+        "Number of charges",
+        "Number of scale pairs",
+        "Surplus/t",
+        "Upgrading cost",
+        "Computing time/s"
+      ],
+      "rows": [
+        [
+          1,
+          "Sam.",
+          "Man_sam",
+          16,
+          7,
+          512.92,
+          29,
+          "$\\geq 120$"
+        ],
+        [
+          "",
+          "",
+          "Alg_sam",
+          15,
+          6,
+          233.83,
+          22,
+          3
+        ],
+        [
+          "",
+          "Dif.",
+          "Man_dif",
+          15,
+          6,
+          233.83,
+          22,
+          "$\\geq 120$"
+        ],
+        [
+          "",
+          "",
+          "Alg_dif",
+          15,
+          5,
+          233.83,
+          22,
+          5
+        ],
+        [
+          2,
+          "Sam.",
+          "Man_sam",
+          40,
+          12,
+          1108.24,
+          59,
+          "$\\geq 300$"
+        ],
+        [
+          "",
+          "",
+          "Alg_sam",
+          38,
+          11,
+          495.5,
+          46,
+          19
+        ],
+        [
+          "",
+          "Dif.",
+          "Man_dif",
+          39,
+          11,
+          801.47,
+          53,
+          "$\\geq 300$"
+        ],
+        [
+          "",
+          "",
+          "Alg_dif",
+          38,
+          10,
+          495.5,
+          46,
+          24
+        ],
+        [
+          3,
+          "Sam.",
+          "Man_sam",
+          80,
+          17,
+          1326.52,
+          87,
+          "$\\geq 600$"
+        ],
+        [
+          "",
+          "",
+          "Alg_sam",
+          78,
+          16,
+          761.91,
+          73,
+          46
+        ],
+        [
+          "",
+          "Dif.",
+          "Man_dif",
+          79,
+          15,
+          1059.26,
+          74,
+          "$\\geq 600$"
+        ],
+        [
+          "",
+          "",
+          "Alg_dif",
+          77,
+          14,
+          462.75,
+          66,
+          59
+        ],
+        [
+          4,
+          "Sam.",
+          "Man_sam",
+          166,
+          19,
+          3198.24,
+          99,
+          "$\\geq 1200$"
+        ],
+        [
+          "",
+          "",
+          "Alg_sam",
+          162,
+          18,
+          2003.59,
+          92,
+          87
+        ],
+        [
+          "",
+          "Dif.",
+          "Man_dif",
+          161,
+          16,
+          1701.92,
+          91,
+          "$\\geq 1200$"
+        ],
+        [
+          "",
+          "",
+          "Alg_dif",
+          158,
+          14,
+          809.83,
+          81,
+          106
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 8
+    }
+  ]
+}

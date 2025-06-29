@@ -1,0 +1,450 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Parameter estimation of industrial PET reactor using multi-objective kernel density estimation of distribution algorithm.md",
+    "filename": "Parameter estimation of industrial PET reactor using multi-objective kernel density estimation of distribution algorithm.md",
+    "title": "Parameter estimation of industrial PET reactor using multi-objective kernel density estimation of distribution algorithm",
+    "year": "2012"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] T.-Y. Park, G.F. Froment. Comput. Chem. Eng., 1998; 22 (Supplement 1), S103-S110.\n[2] V. Kumar, P. Balasubramanian. Fuel, 2009; 88(11), 2171-2180.\n[3] J. Tao, N. Wang. Comput. Chem. Eng., 2007; 31(12), $1602-1618$.\n[4] H. Zhang, G.P. Rangaiah. Asia-Pac. J. Chem. Eng., 2011; $6(3), 379-390$.\n[5] A. Eftaxias, J. Font, A. Fortuny, A. Fabregat, F. Stüber. Comput. Chem. Eng., 2002; 26(12), 1725-1733.\n[6] T. Yamada, Y. Imamura, O. Makimura, H. Kamatani. Polym. Eng. Sci., 1986; 26(10), 708-716.\n[7] K. Ravindranath, R.A. Masbelkar. Polym. Eng. Sci., 1982; 22(10), 610-618.\n[8] S. Gupta. J. Chem. Sci., 1983; 92(6), 673-680.\n[9] V. Bhaskar, S.K. Gupta, A.K. Ray. Polym. React. Eng., 2001; 9(2), 71-99.\n[10] M. Ramteke, S.K. Gupta. Int. J. Chem. React. Eng., 2011; 9, $55,1-12$.\n[11] C.-K. Kang, B.C. Lee, D.W. Ihm. J. Appl. Polym. Sci., 1996; 60(11), 2007-2015.\n[12] N.N. Dorogov. Theor. Found. Chem. Eng., 2000; 34(5), $485-490$.\n[13] H. Patel, G. Feix, R. Schomäcker. Macromol. React. Eng., 2007; 1(4), 502-512.\n[14] V. Bhaskar, S.K. Gupta, A.K. Ray. AICHE J., 2000; 46(5), 1046-1058.\n[15] V. Bhaskar, S.K. Gupta, A.K. Ray. Comput. Chem. Eng., 2001; 25(2-3), 391-407.\n[16] B.V. Babu, J.H.S. Mubeen, P.G. Chakole. Mater. Manuf. Process., 2007; 22(5-6), 541-552.\n[17] F. Manenti, M. Rovaglio. Ind. Eng. Chem. Res., 2008; 47(1), 92-104.\n[18] V. Bhaskar, S.K. Gupta, A.K. Ray. Rev. Chem. Eng., 2000; $16(1), 1-54$.\n[19] S. Baluja. Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning; Technical Report CMU-CS-94163; Carnegie Mellon University: Pittsburgh, PA, 1994.\n[20] G.R. Harik, F.G. Lobo, D.E. Goldberg. IEEE Trans. Evol. Comput., 1999; 3(4), 287-297.\n[21] H. Mühlenbein, G. Paaß. Lect. Notes Comput. Sci., 1996; 1141, 178-187.\n[22] S. Jeremy, B. De, L.I. Charles, P. Viola, MIMIC: finding optima by estimating probability densities. In Advances in Neural Information Processing Systems, MIT Press, Cambridge, MA, 1997.\n[23] S. Baluja, S. Davies. Combining multiple optimization with optimal dependency trees; Technical Report CMU-CS-97157; Carnegie Mellon University, Pittsburgh, 1997.\n[24] M. Pelikan, H. Mühlenbein, The bivariate marginal distribution algorithm. In Advances in soft computing: engineering design and manufacturing, Springer-Verlag, London, 1999; pp. 521-535.\n[25] G. Harik, F. Lobo, K. Sastry, Linkage learning via probabilistic modeling in the extended compact genetic algorithm",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "T.-Y. Park, G.F. Froment. Comput. Chem. Eng., 1998; 22 (Supplement 1), S103-S110."
+      },
+      {
+        "ref_id": "2",
+        "text": "V. Kumar, P. Balasubramanian. Fuel, 2009; 88(11), 2171-2180."
+      },
+      {
+        "ref_id": "3",
+        "text": "J. Tao, N. Wang. Comput. Chem. Eng., 2007; 31(12), $1602-1618$."
+      },
+      {
+        "ref_id": "4",
+        "text": "H. Zhang, G.P. Rangaiah. Asia-Pac. J. Chem. Eng., 2011; $6(3), 379-390$."
+      },
+      {
+        "ref_id": "5",
+        "text": "A. Eftaxias, J. Font, A. Fortuny, A. Fabregat, F. Stüber. Comput. Chem. Eng., 2002; 26(12), 1725-1733."
+      },
+      {
+        "ref_id": "6",
+        "text": "T. Yamada, Y. Imamura, O. Makimura, H. Kamatani. Polym. Eng. Sci., 1986; 26(10), 708-716."
+      },
+      {
+        "ref_id": "7",
+        "text": "K. Ravindranath, R.A. Masbelkar. Polym. Eng. Sci., 1982; 22(10), 610-618."
+      },
+      {
+        "ref_id": "8",
+        "text": "S. Gupta. J. Chem. Sci., 1983; 92(6), 673-680."
+      },
+      {
+        "ref_id": "9",
+        "text": "V. Bhaskar, S.K. Gupta, A.K. Ray. Polym. React. Eng., 2001; 9(2), 71-99."
+      },
+      {
+        "ref_id": "10",
+        "text": "M. Ramteke, S.K. Gupta. Int. J. Chem. React. Eng., 2011; 9, $55,1-12$."
+      },
+      {
+        "ref_id": "11",
+        "text": "C.-K. Kang, B.C. Lee, D.W. Ihm. J. Appl. Polym. Sci., 1996; 60(11), 2007-2015."
+      },
+      {
+        "ref_id": "12",
+        "text": "N.N. Dorogov. Theor. Found. Chem. Eng., 2000; 34(5), $485-490$."
+      },
+      {
+        "ref_id": "13",
+        "text": "H. Patel, G. Feix, R. Schomäcker. Macromol. React. Eng., 2007; 1(4), 502-512."
+      },
+      {
+        "ref_id": "14",
+        "text": "V. Bhaskar, S.K. Gupta, A.K. Ray. AICHE J., 2000; 46(5), 1046-1058."
+      },
+      {
+        "ref_id": "15",
+        "text": "V. Bhaskar, S.K. Gupta, A.K. Ray. Comput. Chem. Eng., 2001; 25(2-3), 391-407."
+      },
+      {
+        "ref_id": "16",
+        "text": "B.V. Babu, J.H.S. Mubeen, P.G. Chakole. Mater. Manuf. Process., 2007; 22(5-6), 541-552."
+      },
+      {
+        "ref_id": "17",
+        "text": "F. Manenti, M. Rovaglio. Ind. Eng. Chem. Res., 2008; 47(1), 92-104."
+      },
+      {
+        "ref_id": "18",
+        "text": "V. Bhaskar, S.K. Gupta, A.K. Ray. Rev. Chem. Eng., 2000; $16(1), 1-54$."
+      },
+      {
+        "ref_id": "19",
+        "text": "S. Baluja. Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning; Technical Report CMU-CS-94163; Carnegie Mellon University: Pittsburgh, PA, 1994."
+      },
+      {
+        "ref_id": "20",
+        "text": "G.R. Harik, F.G. Lobo, D.E. Goldberg. IEEE Trans. Evol. Comput., 1999; 3(4), 287-297."
+      },
+      {
+        "ref_id": "21",
+        "text": "H. Mühlenbein, G. Paaß. Lect. Notes Comput. Sci., 1996; 1141, 178-187."
+      },
+      {
+        "ref_id": "22",
+        "text": "S. Jeremy, B. De, L.I. Charles, P. Viola, MIMIC: finding optima by estimating probability densities. In Advances in Neural Information Processing Systems, MIT Press, Cambridge, MA, 1997."
+      },
+      {
+        "ref_id": "23",
+        "text": "S. Baluja, S. Davies. Combining multiple optimization with optimal dependency trees; Technical Report CMU-CS-97157; Carnegie Mellon University, Pittsburgh, 1997."
+      },
+      {
+        "ref_id": "24",
+        "text": "M. Pelikan, H. Mühlenbein, The bivariate marginal distribution algorithm. In Advances in soft computing: engineering design and manufacturing, Springer-Verlag, London, 1999; pp. 521-535."
+      },
+      {
+        "ref_id": "25",
+        "text": "G. Harik, F. Lobo, K. Sastry, Linkage learning via probabilistic modeling in the extended compact genetic algorithm"
+      }
+    ],
+    "reference_count": 25,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameters setting.",
+      "headers": [
+        "",
+        "Selection parameter: 0.3"
+      ],
+      "rows": [
+        [
+          "",
+          5
+        ],
+        [
+          "NSGA-II",
+          5
+        ],
+        [
+          "MPSO",
+          0.729
+        ],
+        [
+          "",
+          11.495
+        ],
+        [
+          "",
+          21.495
+        ],
+        [
+          "MUMDA",
+          0.3
+        ],
+        [
+          "",
+          5
+        ],
+        [
+          "MKEDA",
+          0.3
+        ],
+        [
+          "",
+          5
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Molecular structure of kinetic scheme components.",
+      "headers": [
+        "Acronym",
+        "Description",
+        "Molecular structure"
+      ],
+      "rows": [
+        [
+          "EG",
+          "Ethylene glycol",
+          "$\\mathrm{HOCH}_{2} \\mathrm{CH}_{2} \\mathrm{OH}$"
+        ],
+        [
+          "TPA",
+          "Terephthalic acid",
+          "$\\mathrm{HOOC} \\mathrm{COOH}$"
+        ],
+        [
+          "tEG",
+          "EG-end group",
+          "$-\\mathrm{OCH}_{2} \\mathrm{CH}_{2} \\mathrm{OH}$"
+        ],
+        [
+          "bEG",
+          "EG-repeat group",
+          "$-\\mathrm{OCH}_{2} \\mathrm{CH}_{2} \\mathrm{O}-\\mathrm{R}^{\\prime}$"
+        ],
+        [
+          "tTPA",
+          "TPA-end group",
+          "$-\\mathrm{OC} \\mathrm{COOH}$"
+        ],
+        [
+          "bTPA",
+          "TPA-repeat group",
+          "$-\\mathrm{OC} \\mathrm{CO} \\sim$"
+        ],
+        [
+          2,
+          "Water",
+          "$\\mathrm{H}_{2} \\mathrm{O}$"
+        ],
+        [
+          "DEG",
+          "Di-ethylene glycol",
+          "$\\mathrm{HO}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{OH}$"
+        ],
+        [
+          "tDEG",
+          "DEG-end group",
+          "$-\\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{OH}$"
+        ],
+        [
+          "bDEG",
+          "DEG-repeat group",
+          "$-\\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{O} \\sim$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Reaction scheme and reaction constants.",
+      "headers": [
+        "No.",
+        "Reactions",
+        "Rate constants",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Forward",
+          "Reverse"
+        ],
+        [
+          1,
+          "tTPA + EG $\\rightleftharpoons$ bTPA + tEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{1}$",
+          "$k_{2}$"
+        ],
+        [
+          2,
+          "tTPA + DEG $\\rightleftharpoons$",
+          "$k_{1}$",
+          "$k_{2}$"
+        ],
+        [
+          "",
+          "bTPA + tDEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "",
+          ""
+        ],
+        [
+          3,
+          "tTPA + tEG $\\rightleftharpoons$ bTPA + bEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{3}$",
+          "$k_{4}$"
+        ],
+        [
+          4,
+          "tTPA + tDEG $\\rightleftharpoons$",
+          "$k_{3}$",
+          "$k_{4}$"
+        ],
+        [
+          "",
+          "bTPA + bDEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "",
+          ""
+        ],
+        [
+          5,
+          "tEG + tEG $\\rightleftharpoons$ bEG + EG",
+          "$k_{5}$",
+          "$k_{6}$"
+        ],
+        [
+          6,
+          "EG + EG $\\rightarrow$ DEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{7}$",
+          "-"
+        ],
+        [
+          7,
+          "EG + tEG $\\rightarrow$ tDEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{8}$",
+          "-"
+        ],
+        [
+          8,
+          "tEG + tEG $\\rightarrow$ bDEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{9}$",
+          "-"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Intervals of estimated variables.",
+      "headers": [
+        "Rate constant sets",
+        "Intervals of $k_{\\mathrm{di}}\\left(\\times 10^{6}\\right)$",
+        "$\\mathrm{Ea}(\\mathrm{kcal} /$ <br> kmol)"
+      ],
+      "rows": [
+        [
+          1,
+          "$[1.456,2.704]$",
+          17.6
+        ],
+        [
+          2,
+          "$[1.456,2.704]$",
+          17.6
+        ],
+        [
+          3,
+          "$[0.5824,1.0816]$",
+          17.6
+        ],
+        [
+          4,
+          "$[1.1648,2.1632]$",
+          17.6
+        ],
+        [
+          5,
+          "$[0.952,1.768]$",
+          18.5
+        ],
+        [
+          6,
+          "$[1.904,3.536]$",
+          18.5
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "6",
+      "table_title": "Comparison between predictions and measurements under different product loads.",
+      "headers": [
+        "Product <br> load, $(\\mathrm{t} / \\mathrm{h})$",
+        "$\\left[\\mathrm{C}_{\\mathrm{COOH}}\\right],(\\mathrm{mol} / \\mathrm{T})$ <br> (Measurement)",
+        "$\\left[\\mathrm{C}_{\\mathrm{COOH}}\\right],(\\mathrm{mol} / \\mathrm{T})$ <br> (Prediction)",
+        "Error percent of <br> $[\\mathrm{COOH}],(\\%)$",
+        "$D P$ <br> (Measurement)",
+        "$D P$ <br> (Prediction)",
+        "Error percent <br> of $D P,(\\%)$"
+      ],
+      "rows": [
+        [
+          6.496,
+          639,
+          652.1,
+          2.1,
+          16,
+          16.1,
+          0.67
+        ],
+        [
+          6.608,
+          684,
+          667.8,
+          2.31,
+          16,
+          16.2,
+          1.44
+        ],
+        [
+          6.717,
+          690,
+          709.9,
+          2.84,
+          15,
+          15.2,
+          1.11
+        ],
+        [
+          6.717,
+          655,
+          698.4,
+          6.56,
+          20,
+          19.6,
+          2.17
+        ],
+        [
+          6.853,
+          623,
+          660.2,
+          6.04,
+          19,
+          18.8,
+          0.94
+        ],
+        [
+          6.896,
+          652,
+          690.7,
+          5.86,
+          16,
+          16.1,
+          0.63
+        ],
+        [
+          6.897,
+          712,
+          735.7,
+          3.35,
+          18,
+          17.8,
+          1.0
+        ],
+        [
+          7.046,
+          650,
+          639.6,
+          1.68,
+          17,
+          17.1,
+          0.6
+        ],
+        [
+          7.138,
+          646,
+          682.9,
+          5.77,
+          15,
+          15.0,
+          0.27
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    }
+  ]
+}

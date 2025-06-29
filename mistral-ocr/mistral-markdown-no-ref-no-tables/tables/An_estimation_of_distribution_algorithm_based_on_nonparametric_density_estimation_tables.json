@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/An estimation of distribution algorithm based on nonparametric density estimation.md",
+    "filename": "An estimation of distribution algorithm based on nonparametric density estimation.md",
+    "title": "An estimation of distribution algorithm based on nonparametric density estimation",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Test Instance",
+        "Search Space"
+      ],
+      "rows": [
+        [
+          "$f_{1}(x)=\\sum_{i=1}^{n} x_{i}^{2}$",
+          "$[-100,100]^{n}$"
+        ],
+        [
+          "$f_{3}(x)=\\sum_{i=1}^{n}\\left(\\sum_{j=1}^{i} x_{j}\\right)^{2}$",
+          "$[-100,100]^{n}$"
+        ],
+        [
+          "$f_{5}(x)=\\sum_{i=1}^{n-1}\\left[100\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(x_{i}-1\\right)^{2}\\right]$",
+          "$[-30,30]^{n}$"
+        ],
+        [
+          "$f_{6}(x)=\\sum_{i=1}^{n}\\left\\lfloor x_{i}+0.5\\right\\rfloor^{2}$",
+          "$[-100,100]^{n}$"
+        ],
+        [
+          "$f_{7}(x)=\\sum_{i=1}^{n} i x_{i}^{4}+\\operatorname{rand}[0,1)$",
+          "$[-1.28,1.28]^{n}$"
+        ],
+        [
+          "$f_{8}(x)=\\sum_{i=1}^{n}\\left[x_{i}^{2}-10 \\cos \\left(2 \\pi x_{i}\\right)+10\\right]$",
+          "$[-5.12,5.12]$"
+        ],
+        [
+          "$f_{9}(x)=-20 \\exp \\left(-0.2 \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} x_{i}^{2}}\\right)-\\exp \\left(\\frac{1}{n} \\sum_{i=1}^{n} \\cos \\left(2 \\pi x_{i}\\right)\\right)+20+e$",
+          "$[-32,32]$"
+        ],
+        [
+          "$f_{10}(x)=\\frac{1}{4000} \\sum_{i=1}^{n} x_{i}^{2} \\prod_{i=1}^{n} \\cos \\left(\\frac{x_{i}}{\\sqrt{1}}\\right)+1$",
+          "$[-600,600]^{n}$"
+        ],
+        [
+          "$f_{11}(x)=\\frac{\\pi}{n}\\left\\{10 \\sin ^{2}\\left(\\pi y_{i}\\right)+\\sum_{i=1}^{n-1}\\left(y_{i}-1\\right)^{2}\\left[1+10 \\sin ^{2}\\left(\\pi y_{i}+1\\right)\\right]+\\left(y_{n}-1\\right)^{2}\\right\\}+\\sum_{i=1}^{n} u\\left(x_{i}, 10,100,4\\right)$",
+          "$[-50,50]^{n}$"
+        ],
+        [
+          "where $y_{i}=1+\\frac{1}{4}\\left(x_{i}+1\\right)$, and $u\\left(x_{i}, a, k, m\\right)=\\left\\{\\begin{array}{ll} k\\left(x_{i}-a\\right)^{m} & x_{i}>a \\\\ 0 & -a \\leq x_{i} \\leq a \\\\ k\\left(-x_{i}-a\\right)^{m} & x_{i}<-a\\end{array}\\right.$",
+          ""
+        ],
+        [
+          "$f_{12}(x)=0.1\\left\\{\\sin ^{2}\\left(3 \\pi x_{1}\\right)+\\sum_{i=1}^{n-1}\\left(x_{i}-1\\right)^{2}\\left[1+\\sin ^{2}\\left(3 \\pi x_{i+1}\\right)\\right]+\\left(x_{n}-1\\right)^{2}\\left[1+\\sin ^{2}\\left(2 \\pi x_{n}\\right)\\right]\\right\\}+\\sum_{i=1}^{n} u\\left(x_{i}, 5,100,4\\right)$",
+          "$[-50,50]^{n}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "MEAN AND STD. VALUES OF THE TWO ALGORITHMS WITH GENERATION $=1500$ AND 3000 OVER 50 RUNS FOR ALL THE TEST INSTANCES.",
+      "headers": [
+        "",
+        "generation $=1500$",
+        "",
+        "generation $=3000$",
+        ""
+      ],
+      "rows": [
+        [
+          "Instance",
+          "nEDA",
+          "mGaussian EDA",
+          "nEDA",
+          "mGaussian EDA"
+        ],
+        [
+          "$f_{1}$",
+          "1.583e-71 $\\pm 1.235 \\mathrm{e}-71$",
+          "$3.681 \\mathrm{e}-04 \\pm 1.251 \\mathrm{e}-03$",
+          "3.380e-89 $\\pm 3.386 \\mathrm{e}-89$",
+          "$3.681 \\mathrm{e}-04 \\pm 1.251 \\mathrm{e}-03$"
+        ],
+        [
+          "$f_{2}$",
+          "1.563e-38 $\\pm 6.869 \\mathrm{e}-39$",
+          "$3.994 \\mathrm{e}-03 \\pm 1.539 \\mathrm{e}-02$",
+          "8.816e-51 $\\pm 6.125 \\mathrm{e}-51$",
+          "$3.994 \\mathrm{e}-03 \\pm 1.539 \\mathrm{e}-02$"
+        ],
+        [
+          "$f_{3}$",
+          "3.137e-19 $\\pm 8.726 \\mathrm{e}-19$",
+          "$6.188 \\mathrm{e}-04 \\pm 3.862 \\mathrm{e}-03$",
+          "5.702e-41 $\\pm 1.541 \\mathrm{e}-40$",
+          "$6.188 \\mathrm{e}-04 \\pm 3.862 \\mathrm{e}-03$"
+        ],
+        [
+          "$f_{4}$",
+          "2.147e-31 $\\pm 3.879 \\mathrm{e}-32$",
+          "$2.071 \\mathrm{e}-02 \\pm 9.422 \\mathrm{e}-02$",
+          "3.004e-34 $\\pm 1.018 \\mathrm{e}-34$",
+          "$2.071 \\mathrm{e}-02 \\pm 9.422 \\mathrm{e}-02$"
+        ],
+        [
+          "$f_{5}$",
+          "$1.142 \\mathrm{e}+01 \\pm 2.774 \\mathrm{e}+01$",
+          8.124,
+          3.452,
+          "$8.124 \\mathrm{e}+00 \\pm 1.931 \\mathrm{e}+00$"
+        ],
+        [
+          "$f_{6}$",
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "$f_{7}$",
+          "$3.022 \\mathrm{e}-04 \\pm 2.883 \\mathrm{e}-04$",
+          "1.862e-04 $\\pm 8.036 \\mathrm{e}-05$",
+          "$1.790 \\mathrm{e}-04 \\pm 1.414 \\mathrm{e}-04$",
+          "1.040e-04 $\\pm 4.462 \\mathrm{e}-05$"
+        ],
+        [
+          "$f_{8}$",
+          1.45001,
+          "$1.615 \\mathrm{e}+01 \\pm 4.077 \\mathrm{e}+00$",
+          1.121,
+          "$9.899 \\mathrm{e}+00 \\pm 6.059 \\mathrm{e}+00$"
+        ],
+        [
+          "$f_{9}$",
+          "3.713e-15 $\\pm 9.736 \\mathrm{e}-16$",
+          "$2.020 \\mathrm{e}-03 \\pm 6.074 \\mathrm{e}-03$",
+          "3.357e-15 $\\pm 1.379 \\mathrm{e}-15$",
+          "$2.020 \\mathrm{e}-03 \\pm 6.074 \\mathrm{e}-03$"
+        ],
+        [
+          "$f_{10}$",
+          "$1.945 \\mathrm{e}-01 \\pm 1.187 \\mathrm{e}-01$",
+          "1.671e-03 $\\pm 3.655 \\mathrm{e}-03$",
+          "$1.515 \\mathrm{e}-01 \\pm 1.100 \\mathrm{e}-01$",
+          "1.671e-03 $\\pm 3.655 \\mathrm{e}-03$"
+        ],
+        [
+          "$f_{11}$",
+          "1.096e-20 $\\pm 9.120 \\mathrm{e}-36$",
+          "$2.202 \\mathrm{e}-04 \\pm 1.281 \\mathrm{e}-03$",
+          "1.096e-20 $\\pm 9.120 \\mathrm{e}-36$",
+          "$2.202 \\mathrm{e}-04 \\pm 1.281 \\mathrm{e}-03$"
+        ],
+        [
+          "$f_{12}$",
+          "3.485e-21 $\\pm 1.520 \\mathrm{e}-36$",
+          "$4.673 \\mathrm{e}-03 \\pm 2.250 \\mathrm{e}-02$",
+          "3.485e-21 $\\pm 1.520 \\mathrm{e}-36$",
+          "$4.673 \\mathrm{e}-03 \\pm 2.250 \\mathrm{e}-02$"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 5
+    },
+    {
+      "table_number": "IV",
+      "table_title": "NUMBER OF TRIAL POINTS OF NEDA OVER 50 RUNS FOR ALL THE TEST INSTANCES WITH $M=1,5,10,15,20,25,30$ AFTER 3000 GENERATIONS.",
+      "headers": [
+        "Instance",
+        "$M=1$",
+        "$M=5$",
+        "$M=10$",
+        "$M=15$",
+        "$M=20$",
+        "$M=25$",
+        "$M=30$"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$2.383 \\mathrm{e}-59$",
+          "$2.955 \\mathrm{e}-106$",
+          "$3.380 \\mathrm{e}-89$",
+          "$2.623 \\mathrm{e}-111$",
+          "1.108e-111",
+          "$1.935 \\mathrm{e}-30$",
+          "$2.331 \\mathrm{e}-19$"
+        ],
+        [
+          "$f_{2}$",
+          "$1.752 \\mathrm{e}-43$",
+          "4.316e-65",
+          "$8.816 \\mathrm{e}-51$",
+          "$7.547 \\mathrm{e}-16$",
+          "$1.054 \\mathrm{e}-13$",
+          "$6.868 \\mathrm{e}-12$",
+          "$1.924 \\mathrm{e}-11$"
+        ],
+        [
+          "$f_{3}$",
+          "$1.622 \\mathrm{e}-04$",
+          "$6.595 \\mathrm{e}-20$",
+          "5.702e-41",
+          "$3.777 \\mathrm{e}-29$",
+          "$7.153 \\mathrm{e}-14$",
+          "$2.082 \\mathrm{e}-12$",
+          "$9.705 \\mathrm{e}-12$"
+        ],
+        [
+          "$f_{4}$",
+          "$1.082 \\mathrm{e}-07$",
+          "$5.047 \\mathrm{e}-34$",
+          "3.004e-34",
+          "$2.364 \\mathrm{e}-23$",
+          "$4.830 \\mathrm{e}-14$",
+          "$1.687 \\mathrm{e}-12$",
+          "$8.242 \\mathrm{e}-12$"
+        ],
+        [
+          "$f_{5}$",
+          "$6.485 \\mathrm{e}+00$",
+          "$6.513 \\mathrm{e}+00$",
+          3.452,
+          "$1.114 \\mathrm{e}+01$",
+          "$7.276 \\mathrm{e}+00$",
+          "$1.194 \\mathrm{e}+01$",
+          "$1.374 \\mathrm{e}+01$"
+        ],
+        [
+          "$f_{6}$",
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "$f_{7}$",
+          "$1.106 \\mathrm{e}-03$",
+          "$2.578 \\mathrm{e}-04$",
+          "$1.790 \\mathrm{e}-04$",
+          "$1.261 \\mathrm{e}-04$",
+          "$1.346 \\mathrm{e}-04$",
+          "1.221e-04",
+          "$1.488 \\mathrm{e}-04$"
+        ],
+        [
+          "$f_{8}$",
+          "$6.872 \\mathrm{e}+00$",
+          "$2.993 \\mathrm{e}+00$",
+          1.121,
+          "$9.970 \\mathrm{e}+00$",
+          "$9.811 \\mathrm{e}+00$",
+          "$1.059 \\mathrm{e}+01$",
+          "$1.485 \\mathrm{e}+01$"
+        ],
+        [
+          "$f_{9}$",
+          "$3.926 \\mathrm{e}-15$",
+          "$3.428 \\mathrm{e}-15$",
+          "$3.357 \\mathrm{e}-15$",
+          "$2.310 \\mathrm{e}-02$",
+          "$2.310 \\mathrm{e}-02$",
+          "2.647e-15",
+          "$2.310 \\mathrm{e}-02$"
+        ],
+        [
+          "$f_{10}$",
+          "$1.820 \\mathrm{e}-01$",
+          "6.286e-02",
+          "$1.515 \\mathrm{e}-01$",
+          "$9.097 \\mathrm{e}-02$",
+          "$1.157 \\mathrm{e}-01$",
+          "$1.130 \\mathrm{e}-01$",
+          "$1.254 \\mathrm{e}-01$"
+        ],
+        [
+          "$f_{11}$",
+          "1.096e-20",
+          "1.096e-20",
+          "1.096e-20",
+          "1.096e-20",
+          "1.096e-20",
+          "$6.022 \\mathrm{e}-16$",
+          "$6.220 \\mathrm{e}-03$"
+        ],
+        [
+          "$f_{12}$",
+          "3.485e-21",
+          "3.485e-21",
+          "3.485e-21",
+          "3.485e-21",
+          "$3.486 \\mathrm{e}-21$",
+          "$1.526 \\mathrm{e}-15$",
+          "$5.990 \\mathrm{e}-14$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 8
+    },
+    {
+      "table_number": "III",
+      "table_title": "MEAN VALUES OF NEDA OVER 50 RUNS FOR ALL THE TEST INSTANCES WITH $n=10,20,30$ AFTER 3000 GENERATIONS.",
+      "headers": [
+        "Instance",
+        "$n=10$",
+        "$n=20$",
+        "$n=30$"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$3.380 \\mathrm{e}-89$",
+          "$8.872 \\mathrm{e}-30$",
+          "$4.339 \\mathrm{e}-01$"
+        ],
+        [
+          "$f_{2}$",
+          "$8.816 \\mathrm{e}-51$",
+          "$2.979 \\mathrm{e}-16$",
+          "$3.978 \\mathrm{e}-03$"
+        ],
+        [
+          "$f_{3}$",
+          "$5.702 \\mathrm{e}-41$",
+          "$2.013 \\mathrm{e}+03$",
+          "$2.261 \\mathrm{e}+04$"
+        ],
+        [
+          "$f_{4}$",
+          "$3.004 \\mathrm{e}-34$",
+          "$6.330 \\mathrm{e}-01$",
+          "$3.659 \\mathrm{e}+01$"
+        ],
+        [
+          "$f_{5}$",
+          "$3.452 \\mathrm{e}+00$",
+          "$4.233 \\mathrm{e}+01$",
+          "$3.088 \\mathrm{e}+04$"
+        ],
+        [
+          "$f_{6}$",
+          "$0.000 \\mathrm{e}+00$",
+          "$0.000 \\mathrm{e}+00$",
+          "$3.140 \\mathrm{e}+00$"
+        ],
+        [
+          "$f_{7}$",
+          "$1.790 \\mathrm{e}-04$",
+          "$1.134 \\mathrm{e}-02$",
+          "$2.220 \\mathrm{e}-01$"
+        ],
+        [
+          "$f_{8}$",
+          "$1.121 \\mathrm{e}+00$",
+          "$9.614 \\mathrm{e}+01$",
+          "$3.129 \\mathrm{e}+02$"
+        ],
+        [
+          "$f_{9}$",
+          "$3.357 \\mathrm{e}-15$",
+          "$7.052 \\mathrm{e}-15$",
+          "$2.834 \\mathrm{e}-01$"
+        ],
+        [
+          "$f_{10}$",
+          "$1.515 \\mathrm{e}-01$",
+          "$1.062 \\mathrm{e}-01$",
+          "$8.711 \\mathrm{e}-01$"
+        ],
+        [
+          "$f_{11}$",
+          "$1.096 \\mathrm{e}-20$",
+          "$5.482 \\mathrm{e}-21$",
+          "$1.215 \\mathrm{e}+04$"
+        ],
+        [
+          "$f_{12}$",
+          "$3.485 \\mathrm{e}-21$",
+          "$3.488 \\mathrm{e}-21$",
+          "$8.607 \\mathrm{e}+04$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    }
+  ]
+}

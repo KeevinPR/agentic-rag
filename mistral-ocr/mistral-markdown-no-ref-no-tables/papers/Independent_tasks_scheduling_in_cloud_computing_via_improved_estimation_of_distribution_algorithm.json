@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Independent tasks scheduling in cloud computing via improved estimation of distribution algorithm.md",
+    "filename": "Independent tasks scheduling in cloud computing via improved estimation of distribution algorithm.md",
+    "title": "Independent tasks scheduling in cloud computing via improved estimation of distribution algorithm",
+    "year": "2018"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "1. Z.-H. Zhan, X.-F. Liu, Y.-J. Gong et al., \"Cloud Computing Resource Scheduling and a Survey of Its Evolutionary Approaches,\" ACM Computing Surveys, vol. 47, no. 4, pp. 1-33, Jul. 2015.\n2. X. L. Liang, H. P. Chen, and J. A. Lozano, \"A Boltzmann-Based Estimation of Distribution Algorithm for a General Resource Scheduling Model,\" leee Transactions on Evolutionary Computation, vol. 19, no. 6, pp. 793806, Dec. 2015.\n3. P. Kumar, and A. Verma, \"Independent task scheduling in cloud computing by improved genetic algorithm,\" International Journal of Advanced Research in Computer Science and Software Engineering, vol. 2, no. 5, May. 2012.\n4. U. Bhoi, and P. N. Ramanuj, \"Enhanced max-min task scheduling algorithm in cloud computing,\" International Journal of Application or Innovation in Engineering and Management (IJAIEM), vol. 2, no. 4, pp. 259-264, 2013.\n5. S. Singh, and M. Kalra, \"Scheduling of independent tasks in cloud computing using modified genetic algorithm,\" in 2014 International Conference on Computational Intelligence and Communication Networks (CICN), 2014, pp. 565-569.\n6. P. Larranaga, and J. A. Lozano, Estimation of distribution algorithms: A new tool for evolutionary computation: Springer Science \\& Business Media, 2002.\n7. N. Chen, X. Fang, and X. Wang, \"A cloud computing resource scheduling scheme based on estimation of distribution algorithm,\" in Proceedings of 2nd International Conference on Systems and Informatics (ICSAI 2014), Nov. 2014, pp. 304-308.\n8. S. Baluja, Population-based incremental learning. a method for integrating genetic search based function optimization and competitive learning, Carnegie-Mellon Univ Pittsburgh Pa Dept Of Computer Science, 1994.\n9. R. N. Calheiros, R. Ranjan, A. Beloglazov et al., \"CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms,\" Software: Practice and Experience, vol. 41, no. 1, pp. 23-50, Jan. 2011.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Z.-H. Zhan, X.-F. Liu, Y.-J. Gong et al., \"Cloud Computing Resource Scheduling and a Survey of Its Evolutionary Approaches,\" ACM Computing Surveys, vol. 47, no. 4, pp. 1-33, Jul. 2015."
+      },
+      {
+        "ref_id": "2",
+        "text": "X. L. Liang, H. P. Chen, and J. A. Lozano, \"A Boltzmann-Based Estimation of Distribution Algorithm for a General Resource Scheduling Model,\" leee Transactions on Evolutionary Computation, vol. 19, no. 6, pp. 793806, Dec. 2015."
+      },
+      {
+        "ref_id": "3",
+        "text": "P. Kumar, and A. Verma, \"Independent task scheduling in cloud computing by improved genetic algorithm,\" International Journal of Advanced Research in Computer Science and Software Engineering, vol. 2, no. 5, May. 2012."
+      },
+      {
+        "ref_id": "4",
+        "text": "U. Bhoi, and P. N. Ramanuj, \"Enhanced max-min task scheduling algorithm in cloud computing,\" International Journal of Application or Innovation in Engineering and Management (IJAIEM), vol. 2, no. 4, pp. 259-264, 2013."
+      },
+      {
+        "ref_id": "5",
+        "text": "S. Singh, and M. Kalra, \"Scheduling of independent tasks in cloud computing using modified genetic algorithm,\" in 2014 International Conference on Computational Intelligence and Communication Networks (CICN), 2014, pp. 565-569."
+      },
+      {
+        "ref_id": "6",
+        "text": "P. Larranaga, and J. A. Lozano, Estimation of distribution algorithms: A new tool for evolutionary computation: Springer Science \\& Business Media, 2002."
+      },
+      {
+        "ref_id": "7",
+        "text": "N. Chen, X. Fang, and X. Wang, \"A cloud computing resource scheduling scheme based on estimation of distribution algorithm,\" in Proceedings of 2nd International Conference on Systems and Informatics (ICSAI 2014), Nov. 2014, pp. 304-308."
+      },
+      {
+        "ref_id": "8",
+        "text": "S. Baluja, Population-based incremental learning. a method for integrating genetic search based function optimization and competitive learning, Carnegie-Mellon Univ Pittsburgh Pa Dept Of Computer Science, 1994."
+      },
+      {
+        "ref_id": "9",
+        "text": "R. N. Calheiros, R. Ranjan, A. Beloglazov et al., \"CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms,\" Software: Practice and Experience, vol. 41, no. 1, pp. 23-50, Jan. 2011."
+      }
+    ],
+    "reference_count": 9,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Algorithm 1: IEDA",
+        ""
+      ],
+      "rows": [
+        [
+          1.0,
+          "Begin"
+        ],
+        [
+          2.0,
+          "Set the initial population $Z_{0}$ be empty, selected population $S_{0}$ be empty, generation counter $g=0$. Initialization: Generate $Z_{0}=\\left\\{X_{1}, X_{2}, \\ldots, X_{N}\\right\\}$ with the proposed population initialization method."
+        ],
+        [
+          "",
+          "For $g=1$ to $G$"
+        ],
+        [
+          "",
+          "3.1 Evaluation: Calculate (5) for each solution $X$."
+        ],
+        [
+          "",
+          "3.2 Selection: $S_{g-1} \\leftarrow$ Select the top $M$ individuals in term of objective values in non-decreasing order."
+        ],
+        [
+          "",
+          3.3
+        ],
+        [
+          "",
+          "For $i=1$ to $n$"
+        ],
+        [
+          "",
+          8
+        ],
+        [
+          3.0,
+          "End For"
+        ],
+        [
+          "",
+          3.4
+        ],
+        [
+          "",
+          7
+        ],
+        [
+          "",
+          "$S_{g}(2) \\leftarrow$ Sample individuals by IGA;"
+        ],
+        [
+          "",
+          "$S_{g} \\leftarrow S_{g}(1) \\leftarrow S_{g}(2)$ and apply elitism criterion: $w_{g} \\leftarrow b_{g-1}$"
+        ],
+        [
+          "",
+          "End For"
+        ],
+        [
+          4.0,
+          "The best individual in $Z_{G}$ is the final solution."
+        ],
+        [
+          "",
+          "End"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 2
+    }
+  ]
+}

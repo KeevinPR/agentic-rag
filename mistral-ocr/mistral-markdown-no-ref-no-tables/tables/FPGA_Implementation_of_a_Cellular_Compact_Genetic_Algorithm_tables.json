@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/FPGA Implementation of a Cellular Compact Genetic Algorithm.md",
+    "filename": "FPGA Implementation of a Cellular Compact Genetic Algorithm.md",
+    "title": "FPGA Implementation of a Cellular Compact Genetic Algorithm",
+    "year": "2008"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "TABLE 1 Comparison of the speed up",
+      "headers": [
+        "",
+        "OneMax",
+        "F1",
+        "F2"
+      ],
+      "rows": [
+        [
+          "CGA",
+          43362,
+          126967,
+          80027
+        ],
+        [
+          "CoCGA",
+          11492,
+          25542,
+          27757
+        ],
+        [
+          "CGA",
+          12321,
+          28853,
+          26591
+        ],
+        [
+          "Speedup <br> CoCGA/CGA",
+          3.77,
+          4.97,
+          2.88
+        ],
+        [
+          "Speedup <br> CCGA/CGA",
+          3.51,
+          4.44,
+          3.0
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "FPGA HARDWARE RESOURCE Xilinx VIRTEX-5 LX50",
+      "headers": [
+        "Network size",
+        "FPGA resources for CCGA with 32-bit chromosome on Xilinx Vertex-5 LX50",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "CCGA"
+        ],
+        [
+          1,
+          "Slice Registers used Flip-Flops",
+          621
+        ],
+        [
+          "",
+          "Slice LUTs used as Logic",
+          1932
+        ],
+        [
+          "",
+          "Total equivalent gate count",
+          18224
+        ],
+        [
+          "",
+          "Maximum Frequency",
+          290
+        ],
+        [
+          22,
+          "Slice Registers used Flip-Flops",
+          1642
+        ],
+        [
+          "",
+          "Slice LUTs used as Logic",
+          5506
+        ],
+        [
+          "",
+          "Total equivalent gate count",
+          49204
+        ],
+        [
+          "",
+          "Maximum Frequency",
+          280
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "TABLE 3 COMPARISON OF FPGA RESOURCES",
+      "headers": [
+        "",
+        "mCGA <br> $[9]$",
+        "CGA <br> $[10]$",
+        "CoCGA <br> normal <br> cell $[10]$",
+        "CoCGA <br> leader <br> cell $[10]$",
+        "CCGA"
+      ],
+      "rows": [
+        [
+          "No. of flip-flop",
+          712,
+          541,
+          598,
+          168,
+          621
+        ],
+        [
+          "4-input <br> LUT",
+          1612,
+          1065,
+          1296,
+          359,
+          1932
+        ],
+        [
+          "Total equiva",
+          18732,
+          12602,
+          17034,
+          4651,
+          18224
+        ],
+        [
+          "gate count",
+          "",
+          330,
+          330,
+          300,
+          300
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    }
+  ]
+}

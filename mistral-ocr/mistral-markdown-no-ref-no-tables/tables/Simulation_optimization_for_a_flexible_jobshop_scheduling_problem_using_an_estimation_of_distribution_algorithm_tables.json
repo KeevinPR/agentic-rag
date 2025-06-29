@@ -1,0 +1,1309 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Simulation optimization for a flexible jobshop scheduling problem using an estimation of distribution algorithm.md",
+    "filename": "Simulation optimization for a flexible jobshop scheduling problem using an estimation of distribution algorithm.md",
+    "title": "Simulation optimization for a flexible jobshop scheduling problem using an estimation of distribution algorithm",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Operation <br> job, precedence",
+        "Fixed Processing Times (hrs)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Machines",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$M_{1}$",
+          "$M_{2}$",
+          "$M_{3}$",
+          "$M_{4}$"
+        ],
+        [
+          "$\\mathrm{O}_{1,1}$",
+          2,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{1,2}$",
+          "-",
+          4,
+          "-",
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{2,1}$",
+          3,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{2,2}$",
+          "-",
+          "-",
+          3,
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{2,3}$",
+          "-",
+          "-",
+          6,
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{3,1}$",
+          2,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{3,2}$",
+          "-",
+          "-",
+          3,
+          3
+        ],
+        [
+          "$\\mathrm{O}_{4,1}$",
+          1,
+          "-",
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{4,2}$",
+          "-",
+          3,
+          "-",
+          3
+        ],
+        [
+          "$\\mathrm{O}_{4,3}$",
+          "-",
+          "-",
+          "-",
+          5
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 EDAs for scheduling",
+      "headers": [
+        "Elements",
+        "Algorithms",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          0.2,
+          "Chen et al. [5] <br> Self-guided <br> GA",
+          0.7,
+          0.8,
+          4,
+          0.6,
+          "SEDA"
+        ],
+        [
+          "Configuration style",
+          "Single-machine",
+          "PFSP",
+          "PFSP",
+          "PFSP",
+          "Lot-streaming PFSP",
+          "FJSP",
+          "FJSP"
+        ],
+        [
+          "Processing times",
+          "Fixed",
+          "Fixed",
+          "Fixed",
+          "Fixed",
+          "Fixed",
+          "Fixed",
+          "Variable"
+        ],
+        [
+          "Assumptions",
+          "Required",
+          "Required",
+          "Required",
+          "Required",
+          "Partially required",
+          "Required",
+          "Not required"
+        ],
+        [
+          "Probabilistic model",
+          "Univariate",
+          "Univariate",
+          "Uni/bivariate",
+          "Univariate",
+          "Uni/bivariate",
+          "bivariate",
+          "Bivariate"
+        ],
+        [
+          "Type of EDA",
+          "Discrete",
+          "Discrete",
+          "Discrete",
+          "Discrete",
+          "Discrete",
+          "Discrete",
+          "Discrete and continuous"
+        ],
+        [
+          "Hybridization",
+          "EDA-GA",
+          "EDA-GA",
+          "EDA-GA",
+          "EDA-VNS",
+          "EDA-VNS",
+          "EDA-local search",
+          "EDA-simulation"
+        ],
+        [
+          "Populations",
+          "One",
+          "One",
+          "One",
+          "One",
+          "One",
+          "Two",
+          "One"
+        ],
+        [
+          "Objective",
+          "Weighted earliness, tardiness costs",
+          "Makespan",
+          "Makespan",
+          "Total flow time",
+          "Makespan",
+          "Makespan",
+          "Work in process"
+        ],
+        [
+          "Simulation",
+          "Not provided",
+          "Not provided",
+          "Not provided",
+          "Not provided",
+          "Not provided",
+          "Not provided",
+          "Included"
+        ],
+        [
+          "Approach",
+          "Academic",
+          "Academic",
+          "Academic",
+          "Academic",
+          "Industrial, sequence- <br> dependent setup <br> time considered",
+          "Academic",
+          "Industrial, all the environment as really it is"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 8
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Commercial simulation languages",
+      "headers": [
+        "",
+        "Optimization tool"
+      ],
+      "rows": [
+        [
+          "Languages",
+          "Tabu search Genetic algorithms Evolutionary strategies"
+        ],
+        [
+          8,
+          "+"
+        ],
+        [
+          "SimFlex ${ }^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Simprocess ${ }^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Promodel $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Arena $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Quest $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Extend $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "@Risk $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "AutoMod $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "+ Included",
+          "+"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$s .1$",
+        ""
+      ],
+      "rows": [
+        [
+          "$\\max _{i \\in I_{k}}\\left\\{S_{i}+t_{i, k}\\right\\} \\leq C_{k}$",
+          "for all $k=1, \\ldots, m$."
+        ],
+        [
+          "$T_{k}+S_{i}+\\sum_{p=1} x_{i, k, p} t_{i, k} \\leq S_{j}$",
+          "for all $i \\in O, k=1, \\ldots, m$."
+        ],
+        [
+          "$T_{k}+H=R_{k}$",
+          "for all $k=1, \\ldots, m$."
+        ],
+        [
+          "$S_{i} \\geq 0$",
+          "for all $i \\in O$."
+        ],
+        [
+          "$T_{k} \\geq 0$",
+          "for all $k=1, \\ldots, m$."
+        ],
+        [
+          "$H$ constant",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Validation method",
+      "headers": [
+        "Output variables",
+        "Input variables",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Real system $0.036 \\mathrm{~m} / \\mathrm{s}$",
+          "Conveyor speed $0.03 \\mathrm{~m} / \\mathrm{s}$",
+          "Conveyor speed $0.05 \\mathrm{~m} / \\mathrm{s}$"
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          17.97,
+          18.25
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          39975,
+          40964
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          91,
+          68
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          909,
+          932
+        ],
+        [
+          "",
+          "Real system",
+          "Sealed silicon",
+          "Sealed silicon"
+        ],
+        [
+          "",
+          30,
+          25,
+          35
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          18.07,
+          17.91
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          35749,
+          38815
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          113,
+          118
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          886,
+          881
+        ],
+        [
+          "",
+          "Real system",
+          "Drying",
+          "Drying"
+        ],
+        [
+          "",
+          30,
+          25,
+          35
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          18.22,
+          18.15
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          40938,
+          40871
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          68,
+          62
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          931,
+          930
+        ],
+        [
+          "",
+          "Real system (FIFO rule)",
+          "Sequences (by complexity)",
+          "Sequences (by simplicity)"
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          15.23,
+          19.63
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          35516,
+          40724
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          268,
+          82
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          731,
+          917
+        ],
+        [
+          "",
+          "Real system (without off-duty hours)",
+          "Shifts (8 off-duty hours)",
+          "Shifts (4 off-duty hours)"
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          16.97,
+          20.3
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          33515,
+          41127
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          270,
+          68
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          730,
+          931
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Operation <br> (job, precedence)",
+        "Fixed Processing Times (hrs)",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\mathrm{M}_{1}$",
+          "$\\mathrm{M}_{2}$",
+          "$\\mathrm{M}_{3}$",
+          "$\\mathrm{M}_{4}$",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{1.1}$",
+          2,
+          4,
+          3,
+          5,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{1.2}$",
+          4,
+          4,
+          "-",
+          3,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{2.1}$",
+          3,
+          "-",
+          "-",
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{2.2}$",
+          3,
+          "-",
+          3,
+          3,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{2.3}$",
+          "-",
+          5,
+          6,
+          2,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{3.1}$",
+          2,
+          "-",
+          "-",
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{3.2}$",
+          "-",
+          2,
+          3,
+          3,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{4.1}$",
+          1,
+          "-",
+          "-",
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{4.2}$",
+          "-",
+          3,
+          3,
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{4.3}$",
+          6,
+          4,
+          5,
+          5,
+          ""
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Operation",
+        "$\\mathrm{O}_{1.1}$",
+        "$\\mathrm{O}_{1.2}$",
+        "$\\mathrm{O}_{2.1}$",
+        "$\\mathrm{O}_{2.2}$",
+        "$\\mathrm{O}_{2.3}$",
+        "$\\mathrm{O}_{3.1}$",
+        "$\\mathrm{O}_{3.2}$",
+        "$\\mathrm{O}_{4.1}$",
+        "$\\mathrm{O}_{4.2}$",
+        "$\\mathrm{O}_{4.3}$"
+      ],
+      "rows": [
+        [
+          "A fixed number",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        [
+          "Corresponding job",
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 11
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "0.24",
+        "0.16",
+        "0.37",
+        "0.77",
+        "0.82",
+        "0.66",
+        "0.81",
+        "0.55",
+        "0.83",
+        "0.96"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          2,
+          1,
+          3,
+          6,
+          8,
+          5,
+          7,
+          4,
+          9,
+          10
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          3,
+          4,
+          2,
+          3,
+          2,
+          4,
+          4
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 10
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Comparison of results for each variance",
+      "headers": [
+        "Trial",
+        "GA <br> Best",
+        "SEDA <br> Best",
+        "GA <br> $\\sigma_{1}^{2}$",
+        "SEDA <br> $\\sigma_{2}^{2}$",
+        "$\\sigma_{1}^{2} / \\sigma_{2}^{2}$",
+        "$\\begin{aligned} & H_{0} ; \\sigma_{1}^{2}=\\sigma_{2}^{2} \\\\ & \\alpha=0.01 \\\\ & F_{c}<0.545 \\text { or } \\\\ & F_{c}>1.832 \\end{aligned}$"
+      ],
+      "rows": [
+        [
+          1,
+          2.66,
+          3.5,
+          2.926,
+          2.903,
+          1.0079,
+          1.0079
+        ],
+        [
+          2,
+          3.21,
+          2.56,
+          3.124,
+          2.661,
+          1.1738,
+          1.1738
+        ],
+        [
+          3,
+          2.93,
+          0.91,
+          2.763,
+          5.553,
+          0.4976,
+          0.4976
+        ],
+        [
+          4,
+          3.31,
+          0.0,
+          2.377,
+          5.028,
+          0.4727,
+          0.4727
+        ],
+        [
+          5,
+          2.66,
+          0.03,
+          3.307,
+          4.933,
+          0.6704,
+          0.6704
+        ],
+        [
+          6,
+          2.66,
+          0.0,
+          2.848,
+          5.05,
+          0.564,
+          0.5639
+        ],
+        [
+          7,
+          2.66,
+          0.0,
+          2.482,
+          5.284,
+          0.4698,
+          0.4698
+        ],
+        [
+          8,
+          2.66,
+          0.0,
+          3.116,
+          5.15,
+          0.605,
+          0.605
+        ],
+        [
+          9,
+          2.66,
+          0.39,
+          2.977,
+          5.053,
+          0.5891,
+          0.5891
+        ],
+        [
+          10,
+          2.66,
+          0.03,
+          2.932,
+          4.828,
+          0.6072,
+          0.6072
+        ],
+        [
+          11,
+          2.66,
+          0.0,
+          2.803,
+          5.149,
+          0.5443,
+          0.5443
+        ],
+        [
+          12,
+          2.66,
+          0.03,
+          3.055,
+          4.881,
+          0.6258,
+          0.6258
+        ],
+        [
+          13,
+          2.66,
+          0.03,
+          3.267,
+          5.004,
+          0.6529,
+          0.6529
+        ],
+        [
+          14,
+          2.66,
+          0.0,
+          2.969,
+          4.99,
+          0.595,
+          0.595
+        ],
+        [
+          15,
+          2.66,
+          0.03,
+          2.743,
+          4.601,
+          0.5962,
+          0.5962
+        ],
+        [
+          16,
+          2.66,
+          0.0,
+          2.897,
+          4.541,
+          0.638,
+          0.638
+        ],
+        [
+          17,
+          2.66,
+          0.0,
+          3.223,
+          5.323,
+          0.6055,
+          0.6055
+        ],
+        [
+          18,
+          2.66,
+          0.21,
+          3.214,
+          4.936,
+          0.6511,
+          0.6511
+        ],
+        [
+          19,
+          2.66,
+          0.0,
+          3.049,
+          4.935,
+          0.6178,
+          0.6178
+        ],
+        [
+          20,
+          2.66,
+          0.0,
+          2.759,
+          5.036,
+          0.5478,
+          0.5478
+        ],
+        [
+          21,
+          2.66,
+          0.03,
+          3.003,
+          5.662,
+          0.5303,
+          0.5303
+        ],
+        [
+          22,
+          2.66,
+          0.0,
+          2.581,
+          4.919,
+          0.5246,
+          0.5246
+        ],
+        [
+          23,
+          2.66,
+          0.0,
+          2.913,
+          4.891,
+          0.5955,
+          0.5955
+        ],
+        [
+          24,
+          2.9,
+          0.0,
+          2.704,
+          5.152,
+          0.5248,
+          0.5248
+        ],
+        [
+          25,
+          2.66,
+          0.03,
+          3.006,
+          5.176,
+          0.5807,
+          0.5807
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$18 / 25$"
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 7
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Comparison of results for each algorithm",
+      "headers": [
+        "Trial",
+        "GA <br> Best",
+        "SEDA <br> Best",
+        "GA <br> Worst",
+        "SEDA <br> Worst",
+        "GA <br> Reliability",
+        "SEDA <br> Reliability"
+      ],
+      "rows": [
+        [
+          1,
+          2.66,
+          3.5,
+          11.05,
+          11.28,
+          1,
+          3
+        ],
+        [
+          2,
+          3.21,
+          2.56,
+          11.19,
+          11.18,
+          1,
+          1
+        ],
+        [
+          3,
+          2.93,
+          0.91,
+          11.28,
+          11.04,
+          1,
+          1
+        ],
+        [
+          4,
+          3.31,
+          0.0,
+          10.85,
+          11.19,
+          1,
+          2
+        ],
+        [
+          5,
+          2.66,
+          0.03,
+          11.05,
+          10.91,
+          1,
+          4
+        ],
+        [
+          6,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          4
+        ],
+        [
+          7,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          3
+        ],
+        [
+          8,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          2
+        ],
+        [
+          9,
+          2.66,
+          0.39,
+          10.96,
+          11.19,
+          3,
+          5
+        ],
+        [
+          10,
+          2.66,
+          0.03,
+          11.05,
+          11.19,
+          3,
+          2
+        ],
+        [
+          11,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          2
+        ],
+        [
+          12,
+          2.66,
+          0.03,
+          11.05,
+          11.05,
+          1,
+          7
+        ],
+        [
+          13,
+          2.66,
+          0.03,
+          11.05,
+          11.19,
+          1,
+          6
+        ],
+        [
+          14,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          3
+        ],
+        [
+          15,
+          2.66,
+          0.03,
+          10.89,
+          10.91,
+          1,
+          2
+        ],
+        [
+          16,
+          2.66,
+          0.0,
+          10.96,
+          11.19,
+          2,
+          2
+        ],
+        [
+          17,
+          2.66,
+          0.0,
+          11.05,
+          11.05,
+          2,
+          2
+        ],
+        [
+          18,
+          2.66,
+          0.21,
+          11.05,
+          11.19,
+          2,
+          3
+        ],
+        [
+          19,
+          2.66,
+          0.0,
+          11.05,
+          10.43,
+          1,
+          2
+        ],
+        [
+          20,
+          2.66,
+          0.0,
+          10.96,
+          11.19,
+          1,
+          2
+        ],
+        [
+          21,
+          2.66,
+          0.03,
+          11.05,
+          11.19,
+          2,
+          1
+        ],
+        [
+          22,
+          2.66,
+          0.0,
+          10.89,
+          11.19,
+          1,
+          2
+        ],
+        [
+          23,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          3
+        ],
+        [
+          24,
+          2.9,
+          0.0,
+          10.96,
+          11.05,
+          1,
+          4
+        ],
+        [
+          25,
+          2.66,
+          0.03,
+          11.05,
+          11.05,
+          2,
+          4
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$34 / 25$",
+          "$72 / 25$"
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 7
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Analysis of variance",
+      "headers": [
+        "ANOVA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Source of variation",
+          "$S S$",
+          "$d f$",
+          "$M S$",
+          "$F$",
+          "$p$ value",
+          "$F$ crit"
+        ],
+        [
+          "Sample",
+          50.328,
+          1,
+          50.328,
+          19.0555,
+          "$1.28934 \\mathrm{E}-05$",
+          3.84288
+        ],
+        [
+          "Generations",
+          "$4,846.39$",
+          43,
+          112.706,
+          42.6738,
+          0,
+          1.38108
+        ],
+        [
+          "Interaction",
+          "$2,660.61$",
+          43,
+          61.874,
+          23.4273,
+          "$5.274 \\mathrm{E}-169$",
+          1.38108
+        ],
+        [
+          "Within group",
+          "$17,199.0074$",
+          6.512,
+          2.641,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Total",
+          "$24,756.344$",
+          6.599,
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Evaluation of Estimation of Distribution Algorithm to Calibrate Computationally Intensive Hydrologic Model.md",
+    "filename": "Evaluation of Estimation of Distribution Algorithm to Calibrate Computationally Intensive Hydrologic Model.md",
+    "title": "Evaluation of Estimation of Distribution Algorithm to Calibrate Computationally Intensive Hydrologic Model",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Parameters",
+        "Definition",
+        "Ranges"
+      ],
+      "rows": [
+        [
+          "Parameters governing surface water response",
+          "",
+          ""
+        ],
+        [
+          2,
+          "SCS runoff curve number",
+          "$35-98$"
+        ],
+        [
+          "ESCO",
+          "Soil evaporation compensation factor",
+          "$0.01-1$"
+        ],
+        [
+          "SOL_AWC",
+          "Available water capacity of the soil layer (mm/mm soil)",
+          "$0-1$"
+        ],
+        [
+          "Parameters governing subsurface water response",
+          "",
+          ""
+        ],
+        [
+          "GW_REVAP",
+          "Groundwater re-evaporation coefficient",
+          "$0.02-0.2$"
+        ],
+        [
+          "GW_DEALY",
+          "Groundwater delay (days)",
+          "$0-500$"
+        ],
+        [
+          "ALPHA_BF",
+          "Baseflow alpha factor (days)",
+          "$0-1$"
+        ],
+        [
+          "GWQMN",
+          "Threshold depth of water in the shallow aquifer for re-evaporation to occur (mm)",
+          "$0-5,000$"
+        ],
+        [
+          "REVAPMN",
+          "Threshold depth of water in the shallow aquifer required for return flow to occur (mm)",
+          "$0-500$"
+        ],
+        [
+          "Parameters governing basin response",
+          "",
+          ""
+        ],
+        [
+          "$\\mathrm{CH}_{3} \\mathrm{~K} 2$",
+          "Effective hydraulic conductivity in main channel alluvium (mm/h)",
+          "$-0.01-500$"
+        ],
+        [
+          "SURLAG",
+          "Surface runoff lag coefficient",
+          "$0.05-24$"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Average and Standard Deviation of the Objective Function Values for Each Algorithm",
+      "headers": [
+        "Algorithm",
+        "Average",
+        "SD"
+      ],
+      "rows": [
+        [
+          "EDA",
+          0.34,
+          0.053
+        ],
+        [
+          "MLMSRBF",
+          0.38,
+          0.016
+        ],
+        [
+          "SCE",
+          0.39,
+          0.022
+        ],
+        [
+          "GA",
+          0.44,
+          0.025
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Best Nash-Sutcliffe Efficiency (NSE), Overall Volume Error (R) and Peak Percent Threshold Statistic (PPTS) Values after 500 Model Evaluations",
+      "headers": [
+        "Simulation <br> period",
+        "Criteria",
+        "EDA",
+        "MLMSRBF",
+        "SCE",
+        "GA"
+      ],
+      "rows": [
+        [
+          "Calibration",
+          "NSE",
+          0.73,
+          0.64,
+          0.61,
+          0.56
+        ],
+        [
+          "period",
+          "R",
+          0.28,
+          0.25,
+          0.23,
+          0.26
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(2)}$",
+          0.09,
+          0.31,
+          0.42,
+          0.49
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(3)}$",
+          0.08,
+          0.29,
+          0.4,
+          0.45
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(5)}$",
+          0.06,
+          0.27,
+          0.35,
+          0.4
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(10)}$",
+          0.12,
+          0.23,
+          0.26,
+          0.29
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(20)}$",
+          0.22,
+          0.14,
+          0.16,
+          0.17
+        ],
+        [
+          "Validation",
+          "NSE",
+          0.58,
+          0.56,
+          0.56,
+          0.54
+        ],
+        [
+          "period",
+          "R",
+          0.43,
+          0.28,
+          0.27,
+          0.27
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(2)}$",
+          0.15,
+          0.2,
+          0.31,
+          0.32
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(3)}$",
+          0.21,
+          0.22,
+          0.26,
+          0.26
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(5)}$",
+          0.24,
+          0.18,
+          0.21,
+          0.2
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(10)}$",
+          0.29,
+          0.16,
+          0.15,
+          0.14
+        ],
+        [
+          "",
+          "$\\operatorname{PPTS}_{(20)}$",
+          0.33,
+          0.2,
+          0.14,
+          0.13
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Optimized Parameters Using the Estimation of Distribution Algorithm (EDA)",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "ESCO",
+          0.25
+        ],
+        [
+          2,
+          53.87
+        ],
+        [
+          "SOL_AWC",
+          0.02
+        ],
+        [
+          "GW_DEALY",
+          0.39
+        ],
+        [
+          "ALPHA_BF",
+          0.8
+        ],
+        [
+          "GWQMN",
+          20.55
+        ],
+        [
+          "GW_REVAP",
+          0.05
+        ],
+        [
+          "REVAPMN",
+          430.33
+        ],
+        [
+          2,
+          492.86
+        ],
+        [
+          "SURLAG",
+          0.05
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    }
+  ]
+}

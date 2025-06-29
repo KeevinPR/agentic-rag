@@ -1,0 +1,526 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/An online method for the real-time aircraft arrival sequencing and scheduling problem.md",
+    "filename": "An online method for the real-time aircraft arrival sequencing and scheduling problem.md",
+    "title": "An online method for the real-time aircraft arrival sequencing and scheduling problem",
+    "year": "2014"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] M. Pelegrin, \"Towards global optimization for air traffic management,\" AGARD-AG-321, 1994.\n[2] Carr G C, Erzberger H, Neuman F. Delay exchanges in arrival sequencing and scheduling [J]. Journal of Aircraft, 1999, 36(5): 785-791.\n[3] Carr G C, Erzberger H, Neuman F. Fast-time study of airline-influenced arrival sequencing and scheduling [J]. Journal of Guidance, Control, and Dynamics, 2000, 23(3): 526-531.\n[4] Bianco L, Bielli M. System aspects and optimization models in ATC planning [M]//Large Scale Computation and Information Processing in Air Traffic Control. Springer Berlin Heidelberg, 1993: 47-99.\n[5] Bianco L, Dell'Olmo P, Giordani S. Scheduling models and algorithms for TMA traffic management [M]//Modeling and simulation in air traffic management. Springer Berlin Heidelberg, 1997: 139-167.\n[6] Bianco L, Ricciardelli S, Rinaldi G, et al. Scheduling tasks with sequence: dependent processing times [J]. Naval Research Logistics (NRL), 1988, 35(2): 177-184.\n[7] Hu X B, Chen W H. Receding horizon control for aircraft arrival sequencing and scheduling [J]. Intelligent Transportation Systems, IEEE Transactions on, 2005, 6(2): 189-197.\n[8] Hu X B, Chen W H. Genetic algorithm based on receding horizon control for arrival sequencing and scheduling [J]. Engineering Applications of Artificial Intelligence, 2005, 18(5): 633-642.\n[9] Hu X B, Di Paolo E. Binary-representation-based genetic algorithm for aircraft arrival sequencing and scheduling [J]. Intelligent Transportation Systems, IEEE Transactions on, 2008, 9(2): 301-310.\n[10]Zhan Z H, Zhang J, Li Y, et al. An efficient ant colony system based on receding horizon control for the aircraft arrival sequencing and scheduling problem [J]. Intelligent Transportation Systems, IEEE Transactions on, 2010, 11(2): 399-412.\n[11]Guo Y, Cao X, Zhang J. Constraint handling based multi-objective evolutionary algorithm for aircraft landing scheduling [J]. International Journal of Innovative Computing, Information and Control, 2009, 5(8): 2229-2238.\n[12]Ceberio J, Mendiburu A, Lozano J A. Introducing the mallows model on estimation of distribution algorithms [C]//Neural Information Processing. Springer Berlin Heidelberg, 2011: 461-470.\n[13]Bengoetxea E, Larrañaga P, Bloch I, et al. Inexact graph matching by means of estimation of distribution algorithms [J]. Pattern Recognition, 2002, 35(12): 2867-2880.\n[14] Larrañaga, P., \\& Lozano, J. A. (Eds.). Estimation of distribution algorithms: A new tool for evolutionary computation [M]. Springer, 2002.\n[15] Robles V, de Miguel P, Larranaga P. Solving the traveling salesman problem with EDAs [M]//Estimation of Distribution Algorithms. Springer US, 2002: 211-229.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "M. Pelegrin, \"Towards global optimization for air traffic management,\" AGARD-AG-321, 1994."
+      },
+      {
+        "ref_id": "2",
+        "text": "Carr G C, Erzberger H, Neuman F. Delay exchanges in arrival sequencing and scheduling [J]. Journal of Aircraft, 1999, 36(5): 785-791."
+      },
+      {
+        "ref_id": "3",
+        "text": "Carr G C, Erzberger H, Neuman F. Fast-time study of airline-influenced arrival sequencing and scheduling [J]. Journal of Guidance, Control, and Dynamics, 2000, 23(3): 526-531."
+      },
+      {
+        "ref_id": "4",
+        "text": "Bianco L, Bielli M. System aspects and optimization models in ATC planning [M]//Large Scale Computation and Information Processing in Air Traffic Control. Springer Berlin Heidelberg, 1993: 47-99."
+      },
+      {
+        "ref_id": "5",
+        "text": "Bianco L, Dell'Olmo P, Giordani S. Scheduling models and algorithms for TMA traffic management [M]//Modeling and simulation in air traffic management. Springer Berlin Heidelberg, 1997: 139-167."
+      },
+      {
+        "ref_id": "6",
+        "text": "Bianco L, Ricciardelli S, Rinaldi G, et al. Scheduling tasks with sequence: dependent processing times [J]. Naval Research Logistics (NRL), 1988, 35(2): 177-184."
+      },
+      {
+        "ref_id": "7",
+        "text": "Hu X B, Chen W H. Receding horizon control for aircraft arrival sequencing and scheduling [J]. Intelligent Transportation Systems, IEEE Transactions on, 2005, 6(2): 189-197."
+      },
+      {
+        "ref_id": "8",
+        "text": "Hu X B, Chen W H. Genetic algorithm based on receding horizon control for arrival sequencing and scheduling [J]. Engineering Applications of Artificial Intelligence, 2005, 18(5): 633-642."
+      },
+      {
+        "ref_id": "9",
+        "text": "Hu X B, Di Paolo E. Binary-representation-based genetic algorithm for aircraft arrival sequencing and scheduling [J]. Intelligent Transportation Systems, IEEE Transactions on, 2008, 9(2): 301-310."
+      },
+      {
+        "ref_id": "14",
+        "text": "Larrañaga, P., \\& Lozano, J. A. (Eds.). Estimation of distribution algorithms: A new tool for evolutionary computation [M]. Springer, 2002."
+      },
+      {
+        "ref_id": "15",
+        "text": "Robles V, de Miguel P, Larranaga P. Solving the traveling salesman problem with EDAs [M]//Estimation of Distribution Algorithms. Springer US, 2002: 211-229."
+      }
+    ],
+    "reference_count": 11,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Minimal LTI between the aircrafts [5]",
+      "headers": [
+        "LTI (i, j) Seconds",
+        "Type of the Later Landing Aircraft j",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4,
+          ""
+        ],
+        [
+          "Type of the Earlier Landing Aircraft i",
+          1,
+          96,
+          200,
+          181,
+          228
+        ],
+        [
+          "",
+          2,
+          72,
+          80,
+          70,
+          110
+        ],
+        [
+          "",
+          3,
+          72,
+          100,
+          70,
+          130
+        ],
+        [
+          "",
+          4,
+          72,
+          80,
+          70,
+          90
+        ],
+        [
+          17472727370749.0,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Effectiveness of the online algorithm",
+      "headers": [
+        "",
+        "Worst",
+        "Best",
+        "Mean",
+        "CPU time (s)"
+      ],
+      "rows": [
+        [
+          "Static",
+          2739,
+          2632,
+          2693.8,
+          172.35
+        ],
+        [
+          "Online",
+          2836,
+          2679,
+          2748.1,
+          117.96
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "The best result compared with the static case",
+      "headers": [
+        "Predicted Arrival <br> Flow (PAF)",
+        "",
+        "",
+        "Static",
+        "",
+        "",
+        "Online",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "No.",
+          "Cat.",
+          "PLT",
+          "No.",
+          "Cat.",
+          "ALT",
+          "No.",
+          "Cat.",
+          "ALT"
+        ],
+        [
+          1,
+          4,
+          17,
+          1,
+          4,
+          17,
+          1,
+          4,
+          17
+        ],
+        [
+          2,
+          2,
+          50,
+          2,
+          2,
+          97,
+          2,
+          2,
+          97
+        ],
+        [
+          3,
+          1,
+          117,
+          4,
+          3,
+          167,
+          4,
+          3,
+          167
+        ],
+        [
+          4,
+          3,
+          129,
+          7,
+          3,
+          237,
+          7,
+          3,
+          237
+        ],
+        [
+          5,
+          4,
+          143,
+          9,
+          3,
+          307,
+          10,
+          4,
+          367
+        ],
+        [
+          6,
+          1,
+          174,
+          5,
+          4,
+          437,
+          11,
+          4,
+          457
+        ],
+        [
+          7,
+          3,
+          217,
+          10,
+          4,
+          527,
+          5,
+          4,
+          547
+        ],
+        [
+          8,
+          1,
+          260,
+          13,
+          2,
+          607,
+          12,
+          2,
+          627
+        ],
+        [
+          9,
+          3,
+          288,
+          3,
+          1,
+          679,
+          13,
+          2,
+          707
+        ],
+        [
+          10,
+          4,
+          340,
+          8,
+          1,
+          755,
+          14,
+          4,
+          817
+        ],
+        [
+          11,
+          4,
+          350,
+          18,
+          1,
+          871,
+          15,
+          4,
+          907
+        ],
+        [
+          12,
+          2,
+          505,
+          6,
+          1,
+          967,
+          16,
+          3,
+          977
+        ],
+        [
+          13,
+          2,
+          526,
+          16,
+          3,
+          1148,
+          9,
+          3,
+          1047
+        ],
+        [
+          14,
+          4,
+          541,
+          20,
+          3,
+          1218,
+          20,
+          3,
+          1117
+        ],
+        [
+          15,
+          4,
+          554,
+          12,
+          2,
+          1318,
+          19,
+          2,
+          1217
+        ],
+        [
+          16,
+          3,
+          590,
+          24,
+          2,
+          1398,
+          23,
+          4,
+          1327
+        ],
+        [
+          17,
+          4,
+          648,
+          19,
+          2,
+          1478,
+          25,
+          4,
+          1417
+        ],
+        [
+          18,
+          1,
+          651,
+          27,
+          2,
+          1558,
+          17,
+          4,
+          1507
+        ],
+        [
+          19,
+          2,
+          669,
+          11,
+          4,
+          1668,
+          24,
+          2,
+          1587
+        ],
+        [
+          20,
+          3,
+          691,
+          17,
+          4,
+          1758,
+          22,
+          3,
+          1657
+        ],
+        [
+          21,
+          1,
+          707,
+          14,
+          4,
+          1848,
+          8,
+          1,
+          1729
+        ],
+        [
+          22,
+          3,
+          762,
+          25,
+          4,
+          1938,
+          3,
+          1,
+          1825
+        ],
+        [
+          23,
+          4,
+          769,
+          29,
+          4,
+          2028,
+          18,
+          1,
+          1921
+        ],
+        [
+          24,
+          2,
+          792,
+          15,
+          4,
+          2118,
+          6,
+          1,
+          2017
+        ],
+        [
+          25,
+          4,
+          859,
+          23,
+          4,
+          2208,
+          21,
+          1,
+          2113
+        ],
+        [
+          26,
+          1,
+          993,
+          28,
+          4,
+          2298,
+          26,
+          1,
+          2209
+        ],
+        [
+          27,
+          2,
+          1064,
+          22,
+          3,
+          2368,
+          28,
+          4,
+          2437
+        ],
+        [
+          28,
+          4,
+          1077,
+          30,
+          1,
+          2440,
+          29,
+          4,
+          2527
+        ],
+        [
+          29,
+          4,
+          1207,
+          26,
+          1,
+          2536,
+          27,
+          2,
+          2607
+        ],
+        [
+          30,
+          1,
+          1401,
+          21,
+          1,
+          2632,
+          30,
+          1,
+          2679
+        ],
+        [
+          "Final answer",
+          "",
+          "",
+          "",
+          "",
+          2632,
+          "",
+          "",
+          2679
+        ]
+      ],
+      "row_count": 32,
+      "column_count": 9
+    }
+  ]
+}

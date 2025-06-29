@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/A roadmap for solving optimization problems with estimation of distribution algorithms.md",
+    "filename": "A roadmap for solving optimization problems with estimation of distribution algorithms.md",
+    "title": "A roadmap for solving optimization problems with estimation of distribution algorithms",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          3241,
+          "",
+          "",
+          "",
+          1,
+          2,
+          3,
+          4,
+          ""
+        ],
+        [
+          1234,
+          "",
+          "",
+          1,
+          0.6,
+          0.0,
+          0.2,
+          0.2,
+          ""
+        ],
+        [
+          4213,
+          "$\\Longrightarrow$",
+          "$\\sum$",
+          2,
+          0.0,
+          0.8,
+          0.2,
+          0.0,
+          ""
+        ],
+        [
+          1324,
+          "",
+          "$\\overline{\\overline{\\mathrm{C}}}$",
+          3,
+          0.2,
+          0.2,
+          0.2,
+          0.4,
+          ""
+        ],
+        [
+          1243,
+          "",
+          "",
+          4,
+          0.2,
+          0.0,
+          0.4,
+          0.4,
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 9
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Comparison of the proposed models for the GPP according to the features revised in Stage 2",
+      "headers": [
+        "",
+        "Distance-based <br> exponential model",
+        "Square-lattice model"
+      ],
+      "rows": [
+        [
+          "Interactions",
+          "Probabilities are <br> assigned to solutions in <br> terms of their distance <br> to a centroid $x_{0}$, so <br> interactions are <br> modelled implicitly.",
+          "The interactions <br> between variables are <br> modelled implicitly as <br> solutions are described <br> as paths in the lattice"
+        ],
+        [
+          "Flexibility",
+          "The model is unimodal, <br> so, low.",
+          "Not clear"
+        ],
+        [
+          "Parameters",
+          "Two parameters $\\left(x_{0}\\right.$ and $\\left.\\theta\\right)$",
+          "$n^{2} / 2$ parameters."
+        ],
+        [
+          "Feasibility",
+          "Numerical methods are <br> required when learning <br> MLE of parameters. <br> Sampling is carried out <br> with low time- <br> complexity.",
+          "Low time-complexity <br> methods are used when <br> learning and sampling"
+        ],
+        [
+          "Interpretability",
+          "Good, as the model has a <br> centroid solution and a <br> variance parameter.",
+          "Difficult interpretability"
+        ],
+        [
+          "Adequacy",
+          "It depends on the <br> correlation between <br> the objective function <br> and the distance- <br> metric employed.",
+          "It is not clear how the <br> paths are translated to <br> the quality of solutions"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    }
+  ]
+}

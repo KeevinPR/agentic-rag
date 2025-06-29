@@ -1,0 +1,478 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2004/Protein folding in 2-dimensional lattices with estimation of distribution algorithms.md",
+    "filename": "Protein folding in 2-dimensional lattices with estimation of distribution algorithms.md",
+    "title": "Protein folding in 2-dimensional lattices with estimation of distribution algorithms",
+    "year": "2004"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. U. Bastolla, H. Frauenkron, E. Gerstner, P. Grassberger, and W. Nadler. Testing a new Monte Carlo algorithm for protein folding. Proteins: Structure, Function, and Genetics, 32:52-66, 1998.\n2. R. Blanco, P. Larrañaga, I. Inza, and B. Sierra. Selection of highly accurate genes for cancer classification by Estimation of Distribution Algorithms. In Proceedings of the Workshop 'Bayesian Models in Medicine' held within AIME 2001, pages $29-34,2001$.\n3. C. Cotta. Protein structure prediction using evolutionary algorithms hybridized with backtracking. In J. Mira and J. R. Alvarez, editors, Artificial Neural Nets Problem Solving Methods, volume 2687 of Lecture Notes in Computer Science, pages 321-328. Springer Verlag, 2003.\n4. K. A. Dill. Theory for the folding and stability of globular proteins. Biochemistry, 24(6):1501-1509, 1985.\n5. W. Garrison, W. Greenwood, and J.-M. Shin. Evolutionary Computation in Bioinformatics, chapter On the Evolutionary Search for Solutions to the Protein Folding Problem, pages 115-136. Morgan Kaufmann, 2002.\n6. J. D. Hirst. The evolutionary landscape of functional model proteins. Protein Engineering, 12:721-726, 1999.\n7. J. H. Holland. Adaptation in Natural and Artificial Systems. University of Michigan Press, Ann Arbor, MI, 1975.\n8. H.-P. Hsu, V. Mehra, and P. Grassberger. Structure optimization in an off-lattice protein model. Physical Review E, 68(2):4 pages, 2003.\n\n9. M. Khimasia and P. Coveney. Protein structure prediction as a hard optimization problem: The genetic algorithm approach. Molecular Simulation, 19:205-226, 1997.\n10. P. Koehl and M. Delarue. Building protein lattice models using self consistent mean field theory. Journal of Chemical Physics, 108:9540-9549, 1998.\n11. R. König and T. Dandekar. Improving genetic algorithms for protein folding simulations by systematic crossover. Biosystems, 50:17-25, 1999.\n12. N. Krasnogor, B. Blackburne, E. K. Burke, and J. D. Hirst. Algorithms for protein structure prediction. In J. M. Guervos, P. Adamidis, H.-G. Beyer, J.-L. FernandezVillacañas, and H.-P. Schwefel, editors, Parallel Problem Solving from Nature PPSN VII, pages 769-778, Paris, France, 2002. Springer Verlag. LNCS 2439.\n13. P. Larrañaga and J. A. Lozano. Estimation of Distribution Algorithms. A New Tool for Evolutionary Optimization. Kluwer Academic Publishers, Boston/Dordrecht/London, 2002.\n14. N. Lesh, M. Mitzenmacher, and S. Whitesides. A complete and effective move set for simplified protein folding. Technical Report TR-2003-03, Mitsubishi Electric Research Laboratories, February 2003.\n15. S. Liang and W. H. Wong. Evolutionary Monte Carlo for protein folding simulation. Journal of Chemical Physics, 115:3374-3380, 2001.\n16. N. Metropolis, A. Rosenbluth, A. Teller, and E. Teller. Equations of state calculations by fast computing machines. Journal of Chemical Physics, 21:1087-1091, 1953.\n17. H. Mühlenbein and G. Paaß. From recombination of genes to the estimation of distributions I. Binary parameters. In A. Eiben, T. Bäck, M. Schoenauer, and H. Schwefel, editors, Parallel Problem Solving from Nature - PPSN IV, pages 178187, Berlin, 1996. Springer Verlag.\n18. Y. Saeys, S. Degroeve, D. Aeyels, P. Rouzé, and Y. VandePeer. Feature selection for splice site prediction: A new method using EDA-based feature ranking. BMC Bioinformatics, 4:5-64, 2004.\n19. R. Unger and J. Moult. Genetic algorithms for protein folding simulations. Journal of Molecular Biology, (231):75-81, 1993.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "U. Bastolla, H. Frauenkron, E. Gerstner, P. Grassberger, and W. Nadler. Testing a new Monte Carlo algorithm for protein folding. Proteins: Structure, Function, and Genetics, 32:52-66, 1998."
+      },
+      {
+        "ref_id": "2",
+        "text": "R. Blanco, P. Larrañaga, I. Inza, and B. Sierra. Selection of highly accurate genes for cancer classification by Estimation of Distribution Algorithms. In Proceedings of the Workshop 'Bayesian Models in Medicine' held within AIME 2001, pages $29-34,2001$."
+      },
+      {
+        "ref_id": "3",
+        "text": "C. Cotta. Protein structure prediction using evolutionary algorithms hybridized with backtracking. In J. Mira and J. R. Alvarez, editors, Artificial Neural Nets Problem Solving Methods, volume 2687 of Lecture Notes in Computer Science, pages 321-328. Springer Verlag, 2003."
+      },
+      {
+        "ref_id": "4",
+        "text": "K. A. Dill. Theory for the folding and stability of globular proteins. Biochemistry, 24(6):1501-1509, 1985."
+      },
+      {
+        "ref_id": "5",
+        "text": "W. Garrison, W. Greenwood, and J.-M. Shin. Evolutionary Computation in Bioinformatics, chapter On the Evolutionary Search for Solutions to the Protein Folding Problem, pages 115-136. Morgan Kaufmann, 2002."
+      },
+      {
+        "ref_id": "6",
+        "text": "J. D. Hirst. The evolutionary landscape of functional model proteins. Protein Engineering, 12:721-726, 1999."
+      },
+      {
+        "ref_id": "7",
+        "text": "J. H. Holland. Adaptation in Natural and Artificial Systems. University of Michigan Press, Ann Arbor, MI, 1975."
+      },
+      {
+        "ref_id": "8",
+        "text": "H.-P. Hsu, V. Mehra, and P. Grassberger. Structure optimization in an off-lattice protein model. Physical Review E, 68(2):4 pages, 2003."
+      },
+      {
+        "ref_id": "9",
+        "text": "M. Khimasia and P. Coveney. Protein structure prediction as a hard optimization problem: The genetic algorithm approach. Molecular Simulation, 19:205-226, 1997."
+      },
+      {
+        "ref_id": "10",
+        "text": "P. Koehl and M. Delarue. Building protein lattice models using self consistent mean field theory. Journal of Chemical Physics, 108:9540-9549, 1998."
+      },
+      {
+        "ref_id": "11",
+        "text": "R. König and T. Dandekar. Improving genetic algorithms for protein folding simulations by systematic crossover. Biosystems, 50:17-25, 1999."
+      },
+      {
+        "ref_id": "12",
+        "text": "N. Krasnogor, B. Blackburne, E. K. Burke, and J. D. Hirst. Algorithms for protein structure prediction. In J. M. Guervos, P. Adamidis, H.-G. Beyer, J.-L. FernandezVillacañas, and H.-P. Schwefel, editors, Parallel Problem Solving from Nature PPSN VII, pages 769-778, Paris, France, 2002. Springer Verlag. LNCS 2439."
+      },
+      {
+        "ref_id": "13",
+        "text": "P. Larrañaga and J. A. Lozano. Estimation of Distribution Algorithms. A New Tool for Evolutionary Optimization. Kluwer Academic Publishers, Boston/Dordrecht/London, 2002."
+      },
+      {
+        "ref_id": "14",
+        "text": "N. Lesh, M. Mitzenmacher, and S. Whitesides. A complete and effective move set for simplified protein folding. Technical Report TR-2003-03, Mitsubishi Electric Research Laboratories, February 2003."
+      },
+      {
+        "ref_id": "15",
+        "text": "S. Liang and W. H. Wong. Evolutionary Monte Carlo for protein folding simulation. Journal of Chemical Physics, 115:3374-3380, 2001."
+      },
+      {
+        "ref_id": "16",
+        "text": "N. Metropolis, A. Rosenbluth, A. Teller, and E. Teller. Equations of state calculations by fast computing machines. Journal of Chemical Physics, 21:1087-1091, 1953."
+      },
+      {
+        "ref_id": "17",
+        "text": "H. Mühlenbein and G. Paaß. From recombination of genes to the estimation of distributions I. Binary parameters. In A. Eiben, T. Bäck, M. Schoenauer, and H. Schwefel, editors, Parallel Problem Solving from Nature - PPSN IV, pages 178187, Berlin, 1996. Springer Verlag."
+      },
+      {
+        "ref_id": "18",
+        "text": "Y. Saeys, S. Degroeve, D. Aeyels, P. Rouzé, and Y. VandePeer. Feature selection for splice site prediction: A new method using EDA-based feature ranking. BMC Bioinformatics, 4:5-64, 2004."
+      },
+      {
+        "ref_id": "19",
+        "text": "R. Unger and J. Moult. Genetic algorithms for protein folding simulations. Journal of Molecular Biology, (231):75-81, 1993."
+      }
+    ],
+    "reference_count": 19,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "HP instances used in the experiments.",
+      "headers": [
+        "name",
+        "size",
+        "opt.",
+        "sequence"
+      ],
+      "rows": [
+        [
+          1,
+          20,
+          "$-9$",
+          "HPHPPHHPHHPHPHPPHPPHPPH"
+        ],
+        [
+          2,
+          25,
+          "$-8$",
+          "PPHPPHHP ${ }^{4} H H P^{4} H H P^{4} H H$"
+        ],
+        [
+          3,
+          36,
+          "$-14$",
+          "$P^{3} H H P P H H P^{5} H^{7} P P H H P^{4} H H P P H P P$"
+        ],
+        [
+          4,
+          48,
+          "$-23$",
+          "PPHPPHHPPHHP ${ }^{5} H^{10} P^{6} H H P P H H P P H P P H^{5}$"
+        ],
+        [
+          5,
+          50,
+          "$-21$",
+          "HHPHPHPHPH ${ }^{4} P H P^{3} H P^{3} H P^{4} H P^{3} H P^{3} H P H^{4}\\{P H\\}^{4} H$"
+        ],
+        [
+          6,
+          60,
+          "$-36$",
+          "$P P H^{3} P H^{8} P^{3} H^{10} P H P^{3} H^{12} P^{4} H^{6} P H H P H P$"
+        ],
+        [
+          7,
+          64,
+          "$-42$",
+          "$H^{12} P H P H\\{P P H H\\}^{2} P P H\\{P P H H\\}^{2} P P H\\{P P H H\\}^{2} P P H P H P H^{12}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Two dimensional functional model protein instances.",
+      "headers": [
+        "name",
+        "opt.",
+        "sequence"
+      ],
+      "rows": [
+        [
+          8,
+          "$-20$",
+          "PHPPHPPHHHHPPHPPHPHPPHH"
+        ],
+        [
+          9,
+          "$-17$",
+          "PHPPHPPHHHHHPPPPHPPHPPH"
+        ],
+        [
+          10,
+          "$-16$",
+          "HPHPHPHHHPPHPPPPHPHPPHH"
+        ],
+        [
+          11,
+          "$-20$",
+          "HHHPHHHPPHHPPPPHPHPPHHHH"
+        ],
+        [
+          12,
+          "$-17$",
+          "PHPPPPPPHPHHPHPHHHHPHPH"
+        ],
+        [
+          13,
+          "$-13$",
+          "HHPHPPHPPPPHPPPPHPPHHP"
+        ],
+        [
+          14,
+          "$-26$",
+          "PHPHHPHHHHHPPHHHPHHHHH"
+        ],
+        [
+          15,
+          "$-16$",
+          "HPHPPPHHHHPHPPPPHPHPHHH"
+        ],
+        [
+          16,
+          "$-15$",
+          "PHPHHPHHPHHPHPHPHPPPPPH"
+        ],
+        [
+          17,
+          "$-14$",
+          "HPHPHPPPPPHHPPPPHPHPHPH"
+        ],
+        [
+          18,
+          "$-15$",
+          "PHPPHHHPHPPHPHHPHPPPPH"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results achieved by the different algorithms for the HP instances.",
+      "headers": [
+        "",
+        "$E D A$",
+        "",
+        "",
+        "",
+        "",
+        "$G A$",
+        "",
+        "$M C$",
+        "",
+        "$M M A$",
+        ""
+      ],
+      "rows": [
+        [
+          "inst.",
+          "$k$",
+          "$B$",
+          "$M$",
+          "$S$",
+          "$\\bar{e}$",
+          "$B$",
+          "$\\bar{e}$",
+          "$B$",
+          "$\\bar{e}$",
+          "$B$",
+          "$\\bar{e}$"
+        ],
+        [
+          "$S 1$",
+          2,
+          "",
+          1000,
+          10,
+          4510,
+          "",
+          30492,
+          "",
+          292443,
+          "",
+          14621
+        ],
+        [
+          "$S 2$",
+          2,
+          "",
+          4000,
+          10,
+          13880,
+          "",
+          20400,
+          "",
+          2694572,
+          "",
+          18736
+        ],
+        [
+          "$S 3$",
+          2,
+          "",
+          5000,
+          1,
+          113000,
+          "",
+          301339,
+          "$-13$",
+          6557189,
+          "",
+          208233
+        ],
+        [
+          "$S 4$",
+          2,
+          "",
+          5000,
+          2,
+          53995,
+          "$-22$",
+          126547,
+          "$-20$",
+          9201755,
+          "$-22$",
+          1155656
+        ],
+        [
+          "$S 5$",
+          2,
+          "",
+          10000,
+          10,
+          118000,
+          "",
+          592887,
+          "",
+          15151203,
+          "",
+          ""
+        ],
+        [
+          "$S 6$",
+          2,
+          "$-35$",
+          10000,
+          2,
+          473500,
+          "$-34$",
+          208781,
+          "$-33$",
+          8262338,
+          "",
+          ""
+        ],
+        [
+          "$S 7$",
+          2,
+          "$-41$",
+          10000,
+          7,
+          595900,
+          "$-37$",
+          187393,
+          "$-35$",
+          7848952,
+          "",
+          ""
+        ],
+        [
+          "$S 7$",
+          3,
+          "",
+          10000,
+          1,
+          154000,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 12
+    },
+    {
+      "table_number": "4",
+      "table_title": "Results for the two dimensional functional model protein instances.",
+      "headers": [
+        "",
+        "",
+        "$E D A$",
+        "",
+        "",
+        "$M M A$"
+      ],
+      "rows": [
+        [
+          "inst.",
+          "$k$",
+          "$S$",
+          "$M$",
+          "$e$",
+          "$e$"
+        ],
+        [
+          "$S 8$",
+          1,
+          4,
+          500,
+          12650,
+          15170
+        ],
+        [
+          "$S 9$",
+          1,
+          5,
+          500,
+          2750,
+          61940
+        ],
+        [
+          "$S 10$",
+          1,
+          1,
+          1000,
+          35900,
+          132898
+        ],
+        [
+          "$S 11$",
+          1,
+          3,
+          1000,
+          15900,
+          66774
+        ],
+        [
+          "$S 12$",
+          1,
+          4,
+          500,
+          20950,
+          53600
+        ],
+        [
+          "$S 13$",
+          1,
+          5,
+          500,
+          5420,
+          32619
+        ],
+        [
+          "$S 14$",
+          1,
+          1,
+          500,
+          19450,
+          114930
+        ],
+        [
+          "$S 15$",
+          1,
+          1,
+          1500,
+          10350,
+          28425
+        ],
+        [
+          "$S 16$",
+          1,
+          1,
+          500,
+          4950,
+          25545
+        ],
+        [
+          "$S 17$",
+          1,
+          2,
+          500,
+          8950,
+          111046
+        ],
+        [
+          "$S 18$",
+          1,
+          5,
+          500,
+          2950,
+          52005
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    }
+  ]
+}

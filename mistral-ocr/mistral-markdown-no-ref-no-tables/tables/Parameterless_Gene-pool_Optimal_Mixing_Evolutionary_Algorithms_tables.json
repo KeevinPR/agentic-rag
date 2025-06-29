@@ -1,0 +1,552 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Parameterless Gene-pool Optimal Mixing Evolutionary Algorithms.md",
+    "filename": "Parameterless Gene-pool Optimal Mixing Evolutionary Algorithms.md",
+    "title": "Parameterless Gene-pool Optimal Mixing Evolutionary Algorithms",
+    "year": "2024"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Considered hyperparameters of single-population GOMEA. In bold, the best settings found by the experiment described in Section IV-C.",
+      "headers": [
+        "Hyperparameter",
+        "Options"
+      ],
+      "rows": [
+        [
+          "Forced Improvements",
+          "on / off"
+        ],
+        [
+          "Exhaustive Donor Search",
+          "on / off"
+        ],
+        [
+          "Hill Climber",
+          "SHIC / EHC / off"
+        ],
+        [
+          "Linkage Tree and similarity measure",
+          "unfiltered, MI / filtered,"
+        ],
+        [
+          "FOS ordering",
+          "NMI"
+        ],
+        [
+          "",
+          "random / ascending sub-"
+        ],
+        [
+          2,
+          "sets size"
+        ],
+        [
+          "",
+          "on / off"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Considered hyperparameters of parameterless GOMEA. In bold, the best settings found by the experiment described in Section IV-F.",
+      "headers": [
+        "Hyperparameter",
+        "Options"
+      ],
+      "rows": [
+        [
+          "Forced Improvements",
+          "on / off"
+        ],
+        [
+          "Exhaustive Donor Search",
+          "on / off"
+        ],
+        [
+          "Hill Climber",
+          "SHIC / EHC / off"
+        ],
+        [
+          "Linkage Tree and similarity measure",
+          "unfiltered, MI / filtered,"
+        ],
+        [
+          "",
+          "NMI"
+        ],
+        [
+          "FOS ordering",
+          "random / ascending sub-"
+        ],
+        [
+          "",
+          "sets size"
+        ],
+        [
+          2,
+          "on / off"
+        ],
+        [
+          "Population scheme",
+          "P3 / P3-MI / IMS"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results of single-population EAs. Best population sizes are found with bisection. Ranking per problem shown through color gradient from green (best, i.e., the fewest median number of function evaluations) to red (worst, i.e., largest median number of function evaluations or problem instance not solved in all 50 runs). All results are divided by $10^{5}$. Legend: $\\mathbf{G}=\\mathbf{G O M E A} ; \\mathbf{D}-\\mathbf{I I}=\\mathbf{D S M G A}-\\mathbf{I I}$; $\\mathbf{G}^{\\mathbf{B}}=\\mathbf{G O M E A}^{\\mathbf{B E S T}} ; \\mathbf{C G}^{\\mathbf{B}}=\\mathbf{C G O M E A}^{\\mathbf{B E S T}}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "G",
+        "$\\mathbf{D}-\\mathbf{I I}$",
+        "$\\mathbf{G}^{\\mathbf{B}}$",
+        "$\\mathbf{C G}^{\\mathbf{B}}$"
+      ],
+      "rows": [
+        [
+          "Trap ${ }_{6}^{5}$",
+          640,
+          4.02,
+          1.3,
+          1.16,
+          1.16
+        ],
+        [
+          "Trap ${ }_{6}^{4}$",
+          640,
+          13.23,
+          2.55,
+          4.6,
+          3.41
+        ],
+        [
+          "Bimodal Trap",
+          636,
+          34.87,
+          3.6,
+          114.36,
+          99.69
+        ],
+        [
+          -1,
+          640,
+          62.65,
+          66.72,
+          51.36,
+          37.05
+        ],
+        [
+          "HIFF",
+          1024,
+          7.81,
+          "N/A",
+          0.92,
+          1.2
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          7.31,
+          80.03,
+          3.87,
+          3.35
+        ],
+        [
+          "MAXCUT Dense",
+          100,
+          0.49,
+          "N/A",
+          0.51,
+          0.37
+        ],
+        [
+          "Spin-glass",
+          784,
+          88.47,
+          11.92,
+          13.74,
+          8.26
+        ],
+        [
+          "MAXSAT",
+          100,
+          69.63,
+          3.97,
+          5.2,
+          2.95
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Results of single-population CGOMEA with different threshold values $\\lambda$. Best population sizes are found with bisection. Ranking per problem shown through color gradient from green (best, i.e., the fewest median number of function evaluations) to red (worst, i.e., largest median number of function evaluations or problem instance not solved in all 50 runs). All results are divided by $10^{5}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "$\\mathbf{0 . 5}$",
+        "$\\mathbf{0 . 6}$",
+        "$\\mathbf{0 . 7}$",
+        "$\\mathbf{0 . 8}$",
+        "$\\mathbf{0 . 9}$"
+      ],
+      "rows": [
+        [
+          "Trap ${ }_{6}^{5}$",
+          640,
+          1.16,
+          1.16,
+          1.16,
+          1.16,
+          1.16
+        ],
+        [
+          "Trap ${ }_{6}^{4}$",
+          640,
+          5.89,
+          3.24,
+          5.37,
+          3.41,
+          3.5
+        ],
+        [
+          "Bimodal Trap",
+          636,
+          120.73,
+          106.39,
+          100.11,
+          99.69,
+          104.63
+        ],
+        [
+          -1,
+          640,
+          31.96,
+          28.77,
+          34.18,
+          37.03,
+          46.86
+        ],
+        [
+          "HIFF",
+          1024,
+          1.35,
+          1.1,
+          1.15,
+          1.2,
+          0.91
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          3.84,
+          3.9,
+          3.27,
+          3.35,
+          3.46
+        ],
+        [
+          "MAXCUT Dense",
+          100,
+          0.62,
+          0.53,
+          0.62,
+          0.37,
+          0.58
+        ],
+        [
+          "Spin-glass",
+          784,
+          16.49,
+          11.98,
+          12.45,
+          8.26,
+          10.78
+        ],
+        [
+          "MAXSAT",
+          100,
+          4.08,
+          4.89,
+          3.44,
+          2.95,
+          3.25
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Results of parameterless EAs. Ranking per problem shown through color gradient from green (best, i.e., fewest median number of function evaluations) to red (worst, i.e., largest median number of function evaluations or problem instance not solved in all 50 runs). For MAXSAT results are shown for 48 instances that were solved by all algorithms. All results are divided by $10^{5}$. Legend: $\\mathbf{P 3}=\\mathbf{P 3}$; $\\mathbf{D}-\\mathbf{I I}=\\mathbf{D S M G A}-\\mathbf{I I} ; \\mathbf{G P 3}^{\\mathbf{B}}=\\mathbf{G O M E A}-\\mathbf{P 3}^{\\mathbf{B E S T}} ;$ $\\mathbf{C G P 3}^{\\mathbf{B}}=\\mathbf{C G O M E A}-\\mathbf{P 3}^{\\mathbf{B E S T}}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "$\\mathbf{P 3}$",
+        "$\\mathbf{D}-\\mathbf{I I}$",
+        "$\\mathbf{G P 3}^{\\mathbf{B}}$",
+        "$\\mathbf{C G P 3}^{\\mathbf{B}}$"
+      ],
+      "rows": [
+        [
+          "Trap $_{5}^{6}$",
+          1280,
+          2.72,
+          31.1,
+          1.71,
+          1.61
+        ],
+        [
+          "Trap $_{5}^{4}$",
+          1280,
+          6.29,
+          14.08,
+          5.01,
+          3.76
+        ],
+        [
+          "Bimodal Trap",
+          1278,
+          829.32,
+          65.03,
+          379.01,
+          311.83
+        ],
+        [
+          "NK-SI",
+          1280,
+          99.1,
+          "N/A",
+          105.58,
+          71.21
+        ],
+        [
+          "HIFF",
+          2048,
+          5.92,
+          "N/A",
+          4.67,
+          6.55
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          6.47,
+          93.12,
+          3.5,
+          3.52
+        ],
+        [
+          "MAXCUT Dense",
+          200,
+          1.24,
+          15.97,
+          0.8,
+          0.8
+        ],
+        [
+          "Spin-glass",
+          784,
+          5.84,
+          18.15,
+          7.69,
+          5.65
+        ],
+        [
+          "MAXSAT",
+          200,
+          32.43,
+          113.84,
+          37.57,
+          28.74
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Statistical significance testing of performance difference in pairs of single-population EAs. Reported $p$-values are obtained by pairwise Mann-Whitney $U$-test. Statistically significant results at $\\alpha=0.01$ are highlighted. Cells corresponding to cases when an algorithm solves a problem instance and its competitor does not, are not highlighted. Legend: $\\mathbf{G}=\\mathbf{G O M E A} ; \\mathbf{D}-\\mathbf{I I}=\\mathbf{D S M G A}-\\mathbf{I I} ; \\mathbf{G}^{\\mathbf{B}}=$ $\\operatorname{GOMEA-}^{\\text {BEST }} ; \\mathbf{C G}^{\\mathbf{B}}=\\mathbf{C G O M E A}-\\mathrm{BEST}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "$\\begin{aligned} & \\mathbf{G}^{\\mathbf{B}} \\\\ & \\text { better } \\\\ & \\text { than } \\mathbf{G} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{G}^{\\mathbf{B}} \\\\ & \\text { better } \\\\ & \\text { than } \\\\ & \\mathbf{D}-\\mathbf{I I} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{C G}^{\\mathbf{B}} \\\\ & \\text { is } \\\\ & \\text { better } \\\\ & \\text { than } \\mathbf{G}^{\\mathbf{B}} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{C G}^{\\mathbf{B}} \\\\ & \\text { is } \\\\ & \\text { better } \\\\ & \\text { than } \\\\ & \\mathbf{D}-\\mathbf{I I} \\end{aligned}$"
+      ],
+      "rows": [
+        [
+          "Trap ${ }_{3}^{\\mathbf{S}}$",
+          640,
+          0.0,
+          0.0,
+          0.503,
+          0.0
+        ],
+        [
+          "Trap ${ }_{3}^{\\mathbf{S}}$",
+          640,
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        [
+          "Bimodal Trap",
+          636,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        [
+          "NK-SI",
+          640,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "HIFF",
+          1024,
+          0.0,
+          "N/A",
+          1.0,
+          "N/A"
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "MAXCUT Dense",
+          100,
+          0.74,
+          "N/A",
+          0.0,
+          "N/A"
+        ],
+        [
+          "Spin-glass",
+          784,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          "MAXSAT",
+          100,
+          0.0,
+          0.96,
+          0.0,
+          0.0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Statistical significance testing of performance difference in pairs of the best performing parameterless EAs. Reported $p$-values are obtained by pairwise Mann-Whitney $U$-test. Statistically significant results at $\\alpha=0.01$ are highlighted. Legend: $\\mathbf{P 3}=\\mathbf{P 3}$; $\\mathbf{D}-\\mathbf{I I}=\\mathbf{D S M G A}-\\mathbf{I I} ; \\mathbf{G P 3}^{\\mathbf{B}}=\\mathbf{G O M E A}-\\mathbf{P 3}^{\\text {BEST }} ;$ $\\operatorname{CGP3}^{\\mathbf{B}}=\\mathbf{C G O M E A}-\\mathbf{P 3}^{\\text {BEST }}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "$\\begin{aligned} & \\mathbf{C G P 3}^{\\mathbf{B}} \\text { is } \\\\ & \\text { better than } \\\\ & \\mathbf{G P 3}^{\\mathbf{B}} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{C G P 3}^{\\mathbf{B}} \\text { is } \\\\ & \\text { better than } \\\\ & \\mathbf{P 3} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{G P 3}^{\\mathbf{B}} \\quad \\text { is } \\\\ & \\text { better than } \\\\ & \\mathbf{P 3} \\end{aligned}$",
+        ""
+      ],
+      "rows": [
+        [
+          "Trap ${ }_{3}^{\\mathbf{S}}$",
+          1280,
+          0.213,
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "Trap ${ }_{3}^{\\mathbf{S}}$",
+          1280,
+          0.0,
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "Bimodal Trap",
+          1278,
+          0.0,
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "NK-SI",
+          1280,
+          0.0,
+          0.0,
+          0.662,
+          ""
+        ],
+        [
+          "HIFF",
+          2048,
+          1.0,
+          0.997,
+          0.0,
+          ""
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          0.537,
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "MAXCUT Dense",
+          200,
+          0.769,
+          0.003,
+          0.001,
+          ""
+        ],
+        [
+          "Spin-glass",
+          784,
+          0.007,
+          0.227,
+          0.985,
+          ""
+        ],
+        [
+          "MAXSAT",
+          200,
+          0.608,
+          0.501,
+          0.507,
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/A Bayesian Network Approach to Program Generation.md",
+    "filename": "A Bayesian Network Approach to Program Generation.md",
+    "title": "A Bayesian Network Approach to Program Generation",
+    "year": "2008"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Main Parameters for POLE. The Missing Concrete Values (DENOTED BY THE \"-\" SYMBOLS) Are Problem DEPENDENT",
+      "headers": [
+        "Symbol",
+        "Meaning",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$M$",
+          "Population size",
+          "-"
+        ],
+        [
+          "$G$",
+          "Generation to run",
+          "-"
+        ],
+        [
+          "$D_{P}$",
+          "Maximum tree depth",
+          "-"
+        ],
+        [
+          "$P_{s}$",
+          "Selection rate",
+          0.1
+        ],
+        [
+          "",
+          "",
+          0.2
+        ],
+        [
+          "$R_{P}$",
+          "Parent range",
+          2
+        ],
+        [
+          "",
+          "",
+          4
+        ],
+        [
+          "$k$",
+          "The number of max incoming edge",
+          "$\\infty$"
+        ],
+        [
+          "$P_{e}$",
+          "Elite rate",
+          0.005
+        ],
+        [
+          "$P_{F}$",
+          "Function selection rate at the init.",
+          0.8
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "The Number of Fitness Evaluations for the MAX Problem. Values of the Standard Deviation (StDev) for Each Case Are Given in Parentheses",
+      "headers": [
+        "",
+        "",
+        "$D_{P}=5$",
+        "$D_{P}=6$",
+        "$D_{P}=7$"
+      ],
+      "rows": [
+        [
+          "POLE",
+          "Average",
+          487,
+          1758,
+          5588
+        ],
+        [
+          "",
+          "Stdev",
+          21,
+          59,
+          75
+        ],
+        [
+          "Univariate",
+          "Average",
+          497,
+          1786,
+          5688
+        ],
+        [
+          "",
+          "Stdev",
+          21,
+          108,
+          46
+        ],
+        [
+          "Adjacent",
+          "Average",
+          581,
+          2496,
+          7401
+        ],
+        [
+          "",
+          "Stdev",
+          28,
+          186,
+          213
+        ],
+        [
+          "SGP",
+          "Average",
+          1209,
+          3962,
+          11141
+        ],
+        [
+          "",
+          "Stdev",
+          268,
+          825,
+          3906
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "III",
+      "table_title": "$t$-Test. The Values Represent P-Values for the MAX Problem",
+      "headers": [
+        "",
+        "$D_{P}=5$",
+        "$D_{P}=6$",
+        "$D_{P}=7$"
+      ],
+      "rows": [
+        [
+          "POLE vs Univariate",
+          "$3.30 \\times 10^{-1}$",
+          "$4.86 \\times 10^{-1}$",
+          "$2.69 \\times 10^{-3}$"
+        ],
+        [
+          "POLE vs Adjacent",
+          "$1.85 \\times 10^{-7}$",
+          "$1.47 \\times 10^{-7}$",
+          "$3.06 \\times 10^{-11}$"
+        ],
+        [
+          "POLE vs SGP",
+          "$1.27 \\times 10^{-5}$",
+          "$1.37 \\times 10^{-5}$",
+          "$1.50 \\times 10^{-3}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "IV",
+      "table_title": "The Number of Fitness Evaluations for the DMAX Problem. Values of the Standard Deviation (Stdev) for Each Case Are Given in Parentheses",
+      "headers": [
+        "",
+        "",
+        "$D_{P}=3$",
+        "$D_{P}=4$"
+      ],
+      "rows": [
+        [
+          "POLE",
+          "Average",
+          1570,
+          124531
+        ],
+        [
+          "",
+          "Stdev",
+          155,
+          23403
+        ],
+        [
+          "Univariate",
+          "Average",
+          1409,
+          "-"
+        ],
+        [
+          "",
+          "Stdev",
+          107,
+          "-"
+        ],
+        [
+          "Adjacent",
+          "Average",
+          1440,
+          "-"
+        ],
+        [
+          "",
+          "Stdev",
+          119,
+          "-"
+        ],
+        [
+          "SGP",
+          "Average",
+          11105,
+          1632159
+        ],
+        [
+          "",
+          "Stdev",
+          6958,
+          645696
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "V",
+      "table_title": "$t$-Test. The Values Represent P-Values for the DMAX Problem",
+      "headers": [
+        "",
+        "$D_{P}=3$",
+        "$D_{P}=4$"
+      ],
+      "rows": [
+        [
+          "POLE vs Univariate",
+          "$1.58 \\times 10^{-2}$",
+          "-"
+        ],
+        [
+          "POLE vs Adjacent",
+          "$5.10 \\times 10^{-2}$",
+          "-"
+        ],
+        [
+          "POLE vs SGP",
+          "$1.89 \\times 10^{-3}$",
+          "$4.14 \\times 10^{-5}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "VI",
+      "table_title": "The Number of Fitness Evaluations for the DMAX Problem With Extra Nodes. Values of the Standard Deviation (STDEV) For Each Case Are Given in Parentheses",
+      "headers": [
+        "",
+        "",
+        "$D_{P}=3$",
+        "$D_{P}=4$"
+      ],
+      "rows": [
+        [
+          "No addition",
+          "Average",
+          1587,
+          124531
+        ],
+        [
+          "(TableIVPOLE)",
+          "Stdev",
+          139,
+          23403
+        ],
+        [
+          "Addition of",
+          "Average",
+          1806,
+          130916
+        ],
+        [
+          "extra functions",
+          "Stdev",
+          162,
+          19527
+        ],
+        [
+          "Addition of",
+          "Average",
+          2033,
+          "-"
+        ],
+        [
+          "extra terminals",
+          "Stdev",
+          230,
+          "-"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "VII",
+      "table_title": "The Number of Fitness Evaluations for Royal Tree Problems. Values of the Standard Deviation (Stdev) for Each Case Are Given in Parentheses",
+      "headers": [
+        "",
+        "",
+        "$D_{P}=4$",
+        "$D_{P}=5$",
+        "$D_{P}=6$",
+        "$D_{P}=7$"
+      ],
+      "rows": [
+        [
+          "POLE",
+          "Average",
+          1357,
+          7711,
+          38039,
+          147030
+        ],
+        [
+          "",
+          "Stdev",
+          "$(339)$",
+          "$(1291)$",
+          "$(5847)$",
+          "$(13191)$"
+        ],
+        [
+          "Univariate",
+          "Average",
+          4135,
+          98837,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          "Stdev",
+          "$(864)$",
+          "$(29131)$",
+          "-",
+          "-"
+        ],
+        [
+          "Adjacent",
+          "Average",
+          5752,
+          90080,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          "Stdev",
+          "$(1791)$",
+          "$(20016)$",
+          "-",
+          "-"
+        ],
+        [
+          "SGP",
+          "Average",
+          2331,
+          35238,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          "Stdev",
+          "$(989)$",
+          "$(16234)$",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "IX",
+      "table_title": "describes the number of fitness evaluations required by the six methods, and the corresponding standard deviations. The methods labeled here by Bayesnet + EPT, Univariate + EPT, and Adjacent + EPT are identical to algorithms used through Section V (described as POLE, the Univariate model, and the Adjacent model, respectively, in the previous sections). Thus, the values of these three methods are taken from Table VII. Table X shows the results of applying the $t$-test.",
+      "headers": [
+        "",
+        "$D_{P}=4$",
+        "$D_{P}=5$"
+      ],
+      "rows": [
+        [
+          "POLE vs Univariate",
+          "$7.89 \\times 10^{-7}$",
+          "$3.83 \\times 10^{-6}$"
+        ],
+        [
+          "POLE vs Adjacent",
+          "$2.20 \\times 10^{-5}$",
+          "$3.62 \\times 10^{-7}$"
+        ],
+        [
+          "POLE vs SGP",
+          "$1.32 \\times 10^{-2}$",
+          "$4.46 \\times 10^{-4}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "IX",
+      "table_title": "The Number of Evaluations in Two Types of Chromosomes: EPT and SPT Denote the Expanded Parse Tree and the Standard Parse Tree, REPECTIVELY",
+      "headers": [
+        "",
+        "",
+        "$D_{P}=4$",
+        "$D_{P}=5$",
+        "$D_{P}=6$",
+        "$D_{P}=7$"
+      ],
+      "rows": [
+        [
+          "Bayesnet + EPT",
+          "Average",
+          1357,
+          7711,
+          38039,
+          147030
+        ],
+        [
+          7,
+          "Stdev",
+          339,
+          1291,
+          5847,
+          13191
+        ],
+        [
+          "Bayesnet + SPT",
+          "Average",
+          1429,
+          11003,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          "Stdev",
+          362,
+          2554,
+          "-",
+          "-"
+        ],
+        [
+          "Univariate + EPT",
+          "Average",
+          4135,
+          98837,
+          "-",
+          "-"
+        ],
+        [
+          7,
+          "Stdev",
+          864,
+          29131,
+          "-",
+          "-"
+        ],
+        [
+          "Univariate + SPT",
+          "Average",
+          4584,
+          117432,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          "Stdev",
+          1338,
+          38959,
+          "-",
+          "-"
+        ],
+        [
+          "Adjacent + EPT",
+          "Average",
+          5752,
+          90080,
+          "-",
+          "-"
+        ],
+        [
+          7,
+          "Stdev",
+          1791,
+          20016,
+          "-",
+          "-"
+        ],
+        [
+          "Adjacent + SPT",
+          "Average",
+          7765,
+          112494,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          "Stdev",
+          2220,
+          34258,
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "X",
+      "table_title": "$t$-Test. The Values Represent P-Values Between the Expanded Parse Tree and the Standard Parse Tree for Each Probabilistic Model",
+      "headers": [
+        "",
+        "$D_{P}=4$",
+        "$D_{P}=5$"
+      ],
+      "rows": [
+        [
+          "Bayesnet EPT vs SPT",
+          "$6.51 \\times 10^{-1}$",
+          "$2.90 \\times 10^{-3}$"
+        ],
+        [
+          "Univariate EPT vs SPT",
+          "$3.86 \\times 10^{-1}$",
+          "$2.44 \\times 10^{-1}$"
+        ],
+        [
+          "Adjacent EPT vs SPT",
+          "$3.92 \\times 10^{-2}$",
+          "$8.28 \\times 10^{-2}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

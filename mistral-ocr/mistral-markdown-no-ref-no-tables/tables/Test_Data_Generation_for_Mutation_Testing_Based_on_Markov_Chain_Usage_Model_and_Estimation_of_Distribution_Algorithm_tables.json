@@ -1,0 +1,1292 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Test Data Generation for Mutation Testing Based on Markov Chain Usage Model and Estimation of Distribution Algorithm.md",
+    "filename": "Test Data Generation for Mutation Testing Based on Markov Chain Usage Model and Estimation of Distribution Algorithm.md",
+    "title": "Test Data Generation for Mutation Testing Based on Markov Chain Usage Model and Estimation of Distribution Algorithm",
+    "year": "2024"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "$\\mathbf{P}$",
+        "",
+        "",
+        "M"
+      ],
+      "rows": [
+        [
+          1,
+          "public static int max(int a, int <br> b)",
+          "",
+          1,
+          "public static int max(int a, int <br> b)"
+        ],
+        [
+          2,
+          "$\\mathrm{if}(\\mathrm{a}<\\mathrm{b})$",
+          "",
+          2,
+          "if(!(a < b))"
+        ],
+        [
+          3,
+          "return b;",
+          "",
+          3,
+          "return b;"
+        ],
+        [
+          4,
+          "]else[",
+          "",
+          4,
+          "]else["
+        ],
+        [
+          5,
+          "return a;",
+          "",
+          5,
+          "return a;"
+        ],
+        [
+          6,
+          "]",
+          "",
+          6,
+          "]"
+        ],
+        [
+          7,
+          "]",
+          "",
+          7,
+          "]"
+        ],
+        [
+          "",
+          "",
+          "(a)",
+          "",
+          "(b)"
+        ],
+        [
+          1,
+          "public static int max(int a, int b)",
+          "",
+          "",
+          ""
+        ],
+        [
+          2,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          3,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          4,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          5,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          6,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          7,
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 5
+    },
+    {
+      "table_number": "I",
+      "table_title": "The Mutant Branches",
+      "headers": [
+        "Mutants",
+        "Mutant Branches"
+      ],
+      "rows": [
+        [
+          "$M_{1}$",
+          "$i f((a<b)!=(!(a<b)))$"
+        ],
+        [
+          "$M_{2}$",
+          "$i f((a<b)!=((++a<b)))$"
+        ],
+        [
+          "$M_{3}$",
+          "$i f((a<b)!=((a++<b)))$"
+        ],
+        [
+          "$M_{4}$",
+          "$i f((a<b)!=((--a<b)))$"
+        ],
+        [
+          "$M_{5}$",
+          "$i f((a<b)!=((a--<b)))$"
+        ],
+        [
+          "$M_{6}$",
+          "$i f((a<b)!=((a<++b)))$"
+        ],
+        [
+          "$M_{7}$",
+          "$i f((a<b)!=((a<b++)))$"
+        ],
+        [
+          "$M_{8}$",
+          "$i f((a<b)!=((a<-b)))$"
+        ],
+        [
+          "$M_{9}$",
+          "$i f((a<b)!=((a<b--)))$"
+        ],
+        [
+          "$M_{10}$",
+          "$i f((a<b!=((a<b)))$"
+        ],
+        [
+          "$M_{11}$",
+          "$i f((a<b)!=((\\sim a<b)))$"
+        ],
+        [
+          "$M_{12}$",
+          "$i f((b)!=((-b)))$"
+        ],
+        [
+          "$M_{13}$",
+          "$i f((b)!=((-b)))$"
+        ],
+        [
+          "$M_{14}$",
+          "$i f((b)!=((b++)))$"
+        ],
+        [
+          "$M_{15}$",
+          "$i f((b)!=((b--)))$"
+        ],
+        [
+          "$M_{16}$",
+          "$i f((a)!=((-a)))$"
+        ],
+        [
+          "$M_{17}$",
+          "$i f((a)!=((\\sim a)))$"
+        ],
+        [
+          "$M_{18}$",
+          "$i f((a)!=((a++)))$"
+        ],
+        [
+          "$M_{19}$",
+          "$i f((a)!=((a--)))$"
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "1:Mutation operators:Code lines:methods: <br> 2:Operation before mutation $=>$ Operation after mutation",
+        ""
+      ],
+      "rows": [
+        [
+          110,
+          ""
+        ],
+        [
+          212,
+          ""
+        ],
+        [
+          19,
+          ""
+        ],
+        [
+          29,
+          ""
+        ],
+        [
+          39,
+          ""
+        ],
+        [
+          "AOIS_4:9:int_max(int,int): $\\mathrm{a}=$ a-",
+          ""
+        ],
+        [
+          59,
+          ""
+        ],
+        [
+          69,
+          ""
+        ],
+        [
+          79,
+          ""
+        ],
+        [
+          "AOIS_8:9:int_max(int,int): $\\mathrm{b}=$ b-",
+          ""
+        ],
+        [
+          910,
+          ""
+        ],
+        [
+          "AOIS_10:10:int_max(int,int): $\\mathrm{b}=$ b-",
+          ""
+        ],
+        [
+          1112,
+          ""
+        ],
+        [
+          "AOIS_12:12:int_max(int,int): $\\mathrm{a}=$ a-",
+          ""
+        ],
+        [
+          19,
+          "(a < b)"
+        ],
+        [
+          19,
+          ""
+        ],
+        [
+          29,
+          ""
+        ],
+        [
+          310,
+          ""
+        ],
+        [
+          412,
+          ""
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "1:",
+        "public static int max(int a, int b)"
+      ],
+      "rows": [
+        [
+          2,
+          "if( $(\\mathrm{a}<\\mathrm{b}):=(\\mathrm{t}(\\mathrm{a}<\\mathrm{b})))$"
+        ],
+        [
+          3,
+          "if( $(\\mathrm{a}<\\mathrm{b}):=(\\mathrm{a}-1<\\mathrm{b}))$"
+        ],
+        [
+          4,
+          "if( $((\\mathrm{a}<\\mathrm{b}):=(\\mathrm{a}+1<\\mathrm{b}))$"
+        ],
+        [
+          5,
+          "if( $(\\mathrm{a}<\\mathrm{b}):=(\\mathrm{a}<\\mathrm{b}+1))$"
+        ],
+        [
+          6,
+          "if( $(\\mathrm{a}<\\mathrm{b}):=(\\mathrm{a}<\\mathrm{b}+1))$"
+        ],
+        [
+          7,
+          "if( $((\\mathrm{a}<\\mathrm{b}):=(\\mathrm{a}<\\mathrm{b})))$"
+        ],
+        [
+          8,
+          "if( $((\\mathrm{a}<\\mathrm{b}):=(\\mathrm{a}<\\mathrm{b})))$"
+        ],
+        [
+          9,
+          "if( $\\mathrm{a}<\\mathrm{b})$"
+        ],
+        [
+          10,
+          "if( $\\mathrm{b}):=(\\mathrm{b})$"
+        ],
+        [
+          11,
+          "if( $\\mathrm{b}):=(\\mathrm{b})$"
+        ],
+        [
+          12,
+          "return b;"
+        ],
+        [
+          13,
+          "\\}"
+        ],
+        [
+          14,
+          "else"
+        ],
+        [
+          15,
+          "if( $(\\mathrm{a}):=(\\mathrm{a})$"
+        ],
+        [
+          16,
+          "if( $(\\mathrm{a}):=(\\mathrm{a})$"
+        ],
+        [
+          17,
+          "return a;"
+        ],
+        [
+          18,
+          "\\}"
+        ],
+        [
+          19,
+          ""
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "The Five Extended Paths Before Reduction",
+      "headers": [
+        "$S^{e p}$",
+        "Expressions of $S^{e p}$"
+      ],
+      "rows": [
+        [
+          "$S_{1}^{e p}$",
+          "$<$ Start $\\rightarrow A \\rightarrow 1 \\rightarrow 2 \\rightarrow 4 \\rightarrow B \\rightarrow$ End $>$"
+        ],
+        [
+          "$S_{2}^{e p}$",
+          "$<$ Start $\\rightarrow A \\rightarrow 1 \\rightarrow 3 \\rightarrow 4 \\rightarrow B \\rightarrow$ End $>$"
+        ],
+        [
+          "$S_{3}^{e p}$",
+          "$<$ Start $\\rightarrow A \\rightarrow 5 \\rightarrow 6 \\rightarrow 7 \\rightarrow C \\rightarrow$ End $>$"
+        ],
+        [
+          "$S_{4}^{e p}$",
+          "$<$ Start $\\rightarrow A \\rightarrow 5 \\rightarrow 7 \\rightarrow C \\rightarrow$ End $>$"
+        ],
+        [
+          "$S_{5}^{e p}$",
+          "$<$ Start $\\rightarrow A \\rightarrow 1 \\rightarrow 4 \\rightarrow B \\rightarrow$ End $>$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "The Three Extended Paths After Reduction",
+      "headers": [
+        "$S^{e p}$",
+        "Representations of $S^{e p}$"
+      ],
+      "rows": [
+        [
+          "$S_{1}^{e p}$",
+          "$<$ Start $\\rightarrow A \\rightarrow 1 \\rightarrow 2 \\rightarrow 4 \\rightarrow B \\rightarrow$ End $>$"
+        ],
+        [
+          "$S_{2}^{e p}$",
+          "$<$ Start $\\rightarrow A \\rightarrow 1 \\rightarrow 3 \\rightarrow 4 \\rightarrow B \\rightarrow$ End $>$"
+        ],
+        [
+          "$S_{3}^{e p}$",
+          "$<$ Start $\\rightarrow A \\rightarrow 5 \\rightarrow 6 \\rightarrow 7 \\rightarrow C \\rightarrow$ End $>$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "IV",
+      "table_title": "EXPRESSIONS OF SIMPLE PREDICATE BRANCH FUNCTIONS [8]",
+      "headers": [
+        "$p^{p}$ *simples*",
+        "$F_{\\text {simple }}$",
+        "$r_{e l}$"
+      ],
+      "rows": [
+        [
+          "$\\varepsilon_{1}>\\varepsilon_{2}$",
+          "$\\varepsilon_{2}-\\varepsilon_{1}$",
+          "$<$"
+        ],
+        [
+          "$\\varepsilon_{1} \\geq \\varepsilon_{2}$",
+          "$\\varepsilon_{2}-\\varepsilon_{1}$",
+          "$\\leq$"
+        ],
+        [
+          "$\\varepsilon_{1}<\\varepsilon_{2}$",
+          "$\\varepsilon_{1}-\\varepsilon_{2}$",
+          "$<$"
+        ],
+        [
+          "$\\varepsilon_{1} \\leq \\varepsilon_{2}$",
+          "$\\varepsilon_{1}-\\varepsilon_{2}$",
+          "$\\leq$"
+        ],
+        [
+          "$\\varepsilon_{1}==\\varepsilon_{2}$",
+          "$a b s\\left(\\varepsilon_{1}-\\varepsilon_{2}\\right)$",
+          "$==$"
+        ],
+        [
+          "$\\varepsilon_{1}!=c_{2}$",
+          "$-a b s\\left(\\varepsilon_{1}-\\varepsilon_{2}\\right)$",
+          "$<$"
+        ],
+        [
+          "Notes: $p r_{\\text {simple }}$ is a simple predicate expression, where $\\varepsilon_{1}$",
+          "",
+          ""
+        ],
+        [
+          "and $\\varepsilon_{2}$ are arithmetic variables, $\\{<, \\leq,>, \\geq,==,!=\\}$",
+          "",
+          ""
+        ],
+        [
+          "is a set of simple predicates, $F_{\\text {simple }}$ is a simple branch function,",
+          "",
+          ""
+        ],
+        [
+          "the equivalent expression $F_{\\text {simple }} r_{e l} 0$, where $r_{e l} \\in\\{<, \\leq,==\\}$",
+          "",
+          ""
+        ],
+        [
+          "is the equivalent predicate after transformation.",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 3
+    },
+    {
+      "table_number": "V",
+      "table_title": "EXPRESSIONS OF BRANCH FUNCTIONS FOR COMPLEX PREDICATES",
+      "headers": [
+        "$p r_{\\text {complex }}$",
+        "Examples",
+        "$F_{\\text {complex }}$"
+      ],
+      "rows": [
+        [
+          "$\\& \\&$ (Only)",
+          "$p r_{\\text {simple }}^{1} \\& \\& \\cdots p r_{\\text {simple }}^{n}$",
+          "$\\max \\left(F_{\\text {simple }}^{1}, \\cdots, F_{\\text {simple }}^{n}\\right)$"
+        ],
+        [
+          "",
+          "",
+          "$\\cdots, F_{\\text {simple }}^{n}$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "VI",
+      "table_title": "THE RESULTS OF DESIGNING MBFs FOR TYPE I",
+      "headers": [
+        "Mutation <br> Operators",
+        "Descriptive <br> Mutation Operator",
+        "Mutant Branch Function $(F)$"
+      ],
+      "rows": [
+        [
+          "AOHU",
+          "Arithmetic Operator Insertion Unary",
+          "$-a b s\\left(v_{1}\\left(-v_{1}\\right)\\right)$"
+        ],
+        [
+          "AODU",
+          "Arithmetic Operator Deletion Unary",
+          "$-a b s\\left(v_{1}\\left(v_{1}\\right)\\right)$"
+        ],
+        [
+          "AODS",
+          "Arithmetic Operator Insertion Short-Cut",
+          "$-a b s\\left(v_{1}-v_{2}\\right)$"
+        ],
+        [
+          "AODS",
+          "Arithmetic Operator Deletion Short-Cut",
+          "$-a b s\\left(v_{1}-v_{2}\\right)$"
+        ],
+        [
+          "AORS",
+          "Arithmetic Operator Replacement Short-Cut",
+          "$-a b s\\left(v_{1}-v_{2}\\right)$"
+        ],
+        [
+          "LOI",
+          "Logical Operator Insertion",
+          "$-a b s\\left(v_{1}-v_{2}\\right)$ and $v_{2}=\\left(v_{1}+1\\right)$"
+        ],
+        [
+          "LOD",
+          "Logical Operator Deletion",
+          "$-a b s\\left(v_{2}-v_{1}\\right)$ and $v_{1}=\\left(v_{2}+1\\right)$"
+        ],
+        [
+          "Notes: $v_{1}$ is variable, constant or array element, and $v_{2}$ is the result of mutation for $v_{1}$",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "VII",
+      "table_title": "THE RESULTS OF DESIGNING MBFs FOR TYPE II",
+      "headers": [
+        "Mutation Types - <br> Mutation Operators",
+        "Descriptive Mutation Operator",
+        "Mutant Branch Function $(F)$"
+      ],
+      "rows": [
+        [
+          "Arithmetic Operator Replacement Binary-AORB",
+          "$\\varepsilon_{1} r_{o p} \\varepsilon_{2}$",
+          "$\\begin{aligned} & -a b s(\\varepsilon_{1} r_{o p} \\varepsilon_{2}) \\\\ & \\quad-\\left(\\varepsilon_{1} r_{o p}^{\\prime} \\varepsilon_{2}\\right) \\end{aligned}$"
+        ],
+        [
+          "Assignment Operator Replacement-ASRS",
+          "$\\varepsilon_{1} r_{o p}=\\varepsilon_{2}$",
+          "$\\begin{aligned} & -a b s\\left(\\varepsilon_{1} r_{o p} \\varepsilon_{2}\\right) \\\\ & \\quad-\\left(\\varepsilon_{1} r_{o p}^{\\prime} \\varepsilon_{2}\\right) \\end{aligned}$"
+        ],
+        [
+          "",
+          "$<=\\alpha>$",
+          "$\\varepsilon_{2}-\\varepsilon_{1}$"
+        ],
+        [
+          "",
+          "$<=\\alpha \\geq$",
+          "$\\varepsilon_{2}-\\varepsilon_{1}$"
+        ],
+        [
+          "Relational Operator Replacement-ROR",
+          "$<=\\alpha \\Rightarrow=$",
+          "$\\varepsilon_{2}-\\varepsilon_{1}$"
+        ],
+        [
+          "",
+          "$<=\\alpha \\leq$",
+          "$\\varepsilon_{2}-\\varepsilon_{1}$"
+        ],
+        [
+          "",
+          "$<=\\alpha \\uparrow=$",
+          "$\\varepsilon_{2}-\\varepsilon_{1}$"
+        ],
+        [
+          "Conditional Operator Insertion-COI",
+          "$E_{1}=\\alpha E_{2}$",
+          "$F_{E_{1}}$"
+        ],
+        [
+          "Conditional Operator Deletion-COD",
+          "$E_{1}=\\alpha E_{2}$",
+          "$F_{E_{2}}$"
+        ],
+        [
+          "Conditional Operator Replacement-COR",
+          "$E_{1}=\\alpha E_{2}$",
+          "$\\begin{gathered} a b s F_{E_{1}}-F_{E_{2}} \\\\ \\hline \\end{gathered}$"
+        ],
+        [
+          "Notes: $\\varepsilon_{1}$ and $\\varepsilon_{2}$ is variable, constant, or array element, $r_{o p}$ and $r_{o p}^{\\prime}$ ( $r_{o p}$ and $\\left.r_{o p}^{\\prime} \\in\\{+,-, *,+, \\%\\}\\right)$ are original binary operation and the binary operation after mutation, $\\Longrightarrow$ is mutation, $E_{i}(i=1,2)$ represents a variable or relational expressions, $F_{E_{i}}$ represents branch function of $E_{i}(i=1,2)$",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 3
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "Subject Programs and Mutants",
+      "headers": [
+        "ID",
+        "Program",
+        "LOCs",
+        "Methods",
+        "Mutants",
+        "Description"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "Total Equivalent",
+          ""
+        ],
+        [
+          1,
+          "TeashAndTakeOut",
+          30,
+          2,
+          111,
+          29
+        ],
+        [
+          2,
+          "Mid",
+          26,
+          1,
+          115,
+          18
+        ],
+        [
+          3,
+          "FourBalls",
+          28,
+          1,
+          213,
+          49
+        ],
+        [
+          4,
+          "Triangle",
+          36,
+          1,
+          325,
+          40
+        ],
+        [
+          5,
+          "Cal",
+          46,
+          2,
+          314,
+          43
+        ],
+        [
+          6,
+          "HelpFermatter",
+          416,
+          39,
+          291,
+          42
+        ],
+        [
+          7,
+          "WordUtils",
+          173,
+          12,
+          243,
+          34
+        ],
+        [
+          8,
+          "NumberUtils",
+          636,
+          47,
+          1406,
+          212
+        ],
+        [
+          9,
+          "Dfp",
+          1702,
+          113,
+          2133,
+          258
+        ],
+        [
+          10,
+          "FastMath",
+          2311,
+          100,
+          6486,
+          976
+        ],
+        [
+          11,
+          "ArrayUtils",
+          3258,
+          319,
+          7551,
+          795
+        ],
+        [
+          12,
+          "Jdkmath",
+          11540,
+          173,
+          31576,
+          3265
+        ],
+        [
+          13,
+          "Numbers",
+          20205,
+          340,
+          64955,
+          5023
+        ],
+        [
+          14,
+          "Colt",
+          31407,
+          3106,
+          93985,
+          7749
+        ],
+        [
+          15,
+          "Lang",
+          53261,
+          2106,
+          132197,
+          9722.0
+        ],
+        [
+          "",
+          "Sum.",
+          125075,
+          6362,
+          341901,
+          28255
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 6
+    },
+    {
+      "table_number": "IX",
+      "table_title": "Live Mutants and Equivalent Mutants After Using Randoop",
+      "headers": [
+        "ID",
+        "Total Test Data",
+        "Live Equivalent Live/Total (\\%) Equivalent/Total (\\%)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          1,
+          111,
+          5000,
+          29,
+          29,
+          26.13
+        ],
+        [
+          2,
+          115,
+          5000,
+          18,
+          18,
+          15.65
+        ],
+        [
+          3,
+          213,
+          5000,
+          50,
+          49,
+          23.47
+        ],
+        [
+          4,
+          325,
+          5000,
+          42,
+          40,
+          12.92
+        ],
+        [
+          5,
+          314,
+          5000,
+          45,
+          43,
+          14.33
+        ],
+        [
+          6,
+          291,
+          5000,
+          42,
+          42,
+          14.43
+        ],
+        [
+          7,
+          243,
+          5000,
+          35,
+          34,
+          14.4
+        ],
+        [
+          8,
+          1406,
+          15000,
+          217,
+          212,
+          15.43
+        ],
+        [
+          9,
+          2133,
+          15000,
+          260,
+          258,
+          12.19
+        ],
+        [
+          10,
+          6486,
+          15000,
+          980,
+          976,
+          15.11
+        ],
+        [
+          11,
+          7551,
+          15000,
+          800,
+          795,
+          10.59
+        ],
+        [
+          12,
+          31576,
+          15000,
+          3269,
+          3265,
+          10.35
+        ],
+        [
+          13,
+          64955,
+          15000,
+          5027,
+          5023,
+          7.74
+        ],
+        [
+          14,
+          93985,
+          25000,
+          7754,
+          7749,
+          8.25
+        ],
+        [
+          15,
+          132197,
+          25000,
+          9727,
+          9722,
+          7.36
+        ],
+        [
+          "Sum.",
+          341901,
+          105000,
+          28295,
+          28255,
+          8.28
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    },
+    {
+      "table_number": "X",
+      "table_title": "Live Mutants and Equivalent Mutants After Using Randoop",
+      "headers": [
+        "ID",
+        "Total Test Data",
+        "Live Equivalent Live/Total (\\%) Equivalent/Total (\\%)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          1,
+          111,
+          5000,
+          29,
+          29,
+          26.13
+        ],
+        [
+          2,
+          115,
+          5000,
+          18,
+          18,
+          15.65
+        ],
+        [
+          3,
+          213,
+          5000,
+          50,
+          49,
+          23.47
+        ],
+        [
+          4,
+          325,
+          5000,
+          42,
+          40,
+          12.92
+        ],
+        [
+          5,
+          314,
+          5000,
+          45,
+          43,
+          14.33
+        ],
+        [
+          6,
+          291,
+          5000,
+          42,
+          42,
+          14.43
+        ],
+        [
+          7,
+          243,
+          5000,
+          35,
+          34,
+          14.4
+        ],
+        [
+          8,
+          1406,
+          15000,
+          217,
+          212,
+          15.43
+        ],
+        [
+          9,
+          2133,
+          15000,
+          260,
+          258,
+          12.19
+        ],
+        [
+          10,
+          6486,
+          15000,
+          980,
+          976,
+          15.11
+        ],
+        [
+          11,
+          7551,
+          15000,
+          800,
+          795,
+          10.59
+        ],
+        [
+          12,
+          31576,
+          15000,
+          3269,
+          3265,
+          10.35
+        ],
+        [
+          13,
+          64955,
+          15000,
+          5027,
+          5023,
+          7.74
+        ],
+        [
+          14,
+          93985,
+          25000,
+          7754,
+          7749,
+          8.25
+        ],
+        [
+          15,
+          132197,
+          25000,
+          9727,
+          9722,
+          7.36
+        ],
+        [
+          "Sum.",
+          341901,
+          105000,
+          28295,
+          28255,
+          8.28
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    },
+    {
+      "table_number": "X",
+      "table_title": "The Range of $\\operatorname{Dif}(M)$ Under Each Mutant Category",
+      "headers": [
+        "Mutant Category",
+        "The Range of $D i f(M)$"
+      ],
+      "rows": [
+        [
+          "Easy",
+          "$[0,0.25]$"
+        ],
+        [
+          "Middle",
+          "$(0.25,0.5]$"
+        ],
+        [
+          "Difficult",
+          "$(0.5,0.75]$"
+        ],
+        [
+          "Very difficult",
+          "$(0.75,1]$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "XI",
+      "table_title": "The Parameters Used by TAMMEA and Other Five Techniques",
+      "headers": [
+        "Parameters",
+        "Parameter Values",
+        "Parameter Description"
+      ],
+      "rows": [
+        [
+          "$P^{(0)}$",
+          "$(0.5, \\cdots, 0.5)$",
+          "Initial probability vector"
+        ],
+        [
+          "Pop",
+          100,
+          "Population size"
+        ],
+        [
+          "$p_{m}$",
+          0.95,
+          "Mutation probability"
+        ],
+        [
+          "$p_{c}$",
+          0.05,
+          "Crossover probability"
+        ],
+        [
+          "$r_{0} / r_{1}$",
+          0.5,
+          "Benchmarks of $\\alpha$"
+        ],
+        [
+          "$N_{\\text {test }}$",
+          5,
+          "Number of excellent individuals"
+        ],
+        [
+          "$N_{\\text {sub-size }}$",
+          5,
+          "Sub-population size"
+        ],
+        [
+          "$N_{\\text {size }}$",
+          500,
+          "Maximum number of iterations"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "XIII",
+      "table_title": "T-Test Results of Comparing TAMMEA and Eight Benchmark Methods",
+      "headers": [
+        "Comparison <br> Methods",
+        "Mean Standard <br> Value Deviation",
+        "Standard <br> Error",
+        "$\\begin{gathered} 95 \\% \\\\ \\text { Confidence Interval } \\end{gathered}$",
+        "p-Value <br> (Bilateral)"
+      ],
+      "rows": [
+        [
+          "",
+          "Lower Limit",
+          "Upper Limit",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 5
+    },
+    {
+      "table_number": "XIV",
+      "table_title": "The Time of Generating Test Data With TAMMEA Under Each Program",
+      "headers": [
+        "ID",
+        "Time (ms)",
+        "ID",
+        "Time (ms)",
+        "ID",
+        "Time (ms)"
+      ],
+      "rows": [
+        [
+          1,
+          199.18,
+          6,
+          631.36,
+          11,
+          9538.36
+        ],
+        [
+          2,
+          56.24,
+          7,
+          212.78,
+          12,
+          21238.37
+        ],
+        [
+          3,
+          200.23,
+          8,
+          666.06,
+          13,
+          21138.38
+        ],
+        [
+          4,
+          200.37,
+          9,
+          4196.83,
+          14,
+          62201.68
+        ],
+        [
+          5,
+          500.67,
+          10,
+          4626.97,
+          15,
+          99914.69
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "XV",
+      "table_title": "T-TEST RESULTS OF COMPARING TAMMEA AND RANDOM UNDER THE SAME Time CONSTRAINT",
+      "headers": [
+        "Comparison <br> Methods",
+        "Mean <br> Value",
+        "Standard <br> Deviation",
+        "Standard <br> Error",
+        "95\\% <br> Confidence",
+        "",
+        "p-Value <br> (Bilateral)"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "Lower",
+          "Upper",
+          ""
+        ],
+        [
+          "TAMMEA vs. Random",
+          12.38,
+          4.45,
+          1.15,
+          9.92,
+          14.85,
+          0.0
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    }
+  ]
+}

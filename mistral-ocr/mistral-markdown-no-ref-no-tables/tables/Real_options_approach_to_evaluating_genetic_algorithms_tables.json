@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/Real options approach to evaluating genetic algorithms.md",
+    "filename": "Real options approach to evaluating genetic algorithms.md",
+    "title": "Real options approach to evaluating genetic algorithms",
+    "year": "2009"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Option values from simulating cGA and PBIL with minimum population size.",
+      "headers": [
+        "Problems",
+        "Algorithms",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "cGA",
+          "",
+          "PBIL",
+          ""
+        ],
+        [
+          "",
+          "Option value $(f)$",
+          "Difficulty index $(f / F)$",
+          "Option value $(f)$",
+          "Difficulty index $(f / F)$"
+        ],
+        [
+          "30-bit OneMax $(F=30)$",
+          30.0,
+          1.0,
+          30.0,
+          1.0
+        ],
+        [
+          "3-Trap $\\times 10(F=30)$",
+          27.0,
+          0.9,
+          26.53,
+          0.88
+        ],
+        [
+          "5-Trap $\\times 6(F=30)$",
+          24.03,
+          0.8,
+          24.7,
+          0.82
+        ],
+        [
+          "27-bit HTrap $(F=81)$",
+          77.74,
+          0.96,
+          61.53,
+          0.76
+        ],
+        [
+          "32-bit HIFF $(F=192)$",
+          138.34,
+          0.72,
+          126.01,
+          0.66
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Option values from simulating cGA, PBIL and UMDA with large population.",
+      "headers": [
+        "Problems",
+        "Algorithms",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "cGA",
+          "",
+          "PBIL",
+          "",
+          "UMDA",
+          ""
+        ],
+        [
+          "",
+          "Option value $(f)$",
+          "Difficulty index $(f / F)$",
+          "Option value $(f)$",
+          "Difficulty index $(f / F)$",
+          "Option value $(f)$",
+          "Difficulty index $(f / F)$"
+        ],
+        [
+          "30-bit OneMax $(F=30)$",
+          30.0,
+          1.0,
+          30.0,
+          1.0,
+          29.99,
+          1.0
+        ],
+        [
+          "3-Trap $\\times 10(F=30)$",
+          26.06,
+          0.87,
+          29.94,
+          1.0,
+          24.41,
+          0.81
+        ],
+        [
+          "5-Trap $\\times 6(F=30)$",
+          24.93,
+          0.83,
+          24.0,
+          0.8,
+          23.98,
+          0.8
+        ],
+        [
+          "27-bit HTrap $(F=81)$",
+          45.19,
+          0.56,
+          76.27,
+          0.94,
+          51.44,
+          0.64
+        ],
+        [
+          "32-bit HIFF $(F=192)$",
+          116.58,
+          0.61,
+          132.82,
+          0.69,
+          108.92,
+          0.57
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Option values from simulating cGA, PBIL and UMDA with a discount rate of $5 \\%$ and $10 \\%$.",
+      "headers": [
+        "Problems",
+        "Algorithms",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "cGA",
+          "",
+          "PBIL",
+          "",
+          "UMDA",
+          ""
+        ],
+        [
+          "",
+          5,
+          10,
+          5,
+          10,
+          5,
+          10
+        ],
+        [
+          "30-bit OneMax",
+          14.52,
+          13.37,
+          13.86,
+          13.19,
+          18.35,
+          14.18
+        ],
+        [
+          "3-Trap $\\times 10$",
+          9.63,
+          8.87,
+          9.13,
+          8.65,
+          10.93,
+          8.65
+        ],
+        [
+          "5-Trap $\\times 6$",
+          9.8,
+          9.02,
+          9.32,
+          8.77,
+          13.54,
+          9.45
+        ],
+        [
+          "27-bit HTrap",
+          11.7,
+          10.73,
+          11.0,
+          10.48,
+          23.4,
+          12.09
+        ],
+        [
+          "32-bit HIFF",
+          49.68,
+          47.18,
+          49.31,
+          47.06,
+          49.39,
+          47.07
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    }
+  ]
+}

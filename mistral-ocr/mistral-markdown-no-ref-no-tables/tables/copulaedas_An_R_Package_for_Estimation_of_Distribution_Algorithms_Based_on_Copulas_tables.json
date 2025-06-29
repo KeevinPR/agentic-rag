@@ -1,0 +1,625 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/copulaedas An R Package for Estimation of Distribution Algorithms Based on Copulas.md",
+    "filename": "copulaedas An R Package for Estimation of Distribution Algorithms Based on Copulas.md",
+    "title": "copulaedas An R Package for Estimation of Distribution Algorithms Based on Copulas",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Generic function",
+        "Description"
+      ],
+      "rows": [
+        [
+          "edaSeed",
+          "Seeding method. The default method edaSeedUniform generates the values of each variable in the initial population from a continuous uniform distribution."
+        ],
+        [
+          "edaOptimize",
+          "Local optimization method. The use of a local optimization method is disabled by default."
+        ],
+        [
+          "edaSelect",
+          "Selection method. The default method edaSelectTruncation implements truncation selection."
+        ],
+        [
+          "edaLearn",
+          "Learning method. No default method."
+        ],
+        [
+          "edaSample",
+          "Sampling method. No default method."
+        ],
+        [
+          "edaReplace",
+          "Replacement method. The default method edaReplaceComplete completely replaces the current population with the new population."
+        ],
+        [
+          "edaReport",
+          "Reporting method. Reporting progress information is disabled by default."
+        ],
+        [
+          "edaTerminate",
+          "Termination method. The default method edaTerminateMaxGen ends the execution of the algorithm after a maximum number of generations."
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Slot",
+        "Description"
+      ],
+      "rows": [
+        [
+          "eda",
+          "'EDA' instance."
+        ],
+        [
+          "f",
+          "Objective function."
+        ],
+        [
+          "lower",
+          "Lower bounds of the variables of the objective function."
+        ],
+        [
+          "upper",
+          "Upper bounds of the variables of the objective function."
+        ],
+        [
+          "numGens",
+          "Total number of generations."
+        ],
+        [
+          "fEvals",
+          "Total number of evaluations of the objective function."
+        ],
+        [
+          "bestSol",
+          "Best solution."
+        ],
+        [
+          "bestEval",
+          "Evaluation of the best solution."
+        ],
+        [
+          "cpuTime",
+          "Run time of the algorithm in seconds."
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Generations",
+        "Evaluations",
+        "Best Evaluation",
+        "CPU Time"
+      ],
+      "rows": [
+        [
+          1,
+          33,
+          6600,
+          "$8.483830 \\mathrm{e}-07$",
+          7.583
+        ],
+        [
+          2,
+          38,
+          7600,
+          "$4.789448 \\mathrm{e}-08$",
+          8.829
+        ],
+        [
+          3,
+          36,
+          7200,
+          "$4.798364 \\mathrm{e}-07$",
+          8.333
+        ],
+        [
+          4,
+          37,
+          7400,
+          "$9.091651 \\mathrm{e}-07$",
+          8.772
+        ],
+        [
+          5,
+          34,
+          6800,
+          "$5.554465 \\mathrm{e}-07$",
+          7.83
+        ],
+        [
+          6,
+          35,
+          7000,
+          "$3.516341 \\mathrm{e}-07$",
+          8.071
+        ],
+        [
+          7,
+          35,
+          7000,
+          "$9.325531 \\mathrm{e}-07$",
+          8.106
+        ],
+        [
+          8,
+          35,
+          7000,
+          "$6.712550 \\mathrm{e}-07$",
+          8.327
+        ],
+        [
+          9,
+          36,
+          7200,
+          "$8.725061 \\mathrm{e}-07$",
+          8.283
+        ],
+        [
+          10,
+          37,
+          7400,
+          "$2.411458 \\mathrm{e}-07$",
+          8.565
+        ],
+        [
+          11,
+          36,
+          7200,
+          "$4.291725 \\mathrm{e}-07$",
+          8.337
+        ],
+        [
+          12,
+          35,
+          7000,
+          "$7.245520 \\mathrm{e}-07$",
+          8.313
+        ],
+        [
+          13,
+          37,
+          7400,
+          "$2.351322 \\mathrm{e}-07$",
+          8.538
+        ],
+        [
+          14,
+          36,
+          7200,
+          "$8.651248 \\mathrm{e}-07$",
+          8.32
+        ],
+        [
+          15,
+          34,
+          6800,
+          "$9.422646 \\mathrm{e}-07$",
+          7.821
+        ],
+        [
+          16,
+          35,
+          7000,
+          "$9.293726 \\mathrm{e}-07$",
+          8.333
+        ],
+        [
+          17,
+          36,
+          7200,
+          "$6.007390 \\mathrm{e}-07$",
+          8.274
+        ],
+        [
+          18,
+          38,
+          7600,
+          "$3.255231 \\mathrm{e}-07$",
+          8.763
+        ],
+        [
+          19,
+          36,
+          7200,
+          "$6.012969 \\mathrm{e}-07$",
+          8.353
+        ],
+        [
+          20,
+          35,
+          7000,
+          "$5.627017 \\mathrm{e}-07$",
+          8.296
+        ],
+        [
+          21,
+          36,
+          7200,
+          "$5.890752 \\mathrm{e}-07$",
+          8.259
+        ],
+        [
+          22,
+          35,
+          7000,
+          "$9.322505 \\mathrm{e}-07$",
+          8.067
+        ],
+        [
+          23,
+          35,
+          7000,
+          "$4.822349 \\mathrm{e}-07$",
+          8.084
+        ],
+        [
+          24,
+          34,
+          6800,
+          "$7.895408 \\mathrm{e}-07$",
+          7.924
+        ],
+        [
+          ":--",
+          "--:",
+          "--:",
+          "--:",
+          "--:"
+        ],
+        [
+          25,
+          36,
+          7200,
+          "$6.970180 \\mathrm{e}-07$",
+          8.519
+        ],
+        [
+          26,
+          34,
+          6800,
+          "$3.990247 \\mathrm{e}-07$",
+          7.808
+        ],
+        [
+          27,
+          35,
+          7000,
+          "$8.876874 \\mathrm{e}-07$",
+          8.055
+        ],
+        [
+          28,
+          33,
+          6600,
+          "$8.646387 \\mathrm{e}-07$",
+          7.622
+        ],
+        [
+          29,
+          36,
+          7200,
+          "$9.072113 \\mathrm{e}-07$",
+          8.519
+        ],
+        [
+          30,
+          35,
+          7000,
+          "$9.414666 \\mathrm{e}-07$",
+          8.04
+        ]
+      ],
+      "row_count": 31,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Generations",
+        "Evaluations",
+        "Best Evaluation",
+        "CPU Time"
+      ],
+      "rows": [
+        [
+          "Minimum",
+          33.0,
+          6600.0,
+          "$4.789448 \\mathrm{e}-08$",
+          7.583
+        ],
+        [
+          "Median",
+          35.0,
+          7000.0,
+          "$6.841365 \\mathrm{e}-07$",
+          8.2895
+        ],
+        [
+          "Maximum",
+          38.0,
+          7600.0,
+          "$9.422646 \\mathrm{e}-07$",
+          8.829
+        ],
+        [
+          "Mean",
+          35.433333,
+          7086.6667,
+          "$6.538616 \\mathrm{e}-07$",
+          8.2314667
+        ],
+        [
+          "Std. Dev.",
+          1.250747,
+          250.1494,
+          "$2.557100 \\mathrm{e}-07$",
+          0.3181519
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Algorithm",
+        "Success",
+        "Pop.",
+        "Evaluations",
+        "Best Evaluation",
+        "CPU Time"
+      ],
+      "rows": [
+        [
+          "Sphere:",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          "$30 / 30$",
+          81,
+          "$3788.1 \\pm 99.0$",
+          "$6.7 \\mathrm{e}-07 \\pm 2.0 \\mathrm{e}-07$",
+          "$0.2 \\pm 0.0$"
+        ],
+        [
+          "GCEDA",
+          "$30 / 30$",
+          310,
+          "$13102.6 \\pm 180.8$",
+          "$6.8 \\mathrm{e}-07 \\pm 2.0 \\mathrm{e}-07$",
+          "$0.4 \\pm 0.0$"
+        ],
+        [
+          "CVEDA",
+          "$30 / 30$",
+          104,
+          "$4804.8 \\pm 99.9$",
+          "$5.9 \\mathrm{e}-07 \\pm 1.6 \\mathrm{e}-07$",
+          "$4.5 \\pm 0.8$"
+        ],
+        [
+          "DVEDA",
+          "$30 / 30$",
+          111,
+          "$5080.1 \\pm 111.6$",
+          "$6.5 \\mathrm{e}-07 \\pm 2.3 \\mathrm{e}-07$",
+          "$4.4 \\pm 0.8$"
+        ],
+        [
+          "Copula MIMIC",
+          "$30 / 30$",
+          172,
+          "$7441.8 \\pm 127.2$",
+          "$6.8 \\mathrm{e}-07 \\pm 1.9 \\mathrm{e}-07$",
+          "$65.6 \\pm 1.2$"
+        ],
+        [
+          "Summation Cancellation:",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          "$0 / 30$",
+          2000,
+          "$300000.0 \\pm 0.0$",
+          "$-7.2 \\mathrm{e}+02 \\pm 4.5 \\mathrm{e}+02$",
+          "$32.5 \\pm 0.3$"
+        ],
+        [
+          "GCEDA",
+          "$30 / 30$",
+          325,
+          "$38913.3 \\pm 268.9$",
+          "$-1.0 \\mathrm{e}+05 \\pm 1.0 \\mathrm{e}-07$",
+          "$4.2 \\pm 0.1$"
+        ],
+        [
+          "CVEDA",
+          "$30 / 30$",
+          294,
+          "$41228.6 \\pm 1082.7$",
+          "$-1.0 \\mathrm{e}+05 \\pm 1.0 \\mathrm{e}-07$",
+          "$279.1 \\pm 5.1$"
+        ],
+        [
+          "DVEDA",
+          "$30 / 30$",
+          965,
+          "$117022.3 \\pm 1186.8$",
+          "$-1.0 \\mathrm{e}+05 \\pm 1.1 \\mathrm{e}-07$",
+          "$1617.5 \\pm 39.1$"
+        ],
+        [
+          "Copula MIMIC",
+          "$0 / 30$",
+          2000,
+          "$300000.0 \\pm 0.0$",
+          "$-4.2 \\mathrm{e}+04 \\pm 3.5 \\mathrm{e}+04$",
+          "$1510.6 \\pm 54.9$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Generations",
+        "Evaluations",
+        "Best Evaluation",
+        "CPU Time"
+      ],
+      "rows": [
+        [
+          "Minimum",
+          100,
+          140000,
+          -30.56036,
+          1421.957
+        ],
+        [
+          "Median",
+          100,
+          140000,
+          -29.387815,
+          2409.068
+        ],
+        [
+          "Maximum",
+          100,
+          140000,
+          -23.076769,
+          3301.596
+        ],
+        [
+          "Mean",
+          100,
+          140000,
+          -29.139028,
+          2400.4166
+        ],
+        [
+          "Std. Dev.",
+          0,
+          0,
+          1.486381,
+          462.9442
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Generations",
+        "Evaluations",
+        "Best Evaluation",
+        "CPU Time"
+      ],
+      "rows": [
+        [
+          "Minimum",
+          100,
+          120000,
+          -30.93501,
+          1928.203
+        ],
+        [
+          "Median",
+          100,
+          120000,
+          -30.70019,
+          3075.796
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Summary of the results obtained in 30 independent runs of CVEDA and DVEDA for the docking of the $2 \\mathrm{z} 5 \\mathrm{u}$ test system. Pop. denotes Population.",
+      "headers": [
+        "Maximum",
+        "100",
+        "120000",
+        "-24.015024872 .1820"
+      ],
+      "rows": [
+        [
+          "Mean",
+          100,
+          120000,
+          "-30.014273053 .9579"
+        ],
+        [
+          "Std. Dev.",
+          0,
+          0,
+          "1.68583695 .0071"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Journal of Statistical Software",
+        "http://www.jstatsoft.org/"
+      ],
+      "rows": [
+        [
+          "published by the American Statistical Association",
+          "http://www.amstat.org/"
+        ],
+        [
+          589,
+          "Submitted: 2012-02-17"
+        ],
+        [
+          2014,
+          "Accepted: 2014-01-06"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    }
+  ]
+}

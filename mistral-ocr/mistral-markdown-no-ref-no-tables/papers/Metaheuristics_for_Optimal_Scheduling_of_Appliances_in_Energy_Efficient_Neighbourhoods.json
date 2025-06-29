@@ -1,0 +1,746 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Metaheuristics for Optimal Scheduling of Appliances in Energy Efficient Neighbourhoods.md",
+    "filename": "Metaheuristics for Optimal Scheduling of Appliances in Energy Efficient Neighbourhoods.md",
+    "title": "Metaheuristics for Optimal Scheduling of Appliances in Energy Efficient Neighbourhoods",
+    "year": "2021"
+  },
+  "references": {
+    "header": "# References",
+    "content": "1. Ata, M., Erenoğlu, A.K., Şengör, İ, Erdinç, O., Taşcıkaraoğlu, A., Catalâo, J.P.: Optimal operation of a multi-energy system considering renewable energy sources stochasticity and impacts of electric vehicles. Energy 186, 115841 (2019)\n2. Barbato, A., Capone, A., Carello, G., Delfanti, M., Merlo, M., Zaminga, A.: House energy demand optimization in single and multi-user scenarios. In: 2011 IEEE International Conference on Smart Grid Communications (SmartGridComm), pp. $345-350$. IEEE (2011)\n3. Beiranvand, V., Hare, W., Lucet, Y.: Best practices for comparing optimization algorithms. Optim. Eng. 18(4), 815-848 (2017). https://doi.org/10.1007/s11081-017-9366-1\n4. Bouakkaz, A., Haddad, S., Gil Mena, A.J.: Optimal peak power shaving through household appliance scheduling in off-grid renewable energy system. In: 2019 IEEE International Conference on Environment and Electrical Engineering and 2019 IEEE Industrial and Commercial Power Systems Europe (EEEIC/I CPS Europe), pp. 1-6 (2019). https://doi.org/10.1109/EEEIC.2019.8783662\n5. Chavali, P., Yang, P., Nehorai, A.: A distributed algorithm of appliance scheduling for home energy management system. IEEE Trans. Smart Grid 5(1), 282-290 (2014)\n\n6. Dorahaki, S., Dashti, R., Shaker, H.R.: Optimal energy management in the smart microgrid considering the electrical energy storage system and the demand-side energy efficiency program. J. Energy Storage 28, 101229 (2020)\n7. Esnaola-Gonzalez, I., Jelić, M., Pujić, D., Díez, F., Tomasevic, N.: An AI-powered system for residential demand response. Electronics 10 (2021). https://doi.org/10. 3390/electronics10060693\n8. Gould, N., Scott, J.: A note on performance profiles for benchmarking software. ACM Trans. Math. Softw. (TOMS) 43(2), 1-5 (2016)\n9. Huang, L., Walrand, J., Ramchandran, K.: Optimal demand response with energy storage management. In: 2012 IEEE Third International Conference on Smart Grid Communications (SmartGridComm), pp. 61-66. IEEE (2012)\n10. Jamil, A., Javaid, N., Aslam, S.: An efficient home energy optimization by using meta-heuristic techniques while incorporating game-theoretic approach for realtime coordination among home appliances. In: 2018 5th International Multi-Topic ICT Conference (IMTIC), pp. 1-6 (2018). https://doi.org/10.1109/IMTIC. 2018. 8467218\n11. Lorestani, A., Aghaee, S.S., Gharehpetian, G.B., Ardehali, M.M.: Energy management in smart home including PV panel, battery, electric heater with integration of plug-in electric vehicle. In: 2017 Smart Grid Conference (SGC), pp. 1-7 (2017). https://doi.org/10.1109/SGC.2017.8308855\n12. Mirabbasi, D., Beydaghi, S.: Optimal scheduling of smart home appliances considering PHEV and energy storage system. In: 2015 4th International Conference on Electric Power and Energy Conversion Systems (EPECS), pp. 1-6 (2015). https:// doi.org/10.1109/EPECS.2015.7368510\n13. Nan, S., Zhou, M., Li, G.: Optimal residential community demand response scheduling in smart grid. Appl. Energy 210, 1280-1289 (2018)\n14. Yu, Y., Wang, W., Kuang, H.: A two-stage scheduling on household appliances including electric vehicles. In: 2016 3rd International Conference on Systems and Informatics (ICSAI), pp. 258-262 (2016). https://doi.org/10.1109/ICSAI. 2016. 7810964",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Ata, M., Erenoğlu, A.K., Şengör, İ, Erdinç, O., Taşcıkaraoğlu, A., Catalâo, J.P.: Optimal operation of a multi-energy system considering renewable energy sources stochasticity and impacts of electric vehicles. Energy 186, 115841 (2019)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Barbato, A., Capone, A., Carello, G., Delfanti, M., Merlo, M., Zaminga, A.: House energy demand optimization in single and multi-user scenarios. In: 2011 IEEE International Conference on Smart Grid Communications (SmartGridComm), pp. $345-350$. IEEE (2011)"
+      },
+      {
+        "ref_id": "3",
+        "text": "Beiranvand, V., Hare, W., Lucet, Y.: Best practices for comparing optimization algorithms. Optim. Eng. 18(4), 815-848 (2017). https://doi.org/10.1007/s11081-017-9366-1"
+      },
+      {
+        "ref_id": "4",
+        "text": "Bouakkaz, A., Haddad, S., Gil Mena, A.J.: Optimal peak power shaving through household appliance scheduling in off-grid renewable energy system. In: 2019 IEEE International Conference on Environment and Electrical Engineering and 2019 IEEE Industrial and Commercial Power Systems Europe (EEEIC/I CPS Europe), pp. 1-6 (2019). https://doi.org/10.1109/EEEIC.2019.8783662"
+      },
+      {
+        "ref_id": "5",
+        "text": "Chavali, P., Yang, P., Nehorai, A.: A distributed algorithm of appliance scheduling for home energy management system. IEEE Trans. Smart Grid 5(1), 282-290 (2014)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Dorahaki, S., Dashti, R., Shaker, H.R.: Optimal energy management in the smart microgrid considering the electrical energy storage system and the demand-side energy efficiency program. J. Energy Storage 28, 101229 (2020)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Esnaola-Gonzalez, I., Jelić, M., Pujić, D., Díez, F., Tomasevic, N.: An AI-powered system for residential demand response. Electronics 10 (2021). https://doi.org/10. 3390/electronics10060693"
+      },
+      {
+        "ref_id": "8",
+        "text": "Gould, N., Scott, J.: A note on performance profiles for benchmarking software. ACM Trans. Math. Softw. (TOMS) 43(2), 1-5 (2016)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Huang, L., Walrand, J., Ramchandran, K.: Optimal demand response with energy storage management. In: 2012 IEEE Third International Conference on Smart Grid Communications (SmartGridComm), pp. 61-66. IEEE (2012)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Jamil, A., Javaid, N., Aslam, S.: An efficient home energy optimization by using meta-heuristic techniques while incorporating game-theoretic approach for realtime coordination among home appliances. In: 2018 5th International Multi-Topic ICT Conference (IMTIC), pp. 1-6 (2018). https://doi.org/10.1109/IMTIC. 2018. 8467218"
+      },
+      {
+        "ref_id": "11",
+        "text": "Lorestani, A., Aghaee, S.S., Gharehpetian, G.B., Ardehali, M.M.: Energy management in smart home including PV panel, battery, electric heater with integration of plug-in electric vehicle. In: 2017 Smart Grid Conference (SGC), pp. 1-7 (2017). https://doi.org/10.1109/SGC.2017.8308855"
+      },
+      {
+        "ref_id": "12",
+        "text": "Mirabbasi, D., Beydaghi, S.: Optimal scheduling of smart home appliances considering PHEV and energy storage system. In: 2015 4th International Conference on Electric Power and Energy Conversion Systems (EPECS), pp. 1-6 (2015). https:// doi.org/10.1109/EPECS.2015.7368510"
+      },
+      {
+        "ref_id": "13",
+        "text": "Nan, S., Zhou, M., Li, G.: Optimal residential community demand response scheduling in smart grid. Appl. Energy 210, 1280-1289 (2018)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Yu, Y., Wang, W., Kuang, H.: A two-stage scheduling on household appliances including electric vehicles. In: 2016 3rd International Conference on Systems and Informatics (ICSAI), pp. 258-262 (2016). https://doi.org/10.1109/ICSAI. 2016. 7810964"
+      }
+    ],
+    "reference_count": 14,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Algorithms variants used in the experiments.",
+      "headers": [
+        "Algorithm",
+        "List type",
+        "Tabu tenure",
+        "ID"
+      ],
+      "rows": [
+        [
+          "Tabu Search",
+          "R/L",
+          10,
+          1
+        ],
+        [
+          "",
+          "",
+          100,
+          2
+        ],
+        [
+          "",
+          "",
+          500,
+          3
+        ],
+        [
+          "",
+          "Position",
+          10,
+          4
+        ],
+        [
+          "",
+          "",
+          100,
+          5
+        ],
+        [
+          "",
+          "",
+          500,
+          6
+        ],
+        [
+          "Algorithm",
+          "Selection method",
+          "\\% reserved probability",
+          "ID"
+        ],
+        [
+          "EDA-UMDA",
+          "Rank",
+          0,
+          1
+        ],
+        [
+          "",
+          "",
+          0.01,
+          2
+        ],
+        [
+          "",
+          "",
+          0.05,
+          3
+        ],
+        [
+          "",
+          "",
+          0.1,
+          4
+        ],
+        [
+          "",
+          "Tournament",
+          0,
+          5
+        ],
+        [
+          "",
+          "",
+          0.01,
+          6
+        ],
+        [
+          "",
+          "",
+          0.05,
+          7
+        ],
+        [
+          "",
+          "",
+          0.1,
+          8
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 shows the results of the performance obtained by the Tabu Search variants, while Table 3 shows the results of the performance of the EDA variants.",
+      "headers": [
+        "",
+        "",
+        "Time",
+        "",
+        "",
+        "",
+        "Optimal value",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Number of households",
+          "ID",
+          "Min",
+          "Max",
+          "Mean",
+          "SD",
+          "Min",
+          "Max",
+          "Mean",
+          "SD"
+        ],
+        [
+          10,
+          1,
+          "$2 e^{-3}$",
+          17.7,
+          4.31,
+          1.76,
+          0,
+          2838,
+          235,
+          269
+        ],
+        [
+          10,
+          4,
+          "$2.79 e^{-3}$",
+          24.7,
+          6.03,
+          5.51,
+          0,
+          1703,
+          141,
+          161
+        ],
+        [
+          10,
+          2,
+          0,
+          15.6,
+          4.74,
+          1.79,
+          0,
+          840,
+          133,
+          73.9
+        ],
+        [
+          10,
+          5,
+          "$5 e^{-3}$",
+          17.4,
+          3.96,
+          1.94,
+          0,
+          882,
+          123,
+          60.3
+        ],
+        [
+          10,
+          3,
+          "$2.99 e^{-3}$",
+          13.5,
+          2.91,
+          1.24,
+          0,
+          927,
+          181,
+          89.8
+        ],
+        [
+          10,
+          6,
+          "$4.99 e^{-3}$",
+          22.4,
+          4.84,
+          2.07,
+          0,
+          662,
+          130,
+          64.1
+        ],
+        [
+          100,
+          1,
+          7.5,
+          779,
+          254,
+          83.8,
+          2,
+          5778,
+          1099,
+          565
+        ],
+        [
+          100,
+          4,
+          10.5,
+          1090,
+          355,
+          117,
+          1.2,
+          3467,
+          659,
+          339
+        ],
+        [
+          100,
+          2,
+          7.42,
+          1827,
+          475,
+          188,
+          6,
+          3388,
+          779,
+          371
+        ],
+        [
+          100,
+          5,
+          10.1,
+          1716,
+          420,
+          150,
+          8,
+          2788,
+          627,
+          384
+        ],
+        [
+          100,
+          3,
+          4.84,
+          1127,
+          93,
+          108,
+          6,
+          4178,
+          891,
+          462
+        ],
+        [
+          100,
+          6,
+          8.06,
+          1878,
+          489,
+          179,
+          4,
+          2984,
+          637,
+          330
+        ],
+        [
+          200,
+          1,
+          21.3,
+          3854,
+          1007,
+          393,
+          6,
+          5646,
+          1142,
+          589
+        ],
+        [
+          200,
+          4,
+          29.8,
+          5396,
+          1409,
+          550,
+          4,
+          3388,
+          814,
+          354
+        ],
+        [
+          200,
+          2,
+          22.5,
+          6786,
+          1896,
+          662,
+          4,
+          5278,
+          816,
+          502
+        ],
+        [
+          200,
+          5,
+          20.1,
+          8869,
+          1847,
+          739,
+          6,
+          4212,
+          744,
+          440
+        ],
+        [
+          200,
+          3,
+          10.5,
+          5421,
+          1431,
+          666,
+          12,
+          5900,
+          1244,
+          718
+        ],
+        [
+          200,
+          6,
+          17.5,
+          5875,
+          1800,
+          632,
+          8,
+          4126,
+          956,
+          434
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 10
+    },
+    {
+      "table_number": "3",
+      "table_title": "Performance of EDA algorithm variants.",
+      "headers": [
+        "",
+        "",
+        "Time",
+        "",
+        "",
+        "",
+        "Optimal value",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Number of households",
+          "ID",
+          "Min",
+          "Max",
+          "Mean",
+          "SD",
+          "Min",
+          "Max",
+          "Mean",
+          "SD"
+        ],
+        [
+          10,
+          1,
+          8.53,
+          43.8,
+          24.9,
+          1.87,
+          0,
+          3458,
+          1349,
+          390
+        ],
+        [
+          10,
+          5,
+          8.41,
+          41.6,
+          25.8,
+          0.89,
+          0,
+          3730,
+          752,
+          382
+        ],
+        [
+          10,
+          2,
+          8.03,
+          150,
+          55.5,
+          18.2,
+          0,
+          1034,
+          498,
+          126
+        ],
+        [
+          10,
+          6,
+          7.63,
+          118,
+          39.2,
+          10.7,
+          0,
+          630,
+          272,
+          82.9
+        ],
+        [
+          10,
+          3,
+          8.32,
+          126,
+          36.7,
+          12.5,
+          0,
+          3098,
+          1393,
+          224
+        ],
+        [
+          10,
+          7,
+          8.67,
+          132,
+          45.3,
+          13.6,
+          0,
+          1262,
+          494,
+          106
+        ],
+        [
+          10,
+          4,
+          9.98,
+          151,
+          44.1,
+          15,
+          0,
+          3718,
+          1672,
+          269
+        ],
+        [
+          10,
+          8,
+          10.3,
+          105,
+          41.5,
+          12.4,
+          0,
+          2584,
+          1044,
+          168
+        ],
+        [
+          100,
+          1,
+          101,
+          788,
+          304,
+          47.8,
+          120,
+          13042,
+          6338,
+          717
+        ],
+        [
+          100,
+          5,
+          97.3,
+          509,
+          310,
+          7.85,
+          130,
+          4640,
+          2019,
+          454
+        ],
+        [
+          100,
+          2,
+          86.5,
+          707,
+          314,
+          73.2,
+          350,
+          14000,
+          7508,
+          745
+        ],
+        [
+          100,
+          6,
+          138,
+          1241,
+          495,
+          156,
+          125,
+          7366,
+          3347,
+          483
+        ],
+        [
+          100,
+          3,
+          74.3,
+          381,
+          205,
+          7.86,
+          1950,
+          24564,
+          11541,
+          1626
+        ],
+        [
+          100,
+          7,
+          90.9,
+          551,
+          272,
+          61.1,
+          1078,
+          20048,
+          10692,
+          834
+        ],
+        [
+          100,
+          4,
+          89.2,
+          457,
+          246,
+          9.43,
+          2600,
+          29477,
+          13849,
+          1951
+        ],
+        [
+          100,
+          8,
+          81,
+          349,
+          229,
+          15.6,
+          2588,
+          26066,
+          12165,
+          1745
+        ],
+        [
+          200,
+          1,
+          175,
+          904,
+          498,
+          85.5,
+          1450,
+          20902,
+          11377,
+          1547
+        ],
+        [
+          200,
+          5,
+          208,
+          1108,
+          661,
+          22.4,
+          274,
+          7088,
+          2780,
+          746
+        ],
+        [
+          200,
+          2,
+          151,
+          816,
+          475,
+          63,
+          1590,
+          21512,
+          11782,
+          1428
+        ],
+        [
+          200,
+          6,
+          213,
+          1049,
+          618,
+          84.8,
+          522,
+          16592,
+          8299,
+          627
+        ],
+        [
+          200,
+          3,
+          149,
+          606,
+          391,
+          4.93,
+          3482,
+          25826,
+          14117,
+          2239
+        ],
+        [
+          200,
+          7,
+          164,
+          681,
+          474,
+          26.2,
+          3198,
+          27654,
+          14795,
+          2367
+        ],
+        [
+          200,
+          4,
+          179,
+          727,
+          469,
+          5.92,
+          4178,
+          30991,
+          16940,
+          2687
+        ],
+        [
+          200,
+          8,
+          159,
+          674,
+          434,
+          3.93,
+          3904,
+          32860,
+          16109,
+          2026
+        ]
+      ],
+      "row_count": 25,
+      "column_count": 10
+    }
+  ]
+}

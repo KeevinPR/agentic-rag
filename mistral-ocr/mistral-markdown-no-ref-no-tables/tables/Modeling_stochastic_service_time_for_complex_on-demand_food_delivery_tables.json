@@ -1,0 +1,384 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Modeling stochastic service time for complex on-demand food delivery.md",
+    "filename": "Modeling stochastic service time for complex on-demand food delivery.md",
+    "title": "Modeling stochastic service time for complex on-demand food delivery",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 The notations of the problem",
+      "headers": [
+        "Notation",
+        "Description"
+      ],
+      "rows": [
+        [
+          "$i$",
+          "Index of data"
+        ],
+        [
+          "$k$",
+          "Index of components"
+        ],
+        [
+          "$n$",
+          "Number of available data"
+        ],
+        [
+          "$n_{\\mathrm{d}}$",
+          "Number of unique data"
+        ],
+        [
+          "$K$",
+          "Number of components"
+        ],
+        [
+          "$K_{\\max }$",
+          "Upper bound of component numbers"
+        ],
+        [
+          "$t$",
+          "Vector of service time, $\\boldsymbol{t}=\\left\\{t_{1}, t_{2}, \\ldots, t_{n}\\right\\}$"
+        ],
+        [
+          "$t^{n}$",
+          "Vector of unique service time, $\\boldsymbol{t}^{n}=\\left\\{t_{1}^{n}, t_{2}^{n}, \\ldots, t_{n_{d}}^{n}\\right\\}$"
+        ],
+        [
+          "$f_{\\mathrm{k}}$",
+          "Distribution of the $k$ th Gaussian component"
+        ],
+        [
+          "$w_{k}$",
+          "Weight of the $k$ th Gaussian component"
+        ],
+        [
+          "$\\mu_{k}$",
+          "Mean of the $k$ th Gaussian component"
+        ],
+        [
+          "$\\sigma_{k}^{2}$",
+          "Variance of the $k$ th Gaussian component"
+        ],
+        [
+          "$\\boldsymbol{\\mu}$",
+          "Vector of all the means, $\\boldsymbol{\\mu}=\\left\\{\\mu_{1}, \\mu_{2}, \\ldots, \\mu_{K}\\right\\}$"
+        ],
+        [
+          "w",
+          "Vector of all the weights, $\\boldsymbol{w}=\\left\\{w_{1}, w_{2}, \\ldots, w_{K}\\right\\}$"
+        ],
+        [
+          "$\\sigma^{2}$",
+          "Vector of all the variances, $\\sigma^{2}=\\left\\{\\sigma_{1}^{2}, \\sigma_{2}^{2}, \\ldots, \\sigma_{K}^{2}\\right\\}$"
+        ],
+        [
+          "$\\boldsymbol{\\theta}$",
+          "Vector of all the parameters of the $\\operatorname{GMM}, \\boldsymbol{\\theta}=\\left\\{K, \\boldsymbol{w}, \\boldsymbol{\\mu}, \\boldsymbol{\\sigma}^{2}\\right\\}$"
+        ],
+        [
+          "$z$",
+          "Vector of the clustering results of all the data, $z=\\left\\{z_{1}, z_{2}, \\ldots, z_{n}\\right\\}$"
+        ],
+        [
+          "$f_{\\mathrm{d}}$",
+          "The distribution of obtained GMM"
+        ],
+        [
+          "$f_{\\mathrm{s}}$",
+          "The distribution of historical service time"
+        ],
+        [
+          "$W_{\\mathrm{d}}$",
+          "Wasserstein distance between two distributions"
+        ],
+        [
+          "$\\lambda$",
+          "Penalty coefficient of $K$"
+        ],
+        [
+          "$\\varepsilon$",
+          "Objective <br> function. $\\varepsilon=W_{\\mathrm{d}}\\left(f_{\\mathrm{s}}(\\boldsymbol{t}), f_{\\mathrm{d}}(\\boldsymbol{t} ; \\boldsymbol{\\theta})\\right)+\\lambda K$"
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Combinations of parameter values",
+      "headers": [
+        "Parameters",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rows": [
+        [
+          "Pn",
+          50,
+          100,
+          150,
+          200
+        ],
+        [
+          "$\\boldsymbol{e}_{\\boldsymbol{n}}$",
+          5,
+          10,
+          15,
+          20
+        ],
+        [
+          "$\\boldsymbol{\\alpha}$",
+          0.2,
+          0.4,
+          0.6,
+          0.8
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Orthogonal array and RV values",
+      "headers": [
+        "Pn",
+        "$\\boldsymbol{e}_{\\boldsymbol{n}}$",
+        "$\\boldsymbol{\\alpha}$",
+        "RV"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          1,
+          0.113443
+        ],
+        [
+          1,
+          2,
+          2,
+          0.110163
+        ],
+        [
+          1,
+          3,
+          3,
+          0.109773
+        ],
+        [
+          1,
+          4,
+          4,
+          0.111208
+        ],
+        [
+          2,
+          1,
+          2,
+          0.11045
+        ],
+        [
+          2,
+          2,
+          1,
+          0.112905
+        ],
+        [
+          2,
+          3,
+          4,
+          0.110893
+        ],
+        [
+          2,
+          4,
+          3,
+          0.111915
+        ],
+        [
+          3,
+          1,
+          3,
+          0.112769
+        ],
+        [
+          3,
+          2,
+          4,
+          0.111772
+        ],
+        [
+          3,
+          3,
+          1,
+          0.113471
+        ],
+        [
+          3,
+          4,
+          2,
+          0.112926
+        ],
+        [
+          4,
+          1,
+          4,
+          0.114224
+        ],
+        [
+          4,
+          2,
+          3,
+          0.10979
+        ],
+        [
+          4,
+          3,
+          2,
+          0.111676
+        ],
+        [
+          4,
+          4,
+          1,
+          0.116223
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Response value and rank of each parameter",
+      "headers": [
+        "Level",
+        "Pn",
+        "$\\boldsymbol{e}_{\\boldsymbol{n}}$",
+        "$\\boldsymbol{\\alpha}$"
+      ],
+      "rows": [
+        [
+          1,
+          0.111147,
+          0.112722,
+          0.11401
+        ],
+        [
+          2,
+          0.111541,
+          0.111157,
+          0.111304
+        ],
+        [
+          3,
+          0.112735,
+          0.111453,
+          0.111062
+        ],
+        [
+          4,
+          0.112978,
+          0.113068,
+          0.112024
+        ],
+        [
+          "Delta",
+          0.001831,
+          0.001911,
+          0.002949
+        ],
+        [
+          "Rank",
+          3,
+          2,
+          1
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 The results of the online A/B test",
+      "headers": [
+        "Metric",
+        "Comparison dates",
+        "",
+        "",
+        "Experimental dates",
+        "",
+        "",
+        "$\\Delta_{t r u}$"
+      ],
+      "rows": [
+        [
+          "",
+          "C-region",
+          "E-region",
+          "$\\Delta_{\\text {inh }}$",
+          "C-region",
+          "E-region",
+          "$\\Delta_{\\text {exp }}$",
+          ""
+        ],
+        [
+          "$\\mathrm{PR}_{5}$",
+          "$98.68 \\%$",
+          "$98.66 \\%$",
+          "$-0.02 \\%$",
+          "$97.14 \\%$",
+          "$97.47 \\%$",
+          "$0.33 \\%$",
+          "$0.35 \\%$"
+        ],
+        [
+          "$\\mathrm{OR}_{15}$",
+          "$0.21 \\%$",
+          "$0.25 \\%$",
+          "$0.04 \\%$",
+          "$0.72 \\%$",
+          "$0.55 \\%$",
+          "$-0.17 \\%$",
+          "$-0.21 \\%$"
+        ],
+        [
+          "$\\mathrm{PP}_{55}$",
+          "$0.67 \\%$",
+          "$0.65 \\%$",
+          "$-0.02 \\%$",
+          "$4.02 \\%$",
+          "$3.24 \\%$",
+          "$-0.77 \\%$",
+          "$-0.75 \\%$"
+        ],
+        [
+          "AODT",
+          25.7542,
+          26.1753,
+          "$1.64 \\%$",
+          30.5559,
+          30.2188,
+          "$-1.10 \\%$",
+          "$-2.74 \\%$"
+        ],
+        [
+          "ATE",
+          4.8523,
+          4.9164,
+          "$1.32 \\%$",
+          5.2246,
+          5.366,
+          "$2.71 \\%$",
+          "$1.39 \\%$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 8
+    }
+  ]
+}

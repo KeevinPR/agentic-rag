@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Collaborative Optimization Design for Centralized Networked Control System.md",
+    "filename": "Collaborative Optimization Design for Centralized Networked Control System.md",
+    "title": "Collaborative Optimization Design for Centralized Networked Control System",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The optimal solution of MVB sampling period and the initial phase.",
+      "headers": [
+        "$\\mathrm{T}_{1}, \\varphi_{1,1}$",
+        "$\\mathrm{~T}_{1}, \\varphi_{1,2}$",
+        "$\\mathrm{~T}_{2}, \\varphi_{2,1}$",
+        "$\\mathrm{~T}_{2}, \\varphi_{2,2}$",
+        "$\\mathrm{~T}_{3}, \\varphi_{3,1}$",
+        "$\\mathrm{~T}_{3}, \\varphi_{3,2}$",
+        "$\\mathrm{~T}_{4}, \\varphi_{4,1}$",
+        "$\\mathrm{~T}_{4}, \\varphi_{4,2}$",
+        "$\\mathrm{~T}_{5}, \\varphi_{5,1}$",
+        "$\\mathrm{~T}_{5}, \\varphi_{5,2}$",
+        "Fitness",
+        "U\\%"
+      ],
+      "rows": [
+        [
+          20,
+          20,
+          62,
+          64,
+          60,
+          62,
+          120,
+          124,
+          126,
+          1210,
+          100,
+          53.0
+        ],
+        [
+          20,
+          20,
+          60,
+          62,
+          62,
+          60,
+          1210,
+          124,
+          1810,
+          184,
+          100,
+          51.53
+        ],
+        [
+          20,
+          20,
+          64,
+          60,
+          84,
+          80,
+          126,
+          1210,
+          128,
+          122,
+          100,
+          50.79
+        ],
+        [
+          20,
+          20,
+          62,
+          64,
+          82,
+          84,
+          120,
+          126,
+          168,
+          1614,
+          100,
+          49.69
+        ],
+        [
+          20,
+          20,
+          64,
+          62,
+          108,
+          104,
+          106,
+          100,
+          186,
+          1812,
+          100,
+          48.88
+        ],
+        [
+          20,
+          20,
+          64,
+          60,
+          62,
+          64,
+          122,
+          126,
+          168,
+          160,
+          66.67,
+          51.9
+        ],
+        [
+          20,
+          20,
+          64,
+          62,
+          102,
+          106,
+          126,
+          120,
+          1810,
+          1814,
+          52.4,
+          47.99
+        ],
+        [
+          20,
+          20,
+          64,
+          60,
+          104,
+          108,
+          128,
+          122,
+          166,
+          162,
+          40.0,
+          48.36
+        ],
+        [
+          20,
+          20,
+          64,
+          62,
+          100,
+          106,
+          126,
+          120,
+          140,
+          1410,
+          22.58,
+          48.84
+        ],
+        [
+          20,
+          20,
+          64,
+          62,
+          108,
+          102,
+          140,
+          148,
+          180,
+          186,
+          18.81,
+          47.36
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 12
+    },
+    {
+      "table_number": "2",
+      "table_title": "Network device address and port allocation table.",
+      "headers": [
+        "device",
+        "device address",
+        "source port",
+        "sink port"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          4001,
+          4002
+        ],
+        [
+          1,
+          2,
+          4002,
+          4001
+        ],
+        [
+          2,
+          3,
+          4003,
+          4004
+        ],
+        [
+          2,
+          4,
+          4004,
+          4003
+        ],
+        [
+          3,
+          5,
+          4005,
+          4006
+        ],
+        [
+          3,
+          6,
+          4006,
+          4005
+        ],
+        [
+          4,
+          7,
+          4007,
+          4008
+        ],
+        [
+          4,
+          8,
+          4008,
+          4007
+        ],
+        [
+          5,
+          9,
+          4009,
+          400
+        ],
+        [
+          5,
+          0,
+          400,
+          4009
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Real-time performance of test data 1 (time unit: ms).",
+      "headers": [
+        "",
+        "min delay",
+        "",
+        "max delay",
+        "",
+        "average delay",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\theta_{d 1}$",
+          "$\\theta_{d 2}$",
+          "$\\theta_{d 3}$",
+          "$\\theta_{d 2}$",
+          "$\\theta_{d 3}$",
+          "$\\theta_{d 2}$"
+        ],
+        [
+          1,
+          0.53,
+          0.27,
+          0.53,
+          0.27,
+          0.53,
+          0.27
+        ],
+        [
+          2,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        [
+          3,
+          1.06,
+          0.8,
+          1.06,
+          0.8,
+          1.06,
+          0.8
+        ],
+        [
+          4,
+          1.06,
+          1.06,
+          1.06,
+          1.06,
+          1.06,
+          1.06
+        ],
+        [
+          5,
+          1.06,
+          1.06,
+          1.06,
+          1.06,
+          1.06,
+          1.06
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Real-time performance of test data 2 (time unit: ms).",
+      "headers": [
+        "",
+        "min delay",
+        "",
+        "max delay",
+        "",
+        "average delay",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\theta_{s 1}$",
+          "$\\theta_{s 2}$",
+          "$\\theta_{s 1}$",
+          "$\\theta_{s 2}$",
+          "$\\theta_{s 1}$",
+          "$\\theta_{s 2}$"
+        ],
+        [
+          1,
+          0.53,
+          0.27,
+          0.53,
+          0.27,
+          0.53,
+          0.27
+        ],
+        [
+          2,
+          1.06,
+          0.8,
+          1.06,
+          0.8,
+          1.06,
+          0.8
+        ],
+        [
+          3,
+          3.06,
+          2.8,
+          3.06,
+          2.8,
+          3.06,
+          2.8
+        ],
+        [
+          4,
+          5.06,
+          4.8,
+          5.06,
+          4.8,
+          5.06,
+          4.8
+        ],
+        [
+          5,
+          11.06,
+          10.8,
+          11.06,
+          10.8,
+          11.06,
+          10.8
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Real-time performance of test data 3 (time unit: ms).",
+      "headers": [
+        "",
+        "min delay",
+        "",
+        "max delay",
+        "",
+        "average delay",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\theta_{s 1}$",
+          "$\\theta_{s 2}$",
+          "$\\theta_{s 1}$",
+          "$\\theta_{s 2}$",
+          "$\\theta_{s 1}$",
+          "$\\theta_{s 2}$"
+        ],
+        [
+          1,
+          0.53,
+          0.27,
+          0.53,
+          0.27,
+          0.53,
+          0.27
+        ],
+        [
+          2,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        [
+          3,
+          0.8,
+          0.8,
+          1.06,
+          1.06,
+          0.9,
+          0.9
+        ],
+        [
+          4,
+          0.8,
+          0.8,
+          3.06,
+          3.06,
+          1.41,
+          1.41
+        ],
+        [
+          5,
+          0.8,
+          0.8,
+          3.06,
+          3.06,
+          1.2,
+          1.2
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    }
+  ]
+}

@@ -1,0 +1,737 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2015/Comprehensive characterization of the behaviors of estimation of distribution algorithms.md",
+    "filename": "Comprehensive characterization of the behaviors of estimation of distribution algorithms.md",
+    "title": "Comprehensive characterization of the behaviors of estimation of distribution algorithms",
+    "year": "2015"
+  },
+  "references": {
+    "header": "# References",
+    "content": "[1] M. Zlochin, M. Birattari, N. Meuleau, M. Dorigo, Model-based search for combinatorial optimization: a critical survey, Ann. Oper. Res. 131 (2004) $373-395$.\n[2] J.A. Lozano, P. Larrañaga, I. Inza, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, Springer-Verlag, 2006.\n[3] D.H. Wolpert, D. Rajnarayan, Using machine learning to improve stochastic optimization, in: Late-Breaking Developments in the Field of Artificial Intelligence. Papers Presented at the Twenty-Seventh AAAI Conference on Artificial Intelligence, AAAI Press, Palo Alto, California, 2013.\n[4] Z. Botev, D.P. Kroese, R.Y. Rubinstein, P. L'Ecuyer, The cross-entropy method for optimization, in: Machine Learning: Theory and Applications, in: Handbook of Statistics, vol. 31, 2013, pp. 35-59.\n[5] H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions I. Binary parameters, in: Parallel Problem Solving from Nature, PPSN IV, in: Lecture Notes in Computer Science, vol. 1141, Springer-Verlag, Berlin, 1996, pp. 178-187.\n[6] P. Larrañaga, J.A. Lozano (Eds.), Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Boston/Dordrecht/London, 2002.\n[7] M. Pelikan, Hierarchical Bayesian Optimization Algorithm. Toward a New Generation of Evolutionary Algorithms, Studies in Fuzziness and Soft Computing, Springer, 2005.\n[8] P.A. Bosman, The anticipated mean shift and cluster registration in mixture-based EDAs for multi-objective optimization, in: Proceedings of the Genetic and Evolutionary Computation Conference, GECCO-2010, ACM Press, 2010, pp. 351-358.\n[9] M. Hauschild, M. Pelikan, K. Sastry, D.E. Goldberg, Using previous models to bias structural learning in the hierarchical BOA, Evol. Comput. 20 (2012) $135-160$.\n[10] P. Larrañaga, H. Karshenas, C. Bielza, R. Santana, A review on probabilistic graphical models in evolutionary computation, J. Heuristics 18 (2012) $795-819$.\n[11] R. Armañanzas, I. Inza, R. Santana, Y. Saeys, J.L. Flores, J.A. Lozano, Y. Van de Peer, R. Blanco, V. Robles, C. Bielza, P. Larrañaga, A review of estimation of distribution algorithms in bioinformatics, BioData Min. 1 (2008) 1-12.\n[12] R. Santana, P. Larrañaga, J.A. Lozano, Protein folding in simplified models with estimation of distribution algorithms, IEEE Trans. Evol. Comput. 12 (2008) 418-438.\n[13] A. Brownlee, M. Pelikan, J. McCall, A. Petrovski, An application of a multivariate estimation of distribution algorithm to cancer chemotherapy, in: Proceedings of the 10th Genetic and Evolutionary Computation Conference, GECCO-2008, ACM, 2008, pp. 1033-1040.\n[14] Q. Zhang, On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm, IEEE Trans. Evol. Comput. 8 (2004) 80-93.\n[15] J.L. Shapiro, Drift and scaling in estimation of distribution algorithms, Evol. Comput. 13 (2005) 99-123.\n[16] C. Echegoyen, Q. Zhang, A. Mendiburu, R. Santana, J.A. Lozano, On the limits of effectiveness in estimation of distribution algorithms, in: Proceedings of the 2011 Congress on Evolutionary Computation, CEC-2011, IEEE Press, New Orleans, USA, 2011, pp. 1573-1580.\n[17] E.A. Eiben, J.E. Smith, Introduction to Evolutionary Computing, Natural Computing Series, Springer, 2003.\n[18] C. González, J.A. Lozano, P. Larrañaga, Mathematical modeling of UMDAc algorithm with tournament selection. Behaviour on linear and quadratic functions, Internat. J. Approx. Reason. 31 (2002) 313-340.\n[19] Q. Zhang, H. Mühlenbein, On the convergence of a class of estimation of distribution algorithms, IEEE Trans. Evol. Comput. 8 (2004) 127-136.\n[20] J. Chen, K. Tang, G. Chen, X. Yao, Analysis of computational time of simple estimation of distribution algorithms, IEEE Trans. Evol. Comput. 14 (2010) $1-22$.\n[21] M. Hauschild, M. Pelikan, K. Sastry, C. Lima, Analyzing probabilistic models in hierarchical BOA, IEEE Trans. Evol. Comput. 13 (2009) 1199-1217.\n[22] C. Echegoyen, A. Mendiburu, R. Santana, J.A. Lozano, Towards understanding EDAs based on Bayesian networks through a quantitative analysis, IEEE Trans. Evol. Comput. 16 (2012) 173-189.\n[23] C. Echegoyen, A. Mendiburu, R. Santana, J.A. Lozano, On the taxonomy of optimization problems under estimation of distribution algorithms, Evol. Comput. 21 (2013).\n[24] E. Castillo, J.M. Gutierrez, A.S. Hadi, Expert Systems and Probabilistic Network Models, Springer-Verlag, 1997.\n[25] H. Mühlenbein, T. Mahnig, A. Ochoa, Schemata, distributions and graphical models in evolutionary optimization, J. Heuristics 5 (1999) 213-247.\n[26] S. Shakya, R. Santana (Eds.), Markov Networks in Evolutionary Computation, Springer, 2012.\n[27] Y. Gao, J.C. Culberson, Space complexity of estimation of distribution algorithms, Evol. Comput. 13 (2005) 125-143.\n[28] D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison-Wesley, Reading, MA, 1989.\n[29] R. Santana, P. Larrañaga, J.A. Lozano, Research topics on discrete estimation of distribution algorithms, Memetic Comput. 1 (2009) 35-54.\n[30] M.D. Vose, The Simple Genetic Algorithm: Foundations and Theory, MIT Press, 1999.\n[31] B. Doerr, C. Winzen, Ranking-based black-box complexity, Algorithmica 68 (3) (2014) 571-609, http://dx.doi.org/10.1007/s00453-012-9684-9.\n[32] C. González, J.A. Lozano, P. Larrañaga, Analyzing the PBIL algorithm by means of discrete dynamical systems, Complex Systems 12 (2001) 465-479.\n[33] H. Mühlenbein, The equation for response to selection and its use for prediction, Evol. Comput. 5 (1998) 303-346.\n[34] G. Harik, Linkage learning via probabilistic modeling in the ECGA, IlliGAI, report 99010, University of Illinois at Urbana-Champaign, Illinois Genetic Algorithms Laboratory, Urbana, IL, 1999.\n[35] S.L. Lauritzen, Graphical Models, Clarendon Press, Oxford, 1996.\n[36] A. Ochoa, M.R. Soto, R. Santana, J. Madera, N. Jorge, The factorized distribution algorithm and the junction tree: a learning perspective, in: A. Ochoa, M.R. Soto, R. Santana (Eds.), Proceedings of the Second Symposium on Artificial Intelligence, CIMAF-99, Havana, Cuba, 1999, pp. 368-377.\n[37] A.H. Wright, S. Pulavarty, Estimation of distribution algorithm based on linkage discovery and factorization, in: H.-G. Beyer, U.-M. O'Reilly (Eds.), Proceedings of Genetic and Evolutionary Computation Conference, GECCO-2005, ACM, Washington, D.C., USA, 2005, pp. 695-703.\n[38] C. Echegoyen, Contributions to the analysis and understanding of estimation of distribution algorithms, Ph.D. thesis, University of the Basque Country, 2012.\n[39] R. Santana, C. Bielza, J.A. Lozano, P. Larrañaga, Mining probabilistic models learned by EDAs in the optimization of multi-objective problems, in: Proceedings of the 11th Annual Genetic and Evolutionary Computation Conference, GECCO-2009, ACM, New York, NY, USA, 2009, pp. 445-452.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "M. Zlochin, M. Birattari, N. Meuleau, M. Dorigo, Model-based search for combinatorial optimization: a critical survey, Ann. Oper. Res. 131 (2004) $373-395$."
+      },
+      {
+        "ref_id": "2",
+        "text": "J.A. Lozano, P. Larrañaga, I. Inza, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, Springer-Verlag, 2006."
+      },
+      {
+        "ref_id": "3",
+        "text": "D.H. Wolpert, D. Rajnarayan, Using machine learning to improve stochastic optimization, in: Late-Breaking Developments in the Field of Artificial Intelligence. Papers Presented at the Twenty-Seventh AAAI Conference on Artificial Intelligence, AAAI Press, Palo Alto, California, 2013."
+      },
+      {
+        "ref_id": "4",
+        "text": "Z. Botev, D.P. Kroese, R.Y. Rubinstein, P. L'Ecuyer, The cross-entropy method for optimization, in: Machine Learning: Theory and Applications, in: Handbook of Statistics, vol. 31, 2013, pp. 35-59."
+      },
+      {
+        "ref_id": "5",
+        "text": "H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions I. Binary parameters, in: Parallel Problem Solving from Nature, PPSN IV, in: Lecture Notes in Computer Science, vol. 1141, Springer-Verlag, Berlin, 1996, pp. 178-187."
+      },
+      {
+        "ref_id": "6",
+        "text": "P. Larrañaga, J.A. Lozano (Eds.), Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Boston/Dordrecht/London, 2002."
+      },
+      {
+        "ref_id": "7",
+        "text": "M. Pelikan, Hierarchical Bayesian Optimization Algorithm. Toward a New Generation of Evolutionary Algorithms, Studies in Fuzziness and Soft Computing, Springer, 2005."
+      },
+      {
+        "ref_id": "8",
+        "text": "P.A. Bosman, The anticipated mean shift and cluster registration in mixture-based EDAs for multi-objective optimization, in: Proceedings of the Genetic and Evolutionary Computation Conference, GECCO-2010, ACM Press, 2010, pp. 351-358."
+      },
+      {
+        "ref_id": "9",
+        "text": "M. Hauschild, M. Pelikan, K. Sastry, D.E. Goldberg, Using previous models to bias structural learning in the hierarchical BOA, Evol. Comput. 20 (2012) $135-160$."
+      },
+      {
+        "ref_id": "10",
+        "text": "P. Larrañaga, H. Karshenas, C. Bielza, R. Santana, A review on probabilistic graphical models in evolutionary computation, J. Heuristics 18 (2012) $795-819$."
+      },
+      {
+        "ref_id": "11",
+        "text": "R. Armañanzas, I. Inza, R. Santana, Y. Saeys, J.L. Flores, J.A. Lozano, Y. Van de Peer, R. Blanco, V. Robles, C. Bielza, P. Larrañaga, A review of estimation of distribution algorithms in bioinformatics, BioData Min. 1 (2008) 1-12."
+      },
+      {
+        "ref_id": "12",
+        "text": "R. Santana, P. Larrañaga, J.A. Lozano, Protein folding in simplified models with estimation of distribution algorithms, IEEE Trans. Evol. Comput. 12 (2008) 418-438."
+      },
+      {
+        "ref_id": "13",
+        "text": "A. Brownlee, M. Pelikan, J. McCall, A. Petrovski, An application of a multivariate estimation of distribution algorithm to cancer chemotherapy, in: Proceedings of the 10th Genetic and Evolutionary Computation Conference, GECCO-2008, ACM, 2008, pp. 1033-1040."
+      },
+      {
+        "ref_id": "14",
+        "text": "Q. Zhang, On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm, IEEE Trans. Evol. Comput. 8 (2004) 80-93."
+      },
+      {
+        "ref_id": "15",
+        "text": "J.L. Shapiro, Drift and scaling in estimation of distribution algorithms, Evol. Comput. 13 (2005) 99-123."
+      },
+      {
+        "ref_id": "16",
+        "text": "C. Echegoyen, Q. Zhang, A. Mendiburu, R. Santana, J.A. Lozano, On the limits of effectiveness in estimation of distribution algorithms, in: Proceedings of the 2011 Congress on Evolutionary Computation, CEC-2011, IEEE Press, New Orleans, USA, 2011, pp. 1573-1580."
+      },
+      {
+        "ref_id": "17",
+        "text": "E.A. Eiben, J.E. Smith, Introduction to Evolutionary Computing, Natural Computing Series, Springer, 2003."
+      },
+      {
+        "ref_id": "18",
+        "text": "C. González, J.A. Lozano, P. Larrañaga, Mathematical modeling of UMDAc algorithm with tournament selection. Behaviour on linear and quadratic functions, Internat. J. Approx. Reason. 31 (2002) 313-340."
+      },
+      {
+        "ref_id": "19",
+        "text": "Q. Zhang, H. Mühlenbein, On the convergence of a class of estimation of distribution algorithms, IEEE Trans. Evol. Comput. 8 (2004) 127-136."
+      },
+      {
+        "ref_id": "20",
+        "text": "J. Chen, K. Tang, G. Chen, X. Yao, Analysis of computational time of simple estimation of distribution algorithms, IEEE Trans. Evol. Comput. 14 (2010) $1-22$."
+      },
+      {
+        "ref_id": "21",
+        "text": "M. Hauschild, M. Pelikan, K. Sastry, C. Lima, Analyzing probabilistic models in hierarchical BOA, IEEE Trans. Evol. Comput. 13 (2009) 1199-1217."
+      },
+      {
+        "ref_id": "22",
+        "text": "C. Echegoyen, A. Mendiburu, R. Santana, J.A. Lozano, Towards understanding EDAs based on Bayesian networks through a quantitative analysis, IEEE Trans. Evol. Comput. 16 (2012) 173-189."
+      },
+      {
+        "ref_id": "23",
+        "text": "C. Echegoyen, A. Mendiburu, R. Santana, J.A. Lozano, On the taxonomy of optimization problems under estimation of distribution algorithms, Evol. Comput. 21 (2013)."
+      },
+      {
+        "ref_id": "24",
+        "text": "E. Castillo, J.M. Gutierrez, A.S. Hadi, Expert Systems and Probabilistic Network Models, Springer-Verlag, 1997."
+      },
+      {
+        "ref_id": "25",
+        "text": "H. Mühlenbein, T. Mahnig, A. Ochoa, Schemata, distributions and graphical models in evolutionary optimization, J. Heuristics 5 (1999) 213-247."
+      },
+      {
+        "ref_id": "26",
+        "text": "S. Shakya, R. Santana (Eds.), Markov Networks in Evolutionary Computation, Springer, 2012."
+      },
+      {
+        "ref_id": "27",
+        "text": "Y. Gao, J.C. Culberson, Space complexity of estimation of distribution algorithms, Evol. Comput. 13 (2005) 125-143."
+      },
+      {
+        "ref_id": "28",
+        "text": "D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison-Wesley, Reading, MA, 1989."
+      },
+      {
+        "ref_id": "29",
+        "text": "R. Santana, P. Larrañaga, J.A. Lozano, Research topics on discrete estimation of distribution algorithms, Memetic Comput. 1 (2009) 35-54."
+      },
+      {
+        "ref_id": "30",
+        "text": "M.D. Vose, The Simple Genetic Algorithm: Foundations and Theory, MIT Press, 1999."
+      },
+      {
+        "ref_id": "31",
+        "text": "B. Doerr, C. Winzen, Ranking-based black-box complexity, Algorithmica 68 (3) (2014) 571-609, http://dx.doi.org/10.1007/s00453-012-9684-9."
+      },
+      {
+        "ref_id": "32",
+        "text": "C. González, J.A. Lozano, P. Larrañaga, Analyzing the PBIL algorithm by means of discrete dynamical systems, Complex Systems 12 (2001) 465-479."
+      },
+      {
+        "ref_id": "33",
+        "text": "H. Mühlenbein, The equation for response to selection and its use for prediction, Evol. Comput. 5 (1998) 303-346."
+      },
+      {
+        "ref_id": "34",
+        "text": "G. Harik, Linkage learning via probabilistic modeling in the ECGA, IlliGAI, report 99010, University of Illinois at Urbana-Champaign, Illinois Genetic Algorithms Laboratory, Urbana, IL, 1999."
+      },
+      {
+        "ref_id": "35",
+        "text": "S.L. Lauritzen, Graphical Models, Clarendon Press, Oxford, 1996."
+      },
+      {
+        "ref_id": "36",
+        "text": "A. Ochoa, M.R. Soto, R. Santana, J. Madera, N. Jorge, The factorized distribution algorithm and the junction tree: a learning perspective, in: A. Ochoa, M.R. Soto, R. Santana (Eds.), Proceedings of the Second Symposium on Artificial Intelligence, CIMAF-99, Havana, Cuba, 1999, pp. 368-377."
+      },
+      {
+        "ref_id": "37",
+        "text": "A.H. Wright, S. Pulavarty, Estimation of distribution algorithm based on linkage discovery and factorization, in: H.-G. Beyer, U.-M. O'Reilly (Eds.), Proceedings of Genetic and Evolutionary Computation Conference, GECCO-2005, ACM, Washington, D.C., USA, 2005, pp. 695-703."
+      },
+      {
+        "ref_id": "38",
+        "text": "C. Echegoyen, Contributions to the analysis and understanding of estimation of distribution algorithms, Ph.D. thesis, University of the Basque Country, 2012."
+      },
+      {
+        "ref_id": "39",
+        "text": "R. Santana, C. Bielza, J.A. Lozano, P. Larrañaga, Mining probabilistic models learned by EDAs in the optimization of multi-objective problems, in: Proceedings of the 11th Annual Genetic and Evolutionary Computation Conference, GECCO-2009, ACM, New York, NY, USA, 2009, pp. 445-452."
+      }
+    ],
+    "reference_count": 39,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Example of ranking $\\pi$ induced by an injective function for $n=3$.",
+      "headers": [
+        "$f(\\boldsymbol{x})$",
+        "$\\pi$",
+        "Rank"
+      ],
+      "rows": [
+        [
+          100,
+          "$(1,1,1)$",
+          1
+        ],
+        [
+          50,
+          "$(0,1,0)$",
+          2
+        ],
+        [
+          45,
+          "$(0,0,1)$",
+          3
+        ],
+        [
+          20,
+          "$(1,0,0)$",
+          4
+        ],
+        [
+          10,
+          "$(0,1,1)$",
+          5
+        ],
+        [
+          3,
+          "$(1,0,1)$",
+          6
+        ],
+        [
+          1,
+          "$(1,1,0)$",
+          7
+        ],
+        [
+          0,
+          "$(0,0,0)$",
+          8
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Example with $n=2$ of the arrangement of the probability vectors and their relationship with the probability distributions.",
+      "headers": [
+        "$\\pi_{1}$",
+        "$\\mathbf{p}_{t}$",
+        "$p(\\boldsymbol{x}, t)$",
+        "$\\mathbf{p}_{t}^{c}$"
+      ],
+      "rows": [
+        [
+          "$(1,1)$",
+          "$p_{1}$",
+          "$p(\\pi(1))=p(1,1)$",
+          "$p_{1}^{t}$"
+        ],
+        [
+          "$(0,1)$",
+          "$p_{2}$",
+          "$p(\\pi(2))=p(0,1)$",
+          "$p_{2}^{t}$"
+        ],
+        [
+          "$(0,0)$",
+          "$p_{3}$",
+          "$p(\\pi(3))=p(0,0)$",
+          "$p_{3}^{t}$"
+        ],
+        [
+          "$(1,0)$",
+          "$p_{4}$",
+          "$p(\\pi(4))=p(1,0)$",
+          "$p_{4}^{t}$"
+        ],
+        [
+          "$\\pi_{2}$",
+          "$\\mathbf{p}_{t}$",
+          "$p(\\boldsymbol{x}, t)$",
+          "$\\mathbf{p}_{t}^{c}$"
+        ],
+        [
+          "$(0,0)$",
+          "$p_{1}$",
+          "$p(\\pi(1))=p(0,0)$",
+          "$p_{1}^{t}$"
+        ],
+        [
+          "$(1,0)$",
+          "$p_{2}$",
+          "$p(\\pi(2))=p(1,0)$",
+          "$p_{2}^{t}$"
+        ],
+        [
+          "$(1,1)$",
+          "$p_{3}$",
+          "$p(\\pi(3))=p(1,1)$",
+          "$p_{3}^{t}$"
+        ],
+        [
+          "$(0,1)$",
+          "$p_{4}$",
+          "$p(\\pi(4))=p(0,1)$",
+          "$p_{4}^{t}$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Two equal sequences when $\\mathcal{A}$ is applied to $\\pi_{1}$ and $\\pi_{2}$. Example with $n=2$ binary variables.",
+      "headers": [
+        "$\\pi_{1}$",
+        "$\\mathbf{p}_{0}$",
+        "$\\mathbf{p}_{1}$",
+        "$\\mathbf{p}_{2}$",
+        "$\\mathbf{p}_{3}$",
+        "$\\ldots$",
+        "$\\mathbf{p}_{\\infty}$"
+      ],
+      "rows": [
+        [
+          "$(1,1)$",
+          0.25,
+          0.4375,
+          0.6836,
+          0.8999,
+          "$\\ldots$",
+          1
+        ],
+        [
+          "$(0,1)$",
+          0.25,
+          0.3125,
+          0.2539,
+          0.0962,
+          "",
+          0
+        ],
+        [
+          "$(0,0)$",
+          0.25,
+          0.1875,
+          0.0586,
+          0.0038,
+          "",
+          0
+        ],
+        [
+          "$(1,0)$",
+          0.25,
+          0.0625,
+          0.0039,
+          0.0001,
+          "$\\ldots$",
+          0
+        ],
+        [
+          "$\\pi_{2}$",
+          "$\\mathbf{p}_{0}$",
+          "$\\mathbf{p}_{1}$",
+          "$\\mathbf{p}_{2}$",
+          "$\\mathbf{p}_{3}$",
+          "$\\ldots$",
+          "$\\mathbf{p}_{\\infty}$"
+        ],
+        [
+          "$(1,0)$",
+          0.25,
+          0.4375,
+          0.6836,
+          0.8999,
+          "$\\ldots$",
+          1
+        ],
+        [
+          "$(1,1)$",
+          0.25,
+          0.3125,
+          0.2539,
+          0.0962,
+          "",
+          0
+        ],
+        [
+          "$(0,1)$",
+          0.25,
+          0.1875,
+          0.0586,
+          0.0038,
+          "",
+          0
+        ],
+        [
+          "$(0,0)$",
+          0.25,
+          0.0625,
+          0.0039,
+          0.0001,
+          "$\\ldots$",
+          0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Ranking $\\pi$ given by an injective function with $n=3$ variables.",
+      "headers": [
+        "$\\pi$"
+      ],
+      "rows": [
+        [
+          "$(1,1,1)$"
+        ],
+        [
+          "$(0,1,0)$"
+        ],
+        [
+          "$(0,0,1)$"
+        ],
+        [
+          "$(1,0,0)$"
+        ],
+        [
+          "$(0,1,1)$"
+        ],
+        [
+          "$(1,0,1)$"
+        ],
+        [
+          "$(1,1,0)$"
+        ],
+        [
+          "$(0,0,0)$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 1
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$\\pi$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$(0,0,0)$",
+          "",
+          ""
+        ],
+        [
+          "$(0,0,1)$",
+          "",
+          ""
+        ],
+        [
+          "$(0,1,0)$",
+          "",
+          ""
+        ],
+        [
+          "$(0,1,1)$",
+          "",
+          ""
+        ],
+        [
+          "$(1,0,0)$",
+          "",
+          ""
+        ],
+        [
+          "$(1,0,1)$",
+          "",
+          ""
+        ],
+        [
+          "$(1,1,0)$",
+          "",
+          ""
+        ],
+        [
+          "$(1,1,1)$",
+          "",
+          ""
+        ],
+        [
+          "Permutation of partial configurations",
+          "",
+          "$\\pi^{\\prime}$"
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:"
+        ],
+        [
+          "$X_{1} X_{3}$",
+          "$X_{1} X_{3}$",
+          "$(1,0,1)$"
+        ],
+        [
+          "$\\left(\\begin{array}{ll}0 & 0 \\\\ 0 & 1 \\\\ 1 & 0\\end{array}\\right)$",
+          "",
+          "$(0,0,1)$"
+        ],
+        [
+          "$\\left(\\begin{array}{ll}1 & 1 \\\\ 0 & 1 \\\\ 0 & 0\\end{array}\\right)$",
+          "",
+          "$(0,1,1)$"
+        ],
+        [
+          1,
+          "",
+          "$(0,0,0)$"
+        ],
+        [
+          1,
+          "",
+          "$(1,0,0)$"
+        ],
+        [
+          1,
+          "",
+          "$(0,1,0)$"
+        ],
+        [
+          "",
+          "",
+          "$(1,1,0)$"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "Example of the representation of a partial ranking $\\pi$ for the function $f(x)$ for $n=3$.",
+      "headers": [
+        "$f(\\boldsymbol{x})$",
+        "$\\pi$",
+        "$i$"
+      ],
+      "rows": [
+        [
+          100,
+          "$(1,1,1)$",
+          1
+        ],
+        [
+          100,
+          "$(0,1,0)$",
+          2
+        ],
+        [
+          100,
+          "$(0,0,1)$",
+          3
+        ],
+        [
+          100,
+          "$(1,0,0)$",
+          4
+        ],
+        [
+          100,
+          "$(0,1,1)$",
+          5
+        ],
+        [
+          100,
+          "$(1,0,1)$",
+          6
+        ],
+        [
+          68,
+          "$(1,1,0)$",
+          7
+        ],
+        [
+          23,
+          "$(0,0,0)$",
+          8
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "6",
+      "table_title": "All the possible assignments for the last two positions of the ranking shown in Table 5. For the particular case of a univariate EDA, assignments are grouped in three equivalence classes red-bold, blue-italic, and green-underlined, with sizes 24,24 , and 8 respectively.",
+      "headers": [
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000"
+      ],
+      "rows": [
+        [
+          1,
+          10,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          10,
+          11,
+          100,
+          101,
+          110,
+          111,
+          111
+        ],
+        [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        [
+          0,
+          1,
+          11,
+          100,
+          101,
+          110,
+          110,
+          111
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          0,
+          1,
+          10,
+          100,
+          101,
+          110,
+          110,
+          111
+        ],
+        [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        [
+          0,
+          1,
+          10,
+          11,
+          101,
+          110,
+          111,
+          111
+        ],
+        [
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101
+        ],
+        [
+          0,
+          1,
+          10,
+          11,
+          100,
+          110,
+          110,
+          111
+        ],
+        [
+          110,
+          110,
+          110,
+          110,
+          110,
+          110,
+          110,
+          110
+        ],
+        [
+          0,
+          1,
+          10,
+          11,
+          100,
+          101,
+          101,
+          111
+        ],
+        [
+          111,
+          111,
+          111,
+          111,
+          111,
+          111,
+          111,
+          111
+        ],
+        [
+          0,
+          1,
+          10,
+          11,
+          100,
+          101,
+          101,
+          110
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 8
+    }
+  ]
+}

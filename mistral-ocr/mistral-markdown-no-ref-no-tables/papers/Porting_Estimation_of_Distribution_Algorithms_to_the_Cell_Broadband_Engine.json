@@ -1,0 +1,486 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Porting Estimation of Distribution Algorithms to the Cell Broadband Engine.md",
+    "filename": "Porting Estimation of Distribution Algorithms to the Cell Broadband Engine.md",
+    "title": "Porting Estimation of Distribution Algorithms to the Cell Broadband Engine",
+    "year": "2010"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison-Wesley, Reading, MA, 1989.\n[2] J.H. Holland, Adaptation in Natural and Artificial Systems. The University of Michigan Press, Ann Arbor, MI, 1992.\n[3] I. Rechenberg, Evolutionsstrategie: Optimierung technischer Systeme nach Prinzipien der biologischen Evolution, Frommann-Holzboog, Stuttgart, 1973.\n[4] L.J. Fogel, Autonomous automata, Industrial Research 4 (1962) 14-19.\n[5] H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions I. Binary parameters, in: H.M. Voigt, W. Ebeling, I. Rechenberger, H.P. Schwefel (Eds.), PPSN IV, Lecture Notes in Computer Science, vol. 1141, Springer, 1996, pp. 178-187.\n[6] J.R. Koza, Genetic Programming: On the Programming of Computers by Means of Natural Selection, MIT Press, 1992.\n[7] C. Pérez-Miguel, J. Miguel-Alonso, A. Mendiburu, Evaluating the cell broadband engine as a platform to run estimation of distribution algorithms, in: F. Rothlauf (Ed.), GECCO (Companion), ACM, 2009, pp. 2491-2498.\n[8] C. Pérez-Miguel, J. Miguel-Alonso, A. Mendiburu, Porting estimation of distribution algorithms to the cell broadband engine, in: Workshop on Parallel Architectures and Bioinspired Algorithms (WPABA) in Conjunction with PACT 2009, Raleigh, North Carolina, September 12-16, 2009.\n[9] IBM Corp. - IBM Full-System Simulator for the Cell Broadband Engine Processor, <http://www.alphaworks.ibm.com/tech/cellsystemsim>.\n[10] J.A. Kahle, M.N. Day, H.P. Hofstee, C.R. Johns, T.R. Maeurer, D.J. Shippy, Introduction to the cell multiprocessor, IBM Journal of Research and Development 49 (4-5) (2005) 589-604.\n[11] IBM Corp., Software Development Kit for Multicore Acceleration, Programming Tutorial, version 3.1, 2008, <http://publib.boulder.ibm.com/infocenter/ systems/topic/eiccj/tutorial/CBE_Programming_Tutorial_v3.1.pdf?Open&S_TACT=105AGX16&S_CMP=LP>.\n[12] Fixstars Corp., <http://www.fixstars.com/>.\n[13] J.J. Grefenstette, Optimization of control parameters for Genetic Algorithms, IEEE Transactions on Systems, Man, and Cybernetics 16 (1) (1986) 122128 .\n[14] A.A. Zhigljavsky, Theory of Global Random Search, Kluwer Academic Publishers, 1991.\n[15] P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2002.\n[16] M. Pelikan, D.E. Goldberg, F. Lobo, A survey of optimization by building and using probabilistic models, Computational Optimization and Applications 21 (1) (2002) 5-20.\n[17] J.A. Lozano, P. Larrañaga, I. Inza, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation. Advances on Estimation of Distribution Algorithms, Studies in Fuzziness and Soft Computing, vol. 192, Springer, 2005.\n[18] M. Pelikan, K. Sastry, E. Cantú-Paz, Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications (Studies in Computational Intelligence), Springer-Verlag, New York, Inc., Secaucus, NJ, USA, 2006.\n[19] H. Mühlenbein, The equation for response to selection and its use for prediction, Evolutionary Computation 5 (1998) 303-346.\n[20] P. Larrañaga, R. Etxeberria, J. Lozano, J. Peña, Optimization by learning and simulation of Bayesian and Gaussian networks, Tech. Rep. KZZA-IK-4-99, Department of Computer Science and Artificial Intelligence, University of the Basque Country, 1999.\n[21] P. Larrañaga, R. Etxeberria, J. Lozano, J. Peña, Optimization in continuous domains by learning and simulation of Gaussian networks, in: L.D. Whitley, D.E. Goldberg, E. Cantú-Paz, L. Spector, I.C. Parmee, H.G. Beyer (Eds.), GECCO, Morgan Kaufmann, 2000, pp. 201-204.\n[22] M. Henrion, Propagating uncertainty in Bayesian networks by probabilistic logic sampling, in: R.D. Shachter, T.S. Levitt, L.N. Kanal, J.F. Lemmer (Eds.), UAI, North-Holland, 1988, pp. 149-163.\n[23] B.D. Ripley, Stochastic Simulation, John Wiley and Sons, 1987.\n[24] W. Bossert, Mathematical optimization: are there abstract limits on natural selection?, in: P.S. Moorehead, M.M. Kaplan (Eds.), Mathematical Challenges to the Neo-Darwinian Interpretation of Evolution, The Wistar Institute Press, Philadelphia, PA, 1967, pp. 35-46.\n[25] J. Madera, E. Alba, A. Ochoa, A parallel island model for estimation of distribution algorithms, in: J.A. Lozano, P. Larrañaga, I. Inza, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation. Advances on Estimation of Distribution Algorithms, Studies in Fuzziness and Soft Computing, vol. 192, Springer, 2005, pp. 159-186.\n[26] L. De la Ossa, J.A. Gámez, J.M. Puerta, Initial approaches to the application of islands-based parallel EDAs in continuous domains, in: T. Skie, C.S. Yang (Eds.), ICPP Workshops, IEEE Computer Society, 2005, pp. 580-587.\n[27] J. Ocenasek, Parallel estimation of distribution algorithms, Ph.D. Thesis, Faculty of Information Technology, Brno University of Technology, 2002.\n[28] E. Cantú-Paz, Efficient and Accurate Parallel Genetic Algorithms, Kluwer Academic Publishers, 2000.\n[29] J. Ocenasek, J. Schwarz, The parallel Bayesian optimization algorithm, in: Proceedings of the European Symposium on Computational Intelligence, 2000, pp. 61-67.\n[30] J. Ocenasek, J. Schwarz, The distributed Bayesian optimization algorithm for combinatorial optimization, in: EUROGEN - Evolutionary Methods for Design, Optimisation and Control, CIMNE, 2001, pp. 115-120.\n[31] A. Mendiburu, J.A. Lozano, J. Miguel-Alonso, Parallel implementation of EDAs based on probabilistic graphical models, IEEE Transactions on Evolutionary Computation 9 (4) (2005) 406-423.\n[32] The GNU Project - The GNU Compiler Collection, <http://gcc.gnu.org/>.\n\n[33] IBM Corp. - XL C/C++ for Multicore Acceleration for Linux, <http://www-01.ibm.com/software/awdtools/xlcpp/multicore/>.\n[34] M. Honeyford, Speed Your Code with the GNU Profiler, <http://www.ibm.com/developerworks/library/l-gnuprof.html>.\n[35] D.R. Butenhof, Programming with POSIX Threads, Addison-Wesley Professional Computing Series, 1997.\n[36] IBM Corp. - PPU and SPU C/C++ Language Extension Specification, <http://www.01.ibm.com/chips/techlib/techlib.nsf/techdocs/30B3520C93F437AB 87257060006FFE5E>.\n[37] IBM Corp. - Cell SDK Example Library API Reference, <http://www.01.ibm.com/chips/techlib/techlib.nsf/techdocs/3B6ED257EE6235 D900257353006E0F6A?Open&S_TACT=105AGX01&S_CMP=LP>.\n[38] Intel Corporation - Intel(R) C++ Compiler Intrinsics Reference, <http://download.intel.com/support/performancetools/c/linux/v9/intref_cls.pdf>.\n[39] S.K. Park, K.W. Miller, Random number generators: good ones are hard to find, Communications of the ACM 31 (10) (1988) 1192-1201.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison-Wesley, Reading, MA, 1989."
+      },
+      {
+        "ref_id": "2",
+        "text": "J.H. Holland, Adaptation in Natural and Artificial Systems. The University of Michigan Press, Ann Arbor, MI, 1992."
+      },
+      {
+        "ref_id": "3",
+        "text": "I. Rechenberg, Evolutionsstrategie: Optimierung technischer Systeme nach Prinzipien der biologischen Evolution, Frommann-Holzboog, Stuttgart, 1973."
+      },
+      {
+        "ref_id": "4",
+        "text": "L.J. Fogel, Autonomous automata, Industrial Research 4 (1962) 14-19."
+      },
+      {
+        "ref_id": "5",
+        "text": "H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions I. Binary parameters, in: H.M. Voigt, W. Ebeling, I. Rechenberger, H.P. Schwefel (Eds.), PPSN IV, Lecture Notes in Computer Science, vol. 1141, Springer, 1996, pp. 178-187."
+      },
+      {
+        "ref_id": "6",
+        "text": "J.R. Koza, Genetic Programming: On the Programming of Computers by Means of Natural Selection, MIT Press, 1992."
+      },
+      {
+        "ref_id": "7",
+        "text": "C. Pérez-Miguel, J. Miguel-Alonso, A. Mendiburu, Evaluating the cell broadband engine as a platform to run estimation of distribution algorithms, in: F. Rothlauf (Ed.), GECCO (Companion), ACM, 2009, pp. 2491-2498."
+      },
+      {
+        "ref_id": "8",
+        "text": "C. Pérez-Miguel, J. Miguel-Alonso, A. Mendiburu, Porting estimation of distribution algorithms to the cell broadband engine, in: Workshop on Parallel Architectures and Bioinspired Algorithms (WPABA) in Conjunction with PACT 2009, Raleigh, North Carolina, September 12-16, 2009."
+      },
+      {
+        "ref_id": "9",
+        "text": "IBM Corp. - IBM Full-System Simulator for the Cell Broadband Engine Processor, <http://www.alphaworks.ibm.com/tech/cellsystemsim>."
+      },
+      {
+        "ref_id": "10",
+        "text": "J.A. Kahle, M.N. Day, H.P. Hofstee, C.R. Johns, T.R. Maeurer, D.J. Shippy, Introduction to the cell multiprocessor, IBM Journal of Research and Development 49 (4-5) (2005) 589-604."
+      },
+      {
+        "ref_id": "11",
+        "text": "IBM Corp., Software Development Kit for Multicore Acceleration, Programming Tutorial, version 3.1, 2008, <http://publib.boulder.ibm.com/infocenter/ systems/topic/eiccj/tutorial/CBE_Programming_Tutorial_v3.1.pdf?Open&S_TACT=105AGX16&S_CMP=LP>."
+      },
+      {
+        "ref_id": "12",
+        "text": "Fixstars Corp., <http://www.fixstars.com/>."
+      },
+      {
+        "ref_id": "13",
+        "text": "J.J. Grefenstette, Optimization of control parameters for Genetic Algorithms, IEEE Transactions on Systems, Man, and Cybernetics 16 (1) (1986) 122128 ."
+      },
+      {
+        "ref_id": "14",
+        "text": "A.A. Zhigljavsky, Theory of Global Random Search, Kluwer Academic Publishers, 1991."
+      },
+      {
+        "ref_id": "15",
+        "text": "P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "16",
+        "text": "M. Pelikan, D.E. Goldberg, F. Lobo, A survey of optimization by building and using probabilistic models, Computational Optimization and Applications 21 (1) (2002) 5-20."
+      },
+      {
+        "ref_id": "17",
+        "text": "J.A. Lozano, P. Larrañaga, I. Inza, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation. Advances on Estimation of Distribution Algorithms, Studies in Fuzziness and Soft Computing, vol. 192, Springer, 2005."
+      },
+      {
+        "ref_id": "18",
+        "text": "M. Pelikan, K. Sastry, E. Cantú-Paz, Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications (Studies in Computational Intelligence), Springer-Verlag, New York, Inc., Secaucus, NJ, USA, 2006."
+      },
+      {
+        "ref_id": "19",
+        "text": "H. Mühlenbein, The equation for response to selection and its use for prediction, Evolutionary Computation 5 (1998) 303-346."
+      },
+      {
+        "ref_id": "20",
+        "text": "P. Larrañaga, R. Etxeberria, J. Lozano, J. Peña, Optimization by learning and simulation of Bayesian and Gaussian networks, Tech. Rep. KZZA-IK-4-99, Department of Computer Science and Artificial Intelligence, University of the Basque Country, 1999."
+      },
+      {
+        "ref_id": "21",
+        "text": "P. Larrañaga, R. Etxeberria, J. Lozano, J. Peña, Optimization in continuous domains by learning and simulation of Gaussian networks, in: L.D. Whitley, D.E. Goldberg, E. Cantú-Paz, L. Spector, I.C. Parmee, H.G. Beyer (Eds.), GECCO, Morgan Kaufmann, 2000, pp. 201-204."
+      },
+      {
+        "ref_id": "22",
+        "text": "M. Henrion, Propagating uncertainty in Bayesian networks by probabilistic logic sampling, in: R.D. Shachter, T.S. Levitt, L.N. Kanal, J.F. Lemmer (Eds.), UAI, North-Holland, 1988, pp. 149-163."
+      },
+      {
+        "ref_id": "23",
+        "text": "B.D. Ripley, Stochastic Simulation, John Wiley and Sons, 1987."
+      },
+      {
+        "ref_id": "24",
+        "text": "W. Bossert, Mathematical optimization: are there abstract limits on natural selection?, in: P.S. Moorehead, M.M. Kaplan (Eds.), Mathematical Challenges to the Neo-Darwinian Interpretation of Evolution, The Wistar Institute Press, Philadelphia, PA, 1967, pp. 35-46."
+      },
+      {
+        "ref_id": "25",
+        "text": "J. Madera, E. Alba, A. Ochoa, A parallel island model for estimation of distribution algorithms, in: J.A. Lozano, P. Larrañaga, I. Inza, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation. Advances on Estimation of Distribution Algorithms, Studies in Fuzziness and Soft Computing, vol. 192, Springer, 2005, pp. 159-186."
+      },
+      {
+        "ref_id": "26",
+        "text": "L. De la Ossa, J.A. Gámez, J.M. Puerta, Initial approaches to the application of islands-based parallel EDAs in continuous domains, in: T. Skie, C.S. Yang (Eds.), ICPP Workshops, IEEE Computer Society, 2005, pp. 580-587."
+      },
+      {
+        "ref_id": "27",
+        "text": "J. Ocenasek, Parallel estimation of distribution algorithms, Ph.D. Thesis, Faculty of Information Technology, Brno University of Technology, 2002."
+      },
+      {
+        "ref_id": "28",
+        "text": "E. Cantú-Paz, Efficient and Accurate Parallel Genetic Algorithms, Kluwer Academic Publishers, 2000."
+      },
+      {
+        "ref_id": "29",
+        "text": "J. Ocenasek, J. Schwarz, The parallel Bayesian optimization algorithm, in: Proceedings of the European Symposium on Computational Intelligence, 2000, pp. 61-67."
+      },
+      {
+        "ref_id": "30",
+        "text": "J. Ocenasek, J. Schwarz, The distributed Bayesian optimization algorithm for combinatorial optimization, in: EUROGEN - Evolutionary Methods for Design, Optimisation and Control, CIMNE, 2001, pp. 115-120."
+      },
+      {
+        "ref_id": "31",
+        "text": "A. Mendiburu, J.A. Lozano, J. Miguel-Alonso, Parallel implementation of EDAs based on probabilistic graphical models, IEEE Transactions on Evolutionary Computation 9 (4) (2005) 406-423."
+      },
+      {
+        "ref_id": "32",
+        "text": "The GNU Project - The GNU Compiler Collection, <http://gcc.gnu.org/>."
+      },
+      {
+        "ref_id": "33",
+        "text": "IBM Corp. - XL C/C++ for Multicore Acceleration for Linux, <http://www-01.ibm.com/software/awdtools/xlcpp/multicore/>."
+      },
+      {
+        "ref_id": "34",
+        "text": "M. Honeyford, Speed Your Code with the GNU Profiler, <http://www.ibm.com/developerworks/library/l-gnuprof.html>."
+      },
+      {
+        "ref_id": "35",
+        "text": "D.R. Butenhof, Programming with POSIX Threads, Addison-Wesley Professional Computing Series, 1997."
+      },
+      {
+        "ref_id": "36",
+        "text": "IBM Corp. - PPU and SPU C/C++ Language Extension Specification, <http://www.01.ibm.com/chips/techlib/techlib.nsf/techdocs/30B3520C93F437AB 87257060006FFE5E>."
+      },
+      {
+        "ref_id": "37",
+        "text": "IBM Corp. - Cell SDK Example Library API Reference, <http://www.01.ibm.com/chips/techlib/techlib.nsf/techdocs/3B6ED257EE6235 D900257353006E0F6A?Open&S_TACT=105AGX01&S_CMP=LP>."
+      },
+      {
+        "ref_id": "38",
+        "text": "Intel Corporation - Intel(R) C++ Compiler Intrinsics Reference, <http://download.intel.com/support/performancetools/c/linux/v9/intref_cls.pdf>."
+      },
+      {
+        "ref_id": "39",
+        "text": "S.K. Park, K.W. Miller, Random number generators: good ones are hard to find, Communications of the ACM 31 (10) (1988) 1192-1201."
+      }
+    ],
+    "reference_count": 39,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Step 1.",
+        "Generate the first population $D_{0}$ of $M$ <br> individuals and evaluate all of them."
+      ],
+      "rows": [
+        [
+          2.0,
+          "Repeat at each generation $l$ until <br> a stopping criterion is fulfilled."
+        ],
+        [
+          3.0,
+          "Select $N$ individuals $\\left(D_{l}^{S e}\\right)$ from the $D_{l}$ <br> population following a selection method."
+        ],
+        [
+          4.0,
+          "Obtain from $D_{l}^{S e}$ an $n$ dimensional model that <br> shows the (in)dependencies between variables."
+        ],
+        [
+          5.0,
+          "Generate a new population $D_{l+1}$ of <br> $M$ individuals sampled from the model <br> learnt in the previous step."
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Speedups of UMDA on the quad-core Xeon, for different individual lengths.",
+      "headers": [
+        "Num. Workers",
+        "UMDA $_{d}$",
+        "",
+        "",
+        "UMDA $_{c}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          1000,
+          1900,
+          100,
+          1000,
+          1900
+        ],
+        [
+          1,
+          1.33,
+          1.22,
+          1.14,
+          1.11,
+          1.05,
+          1.07
+        ],
+        [
+          2,
+          1.44,
+          2.29,
+          2.21,
+          1.86,
+          2.08,
+          2.13
+        ],
+        [
+          3,
+          1.59,
+          3.16,
+          3.17,
+          2.16,
+          2.93,
+          3.17
+        ],
+        [
+          4,
+          2.18,
+          3.71,
+          3.92,
+          1.96,
+          3.95,
+          4.06
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Code size and execution times (solving OneMax and Sphere Model) for different gcc compilation flags. Individual size $=1000$. Fifty generations. Six SPEs.",
+      "headers": [
+        "Flags",
+        "UMDA $_{d}$",
+        "",
+        "UMDA $_{c}$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Size (bytes)",
+          "Exec. time (s)",
+          "Size (bytes)",
+          "Exec. time (s)"
+        ],
+        [
+          0,
+          120860,
+          65.65,
+          120796,
+          29.99
+        ],
+        [
+          0,
+          144628,
+          141.19,
+          144300,
+          72.1
+        ],
+        [
+          -1,
+          124076,
+          49.59,
+          123964,
+          20.37
+        ],
+        [
+          -2,
+          123164,
+          54.33,
+          123068,
+          20.06
+        ],
+        [
+          -3,
+          126772,
+          49.56,
+          126676,
+          20.21
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Code size and execution times for different xlc compilation flags. Individual size $=1000$. Fifty generations. Six SPEs.",
+      "headers": [
+        "Flags",
+        "UMDA $_{d}$",
+        "",
+        "UMDA $_{c}$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Size (bytes)",
+          "Exec. time (s)",
+          "Size (bytes)",
+          "Exec. time (s)"
+        ],
+        [
+          0,
+          147944,
+          140.6,
+          147752,
+          69.38
+        ],
+        [
+          -2,
+          156520,
+          48.84,
+          156136,
+          19.72
+        ],
+        [
+          "-02 -qcompact",
+          150056,
+          95.83,
+          149800,
+          43.75
+        ],
+        [
+          -3,
+          184856,
+          48.41,
+          190120,
+          19.44
+        ],
+        [
+          "-03 -qcompact",
+          159960,
+          93.44,
+          162024,
+          43.03
+        ],
+        [
+          -4,
+          98896,
+          46.6,
+          106448,
+          19.14
+        ],
+        [
+          "-04 -qcompact",
+          101936,
+          555.5,
+          104320,
+          276.19
+        ],
+        [
+          -5,
+          102352,
+          45.66,
+          103504,
+          18.18
+        ],
+        [
+          "-05 -qcompact",
+          97080,
+          545.49,
+          99064,
+          269.69
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Speedups of UMDA on the Cell, for different individual lengths.",
+      "headers": [
+        "Num. Workers",
+        "UMDA $_{d}$",
+        "",
+        "",
+        "UMDA",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          1000,
+          1900,
+          100,
+          1000,
+          1900
+        ],
+        [
+          1,
+          1.47,
+          1.15,
+          1.14,
+          0.87,
+          0.92,
+          0.93
+        ],
+        [
+          2,
+          2.32,
+          1.41,
+          1.33,
+          1.67,
+          1.71,
+          1.65
+        ],
+        [
+          3,
+          2.91,
+          1.52,
+          1.4,
+          2.44,
+          2.4,
+          2.23
+        ],
+        [
+          4,
+          2.97,
+          1.58,
+          1.45,
+          3.03,
+          3.0,
+          2.68
+        ],
+        [
+          5,
+          2.86,
+          1.62,
+          1.48,
+          3.7,
+          3.53,
+          3.07
+        ],
+        [
+          6,
+          2.84,
+          1.64,
+          1.49,
+          4.07,
+          3.98,
+          3.38
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    }
+  ]
+}

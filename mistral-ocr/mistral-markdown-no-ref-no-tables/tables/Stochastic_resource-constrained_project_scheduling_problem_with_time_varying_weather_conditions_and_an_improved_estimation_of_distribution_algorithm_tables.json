@@ -1,0 +1,503 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Stochastic resource-constrained project scheduling problem with time varying weather conditions and an improved estimation of distribution algorithm.md",
+    "filename": "Stochastic resource-constrained project scheduling problem with time varying weather conditions and an improved estimation of distribution algorithm.md",
+    "title": "Stochastic resource-constrained project scheduling problem with time varying weather conditions and an improved estimation of distribution algorithm",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Nomenclature",
+        ""
+      ],
+      "rows": [
+        [
+          "Indices",
+          ""
+        ],
+        [
+          "$g$",
+          "Index of a generation in the improved EDA"
+        ],
+        [
+          "$t$",
+          "Index of an individual in the improved EDA"
+        ],
+        [
+          "$j$",
+          "Index of an activity"
+        ],
+        [
+          "$k$",
+          "Index of the type of renewable resources"
+        ],
+        [
+          "$n$",
+          "Index of a scenario during simulation"
+        ],
+        [
+          "Parameters",
+          ""
+        ],
+        [
+          "$C_{\\text {end }}$",
+          "Reward for completing a project"
+        ],
+        [
+          "$C_{j}^{f}$",
+          "Fixed cost of activity $j$"
+        ],
+        [
+          "$C_{j}^{v}$",
+          "Variable cost of activity $j$"
+        ],
+        [
+          "$d_{j}^{S}$",
+          "Standard duration of activity $j$"
+        ],
+        [
+          "$d_{j, t}$",
+          "Duration of activity $j$ starting at time $t$"
+        ],
+        [
+          "$d_{j, t}^{p}$",
+          "Expected duration of activity $j$ starting at time $t$"
+        ],
+        [
+          "$d_{j, t, n}^{H}$",
+          "Historical duration of activity $j$ starting at time $t$ in year $y$"
+        ],
+        [
+          "$d_{j, t, n}$",
+          "Duration of activity $j$ starting at time $t$ in scenario $n$"
+        ],
+        [
+          "$\\mathbf{D}_{n}$",
+          "Matrix of activity durations in scenario $n$"
+        ],
+        [
+          "$E_{j}$",
+          "End time of activity $j$"
+        ],
+        [
+          "IR",
+          "Discount rate per unit time in the NPV"
+        ],
+        [
+          "$J$",
+          "Number of non-dummy activities in a project"
+        ],
+        [
+          "K",
+          "Number of types of renewable resource"
+        ],
+        [
+          "$L_{\\text {run }}$",
+          "Learning rate of the probability model in the improved EDA"
+        ],
+        [
+          "$M$",
+          "Population size of the improved EDA"
+        ],
+        [
+          "$n_{W}$",
+          "Sample size of the start date in local search"
+        ],
+        [
+          "N",
+          "Number of scenarios used to estimate the expected objective function"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "References that combine heuristic algorithms with simulation-based methods.",
+      "headers": [
+        "References",
+        "Heuristic algorithm",
+        "R\\&S",
+        "CRN",
+        "Area"
+      ],
+      "rows": [
+        [
+          0.2018,
+          "EDA \\& GA",
+          "",
+          "",
+          "Project scheduling"
+        ],
+        [
+          0.2018,
+          "Artificial algae algorithm",
+          "",
+          "",
+          "Project scheduling"
+        ],
+        [
+          0.2019,
+          "EDA \\& GA",
+          "",
+          "",
+          "Project scheduling"
+        ],
+        [
+          0.2018,
+          "EDA \\& GA",
+          "",
+          "",
+          "Project scheduling"
+        ],
+        [
+          0.2015,
+          "EDA",
+          "",
+          "",
+          "Project scheduling"
+        ],
+        [
+          2016,
+          "Simulated annealing",
+          "",
+          "",
+          "Maintenance optimisation"
+        ],
+        [
+          2016,
+          "GA",
+          "",
+          "",
+          "Maintenance optimisation"
+        ],
+        [
+          2020,
+          "Particle swarm optimisation \\& GA",
+          "",
+          "",
+          "Maintenance optimisation"
+        ],
+        [
+          2005,
+          "GA",
+          "$\\checkmark$",
+          "",
+          "Not specified"
+        ],
+        [
+          2009,
+          "GA",
+          "",
+          "$\\checkmark$",
+          "Vehicular traffic"
+        ],
+        [
+          2001,
+          "GA",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "Not specified"
+        ],
+        [
+          0.2012,
+          "GA",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "Design of production system"
+        ],
+        [
+          "This paper",
+          "EDA",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "Project scheduling"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Parameters of the three projects and those used in the EDAs.",
+      "headers": [
+        "",
+        "Project \\#1",
+        "Project \\#2",
+        "Project \\#3"
+      ],
+      "rows": [
+        [
+          "(RF, RS, NC)",
+          "$(0.25,0.1,1.5)$",
+          "$(0.5,0.3,1.8)$",
+          "$(1,0.5,2.1)$"
+        ],
+        [
+          "Original EDA ( $M, \\eta, n_{W}, P_{p a r}, L_{\\text {rep }}$ )",
+          "$(150,0.01,10,0.05,0.5)$",
+          "$(100,0.02,20,0.05,0.7)$",
+          "$(150,0.01,5,0.05,0.5)$"
+        ],
+        [
+          "Improved EDA ( $M, \\eta, n_{W}, P_{p a r}, L_{\\text {rep }}$ )",
+          "$(200,0.01,5,0.05,0.9)$",
+          "$(100,0.01,10,0.05,0.9)$",
+          "$(150,0.01,20,0.05,0.9)$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Makespan reduction compared with deterministic scheduling.",
+      "headers": [
+        "Methods",
+        "Project\\#1",
+        "Project\\#2",
+        "Project\\#3"
+      ],
+      "rows": [
+        [
+          "Improved EDA",
+          17.0,
+          29.4,
+          12.5
+        ],
+        [
+          "Original EDA",
+          10.8,
+          24.1,
+          7.1
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Elapsed time and optimal makespan obtained at different stages of EDAs.",
+      "headers": [
+        "Project",
+        "Schedules",
+        "Original EDA",
+        "",
+        "Improved EDA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Makespan",
+          "CPU time (s)",
+          "Makespan",
+          "CPU time (s)"
+        ],
+        [
+          1,
+          10000,
+          448.8,
+          184,
+          441.5,
+          287
+        ],
+        [
+          "",
+          20000,
+          447.3,
+          371,
+          440.0,
+          528
+        ],
+        [
+          "",
+          30000,
+          444.6,
+          587,
+          438.5,
+          765
+        ],
+        [
+          2,
+          10000,
+          409.5,
+          180,
+          403.3,
+          248
+        ],
+        [
+          "",
+          20000,
+          404.7,
+          372,
+          401.9,
+          443
+        ],
+        [
+          "",
+          30000,
+          406.5,
+          569,
+          401.5,
+          641
+        ],
+        [
+          3,
+          10000,
+          290.8,
+          167,
+          282.4,
+          224
+        ],
+        [
+          "",
+          20000,
+          288.0,
+          372,
+          281.6,
+          408
+        ],
+        [
+          "",
+          30000,
+          286.7,
+          575,
+          280.2,
+          602
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "Effect of project characteristics on scheduling result.",
+      "headers": [
+        "Characteristics",
+        "NC",
+        "",
+        "",
+        "RF",
+        "",
+        "",
+        "",
+        "RS",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1.5,
+          1.8,
+          2.1,
+          0.25,
+          0.5,
+          0.75,
+          1,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5
+        ],
+        [
+          "Ave.Dev.LB",
+          1.392,
+          1.372,
+          1.451,
+          1.178,
+          1.283,
+          1.471,
+          1.611,
+          2.107,
+          1.76,
+          1.353,
+          1.081,
+          0.832
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 13
+    },
+    {
+      "table_number": "6",
+      "table_title": "Steps to construct a wind turbine.",
+      "headers": [
+        "Index",
+        "Step Name",
+        "Resource",
+        "Index",
+        "Step Name",
+        "Resource"
+      ],
+      "rows": [
+        [
+          1,
+          "Road construction",
+          1,
+          8,
+          "Foundation backfilling",
+          8
+        ],
+        [
+          2,
+          "Foundation material unloading",
+          "",
+          9,
+          "Tower unloading",
+          9
+        ],
+        [
+          3,
+          "Foundation excavation",
+          2,
+          10,
+          "Wind turbine shell unloading",
+          9
+        ],
+        [
+          4,
+          "Pile driving",
+          5,
+          11,
+          "Impeller unloading",
+          9
+        ],
+        [
+          5,
+          "Steel bar binding",
+          6,
+          12,
+          "Generator unloading",
+          9
+        ],
+        [
+          6,
+          "Foundation grouting",
+          7,
+          13,
+          "Blade unloading",
+          9
+        ],
+        [
+          7,
+          "Foundation maintenance",
+          "",
+          14,
+          "Hoisting",
+          "$9,3,4$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    }
+  ]
+}

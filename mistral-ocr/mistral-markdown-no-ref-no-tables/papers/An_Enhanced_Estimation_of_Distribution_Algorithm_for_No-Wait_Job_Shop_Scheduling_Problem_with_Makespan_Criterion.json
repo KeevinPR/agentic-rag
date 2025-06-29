@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/An Enhanced Estimation of Distribution Algorithm for No-Wait Job Shop Scheduling Problem with Makespan Criterion.md",
+    "filename": "An Enhanced Estimation of Distribution Algorithm for No-Wait Job Shop Scheduling Problem with Makespan Criterion.md",
+    "title": "An Enhanced Estimation of Distribution Algorithm for No-Wait Job Shop Scheduling Problem with Makespan Criterion",
+    "year": "2014"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Wismer, D.A.: Solution of the Flowshop Scheduling-problem with No Intermediate Queues. Operations Research 20(6), 89-97 (1972)\n2. Reddi, S., Ramamoorthy, C.: A Scheduling-problem. Operational Research Quarterly 24(44), 1-6 (1973)\n3. Raaymakers, W., Hoogeveen, J.: Scheduling Multipurpose Batch Process Industries with No-wait Restrictions by Simulated Annealing. European Journal of Operational Research 126, 131-151 (2000)\n4. Rajendran, C.: A No-wait Flowshop Scheduling Heuristic to Minimize Makespan. Journal of The Operational Research Society 45(4), 472-478 (1994)\n5. Grabowski, J., Pempera, J.: Sequencing of Jobs in Some Production System. European Journal of Operational Research 125(5), 35-50 (2000)\n6. Ovacik, I., Uzsoy, R.: Decomposition Methods for Complex Factory SchedulingProblems. Kluwer Academic Publishing, Dordecht (1997)\n7. Lenstra, J.K., Rinnooy Kan, A.H.G.: Computational Complexity of Discrete Optimization Problems. Annals of Discrete Mathematics 4(1), 21-40 (1979)\n8. Hall, N.G., Sriskandarajah, C.: A survey of machine scheduling problems with blocking and no-wait in process. Operations Research 44, 510-525 (1996)\n\n9. Sahni, S., Cho, Y.: Complexity of Scheduling Shops with No-wait in Process. Mathematics of Operations Research 4, 448-457 (1979)\n10. Zhu, J., Li, X.P., Wang, Q.: Complete Local Search with Limited Memory Algorithm for No-wait Job Shops to Minimize Makespan. Eur. J. Oper. Res. 198(2), 378-386 (2009)\n11. Glover, F.: Tabu search - Part II. ORSA Journal on Computing 2, 4-32 (1990)\n12. Framinan, J.M., Schuster, C.: An Enhanced Timetabling Procedure for The No-wait Job Shop Problem: A complete local search approach. Computers \\& Operations Research 331, $1200-1213$ (2006)\n13. Baluja, S.: Population-based Incremental Learning: A Method for Integrating Genetic Search based Function Optimization and Competitive Learning. Technical Report CMU-CS-94-193. Carnegie Mellon University, Pittsburgh (1994)\n14. Salhi, A., Rodriguez, J.A.V., Zhang, Q.F.: An Estimation of Distribution Algorithm with Guided Mutation for a Complex Flow Shop Scheduling Problem. In: Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation, London, UK, pp. 570576 (2007)\n15. Wang, S.Y., Wang, L., Zhou, G., Xu, Y.: An Estimation of Distribution Algorithm for the Flexible Job-shop Scheduling Problem. In: Huang, D.-S., Gan, Y., Gupta, P., Gromiha, M.M. (eds.) ICIC 2011. LNCS (LNAI), vol. 6839, pp. 9-16. Springer, Heidelberg (2012)\n16. Zhang, Y., Li, X.P.: Estimation of Distribution Algorithm for Permutation Flow Shops with Total Flowtime Minimization. Computers \\& Industrial Engineering 60, 706-718 (2011)\n17. Bai, L., Wang, J., Jiang, Y.H., Huang, D.X.: Improved Hybrid Differential EvolutionEstimation of Distribution Algorithm with Feasibility Rules for NLP/MINLP Engineering Optimization Problems. Chinese Journal of Chemical Engineering 20(6), 1074-1080 (2012)\n18. Pan, J.C.H., Huang, H.C.: A Hybrid Genetic Algorithm for No-wait Job Shop Scheduling Problems. Expert Systems with Applications 36, 5800-5806 (2009)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Wismer, D.A.: Solution of the Flowshop Scheduling-problem with No Intermediate Queues. Operations Research 20(6), 89-97 (1972)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Reddi, S., Ramamoorthy, C.: A Scheduling-problem. Operational Research Quarterly 24(44), 1-6 (1973)"
+      },
+      {
+        "ref_id": "3",
+        "text": "Raaymakers, W., Hoogeveen, J.: Scheduling Multipurpose Batch Process Industries with No-wait Restrictions by Simulated Annealing. European Journal of Operational Research 126, 131-151 (2000)"
+      },
+      {
+        "ref_id": "4",
+        "text": "Rajendran, C.: A No-wait Flowshop Scheduling Heuristic to Minimize Makespan. Journal of The Operational Research Society 45(4), 472-478 (1994)"
+      },
+      {
+        "ref_id": "5",
+        "text": "Grabowski, J., Pempera, J.: Sequencing of Jobs in Some Production System. European Journal of Operational Research 125(5), 35-50 (2000)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Ovacik, I., Uzsoy, R.: Decomposition Methods for Complex Factory SchedulingProblems. Kluwer Academic Publishing, Dordecht (1997)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Lenstra, J.K., Rinnooy Kan, A.H.G.: Computational Complexity of Discrete Optimization Problems. Annals of Discrete Mathematics 4(1), 21-40 (1979)"
+      },
+      {
+        "ref_id": "8",
+        "text": "Hall, N.G., Sriskandarajah, C.: A survey of machine scheduling problems with blocking and no-wait in process. Operations Research 44, 510-525 (1996)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Sahni, S., Cho, Y.: Complexity of Scheduling Shops with No-wait in Process. Mathematics of Operations Research 4, 448-457 (1979)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Zhu, J., Li, X.P., Wang, Q.: Complete Local Search with Limited Memory Algorithm for No-wait Job Shops to Minimize Makespan. Eur. J. Oper. Res. 198(2), 378-386 (2009)"
+      },
+      {
+        "ref_id": "11",
+        "text": "Glover, F.: Tabu search - Part II. ORSA Journal on Computing 2, 4-32 (1990)"
+      },
+      {
+        "ref_id": "12",
+        "text": "Framinan, J.M., Schuster, C.: An Enhanced Timetabling Procedure for The No-wait Job Shop Problem: A complete local search approach. Computers \\& Operations Research 331, $1200-1213$ (2006)"
+      },
+      {
+        "ref_id": "13",
+        "text": "Baluja, S.: Population-based Incremental Learning: A Method for Integrating Genetic Search based Function Optimization and Competitive Learning. Technical Report CMU-CS-94-193. Carnegie Mellon University, Pittsburgh (1994)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Salhi, A., Rodriguez, J.A.V., Zhang, Q.F.: An Estimation of Distribution Algorithm with Guided Mutation for a Complex Flow Shop Scheduling Problem. In: Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation, London, UK, pp. 570576 (2007)"
+      },
+      {
+        "ref_id": "15",
+        "text": "Wang, S.Y., Wang, L., Zhou, G., Xu, Y.: An Estimation of Distribution Algorithm for the Flexible Job-shop Scheduling Problem. In: Huang, D.-S., Gan, Y., Gupta, P., Gromiha, M.M. (eds.) ICIC 2011. LNCS (LNAI), vol. 6839, pp. 9-16. Springer, Heidelberg (2012)"
+      },
+      {
+        "ref_id": "16",
+        "text": "Zhang, Y., Li, X.P.: Estimation of Distribution Algorithm for Permutation Flow Shops with Total Flowtime Minimization. Computers \\& Industrial Engineering 60, 706-718 (2011)"
+      },
+      {
+        "ref_id": "17",
+        "text": "Bai, L., Wang, J., Jiang, Y.H., Huang, D.X.: Improved Hybrid Differential EvolutionEstimation of Distribution Algorithm with Feasibility Rules for NLP/MINLP Engineering Optimization Problems. Chinese Journal of Chemical Engineering 20(6), 1074-1080 (2012)"
+      },
+      {
+        "ref_id": "18",
+        "text": "Pan, J.C.H., Huang, H.C.: A Hybrid Genetic Algorithm for No-wait Job Shop Scheduling Problems. Expert Systems with Applications 36, 5800-5806 (2009)"
+      }
+    ],
+    "reference_count": 18,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparisons of BEST, WORS, AVG and SD of CLLM and EEDA",
+      "headers": [
+        "Instances",
+        "CLLM $^{10}$",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "EEDA",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "n",
+          "m",
+          "BEST",
+          "WORST",
+          "AVG",
+          "SD",
+          "BEST",
+          "WORST",
+          "AVG",
+          "SD"
+        ],
+        [
+          1,
+          10,
+          5,
+          975,
+          1128,
+          1057.65,
+          37.58,
+          971,
+          1031,
+          991.15,
+          24.5
+        ],
+        [
+          2,
+          10,
+          5,
+          988,
+          1041,
+          1009.35,
+          14.8,
+          961,
+          1005,
+          978.7,
+          11.53
+        ],
+        [
+          3,
+          10,
+          5,
+          862,
+          919,
+          889.55,
+          19.62,
+          820,
+          867,
+          860.25,
+          10.41
+        ],
+        [
+          4,
+          10,
+          5,
+          917,
+          983,
+          940.15,
+          12.37,
+          887,
+          923,
+          896.8,
+          12.81
+        ],
+        [
+          5,
+          10,
+          5,
+          784,
+          886,
+          841.67,
+          27.94,
+          781,
+          829,
+          791.15,
+          13.38
+        ],
+        [
+          1,
+          10,
+          10,
+          1615,
+          1771,
+          1680.32,
+          40.74,
+          1615,
+          1663,
+          1631.6,
+          21.3
+        ],
+        [
+          2,
+          10,
+          10,
+          1572,
+          1694,
+          1633.73,
+          51.28,
+          1485,
+          1518,
+          1516.35,
+          7.19
+        ],
+        [
+          3,
+          10,
+          10,
+          1603,
+          1745,
+          1678.49,
+          35.18,
+          1599,
+          1685,
+          1633.1,
+          22.53
+        ],
+        [
+          4,
+          10,
+          10,
+          1750,
+          1874,
+          1812.39,
+          30.34,
+          1653,
+          1732,
+          1679.25,
+          18.17
+        ],
+        [
+          5,
+          10,
+          10,
+          1424,
+          1574,
+          1508.8,
+          34.42,
+          1370,
+          1451,
+          1402.85,
+          20.75
+        ],
+        [
+          6,
+          10,
+          10,
+          1616,
+          1716,
+          1665.55,
+          43.75,
+          1555,
+          1557,
+          1556.6,
+          0.8
+        ],
+        [
+          7,
+          10,
+          10,
+          711,
+          797,
+          753.15,
+          33.25,
+          706,
+          725,
+          711.45,
+          7.74
+        ],
+        [
+          8,
+          10,
+          10,
+          1319,
+          1452,
+          1353.95,
+          35.9,
+          1319,
+          1350,
+          1320.55,
+          6.7
+        ],
+        [
+          9,
+          10,
+          10,
+          1581,
+          1710,
+          1646.25,
+          41.83,
+          1445,
+          1560,
+          1520.8,
+          34.24
+        ],
+        [
+          10,
+          10,
+          10,
+          1691,
+          1749,
+          1724.95,
+          20.33,
+          1557,
+          1601,
+          1582.6,
+          9.55
+        ],
+        [
+          16,
+          10,
+          10,
+          1650,
+          1804,
+          1729.77,
+          25.34,
+          1575,
+          1628,
+          1591.85,
+          10.14
+        ],
+        [
+          17,
+          10,
+          10,
+          1484,
+          1592,
+          1536.84,
+          25.36,
+          1371,
+          1417,
+          1387.8,
+          11.43
+        ],
+        [
+          18,
+          10,
+          10,
+          1597,
+          1687,
+          1649.34,
+          27.82,
+          1555,
+          1630,
+          1589.35,
+          16.37
+        ],
+        [
+          19,
+          10,
+          10,
+          1610,
+          1764,
+          1710.91,
+          39.17,
+          1482,
+          1533,
+          1508.9,
+          7.83
+        ],
+        [
+          20,
+          10,
+          10,
+          1655,
+          1846,
+          1768.1,
+          42.67,
+          1526,
+          1683,
+          1616.25,
+          23.58
+        ],
+        [
+          "Average",
+          "",
+          "",
+          1370.2,
+          1486.6,
+          1429.5,
+          31.98,
+          1311.65,
+          1369.4,
+          1338.36,
+          14.54
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 11
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2015/Clustering Molecular Dynamics trajectories with a univariate estimation of distribution algorithm.md",
+    "filename": "Clustering Molecular Dynamics trajectories with a univariate estimation of distribution algorithm.md",
+    "title": "Clustering Molecular Dynamics trajectories with a univariate estimation of distribution algorithm",
+    "year": "2015"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] P. Cozzini, G. E. Kellogg, F. Spyrakis, D. J. Abraham, G. Costantino, A. Emerson, F. Fanelli, H. Gohlke, L. A. Kuhn, G. M. Morris et al., Journal of medicinal chemistry, vol. 51, no. 20, pp. 6237-6255, 2008.\n[2] C. N. Cavasotto, J. A. Kovacs, and R. A. Abagyan, \"Representing receptor flexibility in ligand docking through relevant normal modes,\" Journal of the American Chemical Society, vol. 127, no. 26, pp. 96329640, 2005.\n[3] H. Alonso, A. A. Bliznyuk, and J. E. Gready, \"Combining docking and molecular dynamic simulations in drug design,\" Med. Res. Rev., vol. 26, no. 5, pp. 531-568, 2006.\n[4] S. E. Nichols, R. V. Swift, and R. E. Amaro, \"Rational prediction with molecular dynamics for hit identification,\" Current topics in medicinal chemistry, vol. 12, no. 18, p. 2002, 2012.\n[5] C. V. Quevedo, R. De Paris, D. D. Ruiz, and O. Norberto de Souza, \"A strategic solution to optimize molecular docking simulations using fullyflexible receptor models,\" Expert Systems with Applications, vol. 41, no. 16, pp. 7608-7620, 2014.\n[6] L. S. Cheng, R. E. Amaro, D. Xu, W. W. Li, P. W. Arzberger, and J. A. McCammon, \"Ensemble-based virtual screening reveals potential novel antiviral compounds for avian influenza neuraminidase,\" Journal of medicinal chemistry, vol. 51, no. 13, pp. 3878-3894, 2008.\n[7] R. De Paris, F. A. Frantz, O. Norberto de Souza, and D. D. Ruiz, \"wFReDoW: a cloud-based web environment to handle molecular docking simulations of a fully flexible receptor model,\" BioMed Res., vol. 2013, pp. 1-12, 2013.\n[8] N. Sugaya, \"Ligand efficiency-based support vector regression models for predicting bioactivities of ligands to drug target proteins,\" J. Chem. Inf. Model., vol. 54, no. 10, pp. 2751-2763, 2014.\n[9] S. Korkmaz, G. Zararsiz, and D. Goksuluk, \"Drug/nondrug classification using support vector machines with various feature selection strategies,\" Comput. Meth. Prog. Bio., vol. 117, no. 2, pp. 51-60, 2014.\n[10] Q. Zang, D. M. Rotroff, and R. S. Judson, \"Binary classification of a large collection of environmental chemicals from estrogen receptor assays by quantitative structure-activity relationship and machine learning methods,\" J. Chem. Inf. Model., vol. 53, no. 12, pp. 3244-3261, 2013.\n[11] K. S. Machado, A. T. Winck, D. D. Ruiz, and O. Norberto de Souza, \"Mining flexible-receptor docking experiments to select promising protein receptor snapshots,\" BMC Genomics, vol. 11, no. Suppl 5, pp. $1-10,2010$.\n[12] R. C. Barros, A. T. Winck, K. S. Machado, M. P. Basgalupp, A. de Carvalho, D. D. Ruiz, and O. Norberto de Souza, \"Automatic design of decision-tree induction algorithms tailored to flexible-receptor docking data,\" BMC Bioinformatics, vol. 13, p. 310, 2012.\n[13] F. Gargano, A. L. Costa, and O. Norberto de Souza, \"Effect of temperature on enzyme structure and function: a molecular dynamics simulation study,\" Annals of the 3rd International Conference of the Brazilian Association for Bioinformatics and Computational Biology, São Paulo, Brazil, 2007.\n[14] J. MacQueen, \"Some methods for classification and analysis of multivariate observations,\" in Proceedings of the fifth Berkeley symposium on mathematical statistics and probability, vol. 1, no. 14. California, USA, 1967, pp. 281-297.\n[15] L. Kaufman and P. J. Rousseeuw, Finding Groups in Data: An Introduction to Cluster Analysis. John Willey \\& Sons, 1990.\n[16] M. Hauschild and M. Pelikan, \"Swarm and Evolutionary Computation,\" Swarm and Evolutionary Computation, vol. 1, no. 3, pp. 111-128, 2011.\n[17] J. M. Peña, J. A. Lozano, and P. Larrañaga, \"Unsupervised Learning Of Bayesian Networks Via Estimation Of Distribution Algorithms: An Application To Gene Expression Data Clustering.\" International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems (), vol. 12, pp. 63-82, 2004.\n[18] H. Mühlenbein and G. Paa $\\beta$, \"From recombination of genes to the estimation of distributions i. binary parameters,\" ser. Lecture Notes in Computer Science, H.-M. Voigt, W. Ebeling, I. Rechenberg, and H.P. Schwefel, Eds. Springer Berlin Heidelberg, 1996, vol. 1141, pp. $178-187$.\n[19] E. R. Hruschka, R. J. G. B. Campello, A. A. Freitas, and A. C. P. L. F. de Carvalho, \"A Survey of Evolutionary Algorithms for\n\nClustering,\" IEEE Transactions on Systems, Man, and Cybernetics, Part C: Applications and Reviews, vol. 39, no. 2, pp. 133-155, 2009.\n[20] E. R. Hruschka, R. J. G. B. Campello, and L. N. de Castro, \"Evolving clusters in gene-expression data,\" Information Sciences, vol. 176, no. 13, pp. 1898-1927, 2006.\n[21] P. J. Rousseeuw, \"Silhouettes: A graphical aid to the interpretation and validation of cluster analysis,\" Journal of Computational and Applied Mathematics, vol. 20, no. 0, pp. 53 - 65, 1987.\n[22] D. A. Rozwarski, C. Vilchèze, M. Sugantino, R. Bittman, and J. C. Sacchettini, \"Crystal structure of the Mycobacterium tuberculosis enoylACP reductase, InhA, in complex with NAD+ and a C16 fatty acyl substrate,\" J. Biol. Chem., vol. 274, no. 22, pp. 15582-15589, 1999.\n[23] D. Case, T. Darden, T. Cheatham III, C. Simmerling, J. Wang, R. Duke, R. Luo, R. Walker, W. Zhang, K. Merz et al., \"AMBER 12; University of California: San Francisco, CA.\" 2012.\n[24] T. A. Binkowski, S. Naghibzadeh, and J. Liang, \"CASTp: computed atlas of surface topography of proteins,\" Nucleic Acids Res., vol. 31, no. 13, pp. 3352-3355, 2003.\n[25] F. M. Richards, \"Areas, volumes, packing and protein structure,\" Annu. Rev. Biophys. Bio., vol. 6, pp. 151-176, 1977.\n[26] M. L. Connolly, \"Analytical molecular surface calculation,\" J. Appl. Crystallogr., vol. 16, no. 5, pp. 548-558, 1983.\n[27] W. L. DeLano, \"Pymol,\" DeLano Scientific, San Carlos, CA, vol. 700, 2002.\n[28] A. K. Jain and R. C. Dubes, Algorithms for Clustering Data. Upper Saddle River, NJ, USA: Prentice-Hall, Inc., 1988.\n[29] G. M. Morris, R. Huey, W. Lindstrom, M. F. Sanner, R. K. Belew, D. S. Goodsell, and A. J. Olson, \"AutoDock4 and AutoDockTools4: Automated docking with selective receptor flexibility,\" J. Comput. Chem., vol. 30, no. 16, pp. 2785-2791, 2009.\n[30] H. M. Berman, J. Westbrook, Z. Feng, G. Gilliland, T. Bhat, H. Weissig, I. N. Shindyalov, and P. E. Bourne, \"The protein data bank,\" Nucleic Acids Res., vol. 28, no. 1, pp. 235-242, 2000.\n[31] R. D. Paris, C. V. Quevedo, D. D. A. R. andO. Norberto de Souza, and R. C. Barros, \"Clustering molecular dynamics trajectories for optimizing docking experiments,\" Comput. Intell. Neurosci., vol. in press, 2015.\n[32] J. Demšar, \"Statistical Comparisons of Classifiers over Multiple Data Sets,\" Journal of Machine Learning Research, vol. 7, pp. 1-30, 2006.\n[33] R. Iman and J. Davenport, \"Approximations of the critical region of the friedman statistic,\" Communications in Statistics, pp. 571-595, 1980.\n[34] J. Roure, P. Larranaga, and R. Sangüesa, \"An empirical comparison between k-means, GAs and EDAs in partitional clustering,\" in Estimation of distribution algorithms. Springer, 2002, pp. 343-360.\n[35] R. Santana, C. Bielza, and P. Larrañaga, \"Affinity propagation enhanced by estimation of distribution algorithms,\" in Proceedings of the 13th annual conference on Genetic and evolutionary computation. ACM, 2011, pp. 331-338.\n[36] B. J. Frey and D. Dueck, \"Clustering by passing messages between data points,\" Science, vol. 315, p. 2007, 2007.\n[37] A. Meiguins, R. Limao, B. Meiguins, S. Junior, and A. Freitas, \"AutoClustering: An estimation of distribution algorithm for the automatic generation of clustering algorithms,\" in IEEE Congress on Evolutionary Computation (CEC), 2012, pp. 1-7.\n[38] J. Peña, J. Lozano, and P. Larrañaga, \"Benefits of data clustering in multimodal function optimization via EDAs,\" in Estimation of Distribution Algorithms, ser. Genetic Algorithms and Evolutionary Computation, P. Larrañaga and J. Lozano, Eds. Springer US, 2002, vol. 2, pp. $101-127$.\n[39] Q. Lu and X. Yao, \"Clustering and learning gaussian distribution for continuous optimization,\" IEEE Transactions on Systems, Man, and Cybernetics, Part C: Applications and Reviews, vol. 35, no. 2, pp. 195204, 2005.\n[40] C. W. Ahn and R. S. Ramakrishna, \"Clustering-based probabilistic model fitting in estimation of distribution algorithms,\" IEICE transactions on information and systems, vol. 89, no. 1, pp. 381-383, 2006.\n[41] D. L. Davies and D. W. Bouldin, \"A Cluster Separation Measure,\" IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. PAMI1, no. 2, pp. 224-227, 1979.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "P. Cozzini, G. E. Kellogg, F. Spyrakis, D. J. Abraham, G. Costantino, A. Emerson, F. Fanelli, H. Gohlke, L. A. Kuhn, G. M. Morris et al., Journal of medicinal chemistry, vol. 51, no. 20, pp. 6237-6255, 2008."
+      },
+      {
+        "ref_id": "2",
+        "text": "C. N. Cavasotto, J. A. Kovacs, and R. A. Abagyan, \"Representing receptor flexibility in ligand docking through relevant normal modes,\" Journal of the American Chemical Society, vol. 127, no. 26, pp. 96329640, 2005."
+      },
+      {
+        "ref_id": "3",
+        "text": "H. Alonso, A. A. Bliznyuk, and J. E. Gready, \"Combining docking and molecular dynamic simulations in drug design,\" Med. Res. Rev., vol. 26, no. 5, pp. 531-568, 2006."
+      },
+      {
+        "ref_id": "4",
+        "text": "S. E. Nichols, R. V. Swift, and R. E. Amaro, \"Rational prediction with molecular dynamics for hit identification,\" Current topics in medicinal chemistry, vol. 12, no. 18, p. 2002, 2012."
+      },
+      {
+        "ref_id": "5",
+        "text": "C. V. Quevedo, R. De Paris, D. D. Ruiz, and O. Norberto de Souza, \"A strategic solution to optimize molecular docking simulations using fullyflexible receptor models,\" Expert Systems with Applications, vol. 41, no. 16, pp. 7608-7620, 2014."
+      },
+      {
+        "ref_id": "6",
+        "text": "L. S. Cheng, R. E. Amaro, D. Xu, W. W. Li, P. W. Arzberger, and J. A. McCammon, \"Ensemble-based virtual screening reveals potential novel antiviral compounds for avian influenza neuraminidase,\" Journal of medicinal chemistry, vol. 51, no. 13, pp. 3878-3894, 2008."
+      },
+      {
+        "ref_id": "7",
+        "text": "R. De Paris, F. A. Frantz, O. Norberto de Souza, and D. D. Ruiz, \"wFReDoW: a cloud-based web environment to handle molecular docking simulations of a fully flexible receptor model,\" BioMed Res., vol. 2013, pp. 1-12, 2013."
+      },
+      {
+        "ref_id": "8",
+        "text": "N. Sugaya, \"Ligand efficiency-based support vector regression models for predicting bioactivities of ligands to drug target proteins,\" J. Chem. Inf. Model., vol. 54, no. 10, pp. 2751-2763, 2014."
+      },
+      {
+        "ref_id": "9",
+        "text": "S. Korkmaz, G. Zararsiz, and D. Goksuluk, \"Drug/nondrug classification using support vector machines with various feature selection strategies,\" Comput. Meth. Prog. Bio., vol. 117, no. 2, pp. 51-60, 2014."
+      },
+      {
+        "ref_id": "10",
+        "text": "Q. Zang, D. M. Rotroff, and R. S. Judson, \"Binary classification of a large collection of environmental chemicals from estrogen receptor assays by quantitative structure-activity relationship and machine learning methods,\" J. Chem. Inf. Model., vol. 53, no. 12, pp. 3244-3261, 2013."
+      },
+      {
+        "ref_id": "11",
+        "text": "K. S. Machado, A. T. Winck, D. D. Ruiz, and O. Norberto de Souza, \"Mining flexible-receptor docking experiments to select promising protein receptor snapshots,\" BMC Genomics, vol. 11, no. Suppl 5, pp. $1-10,2010$."
+      },
+      {
+        "ref_id": "12",
+        "text": "R. C. Barros, A. T. Winck, K. S. Machado, M. P. Basgalupp, A. de Carvalho, D. D. Ruiz, and O. Norberto de Souza, \"Automatic design of decision-tree induction algorithms tailored to flexible-receptor docking data,\" BMC Bioinformatics, vol. 13, p. 310, 2012."
+      },
+      {
+        "ref_id": "13",
+        "text": "F. Gargano, A. L. Costa, and O. Norberto de Souza, \"Effect of temperature on enzyme structure and function: a molecular dynamics simulation study,\" Annals of the 3rd International Conference of the Brazilian Association for Bioinformatics and Computational Biology, São Paulo, Brazil, 2007."
+      },
+      {
+        "ref_id": "14",
+        "text": "J. MacQueen, \"Some methods for classification and analysis of multivariate observations,\" in Proceedings of the fifth Berkeley symposium on mathematical statistics and probability, vol. 1, no. 14. California, USA, 1967, pp. 281-297."
+      },
+      {
+        "ref_id": "15",
+        "text": "L. Kaufman and P. J. Rousseeuw, Finding Groups in Data: An Introduction to Cluster Analysis. John Willey \\& Sons, 1990."
+      },
+      {
+        "ref_id": "16",
+        "text": "M. Hauschild and M. Pelikan, \"Swarm and Evolutionary Computation,\" Swarm and Evolutionary Computation, vol. 1, no. 3, pp. 111-128, 2011."
+      },
+      {
+        "ref_id": "17",
+        "text": "J. M. Peña, J. A. Lozano, and P. Larrañaga, \"Unsupervised Learning Of Bayesian Networks Via Estimation Of Distribution Algorithms: An Application To Gene Expression Data Clustering.\" International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems (), vol. 12, pp. 63-82, 2004."
+      },
+      {
+        "ref_id": "18",
+        "text": "H. Mühlenbein and G. Paa $\\beta$, \"From recombination of genes to the estimation of distributions i. binary parameters,\" ser. Lecture Notes in Computer Science, H.-M. Voigt, W. Ebeling, I. Rechenberg, and H.P. Schwefel, Eds. Springer Berlin Heidelberg, 1996, vol. 1141, pp. $178-187$."
+      },
+      {
+        "ref_id": "19",
+        "text": "E. R. Hruschka, R. J. G. B. Campello, A. A. Freitas, and A. C. P. L. F. de Carvalho, \"A Survey of Evolutionary Algorithms for"
+      },
+      {
+        "ref_id": "20",
+        "text": "E. R. Hruschka, R. J. G. B. Campello, and L. N. de Castro, \"Evolving clusters in gene-expression data,\" Information Sciences, vol. 176, no. 13, pp. 1898-1927, 2006."
+      },
+      {
+        "ref_id": "21",
+        "text": "P. J. Rousseeuw, \"Silhouettes: A graphical aid to the interpretation and validation of cluster analysis,\" Journal of Computational and Applied Mathematics, vol. 20, no. 0, pp. 53 - 65, 1987."
+      },
+      {
+        "ref_id": "22",
+        "text": "D. A. Rozwarski, C. Vilchèze, M. Sugantino, R. Bittman, and J. C. Sacchettini, \"Crystal structure of the Mycobacterium tuberculosis enoylACP reductase, InhA, in complex with NAD+ and a C16 fatty acyl substrate,\" J. Biol. Chem., vol. 274, no. 22, pp. 15582-15589, 1999."
+      },
+      {
+        "ref_id": "23",
+        "text": "D. Case, T. Darden, T. Cheatham III, C. Simmerling, J. Wang, R. Duke, R. Luo, R. Walker, W. Zhang, K. Merz et al., \"AMBER 12; University of California: San Francisco, CA.\" 2012."
+      },
+      {
+        "ref_id": "24",
+        "text": "T. A. Binkowski, S. Naghibzadeh, and J. Liang, \"CASTp: computed atlas of surface topography of proteins,\" Nucleic Acids Res., vol. 31, no. 13, pp. 3352-3355, 2003."
+      },
+      {
+        "ref_id": "25",
+        "text": "F. M. Richards, \"Areas, volumes, packing and protein structure,\" Annu. Rev. Biophys. Bio., vol. 6, pp. 151-176, 1977."
+      },
+      {
+        "ref_id": "26",
+        "text": "M. L. Connolly, \"Analytical molecular surface calculation,\" J. Appl. Crystallogr., vol. 16, no. 5, pp. 548-558, 1983."
+      },
+      {
+        "ref_id": "27",
+        "text": "W. L. DeLano, \"Pymol,\" DeLano Scientific, San Carlos, CA, vol. 700, 2002."
+      },
+      {
+        "ref_id": "28",
+        "text": "A. K. Jain and R. C. Dubes, Algorithms for Clustering Data. Upper Saddle River, NJ, USA: Prentice-Hall, Inc., 1988."
+      },
+      {
+        "ref_id": "29",
+        "text": "G. M. Morris, R. Huey, W. Lindstrom, M. F. Sanner, R. K. Belew, D. S. Goodsell, and A. J. Olson, \"AutoDock4 and AutoDockTools4: Automated docking with selective receptor flexibility,\" J. Comput. Chem., vol. 30, no. 16, pp. 2785-2791, 2009."
+      },
+      {
+        "ref_id": "30",
+        "text": "H. M. Berman, J. Westbrook, Z. Feng, G. Gilliland, T. Bhat, H. Weissig, I. N. Shindyalov, and P. E. Bourne, \"The protein data bank,\" Nucleic Acids Res., vol. 28, no. 1, pp. 235-242, 2000."
+      },
+      {
+        "ref_id": "31",
+        "text": "R. D. Paris, C. V. Quevedo, D. D. A. R. andO. Norberto de Souza, and R. C. Barros, \"Clustering molecular dynamics trajectories for optimizing docking experiments,\" Comput. Intell. Neurosci., vol. in press, 2015."
+      },
+      {
+        "ref_id": "32",
+        "text": "J. Demšar, \"Statistical Comparisons of Classifiers over Multiple Data Sets,\" Journal of Machine Learning Research, vol. 7, pp. 1-30, 2006."
+      },
+      {
+        "ref_id": "33",
+        "text": "R. Iman and J. Davenport, \"Approximations of the critical region of the friedman statistic,\" Communications in Statistics, pp. 571-595, 1980."
+      },
+      {
+        "ref_id": "34",
+        "text": "J. Roure, P. Larranaga, and R. Sangüesa, \"An empirical comparison between k-means, GAs and EDAs in partitional clustering,\" in Estimation of distribution algorithms. Springer, 2002, pp. 343-360."
+      },
+      {
+        "ref_id": "35",
+        "text": "R. Santana, C. Bielza, and P. Larrañaga, \"Affinity propagation enhanced by estimation of distribution algorithms,\" in Proceedings of the 13th annual conference on Genetic and evolutionary computation. ACM, 2011, pp. 331-338."
+      },
+      {
+        "ref_id": "36",
+        "text": "B. J. Frey and D. Dueck, \"Clustering by passing messages between data points,\" Science, vol. 315, p. 2007, 2007."
+      },
+      {
+        "ref_id": "37",
+        "text": "A. Meiguins, R. Limao, B. Meiguins, S. Junior, and A. Freitas, \"AutoClustering: An estimation of distribution algorithm for the automatic generation of clustering algorithms,\" in IEEE Congress on Evolutionary Computation (CEC), 2012, pp. 1-7."
+      },
+      {
+        "ref_id": "38",
+        "text": "J. Peña, J. Lozano, and P. Larrañaga, \"Benefits of data clustering in multimodal function optimization via EDAs,\" in Estimation of Distribution Algorithms, ser. Genetic Algorithms and Evolutionary Computation, P. Larrañaga and J. Lozano, Eds. Springer US, 2002, vol. 2, pp. $101-127$."
+      },
+      {
+        "ref_id": "39",
+        "text": "Q. Lu and X. Yao, \"Clustering and learning gaussian distribution for continuous optimization,\" IEEE Transactions on Systems, Man, and Cybernetics, Part C: Applications and Reviews, vol. 35, no. 2, pp. 195204, 2005."
+      },
+      {
+        "ref_id": "40",
+        "text": "C. W. Ahn and R. S. Ramakrishna, \"Clustering-based probabilistic model fitting in estimation of distribution algorithms,\" IEICE transactions on information and systems, vol. 89, no. 1, pp. 381-383, 2006."
+      },
+      {
+        "ref_id": "41",
+        "text": "D. L. Davies and D. W. Bouldin, \"A Cluster Separation Measure,\" IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. PAMI1, no. 2, pp. 224-227, 1979."
+      }
+    ],
+    "reference_count": 41,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "shows the $F E B_{\\text {var }}$ results provided by the best executions of Clus-EDA and Clus-EDA ${ }_{w f}$. To be precise, the partitions found by Clus-EDA and Clus-EDA ${ }_{w f}$ were further evaluated in exhaustive molecular docking experiments using all the 20,000 snapshots and one ligand at a time, and for each ligand it was computed the $F E B_{\\text {var }}$ for the corresponding partition. Recall that $F E B_{\\text {var }}$ is an average of the within-cluster FEB dispersion. The best execution of Clus-EDA provided a partition with 5060 clusters, whereas the best execution of Clus-EDA ${ }_{w f}$ generated a partition with 779 clusters. The best (lowest) results are highlighted in boldface. Note that ClusEDA outperformed $k$-means and UPGMA in 16 out of the 20 ligands that were used during the experiments. Clus-EDA ${ }_{w f}$, in turn, also outperformed $k$-means and UPGMA in 16 out of the 20 ligands, though generating a much smaller number of clusters (779), considering it penalizes for large values of $k$.",
+      "headers": [
+        "",
+        "Clus-EDA $(k=5060)$",
+        "",
+        "",
+        "Clus-EDA ${ }_{w f}(k=779)$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Ligand",
+          "Protein",
+          "$\\mathrm{C} \\boldsymbol{u}-\\mathrm{EtN}$",
+          "UPGMA",
+          "$k$-means",
+          "$\\mathrm{C} \\boldsymbol{u}-\\mathrm{EtN}_{w f}$",
+          "UPGMA $k$-means"
+        ],
+        [
+          "TCL",
+          145,
+          0.23,
+          0.24,
+          0.23,
+          0.3,
+          0.34
+        ],
+        [
+          "TCL",
+          235,
+          0.33,
+          0.35,
+          0.36,
+          0.46,
+          0.5
+        ],
+        [
+          665,
+          27,
+          0.31,
+          0.32,
+          0.32,
+          0.42,
+          0.43
+        ],
+        [
+          566,
+          27,
+          0.25,
+          0.25,
+          0.26,
+          0.33,
+          0.35
+        ],
+        [
+          8,
+          3,
+          0.37,
+          0.41,
+          0.4,
+          0.48,
+          0.53
+        ],
+        [
+          "JPI",
+          3,
+          0.41,
+          0.42,
+          0.42,
+          0.52,
+          0.56
+        ],
+        [
+          "JPL",
+          3,
+          0.42,
+          0.43,
+          0.43,
+          0.54,
+          0.6
+        ],
+        [
+          "JPM",
+          3,
+          0.49,
+          0.51,
+          0.51,
+          0.63,
+          0.67
+        ],
+        [
+          468,
+          27,
+          0.36,
+          0.38,
+          0.38,
+          0.46,
+          0.52
+        ],
+        [
+          641,
+          27,
+          0.33,
+          0.35,
+          0.34,
+          0.42,
+          0.45
+        ],
+        [
+          744,
+          27,
+          0.33,
+          0.35,
+          0.35,
+          0.42,
+          0.46
+        ],
+        [
+          "INH-NAD",
+          1,
+          0.84,
+          0.8,
+          0.86,
+          1.16,
+          0.91
+        ],
+        [
+          5,
+          236,
+          0.28,
+          0.29,
+          0.29,
+          0.37,
+          0.44
+        ],
+        [
+          8,
+          237,
+          0.45,
+          0.46,
+          0.47,
+          0.58,
+          0.61
+        ],
+        [
+          "TCU",
+          222,
+          0.31,
+          0.33,
+          0.32,
+          0.41,
+          0.47
+        ],
+        [
+          "PTH-NAD",
+          2,
+          1.06,
+          1.07,
+          1.12,
+          1.55,
+          1.24
+        ],
+        [
+          "THT",
+          1,
+          0.38,
+          0.39,
+          0.39,
+          0.5,
+          0.53
+        ],
+        [
+          4,
+          2,
+          0.4,
+          0.43,
+          0.44,
+          0.53,
+          0.61
+        ],
+        [
+          "GEQ",
+          144,
+          1.98,
+          1.98,
+          2.08,
+          2.47,
+          2.04
+        ],
+        [
+          "INH-NAD",
+          2,
+          0.85,
+          0.86,
+          0.87,
+          1.2,
+          0.97
+        ],
+        [
+          "Number of Wins:",
+          "",
+          16,
+          1,
+          0,
+          16,
+          4
+        ],
+        [
+          "Average Rank:",
+          "",
+          1.13,
+          2.3,
+          2.58,
+          1.25,
+          2.03
+        ]
+      ],
+      "row_count": 23,
+      "column_count": 7
+    },
+    {
+      "table_number": "II",
+      "table_title": "shows a similar picture than Table I, but now presenting the results of the worst executions of Clus-EDA and Clus-EDA ${ }_{w f}$. In this scenario, Clus-EDA once again outperformed $k$-means and UPGMA in 16 out of the 20",
+      "headers": [
+        "",
+        "Clus-EDA $(k=5174)$",
+        "",
+        "",
+        "Clus-EDA ${ }_{w f}(k=817)$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Ligand",
+          "Protein",
+          "$\\mathrm{C} \\boldsymbol{u}-\\mathrm{EtN}$",
+          "UPGMA",
+          "$k$-means",
+          "$\\mathrm{C} \\boldsymbol{u}-\\mathrm{EtN}_{w f}$",
+          "UPGMA $k$-means"
+        ],
+        [
+          "TCL",
+          145,
+          0.22,
+          0.24,
+          0.24,
+          0.28,
+          0.34
+        ],
+        [
+          "TCL",
+          235,
+          0.33,
+          0.34,
+          0.35,
+          0.44,
+          0.51
+        ],
+        [
+          665,
+          27,
+          0.31,
+          0.32,
+          0.33,
+          0.39,
+          0.44
+        ],
+        [
+          566,
+          27,
+          0.25,
+          0.25,
+          0.26,
+          0.33,
+          0.35
+        ],
+        [
+          8,
+          3,
+          0.38,
+          0.41,
+          0.39,
+          0.49,
+          0.53
+        ],
+        [
+          "JPI",
+          3,
+          0.4,
+          0.41,
+          0.43,
+          0.52,
+          0.58
+        ],
+        [
+          "JPL",
+          3,
+          0.41,
+          0.43,
+          0.43,
+          0.55,
+          0.59
+        ],
+        [
+          "JPM",
+          3,
+          0.49,
+          0.51,
+          0.5,
+          0.63,
+          0.67
+        ],
+        [
+          468,
+          27,
+          0.35,
+          0.38,
+          0.38,
+          0.44,
+          0.52
+        ],
+        [
+          641,
+          27,
+          0.33,
+          0.35,
+          0.35,
+          0.43,
+          0.46
+        ],
+        [
+          744,
+          27,
+          0.33,
+          0.35,
+          0.35,
+          0.42,
+          0.46
+        ],
+        [
+          "INH-NAD",
+          1,
+          0.82,
+          0.8,
+          0.85,
+          1.16,
+          0.9
+        ],
+        [
+          5,
+          236,
+          0.28,
+          0.29,
+          0.3,
+          0.36,
+          0.44
+        ],
+        [
+          8,
+          237,
+          0.45,
+          0.46,
+          0.46,
+          0.57,
+          0.61
+        ],
+        [
+          "TCU",
+          222,
+          0.31,
+          0.33,
+          0.33,
+          0.37,
+          0.48
+        ],
+        [
+          "PTH-NAD",
+          2,
+          1.07,
+          1.07,
+          1.1,
+          1.55,
+          1.22
+        ],
+        [
+          "THT",
+          1,
+          0.36,
+          0.38,
+          0.4,
+          0.47,
+          0.54
+        ],
+        [
+          4,
+          2,
+          0.42,
+          0.43,
+          0.44,
+          0.52,
+          0.61
+        ],
+        [
+          "GEQ",
+          144,
+          2.03,
+          1.96,
+          2.08,
+          2.52,
+          2.04
+        ],
+        [
+          "INH-NAD",
+          2,
+          0.83,
+          0.86,
+          0.87,
+          1.16,
+          0.96
+        ],
+        [
+          "Number of Wins:",
+          "",
+          16,
+          2,
+          0,
+          16,
+          4
+        ],
+        [
+          "Average Rank:",
+          "",
+          1.15,
+          2.13,
+          2.73,
+          1.3,
+          2.1
+        ]
+      ],
+      "row_count": 23,
+      "column_count": 7
+    },
+    {
+      "table_number": "III",
+      "table_title": "$\\quad S S W C$ VALUES OF THE PARTITIONS PROVIDED BY CLUS-EDA VERSIONS AND BY THE BASELINE ALGORITHMS.",
+      "headers": [
+        "Number of clusters",
+        "Clus-EDA",
+        "UPGMA",
+        "$k$-means"
+      ],
+      "rows": [
+        [
+          779,
+          "$\\mathbf{0 . 2 6}$",
+          0.06,
+          0.12
+        ],
+        [
+          817,
+          "$\\mathbf{0 . 2 6}$",
+          0.07,
+          0.12
+        ],
+        [
+          5060,
+          "$\\mathbf{0 . 4 1}$",
+          0.11,
+          0.18
+        ],
+        [
+          5174,
+          "$\\mathbf{0 . 4 1}$",
+          0.11,
+          0.18
+        ],
+        [
+          "Number of Wins",
+          "$\\mathbf{4}$",
+          0,
+          0
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    }
+  ]
+}

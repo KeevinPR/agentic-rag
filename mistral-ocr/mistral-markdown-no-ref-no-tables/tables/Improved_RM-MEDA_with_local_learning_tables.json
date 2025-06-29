@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Improved RM-MEDA with local learning.md",
+    "filename": "Improved RM-MEDA with local learning.md",
+    "title": "Improved RM-MEDA with local learning",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Test instances",
+      "headers": [
+        "Instances",
+        "Variable",
+        "Objectives",
+        "Evaluation"
+      ],
+      "rows": [
+        [
+          1,
+          "$[0,1]^{n}, n=30$",
+          "$\\begin{aligned} & f_{1}(x)=x_{1} f_{2}(x)=g(x)\\left[1-\\sqrt{f_{1}}(x) / g(x)\\right] \\\\ & g(x)=1+9\\left(\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right) /(n-1) \\end{aligned}$",
+          10000
+        ],
+        [
+          2,
+          "$[0,1]^{n}, n=30$",
+          "$\\begin{aligned} & f_{1}(x)=x_{1} f_{2}(x)=g(x)\\left[1-\\left(f_{1}(x) / g(x)\\right)^{2}\\right] \\\\ & g(x)=1+9\\left(\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right) /(n-1) \\end{aligned}$",
+          10000
+        ],
+        [
+          3,
+          "$[0,1]^{n}, n=30$",
+          "$\\begin{aligned} & f_{1}(x)=1-\\exp \\left(-4 s_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ & f_{2}(x)=g(x)\\left[1-\\left(f_{1}(x) / g(x)\\right)^{2}\\right] \\\\ & g(x)=1+9\\left(\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right) /(n-1) \\end{aligned}$",
+          100000
+        ],
+        [
+          4,
+          "$[0,1]^{n}, n=30$",
+          "$\\begin{aligned} & f_{1}(x)=\\cos \\left(\\frac{\\pi}{2} x_{1}\\right) \\cos \\left(\\frac{\\pi}{2} x_{2}\\right)(1+g(x)) \\\\ & f_{2}(x)=\\cos \\left(\\frac{\\pi}{2} x_{1}\\right) \\sin \\left(\\frac{\\pi}{2} x_{2}\\right)(1+g(x)) \\\\ & f_{3}(x)=\\sin \\left(\\frac{\\pi}{2} x_{1}\\right)(1+g(x)) g(x)=\\sum_{i=3}^{n}\\left(x_{i}-x_{1}\\right)^{2} \\end{aligned}$",
+          40000
+        ],
+        [
+          5,
+          "$[0,1]^{n}, n=30$",
+          "$\\begin{aligned} & f_{1}(x)=x_{1} f_{2}(x)=g(x)\\left[1-\\sqrt{f_{1}(x) / g(x)}\\right] \\\\ & g(x)=1+9\\left(\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right) /(n-1) \\end{aligned}$",
+          10000
+        ],
+        [
+          6,
+          "$[0,1]^{n}, n=30$",
+          "$\\begin{aligned} & f_{1}(x)=\\sqrt{x_{1}} f_{2}(x)=g(x)\\left[1-\\left(f_{1}(x) / g(x)\\right)^{2}\\right] \\\\ & g(x)=1+9\\left(\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right) /(n-1) \\end{aligned}$",
+          10000
+        ],
+        [
+          7,
+          "$[0,1]^{n}, n=30$",
+          "$\\begin{aligned} & f_{1}(x)=1-\\exp \\left(-4 s_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ & f_{2}(x)=g(x)\\left[1-\\left(f_{1}(x) / g(x)\\right)^{2}\\right] \\\\ & g(x)=1+9\\left[\\left(\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right) /(n-1)\\right] \\end{aligned}$",
+          100000
+        ],
+        [
+          8,
+          "$[0,1]^{n}, n=30$",
+          "$\\begin{aligned} & f_{1}(x)=\\cos \\left(\\frac{\\pi}{2} x_{1}\\right) \\cos \\left(\\frac{\\pi}{2} x_{2}\\right)(1+g(x)) \\\\ & f_{2}(x)=\\cos \\left(\\frac{\\pi}{2} x_{1}\\right) \\sin \\left(\\frac{\\pi}{2} x_{2}\\right)(1+g(x)) \\\\ & f_{3}(x)=\\sin \\left(\\frac{\\pi}{2} x_{1}\\right)(1+g(x)) g(x)=\\sum_{i=3}^{n}\\left(x_{i}-x_{1}\\right)^{2} \\end{aligned}$",
+          40000
+        ],
+        [
+          9,
+          "$[0,1] \\times[0,10]^{n-1}$, $n=10$",
+          "$\\begin{aligned} & f_{1}(x)=x_{1} f_{2}(x)=g(x)\\left[1-\\sqrt{f_{1}(x) / g(x)}\\right] \\\\ & g(x)=\\frac{1}{4000} \\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}-\\prod_{i=2}^{n} \\cos \\left(\\frac{x_{i}^{2}-x_{1}}{\\sqrt{i-1}}\\right)+2 \\end{aligned}$",
+          100000
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The IGD-Metric performance on F1-F9",
+      "headers": [
+        "IGD-metric",
+        "RM-MEDA",
+        "",
+        "",
+        "",
+        "IRM-MEDA",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Mean",
+          "Best",
+          "Worst",
+          "Std",
+          "Mean",
+          "Best",
+          "Worst",
+          "Std"
+        ],
+        [
+          1,
+          0.0054,
+          0.0046,
+          0.0068,
+          "$5.4177 \\mathrm{e}-004$",
+          0.004,
+          0.0039,
+          0.0041,
+          "$3.3158 \\mathrm{e}-005$"
+        ],
+        [
+          2,
+          0.0063,
+          0.005,
+          0.0119,
+          0.0019,
+          0.0039,
+          0.0039,
+          0.004,
+          "$2.7375 \\mathrm{e}-005$"
+        ],
+        [
+          3,
+          0.0088,
+          0.0036,
+          0.0177,
+          0.0053,
+          0.0022,
+          0.0021,
+          0.0024,
+          "$6.4967 \\mathrm{e}-005$"
+        ],
+        [
+          4,
+          0.046,
+          0.044,
+          0.0478,
+          0.001,
+          0.0419,
+          0.0411,
+          0.0428,
+          "$5.1249 \\mathrm{e}-004$"
+        ],
+        [
+          5,
+          0.0123,
+          0.0058,
+          0.0277,
+          0.0057,
+          0.0049,
+          0.0047,
+          0.0052,
+          "$1.3602 \\mathrm{e}-004$"
+        ],
+        [
+          6,
+          0.2463,
+          0.0222,
+          0.4058,
+          0.113,
+          0.005,
+          0.0046,
+          0.0055,
+          "$2.3223 \\mathrm{e}-004$"
+        ],
+        [
+          7,
+          0.1545,
+          0.0829,
+          1.0238,
+          0.2103,
+          0.0384,
+          0.036,
+          0.0416,
+          0.0013
+        ],
+        [
+          8,
+          0.063,
+          0.0581,
+          0.0749,
+          0.004,
+          0.0532,
+          0.0501,
+          0.056,
+          0.0015
+        ],
+        [
+          9,
+          0.0204,
+          0.0051,
+          0.0673,
+          0.0173,
+          0.0066,
+          0.0048,
+          0.0132,
+          0.0024
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 9
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 The IGD-Metric performance on F1-F9 (runned with half of primitive maximal number of function evaluations)",
+      "headers": [
+        "IGD-metric",
+        "RM-MEDA",
+        "",
+        "",
+        "",
+        "IRM-MEDA",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Mean",
+          "Best",
+          "Worst",
+          "Std",
+          "Mean",
+          "Best",
+          "Worst",
+          "Std"
+        ],
+        [
+          1,
+          0.0338,
+          0.0144,
+          0.0733,
+          0.0229,
+          0.0041,
+          0.0039,
+          0.0041,
+          "$5.4 \\mathrm{e}-005$"
+        ],
+        [
+          2,
+          0.113,
+          0.0273,
+          0.2179,
+          0.0795,
+          0.0039,
+          0.0039,
+          0.004,
+          "$4.0 \\mathrm{e}-005$"
+        ],
+        [
+          3,
+          0.0804,
+          0.0562,
+          0.1529,
+          0.0281,
+          0.0022,
+          0.0021,
+          0.0023,
+          "$6.8 \\mathrm{e}-005$"
+        ],
+        [
+          4,
+          0.0619,
+          0.0543,
+          0.0821,
+          0.009,
+          0.0427,
+          0.0421,
+          0.0432,
+          0.0004
+        ],
+        [
+          5,
+          0.1966,
+          0.1012,
+          0.3111,
+          0.0796,
+          0.0059,
+          0.0054,
+          0.0064,
+          0.0003
+        ],
+        [
+          6,
+          0.4497,
+          0.3207,
+          0.5373,
+          0.0577,
+          0.0063,
+          0.0055,
+          0.0069,
+          0.0005
+        ],
+        [
+          7,
+          0.3357,
+          0.1066,
+          1.0304,
+          0.3725,
+          0.0494,
+          0.0456,
+          0.0561,
+          0.0031
+        ],
+        [
+          8,
+          0.1291,
+          0.1047,
+          0.1722,
+          0.0223,
+          0.0599,
+          0.0559,
+          0.0622,
+          0.0019
+        ],
+        [
+          9,
+          0.029,
+          0.0058,
+          0.1681,
+          0.04956,
+          0.0067,
+          0.0053,
+          0.0099,
+          0.0018
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 9
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 The IGD-Metric performance of the four algorithms on F1-F9",
+      "headers": [
+        "IGD-metric",
+        "RM-MEDA",
+        "Elitist + RM-MEDA",
+        "EA + RM-MEDA",
+        "IRM-MEDA"
+      ],
+      "rows": [
+        [
+          1,
+          0.0057,
+          0.0056,
+          0.0049,
+          0.004
+        ],
+        [
+          2,
+          0.0061,
+          0.0068,
+          0.0047,
+          0.0039
+        ],
+        [
+          3,
+          0.0065,
+          0.2149,
+          0.0048,
+          0.0022
+        ],
+        [
+          4,
+          0.0463,
+          0.0456,
+          0.0474,
+          0.0417
+        ],
+        [
+          5,
+          0.0175,
+          0.0251,
+          0.006,
+          0.0049
+        ],
+        [
+          6,
+          0.2055,
+          0.2255,
+          0.2348,
+          0.005
+        ],
+        [
+          7,
+          0.198,
+          0.1532,
+          0.1167,
+          0.0372
+        ],
+        [
+          8,
+          0.0606,
+          0.063,
+          0.0543,
+          0.0527
+        ],
+        [
+          9,
+          0.0367,
+          0.6004,
+          0.0083,
+          0.0066
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    }
+  ]
+}

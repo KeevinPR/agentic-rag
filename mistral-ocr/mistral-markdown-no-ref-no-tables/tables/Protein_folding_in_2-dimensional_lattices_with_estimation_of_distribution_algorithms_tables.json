@@ -1,0 +1,394 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2004/Protein folding in 2-dimensional lattices with estimation of distribution algorithms.md",
+    "filename": "Protein folding in 2-dimensional lattices with estimation of distribution algorithms.md",
+    "title": "Protein folding in 2-dimensional lattices with estimation of distribution algorithms",
+    "year": "2004"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "HP instances used in the experiments.",
+      "headers": [
+        "name",
+        "size",
+        "opt.",
+        "sequence"
+      ],
+      "rows": [
+        [
+          1,
+          20,
+          "$-9$",
+          "HPHPPHHPHHPHPHPPHPPHPPH"
+        ],
+        [
+          2,
+          25,
+          "$-8$",
+          "PPHPPHHP ${ }^{4} H H P^{4} H H P^{4} H H$"
+        ],
+        [
+          3,
+          36,
+          "$-14$",
+          "$P^{3} H H P P H H P^{5} H^{7} P P H H P^{4} H H P P H P P$"
+        ],
+        [
+          4,
+          48,
+          "$-23$",
+          "PPHPPHHPPHHP ${ }^{5} H^{10} P^{6} H H P P H H P P H P P H^{5}$"
+        ],
+        [
+          5,
+          50,
+          "$-21$",
+          "HHPHPHPHPH ${ }^{4} P H P^{3} H P^{3} H P^{4} H P^{3} H P^{3} H P H^{4}\\{P H\\}^{4} H$"
+        ],
+        [
+          6,
+          60,
+          "$-36$",
+          "$P P H^{3} P H^{8} P^{3} H^{10} P H P^{3} H^{12} P^{4} H^{6} P H H P H P$"
+        ],
+        [
+          7,
+          64,
+          "$-42$",
+          "$H^{12} P H P H\\{P P H H\\}^{2} P P H\\{P P H H\\}^{2} P P H\\{P P H H\\}^{2} P P H P H P H^{12}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Two dimensional functional model protein instances.",
+      "headers": [
+        "name",
+        "opt.",
+        "sequence"
+      ],
+      "rows": [
+        [
+          8,
+          "$-20$",
+          "PHPPHPPHHHHPPHPPHPHPPHH"
+        ],
+        [
+          9,
+          "$-17$",
+          "PHPPHPPHHHHHPPPPHPPHPPH"
+        ],
+        [
+          10,
+          "$-16$",
+          "HPHPHPHHHPPHPPPPHPHPPHH"
+        ],
+        [
+          11,
+          "$-20$",
+          "HHHPHHHPPHHPPPPHPHPPHHHH"
+        ],
+        [
+          12,
+          "$-17$",
+          "PHPPPPPPHPHHPHPHHHHPHPH"
+        ],
+        [
+          13,
+          "$-13$",
+          "HHPHPPHPPPPHPPPPHPPHHP"
+        ],
+        [
+          14,
+          "$-26$",
+          "PHPHHPHHHHHPPHHHPHHHHH"
+        ],
+        [
+          15,
+          "$-16$",
+          "HPHPPPHHHHPHPPPPHPHPHHH"
+        ],
+        [
+          16,
+          "$-15$",
+          "PHPHHPHHPHHPHPHPHPPPPPH"
+        ],
+        [
+          17,
+          "$-14$",
+          "HPHPHPPPPPHHPPPPHPHPHPH"
+        ],
+        [
+          18,
+          "$-15$",
+          "PHPPHHHPHPPHPHHPHPPPPH"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results achieved by the different algorithms for the HP instances.",
+      "headers": [
+        "",
+        "$E D A$",
+        "",
+        "",
+        "",
+        "",
+        "$G A$",
+        "",
+        "$M C$",
+        "",
+        "$M M A$",
+        ""
+      ],
+      "rows": [
+        [
+          "inst.",
+          "$k$",
+          "$B$",
+          "$M$",
+          "$S$",
+          "$\\bar{e}$",
+          "$B$",
+          "$\\bar{e}$",
+          "$B$",
+          "$\\bar{e}$",
+          "$B$",
+          "$\\bar{e}$"
+        ],
+        [
+          "$S 1$",
+          2,
+          "",
+          1000,
+          10,
+          4510,
+          "",
+          30492,
+          "",
+          292443,
+          "",
+          14621
+        ],
+        [
+          "$S 2$",
+          2,
+          "",
+          4000,
+          10,
+          13880,
+          "",
+          20400,
+          "",
+          2694572,
+          "",
+          18736
+        ],
+        [
+          "$S 3$",
+          2,
+          "",
+          5000,
+          1,
+          113000,
+          "",
+          301339,
+          "$-13$",
+          6557189,
+          "",
+          208233
+        ],
+        [
+          "$S 4$",
+          2,
+          "",
+          5000,
+          2,
+          53995,
+          "$-22$",
+          126547,
+          "$-20$",
+          9201755,
+          "$-22$",
+          1155656
+        ],
+        [
+          "$S 5$",
+          2,
+          "",
+          10000,
+          10,
+          118000,
+          "",
+          592887,
+          "",
+          15151203,
+          "",
+          ""
+        ],
+        [
+          "$S 6$",
+          2,
+          "$-35$",
+          10000,
+          2,
+          473500,
+          "$-34$",
+          208781,
+          "$-33$",
+          8262338,
+          "",
+          ""
+        ],
+        [
+          "$S 7$",
+          2,
+          "$-41$",
+          10000,
+          7,
+          595900,
+          "$-37$",
+          187393,
+          "$-35$",
+          7848952,
+          "",
+          ""
+        ],
+        [
+          "$S 7$",
+          3,
+          "",
+          10000,
+          1,
+          154000,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 12
+    },
+    {
+      "table_number": "4",
+      "table_title": "Results for the two dimensional functional model protein instances.",
+      "headers": [
+        "",
+        "",
+        "$E D A$",
+        "",
+        "",
+        "$M M A$"
+      ],
+      "rows": [
+        [
+          "inst.",
+          "$k$",
+          "$S$",
+          "$M$",
+          "$e$",
+          "$e$"
+        ],
+        [
+          "$S 8$",
+          1,
+          4,
+          500,
+          12650,
+          15170
+        ],
+        [
+          "$S 9$",
+          1,
+          5,
+          500,
+          2750,
+          61940
+        ],
+        [
+          "$S 10$",
+          1,
+          1,
+          1000,
+          35900,
+          132898
+        ],
+        [
+          "$S 11$",
+          1,
+          3,
+          1000,
+          15900,
+          66774
+        ],
+        [
+          "$S 12$",
+          1,
+          4,
+          500,
+          20950,
+          53600
+        ],
+        [
+          "$S 13$",
+          1,
+          5,
+          500,
+          5420,
+          32619
+        ],
+        [
+          "$S 14$",
+          1,
+          1,
+          500,
+          19450,
+          114930
+        ],
+        [
+          "$S 15$",
+          1,
+          1,
+          1500,
+          10350,
+          28425
+        ],
+        [
+          "$S 16$",
+          1,
+          1,
+          500,
+          4950,
+          25545
+        ],
+        [
+          "$S 17$",
+          1,
+          2,
+          500,
+          8950,
+          111046
+        ],
+        [
+          "$S 18$",
+          1,
+          5,
+          500,
+          2950,
+          52005
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    }
+  ]
+}

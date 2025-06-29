@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/Evolutionary Estimation of Distribution Algorithm for Agricultural Routing Planning in Field Logistics.md",
+    "filename": "Evolutionary Estimation of Distribution Algorithm for Agricultural Routing Planning in Field Logistics.md",
+    "title": "Evolutionary Estimation of Distribution Algorithm for Agricultural Routing Planning in Field Logistics",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Nomenclature",
+        ""
+      ],
+      "rows": [
+        [
+          "G",
+          "Graph $G=\\{N, A\\}$ representing the field's tracks"
+        ],
+        [
+          "N",
+          "Set of nodes in the Graph $G$"
+        ],
+        [
+          "A",
+          "Set of arcs in Graph $G$"
+        ],
+        [
+          "$S$",
+          "Subgraph of Graph $G, \\uplus S \\subseteq N$"
+        ],
+        [
+          "$i, j$",
+          "Nodes indices $(i, j=0,1,2, \\ldots, n)$"
+        ],
+        [
+          "$M$",
+          "Set of machines available at the depot, each referenced as $m, m \\in M$"
+        ],
+        [
+          "$r$",
+          "Minimum turning radius of a machine"
+        ],
+        [
+          "$w$",
+          "Effective operating width of a machine"
+        ],
+        [
+          "$l$",
+          "Length of the track in the field"
+        ],
+        [
+          "$B$",
+          "Number of tracks in the field"
+        ],
+        [
+          "$d_{i j}$",
+          "Maneuver's degree, $i=$ the origin track, $j=$ the destination track"
+        ],
+        [
+          "$\\Omega\\left(d_{i j}\\right)$",
+          "Bulb type of maneuver turn executed by a machine in the headland area; executed when $d_{i j}>2 r / w$"
+        ],
+        [
+          "$\\Pi\\left(d_{i j}\\right)$",
+          "Flat type of maneuver turn executed by a machine in headland field area; executed when $d_{i j} \\leq 2 r / w$"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Parameter settings.",
+      "headers": [
+        "Parameters",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Number of Iterations (GA, TS, eEDA)",
+          "$25 t r$"
+        ],
+        [
+          "Population Size (GA, eEDA)",
+          "$6 t r$"
+        ],
+        [
+          "Neighborhood Search Iteration (eEDA)",
+          "$t r$"
+        ],
+        [
+          "Tabu tenure (TS)",
+          "$0.5 t r$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "The headland and the total distance of all algorithms.",
+      "headers": [
+        "Problem",
+        "CW*",
+        "",
+        "GA",
+        "",
+        "TS",
+        "",
+        "EEDA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Headland",
+          "Total",
+          "Headland",
+          "Total",
+          "Headland",
+          "Total",
+          "Headland",
+          "Total"
+        ],
+        [
+          8,
+          95.767,
+          335.767,
+          94.439,
+          334.439,
+          94.439,
+          334.439,
+          94.439,
+          334.439
+        ],
+        [
+          12,
+          176.451,
+          656.451,
+          150.602,
+          630.602,
+          146.027,
+          626.027,
+          146.027,
+          626.027
+        ],
+        [
+          12,
+          166.451,
+          1006.451,
+          160.602,
+          1000.602,
+          146.027,
+          986.0267,
+          145.602,
+          985.602
+        ],
+        [
+          20,
+          235.916,
+          1835.916,
+          250.915,
+          1850.915,
+          240.915,
+          1840.915,
+          235.491,
+          1835.491
+        ],
+        [
+          90,
+          "-",
+          "-",
+          2865.077,
+          11865.077,
+          2951.022,
+          11951.022,
+          2680.172,
+          11680.172
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 9
+    }
+  ]
+}

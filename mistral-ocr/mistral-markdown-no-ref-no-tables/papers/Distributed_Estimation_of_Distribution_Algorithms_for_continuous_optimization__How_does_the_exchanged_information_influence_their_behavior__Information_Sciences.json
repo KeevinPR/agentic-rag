@@ -1,0 +1,3445 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Distributed Estimation of Distribution Algorithms for continuous optimization  How does the exchanged information influence their behavior  Information Sciences.md",
+    "filename": "Distributed Estimation of Distribution Algorithms for continuous optimization  How does the exchanged information influence their behavior  Information Sciences.md",
+    "title": "Distributed Estimation of Distribution Algorithms for continuous optimization  How does the exchanged information influence their behavior  Information Sciences",
+    "year": "2014"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] Chang W. Ahn, David E. Goldberg, R.S. Ramakrishna, Multiple-deme parallel Estimation of Distribution Algorithms: basic framework and application, in: Parallel Processing and Applied Mathematics, 2004, pp. 544-551.\n[2] Enrique Alba, Parallel evolutionary algorithms can achieve super-linear performance, Information Processing Letters 82 (1) (2002) 7-13.\n[3] Enrique Alba, José M. Troya, Influence of the migration policy in parallel distributed gas with structured and panmictic populations, Applied Intelligence 12 (3) (2000) 163-181.\n[4] Enrique Alba, José M. Troya, Improving flexibility and efficiency by adding parallelism to genetic algorithms, Statistics and Computing 12 (2) (2002) $91-114$.\n[5] S. Baluja, Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning, Technical report, Carnegie Mellon University, 1994.\n[6] S. Baluja, S. Davies, Combining multiple optimization runs with optimal dependency trees, Technical report, Justsystem Pittsburgh Research Center \\& Carnegie Mellon University, 1997.\n[7] J.S. De Bonet, C.L. Isbell, P. Viola, Structure driven image database retrieval, Advances in Neural Information Processing, vol. 9, MIT Press, 1997, p. 424.\n[8] E. Cantú-Paz, Efficient and Accurate Parallel Genetic Algorithms, Kluwer Academic Publishers, 2001.\n[9] J.P. Cohoon, S.U. Hegde, W.N. Martin, D.S. Richards, Punctuated equilibria: a parallel genetic algorithm, in: Proceedings of the 2nd International Conference on Genetic Algorithms, July 1987, pp. 148-154.\n[10] L. delaOssa, J.A. Gámez, J.M. Puerta, Initial approaches to the application of islands-based parallel EDAs in continuous domains, in: Proceedings of 2005 International Conference on Parallel Processing Workshops, 2005, pp. 580-587.\n[11] L. delaOssa, J.A. Gámez, J.M. Puerta, Initial approaches to the application of islands-based parallel EDAs in continuous domains, Journal of Parallel and Distributed Computing 66 (8) (2006) 991-1001.\n[12] Luis delaOssa, José A. Gámez, José M. Puerta, Migration of probability models instead of individuals: an alternative when applying the island model to EDAs, in: PPSN VIII, 2004, pp. 242-252.\n[13] W. Dong, X. Yao, Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms, Information Sciences 178 (15) (2008) $3000-3023$.\n[14] Martin Ester, Hans-Peter Kriegel, J. Sander, X. Xu, A density-based algorithm for discovering clusters in large spatial databases with noise, in: Proceedings of the 2nd International Conference on Knowledge Discovery and Data Mining, vol. 96, 1996, pp. 226-231.\n[15] N. Franken, Visual exploration of algorithm parameter space, in: Proceedings of the Eleventh Congress on Evolutionary Computation, 2009, pp. 389398.\n[16] S. García, A. Fernández, J. Luengo, F. Herrera, Advanced nonparametric tests for multiple comparisons in the design of experiments in computational intelligence and data mining: experimental analysis of power, Information Sciences 180 (10) (2010) 2044-2064.\n[17] S. García, D. Molina, M. Lozano, F. Herrera, A study on the use of non-parametric tests for analyzing the evolutionary algorithms behaviour: a case study on the CEC2005 special session on real parameter optimization, Journal of Heuristics 15 (6) (2009) 617-644.\n[18] G.R. Harik, F.G. Lobo, D.E. Goldberg, The compact genetic algorithm, IEEE Transactions on Evolutionary Computation 3 (3) (1999) 287-297.\n[19] J. Jaros, J. Schwarz, Parallel BMDA with probability model migration, in: Proceedings of the IEEE Congress on Evolutionary Computation, 2007, pp. $1059-1066$.\n[20] J. Jaros, J. Schwarz, Parallel BMDA with an aggregation of probability models, in: Proceedings of the IEEE Congress on Evolutionary Computation, 2009, pp. 1683-1690.\n[21] P. Larrañaga, R. Etxeberria, J.A. Lozano, J.M. Peña, Optimization by learning and simulation of Bayesian and Gaussian networks, Technical report KZZA-IK-4-99, Department of Computer Science and Artificial Intelligence, University of the Basque Country, 1999.\n[22] P. Larrañaga, R. Etxeberria, J.A. Lozano, J.M. Peña, Combinatorial optimization by learning and simulation of bayesian networks, in: Proceedings of the 16th Conference on Uncertainty in Articial Intelligence, UAI 2000, 2000, pp. 343-352.\n[23] P. Larrañaga, R. Etxeberria, J.A. Lozano, J.M. Peña, Optimization in continuous domains by learning and simulation of Gaussian networks, in: Proceedings of the Workshop in Optimization by Building and using Probabilistic Models. A Workshop within the Genetic and Evolutionary Computation Conference, 2000, pp. 201-204.\n[24] P. Larrañaga, J.A. Lozano (Eds.), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Springer, 2002.\n[25] P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation, Kluwer Academic Publisher, 2002.\n[26] L-V. Lozada-Chang, R. Santana, Univariate marginal distribution algorithm dynamics for a class of parametric functions with unitation constraints, Information Sciences 181 (11) (2011) 2340-2355.\n[27] Jose A. Lozano, Pedro Larrañaga, Iñaki Inza, Endika Bengoetxea, Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms (Studies in Fuzziness and Soft Computing), Springer-Verlag, New York, Inc., 2006.\n[28] Julio Madera, Enrique Alba, Alberto Ochoa, A parallel island model for estimation of distribution algorithms, in: Towards a New Evolutionary Computation, Studies in Fuzziness and Soft Computing, vol. 192, Springer, Berlin/Heidelberg, 2006, pp. 159-186.\n[29] A. Mendiburu, J.A. Lozano, J. Miguel-Alonso, Parallel implementation of EDAs based on probabilistic graphical models, IEEE Transactions on Evolutionary Computation 9 (4) (2005) 406-423.\n[30] Santiago Muelas, José M. Peña, Víctor Robles, Antonio LaTorre, Pedro de Miguel, Machine learning to analyze migration parameters in parallel genetic algorithms, in: Innovations in Hybrid Intelligent Systems, Advances in Soft Computing, vol. 44, 2007, pp. 199-206.\n[31] H. Mühlenbein, The equation for response to selection and its use for prediction, Evolutionary Computation 5 (3) (1997) 303-346.\n\n[32] H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions i. binary parameters, in: Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature - PPSN IV, 1996, pp. 178-187.\n[33] M. Pelikan, D.E. Goldberg, E. Cantú-Paz, BOA: the bayesian optimization algorithms, in: Proceedings of the Genetic and Evolutionary Computation Conference, vol. 1, 1999, pp. 525-532.\n[34] M. Pelikan, H. Mühlenbein, The bivariate marginal distribution algorithm, in: R. Roy, T. Furuhashi, P.K. Chawdhry (Eds.), Proceedings of Advances in Soft Computing - Engineering Design and Manufacturing, 1999, pp. 521-535.\n[35] Martin Pelikan, David E. Goldberg, Fernando Lobo, A survey of optimization by building and using probabilistic models, Computational Optimization and Applications 21 (1) (2002) 5-20.\n[36] Martin Pelikan, Kumara Sastry, Erick Cantú-Paz, Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications (Studies in Computational Intelligence), Springer-Verlag, New York, Inc., 2006.\n[37] Chrisila Petty, Michael Leuze, A theoretical investigation of a parallel genetic algorithm, in: Proceedings of the 3rd International Conference on Genetic algorithms, 1989, pp. 398-405.\n[38] Kumara Sastry, David E. Goldberg, Xavier Llorà, Towards billion-bit optimization via a parallel estimation of distribution algorithm, in: Proceedings of the Genetic and Evolutionary Computation Conference, 2007, pp. 577-584.\n[39] P.N. Suganthan, N. Hansen, J.J. Liang, K. Deb, Y.P. Chen, A. Auger, S. Tiwari, Problem definitions and evaluation criteria for the special session on real parameter optimization, Technical report, Nanyang Technological University, 2005.\n[40] G. Taguchi, S. Chowdhury, Y. Wu, Taguchi's Quality Engineering Handbook, John Wiley, 2005.\n[41] K. Tang, X. Yao, P.N. Suganthan, C. MacNish, Y.P. Chen, C.M. Chen, Z. Yang, Benchmark functions for the CEC 2008 special session and competition on large scale global optimization, Technical report, Nature Inspired Computation and Applications Laboratory, USTC, 2007.\n[42] D. Whitley, S. Rana, R.B. Heckendorn, The island model genetic algorithm: on separability, population size and convergence, Journal of Computing and Information Technology 7 (1999) 33-47.\n[43] A.A. Zhigljavsky, Theory of Global Random Search, Kluwer Academic Publishers, 1991.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Chang W. Ahn, David E. Goldberg, R.S. Ramakrishna, Multiple-deme parallel Estimation of Distribution Algorithms: basic framework and application, in: Parallel Processing and Applied Mathematics, 2004, pp. 544-551."
+      },
+      {
+        "ref_id": "2",
+        "text": "Enrique Alba, Parallel evolutionary algorithms can achieve super-linear performance, Information Processing Letters 82 (1) (2002) 7-13."
+      },
+      {
+        "ref_id": "3",
+        "text": "Enrique Alba, José M. Troya, Influence of the migration policy in parallel distributed gas with structured and panmictic populations, Applied Intelligence 12 (3) (2000) 163-181."
+      },
+      {
+        "ref_id": "4",
+        "text": "Enrique Alba, José M. Troya, Improving flexibility and efficiency by adding parallelism to genetic algorithms, Statistics and Computing 12 (2) (2002) $91-114$."
+      },
+      {
+        "ref_id": "5",
+        "text": "S. Baluja, Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning, Technical report, Carnegie Mellon University, 1994."
+      },
+      {
+        "ref_id": "6",
+        "text": "S. Baluja, S. Davies, Combining multiple optimization runs with optimal dependency trees, Technical report, Justsystem Pittsburgh Research Center \\& Carnegie Mellon University, 1997."
+      },
+      {
+        "ref_id": "7",
+        "text": "J.S. De Bonet, C.L. Isbell, P. Viola, Structure driven image database retrieval, Advances in Neural Information Processing, vol. 9, MIT Press, 1997, p. 424."
+      },
+      {
+        "ref_id": "8",
+        "text": "E. Cantú-Paz, Efficient and Accurate Parallel Genetic Algorithms, Kluwer Academic Publishers, 2001."
+      },
+      {
+        "ref_id": "9",
+        "text": "J.P. Cohoon, S.U. Hegde, W.N. Martin, D.S. Richards, Punctuated equilibria: a parallel genetic algorithm, in: Proceedings of the 2nd International Conference on Genetic Algorithms, July 1987, pp. 148-154."
+      },
+      {
+        "ref_id": "10",
+        "text": "L. delaOssa, J.A. Gámez, J.M. Puerta, Initial approaches to the application of islands-based parallel EDAs in continuous domains, in: Proceedings of 2005 International Conference on Parallel Processing Workshops, 2005, pp. 580-587."
+      },
+      {
+        "ref_id": "11",
+        "text": "L. delaOssa, J.A. Gámez, J.M. Puerta, Initial approaches to the application of islands-based parallel EDAs in continuous domains, Journal of Parallel and Distributed Computing 66 (8) (2006) 991-1001."
+      },
+      {
+        "ref_id": "12",
+        "text": "Luis delaOssa, José A. Gámez, José M. Puerta, Migration of probability models instead of individuals: an alternative when applying the island model to EDAs, in: PPSN VIII, 2004, pp. 242-252."
+      },
+      {
+        "ref_id": "13",
+        "text": "W. Dong, X. Yao, Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms, Information Sciences 178 (15) (2008) $3000-3023$."
+      },
+      {
+        "ref_id": "14",
+        "text": "Martin Ester, Hans-Peter Kriegel, J. Sander, X. Xu, A density-based algorithm for discovering clusters in large spatial databases with noise, in: Proceedings of the 2nd International Conference on Knowledge Discovery and Data Mining, vol. 96, 1996, pp. 226-231."
+      },
+      {
+        "ref_id": "15",
+        "text": "N. Franken, Visual exploration of algorithm parameter space, in: Proceedings of the Eleventh Congress on Evolutionary Computation, 2009, pp. 389398."
+      },
+      {
+        "ref_id": "16",
+        "text": "S. García, A. Fernández, J. Luengo, F. Herrera, Advanced nonparametric tests for multiple comparisons in the design of experiments in computational intelligence and data mining: experimental analysis of power, Information Sciences 180 (10) (2010) 2044-2064."
+      },
+      {
+        "ref_id": "17",
+        "text": "S. García, D. Molina, M. Lozano, F. Herrera, A study on the use of non-parametric tests for analyzing the evolutionary algorithms behaviour: a case study on the CEC2005 special session on real parameter optimization, Journal of Heuristics 15 (6) (2009) 617-644."
+      },
+      {
+        "ref_id": "18",
+        "text": "G.R. Harik, F.G. Lobo, D.E. Goldberg, The compact genetic algorithm, IEEE Transactions on Evolutionary Computation 3 (3) (1999) 287-297."
+      },
+      {
+        "ref_id": "19",
+        "text": "J. Jaros, J. Schwarz, Parallel BMDA with probability model migration, in: Proceedings of the IEEE Congress on Evolutionary Computation, 2007, pp. $1059-1066$."
+      },
+      {
+        "ref_id": "20",
+        "text": "J. Jaros, J. Schwarz, Parallel BMDA with an aggregation of probability models, in: Proceedings of the IEEE Congress on Evolutionary Computation, 2009, pp. 1683-1690."
+      },
+      {
+        "ref_id": "21",
+        "text": "P. Larrañaga, R. Etxeberria, J.A. Lozano, J.M. Peña, Optimization by learning and simulation of Bayesian and Gaussian networks, Technical report KZZA-IK-4-99, Department of Computer Science and Artificial Intelligence, University of the Basque Country, 1999."
+      },
+      {
+        "ref_id": "22",
+        "text": "P. Larrañaga, R. Etxeberria, J.A. Lozano, J.M. Peña, Combinatorial optimization by learning and simulation of bayesian networks, in: Proceedings of the 16th Conference on Uncertainty in Articial Intelligence, UAI 2000, 2000, pp. 343-352."
+      },
+      {
+        "ref_id": "23",
+        "text": "P. Larrañaga, R. Etxeberria, J.A. Lozano, J.M. Peña, Optimization in continuous domains by learning and simulation of Gaussian networks, in: Proceedings of the Workshop in Optimization by Building and using Probabilistic Models. A Workshop within the Genetic and Evolutionary Computation Conference, 2000, pp. 201-204."
+      },
+      {
+        "ref_id": "24",
+        "text": "P. Larrañaga, J.A. Lozano (Eds.), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Springer, 2002."
+      },
+      {
+        "ref_id": "25",
+        "text": "P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation, Kluwer Academic Publisher, 2002."
+      },
+      {
+        "ref_id": "26",
+        "text": "L-V. Lozada-Chang, R. Santana, Univariate marginal distribution algorithm dynamics for a class of parametric functions with unitation constraints, Information Sciences 181 (11) (2011) 2340-2355."
+      },
+      {
+        "ref_id": "27",
+        "text": "Jose A. Lozano, Pedro Larrañaga, Iñaki Inza, Endika Bengoetxea, Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms (Studies in Fuzziness and Soft Computing), Springer-Verlag, New York, Inc., 2006."
+      },
+      {
+        "ref_id": "28",
+        "text": "Julio Madera, Enrique Alba, Alberto Ochoa, A parallel island model for estimation of distribution algorithms, in: Towards a New Evolutionary Computation, Studies in Fuzziness and Soft Computing, vol. 192, Springer, Berlin/Heidelberg, 2006, pp. 159-186."
+      },
+      {
+        "ref_id": "29",
+        "text": "A. Mendiburu, J.A. Lozano, J. Miguel-Alonso, Parallel implementation of EDAs based on probabilistic graphical models, IEEE Transactions on Evolutionary Computation 9 (4) (2005) 406-423."
+      },
+      {
+        "ref_id": "30",
+        "text": "Santiago Muelas, José M. Peña, Víctor Robles, Antonio LaTorre, Pedro de Miguel, Machine learning to analyze migration parameters in parallel genetic algorithms, in: Innovations in Hybrid Intelligent Systems, Advances in Soft Computing, vol. 44, 2007, pp. 199-206."
+      },
+      {
+        "ref_id": "31",
+        "text": "H. Mühlenbein, The equation for response to selection and its use for prediction, Evolutionary Computation 5 (3) (1997) 303-346."
+      },
+      {
+        "ref_id": "32",
+        "text": "H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions i. binary parameters, in: Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature - PPSN IV, 1996, pp. 178-187."
+      },
+      {
+        "ref_id": "33",
+        "text": "M. Pelikan, D.E. Goldberg, E. Cantú-Paz, BOA: the bayesian optimization algorithms, in: Proceedings of the Genetic and Evolutionary Computation Conference, vol. 1, 1999, pp. 525-532."
+      },
+      {
+        "ref_id": "34",
+        "text": "M. Pelikan, H. Mühlenbein, The bivariate marginal distribution algorithm, in: R. Roy, T. Furuhashi, P.K. Chawdhry (Eds.), Proceedings of Advances in Soft Computing - Engineering Design and Manufacturing, 1999, pp. 521-535."
+      },
+      {
+        "ref_id": "35",
+        "text": "Martin Pelikan, David E. Goldberg, Fernando Lobo, A survey of optimization by building and using probabilistic models, Computational Optimization and Applications 21 (1) (2002) 5-20."
+      },
+      {
+        "ref_id": "36",
+        "text": "Martin Pelikan, Kumara Sastry, Erick Cantú-Paz, Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications (Studies in Computational Intelligence), Springer-Verlag, New York, Inc., 2006."
+      },
+      {
+        "ref_id": "37",
+        "text": "Chrisila Petty, Michael Leuze, A theoretical investigation of a parallel genetic algorithm, in: Proceedings of the 3rd International Conference on Genetic algorithms, 1989, pp. 398-405."
+      },
+      {
+        "ref_id": "38",
+        "text": "Kumara Sastry, David E. Goldberg, Xavier Llorà, Towards billion-bit optimization via a parallel estimation of distribution algorithm, in: Proceedings of the Genetic and Evolutionary Computation Conference, 2007, pp. 577-584."
+      },
+      {
+        "ref_id": "39",
+        "text": "P.N. Suganthan, N. Hansen, J.J. Liang, K. Deb, Y.P. Chen, A. Auger, S. Tiwari, Problem definitions and evaluation criteria for the special session on real parameter optimization, Technical report, Nanyang Technological University, 2005."
+      },
+      {
+        "ref_id": "40",
+        "text": "G. Taguchi, S. Chowdhury, Y. Wu, Taguchi's Quality Engineering Handbook, John Wiley, 2005."
+      },
+      {
+        "ref_id": "41",
+        "text": "K. Tang, X. Yao, P.N. Suganthan, C. MacNish, Y.P. Chen, C.M. Chen, Z. Yang, Benchmark functions for the CEC 2008 special session and competition on large scale global optimization, Technical report, Nature Inspired Computation and Applications Laboratory, USTC, 2007."
+      },
+      {
+        "ref_id": "42",
+        "text": "D. Whitley, S. Rana, R.B. Heckendorn, The island model genetic algorithm: on separability, population size and convergence, Journal of Computing and Information Technology 7 (1999) 33-47."
+      },
+      {
+        "ref_id": "43",
+        "text": "A.A. Zhigljavsky, Theory of Global Random Search, Kluwer Academic Publishers, 1991."
+      }
+    ],
+    "reference_count": 43,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Benchmark functions.",
+      "headers": [
+        "Id",
+        "Name"
+      ],
+      "rows": [
+        [
+          "$f 1$",
+          "Shifted Sphere Function"
+        ],
+        [
+          "$f 2$",
+          2.21
+        ],
+        [
+          "$f 3$",
+          "Shifted Rosenbrock's Function"
+        ],
+        [
+          "$f 4$",
+          "Shifted Rastrigin's Function"
+        ],
+        [
+          "$f 5$",
+          "Shifted Griewank's Function"
+        ],
+        [
+          "$f 6$",
+          "Shifted Ackley's Function"
+        ],
+        [
+          "$f 7$",
+          2.22
+        ],
+        [
+          "$f 8$",
+          1.2
+        ],
+        [
+          "$f 9$",
+          "Extended $f_{c o}$"
+        ],
+        [
+          "$f 10$",
+          "Bohachevsky"
+        ],
+        [
+          "$f 11$",
+          "Schaffer"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Average rankings 50 dimensions.",
+      "headers": [
+        "Alg",
+        "Size",
+        "\\#Islands",
+        "Period",
+        "Topology",
+        "Rate",
+        "Emm. selec",
+        "Model",
+        "Avg. ranking"
+      ],
+      "rows": [
+        [
+          "Best S\\%",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          41.09
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          42.32
+        ],
+        [
+          "umda",
+          512,
+          16,
+          10,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          44.14
+        ],
+        [
+          "umda",
+          512,
+          16,
+          10,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          46.91
+        ],
+        [
+          "umda",
+          512,
+          8,
+          20,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          47.14
+        ],
+        [
+          "umda",
+          512,
+          8,
+          20,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          49.64
+        ],
+        [
+          "umda",
+          512,
+          16,
+          10,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          50.64
+        ],
+        [
+          "umda",
+          512,
+          16,
+          20,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          51.59
+        ],
+        [
+          "umda",
+          512,
+          16,
+          20,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          52.0
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          53.09
+        ],
+        [
+          "umda",
+          512,
+          16,
+          10,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          54.64
+        ],
+        [
+          "umda",
+          512,
+          8,
+          20,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          57.18
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          61.18
+        ],
+        [
+          "umda",
+          512,
+          16,
+          20,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          61.23
+        ],
+        [
+          "umda",
+          512,
+          8,
+          20,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          61.36
+        ],
+        [
+          "umda",
+          512,
+          8,
+          40,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          61.55
+        ],
+        [
+          "umda",
+          512,
+          16,
+          20,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          62.68
+        ],
+        [
+          "umda",
+          512,
+          8,
+          40,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          67.68
+        ],
+        [
+          "umda",
+          512,
+          8,
+          40,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          68.41
+        ],
+        [
+          "Sequential configurations",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "umda",
+          512,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          110.5
+        ],
+        [
+          "umda",
+          256,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          126.23
+        ],
+        [
+          "umda",
+          1024,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          142.23
+        ],
+        [
+          "umda",
+          128,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          148.05
+        ],
+        [
+          "umda",
+          2048,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          208.82
+        ],
+        [
+          "umda",
+          64,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          212.64
+        ],
+        [
+          "emna",
+          2048,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          236.91
+        ],
+        [
+          "emna",
+          1024,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          258.09
+        ],
+        [
+          "emna",
+          512,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          316.91
+        ],
+        [
+          "emna",
+          256,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          360.82
+        ],
+        [
+          "emna",
+          64,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          364.64
+        ],
+        [
+          "emna",
+          128,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          371.73
+        ],
+        [
+          "Worst S\\%",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "emna",
+          512,
+          8,
+          40,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          377.82
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          10,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          380.45
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          20,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          381.0
+        ],
+        [
+          "emna",
+          512,
+          8,
+          40,
+          2,
+          "-",
+          "-",
+          "mixture",
+          383.45
+        ],
+        [
+          "emna",
+          512,
+          8,
+          20,
+          2,
+          "-",
+          "-",
+          "mixture",
+          385.36
+        ],
+        [
+          "emna",
+          512,
+          8,
+          40,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          387.0
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          20,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          388.36
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          40,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          388.82
+        ],
+        [
+          "emna",
+          512,
+          16,
+          10,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          389.09
+        ],
+        [
+          "emna",
+          512,
+          8,
+          20,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          389.55
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          40,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          392.27
+        ],
+        [
+          "emna",
+          512,
+          8,
+          10,
+          2,
+          "-",
+          "-",
+          "mixture",
+          392.91
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          10,
+          2,
+          "-",
+          "-",
+          "mixture",
+          394.82
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          20,
+          2,
+          "-",
+          "-",
+          "mixture",
+          394.91
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          40,
+          2,
+          "-",
+          "-",
+          "mixture",
+          396.91
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          20,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          397.18
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          10,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          398.55
+        ],
+        [
+          "emna",
+          512,
+          8,
+          10,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          398.91
+        ],
+        [
+          "emna",
+          1024,
+          16,
+          40,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          399.0
+        ]
+      ],
+      "row_count": 53,
+      "column_count": 9
+    },
+    {
+      "table_number": "4",
+      "table_title": "Average rankings 100 dimensions.",
+      "headers": [
+        "Alg",
+        "Size",
+        "\\#Islands",
+        "Period",
+        "Topology",
+        "Rate",
+        "Emm. selec",
+        "Model",
+        "Avg. ranking"
+      ],
+      "rows": [
+        [
+          "Best S\\%",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "umda",
+          512,
+          8,
+          20,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          53.18
+        ],
+        [
+          "umda",
+          512,
+          8,
+          20,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          53.32
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          53.95
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          55.73
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          58.23
+        ],
+        [
+          "umda",
+          1024,
+          16,
+          10,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          60.77
+        ],
+        [
+          "umda",
+          1024,
+          16,
+          10,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          61.09
+        ],
+        [
+          "umda",
+          512,
+          8,
+          40,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          63.95
+        ],
+        [
+          "umda",
+          512,
+          8,
+          40,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          65.59
+        ],
+        [
+          "umda",
+          1024,
+          8,
+          20,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          66.23
+        ],
+        [
+          "umda",
+          1024,
+          16,
+          20,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          66.73
+        ],
+        [
+          "umda",
+          512,
+          16,
+          10,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          66.95
+        ],
+        [
+          "umda",
+          1024,
+          8,
+          10,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          66.95
+        ],
+        [
+          "umda",
+          512,
+          16,
+          10,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          67.32
+        ],
+        [
+          "umda",
+          1024,
+          16,
+          20,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          67.5
+        ],
+        [
+          "umda",
+          512,
+          8,
+          40,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          67.77
+        ],
+        [
+          "umda",
+          1024,
+          8,
+          10,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          68.82
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          71.0
+        ],
+        [
+          "umda",
+          512,
+          16,
+          20,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          71.0
+        ],
+        [
+          "Sequential configurations",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "umda",
+          512,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          113.68
+        ],
+        [
+          "umda",
+          1024,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          129.77
+        ],
+        [
+          "umda",
+          256,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          147.5
+        ],
+        [
+          "umda",
+          128,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          166.5
+        ],
+        [
+          "umda",
+          2048,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          171.05
+        ],
+        [
+          "umda",
+          64,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          226.91
+        ],
+        [
+          "emna",
+          2048,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          289.27
+        ],
+        [
+          "emna",
+          1024,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          312.64
+        ],
+        [
+          "emna",
+          256,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          330.64
+        ],
+        [
+          "emna",
+          512,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          339.27
+        ],
+        [
+          "emna",
+          64,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          363.45
+        ],
+        [
+          "emna",
+          128,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          391.27
+        ],
+        [
+          "Worst S\\%",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          40,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          411.36
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          20,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          413.45
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          40,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          415.09
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          40,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          415.55
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          10,
+          2,
+          "-",
+          "-",
+          "mixture",
+          416.27
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          20,
+          2,
+          "-",
+          "-",
+          "mixture",
+          417.09
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          40,
+          2,
+          "-",
+          "-",
+          "mixture",
+          417.36
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          10,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          418.27
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          20,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          418.36
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          10,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          418.82
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          40,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          423.36
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          20,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          424.55
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          10,
+          2,
+          "-",
+          "-",
+          "mixture",
+          425.0
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          20,
+          2,
+          "-",
+          "-",
+          "mixture",
+          426.18
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          40,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          426.18
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          40,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          427.91
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          10,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          428.36
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          40,
+          2,
+          "-",
+          "-",
+          "mixture",
+          428.45
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          20,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          429.55
+        ]
+      ],
+      "row_count": 53,
+      "column_count": 9
+    },
+    {
+      "table_number": "5",
+      "table_title": "Average rankings 200 dimensions.",
+      "headers": [
+        "Alg",
+        "Size",
+        "\\#Islands",
+        "Period",
+        "Topology",
+        "Rate",
+        "Emm. selec",
+        "Model",
+        "Avg. ranking"
+      ],
+      "rows": [
+        [
+          "Best S\\%",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "umda",
+          1024,
+          8,
+          20,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          55.45
+        ],
+        [
+          "umda",
+          1024,
+          8,
+          20,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          56.05
+        ],
+        [
+          "umda",
+          1024,
+          8,
+          10,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          57.77
+        ],
+        [
+          "umda",
+          1024,
+          16,
+          10,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          58.23
+        ],
+        [
+          "umda",
+          1024,
+          16,
+          10,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          58.68
+        ],
+        [
+          "umda",
+          512,
+          8,
+          20,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          58.77
+        ],
+        [
+          "umda",
+          1024,
+          8,
+          10,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          59.91
+        ],
+        [
+          "umda",
+          1024,
+          16,
+          10,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          60.45
+        ],
+        [
+          "umda",
+          1024,
+          16,
+          20,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          61.59
+        ],
+        [
+          "umda",
+          1024,
+          16,
+          20,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          62.82
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          63.09
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          63.91
+        ],
+        [
+          "umda",
+          512,
+          8,
+          20,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          65.23
+        ],
+        [
+          "umda",
+          512,
+          8,
+          40,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          66.18
+        ],
+        [
+          "umda",
+          1024,
+          8,
+          10,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          66.27
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.1,
+          "best",
+          "-",
+          66.77
+        ],
+        [
+          "umda",
+          1024,
+          8,
+          40,
+          "ring",
+          0.2,
+          "best",
+          "-",
+          66.77
+        ],
+        [
+          "umda",
+          512,
+          8,
+          10,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          66.91
+        ],
+        [
+          "umda",
+          512,
+          8,
+          20,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          67.0
+        ],
+        [
+          "Sequential configurations",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "umda",
+          1024,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          121.18
+        ],
+        [
+          "umda",
+          512,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          129.55
+        ],
+        [
+          "umda",
+          256,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          154.5
+        ],
+        [
+          "umda",
+          2048,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          163.32
+        ],
+        [
+          "umda",
+          128,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          196.55
+        ],
+        [
+          "umda",
+          64,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          234.0
+        ],
+        [
+          "emna",
+          2048,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          304.82
+        ],
+        [
+          "emna",
+          1024,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          317.09
+        ],
+        [
+          "emna",
+          512,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          320.55
+        ],
+        [
+          "emna",
+          64,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          364.14
+        ],
+        [
+          "emna",
+          128,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          390.86
+        ],
+        [
+          "emna",
+          256,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          422.14
+        ],
+        [
+          "Worst S\\%",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          40,
+          2,
+          "-",
+          "-",
+          "mixture",
+          413.59
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          20,
+          "ring",
+          0.1,
+          "random",
+          "-",
+          413.77
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          40,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          414.14
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          20,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          414.95
+        ],
+        [
+          "emna",
+          1024,
+          8,
+          10,
+          2,
+          "-",
+          "-",
+          "mixture",
+          415.68
+        ],
+        [
+          "emna",
+          2048,
+          8,
+          40,
+          "$r$ -",
+          "-",
+          "mixture",
+          420.77,
+          ""
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          10,
+          2,
+          "-",
+          "-",
+          "mixture",
+          422.68
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          40,
+          2,
+          "-",
+          "-",
+          "mixture",
+          423.5
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          20,
+          2,
+          "-",
+          "-",
+          "mixture",
+          424.05
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          40,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          424.59
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          20,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          424.59
+        ],
+        [
+          "emna",
+          2048,
+          16,
+          10,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          425.23
+        ],
+        [
+          "emna",
+          2048,
+          8,
+          40,
+          "ring",
+          0.2,
+          "random",
+          "-",
+          430.23
+        ],
+        [
+          "emna",
+          2048,
+          8,
+          10,
+          2,
+          "-",
+          "-",
+          "mixture",
+          434.23
+        ],
+        [
+          "emna",
+          2048,
+          8,
+          40,
+          2,
+          "-",
+          "-",
+          "mixture",
+          434.41
+        ],
+        [
+          "emna",
+          2048,
+          8,
+          20,
+          2,
+          "-",
+          "-",
+          "mixture",
+          434.5
+        ],
+        [
+          "emna",
+          2048,
+          8,
+          20,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          434.86
+        ],
+        [
+          "emna",
+          2048,
+          8,
+          10,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          434.95
+        ],
+        [
+          "emna",
+          2048,
+          8,
+          40,
+          "ring",
+          "-",
+          "-",
+          "mixture",
+          435.14
+        ]
+      ],
+      "row_count": 53,
+      "column_count": 9
+    },
+    {
+      "table_number": "6",
+      "table_title": "Properties of the functions of the benchmark.",
+      "headers": [
+        "Function",
+        "Unimodal/multimodal",
+        "Shifted",
+        "Separable",
+        "Easily optimized dimension by dimension"
+      ],
+      "rows": [
+        [
+          "$f 1$",
+          "U",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        [
+          "$f 2$",
+          "U",
+          "Y",
+          "N",
+          "N"
+        ],
+        [
+          "$f 3$",
+          "M",
+          "Y",
+          "N",
+          "N"
+        ],
+        [
+          "$f 4$",
+          "M",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        [
+          "$f 5$",
+          "M",
+          "Y",
+          "N",
+          "N"
+        ],
+        [
+          "$f 6$",
+          "M",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        [
+          "$f 7$",
+          "U",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        [
+          "$f 8$",
+          "U",
+          "Y",
+          "N",
+          "N"
+        ],
+        [
+          "$f 9$",
+          "U",
+          "Y",
+          "N",
+          "N"
+        ],
+        [
+          "$f 10$",
+          "U",
+          "Y",
+          "N",
+          "Y"
+        ],
+        [
+          "$f 11$",
+          "U",
+          "Y",
+          "N",
+          "N"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Average ranking per function on 50 dimensions functions.",
+      "headers": [
+        "Function",
+        "0.1-best",
+        "0.1-random",
+        "0.2-best",
+        "0.2-random",
+        "Mixture",
+        "UMDA_comb",
+        "UMDA_unif"
+      ],
+      "rows": [
+        [
+          "UMDA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$f 1$",
+          84.28,
+          89.53,
+          93.32,
+          97.04,
+          135.03,
+          220.03,
+          166.44
+        ],
+        [
+          "$f 2$",
+          128.44,
+          127.17,
+          135.0,
+          133.81,
+          178.89,
+          306.22,
+          255.25
+        ],
+        [
+          "$f 3$",
+          76.69,
+          68.92,
+          94.17,
+          93.53,
+          148.92,
+          224.5,
+          181.67
+        ],
+        [
+          "$f 4$",
+          138.81,
+          158.61,
+          132.31,
+          153.64,
+          141.14,
+          97.86,
+          138.36
+        ],
+        [
+          "$f 5$",
+          82.04,
+          92.74,
+          91.06,
+          103.4,
+          133.08,
+          226.72,
+          162.49
+        ],
+        [
+          "$f 6$",
+          88.71,
+          91.67,
+          93.93,
+          96.68,
+          141.4,
+          204.74,
+          168.46
+        ],
+        [
+          "$f 7$",
+          107.94,
+          120.94,
+          106.25,
+          117.17,
+          147.51,
+          136.0,
+          149.68
+        ],
+        [
+          "$f 8$",
+          236.92,
+          246.39,
+          238.97,
+          241.67,
+          242.39,
+          109.11,
+          234.97
+        ],
+        [
+          "$f 9$",
+          117.28,
+          120.79,
+          110.04,
+          119.1,
+          150.11,
+          133.5,
+          134.68
+        ],
+        [
+          "$f 10$",
+          109.81,
+          115.4,
+          108.64,
+          112.68,
+          138.24,
+          153.5,
+          147.82
+        ],
+        [
+          "$f 11$",
+          115.19,
+          119.86,
+          109.69,
+          117.61,
+          153.86,
+          132.97,
+          136.31
+        ],
+        [
+          "EMNA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$f 1$",
+          333.22,
+          339.36,
+          339.72,
+          344.17,
+          355.86,
+          "",
+          ""
+        ],
+        [
+          "$f 2$",
+          249.89,
+          259.69,
+          251.33,
+          254.36,
+          317.94,
+          "",
+          ""
+        ],
+        [
+          "$f 3$",
+          332.61,
+          336.94,
+          336.53,
+          340.94,
+          362.58,
+          "",
+          ""
+        ],
+        [
+          "$f 4$",
+          312.58,
+          336.72,
+          308.75,
+          328.78,
+          350.44,
+          "",
+          ""
+        ],
+        [
+          "$f 5$",
+          329.39,
+          337.39,
+          339.81,
+          343.08,
+          356.81,
+          "",
+          ""
+        ],
+        [
+          "$f 6$",
+          323.28,
+          341.06,
+          329.33,
+          340.42,
+          378.33,
+          "",
+          ""
+        ],
+        [
+          "$f 7$",
+          335.86,
+          340.42,
+          337.19,
+          339.11,
+          359.92,
+          "",
+          ""
+        ],
+        [
+          "$f 8$",
+          195.56,
+          208.92,
+          195.94,
+          205.08,
+          242.08,
+          "",
+          ""
+        ],
+        [
+          "$f 9$",
+          334.39,
+          343.11,
+          335.81,
+          340.28,
+          358.92,
+          "",
+          ""
+        ],
+        [
+          "$f 10$",
+          332.67,
+          341.53,
+          335.64,
+          341.11,
+          360.97,
+          "",
+          ""
+        ],
+        [
+          "$f 11$",
+          334.14,
+          341.97,
+          337.17,
+          340.28,
+          358.94,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 8
+    },
+    {
+      "table_number": "8",
+      "table_title": "Average ranking per function on 100 dimensions functions.",
+      "headers": [
+        "Function",
+        "0.1-best",
+        "0.1-random",
+        "0.2-best",
+        "0.2-random",
+        "Mixture",
+        "UMDA_comb",
+        "UMDA_unif"
+      ],
+      "rows": [
+        [
+          "UMDA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$f 1$",
+          85.46,
+          90.33,
+          81.07,
+          88.53,
+          142.44,
+          225.6,
+          175.54
+        ],
+        [
+          "$f 2$",
+          123.33,
+          111.33,
+          124.31,
+          120.39,
+          163.06,
+          317.31,
+          247.83
+        ],
+        [
+          "$f 3$",
+          74.19,
+          69.61,
+          93.64,
+          93.92,
+          146.25,
+          232.69,
+          183.36
+        ],
+        [
+          "$f 4$",
+          129.56,
+          146.44,
+          125.03,
+          143.0,
+          134.58,
+          100.53,
+          131.33
+        ],
+        [
+          "$f 5$",
+          84.22,
+          94.65,
+          90.57,
+          95.58,
+          133.67,
+          250.5,
+          165.22
+        ],
+        [
+          "$f 6$",
+          84.22,
+          83.32,
+          98.46,
+          92.96,
+          141.46,
+          219.81,
+          165.78
+        ],
+        [
+          "$f 7$",
+          103.56,
+          109.17,
+          102.28,
+          107.03,
+          134.51,
+          182.44,
+          146.54
+        ],
+        [
+          "$f 8$",
+          169.81,
+          209.58,
+          176.06,
+          197.0,
+          214.58,
+          59.78,
+          213.28
+        ],
+        [
+          "$f 9$",
+          105.53,
+          110.86,
+          108.33,
+          110.76,
+          160.33,
+          160.94,
+          128.76
+        ],
+        [
+          "$f 10$",
+          100.64,
+          96.86,
+          107.51,
+          107.15,
+          151.56,
+          176.64,
+          145.42
+        ],
+        [
+          "$f 11$",
+          106.57,
+          109.83,
+          107.89,
+          109.49,
+          160.61,
+          162.67,
+          128.47
+        ],
+        [
+          "EMNA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$f 1$",
+          325.17,
+          342.33,
+          324.03,
+          333.5,
+          384.0,
+          "",
+          ""
+        ],
+        [
+          "$f 2$",
+          253.75,
+          271.67,
+          250.0,
+          259.56,
+          355.47,
+          "",
+          ""
+        ],
+        [
+          "$f 3$",
+          324.25,
+          340.61,
+          321.31,
+          332.47,
+          385.69,
+          "",
+          ""
+        ],
+        [
+          "$f 4$",
+          313.11,
+          347.06,
+          310.08,
+          330.75,
+          386.53,
+          "",
+          ""
+        ],
+        [
+          "$f 5$",
+          319.08,
+          336.56,
+          315.75,
+          327.25,
+          384.94,
+          "",
+          ""
+        ],
+        [
+          "$f 6$",
+          320.28,
+          344.75,
+          319.83,
+          335.0,
+          392.14,
+          "",
+          ""
+        ],
+        [
+          "$f 7$",
+          324.81,
+          343.64,
+          323.64,
+          333.67,
+          386.72,
+          "",
+          ""
+        ],
+        [
+          "$f 8$",
+          242.44,
+          277.22,
+          237.06,
+          258.11,
+          343.08,
+          "",
+          ""
+        ],
+        [
+          "$f 9$",
+          323.5,
+          345.58,
+          322.25,
+          335.89,
+          385.25,
+          "",
+          ""
+        ],
+        [
+          "$f 10$",
+          323.72,
+          345.28,
+          321.53,
+          334.78,
+          386.92,
+          "",
+          ""
+        ],
+        [
+          "$f 11$",
+          324.31,
+          346.22,
+          322.03,
+          334.92,
+          385.0,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 8
+    },
+    {
+      "table_number": "9",
+      "table_title": "Average ranking per function on 200 dimensions functions.",
+      "headers": [
+        "Function",
+        "0.1-best",
+        "0.1-random",
+        "0.2-best",
+        "0.2-random",
+        "Mixture",
+        "UMDA_comb",
+        "UMDA_unif"
+      ],
+      "rows": [
+        [
+          "UMDA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$f 1$",
+          90.08,
+          85.0,
+          96.08,
+          87.92,
+          129.08,
+          244.75,
+          170.11
+        ],
+        [
+          "$f 2$",
+          113.61,
+          109.08,
+          119.75,
+          117.97,
+          142.47,
+          270.72,
+          209.5
+        ],
+        [
+          "$f 3$",
+          72.44,
+          69.11,
+          98.78,
+          94.53,
+          136.36,
+          248.11,
+          189.08
+        ],
+        [
+          "$f 4$",
+          129.17,
+          129.28,
+          126.47,
+          122.39,
+          132.89,
+          115.47,
+          133.92
+        ],
+        [
+          "$f 5$",
+          88.83,
+          83.5,
+          96.92,
+          94.07,
+          125.22,
+          283.03,
+          175.12
+        ],
+        [
+          "$f 6$",
+          82.79,
+          69.44,
+          97.54,
+          94.57,
+          142.44,
+          228.56,
+          173.4
+        ],
+        [
+          "$f 7$",
+          93.76,
+          99.6,
+          96.35,
+          97.39,
+          153.67,
+          184.68,
+          160.06
+        ],
+        [
+          "$f 8$",
+          124.36,
+          186.61,
+          132.72,
+          154.47,
+          242.08,
+          27.08,
+          235.28
+        ],
+        [
+          "$f 9$",
+          104.97,
+          108.97,
+          111.22,
+          111.25,
+          166.64,
+          189.78,
+          131.25
+        ],
+        [
+          "$f 10$",
+          92.31,
+          96.92,
+          103.14,
+          106.25,
+          152.53,
+          189.94,
+          144.42
+        ],
+        [
+          "$f 11$",
+          101.14,
+          104.58,
+          104.17,
+          108.69,
+          159.86,
+          180.97,
+          126.08
+        ],
+        [
+          "EMNA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$f 1$",
+          317.94,
+          337.78,
+          314.17,
+          324.78,
+          400.31,
+          "",
+          ""
+        ],
+        [
+          "$f 2$",
+          281.39,
+          290.03,
+          277.39,
+          279.56,
+          386.53,
+          "",
+          ""
+        ],
+        [
+          "$f 3$",
+          316.92,
+          334.25,
+          311.67,
+          322.61,
+          404.14,
+          "",
+          ""
+        ],
+        [
+          "$f 4$",
+          313.14,
+          347.14,
+          309.47,
+          330.75,
+          407.92,
+          "",
+          ""
+        ],
+        [
+          "$f 5$",
+          307.64,
+          328.78,
+          303.86,
+          315.92,
+          395.11,
+          "",
+          ""
+        ],
+        [
+          "$f 6$",
+          319.06,
+          343.25,
+          314.81,
+          329.72,
+          402.42,
+          "",
+          ""
+        ],
+        [
+          "$f 7$",
+          317.58,
+          351.17,
+          319.14,
+          337.61,
+          387.0,
+          "",
+          ""
+        ],
+        [
+          "$f 8$",
+          262.44,
+          300.81,
+          252.31,
+          275.97,
+          403.86,
+          "",
+          ""
+        ],
+        [
+          "$f 9$",
+          307.33,
+          323.42,
+          312.56,
+          321.94,
+          408.67,
+          "",
+          ""
+        ],
+        [
+          "$f 10$",
+          316.92,
+          344.58,
+          313.56,
+          330.25,
+          407.19,
+          "",
+          ""
+        ],
+        [
+          "$f 11$",
+          314.86,
+          347.33,
+          314.08,
+          331.86,
+          404.36,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 8
+    },
+    {
+      "table_number": "10",
+      "table_title": "Average error of the best sequential EDA configurations with and without elitism on the 50 dimensional functions.",
+      "headers": [
+        "Function",
+        "Elitism",
+        "NoElitism",
+        "Elitism vs. NoElitism $p$-values",
+        "NoElitism vs. Elitism $p$-values"
+      ],
+      "rows": [
+        [
+          "$f 1$",
+          "$\\mathbf{0 . 0 0 E + 0 0 ^ { \\pm }}$",
+          "$1.87 \\mathrm{E}-02$",
+          "",
+          "$1.87 \\mathrm{E}-02$"
+        ],
+        [
+          "$f 2$",
+          "$\\mathbf{4 . 1 4 E + 0 1 ^ { \\pm }}$",
+          "$5.29 \\mathrm{E}+01$",
+          "$7.79 \\mathrm{E}-15$",
+          "$1.00 \\mathrm{E}+00$"
+        ],
+        [
+          "$f 3$",
+          "$\\mathbf{7 . 7 9 E + 0 3 ^ { \\pm }}$",
+          "$3.67 \\mathrm{E}+05$",
+          "$3-56 \\mathrm{E}-11$",
+          "$1.00 \\mathrm{E}+00$"
+        ],
+        [
+          "$f 4$",
+          "$3.42 \\mathrm{E}+02$",
+          "$\\mathbf{2 . 5 2 E + 0 1 ^ { \\pm }}$",
+          "$1.00 \\mathrm{E}+00$",
+          "$6.93 \\mathrm{E}-10$"
+        ],
+        [
+          "$f 5$",
+          "$\\mathbf{0 . 0 0 E + 0 0 ^ { \\pm }}$",
+          "$2.69 \\mathrm{E}-02$",
+          "$2.06 \\mathrm{E}-02$",
+          "$9.81 \\mathrm{E}-01$"
+        ],
+        [
+          "$f 6$",
+          "$7.79 \\mathrm{E}-07$",
+          "$\\mathbf{3 . 3 5 E - 0 7 ^ { \\pm }}$",
+          "$1.00 \\mathrm{E}+00$",
+          "$6.95 \\mathrm{E}-10$"
+        ],
+        [
+          "$f 7$",
+          "$0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00$",
+          "Equal results",
+          ""
+        ],
+        [
+          "$f 8$",
+          "$1.01 \\mathrm{E}+03$",
+          "$\\mathbf{3 . 8 2 E + 0 2 ^ { \\pm }}$",
+          "$1.58 \\mathrm{E}-14$",
+          "$1.00 \\mathrm{E}+00$"
+        ],
+        [
+          "$f 9$",
+          "$\\mathbf{1 . 3 4 E - 0 5 ^ { \\pm }}$",
+          "$4.52 \\mathrm{E}-05$",
+          "$7.91 \\mathrm{E}-15$",
+          "$1.00 \\mathrm{E}+00$"
+        ],
+        [
+          "$f 10$",
+          "$0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00$",
+          "Equal results",
+          ""
+        ],
+        [
+          "$f 11$",
+          "$\\mathbf{1 . 2 0 E - 0 5 ^ { \\pm }}$",
+          "$4.08 \\mathrm{E}-05$",
+          "$7.07 \\mathrm{E}-10$",
+          "$1.00 \\mathrm{E}+00$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": "11",
+      "table_title": "Average error of the best configurations.",
+      "headers": [
+        "Function <br> Params",
+        "UMDA_inds <br> 512 inds <br> 8 islands <br> period: 20 <br> top: ring <br> rate: 0.1 <br> selec: best",
+        "UMDA_models <br> 1024 inds <br> 16 islands <br> period: 20 <br> top: a2a <br> comb.: mixture",
+        "EMNA_inds <br> 512 inds <br> 16 islands <br> period: 20 <br> top: ring <br> rate:0.2 <br> selec: best",
+        "EMNA_models <br> 2048 inds <br> 8 islands <br> period: 10 <br> top: a2a <br> comb.: mixture",
+        "UMDA_seq <br> 512 inds <br> 512 inds",
+        "EMNA_seq <br> 2048 inds <br> 2048 inds",
+        "IPOP-CMA-ES"
+      ],
+      "rows": [
+        [
+          50,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          1,
+          "4.4313e-12",
+          "1.0634e-11",
+          4.995103,
+          7.114304,
+          "2.0824e-11",
+          6.869604,
+          0.0
+        ],
+        [
+          2,
+          3.193801,
+          3.482201,
+          3.042101,
+          4.780501,
+          4.274201,
+          4.183001,
+          "2.7500E-11"
+        ],
+        [
+          3,
+          1.350402,
+          1.105902,
+          6.860207,
+          5.747909,
+          4.323204,
+          4.034809,
+          "7.9700E-01"
+        ],
+        [
+          4,
+          7.724601,
+          3.229402,
+          3.453902,
+          4.342602,
+          3.415102,
+          3.993302,
+          1.050002
+        ],
+        [
+          5,
+          "5.4197e-12",
+          "1.2826e-11",
+          9.5357,
+          5.690302,
+          "2.5879e-11",
+          5.431702,
+          "2.9600E-04"
+        ],
+        [
+          6,
+          "3.7939e-07",
+          "5.4462e-07",
+          1.246101,
+          1.555001,
+          "7.5503e-07",
+          1.461301,
+          2.090001
+        ],
+        [
+          7,
+          0.0,
+          "5.1742e-08",
+          2.828501,
+          "9.7157e-01",
+          0.0,
+          "1.0063e-03",
+          "1.0400E-10"
+        ],
+        [
+          8,
+          7.062702,
+          2.247003,
+          4.410203,
+          1.8413,
+          1.061203,
+          "2.1343e-07",
+          0.0
+        ],
+        [
+          9,
+          "5.8894e-06",
+          "2.4904e-01",
+          2.075002,
+          2.365501,
+          "1.6201e-05",
+          3.7887,
+          9.66
+        ],
+        [
+          10,
+          0.0,
+          0.0,
+          1.910002,
+          1.6309,
+          0.0,
+          "1.2013e-06",
+          6.35
+        ],
+        [
+          11,
+          "5.4996e-06",
+          "2.4245e-01",
+          1.993802,
+          2.199301,
+          "1.1746e-05",
+          3.7286,
+          2.570001
+        ],
+        [
+          100,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          1,
+          "2.7014e-11",
+          "3.3498e-11",
+          1.277404,
+          1.957905,
+          "8.2882e-11",
+          1.876005,
+          0.0
+        ],
+        [
+          2,
+          4.533501,
+          4.716701,
+          4.546301,
+          6.414101,
+          5.446201,
+          5.728101,
+          "1.5100E-10"
+        ],
+        [
+          3,
+          3.737402,
+          3.514302,
+          2.934308,
+          2.05601,
+          2.442505,
+          1.47421,
+          3.88
+        ],
+        [
+          4,
+          1.654002,
+          1.684502,
+          8.760902,
+          1.083403,
+          8.001402,
+          9.916602,
+          2.500002
+        ],
+        [
+          5,
+          "1.5235e-11",
+          "2.1413e-11",
+          2.396301,
+          1.522403,
+          "4.9912e-11",
+          1.432103,
+          "1.5800E-03"
+        ],
+        [
+          6,
+          "5.8275e-07",
+          "6.5915e-07",
+          1.321701,
+          1.822501,
+          "9.8306e-07",
+          1.758101,
+          2.120001
+        ],
+        [
+          7,
+          0.0,
+          "1.7800e-10",
+          7.001401,
+          6.8451,
+          0.0,
+          "6.3445e-01",
+          "2.4300E-05"
+        ],
+        [
+          8,
+          4.404303,
+          1.744504,
+          1.176504,
+          4.913201,
+          2.325504,
+          "5.0400e-01",
+          0.0
+        ],
+        [
+          9,
+          "2.4198e-08",
+          "1.6342e-01",
+          4.155002,
+          9.513601,
+          "8.8410e-09",
+          2.966301,
+          5.400001
+        ],
+        [
+          10,
+          0.0,
+          0.0,
+          4.992802,
+          2.888501,
+          0.0,
+          "6.6738e-01",
+          1.730001
+        ],
+        [
+          11,
+          "1.2051e-07",
+          "1.4185e-01",
+          4.148402,
+          9.503301,
+          "7.3676e-09",
+          2.570001,
+          1.720002
+        ],
+        [
+          200,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          1,
+          "1.0243e-10",
+          "1.2379e-10",
+          4.451304,
+          1.726805,
+          "1.7257e-03",
+          4.802005,
+          0.0
+        ],
+        [
+          2,
+          5.700001,
+          6.122201,
+          6.697101,
+          8.922501,
+          6.505401,
+          6.970701,
+          "1.1600E-09"
+        ],
+        [
+          3,
+          5.548302,
+          7.390602,
+          2.732609,
+          3.26781,
+          1.644806,
+          7.86841,
+          8.910001
+        ],
+        [
+          4,
+          3.690902,
+          2.851302,
+          2.167103,
+          3.467503,
+          1.795803,
+          2.560703,
+          6.480002
+        ],
+        [
+          5,
+          "3.4918e-11",
+          "4.5310e-11",
+          8.879201,
+          3.803702,
+          "8.4807e-11",
+          3.630903,
+          0.0
+        ],
+        [
+          6,
+          "8.0757e-07",
+          "8.6880e-07",
+          1.530301,
+          1.986801,
+          "1.2352e-06",
+          1.953501,
+          2.140001
+        ],
+        [
+          7,
+          0.0,
+          "2.4687e-13",
+          1.899402,
+          1.000011,
+          0.0,
+          1.546101,
+          "6.3200E-02"
+        ],
+        [
+          8,
+          1.554004,
+          1.011405,
+          5.288304,
+          2.531905,
+          1.426005,
+          1.197902,
+          0.0
+        ],
+        [
+          9,
+          "2.1486e-01",
+          "4.1210e-01",
+          9.200202,
+          1.480503,
+          "1.2772e-13",
+          2.121502,
+          2.490002
+        ],
+        [
+          10,
+          0.0,
+          0.0,
+          1.561703,
+          1.551104,
+          0.0,
+          6.179001,
+          4.310001
+        ],
+        [
+          11,
+          "2.5025e-01",
+          "3.2275e-01",
+          9.115502,
+          1.478203,
+          "1.2612e-13",
+          2.166302,
+          8.010002
+        ]
+      ],
+      "row_count": 36,
+      "column_count": 8
+    },
+    {
+      "table_number": "12",
+      "table_title": "Statistical validation (UMDA_inds is the control algorithm).",
+      "headers": [
+        "UMDA_inds vs.",
+        "$z$-value",
+        "$p$-value",
+        "Holm $p$-value",
+        "Hochberg $p$-value"
+      ],
+      "rows": [
+        [
+          "UMDA_model",
+          "$1.99 E+00$",
+          "$4.61 \\mathrm{E}-02$",
+          "$4.61 \\mathrm{E}-02^{a}$",
+          "$4.61 \\mathrm{E}-02^{a}$"
+        ],
+        [
+          "EMNA_inds",
+          "$6.55 \\mathrm{E}+00$",
+          "$5.65 \\mathrm{E}-11$",
+          "$2.82 \\mathrm{E}-10^{a}$",
+          "$2.82 \\mathrm{E}-10^{a}$"
+        ],
+        [
+          "EMNA_model",
+          "$8.15 \\mathrm{E}+00$",
+          "$4.44 \\mathrm{E}-16$",
+          "$2.66 \\mathrm{E}-15^{a}$",
+          "$2.66 \\mathrm{E}-15^{a}$"
+        ],
+        [
+          "UMDA_seq",
+          "$2.45 \\mathrm{E}+00$",
+          "$1.43 \\mathrm{E}-02$",
+          "$3.10 \\mathrm{E}-02^{a}$",
+          "$2.86 \\mathrm{E}-02^{a}$"
+        ],
+        [
+          "EMNA_seq",
+          "$5.81 \\mathrm{E}+00$",
+          "$6.17 \\mathrm{E}-09$",
+          "$2.47 \\mathrm{E}-08^{a}$",
+          "$2.47 \\mathrm{E}-08^{a}$"
+        ],
+        [
+          "IPOP-CMA-ES",
+          "$2.56 \\mathrm{E}+00$",
+          "$1.03 \\mathrm{E}-02$",
+          "$3.10 \\mathrm{E}-02^{a}$",
+          "$2.86 \\mathrm{E}-02^{a}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    }
+  ]
+}

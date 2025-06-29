@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Porting Estimation of Distribution Algorithms to the Cell Broadband Engine.md",
+    "filename": "Porting Estimation of Distribution Algorithms to the Cell Broadband Engine.md",
+    "title": "Porting Estimation of Distribution Algorithms to the Cell Broadband Engine",
+    "year": "2010"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Step 1.",
+        "Generate the first population $D_{0}$ of $M$ <br> individuals and evaluate all of them."
+      ],
+      "rows": [
+        [
+          2.0,
+          "Repeat at each generation $l$ until <br> a stopping criterion is fulfilled."
+        ],
+        [
+          3.0,
+          "Select $N$ individuals $\\left(D_{l}^{S e}\\right)$ from the $D_{l}$ <br> population following a selection method."
+        ],
+        [
+          4.0,
+          "Obtain from $D_{l}^{S e}$ an $n$ dimensional model that <br> shows the (in)dependencies between variables."
+        ],
+        [
+          5.0,
+          "Generate a new population $D_{l+1}$ of <br> $M$ individuals sampled from the model <br> learnt in the previous step."
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Speedups of UMDA on the quad-core Xeon, for different individual lengths.",
+      "headers": [
+        "Num. Workers",
+        "UMDA $_{d}$",
+        "",
+        "",
+        "UMDA $_{c}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          1000,
+          1900,
+          100,
+          1000,
+          1900
+        ],
+        [
+          1,
+          1.33,
+          1.22,
+          1.14,
+          1.11,
+          1.05,
+          1.07
+        ],
+        [
+          2,
+          1.44,
+          2.29,
+          2.21,
+          1.86,
+          2.08,
+          2.13
+        ],
+        [
+          3,
+          1.59,
+          3.16,
+          3.17,
+          2.16,
+          2.93,
+          3.17
+        ],
+        [
+          4,
+          2.18,
+          3.71,
+          3.92,
+          1.96,
+          3.95,
+          4.06
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Code size and execution times (solving OneMax and Sphere Model) for different gcc compilation flags. Individual size $=1000$. Fifty generations. Six SPEs.",
+      "headers": [
+        "Flags",
+        "UMDA $_{d}$",
+        "",
+        "UMDA $_{c}$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Size (bytes)",
+          "Exec. time (s)",
+          "Size (bytes)",
+          "Exec. time (s)"
+        ],
+        [
+          0,
+          120860,
+          65.65,
+          120796,
+          29.99
+        ],
+        [
+          0,
+          144628,
+          141.19,
+          144300,
+          72.1
+        ],
+        [
+          -1,
+          124076,
+          49.59,
+          123964,
+          20.37
+        ],
+        [
+          -2,
+          123164,
+          54.33,
+          123068,
+          20.06
+        ],
+        [
+          -3,
+          126772,
+          49.56,
+          126676,
+          20.21
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Code size and execution times for different xlc compilation flags. Individual size $=1000$. Fifty generations. Six SPEs.",
+      "headers": [
+        "Flags",
+        "UMDA $_{d}$",
+        "",
+        "UMDA $_{c}$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Size (bytes)",
+          "Exec. time (s)",
+          "Size (bytes)",
+          "Exec. time (s)"
+        ],
+        [
+          0,
+          147944,
+          140.6,
+          147752,
+          69.38
+        ],
+        [
+          -2,
+          156520,
+          48.84,
+          156136,
+          19.72
+        ],
+        [
+          "-02 -qcompact",
+          150056,
+          95.83,
+          149800,
+          43.75
+        ],
+        [
+          -3,
+          184856,
+          48.41,
+          190120,
+          19.44
+        ],
+        [
+          "-03 -qcompact",
+          159960,
+          93.44,
+          162024,
+          43.03
+        ],
+        [
+          -4,
+          98896,
+          46.6,
+          106448,
+          19.14
+        ],
+        [
+          "-04 -qcompact",
+          101936,
+          555.5,
+          104320,
+          276.19
+        ],
+        [
+          -5,
+          102352,
+          45.66,
+          103504,
+          18.18
+        ],
+        [
+          "-05 -qcompact",
+          97080,
+          545.49,
+          99064,
+          269.69
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Speedups of UMDA on the Cell, for different individual lengths.",
+      "headers": [
+        "Num. Workers",
+        "UMDA $_{d}$",
+        "",
+        "",
+        "UMDA",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          1000,
+          1900,
+          100,
+          1000,
+          1900
+        ],
+        [
+          1,
+          1.47,
+          1.15,
+          1.14,
+          0.87,
+          0.92,
+          0.93
+        ],
+        [
+          2,
+          2.32,
+          1.41,
+          1.33,
+          1.67,
+          1.71,
+          1.65
+        ],
+        [
+          3,
+          2.91,
+          1.52,
+          1.4,
+          2.44,
+          2.4,
+          2.23
+        ],
+        [
+          4,
+          2.97,
+          1.58,
+          1.45,
+          3.03,
+          3.0,
+          2.68
+        ],
+        [
+          5,
+          2.86,
+          1.62,
+          1.48,
+          3.7,
+          3.53,
+          3.07
+        ],
+        [
+          6,
+          2.84,
+          1.64,
+          1.49,
+          4.07,
+          3.98,
+          3.38
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    }
+  ]
+}

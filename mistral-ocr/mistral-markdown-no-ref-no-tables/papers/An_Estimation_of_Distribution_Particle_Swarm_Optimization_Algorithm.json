@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/An Estimation of Distribution Particle Swarm Optimization Algorithm.md",
+    "filename": "An Estimation of Distribution Particle Swarm Optimization Algorithm.md",
+    "title": "An Estimation of Distribution Particle Swarm Optimization Algorithm",
+    "year": "2006"
+  },
+  "references": {
+    "header": "# References",
+    "content": "1. Kennedy, J., Eberhart, R.: Particle swarm optimization. In: Proceedings of the IEEE International Conference on Neural Networks, Piscataway, NJ, IEEE Press (1995) $1942-1948$\n2. Eberhart, R., Kennedy, J.: A new optimizer using particle swarm theory. In: Proceedings of the 6th International Symposium on Micro Machine and Human Science, Piscataway, NJ, IEEE Press (1995) 39-43\n3. Clerc, M., Kennedy, J.: The particle swarm-explosion, stability, and convergence in a multidimensional complex space. IEEE Transactions on Evolutionary Computation 6(1) (2002) $58-73$\n4. Eberhart, R., Shi, Y.: Comparing inertia weights and constriction factors in particle swarm optimization. In: Proceedings of the 2000 IEEE Congress on Evolutionary Computation. (2000) $84-88$\n5. Trelea, I.C.: The particle swarm optimization algorithm: Convergence analysis and parameter selection. Information Processing Letters 85(6) (2003) 317-325\n6. Dorigo, M., Stützle, T.: Ant Colony Optimization. The MIT Press (2004)\n7. Pelikan, M., Goldberg, D.E., Lobo, F.: A survey of optimization by building and using probabilistic models. Computational Optimization and Applications 21(1) (2002) $5-20$\n8. Kern, S., Müller, S.D., Hansen, N., Büche, D., Ocenasek, J., Koumoutsakos, P.: Learning probability distributions in continuous evolutionary algorithms-a comparative review. Natural Computing 3(1) (2004) 77-112\n9. Larrañaga, P., Lozano, J.: Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Genetic Algorithms and Evolutionary Computation, Vol. 2. Springer (2001)\n10. Kennedy, J., Eberhart, R., Shi, Y.: Swarm Intelligence. Morgan Kaufmann Publishers, San Francisco, CA, USA (2001)\n11. Bonabeau, E., Dorigo, M., Theraulaz, G.: Swarm Intelligence: From Natural to Artificial Systems. Santa Fe Institute Studies on the Sciences of Complexity. Oxford University Press, USA (1999)\n12. Socha, K.: ACO for Continuous and Mixed-Variable Optimization. In Dorigo, M., Birattari, M., Blum, C., eds.: Proceedings of ANTS 2004 - Fourth International Workshop on Ant Colony Optimization and Swarm Intelligence. Volume 3172 of LNCS., Springer-Verlag, Berlin, Germany (2004) 25-36\n13. Socha, K., Dorigo, M.: Ant colony optimization for continuous domains. Technical Report TR/IRIDIA/2005-037, IRIDIA, Université Libre de Bruxelles (2005)\n14. Janson, S., Middendorf, M.: A hierarchical particle swarm optimizer and its adaptive variant. IEEE Transactions on Systems, Man and Cybernetics-Part B 35(6) (2005) $1272-1282$\n\n15. Monson, C.K., Seppi, K.D.: Exposing origin-seeking bias in PSO. In et al., H.G.B., ed.: Proceedings of the Genetic and Evolutionary Computation Conference (GECCO), New York, NY, ACM Press (2005) 241-248\n16. Suganthan, P.N., Hansen, N., Liang, J.J., Deb, K., Chen, Y.P., Auger, A., Tiwari, S.: Problem definitions and evaluation criteria for the CEC 2005 special session on real-parameter optimization. Technical Report 2005005, Nanyang Technological University, Singapore and IIT Kanpur, India (2005)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Kennedy, J., Eberhart, R.: Particle swarm optimization. In: Proceedings of the IEEE International Conference on Neural Networks, Piscataway, NJ, IEEE Press (1995) $1942-1948$"
+      },
+      {
+        "ref_id": "2",
+        "text": "Eberhart, R., Kennedy, J.: A new optimizer using particle swarm theory. In: Proceedings of the 6th International Symposium on Micro Machine and Human Science, Piscataway, NJ, IEEE Press (1995) 39-43"
+      },
+      {
+        "ref_id": "3",
+        "text": "Clerc, M., Kennedy, J.: The particle swarm-explosion, stability, and convergence in a multidimensional complex space. IEEE Transactions on Evolutionary Computation 6(1) (2002) $58-73$"
+      },
+      {
+        "ref_id": "4",
+        "text": "Eberhart, R., Shi, Y.: Comparing inertia weights and constriction factors in particle swarm optimization. In: Proceedings of the 2000 IEEE Congress on Evolutionary Computation. (2000) $84-88$"
+      },
+      {
+        "ref_id": "5",
+        "text": "Trelea, I.C.: The particle swarm optimization algorithm: Convergence analysis and parameter selection. Information Processing Letters 85(6) (2003) 317-325"
+      },
+      {
+        "ref_id": "6",
+        "text": "Dorigo, M., Stützle, T.: Ant Colony Optimization. The MIT Press (2004)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Pelikan, M., Goldberg, D.E., Lobo, F.: A survey of optimization by building and using probabilistic models. Computational Optimization and Applications 21(1) (2002) $5-20$"
+      },
+      {
+        "ref_id": "8",
+        "text": "Kern, S., Müller, S.D., Hansen, N., Büche, D., Ocenasek, J., Koumoutsakos, P.: Learning probability distributions in continuous evolutionary algorithms-a comparative review. Natural Computing 3(1) (2004) 77-112"
+      },
+      {
+        "ref_id": "9",
+        "text": "Larrañaga, P., Lozano, J.: Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Genetic Algorithms and Evolutionary Computation, Vol. 2. Springer (2001)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Kennedy, J., Eberhart, R., Shi, Y.: Swarm Intelligence. Morgan Kaufmann Publishers, San Francisco, CA, USA (2001)"
+      },
+      {
+        "ref_id": "11",
+        "text": "Bonabeau, E., Dorigo, M., Theraulaz, G.: Swarm Intelligence: From Natural to Artificial Systems. Santa Fe Institute Studies on the Sciences of Complexity. Oxford University Press, USA (1999)"
+      },
+      {
+        "ref_id": "12",
+        "text": "Socha, K.: ACO for Continuous and Mixed-Variable Optimization. In Dorigo, M., Birattari, M., Blum, C., eds.: Proceedings of ANTS 2004 - Fourth International Workshop on Ant Colony Optimization and Swarm Intelligence. Volume 3172 of LNCS., Springer-Verlag, Berlin, Germany (2004) 25-36"
+      },
+      {
+        "ref_id": "13",
+        "text": "Socha, K., Dorigo, M.: Ant colony optimization for continuous domains. Technical Report TR/IRIDIA/2005-037, IRIDIA, Université Libre de Bruxelles (2005)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Janson, S., Middendorf, M.: A hierarchical particle swarm optimizer and its adaptive variant. IEEE Transactions on Systems, Man and Cybernetics-Part B 35(6) (2005) $1272-1282$"
+      },
+      {
+        "ref_id": "15",
+        "text": "Monson, C.K., Seppi, K.D.: Exposing origin-seeking bias in PSO. In et al., H.G.B., ed.: Proceedings of the Genetic and Evolutionary Computation Conference (GECCO), New York, NY, ACM Press (2005) 241-248"
+      },
+      {
+        "ref_id": "16",
+        "text": "Suganthan, P.N., Hansen, N., Liang, J.J., Deb, K., Chen, Y.P., Auger, A., Tiwari, S.: Problem definitions and evaluation criteria for the CEC 2005 special session on real-parameter optimization. Technical Report 2005005, Nanyang Technological University, Singapore and IIT Kanpur, India (2005)"
+      }
+    ],
+    "reference_count": 16,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameters for the test functions",
+      "headers": [
+        "Function",
+        "Initialization range",
+        "Goal"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "$[-100,100]^{D}$",
+          0.01
+        ],
+        [
+          "Rosenbrock",
+          "$[-30,30]^{D}$",
+          100
+        ],
+        [
+          "Rastrigin",
+          "$[-5.12,5.12]^{D}$",
+          100
+        ],
+        [
+          "Griewank",
+          "$[-600,600]^{D}$",
+          0.1
+        ],
+        [
+          "Ackley",
+          "$[-32,32]^{D}$",
+          0.1
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Parameters used by the algorithms",
+      "headers": [
+        "Algorithm",
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Canonical PSO",
+          "$\\varphi_{1}$",
+          2.05
+        ],
+        [
+          "",
+          "$\\varphi_{2}$",
+          2.05
+        ],
+        [
+          "",
+          "$\\chi$",
+          0.729
+        ],
+        [
+          "EDPSO",
+          "$\\varphi_{1}$",
+          2.05
+        ],
+        [
+          "",
+          "$\\varphi_{2}$",
+          2.05
+        ],
+        [
+          "",
+          "$\\chi$",
+          0.729
+        ],
+        [
+          "",
+          "$q$",
+          0.1
+        ],
+        [
+          "",
+          "$\\xi$",
+          0.85
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Average fitness value after the maximum number of allowed function evaluations over 30 runs",
+      "headers": [
+        "Algorithm",
+        "Dimension",
+        "Sphere",
+        "Rosenbrock",
+        "Rastrigin",
+        "Griewank",
+        "Ackley"
+      ],
+      "rows": [
+        [
+          "Canonical PSO",
+          30,
+          0.0,
+          37.48,
+          73.52,
+          0.023,
+          13.35
+        ],
+        [
+          "",
+          40,
+          0.0,
+          55.06,
+          133.15,
+          0.037,
+          18.78
+        ],
+        [
+          "",
+          50,
+          0.0,
+          102.4,
+          203.8,
+          0.1,
+          18.3
+        ],
+        [
+          "EDPSO",
+          30,
+          0.0,
+          22.3,
+          25.6,
+          0.0012,
+          1.9e-05
+        ],
+        [
+          "",
+          40,
+          0.0,
+          37.3,
+          33.43,
+          0.00098,
+          4e-05
+        ],
+        [
+          "",
+          50,
+          0.0,
+          48.12,
+          56.18,
+          0.0029,
+          0.7
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Average number of function evaluations needed to achieve the solution qualities defined in Table 1 and the probability of achieving them",
+      "headers": [
+        "Algorithm",
+        "Dimension",
+        "Sphere",
+        "Rosenbrock",
+        "Rastrigin",
+        "Griewank",
+        "Ackley"
+      ],
+      "rows": [
+        [
+          "Canonical PSO",
+          30,
+          130491.0,
+          209690.86,
+          78800.9,
+          119070.93,
+          139800.06
+        ],
+        [
+          "",
+          40,
+          193651.0,
+          384420.83,
+          132960.16,
+          175630.93,
+          "-"
+        ],
+        [
+          "",
+          50,
+          274511.0,
+          611240.66,
+          "-",
+          245840.76,
+          "-"
+        ],
+        [
+          "EDPSO",
+          30,
+          59881.0,
+          209210.96,
+          185491.0,
+          55201.0,
+          56561.0
+        ],
+        [
+          "",
+          40,
+          87171.0,
+          248960.9,
+          280451.0,
+          78661.0,
+          84371.0
+        ],
+        [
+          "",
+          50,
+          119711.0,
+          504420.86,
+          416591.0,
+          107411.0,
+          202840.96
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    }
+  ]
+}

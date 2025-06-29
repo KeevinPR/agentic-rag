@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/An analysis of the bias of variation operators of estimation of distribution programming.md",
+    "filename": "An analysis of the bias of variation operators of estimation of distribution programming.md",
+    "title": "An analysis of the bias of variation operators of estimation of distribution programming",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Estimated $P\\left(X_{3}=x_{3} \\mid C_{3}=\\left\\{X_{1}=x_{1}, X_{2}=x_{2}\\right\\}\\right)$ for EDP",
+      "headers": [
+        "$X_{1}$",
+        "$X_{2}$",
+        "$X_{3}$",
+        "Frequency",
+        "$P$",
+        "$P^{\\prime}$"
+      ],
+      "rows": [
+        [
+          "+",
+          "-",
+          "x",
+          1,
+          "$100 \\%$",
+          "$93.33 \\%$"
+        ],
+        [
+          "+",
+          "-",
+          "+",
+          0,
+          "$0 \\%$",
+          "$3.33 \\%$"
+        ],
+        [
+          "+",
+          "-",
+          "-",
+          0,
+          "$0 \\%$",
+          "$3.33 \\%$"
+        ],
+        [
+          "-",
+          "-",
+          "x",
+          1,
+          "$100 \\%$",
+          "$93.33 \\%$"
+        ],
+        [
+          "-",
+          "-",
+          "+",
+          0,
+          "$0 \\%$",
+          "$3.33 \\%$"
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          0,
+          "$0 \\%$",
+          "$3.33 \\%$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Frequencies of $n$-grams of ancestors for example trees 1 and 2",
+      "headers": [
+        "grandparent",
+        "parent",
+        "child",
+        "frequency"
+      ],
+      "rows": [
+        [
+          "null",
+          "null",
+          "+",
+          1
+        ],
+        [
+          "null",
+          "null",
+          "-",
+          1
+        ],
+        [
+          "null",
+          "null",
+          "x",
+          0
+        ],
+        [
+          "null",
+          "+",
+          "+",
+          0
+        ],
+        [
+          "null",
+          "+",
+          "-",
+          1
+        ],
+        [
+          "null",
+          "+",
+          "x",
+          1
+        ],
+        [
+          "null",
+          "-",
+          "+",
+          0
+        ],
+        [
+          "null",
+          "-",
+          "-",
+          1
+        ],
+        [
+          "null",
+          "-",
+          "x",
+          1
+        ],
+        [
+          "+",
+          "+",
+          "+",
+          0
+        ],
+        [
+          "+",
+          "+",
+          "-",
+          0
+        ],
+        [
+          "+",
+          "+",
+          "x",
+          0
+        ],
+        [
+          "+",
+          "-",
+          "+",
+          0
+        ],
+        [
+          "+",
+          "-",
+          "-",
+          0
+        ],
+        [
+          "+",
+          "-",
+          "x",
+          2
+        ],
+        [
+          "-",
+          "+",
+          "+",
+          0
+        ],
+        [
+          "-",
+          "+",
+          "-",
+          0
+        ],
+        [
+          "-",
+          "+",
+          "x",
+          0
+        ],
+        [
+          "-",
+          "-",
+          "+",
+          0
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          "-",
+          "-",
+          "x",
+          2
+        ]
+      ],
+      "row_count": 21,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "GP and EDP Parameters",
+      "headers": [
+        "population size",
+        "250"
+      ],
+      "rows": [
+        [
+          "initialization",
+          "ramped-half-and-half (range 2-6)"
+        ],
+        [
+          "selection",
+          "random"
+        ],
+        [
+          "replacement",
+          "generational"
+        ],
+        [
+          "generations",
+          100
+        ],
+        [
+          "max. tree depth",
+          8
+        ],
+        [
+          "terminal set",
+          "$T=\\{x, y, 1.0\\}$"
+        ],
+        [
+          "function set",
+          "$F=\\{+,-, *, /, \\sin , \\cos , \\exp , \\log \\}$"
+        ],
+        [
+          "variation operator",
+          "$G P$ : standard sub-tree crossover (internal"
+        ],
+        [
+          "",
+          "node bias: $90 \\%$ functions, $10 \\%$ terminals)"
+        ],
+        [
+          "",
+          "$E D P$ : model building and sampling with"
+        ],
+        [
+          "",
+          "$\\alpha \\in\\{0.00,0.01,0.10,0.50,1.00\\}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    }
+  ]
+}

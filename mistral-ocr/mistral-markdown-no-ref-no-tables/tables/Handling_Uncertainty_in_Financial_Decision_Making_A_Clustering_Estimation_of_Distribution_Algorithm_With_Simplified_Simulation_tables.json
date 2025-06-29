@@ -1,0 +1,1197 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Handling Uncertainty in Financial Decision Making A Clustering Estimation of Distribution Algorithm With Simplified Simulation.md",
+    "filename": "Handling Uncertainty in Financial Decision Making A Clustering Estimation of Distribution Algorithm With Simplified Simulation.md",
+    "title": "Handling Uncertainty in Financial Decision Making A Clustering Estimation of Distribution Algorithm With Simplified Simulation",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "SYMBOLS IN THE MODEL",
+      "headers": [
+        "$n_{1}$",
+        "The number of endowment policies"
+      ],
+      "rows": [
+        [
+          "$n_{2}$",
+          "The number of hospitalization policies"
+        ],
+        [
+          "$n$",
+          "The number of insured in the group"
+        ],
+        [
+          "$f(t)$",
+          "The profit at time $t$"
+        ],
+        [
+          "$\\beta^{k}$",
+          "The kind of hospitalization insurance the $k$-th insured in the group to invest ( $\\beta^{k}=0$ implies does not buy any hospitalization insurance)"
+        ],
+        [
+          "$x_{0}{ }^{k}$",
+          "The premium of the $j$-th payment period of the $i$-th endowment insurance for the $k$-th insured in the group"
+        ],
+        [
+          "$V^{k}(t)$",
+          "The cash value of the $k$-th insured at time $t$"
+        ],
+        [
+          "$\\mathcal{Z}^{k}(t)$",
+          "The death compensation of the $k$-th insured at time $t$"
+        ],
+        [
+          "$C(t)$",
+          "The total disposable cash for the whole group at time $t$"
+        ],
+        [
+          "$V_{0}^{k}(t)$",
+          "The cash value of the $i$-th endowment policy with the $j$-th payment period for the $k$-th insured at time $t$"
+        ],
+        [
+          "$m_{i}$",
+          "The number of payment period for the $i$-th endowment policy"
+        ],
+        [
+          "$s^{k}$",
+          "The lifetime of the $k$-th insured"
+        ],
+        [
+          "$p^{k}(t)$",
+          "The mortality rate of the $k$-th insured at age $t$"
+        ],
+        [
+          "$p_{i}{ }^{k}(t)$",
+          "The incidence rate of the $k$-th insured for diseases of degree $s$ at age $t$"
+        ],
+        [
+          "$\\eta_{1 i j}{ }^{k}(t, t)$",
+          "The increase rate of the cash value of the $i$-th endowment insurance with the $j$-th payment period for the $k$-th insured at age $t$ with the purchase at age $t_{i}$"
+        ],
+        [
+          "$\\eta_{2 i j}{ }^{k}(t, t)$",
+          "The death compensation rate of the $i$-th endowment insurance with the $j$-th payment period for the $k$-th insured at age $t$ with the purchase at age $t_{i}$"
+        ],
+        [
+          "$\\delta_{0}{ }^{k}(t)$",
+          "The premium of hospitalization policy $\\beta$ for the $k$-th insured at age $t$"
+        ],
+        [
+          "$t_{0}{ }^{k}$",
+          "The initial age of the $k$-th insured in the group"
+        ],
+        [
+          "$I_{1}$",
+          "The total disposable income for the whole group"
+        ],
+        [
+          "$I_{2}^{k}(t)$",
+          "The disposable income of the $k$-th insured at time $t$"
+        ],
+        [
+          "$v_{0}^{k}(t)$",
+          "An indicator of whether the payment period is terminated"
+        ],
+        [
+          "$w_{i}$",
+          "An indicator of whether or not the $k$-th insured suffers from the diseases in the $s$-th group"
+        ],
+        [
+          "$q_{k}$",
+          "The latest time of purchase for the $j$-th payment period of the $i$-th endowment insurance"
+        ],
+        [
+          "$l_{0 i}$",
+          "The minimum amount for purchase of the $j$-th payment period of the $i$-th endowment insurance at age $t$"
+        ],
+        [
+          "$T$",
+          "The duration to be considered"
+        ],
+        [
+          "$z_{i}$",
+          "The medical expense of diseases at degree $s$"
+        ]
+      ],
+      "row_count": 25,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "Average Correlation Coefficient of Solutions in Different Stage",
+      "headers": [
+        "",
+        "Initialization",
+        "Early stage",
+        "Mid-stage",
+        "Later stage"
+      ],
+      "rows": [
+        [
+          "$\\begin{gathered} t_{0}=103540 \\\\ T=30 \\end{gathered}$",
+          0.9734,
+          0.9784,
+          0.9791,
+          0.9508
+        ],
+        [
+          "$\\begin{gathered} t_{0}=203040 \\\\ T=20 \\end{gathered}$",
+          0.9407,
+          0.9084,
+          0.9334,
+          0.941
+        ],
+        [
+          "$\\begin{gathered} t_{0}=303545 \\\\ T=10 \\end{gathered}$",
+          0.7826,
+          0.7308,
+          0.7876,
+          0.9822
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "III",
+      "table_title": "SETTINGS OF INCOME",
+      "headers": [
+        "Age",
+        "Yearly Income"
+      ],
+      "rows": [
+        [
+          "$<20$",
+          12000
+        ],
+        [
+          "$20-24$",
+          25000
+        ],
+        [
+          "$25-29$",
+          40000
+        ],
+        [
+          "$30-34$",
+          50000
+        ],
+        [
+          "$35-39$",
+          53000
+        ],
+        [
+          "$40-44$",
+          50000
+        ],
+        [
+          "$45-49$",
+          48000
+        ],
+        [
+          "$50-60$",
+          45000
+        ],
+        [
+          "$>60$",
+          20000
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "IV",
+      "table_title": "DETAILED SETTINGS OF THE ENDOWMENT POLICIES",
+      "headers": [
+        "",
+        "Payment Period $\\left(\\boldsymbol{y}_{\\boldsymbol{d}}\\right)$ and <br> Latest Purchasing Time $\\left(\\boldsymbol{q}_{\\boldsymbol{d}}\\right)$",
+        "",
+        "",
+        "",
+        "Minimum of the <br> face amount $\\left(\\boldsymbol{c}_{\\boldsymbol{d}}\\right)$",
+        ""
+      ],
+      "rows": [
+        [
+          "A",
+          5,
+          "",
+          10,
+          "",
+          20000,
+          ""
+        ],
+        [
+          "",
+          75,
+          "",
+          70,
+          "",
+          "",
+          ""
+        ],
+        [
+          "B",
+          1,
+          5,
+          10,
+          18,
+          25,
+          10000
+        ],
+        [
+          "",
+          75,
+          65,
+          60,
+          60,
+          55,
+          ""
+        ],
+        [
+          "C",
+          5,
+          "",
+          10,
+          "",
+          10000,
+          ""
+        ],
+        [
+          "",
+          75,
+          "",
+          70,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D",
+          6,
+          10,
+          15,
+          20,
+          "",
+          5000
+        ],
+        [
+          "",
+          65,
+          60,
+          55,
+          55,
+          "",
+          ""
+        ],
+        [
+          "E",
+          1,
+          "",
+          5,
+          10,
+          "",
+          1500
+        ],
+        [
+          "",
+          80,
+          "",
+          80,
+          75,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 7
+    },
+    {
+      "table_number": "V",
+      "table_title": "DETAILED SETTINGS OF THE HOSPITALIZATION POLICIES",
+      "headers": [
+        "",
+        "Coverage scope",
+        "Premium $\\left(\\delta_{d}\\left(t_{0}\\right)\\right)$"
+      ],
+      "rows": [
+        [
+          "A",
+          "critical illness",
+          "lowest"
+        ],
+        [
+          "B",
+          "critical and serious illness",
+          "medium"
+        ],
+        [
+          "C",
+          "critical, serious and general illness",
+          "highest"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "VI",
+      "table_title": "COMPARISON OF AEDA-SS WITH AEDA",
+      "headers": [
+        "",
+        "",
+        "AEDA-SS",
+        "AEDA"
+      ],
+      "rows": [
+        [
+          "$\\begin{gathered} t_{0}=103540 \\\\ T=30 \\end{gathered}$",
+          "max",
+          "$8.4361 \\mathrm{E}+07$",
+          "$8.5815 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "mean",
+          "$8.0603 \\mathrm{E}+07$",
+          "$7.9740 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          "$1.8460 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          "$6.3790 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          "$1.7750 \\mathrm{E}+03$"
+        ],
+        [
+          "$\\begin{gathered} t_{0}=203040 \\\\ T=20 \\end{gathered}$",
+          "max",
+          "$3.6038 \\mathrm{E}+07$",
+          "$3.5611 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "mean",
+          "$3.5666 \\mathrm{E}+07$",
+          "$3.4389 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          "$1.2100 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          "$8.5220 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          "$2.6800 \\mathrm{E}+02$"
+        ],
+        [
+          "$\\begin{gathered} t_{0}=303545 \\\\ T=10 \\end{gathered}$",
+          "max",
+          "$1.0320 \\mathrm{E}+07$",
+          "$1.0337 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "mean",
+          "$1.0314 \\mathrm{E}+07$",
+          "$1.0328 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          "$4.7800 \\mathrm{E}+02$"
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          "$1.9620 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          "$7.5600 \\mathrm{E}+03$"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 4
+    },
+    {
+      "table_number": "VII",
+      "table_title": "COMPARISON OF AEDA-SS WITH AEDA-D AND AEDA-G",
+      "headers": [
+        "",
+        "",
+        "AEDA-SS",
+        "AEDA-D",
+        "AEDA-G"
+      ],
+      "rows": [
+        [
+          "$\\begin{gathered} t_{0}=103540 \\\\ T_{2}=30 \\end{gathered}$",
+          "max",
+          "$8.5445 \\mathrm{E}+07$",
+          "$8.8125 \\mathrm{E}+07$",
+          "$8.8086 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "mean",
+          "$7.9372 \\mathrm{E}+07$",
+          "$8.1330 \\mathrm{E}+07$",
+          "$7.9714 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          "$1.7000 \\mathrm{E}+02$",
+          "$1.7040 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          "$6.4490 \\mathrm{E}+03$",
+          "$6.2410 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          "$3.3810 \\mathrm{E}+03$",
+          "$2.0550 \\mathrm{E}+03$"
+        ],
+        [
+          "$\\begin{gathered} t_{0}=203040 \\\\ T_{2}=20 \\end{gathered}$",
+          "max",
+          "$3.5599 \\mathrm{E}+07$",
+          "$3.5782 \\mathrm{E}+07$",
+          "$3.5253 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "mean",
+          "$3.4438 \\mathrm{E}+07$",
+          "$3.4636 \\mathrm{E}+07$",
+          "$3.4194 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          "$7.5000 \\mathrm{E}+02$",
+          "$9.9800 \\mathrm{E}+02$"
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          "$3.5370 \\mathrm{E}+03$",
+          "$7.1440 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          "$5.7130 \\mathrm{E}+03$",
+          "$1.8580 \\mathrm{E}+03$"
+        ],
+        [
+          "$\\begin{gathered} t_{0}=303545 \\\\ T_{2}=10 \\end{gathered}$",
+          "max",
+          "$1.0339 \\mathrm{E}+07$",
+          "$1.0339 \\mathrm{E}+07$",
+          "$1.0340 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "mean",
+          "$1.0331 \\mathrm{E}+07$",
+          "$1.0329 \\mathrm{E}+07$",
+          "$1.0339 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          "$9.2800 \\mathrm{E}+02$",
+          "$8.0900 \\mathrm{E}+02$"
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          "$1.1050 \\mathrm{E}+03$",
+          "$1.5900 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          "$7.9670 \\mathrm{E}+03$",
+          "$7.6010 \\mathrm{E}+03$"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 5
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "COMPARISON OF AEDA-SS WITH ADAPTIVE SIMULATION TIME SETTING STRATEGY",
+      "headers": [
+        "",
+        "",
+        "AEDA-SS",
+        "$N P=50$",
+        "$N P=100$",
+        "$N P=200$",
+        "$N P=500$",
+        "$N P=1000$"
+      ],
+      "rows": [
+        [
+          "$t_{0}=103540$ <br> $T=30$",
+          "max",
+          "$8.5787 \\mathrm{E}+07$",
+          "$8.7508 \\mathrm{E}+07$",
+          "$8.4787 \\mathrm{E}+07$",
+          "$8.5468 \\mathrm{E}+07$",
+          "$8.5255 \\mathrm{E}+07$",
+          "$8.7864 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "mean",
+          "$7.9588 \\mathrm{E}+07$",
+          "$7.9415 \\mathrm{E}+07$",
+          "$7.9273 \\mathrm{E}+07$",
+          "$7.7420 \\mathrm{E}+07$",
+          "$7.9979 \\mathrm{E}+07$",
+          "$8.0923 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          "$1.5920 \\mathrm{E}+03$",
+          "$1.3910 \\mathrm{E}+03$",
+          "$1.0040 \\mathrm{E}+03$",
+          "$5.7000 \\mathrm{E}+02$",
+          "$1.1830 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          7.487003,
+          7.149003,
+          7.244003,
+          "$1.6180 \\mathrm{E}+03$",
+          "$2.8180 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          "$9.2100 \\mathrm{E}+02$",
+          "$1.4600 \\mathrm{E}+03$",
+          "$1.7520 \\mathrm{E}+03$",
+          7.812003,
+          5.999003
+        ],
+        [
+          "$t_{0}=203040$ <br> $T=20$",
+          "max",
+          "$3.5624 \\mathrm{E}+07$",
+          "$3.6552 \\mathrm{E}+07$",
+          "$3.6837 \\mathrm{E}+07$",
+          "$3.6800 \\mathrm{E}+07$",
+          "$3.6573 \\mathrm{E}+07$",
+          "$3.6380 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "mean",
+          "$3.4244 \\mathrm{E}+07$",
+          "$3.4705 \\mathrm{E}+07$",
+          "$3.5122 \\mathrm{E}+07$",
+          "$3.4873 \\mathrm{E}+07$",
+          "$3.4757 \\mathrm{E}+07$",
+          "$3.5110 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          "$8.7200 \\mathrm{E}+02$",
+          "$9.0900 \\mathrm{E}+02$",
+          "$9.0500 \\mathrm{E}+02$",
+          "$8.3300 \\mathrm{E}+02$",
+          "$1.5380 \\mathrm{E}+03$"
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          8.264003,
+          7.988003,
+          8.228003,
+          7.729003,
+          7.328003
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          "$8.6400 \\mathrm{E}+02$",
+          "$1.1030 \\mathrm{E}+03$",
+          "$8.6700 \\mathrm{E}+02$",
+          "$1.4380 \\mathrm{E}+03$",
+          "$1.1340 \\mathrm{E}+03$"
+        ],
+        [
+          "$t_{0}=303545$ <br> $T=10$",
+          "max",
+          "$1.0343 \\mathrm{E}+07$",
+          "$1.0359 \\mathrm{E}+07$",
+          "$1.0357 \\mathrm{E}+07$",
+          "$1.0355 \\mathrm{E}+07$",
+          "$1.0354 \\mathrm{E}+07$",
+          "$1.0343 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "mean",
+          "$1.0334 \\mathrm{E}+07$",
+          "$1.0321 \\mathrm{E}+07$",
+          "$1.0331 \\mathrm{E}+07$",
+          "$1.0191 \\mathrm{E}+07$",
+          "$1.0318 \\mathrm{E}+07$",
+          "$9.9967 \\mathrm{E}+06$"
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          "$3.3400 \\mathrm{E}+02$",
+          "$7.4600 \\mathrm{E}+02$",
+          "$2.0900 \\mathrm{E}+02$",
+          "$1.0500 \\mathrm{E}+02$",
+          "$2.6000 \\mathrm{E}+01$"
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          7.874003,
+          8.495003,
+          8.823003,
+          8.768003,
+          8.793003
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          "$1.7920 \\mathrm{E}+03$",
+          "$7.5900 \\mathrm{E}+02$",
+          "$9.6800 \\mathrm{E}+02$",
+          "$1.1270 \\mathrm{E}+03$",
+          "$1.1810 \\mathrm{E}+03$"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 8
+    },
+    {
+      "table_number": "IX",
+      "table_title": "COMPARISON OF CEDA-SS WITH AEDA-SS",
+      "headers": [
+        "",
+        "",
+        "AEDA-SS",
+        "CEDA-SS-C",
+        "CEDA-SS-S"
+      ],
+      "rows": [
+        [
+          "$t_{0}=103540$ <br> $T_{2}=30$",
+          "max",
+          8.594507,
+          8.551207,
+          8.556807
+        ],
+        [
+          "",
+          "mean",
+          7.995907,
+          8.017107,
+          7.986207
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          3.547003,
+          1.627003
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          2.790002,
+          7.500001
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          6.174003,
+          8.298003
+        ],
+        [
+          "$t_{0}=203040$ <br> $T_{2}=20$",
+          "max",
+          3.558607,
+          3.662507,
+          3.678607
+        ],
+        [
+          "",
+          "mean",
+          3.436507,
+          3.502307,
+          3.487407
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          7.478003,
+          7.744003
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          9.180002,
+          8.160002
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          1.604003,
+          1.440003
+        ],
+        [
+          "$t_{0}=303545$ <br> $T_{2}=10$",
+          "max",
+          1.034207,
+          1.035007,
+          1.034707
+        ],
+        [
+          "",
+          "mean",
+          1.033207,
+          1.033507,
+          1.032907
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          1.624003,
+          2.340003
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          4.420002,
+          2.840002
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          7.934003,
+          7.376003
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 5
+    },
+    {
+      "table_number": "X",
+      "table_title": "COMPARISON OF CEDA-SS WITH DEPSO",
+      "headers": [
+        "",
+        "",
+        "DEPSO",
+        "CEDA-SS-C",
+        "CEDA-SS-S"
+      ],
+      "rows": [
+        [
+          "$t_{0}=103540$ <br> $T_{2}=30$",
+          "max",
+          8.752907,
+          8.577707,
+          8.529007
+        ],
+        [
+          "",
+          "mean",
+          8.058007,
+          8.014807,
+          7.982807
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          6.142003,
+          6.462003
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          3.810002,
+          4.480002
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          3.477003,
+          3.090003
+        ],
+        [
+          "$t_{0}=203040$ <br> $T_{2}=20$",
+          "max",
+          3.633507,
+          3.658207,
+          3.676507
+        ],
+        [
+          "",
+          "mean",
+          3.446507,
+          3.504507,
+          3.489007
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          8.757003,
+          8.472003
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          5.400002,
+          6.120002
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          7.030002,
+          9.160002
+        ],
+        [
+          "$t_{0}=303545$ <br> $T_{2}=10$",
+          "max",
+          1.033807,
+          1.035107,
+          1.034507
+        ],
+        [
+          "",
+          "mean",
+          1.033407,
+          1.033407,
+          1.032907
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          8.139003,
+          7.416003
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          3.020002,
+          2.550002
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          1.559003,
+          2.329003
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 5
+    },
+    {
+      "table_number": "XI",
+      "table_title": "COMPARISON OF CEDA-SS WITH EDASLS",
+      "headers": [
+        "",
+        "",
+        "EDASLS",
+        "CEDA-SS-C",
+        "CEDA-SS-S"
+      ],
+      "rows": [
+        [
+          "$t_{0}=103540$ <br> $T_{2}=30$",
+          "max",
+          8.743607,
+          8.545907,
+          8.544107
+        ],
+        [
+          "",
+          "mean",
+          8.172207,
+          8.013807,
+          7.977407
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          4.104003,
+          1.560003
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          9.350002,
+          1.400001
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          4.961003,
+          8.426003
+        ],
+        [
+          "$t_{0}=203040$ <br> $T_{2}=20$",
+          "max",
+          3.609507,
+          3.652007,
+          3.678107
+        ],
+        [
+          "",
+          "mean",
+          3.509307,
+          3.503807,
+          3.490807
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          6.943003,
+          6.594003
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          6.490002,
+          1.110002
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          2.408003,
+          3.295003
+        ],
+        [
+          "$t_{0}=303545$ <br> $T_{2}=10$",
+          "max",
+          1.034607,
+          1.035007,
+          1.034707
+        ],
+        [
+          "",
+          "mean",
+          1.032107,
+          1.033407,
+          1.032907
+        ],
+        [
+          "",
+          "b-number",
+          "-",
+          8.455003,
+          7.862003
+        ],
+        [
+          "",
+          "w-number",
+          "-",
+          2.430002,
+          4.710002
+        ],
+        [
+          "",
+          "e-number",
+          "-",
+          1.302003,
+          1.667003
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 5
+    },
+    {
+      "table_number": "XII",
+      "table_title": "COMPUTATIONAL TIME OF THE ALGORITHMS",
+      "headers": [
+        "",
+        "CEDA-SS-C",
+        "CEDA-SS-S",
+        "AEDA-SS",
+        "AEDA-D",
+        "AEDA-G",
+        "AEDA",
+        "DEPSO",
+        "EDASLS"
+      ],
+      "rows": [
+        [
+          "$\\begin{gathered} t_{0}=103540 \\\\ T=30 \\end{gathered}$",
+          "$2.7783 \\mathrm{E}+02$",
+          "$2.6876 \\mathrm{E}+02$",
+          "$2.5994 \\mathrm{E}+02$",
+          "$2.7083 \\mathrm{E}+02$",
+          "$1.6163 \\mathrm{E}+01$",
+          "$1.8789 \\mathrm{E}+01$",
+          "$3.1657 \\mathrm{E}+02$",
+          "$2.7624 \\mathrm{E}+02$"
+        ],
+        [
+          "$\\begin{gathered} t_{0}=203040 \\\\ T=20 \\end{gathered}$",
+          "$1.9709 \\mathrm{E}+02$",
+          "$1.9775 \\mathrm{E}+02$",
+          "$1.7935 \\mathrm{E}+02$",
+          "$1.8695 \\mathrm{E}+02$",
+          "$1.0137 \\mathrm{E}+01$",
+          "$1.3755 \\mathrm{E}+01$",
+          "$2.3425 \\mathrm{E}+02$",
+          "$1.9335 \\mathrm{E}+02$"
+        ],
+        [
+          "$\\begin{gathered} t_{0}=303545 \\\\ T=10 \\end{gathered}$",
+          "$1.1970 \\mathrm{E}+02$",
+          "$1.1594 \\mathrm{E}+02$",
+          "$1.1280 \\mathrm{E}+02$",
+          "$1.1988 \\mathrm{E}+02$",
+          "$6.0970 \\mathrm{E}+00$",
+          "$9.6760 \\mathrm{E}+00$",
+          "$1.2739 \\mathrm{E}+02$",
+          "$1.1894 \\mathrm{E}+02$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 9
+    },
+    {
+      "table_number": "XIII",
+      "table_title": "STANDARD DEVIATION OF THE ALGORITHMS",
+      "headers": [
+        "",
+        "CEDA-SS-C",
+        "CEDA-SS-S",
+        "AEDA-SS",
+        "AEDA-D",
+        "AEDA-G",
+        "AEDA",
+        "DEPSO",
+        "EDASLS"
+      ],
+      "rows": [
+        [
+          "$t_{0}=103540$",
+          "$2.6234 \\mathrm{E}+06$",
+          "$2.7492 \\mathrm{E}+06$",
+          "$3.4108 \\mathrm{E}+06$",
+          "$3.3111 \\mathrm{E}+06$",
+          "$2.8314 \\mathrm{E}+06$",
+          "$1.9877 \\mathrm{E}+06$",
+          "$3.5617 \\mathrm{E}+06$",
+          "$2.4053 \\mathrm{E}+06$"
+        ],
+        [
+          "$\\begin{gathered} t_{0}=203040 \\\\ T=20 \\end{gathered}$",
+          "$7.5010 \\mathrm{E}+05$",
+          "$9.1261 \\mathrm{E}+05$",
+          "$4.0007 \\mathrm{E}+05$",
+          "$5.6446 \\mathrm{E}+05$",
+          "$4.2531 \\mathrm{E}+05$",
+          "$3.7870 \\mathrm{E}+05$",
+          "$7.5727 \\mathrm{E}+05$",
+          "$6.6244 \\mathrm{E}+05$"
+        ],
+        [
+          "$\\begin{gathered} t_{0}=303545 \\\\ T=10 \\end{gathered}$",
+          "$8.8853 \\mathrm{E}+03$",
+          "$1.2680 \\mathrm{E}+04$",
+          "$8.8351 \\mathrm{E}+03$",
+          "$9.3604 \\mathrm{E}+03$",
+          "$1.1268 \\mathrm{E}+03$",
+          "$1.0672 \\mathrm{E}+04$",
+          "$6.7715 \\mathrm{E}+03$",
+          "$1.7632 \\mathrm{E}+04$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 9
+    }
+  ]
+}

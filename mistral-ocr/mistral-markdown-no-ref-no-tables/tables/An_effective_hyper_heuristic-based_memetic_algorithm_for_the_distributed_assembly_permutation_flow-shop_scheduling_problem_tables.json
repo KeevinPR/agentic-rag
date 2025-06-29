@@ -1,0 +1,1031 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/An effective hyper heuristic-based memetic algorithm for the distributed assembly permutation flow-shop scheduling problem.md",
+    "filename": "An effective hyper heuristic-based memetic algorithm for the distributed assembly permutation flow-shop scheduling problem.md",
+    "title": "An effective hyper heuristic-based memetic algorithm for the distributed assembly permutation flow-shop scheduling problem",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Notations in the formulations.",
+      "headers": [
+        "Parameters",
+        "Description"
+      ],
+      "rows": [
+        [
+          "$n$",
+          "Number of jobs"
+        ],
+        [
+          "$m$",
+          "Number of machines"
+        ],
+        [
+          "$h$",
+          "Number of products"
+        ],
+        [
+          "$f$",
+          "Number of factories"
+        ],
+        [
+          "$P f_{i, j}$",
+          "Processing time of job $J_{i}$ on machine $M_{j}$."
+        ],
+        [
+          "$P A_{j}$",
+          "Assembly time of product $P_{i}$"
+        ],
+        [
+          "$N_{i}$",
+          "Set consisting of the indices of jobs that are used for the assembly of product $P_{i}, l=1,2, \\ldots, h$."
+        ],
+        [
+          "Variables",
+          "Description"
+        ],
+        [
+          "$\\pi=\\left\\{\\pi_{1}, \\pi_{2}, \\ldots, \\pi_{k}\\right\\}$",
+          "Product sequence, where $\\pi_{i} \\in\\{1,2, \\ldots, h\\}$ is the index of the $i$ th product"
+        ],
+        [
+          "$\\eta_{1}=\\left\\{\\eta_{2}(1), \\eta_{3}(2), \\ldots, \\eta_{k}\\left(D_{k}\\right)\\right\\}$",
+          "Job-in-factory sequence for factory $k=1,2, \\ldots, f$."
+        ],
+        [
+          "$D_{k}$",
+          "Total number of jobs in factory $k$"
+        ],
+        [
+          "$\\eta_{X}(i)$",
+          "Index of the $i$ th job in factory $k, i=1,2, \\ldots, D_{k}$"
+        ],
+        [
+          "$Q_{i}^{k}$",
+          "Completion time of job $J_{i}$ on machine $M_{j}$."
+        ],
+        [
+          "$C_{i, j}^{m}$",
+          "Maximum among the completion time of jobs belonging to product $P_{i}$, on the machine $M_{m}$."
+        ],
+        [
+          "$C_{k, i}^{m}$",
+          "Completion time of the assembly of product $P_{i}$,"
+        ],
+        [
+          "$C_{m, n}(\\Gamma)$",
+          "Makespan of a feasible schedule $\\Gamma$."
+        ],
+        [
+          "$\\Phi(\\pi)=\\left\\{P_{A}, P_{N, g}\\right\\}$",
+          "Critical products for a product sequence $\\pi$"
+        ],
+        [
+          "$P_{N, g}$",
+          "The first product in the last sub-product-sequence with no idle time between any two successive products"
+        ],
+        [
+          "$P_{A}$",
+          "The product set including the products assembled before $P_{N, g}$"
+        ],
+        [
+          "$\\theta(\\pi)$",
+          "Sub-job-sequence derived from the critical products of $\\pi$"
+        ],
+        [
+          "$\\pi_{M}$",
+          "Multi-Permutation Representation of a solution"
+        ],
+        [
+          "$\\pi_{F}$",
+          "Full Permutation Representation of a solution"
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Processing and assembly time for the example.",
+      "headers": [
+        "Product",
+        "Job",
+        "Processing time",
+        "",
+        "",
+        "Assembly time"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "$M_{1}$",
+          "$M_{2}$",
+          "$M_{3}$",
+          "$M_{4}$"
+        ],
+        [
+          "$P_{1}$",
+          "$\\begin{aligned} & J_{3} \\\\ & J_{6} \\\\ & J_{14} \\end{aligned}$",
+          "$\\begin{aligned} & 35 \\\\ & 55 \\\\ & 44 \\end{aligned}$",
+          "$\\begin{aligned} & 61 \\\\ & 51 \\\\ & 62 \\end{aligned}$",
+          "$\\begin{aligned} & 44 \\\\ & 89 \\\\ & 93 \\end{aligned}$",
+          53
+        ],
+        [
+          "$P_{2}$",
+          "$\\begin{aligned} & J_{5} \\\\ & J_{15} \\end{aligned}$",
+          "$\\begin{aligned} & 111 \\\\ & 149 \\end{aligned}$",
+          "$\\begin{aligned} & 157 \\\\ & 96 \\end{aligned}$",
+          "$\\begin{aligned} & 140 \\\\ & 162 \\end{aligned}$",
+          178
+        ],
+        [
+          "$P_{3}$",
+          "$\\begin{aligned} & J_{7} \\\\ & J_{9} \\\\ & J_{11} \\end{aligned}$",
+          "$\\begin{aligned} & 61 \\\\ & 66 \\\\ & 54 \\end{aligned}$",
+          "$\\begin{aligned} & 38 \\\\ & 120 \\\\ & 45 \\end{aligned}$",
+          "$\\begin{aligned} & 56 \\\\ & 17 \\\\ & 22 \\end{aligned}$",
+          136
+        ],
+        [
+          "$P_{4}$",
+          "$\\begin{aligned} & J_{1} \\\\ & J_{13} \\end{aligned}$",
+          "$\\begin{aligned} & 29 \\\\ & 61 \\end{aligned}$",
+          "$\\begin{aligned} & 30 \\\\ & 116 \\end{aligned}$",
+          "$\\begin{aligned} & 75 \\\\ & 98 \\end{aligned}$",
+          89
+        ],
+        [
+          "$P_{5}$",
+          "$\\begin{aligned} & J_{5} \\\\ & J_{4} \\\\ & J_{10} \\end{aligned}$",
+          "$\\begin{aligned} & 91 \\\\ & 85 \\\\ & 65 \\end{aligned}$",
+          "$\\begin{aligned} & 55 \\\\ & 100 \\\\ & 111 \\end{aligned}$",
+          "$\\begin{aligned} & 47 \\\\ & 28 \\\\ & 79 \\end{aligned}$",
+          90
+        ],
+        [
+          "$P_{6}$",
+          "$\\begin{aligned} & J_{8} \\\\ & J_{12} \\end{aligned}$",
+          "$\\begin{aligned} & 123 \\\\ & 71 \\end{aligned}$",
+          "$\\begin{aligned} & 56 \\\\ & 63 \\end{aligned}$",
+          "$\\begin{aligned} & 96 \\\\ & 97 \\end{aligned}$",
+          134
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Parameters values for each factor levels.",
+      "headers": [
+        "Parameters",
+        "",
+        "Factor levels",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "$\\eta$",
+          "",
+          10,
+          20,
+          30,
+          40
+        ],
+        [
+          "$\\alpha$",
+          "",
+          0.1,
+          0.2,
+          0.3,
+          0.4
+        ],
+        [
+          "$s$",
+          "",
+          5,
+          10,
+          15,
+          20
+        ],
+        [
+          "Temp",
+          "",
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Orthogonal array and ARPDs.",
+      "headers": [
+        "Number",
+        "Factor level",
+        "",
+        "",
+        "ARPD",
+        "Average CPU <br> times (s)"
+      ],
+      "rows": [
+        [
+          "",
+          "$\\eta$",
+          "$\\alpha$",
+          "$s$",
+          "Temp",
+          ""
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0.0019,
+          2.459
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          "$-0.0201$",
+          3.7851
+        ],
+        [
+          3,
+          1,
+          3,
+          3,
+          "$-0.0345$",
+          5.2417
+        ],
+        [
+          4,
+          1,
+          4,
+          4,
+          "$-0.0403$",
+          6.6891
+        ],
+        [
+          5,
+          2,
+          1,
+          2,
+          3,
+          "$-0.0412$"
+        ],
+        [
+          6,
+          2,
+          2,
+          1,
+          4,
+          "$-0.0240$"
+        ],
+        [
+          7,
+          2,
+          3,
+          4,
+          1,
+          "$-0.0297$"
+        ],
+        [
+          8,
+          2,
+          4,
+          3,
+          2,
+          "$-0.0355$"
+        ],
+        [
+          9,
+          3,
+          1,
+          3,
+          4,
+          "$-0.0441$"
+        ],
+        [
+          10,
+          3,
+          2,
+          4,
+          3,
+          "$-0.0460$"
+        ],
+        [
+          11,
+          3,
+          3,
+          1,
+          2,
+          "$-0.0412$"
+        ],
+        [
+          12,
+          3,
+          4,
+          2,
+          1,
+          "$-0.0317$"
+        ],
+        [
+          13,
+          4,
+          1,
+          4,
+          2,
+          "$-0.0460$"
+        ],
+        [
+          14,
+          4,
+          2,
+          3,
+          1,
+          "$-0.0412$"
+        ],
+        [
+          15,
+          4,
+          3,
+          2,
+          4,
+          "$-0.0480$"
+        ],
+        [
+          16,
+          4,
+          4,
+          1,
+          3,
+          "$-0.0403$"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "ARPD values and significance rank.",
+      "headers": [
+        "Factor level",
+        "$\\eta$",
+        "$\\alpha$",
+        "$s$",
+        "Temp"
+      ],
+      "rows": [
+        [
+          1,
+          -0.0233,
+          -0.0324,
+          -0.0259,
+          -0.0252
+        ],
+        [
+          2,
+          -0.0326,
+          -0.0329,
+          -0.0352,
+          -0.0357
+        ],
+        [
+          3,
+          -0.0408,
+          "$\\mathbf{- 0 . 0 3 8 4}$",
+          -0.0388,
+          "$\\mathbf{- 0 . 0 4 0 5}$"
+        ],
+        [
+          4,
+          "$\\mathbf{- 0 . 0 4 3 9}$",
+          -0.0369,
+          "$\\mathbf{- 0 . 0 4 0 5}$",
+          -0.0391
+        ],
+        [
+          "$F$ value",
+          "$\\mathbf{1 . 8 4 4 0}$",
+          0.1912,
+          0.9247,
+          1.04
+        ],
+        [
+          "Rank",
+          1,
+          4,
+          3,
+          2
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Average CPU times of instance 1_200_5_4_40_3.",
+      "headers": [
+        "Factor level",
+        "$\\eta$",
+        "$\\alpha$",
+        "$s$",
+        "Temp"
+      ],
+      "rows": [
+        [
+          1,
+          4.5437,
+          5.5831,
+          3.4072,
+          5.6981
+        ],
+        [
+          2,
+          5.2006,
+          5.5896,
+          4.7844,
+          5.5911
+        ],
+        [
+          3,
+          5.851,
+          5.5413,
+          6.3554,
+          5.5259
+        ],
+        [
+          4,
+          6.6967,
+          5.5781,
+          7.745,
+          5.477
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Results of ablation study for components of HHMA.",
+      "headers": [
+        "",
+        "ARPD",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          1,
+          2,
+          3,
+          4,
+          "HHMA"
+        ],
+        [
+          "",
+          4,
+          0.005,
+          "$-0.002$",
+          "$-0.015$",
+          "$-0.018$",
+          "$-0.020$"
+        ],
+        [
+          "Factories",
+          6,
+          0.003,
+          0.0,
+          "$-0.010$",
+          "$-0.012$",
+          "$-0.014$"
+        ],
+        [
+          "",
+          8,
+          0.004,
+          0.002,
+          "$-0.003$",
+          "$-0.005$",
+          "$-0.005$"
+        ],
+        [
+          "",
+          30,
+          0.004,
+          "$-0.001$",
+          "$-0.019$",
+          "$-0.021$",
+          "$-0.024$"
+        ],
+        [
+          "Products",
+          40,
+          0.004,
+          0.0,
+          "$-0.006$",
+          "$-0.010$",
+          "$-0.010$"
+        ],
+        [
+          "",
+          50,
+          0.004,
+          0.001,
+          "$-0.003$",
+          "$-0.004$",
+          "$-0.004$"
+        ],
+        [
+          "",
+          100,
+          0.007,
+          0.001,
+          "$-0.003$",
+          "$-0.004$",
+          "$-0.007$"
+        ],
+        [
+          "Jobs",
+          200,
+          0.004,
+          0.001,
+          "$-0.003$",
+          "$-0.005$",
+          "$-0.006$"
+        ],
+        [
+          "",
+          500,
+          0.001,
+          "$-0.002$",
+          "$-0.023$",
+          "$-0.025$",
+          "$-0.025$"
+        ],
+        [
+          "Average",
+          "",
+          0.004,
+          0.0,
+          "$-0.010$",
+          "$-0.012$",
+          "$-0.013$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 7
+    },
+    {
+      "table_number": "9",
+      "table_title": "Average CPU times of HHMA and compared algorithms (whole execution of algorithm).",
+      "headers": [
+        "",
+        "",
+        "EDAMA",
+        "BR-ILS",
+        "MCEDA",
+        "HHMA"
+      ],
+      "rows": [
+        [
+          "Factories",
+          4,
+          22.06,
+          60.17,
+          26.26,
+          13.8
+        ],
+        [
+          "",
+          6,
+          22.84,
+          60.2,
+          23.35,
+          18.74
+        ],
+        [
+          "",
+          8,
+          24.58,
+          60.25,
+          28.36,
+          25.09
+        ],
+        [
+          "Products",
+          30,
+          23.22,
+          60.19,
+          55.42,
+          22.7
+        ],
+        [
+          "",
+          40,
+          23.31,
+          60.21,
+          53.38,
+          18.67
+        ],
+        [
+          "",
+          50,
+          22.96,
+          60.22,
+          53.54,
+          16.27
+        ],
+        [
+          "Jobs",
+          100,
+          3.57,
+          60.04,
+          5.88,
+          7.68
+        ],
+        [
+          "",
+          200,
+          11.27,
+          60.1,
+          15.89,
+          12.69
+        ],
+        [
+          "",
+          500,
+          54.65,
+          60.48,
+          75.89,
+          37.26
+        ],
+        [
+          "Average",
+          "",
+          23.16,
+          60.21,
+          37.73,
+          19.21
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 6
+    },
+    {
+      "table_number": "10",
+      "table_title": "Average CPU times of HHMA and compared algorithms (each execution of algorithm).",
+      "headers": [
+        "",
+        "",
+        "HBBO",
+        "BS-HH",
+        "HHMA"
+      ],
+      "rows": [
+        [
+          "Factories",
+          4,
+          2.122,
+          0.522,
+          0.092
+        ],
+        [
+          "",
+          6,
+          2.217,
+          0.548,
+          0.125
+        ],
+        [
+          "",
+          8,
+          2.538,
+          0.568,
+          0.167
+        ],
+        [
+          "Products",
+          30,
+          2.288,
+          0.547,
+          0.151
+        ],
+        [
+          "",
+          40,
+          2.287,
+          0.549,
+          0.124
+        ],
+        [
+          "",
+          50,
+          2.302,
+          0.543,
+          0.108
+        ],
+        [
+          "Jobs",
+          100,
+          0.054,
+          0.044,
+          0.051
+        ],
+        [
+          "",
+          200,
+          0.295,
+          0.173,
+          0.085
+        ],
+        [
+          "",
+          500,
+          6.529,
+          1.421,
+          0.248
+        ],
+        [
+          "Average",
+          "",
+          2.293,
+          0.598,
+          0.128
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "11",
+      "table_title": "NNBS of HHMA and compared algorithms.",
+      "headers": [
+        "Algorithms",
+        "EDAMA",
+        "HBBO",
+        "BSHH",
+        "BR-ILS",
+        "MEEDA",
+        "HHMA"
+      ],
+      "rows": [
+        [
+          "NNBS",
+          94,
+          91,
+          92,
+          113,
+          123,
+          131
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 7
+    },
+    {
+      "table_number": "12",
+      "table_title": "New best updated solutions.",
+      "headers": [
+        "Instance",
+        "Best-known",
+        "HHMA",
+        "RPD",
+        "Instance",
+        "Best-known",
+        "HHMA",
+        "RPD"
+      ],
+      "rows": [
+        [
+          100204301,
+          5603,
+          5600,
+          "$-0.05$",
+          500106303,
+          28515,
+          28502,
+          "$-0.05$"
+        ],
+        [
+          200543010,
+          10754,
+          10752,
+          "$-0.02$",
+          500106307,
+          22637,
+          22628,
+          "$-0.04$"
+        ],
+        [
+          20054403,
+          10426,
+          10420,
+          "$-0.06$",
+          500106308,
+          20880,
+          20863,
+          "$-0.08$"
+        ],
+        [
+          20054504,
+          9390,
+          9389,
+          "$-0.01$",
+          500106309,
+          30479,
+          30465,
+          "$-0.05$"
+        ],
+        [
+          50054302,
+          25024,
+          25017,
+          "$-0.03$",
+          5001063010,
+          27992,
+          27984,
+          "$-0.03$"
+        ],
+        [
+          50054303,
+          24794,
+          24793,
+          "$-0.00$",
+          5001065010,
+          26909,
+          26902,
+          "$-0.03$"
+        ],
+        [
+          50054308,
+          23770,
+          23768,
+          "$-0.01$",
+          500108304,
+          27899,
+          27896,
+          "$-0.01$"
+        ],
+        [
+          50054309,
+          20571,
+          20569,
+          "$-0.01$",
+          5001084010,
+          24050,
+          24043,
+          "$-0.03$"
+        ],
+        [
+          50054403,
+          25913,
+          25911,
+          "$-0.01$",
+          500204307,
+          22293,
+          22290,
+          "$-0.01$"
+        ],
+        [
+          50054406,
+          29693,
+          29680,
+          "$-0.07$",
+          500204308,
+          27499,
+          27492,
+          "$-0.03$"
+        ],
+        [
+          50054502,
+          27780,
+          27776,
+          "$-0.01$",
+          500204402,
+          25377,
+          25376,
+          "$-0.00$"
+        ],
+        [
+          50054506,
+          24492,
+          24491,
+          "$-0.00$",
+          500204505,
+          23663,
+          23656,
+          "$-0.03$"
+        ],
+        [
+          50056304,
+          28179,
+          28176,
+          "$-0.01$",
+          500206301,
+          24475,
+          24474,
+          "$-0.00$"
+        ],
+        [
+          50056402,
+          22356,
+          22350,
+          "$-0.03$",
+          500206306,
+          26341,
+          26335,
+          "$-0.02$"
+        ],
+        [
+          50056405,
+          26763,
+          26762,
+          0.0,
+          5002063010,
+          28608,
+          28577,
+          "$-0.11$"
+        ],
+        [
+          50056408,
+          19702,
+          19691,
+          "$-0.06$",
+          500206402,
+          25589,
+          25578,
+          "$-0.04$"
+        ],
+        [
+          50058309,
+          24883,
+          24879,
+          "$-0.02$",
+          500206404,
+          28734,
+          28715,
+          "$-0.07$"
+        ],
+        [
+          500104302,
+          22016,
+          22008,
+          "$-0.04$",
+          500206501,
+          24555,
+          24547,
+          "$-0.03$"
+        ],
+        [
+          500104404,
+          22892,
+          22888,
+          "$-0.02$",
+          500208308,
+          22571,
+          22564,
+          "$-0.03$"
+        ],
+        [
+          500104408,
+          24642,
+          24638,
+          "$-0.02$",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 20,
+      "column_count": 8
+    }
+  ]
+}

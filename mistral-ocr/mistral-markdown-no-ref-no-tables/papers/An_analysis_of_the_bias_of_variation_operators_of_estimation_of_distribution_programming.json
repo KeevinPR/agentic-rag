@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/An analysis of the bias of variation operators of estimation of distribution programming.md",
+    "filename": "An analysis of the bias of variation operators of estimation of distribution programming.md",
+    "title": "An analysis of the bias of variation operators of estimation of distribution programming",
+    "year": "2018"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] Anil K. Bhattacharyya. 1946. On a Measure of Divergence between Two Multinomial Populations. The Indian Journal of Statistics 7, 4 (1946), 401-406.\n[2] Richard A. Caruana and J. David Schaffer. 1988. Representation and Hidden Bias: Gray vs. Binary Coding for Genetic Algorithms. In Proceedings of the Fifth International Conference on Machine Learning, John Laird (Ed.). Morgan Kaufmann, San Mateo, CA, 153-161.\n[3] Sung-Hyuk Cha. 2007. Comprehensive Survey on Distance/Similarity Measures between Probability Density Functions. International Journal of Mathematical Models and Methods in Applied Sciences 1, 4 (2007), 300-307.\n[4] Erik Heidberg, Kalyan Verramachaneni, James McDermott, Constantin Berzan, and Una-May O'Reilly. 2012. An Investigation of Local Patterns for Estimation of Distribution Genetic Programming. In Proceedings of the 14th Annual Conference on Genetic and Evolutionary Computation (GECCO '12). ACM, New York, NY, USA, 767-774.\n[5] Kangil Kim. 2012. Analysis of Stochastic Bias in Estimation of Distribution Genetic Programming. Ph.D. Dissertation, Seoul National University.\n[6] Kangil Kim and Robert I. (Bob) McKay. 2013. Stochastic Diversity Loss and Scalability in Estimation of Distribution Genetic Programming. IEEE Transactions on Evolutionary Computation 17, 3 (2013), 301-310.\n[7] Kangil Kim, Robert I. (Bob) McKay, and Dharani Punithan. 2010. Sampling Bias in Estimation of Distribution Algorithms for Genetic Programming Using Prototype Trees. In Pacific Rim International Conference on Artificial Intelligence (PRICAI 2010), Byoung-Tak Zhang and Mehmet A. Orgun (Eds.). Springer, Berlin, Heidelberg, 100-111.\n[8] Kangil Kim, Yin Shan, Xuan Hoai Nguyen, and Robert I. (Bob) McKay. 2014. Probabilistic Model Building in Genetic Programming: A Critical Review. Genetic Programming and Evolvable Machines 15, 2 (2014), 115-167.\n[9] John R. Kusa. 1992. Genetic Programming: On the Programming of Computers by Means of Natural Selection. MIT Press, Cambridge, MA.\n[10] Ludo Pagie and Paulien Hogeweg. 1997. Evolutionary Consequences of Coevolving Targets. Evolutionary Computation 5, 4 (1997), 401-418.\n[11] Riccardo Poli and Nicholas Freitag McPhee. 2008. A Linear Estimation-ofDistribution GP System. In Proceedings of the 11th European conference on Genetic Programming (EuroGP 2008), Michael O'Neill, Leonardo Vanneschi, Steven Gustafson, Anna Isabel Esparcia Alcázar, Ivanoe De Falco, Antonio Della Cioppa, and Ernesto Turantino (Eds.). Springer, Berlin, Heidelberg, 206-217.\n[12] Rafal Salustowicz and Jürgen Schmidhuber. 1997. Probabilistic Incremental Program Evolution. Evolutionary Computation 5, 2 (1997), 123-141.\n[13] Jonathan L Shapiro. 2006. Diversity Loss in General Estimation of Distribution Algorithms. In Parallel Problem Solving from Nature - PPSN IX, Thomas Philip Runarason, Hans-Georg Beyer, Edmund Burke, Juan J Merelo-Guerron, L Darrell Whitley, and Xin Yao (Eds.). Springer, Berlin, Heidelberg, 92-101.\n[14] Ann Thorbauer and Franz Rothlauf. 2015. On the Bias of Syntactic Geometric Recombination in Genetic Programming and Grammatical Evolution. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation (GECCO '15), Sara Silva (Ed.). ACM Press, New York, NY, 1103-1110.\n[15] Peter A. Whigham. 1996. Search Bias, Language Bias and Genetic Programming. In Genetic Programming 1996: Proceedings of the First Annual Conference on Genetic Programming, John R. Kusa, David E. Goldberg, David B. Fogel, and Rick L. Rielo (Eds.). MIT Press, Cambridge, MA, 230-237.\n[16] Kobruke Yanai and Hitoshi Iba. 2003. Estimation of Distribution Programming Based on Bayesian Network. In Proceedings of the 2003 Congress on Evolutionary Computation (CEC2003), Rubal Sarker, Robert Reynolds, Hussein Abbas, Kay Chen Tan, Robert I. (Bob) McKay, Daryl Essam, and Tom Gedeon (Eds.). IEEE Press, Canberra, 1618-1625.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Anil K. Bhattacharyya. 1946. On a Measure of Divergence between Two Multinomial Populations. The Indian Journal of Statistics 7, 4 (1946), 401-406."
+      },
+      {
+        "ref_id": "2",
+        "text": "Richard A. Caruana and J. David Schaffer. 1988. Representation and Hidden Bias: Gray vs. Binary Coding for Genetic Algorithms. In Proceedings of the Fifth International Conference on Machine Learning, John Laird (Ed.). Morgan Kaufmann, San Mateo, CA, 153-161."
+      },
+      {
+        "ref_id": "3",
+        "text": "Sung-Hyuk Cha. 2007. Comprehensive Survey on Distance/Similarity Measures between Probability Density Functions. International Journal of Mathematical Models and Methods in Applied Sciences 1, 4 (2007), 300-307."
+      },
+      {
+        "ref_id": "4",
+        "text": "Erik Heidberg, Kalyan Verramachaneni, James McDermott, Constantin Berzan, and Una-May O'Reilly. 2012. An Investigation of Local Patterns for Estimation of Distribution Genetic Programming. In Proceedings of the 14th Annual Conference on Genetic and Evolutionary Computation (GECCO '12). ACM, New York, NY, USA, 767-774."
+      },
+      {
+        "ref_id": "5",
+        "text": "Kangil Kim. 2012. Analysis of Stochastic Bias in Estimation of Distribution Genetic Programming. Ph.D. Dissertation, Seoul National University."
+      },
+      {
+        "ref_id": "6",
+        "text": "Kangil Kim and Robert I. (Bob) McKay. 2013. Stochastic Diversity Loss and Scalability in Estimation of Distribution Genetic Programming. IEEE Transactions on Evolutionary Computation 17, 3 (2013), 301-310."
+      },
+      {
+        "ref_id": "7",
+        "text": "Kangil Kim, Robert I. (Bob) McKay, and Dharani Punithan. 2010. Sampling Bias in Estimation of Distribution Algorithms for Genetic Programming Using Prototype Trees. In Pacific Rim International Conference on Artificial Intelligence (PRICAI 2010), Byoung-Tak Zhang and Mehmet A. Orgun (Eds.). Springer, Berlin, Heidelberg, 100-111."
+      },
+      {
+        "ref_id": "8",
+        "text": "Kangil Kim, Yin Shan, Xuan Hoai Nguyen, and Robert I. (Bob) McKay. 2014. Probabilistic Model Building in Genetic Programming: A Critical Review. Genetic Programming and Evolvable Machines 15, 2 (2014), 115-167."
+      },
+      {
+        "ref_id": "9",
+        "text": "John R. Kusa. 1992. Genetic Programming: On the Programming of Computers by Means of Natural Selection. MIT Press, Cambridge, MA."
+      },
+      {
+        "ref_id": "10",
+        "text": "Ludo Pagie and Paulien Hogeweg. 1997. Evolutionary Consequences of Coevolving Targets. Evolutionary Computation 5, 4 (1997), 401-418."
+      },
+      {
+        "ref_id": "11",
+        "text": "Riccardo Poli and Nicholas Freitag McPhee. 2008. A Linear Estimation-ofDistribution GP System. In Proceedings of the 11th European conference on Genetic Programming (EuroGP 2008), Michael O'Neill, Leonardo Vanneschi, Steven Gustafson, Anna Isabel Esparcia Alcázar, Ivanoe De Falco, Antonio Della Cioppa, and Ernesto Turantino (Eds.). Springer, Berlin, Heidelberg, 206-217."
+      },
+      {
+        "ref_id": "12",
+        "text": "Rafal Salustowicz and Jürgen Schmidhuber. 1997. Probabilistic Incremental Program Evolution. Evolutionary Computation 5, 2 (1997), 123-141."
+      },
+      {
+        "ref_id": "13",
+        "text": "Jonathan L Shapiro. 2006. Diversity Loss in General Estimation of Distribution Algorithms. In Parallel Problem Solving from Nature - PPSN IX, Thomas Philip Runarason, Hans-Georg Beyer, Edmund Burke, Juan J Merelo-Guerron, L Darrell Whitley, and Xin Yao (Eds.). Springer, Berlin, Heidelberg, 92-101."
+      },
+      {
+        "ref_id": "14",
+        "text": "Ann Thorbauer and Franz Rothlauf. 2015. On the Bias of Syntactic Geometric Recombination in Genetic Programming and Grammatical Evolution. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation (GECCO '15), Sara Silva (Ed.). ACM Press, New York, NY, 1103-1110."
+      },
+      {
+        "ref_id": "15",
+        "text": "Peter A. Whigham. 1996. Search Bias, Language Bias and Genetic Programming. In Genetic Programming 1996: Proceedings of the First Annual Conference on Genetic Programming, John R. Kusa, David E. Goldberg, David B. Fogel, and Rick L. Rielo (Eds.). MIT Press, Cambridge, MA, 230-237."
+      },
+      {
+        "ref_id": "16",
+        "text": "Kobruke Yanai and Hitoshi Iba. 2003. Estimation of Distribution Programming Based on Bayesian Network. In Proceedings of the 2003 Congress on Evolutionary Computation (CEC2003), Rubal Sarker, Robert Reynolds, Hussein Abbas, Kay Chen Tan, Robert I. (Bob) McKay, Daryl Essam, and Tom Gedeon (Eds.). IEEE Press, Canberra, 1618-1625."
+      }
+    ],
+    "reference_count": 16,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Estimated $P\\left(X_{3}=x_{3} \\mid C_{3}=\\left\\{X_{1}=x_{1}, X_{2}=x_{2}\\right\\}\\right)$ for EDP",
+      "headers": [
+        "$X_{1}$",
+        "$X_{2}$",
+        "$X_{3}$",
+        "Frequency",
+        "$P$",
+        "$P^{\\prime}$"
+      ],
+      "rows": [
+        [
+          "+",
+          "-",
+          "x",
+          1,
+          "$100 \\%$",
+          "$93.33 \\%$"
+        ],
+        [
+          "+",
+          "-",
+          "+",
+          0,
+          "$0 \\%$",
+          "$3.33 \\%$"
+        ],
+        [
+          "+",
+          "-",
+          "-",
+          0,
+          "$0 \\%$",
+          "$3.33 \\%$"
+        ],
+        [
+          "-",
+          "-",
+          "x",
+          1,
+          "$100 \\%$",
+          "$93.33 \\%$"
+        ],
+        [
+          "-",
+          "-",
+          "+",
+          0,
+          "$0 \\%$",
+          "$3.33 \\%$"
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          0,
+          "$0 \\%$",
+          "$3.33 \\%$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Frequencies of $n$-grams of ancestors for example trees 1 and 2",
+      "headers": [
+        "grandparent",
+        "parent",
+        "child",
+        "frequency"
+      ],
+      "rows": [
+        [
+          "null",
+          "null",
+          "+",
+          1
+        ],
+        [
+          "null",
+          "null",
+          "-",
+          1
+        ],
+        [
+          "null",
+          "null",
+          "x",
+          0
+        ],
+        [
+          "null",
+          "+",
+          "+",
+          0
+        ],
+        [
+          "null",
+          "+",
+          "-",
+          1
+        ],
+        [
+          "null",
+          "+",
+          "x",
+          1
+        ],
+        [
+          "null",
+          "-",
+          "+",
+          0
+        ],
+        [
+          "null",
+          "-",
+          "-",
+          1
+        ],
+        [
+          "null",
+          "-",
+          "x",
+          1
+        ],
+        [
+          "+",
+          "+",
+          "+",
+          0
+        ],
+        [
+          "+",
+          "+",
+          "-",
+          0
+        ],
+        [
+          "+",
+          "+",
+          "x",
+          0
+        ],
+        [
+          "+",
+          "-",
+          "+",
+          0
+        ],
+        [
+          "+",
+          "-",
+          "-",
+          0
+        ],
+        [
+          "+",
+          "-",
+          "x",
+          2
+        ],
+        [
+          "-",
+          "+",
+          "+",
+          0
+        ],
+        [
+          "-",
+          "+",
+          "-",
+          0
+        ],
+        [
+          "-",
+          "+",
+          "x",
+          0
+        ],
+        [
+          "-",
+          "-",
+          "+",
+          0
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          "-",
+          "-",
+          "x",
+          2
+        ]
+      ],
+      "row_count": 21,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "GP and EDP Parameters",
+      "headers": [
+        "population size",
+        "250"
+      ],
+      "rows": [
+        [
+          "initialization",
+          "ramped-half-and-half (range 2-6)"
+        ],
+        [
+          "selection",
+          "random"
+        ],
+        [
+          "replacement",
+          "generational"
+        ],
+        [
+          "generations",
+          100
+        ],
+        [
+          "max. tree depth",
+          8
+        ],
+        [
+          "terminal set",
+          "$T=\\{x, y, 1.0\\}$"
+        ],
+        [
+          "function set",
+          "$F=\\{+,-, *, /, \\sin , \\cos , \\exp , \\log \\}$"
+        ],
+        [
+          "variation operator",
+          "$G P$ : standard sub-tree crossover (internal"
+        ],
+        [
+          "",
+          "node bias: $90 \\%$ functions, $10 \\%$ terminals)"
+        ],
+        [
+          "",
+          "$E D P$ : model building and sampling with"
+        ],
+        [
+          "",
+          "$\\alpha \\in\\{0.00,0.01,0.10,0.50,1.00\\}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    }
+  ]
+}

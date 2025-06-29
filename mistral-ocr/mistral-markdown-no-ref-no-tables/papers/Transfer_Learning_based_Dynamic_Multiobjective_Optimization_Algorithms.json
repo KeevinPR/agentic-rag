@@ -1,0 +1,1132 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Transfer Learning based Dynamic Multiobjective Optimization Algorithms.md",
+    "filename": "Transfer Learning based Dynamic Multiobjective Optimization Algorithms.md",
+    "title": "Transfer Learning based Dynamic Multiobjective Optimization Algorithms",
+    "year": "2018"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] M. Farina, K. Deb, and P. Amato, \"Dynamic multiobjective optimization problems: test cases approximations, and applications,\" IEEE Transactions on Evolutionary Computation, vol. 8, no. 5, pp. 425-442, oct 2004.\n[2] C. Cruz, J. R. González, and D. A. Pelta, \"Optimization in dynamic environments: a survey on problems methods and measures,\" Soft Comput, vol. 15, no. 7, pp. 1427-1448, dec 2010.\n[3] J. Xu, P. B. Luh, F. B. White, E. Ni, and K. Kasiviswanathan, \"Power portfolio optimization in deregulated electricity markets with risk management,\" IEEE Transactions on Power Systems, vol. 21, no. 4, pp. 1653-1662, 2006.\n[4] T. T. Nguyen, S. Yang, and J. Branke, \"Evolutionary dynamic optimization: A survey of the state of the art,\" Swarm and Evolutionary Computation, vol. 6, pp. 1-24, oct 2012.\n[5] M. Daneshyari and G. G. Yen, \"Cultural-based particle swarm for dynamic optimisation problems,\" International Journal of Systems Science, vol. 45, no. 7, pp. 1284-1304, 2012.\n[6] A. Simões and E. Costa, \"Prediction in evolutionary algorithms for dynamic environments,\" Soft Comput, vol. 18, no. 8, pp. 1471-1497, oct 2013.\n[7] C. Rossi, M. Abderrahim, and J. C. Díaz, \"Tracking moving optima using Kalman-based predictions,\" Evolutionary Computation, vol. 16, no. 1, pp. 1-30, mar 2008.\n[8] P. Stroud, \"Kalman-extended genetic algorithm for search in nonstationary environments with noisy fitness evaluations,\" IEEE Transactions on Evolutionary Computation, vol. 5, no. 1, pp. 66-77, 2001.\n[9] S. J. Pan and Q. Yang, \"A survey on transfer learning,\" IEEE Transactions on, Knowledge and Data Engineering, vol. 22, no. 10, pp. 13451359, 2010.\n[10] S. J. Pan, I. W. Tsang, J. T. Kwok, and Q. Yang, \"Domain adaptation via transfer component analysis,\" IEEE Transactions on Neural Networks, vol. 22, no. 2, pp. 199-210, 2011.\n[11] D.-C. Dang, T. Jansen, and P. K. Lehre, \"Populations can be essential in dynamic optimisation,\" in Proceedings of the 2015 on Genetic and Evolutionary Computation Conference - GECCO, Association for Computing Machinery (ACM), 2015.\n[12] D. Dang, T. Jansen, and P. K. Lehre, \"Populations can be essential in tracking dynamic optima,\" Algorithmica, pp. 1-21, 2016.\n[13] C. Raquel and X. Yao, \"Dynamic multi-objective optimization: a survey of the state-of-the-art,\" in Studies in Computational Intelligence. Springer Science mathplus Business Media, 2013, pp. 85-106.\n[14] R. Azzouz, S. Bechikh, and L. B. Said, \"Dynamic multi-objective optimization using evolutionary algorithms: a survey,\" in Recent Advances in Evolutionary Multi-objective Optimization. Springer Nature, aug 2016, pp. 31-70.\n[15] C.-K. Goh and K. C. Tan, \"Dynamic evolutionary multi-objective optimization,\" in Evolutionary Multi-objective Optimization in Uncertain Environments. Springer Science mathplus Business Media, pp. 125152.\n[16] H. G. Cobb, \"An investigation into the use of hypermutation as an adaptive operator in genetic algorithms having continuous, time-dependent\n\nTable V: The Ratio of Change MIGD Value between Tr-RM-MEDA and RM-MEDA\n\n| ROC(\\%) | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| FDA4 | 21.47 | 22.74 | 22.42 | 22.91 | 25.75 | 27.71 | 22.32 | 23.08 |\n| FDA5 | 54.07 | 59.96 | 61.66 | 57.40 | 76.55 | 69.49 | 56.24 | 54.71 |\n| $\\mathrm{FDA5}_{i s o}$ | $-0.29$ | $-0.09$ | 0.08 | $-0.30$ | 1.81 | $-0.06$ | $-0.63$ | $-0.08$ |\n| $\\mathrm{FDA5}_{d e c}$ | 39.69 | 33.15 | 37.16 | 35.83 | 65.97 | 65.59 | 41.72 | 45.66 |\n| DIMP2 | 5.91 | $-8.53$ | $-2.03$ | $-3.49$ | $-1.08$ | 1.01 | $-2.33$ | $-4.57$ |\n| DMOP2 | $-827.79$ | $-52.71$ | 37.53 | 33.36 | $-3.34$ | $-1.67$ | 21.07 | $-13.04$ |\n| DMOP2 $_{i s o}$ | $-0.01$ | $-0.09$ | $-0.05$ | $-0.06$ | 0.01 | $-0.01$ | 0.07 | $-0.09$ |\n| DMOP2 $d e c$ | 53.72 | 64.32 | 51.05 | 60.02 | 1.39 | 3.85 | 57.93 | 49.28 |\n| DMOP3 | 24.65 | 22.08 | $-25.15$ | 0.49 | $-0.45$ | $-0.79$ | 10.75 | 27.48 |\n| HE2 | 86.81 | 87.01 | 86.74 | 88.01 | 89.99 | 89.59 | 88.42 | 87.91 |\n| HE7 | 13.31 | 21.82 | 21.40 | 20.29 | 19.23 | 14.87 | 21.32 | 22.57 |\n| HE9 | 7.48 | 7.61 | 6.95 | 6.91 | 8.35 | 7.53 | 6.74 | 5.43 |\n\nnonstationary environments,\" Tech. Rep. Technical Report AIC-90-001, 1990.\n[17] F. Vavak, T. C. Fogarty, and K. Jukes, \"A genetic algorithm with variable range of local search for tracking changing environments,\" in Parallel Problem Solving from Nature - PPSN IV. Springer Science mathplus Business Media, 1996, pp. 376-385.\n[18] Y. Woldesenbet and G. Yen, \"Dynamic evolutionary algorithm with variable relocation,\" IEEE Transactions on Evolutionary Computation, vol. 13, no. 3, pp. 500-513, jun 2009.\n[19] J. Grefenstette, \"Genetic algorithms for changing environments,\" in Parallel Problem Solving from Nature 2. Elsevier, 1992, pp. 137-144.\n[20] S. Yang and R. Tinós, \"A hybrid immigrants scheme for genetic algorithms in dynamic environments,\" International Journal of Automation and Computing, vol. 4, no. 3, pp. 243-254, jul 2007.\n[21] M. Mavrovouniotis and S. Yang, \"Genetic algorithms with adaptive immigrants for dynamic environments,\" in 2013 IEEE Congress on Evolutionary Computation. Institute of Electrical \\& Electronics Engineers (IEEE), jun 2013.\n[22] S. Yang, \"Genetic algorithms with memory- and elitism-based immigrants in dynamic environments,\" Evolutionary Computation, vol. 16, no. 3, pp. 385-416, Sep 2008.\n[23] K. Deb, U. B. R. N., and S. Karthik, \"Dynamic multi-objective optimization and decision-Making using modified NSGA-II: a case study on hydro-thermal power scheduling,\" in Lecture Notes in Computer Science. Springer Science mathplus Business Media, pp. 803-817.\n[24] J. Branke, \"Memory enhanced evolutionary algorithms for changing optimization problems,\" in Proceedings of the 1999 Congress on Evolutionary Computation. Institute of Electrical and Electronics Engineers (IEEE).\n[25] C.-K. Goh and K. C. Tan, \"A competitive-cooperative coevolutionary paradigm for dynamic multiobjective optimization,\" IEEE Transactions on Evolutionary Computation, vol. 13, no. 1, pp. 103-127, feb 2009.\n[26] Y. Wang and B. Li, \"Multi-strategy ensemble evolutionary algorithm for dynamic multi-objective optimization,\" Memetic Comp., vol. 2, no. 1, pp. $3-24$, sep 2009.\n[27] L. While, P. Hingston, L. Barone, and S. Huband, \"A faster algorithm for calculating hypervolume,\" IEEE transactions on evolutionary computation, vol. 10, no. 1, pp. 29-38, 2006.\n[28] R. Azzouz, S. Bechikh, and L. B. Said, \"A dynamic multi-objective evolutionary algorithm using a change severity-based adaptive population management strategy,\" Soft Comput, aug 2015.\n[29] J. Branke, T. Kaussler, C. Smidt, and H. Schmeck, \"A Multi-population\napproach to dynamic optimization problems,\" in Evolutionary Design and Manufacture. Springer Science mathplus Business Media, 2000, pp. 299-307.\n[30] C. Li and S. Yang, \"Fast Multi-Swarm Optimization for Dynamic Optimization Problems,\" in 2008 Fourth International Conference on Natural Computation. Institute of Electrical and Electronics Engineers (IEEE), 2008.\n[31] S. Yang and C. Li, \"A clustering particle swarm optimizer for locating and tracking multiple optima in dynamic environments,\" IEEE Transactions on Evolutionary Computation, vol. 14, no. 6, pp. 959-974, dec 2010.\n[32] P. A. N. Bosman, \"Learning and anticipation in online dynamic optimization,\" in Studies in Computational Intelligence. Springer Science mathplus Business Media, 2007, pp. 129-152.\n[33] A. Zhou, Y. Jin, and Q. Zhang, \"A population prediction strategy for evolutionary dynamic multiobjective optimization,\" IEEE Transactions on Cybernetics, vol. 44, no. 1, pp. 40-53, jan 2014.\n[34] M. Iqbal, B. Xue, H. Al-Sahaf, and M. Zhang, \"Cross-domain reuse of extracted knowledge in genetic programming for image classification,\" IEEE Transactions on Evolutionary Computation, to be published.\n[35] M. Iqbal, W. N. Browne, and M. Zhang, \"Reusing building blocks of extracted knowledge to solve complex, large-scale boolean problems,\" IEEE Transactions on Evolutionary Computation, vol. 18, no. 4, pp. $465-480,2014$.\n[36] L. Feng, Y.-S. Ong, M.-H. Lim, and I. W. Tsang, \"Memetic search with interdomain learning: A realization between cvtp and carp,\" IEEE Transactions on Evolutionary Computation, vol. 19, no. 5, pp. 644-658, 2015.\n[37] S. Ben-David, J. Blitzer, K. Crammer, A. Kulesza, F. Pereira, and I. W. Vaughan, \"A theory of learning from different domains,\" Machine learning, vol. 79, no. 1-2, pp. 151-175, 2010.\n[38] V. M. Patel, R. Gopalan, R. Li, and R. Chellappa, \"Visual domain adaptation: an overview of recent advances,\" IEEE signal processing magazine, vol. 32, pp. 53-69, 2015.\n[39] M. Jiang, W. Huang, Z. Huang, and G. G. Yen, \"Integration of global and local metrics for domain adaptation learning via dimensionality reduction,\" IEEE Transactions on Cybernetics, vol. 47, no. 1, pp. 38-51, 2017.\n[40] S. Ben-David, J. Blitzer, K. Crammer, F. Pereira et al., \"Analysis of representations for domain adaptation,\" Advances in neural information processing systems, vol. 19, p. 137, 2007.\n[41] A. Gretton, K. M. Borgwardt, M. Rasch, B. Schölkopf, and A. J. Smola,\n\nTable VI: DMIGD Values of Different Algorithms\n\n| DMIGD | NSGA-II | Tr-NSGA-II | MOPSO | Tr-MOPSO | RM-MEDA | Tr-RM-MEDA | MBN-EDA | RND | MOEA/D-KF |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| FDA4 | 0.2634 | 0.0858 | 0.0732 | 0.0609 | 0.0680 | 0.0520 | 0.43 | 0.1698 | 0.1913 |\n| FDA5 | 0.3301 | 0.2306 | 0.2131 | 0.1196 | 0.2089 | 0.0776 | 0.51 | 0.5323 | 0.4963 |\n| $\\mathrm{FDA}_{5 \\text { iso }}$ | 0.1048 | 0.1292 | 0.1106 | 0.1181 | 0.0650 | 0.0649 | 0.64 | 0.1433 | 0.1465 |\n| $\\mathrm{FDA}_{5 \\text { dec }}$ | 0.5923 | 0.4559 | 0.2746 | 0.2139 | 0.5779 | 0.3275 | 1.27 | 0.5403 | 0.5476 |\n| DIMP2 | 3.8986 | 2.3502 | 2.3684 | 0.2937 | 4.8892 | 4.9769 | 6.97 | 17.9537 | 22.9536 |\n| DMOP2 | 0.4202 | 0.3439 | 0.2129 | 0.2538 | 4.5942 | 4.7130 | 1.4 | 1.4329 | 3.0619 |\n| $\\mathrm{DMOP}_{2 \\text { iso }}$ | 0.0325 | 0.0358 | 0.0319 | 0.0318 | 0.0290 | 0.0290 | 2.56 | 0.0315 | 0.0316 |\n| $\\mathrm{DMOP}_{2 \\text { dec }}$ | 0.6303 | 0.3930 | 0.4192 | 0.0254 | 0.1449 | 0.0940 | 2.89 | 9.0504 | 9.2188 |\n| DMOP3 | 0.8851 | 1.0133 | 0.2851 | 0.2650 | 4.5897 | 4.6177 | 1.38 | 0.0697 | 0.0836 |\n| HE2 | 0.2096 | 0.1501 | 0.0847 | 0.0640 | 0.8451 | 0.1017 | 0.83 | 0.0744 | 0.0745 |\n| HE7 | 0.0946 | 0.0390 | 0.0582 | 0.0583 | 0.0428 | 0.0342 | 0.21 | 0.1787 | 0.2365 |\n| HE9 | 0.2954 | 0.2508 | 0.2459 | 0.2887 | 0.2565 | 0.2383 | 0.36 | 0.3432 | 0.4108 |\n\nTable VII: DMReact Value of the Algorithms\n\n| DMREACT | NSGA-II | Tr-NSGA-II | MOPSO | Tr-MOPSO | RM-MEDA | Tr-RM-MEDA |\n| :-- | :--: | :--: | :--: | :--: | :--: | :--: |\n| FDA4 | 1.9803 | $\\mathbf{1 . 7 6 6 4}$ | 1.4934 | $\\mathbf{1 . 2 8 9 5}$ | 1.5033 | 1.7072 |\n| FDA5 | 1.7204 | $\\mathbf{1 . 5 6 2 5}$ | 1.4375 | $\\mathbf{1 . 3 0 9 2}$ | 2.9638 | $\\mathbf{1 . 6 0 8 6}$ |\n| FDA5 $5_{\\text {iso }}$ | 1.7105 | $\\mathbf{1 . 4 5 3 9}$ | 1.6283 | 1.7039 | 1.0329 | $\\mathbf{1 . 0 0 6 6}$ |\n| FDA5 $5_{\\text {dec }}$ | 1.7928 | 1.8224 | 1.5132 | 1.9375 | 2.5000 | 2.5263 |\n| DIMP2 | 2.2697 | 2.2763 | 1.4013 | $\\mathbf{1 . 1 1 5 1}$ | 1.9243 | 2.0197 |\n| DMOP2 | 2.1645 | $\\mathbf{1 . 9 6 7 1}$ | 1.5592 | 1.8487 | 1.5789 | 1.7467 |\n| DMOP2 $2_{\\text {iso }}$ | 1.4375 | 1.4836 | 1.4704 | $\\mathbf{1 . 3 5 8 6}$ | 1.3355 | 1.4605 |\n| DMOP2 $2_{\\text {dec }}$ | 2.2961 | $\\mathbf{2 . 0 1 6 4}$ | 1.5461 | 2.1809 | 1.9309 | 2.1316 |\n| DMOP3 | 1.7039 | $\\mathbf{1 . 3 8 1 6}$ | 1.5329 | $\\mathbf{1 . 3 0 2 6}$ | 1.0987 | 1.1349 |\n| HE2 | 2.0428 | $\\mathbf{1 . 9 4 7 4}$ | 1.0987 | 1.2862 | 2.1086 | $\\mathbf{1 . 4 5 7 2}$ |\n| HE7 | 1.0000 | $\\mathbf{1 . 0 0 0 0}$ | 1.0000 | $\\mathbf{1 . 0 0 0 0}$ | 1.0000 | $\\mathbf{1 . 0 0 0 0}$ |\n| HE9 | 1.0000 | $\\mathbf{1 . 0 0 0 0}$ | 1.0000 | 1.3125 | 1.0000 | $\\mathbf{1 . 0 0 0 0}$ |\n\n\"A kernel method for the two-sample-problem,\" in Advances in neural information processing systems, 2006, pp. 513-520.\n[42] A. Smola, A. Gretton, L. Song, and B. Schölkopf, \"A hilbert space embedding for distributions,\" in Algorithmic Learning Theory. Springer, 2007, pp. 13-31.\n[43] I. Steinwart, \"On the influence of the kernel on the consistency of support vector machines,\" The Journal of Machine Learning Research, vol. 2, pp. 67-93, 2002.\n[44] J. Shave-Taylor and N. Cristianini, Kernel methods for pattern analysis. Cambridge university press, 2004.\n[45] B. Scholkopft and K.-R. Mullert, \"Fisher discriminant analysis with kernels,\" in Proceedings of the 1999 IEEE Signal Processing Society Workshop Neural Networks for Signal Processing IX, Madison, WI, USA, 1999, pp. 23-25.\n[46] M. Helbig and A. Engelbrecht, \"Benchmark functions for cec 2015 special session and competition on dynamic multi-objective optimization,\" Tech. Rep., 2015.\n[47] K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, \"A fast and elitist multiobjective genetic algorithm: Noga-it,\" IEEE transactions on evolutionary computation, vol. 6, no. 2, pp. 182-197, 2002.\n[48] C. C. Coello and M. S. Lechuga, \"Mopso: A proposal for multiple objective particle swarm optimization,\" in Evolutionary Computation, 2002. CEC'02. Proceedings of the 2002 Congress on, vol. 2. IEEE, 2002, pp. 1051-1056.\n[49] Q. Zhang, A. Zhou, and Y. Jin, \"Rm-meda: A regularity model-based multiobjective estimation of distribution algorithm,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 1, pp. 41-63, 2008.\n[50] M. R. Sierra and C. A. C. Coello, \"Improving pso-based multiobjective optimization using crowding, mutation and $\\epsilon$-dominance,\" in International Conference on Evolutionary Multi-Criterion Optimization. Springer, 2005, pp. 505-519.\n[51] A. Muruganantham, K. C. Tan, and P. Vadakkepat, \"Solving the IEEE CEC 2015 dynamic benchmark problems using Kalman filter based dynamic multiobjective evolutionary algorithm,\" in Proceedings\n\nin Adaptation Learning and Optimization. Springer Science mathplus Business Media, nov 2015, pp. 239-252.\n[52] A. Muruganantham, K. Tan, and P. Vadakkepat, \"Evolutionary Dynamic Multiobjective Optimization Via Kalman Filter Prediction,\" IEEE Transactions on Cybernetics, vol. 46, no. 12, pp. 2862-2873, Dec 2016.\n[53] M. C. Sola, \"Parallel processing for dynamic multi-objective optimization,\" Ph.D. dissertation, Ph. D. thesis, Universidad de Granada, Dept. of Computer Architecture and Computer Technology, Universidad de Granada, Spain, 2010.\n[54] A. J. Nebro, F. Luna, E. Alba, B. Dorronsoro, J. J. Durillo, and A. Beham, \"Abyss: Adapting scatter search to multiobjective optimization,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 4, pp. 439-457, 2008.\n[55] H. Karshenas, R. Santana, C. Bielza, and P. Larranaga, \"Multiobjective estimation of distribution algorithm based on joint modeling of objectives and variables,\" IEEE Transactions on Evolutionary Computation, vol. 18, no. 4, pp. 519-542, 2014.\n[56] Y. Sun, G. G. Yen, and Z. Yi, \"Reference line-based estimation of distribution algorithm for many-objective optimization,\" KnowledgeBased Systems, vol. 132, pp. 129-143, 2017.\n![img-6.jpeg](img-6.jpeg)\n\nMin JIANG (M'11-SM'12) received his bachelor and Ph.D. degrees in computer science from Wuhan University, China, in 2001 and 2007, respectively. Subsequently as a postdoc in the Department of Mathematics of Xiamen University. Currently he is an associate professor in the Department of Cognitive Science and Technology, Xiamen University. His main research interests are Machine Learning, Computational Intelligence and Neural-symbolic Integration. He has a special interest in dynamic multiobjective optimization, machine learning, the software development and in the basic theories of robotics. In 2016, he received the Outstanding Reviewer award from IEEE Transactions on Cybernetics. Dr. Jiang is currently serving as an associate editor for the IEEE Transactions on Cognitive and Developmental Systems and he is the Chair of IEEE CIS Xiamen Chapter.\n![img-5.jpeg](img-5.jpeg)\n\nZhongqiang HUANG received the bachelor and master degree in Cognitive Science and Technology from Xiamen University in 2013 and 2016 respectively. He is currently working as an algorithm engineer at Sangfor cooperation, Shenzhen, China. His research interest includes computational intelligence and machine learning.\n![img-6.jpeg](img-6.jpeg)\n\nWenzhen HUANG received the bachelor degree in Cognitive Science and Technology from Xiamen University, Xiamen, China, in 2014. He is currently a master student with the Institute of Automation of the Chinese Academy of Sciences, Beijing, China. His research interest includes computational intelligence and machine learning.\n![img-5.jpeg](img-5.jpeg)\n\nGary G. YEN (S'87-M'88-SM'97-F'09) received a Ph.D. degree in electrical and computer engineering from the University of Notre Dame in 1992. Currently he is a Regents Professor in the School of Electrical and Computer Engineering, Oklahoma State University (OSU). Before joined OSU in 1997, he was with the Structure Control Division, U.S. Air Force Research Laboratory in Albaquerque. His research interest includes intelligent control, computational intelligence, conditional health monitoring, signal processing and their industrial/defense applications.\nDr. Yen was an associate editor of the IEEE Control Systems Magazine, IEEE Transactions on Control Systems Technology, Automatica, Mechantronics, IEEE Transactions on Systems, Man and Cybernetics, Parts A and B and IEEE Transactions on Neural Networks. He is currently serving as an associate editor for the IEEE Transactions on Evolutionary Computation and the IEEE Transactions on Cybernetics. He served as the General Chair for the 2003 IEEE International Symposium on Intelligent Control held in Houston, TX and 2006 IEEE World Congress on Computational Intelligence held in Vancouver, Canada. Dr. Yen served as Vice President for the Technical Activities in 20052006 and then President in 2010-2011 of the IEEE Computational intelligence Society. He was the founding editor-in-chief of the IEEE Computational Intelligence Magazine, 2006-2009. In 2011, he received Andrew P Sage Best Transactions Paper award from IEEE Systems, Man and Cybernetics Society and in 2014, he received Meritorious Service award from IEEE Computational Intelligence Society.\n![img-6.jpeg](img-6.jpeg)\n\nLiming QIU received his bachelor degree from Fujian Agriculture and Forestry University, Fuzhou, China in 2015, and currently he is a master student of the department of cognitive science and technogoly of Xiamen University and a member of the Fujian Key Lab of the Brain-like Intelligent systems. His research interests include multiobjective optimization and evolutionary computation.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "M. Farina, K. Deb, and P. Amato, \"Dynamic multiobjective optimization problems: test cases approximations, and applications,\" IEEE Transactions on Evolutionary Computation, vol. 8, no. 5, pp. 425-442, oct 2004."
+      },
+      {
+        "ref_id": "2",
+        "text": "C. Cruz, J. R. González, and D. A. Pelta, \"Optimization in dynamic environments: a survey on problems methods and measures,\" Soft Comput, vol. 15, no. 7, pp. 1427-1448, dec 2010."
+      },
+      {
+        "ref_id": "3",
+        "text": "J. Xu, P. B. Luh, F. B. White, E. Ni, and K. Kasiviswanathan, \"Power portfolio optimization in deregulated electricity markets with risk management,\" IEEE Transactions on Power Systems, vol. 21, no. 4, pp. 1653-1662, 2006."
+      },
+      {
+        "ref_id": "4",
+        "text": "T. T. Nguyen, S. Yang, and J. Branke, \"Evolutionary dynamic optimization: A survey of the state of the art,\" Swarm and Evolutionary Computation, vol. 6, pp. 1-24, oct 2012."
+      },
+      {
+        "ref_id": "5",
+        "text": "M. Daneshyari and G. G. Yen, \"Cultural-based particle swarm for dynamic optimisation problems,\" International Journal of Systems Science, vol. 45, no. 7, pp. 1284-1304, 2012."
+      },
+      {
+        "ref_id": "6",
+        "text": "A. Simões and E. Costa, \"Prediction in evolutionary algorithms for dynamic environments,\" Soft Comput, vol. 18, no. 8, pp. 1471-1497, oct 2013."
+      },
+      {
+        "ref_id": "7",
+        "text": "C. Rossi, M. Abderrahim, and J. C. Díaz, \"Tracking moving optima using Kalman-based predictions,\" Evolutionary Computation, vol. 16, no. 1, pp. 1-30, mar 2008."
+      },
+      {
+        "ref_id": "8",
+        "text": "P. Stroud, \"Kalman-extended genetic algorithm for search in nonstationary environments with noisy fitness evaluations,\" IEEE Transactions on Evolutionary Computation, vol. 5, no. 1, pp. 66-77, 2001."
+      },
+      {
+        "ref_id": "9",
+        "text": "S. J. Pan and Q. Yang, \"A survey on transfer learning,\" IEEE Transactions on, Knowledge and Data Engineering, vol. 22, no. 10, pp. 13451359, 2010."
+      },
+      {
+        "ref_id": "10",
+        "text": "S. J. Pan, I. W. Tsang, J. T. Kwok, and Q. Yang, \"Domain adaptation via transfer component analysis,\" IEEE Transactions on Neural Networks, vol. 22, no. 2, pp. 199-210, 2011."
+      },
+      {
+        "ref_id": "11",
+        "text": "D.-C. Dang, T. Jansen, and P. K. Lehre, \"Populations can be essential in dynamic optimisation,\" in Proceedings of the 2015 on Genetic and Evolutionary Computation Conference - GECCO, Association for Computing Machinery (ACM), 2015."
+      },
+      {
+        "ref_id": "12",
+        "text": "D. Dang, T. Jansen, and P. K. Lehre, \"Populations can be essential in tracking dynamic optima,\" Algorithmica, pp. 1-21, 2016."
+      },
+      {
+        "ref_id": "13",
+        "text": "C. Raquel and X. Yao, \"Dynamic multi-objective optimization: a survey of the state-of-the-art,\" in Studies in Computational Intelligence. Springer Science mathplus Business Media, 2013, pp. 85-106."
+      },
+      {
+        "ref_id": "14",
+        "text": "R. Azzouz, S. Bechikh, and L. B. Said, \"Dynamic multi-objective optimization using evolutionary algorithms: a survey,\" in Recent Advances in Evolutionary Multi-objective Optimization. Springer Nature, aug 2016, pp. 31-70."
+      },
+      {
+        "ref_id": "15",
+        "text": "C.-K. Goh and K. C. Tan, \"Dynamic evolutionary multi-objective optimization,\" in Evolutionary Multi-objective Optimization in Uncertain Environments. Springer Science mathplus Business Media, pp. 125152."
+      },
+      {
+        "ref_id": "16",
+        "text": "H. G. Cobb, \"An investigation into the use of hypermutation as an adaptive operator in genetic algorithms having continuous, time-dependent"
+      },
+      {
+        "ref_id": "17",
+        "text": "F. Vavak, T. C. Fogarty, and K. Jukes, \"A genetic algorithm with variable range of local search for tracking changing environments,\" in Parallel Problem Solving from Nature - PPSN IV. Springer Science mathplus Business Media, 1996, pp. 376-385."
+      },
+      {
+        "ref_id": "18",
+        "text": "Y. Woldesenbet and G. Yen, \"Dynamic evolutionary algorithm with variable relocation,\" IEEE Transactions on Evolutionary Computation, vol. 13, no. 3, pp. 500-513, jun 2009."
+      },
+      {
+        "ref_id": "19",
+        "text": "J. Grefenstette, \"Genetic algorithms for changing environments,\" in Parallel Problem Solving from Nature 2. Elsevier, 1992, pp. 137-144."
+      },
+      {
+        "ref_id": "20",
+        "text": "S. Yang and R. Tinós, \"A hybrid immigrants scheme for genetic algorithms in dynamic environments,\" International Journal of Automation and Computing, vol. 4, no. 3, pp. 243-254, jul 2007."
+      },
+      {
+        "ref_id": "21",
+        "text": "M. Mavrovouniotis and S. Yang, \"Genetic algorithms with adaptive immigrants for dynamic environments,\" in 2013 IEEE Congress on Evolutionary Computation. Institute of Electrical \\& Electronics Engineers (IEEE), jun 2013."
+      },
+      {
+        "ref_id": "22",
+        "text": "S. Yang, \"Genetic algorithms with memory- and elitism-based immigrants in dynamic environments,\" Evolutionary Computation, vol. 16, no. 3, pp. 385-416, Sep 2008."
+      },
+      {
+        "ref_id": "23",
+        "text": "K. Deb, U. B. R. N., and S. Karthik, \"Dynamic multi-objective optimization and decision-Making using modified NSGA-II: a case study on hydro-thermal power scheduling,\" in Lecture Notes in Computer Science. Springer Science mathplus Business Media, pp. 803-817."
+      },
+      {
+        "ref_id": "24",
+        "text": "J. Branke, \"Memory enhanced evolutionary algorithms for changing optimization problems,\" in Proceedings of the 1999 Congress on Evolutionary Computation. Institute of Electrical and Electronics Engineers (IEEE)."
+      },
+      {
+        "ref_id": "25",
+        "text": "C.-K. Goh and K. C. Tan, \"A competitive-cooperative coevolutionary paradigm for dynamic multiobjective optimization,\" IEEE Transactions on Evolutionary Computation, vol. 13, no. 1, pp. 103-127, feb 2009."
+      },
+      {
+        "ref_id": "26",
+        "text": "Y. Wang and B. Li, \"Multi-strategy ensemble evolutionary algorithm for dynamic multi-objective optimization,\" Memetic Comp., vol. 2, no. 1, pp. $3-24$, sep 2009."
+      },
+      {
+        "ref_id": "27",
+        "text": "L. While, P. Hingston, L. Barone, and S. Huband, \"A faster algorithm for calculating hypervolume,\" IEEE transactions on evolutionary computation, vol. 10, no. 1, pp. 29-38, 2006."
+      },
+      {
+        "ref_id": "28",
+        "text": "R. Azzouz, S. Bechikh, and L. B. Said, \"A dynamic multi-objective evolutionary algorithm using a change severity-based adaptive population management strategy,\" Soft Comput, aug 2015."
+      },
+      {
+        "ref_id": "29",
+        "text": "J. Branke, T. Kaussler, C. Smidt, and H. Schmeck, \"A Multi-population"
+      },
+      {
+        "ref_id": "30",
+        "text": "C. Li and S. Yang, \"Fast Multi-Swarm Optimization for Dynamic Optimization Problems,\" in 2008 Fourth International Conference on Natural Computation. Institute of Electrical and Electronics Engineers (IEEE), 2008."
+      },
+      {
+        "ref_id": "31",
+        "text": "S. Yang and C. Li, \"A clustering particle swarm optimizer for locating and tracking multiple optima in dynamic environments,\" IEEE Transactions on Evolutionary Computation, vol. 14, no. 6, pp. 959-974, dec 2010."
+      },
+      {
+        "ref_id": "32",
+        "text": "P. A. N. Bosman, \"Learning and anticipation in online dynamic optimization,\" in Studies in Computational Intelligence. Springer Science mathplus Business Media, 2007, pp. 129-152."
+      },
+      {
+        "ref_id": "33",
+        "text": "A. Zhou, Y. Jin, and Q. Zhang, \"A population prediction strategy for evolutionary dynamic multiobjective optimization,\" IEEE Transactions on Cybernetics, vol. 44, no. 1, pp. 40-53, jan 2014."
+      },
+      {
+        "ref_id": "34",
+        "text": "M. Iqbal, B. Xue, H. Al-Sahaf, and M. Zhang, \"Cross-domain reuse of extracted knowledge in genetic programming for image classification,\" IEEE Transactions on Evolutionary Computation, to be published."
+      },
+      {
+        "ref_id": "35",
+        "text": "M. Iqbal, W. N. Browne, and M. Zhang, \"Reusing building blocks of extracted knowledge to solve complex, large-scale boolean problems,\" IEEE Transactions on Evolutionary Computation, vol. 18, no. 4, pp. $465-480,2014$."
+      },
+      {
+        "ref_id": "36",
+        "text": "L. Feng, Y.-S. Ong, M.-H. Lim, and I. W. Tsang, \"Memetic search with interdomain learning: A realization between cvtp and carp,\" IEEE Transactions on Evolutionary Computation, vol. 19, no. 5, pp. 644-658, 2015."
+      },
+      {
+        "ref_id": "37",
+        "text": "S. Ben-David, J. Blitzer, K. Crammer, A. Kulesza, F. Pereira, and I. W. Vaughan, \"A theory of learning from different domains,\" Machine learning, vol. 79, no. 1-2, pp. 151-175, 2010."
+      },
+      {
+        "ref_id": "38",
+        "text": "V. M. Patel, R. Gopalan, R. Li, and R. Chellappa, \"Visual domain adaptation: an overview of recent advances,\" IEEE signal processing magazine, vol. 32, pp. 53-69, 2015."
+      },
+      {
+        "ref_id": "39",
+        "text": "M. Jiang, W. Huang, Z. Huang, and G. G. Yen, \"Integration of global and local metrics for domain adaptation learning via dimensionality reduction,\" IEEE Transactions on Cybernetics, vol. 47, no. 1, pp. 38-51, 2017."
+      },
+      {
+        "ref_id": "40",
+        "text": "S. Ben-David, J. Blitzer, K. Crammer, F. Pereira et al., \"Analysis of representations for domain adaptation,\" Advances in neural information processing systems, vol. 19, p. 137, 2007."
+      },
+      {
+        "ref_id": "41",
+        "text": "A. Gretton, K. M. Borgwardt, M. Rasch, B. Schölkopf, and A. J. Smola,"
+      },
+      {
+        "ref_id": "42",
+        "text": "A. Smola, A. Gretton, L. Song, and B. Schölkopf, \"A hilbert space embedding for distributions,\" in Algorithmic Learning Theory. Springer, 2007, pp. 13-31."
+      },
+      {
+        "ref_id": "43",
+        "text": "I. Steinwart, \"On the influence of the kernel on the consistency of support vector machines,\" The Journal of Machine Learning Research, vol. 2, pp. 67-93, 2002."
+      },
+      {
+        "ref_id": "44",
+        "text": "J. Shave-Taylor and N. Cristianini, Kernel methods for pattern analysis. Cambridge university press, 2004."
+      },
+      {
+        "ref_id": "45",
+        "text": "B. Scholkopft and K.-R. Mullert, \"Fisher discriminant analysis with kernels,\" in Proceedings of the 1999 IEEE Signal Processing Society Workshop Neural Networks for Signal Processing IX, Madison, WI, USA, 1999, pp. 23-25."
+      },
+      {
+        "ref_id": "46",
+        "text": "M. Helbig and A. Engelbrecht, \"Benchmark functions for cec 2015 special session and competition on dynamic multi-objective optimization,\" Tech. Rep., 2015."
+      },
+      {
+        "ref_id": "47",
+        "text": "K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, \"A fast and elitist multiobjective genetic algorithm: Noga-it,\" IEEE transactions on evolutionary computation, vol. 6, no. 2, pp. 182-197, 2002."
+      },
+      {
+        "ref_id": "48",
+        "text": "C. C. Coello and M. S. Lechuga, \"Mopso: A proposal for multiple objective particle swarm optimization,\" in Evolutionary Computation, 2002. CEC'02. Proceedings of the 2002 Congress on, vol. 2. IEEE, 2002, pp. 1051-1056."
+      },
+      {
+        "ref_id": "49",
+        "text": "Q. Zhang, A. Zhou, and Y. Jin, \"Rm-meda: A regularity model-based multiobjective estimation of distribution algorithm,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 1, pp. 41-63, 2008."
+      },
+      {
+        "ref_id": "50",
+        "text": "M. R. Sierra and C. A. C. Coello, \"Improving pso-based multiobjective optimization using crowding, mutation and $\\epsilon$-dominance,\" in International Conference on Evolutionary Multi-Criterion Optimization. Springer, 2005, pp. 505-519."
+      },
+      {
+        "ref_id": "51",
+        "text": "A. Muruganantham, K. C. Tan, and P. Vadakkepat, \"Solving the IEEE CEC 2015 dynamic benchmark problems using Kalman filter based dynamic multiobjective evolutionary algorithm,\" in Proceedings"
+      },
+      {
+        "ref_id": "52",
+        "text": "A. Muruganantham, K. Tan, and P. Vadakkepat, \"Evolutionary Dynamic Multiobjective Optimization Via Kalman Filter Prediction,\" IEEE Transactions on Cybernetics, vol. 46, no. 12, pp. 2862-2873, Dec 2016."
+      },
+      {
+        "ref_id": "53",
+        "text": "M. C. Sola, \"Parallel processing for dynamic multi-objective optimization,\" Ph.D. dissertation, Ph. D. thesis, Universidad de Granada, Dept. of Computer Architecture and Computer Technology, Universidad de Granada, Spain, 2010."
+      },
+      {
+        "ref_id": "54",
+        "text": "A. J. Nebro, F. Luna, E. Alba, B. Dorronsoro, J. J. Durillo, and A. Beham, \"Abyss: Adapting scatter search to multiobjective optimization,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 4, pp. 439-457, 2008."
+      },
+      {
+        "ref_id": "55",
+        "text": "H. Karshenas, R. Santana, C. Bielza, and P. Larranaga, \"Multiobjective estimation of distribution algorithm based on joint modeling of objectives and variables,\" IEEE Transactions on Evolutionary Computation, vol. 18, no. 4, pp. 519-542, 2014."
+      },
+      {
+        "ref_id": "56",
+        "text": "Y. Sun, G. G. Yen, and Z. Yi, \"Reference line-based estimation of distribution algorithm for many-objective optimization,\" KnowledgeBased Systems, vol. 132, pp. 129-143, 2017."
+      }
+    ],
+    "reference_count": 56,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "The Benchmark Functions",
+      "headers": [
+        "Name",
+        "Dim.",
+        "\\# of Obj.",
+        "Type"
+      ],
+      "rows": [
+        [
+          4,
+          12,
+          3,
+          "TYPE I"
+        ],
+        [
+          5,
+          12,
+          3,
+          "TYPE II"
+        ],
+        [
+          5,
+          12,
+          3,
+          "TYPE II"
+        ],
+        [
+          5,
+          12,
+          3,
+          "TYPE II"
+        ],
+        [
+          2,
+          10,
+          2,
+          "TYPE I"
+        ],
+        [
+          2,
+          10,
+          2,
+          "TYPE II"
+        ],
+        [
+          2,
+          10,
+          2,
+          "TYPE II"
+        ],
+        [
+          2,
+          10,
+          2,
+          "TYPE II"
+        ],
+        [
+          5,
+          10,
+          2,
+          "TYPE I"
+        ],
+        [
+          2,
+          30,
+          2,
+          "TYPE III"
+        ],
+        [
+          7,
+          10,
+          2,
+          "TYPE III"
+        ],
+        [
+          9,
+          10,
+          2,
+          "TYPE III"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "Configurations of the Benchmark Functions Parameters",
+      "headers": [
+        "",
+        "$n_{t}$",
+        "$T_{t}$",
+        "$T_{T}$"
+      ],
+      "rows": [
+        [
+          1,
+          10,
+          5,
+          100
+        ],
+        [
+          2,
+          10,
+          10,
+          200
+        ],
+        [
+          3,
+          10,
+          25,
+          500
+        ],
+        [
+          4,
+          10,
+          50,
+          1000
+        ],
+        [
+          5,
+          1,
+          10,
+          200
+        ],
+        [
+          6,
+          1,
+          50,
+          1000
+        ],
+        [
+          7,
+          20,
+          10,
+          200
+        ],
+        [
+          8,
+          20,
+          50,
+          1000
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "The Ratio of Change of MIGD Value between Tr-NSGA-II and NSGA-II",
+      "headers": [
+        "ROC(\\%)",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "rows": [
+        [
+          4,
+          "$\\mathbf{6 1 . 3 2}$",
+          "$\\mathbf{6 2 . 1 5}$",
+          "$\\mathbf{5 9 . 4 2}$",
+          "$\\mathbf{5 9 . 6 0}$",
+          "$\\mathbf{7 8 . 5 7}$",
+          "$\\mathbf{7 9 . 7 5}$",
+          "$\\mathbf{5 6 . 1 7}$",
+          "$\\mathbf{6 1 . 0 2}$"
+        ],
+        [
+          5,
+          "$\\mathbf{4 1 . 1 3}$",
+          "$\\mathbf{3 7 . 8 0}$",
+          -14.36,
+          "$\\mathbf{1 4 . 4 5}$",
+          "$\\mathbf{3 7 . 1 2}$",
+          "$\\mathbf{3 9 . 0 4}$",
+          "$\\mathbf{2 0 . 3 9}$",
+          "$\\mathbf{3 3 . 0 9}$"
+        ],
+        [
+          5,
+          -48.91,
+          -17.37,
+          -31.83,
+          -31.98,
+          -20.14,
+          -28.66,
+          -2.44,
+          -6.15
+        ],
+        [
+          5,
+          "$\\mathbf{1 9 . 8 3}$",
+          "$\\mathbf{1 7 . 0 9}$",
+          "$\\mathbf{2 6 . 0 6}$",
+          "$\\mathbf{4 0 . 2 3}$",
+          "$\\mathbf{2 2 . 5 2}$",
+          "$\\mathbf{3 . 0 7}$",
+          "$\\mathbf{5 1 . 8 8}$",
+          "$\\mathbf{4 1 . 3 4}$"
+        ],
+        [
+          2,
+          "$\\mathbf{3 0 . 7 0}$",
+          "$\\mathbf{4 2 . 4 1}$",
+          "$\\mathbf{3 9 . 5 7}$",
+          "$\\mathbf{3 4 . 6 1}$",
+          "$\\mathbf{4 7 . 3 0}$",
+          "$\\mathbf{3 8 . 6 9}$",
+          "$\\mathbf{3 7 . 5 7}$",
+          "$\\mathbf{4 4 . 5 4}$"
+        ],
+        [
+          2,
+          "$\\mathbf{7 4 . 9 7}$",
+          "$\\mathbf{6 6 . 5 2}$",
+          "$\\mathbf{7 8 . 4 3}$",
+          "$\\mathbf{6 7 . 0 1}$",
+          -676.29,
+          "$\\mathbf{8 8 . 9 6}$",
+          "$\\mathbf{6 1 . 2 2}$",
+          "$\\mathbf{7 2 . 6 5}$"
+        ],
+        [
+          2,
+          -4.84,
+          -4.46,
+          -6.81,
+          -3.18,
+          -7.54,
+          -13.79,
+          -2.98,
+          -2.48
+        ],
+        [
+          2,
+          "$\\mathbf{4 4 . 9 1}$",
+          "$\\mathbf{5 1 . 2 5}$",
+          "$\\mathbf{4 4 . 3 9}$",
+          "$\\mathbf{4 0 . 1 3}$",
+          "$\\mathbf{2 3 . 2 6}$",
+          "$\\mathbf{4 2 . 4 5}$",
+          "$\\mathbf{4 5 . 6 6}$",
+          "$\\mathbf{2 5 . 5 8}$"
+        ],
+        [
+          3,
+          "$\\mathbf{7 2 . 7 0}$",
+          "$\\mathbf{7 3 . 6 1}$",
+          "$\\mathbf{8 3 . 5 0}$",
+          "$\\mathbf{5 7 . 6 5}$",
+          -514.5,
+          "$\\mathbf{4 . 3 2}$",
+          "$\\mathbf{7 4 . 1 8}$",
+          "$\\mathbf{7 6 . 2 9}$"
+        ],
+        [
+          2,
+          "$\\mathbf{2 . 7 3}$",
+          -17.45,
+          "$\\mathbf{1 . 6 7}$",
+          "$\\mathbf{5 . 8 6}$",
+          "$\\mathbf{6 7 . 4 5}$",
+          "$\\mathbf{7 7 . 0 1}$",
+          "$\\mathbf{2 8 . 0 7}$",
+          -19.57
+        ],
+        [
+          7,
+          "$\\mathbf{5 7 . 1 0}$",
+          "$\\mathbf{5 8 . 5 7}$",
+          "$\\mathbf{5 9 . 4 5}$",
+          "$\\mathbf{6 1 . 5 7}$",
+          "$\\mathbf{5 3 . 4 7}$",
+          "$\\mathbf{5 8 . 3 4}$",
+          "$\\mathbf{5 7 . 7 7}$",
+          "$\\mathbf{6 1 . 9 8}$"
+        ],
+        [
+          9,
+          "$\\mathbf{1 4 . 7 9}$",
+          "$\\mathbf{1 3 . 0 2}$",
+          "$\\mathbf{1 6 . 6 4}$",
+          "$\\mathbf{1 2 . 9 9}$",
+          "$\\mathbf{1 4 . 9 8}$",
+          "$\\mathbf{1 4 . 6 1}$",
+          "$\\mathbf{1 6 . 1 4}$",
+          "$\\mathbf{1 5 . 4 9}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 9
+    },
+    {
+      "table_number": "IV",
+      "table_title": "The Ratio of Change of MIGD Value between Tr-MOPSO and MOPSO",
+      "headers": [
+        "$\\operatorname{ROC}(\\%)$",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "rows": [
+        [
+          4,
+          18.01,
+          16.44,
+          15.85,
+          17.34,
+          14.15,
+          13.09,
+          18.98,
+          18.88
+        ],
+        [
+          5,
+          43.09,
+          56.21,
+          25.44,
+          21.56,
+          60.0,
+          57.88,
+          29.65,
+          23.78
+        ],
+        [
+          5,
+          "$-11.03$",
+          "$-7.58$",
+          "$-2.12$",
+          "$-1.49$",
+          "$-12.51$",
+          "$-5.11$",
+          "$-6.98$",
+          "$-8.00$"
+        ],
+        [
+          5,
+          17.54,
+          30.66,
+          50.61,
+          23.97,
+          10.64,
+          11.78,
+          28.18,
+          20.68
+        ],
+        [
+          2,
+          86.54,
+          88.36,
+          93.05,
+          94.73,
+          73.76,
+          87.17,
+          83.68,
+          89.37
+        ],
+        [
+          2,
+          92.85,
+          96.77,
+          96.51,
+          94.93,
+          "$-478.53$",
+          78.24,
+          26.14,
+          84.36
+        ],
+        [
+          2,
+          "$-0.26$",
+          2.55,
+          1.64,
+          2.82,
+          "$-0.01$",
+          "$-0.04$",
+          "$-0.58$",
+          3.31
+        ],
+        [
+          2,
+          89.96,
+          93.98,
+          93.92,
+          96.53,
+          92.54,
+          92.1,
+          97.14,
+          96.66
+        ],
+        [
+          3,
+          "$-296.04$",
+          54.28,
+          19.34,
+          28.14,
+          "$-1371.99$",
+          94.39,
+          51.0,
+          26.72
+        ],
+        [
+          2,
+          14.04,
+          34.03,
+          11.11,
+          34.34,
+          38.46,
+          36.01,
+          "$-1.96$",
+          14.06
+        ],
+        [
+          7,
+          2.88,
+          "$-3.40$",
+          "$-1.78$",
+          "$-0.49$",
+          13.96,
+          8.11,
+          "$-14.43$",
+          "$-9.12$"
+        ],
+        [
+          9,
+          "$-11.81$",
+          "$-11.45$",
+          "$-12.29$",
+          "$-14.04$",
+          "$-37.00$",
+          "$-33.30$",
+          "$-16.15$",
+          "$-13.57$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 9
+    },
+    {
+      "table_number": "V",
+      "table_title": "The Ratio of Change MIGD Value between Tr-RM-MEDA and RM-MEDA",
+      "headers": [
+        "ROC(\\%)",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "rows": [
+        [
+          4,
+          21.47,
+          22.74,
+          22.42,
+          22.91,
+          25.75,
+          27.71,
+          22.32,
+          23.08
+        ],
+        [
+          5,
+          54.07,
+          59.96,
+          61.66,
+          57.4,
+          76.55,
+          69.49,
+          56.24,
+          54.71
+        ],
+        [
+          "$\\mathrm{FDA5}_{i s o}$",
+          "$-0.29$",
+          "$-0.09$",
+          0.08,
+          "$-0.30$",
+          1.81,
+          "$-0.06$",
+          "$-0.63$",
+          "$-0.08$"
+        ],
+        [
+          "$\\mathrm{FDA5}_{d e c}$",
+          39.69,
+          33.15,
+          37.16,
+          35.83,
+          65.97,
+          65.59,
+          41.72,
+          45.66
+        ],
+        [
+          2,
+          5.91,
+          "$-8.53$",
+          "$-2.03$",
+          "$-3.49$",
+          "$-1.08$",
+          1.01,
+          "$-2.33$",
+          "$-4.57$"
+        ],
+        [
+          2,
+          "$-827.79$",
+          "$-52.71$",
+          37.53,
+          33.36,
+          "$-3.34$",
+          "$-1.67$",
+          21.07,
+          "$-13.04$"
+        ],
+        [
+          2,
+          "$-0.01$",
+          "$-0.09$",
+          "$-0.05$",
+          "$-0.06$",
+          0.01,
+          "$-0.01$",
+          0.07,
+          "$-0.09$"
+        ],
+        [
+          2,
+          53.72,
+          64.32,
+          51.05,
+          60.02,
+          1.39,
+          3.85,
+          57.93,
+          49.28
+        ],
+        [
+          3,
+          24.65,
+          22.08,
+          "$-25.15$",
+          0.49,
+          "$-0.45$",
+          "$-0.79$",
+          10.75,
+          27.48
+        ],
+        [
+          2,
+          86.81,
+          87.01,
+          86.74,
+          88.01,
+          89.99,
+          89.59,
+          88.42,
+          87.91
+        ],
+        [
+          7,
+          13.31,
+          21.82,
+          21.4,
+          20.29,
+          19.23,
+          14.87,
+          21.32,
+          22.57
+        ],
+        [
+          9,
+          7.48,
+          7.61,
+          6.95,
+          6.91,
+          8.35,
+          7.53,
+          6.74,
+          5.43
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 9
+    },
+    {
+      "table_number": "VI",
+      "table_title": "DMIGD Values of Different Algorithms",
+      "headers": [
+        "DMIGD",
+        "NSGA-II",
+        "Tr-NSGA-II",
+        "MOPSO",
+        "Tr-MOPSO",
+        "RM-MEDA",
+        "Tr-RM-MEDA",
+        "MBN-EDA",
+        "RND",
+        "MOEA/D-KF"
+      ],
+      "rows": [
+        [
+          4,
+          0.2634,
+          0.0858,
+          0.0732,
+          0.0609,
+          0.068,
+          0.052,
+          0.43,
+          0.1698,
+          0.1913
+        ],
+        [
+          5,
+          0.3301,
+          0.2306,
+          0.2131,
+          0.1196,
+          0.2089,
+          0.0776,
+          0.51,
+          0.5323,
+          0.4963
+        ],
+        [
+          "$\\mathrm{FDA}_{5 \\text { iso }}$",
+          0.1048,
+          0.1292,
+          0.1106,
+          0.1181,
+          0.065,
+          0.0649,
+          0.64,
+          0.1433,
+          0.1465
+        ],
+        [
+          "$\\mathrm{FDA}_{5 \\text { dec }}$",
+          0.5923,
+          0.4559,
+          0.2746,
+          0.2139,
+          0.5779,
+          0.3275,
+          1.27,
+          0.5403,
+          0.5476
+        ],
+        [
+          2,
+          3.8986,
+          2.3502,
+          2.3684,
+          0.2937,
+          4.8892,
+          4.9769,
+          6.97,
+          17.9537,
+          22.9536
+        ],
+        [
+          2,
+          0.4202,
+          0.3439,
+          0.2129,
+          0.2538,
+          4.5942,
+          4.713,
+          1.4,
+          1.4329,
+          3.0619
+        ],
+        [
+          "$\\mathrm{DMOP}_{2 \\text { iso }}$",
+          0.0325,
+          0.0358,
+          0.0319,
+          0.0318,
+          0.029,
+          0.029,
+          2.56,
+          0.0315,
+          0.0316
+        ],
+        [
+          "$\\mathrm{DMOP}_{2 \\text { dec }}$",
+          0.6303,
+          0.393,
+          0.4192,
+          0.0254,
+          0.1449,
+          0.094,
+          2.89,
+          9.0504,
+          9.2188
+        ],
+        [
+          3,
+          0.8851,
+          1.0133,
+          0.2851,
+          0.265,
+          4.5897,
+          4.6177,
+          1.38,
+          0.0697,
+          0.0836
+        ],
+        [
+          2,
+          0.2096,
+          0.1501,
+          0.0847,
+          0.064,
+          0.8451,
+          0.1017,
+          0.83,
+          0.0744,
+          0.0745
+        ],
+        [
+          7,
+          0.0946,
+          0.039,
+          0.0582,
+          0.0583,
+          0.0428,
+          0.0342,
+          0.21,
+          0.1787,
+          0.2365
+        ],
+        [
+          9,
+          0.2954,
+          0.2508,
+          0.2459,
+          0.2887,
+          0.2565,
+          0.2383,
+          0.36,
+          0.3432,
+          0.4108
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 10
+    },
+    {
+      "table_number": "VII",
+      "table_title": "DMReact Value of the Algorithms",
+      "headers": [
+        "DMREACT",
+        "NSGA-II",
+        "Tr-NSGA-II",
+        "MOPSO",
+        "Tr-MOPSO",
+        "RM-MEDA",
+        "Tr-RM-MEDA"
+      ],
+      "rows": [
+        [
+          4,
+          1.9803,
+          "$\\mathbf{1 . 7 6 6 4}$",
+          1.4934,
+          "$\\mathbf{1 . 2 8 9 5}$",
+          1.5033,
+          1.7072
+        ],
+        [
+          5,
+          1.7204,
+          "$\\mathbf{1 . 5 6 2 5}$",
+          1.4375,
+          "$\\mathbf{1 . 3 0 9 2}$",
+          2.9638,
+          "$\\mathbf{1 . 6 0 8 6}$"
+        ],
+        [
+          5,
+          1.7105,
+          "$\\mathbf{1 . 4 5 3 9}$",
+          1.6283,
+          1.7039,
+          1.0329,
+          "$\\mathbf{1 . 0 0 6 6}$"
+        ],
+        [
+          5,
+          1.7928,
+          1.8224,
+          1.5132,
+          1.9375,
+          2.5,
+          2.5263
+        ],
+        [
+          2,
+          2.2697,
+          2.2763,
+          1.4013,
+          "$\\mathbf{1 . 1 1 5 1}$",
+          1.9243,
+          2.0197
+        ],
+        [
+          2,
+          2.1645,
+          "$\\mathbf{1 . 9 6 7 1}$",
+          1.5592,
+          1.8487,
+          1.5789,
+          1.7467
+        ],
+        [
+          2,
+          1.4375,
+          1.4836,
+          1.4704,
+          "$\\mathbf{1 . 3 5 8 6}$",
+          1.3355,
+          1.4605
+        ],
+        [
+          2,
+          2.2961,
+          "$\\mathbf{2 . 0 1 6 4}$",
+          1.5461,
+          2.1809,
+          1.9309,
+          2.1316
+        ],
+        [
+          3,
+          1.7039,
+          "$\\mathbf{1 . 3 8 1 6}$",
+          1.5329,
+          "$\\mathbf{1 . 3 0 2 6}$",
+          1.0987,
+          1.1349
+        ],
+        [
+          2,
+          2.0428,
+          "$\\mathbf{1 . 9 4 7 4}$",
+          1.0987,
+          1.2862,
+          2.1086,
+          "$\\mathbf{1 . 4 5 7 2}$"
+        ],
+        [
+          7,
+          1.0,
+          "$\\mathbf{1 . 0 0 0 0}$",
+          1.0,
+          "$\\mathbf{1 . 0 0 0 0}$",
+          1.0,
+          "$\\mathbf{1 . 0 0 0 0}$"
+        ],
+        [
+          9,
+          1.0,
+          "$\\mathbf{1 . 0 0 0 0}$",
+          1.0,
+          1.3125,
+          1.0,
+          "$\\mathbf{1 . 0 0 0 0}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 7
+    }
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/A full variate Gaussian model-based RM-MEDA without clustering process.md",
+    "filename": "A full variate Gaussian model-based RM-MEDA without clustering process.md",
+    "title": "A full variate Gaussian model-based RM-MEDA without clustering process",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Test instances",
+      "headers": [
+        "Instance",
+        "Variables",
+        "Objectives",
+        "Characteristics"
+      ],
+      "rows": [
+        [
+          1,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\sqrt{f_{1}(\\bar{x}) / g(\\bar{x})}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right] /(n-1) \\end{aligned}$",
+          "Convex PF <br> Linear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          2,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\left(f_{1}(\\bar{x}) / g(\\bar{x})\\right)^{2}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right] /(n-1) \\end{aligned}$",
+          "Concave PF <br> Linear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          3,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=1-\\exp \\left(-4 x_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\left(f_{1}(\\bar{x}) / g(\\bar{x})\\right)^{2}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2} / 9\\right]^{0.25} \\end{aligned}$",
+          "Concave PF <br> Non-uniformly distributed Linear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          4,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\cos \\left(0.5 \\pi x_{2}\\right)(1+g(\\bar{x})) \\\\ & f_{2}(\\bar{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\sin \\left(0.5 \\pi x_{2}\\right)(1+g(\\bar{x})) \\\\ & f_{3}(\\bar{x})=\\sin \\left(0.5 \\pi x_{1}\\right)(1+g(\\bar{x})) \\\\ & g(\\bar{x})=\\sum_{i=3}^{n}\\left(x_{i}-x_{1}\\right)^{2} \\end{aligned}$",
+          3
+        ],
+        [
+          5,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\sqrt{f_{1}(\\bar{x}) / g(\\bar{x})}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right] /(n-1) \\end{aligned}$",
+          "Convex PF <br> Nonlinear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          6,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=\\sqrt{x_{1}} \\\\ & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\left(f_{1}(\\bar{x}) / g(\\bar{x})\\right)^{2}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right] /(n-1) \\end{aligned}$",
+          "Concave PF <br> Nonlinear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          7,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=1-\\exp \\left(-4 x_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\left(f_{1}(\\bar{x}) / g(\\bar{x})\\right)^{2}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2} / 9\\right]^{0.25} \\end{aligned}$",
+          "concave PF <br> non-uniformly distributed nonlinear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          8,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\cos \\left(0.5 \\pi x_{2}\\right)(1+g(\\bar{x})) \\\\ & f_{2}(\\bar{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\sin \\left(0.5 \\pi x_{2}\\right)(1+g(\\bar{x})) \\\\ & f_{3}(\\bar{x})=\\sin \\left(0.5 \\pi x_{1}\\right)(1+g(\\bar{x})) \\\\ & g(\\bar{x})=\\sum_{i=3}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2} \\end{aligned}$",
+          3
+        ],
+        [
+          9,
+          "$[0,1] \\times[0,10]^{n-1}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-(\\sqrt{f_{1}(\\bar{x}) / g(\\bar{x})})\\right] \\\\ & g(\\bar{x})=1 / 4000 \\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2} \\\\ & \\quad-\\prod_{i=2}^{n} \\cos \\left(\\left(x_{i}^{2}-x_{1}\\right) / \\sqrt{i-1}\\right)+2 \\end{aligned}$",
+          "Concave PF <br> Nonlinear variable linkage <br> Multimodal with Griewank function $\\mathrm{n}=50$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Results of convergence speed over 20 independent runs",
+      "headers": [
+        "Instance",
+        "FRM-MEDA <br> Mean FES $\\pm$ Std Dev $\\left(\\times 10^{3}\\right)$",
+        "RM-MEDA (with different number of $K$ )",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Mean FES $\\pm$ Std Dev $\\left(\\times 10^{3}\\right) / A R$",
+          ""
+        ],
+        [
+          "",
+          "",
+          "$K=1$",
+          "$K=A V E_{K}$"
+        ],
+        [
+          1,
+          "$\\mathbf{5 . 4 5 0} \\pm \\mathbf{1 . 7 8 6 4}$",
+          "$22.070 \\pm 2.7172 / 75 \\%$",
+          "$6.965 \\pm 0.4271 / 22 \\%$"
+        ],
+        [
+          2,
+          "$\\mathbf{8 . 1 1 0} \\pm \\mathbf{0 . 7 1 2 2}$",
+          "$36.940 \\pm 5.8770 / 78 \\%$",
+          "$9.015 \\pm 0.6792 / 11 \\%$"
+        ],
+        [
+          3,
+          "$\\mathbf{1 1 0 . 6 1 0} \\pm \\mathbf{7 . 2 8 1 3}$",
+          "$318.060 \\pm 26.647 / 65 \\%$",
+          "$171.325 \\pm 20.935 / 35 \\%$"
+        ],
+        [
+          4,
+          "$\\mathbf{1 7 . 2 2 0} \\pm \\mathbf{1 . 6 3 8 9}$",
+          "$159.960 \\pm 3.1828 / 89 \\%$",
+          "$26.000 \\pm 8.0498 / 34 \\%$"
+        ],
+        [
+          5,
+          "$\\mathbf{1 0 . 4 0 0} \\pm \\mathbf{3 . 3 1 7 9}$",
+          "$47.365 \\pm 5.6276 / 78 \\%$",
+          "$11.690 \\pm 3.1611 / 11 \\%$"
+        ],
+        [
+          6,
+          "$\\mathbf{1 3 . 1 8 0} \\pm \\mathbf{1 . 7 6 6 8}$",
+          "$35.510 \\pm 4.9184 / 63 \\%$",
+          "$16.010 \\pm 1.7897 / 18 \\%$"
+        ],
+        [
+          7,
+          "$\\mathbf{1 4 4 . 4 5 0} \\pm \\mathbf{1 5 . 4 4 3}$",
+          "$394.190 \\pm 35.324 / 63 \\%$",
+          "$158.610 \\pm 14.189 / 9 \\%$"
+        ],
+        [
+          8,
+          "$\\mathbf{4 2 . 2 4 0} \\pm \\mathbf{1 2 . 0 8 5}$",
+          "$168.200 \\pm 24.623 / 75 \\%$",
+          "$65.550 \\pm 16.283 / 36 \\%$"
+        ],
+        [
+          9,
+          "$\\mathbf{2 3 . 4 0 0} \\pm \\mathbf{3 . 9 3 1 8}$",
+          "$61.090 \\pm 10.381 / 62 \\%$",
+          "$26.510 \\pm 3.4371 / 12 \\%$"
+        ],
+        [
+          "Mean of $A R$",
+          "",
+          "$\\mathbf{7 2 \\%}$",
+          "$\\mathbf{2 1 \\%}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Results of convergence quality over 20 independent runs",
+      "headers": [
+        "Instance",
+        "The number of FES",
+        "FRM-MEDA",
+        "RM-MEDA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Mean GD $\\pm$ Std Dev $\\left(\\times 10^{-3}\\right)$",
+          "Mean GD $\\pm$ Std Dev $\\left(\\times 10^{-3}\\right)$",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "$K=1$",
+          "$K=A V E_{K}$"
+        ],
+        [
+          1,
+          10000,
+          "$\\mathbf{0 . 2 8 4 2} \\pm \\mathbf{0 . 1 7 7 1}$",
+          "$5.1438 \\pm 0.0707$",
+          "$0.3304 \\pm 0.1788$"
+        ],
+        [
+          2,
+          10000,
+          "$\\mathbf{0 . 1 1 5 9} \\pm \\mathbf{0 . 0 0 6 7}$",
+          "$3.5333 \\pm 0.0992$",
+          "$0.1169 \\pm 0.0149$"
+        ],
+        [
+          3,
+          200000,
+          "$\\mathbf{3 . 8 7 9 0} \\pm \\mathbf{0 . 4 1 0 3}$",
+          "$98.6847 \\pm 39.0190$",
+          "$11.2200 \\pm 2.5227$"
+        ],
+        [
+          4,
+          30000,
+          "$\\mathbf{1 . 3 9 5 6} \\pm \\mathbf{0 . 0 6 8 5}$",
+          "$414.6459 \\pm 66.0754$",
+          "$5.5573 \\pm 8.8936$"
+        ],
+        [
+          5,
+          20000,
+          "$\\mathbf{0 . 6 8 1 3} \\pm \\mathbf{0 . 0 6 3 7}$",
+          "$0.9077 \\pm 0.4840$",
+          "$0.8542 \\pm 0.9804$"
+        ],
+        [
+          6,
+          20000,
+          "$\\mathbf{0 . 7 3 3 1} \\pm \\mathbf{0 . 0 8 3 9}$",
+          "$1.2104 \\pm 0.4882$",
+          "$1.1249 \\pm 1.5780$"
+        ],
+        [
+          7,
+          200000,
+          "$\\mathbf{2 1 . 0 7 6 7} \\pm \\mathbf{9 . 6 5 6 0}$",
+          "$54.0953 \\pm 364.4290$",
+          "$39.1499 \\pm 2.0044$"
+        ],
+        [
+          8,
+          100000,
+          "$\\mathbf{3 . 5 2 6 5} \\pm \\mathbf{0 . 0 3 0 3}$",
+          "$298.9802 \\pm 100.6249$",
+          "$22.4138 \\pm 28.7962$"
+        ],
+        [
+          9,
+          30000,
+          "$1.7818 \\pm 0.8570$",
+          "$4.8436 \\pm 1.9067$",
+          "$\\mathbf{1 . 5 8 3 5} \\pm \\mathbf{0 . 6 8 6 9}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Wilcoxon signed ranks test results of convergence quality with a level of significance $\\alpha=0.05$",
+      "headers": [
+        "Instance",
+        "Comparison $(R+, R-$ and $p$-value $)$ on GD",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "FRM-MEDA vs RM-MEDA $(K=1)$",
+          "",
+          "",
+          "FRM-MEDA vs RM-MEDA $\\left(K=A V E_{K}\\right)$",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$R^{+}$",
+          "$R^{-}$",
+          "$p$ value",
+          "$R^{+}$",
+          "$R^{-}$",
+          "$p$ value"
+        ],
+        [
+          1,
+          20,
+          0,
+          0.0,
+          12,
+          8,
+          0.279
+        ],
+        [
+          2,
+          20,
+          0,
+          0.0,
+          10,
+          10,
+          0.97
+        ],
+        [
+          3,
+          20,
+          0,
+          0.0,
+          20,
+          0,
+          0.0
+        ],
+        [
+          4,
+          20,
+          0,
+          0.0,
+          18,
+          2,
+          0.0
+        ],
+        [
+          5,
+          18,
+          2,
+          0.001,
+          3,
+          17,
+          0.927
+        ],
+        [
+          6,
+          19,
+          1,
+          0.0,
+          9,
+          11,
+          0.709
+        ],
+        [
+          7,
+          17,
+          3,
+          0.002,
+          20,
+          0,
+          0.0
+        ],
+        [
+          8,
+          20,
+          0,
+          0.0,
+          14,
+          6,
+          0.015
+        ],
+        [
+          9,
+          18,
+          2,
+          0.0,
+          9,
+          11,
+          0.654
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Results of population diversity",
+      "headers": [
+        "Instance",
+        "The number of FES",
+        "FRM-MEDA",
+        "RM-MEDA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Mean $\\Delta \\pm$ Std Dev",
+          "Mean $\\Delta \\pm$ Std Dev",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "$K=1$",
+          "$K=A V E_{K}$"
+        ],
+        [
+          1,
+          20000,
+          "$\\mathbf{0 . 1 8 6 2} \\pm \\mathbf{0 . 0 1 2 4}$",
+          "$0.3716 \\pm 0.0341$",
+          "$0.1891 \\pm 0.0142$"
+        ],
+        [
+          2,
+          20000,
+          "$\\mathbf{0 . 1 8 5 8} \\pm \\mathbf{0 . 0 0 8 6}$",
+          "$0.3335 \\pm 0.0991$",
+          "$0.1907 \\pm 0.0096$"
+        ],
+        [
+          3,
+          100000,
+          "$\\mathbf{0 . 5 8 6 4} \\pm \\mathbf{0 . 0 0 7 3}$",
+          "$0.9469 \\pm 0.1242$",
+          "$0.6091 \\pm 0.0099$"
+        ],
+        [
+          4,
+          30000,
+          "$0.7027 \\pm 0.0220$",
+          "$0.7705 \\pm 0.0462$",
+          "$\\mathbf{0 . 5 8 8 9} \\pm \\mathbf{0 . 0 2 6 8}$"
+        ],
+        [
+          5,
+          20000,
+          "$0.1851 \\pm 0.0113$",
+          "$0.4898 \\pm 0.0876$",
+          "$\\mathbf{0 . 1 8 0 0} \\pm \\mathbf{0 . 0 2 4 4}$"
+        ],
+        [
+          6,
+          20000,
+          "$\\mathbf{0 . 1 9 3 4} \\pm \\mathbf{0 . 0 1 8 2}$",
+          "$0.5280 \\pm 0.2933$",
+          "$0.1936 \\pm 0.0675$"
+        ],
+        [
+          7,
+          200000,
+          "$0.8137 \\pm 0.0985$",
+          "$1.1135 \\pm 0.2503$",
+          "$\\mathbf{0 . 7 0 8 2} \\pm \\mathbf{0 . 0 9 7 6}$"
+        ],
+        [
+          8,
+          30000,
+          "$\\mathbf{0 . 6 4 6 6} \\pm \\mathbf{0 . 0 2 4 6}$",
+          "$1.0928 \\pm 0.0965$",
+          "$0.7928 \\pm 0.3157$"
+        ],
+        [
+          9,
+          100000,
+          "$0.2112 \\pm 0.0694$",
+          "$0.5581 \\pm 0.3974$",
+          "$\\mathbf{0 . 2 1 0 5} \\pm \\mathbf{0 . 0 3 7 1}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Instance",
+        "Comparison $(R+, R-$ and $p$-value $)$ on $\\Delta$",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "FRM-MEDA vs RM-MEDA $(K=1)$",
+          "",
+          "",
+          "FRM-MEDA vs RM-MEDA $\\left(K=A V E_{K}\\right)$",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$R^{+}$",
+          "$R^{-}$",
+          "$p$ value",
+          "$R^{+}$",
+          "$R^{-}$",
+          "$p$ value"
+        ],
+        [
+          1,
+          20,
+          0,
+          0.0,
+          11,
+          9,
+          0.502
+        ],
+        [
+          2,
+          20,
+          0,
+          0.0,
+          14,
+          6,
+          0.093
+        ],
+        [
+          3,
+          20,
+          0,
+          0.0,
+          19,
+          1,
+          0.0
+        ],
+        [
+          4,
+          17,
+          3,
+          0.0,
+          0,
+          20,
+          1.0
+        ],
+        [
+          5,
+          20,
+          0,
+          0.0,
+          5,
+          15,
+          0.865
+        ],
+        [
+          6,
+          17,
+          3,
+          0.001,
+          6,
+          14,
+          0.855
+        ],
+        [
+          7,
+          19,
+          1,
+          0.0,
+          4,
+          16,
+          0.995
+        ],
+        [
+          8,
+          20,
+          0,
+          0.0,
+          8,
+          12,
+          0.668
+        ],
+        [
+          9,
+          18,
+          2,
+          0.001,
+          10,
+          10,
+          0.502
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 7
+    }
+  ]
+}

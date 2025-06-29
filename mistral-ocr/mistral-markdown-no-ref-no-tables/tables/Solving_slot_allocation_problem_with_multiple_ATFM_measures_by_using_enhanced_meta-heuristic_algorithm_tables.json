@@ -1,0 +1,552 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Solving slot allocation problem with multiple ATFM measures by using enhanced meta-heuristic algorithm.md",
+    "filename": "Solving slot allocation problem with multiple ATFM measures by using enhanced meta-heuristic algorithm.md",
+    "title": "Solving slot allocation problem with multiple ATFM measures by using enhanced meta-heuristic algorithm",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "ATFM measures with bi-level.",
+      "headers": [
+        "Outer Level",
+        "Inner Level",
+        "Final Level"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          "$1-1$"
+        ],
+        [
+          "",
+          2,
+          "$1-2$"
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          2,
+          "$M_{1}$",
+          "$1-M_{1}$"
+        ],
+        [
+          "",
+          1,
+          "$2-1$"
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$M_{2}$",
+          "$2-M_{2}$"
+        ],
+        [
+          "N",
+          1,
+          "$N-1$"
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$M_{N}$",
+          "$N-M_{N}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Inner ATFM measure level.",
+      "headers": [
+        "Level <br> ID",
+        "Name",
+        "Description"
+      ],
+      "rows": [
+        [
+          1,
+          "Top",
+          "The measure with: emergency event, such as earthquake, <br> ground stop (GS) due to equipment breakdown, etc."
+        ],
+        [
+          2,
+          "High",
+          "The measure with: impact area is large and the expected delay <br> level of flights are high."
+        ],
+        [
+          3,
+          "Normal",
+          "Default level."
+        ],
+        [
+          4,
+          "Low",
+          "The measure with: impact area is small."
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Multi-dimension flight priority.",
+      "headers": [
+        "Priority Group",
+        "",
+        "",
+        "Rank within Group"
+      ],
+      "rows": [
+        [
+          1,
+          "Flight Information Satisfied",
+          "Exempt Flights",
+          "by STO"
+        ],
+        [
+          "",
+          "Flight State Satisfied",
+          "Departure Flights Push, Startup, Taxing Flights",
+          "by STO by STO"
+        ],
+        [
+          "",
+          "Final Level 1-1",
+          "",
+          "by STO by STO"
+        ],
+        [
+          "",
+          "Final Level 1-2",
+          "",
+          "$\\ldots \\ldots$"
+        ],
+        [
+          "",
+          "Final Level 1-M",
+          "",
+          "by STO"
+        ],
+        [
+          2,
+          "Flight Information Satisfied",
+          "",
+          "by STO by STO"
+        ],
+        [
+          "",
+          "Flight State Satisfied",
+          "",
+          "by STO"
+        ],
+        [
+          "",
+          "Final Level 2-1",
+          "",
+          "by STO"
+        ],
+        [
+          "",
+          "Final Level 2-M",
+          "",
+          "by STO"
+        ],
+        [
+          "....",
+          "....",
+          "",
+          "...."
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Flights information of illustrative example.",
+      "headers": [
+        "Flight",
+        "Status",
+        "ATFM Measure Level",
+        "STO"
+      ],
+      "rows": [
+        [
+          "A",
+          "Exempt Flight",
+          "$2-2,2-4$",
+          "$10: 00,11: 00$"
+        ],
+        [
+          "B",
+          "Taxing Flight",
+          "$2-2,2-3$",
+          "$09: 30,10: 00$"
+        ],
+        [
+          "C",
+          "-",
+          "$1-3,2-4$",
+          "$12: 30,13: 40$"
+        ],
+        [
+          "D",
+          "-",
+          "$2-2$",
+          "$09: 30$"
+        ],
+        [
+          "E",
+          "-",
+          "$2-2$",
+          "$09: 20$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "- Indices",
+        ""
+      ],
+      "rows": [
+        [
+          "$i$",
+          "Index of flights, $i=1, \\ldots, N$"
+        ],
+        [
+          "$j$",
+          "Index of slots, $j=1, \\ldots, M$"
+        ],
+        [
+          "- Parameters",
+          ""
+        ],
+        [
+          "$N$",
+          "Total number of flights"
+        ],
+        [
+          "$M$",
+          "Total number of slots"
+        ],
+        [
+          "$\\varepsilon_{i}$",
+          "Delay cost of flight $i$"
+        ],
+        [
+          "$\\omega_{D}$",
+          "Weighting of total delay cost objective"
+        ],
+        [
+          "$\\omega_{P}$",
+          "Weighting of total fairness objective"
+        ],
+        [
+          "UC",
+          "Unit cost of time delay"
+        ],
+        [
+          "$\\omega_{t}^{D}$",
+          "Weighting of delay cost of flight $i$"
+        ],
+        [
+          "$\\omega_{c}^{T}$",
+          "Weighting of fairness of flight $i$"
+        ],
+        [
+          "STO",
+          "Scheduled time over of flight $i$"
+        ],
+        [
+          "$F\\left(X_{i j}\\right)$",
+          "Fairness measure of slot $j$ assigned to flight $i$"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$t_{i}$",
+        "Starting time of slot $j$",
+        "$c_{i}=\\sum_{j=1}^{M} \\omega_{i}^{D} \\times U C_{i} \\times\\left(t_{i}-S T O_{i}\\right) \\times x_{i j}$"
+      ],
+      "rows": [
+        [
+          "$c_{i}^{*}$",
+          "Standard delay cost of flight $i$, based on the solution made by priority",
+          ""
+        ],
+        [
+          "$d\\left(\\mathrm{x}_{\\mathrm{j}}\\right)$",
+          "rule",
+          "$d_{i}=\\max \\left(0, c_{i}-c_{i}^{*}\\right)$"
+        ],
+        [
+          "",
+          "Deviation to standard cost, for slot $j$ assigned to flight $i$",
+          "$F\\left(\\mathrm{X}_{\\mathrm{ij}}\\right)=\\sum_{i=1}^{N} \\omega_{i}^{F} \\times d_{i}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "Comparison on slot division method.",
+      "headers": [
+        "Arrival <br> Flights (in 2 <br> Hours)",
+        "Minimal-Time-Interval",
+        "",
+        "Equally Division",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Amount of Delayed Flights*",
+          "Averaged Delay Time**",
+          "Amount of Delayed Flights",
+          "Averaged Delay Time"
+        ],
+        [
+          "$15 \\times 2$",
+          0,
+          0,
+          3,
+          0.3
+        ],
+        [
+          "$20 \\times 2$",
+          4,
+          0.34,
+          7,
+          0.53
+        ],
+        [
+          "$25 \\times 2$",
+          15,
+          2.2,
+          29,
+          2.82
+        ],
+        [
+          "$30 \\times 2$",
+          32,
+          4.25,
+          43,
+          4.55
+        ],
+        [
+          "$35 \\times 2$",
+          51,
+          6.71,
+          59,
+          6.94
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Comparison on ranking by STO and by SOBT.",
+      "headers": [
+        "",
+        "Total Amount of Flights",
+        "Amount of Delayed Flights",
+        "Total Delay Time (Hour)",
+        "Max Delay Time (Min)",
+        "Averaged Delay Time (Min)"
+      ],
+      "rows": [
+        [
+          "By STO",
+          109,
+          56,
+          13.87,
+          30.93,
+          14.87
+        ],
+        [
+          "By SOBT",
+          109,
+          38,
+          14.63,
+          69.45,
+          23.09
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Comparison on calculation time ( 1000 generations).",
+      "headers": [
+        "Calculation time (s)",
+        "Our proposal",
+        "MMEDA"
+      ],
+      "rows": [
+        [
+          200,
+          18.4,
+          22.3
+        ],
+        [
+          1000,
+          87.2,
+          101.5
+        ],
+        [
+          4000,
+          203.9,
+          245.1
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "8",
+      "table_title": "Experiment description for demonstrating stability.",
+      "headers": [
+        "Scenario",
+        "Measure A",
+        "Measure B",
+        "Measure C",
+        "Measure D",
+        "Measure E"
+      ],
+      "rows": [
+        [
+          1,
+          "$3-4$",
+          "$3-4$",
+          "$3-4$",
+          "$3-4$",
+          "$3-4$"
+        ],
+        [
+          2,
+          "$5-4$",
+          "$4-4$",
+          "$3-4$",
+          "$2-4$",
+          "$1-4$"
+        ],
+        [
+          3,
+          "$1-4$",
+          "$2-4$",
+          "$3-4$",
+          "$4-4$",
+          "$5-4$"
+        ],
+        [
+          4,
+          "$3-4$",
+          "$2-4$",
+          "$4-4$",
+          "$1-4$",
+          "$5-4$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "9",
+      "table_title": "Comparison on number of times of slot hop.",
+      "headers": [
+        "Scenario",
+        "Number of times of slot hop"
+      ],
+      "rows": [
+        [
+          1,
+          67
+        ],
+        [
+          2,
+          67
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          39
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "10",
+      "table_title": "Comparison on averaged CTOT difference and deviation.",
+      "headers": [
+        "",
+        "Averaged <br> CTOT <br> difference A* <br> $(\\min )$",
+        "Standard <br> deviation A",
+        "Averaged <br> CTOT <br> difference B**",
+        "Standard <br> deviation B"
+      ],
+      "rows": [
+        [
+          "Our proposal",
+          29.4,
+          18.9,
+          14.5,
+          6.3
+        ],
+        [
+          "Without bi- <br> level",
+          29.2,
+          10.7,
+          28.3,
+          10.4
+        ],
+        [
+          "Without rule- <br> based",
+          29.3,
+          17.8,
+          15.1,
+          6.9
+        ],
+        [
+          "Conventional <br> method",
+          30.1,
+          11.5,
+          29.8,
+          11.3
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    }
+  ]
+}

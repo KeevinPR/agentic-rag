@@ -1,0 +1,443 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2013/Effect of model complexity for estimation of distribution algorithm in NK landscapes.md",
+    "filename": "Effect of model complexity for estimation of distribution algorithm in NK landscapes.md",
+    "title": "Effect of model complexity for estimation of distribution algorithm in NK landscapes",
+    "year": "2013"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "1",
+        "$D_{0} \\leftarrow$ Random sampling"
+      ],
+      "rows": [
+        [
+          2,
+          "$D_{0} \\leftarrow$ Evaluation"
+        ],
+        [
+          3,
+          "$t \\leftarrow 0$"
+        ],
+        [
+          4,
+          "while (Termination criterion is not met) do"
+        ],
+        [
+          5,
+          "$D_{t}^{\\mathrm{s}} \\leftarrow$ Selection $\\left(D_{t}\\right)$"
+        ],
+        [
+          6,
+          "$M \\leftarrow$ Hill climbing $\\left(M, D_{t}^{\\mathrm{s}}\\right)$"
+        ],
+        [
+          7,
+          "$\\theta \\leftarrow\\left(M, D_{t}^{\\mathrm{s}}\\right)$"
+        ],
+        [
+          8,
+          "$O \\leftarrow$ Ancestral order $(M)$"
+        ],
+        [
+          9,
+          "$D_{t+1} \\leftarrow \\operatorname{Sampling}(O, \\theta)$"
+        ],
+        [
+          10,
+          "$D_{t+1} \\leftarrow$ Evaluation"
+        ],
+        [
+          11,
+          "$D_{t+1} \\leftarrow \\operatorname{Survival}\\left(D_{t} \\cup D_{t+1}\\right)$"
+        ],
+        [
+          12,
+          "$t \\leftarrow t+1$"
+        ],
+        [
+          13,
+          "end while"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    },
+    {
+      "table_number": "I",
+      "table_title": "Parameter setting",
+      "headers": [
+        "Parameter",
+        "Value",
+        ""
+      ],
+      "rows": [
+        [
+          "Problem size $(n)$",
+          10,
+          30
+        ],
+        [
+          "Generation",
+          5000,
+          15000
+        ],
+        [
+          "Population Size $(m)$",
+          100,
+          1000
+        ],
+        [
+          "Selection",
+          "Truncation of $m / 2$",
+          ""
+        ],
+        [
+          "Sampling",
+          "Probabilistic Logic Sampling",
+          ""
+        ],
+        [
+          "Replacement",
+          "$\\mu+\\lambda$",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "Kruskal-Wallis non-parametric analysis of variance with multiple comparison post-hoc analysis for the NK landscape problems with $n=10$ and $k \\in\\{2,6\\}$. All methods are tested under 30 trials and the significance level $\\alpha=0.05$.",
+      "headers": [
+        "Wilcoxon Scores (Rank Sums) with Null Hypothesis",
+        "",
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$S S$",
+          "Mean Score",
+          "",
+          "",
+          ""
+        ],
+        [
+          "METHOD",
+          "$S S$",
+          "Mean Score",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "BMDA",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{2}$",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{4}$",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{6}$",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Wilcoxon Scores (Rank Sums) with Null Hypothesis",
+        "",
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$d f$",
+          4,
+          "METHOD",
+          "Group Ranking",
+          ""
+        ],
+        [
+          "",
+          "Chi-square",
+          0.0,
+          "UMDA",
+          "A",
+          ""
+        ],
+        [
+          "",
+          "$\\operatorname{Pr}>\\mathrm{Chi}$-square",
+          1.0,
+          "BMDA",
+          "A",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "EBNA $_{2}$",
+          "A",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "EBNA $_{4}$",
+          "A",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "EBNA $_{6}$",
+          "A",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons <br> (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "METHOD",
+          "$S S$",
+          "Mean Score",
+          ""
+        ],
+        [
+          "UMDA",
+          2235.0,
+          74.5,
+          ""
+        ],
+        [
+          "BMDA",
+          3093.0,
+          103.1,
+          ""
+        ],
+        [
+          "EBNA $_{2}$",
+          2090.0,
+          69.6667,
+          ""
+        ],
+        [
+          "EBNA $_{4}$",
+          1988.0,
+          66.2667,
+          ""
+        ],
+        [
+          "EBNA $_{6}$",
+          1919.0,
+          63.9667,
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "Kruskal-Wallis non-parametric analysis of variance with multiple comparison post-hoc analysis for NK landscapes problems with $n=30$ and $k \\in\\{2,6\\}$. All methods are tested under 30 trials and the significance level $\\alpha=0.05$.",
+      "headers": [
+        "Wilcoxon Scores (Rank Sums) with Null Hypothesis",
+        "",
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$d f$",
+          4,
+          "METHOD",
+          "Group Ranking",
+          ""
+        ],
+        [
+          "METHOD",
+          "$S S$",
+          "Mean Score",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          2104.0,
+          70.13,
+          "",
+          "",
+          ""
+        ],
+        [
+          "BMDA",
+          2021.0,
+          67.37,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{2}$",
+          2400.0,
+          80.0,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{4}$",
+          2400.0,
+          80.0,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{6}$",
+          2400.0,
+          80.0,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Wilcoxon Scores (Rank Sums) with Null Hypothesis",
+        "",
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons <br> (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$d f$",
+          4,
+          "METHOD",
+          "Group Ranking",
+          ""
+        ],
+        [
+          "METHOD",
+          "$S S$",
+          "Mean Score",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          1046.5,
+          34.8833,
+          "",
+          "",
+          ""
+        ],
+        [
+          "BMDA",
+          2685.0,
+          89.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{2}$",
+          2305.5,
+          76.85,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{4}$",
+          2690.0,
+          89.6667,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{6}$",
+          2598.0,
+          86.6,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    }
+  ]
+}

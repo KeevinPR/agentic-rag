@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/An EDA-GA Hybrid Algorithm for Multi-Objective Task Scheduling in Cloud Computing.md",
+    "filename": "An EDA-GA Hybrid Algorithm for Multi-Objective Task Scheduling in Cloud Computing.md",
+    "title": "An EDA-GA Hybrid Algorithm for Multi-Objective Task Scheduling in Cloud Computing",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Main notation definition.",
+      "headers": [
+        "Notation",
+        "Definition"
+      ],
+      "rows": [
+        [
+          "$n$",
+          "The number of tasks"
+        ],
+        [
+          "$m$",
+          "The number of virtual machines"
+        ],
+        [
+          "$T_{i}$",
+          "The task $i$"
+        ],
+        [
+          "$V_{j}$",
+          "The virtual machine $j$"
+        ],
+        [
+          "$T S_{i}$",
+          "The size of task $i$"
+        ],
+        [
+          "$V S_{j}$",
+          "The computing speed of virtual machine $j$"
+        ],
+        [
+          "$T=\\left\\{T_{1}, T_{2}, \\ldots, T_{n}\\right\\}$",
+          "The set of tasks"
+        ],
+        [
+          "$V=\\left\\{V_{1}, V_{2}, \\ldots, V_{m}\\right\\}$",
+          "The set of virtual machines"
+        ],
+        [
+          "$T S=\\left\\{T S_{1}, \\ldots, T S_{n}\\right\\}$",
+          "The task size set"
+        ],
+        [
+          "$V S=\\left\\{V S_{1}, \\ldots, V S_{m}\\right\\}$",
+          "The virtual machine computing speed set"
+        ],
+        [
+          "$E T C_{n \\times m}$",
+          "$E T C_{n \\times m}$ matrix of size $n \\times m$, repre-"
+        ],
+        [
+          "",
+          "sents the running time of all tasks on each"
+        ],
+        [
+          "",
+          "virtual machine"
+        ],
+        [
+          "$x_{i, j, r}$",
+          "$\\{0,1\\}, x_{i, j, r}=1$ illustrates that task $i$ is"
+        ],
+        [
+          "",
+          "the $r$-th task processed on virtual machine"
+        ],
+        [
+          "",
+          "$j$; otherwise, $x_{i, j, r}=0$"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Task-VM allocation table.",
+      "headers": [
+        "VM",
+        "Task"
+      ],
+      "rows": [
+        [
+          1,
+          17
+        ],
+        [
+          2,
+          "$3,5,8$"
+        ],
+        [
+          3,
+          49
+        ],
+        [
+          4,
+          210
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Factor levels of parameters.",
+      "headers": [
+        "Parameters",
+        "Factor levels",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "$P S$",
+          100,
+          150,
+          200,
+          250
+        ],
+        [
+          "$p$",
+          10,
+          20,
+          30,
+          40
+        ],
+        [
+          "$\\lambda$",
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "The RV value.",
+      "headers": [
+        "Number",
+        "Factor",
+        "",
+        "",
+        "RV"
+      ],
+      "rows": [
+        [
+          "",
+          "PS",
+          "$p$",
+          "$\\lambda$",
+          ""
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          2.1831
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          2.1827
+        ],
+        [
+          3,
+          1,
+          3,
+          3,
+          2.1975
+        ],
+        [
+          4,
+          1,
+          4,
+          4,
+          2.1992
+        ],
+        [
+          5,
+          2,
+          1,
+          2,
+          2.2119
+        ],
+        [
+          6,
+          2,
+          2,
+          1,
+          2.2057
+        ],
+        [
+          7,
+          2,
+          3,
+          4,
+          2.2202
+        ],
+        [
+          8,
+          2,
+          4,
+          3,
+          2.2203
+        ],
+        [
+          9,
+          3,
+          1,
+          3,
+          2.2198
+        ],
+        [
+          10,
+          3,
+          2,
+          4,
+          2.222
+        ],
+        [
+          11,
+          3,
+          3,
+          1,
+          2.2205
+        ],
+        [
+          12,
+          3,
+          4,
+          2,
+          2.2115
+        ],
+        [
+          13,
+          4,
+          1,
+          4,
+          2.2321
+        ],
+        [
+          14,
+          4,
+          2,
+          3,
+          2.2332
+        ],
+        [
+          15,
+          4,
+          3,
+          2,
+          2.1981
+        ],
+        [
+          16,
+          4,
+          4,
+          1,
+          2.2222
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 5
+    }
+  ]
+}

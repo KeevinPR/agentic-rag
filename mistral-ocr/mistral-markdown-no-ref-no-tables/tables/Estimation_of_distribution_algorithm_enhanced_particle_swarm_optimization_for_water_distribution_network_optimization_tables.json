@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Estimation of distribution algorithm enhanced particle swarm optimization for water distribution network optimization.md",
+    "filename": "Estimation of distribution algorithm enhanced particle swarm optimization for water distribution network optimization.md",
+    "title": "Estimation of distribution algorithm enhanced particle swarm optimization for water distribution network optimization",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Explanation of historical best positions",
+      "headers": [
+        "generation $t$",
+        "",
+        "",
+        "",
+        "generation $t+1$",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$X_{m}^{n}(t)$",
+          "$\\bar{X}_{m}^{n}(t)$",
+          "$\\Omega_{m}^{n}(t)$",
+          "$H_{m}^{n}(t)$",
+          "$X_{m}^{n}(t+1)$",
+          "$\\bar{X}_{m}^{n}(t+1)$",
+          "$\\Omega_{m}^{n}(t+1)$",
+          "$H_{m}^{n}(t+1)$"
+        ],
+        [
+          "fitness",
+          2,
+          3,
+          6,
+          6,
+          4,
+          3,
+          6,
+          6
+        ],
+        [
+          "",
+          5,
+          6,
+          6,
+          3,
+          4,
+          6,
+          6,
+          5
+        ],
+        [
+          "",
+          1,
+          2,
+          6,
+          2,
+          3,
+          2,
+          6,
+          4
+        ],
+        [
+          "",
+          3,
+          1,
+          6,
+          2,
+          3,
+          3,
+          6,
+          3
+        ],
+        [
+          "",
+          4,
+          2,
+          6,
+          1,
+          5,
+          4,
+          6,
+          2
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 9
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Comparison of the best cost achieved by different algorithms (Hanoi network)",
+      "headers": [
+        "algorithms",
+        "min cost/M\\$",
+        "average",
+        "success rate",
+        "average No. of evaluations"
+      ],
+      "rows": [
+        [
+          "GA $^{3}[28]$",
+          6.173,
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          26457
+        ],
+        [
+          "$\\mathrm{ACO}^{2}[29]$",
+          6.134,
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          35433
+        ],
+        [
+          "$\\mathrm{HS}^{3}[30]$",
+          6.081,
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$1 / 81$",
+          27721
+        ],
+        [
+          "PSHS $^{4}[31]$",
+          6.081,
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$1 / 81$",
+          17980
+        ],
+        [
+          "$\\operatorname{GHEST}^{5}[32]$",
+          6.081,
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$6 / 10$",
+          16600
+        ],
+        [
+          "PSO $^{6}[8]$",
+          6.133,
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$3 / 100$",
+          "$\\mathrm{n} / \\mathrm{a}$"
+        ],
+        [
+          "HD-DDS $^{7}[33]$",
+          6.081,
+          "$6 / 252$",
+          "$8 / 100$",
+          5000000
+        ],
+        [
+          "NLP-DE $^{8}[34]$",
+          6.081,
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$98 / 100$",
+          48724
+        ],
+        [
+          "ISEDPSO (Present study)",
+          "$\\mathbf{6 . 0 8 1}$",
+          "$\\mathbf{6 . 1 0 2}$",
+          "$\\mathbf{2 8 / 3 0}$",
+          "$\\mathbf{1 7 , 6 0 0}$"
+        ],
+        [
+          "PEDPSO (Present study)",
+          "$\\mathbf{6 . 0 8 1}$",
+          "$\\mathbf{6 . 1 0 3}$",
+          "$\\mathbf{2 7 / 3 0}$",
+          "$\\mathbf{2 3 , 4 0 0}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Comparison of the best cost achieved by different algorithms (Balerma network)",
+      "headers": [
+        "algorithms",
+        "min cost <br> $/ \\mathrm{M} €$",
+        "average",
+        "success rate",
+        "average no. of evaluations"
+      ],
+      "rows": [
+        [
+          28,
+          "$2.302,000$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$10,000,000$"
+        ],
+        [
+          30,
+          "$2.018,000$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$1 / 81$",
+          "$10,000,000$"
+        ],
+        [
+          -33,
+          "$1.940,923$",
+          "$2.165,000$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$30,000,000$"
+        ],
+        [
+          32,
+          "$2.002,387$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$1 / 10$",
+          254400
+        ],
+        [
+          -34,
+          "$1.923,000$",
+          "$1.927,000$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$1,427,850$"
+        ],
+        [
+          "ISEDPSO(Present study)",
+          "$\\mathbf{1 . 9 3 3 , 4 0 7}$",
+          "$\\mathbf{1 . 9 7 6 , 6 7 2}$",
+          "$\\mathbf{1 6 / 3 0}$",
+          "$\\mathbf{2 0 1 , 4 0 0}$"
+        ],
+        [
+          "PEDPSO(Present study)",
+          "$\\mathbf{1 . 9 2 1 , 4 2 8}$",
+          "$\\mathbf{1 . 9 4 2 , 2 3 1}$",
+          "$\\mathbf{1 7 / 3 0}$",
+          "$\\mathbf{2 1 7 , 4 0 0}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Comparison with the same number of evaluations (Balerma network)",
+      "headers": [
+        "algorithms",
+        "min cost $/ \\mathrm{M} €$",
+        "No. of evaluations"
+      ],
+      "rows": [
+        [
+          28,
+          3.738,
+          45400
+        ],
+        [
+          27,
+          3.476,
+          45400
+        ],
+        [
+          "$\\mathrm{MSATS}^{2}[27]$",
+          3.298,
+          45400
+        ],
+        [
+          "$\\mathrm{HS}[30]$",
+          2.601,
+          45400
+        ],
+        [
+          "$\\mathrm{PSHS}[31]$",
+          2.633,
+          45400
+        ],
+        [
+          "$\\mathrm{MA}^{3}[35]$",
+          3.12,
+          45400
+        ],
+        [
+          32,
+          2.178,
+          45400
+        ],
+        [
+          "ISEDPSO (Present study)",
+          "$\\mathbf{2 . 1 0 8 3}$",
+          "$\\mathbf{4 5 , 4 0 0}$"
+        ],
+        [
+          "PEDPSO (Present study)",
+          "$\\mathbf{2 . 3 7 8 1}$",
+          "$\\mathbf{4 5 , 4 0 0}$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    }
+  ]
+}

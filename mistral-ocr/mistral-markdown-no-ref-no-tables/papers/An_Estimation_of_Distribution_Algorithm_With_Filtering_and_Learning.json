@@ -1,0 +1,719 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/An Estimation of Distribution Algorithm With Filtering and Learning.md",
+    "filename": "An Estimation of Distribution Algorithm With Filtering and Learning.md",
+    "title": "An Estimation of Distribution Algorithm With Filtering and Learning",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] L. X. Tang, C. Liu, J. Y. Liu, and X. P. Wang, \"An estimation of distribution algorithm with resampling and local improvement for an operation optimization problem in steelmaking process,\" IEEE Trans. Syst., Man., Cybern. Syst., to be published, doi: 10.1109/TSMC.2019.2962880.\n[2] C. Liu, L. Tang, J. Liu, and Z. Tang, \"A dynamic analytics method based on multistage modeling for a BOF steelmaking process,\" IEEE Trans. Autom. Sci. Eng., vol. 16, no. 3, pp. 1097-1109, Jul. 2019.\n[3] C. Liu, L. Tang, and J. Liu, \"A stacked autoencoder with sparse Bayesian regression for end-point prediction problems in steelmaking process,\" IEEE Trans. Autom. Sci. Eng., vol. 17, no. 2, pp. 550-561, Apr. 2020.\n[4] L. X. Tang and Y. Meng, \"Data analytics and optimization for smart industry,\" Frontier Eng. Manage., 2020, doi: 10.1007/s42524-020-0126-0,\n[5] H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. Binary parameters,\" Parallel Problem Solving From Nature-PPSN IV (Lecture Notes in Computer Science), vol. 1411. Berlin, Germany: Springer-Verlag, 1996, pp. 178-187.\n[6] P. Larrñaga and J. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Boston, MA, USA: Kluwer Academic, 2002.\n[7] M. Wagner, A. Auger, and M. Schoenauer, \"EEDA: A new robust estimation of distribution algorithm,\" INRIA, Rapport de Recherche, Rocquencourt, France, Tech. Rep. RR-5190, 2004.\n[8] M. Gallagher, M. Frean, and T. Downs, \"Real-valued evolutionary optimization using a flexible probability density estimator,\" in Proc. GECCO, 1999, pp. 840-846.\n[9] P. Bosman and D. Thierens, \"Advancing continuous IDEAs with mixture distributions and factorization selection metrics,\" in Proc. Optim. Building Using Probabilistic Models OBUPM Workshop (GECCO), 2001, pp. 208-212.\n[10] Q. Lu and X. Yao, \"Clustering and learning Gaussian distribution for continuous optimization,\" IEEE Trans. Syst., Man, Cybern. C, Appl. Rev., vol. 35, no. 2, pp. 195-204, May 2005.\n[11] Y. Liang, Z. Ren, X. Yao, Z. Feng, A. Chen, and W. Guo, \"Enhancing Gaussian estimation of distribution algorithm by exploiting evolution direction with archive,\" IEEE Trans. Cybern., vol. 50, no. 1, pp. 140-152, Jan. 2020.\n[12] J. Sun, Q. Zhang, and E. Tsang, \"DE/EDA: A new evolutionary algorithm for global optimization,\" Inf. Sci., vol. 169, nos. 3-4, pp. 249-262, Feb. 2005.\n[13] W. Dong, T. Chen, P. Tino, and X. Yao, \"Scaling up estimation of distribution algorithms for continuous optimization,\" IEEE Trans. Evol. Comput., vol. 17, no. 6, pp. 797-822, Dec. 2013.\n[14] S. Tsutsui, M. Pelikan, and D. Goldberg, \"Evolutionary algorithm using marginal histogram models in continuous domain,\" in Proc. Optim. Building Using Probabilistic Models OBUPM Workshop (GECCO), 2001, pp. 230-233.\n[15] B. Yuan and M. Gallagher, \"Playing in continuous spaces: Some analysis and extension of population-based incremental learning,\" in Proc. IEEE Congr. Evol. Comput., vol. 1, Dec. 2003, pp. 443-450.\n[16] N. Ding, S. Zhou, and Z. Sun, \"Optimizing continuous problems using estimation of distribution algorithm based on histogram model,\" in Proc. 6th Conf. Simulation Evol. Learn., 2006, pp. 545-552.\n[17] N. Ding, S. Zhou, H. Zhang, and Z. Sun, \"Marginal probability distribution algorithm: A competent method for continuous optimization,\" J. Comput. Sci. Technol., vol. 23, no. 1, pp. 35-43, 2008.\n[18] A. Zhou, J. Y. Sun, and Q. F. Zhang, \"An estimation of distribution algorithm with cheap and expensive local search methods,\" IEEE Trans. Evol. Comput., vol. 19, no. 6, pp. 807-822, Dec. 2015.\n[19] P. Bosman and D. Thierens, \"Numerical optimization with real-valued estimation-of-distribution algorithms,\" in Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, M. Pelikan, K. Sastry, E. Cantu-Paz, Eds. Berlin, Germany: Springer-Verlag, 2006, pp. 91-120.\n[20] H. Mühlenbein, T. Malmig, and A. Ochoa, \"Schemata, distributions and graphical models in evolutionary optimization,\" J. Heuristics, vol. 5, no. 2, pp. 213-247, 1999.\n[21] R. Etxeberria and P. Larrañaga, \"Global optimization using Bayesian networks,\" in Proc. 2nd Symp. Artif. Intell. (CIMAF), 1999, pp. 332-399.\n[22] S. Shakya and J. McCall, \"Optimization by estimation of distribution with DEUM framework based on Markov random fields,\" Int. J. Auto. Comput., vol. 4, no. 3, pp. 262-272, 2007.\n[23] M. Pelikan and D. E. Goldberg, \"Genetic algorithms, clustering, and the breaking of symmetry,\" in Proc. 6th Int. Conf. Parallel Problem Solving Nature-PPSN VI, 2007, pp. 385-394.\n[24] R. Santana, P. Larrañaga, and J. A. Lozano, \"Mixtures of Kikuchi approximations,\" in Proc. 17th Eur. Conf. Mach. Learn. (ECML), (Lecture Notes in Artificial Intelligence), vol. 4212, 2006, pp. 365-376.\n[25] W. Shao, D. Pi, and Z. Shao, \"A Pareto-based estimation of distribution algorithm for solving multiobjective distributed no-wait flow-shop scheduling problem with sequence-dependent setup time,\" IEEE Trans. Autom. Sci. Eng., vol. 16, no. 3, pp. 1344-1360, Jul. 2019.\n[26] W. Shi, W.-N. Chen, Y. Lin, T. Gu, S. Kwong, and J. Zhang, \"An adaptive estimation of distribution algorithm for multipolicy insurance investment planning,\" IEEE Trans. Evol. Comput., vol. 23, no. 1, pp. 1-14, Feb. 2019.\n[27] D. Pfeifer and J. Nešlehová, \"Modeling dependence in finance and insurance: The copula approach,\" Blätter DGVFM, vol. 26, no. 4, p. 805, 2004.\n[28] R. B. Nelsen, \"An introduction to copulas,\" in Lecture Notes Statistics, vol. 139. New York, NY, USA: Springer, 1999.\n[29] L. F. Wang, J. C. Zeng, and Y. Hong, \"Estimation of distribution algorithm based on copula theory,\" in Proc. IEEE Cong. Evol. Comput., 2009, pp. 1057-1063.\n[30] Y. Gao, \"Multivariate estimation of distribution algorithm with laplace transform Archimedean copula,\" in Proc. Int. Conf. Inf. Eng. Comput. Sci., Dec. 2009, pp. 1-5.\n[31] L. F. Wang, X. D. Guo, J. C. Zeng, and Y. Hong, \"Using Gumbel copula and empirical marginal distribution in estimation of distribution algorithm,\" in Proc. 3rd Int. Workshop Adv. Comput. Intell., 2010, pp. 583-587.\n[32] A. Cuesta-Infante, R. Santana, J. I. Hidalgo, C. Bielza, and P. Larrañaga, \"Bivariate empirical and n-variate Archimedean copulas in estimation of distribution algorithms,\" in Proc. IEEE Congr. Evol. Comput., Jul. 2010, pp. 1-8.\n[33] B. L. Ye, H. Gao, X. P. Wang, and J. C. Zeng, \"Estimation of distribution algorithm based on nested Archimedean copulas constructed with Lévy subordinators,\" in Proc. IEEE 11th Int. Conf. Comput.-Aided Ind. Design Concept. Design, Nov. 2010, pp. 1586-1590.\n[34] Y. Gao, X. Hu, and H. Liu, \"Estimation of distribution algorithm based on multivariate Gaussian copulas,\" in Proc. IEEE Int. Conf. Prog. Informat. Comput., Dec. 2010, pp. 254-257.\n[35] X. Guo, L. Wang, J. Zeng, and X. Zhang, \"Copula estimation of distribution algorithm with PMLE,\" in Proc. 7th Int. Conf. Natural Comput., Jul. 2011, pp. 1077-1081.\n[36] Y. Gao, L. Peng, F. Li, M. Liu, and X. Hu, \"Pareto-based multiobjective estimation of distribution algorithm with Gaussian copulas and application in RFID network planning,\" in Proc. IEEE 5th Int. Conf. Adv. Comput. Intell. (ICACI), Oct. 2012, pp. 370-373.\n[37] H. D. de Mello, Jr., A. V. A. da Cruz, and M. M. B. R. Vellasco, \"Estimation of distribution algorithm based on a multivariate extension of the Archimedean copula,\" in Proc. BRICS Cong. Comput. Intell. 11th Brazilian Cong. Comput. Intell., 2013, pp. 75-80.\n[38] H. D. Xu, M. Y. Jiang, and K. Xu, \"Archimedean copula estimation of distribution algorithm based on artificial bee colony algorithm,\" J. Syst. Eng. Electron., vol. 26, no. 2, pp. 388-396, 2015.\n[39] M. Hyrš and J. Schwarz, \"Advanced parallel copula based EDA,\" in Proc. IEEE Symp. Series Comput. Intell., 2016, pp. 1-8.\n[40] H. D. de Mello, Jr., L. Martí, A. V. A. da Cruz, and M. M. B. R. Vellasco, \"Evolutionary algorithms and elliptical copulas applied to continuous optimization problems,\" Inf. Sci., vol. 369, pp. 419-440, Nov. 2016.\n[41] S. Gao and C. W. de Silva, \"Estimation distribution algorithms on constrained optimization problems,\" Appl. Math. Comput., vol. 339, pp. 323-345, Dec. 2018.\n[42] B. Qian, Z. C. Li, and R. Hu, \"A copula-based hybrid estimation of distribution algorithm form-machine reentrant permutation flowshop scheduling problem,\" Appl. Soft Comput., vol. 61, pp. 921-934, Dec. 2017.\n\n[43] C. Liu, H. Chen, R. Xu, and Y. Wang, \"Minimizing the resource consumption of heterogeneous batch-processing machines using a copulabased estimation of distribution algorithm,\" Appl. Soft Comput., vol. 73, pp. 283-305, Dec. 2018.\n[44] R. E. Kalman, \"A new approach to linear filtering and prediction problems,\" J. Basic Eng., vol. 82, no. 1, pp. 35-45, Mar. 1960.\n[45] A. Muruganantham, K. C. Tan, and P. Vadakkepat, \"Evolutionary dynamic multiobjective optimization via Kalman filter prediction,\" IEEE Trans. Cybern., vol. 46, no. 12, pp. 2862-2873, Dec. 2016.\n[46] J. C. Strelen and F. Nassaj, \"Analysis and generation of random vectors with copulas,\" in Proc. Winter Simulation Conf., Dec. 2007, pp. 488-496.\n[47] W. B. Powell and P. Frazier, \"Optimal learning,\" in Proc. Tuts. Oper. Res., 2008, pp. 213-246.\n[48] P. Ge, Y. Meng, J. Liu, L. Tang, and R. Zhao, \"Logistics optimisation of slab pre-marshalling problem in steel industry,\" Int. J. Prod. Res., vol. 58, no. 13, pp. 4050-4070, 2019, doi: 10.1080/00207543.2019.1641238.\n[49] S. S. Gupta and K. J. Miescke, \"Bayesian look ahead one-stage sampling allocations for selection of the best population,\" J. Stat. Planning Inference, vol. 54, no. 2, pp. 229-244, Sep. 1996.\n[50] J. J. Liang, B. Y. Qu, P. N. Suganthan, and G. A. Hernández-Díaz. (2013). Problem Definitions and Evaluation Criteria for the CEC 2013 Special Session on Real-Parameter Optimization. [Online]. Available: http://www.ntu.edu.sg/home/epnsugan/\n[51] P. Suganthan et al., \"Problem definitions and evaluation criteria for the CEC 2005 special session on real-parameter optimization,\" Kanpur Genet. Algorithms Lab., IIT Kanpur, Kanpur, India, Tech. Rep. 2005005, 2005. [Online]. Available: http://www.ntu.edu.sg/home/EPNSugan/\n[52] X. Yao, Y. Liu, and G. Lin, \"Evolutionary programming made faster,\" IEEE Trans. Evol. Comput., vol. 3, no. 2, pp. 82-102, Jul. 1999.\n[53] L. Tang, Y. Dong, and J. Liu, \"Differential evolution with an individualdependent mechanism,\" IEEE Trans. Evol. Comput., vol. 19, no. 4, pp. 560-574, Aug. 2015.\n[54] Y. Wang, Z. Cai, and Q. Zhang, \"Differential evolution with composite trial vector generation strategies and control parameters,\" IEEE Trans. Evol. Comput., vol. 15, no. 1, pp. 55-66, Feb. 2011.\n[55] M. G. Epitropakis, D. K. Tasoulis, N. G. Pavlidis, V. P. Plagianakos, and M. N. Vrahatis, \"Enhancing differential evolution utilizing proximitybased mutation operators,\" IEEE Trans. Evol. Comput., vol. 15, no. 1, pp. 99-119, Feb. 2011.\n[56] A. K. Qin, V. L. Huang, and P. N. Suganthan, \"Differential evolution algorithm with strategy adaptation for global numerical optimization,\" IEEE Trans. Evol. Comput., vol. 13, no. 2, pp. 398-417, Apr. 2009.\n![img-11.jpeg](img-11.jpeg)\n\nLixin Tang (Senior Member, IEEE) received the B.Eng. degree in industrial automation, the M.Eng. degree in systems engineering, and the Ph.D. degree in control theory and application from Northeastern University, Shenyang, China, in 1988, 1991, 1996, respectively.\n\nHe is currently a Fellow of the Chinese Academy of Engineering, Beijing, China; the Director of Key Laboratory of Data Analytics and Optimization for Smart Industry, Ministry of Education, China; and the Head of Centre for Artificial Intelligence and Data Science, Northeastern University. His research articles have appeared in academic journals, such as Operations Research, INFORMS Journal on Computing, IIE Transactions, IEEE Transactions on Evolutionary Computation, IEEE Transactions on Power Systems, and IEEE Transactions on Control Systems Technology. His research interests cover industrial big data science, data analytics and machine learning, reinforcement learning and dynamic optimization, computational intelligent optimization, plant-wide production and logistics planning, production and logistics batching and scheduling and engineering applications in manufacturing (steel, petroleum-chemical, nonferrous), energy, resources industry, and logistics systems.\nDr. Tang serves as an Associate Editor for IISE Transactions, IEEE Transactions on Evolutionary Computation, IEEE Transactions on Cybernetics, Journal of Scheduling, International Journal of Production Research, Journal of the Operational Research Society, on the Editorial Board for Annals of Operations Research, and an Area Editor for the Asia-Pacific Journal of Operational Research.\n![img-12.jpeg](img-12.jpeg)\n\nXiangman Song is currently pursuing the Ph.D. degree in logistics optimization and control with the Institute of Industrial and Systems Engineering, Northeastern University, Shenyang, China.\nHis research interests include operations analytics and optimization for smart industry, optimal and predictive control, data analytics and machine learning, and computational intelligent optimization.\n![img-13.jpeg](img-13.jpeg)\n\nJiyin Liu received the B.Eng. degree in industrial automation and the M.Eng. degree in systems engineering from Northeastern University, Shenyang, China, in 1982 and 1985, respectively; and the Ph.D. degree in manufacturing engineering and operations management from the University of Nottingham, Nottingham, U.K., in 1993.\nHe is currently a Professor of Operations Management with the School of Business and Economics, Loughborough University, Loughborough, U.K. He is also a Cheung Kong Scholars Visiting Chair Professor with the Institute of Industrial and Systems Engineering, Northeastern University. He has authored articles in journals such as the European Journal of Operational Research, IEEE Transactions, IIE Transactions, the International Journal of Production Research, Naval Research Logistics, Operations Research, and Transportation Research. His research interests are in operations planning and scheduling problems in production, logistics, and supply chains, and mathematical modeling, optimization, and heuristic methods.\n![img-14.jpeg](img-14.jpeg)\n\nChang Liu (Member, IEEE) is currently pursuing the Ph.D. degree in systems engineering with the Institute of Industrial and Systems Engineering, Northeastern University, Shenyang, China.\nHe has authored several articles in journals such as the IEEE Transactions on Systems, Man, and Cybernetics: Systems, the IEEE Transactions on Automation Science and Engineering, and Neurocomputing. His research interests include data analytics and optimization for smart industry, model predictive control, machine learning, computational intelligent optimization, and engineering applications in various industrial processes.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "L. X. Tang, C. Liu, J. Y. Liu, and X. P. Wang, \"An estimation of distribution algorithm with resampling and local improvement for an operation optimization problem in steelmaking process,\" IEEE Trans. Syst., Man., Cybern. Syst., to be published, doi: 10.1109/TSMC.2019.2962880."
+      },
+      {
+        "ref_id": "2",
+        "text": "C. Liu, L. Tang, J. Liu, and Z. Tang, \"A dynamic analytics method based on multistage modeling for a BOF steelmaking process,\" IEEE Trans. Autom. Sci. Eng., vol. 16, no. 3, pp. 1097-1109, Jul. 2019."
+      },
+      {
+        "ref_id": "3",
+        "text": "C. Liu, L. Tang, and J. Liu, \"A stacked autoencoder with sparse Bayesian regression for end-point prediction problems in steelmaking process,\" IEEE Trans. Autom. Sci. Eng., vol. 17, no. 2, pp. 550-561, Apr. 2020."
+      },
+      {
+        "ref_id": "4",
+        "text": "L. X. Tang and Y. Meng, \"Data analytics and optimization for smart industry,\" Frontier Eng. Manage., 2020, doi: 10.1007/s42524-020-0126-0,"
+      },
+      {
+        "ref_id": "5",
+        "text": "H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. Binary parameters,\" Parallel Problem Solving From Nature-PPSN IV (Lecture Notes in Computer Science), vol. 1411. Berlin, Germany: Springer-Verlag, 1996, pp. 178-187."
+      },
+      {
+        "ref_id": "6",
+        "text": "P. Larrñaga and J. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Boston, MA, USA: Kluwer Academic, 2002."
+      },
+      {
+        "ref_id": "7",
+        "text": "M. Wagner, A. Auger, and M. Schoenauer, \"EEDA: A new robust estimation of distribution algorithm,\" INRIA, Rapport de Recherche, Rocquencourt, France, Tech. Rep. RR-5190, 2004."
+      },
+      {
+        "ref_id": "8",
+        "text": "M. Gallagher, M. Frean, and T. Downs, \"Real-valued evolutionary optimization using a flexible probability density estimator,\" in Proc. GECCO, 1999, pp. 840-846."
+      },
+      {
+        "ref_id": "9",
+        "text": "P. Bosman and D. Thierens, \"Advancing continuous IDEAs with mixture distributions and factorization selection metrics,\" in Proc. Optim. Building Using Probabilistic Models OBUPM Workshop (GECCO), 2001, pp. 208-212."
+      },
+      {
+        "ref_id": "10",
+        "text": "Q. Lu and X. Yao, \"Clustering and learning Gaussian distribution for continuous optimization,\" IEEE Trans. Syst., Man, Cybern. C, Appl. Rev., vol. 35, no. 2, pp. 195-204, May 2005."
+      },
+      {
+        "ref_id": "11",
+        "text": "Y. Liang, Z. Ren, X. Yao, Z. Feng, A. Chen, and W. Guo, \"Enhancing Gaussian estimation of distribution algorithm by exploiting evolution direction with archive,\" IEEE Trans. Cybern., vol. 50, no. 1, pp. 140-152, Jan. 2020."
+      },
+      {
+        "ref_id": "12",
+        "text": "J. Sun, Q. Zhang, and E. Tsang, \"DE/EDA: A new evolutionary algorithm for global optimization,\" Inf. Sci., vol. 169, nos. 3-4, pp. 249-262, Feb. 2005."
+      },
+      {
+        "ref_id": "13",
+        "text": "W. Dong, T. Chen, P. Tino, and X. Yao, \"Scaling up estimation of distribution algorithms for continuous optimization,\" IEEE Trans. Evol. Comput., vol. 17, no. 6, pp. 797-822, Dec. 2013."
+      },
+      {
+        "ref_id": "14",
+        "text": "S. Tsutsui, M. Pelikan, and D. Goldberg, \"Evolutionary algorithm using marginal histogram models in continuous domain,\" in Proc. Optim. Building Using Probabilistic Models OBUPM Workshop (GECCO), 2001, pp. 230-233."
+      },
+      {
+        "ref_id": "15",
+        "text": "B. Yuan and M. Gallagher, \"Playing in continuous spaces: Some analysis and extension of population-based incremental learning,\" in Proc. IEEE Congr. Evol. Comput., vol. 1, Dec. 2003, pp. 443-450."
+      },
+      {
+        "ref_id": "16",
+        "text": "N. Ding, S. Zhou, and Z. Sun, \"Optimizing continuous problems using estimation of distribution algorithm based on histogram model,\" in Proc. 6th Conf. Simulation Evol. Learn., 2006, pp. 545-552."
+      },
+      {
+        "ref_id": "17",
+        "text": "N. Ding, S. Zhou, H. Zhang, and Z. Sun, \"Marginal probability distribution algorithm: A competent method for continuous optimization,\" J. Comput. Sci. Technol., vol. 23, no. 1, pp. 35-43, 2008."
+      },
+      {
+        "ref_id": "18",
+        "text": "A. Zhou, J. Y. Sun, and Q. F. Zhang, \"An estimation of distribution algorithm with cheap and expensive local search methods,\" IEEE Trans. Evol. Comput., vol. 19, no. 6, pp. 807-822, Dec. 2015."
+      },
+      {
+        "ref_id": "19",
+        "text": "P. Bosman and D. Thierens, \"Numerical optimization with real-valued estimation-of-distribution algorithms,\" in Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, M. Pelikan, K. Sastry, E. Cantu-Paz, Eds. Berlin, Germany: Springer-Verlag, 2006, pp. 91-120."
+      },
+      {
+        "ref_id": "20",
+        "text": "H. Mühlenbein, T. Malmig, and A. Ochoa, \"Schemata, distributions and graphical models in evolutionary optimization,\" J. Heuristics, vol. 5, no. 2, pp. 213-247, 1999."
+      },
+      {
+        "ref_id": "21",
+        "text": "R. Etxeberria and P. Larrañaga, \"Global optimization using Bayesian networks,\" in Proc. 2nd Symp. Artif. Intell. (CIMAF), 1999, pp. 332-399."
+      },
+      {
+        "ref_id": "22",
+        "text": "S. Shakya and J. McCall, \"Optimization by estimation of distribution with DEUM framework based on Markov random fields,\" Int. J. Auto. Comput., vol. 4, no. 3, pp. 262-272, 2007."
+      },
+      {
+        "ref_id": "23",
+        "text": "M. Pelikan and D. E. Goldberg, \"Genetic algorithms, clustering, and the breaking of symmetry,\" in Proc. 6th Int. Conf. Parallel Problem Solving Nature-PPSN VI, 2007, pp. 385-394."
+      },
+      {
+        "ref_id": "24",
+        "text": "R. Santana, P. Larrañaga, and J. A. Lozano, \"Mixtures of Kikuchi approximations,\" in Proc. 17th Eur. Conf. Mach. Learn. (ECML), (Lecture Notes in Artificial Intelligence), vol. 4212, 2006, pp. 365-376."
+      },
+      {
+        "ref_id": "25",
+        "text": "W. Shao, D. Pi, and Z. Shao, \"A Pareto-based estimation of distribution algorithm for solving multiobjective distributed no-wait flow-shop scheduling problem with sequence-dependent setup time,\" IEEE Trans. Autom. Sci. Eng., vol. 16, no. 3, pp. 1344-1360, Jul. 2019."
+      },
+      {
+        "ref_id": "26",
+        "text": "W. Shi, W.-N. Chen, Y. Lin, T. Gu, S. Kwong, and J. Zhang, \"An adaptive estimation of distribution algorithm for multipolicy insurance investment planning,\" IEEE Trans. Evol. Comput., vol. 23, no. 1, pp. 1-14, Feb. 2019."
+      },
+      {
+        "ref_id": "27",
+        "text": "D. Pfeifer and J. Nešlehová, \"Modeling dependence in finance and insurance: The copula approach,\" Blätter DGVFM, vol. 26, no. 4, p. 805, 2004."
+      },
+      {
+        "ref_id": "28",
+        "text": "R. B. Nelsen, \"An introduction to copulas,\" in Lecture Notes Statistics, vol. 139. New York, NY, USA: Springer, 1999."
+      },
+      {
+        "ref_id": "29",
+        "text": "L. F. Wang, J. C. Zeng, and Y. Hong, \"Estimation of distribution algorithm based on copula theory,\" in Proc. IEEE Cong. Evol. Comput., 2009, pp. 1057-1063."
+      },
+      {
+        "ref_id": "30",
+        "text": "Y. Gao, \"Multivariate estimation of distribution algorithm with laplace transform Archimedean copula,\" in Proc. Int. Conf. Inf. Eng. Comput. Sci., Dec. 2009, pp. 1-5."
+      },
+      {
+        "ref_id": "31",
+        "text": "L. F. Wang, X. D. Guo, J. C. Zeng, and Y. Hong, \"Using Gumbel copula and empirical marginal distribution in estimation of distribution algorithm,\" in Proc. 3rd Int. Workshop Adv. Comput. Intell., 2010, pp. 583-587."
+      },
+      {
+        "ref_id": "32",
+        "text": "A. Cuesta-Infante, R. Santana, J. I. Hidalgo, C. Bielza, and P. Larrañaga, \"Bivariate empirical and n-variate Archimedean copulas in estimation of distribution algorithms,\" in Proc. IEEE Congr. Evol. Comput., Jul. 2010, pp. 1-8."
+      },
+      {
+        "ref_id": "33",
+        "text": "B. L. Ye, H. Gao, X. P. Wang, and J. C. Zeng, \"Estimation of distribution algorithm based on nested Archimedean copulas constructed with Lévy subordinators,\" in Proc. IEEE 11th Int. Conf. Comput.-Aided Ind. Design Concept. Design, Nov. 2010, pp. 1586-1590."
+      },
+      {
+        "ref_id": "34",
+        "text": "Y. Gao, X. Hu, and H. Liu, \"Estimation of distribution algorithm based on multivariate Gaussian copulas,\" in Proc. IEEE Int. Conf. Prog. Informat. Comput., Dec. 2010, pp. 254-257."
+      },
+      {
+        "ref_id": "35",
+        "text": "X. Guo, L. Wang, J. Zeng, and X. Zhang, \"Copula estimation of distribution algorithm with PMLE,\" in Proc. 7th Int. Conf. Natural Comput., Jul. 2011, pp. 1077-1081."
+      },
+      {
+        "ref_id": "36",
+        "text": "Y. Gao, L. Peng, F. Li, M. Liu, and X. Hu, \"Pareto-based multiobjective estimation of distribution algorithm with Gaussian copulas and application in RFID network planning,\" in Proc. IEEE 5th Int. Conf. Adv. Comput. Intell. (ICACI), Oct. 2012, pp. 370-373."
+      },
+      {
+        "ref_id": "37",
+        "text": "H. D. de Mello, Jr., A. V. A. da Cruz, and M. M. B. R. Vellasco, \"Estimation of distribution algorithm based on a multivariate extension of the Archimedean copula,\" in Proc. BRICS Cong. Comput. Intell. 11th Brazilian Cong. Comput. Intell., 2013, pp. 75-80."
+      },
+      {
+        "ref_id": "38",
+        "text": "H. D. Xu, M. Y. Jiang, and K. Xu, \"Archimedean copula estimation of distribution algorithm based on artificial bee colony algorithm,\" J. Syst. Eng. Electron., vol. 26, no. 2, pp. 388-396, 2015."
+      },
+      {
+        "ref_id": "39",
+        "text": "M. Hyrš and J. Schwarz, \"Advanced parallel copula based EDA,\" in Proc. IEEE Symp. Series Comput. Intell., 2016, pp. 1-8."
+      },
+      {
+        "ref_id": "40",
+        "text": "H. D. de Mello, Jr., L. Martí, A. V. A. da Cruz, and M. M. B. R. Vellasco, \"Evolutionary algorithms and elliptical copulas applied to continuous optimization problems,\" Inf. Sci., vol. 369, pp. 419-440, Nov. 2016."
+      },
+      {
+        "ref_id": "41",
+        "text": "S. Gao and C. W. de Silva, \"Estimation distribution algorithms on constrained optimization problems,\" Appl. Math. Comput., vol. 339, pp. 323-345, Dec. 2018."
+      },
+      {
+        "ref_id": "42",
+        "text": "B. Qian, Z. C. Li, and R. Hu, \"A copula-based hybrid estimation of distribution algorithm form-machine reentrant permutation flowshop scheduling problem,\" Appl. Soft Comput., vol. 61, pp. 921-934, Dec. 2017."
+      },
+      {
+        "ref_id": "43",
+        "text": "C. Liu, H. Chen, R. Xu, and Y. Wang, \"Minimizing the resource consumption of heterogeneous batch-processing machines using a copulabased estimation of distribution algorithm,\" Appl. Soft Comput., vol. 73, pp. 283-305, Dec. 2018."
+      },
+      {
+        "ref_id": "44",
+        "text": "R. E. Kalman, \"A new approach to linear filtering and prediction problems,\" J. Basic Eng., vol. 82, no. 1, pp. 35-45, Mar. 1960."
+      },
+      {
+        "ref_id": "45",
+        "text": "A. Muruganantham, K. C. Tan, and P. Vadakkepat, \"Evolutionary dynamic multiobjective optimization via Kalman filter prediction,\" IEEE Trans. Cybern., vol. 46, no. 12, pp. 2862-2873, Dec. 2016."
+      },
+      {
+        "ref_id": "46",
+        "text": "J. C. Strelen and F. Nassaj, \"Analysis and generation of random vectors with copulas,\" in Proc. Winter Simulation Conf., Dec. 2007, pp. 488-496."
+      },
+      {
+        "ref_id": "47",
+        "text": "W. B. Powell and P. Frazier, \"Optimal learning,\" in Proc. Tuts. Oper. Res., 2008, pp. 213-246."
+      },
+      {
+        "ref_id": "48",
+        "text": "P. Ge, Y. Meng, J. Liu, L. Tang, and R. Zhao, \"Logistics optimisation of slab pre-marshalling problem in steel industry,\" Int. J. Prod. Res., vol. 58, no. 13, pp. 4050-4070, 2019, doi: 10.1080/00207543.2019.1641238."
+      },
+      {
+        "ref_id": "49",
+        "text": "S. S. Gupta and K. J. Miescke, \"Bayesian look ahead one-stage sampling allocations for selection of the best population,\" J. Stat. Planning Inference, vol. 54, no. 2, pp. 229-244, Sep. 1996."
+      },
+      {
+        "ref_id": "50",
+        "text": "J. J. Liang, B. Y. Qu, P. N. Suganthan, and G. A. Hernández-Díaz. (2013). Problem Definitions and Evaluation Criteria for the CEC 2013 Special Session on Real-Parameter Optimization. [Online]. Available: http://www.ntu.edu.sg/home/epnsugan/"
+      },
+      {
+        "ref_id": "51",
+        "text": "P. Suganthan et al., \"Problem definitions and evaluation criteria for the CEC 2005 special session on real-parameter optimization,\" Kanpur Genet. Algorithms Lab., IIT Kanpur, Kanpur, India, Tech. Rep. 2005005, 2005. [Online]. Available: http://www.ntu.edu.sg/home/EPNSugan/"
+      },
+      {
+        "ref_id": "52",
+        "text": "X. Yao, Y. Liu, and G. Lin, \"Evolutionary programming made faster,\" IEEE Trans. Evol. Comput., vol. 3, no. 2, pp. 82-102, Jul. 1999."
+      },
+      {
+        "ref_id": "53",
+        "text": "L. Tang, Y. Dong, and J. Liu, \"Differential evolution with an individualdependent mechanism,\" IEEE Trans. Evol. Comput., vol. 19, no. 4, pp. 560-574, Aug. 2015."
+      },
+      {
+        "ref_id": "54",
+        "text": "Y. Wang, Z. Cai, and Q. Zhang, \"Differential evolution with composite trial vector generation strategies and control parameters,\" IEEE Trans. Evol. Comput., vol. 15, no. 1, pp. 55-66, Feb. 2011."
+      },
+      {
+        "ref_id": "55",
+        "text": "M. G. Epitropakis, D. K. Tasoulis, N. G. Pavlidis, V. P. Plagianakos, and M. N. Vrahatis, \"Enhancing differential evolution utilizing proximitybased mutation operators,\" IEEE Trans. Evol. Comput., vol. 15, no. 1, pp. 99-119, Feb. 2011."
+      },
+      {
+        "ref_id": "56",
+        "text": "A. K. Qin, V. L. Huang, and P. N. Suganthan, \"Differential evolution algorithm with strategy adaptation for global numerical optimization,\" IEEE Trans. Evol. Comput., vol. 13, no. 2, pp. 398-417, Apr. 2009."
+      }
+    ],
+    "reference_count": 56,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Parameters of the Proposed Algorithm",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$N P$",
+          400
+        ],
+        [
+          "$\\alpha$",
+          0.6
+        ],
+        [
+          "$p_{0}$",
+          0.1
+        ],
+        [
+          "$K$",
+          2
+        ],
+        [
+          "$M$",
+          2
+        ],
+        [
+          "$a_{1}$",
+          0.1
+        ],
+        [
+          "$n_{\\text {min }}$",
+          1
+        ],
+        [
+          "$\\beta_{x_{d, j}}^{n}$",
+          0.1
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "Mean and Standard Deviations of Benchmark Test Functions for Parameter Analysis",
+      "headers": [
+        "Pro.",
+        "D",
+        "$\\begin{gathered} \\text { EDA-F } \\\\ (p_{1}=0, p_{2}=0) \\\\ \\text { Mean/Std } \\end{gathered}$",
+        "EDA-F <br> (best prediction) <br> Mean/Std",
+        "$\\begin{gathered} \\text { EDA-F } \\\\ (p_{1}=0.05, p_{2}=0.05) \\\\ \\text { Mean/Std } \\end{gathered}$",
+        "$\\begin{gathered} \\text { EDA-F } \\\\ (p_{1}=0.1, p_{2}=0) \\\\ \\text { Mean/Std } \\end{gathered}$",
+        "$\\begin{gathered} \\text { EDA-F } \\\\ (p_{1}=0.2, p_{2}=0.4) \\\\ \\text { Mean/Std } \\end{gathered}$"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          10,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "",
+          30,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "",
+          50,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "$F_{2}$",
+          10,
+          "1.14e-01 $\\pm 1.63 \\mathrm{e}-01$",
+          "3.96e-02 $\\pm 3.70 \\mathrm{e}-02$",
+          "8.88e-05 $\\pm 1.12 \\mathrm{e}-04$",
+          "3.61e-05 $\\pm 5.93 \\mathrm{e}-05$",
+          3.53
+        ],
+        [
+          "",
+          30,
+          4.14,
+          1.47,
+          7.72,
+          1.5,
+          1.4601
+        ],
+        [
+          "",
+          50,
+          1.1801,
+          9.15,
+          2.76,
+          6.42,
+          7.8801
+        ],
+        [
+          "$F_{16}$",
+          10,
+          1.42,
+          "3.47e-02 $\\pm 2.34 \\mathrm{e}-02$",
+          "1.54e-01 $\\pm 1.66 \\mathrm{e}-01$",
+          "1.10e-01 $\\pm 7.80 \\mathrm{e}-02$",
+          "1.95e-01 $\\pm 1.25 \\mathrm{e}-01$"
+        ],
+        [
+          "",
+          30,
+          2.89,
+          "3.81e-01 $\\pm 2.00 \\mathrm{e}-01$",
+          "5.44e-01 $\\pm 3.00 \\mathrm{e}-01$",
+          "5.94e-01 $\\pm 2.89 \\mathrm{e}-01$",
+          "5.78e-01 $\\pm 3.81 \\mathrm{e}-01$"
+        ],
+        [
+          "",
+          50,
+          3.66,
+          "6.80e-01 $\\pm 3.77 \\mathrm{e}-01$",
+          "8.30e-01 $\\pm 3.41 \\mathrm{e}-01$",
+          "9.60e-01 $\\pm 4.39 \\mathrm{e}-01$",
+          1.02
+        ],
+        [
+          "$F_{17}$",
+          10,
+          9.29,
+          1.0301,
+          9.3,
+          9.79,
+          1.0301
+        ],
+        [
+          "",
+          30,
+          3.1201,
+          3.1101,
+          3.1101,
+          3.1201,
+          3.1501
+        ],
+        [
+          "",
+          50,
+          5.2301,
+          5.2101,
+          5.2601,
+          5.2901,
+          5.2901
+        ],
+        [
+          "$F_{19}$",
+          10,
+          "3.93e-01 $\\pm 1.31 \\mathrm{e}-01$",
+          "4.40e-01 $\\pm 1.31 \\mathrm{e}-01$",
+          "3.66e-01 $\\pm 1.30 \\mathrm{e}-01$",
+          "4.61e-01 $\\pm 1.14 \\mathrm{e}-01$",
+          "4.81e-01 $\\pm 1.75 \\mathrm{e}-01$"
+        ],
+        [
+          "",
+          30,
+          1.09,
+          1.13,
+          1.17,
+          1.31,
+          1.48
+        ],
+        [
+          "",
+          50,
+          2.15,
+          1.88,
+          2.2,
+          2.47,
+          2.6
+        ],
+        [
+          "$F_{26}$",
+          10,
+          1.9102,
+          1.9602,
+          1.9602,
+          1.9202,
+          1.9602
+        ],
+        [
+          "",
+          30,
+          2.0002,
+          2.0002,
+          2.0002,
+          2.0002,
+          2.0002
+        ],
+        [
+          "",
+          50,
+          2.0002,
+          2.0002,
+          2.0002,
+          2.0002,
+          2.0002
+        ],
+        [
+          "$F_{28}$",
+          10,
+          2.7002,
+          2.6802,
+          2.8002,
+          2.9002,
+          2.8002
+        ],
+        [
+          "",
+          30,
+          3.0002,
+          3.0002,
+          3.0002,
+          3.0002,
+          3.0002
+        ],
+        [
+          "",
+          50,
+          5.5002,
+          5.4802,
+          4.0002,
+          5.5202,
+          5.5502
+        ],
+        [
+          "No. of Best",
+          "",
+          9,
+          14,
+          10,
+          7,
+          6
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 7
+    },
+    {
+      "table_number": "III",
+      "table_title": "Mean and Standard Deviations of Results on 10-D Benchmark Test Functions",
+      "headers": [
+        "",
+        "Pro. (10-D)",
+        "EDA <br> Mean/Std",
+        "EDA-F <br> Mean/Std",
+        "EDA-FL <br> Mean/Std"
+      ],
+      "rows": [
+        [
+          "",
+          "$F_{1}$",
+          "5.21e-01 $\\pm 8.12 \\mathrm{e}-01$",
+          0.0,
+          0.0
+        ],
+        [
+          "",
+          "$F_{2}$",
+          8.0303,
+          "3.96e-02 $\\pm 3.70 \\mathrm{e}-02$",
+          "3.87e-04 $\\pm 2.82 \\mathrm{e}-04$"
+        ],
+        [
+          "",
+          "$F_{3}$",
+          1.2708,
+          1.1701,
+          1.26
+        ],
+        [
+          "",
+          "$F_{4}$",
+          7.7403,
+          "2.51e-02 $\\pm 1.90 \\mathrm{e}-02$",
+          "3.24e-04 $\\pm 2.47 \\mathrm{e}-04$"
+        ],
+        [
+          "",
+          "$F_{5}$",
+          2.22,
+          0.0,
+          0.0
+        ],
+        [
+          "",
+          "$F_{6}$",
+          1.8401,
+          4.71,
+          4.32
+        ],
+        [
+          "",
+          "$F_{7}$",
+          1.2801,
+          "4.90e-02 $\\pm 1.88 \\mathrm{e}-01$",
+          "1.78e-03 $\\pm 8.74 \\mathrm{e}-03$"
+        ],
+        [
+          "",
+          "$F_{8}$",
+          2.0501,
+          2.0301,
+          2.0301
+        ],
+        [
+          "",
+          "$F_{9}$",
+          3.05,
+          1.87,
+          1.91
+        ],
+        [
+          "",
+          "$F_{10}$",
+          6.05,
+          "2.24e-01 $\\pm 1.35 \\mathrm{e}-01$",
+          "9.39e-02 $\\pm 7.56 \\mathrm{e}-02$"
+        ],
+        [
+          "",
+          "$F_{11}$",
+          "7.29e-01 $\\pm 7.64 \\mathrm{e}-01$",
+          0.0,
+          0.0
+        ],
+        [
+          "",
+          "$F_{12}$",
+          1.0501,
+          1.0801,
+          1.0801
+        ],
+        [
+          "",
+          "$F_{13}$",
+          1.3501,
+          1.6601,
+          1.4701
+        ],
+        [
+          "",
+          "$F_{14}$",
+          2.73,
+          "8.40e-01 $\\pm 1.41 \\mathrm{e}+00$",
+          1.43
+        ],
+        [
+          "",
+          "$F_{15}$",
+          1.2303,
+          8.4802,
+          9.2802
+        ],
+        [
+          "",
+          "$F_{16}$",
+          1.14,
+          "3.47e-02 $\\pm 2.34 \\mathrm{e}-02$",
+          "1.42e-02 $\\pm 1.36 \\mathrm{e}-02$"
+        ],
+        [
+          "",
+          "$F_{17}$",
+          1.1101,
+          1.0301,
+          9.31
+        ],
+        [
+          "",
+          "$F_{18}$",
+          2.9601,
+          2.0701,
+          1.9501
+        ],
+        [
+          "",
+          "$F_{19}$",
+          "5.83e-01 $\\pm 1.96 \\mathrm{e}-01$",
+          "4.40e-01 $\\pm 1.31 \\mathrm{e}-01$",
+          "5.12e-01 $\\pm 1.77 \\mathrm{e}-01$"
+        ],
+        [
+          "",
+          "$F_{20}$",
+          2.89,
+          2.81,
+          2.56
+        ],
+        [
+          "",
+          "$F_{21}$",
+          4.0002,
+          4.0002,
+          3.9202
+        ],
+        [
+          "",
+          "$F_{22}$",
+          3.6801,
+          4.5201,
+          4.0901
+        ],
+        [
+          "",
+          "$F_{23}$",
+          9.8102,
+          9.4102,
+          9.1802
+        ],
+        [
+          "",
+          "$F_{24}$",
+          2.1102,
+          2.0202,
+          2.0102
+        ],
+        [
+          "",
+          "$F_{25}$",
+          2.0802,
+          1.9302,
+          1.9402
+        ],
+        [
+          "",
+          "$F_{26}$",
+          1.9102,
+          1.9602,
+          "1.93e+02v. 2.35e+01"
+        ],
+        [
+          "",
+          "$F_{27}$",
+          3.5502,
+          3.0002,
+          3.0002
+        ],
+        [
+          "",
+          "$F_{28}$",
+          3.2302,
+          2.6802,
+          2.9202
+        ],
+        [
+          "",
+          "No. of Best",
+          4,
+          10,
+          18
+        ]
+      ],
+      "row_count": 29,
+      "column_count": 5
+    }
+  ]
+}

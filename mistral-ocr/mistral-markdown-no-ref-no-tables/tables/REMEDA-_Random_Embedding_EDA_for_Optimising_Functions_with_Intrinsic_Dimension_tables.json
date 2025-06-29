@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/REMEDA- Random Embedding EDA for Optimising Functions with Intrinsic Dimension.md",
+    "filename": "REMEDA- Random Embedding EDA for Optimising Functions with Intrinsic Dimension.md",
+    "title": "REMEDA- Random Embedding EDA for Optimising Functions with Intrinsic Dimension",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test functions of low intrinsic dimension of 2 or $5 . o$ is the shift vector.",
+      "headers": [
+        "PN",
+        "Name",
+        "Expression"
+      ],
+      "rows": [
+        [
+          1,
+          "Sphere",
+          "$\\sum_{j=1}^{d_{i}}\\left(x_{j}-o_{j}\\right)^{2}$"
+        ],
+        [
+          2,
+          "Ackley's",
+          "$20-20 \\exp \\left(-0.2 \\sqrt{\\frac{1}{d_{i}} \\sum_{j=1}^{d_{i}}\\left(\\left(x_{j}-o_{j}\\right) * M\\right)^{2}}\\right)-\\right.$ $\\exp \\left(\\frac{1}{d_{i}} \\sum_{j=1}^{d_{i}}\\left(\\cos \\left(2 \\pi\\left(x_{j}-o_{j}\\right) * M\\right)\\right)+\\mathrm{e}\\right.$"
+        ],
+        [
+          3,
+          "Elliptic",
+          "$\\sum_{j=1}^{d_{i}}\\left(10^{6}\\right)^{\\frac{j-1}{d_{i}-1}} *\\left(x_{j}-o_{j}\\right) * M$ )"
+        ],
+        [
+          4,
+          "Rosenbrock",
+          "$\\sum_{j=1}^{d_{i}-1}\\left(100\\left(z_{j}^{2}-z_{j+1}\\right)^{2}+\\left(z_{j}-1\\right)^{2}\\right)$"
+        ],
+        [
+          5,
+          "Branin",
+          "$z=x-o+1$"
+        ],
+        [
+          "",
+          "",
+          "$\\left(-1.275 \\frac{x_{1}^{2}}{\\pi^{2}}+5 \\frac{x_{1}}{\\pi}+x_{2}-6\\right)^{2}$"
+        ],
+        [
+          "",
+          "",
+          "$+\\left(10-\\frac{5}{4 \\pi}\\right) \\cos \\left(x_{1}\\right)+10$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Fitness gap achieved by REMEDA on the Branin function ( $d_{i}=2$ embedded in $D=25$ ), with a total budget of 500 function evaluations.",
+      "headers": [
+        "Pop. size",
+        "$\\mathrm{d}=2$",
+        "",
+        "$\\mathrm{~d}=4$",
+        "",
+        "$\\mathrm{~d}=6$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Mean",
+          "std",
+          "Mean",
+          "std",
+          "Mean",
+          "std"
+        ],
+        [
+          300,
+          1.4297,
+          2.601,
+          2.4908,
+          3.1013,
+          3.9007,
+          3.0322
+        ],
+        [
+          150,
+          0.4128,
+          0.6607,
+          1.1701,
+          1.313,
+          2.1368,
+          2.1046
+        ],
+        [
+          80,
+          0.826,
+          2.9973,
+          0.4193,
+          0.4459,
+          0.8303,
+          0.9331
+        ],
+        [
+          40,
+          0.6375,
+          2.9073,
+          0.04,
+          0.0969,
+          0.1927,
+          0.3865
+        ],
+        [
+          30,
+          0.6737,
+          2.4939,
+          0.0336,
+          0.0853,
+          0.1038,
+          0.2615
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparing REMEDA with other state of the art methods.",
+      "headers": [
+        "Fn",
+        "REMEDA",
+        "",
+        "sep-CMA-ES",
+        "",
+        "EDA-MCC",
+        "",
+        "tRP-ENS-EDA",
+        "",
+        "RP-ENS-EDA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Mean",
+          "std",
+          "Mean",
+          "std",
+          "Mean",
+          "std",
+          "Mean",
+          "std",
+          "Mean",
+          "std"
+        ],
+        [
+          1,
+          0,
+          0,
+          "$3.81 \\mathrm{E}+04$",
+          "$2.16 \\mathrm{E}+04$",
+          "$6.41 \\mathrm{E}+04$",
+          "$8.21 \\mathrm{E}+03$",
+          37.8,
+          3.17,
+          25.79,
+          2.05
+        ],
+        [
+          2,
+          0,
+          0,
+          "$1.00 \\mathrm{E}+07$",
+          "$7.92 \\mathrm{E}+05$",
+          "$1.99 \\mathrm{E}+06$",
+          "$1.42 \\mathrm{E}+06$",
+          "$1.40 \\mathrm{E}+08$",
+          "$7.99 \\mathrm{E}+06$",
+          "$1.38 \\mathrm{E}+08$",
+          "$6.59 \\mathrm{E}+06$"
+        ],
+        [
+          3,
+          0.18,
+          0.01,
+          "$4.75 \\mathrm{E}+07$",
+          "$3.47 \\mathrm{E}+06$",
+          "$2.90 \\mathrm{E}+09$",
+          "$2.29 \\mathrm{E}+08$",
+          "$6.81 \\mathrm{E}+08$",
+          "$5.60 \\mathrm{E}+07$",
+          "$2.84 \\mathrm{E}+08$",
+          "$2.62 \\mathrm{E}+07$"
+        ],
+        [
+          6,
+          45.92,
+          216.11,
+          "$5.44 \\mathrm{E}+06$",
+          "$2.09 \\mathrm{E}+06$",
+          "$3.56 \\mathrm{E}+10$",
+          "$4.93 \\mathrm{E}+09$",
+          "$1.60 \\mathrm{E}+07$",
+          "$1.88 \\mathrm{E}+06$",
+          "$9.64 \\mathrm{E}+06$",
+          "$1.44 \\mathrm{E}+06$"
+        ],
+        [
+          8,
+          14.19,
+          7.89,
+          21.67,
+          0.01,
+          21.34,
+          0.06,
+          21.66,
+          0.01,
+          21.43,
+          0.06
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 11
+    }
+  ]
+}

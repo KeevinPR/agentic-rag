@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/An estimation of distribution algorithm (EDA) variant with QGA for Flowshop scheduling problem.md",
+    "filename": "An estimation of distribution algorithm (EDA) variant with QGA for Flowshop scheduling problem.md",
+    "title": "An estimation of distribution algorithm (EDA) variant with QGA for Flowshop scheduling problem",
+    "year": "2014"
+  },
+  "references": {
+    "header": "# REFERENCES",
+    "content": "[1] S. M. Johnson, \"Optimal two-and three-stage production schedules with setup times included,\" Naval research logistics quarterly, vol. 1, no. 1, pp. 61-68, 1954.\n[2] M. Nawaz, E. E. Enscore Jr, and I. Ham, \"A heuristic algorithm for the m-machine, n-job flow-shop sequencing problem,\" Omega, vol. 11, no. 1, pp. 91-95, //, 1983.\n[3] V. S. Vempati, C.-L. Chen, and S. F. Bullington, \"An effective heuristic for flow shop problems with total flow time as criterion,\" Computers \\& Industrial Engineering, vol. 25, no. 1-4, pp. 219-222, 1993.\n[4] C. Rajendran, and H. Ziegler, \"Ant-colony algorithms for permutation flowshop scheduling to minimize makespan/total flowtime of jobs,\" European Journal of Operational Research, vol. 155, no. 2, pp. 426-438, 6/1/, 2004.\n[5] Z. Lian, X. Gu, and B. Jiao, \"A similar particle swarm optimization algorithm for permutation flowshop scheduling to minimize makespan,\" Applied Mathematics and Computation, vol. 175, no. 1, pp. 773-785, 4/1/, 2006.\n[6] U. K. Chakraborty, \"Minimizing total flow time in permutation flow shop scheduling with improved simulated annealing.\" pp. 158-165.\n[7] H. Mühlenbein, and G. Paaß, \"From recombination of genes to the estimation of distributions I. Binary parameters,\" Parallel Problem Solving from Nature - PPSN IV, Lecture Notes in Computer Science H.-M. Voigt et al., eds., pp. 178-187: Springer Berlin Heidelberg, 1996.\n[8] K.-H. Han, and J.-H. Kim, \"Genetic quantum algorithm and its application to combinatorial optimization problem.\" pp. 1354-1360.\n[9] H. Kuk-Hyun et al., \"Parallel quantum-inspired genetic algorithm for combinatorial optimization problem.\" pp. $1422-1429$ vol. 2.\n[10]L. Wang et al., \"A Hybrid Quantum-Inspired Genetic Algorithm for Flow Shop Scheduling,\" Advances in Intelligent Computing, Lecture Notes in Computer Science D.-S. Huang, X.-P. Zhang and G.-B. Huang, eds., pp. 636-644: Springer Berlin Heidelberg, 2005.\n[11]B. Rylander et al., \"Quantum genetic algorithms.\" pp. 373-377.\n[12]T. Zheng, and M. Yamashiro, \"Solving flow shop scheduling problems by quantum differential evolutionary algorithm,\" The International Journal of Advanced Manufacturing Technology, vol. 49, no. 5-8, pp. 643-662, 2010/07/01, 2010.\n[13]B. Jarboui, M. Eddaly, and P. Siarry, \"An estimation of distribution algorithm for minimizing the total flowtime in permutation flowshop scheduling problems,\" Computers \\& Operations Research, vol. 36, no. 9, pp. 2638-2646, 2009.\n[14]L. Wang, H. Wu, and D.-z. Zheng, \"A Quantum-Inspired Genetic Algorithm for Scheduling Problems,\" Advances in Natural Computation, Lecture Notes in Computer Science L. Wang, K. Chen and Y. Ong, eds., pp. 417-423: Springer Berlin Heidelberg, 2005.\n[15]E. Taillard, \"Benchmarks for basic scheduling problems,\" European Journal of Operational Research, vol. 64, no. 2, pp. 278-285, 1993.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "S. M. Johnson, \"Optimal two-and three-stage production schedules with setup times included,\" Naval research logistics quarterly, vol. 1, no. 1, pp. 61-68, 1954."
+      },
+      {
+        "ref_id": "2",
+        "text": "M. Nawaz, E. E. Enscore Jr, and I. Ham, \"A heuristic algorithm for the m-machine, n-job flow-shop sequencing problem,\" Omega, vol. 11, no. 1, pp. 91-95, //, 1983."
+      },
+      {
+        "ref_id": "3",
+        "text": "V. S. Vempati, C.-L. Chen, and S. F. Bullington, \"An effective heuristic for flow shop problems with total flow time as criterion,\" Computers \\& Industrial Engineering, vol. 25, no. 1-4, pp. 219-222, 1993."
+      },
+      {
+        "ref_id": "4",
+        "text": "C. Rajendran, and H. Ziegler, \"Ant-colony algorithms for permutation flowshop scheduling to minimize makespan/total flowtime of jobs,\" European Journal of Operational Research, vol. 155, no. 2, pp. 426-438, 6/1/, 2004."
+      },
+      {
+        "ref_id": "5",
+        "text": "Z. Lian, X. Gu, and B. Jiao, \"A similar particle swarm optimization algorithm for permutation flowshop scheduling to minimize makespan,\" Applied Mathematics and Computation, vol. 175, no. 1, pp. 773-785, 4/1/, 2006."
+      },
+      {
+        "ref_id": "6",
+        "text": "U. K. Chakraborty, \"Minimizing total flow time in permutation flow shop scheduling with improved simulated annealing.\" pp. 158-165."
+      },
+      {
+        "ref_id": "7",
+        "text": "H. Mühlenbein, and G. Paaß, \"From recombination of genes to the estimation of distributions I. Binary parameters,\" Parallel Problem Solving from Nature - PPSN IV, Lecture Notes in Computer Science H.-M. Voigt et al., eds., pp. 178-187: Springer Berlin Heidelberg, 1996."
+      },
+      {
+        "ref_id": "8",
+        "text": "K.-H. Han, and J.-H. Kim, \"Genetic quantum algorithm and its application to combinatorial optimization problem.\" pp. 1354-1360."
+      },
+      {
+        "ref_id": "9",
+        "text": "H. Kuk-Hyun et al., \"Parallel quantum-inspired genetic algorithm for combinatorial optimization problem.\" pp. $1422-1429$ vol. 2."
+      }
+    ],
+    "reference_count": 9,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "P",
+        "$J, M$",
+        "$C^{*}$",
+        "NEH",
+        "GA",
+        "QGA",
+        "Q-EDA"
+      ],
+      "rows": [
+        [
+          1,
+          115,
+          7038,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          134,
+          7166,
+          2.93,
+          2.01,
+          1.9,
+          0.03
+        ],
+        [
+          3,
+          125,
+          7312,
+          1.19,
+          0.93,
+          1.65,
+          0.07
+        ],
+        [
+          4,
+          144,
+          8003,
+          0,
+          0.1,
+          0.06,
+          0
+        ],
+        [
+          5,
+          106,
+          7720,
+          1.49,
+          0.91,
+          0.11,
+          0
+        ],
+        [
+          6,
+          89,
+          8505,
+          3.15,
+          2.25,
+          0.19,
+          0.01
+        ],
+        [
+          7,
+          77,
+          6590,
+          0,
+          0.05,
+          0,
+          0
+        ],
+        [
+          8,
+          88,
+          8366,
+          2.37,
+          1.89,
+          0.3,
+          0.02
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Comparison of simulation results for Carlier Instances",
+      "headers": [
+        "$n \\times m$",
+        "GA",
+        "",
+        "",
+        "EDA",
+        "",
+        "",
+        "Q-EDA",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\Delta_{\\min }$",
+          "$\\Delta_{\\text {avg }}$",
+          "$\\Delta_{\\max }$",
+          "$\\Delta_{\\min }$",
+          "$\\Delta_{\\text {avg }}$",
+          "$\\Delta_{\\max }$",
+          "$\\Delta_{\\min }$",
+          "$\\Delta_{\\text {avg }}$",
+          "$\\Delta_{\\max }$"
+        ],
+        [
+          "$20 \\times 5$",
+          8.83,
+          9.84,
+          10.81,
+          0.23,
+          0.75,
+          1.32,
+          0.21,
+          0.6,
+          0.98
+        ],
+        [
+          "$20 \\times 10$",
+          7.79,
+          8.96,
+          10.07,
+          0.13,
+          0.73,
+          1.37,
+          0.11,
+          0.64,
+          1.16
+        ],
+        [
+          "$20 \\times 20$",
+          5.54,
+          6.38,
+          7.02,
+          0.18,
+          0.64,
+          1.28,
+          0.14,
+          0.62,
+          1.09
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 10
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/UAV path optimization with an integrated cost assessment model considering third-party risks in metropolitan environments.md",
+    "filename": "UAV path optimization with an integrated cost assessment model considering third-party risks in metropolitan environments.md",
+    "title": "UAV path optimization with an integrated cost assessment model considering third-party risks in metropolitan environments",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Definition of equation terms used in this paper.",
+      "headers": [
+        "Terms",
+        "Definitions and descriptions",
+        "Terms",
+        "Definitions and descriptions"
+      ],
+      "rows": [
+        [
+          "$c_{v, f}$",
+          "Fatality risk cost. (No. of fatalities per flight hour)",
+          "$a_{v}$",
+          "Weight factor, which is used for adjusting the preference of UAS stakeholders on different risk types."
+        ],
+        [
+          "$c_{v, g}$",
+          "Fatality risk cost that UAV crashes to pedestrians. (No. of fatalities per flight hour)",
+          "$\\omega_{v}$",
+          "Normalization factor, which is used for eliminating magnitude effect among different risk types."
+        ],
+        [
+          "$c_{v, v}$",
+          "Fatality risk cost that UAV crashes to persons in ground vehicles. (No. of fatalities per flight hour)",
+          "$v_{i}$",
+          "The centroid of the airspace unit $i$ with coordinates of $\\left(x_{i}, y_{i}, z_{i}\\right)$."
+        ],
+        [
+          "$c_{v, g, k}$",
+          "Property damage risk cost.",
+          "G",
+          "An undirected, connected and weighted graph."
+        ],
+        [
+          "$c_{\\text {noise }}$",
+          "Cost of noise impact upon UAV operations.",
+          "V",
+          "A set of vertices belongs to graph $G$."
+        ],
+        [
+          "$c_{v}$",
+          "Integrated cost of a certain vertex, which incorporates fatality risk cost, property damage risk cost, and noise impact cost.",
+          "E",
+          "A set of edges belongs to graph $G$."
+        ],
+        [
+          "$C_{D}$",
+          "Total cost of a path $P$.",
+          "$p$",
+          "A path from origin to destination in $G$."
+        ],
+        [
+          "$c_{v, \\text { max }}$",
+          "The maximum cost value among all vertices in a given environment.",
+          "$V_{p}$",
+          "A set of vertices of path $P$."
+        ],
+        [
+          "$N_{b h}^{0}$",
+          "Number of pedestrians hit by crashed UAV.",
+          "$\\delta$",
+          "UAV movement in axes $\\left(\\delta_{p}^{\\prime}, \\delta_{g}^{\\prime}, \\delta_{g}^{\\prime}\\right)$ at the current position $v_{i}$ with a step size of $\\lambda$."
+        ],
+        [
+          "$R_{b h}^{0}$",
+          "Number of vehicles hit by crashed UAV.",
+          "$u_{h}$",
+          "Building-occupied airspace unit."
+        ],
+        [
+          "$R_{f}^{0}$",
+          "Fatality rate that people are killed in UAV accidents. (No. of fatalities per accident)",
+          "$U_{\\text {Obs }}$",
+          "A set of all the building-occupied units."
+        ],
+        [
+          "$R_{f}^{\\prime}$",
+          "Fatality rate that persons in vehicles are killed in UAV accidents. (No. of fatalities per accident)",
+          "p",
+          "An array stores the probability of being selected for each candidate solution point."
+        ],
+        [
+          "$P_{\\text {crash }}$",
+          "Probability of UAV system failure. (Per flight hour)",
+          "$L_{\\text {min }}$",
+          "Learning rate of the probabilistic model."
+        ],
+        [
+          "$S_{\\text {,hit }}$",
+          "Size of UAV crash impact area. ( $\\mathrm{m}^{2}$ )",
+          "D",
+          "Dominant species of solution points."
+        ],
+        [
+          "$E_{\\text {imp }}$",
+          "Kinetic energy of falling UAV. (J)",
+          "$N_{k}$",
+          "Total number of dominant species."
+        ],
+        [
+          "$S_{k}$",
+          "Sheltering coefficient.",
+          "$h_{\\text {Sim }}$",
+          "Global heuristic value for CostA* algorithm."
+        ],
+        [
+          "$R_{t}$",
+          "Drag coefficient, which is related to the UAV type.",
+          "$h_{\\text {Inactive }}$",
+          "Heuristic distance factor."
+        ],
+        [
+          "$\\rho_{A}$",
+          "Density of air. ( $\\mathrm{kg} / \\mathrm{m}^{3}$ )",
+          "$V_{\\text {open }}$",
+          "Set of open vertices for path searching."
+        ],
+        [
+          "$\\nu_{\\text {TAS }}$",
+          "True airspeed of falling UAV. ( $\\mathrm{m} / \\mathrm{s}$ )",
+          "$V_{\\text {Cen }}$",
+          "Set of cluster centroid vertices obtained by EDA algorithm."
+        ],
+        [
+          "$\\sigma_{g}$",
+          "Estimated population density of a given area unit. (people $/ \\mathrm{km}^{2}$ )",
+          "$N_{V_{\\text {Gen }}}$",
+          "Number of open vertices."
+        ],
+        [
+          "$\\sigma_{g, \\text { avg }}$",
+          "Average population density in the whole given area. (people $/ \\mathrm{km}^{2}$ )",
+          "$N_{V_{\\text {Cen }}}$",
+          "Number of cluster centroid vertices."
+        ],
+        [
+          "$\\sigma_{v}$",
+          "Estimated traffic density of a given road unit. (vehicle $/ \\mathrm{km}^{2}$ )",
+          "$h_{\\text {Decin }}$",
+          "Local heuristic value for CostA* algorithm."
+        ],
+        [
+          "$\\sigma_{v, \\text { avg }}$",
+          "Average traffic density in the whole given road. (vehicle $/ \\mathrm{km}^{2}$ )",
+          "$h_{\\text {Dist. } \\text {, } \\text { om }}$",
+          "Heuristic distance from the current point to the point that is projected from cluster centroid on the global track."
+        ],
+        [
+          "$r$",
+          "The radius of the gravity influence area induced by amenities when estimating population and traffic densities. (km)",
+          "$f(\\varepsilon)$",
+          "The overall cost function of a planned path from origin to destination."
+        ],
+        [
+          "$I(\\delta)$",
+          "Sound intensity at flying height $h$ and distance $d$ from the point directly under the UAV.",
+          "$g(\\varepsilon)$",
+          "The integral of the cost from the origin point to the current point."
+        ],
+        [
+          "$L(\\delta)$",
+          "Sound level. (dB)",
+          "$h(\\varepsilon)$",
+          "Overall heuristic value, which relies on $h_{\\text {Dist }}$ and $h_{\\text {Decin }}$."
+        ],
+        [
+          "$\\pi r$",
+          "Conversion factor from sound intensity to sound level.",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison results of the four cost-based path planning algorithms.",
+      "headers": [
+        "Indicators\\Performance",
+        "Computational results",
+        "",
+        "",
+        "",
+        "",
+        "Performance ratio compared with Dijkstra (optimal in cost reduction)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Dijkstra",
+          "RiskA*",
+          "ACO",
+          "EDA-A*",
+          "EDA-CostA*",
+          "RiskA*",
+          "ACO",
+          "EDA-A*",
+          "EDA-CostA*"
+        ],
+        [
+          "Risk cost index",
+          1102.6,
+          1420.2,
+          1119.32,
+          1126.26,
+          1153.07,
+          128.8,
+          101.51,
+          102.14,
+          104.58
+        ],
+        [
+          "Distance (km)",
+          9.73,
+          8.82,
+          9.85,
+          10.11,
+          9.53,
+          90.65,
+          101.22,
+          103.94,
+          97.94
+        ],
+        [
+          "Computation time (s)",
+          3806.2,
+          6.106,
+          29916.2,
+          984.87,
+          116.22,
+          0.16,
+          785.98,
+          25.88,
+          3.05
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 10
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results of the four paths considering different risk cost types.",
+      "headers": [
+        "Indicators\\Performance",
+        "Computational results",
+        "",
+        "",
+        "",
+        "Performance ratio compared with Path 1",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "Risk cost index",
+          1698.25,
+          1296.02,
+          1195.18,
+          1153.1,
+          100.0,
+          76.32,
+          70.38,
+          67.9
+        ],
+        [
+          "Flight distance (km)",
+          8.35,
+          10.22,
+          10.01,
+          9.53,
+          100.0,
+          122.32,
+          119.88,
+          114.08
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 9
+    },
+    {
+      "table_number": "4",
+      "table_title": "Statistical analysis for cost reduction and flight distance increase.",
+      "headers": [
+        "Groups",
+        "Integrated cost (cost index)",
+        "",
+        "Flight distance (m)",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          -1,
+          -2,
+          -1,
+          -2
+        ],
+        [
+          "Sample size",
+          "$n_{1}=100$",
+          "$n_{2}=100$",
+          "$n_{1}=100$",
+          "$n_{2}=100$"
+        ],
+        [
+          "Sample mean",
+          "$\\bar{x}_{1}=18,584$",
+          "$\\bar{x}_{2}=32,831$",
+          "$\\bar{x}_{1}=10,560$",
+          "$\\bar{x}_{2}=8628$"
+        ],
+        [
+          "Sample variance",
+          "$s_{1}^{2}=1,594,657$",
+          "$s_{2}^{2}=4,859,067$",
+          "$s_{1}^{2}=254,418$",
+          "$s_{2}^{2}=0$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Reliability analysis results of the proposed algorithms with 100 independent simulations.",
+      "headers": [
+        "Performance\\Algorithms",
+        "Average total cost",
+        "",
+        "Average total flight distance",
+        "",
+        "Average computationaltime (s)",
+        "Average percentage of the time"
+      ],
+      "rows": [
+        [
+          "",
+          "Indicator ratio",
+          "Standard Deviation",
+          "Indicator ratio",
+          "Standard Deviation",
+          "",
+          ""
+        ],
+        [
+          "Dijkstra",
+          100.0,
+          0.0,
+          100.0,
+          0.0,
+          4120.35,
+          100.0
+        ],
+        [
+          "EDA-A ${ }^{\\mathrm{a}}$",
+          102.76,
+          1.29,
+          99.83,
+          2.18,
+          993.68,
+          24.12
+        ],
+        [
+          "EDA-CostA ${ }^{\\text {e }}$",
+          105.47,
+          2.54,
+          99.6,
+          4.29,
+          85.24,
+          2.07
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 7
+    }
+  ]
+}

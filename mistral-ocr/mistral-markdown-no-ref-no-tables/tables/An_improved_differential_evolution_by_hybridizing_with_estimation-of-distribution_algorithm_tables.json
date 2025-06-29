@@ -1,0 +1,616 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/An improved differential evolution by hybridizing with estimation-of-distribution algorithm.md",
+    "filename": "An improved differential evolution by hybridizing with estimation-of-distribution algorithm.md",
+    "title": "An improved differential evolution by hybridizing with estimation-of-distribution algorithm",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameter settings for seven algorithms.",
+      "headers": [
+        "Algorithm",
+        "Parameter settings"
+      ],
+      "rows": [
+        [
+          "IDE-EDA",
+          "$N P_{\\text {init }}=75-O^{(2 / 3)}, k=3, H=5, N P_{\\text {max }}=4, r^{\\text {err }}=1, \\tau=0.9$."
+        ],
+        [
+          "AAVS-EDA",
+          38.0
+        ],
+        [
+          "LSHADE-RSP",
+          21.0
+        ],
+        [
+          "RW-GEDA",
+          39.0
+        ],
+        [
+          "HSES",
+          "$\\lambda=$ round(3-ln $D)+80$, at first step of HS-ES: $M=200, N=100, I=20$ and $c c=0.96$, at fourth step of HS-ES: $M=200, N=160$ $(D=10,30) ; M=450, N=360(D=50)$ as in [32]."
+        ],
+        [
+          "APGSE-IMODE",
+          33.0
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Influence of the parameter $\\tau$ on the performance of IDE-EDA. $\\left(F E \\lambda_{\\max }=300000\\right)$.",
+      "headers": [
+        "No.",
+        "",
+        "$\\tau=0.1$",
+        "$\\tau=0.2$",
+        "$\\tau=0.3$",
+        "$\\tau=0.4$",
+        "$\\tau=0.5$",
+        "$\\tau=0.6$",
+        "$\\tau=0.7$",
+        "$\\tau=0.8$",
+        "$\\tau=0.9$",
+        "$\\tau=1.0$"
+      ],
+      "rows": [
+        [
+          7,
+          "Mean",
+          3.8201,
+          3.8601,
+          3.8801,
+          3.8701,
+          3.7701,
+          3.8401,
+          3.8801,
+          3.8501,
+          3.8801,
+          3.8501
+        ],
+        [
+          "",
+          "Rank",
+          2,
+          6,
+          9,
+          7,
+          1,
+          3,
+          10,
+          4,
+          8,
+          5
+        ],
+        [
+          16,
+          "Mean",
+          2.9301,
+          4.0901,
+          2.5201,
+          3.5201,
+          3.7601,
+          1.7301,
+          2.2901,
+          2.0201,
+          1.6901,
+          1.8601
+        ],
+        [
+          "",
+          "Rank",
+          7,
+          10,
+          6,
+          8,
+          9,
+          2,
+          5,
+          4,
+          1,
+          3
+        ],
+        [
+          26,
+          "Mean",
+          9.2202,
+          9.2302,
+          9.1502,
+          9.0302,
+          9.1902,
+          9.1102,
+          8.9602,
+          8.9902,
+          8.9202,
+          8.9202
+        ],
+        [
+          "",
+          "Rank",
+          9,
+          10,
+          7,
+          5,
+          8,
+          6,
+          3,
+          4,
+          1,
+          2
+        ],
+        [
+          30,
+          "Mean",
+          1.9703,
+          1.9703,
+          1.9703,
+          1.9703,
+          1.9603,
+          1.9703,
+          1.9703,
+          1.9703,
+          1.9603,
+          1.9703
+        ],
+        [
+          "",
+          "Rank",
+          8,
+          3,
+          5,
+          6,
+          2,
+          10,
+          9,
+          7,
+          1,
+          4
+        ],
+        [
+          "Mean",
+          "Rank",
+          6.5,
+          7.25,
+          6.75,
+          6.5,
+          5,
+          5.25,
+          6.75,
+          4.75,
+          2.75,
+          3.5
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 12
+    },
+    {
+      "table_number": "3",
+      "table_title": "The Wilcoxon signed-rank test results for IDE-EDA and six competitors $(\\alpha=0.05)$.",
+      "headers": [
+        "$\\mathrm{R}(+/-) \\approx$",
+        "100",
+        "300",
+        "500",
+        "Total"
+      ],
+      "rows": [
+        [
+          "IDE-EDA vs AAVS-EDA",
+          "$20 / 3 / 6$",
+          "$13 / 10 / 6$",
+          "$13 / 9 / 7$",
+          "$46 / 22 / 19$"
+        ],
+        [
+          "IDE-EDA vs EB-LSHADE",
+          "$9 / 4 / 16$",
+          "$11 / 6 / 12$",
+          "$13 / 8 / 8$",
+          "$33 / 18 / 36$"
+        ],
+        [
+          "IDE-EDA vs ELSHADE-SPACMA",
+          "$9 / 4 / 16$",
+          "$15 / 3 / 11$",
+          "$12 / 6 / 11$",
+          "$36 / 13 / 38$"
+        ],
+        [
+          "IDE-EDA vs JSO",
+          "$12 / 3 / 14$",
+          "$18 / 3 / 8$",
+          "$15 / 5 / 9$",
+          "$45 / 11 / 31$"
+        ],
+        [
+          "IDE-EDA vs LSHADE-RSP",
+          "$3 / 1 / 25$",
+          "$6 / 1 / 22$",
+          "$6 / 8 / 15$",
+          "$15 / 10 / 62$"
+        ],
+        [
+          "IDE-EDA vs RW-GEDA",
+          "$22 / 0 / 7$",
+          "$20 / 1 / 8$",
+          "$21 / 3 / 5$",
+          "$63 / 4 / 20$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Rankings derived by the Friedman test for the results on the IEEE CEC 2018 test suite $(\\alpha=0.05)$.",
+      "headers": [
+        "Algorithm",
+        "100",
+        "300",
+        "500",
+        "Mean Ranking",
+        "Rank"
+      ],
+      "rows": [
+        [
+          "IDE-EDA",
+          3.03,
+          "$\\mathbf{3 . 0 9}$",
+          "$\\mathbf{3 . 1 4}$",
+          "$\\mathbf{3 . 0 9}$",
+          "$\\mathbf{1}$"
+        ],
+        [
+          "AAVS-EDA",
+          5.0,
+          3.86,
+          4.07,
+          4.31,
+          6
+        ],
+        [
+          "EB-LSHADE",
+          3.64,
+          3.86,
+          4.31,
+          3.94,
+          5
+        ],
+        [
+          "ELSHADE-SPACMA",
+          3.69,
+          4.16,
+          3.76,
+          3.87,
+          3
+        ],
+        [
+          "JSO",
+          3.71,
+          4.29,
+          4.14,
+          4.05,
+          4
+        ],
+        [
+          "LSHADE-RSP",
+          "$\\mathbf{2 . 8 8}$",
+          3.38,
+          3.21,
+          3.16,
+          2
+        ],
+        [
+          "RW-GEDA",
+          6.05,
+          5.36,
+          5.38,
+          5.6,
+          7
+        ],
+        [
+          "Friedman-p-value",
+          "$2.00 \\mathrm{E}-10$",
+          "$8.79 \\mathrm{E}-04$",
+          "$6.85 \\mathrm{E}-04$",
+          "N/A",
+          "N/A"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "Code for calculating the time $T_{0}$.",
+      "headers": [
+        "Input: iteration $=1,000,000$",
+        ""
+      ],
+      "rows": [
+        [
+          "Output: $T_{0}$",
+          ""
+        ],
+        [
+          1.0,
+          ""
+        ],
+        [
+          2.0,
+          ""
+        ],
+        [
+          3.0,
+          ""
+        ],
+        [
+          4.0,
+          ""
+        ],
+        [
+          5.0,
+          ""
+        ],
+        [
+          6.0,
+          ""
+        ],
+        [
+          7.0,
+          ""
+        ],
+        [
+          8.0,
+          ""
+        ],
+        [
+          9.0,
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "6",
+      "table_title": "Computational complexities of IDE-EDA and six competitors.",
+      "headers": [
+        "Algorithm",
+        "$\\bar{T}_{2} / \\mathrm{s}$",
+        "",
+        "",
+        "$\\left(\\bar{T}_{2}-T_{1}\\right) / T_{0}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          300,
+          500,
+          100,
+          300,
+          500
+        ],
+        [
+          "IDE-EDA",
+          0.54282,
+          1.0361,
+          1.65923,
+          43.93008,
+          69.82731,
+          97.20672
+        ],
+        [
+          "AAVS-EDA",
+          0.16668,
+          0.52491,
+          1.04715,
+          8.76097,
+          22.03061,
+          39.97706
+        ],
+        [
+          "EB-LSHADE",
+          0.88823,
+          1.25433,
+          1.8081,
+          76.22601,
+          90.23242,
+          111.12588
+        ],
+        [
+          "ELSHADE-SPACMA",
+          0.66203,
+          1.08634,
+          1.78693,
+          55.07628,
+          74.52514,
+          109.14714
+        ],
+        [
+          "jSO",
+          0.61642,
+          0.92187,
+          1.42058,
+          50.81212,
+          59.14642,
+          74.89273
+        ],
+        [
+          "LSHADE-RSP",
+          0.39432,
+          0.66194,
+          1.12168,
+          30.04565,
+          34.84339,
+          46.94486
+        ],
+        [
+          "RW-GEDA",
+          0.37563,
+          0.8706,
+          1.48904,
+          28.29825,
+          54.35258,
+          81.29417
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "7",
+      "table_title": "Results derived by the Wilcoxon signed-rank test between IDE-EDA and six competitors $(\\alpha=0.05)$.",
+      "headers": [
+        "$R(\\cdot \\cdot / \\sim \\mid \\cdot \\mid)$",
+        "Bias $(000)$",
+        "Shift $(010)$",
+        "Bias and shift $(110)$",
+        "Shift and rotation $(011)$",
+        "Bias, shift, and rotation (111)"
+      ],
+      "rows": [
+        [
+          "IDE-EDA vs AAVS-EDA",
+          "$7 / 0 / 3$",
+          "$8 / 1 / 1$",
+          "$6 / 2 / 2$",
+          "$5 / 3 / 2$",
+          "$4 / 4 / 2$"
+        ],
+        [
+          "IDE-EDA vs APGSK-IMODE",
+          "$0 / 5 / 5$",
+          "$1 / 4 / 5$",
+          "$2 / 4 / 4$",
+          "$5 / 3 / 2$",
+          "$5 / 2 / 3$"
+        ],
+        [
+          "IDE-EDA vs EB-LSHADE",
+          "$0 / 3 / 7$",
+          "$1 / 4 / 5$",
+          "$1 / 5 / 4$",
+          "$3 / 2 / 5$",
+          "$3 / 2 / 5$"
+        ],
+        [
+          "IDE-EDA vs ELSHADE-SPACMA",
+          "$1 / 4 / 5$",
+          "$0 / 5 / 5$",
+          "$0 / 5 / 5$",
+          "$2 / 2 / 6$",
+          "$2 / 2 / 6$"
+        ],
+        [
+          "IDE-EDA vs HSES",
+          "$5 / 1 / 4$",
+          "$7 / 2 / 1$",
+          "$7 / 2 / 1$",
+          "$8 / 1 / 1$",
+          "$7 / 1 / 2$"
+        ],
+        [
+          "IDE-EDA vs RW-GEDA",
+          "$0 / 5 / 5$",
+          "$7 / 0 / 3$",
+          "$7 / 0 / 3$",
+          "$9 / 0 / 1$",
+          "$9 / 0 / 1$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "8",
+      "table_title": "Rankings of IDE-EDA and six competitors in the IEEE CEC 2021 test suite (20D) obtained by the Friedman test $(\\alpha=0.05)$.",
+      "headers": [
+        "Algorithms",
+        "Bias",
+        "Shift",
+        "Bias and shift",
+        "Shift and rotation",
+        "Bias, shift, and rotation"
+      ],
+      "rows": [
+        [
+          "IDE-EDA",
+          4.2,
+          3.75,
+          3.8,
+          2.65,
+          2.8
+        ],
+        [
+          "AAVS-EDA",
+          5.75,
+          4.9,
+          4.35,
+          3.7,
+          3.35
+        ],
+        [
+          "APGSK-IMODE",
+          2.3,
+          2.2,
+          2.5,
+          3.25,
+          3.3
+        ],
+        [
+          "EB-LSHADE",
+          3.65,
+          2.9,
+          3.1,
+          2.95,
+          3.2
+        ],
+        [
+          "ELSHADE-SPACMA",
+          3.45,
+          2.95,
+          2.95,
+          3.45,
+          3.35
+        ],
+        [
+          "HSES",
+          5.9,
+          5.1,
+          5.1,
+          5.6,
+          5.6
+        ],
+        [
+          "RW-GEDA",
+          2.75,
+          6.2,
+          6.2,
+          6.4,
+          6.4
+        ],
+        [
+          "Friedman-p-value",
+          "$3.21 \\mathrm{E}-06$",
+          "$2.69 \\mathrm{E}-05$",
+          "$1.52 \\mathrm{E}-04$",
+          "$4.61 \\mathrm{E}-05$",
+          "$9.41 \\mathrm{E}-05$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    }
+  ]
+}

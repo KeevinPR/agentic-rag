@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/Berth scheduling at marine container terminals A universal island-based metaheuristic approach.md",
+    "filename": "Berth scheduling at marine container terminals A universal island-based metaheuristic approach.md",
+    "title": "Berth scheduling at marine container terminals A universal island-based metaheuristic approach",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Model component",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Type",
+          "Nomenclature",
+          "Description"
+        ],
+        [
+          "Sets",
+          "$\\begin{aligned} & V=\\{1, \\ldots, m\\} \\\\ & B=\\{1, \\ldots, n\\} \\end{aligned}$",
+          "the set of arriving vessels at the MCT (vessels) the set of available berthing positions at the MCT (berthing positions)"
+        ],
+        [
+          "",
+          "$T=\\{1, \\ldots, p)$",
+          "the set of discrete periods (periods)"
+        ],
+        [
+          "Decision",
+          "$\\boldsymbol{x}_{e h t}, v \\in V$,",
+          "$=1$ if vessel $v$ is assigned for service at berthing position $b$ at period $t$"
+        ],
+        [
+          "Variables",
+          "$b \\in B, t \\in T$",
+          0
+        ],
+        [
+          "Auxiliary",
+          "$\\boldsymbol{\\theta}_{e h t}^{0}, v \\in V$,",
+          "the number of idling periods for berthing position $b$ between service"
+        ],
+        [
+          "Variables",
+          "$b \\in B, t \\in T$",
+          "of vessel $v$ and its immediate predecessor served during period $(t-1)$ (periods)"
+        ],
+        [
+          "",
+          "$\\boldsymbol{q}_{e h t}, v \\in V$,",
+          "$=1$ if vessel $v$ leaves berthing position $b$ at period $t(=0$ otherwise $)$"
+        ],
+        [
+          "",
+          "$b \\in B, t \\in T$",
+          ""
+        ],
+        [
+          "",
+          "$\\boldsymbol{\\theta}_{v}^{s t}, v \\in V$",
+          "the start service period for vessel $v$ (period)"
+        ],
+        [
+          "",
+          "$\\boldsymbol{\\theta}_{v}^{0}, v \\in V$",
+          "the finish service period for vessel $v$ (period)"
+        ],
+        [
+          "",
+          "$\\boldsymbol{\\theta}_{v}^{h t}, v \\in V$",
+          "the number of periods that vessel $v$ should wait for service (periods)"
+        ],
+        [
+          "",
+          "$\\boldsymbol{\\theta}_{v}^{h t}, v \\in V$",
+          "the number of periods that vessel $v$ leaves later than the negotiated departure period (periods)"
+        ],
+        [
+          "Parameters",
+          "$m$",
+          "the total number of arriving vessels at the MCT to be served (vessels)"
+        ],
+        [
+          "",
+          "$n$",
+          "the total number of available berthing positions at the MCT (berthing positions)"
+        ],
+        [
+          "",
+          "$p$",
+          "the total number of periods in the planning horizon (periods)"
+        ],
+        [
+          "",
+          "$\\theta_{v}^{s t}, v \\in V$",
+          "the period when vessel $v$ arrives at the MCT (period)"
+        ],
+        [
+          "",
+          "$\\theta_{h}^{h e r}, b \\in B$",
+          "the period when berthing position $b$ is available for the first time in the considered planning horizon (period)"
+        ],
+        [
+          "",
+          "$\\overline{\\theta_{v}^{h t}}, v \\in V$",
+          "the periods required for handling vessel $v$ at its preferred berthing position (periods)"
+        ],
+        [
+          "",
+          "$\\theta_{v h}^{h t}, v \\in V, b \\in B$",
+          "the periods required for handling vessel $v$ at berthing position $b$ (periods)"
+        ],
+        [
+          "",
+          "$\\theta_{v}^{d}, v \\in V$",
+          "the negotiated departure period for vessel $v$ (period)"
+        ],
+        [
+          "",
+          "$D_{v}^{e x x}, v \\in V$",
+          "the draft of vessel $v$ (feet)"
+        ],
+        [
+          "",
+          "$D_{b}^{h e r}, b \\in B$",
+          "the depth of berthing position $b$ (feet)"
+        ],
+        [
+          "",
+          "$L_{v}^{\\text {res }}, v \\in V$",
+          "the length of vessel $v$ (feet)"
+        ],
+        [
+          "",
+          "$L_{b}^{h e r}, b \\in B$",
+          "the length of berthing position $b$ (feet)"
+        ],
+        [
+          "",
+          "$P_{v}^{e x e}, v \\in V$",
+          "the minimum vertical clearance for vessel $v$ (feet)"
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": "Nomenclature adopted for the mathematical model",
+      "headers": [
+        "",
+        "Model component",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Type",
+          "Nomenclature"
+        ],
+        [
+          "",
+          "",
+          "$P_{v}^{h o r}, v \\in V$"
+        ],
+        [
+          "",
+          "",
+          "$\\varphi_{v}^{u t}, v \\in V$"
+        ],
+        [
+          "",
+          "",
+          "$\\varphi_{v}^{h t}, v \\in V$"
+        ],
+        [
+          "",
+          "",
+          "$\\varphi_{v}^{h}, v \\in V$"
+        ],
+        [
+          "",
+          "",
+          "$\\varphi_{v}^{h}, v \\in V$"
+        ],
+        [
+          "",
+          "",
+          "$\\mathrm{Y}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "2",
+        "4",
+        "7",
+        "3",
+        "1",
+        "6",
+        "5"
+      ],
+      "rows": [
+        [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "2",
+        "4",
+        "7",
+        "3",
+        "1",
+        "6",
+        "5",
+        "$R P I_{\\text {inx }}=\\frac{I C_{\\text {inx }}}{M A X_{I C}}$",
+        "0.29",
+        "0.57",
+        "1.00",
+        "0.43",
+        "0.14",
+        "0.86",
+        "0.71"
+      ],
+      "rows": [
+        [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          "",
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 15
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Parameter",
+        "Selected Value"
+      ],
+      "rows": [
+        [
+          "Number of arriving vessels: $m$ (vessels)",
+          "Values are changed based on the problem instance"
+        ],
+        [
+          "Number of available berthing positions: $n$ (berthing positions)",
+          "Values are changed based on the problem instance"
+        ],
+        [
+          "Number of periods: $p$ (periods)",
+          "Values are changed based on the problem instance"
+        ],
+        [
+          "Arrival time of vessel $v$ at the MCT: $\\theta_{v}^{a}, v \\in V$ (period)",
+          "$\\theta_{v+1}^{a}=\\operatorname{round}^{v}\\left(\\theta_{v}^{a}+\\Delta \\theta\\right) \\quad \\forall v \\in V^{a}$"
+        ],
+        [
+          "Average inter-arrival time of vessels: $\\Delta \\theta$ (periods)",
+          "$\\Delta \\theta=\\exp [2]^{\\mathrm{b}}$"
+        ],
+        [
+          "Period when berthing position $b$ is available for the first time in the planning horizon: $\\theta_{b}^{b e r}, b \\in B$ (period)",
+          "$\\theta_{b}^{\\text {ber }}=0 \\quad \\forall b \\in B$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Algorithm",
+        "Parameter",
+        "Candidate values",
+        "Selected value"
+      ],
+      "rows": [
+        [
+          "UIMA",
+          "Population size (PopSize) ${ }^{a}$",
+          "$[240 ; 280 ; 320]$",
+          240
+        ],
+        [
+          "UIMA",
+          "Migration criterion ( $\\lambda$ )",
+          "$[0.1 ; 0.2 ; 0.3]$",
+          0.1
+        ],
+        [
+          "UIMA",
+          "Number of immigrants ( $N^{\\text {img }}$ )",
+          "$[3 ; 4 ; 5]$",
+          4
+        ],
+        [
+          "UIMA",
+          "Stopping criterion (MaxIter)",
+          "$[1200 ; 1400 ; 1600]$",
+          1600
+        ],
+        [
+          "EA",
+          "Population size (PopSize) ${ }^{\\text {b }}$",
+          "$[40 ; 50 ; 60]$",
+          60
+        ],
+        [
+          "EA",
+          "Crossover probability $\\left(\\sigma^{\\mathrm{c}}\\right)$",
+          "$[0.3 ; 0.5 ; 0.8]$",
+          0.8
+        ],
+        [
+          "EA",
+          "Mutation probability $\\left(\\sigma^{\\mathrm{m}}\\right)$",
+          "$[0.01 ; 0.04 ; 0.06]$",
+          0.06
+        ],
+        [
+          "EA",
+          "Number of chromosomes attending each tournament (TourSize)",
+          "$[20 ; 30 ; 40]$",
+          40
+        ],
+        [
+          "EA",
+          "Stopping criterion (MaxGen) ${ }^{\\text {b }}$",
+          "$[4000 ; 5000 ; 6000]$",
+          6000
+        ],
+        [
+          "PSO",
+          "Population size (PopSize) ${ }^{\\text {b }}$",
+          "$[40 ; 50 ; 60]$",
+          60
+        ],
+        [
+          "PSO",
+          "Cognition component $\\left(C_{1}\\right)$",
+          "$[1.5 ; 2.0 ; 2.5]$",
+          2.0
+        ],
+        [
+          "PSO",
+          "Social component $\\left(C_{2}\\right)$",
+          "$[1.5 ; 2.0 ; 2.5]$",
+          1.5
+        ],
+        [
+          "PSO",
+          "Inertia weight $(W)$",
+          "$[0.3 ; 0.5 ; 0.8]$",
+          0.5
+        ],
+        [
+          "PSO",
+          "Stopping criterion (MaxIter) ${ }^{\\text {b }}$",
+          "$[4000 ; 5000 ; 6000]$",
+          6000
+        ],
+        [
+          "EDA",
+          "Population size (PopSize) ${ }^{\\text {b }}$",
+          "$[40 ; 50 ; 60]$",
+          60
+        ],
+        [
+          "EDA",
+          "Shaking coefficient ( $\\varepsilon$ )",
+          "$[0.1 ; 0.3 ; 0.5]$",
+          0.1
+        ],
+        [
+          "EDA",
+          "Elitism coefficient $(\\psi)$",
+          "$[0.4 ; 0.6 ; 0.8]$",
+          0.6
+        ],
+        [
+          "EDA",
+          "Stopping criterion (MaxGen) ${ }^{\\text {b }}$",
+          "$[4000 ; 5000 ; 6000]$",
+          6000
+        ],
+        [
+          "DE",
+          "Population size (PopSize) ${ }^{\\text {b }}$",
+          "$[40 ; 50 ; 60]$",
+          60
+        ],
+        [
+          "DE",
+          "Mutation coefficient $(\\alpha)$",
+          "$[0.4 ; 0.6 ; 0.8]$",
+          0.8
+        ],
+        [
+          "DE",
+          "Crossover probability $\\left(\\sigma^{\\mathrm{c}}\\right)$",
+          "$[0.3 ; 0.5 ; 0.6]$",
+          0.3
+        ],
+        [
+          "DE",
+          "Stopping criterion (MaxGen) ${ }^{\\text {b }}$",
+          "$[4000 ; 5000 ; 6000]$",
+          6000
+        ],
+        [
+          "VNS",
+          "Local search size $\\left(S_{k}^{\\text {VNS }}\\right)$",
+          "$[15 ; 20 ; 25]$",
+          20
+        ],
+        [
+          "VNS",
+          "Stopping criterion (MaxIter)",
+          "$[4000 ; 5000 ; 6000]$",
+          6000
+        ],
+        [
+          "TS",
+          "Tabu list size $\\left(S_{N}^{\\text {TS }}\\right)$",
+          "$[10 ; 15 ; 20]$",
+          10
+        ],
+        [
+          "TS",
+          "Local search size $\\left(S_{k}^{\\text {TS }}\\right)$",
+          "$[15 ; 20 ; 25]$",
+          20
+        ],
+        [
+          "TS",
+          "Stopping criterion (MaxIter)",
+          "$[4000 ; 5000 ; 6000]$",
+          6000
+        ],
+        [
+          "SA",
+          "Initial Boltzmann temperature $(\\tau)$",
+          "$[2000 ; 3000 ; 3500]$",
+          3500
+        ],
+        [
+          "SA",
+          "Temperature interval $(\\Delta \\tau)$",
+          "$[0.10 ; 0.30 ; 0.50]$",
+          0.5
+        ],
+        [
+          "SA",
+          "Stopping criterion (MaxIter)",
+          "$[4000 ; 5000 ; 6000]$",
+          6000
+        ]
+      ],
+      "row_count": 30,
+      "column_count": 4
+    }
+  ]
+}

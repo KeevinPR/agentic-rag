@@ -1,0 +1,338 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2005/Extending the GA-EDA hybrid algorithm to study diversification and intensification in GAs and EDAs.md",
+    "filename": "Extending the GA-EDA hybrid algorithm to study diversification and intensification in GAs and EDAs.md",
+    "title": "Extending the GA-EDA hybrid algorithm to study diversification and intensification in GAs and EDAs",
+    "year": "2005"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. V. Bachelet and E. Talbi. Cosearch: A co-evolutionary metaheuritics. In Proceedings of Congress on Evolutionary Computation CEC2000, pages 1550-1557, 2000.\n2. C. Blum and A. Roli. Metaheuristics in combinatorial optimization: Overview and conceptual comparison. ACM Computing Surveys, 35(3):268-308, September 2003.\n3. F.K. Branin. A widely convergent method for finding multiple solutions of simultaneous nonlinear equations. IBM Journal of Research and Development, pages 504-522, 1972.\n4. J. Denzinger and T. Offerman. On cooperation between evolutionary algorithms and other search paradigms. In Proceedings of Congress on Evolutionary Computation CEC1999, pages 2317-2324, 1999.\n5. F. Foccaci, F. Laburthe, and A. Lodi. Local search and constraint programming. In F. Glover and G. Kochenberger, editors, Handbook of Metaheuristics, volume 57 of International Series in Operations Research and Management Science, Kluwer Academic Publishers, Norwell, MA.\n6. F. Glover and M. Laguna. Tabu Search. Kluwer Academic Publishers, 1997.\n7. J. Hao, F. Lardeux, and F. Saubion. A hybrid genetic algorithm for the satisfiability problem. In Proceedings of the First International Workshop on Heuristics, Beijing, 2002.\n8. F. Herrera and M. Lozano. Gradual distributed real-coded genetic algorithms. IEEE Transactions on Evolutionary Computation, 4(1), 2000.\n9. J.H. Holland. Adaption in natural and artificial systems. The University of Michigan Press, Ann Harbor, MI, 1975.\n10. S. Kirkpatrick, C.D. Gelatt, and M.P. Vecchi. Optimization by simulated annealing. Science, 220(4598):671-680, May 1983.\n\n11. P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña. Optimization in continuous domains by learning and simulation of Gaussian networks. In A. S. Wu, editor, Proceedings of the 2000 Genetic and Evolutionary Computation Conference Workshop Program, pages 201-204, 2000.\n12. P. Larrañaga and J.A. Lozano. Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic Publisher, 2001.\n13. F.T. Lin, , C.Y. Kao, and C.C. Hsu. Incorporating genetic algorithms into simulated annealing. Proceedings of the Fourth International Symposium on Artificial Intelligence, pages 290-297, 1991.\n14. O.C. Martin and S.W. Otto. Combining simulated annealing with local search heuristics. Annals of Operations Research, 63:57-75, 1996.\n15. C.H. Papadimitriou and K. Steiglitz. Combinatorial Optimization: Algorithms and Complexity. Prentice-Hall, 1982.\n16. J.M. Peña, V. Robles, P. Larrañaga, V. Herves, F. Rosales, and M.S. Pérez. GA-EDA: Hybrid evolutionary algorithm using genetic and estimation of distribution algorithms. In Innovations in Applied Artificial Intelligence: Proceeding of IEA/AIE 2004, 2004.\n17. V. Robles, J.M. Peña, P. Larrañaga, M.S. Pérez, and V. Herves. GA-EDA: A new hybrid cooperative search evolutionary algorithm. In J.A. Lozano, P. Larrañaga, I. Inza, and E. Bengoetxea, editors, Towars a New Evolutionary Computation. Advances in Estimation of Distribution Algorithms. Springer Verlag, 2005. In Press.\n18. V. Robles, M.S. Pérez, V. Herves, J.M. Peña, and P. Larrañaga. Parallel stochastic search for protein secondary structure prediction. In Lecture Notes in Computer Science, Czestochowa, Poland, 2003.\n19. E-G. Talbi. A taxonomy of hybrid metaheuristics. Journal of Heuristics, 8(5):541-564, 2002.\n20. A. Törn, M. M. Ali, and S. Viitanen. Stochastic global optimization: Problem classes and solution techniques. Journal of Global Optimization, 14, 1999.\n21. M. Toulouse, T. Crainic, and B. Sansó. An experimental study of the systemic behavior of cooperative search algorithms. In I. Osman S. Voß, S. Martello and C. Roucairol, editors, In Meta-Heuristics: Advances and Trends in Local Search Paradigms for Optimization, chapter 26, pages 373-392. Kluwer Academic Publishers, 1999.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "V. Bachelet and E. Talbi. Cosearch: A co-evolutionary metaheuritics. In Proceedings of Congress on Evolutionary Computation CEC2000, pages 1550-1557, 2000."
+      },
+      {
+        "ref_id": "2",
+        "text": "C. Blum and A. Roli. Metaheuristics in combinatorial optimization: Overview and conceptual comparison. ACM Computing Surveys, 35(3):268-308, September 2003."
+      },
+      {
+        "ref_id": "3",
+        "text": "F.K. Branin. A widely convergent method for finding multiple solutions of simultaneous nonlinear equations. IBM Journal of Research and Development, pages 504-522, 1972."
+      },
+      {
+        "ref_id": "4",
+        "text": "J. Denzinger and T. Offerman. On cooperation between evolutionary algorithms and other search paradigms. In Proceedings of Congress on Evolutionary Computation CEC1999, pages 2317-2324, 1999."
+      },
+      {
+        "ref_id": "5",
+        "text": "F. Foccaci, F. Laburthe, and A. Lodi. Local search and constraint programming. In F. Glover and G. Kochenberger, editors, Handbook of Metaheuristics, volume 57 of International Series in Operations Research and Management Science, Kluwer Academic Publishers, Norwell, MA."
+      },
+      {
+        "ref_id": "6",
+        "text": "F. Glover and M. Laguna. Tabu Search. Kluwer Academic Publishers, 1997."
+      },
+      {
+        "ref_id": "7",
+        "text": "J. Hao, F. Lardeux, and F. Saubion. A hybrid genetic algorithm for the satisfiability problem. In Proceedings of the First International Workshop on Heuristics, Beijing, 2002."
+      },
+      {
+        "ref_id": "8",
+        "text": "F. Herrera and M. Lozano. Gradual distributed real-coded genetic algorithms. IEEE Transactions on Evolutionary Computation, 4(1), 2000."
+      },
+      {
+        "ref_id": "9",
+        "text": "J.H. Holland. Adaption in natural and artificial systems. The University of Michigan Press, Ann Harbor, MI, 1975."
+      },
+      {
+        "ref_id": "10",
+        "text": "S. Kirkpatrick, C.D. Gelatt, and M.P. Vecchi. Optimization by simulated annealing. Science, 220(4598):671-680, May 1983."
+      },
+      {
+        "ref_id": "11",
+        "text": "P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña. Optimization in continuous domains by learning and simulation of Gaussian networks. In A. S. Wu, editor, Proceedings of the 2000 Genetic and Evolutionary Computation Conference Workshop Program, pages 201-204, 2000."
+      },
+      {
+        "ref_id": "12",
+        "text": "P. Larrañaga and J.A. Lozano. Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic Publisher, 2001."
+      },
+      {
+        "ref_id": "13",
+        "text": "F.T. Lin, , C.Y. Kao, and C.C. Hsu. Incorporating genetic algorithms into simulated annealing. Proceedings of the Fourth International Symposium on Artificial Intelligence, pages 290-297, 1991."
+      },
+      {
+        "ref_id": "14",
+        "text": "O.C. Martin and S.W. Otto. Combining simulated annealing with local search heuristics. Annals of Operations Research, 63:57-75, 1996."
+      },
+      {
+        "ref_id": "15",
+        "text": "C.H. Papadimitriou and K. Steiglitz. Combinatorial Optimization: Algorithms and Complexity. Prentice-Hall, 1982."
+      },
+      {
+        "ref_id": "16",
+        "text": "J.M. Peña, V. Robles, P. Larrañaga, V. Herves, F. Rosales, and M.S. Pérez. GA-EDA: Hybrid evolutionary algorithm using genetic and estimation of distribution algorithms. In Innovations in Applied Artificial Intelligence: Proceeding of IEA/AIE 2004, 2004."
+      },
+      {
+        "ref_id": "17",
+        "text": "V. Robles, J.M. Peña, P. Larrañaga, M.S. Pérez, and V. Herves. GA-EDA: A new hybrid cooperative search evolutionary algorithm. In J.A. Lozano, P. Larrañaga, I. Inza, and E. Bengoetxea, editors, Towars a New Evolutionary Computation. Advances in Estimation of Distribution Algorithms. Springer Verlag, 2005. In Press."
+      },
+      {
+        "ref_id": "18",
+        "text": "V. Robles, M.S. Pérez, V. Herves, J.M. Peña, and P. Larrañaga. Parallel stochastic search for protein secondary structure prediction. In Lecture Notes in Computer Science, Czestochowa, Poland, 2003."
+      },
+      {
+        "ref_id": "19",
+        "text": "E-G. Talbi. A taxonomy of hybrid metaheuristics. Journal of Heuristics, 8(5):541-564, 2002."
+      },
+      {
+        "ref_id": "20",
+        "text": "A. Törn, M. M. Ali, and S. Viitanen. Stochastic global optimization: Problem classes and solution techniques. Journal of Global Optimization, 14, 1999."
+      },
+      {
+        "ref_id": "21",
+        "text": "M. Toulouse, T. Crainic, and B. Sansó. An experimental study of the systemic behavior of cooperative search algorithms. In I. Osman S. Voß, S. Martello and C. Roucairol, editors, In Meta-Heuristics: Advances and Trends in Local Search Paradigms for Optimization, chapter 26, pages 373-392. Kluwer Academic Publishers, 1999."
+      }
+    ],
+    "reference_count": 21,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Branin",
+      "headers": [
+        "",
+        "GA",
+        "EDA",
+        "DYNAMIC",
+        "RANGE"
+      ],
+      "rows": [
+        [
+          "Average fitness",
+          0.4016,
+          0.3987,
+          0.4,
+          0.399
+        ],
+        [
+          "Average generation number",
+          19,
+          19,
+          19,
+          19
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Statistical Significance Tests for Branin",
+      "headers": [
+        "Mann-Whitney Test",
+        "p-value"
+      ],
+      "rows": [
+        [
+          "EDA better GA",
+          0.1126
+        ],
+        [
+          "RANGE better DYNAMIC",
+          0.2315
+        ],
+        [
+          "RANGE better EDA",
+          0.2697
+        ],
+        [
+          "RANGE better GA",
+          0.079
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Rastrigin",
+      "headers": [
+        "",
+        "GA",
+        "EDA",
+        "DYNAMIC",
+        "RANGE"
+      ],
+      "rows": [
+        [
+          "Average fitness",
+          0.11656,
+          4.10471,
+          0.00013,
+          5e-05
+        ],
+        [
+          "Average generation number",
+          27,
+          28,
+          28,
+          28
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Statistical Significance Tests for Rastrigin",
+      "headers": [
+        "Mann-Whitney Test",
+        "p-value"
+      ],
+      "rows": [
+        [
+          "EDA better GA",
+          0.1126
+        ],
+        [
+          "RANGE better DYNAMIC",
+          0.1601
+        ],
+        [
+          "RANGE better EDA",
+          0
+        ],
+        [
+          "RANGE better GA",
+          0
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Schwefel",
+      "headers": [
+        "",
+        "GA",
+        "EDA",
+        "DYNAMIC",
+        "RANGE"
+      ],
+      "rows": [
+        [
+          "Average fitness",
+          3.129,
+          1852.836,
+          0.12,
+          0.037
+        ],
+        [
+          "Average generation number",
+          31,
+          26,
+          34,
+          33
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Statistical Significance Tests for Schwefel",
+      "headers": [
+        "Mann-Whitney Test",
+        "p-value"
+      ],
+      "rows": [
+        [
+          "EDA better GA",
+          1
+        ],
+        [
+          "GA better EDA",
+          0
+        ],
+        [
+          "RANGE better DYNAMIC",
+          0.0001
+        ],
+        [
+          "RANGE better EDA",
+          0
+        ],
+        [
+          "RANGE better GA",
+          0
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "7",
+      "table_title": "MaxBitCont",
+      "headers": [
+        "",
+        "GA",
+        "EDA",
+        "DYNAMIC",
+        "RANGE"
+      ],
+      "rows": [
+        [
+          "Average fitness",
+          0.994,
+          9998,
+          1,
+          1
+        ],
+        [
+          "Average generation number",
+          36,
+          40,
+          33,
+          34
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "8",
+      "table_title": "Statistical Significance Tests for MaxBitCont",
+      "headers": [
+        "Mann-Whitney Test",
+        "p-value"
+      ],
+      "rows": [
+        [
+          "EDA better GA",
+          0
+        ],
+        [
+          "RANGE better DYNAMIC",
+          1
+        ],
+        [
+          "DYNAMIC better RANGE",
+          1
+        ],
+        [
+          "RANGE better EDA",
+          0
+        ],
+        [
+          "RANGE better GA",
+          0
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    }
+  ]
+}

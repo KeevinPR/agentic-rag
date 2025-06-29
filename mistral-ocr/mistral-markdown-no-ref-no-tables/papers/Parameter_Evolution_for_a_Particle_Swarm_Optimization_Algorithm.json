@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Parameter Evolution for a Particle Swarm Optimization Algorithm.md",
+    "filename": "Parameter Evolution for a Particle Swarm Optimization Algorithm.md",
+    "title": "Parameter Evolution for a Particle Swarm Optimization Algorithm",
+    "year": "2010"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. De Jong, K.: Parameter setting in eas: a 30 year perspective. In: Parameter Setting in Evolutionary Algorithms, pp. 1-18 (2007)\n2. Eiben, A.E., Michalewicz, Z., Schoenauer, M., Smith, J.E.: Parameter control in evolutionary algorithms. In: Parameter Setting in Evolutionary Algorithms, pp. $19-46(2007)$\n3. Zhou, A., Zhang, Q., Jin, Y.: Approximating the set of pareto optimal solutions in both the decision and objective spaces by an estimation of distribution algorithm. IEEE Transactions on Evolutionary Computation 13(5), 1167-1189 (2009)\n4. Yen, G.G., Lu, H.: Dynamic multiobjective evolutionary algorithm: Adaptive cellbased rank and density estimation. IEEE Transactions on Evolutionary Computation 7(3), 253-274 (2003)\n5. Brest, J., Greiner, S., Boskovic, B., Mernik, M., Zumer, V.: Self-adapting control parameters in differential evolution: A comparative study on numerical benchmark problems. IEEE Transactions on Evolutionary Computation 10(6), 689-699 (2006)\n6. Smit, S., Eiben, A.: Comparing parameter tuning methods for evolutionary algorithms. In: Proceedings of the 2009 IEEE Congress on Evolutionary Computation, pp. 399-406. IEEE, Los Alamitos (2009)\n7. Mühlenbein, H., Paaß, G.: From recombination of genes to the estimation of distributions I. binary parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)\n8. Larrañaga, P., Lozano, J.A.: Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer Academic Publishers, Dordrecht (2002)\n9. Eberhart, R.C., Kennedy, J.: A new optimizer using particle swarm theory. In: 6th International Symposium on Micromachine and Human Science, Nagoya, Japan, pp. 39-43 (1995)\n10. Kennedy, J., Eberhart, R.C., Shi, Y.: Swarm Intelligence. Morgan Kaufmann, San Francisco (2001)\n11. Yao, X., Liu, Y., Liang, K.-H., Lin, G.: Fast evolutionary algorithms. In: Advances in evolutionary computing: theory and applications, pp. 45-94. Springer, Inc., New York (2003)\n12. Liang, J.J., Qin, A.K., Suganthan, P.N., Baskar, S.: Comprehensive learning particle swarm optimizer for global optimization of multimodal functions. IEEE Transactions on Evolutionary Computation 10(3), 281-295 (2006)\n13. de Oca, M.A.M., Stützle, T., Birattari, M., Dorigo, M.: Frankenstein's pso: A composite particle swarm frankenstein's pso: A composite particle swarm optimization algorithm. IEEE Transactions on Evolutionary Computation 13(5), 1120-1132 (2009)\n14. Zhan, Z.-H., Zhang, J., Li, Y., Chung, H.-H.: Adaptive particles warm optimization. IEEE Transactions on Systems, Man and Cybernetics, Part B (2009)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "De Jong, K.: Parameter setting in eas: a 30 year perspective. In: Parameter Setting in Evolutionary Algorithms, pp. 1-18 (2007)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Eiben, A.E., Michalewicz, Z., Schoenauer, M., Smith, J.E.: Parameter control in evolutionary algorithms. In: Parameter Setting in Evolutionary Algorithms, pp. $19-46(2007)$"
+      },
+      {
+        "ref_id": "3",
+        "text": "Zhou, A., Zhang, Q., Jin, Y.: Approximating the set of pareto optimal solutions in both the decision and objective spaces by an estimation of distribution algorithm. IEEE Transactions on Evolutionary Computation 13(5), 1167-1189 (2009)"
+      },
+      {
+        "ref_id": "4",
+        "text": "Yen, G.G., Lu, H.: Dynamic multiobjective evolutionary algorithm: Adaptive cellbased rank and density estimation. IEEE Transactions on Evolutionary Computation 7(3), 253-274 (2003)"
+      },
+      {
+        "ref_id": "5",
+        "text": "Brest, J., Greiner, S., Boskovic, B., Mernik, M., Zumer, V.: Self-adapting control parameters in differential evolution: A comparative study on numerical benchmark problems. IEEE Transactions on Evolutionary Computation 10(6), 689-699 (2006)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Smit, S., Eiben, A.: Comparing parameter tuning methods for evolutionary algorithms. In: Proceedings of the 2009 IEEE Congress on Evolutionary Computation, pp. 399-406. IEEE, Los Alamitos (2009)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Mühlenbein, H., Paaß, G.: From recombination of genes to the estimation of distributions I. binary parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)"
+      },
+      {
+        "ref_id": "8",
+        "text": "Larrañaga, P., Lozano, J.A.: Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer Academic Publishers, Dordrecht (2002)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Eberhart, R.C., Kennedy, J.: A new optimizer using particle swarm theory. In: 6th International Symposium on Micromachine and Human Science, Nagoya, Japan, pp. 39-43 (1995)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Kennedy, J., Eberhart, R.C., Shi, Y.: Swarm Intelligence. Morgan Kaufmann, San Francisco (2001)"
+      },
+      {
+        "ref_id": "11",
+        "text": "Yao, X., Liu, Y., Liang, K.-H., Lin, G.: Fast evolutionary algorithms. In: Advances in evolutionary computing: theory and applications, pp. 45-94. Springer, Inc., New York (2003)"
+      },
+      {
+        "ref_id": "12",
+        "text": "Liang, J.J., Qin, A.K., Suganthan, P.N., Baskar, S.: Comprehensive learning particle swarm optimizer for global optimization of multimodal functions. IEEE Transactions on Evolutionary Computation 10(3), 281-295 (2006)"
+      },
+      {
+        "ref_id": "13",
+        "text": "de Oca, M.A.M., Stützle, T., Birattari, M., Dorigo, M.: Frankenstein's pso: A composite particle swarm frankenstein's pso: A composite particle swarm optimization algorithm. IEEE Transactions on Evolutionary Computation 13(5), 1120-1132 (2009)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Zhan, Z.-H., Zhang, J., Li, Y., Chung, H.-H.: Adaptive particles warm optimization. IEEE Transactions on Systems, Man and Cybernetics, Part B (2009)"
+      }
+    ],
+    "reference_count": 14,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test instances used in our experiments",
+      "headers": [
+        "$\\Omega$",
+        "$f(\\cdot)$"
+      ],
+      "rows": [
+        [
+          "$[-100,100]^{n}$",
+          "$f_{1}(x)=\\sum_{i=1}^{n} x_{i}^{2}$"
+        ],
+        [
+          "$[-100,100]^{n}$",
+          "$f_{3}(x)=\\sum_{i=1}^{n}\\left(\\sum_{j=1}^{i} x_{j}\\right)^{2}$"
+        ],
+        [
+          "$[-30,30]^{n}$",
+          "$f_{5}(x)=\\sum_{i=1}^{n-1}\\left[100\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(x_{i}-1\\right)^{2}\\right]$"
+        ],
+        [
+          "$[-100,100]^{n}$",
+          "$f_{6}(x)=\\sum_{i=1}^{n}\\left[x_{i}+0.5\\right]^{2}$"
+        ],
+        [
+          "$[-1.28,1.28]^{n}$",
+          "$f_{7}(x)=\\sum_{i=1}^{n} i x_{i}^{4}+\\operatorname{rand}[0,1)$"
+        ],
+        [
+          "$[-5.12,5.12]^{n}$",
+          "$f_{9}(x)=\\sum_{i=1}^{n}\\left[x_{i}^{2}-10 \\cos \\left(2 \\pi x_{i}\\right)+10\\right]$"
+        ],
+        [
+          "$[-32,32]^{n}$",
+          "$f_{10}(x)=-20 \\exp \\left(-0.2 \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} x_{i}^{2}}\\right)-\\exp \\left(\\frac{1}{n} \\sum_{i=1}^{n} \\cos \\left(2 \\pi x_{i}\\right)\\right)+20+e$"
+        ],
+        [
+          "$[-600,600]^{n}$",
+          "$f_{11}(x)=\\frac{1}{4000} \\sum_{i=1}^{n} x_{i}^{2}-\\Pi_{i=1}^{n} \\cos \\left(\\frac{x_{i}}{\\sqrt{i}}\\right)+1$"
+        ],
+        [
+          "$[-50,50]^{n}$",
+          "$\\begin{aligned} & f_{12}(x)=\\frac{x}{n}\\left\\{10 \\sin ^{2}\\left(\\pi y_{1}\\right)+\\sum_{i=1}^{n-1}\\left(y_{i}-1\\right)^{2}\\left[1+10 \\sin ^{2}\\left(\\pi y_{i+1}\\right)\\right]+\\left(y_{n}-1\\right)^{2}\\right\\} \\\\ & +\\sum_{i=1}^{n} u\\left(x_{i}, 10,100,4\\right) \\\\ & y_{i}=1+\\frac{1}{4}\\left(x_{i}+1\\right) \\end{aligned}$"
+        ],
+        [
+          "$[-50,50]^{n}$",
+          "$\\begin{aligned} & u\\left(x_{i}, a, k, m\\right)= \\begin{cases}k\\left(x_{i}-a\\right)^{m} & x_{i}>a \\\\ 0 & -a \\leq x_{i} \\leq a \\\\ k\\left(-x_{i}-a\\right)^{m} & x_{i}<-a\\end{cases} \\text { the } u\\left(x_{i}, a, k, m\\right) \\text { is the same as in } f_{12}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "The statistical results (mean $\\pm$ std.) of PSO and PEPSO on the 13 test instances over 50 runs after 1000, 3000 and 5000 generations",
+      "headers": [
+        "",
+        "",
+        "1000",
+        "3000",
+        "5000"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "PSO",
+          "$1.548 \\mathrm{e}-12 \\pm 2.693 \\mathrm{e}-12$",
+          "$5.530 \\mathrm{e}-45 \\pm 1.873 \\mathrm{e}-44$",
+          "$1.471 \\mathrm{e}-77 \\pm 6.468 \\mathrm{e}-77$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$9.587 \\mathrm{e}-17 \\pm 1.623 \\mathrm{e}-16$",
+          "$1.756 \\mathrm{e}-56 \\pm 3.405 \\mathrm{e}-56$",
+          "$1.398 \\mathrm{e}-95 \\pm 7.907 \\mathrm{e}-95$"
+        ],
+        [
+          "$f_{2}$",
+          "PSO",
+          "$1.086 \\mathrm{e}-08 \\pm 3.602 \\mathrm{e}-08$",
+          "$3.433 \\mathrm{e}-30 \\pm 9.232 \\mathrm{e}-30$",
+          "$1.824 \\mathrm{e}-51 \\pm 6.527 \\mathrm{e}-51$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$1.429 \\mathrm{e}-11 \\pm 4.260 \\mathrm{e}-11$",
+          "$7.476 \\mathrm{e}-38 \\pm 1.398 \\mathrm{e}-37$",
+          "$1.263 \\mathrm{e}-63 \\pm 5.074 \\mathrm{e}-63$"
+        ],
+        [
+          "$f_{3}$",
+          "PSO",
+          "$6.208 \\mathrm{e}+02 \\pm 2.916 \\mathrm{e}+02$",
+          "$4.642 \\mathrm{e}+00 \\pm 3.908 \\mathrm{e}+00$",
+          "$8.114 \\mathrm{e}-02 \\pm 9.738 \\mathrm{e}-02$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$2.118 \\mathrm{e}+02 \\pm 1.067 \\mathrm{e}+02$",
+          "$4.947 \\mathrm{e}-01 \\pm 4.704 \\mathrm{e}-01$",
+          "$2.550 \\mathrm{e}-03 \\pm 2.881 \\mathrm{e}-03$"
+        ],
+        [
+          "$f_{4}$",
+          "PSO",
+          "$4.073 \\mathrm{e}+00 \\pm 1.258 \\mathrm{e}+00$",
+          "$1.989 \\mathrm{e}-01 \\pm 1.090 \\mathrm{e}-01$",
+          "$1.312 \\mathrm{e}-02 \\pm 1.250 \\mathrm{e}-02$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$1.344 \\mathrm{e}+00 \\pm 4.469 \\mathrm{e}-01$",
+          "$8.813 \\mathrm{e}-03 \\pm 6.994 \\mathrm{e}-03$",
+          "$6.424 \\mathrm{e}-05 \\pm 7.231 \\mathrm{e}-05$"
+        ],
+        [
+          "$f_{5}$",
+          "PSO",
+          "$1.194 \\mathrm{e}+02 \\pm 4.243 \\mathrm{e}+02$",
+          "$1.079 \\mathrm{e}+02 \\pm 4.249 \\mathrm{e}+02$",
+          "$1.015 \\mathrm{e}+02 \\pm 4.252 \\mathrm{e}+02$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$5.417 \\mathrm{e}+01 \\pm 3.916 \\mathrm{e}+01$",
+          "$3.941 \\mathrm{e}+01 \\pm 3.026 \\mathrm{e}+01$",
+          "$3.477 \\mathrm{e}+01 \\pm 2.912 \\mathrm{e}+01$"
+        ],
+        [
+          "$f_{6}$",
+          "PSO",
+          "$0.000 \\mathrm{e}+00 \\pm 0.000 \\mathrm{e}+00$",
+          "$0.000 \\mathrm{e}+00 \\pm 0.000 \\mathrm{e}+00$",
+          "$0.000 \\mathrm{e}+00 \\pm 0.000 \\mathrm{e}+00$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$0.000 \\mathrm{e}+00 \\pm 0.000 \\mathrm{e}+00$",
+          "$0.000 \\mathrm{e}+00 \\pm 0.000 \\mathrm{e}+00$",
+          "$0.000 \\mathrm{e}+00 \\pm 0.000 \\mathrm{e}+00$"
+        ],
+        [
+          "$f_{7}$",
+          "PSO",
+          "$2.043 \\mathrm{e}-02 \\pm 6.191 \\mathrm{e}-03$",
+          "$6.852 \\mathrm{e}-03 \\pm 2.398 \\mathrm{e}-03$",
+          "$4.202 \\mathrm{e}-03 \\pm 1.561 \\mathrm{e}-03$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$1.384 \\mathrm{e}-02 \\pm 4.793 \\mathrm{e}-03$",
+          "$5.218 \\mathrm{e}-03 \\pm 1.885 \\mathrm{e}-03$",
+          "$3.113 \\mathrm{e}-03 \\pm 1.018 \\mathrm{e}-03$"
+        ],
+        [
+          "$f_{8}$",
+          "PSO",
+          "$1.416 \\mathrm{e}+03 \\pm 3.486 \\mathrm{e}+02$",
+          "$1.412 \\mathrm{e}+03 \\pm 3.468 \\mathrm{e}+02$",
+          "$1.412 \\mathrm{e}+03 \\pm 3.468 \\mathrm{e}+02$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$1.572 \\mathrm{e}+03 \\pm 3.916 \\mathrm{e}+02$",
+          "$1.5699 \\mathrm{e}+03 \\pm 3.914 \\mathrm{e}+02$",
+          "$1.570 \\mathrm{e}+03 \\pm 3.914 \\mathrm{e}+02$"
+        ],
+        [
+          "$f_{9}$",
+          "PSO",
+          "$4.208 \\mathrm{e}+01 \\pm 1.854 \\mathrm{e}+01$",
+          "$3.475 \\mathrm{e}+01 \\pm 1.971 \\mathrm{e}+01$",
+          "$3.409 \\mathrm{e}+01 \\pm 1.931 \\mathrm{e}+01$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$3.500 \\mathrm{e}+01 \\pm 2.024 \\mathrm{e}+01$",
+          "$2.840 \\mathrm{e}+01 \\pm 1.622 \\mathrm{e}+01$",
+          "$2.728 \\mathrm{e}+01 \\pm 1.645 \\mathrm{e}+01$"
+        ],
+        [
+          "$f_{10}$",
+          "PSO",
+          "$1.803 \\mathrm{e}-07 \\pm 1.589 \\mathrm{e}-07$",
+          "$8.420 \\mathrm{e}-15 \\pm 1.705 \\mathrm{e}-15$",
+          "$7.923 \\mathrm{e}-15 \\pm 5.024 \\mathrm{e}-16$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$5.615 \\mathrm{e}-09 \\pm 1.371 \\mathrm{e}-08$",
+          "$7.852 \\mathrm{e}-15 \\pm 7.033 \\mathrm{e}-16$",
+          "$7.709 \\mathrm{e}-15 \\pm 9.736 \\mathrm{e}-16$"
+        ],
+        [
+          "$f_{11}$",
+          "PSO",
+          "$8.368 \\mathrm{e}-03 \\pm 1.073 \\mathrm{e}-02$",
+          "$7.928 \\mathrm{e}-03 \\pm 9.858 \\mathrm{e}-03$",
+          "$7.928 \\mathrm{e}-03 \\pm 9.858 \\mathrm{e}-03$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$1.429 \\mathrm{e}-02 \\pm 2.018 \\mathrm{e}-02$",
+          "$1.365 \\mathrm{e}-02 \\pm 2.010 \\mathrm{e}-02$",
+          "$1.218 \\mathrm{e}-02 \\pm 1.770 \\mathrm{e}-02$"
+        ],
+        [
+          "$f_{12}$",
+          "PSO",
+          "$2.073 \\mathrm{e}-03 \\pm 1.466 \\mathrm{e}-02$",
+          "$1.571 \\mathrm{e}-32 \\pm 5.529 \\mathrm{e}-48$",
+          "$1.571 \\mathrm{e}-32 \\pm 5.529 \\mathrm{e}-48$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$4.146 \\mathrm{e}-03 \\pm 2.932 \\mathrm{e}-02$",
+          "$4.146 \\mathrm{e}-03 \\pm 2.932 \\mathrm{e}-02$",
+          "$4.146 \\mathrm{e}-03 \\pm 2.932 \\mathrm{e}-02$"
+        ],
+        [
+          "$f_{13}$",
+          "PSO",
+          "$3.302 \\mathrm{e}-09 \\pm 1.837 \\mathrm{e}-08$",
+          "$1.350 \\mathrm{e}-32 \\pm 1.106 \\mathrm{e}-47$",
+          "$1.350 \\mathrm{e}-32 \\pm 1.106 \\mathrm{e}-47$"
+        ],
+        [
+          "",
+          "PEPSO",
+          "$2.101 \\mathrm{e}-13 \\pm 8.957 \\mathrm{e}-13$",
+          "$1.350 \\mathrm{e}-32 \\pm 1.106 \\mathrm{e}-47$",
+          "$1.350 \\mathrm{e}-32 \\pm 1.106 \\mathrm{e}-47$"
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 5
+    }
+  ]
+}

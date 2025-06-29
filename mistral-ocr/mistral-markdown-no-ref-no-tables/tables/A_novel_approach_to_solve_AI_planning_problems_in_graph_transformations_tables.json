@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/A novel approach to solve AI planning problems in graph transformations.md",
+    "filename": "A novel approach to solve AI planning problems in graph transformations.md",
+    "title": "A novel approach to solve AI planning problems in graph transformations",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The parameter setting for the approaches.",
+      "headers": [
+        "Iterations",
+        "",
+        "",
+        "100",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          2,
+          "",
+          "",
+          "ACO",
+          "",
+          ""
+        ],
+        [
+          "Learning rate",
+          "",
+          0.4,
+          "Colony size",
+          "",
+          50
+        ],
+        [
+          "Replacement rate",
+          "",
+          0.6,
+          "Ant path length $\\left(\\lambda_{\\text {ant }}\\right)$",
+          "",
+          50
+        ],
+        [
+          "",
+          "",
+          "",
+          "Stages",
+          "",
+          15
+        ],
+        [
+          "LBN and LDM",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "NumPromis",
+          "",
+          "",
+          3,
+          "",
+          ""
+        ],
+        [
+          "Minus",
+          "Planning domain",
+          "Value",
+          "Planning domain",
+          "Value",
+          ""
+        ],
+        [
+          "",
+          "Dining philosophers",
+          0.6,
+          "Readers-writers, shopping, electronic control units",
+          0.1,
+          ""
+        ],
+        [
+          "PSO",
+          "",
+          "GA",
+          "",
+          "",
+          ""
+        ],
+        [
+          1,
+          2,
+          "Crossover rate",
+          "",
+          0.6,
+          ""
+        ],
+        [
+          2,
+          2,
+          "Mutation rate",
+          "",
+          0.3,
+          ""
+        ],
+        [
+          "W",
+          0.8,
+          "Position of crossover",
+          "",
+          "Middle of the chromosomes",
+          ""
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "The parameter setting for the plnBOA and $k$-BFWS approaches.",
+      "headers": [
+        "Planning domain",
+        "Size",
+        "RefPerc",
+        "depth",
+        "$k$ (the number of propositional atoms)"
+      ],
+      "rows": [
+        [
+          "Dining philosophers",
+          20,
+          "$90 \\%$",
+          100,
+          20
+        ],
+        [
+          "",
+          40,
+          "$92 \\%$",
+          120,
+          40
+        ],
+        [
+          "",
+          60,
+          "$94 \\%$",
+          140,
+          60
+        ],
+        [
+          "",
+          80,
+          "$96 \\%$",
+          180,
+          80
+        ],
+        [
+          "Readers-writers",
+          44,
+          "$50 \\%$",
+          50,
+          8
+        ],
+        [
+          "",
+          55,
+          "$60 \\%$",
+          70,
+          10
+        ],
+        [
+          "",
+          66,
+          "$70 \\%$",
+          90,
+          12
+        ],
+        [
+          "Shopping",
+          616,
+          "$60 \\%$",
+          50,
+          17
+        ],
+        [
+          "",
+          818,
+          "$70 \\%$",
+          50,
+          19
+        ],
+        [
+          "",
+          1020,
+          "$80 \\%$",
+          50,
+          21
+        ],
+        [
+          "Electronic control units",
+          4,
+          "$50 \\%$",
+          30,
+          8
+        ],
+        [
+          "",
+          6,
+          "$65 \\%$",
+          50,
+          12
+        ],
+        [
+          "",
+          8,
+          "$75 \\%$",
+          90,
+          16
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "The results of the Mann-Whitney U test.",
+      "headers": [
+        "",
+        "plnBOA - BOAcl2",
+        "plnBOA- ACO",
+        "plnBOA - LBN",
+        "plnBOA - LDM",
+        "plnBOA -PSO",
+        "plnBOA -GA",
+        "plnBOA -k-BFWS"
+      ],
+      "rows": [
+        [
+          "Z",
+          -2.004,
+          -2.938,
+          -2.022,
+          -2.112,
+          -3.213,
+          -3.143,
+          -2.531
+        ],
+        [
+          "Asymp. Sig. (2-tailed)",
+          0.039,
+          0.027,
+          0.034,
+          0.036,
+          0.021,
+          0.019,
+          0.029
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    }
+  ]
+}

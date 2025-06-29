@@ -1,0 +1,726 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/An Adaptive Evolutionary Multi-Objective Estimation of Distribution Algorithm and Its Application to Multi-UAV Path Planning.md",
+    "filename": "An Adaptive Evolutionary Multi-Objective Estimation of Distribution Algorithm and Its Application to Multi-UAV Path Planning.md",
+    "title": "An Adaptive Evolutionary Multi-Objective Estimation of Distribution Algorithm and Its Application to Multi-UAV Path Planning",
+    "year": "2023"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] Y. Zou, X. Jiang, P. Yan, and J. Zhu, \"Next-generation unmanned aerial vehicle (UAV) cooperative communications,\" J. Nanjing Univ. Posts Telecommun., Natural Sci., vol. 6, no. 37, pp. 43-51, 2017.\n[2] B. Di, R. Zhou, and H. Duan, \"Potential field based receding horizon motion planning for centrality-aware multiple UAV cooperative surveillance,\" Aerosp. Sci. Technol., vol. 46, pp. 386-397, Oct./Nov. 2015.\n[3] M. Mozaffari, W. Saad, M. Bennis, and M. Debbah, \"Drone small cells in the clouds: Design, deployment and performance analysis,\" in Proc. IEEE Global Commun. Conf. (GLOBECOM), Dec. 2015, pp. 1-6.\n[4] C. Qu, W. Gai, J. Zhang, and M. Zhong, \"A novel hybrid grey wolf optimizer algorithm for unmanned aerial vehicle (UAV) path planning,\" Knowl.-Based Syst., vol. 194, Apr. 2020, Art. no. 105530.\n[5] O. K. Sahingoz, \"Flyable path planning for a multi-UAV system with genetic algorithms and Bezier curves,\" in Proc. Int. Conf. Unmanned Aircr. Syst. (ICUAS), May 2013, pp. 41-48.\n[6] E. Dasdemir, M. Köksalan, and D. T. Öztürk, \"A flexible reference point-based multi-objective evolutionary algorithm: An application to the UAV route planning problem,\" Comput. Oper. Res., vol. 114, Feb. 2020, Art. no. 104811.\n[7] P. Yao, H. Wang, and H. Ji, \"Multi-UAVs tracking target in urban environment by model predictive control and improved grey wolf optimizer,\" Aerosp. Sci. Technol., vol. 55, pp. 131-143, Aug. 2016.\n[8] P. Yang, K. Tang, and J. A. Lozano, \"Estimation of distribution algorithms based unmanned aerial vehicle path planner using a new coordinate system,\" in Proc. IEEE Congr. Evol. Comput. (CEC), Jul. 2014, pp. 1469-1476.\n[9] W. Yu and Y. Lu, \"UAV 3D environment obstacle avoidance trajectory planning based on improved artificial potential field method,\" J. Phys., Conf. Ser., vol. 1885, no. 2, Apr. 2021, Art. no. 022020.\n[10] J. Zhang, N. Li, D. Zhang, X. Wei, and X. Zhang, \"Multi-UAV cooperative route planning based on decision variables and improved genetic algorithm,\" J. Phys., Conf. Ser., vol. 1941, no. 1, Jun. 2021, Art. no. 012012.\n[11] F. Ma and F. Xiong, \"Research on path planning of plant protection UAV based on grid method and improved ant colony algorithm,\" IOP Conf. Ser., Mater. Sci. Eng., vol. 612, no. 5, Oct. 2019, Art. no. 052053.\n[12] Z. Cui, J. Zhang, Y. Chang, X. Cai, and W. Zhang, \"Improved NSGA-III with selection-and-elimination operator,\" Swarm Evol. Comput., vol. 49, pp. 23-33, Sep. 2019.\n[13] X. Cai, Z. Hu, and J. Chen, \"A many-objective optimization recommendation algorithm based on knowledge mining,\" Inf. Sci., vol. 537, pp. 148-161, Oct. 2020.\n[14] P. Larrañaga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, vol. 2. Cham, Switzerland: Springer, 2001.\n[15] M. Hauschild and M. Pelikan, \"An introduction and survey of estimation of distribution algorithms,\" Swarm Evol. Comput., vol. 1, no. 3, pp. 111-128, 2011.\n[16] L. Bao, X. Sun, D. Gong, and Y. Zhang, \"Multisource heterogeneous usergenerated contents-driven interactive estimation of distribution algorithms for personalized search,\" IEEE Trans. Evol. Comput., vol. 26, no. 5, pp. 844-858, Oct. 2022.\n[17] Q. Yang, W.-N. Chen, Y. Li, C. L. P. Chen, X.-M. Xu, and J. Zhang, \"Multimodal estimation of distribution algorithms,\" IEEE Trans. Cybern., vol. 47, no. 3, pp. 636-650, Mar. 2017.\n[18] W. Shao, D. Pi, and Z. Shao, \"A Pareto-based estimation of distribution algorithm for solving multiobjective distributed no-wait flow-shop scheduling problem with sequence-dependent setup time,\" IEEE Trans. Automat. Sci. Eng., vol. 16, no. 3, pp. 1344-1360, Jul. 2019.\n\n[19] W. Shi, W.-N. Chen, Y. Lin, T. Gu, S. Kwong, and J. Zhang, \"An adaptive estimation of distribution algorithm for multipolicy insurance investment planning,\" IEEE Trans. Evol. Comput., vol. 23, no. 1, pp. 1-14, Feb. 2019.\n[20] X. Wang, H. Zhao, T. Han, H. Zhou, and C. Li, \"A grey wolf optimizer using Gaussian estimation of distribution and its application in the multiUAV multi-target urban tracking problem,\" Appl. Soft Comput., vol. 78, pp. 240-260, May 2019.\n[21] R.-D. Liu, Z.-H. Zhan, W.-N. Chen, Z. Yu, and J. Zhang, \"Estimation of distribution algorithm for autonomous underwater vehicles path planning,\" in Proc. 15th Int. Symp. Neural Netw. Cham, Switzerland: Springer, 2018, pp. 647-655.\n[22] T. Lin, K. Zhang, N. Cui, Z. Tu, and H. Zhang, \"Path planning of aircraft based on adaptive multiobjective estimation of distribution algorithm,\" in Proc. IEEE Symp. Ser. Comput. Intell. (SSCI), Dec. 2016, pp. 1-8.\n[23] K. Deb and H. Jain, \"An evolutionary many-objective optimization algorithm using reference-point-based nondominated sorting approach, Part I: Solving problems with box constraints,\" IEEE Trans. Evol. Comput., vol. 18, no. 4, pp. 577-601, Apr. 2013.\n[24] R. W. Beard, T. W. McLain, M. A. Goodrich, and E. P. Anderson, \"Coordinated target assignment and intercept for unmanned air vehicles,\" IEEE Trans. Robot. Autom., vol. 18, no. 6, pp. 911-922, Dec. 2002.\n[25] Y. Qiao, J. Yang, Q. Zhang, J. Xi, and L. Kong, \"Multi-UAV cooperative patrol task planning novel method based on improved PFIH algorithm,\" IEEE Access, vol. 7, pp. 167621-167628, 2019.\n[26] N. Hansen and S. Kern, \"Evaluating the CMA evolution strategy on multimodal test functions,\" in Proc. Int. Conf. Parallel Problem Solving Nature. Cham, Switzerland: Springer, 2004, pp. 282-291.\n[27] K. Deb, S. Agrawal, A. Pratap, and T. Meyarivan, \"A fast elitist nondominated sorting genetic algorithm for multi-objective optimization: NSGA-II,\" in Proc. Int. Conf. Parallel Problem Solving Nature. Cham, Switzerland: Springer, 2000, pp. 849-858.\n[28] X. Wang, T. Han, and H. Zhao, \"An estimation of distribution algorithm with multi-leader search,\" IEEE Access, vol. 8, pp. 37383-37405, 2020.\n[29] A. Zhou, J. Y. Sun, and Q. F. Zhang, \"An estimation of distribution algorithm with cheap and expensive local search methods,\" IEEE Trans. Evol. Comput., vol. 19, no. 6, pp. 807-822, Dec. 2015.\n[30] J. A. Lozano, P. Larrañaga, E. Bengoetxea, and I. Inza, Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms. Cham, Switzerland: Springer, 2006, vol. 192.\n[31] R. Cheng, Y. Jin, M. Olhofer, and B. Sendhoff, \"A reference vector guided evolutionary algorithm for many-objective optimization,\" IEEE Trans. Evol. Comput., vol. 20, no. 5, pp. 773-791, Oct. 2016.\n[32] X. Zhou, P. Guo, and C. P. Chen, \"An algorithm for calculating the hypervolume contribution of a set,\" in Proc. World Automat. Congr., 2012, pp. 439-443.\n[33] P. A. N. Bosman and D. Thierens, \"The balance between proximity and diversity in multiobjective evolutionary algorithms,\" IEEE Trans. Evol. Comput., vol. 7, no. 2, pp. 174-188, Apr. 2003.\n![img-9.jpeg](img-9.jpeg)\n\nREN YUHANG was born in Chongqing, China, in 1997. He received the B.S. degree in science from the Wuhan University of Technology, Wuhan, Hubei, China, in 2020, where he is currently pursuing the master's degree in operations research and control theory. His research interests include acoustic far-field imaging and flight path planning based on nonlinear optimization theory and swarm intelligence algorithm.\n![img-10.jpeg](img-10.jpeg)\n\nZHANG LIANG was born in Suizhou, Hubei, China, in 1977. He received the B.S. degree from Central China Normal University, in 2000, the M.S. degree from the Huazhong University of Science and Technology, in 2003, and the Ph.D. degree in applied mathematics from Wuhan University, in 2006.\nFrom 2006 to 2011, he was a Lecturer, from 2011 to 2017, an Associate Professor, and became a Professor, in 2017, with the Department of Mathematics, Wuhan University of Technology. He has published 15 articles and one book. He is the Principal Investigator of three projects of the National Natural Science Foundation of China. His research interests include control theory and intelligent computing.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Y. Zou, X. Jiang, P. Yan, and J. Zhu, \"Next-generation unmanned aerial vehicle (UAV) cooperative communications,\" J. Nanjing Univ. Posts Telecommun., Natural Sci., vol. 6, no. 37, pp. 43-51, 2017."
+      },
+      {
+        "ref_id": "2",
+        "text": "B. Di, R. Zhou, and H. Duan, \"Potential field based receding horizon motion planning for centrality-aware multiple UAV cooperative surveillance,\" Aerosp. Sci. Technol., vol. 46, pp. 386-397, Oct./Nov. 2015."
+      },
+      {
+        "ref_id": "3",
+        "text": "M. Mozaffari, W. Saad, M. Bennis, and M. Debbah, \"Drone small cells in the clouds: Design, deployment and performance analysis,\" in Proc. IEEE Global Commun. Conf. (GLOBECOM), Dec. 2015, pp. 1-6."
+      },
+      {
+        "ref_id": "4",
+        "text": "C. Qu, W. Gai, J. Zhang, and M. Zhong, \"A novel hybrid grey wolf optimizer algorithm for unmanned aerial vehicle (UAV) path planning,\" Knowl.-Based Syst., vol. 194, Apr. 2020, Art. no. 105530."
+      },
+      {
+        "ref_id": "5",
+        "text": "O. K. Sahingoz, \"Flyable path planning for a multi-UAV system with genetic algorithms and Bezier curves,\" in Proc. Int. Conf. Unmanned Aircr. Syst. (ICUAS), May 2013, pp. 41-48."
+      },
+      {
+        "ref_id": "6",
+        "text": "E. Dasdemir, M. Köksalan, and D. T. Öztürk, \"A flexible reference point-based multi-objective evolutionary algorithm: An application to the UAV route planning problem,\" Comput. Oper. Res., vol. 114, Feb. 2020, Art. no. 104811."
+      },
+      {
+        "ref_id": "7",
+        "text": "P. Yao, H. Wang, and H. Ji, \"Multi-UAVs tracking target in urban environment by model predictive control and improved grey wolf optimizer,\" Aerosp. Sci. Technol., vol. 55, pp. 131-143, Aug. 2016."
+      },
+      {
+        "ref_id": "8",
+        "text": "P. Yang, K. Tang, and J. A. Lozano, \"Estimation of distribution algorithms based unmanned aerial vehicle path planner using a new coordinate system,\" in Proc. IEEE Congr. Evol. Comput. (CEC), Jul. 2014, pp. 1469-1476."
+      },
+      {
+        "ref_id": "9",
+        "text": "W. Yu and Y. Lu, \"UAV 3D environment obstacle avoidance trajectory planning based on improved artificial potential field method,\" J. Phys., Conf. Ser., vol. 1885, no. 2, Apr. 2021, Art. no. 022020."
+      },
+      {
+        "ref_id": "10",
+        "text": "J. Zhang, N. Li, D. Zhang, X. Wei, and X. Zhang, \"Multi-UAV cooperative route planning based on decision variables and improved genetic algorithm,\" J. Phys., Conf. Ser., vol. 1941, no. 1, Jun. 2021, Art. no. 012012."
+      },
+      {
+        "ref_id": "11",
+        "text": "F. Ma and F. Xiong, \"Research on path planning of plant protection UAV based on grid method and improved ant colony algorithm,\" IOP Conf. Ser., Mater. Sci. Eng., vol. 612, no. 5, Oct. 2019, Art. no. 052053."
+      },
+      {
+        "ref_id": "12",
+        "text": "Z. Cui, J. Zhang, Y. Chang, X. Cai, and W. Zhang, \"Improved NSGA-III with selection-and-elimination operator,\" Swarm Evol. Comput., vol. 49, pp. 23-33, Sep. 2019."
+      },
+      {
+        "ref_id": "13",
+        "text": "X. Cai, Z. Hu, and J. Chen, \"A many-objective optimization recommendation algorithm based on knowledge mining,\" Inf. Sci., vol. 537, pp. 148-161, Oct. 2020."
+      },
+      {
+        "ref_id": "14",
+        "text": "P. Larrañaga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, vol. 2. Cham, Switzerland: Springer, 2001."
+      },
+      {
+        "ref_id": "15",
+        "text": "M. Hauschild and M. Pelikan, \"An introduction and survey of estimation of distribution algorithms,\" Swarm Evol. Comput., vol. 1, no. 3, pp. 111-128, 2011."
+      },
+      {
+        "ref_id": "16",
+        "text": "L. Bao, X. Sun, D. Gong, and Y. Zhang, \"Multisource heterogeneous usergenerated contents-driven interactive estimation of distribution algorithms for personalized search,\" IEEE Trans. Evol. Comput., vol. 26, no. 5, pp. 844-858, Oct. 2022."
+      },
+      {
+        "ref_id": "17",
+        "text": "Q. Yang, W.-N. Chen, Y. Li, C. L. P. Chen, X.-M. Xu, and J. Zhang, \"Multimodal estimation of distribution algorithms,\" IEEE Trans. Cybern., vol. 47, no. 3, pp. 636-650, Mar. 2017."
+      },
+      {
+        "ref_id": "18",
+        "text": "W. Shao, D. Pi, and Z. Shao, \"A Pareto-based estimation of distribution algorithm for solving multiobjective distributed no-wait flow-shop scheduling problem with sequence-dependent setup time,\" IEEE Trans. Automat. Sci. Eng., vol. 16, no. 3, pp. 1344-1360, Jul. 2019."
+      },
+      {
+        "ref_id": "19",
+        "text": "W. Shi, W.-N. Chen, Y. Lin, T. Gu, S. Kwong, and J. Zhang, \"An adaptive estimation of distribution algorithm for multipolicy insurance investment planning,\" IEEE Trans. Evol. Comput., vol. 23, no. 1, pp. 1-14, Feb. 2019."
+      },
+      {
+        "ref_id": "20",
+        "text": "X. Wang, H. Zhao, T. Han, H. Zhou, and C. Li, \"A grey wolf optimizer using Gaussian estimation of distribution and its application in the multiUAV multi-target urban tracking problem,\" Appl. Soft Comput., vol. 78, pp. 240-260, May 2019."
+      },
+      {
+        "ref_id": "21",
+        "text": "R.-D. Liu, Z.-H. Zhan, W.-N. Chen, Z. Yu, and J. Zhang, \"Estimation of distribution algorithm for autonomous underwater vehicles path planning,\" in Proc. 15th Int. Symp. Neural Netw. Cham, Switzerland: Springer, 2018, pp. 647-655."
+      },
+      {
+        "ref_id": "22",
+        "text": "T. Lin, K. Zhang, N. Cui, Z. Tu, and H. Zhang, \"Path planning of aircraft based on adaptive multiobjective estimation of distribution algorithm,\" in Proc. IEEE Symp. Ser. Comput. Intell. (SSCI), Dec. 2016, pp. 1-8."
+      },
+      {
+        "ref_id": "23",
+        "text": "K. Deb and H. Jain, \"An evolutionary many-objective optimization algorithm using reference-point-based nondominated sorting approach, Part I: Solving problems with box constraints,\" IEEE Trans. Evol. Comput., vol. 18, no. 4, pp. 577-601, Apr. 2013."
+      },
+      {
+        "ref_id": "24",
+        "text": "R. W. Beard, T. W. McLain, M. A. Goodrich, and E. P. Anderson, \"Coordinated target assignment and intercept for unmanned air vehicles,\" IEEE Trans. Robot. Autom., vol. 18, no. 6, pp. 911-922, Dec. 2002."
+      },
+      {
+        "ref_id": "25",
+        "text": "Y. Qiao, J. Yang, Q. Zhang, J. Xi, and L. Kong, \"Multi-UAV cooperative patrol task planning novel method based on improved PFIH algorithm,\" IEEE Access, vol. 7, pp. 167621-167628, 2019."
+      },
+      {
+        "ref_id": "26",
+        "text": "N. Hansen and S. Kern, \"Evaluating the CMA evolution strategy on multimodal test functions,\" in Proc. Int. Conf. Parallel Problem Solving Nature. Cham, Switzerland: Springer, 2004, pp. 282-291."
+      },
+      {
+        "ref_id": "27",
+        "text": "K. Deb, S. Agrawal, A. Pratap, and T. Meyarivan, \"A fast elitist nondominated sorting genetic algorithm for multi-objective optimization: NSGA-II,\" in Proc. Int. Conf. Parallel Problem Solving Nature. Cham, Switzerland: Springer, 2000, pp. 849-858."
+      },
+      {
+        "ref_id": "28",
+        "text": "X. Wang, T. Han, and H. Zhao, \"An estimation of distribution algorithm with multi-leader search,\" IEEE Access, vol. 8, pp. 37383-37405, 2020."
+      },
+      {
+        "ref_id": "29",
+        "text": "A. Zhou, J. Y. Sun, and Q. F. Zhang, \"An estimation of distribution algorithm with cheap and expensive local search methods,\" IEEE Trans. Evol. Comput., vol. 19, no. 6, pp. 807-822, Dec. 2015."
+      },
+      {
+        "ref_id": "30",
+        "text": "J. A. Lozano, P. Larrañaga, E. Bengoetxea, and I. Inza, Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms. Cham, Switzerland: Springer, 2006, vol. 192."
+      },
+      {
+        "ref_id": "31",
+        "text": "R. Cheng, Y. Jin, M. Olhofer, and B. Sendhoff, \"A reference vector guided evolutionary algorithm for many-objective optimization,\" IEEE Trans. Evol. Comput., vol. 20, no. 5, pp. 773-791, Oct. 2016."
+      },
+      {
+        "ref_id": "32",
+        "text": "X. Zhou, P. Guo, and C. P. Chen, \"An algorithm for calculating the hypervolume contribution of a set,\" in Proc. World Automat. Congr., 2012, pp. 439-443."
+      },
+      {
+        "ref_id": "33",
+        "text": "P. A. N. Bosman and D. Thierens, \"The balance between proximity and diversity in multiobjective evolutionary algorithms,\" IEEE Trans. Evol. Comput., vol. 7, no. 2, pp. 174-188, Apr. 2003."
+      }
+    ],
+    "reference_count": 33,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparison results of AEMO-EDA with three multi-objective optimization algorithms.",
+      "headers": [
+        "Problems",
+        "$M$",
+        "Max Gen",
+        "Max Pop",
+        "NSGA-III",
+        "NSGAIII-GBFE",
+        "RVEA",
+        "AEMO-EDA"
+      ],
+      "rows": [
+        [
+          1,
+          3,
+          350,
+          600,
+          "$8.937 \\times 10^{-4}$",
+          "$3.212 \\times 10^{-4}$",
+          "$8.385 \\times 10^{-4}$",
+          "$4.342 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$2.621 \\times 10^{-2}$",
+          "$1.365 \\times 10^{-2}$",
+          "$6.281 \\times 10^{-3}$",
+          "$5.238 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$1.033 \\times 10^{-2}$",
+          "$5.832 \\times 10^{-3}$",
+          "$9.364 \\times 10^{-3}$",
+          "$3.178 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$5.088 \\times 10^{-2}$",
+          "$1.309 \\times 10^{-2}$",
+          "$7.391 \\times 10^{-3}$",
+          "$2.601 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$1.240 \\times 10^{-1}$",
+          "$1.977 \\times 10^{-2}$",
+          "$4.015 \\times 10^{-2}$",
+          "$3.623 \\times 10^{-2}$"
+        ],
+        [
+          2,
+          3,
+          350,
+          600,
+          "$1.794 \\times 10^{-3}$",
+          "$5.401 \\times 10^{-4}$",
+          "$3.149 \\times 10^{-4}$",
+          "$2.451 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$9.211 \\times 10^{-3}$",
+          "$7.389 \\times 10^{-3}$",
+          "$5.104 \\times 10^{-3}$",
+          "$4.257 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$2.093 \\times 10^{-2}$",
+          "$5.407 \\times 10^{-3}$",
+          "$7.324 \\times 10^{-3}$",
+          "$8.013 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$7.817 \\times 10^{-2}$",
+          "$1.849 \\times 10^{-2}$",
+          "$2.175 \\times 10^{-2}$",
+          "$7.451 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$9.221 \\times 10^{-2}$",
+          "$1.089 \\times 10^{-2}$",
+          "$3.596 \\times 10^{-2}$",
+          "$1.911 \\times 10^{-2}$"
+        ],
+        [
+          3,
+          3,
+          350,
+          600,
+          "$5.133 \\times 10^{-4}$",
+          "$5.062 \\times 10^{-4}$",
+          "$3.321 \\times 10^{-4}$",
+          "$6.148 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$7.603 \\times 10^{-4}$",
+          "$2.075 \\times 10^{-3}$",
+          "$4.205 \\times 10^{-3}$",
+          "$1.202 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$4.471 \\times 10^{-2}$",
+          "$5.912 \\times 10^{-3}$",
+          "$6.630 \\times 10^{-3}$",
+          "$1.958 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$1.068 \\times 10^{-2}$",
+          "$9.079 \\times 10^{-3}$",
+          "$1.370 \\times 10^{-2}$",
+          "$8.171 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$7.138 \\times 10^{-2}$",
+          "$4.137 \\times 10^{-2}$",
+          "$3.095 \\times 10^{-2}$",
+          "$1.503 \\times 10^{-2}$"
+        ],
+        [
+          4,
+          3,
+          350,
+          600,
+          "$1.614 \\times 10^{-4}$",
+          "$6.121 \\times 10^{-4}$",
+          "$3.128 \\times 10^{-4}$",
+          "$2.982 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$1.926 \\times 10^{-3}$",
+          "$9.379 \\times 10^{-4}$",
+          "$5.112 \\times 10^{-3}$",
+          "$3.884 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$2.093 \\times 10^{-2}$",
+          "$5.407 \\times 10^{-3}$",
+          "$7.324 \\times 10^{-3}$",
+          "$8.013 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$9.831 \\times 10^{-2}$",
+          "$9.849 \\times 10^{-3}$",
+          "$2.175 \\times 10^{-2}$",
+          "$1.591 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$1.209 \\times 10^{-1}$",
+          "$5.349 \\times 10^{-2}$",
+          "$3.512 \\times 10^{-2}$",
+          "$4.928 \\times 10^{-2}$"
+        ],
+        [
+          1,
+          3,
+          350,
+          600,
+          "$7.977 \\times 10^{-4}$",
+          "$4.277 \\times 10^{-4}$",
+          "$2.361 \\times 10^{-4}$",
+          "$3.189 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$5.021 \\times 10^{-3}$",
+          "$4.325 \\times 10^{-3}$",
+          "$1.013 \\times 10^{-2}$",
+          "$2.218 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$1.033 \\times 10^{-2}$",
+          "$5.832 \\times 10^{-3}$",
+          "$9.364 \\times 10^{-3}$",
+          "$3.178 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$8.148 \\times 10^{-2}$",
+          "$1.309 \\times 10^{-2}$",
+          "$4.391 \\times 10^{-2}$",
+          "$2.601 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$3.218 \\times 10^{-1}$",
+          "$7.907 \\times 10^{-2}$",
+          "$4.265 \\times 10^{-2}$",
+          "$3.623 \\times 10^{-2}$"
+        ],
+        [
+          2,
+          3,
+          350,
+          600,
+          "$1.724 \\times 10^{-3}$",
+          "$6.491 \\times 10^{-4}$",
+          "$8.579 \\times 10^{-4}$",
+          "$6.851 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$9.031 \\times 10^{-3}$",
+          "$8.319 \\times 10^{-3}$",
+          "$5.151 \\times 10^{-3}$",
+          "$2.253 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$2.723 \\times 10^{-2}$",
+          "$7.412 \\times 10^{-3}$",
+          "$1.374 \\times 10^{-2}$",
+          "$8.013 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$8.254 \\times 10^{-2}$",
+          "$6.819 \\times 10^{-2}$",
+          "$8.144 \\times 10^{-3}$",
+          "$1.610 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$1.241 \\times 10^{-1}$",
+          "$6.609 \\times 10^{-2}$",
+          "$2.456 \\times 10^{-2}$",
+          "$1.911 \\times 10^{-2}$"
+        ],
+        [
+          3,
+          3,
+          350,
+          600,
+          "$9.312 \\times 10^{-4}$",
+          "$7.217 \\times 10^{-4}$",
+          "$3.395 \\times 10^{-4}$",
+          "$4.310 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$7.231 \\times 10^{-3}$",
+          "$1.351 \\times 10^{-2}$",
+          "$6.201 \\times 10^{-3}$",
+          "$5.862 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$3.834 \\times 10^{-2}$",
+          "$5.804 \\times 10^{-3}$",
+          "$9.471 \\times 10^{-3}$",
+          "$3.104 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$7.038 \\times 10^{-2}$",
+          "$3.279 \\times 10^{-2}$",
+          "$2.041 \\times 10^{-2}$",
+          "$1.651 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$1.040 \\times 10^{-1}$",
+          "$2.387 \\times 10^{-2}$",
+          "$4.833 \\times 10^{-2}$",
+          "$5.203 \\times 10^{-2}$"
+        ]
+      ],
+      "row_count": 35,
+      "column_count": 8
+    },
+    {
+      "table_number": "3",
+      "table_title": "UAV parameter setting.",
+      "headers": [
+        "$Z_{\\max } / m$",
+        "$\\theta_{\\max } /\\left({ }^{\\circ}\\right)$",
+        "$h_{\\max } / m$",
+        "$h_{\\text {sade }} / m$",
+        "$d_{\\text {sade }} / m$"
+      ],
+      "rows": [
+        [
+          100,
+          30,
+          120,
+          75,
+          15
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Environmental threat parameter setting.",
+      "headers": [
+        "Enemy Threats",
+        "Coordinate $/ m$",
+        "$d_{\\min } / m$",
+        "$d_{\\max } / m$"
+      ],
+      "rows": [
+        [
+          1,
+          "$[4400,5200]$",
+          800,
+          1300
+        ],
+        [
+          1,
+          "$[3600,8400]$",
+          640,
+          1040
+        ],
+        [
+          2,
+          "$[8400,2800]$",
+          880,
+          1430
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "AEMO-EDA related parameter settings.",
+      "headers": [
+        "Meaning",
+        "Symbol",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Number of UAVs",
+          "$T$",
+          "$[2,4]$"
+        ],
+        [
+          "Population size",
+          "$N$",
+          "$[500,1000]$"
+        ],
+        [
+          "Number of optimization objectives",
+          "$M$",
+          4
+        ],
+        [
+          "Number of UAV trajectory segments",
+          "$H$",
+          30
+        ],
+        [
+          "Maximum number of iterations",
+          "$t_{\\max }$",
+          "$[350,700]$"
+        ],
+        [
+          "Mean estimated minimum selection rate",
+          "$s r_{\\min }$",
+          0.15
+        ],
+        [
+          "Mean estimated maximum selection rate",
+          "$s r_{\\max }$",
+          0.35
+        ],
+        [
+          "Learning rate of covariance matrix",
+          "$c_{\\lambda}$",
+          0.24
+        ],
+        [
+          "Equilibrium influence parameter for the",
+          "$\\theta$",
+          0.12
+        ],
+        [
+          "number of iterations",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "The IGD values for different mean selection rate parameter settings.",
+      "headers": [
+        "",
+        "$s r_{\\max }=0.15$",
+        "$s r_{\\max }=0.3$",
+        "$s r_{\\max }=0.45$",
+        "$s r_{\\max }=0.6$",
+        "$s r_{\\max }=0.75$",
+        "$s r_{\\max }=0.9$"
+      ],
+      "rows": [
+        [
+          "$s r_{\\min }=0.15$",
+          "$5.103 \\times 10^{-2}$",
+          "$3.794 \\times 10^{-2}$",
+          "$5.806 \\times 10^{-3}$",
+          "$7.973 \\times 10^{-3}$",
+          "$9.539 \\times 10^{-3}$",
+          "$7.163 \\times 10^{-2}$"
+        ],
+        [
+          "$s r_{\\min }=0.3$",
+          "-",
+          "$6.315 \\times 10^{-2}$",
+          "$2.178 \\times 10^{-2}$",
+          "$8.179 \\times 10^{-3}$",
+          "$8.503 \\times 10^{-3}$",
+          "$8.724 \\times 10^{-2}$"
+        ],
+        [
+          "$s r_{\\min }=0.45$",
+          "-",
+          "-",
+          "$6.639 \\times 10^{-2}$",
+          "$1.925 \\times 10^{-2}$",
+          "$6.755 \\times 10^{-2}$",
+          "$2.342 \\times 10^{-1}$"
+        ],
+        [
+          "$s r_{\\min }=0.6$",
+          "-",
+          "-",
+          "-",
+          "$9.411 \\times 10^{-2}$",
+          "$8.772 \\times 10^{-2}$",
+          "$5.901 \\times 10^{-1}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 7
+    },
+    {
+      "table_number": "6",
+      "table_title": "Performance evaluation indicators comparison results.",
+      "headers": [
+        "Algorithm",
+        "HV",
+        "IGD",
+        "$\\operatorname{time}_{\\text {avg }} / s$"
+      ],
+      "rows": [
+        [
+          "AEMO-EDA",
+          "$3.4273 \\times 10^{-1}$",
+          "$5.1769 \\times 10^{-3}$",
+          11.034
+        ],
+        [
+          "RVEA",
+          "$9.1885 \\times 10^{-2}$",
+          "$3.6153 \\times 10^{-2}$",
+          9.788
+        ],
+        [
+          "NSGA-III",
+          "$1.8748 \\times 10^{-1}$",
+          "$9.7354 \\times 10^{-3}$",
+          12.531
+        ],
+        [
+          "NSGAIII-GBFE",
+          "$3.1497 \\times 10^{-1}$",
+          "$8.5411 \\times 10^{-3}$",
+          13.265
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    }
+  ]
+}

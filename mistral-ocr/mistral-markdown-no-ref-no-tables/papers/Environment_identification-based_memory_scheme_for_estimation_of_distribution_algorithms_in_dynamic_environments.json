@@ -1,0 +1,757 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Environment identification-based memory scheme for estimation of distribution algorithms in dynamic environments.md",
+    "filename": "Environment identification-based memory scheme for estimation of distribution algorithms in dynamic environments.md",
+    "title": "Environment identification-based memory scheme for estimation of distribution algorithms in dynamic environments",
+    "year": "2011"
+  },
+  "references": {
+    "header": "## References",
+    "content": "Branke J (1999) Memory enhanced evolutionary algorithms for changing optimization problems. In: Proceedings of the 1999 IEEE congress on evolutionary computation (CEC99), vol 3, pp $1875-1882$\nBranke J (2001) Evolutionary optimization in dynamic environments, Kluwer, Dordrecht\nBranke J, Kaubler T, Schmidt C, Schmeck H (2000) A multipopulation approach to dynamic optimization problems. In: Proceedings of the 4th international conference on adaptive computing in design and manufacturing, pp 299-308\nBranke J, Lode C, Shapiro JL (2007) Addressing sampling errors and diversity loss in UMDA. In: Proceedings of the 9th annual conference on genetic and evolutionary computation (GECCO 2007), pp 508-515\n\nCobb HG (1990) An investigation into the use of hypermutation as an adaptive operator in genetic algorithms having continuous, timedependent nonstationary environments. Techincal Report AIC-90-001, Naval Research Lab, Washington, USA\nCedeno W, Vemuri VR (1997) On the use of niching for dynamic landscapes. In: Proceedings of the 1997 IEEE international conference on evolutionary computation, pp 361-366\nGoldberg DE (2002) The design of innovation: lessons from and for competent genetic algorithms. Kluwer, Norwell\nGrefenstette JJ, Fitzpatrick J (1992) Genetic algorithms for changing environments. In: Proceedings of the 2nd internatioanl conference on parallel problem solving from nature\nJin Y, Branke J (2005) Evolutionary optimization in uncertain environments-a survey. IEEE Trans Evol Comput 9(3): $303-317$\n\nMori N, Kita H, Nishikawa Y (1996). Adaptation to a changing environment by means of the thermodynamical genetic algorithm. In: Ebeling W et al. (eds) Proceedings of the 4th international conference on parallel problem solving from nature (PPSN IV), pp 513-522\nMorrison R (2004) Designing evolutionary algorithms for dynamic environments, Springer, Berlin\nMorrison R, De Jong K (1999) A test problem generator for nonstationary environments. In: Proceedings of the 1999 congress on evolutionary computation, pp 2047-2053\nMühlenbein H, Paaß G (1996) Recombination of genes to the estimation of distributions. In: Ebeling W (ed) Proceedings of the 4th international conference on parallel problem solving from nature (PPSN IV), pp 178-187\nPelikan M (2002) Bayesian optimization algorithm: from single level to hierarchy. PhD thesis. University of Illinois, Urbana-Champaign, USA\nShapiro JL (2003) Scaling of probability-based optimization algorithms. In: Obermayer K (ed) Advances in neural information processing systems, pp 399-406\nShapiro JL (2005) Drift and scaling in estimation of distribution algorithms. Evol Comput 13(1):99-123\nShapiro JL (2006) Diversity loss in general estimation of distribution algorithms. In: Runarsson TP (ed) Proceedings of the 9th international conference on parallel problem solving from nature, LNCS 4193, pp 92-101\nUrsem RK (2000) Multinational GA optimization techniques in dynamic environments. In: Proceedings of the 2000 genetic and evolutionary computation conference (GECCO 2000), pp 19-26\n\nWhitley LD (1991) Fundamental principles of deception in genetic search. In: Rawlins GJE (ed) Foundations of genetic algorithms. Morgan Kaufmann, San Francisco, pp 221-241\nWineberg M, Oppacher F (2000) Enhancing the GA's ability to cope with dynamic environments. In: Proceedings of the 2000 Genetic and Evolutionary Computation Conference (GECCO 2000), pp $3-10$\nYang S (2003) Non-stationary problem optimization using the primaldual genetic algorithm. In: Proceedings of the 2003 IEEE congress on evolutionary computation, vol 3, pp 2246-2253\nYang S (2005a) Memory-enhanced univariate marginal distribution algorithms for dynamic optimization problems. In: Proceedings of the 2005 IEEE Congress on Evolutionary Computation, vol 3, pp 2560-2567\nYang S (2005b) Population-based incremental learning with memory scheme for changing environments. In: Proceedings of the 7th annual conference on genetic and evolutionary computation (GECCO 2005), pp 711-718\nYang S (2006) Associative memory scheme for genetic algorithms in dynamic environments. In: EvoWorkshops 2006: applications of evolutionary computing, pp 788-799\nYang S, Yao X (2005) Experimental study on population-based incremental learning algorithms for dynamic optimization problems. Soft Comput 9(11):815-834\nYang S, Yao X (2008) Population-based incremental learning with associative memory for dynamic environments. IEEE Trans Evol Comput 12(5):542-561",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Branke J (1999) Memory enhanced evolutionary algorithms for changing optimization problems. In: Proceedings of the 1999 IEEE congress on evolutionary computation (CEC99), vol 3, pp $1875-1882$"
+      },
+      {
+        "ref_id": "2",
+        "text": "Branke J (2001) Evolutionary optimization in dynamic environments, Kluwer, Dordrecht"
+      },
+      {
+        "ref_id": "3",
+        "text": "Branke J, Kaubler T, Schmidt C, Schmeck H (2000) A multipopulation approach to dynamic optimization problems. In: Proceedings of the 4th international conference on adaptive computing in design and manufacturing, pp 299-308"
+      },
+      {
+        "ref_id": "4",
+        "text": "Branke J, Lode C, Shapiro JL (2007) Addressing sampling errors and diversity loss in UMDA. In: Proceedings of the 9th annual conference on genetic and evolutionary computation (GECCO 2007), pp 508-515"
+      },
+      {
+        "ref_id": "5",
+        "text": "Cobb HG (1990) An investigation into the use of hypermutation as an adaptive operator in genetic algorithms having continuous, timedependent nonstationary environments. Techincal Report AIC-90-001, Naval Research Lab, Washington, USA"
+      },
+      {
+        "ref_id": "6",
+        "text": "Cedeno W, Vemuri VR (1997) On the use of niching for dynamic landscapes. In: Proceedings of the 1997 IEEE international conference on evolutionary computation, pp 361-366"
+      },
+      {
+        "ref_id": "7",
+        "text": "Goldberg DE (2002) The design of innovation: lessons from and for competent genetic algorithms. Kluwer, Norwell"
+      },
+      {
+        "ref_id": "8",
+        "text": "Grefenstette JJ, Fitzpatrick J (1992) Genetic algorithms for changing environments. In: Proceedings of the 2nd internatioanl conference on parallel problem solving from nature"
+      },
+      {
+        "ref_id": "9",
+        "text": "Jin Y, Branke J (2005) Evolutionary optimization in uncertain environments-a survey. IEEE Trans Evol Comput 9(3): $303-317$"
+      },
+      {
+        "ref_id": "10",
+        "text": "Mori N, Kita H, Nishikawa Y (1996). Adaptation to a changing environment by means of the thermodynamical genetic algorithm. In: Ebeling W et al. (eds) Proceedings of the 4th international conference on parallel problem solving from nature (PPSN IV), pp 513-522"
+      },
+      {
+        "ref_id": "11",
+        "text": "Morrison R (2004) Designing evolutionary algorithms for dynamic environments, Springer, Berlin"
+      },
+      {
+        "ref_id": "12",
+        "text": "Morrison R, De Jong K (1999) A test problem generator for nonstationary environments. In: Proceedings of the 1999 congress on evolutionary computation, pp 2047-2053"
+      },
+      {
+        "ref_id": "13",
+        "text": "Mühlenbein H, Paaß G (1996) Recombination of genes to the estimation of distributions. In: Ebeling W (ed) Proceedings of the 4th international conference on parallel problem solving from nature (PPSN IV), pp 178-187"
+      },
+      {
+        "ref_id": "14",
+        "text": "Pelikan M (2002) Bayesian optimization algorithm: from single level to hierarchy. PhD thesis. University of Illinois, Urbana-Champaign, USA"
+      },
+      {
+        "ref_id": "15",
+        "text": "Shapiro JL (2003) Scaling of probability-based optimization algorithms. In: Obermayer K (ed) Advances in neural information processing systems, pp 399-406"
+      },
+      {
+        "ref_id": "16",
+        "text": "Shapiro JL (2005) Drift and scaling in estimation of distribution algorithms. Evol Comput 13(1):99-123"
+      },
+      {
+        "ref_id": "17",
+        "text": "Shapiro JL (2006) Diversity loss in general estimation of distribution algorithms. In: Runarsson TP (ed) Proceedings of the 9th international conference on parallel problem solving from nature, LNCS 4193, pp 92-101"
+      },
+      {
+        "ref_id": "18",
+        "text": "Ursem RK (2000) Multinational GA optimization techniques in dynamic environments. In: Proceedings of the 2000 genetic and evolutionary computation conference (GECCO 2000), pp 19-26"
+      },
+      {
+        "ref_id": "19",
+        "text": "Whitley LD (1991) Fundamental principles of deception in genetic search. In: Rawlins GJE (ed) Foundations of genetic algorithms. Morgan Kaufmann, San Francisco, pp 221-241"
+      },
+      {
+        "ref_id": "20",
+        "text": "Wineberg M, Oppacher F (2000) Enhancing the GA's ability to cope with dynamic environments. In: Proceedings of the 2000 Genetic and Evolutionary Computation Conference (GECCO 2000), pp $3-10$"
+      },
+      {
+        "ref_id": "21",
+        "text": "Yang S (2003) Non-stationary problem optimization using the primaldual genetic algorithm. In: Proceedings of the 2003 IEEE congress on evolutionary computation, vol 3, pp 2246-2253"
+      },
+      {
+        "ref_id": "22",
+        "text": "Yang S (2005a) Memory-enhanced univariate marginal distribution algorithms for dynamic optimization problems. In: Proceedings of the 2005 IEEE Congress on Evolutionary Computation, vol 3, pp 2560-2567"
+      },
+      {
+        "ref_id": "23",
+        "text": "Yang S (2005b) Population-based incremental learning with memory scheme for changing environments. In: Proceedings of the 7th annual conference on genetic and evolutionary computation (GECCO 2005), pp 711-718"
+      },
+      {
+        "ref_id": "24",
+        "text": "Yang S (2006) Associative memory scheme for genetic algorithms in dynamic environments. In: EvoWorkshops 2006: applications of evolutionary computing, pp 788-799"
+      },
+      {
+        "ref_id": "25",
+        "text": "Yang S, Yao X (2005) Experimental study on population-based incremental learning algorithms for dynamic optimization problems. Soft Comput 9(11):815-834"
+      },
+      {
+        "ref_id": "26",
+        "text": "Yang S, Yao X (2008) Population-based incremental learning with associative memory for dynamic environments. IEEE Trans Evol Comput 12(5):542-561"
+      }
+    ],
+    "reference_count": 26,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 The $F_{\\mathrm{CMF}}$ value of UMDA, UMDA(LC + BC), EI-MUMDA, RUMDA, and RUMDA(LC + BC) over 50 runs on DDUFs in three types of dynamic environments",
+      "headers": [
+        "DDUF",
+        "Environmental type",
+        "UMDA",
+        "UMDA(LC + BC)",
+        "EI-MUMDA",
+        "RUMDA",
+        "RUMDA(LC + BC)"
+      ],
+      "rows": [
+        [
+          1,
+          "Cyclic",
+          72.52,
+          92.92,
+          98.25,
+          87.59,
+          86.16
+        ],
+        [
+          "",
+          "Cyclic with noise",
+          57.93,
+          92.46,
+          95.25,
+          87.62,
+          86.15
+        ],
+        [
+          "",
+          "Random",
+          50.64,
+          89.2,
+          89.23,
+          87.6,
+          86.13
+        ],
+        [
+          2,
+          "Cyclic",
+          52.14,
+          86.01,
+          96.39,
+          73.97,
+          71.02
+        ],
+        [
+          "",
+          "Cyclic with noise",
+          29.09,
+          85.07,
+          89.74,
+          73.9,
+          70.95
+        ],
+        [
+          "",
+          "Random",
+          19.24,
+          76.67,
+          76.91,
+          73.95,
+          71.0
+        ],
+        [
+          3,
+          "Cyclic",
+          51.45,
+          69.37,
+          77.09,
+          54.78,
+          53.32
+        ],
+        [
+          "",
+          "Cyclic with noise",
+          38.06,
+          70.82,
+          72.75,
+          54.7,
+          53.34
+        ],
+        [
+          "",
+          "Random",
+          33.04,
+          66.02,
+          66.18,
+          54.76,
+          53.38
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The Wilcoxon rank sum test results of comparing EI-MUMDA with MPBIL, MPBIL2r, and RIGA on DDUFs in different environments, where \" + \" means significantly better, \" - \" means significantly worse, and \" $\\sim$ \" means statistically equivalent",
+      "headers": [
+        "",
+        "$\\rho$",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          "",
+          "",
+          "",
+          2,
+          "",
+          "",
+          "",
+          3,
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          0.1,
+          0.2,
+          0.5,
+          1.0,
+          0.1,
+          0.2,
+          0.5,
+          1.0,
+          0.1,
+          0.2,
+          0.5,
+          1.0
+        ],
+        [
+          "Cyclic environment",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "EI-MUMDA versus MPBIL",
+          "$\\sim$",
+          "$\\sim$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          -2,
+          "$\\sim$",
+          "$\\sim$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "EI-MUMDA versus RIGA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "Cyclic environment with noise",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "EI-MUMDA versus MPBIL",
+          "$\\sim$",
+          "$\\sim$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          -2,
+          "$+$",
+          "$\\sim$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "EI-MUMDA versus RIGA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "Random environment",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "EI-MUMDA versus MPBIL",
+          "-",
+          "-",
+          "$+$",
+          "-",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "-"
+        ],
+        [
+          -2,
+          "-",
+          "-",
+          "$+$",
+          "-",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "-"
+        ],
+        [
+          "EI-MUMDA versus RIGA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 13
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 The average difference of the $F_{\\mathrm{CMF}}$ values between EIMUMDA and RUMDA over 50 runs in three types of environments with different $\\tau$ and $\\rho$",
+      "headers": [
+        "",
+        "$\\rho$",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          0.1,
+          0.2,
+          0.5,
+          1.0
+        ],
+        [
+          "Cyclic environment",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\tau=200$",
+          30.55,
+          30.29,
+          28.88,
+          29.94
+        ],
+        [
+          "$\\tau=500$",
+          23.26,
+          22.53,
+          22.86,
+          22.98
+        ],
+        [
+          "$\\tau=1,000$",
+          12.96,
+          12.37,
+          13.15,
+          13.17
+        ],
+        [
+          "$\\tau=2,000$",
+          16.15,
+          5.67,
+          6.21,
+          6.27
+        ],
+        [
+          "Cyclic environment with noise",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\tau=200$",
+          23.0,
+          20.44,
+          20.95,
+          21.65
+        ],
+        [
+          "$\\tau=500$",
+          20.61,
+          17.99,
+          20.86,
+          22.07
+        ],
+        [
+          "$\\tau=1,000$",
+          11.28,
+          8.92,
+          12.33,
+          12.83
+        ],
+        [
+          "$\\tau=2,000$",
+          5.21,
+          3.71,
+          5.99,
+          6.09
+        ],
+        [
+          "Random environment",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\tau=200$",
+          4.26,
+          -0.06,
+          -1.85,
+          29.76
+        ],
+        [
+          "$\\tau=500$",
+          12.73,
+          2.59,
+          -5.78,
+          23.01
+        ],
+        [
+          "$\\tau=1,000$",
+          9.67,
+          2.86,
+          -8.94,
+          13.19
+        ],
+        [
+          "$\\tau=2,000$",
+          4.73,
+          1.66,
+          -7.07,
+          6.27
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 The average difference of $F_{\\mathrm{CMF}}$ values between EI-MUMDA and RUMDA over 50 runs in cyclic environments with noise with different $p_{\\mathrm{n}}$ and $\\rho$",
+      "headers": [
+        "",
+        "$\\rho$",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          0.1,
+          0.2,
+          0.5,
+          1.0
+        ],
+        [
+          "$p_{\\mathrm{n}}=0.01$",
+          11.25,
+          8.71,
+          12.32,
+          12.8
+        ],
+        [
+          "$p_{\\mathrm{n}}=0.02$",
+          10.59,
+          7.77,
+          11.92,
+          12.19
+        ],
+        [
+          "$p_{\\mathrm{n}}=0.05$",
+          8.64,
+          5.7,
+          9.21,
+          9.43
+        ],
+        [
+          "$p_{\\mathrm{n}}=0.1$",
+          5.65,
+          2.34,
+          3.83,
+          3.89
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 The average difference of $F_{\\mathrm{CMP}}$ values between EI-MUMDA and RUMDA over 50 runs in three types of environments with different $N_{\\text {pop }}$ and $\\rho$",
+      "headers": [
+        "",
+        "$\\rho$",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          0.1,
+          0.2,
+          0.5,
+          1.0
+        ],
+        [
+          "Cyclic environment",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$N_{\\text {pop }}=20$",
+          5.15,
+          4.57,
+          6.34,
+          6.42
+        ],
+        [
+          "$N_{\\text {pop }}=50$",
+          7.21,
+          5.86,
+          7.8,
+          7.93
+        ],
+        [
+          "$N_{\\text {pop }}=100$",
+          13.08,
+          12.52,
+          12.91,
+          13.14
+        ],
+        [
+          "$N_{\\text {pop }}=200$",
+          22.17,
+          21.89,
+          21.5,
+          21.58
+        ],
+        [
+          "Cyclic environment with noise",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$N_{\\text {pop }}=20$",
+          4.79,
+          3.01,
+          5.77,
+          6.1
+        ],
+        [
+          "$N_{\\text {pop }}=50$",
+          6.07,
+          3.73,
+          7.4,
+          7.64
+        ],
+        [
+          "$N_{\\text {pop }}=100$",
+          11.4,
+          8.69,
+          12.28,
+          12.84
+        ],
+        [
+          "$N_{\\text {pop }}=200$",
+          19.9,
+          17.96,
+          18.99,
+          20.83
+        ],
+        [
+          "Random environment",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$N_{\\text {pop }}=20$",
+          4.67,
+          2.32,
+          -3.53,
+          6.39
+        ],
+        [
+          "$N_{\\text {pop }}=50$",
+          5.77,
+          1.89,
+          -7.87,
+          7.98
+        ],
+        [
+          "$N_{\\text {pop }}=100$",
+          9.63,
+          2.89,
+          -8.94,
+          13.16
+        ],
+        [
+          "$N_{\\text {pop }}=200$",
+          12.99,
+          3.18,
+          -6.17,
+          21.56
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    }
+  ]
+}

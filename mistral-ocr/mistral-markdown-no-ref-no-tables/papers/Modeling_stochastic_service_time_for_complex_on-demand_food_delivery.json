@@ -1,0 +1,560 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Modeling stochastic service time for complex on-demand food delivery.md",
+    "filename": "Modeling stochastic service time for complex on-demand food delivery.md",
+    "title": "Modeling stochastic service time for complex on-demand food delivery",
+    "year": "2022"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Janairo JIB (2021) Unsustainable plastic consumption associated with online food delivery services in the new normal. Clean Responsible Consumpt 2:100014\n2. Meituan and China Hospitality Association (2020) Report on the development of Chinese take-out industry in 2019 and the first half of 2020. https://ncstatic.clewm.net/rsrc/2020/0628/09/ 84f7f3e18c6e2-7cb32227534f640bd45.pdf\n3. Wu C-H, Ho J-M, Lee D-T (2004) Travel-time prediction with support vector regression. IEEE Trans Intel Transp 5(4):276-281\n4. Zheng J, Wang S, Wang L, Chen J-F, Wang L, Hao J, Sun Z (2020) A two-stage algorithm for fuzzy online order dispatching problem. In: 2020 IEEE congress on evolutionary computation (CEC). https:// doi.org/10.1109/CEC48606.2020.9185858\n5. Zhou Y, Huang J, Shi J, Wang R, Huang K (2021) The electric vehicle routing problem with partial recharge and vehicle recycling. Complex Intell Syst 7:1445-1458\n6. Wu H, Gao Y, Wang W, Zhang Z (2021) A hybrid ant colony algorithm based on multiple strategies for the vehicle routing problem with time windows. Compl Intell Syst. https://doi.org/10.1007/ s40747-021-00401-1\n7. Gutierrez A, Dieulle L, Labadie N, Velasco N (2018) A multipopulation algorithm to solve the VRP with stochastic service and travel times. Comput Ind Eng 125:144-156\n8. Zhan Y, Wang Z, Wan G (2021) Home service routing and appointment scheduling with stochastic service times. Eur J Oper Res 288(1):98-110\n\n9. Kuo R, Wibowo B, Zalvia F (2016) Application of a fuzzy ant colony system to solve the dynamic vehicle routing problem with uncertain service time. Appl Math Model 40(23-24):9990-10001\n10. Errico F, Desaulniers G, Gendreau M, Rei W, Rousseau L-M (2018) The vehicle routing problem with hard time windows and stochastic service times. EURO J Transp Logist 7(3):223-251\n11. Binart S, Dejax P, Gendreau M, Semet F (2016) A 2-stage method for a field service routing problem with stochastic travel and service times. Comput Oper Res 65:64-75\n12. Nasri M, Metrane A, Hafidi I, Jamali A (2020) A robust approach for solving a vehicle routing problem with time windows with uncertain service and travel times. Int J Ind Eng Comp 11(1):1-16\n13. Tajik N, Tavakkoli-Moghaddam R, Vahdani B, Mousavi SM (2014) A robust optimization approach for pollution routing problem with pickup and delivery under uncertainty. J Manuf Syst 33(2):277-286\n14. Bian B, Zhu N, Ling S, Ma S (2015) Bus service time estimation model for a curbside bus stop. Transp Res Part C Emerg Technol 57:103-121\n15. Wang Y, Zheng Y, Xue Y (2014) Travel time estimation of a path using sparse trajectories. In: Proceedings of the 20th ACM SIGKDD, pp 25-34\n16. Nguyen HD, Wang D, McLachlan GJ (2018) Randomized mixture models for probability density approximation and estimation. Inform Sci 467:135-148\n17. Li W, Wang Z, Yuan Y, Guo L (2016) Particle filtering with applications in networked systems: a survey. Complex Intell Syst 2(4):293-315\n18. Redner RA, Walker HF (1984) Mixture densities, maximum likelihood and the EM algorithm. SIAM Rev 26(2):195-239\n19. Biernacki C, Celeux G, Govaert G (2003) Choosing starting values for the EM algorithm for getting the highest likelihood in multivariate Gaussian mixture models. Comput Stat Data An 41(3-4):561-575\n20. Martınez AM, Vitria J (2000) Learning mixture models using a genetic version of the EM algorithm. Pattern Recogn Lett 21(8):759-769\n21. Kiranyaz S, Ince T, Yildirim A, Gabbouj M (2009) Fractional particle swarm optimization in multidimensional search space. IEEE Trans Syst Man Cybern B 40(2):298-319\n22. Kwedlo W (2014) Estimation of parameters of Gaussian mixture models by a hybrid method combining a self-adaptive differential evolution with the EM algorithm. Adv Comput Sci Res 11:109-123\n23. Biernacki C, Govaert G (1997) Using the classification likelihood to choose the number of clusters. Comput Sci Sta, 451-457.\n24. Melnykov V, Melnykov I (2012) Initializing the EM algorithm in Gaussian mixture models with an unknown number of components. Comput Stat Data An 56(6):1381-1395\n25. Penıkopf F, Bouchaffra D (2005) Genetic-based EM algorithm for learning Gaussian mixture models. IEEE Trans Pattern Anal 27(8):1344-1348\n26. Pignat E, Calinon S (2019) Bayesian Gaussian mixture model for robotic policy imitation. IEEE Robot Autom Lett 4(4):4452-4458\n27. Mirra J, Abdullah S (2021) Bayesian gaussian finite mixture model. J Phys Conf Ser 1725(1):012084\n28. Liu G, Liu Y, Guo M, Li P, Li M (2019) Variational inference with Gaussian mixture model and householder flow. Neural Netw $109: 43-55$\n29. Hershey JR, Olsen PA (2007) Approximating the Kullback Leibler divergence between Gaussian mixture models. In: 2007 IEEE international conference on acoustics, speech and signal processingICASSP, vol 4, pp 317-320\n30. Chen L, Wang D, Gan Z, Liu J, Henao R, Carin L (2021) Wasserstein contrastive representation distillation. In: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, pp 16296-16305\n31. Vallender S (1974) Calculation of the Wasserstein distance between probability distributions on the line. Theor Prob Appl 18(4):784-786\n32. Hauschild M, Pelikan M (2011) An introduction and survey of estimation of distribution algorithms. Swarm Evol Comput 1(3):111-128\n33. Cheng R, He C, Jin Y, Yao X (2018) Model-based evolutionary algorithms: a short survey. Complex Intell Syst 4(4):283-292\n34. Zheng J, Wang L, Wang J (2020) A cooperative coevolution algorithm for multi-objective fuzzy distributed hybrid flow shop. Knowl-Based Syst 194:105536\n35. Shi W, Chen W-N, Gu T, Jin H, Zhang J (2020) Handling uncertainty in financial decision making: a clustering estimation of distribution algorithm with simplified simulation. IEEE Trans Emerg Top Comput Intel 5(1):42-56\n36. Chandran BP, Selvakumar AI, Let GS, Sathiyan SP (2020) Optimal model parameter estimation of solar and fuel cells using improved estimation of distribution algorithm. Ain Shams Eng J 12(2):1693-1700\n37. Blei DM, Griffiths TL, Jordan MI (2010) The nested chinese restaurant process and bayesian nonparametric inference of topic hierarchies. J ACM 57(2):1-30\n38. Ferguson TS (1973) A Bayesian analysis of some nonparametric problems. The Ann Stat 1(2):209-230\n39. Pfeifer T, Protzel P (2019) Expectation-maximization for adaptive mixture models in graph optimization. In: 2019 international conference on robotics and automation (ICRA), pp 3151-3157.\n40. Sinaga KP, Yang M-S (2020) Unsupervised K-means clustering algorithm. IEEE. Access 8:80716-80727\n41. Chen J, Wang S, Wang L, Zheng J, Cha Y, Hao J, He R, Sun Z (2020) A hybrid differential evolution algorithm for the online meal delivery problem. In: IEEE congress on evolutionary computation (CEC). https://doi.org/10.1109/CEC48606.2020.9185792\n42. Chen J, Wang L, Wang S, Wang X, Ren H (2021) An effective matching algorithm with adaptive tie-breaking strategy for online food delivery problem. Compl Intell Syst. https://doi.org/10.1007/ s40747-021-00340-x\n\nPublisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Janairo JIB (2021) Unsustainable plastic consumption associated with online food delivery services in the new normal. Clean Responsible Consumpt 2:100014"
+      },
+      {
+        "ref_id": "2",
+        "text": "Meituan and China Hospitality Association (2020) Report on the development of Chinese take-out industry in 2019 and the first half of 2020. https://ncstatic.clewm.net/rsrc/2020/0628/09/ 84f7f3e18c6e2-7cb32227534f640bd45.pdf"
+      },
+      {
+        "ref_id": "3",
+        "text": "Wu C-H, Ho J-M, Lee D-T (2004) Travel-time prediction with support vector regression. IEEE Trans Intel Transp 5(4):276-281"
+      },
+      {
+        "ref_id": "4",
+        "text": "Zheng J, Wang S, Wang L, Chen J-F, Wang L, Hao J, Sun Z (2020) A two-stage algorithm for fuzzy online order dispatching problem. In: 2020 IEEE congress on evolutionary computation (CEC). https:// doi.org/10.1109/CEC48606.2020.9185858"
+      },
+      {
+        "ref_id": "5",
+        "text": "Zhou Y, Huang J, Shi J, Wang R, Huang K (2021) The electric vehicle routing problem with partial recharge and vehicle recycling. Complex Intell Syst 7:1445-1458"
+      },
+      {
+        "ref_id": "6",
+        "text": "Wu H, Gao Y, Wang W, Zhang Z (2021) A hybrid ant colony algorithm based on multiple strategies for the vehicle routing problem with time windows. Compl Intell Syst. https://doi.org/10.1007/ s40747-021-00401-1"
+      },
+      {
+        "ref_id": "7",
+        "text": "Gutierrez A, Dieulle L, Labadie N, Velasco N (2018) A multipopulation algorithm to solve the VRP with stochastic service and travel times. Comput Ind Eng 125:144-156"
+      },
+      {
+        "ref_id": "8",
+        "text": "Zhan Y, Wang Z, Wan G (2021) Home service routing and appointment scheduling with stochastic service times. Eur J Oper Res 288(1):98-110"
+      },
+      {
+        "ref_id": "9",
+        "text": "Kuo R, Wibowo B, Zalvia F (2016) Application of a fuzzy ant colony system to solve the dynamic vehicle routing problem with uncertain service time. Appl Math Model 40(23-24):9990-10001"
+      },
+      {
+        "ref_id": "10",
+        "text": "Errico F, Desaulniers G, Gendreau M, Rei W, Rousseau L-M (2018) The vehicle routing problem with hard time windows and stochastic service times. EURO J Transp Logist 7(3):223-251"
+      },
+      {
+        "ref_id": "11",
+        "text": "Binart S, Dejax P, Gendreau M, Semet F (2016) A 2-stage method for a field service routing problem with stochastic travel and service times. Comput Oper Res 65:64-75"
+      },
+      {
+        "ref_id": "12",
+        "text": "Nasri M, Metrane A, Hafidi I, Jamali A (2020) A robust approach for solving a vehicle routing problem with time windows with uncertain service and travel times. Int J Ind Eng Comp 11(1):1-16"
+      },
+      {
+        "ref_id": "13",
+        "text": "Tajik N, Tavakkoli-Moghaddam R, Vahdani B, Mousavi SM (2014) A robust optimization approach for pollution routing problem with pickup and delivery under uncertainty. J Manuf Syst 33(2):277-286"
+      },
+      {
+        "ref_id": "14",
+        "text": "Bian B, Zhu N, Ling S, Ma S (2015) Bus service time estimation model for a curbside bus stop. Transp Res Part C Emerg Technol 57:103-121"
+      },
+      {
+        "ref_id": "15",
+        "text": "Wang Y, Zheng Y, Xue Y (2014) Travel time estimation of a path using sparse trajectories. In: Proceedings of the 20th ACM SIGKDD, pp 25-34"
+      },
+      {
+        "ref_id": "16",
+        "text": "Nguyen HD, Wang D, McLachlan GJ (2018) Randomized mixture models for probability density approximation and estimation. Inform Sci 467:135-148"
+      },
+      {
+        "ref_id": "17",
+        "text": "Li W, Wang Z, Yuan Y, Guo L (2016) Particle filtering with applications in networked systems: a survey. Complex Intell Syst 2(4):293-315"
+      },
+      {
+        "ref_id": "18",
+        "text": "Redner RA, Walker HF (1984) Mixture densities, maximum likelihood and the EM algorithm. SIAM Rev 26(2):195-239"
+      },
+      {
+        "ref_id": "19",
+        "text": "Biernacki C, Celeux G, Govaert G (2003) Choosing starting values for the EM algorithm for getting the highest likelihood in multivariate Gaussian mixture models. Comput Stat Data An 41(3-4):561-575"
+      },
+      {
+        "ref_id": "20",
+        "text": "Martınez AM, Vitria J (2000) Learning mixture models using a genetic version of the EM algorithm. Pattern Recogn Lett 21(8):759-769"
+      },
+      {
+        "ref_id": "21",
+        "text": "Kiranyaz S, Ince T, Yildirim A, Gabbouj M (2009) Fractional particle swarm optimization in multidimensional search space. IEEE Trans Syst Man Cybern B 40(2):298-319"
+      },
+      {
+        "ref_id": "22",
+        "text": "Kwedlo W (2014) Estimation of parameters of Gaussian mixture models by a hybrid method combining a self-adaptive differential evolution with the EM algorithm. Adv Comput Sci Res 11:109-123"
+      },
+      {
+        "ref_id": "23",
+        "text": "Biernacki C, Govaert G (1997) Using the classification likelihood to choose the number of clusters. Comput Sci Sta, 451-457."
+      },
+      {
+        "ref_id": "24",
+        "text": "Melnykov V, Melnykov I (2012) Initializing the EM algorithm in Gaussian mixture models with an unknown number of components. Comput Stat Data An 56(6):1381-1395"
+      },
+      {
+        "ref_id": "25",
+        "text": "Penıkopf F, Bouchaffra D (2005) Genetic-based EM algorithm for learning Gaussian mixture models. IEEE Trans Pattern Anal 27(8):1344-1348"
+      },
+      {
+        "ref_id": "26",
+        "text": "Pignat E, Calinon S (2019) Bayesian Gaussian mixture model for robotic policy imitation. IEEE Robot Autom Lett 4(4):4452-4458"
+      },
+      {
+        "ref_id": "27",
+        "text": "Mirra J, Abdullah S (2021) Bayesian gaussian finite mixture model. J Phys Conf Ser 1725(1):012084"
+      },
+      {
+        "ref_id": "28",
+        "text": "Liu G, Liu Y, Guo M, Li P, Li M (2019) Variational inference with Gaussian mixture model and householder flow. Neural Netw $109: 43-55$"
+      },
+      {
+        "ref_id": "29",
+        "text": "Hershey JR, Olsen PA (2007) Approximating the Kullback Leibler divergence between Gaussian mixture models. In: 2007 IEEE international conference on acoustics, speech and signal processingICASSP, vol 4, pp 317-320"
+      },
+      {
+        "ref_id": "30",
+        "text": "Chen L, Wang D, Gan Z, Liu J, Henao R, Carin L (2021) Wasserstein contrastive representation distillation. In: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, pp 16296-16305"
+      },
+      {
+        "ref_id": "31",
+        "text": "Vallender S (1974) Calculation of the Wasserstein distance between probability distributions on the line. Theor Prob Appl 18(4):784-786"
+      },
+      {
+        "ref_id": "32",
+        "text": "Hauschild M, Pelikan M (2011) An introduction and survey of estimation of distribution algorithms. Swarm Evol Comput 1(3):111-128"
+      },
+      {
+        "ref_id": "33",
+        "text": "Cheng R, He C, Jin Y, Yao X (2018) Model-based evolutionary algorithms: a short survey. Complex Intell Syst 4(4):283-292"
+      },
+      {
+        "ref_id": "34",
+        "text": "Zheng J, Wang L, Wang J (2020) A cooperative coevolution algorithm for multi-objective fuzzy distributed hybrid flow shop. Knowl-Based Syst 194:105536"
+      },
+      {
+        "ref_id": "35",
+        "text": "Shi W, Chen W-N, Gu T, Jin H, Zhang J (2020) Handling uncertainty in financial decision making: a clustering estimation of distribution algorithm with simplified simulation. IEEE Trans Emerg Top Comput Intel 5(1):42-56"
+      },
+      {
+        "ref_id": "36",
+        "text": "Chandran BP, Selvakumar AI, Let GS, Sathiyan SP (2020) Optimal model parameter estimation of solar and fuel cells using improved estimation of distribution algorithm. Ain Shams Eng J 12(2):1693-1700"
+      },
+      {
+        "ref_id": "37",
+        "text": "Blei DM, Griffiths TL, Jordan MI (2010) The nested chinese restaurant process and bayesian nonparametric inference of topic hierarchies. J ACM 57(2):1-30"
+      },
+      {
+        "ref_id": "38",
+        "text": "Ferguson TS (1973) A Bayesian analysis of some nonparametric problems. The Ann Stat 1(2):209-230"
+      },
+      {
+        "ref_id": "39",
+        "text": "Pfeifer T, Protzel P (2019) Expectation-maximization for adaptive mixture models in graph optimization. In: 2019 international conference on robotics and automation (ICRA), pp 3151-3157."
+      },
+      {
+        "ref_id": "40",
+        "text": "Sinaga KP, Yang M-S (2020) Unsupervised K-means clustering algorithm. IEEE. Access 8:80716-80727"
+      },
+      {
+        "ref_id": "41",
+        "text": "Chen J, Wang S, Wang L, Zheng J, Cha Y, Hao J, He R, Sun Z (2020) A hybrid differential evolution algorithm for the online meal delivery problem. In: IEEE congress on evolutionary computation (CEC). https://doi.org/10.1109/CEC48606.2020.9185792"
+      },
+      {
+        "ref_id": "42",
+        "text": "Chen J, Wang L, Wang S, Wang X, Ren H (2021) An effective matching algorithm with adaptive tie-breaking strategy for online food delivery problem. Compl Intell Syst. https://doi.org/10.1007/ s40747-021-00340-x"
+      }
+    ],
+    "reference_count": 42,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 The notations of the problem",
+      "headers": [
+        "Notation",
+        "Description"
+      ],
+      "rows": [
+        [
+          "$i$",
+          "Index of data"
+        ],
+        [
+          "$k$",
+          "Index of components"
+        ],
+        [
+          "$n$",
+          "Number of available data"
+        ],
+        [
+          "$n_{\\mathrm{d}}$",
+          "Number of unique data"
+        ],
+        [
+          "$K$",
+          "Number of components"
+        ],
+        [
+          "$K_{\\max }$",
+          "Upper bound of component numbers"
+        ],
+        [
+          "$t$",
+          "Vector of service time, $\\boldsymbol{t}=\\left\\{t_{1}, t_{2}, \\ldots, t_{n}\\right\\}$"
+        ],
+        [
+          "$t^{n}$",
+          "Vector of unique service time, $\\boldsymbol{t}^{n}=\\left\\{t_{1}^{n}, t_{2}^{n}, \\ldots, t_{n_{d}}^{n}\\right\\}$"
+        ],
+        [
+          "$f_{\\mathrm{k}}$",
+          "Distribution of the $k$ th Gaussian component"
+        ],
+        [
+          "$w_{k}$",
+          "Weight of the $k$ th Gaussian component"
+        ],
+        [
+          "$\\mu_{k}$",
+          "Mean of the $k$ th Gaussian component"
+        ],
+        [
+          "$\\sigma_{k}^{2}$",
+          "Variance of the $k$ th Gaussian component"
+        ],
+        [
+          "$\\boldsymbol{\\mu}$",
+          "Vector of all the means, $\\boldsymbol{\\mu}=\\left\\{\\mu_{1}, \\mu_{2}, \\ldots, \\mu_{K}\\right\\}$"
+        ],
+        [
+          "w",
+          "Vector of all the weights, $\\boldsymbol{w}=\\left\\{w_{1}, w_{2}, \\ldots, w_{K}\\right\\}$"
+        ],
+        [
+          "$\\sigma^{2}$",
+          "Vector of all the variances, $\\sigma^{2}=\\left\\{\\sigma_{1}^{2}, \\sigma_{2}^{2}, \\ldots, \\sigma_{K}^{2}\\right\\}$"
+        ],
+        [
+          "$\\boldsymbol{\\theta}$",
+          "Vector of all the parameters of the $\\operatorname{GMM}, \\boldsymbol{\\theta}=\\left\\{K, \\boldsymbol{w}, \\boldsymbol{\\mu}, \\boldsymbol{\\sigma}^{2}\\right\\}$"
+        ],
+        [
+          "$z$",
+          "Vector of the clustering results of all the data, $z=\\left\\{z_{1}, z_{2}, \\ldots, z_{n}\\right\\}$"
+        ],
+        [
+          "$f_{\\mathrm{d}}$",
+          "The distribution of obtained GMM"
+        ],
+        [
+          "$f_{\\mathrm{s}}$",
+          "The distribution of historical service time"
+        ],
+        [
+          "$W_{\\mathrm{d}}$",
+          "Wasserstein distance between two distributions"
+        ],
+        [
+          "$\\lambda$",
+          "Penalty coefficient of $K$"
+        ],
+        [
+          "$\\varepsilon$",
+          "Objective <br> function. $\\varepsilon=W_{\\mathrm{d}}\\left(f_{\\mathrm{s}}(\\boldsymbol{t}), f_{\\mathrm{d}}(\\boldsymbol{t} ; \\boldsymbol{\\theta})\\right)+\\lambda K$"
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Combinations of parameter values",
+      "headers": [
+        "Parameters",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rows": [
+        [
+          "Pn",
+          50,
+          100,
+          150,
+          200
+        ],
+        [
+          "$\\boldsymbol{e}_{\\boldsymbol{n}}$",
+          5,
+          10,
+          15,
+          20
+        ],
+        [
+          "$\\boldsymbol{\\alpha}$",
+          0.2,
+          0.4,
+          0.6,
+          0.8
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Orthogonal array and RV values",
+      "headers": [
+        "Pn",
+        "$\\boldsymbol{e}_{\\boldsymbol{n}}$",
+        "$\\boldsymbol{\\alpha}$",
+        "RV"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          1,
+          0.113443
+        ],
+        [
+          1,
+          2,
+          2,
+          0.110163
+        ],
+        [
+          1,
+          3,
+          3,
+          0.109773
+        ],
+        [
+          1,
+          4,
+          4,
+          0.111208
+        ],
+        [
+          2,
+          1,
+          2,
+          0.11045
+        ],
+        [
+          2,
+          2,
+          1,
+          0.112905
+        ],
+        [
+          2,
+          3,
+          4,
+          0.110893
+        ],
+        [
+          2,
+          4,
+          3,
+          0.111915
+        ],
+        [
+          3,
+          1,
+          3,
+          0.112769
+        ],
+        [
+          3,
+          2,
+          4,
+          0.111772
+        ],
+        [
+          3,
+          3,
+          1,
+          0.113471
+        ],
+        [
+          3,
+          4,
+          2,
+          0.112926
+        ],
+        [
+          4,
+          1,
+          4,
+          0.114224
+        ],
+        [
+          4,
+          2,
+          3,
+          0.10979
+        ],
+        [
+          4,
+          3,
+          2,
+          0.111676
+        ],
+        [
+          4,
+          4,
+          1,
+          0.116223
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Response value and rank of each parameter",
+      "headers": [
+        "Level",
+        "Pn",
+        "$\\boldsymbol{e}_{\\boldsymbol{n}}$",
+        "$\\boldsymbol{\\alpha}$"
+      ],
+      "rows": [
+        [
+          1,
+          0.111147,
+          0.112722,
+          0.11401
+        ],
+        [
+          2,
+          0.111541,
+          0.111157,
+          0.111304
+        ],
+        [
+          3,
+          0.112735,
+          0.111453,
+          0.111062
+        ],
+        [
+          4,
+          0.112978,
+          0.113068,
+          0.112024
+        ],
+        [
+          "Delta",
+          0.001831,
+          0.001911,
+          0.002949
+        ],
+        [
+          "Rank",
+          3,
+          2,
+          1
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 The results of the online A/B test",
+      "headers": [
+        "Metric",
+        "Comparison dates",
+        "",
+        "",
+        "Experimental dates",
+        "",
+        "",
+        "$\\Delta_{t r u}$"
+      ],
+      "rows": [
+        [
+          "",
+          "C-region",
+          "E-region",
+          "$\\Delta_{\\text {inh }}$",
+          "C-region",
+          "E-region",
+          "$\\Delta_{\\text {exp }}$",
+          ""
+        ],
+        [
+          "$\\mathrm{PR}_{5}$",
+          "$98.68 \\%$",
+          "$98.66 \\%$",
+          "$-0.02 \\%$",
+          "$97.14 \\%$",
+          "$97.47 \\%$",
+          "$0.33 \\%$",
+          "$0.35 \\%$"
+        ],
+        [
+          "$\\mathrm{OR}_{15}$",
+          "$0.21 \\%$",
+          "$0.25 \\%$",
+          "$0.04 \\%$",
+          "$0.72 \\%$",
+          "$0.55 \\%$",
+          "$-0.17 \\%$",
+          "$-0.21 \\%$"
+        ],
+        [
+          "$\\mathrm{PP}_{55}$",
+          "$0.67 \\%$",
+          "$0.65 \\%$",
+          "$-0.02 \\%$",
+          "$4.02 \\%$",
+          "$3.24 \\%$",
+          "$-0.77 \\%$",
+          "$-0.75 \\%$"
+        ],
+        [
+          "AODT",
+          25.7542,
+          26.1753,
+          "$1.64 \\%$",
+          30.5559,
+          30.2188,
+          "$-1.10 \\%$",
+          "$-2.74 \\%$"
+        ],
+        [
+          "ATE",
+          4.8523,
+          4.9164,
+          "$1.32 \\%$",
+          5.2246,
+          5.366,
+          "$2.71 \\%$",
+          "$1.39 \\%$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 8
+    }
+  ]
+}

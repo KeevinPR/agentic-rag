@@ -1,0 +1,427 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/Linkages Detection in Histogram-Based Estimation of Distribution Algorithm.md",
+    "filename": "Linkages Detection in Histogram-Based Estimation of Distribution Algorithm.md",
+    "title": "Linkages Detection in Histogram-Based Estimation of Distribution Algorithm",
+    "year": "2008"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] Larranaga, P., Lozano, J.A.: Estimation of Distribution Algorithms: A NewTool for Evolutionary Computation. Kluwer Academic Publishers, Dordrecht (2002)\n[2] Pelikan, M.: Hierarchical Bayesian optimization algorithm: Toward a new generation of evolutionary algorithms. Springer, Heidelberg (2005)\n[3] Pelikan, M., Goldberg, D.E., Tsutsui, S.: Getting the best of both worlds: Discrete and continuous genetic and evolutionary algorithms in concert. Information Science 156, $147-171$ (2003)\n[4] Bosman, P.A.N., Thierens, D.: An algorithmic framework for Density Estimation based Evolutionary Algorithms. Utrecht University technical report UU-CS-1999-46 (1999)\n\n[5] Bosman, P.A.N., Thierens, D.: Numertical optimization with real- valued Estimation of Distribution Algorithm. Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, 91-120 (2006)\n[6] Lu, Q., Yao, X.: Clustering and learning Gaussian distribution for continuous optimization. IEEE trans. on Systems, Man and Cybernetics-Part C 35(2), 195-204 (2005)\n[7] Tsutsui, S., Pelikan, M., Goldberg, D.E.: Evolutionary algorithm using marginal histogram models in continuous domain. In: 2001 Genetic and Evolutionary Computation Conference Workshop, San Francisco, CA, pp. 230-233 (2001)\n[8] Ding, N., Zhou, S., Sun, Z.: Optimizing continuous problems using Estimation of Distribution Algorithms based on histogram model. In: The 6th International Conference of Simulated Evolution and Learning, Hefei, China, pp. 545-562 (2006)\n[9] Ding, N., Zhou, S., Sun, Z.: Histogram-based Estimation of Distribution Algorithm: a competent method for continuous optimization. J. Computer Science and Technology 23(1), 35-42 (2008)\n[10] Ding, N., Xu, J., Zhou, S., Sun, Z.: Reducing Computational Complexity of Estimating Multivariate Histogram-based Probabilistic Model. In: 2007 IEEE Congress on Evolutionary Computation, pp. 111-118 (2007)\n[11] Yuan, B., Gallagher, M.: Playing in continuous spaces: Some analysis and extension of population-based incremental learning. In: IEEE Congress on Evolutionary Computation, Canberra, Australia, pp. 443-450 (2003)\n[12] Baluja, S.: Population-based incremental learning. Carnegie Mellon University, Technical Report. CMU-CS-94-163 (1994)\n[13] Cantu-Paz, E.: Supervised and Unsupervised Discretization Methods for Evolutionary Algorithm. In: The Genetic and Evolutionary Computation Workshop, San Francisco, CA, pp. 213-216 (2001)\n[14] Zhang, Q., Sun, J., Tsang, E., Ford, J.: Hybrid Estimation of Distribution Algorithm for Global Optimization. Engineering Computations 21(1), 91-107 (2004)\n[15] Zhang, Q., Allinson, N.M., Yin, H.: Population Optimization Algorithm Based on ICA. In: the First IEEE Symposium on Combinations of Evolutionary Computation and Neural Networks (2000)\n[16] Zhang, Q., Mühlenbein, H.: On the convergence of a class of estimation of distribution algorithms. IEEE Trans. Evolutionary Computation 8(2), 127-136 (2004)\n[17] Pošík, P.: On the Utility of Linear Transformations for Population-Based Optimization Algorithms. In: the 16th World Congress of the International Federation of Automatic Control (2005)\n[18] Pošík, P.: On the Use of Probabilistic Models and Coordinate Transforms in Real-Valued Evolutionary Algorithms. PhD Dissertation, Czech Technical University (2007)\n[19] Lauritzen, S.L.: Graphical Models. Clarendon Press, Oxford (1996)\n[20] Duda, R.O., Hart, P.E., Stork, D.G.: Pattern Classification, 2nd edn. Wiley Interscience, Chichester (2000)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Larranaga, P., Lozano, J.A.: Estimation of Distribution Algorithms: A NewTool for Evolutionary Computation. Kluwer Academic Publishers, Dordrecht (2002)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Pelikan, M.: Hierarchical Bayesian optimization algorithm: Toward a new generation of evolutionary algorithms. Springer, Heidelberg (2005)"
+      },
+      {
+        "ref_id": "3",
+        "text": "Pelikan, M., Goldberg, D.E., Tsutsui, S.: Getting the best of both worlds: Discrete and continuous genetic and evolutionary algorithms in concert. Information Science 156, $147-171$ (2003)"
+      },
+      {
+        "ref_id": "4",
+        "text": "Bosman, P.A.N., Thierens, D.: An algorithmic framework for Density Estimation based Evolutionary Algorithms. Utrecht University technical report UU-CS-1999-46 (1999)"
+      },
+      {
+        "ref_id": "5",
+        "text": "Bosman, P.A.N., Thierens, D.: Numertical optimization with real- valued Estimation of Distribution Algorithm. Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, 91-120 (2006)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Lu, Q., Yao, X.: Clustering and learning Gaussian distribution for continuous optimization. IEEE trans. on Systems, Man and Cybernetics-Part C 35(2), 195-204 (2005)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Tsutsui, S., Pelikan, M., Goldberg, D.E.: Evolutionary algorithm using marginal histogram models in continuous domain. In: 2001 Genetic and Evolutionary Computation Conference Workshop, San Francisco, CA, pp. 230-233 (2001)"
+      },
+      {
+        "ref_id": "8",
+        "text": "Ding, N., Zhou, S., Sun, Z.: Optimizing continuous problems using Estimation of Distribution Algorithms based on histogram model. In: The 6th International Conference of Simulated Evolution and Learning, Hefei, China, pp. 545-562 (2006)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Ding, N., Zhou, S., Sun, Z.: Histogram-based Estimation of Distribution Algorithm: a competent method for continuous optimization. J. Computer Science and Technology 23(1), 35-42 (2008)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Ding, N., Xu, J., Zhou, S., Sun, Z.: Reducing Computational Complexity of Estimating Multivariate Histogram-based Probabilistic Model. In: 2007 IEEE Congress on Evolutionary Computation, pp. 111-118 (2007)"
+      },
+      {
+        "ref_id": "11",
+        "text": "Yuan, B., Gallagher, M.: Playing in continuous spaces: Some analysis and extension of population-based incremental learning. In: IEEE Congress on Evolutionary Computation, Canberra, Australia, pp. 443-450 (2003)"
+      },
+      {
+        "ref_id": "12",
+        "text": "Baluja, S.: Population-based incremental learning. Carnegie Mellon University, Technical Report. CMU-CS-94-163 (1994)"
+      },
+      {
+        "ref_id": "13",
+        "text": "Cantu-Paz, E.: Supervised and Unsupervised Discretization Methods for Evolutionary Algorithm. In: The Genetic and Evolutionary Computation Workshop, San Francisco, CA, pp. 213-216 (2001)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Zhang, Q., Sun, J., Tsang, E., Ford, J.: Hybrid Estimation of Distribution Algorithm for Global Optimization. Engineering Computations 21(1), 91-107 (2004)"
+      },
+      {
+        "ref_id": "15",
+        "text": "Zhang, Q., Allinson, N.M., Yin, H.: Population Optimization Algorithm Based on ICA. In: the First IEEE Symposium on Combinations of Evolutionary Computation and Neural Networks (2000)"
+      },
+      {
+        "ref_id": "16",
+        "text": "Zhang, Q., Mühlenbein, H.: On the convergence of a class of estimation of distribution algorithms. IEEE Trans. Evolutionary Computation 8(2), 127-136 (2004)"
+      },
+      {
+        "ref_id": "17",
+        "text": "Pošík, P.: On the Utility of Linear Transformations for Population-Based Optimization Algorithms. In: the 16th World Congress of the International Federation of Automatic Control (2005)"
+      },
+      {
+        "ref_id": "18",
+        "text": "Pošík, P.: On the Use of Probabilistic Models and Coordinate Transforms in Real-Valued Evolutionary Algorithms. PhD Dissertation, Czech Technical University (2007)"
+      },
+      {
+        "ref_id": "19",
+        "text": "Lauritzen, S.L.: Graphical Models. Clarendon Press, Oxford (1996)"
+      },
+      {
+        "ref_id": "20",
+        "text": "Duda, R.O., Hart, P.E., Stork, D.G.: Pattern Classification, 2nd edn. Wiley Interscience, Chichester (2000)"
+      }
+    ],
+    "reference_count": 20,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameter Settings of the 4 Algorithms",
+      "headers": [
+        "Parameter Settings",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Maximal evaluation number $=3 \\times 10^{5}$"
+        ],
+        [
+          "",
+          "Population size $=375$"
+        ],
+        [
+          "",
+          "Select-rate $=20 \\%$"
+        ],
+        [
+          "",
+          "Maximal evaluation number $=3 \\times 10^{5}$"
+        ],
+        [
+          "",
+          "Population size $=375$"
+        ],
+        [
+          "",
+          "Select-rate $=20 \\%$"
+        ],
+        [
+          "",
+          "Maximal evaluation number $=3 \\times 10^{5}$, Select rate $=20 \\%$"
+        ],
+        [
+          "",
+          "Population size $=375$, Mutation rate $=5 \\%$"
+        ],
+        [
+          "",
+          "Bins number $=99$, Surrounding factor $=10 \\%$"
+        ],
+        [
+          "",
+          "Maximal evaluation number $=3 \\times 10^{5}$, Select rate $=20 \\%$"
+        ],
+        [
+          "",
+          "Population size $=375$, Mutation rate $=5 \\%$"
+        ],
+        [
+          "",
+          "Bins number $=99$, Surrounding factor $=10 \\%$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Problem Descriptions",
+      "headers": [
+        "",
+        "Representation"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "$F(\\bar{y})=\\sum_{i=0}^{l-1} y_{i}^{2}$"
+        ],
+        [
+          "",
+          "where $X_{0}=y_{0}, X_{i}=y_{i}+X_{i-1}$"
+        ],
+        [
+          -2,
+          "$F(\\bar{y})=\\sum_{i=0}^{l-1}\\left[\\left(y_{i}^{2}-y_{0}\\right)^{2}+\\left(y_{i}-1\\right)^{2}\\right]$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Experimental Results",
+      "headers": [
+        "",
+        "",
+        "Best Case",
+        "Mean Value",
+        "Standard Dev."
+      ],
+      "rows": [
+        [
+          "",
+          "UMDA $_{\\text {c }}$",
+          "2.816e-84",
+          "1.276e-83",
+          "1.064e-83"
+        ],
+        [
+          "",
+          "IDEA-G",
+          "3.423e-161",
+          "2.562e-160",
+          "2.992e-160"
+        ],
+        [
+          "",
+          "sur-shr-HEDA",
+          "5.872e-15",
+          "6.753e-15",
+          "7.698e-16"
+        ],
+        [
+          "",
+          "dHEDA",
+          "5.104e-19",
+          "7.496e-19",
+          "1.304e-19"
+        ],
+        [
+          "",
+          "UMDA $_{\\text {c }}$",
+          8.635,
+          5.798,
+          2.403
+        ],
+        [
+          "",
+          "IDEA-G",
+          66199,
+          12805,
+          20704
+        ],
+        [
+          "",
+          "sur-shr-HEDA",
+          99998,
+          93973,
+          22016
+        ],
+        [
+          "",
+          "dHEDA",
+          "$10^{5}$",
+          "$10^{5}$",
+          "2.031e-2"
+        ],
+        [
+          "",
+          "UMDA $_{\\text {c }}$",
+          "$-11622.8$",
+          "$-10637.5$",
+          6.2892
+        ],
+        [
+          "",
+          "IDEA-G",
+          "$-5277.4$",
+          "$-4719.6$",
+          2.9762
+        ],
+        [
+          "",
+          "sur-shr-HEDA",
+          "$-12569.5$",
+          "$-12569.4$",
+          "1.458e-1"
+        ],
+        [
+          "",
+          "dHEDA",
+          "$-12569.5$",
+          "$-12569.5$",
+          "1.415e-7"
+        ],
+        [
+          "",
+          "UMDA $_{\\text {c }}$",
+          "8.131e-5",
+          "2.576e-2",
+          "1.984e-2"
+        ],
+        [
+          "",
+          "IDEA-G",
+          "4.324e-5",
+          "1.543e-2",
+          "1.652e-1"
+        ],
+        [
+          "",
+          "sur-shr-HEDA",
+          "3.793e-19",
+          "3.145e-4",
+          "1.403e-2"
+        ],
+        [
+          "",
+          "dHEDA",
+          "1.987e-21",
+          "3.161e-8",
+          "1.426e-7"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Problem Descriptions",
+      "headers": [
+        "",
+        "Representation"
+      ],
+      "rows": [
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          "Schwefel",
+          "Schwefel $\\left(x_{1}, \\ldots x_{n}\\right)=\\sum_{i=1}^{n}\\left[\\left(x_{1}-x_{i}^{2}\\right)^{2}+\\left(1-x_{i}\\right)^{2}\\right]$"
+        ],
+        [
+          "Rosenbrock",
+          "Rosenbrock $\\left(x_{1}, \\ldots x_{n}\\right)=\\sum_{i=1}^{n-1}\\left[100 \\cdot\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(1-x_{i}\\right)^{2}\\right]$"
+        ],
+        [
+          "",
+          "Domain"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Experimental Results",
+      "headers": [
+        "",
+        "",
+        "CM-MEDA",
+        "MEDA"
+      ],
+      "rows": [
+        [
+          "",
+          "Best",
+          0.1775,
+          1.7321
+        ],
+        [
+          -1,
+          "Mean",
+          0.276,
+          3.4524
+        ],
+        [
+          "",
+          "Std.",
+          0.0801,
+          0.7483
+        ],
+        [
+          "",
+          "Best",
+          "$3.879 \\mathrm{e}-11$",
+          0.0319
+        ],
+        [
+          -2,
+          "Mean",
+          0.0015,
+          0.0571
+        ],
+        [
+          "",
+          "Std.",
+          0.0057,
+          0.0112
+        ],
+        [
+          "",
+          "Best",
+          "$1.320 \\mathrm{e}-10$",
+          0.0378
+        ],
+        [
+          "Schwefel",
+          "Mean",
+          0.0152,
+          0.0682
+        ],
+        [
+          "",
+          "Std.",
+          0.0359,
+          0.0184
+        ],
+        [
+          "",
+          "Best",
+          6.5271,
+          4.2003
+        ],
+        [
+          "Rosenbrock",
+          "Mean",
+          7.216,
+          8.0493
+        ],
+        [
+          "",
+          "Std.",
+          0.3181,
+          1.4204
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    }
+  ]
+}

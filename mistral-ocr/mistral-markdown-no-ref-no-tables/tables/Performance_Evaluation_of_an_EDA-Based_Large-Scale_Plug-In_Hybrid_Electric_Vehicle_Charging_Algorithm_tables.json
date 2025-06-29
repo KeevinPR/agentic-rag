@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Performance Evaluation of an EDA-Based Large-Scale Plug-In Hybrid Electric Vehicle Charging Algorithm.md",
+    "filename": "Performance Evaluation of an EDA-Based Large-Scale Plug-In Hybrid Electric Vehicle Charging Algorithm.md",
+    "title": "Performance Evaluation of an EDA-Based Large-Scale Plug-In Hybrid Electric Vehicle Charging Algorithm",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Typical Hourly Parking Utilization During Weekdays",
+      "headers": [
+        "6AM",
+        "7AM",
+        "8AM",
+        "9AM",
+        "10AM",
+        "11AM",
+        "None",
+        "1PM",
+        "2PM"
+      ],
+      "rows": [
+        [
+          3,
+          20,
+          65,
+          93,
+          100,
+          100,
+          90,
+          90,
+          97
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          "Otherwise"
+        ],
+        [
+          93,
+          77,
+          47,
+          23,
+          7,
+          7,
+          3,
+          3,
+          0
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 9
+    },
+    {
+      "table_number": "II",
+      "table_title": "AVERAGE CPU Time Over 30 Runs Using EDA",
+      "headers": [
+        "$\\#$ of <br> PHEVs/PEVs",
+        "Mean",
+        "Median",
+        "Standard <br> Deviation"
+      ],
+      "rows": [
+        [
+          30,
+          0.0832,
+          0.078,
+          0.0344
+        ],
+        [
+          300,
+          0.573,
+          0.5616,
+          0.1668
+        ],
+        [
+          3000,
+          5.2879,
+          5.2572,
+          0.2041
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "COMPARISON ON EDA AND GA WITH 50 VEHICLES",
+      "headers": [
+        "",
+        "CPU Time per 50 <br> trails at time step k",
+        "Average <br> fitness value",
+        "Standard Deviation <br> of fitness value"
+      ],
+      "rows": [
+        [
+          "EDA",
+          4.758,
+          0.9101,
+          "$1.6674 \\mathrm{e}-5$"
+        ],
+        [
+          "GA",
+          41.7382,
+          0.8607,
+          0.009
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Optimal Solutions With 300 PHEVs/PEVs",
+      "headers": [
+        "",
+        "EDA",
+        "Equal Priority",
+        "GA",
+        "Heuristic"
+      ],
+      "rows": [
+        [
+          "Mean Value",
+          6.2803,
+          5.7747,
+          4.8372,
+          5.1214
+        ],
+        [
+          "Standard Deviation",
+          0.2273,
+          0.2149,
+          0.3254,
+          0.1808
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    }
+  ]
+}

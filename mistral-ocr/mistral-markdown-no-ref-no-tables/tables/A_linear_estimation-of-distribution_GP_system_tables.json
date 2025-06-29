@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/A linear estimation-of-distribution GP system.md",
+    "filename": "A linear estimation-of-distribution GP system.md",
+    "title": "A linear estimation-of-distribution GP system",
+    "year": "2008"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Primitive sets used in our experiments (\\% represents protected division, which returns its first argument if the second argument is zero)",
+      "headers": [
+        "",
+        "Polynomial",
+        "",
+        "Lawn"
+      ],
+      "rows": [
+        [
+          "ID",
+          12,
+          12,
+          "Mower"
+        ],
+        [
+          0,
+          1,
+          1,
+          "Mow"
+        ],
+        [
+          1,
+          2,
+          2,
+          "Left"
+        ],
+        [
+          2,
+          112,
+          112,
+          "Right"
+        ],
+        [
+          3,
+          212,
+          212,
+          ""
+        ],
+        [
+          4,
+          112,
+          112,
+          ""
+        ],
+        [
+          5,
+          212,
+          212,
+          ""
+        ],
+        [
+          6,
+          12,
+          12,
+          ""
+        ],
+        [
+          7,
+          "",
+          "R1 = R1 - R2",
+          ""
+        ],
+        [
+          8,
+          "",
+          "R2 = R1 - R2",
+          ""
+        ],
+        [
+          9,
+          "",
+          112,
+          ""
+        ],
+        [
+          10,
+          "",
+          212,
+          ""
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Parameter settings for hill-climber, linear GP and N-gram GP",
+      "headers": [
+        "Parameter",
+        "Hill-Climber",
+        "Linear GP",
+        "N-gram GP"
+      ],
+      "rows": [
+        [
+          "Fitness evaluations",
+          20000,
+          20000,
+          20000
+        ],
+        [
+          "Independent runs",
+          1000,
+          1000,
+          1000
+        ],
+        [
+          "$\\ell_{\\max }$ Polynomial Problem",
+          100,
+          100,
+          100
+        ],
+        [
+          "Lawn-Mower",
+          "$4 \\times d^{2}$",
+          "$4 \\times d^{2}$",
+          "$4 \\times d^{2}$"
+        ],
+        [
+          "Point mutation rate (per primitive)",
+          "$\\frac{2}{7}$",
+          "$\\frac{1}{7}$",
+          "$\\frac{0.25}{7}$"
+        ],
+        [
+          "Population size",
+          1,
+          500,
+          10
+        ],
+        [
+          "Generations",
+          20000,
+          40,
+          2000
+        ],
+        [
+          "Crossover rate (per individual)",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          0.9,
+          "$\\mathrm{n} / \\mathrm{a}$"
+        ],
+        [
+          "Mutation rate (per individual)",
+          1,
+          0.1,
+          1
+        ],
+        [
+          "Tournament size",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          2,
+          "$\\mathrm{n} / \\mathrm{a}$"
+        ],
+        [
+          "Truncation selection ratio",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          5
+        ],
+        [
+          "$\\eta_{M}$ learning rate",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          8
+        ],
+        [
+          "$\\eta_{L}$ learning rate",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          "$\\mathrm{n} / \\mathrm{a}$",
+          0.075
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    }
+  ]
+}

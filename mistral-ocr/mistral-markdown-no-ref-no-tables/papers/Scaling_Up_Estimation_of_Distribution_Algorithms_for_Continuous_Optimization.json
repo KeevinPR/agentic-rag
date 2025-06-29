@@ -1,0 +1,1508 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2013/Scaling Up Estimation of Distribution Algorithms for Continuous Optimization.md",
+    "filename": "Scaling Up Estimation of Distribution Algorithms for Continuous Optimization.md",
+    "title": "Scaling Up Estimation of Distribution Algorithms for Continuous Optimization",
+    "year": "2013"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions. I. Binary parameters,\" in Proc. Parallel Problem Solving Nature IV, 1996, pp. 178-187.\n[2] P. Larrañaga and J. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Boston, MA, USA: Kluwer Academic, 2002.\n[3] D. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning. Reading, MA, USA: Addison-Wesley, 1989.\n[4] M. Sebag and A. Ducoulombier, \"Extending population-based incremental learning to continuous search spaces,\" in Proc. Parallel Problem Solving Nature V, 1998, pp. 418-427.\n[5] P. Bosman and D. Thierens, \"Expanding from discrete to continuous estimation of distribution algorithms: The IDEA,\" in Proc. Parallel Problem Solving Nature VI, 2000, pp. 767-776.\n[6] P. Bosman and D. Thierens, \"Continuous iterated density estimation evolutionary algorithms within the IDEA framework,\" in Proc. Optimization Building Using Probabilistic Models OBUPM Workshop GECCO, 2000, pp. 197-200.\n[7] P. Larrañaga, R. Etxeberria, J. Lozano, and J. Peña, \"Optimization in continuous domains by learning and simulation of Gaussian networks,\" in Proc. GECCO, 2000, pp. 201-204.\n[8] M. Wagner, A. Auger, and M. Schoenauer, \"EEDA: A new robust estimation of distribution algorithm,\" Rapport de Recherche (Res. Rep.) RR-5190, INRIA, 2004.\n[9] J. Grahl, P. Bosman, and F. Rothlauf, \"The correlation-triggered adaptive variance scaling IDEA,\" in Proc. GECCO, 2006, pp. 397-404.\n[10] P. Bosman, J. Grahl, and F. Rothlauf, \"SDR: A better trigger for adaptive variance scaling in normal EDAs,\" in Proc. GECCO, 2007, pp. 492-499.\n[11] W. Dong and X. Yao, \"Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms,\" Inform. Sci., vol. 178, no. 15, pp. 3000-3023, 2008.\n[12] S. Tsutsui, M. Pelikan, and D. Goldberg, \"Evolutionary algorithm using marginal histogram models in continuous domain,\" in Proc. Optimization Building Using Probabilistic Models OBUPM Workshop GECCO, 2001, pp. 230-233.\n[13] B. Yuan and M. Gallagher, \"Playing in continuous spaces: Some analysis and extension of population-based incremental learning,\" in Proc. IEEE Congr. Evol. Comput., vol. 1. 2003, pp. 443-450.\n[14] P. Pošik, \"Distribution tree-building real-valued evolutionary algorithm,\" Parallel Problem Solving Nature VIII, 2004, pp. 372-381.\n[15] N. Ding, S. Zhou, and Z. Sun, \"Optimizing continuous problems using estimation of distribution algorithm based on histogram model,\" in Proc. 6th Conf. Simulated Evol. Learning, 2006, pp. 545-552.\n[16] N. Ding, J. Xu, S. Zhou, and Z. Sun, \"Reducing computational complexity of estimating multivariate histogram-based probabilistic model,\" in Proc. IEEE Congr. Evol. Comput., 2007, pp. 111-118.\n[17] N. Ding and S. Zhou, \"Linkages detection in histogram-based estimation of distribution algorithm,\" in Linkage in Evolution Computation, YingPing Chen and Meng-Hiot Lim, Eds. Berlin/Heidelberg, Germany: Springer-Verlag, 2008, pp. 25-40.\n[18] N. Ding, S. Zhou, and Z. Sun, \"Histogram-based estimation of distribution algorithm: A competent method for continuous optimization,\" $J$. Comput. Sci. Technol., vol. 23, no. 1, pp. 35-43, 2008.\n[19] N. Ding, S. Zhou, H. Zhang, and Z. Sun, \"Marginal probability distribution estimation in characteristic space of covariance-matrix,\" in Proc. IEEE Congr. Evol. Comput., 2008, pp. 1589-1595.\n[20] K. Tang, X. Yao, P. Suganthan, C. MacNish, Y. P. Chen, C. M. Chen, and Z. Yang. (2007). \"Benchmark functions for the CEC'2008 special session and competition on large scale global optimization,\" Tech. Rep. [Online]. Available: http://nical.ustc.edu.cn/cec08ss.php\n[21] K. Tang, X. Li, P. Suganthan, Z. Yang, and T. Weise. (2009). \"Benchmark functions for the CEC'2010 special session and competition on large scale global optimization,\" Tech. Rep. [Online]. Available: http://nical.ustc.edu.cn/cec10ss.php\n[22] \"Workshop for evolutionary algorithms and other metaheuristics for continuous optimization problems: A scalability test,\" in Proc. 9th Int. Conf. Intell. Syst. Des. Appl., 2009 [Online]. Available: http://sci2s.ugr. es/programacion/workshop/Scalability.html\n[23] \"Special issue on 'Scalability of evolutionary algorithms and other metaheuristics for large scale continuous optimization problems,'\" Soft Comput., vol. 15, no. 11, Nov. 2011.\n[24] J. Friedman, \"An overview of predictive learning and function approximation,\" NATO ASI Series Comput. Syst. Sci., vol. 136, pp. 1-61, 1994.\n[25] D. Wolpert and W. Macready, \"No free lunch theorems for optimization,\" IEEE Trans. Evol. Comput., vol. 1, no. 1, pp. 67-82, Apr. 1997.\n[26] L. Devroye, Non-Uniform Random Variate Generation. New York, NY, USA: Springer-Verlag, 1986.\n[27] M. Gallagher, M. Frean, and T. Downs, \"Real-valued evolutionary optimization using a flexible probability density estimator,\" in Proc. GECCO, 1999, pp. 840-846.\n[28] P. Bosman and D. Thierens, \"Advancing continuous IDEAs with mixture distributions and factorization selection metrics,\" in Proc. Optimization Building Using Probabilistic Models OBUPM Workshop GECCO, 2001, pp. 208-212.\n[29] Q. Lu and X. Yao, \"Clustering and learning Gaussian distribution for continuous optimization,\" IEEE Trans. Syst., Man, Cybern. C, Appl. Rev., vol. 35, no. 2, pp. 195-204, May 2005.\n[30] C. Ahn, R. Ramakrishna, and D. Goldberg, \"Real-coded Bayesian optimization algorithm: Bringing the strength of BOA into the continuous world,\" in Proc. GECCO, 2004, pp. 840-851.\n[31] C. Ahn, \"Real-coded Bayesian optimization algorithm,\" in Advances in Evolutionary Algorithms: Theory, Design and Practice. Berlin, Germany: Springer, 2006, pp. 85-124.\n[32] C. Ahn and R. Ramakrishna, \"On the scalability of real-coded Bayesian optimization algorithm,\" IEEE Trans. Evol. Comput., vol. 12, no. 3, pp. 307-322, Jun. 2008.\n[33] M. Li, D. Goldberg, K. Sastry, and T. Yu, \"Real-coded ECGA for solving decomposable real-valued optimization problems,\" in Linkage in Evolutionary Computation, Ying-Ping Chen and Meng-Hiot Lim, Eds. Berlin/Heidelberg, Germany: Springer-Verlag, 2008, 61-86.\n[34] J. Sun, Q. Zhang, and E. Tsang, \"DE/EDA: A new evolutionary algorithm for global optimization,\" Inform. Sci., vol. 169, nos. 3-4, pp. 249-262, 2005.\n[35] W. Dong and X. Yao, \"NichingEDA: Utilizing the diversity inside a population of EDAs for continuous optimization,\" in Proc. IEEE Congr. Evol. Comput., 2008, pp. 1260-1267.\n[36] T. Chen, K. Tang, G. Chen, and X. Yao, \"On the analysis of average time complexity of estimation of distribution algorithms,\" in Proc. IEEE Congr. Evolutionary Comput., Sep. 2007, pp. 453-460.\n[37] T. Chen, P. K. Lehre, K. Tang, and X. Yao, \"When is an estimation of distribution algorithm better than an evolutionary algorithm?\" in Proc. IEEE Congr. Evol. Comput., May 2009, pp. $1470-1477$.\n[38] T. Chen, K. Tang, G. Chen, and X. Yao, \"Rigorous time complexity analysis of univariate marginal distribution algorithm with margins,\" in Proc. IEEE Congr. Evol. Comput., May 2009, pp. 2157-2164.\n\n[39] T. Chen, K. Tang, G. Chen, and X. Yao, \"Analysis of computational time of simple estimation of distribution algorithms,\" IEEE Trans. Evol. Comput., vol. 14, no. 1, pp. 1-22, Feb. 2010.\n[40] P. Bosman and D. Thierens, \"Numerical optimization with real-valued estimation-of-distribution algorithms,\" in Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, M. Pelikan, K. Sastry, and E. Cantu-Paz, Eds. Berlin/Heidelberg, Germany: SpringerVerlag, 2006, pp. 91-120.\n[41] Y. Wang and B. Li, \"A restart univariate estimation of distribution algorithm: Sampling under mixed Gaussian and Lévy probability distribution,\" in Proc. IEEE Congr. Evolutionary Comput., Jun. 2008, pp. 3917-3924.\n[42] C. Bielza, V. Robles, and P. Larrañaga, \"Estimation of distribution algorithms as logistic regression regularizers of microarray classifiers,\" Methods Inform. Med., vol. 48, no. 3, pp. 236-241, 2009.\n[43] A. Mendiburu, J. Lozano, and J. Miguel-Alonso, \"Parallel implementation of EDAs based on probabilistic graphical models,\" IEEE Trans. Evol. Comput., vol. 9, no. 4, pp. 406-423, Aug. 2005.\n[44] P. Bosman, \"On empirical memory design, faster selection of Bayesian factorizations and parameter-free Gaussian EDAs,\" in Proc. GECCO, ACM, 2009, pp. 389-396.\n[45] C. González, J. Lozano, and P. Larrañaga, \"Mathematical modelling of UMDAc algorithm with tournament selection: Behaviour on linear and quadratic functions,\" Int. J. Approximate Reasoning, vol. 31, no. 3, pp. 313-340, 2002.\n[46] J. Grahl, S. Minner, and F. Rothlauf, \"Behaviour of UMDAc with truncation selection on monotonous functions,\" in Proc. IEEE Congr. Evol. Comput., Sep. 2005, pp. 2553-2559.\n[47] B. Yuan and M. Gallagher, \"On the importance of diversity maintenance in estimation of distribution algorithms,\" in Proc. GECCO, 2005, pp. $719-726$.\n[48] Z. Zhang, W. Dong, K. Huang, and T. Tan, \"EDA approach for model based localization and recognition of vehicles,\" in Proc. 7th Int. Workshop Visual Surveillance, IEEE Conf. Comput. Vision Pattern Recognit., Jun. 2007, pp. 1-8.\n[49] P. Pošik and V. Franc, \"Estimation of fitness landscape contours in EAs,\" in Proc. GECCO, 2007, pp. 562-569.\n[50] W. Dong and X. Yao, \"Covariance matrix repairing in Gaussian based EDAs,\" in Proc. 2007 IEEE Congr. Evol. Comput., Sep. 2007, pp. 415422.\n[51] A. Auger and N. Hansen, \"Evolution strategies and related estimation of distribution algorithms,\" in Proc. GECCO, 2008, pp. 2727-2740.\n[52] X. Yao, Y. Liu, and G. Lin, \"Evolutionary programming made faster,\" IEEE Trans. Evol. Comput., vol. 3, no. 2, pp. 82-102, Jul. 1999.\n[53] P. Suganthan, N. Hansen, J. Liang, K. Deb, Y. Chen, A. Auger, and S. Tiwari. (2005). \"Problem definitions and evaluation criteria for the CEC 2005 special session on real-parameter optimization,\" Tech. Rep. [Online]. Available: http://www.ntu.edu.sg/home/EPNSugan\n[54] Z. Yang, K. Tang, and X. Yao, \"Large scale evolutionary optimization using cooperative coevolution,\" Inform. Sci., vol. 178, no. 15, pp. 29852999, 2008.\n[55] J. Dem'sar, \"Statistical comparisons of classifiers over multiple data sets,\" J. Mach. Learning Res., vol. 7, pp. 1-30, 2006.\n[56] R. Ros and N. Hansen, \"A simple modification in CMA-ES achieving linear time and space complexity,\" in Proc. Parallel Problem Solving Nature X, 2008, pp. 296-305.\n[57] M. Omidvar and X. Li, \"A comparative study of CMA-ES on large scale global optimisation,\" in Proc. Advances Artif. Intell., 2011, pp. 303-312.\n[58] R. Santana, P. Larrañaga, and J. Lozano, \"Protein folding in simplified models with estimation of distribution algorithms,\" IEEE Trans. Evol. Comput., vol. 12, no. 4, pp. 418-438, Aug. 2008.\n![img-15.jpeg](img-15.jpeg)\n\nWeishan Dong received the B.E. degree in computer science and technology from the University of Science and Technology of China, Hefei, China, in 2004, and the Ph.D. degree in pattern recognition and intelligent system from the Institute of Automation, Chinese Academy of Sciences, Beijing, China, in 2009. He also studied as a joint Ph.D. student at the School of Computer Science, University of Birmingham, Birmingham, U.K., from 2008 to 2009.\n\nHe is currently a Research Staff member at IBM Research-China, Beijing, China. His current research interests include data mining, evolutionary computation, and computer vision, as well as their industrial applications, such as asset management systems, crime analytics solutions, and business intelligence software.\n\nDr. Dong was a recipient of the Best Conference Paper Award at IEEE SOLI 2011 and the IBM Research Accomplishment of Asset Optimization for Smarter Cities in 2012.\n![img-16.jpeg](img-16.jpeg)\n\nTianshi Chen received the B.S. degree in mathematics from the Special Class for the Gifted Young, University of Science and Technology of China (USTC), Hefei, China, in 2005, and the Ph.D. degree in computer science from the Department of Computer Science and Technology, USTC, in 2010.\nHe is currently an Assistant Professor at the Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China. His current research interests include evolutionary computation, applications of computational intelligence techniques in computer architecture research, and parallel computing.\nDr. Chen was a recipient of the China Computer Federation Distinguished Doctoral Dissertation Award in 2011 and the Chinese Academy of Sciences Distinguished Doctoral Dissertation Award in 2011 for his Ph.D. work on computational complexity analysis of evolutionary algorithms.\n![img-17.jpeg](img-17.jpeg)\n\nPeter Tiño received the M.Sc. degree from the Slovak University of Technology and the Ph.D. degree from the Slovak Academy of Sciences.\nHe was a Fulbright fellow at the NEC Research Institute, Princeton, NJ, USA and a Post-Doctoral fellow at the Austrian Research Institute for AI, Vienna, Austria, and at Aston University, U.K. Since 2003, he has been with the Centre of Excellence for Research in Computational Intelligence and Applications School of Computer Science, University of Birmingham, Birmingham, U.K., where he is currently a Reader in complex and adaptive systems. His current research interests include dynamical systems, machine learning, probabilistic modeling of structured data, evolutionary computation, and fractal analysis.\nDr. Tiño was a recipient of the Fulbright Fellowship in 1994, the U.K.Hong-Kong Fellowship for Excellence in 2008, three Outstanding Paper of the Year Awards for the IEEE Transactions on Neural Networks in 1998, 2011, the IEEE Transactions on Evolutionary Computation in 2010, and the Best Paper Award at ICANN 2002. He is on the Editorial Board of several journals.\n![img-18.jpeg](img-18.jpeg)\n\nXin Yao (F'03) is currently a Chair (Professor) of computer science and the Director of the Centre of Excellence for Research in Computational Intelligence and Applications, School of Computer Science, University of Birmingham, Birmingham, U.K. He has more than 400 referred publications in international journals and conferences. His current research interests include evolutionary computation and ensemble learning.\nProf. Yao is a Distinguished Lecturer of the IEEE Computational Intelligence Society. He was the Editor-in-Chief of the IEEE Transactions on Evolutionary Computation from 2003 to 2006. He has been invited to give more than 70 keynote/plenary speeches at international conferences. His work won the 2001 IEEE Donald G. Fink Prize Paper Award, the 2010 IEEE Transactions on Evolutionary Computation Outstanding Paper Award, the 2010 BT Gordon Radley Award for Best Author of Innovation (Finalist), the 2011 IEEE Transactions on Neural Networks Outstanding Paper Award, and many other Best Paper Awards at conferences. He was a recipient of the prestigious Royal Society Wolfson Research Merit Award in 2012 and the 2013 IEEE CIS Evolutionary Computation Pioneer Award.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions. I. Binary parameters,\" in Proc. Parallel Problem Solving Nature IV, 1996, pp. 178-187."
+      },
+      {
+        "ref_id": "2",
+        "text": "P. Larrañaga and J. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Boston, MA, USA: Kluwer Academic, 2002."
+      },
+      {
+        "ref_id": "3",
+        "text": "D. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning. Reading, MA, USA: Addison-Wesley, 1989."
+      },
+      {
+        "ref_id": "4",
+        "text": "M. Sebag and A. Ducoulombier, \"Extending population-based incremental learning to continuous search spaces,\" in Proc. Parallel Problem Solving Nature V, 1998, pp. 418-427."
+      },
+      {
+        "ref_id": "5",
+        "text": "P. Bosman and D. Thierens, \"Expanding from discrete to continuous estimation of distribution algorithms: The IDEA,\" in Proc. Parallel Problem Solving Nature VI, 2000, pp. 767-776."
+      },
+      {
+        "ref_id": "6",
+        "text": "P. Bosman and D. Thierens, \"Continuous iterated density estimation evolutionary algorithms within the IDEA framework,\" in Proc. Optimization Building Using Probabilistic Models OBUPM Workshop GECCO, 2000, pp. 197-200."
+      },
+      {
+        "ref_id": "7",
+        "text": "P. Larrañaga, R. Etxeberria, J. Lozano, and J. Peña, \"Optimization in continuous domains by learning and simulation of Gaussian networks,\" in Proc. GECCO, 2000, pp. 201-204."
+      },
+      {
+        "ref_id": "8",
+        "text": "M. Wagner, A. Auger, and M. Schoenauer, \"EEDA: A new robust estimation of distribution algorithm,\" Rapport de Recherche (Res. Rep.) RR-5190, INRIA, 2004."
+      },
+      {
+        "ref_id": "9",
+        "text": "J. Grahl, P. Bosman, and F. Rothlauf, \"The correlation-triggered adaptive variance scaling IDEA,\" in Proc. GECCO, 2006, pp. 397-404."
+      },
+      {
+        "ref_id": "10",
+        "text": "P. Bosman, J. Grahl, and F. Rothlauf, \"SDR: A better trigger for adaptive variance scaling in normal EDAs,\" in Proc. GECCO, 2007, pp. 492-499."
+      },
+      {
+        "ref_id": "11",
+        "text": "W. Dong and X. Yao, \"Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms,\" Inform. Sci., vol. 178, no. 15, pp. 3000-3023, 2008."
+      },
+      {
+        "ref_id": "12",
+        "text": "S. Tsutsui, M. Pelikan, and D. Goldberg, \"Evolutionary algorithm using marginal histogram models in continuous domain,\" in Proc. Optimization Building Using Probabilistic Models OBUPM Workshop GECCO, 2001, pp. 230-233."
+      },
+      {
+        "ref_id": "13",
+        "text": "B. Yuan and M. Gallagher, \"Playing in continuous spaces: Some analysis and extension of population-based incremental learning,\" in Proc. IEEE Congr. Evol. Comput., vol. 1. 2003, pp. 443-450."
+      },
+      {
+        "ref_id": "14",
+        "text": "P. Pošik, \"Distribution tree-building real-valued evolutionary algorithm,\" Parallel Problem Solving Nature VIII, 2004, pp. 372-381."
+      },
+      {
+        "ref_id": "15",
+        "text": "N. Ding, S. Zhou, and Z. Sun, \"Optimizing continuous problems using estimation of distribution algorithm based on histogram model,\" in Proc. 6th Conf. Simulated Evol. Learning, 2006, pp. 545-552."
+      },
+      {
+        "ref_id": "16",
+        "text": "N. Ding, J. Xu, S. Zhou, and Z. Sun, \"Reducing computational complexity of estimating multivariate histogram-based probabilistic model,\" in Proc. IEEE Congr. Evol. Comput., 2007, pp. 111-118."
+      },
+      {
+        "ref_id": "17",
+        "text": "N. Ding and S. Zhou, \"Linkages detection in histogram-based estimation of distribution algorithm,\" in Linkage in Evolution Computation, YingPing Chen and Meng-Hiot Lim, Eds. Berlin/Heidelberg, Germany: Springer-Verlag, 2008, pp. 25-40."
+      },
+      {
+        "ref_id": "18",
+        "text": "N. Ding, S. Zhou, and Z. Sun, \"Histogram-based estimation of distribution algorithm: A competent method for continuous optimization,\" $J$. Comput. Sci. Technol., vol. 23, no. 1, pp. 35-43, 2008."
+      },
+      {
+        "ref_id": "19",
+        "text": "N. Ding, S. Zhou, H. Zhang, and Z. Sun, \"Marginal probability distribution estimation in characteristic space of covariance-matrix,\" in Proc. IEEE Congr. Evol. Comput., 2008, pp. 1589-1595."
+      },
+      {
+        "ref_id": "20",
+        "text": "K. Tang, X. Yao, P. Suganthan, C. MacNish, Y. P. Chen, C. M. Chen, and Z. Yang. (2007). \"Benchmark functions for the CEC'2008 special session and competition on large scale global optimization,\" Tech. Rep. [Online]. Available: http://nical.ustc.edu.cn/cec08ss.php"
+      },
+      {
+        "ref_id": "21",
+        "text": "K. Tang, X. Li, P. Suganthan, Z. Yang, and T. Weise. (2009). \"Benchmark functions for the CEC'2010 special session and competition on large scale global optimization,\" Tech. Rep. [Online]. Available: http://nical.ustc.edu.cn/cec10ss.php"
+      },
+      {
+        "ref_id": "22",
+        "text": "\"Workshop for evolutionary algorithms and other metaheuristics for continuous optimization problems: A scalability test,\" in Proc. 9th Int. Conf. Intell. Syst. Des. Appl., 2009 [Online]. Available: http://sci2s.ugr. es/programacion/workshop/Scalability.html"
+      },
+      {
+        "ref_id": "23",
+        "text": "\"Special issue on 'Scalability of evolutionary algorithms and other metaheuristics for large scale continuous optimization problems,'\" Soft Comput., vol. 15, no. 11, Nov. 2011."
+      },
+      {
+        "ref_id": "24",
+        "text": "J. Friedman, \"An overview of predictive learning and function approximation,\" NATO ASI Series Comput. Syst. Sci., vol. 136, pp. 1-61, 1994."
+      },
+      {
+        "ref_id": "25",
+        "text": "D. Wolpert and W. Macready, \"No free lunch theorems for optimization,\" IEEE Trans. Evol. Comput., vol. 1, no. 1, pp. 67-82, Apr. 1997."
+      },
+      {
+        "ref_id": "26",
+        "text": "L. Devroye, Non-Uniform Random Variate Generation. New York, NY, USA: Springer-Verlag, 1986."
+      },
+      {
+        "ref_id": "27",
+        "text": "M. Gallagher, M. Frean, and T. Downs, \"Real-valued evolutionary optimization using a flexible probability density estimator,\" in Proc. GECCO, 1999, pp. 840-846."
+      },
+      {
+        "ref_id": "28",
+        "text": "P. Bosman and D. Thierens, \"Advancing continuous IDEAs with mixture distributions and factorization selection metrics,\" in Proc. Optimization Building Using Probabilistic Models OBUPM Workshop GECCO, 2001, pp. 208-212."
+      },
+      {
+        "ref_id": "29",
+        "text": "Q. Lu and X. Yao, \"Clustering and learning Gaussian distribution for continuous optimization,\" IEEE Trans. Syst., Man, Cybern. C, Appl. Rev., vol. 35, no. 2, pp. 195-204, May 2005."
+      },
+      {
+        "ref_id": "30",
+        "text": "C. Ahn, R. Ramakrishna, and D. Goldberg, \"Real-coded Bayesian optimization algorithm: Bringing the strength of BOA into the continuous world,\" in Proc. GECCO, 2004, pp. 840-851."
+      },
+      {
+        "ref_id": "31",
+        "text": "C. Ahn, \"Real-coded Bayesian optimization algorithm,\" in Advances in Evolutionary Algorithms: Theory, Design and Practice. Berlin, Germany: Springer, 2006, pp. 85-124."
+      },
+      {
+        "ref_id": "32",
+        "text": "C. Ahn and R. Ramakrishna, \"On the scalability of real-coded Bayesian optimization algorithm,\" IEEE Trans. Evol. Comput., vol. 12, no. 3, pp. 307-322, Jun. 2008."
+      },
+      {
+        "ref_id": "33",
+        "text": "M. Li, D. Goldberg, K. Sastry, and T. Yu, \"Real-coded ECGA for solving decomposable real-valued optimization problems,\" in Linkage in Evolutionary Computation, Ying-Ping Chen and Meng-Hiot Lim, Eds. Berlin/Heidelberg, Germany: Springer-Verlag, 2008, 61-86."
+      },
+      {
+        "ref_id": "34",
+        "text": "J. Sun, Q. Zhang, and E. Tsang, \"DE/EDA: A new evolutionary algorithm for global optimization,\" Inform. Sci., vol. 169, nos. 3-4, pp. 249-262, 2005."
+      },
+      {
+        "ref_id": "35",
+        "text": "W. Dong and X. Yao, \"NichingEDA: Utilizing the diversity inside a population of EDAs for continuous optimization,\" in Proc. IEEE Congr. Evol. Comput., 2008, pp. 1260-1267."
+      },
+      {
+        "ref_id": "36",
+        "text": "T. Chen, K. Tang, G. Chen, and X. Yao, \"On the analysis of average time complexity of estimation of distribution algorithms,\" in Proc. IEEE Congr. Evolutionary Comput., Sep. 2007, pp. 453-460."
+      },
+      {
+        "ref_id": "37",
+        "text": "T. Chen, P. K. Lehre, K. Tang, and X. Yao, \"When is an estimation of distribution algorithm better than an evolutionary algorithm?\" in Proc. IEEE Congr. Evol. Comput., May 2009, pp. $1470-1477$."
+      },
+      {
+        "ref_id": "38",
+        "text": "T. Chen, K. Tang, G. Chen, and X. Yao, \"Rigorous time complexity analysis of univariate marginal distribution algorithm with margins,\" in Proc. IEEE Congr. Evol. Comput., May 2009, pp. 2157-2164."
+      },
+      {
+        "ref_id": "39",
+        "text": "T. Chen, K. Tang, G. Chen, and X. Yao, \"Analysis of computational time of simple estimation of distribution algorithms,\" IEEE Trans. Evol. Comput., vol. 14, no. 1, pp. 1-22, Feb. 2010."
+      },
+      {
+        "ref_id": "40",
+        "text": "P. Bosman and D. Thierens, \"Numerical optimization with real-valued estimation-of-distribution algorithms,\" in Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, M. Pelikan, K. Sastry, and E. Cantu-Paz, Eds. Berlin/Heidelberg, Germany: SpringerVerlag, 2006, pp. 91-120."
+      },
+      {
+        "ref_id": "41",
+        "text": "Y. Wang and B. Li, \"A restart univariate estimation of distribution algorithm: Sampling under mixed Gaussian and Lévy probability distribution,\" in Proc. IEEE Congr. Evolutionary Comput., Jun. 2008, pp. 3917-3924."
+      },
+      {
+        "ref_id": "42",
+        "text": "C. Bielza, V. Robles, and P. Larrañaga, \"Estimation of distribution algorithms as logistic regression regularizers of microarray classifiers,\" Methods Inform. Med., vol. 48, no. 3, pp. 236-241, 2009."
+      },
+      {
+        "ref_id": "43",
+        "text": "A. Mendiburu, J. Lozano, and J. Miguel-Alonso, \"Parallel implementation of EDAs based on probabilistic graphical models,\" IEEE Trans. Evol. Comput., vol. 9, no. 4, pp. 406-423, Aug. 2005."
+      },
+      {
+        "ref_id": "44",
+        "text": "P. Bosman, \"On empirical memory design, faster selection of Bayesian factorizations and parameter-free Gaussian EDAs,\" in Proc. GECCO, ACM, 2009, pp. 389-396."
+      },
+      {
+        "ref_id": "45",
+        "text": "C. González, J. Lozano, and P. Larrañaga, \"Mathematical modelling of UMDAc algorithm with tournament selection: Behaviour on linear and quadratic functions,\" Int. J. Approximate Reasoning, vol. 31, no. 3, pp. 313-340, 2002."
+      },
+      {
+        "ref_id": "46",
+        "text": "J. Grahl, S. Minner, and F. Rothlauf, \"Behaviour of UMDAc with truncation selection on monotonous functions,\" in Proc. IEEE Congr. Evol. Comput., Sep. 2005, pp. 2553-2559."
+      },
+      {
+        "ref_id": "47",
+        "text": "B. Yuan and M. Gallagher, \"On the importance of diversity maintenance in estimation of distribution algorithms,\" in Proc. GECCO, 2005, pp. $719-726$."
+      },
+      {
+        "ref_id": "48",
+        "text": "Z. Zhang, W. Dong, K. Huang, and T. Tan, \"EDA approach for model based localization and recognition of vehicles,\" in Proc. 7th Int. Workshop Visual Surveillance, IEEE Conf. Comput. Vision Pattern Recognit., Jun. 2007, pp. 1-8."
+      },
+      {
+        "ref_id": "49",
+        "text": "P. Pošik and V. Franc, \"Estimation of fitness landscape contours in EAs,\" in Proc. GECCO, 2007, pp. 562-569."
+      },
+      {
+        "ref_id": "50",
+        "text": "W. Dong and X. Yao, \"Covariance matrix repairing in Gaussian based EDAs,\" in Proc. 2007 IEEE Congr. Evol. Comput., Sep. 2007, pp. 415422."
+      },
+      {
+        "ref_id": "51",
+        "text": "A. Auger and N. Hansen, \"Evolution strategies and related estimation of distribution algorithms,\" in Proc. GECCO, 2008, pp. 2727-2740."
+      },
+      {
+        "ref_id": "52",
+        "text": "X. Yao, Y. Liu, and G. Lin, \"Evolutionary programming made faster,\" IEEE Trans. Evol. Comput., vol. 3, no. 2, pp. 82-102, Jul. 1999."
+      },
+      {
+        "ref_id": "53",
+        "text": "P. Suganthan, N. Hansen, J. Liang, K. Deb, Y. Chen, A. Auger, and S. Tiwari. (2005). \"Problem definitions and evaluation criteria for the CEC 2005 special session on real-parameter optimization,\" Tech. Rep. [Online]. Available: http://www.ntu.edu.sg/home/EPNSugan"
+      },
+      {
+        "ref_id": "54",
+        "text": "Z. Yang, K. Tang, and X. Yao, \"Large scale evolutionary optimization using cooperative coevolution,\" Inform. Sci., vol. 178, no. 15, pp. 29852999, 2008."
+      },
+      {
+        "ref_id": "55",
+        "text": "J. Dem'sar, \"Statistical comparisons of classifiers over multiple data sets,\" J. Mach. Learning Res., vol. 7, pp. 1-30, 2006."
+      },
+      {
+        "ref_id": "56",
+        "text": "R. Ros and N. Hansen, \"A simple modification in CMA-ES achieving linear time and space complexity,\" in Proc. Parallel Problem Solving Nature X, 2008, pp. 296-305."
+      },
+      {
+        "ref_id": "57",
+        "text": "M. Omidvar and X. Li, \"A comparative study of CMA-ES on large scale global optimisation,\" in Proc. Advances Artif. Intell., 2011, pp. 303-312."
+      },
+      {
+        "ref_id": "58",
+        "text": "R. Santana, P. Larrañaga, and J. Lozano, \"Protein folding in simplified models with estimation of distribution algorithms,\" IEEE Trans. Evol. Comput., vol. 12, no. 4, pp. 418-438, Aug. 2008."
+      }
+    ],
+    "reference_count": 58,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "SUMMARY OF ONE-GENERATION COMPUTATIONAL COMPLEXITY",
+      "headers": [
+        "",
+        "UMDA $_{c}^{G}$",
+        "EMNA $_{\\text {global }}$"
+      ],
+      "rows": [
+        [
+          "Model estimation",
+          "$O(n m)$",
+          "$O\\left(n^{2} m\\right)$"
+        ],
+        [
+          "Solution sampling",
+          "$O(n M)$",
+          "$O\\left(n^{2} M\\right)$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "$X_{k 1}$",
+        "$X_{k 2}$",
+        "$X_{k 3}$",
+        "$X_{k 4}$",
+        "$X_{k 5}$",
+        "$X_{k 6}$",
+        "$X_{k 7}$",
+        "$X_{k 8}$"
+      ],
+      "rows": [
+        [
+          "$X_{k 1}$",
+          1.79,
+          0.92,
+          1.31,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "$X_{k 2}$",
+          0.92,
+          2.41,
+          0.59,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "$X_{k 3}$",
+          1.31,
+          0.59,
+          3.88,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "$X_{k 4}$",
+          0,
+          0,
+          0,
+          1.54,
+          "$-0.23$",
+          0.75,
+          0,
+          0
+        ],
+        [
+          "$X_{k 5}$",
+          0,
+          0,
+          0,
+          "$-0.23$",
+          1.21,
+          "$-0.84$",
+          0,
+          0
+        ],
+        [
+          "$X_{k 6}$",
+          0,
+          0,
+          0,
+          0.75,
+          "$-0.84$",
+          1.82,
+          0,
+          0
+        ],
+        [
+          "$X_{k 7}$",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1.95,
+          0.56
+        ],
+        [
+          "$X_{k 8}$",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.56,
+          2.94
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": "II",
+      "table_title": "COMPARISON OF ONE-GENERATION COMPUTATIONAL COMPLEXITY",
+      "headers": [
+        "",
+        "UMDA $^{G}$",
+        "EMNA $_{\\text {global }}$",
+        "EDA-MCC"
+      ],
+      "rows": [
+        [
+          "Model estimation",
+          "$O(n m)$",
+          "$O\\left(n^{2} m\\right)$",
+          "$\\left[O\\left(n^{2} m_{\\text {corr }}\\right)+O(n m), O\\left(n^{2} m_{\\text {corr }}\\right)+O(\\operatorname{cnm})\\right]$"
+        ],
+        [
+          "Solution sampling",
+          "$O(n M)$",
+          "$O\\left(n^{2} M\\right)$",
+          "$[O(n M), O(\\operatorname{cn} M)]$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "TEST FUNCTIONS USED IN EXPERIMENTS",
+      "headers": [
+        "",
+        "Description",
+        "Expression",
+        "Domain"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          52,
+          "$F(\\bar{x})=\\sum_{i=1}^{n} x_{i}^{2}$",
+          "$[-100,100]^{\\mathrm{n}}$"
+        ],
+        [
+          "$F_{2}$",
+          53,
+          "$F(\\bar{x})=\\sum_{i=1}^{n} z_{i}^{2}+f_{\\text {biars }}, \\quad \\bar{z}=\\bar{x}-\\bar{o}$",
+          "$[-100,100]^{\\mathrm{n}}$"
+        ],
+        [
+          "$F_{5}$",
+          7,
+          "$F(\\bar{x})=\\sum_{i=1}^{n}\\left\\{\\left(x_{1}-x_{i}^{2}\\right)^{2}+\\left(x_{i}-1\\right)^{2}\\right\\}$",
+          "$[-10,10]^{\\mathrm{n}}$"
+        ],
+        [
+          "$F_{6}$",
+          "shifted $F_{5}$",
+          "$F(\\bar{x})=\\sum_{i=1}^{n}\\left\\{\\left(z_{1}-z_{i}^{2}\\right)^{2}+\\left(z_{i}-1\\right)^{2}\\right\\}, \\quad \\bar{z}=\\bar{x}-\\bar{o}+1$",
+          "$[-10,10]^{\\mathrm{n}}$"
+        ],
+        [
+          "$F_{7}$",
+          52,
+          "$F(\\bar{x})=\\sum_{i=1}^{n}\\left\\{100\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(x_{i}-1\\right)^{2}\\right\\}$",
+          "$[-100,100]^{\\mathrm{n}}$"
+        ],
+        [
+          "$F_{8}$",
+          53,
+          "$F(\\bar{x})=\\sum_{i=1}^{n}\\left\\{100\\left(z_{i+1}-z_{i}^{2}\\right)^{2}+\\left(z_{i}-1\\right)^{2}\\right\\}+f_{\\text {biars }}, \\quad \\bar{z}=\\bar{x}-\\bar{o}+1$",
+          "$[-100,100]^{\\mathrm{n}}$"
+        ],
+        [
+          "$F_{9}{ }^{*}$",
+          53,
+          "$\\begin{aligned} & F(\\bar{x})=\\sum_{i=1}^{n}\\left(10^{6}\\right)^{\\frac{1}{i-1}} z_{i}^{2}+f_{\\text {biars }} \\\\ & \\bar{z}=(\\bar{x}-\\bar{o}) \\cdot \\boldsymbol{M} \\end{aligned}$",
+          "$[-100,100]^{\\mathrm{n}}$"
+        ],
+        [
+          "$F_{11}$",
+          52,
+          "$F(\\bar{x})=\\sum_{i=1}^{n}\\left\\{x_{i}^{2}-10 \\cos \\left(2 \\pi x_{i}\\right)+10\\right\\}$",
+          "$[-5,5]^{\\mathrm{n}}$"
+        ],
+        [
+          "$F_{12}{ }^{*}$",
+          53,
+          "$F(\\bar{x})=\\sum_{i=1}^{n}\\left[z_{i}^{2}-10 \\cos \\left(2 \\pi z_{i}\\right)+10\\right]+f_{\\text {biars }}, \\quad \\bar{z}=(\\bar{x}-\\bar{o}) \\cdot \\boldsymbol{M}$",
+          "$[-5,5]^{\\mathrm{n}}$"
+        ],
+        [
+          "$F_{13}$",
+          53,
+          5316.0,
+          "$[-3,1]^{\\mathrm{n}}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 4
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Solution Quality Comparison",
+      "headers": [
+        "Prob.",
+        "$n$",
+        "UMDA ${ }^{\\text {G }}$",
+        "EMNA ${ }_{\\text {global }}$",
+        "EEDA",
+        "EDA-MCC"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          50,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$1.3 \\mathrm{e}-11 \\pm 6.3 \\mathrm{e}-11 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "",
+          100,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$1.4 \\mathrm{e}+01 \\pm 5.6 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "$F_{2}$",
+          50,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$4.5 \\mathrm{e}+04 \\pm 2.2 \\mathrm{e}+03 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "",
+          100,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$1.4 \\mathrm{e}+05 \\pm 4.0 \\mathrm{e}+03 \\frac{1}{2}$",
+          "$5.3 \\mathrm{e}-10 \\pm 1.4 \\mathrm{e}-09 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "$F_{3}$",
+          50,
+          "$2.6 \\mathrm{e}-04 \\pm 1.5 \\mathrm{e}-05 \\frac{1}{2}$",
+          "$1.2 \\mathrm{e}-01 \\pm 1.2 \\mathrm{e}-01 \\frac{1}{2}$",
+          "$1.8 \\mathrm{e}-08 \\pm 2.4 \\mathrm{e}-09 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "",
+          100,
+          "$2.6 \\mathrm{e}-02 \\pm 8.3 \\mathrm{e}-02 \\frac{1}{2}$",
+          "$3.3 \\mathrm{e}+00 \\pm 7.0 \\mathrm{e}-01 \\frac{1}{2}$",
+          "$1.5 \\mathrm{e}-03 \\pm 8.5 \\mathrm{e}-04 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "$F_{4}$",
+          50,
+          "$3.4 \\mathrm{e}+01 \\pm 2.5 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$4.1 \\mathrm{e}+01 \\pm 2.6 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$1.4 \\mathrm{e}-05 \\pm 6.8 \\mathrm{e}-05 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "",
+          100,
+          "$4.7 \\mathrm{e}+01 \\pm 3.1 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$5.8 \\mathrm{e}+01 \\pm 2.7 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$8.1 \\mathrm{e}+00 \\pm 1.4 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "$F_{5}$",
+          50,
+          "$1.5 \\mathrm{e}+01 \\pm 4.1 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$1.5 \\mathrm{e}+02 \\pm 1.4 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$2.4 \\mathrm{e}-02 \\pm 3.7 \\mathrm{e}-03 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "",
+          100,
+          "$1.3 \\mathrm{e}+02 \\pm 2.7 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$6.7 \\mathrm{e}+02 \\pm 7.5 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$3.8 \\mathrm{e}-01 \\pm 4.7 \\mathrm{e}-02 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "$F_{6}$",
+          50,
+          "$1.4 \\mathrm{e}+01 \\pm 5.2 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$6.6 \\mathrm{e}+03 \\pm 9.4 \\mathrm{e}+02 \\frac{1}{2}$",
+          "$1.0 \\mathrm{e}-01 \\pm 1.2 \\mathrm{e}-02 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "",
+          100,
+          "$1.8 \\mathrm{e}+02 \\pm 2.6 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$2.2 \\mathrm{e}+04 \\pm 2.1 \\mathrm{e}+03 \\frac{1}{2}$",
+          "$7.2 \\mathrm{e}+00 \\pm 7.9 \\mathrm{e}-01 \\frac{1}{2}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "$F_{7}$",
+          50,
+          "$4.8 \\mathrm{e}+01 \\pm 3.4 \\mathrm{e}-02 \\frac{1}{2}$",
+          "$5.7 \\mathrm{e}+01 \\pm 5.9 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$5.0 \\mathrm{e}+01 \\pm 9.2 \\mathrm{e}+00^{\\frac{1}{2}}$",
+          "$\\mathbf{4 . 7 e}+01 \\pm \\mathbf{2 . 1 e}-01$"
+        ],
+        [
+          "",
+          100,
+          "$9.7 \\mathrm{e}+01 \\pm 6.4 \\mathrm{e}-02 \\frac{1}{2}$",
+          "$2.7 \\mathrm{e}+03 \\pm 1.5 \\mathrm{e}+03 \\frac{1}{2}$",
+          "$9.7 \\mathrm{e}+01 \\pm 3.7 \\mathrm{e}-01 \\frac{1}{2}$",
+          "$\\mathbf{9 . 6 e}+01 \\pm \\mathbf{7 . 5 e}-02$"
+        ],
+        [
+          "$F_{8}$",
+          50,
+          "$4.1 \\mathrm{e}+02 \\pm 9.1 \\mathrm{e}+02 \\frac{1}{2}$",
+          "$4.0 \\mathrm{e}+09 \\pm 7.5 \\mathrm{e}+08 \\frac{1}{2}$",
+          "$5.2 \\mathrm{e}+02 \\pm 1.0 \\mathrm{e}+03 \\frac{1}{2}$",
+          "$\\mathbf{4 . 8 e}+01 \\pm \\mathbf{1 . 5 e}-01$"
+        ],
+        [
+          "",
+          100,
+          "$9.3 \\mathrm{e}+02 \\pm 3.1 \\mathrm{e}+03 \\frac{1}{2}$",
+          "$1.8 \\mathrm{e}+10 \\pm 1.9 \\mathrm{e}+09 \\frac{1}{2}$",
+          "$4.4 \\mathrm{e}+04 \\pm 4.4 \\mathrm{e}+04 \\frac{1}{2}$",
+          "$\\mathbf{9 . 6 e}+01 \\pm \\mathbf{1 . 3 e}-01$"
+        ],
+        [
+          "$F_{9}$",
+          50,
+          "$4.3 \\mathrm{e}+07 \\pm 4.1 \\mathrm{e}+06 \\frac{1}{2}$",
+          "$1.8 \\mathrm{e}+09 \\pm 2.4 \\mathrm{e}+08 \\frac{1}{2}$",
+          "$4.1 \\mathrm{e}+06 \\pm 1.4 \\mathrm{e}+06$",
+          "$\\mathbf{3 . 6 e}+06 \\pm \\mathbf{1 . 5 e}+06$"
+        ],
+        [
+          "",
+          100,
+          "$4.3 \\mathrm{e}+07 \\pm 3.1 \\mathrm{e}+06 \\frac{1}{2}$",
+          "$4.9 \\mathrm{e}+08 \\pm 9.7 \\mathrm{e}+07 \\frac{1}{2}$",
+          "$2.2 \\mathrm{e}+07 \\pm 3.7 \\mathrm{e}+06 \\frac{1}{2}$",
+          "$\\mathbf{9 . 6 e}+06 \\pm \\mathbf{2 . 5 e}+06$"
+        ],
+        [
+          "$F_{10}$",
+          50,
+          "$4.9 \\mathrm{e}+03 \\pm 1.8 \\mathrm{e}+02 \\frac{1}{2}$",
+          "$2.9 \\mathrm{e}+04 \\pm 1.4 \\mathrm{e}+03 \\frac{1}{2}$",
+          "$\\mathbf{2 . 0 e}+03 \\pm \\mathbf{2 . 0 e}+02 \\frac{1}{2}$",
+          "$3.1 \\mathrm{e}+03 \\pm 3.4 \\mathrm{e}+02$"
+        ],
+        [
+          "",
+          100,
+          "$5.9 \\mathrm{e}+03 \\pm 4.3 \\mathrm{e}+02 \\frac{1}{2}$",
+          "$7.8 \\mathrm{e}+04 \\pm 2.1 \\mathrm{e}+03 \\frac{1}{2}$",
+          "$4.4 \\mathrm{e}+03 \\pm 6.0 \\mathrm{e}+02 \\frac{1}{2}$",
+          "$\\mathbf{1 . 9 e}+03 \\pm \\mathbf{3 . 6 e}+02$"
+        ],
+        [
+          "$F_{11}$",
+          50,
+          "$\\mathbf{0} \\pm \\mathbf{0} \\frac{1}{2}$",
+          "$7.7 \\mathrm{e}+00 \\pm 5.0 \\mathrm{e}+00 \\frac{1}{2}$",
+          "$3.1 \\mathrm{e}+02 \\pm 1.3 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$2.9 \\mathrm{e}+02 \\pm 1.4 \\mathrm{e}+01$"
+        ],
+        [
+          "",
+          100,
+          "$\\mathbf{0} \\pm \\mathbf{0} \\frac{1}{2}$",
+          "$1.4 \\mathrm{e}+02 \\pm 2.4 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$7.3 \\mathrm{e}+02 \\pm 1.5 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$7.5 \\mathrm{e}+02 \\pm 1.6 \\mathrm{e}+01$"
+        ],
+        [
+          "$F_{12}$",
+          50,
+          "$\\mathbf{2 . 1 e}+00 \\pm \\mathbf{9 . 5 e - 0 1} \\frac{1}{2}$",
+          "$3.2 \\mathrm{e}+02 \\pm 2.1 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$3.1 \\mathrm{e}+02 \\pm 1.7 \\mathrm{e}+01^{\\frac{1}{2}}$",
+          "$3.0 \\mathrm{e}+02 \\pm 1.46 \\mathrm{e}+01$"
+        ],
+        [
+          "",
+          100,
+          "$\\mathbf{8 . 6 e}+00 \\pm \\mathbf{2 . 1 e}+00 \\frac{1}{2}$",
+          "$9.0 \\mathrm{e}+02 \\pm 2.9 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$7.3 \\mathrm{e}+02 \\pm 2.5 \\mathrm{e}+01$",
+          "$7.4 \\mathrm{e}+02 \\pm 2.35 \\mathrm{e}+01$"
+        ],
+        [
+          "$F_{13}$",
+          50,
+          "$\\mathbf{7 . 8 e}+00 \\pm \\mathbf{8 . 3 e - 0 1} \\frac{1}{2}$",
+          "$9.9 \\mathrm{e}+01 \\pm 2.4 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$2.7 \\mathrm{e}+01 \\pm 1.1 \\mathrm{e}+00^{\\circ}$",
+          "$2.6 \\mathrm{e}+01 \\pm 9.2 \\mathrm{e}-01$"
+        ],
+        [
+          "",
+          100,
+          "$\\mathbf{1 . 5 e}+01 \\pm \\mathbf{2 . 0 e}+00 \\frac{1}{2}$",
+          "$1.2 \\mathrm{e}+03 \\pm 1.9 \\mathrm{e}+02 \\frac{1}{2}$",
+          "$3.8 \\mathrm{e}+01 \\pm 2.6 \\mathrm{e}+01 \\frac{1}{2}$",
+          "$6.5 \\mathrm{e}+01 \\pm 1.6 \\mathrm{e}+00$"
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 6
+    },
+    {
+      "table_number": "V",
+      "table_title": "POPULATION SIZE COMPARISON",
+      "headers": [
+        "Prob.",
+        "$n$",
+        "UMDA $^{G}$",
+        "EMNA $_{\\text {global }}$",
+        "EEDA",
+        "EDA-MCC"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          50,
+          500,
+          2000,
+          1000,
+          200
+        ],
+        [
+          "",
+          100,
+          500,
+          2000,
+          2000,
+          200
+        ],
+        [
+          "$F_{2}$",
+          50,
+          500,
+          2000,
+          1000,
+          200
+        ],
+        [
+          "",
+          100,
+          1000,
+          2000,
+          2000,
+          1000
+        ],
+        [
+          "$F_{3}$",
+          50,
+          2000,
+          2000,
+          1000,
+          200
+        ],
+        [
+          "",
+          100,
+          2000,
+          2000,
+          2000,
+          200
+        ],
+        [
+          "$F_{4}$",
+          50,
+          2000,
+          2000,
+          1000,
+          200
+        ],
+        [
+          "",
+          100,
+          2000,
+          2000,
+          2000,
+          200
+        ],
+        [
+          "$F_{5}$",
+          50,
+          2000,
+          2000,
+          200,
+          200
+        ],
+        [
+          "",
+          100,
+          2000,
+          2000,
+          200,
+          200
+        ],
+        [
+          "$F_{6}$",
+          50,
+          2000,
+          2000,
+          1000,
+          200
+        ],
+        [
+          "",
+          100,
+          2000,
+          2000,
+          2000,
+          200
+        ],
+        [
+          "$F_{7}$",
+          50,
+          1000,
+          2000,
+          2000,
+          500
+        ],
+        [
+          "",
+          100,
+          1000,
+          2000,
+          2000,
+          500
+        ],
+        [
+          "$F_{8}$",
+          50,
+          2000,
+          2000,
+          1000,
+          2000
+        ],
+        [
+          "",
+          100,
+          2000,
+          2000,
+          2000,
+          500
+        ],
+        [
+          "$F_{9}$",
+          50,
+          2000,
+          2000,
+          500,
+          200
+        ],
+        [
+          "",
+          100,
+          2000,
+          2000,
+          1000,
+          200
+        ],
+        [
+          "$F_{10}$",
+          50,
+          2000,
+          2000,
+          1000,
+          200
+        ],
+        [
+          "",
+          100,
+          2000,
+          2000,
+          2000,
+          200
+        ],
+        [
+          "$F_{11}$",
+          50,
+          1000,
+          2000,
+          200,
+          2000
+        ],
+        [
+          "",
+          100,
+          2000,
+          2000,
+          200,
+          2000
+        ],
+        [
+          "$F_{12}$",
+          50,
+          2000,
+          2000,
+          1000,
+          2000
+        ],
+        [
+          "",
+          100,
+          2000,
+          2000,
+          500,
+          2000
+        ],
+        [
+          "$F_{13}$",
+          50,
+          500,
+          2000,
+          200,
+          500
+        ],
+        [
+          "",
+          100,
+          500,
+          2000,
+          200,
+          1000
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 6
+    },
+    {
+      "table_number": "VI",
+      "table_title": "COMPARISON BETWEEN EEDA AND EDA-MCC ON 50-D-200-D $F_{10}$",
+      "headers": [
+        "$n$",
+        "EEDA",
+        "EDA-MCC"
+      ],
+      "rows": [
+        [
+          50,
+          1000,
+          "$3.1 \\mathrm{e}+03 \\pm 3.4 \\mathrm{e}+02(200)$"
+        ],
+        [
+          100,
+          "$4.4 \\mathrm{e}+03 \\pm 6.0 \\mathrm{e}+02(2000)$",
+          200
+        ],
+        [
+          150,
+          "$1.7 \\mathrm{e}+04 \\pm 1.2 \\mathrm{e}+03(2000)$",
+          "$\\mathbf{3 . 1 e + 0 3} \\pm \\mathbf{4 . 0 e + 0 2}(500)$"
+        ],
+        [
+          200,
+          "$2.9 \\mathrm{e}+04 \\pm 2.0 \\mathrm{e}+03(2000)$",
+          "$\\mathbf{4 . 3 e + 0 3} \\pm \\mathbf{7 . 7 e + 0 2}(500)$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "VII",
+      "table_title": "RESULTS OF UMDA ${ }_{c}^{G}$ USING LARGE POPULATION SIZES ON 100-D $F_{5}, F_{5}, F_{8}, F_{9}$, AND $F_{10}$",
+      "headers": [
+        "Prob.",
+        "EDA-MCC",
+        "UMDA $_{c}^{G}, M=2000$",
+        "UMDA $_{c}^{G}, M=4000$",
+        "UMDA $_{c}^{G}, M=8000$",
+        "UMDA $_{c}^{G}, M=16000$"
+      ],
+      "rows": [
+        [
+          "$F_{3}$",
+          "$0 \\pm 0$",
+          "$2.6 \\mathrm{e}-02 \\pm 8.3 \\mathrm{e}-02$",
+          "$6.7 \\mathrm{e}-02 \\pm 2.7 \\mathrm{e}-03$",
+          "$2.6 \\mathrm{e}+00 \\pm 8.7 \\mathrm{e}-02$",
+          "$1.6 \\mathrm{e}+01 \\pm 3.6 \\mathrm{e}-01$"
+        ],
+        [
+          "$F_{5}$",
+          "$0 \\pm 0$",
+          "$1.3 \\mathrm{e}+02 \\pm 2.7 \\mathrm{e}+01$",
+          "$1.3 \\mathrm{e}+02 \\pm 1.7 \\mathrm{e}+01$",
+          "$1.3 \\mathrm{e}+02 \\pm 1.4 \\mathrm{e}+01$",
+          "$7.4 \\mathrm{e}+02 \\pm 3.3 \\mathrm{e}+01$"
+        ],
+        [
+          "$F_{8}$",
+          "$9.6 \\mathrm{e}+01 \\pm 1.3 \\mathrm{e}-01$",
+          "$9.3 \\mathrm{e}+02 \\pm 3.1 \\mathrm{e}+03$",
+          "$1.2 \\mathrm{e}+02 \\pm 4.7 \\mathrm{e}+01$",
+          "$2.4 \\mathrm{e}+02 \\pm 4.4 \\mathrm{e}+01$",
+          "$9.6 \\mathrm{e}+05 \\pm 9.2 \\mathrm{e}+04$"
+        ],
+        [
+          "$F_{9}$",
+          "$9.6 \\mathrm{e}+06 \\pm 2.5 \\mathrm{e}+06$",
+          "$4.3 \\mathrm{e}+07 \\pm 3.1 \\mathrm{e}+06$",
+          "$4.9 \\mathrm{e}+07 \\pm 2.7 \\mathrm{e}+06$",
+          "$9.5 \\mathrm{e}+07 \\pm 3.5 \\mathrm{e}+06$",
+          "$4.2 \\mathrm{e}+08 \\pm 3.3 \\mathrm{e}+07$"
+        ],
+        [
+          "$F_{10}$",
+          "$1.9 \\mathrm{e}+03 \\pm 3.6 \\mathrm{e}+02$",
+          "$5.9 \\mathrm{e}+03 \\pm 4.3 \\mathrm{e}+02$",
+          "$6.0 \\mathrm{e}+03 \\pm 2.8 \\mathrm{e}+02$",
+          "$9.1 \\mathrm{e}+03 \\pm 2.0 \\mathrm{e}+02$",
+          "$2.0 \\mathrm{e}+04 \\pm 5.2 \\mathrm{e}+02$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "COMPARISON OF DIFFERENT BASE MULTIVARIATE MODELS AND DIFFERENT SUBSPACE SIZES",
+      "headers": [
+        "Prob.",
+        "$n$",
+        "UMDA $_{c}^{G}$",
+        "EDA-MCC with <br> EEDA model <br> $c=20$",
+        "EDA-MCC with <br> EEDA model <br> $c=2$",
+        "EDA-MCC with <br> EMNA $_{\\text {global }}$ model <br> $c=20$",
+        "EDA-MCC with <br> EMNA $_{\\text {global }}$ model <br> $c=2$"
+      ],
+      "rows": [
+        [
+          "$F_{11}$",
+          10,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$"
+        ],
+        [
+          "",
+          50,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$2.88 \\mathrm{e}+02 \\pm 1.36 \\mathrm{e}+01 \\S$",
+          "$2.96 \\mathrm{e}+02 \\pm 1.13 \\mathrm{e}+01 \\S$",
+          "$6.31 \\mathrm{e}-08 \\pm 1.52 \\mathrm{e}-07 \\S$",
+          "$4.81 \\mathrm{e}-08 \\pm 5.93 \\mathrm{e}-08 \\S$"
+        ],
+        [
+          "",
+          100,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$7.49 \\mathrm{e}+02 \\pm 1.61 \\mathrm{e}+01 \\S$",
+          "$7.96 \\mathrm{e}+02 \\pm 2.33 \\mathrm{e}+01 \\S$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$1.52 \\mathrm{e}-04 \\pm 7.62 \\mathrm{e}-04$"
+        ],
+        [
+          "$F_{12}$",
+          10,
+          "$5.83 \\mathrm{e}-02 \\pm 2.91 \\mathrm{e}-01$",
+          "8.46e-04 $\\pm 2.86 \\mathrm{e}-03$",
+          "$1.68 \\mathrm{e}-01 \\pm 3.70 \\mathrm{e}-01$",
+          "$1.59 \\mathrm{e}-01 \\pm 3.73 \\mathrm{e}-01$",
+          "$1.33 \\mathrm{e}-01 \\pm 3.68 \\mathrm{e}-01$"
+        ],
+        [
+          "",
+          50,
+          2.08,
+          "$2.96 \\mathrm{e}+02 \\pm 1.46 \\mathrm{e}+01 \\S$",
+          "$2.97 \\mathrm{e}+02 \\pm 1.50 \\mathrm{e}+01 \\S$",
+          "$7.30 \\mathrm{e}+00 \\pm 2.47 \\mathrm{e}+00 \\S$",
+          "$8.70 \\mathrm{e}+00 \\pm 3.58 \\mathrm{e}+00 \\S$"
+        ],
+        [
+          "",
+          100,
+          8.57,
+          "$7.41 \\mathrm{e}+02 \\pm 2.35 \\mathrm{e}+01 \\S$",
+          "$8.01 \\mathrm{e}+02 \\pm 1.61 \\mathrm{e}+01 \\S$",
+          "$2.66 \\mathrm{e}+01 \\pm 7.51 \\mathrm{e}+00 \\S$",
+          "$2.54 \\mathrm{e}+01 \\pm 3.96 \\mathrm{e}+00 \\S$"
+        ],
+        [
+          "$F_{13}$",
+          10,
+          "$1.33 \\mathrm{e}+00 \\pm 2.13 \\mathrm{e}-01$",
+          1.31,
+          "$1.33 \\mathrm{e}+00 \\pm 3.09 \\mathrm{e}-01$",
+          "$1.45 \\mathrm{e}+00 \\pm 3.91 \\mathrm{e}-01$",
+          "$1.46 \\mathrm{e}+00 \\pm 3.39 \\mathrm{e}-01$"
+        ],
+        [
+          "",
+          50,
+          7.77,
+          "$2.64 \\mathrm{e}+01 \\pm 9.20 \\mathrm{e}-01 \\S$",
+          "$2.59 \\mathrm{e}+01 \\pm 1.05 \\mathrm{e}+00 \\S$",
+          "$8.13 \\mathrm{e}+00 \\pm 1.37 \\mathrm{e}+00$",
+          "$8.16 \\mathrm{e}+00 \\pm 1.58 \\mathrm{e}+00$"
+        ],
+        [
+          "",
+          100,
+          1.5201,
+          "$6.53 \\mathrm{e}+01 \\pm 1.64 \\mathrm{e}+00 \\S$",
+          "$6.82 \\mathrm{e}+01 \\pm 2.09 \\mathrm{e}+00 \\S$",
+          "$1.63 \\mathrm{e}+01 \\pm 1.97 \\mathrm{e}+00$",
+          "$1.66 \\mathrm{e}+01 \\pm 1.54 \\mathrm{e}+00^{*}$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "IX",
+      "table_title": "CompAriSONS of 500-D TESTS",
+      "headers": [
+        "Prob.",
+        "SaNSDE",
+        "FEPCC",
+        "DECC-O",
+        "DECC-G",
+        "UMDA ${ }_{c}^{G}$",
+        "MIMIC ${ }_{c}^{G}$",
+        "EDA-MCC",
+        "sep-CMA-ES"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          "2.41e-11",
+          "4.90e-08",
+          0,
+          0,
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$"
+        ],
+        [
+          "$F_{2}$",
+          "2.61e-11",
+          "-",
+          "1.04e-12",
+          0,
+          "$0 \\pm 0$",
+          "$2.56 \\mathrm{e}+02 \\pm 2.2 \\mathrm{e}+02 \\mathrm{c}$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$"
+        ],
+        [
+          "$F_{3}$",
+          4.0701,
+          "9.00e-05",
+          6.0101,
+          "4.58e-05",
+          "$1.35 \\mathrm{e}+01 \\pm 2.9 \\mathrm{e}+00$ c",
+          "$4.40 \\mathrm{e}-01 \\pm 1.4 \\mathrm{e}-01 \\mathrm{c}$",
+          "$2.79 \\mathrm{e}-01 \\pm 2.3 \\mathrm{e}-02$",
+          "$1.40 \\mathrm{e}+02 \\pm 1.4 \\mathrm{e}+01 \\mathrm{c}$"
+        ],
+        [
+          "$F_{4}$",
+          8.2901,
+          "-",
+          1.0502,
+          7.0001,
+          "$6.92 \\mathrm{e}+01 \\pm 4.2 \\mathrm{e}+00$ c",
+          "$7.93 \\mathrm{e}+01 \\pm 4.8 \\mathrm{e}-01 \\mathrm{c}$",
+          "3.27e-01 $\\pm$ 3.7e-02",
+          "$1.41 \\mathrm{e}+02 \\pm 1.2 \\mathrm{e}+01 \\mathrm{c}$"
+        ],
+        [
+          "$F_{5}$",
+          "9.30e-07",
+          "-",
+          1.3702,
+          "6.66e-08",
+          "$2.60 \\mathrm{e}+03 \\pm 2.8 \\mathrm{e}+02$ c",
+          "$2.03 \\mathrm{e}+02 \\pm 2.1 \\mathrm{e}+01 \\mathrm{c}$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$"
+        ],
+        [
+          "$F_{6}$",
+          "1.02e-06",
+          "-",
+          1.4402,
+          "9.59e-08",
+          "$6.61 \\mathrm{e}+03 \\pm 8.7 \\mathrm{e}+02$ c",
+          "$1.07 \\mathrm{e}+03 \\pm 2.6 \\mathrm{e}+01 \\mathrm{c}$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$"
+        ],
+        [
+          "$F_{7}$",
+          1.3303,
+          "-",
+          6.6402,
+          4.9202,
+          "$4.96 \\mathrm{e}+02 \\pm 1.4 \\mathrm{e}+01$",
+          "$4.93 \\mathrm{e}+02 \\pm 8.6 \\mathrm{e}-02$",
+          "$6.42 \\mathrm{e}+02 \\pm 4.1 \\mathrm{e}+02$",
+          "2.91e+02 $\\pm$ 2.6e+01c"
+        ],
+        [
+          "$F_{8}$",
+          2.7103,
+          "-",
+          1.7103,
+          1.5603,
+          "$3.44 \\mathrm{e}+04 \\pm 9.8 \\mathrm{e}+04 \\mathrm{c}$",
+          "$3.75 \\mathrm{e}+08 \\pm 8.5 \\mathrm{e}+07 \\mathrm{c}$",
+          "$6.77 \\mathrm{e}+02 \\pm 6.3 \\mathrm{e}+03$",
+          "2.87e+02 $\\pm$ 2.9e+01c"
+        ],
+        [
+          "$F_{9}$",
+          6.8808,
+          "-",
+          4.7808,
+          3.0608,
+          "$4.72 \\mathrm{e}+08 \\pm 1.6 \\mathrm{e}+07 \\mathrm{c}$",
+          "$4.44 \\mathrm{e}+08 \\pm 7.1 \\mathrm{e}+06 \\mathrm{c}$",
+          "$8.03 \\mathrm{e}+07 \\pm 1.1 \\mathrm{e}+07$",
+          "7.98e+07 $\\pm$ 1.7e+07"
+        ],
+        [
+          "$F_{10}$",
+          4.9605,
+          "-",
+          2.4005,
+          1.1505,
+          "$3.48 \\mathrm{e}+04 \\pm 8.4 \\mathrm{e}+02 \\mathrm{c}$",
+          "$1.03 \\mathrm{e}+05 \\pm 7.8 \\mathrm{e}+02 \\mathrm{c}$",
+          "2.09e+04 $\\pm$ 1.3e+03",
+          "$1.20 \\mathrm{e}+05 \\pm 9.4 \\mathrm{e}+03 \\mathrm{c}$"
+        ],
+        [
+          "$F_{11}$",
+          2.8402,
+          "1.43e-01",
+          1.7601,
+          0,
+          "$2.27 \\mathrm{e}+00 \\pm 1.2 \\mathrm{e}+00 \\mathrm{c}$",
+          "$4.80 \\mathrm{e}+03 \\pm 4.0 \\mathrm{e}+01 \\mathrm{c}$",
+          "$5.24 \\mathrm{e}+03 \\pm 3.9 \\mathrm{e}+01$",
+          "$2.14 \\mathrm{e}+03 \\pm 9.9 \\mathrm{e}+01 \\mathrm{c}$"
+        ],
+        [
+          "$F_{12}$",
+          6.9703,
+          "-",
+          1.5004,
+          5.3303,
+          "7.55e+01 $\\pm$ 6.5e+00c",
+          "$5.03 \\mathrm{e}+03 \\pm 4.7 \\mathrm{e}+01 \\mathrm{c}$",
+          "$5.25 \\mathrm{e}+03 \\pm 4.2 \\mathrm{e}+01$",
+          "$2.28 \\mathrm{e}+03 \\pm 1.8 \\mathrm{e}+02 \\mathrm{c}$"
+        ],
+        [
+          "$F_{13}$",
+          2.5302,
+          "-",
+          2.8101,
+          2.0902,
+          "$7.90 \\mathrm{e}+01 \\pm 3.1 \\mathrm{e}+00 \\mathrm{c}$",
+          "$4.73 \\mathrm{e}+02 \\pm 4.7 \\mathrm{e}+00 \\mathrm{c}$",
+          "$4.52 \\mathrm{e}+02 \\pm 5.0 \\mathrm{e}+00$",
+          "$1.03 \\mathrm{e}+02 \\pm 7.1 \\mathrm{e}+00 \\mathrm{c}$"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 9
+    },
+    {
+      "table_number": "X",
+      "table_title": "Performance COMPARISONS OF DiffERENT $\\theta$ AND $c$ ON 100-D $F_{2}$. RESULTS ARE AVERAGED OVER 25 RUNS",
+      "headers": [
+        "",
+        "$c=5$",
+        "$c=10$",
+        "$c=20$",
+        "$c=30$",
+        "$c=40$",
+        "$c=50$"
+      ],
+      "rows": [
+        [
+          "$\\theta=0.2$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$"
+        ],
+        [
+          "$\\theta=0.25$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$"
+        ],
+        [
+          "$\\theta=0.3$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$"
+        ],
+        [
+          "$\\theta=0.35$",
+          "$0 \\pm 0$",
+          "$1.96 \\mathrm{e}-01 \\pm 9.82 \\mathrm{e}-01$",
+          "$0 \\pm 0$",
+          "$0 \\pm 0$",
+          "$7.2 \\mathrm{e}-02 \\pm 3.6 \\mathrm{e}-01$",
+          "$0 \\pm 0$"
+        ],
+        [
+          "$\\theta=0.4$",
+          "$8.2 \\mathrm{e}+00 \\pm 3.5 \\mathrm{e}+01$",
+          "$1.8 \\mathrm{e}+00 \\pm 9.0 \\mathrm{e}+00$",
+          "$9.8 \\mathrm{e}-02 \\pm 3.7 \\mathrm{e}-01$",
+          "$2.8 \\mathrm{e}-03 \\pm 1.4 \\mathrm{e}-02$",
+          "$1.8 \\mathrm{e}-05 \\pm 8.9 \\mathrm{e}-05$",
+          "$1.1 \\mathrm{e}+00 \\pm 4.6 \\mathrm{e}+00$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": "XI",
+      "table_title": "Performance COMPARISONS of DiffErent $\\theta$ AND $c$ ON 100-D $F_{8}$. RESULTS are AVERAGED OVER 25 RUNS",
+      "headers": [
+        "",
+        "$c=5$",
+        "$c=10$",
+        "$c=20$",
+        "$c=30$",
+        "$c=40$",
+        "$c=50$"
+      ],
+      "rows": [
+        [
+          "$\\theta=0.2$",
+          "$4.4 \\mathrm{e}+06 \\pm 2.1 \\mathrm{e}+07$",
+          "$9.5 \\mathrm{e}+01 \\pm 2.9 \\mathrm{e}-01$",
+          "$2.3 \\mathrm{e}+02 \\pm 6.9 \\mathrm{e}+02$",
+          "$9.6 \\mathrm{e}+01 \\pm 1.1 \\mathrm{e}-01$",
+          "$9.6 \\mathrm{e}+01 \\pm 2.1 \\mathrm{e}-01$",
+          "$9.6 \\mathrm{e}+01 \\pm 3.9 \\mathrm{e}-01$"
+        ],
+        [
+          "$\\theta=0.25$",
+          "$1.1 \\mathrm{e}+02 \\pm 8.0 \\mathrm{e}+01$",
+          "$9.5 \\mathrm{e}+01 \\pm 2.0 \\mathrm{e}-01$",
+          "$9.6 \\mathrm{e}+01 \\pm 1.4 \\mathrm{e}-01$",
+          "$1.3 \\mathrm{e}+02 \\pm 1.6 \\mathrm{e}+02$",
+          "$9.6 \\mathrm{e}+01 \\pm 9.0 \\mathrm{e}-02$",
+          "$9.6 \\mathrm{e}+01 \\pm 5.0 \\mathrm{e}-01$"
+        ],
+        [
+          "$\\theta=0.3$",
+          "$9.9 \\mathrm{e}+01 \\pm 1.2 \\mathrm{e}+01$",
+          "$9.9 \\mathrm{e}+01 \\pm 1.3 \\mathrm{e}+01$",
+          "$9.6 \\mathrm{e}+01 \\pm 1.3 \\mathrm{e}-01$",
+          "$9.7 \\mathrm{e}+01 \\pm 1.2 \\mathrm{e}-01$",
+          "$9.7 \\mathrm{e}+01 \\pm 2.1 \\mathrm{e}-01$",
+          "$9.7 \\mathrm{e}+01 \\pm 3.9 \\mathrm{e}-01$"
+        ],
+        [
+          "$\\theta=0.35$",
+          "$2.1 \\mathrm{e}+04 \\pm 7.3 \\mathrm{e}+04$",
+          "$2.2 \\mathrm{e}+02 \\pm 2.4 \\mathrm{e}+02$",
+          "$7.9 \\mathrm{e}+02 \\pm 2.4 \\mathrm{e}+03$",
+          "$9.5 \\mathrm{e}+03 \\pm 2.6 \\mathrm{e}+04$",
+          "$7.7 \\mathrm{e}+03 \\pm 3.3 \\mathrm{e}+04$",
+          "$1.2 \\mathrm{e}+03 \\pm 3.2 \\mathrm{e}+03$"
+        ],
+        [
+          "$\\theta=0.4$",
+          "$6.3 \\mathrm{e}+06 \\pm 1.4 \\mathrm{e}+07$",
+          "$1.3 \\mathrm{e}+06 \\pm 1.6 \\mathrm{e}+06$",
+          "$1.2 \\mathrm{e}+06 \\pm 2.3 \\mathrm{e}+06$",
+          "$1.4 \\mathrm{e}+06 \\pm 4.0 \\mathrm{e}+06$",
+          "$2.5 \\mathrm{e}+06 \\pm 6.0 \\mathrm{e}+06$",
+          "$1.1 \\mathrm{e}+06 \\pm 2.3 \\mathrm{e}+06$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": "XII",
+      "table_title": "COMPARISONS BETWEEN EDA-MCC-GC AND EDA-MCC ON 50-D AND 500-D $F_{2}, F_{8}$, AND $F_{11}$",
+      "headers": [
+        "Prob.",
+        "$n$",
+        "EDA-MCC-GC",
+        "EDA-MCC",
+        "Parameters"
+      ],
+      "rows": [
+        [
+          "$F_{2}$",
+          50,
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$M=200, m=100, m_{\\text {corr }}=100, \\theta=0.3, c=20$"
+        ],
+        [
+          "",
+          500,
+          "$1.32 \\mathrm{e}+05 \\pm 2.73 \\mathrm{e}+05 \\S$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$M=200, m=100, m_{\\text {corr }}=100, \\theta=0.3, c=100$"
+        ],
+        [
+          "$F_{8}$",
+          50,
+          "$4.78 \\mathrm{e}+01 \\pm 2.34 \\mathrm{e}-01$",
+          "$\\mathbf{4 . 7 7 e}+01 \\pm \\mathbf{1 . 5 2 e - 0 1}$",
+          "$M=2000, m=1000, m_{\\text {corr }}=100, \\theta=0.3, c=20$"
+        ],
+        [
+          "",
+          500,
+          "$6.32 \\mathrm{e}+11 \\pm 1.29 \\mathrm{e}+12 \\S$",
+          "$\\mathbf{6 . 7 7 e}+02 \\pm \\mathbf{6 . 2 8 e}+02$",
+          "$M=200, m=100, m_{\\text {corr }}=100, \\theta=0.3, c=100$"
+        ],
+        [
+          "$F_{11}$",
+          50,
+          "$3.00 \\mathrm{e}+02 \\pm 1.45 \\mathrm{e}+01$",
+          "$\\mathbf{2 . 8 8 e}+02 \\pm \\mathbf{1 . 3 6 e}+01$",
+          "$M=2000, m=1000, m_{\\text {corr }}=100, \\theta=0.3, c=20$"
+        ],
+        [
+          "",
+          500,
+          "$6.25 \\mathrm{e}+03 \\pm 1.01 \\mathrm{e}+03 \\S$",
+          "$\\mathbf{5 . 2 4 e}+03 \\pm \\mathbf{3 . 8 6 e}+01$",
+          "$M=200, m=100, m_{\\text {corr }}=100, \\theta=0.3, c=100$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "XIII",
+      "table_title": "COMPARISON AMONG ' 'WI + SM,' ' 'SM ONLY,'' AND 'WI ONLY'' ON 100-D PROBLEMS",
+      "headers": [
+        "Prob.",
+        "WI + SM",
+        "SM only",
+        "WI only"
+      ],
+      "rows": [
+        [
+          "$F_{2}$",
+          "$\\mathbf{0 \\pm 0}$",
+          "$\\mathbf{0 \\pm 0}$",
+          "$\\mathbf{0 \\pm 0}$"
+        ],
+        [
+          "$F_{8}$",
+          "$\\mathbf{9 . 6 5 e + 0 1 \\pm 1 . 3 e - 0 1}$",
+          "$1.00 \\mathrm{e}+02 \\pm 2.3 \\mathrm{e}+01$",
+          "$4.51 \\mathrm{e}+03 \\pm 2.1 \\mathrm{e}+04$"
+        ],
+        [
+          "$F_{8}$",
+          "$\\mathbf{9 . 5 9 e + 0 6 \\pm 2 . 5 e + 0 6}$",
+          "$9.01 \\mathrm{e}+09 \\pm 1.1 \\mathrm{e}+09$",
+          "$3.33 \\mathrm{e}+07 \\pm 6.7 \\mathrm{e}+06$"
+        ],
+        [
+          "$F_{10}$",
+          "$\\mathbf{1 . 8 7 e + 0 3 \\pm 3 . 6 e + 0 2}$",
+          "$8.15 \\mathrm{e}+04 \\pm 3.9 \\mathrm{e}+03$",
+          "$2.39 \\mathrm{e}+04 \\pm 2.3 \\mathrm{e}+03$"
+        ],
+        [
+          "$F_{11}$",
+          "$7.49 \\mathrm{e}+02 \\pm 1.6 \\mathrm{e}+01$",
+          "$7.82 \\mathrm{e}+02 \\pm 1.7 \\mathrm{e}+01$",
+          "$\\mathbf{7 . 3 6 e + 0 2 \\pm 1 . 1 e + 0 1} \\mathbf{1}$"
+        ],
+        [
+          "$F_{13}$",
+          "$6.53 \\mathrm{e}+01 \\pm 1.6 \\mathrm{e}+00$",
+          "$6.97 \\mathrm{e}+01 \\pm 1.8 \\mathrm{e}+00$",
+          "$\\mathbf{6 . 5 1 e + 0 1 \\pm 1 . 1 e + 0 0}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    }
+  ]
+}

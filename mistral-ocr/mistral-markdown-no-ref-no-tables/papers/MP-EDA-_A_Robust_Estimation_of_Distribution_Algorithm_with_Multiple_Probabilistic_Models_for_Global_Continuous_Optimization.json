@@ -1,0 +1,547 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/MP-EDA- A Robust Estimation of Distribution Algorithm with Multiple Probabilistic Models for Global Continuous Optimization.md",
+    "filename": "MP-EDA- A Robust Estimation of Distribution Algorithm with Multiple Probabilistic Models for Global Continuous Optimization.md",
+    "title": "MP-EDA- A Robust Estimation of Distribution Algorithm with Multiple Probabilistic Models for Global Continuous Optimization",
+    "year": "2010"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Baluja, S.: Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning. Technical report CMU-CS-94-163, Carnegie Mellon University (1994)\n2. Mühlenbein, H., Paaß, G.: From recombination of genes to the estimation of distributions I. binary parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)\n3. Sebag, M., Ducoulombier, A.: Extending population-based incremental learning to continuous search spaces. In: Eiben, A.E., Bäck, T., Schoenauer, M., Schwefel, H.-P. (eds.) PPSN 1998. LNCS, vol. 1498, pp. 418-427. Springer, Heidelberg (1998)\n4. Larrañaga, P., Etxeberria, R., Lozano, J.A., Pe a, J.M.: Optimization in continuous domains by learning and simulation of Gaussian networks. In: Proceedings of the Genetic and Evolutionary Computation Conference 2000, Las Vegas, Nevada (July 2000)\n\n5. Paul, T.K., Iba, H.: Real-Coded Estimation of Distribution Algorithm. In: Proceedings of The Fifth Metaheuristics International Conference (2003)\n6. Yuan, B., Gallagher, M.: Experimental results for the special session on real-parameter optimization at CEC 2005: a simple, continuous EDA. In: Proc. of Congress on Evolutionary Computation (CEC 2005), vol. 2, pp. 1792-1799 (2005)\n7. Lu, Q., Yao, X.: Clustering and learning Gaussian distribution for continuous optimization. IEEE Transactions on Systems, Man, and Cybernetics, Part C: Applications and Reviews 35(2), 195-204 (2005)\n8. Tsutsui, S., Pelikan, M., Goldberg, D.E.: Evolutionary algorithm using marginal histogram models in continuous domain. IlliGAL Report No. 2001019, UIUC (2001)\n9. Zhang, Q., Sun, J., Tsang, E., Ford, J.: Hybrid Estimation of Distribution Algorithm for Global Optimsation. Engineering Computations 21(1), 91-107 (2004)\n10. Ding, N., Zhou, S., Sun, Z.: Histogram-based estimation of distribution algorithm: a competent method for continuous optimization. Computer Science and Technology 23(1), $35-42(2008)$\n11. Xiao, J., Yan, Y.P., Zhang, J.: HPBILc: A histogram-based EDA for continuous optimization. Applied Mathematics and Computation 215(3), 973-982 (2009)\n12. Liang, J.J., Qin, A.K., Suganthan, P.N., Baskar, S.: Comprehensive learning particle swarm optimizer for global optimization of multimodal functions. IEEE Trans. on Evolutionary Computation 10(3), 280-295 (2006)\n13. Storn, R.M., Price, K.V.: Differential evolution - A simple and efficient heuristic for global optimization over continuous spaces. J. Global Optimization 11, 341-359 (1997)\n14. Yao, X., Liu, Y., Lin, G.: Evolutionary programming made faster. IEEE Trans. On Evolutionary Computation 3(2), 82-102 (1999)\n15. Auger, A., Hansen, N.: Performance evaluation of an advanced local search evolutionary algorithm. In: Proc. of IEEE Congress on Evolutionary Computation (CEC 2005), vol. 2, pp. 1777-1784 (September 2005)\n16. yuan, B., Gallagher, M.: On the importance of diversity maintenance in estimation of distribution algorithms. In: Proc. of the Genetic and Evolutionary Computation Conference-GECCO-2005, pp. 719-726. ACM, New York (2005)\n17. Suganthan, P.N., Hansen, N., Liang, J.J., Deb, K., Chen, Y.-P., Auger, A., Tiwari, S.: Problem Definitions and Evaluation Criteria for the CEC 2005 Special Session on RealParameter Optimization. Nanyang Technol. Univ., Singapore, IIT Kanpur, India, KanGAL Rep. 2005005 (May 2005)\n18. Noman, N., Iba, H.: Accelerating differential evolution using an adaptive local search. IEEE Transactions on Evolutionary Computation 12(1), 107-125 (2008)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Baluja, S.: Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning. Technical report CMU-CS-94-163, Carnegie Mellon University (1994)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Mühlenbein, H., Paaß, G.: From recombination of genes to the estimation of distributions I. binary parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)"
+      },
+      {
+        "ref_id": "3",
+        "text": "Sebag, M., Ducoulombier, A.: Extending population-based incremental learning to continuous search spaces. In: Eiben, A.E., Bäck, T., Schoenauer, M., Schwefel, H.-P. (eds.) PPSN 1998. LNCS, vol. 1498, pp. 418-427. Springer, Heidelberg (1998)"
+      },
+      {
+        "ref_id": "4",
+        "text": "Larrañaga, P., Etxeberria, R., Lozano, J.A., Pe a, J.M.: Optimization in continuous domains by learning and simulation of Gaussian networks. In: Proceedings of the Genetic and Evolutionary Computation Conference 2000, Las Vegas, Nevada (July 2000)"
+      },
+      {
+        "ref_id": "5",
+        "text": "Paul, T.K., Iba, H.: Real-Coded Estimation of Distribution Algorithm. In: Proceedings of The Fifth Metaheuristics International Conference (2003)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Yuan, B., Gallagher, M.: Experimental results for the special session on real-parameter optimization at CEC 2005: a simple, continuous EDA. In: Proc. of Congress on Evolutionary Computation (CEC 2005), vol. 2, pp. 1792-1799 (2005)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Lu, Q., Yao, X.: Clustering and learning Gaussian distribution for continuous optimization. IEEE Transactions on Systems, Man, and Cybernetics, Part C: Applications and Reviews 35(2), 195-204 (2005)"
+      },
+      {
+        "ref_id": "8",
+        "text": "Tsutsui, S., Pelikan, M., Goldberg, D.E.: Evolutionary algorithm using marginal histogram models in continuous domain. IlliGAL Report No. 2001019, UIUC (2001)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Zhang, Q., Sun, J., Tsang, E., Ford, J.: Hybrid Estimation of Distribution Algorithm for Global Optimsation. Engineering Computations 21(1), 91-107 (2004)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Ding, N., Zhou, S., Sun, Z.: Histogram-based estimation of distribution algorithm: a competent method for continuous optimization. Computer Science and Technology 23(1), $35-42(2008)$"
+      },
+      {
+        "ref_id": "11",
+        "text": "Xiao, J., Yan, Y.P., Zhang, J.: HPBILc: A histogram-based EDA for continuous optimization. Applied Mathematics and Computation 215(3), 973-982 (2009)"
+      },
+      {
+        "ref_id": "12",
+        "text": "Liang, J.J., Qin, A.K., Suganthan, P.N., Baskar, S.: Comprehensive learning particle swarm optimizer for global optimization of multimodal functions. IEEE Trans. on Evolutionary Computation 10(3), 280-295 (2006)"
+      },
+      {
+        "ref_id": "13",
+        "text": "Storn, R.M., Price, K.V.: Differential evolution - A simple and efficient heuristic for global optimization over continuous spaces. J. Global Optimization 11, 341-359 (1997)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Yao, X., Liu, Y., Lin, G.: Evolutionary programming made faster. IEEE Trans. On Evolutionary Computation 3(2), 82-102 (1999)"
+      },
+      {
+        "ref_id": "15",
+        "text": "Auger, A., Hansen, N.: Performance evaluation of an advanced local search evolutionary algorithm. In: Proc. of IEEE Congress on Evolutionary Computation (CEC 2005), vol. 2, pp. 1777-1784 (September 2005)"
+      },
+      {
+        "ref_id": "16",
+        "text": "yuan, B., Gallagher, M.: On the importance of diversity maintenance in estimation of distribution algorithms. In: Proc. of the Genetic and Evolutionary Computation Conference-GECCO-2005, pp. 719-726. ACM, New York (2005)"
+      },
+      {
+        "ref_id": "17",
+        "text": "Suganthan, P.N., Hansen, N., Liang, J.J., Deb, K., Chen, Y.-P., Auger, A., Tiwari, S.: Problem Definitions and Evaluation Criteria for the CEC 2005 Special Session on RealParameter Optimization. Nanyang Technol. Univ., Singapore, IIT Kanpur, India, KanGAL Rep. 2005005 (May 2005)"
+      },
+      {
+        "ref_id": "18",
+        "text": "Noman, N., Iba, H.: Accelerating differential evolution using an adaptive local search. IEEE Transactions on Evolutionary Computation 12(1), 107-125 (2008)"
+      }
+    ],
+    "reference_count": 18,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test functions",
+      "headers": [
+        "Test Function",
+        "Domain"
+      ],
+      "rows": [
+        [
+          "$f_{6}(x)=\\sum_{i=1}^{n}\\left(z_{i}^{2}-10 \\cos \\left(2 \\pi z_{i}\\right)+10\\right)+f_{-}$bias, $\\boldsymbol{z}=\\boldsymbol{x}-\\boldsymbol{o}$",
+          "$[-500,500]$"
+        ],
+        [
+          "$f_{7}(x)=\\sum_{j=1}^{n} \\sum_{i=1}^{n}\\left(\\frac{y_{i, j}^{2}}{4000}-\\cos \\left(y_{i, j}\\right)+1\\right)+f_{-}$bias,",
+          "$[-5,5]$"
+        ],
+        [
+          "where $y_{i, j}=100\\left(z_{j}-z_{i}^{2}\\right)^{2}+\\left(1-z_{i}\\right)^{2}, \\boldsymbol{z}=\\boldsymbol{x}-\\boldsymbol{o}$",
+          ""
+        ],
+        [
+          "$f_{8}(x)=\\sum_{i=1}^{n}\\left(\\frac{z_{i}^{3}}{4000}\\right)-\\prod_{i=1}^{n} \\cos \\left(\\frac{z_{i}}{\\sqrt{i}}\\right)+1+f_{-}$bias, $\\boldsymbol{z}=\\boldsymbol{x}-\\boldsymbol{o}$",
+          "$[-600,600]$"
+        ],
+        [
+          "$\\begin{aligned} & f_{9}(x)=-20 \\cdot \\exp \\left(-0.2 \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} z_{i}^{2}}\\right)-\\exp \\left(\\frac{1}{n} \\sum_{i=1}^{n} \\cos \\left(2 \\pi z_{i}\\right)+\\right. \\\\ & 20+e+f_{-} \\text {bias }, \\boldsymbol{z}=\\boldsymbol{x}-\\boldsymbol{o} \\end{aligned}$",
+          "$[-32,32]$"
+        ],
+        [
+          "$\\begin{aligned} & f_{10}(x)=\\sum_{i=1}^{n}\\left(z_{i}^{2}-10 \\cos \\left(2 \\pi z_{i}\\right)+10\\right)+f_{-} \\text {bias }, \\boldsymbol{z}=(\\boldsymbol{x}-\\boldsymbol{o}) * \\mathrm{M} \\end{aligned}$",
+          "$[-5,5]$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Parameter Settings",
+      "headers": [
+        "Algorithm",
+        "",
+        "Parameter Settings",
+        ""
+      ],
+      "rows": [
+        [
+          "GM-EDA",
+          "",
+          "population size $N=200, S=100, \\alpha=0.2, Q=2, \\delta=1.2$",
+          ""
+        ],
+        [
+          "FHH-EDA",
+          "",
+          "population size $N=200, S=100, n=50$",
+          ""
+        ],
+        [
+          "MP-EDA",
+          "",
+          "population size $T=5, N_{\\min }=20, N_{\\max }=200, \\Delta=10, M=5$",
+          ""
+        ],
+        [
+          "CLPSO",
+          "",
+          "particle number $p s=40, w_{0}=0.9, w_{1}=0.4, c=1.49445, m=7$",
+          ""
+        ],
+        [
+          "DE",
+          "",
+          "population size $=100, F=0.5, C R=0.9$",
+          ""
+        ],
+        [
+          "CMA-ES",
+          "",
+          "population size $=14$ as default",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Experimental Results. ' $a$ ' stands for the average best values, ' $s$ ' stands for the standard deviations and ' $r$ ' stands for the performance ranking of the corresponding algorithm.",
+      "headers": [
+        "",
+        "",
+        "",
+        "MP-EDA",
+        "FHH-EDA",
+        "GM-EDA",
+        "CLPSO",
+        "DE",
+        "CMA-ES"
+      ],
+      "rows": [
+        [
+          "",
+          "$f_{1}$",
+          "$a$",
+          0,
+          "$6.99 \\times 10^{-1}$",
+          "$2.08 \\times 10^{-14}$",
+          "$5.68 \\times 10^{-14}$",
+          0,
+          "$3.79 \\times 10^{-15}$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          0,
+          "$3.37 \\times 10^{-1}$",
+          "$2.74 \\times 10^{-14}$",
+          0,
+          0,
+          "$1.44 \\times 10^{-14}$"
+        ],
+        [
+          "",
+          "",
+          "$r$",
+          1,
+          6,
+          4,
+          5,
+          1,
+          3
+        ],
+        [
+          "",
+          "$f_{2}$",
+          "$a$",
+          "$1.98 \\times 10^{-9}$",
+          "$3.40 \\times 10^{3}$",
+          "$3.51 \\times 10^{-10}$",
+          "$6.21 \\times 10^{2}$",
+          "$4.81 \\times 10^{-9}$",
+          "$3.22 \\times 10^{-14}$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          "$2.23 \\times 10^{-9}$",
+          "$9.65 \\times 10^{3}$",
+          "$2.91 \\times 10^{-10}$",
+          "$1.52 \\times 10^{2}$",
+          "$4.00 \\times 10^{-9}$",
+          "$2.86 \\times 10^{-14}$"
+        ],
+        [
+          "",
+          "",
+          "$r$",
+          3,
+          6,
+          2,
+          5,
+          4,
+          1
+        ],
+        [
+          "",
+          "$f_{3}$",
+          "$a$",
+          "$2.46 \\times 10^{-5}$",
+          "$5.22 \\times 10^{3}$",
+          "$1.40 \\times 10^{-6}$",
+          "$6.29 \\times 10^{3}$",
+          "$1.39 \\times 10^{-2}$",
+          "$2.69 \\times 10^{4}$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          "$4.56 \\times 10^{-5}$",
+          "$1.53 \\times 10^{2}$",
+          "$5.21 \\times 10^{-6}$",
+          "$1.38 \\times 10^{3}$",
+          "$1.38 \\times 10^{-2}$",
+          "$8.53 \\times 10^{2}$"
+        ],
+        [
+          "",
+          "",
+          "$r$",
+          2,
+          4,
+          1,
+          5,
+          3,
+          6
+        ],
+        [
+          "",
+          "$f_{4}$",
+          "$a$",
+          "$4.74 \\times 10^{-5}$",
+          "$2.97 \\times 10^{3}$",
+          "$3.46 \\times 10^{-8}$",
+          "$5.14 \\times 10^{0}$",
+          "$2.87 \\times 10^{0}$",
+          "$5.12 \\times 10^{-14}$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          "$1.03 \\times 10^{-4}$",
+          "$3.82 \\times 10^{3}$",
+          "$9.21 \\times 10^{-8}$",
+          "$4.62 \\times 10^{0}$",
+          "$1.98 \\times 10^{0}$",
+          "$1.73 \\times 10^{-14}$"
+        ],
+        [
+          "",
+          "",
+          "$r$",
+          3,
+          6,
+          2,
+          5,
+          4,
+          1
+        ],
+        [
+          "",
+          "$f_{5}$",
+          "$a$",
+          "$-12569.5$",
+          "$-12569.3$",
+          "$-6.03 \\times 10^{3}$",
+          "$-12557.6$",
+          "$-8290.5$",
+          "$-9555.6$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          "$1.82 \\times 10^{-12}$",
+          "$6.75 \\times 10^{-2}$",
+          "$1.11 \\times 10^{3}$",
+          "$3.55 \\times 10^{1}$",
+          "$8.32 \\times 10^{2}$",
+          "$4.40 \\times 10^{2}$"
+        ],
+        [
+          "",
+          "",
+          "$r$",
+          1,
+          2,
+          6,
+          3,
+          5,
+          4
+        ],
+        [
+          "",
+          "$f_{6}$",
+          "$a$",
+          0,
+          "$2.72 \\times 10^{-1}$",
+          "$1.85 \\times 10^{2}$",
+          "$3.69 \\times 10^{-13}$",
+          "$1.28 \\times 10^{2}$",
+          "$2.81 \\times 10^{2}$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          0,
+          "$1.79 \\times 10^{-1}$",
+          "$9.27 \\times 10^{0}$",
+          "$3.55 \\times 10^{-13}$",
+          "$2.08 \\times 10^{1}$",
+          "$3.27 \\times 10^{1}$"
+        ],
+        [
+          "",
+          "",
+          "$r$",
+          1,
+          3,
+          5,
+          2,
+          4,
+          6
+        ],
+        [
+          "",
+          "$f_{7}$",
+          "$a$",
+          "$3.51 \\times 10^{2}$",
+          "$5.46 \\times 10^{2}$",
+          "$6.79 \\times 10^{2}$",
+          "$2.53 \\times 10^{2}$",
+          "$4.95 \\times 10^{2}$",
+          "$6.88 \\times 10^{1}$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          "$3.06 \\times 10^{1}$",
+          "$1.11 \\times 10^{2}$",
+          "$1.61 \\times 10^{1}$",
+          "$5.29 \\times 10^{1}$",
+          "$5.98 \\times 10^{1}$",
+          "$2.44 \\times 10^{1}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          3,
+          5,
+          6,
+          2,
+          4,
+          1
+        ],
+        [
+          "",
+          "$f_{8}$",
+          "$a$",
+          0,
+          "$4.69 \\times 10^{-1}$",
+          "$1.52 \\times 10^{-14}$",
+          "$5.68 \\times 10^{-14}$",
+          0,
+          "$2.47 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          0,
+          "$1.67 \\times 10^{-1}$",
+          "$2.51 \\times 10^{-14}$",
+          0,
+          0,
+          0
+        ],
+        [
+          "",
+          "",
+          "$r$",
+          1,
+          6,
+          3,
+          4,
+          1,
+          5
+        ],
+        [
+          "",
+          "$f_{9}$",
+          "$a$",
+          "$5.68 \\times 10^{-14}$",
+          "$1.99 \\times 10^{-1}$",
+          "$1.06 \\times 10^{-13}$",
+          "$1.27 \\times 10^{-13}$",
+          "$6.06 \\times 10^{-14}$",
+          "$1.63 \\times 10^{1}$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          0,
+          "$7.99 \\times 10^{-2}$",
+          "$1.93 \\times 10^{-14}$",
+          "$2.40 \\times 10^{-14}$",
+          "$1.42 \\times 10^{-14}$",
+          "$7.41 \\times 10^{0}$"
+        ],
+        [
+          "",
+          "",
+          "$r$",
+          1,
+          5,
+          3,
+          4,
+          2,
+          6
+        ],
+        [
+          "",
+          "$f_{10}$",
+          "$a$",
+          "$4.13 \\times 10^{1}$",
+          "$1.58 \\times 10^{2}$",
+          "$1.90 \\times 10^{2}$",
+          "$1.03 \\times 10^{2}$",
+          "$1.78 \\times 10^{2}$",
+          "$5.13 \\times 10^{2}$"
+        ],
+        [
+          "",
+          "",
+          "$s$",
+          "$1.13 \\times 10^{1}$",
+          "$7.51 \\times 10^{1}$",
+          "$8.08 \\times 10^{0}$",
+          "$1.68 \\times 10^{1}$",
+          "$9.69 \\times 10^{1}$",
+          "$2.36 \\times 10^{2}$"
+        ],
+        [
+          "",
+          "",
+          "$r$",
+          1,
+          3,
+          5,
+          2,
+          4,
+          6
+        ],
+        [
+          "Total",
+          "$r$",
+          "",
+          17,
+          46,
+          37,
+          37,
+          32,
+          39
+        ],
+        [
+          "Average",
+          "$r$",
+          "",
+          1.7,
+          4.6,
+          3.7,
+          3.7,
+          3.2,
+          3.9
+        ]
+      ],
+      "row_count": 32,
+      "column_count": 9
+    }
+  ]
+}

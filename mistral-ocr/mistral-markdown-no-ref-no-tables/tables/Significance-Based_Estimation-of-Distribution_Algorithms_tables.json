@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Significance-based Estimation-of-Distribution Algorithms.md",
+    "filename": "Significance-based Estimation-of-Distribution Algorithms.md",
+    "title": "Significance-based Estimation-of-Distribution Algorithms",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Expected run times (number of fitness evaluations) of various algorithms until they first find an optimum for the two functions OneMax and LeadingOnes (eq. (1)). For optimal parameter settings, many algorithms have a run time of $\\Theta(n \\log n)$ for OneMax and of $\\Theta\\left(n^{2}\\right)$ for LeadingOnes. We note that the $(1+(\\lambda, \\lambda))$ GA has an $o(n \\log n)$ run time on OneMax (and even linear run time with a dynamic parameter choice), but we do not see why it should have a performance better than quadratic on LeadingOnes. Further, we strongly believe that the CSA has an exponential run time on OneMax.",
+      "headers": [
+        "Algorithm",
+        "OneMax",
+        "constraints",
+        "LeadingOnes",
+        "constraints"
+      ],
+      "rows": [
+        [
+          "$(1+1)$ EA",
+          "$\\Theta(n \\log n)[9]$",
+          "none",
+          "$\\Theta\\left(n^{2}\\right)[9]$",
+          "none"
+        ],
+        [
+          "$(\\mu+1)$ EA",
+          "$\\Theta(\\mu n+n \\log n)[24]$",
+          "$\\mu=O(\\operatorname{poly}(n))$",
+          24,
+          "$\\mu=O(\\operatorname{poly}(n))$"
+        ],
+        [
+          "$(1+\\lambda)$ EA",
+          "$\\Theta\\left(n \\log n+\\frac{\\lambda n \\log \\log \\lambda}{\\log \\lambda}\\right)[6,14]$",
+          "$\\lambda=O\\left(n^{1-\\varepsilon}\\right)$",
+          14,
+          "$\\lambda=O(\\operatorname{poly}(n))$"
+        ],
+        [
+          "$(1+(\\lambda, \\lambda))$ GA",
+          5,
+          "$p=\\frac{\\lambda}{n}, \\varepsilon=\\frac{1}{\\lambda}$",
+          "unknown",
+          "$-$"
+        ],
+        [
+          "CSA",
+          "unknown",
+          "$-$",
+          "$O(n \\log n)[18]$",
+          "$\\mu \\geq 8 \\ln ((4 n+6) n)$, restarts"
+        ],
+        [
+          "UMDA/PBIL ${ }^{1}$",
+          "$\\begin{aligned} & \\Omega(\\lambda \\sqrt{n}+n \\log n)[15] \\\\ & O(\\lambda n)[16,25] \\end{aligned}$",
+          "$\\begin{aligned} & \\mu=\\Theta(\\lambda) \\\\ & \\mu=\\Omega(\\log n) \\cap O(\\sqrt{n}), \\lambda=\\Omega(\\mu) \\\\ & \\text { or } \\mu=\\Omega(\\sqrt{n} \\log n), \\mu=\\Theta(\\lambda) \\text { or } \\\\ & \\mu=\\Omega(\\log n) \\cap o(n), \\mu=\\Theta(\\lambda) \\end{aligned}$",
+          3,
+          "$\\lambda=\\Omega(\\log n), \\mu=\\Theta(\\lambda)$"
+        ],
+        [
+          "$\\operatorname{cGA} / 2-\\mathrm{MMAS}_{\\mathrm{lb}}$",
+          "$\\begin{aligned} & \\Omega\\left(\\frac{\\sqrt{n}}{\\rho}+n \\log n\\right)[23] \\\\ & O\\left(\\frac{\\sqrt{n}}{\\rho}\\right)[23] \\end{aligned}$",
+          "$\\frac{1}{\\rho}=O(\\operatorname{poly}(n))$",
+          "unknown",
+          "$-$"
+        ],
+        [
+          "1-ANT",
+          "$\\Theta(n \\log n)[19]$",
+          "$\\rho=\\Theta(1)$",
+          "$\\begin{aligned} & O\\left(n^{2} \\cdot 2^{5 /(n \\rho)}\\right)[7] \\\\ & 2^{O(\\min (n, 1 /(n \\rho))]} \\end{aligned}$",
+          "none"
+        ],
+        [
+          0.2,
+          "$\\begin{aligned} & \\Omega\\left(\\min \\left\\{2^{\\Theta(n)}, 2^{\\varepsilon / \\rho}\\right\\}\\right) \\\\ & {[\\text { Thm. 4.1] }} \\end{aligned}$",
+          "$\\begin{aligned} & 1 / \\rho=\\Omega(\\log n), a=\\Theta(\\rho), \\\\ & d=\\Theta(1), \\varepsilon>0 \\end{aligned}$",
+          "$O(n \\log n)[11]$",
+          "$\\begin{aligned} & 1 / \\rho=\\Theta(\\log n), a= \\\\ & O(\\rho), d=\\Theta(1) \\end{aligned}$"
+        ],
+        [
+          -0.1,
+          "$O(n \\log n)$ [Thm. 3.6]",
+          "$\\varepsilon>12$",
+          "$O(n \\log n)$ [Thm. 3.4]",
+          "$\\varepsilon>12$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/Fast single individual haplotyping method using GPGPU.md",
+    "filename": "Fast single individual haplotyping method using GPGPU.md",
+    "title": "Fast single individual haplotyping method using GPGPU",
+    "year": "2019"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] E.E. Schadt, M.D. Linderman, J. Sorenson, L. Lee, G.P. Nolan, Computational solutions to large-scale data management and analysis, Nat. Rev. Genet. 11 (2010) 647-657.\n[2] Z. Yin, H. Lan, G. Tan, M. Lu, A.V. Vasilakos, W. Liu, Computing platforms for big biological data analytics: perspectives and challenges, Comput. Struct. Biotechnol. J. 15 (2017) 403-411.\n[3] A.R. Brodtkorb, T.R. Hagen, M.L. Saetra, Graphics processing unit (GPU) programming strategies and trends in GPU computing, J. Parallel Distrib. Comput. 73 (2013) 4-13.\n[4] M.S. Nobile, P. Cazzaniga, A. Tangherloni, D. Bossuzi, Graphics processing units in bioinformatics, computational biology and systems biology, Briefings Bioinf. 18 (2017) 870-885.\n[5] J. Nickolls, I. Buck, M. Garland, K. Skadron, Scalable parallel programming with CUDA, Quesar 6 (2008) 40-53.\n[6] P. Klus, S. Lam, D. Lyberg, M.S. Cheung, G. Pullan, I. McFarlane, G. Yeo, B.Y. Lam, BarraCUDA - a fast short read sequence aligner using graphics processing units, BMC Res. Notes 5 (2012) 27.\n[7] S. Warris, F. Yalcin, K.J. Jackson, J.P. Nap, Flexible, fast and accurate sequence alignment profiling on GPGPU with PaSWAS, PLoS One 10 (2015), e0122524.\n[8] J.C. Na, J.C. Lee, J.K. Rhee, S.Y. Shin, PEATH: single-individual haplotyping by a probabilistic evolutionary algorithm with toggling, Bioinformatics 34 (2018) 1801-1807.\n[9] S.M. Poulding, J.P. Staunton, N.J. Burles, Full Implementation of an Estimation of Distribution Algorithm on a GPU, GECCO 2011, GPUs for Genetic and Evolutionary Computation Competition, 2011.\n[10] M. Essaid, L. Idounghar, J. Lepagnot, M. Brévilliers, GPU parallelization strategies for metahearititics: a survey, Int. J. Parallel, Emergent Distributed Syst. (2018) 1-26.\n[11] J. Duhamn, G.K. McEwen, T. Huetech, S. Palczewski, S. Schulz, K. Vorstrepen, E.K. Suk, M.R. Hoehe, Foamid-based whole genome haplotyping of a HapMap trio child: evaluation of Single Individual Haplotyping techniques, Nucleic Acids Res. 40 (2012) 2041-2053.\n[12] S. Levy, G. Sutton, P.C. Ng, L. Feuk, A.L. Halpern, B.P. Walenz, N. Axelrod, J. Huang, E.F. Kirkness, G. Denisov, Y. Lin, J.R. MacDonald, A.W. Pang, M. Shago, T.R. Stockwell, A. Taimouri, V. Batha, V. Bansal, S.A. Kravitz, D.A. Busam, K.Y. Beeson, T.C. McIntosh, K.A. Remington, J.F. Abril, J. Gill, J. Borman, Y. H. Rogers, M.E. Frazier, S.W. Scherer, R.L. Strausberg, J.C. Venter, The diploid genome sequence of an individual human, PLoS Biol. 5 (2007), e254.\n[13] S. Che, M. Boyer, J. Meng, D. Tarjan, J.W. Sheaffer, K. Skadron, A performance study of general-purpose applications on graphics processors using CUDA, J. Parallel Distrib. Comput. 68 (2008) 1370-1380.\n\n[14] P. Harish, P.J. Narayanan, Accelerating large graph algorithms on the GPU using CUDA, in: Proceedings of the 14th International Conference on High Performance Computing, Springer-Verlag, Goa, India, 2007, pp. 197-208.\n[15] Y. Tan, K. Ding, A survey on GPU-based implementation of swarm intelligence algorithms, IEEE Trans. Cybern. 46 (2016) 2028-2041.\n[16] P. Pospichal, J. Jaros, J. Schwarz, Parallel Genetic Algorithm on the CUDA Architecture, Springer Berlin Heidelberg, Berlin, Heidelberg, 2010, pp. 442-451.\n[17] T.V. Luong, N. Melah, E.G. Talbi, Parallel Hybrid Evolutionary Algorithms on GPU, IEEE Congress on Evolutionary Computation, 2010, pp. 1-8.\n[18] I. Kuon, R. Tessier, J. Rose, FPGA architecture: survey and challenges, Found. Trends® Electron. Des. Autom. 2 (2008) 135-253.\n[19] S.M. Qasim, S.A. Abbasi, B. Almashary, A Review of FPGA-Based Design Methodology and Optimization Techniques for Efficient Hardware Realization of Computation Intensive Algorithms, 2009 International Multimedia, Signal Processing and Communication Technologies, 2009, pp. 313-316.\n[20] J. Kok, L.F. Gonzalez, N. Kelson, FPGA implementation of an evolutionary algorithm for autonomous unmanned aerial vehicle on-board path planning, IEEE Trans. Evol. Comput. 17 (2013) 272-281.\n[21] A. Brocciali, M. Aldinucci, M. Patterson, T. Marschall, N. Pisanti, I. Merelli, M. Torquati, PWHATSHAP: efficient haplotyping for future generation sequencing, BMC Bioinf. 17 (2016) 342.\n[22] A. Tangherloni, L. Rundo, S. Spolaor, M.S. Nobile, I. Merelli, D. Besozzi, G. Mauri, P. Cazzaniga, P. Lió, High Performance Computing for Haplotyping: Models and Platforms, Springer International Publishing, Cham, 2019, pp. 650-661.\n[23] A. Tangherloni, S. Spolaor, L. Rundo, M.S. Nobile, P. Cazzaniga, G. Mauri, P. Lió, I. Merelli, D. Besozzi, GenHap: a novel computational method based on genetic algorithms for haplotype assembly, BMC Bioinf. 20 (2019) 172.\n[24] M. Patterson, T. Marschall, N. Pisanti, L. van Iersel, L. Stougie, G.W. Klau, A. Schonhuth, WhatsHap: weighted haplotype Assembly for future-generation sequencing reads, J. Comput. Biol. 22 (2015) 498-509.\n[25] N. Kathiresan, R. Temanni, H. Almabrazi, N. Syed, P.V. Jithesh, R. Al-Ali, Accelerating next generation sequencing data analysis with system level optimizations, Sci. Rep. 7 (2017) 9058.\n[26] Y. Liu, B. Schmidt, D.L. Maskell, CUSHAW: a CUDA compatible short read aligner to large genomes based on the Burrows-Wheeler transform, Bioinformatics 28 (2012) 1830-1837.\n[27] A. Manzoni, M. Moscatelli, G. Armano, M. Gnocchi, A. Oreo, L. Milanesi, Removing duplicate reads using graphics processing units, BMC Bioinf. 17 (2016) 346.\n[28] G. Peng, Y. Fan, W. Wang, FamSeq: a variant calling program for family-based sequencing data using graphics processing units, PLoS Comput. Biol. 10 (2014), e1003880.\n[29] S. Roy, C. Coldren, A. Karunamurthy, N.S. Kip, E.W. Klee, S.E. Lincoln, A. Leon, M. Pollambhatla, R.L. Temple-Smolkin, K.V. Voelkerding, C. Wang, A.B. Carter, Standards and guidelines for validating next-generation sequencing bioinformatics pipelines: a joint recommendation of the association for molecular pathology and the college of American pathologists, J. Mol. Diagn. 20 (2018) 4-27.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "E.E. Schadt, M.D. Linderman, J. Sorenson, L. Lee, G.P. Nolan, Computational solutions to large-scale data management and analysis, Nat. Rev. Genet. 11 (2010) 647-657."
+      },
+      {
+        "ref_id": "2",
+        "text": "Z. Yin, H. Lan, G. Tan, M. Lu, A.V. Vasilakos, W. Liu, Computing platforms for big biological data analytics: perspectives and challenges, Comput. Struct. Biotechnol. J. 15 (2017) 403-411."
+      },
+      {
+        "ref_id": "3",
+        "text": "A.R. Brodtkorb, T.R. Hagen, M.L. Saetra, Graphics processing unit (GPU) programming strategies and trends in GPU computing, J. Parallel Distrib. Comput. 73 (2013) 4-13."
+      },
+      {
+        "ref_id": "4",
+        "text": "M.S. Nobile, P. Cazzaniga, A. Tangherloni, D. Bossuzi, Graphics processing units in bioinformatics, computational biology and systems biology, Briefings Bioinf. 18 (2017) 870-885."
+      },
+      {
+        "ref_id": "5",
+        "text": "J. Nickolls, I. Buck, M. Garland, K. Skadron, Scalable parallel programming with CUDA, Quesar 6 (2008) 40-53."
+      },
+      {
+        "ref_id": "6",
+        "text": "P. Klus, S. Lam, D. Lyberg, M.S. Cheung, G. Pullan, I. McFarlane, G. Yeo, B.Y. Lam, BarraCUDA - a fast short read sequence aligner using graphics processing units, BMC Res. Notes 5 (2012) 27."
+      },
+      {
+        "ref_id": "7",
+        "text": "S. Warris, F. Yalcin, K.J. Jackson, J.P. Nap, Flexible, fast and accurate sequence alignment profiling on GPGPU with PaSWAS, PLoS One 10 (2015), e0122524."
+      },
+      {
+        "ref_id": "8",
+        "text": "J.C. Na, J.C. Lee, J.K. Rhee, S.Y. Shin, PEATH: single-individual haplotyping by a probabilistic evolutionary algorithm with toggling, Bioinformatics 34 (2018) 1801-1807."
+      },
+      {
+        "ref_id": "9",
+        "text": "S.M. Poulding, J.P. Staunton, N.J. Burles, Full Implementation of an Estimation of Distribution Algorithm on a GPU, GECCO 2011, GPUs for Genetic and Evolutionary Computation Competition, 2011."
+      },
+      {
+        "ref_id": "10",
+        "text": "M. Essaid, L. Idounghar, J. Lepagnot, M. Brévilliers, GPU parallelization strategies for metahearititics: a survey, Int. J. Parallel, Emergent Distributed Syst. (2018) 1-26."
+      },
+      {
+        "ref_id": "11",
+        "text": "J. Duhamn, G.K. McEwen, T. Huetech, S. Palczewski, S. Schulz, K. Vorstrepen, E.K. Suk, M.R. Hoehe, Foamid-based whole genome haplotyping of a HapMap trio child: evaluation of Single Individual Haplotyping techniques, Nucleic Acids Res. 40 (2012) 2041-2053."
+      },
+      {
+        "ref_id": "12",
+        "text": "S. Levy, G. Sutton, P.C. Ng, L. Feuk, A.L. Halpern, B.P. Walenz, N. Axelrod, J. Huang, E.F. Kirkness, G. Denisov, Y. Lin, J.R. MacDonald, A.W. Pang, M. Shago, T.R. Stockwell, A. Taimouri, V. Batha, V. Bansal, S.A. Kravitz, D.A. Busam, K.Y. Beeson, T.C. McIntosh, K.A. Remington, J.F. Abril, J. Gill, J. Borman, Y. H. Rogers, M.E. Frazier, S.W. Scherer, R.L. Strausberg, J.C. Venter, The diploid genome sequence of an individual human, PLoS Biol. 5 (2007), e254."
+      },
+      {
+        "ref_id": "13",
+        "text": "S. Che, M. Boyer, J. Meng, D. Tarjan, J.W. Sheaffer, K. Skadron, A performance study of general-purpose applications on graphics processors using CUDA, J. Parallel Distrib. Comput. 68 (2008) 1370-1380."
+      },
+      {
+        "ref_id": "14",
+        "text": "P. Harish, P.J. Narayanan, Accelerating large graph algorithms on the GPU using CUDA, in: Proceedings of the 14th International Conference on High Performance Computing, Springer-Verlag, Goa, India, 2007, pp. 197-208."
+      },
+      {
+        "ref_id": "15",
+        "text": "Y. Tan, K. Ding, A survey on GPU-based implementation of swarm intelligence algorithms, IEEE Trans. Cybern. 46 (2016) 2028-2041."
+      },
+      {
+        "ref_id": "16",
+        "text": "P. Pospichal, J. Jaros, J. Schwarz, Parallel Genetic Algorithm on the CUDA Architecture, Springer Berlin Heidelberg, Berlin, Heidelberg, 2010, pp. 442-451."
+      },
+      {
+        "ref_id": "17",
+        "text": "T.V. Luong, N. Melah, E.G. Talbi, Parallel Hybrid Evolutionary Algorithms on GPU, IEEE Congress on Evolutionary Computation, 2010, pp. 1-8."
+      },
+      {
+        "ref_id": "18",
+        "text": "I. Kuon, R. Tessier, J. Rose, FPGA architecture: survey and challenges, Found. Trends® Electron. Des. Autom. 2 (2008) 135-253."
+      },
+      {
+        "ref_id": "19",
+        "text": "S.M. Qasim, S.A. Abbasi, B. Almashary, A Review of FPGA-Based Design Methodology and Optimization Techniques for Efficient Hardware Realization of Computation Intensive Algorithms, 2009 International Multimedia, Signal Processing and Communication Technologies, 2009, pp. 313-316."
+      },
+      {
+        "ref_id": "20",
+        "text": "J. Kok, L.F. Gonzalez, N. Kelson, FPGA implementation of an evolutionary algorithm for autonomous unmanned aerial vehicle on-board path planning, IEEE Trans. Evol. Comput. 17 (2013) 272-281."
+      },
+      {
+        "ref_id": "21",
+        "text": "A. Brocciali, M. Aldinucci, M. Patterson, T. Marschall, N. Pisanti, I. Merelli, M. Torquati, PWHATSHAP: efficient haplotyping for future generation sequencing, BMC Bioinf. 17 (2016) 342."
+      },
+      {
+        "ref_id": "22",
+        "text": "A. Tangherloni, L. Rundo, S. Spolaor, M.S. Nobile, I. Merelli, D. Besozzi, G. Mauri, P. Cazzaniga, P. Lió, High Performance Computing for Haplotyping: Models and Platforms, Springer International Publishing, Cham, 2019, pp. 650-661."
+      },
+      {
+        "ref_id": "23",
+        "text": "A. Tangherloni, S. Spolaor, L. Rundo, M.S. Nobile, P. Cazzaniga, G. Mauri, P. Lió, I. Merelli, D. Besozzi, GenHap: a novel computational method based on genetic algorithms for haplotype assembly, BMC Bioinf. 20 (2019) 172."
+      },
+      {
+        "ref_id": "24",
+        "text": "M. Patterson, T. Marschall, N. Pisanti, L. van Iersel, L. Stougie, G.W. Klau, A. Schonhuth, WhatsHap: weighted haplotype Assembly for future-generation sequencing reads, J. Comput. Biol. 22 (2015) 498-509."
+      },
+      {
+        "ref_id": "25",
+        "text": "N. Kathiresan, R. Temanni, H. Almabrazi, N. Syed, P.V. Jithesh, R. Al-Ali, Accelerating next generation sequencing data analysis with system level optimizations, Sci. Rep. 7 (2017) 9058."
+      },
+      {
+        "ref_id": "26",
+        "text": "Y. Liu, B. Schmidt, D.L. Maskell, CUSHAW: a CUDA compatible short read aligner to large genomes based on the Burrows-Wheeler transform, Bioinformatics 28 (2012) 1830-1837."
+      },
+      {
+        "ref_id": "27",
+        "text": "A. Manzoni, M. Moscatelli, G. Armano, M. Gnocchi, A. Oreo, L. Milanesi, Removing duplicate reads using graphics processing units, BMC Bioinf. 17 (2016) 346."
+      },
+      {
+        "ref_id": "28",
+        "text": "G. Peng, Y. Fan, W. Wang, FamSeq: a variant calling program for family-based sequencing data using graphics processing units, PLoS Comput. Biol. 10 (2014), e1003880."
+      },
+      {
+        "ref_id": "29",
+        "text": "S. Roy, C. Coldren, A. Karunamurthy, N.S. Kip, E.W. Klee, S.E. Lincoln, A. Leon, M. Pollambhatla, R.L. Temple-Smolkin, K.V. Voelkerding, C. Wang, A.B. Carter, Standards and guidelines for validating next-generation sequencing bioinformatics pipelines: a joint recommendation of the association for molecular pathology and the college of American pathologists, J. Mol. Diagn. 20 (2018) 4-27."
+      }
+    ],
+    "reference_count": 29,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "5",
+      "table_title": "Running time of original PEATH and PEATH/G-64 for the fosmid dataset.",
+      "headers": [
+        "GPGPU",
+        "Running time (s)"
+      ],
+      "rows": [
+        [
+          "CPU i9-9980XE",
+          5107.92
+        ],
+        [
+          "CPU i9-9980XE (using 20 threads)",
+          1730.895
+        ],
+        [
+          950,
+          385.624
+        ],
+        [
+          1050,
+          337.721
+        ],
+        [
+          1660,
+          109.282
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "6",
+      "table_title": "Running time of original PEATH and PEATH/G-128 for the HuRef dataset.",
+      "headers": [
+        "GPGPU",
+        "Running time (s)"
+      ],
+      "rows": [
+        [
+          "CPU i9-9980XE",
+          16941.53
+        ],
+        [
+          950,
+          3533.565
+        ],
+        [
+          1050,
+          3243.925
+        ],
+        [
+          1660,
+          667.362
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    }
+  ]
+}

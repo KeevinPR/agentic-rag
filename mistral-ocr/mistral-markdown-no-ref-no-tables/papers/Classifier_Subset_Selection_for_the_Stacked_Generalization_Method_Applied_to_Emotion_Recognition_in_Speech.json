@@ -1,0 +1,4301 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Classifier Subset Selection for the Stacked Generalization Method Applied to Emotion Recognition in Speech.md",
+    "filename": "Classifier Subset Selection for the Stacked Generalization Method Applied to Emotion Recognition in Speech.md",
+    "title": "Classifier Subset Selection for the Stacked Generalization Method Applied to Emotion Recognition in Speech",
+    "year": "2016"
+  },
+  "references": {
+    "header": "# References",
+    "content": "1. Albert, M. Silent Messages; Wadsworth: Belmont, CA, USA, 1971.\n2. Lang, P.J. The emotion probe: Studies of motivation and attention. Am. Psychol. 1995, 50, 372.\n3. Schuller, B.; Batliner, A.; Steidl, S.; Seppi, D. Recognising realistic emotions and affect in speech: State of the art and lessons learnt from the first challenge. Speech Commun. 2011, 53, 1062-1087.\n4. Scherer, K.R. Vocal communication of emotion: A review of research paradigms. Speech Commun. 2003, $40,227-256$.\n5. Scherer, K.R.; Johnstone, T.; Klasmeyer, G. Vocal expression of emotion. In Handbook of Affective Sciences; Oxford University Press: London, UK, 2003; pp. 433-456.\n6. Ekman, P.; Friesen, W.V.; Press, C.P. Pictures of Facial Affect; Consulting Psychologists Press: Palo Alto, CA, USA, 1975.\n7. Lefter, I.; Burghouts, G.B.; Rothkrantz, L.J. Recognizing stress using semantics and modulation of speech and gestures. IEEE Trans. Affect. Comput. 2015, in press.\n8. Eyben, F.; Scherer, K.; Schuller, B.; Sundberg, J.; André, E.; Busso, C.; Devillers, L.; Epps, J.; Laukka, P.; Narayanan, S.; et al. The Geneva minimalistic acoustic parameter set (GeMAPS) for voice research and affective computing. IEEE Trans. Affect. Comput. 2015, in press.\n9. Schuller, B.; Steidl, S.; Batliner, A.; Burkhardt, F.; Devillers, L.; Müller, C.; Narayanan, S. Paralinguistics in speech and language-State-of-the-art and the challenge. Comput. Speech Lang. 2013, 27, 4-39.\n10. Cowie, R.; Douglas-Cowie, E.; Tsapatsoulis, N.; Votsis, G.; Kollias, S.; Fellenz, W.; Taylor, J.G. Emotion recognition in human-computer interaction. IEEE Signal Process. Mag. 2001, 18, 32-80.\n\n11. López, J.M.; Cearreta, I.; Garay-Vitoria, N.; de Ipiña, K.L.; Beristain, A. A methodological approach for building multimodal acted affective databases. In Engineering the User Interface; Springer: London, UK, 2009; pp. 1-17.\n12. Burkhardt, F.; Paeschke, A.; Rolfes, M.; Sendlmeier, W.; Weiss, B. A database of German emotional speech. In Proceedings of the Interspeech 2005, Lissabon, Portugal, 4-8 September 2005; pp. 1517-1520.\n13. Sundberg, J.; Patel, S.; Bjorkner, E.; Scherer, K.R. Interdependencies among voice source parameters in emotional speech. IEEE Trans. Affect. Comput. 2011, 2, 162-174.\n14. Ntalampiras, S.; Fakotakis, N. Modeling the temporal evolution of acoustic parameters for speech emotion recognition. IEEE Trans. Affect. Comput. 2012, 3, 116-125.\n15. Wu, S.; Falk, T.H.; Chan, W.Y. Automatic speech emotion recognition using modulation spectral features. Speech Commun. 2011, 53, 768-785.\n16. Wang, K.C. Time-Frequency Feature Representation Using Multi-Resolution Texture Analysis and Acoustic Activity Detector for Real-Life Speech Emotion Recognition. Sensors 2015, 15, 1458-1478.\n17. Douglas-Cowie, E.; Campbell, N.; Cowie, R.; Roach, P. Emotional speech: Towards a new generation of databases. Speech Commun. 2003, 40, 33-60.\n18. El Ayadi, M.; Kamel, M.S.; Karray, F. Survey on speech emotion recognition: Features, classification schemes, and databases. Pattern Recognit. 2011, 44, 572-587.\n19. Ververidis, D.; Kotropoulos, C. Emotional speech recognition: Resources, features, and methods. Speech Commun. 2006, 48, 1162-1181.\n20. Navas, E.; Hernáez, I.; Castelruiz, A.; Luengo, I. Obtaining and evaluating an emotional database for prosody modelling in standard Basque. In Text, Speech and Dialogue; Springer: Berlin/Heidelberg, Germany, 2004; pp. 393-400.\n21. Iriondo, I.; Guaus, R.; Rodríguez, A.; Lázaro, P.; Montoya, N.; Blanco, J.M.; Bernadas, D.; Oliver, J.M.; Tena, D.; Longhi, L. Validation of an acoustical modelling of emotional expression in Spanish using speech synthesis techniques. In Proceedings of the ISCA Tutorial and Research Workshop (ITRW) on Speech and Emotion, Newcastle, Northern Ireland, UK, 5-7 September 2000.\n22. Caballero-Morales, S.O. Recognition of emotions in Mexican Spanish speech: An approach based on acoustic modelling of emotion-specific vowels. Sci. World J. 2013, 2013, 162093.\n23. Sobol-Shikler, T.; Robinson, P. Classification of complex information: Inference of co-occurring affective states from their expressions in speech. IEEE Trans. Pattern Anal. Mach. Intell. 2010, 32, 1284-1297.\n24. Schuller, B.; Reiter, S.; Muller, R.; Al-Hames, M.; Lang, M.; Rigoll, G. Speaker independent speech emotion recognition by ensemble classification. In Proceedings of the IEEE International Conference on Multimedia and Expo (ICME 2005), Amsterdam, The Netherland, 6 July 2005; pp. 864-867.\n25. Lee, C.C.; Mower, E.; Busso, C.; Lee, S.; Narayanan, S. Emotion recognition using a hierarchical binary decision tree approach. Speech Commun. 2011, 53, 1162-1171.\n26. Pan, Y.; Shen, P.; Shen, L. Speech emotion recognition using support vector machine. Int. J. Smart Home 2012, 6, 101-107.\n27. Batliner, A.; Fischer, K.; Huber, R.; Spilker, J.; Nöth, E. Desperately seeking emotions or: Actors, wizards, and human beings. In Proceedings of the ISCA Tutorial and Research Workshop (ITRW) on Speech and Emotion, Newcastle, Northern Ireland, UK, 5-7 September 2000.\n28. Nwe, T.L.; Foo, S.W.; De Silva, L.C. Speech emotion recognition using hidden Markov models. Speech Commun. 2003, 41, 603-623.\n29. Shahin, I. Speaker identification in emotional talking environments based on CSPHMM2s. Eng. Appl. Artif. Intell. 2013, 26, 1652-1659.\n30. Pfister, T.; Robinson, P. Real-time recognition of affective states from nonverbal features of speech and its application for public speaking skill analysis. IEEE Trans. Affect. Comput. 2011, 2, 66-78.\n31. Alhamdoosh, M.; Wang, D. Fast decorrelated neural network ensembles with random weights. Inf. Sci. 2014, 264, 104-117.\n32. Arruti, A.; Cearreta, I.; Álvarez, A.; Lazkano, E.; Sierra, B. Feature Selection for Speech Emotion Recognition in Spanish and Basque: On the Use of Machine Learning to Improve Human-Computer Interaction. PLoS ONE 2014, 9, e108975.\n33. Scherer, S.; Schwenker, F.; Palm, G. Classifier fusion for emotion recognition from speech. In Advanced Intelligent Environments; Springer: Berlin/Heidelberg, Germany, 2009; pp. 95-117.\n\n34. Chen, L.; Mao, X.; Xue, Y.; Cheng, L.L. Speech emotion recognition: Features and classification models. Digit. Signal Process. 2012, 22, 1154-1160.\n35. Attabi, Y.; Dumouchel, P. Anchor models for emotion recognition from speech. IEEE Trans. Affect. Comput. 2013, 4, 280-290.\n36. Morrison, D.; Wang, R.; de Silva, L.C. Ensemble methods for spoken emotion recognition in call-centres. Speech Commun. 2007, 49, 98-112.\n37. Huang, Y.; Zhang, G.; Xu, X. Speech Emotion Recognition Research Based on the Stacked Generalization Ensemble Neural Network for Robot Pet. In Proceedings of the Chinese Conference on Pattern Recognition, 2009, CCPR 2009, Nanjing, China, 4-6 November 2009; pp. 1-5.\n38. Wu, C.H.; Liang, W.B. Emotion recognition of affective speech based on multiple classifiers using acoustic-prosodic information and semantic labels. IEEE Trans. Affect. Comput. 2011, 2, 10-21.\n39. Kuang, Y.; Li, L. Speech emotion recognition of decision fusion based on DS evidence theory. In Proceedings of the 2013 4th IEEE International Conference on Software Engineering and Service Science (ICSESS), Beijing, China, 23-25 May 2013; pp. 795-798.\n40. Huang, D.Y.; Zhang, Z.; Ge, S.S. Speaker state classification based on fusion of asymmetric simple partial least squares (SIMPLS) and support vector machines. Comput. Speech Lang. 2014, 28, 392-419.\n41. López, J.M.; Cearreta, I.; Fajardo, I.; Garay, N. Validating a multilingual and multimodal affective database. In Usability and Internationalization. Global and Local User Interfaces; Springer: Berlin/Heidelberg, Germany, 2007; pp. 422-431.\n42. Álvarez, A.; Cearreta, I.; López, J.M.; Arruti, A.; Lazkano, E.; Sierra, B.; Garay, N. A comparison using different speech parameters in the automatic emotion recognition using Feature Subset Selection based on Evolutionary Algorithms. In Text, Speech and Dialogue; Springer: Berlin/ Heidelberg, Germany, 2007; pp. 423-430.\n43. Esparza, J.; Scherer, S.; Brechmann, A.; Schwenker, F. Automatic emotion classification vs. human perception: Comparing machine performance to the human benchmark. In Proceedings of the 2012 11th International Conference on Information Science, Signal Processing and their Applications (ISSPA), Montreal, QC, Canada, 2-5 July 2012; pp. 1253-1258.\n44. Ververidis, D.; Kotropoulos, C. Emotional speech classification using Gaussian mixture models and the sequential floating forward selection algorithm. In Proceedings of the IEEE International Conference on Multimedia and Expo, 2005, ICME 2005, Amsterdam, The Netherland, 6 July 2005; pp. 1500-1503.\n45. Hu, H.; Xu, M.X.; Wu, W. Fusion of global statistical and segmental spectral features for speech emotion recognition. In Proceedings of the INTERSPEECH, Antwerp, Belgium, 27-31 August 2007; pp. 2269-2272.\n46. Shami, M.T.; Kamel, M.S. Segment-based approach to the recognition of emotions in speech. In Proceedings of the IEEE International Conference on Multimedia and Expo, 2005, ICME 2005, Amsterdam, The Netherlands, 6-8 July 2005; pp. 366-369.\n47. Tato, R.; Santos, R.; Kompe, R.; Pardo, J.M. Emotional space improves emotion recognition. In Proceedings of the INTERSPEECH, Denver, CO, USA, 16-20 September 2002; pp. 2029-2032.\n48. Eyben, F.; Weninger, F.; Gross, F.; Schuller, B. Recent developments in opensmile, the munich open-source multimedia feature extractor. In Proceedings of the 21st ACM international conference on Multimedia, Barcelona, Catalunya, Spain, 21-25 October 2013; pp. 835-838.\n49. Mendialdua, I.; Arruti, A.; Jauregi, E.; Lazkano, E.; Sierra, B. Classifier Subset Selection to construct multi-classifiers by means of estimation of distribution algorithms. Neurocomputing 2015, 157, 46-60.\n50. Wolpert, D.H. Stacked generalization. Neural Netw. 1992, 5, 241-259.\n51. Sierra, B.; Serrano, N.; LarrañAga, P.; Plasencia, E.J.; Inza, I.; Jiménez, J.J.; Revuelta, P.; Mora, M.L. Using Bayesian networks in the construction of a bi-level multi-classifier. A case study using intensive care unit patients data. Artif. Intell. Med. 2001, 22, 233-248.\n52. Larrañaga, P.; Lozano, J.A. Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation; Springer Science \\& Business Media: New York, NY, USA, 2002; Volume 2.\n53. Inza, I.; Larrañaga, P.; Etxeberria, R.; Sierra, B. Feature subset selection by Bayesian network-based optimization. Artif. Intell. 2000, 123, 157-184.\n54. Etxeberria, R.; Larranaga, P. Global optimization using Bayesian networks. In Proceedings of the Second Symposium on Artificial Intelligence (CIMAF-99), Habana, Cuba, March 1999; pp. 332-339.\n\n55. Inza, I.; Larrañaga, P.; Sierra, B. Feature subset selection by Bayesian networks: A comparison with genetic and sequential algorithms. Int. J. Approx. Reason. 2001, 27, 143-164.\n56. Echegoyen, C.; Mendiburu, A.; Santana, R.; Lozano, J.A. Toward understanding EDAs based on Bayesian networks through a quantitative analysis. IEEE Trans. Evolut. Comput. 2012, 16, 173-189.\n57. Hall, M.; Frank, E.; Holmes, G.; Pfahringer, B.; Reutemann, P.; Witten, I.H. The WEKA data mining software: An update. ACM SIGKDD Explor. Newsl. 2009, 11, 10-18.\n58. Sierra, B.; Lazkano, E.; Jauregi, E.; Irigoien, I. Histogram distance-based Bayesian Network structure learning: A supervised classification specific approach. Decis. Support Syst. 2009, 48, 180-190.\n59. Quinlan, J.R. C4.5: Programs for Machine Learning; Elsevier: San Francisco, CA, USA, 1993.\n60. Aha, D.W.; Kibler, D.; Albert, M.K. Instance-based learning algorithms. Mach. Learn. 1991, 6, 37-66.\n61. Cleary, J.G.; Trigg, L.E. K*: An instance-based learner using an entropic distance measure. In Proceedings of the 12th International Conference on Machine Learning, Tahoe City, CA, USA, 9-12 July 1995; Volume 5, pp. 108-114.\n62. Kohavi, R. Scaling Up the Accuracy of Naive-Bayes Classifiers: A Decision-Tree Hybrid. In Proceedings of the Second International Conference on Knowledge Discovery and Data Mining, Portland, Oregon, 1996; pp. 202-207.\n63. Cestnik, B. Estimating probabilities: A crucial task in machine learning. In Proceedings of the 9th European Conference on Artificial Intelligence (ECAI-90), Stockholm, Sweden, 6 August 1990, Volume 90, pp. 147-149.\n64. Holte, R.C. Very simple classification rules perform well on most commonly used datasets. Mach. Learn. 1993, 11, 63-90.\n65. Cohen, W.W. Fast effective rule induction. In Proceedings of the Twelfth International Conference on Machine Learning, Tahoe City, CA, USA, 9-12 July 1995; pp. 115-123.\n66. Breiman, L. Random forests. Mach. Learn. 2001, 45, 5-32.\n67. Meyer, D.; Leisch, F.; Hornik, K. The support vector machine under test. Neurocomputing 2003, 55, 169-186.\n68. Rosenblatt, F. Principles of Neurodynamics: Perceptrons and the Theory of Brain Mechanisms; Spartan Books: Washington, DC, USA, 1961.\n69. Broomhead, D.; Lowe, D. Multivariable functional interpolation and adaptive networks. Complex Syst. 1988, 2, 321-355.\n70. Freedman, D.A. Statistical Models: Theory and Practice; Cambridge University Press: New York, NY, USA, 2009.\n71. Stone, M. Cross-validatory choice and assessment of statistical predictions. J. R. Stat. Soc. Ser. B Methodol. 1974, 36, 111-147.\n72. Buntine, W. Theory refinement on Bayesian networks. In Proceedings of the Seventh conference on Uncertainty in Artificial Intelligence, Los Angeles, CA, USA, 13-15 July 1991; pp. 52-60.\n73. García, S.; Fernández, A.; Luengo, J.; Herrera, F. Advanced nonparametric tests for multiple comparisons in the design of experiments in computational intelligence and data mining: Experimental analysis of power. Inf. Sci. 2010, 180, 2044-2064.\n74. Schwenker, F.; Scherer, S.; Magdi, Y.M.; Palm, G. The GMM-SVM supervector approach for the recognition of the emotional status from speech. In Artificial Neural Networks-ICANN 2009; Springer: Berlin/Heidelberg, Germany, 14-17 September 2009; pp. 894-903.\n75. Grimm, M.; Kroschel, K.; Narayanan, S. The Vera am Mittag German audio-visual emotional speech database. In Proceedings of the 2008 IEEE International Conference on Multimedia and Expo, Hannover, Germany, 23 June 2008.\n76. Batliner, A.; Steidl, S.; Nöth, E. Releasing a thoroughly annotated and processed spontaneous emotional database: The FAU Aibo Emotion Corpus. In Proceedings of the Satellite Workshop of LREC, Marrakesh, Morocco, 26 May 2008; pp. 28-31.\n77. Costantini, G.; Iaderola, I.; Paoloni, A.; Todisco, M. EMOVO Corpus: An Italian Emotional Speech Database. In Proceedings of Ninth International Conference on Language Resources and Evaluation (LREC 2014), Reykjavik, Iceland, 26-31 May 2014; pp. 3501-3504.\n![img-3.jpeg](img-3.jpeg)\n(c) 2015 by the authors; licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons by Attribution (CC-BY) license (http:// creativecommons.org/licenses/by/4.0/).",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Albert, M. Silent Messages; Wadsworth: Belmont, CA, USA, 1971."
+      },
+      {
+        "ref_id": "2",
+        "text": "Lang, P.J. The emotion probe: Studies of motivation and attention. Am. Psychol. 1995, 50, 372."
+      },
+      {
+        "ref_id": "3",
+        "text": "Schuller, B.; Batliner, A.; Steidl, S.; Seppi, D. Recognising realistic emotions and affect in speech: State of the art and lessons learnt from the first challenge. Speech Commun. 2011, 53, 1062-1087."
+      },
+      {
+        "ref_id": "4",
+        "text": "Scherer, K.R. Vocal communication of emotion: A review of research paradigms. Speech Commun. 2003, $40,227-256$."
+      },
+      {
+        "ref_id": "5",
+        "text": "Scherer, K.R.; Johnstone, T.; Klasmeyer, G. Vocal expression of emotion. In Handbook of Affective Sciences; Oxford University Press: London, UK, 2003; pp. 433-456."
+      },
+      {
+        "ref_id": "6",
+        "text": "Ekman, P.; Friesen, W.V.; Press, C.P. Pictures of Facial Affect; Consulting Psychologists Press: Palo Alto, CA, USA, 1975."
+      },
+      {
+        "ref_id": "7",
+        "text": "Lefter, I.; Burghouts, G.B.; Rothkrantz, L.J. Recognizing stress using semantics and modulation of speech and gestures. IEEE Trans. Affect. Comput. 2015, in press."
+      },
+      {
+        "ref_id": "8",
+        "text": "Eyben, F.; Scherer, K.; Schuller, B.; Sundberg, J.; André, E.; Busso, C.; Devillers, L.; Epps, J.; Laukka, P.; Narayanan, S.; et al. The Geneva minimalistic acoustic parameter set (GeMAPS) for voice research and affective computing. IEEE Trans. Affect. Comput. 2015, in press."
+      },
+      {
+        "ref_id": "9",
+        "text": "Schuller, B.; Steidl, S.; Batliner, A.; Burkhardt, F.; Devillers, L.; Müller, C.; Narayanan, S. Paralinguistics in speech and language-State-of-the-art and the challenge. Comput. Speech Lang. 2013, 27, 4-39."
+      },
+      {
+        "ref_id": "10",
+        "text": "Cowie, R.; Douglas-Cowie, E.; Tsapatsoulis, N.; Votsis, G.; Kollias, S.; Fellenz, W.; Taylor, J.G. Emotion recognition in human-computer interaction. IEEE Signal Process. Mag. 2001, 18, 32-80."
+      },
+      {
+        "ref_id": "11",
+        "text": "López, J.M.; Cearreta, I.; Garay-Vitoria, N.; de Ipiña, K.L.; Beristain, A. A methodological approach for building multimodal acted affective databases. In Engineering the User Interface; Springer: London, UK, 2009; pp. 1-17."
+      },
+      {
+        "ref_id": "12",
+        "text": "Burkhardt, F.; Paeschke, A.; Rolfes, M.; Sendlmeier, W.; Weiss, B. A database of German emotional speech. In Proceedings of the Interspeech 2005, Lissabon, Portugal, 4-8 September 2005; pp. 1517-1520."
+      },
+      {
+        "ref_id": "13",
+        "text": "Sundberg, J.; Patel, S.; Bjorkner, E.; Scherer, K.R. Interdependencies among voice source parameters in emotional speech. IEEE Trans. Affect. Comput. 2011, 2, 162-174."
+      },
+      {
+        "ref_id": "14",
+        "text": "Ntalampiras, S.; Fakotakis, N. Modeling the temporal evolution of acoustic parameters for speech emotion recognition. IEEE Trans. Affect. Comput. 2012, 3, 116-125."
+      },
+      {
+        "ref_id": "15",
+        "text": "Wu, S.; Falk, T.H.; Chan, W.Y. Automatic speech emotion recognition using modulation spectral features. Speech Commun. 2011, 53, 768-785."
+      },
+      {
+        "ref_id": "16",
+        "text": "Wang, K.C. Time-Frequency Feature Representation Using Multi-Resolution Texture Analysis and Acoustic Activity Detector for Real-Life Speech Emotion Recognition. Sensors 2015, 15, 1458-1478."
+      },
+      {
+        "ref_id": "17",
+        "text": "Douglas-Cowie, E.; Campbell, N.; Cowie, R.; Roach, P. Emotional speech: Towards a new generation of databases. Speech Commun. 2003, 40, 33-60."
+      },
+      {
+        "ref_id": "18",
+        "text": "El Ayadi, M.; Kamel, M.S.; Karray, F. Survey on speech emotion recognition: Features, classification schemes, and databases. Pattern Recognit. 2011, 44, 572-587."
+      },
+      {
+        "ref_id": "19",
+        "text": "Ververidis, D.; Kotropoulos, C. Emotional speech recognition: Resources, features, and methods. Speech Commun. 2006, 48, 1162-1181."
+      },
+      {
+        "ref_id": "20",
+        "text": "Navas, E.; Hernáez, I.; Castelruiz, A.; Luengo, I. Obtaining and evaluating an emotional database for prosody modelling in standard Basque. In Text, Speech and Dialogue; Springer: Berlin/Heidelberg, Germany, 2004; pp. 393-400."
+      },
+      {
+        "ref_id": "21",
+        "text": "Iriondo, I.; Guaus, R.; Rodríguez, A.; Lázaro, P.; Montoya, N.; Blanco, J.M.; Bernadas, D.; Oliver, J.M.; Tena, D.; Longhi, L. Validation of an acoustical modelling of emotional expression in Spanish using speech synthesis techniques. In Proceedings of the ISCA Tutorial and Research Workshop (ITRW) on Speech and Emotion, Newcastle, Northern Ireland, UK, 5-7 September 2000."
+      },
+      {
+        "ref_id": "22",
+        "text": "Caballero-Morales, S.O. Recognition of emotions in Mexican Spanish speech: An approach based on acoustic modelling of emotion-specific vowels. Sci. World J. 2013, 2013, 162093."
+      },
+      {
+        "ref_id": "23",
+        "text": "Sobol-Shikler, T.; Robinson, P. Classification of complex information: Inference of co-occurring affective states from their expressions in speech. IEEE Trans. Pattern Anal. Mach. Intell. 2010, 32, 1284-1297."
+      },
+      {
+        "ref_id": "24",
+        "text": "Schuller, B.; Reiter, S.; Muller, R.; Al-Hames, M.; Lang, M.; Rigoll, G. Speaker independent speech emotion recognition by ensemble classification. In Proceedings of the IEEE International Conference on Multimedia and Expo (ICME 2005), Amsterdam, The Netherland, 6 July 2005; pp. 864-867."
+      },
+      {
+        "ref_id": "25",
+        "text": "Lee, C.C.; Mower, E.; Busso, C.; Lee, S.; Narayanan, S. Emotion recognition using a hierarchical binary decision tree approach. Speech Commun. 2011, 53, 1162-1171."
+      },
+      {
+        "ref_id": "26",
+        "text": "Pan, Y.; Shen, P.; Shen, L. Speech emotion recognition using support vector machine. Int. J. Smart Home 2012, 6, 101-107."
+      },
+      {
+        "ref_id": "27",
+        "text": "Batliner, A.; Fischer, K.; Huber, R.; Spilker, J.; Nöth, E. Desperately seeking emotions or: Actors, wizards, and human beings. In Proceedings of the ISCA Tutorial and Research Workshop (ITRW) on Speech and Emotion, Newcastle, Northern Ireland, UK, 5-7 September 2000."
+      },
+      {
+        "ref_id": "28",
+        "text": "Nwe, T.L.; Foo, S.W.; De Silva, L.C. Speech emotion recognition using hidden Markov models. Speech Commun. 2003, 41, 603-623."
+      },
+      {
+        "ref_id": "29",
+        "text": "Shahin, I. Speaker identification in emotional talking environments based on CSPHMM2s. Eng. Appl. Artif. Intell. 2013, 26, 1652-1659."
+      },
+      {
+        "ref_id": "30",
+        "text": "Pfister, T.; Robinson, P. Real-time recognition of affective states from nonverbal features of speech and its application for public speaking skill analysis. IEEE Trans. Affect. Comput. 2011, 2, 66-78."
+      },
+      {
+        "ref_id": "31",
+        "text": "Alhamdoosh, M.; Wang, D. Fast decorrelated neural network ensembles with random weights. Inf. Sci. 2014, 264, 104-117."
+      },
+      {
+        "ref_id": "32",
+        "text": "Arruti, A.; Cearreta, I.; Álvarez, A.; Lazkano, E.; Sierra, B. Feature Selection for Speech Emotion Recognition in Spanish and Basque: On the Use of Machine Learning to Improve Human-Computer Interaction. PLoS ONE 2014, 9, e108975."
+      },
+      {
+        "ref_id": "33",
+        "text": "Scherer, S.; Schwenker, F.; Palm, G. Classifier fusion for emotion recognition from speech. In Advanced Intelligent Environments; Springer: Berlin/Heidelberg, Germany, 2009; pp. 95-117."
+      },
+      {
+        "ref_id": "34",
+        "text": "Chen, L.; Mao, X.; Xue, Y.; Cheng, L.L. Speech emotion recognition: Features and classification models. Digit. Signal Process. 2012, 22, 1154-1160."
+      },
+      {
+        "ref_id": "35",
+        "text": "Attabi, Y.; Dumouchel, P. Anchor models for emotion recognition from speech. IEEE Trans. Affect. Comput. 2013, 4, 280-290."
+      },
+      {
+        "ref_id": "36",
+        "text": "Morrison, D.; Wang, R.; de Silva, L.C. Ensemble methods for spoken emotion recognition in call-centres. Speech Commun. 2007, 49, 98-112."
+      },
+      {
+        "ref_id": "37",
+        "text": "Huang, Y.; Zhang, G.; Xu, X. Speech Emotion Recognition Research Based on the Stacked Generalization Ensemble Neural Network for Robot Pet. In Proceedings of the Chinese Conference on Pattern Recognition, 2009, CCPR 2009, Nanjing, China, 4-6 November 2009; pp. 1-5."
+      },
+      {
+        "ref_id": "38",
+        "text": "Wu, C.H.; Liang, W.B. Emotion recognition of affective speech based on multiple classifiers using acoustic-prosodic information and semantic labels. IEEE Trans. Affect. Comput. 2011, 2, 10-21."
+      },
+      {
+        "ref_id": "39",
+        "text": "Kuang, Y.; Li, L. Speech emotion recognition of decision fusion based on DS evidence theory. In Proceedings of the 2013 4th IEEE International Conference on Software Engineering and Service Science (ICSESS), Beijing, China, 23-25 May 2013; pp. 795-798."
+      },
+      {
+        "ref_id": "40",
+        "text": "Huang, D.Y.; Zhang, Z.; Ge, S.S. Speaker state classification based on fusion of asymmetric simple partial least squares (SIMPLS) and support vector machines. Comput. Speech Lang. 2014, 28, 392-419."
+      },
+      {
+        "ref_id": "41",
+        "text": "López, J.M.; Cearreta, I.; Fajardo, I.; Garay, N. Validating a multilingual and multimodal affective database. In Usability and Internationalization. Global and Local User Interfaces; Springer: Berlin/Heidelberg, Germany, 2007; pp. 422-431."
+      },
+      {
+        "ref_id": "42",
+        "text": "Álvarez, A.; Cearreta, I.; López, J.M.; Arruti, A.; Lazkano, E.; Sierra, B.; Garay, N. A comparison using different speech parameters in the automatic emotion recognition using Feature Subset Selection based on Evolutionary Algorithms. In Text, Speech and Dialogue; Springer: Berlin/ Heidelberg, Germany, 2007; pp. 423-430."
+      },
+      {
+        "ref_id": "43",
+        "text": "Esparza, J.; Scherer, S.; Brechmann, A.; Schwenker, F. Automatic emotion classification vs. human perception: Comparing machine performance to the human benchmark. In Proceedings of the 2012 11th International Conference on Information Science, Signal Processing and their Applications (ISSPA), Montreal, QC, Canada, 2-5 July 2012; pp. 1253-1258."
+      },
+      {
+        "ref_id": "44",
+        "text": "Ververidis, D.; Kotropoulos, C. Emotional speech classification using Gaussian mixture models and the sequential floating forward selection algorithm. In Proceedings of the IEEE International Conference on Multimedia and Expo, 2005, ICME 2005, Amsterdam, The Netherland, 6 July 2005; pp. 1500-1503."
+      },
+      {
+        "ref_id": "45",
+        "text": "Hu, H.; Xu, M.X.; Wu, W. Fusion of global statistical and segmental spectral features for speech emotion recognition. In Proceedings of the INTERSPEECH, Antwerp, Belgium, 27-31 August 2007; pp. 2269-2272."
+      },
+      {
+        "ref_id": "46",
+        "text": "Shami, M.T.; Kamel, M.S. Segment-based approach to the recognition of emotions in speech. In Proceedings of the IEEE International Conference on Multimedia and Expo, 2005, ICME 2005, Amsterdam, The Netherlands, 6-8 July 2005; pp. 366-369."
+      },
+      {
+        "ref_id": "47",
+        "text": "Tato, R.; Santos, R.; Kompe, R.; Pardo, J.M. Emotional space improves emotion recognition. In Proceedings of the INTERSPEECH, Denver, CO, USA, 16-20 September 2002; pp. 2029-2032."
+      },
+      {
+        "ref_id": "48",
+        "text": "Eyben, F.; Weninger, F.; Gross, F.; Schuller, B. Recent developments in opensmile, the munich open-source multimedia feature extractor. In Proceedings of the 21st ACM international conference on Multimedia, Barcelona, Catalunya, Spain, 21-25 October 2013; pp. 835-838."
+      },
+      {
+        "ref_id": "49",
+        "text": "Mendialdua, I.; Arruti, A.; Jauregi, E.; Lazkano, E.; Sierra, B. Classifier Subset Selection to construct multi-classifiers by means of estimation of distribution algorithms. Neurocomputing 2015, 157, 46-60."
+      },
+      {
+        "ref_id": "50",
+        "text": "Wolpert, D.H. Stacked generalization. Neural Netw. 1992, 5, 241-259."
+      },
+      {
+        "ref_id": "51",
+        "text": "Sierra, B.; Serrano, N.; LarrañAga, P.; Plasencia, E.J.; Inza, I.; Jiménez, J.J.; Revuelta, P.; Mora, M.L. Using Bayesian networks in the construction of a bi-level multi-classifier. A case study using intensive care unit patients data. Artif. Intell. Med. 2001, 22, 233-248."
+      },
+      {
+        "ref_id": "52",
+        "text": "Larrañaga, P.; Lozano, J.A. Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation; Springer Science \\& Business Media: New York, NY, USA, 2002; Volume 2."
+      },
+      {
+        "ref_id": "53",
+        "text": "Inza, I.; Larrañaga, P.; Etxeberria, R.; Sierra, B. Feature subset selection by Bayesian network-based optimization. Artif. Intell. 2000, 123, 157-184."
+      },
+      {
+        "ref_id": "54",
+        "text": "Etxeberria, R.; Larranaga, P. Global optimization using Bayesian networks. In Proceedings of the Second Symposium on Artificial Intelligence (CIMAF-99), Habana, Cuba, March 1999; pp. 332-339."
+      },
+      {
+        "ref_id": "55",
+        "text": "Inza, I.; Larrañaga, P.; Sierra, B. Feature subset selection by Bayesian networks: A comparison with genetic and sequential algorithms. Int. J. Approx. Reason. 2001, 27, 143-164."
+      },
+      {
+        "ref_id": "56",
+        "text": "Echegoyen, C.; Mendiburu, A.; Santana, R.; Lozano, J.A. Toward understanding EDAs based on Bayesian networks through a quantitative analysis. IEEE Trans. Evolut. Comput. 2012, 16, 173-189."
+      },
+      {
+        "ref_id": "57",
+        "text": "Hall, M.; Frank, E.; Holmes, G.; Pfahringer, B.; Reutemann, P.; Witten, I.H. The WEKA data mining software: An update. ACM SIGKDD Explor. Newsl. 2009, 11, 10-18."
+      },
+      {
+        "ref_id": "58",
+        "text": "Sierra, B.; Lazkano, E.; Jauregi, E.; Irigoien, I. Histogram distance-based Bayesian Network structure learning: A supervised classification specific approach. Decis. Support Syst. 2009, 48, 180-190."
+      },
+      {
+        "ref_id": "59",
+        "text": "Quinlan, J.R. C4.5: Programs for Machine Learning; Elsevier: San Francisco, CA, USA, 1993."
+      },
+      {
+        "ref_id": "60",
+        "text": "Aha, D.W.; Kibler, D.; Albert, M.K. Instance-based learning algorithms. Mach. Learn. 1991, 6, 37-66."
+      },
+      {
+        "ref_id": "61",
+        "text": "Cleary, J.G.; Trigg, L.E. K*: An instance-based learner using an entropic distance measure. In Proceedings of the 12th International Conference on Machine Learning, Tahoe City, CA, USA, 9-12 July 1995; Volume 5, pp. 108-114."
+      },
+      {
+        "ref_id": "62",
+        "text": "Kohavi, R. Scaling Up the Accuracy of Naive-Bayes Classifiers: A Decision-Tree Hybrid. In Proceedings of the Second International Conference on Knowledge Discovery and Data Mining, Portland, Oregon, 1996; pp. 202-207."
+      },
+      {
+        "ref_id": "63",
+        "text": "Cestnik, B. Estimating probabilities: A crucial task in machine learning. In Proceedings of the 9th European Conference on Artificial Intelligence (ECAI-90), Stockholm, Sweden, 6 August 1990, Volume 90, pp. 147-149."
+      },
+      {
+        "ref_id": "64",
+        "text": "Holte, R.C. Very simple classification rules perform well on most commonly used datasets. Mach. Learn. 1993, 11, 63-90."
+      },
+      {
+        "ref_id": "65",
+        "text": "Cohen, W.W. Fast effective rule induction. In Proceedings of the Twelfth International Conference on Machine Learning, Tahoe City, CA, USA, 9-12 July 1995; pp. 115-123."
+      },
+      {
+        "ref_id": "66",
+        "text": "Breiman, L. Random forests. Mach. Learn. 2001, 45, 5-32."
+      },
+      {
+        "ref_id": "67",
+        "text": "Meyer, D.; Leisch, F.; Hornik, K. The support vector machine under test. Neurocomputing 2003, 55, 169-186."
+      },
+      {
+        "ref_id": "68",
+        "text": "Rosenblatt, F. Principles of Neurodynamics: Perceptrons and the Theory of Brain Mechanisms; Spartan Books: Washington, DC, USA, 1961."
+      },
+      {
+        "ref_id": "69",
+        "text": "Broomhead, D.; Lowe, D. Multivariable functional interpolation and adaptive networks. Complex Syst. 1988, 2, 321-355."
+      },
+      {
+        "ref_id": "70",
+        "text": "Freedman, D.A. Statistical Models: Theory and Practice; Cambridge University Press: New York, NY, USA, 2009."
+      },
+      {
+        "ref_id": "71",
+        "text": "Stone, M. Cross-validatory choice and assessment of statistical predictions. J. R. Stat. Soc. Ser. B Methodol. 1974, 36, 111-147."
+      },
+      {
+        "ref_id": "72",
+        "text": "Buntine, W. Theory refinement on Bayesian networks. In Proceedings of the Seventh conference on Uncertainty in Artificial Intelligence, Los Angeles, CA, USA, 13-15 July 1991; pp. 52-60."
+      },
+      {
+        "ref_id": "73",
+        "text": "García, S.; Fernández, A.; Luengo, J.; Herrera, F. Advanced nonparametric tests for multiple comparisons in the design of experiments in computational intelligence and data mining: Experimental analysis of power. Inf. Sci. 2010, 180, 2044-2064."
+      },
+      {
+        "ref_id": "74",
+        "text": "Schwenker, F.; Scherer, S.; Magdi, Y.M.; Palm, G. The GMM-SVM supervector approach for the recognition of the emotional status from speech. In Artificial Neural Networks-ICANN 2009; Springer: Berlin/Heidelberg, Germany, 14-17 September 2009; pp. 894-903."
+      },
+      {
+        "ref_id": "75",
+        "text": "Grimm, M.; Kroschel, K.; Narayanan, S. The Vera am Mittag German audio-visual emotional speech database. In Proceedings of the 2008 IEEE International Conference on Multimedia and Expo, Hannover, Germany, 23 June 2008."
+      },
+      {
+        "ref_id": "76",
+        "text": "Batliner, A.; Steidl, S.; Nöth, E. Releasing a thoroughly annotated and processed spontaneous emotional database: The FAU Aibo Emotion Corpus. In Proceedings of the Satellite Workshop of LREC, Marrakesh, Morocco, 26 May 2008; pp. 28-31."
+      },
+      {
+        "ref_id": "77",
+        "text": "Costantini, G.; Iaderola, I.; Paoloni, A.; Todisco, M. EMOVO Corpus: An Italian Emotional Speech Database. In Proceedings of Ninth International Conference on Language Resources and Evaluation (LREC 2014), Reykjavik, Iceland, 26-31 May 2014; pp. 3501-3504."
+      }
+    ],
+    "reference_count": 77,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Human recognition accuracy percentages for utterances as a function of language and emotions (taken from [41]).",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Spanish",
+          "$75 \\%$",
+          "$51 \\%$",
+          "$78 \\%$",
+          "$71 \\%$",
+          "$66 \\%$",
+          "$52 \\%$",
+          "$80 \\%$"
+        ],
+        [
+          "Basque",
+          "$77 \\%$",
+          "$52 \\%$",
+          "$68 \\%$",
+          "$74 \\%$",
+          "$59 \\%$",
+          "$51 \\%$",
+          "$77 \\%$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Individual: 10 base classifiers",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          11,
+          12,
+          14,
+          17,
+          10,
+          "",
+          ""
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          "Selected Classifiers:",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 presents the results obtained for each of the 17 actors in the first phase when a single classification is applied for categorical emotion recognition, in addition to the mean values and standard deviation (SD) of each classifier in the last two rows. The best accuracies obtained per actor are highlighted in bold. The results suggest that SVM is the classifier that performs better when the single classifier method is applied, as for 13 of the 17 actors, the SVM classifier obtains the best results compared to the rest of the single classifiers, and its mean value is 6.43 percentage points higher than the second mean value. Only BN and RandomF get the better accuracies than SVM in the single classification, in the case of two actors for each one. The best accuracy ( $73.79 \\%$ ) is achieved for the actor P1. The rest of best accuracies for each actor range from $41.82 \\%$ (P8) to $68.93 \\%$ (P6).",
+      "headers": [
+        "",
+        "BN",
+        "C4.5",
+        "KNN",
+        "KStar",
+        "NBT",
+        "NB",
+        "OneR",
+        "RIPPER",
+        "RandomF",
+        "SVM"
+      ],
+      "rows": [
+        [
+          1,
+          "$69.90 \\%$",
+          "$64.08 \\%$",
+          "$65.05 \\%$",
+          "$54.37 \\%$",
+          "$55.34 \\%$",
+          "$61.17 \\%$",
+          "$53.40 \\%$",
+          "$48.54 \\%$",
+          "$64.08 \\%$",
+          "$\\mathbf{7 3 . 7 9 \\%}$"
+        ],
+        [
+          2,
+          "$58.25 \\%$",
+          "$45.63 \\%$",
+          "$49.51 \\%$",
+          "$36.89 \\%$",
+          "$44.66 \\%$",
+          "$39.81 \\%$",
+          "$34.95 \\%$",
+          "$46.60 \\%$",
+          "$53.40 \\%$",
+          "$\\mathbf{6 6 . 0 2 \\%}$"
+        ],
+        [
+          3,
+          "$46.60 \\%$",
+          "$45.63 \\%$",
+          "$49.51 \\%$",
+          "$36.89 \\%$",
+          "$44.66 \\%$",
+          "$39.81 \\%$",
+          "$34.95 \\%$",
+          "$46.60 \\%$",
+          "$34.95 \\%$",
+          "$\\mathbf{5 3 . 4 0 \\%}$"
+        ],
+        [
+          4,
+          "$\\mathbf{5 9 . 2 2 \\%}$",
+          "$43.69 \\%$",
+          "$39.81 \\%$",
+          "$35.92 \\%$",
+          "$43.69 \\%$",
+          "$34.95 \\%$",
+          "$45.63 \\%$",
+          "$33.01 \\%$",
+          "$54.37 \\%$",
+          "$\\mathbf{5 9 . 2 2 \\%}$"
+        ],
+        [
+          5,
+          "$52.43 \\%$",
+          "$42.72 \\%$",
+          "$41.75 \\%$",
+          "$36.89 \\%$",
+          "$54.37 \\%$",
+          "$49.51 \\%$",
+          "$42.72 \\%$",
+          "$48.54 \\%$",
+          "$52.43 \\%$",
+          "$\\mathbf{6 8 . 9 3 \\%}$"
+        ],
+        [
+          6,
+          "$53.40 \\%$",
+          "$48.54 \\%$",
+          "$46.60 \\%$",
+          "$38.83 \\%$",
+          "$56.31 \\%$",
+          "$38.83 \\%$",
+          "$43.69 \\%$",
+          "$46.60 \\%$",
+          "$63.11 \\%$",
+          "$\\mathbf{6 6 . 9 9 \\%}$"
+        ],
+        [
+          7,
+          "$42.72 \\%$",
+          "$33.98 \\%$",
+          "$32.04 \\%$",
+          "$25.24 \\%$",
+          "$41.75 \\%$",
+          "$37.86 \\%$",
+          "$38.83 \\%$",
+          "$38.83 \\%$",
+          "$\\mathbf{5 0 . 4 9 \\%}$",
+          "$45.63 \\%$"
+        ],
+        [
+          8,
+          "$18.18 \\%$",
+          "$29.09 \\%$",
+          "$29.09 \\%$",
+          "$20.91 \\%$",
+          "$29.09 \\%$",
+          "$19.09 \\%$",
+          "$12.73 \\%$",
+          "$12.73 \\%$",
+          "$26.36 \\%$",
+          "$\\mathbf{4 1 . 8 2 \\%}$"
+        ],
+        [
+          9,
+          "$44.55 \\%$",
+          "$43.64 \\%$",
+          "$37.27 \\%$",
+          "$33.64 \\%$",
+          "$40.00 \\%$",
+          "$38.18 \\%$",
+          "$30.00 \\%$",
+          "$36.36 \\%$",
+          "$43.64 \\%$",
+          "$\\mathbf{5 2 . 7 3 \\%}$"
+        ],
+        [
+          10,
+          "$54.55 \\%$",
+          "$43.64 \\%$",
+          "$50.91 \\%$",
+          "$26.36 \\%$",
+          "$52.73 \\%$",
+          "$55.45 \\%$",
+          "$30.00 \\%$",
+          "$41.82 \\%$",
+          "$58.18 \\%$",
+          "$\\mathbf{6 4 . 5 5 \\%}$"
+        ],
+        [
+          11,
+          "$56.36 \\%$",
+          "$42.73 \\%$",
+          "$37.27 \\%$",
+          "$28.18 \\%$",
+          "$50.00 \\%$",
+          "$43.64 \\%$",
+          "$38.18 \\%$",
+          "$42.73 \\%$",
+          "$55.45 \\%$",
+          "$54.55 \\%$"
+        ],
+        [
+          12,
+          "$44.55 \\%$",
+          "$32.73 \\%$",
+          "$37.27 \\%$",
+          "$27.27 \\%$",
+          "$31.82 \\%$",
+          "$27.27 \\%$",
+          "$38.18 \\%$",
+          "$39.09 \\%$",
+          "$37.27 \\%$",
+          "$45.45 \\%$"
+        ],
+        [
+          13,
+          "$44.55 \\%$",
+          "$40.91 \\%$",
+          "$33.64 \\%$",
+          "$35.45 \\%$",
+          "$44.55 \\%$",
+          "$27.27 \\%$",
+          "$45.45 \\%$",
+          "$42.73 \\%$",
+          "$50.91 \\%$",
+          "$\\mathbf{6 1 . 8 2 \\%}$"
+        ],
+        [
+          14,
+          "$\\mathbf{6 4 . 5 5 \\%}$",
+          "$51.82 \\%$",
+          "$37.27 \\%$",
+          "$31.82 \\%$",
+          "$54.55 \\%$",
+          "$35.45 \\%$",
+          "$40.00 \\%$",
+          "$45.45 \\%$",
+          "$60.00 \\%$",
+          "$56.36 \\%$"
+        ],
+        [
+          15,
+          "$51.82 \\%$",
+          "$53.64 \\%$",
+          "$53.64 \\%$",
+          "$37.27 \\%$",
+          "$52.73 \\%$",
+          "$40.91 \\%$",
+          "$40.00 \\%$",
+          "$57.27 \\%$",
+          "$\\mathbf{6 2 . 7 3 \\%}$",
+          "$\\mathbf{6 2 . 7 3 \\%}$"
+        ],
+        [
+          16,
+          "$58.18 \\%$",
+          "$48.18 \\%$",
+          "$47.27 \\%$",
+          "$36.36 \\%$",
+          "$50.00 \\%$",
+          "$40.91 \\%$",
+          "$43.64 \\%$",
+          "$54.55 \\%$",
+          "$53.64 \\%$",
+          "$\\mathbf{5 9 . 0 9 \\%}$"
+        ],
+        [
+          17,
+          "$50.91 \\%$",
+          "$46.36 \\%$",
+          "$40.91 \\%$",
+          "$23.64 \\%$",
+          "$45.45 \\%$",
+          "$37.27 \\%$",
+          "$40.00 \\%$",
+          "$40.91 \\%$",
+          "$\\mathbf{5 3 . 6 4 \\%}$",
+          "$50.91 \\%$"
+        ],
+        [
+          "Mean",
+          "$51.22 \\%$",
+          "$44.53 \\%$",
+          "$42.87 \\%$",
+          "$33.29 \\%$",
+          "$46.57 \\%$",
+          "$39.26 \\%$",
+          "$38.37 \\%$",
+          "$42.49 \\%$",
+          "$51.45 \\%$",
+          "$\\mathbf{5 7 . 8 8 \\%}$"
+        ],
+        [
+          "SD",
+          10.98,
+          7.91,
+          8.83,
+          7.57,
+          7.69,
+          9.72,
+          8.52,
+          9.51,
+          10.13,
+          8.69
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 11
+    },
+    {
+      "table_number": "3",
+      "table_title": "First phase. Accuracy percentages for each person using stacking and bagging and boosting multi-classifiers. Mean and SD rows denote the average and standard deviation for each standard multi-classifier considering all of the actors.",
+      "headers": [
+        "",
+        "BN",
+        "C4.5",
+        "KNN",
+        "KStar",
+        "NBT",
+        "NB",
+        "OneR",
+        "RIPPER",
+        "RandomF",
+        "SVM",
+        "Bagging",
+        "Boosting"
+      ],
+      "rows": [
+        [
+          1,
+          64.08,
+          59.22,
+          72.82,
+          57.28,
+          67.96,
+          61.17,
+          43.69,
+          62.14,
+          66.99,
+          73.79,
+          65.05,
+          34.95
+        ],
+        [
+          2,
+          47.57,
+          54.37,
+          42.72,
+          36.89,
+          60.19,
+          47.57,
+          36.89,
+          49.51,
+          49.51,
+          52.43,
+          57.28,
+          30.1
+        ],
+        [
+          3,
+          49.51,
+          44.66,
+          48.54,
+          41.75,
+          46.6,
+          58.25,
+          45.63,
+          46.6,
+          52.43,
+          49.51,
+          49.51,
+          35.92
+        ],
+        [
+          4,
+          49.51,
+          48.54,
+          41.75,
+          33.98,
+          53.4,
+          45.63,
+          39.81,
+          42.72,
+          50.49,
+          44.66,
+          55.34,
+          33.01
+        ],
+        [
+          5,
+          51.46,
+          45.63,
+          48.54,
+          32.04,
+          55.34,
+          50.49,
+          41.75,
+          52.43,
+          55.34,
+          55.54,
+          54.37,
+          32.04
+        ],
+        [
+          6,
+          59.22,
+          56.31,
+          53.4,
+          42.72,
+          59.22,
+          54.37,
+          55.34,
+          54.37,
+          59.22,
+          55.34,
+          52.43,
+          32.04
+        ],
+        [
+          7,
+          46.6,
+          33.98,
+          41.75,
+          39.81,
+          46.6,
+          44.66,
+          37.86,
+          41.75,
+          46.6,
+          40.78,
+          48.54,
+          37.86
+        ],
+        [
+          8,
+          31.82,
+          23.64,
+          30.91,
+          24.55,
+          29.09,
+          25.45,
+          19.09,
+          20.91,
+          23.64,
+          24.55,
+          30.91,
+          17.27
+        ],
+        [
+          9,
+          45.45,
+          41.82,
+          47.27,
+          36.36,
+          49.09,
+          45.45,
+          41.82,
+          36.36,
+          50.91,
+          46.36,
+          50.91,
+          30.91
+        ],
+        [
+          10,
+          55.45,
+          55.45,
+          53.64,
+          40.91,
+          56.36,
+          48.18,
+          37.27,
+          52.73,
+          60.91,
+          55.45,
+          54.55,
+          35.45
+        ],
+        [
+          11,
+          49.09,
+          48.18,
+          43.64,
+          39.09,
+          49.09,
+          40.91,
+          39.09,
+          50.0,
+          55.45,
+          52.73,
+          58.18,
+          35.45
+        ],
+        [
+          12,
+          39.09,
+          35.45,
+          36.36,
+          20.91,
+          38.18,
+          48.18,
+          30.91,
+          35.45,
+          35.45,
+          43.64,
+          47.27,
+          35.45
+        ],
+        [
+          13,
+          39.09,
+          41.82,
+          34.55,
+          30.91,
+          42.73,
+          43.64,
+          40.91,
+          46.36,
+          40.91,
+          40.91,
+          44.55,
+          34.55
+        ],
+        [
+          14,
+          50.0,
+          56.36,
+          57.27,
+          40.91,
+          63.64,
+          62.73,
+          37.27,
+          56.36,
+          60.0,
+          60.0,
+          44.55,
+          34.55
+        ],
+        [
+          15,
+          44.55,
+          57.27,
+          50.91,
+          40.91,
+          57.27,
+          52.73,
+          37.27,
+          50.91,
+          56.36,
+          59.09,
+          60.91,
+          36.36
+        ],
+        [
+          16,
+          55.45,
+          45.45,
+          49.09,
+          40.91,
+          50.0,
+          49.09,
+          40.0,
+          48.18,
+          54.55,
+          48.18,
+          56.36,
+          32.73
+        ],
+        [
+          17,
+          41.82,
+          44.55,
+          38.18,
+          38.18,
+          46.36,
+          44.55,
+          36.36,
+          43.64,
+          43.64,
+          50.0,
+          43.64,
+          30.91
+        ],
+        [
+          "Mean",
+          48.22,
+          46.63,
+          46.55,
+          37.54,
+          51.24,
+          48.41,
+          38.88,
+          46.5,
+          50.73,
+          50.16,
+          51.43,
+          32.91
+        ],
+        [
+          "SD",
+          7.44,
+          9.05,
+          9.33,
+          7.53,
+          9.04,
+          8.08,
+          6.82,
+          8.96,
+          9.86,
+          9.86,
+          7.53,
+          4.32
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 13
+    },
+    {
+      "table_number": "4",
+      "table_title": "First phase. Accuracy percentages for each person applying CSS stacking with the EDA classification method. Mean and SD rows denote the average and standard deviation for each classifier working as meta classifiers and considering all of the actors.",
+      "headers": [
+        "",
+        "BN",
+        "C4.5",
+        "KNN",
+        "KStar",
+        "NBT",
+        "NB",
+        "OneR",
+        "RIPPER",
+        "RandomF",
+        "SVM"
+      ],
+      "rows": [
+        [
+          1,
+          71.84,
+          70.87,
+          73.79,
+          72.82,
+          68.93,
+          70.87,
+          44.66,
+          68.93,
+          71.84,
+          73.79
+        ],
+        [
+          2,
+          66.02,
+          70.87,
+          73.79,
+          72.82,
+          60.19,
+          70.87,
+          36.89,
+          68.93,
+          71.84,
+          73.79
+        ],
+        [
+          3,
+          57.28,
+          70.87,
+          73.79,
+          72.82,
+          65.05,
+          70.87,
+          45.63,
+          68.93,
+          71.84,
+          73.79
+        ],
+        [
+          4,
+          55.34,
+          60.19,
+          51.46,
+          53.4,
+          51.46,
+          62.14,
+          39.81,
+          51.46,
+          59.22,
+          61.17
+        ],
+        [
+          5,
+          55.34,
+          63.11,
+          57.28,
+          49.51,
+          51.46,
+          62.14,
+          42.72,
+          58.25,
+          62.14,
+          65.05
+        ],
+        [
+          6,
+          64.08,
+          66.99,
+          59.22,
+          58.25,
+          50.49,
+          54.37,
+          57.28,
+          60.19,
+          66.02,
+          59.22
+        ],
+        [
+          7,
+          51.46,
+          47.57,
+          51.46,
+          41.75,
+          39.81,
+          51.46,
+          37.86,
+          47.57,
+          50.49,
+          52.43
+        ],
+        [
+          8,
+          30.91,
+          34.55,
+          35.45,
+          30.0,
+          43.64,
+          34.55,
+          26.36,
+          33.64,
+          33.64,
+          32.73
+        ],
+        [
+          9,
+          48.18,
+          50.91,
+          48.18,
+          47.27,
+          46.36,
+          45.45,
+          42.73,
+          47.27,
+          50.0,
+          54.55
+        ],
+        [
+          10,
+          58.18,
+          60.91,
+          58.18,
+          56.36,
+          45.45,
+          60.91,
+          37.27,
+          61.82,
+          60.91,
+          60.91
+        ],
+        [
+          11,
+          53.64,
+          53.64,
+          54.55,
+          54.55,
+          46.36,
+          55.45,
+          41.82,
+          50.91,
+          56.36,
+          60.0
+        ],
+        [
+          12,
+          34.55,
+          49.09,
+          45.45,
+          42.73,
+          32.73,
+          49.09,
+          40.91,
+          41.82,
+          49.09,
+          51.82
+        ],
+        [
+          13,
+          47.27,
+          59.09,
+          51.82,
+          54.55,
+          52.73,
+          52.73,
+          40.91,
+          52.73,
+          50.91,
+          59.09
+        ],
+        [
+          14,
+          50.91,
+          62.73,
+          64.55,
+          59.09,
+          55.45,
+          64.55,
+          38.18,
+          64.55,
+          63.64,
+          66.36
+        ],
+        [
+          15,
+          58.18,
+          62.73,
+          59.09,
+          59.09,
+          50.0,
+          60.91,
+          37.27,
+          59.09,
+          59.09,
+          63.64
+        ],
+        [
+          16,
+          55.45,
+          50.91,
+          59.09,
+          53.64,
+          44.55,
+          60.0,
+          40.91,
+          52.73,
+          56.36,
+          60.91
+        ],
+        [
+          17,
+          48.18,
+          50.91,
+          52.73,
+          45.45,
+          45.45,
+          49.09,
+          37.27,
+          44.55,
+          48.18,
+          54.55
+        ],
+        [
+          "Mean",
+          53.34,
+          58.0,
+          57.05,
+          54.36,
+          50.01,
+          57.38,
+          40.5,
+          54.9,
+          57.74,
+          60.22
+        ],
+        [
+          "SD",
+          9.57,
+          9.34,
+          9.73,
+          10.87,
+          8.4,
+          9.26,
+          5.75,
+          9.63,
+          9.55,
+          9.37
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 11
+    },
+    {
+      "table_number": "5",
+      "table_title": "First phase. Best accuracy per person by using each classification method. Improvements comparing the best accuracy from multi-classifiers (bagging, boosting and stacking) against single classifiers are presented in the Differences_1 column. In addition, the improvements between the CSS stacking with EDA and the best accuracy from both single and standard multi-classifiers are shown in the Differences_2 column. Mean and SD rows denote the average and standard deviation for each classification method and the type of differences considering all of the actors. Differences are expressed in percentage points.",
+      "headers": [
+        "",
+        "Single",
+        "Bagging",
+        "Boosting",
+        "Stacking",
+        "Differences_1",
+        "CSS Stacking",
+        "Differences_2"
+      ],
+      "rows": [
+        [
+          1,
+          73.79,
+          65.05,
+          34.95,
+          73.79,
+          0.0,
+          73.79,
+          0.0
+        ],
+        [
+          2,
+          66.02,
+          57.28,
+          30.1,
+          60.19,
+          "$-5.83$",
+          73.79,
+          "$+7.77$"
+        ],
+        [
+          3,
+          53.4,
+          49.51,
+          35.92,
+          58.25,
+          "$+4.85$",
+          73.79,
+          "$+15.54$"
+        ],
+        [
+          4,
+          59.22,
+          55.34,
+          33.01,
+          53.4,
+          "$-3.88$",
+          62.14,
+          "$+2.92$"
+        ],
+        [
+          5,
+          68.93,
+          54.37,
+          32.04,
+          55.34,
+          "$-13.59$",
+          65.05,
+          "$-3.88$"
+        ],
+        [
+          6,
+          66.99,
+          52.43,
+          32.04,
+          59.22,
+          "$-7.77$",
+          66.99,
+          0.0
+        ],
+        [
+          7,
+          50.49,
+          48.54,
+          37.86,
+          46.6,
+          "$-1.95$",
+          52.43,
+          "$+1.94$"
+        ],
+        [
+          8,
+          41.82,
+          30.91,
+          17.27,
+          31.82,
+          "$-10.00$",
+          35.45,
+          "$-6.37$"
+        ],
+        [
+          9,
+          52.73,
+          50.91,
+          30.91,
+          50.91,
+          "$-1.82$",
+          54.55,
+          "$+1.82$"
+        ],
+        [
+          10,
+          64.55,
+          54.55,
+          35.45,
+          60.91,
+          "$-3.64$",
+          61.82,
+          "$-2.73$"
+        ],
+        [
+          11,
+          56.36,
+          58.18,
+          35.45,
+          55.45,
+          "$+1.82$",
+          60.0,
+          "$+1.82$"
+        ],
+        [
+          12,
+          45.45,
+          47.27,
+          35.45,
+          48.18,
+          "$+2.73$",
+          51.82,
+          "$+3.64$"
+        ],
+        [
+          13,
+          61.82,
+          44.55,
+          34.55,
+          46.36,
+          "$-15.45$",
+          59.09,
+          "$-2.73$"
+        ],
+        [
+          14,
+          64.55,
+          44.55,
+          34.55,
+          63.64,
+          "$-0.91$",
+          66.36,
+          "$+1.82$"
+        ],
+        [
+          15,
+          62.73,
+          60.91,
+          36.36,
+          59.09,
+          "$-1.82$",
+          63.64,
+          "$+0.91$"
+        ],
+        [
+          16,
+          59.09,
+          56.36,
+          32.73,
+          55.45,
+          "$-2.73$",
+          60.91,
+          "$+1.82$"
+        ],
+        [
+          17,
+          53.64,
+          43.64,
+          30.91,
+          50.0,
+          "$-3.64$",
+          54.55,
+          "$+0.91$"
+        ],
+        [
+          "Mean",
+          58.92,
+          51.43,
+          32.91,
+          54.62,
+          "$-3.74$",
+          60.95,
+          "$+1.48$"
+        ],
+        [
+          "SD",
+          8.3,
+          7.75,
+          4.45,
+          8.77,
+          5.28,
+          9.33,
+          4.7
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 8
+    },
+    {
+      "table_number": "6",
+      "table_title": "First phase. Accuracies and improvements per person in percentage points comparing stacking and CSS stacking with EDA classification methods using SVM as the meta classifier. Mean and SD rows denote the average and standard deviation for each classification method and improvements considering all of the actors.",
+      "headers": [
+        "",
+        "Stacking",
+        "CSS Stacking",
+        "Improvements"
+      ],
+      "rows": [
+        [
+          1,
+          "$73.79 \\%$",
+          "$73.79 \\%$",
+          0.0
+        ],
+        [
+          2,
+          "$52.43 \\%$",
+          "$73.79 \\%$",
+          "$+21.36$"
+        ],
+        [
+          3,
+          "$49.51 \\%$",
+          "$73.79 \\%$",
+          "$+24.27$"
+        ],
+        [
+          4,
+          "$44.66 \\%$",
+          "$61.17 \\%$",
+          "$+16.50$"
+        ],
+        [
+          5,
+          "$55.34 \\%$",
+          "$65.05 \\%$",
+          "$+9.71$"
+        ],
+        [
+          6,
+          "$55.34 \\%$",
+          "$59.22 \\%$",
+          "$+3.88$"
+        ],
+        [
+          7,
+          "$40.78 \\%$",
+          "$52.43 \\%$",
+          "$+11.65$"
+        ],
+        [
+          8,
+          "$24.55 \\%$",
+          "$32.73 \\%$",
+          "$+8.18$"
+        ],
+        [
+          9,
+          "$46.36 \\%$",
+          "$54.55 \\%$",
+          "$+8.18$"
+        ],
+        [
+          10,
+          "$55.45 \\%$",
+          "$60.91 \\%$",
+          "$+5.45$"
+        ],
+        [
+          11,
+          "$52.73 \\%$",
+          "$60.00 \\%$",
+          "$+7.27$"
+        ],
+        [
+          12,
+          "$43.64 \\%$",
+          "$51.82 \\%$",
+          "$+8.18$"
+        ],
+        [
+          13,
+          "$40.91 \\%$",
+          "$59.09 \\%$",
+          "$+18.18$"
+        ],
+        [
+          14,
+          "$60.00 \\%$",
+          "$66.36 \\%$",
+          "$+6.36$"
+        ],
+        [
+          15,
+          "$59.09 \\%$",
+          "$63.64 \\%$",
+          "$+4.55$"
+        ],
+        [
+          16,
+          "$48.18 \\%$",
+          "$60.91 \\%$",
+          "$+12.73$"
+        ],
+        [
+          17,
+          "$50.00 \\%$",
+          "$54.55 \\%$",
+          "$+4,55$"
+        ],
+        [
+          "Mean",
+          "$50.16 \\%$",
+          "$60.22 \\%$",
+          "$+10.06$"
+        ],
+        [
+          "SD",
+          10.14,
+          9.64,
+          6.42
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "First phase. $p$-values of the pair-wise comparison between CSS stacking and the other multi-classifiers.",
+      "headers": [
+        "Hypothesis",
+        "Adjusted $p$"
+      ],
+      "rows": [
+        [
+          "CSS Stacking vs. Boosting",
+          "$\\mathbf{1 . 2 0 9 4 6 2 2 0 7 6 1 6 6 0 7 2 E - 1 0}$"
+        ],
+        [
+          "CSS Stacking vs. Bagging",
+          "$\\mathbf{2 . 2 5 6 7 2 9 2 7 2 7 2 6 5 8 2 4 E - 4}$"
+        ],
+        [
+          "CSS Stacking vs. Stacking",
+          "$\\mathbf{0 . 0 0 4 6 3 5 7 1 5 3 9 8 3 9 4 8 9 1}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 presents the results obtained by the CSS stacking classification method during the second phase, in which eGeMAPS parameters and a new combination of base classifiers in the first layer were employed for classification. Besides, a comparison with the CSS stacking built in the first phase and the corresponding improvements achieved are also presented. Both CSS stacking classifiers were constructed using the SVM as the meta-classifier, as it was the best meta-classifier in the first phase. As can be seen, the integration in the first layer of new base classifiers that performed well as single classifiers (especially the MLP classifier) and the employment of the eGeMAPS acoustic parameters, which also demonstrated their efficiency when comparing the results of single classifiers in both phases, helped improve the results for most actors. The most appreciable improvements are given by the actors P13, P12 and P8, which outperformed the previous results in the first phase by 20.70, 20.26 and 16.62 percentage points, respectively. In global terms, the average accuracy of the CSS stacking classifiers of the second phase outperformed the mean accuracy of the first phase by 4.56 percentage points, which demonstrated the effectiveness of the eGeMAPS parameters and the new classifiers included in the first layer of the CSS stacking classifiers of the second phase.",
+      "headers": [
+        "",
+        "CSS Stacking 2nd_Phase",
+        "CSS Stacking 1st_Phase",
+        "Differences"
+      ],
+      "rows": [
+        [
+          1,
+          "$85.06 \\%$",
+          "$73.79 \\%$",
+          11.27
+        ],
+        [
+          2,
+          "$69.48 \\%$",
+          "$73.79 \\%$",
+          -4.31
+        ],
+        [
+          3,
+          "$75.32 \\%$",
+          "$73.79 \\%$",
+          1.53
+        ],
+        [
+          4,
+          "$70.78 \\%$",
+          "$61.17 \\%$",
+          9.61
+        ],
+        [
+          5,
+          "$77.27 \\%$",
+          "$65.05 \\%$",
+          12.22
+        ],
+        [
+          6,
+          "$64.29 \\%$",
+          "$59.22 \\%$",
+          5.07
+        ],
+        [
+          7,
+          "$47.4 \\%$",
+          "$52.43 \\%$",
+          -5.03
+        ],
+        [
+          8,
+          "$49.35 \\%$",
+          "$32.73 \\%$",
+          16.62
+        ],
+        [
+          9,
+          "$46.01 \\%$",
+          "$54.55 \\%$",
+          -8.54
+        ],
+        [
+          10,
+          "$73.38 \\%$",
+          "$60.91 \\%$",
+          12.47
+        ],
+        [
+          11,
+          "$66.88 \\%$",
+          "$60.00 \\%$",
+          6.88
+        ],
+        [
+          12,
+          "$72.08 \\%$",
+          "$51.82 \\%$",
+          20.26
+        ],
+        [
+          13,
+          "$79.87 \\%$",
+          "$59.09 \\%$",
+          20.78
+        ],
+        [
+          14,
+          "$61.69 \\%$",
+          "$66.36 \\%$",
+          -4.67
+        ],
+        [
+          15,
+          "$59.09 \\%$",
+          "$63.64 \\%$",
+          -4.55
+        ],
+        [
+          16,
+          "$46.1 \\%$",
+          "$60.91 \\%$",
+          -14.81
+        ],
+        [
+          17,
+          "$57.14 \\%$",
+          "$54.55 \\%$",
+          2.59
+        ],
+        [
+          "Mean",
+          "$64.78 \\%$",
+          "$60.22 \\%$",
+          4.56
+        ],
+        [
+          "SD",
+          12.34,
+          9.94,
+          10.46
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 4
+    },
+    {
+      "table_number": "9",
+      "table_title": "Third phase. Accuracy percentages per actor for the best three classifiers of each system built on the Berlin Emotional Speech database (Emo-DB). Mean and SD rows represent the average and standard deviation considering all of the actors.",
+      "headers": [
+        "",
+        "Single",
+        "",
+        "",
+        "Standard Stacking",
+        "",
+        "",
+        "CSS Stacking",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "MLP",
+          "RandomF",
+          "SVM",
+          "MLP",
+          "RandomF",
+          "SVM",
+          "MLP",
+          "RandomF",
+          "SVM"
+        ],
+        [
+          1,
+          "$79.59 \\%$",
+          "$73.46 \\%$",
+          "$77.55 \\%$",
+          "$63.26 \\%$",
+          "$71.42 \\%$",
+          "$61.22 \\%$",
+          "$79.59 \\%$",
+          81.63,
+          "$79.59 \\%$"
+        ],
+        [
+          2,
+          "$94.82 \\%$",
+          "$87.93 \\%$",
+          "$86.20 \\%$",
+          "$79.31 \\%$",
+          "$89.65 \\%$",
+          "$72.41 \\%$",
+          "$93.10 \\%$",
+          "$94.83 \\%$",
+          96.55
+        ],
+        [
+          3,
+          "$74.41 \\%$",
+          "$62.79 \\%$",
+          "$67.44 \\%$",
+          "$62.79 \\%$",
+          "$67.44 \\%$",
+          "$62.79 \\%$",
+          "$74.42 \\%$",
+          "$74.42 \\%$",
+          76.74
+        ],
+        [
+          4,
+          "$84.21 \\%$",
+          "$84.21 \\%$",
+          "$81.57 \\%$",
+          "$68.42 \\%$",
+          "$71.05 \\%$",
+          "$68.42 \\%$",
+          89.47,
+          "$84.21 \\%$",
+          "$86.84 \\%$"
+        ],
+        [
+          5,
+          "$63.63 \\%$",
+          80.0,
+          "$72.72 \\%$",
+          "$56.36 \\%$",
+          "$65.45 \\%$",
+          "$54.54 \\%$",
+          "$67.27 \\%$",
+          "$72.73 \\%$",
+          "$78.18 \\%$"
+        ],
+        [
+          6,
+          "$77.14 \\%$",
+          "$74.28 \\%$",
+          "$80.00 \\%$",
+          "$71.42 \\%$",
+          "$68.57 \\%$",
+          "$68.57 \\%$",
+          82.86,
+          82.86,
+          82.86
+        ],
+        [
+          7,
+          "$78.68 \\%$",
+          "$75.40 \\%$",
+          "$72.13 \\%$",
+          "$67.21 \\%$",
+          "$70.49 \\%$",
+          "$65.57 \\%$",
+          "$77.05 \\%$",
+          80.33,
+          "$78.69 \\%$"
+        ],
+        [
+          8,
+          "$78.26 \\%$",
+          "$75.36 \\%$",
+          "$78.26 \\%$",
+          "$73.91 \\%$",
+          "$76.81 \\%$",
+          "$78.26 \\%$",
+          "$82.61 \\%$",
+          86.96,
+          "$85.51 \\%$"
+        ],
+        [
+          9,
+          "$67.85 \\%$",
+          82.14,
+          "$66.07 \\%$",
+          "$69.64 \\%$",
+          "$71.42 \\%$",
+          "$64.28 \\%$",
+          "$76.79 \\%$",
+          "$75.00 \\%$",
+          "$75.00 \\%$"
+        ],
+        [
+          10,
+          "$74.64 \\%$",
+          "$83.09 \\%$",
+          "$76.05 \\%$",
+          "$73.23 \\%$",
+          "$71.83 \\%$",
+          "$76.05 \\%$",
+          "$83.10 \\%$",
+          "$80.28 \\%$",
+          84.51
+        ],
+        [
+          "Mean",
+          "$77.32 \\%$",
+          "$77.87 \\%$",
+          "$75.80 \\%$",
+          "$68.55 \\%$",
+          "$72.41 \\%$",
+          "$67.21 \\%$",
+          "$80.63 \\%$",
+          "$81.32 \\%$",
+          82.45
+        ],
+        [
+          "$S D$",
+          8.52,
+          7.17,
+          6.28,
+          6.56,
+          6.76,
+          7.13,
+          7.41,
+          6.57,
+          6.33
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 10
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A1. P1 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          19,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          20,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          18,
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          1,
+          0,
+          2,
+          17,
+          1,
+          1,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          0,
+          3,
+          2,
+          17,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          2,
+          0,
+          20,
+          0
+        ],
+        [
+          "Neutral",
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          20
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A2. P2 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          16,
+          2,
+          0,
+          0,
+          0,
+          1,
+          3
+        ],
+        [
+          "Fear",
+          1,
+          20,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          17,
+          2,
+          3,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          0,
+          3,
+          19,
+          0,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          2,
+          7,
+          0,
+          13,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          2,
+          1,
+          2,
+          0,
+          3,
+          5,
+          9
+        ],
+        [
+          "Neutral",
+          0,
+          1,
+          0,
+          0,
+          1,
+          8,
+          12
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A3. P3 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          18,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          "Fear",
+          1,
+          18,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          10,
+          8,
+          4,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          0,
+          8,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          1,
+          2,
+          2,
+          16,
+          1,
+          0
+        ],
+        [
+          "Disgust",
+          1,
+          2,
+          0,
+          0,
+          0,
+          16,
+          3
+        ],
+        [
+          "Neutral",
+          3,
+          0,
+          0,
+          0,
+          0,
+          1,
+          18
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A4. P4 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          "Fear",
+          0,
+          16,
+          5,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          4,
+          12,
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          1,
+          4,
+          13,
+          2,
+          0,
+          2
+        ],
+        [
+          "Surprise",
+          0,
+          2,
+          2,
+          1,
+          14,
+          2,
+          1
+        ],
+        [
+          "Disgust",
+          0,
+          2,
+          1,
+          2,
+          0,
+          15,
+          2
+        ],
+        [
+          "Neutral",
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          18
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A5. P5 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          "Fear",
+          0,
+          15,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          1,
+          13,
+          5,
+          1,
+          2,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          2,
+          2,
+          17,
+          1,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          0,
+          1,
+          5,
+          16,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          1,
+          2,
+          2,
+          0,
+          0,
+          17,
+          0
+        ],
+        [
+          "Neutral",
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          20
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A6. P6 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          20,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          16,
+          0,
+          1,
+          3,
+          2,
+          0
+        ],
+        [
+          "Joy",
+          2,
+          0,
+          16,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          "Anger",
+          2,
+          5,
+          3,
+          8,
+          3,
+          1,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          6,
+          0,
+          0,
+          14,
+          2,
+          0
+        ],
+        [
+          "Disgust",
+          3,
+          2,
+          2,
+          3,
+          0,
+          9,
+          3
+        ],
+        [
+          "Neutral",
+          5,
+          0,
+          3,
+          0,
+          1,
+          0,
+          13
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A7. P7 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          10,
+          3,
+          0,
+          0,
+          3,
+          4,
+          2
+        ],
+        [
+          "Fear",
+          4,
+          8,
+          0,
+          3,
+          3,
+          4,
+          0
+        ],
+        [
+          "Joy",
+          1,
+          5,
+          10,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          "Anger",
+          1,
+          2,
+          7,
+          8,
+          1,
+          2,
+          1
+        ],
+        [
+          "Surprise",
+          2,
+          4,
+          1,
+          0,
+          12,
+          2,
+          1
+        ],
+        [
+          "Disgust",
+          6,
+          0,
+          0,
+          2,
+          3,
+          11,
+          0
+        ],
+        [
+          "Neutral",
+          4,
+          1,
+          1,
+          2,
+          0,
+          0,
+          14
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A8. P8 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          12,
+          5,
+          0,
+          0,
+          0,
+          2,
+          3
+        ],
+        [
+          "Fear",
+          5,
+          8,
+          1,
+          0,
+          0,
+          6,
+          2
+        ],
+        [
+          "Joy",
+          1,
+          1,
+          10,
+          5,
+          4,
+          0,
+          1
+        ],
+        [
+          "Anger",
+          0,
+          1,
+          5,
+          11,
+          5,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          1,
+          8,
+          4,
+          9,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          3,
+          7,
+          0,
+          0,
+          0,
+          11,
+          1
+        ],
+        [
+          "Neutral",
+          2,
+          3,
+          0,
+          0,
+          0,
+          2,
+          15
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A9. P9 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          12,
+          5,
+          1,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          "Fear",
+          5,
+          5,
+          1,
+          0,
+          0,
+          10,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          3,
+          6,
+          7,
+          4,
+          1,
+          1
+        ],
+        [
+          "Anger",
+          0,
+          1,
+          4,
+          7,
+          8,
+          0,
+          2
+        ],
+        [
+          "Surprise",
+          1,
+          1,
+          4,
+          5,
+          11,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          2,
+          8,
+          1,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          16
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A10. P10 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          19,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          "Fear",
+          0,
+          16,
+          1,
+          0,
+          1,
+          4,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          1,
+          12,
+          4,
+          1,
+          4,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          1,
+          3,
+          16,
+          0,
+          2,
+          0
+        ],
+        [
+          "Surprise",
+          1,
+          1,
+          1,
+          0,
+          19,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          4,
+          3,
+          4,
+          1,
+          10,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          21
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A11. P11 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          20,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          "Fear",
+          0,
+          14,
+          3,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          2,
+          14,
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          2,
+          0,
+          4,
+          13,
+          1,
+          2,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          3,
+          3,
+          0,
+          11,
+          4,
+          1
+        ],
+        [
+          "Disgust",
+          0,
+          1,
+          2,
+          5,
+          2,
+          12,
+          0
+        ],
+        [
+          "Neutral",
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          19
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A12. P12 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          20,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          "Fear",
+          1,
+          13,
+          1,
+          0,
+          0,
+          6,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          1,
+          18,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          1,
+          2,
+          16,
+          2,
+          1,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          0,
+          2,
+          3,
+          17,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          2,
+          3,
+          0,
+          1,
+          1,
+          11,
+          4
+        ],
+        [
+          "Neutral",
+          1,
+          0,
+          0,
+          0,
+          1,
+          4,
+          16
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A13. P13 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          20,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          "Fear",
+          2,
+          17,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          1,
+          18,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          "Anger",
+          0,
+          0,
+          1,
+          20,
+          0,
+          0,
+          1
+        ],
+        [
+          "Surprise",
+          0,
+          3,
+          1,
+          1,
+          17,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          1,
+          0,
+          1,
+          0,
+          1,
+          15,
+          4
+        ],
+        [
+          "Neutral",
+          0,
+          1,
+          1,
+          0,
+          1,
+          3,
+          16
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A14. P14 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          7,
+          1,
+          0,
+          0,
+          0,
+          7,
+          7
+        ],
+        [
+          "Fear",
+          2,
+          14,
+          1,
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          1,
+          14,
+          2,
+          5,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          0,
+          2,
+          17,
+          2,
+          0,
+          1
+        ],
+        [
+          "Surprise",
+          0,
+          2,
+          10,
+          3,
+          7,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          5,
+          2,
+          0,
+          0,
+          0,
+          14,
+          1
+        ],
+        [
+          "Neutral",
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          19
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A15. P15 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          10,
+          0,
+          0,
+          0,
+          0,
+          5,
+          7
+        ],
+        [
+          "Fear",
+          3,
+          14,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          16,
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          1,
+          4,
+          8,
+          6,
+          2,
+          1
+        ],
+        [
+          "Surprise",
+          0,
+          0,
+          5,
+          3,
+          13,
+          1,
+          0
+        ],
+        [
+          "Disgust",
+          4,
+          4,
+          0,
+          0,
+          0,
+          13,
+          1
+        ],
+        [
+          "Neutral",
+          4,
+          0,
+          0,
+          0,
+          0,
+          1,
+          17
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A16. P16 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          16,
+          0,
+          0,
+          0,
+          0,
+          4,
+          2
+        ],
+        [
+          "Fear",
+          0,
+          9,
+          5,
+          4,
+          2,
+          0,
+          2
+        ],
+        [
+          "Joy",
+          1,
+          3,
+          7,
+          3,
+          4,
+          3,
+          1
+        ],
+        [
+          "Anger",
+          2,
+          4,
+          3,
+          8,
+          4,
+          1,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          4,
+          2,
+          3,
+          13,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          4,
+          0,
+          0,
+          0,
+          2,
+          12,
+          4
+        ],
+        [
+          "Neutral",
+          1,
+          3,
+          2,
+          0,
+          0,
+          3,
+          13
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A17. P17 actor confusion matrix from the RekEmozio dataset in the second phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          7,
+          1,
+          0,
+          0,
+          0,
+          8,
+          6
+        ],
+        [
+          "Fear",
+          1,
+          9,
+          2,
+          3,
+          4,
+          3,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          2,
+          7,
+          9,
+          3,
+          1,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          6,
+          7,
+          4,
+          5,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          2,
+          3,
+          2,
+          10,
+          5,
+          0
+        ],
+        [
+          "Disgust",
+          3,
+          3,
+          0,
+          1,
+          5,
+          9,
+          1
+        ],
+        [
+          "Neutral",
+          8,
+          0,
+          1,
+          0,
+          0,
+          2,
+          11
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A18. A1 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          13,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A19. A2 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          11,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A20. A3 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          12,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          "Joy",
+          1,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A21. A4 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          7,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          0,
+          0,
+          7,
+          1,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A22. A5 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          8,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          4,
+          0,
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          2,
+          0,
+          0,
+          1,
+          5,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A23. A6 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          3,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          1,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A24. A7 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          11,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          1,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          "Anger",
+          1,
+          0,
+          1,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          1,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A25. A8 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          7,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          0,
+          0,
+          1,
+          10,
+          1,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          6,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A26. A9 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          11,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          7,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          "Anger",
+          2,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          2,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          8
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A27. A10 actor confusion matrix from the Emo-DB in the third phase.",
+      "headers": [
+        "",
+        "Sadness",
+        "Fear",
+        "Joy",
+        "Anger",
+        "Surprise",
+        "Disgust",
+        "Neutral"
+      ],
+      "rows": [
+        [
+          "Sadness",
+          12,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          "Fear",
+          0,
+          12,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          "Joy",
+          0,
+          1,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Anger",
+          1,
+          0,
+          1,
+          4,
+          1,
+          0,
+          0
+        ],
+        [
+          "Surprise",
+          1,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          "Disgust",
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          "Neutral",
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    }
+  ]
+}

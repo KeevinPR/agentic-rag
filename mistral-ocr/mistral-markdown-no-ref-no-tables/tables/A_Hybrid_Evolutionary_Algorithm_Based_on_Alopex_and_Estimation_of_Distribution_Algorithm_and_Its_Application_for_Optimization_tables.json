@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/A Hybrid Evolutionary Algorithm Based on Alopex and Estimation of Distribution Algorithm and Its Application for Optimization.md",
+    "filename": "A Hybrid Evolutionary Algorithm Based on Alopex and Estimation of Distribution Algorithm and Its Application for Optimization.md",
+    "title": "A Hybrid Evolutionary Algorithm Based on Alopex and Estimation of Distribution Algorithm and Its Application for Optimization",
+    "year": "2010"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test functions",
+      "headers": [
+        "No",
+        "Name",
+        "Function",
+        "D",
+        "Target",
+        "Bounds"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "Easom",
+          "$-\\alpha \\mathrm{s}\\left(x_{i}\\right) \\times \\alpha \\mathrm{s}\\left(x_{2}\\right) \\times \\exp \\left(-(x_{i}-\\pi)^{2}+(x_{2}-\\pi)^{2}\\right)$",
+          2,
+          "$-0.99$",
+          "$[-100,100]$"
+        ],
+        [
+          "$f_{2}$",
+          "Six hump",
+          "$\\left(4-2.1 x_{1}^{2}+x_{1}^{2}\\right) x_{1}^{2}+x_{1} x_{2}+\\left(-4+4 x_{2}^{2}\\right) x_{2}^{2}$",
+          2,
+          "$-1.03$",
+          "$[-5,5]$"
+        ],
+        [
+          "$f_{3}$",
+          "Ellipsoidal",
+          "$\\sum_{i=1}^{n}\\left(x_{i}-i\\right)^{2}$",
+          10,
+          0.001,
+          "$[-10,10]$"
+        ],
+        [
+          "$f_{5}$",
+          "Exponential",
+          "$1-\\left(\\exp \\left(-0.5 \\sum_{i=1}^{n} x_{i}^{2}\\right)\\right)$",
+          30,
+          0.001,
+          "$[-1,1]$"
+        ],
+        [
+          "$f_{6}$",
+          "Griewank",
+          "$1+\\frac{1}{4000} \\sum_{i=1}^{n} x_{i}^{2}-\\prod_{i=1}^{n} \\cos \\left(\\frac{x_{i}}{\\sqrt{i}}\\right)$",
+          30,
+          0.1,
+          "$[-600,600]$"
+        ],
+        [
+          "$f_{7}$",
+          "Rastrigin",
+          "$10 n+\\sum_{i=1}^{n}\\left[x_{i}^{2}-10 \\cos \\left(2 \\pi x_{i}\\right)\\right]$",
+          30,
+          100,
+          "$[-5.12,5.12]$"
+        ],
+        [
+          "$f_{8}$",
+          "Rosenbrock",
+          "$\\sum_{i=1}^{n-1}\\left[100\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(x_{i}-1\\right)^{2}\\right]$",
+          30,
+          100,
+          "$[-2.048,2.048]$"
+        ],
+        [
+          "$f_{9}$",
+          "Sphere",
+          "$\\sum_{i=1}^{n} x_{i}^{2}$",
+          30,
+          0.001,
+          "$[-5.12,5.12]$"
+        ],
+        [
+          "$f_{10}$",
+          "Ackley",
+          "$-20 \\exp \\left(-0.02 \\sqrt{n} \\sum_{i=1}^{n} x_{i}^{2}\\right)-\\exp \\left(\\frac{1}{n} \\sum_{i=1}^{n} \\cos (2 \\pi x_{i}\\right)\\right)+20+e$",
+          30,
+          1,
+          "$[-30,30]$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparative average best function value and standard deviation over 50 runs",
+      "headers": [
+        "No",
+        "EDA-Alopex",
+        "AEA",
+        "PSO",
+        "DE"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$-\\mathbf{1} \\pm \\mathbf{0}$",
+          "$-1 \\pm 0$",
+          "$-1 \\pm 0$",
+          "$-0.98 \\pm 1.41 \\mathrm{E}-01$"
+        ],
+        [
+          "$f_{2}$",
+          "$-\\mathbf{1 . 0 3} \\pm \\mathbf{0}$",
+          "$-1.03 \\pm 0$",
+          "$-1.03 \\pm 2.24 \\mathrm{E}-16$",
+          "$-1.03 \\pm 0$"
+        ],
+        [
+          "$f_{3}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$0 \\pm 0$",
+          "$8.00 \\mathrm{E}-02 \\pm 2.74 \\mathrm{E}-01$",
+          "$0 \\pm 0$"
+        ],
+        [
+          "$f_{4}$",
+          "$-\\mathbf{4 . 1 9 E}+\\mathbf{0 3} \\pm \\mathbf{1 . 8 4 E - 1 2}$",
+          "$-4.19 \\mathrm{E}+03 \\pm 1.84 \\mathrm{E}-12$",
+          "$-3.40 \\mathrm{E}+03 \\pm 2.26 \\mathrm{E}+02$",
+          "$-4.15 \\mathrm{E}+03 \\pm 7.42 \\mathrm{E}+0$"
+        ],
+        [
+          "$f_{5}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$2.42 \\mathrm{E}-16 \\pm 4.86 \\mathrm{E}-17$",
+          "$1.04 \\mathrm{E}-16 \\pm 2.66 \\mathrm{E}-17$",
+          "$1.11 \\mathrm{E}-16 \\pm 0$"
+        ],
+        [
+          "$f_{6}$",
+          "$\\mathbf{0} \\pm \\mathbf{0}$",
+          "$5.61 \\mathrm{E}-03 \\pm 8.31 \\mathrm{E}-03$",
+          "$1.51 \\mathrm{E}-02 \\pm 1.60 \\mathrm{E}-02$",
+          "$.34 \\mathrm{E}-07 \\pm 6.85 \\mathrm{E}-07$"
+        ],
+        [
+          "$f_{7}$",
+          "$1.80 \\mathrm{E}+01 \\pm 1.96 \\mathrm{E}+01$",
+          "$7.53 \\mathrm{E}+\\mathbf{0 0} \\pm \\mathbf{6 . 0 3 E + 0 0}$",
+          "$4.21 \\mathrm{E}+01 \\pm 1.07 \\mathrm{E}+01$",
+          "$1.19 \\mathrm{E}+02 \\pm 8.16 \\mathrm{E}+00$"
+        ],
+        [
+          "$f_{8}$",
+          "$1.83 \\mathrm{E}+01 \\pm 1.21 \\mathrm{E}-01$",
+          "$2.37 \\mathrm{E}+01 \\pm 2.54 \\mathrm{E}-01$",
+          "$2.38 \\mathrm{E}+01 \\pm 7.68 \\mathrm{E}+00$",
+          "$1.35 \\mathrm{E}+01 \\pm 4.63 \\mathrm{E}-01$"
+        ],
+        [
+          "$f_{9}$",
+          "$1.25 \\mathrm{E}-239 \\pm 0$",
+          "$8.07 \\mathrm{E}-52 \\pm 9.83 \\mathrm{E}-52$",
+          "$8.13 \\mathrm{E}-31 \\pm 2.38 \\mathrm{E}-30$",
+          "$2.00 \\mathrm{E}-32 \\pm 1.31 \\mathrm{E}-32$"
+        ],
+        [
+          "$f_{10}$",
+          "$4.00 \\mathrm{E}-15 \\pm 0$",
+          "$2.10 \\mathrm{E}-14 \\pm 4.00 \\mathrm{E}-15$",
+          "$1.50 \\mathrm{E}-14 \\pm 4.00 \\mathrm{E}-15$",
+          "$8.85 \\mathrm{E}-15 \\pm 2.22 \\mathrm{E}-15$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison of convergence and efficiency of four algorithms over 50 runs",
+      "headers": [
+        "No",
+        "EDA-Alopex",
+        "",
+        "",
+        "AEA",
+        "",
+        "",
+        "PSO",
+        "",
+        "",
+        "DE",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "RS",
+          "AG",
+          "AFEN",
+          "RS",
+          "AG",
+          "AFEN",
+          "RS",
+          "AG",
+          "AFEN",
+          "RS",
+          "AG",
+          "AFEN"
+        ],
+        [
+          "$f_{1}$",
+          50,
+          12,
+          1321,
+          50,
+          55,
+          2882,
+          50,
+          335,
+          16810,
+          50,
+          58,
+          2964
+        ],
+        [
+          "$f_{2}$",
+          50,
+          7,
+          778,
+          50,
+          17,
+          892,
+          50,
+          62,
+          3147,
+          50,
+          21,
+          1106
+        ],
+        [
+          "$f_{3}$",
+          50,
+          32,
+          6520,
+          50,
+          97,
+          9786,
+          43,
+          880,
+          88112,
+          50,
+          95,
+          9574
+        ],
+        [
+          "$f_{4}$",
+          50,
+          193,
+          38796,
+          50,
+          501,
+          50244,
+          "-",
+          0,
+          0,
+          38,
+          891,
+          89161
+        ],
+        [
+          "$f_{5}$",
+          50,
+          33,
+          6696,
+          50,
+          100,
+          10092,
+          50,
+          1149,
+          114992,
+          50,
+          304,
+          30518
+        ],
+        [
+          "$f_{6}$",
+          50,
+          60,
+          12116,
+          50,
+          244,
+          24540,
+          50,
+          1559,
+          156016,
+          50,
+          634,
+          63544
+        ],
+        [
+          "$f_{7}$",
+          50,
+          770,
+          154108,
+          50,
+          773,
+          77448,
+          50,
+          848,
+          84886,
+          2,
+          2650,
+          265050
+        ],
+        [
+          "$f_{8}$",
+          50,
+          16,
+          3380,
+          50,
+          35,
+          3568,
+          50,
+          343,
+          34440,
+          50,
+          228,
+          22852
+        ],
+        [
+          "$f_{9}$",
+          50,
+          51,
+          10288,
+          50,
+          195,
+          19642,
+          50,
+          1454,
+          145522,
+          50,
+          454,
+          45538
+        ],
+        [
+          "$f_{10}$",
+          50,
+          40,
+          8192,
+          50,
+          130,
+          13132,
+          50,
+          1330,
+          133106,
+          50,
+          392,
+          39250
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 13
+    },
+    {
+      "table_number": "4",
+      "table_title": "Optimization results for high-dimension test functions",
+      "headers": [
+        "No",
+        "EDA-Alopex",
+        "AEA",
+        "PSO",
+        "DE"
+      ],
+      "rows": [
+        [
+          1,
+          "4.20E-14 $\\pm 7.00 \\mathrm{E}-15$",
+          "$2.65 \\mathrm{E}+00 \\pm 2.17 \\mathrm{E}-01$",
+          "$1.55 \\mathrm{E}-01 \\pm 2.90 \\mathrm{E}-01$",
+          "$7.65 \\mathrm{E}-02 \\pm 1.04 \\mathrm{E}-02$"
+        ],
+        [
+          2,
+          "$-1.24 \\mathrm{E}+04 \\pm 2.59 \\mathrm{E}+02$",
+          "$-1.17 \\mathrm{E}+04 \\pm 5.38 \\mathrm{E}+02$",
+          "$-7.88 \\mathrm{E}+03 \\pm 5.63 \\mathrm{E}+02$",
+          "$-9.18 \\mathrm{E}+03 \\pm 8.96 \\mathrm{E}+02$"
+        ],
+        [
+          3,
+          "5.42E-04 $\\pm 2.24 \\mathrm{E}-03$",
+          "$1.13 \\mathrm{E}-03 \\pm 2.87 \\mathrm{E}-03$",
+          "$1.28 \\mathrm{E}-02 \\pm 3.60 \\mathrm{E}-02$",
+          "$9.53 \\mathrm{E}-02 \\pm 2.39 \\mathrm{E}-02$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    }
+  ]
+}

@@ -1,0 +1,916 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Trainability maximization using estimation of distribution algorithms assisted by surrogate modelling for quantum architecture search.md",
+    "filename": "Trainability maximization using estimation of distribution algorithms assisted by surrogate modelling for quantum architecture search.md",
+    "title": "Trainability maximization using estimation of distribution algorithms assisted by surrogate modelling for quantum architecture search",
+    "year": "2024"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Bharti K, Cervera-Lierta A, Kyaw TH, Haug T, Alperin-Lea S, Anand A, Degroote M, Heimonen H, Kottmann JS, Menke T, et al. Noisy intermediate-scale quantum algorithms. Rev Mod Phys. 2022;94(1):015004.\n2. Peruzzo A, McClean J, Shadbolt P, Yung M-H, Zhou X-Q, Love PJ, Aspuru-Guzik A, O'brien JL. A variational eigenvalue solver on a photonic quantum processor. Nat Commun. 2014;5(1):4213.\n3. Soloviev VP, Bielza C, Larrañaga P. Quantum approximate optimization algorithm for Bayesian network structure learning. Quantum Inf Process. 2022;22(1):19.\n4. Schuld M, Petruccione F. Supervised learning with quantum computers. vol. 17. Berlin: Springer; 2018.\n5. Wiśniewska J, Saverwain M. Variational quantum eigensolver for classification in credit sales risk. 2023. arXiv:2303. 02797 .\n6. KI Barkoutsos P, Nannicini G, Robert A, Tavernelli I, Woerner S. Improving variational quantum optimization using CValR. Quantum. 2020;4:256.\n7. Li L, Fan M, Coram M, Riley P, Leichenauer S, et al. Quantum optimization with a novel Gibbs objective function and ansatz architecture search. Phys Rev Res. 2020;2(2):023074.\n8. Farhi E, Goldstone J, Gutmann S. A quantum approximate optimization algorithm. 2014. arXiv:1411.4028.\n9. Ruder S. An overview of gradient descent optimization algorithms. 2016. arXiv:1609.04747.\n10. Byrd RH, Lu P, Nocedal J, Zhu C. A limited memory algorithm for bound constrained optimization. SIAM J Sci Comput. 1995;16(5):1190-208.\n11. Soloviev VP, Larrañaga P, Bielza C. Variational quantum algorithm parameter tuning with estimation of distribution algorithms. In: 2023 IEEE congress on evolutionary computation. IEEE; 2023. p. 1-9.\n12. Spall JC. Multivariate stochastic approximation using a simultaneous perturbation gradient approximation. IEEE Trans Autom Control. 1992;37(3):332-41.\n13. Garcia-Saez A, Riu J. Quantum observables for continuous control of the quantum approximate optimization algorithm via reinforcement learning. 2019. arXiv:1911.09682.\n14. Mejía-de Dios J-A, Rodríguez-Molina A, Mezura-Montes E. Multiobjective bilevel optimization: a survey of the state-of-the-art. In: IEEE transactions on systems, man, and cybernetics systems. 2023.\n15. Anschuetz ER, Kiani BT. Quantum variational algorithms are swamped with traps. Nat Commun. 2022;13(1):7760.\n16. Cerezo M, Sone A, Volkoff T, Cincio L, Coles PJ. Cost function dependent barren plateaus in shallow parametrized quantum circuits. Nat Commun. 2021;12(1):1791.\n17. McClean JR, Boixo S, Smelyansky VN, Babbush R, Neven H. Barren plateaus in quantum neural network training landscapes. Nat Commun. 2018;9(1):4812.\n18. Pérez-Salinas A, Wang H, Bonet-Monroig X. Analyzing variational quantum landscapes with information content. 2023. arXiv:2303.16893.\n19. Pirhooshyaran M, Terlaky T. Quantum circuit design search. Quantum Mach Intell. 2021;3:1-14.\n20. Fösel T, Niu MY, Marquardt F, Li L. Quantum circuit optimization with deep reinforcement learning. 2021. arXiv:2103. 07585 .\n21. Ostaszewski M, Trenkwalder LM, Masarczyk W, Scerri E, Dunjko V. Reinforcement learning for optimization of variational quantum circuit architectures. Adv Neural Inf Process Syst. 2021;34:18182-94.\n22. Patel YJ, Kundu A, Ostaszewski M, Bonet-Monroig X, Dunjko V, Danaci O. Curriculum reinforcement learning for quantum architecture search under hardware errors. 2024. arXiv preprint. arXiv:2402.03500.\n23. Chivilikhin D, Samarin A, Ulyantsev V, Iorsh I, Oganov AR, Kyrrienko O. MoG-VQE: Multiobjective genetic variational quantum eigensolver. 2020. arXiv:2007.04424.\n24. Rattew AG, Hu S, Pistoia M, Chen R, Wood S. A domain-agnostic, noise-resistant, hardware-efficient evolutionary variational quantum eigensolver. 2019. arXiv:1910.09694.\n25. Sünkel L, Martyniuk D, Mattern D, Jung J, Paschke A. GA4QCO: genetic algorithm for quantum circuit optimization. 2023. arXiv:2302.01303.\n\n26. Grimsley HR, Economou SE, Barnes E, Mayhall NJ. An adaptive variational algorithm for exact molecular simulations on a quantum computer. Nat Commun. 2019;10(1):3007.\n27. Ostaszewski M, Grant E, Benedetti M. Structure optimization for parameterized quantum circuits. Quantum. 2021;5:391.\n28. Wu W, Yan G, Lu X, Pan K, Yan J. QuantumDARTS: differentiable quantum architecture search for variational quantum algorithms. 2023.\n29. Liu H, Simonyan K, Darts YY. Differentiable architecture search. 2018. arXiv:1806.09055.\n30. Zhang S-X, Hsieh C-Y, Zhang S, Yao H. Differentiable quantum architecture search. Quantum Sci Technol. 2022;7(4):045023.\n31. Du Y, Huang T, You S, Hsieh M-H, Tao D. Quantum circuit architecture search: error mitigation and trainability enhancement for variational quantum solvers. 2020. arXiv:2010.10217.\n32. Linghu K, Qian Y, Wang R, Hu M-J, Li Z, Li X, Xu H, Zhang J, Ma T, Zhao P, et al. Quantum circuit architecture search on a superconducting processor. 2022. arXiv:2201.00934.\n33. Larrañaga P, Lozano JA. Estimation of distribution algorithms: a new tool for evolutionary computation. Dordrecht: Kluwer Academic; 2001.\n34. Li M, Yao X. Quality evaluation of solution sets in multiobjective optimisation: a survey. ACM Comput Surv. 2019;52(2):1-38.\n35. Beume N, Fonseca CM, Lopez-Ibanez M, Paquete L, Vahrenhold J. On the complexity of computing the hypervolume indicator. IEEE Trans Evol Comput. 2009;13(5):1075-82.\n36. Larrañaga P, Bielza C. Estimation of distribution algorithms in machine learning: a survey. In: IEEE transactions on evolutionary computation. 2023.\n37. Shi R, Luo J, Liu Q. Fast evolutionary neural architecture search based on Bayesian surrogate model. In: 2021 IEEE congress on evolutionary computation. IEEE; 2021. p. 1217-24.\n38. Chang C-C, Lin C-J. LIBSVM: a library for support vector machines. ACM Trans Intell Syst Technol. 2011;2(3):1-27.\n39. Nakayama A, Mitarai K, Placidi L, Sugimoto T, Fujii K. VQE-generated quantum circuit dataset for machine learning; 2023.\n40. Van der Maaten L, Hinton G. Visualizing data using t-SNE. J Mach Learn Res. 2008;9(11).\n41. Powell MJ. Direct search algorithms for optimization calculations. Acta Numer. 1998;7:287-336.\n42. Liu S, Lin Q, Li J, Tan KC. A survey on learnable evolutionary algorithms for scalable multiobjective optimization. IEEE Trans Evol Comput. 2023;27(6):1941-61.\n43. Liu J, Sarker R, Elsayed S, Essam D, Siswanto N. Large-scale evolutionary optimization: a review and comparative study. Swarm Evol Comput. 2024;58:101466.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Bharti K, Cervera-Lierta A, Kyaw TH, Haug T, Alperin-Lea S, Anand A, Degroote M, Heimonen H, Kottmann JS, Menke T, et al. Noisy intermediate-scale quantum algorithms. Rev Mod Phys. 2022;94(1):015004."
+      },
+      {
+        "ref_id": "2",
+        "text": "Peruzzo A, McClean J, Shadbolt P, Yung M-H, Zhou X-Q, Love PJ, Aspuru-Guzik A, O'brien JL. A variational eigenvalue solver on a photonic quantum processor. Nat Commun. 2014;5(1):4213."
+      },
+      {
+        "ref_id": "3",
+        "text": "Soloviev VP, Bielza C, Larrañaga P. Quantum approximate optimization algorithm for Bayesian network structure learning. Quantum Inf Process. 2022;22(1):19."
+      },
+      {
+        "ref_id": "4",
+        "text": "Schuld M, Petruccione F. Supervised learning with quantum computers. vol. 17. Berlin: Springer; 2018."
+      },
+      {
+        "ref_id": "5",
+        "text": "Wiśniewska J, Saverwain M. Variational quantum eigensolver for classification in credit sales risk. 2023. arXiv:2303. 02797 ."
+      },
+      {
+        "ref_id": "6",
+        "text": "KI Barkoutsos P, Nannicini G, Robert A, Tavernelli I, Woerner S. Improving variational quantum optimization using CValR. Quantum. 2020;4:256."
+      },
+      {
+        "ref_id": "7",
+        "text": "Li L, Fan M, Coram M, Riley P, Leichenauer S, et al. Quantum optimization with a novel Gibbs objective function and ansatz architecture search. Phys Rev Res. 2020;2(2):023074."
+      },
+      {
+        "ref_id": "8",
+        "text": "Farhi E, Goldstone J, Gutmann S. A quantum approximate optimization algorithm. 2014. arXiv:1411.4028."
+      },
+      {
+        "ref_id": "9",
+        "text": "Ruder S. An overview of gradient descent optimization algorithms. 2016. arXiv:1609.04747."
+      },
+      {
+        "ref_id": "10",
+        "text": "Byrd RH, Lu P, Nocedal J, Zhu C. A limited memory algorithm for bound constrained optimization. SIAM J Sci Comput. 1995;16(5):1190-208."
+      },
+      {
+        "ref_id": "11",
+        "text": "Soloviev VP, Larrañaga P, Bielza C. Variational quantum algorithm parameter tuning with estimation of distribution algorithms. In: 2023 IEEE congress on evolutionary computation. IEEE; 2023. p. 1-9."
+      },
+      {
+        "ref_id": "12",
+        "text": "Spall JC. Multivariate stochastic approximation using a simultaneous perturbation gradient approximation. IEEE Trans Autom Control. 1992;37(3):332-41."
+      },
+      {
+        "ref_id": "13",
+        "text": "Garcia-Saez A, Riu J. Quantum observables for continuous control of the quantum approximate optimization algorithm via reinforcement learning. 2019. arXiv:1911.09682."
+      },
+      {
+        "ref_id": "14",
+        "text": "Mejía-de Dios J-A, Rodríguez-Molina A, Mezura-Montes E. Multiobjective bilevel optimization: a survey of the state-of-the-art. In: IEEE transactions on systems, man, and cybernetics systems. 2023."
+      },
+      {
+        "ref_id": "15",
+        "text": "Anschuetz ER, Kiani BT. Quantum variational algorithms are swamped with traps. Nat Commun. 2022;13(1):7760."
+      },
+      {
+        "ref_id": "16",
+        "text": "Cerezo M, Sone A, Volkoff T, Cincio L, Coles PJ. Cost function dependent barren plateaus in shallow parametrized quantum circuits. Nat Commun. 2021;12(1):1791."
+      },
+      {
+        "ref_id": "17",
+        "text": "McClean JR, Boixo S, Smelyansky VN, Babbush R, Neven H. Barren plateaus in quantum neural network training landscapes. Nat Commun. 2018;9(1):4812."
+      },
+      {
+        "ref_id": "18",
+        "text": "Pérez-Salinas A, Wang H, Bonet-Monroig X. Analyzing variational quantum landscapes with information content. 2023. arXiv:2303.16893."
+      },
+      {
+        "ref_id": "19",
+        "text": "Pirhooshyaran M, Terlaky T. Quantum circuit design search. Quantum Mach Intell. 2021;3:1-14."
+      },
+      {
+        "ref_id": "20",
+        "text": "Fösel T, Niu MY, Marquardt F, Li L. Quantum circuit optimization with deep reinforcement learning. 2021. arXiv:2103. 07585 ."
+      },
+      {
+        "ref_id": "21",
+        "text": "Ostaszewski M, Trenkwalder LM, Masarczyk W, Scerri E, Dunjko V. Reinforcement learning for optimization of variational quantum circuit architectures. Adv Neural Inf Process Syst. 2021;34:18182-94."
+      },
+      {
+        "ref_id": "22",
+        "text": "Patel YJ, Kundu A, Ostaszewski M, Bonet-Monroig X, Dunjko V, Danaci O. Curriculum reinforcement learning for quantum architecture search under hardware errors. 2024. arXiv preprint. arXiv:2402.03500."
+      },
+      {
+        "ref_id": "23",
+        "text": "Chivilikhin D, Samarin A, Ulyantsev V, Iorsh I, Oganov AR, Kyrrienko O. MoG-VQE: Multiobjective genetic variational quantum eigensolver. 2020. arXiv:2007.04424."
+      },
+      {
+        "ref_id": "24",
+        "text": "Rattew AG, Hu S, Pistoia M, Chen R, Wood S. A domain-agnostic, noise-resistant, hardware-efficient evolutionary variational quantum eigensolver. 2019. arXiv:1910.09694."
+      },
+      {
+        "ref_id": "25",
+        "text": "Sünkel L, Martyniuk D, Mattern D, Jung J, Paschke A. GA4QCO: genetic algorithm for quantum circuit optimization. 2023. arXiv:2302.01303."
+      },
+      {
+        "ref_id": "26",
+        "text": "Grimsley HR, Economou SE, Barnes E, Mayhall NJ. An adaptive variational algorithm for exact molecular simulations on a quantum computer. Nat Commun. 2019;10(1):3007."
+      },
+      {
+        "ref_id": "27",
+        "text": "Ostaszewski M, Grant E, Benedetti M. Structure optimization for parameterized quantum circuits. Quantum. 2021;5:391."
+      },
+      {
+        "ref_id": "28",
+        "text": "Wu W, Yan G, Lu X, Pan K, Yan J. QuantumDARTS: differentiable quantum architecture search for variational quantum algorithms. 2023."
+      },
+      {
+        "ref_id": "29",
+        "text": "Liu H, Simonyan K, Darts YY. Differentiable architecture search. 2018. arXiv:1806.09055."
+      },
+      {
+        "ref_id": "30",
+        "text": "Zhang S-X, Hsieh C-Y, Zhang S, Yao H. Differentiable quantum architecture search. Quantum Sci Technol. 2022;7(4):045023."
+      },
+      {
+        "ref_id": "31",
+        "text": "Du Y, Huang T, You S, Hsieh M-H, Tao D. Quantum circuit architecture search: error mitigation and trainability enhancement for variational quantum solvers. 2020. arXiv:2010.10217."
+      },
+      {
+        "ref_id": "32",
+        "text": "Linghu K, Qian Y, Wang R, Hu M-J, Li Z, Li X, Xu H, Zhang J, Ma T, Zhao P, et al. Quantum circuit architecture search on a superconducting processor. 2022. arXiv:2201.00934."
+      },
+      {
+        "ref_id": "33",
+        "text": "Larrañaga P, Lozano JA. Estimation of distribution algorithms: a new tool for evolutionary computation. Dordrecht: Kluwer Academic; 2001."
+      },
+      {
+        "ref_id": "34",
+        "text": "Li M, Yao X. Quality evaluation of solution sets in multiobjective optimisation: a survey. ACM Comput Surv. 2019;52(2):1-38."
+      },
+      {
+        "ref_id": "35",
+        "text": "Beume N, Fonseca CM, Lopez-Ibanez M, Paquete L, Vahrenhold J. On the complexity of computing the hypervolume indicator. IEEE Trans Evol Comput. 2009;13(5):1075-82."
+      },
+      {
+        "ref_id": "36",
+        "text": "Larrañaga P, Bielza C. Estimation of distribution algorithms in machine learning: a survey. In: IEEE transactions on evolutionary computation. 2023."
+      },
+      {
+        "ref_id": "37",
+        "text": "Shi R, Luo J, Liu Q. Fast evolutionary neural architecture search based on Bayesian surrogate model. In: 2021 IEEE congress on evolutionary computation. IEEE; 2021. p. 1217-24."
+      },
+      {
+        "ref_id": "38",
+        "text": "Chang C-C, Lin C-J. LIBSVM: a library for support vector machines. ACM Trans Intell Syst Technol. 2011;2(3):1-27."
+      },
+      {
+        "ref_id": "39",
+        "text": "Nakayama A, Mitarai K, Placidi L, Sugimoto T, Fujii K. VQE-generated quantum circuit dataset for machine learning; 2023."
+      },
+      {
+        "ref_id": "40",
+        "text": "Van der Maaten L, Hinton G. Visualizing data using t-SNE. J Mach Learn Res. 2008;9(11)."
+      },
+      {
+        "ref_id": "41",
+        "text": "Powell MJ. Direct search algorithms for optimization calculations. Acta Numer. 1998;7:287-336."
+      },
+      {
+        "ref_id": "42",
+        "text": "Liu S, Lin Q, Li J, Tan KC. A survey on learnable evolutionary algorithms for scalable multiobjective optimization. IEEE Trans Evol Comput. 2023;27(6):1941-61."
+      },
+      {
+        "ref_id": "43",
+        "text": "Liu J, Sarker R, Elsayed S, Essam D, Siswanto N. Large-scale evolutionary optimization: a review and comparative study. Swarm Evol Comput. 2024;58:101466."
+      }
+    ],
+    "reference_count": 43,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 ANOVA one-way test to reject the null hypothesis of equal means between the mean distances (Equation (20)), from the proposed by [39] ansatzes found by EDAs and $\\left\\{D_{1}^{n}, D_{2}^{n}, D_{3}^{n}, D_{4}^{n}\\right\\}$ proposed for $\\left\\{H_{1}, H_{2}, H_{3}, H_{4}\\right\\}$, respectively. A threshold of $5 \\mathrm{e}-2$ has been set to reject the null hypothesis, highlighting in bold those results below this value",
+      "headers": [
+        "$H_{i}$",
+        "$n=4$",
+        "$n=8$",
+        "$n=12$"
+      ],
+      "rows": [
+        [
+          "$H_{1}$",
+          "$\\mathbf{3 . 0 e - 3 4}$",
+          "$\\mathbf{3 . 0 e - 2}$",
+          "$6.0 \\mathrm{e}-1$"
+        ],
+        [
+          "$H_{2}$",
+          "$\\mathbf{1 . 3 e - 4}$",
+          "$\\mathbf{1 . 1 e - 2}$",
+          "$1.5 \\mathrm{e}-1$"
+        ],
+        [
+          "$H_{3}$",
+          "$\\mathbf{1 . 0 e - 1 5}$",
+          "$3.0 \\mathrm{e}-1$",
+          "$1.1 \\mathrm{e}-1$"
+        ],
+        [
+          "$H_{4}$",
+          "$\\mathbf{2 . 0 e - 8}$",
+          "$\\mathbf{5 . 1 e - 2}$",
+          "$2.1 \\mathrm{e}-1$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Accuracy found after evaluating each model in a set of initial architectures using cross-validation with 15 folds. Independently of $n$, all the ansatzes have been restricted to $m=60$, and $N=37.5 n$. Random forest with different numbers of estimators, k-nearest neighbors (KNN) with different numbers of neighbors, support vector classifier (SVC), decision tree, and naive Bayes have been tested",
+      "headers": [
+        "model",
+        "$n=4$",
+        "$n=8$",
+        "$n=12$"
+      ],
+      "rows": [
+        [
+          20,
+          0.76,
+          0.77,
+          0.75
+        ],
+        [
+          50,
+          0.81,
+          0.82,
+          0.8
+        ],
+        [
+          80,
+          0.82,
+          0.83,
+          0.8
+        ],
+        [
+          2,
+          0.64,
+          0.66,
+          0.68
+        ],
+        [
+          5,
+          0.72,
+          0.74,
+          0.75
+        ],
+        [
+          15,
+          0.78,
+          0.79,
+          0.79
+        ],
+        [
+          "SVC",
+          "$\\mathbf{0 . 9 1}$",
+          "$\\mathbf{0 . 9 2}$",
+          "$\\mathbf{0 . 9 0}$"
+        ],
+        [
+          "Decision tree",
+          0.64,
+          0.65,
+          0.65
+        ],
+        [
+          "Naive Bayes",
+          0.69,
+          0.76,
+          0.78
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Distance (Equation (20)) between each ansatz in $\\mathrm{EDA}_{i j}^{A}$ and $D_{i}^{A}$, where $i$ denotes the Hamiltonian index and $n=4$. Bold values represent those instances in which the closest cluster to $\\mathrm{EDA}_{i j}^{A}$ is $D_{i}^{A}$",
+      "headers": [
+        "ansatz $\\left(\\mathrm{EDA}_{i j}^{A}\\right)$",
+        "$H_{i}$",
+        "$\\operatorname{dist}\\left(\\mathrm{EDA}_{i j}^{A}, D_{i}^{A}\\right)$",
+        "$\\operatorname{dist}\\left(\\mathrm{EDA}_{i j}^{A}, D_{i}^{A}\\right)$",
+        "$\\operatorname{dist}\\left(\\mathrm{EDA}_{i j}^{A}, D_{i}^{A}\\right)$",
+        "$\\operatorname{dist}\\left(\\mathrm{EDA}_{i j}^{A}, D_{i}^{A}\\right)$"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{i}$",
+          "$\\mathbf{0 . 0 1 8}$",
+          0.998,
+          0.99,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{i}$",
+          "$\\mathbf{0 . 0 1 1}$",
+          0.999,
+          0.995,
+          0.995
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{i}$",
+          "$\\mathbf{0 . 0 1 1}$",
+          0.999,
+          0.989,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{i}$",
+          "$\\mathbf{0 . 0 2 7}$",
+          0.99,
+          0.991,
+          0.995
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{i}$",
+          "$\\mathbf{0 . 0 1 1}$",
+          0.999,
+          0.989,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{2}$",
+          0.999,
+          "$\\mathbf{0 . 0 3 8}$",
+          0.982,
+          0.997
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{2}$",
+          0.999,
+          "$\\mathbf{0 . 0 4 9}$",
+          0.993,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{2}$",
+          0.993,
+          0.954,
+          "$\\mathbf{0 . 2 3 3}$",
+          0.88
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{2}$",
+          0.999,
+          "$\\mathbf{0 . 0 3 5}$",
+          0.976,
+          0.99
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{2}$",
+          0.97,
+          "$\\mathbf{0 . 3 7 4}$",
+          0.794,
+          0.965
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{3}$",
+          0.993,
+          0.999,
+          "$\\mathbf{0 . 0 5 1}$",
+          0.66
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{3}$",
+          0.992,
+          0.999,
+          "$\\mathbf{0 . 0 5 8}$",
+          0.648
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{3}$",
+          0.988,
+          0.998,
+          "$\\mathbf{0 . 0 6 4}$",
+          0.646
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{3}$",
+          0.995,
+          0.997,
+          "$\\mathbf{0 . 0 6 9}$",
+          0.631
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{3}$",
+          0.987,
+          0.999,
+          "$\\mathbf{0 . 0 5 6}$",
+          0.637
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{4}$",
+          0.991,
+          0.995,
+          0.691,
+          "$\\mathbf{0 . 0 7 7}$"
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{4}$",
+          0.993,
+          0.992,
+          0.752,
+          "$\\mathbf{0 . 0 6 1}$"
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{4}$",
+          0.998,
+          0.991,
+          0.811,
+          "$\\mathbf{0 . 0 8 1}$"
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{4}$",
+          0.992,
+          0.997,
+          0.702,
+          "$\\mathbf{0 . 0 9 9}$"
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{A}$",
+          "$H_{4}$",
+          0.99,
+          0.993,
+          0.329,
+          "$\\mathbf{0 . 0 1 1}$"
+        ]
+      ],
+      "row_count": 20,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Distance (Equation (20)) between each ansatz in $\\mathrm{EDA}_{i j}^{B}$ and $D_{i}^{B}$, where $i$ denotes the Hamiltonian index and $n=8$. Bold values represent those instances in which the closest cluster to $\\mathrm{EDA}_{i j}^{A}$ is $D_{i}^{B}$",
+      "headers": [
+        "ansatz $\\left(\\mathrm{EDA}_{i j}^{B}\\right)$",
+        "$H_{i}$",
+        "dist( $\\left.\\mathrm{EDA}_{i j}^{B}, D_{i}^{B}\\right)$",
+        "dist( $\\left.\\mathrm{EDA}_{i j}^{B}, D_{i}^{B}\\right)$",
+        "dist( $\\left.\\mathrm{EDA}_{i j}^{B}, D_{i}^{B}\\right)$",
+        "dist( $\\left.\\mathrm{EDA}_{i j}^{B}, D_{i}^{B}\\right)$"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{1}$",
+          "$\\mathbf{0 . 9 7 3}$",
+          0.995,
+          0.995,
+          0.997
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{1}$",
+          "$\\mathbf{0 . 9 5 0}$",
+          0.996,
+          0.996,
+          0.994
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{1}$",
+          "$\\mathbf{0 . 8 3 0}$",
+          0.998,
+          0.998,
+          0.998
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{1}$",
+          "$\\mathbf{0 . 5 5 3}$",
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{1}$",
+          "$\\mathbf{0 . 9 4 2}$",
+          0.995,
+          0.99,
+          0.997
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{2}$",
+          0.99,
+          "$\\mathbf{0 . 9 2 6}$",
+          0.968,
+          0.991
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{2}$",
+          0.998,
+          "$\\mathbf{0 . 9 0 6}$",
+          0.998,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{2}$",
+          0.998,
+          "$\\mathbf{0 . 9 6 3}$",
+          0.989,
+          0.995
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{2}$",
+          0.996,
+          "$\\mathbf{0 . 9 9 2}$",
+          0.998,
+          0.998
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{2}$",
+          0.999,
+          "$\\mathbf{0 . 9 9 1}$",
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{3}$",
+          0.999,
+          0.999,
+          "$\\mathbf{0 . 9 5 7}$",
+          0.995
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{3}$",
+          0.999,
+          "$\\mathbf{0 . 9 5 8}$",
+          0.983,
+          0.985
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{3}$",
+          0.999,
+          0.999,
+          "$\\mathbf{0 . 5 2 2}$",
+          0.949
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{3}$",
+          0.998,
+          0.996,
+          "$\\mathbf{0 . 9 5 8}$",
+          0.983
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{3}$",
+          0.999,
+          "$\\mathbf{0 . 9 2 2}$",
+          0.999,
+          0.996
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{4}$",
+          0.999,
+          0.999,
+          "$\\mathbf{0 . 9 7 1}$",
+          0.981
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{4}$",
+          0.999,
+          0.998,
+          0.992,
+          "$\\mathbf{0 . 9 4 5}$"
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{4}$",
+          0.998,
+          0.998,
+          "$\\mathbf{0 . 9 8 8}$",
+          0.996
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{4}$",
+          0.999,
+          0.999,
+          "$\\mathbf{0 . 9 8 2}$",
+          0.994
+        ],
+        [
+          "$\\mathrm{EDA}_{i j}^{B}$",
+          "$H_{4}$",
+          0.999,
+          0.999,
+          0.999,
+          "$\\mathbf{0 . 9 8 8}$"
+        ]
+      ],
+      "row_count": 20,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Distance (Equation (20)) between each ansatz in $\\mathrm{EDA}_{5}^{12}$ and $D_{i}^{12}$, where $i$ denotes the Hamiltonian index and $n=12$",
+      "headers": [
+        "ansatz $\\left(\\mathrm{EDA}_{5}^{12}\\right)$",
+        "$H_{i}$",
+        "$\\operatorname{dist}\\left(\\mathrm{EDA}_{5}^{12}, D_{i}^{12}\\right)$",
+        "$\\operatorname{dist}\\left(\\mathrm{EDA}_{i 2}^{12}, D_{i}^{12}\\right)$",
+        "$\\operatorname{dist}\\left(\\mathrm{EDA}_{5}^{12}, D_{i}^{12}\\right)$",
+        "$\\operatorname{dist}\\left(\\mathrm{EDA}_{4 i}^{12}, D_{4}^{12}\\right)$"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{EDA}_{i}^{12}$",
+          "$H_{1}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i}^{12}$",
+          "$H_{1}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 2}^{12}$",
+          "$H_{1}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 2}^{12}$",
+          "$H_{1}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 1}^{12}$",
+          "$H_{1}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 1}^{12}$",
+          "$H_{2}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 2}^{12}$",
+          "$H_{2}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 2}^{12}$",
+          "$H_{2}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 3}^{12}$",
+          "$H_{2}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 3}^{12}$",
+          "$H_{2}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 4}^{12}$",
+          "$H_{3}$",
+          0.999,
+          0.998,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 4}^{12}$",
+          "$H_{3}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 5}^{12}$",
+          "$H_{3}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 5}^{12}$",
+          "$H_{3}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 6}^{12}$",
+          "$H_{4}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 6}^{12}$",
+          "$H_{4}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{i 7}^{12}$",
+          "$H_{4}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{4 i}^{12}$",
+          "$H_{4}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ],
+        [
+          "$\\mathrm{EDA}_{4 i}^{12}$",
+          "$H_{4}$",
+          0.999,
+          0.999,
+          0.999,
+          0.999
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Mean and standard deviation of expectation value (E) (Equation (1)) and information content (IC) (Equation (7)), respectively, found in the ansatz in the dataset whose depth is in the range $m \\pm \\sqrt{m}$, for different number of qubits $n$ and Hamiltonian $H_{i}$",
+      "headers": [
+        "",
+        "$n=4$",
+        "",
+        "$n=8$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$E$",
+          "IC",
+          "$E$",
+          "IC"
+        ],
+        [
+          "$H_{1}$",
+          "$-8.37 \\pm 0.01$",
+          "$0.47 \\pm 0.14$",
+          "$-16.89 \\pm 0.01$",
+          "$0.46 \\pm 0.16$"
+        ],
+        [
+          "$H_{2}$",
+          "$-7.83 \\pm 0.01$",
+          "$0.51 \\pm 0.16$",
+          "$-15.92 \\pm 0.02$",
+          "$0.45 \\pm 0.06$"
+        ],
+        [
+          "$H_{3}$",
+          "$-14.19 \\pm 1.87$",
+          "$0.63 \\pm 0.15$",
+          "$-30.07 \\pm 0.01$",
+          "$0.51 \\pm 0.07$"
+        ],
+        [
+          "$H_{4}$",
+          "$-17.18 \\pm 2.20$",
+          "$0.80 \\pm 0.09$",
+          "$-39.05 \\pm 0.04$",
+          "$0.82 \\pm 0.15$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Best expectation value (E) (Equation (1)) and information content (IC) (Equation (7)) found by the EDA approach (assisted by COBYLA) for different number of qubits ( $n$ ) and Hamiltonians $\\left(H_{i}\\right)$, where $H V$ is maximized in the best Pareto approximation",
+      "headers": [
+        "",
+        "$n=4$",
+        "",
+        "$n=8$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$E$",
+          "IC",
+          "$E$",
+          "IC"
+        ],
+        [
+          "$H_{1}$",
+          -7.81,
+          0.97,
+          -16.18,
+          0.56
+        ],
+        [
+          "$H_{2}$",
+          -6.74,
+          0.73,
+          -13.58,
+          0.45
+        ],
+        [
+          "$H_{3}$",
+          -14.03,
+          1.0,
+          -29.28,
+          0.43
+        ],
+        [
+          "$H_{4}$",
+          -17.21,
+          1.47,
+          -26.87,
+          1.57
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    }
+  ]
+}

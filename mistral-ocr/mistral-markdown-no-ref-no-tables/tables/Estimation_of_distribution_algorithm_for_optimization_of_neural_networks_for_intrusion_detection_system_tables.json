@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/Estimation of distribution algorithm for optimization of neural networks for intrusion detection system.md",
+    "filename": "Estimation of distribution algorithm for optimization of neural networks for intrusion detection system.md",
+    "title": "Estimation of distribution algorithm for optimization of neural networks for intrusion detection system",
+    "year": "2006"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The flexible activation functions",
+      "headers": [
+        "Gaussian Function",
+        "$f(x, a, b)=\\exp \\left(-\\frac{(x-a)^{2}}{b^{2}}\\right)$"
+      ],
+      "rows": [
+        [
+          "Bipolar sigmoid function",
+          "$f(x, a)=\\frac{1-e^{-2 x a}}{a\\left(1+e^{-2 x a}\\right)}$"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Detection performance using EDA-NN, PSO-NN and DT classification models for test data set",
+      "headers": [
+        "Attack Class",
+        "EDA-NN",
+        "PSO-NN",
+        "DT"
+      ],
+      "rows": [
+        [
+          "Normal",
+          "$\\mathbf{9 7 . 5 8 \\%}$",
+          "$95.69 \\%$",
+          "$82.32 \\%$"
+        ],
+        [
+          "Probe",
+          "$\\mathbf{9 5 . 5 7 \\%}$",
+          "$95.53 \\%$",
+          "$94.83 \\%$"
+        ],
+        [
+          "DOS",
+          "$\\mathbf{9 7 . 7 6 \\%}$",
+          "$90.41 \\%$",
+          "$77.10 \\%$"
+        ],
+        [
+          2,
+          "$99.90 \\%$",
+          "$\\mathbf{1 0 0 \\%}$",
+          "$99.83 \\%$"
+        ],
+        [
+          2,
+          "$\\mathbf{9 8 . 9 0 \\%}$",
+          "$98.10 \\%$",
+          "$94.33 \\%$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison of false positive rate ( fp ) and true positive rate ( tp ) for EDA-NN, PSO-NN and DT classifiers for test data set",
+      "headers": [
+        "Attack",
+        "EDA-NN",
+        "",
+        "PSO-NN",
+        "",
+        "DT",
+        ""
+      ],
+      "rows": [
+        [
+          "Class",
+          "$\\mathrm{fp}(\\%)$",
+          "$\\mathrm{tp}(\\%)$",
+          "$\\mathrm{fp}(\\%)$",
+          "$\\mathrm{tp}(\\%)$",
+          "$\\mathrm{fp}(\\%)$",
+          "$\\mathrm{tp}(\\%)$"
+        ],
+        [
+          "Normal",
+          0.29,
+          99.64,
+          4.3,
+          88.7,
+          29.66,
+          99.6
+        ],
+        [
+          "Probe",
+          0.02,
+          56.57,
+          0.4,
+          37.15,
+          0.24,
+          31.0
+        ],
+        [
+          "DOS",
+          3.94,
+          98.86,
+          3.68,
+          89.38,
+          72.1,
+          97.63
+        ],
+        [
+          2,
+          0.01,
+          52.0,
+          0.05,
+          55.81,
+          0.022,
+          59.26
+        ],
+        [
+          2,
+          0.08,
+          87.39,
+          0.17,
+          86.63,
+          0.022,
+          30.73
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    }
+  ]
+}

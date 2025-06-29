@@ -1,0 +1,780 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Parameter Optimization Algorithms for Evolving Rule Models Applied to Freshwater Ecosystems.md",
+    "filename": "Parameter Optimization Algorithms for Evolving Rule Models Applied to Freshwater Ecosystems.md",
+    "title": "Parameter Optimization Algorithms for Evolving Rule Models Applied to Freshwater Ecosystems",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "PARAMETERS USED AS INPUT AND OUTPUT VARIABLES FOR Evolutionary Modeling With the Hea Methodology",
+      "headers": [
+        "Division",
+        "Categories",
+        "Variables",
+        "Unit",
+        "Mean $\\pm$ SD"
+      ],
+      "rows": [
+        [
+          "Input <br> Variables",
+          "Physical",
+          "Electrical Conductivity <br> (EC)",
+          "$\\mu \\mathrm{S} / \\mathrm{cm}$",
+          354.9
+        ],
+        [
+          "",
+          "",
+          "Turbidity (NTU)",
+          "Nephelometric <br> Turbidity Unit <br> (NTU)",
+          12.92
+        ],
+        [
+          "",
+          "",
+          "Water Temperature (WT)",
+          "${ }^{\\circ} \\mathrm{C}$",
+          22.66
+        ],
+        [
+          "",
+          "Chemical",
+          "Dissolved Oxygen (DO)",
+          "$\\mathrm{mg} / \\mathrm{L}$",
+          8.67
+        ],
+        [
+          "",
+          "",
+          "pH (pH)",
+          "pH Unit",
+          8.21
+        ],
+        [
+          "",
+          "",
+          "Reactive $\\mathrm{SiO}_{2}\\left(\\mathrm{SiO}_{2}\\right)$",
+          "$\\mathrm{mg} / \\mathrm{L}$",
+          3.24
+        ],
+        [
+          "",
+          "",
+          "Total Nitrogen (TN)",
+          "$\\mathrm{mg} / \\mathrm{L}$",
+          0.48
+        ],
+        [
+          "",
+          "",
+          "Total Phosphorus (TP)",
+          "$\\mathrm{mg} / \\mathrm{L}$",
+          0.019
+        ],
+        [
+          "Output <br> Variables",
+          "Biological",
+          "Chlorophyll-a (Chl-a)",
+          "$\\mu \\mathrm{g} / \\mathrm{L}$",
+          7.82
+        ],
+        [
+          "",
+          "",
+          "Cylindrospermopsis raciborskii (C. raciborskii)",
+          "cells/mL",
+          10108
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "Statistical Comparison of the Six Po Algorithms for the Two Test Data Sets After 100 Runs of Each Algorithm",
+      "headers": [
+        "Data <br> Sets",
+        "No.",
+        "PO <br> Algo.",
+        "Total RMSE <br> (Mean $\\pm$ SD)",
+        "Run- <br> Time <br> (h)",
+        "No. of Total <br> Tree Nodes",
+        "No. of <br> Parameters to <br> Optimize"
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          "HC",
+          "$3.75 \\pm 0.25$",
+          1.75,
+          28.7,
+          6.5
+        ],
+        [
+          "",
+          2,
+          "SA",
+          "$4.33 \\pm 0.44$",
+          0.92,
+          16.6,
+          3.3
+        ],
+        [
+          "Chl-a",
+          3,
+          "GA",
+          "$4.04 \\pm 0.18$",
+          1.13,
+          19.7,
+          3.9
+        ],
+        [
+          "Data",
+          4,
+          "DE",
+          "$3.97 \\pm 0.16$",
+          1.19,
+          20.5,
+          4.1
+        ],
+        [
+          "",
+          5,
+          "CMA-ES",
+          "$4.38 \\pm 0.084$",
+          1.31,
+          17.2,
+          3.4
+        ],
+        [
+          "",
+          6,
+          "EDA",
+          "$4.17 \\pm 0.16$",
+          1.01,
+          16.9,
+          3.6
+        ],
+        [
+          "",
+          1,
+          "HC",
+          "$14320.77 \\pm 1280.43$",
+          3.5,
+          36.8,
+          9.0
+        ],
+        [
+          "",
+          2,
+          "SA",
+          "$14467.44 \\pm 915.88$",
+          2.8,
+          24.7,
+          4.7
+        ],
+        [
+          "C. raciborskii",
+          3,
+          "GA",
+          "$15674.24 \\pm 573.03$",
+          2.4,
+          26.5,
+          6.2
+        ],
+        [
+          "",
+          4,
+          "DE",
+          "$15217.4 \\pm 510.57$",
+          2.6,
+          28.7,
+          6.7
+        ],
+        [
+          "",
+          5,
+          "CMA-ES",
+          "$18772.74 \\pm 846.83$",
+          3.3,
+          31.4,
+          7.8
+        ],
+        [
+          "",
+          6,
+          "EDA",
+          "$16373.12 \\pm 1005.84$",
+          2.7,
+          25.7,
+          5.6
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 7
+    },
+    {
+      "table_number": "III",
+      "table_title": "Best Models Obtained for Chl.-a After 100 Runs of Each of the Six Po Algorithms",
+      "headers": [
+        "PO <br> Algo.",
+        "Best Model",
+        "Total <br> RMSE"
+      ],
+      "rows": [
+        [
+          "SA",
+          "IF (EC>=357.207) <br> THEN Chl- $a=\\mathrm{pH}+\\left(\\ln \\left(\\left(\\mathrm{TN}\\left(\\mathrm{D}-\\mathrm{SiO}_{2}+2.941\\right)+\\ln \\left(\\left(\\left(\\mathrm{TP} * \\mathrm{P}(17.145-\\mathrm{NTU})\\right)\\right)\\right.\\right.\\right.\\right.$",
+          3.9
+        ],
+        [
+          "DE",
+          "IF (EC $=362.372$ ) <br> THEN Chl- $a=\\left(\\right.99.57-\\mathrm{pH}) * \\mathrm{pH} * \\mathrm{~pH} * \\mathrm{WT} * 8.0469-55.399 / \\mathrm{WT}$ <br> ELSE Chl- $a=\\mathrm{pH}-\\left(\\mathrm{SiO}_{2}-\\mathrm{pH}\\right) / 11.346-\\left(\\mathrm{SiO}_{2}-2.348\\right) *(\\mathrm{SiO} 2-\\mathrm{WT} / 23.117)$",
+          3.57
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Best Models Obtained for C. raciborski After 100 Runs of Each of the Six Po Algorithms",
+      "headers": [
+        "PO <br> Algo.",
+        "Best Model",
+        "Total <br> RMSE"
+      ],
+      "rows": [
+        [
+          "HC",
+          "$\\begin{gathered} \\mathrm{IF}\\left(\\left(\\mathrm{SiO}_{2}<6.412\\right) \\mathrm{AND}\\left(\\mathrm{WT}^{*} \\mathrm{SiO}_{2}\\right)>126.629\\right) \\mathrm{AND}(\\mathrm{EC}>=257.975) \\\\ \\text { AND(NTU>2.365)) } \\\\ \\text { THEN C. raciborskii }=(2 * \\mathrm{NTU}+\\exp (\\mathrm{pH}) \\cdot 498.514) * 16.653 \\\\ \\text { ELSE C. raciborskii }=(\\mathrm{WT}-\\mathrm{In}(\\mathrm{TN})) \\cdot 21.73)^{*}(\\mathrm{WT}-\\mathrm{TN} / \\mathrm{DO}-20.543) \\\\ *(\\mathrm{NTU} * 5.376+296.446) \\end{gathered}$",
+          11567
+        ],
+        [
+          "SA",
+          "$\\begin{aligned} & \\text { IF ((TP }<=0.028) \\mathrm{AND}\\left(\\left(\\mathrm{SiO}_{2} \\cdot \\mathrm{pH}\\right) \\cdot>=0.734\\right) \\\\ & \\text { THEN C. raciborskii }=\\left(\\mathrm{NTU}+\\exp \\left(\\mathrm{SiO}_{2}\\right)+\\mathrm{WT} * 15.933-355.932\\right) \\\\ & *(\\mathrm{WT} * 21.906-445.928) \\end{aligned}$",
+          12053
+        ],
+        [
+          "GA",
+          "$\\begin{aligned} & \\text { ELSE C. raciborskii }=(2 * \\mathrm{WT}+152.225) *(\\mathrm{WT} * 19.638-452.542) \\\\ & \\text { IF }\\left(\\left(\\mathrm{SiO}_{2}<=6.424\\right) \\mathrm{AND}\\left(\\mathrm{NTU}>=310.704\\right) \\mathrm{OR}(\\mathrm{WT}>=25.713)\\right) \\\\ & \\text { THEN C. raciborskii }=\\left(\\left(\\right)\\left(\\mathrm{WT}^{*} \\mathrm{pH}\\right)+\\left(\\mathrm{SiO}_{2} * 44.835\\right)\\right) * 20.755 * \\mathrm{SiO}_{2} \\text { ) } \\\\ & \\text { ELSE C. raciborskii }=\\mathrm{WT} *(\\mathrm{EC} * \\mathrm{TN}+4.009) \\end{aligned}$",
+          14135
+        ],
+        [
+          "DE",
+          "$\\begin{aligned} & \\text { IF ((NTU }>=268.448) \\mathrm{AND}\\left(\\left(\\mathrm{WT}^{*} \\mathrm{NTU}\\right) \\cdot>=66.423\\right) \\mathrm{OR}(\\mathrm{WT} \\cos 25.82)) \\\\ & \\text { THEN C. raciborskii }=(\\mathrm{WT}+9.31) * \\mathrm{pH} * \\mathrm{WT} \\\\ & \\text { ELSE C. raciborskii }=\\mathrm{SiO}_{2} * 10059.73 \\end{aligned}$",
+          13861
+        ],
+        [
+          "$\\begin{aligned} & \\text { CMA } \\\\ & -\\mathrm{ES} \\end{aligned}$",
+          "IF (WT*In(WT) $>=82.596)$ <br> THEN C. raciborskii $=\\mathrm{NTU} * 96.246+2612.5$ <br> ELSE C. raciborskii $=\\left(\\mathrm{WT}+\\mathrm{NTU}+\\mathrm{WT}^{*} \\mathrm{SiO}_{2}+78.5\\right) * 131.266$",
+          15234
+        ],
+        [
+          "EDA",
+          "$\\begin{aligned} & \\text { IF ((DO }=4.464) \\mathrm{OR}(\\mathrm{DO}+9.568) \\mathrm{OR}\\left(\\mathrm{SiO}_{2}<=4.464\\right) \\\\ & \\text { OR }(\\mathrm{WT}-\\mathrm{SiO}_{2})=19.189) \\\\ & \\text { THEN C. raciborskii }=\\exp (\\mathrm{pH}) \\\\ & \\text { ELSE C. raciborskii }=\\exp (\\mathrm{pH}) * 14.743-2^{*} \\exp (\\mathrm{DO}) \\end{aligned}$",
+          14029
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "V",
+      "table_title": "AIC AND MDL SCORES ASSOCIATED WITH THE BEST MODELS Obtained) USING THE Six PO AlGORITHMS ON THE TWO TEST DATA SETS",
+      "headers": [
+        "Data Sets",
+        "Chl-a Data",
+        "",
+        "",
+        "",
+        "C. raciborskii Data",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "PO",
+          "RSS",
+          "K",
+          "AIC",
+          "MDL",
+          "RSS",
+          "K",
+          "AIC",
+          "MDL"
+        ],
+        [
+          "Algo.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "HC",
+          41349,
+          33,
+          18583,
+          18636,
+          "$5.37 \\times 10^{11}$",
+          47,
+          47144,
+          47218
+        ],
+        [
+          "SA",
+          60910,
+          27,
+          19246,
+          19289,
+          "$5.83 \\times 10^{11}$",
+          36,
+          47265,
+          47322
+        ],
+        [
+          "GA",
+          46829,
+          28,
+          18790,
+          18834,
+          "$8.01 \\times 10^{11}$",
+          29,
+          47804,
+          47850
+        ],
+        [
+          "DE",
+          51096,
+          35,
+          18956,
+          19011,
+          "$7.71 \\times 10^{11}$",
+          23,
+          47725,
+          47762
+        ],
+        [
+          "CMA-ES",
+          62811,
+          23,
+          19291,
+          19328,
+          "$9.31 \\times 10^{11}$",
+          22,
+          48052,
+          48087
+        ],
+        [
+          "EDA",
+          55367,
+          32,
+          19090,
+          19140,
+          "$7.89 \\times 10^{11}$",
+          28,
+          47776,
+          47820
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": "VI",
+      "table_title": "Statistical Comparison of the Six Po Algorithms For the Two Test Data Sets After 100 Runs of Each Algorithm When Parameter Optimization Is Carried Out After Evolution",
+      "headers": [
+        "Data <br> Sets",
+        "No.",
+        "PO <br> Algo.",
+        "Total RMSE <br> (Mean $\\pm$ SD)",
+        "Run- <br> Time <br> (sec.)",
+        "No. of Total <br> Tree Nodes",
+        "No. of <br> Parameters to <br> Optimize"
+      ],
+      "rows": [
+        [
+          "Chl-a <br> Data",
+          1,
+          "HC",
+          "$4.36 \\pm 0.093$",
+          63,
+          17.4,
+          3.5
+        ],
+        [
+          "",
+          2,
+          "SA",
+          "$4.39 \\pm 0.084$",
+          40,
+          17.1,
+          3.2
+        ],
+        [
+          "",
+          3,
+          "GA",
+          "$4.37 \\pm 0.074$",
+          61,
+          17.3,
+          3.6
+        ],
+        [
+          "",
+          4,
+          "DE",
+          "$4.35 \\pm 0.081$",
+          58,
+          17.1,
+          3.2
+        ],
+        [
+          "",
+          5,
+          "CMA-ES",
+          "$4.40 \\pm 0.097$",
+          68,
+          16.7,
+          3.1
+        ],
+        [
+          "",
+          6,
+          "EDA",
+          "$4.38 \\pm 0.095$",
+          61,
+          17.1,
+          3.2
+        ],
+        [
+          "C. raciborskii <br> Data",
+          1,
+          "HC",
+          18475.36,
+          74,
+          23.7,
+          4.3
+        ],
+        [
+          "",
+          2,
+          "SA",
+          18350.51,
+          52,
+          23.3,
+          4.8
+        ],
+        [
+          "",
+          3,
+          "GA",
+          18502.92,
+          73,
+          23.3,
+          4.2
+        ],
+        [
+          "",
+          4,
+          "DE",
+          18406.53,
+          69,
+          23.9,
+          4.2
+        ],
+        [
+          "",
+          5,
+          "CMA-ES",
+          19541.71,
+          64,
+          25.2,
+          4.3
+        ],
+        [
+          "",
+          6,
+          "EDA",
+          18588.74,
+          80,
+          25.0,
+          4.2
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 7
+    },
+    {
+      "table_number": "VII",
+      "table_title": "Statistical Comparison of 10000 Random Parameter MODELS Based on the Best Chl-a Model Structures Obtained for Each of the Six PO Algorithms",
+      "headers": [
+        "Best Model",
+        "Total RMSE",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Min",
+          "Max",
+          "Mean $\\pm$ SD"
+        ],
+        [
+          "HC",
+          4.08,
+          8.93,
+          "$5.14 \\pm 0.53$"
+        ],
+        [
+          "SA",
+          4.94,
+          497.1,
+          "$196.75 \\pm 140.84$"
+        ],
+        [
+          "GA",
+          4.6,
+          244.88,
+          "$122.25 \\pm 69.4$"
+        ],
+        [
+          "DE",
+          4.31,
+          2057.66,
+          "$632.87 \\pm 574.26$"
+        ],
+        [
+          "CMA-ES",
+          3.91,
+          6.38,
+          "$4.92 \\pm 0.10$"
+        ],
+        [
+          "EDA",
+          3.98,
+          6.36,
+          "$4.57 \\pm 0.25$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "Statistical Comparison of the Six Po Algorithms After 100 Runs of Each Algorithm BASED",
+      "headers": [
+        "PO <br> Algo.",
+        "Total RMSE <br> (Mean $\\pm$ SD)",
+        "TRAINING RMSE <br> (Mean $\\pm$ SD)",
+        "TESTING RMSE <br> (Mean $\\pm$ SD)",
+        "Run-Time <br> (sec.)"
+      ],
+      "rows": [
+        [
+          "HC",
+          "$3.81 \\pm 0.13$",
+          "$3.82 \\pm 0.14$",
+          "$3.78 \\pm 0.13$",
+          12.76
+        ],
+        [
+          "SA",
+          "$4.27 \\pm 0.078$",
+          "$4.28 \\pm 0.078$",
+          "$4.23 \\pm 0.078$",
+          12.98
+        ],
+        [
+          "GA",
+          "$3.96 \\pm 0.082$",
+          "$3.97 \\pm 0.082$",
+          "$3.92 \\pm 0.085$",
+          12.92
+        ],
+        [
+          "DE",
+          "$3.87 \\pm 0.23$",
+          "$3.88 \\pm 0.24$",
+          "$3.85 \\pm 0.22$",
+          12.8
+        ],
+        [
+          "CMA-ES",
+          "$6.43 \\pm 3.25$",
+          "$7.43 \\pm 3.76$",
+          "$12.84 \\pm 6.51$",
+          13.09
+        ],
+        [
+          "EDA",
+          "$5.05 \\pm 0.14$",
+          "$5.83 \\pm 0.17$",
+          "$10.07 \\pm 0.29$",
+          13.24
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "IX",
+      "table_title": "Statistical Comparison of Optimized Parameters for the Six Po Algorithms After 100 Runs",
+      "headers": [
+        "PO <br> Algo.",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "rows": [
+        [
+          "HC",
+          "$61.97 \\pm 167.90$",
+          "$70.77 \\pm 180.39$",
+          "$338.96 \\pm 120.65$",
+          "$273.86 \\pm 108.89$",
+          "$2.12 \\pm 0.20$",
+          "$1.26 \\pm 0.64$"
+        ],
+        [
+          "SA",
+          "$356.46 \\pm 0.078$",
+          "$386.41 \\pm 243.90$",
+          "$412.52 \\pm 248.83$",
+          "$412.84 \\pm 255.01$",
+          "$2.18 \\pm 0.34$",
+          "$0.51 \\pm 0.47$"
+        ],
+        [
+          "GA",
+          "$27.42 \\pm 95.43$",
+          "$189.28 \\pm 251.17$",
+          "$397.53 \\pm 156.34$",
+          "$269.92 \\pm 163.48$",
+          "$2.16 \\pm 0.10$",
+          "$0.93 \\pm 0.39$"
+        ],
+        [
+          "DE",
+          "$227.65 \\pm 255.19$",
+          "$109.88 \\pm 226.04$",
+          "$323.88 \\pm 124.01$",
+          "$319.87 \\pm 322.41$",
+          "$1.36 \\pm 0.61$",
+          "$1.61 \\pm 1.02$"
+        ],
+        [
+          "CMA-ES",
+          "$211.77 \\pm 148.95$",
+          "$225.46 \\pm 143.38$",
+          "$275.39 \\pm 146.03$",
+          "$244.40 \\pm 116.33$",
+          "$231.06 \\pm 130.05$",
+          "$6.49 \\pm 11.15$"
+        ],
+        [
+          "EDA",
+          "$932.73 \\pm 88.42$",
+          "$588.31 \\pm 113.70$",
+          "$621.16 \\pm 236.78$",
+          "$668.62 \\pm 276.14$",
+          "$743.22 \\pm 82.54$",
+          "$0.14 \\pm 0.53$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "X",
+      "table_title": "Best Parameter Sets Obtained by the Six Po Algorithms After 100 Runs of Each Algorithm",
+      "headers": [
+        "PO <br> Algo.",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "Total <br> RMSE"
+      ],
+      "rows": [
+        [
+          "HC",
+          7.11,
+          3.37,
+          356.76,
+          24.73,
+          0.92,
+          3.14,
+          3.41
+        ],
+        [
+          "SA",
+          733.02,
+          3.34,
+          358.04,
+          651.62,
+          1.12,
+          2.15,
+          3.87
+        ],
+        [
+          "GA",
+          7.1,
+          3.4,
+          342.94,
+          61.48,
+          2.13,
+          1.51,
+          3.73
+        ],
+        [
+          "DE",
+          7.31,
+          3.37,
+          354.41,
+          75.89,
+          0.95,
+          3.83,
+          3.47
+        ],
+        [
+          "CMA-ES",
+          982.1,
+          621.07,
+          428.92,
+          431.39,
+          780.58,
+          0.027,
+          5.03
+        ],
+        [
+          "EDA",
+          163.17,
+          3.38,
+          355.09,
+          302.96,
+          386.04,
+          0.03,
+          4.26
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 8
+    }
+  ]
+}

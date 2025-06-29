@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/A Hybrid EDA for Protein Folding Based on HP Model. IEEJ.md",
+    "filename": "A Hybrid EDA for Protein Folding Based on HP Model. IEEJ.md",
+    "title": "A Hybrid EDA for Protein Folding Based on HP Model. IEEJ",
+    "year": "2010"
+  },
+  "references": {
+    "header": "## References",
+    "content": "(1) Lau KF, Dill KA. A lattice statistical mechanics model of the conformational and sequence spaces of proteins. Marcromolecules 1989; 22:3986-3997.\n(2) Crescenzi P, Goldman D, Papadimitriou C, Piccolboni A, Yannakakis M. On the complexity of protein folding. Journal of Computational Biology 1998; 5(3):423-466.\n(3) Berger B, Leight T. Protein folding in the hydrophobic-hydrophilic (HP) model is NP-complete. Journal of Computational Biology 1998; 5(1):27-40.\n(4) Hart WE, Istrail SC. Fast protein folding in the hydrophobic hydrophilic model within three-eights of optimal. Journal of Computational Biology 1996; 3(1):53-96.\n(5) Unger R, Moult J. Genetic algorithms for protein folding simulations. Journal of Molecular Biology 1993; 231:75-81.\n(6) Greenwood GW, Shin J-M. On the evolutionary search for solutions to the protein folding problem. Evolutionary Computation in Bioinformatics, 2002; 115-136.\n(7) Song J, Cheng J, Zheng TT, mso J. A novel genetic algorithm for HP model protein folding. Proceedings of the 6th International Conference on Parallel Distributing, Computing and Applied Technologies (PDCAT-2005), Dalian, China 2005; 935-937.\n(8) Cotta C. Protein structure prediction using evolutionary algorithms hybridized with backtracking. In Artificial Neural Nets Problem Solving Methods, vol. 2687. Springer Verlag: Berlin, Germany; 2003; $321-328$.\n(9) Krasnogor N. Self-generating metaheuristics in bioinformatics: the protein structure comparison case. Genetic Programming and Evolvable Machines 2004; 5(2):181-201.\n(10) Duarte-Flores S, Smith JE. Study of fitness landscapes for the HP model of protein structure prediction. Proceedings of CEC-2003, Canberra, Australia, 2003; 2338-2345.\n(11) Santana R, Larranaga P, Lozano JA. Protein folding in simplified models with estimation of distribution algorithms. IEEE Transactions on Evolutionary Computation 2008; 12(4):418-438.\n(12) Larranaga P, Lozano JA (eds). Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic Publishers: Norwell; 2002.\n\n(13) Lozano JA, Larrañaga P, Inza I, Bengoetxea E. Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms. Springer-Verlag: Berlin, Germany; 2006.\n(14) M hlenbein H, Paab G. From recombination Of genes to the estimation of distributions i. binary parameters. Proceedings of the Parallel Problem Solving from Nature-PPSN IV, vol. 1411, Lecture Notes in Computer Science. Springer: Berlin, Heidelberg; 1996; 178-187.\n(15) Mendiburu A, Lozano JA, Miguel-Alonso J. Parallel implementation of EDAs based on probabilistic graphical models. IEEE Transactions on Evolutionary Computation 2005; 9(4):406-423.\n(16) K rastogor N, Hart WE, Smith J, Pelta DA. Protein structure prediction with evolutionary algorithms. Proceedings of the Genetic Evolutionary Computing Conference, Florida, USA, 1999; $1596-1601$.\n(17) Hoque M, Chetty M, Dooley LS. A guided genetic algorithm for protein folding prediction using 3D hydrophobic-hydrophilic model. Proceedings of CEC-2006, Vanconver, BC, Canada, 2006; $2339-2346$.\n(18) http://www.cs.sandia.gov/tech-reports/compbio/tortilla-hp-bench marks.html.\n\nBenhui Chen (Non-member) received the B.E. degree in computer science from Yunnan University, China, in 1999, and received the M.E. degree in computer science from Yunnan Normal University, China, in 2005. From 1999 to 2004, he worked as a Research Associate and from 2004 to 2008 as Lecturer at Dali University, China. Since April 2008, he has been pursuing the Ph.D. degree at Waseda University, Japan. His research interests include evolutionary computation, machine learning, and bioinformatics.\n\nJinglu Hu (Member) received the M.Sc. degree in electronic engineering from Zhongshan University, China, in 1986, and the Ph.D. degree in computer science and system engineering from Kyushu Institute of Technology, Japan. From 1986 to 1993, he worked as a Research Associate and Lecturer at Zhongshan University. From 1997 to 2003, he worked as a Research Associate at Kyushu University. From 2003 to 2008, he worked as an Associate Professor, and since April 2008, he has been a Professor at The Graduate School of Information, Production and Systems of Waseda University, Japan. His research interests include computational intelligence such as neural networks and genetic algorithms, and their applications to system modeling and identification, bioinformatics, time series prediction, and so on. Dr Hu is a member of IEEE, IEEJ, SICE, and IEECE.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Benhui Chen (Non-member) received the B.E. degree in computer science from Yunnan University, China, in 1999, and received the M.E. degree in computer science from Yunnan Normal University, China, in 2005. From 1999 to 2004, he worked as a Research Associate and from 2004 to 2008 as Lecturer at Dali University, China. Since April 2008, he has been pursuing the Ph.D. degree at Waseda University, Japan. His research interests include evolutionary computation, machine learning, and bioinformatics."
+      },
+      {
+        "ref_id": "2",
+        "text": "Jinglu Hu (Member) received the M.Sc. degree in electronic engineering from Zhongshan University, China, in 1986, and the Ph.D. degree in computer science and system engineering from Kyushu Institute of Technology, Japan. From 1986 to 1993, he worked as a Research Associate and Lecturer at Zhongshan University. From 1997 to 2003, he worked as a Research Associate at Kyushu University. From 2003 to 2008, he worked as an Associate Professor, and since April 2008, he has been a Professor at The Graduate School of Information, Production and Systems of Waseda University, Japan. His research interests include computational intelligence such as neural networks and genetic algorithms, and their applications to system modeling and identification, bioinformatics, time series prediction, and so on. Dr Hu is a member of IEEE, IEEJ, SICE, and IEECE."
+      }
+    ],
+    "reference_count": 2,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "HP instances used in the experiments",
+      "headers": [
+        "No.",
+        "Size",
+        "$E^{+}$",
+        "Sequence"
+      ],
+      "rows": [
+        [
+          1,
+          20,
+          "$-9$",
+          "$h p h p_{2} h_{2} p h p_{2} h p h_{2} p_{2} h p h$"
+        ],
+        [
+          2,
+          24,
+          "$-9$",
+          "$h_{2} p_{2}\\left(h p_{2}\\right)_{6} h_{2}$"
+        ],
+        [
+          3,
+          25,
+          "$-8$",
+          "$p_{3} h p_{2}\\left(h_{2} p_{4}\\right)_{3} h_{2}$"
+        ],
+        [
+          4,
+          36,
+          "$-14$",
+          "$p_{3} h_{2} p_{2} h_{2} p_{3} h_{2} p_{3} p_{6} h_{2} p_{2} h p_{2}$"
+        ],
+        [
+          5,
+          48,
+          "$-23$",
+          "$p_{2} h\\left(p_{2} h_{2}\\right)_{2} p_{5} h_{10} p_{6}\\left(h_{2} p_{2}\\right)_{2} h p_{2} h_{5}$"
+        ],
+        [
+          6,
+          50,
+          "$-21$",
+          "$h_{2}(p h)_{3} p h_{4} p\\left(h p_{3}\\right)_{2} h p h_{4}(p h)_{4} h$"
+        ],
+        [
+          7,
+          60,
+          "$-36$",
+          "$p_{2} h_{3} p h_{8} p_{3} h_{10} p h p_{3} h_{1} 2 p_{4} h_{6} p h_{2} p h p$"
+        ],
+        [
+          8,
+          64,
+          "$-42$",
+          "$h_{12}(p h)_{2}\\left(p_{2} h_{2}\\right)_{2} p_{2} h\\left(p_{2} h_{2}\\right)_{2} p_{2} h$ $\\left(p_{2} h_{2}\\right)_{2} p_{2}(h p)_{2} h_{12}$"
+        ],
+        [
+          9,
+          85,
+          "$-53$",
+          "$h_{4} p_{4} h_{12} p_{6}\\left(h_{12} p_{3}\\right)_{3} h\\left(p_{2} h_{2}\\right)_{2} p_{2} h p h$"
+        ],
+        [
+          10,
+          100,
+          "$-48$",
+          "$p_{6} h p h_{2} p_{5} h_{3} p h_{5} p h_{2} p_{4} h_{2} p_{2} h_{2} p h_{5} p h_{10}$ $p h_{2} p h_{7} p_{11} h_{7} p_{2} h p h_{3} p_{6} h p h h$"
+        ],
+        [
+          11,
+          100,
+          "$-50$",
+          "$p_{3} h_{2} p_{2} h_{4} p_{2} h_{3}\\left(p h_{2}\\right)_{3} h_{2} p_{4} h_{6} p_{2} h_{6}$ $p_{9} h p h_{2} p h_{11} p_{2} h_{3} p h_{2} p h p_{2} h p h_{3} p_{6} h_{3}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "Results of comparing with MK-EDA for 2-D HP model",
+      "headers": [
+        "No.",
+        "$E^{*}$",
+        "Proposed method",
+        "",
+        "MK-EDA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "$H(X)$",
+          "Percentage",
+          "$H(X)$",
+          "Percentage"
+        ],
+        [
+          1,
+          "$-9$",
+          "$-9$",
+          100,
+          "$-9$",
+          100
+        ],
+        [
+          2,
+          "$-9$",
+          "$-9$",
+          100,
+          "$-9$",
+          100
+        ],
+        [
+          3,
+          "$-8$",
+          "$-8$",
+          100,
+          "$-8$",
+          100
+        ],
+        [
+          4,
+          "$-14$",
+          "$-14$",
+          16,
+          "$-14$",
+          5
+        ],
+        [
+          5,
+          "$-23$",
+          "$-23$",
+          22,
+          "$-23$",
+          7
+        ],
+        [
+          6,
+          "$-21$",
+          "$-21$",
+          92,
+          "$-21$",
+          57
+        ],
+        [
+          7,
+          "$-36$",
+          "$-36$",
+          24,
+          "$-35$",
+          12
+        ],
+        [
+          8,
+          "$-42$",
+          "$-42$",
+          16,
+          "$-42$",
+          4
+        ],
+        [
+          9,
+          "$-53$",
+          "$-53$",
+          8,
+          "$-52$",
+          3
+        ],
+        [
+          10,
+          "$-48$",
+          "$-48$",
+          12,
+          "$-47$",
+          4
+        ],
+        [
+          11,
+          "$-50$",
+          "$-49$",
+          6,
+          "$-48$",
+          2
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "III",
+      "table_title": "Results achieved by different search methods for the 2-D HP model",
+      "headers": [
+        "No.",
+        "Proposed $H(X)$",
+        "MK-EDA $H(X)$",
+        "GA <br> $H(X)$",
+        "NewACO $H(X)$",
+        "PERM $H(X)$"
+      ],
+      "rows": [
+        [
+          1,
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$"
+        ],
+        [
+          2,
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$"
+        ],
+        [
+          3,
+          "$-8$",
+          "$-8$",
+          "$-8$",
+          "$-8$",
+          "$-8$"
+        ],
+        [
+          4,
+          "$-14$",
+          "$-14$",
+          "$-14$",
+          "$-14$",
+          "$-14$"
+        ],
+        [
+          5,
+          "$-23$",
+          "$-23$",
+          "$-22$",
+          "$-23$",
+          "$-23$"
+        ],
+        [
+          6,
+          "$-21$",
+          "$-21$",
+          "$-21$",
+          "$-21$",
+          "$-21$"
+        ],
+        [
+          7,
+          "$-36$",
+          "$-35$",
+          "$-34$",
+          "$-36$",
+          "$-36$"
+        ],
+        [
+          8,
+          "$-42$",
+          "$-42$",
+          "$-37$",
+          "$-42$",
+          "$-38$"
+        ],
+        [
+          9,
+          "$-53$",
+          "$-52$",
+          "",
+          "$-51$",
+          "$-53$"
+        ],
+        [
+          10,
+          "$-48$",
+          "$-47$",
+          "",
+          "$-47$",
+          "$-48$"
+        ],
+        [
+          11,
+          "$-49$",
+          "$-48$",
+          "",
+          "$-47$",
+          "$-50$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 6
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Results achieved by different search methods for the 3-D HP model",
+      "headers": [
+        "No.",
+        "Proposed <br> $H(X)$",
+        "MK-EDA <br> $H(X)$",
+        "Hybrid GA <br> $H(X)$",
+        "IA <br> $H(X)$"
+      ],
+      "rows": [
+        [
+          1,
+          -11,
+          -11,
+          -11,
+          -11
+        ],
+        [
+          2,
+          -13,
+          -13,
+          -11,
+          -13
+        ],
+        [
+          3,
+          -9,
+          -9,
+          -9,
+          -9
+        ],
+        [
+          4,
+          -18,
+          -18,
+          -18,
+          -18
+        ],
+        [
+          5,
+          -29,
+          -29,
+          -28,
+          -28
+        ],
+        [
+          6,
+          -30,
+          -29,
+          -22,
+          -23
+        ],
+        [
+          7,
+          -49,
+          -48,
+          -48,
+          -41
+        ],
+        [
+          8,
+          -51,
+          -50,
+          -46,
+          -42
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "V",
+      "table_title": "Comparing the results of improved backtracking repairing method in the 2-D HP model",
+      "headers": [
+        "No.",
+        "",
+        "Average-backtracking operation",
+        "",
+        "Average-CPU time (h)",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Size",
+          "MK-EDA",
+          "Proposed",
+          "MK-EDA",
+          "Proposed"
+        ],
+        [
+          1,
+          20,
+          2.14924,
+          2.14964,
+          0.2181,
+          0.2309
+        ],
+        [
+          2,
+          24,
+          2.57154,
+          2.57154,
+          0.2659,
+          0.2761
+        ],
+        [
+          3,
+          25,
+          2.68344,
+          2.70444,
+          0.2774,
+          0.2805
+        ],
+        [
+          4,
+          36,
+          3.88984,
+          3.87974,
+          0.3059,
+          0.3203
+        ],
+        [
+          5,
+          48,
+          5.25775,
+          5.26175,
+          0.4341,
+          0.4659
+        ],
+        [
+          6,
+          50,
+          5.78426,
+          5.48876,
+          0.6249,
+          0.5768
+        ],
+        [
+          7,
+          60,
+          7.45456,
+          6.74786,
+          0.9276,
+          0.7516
+        ],
+        [
+          8,
+          64,
+          9.67316,
+          7.22366,
+          1.1276,
+          0.8661
+        ],
+        [
+          9,
+          85,
+          2.08298,
+          1.11967,
+          12.3077,
+          1.6086
+        ],
+        [
+          10,
+          100,
+          2.65318,
+          1.97657,
+          15.7125,
+          2.0007
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 6
+    }
+  ]
+}

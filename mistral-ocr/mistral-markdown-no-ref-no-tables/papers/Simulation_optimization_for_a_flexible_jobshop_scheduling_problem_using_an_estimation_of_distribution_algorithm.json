@@ -1,0 +1,1425 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Simulation optimization for a flexible jobshop scheduling problem using an estimation of distribution algorithm.md",
+    "filename": "Simulation optimization for a flexible jobshop scheduling problem using an estimation of distribution algorithm.md",
+    "title": "Simulation optimization for a flexible jobshop scheduling problem using an estimation of distribution algorithm",
+    "year": "2014"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Mühlenbein H, Paaß G (1996) From recombination of genes to the estimation of distributions: I. Binary parameters. Parallel problem solving from nature PPSN IV, 178-187\n2. Chen SH, Chen MC, Chang PC, Zhang Q, Chen YM (2010) Guidelines for developing effective estimation of distribution algorithms in solving single machine scheduling problems. Expert Syst Appl 37:6441-6451\n3. Liu H, Gao L, Pan Q (2011) A hybrid particle swarm optimization with estimation of distribution algorithm for solving permutation flowshop scheduling problem. Expert Syst Appl 38:4348-4360\n4. Pan QK, Ruiz R (2012) An estimation of distribution algorithm for lot-streaming flow shop problems with setup times. Omega 40:166180\n5. Chen SH, Chang PC, Cheng T, Zhang Q (2012) A self-guided genetic algorithm for permutation flowshop scheduling problems. Comput Oper Res 39:1450-1457\n6. Wang L, Wang S, Xu Y, Zhou G, Liu M (2012) A bi-population based estimation of distribution algorithm for the flexible job-shop scheduling problem. Comput Ind Eng 62:917-926\n7. Chen YM, Chen MC, Chang PC, Chen SH (2012) Extended artificial chromosomes genetic algorithm for permutation flowshop scheduling problems. Comput Ind Eng 62:536-545\n8. Jarboui V, Eddaly M, Siarry P (2009) An estimation of distribution algorithm for minimizing the total flow time in permutation flowshop scheduling problems. Comput Oper Res 36:2638-2646\n9. Zhang Y, Li X (2011) Estimation of distribution algorithm for permutation flow shops with total flowtime minimization. Comput Ind Eng 60:706-718\n10. Chan FTS, Wong TC, Chan LY (2006) Flexible job-shop scheduling problem under resource constraints. Int J Prod Res 44(11):20712089\n11. Wadhwa S, Rao KS, Chan FTS (2005) Flexibility-enabled lead-time reduction in flexible systems. Int J Prod Res 43(15): $3131-3162$\n12. Chan FTS, Chung SH (2004) A multi-criterion genetic algorithm for order distribution in a demand driven supply chain. Int J Comput Integr Manuf 17(4):339-351\n13. Chan FTS (2001) The effects of routing flexibility on a flexible manufacturing system. Int J Comput Integr Manuf 14(5):431-445\n14. Peña J, Robles V, Larrañaga P, Herves V, Rosales F, Pérez M (2004) Ga-eda: hybrid evolutionary algorithm using genetic and estimation of distribution algorithms. Innovations in Applied Artificial Intelligence. Berlin/Heidelberg\n15. Shim VA, Chen Tan K, Yong Chia J, Kiat Chong J (2011) Evolutionary algorithms for solving multi-objective travelling salesman problem. Flex Serv Manuf J 23:207-241\n16. Yan Y, Wang G (2007) A job shop scheduling approach based on simulation optimization. Proceedings of the 2007 I.E. IEEM\n17. Sargent R (2007) Verification \\& validation of simulation models. Proceedings of the 2007 Winter Simulation Conference\n18. Whitter R, Balci O (1989) Guidelines for selecting and using simulation model verification techniques. Proceedings of the 1989 Winter Simulation Conference. Washington\n19. Pita J, Wang Q (2010) A simulation approach to facilitate manufacturing system design. Int J Simul Model 9-3:152-164\n20. Greenwood A, Vanguri S, Eksioglu B, Jain P, Hill T, Miller J, Walden C (2005) Simulation optimization decision support system for ship panel shop operations. Proceedings of the 2005 Winter Simulation Conference\n21. Rudolph G (1991) Global optimization by means of distributed evolution strategies. Parallel problem solving from nature PPSN I. Lectures notes in computer science\n22. Bean J, Norman B (1993) Random keys for job shop scheduling problem. The University of Michigan\n23. Larrañaga P, Exteberria R, Lozano J, Peña J (2000) Optimization in continuous domains by learning and simulation of Gaussian networks. Proceedings of the 2000 Genetic and Evolutionary Computation Conference Workshop Program\n24. De Bonet J, Isbell C, Viola P (1997) MIMIC: finding optima by estimation probability densities. Adv Neural Inf Process Syst 9\n25. Baluja S, Davies S (1997) Combining multiple optimization runs with optimal dependency trees. Carnegie Mellon University\n26. Pinedo M (2001) Scheduling. Springer Science + Business Media, New York\n27. Whitley D, Starweather T, Shaner D (1990) The traveling salesman and sequence scheduling: quality solutions using genetic edge recombination. In: L. Davis (Ed.), Handbook of genetic algorithms, (pp. 350-372). New York",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Mühlenbein H, Paaß G (1996) From recombination of genes to the estimation of distributions: I. Binary parameters. Parallel problem solving from nature PPSN IV, 178-187"
+      },
+      {
+        "ref_id": "2",
+        "text": "Chen SH, Chen MC, Chang PC, Zhang Q, Chen YM (2010) Guidelines for developing effective estimation of distribution algorithms in solving single machine scheduling problems. Expert Syst Appl 37:6441-6451"
+      },
+      {
+        "ref_id": "3",
+        "text": "Liu H, Gao L, Pan Q (2011) A hybrid particle swarm optimization with estimation of distribution algorithm for solving permutation flowshop scheduling problem. Expert Syst Appl 38:4348-4360"
+      },
+      {
+        "ref_id": "4",
+        "text": "Pan QK, Ruiz R (2012) An estimation of distribution algorithm for lot-streaming flow shop problems with setup times. Omega 40:166180"
+      },
+      {
+        "ref_id": "5",
+        "text": "Chen SH, Chang PC, Cheng T, Zhang Q (2012) A self-guided genetic algorithm for permutation flowshop scheduling problems. Comput Oper Res 39:1450-1457"
+      },
+      {
+        "ref_id": "6",
+        "text": "Wang L, Wang S, Xu Y, Zhou G, Liu M (2012) A bi-population based estimation of distribution algorithm for the flexible job-shop scheduling problem. Comput Ind Eng 62:917-926"
+      },
+      {
+        "ref_id": "7",
+        "text": "Chen YM, Chen MC, Chang PC, Chen SH (2012) Extended artificial chromosomes genetic algorithm for permutation flowshop scheduling problems. Comput Ind Eng 62:536-545"
+      },
+      {
+        "ref_id": "8",
+        "text": "Jarboui V, Eddaly M, Siarry P (2009) An estimation of distribution algorithm for minimizing the total flow time in permutation flowshop scheduling problems. Comput Oper Res 36:2638-2646"
+      },
+      {
+        "ref_id": "9",
+        "text": "Zhang Y, Li X (2011) Estimation of distribution algorithm for permutation flow shops with total flowtime minimization. Comput Ind Eng 60:706-718"
+      },
+      {
+        "ref_id": "10",
+        "text": "Chan FTS, Wong TC, Chan LY (2006) Flexible job-shop scheduling problem under resource constraints. Int J Prod Res 44(11):20712089"
+      },
+      {
+        "ref_id": "11",
+        "text": "Wadhwa S, Rao KS, Chan FTS (2005) Flexibility-enabled lead-time reduction in flexible systems. Int J Prod Res 43(15): $3131-3162$"
+      },
+      {
+        "ref_id": "12",
+        "text": "Chan FTS, Chung SH (2004) A multi-criterion genetic algorithm for order distribution in a demand driven supply chain. Int J Comput Integr Manuf 17(4):339-351"
+      },
+      {
+        "ref_id": "13",
+        "text": "Chan FTS (2001) The effects of routing flexibility on a flexible manufacturing system. Int J Comput Integr Manuf 14(5):431-445"
+      },
+      {
+        "ref_id": "14",
+        "text": "Peña J, Robles V, Larrañaga P, Herves V, Rosales F, Pérez M (2004) Ga-eda: hybrid evolutionary algorithm using genetic and estimation of distribution algorithms. Innovations in Applied Artificial Intelligence. Berlin/Heidelberg"
+      },
+      {
+        "ref_id": "15",
+        "text": "Shim VA, Chen Tan K, Yong Chia J, Kiat Chong J (2011) Evolutionary algorithms for solving multi-objective travelling salesman problem. Flex Serv Manuf J 23:207-241"
+      },
+      {
+        "ref_id": "16",
+        "text": "Yan Y, Wang G (2007) A job shop scheduling approach based on simulation optimization. Proceedings of the 2007 I.E. IEEM"
+      },
+      {
+        "ref_id": "17",
+        "text": "Sargent R (2007) Verification \\& validation of simulation models. Proceedings of the 2007 Winter Simulation Conference"
+      },
+      {
+        "ref_id": "18",
+        "text": "Whitter R, Balci O (1989) Guidelines for selecting and using simulation model verification techniques. Proceedings of the 1989 Winter Simulation Conference. Washington"
+      },
+      {
+        "ref_id": "19",
+        "text": "Pita J, Wang Q (2010) A simulation approach to facilitate manufacturing system design. Int J Simul Model 9-3:152-164"
+      },
+      {
+        "ref_id": "20",
+        "text": "Greenwood A, Vanguri S, Eksioglu B, Jain P, Hill T, Miller J, Walden C (2005) Simulation optimization decision support system for ship panel shop operations. Proceedings of the 2005 Winter Simulation Conference"
+      },
+      {
+        "ref_id": "21",
+        "text": "Rudolph G (1991) Global optimization by means of distributed evolution strategies. Parallel problem solving from nature PPSN I. Lectures notes in computer science"
+      },
+      {
+        "ref_id": "22",
+        "text": "Bean J, Norman B (1993) Random keys for job shop scheduling problem. The University of Michigan"
+      },
+      {
+        "ref_id": "23",
+        "text": "Larrañaga P, Exteberria R, Lozano J, Peña J (2000) Optimization in continuous domains by learning and simulation of Gaussian networks. Proceedings of the 2000 Genetic and Evolutionary Computation Conference Workshop Program"
+      },
+      {
+        "ref_id": "24",
+        "text": "De Bonet J, Isbell C, Viola P (1997) MIMIC: finding optima by estimation probability densities. Adv Neural Inf Process Syst 9"
+      },
+      {
+        "ref_id": "25",
+        "text": "Baluja S, Davies S (1997) Combining multiple optimization runs with optimal dependency trees. Carnegie Mellon University"
+      },
+      {
+        "ref_id": "26",
+        "text": "Pinedo M (2001) Scheduling. Springer Science + Business Media, New York"
+      },
+      {
+        "ref_id": "27",
+        "text": "Whitley D, Starweather T, Shaner D (1990) The traveling salesman and sequence scheduling: quality solutions using genetic edge recombination. In: L. Davis (Ed.), Handbook of genetic algorithms, (pp. 350-372). New York"
+      }
+    ],
+    "reference_count": 27,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Operation <br> job, precedence",
+        "Fixed Processing Times (hrs)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Machines",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$M_{1}$",
+          "$M_{2}$",
+          "$M_{3}$",
+          "$M_{4}$"
+        ],
+        [
+          "$\\mathrm{O}_{1,1}$",
+          2,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{1,2}$",
+          "-",
+          4,
+          "-",
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{2,1}$",
+          3,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{2,2}$",
+          "-",
+          "-",
+          3,
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{2,3}$",
+          "-",
+          "-",
+          6,
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{3,1}$",
+          2,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\mathrm{O}_{3,2}$",
+          "-",
+          "-",
+          3,
+          3
+        ],
+        [
+          "$\\mathrm{O}_{4,1}$",
+          1,
+          "-",
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{4,2}$",
+          "-",
+          3,
+          "-",
+          3
+        ],
+        [
+          "$\\mathrm{O}_{4,3}$",
+          "-",
+          "-",
+          "-",
+          5
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 EDAs for scheduling",
+      "headers": [
+        "Elements",
+        "Algorithms",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          0.2,
+          "Chen et al. [5] <br> Self-guided <br> GA",
+          0.7,
+          0.8,
+          4,
+          0.6,
+          "SEDA"
+        ],
+        [
+          "Configuration style",
+          "Single-machine",
+          "PFSP",
+          "PFSP",
+          "PFSP",
+          "Lot-streaming PFSP",
+          "FJSP",
+          "FJSP"
+        ],
+        [
+          "Processing times",
+          "Fixed",
+          "Fixed",
+          "Fixed",
+          "Fixed",
+          "Fixed",
+          "Fixed",
+          "Variable"
+        ],
+        [
+          "Assumptions",
+          "Required",
+          "Required",
+          "Required",
+          "Required",
+          "Partially required",
+          "Required",
+          "Not required"
+        ],
+        [
+          "Probabilistic model",
+          "Univariate",
+          "Univariate",
+          "Uni/bivariate",
+          "Univariate",
+          "Uni/bivariate",
+          "bivariate",
+          "Bivariate"
+        ],
+        [
+          "Type of EDA",
+          "Discrete",
+          "Discrete",
+          "Discrete",
+          "Discrete",
+          "Discrete",
+          "Discrete",
+          "Discrete and continuous"
+        ],
+        [
+          "Hybridization",
+          "EDA-GA",
+          "EDA-GA",
+          "EDA-GA",
+          "EDA-VNS",
+          "EDA-VNS",
+          "EDA-local search",
+          "EDA-simulation"
+        ],
+        [
+          "Populations",
+          "One",
+          "One",
+          "One",
+          "One",
+          "One",
+          "Two",
+          "One"
+        ],
+        [
+          "Objective",
+          "Weighted earliness, tardiness costs",
+          "Makespan",
+          "Makespan",
+          "Total flow time",
+          "Makespan",
+          "Makespan",
+          "Work in process"
+        ],
+        [
+          "Simulation",
+          "Not provided",
+          "Not provided",
+          "Not provided",
+          "Not provided",
+          "Not provided",
+          "Not provided",
+          "Included"
+        ],
+        [
+          "Approach",
+          "Academic",
+          "Academic",
+          "Academic",
+          "Academic",
+          "Industrial, sequence- <br> dependent setup <br> time considered",
+          "Academic",
+          "Industrial, all the environment as really it is"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 8
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Commercial simulation languages",
+      "headers": [
+        "",
+        "Optimization tool"
+      ],
+      "rows": [
+        [
+          "Languages",
+          "Tabu search Genetic algorithms Evolutionary strategies"
+        ],
+        [
+          8,
+          "+"
+        ],
+        [
+          "SimFlex ${ }^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Simprocess ${ }^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Promodel $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Arena $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Quest $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "Extend $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "@Risk $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "AutoMod $^{\\circledR}$",
+          "+"
+        ],
+        [
+          "+ Included",
+          "+"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$s .1$",
+        ""
+      ],
+      "rows": [
+        [
+          "$\\max _{i \\in I_{k}}\\left\\{S_{i}+t_{i, k}\\right\\} \\leq C_{k}$",
+          "for all $k=1, \\ldots, m$."
+        ],
+        [
+          "$T_{k}+S_{i}+\\sum_{p=1} x_{i, k, p} t_{i, k} \\leq S_{j}$",
+          "for all $i \\in O, k=1, \\ldots, m$."
+        ],
+        [
+          "$T_{k}+H=R_{k}$",
+          "for all $k=1, \\ldots, m$."
+        ],
+        [
+          "$S_{i} \\geq 0$",
+          "for all $i \\in O$."
+        ],
+        [
+          "$T_{k} \\geq 0$",
+          "for all $k=1, \\ldots, m$."
+        ],
+        [
+          "$H$ constant",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Validation method",
+      "headers": [
+        "Output variables",
+        "Input variables",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Real system $0.036 \\mathrm{~m} / \\mathrm{s}$",
+          "Conveyor speed $0.03 \\mathrm{~m} / \\mathrm{s}$",
+          "Conveyor speed $0.05 \\mathrm{~m} / \\mathrm{s}$"
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          17.97,
+          18.25
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          39975,
+          40964
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          91,
+          68
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          909,
+          932
+        ],
+        [
+          "",
+          "Real system",
+          "Sealed silicon",
+          "Sealed silicon"
+        ],
+        [
+          "",
+          30,
+          25,
+          35
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          18.07,
+          17.91
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          35749,
+          38815
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          113,
+          118
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          886,
+          881
+        ],
+        [
+          "",
+          "Real system",
+          "Drying",
+          "Drying"
+        ],
+        [
+          "",
+          30,
+          25,
+          35
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          18.22,
+          18.15
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          40938,
+          40871
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          68,
+          62
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          931,
+          930
+        ],
+        [
+          "",
+          "Real system (FIFO rule)",
+          "Sequences (by complexity)",
+          "Sequences (by simplicity)"
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          15.23,
+          19.63
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          35516,
+          40724
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          268,
+          82
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          731,
+          917
+        ],
+        [
+          "",
+          "Real system (without off-duty hours)",
+          "Shifts (8 off-duty hours)",
+          "Shifts (4 off-duty hours)"
+        ],
+        [
+          "Avg utilization (\\%)",
+          17.39,
+          16.97,
+          20.3
+        ],
+        [
+          "Avg busy processing time (s)",
+          40922,
+          33515,
+          41127
+        ],
+        [
+          "Work in process (doors)",
+          84,
+          270,
+          68
+        ],
+        [
+          "Throughput (doors/shift)",
+          916,
+          730,
+          931
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Operation <br> (job, precedence)",
+        "Fixed Processing Times (hrs)",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\mathrm{M}_{1}$",
+          "$\\mathrm{M}_{2}$",
+          "$\\mathrm{M}_{3}$",
+          "$\\mathrm{M}_{4}$",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{1.1}$",
+          2,
+          4,
+          3,
+          5,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{1.2}$",
+          4,
+          4,
+          "-",
+          3,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{2.1}$",
+          3,
+          "-",
+          "-",
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{2.2}$",
+          3,
+          "-",
+          3,
+          3,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{2.3}$",
+          "-",
+          5,
+          6,
+          2,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{3.1}$",
+          2,
+          "-",
+          "-",
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{3.2}$",
+          "-",
+          2,
+          3,
+          3,
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{4.1}$",
+          1,
+          "-",
+          "-",
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{4.2}$",
+          "-",
+          3,
+          3,
+          "-",
+          ""
+        ],
+        [
+          "$\\mathrm{O}_{4.3}$",
+          6,
+          4,
+          5,
+          5,
+          ""
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Operation",
+        "$\\mathrm{O}_{1.1}$",
+        "$\\mathrm{O}_{1.2}$",
+        "$\\mathrm{O}_{2.1}$",
+        "$\\mathrm{O}_{2.2}$",
+        "$\\mathrm{O}_{2.3}$",
+        "$\\mathrm{O}_{3.1}$",
+        "$\\mathrm{O}_{3.2}$",
+        "$\\mathrm{O}_{4.1}$",
+        "$\\mathrm{O}_{4.2}$",
+        "$\\mathrm{O}_{4.3}$"
+      ],
+      "rows": [
+        [
+          "A fixed number",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        [
+          "Corresponding job",
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 11
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "0.24",
+        "0.16",
+        "0.37",
+        "0.77",
+        "0.82",
+        "0.66",
+        "0.81",
+        "0.55",
+        "0.83",
+        "0.96"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          2,
+          1,
+          3,
+          6,
+          8,
+          5,
+          7,
+          4,
+          9,
+          10
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          3,
+          4,
+          2,
+          3,
+          2,
+          4,
+          4
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 10
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Comparison of results for each variance",
+      "headers": [
+        "Trial",
+        "GA <br> Best",
+        "SEDA <br> Best",
+        "GA <br> $\\sigma_{1}^{2}$",
+        "SEDA <br> $\\sigma_{2}^{2}$",
+        "$\\sigma_{1}^{2} / \\sigma_{2}^{2}$",
+        "$\\begin{aligned} & H_{0} ; \\sigma_{1}^{2}=\\sigma_{2}^{2} \\\\ & \\alpha=0.01 \\\\ & F_{c}<0.545 \\text { or } \\\\ & F_{c}>1.832 \\end{aligned}$"
+      ],
+      "rows": [
+        [
+          1,
+          2.66,
+          3.5,
+          2.926,
+          2.903,
+          1.0079,
+          1.0079
+        ],
+        [
+          2,
+          3.21,
+          2.56,
+          3.124,
+          2.661,
+          1.1738,
+          1.1738
+        ],
+        [
+          3,
+          2.93,
+          0.91,
+          2.763,
+          5.553,
+          0.4976,
+          0.4976
+        ],
+        [
+          4,
+          3.31,
+          0.0,
+          2.377,
+          5.028,
+          0.4727,
+          0.4727
+        ],
+        [
+          5,
+          2.66,
+          0.03,
+          3.307,
+          4.933,
+          0.6704,
+          0.6704
+        ],
+        [
+          6,
+          2.66,
+          0.0,
+          2.848,
+          5.05,
+          0.564,
+          0.5639
+        ],
+        [
+          7,
+          2.66,
+          0.0,
+          2.482,
+          5.284,
+          0.4698,
+          0.4698
+        ],
+        [
+          8,
+          2.66,
+          0.0,
+          3.116,
+          5.15,
+          0.605,
+          0.605
+        ],
+        [
+          9,
+          2.66,
+          0.39,
+          2.977,
+          5.053,
+          0.5891,
+          0.5891
+        ],
+        [
+          10,
+          2.66,
+          0.03,
+          2.932,
+          4.828,
+          0.6072,
+          0.6072
+        ],
+        [
+          11,
+          2.66,
+          0.0,
+          2.803,
+          5.149,
+          0.5443,
+          0.5443
+        ],
+        [
+          12,
+          2.66,
+          0.03,
+          3.055,
+          4.881,
+          0.6258,
+          0.6258
+        ],
+        [
+          13,
+          2.66,
+          0.03,
+          3.267,
+          5.004,
+          0.6529,
+          0.6529
+        ],
+        [
+          14,
+          2.66,
+          0.0,
+          2.969,
+          4.99,
+          0.595,
+          0.595
+        ],
+        [
+          15,
+          2.66,
+          0.03,
+          2.743,
+          4.601,
+          0.5962,
+          0.5962
+        ],
+        [
+          16,
+          2.66,
+          0.0,
+          2.897,
+          4.541,
+          0.638,
+          0.638
+        ],
+        [
+          17,
+          2.66,
+          0.0,
+          3.223,
+          5.323,
+          0.6055,
+          0.6055
+        ],
+        [
+          18,
+          2.66,
+          0.21,
+          3.214,
+          4.936,
+          0.6511,
+          0.6511
+        ],
+        [
+          19,
+          2.66,
+          0.0,
+          3.049,
+          4.935,
+          0.6178,
+          0.6178
+        ],
+        [
+          20,
+          2.66,
+          0.0,
+          2.759,
+          5.036,
+          0.5478,
+          0.5478
+        ],
+        [
+          21,
+          2.66,
+          0.03,
+          3.003,
+          5.662,
+          0.5303,
+          0.5303
+        ],
+        [
+          22,
+          2.66,
+          0.0,
+          2.581,
+          4.919,
+          0.5246,
+          0.5246
+        ],
+        [
+          23,
+          2.66,
+          0.0,
+          2.913,
+          4.891,
+          0.5955,
+          0.5955
+        ],
+        [
+          24,
+          2.9,
+          0.0,
+          2.704,
+          5.152,
+          0.5248,
+          0.5248
+        ],
+        [
+          25,
+          2.66,
+          0.03,
+          3.006,
+          5.176,
+          0.5807,
+          0.5807
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$18 / 25$"
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 7
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Comparison of results for each algorithm",
+      "headers": [
+        "Trial",
+        "GA <br> Best",
+        "SEDA <br> Best",
+        "GA <br> Worst",
+        "SEDA <br> Worst",
+        "GA <br> Reliability",
+        "SEDA <br> Reliability"
+      ],
+      "rows": [
+        [
+          1,
+          2.66,
+          3.5,
+          11.05,
+          11.28,
+          1,
+          3
+        ],
+        [
+          2,
+          3.21,
+          2.56,
+          11.19,
+          11.18,
+          1,
+          1
+        ],
+        [
+          3,
+          2.93,
+          0.91,
+          11.28,
+          11.04,
+          1,
+          1
+        ],
+        [
+          4,
+          3.31,
+          0.0,
+          10.85,
+          11.19,
+          1,
+          2
+        ],
+        [
+          5,
+          2.66,
+          0.03,
+          11.05,
+          10.91,
+          1,
+          4
+        ],
+        [
+          6,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          4
+        ],
+        [
+          7,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          3
+        ],
+        [
+          8,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          2
+        ],
+        [
+          9,
+          2.66,
+          0.39,
+          10.96,
+          11.19,
+          3,
+          5
+        ],
+        [
+          10,
+          2.66,
+          0.03,
+          11.05,
+          11.19,
+          3,
+          2
+        ],
+        [
+          11,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          2
+        ],
+        [
+          12,
+          2.66,
+          0.03,
+          11.05,
+          11.05,
+          1,
+          7
+        ],
+        [
+          13,
+          2.66,
+          0.03,
+          11.05,
+          11.19,
+          1,
+          6
+        ],
+        [
+          14,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          3
+        ],
+        [
+          15,
+          2.66,
+          0.03,
+          10.89,
+          10.91,
+          1,
+          2
+        ],
+        [
+          16,
+          2.66,
+          0.0,
+          10.96,
+          11.19,
+          2,
+          2
+        ],
+        [
+          17,
+          2.66,
+          0.0,
+          11.05,
+          11.05,
+          2,
+          2
+        ],
+        [
+          18,
+          2.66,
+          0.21,
+          11.05,
+          11.19,
+          2,
+          3
+        ],
+        [
+          19,
+          2.66,
+          0.0,
+          11.05,
+          10.43,
+          1,
+          2
+        ],
+        [
+          20,
+          2.66,
+          0.0,
+          10.96,
+          11.19,
+          1,
+          2
+        ],
+        [
+          21,
+          2.66,
+          0.03,
+          11.05,
+          11.19,
+          2,
+          1
+        ],
+        [
+          22,
+          2.66,
+          0.0,
+          10.89,
+          11.19,
+          1,
+          2
+        ],
+        [
+          23,
+          2.66,
+          0.0,
+          11.05,
+          11.19,
+          1,
+          3
+        ],
+        [
+          24,
+          2.9,
+          0.0,
+          10.96,
+          11.05,
+          1,
+          4
+        ],
+        [
+          25,
+          2.66,
+          0.03,
+          11.05,
+          11.05,
+          2,
+          4
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$34 / 25$",
+          "$72 / 25$"
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 7
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Analysis of variance",
+      "headers": [
+        "ANOVA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Source of variation",
+          "$S S$",
+          "$d f$",
+          "$M S$",
+          "$F$",
+          "$p$ value",
+          "$F$ crit"
+        ],
+        [
+          "Sample",
+          50.328,
+          1,
+          50.328,
+          19.0555,
+          "$1.28934 \\mathrm{E}-05$",
+          3.84288
+        ],
+        [
+          "Generations",
+          "$4,846.39$",
+          43,
+          112.706,
+          42.6738,
+          0,
+          1.38108
+        ],
+        [
+          "Interaction",
+          "$2,660.61$",
+          43,
+          61.874,
+          23.4273,
+          "$5.274 \\mathrm{E}-169$",
+          1.38108
+        ],
+        [
+          "Within group",
+          "$17,199.0074$",
+          6.512,
+          2.641,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Total",
+          "$24,756.344$",
+          6.599,
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    }
+  ]
+}

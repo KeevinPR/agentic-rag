@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Bayesian Network-Based Multi-objective Estimation of Distribution Algorithm for Feature Selection Tailored to Regression Problems.md",
+    "filename": "Bayesian Network-Based Multi-objective Estimation of Distribution Algorithm for Feature Selection Tailored to Regression Problems.md",
+    "title": "Bayesian Network-Based Multi-objective Estimation of Distribution Algorithm for Feature Selection Tailored to Regression Problems",
+    "year": "2024"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Probability distribution of the root vertex $P\\left(V_{r}\\right)$",
+      "headers": [
+        "$V_{r}$",
+        "$P\\left(V_{r}\\right)$"
+      ],
+      "rows": [
+        [
+          0,
+          "$F\\left(V_{r}=0\\right) /\\left(F\\left(V_{r}=0\\right)+F\\left(V_{r}=1\\right)\\right)$"
+        ],
+        [
+          1,
+          "$F\\left(V_{r}=1\\right) /\\left(F\\left(V_{r}=0\\right)+F\\left(V_{r}=1\\right)\\right)$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Probability distribution $P\\left(V_{j} \\mid V_{i}\\right)$",
+      "headers": [
+        "$V_{i}$",
+        "$V_{j}$",
+        "$P\\left(V_{j} \\mid V_{i}\\right)$"
+      ],
+      "rows": [
+        [
+          0,
+          0,
+          "$F\\left(V_{i}=0, V_{j}=0\\right) / F\\left(V_{i}=0\\right)$"
+        ],
+        [
+          0,
+          1,
+          "$F\\left(V_{i}=0, V_{j}=1\\right) / F\\left(V_{i}=0\\right)$"
+        ],
+        [
+          1,
+          0,
+          "$F\\left(V_{i}=1, V_{j}=0\\right) / F\\left(V_{i}=1\\right)$"
+        ],
+        [
+          1,
+          1,
+          "$F\\left(V_{i}=1, V_{j}=1\\right) / F\\left(V_{i}=1\\right)$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Hyper-parameters of NSGA II and AGEMOEA",
+      "headers": [
+        "Algorithm",
+        "Population <br> size N",
+        "Max <br> Iterations",
+        "Sampling",
+        "Crossover",
+        "Mutation"
+      ],
+      "rows": [
+        [
+          "NSGA II",
+          50,
+          10,
+          "Binary <br> random <br> sampling",
+          "Two point <br> crossover",
+          "Bitflip <br> mutation"
+        ],
+        [
+          "AGEMOEA",
+          50,
+          10,
+          "Binary <br> random <br> sampling",
+          "Two point <br> crossover",
+          "Bitflip <br> mutation"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Hyper-parameters of EDA Bernoulli and EDA Bayesian Network",
+      "headers": [
+        "Algorithm",
+        "Population <br> size $N$",
+        "Max <br> iterations",
+        "Individuals <br> selected $M$",
+        "Probability <br> distribution"
+      ],
+      "rows": [
+        [
+          "EDA Bernoulli",
+          50,
+          5,
+          25,
+          "Bernoulli"
+        ],
+        [
+          "EDA Bayesian Network",
+          50,
+          5,
+          25,
+          "Bayesian <br> Network"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Datasets",
+      "headers": [
+        "Name",
+        "Before processing",
+        "",
+        "After processing",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "\\# instances",
+          "\\# features",
+          "\\# instances",
+          "\\# features"
+        ],
+        [
+          "Concrete Compressive Strength",
+          1030,
+          8,
+          1030,
+          8
+        ],
+        [
+          "Forest Fires",
+          517,
+          12,
+          517,
+          12
+        ],
+        [
+          "Student Performance Math",
+          395,
+          32,
+          395,
+          45
+        ],
+        [
+          "YearPredictionMSD",
+          515345,
+          90,
+          515345,
+          90
+        ],
+        [
+          "Communities and crime",
+          1993,
+          127,
+          1993,
+          100
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Comparison of time and number of evaluations between algorithms for all datasets. Bold numbers correspond to the smallest values in time or number of evaluations.",
+      "headers": [
+        "Algorithm",
+        "Concrete <br> Compressive",
+        "",
+        "Forest Fires",
+        "",
+        "Student <br> Performance",
+        "",
+        "Year <br> Prediction <br> MSD",
+        "",
+        "Communities <br> Crime",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Time",
+          "Eval",
+          "Time",
+          "Eval",
+          "Time",
+          "Eval",
+          "Time",
+          "Eval",
+          "Time",
+          "Eval"
+        ],
+        [
+          "AGEMOEA",
+          0.39,
+          157.96,
+          0.71,
+          330.55,
+          0.97,
+          463.41,
+          384.15,
+          439.37,
+          4.67,
+          424.49
+        ],
+        [
+          "NSGA-II",
+          0.47,
+          172.35,
+          0.73,
+          366.89,
+          0.91,
+          431.24,
+          211.57,
+          312.5,
+          1.52,
+          "$\\mathbf{2 9 8 . 9 0}$"
+        ],
+        [
+          "EDA Bernoulli",
+          0.28,
+          122.79,
+          0.42,
+          241.6,
+          "$\\mathbf{0 . 5 3}$",
+          299.99,
+          211.28,
+          300.0,
+          "$\\mathbf{1 . 3 6}$",
+          300.0
+        ],
+        [
+          "EDA BayNet",
+          "$\\mathbf{0 . 2 5}$",
+          "$\\mathbf{8 8 . 1 0}$",
+          "$\\mathbf{0 . 3 2}$",
+          "$\\mathbf{1 8 2 . 4 9}$",
+          0.57,
+          "$\\mathbf{2 9 5 . 6 4}$",
+          "$\\mathbf{1 3 2 . 4 5}$",
+          "$\\mathbf{2 9 4 . 3 6}$",
+          1.5,
+          299.97
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 11
+    }
+  ]
+}

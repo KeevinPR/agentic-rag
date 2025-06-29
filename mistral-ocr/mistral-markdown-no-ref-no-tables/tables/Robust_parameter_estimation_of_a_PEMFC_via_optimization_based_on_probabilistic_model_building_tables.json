@@ -1,0 +1,939 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Robust parameter estimation of a PEMFC via optimization based on probabilistic model building.md",
+    "filename": "Robust parameter estimation of a PEMFC via optimization based on probabilistic model building.md",
+    "title": "Robust parameter estimation of a PEMFC via optimization based on probabilistic model building",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "List of important variables of the semi-empirical mathematical model.",
+      "headers": [
+        "Symbol",
+        "Variable"
+      ],
+      "rows": [
+        [
+          "$E_{\\text {Nernts }}$",
+          "Open circuit voltage (V)"
+        ],
+        [
+          "$\\eta_{\\text {act }}$",
+          "Activation voltage drop (V)"
+        ],
+        [
+          "$\\eta_{\\text {Ohmic }}$",
+          "Ohmic voltage drop (V)"
+        ],
+        [
+          "$\\eta_{\\text {con }}$",
+          "Oncentration voltage drop (V)"
+        ],
+        [
+          "$T$",
+          "Temperature $\\left({ }^{\\circ} \\mathrm{C}\\right)$"
+        ],
+        [
+          "$P_{\\mathrm{H}_{2}}$",
+          "Partial pressure of hydrogen (atm)"
+        ],
+        [
+          "$P_{\\mathrm{O}_{2}}$",
+          "Partial pressure of oxigen (atm)"
+        ],
+        [
+          "$C_{\\mathrm{O}_{2}}$",
+          "Oxygen concentration $\\left(\\mathrm{mol} \\mathrm{cm}^{-3}\\right)$"
+        ],
+        [
+          "$V_{F C}$",
+          "Stack voltage (V)"
+        ],
+        [
+          "$i$",
+          "Cell current (A)"
+        ],
+        [
+          "$R_{M}$",
+          "Equivalent membrane resistance to proton conduction $(\\Omega)$"
+        ],
+        [
+          "$R_{C}$",
+          "Equivalent contact resistance to electron conduction $(\\Omega)$"
+        ],
+        [
+          "$\\rho_{M}$",
+          "Specific membrane resistivity ( $\\Omega \\mathrm{cm}$ )."
+        ],
+        [
+          "$L_{c}$",
+          "Membrane thickness (cm)"
+        ],
+        [
+          "A",
+          "Active cell area $\\left(\\mathrm{cm}^{2}\\right)$"
+        ],
+        [
+          "$J$",
+          "Current density $\\left(\\mathrm{A} \\mathrm{cm}^{2}\\right)$"
+        ],
+        [
+          "$J_{\\text {max }}$",
+          "Maximum current density $\\left(\\mathrm{A} \\mathrm{cm}^{2}\\right)$"
+        ],
+        [
+          "$R H_{c}$",
+          "Relative humidity of vapor in the cathode"
+        ],
+        [
+          "$R H_{a}$",
+          "Relative humidity of vapor in the anode"
+        ],
+        [
+          "$\\psi$",
+          "Parameter related to the water content of the membrane"
+        ],
+        [
+          "$B$",
+          "Parametric coefficient"
+        ],
+        [
+          "$n$",
+          "Number of cells connected in series"
+        ],
+        [
+          "$P_{\\mathrm{H}_{2} \\mathrm{O}}^{+}$",
+          "Saturation pressure of water vapor (atm)"
+        ],
+        [
+          "$P_{\\mathrm{N}_{2}}$",
+          "Nitrogen partial pressure at the cathode flow channel (atm)"
+        ],
+        [
+          "$P_{a}$",
+          "Inlet pressures at the anode (atm)"
+        ],
+        [
+          "$P_{c}$",
+          "Inlet pressures at the cathode (atm)"
+        ],
+        [
+          "$\\xi_{i}$",
+          "Semi-empirical coefficient $(i=1, \\ldots, 4)$"
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Upper and lower bound for searching the PEMFC model parameters [35,39].",
+      "headers": [
+        "",
+        "",
+        "$\\xi_{1}$",
+        "$\\xi_{2}$",
+        "$\\xi_{3}$",
+        "$\\xi_{4}$",
+        "$R_{C}$",
+        "B",
+        "$\\psi$"
+      ],
+      "rows": [
+        [
+          1,
+          "L-Bound",
+          -0.952,
+          0.001,
+          "$7.04 \\mathrm{e}-5$",
+          "$-1.98 \\mathrm{e}-4$",
+          "$1 \\mathrm{e}-4$",
+          0.016,
+          14
+        ],
+        [
+          "",
+          "U-Bound",
+          -0.944,
+          0.005,
+          "$7.80 \\mathrm{e}-5$",
+          "$-1.88 \\mathrm{e}-4$",
+          "$8 \\mathrm{e}-4$",
+          0.5,
+          23
+        ],
+        [
+          2,
+          "L-Bound",
+          -1.19969,
+          0.001,
+          "$3.60 \\mathrm{e}-5$",
+          "$-2.60 \\mathrm{e}-4$",
+          "$1 \\mathrm{e}-4$",
+          0.0136,
+          10
+        ],
+        [
+          "",
+          "U-Bound",
+          -0.8532,
+          0.005,
+          "$9.80 \\mathrm{e}-5$",
+          "$-9.54 \\mathrm{e}-5$",
+          "$8 \\mathrm{e}-4$",
+          0.5,
+          24
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 9
+    },
+    {
+      "table_number": "3",
+      "table_title": "Operational conditions [35].",
+      "headers": [
+        "",
+        "",
+        "Anode pressure (bar)",
+        "Cathode pressure (bar)",
+        "Temperature $\\left({ }^{\\circ} \\mathrm{C}\\right)$"
+      ],
+      "rows": [
+        [
+          "Test",
+          1,
+          3,
+          5,
+          80
+        ],
+        [
+          "",
+          2,
+          1,
+          1,
+          70
+        ],
+        [
+          "Validation",
+          3,
+          2.5,
+          3,
+          70
+        ],
+        [
+          "",
+          4,
+          1.5,
+          1.5,
+          70
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Comparison of the best results reported in the literature with those of the $U M D A^{G}, G A, P S O$ and $C M A E S$ for Case 1 with $P_{o}=3$ bar, $P_{c}=5$ bar, $T=353.15 \\mathrm{~K}$.",
+      "headers": [
+        "Parameters",
+        "$\\begin{aligned} & \\text { ARNA- } \\\\ & \\text { GA } \\end{aligned}$",
+        "SGA [39]",
+        "RGA [39]",
+        "MPSO [3]",
+        "$\\begin{aligned} & \\text { SSO } \\\\ & {[33,52]} \\end{aligned}$",
+        "$\\begin{aligned} & \\text { GOA } \\\\ & {[45,52]} \\end{aligned}$",
+        "$\\mathrm{GA}_{M}$",
+        "$\\mathrm{PSO}_{M}$",
+        "$C M A E S_{M}$",
+        "$U M D A^{G}-$ SSE",
+        "$\\begin{aligned} & U M D A^{G} \\\\ & \\text { SSE } \\end{aligned}$",
+        "$\\begin{aligned} & U M D A^{G} \\\\ & \\text { MAE } \\end{aligned}$"
+      ],
+      "rows": [
+        [
+          "$\\xi_{1}$",
+          "$-0.9470$",
+          "$-0.9473$",
+          "$-0.9506$",
+          "$-0.9479$",
+          "$-0.95078$",
+          "$-0.95024$",
+          "$-0.9492$",
+          "$-0.9442$",
+          "$-0.9510$",
+          "$-0.9519$",
+          "$-0.9489$",
+          "$-0.9479$"
+        ],
+        [
+          "$\\xi_{2}\\left(\\times 10^{-3}\\right)$",
+          3.0586,
+          3.0641,
+          3.0842,
+          3.0857,
+          3.07,
+          3.04,
+          2.9671,
+          3.2017,
+          2.9694,
+          3.0092,
+          3.0308,
+          3.013
+        ],
+        [
+          "$\\xi_{3}\\left(\\times 10^{-5}\\right)$",
+          7.6059,
+          7.7134,
+          7.7524,
+          7.799,
+          7.0,
+          8.0,
+          7.5744,
+          7.9725,
+          7.3055,
+          7.7882,
+          7.7573,
+          7.5011
+        ],
+        [
+          "$\\xi_{4}\\left(\\times 10^{-4}\\right)$",
+          "$-1.8800$",
+          "$-1.9390$",
+          "$-1.8803$",
+          "$-1.8800$",
+          "$-1.9000$",
+          "$-1.9000$",
+          "$-1.8800$",
+          "$-1.8800$",
+          "$-1.8800$",
+          "$-1.8800$",
+          "$-1.8800$",
+          "$-1.9403$"
+        ],
+        [
+          "$R_{C}\\left(\\times 10^{-4}\\right)$",
+          1.1026,
+          2.7197,
+          1.0027,
+          2.8666,
+          3.1,
+          1.1,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          3.966,
+          4.2979
+        ],
+        [
+          "$B\\left(\\times 10^{-2}\\right)$",
+          3.2898,
+          2.3981,
+          3.29,
+          2.9682,
+          3.151,
+          3.272,
+          1.9314,
+          1.9317,
+          1.9048,
+          1.9406,
+          1.8884,
+          1.8907
+        ],
+        [
+          "$\\psi$",
+          23.0,
+          19.765,
+          22.9906,
+          20.7624,
+          23.0,
+          23.0,
+          22.999,
+          23.0,
+          23.0,
+          22.999,
+          20.255,
+          19.4105
+        ],
+        [
+          "SSE",
+          6.17593,
+          4.7483,
+          5.7332,
+          5.5665,
+          3.9818,
+          5.8379,
+          2.003167,
+          2.003191,
+          1.712817,
+          2.003161,
+          "$-$",
+          "$-$"
+        ],
+        [
+          "SAE",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          3.53391,
+          "$-$"
+        ],
+        [
+          "MAE",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$",
+          0.077499
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 13
+    },
+    {
+      "table_number": "5",
+      "table_title": "Comparison of the best results reported in the literature with those of the $U M D A^{G}, G A, P S O$ and $C M A E S$ for Case 2 with $P_{o}=1$ bar, $P_{c}=1$ bar, $T=343.15 \\mathrm{~K}$.",
+      "headers": [
+        "Parameters",
+        "HABC [57]",
+        "RGA [39]",
+        "$\\begin{aligned} & \\text { ARNA-GA } \\\\ & {[56]} \\end{aligned}$",
+        "CHHO [32]",
+        "GOA [45]",
+        "SSO [33]",
+        "$\\mathrm{GA}_{M}$",
+        "$\\mathrm{PSO}_{M}$",
+        "$C M A E S_{M}$",
+        "$\\begin{aligned} & U M D A^{G}- \\\\ & \\text { SSE } \\end{aligned}$",
+        "$\\begin{aligned} & U M D A^{G}- \\\\ & \\text { SAE } \\end{aligned}$",
+        "$\\begin{aligned} & U M D A^{G}- \\\\ & \\text { MAE } \\end{aligned}$"
+      ],
+      "rows": [
+        [
+          "$\\xi_{1}$",
+          "$-0.8540$",
+          "$-1.1568$",
+          "$-0.8806$",
+          "$-0.85328$",
+          "$-1.17858$",
+          "$-0.89452$",
+          "$-1.0663$",
+          "$-1.1857$",
+          "$-1.0359$",
+          "$-1.0893$",
+          "$-1.1044$",
+          "$-1.0657$"
+        ],
+        [
+          "$\\xi_{2}\\left(\\times 10^{-3}\\right)$",
+          2.8498,
+          3.4243,
+          2.9451,
+          2.27606,
+          3.51,
+          2.86,
+          3.0617,
+          3.3152,
+          3.1628,
+          3.3966,
+          3.3444,
+          3.3147
+        ],
+        [
+          "$\\xi_{3}\\left(\\times 10^{-5}\\right)$",
+          8.3371,
+          6.4161,
+          8.4438,
+          4.66449,
+          7.0,
+          8.0,
+          6.2655,
+          8.469,
+          4.6929,
+          7.9959,
+          7.3925,
+          7.6165
+        ],
+        [
+          "$\\xi_{4}\\left(\\times 10^{-4}\\right)$",
+          "$-1.294$",
+          "$-1.1544$",
+          "$-1.2883$",
+          "$-1.34608$",
+          "$-1.2000$",
+          "$-1.2000$",
+          "$-0.9756$",
+          "$-1.0429$",
+          "$-1.0433$",
+          "$-1.0338$",
+          "$-1.0314$",
+          "$-1.3870$"
+        ],
+        [
+          "$R_{C}\\left(\\times 10^{-4}\\right)$",
+          1.0,
+          1.4504,
+          1.0068,
+          3.38141,
+          7.3,
+          4.3,
+          1.6186,
+          1.0,
+          1.0,
+          1.0379,
+          1.3415,
+          1.9328
+        ],
+        [
+          "$B\\left(\\times 10^{-2}\\right)$",
+          3.4,
+          3.43,
+          3.1675,
+          5.13636,
+          3.428,
+          3.147,
+          6.6184,
+          7.1573,
+          7.159,
+          7.2029,
+          7.1176,
+          2.5227
+        ],
+        [
+          "$\\psi$",
+          14.287,
+          12.899,
+          13.486,
+          17.4648,
+          14.78972,
+          12.9415,
+          18.547,
+          24.0,
+          24.0,
+          23.998,
+          23.989,
+          20.896
+        ],
+        [
+          "SSE",
+          11.32189,
+          9.73294,
+          11.17143,
+          6.97008,
+          4.2359,
+          4.5936,
+          0.71834,
+          0.62445,
+          0.62444,
+          0.62588,
+          "-",
+          "-"
+        ],
+        [
+          "SAE",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          2.32169,
+          "-"
+        ],
+        [
+          "SAE",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0.0209799
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 13
+    },
+    {
+      "table_number": "6",
+      "table_title": "Comparison of $U M D A^{G}$-SSE results using the experimental polarization curve reported in [52]. Case 1 with $P_{a}=3$ bar, $P_{c}=5$ bar, $T=353.15 \\mathrm{~K}$.",
+      "headers": [
+        "Parameters",
+        "JAYA",
+        "JAYA-NM",
+        "ADE",
+        "$U M D A^{G}$-SSE"
+      ],
+      "rows": [
+        [
+          "$\\xi_{1}$",
+          -0.952,
+          -0.952,
+          -0.952,
+          -0.951992
+        ],
+        [
+          "$\\xi_{2}\\left(\\times 10^{-3}\\right)$",
+          3.1,
+          3.1,
+          3.08643,
+          3.03879
+        ],
+        [
+          "$\\xi_{3}\\left(\\times 10^{-5}\\right)$",
+          8.0,
+          8.0,
+          7.74271,
+          7.74924
+        ],
+        [
+          "$\\xi_{4}\\left(\\times 10^{-4}\\right)$",
+          -1.9,
+          -1.9,
+          -1.88,
+          -1.88096
+        ],
+        [
+          "$R_{C}\\left(\\times 10^{-4}\\right)$",
+          1.0,
+          1.0,
+          1.0,
+          1.04613
+        ],
+        [
+          "$B\\left(\\times 10^{-2}\\right)$",
+          3.271,
+          3.27,
+          3.01892,
+          2.57188
+        ],
+        [
+          "$\\psi$",
+          23.0,
+          23.0,
+          23.0,
+          22.6666
+        ],
+        [
+          "SSE",
+          3.5054,
+          3.5075,
+          4.438,
+          1.73619
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Comparison of $U M D A^{G}$-SSE results using the experimental polarization curve reported in [52]. Case $2\\left(P_{a}=1\\right.$ bar, $P_{c}=1$ bar, $T=343.15 \\mathrm{~K}$ ).",
+      "headers": [
+        "Parameters",
+        "JAYA [52]",
+        "JAYA-NM [52]",
+        "$U M D A^{G}$-SSE"
+      ],
+      "rows": [
+        [
+          "$\\xi_{1}$",
+          -1.19966,
+          -1.19966,
+          -1.04147
+        ],
+        [
+          "$\\xi_{2}\\left(\\times 10^{-3}\\right)$",
+          3.48,
+          3.55,
+          3.25381
+        ],
+        [
+          "$\\xi_{3}\\left(\\times 10^{-5}\\right)$",
+          6.0,
+          6.0,
+          7.88666
+        ],
+        [
+          "$\\xi_{4}\\left(\\times 10^{-4}\\right)$",
+          -1.4,
+          -1.2,
+          -1.19061
+        ],
+        [
+          "$R_{C}\\left(\\times 10^{-4}\\right)$",
+          2.2,
+          1.0,
+          2.9057
+        ],
+        [
+          "$B\\left(\\times 10^{-2}\\right)$",
+          3.37,
+          3.334,
+          6.12714
+        ],
+        [
+          "$\\psi$",
+          15.21097,
+          13.2287,
+          22.7246
+        ],
+        [
+          "SSE",
+          4.041,
+          3.0948,
+          0.62525
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Mean $\\pm$ standard deviation of parameters and objective functions from 30 independent executions of different optimization algorithms.",
+      "headers": [
+        "Results",
+        "Case 1",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Param.",
+          "$G A_{M}$",
+          "$P S O_{M}$",
+          "$C M A E S_{M}$",
+          "$U M D A^{G}$-SSE",
+          "$U M D A^{G}$-SAE",
+          "$U M D A^{G}$-MAE"
+        ],
+        [
+          "$\\xi_{1}$",
+          "$-9.5103 \\mathrm{e}-1 \\pm 1.6535 \\mathrm{e}-3$",
+          "$-9.4755 \\mathrm{e}-1 \\pm 2.6344 \\mathrm{e}-3$",
+          "$-9.4745 \\mathrm{e}-1 \\pm 3.3867 \\mathrm{e}-3$",
+          "$-9.5118 \\mathrm{e}-1 \\pm 7.6883 \\mathrm{e}-4$",
+          "$-9.5027 \\mathrm{e}-1 \\pm 8.9439 \\mathrm{e}-4$",
+          "$-9.4974 \\mathrm{e}-1 \\pm 9.5197 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\xi_{2}$",
+          "$3.2992 \\mathrm{e}-3 \\pm 4.6253 \\mathrm{e}-5$",
+          "$3.1572 \\mathrm{e}-3 \\pm 4.3851 \\mathrm{e}-5$",
+          "$3.0050 \\mathrm{e}-3 \\pm 5.1639 \\mathrm{e}-5$",
+          "$3.0008 \\mathrm{e}-3 \\pm 9.6906 \\mathrm{e}-6$",
+          "$3.0254 \\mathrm{e}-3 \\pm 1.2617 \\mathrm{e}-5$",
+          "$3.0435 \\mathrm{e}-3 \\pm 1.2427 \\mathrm{e}-5$"
+        ],
+        [
+          "$\\xi_{3}$",
+          "$7.5907 \\mathrm{e}-5 \\pm 2.3379 \\mathrm{e}-6$",
+          "$7.4658 \\mathrm{e}-5 \\pm 2.7633 \\mathrm{e}-6$",
+          "$7.4486 \\mathrm{e}-5 \\pm 3.0098 \\mathrm{e}-6$",
+          "$7.7036 \\mathrm{e}-5 \\pm 6.6502 \\mathrm{e}-7$",
+          "$7.6801 \\mathrm{e}-5 \\pm 7.1080 \\mathrm{e}-7$",
+          "$7.6558 \\mathrm{e}-5 \\pm 7.5557 \\mathrm{e}-7$"
+        ],
+        [
+          "$\\xi_{4}$",
+          "$-1.8801 \\mathrm{e}-4 \\pm 1.6483 \\mathrm{e}-8$",
+          "$-1.8800 \\mathrm{e}-4 \\pm 1.5394 \\mathrm{e}-11$",
+          "$-1.8805 \\mathrm{e}-4 \\pm 1.1870 \\mathrm{e}-7$",
+          "$-1.8800 \\mathrm{e}-4 \\pm 2.6503 \\mathrm{e}-8$",
+          "$-1.8877 \\mathrm{e}-4 \\pm 7.8800 \\mathrm{e}-7$",
+          "$-1.9251 \\mathrm{e}-4 \\pm 9.2184 \\mathrm{e}-7$"
+        ],
+        [
+          "$R_{C}$",
+          "$1.5924 \\mathrm{e}-4 \\pm 1.7577 \\mathrm{e}-4$",
+          "$1.0000 \\mathrm{e}-4 \\pm 7.5160 \\mathrm{e}-11$",
+          "$1.6255 \\mathrm{e}-4 \\pm 1.4067 \\mathrm{e}-4$",
+          "$1.1113 \\mathrm{e}-4 \\pm 2.2762 \\mathrm{e}-5$",
+          "$3.4445 \\mathrm{e}-4 \\pm 7.8876 \\mathrm{e}-5$",
+          "$2.9185 \\mathrm{e}-4 \\pm 7.6198 \\mathrm{e}-5$"
+        ],
+        [
+          "$B$ (V)",
+          "$1.9211 \\mathrm{e}-2 \\pm 1.0672 \\mathrm{e}-3$",
+          "$1.8435 \\mathrm{e}-2 \\pm 1.4937 \\mathrm{e}-3$",
+          "$1.6639 \\mathrm{e}-2 \\pm 1.0432 \\mathrm{e}-3$",
+          "$1.9526 \\mathrm{e}-2 \\pm 4.7134 \\mathrm{e}-4$",
+          "$1.9912 \\mathrm{e}-2 \\pm 9.7800 \\mathrm{e}-4$",
+          "$2.5804 \\mathrm{e}-2 \\pm 2.8562 \\mathrm{e}-3$"
+        ],
+        [
+          "$\\psi$",
+          "$2.2207 \\mathrm{e}+1 \\pm 1.7390 \\mathrm{e}+0$",
+          "$2.2468 \\mathrm{e}+1 \\pm 8.9720 \\mathrm{e}-1$",
+          "$1.8369 \\mathrm{e}+1 \\pm 3.4946 \\mathrm{e}+0$",
+          "$2.2906 \\mathrm{e}+1 \\pm 1.4555 \\mathrm{e}-1$",
+          "$2.0797 \\mathrm{e}+1 \\pm 5.8818 \\mathrm{e}-1$",
+          "$2.1217 \\mathrm{e}+1 \\pm 1.0486$"
+        ],
+        [
+          "SSE",
+          "$2.1912 \\mathrm{e}+0 \\pm 5.0726 \\mathrm{e}-1$",
+          "$2.0272 \\mathrm{e}+0 \\pm 4.0618 \\mathrm{e}-2$",
+          "$2.5614 \\pm 0.8652$",
+          "$2.0128 \\mathrm{e}+0 \\pm 7.9793 \\mathrm{e}-3$",
+          "",
+          ""
+        ],
+        [
+          "SAE",
+          "",
+          "",
+          "",
+          "",
+          "$3.6002 \\mathrm{e}+0 \\pm 3.1620 \\mathrm{e}-2$",
+          ""
+        ],
+        [
+          "MAE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$8.8051 \\mathrm{e}-2 \\pm 2.8562 \\mathrm{e}-3$"
+        ],
+        [
+          "Param.",
+          2,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$G A_{M}$",
+          "$P S O_{M}$",
+          "$C M A E S_{M}$",
+          "$U M D A^{G}$-SSE",
+          "$U M D A^{G}$-SAE",
+          "$U M D A^{G}$-MED"
+        ],
+        [
+          "$\\xi_{1}$",
+          "$-1.0492 \\mathrm{e}+0 \\pm 9.8643 \\mathrm{e}-2$",
+          "$-1.0600 \\mathrm{e}+0 \\pm 1.0199 \\mathrm{e}-1$",
+          "$-1.0575 \\mathrm{e}+0 \\pm 1.2466 \\mathrm{e}-1$",
+          "$-1.0726 \\mathrm{e}+0 \\pm 2.2366 \\mathrm{e}-2$",
+          "$-1.0718 \\mathrm{e}+0 \\pm 3.0424 \\mathrm{e}-2$",
+          "$-1.0706 \\mathrm{e}+0 \\pm 2.8523 \\mathrm{e}-2$"
+        ],
+        [
+          "$\\xi_{2}$",
+          "$3.1150 \\mathrm{e}-3 \\pm 4.0220 \\mathrm{e}-4$",
+          "$3.0070 \\mathrm{e}-3 \\pm 3.8254 \\mathrm{e}-4$",
+          "$3.1929 \\mathrm{e}-3 \\pm 5.6167 \\mathrm{e}-4$",
+          "$3.2896 \\mathrm{e}-3 \\pm 8.4091 \\mathrm{e}-5$",
+          "$3.2941 \\mathrm{e}-3 \\pm 1.2296 \\mathrm{e}-4$",
+          "$3.2847 \\mathrm{e}-3 \\pm 8.2161 \\mathrm{e}-5$"
+        ],
+        [
+          "$\\xi_{3}$",
+          "$6.9043 \\mathrm{e}-5 \\pm 1.9248 \\mathrm{e}-5$",
+          "$6.0434 \\mathrm{e}-5 \\pm 1.7888 \\mathrm{e}-5$",
+          "$7.2809 \\mathrm{e}-5 \\pm 2.0207 \\mathrm{e}-5$",
+          "$7.6164 \\mathrm{e}-5 \\pm 5.1028 \\mathrm{e}-6$",
+          "$7.6865 \\mathrm{e}-5 \\pm 5.7401 \\mathrm{e}-6$",
+          "$7.3648 \\mathrm{e}-5 \\pm 4.3256 \\mathrm{e}-6$"
+        ],
+        [
+          "$\\xi_{4}$",
+          "$-9.6049 \\mathrm{e}-5 \\pm 1.1258 \\mathrm{e}-6$",
+          "$-1.0196 \\mathrm{e}-4 \\pm 3.4118 \\mathrm{e}-6$",
+          "$-1.0391 \\mathrm{e}-4 \\pm 1.7658 \\mathrm{e}-6$",
+          "$-1.0374 \\mathrm{e}-4 \\pm 1.3579 \\mathrm{e}-6$",
+          "$-1.0353 \\mathrm{e}-4 \\pm 9.2311 \\mathrm{e}-7$",
+          "$-1.3380 \\mathrm{e}-4 \\pm 8.2798 \\mathrm{e}-6$"
+        ],
+        [
+          "$R_{C}$",
+          "$2.2783 \\mathrm{e}-4 \\pm 3.7371 \\mathrm{e}-4$",
+          "$2.0182 \\mathrm{e}-4 \\pm 1.6551 \\mathrm{e}-4$",
+          "$1.0389 \\mathrm{e}-4 \\pm 2.0065 \\mathrm{e}-5$",
+          "$1.5965 \\mathrm{e}-4 \\pm 5.5751 \\mathrm{e}-5$",
+          "$2.1284 \\mathrm{e}-4 \\pm 5.5504 \\mathrm{e}-5$",
+          "$1.9381 \\mathrm{e}-3 \\pm 4.7488 \\mathrm{e}-4$"
+        ],
+        [
+          "$B$ (V)",
+          "$6.5006 \\mathrm{e}-2 \\pm 1.5983 \\mathrm{e}-3$",
+          "$7.0679 \\mathrm{e}-2 \\pm 1.0345 \\mathrm{e}-3$",
+          "$7.1508 \\mathrm{e}-2 \\pm 3.9289 \\mathrm{e}-4$",
+          "$7.0655 \\mathrm{e}-2 \\pm 1.1037 \\mathrm{e}-3$",
+          "$7.0004 \\mathrm{e}-2 \\pm 7.2960 \\mathrm{e}-4$",
+          "$2.5077 \\mathrm{e}-2 \\pm 1.3578 \\mathrm{e}-3$"
+        ],
+        [
+          "$\\psi$",
+          "$1.7782 \\mathrm{e}+1 \\pm 2.2909 \\mathrm{e}+0$",
+          "$2.3160 \\mathrm{e}+1 \\pm 1.2587 \\mathrm{e}+0$",
+          "$2.3799 \\mathrm{e}+1 \\pm 8.9478 \\mathrm{e}-1$",
+          "$2.3407 \\mathrm{e}+1 \\pm 5.0261 \\mathrm{e}-1$",
+          "$2.3374 \\mathrm{e}+1 \\pm 3.3991 \\mathrm{e}-1$",
+          "$1.9850 \\mathrm{e}+1 \\pm 1.1214$"
+        ],
+        [
+          "$S E$",
+          "$7.6147 \\mathrm{e}-1 \\pm 4.1220 \\mathrm{e}-2$",
+          "$6.4849 \\mathrm{e}-1 \\pm 2.9919 \\mathrm{e}-2$",
+          "$6.2931 \\mathrm{e}-1 \\pm 2.4323 \\mathrm{e}-2$",
+          "$6.3744 \\mathrm{e}-1 \\pm 7.0570 \\mathrm{e}-3$",
+          "",
+          ""
+        ],
+        [
+          "SAE",
+          "",
+          "",
+          "",
+          "",
+          "$2.3447 \\mathrm{e}+0 \\pm 1.2713 \\mathrm{e}-2$",
+          ""
+        ],
+        [
+          "MAE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$2.6324 \\mathrm{e}-2 \\pm 4.4035 \\mathrm{e}-3$"
+        ]
+      ],
+      "row_count": 23,
+      "column_count": 7
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Performance of Estimation of distribution algorithm for initial core loading optimization of AHWR-LEU.md",
+    "filename": "Performance of Estimation of distribution algorithm for initial core loading optimization of AHWR-LEU.md",
+    "title": "Performance of Estimation of distribution algorithm for initial core loading optimization of AHWR-LEU",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Description of the AHWR LEU reactor core.",
+      "headers": [
+        "No. of channels",
+        "444"
+      ],
+      "rows": [
+        [
+          "Lattice pitch, mm",
+          225
+        ],
+        [
+          "No of RR/AR/SR/SORs",
+          "$8 / 8 / 8 / 45$"
+        ],
+        [
+          "Fuel",
+          "$\\left(\\right.$ Th-LEU/MOX"
+        ],
+        [
+          "No. of rings in a cluster/total no. of pins",
+          "$3 / 54$"
+        ],
+        [
+          "No of fuel pins in each ring",
+          "$12 / 18 / 24$"
+        ],
+        [
+          "Multi-purpose displacer tube (annular)",
+          ""
+        ],
+        [
+          "Material/OD/Thickness, mm",
+          "$\\mathrm{Zr}-2 / 36 / 3$"
+        ],
+        [
+          "Solid Rod inside Displacer, Material/OD",
+          "$\\mathrm{Zr}-2 / 18 \\mathrm{~mm}$"
+        ],
+        [
+          "Pressure tube",
+          ""
+        ],
+        [
+          "ID/OD mm",
+          "$120 / 128$"
+        ],
+        [
+          "Material/Density, g/cc",
+          "$\\mathrm{Zr}-2.55 \\mathrm{Nb} / 6.55$"
+        ],
+        [
+          "Calandria tube",
+          ""
+        ],
+        [
+          "ID/OU",
+          "$163.8 / 168$"
+        ],
+        [
+          "Material/Density, g/cc",
+          -26.55
+        ],
+        [
+          "Avg. fuel temperature, K",
+          723
+        ],
+        [
+          "Avg. fuel density, g/cc",
+          9.3
+        ],
+        [
+          "Coolant material",
+          "Light water"
+        ],
+        [
+          "Temperature, K",
+          558
+        ],
+        [
+          "Average density, g/cc",
+          0.45
+        ],
+        [
+          "Moderator material",
+          "Heavy water"
+        ],
+        [
+          "Temperature, K",
+          340.5
+        ],
+        [
+          "Average density, g/cc",
+          1.089
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2",
+      "headers": [
+        "Cluster type",
+        "Fuel Type",
+        "Gd content",
+        "LEU content (\\%) in various rings of cluster",
+        "",
+        "",
+        "",
+        "U-235 content (\\%)",
+        "$K_{\\infty}(0 \\mathrm{MWd} / \\mathrm{Te} \\mathrm{Xe}$ sat. $)$"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "Inner",
+          "Middle",
+          "Outer",
+          "Cluster average",
+          "",
+          ""
+        ],
+        [
+          -1,
+          "(LEU-Th) MOX",
+          "No Gd",
+          13,
+          13,
+          13,
+          13,
+          2.56,
+          1.084
+        ],
+        [
+          -2,
+          "",
+          2,
+          13,
+          13,
+          13,
+          13,
+          2.56,
+          0.9813
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 9
+    },
+    {
+      "table_number": "3",
+      "table_title": "Properties of loading pattern optimized using EDA for variation of population size and $\\alpha$ for initial distribution function of 0.6 for type-1 and 0.4 for type-2.",
+      "headers": [
+        "Alpha",
+        "Population size (generations)",
+        "Initial distribution function of 0.6 for type-1 and 0.4 for type-2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Max. objective function",
+          "K-eff",
+          "MCP (MW)",
+          "MMP (kW)",
+          -1,
+          "No. of type-1 clusters",
+          "No. of type-2 clusters"
+        ],
+        [
+          0.05,
+          24400,
+          0.98704,
+          0.98794,
+          2.68,
+          159,
+          63.3,
+          260,
+          184
+        ],
+        [
+          "",
+          240125,
+          0.99536,
+          0.99536,
+          2.6,
+          153,
+          63.6,
+          296,
+          148
+        ],
+        [
+          "",
+          1200155,
+          0.99551,
+          0.99551,
+          2.59,
+          153,
+          63.3,
+          300,
+          144
+        ],
+        [
+          0.1,
+          24400,
+          0.9879,
+          0.9879,
+          2.6,
+          153,
+          63.3,
+          260,
+          184
+        ],
+        [
+          "",
+          240125,
+          1.0074,
+          1.0074,
+          2.6,
+          155,
+          63.8,
+          344,
+          100
+        ],
+        [
+          "",
+          1200125,
+          1.0079,
+          1.0079,
+          2.59,
+          155,
+          63.9,
+          348,
+          96
+        ],
+        [
+          0.5,
+          24100,
+          0.9965,
+          0.9965,
+          2.6,
+          157,
+          64.5,
+          296,
+          148
+        ],
+        [
+          "",
+          240100,
+          1.00953,
+          1.00953,
+          2.58,
+          154,
+          63.1,
+          356,
+          88
+        ],
+        [
+          "",
+          120060,
+          1.00953,
+          1.00953,
+          2.58,
+          154,
+          63.1,
+          356,
+          88
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 9
+    },
+    {
+      "table_number": "4",
+      "table_title": "Properties of loading pattern optimized using EDA for variation of population size and $\\alpha$ for initial distribution function of 0.8 for type-1 and 0.2 for type-2.",
+      "headers": [
+        "Alpha",
+        "Population size (generations)",
+        "Initial distribution function of 0.8 for type-1 and 0.2 for type-2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Max. objective function",
+          "K-eff",
+          "MCP",
+          "MMP",
+          -1,
+          -1,
+          -2
+        ],
+        [
+          0.05,
+          24400,
+          1.004,
+          1.004,
+          2.6,
+          154,
+          65.1,
+          328,
+          116
+        ],
+        [
+          "",
+          240250,
+          1.0072,
+          1.0072,
+          2.59,
+          154,
+          63.1,
+          344,
+          100
+        ],
+        [
+          "",
+          1200145,
+          1.005,
+          1.005,
+          2.6,
+          156,
+          63.4,
+          336,
+          108
+        ],
+        [
+          0.1,
+          24400,
+          1.0044,
+          1.0044,
+          2.6,
+          155,
+          64.5,
+          332,
+          112
+        ],
+        [
+          "",
+          240125,
+          1.00953,
+          1.00953,
+          2.58,
+          154,
+          63.1,
+          356,
+          88
+        ],
+        [
+          "",
+          1200125,
+          1.00953,
+          1.00953,
+          2.58,
+          154,
+          63.1,
+          356,
+          88
+        ],
+        [
+          0.5,
+          24100,
+          0.98259,
+          1.0056,
+          2.66,
+          159,
+          64.0,
+          340,
+          104
+        ],
+        [
+          "",
+          240100,
+          1.00948,
+          1.00948,
+          2.59,
+          155,
+          63.2,
+          356,
+          88
+        ],
+        [
+          "",
+          120050,
+          1.00953,
+          1.00953,
+          2.58,
+          154,
+          63.1,
+          356,
+          88
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 9
+    },
+    {
+      "table_number": "5",
+      "table_title": "Properties of loading pattern optimized using GA for variation of population size for initial distribution function of 0.6 for type-1 and 0.4 for type-2.",
+      "headers": [
+        "Population size",
+        "Initial distribution function of 0.6 for type-1 and 0.4 for type-2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Max. Objective function",
+          "$K$-eff",
+          "MCP",
+          "MMP",
+          -1,
+          -1,
+          -2
+        ],
+        [
+          24,
+          0.9989,
+          0.9989,
+          2.58,
+          149,
+          64.6,
+          308,
+          136
+        ],
+        [
+          240,
+          1.00953,
+          1.00953,
+          2.58,
+          154,
+          63.1,
+          356,
+          88
+        ],
+        [
+          1200,
+          1.00953,
+          1.00953,
+          2.58,
+          154,
+          63.1,
+          356,
+          88
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "6",
+      "table_title": "Properties of loading pattern optimized using GA for variation of population size for initial distribution function of 0.8 for type-1 and 0.2 for type-2.",
+      "headers": [
+        "Population size",
+        "Initial distribution function of 0.8 for type-1 and 0.2 for type-2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Max. objective function",
+          "$K$-eff",
+          "MCP",
+          "MMP",
+          -1,
+          -1,
+          -2
+        ],
+        [
+          24,
+          1.0056,
+          1.0056,
+          2.6,
+          156,
+          64.0,
+          336,
+          108
+        ],
+        [
+          240,
+          1.00953,
+          1.00953,
+          2.58,
+          154,
+          63.1,
+          356,
+          88
+        ],
+        [
+          1200,
+          1.00953,
+          1.00953,
+          2.58,
+          154,
+          63.1,
+          356,
+          88
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    }
+  ]
+}

@@ -1,0 +1,736 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2013/Efficient Sampling in Fragment-Based Protein Structure Prediction Using an Estimation of Distribution Algorithm.md",
+    "filename": "Efficient Sampling in Fragment-Based Protein Structure Prediction Using an Estimation of Distribution Algorithm.md",
+    "title": "Efficient Sampling in Fragment-Based Protein Structure Prediction Using an Estimation of Distribution Algorithm",
+    "year": "2013"
+  },
+  "references": {
+    "header": "# References",
+    "content": "1. Aufinsen CB, Haber E, Sela M, White FH (1961) The kinetics of formation of native ribonuclease during oxidation of the reduced polypeptide chain. Proc Natl Acad Sci U S A 47: 1309-14.\n2. Kim DE, Blum B, Bradley P, Baker D (2009) Sampling bottlenecks in de novo protein structure prediction. J Mol Biol 393: 249-60.\n3. Bowie JU, Eisenberg D (1994) An evolutionary approach to folding small alphabetical proteins that uses sequence information and an empirical guiding fitness function. Proc Natl Acad Sci U S A 91: 4436-40.\n4. Simons KT, Kooperberg C, Huang E, Baker D (1997) Assembly of protein tertiary structures from fragments with similar local sequences using simulated annealing and Bayesian scoring functions. J Mol Biol 268: 209-25.\n5. Simons KT, Bonneau R, Ruczinski I, Baker D (1999) Ab initio protein structure prediction of CASP III targets using ROSETTA. Proteins Suppl 3: 171-6.\n6. Rohl CA, Strauss CEM, Misura KMS, Baker D (2004) Protein structure prediction using Rosetta. Methods Enzymol 383: 66-93.\n7. Leaver-For A, Tyka M, Lewis SM, Lange OF, Thompson J, et al. (2011) ROSETTA3: an objectoriented software suite for the simulation and design of macromolecules. Methods Enzymol 487: 545-74.\n8. Kinch L, Yong Shi S, Cong Q, Cheng H, Liao Y, et al. (2011) CASP9 assessment of free modeling target predictions. Proteins: Structure, Function, and Bioinformatics 79: 59-73.\n9. Xu D, Zhang Y (2012) Ab initio protein structure assembly using continuous structure fragments and optimized knowledge-based force field. Proteins 80: $1715-1735$.\n10. Lee J, Kim SY, Joo K, Kim I, Lee J (2004) Prediction of protein tertiary structure using PROFESY; a novel method based on fragment assembly and conformational space annealing. Proteins 56: 704-14.\n11. Chikruji G, Fujisuka Y, Takada S (2003) A reversible fragment assembly method for de novo protein structure prediction. The Journal of Chemical Physics 119: 6895-6903.\n12. Karplus K, Karchin R, Draper J, Casper J, Mandel-Gutferund Y, et al. (2003) Combining localstructure, fold-recognition, and new fold methods for protein structure prediction. Proteins 53 Suppl 6: 491-6.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Aufinsen CB, Haber E, Sela M, White FH (1961) The kinetics of formation of native ribonuclease during oxidation of the reduced polypeptide chain. Proc Natl Acad Sci U S A 47: 1309-14."
+      },
+      {
+        "ref_id": "2",
+        "text": "Kim DE, Blum B, Bradley P, Baker D (2009) Sampling bottlenecks in de novo protein structure prediction. J Mol Biol 393: 249-60."
+      },
+      {
+        "ref_id": "3",
+        "text": "Bowie JU, Eisenberg D (1994) An evolutionary approach to folding small alphabetical proteins that uses sequence information and an empirical guiding fitness function. Proc Natl Acad Sci U S A 91: 4436-40."
+      },
+      {
+        "ref_id": "4",
+        "text": "Simons KT, Kooperberg C, Huang E, Baker D (1997) Assembly of protein tertiary structures from fragments with similar local sequences using simulated annealing and Bayesian scoring functions. J Mol Biol 268: 209-25."
+      },
+      {
+        "ref_id": "5",
+        "text": "Simons KT, Bonneau R, Ruczinski I, Baker D (1999) Ab initio protein structure prediction of CASP III targets using ROSETTA. Proteins Suppl 3: 171-6."
+      },
+      {
+        "ref_id": "6",
+        "text": "Rohl CA, Strauss CEM, Misura KMS, Baker D (2004) Protein structure prediction using Rosetta. Methods Enzymol 383: 66-93."
+      },
+      {
+        "ref_id": "7",
+        "text": "Leaver-For A, Tyka M, Lewis SM, Lange OF, Thompson J, et al. (2011) ROSETTA3: an objectoriented software suite for the simulation and design of macromolecules. Methods Enzymol 487: 545-74."
+      },
+      {
+        "ref_id": "8",
+        "text": "Kinch L, Yong Shi S, Cong Q, Cheng H, Liao Y, et al. (2011) CASP9 assessment of free modeling target predictions. Proteins: Structure, Function, and Bioinformatics 79: 59-73."
+      },
+      {
+        "ref_id": "9",
+        "text": "Xu D, Zhang Y (2012) Ab initio protein structure assembly using continuous structure fragments and optimized knowledge-based force field. Proteins 80: $1715-1735$."
+      },
+      {
+        "ref_id": "10",
+        "text": "Lee J, Kim SY, Joo K, Kim I, Lee J (2004) Prediction of protein tertiary structure using PROFESY; a novel method based on fragment assembly and conformational space annealing. Proteins 56: 704-14."
+      },
+      {
+        "ref_id": "11",
+        "text": "Chikruji G, Fujisuka Y, Takada S (2003) A reversible fragment assembly method for de novo protein structure prediction. The Journal of Chemical Physics 119: 6895-6903."
+      },
+      {
+        "ref_id": "12",
+        "text": "Karplus K, Karchin R, Draper J, Casper J, Mandel-Gutferund Y, et al. (2003) Combining localstructure, fold-recognition, and new fold methods for protein structure prediction. Proteins 53 Suppl 6: 491-6."
+      }
+    ],
+    "reference_count": 12,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparison of all-atom models generated using fragment distributions estimated from all-atom models versus coarse-grained models.",
+      "headers": [
+        "",
+        "$1 \\%$ C_RMSD (Å)",
+        "",
+        "$1 \\%$ C_RMSD (Å)",
+        "",
+        "Best model (Å)",
+        ""
+      ],
+      "rows": [
+        [
+          "Target",
+          "EdaFold $_{A A}$",
+          "EdaFold $_{C G}$",
+          "EdaFold $_{A A}$",
+          "EdaFold $_{C G}$",
+          "EdaFold $_{A A}$",
+          "EdaFold $_{C G}$"
+        ],
+        [
+          12,
+          0.7,
+          0.75,
+          0.86,
+          0.99,
+          0.51,
+          0.54
+        ],
+        [
+          1,
+          3.26,
+          3.14,
+          4.08,
+          3.44,
+          2.35,
+          2.41
+        ],
+        [
+          1,
+          3.28,
+          3.33,
+          3.74,
+          3.74,
+          1.75,
+          2.17
+        ],
+        [
+          4,
+          4.13,
+          4.27,
+          4.9,
+          5.16,
+          3.03,
+          3.04
+        ],
+        [
+          1,
+          3.2,
+          3.67,
+          3.94,
+          4.32,
+          2.2,
+          2.44
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison of all-atom models generated by EdaFold $_{A A}$ and Rosetta.",
+      "headers": [
+        "",
+        "1\\% C_RMSD (Å)",
+        "",
+        "1\\% C_RMSD (Å)",
+        "",
+        "Best model (Å)",
+        ""
+      ],
+      "rows": [
+        [
+          "Target",
+          "EdaFold $_{A A}$",
+          "Rosetta",
+          "EdaFold $_{A A}$",
+          "Rosetta",
+          "EdaFold $_{A A}$",
+          "Rosetta"
+        ],
+        [
+          19,
+          1.29,
+          3.33,
+          1.75,
+          4.51,
+          0.98,
+          2.27
+        ],
+        [
+          12,
+          0.7,
+          0.91,
+          0.86,
+          1.43,
+          0.51,
+          0.59
+        ],
+        [
+          1,
+          3.26,
+          3.53,
+          4.08,
+          4.22,
+          2.35,
+          2.42
+        ],
+        [
+          15,
+          2.26,
+          2.21,
+          2.52,
+          2.46,
+          1.24,
+          1.78
+        ],
+        [
+          18,
+          2.09,
+          2.46,
+          2.4,
+          3.13,
+          1.72,
+          1.77
+        ],
+        [
+          1,
+          3.44,
+          3.09,
+          4.36,
+          3.76,
+          2.7,
+          2.4
+        ],
+        [
+          15,
+          2.24,
+          2.29,
+          2.61,
+          2.68,
+          1.69,
+          1.74
+        ],
+        [
+          1,
+          2.46,
+          2.41,
+          3.56,
+          3.47,
+          1.35,
+          1.47
+        ],
+        [
+          1,
+          2.25,
+          2.67,
+          2.72,
+          3.1,
+          1.33,
+          1.79
+        ],
+        [
+          1,
+          2.55,
+          2.68,
+          3.02,
+          3.38,
+          2.0,
+          1.65
+        ],
+        [
+          22,
+          3.18,
+          2.95,
+          4.81,
+          4.15,
+          2.24,
+          2.07
+        ],
+        [
+          3,
+          3.63,
+          3.83,
+          4.11,
+          4.45,
+          3.07,
+          2.96
+        ],
+        [
+          119,
+          2.9,
+          3.28,
+          3.55,
+          4.34,
+          2.2,
+          1.99
+        ],
+        [
+          1,
+          3.28,
+          3.2,
+          3.74,
+          3.89,
+          1.75,
+          2.31
+        ],
+        [
+          18,
+          3.76,
+          3.58,
+          4.79,
+          4.55,
+          2.84,
+          2.43
+        ],
+        [
+          4,
+          4.13,
+          3.86,
+          4.9,
+          4.7,
+          3.03,
+          2.48
+        ],
+        [
+          16,
+          1.22,
+          1.46,
+          1.42,
+          1.84,
+          1.01,
+          1.08
+        ],
+        [
+          1,
+          2.92,
+          3.3,
+          4.0,
+          4.82,
+          1.85,
+          1.89
+        ],
+        [
+          1,
+          3.2,
+          4.55,
+          3.94,
+          5.85,
+          2.2,
+          2.77
+        ],
+        [
+          3,
+          3.51,
+          3.82,
+          4.63,
+          4.93,
+          2.18,
+          2.52
+        ],
+        [
+          "Average",
+          2.72,
+          2.97,
+          3.39,
+          3.79,
+          1.91,
+          2.02
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison of best all-atom models selected based on energy.",
+      "headers": [
+        "",
+        "First prediction ( $\\AA$ )",
+        "",
+        "Best prediction ( $\\AA$ )",
+        ""
+      ],
+      "rows": [
+        [
+          "Target",
+          "EdaFold ${ }_{A A}$",
+          "Rosetta",
+          "EdaFold ${ }_{A A}$",
+          "Rosetta"
+        ],
+        [
+          19,
+          1.55,
+          4.32,
+          1.38,
+          4.32
+        ],
+        [
+          12,
+          1.0,
+          1.23,
+          0.76,
+          0.86
+        ],
+        [
+          1,
+          7.74,
+          7.23,
+          3.61,
+          6.36
+        ],
+        [
+          15,
+          3.21,
+          3.51,
+          3.0,
+          3.18
+        ],
+        [
+          18,
+          3.89,
+          8.28,
+          3.66,
+          3.29
+        ],
+        [
+          1,
+          7.05,
+          4.84,
+          4.58,
+          2.76
+        ],
+        [
+          15,
+          6.46,
+          2.64,
+          3.63,
+          2.64
+        ],
+        [
+          1,
+          1.72,
+          1.72,
+          1.69,
+          1.72
+        ],
+        [
+          1,
+          2.47,
+          2.71,
+          2.47,
+          2.71
+        ],
+        [
+          1,
+          5.02,
+          3.02,
+          2.5,
+          2.56
+        ],
+        [
+          22,
+          7.73,
+          8.47,
+          6.77,
+          6.41
+        ],
+        [
+          3,
+          5.95,
+          5.8,
+          5.95,
+          5.33
+        ],
+        [
+          119,
+          2.73,
+          3.76,
+          2.73,
+          3.1
+        ],
+        [
+          1,
+          4.07,
+          3.92,
+          3.69,
+          3.72
+        ],
+        [
+          18,
+          9.03,
+          3.73,
+          3.44,
+          3.73
+        ],
+        [
+          4,
+          10.48,
+          10.5,
+          5.87,
+          8.51
+        ],
+        [
+          16,
+          1.99,
+          1.94,
+          1.34,
+          1.88
+        ],
+        [
+          1,
+          2.5,
+          15.28,
+          2.5,
+          9.46
+        ],
+        [
+          1,
+          3.6,
+          2.77,
+          3.0,
+          2.77
+        ],
+        [
+          3,
+          4.38,
+          12.37,
+          4.38,
+          5.38
+        ],
+        [
+          "Average",
+          4.63,
+          5.4,
+          3.35,
+          4.04
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Blind selection ability of all-atom models generated by EdaFold $_{A A}$ at iterations 1 and 4.",
+      "headers": [
+        "",
+        "First prediction $(\\hat{\\mathbf{A}})$",
+        "",
+        "",
+        "Best prediction $(\\hat{\\mathbf{A}})$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Target",
+          0.1,
+          0.4,
+          "Rosetta",
+          0.1,
+          0.4,
+          "Rosetta"
+        ],
+        [
+          19,
+          6.28,
+          1.38,
+          9.41,
+          2.86,
+          1.11,
+          6.2
+        ],
+        [
+          12,
+          1.37,
+          0.85,
+          1.05,
+          0.92,
+          0.76,
+          0.94
+        ],
+        [
+          1,
+          3.61,
+          7.87,
+          7.23,
+          3.61,
+          2.64,
+          6.36
+        ],
+        [
+          15,
+          3.39,
+          3.24,
+          3.98,
+          2.98,
+          3.15,
+          3.21
+        ],
+        [
+          18,
+          3.86,
+          3.49,
+          8.28,
+          3.26,
+          3.03,
+          2.8
+        ],
+        [
+          1,
+          5.81,
+          7.05,
+          4.84,
+          4.78,
+          5.62,
+          3.39
+        ],
+        [
+          15,
+          3.11,
+          6.46,
+          2.95,
+          2.62,
+          6.35,
+          2.71
+        ],
+        [
+          1,
+          3.22,
+          1.68,
+          1.72,
+          1.69,
+          1.65,
+          1.72
+        ],
+        [
+          1,
+          3.29,
+          2.78,
+          2.71,
+          3.08,
+          2.68,
+          2.71
+        ],
+        [
+          1,
+          2.85,
+          5.02,
+          3.9,
+          2.85,
+          2.68,
+          2.68
+        ],
+        [
+          22,
+          7.49,
+          7.73,
+          7.2,
+          7.14,
+          6.77,
+          7.2
+        ],
+        [
+          3,
+          10.87,
+          11.42,
+          5.8,
+          5.58,
+          5.5,
+          4.99
+        ],
+        [
+          119,
+          6.77,
+          3.82,
+          3.76,
+          3.26,
+          2.75,
+          3.1
+        ],
+        [
+          1,
+          4.6,
+          3.69,
+          4.29,
+          3.91,
+          3.69,
+          4.29
+        ],
+        [
+          18,
+          9.13,
+          9.03,
+          4.06,
+          9.13,
+          3.44,
+          3.17
+        ],
+        [
+          4,
+          9.23,
+          11.39,
+          10.5,
+          5.93,
+          7.64,
+          7.74
+        ],
+        [
+          16,
+          2.21,
+          1.93,
+          1.88,
+          1.57,
+          1.34,
+          1.36
+        ],
+        [
+          1,
+          9.87,
+          2.5,
+          15.28,
+          9.79,
+          2.5,
+          6.98
+        ],
+        [
+          1,
+          10.43,
+          3.6,
+          8.59,
+          4.25,
+          3.0,
+          5.42
+        ],
+        [
+          3,
+          13.96,
+          4.38,
+          9.08,
+          7.89,
+          4.38,
+          5.84
+        ],
+        [
+          "Average",
+          6.07,
+          4.97,
+          5.83,
+          4.35,
+          3.54,
+          4.15
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 7
+    }
+  ]
+}

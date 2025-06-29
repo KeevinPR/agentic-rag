@@ -1,0 +1,664 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Variable Screening for Reduced Dependency Modelling in Gaussian-based Continuous Estimation of Distribution Algorithms.md",
+    "filename": "Variable Screening for Reduced Dependency Modelling in Gaussian-based Continuous Estimation of Distribution Algorithms.md",
+    "title": "Variable Screening for Reduced Dependency Modelling in Gaussian-based Continuous Estimation of Distribution Algorithms",
+    "year": "2012"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] P. Larrañaga and J. A. Lozano, Eds., Estimation of Distribution Algorithms : A New Tool for Evolutionary Computation. Kluwer, 2001.\n[2] H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. binary parameters,\" in Parallel Problem Solving from Nature - PPSN IV, ser. Lecture Notes in Computer Science, vol. 1411. Springer, 1996, pp. 178-187.\n[3] M. Pelikan, D. Goldberg, and F. Lobo, \"A survey of optimization by building and using probabilistic models,\" Computational optimization and applications, vol. 21, no. 1, pp. 5-20, 2002.\n[4] S. Kern, S. Müller, N. Hansen, D. Büche, J. Ocenasek, and P. Koumoutsakos, \"Learning probability distributions in continuous evolutionary algorithms-a comparative review,\" Natural Computing, vol. 3, no. 1, pp. 77-112, 2004.\n[5] N. Hansen, \"The CMA evolution strategy: a comparing review,\" Towards a new evolutionary computation, pp. 75102, 2006.\n[6] P. Bosman, J. Grahl, and D. Thierens, \"Enhancing the performance of maximum-likelihood Gaussian EDAs using anticipated mean shift,\" Parallel Problem Solving from Nature-PPSN X, pp. 133-143, 2008.\n[7] W. Dong and X. Yao, \"Covariance matrix repairing in Gaussian based EDAs,\" in Proc. Congress on Evolutionary Computation (CEC). IEEE, 2007, pp. 415-422.\n[8] S. Baluja, \"Population-Based Incremental Learning: A method for integrating genetic search based function optimization and competitive learning,\" School of Computer Science, Carnegie Mellon University, Tech. Rep. CMU-CS-94-163, 1994.\n[9] W. Dong and X. Yao, \"Unified eigen analysis on multivariate Gaussian based Estimation of Distribution Algorithms,\" Information Sciences, vol. 178, no. 15, pp. 30003023, 2008.\n[10] P. Bosman and D. Thierens, \"Continuous iterated density estimation evolutionary algorithms within the IDEA framework,\" in Proc. of the Optimization by Building and using Probabilistic Models OBUPM Workshop at the Genetic and Evolutionary Computation Conference (GECCO-2000). San Francisco, CA: Morgan Kaufmann, 2000, pp. 197-200.\n[11] M. Gallagher, M. Frean, and T. Downs, \"Real-valued evolutionary optimization using a flexible probability density estimator,\" in Proc. Genetic and Evolutionary Computation Conference (GECCO'99), W. Banzhaf and et al., Eds. San Francisco, CA: Morgan Kaufmann, 1999, pp. 840-846.\n[12] M. Gallagher, \"Multi-layer perceptron error surfaces: visualization, structure and modelling,\" Ph.D. dissertation, Dept. Computer Science and Electrical Engineering, University of Queensland, 2000.\n[13] B. Yuan and M. Gallagher, \"Playing in continuous spaces: Some analysis and extension of population-based incremental learning,\" in Proc. Congress on Evolutionary Computation (CEC), R. S. et. al., Ed. IEEE, 2003, pp. $443-450$.\n[14] N. Ding, S. Zhou, and Z. Sun, \"Optimizing continuous problems using estimation of distribution algorithm based on histogram model,\" Simulated Evolution and Learning, pp. 545-552, 2006.\n[15] P. A. N. Bosman and D. Thierens, \"IDEAs based on the normal kernels probability density function,\" Department of Computer Science, Utrecht University, (ftp://ftp.cs.uu.nl/pub/RUU/CS/techreps/CS-2000/200011.ps.gz), Tech. Rep. 2000-11, Mar. 2000.\n[16] P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña, \"Optimization by learning and simulation of Bayesian and Gaussian networks,\" University of the Basque Country, Spain, Tech. Rep. KZZA-IK-4-99, 1999.\n[17] M. Morris, \"Factorial sampling plans for preliminary computational experiments,\" Technometrics, vol. 33, no. 2, pp. 161-174, 1991.\n[18] F. Campolongo, J. Cariboni, A. Saltelli, and W. Schoutens, \"Enhancing the morris method,\" in Sensitivity Analysis of Model Output. Proceedings of the 4th International Conference on Sensitivity Analysis of Model Output (SAMO 2004), 2005, pp. 369-379.\n[19] A. Forrester, A. Sóbester, and A. Keane, Engineering design via surrogate modelling: a practical guide. Wiley, 2008, vol. 226.\n[20] A. Eiben and J. Smith, Introduction to Evolutionary Computing. Springer, 2003.\n[21] N. Hansen, S. Finck, R. Ros, A. Auger et al., \"Realparameter black-box optimization benchmarking 2009: Noiseless functions definitions,\" INRIA, Tech. Rep. RR6829, 2009.\n[22] M. Gallagher, \"Investigating circles in a square packing problems as a realistic benchmark for continuous metaheuristic optimization algorithms,\" in The VIII Metaheuristic International Conference MIC 2009, 2009.\n[23] I. Castillo, F. Kampas, and J. Pintér, \"Solving circle packing problems by global optimization: numerical results and industrial applications,\" European Journal of Operational Research, vol. 191, no. 3, pp. 786-802, 2008.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "P. Larrañaga and J. A. Lozano, Eds., Estimation of Distribution Algorithms : A New Tool for Evolutionary Computation. Kluwer, 2001."
+      },
+      {
+        "ref_id": "2",
+        "text": "H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. binary parameters,\" in Parallel Problem Solving from Nature - PPSN IV, ser. Lecture Notes in Computer Science, vol. 1411. Springer, 1996, pp. 178-187."
+      },
+      {
+        "ref_id": "3",
+        "text": "M. Pelikan, D. Goldberg, and F. Lobo, \"A survey of optimization by building and using probabilistic models,\" Computational optimization and applications, vol. 21, no. 1, pp. 5-20, 2002."
+      },
+      {
+        "ref_id": "4",
+        "text": "S. Kern, S. Müller, N. Hansen, D. Büche, J. Ocenasek, and P. Koumoutsakos, \"Learning probability distributions in continuous evolutionary algorithms-a comparative review,\" Natural Computing, vol. 3, no. 1, pp. 77-112, 2004."
+      },
+      {
+        "ref_id": "5",
+        "text": "N. Hansen, \"The CMA evolution strategy: a comparing review,\" Towards a new evolutionary computation, pp. 75102, 2006."
+      },
+      {
+        "ref_id": "6",
+        "text": "P. Bosman, J. Grahl, and D. Thierens, \"Enhancing the performance of maximum-likelihood Gaussian EDAs using anticipated mean shift,\" Parallel Problem Solving from Nature-PPSN X, pp. 133-143, 2008."
+      },
+      {
+        "ref_id": "7",
+        "text": "W. Dong and X. Yao, \"Covariance matrix repairing in Gaussian based EDAs,\" in Proc. Congress on Evolutionary Computation (CEC). IEEE, 2007, pp. 415-422."
+      },
+      {
+        "ref_id": "8",
+        "text": "S. Baluja, \"Population-Based Incremental Learning: A method for integrating genetic search based function optimization and competitive learning,\" School of Computer Science, Carnegie Mellon University, Tech. Rep. CMU-CS-94-163, 1994."
+      },
+      {
+        "ref_id": "9",
+        "text": "W. Dong and X. Yao, \"Unified eigen analysis on multivariate Gaussian based Estimation of Distribution Algorithms,\" Information Sciences, vol. 178, no. 15, pp. 30003023, 2008."
+      },
+      {
+        "ref_id": "10",
+        "text": "P. Bosman and D. Thierens, \"Continuous iterated density estimation evolutionary algorithms within the IDEA framework,\" in Proc. of the Optimization by Building and using Probabilistic Models OBUPM Workshop at the Genetic and Evolutionary Computation Conference (GECCO-2000). San Francisco, CA: Morgan Kaufmann, 2000, pp. 197-200."
+      },
+      {
+        "ref_id": "11",
+        "text": "M. Gallagher, M. Frean, and T. Downs, \"Real-valued evolutionary optimization using a flexible probability density estimator,\" in Proc. Genetic and Evolutionary Computation Conference (GECCO'99), W. Banzhaf and et al., Eds. San Francisco, CA: Morgan Kaufmann, 1999, pp. 840-846."
+      },
+      {
+        "ref_id": "12",
+        "text": "M. Gallagher, \"Multi-layer perceptron error surfaces: visualization, structure and modelling,\" Ph.D. dissertation, Dept. Computer Science and Electrical Engineering, University of Queensland, 2000."
+      },
+      {
+        "ref_id": "13",
+        "text": "B. Yuan and M. Gallagher, \"Playing in continuous spaces: Some analysis and extension of population-based incremental learning,\" in Proc. Congress on Evolutionary Computation (CEC), R. S. et. al., Ed. IEEE, 2003, pp. $443-450$."
+      },
+      {
+        "ref_id": "14",
+        "text": "N. Ding, S. Zhou, and Z. Sun, \"Optimizing continuous problems using estimation of distribution algorithm based on histogram model,\" Simulated Evolution and Learning, pp. 545-552, 2006."
+      },
+      {
+        "ref_id": "15",
+        "text": "P. A. N. Bosman and D. Thierens, \"IDEAs based on the normal kernels probability density function,\" Department of Computer Science, Utrecht University, (ftp://ftp.cs.uu.nl/pub/RUU/CS/techreps/CS-2000/200011.ps.gz), Tech. Rep. 2000-11, Mar. 2000."
+      },
+      {
+        "ref_id": "16",
+        "text": "P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña, \"Optimization by learning and simulation of Bayesian and Gaussian networks,\" University of the Basque Country, Spain, Tech. Rep. KZZA-IK-4-99, 1999."
+      },
+      {
+        "ref_id": "17",
+        "text": "M. Morris, \"Factorial sampling plans for preliminary computational experiments,\" Technometrics, vol. 33, no. 2, pp. 161-174, 1991."
+      },
+      {
+        "ref_id": "18",
+        "text": "F. Campolongo, J. Cariboni, A. Saltelli, and W. Schoutens, \"Enhancing the morris method,\" in Sensitivity Analysis of Model Output. Proceedings of the 4th International Conference on Sensitivity Analysis of Model Output (SAMO 2004), 2005, pp. 369-379."
+      },
+      {
+        "ref_id": "19",
+        "text": "A. Forrester, A. Sóbester, and A. Keane, Engineering design via surrogate modelling: a practical guide. Wiley, 2008, vol. 226."
+      },
+      {
+        "ref_id": "20",
+        "text": "A. Eiben and J. Smith, Introduction to Evolutionary Computing. Springer, 2003."
+      },
+      {
+        "ref_id": "21",
+        "text": "N. Hansen, S. Finck, R. Ros, A. Auger et al., \"Realparameter black-box optimization benchmarking 2009: Noiseless functions definitions,\" INRIA, Tech. Rep. RR6829, 2009."
+      },
+      {
+        "ref_id": "22",
+        "text": "M. Gallagher, \"Investigating circles in a square packing problems as a realistic benchmark for continuous metaheuristic optimization algorithms,\" in The VIII Metaheuristic International Conference MIC 2009, 2009."
+      },
+      {
+        "ref_id": "23",
+        "text": "I. Castillo, F. Kampas, and J. Pintér, \"Solving circle packing problems by global optimization: numerical results and industrial applications,\" European Journal of Operational Research, vol. 191, no. 3, pp. 786-802, 2008."
+      }
+    ],
+    "reference_count": 23,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "3",
+      "table_title": "Solution quality comparison having different values of $\\tau$ and $\\eta$ with 6 different function from BBCB. Bold font represents the best result.",
+      "headers": [
+        "Function",
+        "$(\\tau, \\eta)$",
+        "Best fitness values"
+      ],
+      "rows": [
+        [
+          1,
+          "(0.5,0.3)",
+          "3.07E-09 $\\pm$ 1.8E-09(-)"
+        ],
+        [
+          "",
+          "(0.5,0.5)",
+          "$1.21 \\mathrm{E}-02 \\pm 6.6 \\mathrm{E}-02(*)$"
+        ],
+        [
+          "",
+          "(0.3,0.5)",
+          "4.43E-09 $\\pm 2.2 \\mathrm{E}-09(-)$"
+        ],
+        [
+          "",
+          "(0.3,0.3)",
+          "4.35E-09 $\\pm 2.6 \\mathrm{E}-09$"
+        ],
+        [
+          2,
+          "(0.5,0.3)",
+          "$0.10 \\pm 0.2(-)$"
+        ],
+        [
+          "",
+          "(0.5,0.5)",
+          "$1.52 \\pm 4.8(-)$"
+        ],
+        [
+          "",
+          "(0.3,0.5)",
+          "$0.16 \\pm 0.5(-)$"
+        ],
+        [
+          "",
+          "(0.3,0.3)",
+          0.09
+        ],
+        [
+          3,
+          "(0.5,0.3)",
+          "$2.14 \\pm 1.1(-)$"
+        ],
+        [
+          "",
+          "(0.5,0.5)",
+          "$2.48 \\pm 1.7(-)$"
+        ],
+        [
+          "",
+          "(0.3,0.5)",
+          "$2.15 \\pm 1.3(-)$"
+        ],
+        [
+          "",
+          "(0.3,0.3)",
+          1.92
+        ],
+        [
+          4,
+          "(0.5,0.3)",
+          "$10.83 \\pm 2.1(-)$"
+        ],
+        [
+          "",
+          "(0.5,0.5)",
+          "$11.33 \\pm 2.2(*)$"
+        ],
+        [
+          "",
+          "(0.3,0.5)",
+          "$9.51 \\pm 2.1(-)$"
+        ],
+        [
+          "",
+          "(0.3,0.3)",
+          9.65
+        ],
+        [
+          5,
+          "(0.5,0.3)",
+          "$-1.00 \\mathrm{E}-08 \\pm 5.0 \\mathrm{E}-024$"
+        ],
+        [
+          "",
+          "(0.5,0.5)",
+          "$0.02 \\pm 0.1(-)$"
+        ],
+        [
+          "",
+          "(0.3,0.5)",
+          "$-1.00 \\mathrm{E}-08 \\pm 5.0 \\mathrm{E}-02(n)$"
+        ],
+        [
+          "",
+          "(0.3,0.3)",
+          "$-1.00 \\mathrm{E}-08 \\pm 5.0 \\mathrm{E}-02(n)$"
+        ],
+        [
+          6,
+          "(0.5,0.3)",
+          "$16.70 \\pm 8.9(*)$"
+        ],
+        [
+          "",
+          "(0.5,0.5)",
+          "$17.08 \\pm 7.5(*)$"
+        ],
+        [
+          "",
+          "(0.3,0.5)",
+          "$10.24 \\pm 6.8(-)$"
+        ],
+        [
+          "",
+          "(0.3,0.3)",
+          9.66
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 3
+    },
+    {
+      "table_number": "4",
+      "table_title": "Test functions used in the experiments",
+      "headers": [
+        "Name",
+        "Function"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "$f_{S j d s}(\\mathbf{x})=\\sum_{i=1}^{n} x_{i}^{2}$"
+        ],
+        [
+          "",
+          "$-5.12 \\leq x_{i} \\leq 5.12, f_{S j d s}\\left(\\mathbf{x}^{*}\\right)=0$"
+        ],
+        [
+          "Griewangk",
+          "$f_{G r s}(\\mathbf{x})=\\sum_{i=1}^{n} \\frac{x_{i}^{2}}{2000}-\\prod_{i=1}^{n} \\cos \\left(\\frac{x_{i}}{\\sqrt{i}}\\right)+1$"
+        ],
+        [
+          "",
+          "$-600 \\leq x_{i} \\leq 600, f_{G r s}\\left(\\mathbf{x}^{*}\\right)=0$"
+        ],
+        [
+          "Ackleys",
+          "$f_{A c k}(\\mathbf{x})=-20 \\exp \\left(-0.2 \\sqrt{\\frac{1}{30} \\sum_{i=1}^{n} x_{i}^{2}}\\right)$"
+        ],
+        [
+          "",
+          "$-\\exp \\left(\\frac{1}{30} \\sum_{i=1}^{n} \\cos 2 \\pi x_{i}\\right)+20+e$"
+        ],
+        [
+          "Rosenbrock",
+          "$-15 \\leq x_{i} \\leq 30, f_{\\text {Ack }}\\left(\\mathbf{x}^{*}\\right)=0$"
+        ],
+        [
+          "",
+          "$f_{R o s}(\\mathbf{x})=\\sum_{i=1}^{n-1}\\left(x_{i}^{2}-x_{i+1}\\right)^{2}+\\left(x_{i}-1\\right)^{2}$"
+        ],
+        [
+          "",
+          "$-2 \\leq x_{i} \\leq 2, f_{R o s}\\left(\\mathbf{x}^{*}\\right)=0$"
+        ],
+        [
+          "",
+          "$-0.16 \\leq x_{i} \\leq 0.16, f_{s u m}\\left(\\mathbf{x}^{*}\\right)=100000$"
+        ],
+        [
+          "Rastrigin",
+          "$f_{R a s}(\\mathbf{x})=\\sum_{i=1}^{n}\\left(x_{i}^{2}-10 \\cos \\left(2 \\pi x_{i}\\right)+10\\right)$"
+        ],
+        [
+          "",
+          "$-5 \\leq x_{i} \\leq 5, f_{R a s}\\left(\\mathbf{x}^{*}\\right)=0$"
+        ],
+        [
+          "",
+          "$-10 \\leq x_{i} \\leq 10, f_{s c h}\\left(\\mathbf{x}^{*}\\right)=0$"
+        ],
+        [
+          "",
+          "$-500 \\leq x_{i} \\leq 500, f_{8}\\left(\\mathbf{x}^{*}\\right)=-418.9829 k$"
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Solution quality comparison for 10-D problem. Bold font represents the best result.",
+      "headers": [
+        "Function",
+        "Alg.",
+        "Best Fitness",
+        "No. of Evaluations"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "U",
+          "6.91E-09 $\\pm$ 1.8E-09(+)",
+          "$1.5 \\mathrm{E}+05 \\pm 1.4 \\mathrm{E}+03(+)$"
+        ],
+        [
+          "",
+          "E",
+          "7.67E-09 $\\pm 1.6 \\mathrm{E}-09(+)$",
+          "$1.4 \\mathrm{E}+05 \\pm 1.8 \\mathrm{E}+03(+)$"
+        ],
+        [
+          "",
+          "s",
+          "6.98E-09 $\\pm 1.9 \\mathrm{E}-09$",
+          5.504
+        ],
+        [
+          "Griewangk",
+          "U",
+          "7.78E-09 $\\pm 1.8 \\mathrm{E}-09(+)$",
+          "$1.4 \\mathrm{E}+05 \\pm 1.7 \\mathrm{E}+03(+)$"
+        ],
+        [
+          "",
+          "E",
+          "7.32E-09 $\\pm 1.5 \\mathrm{E}-09(+)$",
+          "$1.4 \\mathrm{E}+05 \\pm 1.5 \\mathrm{E}+03(+)$"
+        ],
+        [
+          "",
+          "s",
+          "6.82E-09 $\\pm$ 1.8E-09",
+          6.004
+        ],
+        [
+          "Ackely",
+          "U",
+          "8.50E-09 $\\pm 1.1 \\mathrm{E}-09(-)$",
+          "$2.0 \\mathrm{E}+05 \\pm 1.4 \\mathrm{E}+03(+)$"
+        ],
+        [
+          "",
+          "E",
+          "8.40E-09 $\\pm 1.1 \\mathrm{E}-09(-)$",
+          "$2.1 \\mathrm{E}+05 \\pm 1.4 \\mathrm{E}+03(+)$"
+        ],
+        [
+          "",
+          "s",
+          "8.27E-09 $\\pm$ 1.2E-09",
+          7.804
+        ],
+        [
+          "Rosenbrock",
+          "U",
+          8.21,
+          "$3.0 \\mathrm{E}+05 \\pm 0.0 \\mathrm{E}+00(n)$"
+        ],
+        [
+          "",
+          "E",
+          7.8,
+          "$3.0 \\mathrm{E}+05 \\pm 0.0 \\mathrm{E}+00(n)$"
+        ],
+        [
+          "",
+          "s",
+          "7.51E+00 $\\pm$ 2.6E-01",
+          "$3.0 \\mathrm{E}+05 \\pm 0.0 \\mathrm{E}+00$"
+        ],
+        [
+          "Rastrigin",
+          "U",
+          "7.32E-09 $\\pm 1.8 \\mathrm{E}-09(+)$",
+          "$2.2 \\mathrm{E}+05 \\pm 5.4 \\mathrm{E}+03(+)$"
+        ],
+        [
+          "",
+          "E",
+          "6.91E-09 $\\pm$ 1.8E-09(+)",
+          "$2.2 \\mathrm{E}+05 \\pm 4.6 \\mathrm{E}+03(+)$"
+        ],
+        [
+          "",
+          "s",
+          "1.99E-02 $\\pm 1.4 \\mathrm{E}-01$",
+          7.804
+        ],
+        [
+          "Schwefel",
+          "U",
+          3.72,
+          "$3.0 \\mathrm{E}+05 \\pm 0.0 \\mathrm{E}+00(n)$"
+        ],
+        [
+          "",
+          "E",
+          "7.51E-09 $\\pm$ 2.1E-09(+)",
+          1.304
+        ],
+        [
+          "",
+          "s",
+          "6.87E-01 $\\pm 1.0 \\mathrm{E}+00$",
+          "$3.0 \\mathrm{E}+05 \\pm 0.0 \\mathrm{E}+00$"
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Solution quality comparison for 50-D problem. Bold font represents the best result.",
+      "headers": [
+        "Function",
+        "Alg.",
+        "Best Fitness",
+        "No. of Evaluations"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "U",
+          "8.88E-09 $\\pm 8.5 \\mathrm{E}-10(-)$",
+          "$3.9 \\mathrm{E}+05 \\pm 1.7 \\mathrm{E}+03(+)$"
+        ],
+        [
+          "",
+          "E",
+          "2.65E-08 $\\pm 1.8 \\mathrm{E}-07(+)$",
+          3.905
+        ],
+        [
+          "",
+          "s",
+          "8.81E-09 $\\pm 9.1 \\mathrm{E}-10$",
+          "$1.3 \\mathrm{E}+06 \\pm 7.8 \\mathrm{E}+03$"
+        ],
+        [
+          "Griewangk",
+          "U",
+          "8.87E-09 $\\pm 8.7 \\mathrm{E}-10(-)$",
+          3.505
+        ],
+        [
+          "",
+          "E",
+          "1.42E-08 $\\pm 3.6 \\mathrm{E}-08(-)$",
+          "$4.6 \\mathrm{E}+05 \\pm 5.9 \\mathrm{E}+05(+)$"
+        ],
+        [
+          "",
+          "s",
+          "8.58E-09 $\\pm 7.2 \\mathrm{E}+10$",
+          "$1.1 \\mathrm{E}+06 \\pm 6.9 \\mathrm{E}+03$"
+        ],
+        [
+          "Ackely",
+          "U",
+          "4.38E-08 $\\pm 1.8 \\mathrm{E}-07(-)$",
+          "$7.2 \\mathrm{E}+05 \\pm 7.3 \\mathrm{E}+05(+)$"
+        ],
+        [
+          "",
+          "E",
+          "9.41E-09 $\\pm 4.4 \\mathrm{E}-10(-)$",
+          5.305
+        ],
+        [
+          "",
+          "s",
+          "9.35E-09 $\\pm 4.5 \\mathrm{E}+10$",
+          "$1.7 \\mathrm{E}+06 \\pm 8.2 \\mathrm{E}+03$"
+        ],
+        [
+          "Rosenbrock",
+          "U",
+          5.2501,
+          "$3.0 \\mathrm{E}+06 \\pm 0.0 \\mathrm{E}+00(n)$"
+        ],
+        [
+          "",
+          "E",
+          4.7801,
+          "$3.0 \\mathrm{E}+06 \\pm 0.0 \\mathrm{E}+00(n)$"
+        ],
+        [
+          "",
+          "s",
+          4.7301,
+          "$3.0 \\mathrm{E}+06 \\pm 0.0 \\mathrm{E}+00$"
+        ],
+        [
+          "Rastrigin",
+          "U",
+          "8.84E-09 $\\pm 8.1 \\mathrm{E}-10(+)$",
+          5.705
+        ],
+        [
+          "",
+          "E",
+          7.05,
+          "$3.0 \\mathrm{E}+06 \\pm 0.0 \\mathrm{E}+00(n)$"
+        ],
+        [
+          "",
+          "s",
+          "3.18E-01 $\\pm 5.0 \\mathrm{E}-01$",
+          "$3.0 \\mathrm{E}+06 \\pm 0.0 \\mathrm{E}+00$"
+        ],
+        [
+          "Schwefel",
+          "U",
+          7.2202,
+          "$3.0 \\mathrm{E}+06 \\pm 0.0 \\mathrm{E}+00(n)$"
+        ],
+        [
+          "",
+          "E",
+          "9.52E-09 $\\pm 6.6 \\mathrm{E}-09(+)$",
+          3.505
+        ],
+        [
+          "",
+          "s",
+          2.0902,
+          "$3.0 \\mathrm{E}+06 \\pm 0.0 \\mathrm{E}+00$"
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Comparision of sEDA, CMR, ECMR and ECMR0. Bold font represents the best result.",
+      "headers": [
+        "Function",
+        "Alg.",
+        "Best fitness",
+        "No. of Evaluations"
+      ],
+      "rows": [
+        [
+          "Rosenbrock",
+          "sEDA",
+          "7.52E+00 $\\pm$ 3.3E-01",
+          "$3.0 \\mathrm{E}+05 \\pm 0.0 \\mathrm{E}+00$"
+        ],
+        [
+          "",
+          "CMR",
+          2.3502,
+          "3.4E+04 $\\pm$ 2.7E+04"
+        ],
+        [
+          "",
+          "ECMR",
+          2.2602,
+          "$3.9 \\mathrm{E}+04 \\pm 4.6 \\mathrm{E}+04$"
+        ],
+        [
+          "",
+          0,
+          2.1602,
+          4.504
+        ],
+        [
+          "Sumcan",
+          "sEDA",
+          8.6402,
+          "$3.0 \\mathrm{E}+05 \\pm 0.0 \\mathrm{E}+00$"
+        ],
+        [
+          "",
+          "CMR",
+          "9.88E+04 $\\pm$ 7.9E+03",
+          4.904
+        ],
+        [
+          "",
+          "ECMR",
+          9.7304,
+          5.204
+        ],
+        [
+          "",
+          0,
+          9.8504,
+          "4.9E+04 $\\pm$ 4.1E+04"
+        ],
+        [
+          "$f 9$",
+          "sEDA",
+          "$-1.81 \\mathrm{E}+04 \\pm 2.1 \\mathrm{E}+04$",
+          "$3.0 \\mathrm{E}+05 \\pm 0.0 \\mathrm{E}+00$"
+        ],
+        [
+          "",
+          "CMR",
+          "$-4.93 \\mathrm{E}+03 \\pm 6.8 \\mathrm{E}+02$",
+          "$5.9 \\mathrm{E}+04 \\pm 6.2 \\mathrm{E}+04$"
+        ],
+        [
+          "",
+          "ECMR",
+          "$-4.91 \\mathrm{E}+03 \\pm 7.0 \\mathrm{E}+02$",
+          "$5.9 \\mathrm{E}+04 \\pm 6.2 \\mathrm{E}+04$"
+        ],
+        [
+          "",
+          0,
+          "$-5.02 \\mathrm{E}+03 \\pm 6.8 \\mathrm{E}+01$",
+          5.604
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Role of $\\eta$, in 10-D Schwefel function. Bold font represents the best result.",
+      "headers": [
+        "Alg.",
+        "Best fitness",
+        "No. of Evaluations"
+      ],
+      "rows": [
+        [
+          "sEDA $(\\eta=1)$",
+          "$\\mathbf{7 . 4 2 E - 0 9 \\pm 1 . 8 E - 0 9}$",
+          "$\\mathbf{5 . 9 E + 0 4 \\pm 1 . 0 E + 0 3}$"
+        ],
+        [
+          "EMNA $_{\\text {global }}$",
+          "$7.51 \\mathrm{E}-09 \\pm 1.7 \\mathrm{E}-09$",
+          "$1.3 \\mathrm{E}+04 \\pm 1.5 \\mathrm{E}+03$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    }
+  ]
+}

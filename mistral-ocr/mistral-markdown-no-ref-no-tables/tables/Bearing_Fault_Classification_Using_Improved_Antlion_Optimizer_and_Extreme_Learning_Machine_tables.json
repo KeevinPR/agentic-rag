@@ -1,0 +1,603 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Bearing Fault Classification Using Improved Antlion Optimizer and Extreme Learning Machine.md",
+    "filename": "Bearing Fault Classification Using Improved Antlion Optimizer and Extreme Learning Machine.md",
+    "title": "Bearing Fault Classification Using Improved Antlion Optimizer and Extreme Learning Machine",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Other parameters setting of GA and PSO.",
+      "headers": [
+        "algorithm",
+        "Parameters setting"
+      ],
+      "rows": [
+        [
+          "PSO",
+          "$w_{\\min }=0.1, w_{\\max }=1.1, c_{1}=c_{2}=1.49$"
+        ],
+        [
+          "GA",
+          "$n_{\\text {effix }}=25, p_{\\mathrm{c}}=0.8, p_{\\mathrm{m}}=0.01$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison results in four benchmark functions.",
+      "headers": [
+        "benchmark function",
+        "Algorithm",
+        "Mean",
+        "Best",
+        "Variance",
+        "$p$ values"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          "ELALO",
+          "4.46E-13",
+          "6.23E-15",
+          "9.46E-22",
+          "-"
+        ],
+        [
+          "",
+          "ALO",
+          "7.19E-09",
+          "2.13E-10",
+          "1.57E-19",
+          "7.07E-18"
+        ],
+        [
+          "",
+          "PSO",
+          "5.80E-08",
+          "9.77E-09",
+          "6.60E-08",
+          "7.07E-18"
+        ],
+        [
+          "",
+          "GA",
+          "3.01E-06",
+          "1.43E-07",
+          "2.94E-06",
+          "7.07E-18"
+        ],
+        [
+          "$F_{2}$",
+          "ELALO",
+          "1.33E-12",
+          "2.95E-13",
+          3.17,
+          "-"
+        ],
+        [
+          "",
+          "ALO",
+          "4.84E-05",
+          "1.30E-06",
+          1.0801,
+          "3.31E-20"
+        ],
+        [
+          "",
+          "PSO",
+          2.0801,
+          2.0501,
+          "1.22 E-01",
+          "3.31E-20"
+        ],
+        [
+          "",
+          "GA",
+          "7.37E-05",
+          "3.71E-05",
+          "1.88E-05",
+          "3.31E-20"
+        ],
+        [
+          "$F_{3}$",
+          "ELALO",
+          "4.76E-15",
+          "1.87E-15",
+          "3.21E-25",
+          "-"
+        ],
+        [
+          "",
+          "ALO",
+          "1.79E-01",
+          "4.69E-03",
+          4.7304,
+          "1.52E-05"
+        ],
+        [
+          "",
+          "PSO",
+          "3.45E-15",
+          "2.46E-29",
+          "2.28E-14",
+          "1.60E-02"
+        ],
+        [
+          "",
+          "GA",
+          "1.83E-11",
+          "1.75E-16",
+          "4.77E-11",
+          "4.68E-04"
+        ],
+        [
+          "$F_{4}$",
+          "ELALO",
+          1.42,
+          "8.28E-01",
+          1.5602,
+          "-"
+        ],
+        [
+          "",
+          "ALO",
+          2.3002,
+          5.0701,
+          2.4402,
+          "2.27E-02"
+        ],
+        [
+          "",
+          "PSO",
+          5.6502,
+          "1.77E-02",
+          1.3803,
+          "7.07E-18"
+        ],
+        [
+          "",
+          "GA",
+          1.96,
+          "5.57E-04",
+          2.26,
+          "2.05E-09"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "The first 3 PF symbol entropy of 8 states of bearings.",
+      "headers": [
+        "bearing status",
+        "Index",
+        "PF1",
+        "PF2",
+        "PF3"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{fm}_{1}$",
+          "Mean <br> Variance",
+          "$\\begin{aligned} & 1.938 \\\\ & 0.0002 \\end{aligned}$",
+          "$\\begin{aligned} & 1.913 \\\\ & 0.0074 \\end{aligned}$",
+          "$\\begin{aligned} & 1.565 \\\\ & 0.0019 \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{fm}_{2}$",
+          "Mean <br> Variance",
+          "$\\begin{aligned} & 2.020 \\\\ & 0.0015 \\end{aligned}$",
+          "$\\begin{aligned} & 1.884 \\\\ & 0.0054 \\end{aligned}$",
+          "$\\begin{aligned} & 1.542 \\\\ & 0.0023 \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{fm}_{3}$",
+          "Mean <br> Variance",
+          "$\\begin{aligned} & 2.031 \\\\ & 0.0003 \\end{aligned}$",
+          "$\\begin{aligned} & 1.872 \\\\ & 0.0035 \\end{aligned}$",
+          "$\\begin{aligned} & 1.563 \\\\ & 0.0026 \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{fm}_{4}$",
+          "Mean <br> Variance",
+          "$\\begin{aligned} & 1.917 \\\\ & 0.0003 \\end{aligned}$",
+          "$\\begin{aligned} & 1.920 \\\\ & 0.0034 \\end{aligned}$",
+          "$\\begin{aligned} & 1.622 \\\\ & 0.0022 \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{fm}_{5}$",
+          "Mean <br> Variance",
+          "$\\begin{aligned} & 2.026 \\\\ & 0.0038 \\end{aligned}$",
+          "$\\begin{aligned} & 1.873 \\\\ & 0.0055 \\end{aligned}$",
+          "$\\begin{aligned} & 1.559 \\\\ & 0.0020 \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{fm}_{6}$",
+          "Mean <br> Variance",
+          "$\\begin{aligned} & 2.096 \\\\ & 0.0003 \\end{aligned}$",
+          "$\\begin{aligned} & 1.872 \\\\ & 0.0061 \\end{aligned}$",
+          "$\\begin{aligned} & 1.564 \\\\ & 0.0025 \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{fm}_{7}$",
+          "Mean <br> Variance",
+          "$\\begin{aligned} & 2.076 \\\\ & 0.0004 \\end{aligned}$",
+          "$\\begin{aligned} & 1.801 \\\\ & 0.0054 \\end{aligned}$",
+          "$\\begin{aligned} & 1.493 \\\\ & 0.0019 \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{fm}_{8}$",
+          "Mean <br> Variance",
+          "$\\begin{aligned} & 1.933 \\\\ & 0.0002 \\end{aligned}$",
+          "$\\begin{aligned} & 1.585 \\\\ & 0.0040 \\end{aligned}$",
+          "$\\begin{aligned} & 1.227 \\\\ & 0.0003 \\end{aligned}$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Feature input and ideal output.",
+      "headers": [
+        "Bearing status",
+        "Input feature",
+        "",
+        "",
+        "Ideal output"
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          ""
+        ],
+        [
+          "$\\mathrm{fm}_{1}$",
+          1.943,
+          2.087,
+          1.575,
+          10000000
+        ],
+        [
+          "$\\mathrm{fm}_{2}$",
+          2.029,
+          1.899,
+          1.426,
+          1000000
+        ],
+        [
+          "$\\mathrm{fm}_{3}$",
+          2.051,
+          1.809,
+          1.569,
+          100000
+        ],
+        [
+          "$\\mathrm{fm}_{4}$",
+          1.903,
+          1.978,
+          1.488,
+          10000
+        ],
+        [
+          "$\\mathrm{fm}_{5}$",
+          2.026,
+          1.798,
+          1.538,
+          1000
+        ],
+        [
+          "$\\mathrm{fm}_{6}$",
+          2.111,
+          1.955,
+          1.578,
+          100
+        ],
+        [
+          "$\\mathrm{fm}_{7}$",
+          2.093,
+          1.851,
+          1.4,
+          10
+        ],
+        [
+          "$\\mathrm{fm}_{8}$",
+          1.944,
+          1.656,
+          1.229,
+          1
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Actual output comparison of ELM and ELALO-ELM.",
+      "headers": [
+        "status",
+        "Network",
+        "Actual network output",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$\\mathrm{fm}_{1}$",
+          "ELM",
+          0.512,
+          0.362,
+          0.004,
+          0.112,
+          0.043,
+          "$-0.139$",
+          0.101,
+          "$-0.230$"
+        ],
+        [
+          "",
+          "ELALO-ELM",
+          0.79,
+          0.243,
+          "$-0.100$",
+          "$-0.032$",
+          0.066,
+          "$-0.040$",
+          0.073,
+          0.061
+        ],
+        [
+          "$\\mathrm{fm}_{2}$",
+          "ELM",
+          "$-0.069$",
+          "$-0.003$",
+          0.505,
+          0.053,
+          0.315,
+          0.303,
+          "$-0.104$",
+          0.281
+        ],
+        [
+          "",
+          "ELALO-ELM",
+          0.025,
+          0.383,
+          "$-0.135$",
+          0.042,
+          0.048,
+          0.348,
+          0.29,
+          "$-0.014$"
+        ],
+        [
+          "$\\mathrm{fm}_{3}$",
+          "ELM",
+          0.148,
+          0.485,
+          0.079,
+          "$-0.230$",
+          0.442,
+          "$-0.107$",
+          0.183,
+          "$-0.122$"
+        ],
+        [
+          "",
+          "ELALO-ELM",
+          "$-0.216$",
+          0.336,
+          0.533,
+          0.173,
+          0.204,
+          "$-0.118$",
+          0.086,
+          0.364
+        ],
+        [
+          "$\\mathrm{fm}_{4}$",
+          "ELM",
+          0.358,
+          0.132,
+          0.065,
+          0.42,
+          0.029,
+          "$-0.003$",
+          "$-0.002$",
+          0.276
+        ],
+        [
+          "",
+          "ELALO-ELM",
+          0.237,
+          "$-0.091$",
+          "$-0.060$",
+          0.956,
+          0.05,
+          "$-0.061$",
+          "$-0.030$",
+          "$-0.018$"
+        ],
+        [
+          "$\\mathrm{fm}_{5}$",
+          "ELM",
+          "$-0.029$",
+          0.336,
+          0.369,
+          "$-0.025$",
+          0.393,
+          "$-0.156$",
+          0.112,
+          0.189
+        ],
+        [
+          "",
+          "ELALO-ELM",
+          "$-0.194$",
+          "$-0.173$",
+          0.133,
+          0.397,
+          0.858,
+          "$-0.425$",
+          0.404,
+          "$-0.238$"
+        ],
+        [
+          "$\\mathrm{fm}_{6}$",
+          "ELM",
+          "$-0.009$",
+          0.149,
+          0.072,
+          0.021,
+          0.159,
+          0.479,
+          0.126,
+          "$-0.119$"
+        ],
+        [
+          "",
+          "ELALO-ELM",
+          0.039,
+          0.237,
+          "$-0.109$",
+          "$-0.017$",
+          0.102,
+          0.659,
+          0.086,
+          0.47
+        ],
+        [
+          "$\\mathrm{fm}_{7}$",
+          "ELM",
+          0.058,
+          0.178,
+          "$-0.006$",
+          "$-0.045$",
+          "$-0.041$",
+          0.135,
+          0.721,
+          0.339
+        ],
+        [
+          "",
+          "ELALO-ELM",
+          "$-0.023$",
+          0.034,
+          "$-0.001$",
+          0.004,
+          0.001,
+          "$-0.214$",
+          0.987,
+          0.005
+        ],
+        [
+          "$\\mathrm{fm}_{8}$",
+          "ELM",
+          0.034,
+          0.492,
+          0.231,
+          0.02,
+          0.317,
+          0.025,
+          "$-0.121$",
+          0.79
+        ],
+        [
+          "",
+          "ELALO-ELM",
+          "$-0.082$",
+          0.401,
+          0.339,
+          0.061,
+          0.149,
+          "$-0.036$",
+          0.218,
+          0.862
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 10
+    },
+    {
+      "table_number": "6",
+      "table_title": "Recognition rates comparison of 3 networks.",
+      "headers": [
+        "Network",
+        "Status",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Mean"
+      ],
+      "rows": [
+        [
+          "",
+          "$\\mathrm{fm}_{1}$",
+          "$\\mathrm{fm}_{2}$",
+          "$\\mathrm{fm}_{3}$",
+          "$\\mathrm{fm}_{4}$",
+          "$\\mathrm{fm}_{5}$",
+          "$\\mathrm{fm}_{6}$",
+          "$\\mathrm{fm}_{7}$",
+          "$\\mathrm{fm}_{8}$",
+          ""
+        ],
+        [
+          "ELM",
+          86.83,
+          23.33,
+          44.03,
+          87.39,
+          56.38,
+          89.07,
+          90.95,
+          95.94,
+          71.74
+        ],
+        [
+          "ALO-ELM",
+          91.22,
+          62.78,
+          67.03,
+          97.74,
+          77.65,
+          96.2,
+          98.41,
+          96.25,
+          85.91
+        ],
+        [
+          "ELALO-ELM",
+          94.4,
+          62.78,
+          72.39,
+          99.02,
+          78.46,
+          98.53,
+          100,
+          98.42,
+          88.0
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 10
+    }
+  ]
+}

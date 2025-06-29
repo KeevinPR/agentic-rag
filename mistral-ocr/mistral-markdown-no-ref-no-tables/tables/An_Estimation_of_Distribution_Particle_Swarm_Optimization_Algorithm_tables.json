@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/An Estimation of Distribution Particle Swarm Optimization Algorithm.md",
+    "filename": "An Estimation of Distribution Particle Swarm Optimization Algorithm.md",
+    "title": "An Estimation of Distribution Particle Swarm Optimization Algorithm",
+    "year": "2006"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameters for the test functions",
+      "headers": [
+        "Function",
+        "Initialization range",
+        "Goal"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "$[-100,100]^{D}$",
+          0.01
+        ],
+        [
+          "Rosenbrock",
+          "$[-30,30]^{D}$",
+          100
+        ],
+        [
+          "Rastrigin",
+          "$[-5.12,5.12]^{D}$",
+          100
+        ],
+        [
+          "Griewank",
+          "$[-600,600]^{D}$",
+          0.1
+        ],
+        [
+          "Ackley",
+          "$[-32,32]^{D}$",
+          0.1
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Parameters used by the algorithms",
+      "headers": [
+        "Algorithm",
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Canonical PSO",
+          "$\\varphi_{1}$",
+          2.05
+        ],
+        [
+          "",
+          "$\\varphi_{2}$",
+          2.05
+        ],
+        [
+          "",
+          "$\\chi$",
+          0.729
+        ],
+        [
+          "EDPSO",
+          "$\\varphi_{1}$",
+          2.05
+        ],
+        [
+          "",
+          "$\\varphi_{2}$",
+          2.05
+        ],
+        [
+          "",
+          "$\\chi$",
+          0.729
+        ],
+        [
+          "",
+          "$q$",
+          0.1
+        ],
+        [
+          "",
+          "$\\xi$",
+          0.85
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Average fitness value after the maximum number of allowed function evaluations over 30 runs",
+      "headers": [
+        "Algorithm",
+        "Dimension",
+        "Sphere",
+        "Rosenbrock",
+        "Rastrigin",
+        "Griewank",
+        "Ackley"
+      ],
+      "rows": [
+        [
+          "Canonical PSO",
+          30,
+          0.0,
+          37.48,
+          73.52,
+          0.023,
+          13.35
+        ],
+        [
+          "",
+          40,
+          0.0,
+          55.06,
+          133.15,
+          0.037,
+          18.78
+        ],
+        [
+          "",
+          50,
+          0.0,
+          102.4,
+          203.8,
+          0.1,
+          18.3
+        ],
+        [
+          "EDPSO",
+          30,
+          0.0,
+          22.3,
+          25.6,
+          0.0012,
+          1.9e-05
+        ],
+        [
+          "",
+          40,
+          0.0,
+          37.3,
+          33.43,
+          0.00098,
+          4e-05
+        ],
+        [
+          "",
+          50,
+          0.0,
+          48.12,
+          56.18,
+          0.0029,
+          0.7
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Average number of function evaluations needed to achieve the solution qualities defined in Table 1 and the probability of achieving them",
+      "headers": [
+        "Algorithm",
+        "Dimension",
+        "Sphere",
+        "Rosenbrock",
+        "Rastrigin",
+        "Griewank",
+        "Ackley"
+      ],
+      "rows": [
+        [
+          "Canonical PSO",
+          30,
+          130491.0,
+          209690.86,
+          78800.9,
+          119070.93,
+          139800.06
+        ],
+        [
+          "",
+          40,
+          193651.0,
+          384420.83,
+          132960.16,
+          175630.93,
+          "-"
+        ],
+        [
+          "",
+          50,
+          274511.0,
+          611240.66,
+          "-",
+          245840.76,
+          "-"
+        ],
+        [
+          "EDPSO",
+          30,
+          59881.0,
+          209210.96,
+          185491.0,
+          55201.0,
+          56561.0
+        ],
+        [
+          "",
+          40,
+          87171.0,
+          248960.9,
+          280451.0,
+          78661.0,
+          84371.0
+        ],
+        [
+          "",
+          50,
+          119711.0,
+          504420.86,
+          416591.0,
+          107411.0,
+          202840.96
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    }
+  ]
+}

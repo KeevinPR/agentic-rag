@@ -1,0 +1,517 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/The Low-Carbon Scheduling Optimization of Integrated Multispeed Flexible Manufacturing and Multi-AGV Transportation.md",
+    "filename": "The Low-Carbon Scheduling Optimization of Integrated Multispeed Flexible Manufacturing and Multi-AGV Transportation.md",
+    "title": "The Low-Carbon Scheduling Optimization of Integrated Multispeed Flexible Manufacturing and Multi-AGV Transportation",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Process sequence <br> vector",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          4,
+          1,
+          4,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          2,
+          3,
+          "",
+          ""
+        ],
+        [
+          "Machine selection <br> vector",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          2,
+          3,
+          4,
+          3,
+          3,
+          2,
+          4,
+          1,
+          1,
+          4,
+          2,
+          1,
+          4,
+          "",
+          ""
+        ],
+        [
+          "Speed level selection <br> vector",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          3,
+          2,
+          1,
+          3,
+          3,
+          1,
+          1,
+          3,
+          3,
+          1,
+          3,
+          1,
+          1,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 16
+    },
+    {
+      "table_number": "1",
+      "table_title": "AGV data table.",
+      "headers": [
+        "AGV State",
+        "Load Transport",
+        "Load Standby",
+        "No-Load Transport",
+        "No-Load Standby"
+      ],
+      "rows": [
+        [
+          "Power (W)",
+          2500,
+          800,
+          1800,
+          300
+        ],
+        [
+          "Speed $(\\mathrm{m} / \\mathrm{s})$",
+          0.6,
+          "-",
+          1.2,
+          "-"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Machine process/standby power table.",
+      "headers": [
+        "Power (W)",
+        "Speed Level 1",
+        "",
+        "Speed Level 2",
+        "",
+        "Speed Level 3",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Process",
+          "Standby",
+          "Process",
+          "Standby",
+          "Process",
+          "Standby"
+        ],
+        [
+          1,
+          1120,
+          170,
+          1460,
+          240,
+          1780,
+          310
+        ],
+        [
+          2,
+          1340,
+          230,
+          1750,
+          300,
+          2150,
+          370
+        ],
+        [
+          3,
+          1050,
+          160,
+          1370,
+          220,
+          1680,
+          280
+        ],
+        [
+          4,
+          1210,
+          190,
+          1580,
+          260,
+          1940,
+          330
+        ],
+        [
+          5,
+          1170,
+          180,
+          1530,
+          260,
+          1880,
+          320
+        ],
+        [
+          6,
+          1290,
+          210,
+          1680,
+          290,
+          2070,
+          360
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results for the EDA-LSHS algorithm and the dispatcher mode.",
+      "headers": [
+        "Product",
+        "EDA-LSHS",
+        "",
+        "",
+        "",
+        "",
+        "Dispatcher Mode",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "E",
+          "$E_{t}$",
+          "$E_{m}$",
+          "$C T_{\\max }$",
+          "E",
+          "$E_{t}$",
+          "$E_{m}$",
+          "$C T_{\\text {max }}$"
+        ],
+        [
+          1,
+          3.77,
+          1.25,
+          2.53,
+          3.56,
+          6.84,
+          3.27,
+          3.58,
+          10.78
+        ],
+        [
+          2,
+          4.98,
+          2.01,
+          2.96,
+          4.55,
+          8.4,
+          4.32,
+          4.08,
+          11.87
+        ],
+        [
+          3,
+          4.72,
+          1.89,
+          2.83,
+          4.57,
+          8.43,
+          4.14,
+          4.27,
+          12.25
+        ],
+        [
+          4,
+          5.16,
+          2.07,
+          3.09,
+          4.37,
+          9.33,
+          4.63,
+          4.7,
+          13.01
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 9
+    },
+    {
+      "table_number": "4",
+      "table_title": "The max gap, average gap, and min gap of four gaps.",
+      "headers": [
+        "Gap (\\%)",
+        "Gap $^{\\text {E }}$",
+        "Gap $^{\\text {Et }}$",
+        "Gap $^{\\text {Em }}$",
+        "Gap $^{\\text {CT }}{ }_{\\text {max }}$"
+      ],
+      "rows": [
+        [
+          "Max gap",
+          44.78,
+          61.6,
+          34.19,
+          66.98
+        ],
+        [
+          "Average gap",
+          43.52,
+          56.12,
+          31.24,
+          64.43
+        ],
+        [
+          "Min gap",
+          40.73,
+          53.27,
+          27.45,
+          61.62
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$N_{a l l}$",
+        "The total processes of all workpieces, $N_{a l l}=\\sum_{i=1}^{n} N_{i}$."
+      ],
+      "rows": [
+        [
+          "$H_{k}$",
+          "The set of available speed levels for machine $k, H_{k}=\\left\\{1,2, \\ldots, r_{k}\\right\\}$."
+        ],
+        [
+          "$O_{i j}$",
+          "The $j$-th process of workpiece $i, j \\in N_{i}$."
+        ],
+        [
+          "$P_{k h}^{n w}$",
+          "The standby power of the $h$-th speed-level on machine $k$."
+        ],
+        [
+          "$P_{k h}^{i c}$",
+          "The machining power of the $h$-th speed-level on the machine $k$."
+        ],
+        [
+          "$V P_{n o}^{b}$",
+          "The no-load transportation power of AGV."
+        ],
+        [
+          "$V P_{i n}^{p}$",
+          "The load transportation power of AGV."
+        ],
+        [
+          "$V P_{m}^{w}$",
+          "The no-load standby power of AGV."
+        ],
+        [
+          "$V P_{i o}^{n}$",
+          "The load standby power of AGV."
+        ],
+        [
+          "$v_{n o}$",
+          "The no-load transportation speed of AGV."
+        ],
+        [
+          "$v_{i o}$",
+          "The load transportation speed of AGV."
+        ],
+        [
+          "$R_{i j}$",
+          "Represents the transportation task of process $O_{i j}$."
+        ],
+        [
+          "G",
+          "Represents a positive infinite number."
+        ],
+        [
+          "$L_{k k^{\\prime}}$",
+          "Two-dimensional plane distance from machine $k$ to machine $k^{\\prime}$."
+        ],
+        [
+          "$\\varphi_{i j}$",
+          "The set of machines available for process $O_{i j}, \\varphi_{i j} \\in\\{1,2,3, \\ldots, m\\}$."
+        ],
+        [
+          "$T_{i j k h}$",
+          "The machining time of the $h$-th speed-level of $O_{i j}$ on the machine $k, h \\in H_{k}$."
+        ],
+        [
+          "$S T_{i j k h}$",
+          "The machining starts time of the process $O_{i j}$ on the $h$-th speed-level on the machine $k$."
+        ],
+        [
+          "$C T_{i j k h}$",
+          "The machining end time of the process $O_{i j}$ on the $h$-th speed-level on the machine $k$."
+        ],
+        [
+          "$V S T_{i j w}^{n o}$",
+          "The start time of the no-load state of the transportation task $R_{i j}$ on $A G V_{w}$."
+        ],
+        [
+          "$V C T_{i j w}^{n o}$",
+          "The end time of the no-load state of the transportation task $R_{i j}$ on $A G V_{w}$."
+        ],
+        [
+          "$V S T_{i j w}^{i_{p}}$",
+          "The start time of the load state of the transportation task $R_{i j}$ on $A G V_{w}$."
+        ],
+        [
+          "$V C T_{i j w}^{i_{p}}$",
+          "The end time of the load state of the transportation task $R_{i j}$ on $A G V_{w}$."
+        ],
+        [
+          "$V T_{i j}^{i_{p} o}$",
+          "The time of completing $R_{i j}$ in AGV no-load transportation."
+        ],
+        [
+          "$V T_{i j}^{p i o}$",
+          "The time of completing $R_{i j}$ in AGV load transportation."
+        ],
+        [
+          "$V T_{i j}^{i n v}$",
+          "The time of completing $R_{i j}$ in AGV no-load standby."
+        ],
+        [
+          "$V T_{i j}^{i i o}$",
+          "The time of completing $R_{i j}$ in AGV load standby."
+        ],
+        [
+          "$E_{i j}^{p i m}$",
+          "The energy consumption of completing $O_{i j}$ in the machine processing state."
+        ],
+        [
+          "$E_{i j}^{p n m}$",
+          "The energy consumption of completing $O_{i j}$ in the machine standby state."
+        ],
+        [
+          "$E_{m}$",
+          "The total energy consumption of the machine operation process in the makespan."
+        ],
+        [
+          "$E_{i j}^{p n v}$",
+          "The energy consumption of completing $R_{i j}$ in AGV no-load transportation."
+        ],
+        [
+          "$E_{i j}^{p i v}$",
+          "The energy consumption of completing $R_{i j}$ in AGV load transportation."
+        ],
+        [
+          "$E_{i j}^{i n v}$",
+          "The energy consumption of completing $R_{i j}$ in AGV no-load standby."
+        ],
+        [
+          "$E_{i j}^{i i o}$",
+          "The energy consumption of completing $R_{i j}$ in AGV load standby."
+        ],
+        [
+          "$E_{t}$",
+          "The total energy consumption of the AGV operation process in the makespan."
+        ],
+        [
+          "E",
+          "The total comprehensive energy consumption in the makespan."
+        ],
+        [
+          "$C T_{\\max }$",
+          "Represents the makespan."
+        ],
+        [
+          "$x_{i j k h}$",
+          "The decision variable of the machine processing."
+        ],
+        [
+          "$y_{i j g l k}$",
+          "The decision variable of the machine processing order."
+        ],
+        [
+          "$z_{i j w}$",
+          "The decision variable of the AGV transportation."
+        ],
+        [
+          "$s_{i j g l w}$",
+          "The decision variable of the AGV transportation sequence."
+        ],
+        [
+          "$c_{i j w k}$",
+          "The decision variable of the AGV location."
+        ]
+      ],
+      "row_count": 40,
+      "column_count": 2
+    }
+  ]
+}

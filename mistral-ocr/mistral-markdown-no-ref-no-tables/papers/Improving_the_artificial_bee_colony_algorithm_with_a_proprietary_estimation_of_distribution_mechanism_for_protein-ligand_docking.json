@@ -1,0 +1,2017 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Improving the artificial bee colony algorithm with a proprietary estimation of distribution mechanism for protein-ligand docking.md",
+    "filename": "Improving the artificial bee colony algorithm with a proprietary estimation of distribution mechanism for protein-ligand docking.md",
+    "title": "Improving the artificial bee colony algorithm with a proprietary estimation of distribution mechanism for protein-ligand docking",
+    "year": "2024"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] K. Wu, E. Karapetyan, J. Schloss, J. Vadgama, Y. Wu, Advancements in small molecule drug design: A structural perspective, Drug Discov. Today (2023) 103730.\n[2] W. Dai, B. Zhang, X.-M. Jiang, H. Su, J. Li, Y. Zhao, X. Xie, Z. Jin, J. Peng, F. Liu, et al., Structure-based design of antiviral drug candidates targeting the SARS-CoV-2 main protease, Science 368 (6497) (2020) 1331-1335.\n[3] C. Iserr, K. Ate, G. Schneider, Structure-based drug design with geometric deep learning, Curr. Opin. Struct. Biol. 79 (2023) 102548.\n[4] C. Gorgulla, A. Boeszoermenyi, Z.-F. Wang, P.D. Fischer, P.W. Coote, K.M.P. Das, Y.S. Maleiu, D.S. Radchenko, Y.S. Moroz, D.A. Scott, et al., An open-source drug discovery platform enables ultra-large virtual screens, Nature 580 (7805) (2020) $663-668$\n[5] P. Šledě, A. Caflisch, Protein structure-based drug design: from docking to molecular dynamics, Curr. Opin. Struct. Biol. 48 (2018) 93-102.\n[6] C. Shen, J. Ding, Z. Wang, D. Cao, X. Ding, T. Hou, From machine learning to deep learning: Advances in scoring functions for protein-ligand docking, Wiley Interdiscip. Rev. Comput. Mol. Sci. 10 (1) (2020) e1429.\n[7] S. Yin, L. Biedermannova, J. Vondrasek, N.V. Dokholyan, MedusaScore: an accurate force field-based scoring function for virtual drug screening, J. Chem. Inf. Model. 48 (8) (2008) 1656-1662.\n[8] O. Trott, A.J. Olson, AutoDock vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading, J. Comput. Chem. 31 (2) (2010) 455-461.\n[9] M. Kadukova, K.d.S. Machado, P. Chacón, S. Grudinin, KORP-PL: a coarse-grained knowledge-based scoring function for protein-ligand interactions, Bioinformatics 37 (7) (2021) 943-950.\n[10] D.D. Wang, M. Zhu, H. Yan, Computationally predicting binding affinity in protein-ligand complexe: free energy-based simulations and machine learning-based scoring functions, Brief. Bioinform. 22 (3) (2021) bbau107.\n[11] J. Del Ser, E. Osaba, D. Molina, X.-S. Yang, S. Salcedo-Sanz, D. Camacho, S. Das, P.N. Suganthan, C.A. Coello Coello, F. Herrera, Bio-inspired computation: Where we stand and what's next, Swarm Evol. Comput. 48 (2019) 220-250.\n[12] D. Karaboga, B. Basturk, A powerful and efficient algorithm for numerical function optimization: artificial bee colony (ABC) algorithm, J. Global Optim. 39 (3) (2007) 459-471.\n[13] G. Zhu, S. Kwong, Ghost-guided artificial bee colony algorithm for numerical function optimization, Appl. Math. Comput. 217 (7) (2010) 3166-3173.\n[14] D. Karaboga, B. Gorkemli, A quick artificial bee colony (qABC) algorithm and its performance on optimization problems, Appl. Soft Comput. 23 (2014) 227-238.\n[15] J. Ji, S. Song, C. Tang, S. Gao, Z. Tang, Y. Todo, An artificial bee colony algorithm search guided by scale-free networks, Inform. Sci. 473 (2019) 142-165.\n[16] T. Ye, W. Wang, H. Wang, Z. Cui, Y. Wang, J. Zhao, M. Hu, Artificial bee colony algorithm with efficient search strategy based on random neighborhood structure, Knowl.-Based Syst. 241 (2022) 108306.\n[17] Ş. Öztürk, R. Ahmad, N. Akhtar, Variants of Artificial Bee Colony algorithm and its applications in medical image processing, Appl. Soft Comput. (2020) 106799.\n[18] Y. Cui, W. Hu, A. Rahmani, A reinforcement learning based artificial bee colony algorithm with application in robot path planning, Expert Syst. Appl. 203 (2022) 117389.\n[19] M. Hauschild, M. Pelikan, An introduction and survey of estimation of distribution algorithms, Swarm Evol. Comput. 1 (3) (2011) 111-128.\n[20] B. Doerr, M.S. Krejca, Significance-based estimation-of-distribution algorithms, IEEE Trans. Evol. Comput. 24 (6) (2019) 1025-1034.\n[21] Z.-Q. Zhang, R. Hu, B. Qian, H.-P. Jin, L. Wang, J.-B. Yang, A matrix cubebased estimation of distribution algorithm for the energy-efficient distributed assembly permutation flow-shop scheduling problem, Expert Syst. Appl. 194 (2022) 116484.\n[22] A. Shirazi, Robust estimation of distribution algorithms via fitness landscape analysis for optimal low-thrust orbital maneuvers, Appl. Soft Comput. 144 (2023) 110473.\n[23] I. Tubert-Brohman, W. Sherman, M. Repasky, T. Beuming, Improved docking of polypeptides with Glide, J. Chem. Inf. Model. 53 (7) (2013) 1689-1699.\n[24] M.L. Verdonk, G. Chessari, J.C. Cole, M.J. Hartshorn, C.W. Murray, J.W.M. Nissink, R.D. Taylor, R. Taylor, Modeling water molecules in protein- ligand docking using GOLD, J. Med. Chem. 48 (20) (2005) 6504-6515.\n[25] W.J. Allen, T.E. Balian, S. Mukherjee, S.R. Bruzell, D.T. Moustakas, P.T. Lung, D.A. Case, I.D. Kuntz, R.C. Rizzo, DOCK 6: Impact of new features and current docking performance, J. Comput. Chem. 36 (15) (2015) 1132-1156.\n[26] G.M. Morris, R. Huey, W. Lindstrom, M.F. Sanner, R.K. Belew, D.S. Goodnell, A.J. Olson, AutoDock4 and AutoDockTools4: Automated docking with selective receptor flexibility, J. Comput. Chem. 30 (16) (2009) 2785-2791.\n[27] S. Forli, R. Huey, M.E. Popar, M.F. Sanner, D.S. Goodnell, A.J. Olson, Computational protein-ligand docking and virtual drug screening with the AutoDock suite, Nat. Protoc. 11 (5) (2016) 905-919.\n[28] W. Zhang, E.W. Bell, M. Yin, Y. Zhang, EDock: blind protein-ligand docking by replica-exchange monte carlo simulation, J. Cheminform. 12 (2020) 1-17.\n[29] S. Song, J. Ji, X. Chen, S. Gao, Z. Tang, Y. Todo, Adoption of an improved PSO to explore a compound multi-objective energy function in protein structure prediction, Appl. Soft Comput. 72 (2018) 539-551.\n[30] X. Chen, S. Song, J. Ji, Z. Tang, Y. Todo, Incorporating a multiobjective knowledge-based energy function into differential evolution for protein structure prediction, Inform. Sci. 540 (2020) 69-88.\n[31] P.F. Leonhart, E. Spieler, R. Ligabas-Braun, M. Dorn, A biased random key genetic algorithm for the protein-ligand docking problem, Soft Comput. 23 (12) (2019) 4155-4176.\n[32] L.E. Prentis, C.D. Singleton, J.D. Bickel, W.J. Allen, R.C. Rizzo, A molecular evolution algorithm for ligand design in DOCK, J. Comput. Chem. 43 (29) (2022) 1942-1963.\n[33] M.C. Ng, S. Fong, S.W. Siu, PSOVina: The hybrid particle swarm optimization algorithm for protein-ligand docking, J. Bioinform. Comput. Biol. 13 (03) (2015) 1541007 .\n\n[34] H.K. Tai, S.A. Jusoh, S.W. Siu, Chaos-embedded particle swarm optimization approach for protein-ligand docking and virtual screening, J. Cheminform. 10 (1) (2018) $1-13$.\n[35] Y. Fu, Z. Chen, J. Sun, Random drift particle swarm optimisation algorithm for highly flexible protein-ligand docking, J. Theoret. Biol. 457 (2018) 180-189.\n[36] J. Li, C. Li, J. Sun, V. Palade, Rdpsovina: the random drift particle swarm optimization for protein-ligand docking, J. Comput. Aided Mol. Des. 36 (6) (2022) $415-425$.\n[37] S. Song, X. Chen, Y. Zhang, Z. Tang, Y. Todo, Protein-ligand docking using differential evolution with an adaptive mechanism, Knowl.-Based Syst. 231 (2021) 107433.\n[38] J. Ji, J. Zhou, Z. Yang, Q. Lin, C.A.C. Coello, AutoDock koto: A gradient boosting differential evolution for molecular docking, IEEE Trans. Evol. Comput. (2022) 1, http://dx.doi.org/10.1109/TEVC.2022.3225632.\n[39] S. Uehara, K.J. Fujimoto, S. Tanaka, Protein-ligand docking using fitness learningbased artificial bee colony with proximity stimuli, Phys. Chem. Chem. Phys. 17 (25) (2015) 16412-16417.\n[40] B. Guan, C. Zhang, Y. Zhao, An efficient ABC_DE_based hybrid algorithm for protein-ligand docking, Int. J. Mol. Sci. 19 (4) (2018) 1181.\n[41] M.J. García-Godoy, E. López-Camacho, J. García-Nieto, J. Del Ser, A.J. Nebro, J.F. Aldana-Montes, Bio-inspired optimization for the molecular docking problem: state of the art, recent results and perspectives, Appl. Soft Comput. 79 (2019) $30-45$.\n[42] H. Li, K.-S. Leung, P.J. Ballester, M.-H. Wong, istar: A web platform for large-scale protein-ligand docking, PLoS One 9 (1) (2014) e85678.\n[43] Z. Liu, Y. Li, L. Han, J. Li, J. Liu, Z. Zhao, W. Nie, Y. Liu, B. Wang, PDB-wide collection of binding data: current status of the pdbbind database, Bioinformatics 31 (3) (2015) 405-412.\n[44] S.E. Burley, H.M. Berman, C. Bhikadiya, C. Bi, L. Chen, L. Di Costanzo, C. Christie, K. Dalenberg, J.M. Duarte, S. Datta, et al., RCSB Protein Data Bank: biological macromolecular structures enabling research and education in fundamental biology, biomedicine, biotechnology and energy, Nucleic Acids Res. 47 (D1) (2019) D464-D474.\n[45] S. García, A. Fernández, J. Luengo, F. Herrera, Advanced nonparametric tests for multiple comparisons in the design of experiments in computational intelligence and data mining: Experimental analysis of power, Inf. Sci. 180 (10) (2010) 2044-2064.\n[46] M. Crepintek, S.-H. Liu, M. Mernik, Exploration and exploitation in evolutionary algorithms: A survey, ACM Comput. Surv. 45 (3) (2013) 1-33.\n[47] E. López-Camacho, M.J.G. Godoy, J. García-Nieto, A.J. Nebro, J.F. AldanaMontes, Solving molecular flexible docking problems with metaheuristics: A comparative study, Appl. Soft Comput. 28 (2015) 379-393.\n[48] J. Eberhardt, D. Santos-Martins, A.F. Tillack, S. Forli, AutoDock vina 1.2.0: New docking methods, expanded force field, and python bindings, J. Chem. Inf. Model. 61 (8) (2021) 3891-3898.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "K. Wu, E. Karapetyan, J. Schloss, J. Vadgama, Y. Wu, Advancements in small molecule drug design: A structural perspective, Drug Discov. Today (2023) 103730."
+      },
+      {
+        "ref_id": "2",
+        "text": "W. Dai, B. Zhang, X.-M. Jiang, H. Su, J. Li, Y. Zhao, X. Xie, Z. Jin, J. Peng, F. Liu, et al., Structure-based design of antiviral drug candidates targeting the SARS-CoV-2 main protease, Science 368 (6497) (2020) 1331-1335."
+      },
+      {
+        "ref_id": "3",
+        "text": "C. Iserr, K. Ate, G. Schneider, Structure-based drug design with geometric deep learning, Curr. Opin. Struct. Biol. 79 (2023) 102548."
+      },
+      {
+        "ref_id": "4",
+        "text": "C. Gorgulla, A. Boeszoermenyi, Z.-F. Wang, P.D. Fischer, P.W. Coote, K.M.P. Das, Y.S. Maleiu, D.S. Radchenko, Y.S. Moroz, D.A. Scott, et al., An open-source drug discovery platform enables ultra-large virtual screens, Nature 580 (7805) (2020) $663-668$"
+      },
+      {
+        "ref_id": "5",
+        "text": "P. Šledě, A. Caflisch, Protein structure-based drug design: from docking to molecular dynamics, Curr. Opin. Struct. Biol. 48 (2018) 93-102."
+      },
+      {
+        "ref_id": "6",
+        "text": "C. Shen, J. Ding, Z. Wang, D. Cao, X. Ding, T. Hou, From machine learning to deep learning: Advances in scoring functions for protein-ligand docking, Wiley Interdiscip. Rev. Comput. Mol. Sci. 10 (1) (2020) e1429."
+      },
+      {
+        "ref_id": "7",
+        "text": "S. Yin, L. Biedermannova, J. Vondrasek, N.V. Dokholyan, MedusaScore: an accurate force field-based scoring function for virtual drug screening, J. Chem. Inf. Model. 48 (8) (2008) 1656-1662."
+      },
+      {
+        "ref_id": "8",
+        "text": "O. Trott, A.J. Olson, AutoDock vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading, J. Comput. Chem. 31 (2) (2010) 455-461."
+      },
+      {
+        "ref_id": "9",
+        "text": "M. Kadukova, K.d.S. Machado, P. Chacón, S. Grudinin, KORP-PL: a coarse-grained knowledge-based scoring function for protein-ligand interactions, Bioinformatics 37 (7) (2021) 943-950."
+      },
+      {
+        "ref_id": "10",
+        "text": "D.D. Wang, M. Zhu, H. Yan, Computationally predicting binding affinity in protein-ligand complexe: free energy-based simulations and machine learning-based scoring functions, Brief. Bioinform. 22 (3) (2021) bbau107."
+      },
+      {
+        "ref_id": "11",
+        "text": "J. Del Ser, E. Osaba, D. Molina, X.-S. Yang, S. Salcedo-Sanz, D. Camacho, S. Das, P.N. Suganthan, C.A. Coello Coello, F. Herrera, Bio-inspired computation: Where we stand and what's next, Swarm Evol. Comput. 48 (2019) 220-250."
+      },
+      {
+        "ref_id": "12",
+        "text": "D. Karaboga, B. Basturk, A powerful and efficient algorithm for numerical function optimization: artificial bee colony (ABC) algorithm, J. Global Optim. 39 (3) (2007) 459-471."
+      },
+      {
+        "ref_id": "13",
+        "text": "G. Zhu, S. Kwong, Ghost-guided artificial bee colony algorithm for numerical function optimization, Appl. Math. Comput. 217 (7) (2010) 3166-3173."
+      },
+      {
+        "ref_id": "14",
+        "text": "D. Karaboga, B. Gorkemli, A quick artificial bee colony (qABC) algorithm and its performance on optimization problems, Appl. Soft Comput. 23 (2014) 227-238."
+      },
+      {
+        "ref_id": "15",
+        "text": "J. Ji, S. Song, C. Tang, S. Gao, Z. Tang, Y. Todo, An artificial bee colony algorithm search guided by scale-free networks, Inform. Sci. 473 (2019) 142-165."
+      },
+      {
+        "ref_id": "16",
+        "text": "T. Ye, W. Wang, H. Wang, Z. Cui, Y. Wang, J. Zhao, M. Hu, Artificial bee colony algorithm with efficient search strategy based on random neighborhood structure, Knowl.-Based Syst. 241 (2022) 108306."
+      },
+      {
+        "ref_id": "17",
+        "text": "Ş. Öztürk, R. Ahmad, N. Akhtar, Variants of Artificial Bee Colony algorithm and its applications in medical image processing, Appl. Soft Comput. (2020) 106799."
+      },
+      {
+        "ref_id": "18",
+        "text": "Y. Cui, W. Hu, A. Rahmani, A reinforcement learning based artificial bee colony algorithm with application in robot path planning, Expert Syst. Appl. 203 (2022) 117389."
+      },
+      {
+        "ref_id": "19",
+        "text": "M. Hauschild, M. Pelikan, An introduction and survey of estimation of distribution algorithms, Swarm Evol. Comput. 1 (3) (2011) 111-128."
+      },
+      {
+        "ref_id": "20",
+        "text": "B. Doerr, M.S. Krejca, Significance-based estimation-of-distribution algorithms, IEEE Trans. Evol. Comput. 24 (6) (2019) 1025-1034."
+      },
+      {
+        "ref_id": "21",
+        "text": "Z.-Q. Zhang, R. Hu, B. Qian, H.-P. Jin, L. Wang, J.-B. Yang, A matrix cubebased estimation of distribution algorithm for the energy-efficient distributed assembly permutation flow-shop scheduling problem, Expert Syst. Appl. 194 (2022) 116484."
+      },
+      {
+        "ref_id": "22",
+        "text": "A. Shirazi, Robust estimation of distribution algorithms via fitness landscape analysis for optimal low-thrust orbital maneuvers, Appl. Soft Comput. 144 (2023) 110473."
+      },
+      {
+        "ref_id": "23",
+        "text": "I. Tubert-Brohman, W. Sherman, M. Repasky, T. Beuming, Improved docking of polypeptides with Glide, J. Chem. Inf. Model. 53 (7) (2013) 1689-1699."
+      },
+      {
+        "ref_id": "24",
+        "text": "M.L. Verdonk, G. Chessari, J.C. Cole, M.J. Hartshorn, C.W. Murray, J.W.M. Nissink, R.D. Taylor, R. Taylor, Modeling water molecules in protein- ligand docking using GOLD, J. Med. Chem. 48 (20) (2005) 6504-6515."
+      },
+      {
+        "ref_id": "25",
+        "text": "W.J. Allen, T.E. Balian, S. Mukherjee, S.R. Bruzell, D.T. Moustakas, P.T. Lung, D.A. Case, I.D. Kuntz, R.C. Rizzo, DOCK 6: Impact of new features and current docking performance, J. Comput. Chem. 36 (15) (2015) 1132-1156."
+      },
+      {
+        "ref_id": "26",
+        "text": "G.M. Morris, R. Huey, W. Lindstrom, M.F. Sanner, R.K. Belew, D.S. Goodnell, A.J. Olson, AutoDock4 and AutoDockTools4: Automated docking with selective receptor flexibility, J. Comput. Chem. 30 (16) (2009) 2785-2791."
+      },
+      {
+        "ref_id": "27",
+        "text": "S. Forli, R. Huey, M.E. Popar, M.F. Sanner, D.S. Goodnell, A.J. Olson, Computational protein-ligand docking and virtual drug screening with the AutoDock suite, Nat. Protoc. 11 (5) (2016) 905-919."
+      },
+      {
+        "ref_id": "28",
+        "text": "W. Zhang, E.W. Bell, M. Yin, Y. Zhang, EDock: blind protein-ligand docking by replica-exchange monte carlo simulation, J. Cheminform. 12 (2020) 1-17."
+      },
+      {
+        "ref_id": "29",
+        "text": "S. Song, J. Ji, X. Chen, S. Gao, Z. Tang, Y. Todo, Adoption of an improved PSO to explore a compound multi-objective energy function in protein structure prediction, Appl. Soft Comput. 72 (2018) 539-551."
+      },
+      {
+        "ref_id": "30",
+        "text": "X. Chen, S. Song, J. Ji, Z. Tang, Y. Todo, Incorporating a multiobjective knowledge-based energy function into differential evolution for protein structure prediction, Inform. Sci. 540 (2020) 69-88."
+      },
+      {
+        "ref_id": "31",
+        "text": "P.F. Leonhart, E. Spieler, R. Ligabas-Braun, M. Dorn, A biased random key genetic algorithm for the protein-ligand docking problem, Soft Comput. 23 (12) (2019) 4155-4176."
+      },
+      {
+        "ref_id": "32",
+        "text": "L.E. Prentis, C.D. Singleton, J.D. Bickel, W.J. Allen, R.C. Rizzo, A molecular evolution algorithm for ligand design in DOCK, J. Comput. Chem. 43 (29) (2022) 1942-1963."
+      },
+      {
+        "ref_id": "33",
+        "text": "M.C. Ng, S. Fong, S.W. Siu, PSOVina: The hybrid particle swarm optimization algorithm for protein-ligand docking, J. Bioinform. Comput. Biol. 13 (03) (2015) 1541007 ."
+      },
+      {
+        "ref_id": "34",
+        "text": "H.K. Tai, S.A. Jusoh, S.W. Siu, Chaos-embedded particle swarm optimization approach for protein-ligand docking and virtual screening, J. Cheminform. 10 (1) (2018) $1-13$."
+      },
+      {
+        "ref_id": "35",
+        "text": "Y. Fu, Z. Chen, J. Sun, Random drift particle swarm optimisation algorithm for highly flexible protein-ligand docking, J. Theoret. Biol. 457 (2018) 180-189."
+      },
+      {
+        "ref_id": "36",
+        "text": "J. Li, C. Li, J. Sun, V. Palade, Rdpsovina: the random drift particle swarm optimization for protein-ligand docking, J. Comput. Aided Mol. Des. 36 (6) (2022) $415-425$."
+      },
+      {
+        "ref_id": "37",
+        "text": "S. Song, X. Chen, Y. Zhang, Z. Tang, Y. Todo, Protein-ligand docking using differential evolution with an adaptive mechanism, Knowl.-Based Syst. 231 (2021) 107433."
+      },
+      {
+        "ref_id": "38",
+        "text": "J. Ji, J. Zhou, Z. Yang, Q. Lin, C.A.C. Coello, AutoDock koto: A gradient boosting differential evolution for molecular docking, IEEE Trans. Evol. Comput. (2022) 1, http://dx.doi.org/10.1109/TEVC.2022.3225632."
+      },
+      {
+        "ref_id": "39",
+        "text": "S. Uehara, K.J. Fujimoto, S. Tanaka, Protein-ligand docking using fitness learningbased artificial bee colony with proximity stimuli, Phys. Chem. Chem. Phys. 17 (25) (2015) 16412-16417."
+      },
+      {
+        "ref_id": "40",
+        "text": "B. Guan, C. Zhang, Y. Zhao, An efficient ABC_DE_based hybrid algorithm for protein-ligand docking, Int. J. Mol. Sci. 19 (4) (2018) 1181."
+      },
+      {
+        "ref_id": "41",
+        "text": "M.J. García-Godoy, E. López-Camacho, J. García-Nieto, J. Del Ser, A.J. Nebro, J.F. Aldana-Montes, Bio-inspired optimization for the molecular docking problem: state of the art, recent results and perspectives, Appl. Soft Comput. 79 (2019) $30-45$."
+      },
+      {
+        "ref_id": "42",
+        "text": "H. Li, K.-S. Leung, P.J. Ballester, M.-H. Wong, istar: A web platform for large-scale protein-ligand docking, PLoS One 9 (1) (2014) e85678."
+      },
+      {
+        "ref_id": "43",
+        "text": "Z. Liu, Y. Li, L. Han, J. Li, J. Liu, Z. Zhao, W. Nie, Y. Liu, B. Wang, PDB-wide collection of binding data: current status of the pdbbind database, Bioinformatics 31 (3) (2015) 405-412."
+      },
+      {
+        "ref_id": "44",
+        "text": "S.E. Burley, H.M. Berman, C. Bhikadiya, C. Bi, L. Chen, L. Di Costanzo, C. Christie, K. Dalenberg, J.M. Duarte, S. Datta, et al., RCSB Protein Data Bank: biological macromolecular structures enabling research and education in fundamental biology, biomedicine, biotechnology and energy, Nucleic Acids Res. 47 (D1) (2019) D464-D474."
+      },
+      {
+        "ref_id": "45",
+        "text": "S. García, A. Fernández, J. Luengo, F. Herrera, Advanced nonparametric tests for multiple comparisons in the design of experiments in computational intelligence and data mining: Experimental analysis of power, Inf. Sci. 180 (10) (2010) 2044-2064."
+      },
+      {
+        "ref_id": "46",
+        "text": "M. Crepintek, S.-H. Liu, M. Mernik, Exploration and exploitation in evolutionary algorithms: A survey, ACM Comput. Surv. 45 (3) (2013) 1-33."
+      },
+      {
+        "ref_id": "47",
+        "text": "E. López-Camacho, M.J.G. Godoy, J. García-Nieto, A.J. Nebro, J.F. AldanaMontes, Solving molecular flexible docking problems with metaheuristics: A comparative study, Appl. Soft Comput. 28 (2015) 379-393."
+      },
+      {
+        "ref_id": "48",
+        "text": "J. Eberhardt, D. Santos-Martins, A.F. Tillack, S. Forli, AutoDock vina 1.2.0: New docking methods, expanded force field, and python bindings, J. Chem. Inf. Model. 61 (8) (2021) 3891-3898."
+      }
+    ],
+    "reference_count": 48,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Fifty protein-ligand complexes are selected as the test docking instances.",
+      "headers": [
+        "PDB ID",
+        "Size $^{a}$",
+        "PDB ID",
+        "Size",
+        "PDB ID",
+        "Size",
+        "PDB ID",
+        "Size",
+        "PDB ID",
+        "Size"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          1,
+          4,
+          1,
+          6,
+          6,
+          7,
+          1,
+          12
+        ],
+        [
+          1,
+          1,
+          1,
+          4,
+          1,
+          6,
+          2,
+          8,
+          1,
+          12
+        ],
+        [
+          3,
+          1,
+          2,
+          4,
+          2,
+          6,
+          1,
+          9,
+          1,
+          12
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          2,
+          6,
+          2,
+          9,
+          4,
+          14
+        ],
+        [
+          2,
+          2,
+          7,
+          4,
+          2,
+          6,
+          3,
+          9,
+          1,
+          15
+        ],
+        [
+          3,
+          2,
+          1,
+          5,
+          24,
+          6,
+          1,
+          10,
+          1,
+          16
+        ],
+        [
+          1,
+          3,
+          11,
+          5,
+          1,
+          7,
+          1,
+          10,
+          1,
+          16
+        ],
+        [
+          1,
+          3,
+          1,
+          5,
+          1,
+          7,
+          1,
+          10,
+          2,
+          19
+        ],
+        [
+          2,
+          3,
+          1,
+          5,
+          23,
+          7,
+          1,
+          11,
+          1,
+          20
+        ],
+        [
+          4,
+          3,
+          1,
+          6,
+          3,
+          7,
+          1,
+          12,
+          52,
+          21
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 10
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 reports the optimization results of ABC-EDM versus the three ABC variants on the 50 docking instances. From Table 3, we can observe that ABC-EDM demonstrates the best performance on 40 docking instances. ABC-EDM is considered to have better optimization performance than the other three algorithms because ABC, GABC, and qABC yield the best performance on 1,6 , and 3 docking instances, respectively. Moreover, to determine the significant differences between ABC-EDM and the three algorithms, we perform the Friedman test as",
+      "headers": [
+        "Algorithm",
+        "Parameter settings"
+      ],
+      "rows": [
+        [
+          "ABC",
+          "Colony size $C S=100 ; S N=C S / 2 ;$ (imit $=100$"
+        ],
+        [
+          "ABC-EDM",
+          "$C S=100 ; S N=C S / 2 ;$ (imit $=100 ; M=\\{S N / 2\\}$"
+        ],
+        [
+          "GABC",
+          "$C S=100 ; S N=C S / 2 ;$ (imit $=100 ;$ Gbest parameter $C=1.5$"
+        ],
+        [
+          "qABC",
+          "$C S=100 ; S N=C S / 2 ;$ (imit $=100 ;$ Neighborhood radius $r=1$"
+        ],
+        [
+          "PSO",
+          "$N P=100 ;$ Inertia weight $w=0.36 ;$ Cognitive weight $c_{i}=0.99 ;$ Social weight $c_{i}=0.99$"
+        ],
+        [
+          "DE",
+          "$N P=100 ;$ Crossover rate $C r=0.9 ;$ Scaling factor $F=0.5$"
+        ],
+        [
+          "GA",
+          "$N P=100 ;$ Crossover rate $p_{c}=0.9 ;$ Mutation rate $p_{a}=0.1 ;$ Number of elites $N_{c}=10$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "The optimization results of ABC-EDM versus the three ABC variants on the 50 docking instances. The scoring value of the ligand pose with the lowest scoring value (among 30 independent docking simulations) is reported for each instance.",
+      "headers": [
+        "PDB ID",
+        "ABC-EDM",
+        "ABC",
+        "GABC",
+        "qABC"
+      ],
+      "rows": [
+        [
+          1,
+          "$-\\mathbf{1 7 . 1 3}$",
+          -14.01,
+          -15.41,
+          -14.89
+        ],
+        [
+          1,
+          "$-\\mathbf{7 . 7 0}$",
+          -7.62,
+          -7.64,
+          -7.64
+        ],
+        [
+          1,
+          -6.75,
+          -6.77,
+          "$-\\mathbf{6 . 8 3}$",
+          -6.8
+        ],
+        [
+          1,
+          -10.4,
+          -10.33,
+          -10.32,
+          "$-\\mathbf{1 0 . 6 8}$"
+        ],
+        [
+          1,
+          "$-\\mathbf{1 5 . 1 1}$",
+          -13.78,
+          -14.35,
+          -13.43
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 0 6}$",
+          -7.87,
+          -7.91,
+          -7.9
+        ],
+        [
+          11,
+          "$-\\mathbf{9 . 6 2}$",
+          -9.41,
+          -9.5,
+          -9.44
+        ],
+        [
+          1,
+          "$-\\mathbf{9 . 2 9}$",
+          -8.55,
+          -8.85,
+          -9.13
+        ],
+        [
+          1,
+          "$-\\mathbf{6 . 6 8}$",
+          -6.25,
+          -6.04,
+          -6.17
+        ],
+        [
+          1,
+          "$-\\mathbf{1 7 . 5 8}$",
+          -14.29,
+          -16.38,
+          -16.35
+        ],
+        [
+          1,
+          -13.56,
+          -12.98,
+          "$-\\mathbf{1 3 . 8 6}$",
+          -12.75
+        ],
+        [
+          1,
+          -9.96,
+          "$-\\mathbf{1 0 . 1 0}$",
+          -9.85,
+          -9.71
+        ],
+        [
+          1,
+          "$-\\mathbf{1 3 . 4 4}$",
+          -13.29,
+          -13.39,
+          -13.1
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 1 1}$",
+          -7.93,
+          -7.94,
+          -7.88
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 7 2}$",
+          -8.09,
+          -8.54,
+          -8.47
+        ],
+        [
+          1,
+          "$-\\mathbf{2 1 . 2 3}$",
+          -19.2,
+          -19.77,
+          -18.96
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 3 5}$",
+          -8.28,
+          -8.3,
+          -8.25
+        ],
+        [
+          1,
+          "$-\\mathbf{1 1 . 8 5}$",
+          -10.57,
+          -10.67,
+          -10.93
+        ],
+        [
+          1,
+          -8.97,
+          -8.85,
+          "$-\\mathbf{9 . 1 5}$",
+          -9.0
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 8 7}$",
+          -8.73,
+          -8.66,
+          -8.75
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 3 9}$",
+          -8.29,
+          -8.35,
+          -8.29
+        ],
+        [
+          1,
+          -5.97,
+          -5.87,
+          "$-\\mathbf{5 . 9 8}$",
+          -5.98
+        ],
+        [
+          1,
+          "$-\\mathbf{1 9 . 5 7}$",
+          -18.73,
+          -18.65,
+          -17.9
+        ],
+        [
+          1,
+          "$-\\mathbf{9 . 3 7}$",
+          -9.26,
+          -9.23,
+          -9.15
+        ],
+        [
+          1,
+          "$-\\mathbf{9 . 5 9}$",
+          -9.32,
+          -9.46,
+          -9.37
+        ],
+        [
+          1,
+          "$-\\mathbf{1 0 . 9 2}$",
+          -10.31,
+          -10.68,
+          -10.61
+        ],
+        [
+          1,
+          -13.44,
+          -13.6,
+          "$-\\mathbf{1 4 . 9 4}$",
+          -13.42
+        ],
+        [
+          1,
+          "$-\\mathbf{5 . 2 3}$",
+          -5.03,
+          -5.09,
+          -5.07
+        ],
+        [
+          1,
+          -6.91,
+          -7.04,
+          "$-\\mathbf{7 . 3 5}$",
+          -7.1
+        ],
+        [
+          2,
+          "$-\\mathbf{1 1 . 9 6}$",
+          -11.8,
+          -11.85,
+          -11.83
+        ],
+        [
+          23,
+          "$-\\mathbf{1 1 . 1 2}$",
+          -10.89,
+          -10.67,
+          -10.5
+        ],
+        [
+          2,
+          "$-\\mathbf{1 4 . 8 5}$",
+          -13.66,
+          -14.8,
+          -14.5
+        ],
+        [
+          2,
+          -5.73,
+          -6.13,
+          -6.28,
+          "$-\\mathbf{6 . 3 8}$"
+        ],
+        [
+          2,
+          "$-\\mathbf{9 . 8 3}$",
+          -9.72,
+          -9.76,
+          -9.74
+        ],
+        [
+          2,
+          "$-\\mathbf{9 . 3 5}$",
+          -9.22,
+          -9.25,
+          -9.27
+        ],
+        [
+          2,
+          "$-\\mathbf{5 . 0 2}$",
+          -4.73,
+          -5.02,
+          -4.76
+        ],
+        [
+          2,
+          "$-\\mathbf{7 . 4 7}$",
+          -7.44,
+          -7.47,
+          -7.46
+        ],
+        [
+          24,
+          "$-\\mathbf{5 . 6 0}$",
+          -5.28,
+          -5.38,
+          -5.55
+        ],
+        [
+          2,
+          "$-\\mathbf{1 1 . 2 9}$",
+          -10.49,
+          -10.58,
+          -10.38
+        ],
+        [
+          2,
+          "$-\\mathbf{1 1 . 8 0}$",
+          -11.57,
+          -11.73,
+          -11.54
+        ],
+        [
+          3,
+          "$-\\mathbf{1 0 . 8 5}$",
+          -10.38,
+          -10.51,
+          -10.33
+        ],
+        [
+          3,
+          "$-\\mathbf{7 . 3 8}$",
+          -7.04,
+          -6.93,
+          -6.98
+        ],
+        [
+          3,
+          "$-\\mathbf{1 0 . 7 7}$",
+          -10.61,
+          -10.69,
+          -10.66
+        ],
+        [
+          3,
+          "$-\\mathbf{6 . 6 5}$",
+          -6.62,
+          -6.64,
+          -6.58
+        ],
+        [
+          3,
+          "$-\\mathbf{1 1 . 4 2}$",
+          -11.2,
+          -11.25,
+          -11.34
+        ],
+        [
+          4,
+          "$-\\mathbf{5 . 9 7}$",
+          -5.72,
+          -5.89,
+          -5.85
+        ],
+        [
+          4,
+          "$-\\mathbf{1 3 . 6 7}$",
+          -13.11,
+          -13.29,
+          -12.39
+        ],
+        [
+          52,
+          "$-\\mathbf{1 3 . 8 4}$",
+          -13.47,
+          -13.62,
+          -13.49
+        ],
+        [
+          6,
+          "$-\\mathbf{8 . 5 2}$",
+          -8.22,
+          -8.11,
+          -8.1
+        ],
+        [
+          7,
+          -6.66,
+          -6.56,
+          -6.55,
+          "$-\\mathbf{6 . 6 8}$"
+        ],
+        [
+          "Number of best",
+          40,
+          1,
+          6,
+          3
+        ]
+      ],
+      "row_count": 51,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Statistical results obtained by the Friedman test on the optimization results (in Table 3).",
+      "headers": [
+        "Algorithm",
+        "Ranking",
+        "Unadjusted $\\rho$ value",
+        "$p_{\\text {Holm }}$ value"
+      ],
+      "rows": [
+        [
+          "ABC-EDM",
+          1.38,
+          "-",
+          "-"
+        ],
+        [
+          "GABC",
+          2.3,
+          0.000366,
+          0.000366
+        ],
+        [
+          "qABC",
+          3.0,
+          0,
+          0
+        ],
+        [
+          "ABC",
+          3.32,
+          0,
+          0
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "The docking results of ABC-EDM versus the three ABC variants on the 50 docking instances. The RMSD $(\\AA)$ of the predicted ligand pose is reported for each instance.",
+      "headers": [
+        "PDB ID",
+        "ABC-EDM",
+        "ABC",
+        "GABC",
+        "qABC"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\mathbf{3 . 6 5}$",
+          6.05,
+          5.53,
+          5.69
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 6 7}$",
+          0.71,
+          0.75,
+          0.79
+        ],
+        [
+          1,
+          0.21,
+          0.28,
+          0.3,
+          "$\\mathbf{0 . 2 0}$"
+        ],
+        [
+          1,
+          2.71,
+          4.3,
+          2.7,
+          "$\\mathbf{2 . 6 8}$"
+        ],
+        [
+          1,
+          "$\\mathbf{1 . 3 0}$",
+          3.48,
+          3.71,
+          6.14
+        ],
+        [
+          1,
+          3.1,
+          3.14,
+          "$\\mathbf{2 . 3 4}$",
+          4.65
+        ],
+        [
+          11,
+          1.43,
+          0.49,
+          1.44,
+          "$\\mathbf{0 . 4 7}$"
+        ],
+        [
+          1,
+          "$\\mathbf{2 . 6 1}$",
+          4.64,
+          4.21,
+          3.04
+        ],
+        [
+          1,
+          "$\\mathbf{8 . 3 9}$",
+          10.39,
+          10.44,
+          10.52
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 8 2}$",
+          1.4,
+          1.42,
+          1.27
+        ],
+        [
+          1,
+          7.18,
+          "$\\mathbf{1 . 2 1}$",
+          1.38,
+          7.27
+        ],
+        [
+          1,
+          "$\\mathbf{2 . 3 9}$",
+          11.43,
+          2.43,
+          6.88
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 9 3}$",
+          1.09,
+          1.06,
+          1.01
+        ],
+        [
+          1,
+          0.26,
+          "$\\mathbf{0 . 2 5}$",
+          1.11,
+          0.94
+        ],
+        [
+          1,
+          "$\\mathbf{1 . 3 5}$",
+          1.86,
+          1.4,
+          1.45
+        ],
+        [
+          1,
+          1.8,
+          2.12,
+          "$\\mathbf{1 . 6 1}$",
+          4.08
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 2 4}$",
+          1.03,
+          1.02,
+          0.28
+        ],
+        [
+          1,
+          6.4,
+          2.45,
+          "$\\mathbf{2 . 2 2}$",
+          5.89
+        ],
+        [
+          1,
+          1.68,
+          1.48,
+          2.3,
+          "$\\mathbf{1 . 4 0}$"
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 1 7}$",
+          0.23,
+          0.98,
+          0.22
+        ],
+        [
+          1,
+          1.03,
+          1.03,
+          "$\\mathbf{1 . 0 3}$",
+          1.04
+        ],
+        [
+          1,
+          0.38,
+          "$\\mathbf{0 . 3 6}$",
+          0.38,
+          0.49
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 2 7}$",
+          0.56,
+          1.09,
+          1.24
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 4 5}$",
+          0.65,
+          0.51,
+          0.68
+        ],
+        [
+          1,
+          4.83,
+          "$\\mathbf{2 . 0 5}$",
+          4.73,
+          8.15
+        ],
+        [
+          1,
+          1.27,
+          1.43,
+          1.28,
+          "$\\mathbf{1 . 2 3}$"
+        ],
+        [
+          1,
+          7.0,
+          "$\\mathbf{1 . 4 4}$",
+          1.59,
+          6.87
+        ],
+        [
+          1,
+          1.82,
+          1.85,
+          "$\\mathbf{1 . 8 0}$",
+          1.81
+        ],
+        [
+          1,
+          0.79,
+          1.52,
+          1.71,
+          "$\\mathbf{0 . 3 4}$"
+        ],
+        [
+          2,
+          0.31,
+          0.29,
+          "$\\mathbf{0 . 2 8}$",
+          0.49
+        ],
+        [
+          23,
+          2.56,
+          2.54,
+          0.99,
+          "$\\mathbf{0 . 9 6}$"
+        ],
+        [
+          2,
+          "$\\mathbf{0 . 6 3}$",
+          3.06,
+          0.92,
+          1.03
+        ],
+        [
+          2,
+          "$\\mathbf{1 1 . 0 3}$",
+          11.45,
+          11.38,
+          11.4
+        ],
+        [
+          2,
+          1.35,
+          1.4,
+          1.38,
+          "$\\mathbf{1 . 2 7}$"
+        ],
+        [
+          2,
+          "$\\mathbf{0 . 5 3}$",
+          0.58,
+          0.59,
+          0.57
+        ],
+        [
+          2,
+          4.58,
+          4.66,
+          "$\\mathbf{4 . 4 2}$",
+          4.5
+        ],
+        [
+          2,
+          1.07,
+          1.05,
+          "$\\mathbf{0 . 6 5}$",
+          1.03
+        ],
+        [
+          24,
+          1.45,
+          1.63,
+          "$\\mathbf{1 . 2 7}$",
+          1.32
+        ],
+        [
+          2,
+          10.8,
+          12.65,
+          10.71,
+          "$\\mathbf{8 . 2 8}$"
+        ],
+        [
+          2,
+          "$\\mathbf{0 . 4 4}$",
+          0.56,
+          0.91,
+          0.57
+        ],
+        [
+          3,
+          1.68,
+          "$\\mathbf{1 . 6 5}$",
+          1.82,
+          1.88
+        ],
+        [
+          3,
+          "$\\mathbf{1 . 9 9}$",
+          2.49,
+          2.72,
+          2.26
+        ],
+        [
+          3,
+          0.44,
+          0.43,
+          0.31,
+          "$\\mathbf{0 . 3 0}$"
+        ],
+        [
+          3,
+          "$\\mathbf{1 . 6 0}$",
+          1.61,
+          1.6,
+          1.93
+        ],
+        [
+          3,
+          0.58,
+          "$\\mathbf{0 . 4 3}$",
+          0.88,
+          0.52
+        ],
+        [
+          4,
+          3.98,
+          3.75,
+          3.99,
+          "$\\mathbf{3 . 4 9}$"
+        ],
+        [
+          4,
+          6.28,
+          10.98,
+          11.07,
+          "$\\mathbf{6 . 0 7}$"
+        ],
+        [
+          52,
+          5.21,
+          5.46,
+          "$\\mathbf{3 . 6 0}$",
+          5.09
+        ],
+        [
+          6,
+          0.6,
+          0.72,
+          "$\\mathbf{0 . 5 6}$",
+          1.25
+        ],
+        [
+          7,
+          1.97,
+          2.0,
+          2.06,
+          "$\\mathbf{1 . 9 4}$"
+        ],
+        [
+          "Number of best",
+          19,
+          7,
+          11,
+          13
+        ],
+        [
+          "Success rate (RMSD $<2 \\AA$ )",
+          "$66.00 \\%$",
+          "$60.00 \\%$",
+          "$64.00 \\%$",
+          "$62.00 \\%$"
+        ]
+      ],
+      "row_count": 52,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "The optimization results of ABC-EDM versus the three EC algorithms on the 50 docking instances. The scoring value of the ligand pose with the lowest scoring value (among 30 independent docking simulations) is reported for each instance.",
+      "headers": [
+        "PDB ID",
+        "ABC-EDM",
+        "PSO",
+        "DE",
+        "GA"
+      ],
+      "rows": [
+        [
+          1,
+          "$-\\mathbf{1 7 . 1 3}$",
+          -11.49,
+          -13.69,
+          -10.5
+        ],
+        [
+          1,
+          "$-\\mathbf{7 . 7 0}$",
+          -7.65,
+          -7.67,
+          -7.55
+        ],
+        [
+          1,
+          -6.75,
+          -6.83,
+          "$-\\mathbf{6 . 8 4}$",
+          -6.82
+        ],
+        [
+          1,
+          -10.4,
+          -8.87,
+          "$-\\mathbf{1 0 . 7 0}$",
+          -9.43
+        ],
+        [
+          1,
+          "$-\\mathbf{1 5 . 1 1}$",
+          -12.94,
+          -14.6,
+          -12.52
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 0 6}$",
+          -7.69,
+          -7.95,
+          -7.73
+        ],
+        [
+          11,
+          "$-\\mathbf{9 . 6 2}$",
+          -9.44,
+          -9.59,
+          -9.2
+        ],
+        [
+          1,
+          -9.29,
+          -9.21,
+          "$-\\mathbf{1 0 . 5 7}$",
+          -8.68
+        ],
+        [
+          1,
+          "$-\\mathbf{6 . 6 8}$",
+          -6.18,
+          -6.28,
+          -6.36
+        ],
+        [
+          1,
+          "$-\\mathbf{1 7 . 5 8}$",
+          -11.29,
+          -14.08,
+          -12.67
+        ],
+        [
+          1,
+          -13.56,
+          -10.75,
+          "$-\\mathbf{1 5 . 3 1}$",
+          -10.89
+        ],
+        [
+          1,
+          -9.96,
+          -8.9,
+          "$-\\mathbf{1 2 . 0 2}$",
+          -9.09
+        ],
+        [
+          1,
+          -13.44,
+          -12.29,
+          "$-\\mathbf{1 3 . 6 3}$",
+          -12.89
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 1 1}$",
+          -7.99,
+          -8.07,
+          -7.89
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 7 2}$",
+          -7.04,
+          -8.2,
+          -6.86
+        ],
+        [
+          1,
+          "$-\\mathbf{2 1 . 2 3}$",
+          -13.11,
+          -13.89,
+          -12.01
+        ],
+        [
+          1,
+          -8.35,
+          -8.27,
+          "$-\\mathbf{8 . 4 2}$",
+          -8.22
+        ],
+        [
+          1,
+          "$-\\mathbf{1 1 . 8 5}$",
+          -10.42,
+          -11.48,
+          -10.36
+        ],
+        [
+          1,
+          "$-\\mathbf{8 . 9 7}$",
+          -7.16,
+          -7.37,
+          -7.08
+        ],
+        [
+          1,
+          -8.87,
+          -8.79,
+          "$-\\mathbf{8 . 9 1}$",
+          -8.67
+        ],
+        [
+          1,
+          -8.39,
+          -8.25,
+          "$-\\mathbf{8 . 3 9}$",
+          -8.36
+        ],
+        [
+          1,
+          "$-\\mathbf{5 . 9 7}$",
+          -5.95,
+          -5.96,
+          -5.87
+        ],
+        [
+          1,
+          "$-\\mathbf{1 9 . 5 7}$",
+          -13.98,
+          -14.11,
+          -12.55
+        ],
+        [
+          1,
+          -9.37,
+          -9.17,
+          "$-\\mathbf{9 . 4 1}$",
+          -9.09
+        ],
+        [
+          1,
+          -9.59,
+          -8.59,
+          "$-\\mathbf{9 . 7 2}$",
+          -8.95
+        ],
+        [
+          1,
+          -10.92,
+          -9.67,
+          "$-\\mathbf{1 1 . 0 0}$",
+          -8.14
+        ],
+        [
+          1,
+          -13.44,
+          -12.61,
+          "$-\\mathbf{1 5 . 2 3}$",
+          -12.0
+        ],
+        [
+          1,
+          "$-\\mathbf{5 . 2 3}$",
+          -5.13,
+          -5.09,
+          -5.03
+        ],
+        [
+          1,
+          "$-\\mathbf{6 . 9 1}$",
+          -5.41,
+          -5.79,
+          -5.3
+        ],
+        [
+          2,
+          -11.96,
+          -11.69,
+          "$-\\mathbf{1 1 . 9 7}$",
+          -11.77
+        ],
+        [
+          23,
+          "$-\\mathbf{1 1 . 1 2}$",
+          -10.69,
+          -10.97,
+          -10.42
+        ],
+        [
+          2,
+          -14.85,
+          -10.2,
+          "$-\\mathbf{1 5 . 0 8}$",
+          -10.96
+        ],
+        [
+          2,
+          -5.73,
+          -5.05,
+          -5.07,
+          "$-\\mathbf{6 . 4 5}$"
+        ],
+        [
+          2,
+          "$-\\mathbf{9 . 8 3}$",
+          -9.74,
+          -9.82,
+          -9.75
+        ],
+        [
+          2,
+          -9.35,
+          -9.32,
+          "$-\\mathbf{9 . 3 7}$",
+          -9.3
+        ],
+        [
+          2,
+          -5.02,
+          -4.34,
+          "$-\\mathbf{5 . 1 9}$",
+          -4.65
+        ],
+        [
+          2,
+          -7.47,
+          -7.38,
+          "$-\\mathbf{7 . 4 7}$",
+          -7.08
+        ],
+        [
+          24,
+          -5.6,
+          -5.23,
+          "$-\\mathbf{5 . 8 9}$",
+          -4.97
+        ],
+        [
+          2,
+          "$-\\mathbf{1 1 . 2 9}$",
+          -8.46,
+          -10.57,
+          -8.56
+        ],
+        [
+          2,
+          -11.8,
+          -10.95,
+          "$-\\mathbf{1 1 . 8 7}$",
+          -11.63
+        ],
+        [
+          3,
+          "$-\\mathbf{1 0 . 8 5}$",
+          -6.55,
+          -8.06,
+          -6.92
+        ],
+        [
+          3,
+          -7.38,
+          -6.89,
+          "$-\\mathbf{7 . 3 9}$",
+          -6.46
+        ],
+        [
+          3,
+          -10.77,
+          -10.73,
+          "$-\\mathbf{1 0 . 7 7}$",
+          -10.57
+        ],
+        [
+          3,
+          "$-\\mathbf{6 . 6 5}$",
+          -6.59,
+          -6.64,
+          -6.64
+        ],
+        [
+          3,
+          "$-\\mathbf{1 1 . 4 2}$",
+          -10.68,
+          -6.4,
+          -10.91
+        ],
+        [
+          4,
+          -5.97,
+          -5.75,
+          "$-\\mathbf{6 . 0 1}$",
+          -5.71
+        ],
+        [
+          4,
+          "$-\\mathbf{1 3 . 6 7}$",
+          -11.29,
+          -13.04,
+          -11.42
+        ],
+        [
+          52,
+          "$-\\mathbf{1 3 . 8 4}$",
+          -10.06,
+          -13.12,
+          -11.28
+        ],
+        [
+          6,
+          -8.52,
+          -8.46,
+          "$-\\mathbf{8 . 5 9}$",
+          -7.68
+        ],
+        [
+          7,
+          "$-\\mathbf{6 . 6 6}$",
+          -5.83,
+          -6.0,
+          -6.53
+        ],
+        [
+          "Number of best",
+          25,
+          0,
+          24,
+          1
+        ]
+      ],
+      "row_count": 51,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Statistical results obtained by the Friedman test on the optimization results (in Table 6).",
+      "headers": [
+        "Algorithm",
+        "Ranking",
+        "unadjusted $p$ value",
+        "$p_{\\text {Holm }}$ value"
+      ],
+      "rows": [
+        [
+          "ABC-EDM",
+          1.52,
+          "-",
+          ""
+        ],
+        [
+          "DE",
+          1.66,
+          0.587669,
+          0.587669
+        ],
+        [
+          "PSO",
+          3.38,
+          0,
+          0
+        ],
+        [
+          "GA",
+          3.44,
+          0,
+          0
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "The docking results of ABC-EDM versus the three EC algorithms on the 50 docking instances. The RMSD $(\\AA)$ of the predicted ligand pose is reported for each instance.",
+      "headers": [
+        "PDB ID",
+        "ABC-EDM",
+        "PSO",
+        "DE",
+        "GA"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\mathbf{3 . 6 5}$",
+          7.88,
+          11.0,
+          14.16
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 6 7}$",
+          0.77,
+          0.68,
+          0.75
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 2 1}$",
+          0.3,
+          0.26,
+          0.31
+        ],
+        [
+          1,
+          "$\\mathbf{2 . 7 1}$",
+          4.1,
+          4.71,
+          3.72
+        ],
+        [
+          1,
+          "$\\mathbf{1 . 3 0}$",
+          3.2,
+          3.35,
+          5.54
+        ],
+        [
+          1,
+          3.1,
+          "$\\mathbf{2 . 3 7}$",
+          2.43,
+          2.91
+        ],
+        [
+          11,
+          1.43,
+          0.48,
+          1.42,
+          "$\\mathbf{0 . 3 7}$"
+        ],
+        [
+          1,
+          "$\\mathbf{2 . 6 1}$",
+          3.17,
+          3.33,
+          6.83
+        ],
+        [
+          1,
+          8.39,
+          9.2,
+          "$\\mathbf{6 . 6 4}$",
+          10.0
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 8 2}$",
+          6.31,
+          6.47,
+          6.32
+        ],
+        [
+          1,
+          7.18,
+          3.95,
+          "$\\mathbf{1 . 4 9}$",
+          5.38
+        ],
+        [
+          1,
+          2.39,
+          5.78,
+          "$\\mathbf{0 . 6 9}$",
+          4.83
+        ],
+        [
+          1,
+          0.93,
+          1.06,
+          "$\\mathbf{0 . 7 7}$",
+          0.99
+        ],
+        [
+          1,
+          0.26,
+          "$\\mathbf{0 . 2 4}$",
+          0.28,
+          1.43
+        ],
+        [
+          1,
+          "$\\mathbf{1 . 3 5}$",
+          8.76,
+          8.57,
+          9.02
+        ],
+        [
+          1,
+          "$\\mathbf{1 . 8 0}$",
+          12.89,
+          12.8,
+          13.64
+        ],
+        [
+          1,
+          0.24,
+          "$\\mathbf{0 . 1 9}$",
+          1.02,
+          1.03
+        ],
+        [
+          1,
+          6.4,
+          "$\\mathbf{4 . 8 7}$",
+          7.05,
+          7.3
+        ],
+        [
+          1,
+          "$\\mathbf{1 . 6 8}$",
+          6.07,
+          5.47,
+          8.4
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 1 7}$",
+          0.19,
+          0.97,
+          1.0
+        ],
+        [
+          1,
+          1.03,
+          "$\\mathbf{0 . 9 4}$",
+          1.03,
+          0.98
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 3 8}$",
+          0.44,
+          0.39,
+          0.48
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 2 7}$",
+          9.0,
+          7.5,
+          10.2
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 4 5}$",
+          0.91,
+          0.46,
+          0.5
+        ],
+        [
+          1,
+          4.83,
+          2.08,
+          4.72,
+          "$\\mathbf{1 . 8 6}$"
+        ],
+        [
+          1,
+          "$\\mathbf{1 . 2 7}$",
+          2.55,
+          1.29,
+          7.28
+        ],
+        [
+          1,
+          "$\\mathbf{7 . 0 0}$",
+          7.21,
+          9.57,
+          8.11
+        ],
+        [
+          1,
+          1.82,
+          1.89,
+          "$\\mathbf{0 . 5 1}$",
+          0.56
+        ],
+        [
+          1,
+          "$\\mathbf{0 . 7 9}$",
+          6.21,
+          6.28,
+          5.45
+        ],
+        [
+          2,
+          0.31,
+          0.3,
+          0.31,
+          "$\\mathbf{0 . 2 7}$"
+        ],
+        [
+          2,
+          2.56,
+          "$\\mathbf{0 . 5 6}$",
+          1.07,
+          1.1
+        ],
+        [
+          2,
+          "$\\mathbf{0 . 6 3}$",
+          3.11,
+          1.07,
+          3.5
+        ],
+        [
+          2,
+          11.03,
+          "$\\mathbf{0 . 3 4}$",
+          1.12,
+          11.46
+        ],
+        [
+          2,
+          "$\\mathbf{1 . 3 5}$",
+          1.61,
+          1.39,
+          1.64
+        ],
+        [
+          2,
+          "$\\mathbf{0 . 5 3}$",
+          0.59,
+          0.55,
+          0.56
+        ],
+        [
+          2,
+          4.58,
+          "$\\mathbf{2 . 3 0}$",
+          4.57,
+          2.42
+        ],
+        [
+          2,
+          1.07,
+          "$\\mathbf{0 . 6 4}$",
+          1.07,
+          1.0
+        ]
+      ],
+      "row_count": 37,
+      "column_count": 5
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 (continued).",
+      "headers": [
+        "PDB ID",
+        "ABC-EDM",
+        "PSO",
+        "DE",
+        "GA"
+      ],
+      "rows": [
+        [
+          24,
+          1.45,
+          "$\\mathbf{0 . 7 8}$",
+          1.28,
+          2.42
+        ],
+        [
+          2,
+          "$\\mathbf{1 0 . 8 0}$",
+          11.57,
+          11.83,
+          11.94
+        ],
+        [
+          2,
+          "$\\mathbf{0 . 4 4}$",
+          0.71,
+          1.07,
+          0.45
+        ],
+        [
+          3,
+          "$\\mathbf{1 . 6 8}$",
+          8.6,
+          8.91,
+          8.27
+        ],
+        [
+          3,
+          1.99,
+          2.49,
+          "$\\mathbf{1 . 9 8}$",
+          2.01
+        ],
+        [
+          3,
+          0.44,
+          0.48,
+          0.44,
+          "$\\mathbf{0 . 3 0}$"
+        ],
+        [
+          3,
+          1.6,
+          0.43,
+          0.42,
+          "$\\mathbf{0 . 3 9}$"
+        ],
+        [
+          3,
+          0.58,
+          0.91,
+          10.01,
+          "$\\mathbf{0 . 4 5}$"
+        ],
+        [
+          4,
+          3.98,
+          "$\\mathbf{0 . 7 5}$",
+          3.97,
+          1.19
+        ],
+        [
+          4,
+          "$\\mathbf{6 . 2 8}$",
+          6.57,
+          6.75,
+          6.99
+        ],
+        [
+          52,
+          "$\\mathbf{5 . 2 1}$",
+          7.52,
+          10.45,
+          10.29
+        ],
+        [
+          6,
+          0.6,
+          "$\\mathbf{0 . 5 1}$",
+          0.54,
+          6.52
+        ],
+        [
+          7,
+          1.97,
+          5.98,
+          6.23,
+          "$\\mathbf{1 . 9 3}$"
+        ],
+        [
+          "Number of best",
+          25,
+          12,
+          6,
+          7
+        ],
+        [
+          "Success rate (RMSD $=2 \\AA$",
+          "$66.00 \\%$",
+          "$48.00 \\%$",
+          "$54.00 \\%$",
+          "$46.00 \\%$"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 5
+    },
+    {
+      "table_number": "9",
+      "table_title": "Comparison of the success rates of ABC-EDM and Vina on the GOLD dataset (containing 113 docking instances) at three typical RMSD thresholds.",
+      "headers": [
+        "RMSD threshold",
+        "ABC-EDM",
+        "Vina"
+      ],
+      "rows": [
+        [
+          "$1.00 \\AA$",
+          "$30.09 \\%$",
+          "$21.24 \\%$"
+        ],
+        [
+          "$2.00 \\AA$",
+          "$61.06 \\%$",
+          "$55.75 \\%$"
+        ],
+        [
+          "$5.00 \\AA$",
+          "$84.07 \\%$",
+          "$79.65 \\%$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

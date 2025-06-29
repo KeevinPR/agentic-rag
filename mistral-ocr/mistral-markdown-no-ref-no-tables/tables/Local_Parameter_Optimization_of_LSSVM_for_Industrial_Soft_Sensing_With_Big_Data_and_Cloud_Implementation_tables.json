@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/Local Parameter Optimization of LSSVM for Industrial Soft Sensing With Big Data and Cloud Implementation.md",
+    "filename": "Local Parameter Optimization of LSSVM for Industrial Soft Sensing With Big Data and Cloud Implementation.md",
+    "title": "Local Parameter Optimization of LSSVM for Industrial Soft Sensing With Big Data and Cloud Implementation",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "APPROXIMATE TIME COMPLEXITY ANALYSIS OF MAIN STEPS",
+      "headers": [
+        "Main Steps",
+        "dp-UMDA- <br> LOS-LSSVM",
+        "UMDA- <br> LOS-LSSVM"
+      ],
+      "rows": [
+        [
+          "Computation of <br> kernel matrix",
+          "$O\\left(N^{3} / K_{1}^{2}\\right)$",
+          "$O\\left(N^{2}\\right)$"
+        ],
+        [
+          "Solve equations in <br> LSSVM for training",
+          "$O\\left(N^{3} / K_{1}^{2}\\right)$",
+          "$O\\left(N^{2}\\right)$"
+        ],
+        [
+          "Distance between <br> testing and <br> training samples",
+          "$O\\left(N / K_{2}\\right)$",
+          "$O(N)$"
+        ],
+        [
+          "Sorting of distance",
+          "$O\\left(2 N / K_{2}\\right)$",
+          "$O(N)$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "DESCRIPTIONS OF THE 11 PROCESS VARIABLES",
+      "headers": [
+        "No.",
+        "Tags",
+        "Descriptions"
+      ],
+      "rows": [
+        [
+          1,
+          4011.0,
+          0.05001
+        ],
+        [
+          2,
+          5020.0,
+          5003
+        ],
+        [
+          3,
+          5015.0,
+          0.05003
+        ],
+        [
+          4,
+          5015.0,
+          -5001
+        ],
+        [
+          5,
+          5016.0,
+          -5001
+        ],
+        [
+          6,
+          5016.0,
+          0.05003
+        ],
+        [
+          7,
+          5016.0,
+          5001
+        ],
+        [
+          8,
+          5018.0,
+          0.05001
+        ],
+        [
+          9,
+          5022.0,
+          5001
+        ],
+        [
+          10,
+          6001.0,
+          6001
+        ],
+        [
+          11,
+          6001.0,
+          0.06
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "PARAMETERS SETTING OF UMDA",
+      "headers": [
+        "Population Size",
+        "Maximum <br> Iterations",
+        "Selection <br> Rate"
+      ],
+      "rows": [
+        [
+          70,
+          10,
+          0.4
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 3
+    },
+    {
+      "table_number": "IV",
+      "table_title": "EVALUATION INDICATORS OF EXPERIMENTS",
+      "headers": [
+        "Evaluation Indicator",
+        "UMDA-LOS-LSSVM",
+        "UMDA-5CV-LSSVM",
+        "UMDA-SV-LSSVM",
+        "UMDA-ATS-LSSVM"
+      ],
+      "rows": [
+        [
+          "Testing RMSE",
+          0.00072347,
+          0.00084572,
+          0.00096108,
+          0.0017
+        ],
+        [
+          "Testing Max Error",
+          0.0047,
+          0.0051,
+          0.0066,
+          0.0124
+        ],
+        [
+          "Optimized <br> Parameters",
+          "$\\gamma=249.3007$",
+          "$\\gamma=391.2386$",
+          "$\\gamma=532.6514$",
+          "$\\gamma=926.32825$"
+        ],
+        [
+          "",
+          "$\\sigma^{2}=1.99743$",
+          "$\\sigma^{2}=0.70295$",
+          "$\\sigma^{2}=0.52147$",
+          "$\\sigma^{2}=0.23957$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Evaluation Indicator",
+        "UMDA-LOS <br> -LSSVM",
+        "UMDA-ATS <br> -LSSVM"
+      ],
+      "rows": [
+        [
+          "RMSE of objective/training set",
+          0.00081697,
+          9.3382e-06
+        ],
+        [
+          "RMSE of <br> testing set",
+          0.00072347,
+          0.0017
+        ],
+        [
+          "Optimized <br> Parameters",
+          "$\\gamma=249.30073$ <br> $\\sigma^{2}=1.99743$",
+          "$\\gamma=926.32825$ <br> $\\sigma^{2}=0.23957$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "VI",
+      "table_title": "EVALUATION INDICATORS OF EXPERIMENTS",
+      "headers": [
+        "Evaluation Indicator",
+        "UMDA-LOS-LSSVM",
+        "Local-Model-LSSVM"
+      ],
+      "rows": [
+        [
+          "Testing RMSE",
+          0.00072347,
+          0.00093091
+        ],
+        [
+          "Testing Max Error",
+          0.0047,
+          0.008
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "VII",
+      "table_title": "EVALUATION INDICATORS OF EXPERIMENTS",
+      "headers": [
+        "Evaluation Indicator",
+        "UMDA-LOS-LSSVM",
+        "GBDT"
+      ],
+      "rows": [
+        [
+          "Testing RMSE",
+          0.00072347,
+          0.00088973
+        ],
+        [
+          "Testing Max Error",
+          0.0047,
+          0.0086
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "EVALUATION INDICATORS OF EXPERIMENTS",
+      "headers": [
+        "Methods",
+        "Optimized <br> Parameters",
+        "RMSE",
+        "MAX <br> ERROR",
+        "Time"
+      ],
+      "rows": [
+        [
+          "dp <br> method",
+          "$\\begin{aligned} & \\gamma=225.42485 \\\\ & \\sigma^{2}=1.55869 \\end{aligned}$",
+          0.0005591,
+          0.0018,
+          880
+        ],
+        [
+          "",
+          "$\\begin{aligned} & \\gamma=432.91333 \\\\ & \\sigma^{2}=1.22639 \\end{aligned}$",
+          "",
+          "",
+          ""
+        ],
+        [
+          "non-dp method",
+          "$\\begin{aligned} & \\gamma=963.75085 \\\\ & \\sigma^{2}=0.99906 \\end{aligned}$",
+          0.0005084,
+          0.0017,
+          6868
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    }
+  ]
+}

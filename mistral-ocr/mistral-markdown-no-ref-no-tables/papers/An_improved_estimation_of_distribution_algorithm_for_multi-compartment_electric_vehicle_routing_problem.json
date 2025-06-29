@@ -1,0 +1,995 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/An improved estimation of distribution algorithm for multi-compartment electric vehicle routing problem.md",
+    "filename": "An improved estimation of distribution algorithm for multi-compartment electric vehicle routing problem.md",
+    "title": "An improved estimation of distribution algorithm for multi-compartment electric vehicle routing problem",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] PANG Y, LUO H, XING L N, et al. A survey of vehicle routing optimization problems and solution methods. Control Theory \\& Applications, 2019, 36(10): 1573-1584. (in Chinese)\n[2] CHEN L, LIU Y, LANGEVIN A. A multi-compartment vehicle routing problem in cold-chain distribution. Computers \\& Operations Research, 2019, 111: 58-66.\n[3] MOFID-NAKHAEE E, BARZINPOUR F. A multi-compartment capacitated arc routing problem with intermediate facilities for solid waste collection using hybrid adaptive large neighborhood search and whale algorithm. Waste Management \\& Research, 2019, 37(1): 38-47.\n[4] ZHANG Y K, SUN L J, HU X P. Multi-compartment vehicle dispatching and routing for product oil distribution. Operations Research and Management Science, 2017, 26(7): 1-9.\n[5] ABDULKADER M M S, GAJPAL Y, ELMEKKAWY T Y. Hybridized ant colony algorithm for the multi-compartment vehicle routing problem. Applied Soft Computing, 2015, 37: 196-203.\n[6] BROWN G G, GRAVES G W. Real-time dispatch of petroleum tank trucks. Management Science, 1981, 27(1): 19-32.\n[7] OSTERMEIER M, HUEBNER A. Vehicle selection for a multi-compartment vehicle routing problem. European Journal of Operational Research, 2018, 269(2): 682-694.\n[8] GOCMEN E, EROL R. Location and multi-compartment capacitated vehicle routing problem for blood banking system. International Journal of Engineering Technologies, 2018, $4(1): 1-12$.\n[9] KANDILLER L, ELIIYI D T, TASAR B. A multi-compartment vehicle routing problem for livestock feed distribution. Proc. of the Operations Research Conference, 2017: 149155.\n[10] PAREDES-BELMAR G, MARIANOV V, BRONFMAN A, et al. A milk collection problem with blending. Transportation Research Part E-Logistics and Transportation Review, 2016, 94: 26-43.\n[11] KESKIN M, LAPORTE G, CATAY B. Electric vehicle routing problem with time-dependent waiting times at recharging stations. Computers \\& Operations Research, 2019, 107: 7794.\n[12] SHI Y, BOUDOUH T, GRUNDER O. A hybrid genetic algorithm for a home health care routing problem with time window and fuzzy demand. Expert Systems with Applications, 2017, 72: 160-176.\n[13] KESKIN M, CATAY B. A matheuristic method for the electric vehicle routing problem with time windows and fast chargers. Computers \\& Operations Research, 2018, 100: $172-188$.\n[14] PEREZ-RODRIGUEZ R, HERNANDEZ-AGUIRRE A. Bivariate dependency for the vehicle routing problem with time windows. International Journal of Industrial EngineeringTheory Applications and Practice, 2020, 27(3): 473-499.\n[15] PEREZ-RODRIGUEZ R, HERNANDEZ-AGUIRRE A. A hybrid estimation of distribution algorithm for the vehicle\n\nrouting problem with time windows. Computers \\& Industrial Engineering, 2019, 130: 75-96.\n[16] HENKE T, SPERANZA M G, WAESCHER G. A branch-and-cut algorithm for the multi-compartment vehicle routing problem with flexible compartment sizes. Annals of Operations Research, 2019, 275(2): 321-338.\n[17] CHEN J M, SHI J. A multi-compartment vehicle routing problem with time windows for urban distribution-a comparison study on particle swarm optimization algorithms. Computers \\& Industrial Engineering, 2019, 133: 95-106.\n[18] ZHAN H X, WANG X P, SUN Z L, et al. Variable neighborhood search for the multi-objective multi-compartment optimization of refined products distribution. Systems Engineering-Theory \\& Practice, 2019, 39(10): 2660-2675. (in Chinese)\n[19] WANG X, JI Q K, HU X P. A hybrid guided reactive tabu search for heterogeneous fixed fleet multi-compartment vehicle routing problem. Engineering Management, 2016, 30(3): 179-187. (in Chinese)\n[20] GOODSON J C. A priori policy evaluation and cyclic-orderbased simulated annealing for the multi-compartment vehicle routing problem with stochastic demands. European Journal of Operational Research, 2015, 241(2): 361-369.\n[21] LU S C, WANG X F. Discrete firefly algorithm for clustered multi-temperature joint distribution with fuzzy travel times. International Journal of Computational Intelligence Systems, 2018, 11(1): 195-205.\n[22] BARCO J, GUERRA A, MUNOZ L, et al. Optimal routing and scheduling of charge for electric vehicles: a case study. Mathematical Problems in Engineering, 2017, 2017(Pt.11): $1-16$.\n[23] VERMA A. Electric vehicle routing problem with time windows, recharging stations and battery swapping stations. Euro Journal on Transportation and Logistics, 2018, 7(4): 415451 .\n[24] SHAO S, GUAN W, RAN B, et al. Electric vehicle routing problem with charging time and variable travel time. Mathematical Problems in Engineering, 2017, 2017(2): 1-13.\n[25] CATAY B, KESKIN M. The impact of quick charging stations on the route planning of electric vehicles. Proc. of the IEEE Symposium on Computers and Communications, 2017: $152-157$.\n[26] LIN J, ZHOU W, WOLFSON O. Electric vehicle routing problem. Transportation Research Procedia, 2016, 12: $508-521$.\n[27] KANCHARLA S R, RAMADURAI G. An adaptive large neighborhood search approach for electric vehicle routing with load-dependent energy consumption. Transportation in Developing Economies, 2018. DOI: 10.1007/s40890-0180063-3.\n[28] ZHAO M T, LU Y W. A heuristic approach for a real-world EV routing problem. Algorithms, 2019. DOI: 10.3390/a12020 045 .\n[29] MONTOYA A, GUERET C, MENDOZA J E, et al. The electric vehicle routing problem with nonlinear charging function. Transportation Research Part B-Methodological, 2017, 103: 87-110.\n[30] KESKIN M, CATAY B. Partial recharge strategies for the EV routing problem with time windows. Transportation Research Part C-Emerging Technologies, 2016, 65: 111-127.\n[31] DESAULNIERS G, ERRICO F, IRNICH S, et al. Exact al-\ngorithms for electric vehicle-routing problems with time windows. Operations Research, 2016, 64(6): 1388-1405.\n[32] LIU R, TAO Y Y, XIE X L. An adaptive large neighborhood search heuristic for the vehicle routing problem with time windows and synchronized visits. Computers \\& Operations Research, 2019, 101: 250-262.\n[33] WU C G, WANG L, ZHENG X L. An effective estimation of distribution algorithm for solving uniform parallel machine scheduling problem with precedence constraints. Proc. of the IEEE Congress on Evolutionary Computation, 2016: 26262632.\n[34] SHEN J N, WANG L, WANG S Y. A bi-population EDA for solving the no-idle permutation flow-shop scheduling problem with the total tardiness criterion. Knowledge-Based Systems, 2015, 74: 167-175.\n[35] VISWANATHAN G M, AFANASYEV V, BULDYREV S V, et al. Levy flight search patterns of wandering albatrosses. Nature, 1996, 381(6581): 413-415.\n[36] TSALLIS C, LEVY S V F, SOUZA A M C, et al. Statisticalmechanical foundation of the ubiquity of Levy distributions in nature. Physical Review Letters, 1995, 75(20): 3589-3593.\n[37] SUMPUNSRI S, PUANGDOWNREONG D. Multiobjective Levy-flight firerly algorithm for optimal PIDA controller design. International Journal of Innovative Computing Information and Control, 2020, 16(1): 173-187.\n[38] SHI W G, GUO M. Network delay prediction based on model of modified ensemble empirical mode decomposition-permutation entropy and cuckoo search-wavelet neural network. Systems Engineering and Electronics, 2020, 42(1): 184-190. (in Chinese)\n[39] OUAARAB A, AHIOD B, YANG X S, et al. Discrete cuckoo search algorithm for job shop scheduling problem. Proc. of the IEEE International Symposium on Intelligent Control, 2014: 1872-1876.\n[40] REED M, YIANNAKOU A, EVERING R. An ant colony algorithm for the multi-compartment vehicle routing problem. Applied Soft Computing, 2014, 15: 169-176.\n[41] SOLOMON M M. Algorithms for the vehicle routing and scheduling problems with time window constraints. Operations Research, 1987, 35(2): 254-265.\n[42] WANG Q Y, LI Y, LI H. Battery swap station location-routing problem of electric vehicles with soft time windows. Industrial Engineering and Management, 2019, 24(3): 99-106.\n[43] MAVROVOUNIOTIS M, ELLINAS G, POLYCARPOU M. Ant colony optimization for the electric vehicle routing problem. Proc. of the 8th IEEE Symposium Series on Computational Intelligence, 2018: 1234-1241.\n[44] GUO Z F, LI Y, JIANG X D, et al. The electric vehicle routing problem with time windows using genetic algorithm. Proc. of the 2nd IEEE Advanced Information Technology, Electronic and Automation Control Conference, 2017: 635639 .\n[45] KOCH H, HENKE T, WASCHER G. A genetic algorithm for the multi-compartment vehicle routing problem with flexible compartment sizes. https://www.fww.ovgu.deffww_media/femm/femm_2016/2016_04.pdf.\n[46] FENG W, FIGLIOZZI M A. Conventional vs electric commercial vehicle fleets: a case study of economic and technological factors affecting the competitiveness of electric commercial vehicles in the USA. Proc. of the 7th International Conference on City Logistics, 2012: 702-711.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "PANG Y, LUO H, XING L N, et al. A survey of vehicle routing optimization problems and solution methods. Control Theory \\& Applications, 2019, 36(10): 1573-1584. (in Chinese)"
+      },
+      {
+        "ref_id": "2",
+        "text": "CHEN L, LIU Y, LANGEVIN A. A multi-compartment vehicle routing problem in cold-chain distribution. Computers \\& Operations Research, 2019, 111: 58-66."
+      },
+      {
+        "ref_id": "3",
+        "text": "MOFID-NAKHAEE E, BARZINPOUR F. A multi-compartment capacitated arc routing problem with intermediate facilities for solid waste collection using hybrid adaptive large neighborhood search and whale algorithm. Waste Management \\& Research, 2019, 37(1): 38-47."
+      },
+      {
+        "ref_id": "4",
+        "text": "ZHANG Y K, SUN L J, HU X P. Multi-compartment vehicle dispatching and routing for product oil distribution. Operations Research and Management Science, 2017, 26(7): 1-9."
+      },
+      {
+        "ref_id": "5",
+        "text": "ABDULKADER M M S, GAJPAL Y, ELMEKKAWY T Y. Hybridized ant colony algorithm for the multi-compartment vehicle routing problem. Applied Soft Computing, 2015, 37: 196-203."
+      },
+      {
+        "ref_id": "6",
+        "text": "BROWN G G, GRAVES G W. Real-time dispatch of petroleum tank trucks. Management Science, 1981, 27(1): 19-32."
+      },
+      {
+        "ref_id": "7",
+        "text": "OSTERMEIER M, HUEBNER A. Vehicle selection for a multi-compartment vehicle routing problem. European Journal of Operational Research, 2018, 269(2): 682-694."
+      },
+      {
+        "ref_id": "8",
+        "text": "GOCMEN E, EROL R. Location and multi-compartment capacitated vehicle routing problem for blood banking system. International Journal of Engineering Technologies, 2018, $4(1): 1-12$."
+      },
+      {
+        "ref_id": "9",
+        "text": "KANDILLER L, ELIIYI D T, TASAR B. A multi-compartment vehicle routing problem for livestock feed distribution. Proc. of the Operations Research Conference, 2017: 149155."
+      },
+      {
+        "ref_id": "10",
+        "text": "PAREDES-BELMAR G, MARIANOV V, BRONFMAN A, et al. A milk collection problem with blending. Transportation Research Part E-Logistics and Transportation Review, 2016, 94: 26-43."
+      },
+      {
+        "ref_id": "11",
+        "text": "KESKIN M, LAPORTE G, CATAY B. Electric vehicle routing problem with time-dependent waiting times at recharging stations. Computers \\& Operations Research, 2019, 107: 7794."
+      },
+      {
+        "ref_id": "12",
+        "text": "SHI Y, BOUDOUH T, GRUNDER O. A hybrid genetic algorithm for a home health care routing problem with time window and fuzzy demand. Expert Systems with Applications, 2017, 72: 160-176."
+      },
+      {
+        "ref_id": "13",
+        "text": "KESKIN M, CATAY B. A matheuristic method for the electric vehicle routing problem with time windows and fast chargers. Computers \\& Operations Research, 2018, 100: $172-188$."
+      },
+      {
+        "ref_id": "14",
+        "text": "PEREZ-RODRIGUEZ R, HERNANDEZ-AGUIRRE A. Bivariate dependency for the vehicle routing problem with time windows. International Journal of Industrial EngineeringTheory Applications and Practice, 2020, 27(3): 473-499."
+      },
+      {
+        "ref_id": "15",
+        "text": "PEREZ-RODRIGUEZ R, HERNANDEZ-AGUIRRE A. A hybrid estimation of distribution algorithm for the vehicle"
+      },
+      {
+        "ref_id": "16",
+        "text": "HENKE T, SPERANZA M G, WAESCHER G. A branch-and-cut algorithm for the multi-compartment vehicle routing problem with flexible compartment sizes. Annals of Operations Research, 2019, 275(2): 321-338."
+      },
+      {
+        "ref_id": "17",
+        "text": "CHEN J M, SHI J. A multi-compartment vehicle routing problem with time windows for urban distribution-a comparison study on particle swarm optimization algorithms. Computers \\& Industrial Engineering, 2019, 133: 95-106."
+      },
+      {
+        "ref_id": "18",
+        "text": "ZHAN H X, WANG X P, SUN Z L, et al. Variable neighborhood search for the multi-objective multi-compartment optimization of refined products distribution. Systems Engineering-Theory \\& Practice, 2019, 39(10): 2660-2675. (in Chinese)"
+      },
+      {
+        "ref_id": "19",
+        "text": "WANG X, JI Q K, HU X P. A hybrid guided reactive tabu search for heterogeneous fixed fleet multi-compartment vehicle routing problem. Engineering Management, 2016, 30(3): 179-187. (in Chinese)"
+      },
+      {
+        "ref_id": "20",
+        "text": "GOODSON J C. A priori policy evaluation and cyclic-orderbased simulated annealing for the multi-compartment vehicle routing problem with stochastic demands. European Journal of Operational Research, 2015, 241(2): 361-369."
+      },
+      {
+        "ref_id": "21",
+        "text": "LU S C, WANG X F. Discrete firefly algorithm for clustered multi-temperature joint distribution with fuzzy travel times. International Journal of Computational Intelligence Systems, 2018, 11(1): 195-205."
+      },
+      {
+        "ref_id": "22",
+        "text": "BARCO J, GUERRA A, MUNOZ L, et al. Optimal routing and scheduling of charge for electric vehicles: a case study. Mathematical Problems in Engineering, 2017, 2017(Pt.11): $1-16$."
+      },
+      {
+        "ref_id": "23",
+        "text": "VERMA A. Electric vehicle routing problem with time windows, recharging stations and battery swapping stations. Euro Journal on Transportation and Logistics, 2018, 7(4): 415451 ."
+      },
+      {
+        "ref_id": "24",
+        "text": "SHAO S, GUAN W, RAN B, et al. Electric vehicle routing problem with charging time and variable travel time. Mathematical Problems in Engineering, 2017, 2017(2): 1-13."
+      },
+      {
+        "ref_id": "25",
+        "text": "CATAY B, KESKIN M. The impact of quick charging stations on the route planning of electric vehicles. Proc. of the IEEE Symposium on Computers and Communications, 2017: $152-157$."
+      },
+      {
+        "ref_id": "26",
+        "text": "LIN J, ZHOU W, WOLFSON O. Electric vehicle routing problem. Transportation Research Procedia, 2016, 12: $508-521$."
+      },
+      {
+        "ref_id": "27",
+        "text": "KANCHARLA S R, RAMADURAI G. An adaptive large neighborhood search approach for electric vehicle routing with load-dependent energy consumption. Transportation in Developing Economies, 2018. DOI: 10.1007/s40890-0180063-3."
+      },
+      {
+        "ref_id": "28",
+        "text": "ZHAO M T, LU Y W. A heuristic approach for a real-world EV routing problem. Algorithms, 2019. DOI: 10.3390/a12020 045 ."
+      },
+      {
+        "ref_id": "29",
+        "text": "MONTOYA A, GUERET C, MENDOZA J E, et al. The electric vehicle routing problem with nonlinear charging function. Transportation Research Part B-Methodological, 2017, 103: 87-110."
+      },
+      {
+        "ref_id": "30",
+        "text": "KESKIN M, CATAY B. Partial recharge strategies for the EV routing problem with time windows. Transportation Research Part C-Emerging Technologies, 2016, 65: 111-127."
+      },
+      {
+        "ref_id": "31",
+        "text": "DESAULNIERS G, ERRICO F, IRNICH S, et al. Exact al-"
+      },
+      {
+        "ref_id": "32",
+        "text": "LIU R, TAO Y Y, XIE X L. An adaptive large neighborhood search heuristic for the vehicle routing problem with time windows and synchronized visits. Computers \\& Operations Research, 2019, 101: 250-262."
+      },
+      {
+        "ref_id": "33",
+        "text": "WU C G, WANG L, ZHENG X L. An effective estimation of distribution algorithm for solving uniform parallel machine scheduling problem with precedence constraints. Proc. of the IEEE Congress on Evolutionary Computation, 2016: 26262632."
+      },
+      {
+        "ref_id": "34",
+        "text": "SHEN J N, WANG L, WANG S Y. A bi-population EDA for solving the no-idle permutation flow-shop scheduling problem with the total tardiness criterion. Knowledge-Based Systems, 2015, 74: 167-175."
+      },
+      {
+        "ref_id": "35",
+        "text": "VISWANATHAN G M, AFANASYEV V, BULDYREV S V, et al. Levy flight search patterns of wandering albatrosses. Nature, 1996, 381(6581): 413-415."
+      },
+      {
+        "ref_id": "36",
+        "text": "TSALLIS C, LEVY S V F, SOUZA A M C, et al. Statisticalmechanical foundation of the ubiquity of Levy distributions in nature. Physical Review Letters, 1995, 75(20): 3589-3593."
+      },
+      {
+        "ref_id": "37",
+        "text": "SUMPUNSRI S, PUANGDOWNREONG D. Multiobjective Levy-flight firerly algorithm for optimal PIDA controller design. International Journal of Innovative Computing Information and Control, 2020, 16(1): 173-187."
+      },
+      {
+        "ref_id": "38",
+        "text": "SHI W G, GUO M. Network delay prediction based on model of modified ensemble empirical mode decomposition-permutation entropy and cuckoo search-wavelet neural network. Systems Engineering and Electronics, 2020, 42(1): 184-190. (in Chinese)"
+      },
+      {
+        "ref_id": "39",
+        "text": "OUAARAB A, AHIOD B, YANG X S, et al. Discrete cuckoo search algorithm for job shop scheduling problem. Proc. of the IEEE International Symposium on Intelligent Control, 2014: 1872-1876."
+      },
+      {
+        "ref_id": "40",
+        "text": "REED M, YIANNAKOU A, EVERING R. An ant colony algorithm for the multi-compartment vehicle routing problem. Applied Soft Computing, 2014, 15: 169-176."
+      },
+      {
+        "ref_id": "41",
+        "text": "SOLOMON M M. Algorithms for the vehicle routing and scheduling problems with time window constraints. Operations Research, 1987, 35(2): 254-265."
+      },
+      {
+        "ref_id": "42",
+        "text": "WANG Q Y, LI Y, LI H. Battery swap station location-routing problem of electric vehicles with soft time windows. Industrial Engineering and Management, 2019, 24(3): 99-106."
+      },
+      {
+        "ref_id": "43",
+        "text": "MAVROVOUNIOTIS M, ELLINAS G, POLYCARPOU M. Ant colony optimization for the electric vehicle routing problem. Proc. of the 8th IEEE Symposium Series on Computational Intelligence, 2018: 1234-1241."
+      },
+      {
+        "ref_id": "44",
+        "text": "GUO Z F, LI Y, JIANG X D, et al. The electric vehicle routing problem with time windows using genetic algorithm. Proc. of the 2nd IEEE Advanced Information Technology, Electronic and Automation Control Conference, 2017: 635639 ."
+      },
+      {
+        "ref_id": "45",
+        "text": "KOCH H, HENKE T, WASCHER G. A genetic algorithm for the multi-compartment vehicle routing problem with flexible compartment sizes. https://www.fww.ovgu.deffww_media/femm/femm_2016/2016_04.pdf."
+      },
+      {
+        "ref_id": "46",
+        "text": "FENG W, FIGLIOZZI M A. Conventional vs electric commercial vehicle fleets: a case study of economic and technological factors affecting the competitiveness of electric commercial vehicles in the USA. Proc. of the 7th International Conference on City Logistics, 2012: 702-711."
+      }
+    ],
+    "reference_count": 46,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Model parameter setting",
+      "headers": [
+        "Parameter",
+        "Description",
+        "Value",
+        "Reference"
+      ],
+      "rows": [
+        [
+          "$\\beta_{1}$",
+          "Slow charging rate",
+          "$0.625 \\mathrm{~kW} \\cdot \\mathrm{~h} / \\mathrm{min}$",
+          ""
+        ],
+        [
+          "$\\beta_{2}$",
+          "Regular charging rate",
+          "$1.25 \\mathrm{~kW} \\cdot \\mathrm{~h} / \\mathrm{min}$",
+          24
+        ],
+        [
+          "$\\beta_{3}$",
+          "Fast charging rate",
+          "$5 \\mathrm{~kW} \\cdot \\mathrm{~h} / \\mathrm{min}$",
+          ""
+        ],
+        [
+          "$e$",
+          "Per-unit distance power consumption",
+          "$1 \\mathrm{~kW} \\cdot \\mathrm{~h} / \\mathrm{km}$",
+          ""
+        ],
+        [
+          "$c_{2}$",
+          "Per-unit distance distribution cost",
+          0.6,
+          ""
+        ],
+        [
+          "$v_{0}$",
+          "Vehicle speed",
+          "$50 \\mathrm{~km} / \\mathrm{h}$",
+          43
+        ],
+        [
+          "$c_{3}$",
+          "Per-unit early arrival penalty cost",
+          20,
+          ""
+        ],
+        [
+          "$c_{4}$",
+          "Per-unit delay arrival penalty cost",
+          30,
+          44
+        ],
+        [
+          "$c_{e 1}$",
+          "Per-unit service cost for slow charging",
+          0.1,
+          "NDRC"
+        ],
+        [
+          "$c_{e 2}$",
+          "Per-unit service cost for regular charging",
+          0.2,
+          0.16882014
+        ],
+        [
+          "$c_{e 3}$",
+          "Per-unit service cost for fast charging",
+          0.3,
+          ""
+        ],
+        [
+          "$c_{1}$",
+          "Per-unit fixed vehicle cost",
+          1000,
+          ""
+        ],
+        [
+          "$B$",
+          "Battery capacity of the vehicles",
+          "$150 \\mathrm{~kW} \\cdot \\mathrm{~h}$",
+          "This paper"
+        ],
+        [
+          "$Q_{1} / Q_{2}$",
+          "The ratio of compartment capacity",
+          "$1800 \\mathrm{~kg} / 600 \\mathrm{~kg}$",
+          ""
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Combinations of parameter values",
+      "headers": [
+        "Parameter",
+        "Factor level",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "$P_{-}$size",
+          50,
+          100,
+          150,
+          200
+        ],
+        [
+          "$\\eta$",
+          10,
+          20,
+          30,
+          40
+        ],
+        [
+          "$\\alpha(0)$",
+          0.1,
+          0.3,
+          0.5,
+          0.7
+        ],
+        [
+          "$b$",
+          10,
+          20,
+          30,
+          40
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Orthogonal array and RV values",
+      "headers": [
+        "Experiment <br> number",
+        "Factor",
+        "",
+        "",
+        "",
+        "RV"
+      ],
+      "rows": [
+        [
+          "",
+          "$P_{-}$size",
+          "$\\eta$",
+          "$\\alpha(0)$",
+          "$b$",
+          ""
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          3888.195
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          2,
+          3870.645
+        ],
+        [
+          3,
+          1,
+          3,
+          3,
+          3,
+          3898.374
+        ],
+        [
+          4,
+          1,
+          4,
+          4,
+          4,
+          3888.832
+        ],
+        [
+          5,
+          2,
+          1,
+          2,
+          3,
+          3886.85
+        ],
+        [
+          6,
+          2,
+          2,
+          1,
+          4,
+          3861.283
+        ],
+        [
+          7,
+          2,
+          3,
+          4,
+          1,
+          3884.69
+        ],
+        [
+          8,
+          2,
+          4,
+          3,
+          2,
+          3846.059
+        ],
+        [
+          9,
+          3,
+          1,
+          3,
+          4,
+          3900.421
+        ],
+        [
+          10,
+          3,
+          2,
+          4,
+          3,
+          3822.744
+        ],
+        [
+          11,
+          3,
+          3,
+          1,
+          2,
+          3869.779
+        ],
+        [
+          12,
+          3,
+          4,
+          2,
+          1,
+          3794.425
+        ],
+        [
+          13,
+          4,
+          1,
+          4,
+          2,
+          3895.055
+        ],
+        [
+          14,
+          4,
+          2,
+          3,
+          1,
+          3815.151
+        ],
+        [
+          15,
+          4,
+          3,
+          2,
+          4,
+          3760.516
+        ],
+        [
+          16,
+          4,
+          4,
+          1,
+          3,
+          3903.28
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 ARV and rank of each parameter",
+      "headers": [
+        "Level",
+        "$P_{-}$size",
+        "$\\eta$",
+        "$\\alpha(0)$",
+        "$b$"
+      ],
+      "rows": [
+        [
+          1,
+          3886.512,
+          3892.63,
+          3880.634,
+          "$\\mathbf{3 8 4 5 . 6 1 5}$"
+        ],
+        [
+          2,
+          3869.721,
+          "$\\mathbf{3 8 4 2 . 4 5 6}$",
+          "$\\mathbf{3 8 2 8 . 1 0 9}$",
+          3870.385
+        ],
+        [
+          3,
+          "$\\mathbf{3 8 4 6 . 8 4 2}$",
+          3853.34,
+          3865.001,
+          3877.812
+        ],
+        [
+          4,
+          3843.501,
+          3858.149,
+          3872.83,
+          3852.763
+        ],
+        [
+          "Delta",
+          43.011,
+          50.174,
+          52.525,
+          32.197
+        ],
+        [
+          "Rank",
+          3,
+          2,
+          1,
+          4
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Summary of nine DOE results",
+      "headers": [
+        "Instance",
+        "$P_{-}$size",
+        "$\\eta$",
+        "$\\alpha(0)$",
+        "$b$"
+      ],
+      "rows": [
+        [
+          25101,
+          150,
+          0.2,
+          0.3,
+          0.1
+        ],
+        [
+          25101,
+          150,
+          0.3,
+          0.3,
+          0.1
+        ],
+        [
+          25101,
+          150,
+          0.2,
+          0.3,
+          0.2
+        ],
+        [
+          50101,
+          200,
+          0.2,
+          0.5,
+          0.1
+        ],
+        [
+          50101,
+          150,
+          0.2,
+          0.5,
+          0.1
+        ],
+        [
+          50101,
+          200,
+          0.2,
+          0.5,
+          0.1
+        ],
+        [
+          100101,
+          150,
+          0.3,
+          0.7,
+          0.1
+        ],
+        [
+          100101,
+          150,
+          0.2,
+          0.7,
+          0.2
+        ],
+        [
+          100101,
+          200,
+          0.3,
+          0.7,
+          0.1
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Comparison between the EDA-LF and the GA",
+      "headers": [
+        "Instance",
+        "EDA-LF",
+        "GA",
+        "$\\Delta_{\\text {E-G }}$"
+      ],
+      "rows": [
+        [
+          25101,
+          3641.12,
+          3526.66,
+          114.46
+        ],
+        [
+          25102,
+          3452.69,
+          3366.02,
+          86.67
+        ],
+        [
+          25103,
+          3310.58,
+          3242.19,
+          68.39
+        ],
+        [
+          25101,
+          3838.06,
+          3857.14,
+          "$-19.08$"
+        ],
+        [
+          25102,
+          3597.19,
+          3485.98,
+          111.21
+        ],
+        [
+          25103,
+          3385.55,
+          3220.15,
+          165.4
+        ],
+        [
+          25101,
+          3952.84,
+          3854.62,
+          98.22
+        ],
+        [
+          25102,
+          3785.5,
+          3639.48,
+          146.02
+        ],
+        [
+          25103,
+          3707.64,
+          3614.13,
+          93.51
+        ],
+        [
+          50101,
+          6953.58,
+          7137.88,
+          "$-184.30$"
+        ],
+        [
+          50102,
+          6164.64,
+          6311.49,
+          "$-146.85$"
+        ],
+        [
+          50103,
+          5967.82,
+          5871.14,
+          96.68
+        ],
+        [
+          50101,
+          8781.23,
+          9123.15,
+          "$-341.92$"
+        ],
+        [
+          50102,
+          7924.2,
+          8243.74,
+          "$-319.54$"
+        ],
+        [
+          50103,
+          7426.37,
+          7593.56,
+          "$-167.19$"
+        ],
+        [
+          50101,
+          8825.67,
+          8981.91,
+          "$-156.24$"
+        ],
+        [
+          50102,
+          8502.28,
+          8637.63,
+          "$-135.35$"
+        ],
+        [
+          50103,
+          8066.88,
+          8269.33,
+          "$-202.45$"
+        ],
+        [
+          100101,
+          19334.72,
+          19794.61,
+          "$-459.89$"
+        ],
+        [
+          100102,
+          17026.35,
+          17748.72,
+          "$-722.37$"
+        ],
+        [
+          100103,
+          15329.84,
+          15822.68,
+          "$-492.84$"
+        ],
+        [
+          100101,
+          18446.71,
+          18940.55,
+          "$-493.84$"
+        ],
+        [
+          100102,
+          17223.95,
+          17670.46,
+          "$-446.51$"
+        ],
+        [
+          100103,
+          16176.47,
+          16639.92,
+          "$-463.45$"
+        ],
+        [
+          100101,
+          20320.62,
+          21047.13,
+          "$-726.51$"
+        ],
+        [
+          100102,
+          19771.89,
+          20241.48,
+          "$-469.59$"
+        ],
+        [
+          100103,
+          18596.53,
+          19310.2,
+          "$-713.67$"
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Comparison of EDA-LF solutions for MCEVRP and MCFVRP",
+      "headers": [
+        "Instance",
+        "MCEVRP",
+        "MCFVRP",
+        "RPD/\\%"
+      ],
+      "rows": [
+        [
+          25101,
+          3712.534,
+          4079.279,
+          "$-8.99$"
+        ],
+        [
+          25102,
+          3483.933,
+          3786.238,
+          "$-7.98$"
+        ],
+        [
+          25103,
+          3368.16,
+          3627.447,
+          "$-7.15$"
+        ],
+        [
+          25101,
+          3934.316,
+          4147.696,
+          "$-5.14$"
+        ],
+        [
+          25102,
+          3645.238,
+          3784.554,
+          "$-3.68$"
+        ],
+        [
+          25103,
+          3506.247,
+          3578.674,
+          "$-2.02$"
+        ],
+        [
+          25101,
+          4075.413,
+          4415.153,
+          "$-7.69$"
+        ],
+        [
+          25102,
+          3879.339,
+          4309.977,
+          "$-9.99$"
+        ],
+        [
+          25103,
+          3801.743,
+          3994.45,
+          "$-4.82$"
+        ],
+        [
+          50101,
+          6982.788,
+          7931.015,
+          "$-11.9$"
+        ],
+        [
+          50102,
+          6285.829,
+          7225.835,
+          "$-13.0$"
+        ],
+        [
+          50103,
+          6049.459,
+          6838.175,
+          "$-11.5$"
+        ],
+        [
+          50101,
+          8887.14,
+          9030.583,
+          "$-1.59$"
+        ],
+        [
+          50102,
+          8085.606,
+          8273.162,
+          "$-2.27$"
+        ],
+        [
+          50103,
+          7612.346,
+          7786.252,
+          "$-2.23$"
+        ],
+        [
+          50101,
+          9101.333,
+          9658.091,
+          "$-5.76$"
+        ],
+        [
+          50102,
+          8695.609,
+          9190.063,
+          "$-5.38$"
+        ],
+        [
+          50103,
+          8271.0,
+          8873.101,
+          "$-6.79$"
+        ],
+        [
+          100101,
+          18728.26,
+          20856.47,
+          "$-10.2$"
+        ],
+        [
+          100102,
+          16343.28,
+          18395.62,
+          "$-11.1$"
+        ],
+        [
+          100103,
+          14874.99,
+          16986.01,
+          "$-12.4$"
+        ],
+        [
+          100101,
+          17862.33,
+          18808.19,
+          "$-5.03$"
+        ],
+        [
+          100102,
+          16879.04,
+          17473.99,
+          "$-3.40$"
+        ],
+        [
+          100103,
+          15676.09,
+          16119.14,
+          "$-2.75$"
+        ],
+        [
+          100101,
+          19755.47,
+          21048.47,
+          "$-6.14$"
+        ],
+        [
+          100102,
+          19195.64,
+          19948.48,
+          "$-3.77$"
+        ],
+        [
+          100103,
+          17755.99,
+          18616.22,
+          "$-4.62$"
+        ],
+        [
+          "Average",
+          "-",
+          "-",
+          "$-6.57$"
+        ]
+      ],
+      "row_count": 28,
+      "column_count": 4
+    }
+  ]
+}

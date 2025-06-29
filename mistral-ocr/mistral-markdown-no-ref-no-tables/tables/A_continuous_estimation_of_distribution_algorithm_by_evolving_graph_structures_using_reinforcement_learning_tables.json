@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/A continuous estimation of distribution algorithm by evolving graph structures using reinforcement learning.md",
+    "filename": "A continuous estimation of distribution algorithm by evolving graph structures using reinforcement learning.md",
+    "title": "A continuous estimation of distribution algorithm by evolving graph structures using reinforcement learning",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "NODE FUNCTIONS USED I $\\odot$ KHEPERABOPT.",
+      "headers": [
+        "Node",
+        "$S F$",
+        "Function",
+        "",
+        "Domain"
+      ],
+      "rows": [
+        [
+          "$I_{1}, I_{2}, \\ldots I_{8}$",
+          "$1,2, \\ldots 8$",
+          "Judge the value of the sensor of $1,2, \\ldots, 8$",
+          "$[0,1023]$",
+          ""
+        ],
+        [
+          "$P_{1}, P_{2}$",
+          12,
+          "Determine the speed of the right/left wheel",
+          "$[-10,10]$",
+          ""
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "SIMULATION CONDITIONS.",
+      "headers": [
+        "",
+        "GNP",
+        "PMBGNP",
+        "PBILc",
+        "PMBGNP-AC"
+      ],
+      "rows": [
+        [
+          "Population size $M$",
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        [
+          "- elite ind.",
+          100,
+          100,
+          100,
+          100
+        ],
+        [
+          "- crossover ind.",
+          400,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "- mutation ind.",
+          500,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "- promising ind. $N$",
+          "-",
+          500,
+          500,
+          500
+        ],
+        [
+          "Program size $\\left[N_{\\text {PMBG }}\\right]$",
+          60,
+          60,
+          60,
+          60
+        ],
+        [
+          "Crossover rate",
+          0.1,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mutation rate",
+          0.01,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Other parameters",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "III",
+      "table_title": "The fitness results $\\bullet$ VER 30 INDEPENDENT RUNS.",
+      "headers": [
+        "",
+        "",
+        "Fitness (1-4)",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$S_{\\max }$",
+          100,
+          200,
+          300,
+          400,
+          500,
+          600
+        ],
+        [
+          "GNP",
+          0.99,
+          0.932,
+          0.811,
+          0.91,
+          0.764,
+          0.892
+        ],
+        [
+          "PMBGNP",
+          0.979,
+          0.822,
+          0.767,
+          0.902,
+          0.513,
+          0.891
+        ],
+        [
+          "PBILc",
+          0.901,
+          0.869,
+          0.771,
+          0.892,
+          0.581,
+          0.892
+        ],
+        [
+          "Sarsa",
+          0.963,
+          0.82,
+          0.701,
+          0.922,
+          0.687,
+          0.892
+        ],
+        [
+          "PMBGNP-AC",
+          0.901,
+          0.816,
+          0.897,
+          0.832,
+          0.86,
+          0.898
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "IV",
+      "table_title": "THE T-TEST RESULTS $\\odot$ PMBGNP-AC AND THE ■TIIER METHODS (THE B $\\odot$ L D $\\odot$ NES DEN $\\odot$ T E STATISTICALLY SIGNIFICANT DIFFERENCE).",
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$\\mathrm{N}_{\\text {total }}$",
+          "$\\mathbf{1 1 0}$",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$"
+        ],
+        [
+          "PMBGNP-AC <br> vs. GNP",
+          "$2.273 \\times 10^{-5}$",
+          "$2.630 \\times 10^{-3}$",
+          "$1.451 \\times 10^{-2}$",
+          "$1.417 \\times 10^{-2}$",
+          "$1.218 \\times 10^{-2}$"
+        ],
+        [
+          "PMBGNP-AC <br> vs. PMBGNP",
+          "$8.665 \\times 10^{-5}$",
+          "$3.609 \\times 10^{-3}$",
+          "$4.342 \\times 10^{-1}$",
+          "$2.126 \\times 10^{-1}$",
+          "$2.523 \\times 10^{-2}$"
+        ],
+        [
+          "PMBGNP-AC <br> vs. PBILc",
+          "$4.503 \\times 10^{-1}$",
+          "$1.895 \\times 10^{-1}$",
+          "$9.181 \\times 10^{-1}$",
+          "$1.534 \\times 10^{-1}$",
+          "$1.225 \\times 10^{-2}$"
+        ],
+        [
+          "PMBGNP-AC <br> vs. Sarna",
+          "$1.711 \\times 10^{-6}$",
+          "$3.560 \\times 10^{-3}$",
+          "$1.930 \\times 10^{-5}$",
+          "$3.580 \\times 10^{-5}$",
+          "$2.460 \\times 10^{-5}$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    }
+  ]
+}

@@ -1,0 +1,963 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/A Self-adaptive Mixed Distribution Based Uni-variate Estimation of Distribution Algorithm for Large Scale Global Optimization.md",
+    "filename": "A Self-adaptive Mixed Distribution Based Uni-variate Estimation of Distribution Algorithm for Large Scale Global Optimization.md",
+    "title": "A Self-adaptive Mixed Distribution Based Uni-variate Estimation of Distribution Algorithm for Large Scale Global Optimization",
+    "year": "2009"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Classical benchmark problems to be minimized",
+      "headers": [
+        "Num",
+        "Problems",
+        "Bounds",
+        "Objective function",
+        "Global location",
+        "GO"
+      ],
+      "rows": [
+        [
+          1,
+          "Sphere",
+          "$[-100,100]$",
+          "$f_{1}(x)=\\sum_{i=1}^{n} x_{i}^{2}$",
+          "$x_{i}=0$",
+          0
+        ],
+        [
+          3,
+          "",
+          "$[-100,100]$",
+          "$f_{3}(x)=\\sum_{i=1}^{n}\\left(\\sum_{j=1}^{i} x_{j}^{2}\\right)$",
+          "$x_{i}=0$",
+          0
+        ],
+        [
+          5,
+          "Rochenbrock",
+          "$[-100,100]$",
+          "$f_{5}(y)=\\sum_{i=1}^{D}\\left(100\\left(x_{i}^{2}-x_{i+1}\\right)^{2}+\\left(x_{i}-1\\right)^{2}\\right)$",
+          "$x_{i}=1$",
+          0
+        ],
+        [
+          7,
+          "Noise",
+          "$[-1.28,1.28]$",
+          "$f_{7}(x)=\\sum_{i=1}^{n} \\alpha_{i}^{4}+$ random $[0,1)$",
+          "$x_{i}=0$",
+          0
+        ],
+        [
+          8,
+          "Rastrigin",
+          "$[-5.12,5.12]$",
+          "$f_{8}(x)=\\sum_{i=1}^{n}\\left(x_{i}^{2}\\right)-10 \\cos \\left(2 \\pi x_{i}\\right)+10$",
+          "$x_{i}=0$",
+          0
+        ],
+        [
+          9,
+          "Ackley",
+          "$[-32,32]$",
+          "$\\begin{aligned} & f_{9}(x)=-20 \\cdot \\exp \\left(-0.2 \\sqrt{\\frac{1}{2} \\sum_{i=1}^{n} x_{i}^{2}}\\right) \\\\ & \\quad+e-\\exp \\left(\\frac{1}{2} \\sum_{i=1}^{n} \\cos \\left(2 \\pi x_{i}\\right)\\right)+20 \\end{aligned}$",
+          "$x_{i}=0$",
+          0
+        ],
+        [
+          10,
+          "Griewangk",
+          "$[-600,600]$",
+          "$f_{10}(x)=\\frac{1}{2000} \\sum_{i=1}^{n} x_{i}^{2}+1-\\prod_{i=1}^{n} \\cos \\left(\\frac{\\alpha}{x_{i}^{2}}\\right)$",
+          "$x_{i}=0$",
+          0
+        ],
+        [
+          11,
+          "Penalized",
+          "$[-50,50]$",
+          "see appendix",
+          "$x_{i}=1$",
+          0
+        ],
+        [
+          12,
+          "Penalized",
+          "$[-50,50]$",
+          "see appendix",
+          "$x_{i}=1$",
+          0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Experimental results for classical function optimization",
+      "headers": [
+        "function",
+        "MUEDA",
+        "UMDAc",
+        "FES",
+        "FEP",
+        "CEP"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\mathbf{2 . 8 E - 1 6 0} \\pm \\mathbf{1 . 5 E - 1 5 9}$",
+          "$2.0 \\mathrm{E}-03 \\pm 4.9 \\mathrm{E}-03$",
+          "$2.5 \\mathrm{E}-04 \\pm 6.8 \\mathrm{E}-05$",
+          "$5.7 \\mathrm{E}-04 \\pm 1.3 \\mathrm{E}-04$",
+          "$2.2 \\mathrm{E}-04 \\pm 5.9 \\mathrm{E}-04$"
+        ],
+        [
+          2,
+          "$\\mathbf{1 . 3 E - 1 2 4} \\pm \\mathbf{3 . 0 E - 1 2 4}$",
+          "$2.2 \\mathrm{E}-01 \\pm 8.9 \\mathrm{E}-01$",
+          "$6.0 \\mathrm{E}-02 \\pm 9.6 \\mathrm{E}-03$",
+          "$8.1 \\mathrm{E}-03 \\pm 7.7 \\mathrm{E}-04$",
+          "$2.6 \\mathrm{E}-03 \\pm 1.7 \\mathrm{E}-04$"
+        ],
+        [
+          3,
+          "$\\mathbf{0 . 0 E + 0 0} \\pm \\mathbf{0 . 0 E + 0 0}$",
+          "$1.3 \\mathrm{E}+01 \\pm 4.6 \\mathrm{E}+01$",
+          "$1.4 \\mathrm{E}-03 \\pm 5.3 \\mathrm{E}-04$",
+          "$1.6 \\mathrm{E}-02 \\pm 1.4 \\mathrm{E}-02$",
+          "$5.0 \\mathrm{E}-02 \\pm 6.6 \\mathrm{E}-02$"
+        ],
+        [
+          4,
+          "$\\mathbf{4 . 2 E - 7 2} \\pm \\mathbf{2 . 9 E - 7 1}$",
+          "$1.3 \\mathrm{E}-03 \\pm 3.8 \\mathrm{E}-03$",
+          "$5.5 \\mathrm{E}-03 \\pm 6.5 \\mathrm{E}-04$",
+          "$3.0 \\mathrm{E}-01 \\pm 5.0 \\mathrm{E}-01$",
+          "$2.0 \\mathrm{E}+00 \\pm 1.2 \\mathrm{E}+00$"
+        ],
+        [
+          5,
+          "$\\mathbf{9 . 0 E - 0 5} \\pm \\mathbf{2 . 2 E - 0 4}$",
+          "$1.7 \\mathrm{E}+01 \\pm 5.5 \\mathrm{E}+00$",
+          "$3.3 \\mathrm{E}+01 \\pm 4.3 \\mathrm{E}+01$",
+          "$5.1 \\mathrm{E}+00 \\pm 5.9 \\mathrm{E}+00$",
+          "$6.2 \\mathrm{E}+00 \\pm 1.4 \\mathrm{E}+01$"
+        ],
+        [
+          6,
+          "$\\mathbf{0 . 0 E + 0 0} \\pm \\mathbf{0 . 0 E + 0 0}$",
+          "$0.0 \\mathrm{E}+00 \\pm 0.0 \\mathrm{E}+00$",
+          "$0.0 \\mathrm{E}+00 \\pm 0.0 \\mathrm{E}+00$",
+          "$0.0 \\mathrm{E}+00 \\pm 0.0 \\mathrm{E}+00$",
+          "$5.8 \\mathrm{E}+02 \\pm 1.1 \\mathrm{E}+03$"
+        ],
+        [
+          7,
+          "$\\mathbf{3 . 0 E - 0 3} \\pm \\mathbf{5 . 8 E - 0 3}$",
+          "$1.1 \\mathrm{E}-02 \\pm 1.8 \\mathrm{E}-03$",
+          "$1.2 \\mathrm{E}-02 \\pm 5.8 \\mathrm{E}-03$",
+          "$7.6 \\mathrm{E}-03 \\pm 2.6 \\mathrm{E}-03$",
+          "$1.8 \\mathrm{E}-03 \\pm 6.4 \\mathrm{E}-03$"
+        ],
+        [
+          8,
+          "$2.1 \\mathrm{E}+01 \\pm 4.7 \\mathrm{E}+00$",
+          "$1.9 \\mathrm{E}+00 \\pm 8.7 \\mathrm{E}-03$",
+          "$1.6 \\mathrm{E}-01 \\pm 3.3 \\mathrm{E}-01$",
+          "$\\mathbf{4 . 6 E - 0 2} \\pm \\mathbf{1 . 2 E - 0 2}$",
+          "$8.9 \\mathrm{E}+01 \\pm 2.3 \\mathrm{E}+01$"
+        ],
+        [
+          9,
+          "$\\mathbf{4 . 4 E - 1 5} \\pm \\mathbf{0 . 0 E + 0 0}$",
+          "$1.9 \\mathrm{E}-04 \\pm 9.6 \\mathrm{E}-03$",
+          "$1.2 \\mathrm{E}-02 \\pm 1.8 \\mathrm{E}-03$",
+          "$1.8 \\mathrm{E}-02 \\pm 2.1 \\mathrm{E}-03$",
+          "$9.2 \\mathrm{E}+00 \\pm 2.8 \\mathrm{E}+00$"
+        ],
+        [
+          10,
+          "$\\mathbf{0 . 0 E + 0 0} \\pm \\mathbf{0 . 0 E + 0 0}$",
+          "$4.7 \\mathrm{E}-03 \\pm 5.9 \\mathrm{E}-03$",
+          "$3.7 \\mathrm{E}-02 \\pm 5.0 \\mathrm{E}-02$",
+          "$1.6 \\mathrm{E}-02 \\pm 2.2 \\mathrm{E}-02$",
+          "$8.6 \\mathrm{E}-02 \\pm 1.2 \\mathrm{E}-01$"
+        ],
+        [
+          11,
+          "$\\mathbf{1 . 6 E - 3 2} \\pm \\mathbf{0 . 0 E + 0 0}$",
+          "$1.9 \\mathrm{E}-06 \\pm 3.2 \\mathrm{E}-06$",
+          "$2.8 \\mathrm{E}-06 \\pm 8.1 \\mathrm{E}-07$",
+          "$9.2 \\mathrm{E}-06 \\pm 3.6 \\mathrm{E}-06$",
+          "$1.8 \\mathrm{E}+00 \\pm 2.4 \\mathrm{E}+00$"
+        ],
+        [
+          12,
+          "$\\mathbf{1 . 3 E - 3 2} \\pm \\mathbf{0 . 0 E + 0 0}$",
+          "$4.0 \\mathrm{E}-05 \\pm 7.0 \\mathrm{E}-05$",
+          "$4.7 \\mathrm{E}-05 \\pm 1.5 \\mathrm{E}-05$",
+          "$1.6 \\mathrm{E}-04 \\pm 7.3 \\mathrm{E}-05$",
+          "$1.4 \\mathrm{E}+00 \\pm 3.7 \\mathrm{E}+00$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Standard benchmark problems of CEC08 to be minimized",
+      "headers": [
+        "Num",
+        "Problems",
+        "Bounds",
+        "Objective function",
+        "GO location",
+        "GO"
+      ],
+      "rows": [
+        [
+          1,
+          "Sphere",
+          "$[-100,100]$",
+          "$f_{1}\\left(y\\right)=\\sum_{i=1}^{D} y_{i}^{2}+f_{\\text {bias } 1}$",
+          "$y_{i}=0$",
+          "$f_{\\text {bias } 1}=-450$"
+        ],
+        [
+          3,
+          "Rochenbrock",
+          "$[-100,100]$",
+          "$f_{3}\\left(y\\right)=\\sum_{i=1}^{D}\\left(100\\left(y_{i}^{2}-y_{i+1}\\right)^{2}+\\left(y_{i}-1\\right)^{2}\\right)+f_{\\text {bias } 3}$",
+          "$y_{i}=1$",
+          "$f_{\\text {bias } 3}=390$"
+        ],
+        [
+          4,
+          "Rastrigin",
+          "$[-5,5]$",
+          "$f_{4}\\left(y\\right)=\\sum_{i=1}^{n}\\left(y_{i}^{2}\\right)-10 \\cos \\left(2 \\pi y_{i}\\right)+10+f_{\\text {bias } 4}$",
+          "$y_{i}=0$",
+          "$f_{\\text {bias } 4}=-330$"
+        ],
+        [
+          5,
+          "Griewangk",
+          "$[-600,600]$",
+          "$f_{5}\\left(y\\right)=\\frac{1}{2000} \\sum_{i=1}^{D} y_{i}^{2}+1-\\prod_{i=1}^{D} \\cos \\left(\\frac{y_{i}}{2}\\right)+f_{\\text {bias } 5}$",
+          "$y_{i}=0$",
+          "$f_{\\text {bias } 5}=-180$"
+        ],
+        [
+          6,
+          "Ackley",
+          "$[-32,32]$",
+          "$f_{6}(x)=-20 \\cdot \\exp \\left(-0.2 \\sqrt{\\frac{1}{D} \\sum_{i=1}^{D} y_{i}^{2}}\\right)$",
+          "$y_{i}=0$",
+          "$f_{\\text {bias } 6}=-140$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "$+\\epsilon-\\exp \\left(\\frac{1}{D} \\sum_{i=1}^{D} \\cos \\left(2 \\pi y_{i}\\right)\\right)+20+f_{\\text {bias } 6}$",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Experimental results for $100 D$ cec08 function optimization",
+      "headers": [
+        "Algorithm",
+        "Metric",
+        "funcec1",
+        "funcec2",
+        "funcec3",
+        "funcec4",
+        "funcec5",
+        "funcec6"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          "mean",
+          "$3.81 \\mathrm{E}+02$",
+          "$2.18 \\mathrm{E}+01$",
+          "$2.96 \\mathrm{E}+05$",
+          "$\\mathbf{2 . 2 0 E + 0 1}$",
+          "$3.24 \\mathrm{E}+00$",
+          "$3.80 \\mathrm{E}+00$"
+        ],
+        [
+          "$\\eta=0$",
+          "std",
+          "$2.26 \\mathrm{E}+02$",
+          "$3.08 \\mathrm{E}+00$",
+          "$3.33 \\mathrm{E}+05$",
+          "$\\mathbf{4 . 3 4 E + 0 0}$",
+          "$1.67 \\mathrm{E}+00$",
+          "$1.14 \\mathrm{E}+00$"
+        ],
+        [
+          "Mixed",
+          "mean",
+          "$7.85 \\mathrm{E}-01$",
+          "$1.72 \\mathrm{E}+01$",
+          "$1.28 \\mathrm{E}+07$",
+          "$8.03 \\mathrm{E}+02$",
+          "$1.00 \\mathrm{E}+00$",
+          "$3.52 \\mathrm{E}+00$"
+        ],
+        [
+          "$\\eta=0.1$",
+          "std",
+          "$5.53 \\mathrm{E}-01$",
+          "$1.43 \\mathrm{E}+00$",
+          "$2.01 \\mathrm{E}+06$",
+          "$1.89 \\mathrm{E}+01$",
+          "$6.04 \\mathrm{E}-02$",
+          "$2.14 \\mathrm{E}-01$"
+        ],
+        [
+          "Cauchy",
+          "mean",
+          "$3.68 \\mathrm{E}+05$",
+          "$1.52 \\mathrm{E}+02$",
+          "$3.05 \\mathrm{E}+11$",
+          "$1.91 \\mathrm{E}+03$",
+          "$3.28 \\mathrm{E}+03$",
+          "$2.13 \\mathrm{E}+01$"
+        ],
+        [
+          "$\\eta=1$",
+          "std",
+          "$2.13 \\mathrm{E}+04$",
+          "$2.79 \\mathrm{E}+00$",
+          "$3.75 \\mathrm{E}+10$",
+          "$4.24 \\mathrm{E}+01$",
+          "$1.70 \\mathrm{E}+02$",
+          "$3.49 \\mathrm{E}-02$"
+        ],
+        [
+          "MUEDA",
+          "mean",
+          "$\\mathbf{6 . 8 2 E - 1 4}$",
+          "$\\mathbf{2 . 2 1 E - 1 3}$",
+          "$\\mathbf{2 . 8 9 E + 0 3}$",
+          "$1.04 \\mathrm{E}+02$",
+          "$\\mathbf{1 . 2 8 E - 0 3}$",
+          "$\\mathbf{6 . 5 7 E - 1 2}$"
+        ],
+        [
+          "adaptive $\\eta$",
+          "std",
+          "$\\mathbf{2 . 3 2 E - 1 4}$",
+          "$\\mathbf{2 . 5 0 E - 1 4}$",
+          "$\\mathbf{3 . 6 9 E + 0 3}$",
+          "$2.49 \\mathrm{E}+01$",
+          "$\\mathbf{3 . 6 3 E - 0 3}$",
+          "$\\mathbf{2 . 1 4 E - 1 1}$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 8
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Experimental results for 1000 D cec08 function optimization",
+      "headers": [
+        "Algorithm",
+        "Metric",
+        "funcec1",
+        "funcec2",
+        "funcec3",
+        "funcec4",
+        "funcec5",
+        "funcec6"
+      ],
+      "rows": [
+        [
+          "MLCC",
+          "mean",
+          "6.15E-01",
+          1.0902,
+          7.9103,
+          "1.37E-10",
+          "2.98E-02",
+          "2.02E-01"
+        ],
+        [
+          "",
+          "std",
+          "6.58E-01",
+          4.75,
+          1.1203,
+          "3.37E-10",
+          "2.26E-02",
+          "3.14E-01"
+        ],
+        [
+          "EPUS-PSO",
+          "mean",
+          3.4605,
+          4.6601,
+          "$3.77 \\mathrm{E}+10$",
+          7.5803,
+          3.0903,
+          2.1001
+        ],
+        [
+          "",
+          "std",
+          1.4804,
+          "4.00E-01",
+          3.3009,
+          1.5102,
+          1.3002,
+          "1.62E-02"
+        ],
+        [
+          "jDEdynNP-F",
+          "mean",
+          2.9205,
+          1.9501,
+          7.101,
+          "2.17E-04",
+          2.5303,
+          1.8101
+        ],
+        [
+          "",
+          "std",
+          1.2204,
+          2.25,
+          5.9909,
+          "4.06E-04",
+          1.6602,
+          "1.81E-01"
+        ],
+        [
+          "UEP",
+          "mean",
+          7.7804,
+          1.0502,
+          4.4309,
+          1.0304,
+          7.9302,
+          1.9901
+        ],
+        [
+          "",
+          "std",
+          4.5403,
+          7.07,
+          4.5408,
+          9.9402,
+          5.2901,
+          "1.19E-02"
+        ],
+        [
+          "DEwSAcc",
+          "mean",
+          5.6805,
+          1.2602,
+          2.1611,
+          9.4603,
+          5.1903,
+          2.0001
+        ],
+        [
+          "",
+          "std",
+          1.0605,
+          4.48,
+          2.1611,
+          7.1501,
+          6.3302,
+          "3.33E-01"
+        ],
+        [
+          "DMS-PSO",
+          "mean",
+          0.0,
+          9.1501,
+          2.9411,
+          3.8403,
+          0.0,
+          1.9201
+        ],
+        [
+          "",
+          "std",
+          0.0,
+          "7.14E-01",
+          1.6911,
+          1.7102,
+          0.0,
+          "4.06E-02"
+        ],
+        [
+          "MUEDA",
+          "mean",
+          "3.30E-13 II",
+          "9.45E-05",
+          1.9903,
+          5.0003,
+          "1.71E-13 II",
+          "5.92E-08"
+        ],
+        [
+          "",
+          "std",
+          "2.54E-14 II",
+          "9.66E-06",
+          2.3502,
+          1.2602,
+          "2.01E-14 II",
+          "8.10E-08"
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 8
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 The $t$-test results of comparing MUEDA with the other algorithms",
+      "headers": [
+        "",
+        "funcec1",
+        "funcec2",
+        "funcec3",
+        "funcec4",
+        "funcec5",
+        "funcec6"
+      ],
+      "rows": [
+        [
+          "MUEDA vs MLCC",
+          "$s+$",
+          "$s+$",
+          "$s+$",
+          "$s-$",
+          "$s+$",
+          "$s+$"
+        ],
+        [
+          "MUEDA vs EPUS-PSO",
+          "$s+$",
+          "$s+$",
+          "$s+$",
+          "+",
+          "$s+$",
+          "$s+$"
+        ],
+        [
+          "MUEDA vs jDEdynNP-F",
+          "$s+$",
+          "$s+$",
+          "$s+$",
+          "$s-$",
+          "$s+$",
+          "$s+$"
+        ],
+        [
+          "MUEDA vs UEP",
+          "$s+$",
+          "$s+$",
+          "$s+$",
+          "$s+$",
+          "$s+$",
+          "$s+$"
+        ],
+        [
+          "MUEDA vs DEwSAcc",
+          "$s+$",
+          "$s+$",
+          "$s+$",
+          "+",
+          "$s+$",
+          "$s+$"
+        ],
+        [
+          "MUEDA vs DMS-PSO",
+          "$s-$",
+          "$s+$",
+          "$s+$",
+          "-",
+          "$s-$",
+          "$s+$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Experimental results for $1500 D$ cec08 function optimization",
+      "headers": [
+        "Algorithm",
+        "Metric",
+        "funcec1",
+        "funcec2",
+        "funcec3",
+        "funcec4",
+        "funcec5",
+        "funcec6"
+      ],
+      "rows": [
+        [
+          "MUEDA",
+          "mean",
+          "$1.83 \\mathrm{E}-09$",
+          "$8.72 \\mathrm{E}-05$",
+          "$5.83 \\mathrm{E}+03$",
+          "$4.76 \\mathrm{E}+03$",
+          "$1.71 \\mathrm{E}-13$",
+          "$2.74 \\mathrm{E}-05$"
+        ],
+        [
+          "",
+          "std",
+          "$2.51 \\mathrm{E}-09$",
+          "$2.37 \\mathrm{E}-05$",
+          "$2.66 \\mathrm{E}+03$",
+          "$1.41 \\mathrm{E}+02$",
+          "$2.01 \\mathrm{E}-14$",
+          "$2.01 \\mathrm{E}-05$"
+        ],
+        [
+          "DECC-II",
+          "mean",
+          "$2.24 \\mathrm{E}+04$",
+          "$5.13 \\mathrm{E}+01$",
+          "$1.44 \\mathrm{E}+09$",
+          "$6.73 \\mathrm{E}+03$",
+          "$7.46 \\mathrm{E}+01$",
+          "$9.02 \\mathrm{E}+00$"
+        ],
+        [
+          "",
+          "std",
+          "$2.66 \\mathrm{E}+03$",
+          "$3.01 \\mathrm{E}+00$",
+          "$4.46 \\mathrm{E}+08$",
+          "$8.60 \\mathrm{E}+01$",
+          "$5.15 \\mathrm{E}+00$",
+          "$3.80 \\mathrm{E}-01$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 Efficiency test on Ackley function",
+      "headers": [
+        "Dimesionality",
+        "MUEDA",
+        "$166 D+23000$",
+        "$28 D \\ln (D)$",
+        "DE",
+        "PSO"
+      ],
+      "rows": [
+        [
+          100,
+          40625,
+          39600,
+          128945,
+          218802,
+          282723
+        ],
+        [
+          200,
+          65076,
+          56200,
+          148353,
+          "fail",
+          532617
+        ],
+        [
+          300,
+          86008,
+          72800,
+          159706,
+          "fail",
+          761572
+        ],
+        [
+          400,
+          100458,
+          89400,
+          167761,
+          "fail",
+          "fail"
+        ],
+        [
+          500,
+          113592,
+          106000,
+          174009,
+          "fail",
+          "fail"
+        ],
+        [
+          600,
+          129110,
+          122600,
+          179114,
+          "fail",
+          "fail"
+        ],
+        [
+          700,
+          141982,
+          139200,
+          183430,
+          "fail",
+          "fail"
+        ],
+        [
+          800,
+          159629,
+          155800,
+          187169,
+          "fail",
+          "fail"
+        ],
+        [
+          900,
+          174234,
+          172400,
+          190467,
+          "fail",
+          "fail"
+        ],
+        [
+          1000,
+          189410,
+          189000,
+          193417,
+          "fail",
+          "fail"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 6
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 Efficiency test on Giewangk function",
+      "headers": [
+        "Dimesionality",
+        "MUEDA",
+        "$156 D+24000$",
+        "$26 D \\ln (D)$",
+        "DE",
+        "PSO"
+      ],
+      "rows": [
+        [
+          100,
+          40170,
+          39600,
+          119734,
+          179030,
+          249316
+        ],
+        [
+          200,
+          67432,
+          55200,
+          137756,
+          "fail",
+          472276
+        ],
+        [
+          300,
+          92017,
+          70800,
+          148298,
+          "fail",
+          "fail"
+        ],
+        [
+          400,
+          105875,
+          86400,
+          155778,
+          "fail",
+          "fail"
+        ],
+        [
+          500,
+          119864,
+          102000,
+          161580,
+          "fail",
+          "fail"
+        ],
+        [
+          600,
+          133825,
+          117600,
+          166320,
+          "fail",
+          "fail"
+        ],
+        [
+          700,
+          142888,
+          133200,
+          170328,
+          "fail",
+          "fail"
+        ],
+        [
+          800,
+          153660,
+          148800,
+          173800,
+          "fail",
+          "fail"
+        ],
+        [
+          900,
+          166801,
+          164400,
+          176862,
+          "fail",
+          "fail"
+        ],
+        [
+          1000,
+          180451,
+          180000,
+          179602,
+          "fail",
+          "fail"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 6
+    },
+    {
+      "table_number": "10",
+      "table_title": "Table 10 Abbreviations used in this chapter",
+      "headers": [
+        "abbreviation",
+        "full name"
+      ],
+      "rows": [
+        [
+          "EDA",
+          "estimation of distribution algorithm"
+        ],
+        [
+          "LSGO",
+          "large scale global optimization"
+        ],
+        [
+          "MUEDA",
+          "mixed distribution based uni-variate EDA"
+        ],
+        [
+          "EA",
+          "evolutionary algorithm"
+        ],
+        [
+          "DE",
+          "differential evolution"
+        ],
+        [
+          "PSO",
+          "particle swarm optimization"
+        ],
+        [
+          "FEP",
+          "fast evolutionary programming"
+        ],
+        [
+          "FES",
+          "fast evolution strategy"
+        ],
+        [
+          "FSA",
+          "fast simulated annealing"
+        ],
+        [
+          "LEP",
+          "Lévy mutation"
+        ],
+        [
+          "LSEDA-gl",
+          "EDA with mixed Gaussian and Cauchy distribution for LSGO"
+        ],
+        [
+          "FLP",
+          "fitness landscape portrait"
+        ],
+        [
+          "GA",
+          "genetic algorithm"
+        ],
+        [
+          "PBIL",
+          "population-based incremental learning algorithm"
+        ],
+        [
+          "SHCLVND",
+          "Stochastic hill climbing by vectors of normal distributions"
+        ],
+        [
+          "UMDAc",
+          "uni-variate marginal distribution algorithm"
+        ],
+        [
+          "MIMIC",
+          "mutual information maximizing input clustering"
+        ],
+        [
+          "EGNAee",
+          "estimation of Gaussian networks algorithm by edge exclusion"
+        ],
+        [
+          "CEGDA",
+          "clustering and estimation of Gaussian distribution algorithm"
+        ],
+        [
+          "IDEA",
+          "iterated density estimation algorithm"
+        ],
+        [
+          "EP",
+          "evolutionary programming"
+        ],
+        [
+          "CEP",
+          "classical EP"
+        ],
+        [
+          "ES",
+          "evolution strategy"
+        ],
+        [
+          "STDC",
+          "Standard Deviation Control Strategy"
+        ],
+        [
+          "MFES",
+          "maximum fitness evaluation size"
+        ]
+      ],
+      "row_count": 25,
+      "column_count": 2
+    }
+  ]
+}

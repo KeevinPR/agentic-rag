@@ -1,0 +1,766 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/A parallel refined probabilistic approach for QoS-aware service composition.md",
+    "filename": "A parallel refined probabilistic approach for QoS-aware service composition.md",
+    "title": "A parallel refined probabilistic approach for QoS-aware service composition",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "TABLE 1. Notations and Definition",
+        ""
+      ],
+      "rows": [
+        [
+          "Notations",
+          "Definitions"
+        ],
+        [
+          "SOA",
+          "Service-oriented architecture"
+        ],
+        [
+          "QoS",
+          "Quality of service"
+        ],
+        [
+          "EDA",
+          "Estimation of distribution algorithm"
+        ],
+        [
+          "RBM",
+          "Restricted boltzmann machine"
+        ],
+        [
+          "MABL",
+          "Multi-agent reinforcement learning"
+        ],
+        [
+          "MAGA",
+          "Multi-agent genetic algorithm"
+        ],
+        [
+          "CD",
+          "Contrastive divergence"
+        ],
+        [
+          "ws",
+          "Web service"
+        ],
+        [
+          "attr $r_{w s}^{i}$",
+          "The i-th attribute of service"
+        ],
+        [
+          "AS",
+          "A set of abstract services"
+        ],
+        [
+          "$a s_{i}$",
+          "The i-th abstract service"
+        ],
+        [
+          "$W S_{i}$",
+          "A set of candidate services corresponding to the abstract service $a s_{i}$"
+        ],
+        [
+          "$w s_{i j}$",
+          "The j-th concrete service in $W S_{i}$"
+        ],
+        [
+          "$g v^{i}(w s)$",
+          "The normal and value of i-th attribute"
+        ],
+        [
+          "CS",
+          "A composite service"
+        ],
+        [
+          "SAW",
+          "Simple additive weighting"
+        ],
+        [
+          "$v_{i}$",
+          "The i-th value of $v_{i}$"
+        ],
+        [
+          "$h_{i}$",
+          "The $v_{i}$ is hidden unit"
+        ],
+        [
+          "$h_{i}$",
+          "The bias of $v_{i}$"
+        ],
+        [
+          "$c_{i}$",
+          "The $\\alpha_{i}$ is of $h_{i}$"
+        ],
+        [
+          "$w_{i j}$",
+          "The weight associated with the connection $w_{i j} \\in w_{i j}$, and $h_{j}$"
+        ],
+        [
+          "$E(v, h)$",
+          "$1=$ energy function of the network"
+        ],
+        [
+          "$p(v, h)$",
+          "The probability distribution of state(ch)"
+        ],
+        [
+          "$p\\left(v_{i}=1\\right)$",
+          "The probability of $v_{i}=1$"
+        ],
+        [
+          "$p\\left(v_{i}=0\\right)$",
+          "The probability of $v_{i}=0$"
+        ],
+        [
+          "$p_{0}(v)$",
+          "The join probability of all the visible units"
+        ],
+        [
+          "$p\\left(h_{i}^{i}=1 \\mid v^{i}\\right)$",
+          "The hidden unit activation probability"
+        ],
+        [
+          "$p\\left(v_{i}^{i+1}=1 \\mid h^{i}\\right)$",
+          "The visible unit activation probability"
+        ],
+        [
+          "$x_{i}$",
+          "The i-th gene of a chromosome"
+        ]
+      ],
+      "row_count": 30,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Aggregation Functions for Different Composition Structures",
+      "headers": [
+        "Quality Attribute",
+        "Sequential Structure",
+        "Conditional Structure",
+        "Looping Structure",
+        "Parallel Structure"
+      ],
+      "rows": [
+        [
+          "Response Time",
+          "$\\sum_{i=1}^{n} q\\left(w s_{i}\\right)$",
+          "$q\\left(w s_{i}\\right)$",
+          "$k * q\\left(w s_{i}\\right)$",
+          "$w_{i} * q\\left(w s_{i}\\right)$"
+        ],
+        [
+          "Availability",
+          "$\\prod_{i=1}^{n} q\\left(w s_{i}\\right)$",
+          "$q\\left(w s_{i}\\right)$",
+          "$q\\left(w s_{i}\\right)^{k}$",
+          "$\\prod_{i=1}^{n} q\\left(w s_{i}\\right)$"
+        ],
+        [
+          "Throughput",
+          "$\\min _{i=1}^{n} q\\left(w s_{i}\\right)$",
+          "$q\\left(w s_{i}\\right)$",
+          "$k * q\\left(w s_{i}\\right)$",
+          "$\\sum_{i=1}^{n} q\\left(w s_{i}\\right)$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Parameter Settings",
+      "headers": [
+        "Parameter",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Stopping criterion",
+          "",
+          200,
+          "",
+          ""
+        ],
+        [
+          "Population size",
+          "",
+          200,
+          "",
+          ""
+        ],
+        [
+          "Number of sample for MrEDA, rEDA",
+          "",
+          2500,
+          "",
+          ""
+        ],
+        [
+          "Learning rate for MrEDA",
+          "",
+          0.1,
+          "",
+          ""
+        ],
+        [
+          "Learning rate for MARL",
+          "",
+          0.6,
+          "",
+          ""
+        ],
+        [
+          "Discount factor for MARL",
+          "",
+          0.9,
+          "",
+          ""
+        ],
+        [
+          "Crossover rate for MAGA",
+          "",
+          0.7,
+          "",
+          ""
+        ],
+        [
+          "Mutation rate for MAGA",
+          "",
+          0.3,
+          "",
+          ""
+        ],
+        [
+          "Number of agents",
+          "",
+          7,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "The Fitness or Different Composite Structures w.r.t Training Times",
+      "headers": [
+        "Training Times",
+        "The Fitness or Different Composite Structures",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "sequ. vital",
+          "traditional",
+          "looping",
+          "parallel"
+        ],
+        [
+          2,
+          "$1.39 / 5697$",
+          3794732,
+          1.195555,
+          1.1589068
+        ],
+        [
+          3,
+          "$1.403 / 557$",
+          3827525,
+          1.2067215,
+          1.1652399
+        ],
+        [
+          4,
+          1.3981402,
+          1.373382,
+          1.2141776,
+          1.1678284
+        ],
+        [
+          5,
+          614,
+          1.3805072,
+          1.2250379,
+          1.1692016
+        ],
+        [
+          6,
+          1.387399,
+          1.3851973,
+          1.2265612,
+          1.1722125
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "The Computation on Different Composite Structures w.r.t Training Times",
+      "headers": [
+        "Training Times",
+        "The Computation on Different Composite Structures",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "sequential",
+          "con. tional",
+          "looping",
+          "parallel"
+        ],
+        [
+          2,
+          2.2906521,
+          2.146279,
+          2.1436287,
+          2.0114097
+        ],
+        [
+          3,
+          2.30147281,
+          2.1690942,
+          2.2001088,
+          2.0638106
+        ],
+        [
+          4,
+          2.3275591,
+          2.16626,
+          2.2147722,
+          2.1082423
+        ],
+        [
+          5,
+          2.3862433,
+          2.209227,
+          2.2593031,
+          2.1419904
+        ],
+        [
+          6,
+          2.3908515,
+          2.192557,
+          2.2979555,
+          2.2224298
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "The Fitness of Optimal Solution with Different Number of Candidate Services w.r.t Training Times",
+      "headers": [
+        "Training Times",
+        "The Fitness of Optimal Solution with Different Number of Candidate Services",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000,
+          ""
+        ],
+        [
+          2,
+          1.9739,
+          2.0089,
+          2.0252,
+          2.036,
+          2.0379,
+          2.0438,
+          2.0379,
+          2.0455,
+          2.0504,
+          2.0573,
+          ""
+        ],
+        [
+          3,
+          1.9857,
+          2.0087,
+          2.0222,
+          2.0384,
+          2.0418,
+          2.0486,
+          2.043,
+          2.0564,
+          2.059,
+          2.051,
+          ""
+        ],
+        [
+          4,
+          1.9923,
+          2.0112,
+          2.0348,
+          2.0469,
+          2.0553,
+          2.0617,
+          2.0551,
+          2.0628,
+          2.0614,
+          2.0627,
+          ""
+        ],
+        [
+          5,
+          1.9897,
+          2.02,
+          2.0422,
+          2.0532,
+          2.0573,
+          2.0626,
+          2.0511,
+          2.0675,
+          2.0633,
+          2.064,
+          ""
+        ],
+        [
+          6,
+          1.9984,
+          2.0355,
+          2.0425,
+          2.0587,
+          2.0642,
+          2.0606,
+          2.0653,
+          2.067,
+          2.0668,
+          2.0632,
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 12
+    },
+    {
+      "table_number": "7",
+      "table_title": "The Fitness of Optimal Solution with Different Number of Abstract Services w.r.t Training Times",
+      "headers": [
+        "Training Times",
+        "The Fitness of Optimal Solution with Different Number of Abstract Services",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          ""
+        ],
+        [
+          2,
+          1.9739,
+          3.2296,
+          4.6764,
+          5.9758,
+          7.3637,
+          8.7672,
+          10.1271,
+          11.5,
+          12.9757,
+          14.3436,
+          ""
+        ],
+        [
+          3,
+          1.9857,
+          3.23,
+          4.6776,
+          5.9853,
+          7.374,
+          8.7713,
+          10.1425,
+          11.689,
+          12.981,
+          14.3541,
+          ""
+        ],
+        [
+          4,
+          1.9923,
+          3.2563,
+          4.6781,
+          5.9903,
+          7.4745,
+          8.7702,
+          10.151,
+          11.5823,
+          12.9614,
+          14.3815,
+          ""
+        ],
+        [
+          5,
+          1.9897,
+          3.2577,
+          4.6822,
+          5.9969,
+          7.4723,
+          8.7793,
+          10.17,
+          11.5863,
+          12.9817,
+          14.3842,
+          ""
+        ],
+        [
+          6,
+          1.9984,
+          3.2583,
+          4.6957,
+          5.9928,
+          7.4769,
+          8.7867,
+          10.601,
+          12.9008,
+          12.9933,
+          14.3904,
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 12
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 shows the result of scenario 1. It appears that the fitness value of MrEDA is better than that of rEDA, MARL and MAGA in most cases. In Table 9, the results of scenario 2 also show that in most cases the fitness value of MrEDA is higher than that of rEDA, MARL and MAGA in the scenarios of increasing the number of abstract services. In particular, when fixing the number of abstract services, the fitness values of all approaches change very little with the increasing number of candidate services. While the fitness values have a significant increase in varying the number of abstract services when fixing the number of candidate services. The reason is that MrEDA exploits multiple RBMs with distinct explorations to refine the probabilistic model of solutions. The model provides useful information on how well the selected services contribute to the overall performance. In addition, the adaptive sampling improves the quality of the probabilistic model by adaptively adjusting the search of samples and improving the exploitability of samples. When generating solutions, the probabilistic",
+      "headers": [
+        "Methods",
+        "Number of Candidate Services",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000,
+          ""
+        ],
+        [
+          "MrEDA",
+          1.9923,
+          2.0112,
+          2.0348,
+          2.0469,
+          2.0553,
+          2.0617,
+          2.0551,
+          2.0628,
+          2.0672,
+          2.0627,
+          ""
+        ],
+        [
+          "MAGA",
+          1.9859,
+          1.9955,
+          2.0368,
+          2.0404,
+          2.0449,
+          2.0462,
+          2.047,
+          2.0529,
+          2.0564,
+          2.0605,
+          ""
+        ],
+        [
+          "MARL",
+          1.9845,
+          2.0087,
+          2.0325,
+          2.0587,
+          2.0453,
+          2.0506,
+          2.0379,
+          2.0549,
+          2.0504,
+          2.0617,
+          ""
+        ],
+        [
+          "rEDA",
+          1.9918,
+          2.0226,
+          2.0323,
+          2.0456,
+          2.0582,
+          2.061,
+          2.0621,
+          2.0605,
+          2.0598,
+          2.0615,
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 12
+    },
+    {
+      "table_number": "9",
+      "table_title": "The Fitness of Optimal Solution w.r.t Number of Abstract Services",
+      "headers": [
+        "Methods",
+        "Number of Abstract Services",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          ""
+        ],
+        [
+          "MrEDA",
+          1.9923,
+          3.2563,
+          4.6781,
+          5.9903,
+          7.4745,
+          8.7702,
+          10.151,
+          11.7025,
+          12.7714,
+          14.3815,
+          ""
+        ],
+        [
+          "MAGA",
+          1.9859,
+          3.236,
+          4.5771,
+          5.9795,
+          7.3712,
+          8.7623,
+          10.1604,
+          11.784,
+          12.79691,
+          14.3509,
+          ""
+        ],
+        [
+          "MARL",
+          1.9845,
+          3.2363,
+          4.5764,
+          5.9803,
+          7.3769,
+          8.7713,
+          10.1337,
+          11.5714,
+          12.9657,
+          14.3541,
+          ""
+        ],
+        [
+          "rEDA",
+          1.9918,
+          3.2558,
+          4.6444,
+          5.9535,
+          7.476,
+          8.7582,
+          10.1457,
+          11.602,
+          12.565,
+          13.9272,
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 12
+    }
+  ]
+}

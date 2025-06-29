@@ -1,0 +1,2239 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/An inverse model-guided two-stage evolutionary algorithm for multi-objective optimization.md",
+    "filename": "An inverse model-guided two-stage evolutionary algorithm for multi-objective optimization.md",
+    "title": "An inverse model-guided two-stage evolutionary algorithm for multi-objective optimization",
+    "year": "2023"
+  },
+  "references": {
+    "header": "## References",
+    "content": "Jain, H., \\& Deb, K. (2013). An evolutionary many-objective optimization algorithm using reference-point based nondominated sorting approach, part II: Handling constraints and extending to an adaptive approach. IEEE Transactions on Evolutionary Computation, 18(4), 602-622.\nRay, T., Tai, K., \\& Snow, C. J. E. O. (2001). An evolutionary algorithm for multiobjective optimization. Engineering Optimization, 33(3), 399-424.\nDong, H., Wang, P., Fu, C., \\& Song, B. (2021). Kriging-assisted teaching-learning-based optimization (KTLBO) to solve computationally expensive constrained problems. Information Sciences, 556, 404-435.\nDeb, K., Pratap, A., Agarwal, S., \\& Meyarivan, T. A. M. T. (2002). A fast and elitist multiobjective genetic algorithm: NSGA-II. IEEE Transactions on Evolutionary Computation, 6(2), 182-197.\nZhang, Q., \\& Li, H. (2007). MOEA/D: A multiobjective evolutionary algorithm based on decomposition. IEEE Transactions on Evolutionary Computation, 11(6), 712-731.\nZitzler, E., \\& Kūnžli, S. (2004). Indicator-based selection in multiobjective search. In International conference on parallel problem solving from nature (pp. 832-842). Berlin, Heidelberg: Springer.\nZitzler, E., \\& Thiele, L. (1999). Multiobjective evolutionary algorithms: A comparative case study and the strength Pareto approach. IEEE Transactions on Evolutionary Computation, 3(4), 257-271.\nZitzler, E., Laumann, M., \\& Thiele, L. (2001). SPEA2: Improving the strength Pareto evolutionary algorithm. TIR-report, 103.\nCorne, D. W., Knowles, J. D., \\& Oates, M. J. (2000). The Pareto envelope-based selection algorithm for multiobjective optimization. In International conference on parallel problem solving from nature (pp. 839-848). Berlin, Heidelberg: Springer.\nCorne, D. W., Jerram, N. R., Knowles, J. D., \\& Oates, M. J. (2001). PESA-II: Region-based selection in evolutionary multiobjective optimization. In Proceedings of the 3rd annual conference on genetic and evolutionary computation (pp. 283-290).\nCheng, R., Jin, Y., Olhofer, M., \\& Sendhoff, B. (2016). A reference vector guided evolutionary algorithm for many-objective optimization. IEEE Transactions on Evolutionary Computation, 20(5), 773-791.\nDeb, K., \\& Jain, H. (2013). An evolutionary many-objective optimization algorithm using reference-point-based nondominated sorting approach, part I: Solving problems with box constraints. IEEE Transactions on Evolutionary Computation, 18(4), 577-601.\nBader, J., \\& Zitzler, E. (2011). HypE: An algorithm for fast hypervolume-based manyobjective optimization. Evolutionary Computation, 19(1), 45-76.\nDeb, K., Sindhya, K., \\& Okabe, T. (2007, July). Self-adaptive simulated binary crossover for real-parameter optimization. In Proceedings of the 9th annual conference on genetic and evolutionary computation (pp. 1187-1194).\nDeb, K., \\& Goyal, M. (1996). A combined genetic adaptive search (GeneAS) for engineering design. Computer Science and Informatics, 26, 50-65.\nDavis, L. (1985, August). Applying adaptive algorithms to epistatic domains. In LICAI (Vol. 85, pp. 162-164).\nCheng, R., Jin, Y., Narukawa, K., \\& Sendhoff, B. (2015). A multiobjective evolutionary algorithm using Gaussian process-based inverse modeling. IEEE Transactions on Evolutionary Computation, 19(6), 838-856.\nCheng, R., Jin, Y., \\& Narukawa, K. (2015). Adaptive reference vector generation for inverse model based evolutionary multiobjective optimization with degenerate and disconnected Pareto fronts. In International Conference on Evolutionary Multi-Criterion Optimization (pp. 127-140). Cham: Springer.\nDellnitz, M., Schütze, O., \\& Hestermeyer, T. (2005). Covering Pareto sets by multilevel subdivision techniques. Journal of Optimization Theory and Applications, 124(1), $113-136$.\nDeb, K. (1999). Multi-objective genetic algorithms: Problem difficulties and construction of first problems. Evolutionary Computation, 7(3), 205-230.\nZhang, Q., Zhou, A., \\& Jin, Y. (2008). RM-MEDA: A regularity model-based multiobjective estimation of distribution algorithm. IEEE Transactions on Evolutionary Computation, 12(1), 41-63.\nDeb, K., Sinha, A., \\& Kukkonen, S. (2006). Multi-objective test problems, linkages, and evolutionary methodology. In Proceedings of the 8th annual conference on Genetic and evolutionary computation (pp. 1141-1148).\nKukkonen, S., \\& Lampinen, J. (2006). An empirical study of control parameters for the third version of generalized differential evolution (GDE3). In 2006 IEEE International Conference on Evolutionary Computation (pp. 2002-2009). IEEE.\nBosman, P. A., \\& Thierens, D. (2005, March). The Naiive MIDEA: A baseline multi-objective EA. In International Conference on Evolutionary Multi-Criterion Optimization (pp. 428-442). Springer, Berlin, Heidelberg.\nWang, Y., Xiang, J., \\& Cai, Z. (2012). A regularity model-based multiobjective estimation of distribution algorithm with reducing redundant cluster operator. Applied Soft Computing, 12(11), 3526-3538.\nLi, H., \\& Zhang, Q. (2008). Multiobjective optimization problems with complicated Pareto sets. MOEA/D and NSGA-II. IEEE Transactions on Evolutionary Computation, 13 (2), 284-302.\n\nZhang, Z., Liu, S., Gao, W., Xu, J., \\& Zhu, S. (2020). An enhanced multi-objective evolutionary optimization algorithm with inverse model. Information Sciences, 530, $128-147$.\nQi, Y., Ma, X., Liu, F., Jiao, L., Sun, J., \\& Wu, J. (2014). MOEA/D with adaptive weight adjustment. Evolutionary computation, 22(2), 231-264.\nTian, Y., He, C., Cheng, R., \\& Zhang, X. (2019). A multistage evolutionary algorithm for better diversity preservation in multiobjective optimization. IEEE Transactions on Systems, Man, and Cybernetics: Systems, 51(9), 5880-5894.\nHe, Z., \\& Yen, G. G. (2015). Many-objective evolutionary algorithm: Objective space reduction and diversity improvement. IEEE Transactions on Evolutionary Computation, 20(1), 145-160.\nSun, Y., Xue, B., Zhang, M., \\& Yen, G. G. (2018). A new two-stage evolutionary algorithm for many-objective optimization. IEEE Transactions on Evolutionary Computation, 23 (5), 748-761.\n\nShen, J., Wang, P., Dong, H., Li, J., \\& Wang, W. (2022). A multistage evolutionary algorithm for many-objective optimization. Information Sciences, 589, 531-549.\nSeeger, M. (2004). Gaussian processes for machine learning. International journal of neural systems, 14(02), 69-106.\nChen, H., Cheng, R., Pedryce, W., \\& Jin, Y. (2019). Solving many-objective optimization problems via multistage evolutionary search. IEEE Transactions on Systems, Man, and Cybernetics: Systems, 51(6), 3552-3564.\nBox, G. E., \\& Draper, N. R. (1987). Empirical model-building and response surfaces. John Wiley \\& Sons.\nBroomhead, D., \\& Lowe, D. (1988). Multivariable functional interpolation and adaptive networks. Complex Systems, 2.\nKong, W., Chai, T., Yang, S., \\& Ding, J. (2013). A hybrid evolutionary multiobjective optimization strategy for the dynamic power supply problem in magnesia grain manufacturing. Applied Soft Computing, 13(5), 2960-2969.\nDeb, K., Thiele, L., Laumanns, M., \\& Zitzler, E. (2005). Scalable test problems for evolutionary multiobjective optimization. In Evolutionary multiobjective optimization (pp. 105-145). London: Springer.\nElarbi, M., Bechikh, S., Gupta, A., Said, L. B., \\& Ong, Y. S. (2017). A new decompositionbased NSGA-II for many-objective optimization. IEEE transactions on systems, man, and cybernetics: systems, 48(7), 1191-1210.\nHuband, S., Hingston, P., Barone, L., \\& While, L. (2006). A review of multiobjective test problems and a scalable test problem toolkit. IEEE Transactions on Evolutionary Computation, 10(5), 477-506.\nTian, Y., Cheng, R., Zhang, X., \\& Jin, Y. (2017). PlotEMO: A MATLAB platform for evolutionary multi-objective optimization [educational forum]. IEEE Computational Intelligence Magazine, 12(4), 73-87.\nBezerra, L. C., López-Ibánez, M., \\& Stitzle, T. (2017). An empirical assessment of the properties of inverted generational distance on multi-and many-objective optimization. In International conference on evolutionary multi-criterion optimization (pp. 31-45). Cham: Springer.\nKullan, B. M. (2008). Universal parametric geometry representation method. Journal of aircraft, 45(1), 142-158.\nMcKay, M. D., Beckman, R. J., \\& Conover, W. J. (2000). A comparison of three methods for selecting values of input variables in the analysis of output from a computer code. Technometrics, 42(1), 55-61.\nChen, H., Wu, G., Pedryce, W., Suganthan, P. N., Xing, L., \\& Zhu, X. (2019). An adaptive resource allocation strategy for objective space partition-based multiobjective optimization. IEEE Transactions on Systems, Man, and Cybernetics: Systems, 51(3), $1507-1522$.\nFarias, L. R., \\& Araújo, A. F. (2021). IM-MOEA/D: an inverse modeling multi-objective evolutionary algorithm based on decomposition. In 2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC) (pp. 462-467). IEEE.\nPrice, K. V. (2013). Differential evolution. In Handbook of optimization (pp. 187-214). Berlin, Heidelberg: Springer.\nLiu, H. L., Gu, F., \\& Zhang, Q. (2013). Decomposition of a multiobjective optimization problem into a number of simple multiobjective subproblems. IEEE transactions on evolutionary computation, 18(3), 450-455.\nWang, H., Jiao, L., \\& Yao, X. (2014). Two_Arch2: An improved two-archive algorithm for many-objective optimization. IEEE transactions on evolutionary computation, 19(4), $524-541$.\nCheng, R., Li, M., Tian, Y., Zhang, X., Yang, S., Jin, Y., \\& Yao, X. (2017). A benchmark test suite for evolutionary many-objective optimization. Complex A Intelligent Systems, 3, 67-81.\nTian, Y., Cheng, R., Zhang, X., Su, Y., \\& Jin, Y. (2018). A strengthened dominance relation considering convergence and diversity for evolutionary many-objective optimization. IEEE Transactions on Evolutionary Computation, 23(2), 331-345.\nHabib, A., Singh, H. K., Chugh, T., Ray, T., \\& Miettinen, K. (2019). A multiple surrogate assisted decomposition-based evolutionary algorithm for expensive multi/manyobjective optimization. IEEE Transactions on Evolutionary Computation, 23(6), $1000-1014$.\nSchütze, O., Esquiivel, X., Lara, A., \\& Coello, C. A. C. (2012). Using the averaged Hausdorff distance as a performance measure in evolutionary multiobjective optimization. IEEE Transactions on Evolutionary Computation, 16(4), 504-522.\nCuate, O., Uribe, L., Lara, A., \\& Schütze, O. (2020). A benchmark for equality constrained multi-objective optimization. Swarm and Evolutionary Computation, 52, Article 100619 .",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Jain, H., \\& Deb, K. (2013). An evolutionary many-objective optimization algorithm using reference-point based nondominated sorting approach, part II: Handling constraints and extending to an adaptive approach. IEEE Transactions on Evolutionary Computation, 18(4), 602-622."
+      },
+      {
+        "ref_id": "2",
+        "text": "Ray, T., Tai, K., \\& Snow, C. J. E. O. (2001). An evolutionary algorithm for multiobjective optimization. Engineering Optimization, 33(3), 399-424."
+      },
+      {
+        "ref_id": "3",
+        "text": "Dong, H., Wang, P., Fu, C., \\& Song, B. (2021). Kriging-assisted teaching-learning-based optimization (KTLBO) to solve computationally expensive constrained problems. Information Sciences, 556, 404-435."
+      },
+      {
+        "ref_id": "4",
+        "text": "Deb, K., Pratap, A., Agarwal, S., \\& Meyarivan, T. A. M. T. (2002). A fast and elitist multiobjective genetic algorithm: NSGA-II. IEEE Transactions on Evolutionary Computation, 6(2), 182-197."
+      },
+      {
+        "ref_id": "5",
+        "text": "Zhang, Q., \\& Li, H. (2007). MOEA/D: A multiobjective evolutionary algorithm based on decomposition. IEEE Transactions on Evolutionary Computation, 11(6), 712-731."
+      },
+      {
+        "ref_id": "6",
+        "text": "Zitzler, E., \\& Kūnžli, S. (2004). Indicator-based selection in multiobjective search. In International conference on parallel problem solving from nature (pp. 832-842). Berlin, Heidelberg: Springer."
+      },
+      {
+        "ref_id": "7",
+        "text": "Zitzler, E., \\& Thiele, L. (1999). Multiobjective evolutionary algorithms: A comparative case study and the strength Pareto approach. IEEE Transactions on Evolutionary Computation, 3(4), 257-271."
+      },
+      {
+        "ref_id": "8",
+        "text": "Zitzler, E., Laumann, M., \\& Thiele, L. (2001). SPEA2: Improving the strength Pareto evolutionary algorithm. TIR-report, 103."
+      },
+      {
+        "ref_id": "9",
+        "text": "Corne, D. W., Knowles, J. D., \\& Oates, M. J. (2000). The Pareto envelope-based selection algorithm for multiobjective optimization. In International conference on parallel problem solving from nature (pp. 839-848). Berlin, Heidelberg: Springer."
+      },
+      {
+        "ref_id": "10",
+        "text": "Corne, D. W., Jerram, N. R., Knowles, J. D., \\& Oates, M. J. (2001). PESA-II: Region-based selection in evolutionary multiobjective optimization. In Proceedings of the 3rd annual conference on genetic and evolutionary computation (pp. 283-290)."
+      },
+      {
+        "ref_id": "11",
+        "text": "Cheng, R., Jin, Y., Olhofer, M., \\& Sendhoff, B. (2016). A reference vector guided evolutionary algorithm for many-objective optimization. IEEE Transactions on Evolutionary Computation, 20(5), 773-791."
+      },
+      {
+        "ref_id": "12",
+        "text": "Deb, K., \\& Jain, H. (2013). An evolutionary many-objective optimization algorithm using reference-point-based nondominated sorting approach, part I: Solving problems with box constraints. IEEE Transactions on Evolutionary Computation, 18(4), 577-601."
+      },
+      {
+        "ref_id": "13",
+        "text": "Bader, J., \\& Zitzler, E. (2011). HypE: An algorithm for fast hypervolume-based manyobjective optimization. Evolutionary Computation, 19(1), 45-76."
+      },
+      {
+        "ref_id": "14",
+        "text": "Deb, K., Sindhya, K., \\& Okabe, T. (2007, July). Self-adaptive simulated binary crossover for real-parameter optimization. In Proceedings of the 9th annual conference on genetic and evolutionary computation (pp. 1187-1194)."
+      },
+      {
+        "ref_id": "15",
+        "text": "Deb, K., \\& Goyal, M. (1996). A combined genetic adaptive search (GeneAS) for engineering design. Computer Science and Informatics, 26, 50-65."
+      },
+      {
+        "ref_id": "16",
+        "text": "Davis, L. (1985, August). Applying adaptive algorithms to epistatic domains. In LICAI (Vol. 85, pp. 162-164)."
+      },
+      {
+        "ref_id": "17",
+        "text": "Cheng, R., Jin, Y., Narukawa, K., \\& Sendhoff, B. (2015). A multiobjective evolutionary algorithm using Gaussian process-based inverse modeling. IEEE Transactions on Evolutionary Computation, 19(6), 838-856."
+      },
+      {
+        "ref_id": "18",
+        "text": "Cheng, R., Jin, Y., \\& Narukawa, K. (2015). Adaptive reference vector generation for inverse model based evolutionary multiobjective optimization with degenerate and disconnected Pareto fronts. In International Conference on Evolutionary Multi-Criterion Optimization (pp. 127-140). Cham: Springer."
+      },
+      {
+        "ref_id": "19",
+        "text": "Dellnitz, M., Schütze, O., \\& Hestermeyer, T. (2005). Covering Pareto sets by multilevel subdivision techniques. Journal of Optimization Theory and Applications, 124(1), $113-136$."
+      },
+      {
+        "ref_id": "20",
+        "text": "Deb, K. (1999). Multi-objective genetic algorithms: Problem difficulties and construction of first problems. Evolutionary Computation, 7(3), 205-230."
+      },
+      {
+        "ref_id": "21",
+        "text": "Zhang, Q., Zhou, A., \\& Jin, Y. (2008). RM-MEDA: A regularity model-based multiobjective estimation of distribution algorithm. IEEE Transactions on Evolutionary Computation, 12(1), 41-63."
+      },
+      {
+        "ref_id": "22",
+        "text": "Deb, K., Sinha, A., \\& Kukkonen, S. (2006). Multi-objective test problems, linkages, and evolutionary methodology. In Proceedings of the 8th annual conference on Genetic and evolutionary computation (pp. 1141-1148)."
+      },
+      {
+        "ref_id": "23",
+        "text": "Kukkonen, S., \\& Lampinen, J. (2006). An empirical study of control parameters for the third version of generalized differential evolution (GDE3). In 2006 IEEE International Conference on Evolutionary Computation (pp. 2002-2009). IEEE."
+      },
+      {
+        "ref_id": "24",
+        "text": "Bosman, P. A., \\& Thierens, D. (2005, March). The Naiive MIDEA: A baseline multi-objective EA. In International Conference on Evolutionary Multi-Criterion Optimization (pp. 428-442). Springer, Berlin, Heidelberg."
+      },
+      {
+        "ref_id": "25",
+        "text": "Wang, Y., Xiang, J., \\& Cai, Z. (2012). A regularity model-based multiobjective estimation of distribution algorithm with reducing redundant cluster operator. Applied Soft Computing, 12(11), 3526-3538."
+      },
+      {
+        "ref_id": "26",
+        "text": "Li, H., \\& Zhang, Q. (2008). Multiobjective optimization problems with complicated Pareto sets. MOEA/D and NSGA-II. IEEE Transactions on Evolutionary Computation, 13 (2), 284-302."
+      },
+      {
+        "ref_id": "27",
+        "text": "Zhang, Z., Liu, S., Gao, W., Xu, J., \\& Zhu, S. (2020). An enhanced multi-objective evolutionary optimization algorithm with inverse model. Information Sciences, 530, $128-147$."
+      },
+      {
+        "ref_id": "28",
+        "text": "Qi, Y., Ma, X., Liu, F., Jiao, L., Sun, J., \\& Wu, J. (2014). MOEA/D with adaptive weight adjustment. Evolutionary computation, 22(2), 231-264."
+      },
+      {
+        "ref_id": "29",
+        "text": "Tian, Y., He, C., Cheng, R., \\& Zhang, X. (2019). A multistage evolutionary algorithm for better diversity preservation in multiobjective optimization. IEEE Transactions on Systems, Man, and Cybernetics: Systems, 51(9), 5880-5894."
+      },
+      {
+        "ref_id": "30",
+        "text": "He, Z., \\& Yen, G. G. (2015). Many-objective evolutionary algorithm: Objective space reduction and diversity improvement. IEEE Transactions on Evolutionary Computation, 20(1), 145-160."
+      },
+      {
+        "ref_id": "31",
+        "text": "Sun, Y., Xue, B., Zhang, M., \\& Yen, G. G. (2018). A new two-stage evolutionary algorithm for many-objective optimization. IEEE Transactions on Evolutionary Computation, 23 (5), 748-761."
+      },
+      {
+        "ref_id": "32",
+        "text": "Shen, J., Wang, P., Dong, H., Li, J., \\& Wang, W. (2022). A multistage evolutionary algorithm for many-objective optimization. Information Sciences, 589, 531-549."
+      },
+      {
+        "ref_id": "33",
+        "text": "Seeger, M. (2004). Gaussian processes for machine learning. International journal of neural systems, 14(02), 69-106."
+      },
+      {
+        "ref_id": "34",
+        "text": "Chen, H., Cheng, R., Pedryce, W., \\& Jin, Y. (2019). Solving many-objective optimization problems via multistage evolutionary search. IEEE Transactions on Systems, Man, and Cybernetics: Systems, 51(6), 3552-3564."
+      },
+      {
+        "ref_id": "35",
+        "text": "Box, G. E., \\& Draper, N. R. (1987). Empirical model-building and response surfaces. John Wiley \\& Sons."
+      },
+      {
+        "ref_id": "36",
+        "text": "Broomhead, D., \\& Lowe, D. (1988). Multivariable functional interpolation and adaptive networks. Complex Systems, 2."
+      },
+      {
+        "ref_id": "37",
+        "text": "Kong, W., Chai, T., Yang, S., \\& Ding, J. (2013). A hybrid evolutionary multiobjective optimization strategy for the dynamic power supply problem in magnesia grain manufacturing. Applied Soft Computing, 13(5), 2960-2969."
+      },
+      {
+        "ref_id": "38",
+        "text": "Deb, K., Thiele, L., Laumanns, M., \\& Zitzler, E. (2005). Scalable test problems for evolutionary multiobjective optimization. In Evolutionary multiobjective optimization (pp. 105-145). London: Springer."
+      },
+      {
+        "ref_id": "39",
+        "text": "Elarbi, M., Bechikh, S., Gupta, A., Said, L. B., \\& Ong, Y. S. (2017). A new decompositionbased NSGA-II for many-objective optimization. IEEE transactions on systems, man, and cybernetics: systems, 48(7), 1191-1210."
+      },
+      {
+        "ref_id": "40",
+        "text": "Huband, S., Hingston, P., Barone, L., \\& While, L. (2006). A review of multiobjective test problems and a scalable test problem toolkit. IEEE Transactions on Evolutionary Computation, 10(5), 477-506."
+      },
+      {
+        "ref_id": "41",
+        "text": "Tian, Y., Cheng, R., Zhang, X., \\& Jin, Y. (2017). PlotEMO: A MATLAB platform for evolutionary multi-objective optimization [educational forum]. IEEE Computational Intelligence Magazine, 12(4), 73-87."
+      },
+      {
+        "ref_id": "42",
+        "text": "Bezerra, L. C., López-Ibánez, M., \\& Stitzle, T. (2017). An empirical assessment of the properties of inverted generational distance on multi-and many-objective optimization. In International conference on evolutionary multi-criterion optimization (pp. 31-45). Cham: Springer."
+      },
+      {
+        "ref_id": "43",
+        "text": "Kullan, B. M. (2008). Universal parametric geometry representation method. Journal of aircraft, 45(1), 142-158."
+      },
+      {
+        "ref_id": "44",
+        "text": "McKay, M. D., Beckman, R. J., \\& Conover, W. J. (2000). A comparison of three methods for selecting values of input variables in the analysis of output from a computer code. Technometrics, 42(1), 55-61."
+      },
+      {
+        "ref_id": "45",
+        "text": "Chen, H., Wu, G., Pedryce, W., Suganthan, P. N., Xing, L., \\& Zhu, X. (2019). An adaptive resource allocation strategy for objective space partition-based multiobjective optimization. IEEE Transactions on Systems, Man, and Cybernetics: Systems, 51(3), $1507-1522$."
+      },
+      {
+        "ref_id": "46",
+        "text": "Farias, L. R., \\& Araújo, A. F. (2021). IM-MOEA/D: an inverse modeling multi-objective evolutionary algorithm based on decomposition. In 2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC) (pp. 462-467). IEEE."
+      },
+      {
+        "ref_id": "47",
+        "text": "Price, K. V. (2013). Differential evolution. In Handbook of optimization (pp. 187-214). Berlin, Heidelberg: Springer."
+      },
+      {
+        "ref_id": "48",
+        "text": "Liu, H. L., Gu, F., \\& Zhang, Q. (2013). Decomposition of a multiobjective optimization problem into a number of simple multiobjective subproblems. IEEE transactions on evolutionary computation, 18(3), 450-455."
+      },
+      {
+        "ref_id": "49",
+        "text": "Wang, H., Jiao, L., \\& Yao, X. (2014). Two_Arch2: An improved two-archive algorithm for many-objective optimization. IEEE transactions on evolutionary computation, 19(4), $524-541$."
+      },
+      {
+        "ref_id": "50",
+        "text": "Cheng, R., Li, M., Tian, Y., Zhang, X., Yang, S., Jin, Y., \\& Yao, X. (2017). A benchmark test suite for evolutionary many-objective optimization. Complex A Intelligent Systems, 3, 67-81."
+      },
+      {
+        "ref_id": "51",
+        "text": "Tian, Y., Cheng, R., Zhang, X., Su, Y., \\& Jin, Y. (2018). A strengthened dominance relation considering convergence and diversity for evolutionary many-objective optimization. IEEE Transactions on Evolutionary Computation, 23(2), 331-345."
+      },
+      {
+        "ref_id": "52",
+        "text": "Habib, A., Singh, H. K., Chugh, T., Ray, T., \\& Miettinen, K. (2019). A multiple surrogate assisted decomposition-based evolutionary algorithm for expensive multi/manyobjective optimization. IEEE Transactions on Evolutionary Computation, 23(6), $1000-1014$."
+      },
+      {
+        "ref_id": "53",
+        "text": "Schütze, O., Esquiivel, X., Lara, A., \\& Coello, C. A. C. (2012). Using the averaged Hausdorff distance as a performance measure in evolutionary multiobjective optimization. IEEE Transactions on Evolutionary Computation, 16(4), 504-522."
+      },
+      {
+        "ref_id": "54",
+        "text": "Cuate, O., Uribe, L., Lara, A., \\& Schütze, O. (2020). A benchmark for equality constrained multi-objective optimization. Swarm and Evolutionary Computation, 52, Article 100619 ."
+      }
+    ],
+    "reference_count": 54,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The parameter settings of IBEA, NSGA-III, IM-MOEA, MaOEA-IT, OPE-MOEA, and IMTSEA.",
+      "headers": [
+        "Algorithm",
+        "Parameter settings"
+      ],
+      "rows": [
+        [
+          "IBEA",
+          "kappa $=0.05$"
+        ],
+        [
+          "NSGA-III",
+          "$\\backslash$"
+        ],
+        [
+          "IM-MOEA",
+          "$K=10, L=3, p_{m}=1 / d, \\eta_{m}=20$"
+        ],
+        [
+          "MaOEA-IT",
+          "$N, N D W A=20000, N_{c}$ reference lines mapping $=6000$, Threshold in"
+        ],
+        [
+          "",
+          "$P C A=0.999$"
+        ],
+        [
+          "OPE-",
+          "$R=8, N_{A}=5$"
+        ],
+        [
+          "MOEA",
+          ""
+        ],
+        [
+          "IMTSEA",
+          "$T=0.6, K=20, L=5$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "The mean IGD values and standard deviations obtained by IBEA, NSGA-III, IM-MOEA, MaOEA-IT, OPE-MOEA, and IMTSEA, the best result of each row is highlighted.",
+      "headers": [
+        "Problem",
+        "M",
+        "D",
+        "IBEA",
+        "NSGA-III",
+        "IM-MOEA",
+        "MaOEA-IT",
+        "OPE-MOEA",
+        "IMTSEA"
+      ],
+      "rows": [
+        [
+          1,
+          3,
+          7,
+          "3.8858e+0 (1.61e+1)+",
+          "$\\begin{aligned} & \\text { 1.8663e-1 (2.31e-1) } \\\\ & + \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 7.2370e+0 (2.15e+0) } \\\\ & + \\end{aligned}$",
+          "3.2620e-1 (3.09e-1)+",
+          "$\\begin{aligned} & \\text { 1.8975e+0 (9.69e-1) } \\\\ & + \\end{aligned}$",
+          "$\\begin{aligned} & 2.0114 e+1 \\\\ & (3.81 e+0) \\end{aligned}$"
+        ],
+        [
+          2,
+          3,
+          12,
+          "8.1502e-2 (2.82e-3) -",
+          "5.8995e-2 (6.88e-4) -",
+          "1.0139e-1 (4.70e-3) -",
+          "1.3151e-1 (3.14e-2) -",
+          "$\\begin{aligned} & \\text { 5.4741e-2 (4.55e-4) } \\\\ & + \\end{aligned}$",
+          "5.6885e-2 (1.29e-3)"
+        ],
+        [
+          3,
+          3,
+          12,
+          "6.3300e+0 (3.44e+0)",
+          "1.1560e+1 (4.92e+0)",
+          "1.0006e+2 (1.70e+1)",
+          "1.1309e+1 (4.65e+0)",
+          "$\\begin{aligned} & 7.9979 e+1(1.96 e+1) \\\\ & + \\end{aligned}$",
+          "$\\begin{aligned} & 1.6173 e+2 \\\\ & (1.79 e+1) \\end{aligned}$"
+        ],
+        [
+          4,
+          3,
+          12,
+          "1.1603e-1 (2.18e-2) -",
+          "2.0112e-1 (2.29e-1) -",
+          "1.2940e-1 (3.52e-2) -",
+          "6.7360e-1 (2.34e-1) -",
+          "$\\begin{aligned} & \\text { 5.4447e-2 (5.51e-4) } \\\\ & + \\end{aligned}$",
+          "9.9629e-2 (3.58e-2)"
+        ],
+        [
+          5,
+          3,
+          12,
+          "1.6312e-2 (1.79e-3) -",
+          "1.3005e-2 (1.49e-3) -",
+          "2.5039e-2 (4.23e-3) -",
+          "6.2103e-2 (4.27e-2) -",
+          "2.5801e-2 (2.46e-3) -",
+          "$\\begin{aligned} & \\text { 9.4574e-3 (2.31e- } \\\\ & \\text { 3) } \\end{aligned}$"
+        ],
+        [
+          6,
+          3,
+          12,
+          "2.6812e-2 (3.69e-3) -",
+          "2.1172e-2 (6.11e-3) -",
+          "5.6263e+0 (2.03e-1) -",
+          "1.0246e-1 (1.60e-1) -",
+          "2.7452e-2 (2.96e-3) -",
+          "4.8365e-3 (4.36e-4)"
+        ],
+        [
+          7,
+          3,
+          22,
+          "8.6143e-2 (5.01e-3) $=$",
+          "1.1335e-1 (6.75e-2) -",
+          "3.5723e-1 (5.55e-2) -",
+          "2.5778e-1 (8.22e-2) -",
+          "2.9231e-1 (3.01e-2) -",
+          "8.6783e-2 (5.06e-3)"
+        ],
+        [
+          1,
+          2,
+          30,
+          "7.1751e-3 (1.02e-3) -",
+          "2.4048e-2 (4.41e-3) -",
+          "6.0188e-2 (7.95e-3) -",
+          "4.3333e-2 (1.47e-2) -",
+          "2.1750e-2 (5.91e-3) -",
+          "6.0284e-3 (7.49e-4)"
+        ],
+        [
+          2,
+          2,
+          30,
+          "2.0464e-1 (1.42e-1) -",
+          "7.1166e-2 (9.88e-2) -",
+          "6.3894e-2 (9.45e-3) -",
+          "8.0564e-2 (1.45e-1) -",
+          "1.7888e-2 (5.75e-3) -",
+          "$\\begin{aligned} & \\text { 7.4106e-3 (1.37e- } \\\\ & \\text { 3) } \\end{aligned}$"
+        ],
+        [
+          3,
+          2,
+          30,
+          "1.9401e-2 (7.19e-3) -",
+          "2.5685e-2 (6.00e-3) -",
+          "8.6830e-2 (1.24e-2) -",
+          "2.1961e-2 (4.77e-3) -",
+          "1.2411e-1 (1.84e-2) -",
+          "$\\begin{aligned} & \\text { 9.3914e-3 (8.54e- } \\\\ & \\text { 4) } \\end{aligned}$"
+        ],
+        [
+          4,
+          2,
+          10,
+          "5.1165e-1 (2.37e-1) +",
+          "6.7517e-1 (3.06e-1) +",
+          "1.0758e-2 (1.08e-3) +",
+          "4.9141e-1 (2.51e-1) +",
+          "7.3624e-1 (3.78e-1) +",
+          "$\\begin{aligned} & 7.6335 e+0 \\\\ & (3.41 e+0) \\end{aligned}$"
+        ],
+        [
+          6,
+          2,
+          10,
+          "3.7782e-2 (1.50e-2) -",
+          "3.0997e-1 (1.04e-1) -",
+          "1.4603e+0 (1.12e-1) -",
+          "7.3701e-2 (3.67e-2) -",
+          "$\\begin{aligned} & \\text { 3.7658e-3 (3.41e-4) } \\\\ & + \\end{aligned}$",
+          "3.7850e-3 (2.74e-4)"
+        ],
+        [
+          1,
+          3,
+          12,
+          "3.9056e-1 (6.01e-2) +",
+          "6.9811e-1 (8.27e-2) +",
+          "1.5408e+0 (4.92e-2) +",
+          "1.1121e+0 (2.35e-1) -",
+          "$\\begin{aligned} & 1.0131 e+0(1.18 e-1) \\\\ & + \\end{aligned}$",
+          "1.5949e+0 (8.08e-2)"
+        ],
+        [
+          2,
+          3,
+          12,
+          "2.8612e-1 (7.20e-3) -",
+          "2.7172e-1 (2.94e-2) -",
+          "2.8472e-1 (1.26e-2) -",
+          "2.5722e-1 (2.39e-2) -",
+          "2.3384e-1 (1.83e-2) -",
+          "$\\begin{aligned} & 2.1577 e-1(8.67 e- \\\\ & 3) \\end{aligned}$"
+        ],
+        [
+          3,
+          3,
+          12,
+          "5.0353e-2 (1.05e-2) +",
+          "1.4981e-1 (1.26e-2) +",
+          "2.5568e-1 (2.50e-2) -",
+          "7.3498e-1 (9.87e-2) -",
+          "1.8276e-1 (2.15e-2) +",
+          "2.3916e-1 (1.73e-2)"
+        ],
+        [
+          4,
+          3,
+          12,
+          "3.2471e-1 (1.09e-2) -",
+          "2.58113e-1 (8.94e-3) -",
+          "3.4362e-1 (1.45e-2) -",
+          "3.9429e-1 (5.31e-2) -",
+          "2.5198e-1 (3.84e-3) +",
+          "2.6040e-1 (8.82e-3)"
+        ],
+        [
+          5,
+          3,
+          12,
+          "3.1864e-1 (1.42e-2) -",
+          "$\\begin{aligned} & 2.5040 e-1(6.75 e-3) \\\\ & = \\end{aligned}$",
+          "3.7554e-1 (3.21e-2) -",
+          "4.2624e-1 (6.21e-2) -",
+          "2.4561e-1 (2.55e-3) =",
+          "2.5183e-1 (8.36e-3)"
+        ],
+        [
+          6,
+          3,
+          12,
+          "3.3689e-1 (1.86e-2) -",
+          "2.7658e-1 (1.40e-2) -",
+          "3.8792e-1 (1.74e-2) -",
+          "4.9037e-1 (5.35e-2) -",
+          "3.0320e-1 (2.23e-2) -",
+          "2.5180e-1 (1.27e-2)"
+        ],
+        [
+          7,
+          3,
+          12,
+          "3.2374e-1 (1.43e-2) -",
+          "2.5239e-1 (7.78e-3) -",
+          "3.6184e-1 (9.81e-3) -",
+          "6.1748e-1 (9.07e-2) -",
+          "2.4826e-1 (4.69e-3) -",
+          "2.3249e-1 (5.71e-3)"
+        ],
+        [
+          8,
+          3,
+          12,
+          "3.9616e-1 (9.47e-3) =",
+          "3.2030e-1 (6.36e-3) +",
+          "4.4223e-1 (1.16e-2) -",
+          "5.3774e-1 (6.87e-2) -",
+          "3.5061e-1 (1.20e-2) +",
+          "4.0088e-1 (1.34e-2)"
+        ],
+        [
+          9,
+          3,
+          12,
+          "2.9432e-1 (1.03e-2) -",
+          "2.4688e-1 (2.26e-2) -",
+          "3.3835e-1 (1.80e-2) -",
+          "4.3917e-1 (6.89e-2) -",
+          "2.3495e-1 (4.11e-3) -",
+          "2.2662e-1 (6.89e-3)"
+        ],
+        [
+          "$+/- /=$",
+          "",
+          "",
+          "$5 / 14 / 2$",
+          "$6 / 13 / 2$",
+          "$4 / 17 / 0$",
+          "$4 / 17 / 0$",
+          "$9 / 10 / 2$",
+          ""
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 9
+    },
+    {
+      "table_number": "3",
+      "table_title": "The mean HV values and standard deviations obtained by IBEA, NSGA-III, IM-MOEA, MaOEA-IT, OPE-MOEA, and IMTSEA, the best result of each row is highlighted.",
+      "headers": [
+        "Problem",
+        "M",
+        "D",
+        "IBEA",
+        "NSGA-III",
+        "IM-MOEA",
+        "MaOEA-IT",
+        "OPE-MOEA",
+        "IMTSEA"
+      ],
+      "rows": [
+        [
+          1,
+          3,
+          7,
+          "2.6008e-1 (2.48e-1) +",
+          "$6.5044 \\mathrm{e}-1(4.08 \\mathrm{e}-1)+$",
+          "$\\begin{aligned} & 0.0000 \\mathrm{e}+0(0.00 \\mathrm{e}+0) \\\\ & = \\end{aligned}$",
+          "$4.7109 \\mathrm{e}-1(4.34 \\mathrm{e}-1)+$",
+          "$9.0695 \\mathrm{e}-4(4.06 \\mathrm{e}-3)=$",
+          "$\\begin{aligned} & 0.0000 \\mathrm{e}+0 \\\\ & (0.00 \\mathrm{e}+0) \\end{aligned}$"
+        ],
+        [
+          2,
+          3,
+          12,
+          "$7.0846 \\mathrm{e}-1(5.32 \\mathrm{e}-3)+$",
+          "$7.1673 \\mathrm{e}-1(3.34 \\mathrm{e}-3)+$",
+          "$5.7117 \\mathrm{e}-1(1.72 \\mathrm{e}-2)+$",
+          "$5.7717 \\mathrm{e}-1(4.72 \\mathrm{e}-2)+$",
+          "$7.2234 \\mathrm{e}-1(3.80 \\mathrm{e}-3)+$",
+          "7.2909e-1 (3.97e- <br> 3)"
+        ],
+        [
+          3,
+          3,
+          12,
+          "$\\begin{aligned} & 0.0000 \\mathrm{e}+0(0.00 \\mathrm{e}+0) \\\\ & = \\end{aligned}$",
+          "$\\begin{aligned} & 0.0000 \\mathrm{e}+0(0.00 \\mathrm{e}+0) \\\\ & = \\end{aligned}$",
+          "$\\begin{aligned} & 0.0000 \\mathrm{e}+0(0.00 \\mathrm{e}+0) \\\\ & = \\end{aligned}$",
+          "$\\begin{aligned} & 0.0000 \\mathrm{e}+0(0.00 \\mathrm{e}+0) \\\\ & = \\end{aligned}$",
+          "$\\begin{aligned} & 0.0000 \\mathrm{e}+0(0.00 \\mathrm{e}+0) \\\\ & = \\end{aligned}$",
+          "$\\begin{aligned} & 0.0000 \\mathrm{e}+0 \\\\ & (0.00 \\mathrm{e}+0) \\end{aligned}$"
+        ],
+        [
+          4,
+          3,
+          12,
+          "$6.5014 \\mathrm{e}-1(1.01 \\mathrm{e}-1)+$",
+          "$6.4790 \\mathrm{e}-1(1.38 \\mathrm{e}-1)+$",
+          "$6.1038 \\mathrm{e}-1(2.81 \\mathrm{e}-2)+$",
+          "$2.6193 \\mathrm{e}-1(2.26 \\mathrm{e}-1)+$",
+          "7.2428e-1 (3.45e-3) <br> $+$",
+          "$\\begin{aligned} & 6.8407 \\mathrm{e}-1(4.97 \\mathrm{e}-2) \\\\ & 2 \\end{aligned}$"
+        ],
+        [
+          5,
+          3,
+          12,
+          "$2.2814 \\mathrm{e}-1(4.01 \\mathrm{e}-3)+$",
+          "$2.3127 \\mathrm{e}-1(2.28 \\mathrm{e}-3)+$",
+          "$2.1653 \\mathrm{e}-1(5.84 \\mathrm{e}-3)+$",
+          "$1.8070 \\mathrm{e}-1(3.53 \\mathrm{e}-2)+$",
+          "$2.1495 \\mathrm{e}-1(7.00 \\mathrm{e}-3)+$",
+          "2.3838e-1 (9.84e- <br> 3)"
+        ],
+        [
+          6,
+          3,
+          12,
+          "$2.5884 \\mathrm{e}-1(1.36 \\mathrm{e}-3)+$",
+          "$2.5230 \\mathrm{e}-1(6.03 \\mathrm{e}-3)+$",
+          "$0.0000 \\mathrm{e}+0(0.00 \\mathrm{e}+0)$",
+          "$2.0012 \\mathrm{e}-1(5.38 \\mathrm{e}-2)+$",
+          "$2.4667 \\mathrm{e}-1(3.17 \\mathrm{e}-3)+$",
+          "2.6609e-1 (1.51e- <br> 4)"
+        ],
+        [
+          7,
+          3,
+          22,
+          "$3.3513 \\mathrm{e}-1(5.79 \\mathrm{e}-3)=$",
+          "$3.2211 \\mathrm{e}-1(1.16 \\mathrm{e}-2)+$",
+          "$1.5471 \\mathrm{e}-1(3.16 \\mathrm{e}-2)+$",
+          "$2.2739 \\mathrm{e}-1(4.23 \\mathrm{e}-2)+$",
+          "$2.3749 \\mathrm{e}-1(1.91 \\mathrm{e}-2)+$",
+          "$\\begin{aligned} & 3.3605 \\mathrm{e}-1(5.05 \\mathrm{e}- \\\\ & 3) \\end{aligned}$"
+        ],
+        [
+          1,
+          2,
+          30,
+          "$8.6387 \\mathrm{e}-1(2.02 \\mathrm{e}-3)+$",
+          "$8.3445 \\mathrm{e}-1(7.19 \\mathrm{e}-3)+$",
+          "$7.7759 \\mathrm{e}-1(1.20 \\mathrm{e}-2)+$",
+          "$8.1071 \\mathrm{e}-1(1.56 \\mathrm{e}-2)+$",
+          "$8.3872 \\mathrm{e}-1(9.86 \\mathrm{e}-3)+$",
+          "8.6608e-1 (1.53e- <br> 3)"
+        ],
+        [
+          2,
+          2,
+          30,
+          "$3.0976 \\mathrm{e}-1(1.28 \\mathrm{e}-1)+$",
+          "$4.2782 \\mathrm{e}-1(9.48 \\mathrm{e}-2)+$",
+          "$4.1094 \\mathrm{e}-1(1.56 \\mathrm{e}-2)+$",
+          "$4.3472 \\mathrm{e}-1(1.18 \\mathrm{e}-1)+$",
+          "$5.0196 \\mathrm{e}-1(1.16 \\mathrm{e}-2)+$",
+          "$\\begin{aligned} & 5.2996 \\mathrm{e}-1(5.32 \\mathrm{e}- \\\\ & 3) \\end{aligned}$"
+        ],
+        [
+          3,
+          2,
+          30,
+          "$7.2232 \\mathrm{e}-1(2.83 \\mathrm{e}-2)+$",
+          "$7.0215 \\mathrm{e}-1(5.26 \\mathrm{e}-3)+$",
+          "$6.6332 \\mathrm{e}-1(1.14 \\mathrm{e}-2)+$",
+          "$7.1554 \\mathrm{e}-1(9.66 \\mathrm{e}-3)+$",
+          "$8.7309 \\mathrm{e}-1(5.39 \\mathrm{e}-2)+$",
+          "7.2278e-1 (1.75e- <br> 3)"
+        ],
+        [
+          4,
+          2,
+          10,
+          "$3.6501 \\mathrm{e}-1(2.37 \\mathrm{e}-1)+$",
+          "$1.8348 \\mathrm{e}-1(1.98 \\mathrm{e}-1)+$",
+          "$8.5685 \\mathrm{e}-1(2.29 \\mathrm{e}-3)+$",
+          "$3.4906 \\mathrm{e}-1(2.49 \\mathrm{e}-1)+$",
+          "$1.0814 \\mathrm{e}-1(8.74 \\mathrm{e}-2)+$",
+          "$\\begin{aligned} & 0.0000 \\mathrm{e}+0 \\\\ & (0.00 \\mathrm{e}+0) \\end{aligned}$"
+        ],
+        [
+          6,
+          2,
+          10,
+          "$4.0595 \\mathrm{e}-1(2.47 \\mathrm{e}-2)+$",
+          "$1.2679 \\mathrm{e}-1(6.51 \\mathrm{e}-2)+$",
+          "$0.0000 \\mathrm{e}+0(0.00 \\mathrm{e}+0)$",
+          "$3.5133 \\mathrm{e}-1(5.35 \\mathrm{e}-2)+$",
+          "$4.6926 \\mathrm{e}-1(3.85 \\mathrm{e}-4)+$",
+          "$\\begin{aligned} & 4.6975 \\mathrm{e}-1(3.23 \\mathrm{e}- \\\\ & 4) \\end{aligned}$"
+        ],
+        [
+          1,
+          3,
+          12,
+          "$1.0223 \\mathrm{e}+0(4.95 \\mathrm{e}-2)$",
+          "$8.2652 \\mathrm{e}-1(5.13 \\mathrm{e}-2)+$",
+          "$2.5609 \\mathrm{e}-1(2.41 \\mathrm{e}-2)+$",
+          "$7.3979 \\mathrm{e}-1(1.13 \\mathrm{e}-1)+$",
+          "$6.5679 \\mathrm{e}-1(6.68 \\mathrm{e}-2)+$",
+          "$2.9237 \\mathrm{e}-1(4.63 \\mathrm{e}-2)$"
+        ],
+        [
+          2,
+          3,
+          12,
+          "$1.1293 \\mathrm{e}+0(3.60 \\mathrm{e}-2)+$",
+          "$1.0880 \\mathrm{e}+0(3.91 \\mathrm{e}-2)+$",
+          "$1.1426 \\mathrm{e}+0(9.15 \\mathrm{e}-3)+$",
+          "$1.1480 \\mathrm{e}+0(2.05 \\mathrm{e}-2)+$",
+          "$1.1497 \\mathrm{e}+0(1.45 \\mathrm{e}-2)+$",
+          2
+        ],
+        [
+          3,
+          3,
+          12,
+          "$5.2777 \\mathrm{e}-1(1.04 \\mathrm{e}-2)+$",
+          "$4.7197 \\mathrm{e}-1(9.96 \\mathrm{e}-3)+$",
+          "$4.1122 \\mathrm{e}-1(1.68 \\mathrm{e}-2)+$",
+          "$1.1570 \\mathrm{e}-1(3.77 \\mathrm{e}-2)+$",
+          "$4.3333 \\mathrm{e}-1(1.68 \\mathrm{e}-2)+$",
+          "$4.1303 \\mathrm{e}-1(1.07 \\mathrm{e}-2)$"
+        ],
+        [
+          4,
+          3,
+          12,
+          "$6.3578 \\mathrm{e}-1(8.74 \\mathrm{e}-3)+$",
+          "$\\begin{aligned} & 6.6759 \\mathrm{e}-1(7.21 \\mathrm{e}-3) \\\\ & + \\end{aligned}$",
+          "$6.1654 \\mathrm{e}-1(9.97 \\mathrm{e}-3)+$",
+          "$5.6927 \\mathrm{e}-1(2.41 \\mathrm{e}-2)+$",
+          "$6.4372 \\mathrm{e}-1(6.11 \\mathrm{e}-3)+$",
+          "$6.5644 \\mathrm{e}-1(7.48 \\mathrm{e}-3)$"
+        ],
+        [
+          5,
+          3,
+          12,
+          "$6.2087 \\mathrm{e}-1(8.49 \\mathrm{e}-3)+$",
+          "$6.2713 \\mathrm{e}-1(6.54 \\mathrm{e}-3)+$",
+          "$5.5145 \\mathrm{e}-1(2.78 \\mathrm{e}-2)+$",
+          "$5.4080 \\mathrm{e}-1(2.77 \\mathrm{e}-2)+$",
+          "$6.4817 \\mathrm{e}-1(5.44 \\mathrm{e}-3)$",
+          "$6.2906 \\mathrm{e}-1(6.38 \\mathrm{e}-3)$"
+        ],
+        [
+          6,
+          3,
+          12,
+          "$6.3610 \\mathrm{e}-1(2.59 \\mathrm{e}-2)+$",
+          "$6.0981 \\mathrm{e}-1(2.07 \\mathrm{e}-2)+$",
+          "$5.5510 \\mathrm{e}-1(2.24 \\mathrm{e}-2)+$",
+          "$4.9769 \\mathrm{e}-1(2.88 \\mathrm{e}-2)+$",
+          "$5.8797 \\mathrm{e}-1(2.37 \\mathrm{e}-2)+$",
+          2
+        ],
+        [
+          7,
+          3,
+          12,
+          "$6.7493 \\mathrm{e}-1(7.65 \\mathrm{e}-3)+$",
+          "$6.6953 \\mathrm{e}-1(8.19 \\mathrm{e}-3)+$",
+          "$6.0229 \\mathrm{e}-1(9.35 \\mathrm{e}-3)+$",
+          "$4.9756 \\mathrm{e}-1(3.20 \\mathrm{e}-2)+$",
+          "$6.6417 \\mathrm{e}-1(8.04 \\mathrm{e}-3)+$",
+          3
+        ],
+        [
+          8,
+          3,
+          12,
+          "$4.7766 \\mathrm{e}-1(3.34 \\mathrm{e}-2)+$",
+          "$5.5926 \\mathrm{e}-1(4.95 \\mathrm{e}-3)$",
+          "$4.6582 \\mathrm{e}-1(9.18 \\mathrm{e}-3)+$",
+          "$4.5765 \\mathrm{e}-1(2.24 \\mathrm{e}-2)+$",
+          "$5.2245 \\mathrm{e}-1(8.53 \\mathrm{e}-3)+$",
+          "$4.9077 \\mathrm{e}-1(1.13 \\mathrm{e}-2)$"
+        ],
+        [
+          9,
+          3,
+          12,
+          "$6.4547 \\mathrm{e}-1(1.97 \\mathrm{e}-2)+$",
+          "$6.4491 \\mathrm{e}-1(3.09 \\mathrm{e}-2)+$",
+          "$6.1037 \\mathrm{e}-1(1.27 \\mathrm{e}-2)+$",
+          "$5.3447 \\mathrm{e}-1(2.49 \\mathrm{e}-2)+$",
+          "$6.5958 \\mathrm{e}-1(1.08 \\mathrm{e}-2)+$",
+          3
+        ],
+        [
+          "$+/-/=$",
+          "",
+          "",
+          "$4 / 15 / 2$",
+          "$6 / 13 / 2$",
+          "$1 / 17 / 3$",
+          "$3 / 17 / 1$",
+          "$7 / 12 / 2$",
+          ""
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 9
+    },
+    {
+      "table_number": "4",
+      "table_title": "The mean $\\Delta_{\\mathrm{p}}$ values and standard deviations obtained by IBEA, NSGA-III, IM-MOEA, MaOEA-IT, OPE-MOEA, and IMTSEA, the best result of each row is highlighted.",
+      "headers": [
+        "Problem",
+        "M",
+        "D",
+        "IBEA",
+        "NSGA-III",
+        "IM-MOEA",
+        "MaOEA-IT",
+        "OPE-MOEA",
+        "IMTSEA"
+      ],
+      "rows": [
+        [
+          1,
+          3,
+          7,
+          "9.8575e+0 (4.28e+1)+",
+          "3.1578e-1 (3.96e-1)",
+          "6.8064e+1 (9.28e+0)",
+          "5.2376e-1 (5.86e-1)+",
+          "9.1048e+0 (2.84e+0)",
+          "5.9001e+1 <br> (5.79e+0)"
+        ],
+        [
+          2,
+          3,
+          12,
+          "8.1502e-2 (2.82e-3)",
+          "5.6995e-2 (1.88e-3) $=$",
+          "1.0693e-1 (1.42e-2)",
+          "1.3151e-1 (3.14e-2)",
+          "5.7741e-2 (4.55e-4) $=$",
+          "5.6885e-2 (1.29e- <br> 3)"
+        ],
+        [
+          3,
+          3,
+          12,
+          "6.8268e+0 (3.59e+0)",
+          "1.3716e+1 (5.67e+0)",
+          "3.4745e+2 (3.59e+1)",
+          "1.3059e+1 (5.53e+0)",
+          "1.4676e+2 (1.73e+1)",
+          "2.7512e+2 <br> (2.35e+1)"
+        ],
+        [
+          4,
+          3,
+          12,
+          "1.2603e-1 (2.18e-2)",
+          "2.0112e-1 (2.29e-1)",
+          "1.2940e-1 (3.52e-2)",
+          "6.7360e-1 (2.34e-1)",
+          "5.4447e-2 (5.51e-4)",
+          "9.9629e-2 (3.58e-2)"
+        ],
+        [
+          5,
+          3,
+          12,
+          "1.6312e-2 (1.79e-3)",
+          "1.3005e-2 (1.49e-3)",
+          "2.5898e-2 (5.27e-3)",
+          "6.2103e-2 (4.27e-2)",
+          "2.7979e-2 (5.30e-3)",
+          "9.4675e-3 (2.34e- <br> 3)"
+        ],
+        [
+          6,
+          3,
+          12,
+          "2.6812e-2 (3.69e-3)",
+          "2.1172e-2 (6.11e-3)",
+          "6.5206e+0 (1.60e-1)",
+          "1.0790e-1 (1.84e-1)",
+          "2.7452e-2 (2.96e-3)",
+          "4.8365e-3 (4.36e- <br> 4)"
+        ],
+        [
+          7,
+          3,
+          22,
+          "7.3143e-2 (4.02e-3) +",
+          "1.1335e-1 (6.75e-2)",
+          "3.5723e-1 (5.55e-2)",
+          "2.5778e-1 (8.22e-2)",
+          "2.9231e-1 (3.01e-2)",
+          "8.6783e-2 (5.06e-3)"
+        ],
+        [
+          1,
+          2,
+          30,
+          "7.1751e-3 (1.02e-3)",
+          "2.4205e-2 (4.54e-3)",
+          "6.1804e-2 (7.97e-3)",
+          "4.3333e-2 (1.47e-2)",
+          "2.2727e-2 (6.75e-3)",
+          "6.0284e-3 (7.49e- <br> 4)"
+        ],
+        [
+          2,
+          2,
+          30,
+          "2.0464e-1 (1.42e-1)",
+          "7.1264e-2 (9.88e-2)",
+          "6.7108e-2 (9.86e-3)",
+          "8.0564e-2 (1.45e-1)",
+          "1.8022e-2 (5.73e-3)",
+          "7.4106e-3 (1.37e- <br> 3)"
+        ],
+        [
+          3,
+          2,
+          30,
+          "1.9401e-2 (7.19e-3)",
+          "2.5685e-2 (6.00e-3)",
+          "8.6830e-2 (1.24e-2)",
+          "2.1961e-2 (4.77e-3)",
+          "1.2411e-1 (1.84e-2)",
+          "9.3914e-3 (8.54e- <br> 4)"
+        ],
+        [
+          4,
+          2,
+          10,
+          "5.1165e-1 (2.37e-1) +",
+          "7.2163e-1 (3.24e-1) +",
+          "5.9946e-2 (7.73e-2)",
+          "4.9368e-1 (2.54e-1) +",
+          "1.1397e+0 (7.29e-1)",
+          "8.8023e+0 <br> (3.62e+0)"
+        ],
+        [
+          6,
+          2,
+          10,
+          "3.8822e-2 (1.59e-2)",
+          "3.3427e-1 (1.06e-1)",
+          "1.5402e+0 (7.48e-2)",
+          "9.8677e-2 (4.84e-2)",
+          "5.9086e-3 (5.58e-3) $=$",
+          "3.7850e-3 (2.74e- <br> 4)"
+        ],
+        [
+          1,
+          3,
+          12,
+          "3.9056e-1 (6.01e-2) +",
+          "6.9811e-1 (8.27e-2) +",
+          "1.5408e+0 (4.92e-2)",
+          "1.1121e+0 (2.35e-1)",
+          "1.0131e+0 (1.18e-1)",
+          "1.5949e+0 (8.08e- <br> 2)"
+        ],
+        [
+          2,
+          3,
+          12,
+          "2.8612e-1 (7.20e-3)",
+          "2.7172e-1 (6.94e-3)",
+          "2.8472e-1 (1.26e-2)",
+          "2.5722e-1 (2.39e-2)",
+          "2.3384e-1 (1.83e-2)",
+          "2.1577e-1 (8.67e- <br> 3)"
+        ],
+        [
+          3,
+          3,
+          12,
+          "5.4675e-1 (5.41e-2) +",
+          "5.8538e-1 (6.20e-2) $=$",
+          "7.7697e-1 (1.09e-1)",
+          "9.5034e-1 (8.79e-2)",
+          "3.7085e-1 (2.62e-2)",
+          "6.0653e-1 (3.30e-2)"
+        ],
+        [
+          4,
+          3,
+          12,
+          "3.2471e-1 (1.09e-2)",
+          "2.7113e-1 (9.80e-3)",
+          "3.4362e-1 (1.45e-2)",
+          "3.9429e-1 (5.31e-2)",
+          "2.5698e-1 (3.84e-3)",
+          "2.6040e-1 (8.82e-3)"
+        ],
+        [
+          5,
+          3,
+          12,
+          "3.1864e-1 (1.42e-2)",
+          "2.6740e-1 (6.75e-3)",
+          "3.7554e-1 (3.21e-2)",
+          "4.2624e-1 (6.21e-2)",
+          "2.6561e-1 (8.55e-3)",
+          "2.5183e-1 (8.36e- <br> 3)"
+        ],
+        [
+          6,
+          3,
+          12,
+          "3.3689e-1 (1.86e-2)",
+          "2.7658e-1 (1.40e-2)",
+          "3.8792e-1 (1.74e-2)",
+          "4.9037e-1 (5.35e-2)",
+          "3.0320e-1 (2.23e-2)",
+          "2.5180e-1 (1.27e- <br> 2)"
+        ],
+        [
+          7,
+          3,
+          12,
+          "3.2374e-1 (1.43e-2)",
+          "2.3239e-1 (3.78e-3) $=$",
+          "3.6184e-1 (9.81e-3)",
+          "6.1748e-1 (9.07e-2)",
+          "2.4826e-1 (4.69e-3)",
+          "2.3210e-1 (5.71e- <br> 3)"
+        ],
+        [
+          8,
+          3,
+          12,
+          "3.5216e-1 (6.47e-3) +",
+          "3.2030e-1 (6.36e-3)",
+          "4.4223e-1 (1.16e-2)",
+          "5.3774e-1 (6.87e-2)",
+          "3.5061e-1 (1.20e-2) +",
+          "4.0088e-1 (1.34e-2)"
+        ],
+        [
+          9,
+          3,
+          12,
+          "2.9432e-1 (1.03e-2)",
+          "2.4688e-1 (2.26e-2)",
+          "3.3835e-1 (1.80e-2)",
+          "4.3917e-1 (6.89e-2)",
+          "2.3495e-1 (4.11e-3)",
+          "2.2662e-1 (6.89e- <br> 3)"
+        ],
+        [
+          "$+/- /=$",
+          "",
+          "",
+          "$7 / 14 / 0$",
+          "$5 / 13 / 3$",
+          "$2 / 19 / 0$",
+          "$4 / 17 / 0$",
+          "$7 / 11 / 3$",
+          ""
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 9
+    },
+    {
+      "table_number": "5",
+      "table_title": "The mean IGD values including standard deviations obtained by IMTSEA-GA, IMTSEA-IM, and IMTSEA, the best result of each row is highlighted.",
+      "headers": [
+        "Problem",
+        "M",
+        "d",
+        "IMTSEA-GA",
+        "IMTSEA-IM",
+        "IMTSEA"
+      ],
+      "rows": [
+        [
+          1,
+          3,
+          7,
+          "4.9340e-1 <br> (2.51e-1) +",
+          "$\\begin{aligned} & 2.3969 e+1 \\\\ & (5.63 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 2.0114 e+1 \\\\ & (3.81 e+0) \\end{aligned}$"
+        ],
+        [
+          2,
+          3,
+          12,
+          "5.8419e-2 (1.68e- <br> 3) +",
+          "1.4215e-1 <br> (1.55e-2) -",
+          "5.6885e-2 <br> (1.29e-3)"
+        ],
+        [
+          3,
+          3,
+          12,
+          "1.7744e+1 <br> (6.83e+0) +",
+          "1.6622e+2 <br> (1.30e+1) $=$",
+          "1.6173e+2 <br> (1.79e+1)"
+        ],
+        [
+          4,
+          3,
+          12,
+          "1.0604e-1 (1.49e- <br> 1) -",
+          "7.3552e-1 <br> (1.86e-1) -",
+          "9.9629e-2 <br> (3.58e-2)"
+        ],
+        [
+          5,
+          3,
+          12,
+          "5.9419e-3 <br> (5.07e-4) +",
+          "6.4848e-2 <br> (1.24e-2) -",
+          "9.4574e-3 <br> (2.31e-3)"
+        ],
+        [
+          6,
+          3,
+          12,
+          "4.3697e-2 (1.46e- <br> 1) -",
+          "1.5895e-2 <br> (7.69e-3) -",
+          "4.8365e-3 <br> (4.36e-4)"
+        ],
+        [
+          7,
+          3,
+          22,
+          "1.1024e-1 (1.40e- <br> 2) -",
+          "7.7647e-2 <br> (6.85e-3) +",
+          "8.6783e-2 <br> (5.06e-3)"
+        ],
+        [
+          1,
+          2,
+          30,
+          "4.5838e-2 (1.47e- <br> 2) -",
+          "7.0988e-3 <br> (5.41e-4) -",
+          "6.0284e-3 <br> (7.49e-4)"
+        ],
+        [
+          2,
+          2,
+          30,
+          "1.2433e-1 (1.38e- <br> 1) -",
+          "9.8847e-3 <br> (9.32e-4) -",
+          "7.4106e-3 <br> (1.37e-3)"
+        ],
+        [
+          3,
+          2,
+          30,
+          "3.7923e-2 (9.04e- <br> 3) -",
+          "1.0756e-2 <br> (2.35e-3) $=$",
+          "3.914e-3 <br> (8.54e-4)"
+        ],
+        [
+          4,
+          2,
+          10,
+          "1.2519e+0 <br> (4.53e-1) +",
+          "3.6184e-2 <br> (1.26e-2) +",
+          "7.6335e+0 <br> (3.41e+0)"
+        ],
+        [
+          6,
+          2,
+          10,
+          "5.7024e-1 (1.82e- <br> 1) -",
+          "2.8135e-2 <br> (1.19e-2) -",
+          "3.7850e-3 <br> (2.74e-4)"
+        ],
+        [
+          1,
+          3,
+          12,
+          "8.1788e-1 <br> (7.35e-2) +",
+          "1.6789e+0 <br> (5.33e-2) -",
+          "1.5949e+0 <br> (8.08e-2)"
+        ],
+        [
+          2,
+          3,
+          12,
+          "1.9409e-1 <br> (1.29e-2) $=$",
+          "3.7051e-1 <br> (2.42e-2) -",
+          "2.1577e-1 <br> (8.67e-3)"
+        ],
+        [
+          3,
+          3,
+          12,
+          "1.2526e-1 <br> (1.74e-2) +",
+          "2.9686e-1 <br> (2.00e-2) -",
+          "2.3916e-1 <br> (1.73e-2)"
+        ],
+        [
+          4,
+          3,
+          12,
+          "2.4212e-1 <br> (1.03e-2) $=$",
+          "3.3391e-1 <br> (1.73e-2) -",
+          "2.6040e-1 <br> (8.82e-3)"
+        ],
+        [
+          5,
+          3,
+          12,
+          "2.4117e-1 (3.09e- <br> 3) +",
+          "2.2979e-1 <br> (2.99e-3) +",
+          "2.5183e-1 <br> (8.36e-3)"
+        ],
+        [
+          6,
+          3,
+          12,
+          "3.0792e-1 (1.98e- <br> 2) -",
+          "3.7221e-1 <br> (1.40e-2) -",
+          "2.5180e-1 <br> (1.27e-2)"
+        ],
+        [
+          7,
+          3,
+          12,
+          "2.3797e-1 (7.28e- <br> 3) -",
+          "3.6853e-1 <br> (1.48e-2) -",
+          "2.3249e-1 <br> (5.71e-3)"
+        ],
+        [
+          8,
+          3,
+          12,
+          "3.4741e-1 <br> (6.94e-3) +",
+          "4.4632e-1 <br> (1.58e-2) -",
+          "4.0088e-1 <br> (1.34e-2)"
+        ],
+        [
+          9,
+          3,
+          12,
+          "2.2819e-1 (6.36e- <br> 3) +",
+          "2.7659e-1 <br> (8.22e-3) -",
+          "2.2662e-1 <br> (6.89e-3)"
+        ],
+        [
+          "Average Rank",
+          "",
+          "",
+          1.9048,
+          2.4762,
+          1.619
+        ],
+        [
+          "$+/-1=$",
+          "",
+          "",
+          "$8 / 10 / 3$",
+          "$3 / 16 / 2$",
+          ""
+        ]
+      ],
+      "row_count": 23,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "The mean IGD values including standard deviations obtained by IMTSEA and its four variants, the best result of each row is highlighted.",
+      "headers": [
+        "Problem",
+        "M",
+        "D",
+        "Variant-1",
+        "Variant-2",
+        "Variant-3",
+        "Variant-4",
+        "IMTSEA"
+      ],
+      "rows": [
+        [
+          1,
+          3,
+          7,
+          "2.1403e+1 (3.19e+0) $=$",
+          "1.9809e+1 (5.74e+0) $=$",
+          "2.0672e+1 (4.49e+0) $=$",
+          "9.4458e+0 (3.37e+0) +",
+          "2.0114e+1 (3.81e+0)"
+        ],
+        [
+          2,
+          3,
+          12,
+          "7.5084e-2 (1.39e-2) -",
+          "5.9415e-2 (1.70e-3) -",
+          "6.3976e-2 (2.42e-3) -",
+          "5.6986e-2 (1.31e-3) $=$",
+          "5.6885e-2 (1.29e-3)"
+        ],
+        [
+          3,
+          3,
+          12,
+          "1.4918e+2 (1.09e+1) +",
+          "1.5653e+2 (1.28e+1) $=$",
+          "1.5304e+2 (1.33e+1) +",
+          "1.0733e+2 (2.68e+1) +",
+          "1.6173e+2 (1.79e+1)"
+        ],
+        [
+          4,
+          3,
+          12,
+          "3.6923e-1 (2.82e-1) -",
+          "1.1268e-1 (1.02e-1) $=$",
+          "1.3137e-1 (3.50e-2) -",
+          "1.0206e-1 (4.20e-2) $=$",
+          "9.9629e-2 (3.58e-2)"
+        ],
+        [
+          5,
+          3,
+          12,
+          "1.6891e-1 (2.72e-2) -",
+          "2.6829e-2 (6.57e-3) -",
+          "3.4419e-2 (9.87e-3) -",
+          "9.3809e-3 (1.92e-3) $=$",
+          "9.4574e-3 (2.31e-3)"
+        ],
+        [
+          6,
+          3,
+          12,
+          "4.8053e-3 (2.65e-4) $=$",
+          "4.8267e-3 (1.73e-4) $=$",
+          "4.8280e-3 (2.58e-4) $=$",
+          "5.7781e-1 (1.72e-1) -",
+          "4.8365e-3 (4.36e-4)"
+        ],
+        [
+          7,
+          3,
+          22,
+          "7.7352e-2 (4.11e-3) +",
+          "8.2156e-2 (4.99e-3) +",
+          "8.1877e-2 (5.61e-3) +",
+          "2.7989e-1 (6.22e-2) -",
+          "8.6783e-2 (5.06e-3)"
+        ],
+        [
+          1,
+          2,
+          30,
+          "5.7665e-3 (6.09e-4) $=$",
+          "7.1354e-3 (1.14e-3) -",
+          "5.9244e-3 (7.48e-4) $=$",
+          "3.7471e-2 (5.93e-3) -",
+          "6.0284e-3 (7.49e-4)"
+        ],
+        [
+          2,
+          2,
+          30,
+          "7.6951e-3 (2.31e-3) $=$",
+          "8.8143e-3 (2.25e-3) -",
+          "8.7347e-3 (2.25e-3) -",
+          "1.3796e-1 (4.54e-2) -",
+          "7.4106e-3 (1.37e-3)"
+        ],
+        [
+          3,
+          2,
+          30,
+          "8.9288e-3 (1.10e-3) $=$",
+          "9.9069e-3 (1.55e-3) $=$",
+          "1.0900e-2 (2.14e-3) -",
+          "3.1995e-2 (5.28e-3) -",
+          "9.3914e-3 (8.54e-4)"
+        ],
+        [
+          4,
+          2,
+          10,
+          "8.8970e+0 (2.30e+0) $=$",
+          "1.0906e+1 (3.17e+0) -",
+          "1.5325e+1 (3.59e+0) -",
+          "8.3869e+0 (2.22e+0) $=$",
+          "7.6335e+0 (3.41e+0)"
+        ],
+        [
+          6,
+          2,
+          10,
+          "4.4161e-3 (8.97e-4) -",
+          "3.4841e-3 (1.04e-4) +",
+          "4.1632e-3 (2.11e-4) -",
+          "4.8422e-1 (1.95e-1) -",
+          "3.7850e-3 (2.74e-4)"
+        ],
+        [
+          1,
+          3,
+          12,
+          "1.9034e+0 (6.42e-2) -",
+          "1.6516e+0 (6.16e-2) -",
+          "1.6857e+0 (7.53e-2) -",
+          "1.5572e+0 (6.43e-2) $=$",
+          "1.5949e+0 (8.08e-2)"
+        ],
+        [
+          2,
+          3,
+          12,
+          "3.0796e-1 (5.16e-2) -",
+          "2.2269e-1 (1.43e-2) $=$",
+          "2.4190e-1 (1.40e-2) -",
+          "2.1231e-1 (9.05e-3) $=$",
+          "2.1577e-1 (8.67e-3)"
+        ],
+        [
+          3,
+          3,
+          12,
+          "4.1942e-1 (4.84e-2) -",
+          "2.7065e-1 (2.41e-2) -",
+          "3.4303e-1 (2.62e-2) -",
+          "1.5860e-1 (1.49e-2) +",
+          "2.3916e-1 (1.73e-2)"
+        ],
+        [
+          4,
+          3,
+          12,
+          "2.7430e-1 (1.21e-2) -",
+          "2.6928e-1 (1.09e-2) -",
+          "2.8949e-1 (1.13e-2) -",
+          "2.6224e-1 (8.90e-3) $=$",
+          "2.6040e-1 (8.82e-3)"
+        ],
+        [
+          5,
+          3,
+          12,
+          "2.4564e-1 (6.89e-3) +",
+          "2.5267e-1 (7.79e-3) $=$",
+          "2.5937e-1 (1.35e-2) -",
+          "3.5836e-1 (3.01e-2) -",
+          "2.5183e-1 (8.36e-3)"
+        ],
+        [
+          6,
+          3,
+          12,
+          "2.7495e-1 (3.01e-2) -",
+          "2.6511e-1 (9.67e-3) -",
+          "2.8644e-1 (1.58e-2) -",
+          "2.5212e-1 (1.33e-2) $=$",
+          "2.5180e-1 (1.27e-2)"
+        ],
+        [
+          7,
+          3,
+          12,
+          "2.5120e-1 (1.19e-2) -",
+          "2.4009e-1 (7.25e-3) -",
+          "2.7347e-1 (8.04e-3) -",
+          "2.2717e-1 (5.49e-3) +",
+          "2.3249e-1 (5.71e-3)"
+        ],
+        [
+          8,
+          3,
+          12,
+          "3.9018e-1 (1.56e-2) +",
+          "3.8512e-1 (1.22e-2) +",
+          "4.1375e-1 (1.23e-2) -",
+          "3.9786e-1 (1.29e-2) $=$",
+          "4.0088e-1 (1.34e-2)"
+        ],
+        [
+          9,
+          3,
+          12,
+          "2.4257e-1 (3.12e-2) -",
+          "2.2950e-1 (5.27e-3) $=$",
+          "2.4589e-1 (9.37e-3) -",
+          "2.3582e-1 (7.67e-3) -",
+          "2.2662e-1 (6.89e-3)"
+        ],
+        [
+          "$+/-/$",
+          "",
+          "",
+          "$4 / 11 / 6$",
+          "$3 / 10 / 8$",
+          "$2 / 16 / 3$",
+          "$4 / 8 / 9$",
+          ""
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 8
+    },
+    {
+      "table_number": "7",
+      "table_title": "The mean IGD values obtained by IMTSEA when $T$ varies from 0 to 1 , the best result of each row is highlighted.",
+      "headers": [
+        "Problem",
+        "M",
+        "d",
+        "$T=0$",
+        "$T=0.2$",
+        "$T=0.4$",
+        "$T=0.6$",
+        "$T=0.8$",
+        "$T=1$"
+      ],
+      "rows": [
+        [
+          1,
+          3,
+          7,
+          2.1401,
+          1.7601,
+          "$2.12 e+01$",
+          "$2.01 e+01$",
+          "$1.87 e+01$",
+          "$1.80 e+01$"
+        ],
+        [
+          2,
+          3,
+          12,
+          "1.81e-01",
+          "6.28e-02",
+          "5.79e-02",
+          "5.69e-02",
+          "5.77e-02",
+          "6.69e-02"
+        ],
+        [
+          3,
+          3,
+          12,
+          1.8802,
+          1.6502,
+          "$1.70 e+02$",
+          1.6202,
+          "$1.67 e+02$",
+          "$1.68 e+02$"
+        ],
+        [
+          4,
+          3,
+          12,
+          "6.37e-01",
+          "2.09e-01",
+          "$1.22 e-01$",
+          "9.96e-02",
+          "7.62e-02",
+          "$1.23 e-01$"
+        ],
+        [
+          5,
+          3,
+          12,
+          "1.29e-01",
+          "3.38e-02",
+          "1.59e-02",
+          "9.46e-03",
+          "6.79e-03",
+          "6.58e-03"
+        ],
+        [
+          6,
+          3,
+          12,
+          "4.66e-01",
+          "5.14e-02",
+          "4.74e-03",
+          "4.84e-03",
+          "4.99e-03",
+          "6.95e-03"
+        ],
+        [
+          7,
+          3,
+          22,
+          2.22,
+          "1.63e-01",
+          "9.80e-02",
+          "8.68e-02",
+          "8.69e-02",
+          "9.14e-02"
+        ],
+        [
+          1,
+          2,
+          30,
+          "4.06e-01",
+          "3.36e-02",
+          "9.33e-03",
+          "6.03e-03",
+          "5.09e-03",
+          "4.96e-03"
+        ],
+        [
+          2,
+          2,
+          30,
+          1.93,
+          "4.68e-02",
+          "1.48e-02",
+          "7.41e-03",
+          "5.84e-03",
+          "5.15e-03"
+        ],
+        [
+          3,
+          2,
+          30,
+          "2.93e-01",
+          "2.93e-02",
+          "1.50e-02",
+          "9.39e-03",
+          "7.11e-03",
+          "6.17e-03"
+        ],
+        [
+          4,
+          2,
+          10,
+          4.9301,
+          1.8801,
+          1.2801,
+          7.63,
+          6.47,
+          5.92
+        ],
+        [
+          6,
+          2,
+          10,
+          "6.10e-01",
+          "2.79e-02",
+          "4.52e-03",
+          "3.79e-03",
+          "4.27e-03",
+          "5.38e-03"
+        ],
+        [
+          1,
+          3,
+          12,
+          2.25,
+          1.71,
+          1.6,
+          1.59,
+          1.48,
+          1.51
+        ],
+        [
+          2,
+          3,
+          12,
+          "3.94e-01",
+          "2.54e-01",
+          "2.23e-01",
+          "2.16e-01",
+          "2.15e-01",
+          "2.41e-01"
+        ],
+        [
+          3,
+          3,
+          12,
+          "2.92e-01",
+          "2.37e-01",
+          "2.34e-01",
+          "2.39e-01",
+          "2.54e-01",
+          "2.82e-01"
+        ],
+        [
+          4,
+          3,
+          12,
+          "3.59e-01",
+          "2.66e-01",
+          "2.60e-01",
+          "2.69e-01",
+          "2.69e-01",
+          "3.03e-01"
+        ],
+        [
+          5,
+          3,
+          12,
+          "3.69e-01",
+          "2.81e-01",
+          "2.54e-01",
+          "2.52e-01",
+          "2.56e-01",
+          "2.97e-01"
+        ],
+        [
+          6,
+          3,
+          12,
+          "3.93e-01",
+          "2.62e-01",
+          "2.50e-01",
+          "2.52e-01",
+          "2.51e-01",
+          "2.83e-01"
+        ],
+        [
+          7,
+          3,
+          12,
+          "3.66e-01",
+          "2.42e-01",
+          "2.33e-01",
+          "2.32e-01",
+          "2.38e-01",
+          "2.76e-01"
+        ],
+        [
+          8,
+          3,
+          12,
+          "4.89e-01",
+          "4.07e-01",
+          "4.00e-01",
+          "4.01e-01",
+          "4.05e-01",
+          "4.28e-01"
+        ],
+        [
+          9,
+          3,
+          12,
+          "3.63e-01",
+          "2.28e-01",
+          "2.25e-01",
+          "2.27e-01",
+          "2.29e-01",
+          "2.75e-01"
+        ],
+        [
+          "Average Rank",
+          "",
+          "",
+          6,
+          4.0952,
+          2.8571,
+          2.1905,
+          2.4286,
+          3.4286
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 9
+    },
+    {
+      "table_number": "8",
+      "table_title": "The mean IGD values and standard deviations obtained by IBEA, NSGA-III, IM-MOEA, MaOEA-IT, OPE-MOEA, IMTSEA, and IMTSEA* on MOP1-5, the best result of each row is highlighted.",
+      "headers": [
+        "Problem",
+        "M",
+        "D",
+        "IBEA",
+        "NSGA-III",
+        "IM-MOEA",
+        "MaOEA-IT",
+        "OPE-MOEA",
+        "IMTSEA",
+        "IMTSEA*"
+      ],
+      "rows": [
+        [
+          1,
+          2,
+          10,
+          "3.5757e-1 (6.37e- <br> 3) -",
+          "3.6852e-1 (2.18e- <br> 3) -",
+          "1.6998e-1 (9.43e- <br> 3) -",
+          "8.3815e-1 (2.34e- <br> 1) -",
+          "1.4791e-1 (9.29e- <br> 3) -",
+          "3.6700e-1 (1.21e- <br> 3) -",
+          "9.8529e-2 <br> (1.18e-2)"
+        ],
+        [
+          2,
+          2,
+          10,
+          "2.9503e-1 (1.13e- <br> 2) -",
+          "3.0814e-1 (9.82e- <br> 3) -",
+          "9.3355e-2 (1.03e- <br> 2) -",
+          "6.0949e-1 (1.14e- <br> 16) -",
+          "7.6472e-2 (5.83e- <br> 3) -",
+          "3.5494e-1 (1.89e- <br> 16) -",
+          "5.6535e-2 <br> (9.00e-3)"
+        ],
+        [
+          3,
+          2,
+          10,
+          "4.0871e-1 <br> $(0.06 \\mathrm{e}+0)$ -",
+          "4.0871e-1 <br> $(0.00 \\mathrm{e}+0)$ -",
+          "1.4557e-1 (2.88e- <br> 2) -",
+          "9.1696e-1 (1.16e- <br> 1) -",
+          "8.6316e-2 (8.85e- <br> 3) -",
+          "4.0871e-1 (2.42e- <br> 16) -",
+          "6.7054e-2 <br> (1.56e-2)"
+        ],
+        [
+          4,
+          2,
+          10,
+          "2.7592e-1 (8.76e- <br> 3) -",
+          "2.7521e-1 (1.62e- <br> 2) -",
+          "5.1264e-2 (2.88e- <br> 3) -",
+          "7.2480e-1 (2.28e- <br> 16) -",
+          "3.4524e-2 (2.65e- <br> 3) =",
+          "3.2383e-1 (1.72e- <br> 3) -",
+          "3.4406e-2 <br> (3.80e-3)"
+        ],
+        [
+          5,
+          2,
+          10,
+          "2.6470e-1 (3.04e- <br> 2) -",
+          "2.2097e-1 (2.62e- <br> 2) -",
+          "1.5208e-1 (2.10e- <br> 2) -",
+          "6.1010e-1 (6.63e- <br> 1) -",
+          "1.3226e-1 (1.76e- <br> 2) -",
+          "2.6633e-1 (5.47e- <br> 5) -",
+          "8.8446e-2 <br> (9.50e-3)"
+        ],
+        [
+          "$+/-/$",
+          "",
+          "",
+          "$0 / 5 / 0$",
+          "$0 / 5 / 0$",
+          "$0 / 5 / 0$",
+          "$0 / 5 / 0$",
+          "$0 / 4 / 1$",
+          "$0 / 5 / 0$",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 10
+    },
+    {
+      "table_number": "9",
+      "table_title": "The mean IGD values and standard deviations obtained by ISEA, NSGA-III, IM-MOEA, MaOEA-IT, OPE-MOEA, IMTSEA, IMTSEA* and IMTSEA** on MaF1-10, the best result of each row is highlighted.",
+      "headers": [
+        "Problem",
+        "M",
+        "D",
+        "ISEA",
+        "NSGA-III",
+        "IM-MOEA",
+        "MaOEA-IT",
+        "OPE-MOEA",
+        "IMTSEA",
+        "IMTSEA**",
+        "IMTSEA**"
+      ],
+      "rows": [
+        [
+          1,
+          5,
+          14,
+          "1.5497e-1 <br> (6.18e-3) -",
+          "$\\begin{aligned} & 2.3576 e-1 \\\\ & (2.02 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 3.0766 e-1 \\\\ & (1.90 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.0123 e-1 \\\\ & (2.73 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.7166 e-1 \\\\ & (2.00 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.7866 e-1 \\\\ & (4.86 e-3) \\end{aligned}$",
+          "$\\begin{aligned} & 3.0449 e-1 \\\\ & (7.05 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.3074 e-1 \\\\ & (1.82 e-3) \\end{aligned}$"
+        ],
+        [
+          "",
+          10,
+          19,
+          "2.8800e-1 <br> (3.96e-3) -",
+          "$\\begin{aligned} & 3.2078 e-1 \\\\ & (6.59 e-3) \\end{aligned}$",
+          "$\\begin{aligned} & 3.7058 e-1 \\\\ & (3.80 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 3.5665 e-1 \\\\ & (3.60 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 3.9304 e-1 \\\\ & (2.87 e-4) \\end{aligned}$",
+          "$\\begin{aligned} & 1.3914 e-1 \\\\ & (1.25 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 5.7555 e-1 \\\\ & (3.36 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.5835 e-1 \\\\ & (3.83 e-3) \\end{aligned}$"
+        ],
+        [
+          2,
+          5,
+          14,
+          "1.1994e-1 <br> (2.42e-3) -",
+          "$\\begin{aligned} & 1.4517 e-1 \\\\ & (5.08 e-3) \\end{aligned}$",
+          "$\\begin{aligned} & 2.0305 e-1 \\\\ & (3.41 e-3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.2414 e-1 \\\\ & (7.25 e-3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.6390 e-1 \\\\ & (1.34 e-3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.5415 e-1 \\\\ & (5.87 e-3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.3353 e-1 \\\\ & (1.35 e-3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.1946 e-1 \\\\ & (1.69 e-3) \\end{aligned}$"
+        ],
+        [
+          "",
+          10,
+          19,
+          "$\\begin{aligned} & 2.8853 e-1 \\\\ & (2.30 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.7221 e-1 \\\\ & (2.75 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 3.2097 e-1 \\\\ & (4.43 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 3.5350 e-1 \\\\ & (2.50 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 4.1089 e-1 \\\\ & (3.51 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.9389 e-1 \\\\ & (3.42 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.7756 e-1 \\\\ & (2.05 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.7383 e-1 \\\\ & (2.83 e-2) \\end{aligned}$"
+        ],
+        [
+          3,
+          5,
+          14,
+          "$\\begin{aligned} & 2.7866 e+1 \\\\ & (6.05 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 1.3246 e+2 \\\\ & (1.74 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.7240 e+4 \\\\ & (5.85 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.1680 e+2 \\\\ & (1.39 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 9.2667 e+3 \\\\ & (4.27 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 3.4018 e+4 \\\\ & (8.80 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 3.6665 e+4 \\\\ & (6.88 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 2.5055 e+4 \\\\ & (8.20 e+3) \\end{aligned}$"
+        ],
+        [
+          "",
+          10,
+          19,
+          "$\\begin{aligned} & 4.9052 e+2 \\\\ & (1.74 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 5.5523 e+3 \\\\ & (1.04 e+4) \\end{aligned}$",
+          "$\\begin{aligned} & 7.7089 e+3 \\\\ & (3.19 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.5521 e+5 \\\\ & (4.91 e+7) \\end{aligned}$",
+          "$\\begin{aligned} & 5.9839 e+3 \\\\ & (2.83 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 4.3605 e+4 \\\\ & (7.41 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 4.6458 e+4 \\\\ & (6.46 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.6304 e+4 \\\\ & (1.00 e+4) \\end{aligned}$"
+        ],
+        [
+          4,
+          5,
+          14,
+          "$\\begin{aligned} & 2.3317 e+1 \\\\ & (2.12 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 6.6182 e+1 \\\\ & (5.36 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 6.3557 e+2 \\\\ & (7.56 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 1.0040 e+2 \\\\ & (6.36 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 9.2285 e+1 \\\\ & (7.69 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 2.0018 e+3 \\\\ & (2.72 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.3218 e+3 \\\\ & (3.96 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.3773 e+3 \\\\ & (3.58 e+2) \\end{aligned}$"
+        ],
+        [
+          "",
+          10,
+          19,
+          "$\\begin{aligned} & 9.9848 e+2 \\\\ & (8.49 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.7512 e+3 \\\\ & (1.50 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.0351 e+4 \\\\ & (7.32 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 4.8396 e+3 \\\\ & (4.94 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 4.6602 e+3 \\\\ & (3.64 e+3) \\end{aligned}$",
+          "$\\begin{aligned} & 5.2464 e+4 \\\\ & (1.45 e+4) \\end{aligned}$",
+          "$\\begin{aligned} & 1.8511 e+4 \\\\ & (1.09 e+4) \\end{aligned}$",
+          "$\\begin{aligned} & 3.6828 e+4 \\\\ & (1.05 e+4) \\end{aligned}$"
+        ],
+        [
+          5,
+          5,
+          14,
+          "$\\begin{aligned} & 2.7488 e+0 \\\\ & (1.10 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 2.5728 e+0 \\\\ & (7.87 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 5.0543 e+0 \\\\ & (4.08 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 4.2844 e+0 \\\\ & (2.03 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 2.8566 e+0 \\\\ & (1.96 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 2.7802 e+0 \\\\ & (1.56 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 1.0057 e+1 \\\\ & (2.12 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 2.7591 e+0 \\\\ & (1.09 e+0) \\end{aligned}$"
+        ],
+        [
+          "",
+          10,
+          19,
+          "$\\begin{aligned} & 9.0941 e+1 \\\\ & (1.53 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 1.2721 e+2 \\\\ & (8.06 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 1.6752 e+2 \\\\ & (2.37 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 1.7184 e+2 \\\\ & (2.36 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 2.9696 e+2 \\\\ & (5.20 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 1.2084 e+2 \\\\ & (8.38 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 3.0489 e+2 \\\\ & (2.08 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 8.7532 e+1 \\\\ & (2.52 e+1) \\end{aligned}$"
+        ],
+        [
+          6,
+          5,
+          14,
+          "$\\begin{aligned} & 6.0861 e-2 \\\\ & (1.62 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 5.9887 e-2 \\\\ & (1.34 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 7.2452 e-1 \\\\ & (2.58 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 4.670 e-2 \\\\ & (4.60 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 6.0851 e-2 \\\\ & (1.37 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.3725 e-1 \\\\ & (4.66 e+1) \\end{aligned}$",
+          "$\\begin{aligned} & 1.8376 e-2 \\\\ & (2.48 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 2.4844 e-1 \\\\ & (1.06 e-2) \\end{aligned}$"
+        ],
+        [
+          "",
+          10,
+          19,
+          "$\\begin{aligned} & 1.0045 e+0 \\\\ & (1.19 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 5.3501 e-1 \\\\ & (2.47 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 1.0583 e+1 \\\\ & (2.43 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 1.4155 e+0 \\\\ & (8.38 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 3.2167 e-1 \\\\ & (7.84 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 7.1145 e-1 \\\\ & (2.92 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 4.7677 e-1 \\\\ & (2.65 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 2.4123 e-1 \\\\ & (8.14 e-2) \\end{aligned}$"
+        ],
+        [
+          "",
+          10,
+          2,
+          "$\\begin{aligned} & 1.5634 e+0 \\\\ & (9.84 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 2.3412 e+0 \\\\ & (3.06 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 9.9164 e+0 \\\\ & (5.15 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 1.0057 e+1 \\\\ & (8.41 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 4.9043 e-1 \\\\ & (4.13 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.5182 e+2 \\\\ & (1.41 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.6491 e+0 \\\\ & (1.13 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 4.8591 e-1 \\\\ & (2.27 e-1) \\end{aligned}$"
+        ],
+        [
+          10,
+          5,
+          14,
+          "$\\begin{aligned} & 5.2252 e-1 \\\\ & (2.74 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 7.5411 e-1 \\\\ & (7.59 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.9208 e+0 \\\\ & (7.01 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.5115 e+0 \\\\ & (1.30 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 1.3083 e+0 \\\\ & (1.40 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 9.998 e-1 \\\\ & (1.02 e-1) \\end{aligned}$",
+          "$\\begin{aligned} & 9.0321 e-1 \\\\ & (5.75 e-2) \\end{aligned}$",
+          "$\\begin{aligned} & 5.0033 e-1 \\\\ & (2.77 e-2) \\end{aligned}$"
+        ],
+        [
+          "$+/-/=$",
+          "",
+          "",
+          "$5 / 9 / 6$",
+          "$5 / 12 / 3$",
+          "$4 / 16 / 0$",
+          "$3 / 16 / 1$",
+          "$4 / 13 / 3$",
+          "$0 / 19 / 1$",
+          "$1 / 17 / 2$",
+          ""
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 11
+    },
+    {
+      "table_number": "10",
+      "table_title": "The mean IGD and HV values and standard deviations obtained by ISEA, NSGA-III, IM-MOEA, IMTSEA, IMTSEA*, and IMTSEA** on CSI, WRM, and GAA, the best result of each row is highlighted.",
+      "headers": [
+        "Problem",
+        "M",
+        "D",
+        "Metric",
+        "ISEA",
+        "NSGA-III",
+        "IM-MOEA",
+        "IMTSEA",
+        "IMTSEA*",
+        "IMTSEA**"
+      ],
+      "rows": [
+        [
+          "CSI",
+          3,
+          7,
+          "IGD",
+          "4.0909e-1 (3.81e-2)",
+          "2.8269e-1 (4.47e-2)",
+          "$\\begin{aligned} & 3.9888 e+0 \\\\ & (1.37 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 2.4323 e-1(1.15 e- \\\\ & 2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.0903 e+0 \\\\ & (1.27 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 4.0710 e+0(6.75 e-1) \\\\ & \\hline \\end{aligned}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "HV",
+          "3.2656e-1 (3.79e-3)",
+          "3.4742e-1 (2.06e-3)",
+          "2.6045e-1 (2.07e-2)",
+          "$\\begin{aligned} & 3.5099 e-1(1.23 e- \\\\ & 3) \\end{aligned}$",
+          "$\\begin{aligned} & 2.8698 e-1(1.80 e-2) \\end{aligned}$",
+          "2.7645e-1 (1.28e-2)"
+        ],
+        [
+          "WRM",
+          5,
+          3,
+          "IGD",
+          "9.7480e+4 <br> (3.21e+4)",
+          "$\\begin{aligned} & 8.5318 e+4 \\\\ & (2.32 e+4) \\end{aligned}$",
+          "$\\begin{aligned} & 2.3675 e+5 \\\\ & (2.63 e+4) \\end{aligned}$",
+          "$\\begin{aligned} & 7.6548 e+4 \\\\ & (1.81 e+4) \\end{aligned}$",
+          "$\\begin{aligned} & 1.3061 e+5 \\\\ & (1.49 e+4) \\end{aligned}$",
+          "$\\begin{aligned} & 4.4927 e+4 \\\\ & (7.26 e+3) \\end{aligned}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "HV",
+          "1.9247e+0 (1.04e- <br> 1)",
+          "$\\begin{aligned} & 2.1372 e+0(1.52 e- \\\\ & 2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.7493 e+0(1.19 e- \\\\ & 1) \\end{aligned}$",
+          "$\\begin{aligned} & 1.8927 e+0(9.08 e- \\\\ & 2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.8805 e+0(5.76 e- \\\\ & 2) \\end{aligned}$",
+          "$\\begin{aligned} & 2.1547 e+0(1.38 e- \\\\ & 2) \\end{aligned}$"
+        ],
+        [
+          "GAA",
+          10,
+          27,
+          "IGD",
+          "7.4446e+2 <br> (3.56e+2)",
+          "$\\begin{aligned} & 2.2034 e+2 \\\\ & (1.26 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 7.6325 e+2 \\\\ & (3.35 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 6.2076 e+2 \\\\ & (2.48 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 7.5228 e+2 \\\\ & (3.20 e+2) \\end{aligned}$",
+          "$\\begin{aligned} & 1.2076 e+2 \\\\ & (6.48 e+1) \\end{aligned}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "HV",
+          "1.1422e-1 (1.07e-2)",
+          "$\\begin{aligned} & 1.2660 e-1(1.08 e- \\\\ & 2) \\end{aligned}$",
+          "$\\begin{aligned} & 0.0000 e+0 \\\\ & (0.00 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 9.8271 e-2(1.14 e-2) \\\\ & \\hline \\end{aligned}$",
+          "$\\begin{aligned} & 0.0000 e+0 \\\\ & (0.00 e+0) \\end{aligned}$",
+          "$\\begin{aligned} & 1.1760 e-1(1.42 e-2) \\end{aligned}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 10
+    },
+    {
+      "table_number": "11",
+      "table_title": "The mean IGD values and HV values obtained by IBEA, NSGA-III, IM-MOEA, IMTSEA, IMTSEA*, and IMTSEA** on the shape design problem of BWBUG, the best result of each row is highlighted.",
+      "headers": [
+        "Metric",
+        "IBEA",
+        "NSGA-III",
+        "IM-MOEA",
+        "IMTSEA",
+        "IMTSEA*",
+        "IMTSEA**"
+      ],
+      "rows": [
+        [
+          "IGD",
+          "$5.3338 \\mathrm{e}-3(1.64 \\mathrm{e}-3)$",
+          "$2.2403 \\mathrm{e}-3(1.05 \\mathrm{e}-3)$",
+          "$8.0522 \\mathrm{e}-3(1.35 \\mathrm{e}-3)$",
+          "$\\mathbf{1 . 8 5 7 6 e - 3}(5.62 \\mathrm{e}-4)$",
+          "$4.4031 \\mathrm{e}-3(5.71 \\mathrm{e}-4)$",
+          "$2.9645 \\mathrm{e}-3(9.43 \\mathrm{e}-4)$"
+        ],
+        [
+          "HV",
+          "$6.1006 \\mathrm{e}-1(4.50 \\mathrm{e}-3)$",
+          "$6.1833 \\mathrm{e}-1(4.78 \\mathrm{e}-3)$",
+          "$5.4709 \\mathrm{e}-1(1.24 \\mathrm{e}-2)$",
+          "$\\mathbf{6 . 2 2 3 0 e - 1}(4.18 \\mathrm{e}-3)$",
+          "$5.8851 \\mathrm{e}-1(8.46 \\mathrm{e}-3)$",
+          "$6.1388 \\mathrm{e}-1(4.43 \\mathrm{e}-3)$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": "12",
+      "table_title": "$C_{i}, C_{d}$, and $C_{i} / C_{d}$ of the baseline solution and solutions $\\mathrm{A}, \\mathrm{B}, \\mathrm{C}$, and D calculated by CFD simulations, where improvement of $C_{i} / C_{d}$ of each representative solution is highlighted.",
+      "headers": [
+        "",
+        "$C_{i}$",
+        "$C_{d}$",
+        "$C_{i} / C_{d}$"
+      ],
+      "rows": [
+        [
+          "Baseline Solution",
+          0.4384,
+          0.0314,
+          13.9809
+        ],
+        [
+          "Solution A",
+          0.565,
+          0.0359,
+          "$15.7466(\\uparrow 12.63 \\%)$"
+        ],
+        [
+          "Solution B",
+          0.5445,
+          0.0337,
+          "$16.1428(\\uparrow 15.46 \\%)$"
+        ],
+        [
+          "Solution C",
+          0.4084,
+          0.0246,
+          "$16.6136(\\uparrow 18.83 \\%)$"
+        ],
+        [
+          "Solution D",
+          0.3517,
+          0.0232,
+          "$15.1358(\\uparrow 8.26 \\%)$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    }
+  ]
+}

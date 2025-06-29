@@ -1,0 +1,421 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Efficient Surrogate Model Assisted Estimation of Distribution Algorithm for Expensive Optimization.md",
+    "filename": "Efficient Surrogate Model Assisted Estimation of Distribution Algorithm for Expensive Optimization.md",
+    "title": "Efficient Surrogate Model Assisted Estimation of Distribution Algorithm for Expensive Optimization",
+    "year": "2024"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Statistics of median results obtained by nine comparison algorithms on LZG and YLL test suites with $\\mathbf{n}=\\mathbf{2 0}$.",
+      "headers": [
+        "Problem",
+        "p-value",
+        "CMA-ES",
+        "FCPS-CoDE",
+        "EDALS",
+        "Skopt",
+        "GPEME",
+        "SAMSO",
+        "SA-EDA",
+        "ESAEDA*",
+        "ESAEDA**"
+      ],
+      "rows": [
+        [
+          1,
+          "7.15e-51",
+          "$\\begin{aligned} & \\text { 1.50e+02[9]j- } \\\\ & \\text { (4.25e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.30e+02[8]j- } \\\\ & \\text { (3.15e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 7.17e+00[7]j- } \\\\ & \\text { (1.56e+08) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.81e+00[4]j- } \\\\ & \\text { (2.29e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.20e-01[3]j- } \\\\ & \\text { (1.77e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.87e+01[5]j- } \\\\ & \\text { (2.52e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.34e-02[2]j- } \\\\ & \\text { (8.71e-03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.78e+01[6]j- } \\\\ & \\text { (9.94e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.17e-30[1] } \\\\ & \\text { (8.16e-31) } \\end{aligned}$"
+        ],
+        [
+          2,
+          "1.31e-41",
+          "$\\begin{aligned} & \\text { 3.03e+02[7]j- } \\\\ & \\text { (7.50e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.22e+02[8]j- } \\\\ & \\text { (1.05e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.37e+02[6]j- } \\\\ & \\text { (4.02e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 6.45e+02[9]j- } \\\\ & \\text { (1.62e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.27e+02[4]j- } \\\\ & \\text { (4.32e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.57e+01[1]j- } \\\\ & \\text { (2.47e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 7.07e+01[2]j- } \\\\ & \\text { (3.09e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.76e+02[5]j- } \\\\ & \\text { (3.59e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.16e+02[3] } \\\\ & \\text { (2.34e+01) } \\end{aligned}$"
+        ],
+        [
+          3,
+          "3.67e-45",
+          "$\\begin{aligned} & \\text { 1.59e+01[8]j- } \\\\ & \\text { (1.28e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.48e+00[6]j- } \\\\ & \\text { (1.00e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.33e+00[5]j- } \\\\ & \\text { (7.37e-08) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.49e+01[7]j- } \\\\ & \\text { (6.91e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.77e+00[3]j- } \\\\ & \\text { (5.52e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.83e+01[9]j- } \\\\ & \\text { (1.33e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.35e+00[2]j- } \\\\ & \\text { (3.84e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 7.48e+00[4]j- } \\\\ & \\text { (4.99e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.03e-14[1] } \\\\ & \\text { (7.71e-15) } \\end{aligned}$"
+        ],
+        [
+          4,
+          "5.29e-51",
+          "$\\begin{aligned} & \\text { 5.09e+01[8]j- } \\\\ & \\text { (1.06e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 5.46e+01[9]j- } \\\\ & \\text { (1.33e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.96e+01[7]j- } \\\\ & \\text { (7.62e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.09e+00[4]j- } \\\\ & \\text { (3.04e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.17e+00[3]j- } \\\\ & \\text { (8.76e-02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.06e+01[6]j- } \\\\ & \\text { (1.33e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.00e+01[6]j- } \\\\ & \\text { (1.45e-02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.99e+00[5]j- } \\\\ & \\text { (4.26e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.10e-01) } \\\\ & \\text { (2.10e-01) } \\end{aligned}$"
+        ],
+        [
+          1,
+          "2.40e-50",
+          "$\\begin{aligned} & \\text { 6.32e+03[9]j- } \\\\ & \\text { (1.98e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 5.37e+03[8]j- } \\\\ & \\text { (1.86e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.17e+03[7]j- } \\\\ & \\text { (5.02e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.07e+01[4]j- } \\\\ & \\text { (5.61e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.67e+01[3]j- } \\\\ & \\text { (1.09e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 6.73e+02[5]j- } \\\\ & \\text { (6.43e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.52e+00[2]j- } \\\\ & \\text { (5.62e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 8.39e+02[6]j- } \\\\ & \\text { (9.27e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 8.34e-29[1] } \\\\ & \\text { (2.13e-29) } \\end{aligned}$"
+        ],
+        [
+          2,
+          "7.83e-48",
+          "$\\begin{aligned} & \\text { 1.15e+02[7]j- } \\\\ & \\text { (2.20e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.41e+01[3]j- } \\\\ & \\text { (3.67e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.08e+04[9]j- } \\\\ & \\text { (3.36e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.03e+02[8]j- } \\\\ & \\text { (2.06e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.27e+02[5]j- } \\\\ & \\text { (1.04e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.66e+0[6]j- } \\\\ & \\text { (6.07e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.40e+01[2]j- } \\\\ & \\text { (1.72e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.14e-14[1] } \\\\ & \\text { (6.07e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.14e-14[1] } \\\\ & \\text { (1.05e+01) } \\end{aligned}$"
+        ],
+        [
+          3,
+          "9.73e-44",
+          "$\\begin{aligned} & \\text { 3.11e+06[8]j- } \\\\ & \\text { (1.43e+06) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 4.71e+06[9]j- } \\\\ & \\text { (2.84e+06) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.13e+06[6]j- } \\\\ & \\text { (5.76e+05) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.25e+06[7]j- } \\\\ & \\text { (1.27e+06) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.05e+05[5]j- } \\\\ & \\text { (1.60e+05) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.12e+05[3]j- } \\\\ & \\text { (1.36e+04) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 7.26e+04[2]j- } \\\\ & \\text { (4.21e+04) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.66e+05[4]j- } \\\\ & \\text { (7.04e+05) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.40e+04[1] } \\\\ & \\text { (2.36e+04) } \\end{aligned}$"
+        ],
+        [
+          6,
+          "7.13e-47",
+          "$\\begin{aligned} & \\text { 5.79e+03[8]j- } \\\\ & \\text { (1.20e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 6.26e+03[9]j- } \\\\ & \\text { (1.28e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 6.67e+03[6]j- } \\\\ & \\text { (5.04e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.0e+08[2]j- } \\\\ & \\text { (5.38e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.32e+01[3]j- } \\\\ & \\text { (1.06e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 8.59e+02[4]j- } \\\\ & \\text { (1.24e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.43e+08[1]j- } \\\\ & \\text { (1.26e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.09e+03[5]j- } \\\\ & \\text { (1.79e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 5.39e+03[7] } \\\\ & \\text { (4.16e+03) } \\end{aligned}$"
+        ],
+        [
+          7,
+          "3.93e-45",
+          "$\\begin{aligned} & \\text { 1.62e+08[6]j- } \\\\ & \\text { (6.91e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.09e+08[7]j- } \\\\ & \\text { (9.17e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 6.67e+0[4]j- } \\\\ & \\text { (2.75e-08) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.30e+08[8]j- } \\\\ & \\text { (8.29e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.90e-01[2]j- } \\\\ & \\text { (9.39e-02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.23e-01[3]j- } \\\\ & \\text { (1.59e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.71e-01[1]j- } \\\\ & \\text { (6.09e-02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 5.51e+00[9]j- } \\\\ & \\text { (1.80e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 8.51e-01[5] } \\\\ & \\text { (2.09e-01) } \\end{aligned}$"
+        ],
+        [
+          8,
+          "3.25e-46",
+          "$\\begin{aligned} & \\text { 5.71e+03[8]j- } \\\\ & \\text { (3.0e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 5.52e+03[6]j- } \\\\ & \\text { (2.88e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 4.66e+03[4]j- } \\\\ & \\text { (3.32e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 7.45e+03[9]j- } \\\\ & \\text { (1.05e+03) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 4.70e+03[5]j- } \\\\ & \\text { (7.05e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 5.67e+03[7]j- } \\\\ & \\text { (2.83e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.82e+03[2]j- } \\\\ & \\text { (4.92e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 4.45e+03[3]j- } \\\\ & \\text { (3.76e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.36e+03[2] } \\\\ & \\text { (2.57e+01) } \\end{aligned}$"
+        ],
+        [
+          10,
+          "9.13e-51",
+          "$\\begin{aligned} & \\text { 1.60e+0[8]j- } \\\\ & \\text { (1.90e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.45e+0[7]j- } \\\\ & \\text { (1.34e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.33e+0[6]j- } \\\\ & \\text { (9.54e-08) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.23e+08[3]j- } \\\\ & \\text { (4.86e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.23e+08[3]j- } \\\\ & \\text { (5.35e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.99e+01[9]j- } \\\\ & \\text { (2.80e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.46e-01[2]j- } \\\\ & \\text { (2.26e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.63e+00[4]j- } \\\\ & \\text { (5.17e-01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 7.55e-15[1] } \\\\ & \\text { (0.00e+00) } \\end{aligned}$"
+        ],
+        [
+          11,
+          "1.41e-49",
+          "$\\begin{aligned} & \\text { 5.48e+0[8]j- } \\\\ & \\text { (1.06e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 4.90e+0[8]j- } \\\\ & \\text { (1.24e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.34e+0[7]j- } \\\\ & \\text { (7.17e+00) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.07e+08[3]j- } \\\\ & \\text { (6.58e-02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.17e+08[4]j- } \\\\ & \\text { (9.31e-02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.98e+01[6]j- } \\\\ & \\text { (2.00e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.00e+00[2]j- } \\\\ & \\text { (2.78e-02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.09e+01[5]j- } \\\\ & \\text { (1.28e+01) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 3.27e-01[1] } \\\\ & \\text { (1.28e+01) } \\end{aligned}$"
+        ],
+        [
+          12,
+          "9.19e-44",
+          "$\\begin{aligned} & \\text { 6.08e+05[7]j- } \\\\ & \\text { (7.89e+05) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.46e+06[9]j- } \\\\ & \\text { (3.04e+06) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 6.09e+04[4]j- } \\\\ & \\text { (8.76e+04) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.13e+06[8]j- } \\\\ & \\text { (9.82e+05) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 4.29e+05[6]j- } \\\\ & \\text { (5.69e+05) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.23e+02[2]j- } \\\\ & \\text { (5.49e+02) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 2.07e+04[3]j- } \\\\ & \\text { (1.08e+05) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.33e+05[5]j- } \\\\ & \\text { (1.08e+05) } \\end{aligned}$",
+          "$\\begin{aligned} & \\text { 1.33e+01[1] } \\\\ & \\text { (6.57e+05) } \\end{aligned}$"
+        ],
+        [
+          "mean rank",
+          "",
+          7.24,
+          6.59,
+          5.41,
+          6.71,
+          4.35,
+          4.76,
+          2.71,
+          4.71,
+          2.53
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 11
+    },
+    {
+      "table_number": "2",
+      "table_title": "Statistics of median results obtained by six comparison algorithms on LEG and YLL test suites with $\\mathbf{n}=50$.",
+      "headers": [
+        "Problem",
+        "p-value",
+        "CMA-ES",
+        "FCPS-CoDE",
+        "EDALS",
+        "SAMSO",
+        "SA-EDA",
+        "ESAEDA"
+      ],
+      "rows": [
+        [
+          1,
+          "7.72e-18",
+          "$\\begin{gathered} 1.91 \\mathrm{e}+03[6] / \\mathrm{i} \\\\ (2.77 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.61 \\mathrm{e}+03[5] / \\mathrm{i} ; \\\\ (3.39 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.52 \\mathrm{e}+03[4] / \\mathrm{i} ; \\\\ (2.23 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.31 \\mathrm{e}+03[3] / \\mathrm{i} ; \\\\ (1.13 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 8.08 \\mathrm{e}+02[2] / \\mathrm{i} ; \\\\ (1.72 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 4.44 \\mathrm{e}+02[1] \\\\ (6.10 \\mathrm{e}+01) \\end{gathered}$"
+        ],
+        [
+          2,
+          "$1.08 \\mathrm{e}-11$",
+          "$\\begin{gathered} 2.09 \\mathrm{e}+03[6] / \\mathrm{i} \\\\ (4.12 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.90 \\mathrm{e}+03[5] / \\mathrm{i} ; \\\\ (5.11 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.78 \\mathrm{e}+03[4] / \\mathrm{i} ; \\\\ (2.84 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.58 \\mathrm{e}+03[3] / \\mathrm{e} ; \\\\ (1.70 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 1.33 \\mathrm{e}+03[2] / \\mathrm{i} ; \\\\ (2.86 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 7.15 \\mathrm{e}+02[1] \\\\ (1.43 \\mathrm{e}+02) \\end{gathered}$"
+        ],
+        [
+          3,
+          "$1.09 \\mathrm{e}-23$",
+          "$\\begin{gathered} 1.85 \\mathrm{e}+01[5] / \\mathrm{i} \\\\ (9.68 \\mathrm{e}-01) \\end{gathered}$",
+          "$\\begin{gathered} 1.75 \\mathrm{e}+01[3] / \\mathrm{i} ; \\\\ (6.00 \\mathrm{e}-01) \\end{gathered}$",
+          "$\\begin{gathered} 1.76 \\mathrm{e}+01[4] / \\mathrm{i} ; \\\\ (4.24 \\mathrm{e}-01) \\end{gathered}$",
+          "$\\begin{gathered} 1.86 \\mathrm{e}+01[6] / \\mathrm{i} ; \\\\ (1.18 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 1.56 \\mathrm{e}+01[2] / \\mathrm{i} ; \\\\ (6.55 \\mathrm{e}-01) \\end{gathered}$",
+          "$\\begin{gathered} 1.01 \\mathrm{e}+01[1] \\\\ (1.54 \\mathrm{e}+00) \\end{gathered}$"
+        ],
+        [
+          4,
+          "$3.01 \\mathrm{e}-17$",
+          "$\\begin{gathered} 2.38 \\mathrm{e}+02[3] / \\mathrm{i} \\\\ (3.80 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 2.69 \\mathrm{e}+02[5] / \\mathrm{i} ; \\\\ (6.72 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 2.41 \\mathrm{e}+02[4] / \\mathrm{i} ; \\\\ (2.86 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 6.19 \\mathrm{e}+02[6] / \\mathrm{i} ; \\\\ (3.66 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.73 \\mathrm{e}+02[2] / \\mathrm{i} ; \\\\ (2.23 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 5.22 \\mathrm{e}+01[1] \\\\ (2.29 \\mathrm{e}+01) \\end{gathered}$"
+        ],
+        [
+          1,
+          "$1.19 \\mathrm{e}-19$",
+          "$\\begin{gathered} 2.61 \\mathrm{e}+04[3] / \\mathrm{i} \\\\ (3.48 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 2.95 \\mathrm{e}+04[5] / \\mathrm{i} ; \\\\ (5.86 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 2.77 \\mathrm{e}+04[4] / \\mathrm{i} ; \\\\ (3.92 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 6.69 \\mathrm{e}+04[6] / \\mathrm{i} ; \\\\ (3.70 \\mathrm{e}+04) \\end{gathered}$",
+          "$\\begin{gathered} 1.44 \\mathrm{e}+04[2] / \\mathrm{i} ; \\\\ (2.89 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 5.85 \\mathrm{e}+03[1] \\\\ (2.67 \\mathrm{e}+03) \\end{gathered}$"
+        ],
+        [
+          2,
+          "$1.72 \\mathrm{e}-28$",
+          "$\\begin{gathered} 8.62 \\mathrm{e}+13[5] / \\mathrm{i} \\\\ (3.40 \\mathrm{e}+14) \\end{gathered}$",
+          "$\\begin{gathered} 8.92 \\mathrm{e}+01[2] / \\mathrm{i} ; \\\\ (8.24 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 2.79 \\mathrm{e}+04[3] / \\mathrm{i} ; \\\\ (9.04 \\mathrm{e}+04) \\end{gathered}$",
+          "$\\begin{gathered} 1.05 \\mathrm{e}+18[6] / \\mathrm{i} ; \\\\ (3.77 \\mathrm{e}+18) \\end{gathered}$",
+          "$\\begin{gathered} 1.64 \\mathrm{e}+07[4] / \\mathrm{i} ; \\\\ (5.33 \\mathrm{e}+07) \\end{gathered}$",
+          "$\\begin{gathered} 4.32 \\mathrm{e}+01[1] \\\\ (4.28 \\mathrm{e}+00) \\end{gathered}$"
+        ],
+        [
+          3,
+          "2.05e-23",
+          "$\\begin{gathered} 1.36 \\mathrm{e}+05[4] / \\mathrm{i} \\\\ (2.57 \\mathrm{e}+04) \\end{gathered}$",
+          "$\\begin{gathered} 8.24 \\mathrm{e}+04[2] / \\mathrm{i} ; \\\\ (1.68 \\mathrm{e}+04) \\end{gathered}$",
+          "$\\begin{gathered} 1.58 \\mathrm{e}+05[5] / \\mathrm{i} ; \\\\ (2.51 \\mathrm{e}+04) \\end{gathered}$",
+          "$\\begin{gathered} 2.97 \\mathrm{e}+05[6] / \\mathrm{i} ; \\\\ (9.31 \\mathrm{e}+04) \\end{gathered}$",
+          "$\\begin{gathered} 1.36 \\mathrm{e}+04[1] \\\\ (2.49 \\mathrm{e}+04) \\end{gathered}$",
+          "$\\begin{gathered} 6.91 \\mathrm{e}+04[1] \\\\ (1.47 \\mathrm{e}+04) \\end{gathered}$"
+        ],
+        [
+          4,
+          "$1.48 \\mathrm{e}-20$",
+          "$\\begin{gathered} 9.16 \\mathrm{e}+01[6] / \\mathrm{i} \\\\ (1.26 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 5.88 \\mathrm{e}+01[3] / \\mathrm{e} ; \\\\ (5.58 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 5.80 \\mathrm{e}+01[1] / \\mathrm{e} ; \\\\ (2.78 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 8.74 \\mathrm{e}+01[5] / \\mathrm{i} ; \\\\ (8.06 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 5.85 \\mathrm{e}+01[2] / \\mathrm{e} ; \\\\ (2.72 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 6.94 \\mathrm{e}+01[4] \\\\ (1.57 \\mathrm{e}+01) \\end{gathered}$"
+        ],
+        [
+          5,
+          "1.58e-23",
+          "$\\begin{gathered} 3.78 \\mathrm{e}+07[4] / \\mathrm{i} \\\\ (1.25 \\mathrm{e}+07) \\end{gathered}$",
+          "$\\begin{gathered} 4.49 \\mathrm{e}+07[5] / \\mathrm{i} ; \\\\ (1.82 \\mathrm{e}+07) \\end{gathered}$",
+          "$\\begin{gathered} 2.93 \\mathrm{e}+07[3] / \\mathrm{i} ; \\\\ (5.30 \\mathrm{e}+06) \\end{gathered}$",
+          "$\\begin{gathered} 1.55 \\mathrm{e}+08[6] / \\mathrm{i} ; \\\\ (8.04 \\mathrm{e}+07) \\end{gathered}$",
+          "$\\begin{gathered} 1.52 \\mathrm{e}+07[2] / \\mathrm{i} ; \\\\ (4.04 \\mathrm{e}+06) \\end{gathered}$",
+          "$\\begin{gathered} 3.29 \\mathrm{e}+06[1] \\\\ (3.52 \\mathrm{e}+06) \\end{gathered}$"
+        ],
+        [
+          6,
+          "8.96 e-24",
+          "$\\begin{gathered} 2.82 \\mathrm{e}+04[4] / \\mathrm{i} \\\\ (5.82 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 2.92 \\mathrm{e}+04[5] / \\mathrm{i} ; \\\\ (7.35 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 2.74 \\mathrm{e}+04[3] / \\mathrm{i} ; \\\\ (4.41 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 3.82 \\mathrm{e}+04[6] / \\mathrm{i} ; \\\\ (3.06 \\mathrm{e}+04) \\end{gathered}$",
+          "$\\begin{gathered} 1.50 \\mathrm{e}+04[2] / \\mathrm{i} ; \\\\ (3.03 \\mathrm{e}+03) \\end{gathered}$",
+          "$\\begin{gathered} 5.81 \\mathrm{e}+03[1] \\\\ (1.98 \\mathrm{e}+03) \\end{gathered}$"
+        ],
+        [
+          7,
+          "2.76 e-19",
+          "$\\begin{gathered} 3.14 \\mathrm{e}+01[4] / \\mathrm{e} ; \\\\ (9.15 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 2.96 \\mathrm{e}+01[3] / \\mathrm{e} ; \\\\ (1.28 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 2.17 \\mathrm{e}+01[2] / \\mathrm{e} ; \\\\ (4.75 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 1.31 \\mathrm{e}+02[6] / \\mathrm{i} ; \\\\ (7.91 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 1.49 \\mathrm{e}+01[1] / \\mathrm{e} ; \\\\ (3.87 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 8.26 \\mathrm{e}+01[5] \\\\ (2.20 \\mathrm{e}+01) \\end{gathered}$"
+        ],
+        [
+          8,
+          "1.91 e-19",
+          "$\\begin{gathered} 1.65 \\mathrm{e}+04[5] / \\mathrm{i} \\\\ (5.98 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.63 \\mathrm{e}+04[4] / \\mathrm{i} ; \\\\ (6.11 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.51 \\mathrm{e}+04[2] / \\mathrm{e} ; \\\\ (5.84 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.66 \\mathrm{e}+04[6] / \\mathrm{i} ; \\\\ (6.62 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.38 \\mathrm{e}+04[1] / \\mathrm{e} ; \\\\ (8.40 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.60 \\mathrm{e}+04[3] \\\\ (4.64 \\mathrm{e}+02) \\end{gathered}$"
+        ],
+        [
+          9,
+          "1.63e-20",
+          "$\\begin{gathered} 6.21 \\mathrm{e}+02[6] / \\mathrm{i} \\\\ (4.52 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 3.80 \\mathrm{e}+02[1] / \\mathrm{e} ; \\\\ (3.15 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 5.19 \\mathrm{e}+02[5] / \\mathrm{i} ; \\\\ (1.78 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 4.97 \\mathrm{e}+02[4] / \\mathrm{e} ; \\\\ (1.11 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 4.87 \\mathrm{e}+02[3] / \\mathrm{e} ; \\\\ (2.41 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 4.85 \\mathrm{e}+02[2] \\\\ (2.54 \\mathrm{e}+01) \\end{gathered}$"
+        ],
+        [
+          10,
+          "7.93 e-25",
+          "$\\begin{gathered} 1.89 \\mathrm{e}+01[5] / \\mathrm{i} \\\\ (1.45 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 1.72 \\mathrm{e}+01[3] / \\mathrm{i} ; \\\\ (8.67 \\mathrm{e}-01) \\end{gathered}$",
+          "$\\begin{gathered} 1.75 \\mathrm{e}+01[4] / \\mathrm{i} ; \\\\ (3.88 \\mathrm{e}-01) \\end{gathered}$",
+          "$\\begin{gathered} 1.94 \\mathrm{e}+01[6] / \\mathrm{i} \\\\ (2.95 \\mathrm{e}+00) \\end{gathered}$",
+          "$\\begin{gathered} 5.25 \\mathrm{e}+00[2] / \\mathrm{i} \\\\ (2.93 \\mathrm{e}-01) \\end{gathered}$",
+          "$\\begin{gathered} 4.51 \\mathrm{e}+00[1] \\\\ (2.93 \\mathrm{e}-01) \\end{gathered}$"
+        ],
+        [
+          11,
+          "4.20 e-18",
+          "$\\begin{gathered} 2.47 \\mathrm{e}+02[4] / \\mathrm{i} \\\\ (3.82 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 2.52 \\mathrm{e}+02[5] / \\mathrm{i} ; \\\\ (6.26 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 2.42 \\mathrm{e}+02[3] / \\mathrm{i} ; \\\\ (2.55 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 6.31 \\mathrm{e}+02[6] / \\mathrm{i} \\\\ (3.41 \\mathrm{e}+02) \\end{gathered}$",
+          "$\\begin{gathered} 1.61 \\mathrm{e}+02[2] / \\mathrm{i} ; \\\\ (3.08 \\mathrm{e}+01) \\end{gathered}$",
+          "$\\begin{gathered} 4.90 \\mathrm{e}+01[1] \\\\ (2.18 \\mathrm{e}+01) \\end{gathered}$"
+        ],
+        [
+          12,
+          "2.92 e-20",
+          "$\\begin{gathered} 4.07 \\mathrm{e}+07[4] / \\mathrm{i} \\\\ (2.32 \\mathrm{e}+07) \\end{gathered}$",
+          "$\\begin{gathered} 5.44 \\mathrm{e}+07[5] / \\mathrm{i} ; \\\\ (3.49 \\mathrm{e}+07) \\end{gathered}$",
+          "$\\begin{gathered} 1.64 \\mathrm{e}+07[3] / \\mathrm{i} ; \\\\ (5.98 \\mathrm{e}+06) \\end{gathered}$",
+          "$\\begin{gathered} 1.10 \\mathrm{e}+08[6] / \\mathrm{i} \\\\ (3.16 \\mathrm{e}+08) \\end{gathered}$",
+          "$\\begin{gathered} 1.17 \\mathrm{e}+07[2] / \\mathrm{i} ; \\\\ (4.77 \\mathrm{e}+06) \\end{gathered}$",
+          "$\\begin{gathered} 1.77 \\mathrm{e}+06[1] \\\\ (5.01 \\mathrm{e}+06) \\end{gathered}$"
+        ],
+        [
+          13,
+          "1.88 e-23",
+          "$\\begin{gathered} 1.03 \\mathrm{e}+08[2] / \\mathrm{e} ; \\\\ (3.96 \\mathrm{e}+07) \\end{gathered}$",
+          "$\\begin{gathered} 1.58 \\mathrm{e}+08[3] / \\mathrm{e} ; \\\\ (1.01 \\mathrm{e}+08) \\end{gathered}$",
+          "$\\begin{gathered} 7.53 \\mathrm{e}+07[1] / \\mathrm{e} ; \\\\ (2.19 \\mathrm{e}+07) \\end{gathered}$",
+          "$\\begin{gathered} 8.32 \\mathrm{e}+08[4] / \\mathrm{e} ; \\\\ (6.39 \\mathrm{e}+08) \\end{gathered}$",
+          "$\\begin{gathered} 2.03 \\mathrm{e}+12[6] / \\mathrm{i} ; \\\\ (7.69 \\mathrm{e}+11) \\end{gathered}$",
+          "$\\begin{gathered} 1.05 \\mathrm{e}+12[5] \\\\ (2.07 \\mathrm{e}+12) \\end{gathered}$"
+        ],
+        [
+          "mean rank",
+          "",
+          4.47,
+          3.76,
+          3.24,
+          5.35,
+          2.35,
+          1.82
+        ],
+        [
+          "$+/-1 / 2$",
+          "",
+          2150,
+          4130,
+          4130,
+          "$1 / 14 / 2$",
+          3131,
+          ""
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 8
+    }
+  ]
+}

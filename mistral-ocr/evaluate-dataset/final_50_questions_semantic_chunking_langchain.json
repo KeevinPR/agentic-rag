@@ -1,0 +1,829 @@
+{
+  "metadata": {
+    "generation_date": "2025-06-24 01:02:08",
+    "total_questions": 50,
+    "generation_method": "chunk_based",
+    "statistics": {
+      "successful": 50,
+      "failed_generation": 0,
+      "total_questions": 50
+    }
+  },
+  "questions": [
+    {
+      "question": "In the context of EDAs, how does the algorithmic mechanism of roulette wheel selection influence the batch assignment of workpieces, specifically when a batch reaches its maximum capacity S?",
+      "topics": [
+        "selection",
+        "roulette wheel selection",
+        "batch assignment"
+      ],
+      "answer": "Within the described EDA, roulette wheel selection is used to assign workpieces to batches (\\(P_i, P_e, ..., P_{Max}\\)). If a batch reaches its maximum capacity \\(S\\), the algorithm sets all elements in the \\(k\\)-th column of matrix \\(A\\) to 0. This means no new workpieces are added to that batch. The remaining columns are then normalized, effectively removing the full batch from consideration during roulette wheel selection for subsequent workpiece assignments. The probabilities \\((Z(i, 1), Z(i, 2) ... Z(i, i-1))\\) which represent the initial probabilities that a workpiece is in the same batch as another, are adjusted during sampling to reflect this constraint.",
+      "chunk_id": 485,
+      "paper_id": "Research of Batch Scheduling with Arrival Time Based on Estimation of Distribution Algorithm",
+      "paper_title": "Research of Batch Scheduling with Arrival Time Based on Estimation of Distribution Algorithm",
+      "paper_year": "2014",
+      "chunk_content": "For a certain workpiece, the batch to which it belongs is determined through roulette wheel selection. In the sampling process, if batch $\\left(\\mathrm{P}_{\\mathrm{i}}, \\mathrm{P}_{\\mathrm{e} . .}, \\mathrm{P}_{\\text {Max }}\\right)$ has already reached the maximum capacity S , then all the elements in the k -th column in matrix A are set as 0 (that is, no new workpieces are included in the batch.), and the rest columns are normalized. After the distributions of all workpieces are accomplished, the latest arrival time $\\mathrm{i} \\neq$ of the workpiece in each batch can be obtained. According to the sequence of $\\left(\\mathrm{j}_{1}, \\mathrm{j}_{2} \\ldots \\mathrm{j}_{\\mathrm{i}-1}\\right)$, each batch is processed on the batch machine. N individuals are obtained according to the procedures above, and the longest completion times of each individual are obtained. The first $\\delta(0<\\delta<1$, which indicates the proportion of the chosen superior individuals in the whole group) individuals with the highest fitness values are selected as the superior individual BetterGroup. Step 3 Initializing the Probability Model\nFor workpiece $(1 \\leq \\mathrm{j} \\leq \\mathrm{i})$, the numbers $\\left(\\mathrm{c}_{1}, \\mathrm{c}_{2}, \\ldots, \\mathrm{c}_{\\mathrm{i}-1}\\right)$ of the workpieces $\\left(\\mathrm{j}_{1}, \\mathrm{j}_{2}, \\ldots, \\mathrm{j}_{\\mathrm{i}-1}\\right)$ in superior group BetterGroup belonging to the same batch as workpiece $(1 \\leq \\mathrm{j}<i)$ are calculated. Moreover, $\\left(\\mathrm{c}_{1} /(\\delta \\times \\mathrm{N}), \\mathrm{c}_{2} /(\\delta \\times \\mathrm{N}), \\ldots\\right.$, $\\left.\\mathrm{c}_{\\mathrm{i}-1} /(\\delta \\times \\mathrm{N})\\right)$ are assigned to $(\\mathrm{Z}(\\mathrm{i}, 1), \\mathrm{Z}(\\mathrm{i}, 2) \\ldots \\mathrm{Z}(\\mathrm{i}, \\mathrm{i}-$ 1) ), respectively. They represent the initial probabilities that workpiece $\\mathrm{O}\\left(\\mathrm{n}^{2} / 2\\right)$ is in the same batch as $\\left(\\mathrm{j}_{1}, \\mathrm{j}_{2}, \\ldots\\right.$, $\\mathrm{j}_{\\mathrm{i}-1}$ ). In addition, the numbers $c_{i}$ of the workpieces $\\left(j_{1}\\right.$,\n\n$\\left.\\mathrm{j}_{2}, \\ldots, \\mathrm{j}_{\\mathrm{i}-1}\\right)$ in superior group BetterGroup belonging to different batches as $\\mathrm{C}^{*}$ are calculated. Then $\\mathrm{c}_{\\mathrm{i}} /(\\tilde{n} \\times \\mathrm{N})$ is assigned to $\\mathrm{Z}\\left(\\mathrm{j}_{\\mathrm{i}} \\mathrm{j}\\right)$, which represents the initial probability that workpiece $(20,40,60,80,100)$ is from different batches as $0.5,1.0,1.5,2.0$. The rest rows are assigned with the initial values according to the procedures above, and each row of the probability model is normalized to obtain the initialized probability model. ## C. Individual Sampling\n\nThe process of obtaining a new individual through the probability model is called sampling. In the algorithm proposed in this paper, sampling is performed according to the arrival sequence of workpieces. For the first arriving workpiece $\\mathrm{j}_{1}$ in the group, it can choose any batch from $\\left(\\mathrm{P}_{\\mathrm{i}}, \\mathrm{P}_{\\mathrm{e} . .}, \\mathrm{P}_{\\text {Max }}\\right)$. For the workpiece $\\left(\\beta=0.001\\right.$ ( $\\mathrm{i} \\neq$ 1 ), it can choose the same batch as a certain workpiece in $\\left(\\mathrm{j}_{1}, \\mathrm{j}_{2} \\ldots \\mathrm{j}_{\\mathrm{i}-1}\\right)$ through roulette wheel selection or a different batch from $\\mathrm{C}_{\\mathrm{A}}$ in $\\mathrm{C}_{\\max } \\cdot \\mathrm{I}_{\\mathrm{A}}$ if the batch is still vacant. If there is no such batch, then a vacant batch is randomly chosen. For the batch without any vacant positions, since no new workpieces can be added to it, the probability that the workpiece to be sampled is in the same batch as the workpiece is supposed as 0 . Then the model is normalized again. In this way, the process is performed until all the workpieces are distributed. After all the compatible groups are distributed, the latest arrival time $R_{j}+O_{j}<R_{C}$ of the workpiece in each batch can be obtained. Each batch is processed on the batch machine according to $B=$.",
+      "question_type": "algorithmic mechanism",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:10",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "For implementing an Estimation of Distribution Algorithm hybridized with the SVNS procedure, what parameter settings are critical for balancing exploration and exploitation, specifically regarding the probability $p^c$ and the VNS algorithm's maximum iterations?",
+      "topics": [
+        "genetic"
+      ],
+      "answer": "When using the Hybrid EDA, the probability $p^c$ controls the application of the SVNS procedure. Initially, $p^c$ is set to 0.5, accepting solutions with a makespan within 1% of the best found so far. However, $p^c$ is dynamically adjusted using the formula $p^{c}=\\max \\{\\exp \\left(\\frac{B D}{\\alpha}\\right), \\varepsilon\\}$, with $\\varepsilon=0.01$. The maximum number of iterations for the VNS algorithm (iter) is set to 3, and the coefficient is fixed at 2. These parameters influence the trade-off between exploring new solutions and exploiting promising regions found by the EDA.",
+      "chunk_id": 5501,
+      "paper_id": "An Estimation of Distribution Algorithm for Flowshop Scheduling with Limited Buffers",
+      "paper_title": "An Estimation of Distribution Algorithm for Flowshop Scheduling with Limited Buffers",
+      "paper_year": "2009",
+      "chunk_content": "5. # Hybrid EDA \n\nInitialize the population [FORMULA201] using random permutation;\nloop\nselect [FORMULA202] individuals from [FORMULA203] of best individuals in the population;\nselect [FORMULA204] at random from the [FORMULA205] selected individuals;\nfor $k=1, \\ldots, n$\nupdate [FORMULA207] using the [FORMULA208] first job not already scheduled from [FORMULA209];\ncompute the probability [FORMULA210] for each job $j \\in \\Omega_{k}$;\n$s_{\\text {current }, k}$ receives the job selected from [FORMULA213] following the computed probability;\nend for\ncompute [FORMULA214];\nif (rand $\\leq p^{c}$ ) then // rand denotes a random value uniformly distributed in the range [FORMULA216]\nApply the SVNS procedure to improve [FORMULA217];\nend if\nif (the fitness of new created induvidual [FORMULA218] is better than the worst individual in the population) then\nreplace the latter by [FORMULA219];\nend if\nuntil (stopping criterion is reached)\n\nFig. 5 EDA with SVNS procedure\n\n5 Experimental Results and Comparative Study\n\nThe algorithm was coded in C++ programming language. All experiments with EDA for FSP with limited buffers, with respect to the makespan criterion, were run in Windows XP on a desktop PC with Intel Pentium IV, 3.2 GHz processor and 512 MB memory. EDA was tested for 29 instances distributed as follows: 8 instances of Carlier [3] and 21 instances of Reeves [27]. All results were obtained after 20 replications for each instance. The corresponding parameters of EDA were set, experimentally, to the following values: $P=20, \\delta_{1}=\\delta_{2}=4 / n$, the number of the selected parents $M=3$, the number of generated offspring $O=3$. Numerically, $p^{c}=0.5$ leads to the acceptance of a sequence with a makespan relatively superior by $1 \\%$ to the best value of the makespan found so far. So, thereafter we determined [FORMULA225] according to this formula: $p^{c}=\\max \\left\\{\\exp \\left(\\frac{B D}{\\alpha}\\right), \\varepsilon\\right\\}$, with $\\varepsilon=0.01$. The maximum number of iterations of VNS algorithm (iter [FORMULA228] ) was set at 3 and the coefficient [FORMULA229] was fixed to 2 . The performance measure employed in our numerical study was the average relative percentage deviation in the makespan:\n\n$$\n\\Delta_{\\text {avg }}=\\frac{\\sum_{i=1}^{R}\\left(\\frac{H e u_{i}-L B}{L B}\\right)}{R} \\times 100\n$$\n\n$\\mathrm{Heu}_{i}$ is the objective value of the solution found by our algorithm at the [FORMULA232] replication and $L B$ (Lower Bound) is the best known value of makespan when the size of the buffer is infinite. The comparative approaches used in this study consist of the representative methods employed for solving this problem in the literature, including Hybrid Genetic Algorithm (HGA) of Wang et al.",
+      "question_type": "practical application",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:11",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Regarding the basic framework of Estimation of Distribution Algorithms (EDAs), how is the probability model updated in Step 4, and what are the general considerations for selecting different concrete realization methods based on the complexity of probability models?",
+      "topics": [
+        "complexity"
+      ],
+      "answer": "In the basic framework of EDAs, Step 4 involves updating the probability model. The specific method for updating this model is not explicitly defined, but the description indicates that different concrete realization methods of EDAs exist, and their selection depends on the complexity of the probability models employed. The complexity of probability models is a key factor in determining the appropriate sampling methods and the overall approach to representing relations between variables in the problem domain.",
+      "chunk_id": 6109,
+      "paper_id": "An Efficient Estimation of Distribution Algorithm for Job Shop Scheduling Problem",
+      "paper_title": "An Efficient Estimation of Distribution Algorithm for Job Shop Scheduling Problem",
+      "paper_year": "2010",
+      "chunk_content": "Finally, Section 5 summarizes the contribution of this paper. # 2 Problems Description \n\n2.1 Job Shop Scheduling Problem\n\nThe job shop scheduling problem can be briefly described as follows[2]. There are n jobs to be processed through m machines. Each job consists of a sequence of operations. The operations of each job must be processed in the given sequence. The processing time is fixed and known. There are several constraints on jobs and machines as follows: 1) There are precedence constraints among operations of one job and there are no precedence constraints among operations of different job; 2) Each machine can process at most one operation at a time interval, and it cannot be interrupted; and 3) At most one operation of each job can be processed at a time interval. The objective of JSP is determining the appropriate operation sequences for all jobs that minimizes makespan $\\left(\\widehat{C_{\\max }}\\right)$. ### 2.2 Basic Framework of EDAs\n\nEDAs has introduced a new paradigm of evolutionary computation, representing relations between the variables involved in the problem domain by building probability model. According to the complexity of probability models and different sampling methods, EDAs has a lot of different concrete realization methods. Main steps are summarized as follows:\n\nStep 1. Generate initial population. Step 2. Evaluate population. Constructed probability model according to the information of some better individuals selected from population. Step 3. Generate new population sampling from the constructed model, evaluate new population. Step 4. Update the probability model.",
+      "question_type": "process",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:02:13",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "What aspects of PMBGNP are mentioned as being detailed in the sections described?",
+      "topics": [
+        "algorithm"
+      ],
+      "answer": "The original framework of PMBGNP in the discrete domain is introduced in Section 2. Section 3 explains the extension of PMBGNP to the continuous domain.",
+      "chunk_id": 3808,
+      "paper_id": "Continuous probabilistic model building genetic network programming using reinforcement learning",
+      "paper_title": "Continuous probabilistic model building genetic network programming using reinforcement learning",
+      "paper_year": "2015",
+      "chunk_content": "The rest of this paper is organized as follows. Section 2 briefly introduces the original framework of PMBGNP in the discrete domain. In Section 3, extending PMBGNP to continuous domain is\nexplained in details. The experimental study is shown in Section 4. Finally we conclude this paper in Section 5. ## 2.",
+      "question_type": "advantage",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:14",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "To implement the described test problem generator for evaluating Estimation of Distribution Algorithms (EDAs) in a dynamic environment, what programming considerations are essential when representing and manipulating the Gaussian functions that define the global and local optima?",
+      "topics": [
+        "fitness"
+      ],
+      "answer": "When implementing the test problem generator, each Gaussian function needs to be represented by its mean vector and a scaling factor. The scaling factor determines the peak fitness value ($f_{\\text{global}}$ or $f_{\\text{local}}$). To simulate the dynamic environment, code must include a mechanism to relocate the global optimum to a randomly generated location at each time step, while simultaneously moving the local optimum to the previous location of the global optimum. The fitness evaluation should then determine the fitness value of an individual by computing the output of both Gaussian functions and selecting the higher value.",
+      "chunk_id": 4704,
+      "paper_id": "Extending a class of continuous estimation of distribution algorithms to dynamic problems",
+      "paper_title": "Extending a class of continuous estimation of distribution algorithms to dynamic problems",
+      "paper_year": "2008",
+      "chunk_content": "In this paper, we restricted our attention to a series of test problems with one global optimum and one local optimum. A test problem generator was employed [5] to generate the stationary test problems as the foundation. Each test problem consisted of two Gaussian functions. One Gaussian function was scaled by a factor so that its peak value was equal to $f_{\\text {global }}$ (the predefined fitness value of the global optimum) and consequently its mean vector was the global optimum. The other Gaussian function (representing the local optimum) was also scaled so that its peak value was equal to $f_{\\text {local }}$ (the predefined fitness value of the local optimum). The fitness value of an individual was determined by the Gaussian function that gave it the highest value. Each time when the problem was due to change, the global optimum was moved to a randomly generated location while the local optimum was moved to the original location of the global optimum. By doing so, individuals converging around the previous global optimum would still have reasonably high fitness values in the new problem (better than most of randomly generated individuals in the search space), which may make it difficult for [FORMULA68] to reactivate its primary model. A 1D example is plotted below where Fig.",
+      "question_type": "implementation focused",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:16",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "In the MORBM sampling technique, what criterion, derived from the RBM's structure, is used to select solutions from the expanded sample set, and how does this criterion balance exploration and exploitation during the search process?",
+      "topics": [
+        "search"
+      ],
+      "answer": "The MORBM sampling technique uses the 'energy' value of solutions, computed based on the trained weights and biases of the RBM, as the primary criterion for selection. Lower energy values, indicating solutions within the learned topology, are preferred as they represent stable states. However, to promote exploration, the algorithm retains the flexibility to select solutions with higher energy values, which represent solutions outside the learned topology. The algorithm samples N*M solutions, reconstructs hidden unit states, and then computes the energy for each solution to inform the selection process.",
+      "chunk_id": 6292,
+      "paper_id": "An investigation on sampling technique for multi-objective restricted Boltzmann machine",
+      "paper_title": "An Investigation on Sampling Technique for Multi-objective Restricted Boltzmann Machine",
+      "paper_year": "2010",
+      "chunk_content": "Pseudo code for MORBM\n\nIII. PROPOSED SAMPLING TECHNIQUE\n\nOne of the main characteristics of MORBM is its capability to learn the multivariate dependencies between variables. This information is stored in the synaptic weights and biases of the network. The final probability distribution is constructed by clamping this information into the marginal probability for each decision variable or input unit in the network. The offspring for next generation are then sampled from the built probabilistic model. The direct sampling applied in MORBM may, however, limit the production of appropriate solutions if the decision variables are highly correlated or in high dimension. This is because marginal probability distribution considers the distribution of the particular decision variable but not the correlation between variables. One way to tackle this problem is to sample infinite number of solutions. This may increase the possible combination of the solutions and thus increase the chance of producing fitter individuals. However, sampling of an infinitely large number ( $M$ times) of solutions may lead to an increase in population size and the fitness evaluations. It is known that some real world problems are very time consuming; thus, the impracticality of such an algorithm. To deal with this problem, energy is taken into consideration. Energy value will serve as a main criterion to choose $(\\alpha)$ solutions out of $N x M$ solutions, where $\\mathrm{C}++$ is a multiplier with $M>1$. The energy value is used as a lower energy implies that the solutions are in stable state while a higher energy means that the solutions are not in energy equilibrium. The proposed sampling algorithm will, therefore, prefer solutions with lower energies. As probabilistic modeling only models the previous best topology, the solutions which are located inside the topology are stable (lower energy) in term of energy equilibrium. On the other hand, the solutions out of this topology (higher energy) may consider unstable but not unfit. Therefore, it is better to give the algorithm the flexibility to choose solutions with high energy in order to increase the exploration in searching. Basing on this argument, the following sampling technique is proposed (Fig. 3). First of all, $x$ solutions will be sampled according to Eq. 1 and stored in $z . z$ will become input data for RBM. Based on $z$, the corresponding state for hidden unit [FORMULA60] will be constructed according to Eq. 2. By using $h_{j}, z$, and the previously trained weights and biases, the energy for each of the solution in [FORMULA62] is computed\n\nBegin\n\nGiven marginal probability of each variable, $P\\left(v_{i}\\right)$\n\n1. Sample $N^{*} M$ solutions according to Eq. 1 and store in [FORMULA65]. 2. Reconstruct the state for hidden units based on all solutions produced in (1), according to Eq. 2.",
+      "question_type": "evaluation metrics",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:02:18",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "Within the framework of Estimation of Distribution Algorithms, what mathematical principles govern the update of the probabilistic model using the Dirichlet-Multinomial compound distribution?",
+      "topics": [
+        "convergence"
+      ],
+      "answer": "The update of the probabilistic model in the described EDA relies on the Dirichlet-Multinomial compound distribution. Specifically, the counts of words in a document representing an item follow a Multinomial distribution, with its parameter subject to a Dirichlet distribution. The posterior distribution, denoted as $p(\\boldsymbol{\\mu} | D, \\boldsymbol{\\alpha})$, is obtained by multiplying the prior distribution $p(\\boldsymbol{\\mu} | \\boldsymbol{\\alpha}) = \\operatorname{Dir}(\\boldsymbol{\\mu} | \\boldsymbol{\\alpha})$ by the likelihood function $p(D | \\boldsymbol{\\mu}) = \\operatorname{Mult}(\\boldsymbol{m} | \\boldsymbol{\\mu}, N)$. This results in the equation $p(\\boldsymbol{\\mu} | D, \\boldsymbol{\\alpha}) \\propto p(D | \\boldsymbol{\\mu}) p(\\boldsymbol{\\mu} | \\boldsymbol{\\alpha}) \\propto \\prod_{v=1}^{|V|} \\mu_{v}^{n_{v}+D_{v}-1}$, where $|V|$ represents the size of the vocabulary, $\\mu_v$ represents a parameter, $n_v$ represents a count, and $D_v$ represents another count. The parameter update is also viewed through the lens of MCMC (Markov-chain Monte-Carlo), and Gelman-Rubin convergence diagnostic is used.",
+      "chunk_id": 8369,
+      "paper_id": "Language model based interactive estimation of distribution algorithm",
+      "paper_title": "Language model based interactive estimation of distribution algorithm",
+      "paper_year": "2020",
+      "chunk_content": "However, users are unable to understand them. To humans, $\\varepsilon$ is meaningless for evaluation. We have to locate the items that are most similar to these individuals, which can be described with the similarity between the associated semantic vectors. Based on the word frequency, we first take a certain number of words from vocabulary to form the \"document\" corresponding to each individual and adopt Doc2Vec to convert them into vectors, i.e., Doc2Vec( $\\bullet 100$ ). By comparing Cosine similarity, we, therefore, locate these mostsimilar items that have not been evaluated for user evaluation. The $\\cong 300$ candidates that are most similar to the generated individuals in vector space are selected and shown to the user for further interactive evaluation. There exists a notation discrepancy between here and $|d o c|$ document $\\dagger$ discussed in Section 3.1 since these individuals that are generated through sampling correspond to word combinations ignoring ordering. The update of the probabilistic model is then detailed. The offspring generation of EDA relies heavily on the Dirichlet-Multinomial compound distribution, i.e. counts of the words included in a document that represents an item follow a Multinomial distribution whose parameter subjects to a Dirichlet distribution. The posterior distribution for $60 \\%$, i.e. $p(\\boldsymbol{\\mu} \\mid D, \\boldsymbol{\\alpha})$ is obtained through multiplying the prior $p(\\boldsymbol{\\mu} \\mid \\boldsymbol{\\alpha})=\\operatorname{Dir}(\\boldsymbol{\\mu} \\mid \\boldsymbol{\\alpha})$ by the likelihood function $p(D \\mid \\boldsymbol{\\mu})=\\operatorname{Mult}(\\boldsymbol{m} \\mid \\boldsymbol{\\mu}, N)$. It goes in the form\n$p(\\boldsymbol{\\mu} \\mid D, \\boldsymbol{\\alpha}) \\propto p(D \\mid \\boldsymbol{\\mu}) p(\\boldsymbol{\\mu} \\mid \\boldsymbol{\\alpha}) \\propto \\prod_{v=1}^{|V|} \\mu_{v}^{n_{v}+D_{v}-1}$\nwhere $|V|$ is the size of vocabulary, and more details can be found in [62]. The steps regarding the parameter update of the compound distribution are explained from the viewpoint of MCMC (Markov-chain Monte-Carlo); also, Gelman-Rubin convergence diagnostic is adopted. [FORMULA102] is omitted when no a priori knowledge is available\nto introduce or to emphasize.",
+      "question_type": "theory",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:21",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "For implementing an Estimation of Distribution Algorithm to minimize total fuel cost, how should practitioners incorporate the quadratic fuel cost function, given the coefficients $a_i$, $b_i$, and $c_i$ for each generator?",
+      "topics": [
+        "objectives"
+      ],
+      "answer": "When implementing an EDA to minimize the total fuel cost $F(P_G)$, the objective function should be defined as a sum across all $N$ generators, where $F(P_G) = \\sum_{i=1}^{N}(a_{i} P_{G i}^{2}+b_{i} P_{G i}+c_{i})$. The coefficients $a_i$, $b_i$, and $c_i$ represent the fuel cost characteristics for the $i$-th generator and $P_{Gi}$ is the power generated by the $i$-th generator. The implementation must also satisfy the constraint $\\sum_{i=1}^{N} P_{G i}-P_{D}-P_{L}=0$, where $P_D$ is the total demand and $P_L$ represents power losses.",
+      "chunk_id": 8711,
+      "paper_id": "NSGA-II EDA Hybrid Evolutionary Algorithm for Solving Multi-objective Economic Emission Dispatch Problem",
+      "paper_title": "NSGA-II/EDA Hybrid Evolutionary Algorithm for Solving Multi-objective Economic/Emission Dispatch Problem",
+      "paper_year": "2018",
+      "chunk_content": "Problem Objectives\n\n2.1.1. Total Fuel Cost Objective Function. The total fuel $\\operatorname{cost} F\\left(P_{G}\\right)$ in $/ h$ is represented by a quadratic function and can be expressed as [4]\n\n$$\nF\\left(P_{G}\\right)=\\sum_{i=1}^{N}\\left(a_{i} P_{G i}^{2}+b_{i} P_{G i}+c_{i}\\right)\n$$\n\nwhere $a_{i}, b_{i}, c_{i}$ are the fuel cost coefficients of the $$\n\\sum_{i=1}^{N} P_{G i}-P_{D}-P_{L}=0\n$$ th generator. 2.1.2. Emission Objective Function. The total emission of atmospheric pollutants $B, B_{0}$ in ton/h can be expressed as [8]\n\n$$\nE\\left(P_{G}\\right)=\\sum_{i=1}^{N} 10^{-2}\\left(d_{i} P_{G i}^{2}+e_{i} P_{G i}+f_{i}\\right)+g_{i} \\exp \\left(h_{i} P_{G i}\\right)\n$$\n\nwhere $d_{i}, e_{i}, f_{i}, g_{i}, h_{i}$ are the coefficient of the $\\mathbf{C}(A, B)$ th generator emission characteristics. ### 2.2.",
+      "question_type": "implementation",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:23",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "In the context of the Estimation of Distribution Algorithm with Local Search (EDA-LS) proposed for seru scheduling, how is a partial solution-SS, represented as a $J$-dimensional vector denoted as $\\left[\\begin{array}{llll}v_{1} & v_{2} & \\ldots & v_{J}\\end{array}\\right]^{T}$ where $v_{j}$ represents the batch processing sequence in seru, decoded into a specific batch assignment to serus, and what rule governs this assignment?",
+      "topics": [
+        "search"
+      ],
+      "answer": "A batch priority string $\\varphi$ of length $M$, where elements represent job numbers, is decoded into a partial solution-SS using an Earliest Completion Flow Line (ECFL) rule. The position of a batch number in the batch priority string indicates its processing order. The ECFL rule, detailed in Algorithm 2 (though the algorithm itself is not provided in this context), determines the assignment of batches to serus based on this priority string, aiming for the earliest completion time.",
+      "chunk_id": 7766,
+      "paper_id": "A cooperative coevolution algorithm for complex hybrid seru-system scheduling optimization",
+      "paper_title": "A cooperative coevolution algorithm for complex hybrid seru-system scheduling optimization",
+      "paper_year": "2021",
+      "chunk_content": "Fig. 6 Illustration of two crossover operators\n[IMAGE5]\n(b) Crossover operator 2\n\nEDA for seru scheduling\n\nAs a population-based evolutionary algorithm, EDA [33] has been successfully applied to a variety of scheduling problems, such as flow shop scheduling [34-36], flexible job shop scheduling [37], and robotic assembly line balancing [38]. Compared with the crossover and mutation-based evolutionary algorithms such as GA, EDA employs an explicit\nprobability model for sampling a promising area to achieve exploration. The seru scheduling should solve two sub-problems, i.e., the batch assignment and the batch sequencing in each seru. To solve this problem, an EDA with local search (EDA-LS) is proposed by fusing the exploration ability of EDA and the exploitation ability of local search. The procedure of the EDA-LS is shown in Fig. 7. Next, we will introduce encoding and decoding, probability model and its updating mechanism, and local search in detail. ## Encoding and decoding of a partial solution-SS\n\nFor seru scheduling, it needs to determine the batch assigned to each seru and the batch processing sequence in each seru. Let $\\pi$ denote an individual of seru scheduling (a partial solu-tion-SS) encoded as a $J$-dimensional vector $\\left[\\begin{array}{llll}v_{1} & v_{2} & \\ldots & v_{J}\\end{array}\\right]^{T}$, where $v_{j}$ represents the batch processing sequence in seru [FORMULA149]. A partial solution-SS can be represented by a batch priority string $\\varphi$ with a length of $M$. The element in the batch priority string is denoted by job number. The occurrence of a batch number in [FORMULA152] th position of the batch priority string indicates such a batch is processed in [FORMULA153] th order. [IMAGE6]\n\nFig. 7 Procedure of the EDA-LS for seru scheduling\n\nTo decode a batch priority string [FORMULA154] into a partial solutionSS [FORMULA155], an earliest completion flow line (ECFL) rule shown in Algorithm 2 is designed to assign batches to seru according to the batch priority string [FORMULA156]. Consider an example with 7 batches and 2 serus, the related data are given in Table 1.",
+      "question_type": "theoretical foundation",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:02:25",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "What is a noted limitation of straightforward implementations of Bayesian optimization algorithms, and how does the modified BOA attempt to address this limitation?",
+      "topics": [
+        "heuristic"
+      ],
+      "answer": "Straightforward implementations of Bayesian optimization algorithms often lack exploration and can be easily trapped in local maxima. The modified BOA addresses this by adding a mutation scheme, similar to a Genetic Algorithm operator, to the traditional Bayesian optimization algorithm to improve effectiveness and convergence.",
+      "chunk_id": 4302,
+      "paper_id": "Modified Bayesian optimization algorithm for EMC complex system design",
+      "paper_title": "Modified Bayesian Optimization Algorithm for EMC Complex System Design",
+      "paper_year": "2012",
+      "chunk_content": "Maglio ${ }^{\\dagger 2}$, M. Mussetta ${ }^{03}$, P. Pirinoli ${ }^{* 4}$, R.E. Zich ${ }^{* 5}$${ }^{1}$ Politecnico di Milano, Dipartimento di EnergiaVia La Masa 34, 20156 Milano, Italy.${ }^{2}$ ha.bui@mail.polimi.it${ }^{2}$ marco.mussetta@polimi.it${ }^{3}$ riccardo.zich@polimi.it${ }^{4}$ Politecnico di Milano, Dipartimento di ElettrotecnicaPiazza L. da Vinci, 32 - 20133 Milano - Italy${ }^{5}$ matteo.maglio@mail.polimi.it* Politecnico di Torino, Dipartimento di Elettronica e TelecomunicazioniC. Duca degli Abruzzi 24, 10129 Torino, Italy.${ }^{6}$ paola.pirinoli@polito.it\n\nAbstract\n\nThe design of real electrical, electronic or electromagnetic complex systems fulfilling EMC constrains often exploits the performances of population based global optimizers. One of the main drawbacks of the adoption of these optimizers in the design of a real system is the difficulty in the introduction, in the optimized design algorithm, of all the heuristic knowledge already available in the field. In order to overcome this problem Bayesian optimization algorithms, classified as estimation of distribution algorithm, could be very effective, since they are based on the definition of the distribution of promising solutions by using the information extracted from the entire set of currently good solutions. Unfortunately, their straightforward implementations usually lack of exploration, and are easily trapped in local maxima. In order to overcome even this drawback and to develop a Bayesian optimization algorithm with both the required exploitation, of the heuristic knowledge, and the exploration, for avoiding local maxima, for system or subsystem design fulfilling EMC constrains, in this paper a modified BOA is proposed by adding a suitable mutation scheme to the traditional one in order to ensure the effectiveness of the algorithm. The here proposed new algorithm has been tested on some mathematical test functions and on a typical EM design problem, a microwave microstrip filter synthesis, to show its capability. ## I. INTRODUCTION\n\nThe design of real electrical, electronic or electromagnetic complex systems fulfilling EMC constrains often exploits the performances of population based global optimizers, such as the classic Genetic Algorithms (GA) or Particle Swarm Optimization (PSO) and all the more recent developed ones such as MetaPSO, GSO, MetaLamarckians and so on. One of the main drawbacks of the adoption of these optimizers in the design of a real system is the difficulty in the introduction, in the optimized design algorithm, of all the heuristic knowledge already available in the field, and this is usually a big problem since the heuristic knowledge is often the core itself of the design team value. By the way, this is one of the main limits\nin the spread of population based algorithm for complex system optimizations. In order to overcome this problem, Bayesian optimization algorithms, classified as estimation of distribution algorithm, could be very effective, since they are based on the definition of the distribution of promising solutions by using the information exacted from the entire set of currently good solutions. Bayesian algorithms have been suitably developed exactly for overcoming this problem, since they are based on the \"inductive\" logical process, instead of the usual \"deductive\" one, aiming exactly to exploit at best all the heuristic knowledge that has been achieved on a particular problem. Unfortunately, their straightforward implementations usually lack of exploration, since they attempt to build up a probabilistic model from the available knowledge, and may be easily trapped in local maxima lacking of what is usually called high level design prospective. In order to overcome even this drawback and to develop a Bayesian optimization algorithm with both the required exploitation, of the heuristic knowledge, and the exploration, for avoiding local maxima, for system or subsystem design fulfilling EMC constrains, in this paper a modified BOA is proposed by adding a suitable mutation scheme, a typical GA operator, to the traditional one in order to ensure the effectiveness and the convergence of algorithm. The new algorithm in the following will be presented, discussed and tested both on purely mathematical and on EM design problem, e.g. a microwave microstrip filter synthesis.",
+      "question_type": "relationship",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:26",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "In the described network traffic generation scenario, what specific data handling procedures are necessary to combine the generated Code Red II traffic data with the normal ISCX traffic data?",
+      "topics": [
+        "optimization"
+      ],
+      "answer": "The text specifies that Code Red II traffic is generated and then 'combined with normal ISCX traffic'. While it doesn't detail the exact procedure, implementation would necessitate data structures or file formats capable of merging the generated attack traffic data with existing normal traffic data. This could involve appending data from separate files, or interleaving data records based on timestamps to simulate a mixed traffic stream. The combined data would then be used for model evaluation.",
+      "chunk_id": 6420,
+      "paper_id": "A probability distribution function for investigating node infection and removal times",
+      "paper_title": "A probability distribution function for investigating node infection and removal times",
+      "paper_year": "2019",
+      "chunk_content": "Test scenarios have been explained in the following paragraphs. - Scenario 1: The goal of this scenario was to generate test datasets containing all selected features to evaluate the accuracy of the first model (Equation (11). In order to achieve this, Code Red II was propagated in the same network architecture shown in Figure 3, with network parameters similar to those explained in Section 4.1 in the GTNetS environment. Code Red II was propagated for 11 times (test numbers 1 to 11) in the network and the generated data were combined with normal ISCX traffic for a period of 300 milliseconds. In these tests, different source nodes were chosen.",
+      "question_type": "implementation",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:28",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "How is the generalization performance of the conventional BioHEL system compared to the proposed BioHEL systems that incorporate an Estimation of Distribution Algorithm (EDA) on variants of the checkerboard benchmark?",
+      "topics": [
+        "analysis"
+      ],
+      "answer": "The generalization performance of the conventional BioHEL and the proposed BioHEL systems, each configured with their respective optimal parameter settings, are compared on variants of the checkerboard benchmark. This comparison aims to assess the impact of integrating the EDA algorithm into the BioHEL system.",
+      "chunk_id": 176,
+      "paper_id": "Improving the performance of the BioHEL learning classifier system",
+      "paper_title": "Improving the performance of the BioHEL learning classifier system",
+      "paper_year": "2013",
+      "chunk_content": "The paper is organized as follow. Section 2 reviews the related work, followed by a description of the BioHEL system in Section 3. Section 4 illustrates the performance of the standard BioHEL on the 2-dimensional checkerboard benchmark and the difficulties BioHEL encounters on variants of checkerboard datasets with a large amount of noisy disturbances. An investigation was carried out to pinpoint the root of the problem. Section 5 proposed the algorithms for constructing a probabilistic model which identifies significant attributes in order to make the generalization and the specialization operations better informed. It is followed by an analysis of parameter settings for different BioHEL systems. The conventional BioHEL and the proposed ones, each with their respective optimal parameter settings, are compared in terms of\n\n[IMAGE_2]\n\nFig. 3. The performance of BioHEL degrades to the growth in the number of noise attributes. their generalization performances on the variants of the checkerboard. Section 6 reports the experimental results of the new BioHEL systems embedded the EDA algorithm on a number of benchmark datasets and its performance was compared to that of the conventional BioHEL. Conclusions are given in Section 7 with an outlook on future work.",
+      "question_type": "comparison",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:02:29",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "In the context of EDAs, how does the algorithmic mechanism of selecting better individuals from the current population, determined by the parameter [FORMULA414] (referred to as p1 in the provided text), influence the learning of the probability model in the proposed cEDA?",
+      "topics": [
+        "testing"
+      ],
+      "answer": "In the proposed cEDA, the parameter [FORMULA414], also denoted as p1, determines the number of better individuals selected from the current population for studying the parameters of the probability model. The algorithm uses a preliminary numerical experiment to determine an optimal value for p1. Specifically, the algorithm tests p1 from the set {0.05, 0.10, 0.20, 0.40}. The text indicates that the combination of p1=0.20 and p2=0.20 (where p2 corresponds to [FORMULA418]) yields the optimal resource consumption. Therefore, the selection mechanism controlled by [FORMULA414] directly impacts the effectiveness of the probability model learning by influencing which solutions contribute to the model's parameter estimation.",
+      "chunk_id": 8640,
+      "paper_id": "Minimizing the resource consumption of heterogeneous batch-processing machines using a copula-based estimation of distribution algorithm",
+      "paper_title": "Minimizing the resource consumption of heterogeneous batch-processing machines using a copula-based estimation of distribution algorithm",
+      "paper_year": "2018",
+      "chunk_content": "3. $M=p_{2} \\cdot N$. The value of [FORMULA408] can be determined through a preliminary experiment in this section. 4. $L(L=5 \\% N)$ individuals can be sampled from the uniform distribution in the solution space. 5. The stopping criterion is set to be the maximum generation. For the configuration of [FORMULA410] jobs, the maximum generation is set to 18 n . Meanwhile, when the best individual is not updated in five consecutive generations, the algorithm is terminated early. In the proposed $c E D A$, except for the parameters determined above, there are two important parameters ( [FORMULA412] and [FORMULA413] ) to be determined: [FORMULA414], which determines the number of better individuals selected from the current population for studying the parameters\nof the probability model, and [FORMULA415], which decides the number of the best individuals to reserve for the next generation. A preliminary numerical experiment is conducted to determine the two parameters. [FORMULA416] for testing is from the set $\\{0.05,0.10,0.20,0.40\\}$, and [FORMULA418] is from the set $\\{0.01,0.05,0.10,0.20\\}$. In the preliminary experiments, the number of jobs is set to 20 , the [FORMULA420] is performed 5 times, and the amount of resources consumed is recorded each time. After completing the experiments, the average amount of resources consumed is calculated. The computational results are shown in Table 5. The combination $p_{1}=0.20$ and $p_{2}=0.20$ yields the optimal resource consumption. ### 5.3.",
+      "question_type": "process",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:32",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "For implementing an Estimation of Distribution Algorithm, how should practitioners utilize Optimal Demand Profiles (ODPs) to translate into specific control actions within a smart grid environment?",
+      "topics": [
+        "control"
+      ],
+      "answer": "To translate Optimal Demand Profiles (ODPs) into specific control actions, practitioners should determine the optimal scheduling of appliances. This involves taking into account factors such as the energy price, customer energy production availability, energy storage capacity, and their consumption habits to adapt households' real consumption to a neighbourhood ODP. The goal is to define how much electricity customers should consume at any given time to ensure they contribute to energy demand peak reductions and maximization of renewable energies.",
+      "chunk_id": 7578,
+      "paper_id": "Metaheuristics for Optimal Scheduling of Appliances in Energy Efficient Neighbourhoods",
+      "paper_title": "Metaheuristics for Optimal Scheduling of Appliances in Energy Efficient Neighbourhoods",
+      "paper_year": "2021",
+      "chunk_content": "151-162, 2021. https://doi.org/10.1007/978-3-030-86230-5_12\n\nwhy different methods have been proposed, including Demand Side Management (DSM) activities. DSM includes the reduction of electricity usage and shifts of energy usage to other off-peak periods in order to match energy demand with energy supply side [7]. In this regard, Demand Response (DR) [13] programs are introduced into the smart grids as a mechanism for active demand management which implies that the price of energy rises or falls based on a series of circumstances, such as the amount of energy demanded, transport costs, etc. Some electricity companies encourage their customers to actively manage their demand by providing them a customised Optimal Demand Profile (ODP). This indicates customers how much electricity they should consume at any given time, in order to ensure that they contribute to the energy demand peak reductions and maximisation of renewable energies, among others. The definition of ODP takes into account different features of the electricity grid as a whole, such as the energy price, customer energy production availability, energy storage capacity, and their consumption habits. However, ODPs need to be translated into specific control actions, for instance, by determining the optimal scheduling of appliances. This article solves the neighbourhood appliances scheduling optimisation problem to adapt households real consumption to neighbourhood ODP. Section 2 analyses the related work, Sect.",
+      "question_type": "implementation",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:33",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Regarding the MEC-EDA, what mechanisms are employed to balance exploitation of the probability distribution learned from promising solutions with exploration to maintain population diversity, and how does the dynamic estimation of the copula parameter contribute to this balance?",
+      "topics": [
+        "optimization"
+      ],
+      "answer": "The MEC-EDA uses a combination of mechanisms to balance exploitation and exploration. Exploitation is achieved through generating new individuals based on the conditional probability estimated using a multivariate extension of the Clayton copula. Exploration is maintained through the use of a classic mutation operator and a heuristic to reinitialize the population throughout an elitist evolution. The copula parameter is estimated dynamically using dependency measures, allowing the algorithm to adapt to the problem's structure and adjust the strength of dependency modeling, thus influencing the balance between exploitation and exploration. Specifically, the dynamic parameter estimation adjusts the strength of the copula's dependency modeling based on the data observed during the search.",
+      "chunk_id": 681,
+      "paper_id": "Nonconvex Functions Optimization Using an Estimation of Distribution Algorithm Based on a Multivariate Extension of the Clayton Copula",
+      "paper_title": "Nonconvex Functions Optimization Using an Estimation of Distribution Algorithm Based on a Multivariate Extension of the Clayton Copula",
+      "paper_year": "2014",
+      "chunk_content": "Nonconvex Functions Optimization Using an Estimation of Distribution Algorithm Based on a Multivariate Extension of the Clayton Copula \n\nHarold D. de Mello Jr., Andre V. Abs da Cruz, and Marley M.B.R. VellascoDepartment of Electrical EngineeringPontifical Catholic University of Rio de JaneiroRio de Janeiro, RJ, Brazil\\{harold, andrev, marley\\}@ele.puc-rio.br\n\nAbstract\n\nThis paper presents a copula-based estimation of a distribution algorithm with parameter updating for numeric optimization problems. This model implements an estimation of a distribution algorithm using a multivariate extension of Clayton's bivariate copula (MEC-EDA) to estimate the conditional probability for generating a population of individuals. Moreover, the model uses traditional mutation and elitism operators jointly with a heuristic for a population restarting in the evolutionary process. We show that these approaches improve the overall performance of the optimization compared to other copu-la-based EDAs. Keywords: Continuous numeric optimization, evolutionary computation, estimation of distribution algorithms, copulas. ## 1 Introduction\n\nNumerical optimization is an important task that arises in several different knowledge domains. Evolutionary algorithms are capable of finding good solutions with a lower computational cost for different optimization problems. Nevertheless, conventional evolutionary algorithms have difficulty addressing optimization problems when the number of variables, constraints and goals increases. This difficulty relates partly to the association between the performance and the number of parameters, which must be determined for each problem, and to the inability to extract and use knowledge acquired throughout the search process [1]. One possible approach to overcoming these problems is to use Estimation of Distribution Algorithms (EDAs) [2]. EDAs constitute a class of evolutionary algorithms that construct a probability distribution throughout evolution by analyzing the most promising solutions. This probability distribution is used to generate new individuals instead of using mutation and crossover operators as traditional evolutionary algorithms do. Different EDA models, which differ in how they estimate the probabilistic model, have been proposed, including but not limited to models based on copula. The\n\nconcept of copula was introduced by Sklar (1959) [3] and has been extensively used in finance [4]. More recently, copula theory has been applied to Evolutionary Computation [5]. Copula theory allows any multivariate distribution to be expressed as a function (the copula) of its marginal distributions, which describe the behavior of each individual variable; the copula contains the required information to describe the dependency among all variables and is invariant to non-linear transformation [6]. In the case of multidimensional problems, EDA probabilistic models are built, essentially, from bivariate copula [7] because these represent most parametric copulas. Using bivariate copula makes the estimation of the multivariate system easier. In [8], the use of empirical bivariate Archimedean copulas in EDAs was investigated to optimize n-dimensional problems, while using a constant value for the parameters of the copula. This study discusses an EDA (MEC-EDA) that is similar to the approach proposed in [8] and applies it to some benchmark functions. Our approach differs in some aspects: the copula parameter is estimated dynamically, using dependency measures; we use information contained in the probability distribution and a classic mutation operator to preserve population diversity; and we use a heuristic to reinitialize the population throughout an elitist evolution. Specifically, MEC-EDA was based on the Clayton's copula because it is simple and no numerical integration is required to compute probabilities. This paper is organized as follows: Section 2 discusses some general aspects regarding copula theory.",
+      "question_type": "theoretical foundation",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:02:35",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "For the EC6 and EC4 problems, what difference in function evaluations is observed to reach a convergence criterion?",
+      "topics": [
+        "convergence"
+      ],
+      "answer": "For the EC6 problem, the convergence criterion was reached after approximately 8,300 function evaluations, while the EC4 problem requires a higher number of function evaluations to reach the true optimal front.",
+      "chunk_id": 10800,
+      "paper_id": "An hybrid neural:genetic approach to continuous multi-objective optimization problems",
+      "paper_title": "An hybrid neural/genetic approach to continuous multi-objective optimization problems",
+      "paper_year": "2003",
+      "chunk_content": "MOP4 problem. In the left upper corner non-dominated solutions in the objective plain are shown. The other three parts of the figure show the marginal bivariate PDFs of problem's variables when normal kernels are used\n[IMAGE2]\n\nFig. 3. a) Obtained non-dominated solutions on EC6 problem. Most of obtained fronts display some sub-optimal solutions. - b) Obtained non-dominated solutions on EC4 problem\n\nFor EC6 problem we imposed 15,000 maximum function evaluations, but the convergence criterion related to [FORMULA55] function has been reached after approximately 8,300 evaluations. Problem EC4 is the hardest in terms of number of function evaluations needed to reach the true optimal front. Because of the form of the functions to optimize, process tends to get stuck on sub-optimal fronts. [IMAGE3]\n\nFig.",
+      "question_type": "comparative analysis",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:37",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "How should a developer structure the code for the EDA, based on the description, when implementing a hybrid PSO-EDA optimization strategy for a production line?",
+      "topics": [
+        "optimization"
+      ],
+      "answer": "When implementing a hybrid PSO-EDA, the code should reflect the interaction between Particle Swarm Optimization (PSO) and the Estimation of Distribution Algorithm (EDA). The PSO component requires data structures to represent particles, each holding a potential solution (position) and its corresponding fitness. The EDA component needs data structures to represent the probability distribution learned from the selected particles. The code should first implement the PSO to allow particles to learn from other particles and their own experience. Then, the selected particles from PSO should be used to update the probability model in EDA. This iterative process continues until a stopping criterion is met, such as reaching a maximum number of iterations or achieving a satisfactory solution. The qualified product output rate of the production line is affected by the machine status, therefore, the code should consider this status during the optimization process.",
+      "chunk_id": 2940,
+      "paper_id": "Performance evaluation and optimization model for closed loop production lines considering preventive",
+      "paper_title": "Performance evaluation and optimization model for closed-loop production lines considering preventive maintenance and rework process",
+      "paper_year": "2023",
+      "chunk_content": "$$\n\\begin{gathered}\n\\sum_{i=1}^{k} x_{i} \\leq N_{0} \\\\\n\\sum_{y_{i}=1}^{y_{i}} p t_{i, \\delta_{i}}=1 \\\\\n0 \\leq p d_{i, \\delta_{i}}<p d_{i, \\delta_{i}+1} \\leq 1 \\\\\np d_{i, \\delta_{i}+1}=1 \\\\\n\\sum_{\\Omega_{i}} \\sum_{\\delta_{i}^{d}} \\sum_{\\delta_{i}^{u}} \\sum_{x_{i}} P\\left(x_{i}, \\delta_{i}^{u}, \\delta_{i}^{d}, \\Omega_{i}\\right)=1\n\\end{gathered}\n$$\n\nwhere $Q$ is the system total profit, Price is the income of a single product. ## Hybrid PSO-EDA optimization\n\nFrom the above analysis, it can be seen that the machines in the major production line have multi-stage degradation, and the machine status will affect the qualified product output rate of the production line. Therefore, PM is used to ensure the reliability of the machines of the production line and reduce total cost and increase effective output. However, the PM strategy of the major production line is difficult to solve with traditional analytical methods, and a meta-heuristic algorithm is required. Particle swarm optimization (PSO) is a swarm intelligence based numerical optimization algorithm, inspired by birds' flocking or fish schooling for the solution of nonlinear, nonconvex or combinatorial optimization problems that arise in many science and engineering domains. ${ }^{40}$ Its main idea is that each particle learns from other particles and it also learns from its own experience during the movement, to make it move towards the optimal solution.",
+      "question_type": "implementation focused",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:39",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "What specific metric is used to evaluate the effectiveness of the FBP algorithm, and what performance indicator from Table 17 is used in conjunction with this metric?",
+      "topics": [
+        "convergence"
+      ],
+      "answer": "The MIGD metric is used to evaluate the effectiveness of the FBP algorithm. Table 17 presents a performance comparison of FBP variants based on this MIGD metric for a specific formula, [FORMULA179].",
+      "chunk_id": 7412,
+      "paper_id": "Solving dynamic multi-objective problems with a new prediction-based optimization algorithm",
+      "paper_title": "Solving dynamic multi-objective problems with a new prediction-based optimization algorithm",
+      "paper_year": "2021",
+      "chunk_content": "Therefore, further improvement should be make on this strategy. ## 6 Conclusion\n\nThis paper proposed a new dynamic multiobjective optimization algorithm, named FBP, for dealing with multiobjective problems in changing environments. FBP mainly includes three different components, that is, a two-step approach for predicting non-dominated solutions, a sampling strategy and a curve-fitting strategy. Each component has an important role for create high-quality population, improving either diversity or convergence, when a change occurs in the environment. To verify the effectiveness of our algorithm, a recent test suite with different characteristics is utilized. Experimental comparisons demonstrate that FBP has better\n\nTable 17. Performance comparison of FBP variants on MIGD for [FORMULA179]. [^0]\n[^0]:    https://doi.org/10.1371/journal.pone.0254839.t017\n\nperformance than the other algorithms on most cases, showing the proposed algorithm has a good tracking ability and responds fast to environmental changes. Besides, the role that each component and parameter plays in the proposed algorithm is also analysed and discussed extensively. In our future work, we will further improve the proposed algorithm by addressing some parameter issues as discussed previously. # Supporting information \n\nS1 File. (ZIP)\n\nAcknowledgments\n\nThe authors express sincerely appreciation to the anonymous reviewers for their helpful opinions. ## Author Contributions\n\nInvestigation: Qingyang Zhang. Methodology: Qingyang Zhang, Shouyong Jiang, Shengxiang Yang, Hui Song. Resources: Shengxiang Yang.",
+      "question_type": "evaluation metrics",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:02:40",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "In the context of EDAs, how does the algorithmic mechanism of an Estimation of Distribution Algorithm (EDA) determine the best locations for depleted uranium (DU) bundles to maximize K-effective and achieve full power in a Pressurised Heavy Water Reactor (PHWR)?",
+      "topics": [
+        "evolutionary",
+        "estimation of distribution algorithm"
+      ],
+      "answer": "An Estimation of Distribution Algorithm (EDA) is used to determine the optimum DU loading pattern. The algorithm determines the best suitable locations for DU bundles. The overall aim is to maximize K-effective and achieve 100% full power while adhering to safety parameters, such as maximum permissible bundle power, channel power peaking factor, and permitted reactivity worth in the shut-down system. In addition to the EDA, some additional DU bundles are placed at specific locations (11th and 12th bundle locations) in selected channels manually to meet additional constraints.",
+      "chunk_id": 9672,
+      "paper_id": "Optimization of depleted uranium loading in fresh core of large sized Indian PHWR by evolutionary algorithm",
+      "paper_title": "Optimization of depleted uranium loading in fresh core of large sized Indian PHWR by evolutionary algorithm",
+      "paper_year": "2011",
+      "chunk_content": "Chapter 15 \n\nContents lists available at ScienceDirect\n\nAnnals of Nuclear Energy\n\njournal homepage: www.elsevier.com/locate/anucene\n\nTechnical Note\n\nOptimization of depleted uranium loading in fresh core of large sized Indian PHWR by evolutionary algorithm\n\nSurendra Mishra ${ }^{\\mathrm{a}, *}$, R.S. Modak ${ }^{\\text {b }}$, S. Ganesan ${ }^{\\mathrm{c}}$${ }^{a}$ Safety Directorate, Nuclear Power Corporation of India Limited, Mumbai 400 094, India${ }^{\\mathrm{b}}$ Theoretical Physics Division, Bhubha Atomic Research Centre, Mumbai 400 085, India$K$ Reactor Physics Design Division, Bhubha Atomic Research Centre, Mumbai 400 085, India\n\nA R T I C L E I N F O\n\nArticle history:\nReceived 20 July 2010\nReceived in revised form 19 October 2010\nAccepted 1 December 2010\nAvailable online 7 January 2011\n\nKeywords:\n\nNuclear reactor PHWR Optimization Evolutionary algorithm Depleted uranium\n\nA B S T R A C T\n\nPressurised Heavy Water Reactors (PHWRs) are based on Natural Uranium (NU) fuel and heavy water as moderator and coolant. At the beginning of reactor life of PHWR, if all NU bundles are loaded, the power peaking is high and full power cannot be drawn. In order to draw full power, it is possible to flatten the power in fresh core by loading some depleted uranium (DU) (or Thorium) bundles. The determination of the best possible locations of DU bundles which maximize economy and preserve safety is a constrained combinatorial optimization problem. This paper presents optimization of DU bundle distribution in the fresh core of the 700 MWe PHWR. An evolutionary technique based on Estimation of Distribution Algorithm (EDA) is used to determine the optimum DU loading pattern. The best suitable locations for DU bundles are determined using EDA. In order to meet some additional constraints, some additional DU bundles are placed at 11th and 12th bundle locations in few channels. These channels are selected manually. The overall aim of the optimization is to maximize $K$-effective and get 100\\% full power without violating safety parameters such as maximum permissible bundle power, channel power peaking factor and permitted reactivity worth in shut-down system. The optimum configuration is explicitly presented.",
+      "question_type": "algorithmic",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:42",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "When applying the Rival Penalized Competitive Learning (RPCL) clustering technique in an Estimation of Distribution Algorithm, what practical limitation arises when dealing with multimodal problems?",
+      "topics": [
+        "optimization"
+      ],
+      "answer": "The Rival Penalized Competitive Learning (RPCL) clustering technique requires the maximum number of clusters to be defined beforehand. This becomes infeasible when dealing with multimodal problems that have a great deal of local optima, as the number of clusters representing global optima is not known in advance.",
+      "chunk_id": 5562,
+      "paper_id": "A Novel Fuzzy Histogram Based Estimation of Distribution Algorithm for Global Numerical Optimization",
+      "paper_title": "A Novel Fuzzy Histogram based Estimation of Distribution Algorithm for Global Numerical Optimization",
+      "paper_year": "2009",
+      "chunk_content": "For another example, Lu et al. [8] introduced a Rival Penalized Competitive Learning (RPCL) clustering technique to detect the number of global optima. Though the algorithms worked well for unimodal problems and simple multimodal problems with a few local optima, the maximum number of clusters must be defined beforehand, which was infeasible when dealing with multimodal problems with a great deal of local optima. The first histogram based EDA was proposed by Tsutsui et al. [9].",
+      "question_type": "relationship",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:43",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Regarding the recursive Estimation of Distribution Algorithm (REDA) discussed, what specific strategy is employed during the initialization of the population in each recursive call to leverage information from previous levels, and how many individuals are preserved from the old cache versus generated by the REDA?",
+      "topics": [
+        "initialization"
+      ],
+      "answer": "In the recursive Estimation of Distribution Algorithm (REDA), the population initialization in each recursive call aims to incorporate information from previous levels. Specifically, the population is initialized by extracting the relative ordering of the non-fixed nodes from the 'old [FORMULA191] cache'. Furthermore, to prevent the initial random population from unduly influencing the evolution, the five best individuals from the 'old [FORMULA193]' are maintained in the new cache. The remaining M-5 individuals are then filled with the best '[FORMULA195]' individuals proposed by the REDA in the current recursive level, where M represents the total population size.",
+      "chunk_id": 5604,
+      "paper_id": "Triangulation of Bayesian networks with recursive estimation of distribution algorithms",
+      "paper_title": "Triangulation of Bayesian networks with recursive estimation of distribution algorithms",
+      "paper_year": "2009",
+      "chunk_content": "5 . Figs. 6-8 show the pseudocode used. As we can see, the size of the subset of nodes that are not fixed determines the general case and the base case of the recursive algorithm. It must be taken into account that, after and before the recursive calls, we use a standard EDA (BaseEda) to evolve over the whole subset of nodes. If in each recursive call we use a random initialization of the population, then we will not be able to take advantage of the previous good individuals (of the other recursive levels). But we can initialize the population by extracting the relative ordering of the non fixed nodes in the actual recursive level from all the orderings of the now old [FORMULA191] cache (not exactly with the relative ordering but with the individual associated with it. ${ }^{3}$ ) In order to not to determine the evolution of REDA with the first random population too much, we can maintain the five best individuals of the old [FORMULA193] in the new cache and fill the rest of the $M-5$ individuals with the best [FORMULA195] individuals proposed by the REDA in the actual recursive level. ## 4. The experiments\n\nAs we have seen in Section 1, we will use the known method of the vertex elimination in our experiments. ### 4.1. Networks used in the experiments\n\nThe networks used to compare EDAs and REDAs are named sparse and dense [21]. Sparse network is computer-generated and has 50 variables and 100 arcs. Dense, also computer-generated, has 50 variables and a greater number of arcs: 359. [^0]\n[^0]:    [FORMULA196] Remember that, in the case of the discrete domain, the individual cannot be obtained directly from the ordering, that is, in this case the relative ordering must be transformed into an individual before adding it to the population. Table 3\nAverage results of 50 executions for sparse and EDAs\nTable 4\nAverage results of 50 executions for dense and EDAs\nStrictly speaking, sparse and dense are not Bayesian networks, because the structure in both of them is undirected acyclic graphs. This simplifies the process of the triangulation, because it is not necessary to moralize the network. In addition, we have used two more complex networks named Medianus I and Medianus II [21] in order to compare the results of REDAs with other triangulation techniques in the case of real world networks. Medianus I is a Bayesian network describing relations between disorders, pathophysiological features and measurements for the human median nerve, and originates from the development of the MUNIN ${ }^{4}$ system [1]. It has 43 nodes and 66 arcs. Medianus II is a modified version of Medianus I with 56 nodes and 161 arcs. In both networks, node values are between 3 and 21.",
+      "question_type": "definition",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:02:45",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "How does the parallel implementation of UMDA compare to its sequential counterpart when solving the OneMax and Sphere model problems, specifically concerning execution time and scaling with the number of worker threads?",
+      "topics": [
+        "fitness"
+      ],
+      "answer": "The parallel UMDA implementation, utilizing a Manager-Worker scheme with Posix Threads, demonstrates faster execution times compared to the sequential version when solving the OneMax and Sphere model problems. The parallel version scales well with the number of worker threads (up to 4 on a quad-core Xeon), achieving efficiency levels close to the theoretical limit. The execution time differences are observed even with a single worker thread due to the utilization of more resources, such as cache memory. Experiments used individual sizes (L) ranging from 100 to 1900 variables, with a population size of 2.5L, and a stopping criterion of 50 generations.",
+      "chunk_id": 6169,
+      "paper_id": "Porting Estimation of Distribution Algorithms to the Cell Broadband Engine",
+      "paper_title": "Porting Estimation of Distribution Algorithms to the Cell Broadband Engine",
+      "paper_year": "2010",
+      "chunk_content": "Profiling of UMDA. be considered a worst-case study on the parallelization of EDAs. As we will see later, for the Cell platform, there are other limitations that could impede the parallelization of costly EDA/problem combinations. Although our final objective is to test the Cell platform, we considered of great interest for comparison purposes the development of parallel versions of our programs targeting state-of-the-art, multi-core x86 desktop computers. In addition to this, as all the tested platforms (x86-based machines and the Cell) include vector instructions, we manually reworked all the programs to take advantage of this feature in order to further accelerate the programs. Regarding the specific platforms, we have used:\n\n- A quad-core desktop computer with an Intel Xeon E5420 processor at 2.50 GHz, 4 GB of RAM and GNU/Gentoo Linux operating system. In this platform, programs have been compiled using GNU's gcc (version 4.3.2) [32]. - The PS3 installation of GNU-Linux described before. Tested compilers are GNU's gcc (version 4.1.1) and IBM's xlc (version V10.1) [33]. For tuning and debugging tasks, we have also used GNU's gprof profiling tool [34], and the Full-System Simulator for the Cell Broadband Engine Processor [9]. # 6. Parallel UMDA on a quad-core Xeon \n\nAs stated before, our approach to the parallelization of UMDA has been the implementation of a Manager-Worker scheme. For the desktop PC platform, Manager and Workers are implemented by means of Posix Threads (Pthreads) [35]. Using this API all the threads can share the main data structures (they can have private variables too) and have mechanisms to synchronize if required. The UMDA algorithm is executed by the main thread (Manager) and, when necessary, it asks the Workers for help. In particular, Workers collaborate in these phases:\n\n- Learning the model: The Manager will ask the Workers to obtain parts of the model for a subset of the selected population. Once all Workers have finished, the Manager creates the main model based on the partial values. - Sampling + Evaluation: Based on the model learnt in the previous step, new individuals will be created and evaluated. Note that this is the most expensive phase of UMDA, as can be seen through the execution profile of the sequential programs. Again, the Manager will ask the Workers to create (and evaluate) a subset of individuals. The number of individuals to be managed by each Worker can be established statically, or assigned dynamically using an on-demand scheme. When the evaluation of individuals takes always the same computing time, a static assignment would be enough to guarantee a good balance of the computational workload among the Workers. However, if the time required to evaluate an individual depends on the values it takes, the on-demand scheme would be preferable. In our experiments we use a static distribution of the workload as the fitness evaluation takes a constant time. Both UMDA $10 \\%$ and UMDA $=1000$ have been parallelized using this approach. In order to test the parallel implementations, we have run and compared them against the sequential counterparts when solving the test problems discussed in Section 4 (OneMax for UMDA $=200$ and Sphere model for UMDA $=500$ ). We used different individual sizes ( $L$ ) for the target problems, ranging from 100 to 1900 variables, using a population size of 2.5 L . The stopping criterion was the evaluation of 50 generations. The target machine in all cases was the quad-core Xeon, with a number of Worker threads that varied from 1 to 4 . The results of all these experiments have been summarized in Figs. 4 and 5, in which we can see the execution times for both versions when the individual size grows. Note that the running times of the sequential runs are different to those of the 1-Worker runs. This is because in the 1Worker cases there are two threads running in different cores: the Manager and a Worker - although they never run simultaneously. The use of more resources (in particular, of more cache memory) provides this slight improvement in efficiency. The most relevant result is that the parallel programs are always faster than the sequential ones, and they scale very well with the number of Workers. Efficiency levels are close to the theoretical limit. Application speedups, relative to the sequential versions, are summarized in Table 1.",
+      "question_type": "comparison",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:47",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "After rejecting the null hypothesis of similar performance among classifiers in an EDA, what are the precise algorithmic steps for conducting the Nemenyi post-hoc test to determine pairwise performance differences?",
+      "topics": [
+        "performance"
+      ],
+      "answer": "The Nemenyi post-hoc test involves calculating the critical difference (CD) using the formula CD = q<sub>α</sub> * sqrt(k(k+1)/(6N)), where q<sub>α</sub> represents critical values based on the Studentized range statistic divided by sqrt(2), 'k' is the number of classifiers being compared, and 'N' is the number of independent observations. The performance of two classifiers is considered significantly different if the absolute difference between their average ranks exceeds this calculated CD value.",
+      "chunk_id": 3559,
+      "paper_id": "Clustering Molecular Dynamics trajectories with a univariate estimation of distribution algorithm",
+      "paper_title": "Clustering Molecular Dynamics Trajectories with a Univariate Estimation of Distribution Algorithm",
+      "paper_year": "2015",
+      "chunk_content": "Stick representation of the 3D structures of the 20 ligands used in docking experiments. Each ligand, with its structures colored by atom type, is identified by their name and its corresponding PDB ID. The dashed circle represents the rotatable bounds selected by AutoDockTools 1.5.6 [31]. $$\n\\chi_{F}^{2}=\\frac{12 N}{k(k+1)}\\left[\\sum_{j} R_{j}^{2}-\\frac{k(k+1)^{2}}{4}\\right]\n$$\n\nis distributed according to $\\chi_{F}^{2}$ with $k-1$ degrees of freedom, when [FORMULA107] and [FORMULA108] are big enough. Iman and Davenport [33] prove that Friedman's [FORMULA109] is undesirably conservative, and thus they derive an adjusted statistic:\n\n$$\nF_{f}=\\frac{(N-1) \\times \\chi_{F}^{2}}{N \\times(k-1)-\\chi_{F}^{2}}\n$$\n\nwhich is distributed according to the $F$-distribution with [FORMULA112] and $(k-1)(N-1)$ degrees of freedom. If the null hypothesis of similar performances is rejected, then we proceed with the Nemenyi post-hoc test for pairwise\ncomparisons. The performance of two classifiers is significantly different if their corresponding average ranks differ by at least the critical difference:\n\n$$\nC D=q_{\\alpha} \\sqrt{\\frac{k(k+1)}{6 N}}\n$$\n\nwhere critical values $q_{\\alpha}$ are based on the Studentized range statistic divided by $\\sqrt{2}$. ## IV.",
+      "question_type": "process",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:49",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "What specific metrics are used to evaluate the effectiveness of the Pareto-based estimation of distribution algorithm (PBEDA) in terms of solution quality when addressing multi-objective optimization problems?",
+      "topics": [
+        "scheduling"
+      ],
+      "answer": "The effectiveness of the Pareto-based estimation of distribution algorithm (PBEDA) is evaluated based on the quantity and quality of the solutions obtained, specifically focusing on its ability to derive a Pareto set that helps project managers understand the trade-off between carbon emissions and makespan, allowing for informed decisions based on specific preferences.",
+      "chunk_id": 3468,
+      "paper_id": "Reduction of carbon emissions and project makespan by a Pareto-based estimation of distribution algorithm",
+      "paper_title": "Reduction of carbon emissions and project makespan by a Pareto-based estimation of distribution algorithm",
+      "paper_year": "2015",
+      "chunk_content": "Reduction of carbon emissions and project makespan by a Pareto-based estimation of distribution algorithm \n\nHuan-yu Zheng, Ling Wang*Tsinghua National Laboratory for Information Science and Technology (TNList), Department of Automation, Tsinghua University, Beijing 100084, China\n\nAbstract\n\nArticle history: Received 28 March 2014 Accepted 6 December 2014 Available online 15 December 2014\n\nKeywords:\nLow-carbon production\nProject scheduling\nEstimation of distribution algorithm\nProbability model\nMulti-objective optimization\n\nA B STR A C T\n\nDue to the increasing concerns about global warming, low-carbon production has been a hot topic around the world. In this paper, carbon emissions reduction and project makespan minimization are considered simultaneously. To formulate the problem, a multi-objective multi-mode resourceconstrained project scheduling model with makespan and carbon emissions criteria is given. To solve the problem, a Pareto-based estimation of distribution algorithm (PBEDA) is proposed. Specifically, an activity-mode list is used to encode the individual of the population; a hybrid probability model is built to describe the probability distribution of the solution space; and two Pareto archives are adopted to store the explored non-dominated solutions and the solutions for updating the probability model, respectively. New individuals are generated in the promising search areas by sampling and updating the hybrid probability model. Besides, Taguchi method of design of experiments is adopted to study the effect of parameter setting. Finally, numerical results and the comparisons to other algorithms are provided to show the effectiveness of the PBEDA in terms of quantity and quality of the obtained solutions. The Pareto set derived by the PBEDA can be helpful for project manager to recognize the relationship between carbon emissions and makespan so as to properly trade-off the two criteria according to certain preference. (c) 2014 Elsevier B.V.",
+      "question_type": "evaluation metrics",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:02:50",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "In the context of Estimation of Distribution Algorithms, how does the algorithmic mechanism of using a clustering method contribute to improving the algorithm's performance, as mentioned in the provided text?",
+      "topics": [
+        "performance"
+      ],
+      "answer": "The text states that a clustering method is utilized to further improve the performance of the algorithm. However, it does not provide specific details about how the clustering method works or which algorithm it is being applied to. The text only mentions that the approach is related to dealing with uncertainties in a group insurance portfolio problem, where the correlation coefficients of solutions in different scenarios are high.",
+      "chunk_id": 7439,
+      "paper_id": "Handling Uncertainty in Financial Decision Making A Clustering Estimation of Distribution Algorithm With Simplified Simulation",
+      "paper_title": "Handling Uncertainty in Financial Decision Making: A Clustering Estimation of Distribution Algorithm With Simplified Simulation",
+      "paper_year": "2021",
+      "chunk_content": "Moreover, a clustering method is utilized to further improve the performance of the algorithm. ## A. Simplified Simulation Approach\n\nA simplified simulation approach is proposed in this article to deal with the uncertainties in the group insurance portfolio problem. As analyzed in Section IV.C, the group insurance portfolio problem is scenario-relevant. The correlation coefficients of solutions in different scenarios are high.",
+      "question_type": "challenge",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:52",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "What specific implementation steps are required for the UMDA when applied to the r-LeAdingOnes benchmark to ensure operation in the regime of low genetic drift, as described in the analysis?",
+      "topics": [
+        "UMDA",
+        "r-LeAdingOnes",
+        "genetic drift",
+        "runtime analysis"
+      ],
+      "answer": "When applying the UMDA to the r-LeAdingOnes benchmark, maintaining low genetic drift requires considering the increased waiting time to observe a specific position out of the possible 'r' values. The runtime analysis indicates an extra factor of order r * ln(r)^2 compared to the binary LeAdingOnes case. The ln(r)^2 factor accounts for staying in the low genetic drift regime and for the time it takes a frequency to reach the upper border. The upper bound on the number of iterations until an optimum is found adds a factor in the order of r * ln(r)^2 to the runtime, indicating that parameter settings influencing these factors need careful configuration.",
+      "chunk_id": 2226,
+      "paper_id": "Estimation-of-distribution algorithms for multi-valued decision variables",
+      "paper_title": "Estimation-of-distribution algorithms for multi-valued decision variables",
+      "paper_year": "2024",
+      "chunk_content": "Since we have no such results, we refer to the original works. Besides the UMDA, LeAdingOnes was considered in the analysis of newly introduced univariate EDAs. Interestingly, each of these algorithms optimizes LeAdingOnes in $O(n \\ln (n))$ with high probability. This runtime is faster by a factor of $n / \\ln (n)$ when compared to classical EAs, and it suggests that LeAdingOnes is a rather easy problem for EDAs. Friedrich, Kotzing, and Krejca [29] proved the first of these results for their stable compact genetic algorithm (scGA), which introduces an artificial bias into its update process that is overcome by the LeAdingOnes function. However, it was later proven that the scGA fails on the typically easy OneMax function [58], highlighting that the scGA is not a good EDA in general. The next result was proven by Doerr and Krejca [58], who introduce the significance-based compact genetic algorithm (sig-cGA). The sig-cGA saves a history of good individuals and only updates a frequency when the number of bits in the history of that position significantly deviates from its expectation. This algorithm also performs well on OneMax, i.e., exhibits an [FORMULA409] expected runtime. The last result was proven recently by Ajimakin and Devi [59], who introduce the competing genes evolutionary algorithm (cgEA). The cgEA utilizes the Gauss-Southwell score as a quality metric for the positions of its samples. Iteratively, it picks the position [FORMULA410] with the best score and creates a new population by letting each individual of the previous population compete against a copy of it where the bit at position [FORMULA411] is flipped. Based on the best individuals created this way, the frequency at position [FORMULA412] is immediately set to either 0 or 1 , whichever value turns out to be better. This approach works very well for a variety of theory benchmarks, as proven by the authors. For example, for optimal parameter values, it exhibits a (deterministic) linear runtime on OneMax, and it optimizes the $\\operatorname{JUMP}_{k}$ benchmark with high probability in $O\\left(4^{k} n \\ln (n)\\right)$ time. ### 6.2. The [FORMULA415]-LeAdingOnes benchmark\n\nThe [FORMULA416]-LeAdingOnes function (eq. (5)) is a generalization of the classical LeAdingOnes benchmark [60] from the binary to the multi-valued domain. Before we define the generalization, we briefly present the LeAdingOnes function. LeAdingOnes. LeAdingOnes [60] is one of the most commonly mathematically analyzed benchmark functions, both in the general domain of evolutionary computation [45] as well as in the domain of EDAs [32]. For a bit string of length [FORMULA417], it returns the number of consecutive 1 s , starting from the leftmost position. Formally, LeAdingOnes : $\\{0,1\\}^{n} \\rightarrow\\{0 . . n]$ is defined as $x \\mapsto \\sum_{i \\in[n]} \\prod_{j \\in[i]} x_{i}$. The function has a single local maximum at the all-1s string, which is also its global maximum. [FORMULA420]-LeAdingOnes. Inspired by LeAdingOnes from the binary domain, we define [FORMULA421]-LeAdingOnes : $[0 . . r-1]^{n} \\rightarrow[0 . . n]$ as the function that returns the number of consecutive 0 s , starting from the leftmost position. Formally,\n\n$$\nr \\text {-LEADINGONES }: x \\mapsto \\sum_{i \\in[n]} \\prod_{j \\in[j]} \\mathbb{1}\\left[x_{j}=0\\right]\n$$\n\nIn contrast to the binary case, the single local optimum of [FORMULA424]-LEADINGONES is the all-0s string, which is also its global optimum. # 6.3. Runtime results \n\nWe analyze the runtime of the [FORMULA425]-UMDA (Algorithm 2) on the [FORMULA426]-LEADINGONES benchmark (eq. (5)) in the regime with low genetic drift. For the upper bound (Theorem 6), compared to the binary case [20, Theorem 5], we get an extra factor of order $r \\ln \\left(r\\right)^{2}$ in the runtime. The factor of [FORMULA428] is a result of the increased waiting time to see a certain position out of [FORMULA429]. The factor of $\\ln (r)^{2}$ stems from the choice to stay in the regime with low genetic drift as well as for the time it takes a frequency to get to the upper border. For the lower bound, (Theorem 10), compared to the binary case [20, Theorem 6], we get an extra factor of order $r \\ln (r)$. Our two bounds differ by a factor in the order of [FORMULA432] (for polynomial population sizes). We believe that our lower bound is missing a factor of [FORMULA433], as we currently do not account for the time it takes a frequency to get from its starting value [FORMULA434] to $1-\\frac{1}{n}$ for this bound. We prove the upper bound in Section 6.3.1 and the lower bound in Section 6.3.2. Both bounds are a generalization of the binary case. ### 6.3.1. Upper bound\n\nOur upper bound shows that the number of iterations until an optimum is found for the first time is almost linear in [FORMULA436] and in [FORMULA437], only adding a factor in the order of [FORMULA438]. Theorem 6.",
+      "question_type": "application",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:54",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Regarding the EDA discussed, what population sizes demonstrated the most significant behavior concerning the normalized fitness function, and what observation was made about the fitness function's growth in other population sizes?",
+      "topics": [
+        "algorithm"
+      ],
+      "answer": "Populations of 80 and 60 individuals exhibited the most significant behavior with respect to the normalized fitness function. In contrast, other population sizes displayed a more moderate growth in the value of the fitness function. The evaluation involved assessing the average fitness function value across 20000 iterations for each population size, starting from 10 individuals and increasing to 100 individuals, while maintaining a constant population size (NI) during the estimation process.",
+      "chunk_id": 3834,
+      "paper_id": "Daily Ecopertrol Stock Performance Estimate by Using Estimation of Distribution Algorithms (EDAs)",
+      "paper_title": "Daily Ecopertrol Stock Performance Estimate by Using Estimation of Distribution Algorithms (EDAs)",
+      "paper_year": "2012",
+      "chunk_content": "Comportamiento de la Funcion de Aptitud para una poblacion de 80 individuos. Para evaluar el comportamiento del mecanismo por evolucion, el modelo inicia con la generacion de una poblacion inicial de individuos (NI), la cual se mantiene constante durante todo el proceso de estimacion. Para tal efecto, se hicieron una serie de pruebas sobre la cantidad de individuos, iniciando la poblacion con 10 individuos, y llegando gradualmente, a un total de 100 individuos. Para cada tamano de poblacion, se llevaron a cabo 20000 iteraciones, en donde para cada iteracion, se identifico el valor promedio de la funcion de aptitud de la poblacion, tal y como se muestra en la Figura 6. De acuerdo con lo anterior, se puede observar que las poblaciones que mejor comportamiento presentaron frente a la funcion de aptitud normalizada, fueron las poblaciones que tuvieron 80 individuos, y 60 individuos respectivamente, a diferencia de otras poblaciones, las cuales mostraron el crecimiento del valor de la funcion de aptitud algo mas moderada. ## IV.",
+      "question_type": "theory",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:02:56",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "Based on the benchmark results using SPLASH-2 applications, how does the EDA-based Design Space Exploration (DSE) framework perform in balancing energy consumption and throughput in multicore architectures?",
+      "topics": [
+        "benchmarks"
+      ],
+      "answer": "The EDA-based DSE framework, when tested with SPLASH-2 benchmark applications, achieves a better trade-off between energy consumption and throughput in multicore architectures. The framework uses the number of cores, L1 cache size, and CPU operating frequency as decision variables to minimize energy consumption and maximize throughput.",
+      "chunk_id": 8168,
+      "paper_id": "Estimation of distribution-based multiobjective design space exploration for energy and throughput-optimized MPSoCs",
+      "paper_title": "Estimation of distribution-based multiobjective design space exploration for energy and throughput-optimized MPSoCs",
+      "paper_year": "2020",
+      "chunk_content": "[IMAGE_1]\n\nFigure 2. Benchmarks results: (a) normalized throughput, (b) normalized energy, and (c) EDP. # 6. Conclusion \n\nIn this paper, we have proposed a multiobjective DSE framework for multicore architectures using the EDA. The proposed framework searches the set of best configurations with three decision variables, number of cores, L1 cache size, and CPU operating frequency, in order to minimize the energy consumption and maximize the throughput. The results of the proposed framework were analyzed using SPLASH-2 benchmark applications integrated into the MARSS-x86 simulator. The simulation results show that the EDA-based DSE framework can\n\nefficiently address the DSE problem in multicore architectures by achieving a better trade-off between energy consumption and throughput. # Acknowledgment \n\nThis work was supported by the National ICT R\\&D Fund Pakistan through grant number ICTRDF/TR\\&D /2012/65.",
+      "question_type": "comparative analysis",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:02:57",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "What programming techniques are suggested to optimize the EDA's performance, considering the potential impact of genetic drift on algorithms like PBIL or cGA?",
+      "topics": [
+        "Estimation of Distribution Algorithms",
+        "PBIL",
+        "cGA",
+        "genetic drift",
+        "convergence",
+        "optimization"
+      ],
+      "answer": "To mitigate performance loss due to genetic drift in EDAs such as PBIL or cGA, a developer should be aware that, as Krejca and Witt stated, genetic drift can cause the algorithm to stop at absorbing boundaries. For PBIL, the learning rate's effect on convergence should be carefully considered, as a constant learning rate (equivalent to a constant smoothing parameter in the CE algorithm) may lead the probability mass function to converge to a unit mass at some random candidate, potentially prematurely. Therefore, implementations should consider strategies to dynamically adjust the learning rate or smoothing parameter to avoid early convergence due to genetic drift.",
+      "chunk_id": 8149,
+      "paper_id": "Sharp Bounds for Genetic Drift in Estimation of Distribution Algorithms",
+      "paper_title": "Sharp Bounds for Genetic Drift in Estimation of Distribution Algorithms",
+      "paper_year": "2020",
+      "chunk_content": "Gonzalez et al. [14] showed that for the 2-D OneMax function, the sampling frequency of PBIL can converge to any search point in the search space with probability near to 1 if the initial sampling frequency goes to that search point and the learning rate goes to 1 . Droste [15] noticed the possibility of the cGA getting stuck, but he only analyzed the runtime conditional on it being finite, and no analysis of genetic drift or stagnation times was given. Costa et al. [16] proved that a constant smoothing parameter for the cross entropy (CE) algorithm (which is equivalent to a constant learning rate $\\rho$ for PBIL) results in that the probability mass function converges to a unit mass at some random candidate, but no convergence speed analysis was given. In summary, as Krejca and Witt said in [11], the genetic drift in EDAs is a general problem of martingales, that is, that a random process with zero expected change will eventually stop at the absorbing boundaries of the range. Witt [17] and Lengler et al. [18] recently showed that genetic drift can result in a considerable performance loss on the OneMax function. [^0]:    Manuscript received November 4, 2019; revised February 23, 2020; accepted April 8, 2020.",
+      "question_type": "implementation",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:02:59",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "What specific metrics are used to evaluate the effectiveness of the EDA model as a learning algorithm for GRAN3SAT, focusing on performance improvement compared to ES (Evolution Strategy) and behavior changes across different phases?",
+      "topics": [
+        "search"
+      ],
+      "answer": "The evaluation indicators focus on analyzing the performance improvement of EDA as a learning algorithm for GRAN3SAT compared with ES, considering different proportions of positive and negative literals. The evaluation also assesses the behavior changes of the model at different phases, with literals represented in the form {-1,1}.",
+      "chunk_id": 2572,
+      "paper_id": "Estimation of Distribution Algorithm with Discrete Hopfield Neural Network for GRAN3SAT Analysis",
+      "paper_title": "Estimation of Distribution Algorithm with Discrete Hopfield Neural Network for GRAN3SAT Analysis",
+      "paper_year": "2023",
+      "chunk_content": "$\\{-1,1\\}$ 15.00$\n    https://doi.org/10.1145/3590003.3590021\n\nfacilitate the learning phase. However, no attempt has been made to exploit the EDA algorithm as an optimal learning method in Discrete Hopfield Neural Networks (DHNN), especially in optimizing GRAN3SAT logic representation and analysis. In this paper, the GRAN3SAT logic structure is applied in DHNN. To efficiently find a consistent solution to the satisfiability problem, EDA is used as a learning algorithm to search the fitness of neurons. EDA achieves the search and convergence of satisfactory solutions through continuous updating and testing. This study focuses on different proportions of positive and negative literals, analyzes the performance improvement of EDA as a learning algorithm for GRAN3SAT compared with ES, and evaluates the behavior changes of the model at different phases through evaluation indicators. ## 2 EDA IN THE DHNN BASED ON GRAN3SAT\n\n2.1 Logic Rules of GRAN3SAT. GRAN3SAT is a novel non-systematic SAT logic structure represented in conjunctive normal form. Logic consists of a set of different literals and clauses. GRAN3SAT mainly consists of third-order, second-order, and first-order logic clauses randomly. Each literal value is of the form $\\{-1,1\\}$. The general formula of GRAN3SAT is $P_{G}$, detailed as follows. a) A set of $N N$ literals: $A_{1}, A_{2}, A_{3}, \\ldots \\ldots, A_{N N}$.",
+      "question_type": "evaluation metrics",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:03:00",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "In the context of EDAs, how does the algorithmic mechanism of encoding a solution \\$\\Pi\\$ as a sequence-speed list, specifically \\$\\Pi=\\{\\boldsymbol{x}, \\boldsymbol{V}\\}\\$, function in the described EDBFSP?",
+      "topics": [
+        "encoding"
+      ],
+      "answer": "The encoding scheme in EDBFSP represents a complete solution using a sequence-speed list \\$\\Pi=\\{\\boldsymbol{x}, \\boldsymbol{V}\\}\\$. Here, \\$\\boldsymbol{x}=\\{x_{1}, x_{2}, \\ldots, x_{f}\\}\\$ denotes the job sequence, which is composed of partial sequences for each factory. \\$\\boldsymbol{V}\\$ is an \\$n \\times m\\$ matrix that specifies the speed levels for each operation of all jobs. This encoding allows for easy decoding, determining both the jobs assigned to a factory \\$T_{j}=\\sum_{i=1}^{m} P_{j i}\\$ and the operation sequence of jobs within that factory.",
+      "chunk_id": 1624,
+      "paper_id": "Scheduling of energy-efficient distributed blocking flowshop using pareto-based estimation of distribution algorithm",
+      "paper_title": "Scheduling of energy-efficient distributed blocking flowshop using pareto-based estimation of distribution algorithm",
+      "paper_year": "2022",
+      "chunk_content": "4.1. Encoding and decoding scheme\n\nA complete solution of EDBFSP contains two parts: the job sequence and the speed level matrix for each operation of the jobs. The solution $\\Pi$ is encoded as a sequence-speed list: $\\Pi=\\left\\{\\boldsymbol{x}, \\boldsymbol{V}\\right\\}$. In $\\Pi, \\boldsymbol{x}=\\left\\{x_{1}, x_{2}, \\ldots, x_{f}\\right\\}$ denotes the job sequence which is composed of all partial sequences $\\boldsymbol{x}$ for each factory. This presentation can be easily decoded since $\\Pi=\\{\\boldsymbol{x}, \\boldsymbol{V}\\}$ decides not only the jobs assigned to factory $T_{j}=\\sum_{i=1}^{m} P_{j i}$, but also the operation sequence of the jobs in this factory. On the other side, $\\boldsymbol{V}$ is a $n \\times m$ matrix that gives the speed levels for each operation of all jobs. For a better understanding, an example of the encoding and decoding scheme is given in Example 1.",
+      "question_type": "definition",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:03:02",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "When configuring an EDA for continuous optimization problems, how does the Estimation of Multivariate Normal Algorithm (EMNA$_{\\text{global}}$) differ from the Univariate Marginal Distribution Algorithm with Gaussian models (UMDA$_{\\text{G}}$) regarding variable dependencies, and what are the practical implications of these differences?",
+      "topics": [
+        "optimization"
+      ],
+      "answer": "UMDA$_{\\text{G}}$ ignores the dependence of all variables, making it easy to implement but difficult to solve problems where variables have strong dependencies. EMNA$_{\\text{global}}$ overcomes this limitation by using a conventional maximum likelihood estimated multivariate Gaussian distribution to account for variable dependencies. Practically, this means that for problems with significant variable interactions, EMNA$_{\\text{global}}$ is expected to perform better than UMDA$_{\\text{G}}$, although at the cost of increased computational complexity due to the multivariate Gaussian model.",
+      "chunk_id": 7414,
+      "paper_id": "An Estimation of Distribution Algorithm With Filtering and Learning",
+      "paper_title": "An Estimation of Distribution Algorithm With Filtering and Learning",
+      "paper_year": "2021",
+      "chunk_content": "Reveliotis upon evaluation of the reviewers' comments. This work was supported in part by the National Key Research and Development Program of China under Grant 2016YFB0901900, in part by the Major International Joint Research Project of the National Natural Science Foundation of China under Grant 71520107004, in part by the Major Program of National Natural Science Foundation of China under Grant 71790614, in part by the Fund for Innovative Research Groups of the National Natural Science Foundation of China under Grant 71621061, and in part by the 111 Project under Grant B16009. (Corresponding author: Lixin Tang.)\nLixin Tang is with the Key Laboratory of Data Analytics and Optimization for Smart Industry, Ministry of Education, Northeastern University, Shenyang 110819, China (e-mail: lixintang@mail.neu.edu.cn). Xiangman Song is with the Liaoning Engineering Laboratory of Operation Analytics and Optimization for Smart Industry, State Key Laboratory of Synthetical Automation for Process Industries, Northeastern University, Shenyang 110819, China (e-mail: sxm123121@163.com). Jiyin Liu is with the School of Business and Economics, Loughborough University, Loughborough LE11 3TU, U.K. (e-mail: j.y.liu@lboro.ac.uk). Chang Liu is with the Liaoning Key Laboratory of Manufacturing System and Logistics, Northeastern University, Shenyang 110819, China (e-mail: lc1987328@126.com). This article has supplementary downloadable material available at https://ieeexplore.ieee.org, provided by the authors. Color versions of one or more of the figures in this article are available online at https://ieeexplore.ieee.org. Digital Object Identifier 10.1109/TASE.2020.3019694\nto revise the modeling data and a learning strategy to improve sampling, which can solve the problems with the characteristics of nonlinearity, variable coupling, and large scale. Computational experiments show that the EDA is effective. In the future, the proposed algorithm can be applied to some practical optimization problems such as operation optimization in blast furnace, which is considered as a continuous production process with variable coupling. The algorithm has the potential to help optimizing the process control parameters. Index Terms-Estimation of distribution algorithm (EDA), filtering, learning sampling, multivariate probabilistic model. ## I. INTRODUCTION\n\nINTELLIGENT algorithms have become very popular for solving optimization problems and are studied widely in the practical problems [1]-[4]. Estimation of distribution algorithms (EDAs) are evolutionary algorithms based on estimation and sampling from probabilistic models. The first EDA was developed by Muhlenbein and Paass [5], and several improved EDAs have been proposed in recent years. Gaussian distribution is commonly used for modeling in continuous EDAs. Univariate Marginal Distribution Algorithm with Gaussian models for continuous domains (UMDA $\\underset{\\mathrm{G}}{\\mathrm{G}}$ ) [6], the earliest proposed univariate Gaussian-based EDA, is easy to implement due to its ignoring the dependence of all variables. But it is difficult to solve problems in which the variables have strong dependence with each other. Estimation of Multivariate Normal Algorithm (EMNA ${ }_{\\text {global }}$ ) [6] was proposed to overcome this. It used a conventional maximum likelihood estimated multivariate Gaussian distribution. Later, Eigenspace EDA (EEDA) [7] was proposed to improve the poor explorative capability. Besides, EDAs based on complex Gaussian distribution are proposed to solve multimodal and intractable problems. Some are with Gaussian mixture distribution [8]-[10]. Considering premature convergence of the traditional Gaussian EDAs, EDA ${ }^{2}$ was proposed to deal with it [11]. EDAs have also been used in hybrid algorithms. An algorithm combining Differential Evolution (DE) and EDA was proposed for the global continuous optimization problem [12], and it used an offspring generation scheme, which was similar to the DE crossover. For large-scale optimization problems, EDA with Model Complexity Control (EDA-MCC) [13] performed well using a specially designed multivariate model. Gaussian models can furnish useful information to search the optimal solution, but they cannot always provide an accurate distribution of promising solutions. Increasingly, EDAs based on different models have been studied. With the capacity of describing arbitrary multimodality, the Histogram models in EDAs [14]-[18] are more flexible than Gaussian models. However, the complexity can be\n\nincreased with problem size on account of multiple variable dependencies [19]. Some EDAs can learn the structure and parameters of the model in each generation. The factorized distribution algorithm (FDA) [20] can extract a factorization structure from a priori knowledge of the problem. EDAs based on Bayesian networks [21] using directed acyclic graphical models can update local parameters according to the conditional probability distributions. Based on Markov random fields, Distribution Estimation using Markov random fields (DEUM) [22] presented a fitness modeling approach to estimating the parameters of the model. Clustering techniques [23] and other statistical methods, such as some variants of the expectation-maximization (EM) algorithm [24], have been used to learn mixtures of distributions in EDAs. These EDAs have given greater emphasis to the modeling structure. But the frameworks of these EDAs are all similar and the historic individual information has not been utilized fully. In recent years, EDAs have been proposed to deal with many practical problems. A Pareto-based EDA was developed to solve a multiobjective flow-shop scheduling problem [25]. Using a mixed probability distribution model and an adaptive scheme, a new EDA was proposed to solve a multipolicy insurance investment problem [26]. In this article, a novel estimation of distribution algorithm with filtering and learning (EDA-FL) is proposed to solve continuous optimization problems more effectively. The contributions of our proposed algorithm are as follows. 1) A new EDA framework incorporating filtering is proposed. The idea of Kalman filtering is adopted to modify some individuals, which in turn affect the model, using an estimation error matrix from historic information. 2) A sampling strategy with learning is proposed. Using this strategy, the decision on where to sample is made according to the statistical information about the objective values of sampled individuals to avoid completely random sampling. To illustrate the effectiveness, the proposed algorithm is tested through computational experiments on benchmark functions. The rest of this article is organized as follows. Section II presents the background knowledge, including EDA, copulas, and Kalman filtering. Section III describes the fundamental ideas of the EDA-FL algorithm. Experimental studies are shown in Section IV. Finally, conclusions are given in Section V. ## II.",
+      "question_type": "comparison",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:03:04",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Regarding the compact Genetic Algorithm (cGA), classified as an Estimation of Distribution Algorithm (EDA), what limitations arise from its straightforward implementation concerning exploration and the potential for entrapment in local maxima, and how does the proposed modification with multiple probability vectors and a learning scheme aim to address these limitations?",
+      "topics": [
+        "optimization"
+      ],
+      "answer": "Straightforward implementations of compact Genetic Algorithms (cGAs), as a type of Estimation of Distribution Algorithm (EDA), often lack sufficient exploration capabilities, leading to the algorithm becoming trapped in local maxima. This is because they manipulate a probabilistic vector based on available knowledge, which may not adequately explore the search space. To mitigate this, a modified cGA is proposed that implements multiple probability vectors and incorporates a learning scheme. The goal is to enhance both exploitation of heuristic knowledge and exploration of the search space, aiming to improve the algorithm's effectiveness and ensure convergence by avoiding premature convergence to local optima.",
+      "chunk_id": 4191,
+      "paper_id": "Improved compact genetic algorithm for EM complex system design",
+      "paper_title": "Improved Compact Genetic Algorithm for EM Complex System Design",
+      "paper_year": "2012",
+      "chunk_content": "In order to overcome this problem compact genetic algorithms, classified as estimation of distribution algorithm, could be very effective, since they apply and manipulate a suitable probability vector to represent the distribution of good solutions. Unfortunately, their straightforward implementations usually lack of exploration, and they are easily trapped in local maxima. In order to overcome even this drawback and to develop a compact genetic algorithm with both the required exploitation, of the heuristic knowledge, and the exploration, for avoiding local maxima, in this paper a modified cGA is proposed by implementing more probability vectors and adding a suitable learning scheme to the traditional one in order to ensure the effectiveness of the algorithm. The here proposed new algorithm has been tested on some mathematical test functions and on a typical EM design problem, a microwave microstrip filter synthesis. Keywords-compact genetic algorithm\n\nI. INTRODUCTION\n\nNowadays the design of complex real electrical, electronic or electromagnetic systems may effectively exploit the characteristics of population based global optimizers, such as the classic Genetic Algorithms (GA) or Particle Swarm Optimization (PSO) and all the more recent developed ones such as MetaPSO, GSO, MetaLamarckians and so on. One of the main drawbacks of the adoption of these optimizers in the design of a real system is the difficulty in the introduction, in the optimized design algorithm, of all the heuristic knowledge already available in the field, and this is usually a big problem since the heuristic knowledge is often the core itself of the design team value. By the way, this is one of the main limits in the spread of population based algorithm for complex system optimizations. In order to overcome this problem, compact genetic algorithm, classified as estimation of distribution algorithm, could be very effective, since they are based on the definition\nof the distribution of promising solutions. Compact genetic algorithms have been suitably developed for overcoming this problem, since they introduce a suitable probability vector to represent the population, aiming exactly to exploit at best all the heuristic knowledge that has been achieved on a particular problem. Unfortunately, their straightforward implementations usually lack of exploration, since they attempt to manipulate a probabilistic vector from the available knowledge, and may be easily trapped in local maxima lacking of what is usually called high level design prospective. In order to overcome even this drawback and to develop a compact genetic algorithm with both the required exploitation, of the heuristic knowledge, and the exploration, for avoiding local maxima, in this paper a modified cGA is proposed by implementing more than one probability vector and adding a suitable learning scheme to the traditional one in order to ensure the effectiveness and the convergence of algorithm. The new algorithm in the following will be presented, discussed and tested both on purely mathematical and on an EM design problem, e.g.",
+      "question_type": "process",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:03:06",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "According to the details in the chunk, what advantages do Estimation of Distribution Algorithms (EDAs) have by associating a probability p(x) to points x in the search space?",
+      "topics": [
+        "representation"
+      ],
+      "answer": "Estimation of Distribution Algorithms (EDAs) associate a probability p(x) to points x in the search space, giving points with higher fitness a higher probability. This allows EDAs to define search distributions that favor solutions with better fitness, guiding the search towards promising areas of the search space. The learning step allows EDAs to learn a compact representation of the search distribution from a set \\mathscr{X} consisting of N solutions, which is then used in the sampling step to sample new solutions.",
+      "chunk_id": 9072,
+      "paper_id": "Expanding variational autoencoders for learning and exploiting latent representations in search distributions",
+      "paper_title": "Expanding variational autoencoders for learning and exploiting latent representations in search distributions",
+      "paper_year": "2018",
+      "chunk_content": "$S$ will denote a set of indices in $\\{1, \\ldots, n\\}$, and $X_{S}$ (respectively $x_{S}$ ) a subset of the variables of $\\mathbf{X}$ (respectively $\\mathbf{x}$ ) determined by the indices in $\\mathscr{X}=\\left\\{\\mathbf{x}^{i}\\right\\}_{i=1}^{N}$. The idea behind EDAs and other model-based EAs is to define search distributions that associate a probability $p(\\mathbf{x})$ to the points of the search space. Points with higher fitness will have a higher probability. Two crucial steps for EDAs are to learn a compact representation of the search distribution (learning step) and use this representation to sample new solutions (sampling step). Let us consider a set $\\mathscr{X}=\\left\\{\\mathbf{x}^{i}\\right\\}_{i=1}^{N}$ consisting of $N$ solutions.",
+      "question_type": "advantage",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:03:07",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "What are the precise algorithmic steps for executing the EDALNFE meta-heuristic within the described framework, assuming the goal is to approximate global optimum parameters for an urban growth model?",
+      "topics": [
+        "optimization"
+      ],
+      "answer": "The text describes EDALNFE as a population-based meta-heuristic used to automatically approximate global optimum parameters. However, the precise algorithmic steps for executing the EDALNFE model are not detailed. The framework allows parameter selection via expert experimentation (trial-error). The described use-case involves searching for parameter value combinations that minimize the error between simulated and observed patch changes, serving as the objective function for the EDALNFE algorithm. The broader calibration strategy involves either brute-force (testing all combinations) or optimization-based approaches, with EDALNFE falling under the latter.",
+      "chunk_id": 7191,
+      "paper_id": "Parameter Calibration of the Patch Growing Algorithm for Urban Land Change Simulations",
+      "paper_title": "Parameter Calibration of the Patch Growing Algorithm for Urban Land Change Simulations",
+      "paper_year": "2021",
+      "chunk_content": "The available framework allows to select these parameters by expert experimentation which is, basically, a trial-error strategy. Therefore we propose a competitive novel population-based meta-heuristic EDALNFE to automatically approximate global optimum parameters in an efficient way. ## II. RELATED WORK\n\nThe calibration of an urban growth model seeks to determine the parameter values that most accurately represent the observed land use [1] by searching for a combination of parameter values that minimizes the error between the simulated patch changes and the observed patch changes. There are as many calibration algorithms as there are urban growth models since each model has different parameters to calibrate. Nonetheless, we can identify two rough classes of calibration strategies: brute-force-based calibration and optimization-based calibration. These two classes are discussed below. ## A. Brute-force Calibration\n\nBrute-force calibration consists of testing all the possible combinations of sets of parameter values. In a worst-case scenario this is equivalent to a factorial experiment design. In [2] the authors calibrate the widely-used SLEUTH urban growth model by following a brute-force approach. They test a set of combinations of the control parameters.",
+      "question_type": "implementation focused",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:03:09",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "Considering the performance similarities among Estimation of Distribution Algorithms, what specific algorithms are mentioned as having comparable performance, despite differing frameworks?",
+      "topics": [
+        "performance"
+      ],
+      "answer": "Based on the provided text, Unimodal Marginal Distribution Algorithm (UMDA), Compact Genetic Algorithm (CGA), and Population-Based Incremental Learning (PBIL) are mentioned as having similar performances, despite UMDA's framework differing from CGA and PBIL.",
+      "chunk_id": 5494,
+      "paper_id": "An Estimation of Distribution Algorithm for Flowshop Scheduling with Limited Buffers",
+      "paper_title": "An Estimation of Distribution Algorithm for Flowshop Scheduling with Limited Buffers",
+      "paper_year": "2009",
+      "chunk_content": "Although UMDA has different framework than CGA and PBIL, the performances of these algorithms are similar [22]. ### 3.2 EDAs with Two-Order Dependencies\n\n3.2.1 Mutual Information Maximization for Input Clustering (MIMIC)\n\nMIMIC was proposed by De Bonet et al. [4].",
+      "question_type": "evaluation metrics",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:03:10",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "In the context of the experiment described, what role does the parameter 'e' play, given that 'e' is set to be $0.3 \\mathrm{M} / \\mathrm{M}$ where M is the size of particles in the population?",
+      "topics": [
+        "algorithm"
+      ],
+      "answer": "The parameter 'e' is defined as $0.3 \\mathrm{M} / \\mathrm{M}$, where 'M' represents the size of particles in the population. Therefore, 'e' scales proportionally to the population size. The specific role of 'e' is not explicitly stated, but its value is relevant for the low dimensional functions used in the experiment.",
+      "chunk_id": 298,
+      "paper_id": "Novel Particle Swarm Optimization for unconstrained problems",
+      "paper_title": "Novel Particle Swarm Optimization for Unconstrained Problems",
+      "paper_year": "2013",
+      "chunk_content": "The results of the experiments show NFCs, SR for each function. The last row of the table shows the average success rates and the average acceleration rate over 11 functions. The functions in this section are low dimensional functions. The parameter e is set to be $0.3 \\mathrm{M} / \\mathrm{M}$ is the size of particles in population). Table.",
+      "question_type": "theory",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:03:12",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "What specific implementation steps are required for the DT-MEDA algorithm to adapt the kernel width of the marginal distributions and prevent premature shrinking of variance?",
+      "topics": [
+        "design"
+      ],
+      "answer": "To prevent premature shrinking of variance in DT-MEDA, an overall scaling factor, denoted as η, is used. First, calculate η' using the formula η' = η^(t) * α^(0.4 * N_enc) * α^(0.6 * N_fail * p / (p-1)), where N_enc is the number of new solutions selected, N_fail is the number of solutions left out during truncated selection, p = 0.05 + 0.3 / √m (where m is the number of design variables), and α = exp(4 / N_sum) (where N_sum is the size of new solutions). Then, update η at each generation (t) using the formula η^(t+1) = η' * e^(0.7 * p * t / t_max) if t < 0.5 * t_max, otherwise, use η^(t+1) = η' * e^(0.3 * p * t / t_max), where t_max is the maximum generation. Finally, each kernel width N_pop is set to its product with η^(t+1).",
+      "chunk_id": 5230,
+      "paper_id": "A Decision-Tree-Based Multi-objective Estimation of Distribution Algorithm",
+      "paper_title": "A Decision-tree-based Multi-objective Estimation of Distribution Algorithm",
+      "paper_year": "2007",
+      "chunk_content": "The lower front a solution belongs to, the better it is. After identifying all the non-dominated solutions (those in the first front) in the population, they are copied to a mating pool. Crowding distance of each solution in the mating pool is estimated in objective space. Then the truncated selection is done based on crowding distances of solutions. In case of non-dominated solutions exceeds the population size, some solutions with the smaller values of crowding distance are removed. In this context, only the most crowded solution is removed. This process continues until the number of left solutions is equal to the population size. Note that the crowding distance of the adjoining solutions should be re-estimated each time a solution is left out. For simplicity it can be reestimated for all the remained solutions of this rank in the mating pool in the implementation. If the number of non-dominated solutions is less than the population size, it is necessary to pick up all the dominated solutions in the second front and copy them to the mating pool. If it is not enough yet, those in the following front (the third front) are identified and added to the mating pool, too. This procedure is repeated until the number of solutions in mating pool is not less than the population size. Then the above elimination procedure is performed on the dominated solutions on the highest front in the mating pool until the appropriate number of solutions is left. ### 2.2. Variance adaptation\n\nIf the kernel width $\\sigma$ of Gaussian distributions decreases fast, offspring will be very similar to its parent, which leads to hard generation of better solutions. To prevent variance from premature shrinking, an overall scaling factor, $\\eta$, is used to control the kernel width of the marginal distributions adaptively. We find that the variance update formula for single objective optimization in [10] is not good for multi-objective optimization problems. Based on experiments, the modifications of $$\n\\begin{aligned}\n& \\eta^{\\prime}=\\eta^{(t)} \\alpha^{0.4 N_{\\text {enc }}} \\alpha^{0.6 N_{\\text {fail }} p /(p-1)} \\\\\n& \\eta^{(t+1)}=\\left\\{\\begin{array}{ll}\n\\eta^{\\prime} e^{0.7 p t t_{\\max }} & \\text { if } t<0.5 t_{\\max } \\\\\n\\eta^{\\prime} e^{0.3 p t t_{\\max }} & \\text { otherwise }\n\\end{array}\\right.\n\\end{aligned}\n$$ becomes\n\n$$\n\\begin{aligned}\n& \\eta^{\\prime}=\\eta^{(t)} \\alpha^{0.4 N_{\\text {enc }}} \\alpha^{0.6 N_{\\text {fail }} p /(p-1)} \\\\\n& \\eta^{(t+1)}=\\left\\{\\begin{array}{ll}\n\\eta^{\\prime} e^{0.7 p t t_{\\max }} & \\text { if } t<0.5 t_{\\max } \\\\\n\\eta^{\\prime} e^{0.3 p t t_{\\max }} & \\text { otherwise }\n\\end{array}\\right.\n\\end{aligned}\n$$\n\nwhere $N_{\\text {enc }}$ denotes the number of new solutions being selected into the next generation, $N_{\\text {fail }}$ represents the number left, $t$ is the current generation, $t_{\\max }$ is the maximum generation, $p=0.05+0.3 / \\sqrt{m}, m$ is the number of design variables, $\\alpha=\\exp \\left(4 / N_{\\text {sum }}\\right)$ and $N_{\\text {sum }}$ is the size of new solutions. Then each kernel width $N_{\\text {pop }}$ is set to its product with $\\eta^{(t+1)}$. ### 2.3. Structure of DT-MEDA\n\nThe flow of DT-MEDA is described as follows:\n(1) Set population size $N_{\\text {pop }}$, the promising solutions size $N_{\\text {mar }}$, the offspring size $P(t)$, mutation probability $P_{m}$, the distribution index for mutation $\\eta_{m}$, the maximum iteration number $S(t)$, and generate the initial population $P(t)$ randomly, set $t=0$\n(2) Select $N_{p a t}$ promising solutions from $P(t+1)$ and form a set $S(t)$;\n(3) Build a decision-tree-based probabilistic model $B$ using $\\mathrm{C}++$ by DT metrics $[4,9,11]$;\n(4) Sample $\\Delta$ new solutions from $1 / \\mathrm{n}$, and the new solutions form $O(t)$;\n(5) Perform polynomial mutation on solutions in $\\gamma(\\mathrm{N})$ with probability $\\Delta(\\mathrm{M})$;\n(6) Create a new population $P(t+1)$ by selecting $N_{p o p}$ solutions from the merge of [FORMULA37] and [FORMULA38] using ranking method and truncated selection described in section 2.1. And Modify the variance according to section 2.2 , let $t=t+1$;\n(7) If the termination criteria are not met, go to (2).",
+      "question_type": "implementation",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:03:14",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Considering the particle swarm optimization (PSO) algorithm described, where each particle's position is updated as $\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})=\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t})+\\mathbf{v}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})$, and the velocity is updated using $\\mathbf{v}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})=\\mathbf{v}_{\\mathbf{i}}(\\mathbf{t})+c_{1} \\phi_{1}(\\mathbf{p}_{\\mathbf{i}}(\\mathbf{t})-\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t}))+c_{2} \\phi_{2}(\\mathbf{p}_{\\mathbf{g}}(\\mathbf{t})-\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t}))$, what conditions on the parameters $c_1$ and $c_2$, as well as the random variables $\\phi_1$ and $\\phi_2$, are necessary to guarantee that the velocity $\\mathbf{v}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})$ remains bounded, given the constraint that the term is limited to the range of $\\pm \\mathbf{v}_{\\text {max }}$?",
+      "topics": [
+        "search"
+      ],
+      "answer": "The boundedness of the velocity $\\mathbf{v}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})$ in the PSO algorithm, where $\\mathbf{x}_{\\mathbf{i}}$ is the position vector, $\\mathbf{v}_{\\mathbf{i}}$ is the velocity vector, $\\mathbf{p}_{\\mathbf{i}}$ is the individual best position, and $\\mathbf{p}_{\\mathbf{g}}$ is the global best position, is primarily enforced by explicitly limiting the velocity to the range $\\pm \\mathbf{v}_{\\text {max }}$. While the parameters $c_1$ and $c_2$ (positive constants) and the random variables $\\phi_1$ and $\\phi_2$ (uniformly distributed in $[0,1]$) influence the velocity update, they do not inherently guarantee boundedness. The explicit constraint ensures that if the calculated velocity exceeds these bounds, it is clipped to $\\pm \\mathbf{v}_{\\text {max }}$. Therefore, the primary condition for guaranteeing bounded velocity is the enforcement of the velocity limit, regardless of the values of $c_1$, $c_2$, $\\phi_1$, and $\\phi_2$. There are no explicit mathematical conditions on $c_1$, $c_2$, $\\phi_1$, and $\\phi_2$ mentioned that guarantee boundedness independent of the $\\pm \\mathbf{v}_{\\text {max }}$ limit.",
+      "chunk_id": 5150,
+      "paper_id": "Estimation of distribution algorithm for optimization of neural networks for intrusion detection system",
+      "paper_title": "Estimation of distribution algorithm for optimization of neural networks for intrusion detection system",
+      "paper_year": "2006",
+      "chunk_content": "Each particle represents a potential solution and has a position represented by a position vector $\\mathbf{x}_{\\mathbf{i}}$. A swarm of particles moves through the problem space, with the moving velocity of each particle represented by a velocity vector $\\mathbf{v}_{\\mathbf{i}}$. At each time step, a function $f_{i}$ representing a quality measure is calculated by using $$\n\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})=\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t})+\\mathbf{v}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})\n$$ as input. Each particle keeps track of its own best position, which is associated with the best fitness it has achieved so far in a vector $\\mathbf{p}_{\\mathbf{i}}$. Furthermore, the best position among all the particles obtained so far in the population is kept track of as $\\mathbf{p}_{\\mathbf{g}}$. In addition to this global version, another version of PSO keeps track of the best position among all the topological neighbors of a particle. At each time step $R 2 L$, by using the individual best position, $\\{41-8-1\\}$, and the global best position, $\\mathbf{p}_{\\mathbf{g}}(\\mathbf{t})$, a new velocity for particle $i$ is updated by\n\n$$\n\\mathbf{v}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})=\\mathbf{v}_{\\mathbf{i}}(\\mathbf{t})+c_{1} \\phi_{1}\\left(\\mathbf{p}_{\\mathbf{i}}(\\mathbf{t})-\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t})\\right)+c_{2} \\phi_{2}\\left(\\mathbf{p}_{\\mathbf{g}}(\\mathbf{t})-\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t})\\right)\n$$\n\nwhere $c_{1}$ and $c_{2}$ are positive constant and $\\phi_{1}$ and $\\phi_{2}$ are uniformly distributed random number in $[0,1]$. The term [FORMULA52] is limited to the range of $\\pm \\mathbf{v}_{\\text {max }}$. If the velocity violates this limit, it is set to its proper limit. Changing velocity this way enables the particle [FORMULA54] to search around its individual best position, [FORMULA55], and global best position, [FORMULA56]. Based on the updated velocities, each particle changes its position according to the following equation:\n\n$$\n\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})=\\mathbf{x}_{\\mathbf{i}}(\\mathbf{t})+\\mathbf{v}_{\\mathbf{i}}(\\mathbf{t}+\\mathbf{1})\n$$\n\nA neural network classifier trained by PSO algorithm with flexible bipolar sigmoid activation functions at hidden layer were constructed for the breastcancer data set. The issue of coding is similar with the one used in EDA-NN discussed above.",
+      "question_type": "theoretical foundation",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:03:18",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "How does the update of the mean value \\(\\mu_{i}\\) in the described Estimation of Distribution Algorithm (EDA) compare to the update of the standard deviation \\(\\sigma_{i}\\)?",
+      "topics": [
+        "evolutionary"
+      ],
+      "answer": "The mean value \\(\\mu_{i}(k+1)\\) for each variable \\(i\\) at iteration \\(k+1\\) is updated by a weighted average of its previous value \\(\\mu_{i}(k)\\) and a term involving the best, second best, and worst individuals \\(\\mu_{i, \\text { best }}(k), \\mu_{i, 2, \\text { subsec }}(k)\\), and \\(\\mu_{i, \\text { swav }}(k)\\), respectively, with a learning rate \\(\\alpha\\). The standard deviation \\(\\sigma_{i}(k+1)\\) is updated similarly, but using the root mean square difference between the best individuals \\(\\mu_{i}^{j}(k)\\) and their mean \\(\\hat{\\mu}_{i}^{j}(k)\\), also weighted by \\(\\alpha\\). Thus, the mean is updated based on extreme values, while the standard deviation is updated based on the dispersion of selected individuals.",
+      "chunk_id": 10652,
+      "paper_id": "Biped gait optimization using estimation of distribution algorithm",
+      "paper_title": "Biped gait optimization using estimation of distribution algorithm",
+      "paper_year": "2005",
+      "chunk_content": "So the proposed algorithm improves only key states to minimize the desired cost function. ## V. EDA\n\nThe proposed algorithm adopts a new evolutionary algorithm EDA [10]. It is based on the probabilistic model where selection and recombination of building blocks of GAs are replaced by generating new solutions through sampling the probability distribution which is calculated from the selected promising solutions. The probabilistic model is in an explicit model of promising regions of the searching space. As the input coordinates $q_{i}\\left(i=1, \\ldots, N_{i}\\right)$ of the $N_{i}$ links in joint space are considered to satisfy multivariate normal distribution $\\Pi_{i=1}^{N_{i}} p_{i}\\left(q_{i}\\right)$, which is the product of $\\mu_{i, \\text { swav }}(k)$ independent univariate normal distributions $p_{i}\\left(q_{i}\\right)$, the population of solution is replaced by two vectors. One is the mean values of Gaussian normal distribution $\\mu_{i}$ and the other is the standard deviation $\\sigma_{i}$ for each optimized variable $q_{i}$. No interactions among the variables are covered. After generating a number of new solutions, the mean values $30 \\mathrm{~kg} \\times \\mathrm{cm}$ are shifted towards the best of the generated solutions and the standard deviation $N_{l}=7, N_{k p}=4, s_{n}=10, L_{h}=10 \\mathrm{~cm}$ is\nreduced to make future exploration of the search space narrower. The algorithm can be summarized as follows. 1. Give a multivariate Gaussian distribution of mean $L_{0}=4 \\mathrm{~cm}, L_{l}=L_{2}=8 \\mathrm{~cm}, L_{3}=20 \\mathrm{~cm}, M_{0}=0.1 \\mathrm{~kg}, M_{l}=M_{2}=0.2 \\mathrm{~kg}$ and standard deviation $M_{l}=1 \\mathrm{~kg}$. 2. While termination condition is not met:\na) Generate a population of $P$ individuals. b) Select the best $Q$ individuals from parent generation $k$ 's population. c) Update the multivariate Gaussian distribution using the $q_{1}$ selected individuals. The mean and standard deviation of each univariate distribution are updated in the following ways as (13) and (14). $$\n\\begin{aligned}\n& \\mu_{i}(k+1)=(1-\\alpha) \\mu_{i}(k)+\\alpha\\left(\\mu_{i, \\text { best }}(k)+\\mu_{i, 2, \\text { subsec }}(k)-\\mu_{i, \\text { swav }}(k)\\right) \\\\\n& \\sigma_{i}(k+1)=(1-\\alpha) \\sigma_{i}(k)+\\alpha \\sqrt{\\frac{1}{Q} \\sum_{i=1}^{Q}\\left(\\mu_{i}^{j}(k)-\\hat{\\mu}_{i}^{j}(k)\\right)^{2}}\n\\end{aligned}\n$$\n\nWhere $\\mu_{i, \\text { best }}(k), \\mu_{i, 2, \\text { subsec }}(k)$ and $\\mu_{i, \\text { swav }}(k)$ are the values of the best, second best and worst individual (with respect to the cost function) of the $i$ th variable at iteration $k . \\mu_{i}^{j} j=1, \\ldots, Q$ are the $\\left(S x_{i}^{3}, S y_{i}^{3}, S z_{i}^{3}\\right)$ best individuals for the $\\left(x_{i, \\text { imp }}^{i}, y_{i, \\text { imp }}^{i}\\right)$ th variable and $\\hat{\\mu}_{i}^{j}$ is their mean. $\\alpha$ is the learning rate. ## VI. SimULATION RESULTS\n\nTo show the effectiveness of the proposed algorithm, we apply it on the digital robot model of humanoid robot named Robo-Erectus (RE) as shown in Fig. 3 [17].",
+      "question_type": "relationship",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:03:20",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "Based on the figures, what programming considerations are relevant when implementing and visualizing the pre-training and fine-tuning processes, specifically concerning the 'MR' parameter on Fashion-MNIST?",
+      "topics": [
+        "optimization"
+      ],
+      "answer": "The figures suggest that a developer should structure the code to allow for varying the 'MR' parameter, which likely represents a mask ratio. The implementation should include visualization tools to display the pre-training and fine-tuning processes under different 'MR' values on the Fashion-MNIST dataset, enabling empirical analysis of the algorithm's behavior with respect to this parameter.",
+      "chunk_id": 7857,
+      "paper_id": "Random mask-based estimation of the distribution algorithm for stacked auto-encoder one-step pre-training",
+      "paper_title": "Random mask-based estimation of the distribution algorithm for stacked auto-encoder one-step pre-training",
+      "paper_year": "2021",
+      "chunk_content": "15. The pre-training process under different MR on Fashion-MNIST. [IMAGE15]\n\nFig. 16. The fine-tuning process under different MR on Fashion-MNIST. [IMAGE16]\n\nFig.",
+      "question_type": "implementation focused",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:03:21",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "What specific metrics are used to evaluate the effectiveness of the UMDA in sampling the all-ones string (global optimum) when the number of iterations is set to $(c_{2} n \\ln n) /(2 \\lambda)$, where $c_{2}$ is a positive constant less than $c_{1}$, and how does this relate to the number of function evaluations?",
+      "topics": [
+        "fitness"
+      ],
+      "answer": "The effectiveness of the UMDA is evaluated by determining the probability that the algorithm fails to sample the all-ones string within $(c_{2} n \\ln n) /(2 \\lambda)$ iterations. This probability is calculated as $\\left(\\left(1-\\frac{1}{n}\\right)^{\\lambda}\\right)^{\\frac{c_{2} n \\ln n}{2 \\lambda}}$, which is shown to be greater than or equal to $n^{-c_{2}}$. The number of function evaluations is related to the number of iterations $i$ by the formula $(i-x-\\zeta \\sqrt{x}) / \\sqrt{i}$, where $i = x + 2\\zeta \\sqrt{x} + 1$ represents the offspring size sampled by UMDA in each iteration, $x$ is a variable representing the current state, and $\\zeta$ is a constant.",
+      "chunk_id": 8016,
+      "paper_id": "Lower bounds on the run time of the Univariate Marginal Distribution Algorithm on OneMax",
+      "paper_title": "Lower bounds on the run time of the Univariate Marginal Distribution Algorithm on OneMax",
+      "paper_year": "2020",
+      "chunk_content": "Due to symmetry, we can w.l.o.g. assume that the global optimum is the all-ones string. We look at $\\left(c_{2} n \\ln n\\right) /(2 \\lambda)$ iterations, where $c_{2}<c_{1}$ is a positive constant, and show that it is very unlikely to sample the all-ones string during that time. Note that this translates to $(i-x-\\zeta \\sqrt{x}) / \\sqrt{i}$ function evaluations until the optimum is sampled, as UMDA samples $i=x+2 \\zeta \\sqrt{x}+1$ offspring every iteration. Consider a single position with frequency at $$\n\\begin{aligned}\n\\frac{x+2 \\zeta \\sqrt{x}+1-x-\\zeta \\sqrt{x}}{\\sqrt{x+2 \\zeta \\sqrt{x}+1}} & =\\frac{\\zeta \\sqrt{x}+1}{\\sqrt{x+2 \\zeta \\sqrt{x}+1}} \\\\\n& \\geq \\frac{\\zeta \\sqrt{x}+1}{\\sqrt{3 \\zeta x}} \\\\\n& =\\sqrt{\\frac{\\zeta}{3}}+\\frac{1}{\\sqrt{3 \\zeta x}} \\\\\n& =\\Omega(1)\n\\end{aligned}\n$$. The probability that this position never samples a 1 during our time of $$\n\\begin{aligned}\n\\operatorname{Var}(\\Delta) & \\geq \\Omega(\\mu)\\left(\\sum_{i=x+2 \\zeta \\sqrt{x}+1}^{\\mu} \\operatorname{Pr}\\left(X_{t+1}=i\\right)\\right)^{2} \\\\\n& \\geq \\Omega(\\mu) \\operatorname{Pr}\\left(X_{t+1} \\geq x+2 \\zeta \\sqrt{x}+1\\right)^{2} \\geq \\Omega(\\mu)\n\\end{aligned}\n$$ iterations is at least\n\n$$\n\\left(\\left(1-\\frac{1}{n}\\right)^{\\lambda}\\right)^{\\frac{c_{2} n \\ln n}{2 \\lambda}}=\\left(1-\\frac{1}{n}\\right)^{\\frac{c_{2} n \\ln n}{2}} \\geq\\left(1-\\mathrm{o}(1)\\right) \\mathrm{e}^{-\\frac{c_{2}}{2} \\ln n} \\geq \\mathrm{n}^{-c_{2}}\n$$\n\nif $x \\leq(5 / 6) \\mu$ is large enough. Given $\\operatorname{Pr}\\left(X_{t+1} \\geq x+\\zeta \\sqrt{\\mu-x}\\right)$ frequencies at $\\sqrt{x} / \\sqrt{\\mu-x} \\leq \\sqrt{(5 \\mu / 6) /(\\mu / 6)}=\\mathrm{O}(1)$, the probability that all of these positions sample at least one 1 during $(2+\\delta)$ iterations is at most\n\n$$\n\\left(1-n^{-c_{2}}\\right)^{\\Omega\\left(n^{c_{1}}\\right)} \\leq \\mathrm{e}^{-\\Omega\\left(n^{c_{1}-c_{2}}\\right)}\n$$\n\nwhich is exponentially small in $$\n\\mathrm{E}\\left(\\left|\\Delta_{t}-\\mathrm{E}\\left(\\Delta_{t}\\right)\\right|^{3} \\mid X_{t}\\right)=\\mathrm{O}\\left(\\mu^{3 / 2}\\right)\n$$, since $c_{1}>c_{2}$, due to our assumptions. Hence, with high probability, UMDA will need at least $$\n\\mathrm{E}\\left(\\left(\\left|\\Delta_{t}\\right|+\\left|\\mathrm{E}\\left(\\Delta_{t}\\right)\\right|\\right)^{3} \\mid X_{t}\\right)\n$$ function evaluations to find the optimum. Since the expected value of function evaluations is finite (due to the bound of $\\mathrm{E}\\left(\\Delta_{t} \\mid X_{t}\\right)$ and $$\n(a+b)^{3}=a^{3}+3 a b^{2}+3 a^{2} b+b^{3} \\leq 4 a^{3}+4 b^{3}\n$$ for the frequencies) and it is $a, b \\geq 0$ with high probability, it follows that the expected number of fitness evaluations is $$\n\\mathrm{E}\\left(\\left|\\Delta_{t}-\\mathrm{E}\\left(\\Delta_{t}\\right)\\right|^{3} \\mid X_{t}\\right) \\leq 4 \\mathrm{E}\\left(\\left|\\Delta_{t}\\right|^{3} \\mid X_{t}\\right)+4\\left|\\mathrm{E}\\left(\\Delta_{t} \\mid X_{t}\\right)\\right|^{3}\n$$ as well. We can now prove our lower bound for small population sizes.",
+      "question_type": "evaluation metrics",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:03:24",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "Within the framework of Estimation of Distribution Algorithms, what mathematical principles govern the algorithms mentioned in the text?",
+      "topics": [
+        "search"
+      ],
+      "answer": "The provided text does not describe any specific Estimation of Distribution Algorithms or their mathematical principles. It only acknowledges funding sources such as Saiotek, Research Groups 2007-2012 (IT-242-07), TIN2008- 06815-C02-01, Consolider Ingenio 2010 - CSD2007- 00018 projects, and COMBIOMED network. Therefore, it's impossible to extract the mathematical principles governing any EDA from this text.",
+      "chunk_id": 6287,
+      "paper_id": "EDA-PSO- A Hybrid Paradigm Combining Estimation of Distribution Algorithms and Particle Swarm Optimization",
+      "paper_title": "EDA-PSO: A Hybrid Paradigm Combining Estimation of Distribution Algorithms and Particle Swarm Optimization",
+      "paper_year": "2010",
+      "chunk_content": "This work has been partially supported by the Saiotek and Research Groups 2007-2012 (IT-242-07) programs (Basque Government), TIN2008- 06815-C02-01 and Consolider Ingenio 2010 - CSD2007- 00018 projects (Spanish Ministry of Science and Innovation) and COMBIOMED network in computational biomedicine (Carlos III Health Institute).",
+      "question_type": "conceptual deep",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:03:25",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "For implementing an Estimation of Distribution Algorithm for fuzzy clustering, how should practitioners determine the fitness function when the objective is to minimize the Euclidean distance between data points and cluster centers?",
+      "topics": [
+        "fitness"
+      ],
+      "answer": "Practitioners should compute Equation (3) for each individual, as Equation (3) is taken as the fitness function. In Equation (3), d_ik is the Euclidean distance between the kth object and the ith clustering center. The fuzzy partition matrix can be computed using Equation (4).",
+      "chunk_id": 5004,
+      "paper_id": "Estimation distribution of algorithm for fuzzy clustering gene expression data",
+      "paper_title": "Estimation distribution of algorithm for fuzzy clustering gene expression data",
+      "paper_year": "2006",
+      "chunk_content": "Equation (3) is computed for each individual and taken as the fitness function because our objective is to minimize the equation. In equation (3), $\\mathrm{d}_{\\mathrm{ik}}$ is the Euclid distance between $\\mathrm{k}^{\\text {th }}$ object and $\\mathrm{i}^{\\text {th }}$ clustering center and the fuzzy partition matrix can be computed equation (4). # 4 Experiments and Results \n\nWe tested our method using two gene expression data sets: ALL/AML data set and human renal tumor data set, which can be downloaded from Gene Expression Omnibus (GEO). First, we filtered the genes with more than 20 percents null values over all samples. Then, just like [8], we only selected 50 genes that were most informative about the class distinction in the data for each data set. The genes were scored by the \"twoing rules\" using the tool package Rankgene, which is developed by [9]. The program is developed in MATLAB 7.01 for windows XP using GATBX toolbox, which is developed by University of Sheffield (1994). To compare with sGA, we also did experiments on the same data sets using sGA.",
+      "question_type": "practical application",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:03:27",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Considering the probability distribution function $\\operatorname{Pro}_{2[1,2}(k)$ used to model the search space in the Estimation of Distribution Algorithm, what can be inferred about the motion of joint 2 at the second key pose, $q_{2,2}(t)$, based on the observation that $\\operatorname{Pro}_{2[1,2}$ has a large probability value in the range [-0.5, 0]?",
+      "topics": [
+        "search"
+      ],
+      "answer": "Given that $\\operatorname{Pro}_{2[1,2}$ exhibits a large probability value within the range [-0.5, 0] for joint 2 at the second key pose, $q_{2,2}(t)$, it suggests that the motor for joint 2 should primarily operate within this interval, irrespective of the value of $q_{1,2}$, which represents the joint angles of joint 2 at the first key pose. Furthermore, the observation that $\\eta^{2}(\\Delta x)$ is flat when $\\Delta x^{L}$ varies within [FORMULA200] indicates that [0, 0.5] is the desired region of motion for joint 2 at the first key pose, allowing $q_{2,2}$ to vary within a correspondingly large region with legible poses.",
+      "chunk_id": 4472,
+      "paper_id": "Estimating Biped Gait Using Spline-Based Probability Distribution Function With Q-Learning",
+      "paper_title": "Estimating biped gait using spline-based probability distribution function with Q-learning",
+      "paper_year": "2008",
+      "chunk_content": "The four figures record the distribution at the initial time [Fig. 7(a)], the 30th iteration [Fig. 7(d)] in sequence. [IMAGE_6]\n\nFig. 7. $\\operatorname{Pro}_{2[1,2}(k)$ during learning. (a) $N$. (b) $k=30$. (c) $k=60$. (d) $k=100$. The peaks in Fig. 7 stand for the promising searching space. For example, for given joint angles of joint 2 at the first key pose $q_{1,2}(t)=0.3$, the preferable solution for the same joint at the second key pose would be $q_{2,2}(t)=-0.2$ with the probability about 0.8 . Here, $q_{2,2}(t)$ is not obtained directly from the corresponding probability distribution but from the conditional probability, which reflects the interrelationship between $q_{1,2}(t)$ and $$\n\\eta^{2}(\\Delta x)=\\lim _{\\Delta x \\rightarrow 0}\\left(w_{\\mathrm{int}}\\right)^{2} \\Delta x^{2} \\frac{1}{2 \\pi} \\int_{-\\infty}^{\\infty}\\left|\\delta^{L} \\hat{F}(\\delta)\\right|^{2} d \\delta\n$$. Thus, it can be concluded that: 1) the motor for joint 2 at the second key pose should work mainly during $[-0.5,0]$ because $\\operatorname{Pro}_{2[1,2}$ has a large probability value in this range whatever $q_{1,2}$ is. 2) $[0,0.5]$ is the desired region of motion for joint 2 at the first key pose because $\\eta$ is flat when $\\Delta x^{L}$ alters in [FORMULA200]. This means that under such conditions, $q_{2,2}$ can vary in a correspondingly large region with legible poses.",
+      "question_type": "theoretical foundation",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:03:29",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "How does the performance of the mEDA-VWH compare to a GA, in the context of traffic signal optimization, given that the simulation time for each candidate solution was set to 500s?",
+      "topics": [
+        "EDAs",
+        "traffic signal optimization",
+        "performance comparison",
+        "mEDA-VWH",
+        "GA"
+      ],
+      "answer": "The mEDA-VWH and a GA are compared based on the mean delay time of vehicles traveling through the traffic network. The population size for mEDA-VWH was set to 200, while the GA's population size was set to 50. Each algorithm was run 10 independent times with a maximum of 10,000 simulations each. The bin number of mEDA-VWH was set to M=15.",
+      "chunk_id": 8207,
+      "paper_id": "Traffic Signal Optimization with Estimation of Distribution Algorithms and VISSIM-MATLAB Integrated Simulation Platform",
+      "paper_title": "Traffic Signal Optimization with Estimation of Distribution Algorithms and VISSIM-MATLAB Integrated Simulation Platform",
+      "paper_year": "2020",
+      "chunk_content": "3 shows the map view of this area and the corresponding traffic network realized in VISSIM. This traffic network contains 11 intersections, so there are 44 decision variables need to be optimized with each of them denoting a phase duration time. We assume that the values of all phase duration times are all within the interval $[20,60] \\in \\mathbf{Z}^{\\prime}$. This instance covers an area of approximately $2.2 * 2.5 \\mathrm{~km}^{2}$, and there are 13 entrances and exits, respectively. For each entrance, the traffic volume was set to 500 vehicles per hour or 1000 vehicles per hour. Each vehicle travels through the network by following its own route with a maximum speed of $50 \\mathrm{~km} / \\mathrm{h}$ and leaves from an exit. The travel routes were randomly generated with the aim of covering as uniform as possible all networks. The simulation time for each candidate solution was set to 500 s and the mean delay time of all vehicles traveling through the network was collected as the fitness value at the end of the simulation. To make a fair comparison, 10 independent runs were carried out for each algorithm with a maximum number of simulations of 10,000 for each run. In the following experiments, the population sizes of [FORMULA71] and mEDA-VWH were both set to 200. The truncation selection ratio of [FORMULA72] was set as $\\tau=0.5$, the bin number of mEDA-VWH was set as $M=15$. In addition to the\n[IMAGE_2]\ntwo EDAs, four other algorithms were also included in this experiment as competitors, including a GA [17], a PSO [18], a DE/current-to-best/1/bin algorithm [19] and a random search method [10]. The population sizes for the first three competitors were all set to 50 , their other parameters were set as the default values in their original papers. Besides, they also adopted the same rounding function to make their solutions suitable for the traffic signal optimization problem. ## B.",
+      "question_type": "comparative analysis",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:03:31",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "What are the precise algorithmic steps for executing the EDA model within the Switching EDA (SEDA) framework described?",
+      "topics": [
+        "algorithm"
+      ],
+      "answer": "The base process in SEDA is EDA. The algorithm attempts to derive more suitable solutions by switching the process from EDA to GA, or vice versa, according to switching criteria. This involves implementing both an EDA and a GA and defining specific switching criteria to determine when to transition between the two algorithms.",
+      "chunk_id": 6134,
+      "paper_id": "Estimation of Distribution Algorithm Incorporating Switching",
+      "paper_title": "Estimation of Distribution Algorithm Incorporating Switching",
+      "paper_year": "2010",
+      "chunk_content": "a) E-mail: miyoshi@kansai-u.ac.jp\n\nDOI: 10.1587/transinf.E93.D. 3108\nswitching (SEDA), attempts are made to derive more suitable solutions by switching the process from EDA to GA, or vice versa, according to switching criteria. The base of the process in SEDA is EDA.",
+      "question_type": "implementation",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:03:32",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "In the context of the multiobjective evolutionary gradient search (EGS) algorithm, what approaches are used to derive the gradient information of multiple objectives, and how does this relate to evaluating the algorithm's performance?",
+      "topics": [
+        "evolutionary"
+      ],
+      "answer": "In the multiobjective evolutionary gradient search (EGS) algorithm, gradient information for multiple objectives can be derived using several approaches: a weighted sum approach with a random weight vector, a goal programming technique, and a hypervolume indicator-based approach. The performance of the EGS algorithm is evaluated by adapting the population-based approach of EAs to perform a multidirectional search in the search space, utilizing the derived gradient information to guide the search process towards promising solutions.",
+      "chunk_id": 3510,
+      "paper_id": "Adaptive Memetic Computing for Evolutionary Multiobjective Optimization",
+      "paper_title": "Adaptive Memetic Computing for Evolutionary Multiobjective Optimization",
+      "paper_year": "2015",
+      "chunk_content": "Initial solution: Select a solution \\(\\mathbf{x}^{j}\\) from the selec-\n        tion pool\n        3. Reproduction: Create \\(L\\) local neighbors \\(\\mathbf{r}^{j}, i \\in\\)\n        \\(\\left\\{1,2, \\ldots, L\\right\\}\\) by perturbing \\(\\mathbf{x}^{j}\\) using normal mutation\n        \\(N\\left(0, \\sigma^{2}\\right)\\)\n        4. Evaluation: Calculate the objective values of \\(\\mathbf{r}^{j}, F\\left(\\mathbf{r}^{j}\\right)\\)\n        5. Direction: Estimate the global gradient direction\n        \\(\\hat{v}=\\frac{\\sum{i=1}^{L}\\left[F\\left(\\mathbf{r}^{j}\\right)-F\\left(\\mathbf{r}^{j}\\right)\\right]\\left(\\mathbf{r}^{j}-\\mathbf{r}^{j}\\right)}{\\left\\|\\sum{i=1}^{L}\\left[F\\left(\\mathbf{r}^{j}\\right)-F\\left(\\mathbf{r}^{j}\\right)\\right]\\left(\\mathbf{r}^{j}-\\mathbf{r}^{j}\\right)\\right\\|}\\)\n        6. Offspring generation\n        \\(\\mathbf{y}=\\mathbf{x}^{j}-\\sigma{t} \\hat{v}\\)\n        7. Mutation step size update\n        \\(\\sigma{t+1}= \\begin{cases}\\sigma{t} \\varepsilon & \\text { if } F(\\mathbf{y})<F\\left(\\mathbf{x}^{j}\\right) \\\\ \\sigma{t} / \\varepsilon & \\text { otherwise }\\end{cases}\\)\n```\n\n11: 8. Solution update:\nif $F(\\mathbf{y})<F\\left(\\mathbf{x}^{j}\\right)$ then\n$\\mathbf{x}^{j}=\\mathbf{y}$\nend if\n12: 9. Output: Output $N$\n13: End For\n14: End Do\n15: End\nsolutions are promising in producing a fitter offspring. More information on many-objective problems can be referred to the study of NSGA-III [40], HypE [41], PICEA-g [42], and cornet sort approach [43]. Besides, a diversity preservation scheme is necessary to maintain the diversity of solutions. Even through a diverse solution set exists, the distribution of the solutions may not be well maintained [18]. 2) Decomposition-Based Framework: In decompositionbased MOEAs, an MOP is decomposed into several scalar optimization sub-problems. Subsequently, a tradeoff optimal solution set is determined by optimizing all the sub-problems concurrently. This framework has gained increasing interest from the research community after Zhang and Li [18] devised a multiobjective optimization algorithm based on decomposition (MOEA/D). In MOEA/D, an MOP is decomposed into $N$ scalar optimization sub-problems using weighted sum, Tchebycheff, or boundary intersection approaches. The superiority of solutions is determined by comparing their scalar objective values. Subsequently, new solutions are produced by mating the solution of a sub-problem with its neighboring solutions. In [44], a new MOEA/D with dynamic resource allocation (MOEA/D-DRA) was proposed and tested on CEC09 unconstrained MOPs test problems. In this MOEA/D, different computational efforts are assigned to different subproblems. This algorithm has been granted the best MOEA in the CEC09 competition for unconstrained multiobjective optimization. ## C. Memetic Algorithm\n\nIn this section, only a brief review of MAs in the perspective of MO is presented. In [45], a multiobjective genetic local search algorithm (MOGLS) was introduced. In this MA, the multiple objectives of an MOP are aggregated using a weighted sum approach. A weight vector is randomly generated for each solution that undergoes local search. Another attempt to use the weighted sum approach in performing local search for solving MOPs was suggested in [46]. The weighted sum approach is introduced to NSGA-II, in which the weight vector is not randomly generated, but determined by the information carried on each solution. Besides, the weight vector can also be determined by using a simulated annealing algorithm as described in [47]. In [48], the authors proposed an MA for Pareto archived evolution strategy algorithm (M-PAES). An evolution strategy acts as a local search algorithm and recombination of archived solutions acts as a global search mechanism. Goh et al. [36] developed a multiobjective evolutionary gradient search (EGS) algorithm. The population-based approach of EAs is adapted into the EGS algorithm, such that the EGS algorithm can perform a multidirectional search in the search space. Several approaches are used to derive the gradient information of multiple objectives of an MOP, such as a weighted sum approach with random weight vector, a goal programming technique, and a hypervolume indicator-based approach. The detailed coverage of this topics can be referred to $[4],[8]$.",
+      "question_type": "evaluation metrics",
+      "complexity": "advanced",
+      "generated_at": "2025-06-24 01:03:34",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "In the context of EDAs, how does the algorithmic mechanism of the SOA algorithm perform in achieving coverage, specifically as measured by [FORMULA298]?",
+      "topics": [
+        "performance"
+      ],
+      "answer": "The SOA algorithm, when applied to the program Atof, encounters difficulty. Furthermore, [FORMULA298] coverage could not be obtained for Triangle4 or Triangle5. However, the program Quotient appears to be the easiest program for the SOA algorithm.",
+      "chunk_id": 4882,
+      "paper_id": "DYNAMIC SEARCH SPACE TRANSFORMATIONS FOR SOFTWARE TEST DATA GENERATION",
+      "paper_title": "Dynamic search space transformations for software test data generation",
+      "paper_year": "2008",
+      "chunk_content": "5.3. SOA Performance \n\nApropos the SOA algorithm, Table 5 shows the results of the experiments for the programs. The cell format is the same as in Table 2. Similarly to the MOA approach, the most difficult program for the test case generator is Atof. However, in this case, [FORMULA298] coverage could not be obtained for Triangle4 or Triangle5, either. Once again, the easiest program seems to be Quotient.",
+      "question_type": "evaluation",
+      "complexity": "basic",
+      "generated_at": "2025-06-24 01:03:35",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "For implementing an Estimation of Distribution Algorithm for robot control based on mechanical models, how should practitioners account for external forces and moments acting on the robot's landing foot, given the dynamical model equation?",
+      "topics": [
+        "constraints"
+      ],
+      "answer": "When implementing an EDA for robot control, practitioners must incorporate the vector of external forces and moments, denoted as \\(F\\), into the dynamical model equation: \\(\\stackrel{\\circ}{M}(q) \\ddot{q}+\\hat{C}(q, \\dot{q})+\\hat{G}(q)=\\hat{\\tau}+J^{\\hat{\\tau}}(q, \\ddot{q}) F\\). This involves calculating or estimating \\(F\\) and including it in the torque calculation \\(\\hat{\\tau}\\) to ensure accurate control, particularly during the double support phase where end position constraints are present.",
+      "chunk_id": 4979,
+      "paper_id": "Biped gait optimization using spline function based probability model",
+      "paper_title": "Biped gait optimization using spline function based probability model",
+      "paper_year": "2006",
+      "chunk_content": "Mechanical model of the robot. After the impact moment, the mechanical kinematic chain in double support phase can be considered as a manipulator with end position constraints. The dynamical model is given in Equation (3). $$\n\\stackrel{\\circ}{M}(q) \\ddot{q}+\\hat{C}(q, \\dot{q})+\\hat{G}(q)=\\hat{\\tau}+J^{\\hat{\\tau}}(q, \\ddot{q}) F\n$$\n\nWhere $F$ is the vector of external forces and moments acting at the landing foot of the robot. It can be seen from Fig.",
+      "question_type": "practical application",
+      "complexity": "medium",
+      "generated_at": "2025-06-24 01:03:37",
+      "generation_style": "practical_application"
+    }
+  ]
+}

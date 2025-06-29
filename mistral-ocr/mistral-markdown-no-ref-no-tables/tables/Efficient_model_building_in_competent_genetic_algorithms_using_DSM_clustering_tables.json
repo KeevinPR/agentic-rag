@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Efficient model building in competent genetic algorithms using DSM clustering.md",
+    "filename": "Efficient model building in competent genetic algorithms using DSM clustering.md",
+    "title": "Efficient model building in competent genetic algorithms using DSM clustering",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Phase 1: initial clusters",
+        "Phase 2: secondary clusters",
+        "Phase 3: final clusters"
+      ],
+      "rows": [
+        [
+          "$\\{1,2,4,5,14\\}$",
+          "$\\{1,2,4,5,9,14\\}$",
+          "$\\{1,2,3,4,5\\}$"
+        ],
+        [
+          "$\\{1,2,4,5,6,9,14\\}$",
+          "$\\{3\\}$",
+          "$\\{6,7,8,9,10\\}$"
+        ],
+        [
+          "$\\{3,4,5\\}$",
+          "$\\{6\\}$",
+          "$\\{11,12,13,14,15\\}$"
+        ],
+        [
+          "$\\{1,2,4,5,9\\}$",
+          "$\\{7,8,10\\}$",
+          ""
+        ],
+        [
+          "$\\{1,2,4,5,9\\}$",
+          "$\\{11,12,13,15\\}$",
+          ""
+        ],
+        [
+          "$\\{2,6,9,11,14\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{6,7,8,9,10\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{7,8,9,10\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{6,7,8,9,10\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{7,8,9,10\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{6,11,13,14,15\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{1,12,13,14,15\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{11,12,13,14,15\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{2,6,9,11,13,14,15\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{11,12,13,14,15\\}$",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Initial clusters",
+        "Secondary <br> clusters",
+        "Calculations"
+      ],
+      "rows": [
+        [
+          "$\\{1,2,4,5,14\\}$",
+          "$\\{1,2\\}$",
+          "Co-occurrence-ratio1 $(2,1)=$"
+        ],
+        [
+          "$\\{1,2,4,5,6,9,14\\}$",
+          "",
+          "$4 / 7 \\geqslant 0.5$"
+        ],
+        [
+          "$\\{3,4,5\\}$",
+          "$\\{1,2\\}$",
+          "Co-occurrence-ratio1 $(3,1)=$"
+        ],
+        [
+          "$\\{1,2,4,5,9\\}$",
+          "$\\{1,2,4\\}$",
+          "$0 / 6 \\leqslant 0.5$"
+        ],
+        [
+          "$\\{1,2,4,5,9\\}$",
+          "$\\{1,2,4\\}$",
+          "Co-occurrence-ratio1 $(4,1)=$"
+        ],
+        [
+          "$\\{2,6,9,11,14\\}$",
+          "",
+          "$4 / 6 \\geqslant 0.5$"
+        ],
+        [
+          "$\\{6,7,8,9,10\\}$",
+          "$\\{1,2,4,5\\}$",
+          "Co-occurrence-ratio1 $(5,1)=$"
+        ],
+        [
+          "$\\{7,8,9,10\\}$",
+          "$\\{1,2,4,5\\}$",
+          "Co-occurrence-ratio1 $(6,1)=$"
+        ],
+        [
+          "$\\{6,7,8,9,10\\}$",
+          "$\\{1,2,4,5\\}$",
+          "Co-occurrence-ratio1 $(6,1)=$"
+        ],
+        [
+          "$\\{6,11,13,14,15\\}$",
+          "$\\{1,2,4,5\\}$",
+          "Co-occurrence-ratio1 $(7,1)=$"
+        ],
+        [
+          "$\\{1,12,13,14,15\\}$",
+          "",
+          "$0 / 9 \\leqslant 0.5$"
+        ],
+        [
+          "$\\{11,12,13,14,15\\}$",
+          "",
+          ""
+        ],
+        [
+          "$\\{2,6,9,11,13,14,15\\}$",
+          "$\\{1,2,4,5\\}$",
+          "Co-occurrence-ratio1 $(15,1)=$"
+        ],
+        [
+          "$\\{11,12,13,14,15\\}$",
+          "$\\{1,2,4,5\\}$",
+          "Co-occurrence-ratio1 $(15,1)=$"
+        ],
+        [
+          "",
+          "",
+          "$1 / 9 \\leqslant 0.5$"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Valid initial clusters <br> for the secondary <br> cluster $\\{1,2,4,5\\}$",
+        "Secondary <br> cluster",
+        "Calculations"
+      ],
+      "rows": [
+        [
+          "$\\{1,2,4,5,14\\}$",
+          "$\\{1,2,4,5,9\\}$",
+          "Co-occurrence-ratio2(9,2) $=$"
+        ],
+        [
+          "$\\{1,2,4,5,6,9,14\\}$",
+          "",
+          "$3 / 4 \\geqslant 0.5$"
+        ],
+        [
+          "$\\{3,4,5\\}$",
+          "$\\{1,2,4,5,9,14\\}$",
+          "Co-occurrence-ratio2(14,1) $=$"
+        ],
+        [
+          "$\\{1,2,4,5,9\\}$",
+          "",
+          "$2 / 4 \\geqslant 0.5$"
+        ],
+        [
+          "$\\{1,2,4,5,9\\}$",
+          "$\\{1,2,4,5,9,14\\}$",
+          "Co-occurrence-ratio2(6,1) $=$"
+        ],
+        [
+          "",
+          "",
+          "$1 / 4 \\leqslant 0.5$"
+        ],
+        [
+          "",
+          "$\\{1,2,4,5,9,14\\}$",
+          "Co-occurrence-ratio1(6,2) $=$"
+        ],
+        [
+          "",
+          "",
+          "$1 / 6 \\leqslant 0.5$"
+        ],
+        [
+          "$\\{1,2,4,5,9,14\\}$",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Secondary <br> clusters",
+        "Variables <br> in $s e c C l l$",
+        "Calculations"
+      ],
+      "rows": [
+        [
+          "$\\operatorname{secCl} 1=$",
+          1,
+          11
+        ],
+        [
+          "$\\begin{aligned} & {[1,2,4,5,9,14]} \\\\ & \\operatorname{secCl} 2=\\{3\\} \\\\ & \\operatorname{secCl} 3=\\{6\\} \\\\ & \\operatorname{secCl} 4=\\{7,8,10\\} \\\\ & \\operatorname{secCl} 5= \\\\ & \\{11,12,13,15\\} \\end{aligned}$",
+          2,
+          2166
+        ],
+        [
+          "",
+          9,
+          919433941413514544145
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "1",
+      "table_title": "The comparison between the proposed method and offline utility of DSMGA [40] on a 50 bits Trap5 function",
+      "headers": [
+        "Method",
+        "Number of fitness evaluations",
+        "DSM accuracy",
+        "DSM structural accuracy",
+        "Model accuracy"
+      ],
+      "rows": [
+        [
+          "Proposed method",
+          7000,
+          0.723,
+          0.871,
+          1
+        ],
+        [
+          "Offline DSMGA",
+          11712,
+          0.906,
+          0.984,
+          0.998
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    }
+  ]
+}

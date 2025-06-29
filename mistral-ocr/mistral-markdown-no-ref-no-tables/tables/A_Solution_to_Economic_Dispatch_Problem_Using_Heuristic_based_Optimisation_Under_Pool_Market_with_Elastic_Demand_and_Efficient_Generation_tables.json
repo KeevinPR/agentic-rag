@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/A Solution to Economic Dispatch Problem Using Heuristic based Optimisation Under Pool Market with Elastic Demand and Efficient Generation.md",
+    "filename": "A Solution to Economic Dispatch Problem Using Heuristic based Optimisation Under Pool Market with Elastic Demand and Efficient Generation.md",
+    "title": "A Solution to Economic Dispatch Problem Using Heuristic based Optimisation Under Pool Market with Elastic Demand and Efficient Generation",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "COEFFICIENT OF GENERATOR AND CONSUMER BID FUNCTIONS[8]",
+      "headers": [
+        "Generator",
+        "$\\mathbf{P}_{\\text {min }}(\\mathbf{M W})$",
+        "$\\mathbf{P}_{\\text {max }}(\\mathbf{M W})$",
+        "a",
+        "b",
+        "c"
+      ],
+      "rows": [
+        [
+          1,
+          50,
+          500,
+          0.003,
+          2,
+          80
+        ],
+        [
+          2,
+          50,
+          500,
+          0.015,
+          1.45,
+          100
+        ],
+        [
+          3,
+          50,
+          500,
+          0.01,
+          0.95,
+          120
+        ],
+        [
+          "Consumer",
+          "$\\mathbf{P}_{\\text {min }}(\\mathbf{M W})$",
+          "$\\mathbf{P}_{\\text {max }}(\\mathbf{M W})$",
+          "$\\mathbf{p}$",
+          "$\\mathbf{q}$",
+          "$\\mathbf{r}$"
+        ],
+        [
+          1,
+          50,
+          500,
+          -0.002,
+          5,
+          150
+        ],
+        [
+          2,
+          50,
+          650,
+          -0.001,
+          6,
+          200
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "II",
+      "table_title": "COEFFICIENTS OF EMISSION FUNCTION [2]",
+      "headers": [
+        "Emission",
+        "$\\mathbf{1}$",
+        "$\\mathbf{m}$",
+        "$\\mathbf{n}$"
+      ],
+      "rows": [
+        [
+          1,
+          0.016,
+          -1.5,
+          23.33
+        ],
+        [
+          2,
+          0.031,
+          -1.82,
+          21.022
+        ],
+        [
+          3,
+          0.013,
+          -1.249,
+          22.05
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "VARIATION OF SOCIAL WELEARE FUNCTION BEFORE AND AFTER TAKING GENERATION EFFICIENCY INTO CONSIDERATION USING EDA",
+      "headers": [
+        "Demand <br> (MW)",
+        "",
+        "Generator <br> fuel <br> cost(Rs/hr)",
+        "Consumer <br> bid <br> (Rs/hr)",
+        "Social Welfare <br> function(Rs/hr)",
+        "Emission <br> (tonne/hr)"
+      ],
+      "rows": [
+        [
+          700,
+          "Before",
+          2592.9703,
+          4070,
+          1477.0296,
+          1957.6704
+        ],
+        [
+          "",
+          "After",
+          2493.4445,
+          3975.0332,
+          1481.5887,
+          1946.9441
+        ],
+        [
+          600,
+          "Before",
+          2116.0356,
+          3592.4995,
+          1476.4639,
+          1327.0303
+        ],
+        [
+          "",
+          "After",
+          2025.4536,
+          3511.8019,
+          1486.3482,
+          1333.8133
+        ],
+        [
+          500,
+          "Before",
+          1688.2354,
+          3092.4929,
+          1404.2575,
+          816.957
+        ],
+        [
+          "",
+          "After",
+          1609.3063,
+          3008.8833,
+          1399.577,
+          809.907
+        ],
+        [
+          400,
+          "Before",
+          1309.951,
+          2572.4991,
+          1262.548,
+          427.0788
+        ],
+        [
+          "",
+          "After",
+          1240.3826,
+          2485.6637,
+          1245.2811,
+          424.4068
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "IV",
+      "table_title": "VARIATION OF SOCIAL WELEARE FUNCTION BEFORE AND AFTER TAKING GENERATION EFFICIENCY INTO CONSIDERATION USING BFA",
+      "headers": [
+        "Demand <br> (MW)",
+        "",
+        "Generator <br> fuel <br> cost(Rs/hr)",
+        "Consumer <br> bid <br> (Rs/hr)",
+        "Social Welfare <br> function(Rs/hr)",
+        "Emission <br> (tonne/hr)"
+      ],
+      "rows": [
+        [
+          700,
+          "Before",
+          2564.2547,
+          4067.8613,
+          1503.6066,
+          2029.9299
+        ],
+        [
+          "",
+          "After",
+          2620.5461,
+          3978.1835,
+          1357.637,
+          2026.6091
+        ],
+        [
+          600,
+          "Before",
+          2084.1042,
+          3557.0529,
+          1472.9487,
+          1378.5951
+        ],
+        [
+          "",
+          "After",
+          2188.3959,
+          3489.6328,
+          1301.2369,
+          1303.1417
+        ],
+        [
+          500,
+          "Before",
+          1669.8093,
+          3094.5419,
+          1424.7325,
+          923.82501
+        ],
+        [
+          "",
+          "After",
+          1683.7768,
+          2955.777,
+          1272.0002,
+          832.2835
+        ],
+        [
+          400,
+          "Before",
+          1289.2091,
+          2579.5693,
+          1290.3602,
+          477.0225
+        ],
+        [
+          "",
+          "After",
+          1291.3334,
+          2471.6155,
+          1180.282,
+          467.2074
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "V",
+      "table_title": "GENERATOR AND LOAD SCHEDULES BEFORE AND AFTER CURTAILMENT USING BFA",
+      "headers": [
+        "",
+        "Demand <br> (MW)",
+        "$\\mathbf{7 0 0}$",
+        "$\\mathbf{6 0 0}$"
+      ],
+      "rows": [
+        [
+          1,
+          "Before curtailment",
+          289.6115,
+          219.6987
+        ],
+        [
+          "",
+          "After curtailment",
+          283.6697,
+          216.3791
+        ],
+        [
+          2,
+          "Before curtailment",
+          173.8934,
+          134.183
+        ],
+        [
+          "",
+          "After curtailment",
+          165.6578,
+          118.4946
+        ],
+        [
+          3,
+          "Before curtailment",
+          236.495,
+          246.1181
+        ],
+        [
+          "",
+          "After curtailment",
+          230.6726,
+          245.1263
+        ],
+        [
+          1,
+          "Before curtailment",
+          75.0,
+          78.2608
+        ],
+        [
+          "",
+          "After curtailment",
+          68.5,
+          71.7608
+        ],
+        [
+          2,
+          "Before curtailment",
+          625.0,
+          521.7391
+        ],
+        [
+          "",
+          "After curtailment",
+          611.5,
+          508.2391
+        ],
+        [
+          "Objective <br> function <br> (Rs/h)",
+          "Final value",
+          1357.637,
+          1301.2369
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 4
+    },
+    {
+      "table_number": "VI",
+      "table_title": "PRICE BASED CURTAILMENT",
+      "headers": [
+        "Demand <br> (MW)",
+        "Willingness <br> to pay of <br> Consumer 1 <br> (Rs/MWh)",
+        "Willingness <br> to pay of <br> Consumer 2 <br> (Rs/MWh)",
+        "Curtailment <br> of <br> Consumer 1 <br> (MW)",
+        "Curtailment <br> of <br> Consumer 2 <br> (MW)"
+      ],
+      "rows": [
+        [
+          700,
+          4.33,
+          4.933,
+          10.6509,
+          9.349
+        ],
+        [
+          600,
+          4.594,
+          5.001,
+          10.4241,
+          9.5758
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "VII",
+      "table_title": "INCENTIVE BASED CURTAILMENT",
+      "headers": [
+        "Demand <br> (MW)",
+        "Incentive bid <br> of Consumer <br> $\\mathbf{1}(\\mathbf{R s} / \\mathbf{h})$",
+        "Incentive bid <br> of Consumer <br> $\\mathbf{2}(\\mathbf{R s} / \\mathbf{h})$",
+        "Curtailment <br> of <br> Consumer 1 <br> (MW)",
+        "Curtailment <br> of <br> Consumer 2 <br> (MW)"
+      ],
+      "rows": [
+        [
+          700,
+          195.0,
+          391.5,
+          6.5,
+          13.5
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 5
+    }
+  ]
+}

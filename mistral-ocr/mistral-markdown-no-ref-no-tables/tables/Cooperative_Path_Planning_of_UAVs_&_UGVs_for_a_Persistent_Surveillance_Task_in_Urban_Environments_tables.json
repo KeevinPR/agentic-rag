@@ -1,0 +1,312 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Cooperative Path Planning of UAVs & UGVs for a Persistent Surveillance Task in Urban Environments.md",
+    "filename": "Cooperative Path Planning of UAVs & UGVs for a Persistent Surveillance Task in Urban Environments.md",
+    "title": "Cooperative Path Planning of UAVs & UGVs for a Persistent Surveillance Task in Urban Environments",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "COMPUTATIONAL COMPLEXITY OF THE HYBRID EDA-GA ALGORITHM",
+      "headers": [
+        "Step",
+        "Computational <br> complexity"
+      ],
+      "rows": [
+        [
+          "Initialize the solutions",
+          "$N_{s} \\times N_{a}$"
+        ],
+        [
+          0.8,
+          "$N_{s}$"
+        ],
+        [
+          "Rank the solutions (in EDA branch)",
+          "$N_{s}$"
+        ],
+        [
+          "Establish a probabilistic model (in EDA branch)",
+          "$N_{s} \\times N_{a}$"
+        ],
+        [
+          "Generate the new solutions (in EDA branch)",
+          "$N_{s}$"
+        ],
+        [
+          "Execute the crossover operator (in GA branch)",
+          "$\\frac{N_{s}}{2} \\times N_{c}$"
+        ],
+        [
+          "Execute the mutation operator (in GA branch)",
+          "$N_{s} \\times N_{m}$"
+        ],
+        [
+          "Compare the new solution with the corresponding old",
+          "$N_{s}$"
+        ],
+        [
+          "one (in GA branch)",
+          "$2 N_{s}$"
+        ],
+        [
+          "Rank and select the solutions to continue the iterative",
+          ""
+        ],
+        [
+          "process",
+          ""
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "SETting of PARAMeters in Simulations",
+      "headers": [
+        "Parameter",
+        "Value",
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$l$",
+          30,
+          "$v_{G}$",
+          "$10 \\mathrm{~m} / \\mathrm{s}$"
+        ],
+        [
+          "$X_{\\max }$",
+          1200,
+          "$\\mathrm{~N}_{\\mathrm{s}}$",
+          100
+        ],
+        [
+          "$Y_{\\max }$",
+          1200,
+          "$N_{b}$",
+          50
+        ],
+        [
+          "$Z_{\\max }$",
+          90,
+          "$\\mathrm{~N}_{\\mathrm{c}}$",
+          1000
+        ],
+        [
+          "$N_{D}$",
+          3,
+          "$\\mathrm{~N}_{\\mathrm{m}}$",
+          1000
+        ],
+        [
+          "$N_{G}$",
+          2,
+          "$p_{\\mathrm{m}}$",
+          0.3
+        ],
+        [
+          "$v_{G}$",
+          "$10 \\mathrm{~m} / \\mathrm{s}$",
+          "$T_{\\max }$",
+          100
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "Information of the Circular Paths and the Index Values for the Two Operation Modes",
+      "headers": [
+        "Drones and UGVs",
+        "Length of circular path",
+        "",
+        "",
+        "Travel time of each vehicle",
+        "",
+        "Index value"
+      ],
+      "rows": [
+        [
+          "",
+          "Air",
+          "Ground",
+          "",
+          "Air",
+          "Ground",
+          ""
+        ],
+        [
+          "Cooperative mode",
+          74733.8,
+          50269.3,
+          "",
+          2491.1,
+          2513.4,
+          2513.4
+        ],
+        [
+          "Independent mode",
+          90216.1,
+          41505.6,
+          "",
+          3007.2,
+          2075.2,
+          3007.2
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 7
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Results of Path Planning With Different Numbers of Drones AND UGVs",
+      "headers": [
+        "Drone",
+        "UGV",
+        "Length of circular path",
+        "",
+        "Travel time of each vehicle",
+        "",
+        "Index value"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Air",
+          "Ground",
+          "Air",
+          "Ground",
+          ""
+        ],
+        [
+          3,
+          2,
+          74733.8,
+          50269.3,
+          2491.1,
+          2513.4,
+          2513.4
+        ],
+        [
+          5,
+          2,
+          114292.8,
+          45954.1,
+          2285.9,
+          2297.7,
+          2297.7
+        ],
+        [
+          7,
+          2,
+          133594.0,
+          44668.0,
+          1908.5,
+          2233.4,
+          2233.4
+        ],
+        [
+          3,
+          4,
+          58260.6,
+          60705.3,
+          1942.0,
+          1517.6,
+          1942.0
+        ],
+        [
+          5,
+          4,
+          68625.2,
+          54902.1,
+          1372.5,
+          1372.5,
+          1372.5
+        ],
+        [
+          7,
+          4,
+          81383.7,
+          46776.5,
+          1162.6,
+          1169.4,
+          1169.4
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "V",
+      "table_title": "RESULTS OF THE THREE ALGORITHMS",
+      "headers": [
+        "Algorithm",
+        "Length of path <br> (D)",
+        "Length of <br> path (G)",
+        "Best",
+        "Worst",
+        "Average"
+      ],
+      "rows": [
+        [
+          "EDA",
+          "$89707.1 m$",
+          "$60117.3 m$",
+          3005.9,
+          3018.6,
+          3006.3
+        ],
+        [
+          "GA",
+          "$102260.3 m$",
+          "$60200.4 m$",
+          3408.7,
+          3618.0,
+          3502.1
+        ],
+        [
+          "EDA-GA",
+          "$74733.8 m$",
+          "$50269.3 m$",
+          2513.4,
+          2513.4,
+          2513.4
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 6
+    },
+    {
+      "table_number": "VI",
+      "table_title": "COMPARISON BETWEEN THE ORIGINAL AND THE MODIFIED CIRCULAR PATHS",
+      "headers": [
+        "Circular path",
+        "Length of path (D)",
+        "Length of path (G)",
+        "Index value"
+      ],
+      "rows": [
+        [
+          "Original",
+          74733.8,
+          50269.3,
+          2513.4
+        ],
+        [
+          "Modified",
+          74483.8,
+          50506.3,
+          2525.3
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    }
+  ]
+}

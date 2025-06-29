@@ -1,0 +1,375 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Quantitative optimization of interoperability during feature-based data exchange.md",
+    "filename": "Quantitative optimization of interoperability during feature-based data exchange.md",
+    "title": "Quantitative optimization of interoperability during feature-based data exchange",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "General examples of feature-based interoperability",
+      "headers": [
+        "CatiaV5",
+        "Pro/E",
+        "Method"
+      ],
+      "rows": [
+        [
+          "Cut",
+          "Cut",
+          "DFI"
+        ],
+        [
+          "Fillet",
+          "Round",
+          "DFI"
+        ],
+        [
+          "Extrusion",
+          "Extrusion, Datum plane",
+          "IFI"
+        ],
+        [
+          "Shell",
+          "Shell, Combine",
+          "IFI"
+        ],
+        [
+          "Line",
+          "Line",
+          "DSI"
+        ],
+        [
+          "Circle",
+          "Circle",
+          "DSI"
+        ],
+        [
+          "Polygon",
+          "Line",
+          "ISI"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "SA-SFI among different CAD systems",
+      "headers": [
+        "SolidWorks",
+        "Target CAD system",
+        "",
+        "Method"
+      ],
+      "rows": [
+        [
+          "",
+          5,
+          "Pro/E",
+          ""
+        ],
+        [
+          "Flex (Bending)",
+          "Rib",
+          "Trajectory rib",
+          "SA-SFI"
+        ],
+        [
+          "Flex (Twisting)",
+          "Rib",
+          "Trajectory rib",
+          "SA-SFI"
+        ],
+        [
+          "Flex (Tapering)",
+          "Chamfer",
+          "Edge chamfer",
+          "SA-SFI"
+        ],
+        [
+          "Flex (Stretching)",
+          "Pad",
+          "Extrusion",
+          "SA-SFI"
+        ],
+        [
+          "Dome",
+          "Shaft",
+          "Revolve",
+          "SA-SFI"
+        ],
+        [
+          "Freeform",
+          "Multi-section solid",
+          "Swept blend",
+          "SA-SFI"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 shows that some case studies among heterogeneous CAD systems are provided later on in this paper. Because SA-SFI among different CAD systems belongs to different cases, the solution also varies among the cases. In contrast, because SSI is more generally applicable to SA-SFI, continuing to study SSI is particularly important. The remainder of this paper focuses on studying the problem of SSI.",
+      "headers": [
+        "Parameters",
+        "CAD systems",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Catia",
+          "UG",
+          "Pro/E",
+          "SolidWorks"
+        ],
+        [
+          "Interpolation",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "$\\checkmark$"
+        ],
+        [
+          "Control polygons",
+          "$\\times$",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "$\\checkmark$"
+        ],
+        [
+          "Tangent driving",
+          "$\\checkmark$",
+          "$\\times$",
+          "$\\times$",
+          "$\\checkmark$"
+        ],
+        [
+          "Tangent weighting",
+          "$\\times$",
+          "$\\times$",
+          "$\\times$",
+          "$\\checkmark$"
+        ],
+        [
+          "Tangent direction",
+          "$\\times$",
+          "$\\times$",
+          "$\\times$",
+          "$\\checkmark$"
+        ],
+        [
+          "Radius of curvature",
+          "$\\checkmark$",
+          "$\\times$",
+          "$\\times$",
+          "$\\checkmark$"
+        ],
+        [
+          "Degree",
+          "$\\times$",
+          "$\\checkmark$",
+          "$\\times$",
+          "$\\times$"
+        ],
+        [
+          "Close spline",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "$\\times$",
+          "$\\times$"
+        ],
+        [
+          "Smooth",
+          "$\\times$",
+          "$\\times$",
+          "$\\checkmark$",
+          "$\\times$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Test functions used in this paper: Mathematical definition",
+      "headers": [
+        "Equation",
+        "Domain",
+        "Ref."
+      ],
+      "rows": [
+        [
+          "$g_{1}(x)=90 /\\left(1+\\mathrm{e}^{-100(\\mathrm{x}-0.4)}\\right)$",
+          "$\\mathrm{x} \\in[0,1]$",
+          "$[77]$"
+        ],
+        [
+          "$g_{3}(x)=\\sin (x)+2 \\mathrm{e}^{-30 \\mathrm{e}^{2}}$",
+          "$\\mathrm{x} \\in[-2,2]$",
+          "$[26]$"
+        ],
+        [
+          "$g_{4}(x)=\\sin (2 \\mathrm{x})+2 \\mathrm{e}^{-10 \\mathrm{e}^{2}}+2$",
+          "$\\mathrm{x} \\in[-2,2]$",
+          "$[26]$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "Comparison of average fitness among three algorithms",
+      "headers": [
+        "Equation",
+        "Algorithm",
+        "Number of interpolations",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          6,
+          8,
+          10,
+          12,
+          14,
+          16
+        ],
+        [
+          "$g_{1}(x)$",
+          "UDA",
+          1279.6,
+          1765.1,
+          1759.1,
+          1661.3,
+          1507.8,
+          1347.2
+        ],
+        [
+          "",
+          "EDA",
+          "$1.167 \\pm 0.1061$",
+          "$1.010 \\pm 0.2109$",
+          "$0.807 \\pm 0.0607$",
+          "$0.558 \\pm 0.1074$",
+          "$0.182 \\pm 0.0322$",
+          "$0.156 \\pm 0.0137$"
+        ],
+        [
+          "",
+          "LO-EDA",
+          "$1.014 \\pm 0.2810$",
+          "$0.944 \\pm 0.1022$",
+          "$0.779 \\pm 0.0967$",
+          "$0.490 \\pm 0.0528$",
+          "$0.180 \\pm 0.0413$",
+          "$0.119 \\pm 0.0017$"
+        ],
+        [
+          "$g_{2}(x)$",
+          "UDA",
+          182.06,
+          9.5163,
+          7.3395,
+          6.8493,
+          6.8156,
+          6.1497
+        ],
+        [
+          "",
+          "EDA",
+          "$0.290 \\pm 0.0664$",
+          "$0.294 \\pm 0.0781$",
+          "$0.227 \\pm 0.0145$",
+          "$0.188 \\pm 0.0112$",
+          "$0.173 \\pm 0.0087$",
+          "$0.170 \\pm 0.0049$"
+        ],
+        [
+          "",
+          "LO-EDA",
+          "$0.260 \\pm 0.0236$",
+          "$0.214 \\pm 0.0364$",
+          "$0.192 \\pm 0.0013$",
+          "$0.172 \\pm 0.0011$",
+          "$0.162 \\pm 0.0008$",
+          "$0.161 \\pm 0.0002$"
+        ],
+        [
+          "$g_{3}(x)$",
+          "UDA",
+          3.005,
+          2.0173,
+          0.0743,
+          0.2194,
+          0.0372,
+          0.0907
+        ],
+        [
+          "",
+          "EDA",
+          "$0.287 \\pm 0.0221$",
+          "$0.123 \\pm 0.0680$",
+          "$0.020 \\pm 0.0132$",
+          "$0.019 \\pm 0.0051$",
+          "$0.011 \\pm 0.0014$",
+          "$0.008 \\pm 0.0013$"
+        ],
+        [
+          "",
+          "LO-EDA",
+          "$0.221 \\pm 0.0440$",
+          "$0.092 \\pm 0.0472$",
+          "$0.016 \\pm 0.0095$",
+          "$0.009 \\pm 0.0021$",
+          "$0.007 \\pm 0.0008$",
+          "$0.005 \\pm 0.0004$"
+        ],
+        [
+          "$g_{4}(x)$",
+          "UDA",
+          0.6591,
+          0.7764,
+          0.1488,
+          0.2692,
+          0.1524,
+          0.0642
+        ],
+        [
+          "",
+          "EDA",
+          "$0.398 \\pm 0.0677$",
+          "$0.213 \\pm 0.0428$",
+          "$0.121 \\pm 0.0204$",
+          "$0.051 \\pm 0.0102$",
+          "$0.016 \\pm 0.0054$",
+          "$0.007 \\pm 0.0018$"
+        ],
+        [
+          "",
+          "LO-EDA",
+          "$0.367 \\pm 0.0531$",
+          "$0.195 \\pm 0.0289$",
+          "$0.112 \\pm 0.0478$",
+          "$0.039 \\pm 0.0048$",
+          "$0.012 \\pm 0.0020$",
+          "$0.004 \\pm 0.0011$"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 8
+    }
+  ]
+}

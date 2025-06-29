@@ -1,0 +1,539 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2013/Effect of model complexity for estimation of distribution algorithm in NK landscapes.md",
+    "filename": "Effect of model complexity for estimation of distribution algorithm in NK landscapes.md",
+    "title": "Effect of model complexity for estimation of distribution algorithm in NK landscapes",
+    "year": "2013"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] J. Holland, Adaptation in Natural and Artificial Systems. University of Michigan Press, 1975.\n[2] D. E. Goldberg, Genetic Algorithms in Search, Optimization and Machine Learning. Addison Wesley, 1989.\n[3] J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano, \"A review on estimation of distribution algorithms in permutation-based combinatorial optimization problems,\" Progress in Artificial Intelligence, vol. 1, pp. 103-117, 2012.\n[4] M. Hauschild and M. Pelikan, \"An introduction and survey of estimation of distribution algorithms,\" Swarm and Evolutionary Computation, vol. 1, no. 3, pp. 111-128, 2011.\n[5] P. Larrañaga and J. A. Lozano, Estimation of distribution algorithms: A new tool for evolutionary computation. Boston / Dordrecht / London: Kluwer Academic Publishers, 2002.\n[6] S. Baluja, \"Population-based incremental learning. a method for integrating genetic search based function optimization and competitive learning,\" Pittsburgh, PA: Carnegie Mellon University, Tech. Rep. CMU-CS-94-163, 1994.\n[7] G. R. Harik, F. G. Lobo, and D. E. Goldberg, \"The compact genetic algorithm,\" IEEE Transactions on Evolutionary Computation, vol. 3, no. 4, pp. 287-297, 1999.\n[8] H. Mühlenbein and G. Paall, \"From recombination of genes to the estimation of distributions I. binary parameters,\" in Parallel Problem Solving from Nature - PPSN IV, ser. Lecture Notes in Computer Science, H. Voigt, W. Ebeling, I. Rechenberg, and H. Schwefel, Eds. Berlin, Germany: Springer-Verlag, 1996, vol. 1141, pp. 178-187.\n[9] J. S. De Bonet, C. L. Isbell, and P. Viola, \"Mimic: Finding optima by estimating probability densities,\" Advances in neural information processing systems, vol. 9, pp. 424-430, 1997.\n[10] S. Baluja and S. Davies, \"Using optimal dependency-trees for combinatorial optimization: learning the structure of the search space.\" in Proceedings of the 14th international conference on machine learning, 1997, pp. 30-38.\n[11] M. Pelikan and H. Mühlenbein, \"The bivariate marginal distribution algorithm,\" in Advances in Soft Computing - Engineering Design and Manufacturing, R. Roy, T. Furuhashi, and P. K. Chawdhry, Eds. Berlin, Germany: Springer-Verlag, 1999, pp. 521-535.\n[12] M. Pelikan, D. E. Goldberg, and E. Canti-Paz, \"BOA: the Bayesian optimization algorithm,\" in Proceedings of the Genetic and Evolutionary Computation Conference, vol. 1, 1999, pp. 525-532.\n[13] M. Pelikan, \"Hierarchical Bayesian optimization algorithm,\" in Hierarchical Bayesian Optimization Algorithm, ser. Studies in Fuzziness and Soft Computing. Berlin, Germany: Springer-Verlag, 2005, vol. 170, pp. 105-129.\n[14] R. Etxeberria and P. Larrañaga, \"Global optimization using Bayesian networks,\" in Proceedings of the Second Symposium on Artificial Intelligence, A. Ochoa, M. R. Soto, and R. Santana, Eds., 1999, pp. 151-173.\n[15] P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña, \"Optimization in continuous domains by learning and simulation of Gaussian networks,\" in Workshop Proceedings of the Genetic and Evolutionary Computation Conference, 2000, pp. 201-204.\n[16] S. A. Kauffman and E. D. Weinberger, \"The NK model of rugged fitness landscapes and its application to maturation of the immune response,\" Journal of Theoretical Biology, vol. 141, no. 2, pp. 211-245, 1989.\n[17] C. Echegoyen, Q. Zhang, A. Mendiburu, R. Santana, and J. A. Lozano, \"On the limits of effectiveness in estimation of distribution algorithms,\" in Proceedings of IEEE Congress on Evolutionary Computation, 2011, pp. 1573-1580.\n[18] C. Echegoyen, A. Mendiburu, R. Santana, and J. Lozano, \"Analyzing the probability of the optimum in EDAs based on Bayesian networks,\" in Proceedings of IEEE Congress on Evolutionary Computation, 2009, pp. $1652-1659$.\n[19] C. Echegoyen, A. Mendiburu, R. Santana, and J. A. Lozano, \"Toward understanding EDAs based on Bayesian networks through a quantitative analysis,\" IEEE Transactions on Evolutionary Computation, vol. 16, no. 99, pp. 173-189, 2011.\n[20] C. F. Lima, G. F. Lobo, M. Pelikan, and D. E. Goldberg, \"Model accuracy in the Bayesian optimization algorithm,\" Soft Computing-A Fusion of Foundations, Methodologies and Applications, vol. 15, no. 7, pp. 1351-1371, 2011.\n[21] M. Henrion, \"Propagating uncertainty in Bayesian networks by probabilistic logic sampling,\" in Proceedings of Uncertainty in Artificial Intelligence 2 Annual Conference on Uncertainty in Artificial Intelligence (UAI-86), Amsterdam, NL, 1986, pp. 149-163.\n[22] S. García, D. Molina, M. Lozano, and F. Herrera, \"A study on the use of non-parametric tests for analyzing the evolutionary algorithms' behaviour: a case study on the CEC'2005 special session on real parameter optimization,\" Journal of Heuristics, vol. 15, no. 6, pp. 617644, 2009.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "J. Holland, Adaptation in Natural and Artificial Systems. University of Michigan Press, 1975."
+      },
+      {
+        "ref_id": "2",
+        "text": "D. E. Goldberg, Genetic Algorithms in Search, Optimization and Machine Learning. Addison Wesley, 1989."
+      },
+      {
+        "ref_id": "3",
+        "text": "J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano, \"A review on estimation of distribution algorithms in permutation-based combinatorial optimization problems,\" Progress in Artificial Intelligence, vol. 1, pp. 103-117, 2012."
+      },
+      {
+        "ref_id": "4",
+        "text": "M. Hauschild and M. Pelikan, \"An introduction and survey of estimation of distribution algorithms,\" Swarm and Evolutionary Computation, vol. 1, no. 3, pp. 111-128, 2011."
+      },
+      {
+        "ref_id": "5",
+        "text": "P. Larrañaga and J. A. Lozano, Estimation of distribution algorithms: A new tool for evolutionary computation. Boston / Dordrecht / London: Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "6",
+        "text": "S. Baluja, \"Population-based incremental learning. a method for integrating genetic search based function optimization and competitive learning,\" Pittsburgh, PA: Carnegie Mellon University, Tech. Rep. CMU-CS-94-163, 1994."
+      },
+      {
+        "ref_id": "7",
+        "text": "G. R. Harik, F. G. Lobo, and D. E. Goldberg, \"The compact genetic algorithm,\" IEEE Transactions on Evolutionary Computation, vol. 3, no. 4, pp. 287-297, 1999."
+      },
+      {
+        "ref_id": "8",
+        "text": "H. Mühlenbein and G. Paall, \"From recombination of genes to the estimation of distributions I. binary parameters,\" in Parallel Problem Solving from Nature - PPSN IV, ser. Lecture Notes in Computer Science, H. Voigt, W. Ebeling, I. Rechenberg, and H. Schwefel, Eds. Berlin, Germany: Springer-Verlag, 1996, vol. 1141, pp. 178-187."
+      },
+      {
+        "ref_id": "9",
+        "text": "J. S. De Bonet, C. L. Isbell, and P. Viola, \"Mimic: Finding optima by estimating probability densities,\" Advances in neural information processing systems, vol. 9, pp. 424-430, 1997."
+      },
+      {
+        "ref_id": "10",
+        "text": "S. Baluja and S. Davies, \"Using optimal dependency-trees for combinatorial optimization: learning the structure of the search space.\" in Proceedings of the 14th international conference on machine learning, 1997, pp. 30-38."
+      },
+      {
+        "ref_id": "11",
+        "text": "M. Pelikan and H. Mühlenbein, \"The bivariate marginal distribution algorithm,\" in Advances in Soft Computing - Engineering Design and Manufacturing, R. Roy, T. Furuhashi, and P. K. Chawdhry, Eds. Berlin, Germany: Springer-Verlag, 1999, pp. 521-535."
+      },
+      {
+        "ref_id": "12",
+        "text": "M. Pelikan, D. E. Goldberg, and E. Canti-Paz, \"BOA: the Bayesian optimization algorithm,\" in Proceedings of the Genetic and Evolutionary Computation Conference, vol. 1, 1999, pp. 525-532."
+      },
+      {
+        "ref_id": "13",
+        "text": "M. Pelikan, \"Hierarchical Bayesian optimization algorithm,\" in Hierarchical Bayesian Optimization Algorithm, ser. Studies in Fuzziness and Soft Computing. Berlin, Germany: Springer-Verlag, 2005, vol. 170, pp. 105-129."
+      },
+      {
+        "ref_id": "14",
+        "text": "R. Etxeberria and P. Larrañaga, \"Global optimization using Bayesian networks,\" in Proceedings of the Second Symposium on Artificial Intelligence, A. Ochoa, M. R. Soto, and R. Santana, Eds., 1999, pp. 151-173."
+      },
+      {
+        "ref_id": "15",
+        "text": "P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña, \"Optimization in continuous domains by learning and simulation of Gaussian networks,\" in Workshop Proceedings of the Genetic and Evolutionary Computation Conference, 2000, pp. 201-204."
+      },
+      {
+        "ref_id": "16",
+        "text": "S. A. Kauffman and E. D. Weinberger, \"The NK model of rugged fitness landscapes and its application to maturation of the immune response,\" Journal of Theoretical Biology, vol. 141, no. 2, pp. 211-245, 1989."
+      },
+      {
+        "ref_id": "17",
+        "text": "C. Echegoyen, Q. Zhang, A. Mendiburu, R. Santana, and J. A. Lozano, \"On the limits of effectiveness in estimation of distribution algorithms,\" in Proceedings of IEEE Congress on Evolutionary Computation, 2011, pp. 1573-1580."
+      },
+      {
+        "ref_id": "18",
+        "text": "C. Echegoyen, A. Mendiburu, R. Santana, and J. Lozano, \"Analyzing the probability of the optimum in EDAs based on Bayesian networks,\" in Proceedings of IEEE Congress on Evolutionary Computation, 2009, pp. $1652-1659$."
+      },
+      {
+        "ref_id": "19",
+        "text": "C. Echegoyen, A. Mendiburu, R. Santana, and J. A. Lozano, \"Toward understanding EDAs based on Bayesian networks through a quantitative analysis,\" IEEE Transactions on Evolutionary Computation, vol. 16, no. 99, pp. 173-189, 2011."
+      },
+      {
+        "ref_id": "20",
+        "text": "C. F. Lima, G. F. Lobo, M. Pelikan, and D. E. Goldberg, \"Model accuracy in the Bayesian optimization algorithm,\" Soft Computing-A Fusion of Foundations, Methodologies and Applications, vol. 15, no. 7, pp. 1351-1371, 2011."
+      },
+      {
+        "ref_id": "21",
+        "text": "M. Henrion, \"Propagating uncertainty in Bayesian networks by probabilistic logic sampling,\" in Proceedings of Uncertainty in Artificial Intelligence 2 Annual Conference on Uncertainty in Artificial Intelligence (UAI-86), Amsterdam, NL, 1986, pp. 149-163."
+      },
+      {
+        "ref_id": "22",
+        "text": "S. García, D. Molina, M. Lozano, and F. Herrera, \"A study on the use of non-parametric tests for analyzing the evolutionary algorithms' behaviour: a case study on the CEC'2005 special session on real parameter optimization,\" Journal of Heuristics, vol. 15, no. 6, pp. 617644, 2009."
+      }
+    ],
+    "reference_count": 22,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "1",
+        "$D_{0} \\leftarrow$ Random sampling"
+      ],
+      "rows": [
+        [
+          2,
+          "$D_{0} \\leftarrow$ Evaluation"
+        ],
+        [
+          3,
+          "$t \\leftarrow 0$"
+        ],
+        [
+          4,
+          "while (Termination criterion is not met) do"
+        ],
+        [
+          5,
+          "$D_{t}^{\\mathrm{s}} \\leftarrow$ Selection $\\left(D_{t}\\right)$"
+        ],
+        [
+          6,
+          "$M \\leftarrow$ Hill climbing $\\left(M, D_{t}^{\\mathrm{s}}\\right)$"
+        ],
+        [
+          7,
+          "$\\theta \\leftarrow\\left(M, D_{t}^{\\mathrm{s}}\\right)$"
+        ],
+        [
+          8,
+          "$O \\leftarrow$ Ancestral order $(M)$"
+        ],
+        [
+          9,
+          "$D_{t+1} \\leftarrow \\operatorname{Sampling}(O, \\theta)$"
+        ],
+        [
+          10,
+          "$D_{t+1} \\leftarrow$ Evaluation"
+        ],
+        [
+          11,
+          "$D_{t+1} \\leftarrow \\operatorname{Survival}\\left(D_{t} \\cup D_{t+1}\\right)$"
+        ],
+        [
+          12,
+          "$t \\leftarrow t+1$"
+        ],
+        [
+          13,
+          "end while"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    },
+    {
+      "table_number": "I",
+      "table_title": "Parameter setting",
+      "headers": [
+        "Parameter",
+        "Value",
+        ""
+      ],
+      "rows": [
+        [
+          "Problem size $(n)$",
+          10,
+          30
+        ],
+        [
+          "Generation",
+          5000,
+          15000
+        ],
+        [
+          "Population Size $(m)$",
+          100,
+          1000
+        ],
+        [
+          "Selection",
+          "Truncation of $m / 2$",
+          ""
+        ],
+        [
+          "Sampling",
+          "Probabilistic Logic Sampling",
+          ""
+        ],
+        [
+          "Replacement",
+          "$\\mu+\\lambda$",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "Kruskal-Wallis non-parametric analysis of variance with multiple comparison post-hoc analysis for the NK landscape problems with $n=10$ and $k \\in\\{2,6\\}$. All methods are tested under 30 trials and the significance level $\\alpha=0.05$.",
+      "headers": [
+        "Wilcoxon Scores (Rank Sums) with Null Hypothesis",
+        "",
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$S S$",
+          "Mean Score",
+          "",
+          "",
+          ""
+        ],
+        [
+          "METHOD",
+          "$S S$",
+          "Mean Score",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "BMDA",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{2}$",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{4}$",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{6}$",
+          2265.0,
+          75.5,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Wilcoxon Scores (Rank Sums) with Null Hypothesis",
+        "",
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$d f$",
+          4,
+          "METHOD",
+          "Group Ranking",
+          ""
+        ],
+        [
+          "",
+          "Chi-square",
+          0.0,
+          "UMDA",
+          "A",
+          ""
+        ],
+        [
+          "",
+          "$\\operatorname{Pr}>\\mathrm{Chi}$-square",
+          1.0,
+          "BMDA",
+          "A",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "EBNA $_{2}$",
+          "A",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "EBNA $_{4}$",
+          "A",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "EBNA $_{6}$",
+          "A",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons <br> (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "METHOD",
+          "$S S$",
+          "Mean Score",
+          ""
+        ],
+        [
+          "UMDA",
+          2235.0,
+          74.5,
+          ""
+        ],
+        [
+          "BMDA",
+          3093.0,
+          103.1,
+          ""
+        ],
+        [
+          "EBNA $_{2}$",
+          2090.0,
+          69.6667,
+          ""
+        ],
+        [
+          "EBNA $_{4}$",
+          1988.0,
+          66.2667,
+          ""
+        ],
+        [
+          "EBNA $_{6}$",
+          1919.0,
+          63.9667,
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "Kruskal-Wallis non-parametric analysis of variance with multiple comparison post-hoc analysis for NK landscapes problems with $n=30$ and $k \\in\\{2,6\\}$. All methods are tested under 30 trials and the significance level $\\alpha=0.05$.",
+      "headers": [
+        "Wilcoxon Scores (Rank Sums) with Null Hypothesis",
+        "",
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$d f$",
+          4,
+          "METHOD",
+          "Group Ranking",
+          ""
+        ],
+        [
+          "METHOD",
+          "$S S$",
+          "Mean Score",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          2104.0,
+          70.13,
+          "",
+          "",
+          ""
+        ],
+        [
+          "BMDA",
+          2021.0,
+          67.37,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{2}$",
+          2400.0,
+          80.0,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{4}$",
+          2400.0,
+          80.0,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{6}$",
+          2400.0,
+          80.0,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Wilcoxon Scores (Rank Sums) with Null Hypothesis",
+        "",
+        "",
+        "Kruskal-Wallis analysis with multiple comparisons <br> (No significance difference within the same group)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$d f$",
+          4,
+          "METHOD",
+          "Group Ranking",
+          ""
+        ],
+        [
+          "METHOD",
+          "$S S$",
+          "Mean Score",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          1046.5,
+          34.8833,
+          "",
+          "",
+          ""
+        ],
+        [
+          "BMDA",
+          2685.0,
+          89.5,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{2}$",
+          2305.5,
+          76.85,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{4}$",
+          2690.0,
+          89.6667,
+          "",
+          "",
+          ""
+        ],
+        [
+          "EBNA $_{6}$",
+          2598.0,
+          86.6,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    }
+  ]
+}

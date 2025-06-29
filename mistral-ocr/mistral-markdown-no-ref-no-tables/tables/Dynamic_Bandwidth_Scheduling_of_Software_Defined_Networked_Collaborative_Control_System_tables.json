@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/Dynamic Bandwidth Scheduling of Software Defined Networked Collaborative Control System.md",
+    "filename": "Dynamic Bandwidth Scheduling of Software Defined Networked Collaborative Control System.md",
+    "title": "Dynamic Bandwidth Scheduling of Software Defined Networked Collaborative Control System",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The parameters of the dc-motor subsystem.",
+      "headers": [
+        "Symbol",
+        "Description",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$R_{a}$",
+          "Motor winding resistance",
+          "$4.961 \\Omega$"
+        ],
+        [
+          "$L_{a}$",
+          "Motor winding inductance",
+          "$3.14 \\times 10^{-3} \\mathrm{H}$"
+        ],
+        [
+          "$K_{b}$",
+          "Back-EMF constant",
+          "$1.276 \\times 10^{-2} \\mathrm{Vs} / \\mathrm{rad}$"
+        ],
+        [
+          "$K_{l}$",
+          "Electric torque constant",
+          "$7.105 \\times 10^{-2} \\mathrm{~N} \\cdot \\mathrm{~m} / \\mathrm{A}$"
+        ],
+        [
+          "$J$",
+          "Motor moment of inertia",
+          "$1.6511 \\times 10^{-4} \\mathrm{~kg} \\cdot \\mathrm{~m}^{2}$"
+        ],
+        [
+          "$B$",
+          "Damping coefficient",
+          "$\\begin{gathered} 23.64 \\times 10^{-6} \\\\ \\mathrm{~N} \\cdot \\mathrm{~m} \\cdot \\mathrm{sec} / \\mathrm{rad} \\end{gathered}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Average sensitivities of reference signals for three control loops.",
+      "headers": [
+        "",
+        "Average sensitivity",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          1.53,
+          1.22,
+          2.1
+        ],
+        [
+          2,
+          1.22,
+          1.0,
+          1.22
+        ],
+        [
+          3,
+          1.79,
+          1.53,
+          1.53
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Overall performance.",
+      "headers": [
+        "",
+        "Method",
+        "Bandwidth vector",
+        "IAE"
+      ],
+      "rows": [
+        [
+          1,
+          "NPBA",
+          "$[0.190 .280 .43]$",
+          0.1021
+        ],
+        [
+          "",
+          "EBA",
+          "$[0.300 .300 .30$",
+          0.1189
+        ],
+        [
+          "",
+          "NPBA",
+          "$[0.220 .390 .29]$",
+          0.1148
+        ],
+        [
+          "",
+          "EBA",
+          "$[0.300 .300 .30]$",
+          0.128
+        ],
+        [
+          "",
+          "NPBA",
+          "$[0.040 .460 .40]$",
+          0.0409
+        ],
+        [
+          3,
+          "EBA",
+          "$[0.300 .300 .30]$",
+          0.0488
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Individual performance.",
+      "headers": [
+        "",
+        "Method",
+        "Period 1",
+        "Period 2",
+        "Period 3"
+      ],
+      "rows": [
+        [
+          1,
+          "NPBA",
+          0.0408,
+          0.0217,
+          0.0465
+        ],
+        [
+          "",
+          "EBA",
+          0.0385,
+          0.0251,
+          0.0684
+        ],
+        [
+          2,
+          "NPBA",
+          0.0283,
+          0.0009,
+          0.0279
+        ],
+        [
+          "",
+          "EBA",
+          0.0241,
+          0.0005,
+          0.0246
+        ],
+        [
+          3,
+          "NPBA",
+          0.0457,
+          0.0183,
+          0.0277
+        ],
+        [
+          "",
+          "EBA",
+          0.0654,
+          0.0232,
+          0.0259
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    }
+  ]
+}

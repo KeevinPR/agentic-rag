@@ -1,0 +1,529 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Adapting Heuristic Mastermind Strategies to Evolutionary Algorithms.md",
+    "filename": "Adapting Heuristic Mastermind Strategies to Evolutionary Algorithms.md",
+    "title": "Adapting Heuristic Mastermind Strategies to Evolutionary Algorithms",
+    "year": "2010"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] Berghman, L., Goossens, D., Leus, R.: Efficient solutions for Mastermind using genetic algorithms. Computers and Operations Research 36(6), 1880-1885 (2009), http://www.scopus.com/inward/ record.url?eid=2-s2.0-56549123376\\&partnerID=40\n[2] Bernier, J.L., Herráiz, C.I., Merelo-Guervós, J.J., Olmeda, S., Prieto, A.: Solving mastermind using GAs and simulated annealing: a case of dynamic constraint optimization. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 553-563. Springer, Heidelberg (1996), http://www.springerlink.com/content/78j7430828t2867g\n[3] Bestavros, A., Belal, A.: Mastermind, a game of diagnosis strategies. Bulletin of the Faculty of Engineering. Alexandria University (1986), citeseer.ist.psu.edu/bestavros86mastermind.html, http://www.cs.bu.edu/fac/best/res/papers/alybull86.ps\n[4] Irving, R.W.: Towards an optimum mastermind strategy. Journal of Recreational Mathematics 11(2), 81-87 (1978-1979)\n[5] Kendall, G., Parkes, A., Spoerer, K.: A survey of NP-complete puzzles. ICGA Journal 31(1), 13-34 (2008),\nhttp://www.scopus.com/inward/\nrecord.url?eid=2-s2.0-42949163946\\&partnerID=40\n(Cited By (Since 1996) 1)\n[6] Knuth, D.E.: The computer as Master Mind. J. Recreational Mathematics 9(1), 1-6 (1976-1977)\n[7] Kooi, B.: Yet another Mastermind strategy. ICGA Journal 28(1), 13-20 (2005), http://www.scopus.com/inward/ record.url?eid=2-s2.0-33646756877\\&partnerID=40\n[8] Koyama, K., Lai, T.W.: An optimal Mastermind strategy. J. Recreational Mathematics 25(4) (1993/1994)\n[9] Merelo-Guervós, J.J., Carpio, J., Castillo, P., Rivas, V.M., Romero, G.: Finding a needle in a haystack using hints and evolutionary computation: the case of genetic mastermind. In: Scott Brave, A.S.W. (ed.) Late breaking papers at the GECCO 1999, pp. 184-192 (1999)\n\n[10] Merelo-Guervós, J., Castillo, P., Rivas, V.: Finding a needle in a haystack using hints and evolutionary computation: the case of evolutionary MasterMind. Applied Soft Computing 6(2), 170-179 (2006), http://www.sciencedirect.com/science/article/ B6W86-4FH0D6P-1/2/40a99afa8e9c7734baae340abecc113a, http://dx.doi.org/10.1016/j.asoc.2004.09.003\n[11] Merelo-Guervós, J.J., Castillo, P.A., Alba, E.: ALGORITHM::EVOLUTIONARY, a flexible Perl module for evolutionary computation. Soft Computing - A Fusion of Foundations, Methodologies and Applications (2010), doi 10.1007/s00500-009-0504-3, http://www.springerlink.com/content/8h025g83j0q68270\n[12] Mühlenbein, H., Paass, G.: From recombination of genes to the estimation of distributions: I. binary parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)\n[13] Neuwirth, E.: Some strategies for mastermind. Zeitschrift fur Operations Research. Serie B 26(8), B257-B278 (1982)\n[14] Stuckman, J., Zhang, G.Q.: Mastermind is np-complete. CoRR abs/cs/0512049 (2005)\n[15] Wikipedia: Mastermind (board game) - Wikipedia, The Free Encyclopedia (2009), http://en.wikipedia.org/w/ index.php?title=Mastermind_board_game\\&oldid=317686771 (Online: accessed October 9, 2009)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Berghman, L., Goossens, D., Leus, R.: Efficient solutions for Mastermind using genetic algorithms. Computers and Operations Research 36(6), 1880-1885 (2009), http://www.scopus.com/inward/ record.url?eid=2-s2.0-56549123376\\&partnerID=40"
+      },
+      {
+        "ref_id": "2",
+        "text": "Bernier, J.L., Herráiz, C.I., Merelo-Guervós, J.J., Olmeda, S., Prieto, A.: Solving mastermind using GAs and simulated annealing: a case of dynamic constraint optimization. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 553-563. Springer, Heidelberg (1996), http://www.springerlink.com/content/78j7430828t2867g"
+      },
+      {
+        "ref_id": "3",
+        "text": "Bestavros, A., Belal, A.: Mastermind, a game of diagnosis strategies. Bulletin of the Faculty of Engineering. Alexandria University (1986), citeseer.ist.psu.edu/bestavros86mastermind.html, http://www.cs.bu.edu/fac/best/res/papers/alybull86.ps"
+      },
+      {
+        "ref_id": "4",
+        "text": "Irving, R.W.: Towards an optimum mastermind strategy. Journal of Recreational Mathematics 11(2), 81-87 (1978-1979)"
+      },
+      {
+        "ref_id": "5",
+        "text": "Kendall, G., Parkes, A., Spoerer, K.: A survey of NP-complete puzzles. ICGA Journal 31(1), 13-34 (2008),"
+      },
+      {
+        "ref_id": "6",
+        "text": "Knuth, D.E.: The computer as Master Mind. J. Recreational Mathematics 9(1), 1-6 (1976-1977)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Kooi, B.: Yet another Mastermind strategy. ICGA Journal 28(1), 13-20 (2005), http://www.scopus.com/inward/ record.url?eid=2-s2.0-33646756877\\&partnerID=40"
+      },
+      {
+        "ref_id": "8",
+        "text": "Koyama, K., Lai, T.W.: An optimal Mastermind strategy. J. Recreational Mathematics 25(4) (1993/1994)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Merelo-Guervós, J.J., Carpio, J., Castillo, P., Rivas, V.M., Romero, G.: Finding a needle in a haystack using hints and evolutionary computation: the case of genetic mastermind. In: Scott Brave, A.S.W. (ed.) Late breaking papers at the GECCO 1999, pp. 184-192 (1999)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Merelo-Guervós, J., Castillo, P., Rivas, V.: Finding a needle in a haystack using hints and evolutionary computation: the case of evolutionary MasterMind. Applied Soft Computing 6(2), 170-179 (2006), http://www.sciencedirect.com/science/article/ B6W86-4FH0D6P-1/2/40a99afa8e9c7734baae340abecc113a, http://dx.doi.org/10.1016/j.asoc.2004.09.003"
+      },
+      {
+        "ref_id": "11",
+        "text": "Merelo-Guervós, J.J., Castillo, P.A., Alba, E.: ALGORITHM::EVOLUTIONARY, a flexible Perl module for evolutionary computation. Soft Computing - A Fusion of Foundations, Methodologies and Applications (2010), doi 10.1007/s00500-009-0504-3, http://www.springerlink.com/content/8h025g83j0q68270"
+      },
+      {
+        "ref_id": "12",
+        "text": "Mühlenbein, H., Paass, G.: From recombination of genes to the estimation of distributions: I. binary parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)"
+      },
+      {
+        "ref_id": "13",
+        "text": "Neuwirth, E.: Some strategies for mastermind. Zeitschrift fur Operations Research. Serie B 26(8), B257-B278 (1982)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Stuckman, J., Zhang, G.Q.: Mastermind is np-complete. CoRR abs/cs/0512049 (2005)"
+      },
+      {
+        "ref_id": "15",
+        "text": "Wikipedia: Mastermind (board game) - Wikipedia, The Free Encyclopedia (2009), http://en.wikipedia.org/w/ index.php?title=Mastermind_board_game\\&oldid=317686771 (Online: accessed October 9, 2009)"
+      }
+    ],
+    "reference_count": 15,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Progress in a Mastermind game that tries to guess the secret combination $A B B C$. The player here is not particularly clueful, playing a third combination that is not consistent with the first one, not coinciding in two positions and one color (corresponding to the 2 black/1 white response given by the codemaker) with it",
+      "headers": [
+        "Combination",
+        "Response"
+      ],
+      "rows": [
+        [
+          "AABB",
+          21
+        ],
+        [
+          "ACDE",
+          11
+        ],
+        [
+          "FFDA",
+          1
+        ],
+        [
+          "ABBE",
+          3
+        ],
+        [
+          "ABBC",
+          4
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 A comparison of the mean number of games played using all $6^{4}$ colour combinations and breaking ties randomly, ranked from best to worst average number of guesses needed. Statistics are given for 10 independent experiments. The maximum number of moves used for the $10 \\times 6^{4}$ games is also presented in the final column. Horizontal separators are given for statistically independent results",
+      "headers": [
+        "Strategy",
+        "min mean median",
+        "max st.dev.",
+        "$\\max$ <br> guesses"
+      ],
+      "rows": [
+        [
+          "Entropy",
+          "4.3834 .408",
+          "4.4084 .4240 .012",
+          6
+        ],
+        [
+          "Most parts",
+          "4.3834 .410",
+          "4.4124 .4300 .013",
+          7
+        ],
+        [
+          "Expected size",
+          "4.4474 .470",
+          "4.4684 .4900 .015",
+          7
+        ],
+        [
+          "Worst case",
+          "4.4614 .479",
+          "4.4734 .5060 .016",
+          6
+        ],
+        [
+          "Random",
+          "4.5664 .608",
+          "4.6084 .6460 .026",
+          8
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Two EDA experiments are shown, one using the fitness function designed to find a consistent guess only $(f)$ and ones using local entropy $f_{\\ell}$. The EDA using local entropy is statistically better than playing pure random, whereas the other EDA is not. In order to confirm the usefulness of the local entropy, an additional experiment was performed. This time, as in the previous sections, all consistent guesses are found and the one with the highest local entropy played. This results is labelled LocalEntropy in table 3. The results are not statistically different from the EDA results using fitness function $f_{\\ell}$.",
+      "headers": [
+        "Strategy",
+        "min mean median max st.dev.",
+        "",
+        "",
+        "$\\begin{gathered} \\text { max } \\\\ \\text { guesses } \\end{gathered}$"
+      ],
+      "rows": [
+        [
+          "Entropy",
+          "4.3834 .408",
+          "4.4084 .424",
+          0.012,
+          6
+        ],
+        [
+          "Most parts",
+          "4.3834 .410",
+          "4.4124 .430",
+          0.013,
+          7
+        ],
+        [
+          "Expected size",
+          "4.4474 .470",
+          "4.4684 .490",
+          0.015,
+          7
+        ],
+        [
+          "Worst case",
+          "4.4614 .479",
+          "4.4734 .506",
+          0.016,
+          6
+        ],
+        [
+          "LocalEntropy",
+          "4.5294 .569",
+          "4.5684 .613",
+          0.021,
+          7
+        ],
+        [
+          "EDA $+f_{\\ell}$",
+          "4.5244 .571",
+          "4.5804 .600",
+          0.026,
+          7
+        ],
+        [
+          "EDA $+f$",
+          "4.5624 .616",
+          "4.6194 .665",
+          0.032,
+          7
+        ],
+        [
+          "Random",
+          "4.5664 .608",
+          "4.6084 .646",
+          0.026,
+          8
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Statistics for the average number of guesses for different maximum sizes $\\mu$ of subsets of consistent guesses. The horizontal lines are used as before to indicate statistical independent, with the exception of one case: for $\\mu=10$ the expected size and worst case are not independent",
+      "headers": [
+        "Strategy",
+        "min mean median max st.dev.",
+        "",
+        "",
+        "$\\begin{gathered} \\text { max } \\\\ \\text { guesses } \\end{gathered}$"
+      ],
+      "rows": [
+        [
+          "$\\mu=10$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Most parts",
+          "4.4294 .454",
+          "4.4544 .477",
+          0.016,
+          7
+        ],
+        [
+          "Entropy",
+          "4.4384 .468",
+          "4.4764 .483",
+          0.016,
+          7
+        ],
+        [
+          "Expected size",
+          "4.4504 .472",
+          "4.4744 .493",
+          0.014,
+          7
+        ],
+        [
+          "Worst case",
+          "4.4474 .486",
+          "4.4874 .519",
+          0.02,
+          7
+        ],
+        [
+          "$\\mu=20$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Entropy",
+          "4.3944 .423",
+          "4.4264 .455",
+          0.021,
+          7
+        ],
+        [
+          "Most parts",
+          "4.4244 .431",
+          "4.4274 .451",
+          0.009,
+          7
+        ],
+        [
+          "Expected size",
+          "4.4274 .454",
+          "4.4554 .481",
+          0.017,
+          7
+        ],
+        [
+          "Worst case",
+          "4.4294 .453",
+          "4.4514 .486",
+          0.017,
+          7
+        ],
+        [
+          "$\\mu=30$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Entropy",
+          "4.3804 .413",
+          "4.4104 .443",
+          0.02,
+          6
+        ],
+        [
+          "Most parts",
+          "4.3934 .416",
+          "4.4164 .435",
+          0.015,
+          7
+        ],
+        [
+          "Expected size",
+          "4.4264 .453",
+          "4.4564 .491",
+          0.019,
+          7
+        ],
+        [
+          "Worst case",
+          "4.4344 .459",
+          "4.4614 .477",
+          0.013,
+          7
+        ],
+        [
+          "$\\mu=40$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Entropy",
+          "4.3724 .398",
+          "4.3994 .426",
+          0.017,
+          7
+        ],
+        [
+          "Most parts",
+          "4.3834 .424",
+          "4.4274 .448",
+          0.02,
+          7
+        ],
+        [
+          "Expected size",
+          "4.4184 .457",
+          "4.4554 .491",
+          0.023,
+          7
+        ],
+        [
+          "Worst case",
+          "4.4244 .458",
+          "4.4574 .490",
+          0.022,
+          7
+        ],
+        [
+          "$\\mu=50$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Entropy",
+          "4.3654 .397",
+          "4.3934 .438",
+          0.02,
+          6
+        ],
+        [
+          "Most parts",
+          "4.4004 .424",
+          "4.4224 .454",
+          0.017,
+          7
+        ],
+        [
+          "Expected size",
+          "4.4194 .453",
+          "4.4534 .495",
+          0.022,
+          7
+        ],
+        [
+          "Worst case",
+          "4.4314 .456",
+          "4.4574 .474",
+          0.012,
+          6
+        ]
+      ],
+      "row_count": 25,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 No statistical advantage is gained when using a set size larger than $\\mu=30$ when using the entropy strategy. However, there is also no statistically difference between $\\mu=20$ and both $\\mu=30$ and $\\mu=\\infty$ (the only cases not indicated by the horizontal lines)",
+      "headers": [
+        "$\\mu=$",
+        "min mean median max st.dev.",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          10,
+          "4.4384 .468",
+          "4.4764 .483",
+          0.016,
+          ""
+        ],
+        [
+          20,
+          "4.3944 .423",
+          "4.4264 .455",
+          0.021,
+          ""
+        ],
+        [
+          30,
+          "4.3804 .413",
+          "4.4104 .443",
+          0.02,
+          ""
+        ],
+        [
+          40,
+          "4.3724 .398",
+          "4.3994 .426",
+          0.017,
+          ""
+        ],
+        [
+          50,
+          "4.3654 .397",
+          "4.3934 .438",
+          0.02,
+          ""
+        ],
+        [
+          "$\\infty$",
+          "4.3834 .408",
+          "4.4084 .424",
+          0.012,
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 No statistical advantage is gained when using a set size larger than $\\mu=20$ for the most parts strategy. However, there is a statistical difference between $\\mu=20$ and $\\mu=\\infty$ (the only case not indicated by the horizontal lines",
+      "headers": [
+        "$\\mu=$",
+        "min mean median",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          10,
+          4.429,
+          4.454,
+          4.477,
+          0.016
+        ],
+        [
+          20,
+          4.424,
+          4.431,
+          4.427,
+          4.451
+        ],
+        [
+          30,
+          4.393,
+          4.416,
+          4.416,
+          4.435
+        ],
+        [
+          40,
+          4.383,
+          4.424,
+          4.427,
+          4.448
+        ],
+        [
+          50,
+          4.4,
+          4.424,
+          4.422,
+          4.454
+        ],
+        [
+          "$\\infty$",
+          4.383,
+          4.41,
+          4.412,
+          4.43
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    }
+  ]
+}

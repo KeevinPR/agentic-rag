@@ -1,0 +1,378 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Multiple Power Line Outage Detection in Smart Grids Probabilistic Bayesian Approach.md",
+    "filename": "Multiple Power Line Outage Detection in Smart Grids Probabilistic Bayesian Approach.md",
+    "title": "Multiple Power Line Outage Detection in Smart Grids Probabilistic Bayesian Approach",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "SCADA vs. PMU [8].",
+      "headers": [
+        "Parameters",
+        "SCADA",
+        "PMU"
+      ],
+      "rows": [
+        [
+          "Measurement",
+          "Analog",
+          "Digital"
+        ],
+        [
+          "Resolution",
+          "2-4 samples per <br> cycle",
+          60
+        ],
+        [
+          "Observability",
+          "Steady state",
+          "Dynamic/Transient <br> state"
+        ],
+        [
+          "Monitoring",
+          "Local-area",
+          "Wide-area"
+        ],
+        [
+          "Phase Angle <br> Measurement",
+          "No",
+          "Yes"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Summary of some published works on power line outage detection.",
+      "headers": [
+        "Ref.",
+        "Single line outage",
+        "Multiple Fixed line <br> outages",
+        "Multiple Variable <br> line outages"
+      ],
+      "rows": [
+        [
+          "[Proposed]",
+          "",
+          "",
+          "$\\checkmark$"
+        ],
+        [
+          14,
+          "$\\checkmark$",
+          "",
+          ""
+        ],
+        [
+          15,
+          "$\\checkmark$",
+          "",
+          ""
+        ],
+        [
+          16,
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          17,
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          19,
+          "$\\checkmark$",
+          "",
+          ""
+        ],
+        [
+          20,
+          "$\\checkmark$",
+          "",
+          ""
+        ],
+        [
+          21,
+          "$\\checkmark$",
+          "",
+          ""
+        ],
+        [
+          22,
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          23,
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          24,
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          30,
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          31,
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          32,
+          "",
+          "$\\checkmark$",
+          ""
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 lists all notations used in this section.",
+      "headers": [
+        "Symbol",
+        "Details"
+      ],
+      "rows": [
+        [
+          "$L$",
+          "Number of power lines in the network"
+        ],
+        [
+          "$N$",
+          "Number of power buses in the network"
+        ],
+        [
+          "$\\mathcal{G}$",
+          "Weighted graph of network"
+        ],
+        [
+          "$\\mathcal{E}$",
+          "Set of edges in $\\mathcal{G}$"
+        ],
+        [
+          "$\\mathcal{L}$",
+          "Set of lines in the network"
+        ],
+        [
+          "$\\mathcal{N}$",
+          "Set of buses in the nework"
+        ],
+        [
+          "$\\mathbf{M}$",
+          "Bus line incidence matrix of $\\mathcal{G}$"
+        ],
+        [
+          "$\\mathbf{p}$",
+          "Real vector of length $N$ of power injections"
+        ],
+        [
+          "$\\mathbf{D}_{\\mathbf{x}}$",
+          "$L \\times L$ diagonal matrix with line reactances as"
+        ],
+        [
+          "$\\boldsymbol{\\eta}$",
+          "$\\quad$ diagonal entries"
+        ],
+        [
+          "$\\boldsymbol{b}$",
+          "Noise perturbation vector"
+        ],
+        [
+          0.0,
+          ""
+        ],
+        [
+          "",
+          1
+        ],
+        [
+          "$x_{l}$",
+          "Reactance of line $l$ that belongs to set $\\mathcal{L}$ or $\\mathcal{E}$"
+        ],
+        [
+          "$P_{n}$",
+          "Total power flowing into bus $n$"
+        ],
+        [
+          "$P_{n m}$",
+          "Power flowing out from bus $n$ to $m$"
+        ],
+        [
+          "$\\theta_{n}$",
+          "Pre-outage voltage phasor angle measured at bus"
+        ],
+        [
+          "$\\theta_{n}$",
+          "$n$"
+        ],
+        [
+          "$\\theta_{n}$",
+          "Laplacian matrix of pre-outage event"
+        ],
+        [
+          "$\\theta_{n}$",
+          "Post event phasor angle measured at bus $n$"
+        ],
+        [
+          "$\\mathbf{B}$",
+          "Laplacian matrix of post-outage"
+        ],
+        [
+          "$\\mathbf{m}_{l}$",
+          "Incidence vector of single line $l$"
+        ],
+        [
+          "$\\hat{\\mathbf{B}}$",
+          "$\\mathbf{B}^{\\prime}-\\mathbf{B}$"
+        ],
+        [
+          "$B_{m n}$",
+          "Single reactance between bus $m$ and $n$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Variables description of algorithms 1 and 2.",
+      "headers": [
+        "Variable",
+        "Detail"
+      ],
+      "rows": [
+        [
+          "$G$",
+          "Number of generations of algorithm"
+        ],
+        [
+          "$L$",
+          "Number of transmission lines in the power grid"
+        ],
+        [
+          "$P_{s}$",
+          "Size of population"
+        ],
+        [
+          "$\\rho_{s}$",
+          "Probability of selection of best candidates"
+        ],
+        [
+          "$P_{h t}, P_{l t}$",
+          "Upper and lower threshold limits respectively of probability"
+        ],
+        [
+          "$P_{h}$",
+          "Upper probability value"
+        ],
+        [
+          "$P_{l}$",
+          "Lower probability value"
+        ],
+        [
+          "$N_{t h}$",
+          "No. of generations after which thresholding is applied"
+        ],
+        [
+          "$P_{\\text {val }}$",
+          "temporary variable for holding population best probability"
+        ],
+        [
+          "$\\Omega_{g}$",
+          "Global best fitness value"
+        ],
+        [
+          "$\\Omega_{p}$",
+          "Local (population) best fitness value"
+        ],
+        [
+          "$B_{p}$",
+          "Population best individual"
+        ],
+        [
+          "$B_{G}$",
+          "Global best individual"
+        ],
+        [
+          "$\\hat{b}$",
+          "Output of algorithm, the estimated line outage vector"
+        ],
+        [
+          "$N_{b}$",
+          "Number of best selected candidates"
+        ],
+        [
+          "$\\operatorname{Pr}_{h s}$",
+          "The vector of size $P_{s} \\times L$ containing joint probability distribution for best selected candidates"
+        ],
+        [
+          "$\\operatorname{Pr}_{G}$",
+          "The matrix containing generation wise $\\operatorname{Pr}_{h s}$ vectors"
+        ],
+        [
+          "Pop",
+          "The population matrix"
+        ],
+        [
+          "$f_{t h}$",
+          "binary flag to control the threshold function on $\\operatorname{Pr}_{h s}$"
+        ],
+        [
+          "$\\mathcal{S}(x)$",
+          "Sorting function: sorts the vector $x$ in ascending order"
+        ],
+        [
+          "$\\operatorname{Rep}(a, b, 1)$",
+          "Matrix replication function. Produces a matrix which consists of $a$ copies of vector $b$ concatenated in vertical order"
+        ],
+        [
+          "$\\lceil$.",
+          "Ceil function"
+        ],
+        [
+          "$\\Lambda_{g}$",
+          "Column vector of size $P_{s}$ stores the fitness values of all individuals of Pop"
+        ],
+        [
+          "$\\Gamma_{g}^{\\uparrow}$",
+          "Indexes of sorted values of $\\Lambda_{g}$"
+        ],
+        [
+          "$\\Gamma_{f}$",
+          "Actual values of $\\Lambda_{g}$ after sorting"
+        ],
+        [
+          "$\\Gamma_{g}^{s}$",
+          "Indexes of best selected solutions"
+        ],
+        [
+          "$\\mathcal{F}$",
+          18
+        ],
+        [
+          "$X(1: r, 1: c)$",
+          11
+        ]
+      ],
+      "row_count": 28,
+      "column_count": 2
+    }
+  ]
+}

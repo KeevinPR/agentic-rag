@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2005/Average time complexity of estimation of distribution algorithms.md",
+    "filename": "Average time complexity of estimation of distribution algorithms.md",
+    "title": "Average time complexity of estimation of distribution algorithms",
+    "year": "2005"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Larrañaga, P., Lozano, J.A.: Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer Academic Publishers (2002)\n2. Pelikan, M., Sastry, K., Goldberg, D.E.: Scalability of the Bayesian Optimization Algorithm. International Journal of Approximate Reasoning 31 (2002) 221-258\n3. Mühlenbein, H., Mahnig, T.: Evolutionary Optimization and the Estimation of Search Distributions with Applications to Graph Bipartitioning. International Journal of Approximate Reasoning 31 (2002) 157-192\n4. Mühlenbein, H., Paaß, G.: From Recombination of Genes to the Estimation of Distributions I. Binary Parameters. In Voigt, H.M., Ebeling, W., Rechenberg, I., Schwefel, H.P., eds.: Parallel Problem Solving from Nature, PPSN-IV. (1996) 178187\n5. Baluja, S., Davies, S.: Using Optimal Dependency Trees for Combinatorial Optimization: Learning the Structure of the Search Space. Technical Report CMU-CS-97-107, Carnegie Mellon University (1997)\n6. Larrañaga, P., Etxeberria, R., Lozano, J.A., Peña, J.M.: Combinatorial Optimization by Learning and Simulation of Bayesian Networks. In Boutilier, C., Goldszmidt, M., eds.: Proceedings of Uncertainty in Artificial Intelligence, UAI-2000, Morgan Kaufmann (2000) 343-352\n7. Horn, J., Goldberg, D.E., Deb, K.: Long Path Problems. In Davidor, Y., Schwefel, H.P., Männer, R., eds.: Parallel Problem Solving from Nature, PPSN III, Berlin and Heidelberg: Springer (1994) 149-158\n8. He, J., Yao, X.: Drift Analysis and Average Time Complexity of Evolutionary Algorithms. Artificial Intelligence 127 (2001) 57-85",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Larrañaga, P., Lozano, J.A.: Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer Academic Publishers (2002)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Pelikan, M., Sastry, K., Goldberg, D.E.: Scalability of the Bayesian Optimization Algorithm. International Journal of Approximate Reasoning 31 (2002) 221-258"
+      },
+      {
+        "ref_id": "3",
+        "text": "Mühlenbein, H., Mahnig, T.: Evolutionary Optimization and the Estimation of Search Distributions with Applications to Graph Bipartitioning. International Journal of Approximate Reasoning 31 (2002) 157-192"
+      },
+      {
+        "ref_id": "4",
+        "text": "Mühlenbein, H., Paaß, G.: From Recombination of Genes to the Estimation of Distributions I. Binary Parameters. In Voigt, H.M., Ebeling, W., Rechenberg, I., Schwefel, H.P., eds.: Parallel Problem Solving from Nature, PPSN-IV. (1996) 178187"
+      },
+      {
+        "ref_id": "5",
+        "text": "Baluja, S., Davies, S.: Using Optimal Dependency Trees for Combinatorial Optimization: Learning the Structure of the Search Space. Technical Report CMU-CS-97-107, Carnegie Mellon University (1997)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Larrañaga, P., Etxeberria, R., Lozano, J.A., Peña, J.M.: Combinatorial Optimization by Learning and Simulation of Bayesian Networks. In Boutilier, C., Goldszmidt, M., eds.: Proceedings of Uncertainty in Artificial Intelligence, UAI-2000, Morgan Kaufmann (2000) 343-352"
+      },
+      {
+        "ref_id": "7",
+        "text": "Horn, J., Goldberg, D.E., Deb, K.: Long Path Problems. In Davidor, Y., Schwefel, H.P., Männer, R., eds.: Parallel Problem Solving from Nature, PPSN III, Berlin and Heidelberg: Springer (1994) 149-158"
+      },
+      {
+        "ref_id": "8",
+        "text": "He, J., Yao, X.: Drift Analysis and Average Time Complexity of Evolutionary Algorithms. Artificial Intelligence 127 (2001) 57-85"
+      }
+    ],
+    "reference_count": 8,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Fitting Curve",
+        "",
+        "Order"
+      ],
+      "rows": [
+        [
+          "UMDA",
+          "$1.2964 \\cdot n^{0.60888}$",
+          "$O\\left(n^{2}\\right)$",
+          "$0.6<z<1$"
+        ],
+        [
+          "TREE",
+          "$-57.928+55.91 \\log (n)$",
+          "",
+          "$O(\\log n)$"
+        ],
+        [
+          "EBNA $_{B I C}$",
+          "$-32.943+38.763 \\log n$",
+          "",
+          "$O(\\log n)$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Fitting Curve",
+        "Order"
+      ],
+      "rows": [
+        [
+          "UMDA",
+          "$-4.3384+1.2883 \\cdot n$",
+          "$O(n)$"
+        ],
+        [
+          "TREE",
+          "$-3.8817+1.8424 \\cdot n$",
+          "$O(n)$"
+        ],
+        [
+          "EBNA $_{\\text {BIC }}$",
+          "$1.7008+1.5333 \\cdot n$",
+          "$O(n)$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Fitting Curve",
+        "Order"
+      ],
+      "rows": [
+        [
+          "UMDA",
+          "$29.249-4.8551 \\cdot n+0.67002 \\cdot n^{2} O\\left(n^{2}\\right)$",
+          ""
+        ],
+        [
+          "TREE",
+          "$13.999-1.1664 \\cdot n+0.32995 \\cdot n^{2} O\\left(n^{2}\\right)$",
+          ""
+        ],
+        [
+          "EBNA $_{B I C}$",
+          "$50.262-7.0018 \\cdot n+0.64101 \\cdot n^{2} O\\left(n^{2}\\right)$",
+          ""
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Independent tasks scheduling in cloud computing via improved estimation of distribution algorithm.md",
+    "filename": "Independent tasks scheduling in cloud computing via improved estimation of distribution algorithm.md",
+    "title": "Independent tasks scheduling in cloud computing via improved estimation of distribution algorithm",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Algorithm 1: IEDA",
+        ""
+      ],
+      "rows": [
+        [
+          1.0,
+          "Begin"
+        ],
+        [
+          2.0,
+          "Set the initial population $Z_{0}$ be empty, selected population $S_{0}$ be empty, generation counter $g=0$. Initialization: Generate $Z_{0}=\\left\\{X_{1}, X_{2}, \\ldots, X_{N}\\right\\}$ with the proposed population initialization method."
+        ],
+        [
+          "",
+          "For $g=1$ to $G$"
+        ],
+        [
+          "",
+          "3.1 Evaluation: Calculate (5) for each solution $X$."
+        ],
+        [
+          "",
+          "3.2 Selection: $S_{g-1} \\leftarrow$ Select the top $M$ individuals in term of objective values in non-decreasing order."
+        ],
+        [
+          "",
+          3.3
+        ],
+        [
+          "",
+          "For $i=1$ to $n$"
+        ],
+        [
+          "",
+          8
+        ],
+        [
+          3.0,
+          "End For"
+        ],
+        [
+          "",
+          3.4
+        ],
+        [
+          "",
+          7
+        ],
+        [
+          "",
+          "$S_{g}(2) \\leftarrow$ Sample individuals by IGA;"
+        ],
+        [
+          "",
+          "$S_{g} \\leftarrow S_{g}(1) \\leftarrow S_{g}(2)$ and apply elitism criterion: $w_{g} \\leftarrow b_{g-1}$"
+        ],
+        [
+          "",
+          "End For"
+        ],
+        [
+          4.0,
+          "The best individual in $Z_{G}$ is the final solution."
+        ],
+        [
+          "",
+          "End"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 2
+    }
+  ]
+}

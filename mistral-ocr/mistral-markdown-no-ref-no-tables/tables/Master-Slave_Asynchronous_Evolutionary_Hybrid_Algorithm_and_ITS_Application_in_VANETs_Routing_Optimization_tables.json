@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Master-Slave Asynchronous Evolutionary Hybrid Algorithm and ITS Application in VANETs Routing Optimization.md",
+    "filename": "Master-Slave Asynchronous Evolutionary Hybrid Algorithm and ITS Application in VANETs Routing Optimization.md",
+    "title": "Master-Slave Asynchronous Evolutionary Hybrid Algorithm and ITS Application in VANETs Routing Optimization",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "AODV PARAMETERS AND THE STANDARD RFC 3561 VALUES",
+      "headers": [
+        "Parameter",
+        "RFC value",
+        "Data Type",
+        "Range"
+      ],
+      "rows": [
+        [
+          "RELLC_INTERNAL",
+          1.0,
+          "X",
+          "$[1.0,20.0]$"
+        ],
+        [
+          "ACTIVE_ROUTE_TIMEOUT",
+          3.0,
+          "X",
+          "$[1.0,20.0]$"
+        ],
+        [
+          "NT_ROUTE_TIMEOUT",
+          6.0,
+          "X",
+          "$[1.0,40.0]$"
+        ],
+        [
+          "NODE_TRANSPORTAL_TIME",
+          0.04,
+          "X",
+          "$[0.01,15.0]$"
+        ],
+        [
+          "MAX_RREQ_TIMEOUT",
+          10.0,
+          "X",
+          "$[1.0,100.0]$"
+        ],
+        [
+          "NET_DIAMETER",
+          35,
+          "Z",
+          "$[3,100]$"
+        ],
+        [
+          "ALLOWED_RELLOLOSS",
+          2,
+          "Z",
+          "$[0,20]$"
+        ],
+        [
+          "REQ_NETRIES",
+          2,
+          "Z",
+          "$[0,20]$"
+        ],
+        [
+          "TTL_START",
+          1,
+          "Z",
+          "$[1,40]$"
+        ],
+        [
+          "TTL_INCREMENT",
+          2,
+          "Z",
+          "$[1,20]$"
+        ],
+        [
+          "TTL_THRESHOLD",
+          7,
+          "Z",
+          "$[1,60]$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "Network Configurations with NS-2",
+      "headers": [
+        "Propagation Model",
+        "Nakagami"
+      ],
+      "rows": [
+        [
+          "PHY/MAC Layer",
+          802.11
+        ],
+        [
+          "Network Layer",
+          "AODV"
+        ],
+        [
+          "Transport Layer",
+          "UDP"
+        ],
+        [
+          "CBR Data Rate",
+          "$64 / 128 / 256 \\mathrm{kbps}$"
+        ],
+        [
+          "Simulation Time",
+          180
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "Solution Quality",
+      "headers": [
+        "",
+        "eAH",
+        "AH"
+      ],
+      "rows": [
+        [
+          "MIN",
+          "$\\mathbf{8 . 2 2 7 1 0 0 E - 0 3}$",
+          "9.298830E-03"
+        ],
+        [
+          "MAX",
+          "9.743050E-03",
+          "1.241070E-02"
+        ],
+        [
+          "AVG",
+          "$\\mathbf{9 . 0 4 0 9 8 6 E - 0 3}$",
+          "1.073452E-02"
+        ],
+        [
+          "STDEV",
+          "7.041978E-04",
+          "1.439495E-03"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "IV",
+      "table_title": "shows QoS metrics validation results using global minimum solutions shown in Table III above, compared to values obtained in AODV RFC standard settings. The values suggest that eAH defeats both RFC",
+      "headers": [
+        "QoS Metric",
+        "RFC",
+        "AH",
+        "eAH"
+      ],
+      "rows": [
+        [
+          "$P D R$",
+          0.999776,
+          0.999874,
+          0.999968
+        ],
+        [
+          "$E 2 E D(\\mathrm{~ms})$",
+          13.5011,
+          1.88545,
+          1.46504
+        ],
+        [
+          "$N R L$",
+          0.052,
+          0.037,
+          0.032
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/An investigation on sampling technique for multi-objective restricted Boltzmann machine.md",
+    "filename": "An investigation on sampling technique for multi-objective restricted Boltzmann machine.md",
+    "title": "An investigation on sampling technique for multi-objective restricted Boltzmann machine",
+    "year": "2010"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "TEST PROBLEMS",
+      "headers": [
+        "Problems",
+        "Objective Functions",
+        "Characteristics"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\begin{aligned} & f_{1}(x)=x_{1} \\\\ & f_{2}(x)=g(x)\\left(1-\\sqrt{f_{1}(x) / g(x)}\\right) \\\\ & g(x)=1+9\\left(\\sum_{i=2}^{n} x_{i}\\right) /(n-1) \\end{aligned}$",
+          "Convex Pareto front, $n=100$ $x_{i} \\in[0,1]$"
+        ],
+        [
+          2,
+          "$\\begin{aligned} & f_{1}(x)=x_{1} \\\\ & f_{2}(x)=g(x)\\left(1-\\left(f_{1}(x) / g(x)\\right)^{2}\\right) \\\\ & g(x)=1+9\\left(\\sum_{i=2}^{n} x_{i}\\right) /(n-1) \\end{aligned}$",
+          "Non-convex Pareto front, $n=100$, $x_{i} \\in[0,1]$"
+        ],
+        [
+          3,
+          "$\\begin{aligned} & f_{1}(x)=x_{1} \\\\ & f_{2}(x)=g(x)\\left(1-\\sqrt{f_{1}(x) / g(x)}-\\right. \\\\ & \\left.f_{1}(x) / g(x) \\sin \\left(100 f_{1}(x)\\right)\\right) \\\\ & g(x)=1+9\\left(\\sum_{i=2}^{n} x_{i}\\right) /(n-1) \\end{aligned}$",
+          "Non- <br> continuous <br> convex Pareto <br> front, $n=100$, <br> $x_{i} \\in[0,1]$"
+        ],
+        [
+          4,
+          "$\\begin{aligned} & f_{1}(x)=x_{1} \\\\ & f_{2}(x)=g(x)(1-\\sqrt{f_{1}(x) / g(x))} \\\\ & g(x)=1+10(n-1) \\\\ & \\quad+\\sum_{i=2}^{n}\\left(x_{i}^{2}-10 \\cos \\left(4 \\pi x_{i}\\right)\\right) \\end{aligned}$",
+          "Many local optimal convex Pareto front, $n=10$, $x_{i} \\in[0,1]$"
+        ],
+        [
+          6,
+          "$\\begin{aligned} & f_{1}(x)=1-\\exp \\left(-4 x_{1}\\right) \\sin ^{4}\\left(6 \\pi x_{1}\\right) \\\\ & f_{2}(x)=g(x)\\left(1-\\left(f_{1}(x) / g(x)\\right)^{2}\\right) \\\\ & g(x)=1+9\\left[\\sum_{i=2}^{n} x_{i} /(n-1)\\right]^{0.25} \\end{aligned}$",
+          "Non-uniform concave Pareto front $n=100$, $x_{i} \\in[0,1]$"
+        ],
+        [
+          2,
+          "$\\begin{aligned} & f_{1}(x)=(1+g(x)) \\\\ & \\cos \\left(x_{1} \\pi / 2\\right) \\ldots \\cos \\left(x_{M-1} \\pi / 2\\right) \\\\ & f_{2}(x)=(1+g(x)) \\\\ & \\cos \\left(x_{1} \\pi / 2\\right) \\ldots \\sin \\left(x_{M-1} \\pi / 2\\right) \\\\ & \\vdots \\\\ & f_{M}(x)=(1+g(x)) \\sin \\left(x_{1} \\pi / 2\\right), \\end{aligned}$ <br> where $g(x)=\\sum_{x_{i} \\in X_{M}}\\left(x_{i}-0.5\\right)^{2}$",
+          "Spherical <br> Pareto <br> Optimal front <br> $n=12, M=3$, <br> $x_{i} \\in[0,1]$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "ALGORITHM'S INDEX",
+      "headers": [
+        "Index",
+        "Algorithm"
+      ],
+      "rows": [
+        [
+          1,
+          "MORBM/E"
+        ],
+        [
+          2,
+          "MORBM/U"
+        ],
+        [
+          3,
+          "MORBM"
+        ],
+        [
+          4,
+          "NSGAII"
+        ],
+        [
+          5,
+          "MOUMDA"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "COMPUTATIONAL TIME (S) USED BY MORBM/E IN ZDT1 AND DTLZ1 WITH DIFFERENT VALUE OF M",
+      "headers": [
+        "",
+        "Multiplier, M",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Problems",
+          1,
+          2,
+          5,
+          10,
+          20,
+          50
+        ],
+        [
+          1,
+          2.3848,
+          2.628,
+          2.9019,
+          3.366,
+          4.2039,
+          6.9802
+        ],
+        [
+          1,
+          0.1113,
+          0.1334,
+          0.1473,
+          0.1733,
+          0.2234,
+          0.3742
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 7
+    }
+  ]
+}

@@ -1,0 +1,973 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/A Coevolutionary Estimation of Distribution Algorithm for Group Insurance Portfolio.md",
+    "filename": "A Coevolutionary Estimation of Distribution Algorithm for Group Insurance Portfolio.md",
+    "title": "A Coevolutionary Estimation of Distribution Algorithm for Group Insurance Portfolio",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "NOTATION",
+      "headers": [
+        "$t_{0}{ }^{k}$",
+        "The initial age of the $k$-th insured in the group"
+      ],
+      "rows": [
+        [
+          "$I_{1}$",
+          "The initial investable amount of the whole group"
+        ],
+        [
+          "$I_{2}{ }^{k}(t)$",
+          "The increment of the investable amount of the $k$-th insured at age $t$"
+        ],
+        [
+          "$n_{1}$",
+          "The number of endowment policies"
+        ],
+        [
+          "$n_{2}$",
+          "The number of hospitalization policies"
+        ],
+        [
+          "$n$",
+          "The number of insured in the group"
+        ],
+        [
+          "$m_{i}$",
+          "The number of payment period for the $i$-th endowment policy"
+        ],
+        [
+          "$x_{k}{ }^{k}$",
+          "The premium of the $j$-th payment period of the $i$-th endowment policy for the $k$-th insured in the group"
+        ],
+        [
+          "$\\beta^{k}$",
+          "The kind of hospitalization policy the $k$-th insured invest in $\\left(\\beta^{k}=0\\right.$ implies does not buy any hospitalization policy $)$"
+        ],
+        [
+          "$q_{g}$",
+          "The latest time of purchase for the $j$-th payment period of the $i$-th endowment policy"
+        ],
+        [
+          "$l_{i p}$",
+          "The minimum amount for purchase of the $j$-th payment period of the $i$-th endowment policy at age $t$"
+        ],
+        [
+          "$T_{1}$",
+          "The guarantee period of the endowment policies"
+        ],
+        [
+          "$T_{2}$",
+          "The latest time to buy hospitalization policies"
+        ],
+        [
+          "$T_{3}$",
+          "The duration to be considered"
+        ],
+        [
+          "$\\eta_{1,2}{ }^{k}\\left(t_{1}, t\\right)$",
+          "The increase rate of the cash value of the $i$-th endowment policy with the $j$-th payment period for the $k$-th insured at age $t$ with purchase at age $t_{1}$"
+        ],
+        [
+          "$\\eta_{2,0}{ }^{k}\\left(t_{1}, t\\right)$",
+          "The death compensation rate of the $i$-th endowment policy with the $j$-th payment period for the $k$-th insured at age $t$ with purchase at age $t_{2}$"
+        ],
+        [
+          "$\\delta_{k}{ }^{k}(t)$",
+          "The premium of hospitalization policy $\\beta$ for the $k$-th insured at age $t$"
+        ],
+        [
+          "$p_{1}{ }^{k}(t)$",
+          "The incidence rate of the $k$-th insured for diseases of degree $s$ at age $t$"
+        ],
+        [
+          "$p^{k}(t)$",
+          "The mortality rate of the $k$-th insured at age $t$"
+        ],
+        [
+          "$z_{k}$",
+          "The medical expense of diseases at degree $s$"
+        ],
+        [
+          "$V^{k}(t)$",
+          "The cash value of the $k$-th insured at time $t$"
+        ],
+        [
+          "$Z^{k}(t)$",
+          "The death compensation of the $k$-th insured at time $t$"
+        ],
+        [
+          "$C(t)$",
+          "The total disposable cash for the whole group at time $t$"
+        ],
+        [
+          "$V_{0}{ }^{k}(t)$",
+          "The cash value of the $i$-th endowment policy with the $j$-th payment period for the $k$-th insured at time $t$"
+        ],
+        [
+          "$D_{k}$",
+          "The total investment amount of the $k$-th insured"
+        ],
+        [
+          "$D$",
+          "The total investment amount of the whole group."
+        ]
+      ],
+      "row_count": 25,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "Settings of InCome",
+      "headers": [
+        "Age",
+        "Yearly Income"
+      ],
+      "rows": [
+        [
+          "$<20$",
+          12000
+        ],
+        [
+          "$20-24$",
+          25000
+        ],
+        [
+          "$25-29$",
+          40000
+        ],
+        [
+          "$30-34$",
+          50000
+        ],
+        [
+          "$35-39$",
+          53000
+        ],
+        [
+          "$40-44$",
+          50000
+        ],
+        [
+          "$45-49$",
+          48000
+        ],
+        [
+          "$50-60$",
+          45000
+        ],
+        [
+          "$>60$",
+          20000
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "Detailed Settings of the Endowment Policies",
+      "headers": [
+        "",
+        "Payment Period $\\left(y_{0}\\right)$ and <br> Latest Purchasing Time $\\left(\\boldsymbol{q}_{0}\\right)$",
+        "",
+        "",
+        "",
+        "Minimum of the <br> face amount $\\left(c_{f}\\right)$"
+      ],
+      "rows": [
+        [
+          "A",
+          5,
+          "",
+          10,
+          "",
+          20000
+        ],
+        [
+          "",
+          75,
+          "",
+          70,
+          "",
+          ""
+        ],
+        [
+          "B",
+          1,
+          5,
+          10,
+          18,
+          25
+        ],
+        [
+          "",
+          75,
+          65,
+          60,
+          60,
+          55
+        ],
+        [
+          "C",
+          5,
+          "",
+          10,
+          "",
+          10000
+        ],
+        [
+          "",
+          75,
+          "",
+          70,
+          "",
+          ""
+        ],
+        [
+          "D",
+          6,
+          10,
+          15,
+          20,
+          5000
+        ],
+        [
+          "",
+          65,
+          60,
+          55,
+          55,
+          ""
+        ],
+        [
+          "E",
+          1,
+          5,
+          10,
+          1500,
+          ""
+        ],
+        [
+          "",
+          80,
+          80,
+          75,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 6
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Detailed Settings of the Hospitalization Policies",
+      "headers": [
+        "",
+        "Coverage scope",
+        "Premium $\\left(\\hat{\\sigma}_{1}\\left(t_{0}\\right)\\right)$"
+      ],
+      "rows": [
+        [
+          "A",
+          "critical illness",
+          "lowest"
+        ],
+        [
+          "B",
+          "critical and serious illness",
+          "medium"
+        ],
+        [
+          "C",
+          "critical, serious and general illness",
+          "highest"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "V",
+      "table_title": "Comparison of CEDA With Other Algorithms",
+      "headers": [
+        "",
+        "",
+        "CEDA",
+        "SP",
+        "CEDA-a",
+        "AEDA",
+        "CCEDA",
+        "CCFR",
+        "CCBB",
+        "CSO",
+        "jDE"
+      ],
+      "rows": [
+        [
+          "$t_{0}=30,35,45$ <br> $T_{3}=10$ <br> $I_{1}=200000$",
+          "Max",
+          "$1.041 \\mathrm{E}+07$",
+          "$8.430 \\mathrm{E}+06$",
+          "$1.041 \\mathrm{E}+07$",
+          "$1.041 \\mathrm{E}+07$",
+          "$1.039 \\mathrm{E}+07$",
+          "$1.040 \\mathrm{E}+07$",
+          "$1.040 \\mathrm{E}+07$",
+          "$1.008 \\mathrm{E}+07$",
+          "$1.027 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Mean",
+          "$1.041 \\mathrm{E}+07$",
+          "$8.430 \\mathrm{E}+06$",
+          "$1.041 \\mathrm{E}+07$",
+          "$1.040 \\mathrm{E}+07$",
+          "$1.032 \\mathrm{E}+07$",
+          "$1.033 \\mathrm{E}+07$",
+          "$1.033 \\mathrm{E}+07$",
+          "$9.494 \\mathrm{E}+06$",
+          "$1.018 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Std",
+          "$6.005 \\mathrm{E}+00$",
+          "$0.000 \\mathrm{E}+00$",
+          "$5.029 \\mathrm{E}+01$",
+          "$2.145 \\mathrm{E}+04$",
+          "$7.605 \\mathrm{E}+04$",
+          "$7.366 \\mathrm{E}+04$",
+          "$6.712 \\mathrm{E}+04$",
+          "$2.878 \\mathrm{E}+05$",
+          "$4.713 \\mathrm{E}+04$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$2.708 \\mathrm{E}-14^{*}$",
+          "$9.485 \\mathrm{E}-14^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$"
+        ],
+        [
+          "$t_{0}=30,35,45$ <br> $T_{3}=10$ <br> $I_{1}=500000$",
+          "Max",
+          "$1.364 \\mathrm{E}+07$",
+          "$1.105 \\mathrm{E}+07$",
+          "$1.364 \\mathrm{E}+07$",
+          "$1.364 \\mathrm{E}+07$",
+          "$1.364 \\mathrm{E}+07$",
+          "$1.364 \\mathrm{E}+07$",
+          "$1.363 \\mathrm{E}+07$",
+          "$1.322 \\mathrm{E}+07$",
+          "$1.861 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Mean",
+          "$1.364 \\mathrm{E}+07$",
+          "$1.091 \\mathrm{E}+07$",
+          "$1.364 \\mathrm{E}+07$",
+          "$1.363 \\mathrm{E}+07$",
+          "$1.357 \\mathrm{E}+07$",
+          "$1.352 \\mathrm{E}+07$",
+          "$1.349 \\mathrm{E}+07$",
+          "$1.237 \\mathrm{E}+07$",
+          "$1.821 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Std",
+          "$9.472 \\mathrm{E}-09$",
+          "$5.471 \\mathrm{E}+05$",
+          "$5.026 \\mathrm{E}+01$",
+          "$4.485 \\mathrm{E}+04$",
+          "$7.273 \\mathrm{E}+04$",
+          "$1.124 \\mathrm{E}+05$",
+          "$2.078 \\mathrm{E}+05$",
+          "$4.824 \\mathrm{E}+05$",
+          "$1.455 \\mathrm{E}+05$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$8.713 \\mathrm{E}-14^{*}$",
+          "$6.140 \\mathrm{E}-14^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$3.160 \\mathrm{E}-12^{*}$"
+        ],
+        [
+          "$t_{0}=30,35,45$ <br> $T_{3}=10$ <br> $I_{1}=1000000$",
+          "Max",
+          "$1.904 \\mathrm{E}+07$",
+          "$1.543 \\mathrm{E}+07$",
+          "$1.903 \\mathrm{E}+07$",
+          "$1.904 \\mathrm{E}+07$",
+          "$1.902 \\mathrm{E}+07$",
+          "$1.903 \\mathrm{E}+07$",
+          "$1.903 \\mathrm{E}+07$",
+          "$1.898 \\mathrm{E}+07$",
+          "$1.102 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Mean",
+          "$1.904 \\mathrm{E}+07$",
+          "$1.517 \\mathrm{E}+07$",
+          "$1.903 \\mathrm{E}+07$",
+          "$1.902 \\mathrm{E}+07$",
+          "$1.883 \\mathrm{E}+07$",
+          "$1.879 \\mathrm{E}+07$",
+          "$1.888 \\mathrm{E}+07$",
+          "$1.757 \\mathrm{E}+07$",
+          "$1.077 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Std",
+          "$6.244 \\mathrm{E}+00$",
+          "$9.636 \\mathrm{E}+05$",
+          "$5.032 \\mathrm{E}+01$",
+          "$7.135 \\mathrm{E}+04$",
+          "$1.599 \\mathrm{E}+05$",
+          "$1.478 \\mathrm{E}+05$",
+          "$1.273 \\mathrm{E}+05$",
+          "$6.884 \\mathrm{E}+05$",
+          "$1.184 \\mathrm{E}+06$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$3.721 \\mathrm{E}-13^{*}$",
+          "$9.485 \\mathrm{E}-14^{*}$",
+          "$3.160 \\mathrm{E}-12^{*}$",
+          "$3.160 \\mathrm{E}-12^{*}$",
+          "$3.160 \\mathrm{E}-12^{*}$",
+          "$3.160 \\mathrm{E}-12^{*}$",
+          "$3.160 \\mathrm{E}-12^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$"
+        ],
+        [
+          "$t_{0}=30,35,45$ <br> $T_{3}=30$ <br> $I_{1}=200000$",
+          "Max",
+          "$1.135 \\mathrm{E}+08$",
+          "$9.154 \\mathrm{E}+07$",
+          "$1.132 \\mathrm{E}+08$",
+          "$1.132 \\mathrm{E}+08$",
+          "$1.134 \\mathrm{E}+08$",
+          "$1.130 \\mathrm{E}+08$",
+          "$1.134 \\mathrm{E}+08$",
+          "$1.096 \\mathrm{E}+08$",
+          "$1.313 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Mean",
+          "$1.134 \\mathrm{E}+08$",
+          "$9.153 \\mathrm{E}+07$",
+          "$1.132 \\mathrm{E}+08$",
+          "$1.114 \\mathrm{E}+08$",
+          "$1.082 \\mathrm{E}+08$",
+          "$9.284 \\mathrm{E}+07$",
+          "$1.070 \\mathrm{E}+08$",
+          "$1.045 \\mathrm{E}+08$",
+          "$1.280 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Std",
+          "$6.291 \\mathrm{E}+04$",
+          "$9.015 \\mathrm{E}+03$",
+          "$4.209 \\mathrm{E}+04$",
+          "$3.599 \\mathrm{E}+06$",
+          "$3.837 \\mathrm{E}+06$",
+          "$3.718 \\mathrm{E}+07$",
+          "$4.055 \\mathrm{E}+06$",
+          "$2.767 \\mathrm{E}+06$",
+          "$1.319 \\mathrm{E}+06$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$1.136 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$6.066 \\mathrm{E}-11^{*}$",
+          "$3.001 \\mathrm{E}-11^{*}$",
+          "$4.975 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$"
+        ],
+        [
+          "$t_{0}=30,35,45$ <br> $T_{3}=30$ <br> $I_{1}=500000$",
+          "Max",
+          "$1.344 \\mathrm{E}+08$",
+          "$1.056 \\mathrm{E}+08$",
+          "$1.339 \\mathrm{E}+08$",
+          "$1.343 \\mathrm{E}+08$",
+          "$1.341 \\mathrm{E}+08$",
+          "$1.340 \\mathrm{E}+08$",
+          "$1.340 \\mathrm{E}+08$",
+          "$1.294 \\mathrm{E}+08$",
+          "$1.644 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Mean",
+          "$1.343 \\mathrm{E}+08$",
+          "$1.056 \\mathrm{E}+08$",
+          "$1.338 \\mathrm{E}+08$",
+          "$1.336 \\mathrm{E}+08$",
+          "$1.285 \\mathrm{E}+08$",
+          "$1.278 \\mathrm{E}+08$",
+          "$1.277 \\mathrm{E}+08$",
+          "$1.249 \\mathrm{E}+08$",
+          "$1.615 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Std",
+          "$2.780 \\mathrm{E}+04$",
+          "$9.369 \\mathrm{E}+03$",
+          "$3.086 \\mathrm{E}+04$",
+          "$4.506 \\mathrm{E}+05$",
+          "$4.966 \\mathrm{E}+06$",
+          "$4.131 \\mathrm{E}+06$",
+          "$4.145 \\mathrm{E}+06$",
+          "$2.237 \\mathrm{E}+06$",
+          "$1.356 \\mathrm{E}+06$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$1.337 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$1.464 \\mathrm{E}-10^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$"
+        ],
+        [
+          "$t_{0}=30,35,45$ <br> $T_{3}=30$ <br> $I_{1}=5000000$",
+          "Max",
+          "$1.688 \\mathrm{E}+08$",
+          "$1.291 \\mathrm{E}+08$",
+          "$1.683 \\mathrm{E}+08$",
+          "$1.688 \\mathrm{E}+08$",
+          "$1.685 \\mathrm{E}+08$",
+          "$1.682 \\mathrm{E}+08$",
+          "$1.686 \\mathrm{E}+08$",
+          "$1.648 \\mathrm{E}+08$",
+          "$8.375 \\mathrm{E}+06$"
+        ],
+        [
+          "",
+          "Mean",
+          "$1.688 \\mathrm{E}+08$",
+          "$1.291 \\mathrm{E}+08$",
+          "$1.682 \\mathrm{E}+08$",
+          "$1.680 \\mathrm{E}+08$",
+          "$1.637 \\mathrm{E}+08$",
+          "$1.567 \\mathrm{E}+08$",
+          "$1.624 \\mathrm{E}+08$",
+          "$1.577 \\mathrm{E}+08$",
+          "$8.195 \\mathrm{E}+06$"
+        ],
+        [
+          "",
+          "Std",
+          "$1.643 \\mathrm{E}+04$",
+          "$4.281 \\mathrm{E}+05$",
+          "$4.520 \\mathrm{E}+04$",
+          "$7.294 \\mathrm{E}+05$",
+          "$5.159 \\mathrm{E}+06$",
+          "$3.000 \\mathrm{E}+07$",
+          "$3.372 \\mathrm{E}+06$",
+          "$2.771 \\mathrm{E}+06$",
+          "$7.210 \\mathrm{E}+04$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$1.539 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$5.573 \\mathrm{E}-10^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$"
+        ],
+        [
+          "$t_{0}=5,30,35$ <br> $T_{3}=10$ <br> $I_{1}=500000$",
+          "Max",
+          "$8.478 \\mathrm{E}+06$",
+          "$6.868 \\mathrm{E}+06$",
+          "$8.477 \\mathrm{E}+06$",
+          "$8.478 \\mathrm{E}+06$",
+          "$8.477 \\mathrm{E}+06$",
+          "$8.476 \\mathrm{E}+06$",
+          "$8.477 \\mathrm{E}+06$",
+          "$8.223 \\mathrm{E}+06$",
+          "$1.129 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Mean",
+          "$8.478 \\mathrm{E}+06$",
+          "$6.723 \\mathrm{E}+06$",
+          "$8.477 \\mathrm{E}+06$",
+          "$8.470 \\mathrm{E}+06$",
+          "$8.383 \\mathrm{E}+06$",
+          "$8.411 \\mathrm{E}+06$",
+          "$8.404 \\mathrm{E}+06$",
+          "$7.727 \\mathrm{E}+06$",
+          "$1.119 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Std",
+          "$3.657 \\mathrm{E}-01$",
+          "$3.277 \\mathrm{E}+05$",
+          "$1.778 \\mathrm{E}+01$",
+          "$1.951 \\mathrm{E}+04$",
+          "$1.464 \\mathrm{E}+05$",
+          "$7.409 \\mathrm{E}+04$",
+          "$5.258 \\mathrm{E}+04$",
+          "$2.114 \\mathrm{E}+05$",
+          "$6.024 \\mathrm{E}+04$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$1.784 \\mathrm{E}-13^{*}$",
+          "$4.289 \\mathrm{E}-14^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.720 \\mathrm{E}-12^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$"
+        ],
+        [
+          "$t_{0}=5,30,35$ <br> $T_{3}=10$ <br> $I_{1}=1000000$",
+          "Max",
+          "$1.712 \\mathrm{E}+07$",
+          "$1.387 \\mathrm{E}+07$",
+          "$1.711 \\mathrm{E}+07$",
+          "$1.712 \\mathrm{E}+07$",
+          "$1.711 \\mathrm{E}+07$",
+          "$1.711 \\mathrm{E}+07$",
+          "$1.711 \\mathrm{E}+07$",
+          "$1.676 \\mathrm{E}+07$",
+          "$9.372 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Mean",
+          "$1.712 \\mathrm{E}+07$",
+          "$1.363 \\mathrm{E}+07$",
+          "$1.711 \\mathrm{E}+07$",
+          "$1.709 \\mathrm{E}+07$",
+          "$1.699 \\mathrm{E}+07$",
+          "$1.701 \\mathrm{E}+07$",
+          "$1.694 \\mathrm{E}+07$",
+          "$1.565 \\mathrm{E}+07$",
+          "$9.174 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Std",
+          "$7.578 \\mathrm{E}-09$",
+          "$8.942 \\mathrm{E}+05$",
+          "$1.778 \\mathrm{E}+01$",
+          "$8.816 \\mathrm{E}+04$",
+          "$1.388 \\mathrm{E}+05$",
+          "$1.056 \\mathrm{E}+05$",
+          "$1.587 \\mathrm{E}+05$",
+          "$6.300 \\mathrm{E}+05$",
+          "$8.552 \\mathrm{E}+05$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$4.151 \\mathrm{E}-13^{*}$",
+          "$2.708 \\mathrm{E}-14^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$1.212 \\mathrm{E}-12^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$"
+        ],
+        [
+          "$t_{0}=5,30,35$ <br> $T_{3}=30$ <br> $I_{1}=200000$",
+          "Max",
+          "$9.534 \\mathrm{E}+07$",
+          "$7.654 \\mathrm{E}+07$",
+          "$9.523 \\mathrm{E}+07$",
+          "$9.511 \\mathrm{E}+07$",
+          "$9.525 \\mathrm{E}+07$",
+          "$9.487 \\mathrm{E}+07$",
+          "$9.527 \\mathrm{E}+07$",
+          "$9.358 \\mathrm{E}+07$",
+          "$1.133 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Mean",
+          "$9.531 \\mathrm{E}+07$",
+          "$7.654 \\mathrm{E}+07$",
+          "$9.523 \\mathrm{E}+07$",
+          "$9.350 \\mathrm{E}+07$",
+          "$9.037 \\mathrm{E}+07$",
+          "$8.405 \\mathrm{E}+07$",
+          "$9.119 \\mathrm{E}+07$",
+          "$8.906 \\mathrm{E}+07$",
+          "$1.110 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Std",
+          "$3.844 \\mathrm{E}+04$",
+          "$5.352 \\mathrm{E}+03$",
+          "$1.190 \\mathrm{E}+04$",
+          "$2.970 \\mathrm{E}+06$",
+          "$2.967 \\mathrm{E}+06$",
+          "$2.312 \\mathrm{E}+07$",
+          "$3.188 \\mathrm{E}+06$",
+          "$2.104 \\mathrm{E}+06$",
+          "$9.985 \\mathrm{E}+05$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$1.015 \\mathrm{E}-11^{*}$",
+          "$5.573 \\mathrm{E}-10^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.690 \\mathrm{E}-11^{*}$",
+          "$3.018 \\mathrm{E}-11^{*}$",
+          "$4.077 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$"
+        ],
+        [
+          "$t_{0}=5,30,35$ <br> $T_{3}=30$ <br> $I_{1}=5000000$",
+          "Max",
+          "$1.162 \\mathrm{E}+08$",
+          "$9.069 \\mathrm{E}+07$",
+          "$1.160 \\mathrm{E}+08$",
+          "$1.161 \\mathrm{E}+08$",
+          "$1.160 \\mathrm{E}+08$",
+          "$1.160 \\mathrm{E}+08$",
+          "$1.161 \\mathrm{E}+08$",
+          "$1.126 \\mathrm{E}+08$",
+          "$1.473 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Mean",
+          "$1.162 \\mathrm{E}+08$",
+          "$9.068 \\mathrm{E}+07$",
+          "$1.160 \\mathrm{E}+08$",
+          "$1.152 \\mathrm{E}+08$",
+          "$1.123 \\mathrm{E}+08$",
+          "$9.964 \\mathrm{E}+07$",
+          "$1.122 \\mathrm{E}+08$",
+          "$1.094 \\mathrm{E}+08$",
+          "$1.451 \\mathrm{E}+08$"
+        ],
+        [
+          "",
+          "Std",
+          "$1.482 \\mathrm{E}+04$",
+          "$5.826 \\mathrm{E}+03$",
+          "$1.471 \\mathrm{E}+04$",
+          "$2.136 \\mathrm{E}+06$",
+          "$3.238 \\mathrm{E}+06$",
+          "$3.396 \\mathrm{E}+07$",
+          "$3.315 \\mathrm{E}+06$",
+          "$1.978 \\mathrm{E}+06$",
+          "$1.344 \\mathrm{E}+06$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$1.449 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.338 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.012 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$"
+        ],
+        [
+          "$t_{0}=5,30,35$ <br> $T_{3}=30$ <br> $I_{1}=1000000$",
+          "Max",
+          "$1.509 \\mathrm{E}+08$",
+          "$1.143 \\mathrm{E}+08$",
+          "$1.506 \\mathrm{E}+08$",
+          "$1.508 \\mathrm{E}+08$",
+          "$1.503 \\mathrm{E}+08$",
+          "$1.504 \\mathrm{E}+08$",
+          "$1.507 \\mathrm{E}+08$",
+          "$1.503 \\mathrm{E}+08$",
+          "$1.861 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Mean",
+          "$1.508 \\mathrm{E}+08$",
+          "$1.143 \\mathrm{E}+08$",
+          "$1.506 \\mathrm{E}+08$",
+          "$1.493 \\mathrm{E}+08$",
+          "$1.446 \\mathrm{E}+08$",
+          "$1.303 \\mathrm{E}+08$",
+          "$1.468 \\mathrm{E}+08$",
+          "$1.432 \\mathrm{E}+08$",
+          "$1.821 \\mathrm{E}+07$"
+        ],
+        [
+          "",
+          "Std",
+          "$1.477 \\mathrm{E}+04$",
+          "$7.355 \\mathrm{E}+03$",
+          "$1.427 \\mathrm{E}+04$",
+          "$3.859 \\mathrm{E}+06$",
+          "$4.503 \\mathrm{E}+06$",
+          "$4.440 \\mathrm{E}+07$",
+          "$4.009 \\mathrm{E}+06$",
+          "$3.446 \\mathrm{E}+06$",
+          "$1.455 \\mathrm{E}+05$"
+        ],
+        [
+          "",
+          "p-value",
+          "-",
+          "$1.337 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.690 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.012 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.020 \\mathrm{E}-11^{*}$",
+          "$3.160 \\mathrm{E}-12^{*}$"
+        ]
+      ],
+      "row_count": 44,
+      "column_count": 11
+    },
+    {
+      "table_number": "VI",
+      "table_title": "ASSET Allocation in Each Situation",
+      "headers": [
+        "",
+        "A",
+        "B",
+        "C"
+      ],
+      "rows": [
+        [
+          "$t_{0}=30,35,45 ; T_{3}=10 ; I_{1}=200000$",
+          159457,
+          19932,
+          19932
+        ],
+        [
+          "$t_{0}=30,35,45 ; T_{3}=10 ; I_{1}=500000$",
+          399457,
+          49932,
+          49932
+        ],
+        [
+          "$t_{0}=30,35,45 ; T_{3}=10 ; I_{1}=1000000$",
+          799457,
+          99932,
+          99932
+        ],
+        [
+          "$t_{0}=30,35,45 ; T_{3}=30 ; I_{1}=200000$",
+          1228208,
+          153526,
+          150335
+        ],
+        [
+          "$t_{0}=30,35,45 ; T_{3}=30 ; I_{1}=500000$",
+          1464172,
+          183524,
+          183526
+        ],
+        [
+          "$t_{0}=30,35,45 ; T_{3}=30 ; I_{1}=1000000$",
+          1868208,
+          233474,
+          233495
+        ],
+        [
+          "$t_{0}=5,30,35 ; T_{3}=10 ; I_{1}=200000$",
+          159797,
+          19974,
+          19974
+        ],
+        [
+          "$t_{0}=5,30,35 ; T_{3}=10 ; I_{1}=500000$",
+          399797,
+          49974,
+          49974
+        ],
+        [
+          "$t_{0}=5,30,35 ; T_{3}=10 ; I_{1}=1000000$",
+          799797,
+          99974,
+          99974
+        ],
+        [
+          "$t_{0}=5,30,35 ; T_{3}=30 ; I_{1}=200000$",
+          984525,
+          121845,
+          121845
+        ],
+        [
+          "$t_{0}=5,30,35 ; T_{3}=30 ; I_{1}=500000$",
+          1224714,
+          153089,
+          152319
+        ],
+        [
+          "$t_{0}=5,30,35 ; T_{3}=30 ; I_{1}=1000000$",
+          1624637,
+          203089,
+          203089
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/Configuration Design of Mechanical Assemblies using an Estimation of Distribution Algorithm and Constraint Programming.md",
+    "filename": "Configuration Design of Mechanical Assemblies using an Estimation of Distribution Algorithm and Constraint Programming.md",
+    "title": "Configuration Design of Mechanical Assemblies using an Estimation of Distribution Algorithm and Constraint Programming",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "EXPERIMENT SETTINGS FOR THE SUSPENSION DESIGN PROBLEM",
+      "headers": [
+        "Joint Positions on Front Side",
+        "$\\begin{aligned} & r^{\\left(Y_{0, t}\\right)}=(0.1,0.4,0.3)^{a} \\\\ & r^{\\left(Y_{0, t}\\right)}=(0.1,0.6,0.3) \\\\ & r^{\\left(Y_{0, t}\\right)}=(0.2,0.3,0.05) \\\\ & r^{\\left(Y_{0, t}\\right)}=(0.2,0.35,0.15) \\end{aligned}$",
+        "$\\begin{aligned} & r^{\\left(Y_{0, t}\\right)}=(0.3,0.4,0.3) \\\\ & r^{\\left(Y_{0, t}\\right)}=(0.3,0.6,0.3) \\\\ & r^{\\left(Y_{0, t}\\right)}=(0.2,0.5,0.05) \\\\ & r^{\\left(Y_{0, t}\\right)}=(0.2,0.55,0.15) \\end{aligned}$",
+        "$\\begin{aligned} & r^{\\left(Y_{0, t}\\right)}=(0.3,0.4,0.3) \\\\ & r^{\\left(Y_{0, t}\\right)}=(0.3,0.6,0.3) \\\\ & r^{\\left(Y_{0, t}\\right)}=(2.58,0.6,0.3) \\\\ & r^{\\left(Y_{0, t}\\right)}=(2.48,0.5,0.05) \\\\ & r^{\\left(Y_{0, t}\\right)}=(2.48,0.35,0.15) \\end{aligned}$"
+      ],
+      "rows": [
+        [
+          "",
+          "$\\begin{aligned} & \\text { Joint Positions } \\\\ & \\text { on Rear Side } \\end{aligned}$",
+          "spring constant $=75000 \\mathrm{~N} / \\mathrm{m}$ initial length $=0.5 \\mathrm{~m}$",
+          "damping ratio $=875$"
+        ],
+        [
+          "Beam",
+          "cross-x area $=0.0007 \\mathrm{~m}^{2}$ elastic modulus $=200 \\mathrm{GPa}$ second moment of inertia, $\\mathrm{y}=3.3 \\times 10^{-7} \\mathrm{~m}^{4}$ second moment of inertia, $\\mathrm{z}=3.3 \\times 10^{-7} \\mathrm{~m}^{4}$ polar moment of inertia $=1.6 \\times 10^{-7} \\mathrm{~m}^{4}$",
+          "density $=8000 \\mathrm{~kg} / \\mathrm{m}^{3}$ shear modulus $=70 \\mathrm{GPa}$",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Chassis",
+          "moment of inertia $=(48.2,647,694) \\mathrm{kg} \\cdot \\mathrm{m}^{2}$",
+          "",
+          ""
+        ],
+        [
+          "",
+          "mass $=1000 \\mathrm{~kg}$",
+          "$r^{(c 1)}=(1.524,0.6,1.025)$",
+          ""
+        ],
+        [
+          "",
+          "$r^{(q 1)}=(1.20,0.7,0.65)$",
+          "$r^{(q 2)}=(0,0.6,0.3)$",
+          ""
+        ],
+        [
+          "",
+          "$r^{(q 1)}=(2.68,0.6,0.3)$",
+          "$r^{(b 1)}=(1.524,0.6,1.025)$",
+          ""
+        ],
+        [
+          "",
+          "$r^{(b 2)}=(0,0.4,1.025)$",
+          "$r^{(b 3)}=(2.68,0.4,1.025)$",
+          ""
+        ],
+        [
+          "Front Wheel",
+          "moment of inertia $=(0.686,0.686,0.972) \\mathrm{kg} \\cdot \\mathrm{m}^{2}$",
+          "",
+          ""
+        ],
+        [
+          "",
+          "mass $=60 \\mathrm{~kg}$",
+          "$r^{(c 2)}=(0.2,0.4,0)$",
+          ""
+        ],
+        [
+          "",
+          "$r^{(b 4)}=(0.2,0.4,0)$",
+          "$r^{(d 1)}=(0.2,0.4,0)$",
+          ""
+        ],
+        [
+          "Rear Wheel",
+          "moment of inertia $=(0.686,0.686,0.972) \\mathrm{kg} \\cdot \\mathrm{m}^{2}$",
+          "",
+          ""
+        ],
+        [
+          "",
+          "mass $=60 \\mathrm{~kg}$",
+          "$r^{(c 3)}=(2.48,0.4,0)$",
+          ""
+        ],
+        [
+          "",
+          "$r^{(b 5)}=(2.48,0.4,0)$",
+          "$r^{(d 2)}=(2.48,0.4,0)$",
+          ""
+        ],
+        [
+          "Boundary Conditions",
+          "$d_{z}=0$ at $r^{(b 1)}$",
+          "$d_{z}=0$ at $r^{(b 2)}$",
+          "$d_{z}=0$ at $r^{(b 3)}$"
+        ],
+        [
+          "",
+          "$d_{x}=0$ at $r^{(b 4)}$",
+          "$d_{x}=0$ at $r^{(b 5)}$",
+          ""
+        ],
+        [
+          "",
+          "$d_{z}=0.050 \\sin (2 \\pi t)$ at $r^{(d 1)}=(0.2,0.4,0)$",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$d_{z}=0.075 \\sin (\\delta \\pi t)$ at $r^{(d 2)}=(2.48,0.4,0)$",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 4
+    }
+  ]
+}

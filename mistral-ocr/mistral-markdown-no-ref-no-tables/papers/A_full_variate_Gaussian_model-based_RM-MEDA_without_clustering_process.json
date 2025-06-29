@@ -1,0 +1,720 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/A full variate Gaussian model-based RM-MEDA without clustering process.md",
+    "filename": "A full variate Gaussian model-based RM-MEDA without clustering process.md",
+    "title": "A full variate Gaussian model-based RM-MEDA without clustering process",
+    "year": "2018"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Taormina R et al (2015) Data-driven input variable selection for rain-fall-runoff modeling using binary-coded particle swarm optimization and extreme learning machines. J Hydrol 529(3):1617-1632\n2. Zhang J et al (2009) Multilayer ensemble pruning via novel multi-sub-swarm particle swarm optimization. J Univers Comput Sci 15(4):840-858\n3. Wang WC et al (2015) Improving forecasting accuracy of annual runoff time series using ARIMA based on EEMD decomposition. Water Resour Manag 29(8):2655-2675\n4. Zhang SW et al (2009) Dimension reduction using semi-supervised locally linear embedding for plant leaf classification. Lect Notes Comput Sci 5754:948-955\n5. Wu CL et al (2009) Methods to improve neural network performance in daily flows prediction. J Hydrol 372(1-4):80-93\n6. Chau KW et al. (2010) A hybrid model coupled with singular spectrum analysis for daily rainfall prediction. J Hydroinf 12(4):458-473\n7. Larrañaga P, Lozano JA (2002) Estimation of distribution algorithms: a new tool for evolutionary computation [M]. Kluwer Press, Boston\n8. Bengoetxea E, Larrañaga P, Bloch I et al (2001) Estimation of distribution algorithms: a new evolutionary computation approach for graph matching problems[C]. Energy minimization methods in computer vision and pattern recognition. Springer, Berlin, pp 454-469\n9. Pelikan M, Goldberg DE, Lobo FG (2002) A survey of optimization by building and using probabilistic models [J]. Comput Optim Appl 21(1):5-20\n10. Laumanns M, Ocenasek J (2002) Bayesian optimization algorithms for multi-objective optimization [M]. Parallel Problem Solving from Nature-PPSN VII. Springer, Berlin, pp 298-307\n11. Pelikan M, Sastry K, Goldberg DE (2005) Multi-objective hBOA, clustering, and scalability[C]. In: Proceedings of the 2005 conference on Genetic and evolutionary computation ACM, pp 663-670\n12. Sastry K, Goldberg DE, Pelikan M (2005) Limits of scalability of multi-objective estimation of distribution algorithms[C]. In: Evolutionary Computation, 2005. The 2005 IEEE Congress on IEEE 3: pp 2217-2224\n13. Wang X, Dong L, Yan J (2012) Maximum ambiguity based sample selection in fuzzy decision tree induction. IEEE Trans Knowl Data Eng 24(8):1491-1505\n14. Valdez SI, Hernández A, Botello S (2013) A Boltzmann based estimation of distribution algorithm [J]. Inf Sci 236(1):126-137\n15. Gonzalez-Fernandez Y, Soto M (2014) Copulaedas: an R package for estimation of distribution algorithms based on copulas [J]. J Stat Softw 58(9):1-34\n16. Maezawa K, Handa H (2015) Memetic algorithms of graphbased estimation of distribution algorithms [C]. In: The 18th Asia Pacific Symposium on Intelligent and Evolutionary Systems (IES 2014). Springer International Publishing 2, pp 647-656\n17. Miettinen K (1999) Nonlinear multi-objective optimization [M]. Springer, Berlin\n18. Ehrgott M (2005) Multicriteria optimization [M]. Springer, Berlin\n19. Schütze O, Mostaghim S, Dellnitz M et al (2003) Covering Pareto sets by multilevel evolutionary subdivision techniques [C]. Evolutionary multi-criterion optimization. Springer, Berlin, pp 118-132\n20. Zhang Q, Zhou A, Jin Y (2008) RM-MEDA: a regularity modelbased multiobjective estimation of distribution algorithm [J]. Evol Comput IEEE Trans 12(1):41-63\n21. Kambhatla N, Leen TK (1997) Dimension reduction by local principal component analysis [J]. Neural Comput 9(7):1493-1516\n22. Wang Y, Xiang J, Cai Z (2012) A regularity model-based multiobjective estimation of distribution algorithm with reducing redundant cluster operator [J]. Appl Soft Comput 12(11):3526-3538\n23. Deb K, Pratap A, Agarwal S et al. (2002) A fast and elitist multiobjective genetic algorithm: NSGA-II [J]. Evol Comput IEEE Trans 6(2):182-197\n24. Zitzler E, Deb K, Thiele L (2000) Comparison of multi-objective evolutionary algorithms: empirical results [J]. Evol Comput 8(2):173-195\n25. Santana R, Bielza C, Larrañaga P et al. (2010) Mateda-2.0: estimation of distribution algorithms in MATLAB [J]. J Stat Softw 35(7):1-30\n26. Zhang Q (2004) On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm [J]. Evol Comput IEEE Trans 8(1):80-93\n27. Zhang Q, Muhlenbein H (2004) On the convergence of a class of estimation of distribution algorithms [J]. Evol Comput IEEE Trans 8(2):127-136\n28. Zhang Q (2004) On the convergence of a factorized distribution algorithm with truncation selection [J]. Complexity 9(4):17-23\n29. Nebro AJ, Durillo JJ, Coello CAC et al (2008) A study of convergence speed in multi-objective metaheuristics[M]. Parallel problem solving from nature-PPSN X. Springer, Berlin, pp 763-772\n30. Charnetski JR, Soland RM (1978) Multiple-attribute decision making with partial information: the comparative hypervolume criterion [J]. Naval Res Logist Q 25(2):279-288\n31. Zitzler E, Thiele L (1999) Multi-objective evolutionary algorithms: a comparative case study and the strength Pareto approach [J]. Evol Comput IEEE Trans 3(4):257-271\n32. Van Veldhuizen DA, Lamont GB (2000) On measuring multiobjective evolutionary algorithm performance. In: Proceedings of the 2000 IEEE Congress on Evolutionary Computation, CEC 2000, vol 1. IEEE Service Center, Piscataway, New Jersey, pp 204-211\n33. Derrac J, Garc`ia S, Molina D, Herrera F (2011) A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary and swarm intelligence algorithms. Swarm Evol Comput 1(1):3-18",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Taormina R et al (2015) Data-driven input variable selection for rain-fall-runoff modeling using binary-coded particle swarm optimization and extreme learning machines. J Hydrol 529(3):1617-1632"
+      },
+      {
+        "ref_id": "2",
+        "text": "Zhang J et al (2009) Multilayer ensemble pruning via novel multi-sub-swarm particle swarm optimization. J Univers Comput Sci 15(4):840-858"
+      },
+      {
+        "ref_id": "3",
+        "text": "Wang WC et al (2015) Improving forecasting accuracy of annual runoff time series using ARIMA based on EEMD decomposition. Water Resour Manag 29(8):2655-2675"
+      },
+      {
+        "ref_id": "4",
+        "text": "Zhang SW et al (2009) Dimension reduction using semi-supervised locally linear embedding for plant leaf classification. Lect Notes Comput Sci 5754:948-955"
+      },
+      {
+        "ref_id": "5",
+        "text": "Wu CL et al (2009) Methods to improve neural network performance in daily flows prediction. J Hydrol 372(1-4):80-93"
+      },
+      {
+        "ref_id": "6",
+        "text": "Chau KW et al. (2010) A hybrid model coupled with singular spectrum analysis for daily rainfall prediction. J Hydroinf 12(4):458-473"
+      },
+      {
+        "ref_id": "7",
+        "text": "Larrañaga P, Lozano JA (2002) Estimation of distribution algorithms: a new tool for evolutionary computation [M]. Kluwer Press, Boston"
+      },
+      {
+        "ref_id": "8",
+        "text": "Bengoetxea E, Larrañaga P, Bloch I et al (2001) Estimation of distribution algorithms: a new evolutionary computation approach for graph matching problems[C]. Energy minimization methods in computer vision and pattern recognition. Springer, Berlin, pp 454-469"
+      },
+      {
+        "ref_id": "9",
+        "text": "Pelikan M, Goldberg DE, Lobo FG (2002) A survey of optimization by building and using probabilistic models [J]. Comput Optim Appl 21(1):5-20"
+      },
+      {
+        "ref_id": "10",
+        "text": "Laumanns M, Ocenasek J (2002) Bayesian optimization algorithms for multi-objective optimization [M]. Parallel Problem Solving from Nature-PPSN VII. Springer, Berlin, pp 298-307"
+      },
+      {
+        "ref_id": "11",
+        "text": "Pelikan M, Sastry K, Goldberg DE (2005) Multi-objective hBOA, clustering, and scalability[C]. In: Proceedings of the 2005 conference on Genetic and evolutionary computation ACM, pp 663-670"
+      },
+      {
+        "ref_id": "12",
+        "text": "Sastry K, Goldberg DE, Pelikan M (2005) Limits of scalability of multi-objective estimation of distribution algorithms[C]. In: Evolutionary Computation, 2005. The 2005 IEEE Congress on IEEE 3: pp 2217-2224"
+      },
+      {
+        "ref_id": "13",
+        "text": "Wang X, Dong L, Yan J (2012) Maximum ambiguity based sample selection in fuzzy decision tree induction. IEEE Trans Knowl Data Eng 24(8):1491-1505"
+      },
+      {
+        "ref_id": "14",
+        "text": "Valdez SI, Hernández A, Botello S (2013) A Boltzmann based estimation of distribution algorithm [J]. Inf Sci 236(1):126-137"
+      },
+      {
+        "ref_id": "15",
+        "text": "Gonzalez-Fernandez Y, Soto M (2014) Copulaedas: an R package for estimation of distribution algorithms based on copulas [J]. J Stat Softw 58(9):1-34"
+      },
+      {
+        "ref_id": "16",
+        "text": "Maezawa K, Handa H (2015) Memetic algorithms of graphbased estimation of distribution algorithms [C]. In: The 18th Asia Pacific Symposium on Intelligent and Evolutionary Systems (IES 2014). Springer International Publishing 2, pp 647-656"
+      },
+      {
+        "ref_id": "17",
+        "text": "Miettinen K (1999) Nonlinear multi-objective optimization [M]. Springer, Berlin"
+      },
+      {
+        "ref_id": "18",
+        "text": "Ehrgott M (2005) Multicriteria optimization [M]. Springer, Berlin"
+      },
+      {
+        "ref_id": "19",
+        "text": "Schütze O, Mostaghim S, Dellnitz M et al (2003) Covering Pareto sets by multilevel evolutionary subdivision techniques [C]. Evolutionary multi-criterion optimization. Springer, Berlin, pp 118-132"
+      },
+      {
+        "ref_id": "20",
+        "text": "Zhang Q, Zhou A, Jin Y (2008) RM-MEDA: a regularity modelbased multiobjective estimation of distribution algorithm [J]. Evol Comput IEEE Trans 12(1):41-63"
+      },
+      {
+        "ref_id": "21",
+        "text": "Kambhatla N, Leen TK (1997) Dimension reduction by local principal component analysis [J]. Neural Comput 9(7):1493-1516"
+      },
+      {
+        "ref_id": "22",
+        "text": "Wang Y, Xiang J, Cai Z (2012) A regularity model-based multiobjective estimation of distribution algorithm with reducing redundant cluster operator [J]. Appl Soft Comput 12(11):3526-3538"
+      },
+      {
+        "ref_id": "23",
+        "text": "Deb K, Pratap A, Agarwal S et al. (2002) A fast and elitist multiobjective genetic algorithm: NSGA-II [J]. Evol Comput IEEE Trans 6(2):182-197"
+      },
+      {
+        "ref_id": "24",
+        "text": "Zitzler E, Deb K, Thiele L (2000) Comparison of multi-objective evolutionary algorithms: empirical results [J]. Evol Comput 8(2):173-195"
+      },
+      {
+        "ref_id": "25",
+        "text": "Santana R, Bielza C, Larrañaga P et al. (2010) Mateda-2.0: estimation of distribution algorithms in MATLAB [J]. J Stat Softw 35(7):1-30"
+      },
+      {
+        "ref_id": "26",
+        "text": "Zhang Q (2004) On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm [J]. Evol Comput IEEE Trans 8(1):80-93"
+      },
+      {
+        "ref_id": "27",
+        "text": "Zhang Q, Muhlenbein H (2004) On the convergence of a class of estimation of distribution algorithms [J]. Evol Comput IEEE Trans 8(2):127-136"
+      },
+      {
+        "ref_id": "28",
+        "text": "Zhang Q (2004) On the convergence of a factorized distribution algorithm with truncation selection [J]. Complexity 9(4):17-23"
+      },
+      {
+        "ref_id": "29",
+        "text": "Nebro AJ, Durillo JJ, Coello CAC et al (2008) A study of convergence speed in multi-objective metaheuristics[M]. Parallel problem solving from nature-PPSN X. Springer, Berlin, pp 763-772"
+      },
+      {
+        "ref_id": "30",
+        "text": "Charnetski JR, Soland RM (1978) Multiple-attribute decision making with partial information: the comparative hypervolume criterion [J]. Naval Res Logist Q 25(2):279-288"
+      },
+      {
+        "ref_id": "31",
+        "text": "Zitzler E, Thiele L (1999) Multi-objective evolutionary algorithms: a comparative case study and the strength Pareto approach [J]. Evol Comput IEEE Trans 3(4):257-271"
+      },
+      {
+        "ref_id": "32",
+        "text": "Van Veldhuizen DA, Lamont GB (2000) On measuring multiobjective evolutionary algorithm performance. In: Proceedings of the 2000 IEEE Congress on Evolutionary Computation, CEC 2000, vol 1. IEEE Service Center, Piscataway, New Jersey, pp 204-211"
+      },
+      {
+        "ref_id": "33",
+        "text": "Derrac J, Garc`ia S, Molina D, Herrera F (2011) A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary and swarm intelligence algorithms. Swarm Evol Comput 1(1):3-18"
+      }
+    ],
+    "reference_count": 33,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Test instances",
+      "headers": [
+        "Instance",
+        "Variables",
+        "Objectives",
+        "Characteristics"
+      ],
+      "rows": [
+        [
+          1,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\sqrt{f_{1}(\\bar{x}) / g(\\bar{x})}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right] /(n-1) \\end{aligned}$",
+          "Convex PF <br> Linear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          2,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\left(f_{1}(\\bar{x}) / g(\\bar{x})\\right)^{2}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right] /(n-1) \\end{aligned}$",
+          "Concave PF <br> Linear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          3,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=1-\\exp \\left(-4 x_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\left(f_{1}(\\bar{x}) / g(\\bar{x})\\right)^{2}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2} / 9\\right]^{0.25} \\end{aligned}$",
+          "Concave PF <br> Non-uniformly distributed Linear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          4,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\cos \\left(0.5 \\pi x_{2}\\right)(1+g(\\bar{x})) \\\\ & f_{2}(\\bar{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\sin \\left(0.5 \\pi x_{2}\\right)(1+g(\\bar{x})) \\\\ & f_{3}(\\bar{x})=\\sin \\left(0.5 \\pi x_{1}\\right)(1+g(\\bar{x})) \\\\ & g(\\bar{x})=\\sum_{i=3}^{n}\\left(x_{i}-x_{1}\\right)^{2} \\end{aligned}$",
+          3
+        ],
+        [
+          5,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\sqrt{f_{1}(\\bar{x}) / g(\\bar{x})}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right] /(n-1) \\end{aligned}$",
+          "Convex PF <br> Nonlinear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          6,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=\\sqrt{x_{1}} \\\\ & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\left(f_{1}(\\bar{x}) / g(\\bar{x})\\right)^{2}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right] /(n-1) \\end{aligned}$",
+          "Concave PF <br> Nonlinear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          7,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=1-\\exp \\left(-4 x_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-\\left(f_{1}(\\bar{x}) / g(\\bar{x})\\right)^{2}\\right] \\\\ & g(\\bar{x})=1+9\\left[\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2} / 9\\right]^{0.25} \\end{aligned}$",
+          "concave PF <br> non-uniformly distributed nonlinear variable linkage $\\mathrm{n}=50$"
+        ],
+        [
+          8,
+          "$[0,1]^{\\mathrm{n}}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\cos \\left(0.5 \\pi x_{2}\\right)(1+g(\\bar{x})) \\\\ & f_{2}(\\bar{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\sin \\left(0.5 \\pi x_{2}\\right)(1+g(\\bar{x})) \\\\ & f_{3}(\\bar{x})=\\sin \\left(0.5 \\pi x_{1}\\right)(1+g(\\bar{x})) \\\\ & g(\\bar{x})=\\sum_{i=3}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2} \\end{aligned}$",
+          3
+        ],
+        [
+          9,
+          "$[0,1] \\times[0,10]^{n-1}$",
+          "$\\begin{aligned} & f_{1}(\\bar{x})=x_{1} \\\\ & f_{2}(\\bar{x})=g(\\bar{x})\\left[1-(\\sqrt{f_{1}(\\bar{x}) / g(\\bar{x})})\\right] \\\\ & g(\\bar{x})=1 / 4000 \\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2} \\\\ & \\quad-\\prod_{i=2}^{n} \\cos \\left(\\left(x_{i}^{2}-x_{1}\\right) / \\sqrt{i-1}\\right)+2 \\end{aligned}$",
+          "Concave PF <br> Nonlinear variable linkage <br> Multimodal with Griewank function $\\mathrm{n}=50$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Results of convergence speed over 20 independent runs",
+      "headers": [
+        "Instance",
+        "FRM-MEDA <br> Mean FES $\\pm$ Std Dev $\\left(\\times 10^{3}\\right)$",
+        "RM-MEDA (with different number of $K$ )",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Mean FES $\\pm$ Std Dev $\\left(\\times 10^{3}\\right) / A R$",
+          ""
+        ],
+        [
+          "",
+          "",
+          "$K=1$",
+          "$K=A V E_{K}$"
+        ],
+        [
+          1,
+          "$\\mathbf{5 . 4 5 0} \\pm \\mathbf{1 . 7 8 6 4}$",
+          "$22.070 \\pm 2.7172 / 75 \\%$",
+          "$6.965 \\pm 0.4271 / 22 \\%$"
+        ],
+        [
+          2,
+          "$\\mathbf{8 . 1 1 0} \\pm \\mathbf{0 . 7 1 2 2}$",
+          "$36.940 \\pm 5.8770 / 78 \\%$",
+          "$9.015 \\pm 0.6792 / 11 \\%$"
+        ],
+        [
+          3,
+          "$\\mathbf{1 1 0 . 6 1 0} \\pm \\mathbf{7 . 2 8 1 3}$",
+          "$318.060 \\pm 26.647 / 65 \\%$",
+          "$171.325 \\pm 20.935 / 35 \\%$"
+        ],
+        [
+          4,
+          "$\\mathbf{1 7 . 2 2 0} \\pm \\mathbf{1 . 6 3 8 9}$",
+          "$159.960 \\pm 3.1828 / 89 \\%$",
+          "$26.000 \\pm 8.0498 / 34 \\%$"
+        ],
+        [
+          5,
+          "$\\mathbf{1 0 . 4 0 0} \\pm \\mathbf{3 . 3 1 7 9}$",
+          "$47.365 \\pm 5.6276 / 78 \\%$",
+          "$11.690 \\pm 3.1611 / 11 \\%$"
+        ],
+        [
+          6,
+          "$\\mathbf{1 3 . 1 8 0} \\pm \\mathbf{1 . 7 6 6 8}$",
+          "$35.510 \\pm 4.9184 / 63 \\%$",
+          "$16.010 \\pm 1.7897 / 18 \\%$"
+        ],
+        [
+          7,
+          "$\\mathbf{1 4 4 . 4 5 0} \\pm \\mathbf{1 5 . 4 4 3}$",
+          "$394.190 \\pm 35.324 / 63 \\%$",
+          "$158.610 \\pm 14.189 / 9 \\%$"
+        ],
+        [
+          8,
+          "$\\mathbf{4 2 . 2 4 0} \\pm \\mathbf{1 2 . 0 8 5}$",
+          "$168.200 \\pm 24.623 / 75 \\%$",
+          "$65.550 \\pm 16.283 / 36 \\%$"
+        ],
+        [
+          9,
+          "$\\mathbf{2 3 . 4 0 0} \\pm \\mathbf{3 . 9 3 1 8}$",
+          "$61.090 \\pm 10.381 / 62 \\%$",
+          "$26.510 \\pm 3.4371 / 12 \\%$"
+        ],
+        [
+          "Mean of $A R$",
+          "",
+          "$\\mathbf{7 2 \\%}$",
+          "$\\mathbf{2 1 \\%}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Results of convergence quality over 20 independent runs",
+      "headers": [
+        "Instance",
+        "The number of FES",
+        "FRM-MEDA",
+        "RM-MEDA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Mean GD $\\pm$ Std Dev $\\left(\\times 10^{-3}\\right)$",
+          "Mean GD $\\pm$ Std Dev $\\left(\\times 10^{-3}\\right)$",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "$K=1$",
+          "$K=A V E_{K}$"
+        ],
+        [
+          1,
+          10000,
+          "$\\mathbf{0 . 2 8 4 2} \\pm \\mathbf{0 . 1 7 7 1}$",
+          "$5.1438 \\pm 0.0707$",
+          "$0.3304 \\pm 0.1788$"
+        ],
+        [
+          2,
+          10000,
+          "$\\mathbf{0 . 1 1 5 9} \\pm \\mathbf{0 . 0 0 6 7}$",
+          "$3.5333 \\pm 0.0992$",
+          "$0.1169 \\pm 0.0149$"
+        ],
+        [
+          3,
+          200000,
+          "$\\mathbf{3 . 8 7 9 0} \\pm \\mathbf{0 . 4 1 0 3}$",
+          "$98.6847 \\pm 39.0190$",
+          "$11.2200 \\pm 2.5227$"
+        ],
+        [
+          4,
+          30000,
+          "$\\mathbf{1 . 3 9 5 6} \\pm \\mathbf{0 . 0 6 8 5}$",
+          "$414.6459 \\pm 66.0754$",
+          "$5.5573 \\pm 8.8936$"
+        ],
+        [
+          5,
+          20000,
+          "$\\mathbf{0 . 6 8 1 3} \\pm \\mathbf{0 . 0 6 3 7}$",
+          "$0.9077 \\pm 0.4840$",
+          "$0.8542 \\pm 0.9804$"
+        ],
+        [
+          6,
+          20000,
+          "$\\mathbf{0 . 7 3 3 1} \\pm \\mathbf{0 . 0 8 3 9}$",
+          "$1.2104 \\pm 0.4882$",
+          "$1.1249 \\pm 1.5780$"
+        ],
+        [
+          7,
+          200000,
+          "$\\mathbf{2 1 . 0 7 6 7} \\pm \\mathbf{9 . 6 5 6 0}$",
+          "$54.0953 \\pm 364.4290$",
+          "$39.1499 \\pm 2.0044$"
+        ],
+        [
+          8,
+          100000,
+          "$\\mathbf{3 . 5 2 6 5} \\pm \\mathbf{0 . 0 3 0 3}$",
+          "$298.9802 \\pm 100.6249$",
+          "$22.4138 \\pm 28.7962$"
+        ],
+        [
+          9,
+          30000,
+          "$1.7818 \\pm 0.8570$",
+          "$4.8436 \\pm 1.9067$",
+          "$\\mathbf{1 . 5 8 3 5} \\pm \\mathbf{0 . 6 8 6 9}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Wilcoxon signed ranks test results of convergence quality with a level of significance $\\alpha=0.05$",
+      "headers": [
+        "Instance",
+        "Comparison $(R+, R-$ and $p$-value $)$ on GD",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "FRM-MEDA vs RM-MEDA $(K=1)$",
+          "",
+          "",
+          "FRM-MEDA vs RM-MEDA $\\left(K=A V E_{K}\\right)$",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$R^{+}$",
+          "$R^{-}$",
+          "$p$ value",
+          "$R^{+}$",
+          "$R^{-}$",
+          "$p$ value"
+        ],
+        [
+          1,
+          20,
+          0,
+          0.0,
+          12,
+          8,
+          0.279
+        ],
+        [
+          2,
+          20,
+          0,
+          0.0,
+          10,
+          10,
+          0.97
+        ],
+        [
+          3,
+          20,
+          0,
+          0.0,
+          20,
+          0,
+          0.0
+        ],
+        [
+          4,
+          20,
+          0,
+          0.0,
+          18,
+          2,
+          0.0
+        ],
+        [
+          5,
+          18,
+          2,
+          0.001,
+          3,
+          17,
+          0.927
+        ],
+        [
+          6,
+          19,
+          1,
+          0.0,
+          9,
+          11,
+          0.709
+        ],
+        [
+          7,
+          17,
+          3,
+          0.002,
+          20,
+          0,
+          0.0
+        ],
+        [
+          8,
+          20,
+          0,
+          0.0,
+          14,
+          6,
+          0.015
+        ],
+        [
+          9,
+          18,
+          2,
+          0.0,
+          9,
+          11,
+          0.654
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Results of population diversity",
+      "headers": [
+        "Instance",
+        "The number of FES",
+        "FRM-MEDA",
+        "RM-MEDA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Mean $\\Delta \\pm$ Std Dev",
+          "Mean $\\Delta \\pm$ Std Dev",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "$K=1$",
+          "$K=A V E_{K}$"
+        ],
+        [
+          1,
+          20000,
+          "$\\mathbf{0 . 1 8 6 2} \\pm \\mathbf{0 . 0 1 2 4}$",
+          "$0.3716 \\pm 0.0341$",
+          "$0.1891 \\pm 0.0142$"
+        ],
+        [
+          2,
+          20000,
+          "$\\mathbf{0 . 1 8 5 8} \\pm \\mathbf{0 . 0 0 8 6}$",
+          "$0.3335 \\pm 0.0991$",
+          "$0.1907 \\pm 0.0096$"
+        ],
+        [
+          3,
+          100000,
+          "$\\mathbf{0 . 5 8 6 4} \\pm \\mathbf{0 . 0 0 7 3}$",
+          "$0.9469 \\pm 0.1242$",
+          "$0.6091 \\pm 0.0099$"
+        ],
+        [
+          4,
+          30000,
+          "$0.7027 \\pm 0.0220$",
+          "$0.7705 \\pm 0.0462$",
+          "$\\mathbf{0 . 5 8 8 9} \\pm \\mathbf{0 . 0 2 6 8}$"
+        ],
+        [
+          5,
+          20000,
+          "$0.1851 \\pm 0.0113$",
+          "$0.4898 \\pm 0.0876$",
+          "$\\mathbf{0 . 1 8 0 0} \\pm \\mathbf{0 . 0 2 4 4}$"
+        ],
+        [
+          6,
+          20000,
+          "$\\mathbf{0 . 1 9 3 4} \\pm \\mathbf{0 . 0 1 8 2}$",
+          "$0.5280 \\pm 0.2933$",
+          "$0.1936 \\pm 0.0675$"
+        ],
+        [
+          7,
+          200000,
+          "$0.8137 \\pm 0.0985$",
+          "$1.1135 \\pm 0.2503$",
+          "$\\mathbf{0 . 7 0 8 2} \\pm \\mathbf{0 . 0 9 7 6}$"
+        ],
+        [
+          8,
+          30000,
+          "$\\mathbf{0 . 6 4 6 6} \\pm \\mathbf{0 . 0 2 4 6}$",
+          "$1.0928 \\pm 0.0965$",
+          "$0.7928 \\pm 0.3157$"
+        ],
+        [
+          9,
+          100000,
+          "$0.2112 \\pm 0.0694$",
+          "$0.5581 \\pm 0.3974$",
+          "$\\mathbf{0 . 2 1 0 5} \\pm \\mathbf{0 . 0 3 7 1}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Instance",
+        "Comparison $(R+, R-$ and $p$-value $)$ on $\\Delta$",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "FRM-MEDA vs RM-MEDA $(K=1)$",
+          "",
+          "",
+          "FRM-MEDA vs RM-MEDA $\\left(K=A V E_{K}\\right)$",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$R^{+}$",
+          "$R^{-}$",
+          "$p$ value",
+          "$R^{+}$",
+          "$R^{-}$",
+          "$p$ value"
+        ],
+        [
+          1,
+          20,
+          0,
+          0.0,
+          11,
+          9,
+          0.502
+        ],
+        [
+          2,
+          20,
+          0,
+          0.0,
+          14,
+          6,
+          0.093
+        ],
+        [
+          3,
+          20,
+          0,
+          0.0,
+          19,
+          1,
+          0.0
+        ],
+        [
+          4,
+          17,
+          3,
+          0.0,
+          0,
+          20,
+          1.0
+        ],
+        [
+          5,
+          20,
+          0,
+          0.0,
+          5,
+          15,
+          0.865
+        ],
+        [
+          6,
+          17,
+          3,
+          0.001,
+          6,
+          14,
+          0.855
+        ],
+        [
+          7,
+          19,
+          1,
+          0.0,
+          4,
+          16,
+          0.995
+        ],
+        [
+          8,
+          20,
+          0,
+          0.0,
+          8,
+          12,
+          0.668
+        ],
+        [
+          9,
+          18,
+          2,
+          0.001,
+          10,
+          10,
+          0.502
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 7
+    }
+  ]
+}

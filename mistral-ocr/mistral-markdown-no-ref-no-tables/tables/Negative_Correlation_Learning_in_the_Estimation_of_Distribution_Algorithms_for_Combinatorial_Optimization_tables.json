@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2013/Negative Correlation Learning in the Estimation of Distribution Algorithms for Combinatorial Optimization.md",
+    "filename": "Negative Correlation Learning in the Estimation of Distribution Algorithms for Combinatorial Optimization.md",
+    "title": "Negative Correlation Learning in the Estimation of Distribution Algorithms for Combinatorial Optimization",
+    "year": "2013"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "$c($ ) is a conflict test function for each of the pairs, $\\sigma_{i}, \\sigma_{j} i \\neq j$; it returns 1 if two items are in conflict, $h$ ) is a legal move test function for each of the pairs, $\\sigma_{i}, \\sigma_{j} i \\neq j$; it returns 1 if the move is a legal move and $M$ is the $m \\times m$ matrix, $\\operatorname{row}\\left(M_{i}\\right)$ denotes a function that returns 1 if the sum of row $i$ of the matrix $M$ is sum(1..m), similarly for col() and diagonal()",
+      "headers": [
+        "Problem",
+        "Number of Solutions",
+        "Search Space",
+        "Population Size",
+        "Number of Generations",
+        "Function Evaluation"
+      ],
+      "rows": [
+        [
+          "8-queens-P",
+          92,
+          40320,
+          50,
+          50,
+          "$F\\left(\\sigma_{1}, \\sigma_{2}, \\ldots, \\sigma_{n}\\right)=\\sum_{i=1}^{n} \\sum_{j=1}^{n} c\\left(\\sigma_{i}, \\sigma_{j}\\right)$"
+        ],
+        [
+          "8-queens-C",
+          92,
+          4426165368,
+          100,
+          1000,
+          ""
+        ],
+        [
+          "8-rooks",
+          40320,
+          4426165368,
+          100,
+          1000,
+          ""
+        ],
+        [
+          "14-bishops",
+          8,
+          478556999958816,
+          100,
+          3000,
+          ""
+        ],
+        [
+          "32-knights",
+          2,
+          1832624140942590534,
+          100,
+          3000,
+          ""
+        ],
+        [
+          "knight's tour",
+          "$1.3 \\times 10^{35}$",
+          "$1.268 \\times 10^{89}$",
+          400,
+          1000,
+          "$F\\left(\\sigma_{1}, \\sigma_{2}, \\ldots, \\sigma_{n}\\right)=\\sum_{i=1}^{n-1} \\mathrm{I}\\left(\\sigma_{i}, \\sigma_{i}+1\\right)$"
+        ],
+        [
+          "$3 \\times 3$ magic $^{2}$",
+          8,
+          326880,
+          100,
+          100,
+          "$F(M)=\\sum_{i=1}^{m} \\operatorname{row}\\left(M_{i}\\right)+\\sum_{i=1}^{m} \\operatorname{column}\\left(M_{i}\\right)+\\sum_{i=1}^{m} \\operatorname{diagonal}\\left(M_{i}\\right)$"
+        ],
+        [
+          "$4 \\times 4$ magic $^{2}$",
+          7040,
+          20922789888000,
+          200,
+          500,
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Performance of each benchmark algorithm in solving multimodal combinatorial puzzles",
+      "headers": [
+        "Problem",
+        "Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Node-Based Algorithm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "EHBSA",
+          "",
+          "",
+          "",
+          "",
+          "EHBSA/wt",
+          "",
+          "",
+          "COIN",
+          "",
+          "",
+          "",
+          "NHBSA",
+          "",
+          "",
+          "",
+          "NHBSA/wt",
+          "",
+          "",
+          "NB-COIN",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 23
+    }
+  ]
+}

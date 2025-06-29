@@ -1,0 +1,389 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/HMOBEDA- Hybrid Multi-objective Bayesian Estimation of Distribution Algorithm.md",
+    "filename": "HMOBEDA- Hybrid Multi-objective Bayesian Estimation of Distribution Algorithm.md",
+    "title": "HMOBEDA- Hybrid Multi-objective Bayesian Estimation of Distribution Algorithm",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameters of algorithms.",
+      "headers": [
+        "",
+        "Description",
+        "Value",
+        "Algorithm"
+      ],
+      "rows": [
+        [
+          "$N$",
+          "Population size",
+          100,
+          "HMOBEDA, HMOBEDA $_{f}$, <br> MBN-EDA, NSGA-II, <br> S-MOGLS"
+        ],
+        [
+          "beta",
+          "Local Search occurrence",
+          1,
+          "HMOBEDA, HMOBEDA $_{f}$, <br> S-MOGLS"
+        ],
+        [
+          "$N_{P G M}$",
+          "Pop $p_{G M}^{k}$ size",
+          "$N / 2$",
+          "HMOBEDA, HMOBEDA $_{f}$, <br> MBN-EDA, NSGA-II, <br> S-MOGLS"
+        ],
+        [
+          "$N_{c m p}$",
+          "Pop $p_{c m p}^{k}$ size",
+          "$10 * N$",
+          "HMOBEDA, HMOBEDA $_{f}$, <br> MBN-EDA"
+        ],
+        [
+          "$p_{c} r$",
+          "Uniform Crossover probability",
+          0.8,
+          "NSGA-II, S-MOGLS, <br> NSGA-III, MOEA/D"
+        ],
+        [
+          "$p_{m} u$",
+          "Bit Flip mutation probability",
+          "$1 / 500$",
+          "NSGA-II, S-MOGLS, <br> NSGA-III, MOEA/D"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Percentage of $|\\operatorname{Ref}|$ corresponding to each algorithm.",
+      "headers": [
+        "Problem",
+        "$3-100$",
+        "$4-100$",
+        "$5-100$",
+        "$3-250$",
+        "$4-250$",
+        "$5-250$"
+      ],
+      "rows": [
+        [
+          "HMOBEDA",
+          30.78,
+          31.89,
+          43.65,
+          50.98,
+          49.76,
+          50.01
+        ],
+        [
+          "HMOBEDA $_{f}$",
+          23.09,
+          20.02,
+          21.82,
+          19.89,
+          20.43,
+          20.65
+        ],
+        [
+          "MBN-EDA",
+          8.76,
+          6.82,
+          8.95,
+          9.65,
+          9.08,
+          10.02
+        ],
+        [
+          "NSGA-II",
+          4.98,
+          4.01,
+          5.45,
+          1.02,
+          3.02,
+          3.92
+        ],
+        [
+          "S-MOGLS",
+          2.65,
+          5.59,
+          6.1,
+          0.54,
+          4.07,
+          6.45
+        ],
+        [
+          "NSGA-III",
+          22.65,
+          26.02,
+          23.87,
+          40.32,
+          29.02,
+          28.56
+        ],
+        [
+          "MOEA/D",
+          28.87,
+          27.37,
+          25.12,
+          42.76,
+          30.14,
+          29.56
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Average run time (min) of each algorithm.",
+      "headers": [
+        "Algorithm",
+        "$3-100$",
+        "$4-100$",
+        "$5-100$",
+        "$3-250$",
+        "$4-250$",
+        "$5-250$"
+      ],
+      "rows": [
+        [
+          "HMOBEDA",
+          5.22,
+          9.71,
+          23.39,
+          13.76,
+          23.48,
+          50.08
+        ],
+        [
+          "HMOBEDA $_{f}$",
+          4.79,
+          8.35,
+          20.94,
+          10.36,
+          20.21,
+          46.08
+        ],
+        [
+          "MBN-EDA",
+          3.26,
+          6.12,
+          15.94,
+          12.25,
+          15.06,
+          35.01
+        ],
+        [
+          "NSGA-II",
+          0.92,
+          5.41,
+          25.21,
+          4.96,
+          19.9,
+          50.02
+        ],
+        [
+          "S-MOGLS",
+          4.25,
+          8.12,
+          30.4,
+          5.71,
+          21.74,
+          56.68
+        ],
+        [
+          "NSGA-III",
+          5.03,
+          10.04,
+          21.64,
+          15.21,
+          24.45,
+          54.46
+        ],
+        [
+          "MOEA/D",
+          4.94,
+          8.16,
+          21.6,
+          15.18,
+          23.09,
+          51.71
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Average hypervolume differences $\\left(\\mathrm{HV}^{-}\\right)$.",
+      "headers": [
+        "Instance",
+        "$3-100$",
+        "$4-100$",
+        "$5-100$",
+        "$3-250$",
+        "$4-250$",
+        "$5-250$"
+      ],
+      "rows": [
+        [
+          "",
+          "$\\mathrm{x} 10^{10}$",
+          "$\\mathrm{x} 10^{14}$",
+          "$\\mathrm{x} 10^{17}$",
+          "$\\mathrm{x} 10^{11}$",
+          "$\\mathrm{x} 10^{15}$",
+          "$\\mathrm{x} 10^{19}$"
+        ],
+        [
+          "HMOBEDA",
+          2.16,
+          1.81,
+          4.82,
+          3.62,
+          4.14,
+          5.37
+        ],
+        [
+          "HMOBEDA $_{f}$",
+          2.55,
+          1.99,
+          5.42,
+          4.18,
+          4.9,
+          6.05
+        ],
+        [
+          "MBN-EDA",
+          2.75,
+          2.11,
+          5.76,
+          4.54,
+          5.19,
+          6.36
+        ],
+        [
+          "NSGA-II",
+          2.6,
+          2.0,
+          5.46,
+          4.56,
+          5.09,
+          6.15
+        ],
+        [
+          "S-MOGLS",
+          2.62,
+          1.99,
+          5.37,
+          4.55,
+          5.08,
+          6.19
+        ],
+        [
+          "NSGA-III",
+          2.38,
+          1.83,
+          5.37,
+          4.04,
+          4.69,
+          6.0
+        ],
+        [
+          "MOEA/D",
+          2.26,
+          1.86,
+          5.36,
+          4.04,
+          4.56,
+          5.81
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 shows the statistical analysis of the results for the algorithms for each instance, with respect to $\\mathrm{HV}^{-}$values. The null hypothesis that all the algorithms have $\\mathrm{HV}^{-}$ values with no statistical difference can be rejected for all instances. A post-hoc analysis is performed to evaluate which algorithms present statistical difference. The entry related to the algorithm with the best average $\\mathrm{HV}^{-}$is shown in bold. The numbers in parentheses show the results of pairwise comparisons using Tukey's posthoc test [11] with a significance level of $\\alpha=0.05$. The first number shows how many algorithms are significantly worse than the algorithm listed in the corresponding line, and the second number shows how many algorithms are significantly better.",
+      "headers": [
+        "Algorithm",
+        "$3-100$",
+        "$4-100$",
+        "$5-100$",
+        "$3-250$",
+        "$4-250$",
+        "$5-250$"
+      ],
+      "rows": [
+        [
+          "HMOBEDA",
+          "$\\mathbf{( 3 , 0 )}$",
+          "$\\mathbf{( 4 , 0 )}$",
+          "$\\mathbf{( 6 , 0 )}$",
+          "$\\mathbf{( 6 , 0 )}$",
+          "$\\mathbf{( 6 , 0 )}$",
+          "$\\mathbf{( 6 , 0 )}$"
+        ],
+        [
+          "HMOBEDA $_{f}$",
+          "$(0,0)$",
+          "$(0,2)$",
+          "$(0,1)$",
+          "$(0,1)$",
+          "$(0,1)$",
+          "$(0,1)$"
+        ],
+        [
+          "MBN-EDA",
+          "$(0,2)$",
+          "$(0,3)$",
+          "$(0,1)$",
+          "$(0,3)$",
+          "$(0,3)$",
+          "$(0,3)$"
+        ],
+        [
+          "NSGA-II",
+          "$(0,1)$",
+          "$(0,2)$",
+          "$(0,1)$",
+          "$(0,3)$",
+          "$(0,3)$",
+          "$(0,1)$"
+        ],
+        [
+          "S-MOGLS",
+          "$(0,1)$",
+          "$(0,2)$",
+          "$(0,1)$",
+          "$(0,3)$",
+          "$(0,3)$",
+          "$(0,2)$"
+        ],
+        [
+          "NSGA-III",
+          "$(0,0)$",
+          "$\\mathbf{( 4 , 0 )}$",
+          "$(0,1)$",
+          "$(3,1)$",
+          "$(3,1)$",
+          "$(1,1)$"
+        ],
+        [
+          "MOEA/D",
+          "$(1,0)$",
+          "$(1,0)$",
+          "$(0,1)$",
+          "$(3,1)$",
+          "$(3,1)$",
+          "$(2,1)$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/Scatter Search in software testing.md",
+    "filename": "Scatter Search in software testing.md",
+    "title": "Scatter Search in software testing",
+    "year": "2006"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Experimental results of the SS approach",
+      "headers": [
+        "Improvement",
+        "Triangle 1",
+        "Triangle 2",
+        "Triangle 3",
+        "Triangle 4",
+        "Atof",
+        "",
+        "Remainder",
+        "Complexbranch"
+      ],
+      "rows": [
+        [
+          "After",
+          10304,
+          19357,
+          27007,
+          36129,
+          "$1,504,311$",
+          141,
+          38984,
+          ""
+        ],
+        [
+          "",
+          100,
+          100,
+          100,
+          100,
+          80,
+          100,
+          100,
+          ""
+        ],
+        [
+          "Before",
+          1108,
+          2166,
+          5310,
+          14189,
+          23676,
+          229,
+          7228,
+          ""
+        ],
+        [
+          "",
+          100,
+          99.23,
+          99,
+          100,
+          68,
+          100,
+          93.18,
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 9
+    },
+    {
+      "table_number": "2",
+      "table_title": "Results of the best SS and EDA approaches",
+      "headers": [
+        "Approach",
+        "Triangle1",
+        "Triangle2",
+        "Triangle3",
+        "Triangle4",
+        "Atof",
+        "Remainder",
+        "Complexbranch"
+      ],
+      "rows": [
+        [
+          "$S S_{\\text {best }}$",
+          1108,
+          19357,
+          27007,
+          14188,
+          "$1,504,311$",
+          141,
+          38984
+        ],
+        [
+          "",
+          100,
+          100,
+          100,
+          100,
+          80,
+          100,
+          100
+        ],
+        [
+          "$E D A_{\\text {best }}$",
+          6150,
+          6200,
+          3875,
+          22720,
+          7685,
+          2360,
+          11930
+        ],
+        [
+          "",
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results of EDA-SS approach with Improvement After (panel A) and Improvement Before (panel B)",
+      "headers": [
+        "EDA",
+        "Triangle 1",
+        "Triangle 2",
+        "Triangle 3",
+        "Triangle 4",
+        "Atof",
+        "Remainder",
+        "Complexbranch"
+      ],
+      "rows": [
+        [
+          "Panel A",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          4015,
+          4250,
+          6281,
+          59615,
+          570306,
+          6202,
+          24154
+        ],
+        [
+          "",
+          100,
+          100,
+          100,
+          100,
+          91.33,
+          100,
+          100
+        ],
+        [
+          "TREE",
+          3272,
+          10210,
+          3870,
+          39838,
+          795693,
+          6532,
+          34900
+        ],
+        [
+          "",
+          100,
+          100,
+          100,
+          99.62,
+          86.67,
+          100,
+          100
+        ],
+        [
+          "EBNA $_{\\mathrm{K} 2+\\text { pen }}$",
+          5185,
+          7452,
+          7369,
+          41283,
+          1066775,
+          4377,
+          31653
+        ],
+        [
+          "",
+          100,
+          100,
+          100,
+          99.62,
+          83,
+          100,
+          100
+        ],
+        [
+          "Panel B",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "UMDA",
+          3311,
+          4700,
+          3927,
+          34850,
+          28278,
+          3012,
+          11298
+        ],
+        [
+          "",
+          100,
+          98.85,
+          99.5,
+          99.62,
+          79.67,
+          100,
+          96.36
+        ],
+        [
+          "TREE",
+          3776,
+          4857,
+          3439,
+          14259,
+          30529,
+          2614,
+          9428
+        ],
+        [
+          "",
+          100,
+          98.85,
+          100,
+          100,
+          78.67,
+          100,
+          96.82
+        ],
+        [
+          "EBNA $_{\\mathrm{K} 2+\\text { pen }}$",
+          3317,
+          4860,
+          3548,
+          11437,
+          33620,
+          2197,
+          9189
+        ],
+        [
+          "",
+          100,
+          98.08,
+          99,
+          98.85,
+          71.67,
+          100,
+          95
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 8
+    },
+    {
+      "table_number": "4",
+      "table_title": "Results of best EDA-SS, SS and EDA approaches",
+      "headers": [
+        "Approach",
+        "Triangle1",
+        "Triangle2",
+        "Triangle3",
+        "Triangle4",
+        "Atof",
+        "",
+        "Remainder",
+        "Complexbranch"
+      ],
+      "rows": [
+        [
+          "$E D A-S S_{\\text {best }}$",
+          3272,
+          4250,
+          3439,
+          14259,
+          570306,
+          2197,
+          24154,
+          ""
+        ],
+        [
+          "",
+          100,
+          100,
+          100,
+          100,
+          91.33,
+          100,
+          100,
+          ""
+        ],
+        [
+          "$S S_{\\text {best }}$",
+          1108,
+          19357,
+          27007,
+          14188,
+          "$1,504,311$",
+          141,
+          38984,
+          ""
+        ],
+        [
+          "",
+          100,
+          100,
+          100,
+          100,
+          80,
+          100,
+          100,
+          ""
+        ],
+        [
+          "$E D A_{\\text {best }}$",
+          6150,
+          6200,
+          3875,
+          22720,
+          7685,
+          2360,
+          11930,
+          ""
+        ],
+        [
+          "",
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 9
+    }
+  ]
+}

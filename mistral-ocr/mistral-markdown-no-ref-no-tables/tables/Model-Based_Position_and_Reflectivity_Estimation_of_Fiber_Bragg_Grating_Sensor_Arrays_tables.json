@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Model-Based Position and Reflectivity Estimation of Fiber Bragg Grating Sensor Arrays.md",
+    "filename": "Model-Based Position and Reflectivity Estimation of Fiber Bragg Grating Sensor Arrays.md",
+    "title": "Model-Based Position and Reflectivity Estimation of Fiber Bragg Grating Sensor Arrays",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameters as specified for the simulated frequency responses $H\\left(f_{k}, \\lambda_{n}\\right)$.",
+      "headers": [
+        "Parameter",
+        "Symbol",
+        "Value $\\pm$ Tolerance ${ }^{\\text {a }}$",
+        "Unit"
+      ],
+      "rows": [
+        [
+          "Number of FBGs",
+          "$M$",
+          20,
+          "-"
+        ],
+        [
+          "Bragg wavelengths",
+          "$\\lambda_{\\mathrm{B}, \\mathrm{m}} \\pm \\sigma_{\\lambda_{\\mathrm{B}}}$",
+          "$1550 \\pm 0.1$",
+          "nm"
+        ],
+        [
+          "FBG spectral bandwidth (FWHM)",
+          "$\\Delta \\lambda_{\\text {FWHM }} \\pm \\sigma_{\\Delta \\lambda}$",
+          "$200 \\pm 20$",
+          "pm"
+        ],
+        [
+          "FBG peak reflectivities",
+          "$R_{\\mathrm{B}, \\mathrm{m}} \\pm \\sigma_{\\mathrm{B}_{\\mathrm{B}}}$",
+          "$0.5 \\pm 0.1$",
+          "$\\%$"
+        ],
+        [
+          "FBG positions $m=1,2, \\ldots, 10$",
+          "$z_{m} \\pm \\sigma_{z}$",
+          "$2.0,2.2, \\ldots, 3.8 \\pm 0.02$",
+          "m"
+        ],
+        [
+          "FBG positions $m=11,12, \\ldots, 20$",
+          "",
+          "$5.8,6.1, \\ldots, 8.5 \\pm 0.03$",
+          ""
+        ],
+        [
+          "Number of simulation runs",
+          "$N_{\\text {sim }}$",
+          1000,
+          "-"
+        ],
+        [
+          "Modulation frequencies",
+          "$f_{k}$",
+          "$10 \\ldots 500$",
+          "MHz"
+        ],
+        [
+          "Modulation frequency steps",
+          "$\\Delta f$",
+          10,
+          "MHz"
+        ],
+        [
+          "Measurement wavelengths",
+          "$\\lambda_{n}$",
+          "$1549 \\ldots 1551$",
+          "nm"
+        ],
+        [
+          "Measurement wavelength steps",
+          "$\\Delta \\lambda$",
+          40,
+          "pm"
+        ],
+        [
+          "Additional Gaussian noise (RMS)",
+          "$\\sigma_{n}$",
+          "$1.5 \\times 10^{-5}$",
+          "-"
+        ],
+        [
+          "Fiber group refractive index",
+          "$n_{\\mathrm{g}}$",
+          1.447,
+          "-"
+        ],
+        [
+          "Fiber attenuation coefficient",
+          "$\\alpha$",
+          0.25,
+          "$\\mathrm{dB} / \\mathrm{km}$"
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Measurement parameters.",
+      "headers": [
+        "Parameter",
+        "Symbol",
+        "Values",
+        "Unit"
+      ],
+      "rows": [
+        [
+          "Measurement temperature range",
+          "$T$",
+          "$-20 \\ldots 85$",
+          "${ }^{\\circ} \\mathrm{C}$"
+        ],
+        [
+          "Measurement temperature steps",
+          "$\\Delta T$",
+          15,
+          "K"
+        ],
+        [
+          "Number of measurements per temperature",
+          "$N_{\\text {meas }}$",
+          100,
+          "-"
+        ],
+        [
+          "Modulation frequencies",
+          "$f_{k}$",
+          "$10 \\ldots 500$",
+          "MHz"
+        ],
+        [
+          "Modulation frequency steps",
+          "$\\Delta f$",
+          10,
+          "MHz"
+        ],
+        [
+          "VNA intermediate frequency bandwidth",
+          "$B_{\\text {IF }}$",
+          1,
+          "kHz"
+        ],
+        [
+          "Measurement wavelengths",
+          "$\\lambda_{n}$",
+          "$1539 \\ldots 1541$",
+          "nm"
+        ],
+        [
+          "Measurement wavelength steps",
+          "$\\Delta \\lambda$",
+          40,
+          "pm"
+        ],
+        [
+          "Average fiber coupled optical power",
+          "$P_{0}$",
+          "$-5$",
+          "dBm"
+        ],
+        [
+          "Fiber group refractive index",
+          "$n_{\\mathrm{g}}$",
+          1.447,
+          "-"
+        ],
+        [
+          "Fiber attenuation coefficient",
+          "$\\alpha$",
+          0.25,
+          "$\\mathrm{dB} / \\mathrm{km}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 4
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/Towards explainable metaheuristics Feature extraction from trajectory mining.md",
+    "filename": "Towards explainable metaheuristics Feature extraction from trajectory mining.md",
+    "title": "Towards explainable metaheuristics Feature extraction from trajectory mining",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "TABLE 1 Selection operators.",
+      "headers": [
+        "Selection type",
+        "Pool size",
+        "Relative selection pressure"
+      ],
+      "rows": [
+        [
+          20,
+          20,
+          "High"
+        ],
+        [
+          50,
+          50,
+          "Low"
+        ],
+        [
+          "Tournament",
+          5,
+          "High"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "TABLE 2 GA run specifications.",
+      "headers": [
+        "P",
+        "N",
+        "runs",
+        "maxGen",
+        "mutRate",
+        "Selection",
+        "Crossover"
+      ],
+      "rows": [
+        [
+          100,
+          40,
+          100,
+          100,
+          0.005,
+          "Tournament and truncation",
+          "Random 1-Point"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "TABLE 3 PBIL run specifications.",
+      "headers": [
+        "P",
+        "N",
+        "runs",
+        "maxGen",
+        "mutRate",
+        "mutShift",
+        "learnRate",
+        "Selection"
+      ],
+      "rows": [
+        [
+          100,
+          40,
+          100,
+          100,
+          0.005,
+          0.05,
+          0.1,
+          "Tournament and truncation"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 8
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 displays the Spearman correlation coefficients of local and global information gain to the inter-cluster and angle from origin features extracted. Global information shows a strong positive correlation to the angle from origin feature with a range of 0.88 to 0.99 in the GA results",
+      "headers": [
+        "Problem",
+        "Selection",
+        "PBIL",
+        "",
+        "GA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Local to inter-cluster",
+          "Global to origin",
+          "Local to inter-cluster",
+          "Global to origin"
+        ],
+        [
+          5,
+          20,
+          "$-0.73$",
+          1.0,
+          "$-0.69$",
+          0.99
+        ],
+        [
+          "",
+          50,
+          "$-0.78$",
+          1.0,
+          0.83,
+          0.98
+        ],
+        [
+          "",
+          5,
+          "$-0.72$",
+          0.97,
+          0.36,
+          0.96
+        ],
+        [
+          1,
+          20,
+          "$-0.86$",
+          1.0,
+          0.94,
+          0.88
+        ],
+        [
+          "",
+          50,
+          0.39,
+          0.88,
+          0.39,
+          0.88
+        ],
+        [
+          "",
+          5,
+          "$-0.75$",
+          1.0,
+          0.5,
+          0.99
+        ],
+        [
+          "Royal road",
+          20,
+          "$-0.83$",
+          1.0,
+          0.77,
+          0.98
+        ],
+        [
+          "",
+          50,
+          "$-0.79$",
+          1.0,
+          0.23,
+          0.99
+        ],
+        [
+          "",
+          5,
+          "$-0.81$",
+          1.0,
+          0.82,
+          0.97
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "TABLE 5 PCA variance explained by first three components.",
+      "headers": [
+        "Algorithm",
+        "Problem",
+        "Selection",
+        "Explained variance \\%",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          1,
+          2,
+          3,
+          "Total"
+        ],
+        [
+          "PBIL",
+          5,
+          20,
+          20,
+          5,
+          3,
+          29
+        ],
+        [
+          "",
+          "",
+          50,
+          13,
+          5,
+          4,
+          22
+        ],
+        [
+          "",
+          "",
+          5,
+          18,
+          5,
+          3,
+          26
+        ],
+        [
+          "",
+          "Checker",
+          20,
+          19,
+          5,
+          3,
+          27
+        ],
+        [
+          "",
+          "",
+          50,
+          13,
+          5,
+          4,
+          22
+        ],
+        [
+          "",
+          "",
+          5,
+          17,
+          5,
+          3,
+          26
+        ],
+        [
+          "",
+          "Royal road",
+          20,
+          18,
+          5,
+          3,
+          27
+        ],
+        [
+          "",
+          "",
+          50,
+          13,
+          5,
+          4,
+          22
+        ],
+        [
+          "",
+          "",
+          5,
+          16,
+          5,
+          3,
+          25
+        ],
+        [
+          "GA",
+          5,
+          20,
+          33,
+          8,
+          6,
+          47
+        ],
+        [
+          "",
+          "",
+          50,
+          27,
+          8,
+          5,
+          40
+        ],
+        [
+          "",
+          "",
+          5,
+          33,
+          8,
+          5,
+          47
+        ],
+        [
+          "",
+          "Checker",
+          20,
+          29,
+          8,
+          6,
+          43
+        ],
+        [
+          "",
+          "",
+          50,
+          24,
+          7,
+          6,
+          37
+        ],
+        [
+          "",
+          "",
+          5,
+          28,
+          8,
+          6,
+          42
+        ],
+        [
+          "",
+          "Royal road",
+          20,
+          27,
+          7,
+          5,
+          40
+        ],
+        [
+          "",
+          "",
+          50,
+          25,
+          7,
+          5,
+          36
+        ],
+        [
+          "",
+          "",
+          5,
+          28,
+          8,
+          5,
+          41
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 7
+    },
+    {
+      "table_number": "6",
+      "table_title": "TABLE 6 Spearman rank correlation between PCA loadings and variable importance mined from the surrogates.",
+      "headers": [
+        "Alg and selection",
+        "Trap5",
+        "1D checkerboard",
+        "Royal road"
+      ],
+      "rows": [
+        [
+          20,
+          0.891,
+          0.8,
+          0.76
+        ],
+        [
+          50,
+          0.904,
+          -0.112,
+          0.522
+        ],
+        [
+          "GA tournament",
+          0.708,
+          0.905,
+          0.427
+        ],
+        [
+          20,
+          0.085,
+          0.15,
+          0.315
+        ],
+        [
+          50,
+          0.308,
+          0.398,
+          0.571
+        ],
+        [
+          "PBIL tournament",
+          0.713,
+          0.537,
+          0.513
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    }
+  ]
+}

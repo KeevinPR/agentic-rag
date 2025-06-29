@@ -1,0 +1,929 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/Latent Variable Model for Estimation of Distribution Algorithm Based on a Probabilistic Context-Free Grammar.md",
+    "filename": "Latent Variable Model for Estimation of Distribution Algorithm Based on a Probabilistic Context-Free Grammar.md",
+    "title": "Latent Variable Model for Estimation of Distribution Algorithm Based on a Probabilistic Context-Free Grammar",
+    "year": "2009"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] H. A. Abbass, X. Houi, and R. I. Mckay, \"AntTAG: A new method to compose computer programs using colonies of ants,\" in Proc. IEEE Congr. Evol. Comput., Honolulu, HI, 2002, pp. 1654-1659.\n[2] H. Attias, \"Inferring parameters and structure of latent variable models by variational bayes,\" in Proc. 15th Conf. Uncertainty Artificial Intell., Stockholm, Sweden: Morgan Kaufmann, 1999, pp. 21-30.\n[3] S. Baluja, \"Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning,\" The Robotics Institute, Carnegie Mellon Univ., Pittsburgh, PA, Tech. Rep. CMU-CS-94-163, 1994.\n[4] M. J. Beal, \"Variational algorithms for approximate bayesian inference,\" Ph.D. dissertation, Gatsby Comput. Neurosci. Unit, Univ. College London, London, U.K., 2003.\n[5] P. A. N. Bosman and E. D. de Jong, \"Grammar transformations in an EDA for genetic programming,\" Inst. Inform. Comput. Sci., Utrecht University, Utrecht, The Netherlands, Tech. Rep. UU-CS-2004-047, 2004.\n[6] A. Dempster, N. Laird, and D. Rubin, \"Maximum likelihood from incomplete data via the EM algorithm,\" J. Royal Statistical Soc., Series B, vol. 39, no. 1, 1977.\n[7] C. Gathercole and P. Ross, \"An adverse interaction between crossover and restricted tree depth in genetic programming,\" presented at 1st Annu. Conf. Genetic Program., Stanford Univ., Stanford, CA, Jul. 28-31, 1996.\n[8] D. E. Goldberg, D. Deb, and H. Kargupta, \"Rapid, accurate optimization of difficult problems using fast messy genetic algorithms,\" presented at 5th Int. Conf. Genetic Algorithms, San Mateo, CA, 1993.\n[9] G. Harik, \"Linkage learning via probabilistic modeling in the ECGA,\" Algorithms Lab., Dept. General Eng., Urbana, IL, Tech. Rep. 99010, Jan. 1999.\n[10] Y. Hasegawa and H. Iba, \"Estimation of bayesian network for program generation,\" in Proc. 3rd Asian-Pacific Workshop Genetic Programming, Hanoi, Vietnam, 2006, pp. 35-46.\n[11] Y. Hasegawa and H. Iba, \"A Bayesian network approach for program generation,\" IEEE Trans. Evol. Comput., vol. 12, no. 6, pp. 750-764, Dec. 2008.\n[12] J. H. Holland, Adaptation in Natural and Artificial Systems. Ann Arbor, MI: Univ. Michigan Press, 1975.\n[13] J. R. Koza, Genetic Programming: On the Programming of Computers by Means of Natural Selection. Cambridge, MA: MIT Press, 1992.\n[14] K. Kurihara and T. Sato, \"An application of the variational Bayesian approach to probabilistic context-free grammars,\" in Proc. Workshop Beyond Shallow Analyses. Available: http://satowww.cs.titech.ac.jp/en/ publication/\n[15] W. B. Langdon and R. Poli, \"An analysis of the MAX problem in genetic programming,\" in Proc. 2nd Annu. Conf. Genetic Programm. San Mateo, CA: Morgan Kaufmann, 1997, pp. 222-230.\n[16] P. Larrañaga and J. A. Lozano, Estimation of Distribution Algorithms. Norwell, MA: Kluwer, 2002.\n[17] M. Looks, \"Learning computer programs with the Bayesian optimization algorithm,\" M.S. thesis, Dept. Comput. Sci. Eng., Washington Univ. Sever Inst. Technol., St. Louis, MO, 2005.\n[18] M. Looks, \"Scalable estimation-of-distribution program evolution,\" in Proc. 9th Annu. Conf. Genetic Evol. Comput., New York: ACM, pp. 539-546.\n[19] D. J. C. MacKay. (1997). Ensemble Learning for Hidden Markov Models [Online]. Available: http://www.inference.phy.cam.ac.uk/mackay/ abstracts/ensemblePaper.html\n[20] T. Matsuzaki, Y. Miyao, and J. Tsujii, \"Probabilistic CFG with latent annotations,\" in Proc. 43rd Meeting Assoc. Comput. Linguistics. Detroit, MI: Morgan Kaufmann, 2005, pp. 75-82.\n[21] M. Mitchell, S. Forrest, and J. H. Holland, \"The royal road for genetic algorithms: Fitness landscapes and GA performance,\" presented at 1st Eur. Conf. Artificial Life, Toward Prac. Autonomous Syst., Paris, France, 1992.\n[22] P. Nordin, \"A compiling genetic programming system that directly manipulates the machine code,\" in Advances Genetic Programming, Cambridge, MA: MIT Press, 1994, ch. 14, pp. 311-331.\n[23] M. Pelikan and D. E. Goldberg, \"Escaping hierarchical traps with competent genetic algorithms,\" in Proc. Conf. Genetic Evol. Comput., New York: ACM, 2001, pp. 511-518.\n[24] M. Pelikan, D. E. Goldberg, and E. Cantú-Paz, \"BOA: The Bayesian optimization algorithm,\" in Proc. Genetic Evol. Comput Conf., vol. 1. Orlando, FL, pp. 525-532.\n\n[25] R. Poli and N. F. McPhee, \"A linear estimation-of-distribution GP system,\" in Proc. 11th Eur. Conf. Genetic Programmins EuroGP, 2008, pp. 206-217.\n[26] W. F. Punch, \"How effective are multiple populations in genetic programming,\" in Proc. 3rd Annu. Conf. Genetic Programming, Madison, WI: Univ. Wisconsin, Jul. 1998, pp. 308-313.\n[27] A. Ratle and M. Sebag, \"Avoiding the bloat with probabilistic grammarguided genetic programming,\" in Proc. Artificial Evolution 5th Int. Conf., Evolution Artificielle, LNCS vol. 2310. Creusot, France: SpringerVerlag, Oct. 2001, pp. 255-266.\n[28] E. N. Regolin and A. T. R. Pozo, \"Bayesian automatic programming,\" in Proc. 8th Eur. Conf. Genetic Programming, LNCS vol. 3447. Lausanne, Switzerland: Springer-Verlag, Mar.-Apr. 2005, pp. 38-49.\n[29] R. P. Salustowicz and J. Schmidhuber, \"Probabilistic incremental program evolution,\" Evol. Comput., vol. 5, no. 2, pp. 123-141, 1997.\n[30] K. Sastry and D. E. Goldberg, \"Probabilistic model building and competent genetic programming,\" in Genetic Programming Theory Practise, Norwell, MA: Kluwer, 2003, ch. 13, pp. 205-220.\n[31] Y. Shan, R. I. McKay, H. A. Abbass, and D. Essam, \"Program evolution with explicit learning: A new framework for program automatic synthesis,\" in Proc. Congr. Evol. Comput., Canberra, Australia: IEEE Press, Dec. 2003, pp. 1639-1646.\n[32] Y. Shan, R. I. McKay, R. Baxter, H. Abbass, D. Essam, and N. X. Hoai, \"Grammar modelbased program evolution,\" in Proc. IEEE Congr. Evol. Comput., Portland, OR: IEEE Press, Jun. 2004, pp. 478-485.\n[33] Y. Shan, R. I. McKay, D. Essam, and H. A. Abbass, \"A survey of probabilistic model building genetic programming,\" in Scalable Optimization Via Probabilistic Modeling, New York: Springer-Verlag, 2006, ch. 6, pp. $121-160$.\n[34] A. Stolcke, \"Bayesian learning of probabilistic language models,\" Ph.D. dissertation, Univ. California, Berkeley, CA, 1994.\n[35] I. Tanev, \"Implications of incorporating learning probabilistic contextsensitive grammar in genetic programming on evolvability of adaptive locomotion gaits of snakebot,\" in Proc. Workshop GECCO, Seattle, WA, Jun. 2004.\n[36] I. Tanev, \"Incorporating learning probabilistic context-sensitive grammar in genetic programming for efficient evolution and adaptation of Snakebot,\" in Proc. EuroGP, Lausanne, Switzerland: Springer-Verlag, 2005, pp. $155-166$.\n[37] P. A. Whigham, \"Grammatically-based genetic programming,\" in Proc. Workshop Genetic Programming: From Theory to Real-World Applicat., Tahoe City, CA, 1995, pp. 44-41.\n[38] P. A. Whigham and D. O. C. Science, \"Inductive bias and genetic programming,\" presented at 1st Int. Conf. Genetic Algorithms Eng. Syst.: Innovations Applicat., Sheffield, U.K., 1995.\n[39] M. Wineberg and F. Oppacher, \"A representation scheme to perform program induction in a canonical genetic algorithm, in Parallel Problem Solving From Nature III, LNCS vol. 866. Jerusalem, Israel: SpringerVerlag, Oct. 1994, pp. 292-301.\n[40] K. Yanai and H. Iba, \"Estimation of distribution programming based on Bayesian network,\" in Proc. Congr. Evol. Comput., Canberra, Australia: IEEE Press, Dec. 2003, pp. 1618-1625.\n[41] K. Yanai and H. Iba, \"Probabilistic distribution models for EDA-based GP,\" in Proc. Conf. Genetic Evol. Comput., vol. 2. Washington, DC, ACM, Jun. 2005, pp. 1775-1776.\n![img-15.jpeg](img-15.jpeg)\n\nYoshihiko Hasegawa received the B.Sc. degree in physics, the M.Eng. degree in electric engineering, and the Ph.D degree in information science from the University of Tokyo, Tokyo, Japan in 2003, 2005, and 2008, respectively.\nCurrently, he is an Assistant Professor with the Department of Computational Biology, Graduate School of Frontier Sciences, University of Tokyo. His interests include estimation of distribution algorithms, bioinformatics, and information science based on statistical physics.\n![img-16.jpeg](img-16.jpeg)\n\nHitoshi Iba received the degree from the Department of Science in 1985 and the Ph.D. degree from the Department of Engineering in 1990, both from the University of Tokyo, Tokyo, Japan.\n\nSince 1990, he was with the Electro Technical Laboratory, University of Tokyo, before joining the Department of Electronic Engineering in 1998, where he was an Associate Professor from 1998 to 2004. He is currently a Professor with the Graduate School of Engineering. His research interests include evolutionary computation, genetic programming, bioinformatics, foundations of artificial intelligence, financial engineering machine learning, robotics, and vision.\nProf. Iba is an Associate Editor of the IEEE Transactions on Evolutionary Computation and the Journal of Genetic Programming and Evolvable Machines.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "H. A. Abbass, X. Houi, and R. I. Mckay, \"AntTAG: A new method to compose computer programs using colonies of ants,\" in Proc. IEEE Congr. Evol. Comput., Honolulu, HI, 2002, pp. 1654-1659."
+      },
+      {
+        "ref_id": "2",
+        "text": "H. Attias, \"Inferring parameters and structure of latent variable models by variational bayes,\" in Proc. 15th Conf. Uncertainty Artificial Intell., Stockholm, Sweden: Morgan Kaufmann, 1999, pp. 21-30."
+      },
+      {
+        "ref_id": "3",
+        "text": "S. Baluja, \"Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning,\" The Robotics Institute, Carnegie Mellon Univ., Pittsburgh, PA, Tech. Rep. CMU-CS-94-163, 1994."
+      },
+      {
+        "ref_id": "4",
+        "text": "M. J. Beal, \"Variational algorithms for approximate bayesian inference,\" Ph.D. dissertation, Gatsby Comput. Neurosci. Unit, Univ. College London, London, U.K., 2003."
+      },
+      {
+        "ref_id": "5",
+        "text": "P. A. N. Bosman and E. D. de Jong, \"Grammar transformations in an EDA for genetic programming,\" Inst. Inform. Comput. Sci., Utrecht University, Utrecht, The Netherlands, Tech. Rep. UU-CS-2004-047, 2004."
+      },
+      {
+        "ref_id": "6",
+        "text": "A. Dempster, N. Laird, and D. Rubin, \"Maximum likelihood from incomplete data via the EM algorithm,\" J. Royal Statistical Soc., Series B, vol. 39, no. 1, 1977."
+      },
+      {
+        "ref_id": "7",
+        "text": "C. Gathercole and P. Ross, \"An adverse interaction between crossover and restricted tree depth in genetic programming,\" presented at 1st Annu. Conf. Genetic Program., Stanford Univ., Stanford, CA, Jul. 28-31, 1996."
+      },
+      {
+        "ref_id": "8",
+        "text": "D. E. Goldberg, D. Deb, and H. Kargupta, \"Rapid, accurate optimization of difficult problems using fast messy genetic algorithms,\" presented at 5th Int. Conf. Genetic Algorithms, San Mateo, CA, 1993."
+      },
+      {
+        "ref_id": "9",
+        "text": "G. Harik, \"Linkage learning via probabilistic modeling in the ECGA,\" Algorithms Lab., Dept. General Eng., Urbana, IL, Tech. Rep. 99010, Jan. 1999."
+      },
+      {
+        "ref_id": "10",
+        "text": "Y. Hasegawa and H. Iba, \"Estimation of bayesian network for program generation,\" in Proc. 3rd Asian-Pacific Workshop Genetic Programming, Hanoi, Vietnam, 2006, pp. 35-46."
+      },
+      {
+        "ref_id": "11",
+        "text": "Y. Hasegawa and H. Iba, \"A Bayesian network approach for program generation,\" IEEE Trans. Evol. Comput., vol. 12, no. 6, pp. 750-764, Dec. 2008."
+      },
+      {
+        "ref_id": "12",
+        "text": "J. H. Holland, Adaptation in Natural and Artificial Systems. Ann Arbor, MI: Univ. Michigan Press, 1975."
+      },
+      {
+        "ref_id": "13",
+        "text": "J. R. Koza, Genetic Programming: On the Programming of Computers by Means of Natural Selection. Cambridge, MA: MIT Press, 1992."
+      },
+      {
+        "ref_id": "14",
+        "text": "K. Kurihara and T. Sato, \"An application of the variational Bayesian approach to probabilistic context-free grammars,\" in Proc. Workshop Beyond Shallow Analyses. Available: http://satowww.cs.titech.ac.jp/en/ publication/"
+      },
+      {
+        "ref_id": "15",
+        "text": "W. B. Langdon and R. Poli, \"An analysis of the MAX problem in genetic programming,\" in Proc. 2nd Annu. Conf. Genetic Programm. San Mateo, CA: Morgan Kaufmann, 1997, pp. 222-230."
+      },
+      {
+        "ref_id": "16",
+        "text": "P. Larrañaga and J. A. Lozano, Estimation of Distribution Algorithms. Norwell, MA: Kluwer, 2002."
+      },
+      {
+        "ref_id": "17",
+        "text": "M. Looks, \"Learning computer programs with the Bayesian optimization algorithm,\" M.S. thesis, Dept. Comput. Sci. Eng., Washington Univ. Sever Inst. Technol., St. Louis, MO, 2005."
+      },
+      {
+        "ref_id": "18",
+        "text": "M. Looks, \"Scalable estimation-of-distribution program evolution,\" in Proc. 9th Annu. Conf. Genetic Evol. Comput., New York: ACM, pp. 539-546."
+      },
+      {
+        "ref_id": "19",
+        "text": "D. J. C. MacKay. (1997). Ensemble Learning for Hidden Markov Models [Online]. Available: http://www.inference.phy.cam.ac.uk/mackay/ abstracts/ensemblePaper.html"
+      },
+      {
+        "ref_id": "20",
+        "text": "T. Matsuzaki, Y. Miyao, and J. Tsujii, \"Probabilistic CFG with latent annotations,\" in Proc. 43rd Meeting Assoc. Comput. Linguistics. Detroit, MI: Morgan Kaufmann, 2005, pp. 75-82."
+      },
+      {
+        "ref_id": "21",
+        "text": "M. Mitchell, S. Forrest, and J. H. Holland, \"The royal road for genetic algorithms: Fitness landscapes and GA performance,\" presented at 1st Eur. Conf. Artificial Life, Toward Prac. Autonomous Syst., Paris, France, 1992."
+      },
+      {
+        "ref_id": "22",
+        "text": "P. Nordin, \"A compiling genetic programming system that directly manipulates the machine code,\" in Advances Genetic Programming, Cambridge, MA: MIT Press, 1994, ch. 14, pp. 311-331."
+      },
+      {
+        "ref_id": "23",
+        "text": "M. Pelikan and D. E. Goldberg, \"Escaping hierarchical traps with competent genetic algorithms,\" in Proc. Conf. Genetic Evol. Comput., New York: ACM, 2001, pp. 511-518."
+      },
+      {
+        "ref_id": "24",
+        "text": "M. Pelikan, D. E. Goldberg, and E. Cantú-Paz, \"BOA: The Bayesian optimization algorithm,\" in Proc. Genetic Evol. Comput Conf., vol. 1. Orlando, FL, pp. 525-532."
+      },
+      {
+        "ref_id": "25",
+        "text": "R. Poli and N. F. McPhee, \"A linear estimation-of-distribution GP system,\" in Proc. 11th Eur. Conf. Genetic Programmins EuroGP, 2008, pp. 206-217."
+      },
+      {
+        "ref_id": "26",
+        "text": "W. F. Punch, \"How effective are multiple populations in genetic programming,\" in Proc. 3rd Annu. Conf. Genetic Programming, Madison, WI: Univ. Wisconsin, Jul. 1998, pp. 308-313."
+      },
+      {
+        "ref_id": "27",
+        "text": "A. Ratle and M. Sebag, \"Avoiding the bloat with probabilistic grammarguided genetic programming,\" in Proc. Artificial Evolution 5th Int. Conf., Evolution Artificielle, LNCS vol. 2310. Creusot, France: SpringerVerlag, Oct. 2001, pp. 255-266."
+      },
+      {
+        "ref_id": "28",
+        "text": "E. N. Regolin and A. T. R. Pozo, \"Bayesian automatic programming,\" in Proc. 8th Eur. Conf. Genetic Programming, LNCS vol. 3447. Lausanne, Switzerland: Springer-Verlag, Mar.-Apr. 2005, pp. 38-49."
+      },
+      {
+        "ref_id": "29",
+        "text": "R. P. Salustowicz and J. Schmidhuber, \"Probabilistic incremental program evolution,\" Evol. Comput., vol. 5, no. 2, pp. 123-141, 1997."
+      },
+      {
+        "ref_id": "30",
+        "text": "K. Sastry and D. E. Goldberg, \"Probabilistic model building and competent genetic programming,\" in Genetic Programming Theory Practise, Norwell, MA: Kluwer, 2003, ch. 13, pp. 205-220."
+      },
+      {
+        "ref_id": "31",
+        "text": "Y. Shan, R. I. McKay, H. A. Abbass, and D. Essam, \"Program evolution with explicit learning: A new framework for program automatic synthesis,\" in Proc. Congr. Evol. Comput., Canberra, Australia: IEEE Press, Dec. 2003, pp. 1639-1646."
+      },
+      {
+        "ref_id": "32",
+        "text": "Y. Shan, R. I. McKay, R. Baxter, H. Abbass, D. Essam, and N. X. Hoai, \"Grammar modelbased program evolution,\" in Proc. IEEE Congr. Evol. Comput., Portland, OR: IEEE Press, Jun. 2004, pp. 478-485."
+      },
+      {
+        "ref_id": "33",
+        "text": "Y. Shan, R. I. McKay, D. Essam, and H. A. Abbass, \"A survey of probabilistic model building genetic programming,\" in Scalable Optimization Via Probabilistic Modeling, New York: Springer-Verlag, 2006, ch. 6, pp. $121-160$."
+      },
+      {
+        "ref_id": "34",
+        "text": "A. Stolcke, \"Bayesian learning of probabilistic language models,\" Ph.D. dissertation, Univ. California, Berkeley, CA, 1994."
+      },
+      {
+        "ref_id": "35",
+        "text": "I. Tanev, \"Implications of incorporating learning probabilistic contextsensitive grammar in genetic programming on evolvability of adaptive locomotion gaits of snakebot,\" in Proc. Workshop GECCO, Seattle, WA, Jun. 2004."
+      },
+      {
+        "ref_id": "36",
+        "text": "I. Tanev, \"Incorporating learning probabilistic context-sensitive grammar in genetic programming for efficient evolution and adaptation of Snakebot,\" in Proc. EuroGP, Lausanne, Switzerland: Springer-Verlag, 2005, pp. $155-166$."
+      },
+      {
+        "ref_id": "37",
+        "text": "P. A. Whigham, \"Grammatically-based genetic programming,\" in Proc. Workshop Genetic Programming: From Theory to Real-World Applicat., Tahoe City, CA, 1995, pp. 44-41."
+      },
+      {
+        "ref_id": "38",
+        "text": "P. A. Whigham and D. O. C. Science, \"Inductive bias and genetic programming,\" presented at 1st Int. Conf. Genetic Algorithms Eng. Syst.: Innovations Applicat., Sheffield, U.K., 1995."
+      },
+      {
+        "ref_id": "39",
+        "text": "M. Wineberg and F. Oppacher, \"A representation scheme to perform program induction in a canonical genetic algorithm, in Parallel Problem Solving From Nature III, LNCS vol. 866. Jerusalem, Israel: SpringerVerlag, Oct. 1994, pp. 292-301."
+      },
+      {
+        "ref_id": "40",
+        "text": "K. Yanai and H. Iba, \"Estimation of distribution programming based on Bayesian network,\" in Proc. Congr. Evol. Comput., Canberra, Australia: IEEE Press, Dec. 2003, pp. 1618-1625."
+      },
+      {
+        "ref_id": "41",
+        "text": "K. Yanai and H. Iba, \"Probabilistic distribution models for EDA-based GP,\" in Proc. Conf. Genetic Evol. Comput., vol. 2. Washington, DC, ACM, Jun. 2005, pp. 1775-1776."
+      }
+    ],
+    "reference_count": 41,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "COMPARISON OF THE FEATURES OF TWO PROPOSED METHODS: PAGE-EM AND PAGE-VB",
+      "headers": [
+        "",
+        "Estimation <br> method",
+        "Estimation <br> target",
+        "Annotation <br> size selection"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          "EM algorithm",
+          "Parameter",
+          "Impossible"
+        ],
+        [
+          "PAGE-VB",
+          "VB",
+          "Distribution",
+          "Possible"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "Main Parameters for PAGE-EM and PAGE-VB. DMAX WEAK and DMAX StRong DENTE DMAX Problem with Weak DeCEPtiVeness AND DMAX Problem with Strong Deceptiveness, RESPECTively",
+      "headers": [
+        "PAGE-EM",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Variable",
+          "Parameter",
+          "Value"
+        ],
+        [
+          "$M$",
+          "Population size",
+          10002500
+        ],
+        [
+          "$h$",
+          "Annotation size",
+          "$\\begin{gathered} 2,4,8,16 \\text { (Royal Tree at level } d) \\\\ 16 \\text { (Royal Tree at level } e, \\text { DMAX weak) } \\\\ 8 \\text { (DMAX strong) } \\end{gathered}$"
+        ],
+        [
+          "$D_{P}$",
+          "Maximum depth",
+          "$\\begin{gathered} 5 \\text { (Royal Tree at level } d, \\text { DMAX weak) } \\\\ 6 \\text { (Royal Tree at level } e) \\\\ 4 \\text { (DMAX strong) } \\end{gathered}$"
+        ],
+        [
+          "$P_{e}$",
+          "Selection rate",
+          "0.1 (Royal Tree at level $d$, DMAX weak, DMAX strong) 0.05 (Royal Tree at level $e$ )"
+        ],
+        [
+          "$P_{e}$",
+          "Elite rate",
+          "0.1 (Royal Tree at level $d$, DMAX weak, DMAX strong) 0.05 (Royal Tree at level $e$ )"
+        ],
+        [
+          "PAGE-VB",
+          "",
+          ""
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:"
+        ],
+        [
+          "Variable",
+          "Parameter",
+          "Value"
+        ],
+        [
+          "$M$",
+          "Population size",
+          10004000
+        ],
+        [
+          "$\\mathcal{H}_{0}$",
+          "Annotation to explore",
+          "$[1,2,4,8,16]$"
+        ],
+        [
+          "$h_{\\text {range }}$",
+          "Annotation exploration range",
+          2
+        ],
+        [
+          "$D_{P}$",
+          "Maximum depth",
+          564
+        ],
+        [
+          "$P_{e}$",
+          "Selection rate",
+          "0.1 (Royal Tree level $d$, DMAX weak, DMAX strong) 0.05 (Royal Tree level $e$ )"
+        ],
+        [
+          "$P_{e}$",
+          "Elite rate",
+          "0.1 (Royal Tree level $d$, DMAX weak, DMAX strong) 0.05 (Royal Tree level $e$ )"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "Probabilities Obtained for the Royal Tree Problem (LeVEl $d$ ) BY PAGE WITH $h=8$ AND $h=16$",
+      "headers": [
+        "Production rule (PAGE-EM, $h=8$ )",
+        "$\\pi, \\beta$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{S}[3]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow b \\mathcal{S}[6] \\mathcal{S}[6]$",
+          0.018
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow c \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6]$",
+          0.972
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow a \\mathcal{S}[1]$",
+          0.09
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow a \\mathcal{S}[4]$",
+          0.538
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow a \\mathcal{S}[7]$",
+          0.075
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow b \\mathcal{S}[1] \\mathcal{S}[1]$",
+          0.014
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow b \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.022
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow b \\mathcal{S}[7] \\mathcal{S}[7]$",
+          0.025
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow c \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.059
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow c \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7]$",
+          0.032
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow d \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.068
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow s$",
+          0.061
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow d \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow a \\mathcal{S}[1]$",
+          0.161
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow a \\mathcal{S}[4]$",
+          0.468
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow a \\mathcal{S}[7]$",
+          0.356
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow a \\mathcal{S}[2]$",
+          0.012
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow b \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.467
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow b \\mathcal{S}[5] \\mathcal{S}[5]$",
+          0.399
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow c \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.03
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow d \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.055
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow s$",
+          0.029
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "Production rule (PAGE-EM, $h=16$ )",
+          "$\\pi, \\beta$"
+        ],
+        [
+          ":--",
+          ":--"
+        ],
+        [
+          "$\\mathcal{S}[5]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow c \\mathcal{S}[13] \\mathcal{S}[13] \\mathcal{S}[13]$",
+          0.063
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow c \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14]$",
+          0.131
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow c \\mathcal{S}[9] \\mathcal{S}[9] \\mathcal{S}[9]$",
+          0.093
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow d \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14]$",
+          0.054
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow d \\mathcal{S}[9] \\mathcal{S}[9] \\mathcal{S}[9] \\mathcal{S}[9]$",
+          0.06
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow s$",
+          0.329
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow a \\mathcal{S}[1]$",
+          0.154
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow a \\mathcal{S}[14]$",
+          0.257
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow a \\mathcal{S}[2]$",
+          0.189
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow a \\mathcal{S}[9]$",
+          0.238
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow d \\mathcal{S}[10] \\mathcal{S}[10] \\mathcal{S}[10] \\mathcal{S}[10]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow a \\mathcal{S}[14]$",
+          0.144
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow a \\mathcal{S}[9]$",
+          0.092
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow b \\mathcal{S}[1] \\mathcal{S}[1]$",
+          0.07
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow b \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.079
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow d \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14] \\mathcal{S}[14]$",
+          0.167
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow a \\mathcal{S}[14]$",
+          0.152
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow a \\mathcal{S}[9]$",
+          0.184
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow c \\mathcal{S}[9] \\mathcal{S}[9] \\mathcal{S}[9]$",
+          0.071
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow s$",
+          0.319
+        ],
+        [
+          "$\\mathcal{S}[8] \\rightarrow b \\mathcal{S}[11] \\mathcal{S}[11]$",
+          0.188
+        ],
+        [
+          "$\\mathcal{S}[8] \\rightarrow b \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.397
+        ],
+        [
+          "$\\mathcal{S}[8] \\rightarrow b \\mathcal{S}[6] \\mathcal{S}[6]$",
+          0.079
+        ],
+        [
+          "$\\mathcal{S}[8] \\rightarrow c \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3]$",
+          0.053
+        ],
+        [
+          "$\\mathcal{S}[9] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[10] \\rightarrow c \\mathcal{S}[15] \\mathcal{S}[15] \\mathcal{S}[15]$",
+          0.9
+        ],
+        [
+          "$\\mathcal{S}[10] \\rightarrow c \\mathcal{S}[8] \\mathcal{S}[8] \\mathcal{S}[8]$",
+          0.093
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[1]$",
+          0.167
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[12]$",
+          0.08
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[13]$",
+          0.181
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[14]$",
+          0.209
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[2]$",
+          0.143
+        ],
+        [
+          "$\\mathcal{S}[11] \\rightarrow a \\mathcal{S}[9]$",
+          0.208
+        ],
+        [
+          "$\\mathcal{S}[12] \\rightarrow s$",
+          0.993
+        ],
+        [
+          "$\\mathcal{S}[13] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[14] \\rightarrow s$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[15] \\rightarrow b \\mathcal{S}[11] \\mathcal{S}[11]$",
+          0.648
+        ],
+        [
+          "$\\mathcal{S}[15] \\rightarrow b \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.239
+        ]
+      ],
+      "row_count": 70,
+      "column_count": 2
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Number of Average Fitness Evaluations Required to Obtain the Optimum in Royal Tree Problem at Level $e$ (the Top $90 \\%$ of Results Were Used). Since the Results of GMPE Were Inferred from a Scanned Image, They Were Subject to Errors",
+      "headers": [
+        "Algorithm",
+        "Number of fitness <br> evaluations",
+        "Sample standard <br> deviation"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          61809,
+          15341
+        ],
+        [
+          "PAGE-VB",
+          263720,
+          63528
+        ],
+        [
+          "GMPE",
+          90525,
+          79774
+        ],
+        [
+          "PCFG-GP",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "V",
+      "table_title": "Results of a $t$-Test for the Royal Tree Problem at Level $e$. The Value in the Table Is a $p$-Value",
+      "headers": [
+        "$\\searrow$",
+        "PAGE-EM",
+        "PAGE-VB"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          "$\\searrow$",
+          "$5.90 \\times 10^{-25}$"
+        ],
+        [
+          "PAGE-VB",
+          "-",
+          "$\\searrow$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "VI",
+      "table_title": "NUMBER OF AVERAGE Fitness Evaluations Required to Obtain the Optimum in the DMAX Problem with Weak Deceptiveness",
+      "headers": [
+        "Algorithm",
+        "Number of fitness <br> evaluations",
+        "Sample standard <br> deviation"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          14922,
+          1287
+        ],
+        [
+          "PAGE-VB",
+          25542,
+          5229
+        ],
+        [
+          "PCFG-GP",
+          "-",
+          "-"
+        ],
+        [
+          "GP",
+          82332,
+          20874
+        ],
+        [
+          "POLE",
+          72516,
+          4381
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "VII",
+      "table_title": "REULTS OF A $t$-TEST FOR DMAX Problem with WEAK Deceptiveness. The Value in the Table Is a $p$-Value",
+      "headers": [
+        "$\\searrow$",
+        "PAGE-EM",
+        "PAGE-VB",
+        "GP",
+        "POLE"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          "$\\searrow$",
+          "$1.68 \\times 10^{-19}$",
+          "$1.16 \\times 10^{-27}$",
+          "$5.28 \\times 10^{-63}$"
+        ],
+        [
+          "PAGE-VB",
+          "-",
+          "$\\searrow$",
+          "$2.79 \\times 10^{-25}$",
+          "$1.27 \\times 10^{-68}$"
+        ],
+        [
+          "GP",
+          "-",
+          "-",
+          "$\\searrow$",
+          "$2.17 \\times 10^{-3}$"
+        ],
+        [
+          "POLE",
+          "-",
+          "-",
+          "-",
+          "$\\searrow$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "NUMBER OF AVERAGE Fitness Evaluations Required to Obtain the Optimum for $P_{s}=0.1,0.2,0.5$ in the DMAX Problem with WEAK DECEPTIVENESS",
+      "headers": [
+        "Algorithm $\\left(P_{s}\\right)$",
+        "Number of fitness <br> evaluations",
+        "Sample standard <br> deviation"
+      ],
+      "rows": [
+        [
+          "PAGE-EM $(0.1)$",
+          14922,
+          1287
+        ],
+        [
+          "PAGE-EM $(0.2)$",
+          21024,
+          2352
+        ],
+        [
+          "PAGE-EM $(0.5)$",
+          56610,
+          4804
+        ],
+        [
+          "PAGE-VB $(0.1)$",
+          25542,
+          5229
+        ],
+        [
+          "PAGE-VB $(0.2)$",
+          34902,
+          9364
+        ],
+        [
+          "PAGE-VB $(0.5)$",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "IX",
+      "table_title": "NUMBER OF AVERAGE Fitness Evaluations Required to Obtain the Optimum with a Probability of $90 \\%$ in DMAX Problem with Strong Deceptiveness",
+      "headers": [
+        "",
+        "Number of fitness <br> evaluations",
+        "Sample standard <br> deviation"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          16043,
+          1189
+        ],
+        [
+          "PAGE-VB",
+          18293,
+          1688
+        ],
+        [
+          "PCFG-GP",
+          "-",
+          "-"
+        ],
+        [
+          "POLE",
+          119572,
+          4295
+        ],
+        [
+          "GP",
+          1477376,
+          293890
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "X",
+      "table_title": "$t$-TEST FOR THE DMAX Problem WITH StRONG Deceptiveness. THE Value in the Table Is a $p$-Value",
+      "headers": [
+        "$\\backslash$",
+        "PAGE-EM",
+        "PAGE-VB",
+        "GP",
+        "POLE"
+      ],
+      "rows": [
+        [
+          "PAGE-EM",
+          "$\\backslash$",
+          "$2.82 \\times 10^{-9}$",
+          "$4.62 \\times 10^{-29}$",
+          "$1.10 \\times 10^{-61}$"
+        ],
+        [
+          "PAGE-VB",
+          "-",
+          "$\\backslash$",
+          "$4.89 \\times 10^{-29}$",
+          "$6.58 \\times 10^{-67}$"
+        ],
+        [
+          "GP",
+          "-",
+          "-",
+          "$\\backslash$",
+          "$7.13 \\times 10^{-26}$"
+        ],
+        [
+          "POLE",
+          "-",
+          "-",
+          "-",
+          "$\\backslash$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "XI",
+      "table_title": "Estimated Probabilities for the DMAX Problem with Strong Deceptiveness with $h=8$ Found by PAGE-EM. Rules with Probabilities Smaller than 0.01 Are Omitted Due to Limitations of Space",
+      "headers": [
+        "Production rule (PAGE-EM, $h=8$ )",
+        "$\\pi, \\beta$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{S}[4]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow \\lambda$",
+          0.983
+        ],
+        [
+          "$\\mathcal{S}[0] \\rightarrow 0.95$",
+          0.017
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow \\lambda$",
+          0.941
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow 0.95$",
+          0.059
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow \\times_{5} \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow \\lambda$",
+          0.989
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow 0.95$",
+          0.011
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow \\times_{5} \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow \\lambda$",
+          0.995
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[0]$",
+          0.399
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[1] \\mathcal{S}[1] \\mathcal{S}[1] \\mathcal{S}[1] \\mathcal{S}[1]$",
+          0.01
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3]$",
+          0.234
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[5] \\mathcal{S}[5] \\mathcal{S}[5] \\mathcal{S}[5] \\mathcal{S}[5]$",
+          0.096
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow+_{5} \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7]$",
+          0.261
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow \\lambda$",
+          0.025
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow 0.95$",
+          0.975
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 2
+    }
+  ]
+}

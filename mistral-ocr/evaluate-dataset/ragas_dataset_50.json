@@ -1,0 +1,859 @@
+{
+  "metadata": {
+    "generation_date": "2025-05-31 13:52:43",
+    "total_papers_processed": 0,
+    "total_questions": 0,
+    "statistics": {
+      "total_papers": 0,
+      "successful": 0,
+      "failed_content": 0,
+      "failed_generation": 0,
+      "total_questions": 0
+    },
+    "last_update": "2025-05-31 13:52:43"
+  },
+  "questions": [
+    {
+      "question": "How does the factorization in UMDA (Univariate Marginal Distribution Algorithm) handle variable dependencies compared to MIMIC (Mutual Information Maximization for Input Clustering)?",
+      "contexts": [],
+      "ground_truth": "UMDA assumes all variables are independent, factorizing the joint probability distribution into a product of univariate distributions, ignoring any interdependencies. MIMIC, on the other hand, considers pairwise dependencies, attempting to capture the simplest relationships by using one univariate marginal probability and n-1 pairwise conditional probability functions. This requires an additional step of constructing a structure that best represents the probabilistic model, unlike UMDA's purely parametric learning.",
+      "paper_id": "Inexact graph matching by means of estimation of distribution algorithms",
+      "paper_title": "Inexact graph matching by means of estimation of distribution algorithms",
+      "paper_year": "2002",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2002/Inexact graph matching by means of estimation of distribution algorithms.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "probabilistic models",
+        "UMDA",
+        "MIMIC"
+      ],
+      "generated_at": "2025-05-31 13:52:45"
+    },
+    {
+      "question": "How does the choice of probability distribution family affect Estimation of Distribution Algorithm (EDA) performance?",
+      "contexts": [],
+      "ground_truth": "The choice of probability distribution significantly impacts EDA performance by influencing its ability to model the problem's fitness landscape. Gaussian distributions are commonly used for continuous domains, capturing variable relationships through mean and covariance. However, for multimodal problems, a unimodal Gaussian might lead to premature convergence. Alternative distributions or mixture models can better represent complex landscapes, enhancing exploration but potentially increasing computational complexity.",
+      "paper_id": "A novel ensemble estimation of distribution algorithm with distribution modification strategies",
+      "paper_title": "A novel ensemble estimation of distribution algorithm with distribution modification strategies",
+      "paper_year": "2023",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2023/A novel ensemble estimation of distribution algorithm with distribution modification strategies.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of distribution algorithm"
+      ],
+      "generated_at": "2025-05-31 13:52:46"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) estimate the distribution of solutions, and how does this differ from traditional genetic algorithms that use crossover and mutation operators?",
+      "contexts": [],
+      "ground_truth": "EDAs estimate the probability distribution of promising solutions in the search space, typically by building a probabilistic model from selected individuals. This model captures the statistical relationships between variables, guiding the generation of new candidate solutions through sampling. Unlike traditional genetic algorithms, EDAs replace crossover and mutation with probabilistic sampling, directly generating offspring based on the learned distribution rather than combining or modifying existing solutions. This approach allows EDAs to explicitly model dependencies between variables and potentially offer more robust exploration of the search space compared to the fixed operators in genetic algorithms. In this paper, the distribution area of selected chromosomes is estimated as the obstacle-free area in the configuration space.",
+      "paper_id": "Applying an Extension of Estimation of Distribution Algorithm (EDA) for Mobile Robots to Learn Motion Patterns from Demonstration",
+      "paper_title": "Applying an Extension of Estimation of Distribution Algorithm (EDA) for Mobile Robots to Learn Motion Patterns from Demonstration",
+      "paper_year": "2015",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2015/Applying an Extension of Estimation of Distribution Algorithm (EDA) for Mobile Robots to Learn Motion Patterns from Demonstration.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of Distribution Algorithms",
+        "Genetic Algorithms",
+        "Probabilistic Models"
+      ],
+      "generated_at": "2025-05-31 13:52:48"
+    },
+    {
+      "question": "In the context of evolutionary algorithms, what is the general purpose and advantage of employing a fuzzy logic-based approach, particularly in handling uncertainties within the optimization process?",
+      "contexts": [],
+      "ground_truth": "Fuzzy logic in evolutionary algorithms is used to handle uncertainties and vagueness in problem parameters or objective functions. It allows for representing imprecise information using fuzzy sets and membership functions, enabling the algorithm to make decisions based on degrees of truth rather than binary logic. This approach enhances the robustness of the algorithm by accommodating noisy or incomplete data, leading to more flexible and adaptable solutions in uncertain environments. The advantage lies in its ability to model real-world complexities more accurately, where precise numerical values are often unavailable or unreliable, thereby improving the algorithm's performance and applicability.",
+      "paper_id": "An evolutionary fuzzy scheduler for multi-objective resource allocation in fog computing",
+      "paper_title": "An evolutionary fuzzy scheduler for multi-objective resource allocation in fog computing",
+      "paper_year": "2021",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2021/An evolutionary fuzzy scheduler for multi-objective resource allocation in fog computing.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "fuzzy logic",
+        "evolutionary algorithms",
+        "uncertainty"
+      ],
+      "generated_at": "2025-05-31 13:52:50"
+    },
+    {
+      "question": "How can domain knowledge, such as sort orders of items based on their profit density, be incorporated into the initialization of qubit individuals in Quantum-Inspired Evolutionary Algorithms (QIEAs) to improve their performance on combinatorial optimization problems like the Quadratic Knapsack Problem (QKP)?",
+      "contexts": [],
+      "ground_truth": "Domain knowledge, like item sort orders based on profit density, can be used to initialize qubit individuals in QIEAs by assigning probabilities reflecting item importance; for example, items with high profit density are initialized with probabilities closer to 1, indicating a higher likelihood of inclusion in the knapsack. This directs the initial search towards promising regions, improving convergence speed. This approach helps QIEA exploit favorable areas of the solution space represented by initialized qubit individuals. Multiple orderings can be used in a round-robin manner to initialize qubit individuals, and this maintains diversity in the solutions.",
+      "paper_id": "Solving the 0\u20131 Quadratic Knapsack Problem with a competitive Quantum Inspired Evolutionary Algorithm",
+      "paper_title": "Solving the 0-1 Quadratic Knapsack Problem with a competitive Quantum Inspired Evolutionary Algorithm",
+      "paper_year": "2015",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2015/Solving the 0\u20131 Quadratic Knapsack Problem with a competitive Quantum Inspired Evolutionary Algorithm.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Quantum Inspired Evolutionary Algorithm",
+        "Quadratic Knapsack Problem",
+        "Domain Knowledge"
+      ],
+      "generated_at": "2025-05-31 13:52:52"
+    },
+    {
+      "question": "How does the chaotic mutation operation in the improved Estimation of Distribution Algorithm (IEDA) maintain population diversity, and what are the key differences compared to mutation strategies in standard Genetic Algorithms (GAs)?",
+      "contexts": [],
+      "ground_truth": "The chaotic mutation in IEDA maintains population diversity by introducing ergodicity, randomness, and initial sensitivity from chaotic sequences. Unlike standard GAs that often use fixed or adaptive mutation rates, IEDA employs a chaotic sequence to determine mutation radius, allowing for more exploration. Specifically, IEDA uses a logistic map to generate chaotic numbers, which are then scaled to define the mutation range for each variable. This approach helps to avoid premature convergence by continuously perturbing the population in a non-linear fashion, unlike GAs where mutation might become too localized or ineffective over time. The mutation radius is calculated based on the fitness value of the individual and the range of values observed during the optimization process.",
+      "paper_id": "Software reliability prediction model based on support vector regression with improved estimation of distribution algorithms",
+      "paper_title": "Software reliability prediction model based on support vector regression with improved estimation of distribution algorithms",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/Software reliability prediction model based on support vector regression with improved estimation of distribution algorithms.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "genetic algorithms",
+        "mutation",
+        "population diversity",
+        "chaotic systems"
+      ],
+      "generated_at": "2025-05-31 13:52:54"
+    },
+    {
+      "question": "How does the Actor-Critic method enhance the exploration-exploitation balance in PMBGNP-AC compared to traditional continuous EDAs like PBILc?",
+      "contexts": [],
+      "ground_truth": "The Actor-Critic (AC) method in PMBGNP-AC enhances the exploration-exploitation balance by using temporal difference (TD) error to evaluate actions, allowing it to model multivariate interactions implicitly, unlike PBILc which models univariate interactions explicitly. The TD error guides the adjustment of the Gaussian distribution's parameters (mean and standard deviation), strengthening or weakening tendencies to select certain continuous values based on future state-values. This incorporation of future rewards allows PMBGNP-AC to explore more promising regions of the search space while still exploiting current best solutions, leading to potentially better performance in complex environments. This differs from PBILc, where the update is solely based on the current best individuals, potentially limiting exploration.",
+      "paper_id": "A continuous estimation of distribution algorithm by evolving graph structures using reinforcement learning",
+      "paper_title": "A Continuous Estimation of Distribution Algorithm by Evolving Graph Structures Using Reinforcement Learning",
+      "paper_year": "2012",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2012/A continuous estimation of distribution algorithm by evolving graph structures using reinforcement learning.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "reinforcement learning",
+        "estimation of distribution algorithms",
+        "actor-critic methods"
+      ],
+      "generated_at": "2025-05-31 13:52:56"
+    },
+    {
+      "question": "How does the restricted Boltzmann machine model the probability distribution in the context of multi-objective optimization, and what advantages does this approach offer compared to statistical methods?",
+      "contexts": [],
+      "ground_truth": "The restricted Boltzmann machine (RBM) models the probability distribution through unsupervised learning, capturing statistical information in the network's weights and biases, unlike many EDAs relying on statistical methods. The probability distribution of the population is proportional to the energy function of the network, offering flexibility in modeling complex distributions. This learning characteristic allows MORBM to potentially model complex relationships between variables, which may be difficult to capture using traditional statistical methods, leading to better performance in certain optimization problems. Specifically, the paper claims this approach allows MORBM to obtain better results compared to NSGAII and MOUMDA.",
+      "paper_id": "Restricted Boltzmann machine based algorithm for multi-objective optimization",
+      "paper_title": "Restricted Boltzmann Machine Based Algorithm for Multi-objective Optimization",
+      "paper_year": "2010",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2010/Restricted Boltzmann machine based algorithm for multi-objective optimization.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "restricted Boltzmann machine",
+        "multi-objective optimization",
+        "estimation of distribution algorithms",
+        "probabilistic model"
+      ],
+      "generated_at": "2025-05-31 13:52:58"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) balance intensification and diversification during the search process, and what mechanisms are typically employed to achieve this balance?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) balance intensification and diversification by using a probability model built from high-fitness solutions to guide the generation of new solutions, promoting exploitation of promising regions. Diversification is achieved through mechanisms like maintaining an elite set of well-diversified solutions and updating the probability model periodically to explore new areas of the search space. Hybrid approaches, such as the EDA-TS algorithm, alternate between EDA for diversification and local search (like Tabu Search) for intensification.  The frequency and criteria for updating the elite set and probability model are crucial parameters that affect this balance.",
+      "paper_id": "A Hybrid Metaheuristic of Integrating Estimation of Distribution Algorithm with Tabu Search for the Max-Mean Dispersion Problem",
+      "paper_title": "Research Article",
+      "paper_year": "2019",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2019/A Hybrid Metaheuristic of Integrating Estimation of Distribution Algorithm with Tabu Search for the Max-Mean Dispersion Problem.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "intensification",
+        "diversification"
+      ],
+      "generated_at": "2025-05-31 13:53:00"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) leverage probabilistic models to guide the search process in optimization problems, contrasting this approach with traditional crossover and mutation operators used in Genetic Algorithms?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) use probabilistic models to learn the structure of promising solutions, guiding the search by sampling from these models, unlike Genetic Algorithms (GAs) that rely on crossover and mutation.  EDAs build probabilistic models, such as matrix-cube-based models, to capture dependencies between variables, while GAs use crossover and mutation operators to generate new solutions. This learning mechanism allows EDAs to exploit the valuable information of superior solutions, avoiding the destruction of building blocks, whereas GAs randomly modify solutions.  For example, in the paper, the MCEDA builds a three-dimensional probabilistic model to learn job order relations, guiding the search process towards promising regions in solution space. This approach aims to avoid the disruptions and randomness associated with crossover and mutation in GAs.",
+      "paper_id": "A matrix cube-based estimation of distribution algorithm for the energy-efficient distributed assembly permutation flow-shop scheduling problem",
+      "paper_title": "A matrix cube-based estimation of distribution algorithm for the energy-efficient distributed assembly permutation flow-shop scheduling problem",
+      "paper_year": "2022",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2022/A matrix cube-based estimation of distribution algorithm for the energy-efficient distributed assembly permutation flow-shop scheduling problem.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithm"
+      ],
+      "generated_at": "2025-05-31 13:53:02"
+    },
+    {
+      "question": "What are the key differences between univariate, bivariate, and multivariate Estimation of Distribution Algorithms (EDAs) in terms of their probabilistic models and ability to capture variable dependencies?",
+      "contexts": [],
+      "ground_truth": "Univariate EDAs, like PBIL and UMDA, assume variable independence, simplifying the model but limiting their ability to capture interactions. Bivariate EDAs, such as MIMIC and BMDA, represent low-order dependencies using faster learning algorithms and are suited for problems where interactions play a role. Multivariate EDAs, like FDA and BOA, factorize joint probability distributions using higher-order statistics, requiring more complex learning but capturing more intricate relationships among variables. The choice depends on the trade-off between model complexity, computational cost, and the nature of variable interactions in the optimization problem.",
+      "paper_id": "A review of estimation of distribution algorithms in bioinformatics",
+      "paper_title": "A review of estimation of distribution algorithms in bioinformatics",
+      "paper_year": "2008",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2008/A review of estimation of distribution algorithms in bioinformatics.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "probabilistic models",
+        "variable dependencies"
+      ],
+      "generated_at": "2025-05-31 13:53:04"
+    },
+    {
+      "question": "How can Bayesian probability theory be applied to solve combinatorial optimization problems like multiple line outage detection in power grids?",
+      "contexts": [],
+      "ground_truth": "Bayesian probability theory offers a framework for updating beliefs about the state of a system based on observed data. In the context of multiple line outage detection (MLOD), it allows for the formulation of a probabilistic model that estimates the likelihood of different line outage combinations given measurements from sensors like PMUs. By iteratively refining this probability distribution, algorithms like Estimation of Distribution Algorithm (EDA) can efficiently explore the vast search space of possible outage scenarios, avoiding the need for exhaustive enumeration. This approach leverages the posterior probability of line outages given the observed data to guide the search towards the most probable solutions.",
+      "paper_id": "Multiple Power Line Outage Detection in Smart Grids Probabilistic Bayesian Approach",
+      "paper_title": "Multiple Power Line Outage Detection in Smart Grids: Probabilistic Bayesian Approach",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/Multiple Power Line Outage Detection in Smart Grids Probabilistic Bayesian Approach.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Bayesian probability",
+        "combinatorial optimization",
+        "power grids"
+      ],
+      "generated_at": "2025-05-31 13:53:05"
+    },
+    {
+      "question": "How can memetic algorithms leverage the strengths of different optimization algorithms to improve overall performance in multiobjective optimization problems?",
+      "contexts": [],
+      "ground_truth": "Memetic algorithms combine global search strategies, like genetic algorithms or differential evolution, with local search methods to exploit promising regions in the search space. By integrating diverse optimizers, they aim to balance exploration and exploitation, adapting to different fitness landscape characteristics. For instance, a genetic algorithm might provide broad exploration, while a gradient-based method refines solutions locally. This synergy allows the algorithm to escape local optima and converge more effectively towards the Pareto front, sharing beneficial information or \"memes\" among the population.",
+      "paper_id": "Adaptive Memetic Computing for Evolutionary Multiobjective Optimization",
+      "paper_title": "Adaptive Memetic Computing for Evolutionary Multiobjective Optimization",
+      "paper_year": "2015",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2015/Adaptive Memetic Computing for Evolutionary Multiobjective Optimization.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "memetic computing",
+        "multiobjective optimization"
+      ],
+      "generated_at": "2025-05-31 13:53:07"
+    },
+    {
+      "question": "How do you handle memory constraints when storing probability models in high-dimensional EDAs?",
+      "contexts": [],
+      "ground_truth": "In high-dimensional Estimation of Distribution Algorithms (EDAs), memory constraints for storing probability models are addressed through various techniques. One common approach involves using simplified probabilistic models, such as those assuming independence between variables, which drastically reduces the storage requirements but may sacrifice accuracy. Another method is to employ dimensionality reduction techniques prior to model building, focusing on the most relevant features. Additionally, approximation techniques like using compact data structures or sampling methods to represent the probability distribution can be used to alleviate memory issues while retaining essential information for the optimization process.",
+      "paper_id": "Global Optimal Selection of Web Composite Services Based on UMDA",
+      "paper_title": "Global Optimal Selection of Web Composite Services Based on UMDA",
+      "paper_year": "2012",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2012/Global Optimal Selection of Web Composite Services Based on UMDA.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "scalability",
+        "high-dimensional problems"
+      ],
+      "generated_at": "2025-05-31 13:53:09"
+    },
+    {
+      "question": "What role does the sampling variance play in the convergence analysis of compact Genetic Algorithms?",
+      "contexts": [],
+      "ground_truth": "The sampling variance in cGAs reflects the diversity of solutions being explored. A higher sampling variance indicates a broader search, which can be crucial for escaping local optima and exploring multimodal landscapes. However, excessively high variance may slow down convergence. Balancing the sampling variance is therefore vital for efficient optimization, influencing the algorithm's ability to adapt to the fitness landscape and converge to the global optimum.",
+      "paper_id": "The Compact Genetic Algorithm Struggles on Cliff Functions",
+      "paper_title": "The Compact Genetic Algorithm Struggles on Cliff Functions",
+      "paper_year": "2022",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2022/The Compact Genetic Algorithm Struggles on Cliff Functions.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "convergence analysis"
+      ],
+      "generated_at": "2025-05-31 13:53:10"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) differ fundamentally from traditional Multi-Objective Evolutionary Algorithms (MOEAs) in their approach to generating new solutions?",
+      "contexts": [],
+      "ground_truth": "Traditional MOEAs primarily use crossover and mutation operators on a few parent solutions to create new individuals, while EDAs learn the global statistical information of the population to build a probability distribution model, from which new solutions are then sampled. This means that EDAs consider the population distribution rather than individual local information. EDAs aim to capture the underlying structure of promising solutions in the search space, allowing for a more informed generation of new candidate solutions compared to the localized search performed by crossover and mutation in traditional MOEAs. This global perspective helps EDAs discover solutions in complex Pareto optimal sets more effectively than MOEAs.",
+      "paper_id": "Improved RM-MEDA with local learning",
+      "paper_title": "Improved RM-MEDA with local learning",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/Improved RM-MEDA with local learning.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of Distribution Algorithms",
+        "Multi-objective optimization",
+        "Evolutionary Algorithms"
+      ],
+      "generated_at": "2025-05-31 13:53:12"
+    },
+    {
+      "question": "What are the key considerations when fusing domain knowledge into evolutionary algorithms (EAs) to solve practical optimization problems, particularly in the context of personalized search?",
+      "contexts": [],
+      "ground_truth": "When fusing domain knowledge into EAs for practical problems like personalized search, two key considerations are paramount: effectively representing the domain knowledge and converting optimal objectives to align with the EA framework. Representing domain knowledge involves collection, feature extraction, and encoding of relevant information such as user preferences or item characteristics, as seen in the paper's use of multisource user-generated content. This representation then informs the construction of an appropriate fitness function or surrogate model that guides the evolutionary process towards desired outcomes. The challenge lies in integrating this domain-specific information within the EA's operators and search strategies to enhance its efficiency and effectiveness.",
+      "paper_id": "Multisource Heterogeneous User-Generated Contents-Driven Interactive Estimation of Distribution Algorithms for Personalized Search",
+      "paper_title": "Multisource Heterogeneous User-Generated Contents-Driven Interactive Estimation of Distribution Algorithms for Personalized Search",
+      "paper_year": "2022",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2022/Multisource Heterogeneous User-Generated Contents-Driven Interactive Estimation of Distribution Algorithms for Personalized Search.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "evolutionary algorithms",
+        "domain knowledge",
+        "personalized search"
+      ],
+      "generated_at": "2025-05-31 13:53:14"
+    },
+    {
+      "question": "How does the estimation of distribution algorithm (EDA) update its probabilistic model based on selected individuals, and why is this update crucial for the algorithm's performance in optimization problems like hybrid flow-shop scheduling?",
+      "contexts": [],
+      "ground_truth": "In the estimation of distribution algorithm (EDA), the probabilistic model is updated based on the selected individuals of the population, which directly impacts the quality of candidate solutions and the algorithm's optimization efficiency. The paper constructs an order matrix to estimate the probabilistic model, counting the order of jobs in promising solutions. This matrix is normalized to create a probability distribution model, guiding the sampling of new individuals. The update formula combines the previous probability model with the normalized order matrix, using a learning factor to balance exploration and exploitation, ensuring the algorithm adapts to promising search regions.",
+      "paper_id": "An estimation of distribution algorithm with multiple intensification strategies for two-stage hybrid flow-shop scheduling problem with sequence-dependent setup time",
+      "paper_title": "An estimation of distribution algorithm with multiple intensification strategies for two-stage hybrid flow-shop scheduling problem with sequence-dependent setup time",
+      "paper_year": "2023",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2023/An estimation of distribution algorithm with multiple intensification strategies for two-stage hybrid flow-shop scheduling problem with sequence-dependent setup time.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithm",
+        "probabilistic model",
+        "optimization"
+      ],
+      "generated_at": "2025-05-31 13:53:16"
+    },
+    {
+      "question": "How do hybridization strategies that combine estimation of distribution algorithms with local search methods aim to improve optimization performance, and what are the trade-offs involved?",
+      "contexts": [],
+      "ground_truth": "Hybridization strategies aim to leverage the global exploration capabilities of EDAs with the local refinement of local search methods. A key trade-off involves balancing the computational cost of frequent local search applications against the risk of premature convergence if local search is applied too sparingly. Tightly coupled strategies (CS) apply local optimizers frequently but can waste computational resources on low-fitness individuals, while parsimonious strategies (PS) apply them only after the EDA converges, potentially missing opportunities to escape local optima during the evolutionary process. The multi-cycle evolutionary scheme (MCE) attempts to adapt the application of local optimizers to the search procedure, reducing the number of local optimizer applications while improving solution quality.",
+      "paper_id": "A novel memetic algorithm for constrained optimization",
+      "paper_title": "A Novel Memetic Algorithm for Constrained Optimization",
+      "paper_year": "2010",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2010/A novel memetic algorithm for constrained optimization.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "hybrid algorithms",
+        "local search",
+        "estimation of distribution algorithms"
+      ],
+      "generated_at": "2025-05-31 13:53:18"
+    },
+    {
+      "question": "How does the curse of dimensionality affect copula-based EDAs on problems with many variables?",
+      "contexts": [],
+      "ground_truth": "The curse of dimensionality poses significant challenges for copula-based EDAs as the number of variables increases. Estimating the joint probability distribution, which is central to EDAs, becomes exponentially more difficult with higher dimensions, requiring a larger number of samples to accurately represent the dependencies.  Copula selection and parameter estimation also become more complex, leading to increased computational costs and potential overfitting. The paper addresses this by using bivariate copulas to simplify the estimation of the multivariate system, but this approach might still struggle with very high-dimensional problems where complex dependencies exist beyond pairwise relationships. Techniques like dimensionality reduction or more sophisticated copula structures might be needed to mitigate these issues in high-dimensional spaces.",
+      "paper_id": "Nonconvex Functions Optimization Using an Estimation of Distribution Algorithm Based on a Multivariate Extension of the Clayton Copula",
+      "paper_title": "Nonconvex Functions Optimization Using an Estimation of Distribution Algorithm Based on a Multivariate Extension of the Clayton Copula",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/Nonconvex Functions Optimization Using an Estimation of Distribution Algorithm Based on a Multivariate Extension of the Clayton Copula.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "scalability",
+        "high-dimensional problems"
+      ],
+      "generated_at": "2025-05-31 13:53:20"
+    },
+    {
+      "question": "How do permutation-based EDAs like the one presented in this paper handle the constraint in the Traveling Salesman Problem that each city must be visited exactly once?",
+      "contexts": [],
+      "ground_truth": "Permutation-based EDAs for the TSP represent solutions as orderings of cities. To ensure each city is visited exactly once, these EDAs often employ probabilistic models that directly learn the distribution of edges or adjacencies in successful tours. The probability model is updated based on the selected individuals, favoring edges that appear frequently in good solutions, and new individuals are sampled from this learned distribution, inherently respecting the single-visit constraint. The algorithm samples new permutations from the probability model ensuring feasibility by design, often using techniques like greedy construction or edge assembly crossover to maintain valid tours.",
+      "paper_id": "An Novel Estimation of Distribution Algorithm for TSP",
+      "paper_title": "An Novel Estimation of Distribution Algorithm for TSP",
+      "paper_year": "2013",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2013/An Novel Estimation of Distribution Algorithm for TSP.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "combinatorial optimization"
+      ],
+      "generated_at": "2025-05-31 13:53:22"
+    },
+    {
+      "question": "What are the key steps involved in constructing a joint probability distribution function using Copula Theory within the context of Estimation of Distribution Algorithms (EDAs)?",
+      "contexts": [],
+      "ground_truth": "Constructing a joint probability distribution function using Copula Theory in EDAs involves two main steps. First, the marginal distribution of each random variable is estimated, often using normal, t-distribution, or empirical distributions. Second, a suitable copula, such as an Archimedean copula, is selected to combine these marginal distributions into a joint distribution function, leveraging Sklar's theorem. This approach allows for modeling the dependence between variables more accurately than traditional methods in EDAs. Finally, samples are generated from this joint distribution using the conditional distribution method, which involves generating uniform random variables and transforming them using the quasi-inverse of the marginal distribution functions.",
+      "paper_id": "Estimation of distribution algorithm based on archimedean copulas",
+      "paper_title": "Estimation of Distribution Algorithm Based on Archimedean Copulas",
+      "paper_year": "2009",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2009/Estimation of distribution algorithm based on archimedean copulas.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of distribution algorithms (EDAs)",
+        "Copula Theory",
+        "Archimedean copulas",
+        "Sklar's theorem"
+      ],
+      "generated_at": "2025-05-31 13:53:24"
+    },
+    {
+      "question": "How does the choice of probability distribution family affect the performance of Estimation of Distribution Algorithms (EDAs) in the context of energy-efficient scheduling problems, particularly concerning the trade-off between makespan and energy consumption?",
+      "contexts": [],
+      "ground_truth": "The choice of probability distribution family significantly influences EDA performance by shaping how the algorithm explores and exploits the search space. Different distributions capture varying dependencies between variables; for instance, a Gaussian distribution might be suitable for continuous variables, while a Bernoulli distribution could represent binary decisions. In energy-efficient scheduling, selecting an appropriate distribution allows the EDA to efficiently model task processing permutations and voltage supply level (VSL) assignments. The accuracy of the probability model directly impacts the algorithm's ability to generate promising solutions that effectively balance makespan and energy consumption, as highlighted by the multi-model approach (mEDA) in the paper.",
+      "paper_id": "A multi-model estimation of distribution algorithm for energy efficient scheduling under cloud computing system",
+      "paper_title": "A multi-model estimation of distribution algorithm for energy efficient scheduling under cloud computing system",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/A multi-model estimation of distribution algorithm for energy efficient scheduling under cloud computing system.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "probability models",
+        "energy efficient scheduling"
+      ],
+      "generated_at": "2025-05-31 13:53:26"
+    },
+    {
+      "question": "How does the estimation of distribution algorithm (EDA) leverage probabilistic models to guide the search for solutions in optimization problems, and what are the key steps involved in this process?",
+      "contexts": [],
+      "ground_truth": "The estimation of distribution algorithm (EDA) is a type of evolutionary algorithm that replaces traditional crossover and mutation operators with a probabilistic model-building approach.  It learns a probabilistic model from promising solutions in the population and then samples new candidate solutions from this model. The key steps include selecting promising solutions, building a probability distribution model (like a Bayesian network), generating new solutions by sampling from the model, and updating the population based on the objective values of the new solutions. This process directs the search towards regions of the solution space with higher probability of containing good solutions, improving the algorithm's convergence.",
+      "paper_id": "An Improved Discrete Migrating Birds Optimization for Lot-Streaming Flow Shop Scheduling Problem with Blocking",
+      "paper_title": "An Improved Discrete Migrating Birds Optimization for Lot-Streaming Flow Shop Scheduling Problem with Blocking",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/An Improved Discrete Migrating Birds Optimization for Lot-Streaming Flow Shop Scheduling Problem with Blocking.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithm",
+        "probabilistic model",
+        "optimization"
+      ],
+      "generated_at": "2025-05-31 13:53:28"
+    },
+    {
+      "question": "How does the factorization of the joint probability distribution in EDA, particularly using a Gaussian model, handle variable dependencies, and what are the implications for multimodal problems where these dependencies might be complex?",
+      "contexts": [],
+      "ground_truth": "In basic EDA with a Gaussian model, the n-dimensional joint probability distribution is factorized into a product of n univariate and independent normal distributions, essentially assuming variables are independent. This simplification struggles with multimodal problems where dependencies between variables are crucial for capturing the structure of multiple optima. The independence assumption can lead to premature convergence because the algorithm fails to model the relationships between variables that define the shape of the different promising regions in the search space. The CMEDA attempts to address this by clustering solutions and building separate Gaussian models within each cluster, but it still relies on the independence assumption within each cluster.",
+      "paper_id": "Multimodal estimation of distribution algorithm based on cooperative clustering strategy",
+      "paper_title": "Multimodal Estimation of Distribution Algorithm Based on Cooperative Clustering Strategy",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/Multimodal estimation of distribution algorithm based on cooperative clustering strategy.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of Distribution Algorithm",
+        "Multimodal Optimization",
+        "Probabilistic Models"
+      ],
+      "generated_at": "2025-05-31 13:53:30"
+    },
+    {
+      "question": "How does the random mask strategy in the improved Estimation of Distribution Algorithm (EDA) reduce the risk of combination explosion compared to traditional univariate EDAs?",
+      "contexts": [],
+      "ground_truth": "The random mask strategy divides variables into two sets, M and M bar, updating only the variables in set M based on the current probabilistic model, while variables in M bar are updated using the statistical values of promising individuals, which reduces the search space. This approach contrasts with traditional univariate EDAs where the new population is entirely generated by sampling the probabilistic model, leading to a combinatorial explosion in large-scale optimization problems. By updating only a subset of variables through probabilistic sampling and fixing others based on promising individuals' statistics, the improved EDA reduces the risk of combination explosion and speeds up training. The paper mentions that when the elements of sets M and M bar are infinite, the standard deviation of Net i (sum of hidden layer input) is reduced, further reducing the risk of combination explosion.",
+      "paper_id": "Random mask-based estimation of the distribution algorithm for stacked auto-encoder one-step pre-training",
+      "paper_title": "Random mask-based estimation of the distribution algorithm for stacked auto-encoder one-step pre-training",
+      "paper_year": "2021",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2021/Random mask-based estimation of the distribution algorithm for stacked auto-encoder one-step pre-training.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of Distribution Algorithm",
+        "Random Masking",
+        "Combination Explosion",
+        "Optimization"
+      ],
+      "generated_at": "2025-05-31 13:53:32"
+    },
+    {
+      "question": "How does the curse of dimensionality affect the Improved Shuffled Frog Leaping Algorithm (ISFLA) when applied to high-dimensional dynamic emergency vehicle dispatching problems?",
+      "contexts": [],
+      "ground_truth": "The curse of dimensionality can significantly degrade the performance of ISFLA in high-dimensional dynamic emergency vehicle dispatching due to the increased search space.  As the number of decision variables (e.g., vehicle routing options) grows exponentially, it becomes harder for ISFLA to efficiently explore the solution space and converge to an optimal dispatching strategy.  This is because the frog population may not adequately represent the vast search space, leading to premature convergence or suboptimal solutions. The paper addresses this by incorporating a probabilistic model from estimation of distribution algorithms (EDA) into the global search, aiming to mitigate the impact of high dimensionality by guiding the search process more effectively than standard SFLA.",
+      "paper_id": "An Improved Shuffled Frog Leaping Algorithm and Its Application in Dynamic Emergency Vehicle Dispatching",
+      "paper_title": "Research Article",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/An Improved Shuffled Frog Leaping Algorithm and Its Application in Dynamic Emergency Vehicle Dispatching.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "scalability",
+        "high-dimensional problems"
+      ],
+      "generated_at": "2025-05-31 13:53:34"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) differ fundamentally from traditional evolutionary algorithms like Genetic Algorithms in their approach to optimization?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) differ from traditional evolutionary algorithms, such as Genetic Algorithms, by replacing genetic operators with probabilistic models. Instead of using crossover and mutation, EDAs construct a probabilistic model that captures the distribution of promising solutions in the population. New individuals are then sampled from this model, guiding the search based on the learned distribution rather than direct manipulation of individual solutions. This approach allows EDAs to retain diversity and global search capabilities, especially in complex optimization landscapes.",
+      "paper_id": "An Adaptive Evolutionary Multi-Objective Estimation of Distribution Algorithm and Its Application to Multi-UAV Path Planning",
+      "paper_title": "APPLIED RESEARCH",
+      "paper_year": "2023",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2023/An Adaptive Evolutionary Multi-Objective Estimation of Distribution Algorithm and Its Application to Multi-UAV Path Planning.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "evolutionary algorithms",
+        "optimization"
+      ],
+      "generated_at": "2025-05-31 13:53:35"
+    },
+    {
+      "question": "How does the factorization in the EDA with Hamming distance handle variable dependencies within the consumption-loan planning problem, and how might this compare to other EDA approaches that model such dependencies more explicitly?",
+      "contexts": [],
+      "ground_truth": "The EDA with Hamming distance, as presented, appears to focus on restraining quantitative changes in solution structure using Hamming distance during selection, rather than explicitly modeling dependencies between consumption and loan variables.  It uses histograms of binary-coded variables as probability distributions.  Other EDAs might employ more sophisticated probabilistic models, such as Bayesian networks or Markov networks, to capture dependencies between variables, potentially leading to better solutions but at the cost of increased computational complexity. The paper does not delve deeply into explicit dependency modeling, prioritizing instead the controlled exploration of the solution space.",
+      "paper_id": "EDA with Hamming Distance for Consumption-Loan Planning in Experimental Economics",
+      "paper_title": "EDA with Hamming Distance for Consumption-Loan Planning in Experimental Economics",
+      "paper_year": "2019",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2019/EDA with Hamming Distance for Consumption-Loan Planning in Experimental Economics.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "probabilistic models",
+        "factorization",
+        "EDA"
+      ],
+      "generated_at": "2025-05-31 13:53:37"
+    },
+    {
+      "question": "How does the differential evolution (DE) based hypermutation in CSA-DE/EDA capture local information for efficient exploitation, and what specific steps are involved?",
+      "contexts": [],
+      "ground_truth": "The DE-based hypermutation in CSA-DE/EDA captures local information by using an arithmetic combination of existing antibodies, rather than randomly changing them. Specifically, a temporary antibody is generated based on the weighted differences between randomly selected antibodies from the clone set, favoring those with higher affinity. Crossover is then applied between this temporary antibody and its parent to generate a trial antibody, which replaces the parent only if it exhibits higher affinity. This process ensures that the search is guided by the local landscape of the current population, promoting efficient exploitation of promising regions.",
+      "paper_id": "CSA-DE-EDA- A Clonal Selection Algorithm Using Differential Evolution and Estimation of Distribution Algorithm",
+      "paper_title": "CSA-DE/EDA: A Clonal Selection Algorithm Using Differential Evolution and Estimation of Distribution Algorithm",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/CSA-DE-EDA- A Clonal Selection Algorithm Using Differential Evolution and Estimation of Distribution Algorithm.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "differential evolution",
+        "clonal selection algorithm",
+        "optimization"
+      ],
+      "generated_at": "2025-05-31 13:53:39"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) model the probability distribution of promising solutions, and how does this differ from the crossover and mutation operators used in Genetic Algorithms (GAs)?",
+      "contexts": [],
+      "ground_truth": "EDAs model the probability distribution of promising solutions to guide the search process, increasing the likelihood of generating solutions close to the global optimum. Unlike GAs, which rely on crossover and mutation to create new candidate solutions, EDAs construct a probabilistic model from selected promising solutions and then sample this model to generate new candidates.  This approach captures the features of good solutions, allowing the algorithm to focus on regions of the search space that are likely to contain better solutions.  The specific form of the probabilistic model, such as a Gaussian network in this paper, influences how dependencies between variables are captured and exploited during the search.",
+      "paper_id": "Evaluation of Estimation of Distribution Algorithm to Calibrate Computationally Intensive Hydrologic Model",
+      "paper_title": "Evaluation of Estimation of Distribution Algorithm to Calibrate Computationally Intensive Hydrologic Model",
+      "paper_year": "2016",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2016/Evaluation of Estimation of Distribution Algorithm to Calibrate Computationally Intensive Hydrologic Model.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithm",
+        "genetic algorithm",
+        "probabilistic model"
+      ],
+      "generated_at": "2025-05-31 13:53:40"
+    },
+    {
+      "question": "How does the probabilistic modeling in PMBGNP account for both the node connections and node transition frequencies, and what role does the parameter eta play in balancing these two factors?",
+      "contexts": [],
+      "ground_truth": "In PMBGNP, probabilistic modeling considers both node connections and transition frequencies to construct a probabilistic model. Node connections help learn the graph structure of promising individuals, while node transitions indicate the reusability of these connections. The parameter eta balances these factors; when eta approaches zero, node connection frequency dominates, while large eta prioritizes highly reused node connections, risking premature convergence.",
+      "paper_id": "A Novel Graph-Based Estimation of the Distribution Algorithm and its Extension Using Reinforcement Learning",
+      "paper_title": "A Novel Graph-Based Estimation of the Distribution Algorithm and Its Extension Using Reinforcement Learning",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/A Novel Graph-Based Estimation of the Distribution Algorithm and its Extension Using Reinforcement Learning.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "probabilistic model",
+        "parameter semantics"
+      ],
+      "generated_at": "2025-05-31 13:53:42"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) leverage linkage information between decision variables, and why is this important for optimization?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) exploit linkage information by modeling the probability of certain genes being inherited together, guiding the search process toward promising regions of the search space. This linkage information helps EDAs to consider dependencies between variables, unlike simpler methods that treat each variable independently. By capturing these dependencies, EDAs can effectively navigate complex search spaces and potentially avoid getting trapped in local optima. The paper mentions that more detailed information about linkage information can be found in Ting et al. (2010), Zhu et al. (2010), and Da San Martino and Sperduti (2010).",
+      "paper_id": "Evolutionary algorithms for solving multi-objective travelling salesman problem",
+      "paper_title": "Evolutionary algorithms for solving multi-objective travelling salesman problem",
+      "paper_year": "2011",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2011/Evolutionary algorithms for solving multi-objective travelling salesman problem.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithm",
+        "linkage learning",
+        "probabilistic model"
+      ],
+      "generated_at": "2025-05-31 13:53:44"
+    },
+    {
+      "question": "How does the historical memory in HMPSO maintain population diversity, and what mechanisms contribute to preventing premature convergence compared to standard PSO?",
+      "contexts": [],
+      "ground_truth": "The historical memory in HMPSO maintains population diversity by storing and reusing information from particles' historical promising pbests, allowing particles to return to previously explored optimum-likely regions and preventing the swarm from collapsing into a single local optimum. Unlike standard PSO, which primarily relies on gbest and pbest, HMPSO incorporates EDA to estimate and preserve the distribution of these historical pbests, enabling a more comprehensive exploration of the search space. The competition among historical memory, particles' current pbests, and the swarm's gbest further enhances the algorithm's ability to escape local optima. This blend of historical knowledge and current search information helps balance exploration and exploitation, leading to better convergence properties.",
+      "paper_id": "Composite Particle Swarm Optimizer With Historical Memory for Function Optimization",
+      "paper_title": "Composite Particle Swarm Optimizer With Historical Memory for Function Optimization",
+      "paper_year": "2015",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2015/Composite Particle Swarm Optimizer With Historical Memory for Function Optimization.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "particle swarm optimization",
+        "historical memory",
+        "estimation of distribution algorithm",
+        "population diversity",
+        "premature convergence"
+      ],
+      "generated_at": "2025-05-31 13:53:45"
+    },
+    {
+      "question": "How does the curse of dimensionality affect the performance and scalability of Estimation of Distribution Algorithms (EDAs) in camera self-calibration, especially when dealing with a large number of camera parameters?",
+      "contexts": [],
+      "ground_truth": "The curse of dimensionality poses a significant challenge to EDAs as the number of camera parameters increases.  As the dimensionality grows, the volume of the search space expands exponentially, making it harder for EDAs to effectively model the probability distribution of promising solutions. This can lead to slower convergence rates and a higher computational cost for learning the probabilistic model.  Techniques like dimensionality reduction or feature selection might be necessary to mitigate these effects and maintain the EDA's efficiency in high-dimensional camera calibration problems. The paper addresses this by using EMNA global which can handle multivariate optimization, but further scalability enhancements might be needed for extremely complex camera models.",
+      "paper_id": "Camera self-calibration from tracking of moving persons",
+      "paper_title": "Camera Self-Calibration from Tracking of Moving Persons",
+      "paper_year": "2016",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2016/Camera self-calibration from tracking of moving persons.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithm",
+        "camera self-calibration",
+        "curse of dimensionality"
+      ],
+      "generated_at": "2025-05-31 13:53:48"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) address permutation-based optimization problems like aircraft arrival sequencing and scheduling (ASS), and what are the key differences in handling constraints compared to traditional evolutionary algorithms?",
+      "contexts": [],
+      "ground_truth": "EDAs tackle permutation-based problems by learning a probabilistic model from the population, representing interrelations between solutions, and sampling this model to generate new offspring, focusing on the landing sequence as the decision variable. Unlike traditional evolutionary algorithms that directly incorporate constraints into operators, EDAs often separate sequence searching and evaluation, allowing for a more general approach where constraints are considered during the evaluation phase. This separation enables EDAs to handle various ASS problem formulations by modifying the evaluation module without altering the core search mechanism. The paper uses a Mallows Model and Kendall-\u03c4 Distance under EDA for the permutation-based ASS formulation. This approach contrasts with methods like Receding Horizon Control (RHC) which require specifically designed operators to handle constraints.",
+      "paper_id": "Sequence searching and evaluation  a unified approach for aircraft arrival sequencing and scheduling problems",
+      "paper_title": "Sequence searching and evaluation: a unified approach for aircraft arrival sequencing and scheduling problems",
+      "paper_year": "2016",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2016/Sequence searching and evaluation  a unified approach for aircraft arrival sequencing and scheduling problems.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of Distribution Algorithms",
+        "Permutation-based optimization",
+        "Aircraft Arrival Sequencing and Scheduling",
+        "Constraints handling"
+      ],
+      "generated_at": "2025-05-31 13:53:50"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) differ fundamentally from Genetic Algorithms (GAs) in their approach to generating new populations, and what implications does this have for addressing the building-block disruption problem?",
+      "contexts": [],
+      "ground_truth": "EDAs differ from GAs by creating new populations using a probabilistic model derived from the best individuals of the current population, rather than directly applying crossover and mutation operators. This approach helps EDAs to mitigate the building-block disruption problem, where related genes in chromosomes are split by crossover and mutation, because EDAs learn and maintain relationships between genes explicitly through the probabilistic model. The paper mentions that Bayesian network-based EDAs (BNEDAs) are particularly promising for feature selection as they can recognize interactions that increase classification accuracy, avoiding the disruption of beneficial combinations of features. However, BNEDAs can be computationally expensive due to the cost of learning Bayesian networks.",
+      "paper_id": "Using prior knowledge to improve the performance of an estimation of distribution algorithm applied to feature selection",
+      "paper_title": "Using Prior Knowledge to Improve the Performance of an Estimation of Distribution Algorithm Applied to Feature Selection",
+      "paper_year": "2005",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2005/Using prior knowledge to improve the performance of an estimation of distribution algorithm applied to feature selection.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of Distribution Algorithms",
+        "Genetic Algorithms",
+        "Building-block disruption"
+      ],
+      "generated_at": "2025-05-31 13:53:52"
+    },
+    {
+      "question": "What are the key differences between parametric and nonparametric models used within Estimation of Distribution Algorithms (EDAs), and how do these differences impact algorithm performance?",
+      "contexts": [],
+      "ground_truth": "Parametric EDAs, like EGNA which uses Gaussian models, assume a specific probability distribution for the variables, offering simplicity and speed but potentially leading to poor solutions if the data doesn't fit the assumed distribution, such as Gaussian. Nonparametric EDAs, such as KEDA, use techniques like kernel density estimation (KDE) to avoid assuming a specific distribution, allowing for better fitting of complex data at the cost of increased computational complexity and memory usage. This tradeoff between model flexibility and computational cost influences the choice of model in EDAs, depending on the problem's characteristics and available resources. Semiparametric approaches, such as SPEDA, attempt to balance these concerns.",
+      "paper_id": "Semiparametric Estimation of Distribution Algorithms for Continuous Optimization",
+      "paper_title": "Semiparametric Estimation of Distribution Algorithms for Continuous Optimization",
+      "paper_year": "2024",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2024/Semiparametric Estimation of Distribution Algorithms for Continuous Optimization.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "parametric models",
+        "nonparametric models"
+      ],
+      "generated_at": "2025-05-31 13:53:54"
+    },
+    {
+      "question": "How can linkage learning, particularly using a Dependency Structure Matrix (DSM), benefit evolutionary algorithms in solving optimization problems, especially those that are partially additively separable?",
+      "contexts": [],
+      "ground_truth": "Linkage learning, particularly when employing a Dependency Structure Matrix (DSM), aids evolutionary algorithms by identifying dependencies between genes, which represent components of a solution. This knowledge helps the algorithm understand the problem's structure, leading to more effective optimization. For partially additively separable problems, DSM helps to decompose the problem into independent subcomponents, allowing the algorithm to optimize each separately. By accurately detecting gene dependencies, the algorithm can reduce the number of fitness function evaluations needed to find an optimal solution, potentially scaling linearly with problem size.",
+      "paper_id": "On measuring and improving the quality of linkage learning in modern evolutionary algorithms applied to solve partially additively separable problems",
+      "paper_title": "On measuring and improving the quality of linkage learning in modern evolutionary algorithms applied to solve partially additively separable problems",
+      "paper_year": "2020",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2020/On measuring and improving the quality of linkage learning in modern evolutionary algorithms applied to solve partially additively separable problems.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "linkage learning",
+        "dependency structure matrix",
+        "evolutionary algorithms",
+        "partially additively separable problems"
+      ],
+      "generated_at": "2025-05-31 13:53:56"
+    },
+    {
+      "question": "What are the key differences between Estimation of Distribution Algorithms (EDAs) and traditional Genetic Algorithms (GAs)?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) and Genetic Algorithms (GAs) are both evolutionary algorithms, but they differ in how they evolve solutions. GAs maintain a population of solutions and use crossover and mutation operators to generate new solutions, whereas EDAs build a probabilistic model of promising solutions and sample new candidate solutions from this model.  This probabilistic modeling allows EDAs to explicitly learn and exploit dependencies between variables, which can lead to faster convergence in some problems.  Also, EDAs often have fewer parameters to tune compared to GAs, simplifying their application.",
+      "paper_id": "A compact genetic algorithm for the network coding based resource minimization problem",
+      "paper_title": "A compact genetic algorithm for the network coding based resource minimization problem",
+      "paper_year": "2012",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2012/A compact genetic algorithm for the network coding based resource minimization problem.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "genetic algorithms"
+      ],
+      "generated_at": "2025-05-31 13:53:58"
+    },
+    {
+      "question": "How do population-based algorithms, such as those used for parameter optimization in this paper, differ from traditional optimization techniques like least-squares methods in their ability to find global versus local minima?",
+      "contexts": [],
+      "ground_truth": "Population-based algorithms, like Genetic Algorithms (GAs) and Differential Evolution (DE), explore the search space with multiple candidate solutions simultaneously, increasing the likelihood of escaping local optima and finding the global minimum. Traditional methods, such as least-squares, typically converge to the nearest local minimum based on the initial parameter values, making them susceptible to getting trapped in suboptimal solutions. The stochastic nature of population-based algorithms allows for broader exploration and adaptation to complex, multimodal fitness landscapes, which are common in ecological modeling where parameters have large uncertainties.",
+      "paper_id": "Parameter Optimization Algorithms for Evolving Rule Models Applied to Freshwater Ecosystems",
+      "paper_title": "Parameter Optimization Algorithms for Evolving Rule Models Applied to Freshwater Ecosystems",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/Parameter Optimization Algorithms for Evolving Rule Models Applied to Freshwater Ecosystems.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "optimization algorithms"
+      ],
+      "generated_at": "2025-05-31 13:54:00"
+    },
+    {
+      "question": "How do you handle memory constraints when storing probability models in high-dimensional EDAs?",
+      "contexts": [],
+      "ground_truth": "In high-dimensional Estimation of Distribution Algorithms (EDAs), memory constraints for storing probability models become a significant challenge. Several strategies can be employed, including using compact or approximate representations of the probability distribution, such as tree-structured models or factorized representations that exploit conditional independence. Another approach involves feature selection or dimensionality reduction techniques to reduce the number of variables considered in the model. Additionally, parallelization and distributed computing can distribute the memory load across multiple machines, enabling the handling of very large datasets and complex models. The choice of technique depends on the specific EDA, the problem structure, and available computational resources.",
+      "paper_id": "Adapting Heuristic Mastermind Strategies to Evolutionary Algorithms",
+      "paper_title": "Adapting Heuristic Mastermind Strategies to Evolutionary Algorithms",
+      "paper_year": "2010",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2010/Adapting Heuristic Mastermind Strategies to Evolutionary Algorithms.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "scalability",
+        "high-dimensional problems"
+      ],
+      "generated_at": "2025-05-31 13:54:01"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) differ fundamentally from Genetic Algorithms (GAs) in their approach to search and optimization?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) differ from Genetic Algorithms (GAs) by explicitly building a probabilistic model of promising solutions, whereas GAs rely on crossover and mutation operators. EDAs learn and refine this probabilistic model iteratively, sampling it to generate new candidate solutions, effectively replacing traditional genetic operators.  This allows EDAs to capture interactions between genes, estimating the distribution of good solutions directly, unlike GAs which implicitly explore the search space through genetic operations. The EDAs use probabilistic models to guide the search process by estimating the distribution of promising solutions, contrasting the implicit exploration of GAs.",
+      "paper_id": "Inductive Logic Programming Through Estimation of Distribution Algorithm",
+      "paper_title": "Inductive Logic Programming Through Estimation of Distribution Algorithm",
+      "paper_year": "2011",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2011/Inductive Logic Programming Through Estimation of Distribution Algorithm.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of Distribution Algorithms",
+        "Genetic Algorithms",
+        "Probabilistic Models"
+      ],
+      "generated_at": "2025-05-31 13:54:03"
+    },
+    {
+      "question": "How does the factorization in Affinity Propagation based Estimation of Distribution Algorithm handle variable dependencies compared to Estimation of Distribution Algorithms using full multivariate Gaussian model?",
+      "contexts": [],
+      "ground_truth": "Affinity Propagation based Estimation of Distribution Algorithm (AffEDA) uses affinity propagation to cluster individuals, aiming to capture strong interactions among variables by grouping them into non-overlapping sets, effectively reducing the search space. In contrast, Estimation of Distribution Algorithms using a full multivariate Gaussian model (EDA-G) directly models the joint distribution of all variables using a Gaussian distribution, capturing dependencies through the covariance matrix. AffEDA's clustering approach simplifies the model by focusing on local dependencies within clusters, while EDA-G captures global dependencies across all variables but can suffer from increased computational complexity and data requirements, especially in high-dimensional problems. AffEDA refines promising spaces containing high-quality solutions.",
+      "paper_id": "Dynamic Optimization of Chemical Engineering Problems Using Affinity Propagation Based Estimation of Distribution Algorithm",
+      "paper_title": "Dynamic Optimization of Chemical Engineering Problems Using Affinity Propagation Based Estimation of Distribution Algorithm",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/Dynamic Optimization of Chemical Engineering Problems Using Affinity Propagation Based Estimation of Distribution Algorithm.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "probabilistic models",
+        "factorization",
+        "affinity propagation",
+        "estimation of distribution algorithm"
+      ],
+      "generated_at": "2025-05-31 13:54:05"
+    },
+    {
+      "question": "How does the choice of probability distribution family affect the performance of Estimation of Distribution Algorithms?",
+      "contexts": [],
+      "ground_truth": "The choice of probability distribution family in EDAs significantly impacts their performance by influencing how accurately the algorithm captures the structure of promising solutions. Different distributions, such as Gaussian or multivariate normal, are better suited for continuous variables, while others are designed for discrete or combinatorial problems. An inappropriate distribution might lead to a poor representation of the search space, causing the algorithm to converge prematurely or fail to explore effectively. For instance, using a unimodal distribution on a multimodal problem could limit the algorithm's ability to identify multiple optima.",
+      "paper_id": "Differential Evolution with Estimation of Distribution for Worst-Case Scenario Optimization",
+      "paper_title": "Article",
+      "paper_year": "2021",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2021/Differential Evolution with Estimation of Distribution for Worst-Case Scenario Optimization.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms"
+      ],
+      "generated_at": "2025-05-31 13:54:06"
+    },
+    {
+      "question": "How does the elitist nondominated sorting method, as used in the ENSHA algorithm, maintain diversity in the population while also promoting convergence towards the Pareto front?",
+      "contexts": [],
+      "ground_truth": "The elitist nondominated sorting method maintains diversity by assigning a crowding distance to individuals within each nondominated front; this metric favors individuals in less crowded regions, preventing premature convergence. Simultaneously, it promotes convergence by prioritizing individuals in lower-ranked nondominated fronts, ensuring that solutions closer to the Pareto front are more likely to be selected for reproduction.  This balance between convergence and diversity is crucial for effective multi-objective optimization, as it allows the algorithm to explore the solution space while retaining high-quality solutions.  The method combines non-dominated sorting with a crowding distance metric to balance exploration and exploitation. The crowding distance estimates the space around each solution, favoring solutions in less dense areas to maintain diversity.",
+      "paper_id": "An elitist nondominated sorting hybrid algorithm for multi-objective flexible job-shop scheduling problem with sequence-dependent setups",
+      "paper_title": "An elitist nondominated sorting hybrid algorithm for multi-objective flexible job-shop scheduling problem with sequence-dependent",
+      "paper_year": "2019",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2019/An elitist nondominated sorting hybrid algorithm for multi-objective flexible job-shop scheduling problem with sequence-dependent setups.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "multi-objective optimization",
+        "nondominated sorting",
+        "diversity"
+      ],
+      "generated_at": "2025-05-31 13:54:09"
+    },
+    {
+      "question": "How does the factorization in Cauchy EDA handle variable dependencies compared to pPOEMS?",
+      "contexts": [],
+      "ground_truth": "Cauchy EDA, as an estimation-of-distribution algorithm, typically models the search space using a probability distribution, often assuming independence between variables for simplicity, or employing techniques to capture some dependencies. In contrast, pPOEMS evolves hypermutations that can introduce dependencies between variables through the sequence of actions modifying the prototype. While Cauchy EDA's factorization might explicitly model or ignore dependencies, pPOEMS implicitly learns dependencies through the evolutionary process of optimizing the improvement steps. The effectiveness of each approach depends on the separability of the objective function; pPOEMS may struggle with non-separable functions due to its axis-parallel modifications.",
+      "paper_id": "Comparison of cauchy EDA and pPOEMS algorithms on the BBOB noiseless testbed",
+      "paper_title": "Comparison of Cauchy EDA and pPOEMS algorithms on the BBOB Noiseless Testbed",
+      "paper_year": "2010",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2010/Comparison of cauchy EDA and pPOEMS algorithms on the BBOB noiseless testbed.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "algorithm comparison",
+        "factorization",
+        "variable dependencies"
+      ],
+      "generated_at": "2025-05-31 13:54:10"
+    },
+    {
+      "question": "How does the Gene-pool Optimal Mixing Evolutionary Algorithm (GOMEA) exploit linkage information during the optimization process, and what advantages does this provide compared to a classic Genetic Algorithm (GA) in the context of Distribution Network Expansion Planning (DNEP)?",
+      "contexts": [],
+      "ground_truth": "GOMEA exploits linkage information by learning dependencies between problem variables using a Linkage Tree (LT). During optimization, GOMEA's Gene-pool Optimal Mixing (GOM) operator treats linked variables jointly when generating new solutions, preserving building block structures. This allows GOMEA to overcome the building-block-blind variation operators of classic GAs, potentially leading to more robust performance, especially when problem-specific knowledge is limited. GOMEA's ability to model problem structure through linkage learning enables it to efficiently traverse the search space and identify high-quality solutions, even without extensive problem-specific customization.",
+      "paper_id": "Exploiting Linkage Information and Problem-Specific Knowledge in Evolutionary Distribution Network Expansion Planning",
+      "paper_title": "Exploiting Linkage Information and Problem-Specific Knowledge in Evolutionary Distribution Network Expansion Planning",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/Exploiting Linkage Information and Problem-Specific Knowledge in Evolutionary Distribution Network Expansion Planning.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "evolutionary algorithms",
+        "linkage learning",
+        "problem-specific knowledge"
+      ],
+      "generated_at": "2025-05-31 13:54:12"
+    },
+    {
+      "question": "How does the process of random forest variable importance, as used in the proposed RFVI-IMEDA algorithm, determine the best assignment of decision variables to objective functions compared to the random grouping method used in IM-MOEA?",
+      "contexts": [],
+      "ground_truth": "RFVI-IMEDA employs random forest variable importance to explicitly determine the most influential decision variables for each objective function, unlike IM-MOEA's random grouping which may inadvertently exclude effective inverse models. By assessing the importance of each variable in predicting the objective functions, RFVI-IMEDA aims to create a more informed and targeted assignment, enhancing the overall model accuracy. This targeted assignment, facilitated by the random forest, contrasts with IM-MOEA's random allocation, potentially improving the algorithm's ability to identify key relationships between decision variables and objectives. The random forest methods identify predictor variables that are most important, as opposed to random groupings that allocate decision variables randomly.",
+      "paper_id": "An inverse model-based multiobjective estimation of distribution algorithm using Random-Forest variable importance methods",
+      "paper_title": "An inverse model-based multiobjective estimation of distribution algorithm using Random-Forest variable importance methods",
+      "paper_year": "2020",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2020/An inverse model-based multiobjective estimation of distribution algorithm using Random-Forest variable importance methods.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithm",
+        "random forest variable importance",
+        "inverse modeling",
+        "multiobjective optimization"
+      ],
+      "generated_at": "2025-05-31 13:54:14"
+    },
+    {
+      "question": "How do prediction-based algorithms estimate the Pareto-optimal set or Pareto-optimal front position in new dynamic circumstances, and what are some common prediction approaches used?",
+      "contexts": [],
+      "ground_truth": "Prediction-based algorithms estimate the potential Pareto-optimal set (POS) or Pareto-optimal front (POF) position in new dynamic environments based on previously obtained individuals. These algorithms leverage historical data to anticipate how the optimal solutions will shift as the environment changes. Common prediction approaches include using univariate auto-regression (AR) models, Kalman filters, knee points, and center points. These methods analyze past trends to forecast future positions, enabling the algorithm to adapt more effectively to dynamic changes.",
+      "paper_id": "Solving dynamic multi-objective problems using polynomial fitting-based prediction algorithm",
+      "paper_title": "Solving dynamic multi-objective problems using polynomial fitting-based prediction algorithm",
+      "paper_year": "2022",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2022/Solving dynamic multi-objective problems using polynomial fitting-based prediction algorithm.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "dynamic multi-objective optimization",
+        "prediction mechanism"
+      ],
+      "generated_at": "2025-05-31 13:54:16"
+    }
+  ]
+}

@@ -1,0 +1,940 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/MONEDA  scalable multi-objective optimization with a neural network-based estimation of distribution algorithm.md",
+    "filename": "MONEDA  scalable multi-objective optimization with a neural network-based estimation of distribution algorithm.md",
+    "title": "MONEDA  scalable multi-objective optimization with a neural network-based estimation of distribution algorithm",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Parameters of the algorithms used in the experiments",
+      "headers": [
+        "Common parameters",
+        ""
+      ],
+      "rows": [
+        [
+          "Population size ( $n_{\\text {pop }}$ )",
+          "$250 \\times 10^{\\frac{M}{3}-1}$"
+        ],
+        [
+          "MONEDA(NS/Hyp)",
+          ""
+        ],
+        [
+          "Number of initial GNG nodes $\\left(N_{0}\\right)$",
+          2
+        ],
+        [
+          "Maximum edge age ( $v_{\\text {max }}$ )",
+          40
+        ],
+        [
+          "Best node learning rate $\\left(\\epsilon_{\\mathrm{b}}\\right)$",
+          0.1
+        ],
+        [
+          "Neighboring nodes learning rate $\\left(\\epsilon_{\\mathrm{v}}\\right)$",
+          0.05
+        ],
+        [
+          "Insertion error decrement rate $\\left(\\delta_{\\mathrm{I}}\\right)$",
+          0.1
+        ],
+        [
+          "General error decrement rate $\\left(\\delta_{\\mathrm{G}}\\right)$",
+          0.1
+        ],
+        [
+          "Accumulated error threshold $(\\rho)$",
+          0.2
+        ],
+        [
+          "Selection percentile $(\\alpha)$",
+          0.3
+        ],
+        [
+          "$\\hat{P}_{i}$ to $N_{\\max }$ ratio $(\\gamma)$",
+          0.5
+        ],
+        [
+          "Substitution percentile ( $\\omega$ )",
+          0.25
+        ],
+        [
+          "RM-MEDA",
+          ""
+        ],
+        [
+          "Selection portion",
+          0.3
+        ],
+        [
+          "Number of LPCA clusters",
+          "$\\frac{10}{3} M$"
+        ],
+        [
+          "Maximum training steps in LPCA",
+          "$\\frac{20}{3} M$"
+        ],
+        [
+          "Extension rate",
+          0.25
+        ],
+        [
+          "MOPED",
+          ""
+        ],
+        [
+          "Selection portion",
+          0.3
+        ],
+        [
+          "Sampling parameter $(\\tau)$",
+          2
+        ],
+        [
+          "Fitness parameter $(\\alpha)$",
+          0.2
+        ],
+        [
+          "Naïve MIDEA",
+          ""
+        ],
+        [
+          "Selection percentile $(\\tau)$",
+          0.3
+        ],
+        [
+          "Diversity percentile $(\\delta)$",
+          15
+        ],
+        [
+          "Number of parents of a variable $(\\kappa)$",
+          2
+        ],
+        [
+          "Maximum number of clusters",
+          "$\\lceil 0.5\\lfloor\\tau n_{\\text {pop }}\\rfloor]$"
+        ],
+        [
+          "Threshold for the leader algorithm",
+          0.1
+        ],
+        [
+          "MAMaLGad $X^{+}$",
+          ""
+        ],
+        [
+          "Selection percentile $(\\tau)$",
+          0.3
+        ],
+        [
+          "Parallel runs $(m)$",
+          10
+        ],
+        [
+          "MrBOA",
+          ""
+        ],
+        [
+          "Selection portion $(\\tau)$",
+          0.3
+        ],
+        [
+          "Number of parents or a variable",
+          5
+        ],
+        [
+          "Number of mixture components",
+          3
+        ],
+        [
+          "Threshold of leader algorithm",
+          0.3
+        ],
+        [
+          "NSGA-II",
+          ""
+        ],
+        [
+          "Crossover probability $\\left(p_{c}\\right)$",
+          0.7
+        ],
+        [
+          "Distribution index for SBX $\\left(\\eta_{c}\\right)$",
+          15
+        ],
+        [
+          "Mutation probability $\\left(p_{m}\\right)$",
+          "$\\frac{1}{n_{\\text {pop }}}$"
+        ],
+        [
+          "Dist. index for polynomial mut. $\\left(\\eta_{m}\\right)$",
+          20
+        ]
+      ],
+      "row_count": 40,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 continued",
+      "headers": [
+        "Common parameters",
+        ""
+      ],
+      "rows": [
+        [
+          "Population size $\\left(n_{\\text {pop }}\\right)$",
+          "$250 \\times 10^{\\frac{M}{3}-1}$"
+        ],
+        [
+          2,
+          ""
+        ],
+        [
+          "Crossover probability $\\left(p_{c}\\right)$",
+          0.7
+        ],
+        [
+          "Distribution index for SBX $\\left(\\eta_{c}\\right)$",
+          15
+        ],
+        [
+          "Mutation probability $\\left(p_{m}\\right)$",
+          "$\\frac{1}{n_{\\text {pop }}}$"
+        ],
+        [
+          "Dist. index for polynomial mut. $\\left(\\eta_{m}\\right)$",
+          20
+        ],
+        [
+          "Ratio of pop. to archive sizes",
+          "$4: 1$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "MON",
+        "MOH",
+        "nMI",
+        "MrB",
+        "RMM",
+        "MAM",
+        "MOP",
+        "NSG",
+        "SPE"
+      ],
+      "rows": [
+        [
+          "MONEDA/NS",
+          3,
+          6912,
+          6912,
+          6912,
+          6912,
+          6912,
+          6912,
+          6912
+        ],
+        [
+          "MONEDA/Hyp",
+          "",
+          912,
+          6912,
+          6912,
+          6912,
+          6912,
+          6912,
+          6912
+        ],
+        [
+          "naïve MIDEA",
+          "",
+          "",
+          6912,
+          6912,
+          612,
+          6,
+          6912,
+          6912
+        ],
+        [
+          "MrBOA",
+          "",
+          "",
+          "",
+          912,
+          "",
+          "",
+          6912,
+          6912
+        ],
+        [
+          "RM-MEDA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          6912,
+          6912
+        ],
+        [
+          "MAMaLGaM-X ${ }^{+}$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          9,
+          6912,
+          6912
+        ],
+        [
+          "MOPED",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          6912,
+          6912
+        ],
+        [
+          "NSGA-II",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          6912
+        ],
+        [
+          2,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "—"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "MON",
+        "MOH",
+        "nMI",
+        "MrB",
+        "RMM",
+        "MAM",
+        "MOP",
+        "NSG",
+        "SPE"
+      ],
+      "rows": [
+        [
+          "MONEDA/NS",
+          "-",
+          9,
+          912,
+          6912,
+          6912,
+          69,
+          69,
+          6912,
+          "$3,6,9,12$"
+        ],
+        [
+          "MONEDA/Hyp",
+          "",
+          "-",
+          36912,
+          36912,
+          36912,
+          369,
+          36912,
+          6912,
+          36912
+        ],
+        [
+          "naïve MIDEA",
+          "",
+          "",
+          "-",
+          912,
+          36912,
+          6,
+          6,
+          6912,
+          36912
+        ],
+        [
+          "MrBOA",
+          "",
+          "",
+          "",
+          "-",
+          39,
+          "",
+          6,
+          6912,
+          36912
+        ],
+        [
+          "RM-MEDA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          6,
+          6912,
+          6912
+        ],
+        [
+          "MAMaLGaM-X ${ }^{+}$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          612,
+          6912,
+          36912
+        ],
+        [
+          "MOPED",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          6912,
+          36912
+        ],
+        [
+          "NSGA-II",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          3612
+        ],
+        [
+          2,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 10
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "MON",
+        "MOH",
+        "nMI",
+        "MrB",
+        "RMM",
+        "MAM",
+        "MOP",
+        "NSG",
+        "SPE"
+      ],
+      "rows": [
+        [
+          "MONEDA/NS",
+          "",
+          912,
+          6912,
+          6912,
+          6912,
+          6912,
+          6912,
+          6912
+        ],
+        [
+          "MONEDA/Hyp",
+          "-",
+          6912,
+          6912,
+          6912,
+          6912,
+          6912,
+          6912,
+          6912
+        ],
+        [
+          "naïve MIDEA",
+          "",
+          "-",
+          6912,
+          6912,
+          6,
+          6,
+          6912,
+          6912
+        ],
+        [
+          "MrBOA",
+          "",
+          "",
+          "-",
+          912,
+          "",
+          "",
+          6912,
+          6912
+        ],
+        [
+          "RM-MEDA",
+          "",
+          "",
+          "",
+          "-",
+          "",
+          "",
+          6912,
+          6912
+        ],
+        [
+          "MAMaLGam-X*",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          12,
+          6912,
+          6912
+        ],
+        [
+          "MOPED",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          6912,
+          6912
+        ],
+        [
+          "NSGA-II",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          ""
+        ],
+        [
+          2,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "MON",
+        "MOH",
+        "nMI",
+        "MrB",
+        "RMM",
+        "MAM",
+        "MOP",
+        "NSG",
+        "SPE"
+      ],
+      "rows": [
+        [
+          "MONEDA/NS",
+          "-",
+          69,
+          6912,
+          "$3,6,9,12$",
+          "",
+          69,
+          "$3,6,9,12$",
+          "$6,9,12$"
+        ],
+        [
+          "MONEDA/Hyp",
+          "",
+          6912,
+          "$3,6,9,12$",
+          "$3,6,9,12$",
+          9,
+          "$3,6,9,12$",
+          "$3,6,9,12$",
+          "$3,6,9,12$"
+        ],
+        [
+          "naïve MIDEA",
+          "",
+          "",
+          36912,
+          "$3,6,9,12$",
+          "",
+          9,
+          "$3,6,9,12$",
+          "$3,9,12$"
+        ],
+        [
+          "MrBOA",
+          "",
+          "",
+          "",
+          3,
+          "",
+          "",
+          "$3,6,9,12$",
+          912
+        ],
+        [
+          "RM-MEDA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          6912,
+          912
+        ],
+        [
+          "MAMaLGaM-X ${ }^{+}$",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          "$3,6,9,12$",
+          "$3,6,9,12$",
+          "$3,6,9,12$"
+        ],
+        [
+          "MOPED",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$3,6,9,12$",
+          912
+        ],
+        [
+          "NSGA-II",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          9
+        ],
+        [
+          2,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "MON",
+        "MOH",
+        "nMI",
+        "MrB",
+        "RMM",
+        "MAM",
+        "MOP",
+        "NSG",
+        "SPE"
+      ],
+      "rows": [
+        [
+          "MONEDA/NS",
+          "-",
+          3912,
+          6912,
+          3912,
+          39,
+          36912,
+          6912,
+          36912
+        ],
+        [
+          "MONEDA/Hyp",
+          "-",
+          36912,
+          6912,
+          36912,
+          369,
+          36912,
+          36912,
+          36912
+        ],
+        [
+          "naïve MIDEA",
+          "",
+          "-",
+          612,
+          6912,
+          6,
+          6,
+          6912,
+          36912
+        ],
+        [
+          "MrBOA",
+          "",
+          "",
+          "-",
+          39,
+          3,
+          36,
+          36912,
+          36912
+        ],
+        [
+          "RM-MEDA",
+          "",
+          "",
+          "",
+          "-",
+          "",
+          6,
+          6912,
+          36912
+        ],
+        [
+          "MAMaLGaM-X*",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          612,
+          6912,
+          36912
+        ],
+        [
+          "MOPED",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          6912,
+          36912
+        ],
+        [
+          "NSGA-II",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          3612
+        ],
+        [
+          2,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "MON",
+        "MOH",
+        "nMI",
+        "MrB",
+        "RMM",
+        "MAM",
+        "MOP",
+        "NSG",
+        "SPE"
+      ],
+      "rows": [
+        [
+          "MONEDA/NS",
+          "-",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$"
+        ],
+        [
+          "MONEDA/Hyp",
+          "-",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$",
+          "$6,9,12$"
+        ],
+        [
+          "naïve MIDEA",
+          "",
+          "-",
+          "$6,9,12$",
+          "$6,9,12$",
+          "",
+          6,
+          "$6,9,12$",
+          "$6,9,12$"
+        ],
+        [
+          "MrBOA",
+          "",
+          "",
+          "-",
+          912,
+          "",
+          "",
+          "$6,9,12$",
+          "$6,9,12$"
+        ],
+        [
+          "RM-MEDA",
+          "",
+          "",
+          "",
+          "-",
+          "",
+          "",
+          "$6,9,12$",
+          "$6,9,12$"
+        ],
+        [
+          "MAMaLGaM-X ${ }^{+}$",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          612,
+          "$6,9,12$",
+          "$6,9,12$"
+        ],
+        [
+          "MOPED",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          "$6,9,12$",
+          "$6,9,12$"
+        ],
+        [
+          "NSGA-II",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          612
+        ],
+        [
+          2,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 9
+    }
+  ]
+}

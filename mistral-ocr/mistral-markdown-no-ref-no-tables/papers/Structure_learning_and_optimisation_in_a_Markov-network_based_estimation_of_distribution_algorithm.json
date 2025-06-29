@@ -1,0 +1,944 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/Structure learning and optimisation in a Markov-network based estimation of distribution algorithm.md",
+    "filename": "Structure learning and optimisation in a Markov-network based estimation of distribution algorithm.md",
+    "title": "Structure learning and optimisation in a Markov-network based estimation of distribution algorithm",
+    "year": "2009"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] P. Larrañaga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Boston: Kluwer Academic Publishers, 2002.\n[2] R. Santana, \"A Markov network based factorized distribution algorithm for optimization,\" in Proceedings of the 14th European Conference on Machine Learning (ECML-PKDD 2003). Lecture Notes in Artificial Intelligence, vol. 2837. Berlin: Springer-Verlag, 2003, pp. 337-348.\n[3] R. Santana, \"Probabilistic modeling based on undirected graphs in estimation distribution algorithms,\" Ph.D. dissertation, Institute of Cybernetics,Mathematics and Physics, Havana, Cuba, 2003.\n[4] R. Santana, \"Estimation of distribution algorithms with Kikuchi approximations,\" Evol. Comp., vol. 13, no. 1, pp. 67-97, 2005.\n[5] S. K. Shakya, J. A. W. McCall, and D. F. Brown, \"Solving the Ising spin glass problem using a bivariate EDA based on Markov random fields,\" in Proceedings of IEEE Congress on Evolutionary Computation. IEEE Press, 16-21 July 20062006.\n[6] A. H. Wright and S. Pulavarty, \"On the convergence of an estimation of distribution algorithm based on linkage discovery and factorization,\" in GECCO '05: Proceedings of the 2005 conference on Genetic and evolutionary computation. ACM Press, 2005, pp. 695-702.\n[7] R. B. Heckendorn and A. H. Wright, \"Efficient linkage discovery by limited probing,\" Evol. Comp., vol. 12, no. 4, pp. 517-545, 2004.\n[8] S. K. Shakya, \"DEUM: A framework for an estimation of distribution algorithm based on Markov random fields,\" Ph.D. dissertation, The Robert Gordon University, Aberdeen, UK, 2006.\n[9] I. H. Witten and E. Frank, Data Mining: Practical Machine Learning Tools and Techniques, 2nd ed., ser. Morgan Kaufmann Series in Data Management Sys. Morgan Kaufmann, June 2005.\n[10] M. Pelikan and D. Goldberg, \"Hierarchical BOA solves Ising spin glasses and MAXSAT,\" in Proceedings of the Genetic and Evolutionary Computation Conference 2003 (GECCO-2003). Springer-Verlag, 2003 2003, pp. 1271-1282.\n[11] M. Pelikan, \"Bayesian optimization algorithm: from single level to hierarchy,\" Ph.D. dissertation, University of Illinois at UrbanaChampaign, Urbana, IL, 2002.\n[12] M. Pelikan, J. Ocenasek, S. Trebst, M. Troyer, and F. Alet, \"Computational complexity and simulation of rare events of Ising spin glasses,\" in GECCO (2), 2004, pp. 36-47.\n[13] S. K. Shakya, J. A. W. McCall, and D. F. Brown, \"Estimating the distribution in an EDA,\" in Proceedings of the International Conference on Adaptive and Natural computiNG Algorithms (ICANNGA 2005). Springer-Verlag, 21-23 March 2005, pp. 202-205.\n[14] S. K. Shakya, J. A. W. McCall, and D. F. Brown, \"Incorporating a Metropolis method in a distribution estimation using Markov random field algorithm,\" in Proceedings of IEEE Congress on Evolutionary Computation. IEEE, 2-5 September 2005, pp. 2576-2583.\n[15] A. E. I. Brownlee, J. A. W. McCall, and D. F. Brown, \"Solving the MAXSAT problem using a multivariate EDA based on Markov networks,\" in GECCO '07: Proceedings of the 2007 GECCO Conference on Genetic and Evolutionary computation. New York, NY, USA: ACM, 2007, pp. 2423-2428.\n[16] H. Mühlenbein and R. Höns, \"The estimation of distributions and the minimum relative entropy principle,\" Evol. Comput., vol. 13, no. 1, pp. 1-27, 2005.\n[17] Q. Zhang, \"On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm,\" IEEE Trans. Evolutionary Computation, vol. 8, no. 1, pp. 80-93, 2004.\n[18] M. Hauschild, M. Pelikan, C. F. Lima, and K. Sastry, \"Analyzing probabilistic models in hierarchical BOA on traps and spin glasses,\" in GECCO 2007: Proceedings of the 9th annual conference on Genetic and Evolutionary Computation. New York, NY, USA: ACM, 2007, pp. 523-530.\n[19] L. Kallel, B. Naudts, and R. Reeves, \"Properties of fitness functions and search landscapes,\" in Theoretical Aspects of Evolutionary Computing, L. Kallel, B. Naudts, and A. Rogers, Eds. Springer Verlag, 2000, pp. 177-208.\n[20] H. Mühlenbein and T. Mahnig, \"Evolutionary optimization using graphical models,\" New Gen. Comput., vol. 18, no. 2, pp. 157-166, 2000.\n[21] R. Santana, P. Larrañaga, and J. A. Lozano, \"Challenges and open problems in discrete EDAs,\" Department of Computer Science and Artificial Intelligence, University of the Basque Country, Tech. Rep. EHU-KZAA-IK-1/07, October 2007. [Online]. Available: http://www.sc.ebu.es/ccwhayes/technical.htm\n[22] S. K. Shakya, J. A. W. McCall, and D. F. Brown, \"Updating the probability vector using MRF technique for a univariate EDA,\" in Proceedings of STAIRS 2004. IOS Press, 2004 2004, pp. 15-25.\n[23] S. Baluja and R. Caruana, \"Removing the genetics from the standard genetic algorithm.\" Morgan Kaufmann Publishers, 1995, pp. 38-46.\n[24] A. Brownlee, J. McCall, Q. Zhang, and D. Brown, \"Approaches to selection and their effect on fitness modeling in an estimation of distribution algorithm,\" in Proceedings of the 2008 World Congress on Computational Intelligence (WCCI-2008), 2008.\n[25] T. Lucey, Quantitative Techniques: An Instructional Manual. Eastleigh, Hampshire, UK: D. P. Publications, 1984.\n[26] A. E. Brownlee, M. Pelikan, J. A. McCall, and A. Petrovski, \"An application of a multivariate estimation of distribution algorithm to cancer chemotherapy,\" in GECCO '08: Proceedings of the 10th annual conference on Genetic and evolutionary computation. New York, NY, USA: ACM, 2008, pp. 463-464.\n[27] M. Pelikan, K. Sastry, and D. E. Goldberg, \"iBOA: The incremental Bayesian optimization algorithm,\" in GECCO '08: Proceedings of the 10th annual conference on Genetic and evolutionary computation. New York, NY, USA: ACM, 2008, pp. 455-462.\n[28] Q. Zhang, J. Sun, and E. Tsang, \"An evolutionary algorithm with guided mutation for the maximum clique problem.\" IEEE Trans.Evolutionary Computation, vol. 9, no. 2, pp. 192-200, 2005.\n[29] M. Pelikan and K. Sastry, \"Fitness inheritance in the Bayesian optimization algorithm,\" in GECCO (2), 2004, pp. 48-59.\n[30] C. F. Lima, M. Pelikan, K. Sastry, M. V. Butz, D. E. Goldberg, and F. G. Lobo, \"Substructural neighborhoods for local search in the Bayesian optimization algorithm,\" in Parallel Problem Solving from Nature - PPSN IX, (9th PPSN'06), ser. Lecture Notes in Computer Science (LNCS). Reykjavik, Iceland: Springer-Verlag, Sept. 2006, vol. 4193, pp. 232-241.\n[31] K. Sastry, C. Lima, and D. E. Goldberg, \"Evaluation relaxation using substructural information and linear estimation,\" in Proceedings of the 8th annual Conference on Genetic and Evolutionary Computation GECCO-2006. New York, NY, USA: ACM Press, 2006, pp. 419-426.\n[32] A. Ortols-Puig, E. Bernadó-Mansilla, K. Sastry, and D. E. Goldberg, \"Substructural surrogates for learning decomposable classification problems: implementation and first results,\" in GECCO '07: Proceedings of the 2007 GECCO conference on genetic and evolutionary computation. New York, NY, USA: ACM, 2007, pp. 2875-2882.\n[33] A. Ochoa and M. R. Soto, \"Linking entropy to estimation of distribution algorithms,\" in Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, J. A. Lozano, P. L. Naga, I. Inza, and E. Bengoetxea, Eds. Springer-Verlag, 2006, pp. 138 .\n[34] H. Handa, \"Estimation of distribution algorithms with mutation,\" in Evolutionary Computation in Combinatorial Optimization, ser. Lecture Notes in Computer Science, vol. 3448. Springer Berlin / Heidelberg, 2005, pp. 112-121.\n[35] T. Mahnig and H. Mühlenbein, \"Optimal mutation rate using Bayesian priors for estimation of distribution algorithms,\" in SAGA '01: Proceedings of the International Symposium on Stochastic Algorithms. London, UK: Springer-Verlag, 2001, pp. 33-48.\n[36] J. Branke, C. Lode, and J. L. Shapiro, \"Addressing sampling errors and diversity loss in UMDA,\" in GECCO '07: Proceedings of the 9th annual conference on Genetic and evolutionary computation. New York, NY, USA: ACM, 2007, pp. 508-515.\n[37] P. Posik, \"Preventing premature convergence in a simple EDA via global step size setting,\" in PPSN, 2008, pp. 549-558.\n[38] W. Dong and X. Yao, \"NichingEDA: Utilizing the diversity inside a population of EDAs for continuous optimization,\" in IEEE World Congress on Computational Intelligence 2008 (CEC 2008), June 2008, pp. $1260-1267$.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "P. Larrañaga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Boston: Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "2",
+        "text": "R. Santana, \"A Markov network based factorized distribution algorithm for optimization,\" in Proceedings of the 14th European Conference on Machine Learning (ECML-PKDD 2003). Lecture Notes in Artificial Intelligence, vol. 2837. Berlin: Springer-Verlag, 2003, pp. 337-348."
+      },
+      {
+        "ref_id": "3",
+        "text": "R. Santana, \"Probabilistic modeling based on undirected graphs in estimation distribution algorithms,\" Ph.D. dissertation, Institute of Cybernetics,Mathematics and Physics, Havana, Cuba, 2003."
+      },
+      {
+        "ref_id": "4",
+        "text": "R. Santana, \"Estimation of distribution algorithms with Kikuchi approximations,\" Evol. Comp., vol. 13, no. 1, pp. 67-97, 2005."
+      },
+      {
+        "ref_id": "5",
+        "text": "S. K. Shakya, J. A. W. McCall, and D. F. Brown, \"Solving the Ising spin glass problem using a bivariate EDA based on Markov random fields,\" in Proceedings of IEEE Congress on Evolutionary Computation. IEEE Press, 16-21 July 20062006."
+      },
+      {
+        "ref_id": "6",
+        "text": "A. H. Wright and S. Pulavarty, \"On the convergence of an estimation of distribution algorithm based on linkage discovery and factorization,\" in GECCO '05: Proceedings of the 2005 conference on Genetic and evolutionary computation. ACM Press, 2005, pp. 695-702."
+      },
+      {
+        "ref_id": "7",
+        "text": "R. B. Heckendorn and A. H. Wright, \"Efficient linkage discovery by limited probing,\" Evol. Comp., vol. 12, no. 4, pp. 517-545, 2004."
+      },
+      {
+        "ref_id": "8",
+        "text": "S. K. Shakya, \"DEUM: A framework for an estimation of distribution algorithm based on Markov random fields,\" Ph.D. dissertation, The Robert Gordon University, Aberdeen, UK, 2006."
+      },
+      {
+        "ref_id": "9",
+        "text": "I. H. Witten and E. Frank, Data Mining: Practical Machine Learning Tools and Techniques, 2nd ed., ser. Morgan Kaufmann Series in Data Management Sys. Morgan Kaufmann, June 2005."
+      },
+      {
+        "ref_id": "10",
+        "text": "M. Pelikan and D. Goldberg, \"Hierarchical BOA solves Ising spin glasses and MAXSAT,\" in Proceedings of the Genetic and Evolutionary Computation Conference 2003 (GECCO-2003). Springer-Verlag, 2003 2003, pp. 1271-1282."
+      },
+      {
+        "ref_id": "11",
+        "text": "M. Pelikan, \"Bayesian optimization algorithm: from single level to hierarchy,\" Ph.D. dissertation, University of Illinois at UrbanaChampaign, Urbana, IL, 2002."
+      },
+      {
+        "ref_id": "12",
+        "text": "M. Pelikan, J. Ocenasek, S. Trebst, M. Troyer, and F. Alet, \"Computational complexity and simulation of rare events of Ising spin glasses,\" in GECCO (2), 2004, pp. 36-47."
+      },
+      {
+        "ref_id": "13",
+        "text": "S. K. Shakya, J. A. W. McCall, and D. F. Brown, \"Estimating the distribution in an EDA,\" in Proceedings of the International Conference on Adaptive and Natural computiNG Algorithms (ICANNGA 2005). Springer-Verlag, 21-23 March 2005, pp. 202-205."
+      },
+      {
+        "ref_id": "14",
+        "text": "S. K. Shakya, J. A. W. McCall, and D. F. Brown, \"Incorporating a Metropolis method in a distribution estimation using Markov random field algorithm,\" in Proceedings of IEEE Congress on Evolutionary Computation. IEEE, 2-5 September 2005, pp. 2576-2583."
+      },
+      {
+        "ref_id": "15",
+        "text": "A. E. I. Brownlee, J. A. W. McCall, and D. F. Brown, \"Solving the MAXSAT problem using a multivariate EDA based on Markov networks,\" in GECCO '07: Proceedings of the 2007 GECCO Conference on Genetic and Evolutionary computation. New York, NY, USA: ACM, 2007, pp. 2423-2428."
+      },
+      {
+        "ref_id": "16",
+        "text": "H. Mühlenbein and R. Höns, \"The estimation of distributions and the minimum relative entropy principle,\" Evol. Comput., vol. 13, no. 1, pp. 1-27, 2005."
+      },
+      {
+        "ref_id": "17",
+        "text": "Q. Zhang, \"On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm,\" IEEE Trans. Evolutionary Computation, vol. 8, no. 1, pp. 80-93, 2004."
+      },
+      {
+        "ref_id": "18",
+        "text": "M. Hauschild, M. Pelikan, C. F. Lima, and K. Sastry, \"Analyzing probabilistic models in hierarchical BOA on traps and spin glasses,\" in GECCO 2007: Proceedings of the 9th annual conference on Genetic and Evolutionary Computation. New York, NY, USA: ACM, 2007, pp. 523-530."
+      },
+      {
+        "ref_id": "19",
+        "text": "L. Kallel, B. Naudts, and R. Reeves, \"Properties of fitness functions and search landscapes,\" in Theoretical Aspects of Evolutionary Computing, L. Kallel, B. Naudts, and A. Rogers, Eds. Springer Verlag, 2000, pp. 177-208."
+      },
+      {
+        "ref_id": "20",
+        "text": "H. Mühlenbein and T. Mahnig, \"Evolutionary optimization using graphical models,\" New Gen. Comput., vol. 18, no. 2, pp. 157-166, 2000."
+      },
+      {
+        "ref_id": "21",
+        "text": "R. Santana, P. Larrañaga, and J. A. Lozano, \"Challenges and open problems in discrete EDAs,\" Department of Computer Science and Artificial Intelligence, University of the Basque Country, Tech. Rep. EHU-KZAA-IK-1/07, October 2007. [Online]. Available: http://www.sc.ebu.es/ccwhayes/technical.htm"
+      },
+      {
+        "ref_id": "22",
+        "text": "S. K. Shakya, J. A. W. McCall, and D. F. Brown, \"Updating the probability vector using MRF technique for a univariate EDA,\" in Proceedings of STAIRS 2004. IOS Press, 2004 2004, pp. 15-25."
+      },
+      {
+        "ref_id": "23",
+        "text": "S. Baluja and R. Caruana, \"Removing the genetics from the standard genetic algorithm.\" Morgan Kaufmann Publishers, 1995, pp. 38-46."
+      },
+      {
+        "ref_id": "24",
+        "text": "A. Brownlee, J. McCall, Q. Zhang, and D. Brown, \"Approaches to selection and their effect on fitness modeling in an estimation of distribution algorithm,\" in Proceedings of the 2008 World Congress on Computational Intelligence (WCCI-2008), 2008."
+      },
+      {
+        "ref_id": "25",
+        "text": "T. Lucey, Quantitative Techniques: An Instructional Manual. Eastleigh, Hampshire, UK: D. P. Publications, 1984."
+      },
+      {
+        "ref_id": "26",
+        "text": "A. E. Brownlee, M. Pelikan, J. A. McCall, and A. Petrovski, \"An application of a multivariate estimation of distribution algorithm to cancer chemotherapy,\" in GECCO '08: Proceedings of the 10th annual conference on Genetic and evolutionary computation. New York, NY, USA: ACM, 2008, pp. 463-464."
+      },
+      {
+        "ref_id": "27",
+        "text": "M. Pelikan, K. Sastry, and D. E. Goldberg, \"iBOA: The incremental Bayesian optimization algorithm,\" in GECCO '08: Proceedings of the 10th annual conference on Genetic and evolutionary computation. New York, NY, USA: ACM, 2008, pp. 455-462."
+      },
+      {
+        "ref_id": "28",
+        "text": "Q. Zhang, J. Sun, and E. Tsang, \"An evolutionary algorithm with guided mutation for the maximum clique problem.\" IEEE Trans.Evolutionary Computation, vol. 9, no. 2, pp. 192-200, 2005."
+      },
+      {
+        "ref_id": "29",
+        "text": "M. Pelikan and K. Sastry, \"Fitness inheritance in the Bayesian optimization algorithm,\" in GECCO (2), 2004, pp. 48-59."
+      },
+      {
+        "ref_id": "30",
+        "text": "C. F. Lima, M. Pelikan, K. Sastry, M. V. Butz, D. E. Goldberg, and F. G. Lobo, \"Substructural neighborhoods for local search in the Bayesian optimization algorithm,\" in Parallel Problem Solving from Nature - PPSN IX, (9th PPSN'06), ser. Lecture Notes in Computer Science (LNCS). Reykjavik, Iceland: Springer-Verlag, Sept. 2006, vol. 4193, pp. 232-241."
+      },
+      {
+        "ref_id": "31",
+        "text": "K. Sastry, C. Lima, and D. E. Goldberg, \"Evaluation relaxation using substructural information and linear estimation,\" in Proceedings of the 8th annual Conference on Genetic and Evolutionary Computation GECCO-2006. New York, NY, USA: ACM Press, 2006, pp. 419-426."
+      },
+      {
+        "ref_id": "32",
+        "text": "A. Ortols-Puig, E. Bernadó-Mansilla, K. Sastry, and D. E. Goldberg, \"Substructural surrogates for learning decomposable classification problems: implementation and first results,\" in GECCO '07: Proceedings of the 2007 GECCO conference on genetic and evolutionary computation. New York, NY, USA: ACM, 2007, pp. 2875-2882."
+      },
+      {
+        "ref_id": "33",
+        "text": "A. Ochoa and M. R. Soto, \"Linking entropy to estimation of distribution algorithms,\" in Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, J. A. Lozano, P. L. Naga, I. Inza, and E. Bengoetxea, Eds. Springer-Verlag, 2006, pp. 138 ."
+      },
+      {
+        "ref_id": "34",
+        "text": "H. Handa, \"Estimation of distribution algorithms with mutation,\" in Evolutionary Computation in Combinatorial Optimization, ser. Lecture Notes in Computer Science, vol. 3448. Springer Berlin / Heidelberg, 2005, pp. 112-121."
+      },
+      {
+        "ref_id": "35",
+        "text": "T. Mahnig and H. Mühlenbein, \"Optimal mutation rate using Bayesian priors for estimation of distribution algorithms,\" in SAGA '01: Proceedings of the International Symposium on Stochastic Algorithms. London, UK: Springer-Verlag, 2001, pp. 33-48."
+      },
+      {
+        "ref_id": "36",
+        "text": "J. Branke, C. Lode, and J. L. Shapiro, \"Addressing sampling errors and diversity loss in UMDA,\" in GECCO '07: Proceedings of the 9th annual conference on Genetic and evolutionary computation. New York, NY, USA: ACM, 2007, pp. 508-515."
+      },
+      {
+        "ref_id": "37",
+        "text": "P. Posik, \"Preventing premature convergence in a simple EDA via global step size setting,\" in PPSN, 2008, pp. 549-558."
+      },
+      {
+        "ref_id": "38",
+        "text": "W. Dong and X. Yao, \"NichingEDA: Utilizing the diversity inside a population of EDAs for continuous optimization,\" in IEEE World Congress on Computational Intelligence 2008 (CEC 2008), June 2008, pp. $1260-1267$."
+      }
+    ],
+    "reference_count": 38,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "PS",
+        "$p$",
+        "$p$-SD",
+        "$r$",
+        "$r$-SD",
+        "$F$",
+        "$C_{r}$",
+        "$C_{r}$-SD"
+      ],
+      "rows": [
+        [
+          16,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.887,
+          0.091
+        ],
+        [
+          25,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.924,
+          0.049
+        ],
+        [
+          36,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.932,
+          0.034
+        ],
+        [
+          49,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.939,
+          0.037
+        ],
+        [
+          64,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.949,
+          0.023
+        ],
+        [
+          100,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.942,
+          0.027
+        ],
+        [
+          256,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.945,
+          0.018
+        ],
+        [
+          324,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.943,
+          0.015
+        ],
+        [
+          400,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.94,
+          0.022
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 8
+    },
+    {
+      "table_number": "I",
+      "table_title": "DEUM-LDA Fitness Model Statistics over 30 runs",
+      "headers": [
+        "PS",
+        "$C_{r}$",
+        "LDA-FE",
+        "FE",
+        "FE-SD",
+        "IT",
+        "IT-SD",
+        "SR"
+      ],
+      "rows": [
+        [
+          16,
+          0.887,
+          480,
+          210,
+          4,
+          163,
+          310,
+          100
+        ],
+        [
+          25,
+          0.92,
+          1200,
+          330,
+          1,
+          989,
+          532,
+          100
+        ],
+        [
+          36,
+          0.932,
+          2520,
+          483,
+          25,
+          821,
+          1995,
+          100
+        ],
+        [
+          49,
+          0.905,
+          4704,
+          647,
+          3,
+          1675,
+          1234,
+          100
+        ],
+        [
+          64,
+          0.939,
+          8064,
+          846,
+          1,
+          902,
+          688,
+          100
+        ],
+        [
+          100,
+          0.944,
+          19800,
+          1446,
+          221,
+          11989,
+          21296,
+          87
+        ],
+        [
+          256,
+          0.95,
+          130560,
+          4342,
+          862,
+          130995,
+          118419,
+          67
+        ],
+        [
+          324,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          400,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 8
+    },
+    {
+      "table_number": "II",
+      "table_title": "shows the results for optimising using the algorithm. The $C_{r}$ value is given to show the fitness prediction power of the model in the context of optimisation. The number of fitness evaluations needed by LDA (FE-LDA) for each problem size is given next. Then the mean number of additional function evaluations (FE) and internal iterations of the Gibbs sampler (IT) are given along with their standard deviations (FE-SD and IT-SD). FE includes the evaluations needed to estimate model parameters and the evaluations needed to confirm the fitness of individuals generated by the Gibbs sampler. All of these value only include the successful runs; the success rate (SR) is given as a percentage of times the algorithm found a known global optimum over 30 independent runs.",
+      "headers": [
+        "PS",
+        "$C_{r}$",
+        "FE-LDA",
+        "FE",
+        "FE-SD",
+        "IT",
+        "IT-SD",
+        "SR"
+      ],
+      "rows": [
+        [
+          100,
+          0.993,
+          19800,
+          2409,
+          7,
+          8015,
+          6825,
+          100
+        ],
+        [
+          256,
+          0.993,
+          130560,
+          6166,
+          48,
+          37705,
+          82985,
+          100
+        ],
+        [
+          324,
+          0.993,
+          209304,
+          7786,
+          7,
+          18947,
+          11962,
+          80
+        ],
+        [
+          400,
+          0.992,
+          319200,
+          9688,
+          86,
+          160237,
+          154439,
+          100
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "PS",
+        "$p$",
+        "$p$-SD",
+        "$r$",
+        "$r$-SD",
+        "$F$",
+        "$C_{r}$",
+        "$C_{r}$-SD"
+      ],
+      "rows": [
+        [
+          16,
+          0.785,
+          0.183,
+          0.979,
+          0.028,
+          0.988,
+          0.997,
+          0.01
+        ],
+        [
+          25,
+          0.749,
+          0.213,
+          0.968,
+          0.029,
+          0.98,
+          0.992,
+          0.015
+        ],
+        [
+          36,
+          0.73,
+          0.166,
+          0.97,
+          0.022,
+          0.982,
+          0.994,
+          0.008
+        ],
+        [
+          49,
+          0.754,
+          0.101,
+          0.963,
+          0.019,
+          0.976,
+          0.99,
+          0.012
+        ],
+        [
+          64,
+          0.741,
+          0.107,
+          0.958,
+          0.018,
+          0.974,
+          0.99,
+          0.008
+        ],
+        [
+          100,
+          0.695,
+          0.116,
+          0.948,
+          0.018,
+          0.966,
+          0.985,
+          0.01
+        ],
+        [
+          256,
+          0.589,
+          0.092,
+          0.914,
+          0.009,
+          0.94,
+          0.968,
+          0.007
+        ],
+        [
+          324,
+          0.584,
+          0.083,
+          0.908,
+          0.011,
+          0.935,
+          0.964,
+          0.008
+        ],
+        [
+          400,
+          0.529,
+          0.085,
+          0.894,
+          0.011,
+          0.924,
+          0.956,
+          0.007
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "PS",
+        "$p$",
+        "$p$-SD",
+        "$r$",
+        "$r$-SD",
+        "$F$",
+        "$C_{r}$",
+        "$C_{r}$-SD"
+      ],
+      "rows": [
+        [
+          16,
+          0.8,
+          0.037,
+          0.703,
+          0.052,
+          0.854,
+          0.573,
+          0.163
+        ],
+        [
+          25,
+          0.896,
+          0.051,
+          0.816,
+          0.053,
+          0.921,
+          0.733,
+          0.095
+        ],
+        [
+          36,
+          0.954,
+          0.02,
+          0.89,
+          0.027,
+          0.976,
+          0.869,
+          0.05
+        ],
+        [
+          49,
+          0.992,
+          0.011,
+          0.961,
+          0.023,
+          0.989,
+          0.941,
+          0.047
+        ],
+        [
+          64,
+          0.995,
+          0.007,
+          0.984,
+          0.009,
+          1,
+          0.974,
+          0.014
+        ],
+        [
+          100,
+          1,
+          0,
+          1,
+          0.002,
+          1,
+          0.992,
+          0.004
+        ],
+        [
+          256,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0.993,
+          0.002
+        ],
+        [
+          324,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0.993,
+          0.002
+        ],
+        [
+          400,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0.993,
+          0.001
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 8
+    },
+    {
+      "table_number": "V",
+      "table_title": "DEUM- $\\chi^{2}$ Fitness Model Statistics with LDAequivalent population size over 30 runs",
+      "headers": [
+        "PS",
+        "$C_{r}$",
+        "FE",
+        "FE-SD",
+        "IT",
+        "IT-SD",
+        "SR"
+      ],
+      "rows": [
+        [
+          16,
+          0.814,
+          216,
+          17,
+          646,
+          1074,
+          90
+        ],
+        [
+          25,
+          0.831,
+          340,
+          32,
+          1278,
+          2828,
+          77
+        ],
+        [
+          36,
+          0.83,
+          479,
+          21,
+          887,
+          1621,
+          60
+        ],
+        [
+          49,
+          0.807,
+          722,
+          88,
+          6863,
+          6948,
+          50
+        ],
+        [
+          64,
+          0.816,
+          1005,
+          256,
+          17435,
+          26404,
+          43
+        ],
+        [
+          100,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          256,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          324,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          400,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "PS",
+        "$C_{r}$",
+        "FE",
+        "FE-SD",
+        "IT",
+        "IT-SD",
+        "SR"
+      ],
+      "rows": [
+        [
+          16,
+          0.951,
+          381,
+          5,
+          598,
+          230,
+          100
+        ],
+        [
+          25,
+          0.971,
+          599,
+          5,
+          2122,
+          2142,
+          100
+        ],
+        [
+          36,
+          0.951,
+          852,
+          9,
+          1425,
+          543,
+          100
+        ],
+        [
+          49,
+          0.94,
+          1166,
+          13,
+          8192,
+          14735,
+          100
+        ],
+        [
+          64,
+          0.936,
+          1505,
+          16,
+          1875,
+          1941,
+          100
+        ],
+        [
+          100,
+          0.939,
+          2799,
+          744,
+          316472,
+          525816,
+          70
+        ],
+        [
+          256,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          324,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          400,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "PS",
+        "FE",
+        "FE-SD",
+        "IT",
+        "IT-SD",
+        "SR"
+      ],
+      "rows": [
+        [
+          16,
+          2465,
+          3254,
+          4292,
+          10233,
+          100
+        ],
+        [
+          25,
+          21135,
+          2861,
+          2564001,
+          2010019,
+          83
+        ],
+        [
+          36,
+          25913,
+          911,
+          3226402,
+          1154681,
+          100
+        ],
+        [
+          49,
+          33321,
+          1826,
+          8193559,
+          3778421,
+          67
+        ],
+        [
+          64,
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          100,
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          256,
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          324,
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ],
+        [
+          400,
+          "-",
+          "-",
+          "-",
+          "-",
+          0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    }
+  ]
+}

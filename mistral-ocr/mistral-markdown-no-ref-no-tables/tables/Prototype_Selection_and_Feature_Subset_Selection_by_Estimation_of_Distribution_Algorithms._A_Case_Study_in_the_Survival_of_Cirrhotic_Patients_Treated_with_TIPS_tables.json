@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2001/Prototype Selection and Feature Subset Selection by Estimation of Distribution Algorithms. A Case Study in the Survival of Cirrhotic Patients Treated with TIPS.md",
+    "filename": "Prototype Selection and Feature Subset Selection by Estimation of Distribution Algorithms. A Case Study in the Survival of Cirrhotic Patients Treated with TIPS.md",
+    "title": "Prototype Selection and Feature Subset Selection by Estimation of Distribution Algorithms. A Case Study in the Survival of Cirrhotic Patients Treated with TIPS",
+    "year": "2001"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Attributes of the study database.",
+      "headers": [
+        "History finding attributes:",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Age",
+          "Gender",
+          "Height"
+        ],
+        [
+          "Weight",
+          "Etiology of cirrhosis",
+          "Indication of TIPS"
+        ],
+        [
+          "Bleeding origin",
+          "Number of bleedings",
+          "Prophylactic therapy with popranolol"
+        ],
+        [
+          "Previous sclerotherapy",
+          "Restriction of proteins",
+          "Number of hepatic encephalopathies"
+        ],
+        [
+          "Type of hepatic encephalophaty",
+          "Ascites intensity",
+          "Number of paracenteses"
+        ],
+        [
+          "Volume of paracenteses",
+          "Dose of furosemide",
+          "Dose of spironolactone"
+        ],
+        [
+          "Spontaneous bacterial peritonitis",
+          "Kidney failure",
+          "Organic nephropathy"
+        ],
+        [
+          "Diabetes mellitus",
+          "",
+          ""
+        ],
+        [
+          "Laboratory finding attributes:",
+          "",
+          ""
+        ],
+        [
+          "Hemoglobin",
+          "Hematocrit",
+          "White blood cell count"
+        ],
+        [
+          "Serum sodium",
+          "Urine sodium",
+          "Serum potassium"
+        ],
+        [
+          "Urine potassium",
+          "Plasma osmolarity",
+          "Urine osmolarity"
+        ],
+        [
+          "Urea",
+          "Plasma creatinine",
+          "Urine creatinine"
+        ],
+        [
+          "Creatinine clearance",
+          "Fractional sodium excretion",
+          "Diuresis"
+        ],
+        [
+          "GOT",
+          "GPT",
+          "GOT"
+        ],
+        [
+          "Alkaline phosphatase",
+          "Serum total bilirubin (mg/dl)",
+          "Serum conjugated bilirubin (mg/dl)"
+        ],
+        [
+          "Serum albumin ( $\\mathrm{g} / \\mathrm{dl}$ )",
+          "Plateletes",
+          "Prothrombin time (\\%)"
+        ],
+        [
+          "Parcial thrombin time",
+          "PRA",
+          "Proteins"
+        ],
+        [
+          "FNG",
+          "Aldosterone",
+          "ADH"
+        ],
+        [
+          "Dopamine",
+          "Norepinephrine",
+          "Epinephrine"
+        ],
+        [
+          "Gamma-globulin",
+          "",
+          ""
+        ],
+        [
+          "CHILD score",
+          "",
+          ""
+        ],
+        [
+          "FUGH score",
+          "",
+          ""
+        ],
+        [
+          "Doppler sonography:",
+          "",
+          ""
+        ],
+        [
+          "Portal size",
+          "Portal flow velocity",
+          "Portal flow right"
+        ],
+        [
+          "Portal flow left",
+          "Spleen lenght (cm)",
+          ""
+        ],
+        [
+          "Endoscopy:",
+          "",
+          ""
+        ],
+        [
+          "Size of esophageal varices",
+          "Gastric varices",
+          "Portal gastropathy"
+        ],
+        [
+          "Acute hemorrhage",
+          "",
+          ""
+        ],
+        [
+          "Remodinamic parameters",
+          "",
+          ""
+        ],
+        [
+          "Arterial pressure (mm Hg)",
+          "Heart rate (beats/min)",
+          "Cardiac output (l/min)"
+        ],
+        [
+          "Free hepatic venous pressure",
+          "Wedged hepatic venous pressure",
+          "Hepatic venous pressure gradient (HVPG)"
+        ],
+        [
+          "Central venous pressure",
+          "Portal pressure",
+          "Portosystemis venous pressure gradient"
+        ],
+        [
+          "Angiography:",
+          "",
+          ""
+        ],
+        [
+          "Portal thrombosis",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 35,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Well classified cases obtained using all the cases and all the variables, estimated by the Leave-One-Out validation technique",
+      "headers": [
+        "Classifier",
+        "Variables",
+        "Number of cases",
+        "Well classified",
+        "Percentage"
+      ],
+      "rows": [
+        [
+          "$1-N N$",
+          77,
+          107,
+          68,
+          63.55
+        ],
+        [
+          "$B P$",
+          77,
+          107,
+          73,
+          68.22
+        ],
+        [
+          "$C 4.5$",
+          77,
+          107,
+          68,
+          63.55
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Well classified cases obtained by the PS-FSS-EDA approach, estimated by the Leave-One-Out validation technique",
+      "headers": [
+        "Classifier",
+        "Prototype average",
+        "Variable average",
+        "Well classified",
+        "Percentage"
+      ],
+      "rows": [
+        [
+          "$1-N N$",
+          5.12,
+          37.38,
+          83,
+          77.53
+        ],
+        [
+          "$B P$",
+          67.53,
+          53.56,
+          80,
+          74.77
+        ],
+        [
+          4.5,
+          "$?$",
+          "$?$",
+          76,
+          71.03
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    }
+  ]
+}

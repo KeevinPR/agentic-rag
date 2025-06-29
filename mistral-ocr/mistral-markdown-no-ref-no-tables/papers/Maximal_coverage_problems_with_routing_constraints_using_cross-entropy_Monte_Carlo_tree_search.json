@@ -1,0 +1,675 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Maximal coverage problems with routing constraints using cross-entropy Monte Carlo tree search.md",
+    "filename": "Maximal coverage problems with routing constraints using cross-entropy Monte Carlo tree search.md",
+    "title": "Maximal coverage problems with routing constraints using cross-entropy Monte Carlo tree search",
+    "year": "2024"
+  },
+  "references": {
+    "header": "## References",
+    "content": "Amigoni, F., \\& Gallo, A. (2005). A multi-objective exploration strategy for mobile robots. In IEEE international conference on robotics and automation (pp. 3850-3855).\nAuer, P., Cesa-Bianchi, N., \\& Fischer, P. (2002). Finite-time analysis of the multiarmed bandit problem. Machine Learning, 47(2), 235256.\n\nBian, C., Feng, C., Qian, C., \\& Yu, Y. (2020). An efficient evolutionary algorithm for subset selection with general cost constraints. Proceedings of the AAAI Conference on Artificial Intelligence, 34(4), 3267-3274.\nBircher, A., Kamel, M., Alexis, K., Oleynikova, H., \\& Siegwart, R. (2016). Receding horizon \"next-best-view\" planner for 3d exploration. In IEEE international conference on robotics and automation (ICRA) (pp. 1462-1468).\nBircher, A., Kamel, M., Alexis, K., Oleynikova, H., \\& Siegwart, R. (2018). Receding horizon path planning for 3d exploration and surface inspection. Autonomous Robots, 42(2), 291-306.\nBrock, O., Trinkle, J., \\& Ramos, F. (2009). Proofs and experiments in scalable, near-optimal search by multiple robots. Robotics: Science and Systems IV, pp. 206-213.\nCao, Z. L., Huang, Y., \\& Hall, E. L. (1988). Region filling operations with random obstacle avoidance for mobile robots. Journal of Robotic systems, 5(2), 87-102.\nChaslot, G., Bakkes, S., Szita, I., \\& Spronck, P. (2008). Monte-Carlo tree search: A new framework for game AI. Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment, 4(1), 216-217.\nCheng, P. Keller, J., \\& Kumar, V. (2008). Time-optimal UAV trajectory planning for 3d urban structure coverage. In IEEE/RSJ international conference on intelligent robots and systems (pp. 2750-2757).\nCieslewski, T., Kaufmann, E., \\& Scaramuzza, D. (2017). Rapid exploration with multi-rotors: A frontier selection method for high speed flight. In IEEE/RSJ international conference on intelligent robots and systems (IROS) (pp. 2135-2142).\n\nConforti, M., \\& Cornuéjols, G. (1984). Submodular set functions, matroids and the greedy algorithm: Tight worst-case bounds and some generalizations of the Rado-Edmonds theorem. Discrete Applied Mathematics, 7(3), 251-274.\nConnolly, C. (1985). The determination of next best views. IEEE International Conference on Robotics and Automation, 2, 432-435.\nCoquelin, P.-A., \\& Munos, R. (2007). Bandit algorithms for tree search. arXiv:0703-062 [CS].\nCorah, M., \\& Michael, N. (2019). Distributed matroid-constrained submodular maximization for multi-robot exploration: Theory and practice. Autonomous Robots, 43(2), 485-501.\nCosta, A., Jones, O. D., \\& Kroese, D. (2007). Convergence properties of the cross-entropy method for discrete optimization. Operations Research Letters, 35(5), 573-580.\nCoulom, R. (2006). Efficient selectivity and backup operators in MonteCarlo tree search. In International conference on computers and games (pp. 72-83).\nDe Boer, P.-T., Kroese, D. P., Mannor, S., \\& Rubinstein, R. Y. (2005). A tutorial on the cross-entropy method. Annals of Operations Research, 134(1), 19-67.\nDeng, D., Duan, R., Liu, J., Sheng, K., \\& Shimada, K. (2020). Robotic exploration of unknown 2d environment using a frontierbased automatic-differentiable information gain measure. In IEEE/ASME international conference on advanced intelligent mechatronics (AIM) (pp. 1497-1503).\nDeng, D., Xu, Z., Zhao, W., \\& Shimada, K. (2020). Frontier-based automatic-differentiable information gain measure for robotic exploration of unknown 3d environments. arXiv:2011.05288.\nEnglot, B., \\& Hover, F. (2012). Sampling-based coverage path planning for inspection of complex structures. Proceedings of the International Conference on Automated Planning and Scheduling, 22, 29-37.\nFeige, U. (1998). A threshold of ln n for approximating set cover. Journal of Applied and Computational Mechanics (JACM), 45(4), $634-652$.\nFisher, M. L., Nemhauser, G. L., \\& Wolsey, L. A. (1978). An analysis of approximations for maximizing submodular set functions-II. Polyhedral Combinatorics (pp. 73-87).\nFriedrich, T., \\& Neumann, F. (2015). Maximizing submodular functions under matroid constraints by evolutionary algorithms. Evolutionary Computation, 23(4), 543-558.\nGalceran, E., \\& Carreras, M. (2023). A survey on coverage path planning for robotics. Robotics and Autonomous Systems, 61, $1258-1276$.\nGonzález-Banos, H. H., \\& Latombe, J.-C. (2002). Navigation strategies for exploring indoor environments. The International Journal of Robotics Research, 21(10-11), 829-848.\nGrossman, T., \\& Wool, A. (1997). Computational experience with approximation algorithms for the set covering problem. European Journal of Operational Research, 101(1), 81-92.\nGuillaume, M., Winands, M. H., Szita, I., \\& van den Herik, H. J. (2008). Cross-entropy for Monte-Carlo tree search. International Computer Games Association, 31(3), 145-156.\nJames, S., Konidaris, G., \\& Rosman, B. (2017). An analysis of Monte Carlo tree search. AAAI Conference on Artificial Intelligence, 31, $3576-3582$.\nKhuller, S., Moss, A., \\& Naor, J. S. (1999). The budgeted maximum coverage problem. Information Processing Letters, 70(1), 39-45.\nKocsis, L., \\& Szepesvári, C. (2006). Bandit based Monte-Carlo planning. In European conference on machine learning (pp. 282-293).\nKrause, A., \\& Guestrin, C. (2005). A note on the budgeted maximization of submodular functions.\nKrause, A., \\& Guestrin, C. (2007). Near-optimal observation selection using submodular functions. Conference on Artificial Intelligence (AAAI) Nectar track, 7, 1650-1654.\n\nKrause, A., Guestrin, C., Gupta, A., \\& Kleinberg, J. (2006). Nearoptimal sensor placements: Maximizing information while minimizing communication cost. In Proceedings of the 5th international conference on Information processing in sensor networks (pp. 2-10).\nLanillos, P., Besada-Portas, E., Pajares, G., \\& Ruz, J. J. (2012). Minimum time search for lost targets using cross entropy optimization. In IEEE/RSJ international conference on intelligent robots and systems (pp. 602-609).\nLin, S., \\& Kernighan, B. W. (1973). An effective heuristic algorithm for the traveling-salesman problem. Operations Research, 21(2), 498-516.\nLu, B. -X., \\& Tseng, K. -S. (2020). 3d map exploration via learning submodular functions in the Fourier domain. In International conference on unmanned aircraft systems (ICUAS) (pp. 1199-1205).\nLu, B.-X., \\& Tseng, K.-S. (2022). 3d map exploration using topological Fourier sparse set. Journal of Intelligent and Robotic Systems, 104, 75.\n\nLuperto, M., Antonazzi, M., Amigoni, F., \\& Borghese, N. A. (2020). Robot exploration of indoor environments using incomplete and inaccurate prior knowledge. Robotics and Autonomous Systems, 133, 103622.\nMoerland, T. M., Broekens, J., Plaat, A., \\& Jonker, C. M. (2020). The second type of uncertainty in Monte Carlo tree search. arXiv:2005.09645.\nNemhauser, G. L., Wolsey, L. A., \\& Fisher, M. L. (1978). An analysis of approximations for maximizing submodular set functions-I. Mathematical Programming, 14(1), 265-294.\nQian, C., Shi, J.-C., Yu, Y., \\& Tang, K. (2017). On subset selection with general cost constraints. International Joint Conference on Artificial Intelligence, 17, 2613-2619.\nQian, C., Yu, Y., \\& Zhou, Z.-H. (2015). Subset selection by pareto optimization. In Advances in neural information processing systems (pp. 1774-1782).\nRoostapour, V., Neumann, A., Neumann, F., \\& Friedrich, T. (2019). Pareto optimization for subset selection with dynamic cost constraints. Proceedings of the AAAI Conference on Artificial Intelligence, 33(01), 2354-2361.\nRubinstein, R. (1999). The cross-entropy method for combinatorial and continuous optimization. Methodology and Computing in Applied Probability, 1(2), 127-190.\nSchadd, M. P., Winands, M. H., Tak, M. J., \\& Uiterwijk, J. W. (2012). Single-player Monte-Carlo tree search for SameGame. Knowledge-Based Systems, 34, 3-11.\nSilver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L., Van Den Driessche, G., Schrittwieser, J., Antonoglou, I., Panneershelvam, V., Lanctot, M., et al. (2016). Mastering the game of go with deep neural networks and tree search. Nature, 529(7587), 484-489.\nSingh, A., Krause, A., Guestrin, C., Kaiser, W. J., \\& Batalin, M. A. (2006). Efficient planning of informative paths for multiple robots. In International joint conference on artificial intelligence (IJCAI) (pp. 2204-2211).\nSviridenko, M. (2004). A note on maximizing a submodular set function subject to a knapsack constraint. Operations Research Letters, 32(1), 41-43.\nTseng, K.-S. (2021). Transfer learning of coverage functions via invariant properties in the Fourier domain. Autonomous Robots, 45(4), $519-542$.\nTseng, K.-S., \\& Mettler, B. (2017). Near-optimal probabilistic search via submodularity and sparse regression. Autonomous Robots, 41(1), 205-229.\nTseng, K.-S., \\& Mettler, B. (2018). Near-optimal probabilistic search using spatial Fourier sparse set. Autonomous Robots, 42(2), 329351.\n\nUmari, H., \\& Mukhopadhyay, S. (2017). Autonomous robotic exploration based on multiple rapidly-exploring randomized trees. In\n\nIEEE/RSJ international conference on intelligent robots and systems (IROS) (pp. 1396-1402).\nXiao, C., Huang, R., Mei, J., Schuurmans, D., \\& Müller, M. (2019). Maximum entropy Monte-Carlo planning. Advances in Neural Information Processing Systems, 32, 9520-9528.\nYamauchi, B. (1997). A frontier-based approach for autonomous exploration. In IEEE international symposium on computational intelligence in robotics and automation (CIRA) (pp. 146-151).\nYasutomi, F., Yamada, M., \\& Tsukamoto, K. (1988). Cleaning robot control. In Proceedings. IEEE international conference on robotics and automation (pp. 1839-1841).\nZhang, H., \\& Vorobeychik, Y. (2016). Submodular optimization with routing constraints. Proceedings of the AAAI Conference on Artificial Intelligence, 30(1), 819-825.\nZhou, B., Zhang, Y., Chen, X., \\& Shen, S. (2021). Fuel: Fast UAV exploration using incremental frontier structure and hierarchical planning. IEEE Robotics and Automation Letters, 6(2), 779-786.\n\nPublisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.\n\nSpringer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law.\n![img-32.jpeg](img-32.jpeg)\n\nPao-Te Lin is a graduate student in the Department of Mathematics, National Central University, Taiwan. He received his B.S. degree in Mathematics from National University of Kaohsiung, Taiwan, in 2020. His current research interests include map exploration and Monte Carlo tree search.\n![img-33.jpeg](img-33.jpeg)\n\nKuo-Shih Tseng is an assistant professor in the Department of Mathematics, National Central University, Taiwan. He received his B.S. degree in Mechanical Engineering from Chung Yuan Christian University, Taiwan, in 2002, and his M.S. degree in Bio-Industrial Mechatronics Engineering from National Taiwan University, Taiwan, in 2004. He received his second M.S. degree and Ph.D. in the Computer Science and Engineering from University of Minnesota in 2013 and 2016, respectively. From 2004 to 2009, he was an associated researcher with the Intelligent Robotics Technology Division, Mechanical and System Research Laboratories, Industrial Technology Research Institute (ITRI), Hsinchu, Taiwan. From 2009 to 2011, he was a researcher with KYH Co., Ltd., Taiwan. His current research interests include robotic search, human search behavior analysis, and reinforcement learning.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Amigoni, F., \\& Gallo, A. (2005). A multi-objective exploration strategy for mobile robots. In IEEE international conference on robotics and automation (pp. 3850-3855)."
+      },
+      {
+        "ref_id": "2",
+        "text": "Auer, P., Cesa-Bianchi, N., \\& Fischer, P. (2002). Finite-time analysis of the multiarmed bandit problem. Machine Learning, 47(2), 235256."
+      },
+      {
+        "ref_id": "3",
+        "text": "Bian, C., Feng, C., Qian, C., \\& Yu, Y. (2020). An efficient evolutionary algorithm for subset selection with general cost constraints. Proceedings of the AAAI Conference on Artificial Intelligence, 34(4), 3267-3274."
+      },
+      {
+        "ref_id": "4",
+        "text": "Bircher, A., Kamel, M., Alexis, K., Oleynikova, H., \\& Siegwart, R. (2016). Receding horizon \"next-best-view\" planner for 3d exploration. In IEEE international conference on robotics and automation (ICRA) (pp. 1462-1468)."
+      },
+      {
+        "ref_id": "5",
+        "text": "Bircher, A., Kamel, M., Alexis, K., Oleynikova, H., \\& Siegwart, R. (2018). Receding horizon path planning for 3d exploration and surface inspection. Autonomous Robots, 42(2), 291-306."
+      },
+      {
+        "ref_id": "6",
+        "text": "Brock, O., Trinkle, J., \\& Ramos, F. (2009). Proofs and experiments in scalable, near-optimal search by multiple robots. Robotics: Science and Systems IV, pp. 206-213."
+      },
+      {
+        "ref_id": "7",
+        "text": "Cao, Z. L., Huang, Y., \\& Hall, E. L. (1988). Region filling operations with random obstacle avoidance for mobile robots. Journal of Robotic systems, 5(2), 87-102."
+      },
+      {
+        "ref_id": "8",
+        "text": "Chaslot, G., Bakkes, S., Szita, I., \\& Spronck, P. (2008). Monte-Carlo tree search: A new framework for game AI. Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment, 4(1), 216-217."
+      },
+      {
+        "ref_id": "9",
+        "text": "Cheng, P. Keller, J., \\& Kumar, V. (2008). Time-optimal UAV trajectory planning for 3d urban structure coverage. In IEEE/RSJ international conference on intelligent robots and systems (pp. 2750-2757)."
+      },
+      {
+        "ref_id": "10",
+        "text": "Cieslewski, T., Kaufmann, E., \\& Scaramuzza, D. (2017). Rapid exploration with multi-rotors: A frontier selection method for high speed flight. In IEEE/RSJ international conference on intelligent robots and systems (IROS) (pp. 2135-2142)."
+      },
+      {
+        "ref_id": "11",
+        "text": "Conforti, M., \\& Cornuéjols, G. (1984). Submodular set functions, matroids and the greedy algorithm: Tight worst-case bounds and some generalizations of the Rado-Edmonds theorem. Discrete Applied Mathematics, 7(3), 251-274."
+      },
+      {
+        "ref_id": "12",
+        "text": "Connolly, C. (1985). The determination of next best views. IEEE International Conference on Robotics and Automation, 2, 432-435."
+      },
+      {
+        "ref_id": "13",
+        "text": "Coquelin, P.-A., \\& Munos, R. (2007). Bandit algorithms for tree search. arXiv:0703-062 [CS]."
+      },
+      {
+        "ref_id": "14",
+        "text": "Corah, M., \\& Michael, N. (2019). Distributed matroid-constrained submodular maximization for multi-robot exploration: Theory and practice. Autonomous Robots, 43(2), 485-501."
+      },
+      {
+        "ref_id": "15",
+        "text": "Costa, A., Jones, O. D., \\& Kroese, D. (2007). Convergence properties of the cross-entropy method for discrete optimization. Operations Research Letters, 35(5), 573-580."
+      },
+      {
+        "ref_id": "16",
+        "text": "Coulom, R. (2006). Efficient selectivity and backup operators in MonteCarlo tree search. In International conference on computers and games (pp. 72-83)."
+      },
+      {
+        "ref_id": "17",
+        "text": "De Boer, P.-T., Kroese, D. P., Mannor, S., \\& Rubinstein, R. Y. (2005). A tutorial on the cross-entropy method. Annals of Operations Research, 134(1), 19-67."
+      },
+      {
+        "ref_id": "18",
+        "text": "Deng, D., Duan, R., Liu, J., Sheng, K., \\& Shimada, K. (2020). Robotic exploration of unknown 2d environment using a frontierbased automatic-differentiable information gain measure. In IEEE/ASME international conference on advanced intelligent mechatronics (AIM) (pp. 1497-1503)."
+      },
+      {
+        "ref_id": "19",
+        "text": "Deng, D., Xu, Z., Zhao, W., \\& Shimada, K. (2020). Frontier-based automatic-differentiable information gain measure for robotic exploration of unknown 3d environments. arXiv:2011.05288."
+      },
+      {
+        "ref_id": "20",
+        "text": "Englot, B., \\& Hover, F. (2012). Sampling-based coverage path planning for inspection of complex structures. Proceedings of the International Conference on Automated Planning and Scheduling, 22, 29-37."
+      },
+      {
+        "ref_id": "21",
+        "text": "Feige, U. (1998). A threshold of ln n for approximating set cover. Journal of Applied and Computational Mechanics (JACM), 45(4), $634-652$."
+      },
+      {
+        "ref_id": "22",
+        "text": "Fisher, M. L., Nemhauser, G. L., \\& Wolsey, L. A. (1978). An analysis of approximations for maximizing submodular set functions-II. Polyhedral Combinatorics (pp. 73-87)."
+      },
+      {
+        "ref_id": "23",
+        "text": "Friedrich, T., \\& Neumann, F. (2015). Maximizing submodular functions under matroid constraints by evolutionary algorithms. Evolutionary Computation, 23(4), 543-558."
+      },
+      {
+        "ref_id": "24",
+        "text": "Galceran, E., \\& Carreras, M. (2023). A survey on coverage path planning for robotics. Robotics and Autonomous Systems, 61, $1258-1276$."
+      },
+      {
+        "ref_id": "25",
+        "text": "González-Banos, H. H., \\& Latombe, J.-C. (2002). Navigation strategies for exploring indoor environments. The International Journal of Robotics Research, 21(10-11), 829-848."
+      },
+      {
+        "ref_id": "26",
+        "text": "Grossman, T., \\& Wool, A. (1997). Computational experience with approximation algorithms for the set covering problem. European Journal of Operational Research, 101(1), 81-92."
+      },
+      {
+        "ref_id": "27",
+        "text": "Guillaume, M., Winands, M. H., Szita, I., \\& van den Herik, H. J. (2008). Cross-entropy for Monte-Carlo tree search. International Computer Games Association, 31(3), 145-156."
+      },
+      {
+        "ref_id": "28",
+        "text": "James, S., Konidaris, G., \\& Rosman, B. (2017). An analysis of Monte Carlo tree search. AAAI Conference on Artificial Intelligence, 31, $3576-3582$."
+      },
+      {
+        "ref_id": "29",
+        "text": "Khuller, S., Moss, A., \\& Naor, J. S. (1999). The budgeted maximum coverage problem. Information Processing Letters, 70(1), 39-45."
+      },
+      {
+        "ref_id": "30",
+        "text": "Kocsis, L., \\& Szepesvári, C. (2006). Bandit based Monte-Carlo planning. In European conference on machine learning (pp. 282-293)."
+      },
+      {
+        "ref_id": "31",
+        "text": "Krause, A., \\& Guestrin, C. (2005). A note on the budgeted maximization of submodular functions."
+      },
+      {
+        "ref_id": "32",
+        "text": "Krause, A., \\& Guestrin, C. (2007). Near-optimal observation selection using submodular functions. Conference on Artificial Intelligence (AAAI) Nectar track, 7, 1650-1654."
+      },
+      {
+        "ref_id": "33",
+        "text": "Krause, A., Guestrin, C., Gupta, A., \\& Kleinberg, J. (2006). Nearoptimal sensor placements: Maximizing information while minimizing communication cost. In Proceedings of the 5th international conference on Information processing in sensor networks (pp. 2-10)."
+      },
+      {
+        "ref_id": "34",
+        "text": "Lanillos, P., Besada-Portas, E., Pajares, G., \\& Ruz, J. J. (2012). Minimum time search for lost targets using cross entropy optimization. In IEEE/RSJ international conference on intelligent robots and systems (pp. 602-609)."
+      },
+      {
+        "ref_id": "35",
+        "text": "Lin, S., \\& Kernighan, B. W. (1973). An effective heuristic algorithm for the traveling-salesman problem. Operations Research, 21(2), 498-516."
+      },
+      {
+        "ref_id": "36",
+        "text": "Lu, B. -X., \\& Tseng, K. -S. (2020). 3d map exploration via learning submodular functions in the Fourier domain. In International conference on unmanned aircraft systems (ICUAS) (pp. 1199-1205)."
+      },
+      {
+        "ref_id": "37",
+        "text": "Lu, B.-X., \\& Tseng, K.-S. (2022). 3d map exploration using topological Fourier sparse set. Journal of Intelligent and Robotic Systems, 104, 75."
+      },
+      {
+        "ref_id": "38",
+        "text": "Luperto, M., Antonazzi, M., Amigoni, F., \\& Borghese, N. A. (2020). Robot exploration of indoor environments using incomplete and inaccurate prior knowledge. Robotics and Autonomous Systems, 133, 103622."
+      },
+      {
+        "ref_id": "39",
+        "text": "Moerland, T. M., Broekens, J., Plaat, A., \\& Jonker, C. M. (2020). The second type of uncertainty in Monte Carlo tree search. arXiv:2005.09645."
+      },
+      {
+        "ref_id": "40",
+        "text": "Nemhauser, G. L., Wolsey, L. A., \\& Fisher, M. L. (1978). An analysis of approximations for maximizing submodular set functions-I. Mathematical Programming, 14(1), 265-294."
+      },
+      {
+        "ref_id": "41",
+        "text": "Qian, C., Shi, J.-C., Yu, Y., \\& Tang, K. (2017). On subset selection with general cost constraints. International Joint Conference on Artificial Intelligence, 17, 2613-2619."
+      },
+      {
+        "ref_id": "42",
+        "text": "Qian, C., Yu, Y., \\& Zhou, Z.-H. (2015). Subset selection by pareto optimization. In Advances in neural information processing systems (pp. 1774-1782)."
+      },
+      {
+        "ref_id": "43",
+        "text": "Roostapour, V., Neumann, A., Neumann, F., \\& Friedrich, T. (2019). Pareto optimization for subset selection with dynamic cost constraints. Proceedings of the AAAI Conference on Artificial Intelligence, 33(01), 2354-2361."
+      },
+      {
+        "ref_id": "44",
+        "text": "Rubinstein, R. (1999). The cross-entropy method for combinatorial and continuous optimization. Methodology and Computing in Applied Probability, 1(2), 127-190."
+      },
+      {
+        "ref_id": "45",
+        "text": "Schadd, M. P., Winands, M. H., Tak, M. J., \\& Uiterwijk, J. W. (2012). Single-player Monte-Carlo tree search for SameGame. Knowledge-Based Systems, 34, 3-11."
+      },
+      {
+        "ref_id": "46",
+        "text": "Silver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L., Van Den Driessche, G., Schrittwieser, J., Antonoglou, I., Panneershelvam, V., Lanctot, M., et al. (2016). Mastering the game of go with deep neural networks and tree search. Nature, 529(7587), 484-489."
+      },
+      {
+        "ref_id": "47",
+        "text": "Singh, A., Krause, A., Guestrin, C., Kaiser, W. J., \\& Batalin, M. A. (2006). Efficient planning of informative paths for multiple robots. In International joint conference on artificial intelligence (IJCAI) (pp. 2204-2211)."
+      },
+      {
+        "ref_id": "48",
+        "text": "Sviridenko, M. (2004). A note on maximizing a submodular set function subject to a knapsack constraint. Operations Research Letters, 32(1), 41-43."
+      },
+      {
+        "ref_id": "49",
+        "text": "Tseng, K.-S. (2021). Transfer learning of coverage functions via invariant properties in the Fourier domain. Autonomous Robots, 45(4), $519-542$."
+      },
+      {
+        "ref_id": "50",
+        "text": "Tseng, K.-S., \\& Mettler, B. (2017). Near-optimal probabilistic search via submodularity and sparse regression. Autonomous Robots, 41(1), 205-229."
+      },
+      {
+        "ref_id": "51",
+        "text": "Tseng, K.-S., \\& Mettler, B. (2018). Near-optimal probabilistic search using spatial Fourier sparse set. Autonomous Robots, 42(2), 329351."
+      },
+      {
+        "ref_id": "52",
+        "text": "Umari, H., \\& Mukhopadhyay, S. (2017). Autonomous robotic exploration based on multiple rapidly-exploring randomized trees. In"
+      },
+      {
+        "ref_id": "53",
+        "text": "IEEE/RSJ international conference on intelligent robots and systems (IROS) (pp. 1396-1402)."
+      },
+      {
+        "ref_id": "54",
+        "text": "Xiao, C., Huang, R., Mei, J., Schuurmans, D., \\& Müller, M. (2019). Maximum entropy Monte-Carlo planning. Advances in Neural Information Processing Systems, 32, 9520-9528."
+      },
+      {
+        "ref_id": "55",
+        "text": "Yamauchi, B. (1997). A frontier-based approach for autonomous exploration. In IEEE international symposium on computational intelligence in robotics and automation (CIRA) (pp. 146-151)."
+      },
+      {
+        "ref_id": "56",
+        "text": "Yasutomi, F., Yamada, M., \\& Tsukamoto, K. (1988). Cleaning robot control. In Proceedings. IEEE international conference on robotics and automation (pp. 1839-1841)."
+      },
+      {
+        "ref_id": "57",
+        "text": "Zhang, H., \\& Vorobeychik, Y. (2016). Submodular optimization with routing constraints. Proceedings of the AAAI Conference on Artificial Intelligence, 30(1), 819-825."
+      },
+      {
+        "ref_id": "58",
+        "text": "Zhou, B., Zhang, Y., Chen, X., \\& Shen, S. (2021). Fuel: Fast UAV exploration using incremental frontier structure and hierarchical planning. IEEE Robotics and Automation Letters, 6(2), 779-786."
+      },
+      {
+        "ref_id": "59",
+        "text": "Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations."
+      },
+      {
+        "ref_id": "60",
+        "text": "Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law."
+      },
+      {
+        "ref_id": "61",
+        "text": "Pao-Te Lin is a graduate student in the Department of Mathematics, National Central University, Taiwan. He received his B.S. degree in Mathematics from National University of Kaohsiung, Taiwan, in 2020. His current research interests include map exploration and Monte Carlo tree search."
+      },
+      {
+        "ref_id": "62",
+        "text": "Kuo-Shih Tseng is an assistant professor in the Department of Mathematics, National Central University, Taiwan. He received his B.S. degree in Mechanical Engineering from Chung Yuan Christian University, Taiwan, in 2002, and his M.S. degree in Bio-Industrial Mechatronics Engineering from National Taiwan University, Taiwan, in 2004. He received his second M.S. degree and Ph.D. in the Computer Science and Engineering from University of Minnesota in 2013 and 2016, respectively. From 2004 to 2009, he was an associated researcher with the Intelligent Robotics Technology Division, Mechanical and System Research Laboratories, Industrial Technology Research Institute (ITRI), Hsinchu, Taiwan. From 2009 to 2011, he was a researcher with KYH Co., Ltd., Taiwan. His current research interests include robotic search, human search behavior analysis, and reinforcement learning."
+      }
+    ],
+    "reference_count": 62,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The parameters of CE-MCTS and drone hardware setup",
+      "headers": [
+        "Parameter",
+        "Description",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$\\rho$",
+          "Elites rate",
+          0.02
+        ],
+        [
+          "$\\alpha$",
+          "Adaption rate",
+          0.1
+        ],
+        [
+          "$k$",
+          "CEM termination",
+          5
+        ],
+        [
+          "Altitude",
+          "Flight altitude",
+          "$1(\\mathrm{~m})$"
+        ],
+        [
+          "$\\omega_{\\max }$",
+          "Limitation of angular velocity",
+          "$35\\left({ }^{\\circ} / \\mathrm{s}\\right)$"
+        ],
+        [
+          "$v_{\\max }$",
+          "Limitation of linear velocity",
+          "$1(\\mathrm{~m} / \\mathrm{s})$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 The mean of successful search time in EX2",
+      "headers": [
+        "Location",
+        "CE-MCTS",
+        "EAMC",
+        "GCB"
+      ],
+      "rows": [
+        [
+          "$\\# 1$",
+          "$\\mathbf{5 3 . 6 3}$ (s)",
+          "-",
+          63.97
+        ],
+        [
+          "$\\# 2$",
+          "$\\mathbf{6 8 . 2 2}$",
+          89.2,
+          76.52
+        ],
+        [
+          "$\\# 3$",
+          84.01,
+          "$\\mathbf{7 4 . 1 1}$",
+          88.23
+        ],
+        [
+          "$\\# 4$",
+          93.09,
+          "$\\mathbf{5 7 . 9 9}$",
+          109.37
+        ],
+        [
+          "$\\# 5$",
+          41.21,
+          "$\\mathbf{3 7 . 8 5}$",
+          59.6
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 The mean of failed search time in EX2",
+      "headers": [
+        "Location",
+        "CE-MCTS",
+        "EAMC",
+        "GCB"
+      ],
+      "rows": [
+        [
+          "$\\# 1$",
+          "-",
+          108.4,
+          "-"
+        ],
+        [
+          "$\\# 2$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\# 3$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\# 4$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\# 5$",
+          "-",
+          "-",
+          107.24
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 The success rate for detection results of EX2",
+      "headers": [
+        "Location",
+        "CE-MCTS (\\%)",
+        "EAMC (\\%)",
+        "GCB (\\%)"
+      ],
+      "rows": [
+        [
+          1,
+          100,
+          0,
+          100
+        ],
+        [
+          2,
+          100,
+          100,
+          100
+        ],
+        [
+          3,
+          100,
+          100,
+          100
+        ],
+        [
+          4,
+          100,
+          100,
+          100
+        ],
+        [
+          5,
+          100,
+          100,
+          40
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 The average flight time",
+      "headers": [
+        "",
+        "CE-MCTS",
+        "EAMC",
+        "GCB"
+      ],
+      "rows": [
+        [
+          "Mean (s)",
+          "$\\mathbf{6 8 . 0 3}$",
+          73.51,
+          85.26
+        ],
+        [
+          "Std",
+          21.17,
+          25.24,
+          18.83
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 The coverage results of EX3-2 in MAP4 under cardinality case $^{4}$",
+      "headers": [
+        "",
+        "Generation",
+        "1",
+        "10",
+        "15",
+        "Result"
+      ],
+      "rows": [
+        [
+          420,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          16,
+          0.9232,
+          "$\\mathbf{0 . 9 4 3 1}$",
+          "$\\mathbf{0 . 9 4 3 1}$",
+          "$\\mathbf{0 . 9 4 3 1}$"
+        ],
+        [
+          "EAMC",
+          15,
+          0.9113,
+          "$\\mathbf{0 . 9 4 3 1}$",
+          "$\\mathbf{0 . 9 4 3 1}$",
+          "$\\mathbf{0 . 9 4 3 1}$"
+        ],
+        [
+          "GCB",
+          "$*$",
+          "$\\mathbf{0 . 9 2 5 0}$",
+          "-",
+          "-",
+          0.925
+        ],
+        [
+          430,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          15,
+          0.9937,
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "$\\mathbf{0 . 9 9 4 9}$"
+        ],
+        [
+          "EAMC",
+          15,
+          0.9733,
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "$\\mathbf{0 . 9 9 4 9}$"
+        ],
+        [
+          "GCB",
+          "$*$",
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "-",
+          "-",
+          0.9949
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 The coverage results of EX3-2 in MAP4 under routing case",
+      "headers": [
+        "",
+        "Generation",
+        "1",
+        "10",
+        "15",
+        "Result"
+      ],
+      "rows": [
+        [
+          41000,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          14,
+          "$\\mathbf{0 . 6 6 8 9}$",
+          "$\\mathbf{0 . 6 7 4 8}$",
+          "-",
+          "$\\mathbf{0 . 6 7 4 8}$"
+        ],
+        [
+          "EAMC",
+          24,
+          0.601,
+          0.6623,
+          "$\\mathbf{0 . 6 7 4 8}$",
+          "$\\mathbf{0 . 6 7 4 8}$"
+        ],
+        [
+          "GCB",
+          "$*$",
+          0.5186,
+          "-",
+          "-",
+          0.5186
+        ],
+        [
+          42000,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          19,
+          "$\\mathbf{0 . 9 3 1 1}$",
+          "$\\mathbf{0 . 9 4 4 0}$",
+          "$\\mathbf{0 . 9 4 4 0}$",
+          "$\\mathbf{0 . 9 4 4 0}$"
+        ],
+        [
+          "EAMC",
+          21,
+          0.916,
+          0.9434,
+          "$\\mathbf{0 . 9 4 4 0}$",
+          "$\\mathbf{0 . 9 4 4 0}$"
+        ],
+        [
+          "GCB",
+          "$*$",
+          0.8867,
+          "-",
+          "-",
+          0.8867
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 The computation time result of EX4 and the unit is seconds",
+      "headers": [
+        "",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "rows": [
+        [
+          1000,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          286.2,
+          381.7,
+          469.3,
+          643.9,
+          806.1
+        ],
+        [
+          "EAMC",
+          13.4,
+          14.3,
+          17.7,
+          25.9,
+          32.1
+        ],
+        [
+          "GCB",
+          0.2,
+          0.2,
+          0.2,
+          0.3,
+          0.3
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    }
+  ]
+}

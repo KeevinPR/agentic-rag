@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Parameter estimation of industrial PET reactor using multi-objective kernel density estimation of distribution algorithm.md",
+    "filename": "Parameter estimation of industrial PET reactor using multi-objective kernel density estimation of distribution algorithm.md",
+    "title": "Parameter estimation of industrial PET reactor using multi-objective kernel density estimation of distribution algorithm",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameters setting.",
+      "headers": [
+        "",
+        "Selection parameter: 0.3"
+      ],
+      "rows": [
+        [
+          "",
+          5
+        ],
+        [
+          "NSGA-II",
+          5
+        ],
+        [
+          "MPSO",
+          0.729
+        ],
+        [
+          "",
+          11.495
+        ],
+        [
+          "",
+          21.495
+        ],
+        [
+          "MUMDA",
+          0.3
+        ],
+        [
+          "",
+          5
+        ],
+        [
+          "MKEDA",
+          0.3
+        ],
+        [
+          "",
+          5
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Molecular structure of kinetic scheme components.",
+      "headers": [
+        "Acronym",
+        "Description",
+        "Molecular structure"
+      ],
+      "rows": [
+        [
+          "EG",
+          "Ethylene glycol",
+          "$\\mathrm{HOCH}_{2} \\mathrm{CH}_{2} \\mathrm{OH}$"
+        ],
+        [
+          "TPA",
+          "Terephthalic acid",
+          "$\\mathrm{HOOC} \\mathrm{COOH}$"
+        ],
+        [
+          "tEG",
+          "EG-end group",
+          "$-\\mathrm{OCH}_{2} \\mathrm{CH}_{2} \\mathrm{OH}$"
+        ],
+        [
+          "bEG",
+          "EG-repeat group",
+          "$-\\mathrm{OCH}_{2} \\mathrm{CH}_{2} \\mathrm{O}-\\mathrm{R}^{\\prime}$"
+        ],
+        [
+          "tTPA",
+          "TPA-end group",
+          "$-\\mathrm{OC} \\mathrm{COOH}$"
+        ],
+        [
+          "bTPA",
+          "TPA-repeat group",
+          "$-\\mathrm{OC} \\mathrm{CO} \\sim$"
+        ],
+        [
+          2,
+          "Water",
+          "$\\mathrm{H}_{2} \\mathrm{O}$"
+        ],
+        [
+          "DEG",
+          "Di-ethylene glycol",
+          "$\\mathrm{HO}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{OH}$"
+        ],
+        [
+          "tDEG",
+          "DEG-end group",
+          "$-\\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{OH}$"
+        ],
+        [
+          "bDEG",
+          "DEG-repeat group",
+          "$-\\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{O}\\left(\\mathrm{CH}_{2}\\right)_{2} \\mathrm{O} \\sim$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Reaction scheme and reaction constants.",
+      "headers": [
+        "No.",
+        "Reactions",
+        "Rate constants",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Forward",
+          "Reverse"
+        ],
+        [
+          1,
+          "tTPA + EG $\\rightleftharpoons$ bTPA + tEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{1}$",
+          "$k_{2}$"
+        ],
+        [
+          2,
+          "tTPA + DEG $\\rightleftharpoons$",
+          "$k_{1}$",
+          "$k_{2}$"
+        ],
+        [
+          "",
+          "bTPA + tDEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "",
+          ""
+        ],
+        [
+          3,
+          "tTPA + tEG $\\rightleftharpoons$ bTPA + bEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{3}$",
+          "$k_{4}$"
+        ],
+        [
+          4,
+          "tTPA + tDEG $\\rightleftharpoons$",
+          "$k_{3}$",
+          "$k_{4}$"
+        ],
+        [
+          "",
+          "bTPA + bDEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "",
+          ""
+        ],
+        [
+          5,
+          "tEG + tEG $\\rightleftharpoons$ bEG + EG",
+          "$k_{5}$",
+          "$k_{6}$"
+        ],
+        [
+          6,
+          "EG + EG $\\rightarrow$ DEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{7}$",
+          "-"
+        ],
+        [
+          7,
+          "EG + tEG $\\rightarrow$ tDEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{8}$",
+          "-"
+        ],
+        [
+          8,
+          "tEG + tEG $\\rightarrow$ bDEG $+\\mathrm{H}_{2} \\mathrm{O}$",
+          "$k_{9}$",
+          "-"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Intervals of estimated variables.",
+      "headers": [
+        "Rate constant sets",
+        "Intervals of $k_{\\mathrm{di}}\\left(\\times 10^{6}\\right)$",
+        "$\\mathrm{Ea}(\\mathrm{kcal} /$ <br> kmol)"
+      ],
+      "rows": [
+        [
+          1,
+          "$[1.456,2.704]$",
+          17.6
+        ],
+        [
+          2,
+          "$[1.456,2.704]$",
+          17.6
+        ],
+        [
+          3,
+          "$[0.5824,1.0816]$",
+          17.6
+        ],
+        [
+          4,
+          "$[1.1648,2.1632]$",
+          17.6
+        ],
+        [
+          5,
+          "$[0.952,1.768]$",
+          18.5
+        ],
+        [
+          6,
+          "$[1.904,3.536]$",
+          18.5
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "6",
+      "table_title": "Comparison between predictions and measurements under different product loads.",
+      "headers": [
+        "Product <br> load, $(\\mathrm{t} / \\mathrm{h})$",
+        "$\\left[\\mathrm{C}_{\\mathrm{COOH}}\\right],(\\mathrm{mol} / \\mathrm{T})$ <br> (Measurement)",
+        "$\\left[\\mathrm{C}_{\\mathrm{COOH}}\\right],(\\mathrm{mol} / \\mathrm{T})$ <br> (Prediction)",
+        "Error percent of <br> $[\\mathrm{COOH}],(\\%)$",
+        "$D P$ <br> (Measurement)",
+        "$D P$ <br> (Prediction)",
+        "Error percent <br> of $D P,(\\%)$"
+      ],
+      "rows": [
+        [
+          6.496,
+          639,
+          652.1,
+          2.1,
+          16,
+          16.1,
+          0.67
+        ],
+        [
+          6.608,
+          684,
+          667.8,
+          2.31,
+          16,
+          16.2,
+          1.44
+        ],
+        [
+          6.717,
+          690,
+          709.9,
+          2.84,
+          15,
+          15.2,
+          1.11
+        ],
+        [
+          6.717,
+          655,
+          698.4,
+          6.56,
+          20,
+          19.6,
+          2.17
+        ],
+        [
+          6.853,
+          623,
+          660.2,
+          6.04,
+          19,
+          18.8,
+          0.94
+        ],
+        [
+          6.896,
+          652,
+          690.7,
+          5.86,
+          16,
+          16.1,
+          0.63
+        ],
+        [
+          6.897,
+          712,
+          735.7,
+          3.35,
+          18,
+          17.8,
+          1.0
+        ],
+        [
+          7.046,
+          650,
+          639.6,
+          1.68,
+          17,
+          17.1,
+          0.6
+        ],
+        [
+          7.138,
+          646,
+          682.9,
+          5.77,
+          15,
+          15.0,
+          0.27
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    }
+  ]
+}

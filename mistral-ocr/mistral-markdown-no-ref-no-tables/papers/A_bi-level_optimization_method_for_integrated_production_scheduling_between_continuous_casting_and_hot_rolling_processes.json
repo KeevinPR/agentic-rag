@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/A bi-level optimization method for integrated production scheduling between continuous casting and hot rolling processes.md",
+    "filename": "A bi-level optimization method for integrated production scheduling between continuous casting and hot rolling processes.md",
+    "title": "A bi-level optimization method for integrated production scheduling between continuous casting and hot rolling processes",
+    "year": "2022"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] K. Mao, Q.-k. Pan, X. Pang, and T. Chai, \"A novel Lagrangian relaxation approach for a hybrid flowshop scheduling problem in the steelmaking-continuous casting process,\" European Journal of Operational Research, vol. 236, no. 1, pp. 51-60, 2014.\n[2] J. Long, Z. Zheng, and X. Gao, \"Dynamic scheduling in steelmaking-continuous casting production for continuous caster breakdown,\" International Journal of Production Research, vol. 55, no. 11, pp. 3197-3216, 2016.\n[3] L. Tang, Y. Zhao, and J. Liu, \"An Improved Differential Evolution Algorithm for Practical Dynamic Scheduling in Steelmaking-Continuous Casting Production,\" IEEE Transactions on Evolutionary Computation, vol. 18, no. 2, pp. 209-225, 2014.\n[4] A. Özgür, Y. Uygun, and M.-T. Hütt, \"A review of planning and scheduling methods for hot rolling mills in steel production,\" Computers \\& Industrial Engineering, 2020.\n[5] X. Wang and L. Tang, \"Scheduling a single machine with multiple job processing ability to minimize makespan,\" Journal of the Operational Research Society, vol. 62, no. 8, pp. 1555-1565, Aug 2011.\n[6] R. Hu, S. X. Yang, X. C. Luo, and leee, \"Ant Colony Optimization for Scheduling Walking Beam Reheating Furnaces,\" in 2014 11th World Congress on Intelligent Control and Automation, 2014, pp. 621-626.\n[7] L. X. Tang, H. Z. Ren, and Y. Yang, \"Reheat furnace scheduling with energy consideration,\" International Journal of Production Research, vol. 53, no. 6, pp. 1642-1660, Mar 2015.\n[8] B. L. Zhu and S. F. Ji, \"Steelmaking-Hot Rolling Scheduling Model and Method for Integrated Management in Iron and Steel Enterprises,\" Advanced Materials Research, vol. 860-863, pp. 3094-3099, 2013.\n[9] I. Mattik, P. Amorim, and H.-O. Günther, \"Hierarchical scheduling of continuous casters and hot strip mills in the steel industry: a block planning application,\" International Journal of Production Research, vol. 52, no. 9, pp. 2576-2591, 2014.\n[10] Z. Pan, T. Wang, X. Zhou, and P. Chen, \"Application of extremal optimization approach to the integrated scheduling problem of continuous casting and hot rolling process,\" in Control \\& Decision Conference, 2017.\n[11] Y. Y. Tan, M. C. Zhou, Y. Y. Wang, X. W. Guo, and L. Qi, \"A Hybrid MIP-CP Approach to Multistage Scheduling Problem in Continuous Casting and Hot-Rolling Processes,\" IEEE Transactions on Automation Science and Engineering, vol. 16, no. 4, pp. 1860-1869, Oct 2019.\n[12] S. Wang, Y. Shi, and S. Liu, \"Integrated Scheduling for Steelmaking Continuous Casting- Hot Rolling Processes considering Hot Chain Logistics,\" Mathematical Problems in Engineering, vol. 2020, pp. 1-10, 2020.\n[13] J. Yin, W. Lu, X. Xin, and L. Zhang, \"Application of Monte Carlo sampling and Latin Hypercube sampling methods in pumping schedule design during establishing surrogate model,\" 2011 International Symposium on Water Resource and Environmental Protection, 2011, vol. 1, pp. 212-215.\n[14] L. Tang, X. Song, J. Liu, and C. Liu, \"An Estimation of Distribution Algorithm with Filtering and Learning,\" IEEE Transactions on Automation Science and Engineering, vol. 18, no. 3, pp. 1478-1491, 2021.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "K. Mao, Q.-k. Pan, X. Pang, and T. Chai, \"A novel Lagrangian relaxation approach for a hybrid flowshop scheduling problem in the steelmaking-continuous casting process,\" European Journal of Operational Research, vol. 236, no. 1, pp. 51-60, 2014."
+      },
+      {
+        "ref_id": "2",
+        "text": "J. Long, Z. Zheng, and X. Gao, \"Dynamic scheduling in steelmaking-continuous casting production for continuous caster breakdown,\" International Journal of Production Research, vol. 55, no. 11, pp. 3197-3216, 2016."
+      },
+      {
+        "ref_id": "3",
+        "text": "L. Tang, Y. Zhao, and J. Liu, \"An Improved Differential Evolution Algorithm for Practical Dynamic Scheduling in Steelmaking-Continuous Casting Production,\" IEEE Transactions on Evolutionary Computation, vol. 18, no. 2, pp. 209-225, 2014."
+      },
+      {
+        "ref_id": "4",
+        "text": "A. Özgür, Y. Uygun, and M.-T. Hütt, \"A review of planning and scheduling methods for hot rolling mills in steel production,\" Computers \\& Industrial Engineering, 2020."
+      },
+      {
+        "ref_id": "5",
+        "text": "X. Wang and L. Tang, \"Scheduling a single machine with multiple job processing ability to minimize makespan,\" Journal of the Operational Research Society, vol. 62, no. 8, pp. 1555-1565, Aug 2011."
+      },
+      {
+        "ref_id": "6",
+        "text": "R. Hu, S. X. Yang, X. C. Luo, and leee, \"Ant Colony Optimization for Scheduling Walking Beam Reheating Furnaces,\" in 2014 11th World Congress on Intelligent Control and Automation, 2014, pp. 621-626."
+      },
+      {
+        "ref_id": "7",
+        "text": "L. X. Tang, H. Z. Ren, and Y. Yang, \"Reheat furnace scheduling with energy consideration,\" International Journal of Production Research, vol. 53, no. 6, pp. 1642-1660, Mar 2015."
+      },
+      {
+        "ref_id": "8",
+        "text": "B. L. Zhu and S. F. Ji, \"Steelmaking-Hot Rolling Scheduling Model and Method for Integrated Management in Iron and Steel Enterprises,\" Advanced Materials Research, vol. 860-863, pp. 3094-3099, 2013."
+      },
+      {
+        "ref_id": "9",
+        "text": "I. Mattik, P. Amorim, and H.-O. Günther, \"Hierarchical scheduling of continuous casters and hot strip mills in the steel industry: a block planning application,\" International Journal of Production Research, vol. 52, no. 9, pp. 2576-2591, 2014."
+      },
+      {
+        "ref_id": "10",
+        "text": "Z. Pan, T. Wang, X. Zhou, and P. Chen, \"Application of extremal optimization approach to the integrated scheduling problem of continuous casting and hot rolling process,\" in Control \\& Decision Conference, 2017."
+      },
+      {
+        "ref_id": "11",
+        "text": "Y. Y. Tan, M. C. Zhou, Y. Y. Wang, X. W. Guo, and L. Qi, \"A Hybrid MIP-CP Approach to Multistage Scheduling Problem in Continuous Casting and Hot-Rolling Processes,\" IEEE Transactions on Automation Science and Engineering, vol. 16, no. 4, pp. 1860-1869, Oct 2019."
+      },
+      {
+        "ref_id": "12",
+        "text": "S. Wang, Y. Shi, and S. Liu, \"Integrated Scheduling for Steelmaking Continuous Casting- Hot Rolling Processes considering Hot Chain Logistics,\" Mathematical Problems in Engineering, vol. 2020, pp. 1-10, 2020."
+      },
+      {
+        "ref_id": "13",
+        "text": "J. Yin, W. Lu, X. Xin, and L. Zhang, \"Application of Monte Carlo sampling and Latin Hypercube sampling methods in pumping schedule design during establishing surrogate model,\" 2011 International Symposium on Water Resource and Environmental Protection, 2011, vol. 1, pp. 212-215."
+      },
+      {
+        "ref_id": "14",
+        "text": "L. Tang, X. Song, J. Liu, and C. Liu, \"An Estimation of Distribution Algorithm with Filtering and Learning,\" IEEE Transactions on Automation Science and Engineering, vol. 18, no. 3, pp. 1478-1491, 2021."
+      }
+    ],
+    "reference_count": 14,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "COMPutational Results of Proposed Algorithm",
+      "headers": [
+        "instances",
+        "$\\boldsymbol{n}^{C}$",
+        "$\\boldsymbol{n}^{R}$",
+        "$\\boldsymbol{n}$",
+        "$\\boldsymbol{\\alpha}$",
+        "$\\begin{gathered} \\text { DHCR } \\\\ \\text { slabs } \\end{gathered}$",
+        "HCR <br> slabs",
+        "CCR <br> slabs",
+        "Interval between CC-HR",
+        "residence time",
+        "$\\mathbf{T} /(\\mathbf{s})$"
+      ],
+      "rows": [
+        [
+          "$\\# 01$",
+          4,
+          3,
+          88,
+          "$[0.97,0.90,0.88]$",
+          25,
+          63,
+          0,
+          9232,
+          4715,
+          131
+        ],
+        [
+          "$\\# 02$",
+          4,
+          3,
+          90,
+          "$[0.50,0.43,0.37]$",
+          30,
+          45,
+          15,
+          10940,
+          4657,
+          167
+        ],
+        [
+          "$\\# 03$",
+          4,
+          3,
+          97,
+          "$[0.70,0.50,0.77]$",
+          34,
+          58,
+          5,
+          10235,
+          4798,
+          281
+        ],
+        [
+          "$\\# 04$",
+          5,
+          3,
+          108,
+          "$[0.90,0.70,0.76]$",
+          38,
+          52,
+          18,
+          11249,
+          5365,
+          288
+        ],
+        [
+          "$\\# 05$",
+          5,
+          4,
+          115,
+          "$[0.77,0.97,0.70,0.90]$",
+          50,
+          50,
+          15,
+          11976,
+          6572,
+          227
+        ],
+        [
+          "$\\# 06$",
+          5,
+          3,
+          120,
+          "$[0.70,0.50,0.77]$",
+          50,
+          55,
+          15,
+          12854,
+          5700,
+          234
+        ],
+        [
+          "$\\# 07$",
+          5,
+          4,
+          130,
+          "$[0.57,0.50,0.50,0.43]$",
+          60,
+          70,
+          0,
+          13894,
+          6016,
+          271
+        ],
+        [
+          "$\\# 08$",
+          6,
+          4,
+          134,
+          "$[0.70,0.70,0.77,0.57]$",
+          70,
+          54,
+          10,
+          13921,
+          6083,
+          315
+        ],
+        [
+          "$\\# 09$",
+          5,
+          4,
+          140,
+          "$[0.97,0.70,0.57,0.03]$",
+          50,
+          74,
+          26,
+          14746,
+          6795,
+          300
+        ],
+        [
+          "$\\# 10$",
+          6,
+          4,
+          147,
+          "$[0.57,0.37,0.83,0.10]$",
+          50,
+          77,
+          20,
+          14080,
+          8321,
+          324
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 11
+    },
+    {
+      "table_number": "II",
+      "table_title": "COMPUTATIONAL RESULTS OF INSTANCE 03",
+      "headers": [
+        "No.",
+        "$\\boldsymbol{\\alpha}$",
+        "upper-level <br> value",
+        "lower-level <br> value"
+      ],
+      "rows": [
+        [
+          1,
+          "$[0.35,0.63,0.73]$",
+          46323,
+          26771
+        ],
+        [
+          2,
+          "$[0.43,0.19,0.65]$",
+          38805,
+          12099
+        ],
+        [
+          3,
+          "$[0.68,0.45,0.43]$",
+          64212,
+          24656
+        ],
+        [
+          4,
+          "$[0.48,0.57,0.91]$",
+          54990,
+          38802
+        ],
+        [
+          5,
+          "$[0.73,0.90,0.26]$",
+          32338,
+          14898
+        ],
+        [
+          "$\\mathbf{6}$",
+          "$[0.78,0.15,0.47]$",
+          41297,
+          24227
+        ],
+        [
+          7,
+          "$[0.54,0.35,0.98]$",
+          28965,
+          6358
+        ],
+        [
+          "$\\mathbf{8}$",
+          "$[0.70,0.50,0.77]$",
+          "$\\mathbf{2 6 5 7 0}$",
+          "$\\mathbf{4 7 9 8}$"
+        ],
+        [
+          9,
+          "$[0.94,0.46,0.83]$",
+          30327,
+          8698
+        ],
+        [
+          10,
+          "$[0.24,0.51,0.08]$",
+          36771,
+          9611
+        ],
+        [
+          11,
+          "$[0.88,0.96,0.15]$",
+          50024,
+          35661
+        ],
+        [
+          12,
+          "$[0.27,0.70,0.31]$",
+          32968,
+          5873
+        ],
+        [
+          13,
+          "$[0.83,0.26,0.02]$",
+          44260,
+          19942
+        ],
+        [
+          14,
+          "$[0.07,0.10,0.86]$",
+          29801,
+          10197
+        ],
+        [
+          15,
+          "$[0.97,0.82,0.21]$",
+          37882,
+          6812
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 4
+    }
+  ]
+}

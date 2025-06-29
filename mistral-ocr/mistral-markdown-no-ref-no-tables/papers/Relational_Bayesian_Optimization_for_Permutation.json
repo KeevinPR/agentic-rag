@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/Relational Bayesian Optimization for Permutation.md",
+    "filename": "Relational Bayesian Optimization for Permutation.md",
+    "title": "Relational Bayesian Optimization for Permutation",
+    "year": "2023"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] M. Ayodele, 2018. Effective and efficient estimation of distribution algorithms for permutation and scheduling problems. Ph.D. Dissertation.\n[2] P. A. N. Booman, N.H. Luong, and D. Thierens. 2016. Expanding from discrete cartesian to permutation gene-pool optimal mixing evolutionary algorithms. In Proceedings of the Genetic and Evolutionary Computation Conference 2016. $637-644$.\n[3] J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano. 2012. A review on estimation of distribution algorithms in permutation-based combinatorial optimization problems. Progress in Artificial Intelligence 1 (2012), 103-117.\n[4] J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano. 2014. Extending distancebased ranking models in estimation of distribution algorithms. In 2014 IEEE Congress on Evolutionary Computation (CIC) IEEE, 2459-2466.\n[5] J. Ceberio, A. Mendiburu, and J. A. Lozano. 2011. Introducing the mallows model on estimation of distribution algorithms. In Neural Information Processing: 18th International Conference, KUNIP 2011, Shanghai, China, November 13-17, 2011, Proceedings, Part II 18. Springer, 461-470.\n[6] J. Ceberio, A. Mendiburu, and J. A. Lozano. 2013. The Plackett-Luce ranking model on permutation-based optimization problems. In 2013 IEEE congress on evolutionary computation. IEEE, 494-501.\n[7] J. Ceberio, A. Mendiburu, and J. A. Lozano. 2015. Kernels of mallows models for solving permutation-based problems. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation. 505-512.\n[8] M. Pelikan, D. E. Goldberg, E. Cantó-Paz, et al. 1999. BOA: The Bayesian optimization algorithm. In Proceedings of the genetic and evolutionary computation conference GECCO-99, Vol. 1. Citeeeer, 525-532.\n[9] S. Tsutsui. 2002. Probabilistic model-building genetic algorithms in permutation representation domain using edge histogram. In Parallel Problem Solving from Nature-PPSN VII: 7th International Conference Granada, Spain, September 7-11, 2002 Proceedings. Springer, 224-233.\n[10] S. Tsutsui. 2006. A comparative study of sampling methods in node histogram models with probabilistic model-building genetic algorithms. In 2006 IEEE International Conference on Systems, Man and Cybernetics, Vol. 4. IEEE, 3132-3137.\n[11] S. Wozniak, M.W. Przewozniczek, and M.M. Komarnicki. 2020. Parameter-less population pyramid for permutation-based problems. In Parallel Problem Solving from Nature-PPSN XVI: 16th International Conference, PPSN 2020, Leiden, The Netherlands, September 5-9, 2020, Proceedings, Part I 16. Springer, 418-430.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "M. Ayodele, 2018. Effective and efficient estimation of distribution algorithms for permutation and scheduling problems. Ph.D. Dissertation."
+      },
+      {
+        "ref_id": "2",
+        "text": "P. A. N. Booman, N.H. Luong, and D. Thierens. 2016. Expanding from discrete cartesian to permutation gene-pool optimal mixing evolutionary algorithms. In Proceedings of the Genetic and Evolutionary Computation Conference 2016. $637-644$."
+      },
+      {
+        "ref_id": "3",
+        "text": "J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano. 2012. A review on estimation of distribution algorithms in permutation-based combinatorial optimization problems. Progress in Artificial Intelligence 1 (2012), 103-117."
+      },
+      {
+        "ref_id": "4",
+        "text": "J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano. 2014. Extending distancebased ranking models in estimation of distribution algorithms. In 2014 IEEE Congress on Evolutionary Computation (CIC) IEEE, 2459-2466."
+      },
+      {
+        "ref_id": "5",
+        "text": "J. Ceberio, A. Mendiburu, and J. A. Lozano. 2011. Introducing the mallows model on estimation of distribution algorithms. In Neural Information Processing: 18th International Conference, KUNIP 2011, Shanghai, China, November 13-17, 2011, Proceedings, Part II 18. Springer, 461-470."
+      },
+      {
+        "ref_id": "6",
+        "text": "J. Ceberio, A. Mendiburu, and J. A. Lozano. 2013. The Plackett-Luce ranking model on permutation-based optimization problems. In 2013 IEEE congress on evolutionary computation. IEEE, 494-501."
+      },
+      {
+        "ref_id": "7",
+        "text": "J. Ceberio, A. Mendiburu, and J. A. Lozano. 2015. Kernels of mallows models for solving permutation-based problems. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation. 505-512."
+      },
+      {
+        "ref_id": "8",
+        "text": "M. Pelikan, D. E. Goldberg, E. Cantó-Paz, et al. 1999. BOA: The Bayesian optimization algorithm. In Proceedings of the genetic and evolutionary computation conference GECCO-99, Vol. 1. Citeeeer, 525-532."
+      },
+      {
+        "ref_id": "9",
+        "text": "S. Tsutsui. 2002. Probabilistic model-building genetic algorithms in permutation representation domain using edge histogram. In Parallel Problem Solving from Nature-PPSN VII: 7th International Conference Granada, Spain, September 7-11, 2002 Proceedings. Springer, 224-233."
+      },
+      {
+        "ref_id": "10",
+        "text": "S. Tsutsui. 2006. A comparative study of sampling methods in node histogram models with probabilistic model-building genetic algorithms. In 2006 IEEE International Conference on Systems, Man and Cybernetics, Vol. 4. IEEE, 3132-3137."
+      },
+      {
+        "ref_id": "11",
+        "text": "S. Wozniak, M.W. Przewozniczek, and M.M. Komarnicki. 2020. Parameter-less population pyramid for permutation-based problems. In Parallel Problem Solving from Nature-PPSN XVI: 16th International Conference, PPSN 2020, Leiden, The Netherlands, September 5-9, 2020, Proceedings, Part I 16. Springer, 418-430."
+      }
+    ],
+    "reference_count": 11,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rows": [
+        [
+          5.1,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.1,
+          1.1,
+          1.1,
+          2.1
+        ],
+        [
+          0.0,
+          0.1,
+          4.1,
+          0.1,
+          1.1
+        ],
+        [
+          0.0,
+          0.1,
+          0.1,
+          3.1,
+          2.1
+        ],
+        [
+          0.0,
+          4.1,
+          0.1,
+          1.1,
+          0.1
+        ],
+        [
+          1,
+          2,
+          4,
+          3,
+          0
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 shows the result of RBOP, EHBSA, NHBSA, and KMMEDA on TSP. In comparison to NHBSA and KMMEDA, RBOP produces solutions that are closer to the optimal solution in all TSP instances.",
+      "headers": [
+        "TSP",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "instance",
+          "RBOP",
+          "EHBSA",
+          "NHBSA",
+          "KMMEDA",
+          ""
+        ],
+        [
+          24,
+          1.447,
+          "$\\mathbf{0 . 0 0 0}$",
+          3.121,
+          13.365,
+          ""
+        ],
+        [
+          48,
+          6.916,
+          "$\\mathbf{0 . 0 0 0}$",
+          20.914,
+          33.845,
+          ""
+        ],
+        [
+          51,
+          6.244,
+          "$\\mathbf{0 . 0 0 0}$",
+          21.479,
+          27.606,
+          ""
+        ],
+        [
+          52,
+          7.299,
+          "$\\mathbf{0 . 0 0 0}$",
+          25.935,
+          31.026,
+          ""
+        ],
+        [
+          76,
+          11.338,
+          "$\\mathbf{0 . 0 0 0}$",
+          35.483,
+          39.424,
+          ""
+        ],
+        [
+          76,
+          14.437,
+          "$\\mathbf{0 . 0 0 0}$",
+          43.586,
+          49.135,
+          ""
+        ],
+        [
+          96,
+          22.205,
+          "$\\mathbf{0 . 0 0 0}$",
+          66.308,
+          61.306,
+          ""
+        ],
+        [
+          99,
+          21.85,
+          "$\\mathbf{0 . 0 0 0}$",
+          66.111,
+          64.467,
+          ""
+        ],
+        [
+          101,
+          15.262,
+          "$\\mathbf{0 . 6 3 6}$",
+          44.928,
+          44.436,
+          ""
+        ],
+        [
+          107,
+          48.093,
+          "$\\mathbf{0 . 0 0 0}$",
+          130.769,
+          193.169,
+          ""
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "The performance (ARPD) of RBOP, EHBSA, NHBSA, and KMMEDA on QAP.",
+      "headers": [
+        "QAP",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "instance",
+          "RBOP",
+          "EHBSA",
+          "NHBSA",
+          "KMMEDA"
+        ],
+        [
+          26,
+          "$\\mathbf{0 . 0 0 1}$",
+          0.267,
+          0.01,
+          0.221
+        ],
+        [
+          26,
+          "$\\mathbf{0 . 0 0 2}$",
+          0.233,
+          0.008,
+          0.236
+        ],
+        [
+          40,
+          3.169,
+          6.701,
+          3.216,
+          "$\\mathbf{2 . 9 0 4}$"
+        ],
+        [
+          40,
+          "$\\mathbf{0 . 2 0 3}$",
+          3.209,
+          0.782,
+          8.023
+        ],
+        [
+          60,
+          4.073,
+          7.165,
+          3.781,
+          "$\\mathbf{3 . 0 6 0}$"
+        ],
+        [
+          60,
+          "$\\mathbf{0 . 6 5 6}$",
+          7.252,
+          0.983,
+          5.588
+        ],
+        [
+          80,
+          4.059,
+          6.449,
+          2.799,
+          "$\\mathbf{2 . 4 4 7}$"
+        ],
+        [
+          80,
+          "$\\mathbf{2 . 0 5 0}$",
+          12.585,
+          2.329,
+          4.977
+        ],
+        [
+          100,
+          4.343,
+          6.282,
+          2.812,
+          "$\\mathbf{2 . 3 0 7}$"
+        ],
+        [
+          100,
+          1.346,
+          11.393,
+          "$\\mathbf{0 . 5 2 2}$",
+          4.151
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "The performance (ARPD) of RBOP, EHBSA, NHBSA, and KMMEDA on PFSP.",
+      "headers": [
+        "PFSP",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "instance",
+          "RBOP",
+          "EHBSA",
+          "NHBSA",
+          "KMMEDA"
+        ],
+        [
+          "$50 \\_10 \\_0$",
+          "$\\mathbf{2 . 1 5 1}$",
+          3.555,
+          2.587,
+          4.485
+        ],
+        [
+          "$50 \\_10 \\_1$",
+          "$\\mathbf{2 . 1 3 5}$",
+          3.363,
+          2.736,
+          4.037
+        ],
+        [
+          "$50 \\_20 \\_0$",
+          "$\\mathbf{2 . 0 5 8}$",
+          4.141,
+          2.259,
+          4.288
+        ],
+        [
+          "$50 \\_20 \\_1$",
+          "$\\mathbf{1 . 7 7 8}$",
+          3.714,
+          2.557,
+          4.41
+        ],
+        [
+          "$100 \\_5 \\_0$",
+          "$\\mathbf{1 . 7 1 5}$",
+          2.223,
+          2.348,
+          2.564
+        ],
+        [
+          "$100 \\_5 \\_1$",
+          "$\\mathbf{1 . 6 5 2}$",
+          1.803,
+          2.382,
+          2.62
+        ],
+        [
+          "$100 \\_10 \\_0$",
+          "$\\mathbf{2 . 7 0 7}$",
+          4.796,
+          3.307,
+          3.544
+        ],
+        [
+          "$100 \\_10 \\_1$",
+          "$\\mathbf{3 . 3 3 3}$",
+          5.543,
+          3.791,
+          4.481
+        ],
+        [
+          "$100 \\_20 \\_0$",
+          "$\\mathbf{3 . 3 5 4}$",
+          6.418,
+          3.819,
+          4.416
+        ],
+        [
+          "$100 \\_20 \\_1$",
+          "$\\mathbf{3 . 4 6 3}$",
+          5.602,
+          3.775,
+          3.8
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "The performance (ARPD) of RBOP, EHBSA, NHBSA, and KMMEDA on LOP.",
+      "headers": [
+        "LOP",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "instance",
+          "RBOP",
+          "EHBSA",
+          "NHBSA",
+          "KMMEDA"
+        ],
+        [
+          6511,
+          "$\\mathbf{0 . 0 2 0}$",
+          0.078,
+          0.038,
+          0.549
+        ],
+        [
+          6511,
+          0.006,
+          0.061,
+          "$\\mathbf{0 . 0 0 4}$",
+          0.255
+        ],
+        [
+          6511,
+          0.055,
+          "$\\mathbf{0 . 0 1 7}$",
+          0.121,
+          0.305
+        ],
+        [
+          1,
+          0.037,
+          "$\\mathbf{0 . 0 1 0}$",
+          0.02,
+          0.531
+        ],
+        [
+          2,
+          0.066,
+          0.08,
+          "$\\mathbf{0 . 0 6 4}$",
+          0.493
+        ],
+        [
+          3,
+          "$\\mathbf{0 . 1 4 9}$",
+          0.169,
+          "$\\mathbf{0 . 1 4 9}$",
+          0.403
+        ],
+        [
+          -6511150,
+          "$\\mathbf{2 . 8 8 3}$",
+          9.289,
+          3.373,
+          4.539
+        ],
+        [
+          -6511150,
+          "$\\mathbf{4 . 3 0 2}$",
+          10.748,
+          4.716,
+          5.595
+        ],
+        [
+          -6511150,
+          "$\\mathbf{4 . 2 2 7}$",
+          10.556,
+          4.539,
+          5.476
+        ],
+        [
+          -6511150,
+          "$\\mathbf{1 . 6 3 7}$",
+          6.247,
+          2.01,
+          2.756
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 5
+    }
+  ]
+}

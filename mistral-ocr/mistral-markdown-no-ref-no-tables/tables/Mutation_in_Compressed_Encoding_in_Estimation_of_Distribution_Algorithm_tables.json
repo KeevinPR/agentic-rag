@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Mutation in Compressed Encoding in Estimation of Distribution Algorithm.md",
+    "filename": "Mutation in Compressed Encoding in Estimation of Distribution Algorithm.md",
+    "title": "Mutation in Compressed Encoding in Estimation of Distribution Algorithm",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "EXPERIMENTAL PARAMETERS",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Population size",
+          1000
+        ],
+        [
+          "Problem size",
+          800
+        ],
+        [
+          "LZW chromosome length",
+          800
+        ],
+        [
+          "Maximum evaluations",
+          50000
+        ],
+        [
+          "Mutation rate",
+          "$0.00,0.05,0.10,0.15$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "AVERAGE BEST FITNESS",
+      "headers": [
+        "Problem",
+        "Algorithm",
+        "Mutation Rate",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          0.0,
+          0.05,
+          0.1,
+          0.15
+        ],
+        [
+          "Trap",
+          "cGA",
+          575,
+          553,
+          526,
+          498
+        ],
+        [
+          "",
+          "LZWcGA",
+          768,
+          795,
+          791,
+          787
+        ],
+        [
+          "4-Peak",
+          "cGA",
+          50,
+          31,
+          26,
+          23
+        ],
+        [
+          "",
+          "LZWcGA",
+          1387,
+          1449,
+          1420,
+          1395
+        ],
+        [
+          "6-Peak",
+          "cGA",
+          47,
+          28,
+          25,
+          22
+        ],
+        [
+          "",
+          "LZWcGA",
+          1463,
+          1498,
+          1488,
+          1488
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "III",
+      "table_title": "ANALYSIS RESULTS",
+      "headers": [
+        "Ratio",
+        "cGA",
+        "LZWcGA"
+      ],
+      "rows": [
+        [
+          "Construction",
+          0.048,
+          0.787
+        ],
+        [
+          "Destruction",
+          0.226,
+          0.188
+        ],
+        [
+          2,
+          0.148,
+          1.228
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

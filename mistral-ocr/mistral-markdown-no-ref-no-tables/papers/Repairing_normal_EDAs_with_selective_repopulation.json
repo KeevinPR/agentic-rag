@@ -1,0 +1,395 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Repairing normal EDAs with selective repopulation.md",
+    "filename": "Repairing normal EDAs with selective repopulation.md",
+    "title": "Repairing normal EDAs with selective repopulation",
+    "year": "2014"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Norwell, MA, USA, 2001.\n[2] H. Mühlenbein, G. Paa, From recombination of genes to the estimation of distributions I. Binary parameters, in: H.-M. Voigt, W. Ebeling, I. Rechenberg, H.-P. Schwefel (Eds.), Parallel Problem Solving from Nature-PPSN IV, Lecture Notes in Computer Science, vol. 1141, Springer, Berlin/Heidelberg, 1996, pp. 178-187, http://dx.doi.org/10.1007/3-540-61723-8382.\n[3] P.A.N. Bosman, D. Thierens, Expanding from discrete to continuous estimation of distribution algorithms: the IDEA, in: PPSN VI: Proceedings of the 6th international Conference on Parallel Problem Solving from Nature, Springer-Verlag, London, UK, 2000, pp. 767-776.\n[4] P.A. Bosman, J. Grahl, D. Thierens, Enhancing the performance of maximum-likelihood gaussian edas using anticipated mean shift, in: Proceedings of the 10th International Conference on Parallel Problem Solving from Nature: PPSN X, Springer-Verlag, Berlin, Heidelberg, 2008, pp. 133-143.\n[5] J.L. Shapiro, Diversity loss in general estimation of distribution algorithms, in: Proceedings of the 9th International Conference on Parallel Problem Solving from Nature, PPSN'06, Springer-Verlag, Berlin, Heidelberg, 2006, pp. 92-101.\n[6] W. Dong, X. Yao, Unified eigen analysis on multivariate gaussian based estimation of distribution algorithms, Inf. Sci. 178 (2008) 3000-3023.\n[7] Q. Zhang, H. Mühlenbein, On the convergence of a class of estimation of distribution algorithms, IEEE Trans. Evol. Comput. 8 (2004) 127-136.\n[8] P.A. Bosman, J. Grahl, Matching inductive search bias and problem structure in continuous estimation-of-distribution algorithms, Eur. J. Oper. Res. 185 (2008) 1246-1264.\n[9] S. Yuan, M. Gallagher, On the importance of diversity maintenance in estimation of distribution algorithms, in: Proceedings of the 2005 Conference on Genetic and Evolutionary Computation, GECCO'05, ACM, New York, NY, USA, 2005, pp. 719-726.\n[10] Y. Cai, X. Sun, H. Xu, P. Jia, Cross entropy and adaptive variance scaling in continuous EDA, in: Proceedings of the 9th annual conference on Genetic and evolutionary computation, GECCO'07, ACM, New York, NY, USA, 2007, pp. 609-616.\n[11] J. Grahl, P.A.N. Bosman, F. Rothlauf, The correlation-triggered adaptive variance scaling IDEA, in: GECCO'06: Proceedings of the 8th Annual Conference on Genetic and Evolutionary Computation, ACM Press, 2006, pp. 397-404.\n[12] O. Kramer, F. Gieseke, Variance scaling for EDAs revisited, in: Proceedings of the 34th Annual German conference on Advances in artificial intelligence, KI'11, Springer-Verlag, Berlin, Heidelberg, 2011, pp. 169-178.\n\n[13] D. Cho, B. Zhang, B. Labratory, Evolutionary continuous optimization by distribution estimation with variational bayesian independent component analyzers mixture model, in: Proceedings of Parallel Problem Solving from Nature VIII, Lecture Notes in Computer Science, volume 3242, Springer, 2004, pp. 212-221.\n[14] P.A. Bosman, D. Thierens, Advancing continuous IDEAs with mixture distributions and factorization selection metrics, in: Proceedings of the Optimization by Building and Using Probabilistic Models OBUPM Workshop at the Genetic and Evolutionary Computation Conference GECCO2001, Morgan Kaufmann, 2001, pp. 208-212.\n[15] J. Ocenasek, J. Schwarz, Estimation of distribution algorithm for mixed continuous-discrete optimization problems, in: 2nd Euro-International Symposium on Computational Intelligence, IOS Press, 2002, pp. 227-232.\n[16] M. Wagner, A. Auger, M. Schoenauer, EEDA: a new robust estimation of distribution algorithms, Research Report RR-5190, INRIA, 2004.\n[17] N. Hansen, A. Ostermeier, Adapting arbitrary normal mutation distributions in evolution strategies: the covariance matrix adaptation, in: Proceedings of IEEE International Conference on Evolutionary Computation, 1996, pp. 312-317.\n[18] S.I. Valdez, S. Botello, A. Hernández, Uniformly distributed pareto fronts through the maximin selection algorithm, Int. J. Artif. Intell. Tools (2009) 355362 .\n[19] F. Teytaud, O. Teytaud, Why one must use reweighting in estimation of distribution algorithms, in: Proceedings of the 11th Annual Conference on Genetic and Evolutionary Computation, GECCO'09, ACM, New York, NY, USA, 2009, pp. 453-460.\n[20] Z. Bouzarkouna, A. Auger, D.Y. Ding, Investigating the local-meta-model cma-es for large population sizes, in: EvoApplications (1), Lecture Notes in Computer Science, vol. 6024, Springer, 2010, pp. 402-411.\n[21] W. Dong, X. Yao, NichingEDA: utilizing the diversity inside a population of EDAs for continuous optimization, in: IEEE Congress on Evolutionary Computation, 2008. CEC 2008. (IEEE World Congress on Computational Intelligence), pp. 1260-1267.\n[22] Q. Lu, X. Yao, Clustering and learning gaussian distribution for continuous optimization, IEEE Trans. Syst. Man Cybern. Part C: Appl. Rev. 35 (2005) 195204.\n[23] P.A.N. Bosman, J. Grahl, F. Rothlauf, SDR: a better trigger for adaptive variance scaling in normal EDAs, in: GECCO'07: Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation, ACM, 2007, pp. 516-522.\n[24] J. Grahl, P.A.N. Bosman, S. Minner, Convergence phases, variance trajectories, and runtime analysis of continuos EDAs, in: GECCO'07: Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation, ACM, 2007, pp. 516-522.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Norwell, MA, USA, 2001."
+      },
+      {
+        "ref_id": "2",
+        "text": "H. Mühlenbein, G. Paa, From recombination of genes to the estimation of distributions I. Binary parameters, in: H.-M. Voigt, W. Ebeling, I. Rechenberg, H.-P. Schwefel (Eds.), Parallel Problem Solving from Nature-PPSN IV, Lecture Notes in Computer Science, vol. 1141, Springer, Berlin/Heidelberg, 1996, pp. 178-187, http://dx.doi.org/10.1007/3-540-61723-8382."
+      },
+      {
+        "ref_id": "3",
+        "text": "P.A.N. Bosman, D. Thierens, Expanding from discrete to continuous estimation of distribution algorithms: the IDEA, in: PPSN VI: Proceedings of the 6th international Conference on Parallel Problem Solving from Nature, Springer-Verlag, London, UK, 2000, pp. 767-776."
+      },
+      {
+        "ref_id": "4",
+        "text": "P.A. Bosman, J. Grahl, D. Thierens, Enhancing the performance of maximum-likelihood gaussian edas using anticipated mean shift, in: Proceedings of the 10th International Conference on Parallel Problem Solving from Nature: PPSN X, Springer-Verlag, Berlin, Heidelberg, 2008, pp. 133-143."
+      },
+      {
+        "ref_id": "5",
+        "text": "J.L. Shapiro, Diversity loss in general estimation of distribution algorithms, in: Proceedings of the 9th International Conference on Parallel Problem Solving from Nature, PPSN'06, Springer-Verlag, Berlin, Heidelberg, 2006, pp. 92-101."
+      },
+      {
+        "ref_id": "6",
+        "text": "W. Dong, X. Yao, Unified eigen analysis on multivariate gaussian based estimation of distribution algorithms, Inf. Sci. 178 (2008) 3000-3023."
+      },
+      {
+        "ref_id": "7",
+        "text": "Q. Zhang, H. Mühlenbein, On the convergence of a class of estimation of distribution algorithms, IEEE Trans. Evol. Comput. 8 (2004) 127-136."
+      },
+      {
+        "ref_id": "8",
+        "text": "P.A. Bosman, J. Grahl, Matching inductive search bias and problem structure in continuous estimation-of-distribution algorithms, Eur. J. Oper. Res. 185 (2008) 1246-1264."
+      },
+      {
+        "ref_id": "9",
+        "text": "S. Yuan, M. Gallagher, On the importance of diversity maintenance in estimation of distribution algorithms, in: Proceedings of the 2005 Conference on Genetic and Evolutionary Computation, GECCO'05, ACM, New York, NY, USA, 2005, pp. 719-726."
+      },
+      {
+        "ref_id": "10",
+        "text": "Y. Cai, X. Sun, H. Xu, P. Jia, Cross entropy and adaptive variance scaling in continuous EDA, in: Proceedings of the 9th annual conference on Genetic and evolutionary computation, GECCO'07, ACM, New York, NY, USA, 2007, pp. 609-616."
+      },
+      {
+        "ref_id": "11",
+        "text": "J. Grahl, P.A.N. Bosman, F. Rothlauf, The correlation-triggered adaptive variance scaling IDEA, in: GECCO'06: Proceedings of the 8th Annual Conference on Genetic and Evolutionary Computation, ACM Press, 2006, pp. 397-404."
+      },
+      {
+        "ref_id": "12",
+        "text": "O. Kramer, F. Gieseke, Variance scaling for EDAs revisited, in: Proceedings of the 34th Annual German conference on Advances in artificial intelligence, KI'11, Springer-Verlag, Berlin, Heidelberg, 2011, pp. 169-178."
+      },
+      {
+        "ref_id": "13",
+        "text": "D. Cho, B. Zhang, B. Labratory, Evolutionary continuous optimization by distribution estimation with variational bayesian independent component analyzers mixture model, in: Proceedings of Parallel Problem Solving from Nature VIII, Lecture Notes in Computer Science, volume 3242, Springer, 2004, pp. 212-221."
+      },
+      {
+        "ref_id": "14",
+        "text": "P.A. Bosman, D. Thierens, Advancing continuous IDEAs with mixture distributions and factorization selection metrics, in: Proceedings of the Optimization by Building and Using Probabilistic Models OBUPM Workshop at the Genetic and Evolutionary Computation Conference GECCO2001, Morgan Kaufmann, 2001, pp. 208-212."
+      },
+      {
+        "ref_id": "15",
+        "text": "J. Ocenasek, J. Schwarz, Estimation of distribution algorithm for mixed continuous-discrete optimization problems, in: 2nd Euro-International Symposium on Computational Intelligence, IOS Press, 2002, pp. 227-232."
+      },
+      {
+        "ref_id": "16",
+        "text": "M. Wagner, A. Auger, M. Schoenauer, EEDA: a new robust estimation of distribution algorithms, Research Report RR-5190, INRIA, 2004."
+      },
+      {
+        "ref_id": "17",
+        "text": "N. Hansen, A. Ostermeier, Adapting arbitrary normal mutation distributions in evolution strategies: the covariance matrix adaptation, in: Proceedings of IEEE International Conference on Evolutionary Computation, 1996, pp. 312-317."
+      },
+      {
+        "ref_id": "18",
+        "text": "S.I. Valdez, S. Botello, A. Hernández, Uniformly distributed pareto fronts through the maximin selection algorithm, Int. J. Artif. Intell. Tools (2009) 355362 ."
+      },
+      {
+        "ref_id": "19",
+        "text": "F. Teytaud, O. Teytaud, Why one must use reweighting in estimation of distribution algorithms, in: Proceedings of the 11th Annual Conference on Genetic and Evolutionary Computation, GECCO'09, ACM, New York, NY, USA, 2009, pp. 453-460."
+      },
+      {
+        "ref_id": "20",
+        "text": "Z. Bouzarkouna, A. Auger, D.Y. Ding, Investigating the local-meta-model cma-es for large population sizes, in: EvoApplications (1), Lecture Notes in Computer Science, vol. 6024, Springer, 2010, pp. 402-411."
+      },
+      {
+        "ref_id": "21",
+        "text": "W. Dong, X. Yao, NichingEDA: utilizing the diversity inside a population of EDAs for continuous optimization, in: IEEE Congress on Evolutionary Computation, 2008. CEC 2008. (IEEE World Congress on Computational Intelligence), pp. 1260-1267."
+      },
+      {
+        "ref_id": "22",
+        "text": "Q. Lu, X. Yao, Clustering and learning gaussian distribution for continuous optimization, IEEE Trans. Syst. Man Cybern. Part C: Appl. Rev. 35 (2005) 195204."
+      },
+      {
+        "ref_id": "23",
+        "text": "P.A.N. Bosman, J. Grahl, F. Rothlauf, SDR: a better trigger for adaptive variance scaling in normal EDAs, in: GECCO'07: Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation, ACM, 2007, pp. 516-522."
+      },
+      {
+        "ref_id": "24",
+        "text": "J. Grahl, P.A.N. Bosman, S. Minner, Convergence phases, variance trajectories, and runtime analysis of continuos EDAs, in: GECCO'07: Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation, ACM, 2007, pp. 516-522."
+      }
+    ],
+    "reference_count": 24,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test problems used in comparisons.",
+      "headers": [
+        "Name",
+        "Definition",
+        "Domain"
+      ],
+      "rows": [
+        [
+          "Rosenbrock",
+          "$\\sum_{i=1}^{n-1}\\left(100\\left(x_{i}-x_{i-1}^{2}\\right)^{2}+\\left(x_{i}-1\\right)^{2}\\right)$",
+          "$x \\in(-10,10)^{n}$"
+        ],
+        [
+          "Sphere",
+          "$f(x)=\\sum_{i=1}^{n} x_{i}^{2}$",
+          "$x \\in(-100,100)^{n}$"
+        ],
+        [
+          "Ackley",
+          "$f(x)=-20 \\cdot \\exp \\left(-0.2 \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} x_{i}^{2}}\\right)-\\exp \\left(\\frac{1}{n} \\sum_{i=1}^{n} \\cos (2 \\pi x_{i})\\right)+20+e$",
+          "$x \\in(-32,32)^{n}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison of classical Normal base EDAs (UMDA and EMNA) and enhanced Normal EDAs (EEDA and Niching EDA) with the EDA with selective repopulation (EDA-SRP). Mean and (standard deviation) of the best function value found in 30 runs.",
+      "headers": [
+        "UMDA $_{i=1}^{n}$",
+        "EMNA $_{\\text {global }}$",
+        "EEDA",
+        "NichingEDA",
+        "EDA-SRP"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$1.653 e-43$",
+          "$8.674 e-44$",
+          "$1.071 e-39$",
+          "$4.507 e-9$",
+          "$4.0904 e-75$"
+        ],
+        [
+          "$(5.021 e-44)$",
+          "$(2.631 e-44)$",
+          "$(3.159 e-40)$",
+          "$(1.077 e-12)$",
+          "$(2.9307 e-75)$"
+        ],
+        [
+          "Rosenbrock",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          8.1958,
+          7.7806,
+          6.3004,
+          4.6258,
+          0
+        ],
+        [
+          "$(0.0374)$",
+          "$(0.1713)$",
+          "$(0.1259)$",
+          "$(1.6986)$",
+          "$(0)$"
+        ],
+        [
+          "Ackley",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$4.4409 e-16$",
+          "$4.4409 e-16$",
+          "$4.4409 e-16$",
+          "$2.4350 e-5$",
+          "$1.1102 e-15$"
+        ],
+        [
+          "$(0)$",
+          "$(0)$",
+          "$(0)$",
+          "$(1.3137 e-5)$",
+          "$(1.4089 e-15)$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison of mixture-Normal base EDAs (CEGNA ${ }_{R G}$, and CEDNA) and Niching EDA with the EDA with selective repopulation (EDA-SRP). For the Schwefel $f_{8}$ problem in 30 dimensions. Best, mean and standard deviation of the best function value found in 30 runs.",
+      "headers": [
+        "Algorithm",
+        "Best",
+        "Mean",
+        "SD"
+      ],
+      "rows": [
+        [
+          "CEGNA $_{\\text {RG }}$",
+          -10773.1,
+          -6760.35,
+          2624.33
+        ],
+        [
+          "CEDNA",
+          -8712.31,
+          -5922.54,
+          1892.51
+        ],
+        [
+          "NichingEDA",
+          -8733.51,
+          -8005.39,
+          270.755
+        ],
+        [
+          "EDA-SRP",
+          "$-\\mathbf{1 1 6 4 2 . 5 3}$",
+          "$-\\mathbf{1 0 5 1 8 . 5 3}$",
+          1313.21
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Test problems used for comparing the effects and impacts in the performance of the different enhancement techniques proposed in this work.",
+      "headers": [
+        "Name",
+        "Definition",
+        "Domain"
+      ],
+      "rows": [
+        [
+          "Rosenbrock",
+          "$\\sum_{i=1}^{n-1}\\left(100\\left(x_{i}-x_{i-1}^{2}\\right)^{2}+\\left(x_{i}-1\\right)^{2}\\right)$",
+          "$x \\in(-10.5)^{n}$"
+        ],
+        [
+          "Ackley",
+          "$f(x)=-20 \\cdot \\exp \\left(-0.2 \\sqrt{\\frac{1}{2} \\sum_{i=1}^{n} x_{i}^{2}}\\right)-\\exp \\left(\\frac{1}{2} \\sum_{i=1}^{n} \\cos \\left(2 \\pi x_{i}\\right)\\right)+20+e$",
+          "$x \\in(-32.768,16.384)^{n}$"
+        ],
+        [
+          "Griewank",
+          "$f(x)=\\sum_{i=1}^{n} \\frac{x^{i}}{i} \\cdot \\prod_{i=1}^{n} \\cos \\left(x_{i} / \\sqrt{i}\\right)+1$",
+          "$x \\in(-600,600)^{n}$"
+        ],
+        [
+          "Ellipsoid",
+          "$f(x)=\\sum_{i=1}^{n} 10^{6(i-1) /(n-1)} x_{i}^{2}$",
+          "$x \\in(-10.5)^{n}$"
+        ],
+        [
+          "Cigar",
+          "$f(x)=x_{1}^{2}+10^{6} \\sum_{i=2}^{n} x_{i}^{2}$",
+          "$x \\in(-10.5)^{n}$"
+        ],
+        [
+          "Cigar Tablet",
+          "$f(x)=x_{1}^{2}+10^{4} \\sum_{i=2}^{n-1} x_{i}^{2}+10^{8} x_{2}^{2}$",
+          "$x \\in(-10.5)^{n}$"
+        ],
+        [
+          "Two Axes",
+          "$f(x)=10^{6} \\sum_{i=1}^{n-2}+\\sum_{i=n / 2}^{n} x^{i}$",
+          "$x \\in(-10.5)^{n}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "6",
+      "table_title": "Mean and (Standard deviation), for different test problems, and algorithms modified with the different techniques proposed in this article.",
+      "headers": [
+        "Problem",
+        "EDA-SRP",
+        "EDA-Std",
+        "EDA-Init",
+        "EDA-Rpop",
+        "EDA-WEst",
+        "EDA-Trunc"
+      ],
+      "rows": [
+        [
+          "Rosenbrock",
+          "$\\begin{aligned} & 0.3187 \\\\ & (0.3612) \\end{aligned}$",
+          "$\\begin{aligned} & 8.06 \\\\ & (0.3659) \\end{aligned}$",
+          "$\\begin{aligned} & 7.985 \\\\ & (0.5316) \\end{aligned}$",
+          "$\\begin{aligned} & 16.42 \\\\ & (3.622) \\end{aligned}$",
+          "$\\begin{aligned} & 7.907 \\\\ & (0.5164) \\end{aligned}$",
+          "$\\begin{aligned} & 8.028 \\\\ & (0.5799) \\end{aligned}$"
+        ],
+        [
+          "Ackley",
+          "$\\begin{aligned} & 0.004263 \\\\ & (0.005744) \\end{aligned}$",
+          "$\\begin{aligned} & 6.809 e-16 \\\\ & (9.173 e-16) \\end{aligned}$",
+          "$\\begin{aligned} & 9.178 e-16 \\\\ & (1.25 e-15) \\end{aligned}$",
+          "$\\begin{aligned} & 2.034 \\\\ & (0.1863) \\end{aligned}$",
+          "$\\begin{aligned} & 0.0002638 \\\\ & (0.001022) \\end{aligned}$",
+          "$\\begin{aligned} & 0.0006226 \\\\ & (0.002411) \\end{aligned}$"
+        ],
+        [
+          "Griewank",
+          "$\\begin{aligned} & 0.6388 \\\\ & (0.0611) \\end{aligned}$",
+          "$\\begin{aligned} & 0.009561 \\\\ & (0.03703) \\end{aligned}$",
+          "$\\begin{aligned} & 0 \\\\ & (0) \\end{aligned}$",
+          "$\\begin{aligned} & 0.6377 \\\\ & (0.09588) \\end{aligned}$",
+          "$\\begin{aligned} & 4.433 e-15 \\\\ & (1.717 e-14) \\end{aligned}$",
+          "$\\begin{aligned} & 0 \\\\ & (0) \\end{aligned}$"
+        ],
+        [
+          "Ellipsoid",
+          "$\\begin{aligned} & 2.78 e-06 \\\\ & (1.072 e-05) \\end{aligned}$",
+          "$\\begin{aligned} & 8.345 \\\\ & (14.54) \\end{aligned}$",
+          "$\\begin{aligned} & 27.69 \\\\ & (43.24) \\end{aligned}$",
+          "$\\begin{aligned} & 1.308 e-18 \\\\ & (6.002 e-19) \\end{aligned}$",
+          "$\\begin{aligned} & 15.17 \\\\ & (24.35) \\end{aligned}$",
+          "$\\begin{aligned} & 29.69 \\\\ & (86.87) \\end{aligned}$"
+        ],
+        [
+          "Cigar",
+          "$\\begin{aligned} & 3.535 e-27 \\\\ & (1.369 e-26) \\end{aligned}$",
+          "$\\begin{aligned} & 0.6997 \\\\ & (1.3) \\end{aligned}$",
+          "$\\begin{aligned} & 1.275 \\\\ & (2.507) \\end{aligned}$",
+          "$\\begin{aligned} & 3.049 e-20 \\\\ & (2.22 e-20) \\end{aligned}$",
+          "$\\begin{aligned} & 1.186 \\\\ & (2.756) \\end{aligned}$",
+          "$\\begin{aligned} & 0.3359 \\\\ & (0.8479) \\end{aligned}$"
+        ],
+        [
+          "Cigar Tablet",
+          "$\\begin{aligned} & 0.05326 \\\\ & (0.1787) \\end{aligned}$",
+          "$\\begin{aligned} & 1993 \\\\ & (4889) \\end{aligned}$",
+          "$\\begin{aligned} & 422.3 \\\\ & (1027) \\end{aligned}$",
+          "$\\begin{aligned} & 2.114 e-06 \\\\ & (6.92 e-07) \\end{aligned}$",
+          "$\\begin{aligned} & 982.6 \\\\ & (2144) \\end{aligned}$",
+          "$\\begin{aligned} & 10281) \\\\ & (24509) \\end{aligned}$"
+        ],
+        [
+          "Two Axes",
+          "$\\begin{aligned} & 4.075 e-08 \\\\ & (1.578 e-07) \\end{aligned}$",
+          "$\\begin{aligned} & 3.364 \\\\ & (3.182) \\end{aligned}$",
+          "$\\begin{aligned} & 2.795 \\\\ & (2.816) \\end{aligned}$",
+          "$\\begin{aligned} & 2.871 e-18 \\\\ & (2.133 e-18) \\end{aligned}$",
+          "$\\begin{aligned} & 5.942 \\\\ & (6.476) \\end{aligned}$",
+          "$\\begin{aligned} & 3.933 \\\\ & (3.589) \\end{aligned}$"
+        ],
+        [
+          "Different powers",
+          "$\\begin{aligned} & 4.716 e-27 \\\\ & (1.824 e-26) \\end{aligned}$",
+          "$\\begin{aligned} & 0.000161 \\\\ & (0.0006234) \\end{aligned}$",
+          "$\\begin{aligned} & 0.0001599 \\\\ & (0.0006192) \\end{aligned}$",
+          "$\\begin{aligned} & 4.297 e-19 \\\\ & (1.647 e-18) \\end{aligned}$",
+          "$\\begin{aligned} & 9.727 e-07 \\\\ & (3.738 e-06) \\end{aligned}$",
+          "$\\begin{aligned} & 0.01702 \\\\ & (0.06591) \\end{aligned}$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    }
+  ]
+}

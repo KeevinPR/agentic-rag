@@ -1,0 +1,836 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/An Estimation of Distribution Algorithm-Based Hyper-Heuristic for the Distributed Assembly Mixed No-Idle Permutation Flowshop Scheduling Problem.md",
+    "filename": "An Estimation of Distribution Algorithm-Based Hyper-Heuristic for the Distributed Assembly Mixed No-Idle Permutation Flowshop Scheduling Problem.md",
+    "title": "An Estimation of Distribution Algorithm-Based Hyper-Heuristic for the Distributed Assembly Mixed No-Idle Permutation Flowshop Scheduling Problem",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "REVIEW OF WORLS FOR THE DISTRIBUTED ASSEMBLY SCHEDULING",
+      "headers": [
+        "Problem",
+        "Ref.",
+        "Objectives",
+        "Methods"
+      ],
+      "rows": [
+        [
+          "",
+          16,
+          "Makespan",
+          "VND"
+        ],
+        [
+          "",
+          37,
+          "Makespan",
+          "GA"
+        ],
+        [
+          "",
+          38,
+          "Makespan",
+          "VNSMA"
+        ],
+        [
+          "",
+          39,
+          "Makespan",
+          "HBBO"
+        ],
+        [
+          "",
+          40,
+          "Makespan",
+          "MCEDA"
+        ],
+        [
+          "DAPFSP",
+          41,
+          "Makespan",
+          "BRS"
+        ],
+        [
+          "",
+          19,
+          "Makespan",
+          "BS-HH"
+        ],
+        [
+          "",
+          17,
+          "Makespan",
+          "EDAMA"
+        ],
+        [
+          "",
+          42,
+          "Makespan",
+          "SSS"
+        ],
+        [
+          "",
+          33,
+          "Total tardiness",
+          "SS-MA"
+        ],
+        [
+          "",
+          34,
+          "Total flowtime",
+          "gIGA"
+        ],
+        [
+          "",
+          20,
+          "Total flowtime",
+          "TDIWO, HDIWO, HDIWOp"
+        ],
+        [
+          "DABFSP",
+          2,
+          "Total tardiness",
+          "KWWO"
+        ],
+        [
+          "",
+          35,
+          "Makespan",
+          "KDH"
+        ],
+        [
+          "DANIFSP",
+          21,
+          "Makespan",
+          "CWWO"
+        ],
+        [
+          "",
+          36,
+          "Makespan",
+          "CHs, ILS, VNS"
+        ],
+        [
+          "DANWFSP",
+          43,
+          "Makespan",
+          "BKBSA"
+        ],
+        [
+          "DAPFSP-",
+          44,
+          "Makespan",
+          "GP-HH"
+        ],
+        [
+          "SDST",
+          18,
+          "Makespan",
+          "CHs, IG"
+        ],
+        [
+          "EE-DAPFSP",
+          22,
+          "Makespan, <br> Total carbon emission",
+          "MCEDA"
+        ],
+        [
+          "MO-DAPFSP",
+          23,
+          "Total flowtime,",
+          "TEA"
+        ],
+        [
+          "",
+          1,
+          "Total tardiness",
+          "RIG"
+        ],
+        [
+          "DAMNIPFSP",
+          "This work",
+          "Makespan",
+          "EDA-HH"
+        ]
+      ],
+      "row_count": 23,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "Notation Used in the Model",
+      "headers": [
+        "Notation",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Indexes:",
+          ""
+        ],
+        [
+          "$i$",
+          "Index for machines where $i \\in\\{1,2, \\cdots, m\\}$."
+        ],
+        [
+          "$j$",
+          "Index for jobs, $j \\in\\{1,2, \\cdots, n\\}$."
+        ],
+        [
+          "$k$",
+          "Position index"
+        ],
+        [
+          "$l, s$",
+          "Index for products, $l, s \\in\\{1,2, \\cdots, t\\}$."
+        ],
+        [
+          "$f$",
+          "Index for factories, $f \\in\\{1,2, \\cdots, F\\}$."
+        ],
+        [
+          "Parameters:",
+          ""
+        ],
+        [
+          "$n$",
+          "Number of jobs."
+        ],
+        [
+          "$m$",
+          "Number of machines."
+        ],
+        [
+          "$F$",
+          "Number of factories."
+        ],
+        [
+          "$h$",
+          "Number of products."
+        ],
+        [
+          "$M^{\\prime}$",
+          "The collection of no-idle machines."
+        ],
+        [
+          "$M-M^{\\prime}$",
+          "The collection of regular machines."
+        ],
+        [
+          "$p_{i, j}$",
+          "The processing time of the job $J_{j}$ on machine $M_{i}$."
+        ],
+        [
+          "$p p_{s}$",
+          "Assembly time of product $s$ at the assembly stage."
+        ],
+        [
+          "$L$",
+          "A sufficiently large positive number."
+        ],
+        [
+          "Variables:",
+          ""
+        ],
+        [
+          "$G_{j, s}$",
+          10.0
+        ],
+        [
+          "",
+          10.0
+        ],
+        [
+          "$Y_{l, s}$",
+          "The continuous variable represents the completion time of the job in position $k$ of the machine $M_{i}$ in factory $f$."
+        ],
+        [
+          "$C A_{s}$",
+          "The continuous variable represents the completion time of product $s$ in the assembly stage."
+        ],
+        [
+          "$C_{k}$",
+          "Assembly completion time of position $k$ in the assembly factory"
+        ],
+        [
+          "",
+          10.0
+        ],
+        [
+          "$C_{\\max }$",
+          "The makespan of a schedule."
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "PARAMETER CONFIGURATION OF OTHER ALGORITHMS",
+      "headers": [
+        "Algorithms",
+        "Parameter setting"
+      ],
+      "rows": [
+        [
+          "RIG",
+          "ConType $=1 ; l, S T y p e=2 ; d p=3 ; d j=5 ; \\beta=0$"
+        ],
+        [
+          "BS-HH",
+          "$I t r_{\\max }=150 ; \\lambda=5 ; r_{\\max }=1 ; \\xi=0.8 ; T_{0}=2 ; T_{f}=1$"
+        ],
+        [
+          "TDIWO",
+          "$P S_{0}=10 ; P S_{\\max }=50 ; \\delta=5 ; S_{\\max }=20 ; \\rho=0.9 ;$"
+        ],
+        [
+          "",
+          "$S_{\\min }=1$"
+        ],
+        [
+          "HDIWO",
+          "$P S_{0}=10 ; P S_{\\max }=50 ; \\delta=5 ; S_{\\max }=20 ; S_{\\min }=1$"
+        ],
+        [
+          "HDIWOp",
+          "$P S_{0}=10 ; P S_{\\max }=50 ; \\delta=5 ; S_{\\max }=20 ; \\alpha=0.9 ;$"
+        ],
+        [
+          "",
+          "$S_{\\min }=1$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    },
+    {
+      "table_number": "IV",
+      "table_title": "ARPD Versus ACPU Results of COMPARED Algorithms",
+      "headers": [
+        "",
+        "",
+        "BS-HH",
+        "",
+        "TDIWO",
+        "",
+        "HDIWO",
+        "",
+        "HDIWOp",
+        "",
+        "RIG",
+        "",
+        "EDA-HH",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "ARPD",
+          "ACPU",
+          "ARPD",
+          "ACPU",
+          "ARPD",
+          "ACPU",
+          "ARPD",
+          "ACPU",
+          "ARPD",
+          "ACPU",
+          "ARPD",
+          "ACPU"
+        ],
+        [
+          "n",
+          100,
+          2.5976,
+          24.3101,
+          2.3944,
+          23.3479,
+          2.4025,
+          23.3446,
+          2.5748,
+          26.0793,
+          2.3252,
+          24.2504,
+          0.4591,
+          23.4741
+        ],
+        [
+          "",
+          5,
+          1.5681,
+          10.9124,
+          1.3496,
+          10.0295,
+          1.3806,
+          10.0241,
+          1.6907,
+          12.2318,
+          1.2987,
+          10.7882,
+          0.3661,
+          10.0773
+        ],
+        [
+          "m",
+          10,
+          2.7031,
+          20.9439,
+          2.5203,
+          20.0095,
+          2.5347,
+          20.0078,
+          2.68,
+          22.933,
+          2.3993,
+          20.9169,
+          0.4842,
+          20.1331
+        ],
+        [
+          "",
+          20,
+          3.5215,
+          41.074,
+          3.3133,
+          40.0046,
+          3.2923,
+          40.0019,
+          3.3537,
+          43.0734,
+          3.2775,
+          41.0462,
+          0.5269,
+          40.2121
+        ],
+        [
+          "",
+          4,
+          2.3961,
+          24.4207,
+          2.1377,
+          23.3423,
+          2.155,
+          23.3403,
+          2.3538,
+          26.2657,
+          2.0886,
+          24.2012,
+          0.449,
+          23.443
+        ],
+        [
+          "$f$",
+          6,
+          2.5845,
+          24.0337,
+          2.3528,
+          23.3531,
+          2.3625,
+          23.3488,
+          2.5304,
+          25.8395,
+          2.2922,
+          24.2653,
+          0.4757,
+          23.4769
+        ],
+        [
+          "",
+          8,
+          2.8674,
+          24.476,
+          2.7046,
+          23.3482,
+          2.7074,
+          23.3446,
+          2.8123,
+          26.1329,
+          2.598,
+          24.2848,
+          0.4861,
+          23.5025
+        ],
+        [
+          "",
+          30,
+          2.5298,
+          24.2407,
+          2.2933,
+          23.3459,
+          2.2993,
+          23.343,
+          2.4959,
+          24.7192,
+          2.2392,
+          23.9906,
+          0.4628,
+          23.4655
+        ],
+        [
+          "$s$",
+          40,
+          2.5905,
+          24.3201,
+          2.3859,
+          23.3487,
+          2.3896,
+          23.3458,
+          2.578,
+          26.0359,
+          2.309,
+          24.2465,
+          0.4682,
+          23.4775
+        ],
+        [
+          "",
+          50,
+          2.6524,
+          24.3778,
+          2.4796,
+          23.3488,
+          2.4856,
+          23.345,
+          2.643,
+          27.2702,
+          2.3833,
+          24.4352,
+          0.4697,
+          23.4776
+        ],
+        [
+          "Average",
+          "",
+          2.6011,
+          24.3109,
+          2.3931,
+          23.3478,
+          2.4009,
+          23.3445,
+          2.5712,
+          26.058,
+          2.3211,
+          24.2425,
+          0.4647,
+          23.4739
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 14
+    },
+    {
+      "table_number": "V",
+      "table_title": "Friedman-Test Results",
+      "headers": [
+        "$c$",
+        "Average rank",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Chi-Square",
+        "$p$-value",
+        "CD $(\\alpha=0.05)$",
+        "CD $(\\alpha=0.1)$"
+      ],
+      "rows": [
+        [
+          "",
+          "BS-HH",
+          "TDIWO",
+          "",
+          "HDIWO",
+          "HDIWOp",
+          "RIG",
+          "EDA-HH",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          20,
+          3.99,
+          4.02,
+          "",
+          4.04,
+          4.73,
+          3.03,
+          1.19,
+          1835.414,
+          0.0,
+          1.4295,
+          1.4063
+        ],
+        [
+          40,
+          4.39,
+          3.62,
+          "",
+          3.59,
+          5.09,
+          3.27,
+          1.05,
+          2195.677,
+          0.0,
+          1.2895,
+          1.2663
+        ],
+        [
+          60,
+          4.06,
+          4.35,
+          "",
+          3.81,
+          4.62,
+          3.13,
+          1.03,
+          2008.202,
+          0.0,
+          1.2263,
+          1.2061
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 12
+    },
+    {
+      "table_number": "VI",
+      "table_title": "Wilcoxon ReSults OF THE AlGorithms",
+      "headers": [
+        "c",
+        "EDA-HH vs.",
+        "R-",
+        "R+",
+        "Z",
+        "p-value",
+        "$\\alpha=0.1 \\alpha=0.05$",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "BS-HH",
+          18,
+          789,
+          "$-24.55$",
+          "3.77E-133",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "TDIWO",
+          38,
+          768,
+          "$-24.34$",
+          "6.06E-131",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          20,
+          "HDIWO",
+          37,
+          770,
+          "$-24.35$",
+          "5.49E-131",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "HDIWOp",
+          19,
+          788,
+          "$-24.55$",
+          "3.91E-133",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "RIG",
+          33,
+          775,
+          "$-24.36$",
+          "4.19E-131",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "BS-HH",
+          1,
+          806,
+          "$-24.60$",
+          "1.01E-133",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "TDIWO",
+          6,
+          797,
+          "$-24.54$",
+          "4.95E-133",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          40,
+          "HDIWO",
+          6,
+          795,
+          "$-24.51$",
+          "1.09E-132",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "HDIWOp",
+          4,
+          799,
+          "$-24.54$",
+          "4.68E-133",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "RIG",
+          5,
+          798,
+          "$-24.54$",
+          "4.84E-133",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "BS-HH",
+          2,
+          804,
+          "$-24.59$",
+          "1.50E-133",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "TDIWO",
+          3,
+          798,
+          "$-24.51$",
+          "1.00E-132",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          60,
+          "HDIWO",
+          1,
+          798,
+          "$-24.48$",
+          "2.06E-132",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "HDIWOp",
+          1,
+          801,
+          "$-24.53$",
+          "6.59E-133",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "RIG",
+          1,
+          802,
+          "$-24.54$",
+          "4.56E-133",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 12
+    }
+  ]
+}

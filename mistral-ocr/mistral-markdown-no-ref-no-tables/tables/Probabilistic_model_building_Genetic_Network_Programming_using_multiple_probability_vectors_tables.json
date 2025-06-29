@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Probabilistic model building Genetic Network Programming using multiple probability vectors.md",
+    "filename": "Probabilistic model building Genetic Network Programming using multiple probability vectors.md",
+    "title": "Probabilistic model building Genetic Network Programming using multiple probability vectors",
+    "year": "2010"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "NODE FUNCTIONS USED FOR KHEPERA ROBOT.",
+      "headers": [
+        "Node",
+        "Function"
+      ],
+      "rows": [
+        [
+          "$J_{1}, J_{2}, \\ldots, J_{8}$",
+          "Judge the value of the sensor $1,2, \\ldots, 8$"
+        ],
+        [
+          "$P_{1}$",
+          "Determine the speed of the right wheel"
+        ],
+        [
+          "$P_{2}$",
+          "Determine the speed of the left wheel"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "PARAMETER SETTINGS.",
+      "headers": [
+        "Parameter",
+        "GNP",
+        "PMBGNP",
+        "PMBGNP $_{M}$"
+      ],
+      "rows": [
+        [
+          "Number of populations",
+          1,
+          1,
+          6
+        ],
+        [
+          "Number of individuals per population",
+          "-",
+          "-",
+          50
+        ],
+        [
+          "Total number of individuals",
+          "-",
+          300,
+          ""
+        ],
+        [
+          "Number of promising individuals",
+          "-",
+          150,
+          25
+        ],
+        [
+          "the number of nodes",
+          4020,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "RESULT OF T-TEST BETWEEN GNP AND PMBGNP ${ }_{M}$.",
+      "headers": [
+        "",
+        "GNP",
+        "PMBGNP"
+      ],
+      "rows": [
+        [
+          "Mean",
+          0.63,
+          0.72
+        ],
+        [
+          "Standard deviation",
+          0.088,
+          0.058
+        ],
+        [
+          "T-test (p value)",
+          0.0074,
+          "-"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

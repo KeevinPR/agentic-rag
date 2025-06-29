@@ -1,0 +1,715 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Entropy-based efficiency enhancement techniques for evolutionary algorithms.md",
+    "filename": "Entropy-based efficiency enhancement techniques for evolutionary algorithms.md",
+    "title": "Entropy-based efficiency enhancement techniques for evolutionary algorithms",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Statistical comparison of the number of evaluations of algorithms for the OneMax problem.",
+      "headers": [
+        "Size",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180",
+        "210"
+      ],
+      "rows": [
+        [
+          "BOA",
+          443,
+          801,
+          1017,
+          1382,
+          1785,
+          2548
+        ],
+        [
+          "$(\\sigma)$",
+          "$(80.7)$",
+          "$(125.0)$",
+          "$(141.2)$",
+          "$(197.1)$",
+          "$(332.0)$",
+          "$(327.4)$"
+        ],
+        [
+          "eBOA",
+          425,
+          710,
+          996,
+          1368,
+          1756,
+          2397
+        ],
+        [
+          "$(\\sigma)$",
+          "$(82.9)$",
+          "$(139.8)$",
+          "$(132.5)$",
+          "$(142.2)$",
+          "$(256.9)$",
+          "$(278.2)$"
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: $(\\mathrm{BOA}-\\mathrm{eBOA})$",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          0.11017,
+          "$9.59 \\mathrm{E}-8^{\\mathrm{T}}$",
+          0.20164,
+          0.55974,
+          0.4681,
+          "$2.44 \\mathrm{E}-4^{\\mathrm{T}}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Statistical comparison of the population sizes of algorithms for the OneMax problem.",
+      "headers": [
+        "Size",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180",
+        "210"
+      ],
+      "rows": [
+        [
+          "BOA",
+          41,
+          62,
+          68,
+          84,
+          99,
+          134
+        ],
+        [
+          "$(\\sigma)$",
+          "$(7.4)$",
+          "$(11.5)$",
+          "$(9.5)$",
+          "$(13.3)$",
+          "$(18.8)$",
+          "$(18.0)$"
+        ],
+        [
+          "eBOA",
+          43,
+          57,
+          71,
+          86,
+          101,
+          132
+        ],
+        [
+          "$(\\sigma)$",
+          "$(7.4)$",
+          "$(11.1)$",
+          "$(10)$",
+          "$(9.0)$",
+          "$(15.0)$",
+          "$(16.6)$"
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: $(\\mathrm{BOA}-\\mathrm{eBOA})$",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          0.18955,
+          "$4.65 \\mathrm{E}-5^{\\mathrm{T}}$",
+          0.02914,
+          0.19346,
+          0.36393,
+          0.36919
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Statistical comparison of the number of evaluations of algorithms for the trap-5 problem.",
+      "headers": [
+        "Size",
+        "30",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180"
+      ],
+      "rows": [
+        [
+          "BOA",
+          11132,
+          38382,
+          71813,
+          118567,
+          168415,
+          235455
+        ],
+        [
+          "$(\\sigma)$",
+          "$(1287.0)$",
+          "$(3363.0)$",
+          "$(3935.4)$",
+          "$(9220.2)$",
+          "$(12933.3)$",
+          "$(15596.2)$"
+        ],
+        [
+          "eBOA",
+          9938,
+          30575,
+          58148,
+          98086,
+          140448,
+          191572
+        ],
+        [
+          "$(\\sigma)$",
+          "$(1566.8)$",
+          "$(2532.1)$",
+          "$(5960.7)$",
+          "$(6596.5)$",
+          "$(11581.2)$",
+          "$(9822.5)$"
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: (BOA - eBOA)",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$3.62 \\mathrm{E}-20^{\\dagger}$",
+          "$2.05 \\mathrm{E}-27^{\\dagger}$",
+          "$1.24 \\mathrm{E}-30^{\\dagger}$",
+          "$7.88 \\mathrm{E}-37^{\\dagger}$",
+          "$1.66 \\mathrm{E}-37^{\\dagger}$",
+          "$2.49 \\mathrm{E}-26^{\\dagger}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Statistical comparison of the population sizes of algorithms for the trap-5 problem.",
+      "headers": [
+        "Size",
+        "30",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180"
+      ],
+      "rows": [
+        [
+          "BOA",
+          1099,
+          3000,
+          4875,
+          7300,
+          9500,
+          12400
+        ],
+        [
+          "$(\\sigma)$",
+          "$(129.2)$",
+          "$(297.2)$",
+          "$(257.4)$",
+          "$(643.5)$",
+          "$(870.3)$",
+          "$(921.1)$"
+        ],
+        [
+          "eBOA",
+          1131,
+          3175,
+          5050,
+          7750,
+          9900,
+          12300
+        ],
+        [
+          "$(\\sigma)$",
+          "$(90.7)$",
+          "$(338.0)$",
+          "$(672.3)$",
+          "$(605.1)$",
+          "$(921.1)$",
+          "$(643.5)$"
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: (BOA - eBOA)",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$0.06427$",
+          "$1.15 \\mathrm{E}-4^{\\dagger}$",
+          "$0.00347^{\\dagger}$",
+          "$1.67 \\mathrm{E}-6^{\\dagger}$",
+          "$0.00416^{\\dagger}$",
+          0.47093
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Statistical comparison of the number of evaluations of algorithms for the 2-bit overlapped trap-5 problem.",
+      "headers": [
+        "Size",
+        "32",
+        "47",
+        "62",
+        "77",
+        "92",
+        "122"
+      ],
+      "rows": [
+        [
+          "BOA",
+          31278,
+          71990,
+          124612,
+          192590,
+          254805,
+          414385
+        ],
+        [
+          "$(\\sigma)$",
+          "$(4746.9)$",
+          "$(9901.3)$",
+          "$(15060.3)$",
+          "$(18089.4)$",
+          "$(29143.6)$",
+          "$(45600.1)$"
+        ],
+        [
+          "eBOA",
+          24826,
+          54762,
+          95602,
+          147320,
+          188799,
+          325545
+        ],
+        [
+          "$(\\sigma)$",
+          "$(2971.5)$",
+          "$(6120.3)$",
+          "$(10372.5)$",
+          "$(16306.3)$",
+          "$(16462.3)$",
+          "$(41159.7)$"
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: (BOA - eBOA)",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$1.70 \\mathrm{E}-9^{t}$",
+          "$2.06 \\mathrm{E}-37^{t}$",
+          "$1.60 \\mathrm{E}-40^{t}$",
+          "$1.00 \\mathrm{E}-33^{t}$",
+          "$9.77 \\mathrm{E}-29^{t}$",
+          "$6.24 \\mathrm{E}-36^{t}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "6",
+      "table_title": "Statistical comparison of the population sizes of algorithms for the 2-bit overlapped trap-5 problem.",
+      "headers": [
+        "Size",
+        "32",
+        "47",
+        "62",
+        "77",
+        "92",
+        "122"
+      ],
+      "rows": [
+        [
+          "BOA",
+          2975,
+          5625,
+          8600,
+          12600,
+          14500,
+          21100
+        ],
+        [
+          "$(\\sigma)$",
+          "$(306.7)$",
+          "$(517.9)$",
+          "$(627.6)$",
+          "$(1287.0)$",
+          "$(674.1)$",
+          "$(1982.2)$"
+        ],
+        [
+          "eBOA",
+          3300,
+          6025,
+          9650,
+          13100,
+          16000,
+          23200
+        ],
+        [
+          "$(\\sigma)$",
+          "$(293.0)$",
+          "$(508.1)$",
+          "$(505.0)$",
+          "$(948.1)$",
+          "$(898.9)$",
+          "$(1608.0)$"
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: (BOA - eBOA)",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$1.24 \\mathrm{E}-18^{t}$",
+          "$9.63 \\mathrm{E}-6^{t}$",
+          "$2.06 \\mathrm{E}-17^{t}$",
+          "$0.00288^{t}$",
+          "$1.30 \\mathrm{E}-17^{t}$",
+          "$2.90 \\mathrm{E}-19^{t}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "7",
+      "table_title": "Details of the synthetic test networks.",
+      "headers": [
+        "Test network",
+        "Number <br> of $B$ Copies",
+        "Number of blocks <br> (problem size)",
+        "Space size <br> (scale: $\\log _{10}$ )"
+      ],
+      "rows": [
+        [
+          "$B$-I",
+          3,
+          16,
+          9.63
+        ],
+        [
+          "$B$-II",
+          7,
+          40,
+          24.08
+        ],
+        [
+          "$B$-III",
+          15,
+          88,
+          52.98
+        ],
+        [
+          "$B$-IV",
+          31,
+          184,
+          110.78
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Statistical data of performance of NCGA and eNCGA on synthetic networks.",
+      "headers": [
+        "Size",
+        "16",
+        "40",
+        "88",
+        "184"
+      ],
+      "rows": [
+        [
+          "(a) Number of fitness evaluations statistical data",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "NCGA",
+          4625,
+          24523,
+          56435,
+          180050
+        ],
+        [
+          "$(\\sigma)$",
+          5182.6,
+          13281.1,
+          17609.7,
+          39944.8
+        ],
+        [
+          "eNCGA",
+          2356,
+          13636,
+          40848,
+          143234
+        ],
+        [
+          "$(\\sigma)$",
+          1337.2,
+          6679.7,
+          12456.1,
+          33703.4
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: (NCGA - NCGA with ODES)",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$4.45 \\mathrm{E}-5^{x}$",
+          "$2.25 \\mathrm{E}-10^{x}$",
+          "$1.01 \\mathrm{E}-9^{x}$",
+          "$2.74 \\mathrm{E}-4^{x}$"
+        ],
+        [
+          "(b) Population sizes statistical data",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "NCGA",
+          120,
+          124,
+          133,
+          292.6
+        ],
+        [
+          "$(\\sigma)$",
+          15.0,
+          18.2,
+          31.6,
+          65.0
+        ],
+        [
+          "eNCGA",
+          122,
+          122,
+          140,
+          324
+        ],
+        [
+          "$(\\sigma)$",
+          16.2,
+          16.5,
+          40.3,
+          147.7
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: (NCGA - NCGA with ODES)",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          0.29996,
+          0.5191,
+          0.19743,
+          0.27552
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 5
+    },
+    {
+      "table_number": "9",
+      "table_title": "Statistical data of the performance of NCGA and eNCGA on ISP networks.",
+      "headers": [
+        "Name",
+        "Ebone-r2",
+        "Ebone-r3",
+        "Ebone-r4",
+        "Exodus-r2",
+        "Exodus-r3"
+      ],
+      "rows": [
+        [
+          "(a) Number of fitness evaluation statistical data",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "NCGA",
+          1501,
+          2513,
+          3884,
+          1621,
+          2987
+        ],
+        [
+          "( $\\sigma$ )",
+          229.0,
+          413.6,
+          1465.0,
+          416.3,
+          415.2
+        ],
+        [
+          "eNCGA",
+          834,
+          1510,
+          2292,
+          946,
+          1899
+        ],
+        [
+          "( $\\sigma$ )",
+          143.6,
+          230.1,
+          466.1,
+          163.2,
+          212.6
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: (NCGA - NCGA with ODES)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$1.17 \\mathrm{E}-45^{\\mathrm{T}}$",
+          "$8.95 \\mathrm{E}-37^{\\mathrm{T}}$",
+          "$1.77 \\mathrm{E}-17^{\\mathrm{T}}$",
+          "$9.46 \\mathrm{E}-29^{\\mathrm{T}}$",
+          "$1.30 \\mathrm{E}-40^{\\mathrm{T}}$"
+        ],
+        [
+          "(b) Population sizes statistical data",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "NCGA",
+          116,
+          118,
+          121,
+          116,
+          117
+        ],
+        [
+          "( $\\sigma$ )",
+          13.5,
+          13.9,
+          20.7,
+          13.2,
+          14.8
+        ],
+        [
+          "eNCGA",
+          114,
+          118,
+          119,
+          117,
+          116
+        ],
+        [
+          "( $\\sigma$ )",
+          11.5,
+          14.6,
+          16.0,
+          14.3,
+          12.6
+        ],
+        [
+          "$p$-value",
+          "Statistical $t$-test: (NCGA - NCGA with ODES)",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          0.43051,
+          0.8235,
+          0.49036,
+          0.75163,
+          0.59553
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 6
+    }
+  ]
+}

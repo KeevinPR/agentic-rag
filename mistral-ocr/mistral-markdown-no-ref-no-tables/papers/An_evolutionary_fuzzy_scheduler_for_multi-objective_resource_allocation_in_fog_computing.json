@@ -1,0 +1,866 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/An evolutionary fuzzy scheduler for multi-objective resource allocation in fog computing.md",
+    "filename": "An evolutionary fuzzy scheduler for multi-objective resource allocation in fog computing.md",
+    "title": "An evolutionary fuzzy scheduler for multi-objective resource allocation in fog computing",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] F. Mattern, C. Floerkemeier, K. Sachs, I. Petrov, P. Guerrero, From the internet of computers to the internet of things, in: Lecture Notes in Computer Science, vol. 6462, Springer, Berlin, Heidelberg, 2010, pp. 242-259.\n[2] M. Gorlatova, H. Inaltekin, M. Chiang, Characterizing task completion latencies in fog computing, arXiv preprint arXiv:1811.02638.\n[3] M. Aazam, S. Zeadally, K.A. Harras, Offloading in fog computing for IoT: review, enabling technologies, and research opportunities, Future Gener. Comput. Syst. 87 (2018) 278-289.\n[4] A. Yousefpour, C. Fung, T. Nguyen, K. Kadiyala, F. Jalali, A. Niakanlahiji, J.P. Jue, All one needs to know about fog computing and related edge computing paradigms: A complete survey, J. Syst. Archit. 98 (2019) $289-330$.\n[5] P.Y. Zhang, M.C. Zhou, G. Fortino, Security and trust issues in fog computing: a survey, Future Gener. Comput. Syst. 88 (2018) 16-27.\n[6] Y.K. Kwok, I. Ahmad, Static scheduling algorithms for allocating directed task graphs to multiprocessors, ACM Comput. Surv. 31 (4) (1999) 406-471.\n[7] A. Tchernykh, U. Schwiegelsohn, E.G. Talbi, M. Babenko, Towards understanding uncertainty in cloud computing with risks of confidentiality, integrity, and availability, J. Comput. Sci. 36 (2019) 1-9.\n[8] R. Sowinski, M. Hapke, Scheduling Under Fuzziness, Physica-Verlag, 2000.\n[9] J.J. Palacios, I. González-Rodríguez, C.R. Vela, J. Puente, Robust multiobjective optimisation for fuzzy job shop problems, Appl. Soft Comput. 56 (2017) 604-616.\n[10] J. Bidot, T. Vidal, P. Laborie, J. Beck, A theoretic and practical framework for scheduling in a stochastic environment, J. Sched. 12 (3) (2009) 315.\n[11] P. Li, B. Liu, Entropy of credibility distributions for fuzzy variables, IEEE Trans. Fuzzy Syst. 16 (1) (2009) 123-129.\n[12] J. Meng, H. Tan, X.Y. Li, Z. Han, B. Li, Online deadline-aware task dispatching and scheduling in edge computing, IEEE Trans. Parallel Distrib. Syst. 31 (2020) 1270-1286.\n[13] N. Verba, K.M. Chao, J. Lewandowski, N. Shah, A. James, F. Tian, Modeling, industry, Modeling industry 4.0 based fog computing environments for application analysis and deployment, Future Gener. Comput. Syst. 91 (2019) 48-60.\n[14] H. Yuan, J. Bi, M. Zhou, Q. Liu, A.C. Ammari, Biobjective task scheduling for distributed green data centers, IEEE Trans. Autom. Sci. Eng. (2020) 1-12.\n\n[15] H. Yuan, J. Bi, W. Tan, M. Zhou, B.H. Li, J. Li, TTSA: An effective scheduling approach for delay bounded tasks in hybrid clouds, IEEE Trans. Cybern. 47 (2017) 3658-3668.\n[16] Z. Lv, L. Wang, Z. Han, J. Zhao, W. Wang, Surrogate-assisted particle swarm optimization algorithm with Pareto active learning for expensive multi-objective optimization, IEEE/CAA J. Autom. Sin. 6 (2019) 838-849.\n[17] Q. Kang, X. Song, M. Zhou, L. Li, A collaborative resource allocation strategy for decomposition-based multiobjective evolutionary algorithms, IEEE Trans. Syst. Man Cybern : Syst. 49 (2019) 2416-2423.\n[18] Y. Nan, W. Li, W. Bao, F.C. Delicato, P.F. Pires, A.Y. Zomaya, A dynamic tradeoff data processing framework for delay-sensitive applications in cloud of things systems, J. Parallel Distrib. Comput. 112 (2018) 53-66.\n[19] M. Yang, H. Ma, S. Wei, Y. Zeng, Y. Chen, Y. Hu, A multi-objective task scheduling method for fog computing in cyber-physical-social services, IEEE Access 8 (2020) 65085-65095.\n[20] W. Zhan, et al., Deep-reinforcement-learning-based offloading scheduling for vehicular edge computing, IEEE Internet Things J. 7 (6) (2020) $5449-5465$.\n[21] H. Yuan, M. Zhou, Profit-maximized collaborative computation offloading and resource allocation in distributed cloud and edge computing systems, IEEE Trans. Autom. Sci. Eng. (2020) 1-11.\n[22] R. Mahmoud, S.N. Srirama, K. Ramamohanarao, R. Buyya, Quality of experience (QoE)-aware placement of applications in Fog computing environments, J. Parallel Distrib. Comput. 132 (2019) 190-203.\n[23] S. Hu, G. Li, Dynamic request scheduling optimization in mobile edge computing for IoT applications, IEEE Internet Things J. 7 (2) (2020) $1426-1437$.\n[24] S. Sundar, B. Liang, Offloading dependent tasks with communication delay and deadline constraint, in: IEEE Conference on Computer Communications, INFOCOM 2018, IEEE, Honolulu, HI, USA, 2018, pp. 37-45.\n[25] X. Zhou, G. Zhang, J. Sun, et al., Minimizing cost and makespan for workflow scheduling in cloud using fuzzy dominance sort based HEFT, Future Gener. Comput. Syst. 93 (2019) 278-289.\n[26] C.G. Wu, W. Li, L. Wang, A.Y. Zomaya, Hybrid evolutionary scheduling for energy-efficient fog-enhanced internet of things, IEEE Trans. Cloud Comput. (2018) 1-8.\n[27] H. Topcuoglu, S. Hariri, M.Y. Wu, Performance-effective and lowcomplexity task scheduling for heterogeneous computing, IEEE Trans. Parallel Distrib. Syst. 13 (3) (2002) 260-274.\n[28] L.C. Canon, E. Jeannot, R. Sakellariou, W. Zheng, Comparative Evaluation of the Robustness of Dag Scheduling Heuristics, Grid Computing: Achievements and Prospects, Springer, Boston, MA, 2008, pp. 73-84.\n[29] J.J. Durillo, H.M. Fard, R. Prodan, MOHEFT: A multi-objective list-based method for workflow scheduling, in: 4th International Conference on Cloud Computing Technology and Science Proceeding, IEEE, Taipei, 2012, pp. 185-192.\n[30] L.A. Zadeh, Fuzzy sets, in: Fuzzy Sets Fuzzy Logic and Fuzzy Systems: Selected Papers By Lotfi a. Zadeh, World Scientific Publishing Co. Inc., USA, 1996, pp. 19-34.\n[31] W. Li, et al., System modelling and performance evaluation of a three-tier cloud of things, Future Gener. Comput. Syst. 70 (2017) 104-125.\n[32] M.H. Ghahramani, M. Zhou, C.T. Hon, Toward cloud computing QoS architecture: analysis of cloud systems and cloud services, IEEE/CAA J. Autom. Sin. 4 (2017) 6-18.\n[33] M. Sakawa, K. Kubota, Fuzzy programming for multiobjective job shop scheduling with fuzzy processing time and fuzzy duedate through genetic algorithms, European J. Oper. Res. 120 (2000) 393-407.\n[34] S. Bahija, Population-Based Incremental Learning. a Method for Integrating Genetic Search Based Function Optimization and Competitive Learning Technical Report, Carnegie-Mellon Univ Pittsburgh Pa Dept of Computer Science, PA, USA, 1994.\n[35] E.D. Jiang, L. Wang, An improved multi-objective evolutionary algorithm based on decomposition for energy-efficient permutation flow shop scheduling problem with sequence-dependent setup time, Int. J. Prod. Res. 57 (6) (2019) 1756-1771.\n[36] Q. Zhang, H. Li, MOEA/D: a multiobjective evolutionary algorithm based on decomposition, IEEE Trans. Evol. Comput. 11 (6) (2007) 712-731.\n[37] R. Garg, A.K. Singh, Multi-objective workflow grid scheduling using $v$ fuzzy dominance sort based discrete particle swarm optimization, J. Supercomput. 68 (2) (2014) 709-732.\n[38] J.J. Durillo, R. Prodan, Multi-objective workflow scheduling in Amazon EC2, Clust. Comput. 17 (2) (2014) 169-189.\n[39] J. Yu, M. Kirley, R. Buyya, Multi-objective planning for workflow execution on grids, in: IEEE/ACM International Conference on Grid Computing, 2007, pp. 10-17.\n[40] D.C. Montgomery, Design and Analysis of Experiments, Wiley, New York, 1984.\n[41] R.P. Dick, D.L. Rhodes, W. Wolf, TGFF: task graphs for free, in: 6th International Workshop on Hardware/Software Codesign Computer Society, 1998, pp. 97-101.\n[42] M. Costard, M. Marrakchi, Y. Robert, D. Trystram, Parallel Gaussian elimination on an MIMD computer, 6 (1988) 275-296.\n[43] T.H. Cormen, C.E. Leiserson, R.L. Rivest, Introduction to Algorithms, MIT Press, 1990.\n\nChu-ge Wu received the B.Sc. degree in automation from Tsinghua University, Beijing, China, in 2015, where she is currently pursuing the Ph.D. degree in control theory and control engineering. Her current research interest includes scheduling and optimization algorithms for heterogeneous computing systems, intelligent optimization.\n\nWei Li received his Ph.D. degree from School of Information Technologies at The University of Sydney. He is currently a research associate in Centre for Distributed and High Performance Computing, The University of Sydney. His research interests include Internet of Things, edge computing, sustainable computing, task scheduling, energy efficiency and optimization. He is the recipient of four IEEE or ACM conference best paper awards. He received the IEEE TCSC Award for Excellence in Scalable Computing for Early Career Researchers (2018) and the IEEE Outstanding Leadership Award (2018). He is a senior member of the IEEE Computer Society and the IEEE, and a member of the ACM.\n![img-12.jpeg](img-12.jpeg)\n\nLing Wang received the B.Sc. in automation and Ph.D. in control theory and control engineering from Tsinghua University, Beijing, China, in 1995 and 1999, respectively. Since 1999, he has been with the Department of Automation, Tsinghua University, where he became a full professor in 2008. His current research interests include intelligent optimization and production scheduling. He has authored five academic books and more than 300 refereed papers.\nProfessor Wang is a recipient of the National Natural Science Fund for Distinguished Young Scholars of China, the National Natural Science Award (Second Place) in 2014, the Science and Technology Award of Beijing City in 2008, the Natural Science Award (First Place in 2003, and Second Place in 2007) nominated by the Ministry of Education of China. Professor Wang now is the Editor-in-Chief of International Journal of Automation and Control, and the Associate Editor of IEEE Transactions on Evolutionary Computation, Swarm and Evolutionary Computation, etc.\n\nAlbert Y. Zomaya is the Chair Professor of High Performance Computing and Networking in School of Information Technologies, The University of Sydney, and he also serves as the Director of Centre for Distributed and High Performance Computing. Professor Zomaya published more than 600 scientific papers and articles and is author, co-author or editor of more than 20 books. He is the Founding Editor in Chief of the IEEE Transactions on Sustainable Computing and serves as an associate editor for more than 20 leading journals. Professor Zomaya served as an Editor in Chief for the IEEE Transactions on Computers (2011-2014).\n\nProfessor Zomaya is the recipient of the IEEE Technical Committee on Parallel Processing Outstanding Service Award (2011), the IEEE Technical Committee on Scalable Computing Medal for Excellence in Scalable Computing (2011), the IEEE Computer Society Technical Achievement Award (2014), and the ACM SIGSIM MSWiM Reginald A. Fessenden Award (2017). He is a Chartered Engineer, a Fellow of AAAS, IEEE, and IET. Professor Zomaya's research interests are in the areas of parallel and distributed computing and complex systems.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "F. Mattern, C. Floerkemeier, K. Sachs, I. Petrov, P. Guerrero, From the internet of computers to the internet of things, in: Lecture Notes in Computer Science, vol. 6462, Springer, Berlin, Heidelberg, 2010, pp. 242-259."
+      },
+      {
+        "ref_id": "2",
+        "text": "M. Gorlatova, H. Inaltekin, M. Chiang, Characterizing task completion latencies in fog computing, arXiv preprint arXiv:1811.02638."
+      },
+      {
+        "ref_id": "3",
+        "text": "M. Aazam, S. Zeadally, K.A. Harras, Offloading in fog computing for IoT: review, enabling technologies, and research opportunities, Future Gener. Comput. Syst. 87 (2018) 278-289."
+      },
+      {
+        "ref_id": "4",
+        "text": "A. Yousefpour, C. Fung, T. Nguyen, K. Kadiyala, F. Jalali, A. Niakanlahiji, J.P. Jue, All one needs to know about fog computing and related edge computing paradigms: A complete survey, J. Syst. Archit. 98 (2019) $289-330$."
+      },
+      {
+        "ref_id": "5",
+        "text": "P.Y. Zhang, M.C. Zhou, G. Fortino, Security and trust issues in fog computing: a survey, Future Gener. Comput. Syst. 88 (2018) 16-27."
+      },
+      {
+        "ref_id": "6",
+        "text": "Y.K. Kwok, I. Ahmad, Static scheduling algorithms for allocating directed task graphs to multiprocessors, ACM Comput. Surv. 31 (4) (1999) 406-471."
+      },
+      {
+        "ref_id": "7",
+        "text": "A. Tchernykh, U. Schwiegelsohn, E.G. Talbi, M. Babenko, Towards understanding uncertainty in cloud computing with risks of confidentiality, integrity, and availability, J. Comput. Sci. 36 (2019) 1-9."
+      },
+      {
+        "ref_id": "8",
+        "text": "R. Sowinski, M. Hapke, Scheduling Under Fuzziness, Physica-Verlag, 2000."
+      },
+      {
+        "ref_id": "9",
+        "text": "J.J. Palacios, I. González-Rodríguez, C.R. Vela, J. Puente, Robust multiobjective optimisation for fuzzy job shop problems, Appl. Soft Comput. 56 (2017) 604-616."
+      },
+      {
+        "ref_id": "10",
+        "text": "J. Bidot, T. Vidal, P. Laborie, J. Beck, A theoretic and practical framework for scheduling in a stochastic environment, J. Sched. 12 (3) (2009) 315."
+      },
+      {
+        "ref_id": "11",
+        "text": "P. Li, B. Liu, Entropy of credibility distributions for fuzzy variables, IEEE Trans. Fuzzy Syst. 16 (1) (2009) 123-129."
+      },
+      {
+        "ref_id": "12",
+        "text": "J. Meng, H. Tan, X.Y. Li, Z. Han, B. Li, Online deadline-aware task dispatching and scheduling in edge computing, IEEE Trans. Parallel Distrib. Syst. 31 (2020) 1270-1286."
+      },
+      {
+        "ref_id": "13",
+        "text": "N. Verba, K.M. Chao, J. Lewandowski, N. Shah, A. James, F. Tian, Modeling, industry, Modeling industry 4.0 based fog computing environments for application analysis and deployment, Future Gener. Comput. Syst. 91 (2019) 48-60."
+      },
+      {
+        "ref_id": "14",
+        "text": "H. Yuan, J. Bi, M. Zhou, Q. Liu, A.C. Ammari, Biobjective task scheduling for distributed green data centers, IEEE Trans. Autom. Sci. Eng. (2020) 1-12."
+      },
+      {
+        "ref_id": "15",
+        "text": "H. Yuan, J. Bi, W. Tan, M. Zhou, B.H. Li, J. Li, TTSA: An effective scheduling approach for delay bounded tasks in hybrid clouds, IEEE Trans. Cybern. 47 (2017) 3658-3668."
+      },
+      {
+        "ref_id": "16",
+        "text": "Z. Lv, L. Wang, Z. Han, J. Zhao, W. Wang, Surrogate-assisted particle swarm optimization algorithm with Pareto active learning for expensive multi-objective optimization, IEEE/CAA J. Autom. Sin. 6 (2019) 838-849."
+      },
+      {
+        "ref_id": "17",
+        "text": "Q. Kang, X. Song, M. Zhou, L. Li, A collaborative resource allocation strategy for decomposition-based multiobjective evolutionary algorithms, IEEE Trans. Syst. Man Cybern : Syst. 49 (2019) 2416-2423."
+      },
+      {
+        "ref_id": "18",
+        "text": "Y. Nan, W. Li, W. Bao, F.C. Delicato, P.F. Pires, A.Y. Zomaya, A dynamic tradeoff data processing framework for delay-sensitive applications in cloud of things systems, J. Parallel Distrib. Comput. 112 (2018) 53-66."
+      },
+      {
+        "ref_id": "19",
+        "text": "M. Yang, H. Ma, S. Wei, Y. Zeng, Y. Chen, Y. Hu, A multi-objective task scheduling method for fog computing in cyber-physical-social services, IEEE Access 8 (2020) 65085-65095."
+      },
+      {
+        "ref_id": "20",
+        "text": "W. Zhan, et al., Deep-reinforcement-learning-based offloading scheduling for vehicular edge computing, IEEE Internet Things J. 7 (6) (2020) $5449-5465$."
+      },
+      {
+        "ref_id": "21",
+        "text": "H. Yuan, M. Zhou, Profit-maximized collaborative computation offloading and resource allocation in distributed cloud and edge computing systems, IEEE Trans. Autom. Sci. Eng. (2020) 1-11."
+      },
+      {
+        "ref_id": "22",
+        "text": "R. Mahmoud, S.N. Srirama, K. Ramamohanarao, R. Buyya, Quality of experience (QoE)-aware placement of applications in Fog computing environments, J. Parallel Distrib. Comput. 132 (2019) 190-203."
+      },
+      {
+        "ref_id": "23",
+        "text": "S. Hu, G. Li, Dynamic request scheduling optimization in mobile edge computing for IoT applications, IEEE Internet Things J. 7 (2) (2020) $1426-1437$."
+      },
+      {
+        "ref_id": "24",
+        "text": "S. Sundar, B. Liang, Offloading dependent tasks with communication delay and deadline constraint, in: IEEE Conference on Computer Communications, INFOCOM 2018, IEEE, Honolulu, HI, USA, 2018, pp. 37-45."
+      },
+      {
+        "ref_id": "25",
+        "text": "X. Zhou, G. Zhang, J. Sun, et al., Minimizing cost and makespan for workflow scheduling in cloud using fuzzy dominance sort based HEFT, Future Gener. Comput. Syst. 93 (2019) 278-289."
+      },
+      {
+        "ref_id": "26",
+        "text": "C.G. Wu, W. Li, L. Wang, A.Y. Zomaya, Hybrid evolutionary scheduling for energy-efficient fog-enhanced internet of things, IEEE Trans. Cloud Comput. (2018) 1-8."
+      },
+      {
+        "ref_id": "27",
+        "text": "H. Topcuoglu, S. Hariri, M.Y. Wu, Performance-effective and lowcomplexity task scheduling for heterogeneous computing, IEEE Trans. Parallel Distrib. Syst. 13 (3) (2002) 260-274."
+      },
+      {
+        "ref_id": "28",
+        "text": "L.C. Canon, E. Jeannot, R. Sakellariou, W. Zheng, Comparative Evaluation of the Robustness of Dag Scheduling Heuristics, Grid Computing: Achievements and Prospects, Springer, Boston, MA, 2008, pp. 73-84."
+      },
+      {
+        "ref_id": "29",
+        "text": "J.J. Durillo, H.M. Fard, R. Prodan, MOHEFT: A multi-objective list-based method for workflow scheduling, in: 4th International Conference on Cloud Computing Technology and Science Proceeding, IEEE, Taipei, 2012, pp. 185-192."
+      },
+      {
+        "ref_id": "30",
+        "text": "L.A. Zadeh, Fuzzy sets, in: Fuzzy Sets Fuzzy Logic and Fuzzy Systems: Selected Papers By Lotfi a. Zadeh, World Scientific Publishing Co. Inc., USA, 1996, pp. 19-34."
+      },
+      {
+        "ref_id": "31",
+        "text": "W. Li, et al., System modelling and performance evaluation of a three-tier cloud of things, Future Gener. Comput. Syst. 70 (2017) 104-125."
+      },
+      {
+        "ref_id": "32",
+        "text": "M.H. Ghahramani, M. Zhou, C.T. Hon, Toward cloud computing QoS architecture: analysis of cloud systems and cloud services, IEEE/CAA J. Autom. Sin. 4 (2017) 6-18."
+      },
+      {
+        "ref_id": "33",
+        "text": "M. Sakawa, K. Kubota, Fuzzy programming for multiobjective job shop scheduling with fuzzy processing time and fuzzy duedate through genetic algorithms, European J. Oper. Res. 120 (2000) 393-407."
+      },
+      {
+        "ref_id": "34",
+        "text": "S. Bahija, Population-Based Incremental Learning. a Method for Integrating Genetic Search Based Function Optimization and Competitive Learning Technical Report, Carnegie-Mellon Univ Pittsburgh Pa Dept of Computer Science, PA, USA, 1994."
+      },
+      {
+        "ref_id": "35",
+        "text": "E.D. Jiang, L. Wang, An improved multi-objective evolutionary algorithm based on decomposition for energy-efficient permutation flow shop scheduling problem with sequence-dependent setup time, Int. J. Prod. Res. 57 (6) (2019) 1756-1771."
+      },
+      {
+        "ref_id": "36",
+        "text": "Q. Zhang, H. Li, MOEA/D: a multiobjective evolutionary algorithm based on decomposition, IEEE Trans. Evol. Comput. 11 (6) (2007) 712-731."
+      },
+      {
+        "ref_id": "37",
+        "text": "R. Garg, A.K. Singh, Multi-objective workflow grid scheduling using $v$ fuzzy dominance sort based discrete particle swarm optimization, J. Supercomput. 68 (2) (2014) 709-732."
+      },
+      {
+        "ref_id": "38",
+        "text": "J.J. Durillo, R. Prodan, Multi-objective workflow scheduling in Amazon EC2, Clust. Comput. 17 (2) (2014) 169-189."
+      },
+      {
+        "ref_id": "39",
+        "text": "J. Yu, M. Kirley, R. Buyya, Multi-objective planning for workflow execution on grids, in: IEEE/ACM International Conference on Grid Computing, 2007, pp. 10-17."
+      },
+      {
+        "ref_id": "40",
+        "text": "D.C. Montgomery, Design and Analysis of Experiments, Wiley, New York, 1984."
+      },
+      {
+        "ref_id": "41",
+        "text": "R.P. Dick, D.L. Rhodes, W. Wolf, TGFF: task graphs for free, in: 6th International Workshop on Hardware/Software Codesign Computer Society, 1998, pp. 97-101."
+      },
+      {
+        "ref_id": "42",
+        "text": "M. Costard, M. Marrakchi, Y. Robert, D. Trystram, Parallel Gaussian elimination on an MIMD computer, 6 (1988) 275-296."
+      },
+      {
+        "ref_id": "43",
+        "text": "T.H. Cormen, C.E. Leiserson, R.L. Rivest, Introduction to Algorithms, MIT Press, 1990."
+      }
+    ],
+    "reference_count": 43,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Literature classification for fog resource allocation problem.",
+      "headers": [
+        "Ref.",
+        "Performance metrics",
+        "Scheduling model",
+        "Approach (algorithm)"
+      ],
+      "rows": [
+        [
+          18,
+          "Response time, cost and number of application loss",
+          "Task offloading with queueing model",
+          "Lyapunov optimal method"
+        ],
+        [
+          19,
+          "Total execution time and resource cost",
+          "",
+          "Multi-objective task scheduling algorithm with adaptive neighbourhood strategy"
+        ],
+        [
+          "",
+          "Weighted sum of latency and energy",
+          "",
+          "Deep reinforcement learning method"
+        ],
+        [
+          "",
+          "Profit and response time constraint",
+          "",
+          "SA-based migrating birds optimization algorithm"
+        ],
+        [
+          21,
+          "QoE",
+          "Independent task allocation model",
+          "Fuzzy logic based task clustering and linear optimization method"
+        ],
+        [
+          "",
+          "Energy consumption, profit with resource constraint",
+          "",
+          "Convex optimization for power allocation and NSGA for scheduling"
+        ],
+        [
+          23,
+          "Deadline constrained makespan",
+          "DAG task offloading and scheduling model",
+          "MILP enhanced greedy task allocation method"
+        ],
+        [
+          "",
+          "Response time and cost",
+          "",
+          "Fuzzy dominance based multi-objective heuristic method"
+        ],
+        [
+          "",
+          "Response time, fog energy consumption and system lifetime",
+          "",
+          "Task offloading heuristic method and EDA for task scheduling"
+        ],
+        [
+          "This work",
+          "Agreement index and robustness",
+          "",
+          "EDA evolution for fuzzy logical offloading strategy"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Notations for the models.",
+      "headers": [
+        "",
+        "Notation",
+        "Implication"
+      ],
+      "rows": [
+        [
+          "Decision variables",
+          "$\\begin{aligned} & x_{j, i, r} \\\\ & \\bar{c}_{j} \\\\ & m_{j} \\end{aligned}$",
+          "$\\begin{aligned} & \\{0,1\\}, x_{j}, r, i=1 \\text { denotes task } j \\text { is processed on node } i \\text { in position } r, \\text { otherwise, } x_{j} j, r=0 ; \\\\ & \\text { triangle fuzzy number, the completion time of task } j, j=1, \\ldots, n ; \\\\ & \\{1, \\ldots, m\\} \\text {, node assignment of task } j ; \\end{aligned}$"
+        ],
+        [
+          "Problem variables \\& constraints",
+          "$n$",
+          "Number of tasks in a certain application;"
+        ],
+        [
+          "",
+          "m",
+          "Number of nodes in three tiers;"
+        ],
+        [
+          "",
+          "$R\\left(m_{i}, m_{j}\\right)$",
+          "Bandwidth between node mi and mj;"
+        ],
+        [
+          "",
+          "$\\bar{w}_{j}$",
+          "Triangular fuzzy number, the computation time of task j;"
+        ],
+        [
+          "",
+          "$v_{i}$",
+          "Processing speed of node i;"
+        ],
+        [
+          "",
+          "$\\bar{D}\\left(j_{1}, j_{2}\\right)$",
+          -12
+        ],
+        [
+          "",
+          "$j_{1} \\rightarrow j_{2}$",
+          12
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Category",
+        "1",
+        "2",
+        "$\\ldots$",
+        "$k$",
+        "$\\ldots$",
+        "$L$"
+      ],
+      "rows": [
+        [
+          "Tier Assignment",
+          "$t_{1}$",
+          "$t_{2}$",
+          "$\\ldots$",
+          "$t_{k}$",
+          "$\\ldots$",
+          "$t_{L}$"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Factor levels of parameters.",
+      "headers": [
+        "Parameters",
+        "Factor level",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "$N$",
+          20,
+          25,
+          30,
+          35
+        ],
+        [
+          "$\\alpha$",
+          0.025,
+          0.05,
+          0.075,
+          0.1
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "The RV value.",
+      "headers": [
+        "Experiment <br> numbers",
+        "Factor",
+        "",
+        "RV (\\%)",
+        "Experiment <br> numbers",
+        "Factor",
+        "",
+        "RV (\\%)",
+        "Experiment <br> numbers",
+        "Factor",
+        "",
+        "RV (\\%)",
+        "Experiment <br> numbers",
+        "Factor",
+        "",
+        "RV (\\%)"
+      ],
+      "rows": [
+        [
+          "",
+          "$N$",
+          "$\\alpha$",
+          "",
+          "",
+          "$N$",
+          "$\\alpha$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          1,
+          1,
+          1,
+          7.89,
+          5,
+          2,
+          1,
+          7.89,
+          9,
+          3,
+          1,
+          15.79,
+          13,
+          4,
+          1,
+          10.53
+        ],
+        [
+          2,
+          1,
+          2,
+          15.79,
+          6,
+          2,
+          2,
+          7.89,
+          10,
+          3,
+          2,
+          28.95,
+          14,
+          4,
+          2,
+          18.42
+        ],
+        [
+          3,
+          1,
+          3,
+          5.26,
+          7,
+          2,
+          3,
+          7.89,
+          11,
+          3,
+          3,
+          23.68,
+          15,
+          4,
+          3,
+          15.79
+        ],
+        [
+          4,
+          1,
+          4,
+          7.89,
+          8,
+          2,
+          4,
+          15.79,
+          12,
+          3,
+          4,
+          15.79,
+          16,
+          4,
+          4,
+          10.53
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 16
+    },
+    {
+      "table_number": "5",
+      "table_title": "Simulation settings.",
+      "headers": [
+        "",
+        "Notation",
+        "Parameter setting in this paper"
+      ],
+      "rows": [
+        [
+          "Randomly <br> generated DAG <br> parameters",
+          "n",
+          20050
+        ],
+        [
+          "",
+          "CCR",
+          "$(0.1,0.5,1.0,5.0)$;"
+        ],
+        [
+          "",
+          "Loose",
+          "$\\{1.0,1.5,2.0)$;"
+        ],
+        [
+          "Algorithm <br> parameters",
+          "N",
+          30
+        ],
+        [
+          "",
+          "$\\alpha$",
+          0.05
+        ],
+        [
+          "",
+          "LS",
+          "Set as the length of the encoded string;"
+        ],
+        [
+          "",
+          "Running time",
+          "The algorithm is stopped after $\\mathrm{n} / 10$ (s)."
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "6",
+      "table_title": "Results compared with HEFT heuristic method.",
+      "headers": [
+        "Deadline loose",
+        "CCR",
+        "Dominating HEFT (\\%)",
+        "Equals to HEFT (\\%)",
+        "Non-dominating HEFT (\\%)",
+        "Dominated by HEFT (\\%)"
+      ],
+      "rows": [
+        [
+          1.0,
+          0.1,
+          66.8,
+          11.4,
+          2.0,
+          19.8
+        ],
+        [
+          "",
+          0.5,
+          70.0,
+          12.6,
+          2.8,
+          14.6
+        ],
+        [
+          "",
+          1.0,
+          96.0,
+          1.4,
+          0.8,
+          1.8
+        ],
+        [
+          "",
+          5.0,
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.5,
+          0.1,
+          77.0,
+          7.2,
+          4.0,
+          11.8
+        ],
+        [
+          "",
+          0.5,
+          86.4,
+          4.8,
+          3.6,
+          5.2
+        ],
+        [
+          "",
+          1.0,
+          96.4,
+          1.4,
+          1.4,
+          0.8
+        ],
+        [
+          "",
+          5.0,
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.1,
+          79.6,
+          7.6,
+          5.6,
+          7.2
+        ],
+        [
+          "",
+          0.5,
+          93.4,
+          2.6,
+          1.0,
+          3.0
+        ],
+        [
+          "",
+          1.0,
+          99.2,
+          0.8,
+          0.0,
+          0.0
+        ],
+        [
+          "",
+          5.0,
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "C metrics results compared with multi-objective algorithms.",
+      "headers": [
+        "Deadline loose",
+        "CCR",
+        "C(fEDA, MOEA/D)",
+        "C(MOEA/D, fEDA)",
+        "C(fEDA, FDHEFT)",
+        "C(FDHEFT, fEDA)"
+      ],
+      "rows": [
+        [
+          1.0,
+          0.1,
+          0.885,
+          0.057,
+          0.858,
+          0.0
+        ],
+        [
+          "",
+          0.5,
+          0.97,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          "",
+          1.0,
+          0.967,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          "",
+          5.0,
+          0.95,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.5,
+          0.1,
+          0.95,
+          0.0,
+          0.917,
+          0.0
+        ],
+        [
+          "",
+          0.5,
+          0.91,
+          0.0,
+          0.777,
+          0.05
+        ],
+        [
+          "",
+          1.0,
+          0.81,
+          0.075,
+          0.852,
+          0.05
+        ],
+        [
+          "",
+          5.0,
+          0.979,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.1,
+          0.907,
+          0.05,
+          1.0,
+          0.0
+        ],
+        [
+          "",
+          0.5,
+          0.922,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          "",
+          1.0,
+          0.879,
+          0.067,
+          0.93,
+          0.0
+        ],
+        [
+          "",
+          5.0,
+          0.994,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "8",
+      "table_title": "IGD values compared with multi-objective algorithms.",
+      "headers": [
+        "Deadline <br> loose",
+        "CCR",
+        "fEDA",
+        "MOEA/D",
+        "FDHEFT"
+      ],
+      "rows": [
+        [
+          1.0,
+          0.1,
+          0.057,
+          0.616,
+          0.901
+        ],
+        [
+          "",
+          0.5,
+          0.0,
+          22.328,
+          44.518
+        ],
+        [
+          "",
+          1.0,
+          0.07,
+          6.349,
+          66.218
+        ],
+        [
+          "",
+          5.0,
+          0.086,
+          3.92,
+          66.544
+        ],
+        [
+          1.5,
+          0.1,
+          0.0,
+          1.793,
+          5.726
+        ],
+        [
+          "",
+          0.5,
+          0.097,
+          0.873,
+          6.192
+        ],
+        [
+          "",
+          1.0,
+          0.116,
+          19.259,
+          26.319
+        ],
+        [
+          "",
+          5.0,
+          0.094,
+          18.856,
+          63.64
+        ],
+        [
+          2.0,
+          0.1,
+          0.397,
+          2.853,
+          36.802
+        ],
+        [
+          "",
+          0.5,
+          0.001,
+          1.659,
+          32.51
+        ],
+        [
+          "",
+          1.0,
+          0.049,
+          1.019,
+          8.347
+        ],
+        [
+          "",
+          5.0,
+          0.0,
+          6.207,
+          11.802
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    }
+  ]
+}

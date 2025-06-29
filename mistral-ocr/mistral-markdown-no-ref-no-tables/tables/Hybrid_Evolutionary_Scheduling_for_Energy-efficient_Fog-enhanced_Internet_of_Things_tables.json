@@ -1,0 +1,487 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Hybrid Evolutionary Scheduling for Energy-efficient Fog-enhanced Internet of Things.md",
+    "filename": "Hybrid Evolutionary Scheduling for Energy-efficient Fog-enhanced Internet of Things.md",
+    "title": "Hybrid Evolutionary Scheduling for Energy-efficient Fog-enhanced Internet of Things",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "MATHEMATICAL NOTATIONS FOR THE MODELS",
+      "headers": [
+        "",
+        "Notation",
+        "Implication"
+      ],
+      "rows": [
+        [
+          "Decision variables",
+          "$x_{j, s, i}$",
+          "$\\begin{aligned} & {[0,1], x_{j, s, i}=1 \\text { denotes task } j \\text { is the } r \\text {-th task }} \\\\ & \\text { processed on node } i, \\text { otherwise, } x_{j, s, i}=0 ; \\\\ & C_{s, i} \\geq 0 \\text {, the completion time of the } r \\text {-th } \\\\ & \\text { task on node } i, r=1, \\ldots, n ; \\\\ & {[1, m], \\text { node assignment of task } j ;} \\end{aligned}$"
+        ],
+        [
+          "Problem variables \\& constraints",
+          "$n$",
+          "number of tasks in one application; <br> number of nodes in three tiers, $\\left\\{m_{i}, m_{i}\\right.$, <br> $m_{i}$ ! refers to the number of IoT devices, <br> fog nodes and cloud nodes respectively; <br> bandwidth between node $m_{i}$ and $m_{j}$; <br> computation time of task $j$; <br> processing speed of node $i$ and $\\left\\{v_{i}, v_{i}, v_{i}\\right\\}$ <br> refers to the speed of IoT devices, fog <br> nodes and cloud nodes respectively; <br> inter-task data size between task $i$ and $j$; <br> there is a path from $i$ to $j$ in the DAG and <br> task $i$ is precedent of task $j$;"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "THE NOTATIONS USED IN PSEUDO CODE",
+      "headers": [
+        "Notation",
+        "Meaning"
+      ],
+      "rows": [
+        [
+          "Mt",
+          "Machine time vector, length is $m,+1$, represents the available time of the IoT devices in the cluster and the virtual computation node;"
+        ],
+        [
+          "",
+          2
+        ],
+        [
+          "Ct",
+          2
+        ],
+        [
+          "input $(k)$",
+          "$\\sum_{u \\in \\operatorname{pred}(k)} D(u, k)$;"
+        ],
+        [
+          "output $(k)$",
+          "$\\sum_{v \\in \\operatorname{succ}(k)} D(k, v)$;"
+        ],
+        [
+          "EST",
+          "Earliest starting time vector for each task in things tier and the virtual computation node respectively;"
+        ],
+        [
+          "SendE(D)",
+          "Battery energy consumption of sending data sized $D$;"
+        ],
+        [
+          "ReceiveE(D)",
+          "Battery energy consumption of receiving data sized $D$;"
+        ],
+        [
+          "ProcessE(k)",
+          "Battery energy consumption of processing task $k$;"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Things",
+        "$i_{1}$",
+        "$i_{2}$",
+        "$\\ldots$",
+        "$i_{\\mathrm{I}}$",
+        "$\\ldots$",
+        "$i_{\\mathrm{T}}$"
+      ],
+      "rows": [
+        [
+          "Fog\\&Cloud",
+          "$j_{1}$",
+          "$j_{2}$",
+          "$\\ldots$",
+          "$j_{\\mathrm{k}}$",
+          "$\\ldots$",
+          "$j_{\\mathrm{F}}$"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 7
+    },
+    {
+      "table_number": "III",
+      "table_title": "FACTOR LEVELS OF PARAMETERS",
+      "headers": [
+        "Parameters",
+        "Factor level",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "N",
+          20,
+          25,
+          30,
+          35
+        ],
+        [
+          "a",
+          0.025,
+          0.05,
+          0.075,
+          0.1
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "IV",
+      "table_title": "THE RV VALUE",
+      "headers": [
+        "Experiment <br> Numbers",
+        "Factor",
+        "",
+        "RV (\\%)",
+        "Experiment <br> Numbers",
+        "Factor",
+        "",
+        "RV (\\%)",
+        "Experiment <br> Numbers",
+        "Factor",
+        "",
+        "RV (\\%)",
+        "Experiment <br> Numbers",
+        "Factor",
+        "",
+        "RV (\\%)"
+      ],
+      "rows": [
+        [
+          "",
+          "N",
+          "a",
+          "",
+          "",
+          "N",
+          "a",
+          "",
+          "",
+          "N",
+          "a",
+          "",
+          "",
+          "N",
+          "a",
+          ""
+        ],
+        [
+          1,
+          1,
+          1,
+          6.66,
+          5,
+          2,
+          1,
+          5.49,
+          9,
+          3,
+          1,
+          5.3,
+          13,
+          4,
+          1,
+          7.51
+        ],
+        [
+          2,
+          1,
+          2,
+          5.58,
+          6,
+          2,
+          2,
+          3.62,
+          10,
+          3,
+          2,
+          13.19,
+          14,
+          4,
+          2,
+          6.85
+        ],
+        [
+          3,
+          1,
+          3,
+          5.39,
+          7,
+          2,
+          3,
+          9.79,
+          11,
+          3,
+          3,
+          1.77,
+          15,
+          4,
+          3,
+          7.0
+        ],
+        [
+          4,
+          1,
+          4,
+          3.47,
+          8,
+          2,
+          4,
+          6.05,
+          12,
+          3,
+          4,
+          8.62,
+          16,
+          4,
+          4,
+          3.72
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 16
+    },
+    {
+      "table_number": "V",
+      "table_title": "INFLUENCE TREND TABLE",
+      "headers": [
+        "Level",
+        "N",
+        "a"
+      ],
+      "rows": [
+        [
+          1,
+          0.053,
+          0.062
+        ],
+        [
+          2,
+          0.062,
+          0.073
+        ],
+        [
+          3,
+          0.072,
+          0.06
+        ],
+        [
+          4,
+          0.063,
+          0.055
+        ],
+        [
+          "Delta",
+          0.019,
+          0.018
+        ],
+        [
+          "Rank",
+          1,
+          2
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "VI",
+      "table_title": "RESULTS COMPARED WITH B-LEVEL HEURISTIC METHOD",
+      "headers": [
+        "Task <br> num- <br> ber (o)",
+        "CCR",
+        "Dominating <br> b-level (\\%)",
+        "Non-domina- <br> ing <br> b-level (\\%)",
+        "Dominated <br> by b-level (\\%)"
+      ],
+      "rows": [
+        [
+          50,
+          0.1,
+          61.67,
+          34.44,
+          3.89
+        ],
+        [
+          "",
+          0.5,
+          75.56,
+          22.78,
+          1.67
+        ],
+        [
+          "",
+          1.0,
+          94.44,
+          3.33,
+          2.22
+        ],
+        [
+          "",
+          10.0,
+          94.44,
+          1.67,
+          3.89
+        ],
+        [
+          100,
+          0.1,
+          48.33,
+          26.11,
+          25.56
+        ],
+        [
+          "",
+          0.5,
+          95.0,
+          3.89,
+          1.11
+        ],
+        [
+          "",
+          1.0,
+          98.89,
+          0.56,
+          0.56
+        ],
+        [
+          "",
+          10.0,
+          98.89,
+          0.56,
+          0.56
+        ],
+        [
+          300,
+          0.1,
+          15.0,
+          18.89,
+          66.11
+        ],
+        [
+          "",
+          0.5,
+          88.89,
+          9.44,
+          1.67
+        ],
+        [
+          "",
+          1.0,
+          97.22,
+          2.78,
+          0.0
+        ],
+        [
+          "",
+          10.0,
+          98.33,
+          0.56,
+          1.11
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "VII",
+      "table_title": "C METRIC COMPARATIVE RESULTS WITH SIMPLE EDA",
+      "headers": [
+        "Task <br> number <br> (o)",
+        "CCR",
+        "C(EDA-p, sEDA)",
+        "C(sEDA, EDA-p)"
+      ],
+      "rows": [
+        [
+          50,
+          0.1,
+          0.25,
+          0.41
+        ],
+        [
+          "",
+          0.5,
+          0.5,
+          0.22
+        ],
+        [
+          "",
+          1.0,
+          0.75,
+          0.2
+        ],
+        [
+          "",
+          10.0,
+          0.81,
+          0.17
+        ],
+        [
+          100,
+          0.1,
+          0.18,
+          0.6
+        ],
+        [
+          "",
+          0.5,
+          0.55,
+          0.2
+        ],
+        [
+          "",
+          1.0,
+          0.94,
+          0.02
+        ],
+        [
+          "",
+          10.0,
+          0.96,
+          0.02
+        ],
+        [
+          300,
+          0.1,
+          0.08,
+          0.78
+        ],
+        [
+          "",
+          0.5,
+          0.68,
+          0.08
+        ],
+        [
+          "",
+          1.0,
+          0.97,
+          0.01
+        ],
+        [
+          "",
+          10.0,
+          0.96,
+          0.01
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    }
+  ]
+}

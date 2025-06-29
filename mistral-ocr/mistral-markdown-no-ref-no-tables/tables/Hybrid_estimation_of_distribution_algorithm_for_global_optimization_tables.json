@@ -1,0 +1,391 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2004/Hybrid estimation of distribution algorithm for global optimization.md",
+    "filename": "Hybrid estimation of distribution algorithm for global optimization.md",
+    "title": "Hybrid estimation of distribution algorithm for global optimization",
+    "year": "2004"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Test function",
+        "Globally minimal function value",
+        "Feasible solution region",
+        "$n$",
+        "Hybrid estimation"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$-12569.5$",
+          "$[-500,500]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{2}$",
+          0,
+          "$[-5.12,5.12]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{3}$",
+          0,
+          "$[-32,32]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{4}$",
+          0,
+          "$[-600,600]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{5}$",
+          0,
+          "$[-50,50]^{n}$",
+          30,
+          101
+        ],
+        [
+          "$f_{6}$",
+          0,
+          "$[-50,50]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{7}$",
+          "$-99.2784$",
+          "$[0, \\pi]^{n}$",
+          100,
+          "Table I."
+        ],
+        [
+          "$f_{8}$",
+          0,
+          "$[-\\pi, \\pi]^{n}$",
+          100,
+          "The basic"
+        ],
+        [
+          "$f_{9}$",
+          "$-78.33236$",
+          "$[-5,5]^{n}$",
+          100,
+          "characteristics of the test functions"
+        ],
+        [
+          "$f_{10}$",
+          0,
+          "$[-5,10]^{n}$",
+          100,
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Algorithm",
+        "Mean no. of function evaluations",
+        "Mean of the smallest function values found"
+      ],
+      "rows": [
+        [
+          "EDA/L",
+          75014,
+          0
+        ],
+        [
+          "Algorithm A",
+          77870,
+          0.198992
+        ],
+        [
+          "Alogrithm B",
+          72718,
+          2.026529
+        ],
+        [
+          "Algorithm C with one point crossover",
+          81706,
+          0.021804
+        ],
+        [
+          "Algorithm C with uniform crossover",
+          88141,
+          0.0014333
+        ],
+        [
+          "Algorithm C with intermediate crossover",
+          77477,
+          2.586894
+        ],
+        [
+          "Algorithm",
+          "Mean no. of function evaluations",
+          "Mean of the smallest function values found"
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:"
+        ],
+        [
+          "EDA/L",
+          169887,
+          "$-94.3757$"
+        ],
+        [
+          "Algorithm A",
+          183891,
+          "$-87.1928$"
+        ],
+        [
+          "Alogrithm B",
+          179810,
+          "$-80.2910$"
+        ],
+        [
+          "Algorithm C with one point crossover",
+          189103,
+          "$-83.4810$"
+        ],
+        [
+          "Algorithm C with uniform crossover",
+          198381,
+          "$-90.3381$"
+        ],
+        [
+          "Algorithm C with intermediate crossover",
+          183491,
+          "$-90.2874$"
+        ],
+        [
+          "Algorithm",
+          "Mean no. of function evaluations",
+          "Mean of the smallest function values found"
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:"
+        ],
+        [
+          "EDA/L",
+          1281401,
+          "$4.324 \\times 10^{-3}$"
+        ],
+        [
+          "Algorithm A",
+          1294983,
+          "$5.981 \\times 10^{-2}$"
+        ],
+        [
+          "Alogrithm B",
+          1592820,
+          "$1.395 \\times 10^{-1}$"
+        ],
+        [
+          "Algorithm C with one point crossover",
+          1509894,
+          12.987412
+        ],
+        [
+          "Algorithm C with uniform crossover",
+          1300304,
+          1.292349
+        ],
+        [
+          "Algorithm C with intermediate crossover",
+          1582901,
+          2.183849
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 3
+    },
+    {
+      "table_number": "IV",
+      "table_title": "The effectiveness of the main components of the algorithm on $f_{10}$",
+      "headers": [
+        "$\\begin{aligned} & \\text { EC } \\\\ & 21,1 \\end{aligned}$",
+        "Test function",
+        "Mean number of function evaluations",
+        "Mean of the smallest function values found",
+        "Globally minimal function value"
+      ],
+      "rows": [
+        [
+          "",
+          "$f_{1}$",
+          52216,
+          "$-12569.48$",
+          "$-12569.5$"
+        ],
+        [
+          "",
+          "$f_{2}$",
+          75014,
+          0,
+          0
+        ],
+        [
+          "",
+          "$f_{3}$",
+          106061,
+          "$4.141 \\times 10^{-15}$",
+          0
+        ],
+        [
+          104,
+          "$f_{4}$",
+          79096,
+          0,
+          0
+        ],
+        [
+          "",
+          "$f_{5}$",
+          89925,
+          "$3.654 \\times 10^{-21}$",
+          0
+        ],
+        [
+          "",
+          "$f_{6}$",
+          114570,
+          "$3.485 \\times 10^{-21}$",
+          0
+        ],
+        [
+          "",
+          "$f_{7}$",
+          169887,
+          "$-94.3757$",
+          "$-99.2784$"
+        ],
+        [
+          "Table V.",
+          "$f_{8}$",
+          124417,
+          "$3.294 \\times 10^{-8}$",
+          0
+        ],
+        [
+          "The performance of EDA/L",
+          "$f_{9}$",
+          153116,
+          "$-78.31077$",
+          "$-78.33236$"
+        ],
+        [
+          "",
+          "$f_{10}$",
+          128140,
+          "$4.324 \\times 10^{-3}$",
+          0
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "VI",
+      "table_title": "compares the quality of the solutions found by EDA/L with the above four algorithms, while Table VII compares the computational costs.",
+      "headers": [
+        "Test functions",
+        "EDA/L",
+        "OGA/Q",
+        "FSA",
+        "PSO",
+        "EP/GM"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$-12569.4811$",
+          "$-12569.4537$",
+          "$-12554.5$",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "$f_{2}$",
+          0,
+          0,
+          "$4.6 \\times 10^{-2}$",
+          46.4689,
+          120.0
+        ],
+        [
+          "$f_{3}$",
+          "$4.141 \\times 10^{-15}$",
+          "$4.440 \\times 10^{-16}$",
+          "$1.8 \\times 10^{-2}$",
+          "N/A",
+          9.1
+        ],
+        [
+          "$f_{4}$",
+          0,
+          0,
+          "$1.6 \\times 10^{-2}$",
+          0.4498,
+          "$2.52 \\times 10^{-7}$"
+        ],
+        [
+          "$f_{5}$",
+          "$3.654 \\times 10^{-21}$",
+          "$6.019 \\times 10^{-6}$",
+          "$9.2 \\times 10^{-6}$",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "$f_{6}$",
+          "$3.485 \\times 10^{-21}$",
+          "$1.869 \\times 10^{-4}$",
+          "$1.6 \\times 10^{-4}$",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "$f_{7}$",
+          "$-94.3757$",
+          "$-92.83$",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "Comparison of the mean of the smallest function value found",
+          "$3.294 \\times 10^{-8}$",
+          "$4.672 \\times 10^{-7}$",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "",
+          "$-78.31077$",
+          "$-78.3000$",
+          "N/A",
+          "N/A",
+          "N/A"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    }
+  ]
+}

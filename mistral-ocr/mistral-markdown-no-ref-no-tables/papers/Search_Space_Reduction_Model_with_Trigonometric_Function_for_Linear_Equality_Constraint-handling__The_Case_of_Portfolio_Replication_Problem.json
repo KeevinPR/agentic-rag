@@ -1,0 +1,519 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/Search Space Reduction Model with Trigonometric Function for Linear Equality Constraint-handling  The Case of Portfolio Replication Problem.md",
+    "filename": "Search Space Reduction Model with Trigonometric Function for Linear Equality Constraint-handling  The Case of Portfolio Replication Problem.md",
+    "title": "Search Space Reduction Model with Trigonometric Function for Linear Equality Constraint-handling  The Case of Portfolio Replication Problem",
+    "year": "2019"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] C. A. C. Coello, \"Theoretical and Numerical Constraint-handling Techniques Used with Evolutionary Algorithms: A Survey of the State of the Art,\" Computer Methods in Applied Mechanics and Engineering, vol. 191, pp. 1245-1287, 2002.\n[2] E. Mezura-Montes and C. A. C. Coello, \"Constraint-handling in Natureinspired Numerical Optimization: Past, Present and Future,\" Swarm and Evolutionary Computation, vol. 1, pp. 173-194, 2011.\n[3] S. Koziel, and Z. Michalewicz, \"Evolutionary Algorithms, Homomorphous Mappings, and Constrained Parameter Optimization,\" Evolutionary Computation, vol. 7, no. 1, pp. 19-44, 1999.\n[4] Y. Orito and Y. Hanada, \"Equality Constraint-handling Technique with Various Mapping Points: The Case of Portfolio Replication Problem,\" Proceedings of the 2015 IEEE Congress on Evolutionary Computation, pp. 2573-2580, 2015.\n[5] H. Muhlenbein, \"The Equation for Response to Selection and Its Use for Prediction\", Evolutionary Computation, vol. 5, issue. 3, pp. 303-346, 1997.\n[6] S. Baluja, \"Population-based Incremental Learning: A Method for Integrating Genetic Search Based Function Optimization and Competitive Learning\", Technical Report, CMU-CS-94-163, Carnegie Mellon University, 1994.\n[7] G. R. Harik, F. G. Lobo, and D. E. Goldberg, \"The Compact Genetic Algorithm\", Technical Report, 97006, ISIGAL Report, 1997.\n[8] Y. Orito, H. Yamamoto, and Y. Tsujimura, \"Equality Constrained LongShort Portfolio Replication by Using Probabilistic Model-building GA,\" Proceedings of the 2012 IEEE Congress on Evolutionary Computation, pp. 513-520, 2012.\n[9] Y. Xia, B. Liu, S. Wang, and K. K. Lai, \"A Model for Portfolio Selection with Order of Expected Returns,\" Computers \\& Operations Research, vol. 27, pp. 409-422, 2000.\n[10] C. C. Lin and Y. T. Liu, \"Genetic Algorithms for Portfolio Selection\n\nTABLE IV\nEvaluation Function $(N=128)$\n\n| Period | BP1 |  |  | BP2 |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n|  | SRM | SSR_SD | SSR_LD | SRM | SSR_SD | SSR_LD |\n| 1 | 2.759E-03 | 6.512E-04 | 3.694E-03 | 1.597E-02 | 2.958E-04 | 1.856E-04 |\n| 2 | 5.066E-03 | 9.211E-04 | 1.151E-03 | 7.239E-03 | 1.952E-04 | 2.342E-04 |\n| 3 | 1.351E-03 | 5.875E-04 | 8.623E-04 | 1.952E-02 | 2.835E-04 | 1.917E-04 |\n| 4 | 1.629E-03 | 6.194E-04 | 3.257E-03 | 8.738E-03 | 2.745E-04 | 2.083E-04 |\n| 5 | 1.128E-03 | 5.549E-04 | 1.680E-03 | 3.916E-03 | 5.200E-04 | 5.698E-04 |\n| 6 | 2.152E-03 | 6.211E-04 | 1.459E-03 | 8.000E-03 | 1.892E-04 | 6.086E-03 |\n| 7 | 2.093E-03 | 1.210E-03 | 3.113E-03 | 7.007E-03 | 5.126E-04 | 6.813E-03 |\n\nTABLE V\nEvaluation Function $(N=256)$\n\n|  | BP1 |  |  | BP2 |  |  |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| Period | SRM | SSR_SD | SSR_LD | SRM | SSR_SD | SSR_LD |\n| 1 | 2.350E-03 | 8.690E-04 | 2.480E-03 | 1.280E-02 | 6.790E-04 | 1.200E-02 |\n| 2 | 1.790E-03 | 1.220E-03 | 2.310E-03 | 1.010E-02 | 4.970E-04 | 3.070E-04 |\n| 3 | 2.050E-03 | 9.560E-04 | 2.900E-03 | 5.330E-03 | 2.480E-04 | 5.010E-03 |\n| 4 | 2.620E-03 | 1.830E-03 | 3.800E-03 | 1.160E-02 | 1.650E-03 | 7.770E-03 |\n| 5 | 1.690E-03 | 8.190E-04 | 1.980E-03 | 6.540E-03 | 1.480E-03 | 6.290E-03 |\n| 6 | 1.570E-03 | 1.250E-03 | 1.700E-03 | 4.030E-02 | 2.550E-04 | 3.830E-02 |\n| 7 | 4.090E-03 | 1.680E-03 | 3.310E-03 | 8.470E-03 | 1.070E-03 | 6.910E-03 |\n\nProblems with Minimum Transaction Lots,\" European Journal of Operational Research, vol. 85, no. 1, pp. 393-404, 2008.\n[11] T. J. Chang, N. Meade, J. E. Beasley, and Y. M. Sharaiba, \"Heuristics for Cardinality Constrained Portfolio Optimization,\" Computers \\& Operations Research, vol. 27, pp. 1271-1302, 2000.\n[12] Y. Crama and M. Schyns, \"Simulated Annealing for Complex Portfolio Selection Problems,\" European Journal of Operational Research, vol. 150, pp. 546-571, 2003.\n[13] K. J. Oh, T. Y. Kim, and S. Min, \"Using Genetic Algorithm to Support Portfolio Optimization for Index Fund Management,\" Expert Systems with Applications, vol. 28, pp. 371-379, 2005\n[14] Y. Orito, M. Inoguchi, and H. Yamamoto, \"Index Fund Optimization Using a Genetic Algorithm and a Heuristic Local Search,\" Electronics and Communications in Japan, vol. 93, no. 10, pp. 42-52, 2010.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "C. A. C. Coello, \"Theoretical and Numerical Constraint-handling Techniques Used with Evolutionary Algorithms: A Survey of the State of the Art,\" Computer Methods in Applied Mechanics and Engineering, vol. 191, pp. 1245-1287, 2002."
+      },
+      {
+        "ref_id": "2",
+        "text": "E. Mezura-Montes and C. A. C. Coello, \"Constraint-handling in Natureinspired Numerical Optimization: Past, Present and Future,\" Swarm and Evolutionary Computation, vol. 1, pp. 173-194, 2011."
+      },
+      {
+        "ref_id": "3",
+        "text": "S. Koziel, and Z. Michalewicz, \"Evolutionary Algorithms, Homomorphous Mappings, and Constrained Parameter Optimization,\" Evolutionary Computation, vol. 7, no. 1, pp. 19-44, 1999."
+      },
+      {
+        "ref_id": "4",
+        "text": "Y. Orito and Y. Hanada, \"Equality Constraint-handling Technique with Various Mapping Points: The Case of Portfolio Replication Problem,\" Proceedings of the 2015 IEEE Congress on Evolutionary Computation, pp. 2573-2580, 2015."
+      },
+      {
+        "ref_id": "5",
+        "text": "H. Muhlenbein, \"The Equation for Response to Selection and Its Use for Prediction\", Evolutionary Computation, vol. 5, issue. 3, pp. 303-346, 1997."
+      },
+      {
+        "ref_id": "6",
+        "text": "S. Baluja, \"Population-based Incremental Learning: A Method for Integrating Genetic Search Based Function Optimization and Competitive Learning\", Technical Report, CMU-CS-94-163, Carnegie Mellon University, 1994."
+      },
+      {
+        "ref_id": "7",
+        "text": "G. R. Harik, F. G. Lobo, and D. E. Goldberg, \"The Compact Genetic Algorithm\", Technical Report, 97006, ISIGAL Report, 1997."
+      },
+      {
+        "ref_id": "8",
+        "text": "Y. Orito, H. Yamamoto, and Y. Tsujimura, \"Equality Constrained LongShort Portfolio Replication by Using Probabilistic Model-building GA,\" Proceedings of the 2012 IEEE Congress on Evolutionary Computation, pp. 513-520, 2012."
+      },
+      {
+        "ref_id": "9",
+        "text": "Y. Xia, B. Liu, S. Wang, and K. K. Lai, \"A Model for Portfolio Selection with Order of Expected Returns,\" Computers \\& Operations Research, vol. 27, pp. 409-422, 2000."
+      },
+      {
+        "ref_id": "10",
+        "text": "C. C. Lin and Y. T. Liu, \"Genetic Algorithms for Portfolio Selection"
+      },
+      {
+        "ref_id": "11",
+        "text": "T. J. Chang, N. Meade, J. E. Beasley, and Y. M. Sharaiba, \"Heuristics for Cardinality Constrained Portfolio Optimization,\" Computers \\& Operations Research, vol. 27, pp. 1271-1302, 2000."
+      },
+      {
+        "ref_id": "12",
+        "text": "Y. Crama and M. Schyns, \"Simulated Annealing for Complex Portfolio Selection Problems,\" European Journal of Operational Research, vol. 150, pp. 546-571, 2003."
+      },
+      {
+        "ref_id": "13",
+        "text": "K. J. Oh, T. Y. Kim, and S. Min, \"Using Genetic Algorithm to Support Portfolio Optimization for Index Fund Management,\" Expert Systems with Applications, vol. 28, pp. 371-379, 2005"
+      },
+      {
+        "ref_id": "14",
+        "text": "Y. Orito, M. Inoguchi, and H. Yamamoto, \"Index Fund Optimization Using a Genetic Algorithm and a Heuristic Local Search,\" Electronics and Communications in Japan, vol. 93, no. 10, pp. 42-52, 2010."
+      }
+    ],
+    "reference_count": 14,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "EvalLATION FUNCTION $(N=16)$",
+      "headers": [
+        "",
+        "BP1",
+        "",
+        "",
+        "BP2",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Period",
+          "SRM",
+          "$\\boldsymbol{S S R} \\_$SD",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{L D}$",
+          "SRM",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{S D}$",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{L D}$"
+        ],
+        [
+          1,
+          "3.400E-05",
+          "2.900E-04",
+          "1.640E-04",
+          "7.080E-04",
+          "6.660E-06",
+          "2.390E-07"
+        ],
+        [
+          2,
+          "7.230E-05",
+          "4.140E-04",
+          "5.050E-04",
+          "4.100E-04",
+          "7.360E-05",
+          "5.160E-05"
+        ],
+        [
+          3,
+          "2.300E-05",
+          "6.070E-04",
+          "2.120E-05",
+          "1.890E-04",
+          "3.040E-04",
+          "4.080E-05"
+        ],
+        [
+          4,
+          "3.260E-05",
+          "1.980E-04",
+          "3.170E-05",
+          "5.540E-04",
+          "5.840E-04",
+          "1.300E-05"
+        ],
+        [
+          5,
+          "1.420E-05",
+          "1.950E-04",
+          "1.220E-04",
+          "3.190E-04",
+          "2.890E-06",
+          "6.190E-06"
+        ],
+        [
+          6,
+          "1.870E-05",
+          "3.360E-04",
+          "1.320E-04",
+          "2.630E-04",
+          "7.470E-05",
+          "2.120E-04"
+        ],
+        [
+          7,
+          "1.770E-04",
+          "9.280E-04",
+          "3.440E-04",
+          "1.370E-04",
+          "5.610E-05",
+          "7.580E-05"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "II",
+      "table_title": "EvalLATION FUNCTION $(N=32)$",
+      "headers": [
+        "",
+        "BP1",
+        "",
+        "",
+        "BP2",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Period",
+          "SRM",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{S D}$",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{L D}$",
+          "SRM",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{S D}$",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{L D}$"
+        ],
+        [
+          1,
+          "1.700E-04",
+          "5.865E-04",
+          "5.120E-04",
+          "7.090E-03",
+          "5.500E-05",
+          "5.690E-05"
+        ],
+        [
+          2,
+          "2.390E-04",
+          "4.593E-04",
+          "4.130E-03",
+          "5.210E-02",
+          "1.880E-04",
+          "8.110E-04"
+        ],
+        [
+          3,
+          "6.890E-04",
+          "4.322E-04",
+          "3.660E-04",
+          "1.710E-02",
+          "9.380E-05",
+          "6.520E-05"
+        ],
+        [
+          4,
+          "2.530E-04",
+          "2.488E-04",
+          "1.920E-04",
+          "3.570E-03",
+          "1.230E-05",
+          "1.230E-04"
+        ],
+        [
+          5,
+          "2.270E-04",
+          "3.823E-04",
+          "1.070E-03",
+          "1.500E-03",
+          "5.650E-05",
+          "6.060E-04"
+        ],
+        [
+          6,
+          "2.670E-04",
+          "5.100E-04",
+          "9.970E-04",
+          "2.020E-03",
+          "1.560E-04",
+          "2.860E-04"
+        ],
+        [
+          7,
+          "2.420E-04",
+          "8.190E-04",
+          "7.350E-04",
+          "4.300E-03",
+          "1.340E-04",
+          "1.060E-04"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "III",
+      "table_title": "EvalLATION FUNCTION $(N=64)$",
+      "headers": [
+        "Period",
+        "BP1",
+        "",
+        "",
+        "BP2",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "SRM",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{S D}$",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{L D}$",
+          "SRM",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{S D}$",
+          "$\\boldsymbol{S S R} \\_\\boldsymbol{L D}$"
+        ],
+        [
+          1,
+          "8.660E-04",
+          "8.366E-04",
+          "1.830E-03",
+          "6.180E-03",
+          "1.820E-04",
+          "4.99E-04"
+        ],
+        [
+          2,
+          "8.250E-04",
+          "1.056E-03",
+          "2.590E-03",
+          "6.560E-03",
+          "2.470E-04",
+          "9.28E-04"
+        ],
+        [
+          3,
+          "8.920E-04",
+          "1.284E-03",
+          "8.490E-04",
+          "8.450E-03",
+          "5.840E-04",
+          "7.04E-04"
+        ],
+        [
+          4,
+          "1.060E-03",
+          "7.994E-04",
+          "1.930E-03",
+          "1.250E-02",
+          "2.170E-04",
+          "5.09E-04"
+        ],
+        [
+          5,
+          "5.810E-04",
+          "1.038E-03",
+          "5.800E-04",
+          "8.320E-03",
+          "1.400E-04",
+          "1.07E-04"
+        ],
+        [
+          6,
+          "6.470E-04",
+          "1.669E-03",
+          "1.570E-03",
+          "1.870E-02",
+          "2.010E-04",
+          "6.36E-05"
+        ],
+        [
+          7,
+          "8.460E-04",
+          "6.912E-04",
+          "1.330E-03",
+          "7.550E-03",
+          "1.120E-05",
+          "1.41E-04"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Evaluation Function $(N=128)$",
+      "headers": [
+        "Period",
+        "BP1",
+        "",
+        "",
+        "BP2",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "SRM",
+          "SSR_SD",
+          "SSR_LD",
+          "SRM",
+          "SSR_SD",
+          "SSR_LD"
+        ],
+        [
+          1,
+          "2.759E-03",
+          "6.512E-04",
+          "3.694E-03",
+          "1.597E-02",
+          "2.958E-04",
+          "1.856E-04"
+        ],
+        [
+          2,
+          "5.066E-03",
+          "9.211E-04",
+          "1.151E-03",
+          "7.239E-03",
+          "1.952E-04",
+          "2.342E-04"
+        ],
+        [
+          3,
+          "1.351E-03",
+          "5.875E-04",
+          "8.623E-04",
+          "1.952E-02",
+          "2.835E-04",
+          "1.917E-04"
+        ],
+        [
+          4,
+          "1.629E-03",
+          "6.194E-04",
+          "3.257E-03",
+          "8.738E-03",
+          "2.745E-04",
+          "2.083E-04"
+        ],
+        [
+          5,
+          "1.128E-03",
+          "5.549E-04",
+          "1.680E-03",
+          "3.916E-03",
+          "5.200E-04",
+          "5.698E-04"
+        ],
+        [
+          6,
+          "2.152E-03",
+          "6.211E-04",
+          "1.459E-03",
+          "8.000E-03",
+          "1.892E-04",
+          "6.086E-03"
+        ],
+        [
+          7,
+          "2.093E-03",
+          "1.210E-03",
+          "3.113E-03",
+          "7.007E-03",
+          "5.126E-04",
+          "6.813E-03"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "V",
+      "table_title": "Evaluation Function $(N=256)$",
+      "headers": [
+        "",
+        "BP1",
+        "",
+        "",
+        "BP2",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Period",
+          "SRM",
+          "SSR_SD",
+          "SSR_LD",
+          "SRM",
+          "SSR_SD",
+          "SSR_LD"
+        ],
+        [
+          1,
+          "2.350E-03",
+          "8.690E-04",
+          "2.480E-03",
+          "1.280E-02",
+          "6.790E-04",
+          "1.200E-02"
+        ],
+        [
+          2,
+          "1.790E-03",
+          "1.220E-03",
+          "2.310E-03",
+          "1.010E-02",
+          "4.970E-04",
+          "3.070E-04"
+        ],
+        [
+          3,
+          "2.050E-03",
+          "9.560E-04",
+          "2.900E-03",
+          "5.330E-03",
+          "2.480E-04",
+          "5.010E-03"
+        ],
+        [
+          4,
+          "2.620E-03",
+          "1.830E-03",
+          "3.800E-03",
+          "1.160E-02",
+          "1.650E-03",
+          "7.770E-03"
+        ],
+        [
+          5,
+          "1.690E-03",
+          "8.190E-04",
+          "1.980E-03",
+          "6.540E-03",
+          "1.480E-03",
+          "6.290E-03"
+        ],
+        [
+          6,
+          "1.570E-03",
+          "1.250E-03",
+          "1.700E-03",
+          "4.030E-02",
+          "2.550E-04",
+          "3.830E-02"
+        ],
+        [
+          7,
+          "4.090E-03",
+          "1.680E-03",
+          "3.310E-03",
+          "8.470E-03",
+          "1.070E-03",
+          "6.910E-03"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    }
+  ]
+}

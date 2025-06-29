@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/PM-IEDA- Dual probabilistic Model Assisted Interactive Estimation of Distribution Algorithm for Personalized Search.md",
+    "filename": "PM-IEDA- Dual probabilistic Model Assisted Interactive Estimation of Distribution Algorithm for Personalized Search.md",
+    "title": "PM-IEDA- Dual probabilistic Model Assisted Interactive Estimation of Distribution Algorithm for Personalized Search",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Notation.",
+      "headers": [
+        "Notation",
+        "Formula",
+        "Used by",
+        "Usage"
+      ],
+      "rows": [
+        [
+          "Document",
+          "doc",
+          "User",
+          "Evaluation"
+        ],
+        [
+          "ID",
+          "$i$",
+          "Both Probabilistic Models",
+          "Identification"
+        ],
+        [
+          "Predicted rating",
+          "$\\hat{r}$",
+          "Collaborative Filtering Probabilistic Model",
+          "Predicted Preference"
+        ],
+        [
+          "Semantic vector",
+          "$x$",
+          "Cotent-Based Probabilistic Model",
+          "Measurement of Item Similarity"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Experiment on split.",
+      "headers": [
+        "Metric",
+        "$10 \\%$",
+        "$30 \\%$",
+        "$50 \\%$",
+        "$70 \\%$"
+      ],
+      "rows": [
+        [
+          "ARPR",
+          "$83.63 \\%$",
+          "$89.38 \\%$",
+          "$87.81 \\%$",
+          "$86.89 \\%$"
+        ],
+        [
+          "Average Rating",
+          3.4,
+          3.45,
+          3.46,
+          3.43
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Parameters.",
+      "headers": [
+        "Parameter",
+        "Range"
+      ],
+      "rows": [
+        [
+          "$C F$",
+          "$\\{S V D, S V D++^{*}$, SlopeOne $\\}$"
+        ],
+        [
+          "$K$",
+          "$\\left\\{3^{*}, 5,7\\right\\}$"
+        ],
+        [
+          "split $_{\\text {threshold }}$",
+          "$\\left\\{10 \\%, 20 \\%,^{*}, 30 \\%\\right\\}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Experiment on $C F$.",
+      "headers": [
+        "Metric",
+        "SVD",
+        "SVD++",
+        "SlopeOne"
+      ],
+      "rows": [
+        [
+          "ARPR*",
+          "$90.31 \\%$",
+          "$97.21 \\%$",
+          "$83.91 \\%$"
+        ],
+        [
+          "Average Rating",
+          3.41,
+          3.45,
+          3.35
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Experiment on $K$.",
+      "headers": [
+        "Metric",
+        "CF-based",
+        "CF-based+ <br> $\\varnothing K=3$",
+        "CF-based+ <br> $\\varnothing K=5$",
+        "CF-based+ <br> $\\varnothing K=7$"
+      ],
+      "rows": [
+        [
+          "ARPR*",
+          "$79.88 \\%$",
+          "$95.89 \\%$",
+          "$96.39 \\%$",
+          "$94.83 \\%$"
+        ],
+        [
+          "Average Rating",
+          3.45,
+          3.56,
+          3.56,
+          3.56
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Experiment on split threshold.",
+      "headers": [
+        "Metric",
+        "$10 \\%$",
+        "$20 \\%$",
+        "$30 \\%$"
+      ],
+      "rows": [
+        [
+          "ARPR*",
+          "$93.88 \\%$",
+          "$93.58 \\%$",
+          "$94.28 \\%$"
+        ],
+        [
+          "Average Rating",
+          3.56,
+          3.56,
+          3.56
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Overall performance of compared algorithms.",
+      "headers": [
+        "Dataset",
+        "Metric",
+        "CF-based",
+        "CF-based +",
+        "DPM-IEDA",
+        "content-based (SVR)",
+        "content-based (IGA)"
+      ],
+      "rows": [
+        [
+          20,
+          "ARPR*",
+          "$75.94 \\%$",
+          87.77,
+          "$\\mathbf{9 5 . 0 4 \\%}$",
+          "$48.87 \\%$",
+          "$46.11 \\%$"
+        ],
+        [
+          "",
+          "Average Rating",
+          3.55,
+          3.64,
+          3.71,
+          3.27,
+          3.26
+        ],
+        [
+          "",
+          "ILD**",
+          0.78,
+          0.77,
+          0.79,
+          0.84,
+          0.83
+        ],
+        [
+          "Amazon Dataset <br> (Movie and TV 5-core)",
+          "ARPR",
+          "$90.16 \\%$",
+          "$95.55 \\%$",
+          97.53,
+          "$85.08 \\%$",
+          "$66.52 \\%$"
+        ],
+        [
+          "",
+          "Average Rating",
+          3.95,
+          3.98,
+          4.02,
+          3.89,
+          3.72
+        ],
+        [
+          "",
+          "ILD",
+          0.99,
+          0.99,
+          0.99,
+          1.0,
+          1.0
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    }
+  ]
+}

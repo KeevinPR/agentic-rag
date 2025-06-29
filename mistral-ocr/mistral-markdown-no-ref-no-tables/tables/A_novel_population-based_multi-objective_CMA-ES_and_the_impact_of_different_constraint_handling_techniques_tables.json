@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/A novel population-based multi-objective CMA-ES and the impact of different constraint handling techniques.md",
+    "filename": "A novel population-based multi-objective CMA-ES and the impact of different constraint handling techniques.md",
+    "title": "A novel population-based multi-objective CMA-ES and the impact of different constraint handling techniques",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Name",
+        "Objectives",
+        "IR"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{ZDT}_{1}$",
+          "$\\begin{aligned} & f_{0}=x_{0}, \\quad f_{1}=\\gamma\\left(1-\\sqrt{f_{0} / \\gamma}\\right) \\\\ & \\gamma=1+9\\left(\\sum_{i=1}^{i-1} x_{i} /(l-1)\\right) \\end{aligned}$",
+          "$\\begin{aligned} & {[0 ; 1]^{30}} \\\\ & (l=30) \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{ZDT}_{2}$",
+          "$\\begin{aligned} & f_{0}=x_{0}, \\quad f_{1}=\\gamma\\left(1-\\left(f_{0} / \\gamma\\right)^{2}\\right) \\\\ & \\gamma=1+9\\left(\\sum_{i=1}^{i-1} x_{i} /(l-1)\\right) \\end{aligned}$",
+          "$\\begin{aligned} & {[0 ; 1]^{30}} \\\\ & (l=30) \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{ZDT}_{3}$",
+          "$\\begin{aligned} & f_{0}=x_{0}, \\quad f_{1}=\\gamma\\left(1-\\sqrt{f_{0} / \\gamma}-\\left(f_{0} / \\gamma\\right) \\sin \\left(10 \\pi f_{0}\\right)\\right) \\\\ & \\gamma=1+9\\left(\\sum_{i=1}^{i-1} x_{i} /(l-1)\\right) \\end{aligned}$",
+          "$\\begin{aligned} & {[0 ; 1]^{30}} \\\\ & (l=30) \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{ZDT}_{6}$",
+          "$\\begin{aligned} & f_{0}=1-e^{-\\lambda \\omega_{0}} \\sin ^{6}\\left(6 \\pi x_{0}\\right), \\quad f_{1}=\\gamma\\left(1-\\left(f_{0} / \\gamma\\right)^{2}\\right) \\\\ & \\gamma=1+9\\left(\\sum_{i=1}^{i-1} x_{i} /(l-1)\\right)^{0.25} \\end{aligned}$",
+          "$\\begin{aligned} & {[0 ; 1]^{10}} \\\\ & (l=10) \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{BD}_{1}$",
+          "$\\begin{aligned} & f_{0}=x_{0}, \\quad f_{1}=1-x_{0}+\\gamma \\\\ & \\gamma=\\sum_{i=1}^{i-2}\\left(100\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(1-x_{i}\\right)^{2}\\right) \\end{aligned}$",
+          "$\\begin{aligned} & {[0 ; 1] \\times} \\\\ & \\left[-5.12 ; 5.12\\right]^{0} \\\\ & (l=10) \\end{aligned}$"
+        ],
+        [
+          "$\\mathrm{BD}_{2}$",
+          "$\\begin{aligned} & f_{0}=\\frac{1}{l} \\sum_{i=0}^{i-1} x_{i}^{2} \\\\ & f_{1}=\\frac{1}{l-1} \\sum_{i=1}^{i-2}\\left(100\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(1-x_{i}\\right)^{2}\\right) \\end{aligned}$",
+          "$\\begin{aligned} & {[-5.12 ; 5.12]^{10}} \\\\ & (l=10) \\end{aligned}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    }
+  ]
+}

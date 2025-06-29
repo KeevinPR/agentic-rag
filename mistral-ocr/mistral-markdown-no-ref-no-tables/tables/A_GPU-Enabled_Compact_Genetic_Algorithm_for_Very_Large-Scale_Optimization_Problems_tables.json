@@ -1,0 +1,630 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/A GPU-Enabled Compact Genetic Algorithm for Very Large-Scale Optimization Problems.md",
+    "filename": "A GPU-Enabled Compact Genetic Algorithm for Very Large-Scale Optimization Problems.md",
+    "title": "A GPU-Enabled Compact Genetic Algorithm for Very Large-Scale Optimization Problems",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Variables and functions used in the binary cGAs.",
+      "headers": [
+        "Name",
+        "Description"
+      ],
+      "rows": [
+        [
+          "problemSize",
+          "Problem dimensionality (scalar)"
+        ],
+        [
+          "virtualPopulation",
+          "Virtual population (scalar)"
+        ],
+        [
+          "PV",
+          "Probability Vector (vector)"
+        ],
+        [
+          "trial",
+          "Solution sampled from PV (vector)"
+        ],
+        [
+          "elite",
+          "Best solution found so far (vector)"
+        ],
+        [
+          "fitnessTrial",
+          "Fitness of trial (scalar or vector)"
+        ],
+        [
+          "fitnessElite",
+          "Fitness of elite (scalar or vector)"
+        ],
+        [
+          "winner",
+          10
+        ],
+        [
+          "generateTrial()",
+          "Sample trial from PV (return a solution)"
+        ],
+        [
+          "evaluate()",
+          "Evaluate a solution (return its fitness)"
+        ],
+        [
+          "compete()",
+          "Compare two solutions (return winner)"
+        ],
+        [
+          "updatePV()",
+          "Update PV (return PV)"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Data type and size for the binary cGAs.",
+      "headers": [
+        "Data",
+        "cGA-Base",
+        "",
+        "cGA-A100",
+        "",
+        "cGA-A1",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Type",
+          "Size",
+          "Type",
+          "Size",
+          "Type",
+          "Size"
+        ],
+        [
+          "PV",
+          32,
+          "problemSize",
+          32,
+          "problemSize",
+          32,
+          "problemSize"
+        ],
+        [
+          "trial",
+          "Bool",
+          "problemSize",
+          "Bool",
+          "problemSize",
+          "Bool",
+          "problemSize"
+        ],
+        [
+          "elite",
+          "Bool",
+          "problemSize",
+          "Bool",
+          "problemSize",
+          "Bool",
+          "problemSize"
+        ],
+        [
+          "fitnessTrial",
+          32,
+          1,
+          8,
+          100,
+          32,
+          1
+        ],
+        [
+          "fitnessElite",
+          32,
+          1,
+          8,
+          100,
+          32,
+          1
+        ],
+        [
+          "winner",
+          32,
+          1,
+          "Bool",
+          100,
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Variables and functions used in the discrete cGA.",
+      "headers": [
+        "Name",
+        "Description"
+      ],
+      "rows": [
+        [
+          "N",
+          "Number of objects (scalar)"
+        ],
+        [
+          "W",
+          "Crucible sizes (vector)"
+        ],
+        [
+          "$\\eta$",
+          "Desired efficiency (scalar)"
+        ],
+        [
+          "H",
+          "Number of heats to achieve $(\\eta)$ (scalar)"
+        ],
+        [
+          "copies",
+          "Copies to be cast for each object (vector)"
+        ],
+        [
+          "weights",
+          "Weights (vector)"
+        ],
+        [
+          "virtualPopulation",
+          "Virtual population (scalar)"
+        ],
+        [
+          "PV",
+          "Probability Vector (vector)"
+        ],
+        [
+          "trial",
+          "Solution sampled from PV (vector)"
+        ],
+        [
+          "elite",
+          "Best solution found so far (vector)"
+        ],
+        [
+          "copiesTrial",
+          "Copies cast by trial (vector)"
+        ],
+        [
+          "heatsTrial",
+          "Available space in the heats of trial (vector)"
+        ],
+        [
+          "fitnessTrial",
+          "Fitness of trial (scalar)"
+        ],
+        [
+          "fitnessElite",
+          "Fitness of elite (scalar)"
+        ],
+        [
+          "winner",
+          10
+        ],
+        [
+          "estimateH()",
+          "Estimate the value of $H$ based on $\\eta$, copies, weights and W (return $H$ )"
+        ],
+        [
+          "smartInitialization()",
+          "Initialize elite and PV (return elite and PV)"
+        ],
+        [
+          "initializeElite()",
+          "Initialize elite (return elite)"
+        ],
+        [
+          "inhibitor()",
+          "Blocks the unusable elements of PV (return PV)"
+        ],
+        [
+          "initializePV()",
+          "Initialize PV (return PV)"
+        ],
+        [
+          "generateTrial()",
+          "Sample trial from PV and apply to it mutations and crossover"
+        ],
+        [
+          "newTrial()",
+          "Sample trial from PV (return trial and heatsTrial)"
+        ],
+        [
+          "mutationOne()",
+          "Repair trial with respect to the equality constraints"
+        ],
+        [
+          "mutationTwo()",
+          "Repair trial with respect to the inequality constraints"
+        ],
+        [
+          "crossover()",
+          "Operate a heat-wise crossover between trial and elite"
+        ],
+        [
+          "evaluate()",
+          "Evaluate a solution (return its fitness)"
+        ],
+        [
+          "compete()",
+          "Compare two solutions (return winner)"
+        ],
+        [
+          "updatePV()",
+          "Update PV (return PV)"
+        ]
+      ],
+      "row_count": 28,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Synchronous binary cGAs: comparison on the OneMax problem (mean across 10 runs, std. dev. in parentheses). The symbol '-' indicates data not provided in [46].",
+      "headers": [
+        "",
+        "cGA-Sync [46]",
+        "",
+        "",
+        "",
+        "cGA-Base [Ours]",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          8,
+          32,
+          1,
+          1,
+          8,
+          32,
+          1,
+          "",
+          ""
+        ],
+        [
+          "Time (s)",
+          "600 ( - )",
+          "10,680 (-)",
+          "49,140(-)",
+          "348,000(-)",
+          "52.022 (1.552)",
+          "256.923(2.169)",
+          "969.419 (5.971)",
+          "9085.140 (1136.925)",
+          "",
+          ""
+        ],
+        [
+          "Fitness (\\%)",
+          "82.5 (-)",
+          "79.1(-)",
+          "74.1(-)",
+          "62.3 (-)",
+          "51.192 (0.0570)",
+          "50.750(0.0194)",
+          "50.634(0.0053)",
+          "50.525 (0.0012)",
+          "",
+          ""
+        ],
+        [
+          "Iterations",
+          "50,000 (-)",
+          "50,000 (-)",
+          "50,000 (-)",
+          "50,000 (-)",
+          50000,
+          50000,
+          50000,
+          16000,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 11
+    },
+    {
+      "table_number": "6",
+      "table_title": "Parameters used for the casting scheduling problem. Note that the crucible size, $W$, and the weights are in common for all the problem dimensionalities, therefore the only parameter that changes across dimensionalities is the number of copies per object.",
+      "headers": [
+        "Size",
+        "W",
+        "",
+        "",
+        "",
+        "",
+        "$[500,650]$",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Object id",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        [
+          "",
+          "weights",
+          79,
+          66,
+          31,
+          26,
+          44,
+          35,
+          88,
+          9,
+          57,
+          22
+        ],
+        [
+          100,
+          "copies",
+          12560,
+          12562,
+          12517,
+          12567,
+          12562,
+          12172,
+          12076,
+          12052,
+          12017,
+          12012
+        ],
+        [
+          10,
+          "",
+          125600,
+          125620,
+          125170,
+          125670,
+          125620,
+          121720,
+          120760,
+          120520,
+          120170,
+          120120
+        ],
+        [
+          10,
+          "",
+          1255980,
+          1256200,
+          1251700,
+          1256700,
+          1256200,
+          1217200,
+          1207600,
+          1205200,
+          1201700,
+          1201200
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 12
+    },
+    {
+      "table_number": "7",
+      "table_title": "Casting scheduling problem: number of solution evaluations to reach the optimum, number of heat updates, and execution times (mean across 10 runs, std. dev. in parentheses). The results for the PILP algorithm are taken from Table 6 in [4]; the symbol '-' indicates data not provided.",
+      "headers": [
+        "Algorithm",
+        "Size",
+        "Solution evalue",
+        "Heat Update",
+        "Total Time (s)",
+        "Initialization(s) (s)",
+        "generateTrial(s) (s)",
+        "evaluation(s) (s)",
+        "computer(s) (s)",
+        "update(s) (s)"
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          "20.2 (9.249)",
+          451027.2145724751,
+          360703114.444,
+          57112.827,
+          35470713.993,
+          "0.0656 (0.0958)",
+          "0.0431 (0.0813)",
+          "0.173 (0.266)"
+        ],
+        [
+          "",
+          1,
+          "18.1 (7.687)",
+          "3,300,602.6 (28,057.973)",
+          2538747445.0527,
+          387579.796,
+          "2499.556 (398.775)",
+          "0.0444 (0.0386)",
+          "0.0230 (0.031)",
+          "0.558 (0.315)"
+        ],
+        [
+          "",
+          10,
+          "29.3 (14.423)",
+          "33,720,256.6 (867,688.014)",
+          "29,785.986 (6790.176)",
+          "460.459 (136.859)",
+          "29,322.144 (6679.297)",
+          "0.177 (0.0883)",
+          "0.0910 (0.0626)",
+          "3.101 (1.367)"
+        ],
+        [
+          "PILP [s]",
+          100,
+          103217,
+          8807564167494,
+          260.6,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "",
+          1,
+          108015,
+          913458012048330,
+          3089,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "",
+          10,
+          110415,
+          97690343919038115,
+          4207124,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 10
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A1. Results of the cGA on the discrete and continuous OneMax problem.",
+      "headers": [
+        "",
+        "Discrete cGA",
+        "",
+        "",
+        "",
+        "Continuous cGA",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          6,
+          12,
+          1,
+          1,
+          6,
+          12,
+          1
+        ],
+        [
+          "Time (s)",
+          "72.463 (2.038)",
+          "395.806 (3.985)",
+          "1958.932 (485.963)",
+          "13,143.343 (3201.053)",
+          "156.647 (1.487)",
+          "985.936 (118.716)",
+          "3366.755 (20.297)",
+          "20,895.386 (4131.433)"
+        ],
+        [
+          "Fitness (\\%)",
+          "50.926 (0.0250)",
+          "50.658 (0.008)",
+          "50.579 (0.002)",
+          "50.515 (0.0005)",
+          "50.870 (0.039)",
+          "50.102 (0.024)",
+          "50.034 (0.0072)",
+          "50.0055 (0.0003)"
+        ],
+        [
+          "Iterations",
+          5000,
+          5000,
+          5000,
+          1000,
+          5000,
+          5000,
+          5000,
+          1000
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A2. Parameter settings for the cGA applied to the continuous OneMax problem.",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "virtualPopulation",
+          100
+        ],
+        [
+          "$F$",
+          0.7
+        ],
+        [
+          "$C R$ (binomial)",
+          0.5
+        ],
+        [
+          "$C R$ (exponential)",
+          0.9
+        ],
+        [
+          "invariant",
+          300
+        ],
+        [
+          "resetPR",
+          0.5
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    }
+  ]
+}

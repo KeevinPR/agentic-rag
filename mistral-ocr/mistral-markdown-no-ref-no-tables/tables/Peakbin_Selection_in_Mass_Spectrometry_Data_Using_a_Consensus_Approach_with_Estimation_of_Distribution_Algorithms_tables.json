@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Peakbin Selection in Mass Spectrometry Data Using a Consensus Approach with Estimation of Distribution Algorithms.md",
+    "filename": "Peakbin Selection in Mass Spectrometry Data Using a Consensus Approach with Estimation of Distribution Algorithms.md",
+    "title": "Peakbin Selection in Mass Spectrometry Data Using a Consensus Approach with Estimation of Distribution Algorithms",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Example of the Multiobjective Sifter for a Set of Six Solutions at Different Confidence Thresholds $T_{1}, \\ldots, T_{6}$",
+      "headers": [
+        "",
+        "Accuracy",
+        "Acc. Std",
+        "Peakbins",
+        "Peak. Std",
+        "Pareto"
+      ],
+      "rows": [
+        [
+          "$\\mathbf{x}_{T_{1}}^{C}(S)$",
+          94.5,
+          2.3,
+          15,
+          4,
+          "$\\checkmark$"
+        ],
+        [
+          "$\\mathbf{x}_{T_{2}}^{C}(S)$",
+          80.6,
+          10.1,
+          5,
+          3,
+          "$\\checkmark$"
+        ],
+        [
+          "$\\mathbf{x}_{T_{3}}^{C}(S)$",
+          96.0,
+          1.8,
+          30,
+          10,
+          "$\\checkmark$"
+        ],
+        [
+          "$\\mathbf{x}_{T_{4}}^{C}(S)$",
+          80.1,
+          9.0,
+          6,
+          2,
+          "$\\checkmark$"
+        ],
+        [
+          "$\\mathbf{x}_{T_{5}}^{C}(S)$",
+          96.0,
+          1.8,
+          31,
+          10,
+          "$\\times$"
+        ],
+        [
+          "$\\mathbf{x}_{T_{6}}^{C}(S)$",
+          80.0,
+          11.0,
+          40,
+          15,
+          "$\\times$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Data Sets Summary Details",
+      "headers": [
+        "",
+        "No. spectra",
+        "No. readings",
+        "Values range",
+        "Reference"
+      ],
+      "rows": [
+        [
+          "Ovarian cancer profiling (OVA)",
+          "$200(121+79)$",
+          45200,
+          "$700.116-12,000$",
+          "$[6]$"
+        ],
+        [
+          "Detection of drug-induced toxicity (TOX)",
+          "$62(28+34)$",
+          45200,
+          "$799.115-12,000$",
+          "$[49]$"
+        ],
+        [
+          "Hepatocellular carcinoma (HCC)",
+          "$150(78+72)$",
+          36802,
+          "$799.725-9,999.975$",
+          "$[50]$"
+        ],
+        [
+          "Detection of glycan biomarkers (DGB)",
+          "$128(78+25+25)$",
+          16075,
+          "$1,499.8-5,518.3$",
+          "$[9]$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Descriptive Overview of the Multistart Results Produced by the Population Consensus Proposal",
+      "headers": [
+        "",
+        "OVA",
+        "TOX",
+        "HCC",
+        "DGB"
+      ],
+      "rows": [
+        [
+          500,
+          72744,
+          66277,
+          62597,
+          38735
+        ],
+        [
+          "Mean number of solutions on each Pareto front",
+          35.15,
+          29.25,
+          27.16,
+          16.26
+        ],
+        [
+          "Mean number of peakbins per Pareto solution",
+          97.64,
+          155.34,
+          25.28,
+          11.74
+        ],
+        [
+          "Maximum accuracy",
+          "$100 \\pm 0$",
+          "$93.84 \\pm 6.43$",
+          "$97.33 \\pm 2.79$",
+          "$95.29 \\pm 5.06$"
+        ],
+        [
+          "Peakbins",
+          "$39.80 \\pm 17.06$",
+          "$114.60 \\pm 60.08$",
+          "$20.60 \\pm 19.03$",
+          "$8 \\pm 4$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Mean Stability Values $\\Im$ Computed in Terms of the $I_{K}$ and $I_{J}$ Consistency Measures",
+      "headers": [
+        "",
+        "OVA",
+        "TOX",
+        "HCC",
+        "DGB"
+      ],
+      "rows": [
+        [
+          "$\\Im_{I_{K}}$",
+          0.0721,
+          0.0087,
+          0.2114,
+          0.3678
+        ],
+        [
+          "$\\mathbf{S}=$ consensus (best acc.)",
+          0.2181,
+          0.1466,
+          0.3696,
+          0.304
+        ],
+        [
+          "$\\mathbf{S}=$ classical",
+          0.1217,
+          0.0647,
+          0.3045,
+          0.2721
+        ],
+        [
+          "$\\Im_{I_{J}}$",
+          0.0662,
+          0.0251,
+          0.1722,
+          0.3362
+        ],
+        [
+          "$\\mathbf{S}=$ consensus (best acc.)",
+          0.172,
+          0.1406,
+          0.268,
+          0.2243
+        ],
+        [
+          "$\\mathbf{S}=$ classical",
+          0.0888,
+          0.068,
+          0.2127,
+          0.1945
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Original Relevant Peakbins Reported by [50] for the HCC Data Set",
+      "headers": [
+        "Original $m / z$ bin",
+        "Current $m / z$ bin",
+        "Occurrence (\\%)"
+      ],
+      "rows": [
+        [
+          "$933.6-938.2$",
+          "$933.475-938.225$",
+          "$14.77 \\%$"
+        ],
+        [
+          "$1,378.9-1,381.2$",
+          "$1,378.975-1,381.225$",
+          "$10.32 \\%$"
+        ],
+        [
+          "$1,737.1-1,744.6$",
+          "$1,737.225-1,744.475$",
+          "$15.13 \\%$"
+        ],
+        [
+          "$1,863.4-1,871.3$",
+          "$1,863.975-1,870.225$",
+          "$15.27 \\%$"
+        ],
+        [
+          "$2,528.7-2,535.5$",
+          "$2,528.725-2,535.475$",
+          "$12.07 \\%$"
+        ],
+        [
+          "$4,085.6-4,097.9$",
+          "$4,085.725-4,097.975$",
+          "$6.78 \\%$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    }
+  ]
+}

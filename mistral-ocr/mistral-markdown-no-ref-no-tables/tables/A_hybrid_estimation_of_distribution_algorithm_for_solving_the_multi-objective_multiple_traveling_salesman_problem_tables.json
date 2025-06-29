@@ -1,0 +1,540 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/A hybrid estimation of distribution algorithm for solving the multi-objective multiple traveling salesman problem.md",
+    "filename": "A hybrid estimation of distribution algorithm for solving the multi-objective multiple traveling salesman problem.md",
+    "title": "A hybrid estimation of distribution algorithm for solving the multi-objective multiple traveling salesman problem",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "ParameNTER SEtTINGS FOR EXPERIMENTS",
+      "headers": [
+        "Population size or number of <br> subproblem, $\\boldsymbol{S}$",
+        "Number of cities, $\\boldsymbol{n}[44]$"
+      ],
+      "rows": [
+        [
+          "Number of cities, $\\boldsymbol{n}$",
+          "$100,300,500$"
+        ],
+        [
+          "Number of salesmen, $\\boldsymbol{m}$",
+          2510100
+        ],
+        [
+          "Number of objective functions, $\\boldsymbol{P}$",
+          300500
+        ],
+        [
+          "Number of object",
+          "cities"
+        ],
+        [
+          "Number of local neighbors, $\\boldsymbol{L}$",
+          "Population size, $S$"
+        ],
+        [
+          "Computing budget in fitness",
+          10
+        ],
+        [
+          "evaluations",
+          200000100600000
+        ],
+        [
+          "Crossover and mutation rates in",
+          3001000000500
+        ],
+        [
+          "NSGA-II and MOEAD",
+          "0.8 and 0.005 [44]"
+        ],
+        [
+          "Initial step size $\\left(\\boldsymbol{\\sigma}_{\\boldsymbol{n}}\\right)$ and $\\boldsymbol{\\varepsilon}$ in EGS",
+          3001.841
+        ],
+        [
+          "Local search activation (in terms of",
+          100000100
+        ],
+        [
+          "number of fitness evaluations)",
+          300000300500000
+        ],
+        [
+          "",
+          500
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "InDICES OF DIPHERENT WELGHT SEtTINGS",
+      "headers": [
+        "Index",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "rows": [
+        [
+          1,
+          1.0,
+          0.9,
+          0.8,
+          0.7,
+          0.6,
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.1,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 12
+    },
+    {
+      "table_number": "III",
+      "table_title": "Icd Metric for Total Traveling Cost for All Salesmen of Solutions Obtained by Various Algorithms for the MmTSP with Two Objections, M SALESmen AND $N$ Cities",
+      "headers": [
+        "",
+        "hREDA",
+        "REDA",
+        "MOEA/D",
+        "UMGA",
+        "NSGA-II"
+      ],
+      "rows": [
+        [
+          22,
+          "$\\mathbf{8 6 0 7}$",
+          10795,
+          7349,
+          5689,
+          5881
+        ],
+        [
+          100,
+          "$\\pm 793$",
+          "$\\pm 469$",
+          "$\\pm 952$",
+          "$\\pm 738$",
+          "$\\pm 651$"
+        ],
+        [
+          25,
+          "$\\mathbf{4 9 6 4}$",
+          11253,
+          8180,
+          7376,
+          6581
+        ],
+        [
+          100,
+          "$\\pm 1041$",
+          "$\\pm 765$",
+          "$\\pm 675$",
+          "$\\pm 776$",
+          "$\\pm 656$"
+        ],
+        [
+          210,
+          8741,
+          12332,
+          8818,
+          9428,
+          "$\\mathbf{8 2 8 8}$"
+        ],
+        [
+          100,
+          "$\\pm 627$",
+          "$\\pm 501$",
+          "$\\pm 746$",
+          "$\\pm 840$",
+          "$\\pm 671$"
+        ],
+        [
+          22,
+          "$\\mathbf{5 7 7 9}$",
+          28319,
+          26565,
+          24327,
+          25337
+        ],
+        [
+          300,
+          "$\\pm 757$",
+          "$\\pm 648$",
+          "$\\pm 1093$",
+          "$\\pm 1474$",
+          "$\\pm 1455$"
+        ],
+        [
+          25,
+          "$\\mathbf{8 0 1 0}$",
+          28898,
+          27709,
+          26189,
+          27109
+        ],
+        [
+          300,
+          "$\\pm 1805$",
+          "$\\pm 805$",
+          "$\\pm 1125$",
+          "$\\pm 1480$",
+          "$\\pm 2244$"
+        ],
+        [
+          210,
+          "$\\mathbf{1 7 5 0 9}$",
+          29828,
+          27667,
+          32132,
+          27582
+        ],
+        [
+          300,
+          "$\\pm 4213$",
+          "$\\pm 1703$",
+          "$\\pm 761$",
+          "$\\pm 1523$",
+          "$\\pm 1757$"
+        ],
+        [
+          230,
+          "$\\mathbf{3 1 1 4 9}$",
+          35198,
+          32554,
+          42952,
+          38103
+        ],
+        [
+          300,
+          "$\\pm 1823$",
+          "$\\pm 1035$",
+          "$\\pm 1534$",
+          "$\\pm 1292$",
+          "$\\pm 2314$"
+        ],
+        [
+          22,
+          "$\\mathbf{8 3 5 8}$",
+          57196,
+          59346,
+          54436,
+          56002
+        ],
+        [
+          500,
+          "$\\pm 2812$",
+          "$\\pm 685$",
+          "$\\pm 1135$",
+          "$\\pm 2261$",
+          "$\\pm 1929$"
+        ],
+        [
+          25,
+          "$\\mathbf{1 2 1 1 4}$",
+          58022,
+          58811,
+          54424,
+          57047
+        ],
+        [
+          500,
+          "$\\pm 2319$",
+          "$\\pm 869$",
+          "$\\pm 1942$",
+          "$\\pm 1424$",
+          "$\\pm 2008$"
+        ],
+        [
+          210,
+          "$\\mathbf{3 3 6 8 0}$",
+          58910,
+          59622,
+          61855,
+          57599
+        ],
+        [
+          500,
+          "$\\pm 13163$",
+          "$\\pm 746$",
+          "$\\pm 1760$",
+          "$\\pm 24274$",
+          "$\\pm 1609$"
+        ],
+        [
+          220,
+          "$\\mathbf{5 2 1 9 5}$",
+          59336,
+          61076,
+          66323,
+          62250
+        ],
+        [
+          500,
+          "$\\pm 1928$",
+          "$\\pm 648$",
+          "$\\pm 1575$",
+          "$\\pm 2159$",
+          "$\\pm 1021$"
+        ],
+        [
+          250,
+          "$\\mathbf{5 8 8 7 0}$",
+          65826,
+          69039,
+          82341,
+          77062
+        ],
+        [
+          500,
+          "$\\pm 2753$",
+          "$\\pm 1456$",
+          "$\\pm 1610$",
+          "$\\pm 2635$",
+          "$\\pm 1298$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 6
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Icd Metric for Total Traveling Cost for All Salesmen of Solutions Obtained by Various Algorithms for the MmTSP with Five Objectives, M SALESmen AND $N$ Cities",
+      "headers": [
+        "",
+        "hREDA",
+        "REDA",
+        "MOEA/D",
+        "UMGA",
+        "NSGA-II"
+      ],
+      "rows": [
+        [
+          22,
+          "$\\mathbf{8 3 0 6}$",
+          14045,
+          8801,
+          14170,
+          13939
+        ],
+        [
+          100,
+          "$\\pm 689$",
+          "$\\pm 885$",
+          "$\\pm 238$",
+          "$\\pm 549$",
+          "$\\pm 821$"
+        ],
+        [
+          25,
+          "$\\mathbf{1 0 0 0 7}$",
+          13824,
+          10623,
+          17370,
+          17364
+        ],
+        [
+          100,
+          "$\\pm 1180$",
+          "$\\pm 630$",
+          "$\\pm 677$",
+          "$\\pm 800$",
+          "$\\pm 861$"
+        ],
+        [
+          210,
+          "$\\mathbf{1 2 9 8 7}$",
+          15075,
+          14098,
+          23298,
+          23027
+        ],
+        [
+          100,
+          "$\\pm 950$",
+          "$\\pm 424$",
+          "$\\pm 900$",
+          "$\\pm 1347$",
+          "$\\pm 1118$"
+        ],
+        [
+          22,
+          "$\\mathbf{1 6 2 7 9}$",
+          44048,
+          45971,
+          55795,
+          54134
+        ],
+        [
+          300,
+          "$\\pm 2203$",
+          "$\\pm 1124$",
+          "$\\pm 1574$",
+          "$\\pm 2397$",
+          "$\\pm 1532$"
+        ],
+        [
+          25,
+          "$\\mathbf{2 1 6 6 6}$",
+          44013,
+          46255,
+          56964,
+          56959
+        ],
+        [
+          300,
+          "$\\pm 3350$",
+          "$\\pm 7616$",
+          "$\\pm 2229$",
+          "$\\pm 3343$",
+          "$\\pm 3782$"
+        ],
+        [
+          210,
+          "$\\mathbf{2 9 1 9 2}$",
+          43987,
+          51566,
+          61475,
+          59917
+        ],
+        [
+          300,
+          "$\\pm 1492$",
+          "$\\pm 1361$",
+          "$\\pm 1985$",
+          "$\\pm 4005$",
+          "$\\pm 2703$"
+        ],
+        [
+          230,
+          "$\\mathbf{4 6 0 6 9}$",
+          52505,
+          73765,
+          95708,
+          93817
+        ],
+        [
+          300,
+          "$\\pm 1989$",
+          "$\\pm 1111$",
+          "$\\pm 4077$",
+          "$\\pm 2438$",
+          "$\\pm 3599$"
+        ],
+        [
+          22,
+          "$\\mathbf{2 4 1 3 4}$",
+          62362,
+          95107,
+          95930,
+          93413
+        ],
+        [
+          500,
+          "$\\pm 2105$",
+          "$\\pm 785$",
+          "$\\pm 448$",
+          "$\\pm 2845$",
+          "$\\pm 5099$"
+        ],
+        [
+          25,
+          "$\\mathbf{2 3 9 3 9}$",
+          62041,
+          96631,
+          95532,
+          94692
+        ],
+        [
+          500,
+          "$\\pm 5273$",
+          "$\\pm 1812$",
+          "$\\pm 4331$",
+          "$\\pm 3843$",
+          "$\\pm 3449$"
+        ],
+        [
+          210,
+          "$\\mathbf{3 7 3 1 0}$",
+          62770,
+          102610,
+          102940,
+          97700
+        ],
+        [
+          500,
+          "$\\pm 1217$",
+          "$\\pm 1024$",
+          "$\\pm 2816$",
+          "$\\pm 3760$",
+          "$\\pm 4709$"
+        ],
+        [
+          220,
+          "$\\mathbf{4 2 0 3 0}$",
+          63930,
+          108060,
+          107810,
+          100330
+        ],
+        [
+          500,
+          "$\\pm 2803$",
+          "$\\pm 1404$",
+          "$\\pm 1912$",
+          "$\\pm 3999$",
+          "$\\pm 6145$"
+        ],
+        [
+          250,
+          "$\\mathbf{6 9 1 9 0}$",
+          79290,
+          147620,
+          145400,
+          143650
+        ],
+        [
+          500,
+          "$\\pm 3972$",
+          "$\\pm 2941$",
+          "$\\pm 4644$",
+          "$\\pm 4995$",
+          "$\\pm 5158$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 6
+    }
+  ]
+}

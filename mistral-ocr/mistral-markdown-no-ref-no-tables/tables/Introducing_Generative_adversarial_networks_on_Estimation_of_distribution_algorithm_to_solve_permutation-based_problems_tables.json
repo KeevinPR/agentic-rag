@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Introducing Generative adversarial networks on Estimation of distribution algorithm to solve permutation-based problems.md",
+    "filename": "Introducing Generative adversarial networks on Estimation of distribution algorithm to solve permutation-based problems.md",
+    "title": "Introducing Generative adversarial networks on Estimation of distribution algorithm to solve permutation-based problems",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "rows": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Problem",
+        "Used instances"
+      ],
+      "rows": [
+        [
+          "TSP",
+          2629172124
+        ],
+        [
+          "PFSP",
+          "$20 \\times 5,20 \\times 10$, two first instances for both"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "epochs",
+          50
+        ],
+        [
+          "D hidden layers",
+          1
+        ],
+        [
+          "G hidden layers",
+          2
+        ],
+        [
+          "Learning rate",
+          "$1 \\mathrm{e}-3$"
+        ],
+        [
+          "G output activation function",
+          "Tanh"
+        ],
+        [
+          "D output activation function",
+          "Sigmoid"
+        ],
+        [
+          "Hidden layers activation function",
+          "Relu"
+        ],
+        [
+          "Batch size",
+          32
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Problem",
+        "Instance",
+        "Minimum",
+        "Maximum",
+        "Mean"
+      ],
+      "rows": [
+        [
+          "TSP",
+          26,
+          937,
+          1019,
+          977
+        ],
+        [
+          "",
+          29,
+          2034,
+          2104,
+          2065
+        ],
+        [
+          "",
+          17,
+          2090,
+          2142,
+          2101.1
+        ],
+        [
+          "",
+          21,
+          2707,
+          2801,
+          2755
+        ],
+        [
+          "",
+          24,
+          1272,
+          1346,
+          1305.6
+        ],
+        [
+          "PFSP",
+          "tai20-5-0",
+          1297,
+          1307,
+          1297.9
+        ],
+        [
+          "",
+          "tai20-5-1",
+          1367,
+          1395,
+          1380.9
+        ],
+        [
+          "",
+          "tai20-10-0",
+          1654,
+          1709,
+          1683.1
+        ],
+        [
+          "",
+          "tai20-10-1",
+          1740,
+          1781,
+          1762
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Instances",
+        "Matrix representation",
+        "Random key representation",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "With 2-opt",
+          "Without 2-opt"
+        ],
+        [
+          26,
+          937,
+          1110,
+          1334.6
+        ],
+        [
+          29,
+          2034,
+          2806.4,
+          4386.8
+        ],
+        [
+          17,
+          2090,
+          2128.4,
+          2808.6
+        ],
+        [
+          21,
+          2707,
+          3555.5,
+          5491.6
+        ],
+        [
+          24,
+          1272,
+          1,
+          1
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    }
+  ]
+}

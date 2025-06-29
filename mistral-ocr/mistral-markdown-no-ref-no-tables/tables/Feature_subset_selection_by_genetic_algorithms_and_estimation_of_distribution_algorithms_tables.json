@@ -1,0 +1,805 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2001/Feature subset selection by genetic algorithms and estimation of distribution algorithms.md",
+    "filename": "Feature subset selection by genetic algorithms and estimation of distribution algorithms.md",
+    "title": "Feature subset selection by genetic algorithms and estimation of distribution algorithms",
+    "year": "2001"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Attributes of the study database",
+      "headers": [
+        "History finding attributes",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Age",
+          "Gender",
+          "Height"
+        ],
+        [
+          "Weight",
+          "Etiology of cirrhosis",
+          "Indication of TIPS"
+        ],
+        [
+          "Bleeding origin",
+          "Number of bleedings",
+          "Prophylactic therapy with popranolol"
+        ],
+        [
+          "Previous sclerotherapy",
+          "Restriction of proteins",
+          "Number of hepatic encephalopathies"
+        ],
+        [
+          "Type of hepatic encephalophaty",
+          "Ascites intensity",
+          "Number of paracenteses"
+        ],
+        [
+          "Volume of paracenteses",
+          "Dose of furosemide",
+          "Dose of spironolactone"
+        ],
+        [
+          "Spontaneous bacterial peritonitis",
+          "Kidney failure",
+          "Organic nephropathy"
+        ],
+        [
+          "Diabetes mellitus",
+          "",
+          ""
+        ],
+        [
+          "Laboratory finding attributes",
+          "",
+          ""
+        ],
+        [
+          "Hemoglobin",
+          "Hematocrit",
+          "White blood cell count"
+        ],
+        [
+          "Serum sodium",
+          "Urine sodium",
+          "Serum potassium"
+        ],
+        [
+          "Urine potassium",
+          "Plasma osmolarity",
+          "Urine osmolarity"
+        ],
+        [
+          "Urea",
+          "Plasma creatinine",
+          "Urine creatinine"
+        ],
+        [
+          "Creatinine clearance",
+          "Fractional sodium excretion",
+          "Diuresis"
+        ],
+        [
+          "GOT",
+          "GPT",
+          "GGT"
+        ],
+        [
+          "Alkaline phosphatase",
+          "Serum total bilirubin (mg/dl)",
+          "Serum conjugated bilirubin (mg/dl)"
+        ],
+        [
+          "Serum albumin ( $\\mathrm{g} / \\mathrm{dl}$ )",
+          "Plateletes",
+          "Prothrombin time (\\%)"
+        ],
+        [
+          "Parcial thrombin time",
+          "PRA",
+          "Proteins"
+        ],
+        [
+          "FNG",
+          "Aldosterone",
+          "ADH"
+        ],
+        [
+          "Dopamine",
+          "Norepineohrine",
+          "Epinephrine"
+        ],
+        [
+          "Gamma-globulin",
+          "",
+          ""
+        ],
+        [
+          "Child score",
+          "",
+          ""
+        ],
+        [
+          "Pugh score",
+          "",
+          ""
+        ],
+        [
+          "Doppler sonography",
+          "",
+          ""
+        ],
+        [
+          "Portal size",
+          "Portal flow velocity",
+          "Portal flow right"
+        ],
+        [
+          "Portal flow left",
+          "Spleen lenght (cm)",
+          ""
+        ],
+        [
+          "Endoscopy",
+          "",
+          ""
+        ],
+        [
+          "Size of esophageal varices",
+          "Gastric varices",
+          "Portal gastropathy"
+        ],
+        [
+          "Acute hemorrhage",
+          "",
+          ""
+        ],
+        [
+          "Hemodinamic parameters",
+          "",
+          ""
+        ],
+        [
+          "Arterial pressure ( mm Hg )",
+          "Heart rate (beats/min)",
+          "Cardiac output ( $1 / \\mathrm{min}$ )"
+        ],
+        [
+          "Free hepatic venous pressure",
+          "Wedged hepatic venous pressure",
+          "Hepatic venous pressure gradient (HVPG)"
+        ],
+        [
+          "Central venous pressure",
+          "Portal pressure",
+          "Portosystemis venous pressure gradient"
+        ],
+        [
+          "Angiography",
+          "",
+          ""
+        ],
+        [
+          "Portal thrombosis",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 35,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Estimated accuracy percentage coupled with the standard deviation of the leave-one-out process (first row) and the cardinalities of finally selected feature subsets (second row) ${ }^{a}$",
+      "headers": [
+        "",
+        "No-FSS",
+        "SFS",
+        "SBE",
+        "GA-o",
+        "GA-u",
+        "FSS-PBIL",
+        "FSS-TREE"
+      ],
+      "rows": [
+        [
+          "NB",
+          "$75.70 \\pm 4.17$",
+          "$82.24 \\pm 3.71$",
+          "$80.37 \\pm 3.86$",
+          "$85.05 \\pm 3.46$",
+          "$85.05 \\pm 3.46$",
+          "$85.05 \\pm 3.46$",
+          "$86.92 \\pm 3.28$"
+        ],
+        [
+          2,
+          "$77 \\quad 3$",
+          3,
+          72,
+          8,
+          9,
+          8,
+          10
+        ],
+        [
+          2,
+          "$69.92 \\pm 4.96$",
+          "$81.15 \\pm 3.59$",
+          "$79.53 \\pm 4.27$",
+          "$84.97 \\pm 2.57$",
+          "$84.16 \\pm 2.52$",
+          "$83.22 \\pm 3.97$",
+          "$85.88 \\pm 2.85$"
+        ],
+        [
+          4.5,
+          "$61.66 \\pm 4.62$",
+          "$85.19 \\pm 2.66$",
+          "$80.00 \\pm 4.37$",
+          "$85.73 \\pm 4.22$",
+          "$86.11 \\pm 3.63$",
+          "$85.19 \\pm 2.66$",
+          "$87.95 \\pm 2.63$"
+        ],
+        [
+          1,
+          "$67.96 \\pm 4.20$",
+          "$80.19 \\pm 4.19$",
+          "$72.59 \\pm 3.84$",
+          "$84.26 \\pm 2.86$",
+          "$85.93 \\pm 3.10$",
+          "$85.19 \\pm 2.66$",
+          "$86.85 \\pm 3.19$"
+        ],
+        [
+          "",
+          77,
+          2,
+          74,
+          8,
+          5,
+          5,
+          5
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 8
+    },
+    {
+      "table_number": "3",
+      "table_title": "Average accuracy percentages (first row) and cardinalities of finally selected feature subsets (second row) of 10 runs for randomized FSS methods ${ }^{a}$",
+      "headers": [
+        "",
+        "GA-o",
+        "GA-u",
+        "FSS-PBIL",
+        "FSS-TREE"
+      ],
+      "rows": [
+        [
+          "NB",
+          "$84.67 \\pm 0.51$",
+          "$84.48 \\pm 0.51$",
+          "$85.05 \\pm 0.00$",
+          "$86.28 \\pm 0.54$"
+        ],
+        [
+          "",
+          "$10.2 \\pm 3.11$",
+          "$9.4 \\pm 2.88$",
+          "$8.8 \\pm 2.86$",
+          "$10.6 \\pm 0.57$"
+        ],
+        [
+          2,
+          "$84.43 \\pm 0.40$",
+          "$84.12 \\pm 0.06$",
+          "$83.10 \\pm 0.20$",
+          "$85.26 \\pm 0.54$"
+        ],
+        [
+          4.5,
+          "$9.0 \\pm 3.46$",
+          "$11.0 \\pm 3.46$",
+          "$8.3 \\pm 1.52$",
+          "$8.3 \\pm 2.30$"
+        ],
+        [
+          "",
+          "$85.30 \\pm 0.37$",
+          "$85.30 \\pm 0.70$",
+          "$85.09 \\pm 0.13$",
+          "$86.34 \\pm 1.38$"
+        ],
+        [
+          1,
+          "$4.0 \\pm 1.73$",
+          "$3.3 \\pm 0.57$",
+          "$3.5 \\pm 0.52$",
+          "$3.7 \\pm 0.95$"
+        ],
+        [
+          "",
+          "$84.12 \\pm 0.09$",
+          "$84.53 \\pm 1.25$",
+          "$84.31 \\pm 1.00$",
+          "$85.51 \\pm 1.23$"
+        ],
+        [
+          "",
+          "$5.80 \\pm 1.82$",
+          "$5.9 \\pm 1.85$",
+          "$4.1 \\pm 0.87$",
+          "$5.3 \\pm 1.25$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "For each supervised classifier, the amount of the best 10 randomized runs which belong to each FSS method",
+      "headers": [
+        "",
+        "GA-o",
+        "GA-u",
+        "FSS-PBIL",
+        "FSS-TREE"
+      ],
+      "rows": [
+        [
+          "NB",
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          7
+        ],
+        [
+          4.5,
+          1,
+          2,
+          1,
+          6
+        ],
+        [
+          1,
+          0,
+          2,
+          2,
+          6
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "For FSS-TREE, this table lists the amount of runs that each medical finding appears in the models induced by each classifier",
+      "headers": [
+        "",
+        "NB",
+        "CN2",
+        "C4.5",
+        "IB1"
+      ],
+      "rows": [
+        [
+          "History finding attributes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Gender",
+          6,
+          0,
+          0,
+          3
+        ],
+        [
+          "Weight",
+          "$4^{\\mathrm{a}}$",
+          0,
+          0,
+          0
+        ],
+        [
+          "Etiology of cirrhosis",
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          "Indication of TIPS",
+          0,
+          "$4^{\\mathrm{a}}$",
+          0,
+          0
+        ],
+        [
+          "Previous sclerotherapy",
+          0,
+          "$10^{\\mathrm{a}}$",
+          0,
+          0
+        ],
+        [
+          "Restriction of proteins",
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          "Number of hepatic encephalopathies",
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          "Dose of furosemide",
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          "Spontaneous bacterial peritonitis",
+          6,
+          3,
+          0,
+          2
+        ],
+        [
+          "Kidney failure",
+          0,
+          0,
+          0,
+          "$4^{\\mathrm{a}}$"
+        ],
+        [
+          "Organic nephropathy",
+          "$4^{\\mathrm{a}}$",
+          6,
+          0,
+          4
+        ],
+        [
+          "Laboratory finding attributes",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Hematocrit",
+          3,
+          0,
+          "$2^{\\mathrm{a}}$",
+          0
+        ],
+        [
+          "White blood cell count",
+          "$4^{\\mathrm{a}}$",
+          0,
+          0,
+          0
+        ],
+        [
+          "Urine sodium",
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          "Serum potassium",
+          "$7^{\\mathrm{a}}$",
+          0,
+          0,
+          3
+        ],
+        [
+          "Urine potassium",
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          "Plasma osmolarity",
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          "Urine osmolarity",
+          0,
+          "$4^{\\mathrm{a}}$",
+          0,
+          0
+        ],
+        [
+          "Urea",
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          "Creatinine clearance",
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          "Fractional sodium excretion",
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          "Diuresis",
+          0,
+          "$5^{\\mathrm{a}}$",
+          0,
+          0
+        ],
+        [
+          "GOT",
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          "GPT",
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          "Serum total bilirubin (mg/dl)",
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          "Serum conjugated bilirubin (mg/dl)",
+          "$4^{\\mathrm{a}}$",
+          0,
+          0,
+          0
+        ],
+        [
+          "Serum albumin ( $\\mathrm{g} / \\mathrm{dl}$ )",
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          "Plateletes",
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          "Prothrombin time (\\%)",
+          0,
+          3,
+          5,
+          "$4^{\\mathrm{a}}$"
+        ],
+        [
+          "Parcial thrombin time",
+          "$10^{\\mathrm{a}}$",
+          "$4^{\\mathrm{a}}$",
+          "$2^{\\mathrm{a}}$",
+          0
+        ],
+        [
+          "PRA",
+          "$10^{\\mathrm{a}}$",
+          0,
+          0,
+          0
+        ],
+        [
+          "Proteins",
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          "FNG",
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          "Aldosterone",
+          "$4^{\\mathrm{a}}$",
+          0,
+          0,
+          0
+        ],
+        [
+          "Epinephrine",
+          0,
+          0,
+          "$2^{\\mathrm{a}}$",
+          3
+        ],
+        [
+          "Gamma-globulin",
+          "$10^{\\mathrm{a}}$",
+          3,
+          "$10^{\\mathrm{a}}$",
+          0
+        ],
+        [
+          "Child score",
+          0,
+          "$7^{\\mathrm{a}}$",
+          0,
+          "$10^{\\mathrm{a}}$"
+        ],
+        [
+          "Pugh score",
+          6,
+          6,
+          0,
+          3
+        ],
+        [
+          "Doppler sonography",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Portal flow left",
+          0,
+          0,
+          0,
+          "$4^{\\mathrm{a}}$"
+        ],
+        [
+          "Spleen lenght (cm)",
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          "Endoscopy",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Portal gastropathy",
+          0,
+          "$4^{\\mathrm{a}}$",
+          0,
+          0
+        ],
+        [
+          "Hemodinamic parameters",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Free hepatic venous pressure",
+          "$4^{\\mathrm{a}}$",
+          0,
+          0,
+          0
+        ],
+        [
+          "Wedged hepatic venous pressure",
+          3,
+          0,
+          0,
+          0
+        ]
+      ],
+      "row_count": 48,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 (Continued)",
+      "headers": [
+        "",
+        "NB",
+        "CN2",
+        "C4.5",
+        "IB1"
+      ],
+      "rows": [
+        [
+          "Hepatic venous pressure gradient (HVPG)",
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          "Central venous pressure",
+          0,
+          0,
+          "$2^{\\mathrm{a}}$",
+          0
+        ],
+        [
+          "Angiography",
+          0,
+          0,
+          0,
+          "$4^{\\mathrm{a}}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Misclassification matrices of probabilities for the best run of FSS-TREE and the no-FSS approach for C4.5 ${ }^{a}$",
+      "headers": [
+        "True class",
+        "Predicted class",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Do not survive",
+          "Survive"
+        ],
+        [
+          "Do not survive",
+          "$0.10 ; 0.23$",
+          "$0.21 ; 0.08$"
+        ],
+        [
+          "Survive",
+          "$0.18 ; 0.04$",
+          "$0.51 ; 0.65$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

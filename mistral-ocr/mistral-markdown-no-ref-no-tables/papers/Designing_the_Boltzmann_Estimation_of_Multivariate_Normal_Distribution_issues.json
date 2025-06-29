@@ -1,0 +1,458 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2015/Designing the Boltzmann Estimation of Multivariate Normal Distribution issues.md",
+    "filename": "Designing the Boltzmann Estimation of Multivariate Normal Distribution issues.md",
+    "title": "Designing the Boltzmann Estimation of Multivariate Normal Distribution issues",
+    "year": "2015"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] H. Müehlenbein, J. Bendisch, and H. M. Voight, \"From Recombination of Genes to the Estimation of Distributions, Continuous Parameters,\" GMD- Foorchungszentrum Informationstechnik, 53754 Sankt Augustin, Germany, 1996.\n[2] P. Larrañaga, \"A Review on Estimation of Distribution Algorithms,\" in Estimation of Distribution Algorithms, ser. Genetic Algorithms and Evolutionary Computation, P. Larrañaga and J. A. Lozano, Eds. Springer US, 2002, vol. 2, pp. 57-100.\n[3] P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña, \"Optimization in Continuous Domains by Learning and Simulation of Gaussian Networks,\" in Workshop in Optimization by Building and using Probabilistic Models, ser. GECCO 2000, Las Vegas, Nevada, USA, 2000, pp. 201-204.\n[4] I. Segovia-Dominguez, A. Hernandez-Aguirre, and E. V. Diharce, \"The Gaussian Polytree EDA with Copula Functions and Mutations,\" in EVOLVE, ser. Studies in Computational Intelligence. Springer Berlin Heidelberg, 2013, vol. 447, pp. 123-153.\n[5] W. Dong and X. Yao, \"Unified Eigen analysis on Multivariate Gaussian based Estimation of Distribution Algorithms,\" Information Sciences, vol. 178, no. 15, pp. 215-247, 2008.\n[6] I. Segovia-Dominguez, A. Hernandez-Aguirre, and S. I. Valdez, \"A New EDA by a Gradient-driven Density,\" in Parallel Problem Solving from Nature - PPSN XIII, ser. Lecture Notes in Computer Science, T. Bartz-Beielstein, J. Branke, B. Filipič, and J. Smith, Eds. Springer International Publishing, 2014, vol. 8672, pp. 352-361.\n[7] J. L. Shapiro, \"Diversity Loss in General Estimation of Distribution Algorithms,\" in Parallel Problem Solving from Nature-PPSN IX. Springer, 2006, pp. 92-101.\n[8] J. Grahl, P. A. N. Bosman, and S. Minner, \"Convergence Phases, Variance Trajectories, and Runtime Analysis of Continuos EDAs,\" in GECCO '07: Proceedings of the 8th annual conference on Genetic and evolutionary computation. ACM, 2007, pp. 516-522.\n[9] H. Mühlenbein, \"Convergence Theorems of Estimation of Distribution Algorithms,\" in Markov Networks in Evolutionary Computation, ser. Adaptation, Learning, and Optimization, S. Shakya and R. Santana, Eds. Springer Berlin Heidelberg, 2012, vol. 14, pp. 91-108.\n[10] T. Mahnig and H. Mühlenbein, \"A New Adaptive Boltzmann Selection Schedule SDS,\" in Evolutionary Computation, 2001. Proceedings of the 2001 Congress on, vol. 1. IEEE, 2001, pp. 183-190.\n[11] H. Mühlenbein, T. Mahnig, and A. O. Rodriguez, \"Schemata, Distributions and Graphical Models in Evolutionary Optimization,\" Journal of Heuristics, vol. 5, no. 2, pp. 215-247, 1999.\n[12] H. Mühlenbein and T. Mahnig, \"The Factorized Distribution Algorithm for Additively Decomposed Functions,\" in Evolutionary Computation, 1999. CEC 99. Proceedings of the 1999 Congress on, vol. 1. IEEE, 1999, p. 759.\n[13] C. Yunpeng, S. Xiaomin, and J. Peifa, \"Probabilistic Modeling for Continuous EDA with Boltzmann Selection and Kullback-Leibeler Divergence,\" in Proceedings of the 8th annual conference on Genetic and evolutionary computation. ACM, 2006, pp. 389-396.\n[14] S. I. Valdez, A. Hernández-Aguirre, and S. Botello, \"A Boltzmann based Estimation of Distribution Algorithm,\" Information Sciences, vol. 236, pp. 126-137, 2013.\n[15] A. Ochoa, \"Opportunities for Expensive Optimization with Estimation of Distribution Algorithms,\" in Computational Intelligence in Expensive Optimization Problems. Springer, 2010, vol. 2, pp. 193-218.\n[16] J. Hu, Y. Wang, E. Zhou, M. C. Fu, and S. I. Marcus, \"A Survey of Some Model-based Methods for Global Optimization,\" in Optimization, Control, and Applications of Stochastic Systems. Springer, 2012, pp. $157-179$.\n[17] T. M. Cover and J. A. Thomas, Elements of Information Theory, ser. Wiley Series in Telecommunications and Signal Processing. WileyInterscience, 2006.\n[18] P. M. Gruber, \"Convex Polytopes,\" in Convex and Discrete Geometry, ser. A Series of Comprehensive Studies in Mathematics. Springer Berlin Heidelberg, 2007, vol. 336, pp. 243-351.\n[19] P. A. N. Bosman, J. Grahl, and D. Thierens, \"Benchmarking Parameterfree AMaLGaM on Functions with and without Noise,\" Evolutionary Computation, vol. 21, no. 3, pp. 445-469, Sept 2013.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "H. Müehlenbein, J. Bendisch, and H. M. Voight, \"From Recombination of Genes to the Estimation of Distributions, Continuous Parameters,\" GMD- Foorchungszentrum Informationstechnik, 53754 Sankt Augustin, Germany, 1996."
+      },
+      {
+        "ref_id": "2",
+        "text": "P. Larrañaga, \"A Review on Estimation of Distribution Algorithms,\" in Estimation of Distribution Algorithms, ser. Genetic Algorithms and Evolutionary Computation, P. Larrañaga and J. A. Lozano, Eds. Springer US, 2002, vol. 2, pp. 57-100."
+      },
+      {
+        "ref_id": "3",
+        "text": "P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña, \"Optimization in Continuous Domains by Learning and Simulation of Gaussian Networks,\" in Workshop in Optimization by Building and using Probabilistic Models, ser. GECCO 2000, Las Vegas, Nevada, USA, 2000, pp. 201-204."
+      },
+      {
+        "ref_id": "4",
+        "text": "I. Segovia-Dominguez, A. Hernandez-Aguirre, and E. V. Diharce, \"The Gaussian Polytree EDA with Copula Functions and Mutations,\" in EVOLVE, ser. Studies in Computational Intelligence. Springer Berlin Heidelberg, 2013, vol. 447, pp. 123-153."
+      },
+      {
+        "ref_id": "5",
+        "text": "W. Dong and X. Yao, \"Unified Eigen analysis on Multivariate Gaussian based Estimation of Distribution Algorithms,\" Information Sciences, vol. 178, no. 15, pp. 215-247, 2008."
+      },
+      {
+        "ref_id": "6",
+        "text": "I. Segovia-Dominguez, A. Hernandez-Aguirre, and S. I. Valdez, \"A New EDA by a Gradient-driven Density,\" in Parallel Problem Solving from Nature - PPSN XIII, ser. Lecture Notes in Computer Science, T. Bartz-Beielstein, J. Branke, B. Filipič, and J. Smith, Eds. Springer International Publishing, 2014, vol. 8672, pp. 352-361."
+      },
+      {
+        "ref_id": "7",
+        "text": "J. L. Shapiro, \"Diversity Loss in General Estimation of Distribution Algorithms,\" in Parallel Problem Solving from Nature-PPSN IX. Springer, 2006, pp. 92-101."
+      },
+      {
+        "ref_id": "8",
+        "text": "J. Grahl, P. A. N. Bosman, and S. Minner, \"Convergence Phases, Variance Trajectories, and Runtime Analysis of Continuos EDAs,\" in GECCO '07: Proceedings of the 8th annual conference on Genetic and evolutionary computation. ACM, 2007, pp. 516-522."
+      },
+      {
+        "ref_id": "9",
+        "text": "H. Mühlenbein, \"Convergence Theorems of Estimation of Distribution Algorithms,\" in Markov Networks in Evolutionary Computation, ser. Adaptation, Learning, and Optimization, S. Shakya and R. Santana, Eds. Springer Berlin Heidelberg, 2012, vol. 14, pp. 91-108."
+      },
+      {
+        "ref_id": "10",
+        "text": "T. Mahnig and H. Mühlenbein, \"A New Adaptive Boltzmann Selection Schedule SDS,\" in Evolutionary Computation, 2001. Proceedings of the 2001 Congress on, vol. 1. IEEE, 2001, pp. 183-190."
+      },
+      {
+        "ref_id": "11",
+        "text": "H. Mühlenbein, T. Mahnig, and A. O. Rodriguez, \"Schemata, Distributions and Graphical Models in Evolutionary Optimization,\" Journal of Heuristics, vol. 5, no. 2, pp. 215-247, 1999."
+      },
+      {
+        "ref_id": "12",
+        "text": "H. Mühlenbein and T. Mahnig, \"The Factorized Distribution Algorithm for Additively Decomposed Functions,\" in Evolutionary Computation, 1999. CEC 99. Proceedings of the 1999 Congress on, vol. 1. IEEE, 1999, p. 759."
+      },
+      {
+        "ref_id": "13",
+        "text": "C. Yunpeng, S. Xiaomin, and J. Peifa, \"Probabilistic Modeling for Continuous EDA with Boltzmann Selection and Kullback-Leibeler Divergence,\" in Proceedings of the 8th annual conference on Genetic and evolutionary computation. ACM, 2006, pp. 389-396."
+      },
+      {
+        "ref_id": "14",
+        "text": "S. I. Valdez, A. Hernández-Aguirre, and S. Botello, \"A Boltzmann based Estimation of Distribution Algorithm,\" Information Sciences, vol. 236, pp. 126-137, 2013."
+      },
+      {
+        "ref_id": "15",
+        "text": "A. Ochoa, \"Opportunities for Expensive Optimization with Estimation of Distribution Algorithms,\" in Computational Intelligence in Expensive Optimization Problems. Springer, 2010, vol. 2, pp. 193-218."
+      },
+      {
+        "ref_id": "16",
+        "text": "J. Hu, Y. Wang, E. Zhou, M. C. Fu, and S. I. Marcus, \"A Survey of Some Model-based Methods for Global Optimization,\" in Optimization, Control, and Applications of Stochastic Systems. Springer, 2012, pp. $157-179$."
+      },
+      {
+        "ref_id": "17",
+        "text": "T. M. Cover and J. A. Thomas, Elements of Information Theory, ser. Wiley Series in Telecommunications and Signal Processing. WileyInterscience, 2006."
+      },
+      {
+        "ref_id": "18",
+        "text": "P. M. Gruber, \"Convex Polytopes,\" in Convex and Discrete Geometry, ser. A Series of Comprehensive Studies in Mathematics. Springer Berlin Heidelberg, 2007, vol. 336, pp. 243-351."
+      },
+      {
+        "ref_id": "19",
+        "text": "P. A. N. Bosman, J. Grahl, and D. Thierens, \"Benchmarking Parameterfree AMaLGaM on Functions with and without Noise,\" Evolutionary Computation, vol. 21, no. 3, pp. 445-469, Sept 2013."
+      }
+    ],
+    "reference_count": 19,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "BENCHMARK MINIMIZATION PROBLEMS [2], [4], [14]. LEFT: UNIMODAL FUNCTIONS. RIGHT: MULTIMODAL FUNCTIONS. FURTHER DETAILS IN SECTION V.",
+      "headers": [
+        "$\\mathcal{F}$ Name",
+        "Domain",
+        "$\\mathcal{F}$ Name",
+        "Domain"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{F}_{1}$ Sphere",
+          "$[-600,300]^{d}$",
+          "$\\mathcal{F}_{9}$ Rosenbrock",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{2}$ Different Powers",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{10}$ Ackley",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          1.2,
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{11}$ Griewangk",
+          "$[-600,300]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{4}$ Trid",
+          "$[-d^{*}, d^{2}]^{d}$",
+          8,
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{5}$ Zakharov",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{13}$ Bohachevsky",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{6}$ Ellipsoid",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{14}$ Rastrigin",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{7}$ Cigar Tablet",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{15}$ Drop Wave",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{8}$ Two Axes",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{16}$ Salomon",
+          "$[-100,50]^{d}$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "COMPARISON BETWEEN BEMNA AND AMALGAM METHODS IN 30 DIMENSIONS. THE WINNER IS MARKED IN BOLOFACE ACCORDING TO A NON-PARAMETRIC BODTSTRAP TEST. FURTHER DETAILS IN SECTION V.",
+      "headers": [
+        "$\\mathcal{F}$",
+        "BEMNA",
+        "AMaLGaM",
+        "$\\rho$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{F}_{1}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.76e-9 $\\pm 1.02 \\mathrm{e}-9$",
+          "8.55e-9 $\\pm 1.10 \\mathrm{e}-9$",
+          "$3.20 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          5.264,
+          8.294,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{2}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.39e-9 $\\pm 1.12 \\mathrm{e}-9$",
+          "6.59e-9 $\\pm 2.20 \\mathrm{e}-9$",
+          "1.00e-4"
+        ],
+        [
+          "",
+          2.774,
+          4.864,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{3}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.88e-9 $\\pm 9.72 \\mathrm{e}-10$",
+          "8.40e-9 $\\pm 1.20 \\mathrm{e}-9$",
+          "3.09e-2"
+        ],
+        [
+          "",
+          4.254,
+          7.354,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{4}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.84e-9 $\\pm 9.19 \\mathrm{e}-10$",
+          "8.17e-9 $\\pm 1.27 \\mathrm{e}-9$",
+          "3.20e-3"
+        ],
+        [
+          "",
+          5.414,
+          8.704,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{5}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.89e-9 $\\pm 1.01 \\mathrm{e}-9$",
+          "8.17e-9 $\\pm 1.07 \\mathrm{e}-9$",
+          "1.20e-3"
+        ],
+        [
+          "",
+          4.304,
+          7.444,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{6}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.10e-9 $\\pm 8.05 \\mathrm{e}-10$",
+          "8.39e-9 $\\pm 1.12 \\mathrm{e}-9$",
+          "6.00e-4"
+        ],
+        [
+          "",
+          5.704,
+          9.144,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{7}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.88e-9 $\\pm 1.08 \\mathrm{e}-9$",
+          "8.50e-9 $\\pm 1.29 \\mathrm{e}-9$",
+          "1.30e-1"
+        ],
+        [
+          "",
+          5.934,
+          9.294,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{8}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.19e-9 $\\pm 8.00 \\mathrm{e}-10$",
+          "8.38e-9 $\\pm 1.20 \\mathrm{e}-9$",
+          "4.00e-4"
+        ],
+        [
+          "",
+          5.914,
+          1.015,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{9}$",
+          98.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "7.97e-2 $\\pm 5.64 \\mathrm{e}-1$",
+          "8.49e-9 $\\pm 1.14 \\mathrm{e}-9$",
+          "$1.19 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          1.735,
+          2.705,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{10}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.33e-9 $\\pm 6.06 \\mathrm{e}-10$",
+          "9.02e-9 $\\pm 6.58 \\mathrm{e}-10$",
+          "1.67e-2"
+        ],
+        [
+          "",
+          6.964,
+          1.125,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{11}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.08e-9 $\\pm 8.95 \\mathrm{e}-10$",
+          "8.34e-9 $\\pm 1.20 \\mathrm{e}-9$",
+          "1.60e-3"
+        ],
+        [
+          "",
+          4.804,
+          7.874,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{12}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.98e-9 $\\pm 8.77 \\mathrm{e}-10$",
+          "8.33e-9 $\\pm 1.12 \\mathrm{e}-9$",
+          "1.70e-3"
+        ],
+        [
+          "",
+          3.724,
+          6.354,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{13}$",
+          92.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "5.85e-2 $\\pm 2.20 \\mathrm{e}-1$",
+          "8.42e-9 $\\pm 1.16 \\mathrm{e}-9$",
+          "5.83e-2"
+        ],
+        [
+          "",
+          6.824,
+          7.784,
+          "$3.21 \\mathrm{e}-1$"
+        ],
+        [
+          "$\\mathcal{F}_{14}$",
+          0.0,
+          2.0,
+          ""
+        ],
+        [
+          "",
+          1.462,
+          1.37,
+          "1.00e-4"
+        ],
+        [
+          "",
+          3.005,
+          3.005,
+          1.0
+        ],
+        [
+          "$\\mathcal{F}_{15}$",
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "",
+          "1.33e-1 $\\pm 8.07 \\mathrm{e}-2$",
+          "2.08e-1 $\\pm 1.09 \\mathrm{e}-1$",
+          "1.00e-4"
+        ],
+        [
+          "",
+          3.005,
+          3.005,
+          1.0
+        ],
+        [
+          "$\\mathcal{F}_{16}$",
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "",
+          "1.64e-1 $\\pm 6.29 \\mathrm{e}-2$",
+          "3.63e-1 $\\pm 8.75 \\mathrm{e}-2$",
+          "1.00e-4"
+        ],
+        [
+          "",
+          3.005,
+          3.005,
+          1.0
+        ]
+      ],
+      "row_count": 48,
+      "column_count": 4
+    }
+  ]
+}

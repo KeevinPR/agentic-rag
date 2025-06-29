@@ -1,0 +1,725 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Multiobjective Estimation of Distribution Algorithm Based on Joint Modeling of Objectives and Variables.md",
+    "filename": "Multiobjective Estimation of Distribution Algorithm Based on Joint Modeling of Objectives and Variables.md",
+    "title": "Multiobjective Estimation of Distribution Algorithm Based on Joint Modeling of Objectives and Variables",
+    "year": "2014"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] I. Shalzarini, S. Mueller, and P. Koumoutsakos, \"Multiobjective optimization using evolutionary algorithms,\" in Summer Program of Studying Turbulence Using Numerical Simulation Databases-VIII, vol. 1. Center for Turbulence Research, 2000, pp. 63-74.\n[2] E. Zitzler, K. Deb, and L. Thiele, \"Comparison of multiobjective evolutionary algorithms: Empirical results,\" Evolutionary Computation, vol. 8, no. 2, pp. 173-195, 2000.\n[3] K. Deb, Multi-Objective Optimization Using Evolutionary Algorithms. New York, NY, USA: John Wiley \\& Sons, Inc., 2001.\n[4] A. Abraham, L. Jain, and R. Goldberg, Eds., Evolutionary Multiobjective Optimization: Theoretical Advances and Applications, ser. Advanced Information and Knowledge Processing. Berlin: Springer, 2005.\n[5] C. A. Coello Coello, G. B. Lamont, and D. A. Van Veldhuizen, Evolutionary Algorithms for Solving Multi-Objective Problems, 2nd ed., ser. Genetic and Evolutionary Computation Series. Springer, 2007.\n[6] D. E. Goldberg, The Design of Innovation: Lessons from and for Competent Genetic Algorithms. Norwell, MA, USA: Kluwer Academic Publishers, 2002.\n[7] P. Larrahaga and J. A. Lozano, Eds., Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Norwell, MA, USA: Kluwer Academic Publishers, 2001.\n[8] J. A. Lozano, P. Larrahaga, I. Inza, and E. Bengostxea, Eds., Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, ser. Studies in Fuzziness and Soft Computing. Secaucus, NJ, USA: Springer, 2006.\n[9] M. Pelikan, K. Sastry, and E. Cantú-Paz, Eds., Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, ser. Studies in Computational Intelligence. Secaucus, NJ, USA: Springer, 2006.\n[10] P. Larrahaga, H. Karahenas, C. Bielza, and R. Santana, \"A review on probabilistic graphical models in evolutionary computation,\" Journal of Heuristics, vol. 18, no. 5, pp. 795-819, 2012.\n[11] D. Thierens and P. A. N. Bosman, \"Multi-objective mixture-based iterated density estimation evolutionary algorithms,\" in Conference on Genetic and Evolutionary Computation (GECCO '01), L. Spector, E. D. Goodman, A. Wu, W. B. Langdon, H.-M. Voigt, M. Gen, S. Sen, M. Dorigo, S. Pezcstik, M. H. Garzon, and E. Burke, Eds. San Francisco, California, USA: Morgan Kaufmann, 2001, pp. 663-670.\n[12] M. Pelikan, K. Sastry, and D. Goldberg, \"Multiobjective estimation of distribution algorithms,\" in Scalable Optimization via Probabilistic Modeling, ser. Studies in Computational Intelligence, M. Pelikan, K. Sastry, and E. Cantú-Paz, Eds. Berlin: Springer, 2006, vol. 33, pp. 223-248.\n[13] Q. Zhang, A. Zhou, and Y. Jin, \"RM-MEDA: A regularity model based multiobjective estimation of distribution algorithm,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 1, pp. 41-63, 2008.\n[14] L. Marti, J. Garcia, A. Berlanga, C. A. Coello Coello, and J. M. Molina, \"On current model-building methods for multi-objective estimation of distribution algorithms: Shortcommings and directions for improvement,\" Department of Informatics, Universidad Carlos III de Madrid, Madrid, Spain, Tech. Rep. GIAA2010E001, 2010.\n[15] K. Deb, L. Thiele, M. Laumanns, and E. Zitzler, \"Scalable multi-objective optimization test problems,\" in IEEE Congress on Evolutionary Computation (CEC '02), vol. 1, 2002, pp. 825-830.\n[16] H. Ishibuchi, N. Tsukamoto, Y. Hitorsuyanagi, and Y. Nojima, \"Effectiveness of scalability improvement attempts on the performance of NSGA-II for many-objective problems,\" in 10th Annual Conference on Genetic and Evolutionary Computation (GECCO '08). New York, NY, USA: ACM, 2008, pp. 649-656.\n[17] T. Goel, R. Vaidyanathan, R. T. Haftka, W. Shyy, N. V. Queipo, and K. Tucker, \"Response surface approximation of Pareto optimal front in multi-objective optimization,\" Computer Methods in Applied Mechanics and Engineering, vol. 196, no. 4-6, pp. 879-893, 2007.\n[18] A. López Jairnes, C. A. Coello Coello, and D. Chakraborty, \"Objective reduction using a feature selection technique,\" in 16th Annual Conference on Genetic and Evolutionary Computation (GECCO '08). New York, NY, USA: ACM, 2008, pp. 673-680.\n[19] D. Craft and T. Bortfeld, \"How many plans are needed in an IMRT multi-objective plan database?\" Physics in Medicine and Biology, vol. 53, no. 11, pp. 2785-2796, 2008.\n[20] S. Verel, A. Lielooghe, L. Jourdan, and C. Dhuenens, \"Analyzing the effect of objective correlation on the efficient set of MNKlandscapes,\" in 5th International Conference on Learning and Intelligent Optimization (LION'5), ser. Lecture Notes in Computer Science, C. A. Coello Coello, Ed., vol. 6683. Berlin, Heidelberg: Springer, 2011, pp. 116-130.\n\n[21] D. Saxena, J. Duro, A. Tiwari, K. Deb, and Q. Zhang, \"Objective reduction in many-objective optimization: Linear and nonlinear algorithms,\" IEEE Transactions on Evolutionary Computation, vol. 17, no. 1, pp. 77-99, 2013.\n[22] D. Brockhoff and E. Zitzler, \"Objective reduction in evolutionary multiobjective optimization: Theory and applications,\" Evolutionary Computation, vol. 17, no. 2, pp. 135-166, 2009.\n[23] G. Guillén-Gosálbez, \"A novel MILP-based objective reduction method for multi-objective optimization: Application to environmental problems,\" Computers \\& Chemical Engineering, vol. 35, no. 8, pp. 1469-1477, 2011.\n[24] H. Karshenas, R. Santana, C. Bielza, and P. Larrañaga, \"Multi-objective optimization with joint probabilistic modeling of objectives and variables,\" in Evolutionary Multi-Criterion Optimization (EMO'11), ser. Lecture Notes in Computer Science, R. Takahashi, K. Deb, E. Wanner, and S. Greco, Eds., vol. 6576. Berlin, Heidelberg: Springer, 2011, pp. 298-312.\n[25] P. de Waal and L. van der Gaag, \"Inference and learning in multidimensional Bayesian network classifiers,\" Symbolic and Quantitative Approaches to Reasoning with Uncertainty, pp. 501-511, 2007.\n[26] C. Bielza, G. Li, and P. Larrañaga, \"Multi-dimensional classification with Bayesian networks,\" International Journal of Approximate Reasoning, vol. 52, no. 6, pp. 705-727, 2011.\n[27] T. Miquellez, E. Bengoetxea, and P. Larrañaga, \"Evolutionary computation based on Bayesian classifiers,\" International Journal of Applied Mathematics and Computer Science, vol. 14, no. 3, pp. 335-350, 2004.\n[28] , \"Evolutionary Bayesian classifier-based optimization in continuous domains,\" in 6th International Conference on Simulated Evolution and Learning (SEAL '06), ser. Lecture Notes in Computer Science, T.-D. Wang, X. Li, S.-H. Chen, X. Wang, H. A. Abbass, H. Ba, G. Chen, and X. Yao, Eds., vol. 4247. Springer, 2006, pp. 529-536.\n[29] J. Pearl, \"Bayesian networks: A model of self-activated memory for evidential reasoning,\" in 7th Conference of the Cognitive Science Society, 1985, pp. 329-334.\n[30] S. L. Lauritzen, \"Propagation of probabilities, means, and variances in mixed graphical association models,\" Journal of the American Statistical Association, vol. 87, no. 420, pp. 1098-1108, 1992.\n[31] D. Geiger and D. Heckerman, \"Learning Gaussian networks,\" in 10th Conference on Uncertainty in Artificial Intelligence (UAI'94), R. L. de Mantaras and D. Poole, Eds. San Francisco, CA: Morgan Kaufmann, 1994, pp. 235-243.\n[32] D. Goldberg, \"The design of innovation: Lessons from genetic algorithms, lessons for the real world,\" Technological Forecasting and Social Change, vol. 64, no. 1, pp. 7-12, 2000.\n[33] E. Zitzler and L. Thiele, \"Multiobjective evolutionary algorithms: A comparative case study and the strength Pareto approach,\" IEEE Transactions on Evolutionary Computation, vol. 3, no. 4, pp. 257-271, 1999.\n[34] J. Martín, C. Bielza, and D. R. Insua, \"Approximating nondominated sets in continuous multiobjective optimization problems,\" Naval Research Logistics, vol. 52, no. 5, pp. 469-480, 2005.\n[35] J. Schwarz and J. Očenášek, \"Multiobjective Bayesian optimization algorithm for combinatorial problems: Theory and practice,\" Neural Network World, vol. 11, no. 5, pp. 423-442, 2001.\n[36] N. Khan, D. E. Goldberg, and M. Pelikan, \"Multiple-objective Bayesian optimization algorithm,\" in Conference on Genetic and Evolutionary Computation (GECCO '02), W. B. Langdon, E. Cantié-Paz, K. E. Mathias, R. Roy, D. Davis, R. Poli, K. Balakrishnan, V. Honavar, G. Rudolph, J. Wegener, L. Bull, M. A. Porter, A. C. Schultz, J. F. Miller, E. K. Burke, and N. Jonoska, Eds. Morgan Kaufmann, 2002, p. 684.\n[37] P. A. Bosman and D. Thierens, \"Multi-objective optimization with diversity preserving mixture-based terrated density estimation evolutionary algorithms,\" International Journal of Approximate Reasoning, vol. 31, no. 3, pp. 259-289, 2002.\n[38] P. A. N. Bosman and D. Thierens, \"Adaptive variance scaling in continuous multi-objective estimation of distribution algorithms,\" in 9th Annual Conference on Genetic and Evolutionary Computation (GECCO '07), H. Lipson, Ed. New York, NY, USA: ACM, 2007, pp. 500-507.\n[39] M. Costa and E. Minisci, \"MOPED: A multi-objective Parzen-based estimation of distribution algorithm for continuous problems,\" in Second International Conference on Evolutionary Multi-Criterion Optimization (EMO'03), ser. Lecture Notes in Computer Science, C. Fonseca,\nP. Fleming, E. Zitzler, L. Thiele, and K. Deb, Eds., vol. 2632. Berlin: Springer, 2003, pp. 282-294.\n[40] T. Okabe, Y. Jin, B. Sendoff, and M. Olhofer, \"Voronoi-based estimation of distribution algorithm for multi-objective optimization,\" in IEEE Congress on Evolutionary Computation (CEC'04), vol. 2, 2004, pp. 1594-1601.\n[41] M. Pelikan, K. Sastry, and D. E. Goldberg, \"Multiobjective hBOA, clustering, and scalability,\" in Conference on Genetic and Evolutionary Computation (GECCO '05). New York, NY, USA: ACM, 2005, pp. 663-670.\n[42] K. Sastry, D. Goldberg, and M. Pelikan, \"Limits of scalability of multiobjective estimation of distribution algorithms,\" in IEEE Congress on Evolutionary Computation (CEC'05), vol. 3, 2005, pp. 2217-2224.\n[43] H. Soh and M. Kirley, \"moPGA: Towards a new generation of multi-objective genetic algorithms,\" in IEEE Congress on Evolutionary Computation (CEC'06), 2006, pp. 1702-1709.\n[44] C. Ahn and R. Ramakrishna, \"A diversity preserving selection in multiobjective evolutionary algorithms,\" Applied Intelligence, vol. 32, no. 3, pp. 231-248, 2010.\n[45] H. Tang, V. A. Shim, K. C. Tan, and J. Y. Chia, \"Restricted Boltzmann machine based algorithm for multi-objective optimization,\" in IEEE Congress on Evolutionary Computation (CEC'10), 2010, pp. 1-8.\n[46] L. Martí, J. García, A. Berlanga, C. A. Coello Coello, and J. M. Molina, \"MB-GNG: Addressing drawbacks in multi-objective optimization estimation of distribution algorithms,\" Operations Research Letters, vol. 39, no. 2, pp. 150-154, 2011.\n[47] L. Martí, J. García, A. Berlanga, and J. Molina, \"Multi-objective optimization with an adaptive resonance theory-based estimation of distribution algorithm,\" Annals of Mathematics and Artificial Intelligence, 2012.\n[48] M. Laumanns and J. Očenášek, \"Bayesian optimization algorithms for multi-objective optimization,\" in 7th International Conference on Parallel Problem Solving from Nature (PPSN VII), ser. Lecture Notes in Computer Science, J. J. M. Guervós, P. Adamidis, H.-G. Beyer, J. L. F.-V. Martín, and H.-P. Schwefel, Eds., vol. 2439. Springer, 2002, pp. 298-307.\n[49] X. Zhong and W. Li, \"A decision-tree-based multi-objective estimation of distribution algorithm,\" in International Conference on Computational Intelligence and Security (CIS'07). IEEE Computer Society, 2007, pp. $114-118$.\n[50] Y. Katsumata and T. Terano, \"Bayesian optimization algorithm for multiobjective solutions: Application to electric equipment configuration problems in a power plant,\" in IEEE Congress on Evolutionary Computation (CEC '03), vol. 2, 2003, pp. 1101-1107.\n[51] H. Li, Q. Zhang, E. Tsang, and J. A. Ford, \"Hybrid estimation of distribution algorithm for multiobjective knapsack problem,\" in Fourth European Conference on Evolutionary Computation in Combinatorial Optimization (EvoCOP'04), ser. Lecture Notes in Computer Science, J. Gottlieb and G. R. Raidl, Eds., vol. 3004. Berlin, Heidelberg: Springer, 2004, pp. 145-154.\n[52] Y. Gao, X. Hu, H. Liu, and Y. Feng, \"Multiobjective estimation of distribution algorithm combined with PSO for RFID network optimization,\" in International Conference on Measuring Technology and Mechatronics Automation (ICMTMA), vol. 2. IEEE Computer Society, 2010, pp. 736-739.\n[53] V. A. Shim, K. C. Tan, and J. Y. Chia, \"Multi-objective optimization with estimation of distribution algorithm in a noisy environment,\" Evolutionary Computation, vol. 21, no. 1, pp. 149-177, 2013.\n[54] V. A. Shim, K. C. Tan, and K. K. Tan, \"A hybrid adaptive evolutionary algorithm in the domination-based and decompositionbased frameworks of multi-objective optimization,\" in IEEE Congress on Evolutionary Computation (CEC'12), 2012, pp. 1-8.\n[55] V. A. Shim, K. C. Tan, and C. Y. Cheong, \"A hybrid estimation of distribution algorithm with decomposition for solving the multiobjective multiple traveling salesman problem,\" IEEE Transactions on Systems, Man, and Cybernetics, Part C: Applications and Reviews, vol. 42, no. 5, pp. 682-691, 2012.\n[56] M. Pelikan, D. E. Goldberg, and E. Cantiá-Paz, \"BOA: The Bayesian optimization algorithm,\" in Conference on Genetic and Evolutionary Computation (GECCO '99), W. Banzhaf, J. Daida, A. E. Eiben, M. H. Garzon, V. Honavar, M. Jakiela, and R. E. Smith, Eds., vol. 1. Orlando, Florida, USA: Morgan Kaufmann Publishers, 1999, pp. 525-532.\n[57] K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, \"A fast and elitist multiobjective genetic algorithm: NSGA-II,\" IEEE Transactions on Evolutionary Computation, vol. 6, no. 2, pp. 182-197, 2002.\n\n[58] C. W. Ahn and R. S. Ramakrishna, \"Multiobjective real-coded Bayesian optimization algorithm revisited: Diversity preservation,\" in 9th Annual Conference on Genetic and Evolutionary Computation (GECCO '07). New York, NY, USA: ACM, 2007, pp. 593-600.\n[59] J. Bader and E. Zitzler, \"HypE: An algorithm for fast hypervolumebased many-objective optimization,\" Evolutionary Computation, vol. 19, no. 1, pp. 45-76, 2011.\n[60] Q. Zhang, W. Liu, E. Tsang, and B. Virginas, \"Expensive multiobjective optimization by MOEA/D with Gaussian process model,\" IEEE Transactions on Evolutionary Computation, vol. 14, no. 3, pp. 456-474, 2010.\n[61] E. Hughes, \"Evolutionary many-objective optimisation: Many once or one many?\" in IEEE Congress on Evolutionary Computation (CEC '05), vol. 1, 2005, pp. 222-227.\n[62] H. Ishibuchi, N. Tsukamoto, and Y. Nojima, \"Evolutionary manyobjective optimization: A short review,\" in IEEE Congress on Evolutionary Computation (CEC '08) - IEEE World Congress on Computational Intelligence (WCCI '08), 2008, pp. 2419-2426.\n[63] H. Aguirre and K. Tanaka, \"A study on the effects of rankings sensitive to density on many-objective MNK landscapes,\" in IEEE Congress on Evolutionary Computation (CEC'10), IEEE World Congress on Computational Intelligence (WCCI 2010), 2010, pp. 1089-1096.\n[64] Q. Zhang and H. Li, \"MOEA/D: A multiobjective evolutionary algorithm based on decomposition,\" IEEE Transactions on Evolutionary Computation, vol. 11, no. 6, pp. 712-731, 2007.\n[65] M. Garza-Fabre, G. Toscano Pulido, and C. Coello Coello, \"Ranking methods for many-objective optimization,\" in MICAI 2009: Advances in Artificial Intelligence, ser. Lecture Notes in Computer Science, A. Aguirre, R. Borja, and C. García, Eds. Berlin: Springer, 2009, vol. 5845, pp. 633-645.\n[66] ——, \"Alternative fitness assignment methods for many-objective optimization problems,\" in Artificial Evolution, ser. Lecture Notes in Computer Science, P. Collet, N. Monmarché, P. Legrand, M. Schoenauer, and E. Lutton, Eds. Berlin: Springer, 2010, vol. 5975, pp. 146-157.\n[67] M. Garza-Fabre, G. Toscano Pulido, and C. A. Coello Coello, \"Two novel approaches for many-objective optimization,\" in IEEE Congress on Evolutionary Computation (CEC'10) - IEEE World Congress on Computational Intelligence (WCCI 2010), 2010, pp. 4480-4487.\n[68] G. Cooper and E. Herskovits, \"A Bayesian method for the induction of probabilistic networks from data,\" Machine Learning, vol. 9, no. 4, pp. 309-347, 1992.\n[69] D. Heckerman, D. Geiger, and D. M. Chickering, \"Learning Bayesian networks: The combination of knowledge and statistical data,\" Machine Learning, vol. 20, no. 3, pp. 197-243, 1995.\n[70] W. Buntine, \"A guide to the literature on learning probabilistic networks from data,\" IEEE Transactions on Knowledge and Data Engineering, vol. 8, no. 2, pp. 195-210, 1996.\n[71] M. Pelikan, Hierarchical Bayesian Optimization Algorithm: Toward a New Generation of Evolutionary Algorithms, 1st ed., ser. Studies in Fuzziness and Soft Computing. Springer, 2005, vol. 170.\n[72] W. Buntine, \"Theory refinement on Bayesian networks,\" in 7th Annual Conference on Uncertainty in Artificial Intelligence (UAI '91), B. D'Ambrosio and P. Smets, Eds. San Francisco, CA, USA: Morgan Kaufmann, 1991, pp. 52-60.\n[73] G. Schwarz, \"Estimating the dimension of a model,\" Annals of Statistics, vol. 6, no. 2, pp. 461-464, 1978.\n[74] R. Tibshirani, \"Regression shrinkage and selection via the Lasso,\" Journal of the Royal Statistical Society, Series B (Methodological), vol. 58, no. 1, pp. 267-288, 1996.\n[75] T. Hastie, R. Tibshirani, and J. Friedman, The Elements of Statistical Learning: Data Mining, Inference, and Prediction, 2nd ed., ser. Springer Series in Statistics. New York: Springer, 2009.\n[76] J. Schäfer and K. Strimmer, \"A shrinkage approach to large-scale covariance matrix estimation and implications for functional genomics,\" Statistical Applications in Genetics and Molecular Biology, vol. 4, no. 1, online, DOI: 10.2202/1544-6115.1175, 2005.\n[77] H. Karidenas, R. Santana, C. Bielza, and P. Larrañaga, \"Regularized continuous estimation of distribution algorithms,\" Applied Soft Computing, vol. 13, no. 5, pp. 2412-2432, 2013.\n[78] M. Henrion, \"Propagating uncertainty in Bayesian networks by probabilistic logic sampling,\" in Second Annual Conference on Uncertainty in Artificial Intelligence (UAI '96), J. F. Lemmer and L. N. Kanal, Eds., vol. 2. Elsevier, 1986, pp. 149-163.\n[79] D. Koller and N. Friedman, Probabilistic Graphical Models: Principles and Techniques, ser. Adaptive Computation and Machine Learning. The MIT Press, 2009.\n[80] S. Shakya and J. McCall, \"Optimization by estimation of distribution with DEUM framework based on Markov random fields,\" International Journal of Automation and Computing, vol. 4, pp. 262-272, 2007.\n[81] S. Huband, P. Hingston, L. Barone, and L. While, \"A review of multiobjective test problems and a scalable test problem toolkit,\" IEEE Transactions on Evolutionary Computation, vol. 10, no. 5, pp. 477-506, 2006.\n[82] R. Santana, C. Bielza, P. Larrañaga, J. A. Lozano, C. Echegoyen, A. Mendiburu, R. Armañanzas, and S. Shakya, \"Mateda-2.0: Estimation of distribution algorithms in MATLAB,\" Journal of Statistical Software, vol. 35, no. 7, pp. 1-30, 2010.\n[83] M. Schmidt, A. Niculescu-Mizil, and K. Murphy, \"Learning graphical model structure using L1-regularization paths,\" in 22nd National Conference on Artificial Intelligence (AAAI '07), vol. 2. AAAI Press, 2007, pp. 1278-1283.\n[84] K. Deb and B. Agrawal, \"Simulated binary crossover for continuous search space,\" Complex Systems, vol. 9, no. 2, pp. 115-148, 1995.\n[85] K. Deb and M. Goyal, \"A combined genetic adaptive search (GeneAS) for engineering design,\" Computer Science and Informatics, vol. 26, no. 4, pp. 30-45, 1996.\n[86] E. Zitzler, L. Thiele, M. Laumanns, C. Fonseca, and V. da Fonseca, \"Performance assessment of multiobjective optimizers: An analysis and review,\" IEEE Transactions on Evolutionary Computation, vol. 7, no. 2, pp. 117-132, 2003.\n[87] E. Zitzler, J. Knowles, and L. Thiele, \"Quality assessment of Pareto set approximations,\" in Multiobjective Optimization, ser. Lecture Notes in Computer Science, J. Branke, K. Deb, K. Miettinen, and R. Slowinski, Eds. Berlin, Heidelberg: Springer, 2008, vol. 5252, pp. 373-404.\n[88] S. Helbig and D. Pateva, \"On several concepts for c-efficiency,\" OR Spectrum, vol. 16, pp. 179-186, 1994.\n[89] J. Derrac, S. García, D. Molina, and F. Herrera, \"A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary and swarm intelligence algorithms,\" Swarm and Evolutionary Computation, vol. 1, no. 1, pp. 3-18, 2011.\n[90] Q. Zhang, A. Zhou, S. Zhao, P. N. Suganthan, W. Liu, and S. Tiwari, \"Multiobjective optimization test instances for the CEC 2009 special session and competition,\" The Shool of Computer Science and Electronic Engineering, University of Essex, UK, Tech. Rep. CES-487, 2009.\n[91] Q. Zhang, W. Liu, and H. Li, \"The performance of a new version of MOEA/D on CEC09 unconstrained MOP test instances,\" in IEEE Congress on Evolutionary Computation (CEC'09), 2009, pp. 203-208.\n[92] C. A. Coello Coello and N. C. Cortés, \"Solving multiobjective optimization problems using an artificial immune system,\" Genetic Programming and Evolvable Machines, vol. 6, pp. 163-190, 2005.\n[93] T. Ulrich, D. Brockhoff, and E. Zitzler, \"Pattern identification in Pareto-set approximations,\" in 10th Annual Conference on Genetic and Evolutionary Computation (GECCO '08). New York, NY, USA: ACM, 2008, pp. 737-744.\n[94] F. Chan and S. Chung, \"Multi-criteria genetic optimization for distribution network problems,\" The International Journal of Advanced Manufacturing Technology, vol. 24, pp. 517-532, 2004.\n[95] R. Santana, C. Bielza, J. A. Lozano, and P. Larrañaga, \"Mining probabilistic models learned by EDAs in the optimization of multiobjective problems,\" in 11th Annual Conference on Genetic and Evolutionary Computation (GECCO '09). ACM, 2009, pp. 445-452.\n[96] F. di Pierro, S.-T. Khu, and D. Savic, \"An investigation on preference order ranking scheme for multiobjective evolutionary optimization,\" IEEE Transactions on Evolutionary Computation, vol. 11, no. 1, pp. $17-45,2007$.\n[97] C. Hirsch, P. Shukla, and H. Schmeck, \"Variable preference modeling using multi-objective evolutionary algorithms,\" in Evolutionary MultiCriterion Optimization, ser. Lecture Notes in Computer Science, R. Takahashi, K. Deb, E. Wanner, and S. Greco, Eds., vol. 6576. Berlin, Heidelberg: Springer, 2011, pp. 91-105.\n\n![img-14.jpeg](img-14.jpeg)\n\nHossein Karshenas received his B.E. degree in computer engineering from Shahid Beheshti University, Tehran, Iran in 2006, and the M.E. degree in artificial intelligence and robotics from Iran University of Science and Technology (IUST), Tehran, Iran in 2009 .\n\nHe is currently a Ph.D. Student at the School of Computer Science, Technical University of Madrid, where he works on evolutionary algorithms based on probabilistic modeling for optimization. His research interests include estimation of distribution algorithms, probabilistic graphical models, evolutionary algorithms, continuous and multi-objective optimization and machine learning.\n![img-15.jpeg](img-15.jpeg)\n\nRoberto Santana received his BS degree in Computer Science and the PhD degree in Mathematics from the University of Havana, Cuba in 1996 and 2005, respectively; and the PhD degree in Computer Science from the Universidad Politcnica de Madrid, Madrid, in 1996 (extraordinary doctorate award).\n\nShe is currently a Full Professor of Statistics and Operations Research with the Departamento de Inteligencia Artificial, Universidad Politcnica de Madrid. Her research interests are primarily in the areas of probabilistic graphical models, decision analysis, metaheuristics for optimization, data mining, classification models, and real applications, like biomedicine, bioinformatics and neuroscience.\n![img-16.jpeg](img-16.jpeg)\n\nPedro Larrañaga received the MSc degree in mathematics (statistics) from the University of Valladolid and the PhD degree in computer science from the University of the Basque Country (excellence award).\n\nHe is a Full Professor in Computer Science and Artificial Intelligence at the Technical University of Madrid (UPM) since 2007. Before moving to UPM, his academic career has been developed at the University of the Basque Country (UPV-EHU) at several faculty ranks: Assistant Professor (19851998), Associate Professor (1998-2004) and Full Professor (2004-2007). He earned the habilitation qualification for Full Professor in 2003.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "I. Shalzarini, S. Mueller, and P. Koumoutsakos, \"Multiobjective optimization using evolutionary algorithms,\" in Summer Program of Studying Turbulence Using Numerical Simulation Databases-VIII, vol. 1. Center for Turbulence Research, 2000, pp. 63-74."
+      },
+      {
+        "ref_id": "2",
+        "text": "E. Zitzler, K. Deb, and L. Thiele, \"Comparison of multiobjective evolutionary algorithms: Empirical results,\" Evolutionary Computation, vol. 8, no. 2, pp. 173-195, 2000."
+      },
+      {
+        "ref_id": "3",
+        "text": "K. Deb, Multi-Objective Optimization Using Evolutionary Algorithms. New York, NY, USA: John Wiley \\& Sons, Inc., 2001."
+      },
+      {
+        "ref_id": "4",
+        "text": "A. Abraham, L. Jain, and R. Goldberg, Eds., Evolutionary Multiobjective Optimization: Theoretical Advances and Applications, ser. Advanced Information and Knowledge Processing. Berlin: Springer, 2005."
+      },
+      {
+        "ref_id": "5",
+        "text": "C. A. Coello Coello, G. B. Lamont, and D. A. Van Veldhuizen, Evolutionary Algorithms for Solving Multi-Objective Problems, 2nd ed., ser. Genetic and Evolutionary Computation Series. Springer, 2007."
+      },
+      {
+        "ref_id": "6",
+        "text": "D. E. Goldberg, The Design of Innovation: Lessons from and for Competent Genetic Algorithms. Norwell, MA, USA: Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "7",
+        "text": "P. Larrahaga and J. A. Lozano, Eds., Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Norwell, MA, USA: Kluwer Academic Publishers, 2001."
+      },
+      {
+        "ref_id": "8",
+        "text": "J. A. Lozano, P. Larrahaga, I. Inza, and E. Bengostxea, Eds., Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, ser. Studies in Fuzziness and Soft Computing. Secaucus, NJ, USA: Springer, 2006."
+      },
+      {
+        "ref_id": "9",
+        "text": "M. Pelikan, K. Sastry, and E. Cantú-Paz, Eds., Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, ser. Studies in Computational Intelligence. Secaucus, NJ, USA: Springer, 2006."
+      },
+      {
+        "ref_id": "10",
+        "text": "P. Larrahaga, H. Karahenas, C. Bielza, and R. Santana, \"A review on probabilistic graphical models in evolutionary computation,\" Journal of Heuristics, vol. 18, no. 5, pp. 795-819, 2012."
+      },
+      {
+        "ref_id": "11",
+        "text": "D. Thierens and P. A. N. Bosman, \"Multi-objective mixture-based iterated density estimation evolutionary algorithms,\" in Conference on Genetic and Evolutionary Computation (GECCO '01), L. Spector, E. D. Goodman, A. Wu, W. B. Langdon, H.-M. Voigt, M. Gen, S. Sen, M. Dorigo, S. Pezcstik, M. H. Garzon, and E. Burke, Eds. San Francisco, California, USA: Morgan Kaufmann, 2001, pp. 663-670."
+      },
+      {
+        "ref_id": "12",
+        "text": "M. Pelikan, K. Sastry, and D. Goldberg, \"Multiobjective estimation of distribution algorithms,\" in Scalable Optimization via Probabilistic Modeling, ser. Studies in Computational Intelligence, M. Pelikan, K. Sastry, and E. Cantú-Paz, Eds. Berlin: Springer, 2006, vol. 33, pp. 223-248."
+      },
+      {
+        "ref_id": "13",
+        "text": "Q. Zhang, A. Zhou, and Y. Jin, \"RM-MEDA: A regularity model based multiobjective estimation of distribution algorithm,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 1, pp. 41-63, 2008."
+      },
+      {
+        "ref_id": "14",
+        "text": "L. Marti, J. Garcia, A. Berlanga, C. A. Coello Coello, and J. M. Molina, \"On current model-building methods for multi-objective estimation of distribution algorithms: Shortcommings and directions for improvement,\" Department of Informatics, Universidad Carlos III de Madrid, Madrid, Spain, Tech. Rep. GIAA2010E001, 2010."
+      },
+      {
+        "ref_id": "15",
+        "text": "K. Deb, L. Thiele, M. Laumanns, and E. Zitzler, \"Scalable multi-objective optimization test problems,\" in IEEE Congress on Evolutionary Computation (CEC '02), vol. 1, 2002, pp. 825-830."
+      },
+      {
+        "ref_id": "16",
+        "text": "H. Ishibuchi, N. Tsukamoto, Y. Hitorsuyanagi, and Y. Nojima, \"Effectiveness of scalability improvement attempts on the performance of NSGA-II for many-objective problems,\" in 10th Annual Conference on Genetic and Evolutionary Computation (GECCO '08). New York, NY, USA: ACM, 2008, pp. 649-656."
+      },
+      {
+        "ref_id": "17",
+        "text": "T. Goel, R. Vaidyanathan, R. T. Haftka, W. Shyy, N. V. Queipo, and K. Tucker, \"Response surface approximation of Pareto optimal front in multi-objective optimization,\" Computer Methods in Applied Mechanics and Engineering, vol. 196, no. 4-6, pp. 879-893, 2007."
+      },
+      {
+        "ref_id": "18",
+        "text": "A. López Jairnes, C. A. Coello Coello, and D. Chakraborty, \"Objective reduction using a feature selection technique,\" in 16th Annual Conference on Genetic and Evolutionary Computation (GECCO '08). New York, NY, USA: ACM, 2008, pp. 673-680."
+      },
+      {
+        "ref_id": "19",
+        "text": "D. Craft and T. Bortfeld, \"How many plans are needed in an IMRT multi-objective plan database?\" Physics in Medicine and Biology, vol. 53, no. 11, pp. 2785-2796, 2008."
+      },
+      {
+        "ref_id": "20",
+        "text": "S. Verel, A. Lielooghe, L. Jourdan, and C. Dhuenens, \"Analyzing the effect of objective correlation on the efficient set of MNKlandscapes,\" in 5th International Conference on Learning and Intelligent Optimization (LION'5), ser. Lecture Notes in Computer Science, C. A. Coello Coello, Ed., vol. 6683. Berlin, Heidelberg: Springer, 2011, pp. 116-130."
+      },
+      {
+        "ref_id": "21",
+        "text": "D. Saxena, J. Duro, A. Tiwari, K. Deb, and Q. Zhang, \"Objective reduction in many-objective optimization: Linear and nonlinear algorithms,\" IEEE Transactions on Evolutionary Computation, vol. 17, no. 1, pp. 77-99, 2013."
+      },
+      {
+        "ref_id": "22",
+        "text": "D. Brockhoff and E. Zitzler, \"Objective reduction in evolutionary multiobjective optimization: Theory and applications,\" Evolutionary Computation, vol. 17, no. 2, pp. 135-166, 2009."
+      },
+      {
+        "ref_id": "23",
+        "text": "G. Guillén-Gosálbez, \"A novel MILP-based objective reduction method for multi-objective optimization: Application to environmental problems,\" Computers \\& Chemical Engineering, vol. 35, no. 8, pp. 1469-1477, 2011."
+      },
+      {
+        "ref_id": "24",
+        "text": "H. Karshenas, R. Santana, C. Bielza, and P. Larrañaga, \"Multi-objective optimization with joint probabilistic modeling of objectives and variables,\" in Evolutionary Multi-Criterion Optimization (EMO'11), ser. Lecture Notes in Computer Science, R. Takahashi, K. Deb, E. Wanner, and S. Greco, Eds., vol. 6576. Berlin, Heidelberg: Springer, 2011, pp. 298-312."
+      },
+      {
+        "ref_id": "25",
+        "text": "P. de Waal and L. van der Gaag, \"Inference and learning in multidimensional Bayesian network classifiers,\" Symbolic and Quantitative Approaches to Reasoning with Uncertainty, pp. 501-511, 2007."
+      },
+      {
+        "ref_id": "26",
+        "text": "C. Bielza, G. Li, and P. Larrañaga, \"Multi-dimensional classification with Bayesian networks,\" International Journal of Approximate Reasoning, vol. 52, no. 6, pp. 705-727, 2011."
+      },
+      {
+        "ref_id": "27",
+        "text": "T. Miquellez, E. Bengoetxea, and P. Larrañaga, \"Evolutionary computation based on Bayesian classifiers,\" International Journal of Applied Mathematics and Computer Science, vol. 14, no. 3, pp. 335-350, 2004."
+      },
+      {
+        "ref_id": "28",
+        "text": ", \"Evolutionary Bayesian classifier-based optimization in continuous domains,\" in 6th International Conference on Simulated Evolution and Learning (SEAL '06), ser. Lecture Notes in Computer Science, T.-D. Wang, X. Li, S.-H. Chen, X. Wang, H. A. Abbass, H. Ba, G. Chen, and X. Yao, Eds., vol. 4247. Springer, 2006, pp. 529-536."
+      },
+      {
+        "ref_id": "29",
+        "text": "J. Pearl, \"Bayesian networks: A model of self-activated memory for evidential reasoning,\" in 7th Conference of the Cognitive Science Society, 1985, pp. 329-334."
+      },
+      {
+        "ref_id": "30",
+        "text": "S. L. Lauritzen, \"Propagation of probabilities, means, and variances in mixed graphical association models,\" Journal of the American Statistical Association, vol. 87, no. 420, pp. 1098-1108, 1992."
+      },
+      {
+        "ref_id": "31",
+        "text": "D. Geiger and D. Heckerman, \"Learning Gaussian networks,\" in 10th Conference on Uncertainty in Artificial Intelligence (UAI'94), R. L. de Mantaras and D. Poole, Eds. San Francisco, CA: Morgan Kaufmann, 1994, pp. 235-243."
+      },
+      {
+        "ref_id": "32",
+        "text": "D. Goldberg, \"The design of innovation: Lessons from genetic algorithms, lessons for the real world,\" Technological Forecasting and Social Change, vol. 64, no. 1, pp. 7-12, 2000."
+      },
+      {
+        "ref_id": "33",
+        "text": "E. Zitzler and L. Thiele, \"Multiobjective evolutionary algorithms: A comparative case study and the strength Pareto approach,\" IEEE Transactions on Evolutionary Computation, vol. 3, no. 4, pp. 257-271, 1999."
+      },
+      {
+        "ref_id": "34",
+        "text": "J. Martín, C. Bielza, and D. R. Insua, \"Approximating nondominated sets in continuous multiobjective optimization problems,\" Naval Research Logistics, vol. 52, no. 5, pp. 469-480, 2005."
+      },
+      {
+        "ref_id": "35",
+        "text": "J. Schwarz and J. Očenášek, \"Multiobjective Bayesian optimization algorithm for combinatorial problems: Theory and practice,\" Neural Network World, vol. 11, no. 5, pp. 423-442, 2001."
+      },
+      {
+        "ref_id": "36",
+        "text": "N. Khan, D. E. Goldberg, and M. Pelikan, \"Multiple-objective Bayesian optimization algorithm,\" in Conference on Genetic and Evolutionary Computation (GECCO '02), W. B. Langdon, E. Cantié-Paz, K. E. Mathias, R. Roy, D. Davis, R. Poli, K. Balakrishnan, V. Honavar, G. Rudolph, J. Wegener, L. Bull, M. A. Porter, A. C. Schultz, J. F. Miller, E. K. Burke, and N. Jonoska, Eds. Morgan Kaufmann, 2002, p. 684."
+      },
+      {
+        "ref_id": "37",
+        "text": "P. A. Bosman and D. Thierens, \"Multi-objective optimization with diversity preserving mixture-based terrated density estimation evolutionary algorithms,\" International Journal of Approximate Reasoning, vol. 31, no. 3, pp. 259-289, 2002."
+      },
+      {
+        "ref_id": "38",
+        "text": "P. A. N. Bosman and D. Thierens, \"Adaptive variance scaling in continuous multi-objective estimation of distribution algorithms,\" in 9th Annual Conference on Genetic and Evolutionary Computation (GECCO '07), H. Lipson, Ed. New York, NY, USA: ACM, 2007, pp. 500-507."
+      },
+      {
+        "ref_id": "39",
+        "text": "M. Costa and E. Minisci, \"MOPED: A multi-objective Parzen-based estimation of distribution algorithm for continuous problems,\" in Second International Conference on Evolutionary Multi-Criterion Optimization (EMO'03), ser. Lecture Notes in Computer Science, C. Fonseca,"
+      },
+      {
+        "ref_id": "40",
+        "text": "T. Okabe, Y. Jin, B. Sendoff, and M. Olhofer, \"Voronoi-based estimation of distribution algorithm for multi-objective optimization,\" in IEEE Congress on Evolutionary Computation (CEC'04), vol. 2, 2004, pp. 1594-1601."
+      },
+      {
+        "ref_id": "41",
+        "text": "M. Pelikan, K. Sastry, and D. E. Goldberg, \"Multiobjective hBOA, clustering, and scalability,\" in Conference on Genetic and Evolutionary Computation (GECCO '05). New York, NY, USA: ACM, 2005, pp. 663-670."
+      },
+      {
+        "ref_id": "42",
+        "text": "K. Sastry, D. Goldberg, and M. Pelikan, \"Limits of scalability of multiobjective estimation of distribution algorithms,\" in IEEE Congress on Evolutionary Computation (CEC'05), vol. 3, 2005, pp. 2217-2224."
+      },
+      {
+        "ref_id": "43",
+        "text": "H. Soh and M. Kirley, \"moPGA: Towards a new generation of multi-objective genetic algorithms,\" in IEEE Congress on Evolutionary Computation (CEC'06), 2006, pp. 1702-1709."
+      },
+      {
+        "ref_id": "44",
+        "text": "C. Ahn and R. Ramakrishna, \"A diversity preserving selection in multiobjective evolutionary algorithms,\" Applied Intelligence, vol. 32, no. 3, pp. 231-248, 2010."
+      },
+      {
+        "ref_id": "45",
+        "text": "H. Tang, V. A. Shim, K. C. Tan, and J. Y. Chia, \"Restricted Boltzmann machine based algorithm for multi-objective optimization,\" in IEEE Congress on Evolutionary Computation (CEC'10), 2010, pp. 1-8."
+      },
+      {
+        "ref_id": "46",
+        "text": "L. Martí, J. García, A. Berlanga, C. A. Coello Coello, and J. M. Molina, \"MB-GNG: Addressing drawbacks in multi-objective optimization estimation of distribution algorithms,\" Operations Research Letters, vol. 39, no. 2, pp. 150-154, 2011."
+      },
+      {
+        "ref_id": "47",
+        "text": "L. Martí, J. García, A. Berlanga, and J. Molina, \"Multi-objective optimization with an adaptive resonance theory-based estimation of distribution algorithm,\" Annals of Mathematics and Artificial Intelligence, 2012."
+      },
+      {
+        "ref_id": "48",
+        "text": "M. Laumanns and J. Očenášek, \"Bayesian optimization algorithms for multi-objective optimization,\" in 7th International Conference on Parallel Problem Solving from Nature (PPSN VII), ser. Lecture Notes in Computer Science, J. J. M. Guervós, P. Adamidis, H.-G. Beyer, J. L. F.-V. Martín, and H.-P. Schwefel, Eds., vol. 2439. Springer, 2002, pp. 298-307."
+      },
+      {
+        "ref_id": "49",
+        "text": "X. Zhong and W. Li, \"A decision-tree-based multi-objective estimation of distribution algorithm,\" in International Conference on Computational Intelligence and Security (CIS'07). IEEE Computer Society, 2007, pp. $114-118$."
+      },
+      {
+        "ref_id": "50",
+        "text": "Y. Katsumata and T. Terano, \"Bayesian optimization algorithm for multiobjective solutions: Application to electric equipment configuration problems in a power plant,\" in IEEE Congress on Evolutionary Computation (CEC '03), vol. 2, 2003, pp. 1101-1107."
+      },
+      {
+        "ref_id": "51",
+        "text": "H. Li, Q. Zhang, E. Tsang, and J. A. Ford, \"Hybrid estimation of distribution algorithm for multiobjective knapsack problem,\" in Fourth European Conference on Evolutionary Computation in Combinatorial Optimization (EvoCOP'04), ser. Lecture Notes in Computer Science, J. Gottlieb and G. R. Raidl, Eds., vol. 3004. Berlin, Heidelberg: Springer, 2004, pp. 145-154."
+      },
+      {
+        "ref_id": "52",
+        "text": "Y. Gao, X. Hu, H. Liu, and Y. Feng, \"Multiobjective estimation of distribution algorithm combined with PSO for RFID network optimization,\" in International Conference on Measuring Technology and Mechatronics Automation (ICMTMA), vol. 2. IEEE Computer Society, 2010, pp. 736-739."
+      },
+      {
+        "ref_id": "53",
+        "text": "V. A. Shim, K. C. Tan, and J. Y. Chia, \"Multi-objective optimization with estimation of distribution algorithm in a noisy environment,\" Evolutionary Computation, vol. 21, no. 1, pp. 149-177, 2013."
+      },
+      {
+        "ref_id": "54",
+        "text": "V. A. Shim, K. C. Tan, and K. K. Tan, \"A hybrid adaptive evolutionary algorithm in the domination-based and decompositionbased frameworks of multi-objective optimization,\" in IEEE Congress on Evolutionary Computation (CEC'12), 2012, pp. 1-8."
+      },
+      {
+        "ref_id": "55",
+        "text": "V. A. Shim, K. C. Tan, and C. Y. Cheong, \"A hybrid estimation of distribution algorithm with decomposition for solving the multiobjective multiple traveling salesman problem,\" IEEE Transactions on Systems, Man, and Cybernetics, Part C: Applications and Reviews, vol. 42, no. 5, pp. 682-691, 2012."
+      },
+      {
+        "ref_id": "56",
+        "text": "M. Pelikan, D. E. Goldberg, and E. Cantiá-Paz, \"BOA: The Bayesian optimization algorithm,\" in Conference on Genetic and Evolutionary Computation (GECCO '99), W. Banzhaf, J. Daida, A. E. Eiben, M. H. Garzon, V. Honavar, M. Jakiela, and R. E. Smith, Eds., vol. 1. Orlando, Florida, USA: Morgan Kaufmann Publishers, 1999, pp. 525-532."
+      },
+      {
+        "ref_id": "57",
+        "text": "K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, \"A fast and elitist multiobjective genetic algorithm: NSGA-II,\" IEEE Transactions on Evolutionary Computation, vol. 6, no. 2, pp. 182-197, 2002."
+      },
+      {
+        "ref_id": "58",
+        "text": "C. W. Ahn and R. S. Ramakrishna, \"Multiobjective real-coded Bayesian optimization algorithm revisited: Diversity preservation,\" in 9th Annual Conference on Genetic and Evolutionary Computation (GECCO '07). New York, NY, USA: ACM, 2007, pp. 593-600."
+      },
+      {
+        "ref_id": "59",
+        "text": "J. Bader and E. Zitzler, \"HypE: An algorithm for fast hypervolumebased many-objective optimization,\" Evolutionary Computation, vol. 19, no. 1, pp. 45-76, 2011."
+      },
+      {
+        "ref_id": "60",
+        "text": "Q. Zhang, W. Liu, E. Tsang, and B. Virginas, \"Expensive multiobjective optimization by MOEA/D with Gaussian process model,\" IEEE Transactions on Evolutionary Computation, vol. 14, no. 3, pp. 456-474, 2010."
+      },
+      {
+        "ref_id": "61",
+        "text": "E. Hughes, \"Evolutionary many-objective optimisation: Many once or one many?\" in IEEE Congress on Evolutionary Computation (CEC '05), vol. 1, 2005, pp. 222-227."
+      },
+      {
+        "ref_id": "62",
+        "text": "H. Ishibuchi, N. Tsukamoto, and Y. Nojima, \"Evolutionary manyobjective optimization: A short review,\" in IEEE Congress on Evolutionary Computation (CEC '08) - IEEE World Congress on Computational Intelligence (WCCI '08), 2008, pp. 2419-2426."
+      },
+      {
+        "ref_id": "63",
+        "text": "H. Aguirre and K. Tanaka, \"A study on the effects of rankings sensitive to density on many-objective MNK landscapes,\" in IEEE Congress on Evolutionary Computation (CEC'10), IEEE World Congress on Computational Intelligence (WCCI 2010), 2010, pp. 1089-1096."
+      },
+      {
+        "ref_id": "64",
+        "text": "Q. Zhang and H. Li, \"MOEA/D: A multiobjective evolutionary algorithm based on decomposition,\" IEEE Transactions on Evolutionary Computation, vol. 11, no. 6, pp. 712-731, 2007."
+      },
+      {
+        "ref_id": "65",
+        "text": "M. Garza-Fabre, G. Toscano Pulido, and C. Coello Coello, \"Ranking methods for many-objective optimization,\" in MICAI 2009: Advances in Artificial Intelligence, ser. Lecture Notes in Computer Science, A. Aguirre, R. Borja, and C. García, Eds. Berlin: Springer, 2009, vol. 5845, pp. 633-645."
+      },
+      {
+        "ref_id": "66",
+        "text": "——, \"Alternative fitness assignment methods for many-objective optimization problems,\" in Artificial Evolution, ser. Lecture Notes in Computer Science, P. Collet, N. Monmarché, P. Legrand, M. Schoenauer, and E. Lutton, Eds. Berlin: Springer, 2010, vol. 5975, pp. 146-157."
+      },
+      {
+        "ref_id": "67",
+        "text": "M. Garza-Fabre, G. Toscano Pulido, and C. A. Coello Coello, \"Two novel approaches for many-objective optimization,\" in IEEE Congress on Evolutionary Computation (CEC'10) - IEEE World Congress on Computational Intelligence (WCCI 2010), 2010, pp. 4480-4487."
+      },
+      {
+        "ref_id": "68",
+        "text": "G. Cooper and E. Herskovits, \"A Bayesian method for the induction of probabilistic networks from data,\" Machine Learning, vol. 9, no. 4, pp. 309-347, 1992."
+      },
+      {
+        "ref_id": "69",
+        "text": "D. Heckerman, D. Geiger, and D. M. Chickering, \"Learning Bayesian networks: The combination of knowledge and statistical data,\" Machine Learning, vol. 20, no. 3, pp. 197-243, 1995."
+      },
+      {
+        "ref_id": "70",
+        "text": "W. Buntine, \"A guide to the literature on learning probabilistic networks from data,\" IEEE Transactions on Knowledge and Data Engineering, vol. 8, no. 2, pp. 195-210, 1996."
+      },
+      {
+        "ref_id": "71",
+        "text": "M. Pelikan, Hierarchical Bayesian Optimization Algorithm: Toward a New Generation of Evolutionary Algorithms, 1st ed., ser. Studies in Fuzziness and Soft Computing. Springer, 2005, vol. 170."
+      },
+      {
+        "ref_id": "72",
+        "text": "W. Buntine, \"Theory refinement on Bayesian networks,\" in 7th Annual Conference on Uncertainty in Artificial Intelligence (UAI '91), B. D'Ambrosio and P. Smets, Eds. San Francisco, CA, USA: Morgan Kaufmann, 1991, pp. 52-60."
+      },
+      {
+        "ref_id": "73",
+        "text": "G. Schwarz, \"Estimating the dimension of a model,\" Annals of Statistics, vol. 6, no. 2, pp. 461-464, 1978."
+      },
+      {
+        "ref_id": "74",
+        "text": "R. Tibshirani, \"Regression shrinkage and selection via the Lasso,\" Journal of the Royal Statistical Society, Series B (Methodological), vol. 58, no. 1, pp. 267-288, 1996."
+      },
+      {
+        "ref_id": "75",
+        "text": "T. Hastie, R. Tibshirani, and J. Friedman, The Elements of Statistical Learning: Data Mining, Inference, and Prediction, 2nd ed., ser. Springer Series in Statistics. New York: Springer, 2009."
+      },
+      {
+        "ref_id": "76",
+        "text": "J. Schäfer and K. Strimmer, \"A shrinkage approach to large-scale covariance matrix estimation and implications for functional genomics,\" Statistical Applications in Genetics and Molecular Biology, vol. 4, no. 1, online, DOI: 10.2202/1544-6115.1175, 2005."
+      },
+      {
+        "ref_id": "77",
+        "text": "H. Karidenas, R. Santana, C. Bielza, and P. Larrañaga, \"Regularized continuous estimation of distribution algorithms,\" Applied Soft Computing, vol. 13, no. 5, pp. 2412-2432, 2013."
+      },
+      {
+        "ref_id": "78",
+        "text": "M. Henrion, \"Propagating uncertainty in Bayesian networks by probabilistic logic sampling,\" in Second Annual Conference on Uncertainty in Artificial Intelligence (UAI '96), J. F. Lemmer and L. N. Kanal, Eds., vol. 2. Elsevier, 1986, pp. 149-163."
+      },
+      {
+        "ref_id": "79",
+        "text": "D. Koller and N. Friedman, Probabilistic Graphical Models: Principles and Techniques, ser. Adaptive Computation and Machine Learning. The MIT Press, 2009."
+      },
+      {
+        "ref_id": "80",
+        "text": "S. Shakya and J. McCall, \"Optimization by estimation of distribution with DEUM framework based on Markov random fields,\" International Journal of Automation and Computing, vol. 4, pp. 262-272, 2007."
+      },
+      {
+        "ref_id": "81",
+        "text": "S. Huband, P. Hingston, L. Barone, and L. While, \"A review of multiobjective test problems and a scalable test problem toolkit,\" IEEE Transactions on Evolutionary Computation, vol. 10, no. 5, pp. 477-506, 2006."
+      },
+      {
+        "ref_id": "82",
+        "text": "R. Santana, C. Bielza, P. Larrañaga, J. A. Lozano, C. Echegoyen, A. Mendiburu, R. Armañanzas, and S. Shakya, \"Mateda-2.0: Estimation of distribution algorithms in MATLAB,\" Journal of Statistical Software, vol. 35, no. 7, pp. 1-30, 2010."
+      },
+      {
+        "ref_id": "83",
+        "text": "M. Schmidt, A. Niculescu-Mizil, and K. Murphy, \"Learning graphical model structure using L1-regularization paths,\" in 22nd National Conference on Artificial Intelligence (AAAI '07), vol. 2. AAAI Press, 2007, pp. 1278-1283."
+      },
+      {
+        "ref_id": "84",
+        "text": "K. Deb and B. Agrawal, \"Simulated binary crossover for continuous search space,\" Complex Systems, vol. 9, no. 2, pp. 115-148, 1995."
+      },
+      {
+        "ref_id": "85",
+        "text": "K. Deb and M. Goyal, \"A combined genetic adaptive search (GeneAS) for engineering design,\" Computer Science and Informatics, vol. 26, no. 4, pp. 30-45, 1996."
+      },
+      {
+        "ref_id": "86",
+        "text": "E. Zitzler, L. Thiele, M. Laumanns, C. Fonseca, and V. da Fonseca, \"Performance assessment of multiobjective optimizers: An analysis and review,\" IEEE Transactions on Evolutionary Computation, vol. 7, no. 2, pp. 117-132, 2003."
+      },
+      {
+        "ref_id": "87",
+        "text": "E. Zitzler, J. Knowles, and L. Thiele, \"Quality assessment of Pareto set approximations,\" in Multiobjective Optimization, ser. Lecture Notes in Computer Science, J. Branke, K. Deb, K. Miettinen, and R. Slowinski, Eds. Berlin, Heidelberg: Springer, 2008, vol. 5252, pp. 373-404."
+      },
+      {
+        "ref_id": "88",
+        "text": "S. Helbig and D. Pateva, \"On several concepts for c-efficiency,\" OR Spectrum, vol. 16, pp. 179-186, 1994."
+      },
+      {
+        "ref_id": "89",
+        "text": "J. Derrac, S. García, D. Molina, and F. Herrera, \"A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary and swarm intelligence algorithms,\" Swarm and Evolutionary Computation, vol. 1, no. 1, pp. 3-18, 2011."
+      },
+      {
+        "ref_id": "90",
+        "text": "Q. Zhang, A. Zhou, S. Zhao, P. N. Suganthan, W. Liu, and S. Tiwari, \"Multiobjective optimization test instances for the CEC 2009 special session and competition,\" The Shool of Computer Science and Electronic Engineering, University of Essex, UK, Tech. Rep. CES-487, 2009."
+      },
+      {
+        "ref_id": "91",
+        "text": "Q. Zhang, W. Liu, and H. Li, \"The performance of a new version of MOEA/D on CEC09 unconstrained MOP test instances,\" in IEEE Congress on Evolutionary Computation (CEC'09), 2009, pp. 203-208."
+      },
+      {
+        "ref_id": "92",
+        "text": "C. A. Coello Coello and N. C. Cortés, \"Solving multiobjective optimization problems using an artificial immune system,\" Genetic Programming and Evolvable Machines, vol. 6, pp. 163-190, 2005."
+      },
+      {
+        "ref_id": "93",
+        "text": "T. Ulrich, D. Brockhoff, and E. Zitzler, \"Pattern identification in Pareto-set approximations,\" in 10th Annual Conference on Genetic and Evolutionary Computation (GECCO '08). New York, NY, USA: ACM, 2008, pp. 737-744."
+      },
+      {
+        "ref_id": "94",
+        "text": "F. Chan and S. Chung, \"Multi-criteria genetic optimization for distribution network problems,\" The International Journal of Advanced Manufacturing Technology, vol. 24, pp. 517-532, 2004."
+      },
+      {
+        "ref_id": "95",
+        "text": "R. Santana, C. Bielza, J. A. Lozano, and P. Larrañaga, \"Mining probabilistic models learned by EDAs in the optimization of multiobjective problems,\" in 11th Annual Conference on Genetic and Evolutionary Computation (GECCO '09). ACM, 2009, pp. 445-452."
+      },
+      {
+        "ref_id": "96",
+        "text": "F. di Pierro, S.-T. Khu, and D. Savic, \"An investigation on preference order ranking scheme for multiobjective evolutionary optimization,\" IEEE Transactions on Evolutionary Computation, vol. 11, no. 1, pp. $17-45,2007$."
+      },
+      {
+        "ref_id": "97",
+        "text": "C. Hirsch, P. Shukla, and H. Schmeck, \"Variable preference modeling using multi-objective evolutionary algorithms,\" in Evolutionary MultiCriterion Optimization, ser. Lecture Notes in Computer Science, R. Takahashi, K. Deb, E. Wanner, and S. Greco, Eds., vol. 6576. Berlin, Heidelberg: Springer, 2011, pp. 91-105."
+      }
+    ],
+    "reference_count": 97,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "SUMMARY OF THE MULTI-ORJECTIVE EDAs WITH THEIR RANKING METHODS AND PROBABILISTIC MODELS USED TO SEARCH IN THE SPACE OF CANDIDATE SOLUTION.",
+      "headers": [
+        "Name",
+        "Probabilistic Model",
+        "Mixture",
+        "Hybridized",
+        "Ranking Method",
+        "External Archive"
+      ],
+      "rows": [
+        [
+          35,
+          "Bayesian network",
+          "",
+          "",
+          "Pareto dominance, Pareto strength, Domination count",
+          "$\\cdot$"
+        ],
+        [
+          36,
+          "Bayesian network",
+          "",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          37,
+          "Univariate distribution, Tree-structured distribution",
+          "$\\cdot$",
+          "",
+          "Domination count, Spread in objective space",
+          ""
+        ],
+        [
+          "SDR-AVS-MIDEA [38]",
+          "Multivariate Gaussian distribution",
+          "$\\cdot$",
+          "",
+          "Domination count, Spread in objective space",
+          "$\\cdot$"
+        ],
+        [
+          39,
+          "Gaussian and Cauchy kernel",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          40,
+          "Geometric distribution with uniform noise",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          "$\\cdot$"
+        ],
+        [
+          41,
+          "Bayesian network",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          42,
+          "Marginal product model",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          43,
+          "Univariate marginal product model",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          "$\\cdot$"
+        ],
+        [
+          -44,
+          "Product of Gaussian Bayesian networks",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Domination count, Modified crowding distance",
+          ""
+        ],
+        [
+          -13,
+          "Linear combination of principal components with Gaussian noise",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          45,
+          "RBM network",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          -46,
+          "Univariate Gaussian distribution",
+          "$\\cdot$",
+          "",
+          "Hypervolume indicator",
+          ""
+        ],
+        [
+          47,
+          "Univariate Gaussian distribution",
+          "$\\cdot$",
+          "",
+          "Hypervolume indicator estimation",
+          ""
+        ],
+        [
+          48,
+          "Bayesian network",
+          "",
+          "",
+          "$\\epsilon$-Pareto dominance, Domination count",
+          ""
+        ],
+        [
+          -49,
+          "Gaussian Bayesian network",
+          "",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          50,
+          "Bayesian network",
+          "",
+          "$\\cdot$",
+          "Pareto dominance",
+          "$\\cdot$"
+        ],
+        [
+          51,
+          "Univariate distribution",
+          "$\\cdot$",
+          "$\\cdot$",
+          "Weighted sum",
+          ""
+        ],
+        [
+          -52,
+          "Univariate Gaussian distribution",
+          "",
+          "$\\cdot$",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          53,
+          "RBM network",
+          "$\\cdot$",
+          "$\\cdot$",
+          "Pareto dominance, Crowding distance, Probabilistic dominance",
+          ""
+        ],
+        [
+          54,
+          "RBM network",
+          "",
+          "$\\cdot$",
+          "Pareto dominance, Crowding distance Decomposition with Tchebycheff method",
+          ""
+        ],
+        [
+          55,
+          "Univariate distribution",
+          "",
+          "$\\cdot$",
+          "Decomposition with Tchebycheff method",
+          ""
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 6
+    },
+    {
+      "table_number": "III",
+      "table_title": "shows the statistical analysis of the results for the algorithms with different ranking methods on each of the MOPs with different numbers of objectives. The nonparametric Friedman test [89] is used to check for the statistical differences of the algorithm performance. When the null hypothesis that all the algorithms have an equal average rank",
+      "headers": [
+        "No. Objectives",
+        "3",
+        "5",
+        "7",
+        "10",
+        "15",
+        "20"
+      ],
+      "rows": [
+        [
+          "No. Variables",
+          16,
+          16,
+          16,
+          15,
+          16,
+          21
+        ],
+        [
+          "Population Size",
+          50,
+          100,
+          150,
+          200,
+          250,
+          300
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Characteristics of the Unconstrained MOPs used in CEC09 BENCHMARK.",
+      "headers": [
+        "Name",
+        "No. Objectives",
+        "No. Variables",
+        "$F^{*}$ Size"
+      ],
+      "rows": [
+        [
+          1,
+          2,
+          30,
+          1000
+        ],
+        [
+          2,
+          2,
+          30,
+          1000
+        ],
+        [
+          3,
+          2,
+          30,
+          1000
+        ],
+        [
+          4,
+          2,
+          30,
+          1000
+        ],
+        [
+          5,
+          2,
+          30,
+          21
+        ],
+        [
+          6,
+          2,
+          30,
+          1000
+        ],
+        [
+          7,
+          2,
+          30,
+          1000
+        ],
+        [
+          8,
+          3,
+          30,
+          10000
+        ],
+        [
+          9,
+          3,
+          30,
+          10000
+        ],
+        [
+          10,
+          3,
+          30,
+          10000
+        ],
+        [
+          2,
+          5,
+          30,
+          5000
+        ],
+        [
+          3,
+          5,
+          30,
+          5000
+        ],
+        [
+          1,
+          5,
+          30,
+          5000
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    }
+  ]
+}

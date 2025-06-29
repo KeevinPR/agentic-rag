@@ -1,0 +1,483 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2004/Hybrid estimation of distribution algorithm for global optimization.md",
+    "filename": "Hybrid estimation of distribution algorithm for global optimization.md",
+    "title": "Hybrid estimation of distribution algorithm for global optimization",
+    "year": "2004"
+  },
+  "references": {
+    "header": "# References",
+    "content": "Angeline, P.J. (1998), \"Evolutionary optimization versus particle swarm optimization: philosophy and performance differences\", in Porto, V.W., Saravanan, N., Waagen, D. and Eiben, A.E. (Eds), Proceedings of Evolutionary Programming, VII, Springer-Verlag, Berlin, Germany, pp. 601-10.\nBaluja, S. and Davies, S. (1997), \"Combing multiple optimization runs with optimal dependency trees\", CMU-CS-97-157, Carnegie Mellon University.\nBosman, P.A.N. and Thierens, D. (2000), \"Expanding from discrete to continuous EDAs: the IEDA\", Proceedings of Parallel Problem Solving from Nature, PPSN-VI, pp. 767-76.\nBosman, P.A.N. and Thierens, D. (2001), \"Exploiting gradient information in continuous iterated density estimation evolutionary algorithms\", Working Report, UU-CS-2001-53, Universiteit Utrecht.\nChellapilla, K. (1998), \"Combining mutation operators in evolutionary programming\", IEEE Transactions on Evolutionary Computation, Vol. 2, pp. 91-6.\nFang, K.T. and Wang, Y. (1994), Number-Theoretic Methods in Statistics, Chapman and Hall, London.\nFletcher, R. (1987), Practical Methods of Optimization, Wiley, New York, NY.\nLarrañaga, P. and Lozano, J.A. (2001), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Dordrecht.\nLeung, Y.W. and Wang, Y. (2001), \"An orthogonal genetic algorithm with quantization for global numerical optimization\", IEEE Transactions on Evolutionary Computation, Vol. 5, pp. 41-51.\nMerz, P. and Freisleben, B. (2000), \"Fitness landscape analysis and memetic algorithms for the quadratic assignment problem\", IEEE Transactions on Evolutionary Computation, Vol. 4, pp. 337-52.\nMontgomery, D.C. (1997), Design and Analysis of Experiments, 5th ed., Wiley, New York, NY.\nMüehlenbein, H. and Paa $\\beta$, G. (1996), \"From recombination of genes to the estimation of distribution Part 1, binary parameter\", Parallel Problem Solving from Nature, Lecture Notes in Computer Science 1141, pp. 178-87.\nNelder, J.A. and Mead, R. (1965), \"A simplex method for function minimization\", Computer Journal, Vol. 7, pp. 308-13.\nPelikan, M., Goldberg, D.E. and Cantú-Paz, E. (1999), \"BOA: the Bayesian optimization algorithm\", in Banzhaf, W., Daida, J., Eiben, A.E., Garzon, M.H., Honavar, V., Jakiela, M. and Smith, R.E. (Eds), Proceedings of the Genetic and Evolutionary Computation Conference GECCO-99, Morgan Kaufmann Publishers, San Francisco, CA, Orlando, FL, Vol. 1, pp. 525-32.\nPowell, M.J.D. (2002), \"On trust region methods for unconstrained minimization without derivatives\", Working Report, DAMTP 2002/NA02, Department of Applied Mathematics and Theoretical Physics, University of Cambridge.\nRobles, V., de Miguel, P. and Larrañaga, P. (2001), \"Solving the travelling salesman problem with estimation of distribution algorithms\", in Larrañaga, P. and Lozano, J.A. (Eds), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Dordrecht.\n\nTorn, A. and Zilinskas, A. (1989), Global Optimization, Springer-Verlag, Berlin.\nTsutsui, S., Pelikan, M. and Goldberg, D.E. (2001), \"Evolutionary algorithm using marginal histogram models in continuous domain\", IlliGAL Report 2001019, University of Illinois at Urbana-Champaign.\nYao, X. and Liu, Y. (1999), \"Evolutionary programming made faster\", IEEE Transactions on Evolutionary Computation, Vol. 3 No. 2, pp. 82-102.\nZhang, B.T. (1999), \"A Bayesian framework for evolutionary computation\", Proceedings of the 1999 Congress on Evolutionary Computation, Vol. 1, pp. 228-722.\nZhang, Q. and Leung, Y.W. (1999), \"An orthogonal genetic algorithm for multimedia multicast routing\", IEEE Transactions on Evolutionary Computation, Vol. 3, pp. 53-62.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Angeline, P.J. (1998), \"Evolutionary optimization versus particle swarm optimization: philosophy and performance differences\", in Porto, V.W., Saravanan, N., Waagen, D. and Eiben, A.E. (Eds), Proceedings of Evolutionary Programming, VII, Springer-Verlag, Berlin, Germany, pp. 601-10."
+      },
+      {
+        "ref_id": "2",
+        "text": "Baluja, S. and Davies, S. (1997), \"Combing multiple optimization runs with optimal dependency trees\", CMU-CS-97-157, Carnegie Mellon University."
+      },
+      {
+        "ref_id": "3",
+        "text": "Bosman, P.A.N. and Thierens, D. (2000), \"Expanding from discrete to continuous EDAs: the IEDA\", Proceedings of Parallel Problem Solving from Nature, PPSN-VI, pp. 767-76."
+      },
+      {
+        "ref_id": "4",
+        "text": "Bosman, P.A.N. and Thierens, D. (2001), \"Exploiting gradient information in continuous iterated density estimation evolutionary algorithms\", Working Report, UU-CS-2001-53, Universiteit Utrecht."
+      },
+      {
+        "ref_id": "5",
+        "text": "Chellapilla, K. (1998), \"Combining mutation operators in evolutionary programming\", IEEE Transactions on Evolutionary Computation, Vol. 2, pp. 91-6."
+      },
+      {
+        "ref_id": "6",
+        "text": "Fang, K.T. and Wang, Y. (1994), Number-Theoretic Methods in Statistics, Chapman and Hall, London."
+      },
+      {
+        "ref_id": "7",
+        "text": "Fletcher, R. (1987), Practical Methods of Optimization, Wiley, New York, NY."
+      },
+      {
+        "ref_id": "8",
+        "text": "Larrañaga, P. and Lozano, J.A. (2001), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Dordrecht."
+      },
+      {
+        "ref_id": "9",
+        "text": "Leung, Y.W. and Wang, Y. (2001), \"An orthogonal genetic algorithm with quantization for global numerical optimization\", IEEE Transactions on Evolutionary Computation, Vol. 5, pp. 41-51."
+      },
+      {
+        "ref_id": "10",
+        "text": "Merz, P. and Freisleben, B. (2000), \"Fitness landscape analysis and memetic algorithms for the quadratic assignment problem\", IEEE Transactions on Evolutionary Computation, Vol. 4, pp. 337-52."
+      },
+      {
+        "ref_id": "11",
+        "text": "Montgomery, D.C. (1997), Design and Analysis of Experiments, 5th ed., Wiley, New York, NY."
+      },
+      {
+        "ref_id": "12",
+        "text": "Müehlenbein, H. and Paa $\\beta$, G. (1996), \"From recombination of genes to the estimation of distribution Part 1, binary parameter\", Parallel Problem Solving from Nature, Lecture Notes in Computer Science 1141, pp. 178-87."
+      },
+      {
+        "ref_id": "13",
+        "text": "Nelder, J.A. and Mead, R. (1965), \"A simplex method for function minimization\", Computer Journal, Vol. 7, pp. 308-13."
+      },
+      {
+        "ref_id": "14",
+        "text": "Pelikan, M., Goldberg, D.E. and Cantú-Paz, E. (1999), \"BOA: the Bayesian optimization algorithm\", in Banzhaf, W., Daida, J., Eiben, A.E., Garzon, M.H., Honavar, V., Jakiela, M. and Smith, R.E. (Eds), Proceedings of the Genetic and Evolutionary Computation Conference GECCO-99, Morgan Kaufmann Publishers, San Francisco, CA, Orlando, FL, Vol. 1, pp. 525-32."
+      },
+      {
+        "ref_id": "15",
+        "text": "Powell, M.J.D. (2002), \"On trust region methods for unconstrained minimization without derivatives\", Working Report, DAMTP 2002/NA02, Department of Applied Mathematics and Theoretical Physics, University of Cambridge."
+      },
+      {
+        "ref_id": "16",
+        "text": "Robles, V., de Miguel, P. and Larrañaga, P. (2001), \"Solving the travelling salesman problem with estimation of distribution algorithms\", in Larrañaga, P. and Lozano, J.A. (Eds), Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, Dordrecht."
+      },
+      {
+        "ref_id": "17",
+        "text": "Torn, A. and Zilinskas, A. (1989), Global Optimization, Springer-Verlag, Berlin."
+      },
+      {
+        "ref_id": "18",
+        "text": "Tsutsui, S., Pelikan, M. and Goldberg, D.E. (2001), \"Evolutionary algorithm using marginal histogram models in continuous domain\", IlliGAL Report 2001019, University of Illinois at Urbana-Champaign."
+      },
+      {
+        "ref_id": "19",
+        "text": "Yao, X. and Liu, Y. (1999), \"Evolutionary programming made faster\", IEEE Transactions on Evolutionary Computation, Vol. 3 No. 2, pp. 82-102."
+      },
+      {
+        "ref_id": "20",
+        "text": "Zhang, B.T. (1999), \"A Bayesian framework for evolutionary computation\", Proceedings of the 1999 Congress on Evolutionary Computation, Vol. 1, pp. 228-722."
+      },
+      {
+        "ref_id": "21",
+        "text": "Zhang, Q. and Leung, Y.W. (1999), \"An orthogonal genetic algorithm for multimedia multicast routing\", IEEE Transactions on Evolutionary Computation, Vol. 3, pp. 53-62."
+      }
+    ],
+    "reference_count": 21,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Test function",
+        "Globally minimal function value",
+        "Feasible solution region",
+        "$n$",
+        "Hybrid estimation"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$-12569.5$",
+          "$[-500,500]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{2}$",
+          0,
+          "$[-5.12,5.12]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{3}$",
+          0,
+          "$[-32,32]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{4}$",
+          0,
+          "$[-600,600]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{5}$",
+          0,
+          "$[-50,50]^{n}$",
+          30,
+          101
+        ],
+        [
+          "$f_{6}$",
+          0,
+          "$[-50,50]^{n}$",
+          30,
+          ""
+        ],
+        [
+          "$f_{7}$",
+          "$-99.2784$",
+          "$[0, \\pi]^{n}$",
+          100,
+          "Table I."
+        ],
+        [
+          "$f_{8}$",
+          0,
+          "$[-\\pi, \\pi]^{n}$",
+          100,
+          "The basic"
+        ],
+        [
+          "$f_{9}$",
+          "$-78.33236$",
+          "$[-5,5]^{n}$",
+          100,
+          "characteristics of the test functions"
+        ],
+        [
+          "$f_{10}$",
+          0,
+          "$[-5,10]^{n}$",
+          100,
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Algorithm",
+        "Mean no. of function evaluations",
+        "Mean of the smallest function values found"
+      ],
+      "rows": [
+        [
+          "EDA/L",
+          75014,
+          0
+        ],
+        [
+          "Algorithm A",
+          77870,
+          0.198992
+        ],
+        [
+          "Alogrithm B",
+          72718,
+          2.026529
+        ],
+        [
+          "Algorithm C with one point crossover",
+          81706,
+          0.021804
+        ],
+        [
+          "Algorithm C with uniform crossover",
+          88141,
+          0.0014333
+        ],
+        [
+          "Algorithm C with intermediate crossover",
+          77477,
+          2.586894
+        ],
+        [
+          "Algorithm",
+          "Mean no. of function evaluations",
+          "Mean of the smallest function values found"
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:"
+        ],
+        [
+          "EDA/L",
+          169887,
+          "$-94.3757$"
+        ],
+        [
+          "Algorithm A",
+          183891,
+          "$-87.1928$"
+        ],
+        [
+          "Alogrithm B",
+          179810,
+          "$-80.2910$"
+        ],
+        [
+          "Algorithm C with one point crossover",
+          189103,
+          "$-83.4810$"
+        ],
+        [
+          "Algorithm C with uniform crossover",
+          198381,
+          "$-90.3381$"
+        ],
+        [
+          "Algorithm C with intermediate crossover",
+          183491,
+          "$-90.2874$"
+        ],
+        [
+          "Algorithm",
+          "Mean no. of function evaluations",
+          "Mean of the smallest function values found"
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:"
+        ],
+        [
+          "EDA/L",
+          1281401,
+          "$4.324 \\times 10^{-3}$"
+        ],
+        [
+          "Algorithm A",
+          1294983,
+          "$5.981 \\times 10^{-2}$"
+        ],
+        [
+          "Alogrithm B",
+          1592820,
+          "$1.395 \\times 10^{-1}$"
+        ],
+        [
+          "Algorithm C with one point crossover",
+          1509894,
+          12.987412
+        ],
+        [
+          "Algorithm C with uniform crossover",
+          1300304,
+          1.292349
+        ],
+        [
+          "Algorithm C with intermediate crossover",
+          1582901,
+          2.183849
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 3
+    },
+    {
+      "table_number": "IV",
+      "table_title": "The effectiveness of the main components of the algorithm on $f_{10}$",
+      "headers": [
+        "$\\begin{aligned} & \\text { EC } \\\\ & 21,1 \\end{aligned}$",
+        "Test function",
+        "Mean number of function evaluations",
+        "Mean of the smallest function values found",
+        "Globally minimal function value"
+      ],
+      "rows": [
+        [
+          "",
+          "$f_{1}$",
+          52216,
+          "$-12569.48$",
+          "$-12569.5$"
+        ],
+        [
+          "",
+          "$f_{2}$",
+          75014,
+          0,
+          0
+        ],
+        [
+          "",
+          "$f_{3}$",
+          106061,
+          "$4.141 \\times 10^{-15}$",
+          0
+        ],
+        [
+          104,
+          "$f_{4}$",
+          79096,
+          0,
+          0
+        ],
+        [
+          "",
+          "$f_{5}$",
+          89925,
+          "$3.654 \\times 10^{-21}$",
+          0
+        ],
+        [
+          "",
+          "$f_{6}$",
+          114570,
+          "$3.485 \\times 10^{-21}$",
+          0
+        ],
+        [
+          "",
+          "$f_{7}$",
+          169887,
+          "$-94.3757$",
+          "$-99.2784$"
+        ],
+        [
+          "Table V.",
+          "$f_{8}$",
+          124417,
+          "$3.294 \\times 10^{-8}$",
+          0
+        ],
+        [
+          "The performance of EDA/L",
+          "$f_{9}$",
+          153116,
+          "$-78.31077$",
+          "$-78.33236$"
+        ],
+        [
+          "",
+          "$f_{10}$",
+          128140,
+          "$4.324 \\times 10^{-3}$",
+          0
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "VI",
+      "table_title": "compares the quality of the solutions found by EDA/L with the above four algorithms, while Table VII compares the computational costs.",
+      "headers": [
+        "Test functions",
+        "EDA/L",
+        "OGA/Q",
+        "FSA",
+        "PSO",
+        "EP/GM"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$-12569.4811$",
+          "$-12569.4537$",
+          "$-12554.5$",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "$f_{2}$",
+          0,
+          0,
+          "$4.6 \\times 10^{-2}$",
+          46.4689,
+          120.0
+        ],
+        [
+          "$f_{3}$",
+          "$4.141 \\times 10^{-15}$",
+          "$4.440 \\times 10^{-16}$",
+          "$1.8 \\times 10^{-2}$",
+          "N/A",
+          9.1
+        ],
+        [
+          "$f_{4}$",
+          0,
+          0,
+          "$1.6 \\times 10^{-2}$",
+          0.4498,
+          "$2.52 \\times 10^{-7}$"
+        ],
+        [
+          "$f_{5}$",
+          "$3.654 \\times 10^{-21}$",
+          "$6.019 \\times 10^{-6}$",
+          "$9.2 \\times 10^{-6}$",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "$f_{6}$",
+          "$3.485 \\times 10^{-21}$",
+          "$1.869 \\times 10^{-4}$",
+          "$1.6 \\times 10^{-4}$",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "$f_{7}$",
+          "$-94.3757$",
+          "$-92.83$",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "Comparison of the mean of the smallest function value found",
+          "$3.294 \\times 10^{-8}$",
+          "$4.672 \\times 10^{-7}$",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "",
+          "$-78.31077$",
+          "$-78.3000$",
+          "N/A",
+          "N/A",
+          "N/A"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    }
+  ]
+}

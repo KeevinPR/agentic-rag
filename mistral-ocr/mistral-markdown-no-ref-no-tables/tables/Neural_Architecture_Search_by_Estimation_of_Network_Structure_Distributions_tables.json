@@ -1,0 +1,353 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Neural Architecture Search by Estimation of Network Structure Distributions.md",
+    "filename": "Neural Architecture Search by Estimation of Network Structure Distributions.md",
+    "title": "Neural Architecture Search by Estimation of Network Structure Distributions",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparison of the error rates (full training mode) on USPS dataset.",
+      "headers": [
+        "Model",
+        "Test error (\\%)",
+        "Parameter count",
+        "Model depth",
+        "Search time (GPU hours)"
+      ],
+      "rows": [
+        [
+          -62,
+          2.34,
+          169,
+          54,
+          "N/A"
+        ],
+        [
+          -62,
+          2.19,
+          169,
+          54,
+          "N/A"
+        ],
+        [
+          16,
+          2.49,
+          77,
+          9,
+          64.0
+        ],
+        [
+          32,
+          2.25,
+          305,
+          9,
+          64.0
+        ],
+        [
+          8,
+          2.64,
+          12,
+          10,
+          6.4
+        ],
+        [
+          16,
+          2.25,
+          46,
+          10,
+          6.4
+        ],
+        [
+          32,
+          2.25,
+          182,
+          10,
+          6.4
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison of best discovered architectures by their test accuracy (full training mode) on CIFAR-100 dataset.",
+      "headers": [
+        "Model <br> Source",
+        "Layer <br> Count",
+        "32 channels",
+        "",
+        "64 channels",
+        "",
+        "128 channels",
+        "",
+        "256 channels",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Acc.",
+          "Par.",
+          "Acc.",
+          "Par.",
+          "Acc.",
+          "Par.",
+          "Acc.",
+          "Par."
+        ],
+        [
+          "Initialization",
+          5,
+          0.4898,
+          131,
+          0.5835,
+          513,
+          0.6419,
+          2.0,
+          0.6846,
+          8.1
+        ],
+        [
+          "Random uniform",
+          15,
+          0.5794,
+          223,
+          0.6621,
+          879,
+          0.72,
+          3.5,
+          0.7499,
+          13.9
+        ],
+        [
+          "ASED",
+          10,
+          0.5659,
+          224,
+          0.6582,
+          886,
+          0.7102,
+          3.5,
+          0.7483,
+          14.1
+        ],
+        [
+          "ASED + Prob Cap",
+          8,
+          0.5483,
+          190,
+          0.633,
+          751,
+          0.6963,
+          3.0,
+          0.7442,
+          11.9
+        ],
+        [
+          "ASED + Full Inversion",
+          12,
+          0.5827,
+          268,
+          0.6728,
+          1.1,
+          0.7297,
+          4.2,
+          0.7729,
+          16.9
+        ],
+        [
+          "ASED + Partial Inversion",
+          11,
+          0.5748,
+          236,
+          0.6641,
+          932,
+          0.7249,
+          3.7,
+          0.7652,
+          14.8
+        ],
+        [
+          -2,
+          16,
+          0.6396,
+          419,
+          0.6872,
+          1.7,
+          0.7282,
+          6.6,
+          0.7485,
+          26.5
+        ],
+        [
+          -3,
+          13,
+          0.6194,
+          367,
+          0.6689,
+          1.5,
+          0.7068,
+          5.8,
+          0.7315,
+          23.2
+        ],
+        [
+          -2,
+          15,
+          0.6461,
+          392,
+          0.6984,
+          1.6,
+          0.7398,
+          6.2,
+          0.761,
+          24.8
+        ],
+        [
+          -3,
+          11,
+          0.6092,
+          251,
+          0.6678,
+          1.0,
+          0.7084,
+          3.9,
+          0.7348,
+          15.8
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 10
+    },
+    {
+      "table_number": "3",
+      "table_title": "Test performance comparison of established and automatically discovered architectures on CIFAR-100 dataset.",
+      "headers": [
+        "Method",
+        "Accuracy (\\%)",
+        "Parameter count",
+        "Model depth",
+        "Search cost (GPU days)"
+      ],
+      "rows": [
+        [
+          63,
+          76.7,
+          38.6,
+          21,
+          "N/A"
+        ],
+        [
+          -64,
+          84.2,
+          26.2,
+          26,
+          "N/A"
+        ],
+        [
+          "Wide ResNet 28-10 [65]",
+          80.4,
+          36.5,
+          28,
+          "N/A"
+        ],
+        [
+          -3,
+          82.8,
+          25.6,
+          190,
+          "N/A"
+        ],
+        [
+          20,
+          70.9,
+          "-",
+          17,
+          17
+        ],
+        [
+          66,
+          72.9,
+          11.2,
+          9,
+          100
+        ],
+        [
+          21,
+          77.0,
+          40.4,
+          "$\\geq 13$",
+          "$\\geq 2600$"
+        ],
+        [
+          48,
+          79.4,
+          16,
+          211,
+          1.5
+        ],
+        [
+          49,
+          76.6,
+          22.3,
+          30,
+          1
+        ],
+        [
+          "NSGA-NET-128 [67]",
+          79.3,
+          3.3,
+          21,
+          8
+        ],
+        [
+          "NSGA-NET-256 [67]",
+          80.2,
+          11.6,
+          21,
+          8
+        ],
+        [
+          28,
+          80.5,
+          3.2,
+          15,
+          225
+        ],
+        [
+          27,
+          80.6,
+          4.6,
+          25,
+          0.45
+        ],
+        [
+          30,
+          82.5,
+          3.3,
+          "-",
+          4
+        ],
+        [
+          68,
+          84.3,
+          10.8,
+          30,
+          200
+        ],
+        [
+          "ASED (best)",
+          77.3,
+          16.9,
+          12,
+          20
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    }
+  ]
+}

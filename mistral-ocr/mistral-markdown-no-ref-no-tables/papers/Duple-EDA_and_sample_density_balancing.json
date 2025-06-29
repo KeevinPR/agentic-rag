@@ -1,0 +1,415 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/Duple-EDA and sample density balancing.md",
+    "filename": "Duple-EDA and sample density balancing.md",
+    "title": "Duple-EDA and sample density balancing",
+    "year": "2009"
+  },
+  "references": null,
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 A generalized framework of EDA",
+      "headers": [
+        "Step 1 (Initialization)",
+        "Set $t=0$, randomly generate initial population $\\boldsymbol{P}(0)$."
+      ],
+      "rows": [
+        [
+          2,
+          "Select a set of parent individuals from $\\boldsymbol{P}(t)$ based on the fitness value."
+        ],
+        [
+          3,
+          "Construct a statistical model based on the selected set."
+        ],
+        [
+          4,
+          "Generate a set of offspring $\\boldsymbol{O}(t)$ according to the statistical distribution given by the constructed model."
+        ],
+        [
+          5,
+          "Create a new population $\\boldsymbol{P}(t+1)$ by replacing some individuals from $\\boldsymbol{P}(t)$ with $\\boldsymbol{O}(t)$, set $t=t+1$."
+        ],
+        [
+          6,
+          2.0
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The framework of Dulpe-EDA",
+      "headers": [
+        "Step 1 (Initialization)",
+        "Set $t=0$, randomly generate initial population $\\boldsymbol{P}(0)$. Create the historical distribution model $\\boldsymbol{M}_{h}(0)$ from $\\boldsymbol{P}(0)$."
+      ],
+      "rows": [
+        [
+          "Step 2 (Hybrid-Selection)",
+          "If $t \\bmod T_{\\mathrm{SDB}}==0$, acquire the sample density of each point in $\\boldsymbol{P}(t)$, select a set of parent individuals $\\boldsymbol{S}(t)$ from $\\boldsymbol{P}(t)$ with the SDB selection strategy. Otherwise select a set of parent individuals $\\boldsymbol{S}(t)$ from $\\boldsymbol{P}(t)$ based on the fitness."
+        ],
+        [
+          3,
+          "Construct the present distribution model $\\boldsymbol{M}_{p}(t)$ based on the selected set $\\boldsymbol{S}(t)$."
+        ],
+        [
+          4,
+          "Generate a set of offspring $\\boldsymbol{O}(t)$ according to the statistical distribution given by the constructed model $\\boldsymbol{M}_{p}(t)$. Update $\\boldsymbol{M}_{h}(t)$ from $\\boldsymbol{O}(t)$."
+        ],
+        [
+          5,
+          "Create a new population $\\boldsymbol{P}(t+1)$ by replacing some individuals from $\\boldsymbol{P}(t)$ with $\\boldsymbol{O}(t)$, set $t=t+1$."
+        ],
+        [
+          6,
+          2.0
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Time consumption for MBOA and Duple-MBOA (in second)",
+      "headers": [
+        "2-peak function",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Prob. size",
+          "",
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        [
+          "Duple-MBOA",
+          "time",
+          1.0,
+          9.1,
+          30.8,
+          77.9,
+          160.5,
+          279.6,
+          369.5,
+          569.2
+        ],
+        [
+          "",
+          "evals.",
+          8700,
+          18725,
+          29080,
+          39440,
+          51920,
+          59560,
+          80800,
+          93950
+        ],
+        [
+          "MBOA",
+          "time",
+          1.0,
+          25.4,
+          247.0,
+          1658.3,
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "",
+          "evals.",
+          8786,
+          52560,
+          218400,
+          756100,
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "2-deceptive function",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Prob. size",
+          "",
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        [
+          "Duple-MBOA",
+          "time",
+          2.8,
+          30.2,
+          133.0,
+          498.7,
+          1002.3,
+          2201.9,
+          3354.8,
+          5550.6
+        ],
+        [
+          "",
+          "evals.",
+          20186,
+          54495,
+          92085,
+          155600,
+          193280,
+          244080,
+          298266,
+          361950
+        ],
+        [
+          "MBOA",
+          "time",
+          2.2,
+          36.0,
+          248.2,
+          1028.6,
+          2984.9,
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "",
+          "evals.",
+          18135,
+          66020,
+          158960,
+          305493,
+          521933,
+          "N/A",
+          "N/A",
+          "N/A"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 10
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Performance of MBOA and Duple-MBOA on normal benchmark problems (error after 5e5 evals)",
+      "headers": [
+        "SumCan function",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Prob. Size",
+          "",
+          10,
+          12,
+          14,
+          16,
+          18,
+          20
+        ],
+        [
+          "MBOA",
+          "aver.",
+          "$2.48 \\mathrm{e}-10$",
+          "$3.30 \\mathrm{e}+3$",
+          "$4.55 \\mathrm{e}+3$",
+          "$5.25 \\mathrm{e}+3$",
+          "$1.27 \\mathrm{e}+4$",
+          "$2.19 \\mathrm{e}+4$"
+        ],
+        [
+          "",
+          "best",
+          "$1.46 \\mathrm{e}-11$",
+          "$1.46 \\mathrm{e}-11$",
+          "$4.37 \\mathrm{e}-11$",
+          "$8.92 \\mathrm{e}-7$",
+          "$1.34 \\mathrm{e}-3$",
+          0.99
+        ],
+        [
+          "Duple-MBOA",
+          "aver.",
+          "$1.42 \\mathrm{e}-9$",
+          "$9.31 \\mathrm{e}-9$",
+          "$8.47 \\mathrm{e}-9$",
+          0.0131,
+          0.7,
+          164
+        ],
+        [
+          "",
+          "best",
+          "$1.46 \\mathrm{e}-11$",
+          "$1.46 \\mathrm{e}-11$",
+          "$1.46 \\mathrm{e}-11$",
+          "$1.96 \\mathrm{e}-7$",
+          0.0156,
+          24.1
+        ],
+        [
+          "Schwefel function",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Prob. Size",
+          "",
+          150,
+          180,
+          210,
+          240,
+          270,
+          300
+        ],
+        [
+          "MBOA",
+          "aver.",
+          "$5.31 \\mathrm{e}-16$",
+          "$1.75 \\mathrm{e}-8$",
+          0.25,
+          23.4,
+          393,
+          1440
+        ],
+        [
+          "",
+          "best",
+          "$4.86 \\mathrm{e}-18$",
+          "$5.76 \\mathrm{e}-10$",
+          "$6.45 \\mathrm{e}-5$",
+          0.0722,
+          11.5,
+          401
+        ],
+        [
+          "Duple-MBOA",
+          "aver.",
+          "$6.07 \\mathrm{e}-14$",
+          "$1.21 \\mathrm{e}-10$",
+          "$2.81 \\mathrm{e}-7$",
+          "$2.67 \\mathrm{e}-5$",
+          "$1.41 \\mathrm{e}-3$",
+          0.0202
+        ],
+        [
+          "",
+          "best",
+          "$6.63 \\mathrm{e}-20$",
+          "$9.03 \\mathrm{e}-15$",
+          "$2.72 \\mathrm{e}-11$",
+          "$2.76 \\mathrm{e}-7$",
+          "$1.88 \\mathrm{e}-5$",
+          "$2.19 \\mathrm{e}-3$"
+        ],
+        [
+          "Griewangk function",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Prob. Size",
+          "",
+          5,
+          10,
+          15,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "MBOA",
+          "aver.",
+          "$7.63 \\mathrm{e}-3$",
+          "$5.09 \\mathrm{e}-3$",
+          "$3.61 \\mathrm{e}-3$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "",
+          "best",
+          "$<1 \\mathrm{e}-40$",
+          "$<1 \\mathrm{e}-40$",
+          "$<1 \\mathrm{e}-40$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Duple-MBOA",
+          "aver.",
+          "$<1 \\mathrm{e}-40$",
+          "$<1 \\mathrm{e}-40$",
+          "$<1 \\mathrm{e}-40$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "",
+          "best",
+          "$<1 \\mathrm{e}-40$",
+          "$<1 \\mathrm{e}-40$",
+          "$<1 \\mathrm{e}-40$",
+          "-",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 8
+    }
+  ]
+}

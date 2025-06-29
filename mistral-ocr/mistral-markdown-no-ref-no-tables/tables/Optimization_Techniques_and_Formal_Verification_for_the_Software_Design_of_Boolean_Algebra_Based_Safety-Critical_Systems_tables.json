@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Optimization Techniques and Formal Verification for the Software Design of Boolean Algebra Based Safety-Critical Systems.md",
+    "filename": "Optimization Techniques and Formal Verification for the Software Design of Boolean Algebra Based Safety-Critical Systems.md",
+    "title": "Optimization Techniques and Formal Verification for the Software Design of Boolean Algebra Based Safety-Critical Systems",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "SAFETY RULES [41]",
+      "headers": [
+        "Number",
+        "Rule"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\left(u_{1}\\right) \\rightarrow\\left(\\neg l_{2}\\right)$"
+        ],
+        [
+          2,
+          "$\\left(u_{6}\\right) \\rightarrow\\left(\\neg l_{6}\\right)$"
+        ],
+        [
+          3,
+          "$\\left(s_{1}\\right) \\rightarrow\\left(\\neg u_{2}\\right)$"
+        ],
+        [
+          4,
+          "$\\left(s_{2}\\right) \\rightarrow\\left(\\neg l_{2}\\right)$"
+        ],
+        [
+          5,
+          "$\\left(s_{3}\\right) \\rightarrow\\left(\\neg u_{3}\\right)$"
+        ],
+        [
+          6,
+          "$\\left(s_{3}\\right) \\rightarrow\\left(\\neg u_{4}\\right)$"
+        ],
+        [
+          7,
+          "$\\left(s_{4}\\right) \\rightarrow\\left(\\neg u_{5}\\right)$"
+        ],
+        [
+          8,
+          "$\\left(s_{5}\\right) \\rightarrow\\left(\\neg l_{5}\\right)$"
+        ],
+        [
+          9,
+          "$\\left(\\neg u_{3} \\wedge \\neg l_{3}\\right) \\vee\\left(\\neg u_{5} \\wedge \\neg l_{5}\\right) \\rightarrow \\neg u_{1}$"
+        ],
+        [
+          10,
+          "$\\left(\\neg u_{3} \\wedge \\neg l_{3}\\right) \\vee\\left(\\neg u_{5} \\wedge \\neg l_{5}\\right) \\rightarrow \\neg l_{1}$"
+        ],
+        [
+          11,
+          "$\\left(\\neg u_{2} \\wedge \\neg l_{2}\\right) \\vee\\left(\\neg u_{4} \\wedge \\neg l_{4}\\right) \\rightarrow \\neg u_{6}$"
+        ],
+        [
+          12,
+          "$\\left(\\neg u_{2} \\wedge \\neg l_{2}\\right) \\vee\\left(\\neg u_{4} \\wedge \\neg l_{4}\\right) \\rightarrow \\neg l_{6}$"
+        ],
+        [
+          13,
+          "$\\left(\\neg u_{2} \\wedge \\neg l_{2}\\right) \\rightarrow\\left(\\neg u_{7}\\right)$"
+        ],
+        [
+          14,
+          "$\\left(\\neg u_{5} \\wedge \\neg l_{5}\\right) \\rightarrow\\left(\\neg u_{8}\\right)$"
+        ],
+        [
+          15,
+          "$\\left(u_{3}\\right) \\rightarrow\\left(\\neg u_{4}\\right)$"
+        ],
+        [
+          16,
+          "$\\left(l_{3}\\right) \\rightarrow\\left(\\neg l_{4}\\right)$"
+        ],
+        [
+          17,
+          "$\\left(u_{2}\\right) \\rightarrow\\left(\\neg l_{2}\\right)$"
+        ],
+        [
+          18,
+          "$\\left(u_{3}\\right) \\rightarrow\\left(\\neg l_{3}\\right)$"
+        ],
+        [
+          19,
+          "$\\left(u_{4}\\right) \\rightarrow\\left(\\neg l_{4}\\right)$"
+        ],
+        [
+          20,
+          "$\\left(u_{5}\\right) \\rightarrow\\left(\\neg l_{5}\\right)$"
+        ],
+        [
+          21,
+          "$\\left(u_{1} \\vee l_{1}\\right) \\rightarrow\\left(\\neg u_{7}\\right)$"
+        ],
+        [
+          22,
+          "$\\left(u_{6} \\vee l_{6}\\right) \\rightarrow\\left(\\neg u_{8}\\right)$"
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "AE",
+        "",
+        "",
+        "PE"
+      ],
+      "rows": [
+        [
+          "EDA",
+          "best",
+          "average (std)",
+          "best",
+          "average (std)"
+        ],
+        [
+          "ILS",
+          0.395062,
+          "$0.371975(0.01)$",
+          2946,
+          "$2921.15(17.04)$"
+        ],
+        [
+          "ILS",
+          0.320988,
+          "$0.298642(0.01)$",
+          2909,
+          "$2896.13(13.13)$"
+        ],
+        [
+          "H-EDA",
+          0.419753,
+          "$0.392716(0.01)$",
+          2954,
+          "$2954.00(0.0)$"
+        ],
+        [
+          "ACO",
+          0.320988,
+          "$0.272963(0.02)$",
+          2950,
+          "$2946.36(5.78)$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "III",
+      "table_title": "PART OF THE LEARNED TRUTH TABLE DERIVED FROM THE BEST SOLUTION PRODUCED BY H-EDA WITHIN 100 RUNS",
+      "headers": [
+        "$X=$",
+        "$Y=$"
+      ],
+      "rows": [
+        [
+          "$\\left\\{a_{1} \\ldots a_{k}, d_{1} \\ldots d_{k}\\right\\}$",
+          "$\\left\\{u_{1} \\ldots u_{k}, l_{1} \\ldots l_{k}\\right\\}$"
+        ],
+        [
+          0,
+          10000010000
+        ],
+        [
+          100000,
+          1101001100100
+        ],
+        [
+          1000000,
+          10001111010
+        ],
+        [
+          1100000,
+          100010010101
+        ],
+        [
+          10000000,
+          1000011000110
+        ],
+        [
+          1111000000,
+          1101010
+        ],
+        [
+          1111100000,
+          100
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    }
+  ]
+}

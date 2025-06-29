@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Towards Explainable Metaheuristics- PCA for Trajectory Mining in Evolutionary Algorithms.md",
+    "filename": "Towards Explainable Metaheuristics- PCA for Trajectory Mining in Evolutionary Algorithms.md",
+    "title": "Towards Explainable Metaheuristics- PCA for Trajectory Mining in Evolutionary Algorithms",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "GA run specifications",
+      "headers": [
+        "P",
+        "n",
+        "runs",
+        "maxGen",
+        "mutRate",
+        "Selection",
+        "Crossover"
+      ],
+      "rows": [
+        [
+          100,
+          40,
+          100,
+          100,
+          0.005,
+          "Tournament",
+          "Random 1-Point"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "PBIL run specifications",
+      "headers": [
+        "P",
+        "n",
+        "runs",
+        "maxGen",
+        "mutRate",
+        "mutShift",
+        "learnRate",
+        "nlearnRate"
+      ],
+      "rows": [
+        [
+          100,
+          40,
+          100,
+          100,
+          0.005,
+          0.05,
+          0.1,
+          0.075
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 8
+    },
+    {
+      "table_number": "3",
+      "table_title": "PCA variance explained by three components",
+      "headers": [
+        "Algorithm",
+        "Problem",
+        "PCA1 Exp \\%",
+        "PCA2 Exp \\%",
+        "PCA3 Exp \\%",
+        "Total \\%"
+      ],
+      "rows": [
+        [
+          "PBIL",
+          1,
+          25.6,
+          5.2,
+          3.6,
+          34.4
+        ],
+        [
+          "GA",
+          1,
+          32.5,
+          10.8,
+          7.6,
+          50.9
+        ],
+        [
+          "PBIL",
+          "Royal road",
+          25.1,
+          5.9,
+          3.8,
+          34.8
+        ],
+        [
+          "GA",
+          "Royal road",
+          28.8,
+          10.0,
+          7.4,
+          46.2
+        ],
+        [
+          "PBIL",
+          5,
+          27.0,
+          4.6,
+          3.3,
+          34.9
+        ],
+        [
+          "GA",
+          5,
+          37.9,
+          11.0,
+          7.6,
+          56.6
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 displays the Spearman Correlation Coefficients of Local and Global information gain to the Inter-Cluster and Angle from Origin features extracted. Global Information shows a strong positive correlation to the Angle from Origin feature with a range of 0.76 to 0.99 across all problems and algorithms. The PBIL coefficients were 0.99 for the 1D Checkerboard, 0.96 for the Royal Road and 0.88 for the Trap5. The GA coefficients were 0.98 for the 1d Checkerboard, 0.88 for the Royal Road and 0.76 for the Trap5 problem.",
+      "headers": [
+        "Algorithm",
+        "Problem",
+        "Local to Inter-Cluster",
+        "Global to Origin"
+      ],
+      "rows": [
+        [
+          "PBIL",
+          1,
+          -0.69,
+          0.99
+        ],
+        [
+          "GA",
+          1,
+          0.83,
+          0.98
+        ],
+        [
+          "PBIL",
+          "Royal road",
+          0.36,
+          0.96
+        ],
+        [
+          "GA",
+          "Royal road",
+          0.94,
+          0.88
+        ],
+        [
+          "PBIL",
+          5,
+          0.39,
+          0.88
+        ],
+        [
+          "GA",
+          5,
+          0.79,
+          0.76
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    }
+  ]
+}

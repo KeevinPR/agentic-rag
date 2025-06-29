@@ -1,0 +1,532 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2015/Continuous probabilistic model building genetic network programming using reinforcement learning.md",
+    "filename": "Continuous probabilistic model building genetic network programming using reinforcement learning.md",
+    "title": "Continuous probabilistic model building genetic network programming using reinforcement learning",
+    "year": "2015"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "1: $g=1$",
+        ""
+      ],
+      "rows": [
+        [
+          2,
+          ""
+        ],
+        [
+          3,
+          "execute individual $g$, obtain the sequence of state-action pairs of Sarsa"
+        ],
+        [
+          4,
+          0.2
+        ],
+        [
+          5,
+          "$g \\leftarrow g+1$"
+        ],
+        [
+          6,
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Node functions used for Khepera robot.",
+      "headers": [
+        "Node",
+        "NF",
+        "Function",
+        "Domain"
+      ],
+      "rows": [
+        [
+          "$J_{1}, J_{2}, \\ldots, J_{8}$",
+          "$1,2, \\ldots, 8$",
+          "Judge the value <br> of the sensor of <br> $1,2, \\ldots, 8$",
+          "$[0,1023]$"
+        ],
+        [
+          "$P_{1}, P_{2}$",
+          12,
+          "Determine the <br> speed of the <br> right/left wheel",
+          "$[-10,10]$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Simulation conditions.",
+      "headers": [
+        "",
+        "GP",
+        "GNP",
+        "RPMBGNP",
+        "PBILc",
+        "PMBGNP-AC"
+      ],
+      "rows": [
+        [
+          "Population size $M$",
+          300,
+          300,
+          2000,
+          2000,
+          2000
+        ],
+        [
+          "- Elite ind.",
+          1,
+          1,
+          100,
+          100,
+          100
+        ],
+        [
+          "- Crossover ind.",
+          120,
+          120,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "- Mutation ind.",
+          179,
+          179,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "- Promising ind. $N$",
+          "-",
+          "-",
+          1000,
+          1000,
+          1000
+        ],
+        [
+          "Program size $\\left[N_{\\text {node }}\\right]$",
+          127,
+          60,
+          60,
+          60,
+          60
+        ],
+        [
+          "Crossover rate",
+          0.9,
+          0.1,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mutation rate",
+          0.02,
+          0.02,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Other parameters",
+          "$(-\\text { Sarsa-Learning }) \\alpha_{r}=0.1, \\gamma_{r}=0.9$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$(-\\text { Actor critic }) \\alpha_{i e}=0.1, \\gamma_{i e}=0.9$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$\\alpha_{\\mu}=0.05, \\alpha_{\\sigma}=0.05$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$(-\\epsilon \\text {-greedy policy }) \\epsilon=0.1$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Terminal condition",
+          300000,
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "The fitness values over 30 independent runs.",
+      "headers": [
+        "",
+        "Fitness value $\\pm$ Standard deviation",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$S T$",
+          100,
+          200,
+          300,
+          400,
+          500
+        ],
+        [
+          "GP",
+          "$0.86 \\pm 0.05$",
+          "$0.79 \\pm 0.15$",
+          "$0.77 \\pm 0.15$",
+          "$0.64 \\pm 0.08$",
+          "$0.57 \\pm 0.10$"
+        ],
+        [
+          "GNP",
+          "$0.88 \\pm 0.02$",
+          "$0.83 \\pm 0.11$",
+          "$0.82 \\pm 0.09$",
+          "$0.76 \\pm 0.08$",
+          "$0.66 \\pm 0.15$"
+        ],
+        [
+          "RPMIGN P",
+          "$0.89 \\pm 0.01$",
+          "$0.88 \\pm 0.06$",
+          "$0.88 \\pm 0.03$",
+          "$0.84 \\pm 0.10$",
+          "$0.76 \\pm 0.09$"
+        ],
+        [
+          "PBILc",
+          "$\\mathbf{0 . 9 0} \\pm \\mathbf{0 . 0 1}$",
+          "$0.87 \\pm 0.09$",
+          "$0.83 \\pm 0.09$",
+          "$0.80 \\pm 0.15$",
+          "$0.70 \\pm 0.12$"
+        ],
+        [
+          "Sarsa",
+          "$0.87 \\pm 0.04$",
+          "$0.72 \\pm 0.11$",
+          "$0.52 \\pm 0.21$",
+          "$0.55 \\pm 0.19$",
+          "$0.45 \\pm 0.22$"
+        ],
+        [
+          "PMBGNP-AC",
+          "$\\mathbf{0 . 9 0} \\pm \\mathbf{0 . 0 2}$",
+          "$\\mathbf{0 . 9 0} \\pm \\mathbf{0 . 0 3}$",
+          "$\\mathbf{0 . 8 9} \\pm \\mathbf{0 . 1 0}$",
+          "$\\mathbf{0 . 8 6} \\pm \\mathbf{0 . 1 4}$",
+          "$\\mathbf{0 . 7 9} \\pm \\mathbf{0 . 1 1}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "The required fitness evaluations over 30 independent runs.",
+      "headers": [
+        "",
+        "RFEs $\\pm$ Standard deviation",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$S T$",
+          100,
+          200,
+          300,
+          400,
+          500
+        ],
+        [
+          "GP",
+          "$67,200 \\pm 56,564$",
+          "$140,427 \\pm 97,119$",
+          "$164,180 \\pm 82,590$",
+          "$208,893 \\pm 121,929$",
+          "$268,827 \\pm 70,595$"
+        ],
+        [
+          "GNP",
+          "$52,300 \\pm 47,379$",
+          "$107,733 \\pm 76,205$",
+          "$132,000 \\pm 101,807$",
+          "$177,300 \\pm 87,890$",
+          "$211,833 \\pm 111,542$"
+        ],
+        [
+          "RPMBGNP",
+          "$18,000 \\pm 14,325$",
+          "$37,377 \\pm 14,584$",
+          "$51,167 \\pm 32,248$",
+          "$73,593 \\pm 21,606$",
+          "$98,500 \\pm 75,761$"
+        ],
+        [
+          "PBILc",
+          "$\\mathbf{9 5 0 0} \\pm \\mathbf{7 3 1 9}$",
+          "$82,400 \\pm 107,993$",
+          "$87,800 \\pm 67,612$",
+          "$118,300 \\pm 96,899$",
+          "$167,267 \\pm 93,515$"
+        ],
+        [
+          "Sarsa",
+          "$52,800 \\pm 51,392$",
+          "$149,850 \\pm 97,569$",
+          "$194,707 \\pm 99,035$",
+          "$216,529 \\pm 106,187$",
+          "$232,970 \\pm 100,870$"
+        ],
+        [
+          "PMBGNP-AC",
+          "$9633 \\pm 7513$",
+          "$\\mathbf{3 5 , 4 8 3} \\pm \\mathbf{2 9 , 8 0 0}$",
+          "$\\mathbf{4 5 , 5 0 0} \\pm \\mathbf{4 1 , 9 2 4}$",
+          "$\\mathbf{6 1 , 4 6 7} \\pm \\mathbf{5 2 , 8 8 1}$",
+          "$\\mathbf{7 3 , 1 0 0} \\pm \\mathbf{2 2 , 1 2 9}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "The successful rates over 30 independent runs.",
+      "headers": [
+        "",
+        "Successful rate",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$S T$",
+          "$100(\\%)$",
+          "$200(\\%)$",
+          "$300(\\%)$",
+          "$400(\\%)$",
+          "$500(\\%)$"
+        ],
+        [
+          "GP",
+          "$\\mathbf{1 0 0}$",
+          76.7,
+          63.3,
+          36.7,
+          20.0
+        ],
+        [
+          "GNP",
+          "$\\mathbf{1 0 0}$",
+          90.0,
+          76.7,
+          70.0,
+          43.3
+        ],
+        [
+          "RPMBGNP",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$",
+          93.3
+        ],
+        [
+          "PBILc",
+          "$\\mathbf{1 0 0}$",
+          93.3,
+          93.3,
+          80.0,
+          76.7
+        ],
+        [
+          "Sarsa",
+          "$\\mathbf{1 0 0}$",
+          60.0,
+          36.7,
+          23.3,
+          16.7
+        ],
+        [
+          "PMBGNP-AC",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$",
+          "$\\mathbf{1 0 0}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "The $t$-test results of fitness values.",
+      "headers": [
+        "",
+        "$t$-test ( $p$-value)",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          200,
+          300,
+          400,
+          500
+        ],
+        [
+          "PMBGNP-AC vs. GP",
+          "$\\mathbf{3 . 1 3} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{3 . 0 5} \\times \\mathbf{1 0}^{-4}$",
+          "$\\mathbf{3 . 8 6} \\times \\mathbf{1 0}^{-4}$",
+          "$\\mathbf{4 . 0 5} \\times \\mathbf{1 0}^{-8}$",
+          "$\\mathbf{5 . 2 8} \\times \\mathbf{1 0}^{-9}$"
+        ],
+        [
+          "PMBGNP-AC vs. GNP",
+          "$\\mathbf{4 . 1 9} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{7 . 4 9} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{5 . 0 8} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{2 . 2 6} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{1 . 5 8} \\times \\mathbf{1 0}^{-3}$"
+        ],
+        [
+          "PMBGNP-AC vs. RPMBGNP",
+          "5.68 × 10-1",
+          "1.76 × 10-1",
+          "3.14 × 10-1",
+          "1.84 × 10-1",
+          "$\\mathbf{8 . 9 0} \\times \\mathbf{1 0}^{-3}$"
+        ],
+        [
+          "PMBGNP-AC vs. PBILc",
+          "1.65 × 10-1",
+          "1.20 × 10-1",
+          "$\\mathbf{1 . 1 1} \\times \\mathbf{1 0}^{-2}$",
+          "1.26 × 10-1",
+          "$\\mathbf{1 . 2 4} \\times \\mathbf{1 0}^{-2}$"
+        ],
+        [
+          "PMBGNP-AC vs. Sarsa",
+          "$\\mathbf{2 . 8 4} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{1 . 3 2} \\times \\mathbf{1 0}^{-5}$",
+          "$\\mathbf{3 . 4 8} \\times \\mathbf{1 0}^{-9}$",
+          "$\\mathbf{4 . 0 5} \\times \\mathbf{1 0}^{-8}$",
+          "$\\mathbf{9 . 0 3} \\times \\mathbf{1 0}^{-9}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "The $t$-test results of RFEs.",
+      "headers": [
+        "",
+        "$t$-test ( $p$-value)",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          200,
+          300,
+          400,
+          500
+        ],
+        [
+          "PMBGNP-AC vs. GP",
+          "$\\mathbf{5 . 8 7} \\times \\mathbf{1 0}^{-8}$",
+          "$\\mathbf{7 . 5 4} \\times \\mathbf{1 0}^{-7}$",
+          "$\\mathbf{6 . 0 1} \\times \\mathbf{1 0}^{-8}$",
+          "$\\mathbf{3 . 0 9} \\times \\mathbf{1 0}^{-8}$",
+          "$\\mathbf{2 . 2 4} \\times \\mathbf{1 0}^{-16}$"
+        ],
+        [
+          "PMBGNP-AC vs. GNP",
+          "$\\mathbf{6 . 6 6} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{9 . 5 0} \\times \\mathbf{1 0}^{-5}$",
+          "$\\mathbf{8 . 5 9} \\times \\mathbf{1 0}^{-5}$",
+          "$\\mathbf{1 . 3 0} \\times \\mathbf{1 0}^{-6}$",
+          "$\\mathbf{5 . 1 8} \\times \\mathbf{1 0}^{-8}$"
+        ],
+        [
+          "PMBGNP-AC vs. RPMBGNP",
+          "$\\mathbf{1 . 5 9} \\times \\mathbf{1 0}^{-2}$",
+          "7.57 × 10-1",
+          "5.30 × 10-1",
+          "$\\mathbf{1 . 6 2} \\times \\mathbf{1 0}^{-2}$",
+          "$\\mathbf{4 . 7 1} \\times \\mathbf{1 0}^{-2}$"
+        ],
+        [
+          "PMBGNP-AC vs. PBILc",
+          "9.52 × 10-1",
+          "$\\mathbf{2 . 7 9} \\times \\mathbf{1 0}^{-2}$",
+          "$\\mathbf{2 . 6 7} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{1 . 7 3} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{1 . 6 8} \\times \\mathbf{1 0}^{-5}$"
+        ],
+        [
+          "PMBGNP-AC vs. Sarsa",
+          "$\\mathbf{4 . 6 8} \\times \\mathbf{1 0}^{-3}$",
+          "$\\mathbf{2 . 0 5} \\times \\mathbf{1 0}^{-6}$",
+          "$\\mathbf{6 . 0 1} \\times \\mathbf{1 0}^{-9}$",
+          "$\\mathbf{2 . 9 9} \\times \\mathbf{1 0}^{-8}$",
+          "$\\mathbf{6 . 8 9} \\times \\mathbf{1 0}^{-10}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    }
+  ]
+}

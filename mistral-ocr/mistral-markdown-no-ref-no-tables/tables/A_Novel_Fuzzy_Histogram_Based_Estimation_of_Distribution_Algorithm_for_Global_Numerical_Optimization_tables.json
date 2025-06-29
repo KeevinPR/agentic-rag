@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/A Novel Fuzzy Histogram Based Estimation of Distribution Algorithm for Global Numerical Optimization.md",
+    "filename": "A Novel Fuzzy Histogram Based Estimation of Distribution Algorithm for Global Numerical Optimization.md",
+    "title": "A Novel Fuzzy Histogram Based Estimation of Distribution Algorithm for Global Numerical Optimization",
+    "year": "2009"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "SEVEN BENCHMARK FUNCTIONS",
+      "headers": [
+        "",
+        "Dimension",
+        "Domain",
+        "Type",
+        "Optimum"
+      ],
+      "rows": [
+        [
+          "$F_{\\text {sphere }}$",
+          30,
+          "$[-100,100]$",
+          "Min",
+          0
+        ],
+        [
+          "$F_{\\text {sphere }}$",
+          10,
+          "$[-0.16,0.16]$",
+          "Max",
+          "$10^{5}$"
+        ],
+        [
+          "$F_{\\text {teqpeaks }}$",
+          5,
+          "$[-100,100]$",
+          "Max",
+          10.1053
+        ],
+        [
+          "$F_{\\text {chewer }}$",
+          5,
+          "$[-100,100]$",
+          "Max",
+          10.1053
+        ],
+        [
+          "$F_{\\text {chewer }}$",
+          30,
+          "$[-500,500]$",
+          "Min",
+          "$-12569.5$"
+        ],
+        [
+          "$F_{\\text {sphere }}$",
+          30,
+          "$[-600,600]$",
+          "Min",
+          0
+        ],
+        [
+          "$F_{\\text {griewank }}$",
+          30,
+          "$[-5.12,5.12]$",
+          "Min",
+          0
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "PARAMETER SETTING OF THE FHEDA",
+      "headers": [
+        "Parameter",
+        "Descriptions",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Popsize",
+          "Size of population",
+          400
+        ],
+        [
+          "Se",
+          "Number of excellent individuals",
+          200
+        ],
+        [
+          "$q_{0}$",
+          "Mutation rate",
+          0.01
+        ],
+        [
+          "$B I N \\_N U M$",
+          "Number of bins",
+          20
+        ],
+        [
+          "$\\varepsilon$",
+          "Rate of extending range",
+          0.2
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "RESULT COMPARISON AMONG UMDAC, CEGDA, SUR-SHR-HEDA AND FHEDA",
+      "headers": [
+        "Function",
+        "",
+        "UMDAc",
+        "CEGDA",
+        "sur-shr-HEDA",
+        "FHEDA"
+      ],
+      "rows": [
+        [
+          "$F_{\\text {sphere }}$",
+          "avg.",
+          "$3.24 \\times 10^{-16}$",
+          "$3.41 \\times 10^{-6}$",
+          "$2.25 \\times 10^{-11}$",
+          "$1.11 \\times 10^{-37}$"
+        ],
+        [
+          "",
+          "std.",
+          "$5.59 \\times 10^{-17}$",
+          "$8.40 \\times 10^{-7}$",
+          "$3.54 \\times 10^{-12}$",
+          "$4.23 \\times 10^{-38}$"
+        ],
+        [
+          "$F_{\\text {sumsum }}$",
+          "avg.",
+          221.771,
+          99748.1,
+          100000,
+          4950.95
+        ],
+        [
+          "",
+          "std.",
+          116.101,
+          63.2197,
+          0,
+          11735.2
+        ],
+        [
+          "",
+          "avg.",
+          9.6327,
+          10.0999,
+          10.1053,
+          9.56638
+        ],
+        [
+          "$F_{\\text {temporal }}$",
+          "std.",
+          0.1073,
+          "$5.92 \\times 10^{-7}$",
+          0,
+          0.504
+        ],
+        [
+          "",
+          "avg.",
+          4.7331,
+          10.1048,
+          8.9503,
+          5.38951
+        ],
+        [
+          "",
+          "std.",
+          0.7406,
+          "$7.99 \\times 10^{-4}$",
+          2.2063,
+          1.26
+        ],
+        [
+          "$F_{\\text {subscrib }}$",
+          "avg.",
+          -5424.81,
+          -5922.54,
+          12568.6,
+          12569.5
+        ],
+        [
+          "",
+          "std.",
+          202.437,
+          1893.51,
+          0.723,
+          "$1.82 \\times 10^{-12}$"
+        ],
+        [
+          "$F_{\\text {personal }}$",
+          "avg.",
+          0.0581,
+          "-",
+          "$1.887 \\times 10^{-10}$",
+          0
+        ],
+        [
+          "",
+          "std.",
+          0.0335,
+          "-",
+          "$5.363 \\times 10^{-17}$",
+          0
+        ],
+        [
+          "$F_{\\text {interim }}$",
+          "avg.",
+          0.7966,
+          "-",
+          0,
+          0
+        ],
+        [
+          "",
+          "std.",
+          1.1296,
+          "-",
+          0,
+          0
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 6
+    }
+  ]
+}

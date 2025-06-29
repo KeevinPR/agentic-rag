@@ -1,0 +1,2094 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/A Distance-Based Ranking Model Estimation of Distribution Algorithm for the Flowshop Scheduling Problem.md",
+    "filename": "A Distance-Based Ranking Model Estimation of Distribution Algorithm for the Flowshop Scheduling Problem.md",
+    "title": "A Distance-Based Ranking Model Estimation of Distribution Algorithm for the Flowshop Scheduling Problem",
+    "year": "2014"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] S. M. Johnson, \"Optimal two- and three-stage production schedules with setup times included,\" Naval Res. Logis. Quart., vol. 1, no. 1, pp. 61-68, 1954.\n[2] M. R. Garey, D. S. Johnson, and R. Sethi, \"The complexity of flow shop and jobshop scheduling,\" Math. Oper. Res., vol. 1, no. 2, pp. 117-129, May 1976.\n[3] S. R. Hejazi and S. Saghafianz, \"Flowshop-scheduling problems with makespan criterion: A review,\" Int. J. Prod. Res., vol. 43, no. 14, pp. 2895-2929, Feb. 2005.\n[4] J. Gupta and J. E. Stafford, \"Flow shop scheduling research after five decades,\" Eur. J. Oper. Res., vol. 169, no. 3, pp. 699-711, 2006.\n[5] J. M. Framinan and R. Leisten, \"An efficient constructive heuristic for flowtime minimisation in permutation flow shops,\" Omega, vol. 31, no. 4, pp. 311-317, 2003.\n[6] C. Wang, C. Chu, and J.-M. Proth, \"A branch-and-bound algorithm for njob two machine flow shop scheduling problems,\" in Proc. INBIA/IEEE Symp. Emerging Technol. Factory Autom., vol. 2. Oct 1995, pp. 375-383.\n[7] C.-S. Chung, J. Flynn, and O. Kirca, \"A branch and bound algorithm to minimize the total flow time for m -machine permutation flowshop problems,\" Int. J. Prod. Econom., vol. 79, no. 3, pp. 185-196, Oct. 2002.\n[8] H.-S. Woo and D.-S. Yim, \"A heuristic algorithm for mean flowtime objective in flowshop scheduling,\" Comput. Oper. Res., vol. 25, no. 3, pp. 175-182, 1998.\n[9] M. Nawaz, E. E. Enscore, Jr., and I. Ham, \"A heuristic algorithm for the m-machine, n-job flow-shop sequencing problem,\" Omega, vol. 11, no. 1, pp. 91-95, 1983.\n[10] J. Liu and C. R. Reeves, \"Constructive and composite heuristic solutions to the pifjsummation operatorjci scheduling problem,\" Eur. J. Oper. Res., vol. 132, no. 2, pp. 439-452, 2001.\n[11] C. Rajendran, \"Heuristic algorithm for scheduling in a flowshop to minimize total flowtime,\" Int. J. Prod. Econom., vol. 29, no. 1, pp. 65-73, Feb. 1993.\n[12] C. Rajendran and H. Ziegler, \"An efficient heuristic for scheduling in a flowshop to minimize total weighted flowtime of jobs,\" Eur. J. Oper. Res., vol. 103, no. 1, pp. 129-138, Nov. 1997.\n[13] X. Li, Q. Wang, and C. Wu, \"Efficient composite heuristics for total flowtime minimization in permutation flow shops,\" Omega, vol. 37, no. 1, pp. 155-164, 2009.\n[14] Y. Zhang, X. Li, J. Zhu, and Q. Wang, \"Composite heuristic algorithm for permutation flowshop scheduling problems with total flowtime minimization,\" in Proc. 12th Int. Conf. Comput. Supported Cooperative Work Des., Apr. 2008, pp. 903-907.\n[15] A. Allahverdi and T. Aldowaisan, \"New heuristics to minimize total completion time in m-machine flowshops,\" Int. J. Prod. Econom., vol. 77, no. 1, pp. 71-83, 2002.\n[16] J. M. Framinan, R. Leisten, and R. Ruiz-Usano, \"Comparison of heuristics for flowtime minimisation in permutation flowshops,\" Comput. Oper. Res., vol. 32, pp. 1237-1254, May 2005.\n[17] X. Dong, H. Huang, and P. Chen, \"An iterated local search algorithm for the permutation flowshop problem with total flowtime criterion,\" Comput. Oper. Res., vol. 36, no. 5, pp. 1664-1669, 2009.\n[18] J. K. Pawel Jan Kalczynski, \"On the NEH heuristic for minimizing the makespan in permutation flow shops,\" Omega, vol. 35, no. 1, pp. 53-60, 2007.\n[19] W. E. Costa, M. C. Goldbarg, and E. G. Goldbarg, \"New VNS heuristic for total flowtime flowshop scheduling problem,\" Expert Syst. Applicat., vol. 39, no. 9, pp. 8149-8161, 2012.\n[20] I. Osman and C. Potts, \"Simulated annealing for permutation flow-shop scheduling,\" Omega, vol. 17, no. 6, pp. 551-557, 1989.\n[21] E. Taillard, \"Some efficient heuristic methods for the flow shop sequencing problem,\" Eur. J. Oper. Res., vol. 47, no. 1, pp. 65-74, Jul. 1990.\n[22] E. Nowicki and C. Smutnicki, \"A fast tabu search algorithm for the permutation flow-shop problem,\" Eur. J. Oper. Res., vol. 91, no. 1, pp. $160-175$, May 1996.\n[23] C. R. Reeves, \"Improving the efficiency of tabu search for machine sequencing problems,\" J. Oper. Res. Soc., vol. 44, no. 4, pp. 375-382, Apr. 1993.\n[24] V. S. Vempati, C.-L. Chen, and S. F. Bullington, \"An effective heuristic for flow shop problems with total flow time as criterion,\" Comput. Ind. Eng., vol. 25, no. 1-4, pp. 219-222, 1993.\n[25] M. S. Nagano, R. Ruiz, and L. A. N. Lorena, \"A constructive genetic algorithm for permutation flowshop scheduling,\" Comput. Ind. Eng., vol. 55, pp. 195-207, Aug. 2008.\n[26] X. Xu, Z. Xu, and X. Gu, \"An asynchronous genetic local search algorithm for the permutation flowshop scheduling problem with total flowtime minimization,\" Expert Syst. Applict., vol. 38, no. 7, pp. 79707979, 2011.\n[27] L.-Y. Tseng and Y.-T. Lin, \"A hybrid genetic local search algorithm for the permutation flowshop scheduling problem,\" Eur. J. Oper. Res., vol. 198, no. 1, pp. 84-92, Oct. 2009.\n[28] Y. Zhang, X. Li, and Q. Wang, \"Hybrid genetic algorithm for permutation flowshop scheduling problems with total flowtime minimization,\" Eur. J. Oper. Res., vol. 196, no. 3, pp. 869-876, Aug. 2009.\n[29] M. F. Tasgetiren, Y.-C. Liang, M. Sevkli, and G. Gencyilmaz, \"A particle swarm optimization algorithm for makespan and total flowtime minimization in the permutation flowshop sequencing problem,\" Eur. J. Oper. Res., vol. 177, no. 3, pp. 1930-1947, 2007.\n[30] C.-J. Liao, C.-T. Tseng, and P. Luarn, \"A discrete version of particle swarm optimization for flowshop scheduling problems,\" Comput. Oper. Res., vol. 34, pp. 3099-3111, Oct. 2007.\n[31] B. Jarboui, S. Ibrahim, P. Siarry, and A. Rebai, \"A combinatorial particle swarm optimization for solving permutation flowshop problems,\" Comput. Ind. Eng., vol. 54, no. 3, pp. 526-538, 2008.\n[32] H. Liu, L. Gao, and Q. Pan, \"A hybrid particle swarm optimization with estimation of distribution algorithm for solving permutation flowshop scheduling problem,\" Expert Syst. Appl., vol. 38, pp. 4348-4360, Apr. 2011.\n[33] T. Stützle, \"An ant approach to the flow shop problem,\" in Proc. 6th Eur. Congr. Intell. Tech. Soft Comput, 1997, pp. 1560-1564.\n[34] C. Rajendran and H. Ziegler, \"Ant-colony algorithms for permutation flowshop scheduling to minimize makespan/total flowtime of jobs,\" Eur. J. Oper. Res., vol. 155, no. 2, pp. 426-438, 2004.\n[35] Y. Gajpal and C. Rajendran, \"An ant-colony optimization algorithm for minimizing the completion-time variance of jobs in flowshops,\" Int. J. Prod. Econom., vol. 101, no. 2, pp. 259-272, Jun. 2006.\n[36] Y. Zhang, X. Li, Q. Wang, and J. Zhu, \"Similarity based ant-colony algorithm for permutation flowshop scheduling problems with total flowtime minimization,\" in Proc. Int. Conf. Comput. Supported Cooperat. Work Des., 2009, pp. 582-589.\n[37] B. Jarboui, M. Eddaly, and P. Siarry, \"An estimation of distribution algorithm for minimizing the total flowtime in permutation flowshop scheduling problems,\" Comput. OR, vol. 36, no. 9, pp. 2638-2646, 2009.\n[38] P. Larrañaga and J. A. Lozano, Estimation of Distribution algorithms: A New Tool for Evolutionary Computation. Berlin, Germany: Kluwer Academic Publishers, 2002.\n[39] J. A. Lozano, P. Larrañaga, I. Inza, and E. Bengoetxea, \"Toward a new evolutionary computation: Advances on estimation of distribution Algorithms,\" in Studies in Fuzziness and Soft Computing. Secaucus, NJ, USA: Springer, 2006.\n[40] M. Pelikan, K. Sastry, and E. Cantú-Paz, \"Scalable optimization via probabilistic modeling: From algorithms to applications,\" in Studies in Computational Intelligence. Secaucus, NJ, USA: Springer Inc., 2006.\n[41] R. Santana, P. Larrañaga, and J. A. Lozano, \"Protein folding in simplified models with estimation of distribution algorithms,\" IEEE Trans. Evol. Comput., vol. 12, no. 4, pp. 418-438, Aug. 2008.\n[42] Q. Zhang, J. Sun, and E. Tsang, \"An evolutionary algorithm with guided mutation for the maximum clique problem,\" IEEE Trans. Evol. Comput., vol. 9, no. 2, pp. 192-200, Apr. 2005.\n[43] Q. Zhang, J. Sun, E. Tsang, and J. Ford, \"Estimation of distribution algorithm with 2-opt local search for the quadratic assignment problem,\" Stud. Fuzziness Soft Comput., vol. 192/2006, pp. 281-292, 2006.\n[44] L. Wang and C. Fang, \"An effective estimation of distribution algorithm for the multimode resource-constrained project scheduling problem,\" Comput. Oper. Res., vol. 39, no. 2, pp. 449-460, Feb. 2012.\n\n[45] Q.-K. Pan and R. Ruiz, \"An estimation of distribution algorithm for lotstreaming flow shop problems with setup times,\" Omega, vol. 40, no. 2, pp. 166-180, 2012.\n[46] S.-H. Chen and M.-C. Chen, \"Addressing the advantages of using ensemble probabilistic models in estimation of distribution algorithms for scheduling problems,\" Int. J. Prod. Econom., vol. 141, no. 1, pp. 2433, 2012.\n[47] J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano, \"A review on estimation of distribution algorithms in permutation-based combinatorial optimization problems,\" Progr. Artif. Intell., vol. 1, no. 1, pp. 103-117, Jan. 2012.\n[48] S. Tsutsui, \"Probabilistic model-building genetic algorithms in permutation representation domain using edge histogram,\" in Proc. Parallel Prob. Solv. Nat., 2002, pp. 224-233.\n[49] S. Tsutsui, M. Pelikan, and D. E. Goldberg, \"Node histogram versus edge histogram: A comparison of PMBGAs in permutation domains,\" Medal, Tech. Rep., 2006.\n[50] J. Ceberio, A. Mendiburu, and J. A. Lozano, \"Introducing the Mallows model on estimation of distribution algorithms,\" in Proc. Int. Conf. Neural Inform. Process., vol. 7063, Nov. 2011, pp. 461-470.\n[51] M. A. Fligner and J. S. Verducci, \"Distance based ranking models,\" J. Royal Stat. Soc., vol. 48, no. 3, pp. 359-369, 1986.\n[52] K. Baker, Introduction to Sequencing and Scheduling. New York, NY, USA: Wiley, 1974.\n[53] A. Allahverdi, C. Ng, T. Cheng, and M. Y. Kovalyov, \"A survey of scheduling problems with setup times or costs,\" Eur. J. Oper. Res., vol. 187, no. 3, pp. 985-1032, 2008.\n[54] L. L. Thurstone, \"A law of comparative judgment.\" Psych. Rev., vol. 34, no. 4, pp. 273-286, 1927.\n[55] C. L. Mallows, \"Nonnull ranking models.\" Biometrika, vol. 44, no. 1-2, pp. 114-130, 1957.\n[56] T. Lu and C. Boutilier, \"Learning mallows models with pairwise preferences,\" in Proc. 28th Int. Conf. Mach. Learn., ser. ICML '11, L. Getoor and T. Scheffer, Eds. New York, NY, USA: ACM, Jun. 2011, pp. 145-152.\n[57] W. Cheng and E. Hüllermeier, \"A simple instance-based approach to multilabel classification using the mallows model,\" in Proc. Workshop Learn. MultiLabel Data, Sep. 2009, pp. 28-38.\n[58] G. Lebanon and J. Lafferty, \"Cranking: Combining rankings using conditional probability models on permutations,\" in Proc. Int. Conf. Mach. Learn., 2002, pp. 363-370.\n[59] Y. Mao and G. Lebanon, \"Nonparametric modeling of partially ranked data,\" J. Mach. Learn. Res., vol. 9, pp. 2401-2429, 2008.\n[60] M. Meila and H. Chen, \"Dirichlet process mixtures of generalized Mallows models,\" Uncertainty Artif. Intell., vol. 1, no. l, pp. 358-367, 2010.\n[61] K. K. Lau, P. C. Yuen, and Y. Y. Tang, \"Directed connection measurement for evaluating reconstructed stroke sequence in handwriting images,\" Pattern Recogn., vol. 38, no. 3, pp. 323-339, 2005.\n[62] M. Fligner and J. Verducci, \"Multistage ranking models,\" J. Amer. Stat. Assoc., vol. 83, no. 403, pp. 892-901, 1988.\n[63] M. Meila, K. Phadnis, A. Patterson, and J. Bilmes, \"Consensus ranking under the exponential model,\" in Proc. 22nd Conf. Uncertainty Artif. Intell., Vancouver, BC, USA, Jul. 2007, pp. 285-294.\n[64] B. Mandhani and M. Meila, \"Tractable search for learning exponential models of rankings,\" J. Mach. Learn. Res., vol. 5, pp. 392-399, 2009.\n[65] J. Bartholdi, C. A. Tovey, and M. A. Trick, \"Voting schemes for which it can be difficult to tell who won the election,\" Soc. Choice Welfare, vol. 6, no. 2, pp. 157-165, Apr. 1989.\n[66] J. C. Borda, \"Memoire sur les elections au scrutin,\" Histoire de l'Academie Royale des Science, 1784.\n[67] A. Ali and M. Meila, \"Experiments with Kemeny ranking: What works when?\" Math. Soc. Sci., vol. 64, no. 1, pp. 28-40, Jul. 2011.\n[68] J. M. Borwein and P. B. Borwein, Pi and the AGM: A Study in the Analytic Number Theory and Computational Complexity. New York, NY, USA: Wiley, 1987.\n[69] E. Taillard, \"Benchmarks for basic scheduling problems,\" Eur. J. Oper. Res., vol. 64, no. 2, pp. 278-285, Jan. 1993.\n[70] S. Garcia and F. Herrera, \"An extension on statistical comparisons of classifiers over multiple data set\" for all pairwise comparisons,\" J. Mach. Learn. Res., vol. 9, pp. 2677-2694, Dec. 2008.\n[71] T. B. Murphy and D. Martin, \"Mixtures of distance-based models for ranking data,\" Comput. Stat. Data Anal., vol. 41, no. 3-4, pp. 645-655, Jan. 2003.\n[72] M. Deza and T. Huang, \"Metrics on permutations: A survey,\" J. Combinatorics, Inf. Syst. Sci., vol. 23, pp. 173-185, 1998.\n\nJosu Ceberio received the M.Sc. degree in computer science from the University of the Basque Country, Spain, in 2009 and is pursuing the Ph.D. degree from the Department of Computer Science and Artificial Intelligence, University of the Basque Country.\n\nHis current research interests include evolutionary computation, probability models on rankings, and permutation-based problems.\n\nEkhine Irurozki received the M.Sc. degree in computer science from the University of the Basque Country, Spain, in 2008. She is currently a Ph.D. student of the Intelligent Systems Group at the same university.\n\nHer current research interests include combinatorial optimization and machine learning. She is particularly interested in probability distributions on the space of permutations and is currently working on the development of new techniques for efficiently learning and sampling permutations of that kind of model.\n\nAlexander Mendiburu received the Ph.D. degree from the University of the Basque Country, Spain, in 2006.\n\nSince 1999, he has been a Lecturer with the Department of Computer Architecture and Technology, University of the Basque Country. His current research interests include evolutionary computation, probabilistic graphical models, and parallel computing.\n\nJose A. Lozano (M’05) received the Ph.D. degree from the University of the Basque Country, Spain, in 1998.\n\nSince 2008, he has been a Full Professor with the Department of Computer Science and Artificial Intelligence, University of the Basque Country, where he leads the Intelligent Systems Group. He has edited three books and has published over 60 referred journal papers. His current research interests include evolutionary computation, machine learning, data mining, pattern analysis, probabilistic graphical models, and bioinformatics.\n\nProf. Lozano is an Associate Editor of the IEEE Transactions on EVOLUTIONARY COMPUTATION and a member of the editorial boards of the Evolutionary Computation Journal, Soft Computing, and three other journals.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "S. M. Johnson, \"Optimal two- and three-stage production schedules with setup times included,\" Naval Res. Logis. Quart., vol. 1, no. 1, pp. 61-68, 1954."
+      },
+      {
+        "ref_id": "2",
+        "text": "M. R. Garey, D. S. Johnson, and R. Sethi, \"The complexity of flow shop and jobshop scheduling,\" Math. Oper. Res., vol. 1, no. 2, pp. 117-129, May 1976."
+      },
+      {
+        "ref_id": "3",
+        "text": "S. R. Hejazi and S. Saghafianz, \"Flowshop-scheduling problems with makespan criterion: A review,\" Int. J. Prod. Res., vol. 43, no. 14, pp. 2895-2929, Feb. 2005."
+      },
+      {
+        "ref_id": "4",
+        "text": "J. Gupta and J. E. Stafford, \"Flow shop scheduling research after five decades,\" Eur. J. Oper. Res., vol. 169, no. 3, pp. 699-711, 2006."
+      },
+      {
+        "ref_id": "5",
+        "text": "J. M. Framinan and R. Leisten, \"An efficient constructive heuristic for flowtime minimisation in permutation flow shops,\" Omega, vol. 31, no. 4, pp. 311-317, 2003."
+      },
+      {
+        "ref_id": "6",
+        "text": "C. Wang, C. Chu, and J.-M. Proth, \"A branch-and-bound algorithm for njob two machine flow shop scheduling problems,\" in Proc. INBIA/IEEE Symp. Emerging Technol. Factory Autom., vol. 2. Oct 1995, pp. 375-383."
+      },
+      {
+        "ref_id": "7",
+        "text": "C.-S. Chung, J. Flynn, and O. Kirca, \"A branch and bound algorithm to minimize the total flow time for m -machine permutation flowshop problems,\" Int. J. Prod. Econom., vol. 79, no. 3, pp. 185-196, Oct. 2002."
+      },
+      {
+        "ref_id": "8",
+        "text": "H.-S. Woo and D.-S. Yim, \"A heuristic algorithm for mean flowtime objective in flowshop scheduling,\" Comput. Oper. Res., vol. 25, no. 3, pp. 175-182, 1998."
+      },
+      {
+        "ref_id": "9",
+        "text": "M. Nawaz, E. E. Enscore, Jr., and I. Ham, \"A heuristic algorithm for the m-machine, n-job flow-shop sequencing problem,\" Omega, vol. 11, no. 1, pp. 91-95, 1983."
+      },
+      {
+        "ref_id": "10",
+        "text": "J. Liu and C. R. Reeves, \"Constructive and composite heuristic solutions to the pifjsummation operatorjci scheduling problem,\" Eur. J. Oper. Res., vol. 132, no. 2, pp. 439-452, 2001."
+      },
+      {
+        "ref_id": "11",
+        "text": "C. Rajendran, \"Heuristic algorithm for scheduling in a flowshop to minimize total flowtime,\" Int. J. Prod. Econom., vol. 29, no. 1, pp. 65-73, Feb. 1993."
+      },
+      {
+        "ref_id": "12",
+        "text": "C. Rajendran and H. Ziegler, \"An efficient heuristic for scheduling in a flowshop to minimize total weighted flowtime of jobs,\" Eur. J. Oper. Res., vol. 103, no. 1, pp. 129-138, Nov. 1997."
+      },
+      {
+        "ref_id": "13",
+        "text": "X. Li, Q. Wang, and C. Wu, \"Efficient composite heuristics for total flowtime minimization in permutation flow shops,\" Omega, vol. 37, no. 1, pp. 155-164, 2009."
+      },
+      {
+        "ref_id": "14",
+        "text": "Y. Zhang, X. Li, J. Zhu, and Q. Wang, \"Composite heuristic algorithm for permutation flowshop scheduling problems with total flowtime minimization,\" in Proc. 12th Int. Conf. Comput. Supported Cooperative Work Des., Apr. 2008, pp. 903-907."
+      },
+      {
+        "ref_id": "15",
+        "text": "A. Allahverdi and T. Aldowaisan, \"New heuristics to minimize total completion time in m-machine flowshops,\" Int. J. Prod. Econom., vol. 77, no. 1, pp. 71-83, 2002."
+      },
+      {
+        "ref_id": "16",
+        "text": "J. M. Framinan, R. Leisten, and R. Ruiz-Usano, \"Comparison of heuristics for flowtime minimisation in permutation flowshops,\" Comput. Oper. Res., vol. 32, pp. 1237-1254, May 2005."
+      },
+      {
+        "ref_id": "17",
+        "text": "X. Dong, H. Huang, and P. Chen, \"An iterated local search algorithm for the permutation flowshop problem with total flowtime criterion,\" Comput. Oper. Res., vol. 36, no. 5, pp. 1664-1669, 2009."
+      },
+      {
+        "ref_id": "18",
+        "text": "J. K. Pawel Jan Kalczynski, \"On the NEH heuristic for minimizing the makespan in permutation flow shops,\" Omega, vol. 35, no. 1, pp. 53-60, 2007."
+      },
+      {
+        "ref_id": "19",
+        "text": "W. E. Costa, M. C. Goldbarg, and E. G. Goldbarg, \"New VNS heuristic for total flowtime flowshop scheduling problem,\" Expert Syst. Applicat., vol. 39, no. 9, pp. 8149-8161, 2012."
+      },
+      {
+        "ref_id": "20",
+        "text": "I. Osman and C. Potts, \"Simulated annealing for permutation flow-shop scheduling,\" Omega, vol. 17, no. 6, pp. 551-557, 1989."
+      },
+      {
+        "ref_id": "21",
+        "text": "E. Taillard, \"Some efficient heuristic methods for the flow shop sequencing problem,\" Eur. J. Oper. Res., vol. 47, no. 1, pp. 65-74, Jul. 1990."
+      },
+      {
+        "ref_id": "22",
+        "text": "E. Nowicki and C. Smutnicki, \"A fast tabu search algorithm for the permutation flow-shop problem,\" Eur. J. Oper. Res., vol. 91, no. 1, pp. $160-175$, May 1996."
+      },
+      {
+        "ref_id": "23",
+        "text": "C. R. Reeves, \"Improving the efficiency of tabu search for machine sequencing problems,\" J. Oper. Res. Soc., vol. 44, no. 4, pp. 375-382, Apr. 1993."
+      },
+      {
+        "ref_id": "24",
+        "text": "V. S. Vempati, C.-L. Chen, and S. F. Bullington, \"An effective heuristic for flow shop problems with total flow time as criterion,\" Comput. Ind. Eng., vol. 25, no. 1-4, pp. 219-222, 1993."
+      },
+      {
+        "ref_id": "25",
+        "text": "M. S. Nagano, R. Ruiz, and L. A. N. Lorena, \"A constructive genetic algorithm for permutation flowshop scheduling,\" Comput. Ind. Eng., vol. 55, pp. 195-207, Aug. 2008."
+      },
+      {
+        "ref_id": "26",
+        "text": "X. Xu, Z. Xu, and X. Gu, \"An asynchronous genetic local search algorithm for the permutation flowshop scheduling problem with total flowtime minimization,\" Expert Syst. Applict., vol. 38, no. 7, pp. 79707979, 2011."
+      },
+      {
+        "ref_id": "27",
+        "text": "L.-Y. Tseng and Y.-T. Lin, \"A hybrid genetic local search algorithm for the permutation flowshop scheduling problem,\" Eur. J. Oper. Res., vol. 198, no. 1, pp. 84-92, Oct. 2009."
+      },
+      {
+        "ref_id": "28",
+        "text": "Y. Zhang, X. Li, and Q. Wang, \"Hybrid genetic algorithm for permutation flowshop scheduling problems with total flowtime minimization,\" Eur. J. Oper. Res., vol. 196, no. 3, pp. 869-876, Aug. 2009."
+      },
+      {
+        "ref_id": "29",
+        "text": "M. F. Tasgetiren, Y.-C. Liang, M. Sevkli, and G. Gencyilmaz, \"A particle swarm optimization algorithm for makespan and total flowtime minimization in the permutation flowshop sequencing problem,\" Eur. J. Oper. Res., vol. 177, no. 3, pp. 1930-1947, 2007."
+      },
+      {
+        "ref_id": "30",
+        "text": "C.-J. Liao, C.-T. Tseng, and P. Luarn, \"A discrete version of particle swarm optimization for flowshop scheduling problems,\" Comput. Oper. Res., vol. 34, pp. 3099-3111, Oct. 2007."
+      },
+      {
+        "ref_id": "31",
+        "text": "B. Jarboui, S. Ibrahim, P. Siarry, and A. Rebai, \"A combinatorial particle swarm optimization for solving permutation flowshop problems,\" Comput. Ind. Eng., vol. 54, no. 3, pp. 526-538, 2008."
+      },
+      {
+        "ref_id": "32",
+        "text": "H. Liu, L. Gao, and Q. Pan, \"A hybrid particle swarm optimization with estimation of distribution algorithm for solving permutation flowshop scheduling problem,\" Expert Syst. Appl., vol. 38, pp. 4348-4360, Apr. 2011."
+      },
+      {
+        "ref_id": "33",
+        "text": "T. Stützle, \"An ant approach to the flow shop problem,\" in Proc. 6th Eur. Congr. Intell. Tech. Soft Comput, 1997, pp. 1560-1564."
+      },
+      {
+        "ref_id": "34",
+        "text": "C. Rajendran and H. Ziegler, \"Ant-colony algorithms for permutation flowshop scheduling to minimize makespan/total flowtime of jobs,\" Eur. J. Oper. Res., vol. 155, no. 2, pp. 426-438, 2004."
+      },
+      {
+        "ref_id": "35",
+        "text": "Y. Gajpal and C. Rajendran, \"An ant-colony optimization algorithm for minimizing the completion-time variance of jobs in flowshops,\" Int. J. Prod. Econom., vol. 101, no. 2, pp. 259-272, Jun. 2006."
+      },
+      {
+        "ref_id": "36",
+        "text": "Y. Zhang, X. Li, Q. Wang, and J. Zhu, \"Similarity based ant-colony algorithm for permutation flowshop scheduling problems with total flowtime minimization,\" in Proc. Int. Conf. Comput. Supported Cooperat. Work Des., 2009, pp. 582-589."
+      },
+      {
+        "ref_id": "37",
+        "text": "B. Jarboui, M. Eddaly, and P. Siarry, \"An estimation of distribution algorithm for minimizing the total flowtime in permutation flowshop scheduling problems,\" Comput. OR, vol. 36, no. 9, pp. 2638-2646, 2009."
+      },
+      {
+        "ref_id": "38",
+        "text": "P. Larrañaga and J. A. Lozano, Estimation of Distribution algorithms: A New Tool for Evolutionary Computation. Berlin, Germany: Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "39",
+        "text": "J. A. Lozano, P. Larrañaga, I. Inza, and E. Bengoetxea, \"Toward a new evolutionary computation: Advances on estimation of distribution Algorithms,\" in Studies in Fuzziness and Soft Computing. Secaucus, NJ, USA: Springer, 2006."
+      },
+      {
+        "ref_id": "40",
+        "text": "M. Pelikan, K. Sastry, and E. Cantú-Paz, \"Scalable optimization via probabilistic modeling: From algorithms to applications,\" in Studies in Computational Intelligence. Secaucus, NJ, USA: Springer Inc., 2006."
+      },
+      {
+        "ref_id": "41",
+        "text": "R. Santana, P. Larrañaga, and J. A. Lozano, \"Protein folding in simplified models with estimation of distribution algorithms,\" IEEE Trans. Evol. Comput., vol. 12, no. 4, pp. 418-438, Aug. 2008."
+      },
+      {
+        "ref_id": "42",
+        "text": "Q. Zhang, J. Sun, and E. Tsang, \"An evolutionary algorithm with guided mutation for the maximum clique problem,\" IEEE Trans. Evol. Comput., vol. 9, no. 2, pp. 192-200, Apr. 2005."
+      },
+      {
+        "ref_id": "43",
+        "text": "Q. Zhang, J. Sun, E. Tsang, and J. Ford, \"Estimation of distribution algorithm with 2-opt local search for the quadratic assignment problem,\" Stud. Fuzziness Soft Comput., vol. 192/2006, pp. 281-292, 2006."
+      },
+      {
+        "ref_id": "44",
+        "text": "L. Wang and C. Fang, \"An effective estimation of distribution algorithm for the multimode resource-constrained project scheduling problem,\" Comput. Oper. Res., vol. 39, no. 2, pp. 449-460, Feb. 2012."
+      },
+      {
+        "ref_id": "45",
+        "text": "Q.-K. Pan and R. Ruiz, \"An estimation of distribution algorithm for lotstreaming flow shop problems with setup times,\" Omega, vol. 40, no. 2, pp. 166-180, 2012."
+      },
+      {
+        "ref_id": "46",
+        "text": "S.-H. Chen and M.-C. Chen, \"Addressing the advantages of using ensemble probabilistic models in estimation of distribution algorithms for scheduling problems,\" Int. J. Prod. Econom., vol. 141, no. 1, pp. 2433, 2012."
+      },
+      {
+        "ref_id": "47",
+        "text": "J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano, \"A review on estimation of distribution algorithms in permutation-based combinatorial optimization problems,\" Progr. Artif. Intell., vol. 1, no. 1, pp. 103-117, Jan. 2012."
+      },
+      {
+        "ref_id": "48",
+        "text": "S. Tsutsui, \"Probabilistic model-building genetic algorithms in permutation representation domain using edge histogram,\" in Proc. Parallel Prob. Solv. Nat., 2002, pp. 224-233."
+      },
+      {
+        "ref_id": "49",
+        "text": "S. Tsutsui, M. Pelikan, and D. E. Goldberg, \"Node histogram versus edge histogram: A comparison of PMBGAs in permutation domains,\" Medal, Tech. Rep., 2006."
+      },
+      {
+        "ref_id": "50",
+        "text": "J. Ceberio, A. Mendiburu, and J. A. Lozano, \"Introducing the Mallows model on estimation of distribution algorithms,\" in Proc. Int. Conf. Neural Inform. Process., vol. 7063, Nov. 2011, pp. 461-470."
+      },
+      {
+        "ref_id": "51",
+        "text": "M. A. Fligner and J. S. Verducci, \"Distance based ranking models,\" J. Royal Stat. Soc., vol. 48, no. 3, pp. 359-369, 1986."
+      },
+      {
+        "ref_id": "52",
+        "text": "K. Baker, Introduction to Sequencing and Scheduling. New York, NY, USA: Wiley, 1974."
+      },
+      {
+        "ref_id": "53",
+        "text": "A. Allahverdi, C. Ng, T. Cheng, and M. Y. Kovalyov, \"A survey of scheduling problems with setup times or costs,\" Eur. J. Oper. Res., vol. 187, no. 3, pp. 985-1032, 2008."
+      },
+      {
+        "ref_id": "54",
+        "text": "L. L. Thurstone, \"A law of comparative judgment.\" Psych. Rev., vol. 34, no. 4, pp. 273-286, 1927."
+      },
+      {
+        "ref_id": "55",
+        "text": "C. L. Mallows, \"Nonnull ranking models.\" Biometrika, vol. 44, no. 1-2, pp. 114-130, 1957."
+      },
+      {
+        "ref_id": "56",
+        "text": "T. Lu and C. Boutilier, \"Learning mallows models with pairwise preferences,\" in Proc. 28th Int. Conf. Mach. Learn., ser. ICML '11, L. Getoor and T. Scheffer, Eds. New York, NY, USA: ACM, Jun. 2011, pp. 145-152."
+      },
+      {
+        "ref_id": "57",
+        "text": "W. Cheng and E. Hüllermeier, \"A simple instance-based approach to multilabel classification using the mallows model,\" in Proc. Workshop Learn. MultiLabel Data, Sep. 2009, pp. 28-38."
+      },
+      {
+        "ref_id": "58",
+        "text": "G. Lebanon and J. Lafferty, \"Cranking: Combining rankings using conditional probability models on permutations,\" in Proc. Int. Conf. Mach. Learn., 2002, pp. 363-370."
+      },
+      {
+        "ref_id": "59",
+        "text": "Y. Mao and G. Lebanon, \"Nonparametric modeling of partially ranked data,\" J. Mach. Learn. Res., vol. 9, pp. 2401-2429, 2008."
+      },
+      {
+        "ref_id": "60",
+        "text": "M. Meila and H. Chen, \"Dirichlet process mixtures of generalized Mallows models,\" Uncertainty Artif. Intell., vol. 1, no. l, pp. 358-367, 2010."
+      },
+      {
+        "ref_id": "61",
+        "text": "K. K. Lau, P. C. Yuen, and Y. Y. Tang, \"Directed connection measurement for evaluating reconstructed stroke sequence in handwriting images,\" Pattern Recogn., vol. 38, no. 3, pp. 323-339, 2005."
+      },
+      {
+        "ref_id": "62",
+        "text": "M. Fligner and J. Verducci, \"Multistage ranking models,\" J. Amer. Stat. Assoc., vol. 83, no. 403, pp. 892-901, 1988."
+      },
+      {
+        "ref_id": "63",
+        "text": "M. Meila, K. Phadnis, A. Patterson, and J. Bilmes, \"Consensus ranking under the exponential model,\" in Proc. 22nd Conf. Uncertainty Artif. Intell., Vancouver, BC, USA, Jul. 2007, pp. 285-294."
+      },
+      {
+        "ref_id": "64",
+        "text": "B. Mandhani and M. Meila, \"Tractable search for learning exponential models of rankings,\" J. Mach. Learn. Res., vol. 5, pp. 392-399, 2009."
+      },
+      {
+        "ref_id": "65",
+        "text": "J. Bartholdi, C. A. Tovey, and M. A. Trick, \"Voting schemes for which it can be difficult to tell who won the election,\" Soc. Choice Welfare, vol. 6, no. 2, pp. 157-165, Apr. 1989."
+      },
+      {
+        "ref_id": "66",
+        "text": "J. C. Borda, \"Memoire sur les elections au scrutin,\" Histoire de l'Academie Royale des Science, 1784."
+      },
+      {
+        "ref_id": "67",
+        "text": "A. Ali and M. Meila, \"Experiments with Kemeny ranking: What works when?\" Math. Soc. Sci., vol. 64, no. 1, pp. 28-40, Jul. 2011."
+      },
+      {
+        "ref_id": "68",
+        "text": "J. M. Borwein and P. B. Borwein, Pi and the AGM: A Study in the Analytic Number Theory and Computational Complexity. New York, NY, USA: Wiley, 1987."
+      },
+      {
+        "ref_id": "69",
+        "text": "E. Taillard, \"Benchmarks for basic scheduling problems,\" Eur. J. Oper. Res., vol. 64, no. 2, pp. 278-285, Jan. 1993."
+      },
+      {
+        "ref_id": "70",
+        "text": "S. Garcia and F. Herrera, \"An extension on statistical comparisons of classifiers over multiple data set\" for all pairwise comparisons,\" J. Mach. Learn. Res., vol. 9, pp. 2677-2694, Dec. 2008."
+      },
+      {
+        "ref_id": "71",
+        "text": "T. B. Murphy and D. Martin, \"Mixtures of distance-based models for ranking data,\" Comput. Stat. Data Anal., vol. 41, no. 3-4, pp. 645-655, Jan. 2003."
+      },
+      {
+        "ref_id": "72",
+        "text": "M. Deza and T. Huang, \"Metrics on permutations: A survey,\" J. Combinatorics, Inf. Syst. Sci., vol. 23, pp. 173-185, 1998."
+      }
+    ],
+    "reference_count": 72,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "ARPD ReSultS for TAILlard's Benchmark Instances. ReSultS in Bold DENTE the Approach With the Lowest ARPD. ReSultS MAKKED * DENOTE THE OPTIMUM OR BEST VALUE THAT WAS ACHIEVED AT LEAST ONCE AMONG THE 20 REPETITIONS PERFORMED. BEST RESULTS IN ITALICS DENOTE NEW BEST KNOWN SOLUTIONS",
+      "headers": [
+        "Instance",
+        "Best",
+        "AGA",
+        "VNS $_{4}$",
+        "GM-EDA",
+        "VNS",
+        "HGM-EDA",
+        "Instance",
+        "Best",
+        "AGA",
+        "VNS $_{4}$",
+        "GM-EDA",
+        "VNS",
+        "HGM-EDA"
+      ],
+      "rows": [
+        [
+          "$20 \\times 05$",
+          14033,
+          0.0,
+          0.0,
+          "$0.18 *$",
+          0.0,
+          0.0,
+          "$100 \\times 05$",
+          253713,
+          0.25,
+          1.21,
+          0.82,
+          0.39,
+          0.19
+        ],
+        [
+          "",
+          15151,
+          0.0,
+          0.0,
+          0.48,
+          0.0,
+          0.0,
+          "",
+          242777,
+          0.22,
+          1.71,
+          1.0,
+          0.38,
+          0.27
+        ],
+        [
+          "",
+          13301,
+          0.0,
+          0.0,
+          "$0.50 *$",
+          0.0,
+          0.0,
+          "",
+          238180,
+          0.18,
+          1.45,
+          0.8,
+          0.27,
+          0.22
+        ],
+        [
+          "",
+          15447,
+          0.0,
+          0.0,
+          "$0.43 *$",
+          0.0,
+          0.0,
+          "",
+          227889,
+          0.17,
+          1.29,
+          0.78,
+          0.23,
+          0.2
+        ],
+        [
+          "",
+          13529,
+          0.0,
+          0.0,
+          "$0.21 *$",
+          0.0,
+          0.0,
+          "",
+          240589,
+          0.21,
+          1.29,
+          0.8,
+          0.31,
+          0.23
+        ],
+        [
+          "",
+          13123,
+          0.0,
+          0.0,
+          "$0.08 *$",
+          0.0,
+          0.0,
+          "",
+          232936,
+          0.22,
+          1.41,
+          0.8,
+          0.31,
+          0.17
+        ],
+        [
+          "",
+          13548,
+          0.0,
+          0.0,
+          0.79,
+          0.0,
+          0.0,
+          "",
+          240689,
+          0.15,
+          1.34,
+          1.0,
+          0.34,
+          0.34
+        ],
+        [
+          "",
+          13948,
+          0.0,
+          0.0,
+          "$0.18 *$",
+          0.0,
+          0.0,
+          "",
+          231428,
+          0.13,
+          1.63,
+          0.9,
+          0.25,
+          0.19
+        ],
+        [
+          "",
+          14295,
+          0.0,
+          0.0,
+          "$0.18 *$",
+          0.0,
+          0.0,
+          "",
+          248481,
+          0.23,
+          1.48,
+          0.87,
+          0.29,
+          0.2
+        ],
+        [
+          "",
+          12943,
+          0.0,
+          0.0,
+          "$0.46 *$",
+          0.0,
+          0.0,
+          "",
+          243360,
+          0.15,
+          1.4,
+          0.96,
+          0.29,
+          0.24
+        ],
+        [
+          "$20 \\times 10$",
+          20911,
+          0.0,
+          0.0,
+          "$0.45 *$",
+          0.0,
+          0.0,
+          "$100 \\times 10$",
+          299431,
+          0.32,
+          1.52,
+          1.69,
+          0.51,
+          0.33
+        ],
+        [
+          "",
+          22440,
+          0.0,
+          0.0,
+          "$0.54 *$",
+          0.0,
+          0.0,
+          "",
+          274593,
+          0.59,
+          1.57,
+          2.07,
+          0.87,
+          0.68
+        ],
+        [
+          "",
+          19833,
+          0.0,
+          0.0,
+          "$0.31 *$",
+          0.0,
+          0.0,
+          "",
+          288630,
+          0.34,
+          1.53,
+          1.71,
+          0.59,
+          0.35
+        ],
+        [
+          "",
+          18710,
+          0.0,
+          0.0,
+          0.75,
+          0.0,
+          0.0,
+          "",
+          302105,
+          0.32,
+          1.6,
+          1.89,
+          0.56,
+          0.35
+        ],
+        [
+          "",
+          18641,
+          0.0,
+          0.0,
+          0.35,
+          0.0,
+          0.0,
+          "",
+          285340,
+          0.39,
+          1.42,
+          1.73,
+          0.58,
+          0.32
+        ],
+        [
+          "",
+          19245,
+          0.0,
+          0.0,
+          0.77,
+          0.0,
+          0.0,
+          "",
+          270817,
+          0.3,
+          1.64,
+          1.7,
+          0.62,
+          0.33
+        ],
+        [
+          "",
+          18363,
+          0.0,
+          0.0,
+          "$0.48 *$",
+          0.0,
+          0.0,
+          "",
+          280649,
+          0.23,
+          1.44,
+          1.51,
+          0.51,
+          0.26
+        ],
+        [
+          "",
+          20241,
+          0.0,
+          0.0,
+          "$0.47 *$",
+          0.0,
+          0.0,
+          "",
+          291965,
+          0.35,
+          1.62,
+          1.88,
+          0.74,
+          0.46
+        ],
+        [
+          "",
+          20330,
+          0.0,
+          0.0,
+          "$0.27 *$",
+          0.0,
+          0.0,
+          "",
+          302624,
+          0.36,
+          1.46,
+          1.76,
+          0.64,
+          0.41
+        ],
+        [
+          "",
+          21320,
+          0.0,
+          0.0,
+          "$0.24 *$",
+          0.0,
+          0.0,
+          "",
+          292230,
+          0.3,
+          1.65,
+          1.5,
+          0.52,
+          0.32
+        ],
+        [
+          "$20 \\times 20$",
+          33623,
+          0.0,
+          0.0,
+          "$0.65 *$",
+          0.0,
+          0.0,
+          "$100 \\times 20$",
+          367267,
+          0.57,
+          1.47,
+          2.03,
+          0.69,
+          0.44
+        ],
+        [
+          "",
+          31587,
+          0.0,
+          0.0,
+          "$0.29 *$",
+          0.0,
+          0.0,
+          "",
+          374032,
+          0.31,
+          1.19,
+          1.8,
+          0.56,
+          0.34
+        ],
+        [
+          "",
+          33920,
+          0.0,
+          0.0,
+          "$0.04 *$",
+          0.0,
+          0.0,
+          "",
+          371417,
+          0.47,
+          1.31,
+          1.93,
+          0.62,
+          0.36
+        ],
+        [
+          "",
+          31661,
+          0.0,
+          0.0,
+          "$0.28 *$",
+          0.0,
+          0.0,
+          "",
+          373822,
+          0.53,
+          1.3,
+          1.86,
+          0.67,
+          0.38
+        ],
+        [
+          "",
+          34557,
+          0.0,
+          0.0,
+          0.26,
+          0.0,
+          0.0,
+          "",
+          376459,
+          0.42,
+          1.2,
+          1.77,
+          0.56,
+          0.32
+        ],
+        [
+          "",
+          32564,
+          0.0,
+          0.0,
+          "$0.30 *$",
+          0.0,
+          0.0,
+          "",
+          372768,
+          0.51,
+          1.46,
+          2.17,
+          0.79,
+          0.41
+        ],
+        [
+          "",
+          32922,
+          0.0,
+          0.0,
+          0.61,
+          0.0,
+          0.0,
+          "",
+          374483,
+          0.42,
+          1.54,
+          1.9,
+          0.75,
+          0.35
+        ],
+        [
+          "",
+          32412,
+          0.0,
+          0.0,
+          0.52,
+          0.0,
+          0.0,
+          "",
+          385456,
+          0.46,
+          1.41,
+          1.96,
+          0.66,
+          0.43
+        ],
+        [
+          "",
+          33600,
+          0.0,
+          0.0,
+          "$0.56 *$",
+          0.0,
+          0.0,
+          "",
+          376063,
+          0.43,
+          1.32,
+          1.82,
+          0.66,
+          0.33
+        ],
+        [
+          "",
+          32262,
+          0.0,
+          0.0,
+          "$0.41 *$",
+          0.0,
+          0.0,
+          "",
+          379899,
+          0.48,
+          1.29,
+          2.05,
+          0.64,
+          0.49
+        ],
+        [
+          "$50 \\times 5$",
+          64803,
+          0.05,
+          0.78,
+          0.79,
+          0.16,
+          0.12,
+          "$200 \\times 10$",
+          1047662,
+          0.48,
+          1.25,
+          1.19,
+          0.89,
+          0.17
+        ],
+        [
+          "",
+          68062,
+          0.06,
+          0.88,
+          0.94,
+          0.13,
+          0.12,
+          "",
+          1036042,
+          0.91,
+          1.52,
+          1.46,
+          1.04,
+          0.3
+        ],
+        [
+          "",
+          63162,
+          0.19,
+          1.21,
+          1.34,
+          0.35,
+          0.38,
+          "",
+          1047571,
+          0.48,
+          1.44,
+          1.12,
+          0.79,
+          0.14
+        ],
+        [
+          "",
+          68226,
+          0.17,
+          1.12,
+          1.27,
+          0.28,
+          0.22,
+          "",
+          1032095,
+          0.52,
+          1.4,
+          1.13,
+          0.65,
+          0.21
+        ],
+        [
+          "",
+          69392,
+          0.09,
+          0.87,
+          0.89,
+          0.15,
+          0.15,
+          "",
+          1037053,
+          0.62,
+          1.29,
+          1.32,
+          0.87,
+          0.13
+        ],
+        [
+          "",
+          66841,
+          0.1,
+          0.8,
+          0.82,
+          0.23,
+          0.18,
+          "",
+          1006650,
+          0.5,
+          1.36,
+          1.39,
+          0.98,
+          0.19
+        ],
+        [
+          "",
+          66258,
+          0.03,
+          0.74,
+          0.95,
+          0.11,
+          0.07,
+          "",
+          1053390,
+          0.89,
+          1.6,
+          1.17,
+          1.11,
+          0.18
+        ],
+        [
+          "",
+          64359,
+          0.05,
+          0.89,
+          0.97,
+          0.22,
+          0.23,
+          "",
+          1046246,
+          0.5,
+          1.38,
+          1.26,
+          0.87,
+          0.13
+        ],
+        [
+          "",
+          62981,
+          0.09,
+          0.83,
+          0.81,
+          0.14,
+          0.14,
+          "",
+          1025145,
+          0.63,
+          1.43,
+          1.11,
+          0.98,
+          0.1
+        ],
+        [
+          "",
+          68898,
+          0.07,
+          1.05,
+          0.93,
+          0.23,
+          0.22,
+          "",
+          1031176,
+          0.78,
+          1.67,
+          1.29,
+          1.09,
+          0.2
+        ],
+        [
+          "$50 \\times 10$",
+          87207,
+          0.33,
+          1.12,
+          2.1,
+          0.42,
+          0.38,
+          "$200 \\times 20$",
+          1226879,
+          0.63,
+          1.35,
+          1.59,
+          1.11,
+          0.26
+        ],
+        [
+          "",
+          82820,
+          0.22,
+          1.09,
+          2.45,
+          0.57,
+          0.6,
+          "",
+          1241811,
+          0.86,
+          1.46,
+          1.45,
+          1.2,
+          0.33
+        ],
+        [
+          "",
+          79987,
+          0.23,
+          1.07,
+          1.84,
+          0.35,
+          0.36,
+          "",
+          1266153,
+          0.84,
+          1.41,
+          1.33,
+          1.0,
+          0.24
+        ],
+        [
+          "",
+          86581,
+          0.17,
+          0.9,
+          1.83,
+          0.28,
+          0.32,
+          "",
+          1237053,
+          0.96,
+          1.55,
+          1.43,
+          1.46,
+          0.29
+        ],
+        [
+          "",
+          86450,
+          0.14,
+          0.9,
+          2.01,
+          0.42,
+          0.38,
+          "",
+          1223531,
+          0.84,
+          1.51,
+          1.64,
+          1.15,
+          0.25
+        ],
+        [
+          "",
+          86637,
+          0.13,
+          0.77,
+          1.55,
+          0.29,
+          0.29,
+          "",
+          1225254,
+          1.01,
+          1.52,
+          1.52,
+          1.29,
+          0.29
+        ],
+        [
+          "",
+          88866,
+          0.25,
+          0.89,
+          1.97,
+          0.51,
+          0.48,
+          "",
+          1241847,
+          0.64,
+          1.26,
+          1.27,
+          1.07,
+          0.25
+        ],
+        [
+          "",
+          86824,
+          0.19,
+          0.94,
+          2.03,
+          0.33,
+          0.36,
+          "",
+          1240820,
+          1.1,
+          1.57,
+          1.57,
+          1.17,
+          0.36
+        ],
+        [
+          "",
+          85526,
+          0.29,
+          1.11,
+          2.1,
+          0.49,
+          0.42,
+          "",
+          1229066,
+          1.12,
+          1.58,
+          1.48,
+          1.25,
+          0.27
+        ],
+        [
+          "",
+          88077,
+          0.09,
+          0.76,
+          2.0,
+          0.45,
+          0.45,
+          "",
+          1247156,
+          0.92,
+          1.38,
+          1.44,
+          1.14,
+          0.28
+        ],
+        [
+          "$50 \\times 20$",
+          125831,
+          0.1,
+          0.65,
+          1.76,
+          0.3,
+          0.39,
+          "$500 \\times 20$",
+          6708053,
+          0.11,
+          0.35,
+          8.9,
+          2.09,
+          2.02
+        ],
+        [
+          "",
+          119259,
+          0.04,
+          0.51,
+          1.58,
+          0.32,
+          0.22,
+          "",
+          6829668,
+          0.25,
+          0.38,
+          8.58,
+          1.85,
+          1.94
+        ],
+        [
+          "",
+          116459,
+          0.19,
+          0.73,
+          2.24,
+          0.56,
+          0.44,
+          "",
+          6747387,
+          0.24,
+          0.41,
+          8.46,
+          2.04,
+          2.04
+        ],
+        [
+          "",
+          120712,
+          0.22,
+          0.61,
+          1.92,
+          0.4,
+          0.34,
+          "",
+          6787054,
+          0.26,
+          0.45,
+          8.75,
+          1.96,
+          1.89
+        ],
+        [
+          "",
+          118184,
+          0.4,
+          0.86,
+          2.3,
+          0.5,
+          0.52,
+          "",
+          6755257,
+          0.39,
+          0.41,
+          8.72,
+          2.01,
+          1.92
+        ],
+        [
+          "",
+          120703,
+          0.19,
+          0.62,
+          1.78,
+          0.42,
+          0.35,
+          "",
+          6751496,
+          0.19,
+          0.42,
+          8.58,
+          2.15,
+          2.13
+        ],
+        [
+          "",
+          122962,
+          0.38,
+          0.71,
+          2.1,
+          0.47,
+          0.47,
+          "",
+          6708860,
+          0.27,
+          0.45,
+          9.15,
+          2.06,
+          2.05
+        ],
+        [
+          "",
+          122489,
+          0.16,
+          0.75,
+          2.24,
+          0.45,
+          0.55,
+          "",
+          6769821,
+          0.31,
+          0.58,
+          8.62,
+          2.24,
+          2.09
+        ],
+        [
+          "",
+          121872,
+          0.17,
+          0.76,
+          1.79,
+          0.4,
+          0.37,
+          "",
+          6720474,
+          0.15,
+          0.46,
+          8.69,
+          1.99,
+          1.91
+        ],
+        [
+          "",
+          124064,
+          0.23,
+          0.9,
+          1.95,
+          0.45,
+          0.42,
+          "",
+          6767645,
+          0.19,
+          0.44,
+          8.51,
+          2.12,
+          2.0
+        ]
+      ],
+      "row_count": 60,
+      "column_count": 14
+    },
+    {
+      "table_number": "II",
+      "table_title": "ARPD ReSults for TAillard's Benchmark Instances. ReSults in Bold Denote the Approach With the Lowest ARPD. ReSults Marked * Denote the Optimum or Best Value that was Achieved at Least Once Among the 20 Repetitions Performed",
+      "headers": [
+        "Instance",
+        "Best",
+        "AGA",
+        "VNS $_{4}$",
+        "HGM-EDA",
+        "Instance",
+        "Best",
+        "AGA",
+        "VNS $_{4}$",
+        "HGM-EDA"
+      ],
+      "rows": [
+        [
+          "$250 \\times 10$",
+          1566623,
+          0.65,
+          1.53,
+          "$0.15 *$",
+          "$350 \\times 20$",
+          3462591,
+          1.03,
+          1.11,
+          "$0.23 *$"
+        ],
+        [
+          "",
+          1589117,
+          0.89,
+          1.56,
+          "$0.25 *$",
+          "",
+          3472888,
+          0.7,
+          0.97,
+          "$0.41 *$"
+        ],
+        [
+          "",
+          1633818,
+          0.64,
+          1.48,
+          "$0.22 *$",
+          "",
+          3448696,
+          0.79,
+          0.98,
+          "$0.20 *$"
+        ],
+        [
+          "",
+          1603824,
+          1.03,
+          1.57,
+          "$0.23 *$",
+          "",
+          3487674,
+          0.34,
+          0.85,
+          "$0.33 *$"
+        ],
+        [
+          "",
+          1652808,
+          0.6,
+          1.26,
+          "$0.19 *$",
+          "",
+          3422898,
+          0.85,
+          1.11,
+          "$0.36 *$"
+        ],
+        [
+          "",
+          1568866,
+          0.38,
+          0.65,
+          "$0.14 *$",
+          "",
+          3451601,
+          0.71,
+          1.1,
+          "$0.39 *$"
+        ],
+        [
+          "",
+          1592812,
+          0.86,
+          1.43,
+          "$0.16 *$",
+          "",
+          3482315,
+          0.52,
+          0.92,
+          "$0.31 *$"
+        ],
+        [
+          "",
+          1552918,
+          0.66,
+          1.46,
+          "$0.17 *$",
+          "",
+          3448931,
+          0.93,
+          1.25,
+          "$0.41 *$"
+        ],
+        [
+          "",
+          1594956,
+          0.76,
+          1.3,
+          "$0.13 *$",
+          "",
+          3471376,
+          1.04,
+          1.12,
+          "$0.34 *$"
+        ],
+        [
+          "",
+          1592563,
+          0.91,
+          1.41,
+          "$0.19 *$",
+          "",
+          3432934,
+          1.0,
+          1.29,
+          "$0.35 *$"
+        ],
+        [
+          "$250 \\times 20$",
+          1847471,
+          0.71,
+          1.4,
+          "$0.21 *$",
+          "$400 \\times 10$",
+          3933307,
+          "$0.18 *$",
+          0.51,
+          0.81
+        ],
+        [
+          "",
+          1892483,
+          1.01,
+          1.38,
+          "$0.17 *$",
+          "",
+          3910048,
+          0.18,
+          0.71,
+          "$0.36 *$"
+        ],
+        [
+          "",
+          1879796,
+          0.61,
+          1.13,
+          "$0.17 *$",
+          "",
+          3934557,
+          "$0.10 *$",
+          0.52,
+          0.53
+        ],
+        [
+          "",
+          1852134,
+          0.9,
+          1.32,
+          "$0.18 *$",
+          "",
+          3875265,
+          0.62,
+          1.23,
+          "$0.36 *$"
+        ],
+        [
+          "",
+          1836747,
+          0.76,
+          1.37,
+          "$0.28 *$",
+          "",
+          3932228,
+          0.15,
+          0.34,
+          "$0.43 *$"
+        ],
+        [
+          "",
+          1859562,
+          0.86,
+          1.27,
+          "$0.21 *$",
+          "",
+          3913491,
+          "$0.18 *$",
+          0.42,
+          0.98
+        ],
+        [
+          "",
+          1876186,
+          0.99,
+          1.38,
+          "$0.23 *$",
+          "",
+          3865710,
+          0.19,
+          0.47,
+          "$0.47 *$"
+        ],
+        [
+          "",
+          1850963,
+          0.87,
+          1.46,
+          "$0.27 *$",
+          "",
+          3918728,
+          0.34,
+          0.73,
+          "$0.80 *$"
+        ],
+        [
+          "",
+          1859994,
+          0.98,
+          1.41,
+          "$0.18 *$",
+          "",
+          3903109,
+          0.38,
+          0.69,
+          "$0.62 *$"
+        ],
+        [
+          "",
+          1837633,
+          0.89,
+          1.25,
+          "$0.22 *$",
+          "",
+          3934891,
+          0.12,
+          0.44,
+          "$0.56 *$"
+        ],
+        [
+          "$300 \\times 10$",
+          2241165,
+          0.73,
+          1.32,
+          "$0.09 *$",
+          "$400 \\times 20$",
+          4465942,
+          "$0.34 *$",
+          0.48,
+          1.11
+        ],
+        [
+          "",
+          2221209,
+          0.81,
+          1.47,
+          "$0.17 *$",
+          "",
+          4442588,
+          "$0.26 *$",
+          0.57,
+          1.36
+        ],
+        [
+          "",
+          2239369,
+          0.79,
+          1.34,
+          "$0.16 *$",
+          "",
+          4419467,
+          "$0.25 *$",
+          0.49,
+          0.97
+        ],
+        [
+          "",
+          2216046,
+          0.57,
+          1.05,
+          "$0.19 *$",
+          "",
+          4450298,
+          "$0.42 *$",
+          0.67,
+          1.32
+        ],
+        [
+          "",
+          2255074,
+          0.75,
+          1.17,
+          "$0.13 *$",
+          "",
+          4380600,
+          "$0.32 *$",
+          0.66,
+          1.29
+        ],
+        [
+          "",
+          2259913,
+          0.76,
+          1.31,
+          "$0.15 *$",
+          "",
+          4460906,
+          "$0.23 *$",
+          0.5,
+          1.02
+        ],
+        [
+          "",
+          2244410,
+          0.77,
+          1.36,
+          "$0.18 *$",
+          "",
+          4472922,
+          "$0.50 *$",
+          0.89,
+          1.2
+        ],
+        [
+          "",
+          2203072,
+          0.84,
+          1.17,
+          "$0.21 *$",
+          "",
+          4438057,
+          "$0.16 *$",
+          0.49,
+          1.19
+        ],
+        [
+          "",
+          2245325,
+          0.83,
+          1.22,
+          "$0.21 *$",
+          "",
+          4419300,
+          "$0.15 *$",
+          0.52,
+          1.2
+        ],
+        [
+          "",
+          2239058,
+          0.61,
+          1.23,
+          "$0.08 *$",
+          "",
+          4402417,
+          "$0.19 *$",
+          0.48,
+          1.02
+        ],
+        [
+          "$300 \\times 20$",
+          2586158,
+          1.01,
+          1.39,
+          "$0.27 *$",
+          "$450 \\times 10$",
+          4870929,
+          "$0.26 *$",
+          0.7,
+          1.67
+        ],
+        [
+          "",
+          2569577,
+          0.91,
+          1.21,
+          "$0.29 *$",
+          "",
+          4884041,
+          "$0.16 *$",
+          0.48,
+          1.75
+        ],
+        [
+          "",
+          2588574,
+          0.96,
+          1.39,
+          "$0.23 *$",
+          "",
+          4930649,
+          "$0.19 *$",
+          0.59,
+          0.98
+        ],
+        [
+          "",
+          2584806,
+          0.73,
+          1.23,
+          "$0.15 *$",
+          "",
+          4933807,
+          "$0.02 *$",
+          0.06,
+          1.48
+        ],
+        [
+          "",
+          2601077,
+          0.91,
+          1.28,
+          "$0.20 *$",
+          "",
+          4934094,
+          "$0.12 *$",
+          0.27,
+          1.66
+        ],
+        [
+          "",
+          2605560,
+          1.06,
+          1.47,
+          "$0.32 *$",
+          "",
+          4922342,
+          "$0.09 *$",
+          0.51,
+          1.37
+        ],
+        [
+          "",
+          2593450,
+          0.88,
+          1.1,
+          "$0.21 *$",
+          "",
+          4931140,
+          "$0.09 *$",
+          0.5,
+          1.43
+        ],
+        [
+          "",
+          2556756,
+          0.99,
+          1.55,
+          "$0.35 *$",
+          "",
+          4933524,
+          "$0.11 *$",
+          0.55,
+          1.37
+        ],
+        [
+          "",
+          2583311,
+          1.13,
+          1.32,
+          "$0.27 *$",
+          "",
+          4906973,
+          "$0.13 *$",
+          0.66,
+          1.39
+        ],
+        [
+          "",
+          2625824,
+          0.75,
+          1.03,
+          "$0.24 *$",
+          "",
+          4976526,
+          "$0.11 *$",
+          0.57,
+          1.63
+        ],
+        [
+          "$350 \\times 10$",
+          3051090,
+          0.69,
+          1.28,
+          "$0.15 *$",
+          "$450 \\times 20$",
+          5532585,
+          "$0.30 *$",
+          0.39,
+          1.78
+        ],
+        [
+          "",
+          2996234,
+          0.56,
+          0.86,
+          "$0.11 *$",
+          "",
+          5545906,
+          "$0.33 *$",
+          0.62,
+          1.76
+        ],
+        [
+          "",
+          2977597,
+          1.26,
+          1.34,
+          "$0.24 *$",
+          "",
+          5584602,
+          "$0.28 *$",
+          0.41,
+          1.36
+        ],
+        [
+          "",
+          3026374,
+          0.87,
+          1.37,
+          "$0.18 *$",
+          "",
+          5588641,
+          "$0.20 *$",
+          0.22,
+          1.61
+        ],
+        [
+          "",
+          3031433,
+          0.84,
+          1.49,
+          "$0.16 *$",
+          "",
+          5556343,
+          "$0.26 *$",
+          0.52,
+          1.73
+        ],
+        [
+          "",
+          3023478,
+          0.72,
+          1.32,
+          "$0.17 *$",
+          "",
+          5507299,
+          "$0.26 *$",
+          0.73,
+          2.02
+        ],
+        [
+          "",
+          3037375,
+          0.68,
+          1.2,
+          "$0.14 *$",
+          "",
+          5534081,
+          "$0.41 *$",
+          0.6,
+          1.85
+        ],
+        [
+          "",
+          3078709,
+          0.7,
+          0.88,
+          "$0.14 *$",
+          "",
+          5580460,
+          "$0.20 *$",
+          0.43,
+          1.6
+        ],
+        [
+          "",
+          3029894,
+          0.82,
+          1.35,
+          "$0.17 *$",
+          "",
+          5558982,
+          "$0.37 *$",
+          0.3,
+          1.49
+        ],
+        [
+          "",
+          3014352,
+          0.71,
+          1.26,
+          "$0.21 *$",
+          "",
+          5559057,
+          "$0.15 *$",
+          0.06,
+          1.28
+        ]
+      ],
+      "row_count": 50,
+      "column_count": 10
+    },
+    {
+      "table_number": "III",
+      "table_title": "$\\theta_{\\text {upper }}$ Values and Maximum Number of Evaluations for TAILlard's Benchmark",
+      "headers": [
+        "Instance",
+        "$\\theta_{\\min }$",
+        "$\\theta_{\\max }$",
+        "$\\theta_{\\text {upper }}$",
+        "Evaluations"
+      ],
+      "rows": [
+        [
+          "$20 \\times 05$",
+          1.0,
+          3.0,
+          1.5,
+          182224100
+        ],
+        [
+          "$20 \\times 10$",
+          1.0,
+          3.0,
+          1.4,
+          224784800
+        ],
+        [
+          "$20 \\times 20$",
+          1.0,
+          3.0,
+          1.4,
+          256896400
+        ],
+        [
+          "$50 \\times 05$",
+          2.5,
+          5.5,
+          3.7,
+          220712150
+        ],
+        [
+          "$50 \\times 10$",
+          2.5,
+          5.5,
+          2.8,
+          256208100
+        ],
+        [
+          "$50 \\times 20$",
+          2.5,
+          5.5,
+          3.0,
+          275954150
+        ],
+        [
+          "$100 \\times 05$",
+          3.5,
+          6.0,
+          4.9,
+          235879800
+        ],
+        [
+          "$100 \\times 10$",
+          3.5,
+          6.0,
+          3.7,
+          266211000
+        ],
+        [
+          "$100 \\times 20$",
+          3.5,
+          6.0,
+          4.7,
+          283040000
+        ],
+        [
+          "$200 \\times 10$",
+          4.0,
+          6.0,
+          5.3,
+          272515500
+        ],
+        [
+          "$200 \\times 20$",
+          4.0,
+          6.0,
+          5.5,
+          287728850
+        ],
+        [
+          "$500 \\times 20$",
+          4.0,
+          7.0,
+          4.4,
+          260316750
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "IV",
+      "table_title": "$\\theta_{\\text {upper }}$ Values and Maximum Number of Evaluations for the RANDOM BENCHMARK",
+      "headers": [
+        "Instance",
+        "$\\theta_{\\min }$",
+        "$\\theta_{\\max }$",
+        "$\\theta_{\\text {upper }}$",
+        "Evaluations"
+      ],
+      "rows": [
+        [
+          "$250 \\times 10$",
+          4.0,
+          7.0,
+          5.2,
+          267779100
+        ],
+        [
+          "$250 \\times 20$",
+          4.0,
+          7.0,
+          4.4,
+          284574350
+        ],
+        [
+          "$300 \\times 10$",
+          4.0,
+          7.0,
+          4.6,
+          273847500
+        ],
+        [
+          "$300 \\times 20$",
+          4.0,
+          7.0,
+          5.2,
+          284672900
+        ],
+        [
+          "$350 \\times 10$",
+          4.0,
+          7.0,
+          6.6,
+          278369000
+        ],
+        [
+          "$350 \\times 20$",
+          4.0,
+          7.0,
+          7.0,
+          286225300
+        ],
+        [
+          "$400 \\times 10$",
+          4.0,
+          7.0,
+          5.5,
+          275491800
+        ],
+        [
+          "$400 \\times 20$",
+          4.0,
+          7.0,
+          5.0,
+          283913500
+        ],
+        [
+          "$450 \\times 10$",
+          4.0,
+          7.0,
+          4.0,
+          277455350
+        ],
+        [
+          "$450 \\times 20$",
+          4.0,
+          7.0,
+          6.7,
+          269271450
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    }
+  ]
+}

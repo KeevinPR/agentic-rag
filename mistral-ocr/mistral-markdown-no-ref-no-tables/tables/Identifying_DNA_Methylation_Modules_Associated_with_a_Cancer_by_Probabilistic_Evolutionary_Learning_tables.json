@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Identifying DNA Methylation Modules Associated with a Cancer by Probabilistic Evolutionary Learning.md",
+    "filename": "Identifying DNA Methylation Modules Associated with a Cancer by Probabilistic Evolutionary Learning.md",
+    "title": "Identifying DNA Methylation Modules Associated with a Cancer by Probabilistic Evolutionary Learning",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "TABLE 1 Finally Selected Methylation Sites.",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "ID",
+          "POSITION",
+          "GENE",
+          "CGI LOCATION"
+        ],
+        [
+          2301815,
+          41605268,
+          1267,
+          "41605074-41605445"
+        ],
+        [
+          7973967,
+          59363339,
+          79,
+          "25467633-25468370"
+        ],
+        [
+          8946332,
+          6840612,
+          12,
+          "6839463-6841283"
+        ],
+        [
+          11833861,
+          28279748,
+          98,
+          "28278827-28279833"
+        ],
+        [
+          16585619,
+          36938776,
+          19,
+          "NO CGI*"
+        ],
+        [
+          24164563,
+          71647990,
+          1,
+          "71647419-71649480"
+        ],
+        [
+          "*This site is not located within a CGI.",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "TABLE 2 Classification Performance by Splitting Training and Test Data.",
+      "headers": [
+        "ALGORITHM",
+        "ACCURACY",
+        "SENSITIVITY",
+        "SPECIFICITY"
+      ],
+      "rows": [
+        [
+          "LOGISTIC REGRESSION",
+          0.947,
+          0.919,
+          0.768
+        ],
+        [
+          "SVM",
+          0.908,
+          0.975,
+          0.476
+        ],
+        [
+          "DECISION TREE",
+          0.928,
+          0.894,
+          0.768
+        ],
+        [
+          "NAIVE BAYES",
+          0.935,
+          0.928,
+          0.772
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "TABLE 3 Classification Performance Using the Selected Sites and Randomly Selected Sites.",
+      "headers": [
+        "ALGORITHM",
+        "FEATURE*",
+        "ACCURACY",
+        "SENSITIVITY",
+        "SPECIFICITY"
+      ],
+      "rows": [
+        [
+          "LOGISTIC REGRESSION",
+          "SELECTED",
+          0.939,
+          0.987,
+          0.762
+        ],
+        [
+          "",
+          "$f=5$",
+          0.834,
+          0.968,
+          0.191
+        ],
+        [
+          "",
+          "$f=6$",
+          0.839,
+          0.967,
+          0.224
+        ],
+        [
+          "",
+          "$f=10$",
+          0.855,
+          0.949,
+          0.405
+        ],
+        [
+          "",
+          "$f=20$",
+          0.893,
+          0.95,
+          0.621
+        ],
+        [
+          "SVM",
+          "SELECTED",
+          0.929,
+          0.941,
+          0.857
+        ],
+        [
+          "",
+          "$f=5$",
+          0.829,
+          0.999,
+          0.008
+        ],
+        [
+          "",
+          "$f=6$",
+          0.83,
+          0.998,
+          0.018
+        ],
+        [
+          "",
+          "$f=10$",
+          0.833,
+          0.995,
+          0.054
+        ],
+        [
+          "",
+          "$f=20$",
+          0.867,
+          0.986,
+          0.304
+        ],
+        [
+          "DECISION TREE",
+          "SELECTED",
+          0.939,
+          0.952,
+          0.867
+        ],
+        [
+          "",
+          "$f=5$",
+          0.822,
+          0.936,
+          0.269
+        ],
+        [
+          "",
+          "$f=6$",
+          0.822,
+          0.93,
+          0.302
+        ],
+        [
+          "",
+          "$f=10$",
+          0.826,
+          0.908,
+          0.431
+        ],
+        [
+          "",
+          "$f=20$",
+          0.849,
+          0.91,
+          0.555
+        ],
+        [
+          "NAIVE BAYES",
+          "SELECTED",
+          0.919,
+          0.951,
+          0.765
+        ],
+        [
+          "",
+          "$f=5$",
+          0.774,
+          0.817,
+          0.568
+        ],
+        [
+          "",
+          "$f=6$",
+          0.769,
+          0.802,
+          0.613
+        ],
+        [
+          "",
+          "$f=10$",
+          0.795,
+          0.804,
+          0.753
+        ],
+        [
+          "",
+          "$f=20$",
+          0.837,
+          0.843,
+          0.81
+        ]
+      ],
+      "row_count": 20,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "TABLE 4 Classification Performance Using Only the Selected Sites in Colorectal Cancer.",
+      "headers": [
+        "ALGORITHM",
+        "ACCURACY",
+        "SENSITIVITY",
+        "SPECIFICITY"
+      ],
+      "rows": [
+        [
+          "LOGISTIC REGRESSION",
+          0.9,
+          0.92,
+          0.88
+        ],
+        [
+          "SVM",
+          0.94,
+          0.96,
+          0.92
+        ],
+        [
+          "DECISION TREE",
+          0.64,
+          0.68,
+          0.6
+        ],
+        [
+          "NAIVE BAYES",
+          0.9,
+          0.92,
+          0.88
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    }
+  ]
+}

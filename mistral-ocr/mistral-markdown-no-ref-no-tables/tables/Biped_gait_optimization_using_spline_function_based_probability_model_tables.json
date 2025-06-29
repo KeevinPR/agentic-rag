@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/Biped gait optimization using spline function based probability model.md",
+    "filename": "Biped gait optimization using spline function based probability model.md",
+    "title": "Biped gait optimization using spline function based probability model",
+    "year": "2006"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "",
+      "headers": [
+        "DETIALS OF THE IWO ALGORITHMS AND TEN TIMES EXPERIMENT RESULTS",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "EDA_S",
+          "EDA_G"
+        ],
+        [
+          "Distribution model",
+          "Spline function",
+          "Gaussian Distribution Function $G\\left(\\mu_{i}, \\sigma_{i}\\right)$"
+        ],
+        [
+          "Updating rules for model",
+          2125,
+          "$\\begin{aligned} & \\mu_{i}(k+1)=(1-\\alpha) \\mu_{i}(k)+\\alpha\\left(\\mu_{c, \\text { max }}(k)+\\mu_{c, \\text { random }}(k)-\\mu_{c, \\text { norm }}(k)\\right) \\\\ & \\sigma_{i}(k+1)=(1-\\alpha) \\sigma_{i}(k)+\\alpha \\sqrt{\\frac{1}{N_{v}} \\sum_{j=1}^{N_{v}}\\left(\\mu_{i}^{c}(k)-\\hat{\\mu}_{i}^{c}(k)\\right)^{2}} \\end{aligned}$"
+        ],
+        [
+          "Learning rate",
+          0.01,
+          0.01
+        ],
+        [
+          "$\\frac{1}{10} \\sum_{i=1}^{N_{v}} \\min \\left(\\Upsilon^{c}(1), \\ldots, \\Upsilon^{c}(k)\\right)$",
+          4.62,
+          5.38
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    }
+  ]
+}

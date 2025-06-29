@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/On measuring and improving the quality of linkage learning in modern evolutionary algorithms applied to solve partially additively separable problems.md",
+    "filename": "On measuring and improving the quality of linkage learning in modern evolutionary algorithms applied to solve partially additively separable problems.md",
+    "title": "On measuring and improving the quality of linkage learning in modern evolutionary algorithms applied to solve partially additively separable problems",
+    "year": "2020"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] Peter A.N. Bosman, Ngoc Hoang Luong, and Dirk Thierens. 2016. Expanding from Discrete Cartesian to Permutation Gene-pool Optimal Mixing Evolutionary Algorithms. In Proceedings of the Genetic and Evolutionary Computation Conference 2016 (GECCO '16). ACM, 637-644.\n[2] Ping-Lin Chen, Chun-Jen Peng, Chang-Yi Lu, and Tian-Li Yu. 2017. Two-edge Graphical Linkage Model for DSMGA-II. In Proceedings of the Genetic and Evolutionary Computation Conference (GECCO '17). ACM, 745-752.\n[3] David E. Goldberg, Kalyanıney Deb, and Jeffrey Horn. 1992. Massive Multimodality, Deception, and Genetic Algorithms. Urbana (1992).\n[4] Brian W. Goldman and William F. Punch. 2014. Parameter-less Population Pyramid. In Proceedings of the 2014 Annual Conference on Genetic and Evolutionary Computation (GECCO '14). ACM, 785-792.\n[5] Georges R. Harik and Fernando G. Lobo. 1999. A Parameter-less Genetic Algorithm. In Proceedings of the 1st Annual Conference on Genetic and Evolutionary Computation - Volume 1 (GECCO'99). 258-265.\n[6] Shih-Huan Hsu and Tian-Li Yu. 2015. Optimization by Pairwise Linkage Detection, Incremental Linkage Set, and Restricted / Back Mixing: DSMGA-II. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation (GECCO '15). ACM, 519-526.\n[7] Marcin M. Komarnicki and Michal W. Przewozniczek. 2017. Parameter-less Population Pyramid with Feedback. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '17). ACM, 109-110.\n[8] Marcin M. Komarnicki and Michal W. Przewozniczek. 2019. Parameter-Less, Population-Sizing DSMGA-II. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '19). Association for Computing Machinery, New York, NY, USA, 289-290.\n[9] M. N. Omidvar, X. Li, Y. Mei, and X. Yao. 2014. Cooperative Co-Evolution With Differential Grouping for Large Scale Optimization. IEEE Transactions on\n\nEvolutionary Computation 18, 3 (2014), 378-393.\n[10] M. N. Omidvar, M. Yang, Y. Mei, X. Li, and X. Yao. 2017. DG2: A Faster and More Accurate Differential Grouping for Large-Scale Black-Box Optimization. IEEE Transactions on Evolutionary Computation 21, 6 (Dec 2017), 929-942. https ://doi.org/10.1109/TEVC.2017.2694221\n[11] M. W. Przewozniczek. 2017. Problem Encoding Allowing Cheap Fitness Computation of Mutated Individuals. In 2017 IEEE Congress on Evolutionary Computation (CEC). 308-316.\n[12] Michal W. Przewozniczek and Marcin M. Komarnicki. 2018. The Influence of Fitness Caching on Modern Evolutionary Methods and Fair Computation Load Measurement. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '18). ACM, 241-242.\n[13] Michal Witold Przewozniczek and Marcin Michal Komarnicki. 2020. Empirical Linkage Learning. IEEE Transactions on Evolutionary Computation (2020), (in press).\n[14] Dirk Thierens. 2010. The Linkage Tree Genetic Algorithm. In Parallel Problem Solving from Nature, PPSN XI: 11th International Conference, Kraków, Poland, September 11-15, 2010, Proceedings, Part I. 264-273.\n[15] Dirk Thierens and Peter A.N. Bosman. 2013. Hierarchical Problem Solving with the Linkage Tree Genetic Algorithm. In Proceedings of the 15th Annual Conference on Genetic and Evolutionary Computation (GECCO '13). ACM, 877-884.\n[16] L. Darrell Whitley, Francisco Chicano, and Brian W. Goldman. 2016. Gray Box Optimization for Mk Landscapes Mk Landscapes and Max-Keat. Evol. Comput. 24, 3 (Sept. 2016), 491-519. https://doi.org/10.1162/EVCO_a_00184\n[17] Adam M. Zielinski, Marcin M. Komarnicki, and Michal W. Przewozniczek. 2019. Parameter-less Population Pyramid with Automatic Feedback. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '19). ACM, New York, NY, USA, 312-313. https://doi.org/10.1145/3319619.3322052",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Peter A.N. Bosman, Ngoc Hoang Luong, and Dirk Thierens. 2016. Expanding from Discrete Cartesian to Permutation Gene-pool Optimal Mixing Evolutionary Algorithms. In Proceedings of the Genetic and Evolutionary Computation Conference 2016 (GECCO '16). ACM, 637-644."
+      },
+      {
+        "ref_id": "2",
+        "text": "Ping-Lin Chen, Chun-Jen Peng, Chang-Yi Lu, and Tian-Li Yu. 2017. Two-edge Graphical Linkage Model for DSMGA-II. In Proceedings of the Genetic and Evolutionary Computation Conference (GECCO '17). ACM, 745-752."
+      },
+      {
+        "ref_id": "3",
+        "text": "David E. Goldberg, Kalyanıney Deb, and Jeffrey Horn. 1992. Massive Multimodality, Deception, and Genetic Algorithms. Urbana (1992)."
+      },
+      {
+        "ref_id": "4",
+        "text": "Brian W. Goldman and William F. Punch. 2014. Parameter-less Population Pyramid. In Proceedings of the 2014 Annual Conference on Genetic and Evolutionary Computation (GECCO '14). ACM, 785-792."
+      },
+      {
+        "ref_id": "5",
+        "text": "Georges R. Harik and Fernando G. Lobo. 1999. A Parameter-less Genetic Algorithm. In Proceedings of the 1st Annual Conference on Genetic and Evolutionary Computation - Volume 1 (GECCO'99). 258-265."
+      },
+      {
+        "ref_id": "6",
+        "text": "Shih-Huan Hsu and Tian-Li Yu. 2015. Optimization by Pairwise Linkage Detection, Incremental Linkage Set, and Restricted / Back Mixing: DSMGA-II. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation (GECCO '15). ACM, 519-526."
+      },
+      {
+        "ref_id": "7",
+        "text": "Marcin M. Komarnicki and Michal W. Przewozniczek. 2017. Parameter-less Population Pyramid with Feedback. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '17). ACM, 109-110."
+      },
+      {
+        "ref_id": "8",
+        "text": "Marcin M. Komarnicki and Michal W. Przewozniczek. 2019. Parameter-Less, Population-Sizing DSMGA-II. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '19). Association for Computing Machinery, New York, NY, USA, 289-290."
+      },
+      {
+        "ref_id": "9",
+        "text": "M. N. Omidvar, X. Li, Y. Mei, and X. Yao. 2014. Cooperative Co-Evolution With Differential Grouping for Large Scale Optimization. IEEE Transactions on"
+      },
+      {
+        "ref_id": "10",
+        "text": "M. N. Omidvar, M. Yang, Y. Mei, X. Li, and X. Yao. 2017. DG2: A Faster and More Accurate Differential Grouping for Large-Scale Black-Box Optimization. IEEE Transactions on Evolutionary Computation 21, 6 (Dec 2017), 929-942. https ://doi.org/10.1109/TEVC.2017.2694221"
+      },
+      {
+        "ref_id": "11",
+        "text": "M. W. Przewozniczek. 2017. Problem Encoding Allowing Cheap Fitness Computation of Mutated Individuals. In 2017 IEEE Congress on Evolutionary Computation (CEC). 308-316."
+      },
+      {
+        "ref_id": "12",
+        "text": "Michal W. Przewozniczek and Marcin M. Komarnicki. 2018. The Influence of Fitness Caching on Modern Evolutionary Methods and Fair Computation Load Measurement. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '18). ACM, 241-242."
+      },
+      {
+        "ref_id": "13",
+        "text": "Michal Witold Przewozniczek and Marcin Michal Komarnicki. 2020. Empirical Linkage Learning. IEEE Transactions on Evolutionary Computation (2020), (in press)."
+      },
+      {
+        "ref_id": "14",
+        "text": "Dirk Thierens. 2010. The Linkage Tree Genetic Algorithm. In Parallel Problem Solving from Nature, PPSN XI: 11th International Conference, Kraków, Poland, September 11-15, 2010, Proceedings, Part I. 264-273."
+      },
+      {
+        "ref_id": "15",
+        "text": "Dirk Thierens and Peter A.N. Bosman. 2013. Hierarchical Problem Solving with the Linkage Tree Genetic Algorithm. In Proceedings of the 15th Annual Conference on Genetic and Evolutionary Computation (GECCO '13). ACM, 877-884."
+      },
+      {
+        "ref_id": "16",
+        "text": "L. Darrell Whitley, Francisco Chicano, and Brian W. Goldman. 2016. Gray Box Optimization for Mk Landscapes Mk Landscapes and Max-Keat. Evol. Comput. 24, 3 (Sept. 2016), 491-519. https://doi.org/10.1162/EVCO_a_00184"
+      },
+      {
+        "ref_id": "17",
+        "text": "Adam M. Zielinski, Marcin M. Komarnicki, and Michal W. Przewozniczek. 2019. Parameter-less Population Pyramid with Automatic Feedback. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '19). ACM, New York, NY, USA, 312-313. https://doi.org/10.1145/3319619.3322052"
+      }
+    ],
+    "reference_count": 17,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The values of bimodal noised deceptive function of order-10",
+      "headers": [
+        "",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Function value",
+          4,
+          0,
+          2,
+          1,
+          3,
+          2,
+          3,
+          1,
+          2,
+          0,
+          4
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 12
+    },
+    {
+      "table_number": "2",
+      "table_title": "Artificial linkage quality sufficient to solve the problem*",
+      "headers": [
+        "",
+        "Bimodal",
+        "",
+        "Bim.mix",
+        "",
+        "Bim.nois.",
+        "",
+        "Dec.3",
+        "",
+        "St.Dec.3",
+        "",
+        "Dec.5",
+        "",
+        "St.Dec.5",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          400,
+          1200,
+          400,
+          1200,
+          400,
+          1200,
+          400,
+          1200,
+          400,
+          1200,
+          400,
+          1200,
+          400,
+          1200
+        ],
+        [
+          "LT-GOMEA",
+          0.5,
+          0.6,
+          0.5,
+          0.6,
+          0.4,
+          0.5,
+          0.9,
+          1,
+          0.7,
+          0.8,
+          0.8,
+          0.9,
+          0.6,
+          0.7
+        ],
+        [
+          3,
+          0.5,
+          0.6,
+          0.5,
+          0.6,
+          0.5,
+          0.5,
+          0.9,
+          1,
+          0.7,
+          0.8,
+          0.8,
+          0.9,
+          0.6,
+          "N/A"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 15
+    },
+    {
+      "table_number": "3",
+      "table_title": "Population* necessary to get perfect linkage**",
+      "headers": [
+        "",
+        "",
+        "ULI",
+        "",
+        "",
+        "FIHC",
+        "",
+        "Est."
+      ],
+      "rows": [
+        [
+          "",
+          "med",
+          "min",
+          "max",
+          "med",
+          "min",
+          "max",
+          ""
+        ],
+        [
+          0.3399,
+          19,
+          15,
+          25,
+          21,
+          15,
+          28,
+          34
+        ],
+        [
+          0.312,
+          22,
+          14,
+          32,
+          23,
+          14,
+          37,
+          38
+        ],
+        [
+          0.54,
+          34,
+          14,
+          84,
+          38,
+          14,
+          113,
+          118
+        ],
+        [
+          0.512,
+          42,
+          14,
+          99,
+          49,
+          14,
+          121,
+          136
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 8
+    },
+    {
+      "table_number": "4",
+      "table_title": "Main results for the considered problems with $n=1200$",
+      "headers": [
+        "",
+        "LT-GOMEA",
+        "",
+        "",
+        "",
+        "",
+        "psDSMGA-II",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "P3",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "ULI-LT-GOMEA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 17
+    },
+    {
+      "table_number": "5",
+      "table_title": "The median population size with the highest DSM quality for the considered problems with $n=1200$",
+      "headers": [
+        "",
+        "LT-GOMEA",
+        "",
+        "P3",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Standard",
+          "ULI",
+          "Standard",
+          "ULI"
+        ],
+        [
+          0.3,
+          64,
+          96,
+          21,
+          24
+        ],
+        [
+          0.5,
+          256,
+          256,
+          89,
+          88
+        ],
+        [
+          "St.Dec. 3",
+          4096,
+          2048,
+          679,
+          642
+        ],
+        [
+          "St.Dec. 5",
+          16384,
+          8192,
+          3602,
+          2285
+        ],
+        [
+          "Bimodal",
+          16384,
+          1024,
+          8158,
+          1515
+        ],
+        [
+          "Bim.mix",
+          32768,
+          4096,
+          7981,
+          209
+        ],
+        [
+          "Bim.nois.",
+          32768,
+          8192,
+          2209,
+          61
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    }
+  ]
+}

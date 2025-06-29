@@ -1,0 +1,739 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2007/An estimation of distribution algorithm for nurse scheduling.md",
+    "filename": "An estimation of distribution algorithm for nurse scheduling.md",
+    "title": "An estimation of distribution algorithm for nurse scheduling",
+    "year": "2007"
+  },
+  "references": {
+    "header": "## References",
+    "content": "Aickelin, U. (2002). An indirect genetic algorithm for set covering problems. Journal of the Operational Research Society, 53, 1118-1126.\nAickelin, U., \\& Dowsland, K. (2000). Exploiting problem structure in a genetic algorithm approach to a nurse rostering problem. Journal of Scheduling, 3, 139-153.\nAickelin, U., \\& Dowsland, K. (2002). Enhanced direct and indirect genetic algorithm approaches for a mall layout and tenant selection problem. Journal of Heuristics, 8, 503-514.\nAickelin, U., \\& Dowsland, K. (2004). An indirect genetic algorithm for a nurse scheduling problem. Computers and Operations Research 31, 761-778.\nAickelin, U., \\& White, P. (2004). Building better nurse scheduling algorithms. Annals of Operations Research, 128, 159-177.\nBellanti, F., Carello, G., Della Croce, F., \\& Tadei, R. (2004). A greedy-based neighborhood search approach to a nurse rostering problem. European Journal of Operational Research, 153, 28-40.\nBurke, E. K., De Causmaecker, P., \\& Vanden Berghe, G. (1999). A hybrid tabu search algorithm for the nurse rostering problem. In B. McKay et al. (Eds.), Lecture Notes in Artificial Intelligence: Vol. 1585. Simulated evolution and learning (pp. 187-194). Berlin: Springer.\nBurke, E. K., Cowling, P., De Causmaecker, P., \\& Vanden Berghe, G. (2001). A memetic approach to the nurse rostering problem. Applied Intelligence, 15, 199-214.\nBurke, E. K., De Causmaecker, P., Vanden Berghe, G., \\& Van Landeghem, H. (2004). The state of the art of nurse rostering. Journal of Scheduling, 7, 441-499.\n\nCheang, B., Li, H., Lim, A., \\& Rodrigues, B. (2003). Nurse rostering problems-a bibliographic survey. European Journal of Operational Research, 151, 447-460.\nDe Bonet, J. S., Isbell, C. L., \\& Viola, P. (1997). MIMC: finding optima by estimating probability densities. In M. C. Mozer et al. (Eds.), Advances in neural information processing systems (pp. 424). Cambridge: MIT Press.\nDowsland, K. A., \\& Thompson, J. M. (2000). Solving a nurse scheduling with knapsacks, networks and tabu search. Journal of Operational Research Society, 51, 825-833.\nEdwards, D. (2000). Introduction to graphical modelling (2nd ed.). Berlin: Springer.\nGoldberg, D. E. (1989). Genetic algorithms in search, optimization and machine learning. Reading: AddisonWesley.\nHeckerman, D. (1998). A tutorial on learning with Bayesian networks. In M. Jordan (Ed.), Learning in graphical models. Cambridge: MIT Press.\nHolland, J. H. (1975). Adaptation in natural and artificial systems: an introductory analysis with applications to biology, control, and artificial intelligence. University of Michigan Press.\nIsken, M. W., \\& Hancock, W. (1991). A heuristic approach to nurse scheduling in hospital units with nonstationary, urgent demand, and a fixed staff size. Journal of the Society for Health Systems, 2, 24-41.\nJan, A., Yamamoto, M., \\& Ohuchi, A. (2000). Evolutionary algorithms for nurse scheduling problems. In Proceedings of the 2000 congress on evolutionary computation, San Diego (pp. 196-203).\nJaszkiewicz, A. (1997). A metaheuristic approach to multiple objective nurse scheduling. Foundations of Computing and Decision Sciences, 22, 169-184.\nJordan, M. I. (Ed.) (1999). Learning in graphical models. Cambridge: MIT Press.\nLarranaga, P., \\& Lozano, J. A. (2001). Estimation of distribution algorithms. Dordrecht: Kluwer Academic.\nMühlenbein, H., \\& Mahnig, T. (1999). FDA-a scalable evolutionary algorithm for the optimization of additively decomposed functions. Evolutionary Computation, 7, 45-68.\nPearl, J. (1998). Probabilistic reasoning in intelligent systems: networks of plausible inference. Los Altos: Morgan Kaufmann.\nPelikan, M., \\& Goldberg, D. (2000). Research on the Bayesian optimization algorithms (IlliGAL report No 200010). University of Illinois.\n\nPelikan, M., Goldberg, D., \\& Cantu-Paz, E. (1999). BOA: the Bayesian optimization algorithm (IlliGAL report No 99003). University of Illinois.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Aickelin, U. (2002). An indirect genetic algorithm for set covering problems. Journal of the Operational Research Society, 53, 1118-1126."
+      },
+      {
+        "ref_id": "2",
+        "text": "Aickelin, U., \\& Dowsland, K. (2000). Exploiting problem structure in a genetic algorithm approach to a nurse rostering problem. Journal of Scheduling, 3, 139-153."
+      },
+      {
+        "ref_id": "3",
+        "text": "Aickelin, U., \\& Dowsland, K. (2002). Enhanced direct and indirect genetic algorithm approaches for a mall layout and tenant selection problem. Journal of Heuristics, 8, 503-514."
+      },
+      {
+        "ref_id": "4",
+        "text": "Aickelin, U., \\& Dowsland, K. (2004). An indirect genetic algorithm for a nurse scheduling problem. Computers and Operations Research 31, 761-778."
+      },
+      {
+        "ref_id": "5",
+        "text": "Aickelin, U., \\& White, P. (2004). Building better nurse scheduling algorithms. Annals of Operations Research, 128, 159-177."
+      },
+      {
+        "ref_id": "6",
+        "text": "Bellanti, F., Carello, G., Della Croce, F., \\& Tadei, R. (2004). A greedy-based neighborhood search approach to a nurse rostering problem. European Journal of Operational Research, 153, 28-40."
+      },
+      {
+        "ref_id": "7",
+        "text": "Burke, E. K., De Causmaecker, P., \\& Vanden Berghe, G. (1999). A hybrid tabu search algorithm for the nurse rostering problem. In B. McKay et al. (Eds.), Lecture Notes in Artificial Intelligence: Vol. 1585. Simulated evolution and learning (pp. 187-194). Berlin: Springer."
+      },
+      {
+        "ref_id": "8",
+        "text": "Burke, E. K., Cowling, P., De Causmaecker, P., \\& Vanden Berghe, G. (2001). A memetic approach to the nurse rostering problem. Applied Intelligence, 15, 199-214."
+      },
+      {
+        "ref_id": "9",
+        "text": "Burke, E. K., De Causmaecker, P., Vanden Berghe, G., \\& Van Landeghem, H. (2004). The state of the art of nurse rostering. Journal of Scheduling, 7, 441-499."
+      },
+      {
+        "ref_id": "10",
+        "text": "Cheang, B., Li, H., Lim, A., \\& Rodrigues, B. (2003). Nurse rostering problems-a bibliographic survey. European Journal of Operational Research, 151, 447-460."
+      },
+      {
+        "ref_id": "11",
+        "text": "De Bonet, J. S., Isbell, C. L., \\& Viola, P. (1997). MIMC: finding optima by estimating probability densities. In M. C. Mozer et al. (Eds.), Advances in neural information processing systems (pp. 424). Cambridge: MIT Press."
+      },
+      {
+        "ref_id": "12",
+        "text": "Dowsland, K. A., \\& Thompson, J. M. (2000). Solving a nurse scheduling with knapsacks, networks and tabu search. Journal of Operational Research Society, 51, 825-833."
+      },
+      {
+        "ref_id": "13",
+        "text": "Edwards, D. (2000). Introduction to graphical modelling (2nd ed.). Berlin: Springer."
+      },
+      {
+        "ref_id": "14",
+        "text": "Goldberg, D. E. (1989). Genetic algorithms in search, optimization and machine learning. Reading: AddisonWesley."
+      },
+      {
+        "ref_id": "15",
+        "text": "Heckerman, D. (1998). A tutorial on learning with Bayesian networks. In M. Jordan (Ed.), Learning in graphical models. Cambridge: MIT Press."
+      },
+      {
+        "ref_id": "16",
+        "text": "Holland, J. H. (1975). Adaptation in natural and artificial systems: an introductory analysis with applications to biology, control, and artificial intelligence. University of Michigan Press."
+      },
+      {
+        "ref_id": "17",
+        "text": "Isken, M. W., \\& Hancock, W. (1991). A heuristic approach to nurse scheduling in hospital units with nonstationary, urgent demand, and a fixed staff size. Journal of the Society for Health Systems, 2, 24-41."
+      },
+      {
+        "ref_id": "18",
+        "text": "Jan, A., Yamamoto, M., \\& Ohuchi, A. (2000). Evolutionary algorithms for nurse scheduling problems. In Proceedings of the 2000 congress on evolutionary computation, San Diego (pp. 196-203)."
+      },
+      {
+        "ref_id": "19",
+        "text": "Jaszkiewicz, A. (1997). A metaheuristic approach to multiple objective nurse scheduling. Foundations of Computing and Decision Sciences, 22, 169-184."
+      },
+      {
+        "ref_id": "20",
+        "text": "Jordan, M. I. (Ed.) (1999). Learning in graphical models. Cambridge: MIT Press."
+      },
+      {
+        "ref_id": "21",
+        "text": "Larranaga, P., \\& Lozano, J. A. (2001). Estimation of distribution algorithms. Dordrecht: Kluwer Academic."
+      },
+      {
+        "ref_id": "22",
+        "text": "Mühlenbein, H., \\& Mahnig, T. (1999). FDA-a scalable evolutionary algorithm for the optimization of additively decomposed functions. Evolutionary Computation, 7, 45-68."
+      },
+      {
+        "ref_id": "23",
+        "text": "Pearl, J. (1998). Probabilistic reasoning in intelligent systems: networks of plausible inference. Los Altos: Morgan Kaufmann."
+      },
+      {
+        "ref_id": "24",
+        "text": "Pelikan, M., \\& Goldberg, D. (2000). Research on the Bayesian optimization algorithms (IlliGAL report No 200010). University of Illinois."
+      },
+      {
+        "ref_id": "25",
+        "text": "Pelikan, M., Goldberg, D., \\& Cantu-Paz, E. (1999). BOA: the Bayesian optimization algorithm (IlliGAL report No 99003). University of Illinois."
+      }
+    ],
+    "reference_count": 25,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Comparison of results over 52 instances",
+      "headers": [
+        "Set",
+        "IP",
+        "GA",
+        "Rd",
+        "CP",
+        "Op",
+        "Inf",
+        "\\#",
+        "$<3$"
+      ],
+      "rows": [
+        [
+          1,
+          8,
+          8,
+          "N/A",
+          27,
+          8,
+          0,
+          19,
+          20
+        ],
+        [
+          2,
+          49,
+          50,
+          "N/A",
+          85,
+          56,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          50,
+          50,
+          "N/A",
+          97,
+          50,
+          0,
+          2,
+          5
+        ],
+        [
+          4,
+          17,
+          17,
+          "N/A",
+          23,
+          17,
+          0,
+          20,
+          20
+        ],
+        [
+          5,
+          11,
+          11,
+          "N/A",
+          51,
+          11,
+          0,
+          8,
+          16
+        ],
+        [
+          6,
+          2,
+          2,
+          "N/A",
+          51,
+          2,
+          0,
+          17,
+          17
+        ],
+        [
+          7,
+          11,
+          11,
+          "N/A",
+          80,
+          14,
+          0,
+          0,
+          3
+        ],
+        [
+          8,
+          14,
+          15,
+          "N/A",
+          62,
+          15,
+          0,
+          0,
+          11
+        ],
+        [
+          9,
+          3,
+          3,
+          "N/A",
+          44,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          2,
+          4,
+          "N/A",
+          12,
+          2,
+          0,
+          2,
+          10
+        ],
+        [
+          11,
+          2,
+          2,
+          "N/A",
+          12,
+          2,
+          0,
+          2,
+          20
+        ],
+        [
+          12,
+          2,
+          2,
+          "N/A",
+          47,
+          3,
+          0,
+          0,
+          2
+        ],
+        [
+          13,
+          2,
+          2,
+          "N/A",
+          17,
+          3,
+          0,
+          0,
+          20
+        ],
+        [
+          14,
+          3,
+          3,
+          "N/A",
+          102,
+          4,
+          0,
+          0,
+          7
+        ],
+        [
+          15,
+          3,
+          3,
+          "N/A",
+          9,
+          4,
+          0,
+          0,
+          20
+        ],
+        [
+          16,
+          37,
+          38,
+          "N/A",
+          55,
+          38,
+          0,
+          0,
+          20
+        ],
+        [
+          17,
+          9,
+          9,
+          "N/A",
+          146,
+          9,
+          0,
+          4,
+          11
+        ],
+        [
+          18,
+          18,
+          19,
+          "N/A",
+          73,
+          19,
+          0,
+          0,
+          20
+        ],
+        [
+          19,
+          1,
+          1,
+          "N/A",
+          135,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          20,
+          7,
+          8,
+          "N/A",
+          53,
+          7,
+          0,
+          5,
+          19
+        ],
+        [
+          21,
+          0,
+          0,
+          "N/A",
+          19,
+          1,
+          0,
+          0,
+          20
+        ],
+        [
+          22,
+          25,
+          26,
+          "N/A",
+          56,
+          26,
+          0,
+          0,
+          15
+        ],
+        [
+          23,
+          0,
+          0,
+          "N/A",
+          119,
+          1,
+          0,
+          0,
+          20
+        ],
+        [
+          24,
+          1,
+          1,
+          "N/A",
+          4,
+          1,
+          0,
+          20,
+          20
+        ],
+        [
+          25,
+          0,
+          0,
+          "N/A",
+          3,
+          0,
+          0,
+          18,
+          20
+        ],
+        [
+          26,
+          48,
+          48,
+          "N/A",
+          222,
+          52,
+          0,
+          0,
+          1
+        ],
+        [
+          27,
+          2,
+          2,
+          "N/A",
+          158,
+          28,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          63,
+          63,
+          "N/A",
+          88,
+          65,
+          0,
+          0,
+          3
+        ],
+        [
+          29,
+          15,
+          141,
+          "N/A",
+          31,
+          109,
+          0,
+          0,
+          0
+        ],
+        [
+          30,
+          35,
+          42,
+          "N/A",
+          180,
+          38,
+          0,
+          0,
+          3
+        ],
+        [
+          31,
+          62,
+          166,
+          "N/A",
+          253,
+          159,
+          0,
+          0,
+          0
+        ],
+        [
+          32,
+          40,
+          99,
+          "N/A",
+          102,
+          43,
+          0,
+          0,
+          4
+        ],
+        [
+          33,
+          10,
+          10,
+          "N/A",
+          30,
+          11,
+          0,
+          0,
+          8
+        ],
+        [
+          34,
+          38,
+          48,
+          "N/A",
+          95,
+          41,
+          0,
+          0,
+          2
+        ],
+        [
+          35,
+          35,
+          35,
+          "N/A",
+          118,
+          46,
+          0,
+          0,
+          0
+        ],
+        [
+          36,
+          32,
+          41,
+          "N/A",
+          130,
+          45,
+          0,
+          0,
+          0
+        ],
+        [
+          37,
+          5,
+          5,
+          "N/A",
+          28,
+          7,
+          0,
+          0,
+          7
+        ],
+        [
+          38,
+          13,
+          14,
+          "N/A",
+          130,
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          39,
+          5,
+          5,
+          "N/A",
+          44,
+          8,
+          0,
+          0,
+          3
+        ],
+        [
+          40,
+          7,
+          8,
+          "N/A",
+          51,
+          8,
+          0,
+          0,
+          10
+        ],
+        [
+          41,
+          54,
+          54,
+          "N/A",
+          87,
+          55,
+          0,
+          0,
+          15
+        ],
+        [
+          42,
+          38,
+          38,
+          "N/A",
+          188,
+          41,
+          0,
+          0,
+          1
+        ],
+        [
+          43,
+          22,
+          39,
+          "N/A",
+          86,
+          23,
+          0,
+          0,
+          13
+        ]
+      ],
+      "row_count": 43,
+      "column_count": 9
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 (Continued)",
+      "headers": [
+        "Set",
+        "IP",
+        "GA",
+        "Rd",
+        "CP",
+        "Op",
+        "Inf",
+        "\\#",
+        "$<3$"
+      ],
+      "rows": [
+        [
+          44,
+          19,
+          19,
+          "N/A",
+          70,
+          24,
+          0,
+          0,
+          0
+        ],
+        [
+          45,
+          3,
+          3,
+          "N/A",
+          34,
+          6,
+          0,
+          0,
+          2
+        ],
+        [
+          46,
+          3,
+          3,
+          "N/A",
+          196,
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          47,
+          3,
+          4,
+          "N/A",
+          11,
+          3,
+          0,
+          13,
+          20
+        ],
+        [
+          48,
+          4,
+          6,
+          "N/A",
+          35,
+          5,
+          0,
+          0,
+          10
+        ],
+        [
+          49,
+          27,
+          30,
+          "N/A",
+          69,
+          30,
+          0,
+          0,
+          2
+        ],
+        [
+          50,
+          107,
+          211,
+          "N/A",
+          162,
+          109,
+          0,
+          0,
+          0
+        ],
+        [
+          51,
+          74,
+          "N/A",
+          "N/A",
+          197,
+          171,
+          0,
+          0,
+          0
+        ],
+        [
+          52,
+          58,
+          "N/A",
+          "N/A",
+          135,
+          67,
+          0,
+          0,
+          0
+        ],
+        [
+          "Av.",
+          21,
+          37,
+          "N/A",
+          83,
+          30,
+          0,
+          3,
+          9
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 9
+    }
+  ]
+}

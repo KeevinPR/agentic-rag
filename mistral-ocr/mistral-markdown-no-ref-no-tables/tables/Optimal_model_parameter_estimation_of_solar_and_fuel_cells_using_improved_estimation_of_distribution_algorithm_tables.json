@@ -1,0 +1,767 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Optimal model parameter estimation of solar and fuel cells using improved estimation of distribution algorithm.md",
+    "filename": "Optimal model parameter estimation of solar and fuel cells using improved estimation of distribution algorithm.md",
+    "title": "Optimal model parameter estimation of solar and fuel cells using improved estimation of distribution algorithm",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Convergence analysis of different algorithm.",
+      "headers": [
+        "Average Iterations to Converge into 0.001 Boundary",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "IED",
+          "ED",
+          "BBO-M",
+          "DE",
+          "ABSO",
+          "PS",
+          "SA"
+        ],
+        [
+          82,
+          93,
+          87,
+          98,
+          96,
+          "Not Able to Reach",
+          "Not Able to Reach"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Solar cell-parameter values.",
+      "headers": [
+        "Parameter",
+        "$\\mathrm{R}_{\\mathrm{s}}(\\Omega)$",
+        "$\\mathrm{R}_{\\mathrm{sh}}(\\Omega)$",
+        "$\\mathrm{I}_{\\mathrm{ph}}(\\mathrm{A})$",
+        "$\\mathrm{I}_{\\mathrm{SA}}(\\mu \\mathrm{A})$",
+        "N"
+      ],
+      "rows": [
+        [
+          "Lower",
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          "Upper",
+          0.5,
+          100,
+          1,
+          1,
+          2
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Calculated error - double diode model.",
+      "headers": [
+        "Benchmark Data [2]",
+        "$\\mathrm{I}_{\\mathrm{c}}(\\mathrm{A})$",
+        "Error $\\left(\\boldsymbol{F}_{\\boldsymbol{X} \\cdot \\boldsymbol{0} \\boldsymbol{0}}\\right.$ )"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{V}_{\\mathrm{f}}(\\mathrm{V})$",
+          "$\\mathrm{I}_{\\mathrm{c}}(\\mathrm{A})$",
+          ""
+        ],
+        [
+          -0.2057,
+          0.764,
+          0.764058951
+        ],
+        [
+          -0.1291,
+          0.762,
+          0.762668723
+        ],
+        [
+          -0.0588,
+          0.7605,
+          0.761392353
+        ],
+        [
+          0.0057,
+          0.7605,
+          0.760219413
+        ],
+        [
+          0.0646,
+          0.76,
+          0.75914538
+        ],
+        [
+          0.1185,
+          0.759,
+          0.758152581
+        ],
+        [
+          0.1678,
+          0.757,
+          0.757215199
+        ],
+        [
+          0.2132,
+          0.757,
+          0.756268435
+        ],
+        [
+          0.2545,
+          0.7555,
+          0.755204231
+        ],
+        [
+          0.2924,
+          0.754,
+          0.753756051
+        ],
+        [
+          0.3269,
+          0.7505,
+          0.751444216
+        ],
+        [
+          0.3585,
+          0.7465,
+          0.747361486
+        ],
+        [
+          0.3873,
+          0.7385,
+          0.740086928
+        ],
+        [
+          0.4137,
+          0.728,
+          0.727338971
+        ],
+        [
+          0.4373,
+          0.7065,
+          0.706956785
+        ],
+        [
+          0.459,
+          0.6755,
+          0.675335092
+        ],
+        [
+          0.4784,
+          0.632,
+          0.630914022
+        ],
+        [
+          0.496,
+          0.573,
+          0.572195159
+        ],
+        [
+          0.5119,
+          0.499,
+          0.499975591
+        ],
+        [
+          0.5265,
+          0.413,
+          0.414096445
+        ],
+        [
+          0.5398,
+          0.3165,
+          0.31801773
+        ],
+        [
+          0.5521,
+          0.212,
+          0.212712198
+        ],
+        [
+          0.5633,
+          0.1335,
+          0.102865319
+        ],
+        [
+          0.5736,
+          -0.01,
+          -0.008000921
+        ],
+        [
+          0.5833,
+          -0.123,
+          -0.124671289
+        ],
+        [
+          0.59,
+          -0.21,
+          -0.207475425
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "Calculated error - single diode model.",
+      "headers": [
+        "Benchmark Data [2]",
+        "$\\mathrm{I}_{\\mathrm{c}}(\\mathrm{A})$",
+        "Error $\\left(\\boldsymbol{F}_{\\boldsymbol{X} \\cdot \\boldsymbol{0} \\boldsymbol{0}}\\right.$ )"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{V}_{\\mathrm{f}}(\\mathrm{V})$",
+          "$\\mathrm{I}_{\\mathrm{c}}(\\mathrm{A})$",
+          ""
+        ],
+        [
+          -0.2057,
+          0.764,
+          0.764090757
+        ],
+        [
+          -0.1291,
+          0.762,
+          0.762664281
+        ],
+        [
+          -0.0588,
+          0.7605,
+          0.761354796
+        ],
+        [
+          0.0057,
+          0.7605,
+          0.760151913
+        ],
+        [
+          0.0646,
+          0.76,
+          0.759051697
+        ],
+        [
+          0.1185,
+          0.759,
+          0.758037509
+        ],
+        [
+          0.1678,
+          0.757,
+          0.757085577
+        ],
+        [
+          0.2132,
+          0.757,
+          0.75613407
+        ],
+        [
+          0.2545,
+          0.7555,
+          0.755078319
+        ],
+        [
+          0.2924,
+          0.754,
+          0.753653892
+        ],
+        [
+          0.3269,
+          0.7505,
+          0.751379253
+        ],
+        [
+          0.3585,
+          0.7465,
+          0.747340016
+        ],
+        [
+          0.3873,
+          0.7385,
+          0.740100966
+        ],
+        [
+          0.4137,
+          0.728,
+          0.727363683
+        ],
+        [
+          0.4373,
+          0.7065,
+          0.706952823
+        ],
+        [
+          0.459,
+          0.6755,
+          0.675261225
+        ],
+        [
+          0.4784,
+          0.632,
+          0.630743468
+        ],
+        [
+          0.496,
+          0.573,
+          0.571921132
+        ],
+        [
+          0.5119,
+          0.499,
+          0.499609875
+        ],
+        [
+          0.5265,
+          0.413,
+          0.413663022
+        ],
+        [
+          0.5398,
+          0.3165,
+          0.317534334
+        ],
+        [
+          0.5521,
+          0.212,
+          0.212185804
+        ],
+        [
+          0.5633,
+          0.1335,
+          0.102283227
+        ],
+        [
+          0.5736,
+          -0.01,
+          -0.008692791
+        ],
+        [
+          0.5833,
+          -0.123,
+          -0.125496253
+        ],
+        [
+          0.59,
+          -0.21,
+          -0.208478774
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Parameter",
+        "$\\mathbf{e}_{1}$",
+        "$\\mathbf{e}_{2}$",
+        "$\\mathbf{e}_{3}$",
+        "$\\mathbf{e}_{4}$",
+        "$\\lambda$",
+        "$\\mathrm{R}_{\\mathrm{c}}$",
+        "b"
+      ],
+      "rows": [
+        [
+          1,
+          -1.19969,
+          0.001,
+          "3.60E-05",
+          "-2.60E-04",
+          10,
+          0.0001,
+          0.0136
+        ],
+        [
+          1,
+          -0.8532,
+          0.005,
+          "9.80E-05",
+          "-9.54E-05",
+          24,
+          0.0008,
+          0.5
+        ],
+        [
+          2,
+          -0.952,
+          0.001,
+          "7.40E-05",
+          "-1.98E-04",
+          14,
+          0.0001,
+          0.016
+        ],
+        [
+          2,
+          -0.944,
+          0.005,
+          "7.80E-05",
+          "-1.88E-04",
+          23,
+          0.0008,
+          0.5
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "6",
+      "table_title": "Double diode model parameter estimation-comparison.",
+      "headers": [
+        "Parameters",
+        "IED (Proposed)",
+        "BBO-M [2]",
+        "DE [30]",
+        "ABSO [31]",
+        "PS [32]",
+        "SA [33]"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{R}_{\\mathrm{t}}(\\Omega)$",
+          0.03664,
+          0.03664,
+          0.03661,
+          0.03657,
+          0.032,
+          0.0345
+        ],
+        [
+          "$\\mathrm{R}_{\\text {th }}(\\Omega)$",
+          55.0494,
+          55.0494,
+          56.0213,
+          54.6219,
+          81.3008,
+          43.1034
+        ],
+        [
+          "$\\mathrm{I}_{\\text {ph }}(\\mathrm{A})$",
+          0.76083,
+          0.76083,
+          0.76079,
+          0.76078,
+          0.7602,
+          0.7623
+        ],
+        [
+          "$\\mathrm{I}_{\\text {SA3 }}(\\mu \\mathrm{A})$",
+          "$5.91 \\mathrm{E}-07$",
+          0.59115,
+          0.36605,
+          0.26713,
+          0.9889,
+          0.4767
+        ],
+        [
+          "$\\mathrm{I}_{\\text {SA2 }}(\\mu \\mathrm{A})$",
+          "$2.45 \\mathrm{E}-07$",
+          0.24523,
+          0.2632,
+          0.38191,
+          0.0001,
+          0.01
+        ],
+        [
+          "$\\mathrm{n}_{1}$",
+          2,
+          2,
+          1.91164,
+          1.46512,
+          1.6,
+          1.5172
+        ],
+        [
+          "$\\mathrm{n}_{2}$",
+          1.45798,
+          1.45798,
+          1.465,
+          1.98152,
+          1.192,
+          2
+        ],
+        [
+          "$\\boldsymbol{F}_{\\text {SC-20D }}$",
+          0.0009826,
+          0.00098272,
+          0.001,
+          "$9.83 \\mathrm{E}-04$",
+          0.01518,
+          0.01664
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "7",
+      "table_title": "Single diode model parameter estimation-comparison.",
+      "headers": [
+        "Parameters",
+        "IED (Proposed)",
+        "BBO-M [2]",
+        "DE [30]",
+        "IADE [30]",
+        "ABSO [31]",
+        "CPSO [35]",
+        "GA [34]",
+        "PS [32]",
+        "SA [33]",
+        "SA-MHJ [36]"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{R}_{\\mathrm{t}}(\\Omega)$",
+          0.03636013,
+          0.03642,
+          0.03598,
+          0.03621,
+          0.03659,
+          0.0354,
+          0.0299,
+          0.0313,
+          0.0345,
+          0.0358
+        ],
+        [
+          "$\\mathrm{R}_{\\text {th }}(\\Omega)$",
+          53.6485741,
+          53.36227,
+          56.5533,
+          54.7643,
+          52.2903,
+          59.012,
+          42.3729,
+          64.1026,
+          43.1034,
+          57.04
+        ],
+        [
+          "$\\mathrm{I}_{\\text {ph }}(\\mathrm{A})$",
+          0.76077402,
+          0.76078,
+          0.76068,
+          0.7607,
+          0.7608,
+          0.7607,
+          0.7619,
+          0.7617,
+          0.762,
+          0.7608
+        ],
+        [
+          "$\\mathrm{I}_{\\text {SA }}(\\mu \\mathrm{A})$",
+          "$3.24 \\mathrm{E}-07$",
+          0.31874,
+          0.35515,
+          0.33613,
+          0.30623,
+          0.4,
+          0.8087,
+          0.998,
+          0.4798,
+          0.3614
+        ],
+        [
+          "n",
+          "$1.48145958$",
+          1.47984,
+          1.4908,
+          1.4852,
+          1.47583,
+          1.5033,
+          1.5751,
+          1.6,
+          1.5172,
+          1.4924
+        ],
+        [
+          "$\\boldsymbol{F}_{\\text {SC-20 }}$",
+          0.0009861,
+          0.00098634,
+          0.001,
+          "$9.89 \\mathrm{E}-04$",
+          "$9.91 \\mathrm{E}-04$",
+          "$1.39 \\mathrm{E}-03$",
+          "$1.91 \\mathrm{E}-02$",
+          "$1.49 \\mathrm{E}-02$",
+          "$1.90 \\mathrm{E}-02$",
+          0.0202
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 11
+    },
+    {
+      "table_number": "8",
+      "table_title": "PEM fuel cell parameter estimation with range-1 values - comparison.",
+      "headers": [
+        "Parameters",
+        "$\\boldsymbol{\\epsilon}_{1}$",
+        "$\\boldsymbol{\\epsilon}_{2}$",
+        "$\\boldsymbol{\\epsilon}_{3}$",
+        "$\\boldsymbol{\\epsilon}_{4}$",
+        "$\\lambda$",
+        "$\\mathbf{R}_{\\mathbf{c}}$",
+        "$\\mathbf{b}$",
+        "$\\mathbf{F}_{\\mathbf{F C}}$"
+      ],
+      "rows": [
+        [
+          "IED (Proposed)",
+          -1.1877,
+          "$3.41 \\mathrm{E}-03$",
+          "$6.42 \\mathrm{E}-05$",
+          "$-1.24 \\mathrm{E}-04$",
+          13.0912,
+          "$1.00 \\mathrm{E}-04$",
+          "$3.27 \\mathrm{E}-02$",
+          7.6111
+        ],
+        [
+          -2,
+          -0.8574,
+          "$2.59 \\mathrm{E}-03$",
+          "$7.65 \\mathrm{E}-05$",
+          "$-1.16 \\mathrm{E}-04$",
+          12.7455,
+          "$1.00 \\mathrm{E}-04$",
+          "$3.34 \\mathrm{E}-02$",
+          "$7.62 \\mathrm{E} \\cdot 00$"
+        ],
+        [
+          -37,
+          -1.0446,
+          "$3.00 \\mathrm{E}-03$",
+          "$6.72 \\mathrm{E}-05$",
+          "$1.15 \\mathrm{E}-04$",
+          12.4944,
+          "$1.00 \\mathrm{E}-04$",
+          "$3.26 \\mathrm{E}-02$",
+          "$8.29 \\mathrm{E} \\cdot 00$"
+        ],
+        [
+          38,
+          -1.0072,
+          "$2.98 \\mathrm{E}-03$",
+          "$7.18 \\mathrm{E}-05$",
+          "$1.26 \\mathrm{E}-04$",
+          15.5959,
+          "$8.00 \\mathrm{E}-04$",
+          "$3.73 \\mathrm{E}-02$",
+          "$8.30 \\mathrm{E} \\cdot 00$"
+        ],
+        [
+          5,
+          -1.1568,
+          "$3.42 \\mathrm{E}-03$",
+          "$6.42 \\mathrm{E}-05$",
+          "$-1.15 \\mathrm{E}-04$",
+          12.8989,
+          "$1.45 \\mathrm{E}-04$",
+          "$3.43 \\mathrm{E}-02$",
+          "$8.49 \\mathrm{E} \\cdot 00$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 9
+    },
+    {
+      "table_number": "9",
+      "table_title": "PEM fuel cell parameter estimation with range-2 values - comparison.",
+      "headers": [
+        "Item",
+        "$\\boldsymbol{\\epsilon}_{1}$",
+        "$\\boldsymbol{\\epsilon}_{2}$",
+        "$\\boldsymbol{\\epsilon}_{3}$",
+        "$\\boldsymbol{\\epsilon}_{4}$",
+        "$\\lambda$",
+        "$\\mathbf{R}_{\\mathbf{c}}$",
+        "$\\mathbf{b}$",
+        "$\\mathbf{F}_{\\mathbf{F C}}$"
+      ],
+      "rows": [
+        [
+          "IED (Proposed)",
+          -0.9519,
+          "$3.01 \\mathrm{E}-03$",
+          "$7.69 \\mathrm{E}-05$",
+          "$-1.90 \\mathrm{E}-04$",
+          22.235,
+          "$1.00 \\mathrm{E}-04$",
+          "$3.31 \\mathrm{E}-02$",
+          16.2322
+        ],
+        [
+          -2,
+          -0.952,
+          "$2.94 \\mathrm{E}-03$",
+          "$7.80 \\mathrm{E}-05$",
+          "$-1.88 \\mathrm{E}-04$",
+          "$2.30 \\mathrm{E} \\cdot 01$",
+          "$1.00 \\mathrm{E}-04$",
+          "$3.28 \\mathrm{E}-02$",
+          "$1.62 \\mathrm{E} \\cdot 01$"
+        ],
+        [
+          -37,
+          -0.9473,
+          "$2.93 \\mathrm{E}-03$",
+          "$7.80 \\mathrm{E}-05$",
+          "$-1.88 \\mathrm{E}-04$",
+          "$2.30 \\mathrm{E} \\cdot 01$",
+          "$1.31 \\mathrm{E}-04$",
+          "$3.25 \\mathrm{E}-02$",
+          "$1.63 \\mathrm{E} \\cdot 01$"
+        ],
+        [
+          38,
+          -0.9513,
+          "$2.94 \\mathrm{E}-03$",
+          "$7.80 \\mathrm{E}-05$",
+          "$-1.88 \\mathrm{E}-04$",
+          "$2.29 \\mathrm{E} \\cdot 01$",
+          "$1.00 \\mathrm{E}-04$",
+          "$3.21 \\mathrm{E}-04$",
+          "$1.63 \\mathrm{E} \\cdot 01$"
+        ],
+        [
+          5,
+          -0.9506,
+          "$3.08 \\mathrm{E}-03$",
+          "$7.7524 \\mathrm{E}-5$",
+          "$-1.88 \\mathrm{E}-04$",
+          "$2.30 \\mathrm{E} \\cdot 01$",
+          "$1.00 \\mathrm{E}-04$",
+          "$3.29 \\mathrm{E}-02$",
+          "$1.63 \\mathrm{E} \\cdot 01$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 9
+    }
+  ]
+}

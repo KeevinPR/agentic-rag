@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/Research on gas emission quantity prediction model based on EDA-IGA.md",
+    "filename": "Research on gas emission quantity prediction model based on EDA-IGA.md",
+    "title": "Research on gas emission quantity prediction model based on EDA-IGA",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Example of crossover operation.",
+      "headers": [
+        "Chromosome",
+        "Crossway",
+        "Cross result"
+      ],
+      "rows": [
+        [
+          11010010,
+          246,
+          10000110
+        ],
+        [
+          10011010,
+          "",
+          11001110
+        ],
+        [
+          10010101,
+          -37,
+          10110100
+        ],
+        [
+          1001110,
+          5,
+          1101100
+        ],
+        [
+          100110,
+          "",
+          101110
+        ],
+        [
+          11011010,
+          "",
+          11010010
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Example of mutation operation.",
+      "headers": [
+        "Chromosome",
+        "Crossway",
+        "Cross result"
+      ],
+      "rows": [
+        [
+          11010110,
+          2,
+          10010110
+        ],
+        [
+          11010110,
+          4,
+          11000110
+        ],
+        [
+          11010110,
+          35,
+          11111110
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison of biological immune process and algorithm model.",
+      "headers": [
+        "Inside the IGA",
+        "Gas emission quantity prediction"
+      ],
+      "rows": [
+        [
+          "Antigen/self",
+          "Gas emission quantity index factor training set data"
+        ],
+        [
+          "Antibody/noself",
+          "Gas emission quantity index factor prediction set data"
+        ],
+        [
+          "T cell",
+          "Detector"
+        ],
+        [
+          "Foreign proteins",
+          "Predicting the concentration of supercritical abnormal data"
+        ],
+        [
+          "Antigen identification",
+          "Abnormal component identification and discovery"
+        ],
+        [
+          "Cell clone",
+          "Antibodies with high clonal detection rates"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Raw data of gas emission in 9136 working face.",
+      "headers": [
+        "b",
+        "Gas air displacement $/\\left(\\mathrm{m}^{3} / \\mathrm{min}\\right)$",
+        "Gas drainage quantity $/\\left(\\mathrm{m}^{3} / \\mathrm{min}\\right)$",
+        "Absolute gas emission quantity $/\\left(\\mathrm{m}^{3} / \\mathrm{min}\\right)$"
+      ],
+      "rows": [
+        [
+          1,
+          6.48,
+          30.01,
+          38.21
+        ],
+        [
+          2,
+          6.01,
+          30.82,
+          37.96
+        ],
+        [
+          3,
+          7.32,
+          30.93,
+          38.43
+        ],
+        [
+          4,
+          7.11,
+          32.11,
+          42.32
+        ],
+        [
+          5,
+          4.83,
+          31.03,
+          45.34
+        ],
+        [
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$"
+        ],
+        [
+          99,
+          5.35,
+          39.98,
+          47.53
+        ],
+        [
+          400,
+          5.47,
+          40.32,
+          46.87
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "The hyperparameter optimization value of each component in the model.",
+      "headers": [
+        "Component",
+        "The first group of optimization values (best)",
+        "",
+        "The second group of optimization values (best)",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Penalty coefficient c",
+          "Kernel function Gamma",
+          "Penalty coefficient c",
+          "Kernel function Gamma"
+        ],
+        [
+          "Trend item",
+          6.73,
+          0.08,
+          6.52,
+          0.03
+        ],
+        [
+          "Periodic term",
+          6.32,
+          0.61,
+          1.91,
+          2.23
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Comparison table of predicted value and observed value.",
+      "headers": [
+        "b",
+        "EDA-IGA final prediction value",
+        "Observed value",
+        "Absolute error"
+      ],
+      "rows": [
+        [
+          1,
+          51.5,
+          52,
+          0.5
+        ],
+        [
+          2,
+          49.5,
+          50,
+          0.51
+        ],
+        [
+          3,
+          48.5,
+          49,
+          0.52
+        ],
+        [
+          4,
+          47.5,
+          48,
+          0.51
+        ],
+        [
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$"
+        ],
+        [
+          59,
+          58.5,
+          59,
+          0.55
+        ],
+        [
+          60,
+          55.5,
+          56,
+          0.52
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Comparison of prediction effects of different models.",
+      "headers": [
+        "Model",
+        "EDA-IGA",
+        "IGA",
+        "QIGA"
+      ],
+      "rows": [
+        [
+          "Mean number of iterations",
+          28,
+          85,
+          46
+        ],
+        [
+          "Number of search successes",
+          33,
+          25,
+          32
+        ],
+        [
+          "Mean search time/s",
+          732.9,
+          668.4,
+          753.9
+        ],
+        [
+          "MAE",
+          1.58,
+          2.09,
+          2.32
+        ],
+        [
+          "MAPE",
+          2.93,
+          3.88,
+          4.35
+        ],
+        [
+          "RMSE",
+          1.87,
+          2.63,
+          2.33
+        ],
+        [
+          "Prediction accuracy/%",
+          94.93,
+          85.42,
+          90.32
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    }
+  ]
+}

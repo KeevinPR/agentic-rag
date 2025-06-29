@@ -1,0 +1,348 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/A hybrid imperialist competitive algorithm for the outpatient scheduling problem with switching and preparation times.md",
+    "filename": "A hybrid imperialist competitive algorithm for the outpatient scheduling problem with switching and preparation times.md",
+    "title": "A hybrid imperialist competitive algorithm for the outpatient scheduling problem with switching and preparation times",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$j, u$",
+        "Indices of patients"
+      ],
+      "rows": [
+        [
+          "$i, k, t$",
+          "Indices of medical resources"
+        ],
+        [
+          "$f, s$",
+          "Indices of positions"
+        ],
+        [
+          "$q, q$",
+          "The indices for the stage of seeking medical treatment"
+        ],
+        [
+          "$n$",
+          "Number of patients"
+        ],
+        [
+          "$m$",
+          "Number of medical resources"
+        ],
+        [
+          "$n_{i}$",
+          "The total number of stages in the process of seeking medical treatment of patient $i$"
+        ],
+        [
+          "$O_{c, k}$",
+          "$q^{\\text {th }}$ stage of seeking medical treatment of patient $i$"
+        ],
+        [
+          "$P_{c, q, i}$",
+          "Processing time of $O_{c, k}$ by medical resource $i$"
+        ],
+        [
+          "$P_{f, k, i}$",
+          "Switching time of patient $i$ from medical resource $k$ to medical resource $i$"
+        ],
+        [
+          "$P v_{c, i}$",
+          "Preparation time of the patient $j$ on medical resource $i$"
+        ],
+        [
+          "$R_{i}$",
+          "Number of stages that can be processed by medical resource $i$"
+        ],
+        [
+          "$M$",
+          "A large positive number"
+        ],
+        [
+          "$C_{c, k}$",
+          "Completion time of $O_{c, k}$"
+        ],
+        [
+          "$E_{c, q, i}$",
+          10
+        ],
+        [
+          "$W_{f, k, i}$",
+          10
+        ],
+        [
+          "$X_{c, q, i, f, k}$",
+          1
+        ],
+        [
+          "The position-based mathematical model which considers the position of the patient on the medical resource is provided as follows:",
+          ""
+        ],
+        [
+          "Minimize $\\boldsymbol{C}_{\\text {max }}$",
+          ""
+        ],
+        [
+          "$\\sum_{i=1}^{m} \\sum_{k=1}^{n} X_{c, q, i, f, k}=1 \\quad \\forall j \\in\\{1,2, \\ldots, n\\}, q \\in\\left\\{2, \\ldots, n_{i}\\right\\}$",
+          ""
+        ],
+        [
+          "$\\sum_{k=1}^{n} \\sum_{q=1}^{m} \\sum_{k=1}^{n} X_{c, q, i, f, k}+\\sum_{j=1}^{n} X_{j, l, i, f, k} \\leq 1 \\quad \\forall i \\in\\{1,2, \\ldots, m\\}, f \\in R_{i}$",
+          ""
+        ],
+        [
+          "$\\sum_{k=1}^{n} \\sum_{k=1}^{n} X_{c, q, i, f, k} \\in E_{c, q, i} \\quad \\forall j \\in\\{1,2, \\ldots, n\\}, q \\in\\left\\{2, \\ldots, n_{i}\\right\\}, i \\in\\{1,2, \\ldots, m\\}$",
+          ""
+        ],
+        [
+          "$\\sum_{k=1}^{n} X_{j, q, i, f, k} \\leq \\sum_{k=1}^{m} \\sum_{k=1}^{m} X_{j, q, i, k, f, k} \\quad \\forall j \\in\\{1,2, \\ldots, n\\}$,",
+          ""
+        ],
+        [
+          "$q \\in\\left\\{2, \\ldots, n_{j}\\right\\}, i \\in\\{1,2, \\ldots, m\\}, k \\in\\{1,2, \\ldots, m\\}$",
+          ""
+        ],
+        [
+          "$\\mathrm{C}_{c, k} \\geq \\mathrm{C}_{c, q, 1} \\leq \\sum_{j=1}^{m} \\sum_{k=1}^{m} \\sum_{k=1}^{m} X_{c, q, i, f, k}\\left(\\sum_{j=1}^{P_{c, q, 1}+p v_{c, j}}\\right)$",
+          ""
+        ],
+        [
+          "$\\mathrm{C}_{c, k} \\geq \\mathrm{C}_{c, q, 1} \\leq \\sum_{j=1}^{m} \\sum_{k=1}^{m} \\sum_{k=1}^{m} X_{c, q, i, f, k}\\left(\\sum_{j=1}^{P_{c, q, 1}+p v_{c, j}}\\right)$",
+          ""
+        ],
+        [
+          "$\\mathrm{C}_{c, q} \\geq \\mathrm{C}_{c, q, 1} \\leq \\sum_{j=1}^{m} \\sum_{k=1}^{m} \\sum_{k=1}^{m} X_{c, q, i, f, k}\\left(\\sum_{j=1}^{P_{c, q, 1}+p v_{c, j}}\\right)$",
+          ""
+        ],
+        [
+          "$\\forall j \\in\\{1,2, \\ldots, n\\}, q \\in\\left\\{2, \\ldots, n_{i}\\right\\}, u \\in\\{1,2, \\ldots, n\\}, j \\neq u, g \\in\\left\\{2, \\ldots, n_{i}\\right\\}$",
+          ""
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Key parameter levels.",
+      "headers": [
+        "Parameter",
+        "Level",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "Pop",
+          50,
+          100,
+          150,
+          200
+        ],
+        [
+          "Nim/Pop",
+          "$5 \\%$",
+          "$10 \\%$",
+          "$15 \\%$",
+          "$20 \\%$"
+        ],
+        [
+          "$\\alpha$",
+          0.2,
+          0.3,
+          0.4,
+          0.5
+        ],
+        [
+          "$\\beta$",
+          0.1,
+          0.2,
+          0.3,
+          0.4
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison results for the CPLEX solver and HICA.",
+      "headers": [
+        "Instance",
+        "Best",
+        "Fitness",
+        "",
+        "Deviation",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "CPLEX",
+          "HICA",
+          "CPLEX",
+          "HICA"
+        ],
+        [
+          1,
+          78.0,
+          79.0,
+          78.0,
+          0.01,
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          2,
+          105.0,
+          105.0,
+          105.0,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          3,
+          140.0,
+          141.0,
+          141.0,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          4,
+          119.0,
+          121.0,
+          119.0,
+          0.02,
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          5,
+          167.0,
+          167.0,
+          167.0,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          6,
+          182.0,
+          182.0,
+          182.0,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          7,
+          94.0,
+          94.0,
+          94.0,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          8,
+          132.0,
+          132.0,
+          132.0,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          9,
+          172.0,
+          175.0,
+          172.0,
+          0.02,
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          10,
+          201.0,
+          201.0,
+          101.0,
+          0.02,
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          11,
+          147.0,
+          147.0,
+          147.0,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          12,
+          238.0,
+          245.0,
+          238.0,
+          0.03,
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          13,
+          309.0,
+          "-",
+          309.0,
+          "-",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          14,
+          121.0,
+          121.0,
+          121.0,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          15,
+          191.0,
+          191.0,
+          191.0,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          16,
+          276.0,
+          "-",
+          276.0,
+          "-",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          17,
+          317.0,
+          "-",
+          317.0,
+          "-",
+          "$\\mathbf{0 . 0 0}$"
+        ],
+        [
+          18,
+          353.0,
+          "-",
+          353.0,
+          "-",
+          "$\\mathbf{0 . 0 0}$"
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 6
+    }
+  ]
+}

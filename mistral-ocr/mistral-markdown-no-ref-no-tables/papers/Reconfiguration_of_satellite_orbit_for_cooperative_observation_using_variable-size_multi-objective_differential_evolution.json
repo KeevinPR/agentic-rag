@@ -1,0 +1,471 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2015/Reconfiguration of satellite orbit for cooperative observation using variable-size multi-objective differential evolution.md",
+    "filename": "Reconfiguration of satellite orbit for cooperative observation using variable-size multi-objective differential evolution.md",
+    "title": "Reconfiguration of satellite orbit for cooperative observation using variable-size multi-objective differential evolution",
+    "year": "2015"
+  },
+  "references": {
+    "header": "## References",
+    "content": "Abdelkhalik, O. (2010). Initial orbit design from ground track points. Journal of Spacecraft and Rockets, 47(1), 202-205.\nAbdelkhalik, O., \\& Gad, A. (2011). Optimization of space orbits design for earth orbiting missions. Acta Astronautica, 68(7-8), 1307-1317.\nY. T. Abo, D. B. Spencer, Optimal reconfiguration of a formation-flying satellite constellation, in: 53rd international astronautical congress of the international astronautical federation, October 2002.\nAli, M., Siarry, P., \\& Pant, M. (2012). An efficient Differential Evolution based algorithm for solving multi-objective optimization problems. European Journal of Operational Research, 217, 404-416.\nChen, Y. G., Mahalec, V., Chen, Y. W., He, R. J., \\& Liu, X. L. (2013). Optimal satellite orbit design for prioritized multi-targets with threshold observation time using self-adaptive differential evolution. Journal of Aerospace Engineering, doi:10.1016/ASCE/AS.1943-5525.0000393.\nFerringer, M. P., \\& Spencer, D. B. (2006). Satellite constellation design tradeoffs using multiple-objective evolutionary computation. Journal of Spacecraft and Rockets, 43(6), 1404-1411.\nFerringer, M. P., Spencer, D. B., \\& Reed, P. (2009). Many-objective reconfiguration of operational satellite constellations with the large-cluster epsilon non-dominated sorting genetic algorithm-II. IEEE evolutionary computation congress, 340-349.\nGong, W., \\& Cai, Z. (2009). An improved multi-objective differential evolution based on Pareto-adaptive-dominance and orthogonal design. European Journal of Operational Research, 198, 576-601.\n\nJames, R. W., David, F. E., \\& Jeffery, J. P. (2011). Space mission engineering: The New SMAD. Hawthorne, CA: Microcosm Press.\nKim, H. D., Bang, H., \\& Jung, O. C. (2008). A heuristic approach to the design of an orbit for a temporary reconnaissance mission using a few LEO satellites. Proceedings of the AAS/AIAA space flight mechanics meeting, Galveston, USA.\nLarrañaga, P., \\& Lozano, J. A. (2002). Estimation of distribution algorithms. A new tool for evolutionary computation. 2 Springer.\nPark, H. E., Park, S. Y., \\& Choi, K. H. (2011). Satellite formation reconfiguration and station-keeping using state-dependent Riccati equation technique. Aerospace Science and Technology, 15(6), 440-452.\nPrice, K., Storn, R., \\& Lampinen, J. (2005). Differential evolution: A practical approach to global optimization. New York: Springer-Verlag.\nRyerkerk, M. L., Averill, R. C., Deb, K., \\& Goodman, E. D. (2012). Optimization for variablesize problems using genetic algorithms. 12th AIAA aviation technology, integration, and operations (ATIO) conference and 14th AIAA/ISSM, Indianapolis, Indiana.\nStorn, R., \\& Price, K. (1997). Differential evolution - A simple and efficient heuristic for global optimization over continuous spaces. Journal of Global Optimization, 11(4), $341-359$.\nSu, Z. G., Wang, P. H., Shen, J., Li, Y. G., Zhang, Y. F., \\& Hu, E. J. (2012). Automatic fuzzy partitioning approach using Variable string length Artificial Bee Colony (VABC) algorithm. Applied Soft Computing, 12, 3421-3441.\n\nVallado, D. A. Fundamental of astrodynamics and applications, third ed., Microcosm Press and Springer, 2007.\nVesterstrom, J., \\& Thomsen, R. (2004). A comparative study of differential evolution, particle swarm optimization, and evolutionary algorithms on numerical benchmark problems. IEEE evolutionary computation congress: 2 1980-1987.\nVtipil, S. D., \\& Newman, B. (2010). Designing a constrained optimal orbit for earth observation satellites based on user requirements. AIAA/AAS astrodynamics specialist conference, Toronto, CA.\nWall, B. J., \\& Conway, B. A. (2009). Genetic algorithms applied to the solution of hybrid optimal control problems in astrodynamics. Journal of Global Optimization, 44(4), 493-508.\nWang, Y. N., Wu, L. H., \\& Yuan, X. F. (2010). Multi-objective self-adaptive differential evolution with elitist archive and crowding entropy-based diversity measure. Soft Computing, 14, 193-209.\nde Weck, O. L., Scialom, U., \\& Siddiqi, A. (2008). Optimal reconfiguration of satellite constellations with the auction algorithm. Acta Astronautica, 62(2), 112-130.\nWilliams, E. A., Crossley, W. A., \\& Lang, T. J. (2001). Average and maximum revisit time trade studies for satellite constellations using a multiobjective genetic algorithm. The Journal of the Astronautical Sciences, 49(3), 385-400.\nWolfe, W. J., \\& Sorensen, S. E. (2000). Three scheduling algorithms applied to the earth observing systems domain, $46(1), 148-168$.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Abdelkhalik, O. (2010). Initial orbit design from ground track points. Journal of Spacecraft and Rockets, 47(1), 202-205."
+      },
+      {
+        "ref_id": "2",
+        "text": "Abdelkhalik, O., \\& Gad, A. (2011). Optimization of space orbits design for earth orbiting missions. Acta Astronautica, 68(7-8), 1307-1317."
+      },
+      {
+        "ref_id": "3",
+        "text": "Y. T. Abo, D. B. Spencer, Optimal reconfiguration of a formation-flying satellite constellation, in: 53rd international astronautical congress of the international astronautical federation, October 2002."
+      },
+      {
+        "ref_id": "4",
+        "text": "Ali, M., Siarry, P., \\& Pant, M. (2012). An efficient Differential Evolution based algorithm for solving multi-objective optimization problems. European Journal of Operational Research, 217, 404-416."
+      },
+      {
+        "ref_id": "5",
+        "text": "Chen, Y. G., Mahalec, V., Chen, Y. W., He, R. J., \\& Liu, X. L. (2013). Optimal satellite orbit design for prioritized multi-targets with threshold observation time using self-adaptive differential evolution. Journal of Aerospace Engineering, doi:10.1016/ASCE/AS.1943-5525.0000393."
+      },
+      {
+        "ref_id": "6",
+        "text": "Ferringer, M. P., \\& Spencer, D. B. (2006). Satellite constellation design tradeoffs using multiple-objective evolutionary computation. Journal of Spacecraft and Rockets, 43(6), 1404-1411."
+      },
+      {
+        "ref_id": "7",
+        "text": "Ferringer, M. P., Spencer, D. B., \\& Reed, P. (2009). Many-objective reconfiguration of operational satellite constellations with the large-cluster epsilon non-dominated sorting genetic algorithm-II. IEEE evolutionary computation congress, 340-349."
+      },
+      {
+        "ref_id": "8",
+        "text": "Gong, W., \\& Cai, Z. (2009). An improved multi-objective differential evolution based on Pareto-adaptive-dominance and orthogonal design. European Journal of Operational Research, 198, 576-601."
+      },
+      {
+        "ref_id": "9",
+        "text": "James, R. W., David, F. E., \\& Jeffery, J. P. (2011). Space mission engineering: The New SMAD. Hawthorne, CA: Microcosm Press."
+      },
+      {
+        "ref_id": "10",
+        "text": "Kim, H. D., Bang, H., \\& Jung, O. C. (2008). A heuristic approach to the design of an orbit for a temporary reconnaissance mission using a few LEO satellites. Proceedings of the AAS/AIAA space flight mechanics meeting, Galveston, USA."
+      },
+      {
+        "ref_id": "11",
+        "text": "Larrañaga, P., \\& Lozano, J. A. (2002). Estimation of distribution algorithms. A new tool for evolutionary computation. 2 Springer."
+      },
+      {
+        "ref_id": "12",
+        "text": "Park, H. E., Park, S. Y., \\& Choi, K. H. (2011). Satellite formation reconfiguration and station-keeping using state-dependent Riccati equation technique. Aerospace Science and Technology, 15(6), 440-452."
+      },
+      {
+        "ref_id": "13",
+        "text": "Price, K., Storn, R., \\& Lampinen, J. (2005). Differential evolution: A practical approach to global optimization. New York: Springer-Verlag."
+      },
+      {
+        "ref_id": "14",
+        "text": "Ryerkerk, M. L., Averill, R. C., Deb, K., \\& Goodman, E. D. (2012). Optimization for variablesize problems using genetic algorithms. 12th AIAA aviation technology, integration, and operations (ATIO) conference and 14th AIAA/ISSM, Indianapolis, Indiana."
+      },
+      {
+        "ref_id": "15",
+        "text": "Storn, R., \\& Price, K. (1997). Differential evolution - A simple and efficient heuristic for global optimization over continuous spaces. Journal of Global Optimization, 11(4), $341-359$."
+      },
+      {
+        "ref_id": "16",
+        "text": "Su, Z. G., Wang, P. H., Shen, J., Li, Y. G., Zhang, Y. F., \\& Hu, E. J. (2012). Automatic fuzzy partitioning approach using Variable string length Artificial Bee Colony (VABC) algorithm. Applied Soft Computing, 12, 3421-3441."
+      },
+      {
+        "ref_id": "17",
+        "text": "Vallado, D. A. Fundamental of astrodynamics and applications, third ed., Microcosm Press and Springer, 2007."
+      },
+      {
+        "ref_id": "18",
+        "text": "Vesterstrom, J., \\& Thomsen, R. (2004). A comparative study of differential evolution, particle swarm optimization, and evolutionary algorithms on numerical benchmark problems. IEEE evolutionary computation congress: 2 1980-1987."
+      },
+      {
+        "ref_id": "19",
+        "text": "Vtipil, S. D., \\& Newman, B. (2010). Designing a constrained optimal orbit for earth observation satellites based on user requirements. AIAA/AAS astrodynamics specialist conference, Toronto, CA."
+      },
+      {
+        "ref_id": "20",
+        "text": "Wall, B. J., \\& Conway, B. A. (2009). Genetic algorithms applied to the solution of hybrid optimal control problems in astrodynamics. Journal of Global Optimization, 44(4), 493-508."
+      },
+      {
+        "ref_id": "21",
+        "text": "Wang, Y. N., Wu, L. H., \\& Yuan, X. F. (2010). Multi-objective self-adaptive differential evolution with elitist archive and crowding entropy-based diversity measure. Soft Computing, 14, 193-209."
+      },
+      {
+        "ref_id": "22",
+        "text": "Williams, E. A., Crossley, W. A., \\& Lang, T. J. (2001). Average and maximum revisit time trade studies for satellite constellations using a multiobjective genetic algorithm. The Journal of the Astronautical Sciences, 49(3), 385-400."
+      },
+      {
+        "ref_id": "23",
+        "text": "Wolfe, W. J., \\& Sorensen, S. E. (2000). Three scheduling algorithms applied to the earth observing systems domain, $46(1), 148-168$."
+      }
+    ],
+    "reference_count": 23,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Orbital element of alternative satellites.",
+      "headers": [
+        "No.",
+        "$\\alpha$ (kilometers)",
+        "$i$ (degrees)",
+        "$e$",
+        "$\\Omega$ (degrees)",
+        "$\\omega$ (degrees)",
+        "$\\nu$ (degrees)"
+      ],
+      "rows": [
+        [
+          1,
+          7264.2,
+          99.1,
+          0.0017,
+          263.1,
+          25.9,
+          334.3
+        ],
+        [
+          2,
+          7231.4,
+          98.6,
+          0.0015,
+          279.1,
+          124.3,
+          236.0
+        ],
+        [
+          3,
+          7240.2,
+          98.7,
+          0.0013,
+          309.4,
+          276.1,
+          83.9
+        ],
+        [
+          4,
+          6985.2,
+          97.7,
+          0.0012,
+          358.7,
+          109.6,
+          250.7
+        ],
+        [
+          5,
+          7118.8,
+          98.5,
+          0.0014,
+          350.5,
+          32.4,
+          327.8
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Rang of design variables.",
+      "headers": [
+        "Variable",
+        "Lower bound",
+        "Upper bound",
+        "Type"
+      ],
+      "rows": [
+        [
+          "$\\nu$",
+          -180,
+          180,
+          "Continuous"
+        ],
+        [
+          "$K_{\\text {QT }}$",
+          4,
+          12,
+          "Discrete"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Case study 1: comparative results of the three algorithms.",
+      "headers": [
+        "",
+        "MODE-C",
+        "VSMODE-R",
+        "VSMODE"
+      ],
+      "rows": [
+        [
+          "NNS",
+          20,
+          73,
+          97
+        ],
+        [
+          "$C_{P}$",
+          0.093,
+          0.041,
+          0.029
+        ],
+        [
+          "$D_{E}$",
+          45.545,
+          14.942,
+          10.073
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Case study 2: comparative results of the three algorithms.",
+      "headers": [
+        "",
+        "MODE-C",
+        "VSMODE-R",
+        "VSMODE"
+      ],
+      "rows": [
+        [
+          "NNS",
+          5,
+          118,
+          132
+        ],
+        [
+          "$C_{P}$",
+          0.221,
+          0.065,
+          0.03
+        ],
+        [
+          "$D_{E}$",
+          53.792,
+          9.535,
+          8.654
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Case study 2: details of the observation targets.",
+      "headers": [
+        "Target id",
+        "Lat (degrees)",
+        "Long (degrees)",
+        "Target id",
+        "Lat (degrees)",
+        "Long (degrees)"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          1,
+          39.91,
+          116.39,
+          6,
+          15.55,
+          32.53
+        ],
+        [
+          2,
+          52.52,
+          13.33,
+          7,
+          49.27,
+          -122.96
+        ],
+        [
+          3,
+          -15.79,
+          -47.9,
+          8,
+          -25.73,
+          28.22
+        ],
+        [
+          4,
+          -35.35,
+          149.04,
+          9,
+          19.43,
+          -99.13
+        ],
+        [
+          5,
+          33.72,
+          73.06,
+          10,
+          -33.48,
+          -70.65
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Case study 3: details of the observation targets.",
+      "headers": [
+        "Target id",
+        "Lat (degrees)",
+        "Long (degrees)",
+        "Priority",
+        "Minimum duration (seconds)"
+      ],
+      "rows": [
+        [
+          1,
+          39.91,
+          116.39,
+          7,
+          90
+        ],
+        [
+          2,
+          37.77,
+          118.52,
+          3,
+          100
+        ],
+        [
+          3,
+          37.07,
+          121.95,
+          8,
+          90
+        ],
+        [
+          4,
+          33.83,
+          119.85,
+          10,
+          80
+        ],
+        [
+          5,
+          30.84,
+          121.12,
+          6,
+          90
+        ],
+        [
+          6,
+          28.05,
+          120.74,
+          10,
+          80
+        ],
+        [
+          7,
+          25.38,
+          119.02,
+          1,
+          100
+        ],
+        [
+          8,
+          23.36,
+          116.06,
+          2,
+          100
+        ],
+        [
+          9,
+          21.95,
+          112.39,
+          8,
+          90
+        ],
+        [
+          10,
+          19.43,
+          -99.13,
+          3,
+          100
+        ],
+        [
+          11,
+          52.52,
+          13.33,
+          9,
+          80
+        ],
+        [
+          12,
+          -35.35,
+          149.04,
+          3,
+          100
+        ],
+        [
+          13,
+          15.55,
+          32.53,
+          8,
+          90
+        ],
+        [
+          14,
+          -25.73,
+          28.22,
+          7,
+          90
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7",
+      "headers": [
+        "",
+        "MODE-C",
+        "VSMODE-R",
+        "VSMODE"
+      ],
+      "rows": [
+        [
+          "NNS",
+          9,
+          104,
+          128
+        ],
+        [
+          "$C_{P}$",
+          0.152,
+          0.078,
+          0.048
+        ],
+        [
+          "$D_{E}$",
+          62.091,
+          34.428,
+          26.504
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    }
+  ]
+}

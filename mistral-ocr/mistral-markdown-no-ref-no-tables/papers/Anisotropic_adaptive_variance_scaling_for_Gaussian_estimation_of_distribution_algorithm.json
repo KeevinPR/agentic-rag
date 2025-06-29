@@ -1,0 +1,558 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Anisotropic adaptive variance scaling for Gaussian estimation of distribution algorithm.md",
+    "filename": "Anisotropic adaptive variance scaling for Gaussian estimation of distribution algorithm.md",
+    "title": "Anisotropic adaptive variance scaling for Gaussian estimation of distribution algorithm",
+    "year": "2018"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] K. De Jong, Evolutionary computation: a unified approach, in: Proc. 14th Annu. Conf. Companion Genet. Evol. Comput., ACM, 2012: pp. 737-750.\n[2] H. Mühlenbein, G. Paass, From recombination of genes to the estimation of distributions I. Binary parameters, Springer Berlin Heidelberg, 1996.\n[3] P. Larranga, R. Etxeberria, J.A. Lozano, J.M. Pena, Optimization by learning and simulation of Bayesian and Gaussian networks, Tech. Rep. EHU-KZAA-IK-449, Univ. Basqu. Country, Spain. (1999).\n[4] P. Larrañaga, J.A. Lozano, Estimation of distribution algorithms: A new tool for evolutionary computation, Springer Science \\& Business Media, 2001.\n[5] M. Hauschild, M. Pelikan, An introduction and survey of estimation of distribution algorithms, Swarm Evol. Comput. 1 (2011) 111-128.\n[6] J. Shen, L. Wang, S. Wang, A bi-population EDA for solving the no-idle permutation flow-shop scheduling problem with the total tardiness criterion, Knowledge-Based Syst. 74 (2015) 167-175.\n[7] A. Zhou, J. Sun, Q. Zhang, An estimation of distribution algorithm with cheap and expensive local search methods, IEEE Trans. Evol. Comput. 19 (2015) 807-822.\n[8] J. Ocenasek, S. Kern, N. Hansen, P. Koumoutsakos, A mixed bayesian optimization algorithm with variance adaptation, in: Int. Conf. Parallel Probl. Solving from Nat., Springer, 2004: pp. 352-361.\n[9] J. Ocenasek, J. Schwarz, Estimation of distribution algorithm for mixed continuous-discrete optimization problems, in: 2nd Euro-International Symp. Comput. Intell., 2002: pp. 227-232.\n\n[10] I. Rechenberg, Evolutionsstrategie: Optimierung technischer Systeme nach Prinzipien der biologischen Evolution, Frommann-Holzboog, 1973.\n[11] B. Yuan, M. Gallagher, On the importance of diversity maintenance in estimation of distribution algorithms, in: Proc. 7th Annu. Conf. Genet. Evol. Comput., ACM, 2005: pp. 719-726.\n[12] P. Pošík, Preventing premature convergence in a simple EDA via global step size setting, Parallel Probl. Solving from Nature-PPSN X. (2008) 549-558.\n[13] J. Grahl, P.A.N. Bosman, F. Rothlauf, The correlation-triggered adaptive variance scaling IDEA, in: Proc. 8th Annu. Conf. Genet. Evol. Comput., ACM, 2006: pp. 397-404.\n[14] P.A.N. Bosman, J. Grahl, F. Rothlauf, SDR: A better trigger for adaptive variance scaling in normal EDAs, in: Proc. 9th Annu. Conf. Genet. Evol. Comput., ACM, 2007: pp. 492-499.\n[15] Y. Cai, X. Sun, H. Xu, P. Jia, Cross entropy and adaptive variance scaling in continuous EDA, in: Proc. 9th Annu. Conf. Genet. Evol. Comput., ACM, 2007: pp. 609-616.\n[16] M. R. Wagner, A. Auger, and M. Schoenauer, EEDA: A New Robust Estimation of Distribution Algorithm, Rapport de Recherche (Research Report) RR-5190, INRIA, 2004.\n[17] W. Dong, X. Yao, Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms, Inf. Sci. 178 (15) (2008) 3000-3023.\n[18] J. Liu, Y. Wang, H. Teng, Variance analysis and adaptive control in intelligent system based on Gaussian model, Int. J. Model. Identif. Control. 18 (2013) 26-33.\n[19] P.A.N. Bosman, J. Grahl, D. Thierens, Enhancing the performance of maximum-likelihood Gaussian EDAs using anticipated mean shift, in: Int. Conf. Parallel Probl. Solving from Nat., Springer, 2008: pp. $133-143$.\n[20] N. Hansen, A. Ostermeier, Completely derandomized self-adaptation in evolution strategies, Evol. Comput. 9 (2001) 159-195.\n\n[21] Z. Ren, C. He, D. Zhong, S. Huang, Y. Liang, Enhance continuous estimation of distribution algorithm by variance enlargement and reflecting sampling, in: 2016 IEEE Congr. Evol. Comput. CEC 2016, 2016. doi:10.1109/CEC.2016.7744225.\n[22] Y. Liang, Z. Ren, L. Wang, B. Pang, M.M. Hossain, Inferior solutions in Gaussian EDA: Useless or useful?, 2017 IEEE Congr. Evol. Comput. (2017) 301-307. doi:10.1109/CEC.2017.7969327.\n[23] Q. Xu, Chaos elitism estimation of distribution algorithm, in: Fifth Int. Conf. Intell. Control Inf. Process., 2014: pp. 265-269. doi:10.1109/ICICIP.2014.7010352.\n[24] Y. Chen, X. Sun, D. Gong, Y. Zhang, J. Choi, S. Klasky, Personalized Search Inspired Fast Interactive Estimation of Distribution Algorithm and Its Application, IEEE Trans. Evol. Comput. (2017).\n[25] H. Fang, A. Zhou, G. Zhang, An estimation of distribution algorithm guided by mean shift, 2016 IEEE Congr. Evol. Comput. (2016) 3268-3275. doi:10.1109/CEC.2016.7744203.\n[26] A. Auger, N. Hansen, A restart CMA evolution strategy with increasing population size, in: Evol. Comput. 2005. 2005 IEEE Congr., IEEE, 2005: pp. 1769-1776.\n[27] C. García-Martínez, P.D. Gutiérrez, D. Molina, M. Lozano, F. Herrera, Since CEC 2005 competition on real-parameter optimisation: a decade of research, progress and comparative analysis's weakness, Soft Comput. (2017) 1-11.\n[28] H. Karshenas, R. Santana, C. Bielza, P. Larrañaga, Regularized continuous estimation of distribution algorithms, Appl. Soft Comput. 13 (2013) 2412-2432.\n[29] R. Santana, A. Mendiburu, J.A. Lozano, Customized Selection in Estimation of Distribution Algorithms, in: Asia-Pacific Conf. Simulated Evol. Learn., Springer, 2014: pp. 94-105.\n[30] J. Zhang, J. Zeng, Estimation of distribution algorithm based on sequential importance sampling particle filters, Acta Electron. Sin. 38 (2010) 2929-2932.\n\n[31] B. Qian, Z. Li, R. Hu, A copula-based hybrid estimation of distribution algorithm for m-machine reentrant permutation flow-shop scheduling problem, Appl. Soft Comput. 61 (2017) 921-934. doi:10.1016/j.asoc.2017.08.037.\n[32] L. PourMohammadBagher, M.M. Ebadzadeh, R. Safabakhsh, Graphical model based continuous estimation of distribution algorithm, Appl. Soft Comput. 58 (2017) 388-400. doi:10.1016/j.asoc.2017.04.066.\n[33] P. Yang, K. Tang, X. Lu, Improving Estimation of Distribution Algorithm on Multimodal Problems by Detecting Promising Areas, IEEE Trans. Cybern. 45 (2015) 1438-1449. doi:10.1109/TCYB.2014.2352411.\n[34] X. Li, M.G. Epitropakis, K. Deb, A. Engelbrecht, Seeking Multiple Solutions: An Updated Survey on Niching Methods and Their Applications, IEEE Trans. Evol. Comput. 21 (2017) 518-538. doi:10.1109/TEVC.2016.2638437.\n[35] Q. Yang, W.N. Chen, Y. Li, C.L.P. Chen, X.M. Xu, J. Zhang, Multimodal Estimation of Distribution Algorithms, IEEE Trans. Cybern. 47 (2017) 636-650. doi:10.1109/TCYB.2016.2523000.\n[36] C.W. Ahn, J. An, J. Yoo, Estimation of particle swarm distribution algorithms: Combining the benefits of PSO and EDAs, Inf. Sci. (Ny). 192 (2012) 109-119.\n[37] Y. Wang, B. Li, T. Weise, Estimation of distribution and differential evolution cooperation for large scale economic load dispatch optimization of power systems, Inf. Sci. (Ny). 180 (2010) 2405-2420. doi:10.1016/j.in.2010.02.015.\n[38] R. Rastegar, On the Optimal Convergence Probability of Univariate Estimation of Distribution Algorithms, Evol. Comput. 19 (2011) 225-248. doi:10.1162/EVCO_a_00022.\n[39] C. Echegoyen, R. Santana, A. Mendiburu, J.A. Lozano, Comprehensive characterization of the behaviors of estimation of distribution algorithms, Theor. Comput. Sci. 598 (2015) 64-86. doi:10.1016/j.tcs.2015.04.015.\n\n[40] C.M. Bishop, Pattern Recognition and Machine Learning (Information Science and Statistics), Springer-Verlag New York, Inc., 2006.\n[41] R.K. Ursem, Multinational GAs: Multimodal optimization techniques in dynamic environments, in: Proc. 2nd Annu. Conf. Genet. Evol. Comput., Morgan Kaufmann Publishers Inc., 2000: pp. 19-26.\n[42] J.J. Liang, B.Y. Qu, P.N. Suganthan, Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective real-parameter numerical optimization, Comput. Intell. Lab. Zhengzhou Univ. Zhengzhou China Tech. Report, Nanyang Technol. Univ. Singapore. (2013).\n[43] I. Loshchilov, M. Schoenauer, M. Sebag, Alternative restart strategies for CMA-ES, in: Int. Conf. Parallel Probl. Solving from Nat., Springer, 2012: pp. 296-305.\n[44] I. Loshchilov, CMA-ES with restarts for solving CEC 2013 benchmark problems, in: Evol. Comput. (CEC), 2013 IEEE Congr., Ieee, 2013: pp. 369-376.\n[45] Y. Wang, Z. Liu, J. Li, H. Li, G.G. Yen, Utilizing cumulative population distribution information in differential evolution, Appl. Soft Comput. 48 (2016) 329-346.\n[46] H. Ouyang, L. Gao, X. Kong, S. Li, D. Zou, Hybrid harmony search particle swarm optimization with global dimension selection, Inf. Sci. 346 (2016) 318-337.\n[47] J. Zhang, A.C. Sanderson, JADE: adaptive differential evolution with optional external archive, IEEE Trans. Evol. Comput. 13 (2009) 945-958.\n[48] J. Cohen, Statistical power analysis for the behavioral sciences Lawrence Earlbaum Associates, Hillsdale, NJ. (1988) 20-26.\n[49] D. Bose, S. Kundu, S. Biswas, S. Das, Circular Antenna Array Design Using Novel Perturbation Based Artificial Bee Colony Algorithm, in Swarm, Evolutionary, and Memetic Computing (SEMCCO), 2012 Third International Conference on, Springer Berlin Heidelberg, Berlin, Heidelberg, 2012: pp. 459-466. doi:10.1007/978-3-642-35380-2_54.\n\n[50] S. Kundu, S. Das, A. V Vasilakos, S. Biswas, A modified differential evolution-based combined routing and sleep scheduling scheme for lifetime maximization of wireless sensor networks, Soft Comput. 19 (2015) 637-659. doi:10.1007/s00500-014-1286-9.\n[51] D. Bose, S. Biswas, A. V Vasilakos, S. Laha, Optimal filter design using an improved artificial bee colony algorithm, Inf. Sci. (Ny). 281 (2014) 443-461. doi: 10.1016/j.ins.2014.05.033.\n[52] A. Trivedi, D. Srinivasan, S. Biswas, T. Reindl, A genetic algorithm-differential evolution-based hybrid framework: Case study on unit commitment scheduling problem, Inf. Sci. (Ny), 354 (2016) 275-300. doi: $10.1016 /$ j.ins.2016.03.023.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "K. De Jong, Evolutionary computation: a unified approach, in: Proc. 14th Annu. Conf. Companion Genet. Evol. Comput., ACM, 2012: pp. 737-750."
+      },
+      {
+        "ref_id": "2",
+        "text": "H. Mühlenbein, G. Paass, From recombination of genes to the estimation of distributions I. Binary parameters, Springer Berlin Heidelberg, 1996."
+      },
+      {
+        "ref_id": "3",
+        "text": "P. Larranga, R. Etxeberria, J.A. Lozano, J.M. Pena, Optimization by learning and simulation of Bayesian and Gaussian networks, Tech. Rep. EHU-KZAA-IK-449, Univ. Basqu. Country, Spain. (1999)."
+      },
+      {
+        "ref_id": "4",
+        "text": "P. Larrañaga, J.A. Lozano, Estimation of distribution algorithms: A new tool for evolutionary computation, Springer Science \\& Business Media, 2001."
+      },
+      {
+        "ref_id": "5",
+        "text": "M. Hauschild, M. Pelikan, An introduction and survey of estimation of distribution algorithms, Swarm Evol. Comput. 1 (2011) 111-128."
+      },
+      {
+        "ref_id": "6",
+        "text": "J. Shen, L. Wang, S. Wang, A bi-population EDA for solving the no-idle permutation flow-shop scheduling problem with the total tardiness criterion, Knowledge-Based Syst. 74 (2015) 167-175."
+      },
+      {
+        "ref_id": "7",
+        "text": "A. Zhou, J. Sun, Q. Zhang, An estimation of distribution algorithm with cheap and expensive local search methods, IEEE Trans. Evol. Comput. 19 (2015) 807-822."
+      },
+      {
+        "ref_id": "8",
+        "text": "J. Ocenasek, S. Kern, N. Hansen, P. Koumoutsakos, A mixed bayesian optimization algorithm with variance adaptation, in: Int. Conf. Parallel Probl. Solving from Nat., Springer, 2004: pp. 352-361."
+      },
+      {
+        "ref_id": "9",
+        "text": "J. Ocenasek, J. Schwarz, Estimation of distribution algorithm for mixed continuous-discrete optimization problems, in: 2nd Euro-International Symp. Comput. Intell., 2002: pp. 227-232."
+      },
+      {
+        "ref_id": "10",
+        "text": "I. Rechenberg, Evolutionsstrategie: Optimierung technischer Systeme nach Prinzipien der biologischen Evolution, Frommann-Holzboog, 1973."
+      },
+      {
+        "ref_id": "11",
+        "text": "B. Yuan, M. Gallagher, On the importance of diversity maintenance in estimation of distribution algorithms, in: Proc. 7th Annu. Conf. Genet. Evol. Comput., ACM, 2005: pp. 719-726."
+      },
+      {
+        "ref_id": "12",
+        "text": "P. Pošík, Preventing premature convergence in a simple EDA via global step size setting, Parallel Probl. Solving from Nature-PPSN X. (2008) 549-558."
+      },
+      {
+        "ref_id": "13",
+        "text": "J. Grahl, P.A.N. Bosman, F. Rothlauf, The correlation-triggered adaptive variance scaling IDEA, in: Proc. 8th Annu. Conf. Genet. Evol. Comput., ACM, 2006: pp. 397-404."
+      },
+      {
+        "ref_id": "14",
+        "text": "P.A.N. Bosman, J. Grahl, F. Rothlauf, SDR: A better trigger for adaptive variance scaling in normal EDAs, in: Proc. 9th Annu. Conf. Genet. Evol. Comput., ACM, 2007: pp. 492-499."
+      },
+      {
+        "ref_id": "15",
+        "text": "Y. Cai, X. Sun, H. Xu, P. Jia, Cross entropy and adaptive variance scaling in continuous EDA, in: Proc. 9th Annu. Conf. Genet. Evol. Comput., ACM, 2007: pp. 609-616."
+      },
+      {
+        "ref_id": "16",
+        "text": "M. R. Wagner, A. Auger, and M. Schoenauer, EEDA: A New Robust Estimation of Distribution Algorithm, Rapport de Recherche (Research Report) RR-5190, INRIA, 2004."
+      },
+      {
+        "ref_id": "17",
+        "text": "W. Dong, X. Yao, Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms, Inf. Sci. 178 (15) (2008) 3000-3023."
+      },
+      {
+        "ref_id": "18",
+        "text": "J. Liu, Y. Wang, H. Teng, Variance analysis and adaptive control in intelligent system based on Gaussian model, Int. J. Model. Identif. Control. 18 (2013) 26-33."
+      },
+      {
+        "ref_id": "19",
+        "text": "P.A.N. Bosman, J. Grahl, D. Thierens, Enhancing the performance of maximum-likelihood Gaussian EDAs using anticipated mean shift, in: Int. Conf. Parallel Probl. Solving from Nat., Springer, 2008: pp. $133-143$."
+      },
+      {
+        "ref_id": "20",
+        "text": "N. Hansen, A. Ostermeier, Completely derandomized self-adaptation in evolution strategies, Evol. Comput. 9 (2001) 159-195."
+      },
+      {
+        "ref_id": "21",
+        "text": "Z. Ren, C. He, D. Zhong, S. Huang, Y. Liang, Enhance continuous estimation of distribution algorithm by variance enlargement and reflecting sampling, in: 2016 IEEE Congr. Evol. Comput. CEC 2016, 2016. doi:10.1109/CEC.2016.7744225."
+      },
+      {
+        "ref_id": "22",
+        "text": "Y. Liang, Z. Ren, L. Wang, B. Pang, M.M. Hossain, Inferior solutions in Gaussian EDA: Useless or useful?, 2017 IEEE Congr. Evol. Comput. (2017) 301-307. doi:10.1109/CEC.2017.7969327."
+      },
+      {
+        "ref_id": "23",
+        "text": "Q. Xu, Chaos elitism estimation of distribution algorithm, in: Fifth Int. Conf. Intell. Control Inf. Process., 2014: pp. 265-269. doi:10.1109/ICICIP.2014.7010352."
+      },
+      {
+        "ref_id": "24",
+        "text": "Y. Chen, X. Sun, D. Gong, Y. Zhang, J. Choi, S. Klasky, Personalized Search Inspired Fast Interactive Estimation of Distribution Algorithm and Its Application, IEEE Trans. Evol. Comput. (2017)."
+      },
+      {
+        "ref_id": "25",
+        "text": "H. Fang, A. Zhou, G. Zhang, An estimation of distribution algorithm guided by mean shift, 2016 IEEE Congr. Evol. Comput. (2016) 3268-3275. doi:10.1109/CEC.2016.7744203."
+      },
+      {
+        "ref_id": "26",
+        "text": "A. Auger, N. Hansen, A restart CMA evolution strategy with increasing population size, in: Evol. Comput. 2005. 2005 IEEE Congr., IEEE, 2005: pp. 1769-1776."
+      },
+      {
+        "ref_id": "27",
+        "text": "C. García-Martínez, P.D. Gutiérrez, D. Molina, M. Lozano, F. Herrera, Since CEC 2005 competition on real-parameter optimisation: a decade of research, progress and comparative analysis's weakness, Soft Comput. (2017) 1-11."
+      },
+      {
+        "ref_id": "28",
+        "text": "H. Karshenas, R. Santana, C. Bielza, P. Larrañaga, Regularized continuous estimation of distribution algorithms, Appl. Soft Comput. 13 (2013) 2412-2432."
+      },
+      {
+        "ref_id": "29",
+        "text": "R. Santana, A. Mendiburu, J.A. Lozano, Customized Selection in Estimation of Distribution Algorithms, in: Asia-Pacific Conf. Simulated Evol. Learn., Springer, 2014: pp. 94-105."
+      },
+      {
+        "ref_id": "30",
+        "text": "J. Zhang, J. Zeng, Estimation of distribution algorithm based on sequential importance sampling particle filters, Acta Electron. Sin. 38 (2010) 2929-2932."
+      },
+      {
+        "ref_id": "31",
+        "text": "B. Qian, Z. Li, R. Hu, A copula-based hybrid estimation of distribution algorithm for m-machine reentrant permutation flow-shop scheduling problem, Appl. Soft Comput. 61 (2017) 921-934. doi:10.1016/j.asoc.2017.08.037."
+      },
+      {
+        "ref_id": "32",
+        "text": "L. PourMohammadBagher, M.M. Ebadzadeh, R. Safabakhsh, Graphical model based continuous estimation of distribution algorithm, Appl. Soft Comput. 58 (2017) 388-400. doi:10.1016/j.asoc.2017.04.066."
+      },
+      {
+        "ref_id": "33",
+        "text": "P. Yang, K. Tang, X. Lu, Improving Estimation of Distribution Algorithm on Multimodal Problems by Detecting Promising Areas, IEEE Trans. Cybern. 45 (2015) 1438-1449. doi:10.1109/TCYB.2014.2352411."
+      },
+      {
+        "ref_id": "34",
+        "text": "X. Li, M.G. Epitropakis, K. Deb, A. Engelbrecht, Seeking Multiple Solutions: An Updated Survey on Niching Methods and Their Applications, IEEE Trans. Evol. Comput. 21 (2017) 518-538. doi:10.1109/TEVC.2016.2638437."
+      },
+      {
+        "ref_id": "35",
+        "text": "Q. Yang, W.N. Chen, Y. Li, C.L.P. Chen, X.M. Xu, J. Zhang, Multimodal Estimation of Distribution Algorithms, IEEE Trans. Cybern. 47 (2017) 636-650. doi:10.1109/TCYB.2016.2523000."
+      },
+      {
+        "ref_id": "36",
+        "text": "C.W. Ahn, J. An, J. Yoo, Estimation of particle swarm distribution algorithms: Combining the benefits of PSO and EDAs, Inf. Sci. (Ny). 192 (2012) 109-119."
+      },
+      {
+        "ref_id": "37",
+        "text": "Y. Wang, B. Li, T. Weise, Estimation of distribution and differential evolution cooperation for large scale economic load dispatch optimization of power systems, Inf. Sci. (Ny). 180 (2010) 2405-2420. doi:10.1016/j.in.2010.02.015."
+      },
+      {
+        "ref_id": "38",
+        "text": "R. Rastegar, On the Optimal Convergence Probability of Univariate Estimation of Distribution Algorithms, Evol. Comput. 19 (2011) 225-248. doi:10.1162/EVCO_a_00022."
+      },
+      {
+        "ref_id": "39",
+        "text": "C. Echegoyen, R. Santana, A. Mendiburu, J.A. Lozano, Comprehensive characterization of the behaviors of estimation of distribution algorithms, Theor. Comput. Sci. 598 (2015) 64-86. doi:10.1016/j.tcs.2015.04.015."
+      },
+      {
+        "ref_id": "40",
+        "text": "C.M. Bishop, Pattern Recognition and Machine Learning (Information Science and Statistics), Springer-Verlag New York, Inc., 2006."
+      },
+      {
+        "ref_id": "41",
+        "text": "R.K. Ursem, Multinational GAs: Multimodal optimization techniques in dynamic environments, in: Proc. 2nd Annu. Conf. Genet. Evol. Comput., Morgan Kaufmann Publishers Inc., 2000: pp. 19-26."
+      },
+      {
+        "ref_id": "42",
+        "text": "J.J. Liang, B.Y. Qu, P.N. Suganthan, Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective real-parameter numerical optimization, Comput. Intell. Lab. Zhengzhou Univ. Zhengzhou China Tech. Report, Nanyang Technol. Univ. Singapore. (2013)."
+      },
+      {
+        "ref_id": "43",
+        "text": "I. Loshchilov, M. Schoenauer, M. Sebag, Alternative restart strategies for CMA-ES, in: Int. Conf. Parallel Probl. Solving from Nat., Springer, 2012: pp. 296-305."
+      },
+      {
+        "ref_id": "44",
+        "text": "I. Loshchilov, CMA-ES with restarts for solving CEC 2013 benchmark problems, in: Evol. Comput. (CEC), 2013 IEEE Congr., Ieee, 2013: pp. 369-376."
+      },
+      {
+        "ref_id": "45",
+        "text": "Y. Wang, Z. Liu, J. Li, H. Li, G.G. Yen, Utilizing cumulative population distribution information in differential evolution, Appl. Soft Comput. 48 (2016) 329-346."
+      },
+      {
+        "ref_id": "46",
+        "text": "H. Ouyang, L. Gao, X. Kong, S. Li, D. Zou, Hybrid harmony search particle swarm optimization with global dimension selection, Inf. Sci. 346 (2016) 318-337."
+      },
+      {
+        "ref_id": "47",
+        "text": "J. Zhang, A.C. Sanderson, JADE: adaptive differential evolution with optional external archive, IEEE Trans. Evol. Comput. 13 (2009) 945-958."
+      },
+      {
+        "ref_id": "48",
+        "text": "J. Cohen, Statistical power analysis for the behavioral sciences Lawrence Earlbaum Associates, Hillsdale, NJ. (1988) 20-26."
+      },
+      {
+        "ref_id": "49",
+        "text": "D. Bose, S. Kundu, S. Biswas, S. Das, Circular Antenna Array Design Using Novel Perturbation Based Artificial Bee Colony Algorithm, in Swarm, Evolutionary, and Memetic Computing (SEMCCO), 2012 Third International Conference on, Springer Berlin Heidelberg, Berlin, Heidelberg, 2012: pp. 459-466. doi:10.1007/978-3-642-35380-2_54."
+      },
+      {
+        "ref_id": "50",
+        "text": "S. Kundu, S. Das, A. V Vasilakos, S. Biswas, A modified differential evolution-based combined routing and sleep scheduling scheme for lifetime maximization of wireless sensor networks, Soft Comput. 19 (2015) 637-659. doi:10.1007/s00500-014-1286-9."
+      },
+      {
+        "ref_id": "51",
+        "text": "D. Bose, S. Biswas, A. V Vasilakos, S. Laha, Optimal filter design using an improved artificial bee colony algorithm, Inf. Sci. (Ny). 281 (2014) 443-461. doi: 10.1016/j.ins.2014.05.033."
+      },
+      {
+        "ref_id": "52",
+        "text": "A. Trivedi, D. Srinivasan, S. Biswas, T. Reindl, A genetic algorithm-differential evolution-based hybrid framework: Case study on unit commitment scheduling problem, Inf. Sci. (Ny), 354 (2016) 275-300. doi: $10.1016 /$ j.ins.2016.03.023."
+      }
+    ],
+    "reference_count": 52,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The mean and the standard deviation (mean±standard deviation) of FEVs obtained by 6 algorithms over 25 independent runs on 30 CEC2014 benchmark functions with 30D",
+      "headers": [
+        "Fun.",
+        "EMNA $_{8}$",
+        "AMaLGaM",
+        "IPOP-CMAES",
+        "CPI-JADE",
+        "HHSPSO-GDS",
+        "AAVS-EDA"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "1.43E+08±3.30E+07 -",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "8.60E+03±4.67E+03 -",
+          "0.00E+00±0.00E+00"
+        ],
+        [
+          "$f_{2}$",
+          "1.39E+10±1.71E+09 -",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "1.14E+02±1.25E+02 -",
+          "0.00E+00±0.00E+00"
+        ],
+        [
+          "$f_{3}$",
+          "1.93E+04±3.48E+03 -",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "4.64E+02±3.83E+02 -",
+          "0.00E+00±0.00E+00"
+        ],
+        [
+          "$f_{4}$",
+          "1.53E+03±2.43E+02 -",
+          "4.94E+00±1.19E+01 -",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "5.92E+00±4.01E+00 -",
+          "1.08E-02±4.41E-02"
+        ],
+        [
+          "$f_{5}$",
+          "2.09E+01±5.19E-02 *",
+          "2.09E+01±2.79E-02 *",
+          "2.09E+01±4.97E-02 *",
+          "2.07E+01±3.68E-02 *",
+          "1.13E+01±3.79E-02 *",
+          "2.09E+01±4.66E-02"
+        ],
+        [
+          "$f_{6}$",
+          "4.62E+00±1.13E+00 -",
+          "1.83E-02±9.18E-02 -",
+          "1.18E-08±1.23E-08 *",
+          "3.44E+00±3.57E+00 -",
+          "1.20E+01±2.45E+00 -",
+          "2.11E-06±5.82E-06"
+        ],
+        [
+          "$f_{7}$",
+          "1.65E+02±1.91E+01 -",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "2.31E-04±2.30E-04 -",
+          "0.00E+00±0.00E+00"
+        ],
+        [
+          "$f_{8}$",
+          "4.14E+01±5.94E+00 -",
+          "4.17E+00±1.69E+00 -",
+          "9.21E+01±1.01E-00 *",
+          "0.00E+00±0.00E+00 *",
+          "0.00E+00±0.00E+00 *",
+          "1.15E+00±1.13E+00"
+        ],
+        [
+          "$f_{9}$",
+          "3.01E+01±7.28E+00 -",
+          "3.66E+00±1.36E+00 -",
+          "8.74E-00±1.09E+00 *",
+          "2.24E+01±5.33E+00 -",
+          "1.35E+01±3.61E+01 -",
+          "2.46E+00±9.98E-01"
+        ],
+        [
+          "$f_{10}$",
+          "1.02E+03±3.70E+02 -",
+          "5.29E+02±2.44E+02 -",
+          "2.74E+02±2.02E+02 -",
+          "3.83E-01±7.47E-02 *",
+          "2.39E+00±1.30E+00 *",
+          "1.36E+02±1.83E+02"
+        ],
+        [
+          "$f_{11}$",
+          "1.16E+03±3.43E+02 -",
+          "5.66E+02±3.24E+02 -",
+          "2.72E+02±1.66E+02 *",
+          "1.77E+03±2.55E+02 -",
+          "1.96E+03±5.78E+02 -",
+          "3.02E+02±3.68E+02"
+        ],
+        [
+          "$f_{12}$",
+          "2.49E+00±2.26E-01 -",
+          "2.51E+00±7.91E-01 -",
+          "2.49E+00±2.26E-01 -",
+          "3.95E-01±8.64E-02 *",
+          "1.06E-01±4.91E-02 *",
+          "5.21E-01±7.56E-01"
+        ],
+        [
+          "$f_{13}$",
+          "4.09E+00±1.90E-01 -",
+          "5.85E-02±1.70E-02 *",
+          "6.95E-02±2.01E-02 -",
+          "2.04E-01±3.38E-02 -",
+          "1.49E-01±1.34E-01 -",
+          "2.03E-02±3.37E-03"
+        ],
+        [
+          "$f_{14}$",
+          "7.92E+01±9.35E+00 -",
+          "4.25E-01±4.27E+00",
+          "3.80E-01±5.24E-02 -",
+          "2.32E-01±3.35E-02 *",
+          "1.51E-01±2.04E-01 *",
+          "2.83E-01±2.73E-02"
+        ],
+        [
+          "$f_{15}$",
+          "4.67E+01±7.41E+01 -",
+          "3.21E+00±1.70E-01 *",
+          "2.50E+00±3.81E-01 *",
+          "3.26E+00±3.78E-01 *",
+          "2.13E+01±7.46E+00 -",
+          "6.73E+00±1.98E+00"
+        ],
+        [
+          "$f_{16}$",
+          "1.32E+01±1.59E-01 -",
+          "1.06E+01±3.76E-01 *",
+          "9.47E+00±1.82E+00 *",
+          "9.70E+00±2.79E-01 *",
+          "1.06E+00±6.62E-01 *",
+          "1.13E+01±3.65E-01"
+        ],
+        [
+          "$f_{17}$",
+          "1.35E+06±9.72E+05 -",
+          "1.37E+02±1.17E+02 -",
+          "1.89E+03±5.03E+02 -",
+          "1.16E+03±3.81E+02 -",
+          "1.15E+05±7.94E+04 -",
+          "1.20E+02±8.76E+01"
+        ],
+        [
+          "$f_{18}$",
+          "7.04E+01±1.54E+01 -",
+          "1.36E+01±9.09E+00 -",
+          "6.33E+02±2.16E+02 -",
+          "9.47E+01±3.42E+01 -",
+          "1.21E+01±9.78E+01 -",
+          "8.02E-01±2.79E-01"
+        ],
+        [
+          "$f_{19}$",
+          "1.40E+01±5.01E+00 -",
+          "1.47E+00±7.05E-01 -",
+          "6.77E+00±1.67E+00 -",
+          "4.89E+00±7.64E-01 -",
+          "1.69E-01±2.18E-01 *",
+          "3.35E+00±4.33E-01"
+        ],
+        [
+          "$f_{20}$",
+          "2.70E+03±1.24E+02 -",
+          "3.53E+00±1.47E+00 -",
+          "2.44E+02±1.93E+00 -",
+          "1.12E+01±5.24E+00 -",
+          "2.09E+01±1.19E+01 -",
+          "1.65E+00±2.22E-01"
+        ],
+        [
+          "$f_{21}$",
+          "2.80E+04±4.47E+04 -",
+          "4.10E+02±9.45E+01 *",
+          "2.16E+03±9.67E+02 -",
+          "3.33E+02±1.54E+02 -",
+          "1.07E+05±9.07E+04 -",
+          "1.05E+02±2.75E+01"
+        ],
+        [
+          "$f_{22}$",
+          "1.28E+02±5.40E+01 -",
+          "8.27E+01±6.13E+01 *",
+          "2.36E+02±1.48E+02 -",
+          "9.99E+01±6.09E+01 *",
+          "1.27E+02±2.32E+02 *",
+          "9.20E+01±5.08E+01"
+        ],
+        [
+          "$f_{23}$",
+          "3.57E+02±1.00E+00 -",
+          "3.15E+02±2.07E-13 *",
+          "3.14E+02±1.16E-13 *",
+          "3.15E+02±4.01E-13 *",
+          "3.15E+02±1.06E-04 *",
+          "3.15E+02±7.03E-13"
+        ],
+        [
+          "$f_{24}$",
+          "2.30E+02±2.96E+00 -",
+          "2.22E+02±4.78E+00 *",
+          "2.22E+02±2.70E+01 *",
+          "2.24E+02±2.93E+00 -",
+          "2.00E+02±0.00E+00 *",
+          "2.22E+02±6.66E+00"
+        ],
+        [
+          "$f_{25}$",
+          "2.06E+02±3.30E-01 -",
+          "2.02E+02±4.73E-02 *",
+          "2.00E+02±1.42E-04 *",
+          "2.03E+02±5.77E-01 -",
+          "2.01E+02±6.42E+00 *",
+          "2.02E+02±6.83E-02"
+        ],
+        [
+          "$f_{26}$",
+          "1.99E+02±6.76E+00 -",
+          "1.00E+02±7.68E-02 *",
+          "1.00E+02±2.39E-02 *",
+          "1.00E+02±2.92E-02 *",
+          "1.00E+02±4.68E-02 *",
+          "1.00E+02±4.75E-03"
+        ],
+        [
+          "$f_{27}$",
+          "3.50E+02±4.86E+01 -",
+          "3.02E+02±1.26E+01 -",
+          "3.10E+02±3.32E+01 -",
+          "3.53E+02±5.03E+01 -",
+          "2.11E+02±1.96E+02 *",
+          "3.00E+02±5.97E-07"
+        ],
+        [
+          "$f_{28}$",
+          "9.87E+02±1.43E+02 -",
+          "9.02E+02±2.54E+01 -",
+          "3.66E+02±4.14E-01 *",
+          "8.02E+02±4.34E+01 -",
+          "2.36E+02±3.08E+01 *",
+          "7.03E+02±2.06E+02"
+        ],
+        [
+          "$f_{29}$",
+          "1.52E+03±8.70E+02 -",
+          "6.43E+02±1.59E+02 -",
+          "2.07E+02±1.55E+00 -",
+          "8.13E+02±7.12E+01 -",
+          "2.57E+02±4.03E+02 -",
+          "1.00E+02±5.19E-03"
+        ],
+        [
+          "$f_{30}$",
+          "3.86E+03±1.08E+03 -",
+          "1.35E+03±6.48E+02 -",
+          "6.63E+02±2.02E+02 -",
+          "1.40E+03±7.24E+02 -",
+          "1.12E+03±1.32E+03 -",
+          "4.70E+02±8.64E+01"
+        ],
+        [
+          "$-\\ln 2+$",
+          2910,
+          17112,
+          13710,
+          1578,
+          16410,
+          "-"
+        ]
+      ],
+      "row_count": 31,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Ranking of 6 algorithms according to the Friedman test.",
+      "headers": [
+        "Algorithms",
+        "Ranking"
+      ],
+      "rows": [
+        [
+          "AAVS-EDA",
+          2.48
+        ],
+        [
+          "IPOP-CMAES",
+          2.95
+        ],
+        [
+          "HHSPSO-GDS",
+          3.23
+        ],
+        [
+          "AMaLGaM",
+          3.28
+        ],
+        [
+          "CPI-JADE",
+          3.38
+        ],
+        [
+          "EMNA $_{g}$",
+          5.67
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    }
+  ]
+}

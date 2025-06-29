@@ -1,0 +1,783 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/A Radial Hybrid Estimation of Distribution Algorithm for the Vehicle Routing Problem with Time Windows.md",
+    "filename": "A Radial Hybrid Estimation of Distribution Algorithm for the Vehicle Routing Problem with Time Windows.md",
+    "title": "A Radial Hybrid Estimation of Distribution Algorithm for the Vehicle Routing Problem with Time Windows",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Data for the instance used in Fig. 1.",
+      "headers": [
+        "Vertex",
+        "Xcoord",
+        "Ycoord",
+        "Demand",
+        "Ready time",
+        "Due date",
+        "Service time",
+        "Edge",
+        "$d_{i j}=t_{i j}$"
+      ],
+      "rows": [
+        [
+          0,
+          70,
+          70,
+          0,
+          0,
+          1351,
+          0,
+          1,
+          37.85
+        ],
+        [
+          1,
+          33,
+          78,
+          20,
+          750,
+          809,
+          90,
+          "$[0,4]$",
+          78.23
+        ],
+        [
+          2,
+          59,
+          52,
+          20,
+          553,
+          602,
+          90,
+          "$[0,5]$",
+          62.94
+        ],
+        [
+          3,
+          10,
+          137,
+          30,
+          147,
+          219,
+          90,
+          "$[0,2]$",
+          21.1
+        ],
+        [
+          4,
+          4,
+          28,
+          10,
+          616,
+          661,
+          90,
+          "$[0,3]$",
+          89.94
+        ],
+        [
+          5,
+          25,
+          26,
+          20,
+          128,
+          179,
+          90,
+          "$[0,6]$",
+          36.67
+        ],
+        [
+          6,
+          86,
+          37,
+          10,
+          478,
+          531,
+          90,
+          "$[1,4]$",
+          57.8
+        ],
+        [
+          "$S=(1,4,5,2,3,6)$",
+          "",
+          "",
+          "$Q=50$",
+          "",
+          "",
+          "",
+          "$[4,5]$",
+          21.1
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$[5,2]$",
+          42.8
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$[2,3]$",
+          98.11
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$[3,6]$",
+          125.6
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 9
+    },
+    {
+      "table_number": "2",
+      "table_title": "Data for the instance used in Fig. 2.",
+      "headers": [
+        "Vertex",
+        "Xcoord",
+        "Ycoord",
+        "Demand",
+        "Ready time",
+        "Due date",
+        "Service time",
+        "Edge",
+        "$d_{i k}=i_{i k}$"
+      ],
+      "rows": [
+        [
+          0,
+          70,
+          70,
+          0,
+          0,
+          1351,
+          0,
+          5,
+          62.93
+        ],
+        [
+          1,
+          33,
+          78,
+          20,
+          750,
+          809,
+          90,
+          4,
+          78.23
+        ],
+        [
+          2,
+          59,
+          52,
+          20,
+          553,
+          602,
+          90,
+          2,
+          21.1
+        ],
+        [
+          3,
+          10,
+          137,
+          30,
+          147,
+          219,
+          90,
+          1,
+          37.85
+        ],
+        [
+          4,
+          4,
+          28,
+          10,
+          616,
+          661,
+          90,
+          3,
+          89.94
+        ],
+        [
+          5,
+          25,
+          26,
+          20,
+          128,
+          179,
+          90,
+          6,
+          36.67
+        ],
+        [
+          6,
+          86,
+          37,
+          10,
+          478,
+          531,
+          90,
+          54,
+          21.09
+        ],
+        [
+          "$S=(3,4,2,1,3,6)$",
+          "",
+          "",
+          "$Q=50$",
+          "",
+          "",
+          "",
+          42,
+          60.0
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          21,
+          36.77
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          13,
+          63.32
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          36,
+          125.6
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Vertex",
+        "Xcoord",
+        "Ycosord"
+      ],
+      "rows": [
+        [
+          0,
+          70,
+          70
+        ],
+        [
+          1,
+          33,
+          78
+        ],
+        [
+          2,
+          59,
+          52
+        ],
+        [
+          3,
+          10,
+          137
+        ],
+        [
+          4,
+          4,
+          28
+        ],
+        [
+          5,
+          25,
+          26
+        ],
+        [
+          6,
+          86,
+          37
+        ],
+        [
+          "$\\boldsymbol{S}=(5,4,2,1,3,6)$",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$q$ th",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "$-m-1$"
+      ],
+      "rows": [
+        [
+          "$\\sigma_{1}$",
+          1,
+          4,
+          5,
+          2,
+          3,
+          ""
+        ],
+        [
+          "$V_{q}\\left(\\sigma_{1}, \\sigma_{0}\\right)$",
+          0,
+          2,
+          2,
+          0,
+          0,
+          "$-\\sum 4$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$q$ th",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "$-m-1$"
+      ],
+      "rows": [
+        [
+          "$\\sigma_{2}$",
+          5,
+          4,
+          2,
+          1,
+          3,
+          ""
+        ],
+        [
+          "$V_{q}\\left(\\sigma_{2}, \\sigma_{0}\\right)$",
+          4,
+          3,
+          1,
+          0,
+          0,
+          "$-\\sum 8$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Central Permutation",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        ""
+      ],
+      "rows": [
+        [
+          "Permutation I",
+          1,
+          4,
+          5,
+          2,
+          3,
+          6,
+          "Kendall-tau distance $=4$"
+        ],
+        [
+          2,
+          5,
+          4,
+          2,
+          1,
+          3,
+          6,
+          "Kendall-tau distance $=8$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    },
+    {
+      "table_number": "4",
+      "table_title": "Comparison of results with Homberger and Gehring (2005) instances.",
+      "headers": [
+        "",
+        "",
+        "Intervals",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Instances",
+          "Trials",
+          "$[0,0.031)$",
+          "$[0.031$,",
+          "$[0.062$,",
+          "$[0.093$,",
+          "$[0.124$,",
+          "$[0.155$,"
+        ],
+        [
+          "",
+          "",
+          "",
+          0.062,
+          0.093,
+          0.124,
+          0.155,
+          0.186
+        ],
+        [
+          120,
+          3000,
+          2095,
+          678,
+          226,
+          1,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          "",
+          69.83,
+          22.62,
+          7.53,
+          0.02,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "5",
+      "table_title": "Comparison of the results.",
+      "headers": [
+        "Algorithm",
+        "Global performance <br> Mean(std)"
+      ],
+      "rows": [
+        [
+          "NSGA",
+          "$0.777(2.056)$"
+        ],
+        [
+          "NSGA-II",
+          "$0.744(1.841)$"
+        ],
+        [
+          "HMEDA for the VRPTW",
+          "$0.315(0.278)$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "6",
+      "table_title": "Distribution of the results.",
+      "headers": [
+        "Algorithm",
+        "Intervals",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$[0,0.031)$",
+          "$\\begin{gathered} {[0.031,} \\\\ 0.062 \\end{gathered}$",
+          "$\\begin{gathered} {[0.062,} \\\\ 0.093 \\end{gathered}$",
+          "$\\begin{gathered} {[0.093,} \\\\ 0.124 \\end{gathered}$",
+          "$\\begin{gathered} {[0.124,} \\\\ 0.155 \\end{gathered}$",
+          "$\\geq 0.155$"
+        ],
+        [
+          "NSGA",
+          "$60.20 \\%$",
+          "$10.23 \\%$",
+          "$4.07 \\%$",
+          "$3.90 \\%$",
+          "$3.83 \\%$",
+          "-"
+        ],
+        [
+          "NSGA-II",
+          "$59.07 \\%$",
+          "$11.07 \\%$",
+          "$4.20 \\%$",
+          "$4.10 \\%$",
+          "$4.07 \\%$",
+          "-"
+        ],
+        [
+          "HMEDA for the VRPTW",
+          "$60.03 \\%$",
+          "$10.40 \\%$",
+          "$6.50 \\%$",
+          "$6.43 \\%$",
+          "$5.87 \\%$",
+          "-"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 7
+    },
+    {
+      "table_number": "8",
+      "table_title": "Data for the bread routing problem.",
+      "headers": [
+        "Vertex",
+        "Demand (Percentage of the capacity)",
+        "Ready time",
+        "Due date",
+        "Service time"
+      ],
+      "rows": [
+        [
+          0,
+          0,
+          0,
+          3598,
+          0
+        ],
+        [
+          1,
+          20,
+          2448,
+          3328,
+          90
+        ],
+        [
+          2,
+          20,
+          308,
+          1188,
+          90
+        ],
+        [
+          3,
+          10,
+          661,
+          1541,
+          90
+        ],
+        [
+          4,
+          10,
+          2457,
+          3337,
+          90
+        ],
+        [
+          5,
+          30,
+          1562,
+          2442,
+          90
+        ],
+        [
+          6,
+          30,
+          57,
+          937,
+          90
+        ],
+        [
+          7,
+          10,
+          2237,
+          3117,
+          90
+        ],
+        [
+          8,
+          20,
+          546,
+          1426,
+          90
+        ],
+        [
+          9,
+          20,
+          1457,
+          2337,
+          90
+        ],
+        [
+          10,
+          20,
+          63,
+          943,
+          90
+        ],
+        [
+          11,
+          10,
+          2550,
+          3430,
+          90
+        ],
+        [
+          12,
+          20,
+          849,
+          1729,
+          90
+        ],
+        [
+          13,
+          20,
+          757,
+          1637,
+          90
+        ],
+        [
+          14,
+          10,
+          2584,
+          3464,
+          90
+        ],
+        [
+          15,
+          10,
+          557,
+          1437,
+          90
+        ],
+        [
+          16,
+          10,
+          1043,
+          1923,
+          90
+        ],
+        [
+          17,
+          10,
+          2140,
+          3020,
+          90
+        ],
+        [
+          18,
+          20,
+          475,
+          1355,
+          90
+        ],
+        [
+          19,
+          20,
+          1554,
+          2434,
+          90
+        ],
+        [
+          20,
+          40,
+          1277,
+          2157,
+          90
+        ],
+        [
+          21,
+          20,
+          2435,
+          3315,
+          90
+        ],
+        [
+          22,
+          30,
+          941,
+          1821,
+          90
+        ],
+        [
+          23,
+          30,
+          2602,
+          3482,
+          90
+        ],
+        [
+          24,
+          10,
+          1560,
+          2440,
+          90
+        ],
+        [
+          25,
+          10,
+          985,
+          1865,
+          90
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 5
+    }
+  ]
+}

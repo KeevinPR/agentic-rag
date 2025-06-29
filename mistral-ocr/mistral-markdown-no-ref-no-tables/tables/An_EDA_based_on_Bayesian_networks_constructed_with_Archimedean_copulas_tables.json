@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/An EDA based on Bayesian networks constructed with Archimedean copulas.md",
+    "filename": "An EDA based on Bayesian networks constructed with Archimedean copulas.md",
+    "title": "An EDA based on Bayesian networks constructed with Archimedean copulas",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Clayton",
+        ""
+      ],
+      "rows": [
+        [
+          "Generator",
+          "$\\varphi(u)=\\frac{u^{-\\theta}-1}{\\frac{\\theta}{u}-1}$"
+        ],
+        [
+          "Inverse",
+          "$\\varphi^{-1}(t)=(1+\\theta t)^{-1 / \\theta}$"
+        ],
+        [
+          "Function",
+          "$C\\left(u_{1}, u_{2}, \\ldots, u_{n}\\right)=\\left(\\sum_{i} u_{i}^{-\\theta}-n+1\\right)^{-1 / \\theta}$"
+        ],
+        [
+          "Parameter",
+          "$\\theta>0$"
+        ],
+        [
+          "Kendall's tau",
+          "$\\tau=\\frac{\\theta}{0.12}$"
+        ],
+        [
+          "Frank",
+          ""
+        ],
+        [
+          "Generator",
+          "$\\varphi(u)=-\\ln \\left(\\frac{e^{-\\theta} v-1}{e^{-\\theta}-1}\\right)$"
+        ],
+        [
+          "Inverse",
+          "$\\varphi^{-1}(t)=-\\frac{1}{\\theta} \\ln \\left(1+e^{-t}\\left(e^{-\\theta}-1\\right)\\right)$"
+        ],
+        [
+          "Function",
+          "$C\\left(u_{1}, u_{2}, \\ldots, u_{n}\\right)=-\\frac{1}{\\theta} \\ln \\left(1+\\frac{\\prod_{i=1}^{n}\\left(e^{-\\theta u_{i}}-1\\right)}{\\left(e^{-\\theta}-1\\right)^{n-1}}\\right)$"
+        ],
+        [
+          "Parameter",
+          "$\\theta>0$"
+        ],
+        [
+          "Kendall's tau",
+          "$\\tau=1-\\frac{1}{\\theta}$"
+        ],
+        [
+          "Gumbel",
+          ""
+        ],
+        [
+          "Generator",
+          "$\\varphi(u)=(-\\ln (u))^{\\theta}$"
+        ],
+        [
+          "Inverse",
+          "$\\varphi^{-1}(t)=\\exp \\left(-t^{1 / \\theta}\\right)$"
+        ],
+        [
+          "Function",
+          "$C\\left(u_{1}, u_{2}, \\ldots, u_{n}\\right)=\\exp \\left(-\\left(\\sum_{i}\\left(-\\ln u_{i}\\right)^{\\theta}\\right)^{1 / \\theta}\\right)$"
+        ],
+        [
+          "Parameter",
+          "$\\theta>1$"
+        ],
+        [
+          "Kendall's tau",
+          "$\\tau=1-\\frac{1}{\\theta}\\left(1-D_{1}(\\theta)\\right)$"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Problem",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "rows": [
+        [
+          "Mean",
+          0.0060614539,
+          2.387246119,
+          0.0370533613,
+          22.328742871,
+          10.4979951613
+        ],
+        [
+          "Std. dev.",
+          0.0021301646,
+          1.0597248887,
+          0.006409029,
+          22.8224320997,
+          0.6866521235
+        ],
+        [
+          "Variance",
+          4.5376e-06,
+          1.1230168397,
+          4.1076e-05,
+          520.8634069434,
+          0.4714911387
+        ],
+        [
+          "Best",
+          0.00264332,
+          0.00743969,
+          0.0154605,
+          0.0865839,
+          8.7676
+        ],
+        [
+          "Worst",
+          0.00976279,
+          4.00952,
+          0.0494799,
+          113.528,
+          11.6509
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    }
+  ]
+}

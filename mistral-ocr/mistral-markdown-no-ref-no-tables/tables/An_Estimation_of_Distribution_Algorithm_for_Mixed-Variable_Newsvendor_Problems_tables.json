@@ -1,0 +1,722 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/An Estimation of Distribution Algorithm for Mixed-Variable Newsvendor Problems.md",
+    "filename": "An Estimation of Distribution Algorithm for Mixed-Variable Newsvendor Problems.md",
+    "title": "An Estimation of Distribution Algorithm for Mixed-Variable Newsvendor Problems",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "FACTORS AND LEVELS FOR ORTHOGONAL EXPERIMENT",
+      "headers": [
+        "Factor",
+        "level 1",
+        "level 2",
+        "level 3",
+        "level 4"
+      ],
+      "rows": [
+        [
+          "M",
+          20,
+          40,
+          80,
+          100
+        ],
+        [
+          "$\\overline{x^{m}}$",
+          50,
+          100,
+          "$\\backslash$",
+          "$\\backslash$"
+        ],
+        [
+          "CF",
+          "Weak",
+          "Strong",
+          "$\\backslash$",
+          "$\\backslash$"
+        ],
+        [
+          "PS",
+          "Yes",
+          "No",
+          "$\\backslash$",
+          "$\\backslash$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "Synthetic Benchmark Suite for Mixed-Variable Newsvendor Problems. The Numbers in Parentheses Represent the Level of Each Value Corresponding to Table I",
+      "headers": [
+        "Instance",
+        "Factors",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "M",
+          "$\\overline{x^{m}}$",
+          "CF",
+          "PS"
+        ],
+        [
+          "$F_{1}$",
+          201,
+          501,
+          1,
+          1
+        ],
+        [
+          "$F_{2}$",
+          201,
+          1002,
+          2,
+          2
+        ],
+        [
+          "$F_{3}$",
+          402,
+          501,
+          1,
+          2
+        ],
+        [
+          "$F_{4}$",
+          402,
+          1002,
+          2,
+          1
+        ],
+        [
+          "$F_{5}$",
+          803,
+          501,
+          2,
+          2
+        ],
+        [
+          "$F_{6}$",
+          803,
+          1002,
+          1,
+          1
+        ],
+        [
+          "$F_{7}$",
+          1004,
+          501,
+          2,
+          1
+        ],
+        [
+          "$F_{8}$",
+          1004,
+          1002,
+          1,
+          2
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "III",
+      "table_title": "Comparison Results Between the Mixed-Variable Newsvendor Model and Classical Model on the Benchmark Suite. The Best Results Are Shown in Bold Type. \" + ,\" \" - \" or \" $\\infty$ \" Indicates the Performance of $\\mathrm{EDA}_{m v n}$ on the Classical Model Is Better Than, Worse Than or Similar to the Mixed-Variable Newsvendor Model at 0.95 Significance LeveL by a Wilcoxon Rank Sum Test",
+      "headers": [
+        "Instance",
+        "",
+        "Mixed-variable <br> Model",
+        "Classical <br> Model",
+        "Improvement Ratio"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          "MEAN",
+          1.57201,
+          "$1.347 \\mathrm{E}+01^{-}$",
+          "$16.67 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          1.053,
+          "$3.892 \\mathrm{E}-14$",
+          ""
+        ],
+        [
+          "$F_{2}$",
+          "MEAN",
+          5.70902,
+          "$4.883 \\mathrm{E}+02^{-}$",
+          "$16.93 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          7.159,
+          "$1.245 \\mathrm{E}-12$",
+          ""
+        ],
+        [
+          "$F_{3}$",
+          "MEAN",
+          1.90603,
+          "$1.632 \\mathrm{E}+03^{-}$",
+          "$16.81 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          2.72301,
+          "$0.000 \\mathrm{E}+00$",
+          ""
+        ],
+        [
+          "$F_{4}$",
+          "MEAN",
+          1.26002,
+          "$1.070 \\mathrm{E}+02^{-}$",
+          "$17.70 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          4.519,
+          "$7.784 \\mathrm{E}-14$",
+          ""
+        ],
+        [
+          "$F_{5}$",
+          "MEAN",
+          3.58803,
+          3.64303,
+          "$-1.50 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          5.96201,
+          1.279,
+          ""
+        ],
+        [
+          "$F_{6}$",
+          "MEAN",
+          2.93102,
+          "$1.985 \\mathrm{E}+02^{-}$",
+          "$47.67 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          2.20901,
+          "$6.227 \\mathrm{E}-13$",
+          ""
+        ],
+        [
+          "$F_{7}$",
+          "MEAN",
+          2.16602,
+          "$1.994 \\mathrm{E}+02^{-}$",
+          "$8.63 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          3.538,
+          "$0.000 \\mathrm{E}+00$",
+          ""
+        ],
+        [
+          "$F_{8}$",
+          "MEAN",
+          2.15803,
+          "$1.886 \\mathrm{E}+03^{-}$",
+          "$14.39 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          5.82801,
+          "$4.982 \\mathrm{E}-12$",
+          ""
+        ],
+        [
+          "RMdata",
+          "MEAN",
+          3.07605,
+          "$2.575 \\mathrm{E}+05^{-}$",
+          "$19.46 \\%$"
+        ],
+        [
+          "",
+          "SD",
+          2.18403,
+          "$7.970 \\mathrm{E}-10$",
+          ""
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 5
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Comparison Results for $\\mathrm{EDA}_{m v n}$, GA-PSO, $\\mathrm{ACO}_{m v}$, $\\mathrm{DE}_{m v}$, AEDA, and Lingo on the Benchmark Suite. The Best Results Are Shown in Bold TyPe. \" + ,\" \" - ,\" or \"n\" Indicates the Performance Is Better Than, Worse Than or Similar to the Performance of $\\mathrm{EDA}_{m v n}$ at 0.95 Significance Level by a Wilcoxon Rank Sum Test",
+      "headers": [
+        "Instance",
+        "",
+        "$E D A_{m v n}$",
+        "GA-PSO",
+        "$A C O_{m v}$",
+        "$D E_{m v}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          "MEAN",
+          1.57201,
+          1.55601,
+          1.55101,
+          1.59801,
+          1.54801,
+          1.53901
+        ],
+        [
+          "",
+          "SD",
+          1.053,
+          1.401,
+          2.352,
+          "1.550E-01",
+          "8.548E-01",
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          0.555,
+          0.284,
+          0.205,
+          1.0,
+          0.156,
+          0.0
+        ],
+        [
+          "$F_{2}$",
+          "MEAN",
+          5.70902,
+          5.68502,
+          "$5.437 \\mathrm{E}+02^{-}$",
+          5.69302,
+          "$5.454 \\mathrm{E}+02^{-}$",
+          5.38502
+        ],
+        [
+          "",
+          "SD",
+          7.159,
+          2.15901,
+          1.15602,
+          1.31001,
+          1.81001,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.924,
+          0.158,
+          0.952,
+          0.213,
+          0.0
+        ],
+        [
+          "$F_{3}$",
+          "MEAN",
+          1.90603,
+          1.77503,
+          "$1.715 \\mathrm{E}+03^{-}$",
+          1.83803,
+          "$1.776 \\mathrm{E}+03^{-}$",
+          1.65403
+        ],
+        [
+          "",
+          "SD",
+          2.72301,
+          2.06202,
+          4.76602,
+          6.65601,
+          6.09201,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.479,
+          0.243,
+          0.729,
+          0.482,
+          0.0
+        ],
+        [
+          "$F_{4}$",
+          "MEAN",
+          1.26002,
+          1.27102,
+          1.19702,
+          1.36002,
+          1.26202,
+          1.21102
+        ],
+        [
+          "",
+          "SD",
+          4.519,
+          8.103,
+          1.46802,
+          7.69,
+          6.229,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          0.386,
+          0.452,
+          0.0,
+          1.0,
+          0.398,
+          0.09
+        ],
+        [
+          "$F_{5}$",
+          "MEAN",
+          3.58803,
+          2.82303,
+          2.25203,
+          "$3.175 \\mathrm{E}+03^{-}$",
+          2.86103,
+          "$3.132 \\mathrm{E}+03^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          5.96201,
+          1.11103,
+          2.66703,
+          3.24802,
+          2.45202,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.427,
+          0.0,
+          0.691,
+          0.456,
+          0.659
+        ],
+        [
+          "$F_{6}$",
+          "MEAN",
+          2.93102,
+          2.28902,
+          "$1.420 \\mathrm{E}+02^{-}$",
+          2.78302,
+          2.88002,
+          "$1.902 \\mathrm{E}+02^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          2.20901,
+          9.41801,
+          5.26802,
+          3.18801,
+          1.34501,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.575,
+          0.0,
+          0.902,
+          0.967,
+          0.319
+        ],
+        [
+          "$F_{7}$",
+          "MEAN",
+          2.16602,
+          1.88102,
+          "$1.014 \\mathrm{E}+02^{-}$",
+          2.12702,
+          2.01502,
+          "$1.675 \\mathrm{E}+02^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          3.538,
+          8.05701,
+          4.33702,
+          8.882,
+          7.238,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.753,
+          0.0,
+          0.967,
+          0.869,
+          0.574
+        ],
+        [
+          "$F_{8}$",
+          "MEAN",
+          2.15803,
+          1.65803,
+          "$9.364 \\mathrm{E}+02^{-}$",
+          1.96303,
+          2.06703,
+          "$1.836 \\mathrm{E}+03^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          5.82801,
+          4.62002,
+          1.77303,
+          1.00302,
+          6.01101,
+          ""
+        ],
+        [
+          "",
+          "Normalized Value",
+          1.0,
+          0.591,
+          0.0,
+          0.841,
+          0.926,
+          0.737
+        ],
+        [
+          "R.M data",
+          "MEAN",
+          3.07605,
+          2.98705,
+          2.30305,
+          2.98805,
+          2.92605,
+          "$2.869 \\mathrm{E}+05^{-}$"
+        ],
+        [
+          "",
+          "SD",
+          2.18403,
+          1.32604,
+          1.69705,
+          6.89803,
+          8.09503,
+          ""
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 8
+    },
+    {
+      "table_number": "V",
+      "table_title": "Comparison Results on the Synthetic Benchmark Suite With Different Dimensions of the Search Space. The Results Shown by the Normalized Values. Each Row Shows the Results of Different Algorithms Under a Certain Factor Level. The Best Results Are Shown in Bold Type",
+      "headers": [
+        "",
+        "$M$",
+        "$E D A_{m v n}$",
+        "GA-PSO",
+        "$A C O_{m v}$",
+        "$D E_{m v}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$k_{1}^{1}$",
+          20,
+          0.778,
+          0.604,
+          0.181,
+          0.976,
+          0.185,
+          0.0
+        ],
+        [
+          "$k_{2}^{2}$",
+          40,
+          0.693,
+          0.465,
+          0.121,
+          0.864,
+          0.44,
+          0.045
+        ],
+        [
+          "$k_{3}^{3}$",
+          80,
+          1.0,
+          0.501,
+          0.0,
+          0.797,
+          0.711,
+          0.489
+        ],
+        [
+          "$k_{4}^{4}$",
+          100,
+          1.0,
+          0.672,
+          0.0,
+          0.904,
+          0.897,
+          0.656
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "VI",
+      "table_title": "COMPARISON RESULTS ON THE SYnTHETIC BENCHMARK SUIte WITH DIPFERENT NUMber OF AVAILABLE Values of DISCRETE Variables. The Results Shown by the Normalized Values. Each Row Shows the Results of DIPFERENT Algorithms Under a Certain Factor Level. The Best Results Are Shown in Bold Type",
+      "headers": [
+        "",
+        "Range",
+        "$E D A_{m v n}$",
+        "GA-PSO",
+        "$A C O_{m v}$",
+        "$D E_{m v}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$k_{1}^{0}$",
+          "$[0,50]$",
+          0.889,
+          0.486,
+          0.112,
+          0.847,
+          0.491,
+          0.308
+        ],
+        [
+          "$k_{2}^{0}$",
+          "$[0,100]$",
+          0.846,
+          0.636,
+          0.04,
+          0.924,
+          0.626,
+          0.286
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    },
+    {
+      "table_number": "VII",
+      "table_title": "Comparison Results on the Synthetic Benchmark Suite With Different Degree of CFs. The Results Shown by the Normalized Values. Each Row Shows the Results of Different Algorithms Under a Certain Factor Level. The Best Results Are Shown in Bold Type",
+      "headers": [
+        "",
+        "$C F$",
+        "$E D A_{\\text {mom }}$",
+        "GA-PSO",
+        "$A C O_{\\text {mix }}$",
+        "$D E_{\\text {mix }}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$k_{1}^{\\mathrm{a}}$",
+          "Weak",
+          "$\\mathbf{0 . 8 8 9}$",
+          0.482,
+          0.112,
+          0.868,
+          0.633,
+          0.264
+        ],
+        [
+          "$k_{2}^{\\mathrm{a}}$",
+          "Strong",
+          0.846,
+          0.639,
+          0.04,
+          "$\\mathbf{0 . 9 0 2}$",
+          0.484,
+          0.331
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "Comparison Results on the Synthetic Benchmark Suite With Different PS. The Results Shown by the Normalized Values. Each Row Shows the Results of Different Algorithms Under a Certain Factor Level. The Best Results Are Shown in Bold Type",
+      "headers": [
+        "",
+        "$P S$",
+        "$E D A_{\\text {mom }}$",
+        "GA-PSO",
+        "$A C O_{\\text {mix }}$",
+        "$D E_{\\text {mix }}$",
+        "AEDA",
+        "Lingo"
+      ],
+      "rows": [
+        [
+          "$k_{1}^{\\mathrm{a}}$",
+          "Yes",
+          0.735,
+          0.516,
+          0.051,
+          "$\\mathbf{0 . 9 6 7}$",
+          0.597,
+          0.246
+        ],
+        [
+          "$k_{2}^{\\mathrm{a}}$",
+          "No",
+          "$\\mathbf{1 . 0 0 0}$",
+          0.605,
+          0.1,
+          0.803,
+          0.519,
+          0.349
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    }
+  ]
+}

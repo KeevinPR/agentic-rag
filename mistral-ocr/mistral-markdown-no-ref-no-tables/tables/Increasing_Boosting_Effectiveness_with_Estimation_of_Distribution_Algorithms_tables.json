@@ -1,0 +1,369 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Increasing Boosting Effectiveness with Estimation of Distribution Algorithms.md",
+    "filename": "Increasing Boosting Effectiveness with Estimation of Distribution Algorithms.md",
+    "title": "Increasing Boosting Effectiveness with Estimation of Distribution Algorithms",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "ACCURACY IN THE TEST SET FOR EACH ONE OF THE ALGORITHMS, IN THE EXPERIMENTED DATASETS. BOLD VALUES DENOTE THE BEST ALGORITHM FOR THAT DATASET, WHEREAS A BOLD AND UNDERLINED RESULT INDICATES A TIE IN FIRST PLACE.",
+      "headers": [
+        "Dataset",
+        "AdaBoost",
+        "AdaBoost-ones",
+        "AdaBoost-normal",
+        "EEL (ours)"
+      ],
+      "rows": [
+        [
+          "diabetes",
+          "$0.755 \\pm 0.000$",
+          "$0.727 \\pm 0.000$",
+          "$0.716 \\pm 0.013$",
+          "$\\mathbf{0 . 7 5 6} \\pm \\mathbf{0 . 0 0 4}$"
+        ],
+        [
+          "ecoli",
+          "$0.705 \\pm 0.000$",
+          "$0.720 \\pm 0.000$",
+          "$0.661 \\pm 0.089$",
+          "$\\mathbf{0 . 8 1 8} \\pm \\mathbf{0 . 0 0 3}$"
+        ],
+        [
+          "glass",
+          "$0.579 \\pm 0.000$",
+          "$0.561 \\pm 0.000$",
+          "$0.487 \\pm 0.034$",
+          "$\\mathbf{0 . 5 0 8} \\pm \\mathbf{0 . 0 0 4}$"
+        ],
+        [
+          "hayes roth",
+          "$0.594 \\pm 0.000$",
+          "$\\mathbf{0 . 0 0 0} \\pm \\mathbf{0 . 0 0 0}$",
+          "$0.598 \\pm 0.003$",
+          "$0.598 \\pm 0.003$"
+        ],
+        [
+          "ionosphere",
+          "$0.917 \\pm 0.000$",
+          "$\\mathbf{0 . 9 2 6} \\pm \\mathbf{0 . 0 0 0}$",
+          "$0.920 \\pm 0.004$",
+          "$0.917 \\pm 0.006$"
+        ],
+        [
+          "iris",
+          "$0.933 \\pm 0.000$",
+          "$\\mathbf{0 . 9 4 0} \\pm \\mathbf{0 . 0 0 0}$",
+          "$0.933 \\pm 0.004$",
+          "$0.933 \\pm 0.000$"
+        ],
+        [
+          "KDD synth control",
+          "$0.745 \\pm 0.000$",
+          "$0.733 \\pm 0.000$",
+          "$0.717 \\pm 0.016$",
+          "$\\mathbf{0 . 7 8 4} \\pm \\mathbf{0 . 0 0 3}$"
+        ],
+        [
+          "liver disorders",
+          "$0.725 \\pm 0.000$",
+          "$0.635 \\pm 0.000$",
+          "$0.654 \\pm 0.019$",
+          "$\\mathbf{0 . 7 3 0} \\pm \\mathbf{0 . 0 0 6}$"
+        ],
+        [
+          "segment",
+          "$0.818 \\pm 0.000$",
+          "$0.777 \\pm 0.000$",
+          "$0.691 \\pm 0.065$",
+          "$\\mathbf{0 . 8 6 6} \\pm \\mathbf{0 . 0 0 0}$"
+        ],
+        [
+          "semeion",
+          "$0.964 \\pm 0.000$",
+          "$\\mathbf{0 . 9 6 7} \\pm \\mathbf{0 . 0 0 0}$",
+          "$0.954 \\pm 0.007$",
+          "$0.966 \\pm 0.001$"
+        ],
+        [
+          "sonar",
+          "$\\mathbf{0 . 8 1 5} \\pm \\mathbf{0 . 0 0 2}$",
+          "$0.797 \\pm 0.007$",
+          "$0.797 \\pm 0.014$",
+          "$0.809 \\pm 0.017$"
+        ],
+        [
+          "vehicle",
+          "$0.621 \\pm 0.000$",
+          "$0.603 \\pm 0.000$",
+          "$0.589 \\pm 0.012$",
+          "$\\mathbf{0 . 6 6 4} \\pm \\mathbf{0 . 0 0 9}$"
+        ],
+        [
+          "wine",
+          "$0.944 \\pm 0.000$",
+          "$\\mathbf{0 . 9 6 1} \\pm \\mathbf{0 . 0 0 0}$",
+          "$0.950 \\pm 0.004$",
+          "$0.953 \\pm 0.006$"
+        ],
+        [
+          "winequality red",
+          "$0.548 \\pm 0.000$",
+          "$0.477 \\pm 0.000$",
+          "$0.441 \\pm 0.018$",
+          "$\\mathbf{0 . 5 6 0} \\pm \\mathbf{0 . 0 0 3}$"
+        ],
+        [
+          "winequality white",
+          "$0.473 \\pm 0.000$",
+          "$0.415 \\pm 0.000$",
+          "$0.408 \\pm 0.032$",
+          "$\\mathbf{0 . 4 9 4} \\pm \\mathbf{0 . 0 0 1}$"
+        ],
+        [
+          "Wins",
+          1,
+          5,
+          0,
+          9
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "HYPER-PARAMETERS USED BY EEL.",
+      "headers": [
+        "Parameter",
+        "Description",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$B$",
+          "Number of decision trees",
+          50
+        ],
+        [
+          "$G$",
+          "Number of generations",
+          50
+        ],
+        [
+          "$S$",
+          "Number of individuals",
+          100
+        ],
+        [
+          "$\\delta$",
+          "Fitness threshold",
+          0.01
+        ],
+        [
+          "$\\Delta$",
+          "Generation threshold",
+          5
+        ],
+        [
+          "$\\bar{x}$",
+          "Mean of Gaussian",
+          "AdaBoost weights"
+        ],
+        [
+          "$\\sigma$",
+          "Standard deviation of Gaussian",
+          0.25
+        ],
+        [
+          "$\\tau$",
+          "Standard deviation decrease",
+          0.005
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "UCI DATASETS USED IN OUR EXPERIMENTS.",
+      "headers": [
+        "Dataset",
+        "Instances",
+        "Attributes",
+        "Min <br> class",
+        "Max <br> class",
+        "classes"
+      ],
+      "rows": [
+        [
+          "diabetes",
+          768,
+          8,
+          268,
+          500,
+          2
+        ],
+        [
+          "ecoli",
+          336,
+          7,
+          2,
+          143,
+          8
+        ],
+        [
+          "glass",
+          214,
+          9,
+          9,
+          76,
+          6
+        ],
+        [
+          "hayes roth",
+          160,
+          4,
+          31,
+          65,
+          3
+        ],
+        [
+          "ionosphere",
+          351,
+          33,
+          126,
+          225,
+          2
+        ],
+        [
+          "iris",
+          150,
+          4,
+          50,
+          50,
+          3
+        ],
+        [
+          "KDD synth control",
+          600,
+          60,
+          100,
+          100,
+          6
+        ],
+        [
+          "liver disorders",
+          345,
+          6,
+          145,
+          200,
+          2
+        ],
+        [
+          "segment",
+          2310,
+          18,
+          330,
+          330,
+          7
+        ],
+        [
+          "semeion",
+          1593,
+          265,
+          158,
+          1435,
+          2
+        ],
+        [
+          "sonar",
+          208,
+          60,
+          97,
+          111,
+          2
+        ],
+        [
+          "vehicle",
+          846,
+          18,
+          199,
+          218,
+          4
+        ],
+        [
+          "wine",
+          178,
+          13,
+          48,
+          71,
+          3
+        ],
+        [
+          "winequality red",
+          1599,
+          11,
+          10,
+          681,
+          6
+        ],
+        [
+          "winequality white",
+          4898,
+          11,
+          5,
+          2198,
+          7
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 6
+    },
+    {
+      "table_number": "IV",
+      "table_title": "RESULTS OF THE WILCOXON PAIRWISE TEST REGARDING PREDICTIVE ACCURACY. UNDERLINED VALUES INDICATE A REFUSAL OF THE NULL HYPOTHESIS. CHECKS $\\sqrt{ }$ INDICATE A SUPERIORITY OF THE ROW ALGORITHM OVER THE COLUMN ONE.",
+      "headers": [
+        "",
+        "AdaBoost",
+        "AdaBoost-Ones",
+        "AdaBoost-Normal",
+        "EEL"
+      ],
+      "rows": [
+        [
+          "AdaBoost",
+          "",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          "AdaBoost-ones",
+          "",
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          "AdaBoost-normal",
+          "",
+          "",
+          "$\\checkmark$",
+          ""
+        ],
+        [
+          "EEL",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          "$\\checkmark$",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    }
+  ]
+}

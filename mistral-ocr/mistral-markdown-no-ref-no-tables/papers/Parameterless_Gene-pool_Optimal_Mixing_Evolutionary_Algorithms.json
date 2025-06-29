@@ -1,0 +1,740 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Parameterless Gene-pool Optimal Mixing Evolutionary Algorithms.md",
+    "filename": "Parameterless Gene-pool Optimal Mixing Evolutionary Algorithms.md",
+    "title": "Parameterless Gene-pool Optimal Mixing Evolutionary Algorithms",
+    "year": "2024"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] Shumeet Baluja and Rich Caruana. Removing the genetics from the standard genetic algorithm. In Machine Learning Proceedings 1995, pages 38-46. Elsevier, 1995.\n[2] Shumeet Baluja and Scott Davies. Combining multiple optimization runs with optimal dependency trees. Technical report, CARNEGIEMELLON UNIV PITTSBURGH PA DEPT OF COMPUTER SCIENCE, 1997.\n[3] Peter A.N. Bosman and Dirk Thierens. The roles of local search, model building and optimal mixing in evolutionary algorithms from a bbo perspective. In Proceedings of the 13th annual conference companion on Genetic and evolutionary computation, pages 663-670, 2011.\n[4] Peter A.N. Bosman and Dirk Thierens. Linkage neighbors, optimal mixing and forced improvements in genetic algorithms. In Proceedings of the 14th annual conference on Genetic and evolutionary computation, pages 585-592, 2012.\n[5] Peter A.N. Bosman and Dirk Thierens. On measures to build linkage trees in ltga. In International Conference on Parallel Problem Solving from Nature, pages 276-285. Springer, 2012.\n[6] Peter A.N. Bosman and Dirk Thierens. More concise and robust linkage learning by filtering and combining linkage hierarchies. In Proceedings of the 15th annual conference on Genetic and evolutionary computation, pages 359-366, 2013.\n[7] Anton Bouter, Tanja Alderliesten, Bradley R. Pieters, Arjan Bel, Yury Niatsetski, and Peter A.N. Bosman. Gpu-accelerated bi-objective treatment planning for prostate high-dose-rate brachytherapy. Medical physics, 46(9):3776-3787, 2019.\n[8] Anton Bouter, Stefanus C. Maree, Tanja Alderliesten, and Peter A.N. Bosman. Leveraging conditional linkage models in gray-box optimization with the real-valued gene-pool optimal mixing evolutionary algorithm. In Proceedings of the 2020 Genetic and Evolutionary Computation Conference, pages 603-611, 2020.\n[9] Ping-Lin Chen, Chun-Jen Peng, Chang-Yi Lu, and Tian-Li Yu. Two-edge graphical linkage model for dsmga-ii. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 745-752, 2017.\n[10] Francisco Chicano, Darrell Whitley, Gabriela Ochoa, and Renato Tinós. Optimizing one million variable nk landscapes by hybridizing deterministic recombination and local search. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 753-760, 2017.\n[11] Jeremy S. De Bonet, Charles Lee Isbell Jr., and Paul A. Viola. Mimic: Finding optima by estimating probability densities. In Advances in neural information processing systems, pages 424-430, 1997.\n[12] Kalyantsoy Deb and David E. Goldberg. Analyzing deception in trap functions. In Foundations of genetic algorithms, volume 2, pages 93108. Elsevier, 1993.\n[13] Kalyantsoy Deb, Jeffrey Horn, and David E. Goldberg. Multimodal deceptive functions. Complex Systems, 7(2):131-154, 1993.\n[14] Willem den Besten, Dirk Thierens, and Peter A.N. Bosman. The multiple insertion pyramid: A fast parameter-less population scheme. In International Conference on Parallel Problem Solving from Nature, pages 48-58. Springer, 2016.\n[15] Arkadiy Dushatskiy, Tanja Alderliesten, and Peter A.N. Bosman. A novel approach to designing surrogate-assisted genetic algorithms by combining efficient learning of walsh coefficients and dependencies. ACM Trans. Evol. Learn. Optim., 1(2), July 2021.\n[16] Arkadiy Dushatskiy, Adriénne M. Mendrik, Tanja Alderliesten, and Peter A.N. Bosman. Convolutional neural network surrogate-assisted GOMEA. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 753-761, 2019.\n[17] Brian W Goldman and William F Punch. Fast and efficient black box optimization using the parameter-less population pyramid. Evolutionary computation, 23(3):451-479, 2015.\n[18] Erik Goodman. Human-competitive results awards - \"humies\" 2019 announces winners at gecco. SIGEVOlation, 12(3):3-5, January 2020.\n[19] Georges R. Harik and Fernando G. Lobo. A parameter-less genetic algorithm. In GECCO, volume 99, pages 258-267, 1999.\n[20] Georges R. Harik, Fernando G. Lobo, and David E. Goldberg. The compact genetic algorithm. IEEE transactions on evolutionary computation, 3(4):287-297, 1999.\n[21] Georges R. Harik, Fernando G. Lobo, and Kumara Sastry. Linkage learning via probabilistic modeling in the extended compact genetic algorithm (ecga). In Scalable optimization via probabilistic modeling, pages 39-61. Springer, 2006.\n[22] William Eugene Hart, Natalio Krasnogor, and James E. Smith. Memetic evolutionary algorithms. In Recent advances in memetic algorithms, pages 3-27. Springer, 2005.\n[23] John Henry Holland et al. Adaptation in natural and artificial systems: an introductory analysis with applications to biology, control, and artificial intelligence. MIT press, 1992.\n[24] Shih-Huan Hsu and Tian-Li Yu. Optimization by pairwise linkage detection, incremental linkage set, and restricted/back mixing: DSMGAII. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation, pages 519-526, 2015.\n[25] Hillol Kargupta. The gene expression messy genetic algorithm. In Proceedings of IEEE International Conference on Evolutionary Computation, pages 814-819. IEEE, 1996.\n[26] Alexander Kraskov and Peter Grassberger. Mic: Mutual information based hierarchical clustering. In Information theory and statistical learning, pages 101-123. Springer, 2009.\n[27] Pedro Larrañaga and Jose A. Lozano. Estimation of distribution algorithms: A new tool for evolutionary computation, volume 2. Springer Science \\& Business Media, 2001.\n[28] Yuen-Jen Lin and Tian-Li Yu. Investigation of the exponential population scheme for genetic algorithms. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 975-982, 2018.\n[29] Jose A. Lozano, Pedro Larrañaga, Iñaki Inza, and Endika Bengoetxza. Towards a new evolutionary computation: advances on estimation of distribution algorithms, volume 192. Springer, 2006.\n[30] Ngoc Hoang Luong, Han La Poutré, and Peter A.N. Bosman. Multiobjective gene-pool optimal mixing evolutionary algorithm with the interleaved multi-start scheme. Swarm and Evolutionary Computation, $40: 238-254,2018$.\n[31] Heinz Mühlenbein and Thilo Mahnig. Fda-a scalable evolutionary algorithm for the optimization of additively decomposed functions. Evolutionary computation, 7(4):353-376, 1999.\n[32] Martin Pelikan. Hierarchical bayesian optimization algorithm. In Hierarchical Bayesian optimization algorithm, pages 105-129. Springer, 2005.\n[33] Martin Pelikan and David E. Goldberg. Hierarchical bayesian optimization algorithm. In Scalable optimization via probabilistic modeling, pages 63-90. Springer, 2006.\n[34] Martin Pelikan, David E. Goldberg, Erick Cantú-Paz, et al. Boa: The bayesian optimization algorithm. In Proceedings of the genetic and evolutionary computation conference GECCO-99, volume 1, pages 525532. Citeseer, 1999.\n[35] Martin Pelikan and Heinz Mühlenbein. The bivariate marginal distribution algorithm. In Advances in Soft Computing, pages 521-535. Springer, 1999.\n[36] Martin Pelikan, Kumara Sastry, David E. Goldberg, Martin V. Butz, and Mark Hauschild. Performance of evolutionary algorithms on nk landscapes with nearest neighbor interactions and tunable overlap. In Proceedings of the 11th Annual Conference on Genetic and Evolutionary Computation (GECCO 2009), pages 851-858. ACM, 2009.\n[37] Michal Witold Przewozniczek and Marcin Michal Komarnicki. Empirical linkage learning. IEEE Transactions on Evolutionary Computation, 24(6):1097-1111, 2020.\n[38] Dirk Thierens. Scalability problems of simple genetic algorithms. Evolutionary computation, 7(4):331-352, 1999.\n[39] Dirk Thierens and Peter A.N. Bosman. Optimal mixing evolutionary algorithms. In Proceedings of the 13th annual conference on Genetic and evolutionary computation, pages 617-624, 2011.\n[40] Koen van der Blom, Timo M. Deist, Tea Tušar, Mariapia Marchi, Yusuke Nojima, Akira Oyama, Vanessa Volz, and Boris Naujoks. Towards realistic optimization benchmarks: a questionnaire on the properties of realworld problems. In Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion, pages 293-294, 2020.\n[41] Marco Virgolin, Tanja Alderliesten, Arjan Bel, Cees Witteveen, and Peter A.N. Bosman. Symbolic regression and feature construction with gp-gomea applied to radiotherapy dose reconstruction of childhood cancer survivors. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 1395-1402, 2018.\n[42] Marco Virgolin, Tanja Alderliesten, Cees Witteveen, and Peter A.N. Bosman. Scalable genetic programming by gene-pool optimal mixing and input-space entropy-based building-block learning. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 10411048, 2017.\n[43] Marco Virgolin, Tanja Alderliesten, Cees Witteveen, and Peter A.N. Bosman. Scalable genetic programming by gene-pool optimal mixing and input-space entropy-based building-block learning. In Proceedings of the Genetic and Evolutionary Computation Conference, GECCO '17, page 1041-1048, New York, NY, USA, 2017. Association for Computing Machinery.\n\n[44] Marco Virgolin, Ziyuan Wang, Tanja Alderliesten, and Peter A.N. Bosman. Machine learning for the prediction of pseudorealistic pediatric abdominal phantoms for radiation dose reconstruction. Journal of Medical Imaging, 7(4):046501, 2020.\n[45] David H. Wolpert and William G. Macready. No free lunch theorems for optimization. IEEE transactions on evolutionary computation, 1(1):6782, 1997.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Shumeet Baluja and Rich Caruana. Removing the genetics from the standard genetic algorithm. In Machine Learning Proceedings 1995, pages 38-46. Elsevier, 1995."
+      },
+      {
+        "ref_id": "2",
+        "text": "Shumeet Baluja and Scott Davies. Combining multiple optimization runs with optimal dependency trees. Technical report, CARNEGIEMELLON UNIV PITTSBURGH PA DEPT OF COMPUTER SCIENCE, 1997."
+      },
+      {
+        "ref_id": "3",
+        "text": "Peter A.N. Bosman and Dirk Thierens. The roles of local search, model building and optimal mixing in evolutionary algorithms from a bbo perspective. In Proceedings of the 13th annual conference companion on Genetic and evolutionary computation, pages 663-670, 2011."
+      },
+      {
+        "ref_id": "4",
+        "text": "Peter A.N. Bosman and Dirk Thierens. Linkage neighbors, optimal mixing and forced improvements in genetic algorithms. In Proceedings of the 14th annual conference on Genetic and evolutionary computation, pages 585-592, 2012."
+      },
+      {
+        "ref_id": "5",
+        "text": "Peter A.N. Bosman and Dirk Thierens. On measures to build linkage trees in ltga. In International Conference on Parallel Problem Solving from Nature, pages 276-285. Springer, 2012."
+      },
+      {
+        "ref_id": "6",
+        "text": "Peter A.N. Bosman and Dirk Thierens. More concise and robust linkage learning by filtering and combining linkage hierarchies. In Proceedings of the 15th annual conference on Genetic and evolutionary computation, pages 359-366, 2013."
+      },
+      {
+        "ref_id": "7",
+        "text": "Anton Bouter, Tanja Alderliesten, Bradley R. Pieters, Arjan Bel, Yury Niatsetski, and Peter A.N. Bosman. Gpu-accelerated bi-objective treatment planning for prostate high-dose-rate brachytherapy. Medical physics, 46(9):3776-3787, 2019."
+      },
+      {
+        "ref_id": "8",
+        "text": "Anton Bouter, Stefanus C. Maree, Tanja Alderliesten, and Peter A.N. Bosman. Leveraging conditional linkage models in gray-box optimization with the real-valued gene-pool optimal mixing evolutionary algorithm. In Proceedings of the 2020 Genetic and Evolutionary Computation Conference, pages 603-611, 2020."
+      },
+      {
+        "ref_id": "9",
+        "text": "Ping-Lin Chen, Chun-Jen Peng, Chang-Yi Lu, and Tian-Li Yu. Two-edge graphical linkage model for dsmga-ii. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 745-752, 2017."
+      },
+      {
+        "ref_id": "10",
+        "text": "Francisco Chicano, Darrell Whitley, Gabriela Ochoa, and Renato Tinós. Optimizing one million variable nk landscapes by hybridizing deterministic recombination and local search. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 753-760, 2017."
+      },
+      {
+        "ref_id": "11",
+        "text": "Jeremy S. De Bonet, Charles Lee Isbell Jr., and Paul A. Viola. Mimic: Finding optima by estimating probability densities. In Advances in neural information processing systems, pages 424-430, 1997."
+      },
+      {
+        "ref_id": "12",
+        "text": "Kalyantsoy Deb and David E. Goldberg. Analyzing deception in trap functions. In Foundations of genetic algorithms, volume 2, pages 93108. Elsevier, 1993."
+      },
+      {
+        "ref_id": "13",
+        "text": "Kalyantsoy Deb, Jeffrey Horn, and David E. Goldberg. Multimodal deceptive functions. Complex Systems, 7(2):131-154, 1993."
+      },
+      {
+        "ref_id": "14",
+        "text": "Willem den Besten, Dirk Thierens, and Peter A.N. Bosman. The multiple insertion pyramid: A fast parameter-less population scheme. In International Conference on Parallel Problem Solving from Nature, pages 48-58. Springer, 2016."
+      },
+      {
+        "ref_id": "15",
+        "text": "Arkadiy Dushatskiy, Tanja Alderliesten, and Peter A.N. Bosman. A novel approach to designing surrogate-assisted genetic algorithms by combining efficient learning of walsh coefficients and dependencies. ACM Trans. Evol. Learn. Optim., 1(2), July 2021."
+      },
+      {
+        "ref_id": "16",
+        "text": "Arkadiy Dushatskiy, Adriénne M. Mendrik, Tanja Alderliesten, and Peter A.N. Bosman. Convolutional neural network surrogate-assisted GOMEA. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 753-761, 2019."
+      },
+      {
+        "ref_id": "17",
+        "text": "Brian W Goldman and William F Punch. Fast and efficient black box optimization using the parameter-less population pyramid. Evolutionary computation, 23(3):451-479, 2015."
+      },
+      {
+        "ref_id": "18",
+        "text": "Erik Goodman. Human-competitive results awards - \"humies\" 2019 announces winners at gecco. SIGEVOlation, 12(3):3-5, January 2020."
+      },
+      {
+        "ref_id": "19",
+        "text": "Georges R. Harik and Fernando G. Lobo. A parameter-less genetic algorithm. In GECCO, volume 99, pages 258-267, 1999."
+      },
+      {
+        "ref_id": "20",
+        "text": "Georges R. Harik, Fernando G. Lobo, and David E. Goldberg. The compact genetic algorithm. IEEE transactions on evolutionary computation, 3(4):287-297, 1999."
+      },
+      {
+        "ref_id": "21",
+        "text": "Georges R. Harik, Fernando G. Lobo, and Kumara Sastry. Linkage learning via probabilistic modeling in the extended compact genetic algorithm (ecga). In Scalable optimization via probabilistic modeling, pages 39-61. Springer, 2006."
+      },
+      {
+        "ref_id": "22",
+        "text": "William Eugene Hart, Natalio Krasnogor, and James E. Smith. Memetic evolutionary algorithms. In Recent advances in memetic algorithms, pages 3-27. Springer, 2005."
+      },
+      {
+        "ref_id": "23",
+        "text": "John Henry Holland et al. Adaptation in natural and artificial systems: an introductory analysis with applications to biology, control, and artificial intelligence. MIT press, 1992."
+      },
+      {
+        "ref_id": "24",
+        "text": "Shih-Huan Hsu and Tian-Li Yu. Optimization by pairwise linkage detection, incremental linkage set, and restricted/back mixing: DSMGAII. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation, pages 519-526, 2015."
+      },
+      {
+        "ref_id": "25",
+        "text": "Hillol Kargupta. The gene expression messy genetic algorithm. In Proceedings of IEEE International Conference on Evolutionary Computation, pages 814-819. IEEE, 1996."
+      },
+      {
+        "ref_id": "26",
+        "text": "Alexander Kraskov and Peter Grassberger. Mic: Mutual information based hierarchical clustering. In Information theory and statistical learning, pages 101-123. Springer, 2009."
+      },
+      {
+        "ref_id": "27",
+        "text": "Pedro Larrañaga and Jose A. Lozano. Estimation of distribution algorithms: A new tool for evolutionary computation, volume 2. Springer Science \\& Business Media, 2001."
+      },
+      {
+        "ref_id": "28",
+        "text": "Yuen-Jen Lin and Tian-Li Yu. Investigation of the exponential population scheme for genetic algorithms. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 975-982, 2018."
+      },
+      {
+        "ref_id": "29",
+        "text": "Jose A. Lozano, Pedro Larrañaga, Iñaki Inza, and Endika Bengoetxza. Towards a new evolutionary computation: advances on estimation of distribution algorithms, volume 192. Springer, 2006."
+      },
+      {
+        "ref_id": "30",
+        "text": "Ngoc Hoang Luong, Han La Poutré, and Peter A.N. Bosman. Multiobjective gene-pool optimal mixing evolutionary algorithm with the interleaved multi-start scheme. Swarm and Evolutionary Computation, $40: 238-254,2018$."
+      },
+      {
+        "ref_id": "31",
+        "text": "Heinz Mühlenbein and Thilo Mahnig. Fda-a scalable evolutionary algorithm for the optimization of additively decomposed functions. Evolutionary computation, 7(4):353-376, 1999."
+      },
+      {
+        "ref_id": "32",
+        "text": "Martin Pelikan. Hierarchical bayesian optimization algorithm. In Hierarchical Bayesian optimization algorithm, pages 105-129. Springer, 2005."
+      },
+      {
+        "ref_id": "33",
+        "text": "Martin Pelikan and David E. Goldberg. Hierarchical bayesian optimization algorithm. In Scalable optimization via probabilistic modeling, pages 63-90. Springer, 2006."
+      },
+      {
+        "ref_id": "34",
+        "text": "Martin Pelikan, David E. Goldberg, Erick Cantú-Paz, et al. Boa: The bayesian optimization algorithm. In Proceedings of the genetic and evolutionary computation conference GECCO-99, volume 1, pages 525532. Citeseer, 1999."
+      },
+      {
+        "ref_id": "35",
+        "text": "Martin Pelikan and Heinz Mühlenbein. The bivariate marginal distribution algorithm. In Advances in Soft Computing, pages 521-535. Springer, 1999."
+      },
+      {
+        "ref_id": "36",
+        "text": "Martin Pelikan, Kumara Sastry, David E. Goldberg, Martin V. Butz, and Mark Hauschild. Performance of evolutionary algorithms on nk landscapes with nearest neighbor interactions and tunable overlap. In Proceedings of the 11th Annual Conference on Genetic and Evolutionary Computation (GECCO 2009), pages 851-858. ACM, 2009."
+      },
+      {
+        "ref_id": "37",
+        "text": "Michal Witold Przewozniczek and Marcin Michal Komarnicki. Empirical linkage learning. IEEE Transactions on Evolutionary Computation, 24(6):1097-1111, 2020."
+      },
+      {
+        "ref_id": "38",
+        "text": "Dirk Thierens. Scalability problems of simple genetic algorithms. Evolutionary computation, 7(4):331-352, 1999."
+      },
+      {
+        "ref_id": "39",
+        "text": "Dirk Thierens and Peter A.N. Bosman. Optimal mixing evolutionary algorithms. In Proceedings of the 13th annual conference on Genetic and evolutionary computation, pages 617-624, 2011."
+      },
+      {
+        "ref_id": "40",
+        "text": "Koen van der Blom, Timo M. Deist, Tea Tušar, Mariapia Marchi, Yusuke Nojima, Akira Oyama, Vanessa Volz, and Boris Naujoks. Towards realistic optimization benchmarks: a questionnaire on the properties of realworld problems. In Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion, pages 293-294, 2020."
+      },
+      {
+        "ref_id": "41",
+        "text": "Marco Virgolin, Tanja Alderliesten, Arjan Bel, Cees Witteveen, and Peter A.N. Bosman. Symbolic regression and feature construction with gp-gomea applied to radiotherapy dose reconstruction of childhood cancer survivors. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 1395-1402, 2018."
+      },
+      {
+        "ref_id": "42",
+        "text": "Marco Virgolin, Tanja Alderliesten, Cees Witteveen, and Peter A.N. Bosman. Scalable genetic programming by gene-pool optimal mixing and input-space entropy-based building-block learning. In Proceedings of the Genetic and Evolutionary Computation Conference, pages 10411048, 2017."
+      },
+      {
+        "ref_id": "43",
+        "text": "Marco Virgolin, Tanja Alderliesten, Cees Witteveen, and Peter A.N. Bosman. Scalable genetic programming by gene-pool optimal mixing and input-space entropy-based building-block learning. In Proceedings of the Genetic and Evolutionary Computation Conference, GECCO '17, page 1041-1048, New York, NY, USA, 2017. Association for Computing Machinery."
+      },
+      {
+        "ref_id": "44",
+        "text": "Marco Virgolin, Ziyuan Wang, Tanja Alderliesten, and Peter A.N. Bosman. Machine learning for the prediction of pseudorealistic pediatric abdominal phantoms for radiation dose reconstruction. Journal of Medical Imaging, 7(4):046501, 2020."
+      },
+      {
+        "ref_id": "45",
+        "text": "David H. Wolpert and William G. Macready. No free lunch theorems for optimization. IEEE transactions on evolutionary computation, 1(1):6782, 1997."
+      }
+    ],
+    "reference_count": 45,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Considered hyperparameters of single-population GOMEA. In bold, the best settings found by the experiment described in Section IV-C.",
+      "headers": [
+        "Hyperparameter",
+        "Options"
+      ],
+      "rows": [
+        [
+          "Forced Improvements",
+          "on / off"
+        ],
+        [
+          "Exhaustive Donor Search",
+          "on / off"
+        ],
+        [
+          "Hill Climber",
+          "SHIC / EHC / off"
+        ],
+        [
+          "Linkage Tree and similarity measure",
+          "unfiltered, MI / filtered,"
+        ],
+        [
+          "FOS ordering",
+          "NMI"
+        ],
+        [
+          "",
+          "random / ascending sub-"
+        ],
+        [
+          2,
+          "sets size"
+        ],
+        [
+          "",
+          "on / off"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Considered hyperparameters of parameterless GOMEA. In bold, the best settings found by the experiment described in Section IV-F.",
+      "headers": [
+        "Hyperparameter",
+        "Options"
+      ],
+      "rows": [
+        [
+          "Forced Improvements",
+          "on / off"
+        ],
+        [
+          "Exhaustive Donor Search",
+          "on / off"
+        ],
+        [
+          "Hill Climber",
+          "SHIC / EHC / off"
+        ],
+        [
+          "Linkage Tree and similarity measure",
+          "unfiltered, MI / filtered,"
+        ],
+        [
+          "",
+          "NMI"
+        ],
+        [
+          "FOS ordering",
+          "random / ascending sub-"
+        ],
+        [
+          "",
+          "sets size"
+        ],
+        [
+          2,
+          "on / off"
+        ],
+        [
+          "Population scheme",
+          "P3 / P3-MI / IMS"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results of single-population EAs. Best population sizes are found with bisection. Ranking per problem shown through color gradient from green (best, i.e., the fewest median number of function evaluations) to red (worst, i.e., largest median number of function evaluations or problem instance not solved in all 50 runs). All results are divided by $10^{5}$. Legend: $\\mathbf{G}=\\mathbf{G O M E A} ; \\mathbf{D}-\\mathbf{I I}=\\mathbf{D S M G A}-\\mathbf{I I}$; $\\mathbf{G}^{\\mathbf{B}}=\\mathbf{G O M E A}^{\\mathbf{B E S T}} ; \\mathbf{C G}^{\\mathbf{B}}=\\mathbf{C G O M E A}^{\\mathbf{B E S T}}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "G",
+        "$\\mathbf{D}-\\mathbf{I I}$",
+        "$\\mathbf{G}^{\\mathbf{B}}$",
+        "$\\mathbf{C G}^{\\mathbf{B}}$"
+      ],
+      "rows": [
+        [
+          "Trap ${ }_{6}^{5}$",
+          640,
+          4.02,
+          1.3,
+          1.16,
+          1.16
+        ],
+        [
+          "Trap ${ }_{6}^{4}$",
+          640,
+          13.23,
+          2.55,
+          4.6,
+          3.41
+        ],
+        [
+          "Bimodal Trap",
+          636,
+          34.87,
+          3.6,
+          114.36,
+          99.69
+        ],
+        [
+          -1,
+          640,
+          62.65,
+          66.72,
+          51.36,
+          37.05
+        ],
+        [
+          "HIFF",
+          1024,
+          7.81,
+          "N/A",
+          0.92,
+          1.2
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          7.31,
+          80.03,
+          3.87,
+          3.35
+        ],
+        [
+          "MAXCUT Dense",
+          100,
+          0.49,
+          "N/A",
+          0.51,
+          0.37
+        ],
+        [
+          "Spin-glass",
+          784,
+          88.47,
+          11.92,
+          13.74,
+          8.26
+        ],
+        [
+          "MAXSAT",
+          100,
+          69.63,
+          3.97,
+          5.2,
+          2.95
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Results of single-population CGOMEA with different threshold values $\\lambda$. Best population sizes are found with bisection. Ranking per problem shown through color gradient from green (best, i.e., the fewest median number of function evaluations) to red (worst, i.e., largest median number of function evaluations or problem instance not solved in all 50 runs). All results are divided by $10^{5}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "$\\mathbf{0 . 5}$",
+        "$\\mathbf{0 . 6}$",
+        "$\\mathbf{0 . 7}$",
+        "$\\mathbf{0 . 8}$",
+        "$\\mathbf{0 . 9}$"
+      ],
+      "rows": [
+        [
+          "Trap ${ }_{6}^{5}$",
+          640,
+          1.16,
+          1.16,
+          1.16,
+          1.16,
+          1.16
+        ],
+        [
+          "Trap ${ }_{6}^{4}$",
+          640,
+          5.89,
+          3.24,
+          5.37,
+          3.41,
+          3.5
+        ],
+        [
+          "Bimodal Trap",
+          636,
+          120.73,
+          106.39,
+          100.11,
+          99.69,
+          104.63
+        ],
+        [
+          -1,
+          640,
+          31.96,
+          28.77,
+          34.18,
+          37.03,
+          46.86
+        ],
+        [
+          "HIFF",
+          1024,
+          1.35,
+          1.1,
+          1.15,
+          1.2,
+          0.91
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          3.84,
+          3.9,
+          3.27,
+          3.35,
+          3.46
+        ],
+        [
+          "MAXCUT Dense",
+          100,
+          0.62,
+          0.53,
+          0.62,
+          0.37,
+          0.58
+        ],
+        [
+          "Spin-glass",
+          784,
+          16.49,
+          11.98,
+          12.45,
+          8.26,
+          10.78
+        ],
+        [
+          "MAXSAT",
+          100,
+          4.08,
+          4.89,
+          3.44,
+          2.95,
+          3.25
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Results of parameterless EAs. Ranking per problem shown through color gradient from green (best, i.e., fewest median number of function evaluations) to red (worst, i.e., largest median number of function evaluations or problem instance not solved in all 50 runs). For MAXSAT results are shown for 48 instances that were solved by all algorithms. All results are divided by $10^{5}$. Legend: $\\mathbf{P 3}=\\mathbf{P 3}$; $\\mathbf{D}-\\mathbf{I I}=\\mathbf{D S M G A}-\\mathbf{I I} ; \\mathbf{G P 3}^{\\mathbf{B}}=\\mathbf{G O M E A}-\\mathbf{P 3}^{\\mathbf{B E S T}} ;$ $\\mathbf{C G P 3}^{\\mathbf{B}}=\\mathbf{C G O M E A}-\\mathbf{P 3}^{\\mathbf{B E S T}}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "$\\mathbf{P 3}$",
+        "$\\mathbf{D}-\\mathbf{I I}$",
+        "$\\mathbf{G P 3}^{\\mathbf{B}}$",
+        "$\\mathbf{C G P 3}^{\\mathbf{B}}$"
+      ],
+      "rows": [
+        [
+          "Trap $_{5}^{6}$",
+          1280,
+          2.72,
+          31.1,
+          1.71,
+          1.61
+        ],
+        [
+          "Trap $_{5}^{4}$",
+          1280,
+          6.29,
+          14.08,
+          5.01,
+          3.76
+        ],
+        [
+          "Bimodal Trap",
+          1278,
+          829.32,
+          65.03,
+          379.01,
+          311.83
+        ],
+        [
+          "NK-SI",
+          1280,
+          99.1,
+          "N/A",
+          105.58,
+          71.21
+        ],
+        [
+          "HIFF",
+          2048,
+          5.92,
+          "N/A",
+          4.67,
+          6.55
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          6.47,
+          93.12,
+          3.5,
+          3.52
+        ],
+        [
+          "MAXCUT Dense",
+          200,
+          1.24,
+          15.97,
+          0.8,
+          0.8
+        ],
+        [
+          "Spin-glass",
+          784,
+          5.84,
+          18.15,
+          7.69,
+          5.65
+        ],
+        [
+          "MAXSAT",
+          200,
+          32.43,
+          113.84,
+          37.57,
+          28.74
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Statistical significance testing of performance difference in pairs of single-population EAs. Reported $p$-values are obtained by pairwise Mann-Whitney $U$-test. Statistically significant results at $\\alpha=0.01$ are highlighted. Cells corresponding to cases when an algorithm solves a problem instance and its competitor does not, are not highlighted. Legend: $\\mathbf{G}=\\mathbf{G O M E A} ; \\mathbf{D}-\\mathbf{I I}=\\mathbf{D S M G A}-\\mathbf{I I} ; \\mathbf{G}^{\\mathbf{B}}=$ $\\operatorname{GOMEA-}^{\\text {BEST }} ; \\mathbf{C G}^{\\mathbf{B}}=\\mathbf{C G O M E A}-\\mathrm{BEST}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "$\\begin{aligned} & \\mathbf{G}^{\\mathbf{B}} \\\\ & \\text { better } \\\\ & \\text { than } \\mathbf{G} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{G}^{\\mathbf{B}} \\\\ & \\text { better } \\\\ & \\text { than } \\\\ & \\mathbf{D}-\\mathbf{I I} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{C G}^{\\mathbf{B}} \\\\ & \\text { is } \\\\ & \\text { better } \\\\ & \\text { than } \\mathbf{G}^{\\mathbf{B}} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{C G}^{\\mathbf{B}} \\\\ & \\text { is } \\\\ & \\text { better } \\\\ & \\text { than } \\\\ & \\mathbf{D}-\\mathbf{I I} \\end{aligned}$"
+      ],
+      "rows": [
+        [
+          "Trap ${ }_{3}^{\\mathbf{S}}$",
+          640,
+          0.0,
+          0.0,
+          0.503,
+          0.0
+        ],
+        [
+          "Trap ${ }_{3}^{\\mathbf{S}}$",
+          640,
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        [
+          "Bimodal Trap",
+          636,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        [
+          "NK-SI",
+          640,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "HIFF",
+          1024,
+          0.0,
+          "N/A",
+          1.0,
+          "N/A"
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "MAXCUT Dense",
+          100,
+          0.74,
+          "N/A",
+          0.0,
+          "N/A"
+        ],
+        [
+          "Spin-glass",
+          784,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          "MAXSAT",
+          100,
+          0.0,
+          0.96,
+          0.0,
+          0.0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Statistical significance testing of performance difference in pairs of the best performing parameterless EAs. Reported $p$-values are obtained by pairwise Mann-Whitney $U$-test. Statistically significant results at $\\alpha=0.01$ are highlighted. Legend: $\\mathbf{P 3}=\\mathbf{P 3}$; $\\mathbf{D}-\\mathbf{I I}=\\mathbf{D S M G A}-\\mathbf{I I} ; \\mathbf{G P 3}^{\\mathbf{B}}=\\mathbf{G O M E A}-\\mathbf{P 3}^{\\text {BEST }} ;$ $\\operatorname{CGP3}^{\\mathbf{B}}=\\mathbf{C G O M E A}-\\mathbf{P 3}^{\\text {BEST }}$.",
+      "headers": [
+        "Problem",
+        "$\\ell$",
+        "$\\begin{aligned} & \\mathbf{C G P 3}^{\\mathbf{B}} \\text { is } \\\\ & \\text { better than } \\\\ & \\mathbf{G P 3}^{\\mathbf{B}} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{C G P 3}^{\\mathbf{B}} \\text { is } \\\\ & \\text { better than } \\\\ & \\mathbf{P 3} \\end{aligned}$",
+        "$\\begin{aligned} & \\mathbf{G P 3}^{\\mathbf{B}} \\quad \\text { is } \\\\ & \\text { better than } \\\\ & \\mathbf{P 3} \\end{aligned}$",
+        ""
+      ],
+      "rows": [
+        [
+          "Trap ${ }_{3}^{\\mathbf{S}}$",
+          1280,
+          0.213,
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "Trap ${ }_{3}^{\\mathbf{S}}$",
+          1280,
+          0.0,
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "Bimodal Trap",
+          1278,
+          0.0,
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "NK-SI",
+          1280,
+          0.0,
+          0.0,
+          0.662,
+          ""
+        ],
+        [
+          "HIFF",
+          2048,
+          1.0,
+          0.997,
+          0.0,
+          ""
+        ],
+        [
+          "MAXCUT Sparse",
+          1600,
+          0.537,
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "MAXCUT Dense",
+          200,
+          0.769,
+          0.003,
+          0.001,
+          ""
+        ],
+        [
+          "Spin-glass",
+          784,
+          0.007,
+          0.227,
+          0.985,
+          ""
+        ],
+        [
+          "MAXSAT",
+          200,
+          0.608,
+          0.501,
+          0.507,
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    }
+  ]
+}

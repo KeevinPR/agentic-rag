@@ -1,0 +1,949 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms.md",
+    "filename": "Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms.md",
+    "title": "Unified eigen analysis on multivariate Gaussian based estimation of distribution algorithms",
+    "year": "2008"
+  },
+  "references": {
+    "header": "# References",
+    "content": "[1] P.A.N. Bosman, J. Grahl, Matching Inductive Search Bias and Problem Structure in Continuous Estimation-of-Distribution Algorithms, Technical Report 03/2005, Dept. of Logistics, Mannheim Business School, 2005.\n[2] P.A.N. Bosman, J. Grahl, F. Rothlauf, SDR: A better trigger for adaptive variance scaling in normal EDAs, in: Proceedings of the Genetic and Evolutionary Computation Conference, GECCO-2007, ACM Press, New York, NY, USA, 2007, pp. 492-499.\n[3] P.A.N. Bosman, D. Thierens, An Algorithmic Framework for Density Estimation based Evolutionary Algorithms, Utrecht University Technical Report UU-CS-1999-46, 1999.\n[4] P.A.N. Bosman, D. Thierens, Expanding from discrete to continuous estimation of distribution algorithms: the IDEA, in: Proceedings of the Sixth International Conference on Parallel Problem Solving From Nature - PPSN VI, Springer-Verlag, Berlin, 2000, pp. 767-776.\n[5] P.A.N. Bosman, D. Thierens, Continuous iterated density estimation evolutionary algorithms within the IDEA framework, in: Proceedings of the Optimization by Building and Using Probabilistic Models OBUPM Workshop at the Genetic and Evolutionary Computation Conference, GECCO-2000, Morgan Kauffmann, San Francisco, California, 2000, pp. 197-200.\n[6] C. Chatfield, A.J. Collin, Introduction to Multivariate Analysis, Science Paperbacks, 1980.\n[7] L. Devroye, Non-Uniform Random Variate Generation, Springer-Verlag, New York, 1986.\n[8] W. Dong, X. Yao, Covariance matrix repairing in Gaussian based EDAs, in: 2007 IEEE Congress on Evolutionary Computation (CEC2007), Singapore, 2007, pp. 415-422.\n[9] M.R. Gallagher, M. Frean, Population-based continuous optimization, probabilistic modelling and mean shift, Evol. Comput. 13 (2005) $29-42$.\n[10] D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison-Wesley, Reading, Massachusetts, USA, 1989.\n[11] C. González, J.A. Lozano, P. Larrañaga, Mathematical modelling of UMDAc algorithm with tournament selection. Behaviour on linear and quadratic functions, Int. J. Approxim. Reason. 31 (2002) 313-340.\n[12] J. Grahl, P.A.N. Bosman, F. Rothlauf, The correlation-triggered adaptive variance scaling IDEA, in: Proceedings of the Genetic and Evolutionary Computation Conference, GECCO-2006, ACM Press, New York, New York, 2006, pp. 397-404.\n[13] J. Grahl, S. Minner, F. Rothlauf, Behaviour of UMDAc with truncation selection on monotonous functions, in: Proceedings of the Congress on Evolutionary Computation (CEC2005), IEEE Press, Piscataway, New Jersey, 2005, pp. 2553-2559.\n[14] I.T. Jolliffe, Principle Component Analysis, Springer-Verlag, 1986.\n[15] P. Larrañaga, R. Etxeberria, J.A. Lozano, J.M. Peña, Optimization in continuous domains by learning and simulation of Gaussian networks, in: Proceedings of the 8th Annual Conference on Genetic and Evolutionary Computation, GECCO-2000, ACM Press, New York, NY, USA, 2000, pp. 201-204.\n[16] P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer, Norwel, MA, 2001.\n[17] O. Ledoit, M. Wolf, A well-conditioned estimator for large-dimensional covariance matrices, J. Multivar. Anal. 88 (2004) 365-411.\n[18] H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions I. Binary parameters, Lecture Notes in Computer Science 1411, in: Parallel Problem Solving from Nature - PPSN IV, Springer-Verlag, London, UK, 1996, pp. 178-187.\n[19] T. Paul, H. Iba, Real-coded estimation of distribution algorithm, in: Proceedings of the 5th Metaheuristics International Conference, 2003, pp. 61-66.\n[20] M. Pelikan, D. Goldberg, F. Lobo, A survey to optimization by building and using probabilistic models, Comput. Optim. Appl. 21 (2002) 5-20.\n[21] V. Vapnik, Statistical Learning Theory, John Wiley \\& Sons, New York, 1998.\n[22] M.R. Wagner, A. Auger, M. Schoenauer, EEDA: A New Robust Estimation of Distribution Algorithm, Rapport de Recherche (Research Report) RR-5190, INRIA, 2004.\n[23] D.H. Wolpert, W.G. Macready, No free lunch theorems for optimization, IEEE Trans. Evol. Comput. 1 (1997) 67-82.\n[24] X. Yao, Y. Liu, G. Lin, Evolutionary programming made faster, IEEE Trans. Evol. Comput. 3 (1999) 82-102.\n[25] J. Ye, Characterization of a family of algorithms for generalized discriminant analysis on undersampled problems, J. Mach. Learning Res. 6 (2005) 483-502.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "P.A.N. Bosman, J. Grahl, Matching Inductive Search Bias and Problem Structure in Continuous Estimation-of-Distribution Algorithms, Technical Report 03/2005, Dept. of Logistics, Mannheim Business School, 2005."
+      },
+      {
+        "ref_id": "2",
+        "text": "P.A.N. Bosman, J. Grahl, F. Rothlauf, SDR: A better trigger for adaptive variance scaling in normal EDAs, in: Proceedings of the Genetic and Evolutionary Computation Conference, GECCO-2007, ACM Press, New York, NY, USA, 2007, pp. 492-499."
+      },
+      {
+        "ref_id": "3",
+        "text": "P.A.N. Bosman, D. Thierens, An Algorithmic Framework for Density Estimation based Evolutionary Algorithms, Utrecht University Technical Report UU-CS-1999-46, 1999."
+      },
+      {
+        "ref_id": "4",
+        "text": "P.A.N. Bosman, D. Thierens, Expanding from discrete to continuous estimation of distribution algorithms: the IDEA, in: Proceedings of the Sixth International Conference on Parallel Problem Solving From Nature - PPSN VI, Springer-Verlag, Berlin, 2000, pp. 767-776."
+      },
+      {
+        "ref_id": "5",
+        "text": "P.A.N. Bosman, D. Thierens, Continuous iterated density estimation evolutionary algorithms within the IDEA framework, in: Proceedings of the Optimization by Building and Using Probabilistic Models OBUPM Workshop at the Genetic and Evolutionary Computation Conference, GECCO-2000, Morgan Kauffmann, San Francisco, California, 2000, pp. 197-200."
+      },
+      {
+        "ref_id": "6",
+        "text": "C. Chatfield, A.J. Collin, Introduction to Multivariate Analysis, Science Paperbacks, 1980."
+      },
+      {
+        "ref_id": "7",
+        "text": "L. Devroye, Non-Uniform Random Variate Generation, Springer-Verlag, New York, 1986."
+      },
+      {
+        "ref_id": "8",
+        "text": "W. Dong, X. Yao, Covariance matrix repairing in Gaussian based EDAs, in: 2007 IEEE Congress on Evolutionary Computation (CEC2007), Singapore, 2007, pp. 415-422."
+      },
+      {
+        "ref_id": "9",
+        "text": "M.R. Gallagher, M. Frean, Population-based continuous optimization, probabilistic modelling and mean shift, Evol. Comput. 13 (2005) $29-42$."
+      },
+      {
+        "ref_id": "10",
+        "text": "D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison-Wesley, Reading, Massachusetts, USA, 1989."
+      },
+      {
+        "ref_id": "11",
+        "text": "C. González, J.A. Lozano, P. Larrañaga, Mathematical modelling of UMDAc algorithm with tournament selection. Behaviour on linear and quadratic functions, Int. J. Approxim. Reason. 31 (2002) 313-340."
+      },
+      {
+        "ref_id": "12",
+        "text": "J. Grahl, P.A.N. Bosman, F. Rothlauf, The correlation-triggered adaptive variance scaling IDEA, in: Proceedings of the Genetic and Evolutionary Computation Conference, GECCO-2006, ACM Press, New York, New York, 2006, pp. 397-404."
+      },
+      {
+        "ref_id": "13",
+        "text": "J. Grahl, S. Minner, F. Rothlauf, Behaviour of UMDAc with truncation selection on monotonous functions, in: Proceedings of the Congress on Evolutionary Computation (CEC2005), IEEE Press, Piscataway, New Jersey, 2005, pp. 2553-2559."
+      },
+      {
+        "ref_id": "14",
+        "text": "I.T. Jolliffe, Principle Component Analysis, Springer-Verlag, 1986."
+      },
+      {
+        "ref_id": "15",
+        "text": "P. Larrañaga, R. Etxeberria, J.A. Lozano, J.M. Peña, Optimization in continuous domains by learning and simulation of Gaussian networks, in: Proceedings of the 8th Annual Conference on Genetic and Evolutionary Computation, GECCO-2000, ACM Press, New York, NY, USA, 2000, pp. 201-204."
+      },
+      {
+        "ref_id": "16",
+        "text": "P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer, Norwel, MA, 2001."
+      },
+      {
+        "ref_id": "17",
+        "text": "O. Ledoit, M. Wolf, A well-conditioned estimator for large-dimensional covariance matrices, J. Multivar. Anal. 88 (2004) 365-411."
+      },
+      {
+        "ref_id": "18",
+        "text": "H. Mühlenbein, G. Paaß, From recombination of genes to the estimation of distributions I. Binary parameters, Lecture Notes in Computer Science 1411, in: Parallel Problem Solving from Nature - PPSN IV, Springer-Verlag, London, UK, 1996, pp. 178-187."
+      },
+      {
+        "ref_id": "19",
+        "text": "T. Paul, H. Iba, Real-coded estimation of distribution algorithm, in: Proceedings of the 5th Metaheuristics International Conference, 2003, pp. 61-66."
+      },
+      {
+        "ref_id": "20",
+        "text": "M. Pelikan, D. Goldberg, F. Lobo, A survey to optimization by building and using probabilistic models, Comput. Optim. Appl. 21 (2002) 5-20."
+      },
+      {
+        "ref_id": "21",
+        "text": "V. Vapnik, Statistical Learning Theory, John Wiley \\& Sons, New York, 1998."
+      },
+      {
+        "ref_id": "22",
+        "text": "M.R. Wagner, A. Auger, M. Schoenauer, EEDA: A New Robust Estimation of Distribution Algorithm, Rapport de Recherche (Research Report) RR-5190, INRIA, 2004."
+      },
+      {
+        "ref_id": "23",
+        "text": "D.H. Wolpert, W.G. Macready, No free lunch theorems for optimization, IEEE Trans. Evol. Comput. 1 (1997) 67-82."
+      },
+      {
+        "ref_id": "24",
+        "text": "X. Yao, Y. Liu, G. Lin, Evolutionary programming made faster, IEEE Trans. Evol. Comput. 3 (1999) 82-102."
+      },
+      {
+        "ref_id": "25",
+        "text": "J. Ye, Characterization of a family of algorithms for generalized discriminant analysis on undersampled problems, J. Mach. Learning Res. 6 (2005) 483-502."
+      }
+    ],
+    "reference_count": 25,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 summarizes the average performance of 100 independent runs of each algorithm. The best fitness achieved, the least evaluations and the least activations of repairing are emphasized in bold respectively for each test. All these together imply better results, faster convergence rate and less additional computation. The average best fitness curves are shown in Fig. 10.",
+      "headers": [
+        "Function",
+        "Algorithm",
+        "Best fitness",
+        "No. Eval.",
+        "No. activations $^{a}$"
+      ],
+      "rows": [
+        [
+          "$f_{8}$",
+          "CMR",
+          "$-4.933186 \\mathrm{e}+03 \\pm 6.76 \\mathrm{e}+02$",
+          "$58801.6 \\pm 61689.8$",
+          "$49.10 \\pm 141.4$"
+        ],
+        [
+          "",
+          "ECMR",
+          "$-4.910472 \\mathrm{e}+03 \\pm 7.00 \\mathrm{e}+02$",
+          "$58869.5 \\pm 61570.0$",
+          "$56.37 \\pm 153.7$"
+        ],
+        [
+          "",
+          0,
+          "$-5.019996 \\mathrm{e}+\\mathbf{0 3} \\pm \\mathbf{6 . 8 3 e}+\\mathbf{0 2}$",
+          "$56124.3 \\pm 56615.0$",
+          "$55.08 \\pm 148.3$"
+        ],
+        [
+          "$f_{13}$",
+          "CMR",
+          "$7.584966 \\pm 3.42$",
+          "$42538.4 \\pm 37318.9$",
+          "$16.67 \\pm 84.2$"
+        ],
+        [
+          "",
+          "ECMR",
+          "$8.038493 \\pm 4.49$",
+          "$45331.4 \\pm 45256.6$",
+          "$24.79 \\pm 108.2$"
+        ],
+        [
+          "",
+          0,
+          "$8.311668 \\pm 3.88$",
+          "$36980.3 \\pm 4542.5$",
+          "$6.67 \\pm 9.5$"
+        ],
+        [
+          "Rosenbrock",
+          "CMR",
+          "$2.354741 \\mathrm{e}+02 \\pm 1.21 \\mathrm{e}+02$",
+          "$34147.4 \\pm 27167.5$",
+          "$7.83 \\pm 59.1$"
+        ],
+        [
+          "",
+          "ECMR",
+          "$2.262437 \\mathrm{e}+02 \\pm 9.98 \\mathrm{e}+01$",
+          "$39142.9 \\pm 46276.4$",
+          "$21.22 \\pm 110.0$"
+        ],
+        [
+          "",
+          0,
+          "$2.162407 \\mathrm{e}+\\mathbf{0 2} \\pm \\mathbf{8 . 5 5 e}+\\mathbf{0 1}$",
+          "$44936.4 \\pm 58989.4$",
+          "$37.41 \\pm 151.1$"
+        ],
+        [
+          "SumCan",
+          "CMR",
+          "$9.888832 \\mathrm{e}+\\mathbf{0 4} \\pm \\mathbf{7 . 9 0 e}+\\mathbf{0 3}$",
+          "$48814.7 \\pm 41112.2$",
+          "$16.35 \\pm 51.2$"
+        ],
+        [
+          "",
+          "ECMR",
+          "$9.731987 \\mathrm{e}+04 \\pm 1.43 \\mathrm{e}+04$",
+          "$52026.6 \\pm 46528.8$",
+          "$27.07 \\pm 81.5$"
+        ],
+        [
+          "",
+          0,
+          "$9.850797 \\mathrm{e}+04 \\pm 9.67 \\mathrm{e}+03$",
+          "$48623.1 \\pm 40950.3$",
+          "$27.80 \\pm 87.2$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Results of small population-low dimension",
+      "headers": [
+        "Function",
+        "Algorithm",
+        "Best fitness",
+        "No. Eval.",
+        "No. ECMR0"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "UMDA ${ }_{c}^{G}$",
+          "7.324486e-07 $\\pm$ 1.72e-07",
+          "5240.1 $\\pm$ 124.0",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$6.267411 \\mathrm{e}+00 \\pm 1.21 \\mathrm{e}+01$",
+          "$300070.0 \\pm 0.0$",
+          "$5.52 \\pm 44.4$"
+        ],
+        [
+          "",
+          0,
+          "$7.378096 \\mathrm{e}-07 \\pm 1.88 \\mathrm{e}-07$",
+          "$11857.2 \\pm 1233.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$7.263456 \\mathrm{e}-07 \\pm 1.80 \\mathrm{e}-07$",
+          "$6969.6 \\pm 204.3$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{2}$",
+          "UMDA ${ }_{c}^{G}$",
+          "8.334779e-07 $\\pm$ 1.21e-07",
+          "8304.1 $\\pm$ 157.1",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$6.905211 \\mathrm{e}-01 \\pm 6.35 \\mathrm{e}-01$",
+          "$300070.0 \\pm 0.0$",
+          "$410.14 \\pm 90.8$"
+        ],
+        [
+          "",
+          0,
+          "$8.594290 \\mathrm{e}-07 \\pm 1.07 \\mathrm{e}-07$",
+          "$22560.1 \\pm 29872.3$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$8.610971 \\mathrm{e}-07 \\pm 1.16 \\mathrm{e}-07$",
+          "$11865.2 \\pm 308.2$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{3}$",
+          "UMDA ${ }_{c}^{G}$",
+          "$1.039245 \\mathrm{e}+02 \\pm 9.75 \\mathrm{e}+01$",
+          "$300070.0 \\pm 0.0$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$7.691274 \\mathrm{e}+00 \\pm 1.28 \\mathrm{e}+01$",
+          "$300070.0 \\pm 0.0$",
+          "$3.07 \\pm 2.4$"
+        ],
+        [
+          "",
+          0,
+          "7.572571e-07 $\\pm$ 1.73e-07",
+          "11820.6 $\\pm$ 1234.7",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$8.040550 \\mathrm{e}-07 \\pm 1.50 \\mathrm{e}-07$",
+          "$136813.1 \\pm 18972.7$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{9}$",
+          "UMDA ${ }_{c}^{G}$",
+          "1.352954e+00 $\\pm$ 1.06",
+          "250763.0 $\\pm$ 109498.4",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$1.180018 \\mathrm{e}+01 \\pm 6.84$",
+          "$300070.0 \\pm 0.0$",
+          "$184.73 \\pm 612.9$"
+        ],
+        [
+          "",
+          0,
+          "$2.706852 \\mathrm{e}+00 \\pm 2.10$",
+          "$284419.1 \\pm 58468.5$",
+          "$602.44 \\pm 575.9$"
+        ],
+        [
+          "",
+          0,
+          "$2.285066 \\mathrm{e}+01 \\pm 2.96$",
+          "$300070.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{10}$",
+          "UMDA ${ }_{c}^{G}$",
+          "$8.301565 \\mathrm{e}-06 \\pm 7.46 \\mathrm{e}-05$",
+          "$10970.2 \\pm 29202.4$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$1.209118 \\mathrm{e}+00 \\pm 7.82 \\mathrm{e}-01$",
+          "$300070.0 \\pm 0.0$",
+          "$237.11 \\pm 667.0$"
+        ],
+        [
+          "",
+          0,
+          "$8.551754 \\mathrm{e}-07 \\pm 1.07 \\mathrm{e}-07$",
+          "$18170.5 \\pm 1789.6$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "8.660051e-07 $\\pm$ 1.08e-07",
+          "10860.3 $\\pm$ 247.6",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{11}$",
+          "UMDA ${ }_{c}^{G}$",
+          "$1.663107 \\mathrm{e}-04 \\pm 1.66 \\mathrm{e}-03$",
+          "$9117.9 \\pm 29390.5$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$5.408410 \\mathrm{e}-01 \\pm 2.77 \\mathrm{e}-01$",
+          "$300070.0 \\pm 0.0$",
+          "$929.78 \\pm 1298.4$"
+        ],
+        [
+          "",
+          0,
+          "$5.496360 \\mathrm{e}-03 \\pm 2.29 \\mathrm{e}-02$",
+          "$69070.3 \\pm 96209.5$",
+          "$51.07 \\pm 143.4$"
+        ],
+        [
+          "",
+          0,
+          "7.762815e-07 $\\pm$ 1.66e-07",
+          "13022.5 $\\pm$ 3767.7",
+          "$0.00 \\pm 0.0$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results of small population-high dimension",
+      "headers": [
+        "Function",
+        "Algorithm",
+        "Best fitness",
+        "No. Eval.",
+        "No. ECMR0"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "UMDA $_{r}^{G}$",
+          "$4.575777 \\mathrm{e}-01 \\pm 2.02 \\mathrm{e}+00$",
+          "$260157.2 \\pm 99422.2$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$3.362485 \\mathrm{e}+03 \\pm 8.95 \\mathrm{e}+02$",
+          "$300070.0 \\pm 0.0$",
+          "$540.01 \\pm 355.9$"
+        ],
+        [
+          "",
+          0,
+          "$3.382982 \\mathrm{e}+03 \\pm 8.23 \\mathrm{e}+02$",
+          "$300070.0 \\pm 0.0$",
+          "$3022.53 \\pm 6.7$"
+        ],
+        [
+          "",
+          0,
+          "$9.848507 \\mathrm{e}-07 \\pm 1.54 \\mathrm{e}-08$",
+          "$183813.3 \\pm 7075.4$",
+          "$1841.44 \\pm 71.7$"
+        ],
+        [
+          "$f_{2}$",
+          "UMDA $_{r}^{G}$",
+          "$5.659719 \\mathrm{e}-03 \\pm 3.44 \\mathrm{e}-02$",
+          "$69642.6 \\pm 104810.5$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$3.282926 \\mathrm{e}+01 \\pm 4.04 \\mathrm{e}+00$",
+          "$300070.0 \\pm 0.0$",
+          "$982.66 \\pm 256.9$"
+        ],
+        [
+          "",
+          0,
+          "$2.744233 \\mathrm{e}+01 \\pm 3.51 \\mathrm{e}+00$",
+          "$300070.0 \\pm 0.0$",
+          "$3026.35 \\pm 1.4$"
+        ],
+        [
+          "",
+          0,
+          "$1.441234 \\mathrm{e}+01 \\pm 3.27 \\mathrm{e}+00$",
+          "$300070.0 \\pm 0.0$",
+          "$1267.73 \\pm 126.8$"
+        ],
+        [
+          "$f_{3}$",
+          "UMDA $_{r}^{G}$",
+          "$1.354130 \\mathrm{e}+04 \\pm 3.64 \\mathrm{e}+03$",
+          "$300070.0 \\pm 0.0$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$5.150689 \\mathrm{e}+03 \\pm 2.12 \\mathrm{e}+03$",
+          "$300070.0 \\pm 0.0$",
+          "$348.47 \\pm 52.0$"
+        ],
+        [
+          "",
+          0,
+          "$4.356499 \\mathrm{e}+03 \\pm 1.49 \\mathrm{e}+03$",
+          "$300070.0 \\pm 0.0$",
+          "$3024.27 \\pm 5.9$"
+        ],
+        [
+          "",
+          0,
+          "$2.903753 \\mathrm{e}+02 \\pm 1.65 \\mathrm{e}+02$",
+          "$300070.0 \\pm 0.0$",
+          "$3019.89 \\pm 2.6$"
+        ],
+        [
+          "$f_{9}$",
+          "UMDA $_{r}^{G}$",
+          "$1.854362 \\mathrm{e}+01 \\pm 3.70 \\mathrm{e}+00$",
+          "$300070.0 \\pm 0.0$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$2.934226 \\mathrm{e}+02 \\pm 2.67 \\mathrm{e}+01$",
+          "$300070.0 \\pm 0.0$",
+          "$669.14 \\pm 724.5$"
+        ],
+        [
+          "",
+          0,
+          "$2.044667 \\mathrm{e}+02 \\pm 2.65 \\mathrm{e}+01$",
+          "$300070.0 \\pm 0.0$",
+          "$3024.23 \\pm 7.2$"
+        ],
+        [
+          "",
+          0,
+          "$3.220488 \\mathrm{e}+02 \\pm 1.38 \\mathrm{e}+01$",
+          "$300070.0 \\pm 0.0$",
+          "$3018.26 \\pm 2.7$"
+        ],
+        [
+          "$f_{10}$",
+          "UMDA $_{r}^{G}$",
+          "$8.497928 \\mathrm{e}-02 \\pm 2.33 \\mathrm{e}-01$",
+          "$297301.0 \\pm 27690.3$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$9.323666 \\mathrm{e}+00 \\pm 6.42 \\mathrm{e}-01$",
+          "$300070.0 \\pm 0.0$",
+          "$513.63 \\pm 594.3$"
+        ],
+        [
+          "",
+          0,
+          "N/A $^{\\mathrm{a}}$",
+          "$139913.7 \\pm 117164.7$",
+          "$1405.32 \\pm 1179.9$"
+        ],
+        [
+          "",
+          0,
+          "$3.757219 \\mathrm{e}+00 \\pm 6.95 \\mathrm{e}-01$",
+          "$300070.0 \\pm 0.0$",
+          "$3013.39 \\pm 3.3$"
+        ],
+        [
+          "$f_{11}$",
+          "UMDA $_{r}^{G}$",
+          "$1.027040 \\mathrm{e}-01 \\pm 1.98 \\mathrm{e}-01$",
+          "$285815.0 \\pm 62449.3$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$2.935355 \\mathrm{e}+01 \\pm 6.51 \\mathrm{e}+00$",
+          "$300070.0 \\pm 0.0$",
+          "$503.03 \\pm 351.6$"
+        ],
+        [
+          "",
+          0,
+          "$3.049473 \\mathrm{e}+01 \\pm 8.30 \\mathrm{e}+00$",
+          "$300070.0 \\pm 0.0$",
+          "$3021.45 \\pm 8.5$"
+        ],
+        [
+          "",
+          0,
+          "$6.628387 \\mathrm{e}-03 \\pm 8.67 \\mathrm{e}-03$",
+          "$300070.0 \\pm 0.0$",
+          "$3014.95 \\pm 2.9$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Results of large population-low dimension",
+      "headers": [
+        "Function",
+        "Algorithm",
+        "Best fitness",
+        "No. Eval.",
+        "No. ECMR0"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "UMDA ${ }_{1}^{G}$",
+          "$7.276811 \\mathrm{e}-07 \\pm 1.72 \\mathrm{e}-07$",
+          "$106687.6 \\pm 1573.1$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "7.468662e-07 $\\pm \\mathbf{1 . 7 2 e - 0 7}$",
+          106087.9,
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$8.571609 \\mathrm{e}-07 \\pm 3.52 \\mathrm{e}-07$",
+          "$249096.4 \\pm 29296.5$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$7.560365 \\mathrm{e}-07 \\pm 1.60 \\mathrm{e}-07$",
+          "$116102.9 \\pm 1648.9$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{2}$",
+          "UMDA ${ }_{1}^{G}$",
+          "$8.426540 \\mathrm{e}-07 \\pm 1.14 \\mathrm{e}-07$",
+          "$174433.7 \\pm 1742.7$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "8.558247e-07 $\\pm \\mathbf{1 . 0 9 e - 0 7}$",
+          172874.5,
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$4.763670 \\mathrm{e}-05 \\pm 7.34 \\mathrm{e}-05$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$8.616955 \\mathrm{e}-07 \\pm 9.65 \\mathrm{e}-08$",
+          "$193184.4 \\pm 1763.4$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{3}$",
+          "UMDA ${ }_{1}^{G}$",
+          "$3.499000 \\mathrm{e}+00 \\pm 3.13 \\mathrm{e}+00$",
+          "$301850.0 \\pm 0.0$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "7.604064e-07 $\\pm \\mathbf{1 . 6 9 e - 0 7}$",
+          107407.3,
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$1.017514 \\mathrm{e}-06 \\pm 1.31 \\mathrm{e}-06$",
+          "$252114.9 \\pm 27847.6$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$3.234649 \\mathrm{e}+02 \\pm 1.49 \\mathrm{e}+02$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{9}$",
+          "UMDA ${ }_{1}^{G}$",
+          "$7.539530 \\mathrm{e}-07 \\pm 1.80 \\mathrm{e}-07$",
+          "$202599.6 \\pm 6604.8$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "7.193811e-07 $\\pm \\mathbf{1 . 8 8 e - 0 7}$",
+          192824.5,
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$1.093871 \\mathrm{e}-03 \\pm 1.09 \\mathrm{e}-02$",
+          "$209216.3 \\pm 30209.9$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$1.852634 \\mathrm{e}+01 \\pm 2.50 \\mathrm{e}+00$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{10}$",
+          "UMDA ${ }_{1}^{G}$",
+          "$8.544855 \\mathrm{e}-07 \\pm 1.14 \\mathrm{e}-07$",
+          "$165878.0 \\pm 1606.8$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "8.559863e-07 $\\pm \\mathbf{1 . 1 3 e - 0 7}$",
+          164978.5,
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$6.245679 \\mathrm{e}-05 \\pm 6.61 \\mathrm{e}-05$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$8.418291 \\mathrm{e}-07 \\pm 1.11 \\mathrm{e}-07$",
+          "$180930.5 \\pm 1692.8$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{11}$",
+          "UMDA ${ }_{1}^{G}$",
+          "$7.375143 \\mathrm{e}-07 \\pm 1.83 \\mathrm{e}-07$",
+          "$122899.5 \\pm 1692.4$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "7.472051e-07 $\\pm \\mathbf{1 . 6 7 e - 0 7}$",
+          122059.9,
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$8.638529 \\mathrm{e}-07 \\pm 1.05 \\mathrm{e}-06$",
+          "$236142.9 \\pm 32914.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$7.768699 \\mathrm{e}-07 \\pm 1.63 \\mathrm{e}-07$",
+          "$195843.0 \\pm 3282.3$",
+          "$0.00 \\pm 0.0$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Results of large population-high dimension",
+      "headers": [
+        "Function",
+        "Algorithm",
+        "Best fitness",
+        "No. Eval.",
+        "No. ECMR0"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "UMDA ${ }_{c}^{G}$",
+          "$8.826993 \\mathrm{e}-07 \\pm 8.61 \\mathrm{e}-08$",
+          "$291994.9 \\pm 1399.3$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "8.720652e-07 $\\pm$ 7.95e-08",
+          "271865.0 $\\pm$ 1448.8",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$2.084492 \\mathrm{e}+00 \\pm 2.25 \\mathrm{e}+00$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$4.134877 \\mathrm{e}-06 \\pm 4.53 \\mathrm{e}-07$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{2}$",
+          "UMDA ${ }_{c}^{G}$",
+          "$1.406607 \\mathrm{e}-03 \\pm 8.67 \\mathrm{e}-05$",
+          "$301850.0 \\pm 0.0$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "4.977453e-04 $\\pm$ 2.61e-04",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$3.347511 \\mathrm{e}-01 \\pm 2.15 \\mathrm{e}-01$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$5.143610 \\mathrm{e}-03 \\pm 2.96 \\mathrm{e}-04$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{3}$",
+          "UMDA ${ }_{c}^{G}$",
+          "$2.046511 \\mathrm{e}+03 \\pm 3.44 \\mathrm{e}+02$",
+          "$301850.0 \\pm 0.0$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "1.472998e-02 $\\pm$ 6.12e-02",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$1.656897 \\mathrm{e}+00 \\pm 1.97 \\mathrm{e}+00$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$1.556182 \\mathrm{e}+05 \\pm 2.61 \\mathrm{e}+04$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{9}$",
+          "UMDA ${ }_{c}^{G}$",
+          "$3.222134 \\mathrm{e}+01 \\pm 1.51 \\mathrm{e}+01$",
+          "$301850.0 \\pm 0.0$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "$6.770974 \\mathrm{e}+00 \\pm 5.01 \\mathrm{e}+00$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "5.419324e-01 $\\pm$ 2.01e+00",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$3.260484 \\mathrm{e}+02 \\pm 9.77 \\mathrm{e}+00$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{10}$",
+          "UMDA ${ }_{c}^{G}$",
+          "$1.473622 \\mathrm{e}-04 \\pm 8.12 \\mathrm{e}-06$",
+          "$301850.0 \\pm 0.0$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "5.474890e-05 $\\pm$ 8.41e-06",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$4.129898 \\mathrm{e}-01 \\pm 3.22 \\mathrm{e}-01$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$4.925867 \\mathrm{e}-04 \\pm 2.75 \\mathrm{e}-05$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "$f_{11}$",
+          "UMDA ${ }_{c}^{G}$",
+          "$8.982967 \\mathrm{e}-07 \\pm 7.26 \\mathrm{e}-08$",
+          "$294393.7 \\pm 1499.6$",
+          "N/A"
+        ],
+        [
+          "",
+          0,
+          "8.856177e-07 $\\pm$ 7.54e-08",
+          "274243.8 $\\pm$ 1697.5",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$7.114941 \\mathrm{e}-01 \\pm 2.81 \\mathrm{e}-01$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ],
+        [
+          "",
+          0,
+          "$1.114116 \\mathrm{e}-02 \\pm 1.31 \\mathrm{e}-03$",
+          "$301850.0 \\pm 0.0$",
+          "$0.00 \\pm 0.0$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 5
+    }
+  ]
+}

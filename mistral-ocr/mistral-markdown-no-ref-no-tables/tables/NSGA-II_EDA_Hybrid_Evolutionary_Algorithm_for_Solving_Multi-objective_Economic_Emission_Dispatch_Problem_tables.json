@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/NSGA-II EDA Hybrid Evolutionary Algorithm for Solving Multi-objective Economic Emission Dispatch Problem.md",
+    "filename": "NSGA-II EDA Hybrid Evolutionary Algorithm for Solving Multi-objective Economic Emission Dispatch Problem.md",
+    "title": "NSGA-II EDA Hybrid Evolutionary Algorithm for Solving Multi-objective Economic Emission Dispatch Problem",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "IEEE 30-bus <br> NSGA-II",
+        "NSGA-II/EDA",
+        "IEEE 118-bus <br> NSGA-II",
+        "NSGA-II/EDA"
+      ],
+      "rows": [
+        [
+          "Population size, $N$",
+          50,
+          50,
+          150,
+          150
+        ],
+        [
+          "Number of generations, gen",
+          900,
+          600,
+          3000,
+          2000
+        ],
+        [
+          "Crossover probability",
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        [
+          "Mutation probability",
+          "$\\frac{1}{6}$",
+          "$\\frac{1}{7}$",
+          "$\\frac{1}{24}$",
+          "$\\frac{1}{55}$"
+        ],
+        [
+          "Number of bins, $H$",
+          "-",
+          7,
+          "-",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "NSGA [12]",
+        "NPGA [11]",
+        "SPEA [8]",
+        "NSGA-II",
+        "NSGA-II/EDA"
+      ],
+      "rows": [
+        [
+          "$P_{G_{1}}$",
+          0.1168,
+          0.1245,
+          0.1086,
+          0.1119,
+          0.1399
+        ],
+        [
+          "$P_{G_{2}}$",
+          0.3165,
+          0.2792,
+          0.3056,
+          0.3265,
+          0.3219
+        ],
+        [
+          "$P_{G_{3}}$",
+          0.5441,
+          0.6284,
+          0.5818,
+          0.5857,
+          0.5597
+        ],
+        [
+          "$P_{G_{4}}$",
+          0.9447,
+          1.0264,
+          0.9846,
+          0.9329,
+          0.9487
+        ],
+        [
+          "$P_{G_{5}}$",
+          0.5498,
+          0.4693,
+          0.5288,
+          0.5623,
+          0.5254
+        ],
+        [
+          "$P_{G_{6}}$",
+          0.3964,
+          0.3993,
+          0.3584,
+          0.3404,
+          0.3651
+        ],
+        [
+          "$F C$",
+          608.245,
+          608.147,
+          607.807,
+          606.571,
+          "$\\mathbf{6 0 6 . 5 0 5 1}$"
+        ],
+        [
+          "Em.",
+          0.21664,
+          0.22364,
+          0.22015,
+          0.21702,
+          0.21641
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Best solutions out of twelve runs for fuel cost (IEEE 30-bus).",
+      "headers": [
+        "",
+        "NSGA [12]",
+        "NPGA [11]",
+        "SPEA [8]",
+        "NSGA-II",
+        "NSGA-II/EDA"
+      ],
+      "rows": [
+        [
+          "$P_{G_{1}}$",
+          0.4113,
+          0.3923,
+          0.4043,
+          0.4135,
+          0.4135
+        ],
+        [
+          "$P_{G_{2}}$",
+          0.4591,
+          0.47,
+          0.4525,
+          0.4663,
+          0.4662
+        ],
+        [
+          "$P_{G_{3}}$",
+          0.5117,
+          0.5565,
+          0.5525,
+          0.5482,
+          0.5483
+        ],
+        [
+          "$P_{G_{4}}$",
+          0.3724,
+          0.3695,
+          0.4079,
+          0.3949,
+          0.3948
+        ],
+        [
+          "$P_{G_{5}}$",
+          0.581,
+          0.5599,
+          0.5468,
+          0.5483,
+          0.5484
+        ],
+        [
+          "$P_{G_{6}}$",
+          0.5304,
+          0.5163,
+          0.5005,
+          0.5186,
+          0.5187
+        ],
+        [
+          "$F C$",
+          647.251,
+          645.984,
+          642.603,
+          650.7845,
+          650.8201
+        ],
+        [
+          "Em.",
+          0.19432,
+          0.19424,
+          0.19422,
+          "$\\mathbf{0 . 1 9 4 1 7}$",
+          "$\\mathbf{0 . 1 9 4 1 7}$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Best solutions out of twelve runs for emission (IEEE 30-bus). The bold was to show the best values computed for all the algorithms.",
+      "headers": [
+        "",
+        "NSGA-II",
+        "NSGA-II/EDA"
+      ],
+      "rows": [
+        [
+          "Min. fuel cost",
+          978.8,
+          "$\\mathbf{9 6 9 . 8 0}$"
+        ],
+        [
+          "Corr. emission",
+          57.76,
+          74.23
+        ],
+        [
+          "Min. emission",
+          "$\\mathbf{6 . 5 5 2}$",
+          6.629
+        ],
+        [
+          "Corr. fuel cost",
+          1506,
+          1475
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    }
+  ]
+}

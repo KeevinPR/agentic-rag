@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Comparison of cauchy EDA and pPOEMS algorithms on the BBOB noiseless testbed.md",
+    "filename": "Comparison of cauchy EDA and pPOEMS algorithms on the BBOB noiseless testbed.md",
+    "title": "Comparison of cauchy EDA and pPOEMS algorithms on the BBOB noiseless testbed",
+    "year": "2010"
+  },
+  "references": {
+    "header": "## 6. REFERENCES",
+    "content": "[1] S. Finck, N. Hansen, R. Ros, and A. Auger. Real-parameter black-box optimization benchmarking 2009: Presentation of the noiseless functions. Technical Report 2009/20, Research Center PPE, 2009. Updated February 2010.\n[2] N. Hansen, A. Auger, S. Finck, and R. Ros. Real-parameter black-box optimization benchmarking 2010: Experimental setup. Technical Report RR-7215, INRIA, 2010.\n[3] N. Hansen, S. Finck, R. Ros, and A. Auger. Real-parameter black-box optimization benchmarking 2009: Noiseless functions definitions. Technical Report RR-6829, INRIA, 2009. Updated February 2010.\n[4] J. Kubalík. Black-box optimization benchmarking of prototype optimization with evolved improvement steps for noiseless function testbed. In F. Rothlauf, editor, GECCO (Companion), pages 2303-2308. ACM, 2009.\n[5] J. Kubalík. Solving the sorting network problem using iterative optimization with evolved hypermutations. In GECCO '09: Proceedings of the 11th Annual conference on Genetic and evolutionary computation, pages 301-308, New York, NY, USA, 2009. ACM.\n[6] J. Kubalík. Efficient stochastic local search algorithm for solving the shortest common supersequence problem. In Accepted for presentation at GECCO '10. ACM, 2010.\n[7] P. Pošík. BBOB-benchmarking a simple estimation-of-distribution algorithm with Cauchy distribution. In GECCO '09: Proceedings of the 11th annual conference companion on Genetic and evolutionary computation conference, pages 2309-2314, New York, NY, USA, 2009. ACM.\n[8] K. Price. Differential evolution vs. the functions of the second ICEO. In Proceedings of the IEEE International Congress on Evolutionary Computation, pages 153-157, 1997.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "S. Finck, N. Hansen, R. Ros, and A. Auger. Real-parameter black-box optimization benchmarking 2009: Presentation of the noiseless functions. Technical Report 2009/20, Research Center PPE, 2009. Updated February 2010."
+      },
+      {
+        "ref_id": "2",
+        "text": "N. Hansen, A. Auger, S. Finck, and R. Ros. Real-parameter black-box optimization benchmarking 2010: Experimental setup. Technical Report RR-7215, INRIA, 2010."
+      },
+      {
+        "ref_id": "3",
+        "text": "N. Hansen, S. Finck, R. Ros, and A. Auger. Real-parameter black-box optimization benchmarking 2009: Noiseless functions definitions. Technical Report RR-6829, INRIA, 2009. Updated February 2010."
+      },
+      {
+        "ref_id": "4",
+        "text": "J. Kubalík. Black-box optimization benchmarking of prototype optimization with evolved improvement steps for noiseless function testbed. In F. Rothlauf, editor, GECCO (Companion), pages 2303-2308. ACM, 2009."
+      },
+      {
+        "ref_id": "5",
+        "text": "J. Kubalík. Solving the sorting network problem using iterative optimization with evolved hypermutations. In GECCO '09: Proceedings of the 11th Annual conference on Genetic and evolutionary computation, pages 301-308, New York, NY, USA, 2009. ACM."
+      },
+      {
+        "ref_id": "6",
+        "text": "J. Kubalík. Efficient stochastic local search algorithm for solving the shortest common supersequence problem. In Accepted for presentation at GECCO '10. ACM, 2010."
+      },
+      {
+        "ref_id": "7",
+        "text": "P. Pošík. BBOB-benchmarking a simple estimation-of-distribution algorithm with Cauchy distribution. In GECCO '09: Proceedings of the 11th annual conference companion on Genetic and evolutionary computation conference, pages 2309-2314, New York, NY, USA, 2009. ACM."
+      },
+      {
+        "ref_id": "8",
+        "text": "K. Price. Differential evolution vs. the functions of the second ICEO. In Proceedings of the IEEE International Congress on Evolutionary Computation, pages 153-157, 1997."
+      }
+    ],
+    "reference_count": 8,
+    "pattern_matched": "(?:^|\\n)#+\\s*\\d+\\.\\s*REFERENCES?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Expected running time (ERT in number of function evaluations) divided by the best ERT measured during BBOB-2009 (given in the respective first row) for different $\\Delta f$ values for functions $f_{1}-f_{24}$. The median number of conducted function evaluations is additionally given in italics, if $\\operatorname{ERT}\\left(10^{-7}\\right)=\\infty$. \\#succ is the number of trials that reached the final target $f_{\\text {opt }}+10^{-8}$. 0: pPO is pPOEMS and 1: Cau is CauchyEDA. Bold entries are statistically significantly better compared to the other algorithm, with $p=0.05$ or $p=10^{-k}$ where $k>1$ is the number following the $*$ symbol, with Bonferroni correction of 48.",
+      "headers": [
+        "Dim",
+        "2",
+        "3",
+        "5",
+        "10",
+        "20"
+      ],
+      "rows": [
+        [
+          "pPOEMS",
+          2.4,
+          2.7,
+          4,
+          8.5,
+          13
+        ],
+        [
+          "CauchyEDA",
+          51,
+          17,
+          9,
+          9,
+          11
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    }
+  ]
+}

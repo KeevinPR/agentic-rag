@@ -1,0 +1,957 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Multisource Heterogeneous User-Generated Contents-Driven Interactive Estimation of Distribution Algorithms for Personalized Search.md",
+    "filename": "Multisource Heterogeneous User-Generated Contents-Driven Interactive Estimation of Distribution Algorithms for Personalized Search.md",
+    "title": "Multisource Heterogeneous User-Generated Contents-Driven Interactive Estimation of Distribution Algorithms for Personalized Search",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Notations of the Symbols",
+      "headers": [
+        "Symbol",
+        "Definition and Description"
+      ],
+      "rows": [
+        [
+          "$u$",
+          "User"
+        ],
+        [
+          "$\\mathbf{x}$",
+          "Item"
+        ],
+        [
+          "$U$",
+          "User set"
+        ],
+        [
+          "$X$",
+          "Item set"
+        ],
+        [
+          "$\\mathbf{R}$",
+          "Rating matrix of users on items"
+        ],
+        [
+          "$r_{i, i}$",
+          "Rating of user $u_{i}$ on item $\\mathbf{x}_{i}$"
+        ],
+        [
+          "$\\mathbf{c}$",
+          "Items category tags"
+        ],
+        [
+          "$c_{i j}$",
+          "The $j$-th category tag of item $\\mathbf{x}_{i}$"
+        ],
+        [
+          "$\\mathbf{T}$",
+          "Sentence vectors of users comments"
+        ],
+        [
+          "$\\mathbf{t}_{i, i}$",
+          "Sentence vector of the comment written by user $u_{i}$ on item $\\mathbf{x}_{i}$"
+        ],
+        [
+          "$n_{1}$",
+          "Number of the category tags in all of items"
+        ],
+        [
+          "$n_{2}$",
+          "Length of the sentence vectors of text comments"
+        ],
+        [
+          "$k$",
+          "Number of similar users"
+        ],
+        [
+          "$\\delta$",
+          "Score threshold"
+        ],
+        [
+          "$D_{u}$",
+          "Dominant group of user $u$"
+        ],
+        [
+          "$\\mathbf{C}^{u}$",
+          "Matrix of category features of user $u$"
+        ],
+        [
+          "$\\mathbf{c}^{u}$",
+          "Vector of the category features of item $\\mathbf{x}_{i}$ in $D_{u}$"
+        ],
+        [
+          "$\\mathbf{T}^{u}$",
+          "Matrix of the sentence vectors of comments in $D_{u}$"
+        ],
+        [
+          "$\\mathbf{t}_{i}^{u}$",
+          "Sentence vector of the comment of user $u$ on item $\\mathbf{x}_{i}$"
+        ],
+        [
+          "$G$",
+          "Training dataset"
+        ],
+        [
+          "$\\mathbf{v}_{1}$",
+          "The first visible layer in RBM"
+        ],
+        [
+          "$\\mathbf{v}_{2}$",
+          "The second visible layer in RBM"
+        ],
+        [
+          "$\\mathbf{h}$",
+          "The hidden layer in RBM"
+        ],
+        [
+          "$m$",
+          "Number of hidden units in RBM"
+        ],
+        [
+          "$\\mathbf{V}^{u}$",
+          "Vector matrix of all of the features in RBM"
+        ],
+        [
+          "$P o p$",
+          "Population in IEDA"
+        ],
+        [
+          "$S^{u}$",
+          "Feasible item set"
+        ],
+        [
+          "$\\alpha$",
+          "Adjustment coefficient"
+        ]
+      ],
+      "row_count": 28,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "\\# OF USERS, ITEMS, AND RATINGS OF THE DATASETS",
+      "headers": [
+        "Dataset",
+        "\\# of Users",
+        "\\# of Items",
+        "\\# of Ratings"
+      ],
+      "rows": [
+        [
+          "Digital_Music (Music)",
+          478235,
+          266414,
+          836006
+        ],
+        [
+          "Video_Games (Games)",
+          826767,
+          50210,
+          1324753
+        ],
+        [
+          "Apps_for_Android (Apps)",
+          1323884,
+          61275,
+          2638173
+        ],
+        [
+          "Kindle_Store (Kindle)",
+          1406890,
+          430530,
+          3205467
+        ],
+        [
+          "CDs_and_Vinyl (CDs)",
+          1578597,
+          486360,
+          3749004
+        ],
+        [
+          "Movies_and_TV (Movies)",
+          2088620,
+          200941,
+          4607047
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "DEScriptions of COMPARED AlGORITHMS",
+      "headers": [
+        "Algorithm",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Random",
+          "Non-personalized method that randomly selects items for recommendations"
+        ],
+        [
+          46,
+          "Non-personalized method in which the most popular items are recommended by items' popularity"
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          26,
+          "Convolutional matrix factorization (ConvMF) based on CNN"
+        ],
+        [
+          32,
+          "Deep Cooperative Neural Networks (DeepCoNN) based on CNN"
+        ],
+        [
+          59,
+          "Restricted Boltzmann Machine-assisted Estimation of Distribution Algorithm (RBMEDA), and a personalized search method based on unsupervised learning"
+        ],
+        [
+          12,
+          "Radial Basis Function-assisted Interactive Estimation of Distribution Algorithm (RBFIEDA)"
+        ],
+        [
+          18,
+          "Dual Restricted Boltzmann Machine-driven Estimation of Distribution Algorithm (DRBMEDA), and a personalized search method based on unsupervised learning"
+        ],
+        [
+          18,
+          "Dual Restricted Boltzmann Machine-driven Interactive Estimation of Distribution Algorithm (DRBMIEDA)"
+        ],
+        [
+          63,
+          "Enhancing Gaussian Estimation of Distribution Algorithm"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "IV",
+      "table_title": "EXPERIMENTAL PARAMETERS OF OUR ALGORITHM",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$n_{1}$",
+          "Number of category tags"
+        ],
+        [
+          "$n_{2}$",
+          200
+        ],
+        [
+          "$m$",
+          "$(0.8-1.2) \\times$ Number of category tags"
+        ],
+        [
+          "Learning rate",
+          0.1
+        ],
+        [
+          "Momentum",
+          "$0.5-0.9$"
+        ],
+        [
+          "Training epochs in RBM",
+          20
+        ],
+        [
+          "Pop",
+          "$0.3 \\times$ Number of test"
+        ],
+        [
+          "$k$",
+          10
+        ],
+        [
+          "$\\alpha$",
+          0.3
+        ],
+        [
+          "\\# of TopN list $(N)$",
+          10
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "V",
+      "table_title": "Effectiveness of UGCs-Driven RBM and Surrogate by Comparing With Popular Personalized Algorithms. Root Mean Square Error: RMSE, Hit Ratio: HR, and Average Precision: AP. See Tables II and III FOR USED Abbreviations",
+      "headers": [
+        "Algorithms",
+        "",
+        "Random",
+        "Popularity",
+        "BPR",
+        "ConvMF",
+        "DeepCoNN",
+        "RBMEDA",
+        "DRBMEDA",
+        "$\\begin{gathered} \\text { RBM- } \\\\ \\text { categ } \\end{gathered}$",
+        "RBM",
+        "$\\begin{gathered} \\text { ERBM } \\\\ \\text {-MsH } \\end{gathered}$"
+      ],
+      "rows": [
+        [
+          "Music",
+          "RMSE",
+          "-",
+          3.144,
+          "$1.898 *$",
+          3.13,
+          2.156,
+          1.218,
+          1.264,
+          1.258,
+          1.173,
+          1.123
+        ],
+        [
+          "",
+          "HR",
+          0.0765,
+          0.0793,
+          0.0764,
+          0.0742,
+          0.0984,
+          0.0812,
+          0.0924,
+          0.0997,
+          0.1017,
+          0.0981
+        ],
+        [
+          "",
+          "MAP",
+          0.761,
+          0.723,
+          0.811,
+          0.728,
+          0.829,
+          0.809,
+          0.887,
+          0.897,
+          0.878,
+          0.913
+        ],
+        [
+          "",
+          "Time(s)",
+          0.02,
+          0.182,
+          0.494,
+          276.716,
+          40.035,
+          0.221,
+          1.599,
+          0.584,
+          0.672,
+          0.69
+        ],
+        [
+          "Games",
+          "RMSE",
+          "-",
+          3.516,
+          "$1.973 *$",
+          3.497,
+          1.317,
+          1.321,
+          1.332,
+          1.305,
+          1.289,
+          1.226
+        ],
+        [
+          "",
+          "HR",
+          0.081,
+          0.093,
+          0.0753,
+          0.0945,
+          0.0934,
+          0.0735,
+          0.0815,
+          0.0763,
+          0.0859,
+          0.1021
+        ],
+        [
+          "",
+          "MAP",
+          0.747,
+          0.873,
+          0.707,
+          0.915,
+          0.828,
+          0.692,
+          0.76,
+          0.737,
+          0.894,
+          0.906
+        ],
+        [
+          "",
+          "Time(s)",
+          0.014,
+          0.196,
+          0.402,
+          131.716,
+          40.164,
+          0.151,
+          2.346,
+          0.125,
+          0.719,
+          0.775
+        ],
+        [
+          "Apps",
+          "RMSE",
+          "-",
+          3.164,
+          2.146,
+          3.119,
+          1.414,
+          1.523,
+          1.543,
+          1.481,
+          1.496,
+          1.367
+        ],
+        [
+          "",
+          "HR",
+          0.0799,
+          0.0795,
+          0.0852,
+          0.0701,
+          0.0948,
+          0.0827,
+          0.0746,
+          0.0759,
+          0.0807,
+          0.1034
+        ],
+        [
+          "",
+          "MAP",
+          0.736,
+          0.714,
+          0.736,
+          0.688,
+          0.83,
+          0.756,
+          0.712,
+          0.729,
+          0.77,
+          0.881
+        ],
+        [
+          "",
+          "Time(s)",
+          0.014,
+          0.17,
+          0.344,
+          90.489,
+          33.959,
+          0.103,
+          0.646,
+          0.086,
+          0.388,
+          0.399
+        ],
+        [
+          "Kindle",
+          "RMSE",
+          "-",
+          4.319,
+          2.284,
+          4.317,
+          1.04,
+          1.433,
+          1.549,
+          1.304,
+          1.256,
+          1.232
+        ],
+        [
+          "",
+          "HR",
+          0.0298,
+          0.0222,
+          0.0278,
+          0.0221,
+          0.0283,
+          0.0292,
+          0.0295,
+          0.0303,
+          0.0299,
+          0.0312
+        ],
+        [
+          "",
+          "MAP",
+          0.914,
+          0.922,
+          0.857,
+          0.833,
+          0.857,
+          0.909,
+          0.867,
+          0.938,
+          0.915,
+          0.971
+        ],
+        [
+          "",
+          "Time(s)",
+          0.014,
+          0.761,
+          1.205,
+          416.532,
+          103.89,
+          10.06,
+          26.223,
+          2.501,
+          7.224,
+          7.351
+        ],
+        [
+          "CDs",
+          "RMSE",
+          "-",
+          4.218,
+          2.182,
+          4.217,
+          2.357,
+          1.48,
+          1.534,
+          1.229,
+          1.393,
+          1.205
+        ],
+        [
+          "",
+          "HR",
+          0.0119,
+          0.0136,
+          0.0101,
+          0.0107,
+          0.0136,
+          0.011,
+          0.011,
+          0.0121,
+          0.0116,
+          0.0124
+        ],
+        [
+          "",
+          "MAP",
+          0.847,
+          0.825,
+          0.826,
+          0.817,
+          0.903,
+          0.837,
+          0.852,
+          0.838,
+          0.865,
+          0.976
+        ],
+        [
+          "",
+          "Time(s)",
+          0.016,
+          3.833,
+          5.406,
+          884.519,
+          274.451,
+          5.345,
+          31.382,
+          6.013,
+          28.111,
+          30.886
+        ],
+        [
+          "Movies",
+          "RMSE",
+          "-",
+          3.068,
+          1.96,
+          3.029,
+          1.714,
+          1.187,
+          1.185,
+          1.18,
+          1.169,
+          1.149
+        ],
+        [
+          "",
+          "HR",
+          0.0134,
+          0.0153,
+          0.0144,
+          0.0183,
+          0.0158,
+          0.0138,
+          0.0154,
+          0.0144,
+          0.0177,
+          0.0246
+        ],
+        [
+          "",
+          "MAP",
+          0.668,
+          0.769,
+          0.702,
+          0.838,
+          0.763,
+          0.67,
+          0.766,
+          0.695,
+          0.749,
+          0.973
+        ],
+        [
+          "",
+          "Time(s)",
+          0.014,
+          2.186,
+          3.261,
+          506.125,
+          211.441,
+          0.465,
+          9.468,
+          0.464,
+          1.815,
+          1.902
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 12
+    },
+    {
+      "table_number": "VI",
+      "table_title": "Performance of ERBM-MsH for User \"A3W4D8XOGLWUN5.\" See the Caftions of Table V",
+      "headers": [
+        "Percent (\\%)",
+        "10",
+        "20",
+        "30",
+        "40",
+        "50",
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "rows": [
+        [
+          "RMSE",
+          0.957,
+          1.051,
+          1.048,
+          1.066,
+          1.021,
+          1.018,
+          1.078,
+          1.071,
+          1.001
+        ],
+        [
+          "HR",
+          0.01336,
+          0.01948,
+          0.01928,
+          0.02498,
+          0.02628,
+          0.04099,
+          0.05399,
+          0.07291,
+          0.17039
+        ],
+        [
+          "AP",
+          0.654,
+          0.852,
+          0.909,
+          0.932,
+          0.947,
+          0.96,
+          0.989,
+          1.0,
+          0.987
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 10
+    },
+    {
+      "table_number": "VII",
+      "table_title": "COMPREHENSIVE PERFORMANCE AMONG COMPARED IEAs. See TABLEs II and III AND Fig. 4 FOR Used Abbreviations",
+      "headers": [
+        "Algorithms",
+        "",
+        "IEDA",
+        "RBMIGA",
+        "RBFIEDA",
+        "RBMEDA",
+        "DRBMIEDA",
+        "EGEDA",
+        "IEDA-categ",
+        "IEDA-CT",
+        "IEDA-MsH"
+      ],
+      "rows": [
+        [
+          "Music",
+          "RMSE",
+          "-",
+          1.23,
+          "$2.525 *$",
+          1.223,
+          "$1.439 *$",
+          "-",
+          1.246,
+          1.263,
+          1.218
+        ],
+        [
+          "",
+          "HR",
+          "$0.0459 *$",
+          "$0.0473 *$",
+          "$0.0420 *$",
+          "$0.0485 *$",
+          "$0.0506 *$",
+          "$0.0468 *$",
+          0.0518,
+          0.0573,
+          0.0659
+        ],
+        [
+          "",
+          "MAP",
+          "$0.775 *$",
+          "$0.794 *$",
+          "$0.788 *$",
+          "$0.826 *$",
+          0.879,
+          "$0.764 *$",
+          0.853,
+          0.864,
+          0.881
+        ],
+        [
+          "Games",
+          "RMSE",
+          "-",
+          "$1.364 *$",
+          "$2.854 *$",
+          "$1.361 *$",
+          1.506,
+          "-",
+          1.288,
+          1.266,
+          1.519
+        ],
+        [
+          "",
+          "HR",
+          "$0.0475 *$",
+          "$0.0488 *$",
+          "$0.0534 *$",
+          "$0.0465 *$",
+          "$0.0501 *$",
+          "$0.0488 *$",
+          0.0501,
+          0.06,
+          0.0714
+        ],
+        [
+          "",
+          "MAP",
+          "$0.743 *$",
+          "$0.737 *$",
+          0.836,
+          "$0.729 *$",
+          0.823,
+          "$0.748 *$",
+          0.752,
+          0.851,
+          0.824
+        ],
+        [
+          "Apps",
+          "RMSE",
+          "-",
+          "$1.521 *$",
+          "$1.901 *$",
+          1.525,
+          "$1.621 *$",
+          "-",
+          1.479,
+          1.47,
+          1.605
+        ],
+        [
+          "",
+          "HR",
+          "$0.0484 *$",
+          "$0.0486 *$",
+          "$0.0470 *$",
+          "$0.0489 *$",
+          "$0.0528 *$",
+          "$0.0458 *$",
+          0.0473,
+          0.0545,
+          0.0771
+        ],
+        [
+          "",
+          "MAP",
+          "$0.747 *$",
+          "$0.742 *$",
+          "$0.724 *$",
+          "$0.759 *$",
+          "$0.807 *$",
+          "$0.694 *$",
+          0.724,
+          0.826,
+          0.893
+        ],
+        [
+          "Kindle",
+          "RMSE",
+          "-",
+          "$1.468 *$",
+          "$4.214 *$",
+          "$1.449 *$",
+          "$1.731 *$",
+          "-",
+          1.37,
+          1.297,
+          1.335
+        ],
+        [
+          "",
+          "HR",
+          "$0.0177 *$",
+          "$0.0178 *$",
+          "$0.0175 *$",
+          "$0.0174 *$",
+          "$0.0179 *$",
+          "$0.0181 *$",
+          0.018,
+          0.0175,
+          0.0192
+        ],
+        [
+          "",
+          "MAP",
+          "$0.921 *$",
+          0.932,
+          "$0.923 *$",
+          "$0.925 *$",
+          0.938,
+          0.939,
+          0.935,
+          0.921,
+          0.941
+        ],
+        [
+          "CDs",
+          "RMSE",
+          "-",
+          "$1.456 *$",
+          "$3.705 *$",
+          "$1.458 *$",
+          1.659,
+          "-",
+          1.448,
+          1.444,
+          1.747
+        ],
+        [
+          "",
+          "HR",
+          "$0.00697 *$",
+          "$0.00683 *$",
+          "$0.00715 *$",
+          "$0.00718 *$",
+          "$0.00727 *$",
+          "$0.00652 *$",
+          0.00714,
+          0.00744,
+          0.00832
+        ],
+        [
+          "",
+          "MAP",
+          "$0.844 *$",
+          "$0.878 *$",
+          "$0.849 *$",
+          "$0.886 *$",
+          "$0.866 *$",
+          "$0.828 *$",
+          0.876,
+          0.897,
+          0.998
+        ],
+        [
+          "Movies",
+          "RMSE",
+          "-",
+          1.198,
+          "$1.234 *$",
+          1.201,
+          "$1.333 *$",
+          "-",
+          1.177,
+          1.176,
+          1.164
+        ],
+        [
+          "",
+          "HR",
+          "$0.00777 *$",
+          "$0.00787 *$",
+          "$0.00926 *$",
+          "$0.00816 *$",
+          "$0.00850 *$",
+          "$0.00814 *$",
+          0.00798,
+          0.00881,
+          0.01168
+        ],
+        [
+          "",
+          "MAP",
+          "$0.686 *$",
+          "$0.667 *$",
+          "$0.737 *$",
+          "$0.675 *$",
+          "$0.720 *$",
+          "$0.665 *$",
+          0.69,
+          0.725,
+          0.839
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 11
+    }
+  ]
+}

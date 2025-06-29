@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Applied Research on Distributed Generation Optimal Allocation Based on Improved Estimation of Distribution Algorithm.md",
+    "filename": "Applied Research on Distributed Generation Optimal Allocation Based on Improved Estimation of Distribution Algorithm.md",
+    "title": "Applied Research on Distributed Generation Optimal Allocation Based on Improved Estimation of Distribution Algorithm",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Advantages and disadvantages of various algorithms.",
+      "headers": [
+        "Algorithm",
+        "Advantage",
+        "Shortcoming"
+      ],
+      "rows": [
+        [
+          "Analytical method",
+          "The method is simple and less workload",
+          "Dealing with single objective optimization problem only"
+        ],
+        [
+          "Classical optimization algorithm",
+          "The model is accurate and the method is simple",
+          "The computation is large and the computation speed is slow"
+        ],
+        [
+          "Genetic algorithm",
+          "The convergence speed is fast and the versatility is strong",
+          "It is more complex, easy to fall into premature convergence, and depends on the initial population"
+        ],
+        [
+          "Bat algorithm",
+          "Simple structure, few parameters and strong robustness",
+          "The speed of convergence is slow and the precision of optimization is low"
+        ],
+        [
+          "Artificial bee colony algorithm",
+          "The global search ability is strong and the convergence speed is fast",
+          "it is easy to fall into the local optimum, and the search speed slows down later"
+        ],
+        [
+          "Bacterial foraging algorithm",
+          "Strong parallel search ability and easy to get out of local minimum",
+          "The convergence speed is slow and the computation is large"
+        ],
+        [
+          "Particle swarm optimization",
+          "The training speed is fast, the efficiency is high, and the algorithm is simple",
+          "It is easy to fall into local optimal solution and poor handling of discrete optimization problems"
+        ],
+        [
+          "Simulated annealing algorithm",
+          "Strong global search capability",
+          "Convergence speed is slow and parallel computing is difficult"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Test results of various bus radial distribution systems under different algorithms.",
+      "headers": [
+        "Test <br> System",
+        "Total Load <br> (MVA)",
+        "$\\sum P_{\\text {Loss }}$ without <br> DG (MW)",
+        "Algorithm",
+        "Optimum Place <br> (bus no)",
+        "Optimum Size <br> (MW)",
+        "$\\sum P_{\\text {Loss }}$ <br> (MW)",
+        "Voltage <br> (p.u)"
+      ],
+      "rows": [
+        [
+          12,
+          "$0.435+0.3900 \\mathrm{i}$",
+          0.145,
+          "IEDA",
+          9,
+          0.2335,
+          0.0072,
+          0.992
+        ],
+        [
+          "",
+          "",
+          "",
+          "EDA",
+          9,
+          0.2378,
+          0.0073,
+          0.993
+        ],
+        [
+          "",
+          "",
+          "",
+          "GA",
+          9,
+          0.2385,
+          0.0074,
+          0.991
+        ],
+        [
+          34,
+          "$4.6365+2.8735 \\mathrm{i}$",
+          0.1638,
+          "IEDA",
+          21,
+          2.9506,
+          0.066,
+          0.968
+        ],
+        [
+          "",
+          "",
+          "",
+          "EDA",
+          21,
+          3.0023,
+          0.068,
+          0.969
+        ],
+        [
+          "",
+          "",
+          "",
+          "GA",
+          21,
+          3.0112,
+          0.07,
+          0.967
+        ],
+        [
+          69,
+          "$3.8021+2.6945 \\mathrm{i}$",
+          0.2254,
+          "IEDA",
+          61,
+          1.8705,
+          0.082,
+          0.9815
+        ],
+        [
+          "",
+          "",
+          "",
+          "EDA",
+          61,
+          2.0661,
+          0.085,
+          0.9835
+        ],
+        [
+          "",
+          "",
+          "",
+          "GA",
+          61,
+          2.0845,
+          0.087,
+          0.9775
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 8
+    }
+  ]
+}

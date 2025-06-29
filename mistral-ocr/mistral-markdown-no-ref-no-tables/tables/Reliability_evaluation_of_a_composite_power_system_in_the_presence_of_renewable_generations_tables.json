@@ -1,0 +1,540 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Reliability evaluation of a composite power system in the presence of renewable generations.md",
+    "filename": "Reliability evaluation of a composite power system in the presence of renewable generations.md",
+    "title": "Reliability evaluation of a composite power system in the presence of renewable generations",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Acronyms",
+        ""
+      ],
+      "rows": [
+        [
+          "MCS",
+          "Monte-Carlo simulation"
+        ],
+        [
+          "EDA",
+          "estimation of distribution algorithm"
+        ],
+        [
+          "WF (WT)",
+          "wind farm (wind turbine)"
+        ],
+        [
+          "PV",
+          "photovoltaic"
+        ],
+        [
+          "PDF",
+          "probability distribution functions"
+        ],
+        [
+          "PBIL",
+          "population-based incremental learning"
+        ],
+        [
+          "RES",
+          "renewable energy resource"
+        ],
+        [
+          "LHS",
+          "latin hypercube sampling"
+        ],
+        [
+          "ESS",
+          "energy storage system"
+        ],
+        [
+          "ARIMA",
+          "autoregressive integrated moving average"
+        ],
+        [
+          "SHyFTA",
+          "stochastic hybrid fault tree automaton"
+        ],
+        [
+          "OPF",
+          "optimal power flow"
+        ],
+        [
+          "SRCC",
+          "Spearman's rank correlation coefficient"
+        ],
+        [
+          "LOLE",
+          "loss of load expectation"
+        ],
+        [
+          "EENS",
+          "expected energy not supplied"
+        ],
+        [
+          "AENS",
+          "average energy not supplied"
+        ],
+        [
+          "PLC",
+          "probability of load curtailment"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "A binary array of a system state.",
+      "headers": [
+        "PV2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "PV1",
+        "",
+        "",
+        "",
+        "WF2",
+        "",
+        "",
+        "",
+        "WF1",
+        "",
+        "Conventional generators and transmission lines",
+        ""
+      ],
+      "rows": [
+        [
+          81,
+          80,
+          79,
+          78,
+          77,
+          76,
+          75,
+          74,
+          73,
+          72,
+          71,
+          70,
+          69,
+          68,
+          "$\\ldots$",
+          3,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          "$\\ldots$",
+          0,
+          1,
+          0
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 18
+    },
+    {
+      "table_number": "2",
+      "table_title": "SRCC for wind speed (solar irradiation) and the corresponding output powers.",
+      "headers": [
+        "SRCC for wind speed (solar irradiation)",
+        "0.2",
+        "0.5",
+        "0.9"
+      ],
+      "rows": [
+        [
+          "SRCC for WF (PV system) output power",
+          0.1828,
+          0.4622,
+          0.8698
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "State probability values of output powers of dependent WFs (PVs) 1 and 2 [10].",
+      "headers": [
+        "Output Power (MW)",
+        "Probability table of WF (PV) capacity",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          11,
+          22,
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "$\\mathrm{Rv}=0.2$",
+          "$\\mathrm{Rv}=0.5$",
+          "$\\mathrm{Rv}=0.9$"
+        ],
+        [
+          0,
+          0.3293,
+          0.331,
+          0.3313,
+          0.335
+        ],
+        [
+          20,
+          0.112,
+          0.1148,
+          0.113,
+          0.1107
+        ],
+        [
+          40,
+          0.0893,
+          0.0826,
+          0.0876,
+          0.0848
+        ],
+        [
+          60,
+          0.0697,
+          0.0682,
+          0.0678,
+          0.0684
+        ],
+        [
+          80,
+          0.0557,
+          0.0633,
+          0.0575,
+          0.0546
+        ],
+        [
+          100,
+          0.0472,
+          0.046,
+          0.0463,
+          0.0475
+        ],
+        [
+          120,
+          0.0407,
+          0.0363,
+          0.0397,
+          0.0403
+        ],
+        [
+          140,
+          0.0315,
+          0.0342,
+          0.0342,
+          0.0321
+        ],
+        [
+          160,
+          0.0303,
+          0.0284,
+          0.027,
+          0.03
+        ],
+        [
+          180,
+          0.1063,
+          0.1061,
+          0.1063,
+          0.1058
+        ],
+        [
+          200,
+          0.0882,
+          0.0891,
+          0.0894,
+          0.0908
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Comparison of computational efficiency of two scenarios in Case 1.",
+      "headers": [
+        "",
+        "N states",
+        "CPU time (s)",
+        "Time ratio"
+      ],
+      "rows": [
+        [
+          1,
+          100000,
+          72,
+          "$100 \\%$"
+        ],
+        [
+          2,
+          28555,
+          43,
+          "$45.60 \\%$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Reliability indices in Case 1.",
+      "headers": [
+        "Index",
+        "Value",
+        "Failure events of the <br> generation system",
+        "Combination failure of generation <br> and transmission systems"
+      ],
+      "rows": [
+        [
+          "PLC",
+          0.04744,
+          0.04217,
+          0.00527
+        ],
+        [
+          "EENS",
+          67362,
+          65350,
+          2012
+        ],
+        [
+          "LOLE",
+          34021,
+          33005,
+          1016
+        ],
+        [
+          "AENS",
+          630.74,
+          544.58,
+          76.16
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Results of the reliability evaluation in Case 2.",
+      "headers": [
+        "Index",
+        "Value",
+        "Failure events of <br> the generation <br> system",
+        "Failure events of <br> the transmission <br> system",
+        "N states",
+        "Time <br> (s)"
+      ],
+      "rows": [
+        [
+          "PLC",
+          0.02371,
+          0.02298,
+          0.00073,
+          100000,
+          57
+        ],
+        [
+          "EENS",
+          59871,
+          58016,
+          1855,
+          "",
+          ""
+        ],
+        [
+          "LOLE",
+          33452,
+          32991,
+          461,
+          "",
+          ""
+        ],
+        [
+          "AENS",
+          498.92,
+          483.461,
+          15.46,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Results of the reliability evaluation in Case 3.",
+      "headers": [
+        "Index",
+        "Value",
+        "Failure events <br> of the <br> generation <br> system",
+        "Failure events of <br> the transmission <br> system",
+        "N states",
+        "Time <br> (s)"
+      ],
+      "rows": [
+        [
+          "PLC",
+          0.02977,
+          0.0294,
+          0.00032,
+          "$10,000,000$",
+          5560
+        ],
+        [
+          "EENS",
+          72312,
+          70.938,
+          1373.9,
+          "",
+          ""
+        ],
+        [
+          "LOLE",
+          44872,
+          44154,
+          717.95,
+          "",
+          ""
+        ],
+        [
+          "AENS",
+          602.6,
+          595.97,
+          6.628,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "8",
+      "table_title": "Results of the reliability evaluation in Case 4.",
+      "headers": [
+        "Index",
+        "Value",
+        "Failure events <br> of the <br> generation <br> system",
+        "Failure events of <br> the transmission <br> system",
+        "N states",
+        "Time <br> (s)"
+      ],
+      "rows": [
+        [
+          "PLC",
+          0.0284,
+          0.0279,
+          0.000539,
+          "$7,771,125$",
+          626
+        ],
+        [
+          "EENS",
+          71789,
+          70999,
+          789.67,
+          "",
+          ""
+        ],
+        [
+          "LOLE",
+          43999,
+          43260,
+          739.18,
+          "",
+          ""
+        ],
+        [
+          "AENS",
+          598.24,
+          591.65,
+          6.58,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "9",
+      "table_title": "Results of the reliability evaluation in Case 5.",
+      "headers": [
+        "Index",
+        "Value",
+        "Failure events <br> of the <br> generation <br> system",
+        "Failure events of <br> the transmission <br> system",
+        "N states",
+        "Time <br> (s)"
+      ],
+      "rows": [
+        [
+          "PLC",
+          0.0157,
+          0.014,
+          0.0017,
+          "$7,450,138$",
+          433
+        ],
+        [
+          "EENS",
+          62.734,
+          58.984,
+          3750,
+          "",
+          ""
+        ],
+        [
+          "LOLE",
+          17817,
+          15674,
+          2143,
+          "",
+          ""
+        ],
+        [
+          "AENS",
+          522.78,
+          491,
+          31.78,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    }
+  ]
+}

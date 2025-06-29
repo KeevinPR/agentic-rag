@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/Traffic Signal Optimization with Estimation of Distribution Algorithms and VISSIM-MATLAB Integrated Simulation Platform.md",
+    "filename": "Traffic Signal Optimization with Estimation of Distribution Algorithms and VISSIM-MATLAB Integrated Simulation Platform.md",
+    "title": "Traffic Signal Optimization with Estimation of Distribution Algorithms and VISSIM-MATLAB Integrated Simulation Platform",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Solution Encoding of Two Intersections",
+      "headers": [
+        "",
+        "Intersection 1",
+        "",
+        "",
+        "",
+        "",
+        "Intersection 2",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Phase",
+          1,
+          2,
+          3,
+          4,
+          1,
+          2,
+          3,
+          4,
+          ""
+        ],
+        [
+          "Duration (s)",
+          40,
+          24,
+          33,
+          28,
+          35,
+          48,
+          25,
+          36,
+          ""
+        ],
+        [
+          "Solution",
+          "$(40,24,33,28,35,48,25,36)$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 10
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Algorithm 1. Steps of $\\mathrm{mEDA}_{\\text {ve }}$",
+        ""
+      ],
+      "rows": [
+        [
+          1.0,
+          "Initialize population size $p$, selection ratio $\\tau$;"
+        ],
+        [
+          2.0,
+          "Set $t=0$, randomly generate $p$ solutions to initialize $\\boldsymbol{P}$;"
+        ],
+        [
+          3.0,
+          "Set $\\boldsymbol{P}=$ rounding $(\\boldsymbol{P})$ and evaluate the solutions in $\\boldsymbol{P}$ using VISSIM;"
+        ],
+        [
+          4.0,
+          "Set $\\boldsymbol{S}^{\\prime} \\leftarrow$ the best $\\lfloor\\tau p\\rfloor$ solutions in $\\boldsymbol{P}$;"
+        ],
+        [
+          5.0,
+          "Estimate $\\hat{\\boldsymbol{\\mu}}^{\\prime}, \\hat{\\boldsymbol{\\Delta}}^{\\prime}$ according to $\\boldsymbol{S}^{\\prime}$ and (1)-(4);"
+        ],
+        [
+          6.0,
+          "Build a univariate Gaussian model based on $\\hat{\\boldsymbol{\\mu}}^{\\prime}$ and $\\hat{\\boldsymbol{\\Delta}}^{\\prime}$;"
+        ],
+        [
+          7.0,
+          "Generate $p-2$ new solutions by sampling from the model and store them into $\\boldsymbol{A}^{\\prime}$"
+        ],
+        [
+          8.0,
+          "Set $\\boldsymbol{P}^{t-1} \\leftarrow \\boldsymbol{A}^{\\prime} \\cup\\left\\{\\boldsymbol{S}_{t, \\boldsymbol{\\mu}^{\\prime}}^{t}, \\hat{\\boldsymbol{\\mu}}^{\\prime}\\right\\}, t \\leftarrow t+1$;"
+        ],
+        [
+          9.0,
+          3
+        ],
+        [
+          10.0,
+          "Output the best solution."
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Algorithm 2. Steps of mEDA-VWH",
+        ""
+      ],
+      "rows": [
+        [
+          1.0,
+          "Initialize population size $p$, number of bins $M$;"
+        ],
+        [
+          2.0,
+          "Set $t=0$, randomly generate $p$ solutions to initialize $\\boldsymbol{P}$;"
+        ],
+        [
+          3.0,
+          "Set $\\boldsymbol{P}=$ rounding $(\\boldsymbol{P})$ and evaluate the solutions in $\\boldsymbol{P}$ using VISSIM;"
+        ],
+        [
+          4.0,
+          "Build a VWH model based on $\\boldsymbol{P}$ according to (5)-(9);"
+        ],
+        [
+          5.0,
+          "Generate $p$ new solutions by sampling from the model and store them into $\\boldsymbol{Q}$"
+        ],
+        [
+          6.0,
+          "Set $\\boldsymbol{Q}^{t}=$ rounding $(\\boldsymbol{Q})$ and evaluate the solutions in $\\boldsymbol{Q}$ using VISSIM;"
+        ],
+        [
+          7.0,
+          "Select the best $p$ solutions in $\\boldsymbol{P}$ and $\\boldsymbol{Q}$ and store them into $\\boldsymbol{P}^{t-1}$;"
+        ],
+        [
+          8.0,
+          4
+        ],
+        [
+          9.0,
+          "Output the best solution."
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    }
+  ]
+}

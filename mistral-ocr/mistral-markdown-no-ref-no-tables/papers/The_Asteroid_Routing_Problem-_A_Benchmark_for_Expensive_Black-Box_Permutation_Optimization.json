@@ -1,0 +1,454 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/The Asteroid Routing Problem- A Benchmark for Expensive Black-Box Permutation Optimization.md",
+    "filename": "The Asteroid Routing Problem- A Benchmark for Expensive Black-Box Permutation Optimization.md",
+    "title": "The Asteroid Routing Problem- A Benchmark for Expensive Black-Box Permutation Optimization",
+    "year": "2022"
+  },
+  "references": {
+    "header": "# References",
+    "content": "1. Bartz-Beielstein, T., Zaefferer, M.: Model-based methods for continuous and discrete global optimization. Appl. Soft Comput. 55, 154-167 (2017). https://doi. org/10.1016/j.asoc. 2017.01.039\n2. Cano Rodríguez, J.L., et al.: poliastro: astrodynamics in Python. Zenodo (2015). https://doi.org/10.5281/zenodo. 174\n3. European Space Agency: Hera Mission. https://wwww.esa.int/Safety_Security/ Hera/Hera (2019). Accessed 22 Nov 2021\n4. European Space Agency: Science \\& Exploration: Asteroids. https://www.esa. int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/Asteroids (2021). Accessed 22 Nov 2021\n5. Goldstein, H.: Classical Mechanics. Addison-Wesley (1980)\n6. Irurozki, E., López-Ibáñez, M.: Unbalanced mallows models for optimizing expensive black-box permutation problems. In: Proceedings of GECCO (2021). https:// doi.org/10.1145/3449639.3459366\n7. Izzo, D.: Revisiting Lambert's problem. arXiv 1403.2705 [astro-ph.EP] (2014)\n8. Knowles, J., Corne, D., Reynolds, A.: Noisy multiobjective optimization on a budget of 250 evaluations. In: Ehrgott, M., Fonseca, C.M., Gandibleux, X., Hao, J.-K., Sevaux, M. (eds.) EMO 2009. LNCS, vol. 5467, pp. 36-50. Springer, Heidelberg (2009). https://doi.org/10.1007/978-3-642-01020-0_8\n\n9. Cáceres, L.P., López-Ibáñez, M., Stützle, T.: Ant colony optimization on a limited budget of evaluations. Swarm Intell. 103-124 (2015). https://doi.org/10.1007/ s11721-015-0106-x\n10. Virtanen, P., et al.: SciPy 1.0: fundamental algorithms for scientific computing in Python. Nat. Meth. 17, 261-272 (2020). https://doi.org/10.1038/s41592-019-0686-2\n11. Zaefferer, M., Stork, J., Friese, M., Fischbach, A., Naujoks, B., Bartz-Beielstein, T.: Efficient global optimization for combinatorial problems. In: Proceedings of GECCO, pp. 871-878 (2014). https://doi.org/10.1145/2576768.2598282",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Bartz-Beielstein, T., Zaefferer, M.: Model-based methods for continuous and discrete global optimization. Appl. Soft Comput. 55, 154-167 (2017). https://doi. org/10.1016/j.asoc. 2017.01.039"
+      },
+      {
+        "ref_id": "2",
+        "text": "Cano Rodríguez, J.L., et al.: poliastro: astrodynamics in Python. Zenodo (2015). https://doi.org/10.5281/zenodo. 174"
+      },
+      {
+        "ref_id": "3",
+        "text": "European Space Agency: Hera Mission. https://wwww.esa.int/Safety_Security/ Hera/Hera (2019). Accessed 22 Nov 2021"
+      },
+      {
+        "ref_id": "4",
+        "text": "European Space Agency: Science \\& Exploration: Asteroids. https://www.esa. int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/Asteroids (2021). Accessed 22 Nov 2021"
+      },
+      {
+        "ref_id": "5",
+        "text": "Goldstein, H.: Classical Mechanics. Addison-Wesley (1980)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Irurozki, E., López-Ibáñez, M.: Unbalanced mallows models for optimizing expensive black-box permutation problems. In: Proceedings of GECCO (2021). https:// doi.org/10.1145/3449639.3459366"
+      },
+      {
+        "ref_id": "7",
+        "text": "Izzo, D.: Revisiting Lambert's problem. arXiv 1403.2705 [astro-ph.EP] (2014)"
+      },
+      {
+        "ref_id": "8",
+        "text": "Knowles, J., Corne, D., Reynolds, A.: Noisy multiobjective optimization on a budget of 250 evaluations. In: Ehrgott, M., Fonseca, C.M., Gandibleux, X., Hao, J.-K., Sevaux, M. (eds.) EMO 2009. LNCS, vol. 5467, pp. 36-50. Springer, Heidelberg (2009). https://doi.org/10.1007/978-3-642-01020-0_8"
+      },
+      {
+        "ref_id": "9",
+        "text": "Cáceres, L.P., López-Ibáñez, M., Stützle, T.: Ant colony optimization on a limited budget of evaluations. Swarm Intell. 103-124 (2015). https://doi.org/10.1007/ s11721-015-0106-x"
+      },
+      {
+        "ref_id": "10",
+        "text": "Virtanen, P., et al.: SciPy 1.0: fundamental algorithms for scientific computing in Python. Nat. Meth. 17, 261-272 (2020). https://doi.org/10.1038/s41592-019-0686-2"
+      },
+      {
+        "ref_id": "11",
+        "text": "Zaefferer, M., Stork, J., Friese, M., Fischbach, A., Naujoks, B., Bartz-Beielstein, T.: Efficient global optimization for combinatorial problems. In: Proceedings of GECCO, pp. 871-878 (2014). https://doi.org/10.1145/2576768.2598282"
+      }
+    ],
+    "reference_count": 11,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Objective value of the best solution found by each algorithm in a single run. Mean (and standard deviation) over 30 independent runs. RS denotes random search.",
+      "headers": [
+        "Instance",
+        "CEGO",
+        "",
+        "",
+        "",
+        "UMM",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Order",
+          "",
+          "Rank",
+          "",
+          "Order",
+          "",
+          "Rank",
+          "",
+          "RS"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 10
+    },
+    {
+      "table_number": "2",
+      "table_title": "p-values of a Wilcoxon sumrank test of all the hypotheses checked in during the experimental study for each instance of the problem. Columns two and three correspond to a test comparing the two representations (rank and order) for CEGO and UMM in a black-box setting. The fourth column compares the best black-box UMM (using ranking) with the best black-box CEGO (using order). The final two columns compare UMM-ranking and CEGO-order in a black-box versus informed settings (including the greedy initialization).",
+      "headers": [
+        "",
+        "Rank vs. Order",
+        "",
+        "CEGO-order",
+        "Greedy vs. BB",
+        ""
+      ],
+      "rows": [
+        [
+          "Instance",
+          "CEGO",
+          "UMM",
+          "vs. UMM-rank",
+          "UMM",
+          "CEGO"
+        ],
+        [
+          10.42,
+          "$6.46 \\mathrm{e}-03$",
+          "$2.00 \\mathrm{e}-06$",
+          "$4.48 \\mathrm{e}-02$",
+          "$2.65 \\mathrm{e}-02$",
+          "$1.18 \\mathrm{e}-01$"
+        ],
+        [
+          10.73,
+          "$2.37 \\mathrm{e}-03$",
+          "$1.33 \\mathrm{e}-02$",
+          "$7.07 \\mathrm{e}-04$",
+          "$8.34 \\mathrm{e}-07$",
+          "$1.65 \\mathrm{e}-02$"
+        ],
+        [
+          15.42,
+          "$3.77 \\mathrm{e}-05$",
+          "$6.12 \\mathrm{e}-04$",
+          "$5.14 \\mathrm{e}-02$",
+          "$2.95 \\mathrm{e}-11$",
+          "$1.72 \\mathrm{e}-12$"
+        ],
+        [
+          15.73,
+          "$3.35 \\mathrm{e}-01$",
+          "$2.75 \\mathrm{e}-04$",
+          "$1.50 \\mathrm{e}-01$",
+          "$6.52 \\mathrm{e}-09$",
+          "$3.69 \\mathrm{e}-10$"
+        ],
+        [
+          20.42,
+          "$1.42 \\mathrm{e}-02$",
+          "$8.01 \\mathrm{e}-03$",
+          "$2.74 \\mathrm{e}-03$",
+          "$2.41 \\mathrm{e}-05$",
+          "$3.25 \\mathrm{e}-07$"
+        ],
+        [
+          20.73,
+          "$7.75 \\mathrm{e}-01$",
+          "$4.67 \\mathrm{e}-01$",
+          "$2.22 \\mathrm{e}-03$",
+          "$2.84 \\mathrm{e}-11$",
+          "$2.31 \\mathrm{e}-11$"
+        ],
+        [
+          25.42,
+          "$3.71 \\mathrm{e}-02$",
+          "$7.74 \\mathrm{e}-05$",
+          "$3.45 \\mathrm{e}-02$",
+          "$3.02 \\mathrm{e}-11$",
+          "$4.04 \\mathrm{e}-11$"
+        ],
+        [
+          25.73,
+          "$4.46 \\mathrm{e}-02$",
+          "$1.77 \\mathrm{e}-01$",
+          "$5.43 \\mathrm{e}-04$",
+          "$2.26 \\mathrm{e}-11$",
+          "$2.84 \\mathrm{e}-11$"
+        ],
+        [
+          30.42,
+          "$5.43 \\mathrm{e}-04$",
+          "$4.11 \\mathrm{e}-03$",
+          "$1.30 \\mathrm{e}-05$",
+          "$2.95 \\mathrm{e}-11$",
+          "$3.02 \\mathrm{e}-11$"
+        ],
+        [
+          30.73,
+          "$6.12 \\mathrm{e}-01$",
+          "$3.71 \\mathrm{e}-02$",
+          "$1.83 \\mathrm{e}-02$",
+          "$2.78 \\mathrm{e}-11$",
+          "$3.00 \\mathrm{e}-11$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Objective value of the best solution found by each algorithm in a single run. For CEGO and UMM, the values are the mean (and standard deviation) over 30 independent runs.",
+      "headers": [
+        "",
+        "",
+        "CEGO",
+        "",
+        "",
+        "",
+        "UMM",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Inst",
+          "GreedyNN",
+          "Order",
+          "",
+          "Ord + Greedy",
+          "",
+          "Rank",
+          "",
+          "Rank + Greedy",
+          ""
+        ],
+        [
+          10.42,
+          391.3,
+          379.3,
+          "$(17.5)$",
+          374.9,
+          "$(6.9)$",
+          388.7,
+          "$(20.8)$",
+          382.4,
+          "$(1.1)$"
+        ],
+        [
+          10.73,
+          398.3,
+          346.0,
+          "$(17.7)$",
+          355.9,
+          "$(18.3)$",
+          361.4,
+          "$(18.9)$",
+          385.0,
+          "$(6.4)$"
+        ],
+        [
+          15.42,
+          508.1,
+          575.1,
+          "$(29.2)$",
+          497.2,
+          "$(1.1)$",
+          594.6,
+          "$(37.7)$",
+          501.7,
+          "$(3.8)$"
+        ],
+        [
+          15.73,
+          576.4,
+          582.4,
+          "$(33.1)$",
+          525.6,
+          "$(4.7)$",
+          595.3,
+          "$(32.6)$",
+          545.0,
+          "$(9.3)$"
+        ],
+        [
+          20.42,
+          841.7,
+          806.2,
+          "$(45.2)$",
+          737.0,
+          "$(31.0)$",
+          841.6,
+          "$(43.7)$",
+          797.6,
+          "$(28.3)$"
+        ],
+        [
+          20.73,
+          691.5,
+          839.2,
+          "$(49.8)$",
+          661.8,
+          "$(7.8)$",
+          876.8,
+          "$(32.7)$",
+          684.7,
+          "$(6.1)$"
+        ],
+        [
+          25.42,
+          946.3,
+          1048.8,
+          "$(51.2)$",
+          881.5,
+          "$(23.3)$",
+          1076.9,
+          "$(48.5)$",
+          921.7,
+          "$(15.2)$"
+        ],
+        [
+          25.73,
+          918.3,
+          1069.1,
+          "$(49.5)$",
+          873.6,
+          "$(15.3)$",
+          1115.5,
+          "$(45.5)$",
+          911.9,
+          "$(10.0)$"
+        ],
+        [
+          30.42,
+          1131.7,
+          1272.2,
+          "$(65.8)$",
+          1084.6,
+          "$(13.4)$",
+          1347.3,
+          "$(35.6)$",
+          1115.4,
+          "$(11.0)$"
+        ],
+        [
+          30.73,
+          1024.7,
+          1320.9,
+          "$(63.2)$",
+          967.7,
+          "$(17.9)$",
+          1360.6,
+          "$(51.1)$",
+          1017.3,
+          "$(6.9)$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 10
+    },
+    {
+      "table_number": "4",
+      "table_title": "Mean CPU-time (minutes) of a single run of each algorithm.",
+      "headers": [
+        "Instance",
+        "GreedyNN",
+        "CEGO",
+        "",
+        "UMM",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Order",
+          "Ord + Greedy",
+          "Rank",
+          "Rank + Greedy"
+        ],
+        [
+          10.42,
+          0.1,
+          2365.4,
+          2147.8,
+          26.0,
+          26.2
+        ],
+        [
+          10.73,
+          0.1,
+          2372.9,
+          2365.3,
+          24.2,
+          25.7
+        ],
+        [
+          15.42,
+          0.1,
+          2445.9,
+          2394.1,
+          34.5,
+          32.4
+        ],
+        [
+          15.73,
+          0.1,
+          2375.6,
+          2404.2,
+          35.5,
+          36.2
+        ],
+        [
+          20.42,
+          0.2,
+          2411.4,
+          2348.4,
+          47.8,
+          48.7
+        ],
+        [
+          20.73,
+          0.2,
+          2223.9,
+          2387.4,
+          48.2,
+          50.8
+        ],
+        [
+          25.42,
+          0.2,
+          2338.1,
+          2452.5,
+          59.4,
+          58.9
+        ],
+        [
+          25.73,
+          0.2,
+          2397.3,
+          2657.6,
+          47.3,
+          60.3
+        ],
+        [
+          30.42,
+          0.2,
+          2375.9,
+          2553.7,
+          61.9,
+          69.1
+        ],
+        [
+          30.73,
+          0.2,
+          2138.3,
+          2611.0,
+          56.0,
+          67.4
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 6
+    }
+  ]
+}

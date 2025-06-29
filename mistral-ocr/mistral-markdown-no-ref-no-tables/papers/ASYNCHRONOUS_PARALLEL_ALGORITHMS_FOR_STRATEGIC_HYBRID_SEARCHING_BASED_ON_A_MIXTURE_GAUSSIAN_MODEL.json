@@ -1,0 +1,621 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/ASYNCHRONOUS PARALLEL ALGORITHMS FOR STRATEGIC HYBRID SEARCHING BASED ON A MIXTURE GAUSSIAN MODEL.md",
+    "filename": "ASYNCHRONOUS PARALLEL ALGORITHMS FOR STRATEGIC HYBRID SEARCHING BASED ON A MIXTURE GAUSSIAN MODEL.md",
+    "title": "ASYNCHRONOUS PARALLEL ALGORITHMS FOR STRATEGIC HYBRID SEARCHING BASED ON A MIXTURE GAUSSIAN MODEL",
+    "year": "2014"
+  },
+  "references": {
+    "header": "# REFERENCES",
+    "content": "[1] C. Li and S. Yang, An island based hybrid evolutionary algorithm for optimization, Lecture Notes in Computer Science, Simulated Evolution and Learning, vol.5361, pp.180-189, 2008.\n[2] T. Nikam, B. Amiri, J. Olamaei and A. Arefi, An efficient hybrid evolutionary optimization algorithm based on PSO and SA for clustering, JZU SC. A, vol.4, pp.512-519, 2008.\n[3] T. Tometzki and S. Engelli, Hybrid evolutionary optimization of two-stage stochastic integer programming problems, Evolutionary Computation, Winter, vol.17, no.4, pp.511-526, 2009.\n[4] C. Grosan and A. Abraham, Hybrid evolutionary algorithms: Methodologies, architectures, and reviews, Hybrid Evolutionary Algorithms, pp.1-17, 2007.\n[5] R. Salomon, Re-evaluating genetic algorithm performance under coordinate rotation of benchmark functions. A survey of some theoretical and practical aspects of genetic algorithms, ELSEVIER, Biosystems, vol.39, pp.263-278, 1996.\n[6] H. Mühlenbein and G. Paaß, From recombination in genes to the estimation of distribution I, Binary parameters, Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature, pp.178187, 1996.\n[7] L. Davis, Handbook of Genetic Algorithms, Van Nostrand Reinhold, New York, 1991.\n[8] J. Ocenasek, Parallel Estimation of Distribution Algorithms, Ph.D. Thesis, Brno University of Technology, 2002.\n[9] A. Mendiburu-Alberro, Parallel Implementation of Estimation of Distribution Algorithms Based on Probabilistic Graphical Models. Application to Chemical Calibration Models, Ph.D. Thesis, The University of the Basque Country, 2006.\n[10] S. S. Abdelwahed, M. F. Hassan and M. A. Sultan, Parallel asynchronous algorithms for optimal control of large scale dynamic systems, J. Optimal Control Applications and Methods, vol.18, no.4, pp.257-271, 1997.\n[11] M. Golub and L. Budin, An asynchronous model of global parallel genetic algorithms, The 2nd ICSC Symposium on Engineering of Intelligent Systems EIS2000, pp.353-359, 2000.\n[12] S. M. Said and M. Nakamura, A hierarchical hybrid evolutionary algorithm for continuous function optimization, International Journal of Next Generation Computing, vol.3, pp.13-28, 2012.\n[13] S. M. Said and M. Nakamura, Parallel enhanced hybrid evolutionary algorithm for continuous function optimization, Proc. of the 7th International Conference on P2P, Parallel, Grid, Cloud and Internet Computing, pp.125-131, 2012.\n[14] S. M. Said and M. Nakamura, Asynchronous strategy of parallel hybrid approach of GA and EDA for function optimization, Proc. of the 3rd International Conference on Networking and Computing ICNC'12, WCOP3, pp.420-428, 2012.\n[15] J. MacQueen, Some methods for classification and analysis of multivariate observations, Proc. of the 5th Berkeley Symposium on Mathematical Statistics and Probability, pp.281-297, 1967.\n\n[16] N. Hansen, A. Auger, S. Finck and R. Ros, Real-parameter black-box optimization benchmarking 2010: Experimental setup, INRIA, no.RR-7215, 2009.\n[17] J. H. Holland, Adaptation in Nature and Artificial Systems, The University of Michigan Press, Reprinted by MIT Press, 1972.\n[18] E. K. Prebys, The genetic algorithm in computer science, MIT Undergrad. J. Math, pp.165-170, 2007.\n[19] P. Larrañaga and J. A. Lozano, Estimation of Distribution Algorithms, Kluwer Academic Publishers, 2002.\n[20] H. Mühlenbein, The equation for response to selection and its use for prediction, Evolutionary Computation, vol.5, pp.303-346, 1997.\n[21] S. Baluja, Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning, Technical Report CMU-CS-94-163, Carnegie Mellon University, 1994.\n[22] M. Sebag and A. Ducoulombier, Extending population-based incremental learning to continuous search spaces, Proc. of Parallel Problem Solving from Nature PPSN V, pp.418-427, 1998.\n[23] C. Gagne and M. Parizeau, A robust master-slave distribution architecture for evolutionary computations, Proc. of Genetic and Evolutionary Computation Conference Late Breaking, pp.80-87, 2003.\n[24] Y. Gong and M. Nakamura, Migration effects of parallel genetic algorithms on line topologies of heterogeneous computing resources, IECE Transactions on Fundamentals of Electronics, Communication and Computer Sciences, vol.E91-A(4), pp.1121-1128, 2008.\n[25] J. C. Bezdek and N. R. Pal, Some new indexes of cluster validity, IEEE Trans. on Syst. Man. Cybern, vol.28, pp.301-315, 1998.\n[26] G. W. Milligan, Clustering validation: Results and implications for applied analyses, in Clustering and Classification, P. Arabie, L. J. Hubert and G. De Soete (eds.), Singapore, World Scientific, 1996.\n[27] G. W. Milligan and M. C. Cooper, An examination of procedures for determining the number of clusters in a data set, Psychometrika, vol.50, pp.159-179, 1985.\n[28] S. Ray and R. H. Turi, Determination of number of clusters in $K$-means clustering and application in colour image segmentation, Proc. of the 4th International Conference on Advances in Pattern Recognition and Digital Techniques, pp.137-143, 1999.\n[29] N. Hansen, S. Finck, R. Ros and A. Auger, Real-parameter black-box optimization benchmarking 2009: Noiseless functions definitions, INRIA, no.RR-6829, 2009.\n[30] T. M. Mitchell, Machine Learning, McGraw Hill, 1995.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "C. Li and S. Yang, An island based hybrid evolutionary algorithm for optimization, Lecture Notes in Computer Science, Simulated Evolution and Learning, vol.5361, pp.180-189, 2008."
+      },
+      {
+        "ref_id": "2",
+        "text": "T. Nikam, B. Amiri, J. Olamaei and A. Arefi, An efficient hybrid evolutionary optimization algorithm based on PSO and SA for clustering, JZU SC. A, vol.4, pp.512-519, 2008."
+      },
+      {
+        "ref_id": "3",
+        "text": "T. Tometzki and S. Engelli, Hybrid evolutionary optimization of two-stage stochastic integer programming problems, Evolutionary Computation, Winter, vol.17, no.4, pp.511-526, 2009."
+      },
+      {
+        "ref_id": "4",
+        "text": "C. Grosan and A. Abraham, Hybrid evolutionary algorithms: Methodologies, architectures, and reviews, Hybrid Evolutionary Algorithms, pp.1-17, 2007."
+      },
+      {
+        "ref_id": "5",
+        "text": "R. Salomon, Re-evaluating genetic algorithm performance under coordinate rotation of benchmark functions. A survey of some theoretical and practical aspects of genetic algorithms, ELSEVIER, Biosystems, vol.39, pp.263-278, 1996."
+      },
+      {
+        "ref_id": "6",
+        "text": "H. Mühlenbein and G. Paaß, From recombination in genes to the estimation of distribution I, Binary parameters, Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature, pp.178187, 1996."
+      },
+      {
+        "ref_id": "7",
+        "text": "L. Davis, Handbook of Genetic Algorithms, Van Nostrand Reinhold, New York, 1991."
+      },
+      {
+        "ref_id": "8",
+        "text": "J. Ocenasek, Parallel Estimation of Distribution Algorithms, Ph.D. Thesis, Brno University of Technology, 2002."
+      },
+      {
+        "ref_id": "9",
+        "text": "A. Mendiburu-Alberro, Parallel Implementation of Estimation of Distribution Algorithms Based on Probabilistic Graphical Models. Application to Chemical Calibration Models, Ph.D. Thesis, The University of the Basque Country, 2006."
+      },
+      {
+        "ref_id": "10",
+        "text": "S. S. Abdelwahed, M. F. Hassan and M. A. Sultan, Parallel asynchronous algorithms for optimal control of large scale dynamic systems, J. Optimal Control Applications and Methods, vol.18, no.4, pp.257-271, 1997."
+      },
+      {
+        "ref_id": "11",
+        "text": "M. Golub and L. Budin, An asynchronous model of global parallel genetic algorithms, The 2nd ICSC Symposium on Engineering of Intelligent Systems EIS2000, pp.353-359, 2000."
+      },
+      {
+        "ref_id": "12",
+        "text": "S. M. Said and M. Nakamura, A hierarchical hybrid evolutionary algorithm for continuous function optimization, International Journal of Next Generation Computing, vol.3, pp.13-28, 2012."
+      },
+      {
+        "ref_id": "13",
+        "text": "S. M. Said and M. Nakamura, Parallel enhanced hybrid evolutionary algorithm for continuous function optimization, Proc. of the 7th International Conference on P2P, Parallel, Grid, Cloud and Internet Computing, pp.125-131, 2012."
+      },
+      {
+        "ref_id": "14",
+        "text": "S. M. Said and M. Nakamura, Asynchronous strategy of parallel hybrid approach of GA and EDA for function optimization, Proc. of the 3rd International Conference on Networking and Computing ICNC'12, WCOP3, pp.420-428, 2012."
+      },
+      {
+        "ref_id": "15",
+        "text": "J. MacQueen, Some methods for classification and analysis of multivariate observations, Proc. of the 5th Berkeley Symposium on Mathematical Statistics and Probability, pp.281-297, 1967."
+      },
+      {
+        "ref_id": "16",
+        "text": "N. Hansen, A. Auger, S. Finck and R. Ros, Real-parameter black-box optimization benchmarking 2010: Experimental setup, INRIA, no.RR-7215, 2009."
+      },
+      {
+        "ref_id": "17",
+        "text": "J. H. Holland, Adaptation in Nature and Artificial Systems, The University of Michigan Press, Reprinted by MIT Press, 1972."
+      },
+      {
+        "ref_id": "18",
+        "text": "E. K. Prebys, The genetic algorithm in computer science, MIT Undergrad. J. Math, pp.165-170, 2007."
+      },
+      {
+        "ref_id": "19",
+        "text": "P. Larrañaga and J. A. Lozano, Estimation of Distribution Algorithms, Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "20",
+        "text": "H. Mühlenbein, The equation for response to selection and its use for prediction, Evolutionary Computation, vol.5, pp.303-346, 1997."
+      },
+      {
+        "ref_id": "21",
+        "text": "S. Baluja, Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning, Technical Report CMU-CS-94-163, Carnegie Mellon University, 1994."
+      },
+      {
+        "ref_id": "22",
+        "text": "M. Sebag and A. Ducoulombier, Extending population-based incremental learning to continuous search spaces, Proc. of Parallel Problem Solving from Nature PPSN V, pp.418-427, 1998."
+      },
+      {
+        "ref_id": "23",
+        "text": "C. Gagne and M. Parizeau, A robust master-slave distribution architecture for evolutionary computations, Proc. of Genetic and Evolutionary Computation Conference Late Breaking, pp.80-87, 2003."
+      },
+      {
+        "ref_id": "24",
+        "text": "Y. Gong and M. Nakamura, Migration effects of parallel genetic algorithms on line topologies of heterogeneous computing resources, IECE Transactions on Fundamentals of Electronics, Communication and Computer Sciences, vol.E91-A(4), pp.1121-1128, 2008."
+      },
+      {
+        "ref_id": "25",
+        "text": "J. C. Bezdek and N. R. Pal, Some new indexes of cluster validity, IEEE Trans. on Syst. Man. Cybern, vol.28, pp.301-315, 1998."
+      },
+      {
+        "ref_id": "26",
+        "text": "G. W. Milligan, Clustering validation: Results and implications for applied analyses, in Clustering and Classification, P. Arabie, L. J. Hubert and G. De Soete (eds.), Singapore, World Scientific, 1996."
+      },
+      {
+        "ref_id": "27",
+        "text": "G. W. Milligan and M. C. Cooper, An examination of procedures for determining the number of clusters in a data set, Psychometrika, vol.50, pp.159-179, 1985."
+      },
+      {
+        "ref_id": "28",
+        "text": "S. Ray and R. H. Turi, Determination of number of clusters in $K$-means clustering and application in colour image segmentation, Proc. of the 4th International Conference on Advances in Pattern Recognition and Digital Techniques, pp.137-143, 1999."
+      },
+      {
+        "ref_id": "29",
+        "text": "N. Hansen, S. Finck, R. Ros and A. Auger, Real-parameter black-box optimization benchmarking 2009: Noiseless functions definitions, INRIA, no.RR-6829, 2009."
+      },
+      {
+        "ref_id": "30",
+        "text": "T. M. Mitchell, Machine Learning, McGraw Hill, 1995."
+      }
+    ],
+    "reference_count": 30,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "BBOB functions",
+      "headers": [
+        "F",
+        "Name",
+        "Formula"
+      ],
+      "rows": [
+        [
+          "$f_{4}$",
+          "Büche-Rastrigin",
+          "$f_{4}(x)=10\\left(D-\\sum_{i=1}^{D} \\cos \\left(2 \\pi z_{i}\\right)\\right)+\\sum_{i=1}^{D} z_{i}{ }^{2}+100 f_{\\text {pen }}(x)+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{6}$",
+          "Attractive Sector",
+          "$f_{6}(x)=T_{\\text {acc }}\\left(\\sum_{i=1}^{D}\\left(s_{i} z_{i}\\right)^{2}\\right)^{0.9}+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{8}$",
+          "Rosenbrock, original",
+          "$f_{8}(x)=\\sum_{i=1}^{D-1}\\left(100\\left(z_{i}^{2}-z_{i+1}\\right)^{2}+\\left(z_{i}-1\\right)^{2}\\right)+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{9}$",
+          "Rosenbrock, rotated",
+          "$f_{9}(x)=\\sum_{i=1}^{D-1}\\left(100\\left(z_{i}^{2}-z_{i+1}\\right)^{2}+\\left(z_{i}-1\\right)^{2}\\right)+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{10}$",
+          "Ellipsoidal",
+          "$f_{10}(x)=\\sum_{i=1}^{D} 10^{6} \\frac{\\text { area }}{D-z} z_{i}{ }^{2}+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{11}$",
+          "Discus",
+          "$f_{11}=10^{6} z_{1}{ }^{2}+\\sum_{i=2}^{D} z_{i}{ }^{2}+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{12}$",
+          "Bent Cigar",
+          "$f_{12}(x)=z_{1}{ }^{2}+10^{6} \\sum_{i=2}^{D} z_{i}{ }^{2}+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{13}$",
+          "Sharp Ridge",
+          "$f_{13}(x)=z_{1}{ }^{2}+100 \\sqrt{\\left(\\sum_{i=2}^{D} z_{i}{ }^{2}\\right)}+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{14}$",
+          "Different Powers",
+          "$f_{14}(x)=\\sqrt{\\left(\\sum_{i=1}^{D} \\mid z_{i}\\right)^{2+4 \\frac{1}{D-z}}}$ ) $+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{16}$",
+          "Weierstrass",
+          "$f_{16}(x)=10\\left(\\frac{1}{2} \\sum_{i=1}^{D} \\sum_{k=0}^{D} 1 / 2^{k} \\cos \\left(2 \\pi 3^{k}\\left(z_{i}+1 / 2\\right)\\right)-f_{0}\\right)^{2}+\\frac{10}{25} f_{\\text {pen }}(x)+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{17}$",
+          7,
+          "$f_{17}(x)=\\left(\\frac{1}{D-1} \\sum_{i=1}^{D-1} \\sqrt{s_{i}}+\\sqrt{s_{i}} \\sin ^{2}\\left(50 s_{i}{ }^{1 / 5}\\right)\\right)^{2}+10 f_{\\text {pen }}(x)+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{18}$",
+          71000,
+          "$f_{18}(x)=\\left(\\frac{1}{D-1} \\sum_{i=1}^{D-1} \\sqrt{s_{i}}+\\sqrt{s_{i}} \\sin ^{2}\\left(50 s_{i}{ }^{1 / 5}\\right)\\right)^{2}+10 f_{\\text {pen }}(x)+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{19}$",
+          -82,
+          "$f_{19}(x)=\\frac{10}{D-1} \\sum_{i=1}^{D-1}\\left(\\frac{1}{1000}-\\cos \\left(s_{i}\\right)\\right)+10+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{21}$",
+          "Gallagher 101-me Peaks",
+          "$f_{21}(x)=T_{\\text {acc }}\\left(10-\\frac{10}{1000} x w_{i} \\exp \\left(-\\frac{1}{2 D}\\left(x-y_{i}\\right)^{\\mathbf{T}} \\mathbf{R}^{\\mathbf{T}} \\mathbf{C}_{i} \\mathbf{R}\\left(x-y_{i}\\right)\\right)\\right)^{2}+f_{\\text {pen }}(x)+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{22}$",
+          "Gallagher 21-hi Peaks",
+          "$f_{22}(x)=T_{\\text {acc }}\\left(10-\\frac{1}{1000} w_{i} \\exp \\left(-\\frac{1}{2 D}\\left(x-y_{i}\\right)^{\\mathbf{T}} \\mathbf{R}^{\\mathbf{T}} \\mathbf{C}_{i} \\mathbf{R}\\left(x-y_{i}\\right)\\right)\\right)^{2}+f_{\\text {pen }}(x)+f_{\\text {opt }}$"
+        ],
+        [
+          "$f_{24}$",
+          "Lunacek bi-Rastrigin",
+          "$f_{24}(x)=\\min \\left(\\sum_{i=1}^{D}\\left(\\hat{x}_{i}-\\mu_{0}\\right)^{2}, d D+s \\sum_{i=1}^{D}\\left(\\hat{x}_{i}-\\mu_{i}\\right)^{2}\\right)+10\\left(D-\\sum_{i=1}^{D} \\cos \\left(2 \\pi z_{i}\\right)\\right)+10^{3} f_{\\text {pen }}(x)$"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Number of successfully solved functions ( $\\mathrm{Max}=24$ )",
+      "headers": [
+        "DIMENSION",
+        "2",
+        "3",
+        "5",
+        "10",
+        "20",
+        "40"
+      ],
+      "rows": [
+        [
+          "SH",
+          20,
+          11,
+          9,
+          3,
+          1,
+          0
+        ],
+        [
+          "AH",
+          22,
+          15,
+          10,
+          3,
+          1,
+          0
+        ],
+        [
+          "eAH",
+          "$\\mathbf{2 3}$",
+          "$\\mathbf{1 8}$",
+          "$\\mathbf{1 2}$",
+          "$\\mathbf{6}$",
+          "$\\mathbf{3}$",
+          "$\\mathbf{1}$"
+        ],
+        [
+          "pGA",
+          17,
+          9,
+          4,
+          1,
+          0,
+          0
+        ],
+        [
+          "pUMDAc",
+          5,
+          3,
+          2,
+          1,
+          1,
+          "$\\mathbf{1}$"
+        ],
+        [
+          "pPBILc",
+          8,
+          4,
+          4,
+          1,
+          1,
+          "$\\mathbf{1}$"
+        ],
+        [
+          "sGA",
+          20,
+          12,
+          5,
+          1,
+          0,
+          0
+        ],
+        [
+          "sUMDAc",
+          6,
+          3,
+          2,
+          1,
+          1,
+          "$\\mathbf{1}$"
+        ],
+        [
+          "sPBILc",
+          8,
+          4,
+          4,
+          1,
+          1,
+          "$\\mathbf{1}$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 summarizes the results on the ability of algorithms to reach the target value in all dimensions. Listed in the table is the number of functions for which an algorithm successfully reached the target value $f_{\\mathrm{t}}$. The table suggests that the ability of algorithms to solve functions decreases with an increase in dimension. Bolded values mark the highest number of successfully-solved functions in each dimension. The results also show that eAH is better able to solve many of the functions in all dimensions than other algorithms. Although the difference is not large between AH and SH algorithms, we will analyze the cause of this small difference in the following subsections. Non-strategic approaches generally gave poor performance, as shown by the table, since they were able to successfully solve only a few of the 24 functions in all dimensions. The algorithms pGA and sGA performed well in dimensions 2 and 3 compared with other non-strategic algorithms.",
+      "headers": [
+        "ALGORITHM",
+        "SH",
+        "AH",
+        "eAH",
+        "pUMDAc",
+        "pPBILc",
+        "pGA",
+        "sUMDAc",
+        "sPBILc",
+        "sGA"
+      ],
+      "rows": [
+        [
+          "Computation Time (\\%)",
+          50.82,
+          49.77,
+          48.69,
+          52.95,
+          51.31,
+          52.12,
+          60.21,
+          59.19,
+          100
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 10
+    },
+    {
+      "table_number": "4",
+      "table_title": "Solution quality comparison in dimension 5",
+      "headers": [
+        "ALG",
+        "",
+        "$f_{1}$",
+        "$f_{7}$",
+        "$f_{12}$",
+        "$f_{19}$",
+        "$f_{22}$"
+      ],
+      "rows": [
+        [
+          "SH",
+          "AVG",
+          "3.5619E-09",
+          "5.8020E-02",
+          "1.8506E-01",
+          "8.6209E-02",
+          "5.1524E-02"
+        ],
+        [
+          "",
+          "MIN",
+          "1.3195E-09",
+          "1.2031E-09",
+          "4.6595E-03",
+          "2.5394E-02",
+          "1.9348E-07"
+        ],
+        [
+          "",
+          "STDEV",
+          "2.1450E-09",
+          "8.9749E-02",
+          "3.3509E-1",
+          "5.1667E-02",
+          "1.7745E-01"
+        ],
+        [
+          "AH",
+          "AVG",
+          "2.5700E-09",
+          "8.4467E-02",
+          "7.5223E-02",
+          "1.2613E-01",
+          "2.2398E-03"
+        ],
+        [
+          "",
+          "MIN",
+          "3.0880E-10",
+          "3.6630E-10",
+          "1.2058E-04",
+          "2.3562E-02",
+          "2.2508E-07"
+        ],
+        [
+          "",
+          "STDEV",
+          "1.8572E-09",
+          "1.9095E-01",
+          "8.5335E-02",
+          "6.1482E-02",
+          "6.4706E-03"
+        ],
+        [
+          "eAH",
+          "AVG",
+          "2.5360E-09",
+          "1.9661E-03",
+          "1.5160E-02",
+          "7.0060E-02",
+          "8.9911E-05"
+        ],
+        [
+          "",
+          "MIN",
+          "7.8040E-10",
+          "1.4970E-10",
+          "1.9397E-05",
+          "1.4944E-02",
+          "8.1141E-09"
+        ],
+        [
+          "",
+          "STDEV",
+          "1.7561E-09",
+          "5.3856E-03",
+          "1.7336E-02",
+          "3.6636E-02",
+          "1.8403E-04"
+        ],
+        [
+          "pGA",
+          "AVG",
+          "2.14499E-08",
+          "1.0424E-01",
+          "8.4906E-02",
+          "1.5332E-01",
+          "2.4834E-03"
+        ],
+        [
+          "",
+          "MIN",
+          "3.5901E-09",
+          "9.9537E-03",
+          "2.5819E-03",
+          "6.7322E-02",
+          "2.8590E-09"
+        ],
+        [
+          "",
+          "STDEV",
+          "2.2057E-08",
+          "1.0271E-01",
+          "7.7475E-02",
+          "5.6923E-02",
+          "6.7231E-03"
+        ],
+        [
+          "pUMDAc",
+          "AVG",
+          "1.5817E-04",
+          1.7513,
+          3.035601,
+          "2.1024E-02",
+          1.715001
+        ],
+        [
+          "",
+          "MIN",
+          "7.3161E-05",
+          "3.7411E-08",
+          6.9705,
+          "6.6291E-03",
+          "8.7747E-07"
+        ],
+        [
+          "",
+          "STDEV",
+          "7.4731E-05",
+          1.6203,
+          1.413201,
+          "5.6148E-03",
+          1.666601
+        ],
+        [
+          "pPBILc",
+          "AVG",
+          "1.0873E-04",
+          "3.5251E-01",
+          4.731701,
+          "3.1755E-03",
+          1.466701
+        ],
+        [
+          "",
+          "MIN",
+          "1.3532E-05",
+          "5.9970E-10",
+          5.9737,
+          "4.3874E-04",
+          "1.1461E-08"
+        ],
+        [
+          "",
+          "STDEV",
+          "1.0447E-04",
+          "9.7806E-01",
+          3.289901,
+          "1.7521E-03",
+          1.681401
+        ],
+        [
+          "sGA",
+          "AVG",
+          "4.6528E-09",
+          "1.1643E-01",
+          "1.4250E-01",
+          "1.0919E-01",
+          "1.2684E-03"
+        ],
+        [
+          "",
+          "MIN",
+          "3.8410E-10",
+          "5.8984E-03",
+          "3.0856E-03",
+          "2.6584E-2",
+          "4.6275E-08"
+        ],
+        [
+          "",
+          "STDEV",
+          "2.6029E-09",
+          "1.3988E-01",
+          "2.2171E-01",
+          "5.0943E-02",
+          "3.9949E-03"
+        ],
+        [
+          "sUMDAc",
+          "AVG",
+          "2.1956E-04",
+          2.7514,
+          3.756501,
+          "2.0360E-02",
+          1.706201
+        ],
+        [
+          "",
+          "MIN",
+          "1.2584E-04",
+          "1.3055E-01",
+          4.5708,
+          "7.9231E-03",
+          "9.7095E-07"
+        ],
+        [
+          "",
+          "STDEV",
+          "6.5895E-05",
+          3.0673,
+          1.936301,
+          "5.2269E-03",
+          1.659501
+        ],
+        [
+          "sPBILc",
+          "AVG",
+          "1.8239E-04",
+          "2.6681E-01",
+          5.283101,
+          "2.1273E-03",
+          1.405501
+        ],
+        [
+          "",
+          "MIN",
+          "1.0757E-04",
+          "1.5362E-09",
+          1.277401,
+          "4.4938E-05",
+          "1.9641E-08"
+        ],
+        [
+          "",
+          "STDEV",
+          "7.4661E-05",
+          "7.8501E-01",
+          2.719201,
+          "2.3145E-03",
+          1.711601
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 7
+    }
+  ]
+}

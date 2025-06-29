@@ -1,0 +1,422 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/A novel memetic algorithm for constrained optimization.md",
+    "filename": "A novel memetic algorithm for constrained optimization.md",
+    "title": "A novel memetic algorithm for constrained optimization",
+    "year": "2010"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] T. Runarsson and X. Yao, \"Stochastic ranking for constrained evolutionary optimization,\" IEEE Transactions on Evolutionary Computation, vol. 4, no. 3, pp. 284-294, 2002.\n[2] C. Fonseca and P. Fleming, \"Multiobjective optimization and multiple constrained handling with evolutionary algorithms- part i: A unified formulation,\" IEEE Transactions on Systems, Man and Cybernetics, Part A: Systems and Humans, vol. 28, no. 1, pp. 26-37, 1998.\n[3] E. Mezura-Montes and C. Coello, \"A survey of constraint-handling techniques based on evolutionary multiobjective optimization,\" in PPSN workshop on Multiobjective Problem Solving from Nature, 2006.\n\n![img-6.jpeg](img-6.jpeg)\n(a) The success rate and number of cycles against the population size when $\\alpha=0.0$.\n![img-7.jpeg](img-7.jpeg)\n(c) The interactions of $M$ and $\\alpha$ in terms of NCs.\n![img-6.jpeg](img-6.jpeg)\n(b) The interactions of $M$ and $\\alpha$ in terms of NFEs.\n![img-7.jpeg](img-7.jpeg)\n(d) The mean NFEs and cycles against $\\alpha$.\n\nFig. 3. The study of the interactions of the algorithmic parameters $M$ and $\\alpha$ to the performance of the MCEA. (a) is the success rate and the number of cycles used when $\\alpha=0.0$; (b) shows the results in terms of the NFEs; (c) is the results in terms of the number of cycles; (d) shows the mean NFEs and cycles w.r.t. different $\\alpha$.\n![img-6.jpeg](img-6.jpeg)\n(a) The interactions of $M$ and $k$ in terms of NFEs.\n![img-7.jpeg](img-7.jpeg)\n(b) The interactions of $M$ and $k$ in terms of NCs.\n\nFig. 4. The study of the interactions of the algorithmic parameters $M$ and $k$ to the performance of the MCEA. (a) shows the results in terms of the NFEs; (b) is the results in terms of the number of cycles.\n[4] Y. Wang, Z. Cai, Y. Zhou, and W. Zeng, \"An adaptive tradeoff model for constrained evolutionary optimization,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 1, pp. 80-92, 2008.\n[5] Z. Michalewicz and M. Schoenauer, \"Evolutionary algorithms for constrained parameter optimization problems,\" Evolutionary Computation, vol. 4, no. 1, pp. 1-32, 1996.\n[6] C. Coello, \"Theoretical and numerical constraint-handling techniques used with evolutionary algorithms: A survey of the state of the art,\" Computer Methods in Applied Mechanics and Engineering, vol. 191, no. 11-12, pp. 1245-1287, 2002.\n[7] E. Mezura-Montes and C. Coello, Evolutionary Multiobjective Optimization, ser. Advanced Information and Knowledge Processing. Springer Berlin Heidelberg, 2005, ch. Use of Multiobjective Opti-\nmization Concepts to Handle Constraints in Genetic Algorithms, pp. 229-254.\n[8] E. Mezura-Montes, Ed., Constraint-Handling in Evolutionary Optimization, ser. Studies in Computational Intelligence Series. Springer, 2009, vol. 198.\n[9] T. Takahama and S. Sakai, \"Constrained optimization by $\\alpha$ constrained genetic algorithm (cga),\" Systems and Computers in Japan, vol. 35, no. 5, pp. 11-22, 2004.\n[10] J.-H. Kim and H. Myung, \"Evolutionary programming techniques for constrained optimization problems,\" IEEE Transactions on Evolutionary Computation, vol. 1, no. 2, pp. 129-140, 1997.\n[11] T. Takahama and S. Sakai, Constraint-Handling in Evolutionary Optimization, ser. Studies in Computational Intelligence. Springer\n\nBerlin / Heidelberg, 2009, vol. 198, ch. Solving Difficult Constrained Optimization Problems by the $\\varepsilon$ Constrained Differential Evolution with Gradient-Based Mutation, pp. 51-72.\n[12] A. El-Gallad, M. El-Hawary, and A. Sallam, \"Swarming of intelligent particles for solving the nonlinear constrained optimization problem,\" Engineering Intelligent Systems for Electrical Engineering and Communications, vol. 9, no. 3, pp. 155-163, 2001.\n[13] R. Hinterding and Z. Michalewicz, \"Your brains and my beauty: Parent matching for constrained optimization,\" in Proceedings of the 5th International Conference on Evolutionary Computation, 1998, pp. 810-815.\n[14] G. Bilchev and I. Parmee, \"Constrained and multi-modal optimization with an ant colony search model,\" in Proceedings of the 2nd International Conference on Adaptive Computing in Engineering Design and Control, I. Parmee and M. Denham, Eds., University of Plymouth, Plymouth, UK, March 1996.\n[15] P. Hajela and J. Yoo, \"Constrained genetic search via schema adaptation: An immune network solution,\" Structural Optimization, vol. 12, pp. 11-15, 1996.\n[16] R. Becerra and C. Coello, \"Cultured differential evolution for constrained optimization,\" Computer Methods in Applied Mechanics and Engineering, vol. 195, no. 33-36, pp. 4303-4322, 2005.\n[17] F. Guo, G. Cai, and H. Liu, ICONIP 2006, Part III, ser. Lecture Notes in Computer Science. Springer-Verlag Berlin Heidelberg, 2006, vol. 4234, ch. Integration of Genetic Algorithm and Cultural Algorithms for Constrained Optimization, pp. 817-825.\n[18] P. Larrafraga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer Academic Publishers, 2002.\n[19] J. Grahl and F. Rothlauf, \"PolyEDA: Combining estimation of distribution algorithms and linear inequality constraints,\" in GECCO, 2004, pp. 1174-1185.\n[20] H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. Binary parameters,\" in Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature - PPSN IV, 1996, pp. 178-187.\n[21] M. Sebag and A. Ducoulombier, \"Extending population-based incremental learning to continuos search spaces,\" in Parallel Problem Solving from Nature - PPSN V. Springer-Verlag, 1998, pp. 418-427, berlin.\n[22] T. V. Le, \"A fuzzy evolutionary approach to constrained optimization problems,\" in Proceedings of the second IEEE Conference on Evolutionary Computation. Perth: IEEE, November 1995, pp. 274-278.\n[23] C.-J. Chung and R. Reynolds, \"A testbed for solving optimization problems using culture algorithms,\" in Evolutionary Programming V: Proceedings of the Fifth Annual Conference on Evolutionary Programming. Cambridge, Massachusetts: MIT Press, 1996.\n[24] Z. Michalewicz and C. Janikow, \"Handling constraints in genetic algorithms,\" in Proceedings of the Fourth International Conference on Genetic Algorithms, R. Belew and L. Booker, Eds. San Mateo, California: Morgan Kaufmann Publishers, 1991, pp. 151-157.\n[25] B. Wah and Y. Chen, \"Hybrid constrained simulated annealing and genetic algorithms fornonlinear constrained optimization,\" in Proceedings of the 2001 Congress on Evolutionary Computation, vol. 2, 2001, pp. 925-932.\n[26] T. Takahama, S. Sakai, and N. Iwane, AI 2005, ser. LNAI. SpringerVerlag Berlin Heidelberg, 2005, vol. 3809, ch. Constrained Optimization by the $\\varepsilon$ Constrained Hybrid Algorithm of Particle Swarm Optimization and Genetic Algorithm, pp. 389-400.\n[27] N. Krasnogor and J. Smith, \"A tutorial for competent memetic algorithms: Model, taxonomy, and design issues,\" IEEE Transactions on Evolutionary Computation, vol. 9, no. 5, pp. 474-488, 2005.\n[28] Q. Zhang, J. Sun, and E. Tsang, \"Evolutionary algorithm with the guided mutation for the maximum clique problem,\" IEEE Transactions on Evolutionary Computation, vol. 9, no. 2, pp. 192-200, 2005.\n[29] S. Belur, \"CORE: Constrained optimization by random evolution,\" in Late Breaking Papers at the Genetic Programming 1997 Conference, J. Koza, Ed. Stanford University, California: Stanford Bookstore, July 1997, pp. 280-286.\n[30] E. Zahara and C.-H. Hu, \"Solving constrained optimization problems with hybrid particle swarm optimization,\" Engineering Optimization, vol. 40, no. 11, pp. 1031-1049, 2008.\n[31] E. Zahara and Y.-T. Kao, \"Hybrid nelder-mead simplex search and partical swarm optimization for constrained engineering design problems,\" Expert Systems with Applications, vol. 36, pp. 3880-3886, 2009.\n[32] K. Deb, S. Lele, and R. Datta, ISICA 2007, ser. Lecture Notes in Computer Science. Springer-Verlag Berlin Heidelberg, 2007, vol. 4683, ch. A Hybrid Evolutionary Multi-objective and SQP Based Procedure for Constrained Optimization, pp. 36-45.\n[33] H. Myung and J.-H. Kim, Proceedings of the Sixth Annual Conference on Evolutionary Programming, ser. Lecture Notes on Computer Science. Springer-Verlag, 1997, vol. 1231, ch. Evolian: Evolutionary Optimization based on Lagrangian with constraint scaling, pp. 177188.\n[34] C. Pedamallu and L. Ozdamar, \"Investigating a hybrid simulated annealing and local search algorithm for constrained optimization,\" European Journal of Operational Research, vol. 185, pp. 1230-1245, 2006.\n[35] T. Takahama and S. Sakai, \"Constrained optimization by the $\\varepsilon$ constrained differential evolution with gradient-based mutation and feasible elites,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006, pp. 308-315.\n[36] Y. Wang, Z. Cai, Y. Zhou, and Z. Fun, \"Constrained optimization based on hybrid evolutionary algorithm and adaptive constraint-handling technique,\" Struct Multidisc Optim, vol. 37, pp. 295-413, 2009.\n[37] K. D. Jong, \"An analysis of behavior of a class of genetic adaptive systems,\" Ph.D. dissertation, The University of Michigan, Ann Arbor, Michigan., 1975.\n[38] B. Sareni and L. Krahenbuhl, \"Fitness sharing and niching methods revisited,\" IEEE Transactions on In Evolutionary Computation, vol. 2, no. 3, pp. 97-106, 1998.\n[39] P. A. N. Bosman and D. Thierens, \"Expanding from discrete to continuous estimation of distribution algorithms: The IDEA,\" in Parallel Problem Solving from Nature - PPSN VI. Lecture Notes in Computer Science 1917, M. Schoenauer, K. Deb, G. Rudolph, X. Yao, E. Lutton, J. J. Merelo, and H.-P. Schwefel, Eds., 2000, pp. 767-776.\n[40] S. Tsutsui, M. Pelikan, and D. Goldberg, \"Evolutionary algorithm using marginal histogram models in continuous domain,\" in Proc. of the 2001 Genetic and Evolutionary Computation Conference Workshop, San Francisco, CA, 2001, pp. 230-233.\n[41] Q. Zhang, J. Sun, E. Tsang, and J. Ford, \"Hybrid estimation of distribution algorithm for global optimisation,\" Engineering Computations,, vol. 21, no. 1, pp. 91-107, 2003.\n[42] T. Runarsson and X. Yao, \"Search biases in constrained evolutionary optimization,\" IEEE Transactions on Systems, Man and Cybernetics Part C: Applications and Reviews, vol. 35, no. 2, pp. 233-243, 2005.\n[43] P. Spellucci, \"An SQP method for general nonlinear programs using only equality constrained subproblems,\" Math. Prog., vol. 82, pp. 413448, 1998.\n[44] J. Liang, T. Runarsson, E. Mezura-Montes, M. Clerc, P. Suganthan, C. Coello, and K. Deb, \"Problem definitions and evaluation criteria for the CEC 2006 special session on constrained real-parameter optimization,\" Tech. Rep., 2006.\n[45] J. Sun, Q. Zhang, and E. Tsang, \"DE/EDA: A new evolutionary algorithm for global optimisation,\" Information Sciences, vol. 169, no. 3-4, pp. 249-262, 2005.\n[46] V. Huang, A. Qin, and P. Suganthan, \"Self-adaptive differential evolution algorithm for constrained real-parameter optimization,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006.\n[47] M. F. Tasgetiren and P. Suganthan, \"A multi-populated differential evolution algorithm for solving constrained optimization problems,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006.\n[48] S. Kukkonen and J. Lampinen, \"Constrained real-parameter optimization with generalized differential evolution,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006.\n[49] K. Deb, A. Sinha, and S. Aravind, \"A population-based, parent centric procedure for constrained real-parameter optimization,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006.\n[50] J. Liang and P. Suganthan, \"Dynamic multi-swarm particle swarm optimizer with a novel constraint-handling mechanism,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006.\n[51] J. Brest, V. Zumer, and M. Maućec, \"Self-adaptive differential evolution algorithm in constrained real-parameter optimization,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "T. Runarsson and X. Yao, \"Stochastic ranking for constrained evolutionary optimization,\" IEEE Transactions on Evolutionary Computation, vol. 4, no. 3, pp. 284-294, 2002."
+      },
+      {
+        "ref_id": "2",
+        "text": "C. Fonseca and P. Fleming, \"Multiobjective optimization and multiple constrained handling with evolutionary algorithms- part i: A unified formulation,\" IEEE Transactions on Systems, Man and Cybernetics, Part A: Systems and Humans, vol. 28, no. 1, pp. 26-37, 1998."
+      },
+      {
+        "ref_id": "3",
+        "text": "E. Mezura-Montes and C. Coello, \"A survey of constraint-handling techniques based on evolutionary multiobjective optimization,\" in PPSN workshop on Multiobjective Problem Solving from Nature, 2006."
+      },
+      {
+        "ref_id": "4",
+        "text": "Y. Wang, Z. Cai, Y. Zhou, and W. Zeng, \"An adaptive tradeoff model for constrained evolutionary optimization,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 1, pp. 80-92, 2008."
+      },
+      {
+        "ref_id": "5",
+        "text": "Z. Michalewicz and M. Schoenauer, \"Evolutionary algorithms for constrained parameter optimization problems,\" Evolutionary Computation, vol. 4, no. 1, pp. 1-32, 1996."
+      },
+      {
+        "ref_id": "6",
+        "text": "C. Coello, \"Theoretical and numerical constraint-handling techniques used with evolutionary algorithms: A survey of the state of the art,\" Computer Methods in Applied Mechanics and Engineering, vol. 191, no. 11-12, pp. 1245-1287, 2002."
+      },
+      {
+        "ref_id": "7",
+        "text": "E. Mezura-Montes and C. Coello, Evolutionary Multiobjective Optimization, ser. Advanced Information and Knowledge Processing. Springer Berlin Heidelberg, 2005, ch. Use of Multiobjective Opti-"
+      },
+      {
+        "ref_id": "8",
+        "text": "E. Mezura-Montes, Ed., Constraint-Handling in Evolutionary Optimization, ser. Studies in Computational Intelligence Series. Springer, 2009, vol. 198."
+      },
+      {
+        "ref_id": "9",
+        "text": "T. Takahama and S. Sakai, \"Constrained optimization by $\\alpha$ constrained genetic algorithm (cga),\" Systems and Computers in Japan, vol. 35, no. 5, pp. 11-22, 2004."
+      },
+      {
+        "ref_id": "10",
+        "text": "J.-H. Kim and H. Myung, \"Evolutionary programming techniques for constrained optimization problems,\" IEEE Transactions on Evolutionary Computation, vol. 1, no. 2, pp. 129-140, 1997."
+      },
+      {
+        "ref_id": "11",
+        "text": "T. Takahama and S. Sakai, Constraint-Handling in Evolutionary Optimization, ser. Studies in Computational Intelligence. Springer"
+      },
+      {
+        "ref_id": "12",
+        "text": "A. El-Gallad, M. El-Hawary, and A. Sallam, \"Swarming of intelligent particles for solving the nonlinear constrained optimization problem,\" Engineering Intelligent Systems for Electrical Engineering and Communications, vol. 9, no. 3, pp. 155-163, 2001."
+      },
+      {
+        "ref_id": "13",
+        "text": "R. Hinterding and Z. Michalewicz, \"Your brains and my beauty: Parent matching for constrained optimization,\" in Proceedings of the 5th International Conference on Evolutionary Computation, 1998, pp. 810-815."
+      },
+      {
+        "ref_id": "14",
+        "text": "G. Bilchev and I. Parmee, \"Constrained and multi-modal optimization with an ant colony search model,\" in Proceedings of the 2nd International Conference on Adaptive Computing in Engineering Design and Control, I. Parmee and M. Denham, Eds., University of Plymouth, Plymouth, UK, March 1996."
+      },
+      {
+        "ref_id": "15",
+        "text": "P. Hajela and J. Yoo, \"Constrained genetic search via schema adaptation: An immune network solution,\" Structural Optimization, vol. 12, pp. 11-15, 1996."
+      },
+      {
+        "ref_id": "16",
+        "text": "R. Becerra and C. Coello, \"Cultured differential evolution for constrained optimization,\" Computer Methods in Applied Mechanics and Engineering, vol. 195, no. 33-36, pp. 4303-4322, 2005."
+      },
+      {
+        "ref_id": "17",
+        "text": "F. Guo, G. Cai, and H. Liu, ICONIP 2006, Part III, ser. Lecture Notes in Computer Science. Springer-Verlag Berlin Heidelberg, 2006, vol. 4234, ch. Integration of Genetic Algorithm and Cultural Algorithms for Constrained Optimization, pp. 817-825."
+      },
+      {
+        "ref_id": "18",
+        "text": "P. Larrafraga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "19",
+        "text": "J. Grahl and F. Rothlauf, \"PolyEDA: Combining estimation of distribution algorithms and linear inequality constraints,\" in GECCO, 2004, pp. 1174-1185."
+      },
+      {
+        "ref_id": "20",
+        "text": "H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. Binary parameters,\" in Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature - PPSN IV, 1996, pp. 178-187."
+      },
+      {
+        "ref_id": "21",
+        "text": "M. Sebag and A. Ducoulombier, \"Extending population-based incremental learning to continuos search spaces,\" in Parallel Problem Solving from Nature - PPSN V. Springer-Verlag, 1998, pp. 418-427, berlin."
+      },
+      {
+        "ref_id": "22",
+        "text": "T. V. Le, \"A fuzzy evolutionary approach to constrained optimization problems,\" in Proceedings of the second IEEE Conference on Evolutionary Computation. Perth: IEEE, November 1995, pp. 274-278."
+      },
+      {
+        "ref_id": "23",
+        "text": "C.-J. Chung and R. Reynolds, \"A testbed for solving optimization problems using culture algorithms,\" in Evolutionary Programming V: Proceedings of the Fifth Annual Conference on Evolutionary Programming. Cambridge, Massachusetts: MIT Press, 1996."
+      },
+      {
+        "ref_id": "24",
+        "text": "Z. Michalewicz and C. Janikow, \"Handling constraints in genetic algorithms,\" in Proceedings of the Fourth International Conference on Genetic Algorithms, R. Belew and L. Booker, Eds. San Mateo, California: Morgan Kaufmann Publishers, 1991, pp. 151-157."
+      },
+      {
+        "ref_id": "25",
+        "text": "B. Wah and Y. Chen, \"Hybrid constrained simulated annealing and genetic algorithms fornonlinear constrained optimization,\" in Proceedings of the 2001 Congress on Evolutionary Computation, vol. 2, 2001, pp. 925-932."
+      },
+      {
+        "ref_id": "26",
+        "text": "T. Takahama, S. Sakai, and N. Iwane, AI 2005, ser. LNAI. SpringerVerlag Berlin Heidelberg, 2005, vol. 3809, ch. Constrained Optimization by the $\\varepsilon$ Constrained Hybrid Algorithm of Particle Swarm Optimization and Genetic Algorithm, pp. 389-400."
+      },
+      {
+        "ref_id": "27",
+        "text": "N. Krasnogor and J. Smith, \"A tutorial for competent memetic algorithms: Model, taxonomy, and design issues,\" IEEE Transactions on Evolutionary Computation, vol. 9, no. 5, pp. 474-488, 2005."
+      },
+      {
+        "ref_id": "28",
+        "text": "Q. Zhang, J. Sun, and E. Tsang, \"Evolutionary algorithm with the guided mutation for the maximum clique problem,\" IEEE Transactions on Evolutionary Computation, vol. 9, no. 2, pp. 192-200, 2005."
+      },
+      {
+        "ref_id": "29",
+        "text": "S. Belur, \"CORE: Constrained optimization by random evolution,\" in Late Breaking Papers at the Genetic Programming 1997 Conference, J. Koza, Ed. Stanford University, California: Stanford Bookstore, July 1997, pp. 280-286."
+      },
+      {
+        "ref_id": "30",
+        "text": "E. Zahara and C.-H. Hu, \"Solving constrained optimization problems with hybrid particle swarm optimization,\" Engineering Optimization, vol. 40, no. 11, pp. 1031-1049, 2008."
+      },
+      {
+        "ref_id": "31",
+        "text": "E. Zahara and Y.-T. Kao, \"Hybrid nelder-mead simplex search and partical swarm optimization for constrained engineering design problems,\" Expert Systems with Applications, vol. 36, pp. 3880-3886, 2009."
+      },
+      {
+        "ref_id": "32",
+        "text": "K. Deb, S. Lele, and R. Datta, ISICA 2007, ser. Lecture Notes in Computer Science. Springer-Verlag Berlin Heidelberg, 2007, vol. 4683, ch. A Hybrid Evolutionary Multi-objective and SQP Based Procedure for Constrained Optimization, pp. 36-45."
+      },
+      {
+        "ref_id": "33",
+        "text": "H. Myung and J.-H. Kim, Proceedings of the Sixth Annual Conference on Evolutionary Programming, ser. Lecture Notes on Computer Science. Springer-Verlag, 1997, vol. 1231, ch. Evolian: Evolutionary Optimization based on Lagrangian with constraint scaling, pp. 177188."
+      },
+      {
+        "ref_id": "34",
+        "text": "C. Pedamallu and L. Ozdamar, \"Investigating a hybrid simulated annealing and local search algorithm for constrained optimization,\" European Journal of Operational Research, vol. 185, pp. 1230-1245, 2006."
+      },
+      {
+        "ref_id": "35",
+        "text": "T. Takahama and S. Sakai, \"Constrained optimization by the $\\varepsilon$ constrained differential evolution with gradient-based mutation and feasible elites,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006, pp. 308-315."
+      },
+      {
+        "ref_id": "36",
+        "text": "Y. Wang, Z. Cai, Y. Zhou, and Z. Fun, \"Constrained optimization based on hybrid evolutionary algorithm and adaptive constraint-handling technique,\" Struct Multidisc Optim, vol. 37, pp. 295-413, 2009."
+      },
+      {
+        "ref_id": "37",
+        "text": "K. D. Jong, \"An analysis of behavior of a class of genetic adaptive systems,\" Ph.D. dissertation, The University of Michigan, Ann Arbor, Michigan., 1975."
+      },
+      {
+        "ref_id": "38",
+        "text": "B. Sareni and L. Krahenbuhl, \"Fitness sharing and niching methods revisited,\" IEEE Transactions on In Evolutionary Computation, vol. 2, no. 3, pp. 97-106, 1998."
+      },
+      {
+        "ref_id": "39",
+        "text": "P. A. N. Bosman and D. Thierens, \"Expanding from discrete to continuous estimation of distribution algorithms: The IDEA,\" in Parallel Problem Solving from Nature - PPSN VI. Lecture Notes in Computer Science 1917, M. Schoenauer, K. Deb, G. Rudolph, X. Yao, E. Lutton, J. J. Merelo, and H.-P. Schwefel, Eds., 2000, pp. 767-776."
+      },
+      {
+        "ref_id": "40",
+        "text": "S. Tsutsui, M. Pelikan, and D. Goldberg, \"Evolutionary algorithm using marginal histogram models in continuous domain,\" in Proc. of the 2001 Genetic and Evolutionary Computation Conference Workshop, San Francisco, CA, 2001, pp. 230-233."
+      },
+      {
+        "ref_id": "41",
+        "text": "Q. Zhang, J. Sun, E. Tsang, and J. Ford, \"Hybrid estimation of distribution algorithm for global optimisation,\" Engineering Computations,, vol. 21, no. 1, pp. 91-107, 2003."
+      },
+      {
+        "ref_id": "42",
+        "text": "T. Runarsson and X. Yao, \"Search biases in constrained evolutionary optimization,\" IEEE Transactions on Systems, Man and Cybernetics Part C: Applications and Reviews, vol. 35, no. 2, pp. 233-243, 2005."
+      },
+      {
+        "ref_id": "43",
+        "text": "P. Spellucci, \"An SQP method for general nonlinear programs using only equality constrained subproblems,\" Math. Prog., vol. 82, pp. 413448, 1998."
+      },
+      {
+        "ref_id": "44",
+        "text": "J. Liang, T. Runarsson, E. Mezura-Montes, M. Clerc, P. Suganthan, C. Coello, and K. Deb, \"Problem definitions and evaluation criteria for the CEC 2006 special session on constrained real-parameter optimization,\" Tech. Rep., 2006."
+      },
+      {
+        "ref_id": "45",
+        "text": "J. Sun, Q. Zhang, and E. Tsang, \"DE/EDA: A new evolutionary algorithm for global optimisation,\" Information Sciences, vol. 169, no. 3-4, pp. 249-262, 2005."
+      },
+      {
+        "ref_id": "46",
+        "text": "V. Huang, A. Qin, and P. Suganthan, \"Self-adaptive differential evolution algorithm for constrained real-parameter optimization,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006."
+      },
+      {
+        "ref_id": "47",
+        "text": "M. F. Tasgetiren and P. Suganthan, \"A multi-populated differential evolution algorithm for solving constrained optimization problems,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006."
+      },
+      {
+        "ref_id": "48",
+        "text": "S. Kukkonen and J. Lampinen, \"Constrained real-parameter optimization with generalized differential evolution,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006."
+      },
+      {
+        "ref_id": "49",
+        "text": "K. Deb, A. Sinha, and S. Aravind, \"A population-based, parent centric procedure for constrained real-parameter optimization,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006."
+      },
+      {
+        "ref_id": "50",
+        "text": "J. Liang and P. Suganthan, \"Dynamic multi-swarm particle swarm optimizer with a novel constraint-handling mechanism,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006."
+      },
+      {
+        "ref_id": "51",
+        "text": "J. Brest, V. Zumer, and M. Maućec, \"Self-adaptive differential evolution algorithm in constrained real-parameter optimization,\" in 2006 IEEE Congress on Evolutionary Computation, Vancouver, BC, Canada, 2006."
+      }
+    ],
+    "reference_count": 51,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "COMPARISON RESULTS BETWEEN THE MCEA, THE WINNER OF THE CEC2006 competition $\\varepsilon-$ DE, AND THE BEST RESULTS Obtained BY THE ALGORITHMS APPEARED IN THE CEC 2006.",
+      "headers": [
+        "function",
+        "MCEA",
+        "",
+        "",
+        "$\\varepsilon-$ DE",
+        "Best (Alg.)"
+      ],
+      "rows": [
+        [
+          "",
+          "min",
+          "mean",
+          "max",
+          "",
+          ""
+        ],
+        [
+          "$g_{01}$",
+          4166,
+          7859,
+          20237,
+          59309,
+          25115
+        ],
+        [
+          "$g_{02}$",
+          8033,
+          45555,
+          111784,
+          149827,
+          96222
+        ],
+        [
+          "$g_{03}$",
+          2207,
+          3673,
+          9551,
+          89407,
+          24861
+        ],
+        [
+          "$g_{04}$",
+          1021,
+          1201,
+          1891,
+          26216,
+          15281
+        ],
+        [
+          "$g_{05}$",
+          722,
+          834,
+          1160,
+          97430,
+          21306
+        ],
+        [
+          "$g_{06}$",
+          346,
+          489,
+          850,
+          7381,
+          5202
+        ],
+        [
+          "$g_{07}$",
+          2685,
+          3588,
+          4921,
+          74304,
+          26578
+        ],
+        [
+          "$g_{08}$",
+          649,
+          1068,
+          2035,
+          1139,
+          918
+        ],
+        [
+          "$g_{09}$",
+          1483,
+          1632,
+          1852,
+          23121,
+          16152
+        ],
+        [
+          "$g_{10}$",
+          3928,
+          17319,
+          82377,
+          105234,
+          25520
+        ],
+        [
+          "$g_{11}$",
+          346,
+          362,
+          392,
+          16420,
+          3000
+        ],
+        [
+          "$g_{12}$",
+          324,
+          348,
+          434,
+          4124,
+          1308
+        ],
+        [
+          "$g_{13}$",
+          1118,
+          6595,
+          48287,
+          31096,
+          21723
+        ],
+        [
+          "$g_{14}$",
+          2230,
+          8012,
+          34465,
+          113439,
+          25220
+        ],
+        [
+          "$g_{15}$",
+          375,
+          477,
+          826,
+          83655,
+          10458
+        ],
+        [
+          "$g_{16}$",
+          1096,
+          7092,
+          24627,
+          19122,
+          8730
+        ],
+        [
+          "$g_{17}$",
+          20845,
+          86721,
+          274511,
+          98860,
+          26364
+        ],
+        [
+          "$g_{18}$",
+          4724,
+          11095,
+          25979,
+          59153,
+          28261
+        ],
+        [
+          "$g_{19}$",
+          5223,
+          13355,
+          19629,
+          356350,
+          21830
+        ],
+        [
+          "$g_{21}$",
+          2654,
+          18488,
+          56676,
+          135142,
+          38217
+        ],
+        [
+          "$g_{23}$",
+          2832,
+          5141,
+          11970,
+          200763,
+          129550
+        ],
+        [
+          "$g_{24}$",
+          346,
+          425,
+          1357,
+          2952,
+          "1,794 (jDE-2)"
+        ]
+      ],
+      "row_count": 23,
+      "column_count": 6
+    }
+  ]
+}

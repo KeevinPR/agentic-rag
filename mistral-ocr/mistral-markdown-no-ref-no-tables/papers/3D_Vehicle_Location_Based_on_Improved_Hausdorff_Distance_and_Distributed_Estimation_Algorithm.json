@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/3D Vehicle Location Based on Improved Hausdorff Distance and Distributed Estimation Algorithm.md",
+    "filename": "3D Vehicle Location Based on Improved Hausdorff Distance and Distributed Estimation Algorithm.md",
+    "title": "3D Vehicle Location Based on Improved Hausdorff Distance and Distributed Estimation Algorithm",
+    "year": "2009"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] D. Koller, K. Daniilidis, and H.-H. Nagel, \"Model-based object tracking in monocular image sequences of road traffic scenes\", Int. J. Computer Vision, 1993, 10, pp. 257-281.\n[2] Lou, T. Tan, W. Hu, H. Yang, and S. J. Maybank. \"3-d model-based vehicle tracking\", IEEE Transaction on Image Processing, 2005, 14(10), pp. 1561-1569.\n[3] Dubuisson M P, Jain A K. \"A modified Hausdorff distance for object matching\", In: Proceedings of 12th International Conference on Pattern recognition, Jerusalem, Israel, 1994, pp. 566-568.\n[4] Ying Chen, Chongzhao Han. \"New robust Hausdorff distance-based vehicle location\", Academic Journal of Xi'an Jiaotong University, 2004, 16(2), pp. 122-126.\n[5] Rafael C. Gonzalez, Richard E. Woods, and Steven L. Eddins. Digital Image Processing. 2rd ed. Beijing: Publishing house of electronics industry, 2007.\n[6] Yang Yi-du. Numerical computation method. Beijing: High education press, 2008.\n[7] Heinz'uhlenbein and G. Paaß. \"From recombination of genes to the estimation of distributions i. binary parameters\", In: Proceedings of the 4th International Conference on Parallel Problem Solving from Nature, 1996, 1141, pp. 178-187.\n[8] Pedro Larrañaga, José A. Lozano. Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2001.\n[9] Ying Chen, Chongzhao Han. \"Maneuvering vehicle tracking based on multi-sensor fusion\", Acta Automatica Sinica, 2005, 31(4), pp. 625-630.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "D. Koller, K. Daniilidis, and H.-H. Nagel, \"Model-based object tracking in monocular image sequences of road traffic scenes\", Int. J. Computer Vision, 1993, 10, pp. 257-281."
+      },
+      {
+        "ref_id": "2",
+        "text": "Lou, T. Tan, W. Hu, H. Yang, and S. J. Maybank. \"3-d model-based vehicle tracking\", IEEE Transaction on Image Processing, 2005, 14(10), pp. 1561-1569."
+      },
+      {
+        "ref_id": "3",
+        "text": "Dubuisson M P, Jain A K. \"A modified Hausdorff distance for object matching\", In: Proceedings of 12th International Conference on Pattern recognition, Jerusalem, Israel, 1994, pp. 566-568."
+      },
+      {
+        "ref_id": "4",
+        "text": "Ying Chen, Chongzhao Han. \"New robust Hausdorff distance-based vehicle location\", Academic Journal of Xi'an Jiaotong University, 2004, 16(2), pp. 122-126."
+      },
+      {
+        "ref_id": "5",
+        "text": "Rafael C. Gonzalez, Richard E. Woods, and Steven L. Eddins. Digital Image Processing. 2rd ed. Beijing: Publishing house of electronics industry, 2007."
+      },
+      {
+        "ref_id": "6",
+        "text": "Yang Yi-du. Numerical computation method. Beijing: High education press, 2008."
+      },
+      {
+        "ref_id": "7",
+        "text": "Heinz'uhlenbein and G. Paaß. \"From recombination of genes to the estimation of distributions i. binary parameters\", In: Proceedings of the 4th International Conference on Parallel Problem Solving from Nature, 1996, 1141, pp. 178-187."
+      },
+      {
+        "ref_id": "8",
+        "text": "Pedro Larrañaga, José A. Lozano. Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2001."
+      },
+      {
+        "ref_id": "9",
+        "text": "Ying Chen, Chongzhao Han. \"Maneuvering vehicle tracking based on multi-sensor fusion\", Acta Automatica Sinica, 2005, 31(4), pp. 625-630."
+      }
+    ],
+    "reference_count": 9,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 COMPARISON BETWEEN TRADITIONAL AND IMPROVED HAUSDORFF DISTANCE",
+      "headers": [
+        "",
+        "$x$ error $/ \\mathrm{m}$",
+        "$y$ error $/ \\mathrm{m}$",
+        "orientation <br> error $/ \\mathrm{rad}$",
+        "iteration <br> times"
+      ],
+      "rows": [
+        [
+          "Traditional <br> Hausdorff",
+          0.064,
+          1.943,
+          0.283,
+          20
+        ],
+        [
+          "The proposed <br> algorithm",
+          0.032,
+          1.738,
+          0.064,
+          15
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 PERFORMANCE COMPARISON BETWEEN TWO ALGORITHMS",
+      "headers": [
+        "",
+        "$x$ error $/ \\mathrm{m}$",
+        "$y$ error $/ \\mathrm{m}$",
+        "orientation <br> error $/ \\mathrm{rad}$",
+        "iteration <br> times"
+      ],
+      "rows": [
+        [
+          "SAA",
+          0.316,
+          2.186,
+          0.115,
+          40
+        ],
+        [
+          "EDA",
+          0.032,
+          1.738,
+          0.064,
+          15
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    }
+  ]
+}

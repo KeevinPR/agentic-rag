@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Creating stock trading rules using graph-based estimation of distribution algorithm.md",
+    "filename": "Creating stock trading rules using graph-based estimation of distribution algorithm.md",
+    "title": "Creating stock trading rules using graph-based estimation of distribution algorithm",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Judgment functions for stock trading",
+      "headers": [
+        "Function",
+        "Symbol",
+        "R branches",
+        "Contents of branches"
+      ],
+      "rows": [
+        [
+          "$J_{1}-J_{2}$",
+          "BIAS with $n=5,13,26$",
+          5,
+          "$[\\cdots 1,-0.1],[-0.1,-0.05],(-0.05,0.05],$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "$[0.05,0.1],(0.1, \\infty]$"
+        ],
+        [
+          "$J_{3}-J_{5}$",
+          "RM with $n=5,13,26$",
+          3,
+          "$[0,0.2],(0.2,0.8],(0.8,1]$"
+        ],
+        [
+          "$J_{7}-J_{9}$",
+          "ROC with $n=5,13,26$",
+          3,
+          "$[0,0.9],(0.9,1.1],(1.1, \\infty)$"
+        ],
+        [
+          "$J_{10}-J_{13}$",
+          "VR with $n=5,13,26$",
+          3,
+          "$[0,0.3],(0.3,0.7],(0.7,1]$"
+        ],
+        [
+          "$J_{14}-J_{15}$",
+          "RCI with $n=5,13,26$",
+          3,
+          "$[\\cdots 1,-0.7],(-0.7,0.7],(0.7,1]$"
+        ],
+        [
+          "$J_{16}-J_{18}$",
+          "Stochastic with $n=5,13,26$",
+          3,
+          "$[0,0.3],(0.3,0.7],(0.7,1]$"
+        ],
+        [
+          "$J_{19}$",
+          "GoldenDead cross",
+          3,
+          "golden cross, dead cross, the others"
+        ],
+        [
+          "$J_{20}$",
+          "MACD",
+          3,
+          "golden cross, dead cross, the others"
+        ],
+        [
+          "$J_{21}$",
+          "Candlestick chart",
+          9,
+          9
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "Profits (unit: yen) obtained in the testing period (profit rate [unit:\\%])",
+      "headers": [
+        "Stock",
+        "RPMBGNP",
+        "GNP",
+        "GA",
+        "Buy\\&Hold"
+      ],
+      "rows": [
+        [
+          "Fuji",
+          "$-122,000(-2.4)$",
+          "$-140,000(-2.8)$",
+          "$173,000(3.5)$",
+          "$-189,000(-3.8)$"
+        ],
+        [
+          "Toyota",
+          "$407,000(8.1)$",
+          "$640,000(12.8)$",
+          "$507,000(10.1)$",
+          "$520,000(10.4)$"
+        ],
+        [
+          "Sony",
+          "$138,000(2.8)$",
+          "$-36,000(-0.7)$",
+          "$112,000(2.2)$",
+          "$150,000(3.0)$"
+        ],
+        [
+          "Meiji Seika",
+          "$180,000(3.6)$",
+          "$287,000(5.7)$",
+          "$-185,000(-3.7)$",
+          "$451,000(9.0)$"
+        ],
+        [
+          "Shin-Etsu",
+          "$156,000(3.1)$",
+          "$54,000(1.1)$",
+          "$-539,400(-10.8)$",
+          "$-264,000(-5.3)$"
+        ],
+        [
+          "NEC",
+          "$-164,000(-3.3)$",
+          "$-292,000(-5.8)$",
+          "$-531,000(-10.6)$",
+          "$-1,026,000(-20.5)$"
+        ],
+        [
+          "Mitsubishi",
+          "$832,000(16.6)$",
+          "$551,000(11.1)$",
+          "$174,000(3.5)$",
+          "$664,000(13.3)$"
+        ],
+        [
+          "KDDI",
+          "$-53,000(-1.1)$",
+          "$-103,000(-2.1)$",
+          "$-273,000(-5.5)$",
+          "$-576,000(-11.5)$"
+        ],
+        [
+          "Tokyo Gas",
+          "$362,000(7.2)$",
+          "$225,000(4.5)$",
+          "$729,850(14.6)$",
+          "$372,000(7.4)$"
+        ],
+        [
+          "Total profits",
+          "$1,736,000$",
+          "$1,186,000$",
+          167450,
+          102000
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Choosing the right algorithm with hints from complexity theory.md",
+    "filename": "Choosing the right algorithm with hints from complexity theory.md",
+    "title": "Choosing the right algorithm with hints from complexity theory",
+    "year": "2024"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] S. Wang, W. Zheng, B. Doerr, Choosing the right algorithm with hints from complexity theory, in: International Joint Conference on Artificial Intelligence, IJCAI 2021, ijcai.org, 2021, pp. 1697-1703.\n[2] K. Sörensen, Metaheuristics - the metaphor exposed, Int. Trans. Oper. Res. 22 (2015) 3-18.\n[3] F. Neumann, C. Witt, Bioinspired Computation in Combinatorial Optimization - Algorithms and Their Computational Complexity, Springer, 2010.\n[4] A. Auger, B. Doerr (Eds.), Theory of Randomized Search Heuristics, World Scientific Publishing, 2011.\n[5] T. Jansen, Analyzing Evolutionary Algorithms - The Computer Science Perspective, Springer, 2013.\n[6] Z.-H. Zhou, Y. Yu, C. Qian, Evolutionary Learning: Advances in Theories and Algorithms, Springer, 2019.\n[7] B. Doerr, F. Neumann (Eds.), Theory of Evolutionary Computation--Recent Developments in Discrete Optimization, Springer, 2020, also available at http://www.lix.polytechnique.fr/Labo/Benjamin.Doerr/doerr_neumann_book.html.\n[8] B. Doerr, A gentle introduction to theory (for non-theoreticians), in: Genetic and Evolutionary Computation Conference, GECCO 2020, Companion Material, ACM, 2020, pp. 373-403.\n[9] S. Droste, T. Jansen, K. Tinnefeld, I. Wegener, A new framework for the valuation of algorithms for black-box optimization, in: Foundations of Genetic Algorithms, FOGA 2002, Morgan Kaufmann, 2002, pp. 253-270.\n\n[10] S. Droste, T. Jansen, I. Wegener, Upper and lower bounds for randomized search heuristics in black-box optimization, Theory Comput. Syst. 39 (2006) $525-544$.\n[11] P.K. Lehre, C. Witt, Black-box search by unbiased variation, Algorithmica 64 (2012) 623-642.\n[12] B. Doerr, D. Johannsen, T. Kötzing, P.K. Lehre, M. Wagner, C. Winzen, Faster black-box algorithms through higher arity operators, in: Foundations of Genetic Algorithms, FOGA 2011, ACM, 2011, pp. 163-172.\n[13] B. Doerr, C. Doerr, F. Ebel, From black-box complexity to designing new genetic algorithms, Theor. Comput. Sci. 567 (2015) 87-104.\n[14] G. Badlobeh, P.K. Lehre, D. Sudholt, Unbiased black-box complexity of parallel search, in: Parallel Problem Solving from Nature, PPSN 2014, Springer, 2014, pp. 892-901.\n[15] P.K. Lehre, D. Sudholt, Parallel black-box complexity with tail bounds, IEEE Trans. Evol. Comput. 24 (2020) 1010-1024.\n[16] B. Doerr, C. Gießen, C. Witt, J. Yang, The $(1+j)$ evolutionary algorithm with self-adjusting mutation rate, Algorithmica 81 (2019) 593-631.\n[17] B. Doerr, C. Witt, J. Yang, Runtime analysis for self-adaptive mutation rates, Algorithmica 83 (2021) 1012-1053.\n[18] P.K. Lehre, P.T.H. Nguyen, On the limitations of the univariate marginal distribution algorithm to deception and where bivariate EDAs might help, in: Foundations of Genetic Algorithms, FOGA 2019, ACM, 2019, pp. 154-168.\n[19] B. Doerr, M.S. Krejca, The univariate marginal distribution algorithm copes well with deception and epistasis, Evol. Comput. 29 (2021) 543-563.\n[20] N. Metropolis, A.W. Rosenbluth, M.N. Rosenbluth, A.H. Teller, E. Teller, Equation of state calculations by fast computing machines, J. Chem. Phys. 21 (1953) 1087-1092.\n[21] B. Doerr, M.S. Krejca, Significance-based estimation-of-distribution algorithms, IEEE Trans. Evol. Comput. 24 (2020) 1025-1034.\n[22] S. Droste, T. Jansen, I. Wegener, On the analysis of the (1+1) evolutionary algorithm, Theor. Comput. Sci. 276 (2002) 51-81.\n[23] O. Teytaud, S. Gelly, J. Mary, On the ultimate convergence rates for isotropic algorithms and the best choices among various forms of isotropy, in: Parallel Problem Solving from Nature, PPSN 2006, Springer, 2006, pp. 32-41.\n[24] B. Doerr, C. Doerr, J. Yang, Optimal parameter choices via precise black-box analysis, Theor. Comput. Sci. 801 (2020) 1-34.\n[25] B. Doerr, T. Kötzing, J. Lengler, C. Winzen, Black-box complexities of combinatorial problems, Theor. Comput. Sci. 471 (2013) 84-106.\n[26] C. Doerr, Complexity theory for discrete black-box optimization heuristics, in: B. Doerr, F. Neumann (Eds.), Theory of Evolutionary Computation: Recent Developments in Discrete Optimization, Springer, 2020, pp. 133-211, also available at https://arxiv.org/abs/1801.02037.\n[27] P. Erdös, A. Rényi, On two problems of information theory, Magy. Tud. Akad. Mat. Kut. Intéz. Közl. 8 (1963) 229-243.\n[28] G. Anil, R.P. Wiegand, Black-box search by elimination of fitness functions, in: Foundations of Genetic Algorithms, FOGA 2009, ACM, 2009, pp. 67-78.\n[29] B.W. Goldman, W.F. Punch, Parameter-less population pyramid, in: Genetic and Evolutionary Computation Conference, GECCO 2014, ACM, 2014, pp. $785-792$.\n[30] V. Minonovich, M. Buzdalov, Evaluation of heavy-tailed mutation operator on maximum flow test generation problem, in: Genetic and Evolutionary Computation Conference, GECCO 2017, Companion Material, ACM, 2017, pp. 1423-1426.\n[31] M. Buzdalov, B. Doerr, Runtime analysis of the $(1+(\\lambda, \\lambda))$ genetic algorithm on random satisfiable 3-CNF formulas, in: Genetic and Evolutionary Computation Conference, GECCO 2017, ACM, 2017, pp. 1343-1350.\n[32] B. Doerr, C. Doerr, Optimal static and self-adjusting parameter choices for the $(1+(\\lambda, \\lambda))$ genetic algorithm, Algorithmica 80 (2018) 1658-1709.\n[33] D. Antipov, B. Doerr, V. Karavaev, A tight runtime analysis for the $(1+(\\lambda, \\lambda))$ GA on LeadingOnes, in: Foundations of Genetic Algorithms, FOGA 2019, ACM, 2019, pp. 169-182.\n[34] D. Antipov, M. Buzdalov, B. Doerr, First steps towards a runtime analysis when starting with a good solution, in: Parallel Problem Solving from Nature, PPSN 2020, Part II, Springer, 2020, pp. 560-573.\n[35] D. Antipov, B. Doerr, Runtime analysis of a heavy-tailed $(1+(\\lambda, \\lambda))$ genetic algorithm on jump functions, in: Parallel Problem Solving from Nature, PPSN 2020, Part II, Springer, 2020, pp. 545-559.\n[36] D. Antipov, M. Buzdalov, B. Doerr, Lazy parameter tuning and control: choosing all parameters randomly from a power-law distribution, in: Genetic and Evolutionary Computation Conference, GECCO 2021, ACM, 2021, pp. 1115-1123.\n[37] D. Antipov, B. Doerr, V. Karavaev, A rigorous runtime analysis of the $(1+(\\lambda, \\lambda))$ GA on jump functions, Algorithmica 84 (2022) 1573-1602.\n[38] D. Antipov, M. Buzdalov, B. Doerr, Fast mutation in crossover-based algorithms, Algorithmica 84 (2022) 1724-1761.\n[39] D. Sudholt, C. Witt, On the choice of the update strength in estimation-of-distribution algorithms and ant colony optimization, Algorithmica 81 (2019) $1450-1489$.\n[40] B. Doerr, W. Zheng, Sharp bounds for genetic drift in estimation-of-distribution algorithms, IEEE Trans. Evol. Comput. 24 (2020) 1140-1149.\n[41] G. Rudolph, Convergence Properties of Evolutionary Algorithms, Verlag Dr. Kovác, 1997.\n[42] S. Böttcher, B. Doerr, F. Neumann, Optimal fixed and adaptive mutation rates for the LeadingOnes problem, in: Parallel Problem Solving from Nature, PPSN 2010, Springer, 2010, pp. 1-10.\n[43] D. Sudholt, A new method for lower bounds on the running time of evolutionary algorithms, IEEE Trans. Evol. Comput. 17 (2013) 418-435.\n[44] B. Doerr, Analyzing randomized search heuristics via stochastic domination, Theor. Comput. Sci. 773 (2019) 115-137.\n[45] C. Witt, Runtime analysis of the $(j+1)$ EA on simple pseudo-Boolean functions, Evol. Comput. 14 (2006) 65-86.\n[46] C. Doerr, J. Lengler, The (1+1) elitist black-box complexity of LeadingOnes, Algorithmica 80 (2018) 1579-1603.\n[47] P.K. Lehre, Fitness-levels for non-elitist populations, in: Genetic and Evolutionary Computation Conference, GECCO 2011, ACM, 2011, pp. 2075-2082.\n[48] D. Dang, P.K. Lehre, Runtime analysis of non-elitist populations: from classical optimisation to partial information, Algorithmica 75 (2016) 428-461.\n[49] D. Coros, D. Dang, A.V. Eremeev, P.K. Lehre, Level-based analysis of genetic algorithms and other search processes, IEEE Trans. Evol. Comput. 22 (2018) $707-719$.\n[50] B. Doerr, T. Kötzing, Multiplicative up-drift, Algorithmica 83 (2021) 3017-3058.\n[51] P.K. Lehre, Negative drift in populations, in: Parallel Problem Solving from Nature, PPSN 2010, Springer, 2010, pp. 244-253.\n[52] B. Doerr, Lower bounds for non-elitist evolutionary algorithms via negative multiplicative drift, Evol. Comput. 29 (2021) 305-329.\n[53] D. Dang, P.K. Lehre, P.T.H. Nguyen, Level-based analysis of the univariate marginal distribution algorithm, Algorithmica 81 (2019) 668-702.\n[54] P.K. Lehre, P.T.H. Nguyen, Runtime analyses of the population-based univariate estimation of distribution algorithms on LeadingOnes, Algorithmica 83 (2021) 3238-3280.\n[55] B. Doerr, F. Neumann, D. Sudholt, C. Witt, Runtime analysis of the 1-ANT ant colony optimizer, Theor. Comput. Sci. 412 (2011) 1629-1644.\n[56] F. Neumann, D. Sudholt, C. Witt, Analysis of different MMAS ACO algorithms on unimodal functions and plateaus, Swarm Intell. 3 (2009) 35-68.\n[57] A. Moraglio, D. Sudholt, Principled design and runtime analysis of abstract convex evolutionary search, Evol. Comput. 25 (2017) 205-236.\n[58] T. Friedrich, T. Kötzing, M.S. Krejca, EDAs cannot be balanced and stable, in: Genetic and Evolutionary Computation Conference, GECCO 2016, ACM, 2016, pp. 1139-1146.\n[59] P. Afshani, M. Agrawal, B. Doerr, C. Doerr, K.G. Larsen, K. Mehlhorn, The query complexity of a permutation-based variant of Mastermind, Discrete Appl. Math. 260 (2019) 28-50.\n[60] J. He, X. Yao, Drift analysis and average time complexity of evolutionary algorithms, Artif. Intell. 127 (2001) 51-81.\n[61] J. He, X. Yao, A study of drift analysis for estimating computation time of evolutionary algorithms, Nat. Comput. 3 (2004) 21-35.\n[62] J. Lengler, Drift analysis, in: B. Doerr, F. Neumann (Eds.), Theory of Evolutionary Computation: Recent Developments in Discrete Optimization, Springer, 2020, pp. 89-131, also available at https://arxiv.org/abs/1712.00964.\n\n[63] J. Lengler, A. Steger, Drift analysis and evolutionary algorithms revisited, Comb. Probab. Comput. 27 (2018) 643-666.\n[64] H. Chernoff, A measure of asymptotic efficiency for tests of a hypothesis based on the sum of observations, Ann. Math. Stat. 23 (1952) 493-507.\n[65] W. Hoeffding, Probability inequalities for sums of bounded random variables, J. Am. Stat. Assoc. 58 (1963) 13-30.\n[66] B. Doerr, Probabilistic tools for the analysis of randomized optimization heuristics, in: B. Doerr, F. Neumann (Eds.), Theory of Evolutionary Computation: Recent Developments in Discrete Optimization, Springer, 2020, pp. 1-87, also available at https://arxiv.org/abs/1801.06733.\n[67] C. Doerr, J. Lengler, Introducing elitist black-box models: when does elitist behavior weaken the performance of evolutionary algorithms?, Evol. Comput. 25 (2017).\n[68] K.A. Dowsland, J.M. Thompson, Simulated annealing, in: G. Rozenberg, T. Bäck, J.N. Kok (Eds.), Handbook of Natural Computing, Springer, 2012, pp. 1623-1655.\n[69] T. Jansen, Simulated annealing, in: A. Auger, B. Doerr (Eds.), Theory of Randomized Search Heuristics, World Scientific Publishing, 2011, pp. 171-195.\n[70] G.H. Sasaki, B. Hajek, The time complexity of maximum matching by simulated annealing, J. ACM 35 (1988) 387-403.\n[71] O. Giel, I. Wegener, Evolutionary algorithms and the maximum matching problem, in: Symposium on Theoretical Aspects of Computer Science, STACS 2003, Springer, 2003, pp. 415-426.\n[72] M. Jerrum, G.B. Sorkin, The metropolis algorithm for graph bisection, Discrete Appl. Math. 82 (1998) 155-175.\n[73] I. Wegener, Simulated annealing beats Metropolis in combinatorial optimization, in: Automata, Languages and Programming, ICALP 2005, Springer, 2005, pp. 589-601.\n[74] K. Meer, Simulated annealing versus Metropolis for a TSP instance, Inf. Process. Lett. 104 (2007) 216-219.\n[75] B. Doerr, A. Rajabi, C. Witt, Simulated annealing is a polynomial-time approximation scheme for the minimum spanning tree problem, in: Genetic and Evolutionary Computation Conference, GECCO 2022, ACM, 2022, pp. 1381-1389.\n[76] T. Jansen, I. Wegener, A comparison of simulated annealing with a simple evolutionary algorithm on pseudo-Boolean functions of unitation, Theor. Comput. Sci. 386 (2007) 73-93.\n[77] H. Mühlenbein, How genetic algorithms really work: mutation and hillclimbing, in: Parallel Problem Solving from Nature, PPSN 1992, Elsevier, 1992, pp. 15-26.\n[78] T. Jansen, K.A.D. Jong, I. Wegener, On the choice of the offspring population size in evolutionary algorithms, Evol. Comput. 13 (2005) 413-440.\n[79] D. Antipov, B. Doerr, A tight runtime analysis for the $(\\mu+\\lambda)$ EA, Algorithmica 83 (2021) 1054-1095.\n[80] L. Kaden, N. Weicker, K. Weicker, Metropolis and symmetric functions: a swan song, in: Evolutionary Computation in Combinatorial Optimization, EvoCOP 2009, Springer, 2009, pp. 204-215.\n[81] P.S. Oliveto, T. Paixão, J.P. Heredia, D. Sudholt, B. Trubenová, How to escape local optima in black box optimisation: when non-elitism outperforms elitism, Algorithmica 80 (2018) 1604-1633.\n[82] A. Lissovoi, P.S. Oliveto, J.A. Warwicker, When move acceptance selection hyper-heuristics outperform Metropolis and elitist evolutionary algorithms and when not, Artif. Intell. 314 (2023) 103804.\n[83] M.A. Hevia Fajardo, D. Sudholt, Self-adjusting population sizes for non-elitist evolutionary algorithms: why success rates matter, in: Genetic and Evolutionary Computation Conference, GECCO 2021, ACM, 2021, pp. 1151-1159.\n[84] D. Corus, P.S. Oliveto, D. Yazdani, Automatic adaptation of hypermutation rates for multimodal optimisation, in: Foundations of Genetic Algorithms, FUGA 2021, ACM, 2021, pp. 4:1-4:12.\n[85] J. Jajersküpper, T. Storch, When the plus strategy outperforms the comma strategy and when not, in: Foundations of Computational Intelligence, FOCI 2007, IEEE, 2007, pp. 25-32.\n[86] D. Dang, T. Friedrich, T. Kötzing, M.S. Krejca, P.K. Lehre, P.S. Oliveto, D. Sudholt, A.M. Sutton, Escaping local optima with diversity mechanisms and crossover, in: Genetic and Evolutionary Computation Conference, GECCO 2016, ACM, 2016, pp. 645-652.\n[87] D. Dang, T. Friedrich, T. Kötzing, M.S. Krejca, P.K. Lehre, P.S. Oliveto, D. Sudholt, A.M. Sutton, Escaping local optima using crossover with emergent diversity, IEEE Trans. Evol. Comput. 22 (2018) 484-497.\n[88] B. Doerr, H.P. Le, R. Makhmara, T.D. Nguyen, Fast genetic algorithms, in: Genetic and Evolutionary Computation Conference, GECCO 2017, ACM, 2017, pp. 777-784.\n[89] V. Hasenöhrl, A.M. Sutton, On the runtime dynamics of the compact genetic algorithm on jump functions, in: Genetic and Evolutionary Computation Conference, GECCO 2018, ACM, 2018, pp. 967-974.\n[90] B. Doerr, The runtime of the compact genetic algorithm on Jump functions, Algorithmica 83 (2021) 3059-3107.\n[91] B. Doerr, Does comma selection help to cope with local optima?, Algorithmica 84 (2022) 1659-1693.\n[92] A. Rajabi, C. Witt, Self-adjusting evolutionary algorithms for multimodal optimization, Algorithmica 84 (2022) 1694-1723.\n[93] A. Rajabi, C. Witt, Stagnation detection with randomized local search, Evol. Comput. 31 (2023) 1-29.\n[94] B. Doerr, A. Rajabi, Stagnation detection meets fast mutation, Theor. Comput. Sci. 946 (2023) 113670.\n[95] B. Doerr, A. Echarghaoui, M. Jamal, M.S. Krejca, Lasting diversity and superior runtime guarantees for the $(\\mu+1)$ genetic algorithm, CoRR, arXiv: 2302.12570 [abs], 2023, arXiv:2302.12570.\n[96] B. Doerr, F. Neumann, A.M. Sutton, Time complexity analysis of evolutionary algorithms on random satisfiable $k$-CNF formulas, Algorithmica 78 (2017) 561-586.\n[97] B. Doerr, T. El Ghazi El Houssaini, A. Rajabi, C. Witt, How well does the Metropolis algorithm cope with local optima?, in: Genetic and Evolutionary Computation Conference, GECCO 2023, ACM, 2023, pp. 1000-1008.\n[98] J.E. Rowe, D. Sudholt, The choice of the offspring population size in the $(1, \\lambda)$ evolutionary algorithm, Theor. Comput. Sci. 545 (2014) 20-38.\n[99] E. Happ, D. Johannsen, C. Klein, F. Neumann, Rigorous analyses of fitness-proportional selection for optimizing linear functions, in: Genetic and Evolutionary Computation Conference, GECCO 2008, ACM, 2008, pp. 953-960.\n[100] F. Neumann, P.S. Oliveto, C. Witt, Theoretical analysis of fitness-proportional selection: landscapes and efficiency, in: Genetic and Evolutionary Computation Conference, GECCO 2009, ACM, 2009, pp. 835-842.\n[101] P.S. Oliveto, C. Witt, Improved time complexity analysis of the simple genetic algorithm, Theor. Comput. Sci. 605 (2015) 21-41.\n[102] D. Dang, A.V. Eremeev, P.K. Lehre, Escaping local optima with non-elitist evolutionary algorithms, in: AAAI Conference on Artificial Intelligence, AAAI 2021, AAAI Press, 2021, pp. 12275-12283.\n[103] D. Dang, A.V. Eremeev, P.K. Lehre, Non-elitist evolutionary algorithms excel in fitness landscapes with sparse deceptive regions and dense valleys, in: Genetic and Evolutionary Computation Conference, GECCO 2021, ACM, 2021, pp. 1133-1141.\n[104] W. Zheng, Q. Zhang, H. Chen, X. Yao, When non-elitism meets time-linkage problems, in: Genetic and Evolutionary Computation Conference, GECCO 2021, ACM, 2021, pp. 741-749.\n[105] W. Zheng, H. Chen, X. Yao, Analysis of evolutionary algorithms on fitness function with time-linkage property, IEEE Trans. Evol. Comput. 25 (2021) $696-709$.\n[106] J. Jorritsma, J. Lengler, D. Sudholt, Comma selection outperforms plus selection on OneMax with randomly planted optima, in: Genetic and Evolutionary Computation Conference, GECCO 2023, ACM, 2023, pp. 1602-1610.\n[107] T. Paixão, J.P. Heredia, D. Sudholt, B. Trubenová, Towards a runtime comparison of natural and artificial evolution, Algorithmica 78 (2017) 681-713.\n[108] B. Doerr, A. Dremaux, J.F. Lutzeyer, A. Stumpf, How the move acceptance hyper-heuristic copes with local optima: drastic differences between jumps and cliffs, in: Genetic and Evolutionary Computation Conference, GECCO 2023, ACM, 2023, pp. 990-999.\n\n[109] P.S. Oliveto, D. Sudholt, On the runtime analysis of stochastic ageing mechanisms, in: Genetic and Evolutionary Computation Conference, GECCO 2014, ACM, 2014, pp. 113-120.\n[110] D. Corus, P.S. Oliveto, D. Yazdani, When hypermutations and ageing enable artificial immune systems to outperform evolutionary algorithms, Theor. Comput. Sci. 832 (2020) 166-185.\n[111] D. Corus, P.S. Oliveto, D. Yazdani, Fast immune system-inspired hypermutation operators for combinatorial optimization, IEEE Trans. Evol. Comput. 25 (2021) 956-970.\n[112] J.E. Rowe Aishwaryaprajna, The benefits and limitations of voting mechanisms in evolutionary optimisation, in: Foundations of Genetic Algorithms, FOGA 2019, ACM, 2019, pp. 34-42.\n[113] M. Müller-Hannemann, S. Schirra, Algorithm Engineering, Springer, 2001.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "S. Wang, W. Zheng, B. Doerr, Choosing the right algorithm with hints from complexity theory, in: International Joint Conference on Artificial Intelligence, IJCAI 2021, ijcai.org, 2021, pp. 1697-1703."
+      },
+      {
+        "ref_id": "2",
+        "text": "K. Sörensen, Metaheuristics - the metaphor exposed, Int. Trans. Oper. Res. 22 (2015) 3-18."
+      },
+      {
+        "ref_id": "3",
+        "text": "F. Neumann, C. Witt, Bioinspired Computation in Combinatorial Optimization - Algorithms and Their Computational Complexity, Springer, 2010."
+      },
+      {
+        "ref_id": "4",
+        "text": "A. Auger, B. Doerr (Eds.), Theory of Randomized Search Heuristics, World Scientific Publishing, 2011."
+      },
+      {
+        "ref_id": "5",
+        "text": "T. Jansen, Analyzing Evolutionary Algorithms - The Computer Science Perspective, Springer, 2013."
+      },
+      {
+        "ref_id": "6",
+        "text": "Z.-H. Zhou, Y. Yu, C. Qian, Evolutionary Learning: Advances in Theories and Algorithms, Springer, 2019."
+      },
+      {
+        "ref_id": "7",
+        "text": "B. Doerr, F. Neumann (Eds.), Theory of Evolutionary Computation--Recent Developments in Discrete Optimization, Springer, 2020, also available at http://www.lix.polytechnique.fr/Labo/Benjamin.Doerr/doerr_neumann_book.html."
+      },
+      {
+        "ref_id": "8",
+        "text": "B. Doerr, A gentle introduction to theory (for non-theoreticians), in: Genetic and Evolutionary Computation Conference, GECCO 2020, Companion Material, ACM, 2020, pp. 373-403."
+      },
+      {
+        "ref_id": "9",
+        "text": "S. Droste, T. Jansen, K. Tinnefeld, I. Wegener, A new framework for the valuation of algorithms for black-box optimization, in: Foundations of Genetic Algorithms, FOGA 2002, Morgan Kaufmann, 2002, pp. 253-270."
+      },
+      {
+        "ref_id": "10",
+        "text": "S. Droste, T. Jansen, I. Wegener, Upper and lower bounds for randomized search heuristics in black-box optimization, Theory Comput. Syst. 39 (2006) $525-544$."
+      },
+      {
+        "ref_id": "11",
+        "text": "P.K. Lehre, C. Witt, Black-box search by unbiased variation, Algorithmica 64 (2012) 623-642."
+      },
+      {
+        "ref_id": "12",
+        "text": "B. Doerr, D. Johannsen, T. Kötzing, P.K. Lehre, M. Wagner, C. Winzen, Faster black-box algorithms through higher arity operators, in: Foundations of Genetic Algorithms, FOGA 2011, ACM, 2011, pp. 163-172."
+      },
+      {
+        "ref_id": "13",
+        "text": "B. Doerr, C. Doerr, F. Ebel, From black-box complexity to designing new genetic algorithms, Theor. Comput. Sci. 567 (2015) 87-104."
+      },
+      {
+        "ref_id": "14",
+        "text": "G. Badlobeh, P.K. Lehre, D. Sudholt, Unbiased black-box complexity of parallel search, in: Parallel Problem Solving from Nature, PPSN 2014, Springer, 2014, pp. 892-901."
+      },
+      {
+        "ref_id": "15",
+        "text": "P.K. Lehre, D. Sudholt, Parallel black-box complexity with tail bounds, IEEE Trans. Evol. Comput. 24 (2020) 1010-1024."
+      },
+      {
+        "ref_id": "16",
+        "text": "B. Doerr, C. Gießen, C. Witt, J. Yang, The $(1+j)$ evolutionary algorithm with self-adjusting mutation rate, Algorithmica 81 (2019) 593-631."
+      },
+      {
+        "ref_id": "17",
+        "text": "B. Doerr, C. Witt, J. Yang, Runtime analysis for self-adaptive mutation rates, Algorithmica 83 (2021) 1012-1053."
+      },
+      {
+        "ref_id": "18",
+        "text": "P.K. Lehre, P.T.H. Nguyen, On the limitations of the univariate marginal distribution algorithm to deception and where bivariate EDAs might help, in: Foundations of Genetic Algorithms, FOGA 2019, ACM, 2019, pp. 154-168."
+      },
+      {
+        "ref_id": "19",
+        "text": "B. Doerr, M.S. Krejca, The univariate marginal distribution algorithm copes well with deception and epistasis, Evol. Comput. 29 (2021) 543-563."
+      },
+      {
+        "ref_id": "20",
+        "text": "N. Metropolis, A.W. Rosenbluth, M.N. Rosenbluth, A.H. Teller, E. Teller, Equation of state calculations by fast computing machines, J. Chem. Phys. 21 (1953) 1087-1092."
+      },
+      {
+        "ref_id": "21",
+        "text": "B. Doerr, M.S. Krejca, Significance-based estimation-of-distribution algorithms, IEEE Trans. Evol. Comput. 24 (2020) 1025-1034."
+      },
+      {
+        "ref_id": "22",
+        "text": "S. Droste, T. Jansen, I. Wegener, On the analysis of the (1+1) evolutionary algorithm, Theor. Comput. Sci. 276 (2002) 51-81."
+      },
+      {
+        "ref_id": "23",
+        "text": "O. Teytaud, S. Gelly, J. Mary, On the ultimate convergence rates for isotropic algorithms and the best choices among various forms of isotropy, in: Parallel Problem Solving from Nature, PPSN 2006, Springer, 2006, pp. 32-41."
+      },
+      {
+        "ref_id": "24",
+        "text": "B. Doerr, C. Doerr, J. Yang, Optimal parameter choices via precise black-box analysis, Theor. Comput. Sci. 801 (2020) 1-34."
+      },
+      {
+        "ref_id": "25",
+        "text": "B. Doerr, T. Kötzing, J. Lengler, C. Winzen, Black-box complexities of combinatorial problems, Theor. Comput. Sci. 471 (2013) 84-106."
+      },
+      {
+        "ref_id": "26",
+        "text": "C. Doerr, Complexity theory for discrete black-box optimization heuristics, in: B. Doerr, F. Neumann (Eds.), Theory of Evolutionary Computation: Recent Developments in Discrete Optimization, Springer, 2020, pp. 133-211, also available at https://arxiv.org/abs/1801.02037."
+      },
+      {
+        "ref_id": "27",
+        "text": "P. Erdös, A. Rényi, On two problems of information theory, Magy. Tud. Akad. Mat. Kut. Intéz. Közl. 8 (1963) 229-243."
+      },
+      {
+        "ref_id": "28",
+        "text": "G. Anil, R.P. Wiegand, Black-box search by elimination of fitness functions, in: Foundations of Genetic Algorithms, FOGA 2009, ACM, 2009, pp. 67-78."
+      },
+      {
+        "ref_id": "29",
+        "text": "B.W. Goldman, W.F. Punch, Parameter-less population pyramid, in: Genetic and Evolutionary Computation Conference, GECCO 2014, ACM, 2014, pp. $785-792$."
+      },
+      {
+        "ref_id": "30",
+        "text": "V. Minonovich, M. Buzdalov, Evaluation of heavy-tailed mutation operator on maximum flow test generation problem, in: Genetic and Evolutionary Computation Conference, GECCO 2017, Companion Material, ACM, 2017, pp. 1423-1426."
+      },
+      {
+        "ref_id": "31",
+        "text": "M. Buzdalov, B. Doerr, Runtime analysis of the $(1+(\\lambda, \\lambda))$ genetic algorithm on random satisfiable 3-CNF formulas, in: Genetic and Evolutionary Computation Conference, GECCO 2017, ACM, 2017, pp. 1343-1350."
+      },
+      {
+        "ref_id": "32",
+        "text": "B. Doerr, C. Doerr, Optimal static and self-adjusting parameter choices for the $(1+(\\lambda, \\lambda))$ genetic algorithm, Algorithmica 80 (2018) 1658-1709."
+      },
+      {
+        "ref_id": "33",
+        "text": "D. Antipov, B. Doerr, V. Karavaev, A tight runtime analysis for the $(1+(\\lambda, \\lambda))$ GA on LeadingOnes, in: Foundations of Genetic Algorithms, FOGA 2019, ACM, 2019, pp. 169-182."
+      },
+      {
+        "ref_id": "34",
+        "text": "D. Antipov, M. Buzdalov, B. Doerr, First steps towards a runtime analysis when starting with a good solution, in: Parallel Problem Solving from Nature, PPSN 2020, Part II, Springer, 2020, pp. 560-573."
+      },
+      {
+        "ref_id": "35",
+        "text": "D. Antipov, B. Doerr, Runtime analysis of a heavy-tailed $(1+(\\lambda, \\lambda))$ genetic algorithm on jump functions, in: Parallel Problem Solving from Nature, PPSN 2020, Part II, Springer, 2020, pp. 545-559."
+      },
+      {
+        "ref_id": "36",
+        "text": "D. Antipov, M. Buzdalov, B. Doerr, Lazy parameter tuning and control: choosing all parameters randomly from a power-law distribution, in: Genetic and Evolutionary Computation Conference, GECCO 2021, ACM, 2021, pp. 1115-1123."
+      },
+      {
+        "ref_id": "37",
+        "text": "D. Antipov, B. Doerr, V. Karavaev, A rigorous runtime analysis of the $(1+(\\lambda, \\lambda))$ GA on jump functions, Algorithmica 84 (2022) 1573-1602."
+      },
+      {
+        "ref_id": "38",
+        "text": "D. Antipov, M. Buzdalov, B. Doerr, Fast mutation in crossover-based algorithms, Algorithmica 84 (2022) 1724-1761."
+      },
+      {
+        "ref_id": "39",
+        "text": "D. Sudholt, C. Witt, On the choice of the update strength in estimation-of-distribution algorithms and ant colony optimization, Algorithmica 81 (2019) $1450-1489$."
+      },
+      {
+        "ref_id": "40",
+        "text": "B. Doerr, W. Zheng, Sharp bounds for genetic drift in estimation-of-distribution algorithms, IEEE Trans. Evol. Comput. 24 (2020) 1140-1149."
+      },
+      {
+        "ref_id": "41",
+        "text": "G. Rudolph, Convergence Properties of Evolutionary Algorithms, Verlag Dr. Kovác, 1997."
+      },
+      {
+        "ref_id": "42",
+        "text": "S. Böttcher, B. Doerr, F. Neumann, Optimal fixed and adaptive mutation rates for the LeadingOnes problem, in: Parallel Problem Solving from Nature, PPSN 2010, Springer, 2010, pp. 1-10."
+      },
+      {
+        "ref_id": "43",
+        "text": "D. Sudholt, A new method for lower bounds on the running time of evolutionary algorithms, IEEE Trans. Evol. Comput. 17 (2013) 418-435."
+      },
+      {
+        "ref_id": "44",
+        "text": "B. Doerr, Analyzing randomized search heuristics via stochastic domination, Theor. Comput. Sci. 773 (2019) 115-137."
+      },
+      {
+        "ref_id": "45",
+        "text": "C. Witt, Runtime analysis of the $(j+1)$ EA on simple pseudo-Boolean functions, Evol. Comput. 14 (2006) 65-86."
+      },
+      {
+        "ref_id": "46",
+        "text": "C. Doerr, J. Lengler, The (1+1) elitist black-box complexity of LeadingOnes, Algorithmica 80 (2018) 1579-1603."
+      },
+      {
+        "ref_id": "47",
+        "text": "P.K. Lehre, Fitness-levels for non-elitist populations, in: Genetic and Evolutionary Computation Conference, GECCO 2011, ACM, 2011, pp. 2075-2082."
+      },
+      {
+        "ref_id": "48",
+        "text": "D. Dang, P.K. Lehre, Runtime analysis of non-elitist populations: from classical optimisation to partial information, Algorithmica 75 (2016) 428-461."
+      },
+      {
+        "ref_id": "49",
+        "text": "D. Coros, D. Dang, A.V. Eremeev, P.K. Lehre, Level-based analysis of genetic algorithms and other search processes, IEEE Trans. Evol. Comput. 22 (2018) $707-719$."
+      },
+      {
+        "ref_id": "50",
+        "text": "B. Doerr, T. Kötzing, Multiplicative up-drift, Algorithmica 83 (2021) 3017-3058."
+      },
+      {
+        "ref_id": "51",
+        "text": "P.K. Lehre, Negative drift in populations, in: Parallel Problem Solving from Nature, PPSN 2010, Springer, 2010, pp. 244-253."
+      },
+      {
+        "ref_id": "52",
+        "text": "B. Doerr, Lower bounds for non-elitist evolutionary algorithms via negative multiplicative drift, Evol. Comput. 29 (2021) 305-329."
+      },
+      {
+        "ref_id": "53",
+        "text": "D. Dang, P.K. Lehre, P.T.H. Nguyen, Level-based analysis of the univariate marginal distribution algorithm, Algorithmica 81 (2019) 668-702."
+      },
+      {
+        "ref_id": "54",
+        "text": "P.K. Lehre, P.T.H. Nguyen, Runtime analyses of the population-based univariate estimation of distribution algorithms on LeadingOnes, Algorithmica 83 (2021) 3238-3280."
+      },
+      {
+        "ref_id": "55",
+        "text": "B. Doerr, F. Neumann, D. Sudholt, C. Witt, Runtime analysis of the 1-ANT ant colony optimizer, Theor. Comput. Sci. 412 (2011) 1629-1644."
+      },
+      {
+        "ref_id": "56",
+        "text": "F. Neumann, D. Sudholt, C. Witt, Analysis of different MMAS ACO algorithms on unimodal functions and plateaus, Swarm Intell. 3 (2009) 35-68."
+      },
+      {
+        "ref_id": "57",
+        "text": "A. Moraglio, D. Sudholt, Principled design and runtime analysis of abstract convex evolutionary search, Evol. Comput. 25 (2017) 205-236."
+      },
+      {
+        "ref_id": "58",
+        "text": "T. Friedrich, T. Kötzing, M.S. Krejca, EDAs cannot be balanced and stable, in: Genetic and Evolutionary Computation Conference, GECCO 2016, ACM, 2016, pp. 1139-1146."
+      },
+      {
+        "ref_id": "59",
+        "text": "P. Afshani, M. Agrawal, B. Doerr, C. Doerr, K.G. Larsen, K. Mehlhorn, The query complexity of a permutation-based variant of Mastermind, Discrete Appl. Math. 260 (2019) 28-50."
+      },
+      {
+        "ref_id": "60",
+        "text": "J. He, X. Yao, Drift analysis and average time complexity of evolutionary algorithms, Artif. Intell. 127 (2001) 51-81."
+      },
+      {
+        "ref_id": "61",
+        "text": "J. He, X. Yao, A study of drift analysis for estimating computation time of evolutionary algorithms, Nat. Comput. 3 (2004) 21-35."
+      },
+      {
+        "ref_id": "62",
+        "text": "J. Lengler, Drift analysis, in: B. Doerr, F. Neumann (Eds.), Theory of Evolutionary Computation: Recent Developments in Discrete Optimization, Springer, 2020, pp. 89-131, also available at https://arxiv.org/abs/1712.00964."
+      },
+      {
+        "ref_id": "63",
+        "text": "J. Lengler, A. Steger, Drift analysis and evolutionary algorithms revisited, Comb. Probab. Comput. 27 (2018) 643-666."
+      },
+      {
+        "ref_id": "64",
+        "text": "H. Chernoff, A measure of asymptotic efficiency for tests of a hypothesis based on the sum of observations, Ann. Math. Stat. 23 (1952) 493-507."
+      },
+      {
+        "ref_id": "65",
+        "text": "W. Hoeffding, Probability inequalities for sums of bounded random variables, J. Am. Stat. Assoc. 58 (1963) 13-30."
+      },
+      {
+        "ref_id": "66",
+        "text": "B. Doerr, Probabilistic tools for the analysis of randomized optimization heuristics, in: B. Doerr, F. Neumann (Eds.), Theory of Evolutionary Computation: Recent Developments in Discrete Optimization, Springer, 2020, pp. 1-87, also available at https://arxiv.org/abs/1801.06733."
+      },
+      {
+        "ref_id": "67",
+        "text": "C. Doerr, J. Lengler, Introducing elitist black-box models: when does elitist behavior weaken the performance of evolutionary algorithms?, Evol. Comput. 25 (2017)."
+      },
+      {
+        "ref_id": "68",
+        "text": "K.A. Dowsland, J.M. Thompson, Simulated annealing, in: G. Rozenberg, T. Bäck, J.N. Kok (Eds.), Handbook of Natural Computing, Springer, 2012, pp. 1623-1655."
+      },
+      {
+        "ref_id": "69",
+        "text": "T. Jansen, Simulated annealing, in: A. Auger, B. Doerr (Eds.), Theory of Randomized Search Heuristics, World Scientific Publishing, 2011, pp. 171-195."
+      },
+      {
+        "ref_id": "70",
+        "text": "G.H. Sasaki, B. Hajek, The time complexity of maximum matching by simulated annealing, J. ACM 35 (1988) 387-403."
+      },
+      {
+        "ref_id": "71",
+        "text": "O. Giel, I. Wegener, Evolutionary algorithms and the maximum matching problem, in: Symposium on Theoretical Aspects of Computer Science, STACS 2003, Springer, 2003, pp. 415-426."
+      },
+      {
+        "ref_id": "72",
+        "text": "M. Jerrum, G.B. Sorkin, The metropolis algorithm for graph bisection, Discrete Appl. Math. 82 (1998) 155-175."
+      },
+      {
+        "ref_id": "73",
+        "text": "I. Wegener, Simulated annealing beats Metropolis in combinatorial optimization, in: Automata, Languages and Programming, ICALP 2005, Springer, 2005, pp. 589-601."
+      },
+      {
+        "ref_id": "74",
+        "text": "K. Meer, Simulated annealing versus Metropolis for a TSP instance, Inf. Process. Lett. 104 (2007) 216-219."
+      },
+      {
+        "ref_id": "75",
+        "text": "B. Doerr, A. Rajabi, C. Witt, Simulated annealing is a polynomial-time approximation scheme for the minimum spanning tree problem, in: Genetic and Evolutionary Computation Conference, GECCO 2022, ACM, 2022, pp. 1381-1389."
+      },
+      {
+        "ref_id": "76",
+        "text": "T. Jansen, I. Wegener, A comparison of simulated annealing with a simple evolutionary algorithm on pseudo-Boolean functions of unitation, Theor. Comput. Sci. 386 (2007) 73-93."
+      },
+      {
+        "ref_id": "77",
+        "text": "H. Mühlenbein, How genetic algorithms really work: mutation and hillclimbing, in: Parallel Problem Solving from Nature, PPSN 1992, Elsevier, 1992, pp. 15-26."
+      },
+      {
+        "ref_id": "78",
+        "text": "T. Jansen, K.A.D. Jong, I. Wegener, On the choice of the offspring population size in evolutionary algorithms, Evol. Comput. 13 (2005) 413-440."
+      },
+      {
+        "ref_id": "79",
+        "text": "D. Antipov, B. Doerr, A tight runtime analysis for the $(\\mu+\\lambda)$ EA, Algorithmica 83 (2021) 1054-1095."
+      },
+      {
+        "ref_id": "80",
+        "text": "L. Kaden, N. Weicker, K. Weicker, Metropolis and symmetric functions: a swan song, in: Evolutionary Computation in Combinatorial Optimization, EvoCOP 2009, Springer, 2009, pp. 204-215."
+      },
+      {
+        "ref_id": "81",
+        "text": "P.S. Oliveto, T. Paixão, J.P. Heredia, D. Sudholt, B. Trubenová, How to escape local optima in black box optimisation: when non-elitism outperforms elitism, Algorithmica 80 (2018) 1604-1633."
+      },
+      {
+        "ref_id": "82",
+        "text": "A. Lissovoi, P.S. Oliveto, J.A. Warwicker, When move acceptance selection hyper-heuristics outperform Metropolis and elitist evolutionary algorithms and when not, Artif. Intell. 314 (2023) 103804."
+      },
+      {
+        "ref_id": "83",
+        "text": "M.A. Hevia Fajardo, D. Sudholt, Self-adjusting population sizes for non-elitist evolutionary algorithms: why success rates matter, in: Genetic and Evolutionary Computation Conference, GECCO 2021, ACM, 2021, pp. 1151-1159."
+      },
+      {
+        "ref_id": "84",
+        "text": "D. Corus, P.S. Oliveto, D. Yazdani, Automatic adaptation of hypermutation rates for multimodal optimisation, in: Foundations of Genetic Algorithms, FUGA 2021, ACM, 2021, pp. 4:1-4:12."
+      },
+      {
+        "ref_id": "85",
+        "text": "J. Jajersküpper, T. Storch, When the plus strategy outperforms the comma strategy and when not, in: Foundations of Computational Intelligence, FOCI 2007, IEEE, 2007, pp. 25-32."
+      },
+      {
+        "ref_id": "86",
+        "text": "D. Dang, T. Friedrich, T. Kötzing, M.S. Krejca, P.K. Lehre, P.S. Oliveto, D. Sudholt, A.M. Sutton, Escaping local optima with diversity mechanisms and crossover, in: Genetic and Evolutionary Computation Conference, GECCO 2016, ACM, 2016, pp. 645-652."
+      },
+      {
+        "ref_id": "87",
+        "text": "D. Dang, T. Friedrich, T. Kötzing, M.S. Krejca, P.K. Lehre, P.S. Oliveto, D. Sudholt, A.M. Sutton, Escaping local optima using crossover with emergent diversity, IEEE Trans. Evol. Comput. 22 (2018) 484-497."
+      },
+      {
+        "ref_id": "88",
+        "text": "B. Doerr, H.P. Le, R. Makhmara, T.D. Nguyen, Fast genetic algorithms, in: Genetic and Evolutionary Computation Conference, GECCO 2017, ACM, 2017, pp. 777-784."
+      },
+      {
+        "ref_id": "89",
+        "text": "V. Hasenöhrl, A.M. Sutton, On the runtime dynamics of the compact genetic algorithm on jump functions, in: Genetic and Evolutionary Computation Conference, GECCO 2018, ACM, 2018, pp. 967-974."
+      },
+      {
+        "ref_id": "90",
+        "text": "B. Doerr, The runtime of the compact genetic algorithm on Jump functions, Algorithmica 83 (2021) 3059-3107."
+      },
+      {
+        "ref_id": "91",
+        "text": "B. Doerr, Does comma selection help to cope with local optima?, Algorithmica 84 (2022) 1659-1693."
+      },
+      {
+        "ref_id": "92",
+        "text": "A. Rajabi, C. Witt, Self-adjusting evolutionary algorithms for multimodal optimization, Algorithmica 84 (2022) 1694-1723."
+      },
+      {
+        "ref_id": "93",
+        "text": "A. Rajabi, C. Witt, Stagnation detection with randomized local search, Evol. Comput. 31 (2023) 1-29."
+      },
+      {
+        "ref_id": "94",
+        "text": "B. Doerr, A. Rajabi, Stagnation detection meets fast mutation, Theor. Comput. Sci. 946 (2023) 113670."
+      },
+      {
+        "ref_id": "95",
+        "text": "B. Doerr, A. Echarghaoui, M. Jamal, M.S. Krejca, Lasting diversity and superior runtime guarantees for the $(\\mu+1)$ genetic algorithm, CoRR, arXiv: 2302.12570 [abs], 2023, arXiv:2302.12570."
+      },
+      {
+        "ref_id": "96",
+        "text": "B. Doerr, F. Neumann, A.M. Sutton, Time complexity analysis of evolutionary algorithms on random satisfiable $k$-CNF formulas, Algorithmica 78 (2017) 561-586."
+      },
+      {
+        "ref_id": "97",
+        "text": "B. Doerr, T. El Ghazi El Houssaini, A. Rajabi, C. Witt, How well does the Metropolis algorithm cope with local optima?, in: Genetic and Evolutionary Computation Conference, GECCO 2023, ACM, 2023, pp. 1000-1008."
+      },
+      {
+        "ref_id": "98",
+        "text": "J.E. Rowe, D. Sudholt, The choice of the offspring population size in the $(1, \\lambda)$ evolutionary algorithm, Theor. Comput. Sci. 545 (2014) 20-38."
+      },
+      {
+        "ref_id": "99",
+        "text": "E. Happ, D. Johannsen, C. Klein, F. Neumann, Rigorous analyses of fitness-proportional selection for optimizing linear functions, in: Genetic and Evolutionary Computation Conference, GECCO 2008, ACM, 2008, pp. 953-960."
+      },
+      {
+        "ref_id": "100",
+        "text": "F. Neumann, P.S. Oliveto, C. Witt, Theoretical analysis of fitness-proportional selection: landscapes and efficiency, in: Genetic and Evolutionary Computation Conference, GECCO 2009, ACM, 2009, pp. 835-842."
+      },
+      {
+        "ref_id": "101",
+        "text": "P.S. Oliveto, C. Witt, Improved time complexity analysis of the simple genetic algorithm, Theor. Comput. Sci. 605 (2015) 21-41."
+      },
+      {
+        "ref_id": "102",
+        "text": "D. Dang, A.V. Eremeev, P.K. Lehre, Escaping local optima with non-elitist evolutionary algorithms, in: AAAI Conference on Artificial Intelligence, AAAI 2021, AAAI Press, 2021, pp. 12275-12283."
+      },
+      {
+        "ref_id": "103",
+        "text": "D. Dang, A.V. Eremeev, P.K. Lehre, Non-elitist evolutionary algorithms excel in fitness landscapes with sparse deceptive regions and dense valleys, in: Genetic and Evolutionary Computation Conference, GECCO 2021, ACM, 2021, pp. 1133-1141."
+      },
+      {
+        "ref_id": "104",
+        "text": "W. Zheng, Q. Zhang, H. Chen, X. Yao, When non-elitism meets time-linkage problems, in: Genetic and Evolutionary Computation Conference, GECCO 2021, ACM, 2021, pp. 741-749."
+      },
+      {
+        "ref_id": "105",
+        "text": "W. Zheng, H. Chen, X. Yao, Analysis of evolutionary algorithms on fitness function with time-linkage property, IEEE Trans. Evol. Comput. 25 (2021) $696-709$."
+      },
+      {
+        "ref_id": "106",
+        "text": "J. Jorritsma, J. Lengler, D. Sudholt, Comma selection outperforms plus selection on OneMax with randomly planted optima, in: Genetic and Evolutionary Computation Conference, GECCO 2023, ACM, 2023, pp. 1602-1610."
+      },
+      {
+        "ref_id": "107",
+        "text": "T. Paixão, J.P. Heredia, D. Sudholt, B. Trubenová, Towards a runtime comparison of natural and artificial evolution, Algorithmica 78 (2017) 681-713."
+      },
+      {
+        "ref_id": "108",
+        "text": "B. Doerr, A. Dremaux, J.F. Lutzeyer, A. Stumpf, How the move acceptance hyper-heuristic copes with local optima: drastic differences between jumps and cliffs, in: Genetic and Evolutionary Computation Conference, GECCO 2023, ACM, 2023, pp. 990-999."
+      },
+      {
+        "ref_id": "109",
+        "text": "P.S. Oliveto, D. Sudholt, On the runtime analysis of stochastic ageing mechanisms, in: Genetic and Evolutionary Computation Conference, GECCO 2014, ACM, 2014, pp. 113-120."
+      },
+      {
+        "ref_id": "110",
+        "text": "D. Corus, P.S. Oliveto, D. Yazdani, When hypermutations and ageing enable artificial immune systems to outperform evolutionary algorithms, Theor. Comput. Sci. 832 (2020) 166-185."
+      },
+      {
+        "ref_id": "111",
+        "text": "D. Corus, P.S. Oliveto, D. Yazdani, Fast immune system-inspired hypermutation operators for combinatorial optimization, IEEE Trans. Evol. Comput. 25 (2021) 956-970."
+      },
+      {
+        "ref_id": "112",
+        "text": "J.E. Rowe Aishwaryaprajna, The benefits and limitations of voting mechanisms in evolutionary optimisation, in: Foundations of Genetic Algorithms, FOGA 2019, ACM, 2019, pp. 34-42."
+      },
+      {
+        "ref_id": "113",
+        "text": "M. Müller-Hannemann, S. Schirra, Algorithm Engineering, Springer, 2001."
+      }
+    ],
+    "reference_count": 113,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": []
+}

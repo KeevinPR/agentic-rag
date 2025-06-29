@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/Obtaining biclusters in microarrays with population-based heuristics.md",
+    "filename": "Obtaining biclusters in microarrays with population-based heuristics.md",
+    "title": "Obtaining biclusters in microarrays with population-based heuristics",
+    "year": "2006"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Statistical Values of residue and size of the biclusters found by every algorithm. Time is in minutes per run.",
+      "headers": [
+        "",
+        "Residue",
+        "",
+        "",
+        "",
+        "Average Size",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Algorithm",
+          "Avg (sd)",
+          "Best",
+          "Worst",
+          "",
+          "Rows (sd)",
+          "",
+          "Cols (sd)",
+          "Time"
+        ],
+        [
+          "GA",
+          "$8.83(0.81)$",
+          7.3,
+          11.82,
+          "",
+          "825.19 (488.32)",
+          "$7.94(4.11)$",
+          5,
+          ""
+        ],
+        [
+          "EDA",
+          "$5.72(1.45)$",
+          4.81,
+          9.87,
+          "",
+          "213.28 (109.74)",
+          "$8.28(0.70)$",
+          3,
+          ""
+        ],
+        [
+          "GA + 2-opt",
+          "$10.46(0.04)$",
+          10.35,
+          10.5,
+          "",
+          235.62,
+          "$(9.95)$",
+          "$8.07(0.26)$",
+          10
+        ],
+        [
+          "GA + 3-opt",
+          "$10.45(0.05)$",
+          10.36,
+          10.5,
+          "",
+          241.59,
+          "$(10.14)$",
+          "$8.07(0.26)$",
+          14
+        ],
+        [
+          "GA + 4-opt",
+          "$10.45(0.05)$",
+          10.37,
+          10.49,
+          "",
+          243.48,
+          "$(11.71)$",
+          "$8.14(0.35)$",
+          15
+        ],
+        [
+          "GA + 5-opt",
+          "$10.47(0.04)$",
+          10.33,
+          10.5,
+          "",
+          240.83,
+          "$(15.67)$",
+          "$8.04(0.21)$",
+          17
+        ],
+        [
+          "GA + TS",
+          "$17.07(1.94)$",
+          13.9,
+          20.68,
+          "",
+          280.2,
+          "$(10.99)$",
+          "$8.00(0.12)$",
+          14
+        ],
+        [
+          "Church",
+          "$14.19(3.59)$",
+          7.77,
+          29.78,
+          "",
+          "166.70 (226.37)",
+          "$12.09(4.40)$",
+          "$5-10$",
+          ""
+        ],
+        [
+          "Random",
+          "$23.51(2.60)$",
+          5.75,
+          34.26,
+          "",
+          "1407.30 (841.16)",
+          "$9.48(4.60)$",
+          "-",
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 9
+    }
+  ]
+}

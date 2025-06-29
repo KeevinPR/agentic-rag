@@ -1,0 +1,537 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/CSA-DE:EDA- a Novel Bio-inspired Algorithm for Function Optimization and Segmentation of Brain MR Images.md",
+    "filename": "CSA-DE:EDA- a Novel Bio-inspired Algorithm for Function Optimization and Segmentation of Brain MR Images.md",
+    "title": "CSA-DE:EDA- a Novel Bio-inspired Algorithm for Function Optimization and Segmentation of Brain MR Images",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Five DE mutation strategies, denoted as DE/x/y, with \" $x$ \" the mutated vector, \" $y$ \" denotes the number of difference vectors, $r_{1}, r_{2}, r_{3}, r_{4}$, $r_{5}$ are mutually exclusive and random values in $\\left[1, N_{p}\\right] ; \\boldsymbol{X}_{\\boldsymbol{b} \\boldsymbol{o} \\boldsymbol{t}}^{\\boldsymbol{G}}$ the best individual in the current population, and $F$ is a user specified positive scaling factor that controls the scaling of the difference vectors",
+      "headers": [
+        "Strategy <br> notation",
+        "Operation"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\boldsymbol{V}_{\\boldsymbol{i}}^{\\boldsymbol{G}}=\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}+\\boldsymbol{F} \\cdot\\left(\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}-\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}\\right)$"
+        ],
+        [
+          1,
+          "$\\boldsymbol{V}_{\\boldsymbol{i}}^{\\boldsymbol{G}}=\\boldsymbol{X}_{\\boldsymbol{b} \\boldsymbol{o} \\boldsymbol{t}}^{\\boldsymbol{G}}+\\boldsymbol{F} \\cdot\\left(\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}-\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}\\right)$"
+        ],
+        [
+          "DE/rand-to-best/1",
+          "$\\boldsymbol{V}_{\\boldsymbol{i}}^{\\boldsymbol{G}}=\\boldsymbol{X}_{\\boldsymbol{i}}^{\\boldsymbol{G}}+\\boldsymbol{F} \\cdot\\left(\\boldsymbol{X}_{\\boldsymbol{b} \\boldsymbol{o} \\boldsymbol{t}}^{\\boldsymbol{G}}-\\boldsymbol{X}_{\\boldsymbol{i}}^{\\boldsymbol{G}}\\right)+\\boldsymbol{F} \\cdot\\left(\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}-\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}\\right)$"
+        ],
+        [
+          2,
+          "$\\boldsymbol{V}_{\\boldsymbol{i}}^{\\boldsymbol{G}}=\\boldsymbol{X}_{\\boldsymbol{b} \\boldsymbol{o} \\boldsymbol{t}}^{\\boldsymbol{G}}+\\boldsymbol{F} \\cdot\\left(\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}-\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}\\right)+\\boldsymbol{F} \\cdot\\left(\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}-\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}\\right)$"
+        ],
+        [
+          2,
+          "$\\boldsymbol{V}_{\\boldsymbol{i}}^{\\boldsymbol{G}}=\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}+\\boldsymbol{F} \\cdot\\left(\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}-\\boldsymbol{X}_{\\boldsymbol{x}}^{\\boldsymbol{G}}\\right)+\\boldsymbol{F} \\cdot\\left(\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}-\\boldsymbol{X}_{\\boldsymbol{r}_{\\boldsymbol{t}}}^{\\boldsymbol{G}}\\right)$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The CSA-DE/EDA algorithm",
+      "headers": [
+        "Line",
+        "Pseudo code of CSA-DE/EDA"
+      ],
+      "rows": [
+        [
+          1,
+          "Initialization: Randomly generate N antibodies $\\boldsymbol{A} \\boldsymbol{b}^{\\boldsymbol{0}}(k=0)$"
+        ],
+        [
+          2,
+          "while the stopping criterion is not met"
+        ],
+        [
+          3,
+          "Evaluate the vector $\\boldsymbol{f}^{\\boldsymbol{k}}$"
+        ],
+        [
+          4,
+          3.1
+        ],
+        [
+          5,
+          3.4
+        ],
+        [
+          6,
+          3.1
+        ],
+        [
+          7,
+          -3.2
+        ],
+        [
+          8,
+          3.3
+        ],
+        [
+          9,
+          "EDA-based receptor editing to replace the $r *$"
+        ],
+        [
+          10,
+          3.4
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Performance of five optimization algorithms for the considered benchmark functions in their five-dimensional form. Italic indicates the best performance",
+      "headers": [
+        "",
+        "",
+        "G. Ros. <br> 5",
+        "M. Lan. <br> 5",
+        "S. Fox. <br> 5",
+        "E. Mic. <br> 5",
+        "T. Pol. <br> 5"
+      ],
+      "rows": [
+        [
+          "CSA",
+          "VTR",
+          "$1.0 \\mathrm{e}-6$",
+          "N/A",
+          "N/A",
+          "$-4.687$",
+          "$1.0 \\mathrm{e}-7$"
+        ],
+        [
+          "",
+          "$f$",
+          "$1.173^{*}$",
+          "$-0.953^{*}$",
+          "$-8.683^{*}$",
+          "$-4.364^{*}$",
+          "$2.30 \\mathrm{e}+4^{+}$"
+        ],
+        [
+          "",
+          "BVAT",
+          0.387,
+          "$-0.962$",
+          "$-10.17$",
+          "$-4.560$",
+          "$3.20 \\mathrm{e}+3$"
+        ],
+        [
+          "",
+          "ENES",
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "DE",
+          "$f$",
+          "VTR $^{\\circ}$",
+          "$-0.963^{\\circ}$",
+          "$-10.20^{+}$",
+          "$-4.67^{+}$",
+          "VTR $^{\\circ}$"
+        ],
+        [
+          "",
+          "BVAT",
+          0.0,
+          "$-0.965$",
+          "$-10.40$",
+          "$-\\boldsymbol{4 . 8 2 6}$",
+          "$4.3 \\mathrm{e}-29$"
+        ],
+        [
+          "",
+          "ENES",
+          4561,
+          "N/A",
+          "N/A",
+          5339,
+          17325
+        ],
+        [
+          "EDA",
+          "$f$",
+          "$2.442^{+}$",
+          "$-0.899^{+}$",
+          "$-6.342^{+}$",
+          "$-3.745^{+}$",
+          "$5.24 \\mathrm{e}+2^{+}$"
+        ],
+        [
+          "",
+          "BVAT",
+          1.392,
+          "$-0.947$",
+          "$-8.439$",
+          "$-4.628$",
+          "$2.69 \\mathrm{e}+2$"
+        ],
+        [
+          "DE/EDA",
+          "ENES",
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "",
+          "$f$",
+          "VTR $^{\\circ}$",
+          "$-0.964^{\\circ}$",
+          "$-10.40^{\\circ}$",
+          "$-4.680^{\\circ}$",
+          "VTR $^{\\circ}$"
+        ],
+        [
+          "",
+          "BVAT",
+          0.0,
+          "$-0.965$",
+          "$-10.40$",
+          "$-4.687$",
+          0.0
+        ],
+        [
+          "",
+          "ENES",
+          4554,
+          "N/A",
+          "N/A",
+          2894,
+          14009
+        ],
+        [
+          "CSA-DE/EDA",
+          "$f$",
+          "VTR",
+          "$-0.964$",
+          "$-10.40$",
+          "$-4.687$",
+          "VTR"
+        ],
+        [
+          "",
+          "BVAT",
+          0.0,
+          "$-0.965$",
+          "$-10.40$",
+          "$-4.687$",
+          0.0
+        ],
+        [
+          "",
+          "ENES",
+          3985,
+          "N/A",
+          "N/A",
+          4132,
+          13456
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Performance of five optimization algorithms for the considered benchmark functions in their 10-dimensional form",
+      "headers": [
+        "",
+        "",
+        "G. Ros. <br> 10",
+        "M. Lan. <br> 10",
+        "S. Fox. <br> 10",
+        "E. Mic. <br> 10",
+        "T. Pol. <br> 10"
+      ],
+      "rows": [
+        [
+          "CSA",
+          "VTR",
+          "$1.0 \\mathrm{e}-6$",
+          "N/A",
+          "N/A",
+          "$-9.660$",
+          "$1.0 \\mathrm{e}-7$"
+        ],
+        [
+          "",
+          "$f$",
+          "$15.590^{*}$",
+          "$-0.587^{*}$",
+          "$-2.218^{*}$",
+          "$-6.876^{*}$",
+          "$1.69 \\mathrm{e}+11^{+}$"
+        ],
+        [
+          "",
+          "BVAT",
+          9.139,
+          "$-0.784$",
+          "$-2.655$",
+          "$-7.645$",
+          "$1.32 \\mathrm{e}+10$"
+        ],
+        [
+          "",
+          "ENES",
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "DE",
+          "$f$",
+          "VTR $^{\\circ}$",
+          "$-0.834^{*}$",
+          "$-10.20^{+}$",
+          "$-9.440^{+}$",
+          "VTR $^{\\circ}$"
+        ],
+        [
+          "",
+          "BVAT",
+          0.0,
+          "$-0.965$",
+          "$-10.28$",
+          "$-9.660$",
+          "$5.7 \\mathrm{e}-29$"
+        ],
+        [
+          "",
+          "ENES",
+          27169,
+          "N/A",
+          "N/A",
+          77365,
+          78937
+        ],
+        [
+          "EDA",
+          "$f$",
+          "$8.168^{+}$",
+          "$-0.180^{+}$",
+          "$-0.900^{+}$",
+          "$-7.166^{+}$",
+          "$3.39 \\mathrm{e}+6^{+}$"
+        ],
+        [
+          "",
+          "BVAT",
+          7.755,
+          "$-0.617$",
+          "$-1.446$",
+          "$-9.184$",
+          "$1.69 \\mathrm{e}+6$"
+        ],
+        [
+          "DE/EDA",
+          "ENES",
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A"
+        ],
+        [
+          "",
+          "$f$",
+          "VTR $^{\\circ}$",
+          "$-0.902^{+}$",
+          "$-10.26^{\\circ}$",
+          "$-9.450^{+}$",
+          "VTR $^{\\circ}$"
+        ],
+        [
+          "",
+          "BVAT",
+          0.0,
+          "$-0.965$",
+          "$-10.28$",
+          "$-9.660$",
+          0.0
+        ],
+        [
+          "CSA-DE/EDA",
+          "ENES",
+          22709,
+          "N/A",
+          "N/A",
+          57892,
+          71293
+        ],
+        [
+          "",
+          "$f$",
+          "VTR",
+          "$-0.965$",
+          "$-10.28$",
+          "$-9.659$",
+          "VTR"
+        ],
+        [
+          "",
+          "BVAT",
+          0.0,
+          "$-0.965$",
+          "$-10.28$",
+          "$-9.660$",
+          0.0
+        ],
+        [
+          "",
+          "ENES",
+          20121,
+          "N/A",
+          "N/A",
+          16133,
+          70638
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 7
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Average segmentation accuracy on the IBSR_V2.0 dataset. Italic indicates the best performance",
+      "headers": [
+        "Accuracy",
+        "FSL (\\%)",
+        "D-C (\\%)",
+        "SPM (\\%)",
+        "GA-GMM (\\%)",
+        "HMRF-CSA (\\%)",
+        "HMRF-CSA/ <br> DE/EDA (\\%)"
+      ],
+      "rows": [
+        [
+          "Overall",
+          75.06,
+          75.02,
+          81.02,
+          74.97,
+          82.95,
+          89.9
+        ],
+        [
+          "GM",
+          77.35,
+          73.8,
+          84.42,
+          77.9,
+          84.92,
+          92.02
+        ],
+        [
+          "WM",
+          87.08,
+          88.41,
+          87.38,
+          87.23,
+          83.88,
+          87.52
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 7
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Average accuracy and computation time of PHMRF-CSA/DE/EDA and HMRF-CSA/ DE/EDA on one 3D MR image of IBSR_V2.0. Italic indicates the best performance",
+      "headers": [
+        "Methods",
+        "Overall <br> accuracy (\\%)",
+        "DSC for <br> GM (\\%)",
+        "DSC for <br> WM (\\%)",
+        "Time <br> cost (s)"
+      ],
+      "rows": [
+        [
+          "PHMRF-CSA/DE/EDA",
+          85.09,
+          86.85,
+          86.66,
+          2164
+        ],
+        [
+          "HMRF-CSA/DE/EDA",
+          89.9,
+          92.02,
+          87.52,
+          1510
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 Average segmentation accuracy on the IBSR_20Normals dataset",
+      "headers": [
+        "Accuracy",
+        "FSL (\\%)",
+        "EMS (\\%)",
+        "SPM (\\%)",
+        "GA-GMM (\\%)",
+        "VEM (\\%)",
+        "VMG-NDE (\\%)",
+        "HMRF-CSA/ <br> DE/EDA (\\%)"
+      ],
+      "rows": [
+        [
+          "Overall",
+          72.34,
+          71.37,
+          62.3,
+          70.71,
+          74.08,
+          80.82,
+          84.89
+        ],
+        [
+          "GM",
+          74.51,
+          75.86,
+          67.76,
+          75.49,
+          80.47,
+          83.83,
+          87.57
+        ],
+        [
+          "WM",
+          75.18,
+          69.97,
+          71.2,
+          73.0,
+          62.11,
+          81.25,
+          81.89
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 8
+    }
+  ]
+}

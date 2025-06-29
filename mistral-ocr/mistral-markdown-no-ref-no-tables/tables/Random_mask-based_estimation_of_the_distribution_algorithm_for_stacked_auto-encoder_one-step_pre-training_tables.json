@@ -1,0 +1,381 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Random mask-based estimation of the distribution algorithm for stacked auto-encoder one-step pre-training.md",
+    "filename": "Random mask-based estimation of the distribution algorithm for stacked auto-encoder one-step pre-training.md",
+    "title": "Random mask-based estimation of the distribution algorithm for stacked auto-encoder one-step pre-training",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Different heuristic algorithm-based deep neural network optimization.",
+      "headers": [
+        "",
+        "Optimization algorithm",
+        "Hyper-parameter",
+        "Architectures searching",
+        "Weights searching"
+      ],
+      "rows": [
+        [
+          0.2012,
+          "Genetic algorithm",
+          "",
+          "$\\sqrt{ }$",
+          "$\\sqrt{ }$"
+        ],
+        [
+          "Assun et al. (Assunção et al., 2019)",
+          "Genetic algorithm",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          "Snoek et al. (Bella et al., 2017)",
+          "Bayesian",
+          "$\\sqrt{ }$",
+          "",
+          ""
+        ],
+        [
+          "Bello et al. (Zoph et al., 2018)",
+          "Reinforcement learning",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          "Zoph et al. (Zhong et al., 2018)",
+          "Random search",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          "Zhong et al. (Real et al., 2017)",
+          "Reinforcement learning",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          "Real et al. (Xie et al., 2018)",
+          "Genetic algorithm",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          "Xie et al. (Cai et al., 2018)",
+          "Reinforcement learning",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          "Cai et al. (Zhang et al., 2018)",
+          "Reinforcement learning",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          "Zhang et al. (Sun et al., 2020)",
+          "Random sampling",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          0.2019,
+          "Particle swarm optimization",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          "Sun et al. (Sun et al., 2019, Xu et al., 2019)",
+          "Genetic algorithm",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          "Xu et al. (Lopez-Rincon et al., 2018)",
+          "Reinforcement learning",
+          "",
+          "$\\sqrt{ }$",
+          ""
+        ],
+        [
+          2012,
+          "Random search",
+          "$\\sqrt{ }$",
+          "",
+          ""
+        ],
+        [
+          "Lopez-Rincon et al. (Baldominus et al., 2018)",
+          "Genetic algorithm",
+          "$\\sqrt{ }$",
+          "",
+          ""
+        ],
+        [
+          0.1996,
+          "Genetic algorithm",
+          "$\\sqrt{ }$",
+          "",
+          ""
+        ],
+        [
+          "Martin et al. (Martin et al., 2018)",
+          "Genetic algorithm",
+          "$\\sqrt{ }$",
+          "$\\sqrt{ }$",
+          ""
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "No. of parameters in pre-training on MNIST.",
+      "headers": [
+        "Architectures",
+        "No. of parameters"
+      ],
+      "rows": [
+        [
+          "$784-120-10$",
+          189064
+        ],
+        [
+          "$784-300-100-10$",
+          344784
+        ],
+        [
+          "$784-1000-500-250-30-10$",
+          "$1,442,584$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison of state-of-the-arts.",
+      "headers": [
+        "Models",
+        "Dataset",
+        "Accuracy <br> $(\\%)$"
+      ],
+      "rows": [
+        [
+          5,
+          "Fashion-",
+          63.1
+        ],
+        [
+          "",
+          "MNIST",
+          ""
+        ],
+        [
+          "MobileNet ${ }^{[* 1}$",
+          "Fashion-",
+          95.0
+        ],
+        [
+          "",
+          "MNIST",
+          ""
+        ],
+        [
+          "DenseNet-BC ${ }^{[* 1}$",
+          "Fashion-",
+          95.4
+        ],
+        [
+          "",
+          "MNIST",
+          95.7
+        ],
+        [
+          "Dual path network with wide resnet 28-10 ${ }^{[* 1}$",
+          "Fashion-",
+          96.3
+        ],
+        [
+          "",
+          "MNIST",
+          ""
+        ],
+        [
+          "WRN-28-10 + Random Erasing ${ }^{[* 1}$",
+          "Fashion-",
+          93.9
+        ],
+        [
+          "",
+          "MNIST",
+          94.53
+        ],
+        [
+          "Google AutoML ${ }^{[* 1}$",
+          "Fashion-",
+          94.47
+        ],
+        [
+          "",
+          "MNIST",
+          97.19
+        ],
+        [
+          0.2019,
+          "Fashion-",
+          92.01
+        ],
+        [
+          "",
+          "MNIST",
+          91.92
+        ],
+        [
+          "psoCNN + dropout + BN (best) (Junior and Yen,",
+          "Fashion-",
+          89.71
+        ],
+        [
+          "",
+          "MNIST",
+          91.18
+        ],
+        [
+          "Hermite Convolutional Networks (Sabour et al.,",
+          "Fashion-",
+          92.45
+        ],
+        [
+          2017,
+          "MNIST",
+          92.03
+        ],
+        [
+          "Adaptive Learning Rate CNN (Lopez-Rincon",
+          "Fashion-",
+          98.38
+        ],
+        [
+          2018,
+          "MNIST",
+          98.85
+        ],
+        [
+          "Adaptive Learning Rate ResNet (Lopez-Rincon",
+          "MNIST",
+          95.74
+        ],
+        [
+          0.2018,
+          "MNIST",
+          98.92
+        ],
+        [
+          "",
+          "Fashion-",
+          88.49
+        ],
+        [
+          0.2019,
+          "Fashion-",
+          90.13
+        ],
+        [
+          "",
+          "MNIST",
+          ""
+        ],
+        [
+          2017,
+          "Fashion-",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          71,
+          "Fashion-",
+          ""
+        ],
+        [
+          "",
+          "MNIST",
+          ""
+        ],
+        [
+          502017,
+          "Fashion-",
+          92.03
+        ],
+        [
+          "",
+          "MNIST",
+          ""
+        ],
+        [
+          "Our algorithm (784-1000-500-250-30-10)",
+          "Fashion-",
+          98.85
+        ],
+        [
+          "",
+          "MNIST",
+          ""
+        ],
+        [
+          "EUDNN (Sun et al., 2019) (784-400-202-106-",
+          "MNIST",
+          95.74
+        ],
+        [
+          "88-10)",
+          "MNIST",
+          98.92
+        ],
+        [
+          "SGD based (784-400-202-106-88-10)",
+          "Fashion-",
+          88.49
+        ],
+        [
+          "Our algorithm (784-400-202-106-88-10)",
+          "",
+          90.13
+        ],
+        [
+          "SGD based (784-400-202-106-88-10)",
+          "Fashion-",
+          ""
+        ],
+        [
+          "Our algorithm (784-400-202-106-88-10)",
+          "Fashion-",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 40,
+      "column_count": 3
+    }
+  ]
+}

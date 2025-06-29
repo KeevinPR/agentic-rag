@@ -1,0 +1,168 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/A comparative study on evolutionary algorithms for the agent routing problem in multi-point dynamic task.md",
+    "filename": "A comparative study on evolutionary algorithms for the agent routing problem in multi-point dynamic task.md",
+    "title": "A comparative study on evolutionary algorithms for the agent routing problem in multi-point dynamic task",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Notations of the model parameters",
+      "headers": [
+        "Notation",
+        "Implication"
+      ],
+      "rows": [
+        [
+          "$V$",
+          "The speed of the agent"
+        ],
+        [
+          "$\\beta$",
+          "The capability parameter of the agent"
+        ],
+        [
+          "$P_{0}=\\left(x_{0}, y_{0}\\right)$",
+          "The initial position of the agent"
+        ],
+        [
+          "$n$",
+          "The number of tasks"
+        ],
+        [
+          "$S_{i}(0)$",
+          "The initial state of task point $i$"
+        ],
+        [
+          "$\\alpha$",
+          "The state growth index of task $i$"
+        ],
+        [
+          "$P_{i}=\\left(x_{i}, y_{i}\\right)$",
+          "The position of task point $i$"
+        ],
+        [
+          "$t_{i}^{r}$",
+          "The time when the agent reaches task point $i$"
+        ],
+        [
+          "$t_{i}^{i}$",
+          "The time when the agent leaves task point $i$"
+        ],
+        [
+          "$\\Delta t_{i}$",
+          "The execution time of the agent at task point $i$"
+        ],
+        [
+          "$\\xi$",
+          "The state threshold indicating task completion"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Parameters setting of the EDAs",
+      "headers": [
+        "Parameter",
+        "Value",
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Population size",
+          "$10 \\cdot n$",
+          "Learning rate $\\mu$",
+          0.2
+        ],
+        [
+          "Selection type",
+          "Ranking selection method",
+          3,
+          0.2
+        ],
+        [
+          "Offspring size",
+          "$10 \\cdot n$",
+          "Selection size",
+          "$n$"
+        ],
+        [
+          "Stopping criterion",
+          1000,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Parameters setting of the GA",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Population size",
+          "$10 \\cdot n$"
+        ],
+        [
+          "Inertia weight",
+          0.7
+        ],
+        [
+          "$P_{C_{\\max }}$",
+          0.9
+        ],
+        [
+          "$P_{C_{\\min }}$",
+          0.1
+        ],
+        [
+          "$P m_{\\max }$",
+          0.5
+        ],
+        [
+          "$P m_{\\min }$",
+          0
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Parameters setting of the PSO",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Population size",
+          "$10 \\cdot n$"
+        ],
+        [
+          "Inertia weight",
+          0.7
+        ],
+        [
+          "Learning rate $c_{1}$",
+          3
+        ],
+        [
+          "Learning rate $c_{2}$",
+          0.6
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    }
+  ]
+}

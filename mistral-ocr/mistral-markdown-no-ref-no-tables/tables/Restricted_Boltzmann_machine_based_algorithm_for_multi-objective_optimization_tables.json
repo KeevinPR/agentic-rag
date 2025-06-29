@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Restricted Boltzmann machine based algorithm for multi-objective optimization.md",
+    "filename": "Restricted Boltzmann machine based algorithm for multi-objective optimization.md",
+    "title": "Restricted Boltzmann machine based algorithm for multi-objective optimization",
+    "year": "2010"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "TEST INSTANCES",
+      "headers": [
+        "Test Function",
+        "Objective Functions",
+        "Characteristics"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\begin{aligned} & f_{1}(x)=x_{1} \\\\ & f_{2}(x)=g(x)\\left(1-\\sqrt{f_{1}(x) / g(x)}\\right) \\\\ & g(x)=1+\\mathrm{9}\\left(\\sum_{i=2}^{9} x_{i}\\right) /(n-1) \\end{aligned}$",
+          "Convex Pareto front $\\mathrm{n}=100$ or Scalable $x_{i} \\in[0,1]$"
+        ],
+        [
+          2,
+          "$\\begin{aligned} & f_{1}(x)=x_{1} \\\\ & f_{2}(x)=g(x)\\left(1-\\left(f_{1}(x) / g(x)\\right)^{2}\\right) \\\\ & g(x)=1+\\mathrm{9}\\left(\\sum_{i=2}^{9} x_{i}\\right) /(n-1) \\end{aligned}$",
+          "Non-convex Pareto front $\\mathrm{n}=100$ or Scalable $x_{i} \\in[0,1]$"
+        ],
+        [
+          3,
+          "$\\begin{aligned} & f_{1}(x)=x_{1} \\\\ & f_{2}(x)=g(x)\\left(1-\\sqrt{f_{1}(x) / g(x)}-f_{1}(x) / g(x) \\sin \\left(10 \\Pi f_{1}(x)\\right)\\right) \\\\ & g(x)=1+\\mathrm{9}\\left(\\sum_{i=2}^{9} x_{i}\\right) /(n-1) \\end{aligned}$",
+          "Non-continuous convex Pareto front $\\mathrm{n}=100$ or Scalable $x_{i} \\in[0,1]$"
+        ],
+        [
+          2,
+          "$\\begin{aligned} & f_{1}(x)=(1+g(x)) \\cos \\left(x_{1} \\pi / 2\\right) \\ldots \\cos \\left(x_{M-1} \\pi / 2\\right) \\\\ & f_{2}(x)=(1+g(x)) \\cos \\left(x_{1} \\pi / 2\\right) \\ldots \\sin \\left(x_{M-1} \\pi / 2\\right) \\\\ & f_{M}(x)=(1+g(x)) \\sin \\left(x_{1} \\pi / 2\\right), \\\\ & 0 \\leq x_{i} \\leq 1, \\text { for } i=1,2, \\ldots, n, \\\\ & \\text { where } g(x)=\\sum_{x_{i} \\in \\Delta_{M}}\\left(x_{i}-0.5\\right)^{2} \\end{aligned}$",
+          "Spherical Pareto Optimal front $\\mathrm{n}=\\mathrm{M}+\\mathrm{k}-1$, where $\\mathrm{k}=10$ scalable in variables number scalable in objectives number $x_{i} \\in[0,1]$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "PROXIMITY METRIC FOR ZDT1 AND DTLZ2 WITH DIFFERENT POPULATION SIZE",
+      "headers": [
+        "",
+        "MORBM",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "NSGAII",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "ZDT1-100",
+          "",
+          "",
+          "DTLZ2-5-14",
+          "",
+          "",
+          "ZDT1-100",
+          "",
+          "",
+          "DTLZ2-5-14",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 14
+    },
+    {
+      "table_number": "III",
+      "table_title": "PROXIMITY METRIC FOR ZDT1 AND DTLZ2 WITH DIFFERENT NUMBER OF HIDDEN UNIT",
+      "headers": [
+        "",
+        "MORBM",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "ZDT1-100",
+          "",
+          "",
+          "DTLZ2-5-14",
+          ""
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    },
+    {
+      "table_number": "IV",
+      "table_title": "PROXIMITY METRIC FOR ZDT1 AND DTLZ2 WITH DIFFERENT NUMBER OF TRAINING EPOCH",
+      "headers": [
+        "",
+        "MORBM",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "ZDT1-100",
+          "",
+          "",
+          "DTLZ2-5-14",
+          ""
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    },
+    {
+      "table_number": "V",
+      "table_title": "PROXIMITY METRIC FOR ZDT1 AND DTLZ2 WITH DIFFERENT NUMBER OF CLUSTER",
+      "headers": [
+        "",
+        "MORBM",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "ZDT1-100",
+          "",
+          "",
+          "DTLZ2-5-14",
+          ""
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    }
+  ]
+}

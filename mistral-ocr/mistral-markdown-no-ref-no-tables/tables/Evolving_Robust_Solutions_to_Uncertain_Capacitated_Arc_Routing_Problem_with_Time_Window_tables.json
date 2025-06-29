@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Evolving Robust Solutions to Uncertain Capacitated Arc Routing Problem with Time Window.md",
+    "filename": "Evolving Robust Solutions to Uncertain Capacitated Arc Routing Problem with Time Window.md",
+    "title": "Evolving Robust Solutions to Uncertain Capacitated Arc Routing Problem with Time Window",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Notation Table",
+      "headers": [
+        "Name",
+        "Description"
+      ],
+      "rows": [
+        [
+          "$t_{k, i}$",
+          "the $i^{\\text {th }}$ task of the $k^{\\text {th }}$ route"
+        ],
+        [
+          "$d\\left(t_{k, i}, I_{j}\\right)$",
+          "demand of $t_{k, i}$ in the $j^{\\text {th }}$ instance"
+        ],
+        [
+          "$c\\left(t_{k, i}, I_{j}\\right)$",
+          "cost of edge of $t_{k, i}$ in the $j^{\\text {th }}$ instance"
+        ],
+        [
+          "$Q$",
+          "the capacity of a vehicle"
+        ],
+        [
+          "$I_{j}$",
+          "the $j^{\\text {th }}$ CARP instance"
+        ],
+        [
+          "$\\theta$",
+          "a UCARP instance $\\left(\\theta=\\left\\{I_{1}, I_{2}, \\ldots, I_{N}\\right\\}\\right)$"
+        ],
+        [
+          "$U T$",
+          "the union of the task sets in all the CARP-TW instances"
+        ],
+        [
+          "$f_{k, i, j}$",
+          "the time when task $t_{k, i}$ of the $j^{\\text {th }}$ instance is served"
+        ],
+        [
+          "$d i s\\left(a, b, I_{j}\\right)$",
+          "the shortest distance between node a and b in the $j^{\\text {th }}$ instance"
+        ],
+        [
+          "$v$",
+          "the velocity of each vehicle"
+        ],
+        [
+          "$w$",
+          "the penalty coefficient for excess time"
+        ],
+        [
+          "$\\phi\\left(f_{k, i, j}\\right)$",
+          "the time penalty of the $k^{\\text {th }}$ route's $i^{\\text {th }}$ task in the $j^{\\text {th }}$ instance"
+        ],
+        [
+          "$d m(j)$",
+          "the multiplier for serving a task in the $j^{\\text {th }}$ instance"
+        ],
+        [
+          "$c m(j)$",
+          "the multiplier for traversing a task in the $j^{\\text {th }}$ instance"
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "THE PARAMETERS OF EDASLS",
+      "headers": [
+        "Name",
+        "Description",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$v$",
+          "Velocity of Vehicle",
+          30
+        ],
+        [
+          "$w$",
+          "Penalty Coefficient For Excess Time",
+          1
+        ],
+        [
+          "popsize",
+          "Population Size",
+          120
+        ],
+        [
+          "$\\alpha$",
+          "Number Of Sub Segments In EHBSA",
+          2
+        ],
+        [
+          "$p_{T}$",
+          "Probability of executing stochastic local search",
+          0.1
+        ],
+        [
+          "$F E_{m}$",
+          "Maximum number of fitness evaluation",
+          300000
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "IV",
+      "table_title": "THE PARAMETERS OF MAENS",
+      "headers": [
+        "Name",
+        "Description",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$v$",
+          "Velocity of Vehicle",
+          30
+        ],
+        [
+          "$w$",
+          "Penalty Coefficient For Excess Time",
+          1
+        ],
+        [
+          "popsize",
+          "Population Size",
+          30
+        ],
+        [
+          "$v$",
+          "Size of offspring generated in each generation",
+          180
+        ],
+        [
+          "$p$",
+          "Number Of Routes Picked in Merge-Split operator",
+          2
+        ],
+        [
+          "$p_{T}$",
+          "Probability of executing stochastic local search",
+          0.2
+        ],
+        [
+          "$F E_{m}$",
+          "Maximum number of fitness evaluation",
+          300000
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    }
+  ]
+}

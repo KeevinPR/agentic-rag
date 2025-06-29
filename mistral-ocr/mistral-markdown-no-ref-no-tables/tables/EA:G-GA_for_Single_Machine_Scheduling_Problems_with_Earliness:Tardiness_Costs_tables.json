@@ -1,0 +1,986 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/EA:G-GA for Single Machine Scheduling Problems with Earliness:Tardiness Costs.md",
+    "filename": "EA:G-GA for Single Machine Scheduling Problems with Earliness:Tardiness Costs.md",
+    "title": "EA:G-GA for Single Machine Scheduling Problems with Earliness:Tardiness Costs",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The combinations of EDA and GA.",
+      "headers": [
+        "EDA:GA",
+        ""
+      ],
+      "rows": [
+        [
+          "$1: 1$",
+          "The original setting ( $\\mathrm{t} \\% 2$ )"
+        ],
+        [
+          "$1: 2$",
+          "GA operator is used for $2 / 3$ occasions and EDA runs for the $1 / 3$ occasions in the total generations."
+        ],
+        [
+          "$1: 3$",
+          "GA operator is employed for $75 \\%$ of total generations and EDA runs in the remaining $25 \\%$ of the entire generations."
+        ],
+        [
+          "$2: 1$",
+          "EDA operator is run in $2 / 3$ of the number of total generations and GA runs for the $1 / 3$ occasions in the whole period."
+        ],
+        [
+          "$3: 1$",
+          "EDA operator is applied for $3 / 4$ occasions and GA is executed in the remaining $1 / 4$ generations."
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "ANOVA results at the stopping criterion of 50,000 examined solutions.",
+      "headers": [
+        "Source",
+        "DF",
+        "SS",
+        "Mean Square",
+        "F Value",
+        "P Value"
+      ],
+      "rows": [
+        [
+          "instances",
+          213,
+          "$5.32 \\mathrm{E}+12$",
+          24966564338,
+          "$1.41 \\mathrm{E}+07$",
+          "$<.0001$"
+        ],
+        [
+          "method",
+          3,
+          990458.8414,
+          330152.9471,
+          186.73,
+          "$<.0001$"
+        ],
+        [
+          "instances*method",
+          639,
+          21834746.74,
+          34170.1827,
+          19.33,
+          "$<.0001$"
+        ],
+        [
+          "Error",
+          24824,
+          43891753.69,
+          1768.117696,
+          "",
+          ""
+        ],
+        [
+          "Corrected Total",
+          25679,
+          "$5.32 \\mathrm{E}+12$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "ANOVA results at the stopping criterion of 75,000 examined solutions.",
+      "headers": [
+        "Source",
+        "DF",
+        "SS",
+        "Mean Square",
+        "F Value",
+        "P Value"
+      ],
+      "rows": [
+        [
+          "instances",
+          213,
+          "$5.31 \\mathrm{E}+12$",
+          24941096330,
+          "$1.64 \\mathrm{E}+07$",
+          "$<.0001$"
+        ],
+        [
+          "method",
+          3,
+          107158.5288,
+          35719.50961,
+          23.43,
+          "$<.0001$"
+        ],
+        [
+          "instances*method",
+          639,
+          2569676.571,
+          4021.403085,
+          2.64,
+          "$<.0001$"
+        ],
+        [
+          "Error",
+          24824,
+          37840343.96,
+          1524.345148,
+          "",
+          ""
+        ],
+        [
+          "Corrected Total",
+          25679,
+          "$5.31 \\mathrm{E}+12$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "ANOVA results at the stopping criterion of 100,000 examined solutions.",
+      "headers": [
+        "Source",
+        "DF",
+        "SS",
+        "Mean Square",
+        "F Value",
+        "P Value"
+      ],
+      "rows": [
+        [
+          "instances",
+          213,
+          "$5.31 \\mathrm{E}+12$",
+          24936063497,
+          "$1.74 \\mathrm{E}+07$",
+          "$<.0001$"
+        ],
+        [
+          "method",
+          3,
+          92494.17975,
+          30831.39325,
+          21.5,
+          "$<.0001$"
+        ],
+        [
+          "instances*method",
+          639,
+          1350141.22,
+          2112.897058,
+          1.47,
+          "$<.0001$"
+        ],
+        [
+          "Error",
+          24824,
+          35594800.28,
+          1433.886573,
+          "",
+          ""
+        ],
+        [
+          "Corrected Total",
+          25679,
+          "$5.31 \\mathrm{E}+12$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "ANOVA results at the stopping criterion of 125,000 examined solutions.",
+      "headers": [
+        "Source",
+        "DF",
+        "SS",
+        "Mean Square",
+        "F Value",
+        "P Value"
+      ],
+      "rows": [
+        [
+          "instances",
+          213,
+          "$5.31 \\mathrm{E}+12$",
+          24931260598,
+          "$1.93 \\mathrm{E}+07$",
+          "$<.0001$"
+        ],
+        [
+          "method",
+          3,
+          63931.9233,
+          21310.6411,
+          16.5,
+          "$<.0001$"
+        ],
+        [
+          "instances*method",
+          639,
+          1460446.674,
+          2285.519051,
+          1.77,
+          "$<.0001$"
+        ],
+        [
+          "Error",
+          24824,
+          32070591.19,
+          1291.918756,
+          "",
+          ""
+        ],
+        [
+          "Corrected Total",
+          25679,
+          "$5.31 \\mathrm{E}+12$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Duncan grouping at the stopping criterion of 50000 examined solutions.",
+      "headers": [
+        "Duncan Grouping",
+        "Mean",
+        "N",
+        "Methods"
+      ],
+      "rows": [
+        [
+          "A",
+          12826.724,
+          6420,
+          "ACGA"
+        ],
+        [
+          "B",
+          12814.85,
+          6420,
+          "EA/G"
+        ],
+        [
+          "C",
+          12812.509,
+          6420,
+          "Adaptive EA/G"
+        ],
+        [
+          "D",
+          12810.899,
+          6420,
+          "EA/G-GA"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Duncan grouping at the stopping criterion of 75000 examined solutions.",
+      "headers": [
+        "Duncan Grouping",
+        "Mean",
+        "N",
+        "Methods"
+      ],
+      "rows": [
+        [
+          "A",
+          12814.902,
+          6420,
+          "ACGA"
+        ],
+        [
+          "B",
+          12813.531,
+          6420,
+          "EA/G"
+        ],
+        [
+          "C",
+          12812.059,
+          6420,
+          "Adaptive EA/G"
+        ],
+        [
+          "D",
+          12809.391,
+          6420,
+          "EA/G-GA"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Duncan grouping at the stopping criterion of 100000 examined solutions.",
+      "headers": [
+        "Duncan Grouping",
+        "Mean",
+        "N",
+        "Methods"
+      ],
+      "rows": [
+        [
+          "A",
+          12813.66,
+          6420,
+          "EA/G"
+        ],
+        [
+          "A",
+          "",
+          "",
+          ""
+        ],
+        [
+          "A",
+          12813.276,
+          6420,
+          "ACGA"
+        ],
+        [
+          "B",
+          12811.168,
+          6420,
+          "Adaptive EA/G"
+        ],
+        [
+          "C",
+          12808.906,
+          6420,
+          "EA/G-GA"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "9",
+      "table_title": "Duncan grouping at the stopping criterion of 125000 examined solutions.",
+      "headers": [
+        "Duncan Grouping",
+        "Mean",
+        "N",
+        "Methods"
+      ],
+      "rows": [
+        [
+          "A",
+          12812.898,
+          6420,
+          "EA/G"
+        ],
+        [
+          "B",
+          12810.827,
+          6420,
+          "Adaptive EA/G"
+        ],
+        [
+          "B",
+          "",
+          "",
+          ""
+        ],
+        [
+          "B",
+          12810.149,
+          6420,
+          "ACGA"
+        ],
+        [
+          "C",
+          12808.48,
+          6420,
+          "EA/G-GA"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "10",
+      "table_title": "Selected results of Adaptive EA/G and EA/G-SGA employ different examined solutions in single machine scheduling problems.",
+      "headers": [
+        "Examined Solutions: 50000",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Adaptive EA/G",
+          "",
+          "",
+          "",
+          "",
+          "EA/G-SGA",
+          ""
+        ],
+        [
+          "Instance",
+          "Min",
+          "Avg.",
+          "Max",
+          "Min",
+          "Avg.",
+          "Max"
+        ],
+        [
+          422,
+          25656,
+          25662.8,
+          25712,
+          25656,
+          25662.1,
+          25704
+        ],
+        [
+          455,
+          6405,
+          6420.1,
+          6545,
+          6405,
+          6424.8,
+          6545
+        ],
+        [
+          488,
+          16862,
+          16865.5,
+          16888,
+          16862,
+          16862.9,
+          16888
+        ],
+        [
+          522,
+          29309,
+          29326.2,
+          29398,
+          29309,
+          29315.5,
+          29396
+        ],
+        [
+          555,
+          10187,
+          10213.9,
+          10256,
+          10187,
+          10210.7,
+          10299
+        ],
+        [
+          588,
+          24844,
+          24847.9,
+          24861,
+          24844,
+          24844.3,
+          24853
+        ],
+        [
+          622,
+          43048,
+          43100.5,
+          43371,
+          43048,
+          43079.9,
+          43244
+        ],
+        [
+          655,
+          16158,
+          16163.2,
+          16180,
+          16158,
+          16235.2,
+          16721
+        ],
+        [
+          688,
+          33551,
+          33592,
+          33686,
+          33551,
+          33608.4,
+          33665
+        ],
+        [
+          922,
+          88842,
+          88872.1,
+          88994,
+          88842,
+          88876.4,
+          89017
+        ],
+        [
+          955,
+          30582,
+          30647,
+          30804,
+          30582,
+          30649.9,
+          30795
+        ],
+        [
+          988,
+          81984,
+          81986.4,
+          81991,
+          81984,
+          81989.4,
+          82034
+        ],
+        [
+          75000,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Adaptive EA/G",
+          "",
+          "",
+          "",
+          "",
+          "EA/G-SGA",
+          ""
+        ],
+        [
+          "Instance",
+          "Min",
+          "Avg.",
+          "Max",
+          "Min",
+          "Avg.",
+          "Max"
+        ],
+        [
+          422,
+          25656,
+          25659.7,
+          25697,
+          25656,
+          25661.9,
+          25704
+        ],
+        [
+          455,
+          6405,
+          6425.4,
+          6545,
+          6405,
+          6424.8,
+          6545
+        ],
+        [
+          488,
+          16862,
+          16862.9,
+          16888,
+          16862,
+          16862.9,
+          16888
+        ],
+        [
+          522,
+          29309,
+          29323.1,
+          29398,
+          29309,
+          29312.6,
+          29396
+        ],
+        [
+          555,
+          10187,
+          10224.2,
+          10299,
+          10187,
+          10210.5,
+          10299
+        ],
+        [
+          588,
+          24844,
+          24847.9,
+          24861,
+          24844,
+          24844,
+          24844
+        ],
+        [
+          622,
+          43048,
+          43078.7,
+          43380,
+          43048,
+          43079.9,
+          43244
+        ],
+        [
+          655,
+          16158,
+          16192.8,
+          16616,
+          16158,
+          16234,
+          16721
+        ],
+        [
+          688,
+          33551,
+          33624.4,
+          33686,
+          33551,
+          33608.4,
+          33665
+        ],
+        [
+          922,
+          88841,
+          88878.5,
+          89100,
+          88842,
+          88869.4,
+          89005
+        ],
+        [
+          955,
+          30582,
+          30674.8,
+          31394,
+          30582,
+          30642.7,
+          30785
+        ],
+        [
+          988,
+          81984,
+          81985.3,
+          81989,
+          81984,
+          81985.7,
+          82033
+        ],
+        [
+          100000,
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Adaptive EA/G",
+          "",
+          "",
+          "",
+          "",
+          "EA/G-SGA",
+          ""
+        ],
+        [
+          "Instance",
+          "Min",
+          "Avg.",
+          "Max",
+          "Min",
+          "Avg.",
+          "Max"
+        ],
+        [
+          422,
+          25656,
+          25665.1,
+          25697,
+          25656,
+          25661.9,
+          25704
+        ],
+        [
+          455,
+          6405,
+          6428.4,
+          6545,
+          6405,
+          6424.8,
+          6545
+        ],
+        [
+          488,
+          16862,
+          16863.7,
+          16888,
+          16862,
+          16862.9,
+          16888
+        ],
+        [
+          522,
+          29309,
+          29326.7,
+          29398,
+          29309,
+          29312.5,
+          29396
+        ],
+        [
+          555,
+          10187,
+          10219.4,
+          10301,
+          10187,
+          10210.5,
+          10299
+        ],
+        [
+          588,
+          24844,
+          24845.8,
+          24853,
+          24844,
+          24844,
+          24844
+        ],
+        [
+          622,
+          43048,
+          43081,
+          43273,
+          43048,
+          43079.9,
+          43244
+        ],
+        [
+          655,
+          16158,
+          16208.1,
+          16640,
+          16158,
+          16234,
+          16721
+        ],
+        [
+          688,
+          33551,
+          33610,
+          33686,
+          33551,
+          33608.4,
+          33665
+        ],
+        [
+          922,
+          88842,
+          88871.6,
+          89005,
+          88842,
+          88869.4,
+          89005
+        ],
+        [
+          955,
+          30582,
+          30639.8,
+          30800,
+          30582,
+          30642.4,
+          30785
+        ],
+        [
+          988,
+          81984,
+          81985.2,
+          81989,
+          81984,
+          81985.6,
+          82033
+        ]
+      ],
+      "row_count": 44,
+      "column_count": 7
+    },
+    {
+      "table_number": "10",
+      "table_title": "Cont.",
+      "headers": [
+        "Examined Solutions: 125000",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Adaptive EA/G",
+          "",
+          "",
+          "EA/G-SGA",
+          "",
+          ""
+        ],
+        [
+          "Instance",
+          "Min",
+          "Avg.",
+          "Max",
+          "Min",
+          "Avg.",
+          "Max"
+        ],
+        [
+          422,
+          25656,
+          25669.4,
+          25793,
+          25656,
+          25661.9,
+          25704
+        ],
+        [
+          455,
+          6405,
+          6415.7,
+          6545,
+          6405,
+          6424.8,
+          6545
+        ],
+        [
+          488,
+          16862,
+          16863.7,
+          16888,
+          16862,
+          16862.9,
+          16888
+        ],
+        [
+          522,
+          29309,
+          29326.2,
+          29398,
+          29309,
+          29312.3,
+          29396
+        ],
+        [
+          555,
+          10187,
+          10223.3,
+          10351,
+          10187,
+          10209.9,
+          10299
+        ],
+        [
+          588,
+          24844,
+          24849.8,
+          24870,
+          24844,
+          24844,
+          24844
+        ],
+        [
+          622,
+          43048,
+          43078.6,
+          43244,
+          43048,
+          43079.9,
+          43244
+        ],
+        [
+          655,
+          16158,
+          16192.8,
+          16640,
+          16158,
+          16229,
+          16640
+        ],
+        [
+          688,
+          33551,
+          33580.7,
+          33686,
+          33551,
+          33608.4,
+          33665
+        ],
+        [
+          922,
+          88841,
+          88858.7,
+          88956,
+          88842,
+          88869.4,
+          89005
+        ],
+        [
+          955,
+          30582,
+          30628.4,
+          30740,
+          30582,
+          30641.9,
+          30785
+        ],
+        [
+          988,
+          81984,
+          81985.3,
+          81989,
+          81984,
+          81985.6,
+          82033
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 7
+    }
+  ]
+}

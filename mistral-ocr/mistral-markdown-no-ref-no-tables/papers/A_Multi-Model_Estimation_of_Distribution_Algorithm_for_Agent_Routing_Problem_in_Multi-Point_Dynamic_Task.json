@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/A Multi-Model Estimation of Distribution Algorithm for Agent Routing Problem in Multi-Point Dynamic Task.md",
+    "filename": "A Multi-Model Estimation of Distribution Algorithm for Agent Routing Problem in Multi-Point Dynamic Task.md",
+    "title": "A Multi-Model Estimation of Distribution Algorithm for Agent Routing Problem in Multi-Point Dynamic Task",
+    "year": "2018"
+  },
+  "references": {
+    "header": "## Reference",
+    "content": "[1] S. M. Chen and C. Y. Chen, Solving the traveling salesman problem based on the genetic simulated annealing ant colony system with particle swarm optimization techniques, Expert Systems with Applications, 38(12): 14439-14450, 2011.\n[2] J. Tang, Y. Ma and J. Guan, A max-min ant system for the split delivery weighted vehicle routing problem, Expert Systems with Applications, 40(18): 7468-7477, 2013.\n[3] X. C. Lin and C. G. Cassandras, An optimal control approach to the multi-agent persistent monitoring problem in two-dimensional spaces, IEEE Transactions on Automatic Control, 60(6): 1659-1664, 2015.\n[4] B. Xin, G. Q. Gao, Y. L. Ding, Y. G. Zhu and H. Fang, Distributed multi-robot motion planning for cooperative multi-area coverage, in 13th IEEE International Conference on Control Automation(ICCA), 2017: 361-366.\n[5] B. Xin, Y. G. Zhu, Y. L. Ding and G. Q. Gao, Coordinated motion planning of multiple robots in multi-point dynamic aggregation task, in 12th IEEE International Conference on Control and Automation(ICCA), 2016: 933-938.\n[6] S. D. Zhou and Z. Q. Sun, Survey on estimation of distribution algorithm, Acta Automatica Sinica, 33(2): 113-124, 2007.\n[7] L. L. Wang and Q. B. Zhu, An efficient approach for solving TSP: The rapidly convergent ant colony algorithm, in Proceedings of the 4th International Conference on Natural Computation(ICNC), 2008: 448-452.\n[8] H. C. B. de. Oliveira and G. C. Vasconcelos, A hybrid search method for the vehicle routing problem with time windows, Annals of Operations Research, 180(1): 125-144, 2010.\n[9] J. Ceberio, E. Irurozki, A. Mendiburu and J. A. Lozano, A review on estimation of distribution algorithm in permutation-based combinatorial optimization problems, Progress in Artificial Intelligence, 1(1): 103-117, 2012.\n[10] J. Ocenasek, A. Ochoa and M.Soto, Towards a new evolutionary computation: Advances on estimation of distribution algorithms, J. A. Lozano, P. Larranaga, I. Inza, E. Bengoetxea, Eds. Berlin: Springer, 2006.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "S. M. Chen and C. Y. Chen, Solving the traveling salesman problem based on the genetic simulated annealing ant colony system with particle swarm optimization techniques, Expert Systems with Applications, 38(12): 14439-14450, 2011."
+      },
+      {
+        "ref_id": "2",
+        "text": "J. Tang, Y. Ma and J. Guan, A max-min ant system for the split delivery weighted vehicle routing problem, Expert Systems with Applications, 40(18): 7468-7477, 2013."
+      },
+      {
+        "ref_id": "3",
+        "text": "X. C. Lin and C. G. Cassandras, An optimal control approach to the multi-agent persistent monitoring problem in two-dimensional spaces, IEEE Transactions on Automatic Control, 60(6): 1659-1664, 2015."
+      },
+      {
+        "ref_id": "4",
+        "text": "B. Xin, G. Q. Gao, Y. L. Ding, Y. G. Zhu and H. Fang, Distributed multi-robot motion planning for cooperative multi-area coverage, in 13th IEEE International Conference on Control Automation(ICCA), 2017: 361-366."
+      },
+      {
+        "ref_id": "5",
+        "text": "B. Xin, Y. G. Zhu, Y. L. Ding and G. Q. Gao, Coordinated motion planning of multiple robots in multi-point dynamic aggregation task, in 12th IEEE International Conference on Control and Automation(ICCA), 2016: 933-938."
+      },
+      {
+        "ref_id": "6",
+        "text": "S. D. Zhou and Z. Q. Sun, Survey on estimation of distribution algorithm, Acta Automatica Sinica, 33(2): 113-124, 2007."
+      },
+      {
+        "ref_id": "7",
+        "text": "L. L. Wang and Q. B. Zhu, An efficient approach for solving TSP: The rapidly convergent ant colony algorithm, in Proceedings of the 4th International Conference on Natural Computation(ICNC), 2008: 448-452."
+      },
+      {
+        "ref_id": "8",
+        "text": "H. C. B. de. Oliveira and G. C. Vasconcelos, A hybrid search method for the vehicle routing problem with time windows, Annals of Operations Research, 180(1): 125-144, 2010."
+      },
+      {
+        "ref_id": "9",
+        "text": "J. Ceberio, E. Irurozki, A. Mendiburu and J. A. Lozano, A review on estimation of distribution algorithm in permutation-based combinatorial optimization problems, Progress in Artificial Intelligence, 1(1): 103-117, 2012."
+      },
+      {
+        "ref_id": "10",
+        "text": "J. Ocenasek, A. Ochoa and M.Soto, Towards a new evolutionary computation: Advances on estimation of distribution algorithms, J. A. Lozano, P. Larranaga, I. Inza, E. Bengoetxea, Eds. Berlin: Springer, 2006."
+      }
+    ],
+    "reference_count": 10,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Notations of the proposed algorithm",
+      "headers": [
+        "Notation",
+        "Implication"
+      ],
+      "rows": [
+        [
+          "$G_{\\text {NHM }}$",
+          "Node histogram matrix(NHM);"
+        ],
+        [
+          "$G_{E H M}$",
+          "Edge histogram matrix(EHM);"
+        ],
+        [
+          "$\\lambda$",
+          "The selection ratio coefficient of NHM to EHM;"
+        ],
+        [
+          "$Z$",
+          "Population containing individuals generated using"
+        ],
+        [
+          "$N$",
+          "NHM and EHM;"
+        ],
+        [
+          "$N_{g}$",
+          "The population size;"
+        ],
+        [
+          "$\\eta$",
+          "The number of individuals generated by the probability"
+        ],
+        [
+          "$S_{b}$",
+          "models;"
+        ],
+        [
+          "$S_{b}$",
+          "Proportion of samples to population;"
+        ],
+        [
+          "$N_{b}$",
+          "The group of samples for updating NHM and EHM;"
+        ],
+        [
+          "$Z_{c}$",
+          "The number of individuals in $Z_{b}$"
+        ],
+        [
+          "$Z_{n}$",
+          "The group in which individuals are generated using"
+        ],
+        [
+          "$Z_{\\text {max }}$",
+          "EHM;"
+        ],
+        [
+          "$g_{\\text {max }}$",
+          "The maximum number of iterations"
+        ],
+        [
+          "$g$",
+          "The identifier of iteration"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Mainly parameters of each instance",
+      "headers": [
+        "No.",
+        "$n$",
+        "$\\left(x_{i}, y_{i}\\right)(\\mathrm{m})$",
+        "$S_{i}$",
+        "$\\alpha_{j}$",
+        "$V(\\mathrm{~m} / \\mathrm{min})$",
+        "$\\beta$"
+      ],
+      "rows": [
+        [
+          1,
+          4,
+          "$[0,500]$",
+          "$[0,10]$",
+          "$[0,0.2]$",
+          50,
+          1
+        ],
+        [
+          2,
+          8,
+          "",
+          "",
+          0,
+          50,
+          ""
+        ],
+        [
+          3,
+          8,
+          "$[0,500]$",
+          "$[0,10]$",
+          "$[0,0.2]$",
+          500,
+          1
+        ],
+        [
+          4,
+          8,
+          "",
+          "",
+          "",
+          50,
+          ""
+        ],
+        [
+          5,
+          30,
+          "$[0,500]$",
+          "$[0,10]$",
+          "$[0,0.2]$",
+          50,
+          1
+        ],
+        [
+          6,
+          100,
+          "$[0,500]$",
+          "$[0,10]$",
+          "$[0,0.015]$",
+          100,
+          1
+        ],
+        [
+          7,
+          200,
+          "$[0,500]$",
+          "$[0,10]$",
+          "$[0,0.015]$",
+          100,
+          2
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Statistical results",
+      "headers": [
+        "No.",
+        "$n$",
+        "optimal <br> value(min.)",
+        "objective value(min.)",
+        "",
+        "",
+        "runtime (sec.)"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "best value",
+          "worst value",
+          "average $\\pm$ std",
+          "average $\\pm$ std"
+        ],
+        [
+          1,
+          4,
+          46.12,
+          46.12,
+          46.12,
+          "$46.12 \\pm 0$",
+          "$0.58 \\pm 0.039$"
+        ],
+        [
+          2,
+          8,
+          97.09,
+          97.09,
+          97.09,
+          "$97.09 \\pm 0$",
+          "$1.50 \\pm 0.055$"
+        ],
+        [
+          3,
+          8,
+          66.43,
+          66.43,
+          66.64,
+          "$66.47 \\pm 0.075$",
+          "$1.46 \\pm 0.007$"
+        ],
+        [
+          4,
+          8,
+          73.48,
+          73.48,
+          73.48,
+          "$73.48 \\pm 0$",
+          "$1.49 \\pm 0.037$"
+        ],
+        [
+          5,
+          30,
+          "n.a.",
+          544.77,
+          546.9,
+          "$545.57 \\pm 0.61$",
+          "$13.82 \\pm 0.153$"
+        ],
+        [
+          6,
+          100,
+          "n.a.",
+          934.97,
+          946.17,
+          "$942.97 \\pm 3.14$",
+          "$153.40 \\pm 3.033$"
+        ],
+        [
+          7,
+          200,
+          "n.a.",
+          986.69,
+          994.45,
+          "$990.84 \\pm 2.08$",
+          "$719.20 \\pm 2.749$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    }
+  ]
+}

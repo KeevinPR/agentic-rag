@@ -1,0 +1,401 @@
+# Article 
+
+## An Adaptive Covariance Scaling Estimation of Distribution Algorithm
+
+Qiang Yang ${ }^{1, * *}$, Yong $\mathrm{Li}^{1}$, Xu-Dong Gao ${ }^{1}$, Yuan-Yuan Ma ${ }^{2}$, Zhen-Yu Lu ${ }^{1}$, Sang-Woon Jeon ${ }^{3}$ and Jun Zhang ${ }^{3,4}$
+
+## check for updates
+
+Citation: Yang, Q.; Li, Y.; Gao, X.-D.; Ma, Y.-Y.; Lu, Z.-Y.; Jeon, S.-W.; Zhang, J. An Adaptive Covariance Scaling Estimation of Distribution Algorithm. Mathematics 2021, 9, 3207. https:// doi.org/10.3390/math9243207
+
+Academic Editor: Simeon Reich
+Received: 8 November 2021
+Accepted: 7 December 2021
+Published: 11 December 2021
+
+Publisher's Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+## $\odot$ 0
+
+Copyright: (c) 2021 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https:// creativecommons.org/licenses/by/ $4.0 /$ ).
+
+1 School of Artificial Intelligence, Nanjing University of Information Science and Technology, Nanjing 210044, China; 20201249539@nuist.edu.cn (Y.L.); 003103@nuist.edu.cn (X.-D.G.); 001114@nuist.edu.cn (Z.-Y.L.)
+2 College of Computer and Information Engineering, Henan Normal University, Xinxiang 453007, China; 121100@htu.edu.cn
+3 Department of Electrical and Electronic Engineering, Hanyang University, Ansan 15588, Korea; sangwoonjeon@hanyang.ac.kr (S.-W.J.); junzhang@ieee.org (J.Z.)
+4 Department of Computer Science and Information Engineering, Chaoyang University of Technology, Taichung 413310, Taiwan
+
+* Correspondence: qiang_yang@nuist.edu.cn or mmmyq@126.com
+
+Abstract: Optimization problems are ubiquitous in every field, and they are becoming more and more complex, which greatly challenges the effectiveness of existing optimization methods. To solve the increasingly complicated optimization problems with high effectiveness, this paper proposes an adaptive covariance scaling estimation of distribution algorithm (ACSEDA) based on the Gaussian distribution model. Unlike traditional EDAs, which estimate the covariance and the mean vector, based on the same selected promising individuals, ACSEDA calculates the covariance according to an enlarged number of promising individuals (compared with those for the mean vector). To alleviate the sensitivity of the parameters in promising individual selections, this paper further devises an adaptive promising individual selection strategy for the estimation of the mean vector and an adaptive covariance scaling strategy for the covariance estimation. These two adaptive strategies dynamically adjust the associated numbers of promising individuals as the evolution continues. In addition, we further devise a cross-generation individual selection strategy for the parent population, used to estimate the probability distribution by combing the sampled offspring in the last generation and the one in the current generation. With the above mechanisms, ACSEDA is expected to compromise intensification and diversification of the search process to explore and exploit the solution space and thus could achieve promising performance. To verify the effectiveness of ACSEDA, extensive experiments are conducted on 30 widely used benchmark optimization problems with different dimension sizes. Experimental results demonstrate that the proposed ACSEDA presents significant superiority to several state-of-the-art EDA variants, and it preserves good scalability in solving optimization problems.
+
+Keywords: estimation of distribution algorithm; covariance scaling; gaussian distribution; meta-heuristic algorithm; problem optimization
+
+## 1. Introduction
+
+Optimization problems are ubiquitous in daily life and industrial engineering [1,2], such as protein structure prediction [3], community detection [4], control of pollutant spreading [5] and multi-compartment electric vehicle routing [6]. These optimization problems often preserve characteristics such as non-convex, discontinuous, and nondifferentiable [7-10], which greatly challenge the effectiveness of traditional gradient-based optimization algorithms or even make them infeasible [11]. In particular, in the era of big data and the Internet of Things, optimization problems are becoming more and more complex due to the increase in dimensionality [12-14]. For instance, some unimodal problems become multimodal with many local optima [15], while some multimodal problems
+
+become more complicated with an increasing number of wide and flat local areas [16,17,18]. Such complicated optimization problems are becoming more and more common nowadays, and thus, it is urgent to develop effective optimization algorithms to solve them, so as to promote the development of related fields.
+
+As a kind of gradient-free meta-heuristic algorithm, estimation of distribution algorithm (EDA) mainly maintains a population of individuals to iteratively search the solution space, with each individual representing a feasible solution [19]. During each generation, it selects a number of promising individuals to estimate the probability distribution of the population, and it then randomly samples a new population of solutions based on the estimated probability distribution [20,21]. Due to the randomness in sampling the offspring, EDA preserves high diversity and strong global search ability [22]. Therefore, a lot of researchers have paid extensive attention to developing effective EDAs, and, consequently, not only have EDAs been applied to solve various optimization problems, such as multimodal optimization problems [23] and multi-objective optimization problems [24], but also they have been employed to solve many real-world problems, such as multipolicy insurance investment planning [25] and multi-source heterogeneous user-generated content-driven interactive [22].
+
+In the literature, most EDAs utilize the Gaussian distribution model to evaluate the probability distribution of the population, which is then adopted to sample new solutions [26,27]. During the estimation of the distribution, based on whether the correlation between variables is considered, the current Gaussian estimations of distribution algorithms (GEDAs) are mainly divided into two categories [20,27,28], namely univariate GEDAs (UGEDAs) [29,30,31] and multivariate GEDAs (MGEDAs) [32,33,34,35,36].
+
+UGEDAs [30] consider that each variable is independent on each other. Therefore, the probability distribution of each variable is estimated individually. The most advantageous property of UGEDAs is that the computational cost of the distribution estimation and the offspring sampling is low [31]. However, their effectiveness deteriorates drastically when confronted with optimization problems with interacted variables [29].
+
+Different from UGEDAs, MGEDAs take the correlation among variables into consideration [34], which is realized by estimating the covariance among all variables. With the covariance matrix, MGEDAs could capture the structure of the optimization problem and thus implicitly offer useful information to direct the search of the population [35]. Due to this advantage, MGEDAs achieve much better performance than UGEDAs, especially on problems with many interactive variables [20]. As a result, MGEDAs have been extensively researched in the literature [37,38,39]. However, such superiority of MGEDAs is at the sacrifice of efficiency, as calculating the covariance among all variables is very time-consuming [32].
+
+In MGEDAs, the parameters (i.e., the mean vector and the covariance matrix) of the probability distribution are usually estimated based on a certain number of promising individuals [28]. Specifically, in the probability distribution, the mean vector plays a key role in controlling the center of the offspring to be sampled, while the covariance takes charge of the range of the offspring around the center. In other words, the mean vector makes a crucial influence on the convergence of the population to the optimal areas, while the covariance affects the population diversity [40]. Therefore, to maintain high search diversity for EDAs, many researchers have designed variance or covariance scaling methods [37,41,42,43] to enlarge the sampling range of the estimated probability distribution. However, on the one side, the basic covariance (variance) is still estimated on the same promising individuals selected for the estimation of the mean vector in most existing GEDAs. Therefore, after the covariance (variance) scaling, implemented by multiplying a scaling factor on the estimated covariance (variance) in most covariance scaling methods, the learned structure of the optimization problem, by them, remains unchanged; on the other side, most existing covariance (variance) scaling methods enlarge the estimated covariance (variance) the same degree in different directions.
+
+To remedy the above shortcomings, this paper devises an adaptive covariance scaling method for MGEDAs, leading to an adaptive covariance scaling estimation of distribution algorithm (ACSEDA). Specifically, for the estimation of the mean vector in the probability distribution, it is the same as existing MGEDAs, namely estimating it based on a certain number of promising individuals. However, for the estimation of the covariance in the probability distribution, different from existing MGEDAs, ACSEDA first adaptively enlarges the number of promising individuals, and then, it calculates the covariance on the basis of the scaled promising individuals. In this way, the sampling range of the estimated probability distribution could be enlarged, which is helpful for sampling diversified offspring. As a result, the search diversity of EDA could be amplified, and thus, the chance of falling into local areas could be declined.
+
+As a whole, the main contributions of this paper are summarized as follows:
+(1) An adaptive covariance scaling method is proposed to adaptively enlarge the sampling range of the estimated probability distribution. Different from most existing covariance scaling methods, we scale the covariance by calculating the covariance based on an amplified number of promising individuals. As a result, not only could the learned structure of the optimization problem captured by the algorithm be improved but the covariance in different directions is also scaled differently. In this way, it is expected that the sampled offspring are not only of high quality, but they are also diversified in different areas.
+(2) An adaptive selection of promising individuals for the estimation of the mean vector is further designed by adaptively decreasing the selection ratio, which is the number of the selected promising individuals out of the whole population. In this way, the estimated mean vector, namely the center of the offspring to be sampled, is gradually close to the promising areas that the current population covers. Therefore, the search process is gradually biased toward exploiting the solution space to refine the solution accuracy. However, it should be mentioned that such a bias is not greedy and not at the serious sacrifice of the population diversity because of the aforementioned covariance scaling technique.
+(3) A cross-generation individual selection scheme, for the parent population to estimate the probability distribution, is devised by combining the sampled offspring in the last generation and the one in the current generation to select parent individuals for the next generation. Instead of directly utilizing the sampled offspring as the parent population for the next generation in most existing MGEDAs, the proposed ACSEDA combines the sampled offspring in the last generation and the one in the current generation to select the top half best individuals to form the parent population for the next generation. In this way, the parent population formed is neither too crowded nor too scattered, and thus, the estimated probability distribution is of high quality to sample slightly diversified offspring to approach the optimal areas.
+(4) With the above mechanisms, the proposed ACSEDA is expected to compromise intensification and diversification of the search process well to explore and exploit the solution space and could thus achieve promising performance.
+To verify the effectiveness of the proposed ACSEDA, this paper conducts extensive experiments on the widely used CEC2014 [44] benchmark optimization problems, with different dimension sizes, by comparing ACSEDA to 7 state-of-the-art GEDAs. In addition, deep investigations on the components of ACSEDA are also taken to observe what contributes to its promising performance in solving optimization problems.
+
+The remainder of this study is organized as follows: Section 2 reviews related works on GEDAs; then, the proposed ACSEDA is elucidated in detail in Section 3; in Section 4, extensive experiments are conducted to verify the effectiveness of the developed ACSEDA; last, in Section 5, conclusions are presented.
+
+# 2. Related Work 
+
+### 2.1. Basic GEDA
+
+The overall framework of a general GEDA is outlined in Algorithm 1. As a whole, the basic principle of GEDA is to iteratively build a Gaussian probability distribution model, based on a certain number of promising individuals selected from the current population, and then sample new individuals based on the built probability model for the next generation [21].
+
+```
+Algorithm 1: The Procedure of GEDA.
+Input: population size \(P S\), selection ratio \(s r\);
+1: Set \(g=0\), and randomly initialize the population \(\boldsymbol{P}^{g} ;\)
+2: Obtain the global best solution Gbest;
+3: Repeat
+4: Select \([s r * P S]\) promising solutions \(\boldsymbol{S}^{g}\) from \(\boldsymbol{P}^{g} ;\)
+5: Build a Gaussian probability distribution model \(\boldsymbol{G}^{g}\) based on \(\boldsymbol{S}^{g} ;\)
+6: Randomly generate a new population \(\boldsymbol{P}^{g+1}\) by sampling from \(\boldsymbol{G}^{g}\);
+7: Update the global best solution Gbest;
+8: \(\quad g=g+1\);
+9: Until the stopping criterion is met.
+Output: the global best solution Gbest;
+```
+
+Specifically, as shown in Algorithm 1, given that the population size is $P S$ and the selection ratio is $s r$ (which is the number of selected promising individuals out of the whole population), the number of selected promising individuals in each generation is $s=\lceil s r * P S\rceil$. After $P S$ individuals are initialized randomly and evaluated accordingly, as shown in Line 1, the global best solution found so far is obtained (as shown in Line 2). Subsequently, it comes to the main iteration of the algorithm. First, a set (S) of $s$ promising individuals are selected from the current population (Line 4). Then, a Gaussian probability distribution model is estimated based on the selected individuals (Line 5). After that, $P S$ new individuals are randomly sampled based on the estimated Gaussian distribution to form a new population (Line 6). Subsequently, the newly generated individuals are evaluated, and the global best solution is updated. The above process proceeds repeatedly until the termination condition is met. At last, the found global best solution is output.
+
+In GEDAs, the key component is the way to estimate the probability distribution. Different manners of probability distribution estimation result in different kinds of GEDAs. In the literature, based on whether the linkage between variables is considered, existing GEDAs are mainly classified into two categories [20,27,28], namely univariate GEDAs (UGEDAs) [29-31,45,46] and multivariate GEDAs [27,32-36].
+(1) UGEDAs: In UGEDAs [29,45,46], each variable is considered to be separable and independent on each other. As a result, the probability distribution of $D$ variables can be estimated separately, and the joint probability distribution of $D$ variables is computed as follows:
+
+$$
+P\left(x^{1}, x^{2}, \ldots, x^{D}\right)=\prod_{i=1}^{D} P\left(x^{i}\right)
+$$
+
+where $P\left(x^{i}\right)$ is the probability distribution of the $i$ th variable, which is estimated as:
+
+$$
+P\left(x^{i}\right)=\frac{1}{\sigma^{i} \sqrt{2 \pi}} e^{-\frac{\left(x^{i}-\mu^{i}\right)^{2}}{2 \sigma^{i}}}
+$$
+
+where $u^{i}$ and $\sigma^{i}$ are the mean value and the variance of the $i$ th variable respectively, which are calculated as follows:
+
+$$
+\mu^{i}=\frac{1}{s} \sum_{j=1}^{s} S_{j}^{i}
+$$
+
+$$
+\sigma^{i}=\sqrt{\left(\frac{1}{s-1} \sum_{j=1}^{s}\left(S_{j}{ }^{i}-\mu^{i}\right)^{2}\right)}
+$$
+
+where $S$ is the set of the selected promising individuals, $S_{j}{ }^{i}$ is the $i$ th dimension of the $j$ th promising individual in $S$, and $D$ denotes the dimension size of the optimization problem. Based on the estimated probability distribution of each variable, a new solution can be constructed by randomly sampling a new value of each variable separately, based on the associated probability distribution.
+(2) MGEDAs: In MGEDAs [33,34,35,36], the correlations between variables are taken into consideration to estimate the probability distribution. Consequently, different from UGEDAs, the probability distribution of $D$ variables in MGEDAs is estimated together, and the joint probability distribution of $D$ variables is computed as follows:
+
+$$
+P\left(x^{1}, x^{2}, \ldots, x^{D}\right)=\frac{1}{\sqrt{(2 \pi)^{D}|C|}} e^{\left(-\frac{1}{2}(\boldsymbol{X}-\boldsymbol{\mu})^{T} \boldsymbol{C}^{-1}(\boldsymbol{X}-\boldsymbol{\mu})\right)}
+$$
+
+where $\boldsymbol{u}$ is the mean vector of the multivariate Gaussian distribution, which is calculated by Equation (3). $\boldsymbol{C}$ is the covariance matrix, which is calculated as follows:
+
+$$
+C=\frac{1}{s-1}(S-\mu)(S-\mu)^{T}
+$$
+
+Based on the estimated joint probability distribution, a new solution is constructed by jointly sampling values for all variables, randomly, from the multivariate Gaussian distribution model. In general, to make the sampling of new solutions simple, a modified version presented below is usually utilized to generate the offspring in most MGEDAs [32,35]:
+
+$$
+\begin{gathered}
+X=\mu+A \Lambda Z \\
+Z \sim N(0,1) \\
+C=A \Lambda^{2} A^{T}
+\end{gathered}
+$$
+
+where $\boldsymbol{A}$ is the eigenvector matrix of $\boldsymbol{C}$, and $\boldsymbol{\Lambda}$ is the diagonal matrix whose entries are the square root of the eigenvalues of $\boldsymbol{C} . \boldsymbol{Z}$ is a real number vector, each value of which is randomly sampled from a standard normal distribution separately.
+With respect to the computational cost, UGEDAs are less time-consuming, while MGEDAs take more computational cost due to the calculation of the covariance matrix [33,34,35]. However, in terms of the optimization performance, MGEDAs show much better performance, especially on problems with many interacted variables, while UGEDAs only present promising performance on separable optimization problems [29,30,47]. This is because MGEDAs could capture the interaction between variables and thus evolve the population more effectively than UGEDAs [27,37,48].
+
+# 2.2. Recent Advance of GEDAs 
+
+During the optimization, one crucial challenge that most existing GEDAs encounter is the rapid shrinkage of the variance (or the covariance) [20,42,43], which leads to the quickly narrowed sampling range of the probability distribution. This may lead to a quick loss of the search diversity and thus may result in premature convergence and falling into local areas. To remedy this shortcoming, researchers have devoted plenty of attention to designing novel mechanisms to improve the quality of the probability distribution in GEDAs [38,49,50,51].
+
+In [51], the authors demonstrated empirically that high diversity maintenance is very crucial for EDAs to achieve satisfactory performance. Then, based on the findings, they further developed a novel three-step method by combining clustering methods with EDAs to search for the optimal areas with high diversity. To prevent premature convergence
+
+in EDAs, Pošík [52] directly multiplied a constant factor on the estimated variance of the Gaussian distribution in each generation to enlarge the sampling range. In [43], Grahl et al. proposed a correlation-triggered adaptive variance scaling strategy to reduce the risk of premature convergence and then embedded it into the iterated density-estimation evolutionary algorithm (IDEA). Specifically, similar to [52], the proposed method multiplies a factor to the estimated variance. The difference lies in such a factor not being constant but dynamically adjusted during the evolution, based on whether the global best solution is improved or not. In addition, such adjustment is triggered based on the correlation between the ranks of the normal density and the fitness of the selected solutions. To further trigger the dynamic adjustment of the scaling factor properly, in [42], Bosman et al. proposed a novel indicator, named Standard-Deviation Ratio (SDR), to trigger the adjustment adaptively. Specifically, based on this indicator, the variance scaling is triggered only when the improvements are found to be far away from the mean vector. In [53], a cross-entropy based adaptive variance scaling method was proposed. In this method, the difference between the sampled population and the prediction of the probabilistic model is first measured, and the scaling factor on the variance is then computed by minimizing the cross-entropy between the two distributions.
+
+Different from the above variance scaling methods that directly multiply a scaling factor on the estimated variance, in [49], the authors proposed a novel probability density estimator based on the new mean vector obtained by the anticipated mean shift strategy. Then, once the new mean vector gets better, the variance estimator adaptively enlarges the variance without using an explicit factor, but rather, by using the new better mean vector to calculate the variance. Furthermore, they also developed a reflecting sampling strategy to further improve the search efficiency of GEDA. Accompanied with these two schemes, a new GEDA variant named EDA ${ }_{\text {VERS }}$ [49] was developed. Subsequently, a novel anisotropic adaptive variance scaling (AAVS) method was proposed in [41], and a new GEDA named AAVS-EDA was designed. Specifically, in this algorithm, a topology-based detection method was devised to detect the landscape characteristics of the optimization problems, and then, based on the captured characteristics, the variances along different eigen-directions are anisotropically scaled. In this way, the variances and the main search direction of GEDA could be simultaneously adjusted. Recently, Liang et al. proposed a new GEDA variant, named EDA2 [37], to improve the optimization performance of EDA. Specifically, instead of only utilizing promising individuals in the current generation to estimate the Gaussian model, this algorithm stores historical high-quality individuals generated in the previous generations into an archive and adopts these individuals to collaboratively estimate the covariance of the Gaussian model. In this manner, valuable historical evolution information could be integrated into the estimated model.
+
+The above mentioned MGEDAs usually adopt the full rank covariance matrix to estimate the covariance. Since the calculation of the full-rank covariance matrix is very time-consuming, the computational complexity of most MGEDAs is usually high. To alleviate this shortcoming, researchers turn to seeking efficient covariance matrix adaption (CMA) techniques for EDA [54]. As for the covariance matrix, a direct and simple method to speed up its computation is to reduce the degrees of freedom. To this end, Ros and Hansen [55] proposed to only update the elements in the diagonal of the covariance matrix, leading to a de-randomized evolution strategy, named sep-CMA-ES. This method reduces the updating time and space complexity of the covariance matrix from quadratic to linear. In [56], the authors devised an adaptive diagonal decoding scheme to accelerate covariance matrix adaptation. Further, ref. [57] developed a matrix-free CMA strategy by employing combinations of difference vectors between archived individuals and random vectors, generated by the univariate Gaussian distribution along directions of the past shifts of the mean vector. In [58], Beyer and Sendhoff proposed a matrix adaptation evolution strategy (MA-ES) by removing one evolution path in the calculation of the covariance matrix, leading to that the covariance update is no longer needed. In [59], Li and Zhang first designed a rank one evolution strategy by using a single principal search direction,
+
+which is of linear complexity. Then, they developed a rank-m evolution strategy by employing multiple search directions. In particular, these two evolution strategies mainly adopt principal search directions to seek for the optimal low rank approximation to the covariance matrix. In [60], He et al. put forward a search direction adaptation evolution strategy (SDA-ES) with linear time and space complexity. Specifically, this algorithm first models the covariance matrix with an identity matrix along with multiple search directions. Then, it uses a heuristic to update the search directions such as the principal component analysis.
+
+Besides the advance of GEDAs in covariance (or variance) scaling and adaption, some researchers have also attempted to design new ways to shift the mean vector of the Gaussian distribution model. For instance, in [61], Bosman et al. proposed an anticipated mean shift to update the mean vector and then used the updated mean vector to calculate the variance. In addition, some researchers have also attempted to adopt other distribution models, instead of the Gaussian distribution model, to estimate the probability distribution. For example, in [62], a probabilistic graphical model was designed to consider the dependencies between multivariate variables. Specifically, in this algorithm, a parallel of a certain number of subgraphs, with a smaller number of variables, is estimated separately to capture the dependencies among variables in each subgraph. Then, each estimated graph model associated with the subgraph samples new values for the associated variables separately. In [39], the authors utilized the Boltzmann distribution to build the probability distribution model in EDA, leading to BUMDA. In particular, the distribution parameters are derived from the analytical minimization of the Kullback-Leibler divergence. In [50], the authors devised a novel multiple sub-models maintenance technique for EDA, leading to a new EDA variant, named maintaining and processing sub-models (MAPS). Specifically, this algorithm maintains multiple sub-models to detect promising areas.
+
+Since EDAs utilize the estimated probability distribution model to sample new solutions, they generally lack subtle refinement to improve the solution accuracy [63]. To fill this gap, local search methods are commonly accompanied with EDAs to refine the found promising solutions [38,49,50]. For instance, in [64], simulated annealing (SA) based local search operator was incorporated into EDA to balance the exploration and exploitation to search the solution space properly. Specifically, the SA-based local search is probabilistically executed on some good solutions to improve their accuracy. To improve the solution accuracy, Zhou et al. [38] developed cheap and expensive local search methods for EDA, leading to a new EDA variant named EDA/LS. In particular, this EDA variant adopts a modified univariate histogram probabilistic model to sample a part of individuals, and it then utilizes a cheap local search method to sample the rest of the individuals. Besides, it also employs an expensive local search method to refine the found promising solutions. Along this direction, an extension of EDA/LS, named EDA/LS-MS, was developed in [65] by introducing a mean shift strategy to replace the cheap local search method in EDA/LS to refine some good parent solutions.
+
+Though a lot of remarkable GEDA variants have emerged and shown promising performance in solving optimization problems, they still encounter limitations, such as falling into local areas and premature convergence. In particular, it is found that most existing GEDAs estimate the variance (or covariance) based on the same selected promising individuals used for the estimation of the mean vector. Although various variance (or covariance) scaling methods [37,43,49,53,66] and covariance matrix adaption methods [56,57,58,59,60] have been proposed to improve the sampling range of the estimated probability distribution model, on the one hand, the structure of the optimization problem captured by most existing GEDA variants remains unchanged after the scaling; on the other hand, most existing variance (covariance) scaling methods scale the estimated variance (covariance) equally in different directions. This is actually not beneficial to effectively sample new promising individuals.
+
+To alleviate the above concern, this paper devises an adaptive covariance scaling EDA by adaptively enlarging the number of promising individuals (as compared with those
+
+for the mean vector estimation) to estimate the covariance. In this way, not only does the structure of the optimization problem captured by the algorithm become better, but also the covariance is scaled differently in different directions.
+
+# 3. Proposed ACSEDA 
+
+To improve the effectiveness of EDA in solving optimization problems, this paper proposes an adaptive covariance scaling EDA (ACSEDA) by introducing more promising individuals to calculate the covariance. Furthermore, to alleviate the sensitivity of the proposed ACSEDA to parameters, this paper further devises two adaptive strategies for the two key parameters in ACSEDA. The components of ACSEDA are elucidated as follows.
+
+### 3.1. Adaptive Covariance Scaling
+
+In traditional GEDAs [27], both the mean vector and the covariance of the multivariate Gaussian distribution model are estimated based on the selected promising individuals. Then, on the basis of the estimated probability distribution model, the offspring are sampled randomly. In particular, we can see that the mean vector has a great influence on the convergence speed of GEDAs to promising areas, while the covariance mainly takes charge of the sampling range of the distribution model, which plays a significant role in high diversity maintenance.
+
+During the evolution, the population gradually approaches the promising areas and the selected promising individuals used for probability distribution estimation are gradually aggregated together as well. In this situation, the estimated covariance would become smaller and smaller. Once the estimated mean vector falls into local areas, the sampled offspring could hardly escape from local areas. As a consequence, the population falls into local areas, and premature convergence occurs. Such a predicament is encountered by many existing GEDAs [20].
+
+To alleviate this issue, this paper proposes a covariance scaling strategy to enlarge the covariance by introducing more promising individuals on the basis of the selected individuals for the estimation of the mean vector. Specifically, given the population size is $P S, s=\lceil s r * P S\rceil$ promising individuals are first selected from the population to estimate the mean vector of the probability distribution, where $s r$ is the selection ratio, defined as the number of selected individuals out of the population. Then, different from most existing GEDAs [67], which estimate the covariance based on the $s c=\lceil c s * P S\rceil$ individuals as well, this paper selects $s c$ promising individuals to estimate the covariance, where $c s$ is the covariance scaling parameter, which is the number of the promising individuals out of the population and is usually larger than $s r$. In this way, more promising individuals are selected to participate in the estimation of the covariance and thus, the covariance is enlarged.
+
+As shown in Figure 1, after the population is sorted from the best to the worst with respect to the fitness, $s$ best individuals are selected to form the promising individual set $S$, and then, the mean vector $\boldsymbol{u}$ is estimated based on $\boldsymbol{S}$ according to Equation (3). Subsequently, different from most existing GEDAs, the proposed covariance scaling method selects $s c$ best individuals to form the promising individual set $S_{C}$ to estimate the covariance. It should be mentioned that $c s$ is usually larger than $s r$, which also indicates that $S_{C}$ is larger than $S$. In this way, $S$ is a subset of $S_{C}$. Subsequently, instead of using $S$ to calculate the covariance according to Equation (6), the proposed method utilizes $S_{C}$, namely an enlarged individual set, to estimate the covariance as follows:
+
+$$
+C=\frac{1}{s c-1}\left(S_{C}-\mu\right)\left(S_{C}-\mu\right)^{T}
+$$
+
+![img-0.jpeg](img-0.jpeg)
+
+Current population
+Sorted population
+Figure 1. The visual structure of the covariance scaling strategy.
+As shown in Figure 1, since more promising individuals participate in the estimation of the covariance, the sampling range of the estimated probability distribution model is enlarged. On the one hand, the sampled offspring based on this model are more diversified, which is very beneficial for the population to avoid falling into local areas. On the other hand, it might also be likely to generate more promising individuals close to the promising areas, and thus, the convergence could also be strengthened to some extent.
+
+Remark 1. It deserves attention that different from existing covariance scaling methods, which scales the covariance directly with a fixed scalar, the proposed covariance scaling method estimates the covariance based on an enlarged number of promising individuals as compared to those for the estimation of the mean vector. This brings the following two benefits for the estimated probability distribution model:
+(1) By introducing more promising individuals, the proposed scaling method enlarges the covariance differently in different directions between variables and thus it implicitly takes the difference between variables into consideration. However, existing scaling methods [37] enlarge the covariance with a same scalar and hence they do not consider the difference between variables.
+(2) The proposed scaling method is likely to better capture the structure of the optimization problem with respect to the correlations between variables by introducing more promising individuals. Nevertheless, the structure captured by existing scaling methods remains unchanged after the scaling.
+
+Taking a deep investigation on the parameter $c s$, in the proposed covariance scaling method, we find that neither a too large $c s$, nor a too small $c s$ are proper to aid EDA to achieve promising performance. On the one side, a too-large $c s$ may lead to a too large sampling range of the probability distribution. This may result in too diversified offspring sampled from the distribution model. In particular, it is found that, in the early stage of the evolution, a large $c s$ may be beneficial to maintain a large sampling range and thus sample diversified offspring. This is helpful for EDA to explore the solution space in very different directions, whereas, in the late stage, such a setting of $c s$ is not appropriate because it is not beneficial for the population to extensively exploit the found promising areas to refine the solution accuracy. On the other side, a too-small $c s$ may bring in a too-small sampling range of the distribution model, which may sample concentrated offspring. Though it is desirable in the late stage of the evolution, it is not suitable during the whole evolution, because it may increase the risk of EDA in falling into local areas. Consequently, based on the above analysis, it is found that $c s$ should not be fixed, but dynamically adjusted during the evolution process.
+
+To the above end, this paper further designs an adaptive strategy for $c s$ as follows:
+
+$$
+c s=1-\left(1-s r_{\min }\right)\left(\frac{F E s}{F E s_{\max }}\right)^{2}
+$$
+
+where $s r_{\min }$ denotes the lower bound of the selection ratio $s r$ used for the estimation of the mean vector of the multivariate Gaussian distribution model, $F E s_{\max }$ is the maximum number of fitness evaluations, while FEs denotes the used number of fitness evaluations up to the current generation.
+
+From Equation (10), we can see that $c s$ decreases from 1.0 to $s r_{\min }$ as the evolution continues. Specifically, it is found that, in the early stage, most individuals in the population are used to estimate the covariance. This brings two benefits for EDA: (1) the sampling range of the probability distribution model is large and thus the sampled offspring are diversified and scatter dispersedly to explore the solution space. It is not only beneficial for the population to find more promising areas, but it is also very profitable for the population to avoid falling into local areas. (2) The captured structure of the optimization problem tends to be global and accurate with a large number of promising individuals. In the early stage, the individuals are usually scattered diversely in the solution space. In this situation, the captured structure of the optimization problem is usually global. Therefore, to accurately capture the correlations between variables globally, a large number of promising individuals are usually needed. Consequently, in the early stage, it is helpful to capture an accurate structure of the optimization problem when $c s$ is large.
+
+Conversely, in the late stage, from Equation (10), it is found that $c s$ becomes smaller and smaller. This leads to a narrow sampling range of the probability distribution. Therefore, the sampled offspring are concentrated and surrounded around the mean vector. In this situation, the population exploits the found promising areas, and thus, the accuracy of the solution can be improved.
+
+To summarize, with the above adaptive covariance scaling scheme, the proposed EDA variant is expected to obtain a promising balance between diversification and intensification of the population. Therefore, the algorithm could explore and exploit the complicated solution space properly to obtain promising performance in solving complicated optimization problems.
+
+# 3.2. Adaptive Promising Individuals Selection 
+
+In GEDAs, the number $(s=\lceil s r * P S\rceil)$ of selected promising individuals, for the estimation of the mean vector, makes a significant influence on the convergence speed of EDAs. As shown in Figure 1, the mean vector mainly takes control of the center of the sampled offspring. A too-large $s r$ may lead to that a large number of promising individuals being used to estimate the mean vector. As a result, the estimated mean vector may be too far away from the promising areas. In the early stage of the evolution, this is beneficial for EDAs to maintain high search diversity. Nevertheless, in the late stage of the evolution, a large $s r$ may slow down the convergence of the population to find high-quality solutions. On the contrary, a too-small $s r$ may result in the estimated mean vector being too close to the promising areas. This case is suitable, in the late stage of the evolution, to exploit the found promising areas. However, it may lead to premature convergence if we keep $s r$ small during the whole evolution, especially when the selected promising individuals all fall into local areas.
+
+Based on the above analysis, it might as well dynamically adjust $s r$ during the evolution. To this end, this paper devises a simple adaptive strategy for $s r$ as follows:
+
+$$
+s r=s r_{\max }-\left(s r_{\max }-s r_{\min }\right)\left(\frac{F E s}{F E s_{\max }}\right)^{0.1}
+$$
+
+where $s r_{\max }$ and $s r_{\min }$ represent the maximum selection ratio and the minimum selection ratio, which accordingly determine the maximum number $\left(s_{\max }=\lceil s r_{\max } * P S\rceil\right)$ and the minimum number $\left(s_{\min }=\lceil s r_{\min } * P S\rceil\right)$ of the selected promising individuals. In this paper, we set them as 0.35 and 0.05 , respectively.
+
+From Equation (11), we can see that in the early stage, $s r$ is large, and then, it decreases gradually as the evolution goes. This indicates that during the evolution, the mean vector
+
+of the estimated probability distribution is becoming closer and closer to the promising areas. In this way, the population gradually tends to exploit the found promising areas.
+
+Remark 2. In particular, compared Equation (11) with Equation (10), as shown in Figure 2, the following findings can be obtained:
+(1) $s r$ decreases dramatically in the early stage, and mildly in the late stage, while cs decreases mildly in the early stage, and dramatically in the late stage. This actually matches the expectation that the proposed ACSEDA should explore the solution space in the early stage without serious loss of convergence, while it should exploit the search space in the late stage without serious sacrifice of search diversity. For one thing, in the early stage, sr decreases rapidly and thus the estimated mean vector is close to the promising areas that the current population lies. However, it should be mentioned that in such a situation, the sampling diversity of the estimated probability distribution is not declined, because the estimated covariance is large due to the large cs. On the contrary, in this situation, the sampling quality of the estimated probability distribution could be improved due to the high-quality mean vector and thus the population could effectively explore the search space to find promising areas in the early stage. In the late stage, sr decreases mildly, while cs descends quickly. In this situation, the quality of the mean vector is gradually promoted by approaching the promising areas closer and closer. At the same time, the sampling range of the estimated distribution gradually shrinks due to the covariance estimated on the reduced number of promising individuals. Therefore, in the late stage, ACSEDA gradually biases to exploiting the found promising areas to improve the solution quality. However, it should be mentioned that such a bias is not at the serious sacrifice of the search diversity because of the proposed covariance scaling technique.
+(2) cs is always larger than sr during the evolution and the gap between cs and sr gradually shrinks as the evolution goes. This indicates that during the evolution, compared with traditional GEDAs, the covariance is always amplified, so that the estimated probability distribution could sample diversified offspring around the estimated mean vector with high quality. In addition, the gradually narrowed difference between sr and cs indicates that the scaling of the covariance is gradually declined. This implies that the proposed ACSEDA gradually concentrates on exploiting the solution space to refine the solution accuracy.
+![img-1.jpeg](img-1.jpeg)
+
+Figure 2. The change curves of $c s$ and $s r$ with the proposed two adaptive strategies.
+
+# 3.3. Cross-Generation Individual Selection for Parent Population 
+
+In traditional EDAs [28], the offspring is directly utilized as the parent population for the next generation to estimate the probability distribution model. Since the quality of the sampled offspring is uncertain, the quality of the estimated probability distribution model may not be improved or even degrade compared with the estimated probability distribution in the last generation. This may slow down the convergence of the population
+
+to promising areas. Therefore, to remedy this shortcoming, some EDA variants [68] combine the offspring and the parent population together and then select the best $P S$ individuals as the parent population for the next generation. However, such selection is too greedy and thus may lead to premature convergence and falling into local areas.
+
+To alleviate the above predicament, and to further make a promising compromise between convergence and diversity, this paper further devises a cross-generation individual selection strategy for the parent population.
+
+As Figure 3 shows, this paper combines the sampled offspring in the last generation and the sampled offspring in the current generation and then selects the best $P S$ individuals as the parent population for the next generation to estimate the probability distribution model. In this way, the historical information in the last generation can be utilized to build the probability distribution model.
+
+![img-2.jpeg](img-2.jpeg)
+
+Figure 3. The process of the cross-generation individual selection strategy.
+Remark 3. Different from existing individual selection methods [26,48,69], the proposed crossgeneration individual selection strategy takes advantage of the sampled offspring in the two consecutive generations to select individuals for the parent population in the next generation. Such a selection strategy brings the following benefits to ACSEDA:
+(1) Individuals in the parent population are diversified. The sampled offspring in the last generation usually have big difference with the offspring in the current generation. Combining them together to select individuals is less likely to generate crowded individuals for the parent population. As a result, the estimated probability distribution model is less likely to fall into local areas and at the same time, has a wide sampling range to generate diversified offspring. In this way, ACSEDA could preserve high search diversity during the evolution.
+(2) With this strategy, the latest historical promising individuals in the last generation could be integrated with those in the current offspring. As a consequence, individuals in the parent population are not only diversified, but also of high quality. Hence, the estimated probability distribution is of high quality to generate more promising offspring. By this means, the convergence of ACSEDA could be guaranteed.
+(3) With this selection strategy, ACSEDA is further expected to preserve a good compromise between exploration and exploitation to search the solution space effectively. Experiments conducted in Section 4 will demonstrate the effectiveness of the proposed cross-generation individual selection strategy.
+
+# 3.4. Overall Procedure of ACSEDA 
+
+Combining the above three schemes together, the proposed ACSEDA is outlined in Algorithm 2. Specifically, after the initialization of the population (Line 2), the algorithm goes to the main iteration loop for evolution (Lines 5-16). In the main loop, it first executes the proposed adaptive promising individual selection strategy for the estimation of the mean vector (Lines 6 and 7). Then, it comes to the proposed adaptive covariance scaling strategy to estimate the covariance of the probability distribution model (Lines 8 and 9).
+
+Subsequently, the offspring are randomly sampled based on the estimated probability distribution model (Line 10). Hereafter, it arrives at the proposed cross-generation individual selection strategy to select individuals for the parent population in the next generation (Line 12). At last, a local search method is conducted on the global best solution to refine its accuracy (Line 14).
+
+```
+Algorithm 2: The Procedure of ACSEDA.
+Input: population size \(P S\);
+1: Set \(F E s=0\);
+2: Initialize PS individuals randomly and evaluate their fitness;
+\(3: F E s=F E s+P S ;\)
+4: Obtain the global best solution Gbest and store the current population;
+5: While \(\left(F E s<F E s_{\max }\right)\)
+6: Calculate the selection ratio \(s r\) according to Equation (11);
+7: Select \(\lceil s r * P S\rceil\) promising solutions from the population and calculate the mean value \(\mu\)
+using Equation (3);
+8: Calculate the covariance scaling parameter cs according to Equation (10);
+9: Estimate the covariance matrix \(C\) according to Equation (9);
+10: Randomly sample PS new individuals based on the estimated multivariate Gaussian
+model, evaluate their fitness and store them;
+\(11: \quad F E s=F E s+P S ;\)
+12: Combine the offspring in the last generation and the offspring in the current generation to
+select PS better individuals to form the parent population for the next generation;
+13: Update the global best solution Gbest;
+14: Execute local search 2 times on Gbest;
+\(15: \quad F E s=F E s+2 ;\)
+16: End While
+Output: the global best solution Gbest;
+```
+
+In Algorithm 2, it should be noticed that a local search strategy is additionally added to improve the solution accuracy of the global best solution. This is because EDAs are probability distribution model based optimization algorithms, and as a consequence, EDAs usually lack strong local exploitation [26,38,70]. Therefore, in the literature [23,38,70], local search methods are generally accompanied by EDAs to improve the solution quality. Hence, the same as most existing EDA variants [23,26,38,70,71], ACSEDA also adopts a local search method to refine the global best solution, as shown in Line 14.
+
+For simplicity and keeping consistent with the probability distribution model in ACSEDA, this paper applies the univariate Gaussian distribution with a small variance to execute the local search on the global best solution. In this paper, the small variance is set as $1.0 \times 10^{-4}$. In addition, for saving computational resources, we execute the local search method on the global best solution only two times, as shown in Line 14.
+
+As a whole, with the proposed three main techniques and the local search method, ACSEDA is expected to explore and exploit the solution space properly to locate the optima of optimization problems.
+
+# 4. Experimental Studies 
+
+This section mainly conducts extensive experiments to verify the effectiveness of the proposed ACSEDA. Specifically, the commonly used CEC 2014 benchmark problem set [44] is adopted in this paper. This benchmark set contains 30 various complicated optimization problems, such as unimodal problems, multimodal problems, hybrid problems, and composition problems. For detailed information on this benchmark set, please refer to [44].
+
+### 4.1. Experimental Settings
+
+First, to comprehensively demonstrate the effectiveness of the proposed ACSEDA, we select several state-of-the-art EDA variants to make comparisons in solving the complicated CEC 2014 benchmark problems. Specifically, the selected state-of-the-art EDA variants are
+
+EDA2 [37], EDA ${ }_{\text {VERS }}$ [49], EDA/LS [38], EDA/LS-MS [65], MA-ES [58], and BUMDA [39]. In addition, as a baseline method, the traditional multivariate Gaussian model based EDA [28] is also utilized as a compared method. To tell it apart from the others, we denote it as TRA-EDA in the experiments.
+
+Second, to make comprehensive comparisons between the proposed ACSEDA and the above compared EDA variants, we compare their optimization performance in solving the CEC 2014 problems with three different dimension sizes, namely 30-D, 50-D, and 100-D. For fairness, the maximum number of fitness evaluations $\left(F E s_{\max }\right)$ is set as $10,000 * D$ for all algorithms.
+
+Third, for fair comparisons, the key parameter settings of the compared algorithms are set, as recommended, in the associated papers. For the population size, we tune the settings of all algorithms on the CEC 2014 benchmark set with different dimension sizes. Specifically, after preliminary experiments, the parameter settings of all algorithms are shown in Table 1.
+
+Table 1. Parameter settings of ACSEDA and the compared algorithms.
+
+Fourth, to comprehensively evaluate the optimization performance of each algorithm, we execute each algorithm independently for 30 runs and utilize the median, mean, and standard deviation values over the 30 independent runs to evaluate its optimization performance. Furthermore, to tell the statistical significance, we conduct the Wilcoxon rank-sum test, at the significance level of $\alpha=0.05$, to compare the proposed ACSEDA with each associated EDA variant. In addition, to compare the overall optimization performance of all algorithms on the whole CEC 2014 benchmark set, we further conduct the Friedman test at the significance level of $\alpha=0.05$ by taking advantage of the mean value of each algorithm on each function in the benchmark set.
+
+At last, it deserves attention that all algorithms are programmed under MATLAB R2018a, and they are run on the same computer with Intel(R) Core(TM) i7-10700T CPU @ 2.90 GHz 2.90 GHz and 8 G RAM.
+
+# 4.2. Comparison with State-of-the-Art EDAs 
+
+Table 2, Table 3, and Table 4 display the comparison results between ACSEDA and the compared EDA variants on the 30-D, 50-D, and 100-D CEC 2014 benchmark problems, respectively. In these tables, the symbols " + ", "-" and "=" represent that ACSEDA is significantly better than, significantly worse than, and equivalent to the associated compared algorithms on the associated problems, respectively. Besides, " $w / t / l$ " denotes the numbers of the problems where ACSEDA achieves significantly better performance, equivalent performance, and significantly worse performance than the compare algorithms, respectively. Actually, " $w / t / l$ " is equal to the numbers of " + ", "=" and "-", respectively. Additionally, in the last rows of this table, the averaged rank of each algorithm obtained from the Friedman test is presented.
+
+Table 2. Comparison between ACSEDA and the compared state-of-the-art EDA variants on the 30-D CEC2014 benchmark problems. The bold results indicate that ACSEDA is significantly better than the compared methods.
+Table 2. Cont.
+Table 2. Cont.
+Table 2. Cont.
+Table 3. Comparison between ACSEDA and the compared state-of-the-art EDA variants on the 50-D CEC2014 benchmark problems. The bold results indicate that ACSEDA is significantly better than the compared methods.
+Table 3. Cont.
+
+Table 3. Cont.
+
+Table 3. Cont.
+Table 4. Comparison between ACSEDA and the compared state-of-the-art EDA variants on the 100-D CEC2014 benchmark problems. The bold results indicate that ACSEDA is significantly better than the compared methods.
+Table 4. Cont.
+
+Table 4. Cont.
+Table 4. Cont.
+From Table 2, the comparison results between ACSEDA and the compared state-of-the-art EDAs on the 30-D CEC 2014 benchmark problems can be summarized as follows:
+(1) As shown in the last row of Table 2, in view of the Friedman test, it is found that the proposed ACSEDA obtains the smallest rank and this rank value is much smaller than those of the other algorithms. This indicates that ACSEDA achieves the best overall performance on the 30-D CEC 2014 benchmark set and obtains significant superiority to the compared algorithms.
+(2) As shown in the second-to-last row of Table 2, from the perspective of the Wilcoxon rank-sum test, we can see that ACSEDA achieves significantly better performance than the compared algorithms on at least 23 problems, except for EDA2 and MA-ES. Compared with EDA2, ACSEDA shows significant superiority on 13 problems, and only presents inferiority on 6 problems. Competing with MA-ES, ACSEDA presents significant dominance on 19 problems, and it loses the competition on 10 problems.
+(3) With respect to the optimization performance on different kinds of problems, on the three unimodal problems, both ACSEDA and EDA2 achieve the true global optima of these three problems and thus show significantly better performance than the other 6 EDA variants. On the 13 simple multimodal problems, ACSEDA is significantly superior to EDA $_{\text {VESR }}$, EDA/LS, EDA/LS-MS, and TRA-EDA on 10 problems, and it also beats EDA2, BUMDA, and MA-ES down on 8, 9, and 9 problems, respectively. In terms of the six hybrid problems, the optimization performance of ACSEDA is significantly better than the compared EDA variants on all these functions, except for EDA2. In comparison with EDA2, ACSEDA shows great superiority on three problems and achieves equivalent performance with EDA2 on three problems. In particular, on these six hybrid problems, ACSEDA shows no inferiority to all the compared EDA variants. As for the eight composition problems, it is observed that ACSEDA is significantly better than EDA/LS and EDA/LS-MS on all these problems. In comparison with TRA-EDA and BUMDA, it outperforms them on six and five problems, respectively. Particularly, on this kind of problem, ACSEDA is a litter inferior to EDA2 and MA-ES.
+(4) To sum up, it is observed that ACSEDA shows very competitive, or even significantly better, performance in solving the 30-D CEC 2014 benchmark problems, as compared with the selected state-of-the-art EDA variants. In particular, encountered with complicated optimization problems, such as multimodal problems, hybrid problems, and composition problems, the proposed ACSEDA shows great superiority to the compared algorithms, which indicates that it is very promising for complicated problems.
+Subsequently, from Table 3, we can get the following findings, with respect to the comparison results between ACSEDA and the compared state-of-the-art EDA variants, on the 50-D CEC 2014 benchmark problems:
+(1) In terms of the Friedman test, as shown in the last row of Table 3, it is found that ACSEDA still achieves the lowest rank among all algorithms. This verifies that ACSEDA still obtains the best overall performance on the 50-D CEC 2014 problems.
+(2) With respect to the Wilcoxon rank sum test, as shown in the second last row of Table 3, ACSEDA outperforms EDA $_{\text {VERS }}$, EDA/LS, EDA/LS-MS, TRA-EDA, and BUMDA significantly on $24,28,28,28$, and 21 problems, respectively. Compared with EDA2, ACSEDA attains much better performance on 13 problems and equivalent performance on 9 problems. Competing with MA-ES, ACSEDA significantly outperforms it on 19 problems and only shows inferiority on 11 problems.
+(3) Regarding the performance on different kinds of optimization problems, on the three unimodal problems, except for EDA2 and MA-ES, ACSEDA still presents great superiority to the other compared EDA variants on all the three problems. In particular, both ACSEDA and EDA2 locate the true global optimum of $F_{3}$, while ACSEDA displays great dominance over EDA2 on the other two problems. Compared with MA-ES, ACSEDA is much better on two problems, and it obtains worse performance on only
+
+one problem. On the 13 simple multimodal functions, ACSEDA significantly outperforms EDA $\mathrm{VERS}_{\mathrm{VERS}}$, EDA/LS, EDA/LS-MS, and TRA-EDA on 11 problems, performs significantly better than MA-ES on 10 problems, and wins the competition on 7 problems, as competed with both EDA2 and BUMDA. On the 6 hybrid problems, ACSEDA is significantly superior to the compared EDA variants on all the six problems, except for EDA2. In competition with EDA2, ACSEDA loses the competition on five problems. On the 8 composition problems, ACSEDA is better than EDA/LS, EDA/LS-MS, TRA-EDA on all eight problems. At the same time, it achieves equivalent or even much better performance than EDA2, EDA $_{\text {VERS }}$, and BUMDA on at least six problems. However, ACSEDA shows inferior performance to MA-ES on seven problems.
+(4) In summary, encountered with the 50-D CEC 2014 problems, ACSEDA still exhibits significantly better performance than the compared EDA variants. This further demonstrates that ACSEDA is promising for both simple optimization problems, such as unimodal problems, and complicated optimization problems, such as hybrid problems and composition problems.
+At last, from Table 4, the following observations can be achieved from the comparison results between ACSEDA and the compared state-of-the-art EDA variants on the 100-D CEC 2014 benchmark problems:
+(1) From the averaged rank obtained from the Friedman test, it is observed that ACSEDA still obtains the smallest rank value among all algorithms. This means that ACSEDA consistently achieves the best overall optimization performance on the 100-D CEC 2014 benchmark set.
+(2) According to the results of the Wilcoxon rank sum test, ACSEDA presents great dominance to EDA $_{\text {VERS }}$, EDA/LS, EDA/LS-MS, and TRA-EDA on 23, 26, 24, and 28 problems, respectively. In comparison with EDA2 and BUMDA, ACSEDA obtains competitive or even better performance on 20 and 22 problems, respectively. Compared with MA-ES, ACSEDA achieves much better performance on 15 problems and presents inferiority on 15 problems as well. This indicates that ACSEDA is very competitive to MA-ES on the 100-D CEC2014 benchmark problems.
+(3) Concerning the optimization performance on different kinds of optimization problems, on the three unimodal problems, ACSEDA outperforms EDA $_{\text {VERS }}$, EDA/LS-MS, TRA-EDA, and BUMDA on all these three problems, and it performs much better than EDA/LS on two problems. However, it loses the competition on these three problems to both EDA2 and MA-ES. When it comes to the 13 simple multimodal functions, ACSEDA shows significantly better performance than EDA $_{\text {VERS }}$, EDA/LS, EDA/LS-MS, TRA-EDA, and MA-ES on at least 10 problems, and presents great superiority to EDA2 on 8 problems. On these 13 problems, ACSEDA and BUMDA achieve very similar performance. Encountered with the six hybrid problems, ACSEDA exhibits much better performance than the compared EDA variants on at least five problems, except for EDA2. Faced with the eight composition problems, ACSEDA is better than EDA/LS, EDA/LS-MS, TRA-EDA, and BUMDA on at least five problems, presents very competitive performance with EDA2 and EDA $_{\text {VERS }}$, and is only inferior to MA-ES.
+(4) To conclude, encountered with the 100-D CEC 2014 problems, ACSEDA still shows great superiority to the compared state-of-the-art EDA variants in solving such highdimensional problems. In particular, on the complicated problems with such high dimensionality, such as the hybrid problems and the composition problems, ACSEDA still presents significant dominance to most of the compared algorithms. This further demonstrates that the proposed ACSEDA is promising for optimization problems.
+Comprehensively speaking, from the above comparisons, we can see that ACSEDA consistently exhibits great superiority to the compared state-of-the-art EDA variants on the CEC 2014 benchmark problem set with different dimension sizes. This demonstrates that ACSEDA is promising for both simple unimodal problems and complicated multimodal problems. Besides, it also preserves good scalability in solving optimization problems.
+
+The above demonstrated superiority of the proposed ACSEDA mainly benefits from the proposed three techniques. With the cohesive cooperation of them, ACSEDA could strike a promising balance between exploration and exploitation to search the complicated solution space properly.
+
+# 4.3. Deep Investegation on ACSEDA 
+
+From the above comparison experiments, we can see that ACSEDA shows great dominance over the compared state-of-the-art EDA variants. In this section, we take a deep observation on ACSEDA to investigate the influence of each component, so it is clear to see what contributes to the promising performance of ACSEDA.
+
+### 4.3.1. Effectiveness of the Covariance Scaling Strategy
+
+First, we conduct experiments to verify the effectiveness of the proposed covariance scaling strategy, which is realized by setting a larger $c s$ (to estimate the covariance) than the selection ratio $s r$ (to estimate the mean vector). To this end, first, we fix different $s r$. Then, based on each fixed $s r$, we set different $c s$, each of which is larger than the associated $s r$. Subsequently, based on the above settings of $s r$ and $c s$, we conduct experiments on the 50-D CEC 2014 benchmark problems. Table 5 shows the comparison results among ACSEDA with different settings of the selection ratio $(s r)$ and different settings of the covariance scaling (cs) parameter on the 50-D CEC 2014 benchmark problems. In this table, the best results are highlighted in bold in each part associated with each fixed $s r$. In addition, the averaged ranks of each $c s$, in each part obtained from the Friedman test, are listed in the last row of the table.
+
+From Table 5, we can get the following findings:
+(1) With respect to the comparison results of each part, it is found that a larger $c s$ than $s r$ helps ACSEDA achieve much better performance than the one with $c s=s r$. In particular, it is interesting to find that the superiority of the ACSEDA with a larger $c s$ (than $s r$ ) to the one without the covariance scaling $(c s=s r)$ is particularly significant in solving complicated problems such as $F_{20}-F_{30}$. This demonstrates the covariance scaling technique is helpful for ACSEDA to obtain promising performance in solving optimization problems, especially on complicated problems.
+(2) It is also interesting to find that neither a too small $c s$, nor a too large $c s$ (compared with $s r$ ) are suitable for ACSEDA to achieve promising performance. For instance, when $s r=0.1$, we find that, though ACSEDA with a too-small $c s(c s \leq 0.4)$ achieves much better performance than the one with $c s=s r$ (namely without covariance scaling), its performance is much worse than the ones with a larger $c s(0.4<c s<0.8)$. On the contrary, when ACSEDA has a too large $c s(c s \geq 0.8)$, its performance degrades dramatically, as compared with the ones with a proper $c s$. A similar situation occurs to ACSEDA with the other settings of $s r$ when $c s$ is either too large or too small. Such experimental results verify the analysis presented in Section 3.1.
+To sum up, it is found that the proposed covariance scaling strategy is effective to help EDA achieve promising performance in solving optimization problems, especially complicated problems.
+
+Table 5. Comparison among ACSEDA, with different settings of the selection ratio (sr) and different settings of the covariance scaling (cs) parameter, on the 50-D CEC 2014 benchmark problems. The best results in each part are highlighted in bold in this table.
+
+# 4.3.2. Effectiveness of the Proposed Adaptive Covariance Scaling Strategy 
+
+Then, we conduct experiments to verify the effectiveness of the proposed adaptive covariance scaling method, which is realized by dynamically adjusting $c s$ according to Equation (10). Since the proposed adaptive covariance scaling method is related to $s r$, as can be seen from Equation (10), we first fix $s r$ as 0.1 and 0.2 to investigate the effectiveness of the proposed adaptive method. These two settings of $s r$ are utilized because, from the experimental result in the last subsection as shown in Table 5, when $s r$ is larger than 0.3, ACSEDA achieves much worse performance and thus, it is meaningless to investigate the effectiveness of the proposed adaptive $c s$ when $s r$ is larger than 0.3 . Subsequently, for each set of $s r$, we set different fixed $c s$ for ACSEDA and then compare them with the ACSEDA with the adaptive $c s$ strategy.
+
+Table 6 presents the comparison between ACSEDA with the adaptive covariance scaling method and the ones with different fixed settings of $c s$ on the 50-D CEC 2014 benchmark problems. From this table, we attain the following observations:
+(1) As a whole, no matter if it is from the perspective of the averaged rank obtained from the Friedman test or from the perspective of the number of problems where the algorithm achieves the best results, the ACSEDA with the proposed adaptive $c s$ obtains much better performance than those with different fixed $c s$. This verifies that the proposed adaptive $c s$ strategy is effective to help ACSEDA achieve promising performance.
+(2) Under the same set of $s r$, we find that the optimal fixed $c s$ for ACSEDA to achieve the best performance is different on different problems. This indicates that the optimal setting of $c s$ is not consistent for all problems. With the proposed adaptive strategy, we can see that not only is the sensitivity of ACSEDA to $c s$ alleviated, but its optimization performance is also largely promoted.
+In summary, based on the above experiments, we can see that the proposed covariance scaling strategy is very beneficial for ACSEDA to achieve promising performance. This is mainly because the proposed adaptive strategy helps ACSEDA bias to explore the solution space in the early stage and, gradually, bias to exploit the found promising areas without serious loss of diversity as the evolution iterates. As a result, with this adaptive strategy, ACSEDA could explore and exploit the solution space properly to find the optima of optimization problems.
+
+### 4.3.3. Effectiveness of the Proposed Adaptive Promising Selection Strategy
+
+Subsequently, we conduct experiments to verify the effectiveness of the proposed promising individual selection strategy, which is realized by dynamically adjusting the parameter $s r$, based on Equation (11). Since the setting of $s r$ influences the covariance scaling parameter $c s$, we first fix $c s$ as 0.6 and then accordingly set different fixed $s r$. It should be noticed that $c s=0.6$ is adopted here because, in the last subsection, as shown in Table 6, ACSEDA obtains the best overall performance when $c s=0.6$ under the two settings of $s r$. Then, we compare the ACSEDA with the proposed adaptive $s r$ and the ones with different fixed $s r$ under the same set of $c s$ (namely $c s=0.6$ ).
+
+Table 6. Comparison between ACSEDA, with and without the adaptive covariance scaling method, on the 50-D CEC 2014 benchmark problems. The best results in each part are highlighted in bold in this table.
+Table 7 shows the comparison results between the ACSEDA with the proposed adaptive $s r$ and the ones with different fixed settings of $s r$ on the 50-D CEC 2014 benchmark problems. From this table, the following findings can be attained:
+(1) In view of the averaged rank obtained from the Friedman test, the ACSEDA with the adaptive $s r$ achieves the best overall performance than the ones with different fixed $s r$. This verifies the effectiveness of the proposed adaptive promising individual selection strategy for the estimation of the mean vector.
+(2) For different problems, the optimal $s r$ is different for ACSEDA to achieve the best performance. In particular, we find that a small $s r$ tends to help ACSEDA obtain better performance than a large $s r$. The proposed adaptive strategy, based on Equation (11), matches this observation that $s r$ is dramatically decreased to a small value in the early stage, and then, it mildly declines as the evolution goes as stated in Section 3.2.
+
+Table 7. Comparison between ACSEDA, with and without the adaptive promising individual selection method, on the 50-D CEC 2014 benchmark problems. The best results are highlighted in bold in this table.
+
+Based on the above experiments, it is demonstrated that the proposed adaptive promising individual selection strategy, for the estimation of the mean vector, is very useful for ACSEDA to not only achieve promising performance but also alleviate the sensitivity to the parameter $s r$.
+
+# 4.3.4. Effectiveness of the Proposed Cross-Generation Individual Selection Strategy 
+
+At last, we conduct experiments to verify the usefulness of the proposed crossgeneration individual selection strategy for the parent population. To this end, we first develop three other ACSEDA variants by using some existing typical selection strategies for the parent population. The first is to directly utilize the generated offspring as the parent population, such as in some traditional EDAs [20,21,28,30]. This variant of ACSEDA
+
+is denoted as "ACSEDA-O". The second is to combine the parent population in the last generation and the generated offspring and then, select the best half of the combined population as the parent population for the next generation, as in some EDA variants [51,68]. This variant of ACSEDA is represented as "ACSEDA-OP". The last one is to maintain an archive I in some EDA variants [37] to store the historical useful individuals and then they are combined with the generated offspring to select the best half of the combined population as the parent population. This ACSEDA variant is denoted as "ACSEDA-OA".
+
+After the preparation of the compared methods, we conduct experiments on the 50-D CEC 2015 benchmark problems to compare the ACSEDA with the proposed crossgeneration individual selection strategy and the ones with the above mentioned three compared strategies. Table 8 presents the comparison results among these different variants of ACSEDA.
+
+Table 8. Comparison among ACSEDA with different selection strategies for the parent population on the 50-D CEC 2014 benchmark problems. The best results are highlighted in bold in this table.
+From Table 8, we can see that, from the perspective of the averaged rank obtained from the Friedman test and the number of problems where the algorithm achieves the best results, the ACSEDA with the proposed cross-generation individual selection strategy obtains the best overall performance. In particular, not only is the averaged rank is much smaller than those of the compared methods but the number of problems where the proposed ACSEDA achieves the best results is also much larger than those of the compared methods.
+
+The above observations demonstrate that the proposed cross-generation individual selection strategy for the parent population is very helpful for ACSEDA to obtain promising
+
+performance. This is because, by combining the generated offspring in the last generation and in the current generation, this strategy is less likely to generate crowded individuals for the parent population in the next generation and could, thus, aid ACSEDA to preserve high search diversity during the evolution, as analyzed in Section 3.3.
+
+# 5. Conclusions 
+
+This paper has proposed an adaptive covariance scaling estimation of distribution algorithm (ACSEDA) to solve optimization problems. First, instead of estimating the mean vector and the covariance, based on the same selected promising individuals like traditional EDAs, the proposed ACSEDA estimates the covariance based on an enlarged number of promising individuals. In this way, the sampling range of the estimated probability distribution model is enlarged and thus, the estimated model could generate more diversified offspring, which is helpful to avoid falling into local areas. To alleviate the sensitivity of the associated parameter, we further devise an adaptive covariance scaling method to dynamically adjust the covariance scaling parameter during the evolution. Second, to further help ACSEDA to explore and exploit the solution space properly, this paper further devises an adaptive promising individual selection strategy for the estimation of the mean vector. By dynamically adjusting the selection ratio parameter related to the estimation of the mean vector, the proposed ACSEDA gradually biases to exploit the found promising areas without serious loss of diversity as the evolution goes. At last, to further promote the diversity of the proposed ACSEDA, we develop a cross-generation individual selection strategy for the parent population. Different from existing selection methods, the proposed selection method combines the randomly sampled offspring in the last generation and the one in the current generation, together, and then selects the best half of the combined population as the parent population to estimate the probability distribution model. With the cohesive collaboration among the three devised techniques, the proposed ACSEDA is expected to explore and exploit the solution space appropriately and thus, is likely to achieve promising performance.
+
+Extensive comparison experiments have been conducted on the widely used CEC 2014 benchmark problem set with different dimension sizes (30-D, 50-D, and 100-D). Experimental results have demonstrated that the proposed ACSEDA achieves very competitive, or even much better, performance than several state-of-the-art EDA variants. The comparison results also show that ACSEDA preserves good scalability to solve higher-dimensional optimization problems. In addition, deep investigations on the effectiveness of the three proposed techniques have also been performed. The investigation results have demonstrated that the three proposed mechanisms make great contributions to helping ACSEDA to achieve promising performance.
+
+Author Contributions: Q.Y.: Conceptualization, supervision, methodology, formal analysis, and writing—original draft preparation. Y.L.: Implementation, formal analysis, and writing—original draft preparation. X.-D.G.: Methodology, and writing-review and editing. Y.-Y.M.: Writing-review and editing. Z.-Y.L.: Writing-review and editing, and funding acquisition. S.-W.J.: Writing-review and editing. J.Z.: Conceptualization and writing-review and editing. All authors have read and agreed to the published version of the manuscript.
+
+Funding: This work was supported in part by the National Natural Science Foundation of China under Grant 62006124, U20B2061, 62002103, and 61873097, in part by the Natural Science Foundation of Jiangsu Province under Project BK20200811, in part by the Natural Science Foundation of the Jiangsu Higher Education Institutions of China under Grant 20KJB520006, in part by the National Research Foundation of Korea (NRF-2021H1D3A2A01082705), and in part by the Startup Foundation for Introducing Talent of NUIST.
+
+Conflicts of Interest: The authors declare no conflict of interest.

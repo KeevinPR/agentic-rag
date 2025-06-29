@@ -1,0 +1,854 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Estimation of Distribution Algorithm for Grammar-Guided Genetic Programming.md",
+    "filename": "Estimation of Distribution Algorithm for Grammar-Guided Genetic Programming.md",
+    "title": "Estimation of Distribution Algorithm for Grammar-Guided Genetic Programming",
+    "year": "2024"
+  },
+  "references": {
+    "header": "# References",
+    "content": "Bäck, T., Fogel, D., and Michalewicz, Z. (1997). Handbook of evolutionary computation. Taylor \\& Francis.\n\nBarrios Rolanía, D., Delgado Martínez, G., and Manrique, D. (2018). Multilayered neural architectures evolution for computing sequences of orthogonal polynomials. Annals of Mathematics and Artificial Intelligence, 84(3-4):161-184.\n\nCouchet, J., Manrique, D., Rios, J., and Rodriguez-Paton, A. (2007). Crossover and mutation operators for grammar-guided genetic programming. Soft Computing, 11(10):943-955. 10.1007/ s00500-006-0144-9\n\nDarwin, C. (1959). On the origin of the species by means of natural selection, or the preservation of favoured races in the struggle for life. John Murray.\n\nDorigo, M., Birattari, M., and Stutzle, T. (2006). Ant colony optimization. IEEE Computational Intelligence Magazine, 1(4):28-39. 10.1109/MCI.2006.329691\n\nFont, J. M., Manrique, D., and Pascua, E. (2011). Grammar-guided evolutionary construction of Bayesian networks. In J. M. Ferrández, J. R. Álvarez Sánchez, F. de la Paz, and F. J. Toledo (Eds.), Foundations on natural and artificial computation, pp. 60-69. Berlin: Springer.\n\nFont, J. M., Manrique, D., and Ríos, J. (2010). Evolutionary construction and adaptation of intelligent systems. Expert Systems with Applications, 37(12):7711-7720. 10.1016/j.eswa.2010.04.070\n\nGalván, E., Trujillo, L., McDermott, J., and Kattan, A. (2013). Locality in continuous fitness-valued cases and genetic programming difficulty. In Schütze, O., et al. (Eds.), EVOLVE-A bridge between probability, set oriented numerics, and evolutionary computation II. Advances in Intelligent Systems and Computing, Vol. 175 (pp. 41-56). Berlin: Springer. 10.1007/978-3-642-31519-0_3\n\nGalván-López, E., McDermott, J., O’Neill, M., and Brabazon, A. (2011). Defining locality as a problem difficulty measure in genetic programming. Genetic Programming and Evolvable Machines, 12(4):365-401. 10.1007/s10710-011-9136-3\n\nGalván-López, E., O’Neill, M., and Brabazon, A. (2009). Towards understanding the effects of locality in GP. In Eighth Mexican International Conference on Artificial Intelligence. 10.1109/ MICAI.2009.17\n\nGarcía-Arnau, M., Manrique, D., Ríos, J., and Rodríguez-Patón, A. (2007). Initialization method for grammar-guided genetic programming. Knowledge-Based Systems, 20(2):127-133. 10.1016/j.knosys.2006.11.006\n\nHasegawa, Y., and Iba, H. (2008). A Bayesian network approach to program generation. IEEE Transactions on Evolutionary Computation, 12(6):750-764. 10.1109/TEVC.2008.915999\n\nHauschild, M., and Pelikan, M. (2011). An introduction and survey of estimation of distribution algorithms. Swarm Evolutionary Computation, 1(3):111-128. 10.1016/j.swevo.2011.08.003\n\nHemberg, M., O’Reilly, U.-M., Menges, A., Jonas, K., Gonçalves, M. d. C., and Fuchs, S. R. (2008). Genr8: Architects' experience with an emergent design tool, pp. 167-188. Berlin: Springer.\n\nHopcroft, J., Motwani, R., and Ullman, J. D. (2006). Introduction to automata theory, languages and computation. 3rd ed., Addison-Wesley Longman Publishing.\n\nJoshi, A., and Schabes, Y. (1997). Handbook of formal languages 3: Beyond words. Springer.\nKari, L., and Rozenberg, G. (2008). The many facets of natural computing. Communications of the ACM, 51(10):72-83. 10.1145/1400181.1400200\n\nKim, K., and McKay, R. (2013). Stochastic diversity loss and scalability in estimation of distribution genetic programming. IEEE Transactions on Evolutionary Computation, 17(3):301-320. 10.1109/TEVC. 2012.2196521\n\nKim, K., Shan, Y., Nguyen, X., and McKay, R. (2014). Probabilistic model building in genetic programming: A critical review. Genetic Programming and Evolvable Machines, 15(2):115-167. $10.1007 / \\mathrm{s} 10710-013-9205-\\mathrm{x}$\n\nKoza, J. (1992). Genetic programming: On the programming of computers by means of natural selection. MIT Press.\n\nKoza, J. R., Keane, M. A., Streeter, M. J., Mydlowec, W., Yu, J., and Lanza, G. (2006). Genetic programming IV: Routine human-competitive machine intelligence, Vol. 5. Springer.\n\nKrithivasan, K. (2009). Introduction to formal languages, automata theory and computation. Pearson Education.\n\nLooks, M., Goertzel, B., and Pennachin, C. (2005). Learning computer programs with the Bayesian optimization algorithm. In Proceedings of the Conference on Genetic and Evolutionary Computation (GECCO), pp. 747-748.\n\nMcKay, B., Hao, H. T., Mori, N., Hoai, N. X., and Essam, D. (2006). Model-building with interpolated temporal data. Ecological Informatics, 1(3):259-268. 10.1016/j.ecoinf.2006.02.005\n\nMcKay, R., Hoai, N., Whigham, P., Shan, Y., and O'Neill, M. (2010). Grammar-based genetic programming: A survey. Genetic Programming and Evolvable Machines, 11(3-4):365-396. 10.1007/ s10710-010-9109-y\n\nMoll, R. N., Arbib, M. A., and Kfoury, A. J. (2012). An introduction to formal language theory. Springer Science \\& Business Media.\n\nO'Neill, M., and Brabazon, A. (2006). Grammatical swarm: The generation of programs by social programming. Natural Computing, 5(4):443-462. 10.1007/s11047-006-9007-7\n\nO'Neill, M., and Ryan, C. (2003). Grammatical evolution: Evolutionary automatic programming in an arbitrary language. Springer.\n\nO'Neill, M., Vanneschi, L., Gustafson, S., and Banzhaf, W. (2010). Open issues in genetic programming. Genetic Programming and Evolvable Machines, 11(3):339-363.\n\nPoli, R., Langdon, W., McPhee, N., and Koza, J. (2008). A field guide to genetic programming. Lulu.com.\n\nRamos Criado, P. (2017). New techinques for Grammar Guided Genetic Programming: Dealing with large derivation trees and high cardinality terminal symbol sets. PhD thesis, Universidad Politécnica de Madrid, Spain.\n\nRamos Criado, P., Barrios Rolanía, D., Manrique, D., and Serrano, E. (2020). Grammatically uniform population initialization for grammar-guided genetic programming. Soft Computing, 24:11265-11282. 10.1007/s00500-020-05061-w\n\nRatle, A., and Sebag, M. (2001). Avoiding the bloat with stochastic grammar-based genetic programming. In International Conference on Artificial Evolution, pp. 255-266. Springer.\n\nRatle, A., and Sebag, M. (2002). A novel approach to machine discovery: Genetic programming and stochastic grammars. In International Conference on Inductive Logic Programming, pp. 207222. Springer.\n\nRyan, C., Collins, J., and O'Neill, M. (1998). Grammatical evolution: Evolving programs for an arbitrary language. In European Conference on Genetic Programming.\n\nSalustowicz, R., and Schmidhuber, J. (1997). Probabilistic incremental program evolution. Evolutionary Computation, 5(2):123-141. 10.1162/evco.1997.5.2.123\n\nSastry, K., and Goldberg, D. E. (2006). Probabilistic model building and competent genetic programming, pp. 205-220. Berlin: Springer.\n\nShan, Y., McKay, R., Essam, D., and Abbass, H. (2003). A survey of probabilistic model building genetic programming, pp. 121-160. Springer.\n\nSipser, M. (2013). Introduction to the theory of computation, 3rd ed. Cengage Learning.\nTanev, I. (2004). Implications of incorporating learning probabilistic context-sensitive grammar in genetic programming on evolvability of adaptive locomotion gaits of snakebot. In Proceedings of the Conference on Genetic and Evolutionary Computation (GECCO), pp. 155-166.\n\nTetteh, M., Dias, D. M., and Ryan, C. (2022). Grammatical evolution of complex digital circuits in SystemVerilog. SN Computer Science, 3(188). 10.1007/s42979-022-01045-9\n\nUy, N., Hoai, N., O’Neill, M., and McKay, B. (2010). The role of syntactic and semantic locality of crossover in genetic programming. In 11th International Conference on Parallel Problem Solving from Nature, Part II.\n\nVanyi, R., and Zvada, S. (2003). Avoiding syntactically incorrect individuals via parameterized operators applied on derivation trees. In Congress on Evolutionary Computation, Vol. 4.\n\nWhigham, P. (1995). Grammatically-based genetic programming. In Proceedings of the Workshop on Genetic Programming: From Theory to Real-World Applications.\n\nWhite, D., McDermott, J., Castelli, M., Manzoni, L., Goldman, B., Kronberger, G., Jaśkowski, W., O’Reilly, U., and Luke, S. (2013). Better GP benchmarks: Community survey results and proposals. Genetic Programming and Evolvable Machines, 14(1):3-29. 10.1007/s10710-012-9177-2\n\nWong, M. L., and Leung, K. S. (2000). Data mining using grammar based genetic programming and applications, Vol. 3. Springer.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Bäck, T., Fogel, D., and Michalewicz, Z. (1997). Handbook of evolutionary computation. Taylor \\& Francis."
+      },
+      {
+        "ref_id": "2",
+        "text": "Barrios Rolanía, D., Delgado Martínez, G., and Manrique, D. (2018). Multilayered neural architectures evolution for computing sequences of orthogonal polynomials. Annals of Mathematics and Artificial Intelligence, 84(3-4):161-184."
+      },
+      {
+        "ref_id": "3",
+        "text": "Couchet, J., Manrique, D., Rios, J., and Rodriguez-Paton, A. (2007). Crossover and mutation operators for grammar-guided genetic programming. Soft Computing, 11(10):943-955. 10.1007/ s00500-006-0144-9"
+      },
+      {
+        "ref_id": "4",
+        "text": "Darwin, C. (1959). On the origin of the species by means of natural selection, or the preservation of favoured races in the struggle for life. John Murray."
+      },
+      {
+        "ref_id": "5",
+        "text": "Dorigo, M., Birattari, M., and Stutzle, T. (2006). Ant colony optimization. IEEE Computational Intelligence Magazine, 1(4):28-39. 10.1109/MCI.2006.329691"
+      },
+      {
+        "ref_id": "6",
+        "text": "Font, J. M., Manrique, D., and Pascua, E. (2011). Grammar-guided evolutionary construction of Bayesian networks. In J. M. Ferrández, J. R. Álvarez Sánchez, F. de la Paz, and F. J. Toledo (Eds.), Foundations on natural and artificial computation, pp. 60-69. Berlin: Springer."
+      },
+      {
+        "ref_id": "7",
+        "text": "Font, J. M., Manrique, D., and Ríos, J. (2010). Evolutionary construction and adaptation of intelligent systems. Expert Systems with Applications, 37(12):7711-7720. 10.1016/j.eswa.2010.04.070"
+      },
+      {
+        "ref_id": "8",
+        "text": "Galván, E., Trujillo, L., McDermott, J., and Kattan, A. (2013). Locality in continuous fitness-valued cases and genetic programming difficulty. In Schütze, O., et al. (Eds.), EVOLVE-A bridge between probability, set oriented numerics, and evolutionary computation II. Advances in Intelligent Systems and Computing, Vol. 175 (pp. 41-56). Berlin: Springer. 10.1007/978-3-642-31519-0_3"
+      },
+      {
+        "ref_id": "9",
+        "text": "Galván-López, E., McDermott, J., O’Neill, M., and Brabazon, A. (2011). Defining locality as a problem difficulty measure in genetic programming. Genetic Programming and Evolvable Machines, 12(4):365-401. 10.1007/s10710-011-9136-3"
+      },
+      {
+        "ref_id": "10",
+        "text": "Galván-López, E., O’Neill, M., and Brabazon, A. (2009). Towards understanding the effects of locality in GP. In Eighth Mexican International Conference on Artificial Intelligence. 10.1109/ MICAI.2009.17"
+      },
+      {
+        "ref_id": "11",
+        "text": "García-Arnau, M., Manrique, D., Ríos, J., and Rodríguez-Patón, A. (2007). Initialization method for grammar-guided genetic programming. Knowledge-Based Systems, 20(2):127-133. 10.1016/j.knosys.2006.11.006"
+      },
+      {
+        "ref_id": "12",
+        "text": "Hasegawa, Y., and Iba, H. (2008). A Bayesian network approach to program generation. IEEE Transactions on Evolutionary Computation, 12(6):750-764. 10.1109/TEVC.2008.915999"
+      },
+      {
+        "ref_id": "13",
+        "text": "Hauschild, M., and Pelikan, M. (2011). An introduction and survey of estimation of distribution algorithms. Swarm Evolutionary Computation, 1(3):111-128. 10.1016/j.swevo.2011.08.003"
+      },
+      {
+        "ref_id": "14",
+        "text": "Hemberg, M., O’Reilly, U.-M., Menges, A., Jonas, K., Gonçalves, M. d. C., and Fuchs, S. R. (2008). Genr8: Architects' experience with an emergent design tool, pp. 167-188. Berlin: Springer."
+      },
+      {
+        "ref_id": "15",
+        "text": "Hopcroft, J., Motwani, R., and Ullman, J. D. (2006). Introduction to automata theory, languages and computation. 3rd ed., Addison-Wesley Longman Publishing."
+      },
+      {
+        "ref_id": "16",
+        "text": "Joshi, A., and Schabes, Y. (1997). Handbook of formal languages 3: Beyond words. Springer."
+      },
+      {
+        "ref_id": "17",
+        "text": "Kari, L., and Rozenberg, G. (2008). The many facets of natural computing. Communications of the ACM, 51(10):72-83. 10.1145/1400181.1400200"
+      },
+      {
+        "ref_id": "18",
+        "text": "Kim, K., and McKay, R. (2013). Stochastic diversity loss and scalability in estimation of distribution genetic programming. IEEE Transactions on Evolutionary Computation, 17(3):301-320. 10.1109/TEVC. 2012.2196521"
+      },
+      {
+        "ref_id": "19",
+        "text": "Kim, K., Shan, Y., Nguyen, X., and McKay, R. (2014). Probabilistic model building in genetic programming: A critical review. Genetic Programming and Evolvable Machines, 15(2):115-167. $10.1007 / \\mathrm{s} 10710-013-9205-\\mathrm{x}$"
+      },
+      {
+        "ref_id": "20",
+        "text": "Koza, J. (1992). Genetic programming: On the programming of computers by means of natural selection. MIT Press."
+      },
+      {
+        "ref_id": "21",
+        "text": "Koza, J. R., Keane, M. A., Streeter, M. J., Mydlowec, W., Yu, J., and Lanza, G. (2006). Genetic programming IV: Routine human-competitive machine intelligence, Vol. 5. Springer."
+      },
+      {
+        "ref_id": "22",
+        "text": "Krithivasan, K. (2009). Introduction to formal languages, automata theory and computation. Pearson Education."
+      },
+      {
+        "ref_id": "23",
+        "text": "Looks, M., Goertzel, B., and Pennachin, C. (2005). Learning computer programs with the Bayesian optimization algorithm. In Proceedings of the Conference on Genetic and Evolutionary Computation (GECCO), pp. 747-748."
+      },
+      {
+        "ref_id": "24",
+        "text": "McKay, B., Hao, H. T., Mori, N., Hoai, N. X., and Essam, D. (2006). Model-building with interpolated temporal data. Ecological Informatics, 1(3):259-268. 10.1016/j.ecoinf.2006.02.005"
+      },
+      {
+        "ref_id": "25",
+        "text": "McKay, R., Hoai, N., Whigham, P., Shan, Y., and O'Neill, M. (2010). Grammar-based genetic programming: A survey. Genetic Programming and Evolvable Machines, 11(3-4):365-396. 10.1007/ s10710-010-9109-y"
+      },
+      {
+        "ref_id": "26",
+        "text": "Moll, R. N., Arbib, M. A., and Kfoury, A. J. (2012). An introduction to formal language theory. Springer Science \\& Business Media."
+      },
+      {
+        "ref_id": "27",
+        "text": "O'Neill, M., and Brabazon, A. (2006). Grammatical swarm: The generation of programs by social programming. Natural Computing, 5(4):443-462. 10.1007/s11047-006-9007-7"
+      },
+      {
+        "ref_id": "28",
+        "text": "O'Neill, M., and Ryan, C. (2003). Grammatical evolution: Evolutionary automatic programming in an arbitrary language. Springer."
+      },
+      {
+        "ref_id": "29",
+        "text": "O'Neill, M., Vanneschi, L., Gustafson, S., and Banzhaf, W. (2010). Open issues in genetic programming. Genetic Programming and Evolvable Machines, 11(3):339-363."
+      },
+      {
+        "ref_id": "30",
+        "text": "Poli, R., Langdon, W., McPhee, N., and Koza, J. (2008). A field guide to genetic programming. Lulu.com."
+      },
+      {
+        "ref_id": "31",
+        "text": "Ramos Criado, P. (2017). New techinques for Grammar Guided Genetic Programming: Dealing with large derivation trees and high cardinality terminal symbol sets. PhD thesis, Universidad Politécnica de Madrid, Spain."
+      },
+      {
+        "ref_id": "32",
+        "text": "Ramos Criado, P., Barrios Rolanía, D., Manrique, D., and Serrano, E. (2020). Grammatically uniform population initialization for grammar-guided genetic programming. Soft Computing, 24:11265-11282. 10.1007/s00500-020-05061-w"
+      },
+      {
+        "ref_id": "33",
+        "text": "Ratle, A., and Sebag, M. (2001). Avoiding the bloat with stochastic grammar-based genetic programming. In International Conference on Artificial Evolution, pp. 255-266. Springer."
+      },
+      {
+        "ref_id": "34",
+        "text": "Ratle, A., and Sebag, M. (2002). A novel approach to machine discovery: Genetic programming and stochastic grammars. In International Conference on Inductive Logic Programming, pp. 207222. Springer."
+      },
+      {
+        "ref_id": "35",
+        "text": "Ryan, C., Collins, J., and O'Neill, M. (1998). Grammatical evolution: Evolving programs for an arbitrary language. In European Conference on Genetic Programming."
+      },
+      {
+        "ref_id": "36",
+        "text": "Salustowicz, R., and Schmidhuber, J. (1997). Probabilistic incremental program evolution. Evolutionary Computation, 5(2):123-141. 10.1162/evco.1997.5.2.123"
+      },
+      {
+        "ref_id": "37",
+        "text": "Sastry, K., and Goldberg, D. E. (2006). Probabilistic model building and competent genetic programming, pp. 205-220. Berlin: Springer."
+      },
+      {
+        "ref_id": "38",
+        "text": "Shan, Y., McKay, R., Essam, D., and Abbass, H. (2003). A survey of probabilistic model building genetic programming, pp. 121-160. Springer."
+      },
+      {
+        "ref_id": "39",
+        "text": "Sipser, M. (2013). Introduction to the theory of computation, 3rd ed. Cengage Learning."
+      },
+      {
+        "ref_id": "40",
+        "text": "Tanev, I. (2004). Implications of incorporating learning probabilistic context-sensitive grammar in genetic programming on evolvability of adaptive locomotion gaits of snakebot. In Proceedings of the Conference on Genetic and Evolutionary Computation (GECCO), pp. 155-166."
+      },
+      {
+        "ref_id": "41",
+        "text": "Tetteh, M., Dias, D. M., and Ryan, C. (2022). Grammatical evolution of complex digital circuits in SystemVerilog. SN Computer Science, 3(188). 10.1007/s42979-022-01045-9"
+      },
+      {
+        "ref_id": "42",
+        "text": "Uy, N., Hoai, N., O’Neill, M., and McKay, B. (2010). The role of syntactic and semantic locality of crossover in genetic programming. In 11th International Conference on Parallel Problem Solving from Nature, Part II."
+      },
+      {
+        "ref_id": "43",
+        "text": "Vanyi, R., and Zvada, S. (2003). Avoiding syntactically incorrect individuals via parameterized operators applied on derivation trees. In Congress on Evolutionary Computation, Vol. 4."
+      },
+      {
+        "ref_id": "44",
+        "text": "Whigham, P. (1995). Grammatically-based genetic programming. In Proceedings of the Workshop on Genetic Programming: From Theory to Real-World Applications."
+      },
+      {
+        "ref_id": "45",
+        "text": "White, D., McDermott, J., Castelli, M., Manzoni, L., Goldman, B., Kronberger, G., Jaśkowski, W., O’Reilly, U., and Luke, S. (2013). Better GP benchmarks: Community survey results and proposals. Genetic Programming and Evolvable Machines, 14(1):3-29. 10.1007/s10710-012-9177-2"
+      },
+      {
+        "ref_id": "46",
+        "text": "Wong, M. L., and Leung, K. S. (2000). Data mining using grammar based genetic programming and applications, Vol. 3. Springer."
+      }
+    ],
+    "reference_count": 46,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 shows comparisons of the average number of evaluations performed to reach a stop criterion, using GGGP with an incremental EDA approach and WX as variation operators, when searching for specific uniformly generated target derivation trees of $G_{\\text {rec }}$ with 5 and 10 recursions. The stop criterion is met for both GGGP approaches",
+      "headers": [
+        "",
+        "5 recursions",
+        "",
+        "10 recursions",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Evaluations",
+          "Fitness",
+          "Evaluations",
+          "Fitness"
+        ],
+        [
+          "EDA",
+          "$3,200(4,664.8)$",
+          "$3.89(0.35)$",
+          "$9,800(1,400)$",
+          "$5.79(1.21)$"
+        ],
+        [
+          "WX",
+          "$9.72(20.23)$",
+          "$0.32(0.47)$",
+          "$136.24(58.89)$",
+          "$3.76(1.23)$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 reports that WX consistently outperforms EDA, since WX achieves lower fitness values than EDA with fewer evaluations. WX can recombine parent derivation",
+      "headers": [
+        "Pop.",
+        "Initialization",
+        "Selection",
+        "Replacement",
+        "Execs.",
+        "Stop criteria"
+      ],
+      "rows": [
+        [
+          100,
+          "Equiprobable",
+          5,
+          "Sub. the worst <br> indiv. with off.",
+          100,
+          10000
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "CFG that define the problems under study.",
+      "headers": [
+        "$G_{D F F N N}=$ <br> $(V, \\Sigma, R, L)$",
+        "$G_{R B S}=(V, \\Sigma, R, R B S)$",
+        "$G_{S R}=(V, \\Sigma, R, E)$"
+      ],
+      "rows": [
+        [
+          "$V=\\{L, N\\}$",
+          "$V=\\{R B S, R, A, C, C L, E V, O P, V L, E Q, V A\\}$",
+          "$V=\\{E, O P 1, O P 2\\}$"
+        ],
+        [
+          "$R=\\{$",
+          "$R=\\{$",
+          "$R=\\{$"
+        ],
+        [
+          "$r_{1}: L::=N / L$",
+          "$r_{1}: R B S::=R R B S \\mid R$",
+          "$r_{1}: E::=O P 1 E$"
+        ],
+        [
+          "$r_{2}: L::=N$",
+          "$r_{2}: R::=i f A$ then $C$",
+          "$r_{2}: E::=O P 2 E E$"
+        ],
+        [
+          "$r_{3}: N::=n N$",
+          "$r_{3}: A::=C L A \\mid C L$",
+          "$r_{3}: E::=v$"
+        ],
+        [
+          "$r_{4}: N::=n\\}$",
+          "$r_{4}: C L::=E V O P E V$",
+          "$r_{4}: O P 1::=\\sin \\mid \\cos$"
+        ],
+        [
+          "",
+          "$r_{9}: V L::=t \\mid f$",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "4",
+      "table_title": "Configurations employed in the experiments.",
+      "headers": [
+        "Hyperparameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "GGGP approaches",
+          "WX, EDA, and SEDA"
+        ],
+        [
+          "Population size",
+          100
+        ],
+        [
+          "Initialization algorithm",
+          "Grammatically uniform"
+        ],
+        [
+          "Selection operator",
+          5
+        ],
+        [
+          "Replacement",
+          "Substitutes the worst individuals with the offspring"
+        ],
+        [
+          "Mutation",
+          "None"
+        ],
+        [
+          "Replacement rates",
+          "$20 \\%, 40 \\%, 60 \\%, 80 \\%$, and $100 \\%$"
+        ],
+        [
+          "SEDA smoothing factors $\\sigma$",
+          "$10^{-4}, 10^{-3}, 10^{-2}$, and $10^{-1}$"
+        ],
+        [
+          "Fitness function",
+          3
+        ],
+        [
+          "Executions run",
+          100
+        ],
+        [
+          "Target derivation tree size",
+          50
+        ],
+        [
+          "Target derivation trees",
+          100
+        ],
+        [
+          "",
+          "approach"
+        ],
+        [
+          "Stop criteria",
+          "1. The target derivation tree is found."
+        ],
+        [
+          "",
+          "2. The avg. population fitness improves less than $1 \\%$ in 25"
+        ],
+        [
+          "",
+          "evaluations."
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Post hoc test: hyperparameter configurations included in the homogeneous subset $(\\alpha=0.05)$ with the best fitness means for SEDA with $G_{D F F N N}$, WX with $G_{R B S}$, and SEDA with $G_{R B S}$. Tukey HSD test. Dependent variable: fitness of the final solution. 100 executions are run in all cases. Asterisks in brackets mark the hyperparameters chosen in the subsequent performance comparisons.",
+      "headers": [
+        "SEDA with $G_{D F F N N}$",
+        "",
+        "WX with $G_{R B S}$",
+        "",
+        "SEDA with $G_{R B S}$",
+        ""
+      ],
+      "rows": [
+        [
+          "Hyperparams.",
+          "Mean",
+          "Hyperparams.",
+          "Mean",
+          "Hyperparams.",
+          "Mean"
+        ],
+        [
+          "$100 \\%, 10^{-2}$",
+          0.39,
+          "$100 \\%$ (*)",
+          63.9,
+          "$100 \\%, 10^{-3}$",
+          15.12
+        ],
+        [
+          "$80 \\%, 10^{-2}(*)$",
+          0.49,
+          "$80 \\%$",
+          65.88,
+          "$80 \\%, 10^{-2}(*)$",
+          16.69
+        ],
+        [
+          "$60 \\%, 10^{-2}$",
+          0.57,
+          "$60 \\%$",
+          70.58,
+          "$80 \\%, 10^{-3}$",
+          17.02
+        ],
+        [
+          "$40 \\%, 10^{-2}$",
+          0.73,
+          "",
+          "",
+          "$60 \\%, 10^{-2}$",
+          17.65
+        ],
+        [
+          "$20 \\%, 10^{-2}$",
+          0.85,
+          "",
+          "",
+          "$60 \\%, 10^{-3}$",
+          18.77
+        ],
+        [
+          "$40 \\%, 10^{-3}$",
+          1.29,
+          "",
+          "",
+          "$40 \\%, 10^{-3}$",
+          19.15
+        ],
+        [
+          "$100 \\%, 10^{-3}$",
+          1.32,
+          "",
+          "",
+          "$40 \\%, 10^{-2}$",
+          22.33
+        ],
+        [
+          "$80 \\%, 10^{-3}$",
+          1.44,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$80 \\%, 10^{-1}$",
+          1.49,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$40 \\%, 10^{-1}$",
+          1.59,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$60 \\%, 10^{-1}$",
+          1.66,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$60 \\%, 10^{-3}$",
+          1.85,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$20 \\%, 10^{-3}$",
+          1.97,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$100 \\%, 10^{-4}$",
+          2.02,
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Post hoc test: hyperparameter configurations included in the homogeneous subset $(\\alpha=0.05)$ with the best fitness means for the three evolutionary approaches working with $G_{S R}$. Tukey HSD test. Dependent variable: fitness of the final solution. 100 executions are run in all cases. Asterisks in brackets mark the hyperparameters chosen in the subsequent performance comparisons.",
+      "headers": [
+        "WX with $G_{S R}$",
+        "",
+        "EDA with $G_{S R}$",
+        "",
+        "SEDA with $G_{S R}$",
+        ""
+      ],
+      "rows": [
+        [
+          "Hyperparams.",
+          "Mean",
+          "Hyperparams.",
+          "Mean",
+          "Hyperparams.",
+          "Mean"
+        ],
+        [
+          "$100 \\%$ (*)",
+          99.27,
+          "$80 \\%$ (*)",
+          116.26,
+          "$80 \\%, 10^{-2}(*)$",
+          97.77
+        ],
+        [
+          "$80 \\%$",
+          102.17,
+          "$60 \\%$",
+          116.88,
+          "$60 \\%, 10^{-2}$",
+          98.54
+        ],
+        [
+          "",
+          "",
+          "$40 \\%$",
+          117.67,
+          "$80 \\%, 10^{-3}$",
+          99.6
+        ],
+        [
+          "",
+          "",
+          "$20 \\%$",
+          118.62,
+          "$100 \\%, 10^{-3}$",
+          99.79
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Average fitness of the final solutions and average evaluations, in thousands, performed to meet a stop criterion using $G_{D F F N N}$ after running 100 executions for each evolutionary algorithm and target derivation tree size. Significant best values are marked with an asterisk in brackets.",
+      "headers": [
+        "Average fitness of the final solutions",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          10,
+          "",
+          "",
+          20,
+          "",
+          "",
+          50,
+          "",
+          "",
+          75,
+          "",
+          "",
+          100,
+          "",
+          ""
+        ],
+        [
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA"
+        ],
+        [
+          "$0.0^{(*)}$",
+          0.32,
+          0.07,
+          "$0.05^{(*)}$",
+          1.09,
+          0.23,
+          0.4,
+          2.47,
+          0.49,
+          1.87,
+          4.25,
+          "$0.99^{(*)}$",
+          3.3,
+          5.87,
+          "$1.33^{(*)}$"
+        ],
+        [
+          "Average evaluations performed (in thousands)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$0.26^{(*)}$",
+          0.79,
+          0.5,
+          0.98,
+          1.79,
+          1.21,
+          3.97,
+          2.81,
+          2.56,
+          4.79,
+          2.91,
+          3.1,
+          6.21,
+          "$2.95^{(*)}$",
+          3.56
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 15
+    },
+    {
+      "table_number": "8",
+      "table_title": "Average fitness of the final solutions and average evaluations, in thousands, performed to meet a stop criterion using $G_{R B S}$ after running 100 executions for each evolutionary algorithm and target derivation tree size. Significant best values are marked with an asterisk in brackets.",
+      "headers": [
+        "Average fitness of the final solutions",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          10,
+          "",
+          "",
+          20,
+          "",
+          "",
+          50,
+          "",
+          "",
+          75,
+          "",
+          "",
+          100,
+          ""
+        ],
+        [
+          "Average evaluations performed (in thousands)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 14
+    },
+    {
+      "table_number": "9",
+      "table_title": "Average fitness of the final solutions and average evaluations, in thousands, performed to meet a stop criterion using $G_{S R}$ after running 100 executions for each evolutionary algorithm and target derivation tree size. Significant best values are marked with an asterisk in brackets.",
+      "headers": [
+        "Average fitness of the final solutions",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          10,
+          "",
+          "",
+          20,
+          "",
+          "",
+          50,
+          "",
+          "",
+          75,
+          "",
+          "",
+          100,
+          "",
+          ""
+        ],
+        [
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA",
+          "WX",
+          "EDA",
+          "SEDA"
+        ],
+        [
+          11.4,
+          16.2,
+          "$9.96^{(*)}$",
+          30.3,
+          40.5,
+          "$27.8^{(*)}$",
+          99.3,
+          116.3,
+          "$97.8^{(*)}$",
+          151.2,
+          181.9,
+          "$147.4^{(*)}$",
+          "$212.2^{(*)}$",
+          249.1,
+          223.3
+        ],
+        [
+          "Average evaluations performed (in thousands)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          6.7,
+          "$3.03^{(*)}$",
+          4.7,
+          7.2,
+          "$3.1^{(*)}$",
+          5.5,
+          8.2,
+          "$3.1^{(*)}$",
+          7.4,
+          7.9,
+          "$3.1^{(*)}$",
+          7.1,
+          7.6,
+          "$3.1^{(*)}$",
+          5.4
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 15
+    }
+  ]
+}

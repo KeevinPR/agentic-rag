@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2003/MOPED  A Multi-objective Parzen-Based Estimation of Distribution Algorithm for Continuous Problems.md",
+    "filename": "MOPED  A Multi-objective Parzen-Based Estimation of Distribution Algorithm for Continuous Problems.md",
+    "title": "MOPED  A Multi-objective Parzen-Based Estimation of Distribution Algorithm for Continuous Problems",
+    "year": "2003"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test cases problems",
+      "headers": [
+        "Type \\& $m$",
+        "Objective functions",
+        "Limits"
+      ],
+      "rows": [
+        [
+          "$\\min , m=3$",
+          "$\\operatorname{MOP2}\\left\\{\\begin{array}{l} f_{1}(x)=1-\\exp \\left(-\\sum_{i=1}^{m}\\left(x_{i}-\\frac{1}{\\sqrt{m}}\\right)^{2}\\right) \\\\ f_{2}(x)=1-\\exp \\left(-\\sum_{i=1}^{m}\\left(x_{i}+\\frac{1}{\\sqrt{m}}\\right)^{2}\\right) \\end{array}\\right.$",
+          "$\\begin{aligned} & -4 \\leq x_{i} \\leq 4, \\\\ & \\mathrm{i}=1, \\ldots, m \\end{aligned}$"
+        ],
+        [
+          "$\\min , m=3$",
+          "$\\operatorname{MOP4}\\left\\{\\begin{array}{l} f_{1}(x)=\\sum_{i=1}^{m-1}\\left(-10 \\exp \\left(-0.2 \\sqrt{x_{i}^{2}+x_{i+1}^{2}}\\right)\\right) \\\\ f_{2}(x)=\\sum_{i=1}^{m}\\left(x_{i}\\right)^{0.8}+5 \\sin \\left(x_{i}\\right)^{3}\\end{array}\\right.$",
+          "$\\begin{aligned} & -5 \\leq x_{i} \\leq 5, \\\\ & \\mathrm{i}=1, \\ldots, m \\end{aligned}$"
+        ],
+        [
+          "$\\min , m=10$",
+          "$\\operatorname{EC4}\\left\\{\\begin{array}{l} f_{1}(x)=x_{1} \\\\ f_{2}(x)=g\\left(1-\\sqrt{\\frac{x_{1}}{g}}\\right) \\\\ g(x)=91+\\sum_{i=2}^{m}\\left(x_{i}^{2}-10 \\cos \\left(4 \\pi x_{i}\\right)\\right) \\end{array}\\right.$",
+          "$\\begin{aligned} & 0 \\leq x_{i} \\leq 1 ; \\\\ & -5 \\leq x_{i} \\leq 5, \\\\ & \\mathrm{i}=2, \\ldots, m \\end{aligned}$"
+        ],
+        [
+          "$\\min , m=10$",
+          "$\\operatorname{EC6}\\left\\{\\begin{array}{l} f_{1}(x)=1-\\exp \\left(-4 x_{1}\\right) \\sin \\left(6 \\pi x_{1}\\right)^{6} \\\\ f_{2}(x)=g\\left(1-\\left(\\frac{f_{1}}{g}\\right)^{2}\\right) \\\\ g(x)=1+\\theta\\left(\\sum_{i=2}^{m} \\frac{x_{i}}{9}\\right)^{0.25} \\end{array}\\right.$",
+          "$\\begin{gathered} 0 \\leq x_{i} \\leq 1, \\\\ \\mathrm{i}=1, \\ldots, m \\end{gathered}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    }
+  ]
+}

@@ -1,0 +1,805 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Effective search for Pittsburgh learning classifier systems via estimation of distribution algorithms.md",
+    "filename": "Effective search for Pittsburgh learning classifier systems via estimation of distribution algorithms.md",
+    "title": "Effective search for Pittsburgh learning classifier systems via estimation of distribution algorithms",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Properties of the artificial problems.",
+      "headers": [
+        "Name",
+        "\\#Instance",
+        "\\#Feature",
+        "Rule length"
+      ],
+      "rows": [
+        [
+          -11,
+          2048,
+          11,
+          22
+        ],
+        [
+          -20,
+          1048576,
+          20,
+          40
+        ],
+        [
+          -37,
+          1.3711,
+          37,
+          74
+        ],
+        [
+          -70,
+          1.1821,
+          70,
+          140
+        ],
+        [
+          "ParityMP-2-6",
+          4096,
+          12,
+          24
+        ],
+        [
+          "ParityMP-3-6",
+          262144,
+          18,
+          36
+        ],
+        [
+          "ParityOne-2-5",
+          1024,
+          10,
+          20
+        ],
+        [
+          "ParityOne-3-5",
+          32768,
+          15,
+          30
+        ],
+        [
+          "LadderMP-2-2-6",
+          4096,
+          12,
+          24
+        ],
+        [
+          "LadderMP-1-2-6",
+          4096,
+          12,
+          24
+        ],
+        [
+          "LadderMP-3-3-6",
+          262144,
+          18,
+          36
+        ],
+        [
+          "LadderMP-2-3-6",
+          262144,
+          18,
+          36
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Properties of the real world problems.",
+      "headers": [
+        "Name",
+        "\\#Instance",
+        "\\#Features",
+        "Rule length"
+      ],
+      "rows": [
+        [
+          "House-vote",
+          425,
+          16,
+          32
+        ],
+        [
+          "KR-KP",
+          3196,
+          36,
+          72
+        ],
+        [
+          "Mushroom",
+          8124,
+          22,
+          127
+        ],
+        [
+          "TicTacToe",
+          958,
+          9,
+          27
+        ],
+        [
+          -1,
+          432,
+          6,
+          17
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "General parameters to configure GAssist and pLCS_BOA.",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Crossover prob.",
+          0.6
+        ],
+        [
+          "Selection algorithm",
+          "Tournament selection"
+        ],
+        [
+          "Selection tournament size",
+          3
+        ],
+        [
+          "Population size",
+          200
+        ],
+        [
+          "Individual-wise mutation prob.",
+          0.6
+        ],
+        [
+          "Initial number of rules per individual",
+          20
+        ],
+        [
+          "Default class policy",
+          "Major"
+        ],
+        [
+          1,
+          0.9
+        ],
+        [
+          "Terminal criterion",
+          "Convergence"
+        ],
+        [
+          "Generation of activation for rule deletion",
+          5
+        ],
+        [
+          "Minimum number of rules",
+          6
+        ],
+        [
+          "Generation of activation for MDL-based fitness function",
+          25
+        ],
+        [
+          "Initial theory length ratio",
+          0.075
+        ],
+        [
+          "Weight relax factor",
+          0.9
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Other parameters to configure pLCS_BOA.",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Interval to execute rule evolution via BOA",
+          10
+        ],
+        [
+          "Probability of rule-wise crossover",
+          0.6
+        ],
+        [
+          "Selection algorithm in BOA",
+          "Truncation selection"
+        ],
+        [
+          "Proportion for selection in BOA",
+          0.5
+        ],
+        [
+          "Replacement algorithm in rules assembling",
+          "Elitist replacement"
+        ],
+        [
+          "Proportion for replacement in rules assembling",
+          0.5
+        ],
+        [
+          "Use MDL",
+          "False"
+        ],
+        [
+          "Minimum number of rules",
+          "50 (ParityMP, ParityOne, and LadderMP-2-3-6)"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Comparison of the classification accuracy between GAssist and pLCS_BOA on artificial problems.",
+      "headers": [
+        "Data-set",
+        "GAssist",
+        "pLCS_BOA"
+      ],
+      "rows": [
+        [
+          -11,
+          "$1.0000 \\pm 0.0000$",
+          "$1.0000 \\pm 0.0000$"
+        ],
+        [
+          -20,
+          "$0.9989 \\pm 0.0089$",
+          "$0.9974 \\pm 0.0052$"
+        ],
+        [
+          -37,
+          "$0.9870 \\pm 0.0157$",
+          "$0.9914 \\pm 0.0035$"
+        ],
+        [
+          -70,
+          "-",
+          "$0.9867 \\pm 0.0114$"
+        ],
+        [
+          -11,
+          "$0.9442 \\pm 0.0054$",
+          "$0.9417 \\pm 0.0047$"
+        ],
+        [
+          -11,
+          "$0.8995 \\pm 0.0074$",
+          "$0.8931 \\pm 0.0046$"
+        ],
+        [
+          -11,
+          "$0.8694 \\pm 0.0053$",
+          "$0.8643 \\pm 0.0098$"
+        ],
+        [
+          -11,
+          "$0.8138 \\pm 0.0089$",
+          "$0.8059 \\pm 0.0143$"
+        ],
+        [
+          "ParityMP-2-6",
+          "$0.8593 \\pm 0.0234$",
+          "$0.8702 \\pm 0.0214$"
+        ],
+        [
+          "ParityOne-2-5",
+          "$0.8923 \\pm 0.0103$",
+          "$0.9387 \\pm 0.0187$"
+        ],
+        [
+          "ParityMP-3-6",
+          "$0.7789 \\pm 0.0100$",
+          "$0.9302 \\pm 0.0247$"
+        ],
+        [
+          "ParityOne-3-5",
+          "$0.8049 \\pm 0.0093$",
+          "$0.9368 \\pm 0.0275$"
+        ],
+        [
+          "LadderMP-2-2-6",
+          "$0.9837 \\pm 0.0297$",
+          "$0.9801 \\pm 0.0193$"
+        ],
+        [
+          "LadderMP-1-2-6",
+          "$0.9859 \\pm 0.0103$",
+          "$0.9874 \\pm 0.0097$"
+        ],
+        [
+          "LadderMP-3-3-6",
+          "$0.9838 \\pm 0.0314$",
+          "$0.9652 \\pm 0.0265$"
+        ],
+        [
+          "LadderMP-2-3-6",
+          "$0.9250 \\pm 0.0182$",
+          "$0.9652 \\pm 0.0201$"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 3
+    },
+    {
+      "table_number": "6",
+      "table_title": "Comparison of the number of generations, the number of match operators executed, and the running time between GAssist and pLCS_BOA on artificial problems.",
+      "headers": [
+        "Data-set",
+        "Generations",
+        "",
+        "Total match operators $\\left(=10^{8}\\right)$",
+        "",
+        "Average match operators in each generation $\\left(=10^{6}\\right)$",
+        "",
+        "Running time ( s )",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "GAssist",
+          "pLCS_BOA",
+          "GAssist",
+          "pLCS_BOA",
+          "GAssist",
+          "pLCS_BOA",
+          "GAssist",
+          "pLCS_BOA"
+        ],
+        [
+          -11,
+          226.67,
+          "$163.58 \\pm 44.09$",
+          "$3.913 \\pm 1.542$",
+          "$3.426 \\pm 0.678$",
+          1.602,
+          2.185,
+          "$5.37 \\pm 3.07$",
+          "$7.02 \\pm 0.63$"
+        ],
+        [
+          -20,
+          1103.7,
+          "$456.94 \\pm 186.2$",
+          "$14541 \\pm 3696$",
+          9822,
+          "$1129 \\pm 345.3$",
+          "$2354 \\pm 475.1$",
+          5,
+          5
+        ],
+        [
+          -37,
+          "$6573.8 \\pm 1473.5$",
+          "$3204.2 \\pm 812.6$",
+          692.5,
+          "$578.2 \\pm 174.5$",
+          "$9.791 \\pm 1.425$",
+          "$18.24 \\pm 3.251$",
+          4,
+          3
+        ],
+        [
+          -70,
+          "-",
+          "$18403 \\pm 4512$",
+          "-",
+          "$9578.2 \\pm 1745$",
+          "-",
+          "$49.46 \\pm 34.56$",
+          "-",
+          6
+        ],
+        [
+          -11,
+          "$290.14 \\pm 74.48$",
+          "$172.29 \\pm 41.56$",
+          "$4.159 \\pm 0.824$",
+          "$3.493 \\pm 0.690$",
+          "$1.465 \\pm 0.044$",
+          "$2.207 \\pm 0.194$",
+          "$5.86 \\pm 3.08$",
+          "$7.66 \\pm 0.93$"
+        ],
+        [
+          -11,
+          "$445.89 \\pm 61.17$",
+          "$237.75 \\pm 43.60$",
+          "$4.657 \\pm 0.798$",
+          "$4.262 \\pm 0.932$",
+          "$1.030 \\pm 0.067$",
+          "$1.827 \\pm 0.322$",
+          "$11.4 \\pm 7.72$",
+          "$10.8 \\pm 0.85$"
+        ],
+        [
+          -11,
+          "$602.70 \\pm 52.76$",
+          "$294.63 \\pm 77.54$",
+          "$6.219 \\pm 1.585$",
+          "$5.291 \\pm 1.422$",
+          "$1.016 \\pm 0.075$",
+          "$1.841 \\pm 0.123$",
+          "$15.1 \\pm 10.3$",
+          "$12.5 \\pm 0.72$"
+        ],
+        [
+          -11,
+          "$695.63 \\pm 27.84$",
+          "$364.25 \\pm 28.67$",
+          "$7.462 \\pm 1.036$",
+          "$6.803 \\pm 1.363$",
+          "$1.042 \\pm 0.061$",
+          "$1.897 \\pm 0.888$",
+          "$16.9 \\pm 11.5$",
+          "$15.7 \\pm 0.63$"
+        ],
+        [
+          "ParityMP-2-6",
+          "$1216.0 \\pm 75.82$",
+          "$844.71 \\pm 128.5$",
+          "$46.53 \\pm 16.23$",
+          "$42.22 \\pm 9.654$",
+          "$3.807 \\pm 0.315$",
+          "$5.042 \\pm 0.235$",
+          "$193 \\pm 27.6$",
+          "$172 \\pm 28.4$"
+        ],
+        [
+          "ParityOne-2-5",
+          "$896.4 \\pm 139.8$",
+          "$382.33 \\pm 8.802$",
+          "$14.19 \\pm 2.814$",
+          "$11.53 \\pm 1.137$",
+          "$1.568 \\pm 0.106$",
+          "$3.124 \\pm 1.130$",
+          "$107.6 \\pm 9.0$",
+          "$92.1 \\pm 19.6$"
+        ],
+        [
+          "ParityMP-3-6",
+          "$2671.9 \\pm 345.0$",
+          "$676.41 \\pm 204.3$",
+          "$234.3 \\pm 57.36$",
+          "$121.0 \\pm 31.76$",
+          "$8.384 \\pm 1.210$",
+          "$20.32 \\pm 1.210$",
+          "$468 \\pm 55.6$",
+          "$378 \\pm 46.2$"
+        ],
+        [
+          "ParityOne-3-5",
+          "$1824.4 \\pm 263.5$",
+          "$495.74 \\pm 163.4$",
+          "$76.72 \\pm 16.36$",
+          "$46.03 \\pm 9.261$",
+          "$4.009 \\pm 0.681$",
+          "$9.150 \\pm 0.791$",
+          "$374 \\pm 40.0$",
+          "$285 \\pm 44.7$"
+        ],
+        [
+          "LadderMP-2-2-6",
+          "$692.50 \\pm 194.0$",
+          "$444.80 \\pm 22.86$",
+          "$10.02 \\pm 2.927$",
+          "$7.912 \\pm 0.836$",
+          "$1.423 \\pm 0.114$",
+          "$1.813 \\pm 0.541$",
+          "$69.0 \\pm 5.52$",
+          "$52.0 \\pm 14.1$"
+        ],
+        [
+          "LadderMP-1-2-6",
+          "$791.67 \\pm 92.18$",
+          "$399.56 \\pm 82.25$",
+          "$9.57 \\pm 2.356$",
+          "$7.510 \\pm 5.567$",
+          "$1.189 \\pm 0.223$",
+          "$1.907 \\pm 1.544$",
+          "$95.9 \\pm 23.2$",
+          "$76.7 \\pm 16.7$"
+        ],
+        [
+          "LadderMP-3-3-6",
+          "$58.346 \\pm 1.236$",
+          "$63.346 \\pm 1.314$",
+          "$34.94 \\pm 4.568$",
+          "$36.94 \\pm 4.410$",
+          "$53.44 \\pm 10.95$",
+          "$58.05 \\pm 18.67$",
+          "$542 \\pm 20.9$",
+          "$712 \\pm 254$"
+        ],
+        [
+          "LadderMP-2-3-6",
+          "$2417.7 \\pm 268.6$",
+          "$946.9 \\pm 167.6$",
+          "$24734 \\pm 836.4$",
+          "$21237 \\pm 763.2$",
+          "$986.4 \\pm 132.6$",
+          "$2334 \\pm 517.7$",
+          5,
+          5
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 9
+    },
+    {
+      "table_number": "7",
+      "table_title": "Significance tests between GAssist and pLCS_BOA according to the performance on artificial problems. The $p$-values are from one sided Wilcoxon paired signed-rank tests. The level of significance is set to 0.05 .",
+      "headers": [
+        "",
+        "$R^{*}$",
+        "$R^{*}$",
+        "$p$-Value"
+      ],
+      "rows": [
+        [
+          "Accuracy",
+          65.5,
+          39.5,
+          0.1985
+        ],
+        [
+          "Number of generations",
+          1,
+          119,
+          0.0004
+        ],
+        [
+          "Number of total match operators",
+          1,
+          119,
+          0.0004
+        ],
+        [
+          "Number of match operators per generation",
+          120,
+          0,
+          0.0003
+        ],
+        [
+          "Running time",
+          31,
+          89,
+          0.0498
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Comparison of the number of generations and match operators between pLCS_BOA and MPLCS on multiplexer problems.",
+      "headers": [
+        "Data-set",
+        "Generations",
+        "",
+        "Total match operators $\\left(=10^{8}\\right)$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "pLCS_BOA",
+          "MPLCS",
+          "pLCS_BOA",
+          "MPLCS"
+        ],
+        [
+          -20,
+          "$456.9 \\pm 186.2$",
+          "$59.96 \\pm 13.52$",
+          "$9822 \\pm 2215$",
+          "$992.5 \\pm 167.6$"
+        ],
+        [
+          -37,
+          "$3204.2 \\pm 812.6$",
+          "$197.3 \\pm 47.82$",
+          "$578.2 \\pm 174.5$",
+          "$21.01 \\pm 4.572$"
+        ],
+        [
+          -70,
+          "$18403 \\pm 4512$",
+          "$833.7 \\pm 134.9$",
+          "$9578 \\pm 1745$",
+          "$189.4 \\pm 45.73$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "10",
+      "table_title": "Comparison of the number of generations, match operators and the running time between GAssist and pLCS_BOA on real world problems.",
+      "headers": [
+        "Data-set",
+        "Generations",
+        "",
+        "Total match operators $\\left(\\times 10^{7}\\right)$",
+        "",
+        "Average match operators in each generation $\\left(\\times 10^{5}\\right)$",
+        "",
+        "Running time $(\\mathrm{s})$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "GAssist",
+          "pLCS_BOA",
+          "GAssist",
+          "pLCS_BOA",
+          "GAssist",
+          "pLCS_BOA",
+          "GAssist",
+          "pLCS_BOA"
+        ],
+        [
+          "House-vote",
+          "$207.37 \\pm 65.65$",
+          "$112.08 \\pm 13.84$",
+          "$2.83 \\pm 0.78$",
+          "$1.46 \\pm 0.25$",
+          "$1.10 \\pm 0.13$",
+          "$1.81 \\pm 0.21$",
+          "$0.99 \\pm 0.33$",
+          "$0.95 \\pm 0.02$"
+        ],
+        [
+          "KR-KP",
+          "$366.54 \\pm 107.59$",
+          "$228.54 \\pm 27.12$",
+          "$39.10 \\pm 12.59$",
+          "$33.36 \\pm 13.52$",
+          "$10.76 \\pm 2.12$",
+          "$18.49 \\pm 3.61$",
+          "$23.06 \\pm 4.00$",
+          "$22.58 \\pm 1.99$"
+        ],
+        [
+          "Mushroom",
+          "$201.58 \\pm 104.90$",
+          "$168.78 \\pm 24.69$",
+          "$49.17 \\pm 24.60$",
+          "$48.96 \\pm 12.99$",
+          "$24.63 \\pm 3.04$",
+          "$38.01 \\pm 15.22$",
+          "$42.06 \\pm 6.22$",
+          "$43.14 \\pm 4.71$"
+        ],
+        [
+          "TicTacToe",
+          "$440.97 \\pm 155.34$",
+          "$305.24 \\pm 156.89$",
+          "$44.38 \\pm 8.59$",
+          "$34.49 \\pm 6.90$",
+          "$10.08 \\pm 1.56$",
+          "$11.38 \\pm 1.63$",
+          "$19.99 \\pm 3.43$",
+          "$17.41 \\pm 2.28$"
+        ],
+        [
+          -1,
+          "$112.67 \\pm 68.81$",
+          "$54.47 \\pm 10.30$",
+          "$1.31 \\pm 0.79$",
+          "$1.21 \\pm 0.18$",
+          "$1.17 \\pm 0.08$",
+          "$3.41 \\pm 0.65$",
+          "$1.68 \\pm 0.27$",
+          "$1.64 \\pm 0.04$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 9
+    },
+    {
+      "table_number": "11",
+      "table_title": "Comparison of the classification accuracy between GAssist and pLCS_BOA on real world problems.",
+      "headers": [
+        "Data-set",
+        "GAssist",
+        "pLCS_BOA"
+      ],
+      "rows": [
+        [
+          "House-vote",
+          "$0.9916 \\pm 0.0041$",
+          "$0.9896 \\pm 0.0059$"
+        ],
+        [
+          "KR-KP",
+          "$0.9726 \\pm 0.0134$",
+          "$0.9695 \\pm 0.0103$"
+        ],
+        [
+          "Mushroom",
+          "$0.9978 \\pm 0.0050$",
+          "$0.9999 \\pm 0.0004$"
+        ],
+        [
+          "TicTacToe",
+          "$0.9704 \\pm 0.0099$",
+          "$0.9697 \\pm 0.0156$"
+        ],
+        [
+          -1,
+          "$0.9847 \\pm 0.0218$",
+          "$0.9994 \\pm 0.0143$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "12",
+      "table_title": "Significance tests between GAssist and pLCS_BOA according to the performance on real world problems. The $p$-values are from one sided Wilcoxon paired signed-rank tests. The level of significance is set to 0.05 .",
+      "headers": [
+        "",
+        "$R^{*}$",
+        "$R^{-}$",
+        "$p$-Value"
+      ],
+      "rows": [
+        [
+          "Accuracy",
+          8,
+          7,
+          0.3936
+        ],
+        [
+          "Number of generations",
+          0,
+          15,
+          0.0155
+        ],
+        [
+          "Number of total match operators",
+          0,
+          15,
+          0.0155
+        ],
+        [
+          "Number of match operators per generation",
+          15,
+          0,
+          0.0155
+        ],
+        [
+          "Running time",
+          1,
+          14,
+          0.0295
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    }
+  ]
+}

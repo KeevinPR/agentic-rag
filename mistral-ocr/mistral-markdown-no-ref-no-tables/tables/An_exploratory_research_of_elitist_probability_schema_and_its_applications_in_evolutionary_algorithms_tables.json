@@ -1,0 +1,702 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/An exploratory research of elitist probability schema and its applications in evolutionary algorithms.md",
+    "filename": "An exploratory research of elitist probability schema and its applications in evolutionary algorithms.md",
+    "title": "An exploratory research of elitist probability schema and its applications in evolutionary algorithms",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Individual No.1=",
+        "0",
+        "0",
+        "1",
+        "1",
+        "Individual No.1=",
+        "0",
+        "0",
+        "1",
+        "0",
+        "Individual No.1=",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "rows": [
+        [
+          0.2,
+          0,
+          0,
+          1,
+          1,
+          0.2,
+          1,
+          0,
+          0,
+          1,
+          0.2,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0.3,
+          1,
+          1,
+          0,
+          0,
+          0.3,
+          1,
+          0,
+          1,
+          0,
+          0.3,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0.4,
+          1,
+          1,
+          0,
+          0,
+          0.4,
+          1,
+          1,
+          0,
+          1,
+          0.4,
+          1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 15
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Summary of different test datasets with respect to knapsack problems",
+      "headers": [
+        "Source",
+        "Contributor",
+        "Datasets and Methods of generating test datasets"
+      ],
+      "rows": [
+        [
+          -42,
+          "Cappanera",
+          "Datasets of multidemand multidimensional knapsack problem"
+        ],
+        [
+          "",
+          "Petersen",
+          "Datasets of multidimensional knapsack problem"
+        ],
+        [
+          "Florida State",
+          "Martello",
+          "Datasets of the 0-1 knapsack problem (p01-p08)"
+        ],
+        [
+          43,
+          "Toth",
+          ""
+        ],
+        [
+          46,
+          "Martello <br> Pisinger <br> Toth",
+          "Methods of generating the 0-1 knapsack problem datasets (uncorrelated, weakly correlated, strongly correlated, inverse strongly correlated, almost strongly correlated, subset-sum, even-odd subset-sum, even-odd strongly correlated, uncorrelated with similar weights, avis subset-sum, avis knapsack, collapsing knapsack, bounded strongly correlated, no small weight)"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Lookup table of $\\theta$",
+      "headers": [
+        "$x_{i}$",
+        "$b_{i}$",
+        "$f(x) \\geq f(b)$",
+        "Delta",
+        "$s\\left(\\alpha_{i} \\beta_{i}\\right)$",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "$\\alpha_{i} \\beta_{i}>0$",
+          "$\\alpha_{i} \\beta_{i}<0$",
+          "$\\alpha_{i}=0$",
+          "$\\beta_{i}=0$"
+        ],
+        [
+          0,
+          0,
+          "$*$",
+          0,
+          "$*$",
+          "$*$",
+          "$*$",
+          "$*$"
+        ],
+        [
+          1,
+          1,
+          "$*$",
+          0,
+          "$*$",
+          "$*$",
+          "$*$",
+          "$*$"
+        ],
+        [
+          0,
+          1,
+          "False",
+          "Delta",
+          1,
+          -1,
+          0,
+          "$\\pm 1$"
+        ],
+        [
+          0,
+          1,
+          "True",
+          "Delta",
+          -1,
+          1,
+          "$\\pm 1$",
+          0
+        ],
+        [
+          1,
+          0,
+          "False",
+          "Delta",
+          -1,
+          1,
+          "$\\pm 1$",
+          0
+        ],
+        [
+          1,
+          0,
+          "True",
+          "Delta",
+          1,
+          -1,
+          0,
+          "$\\pm 1$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 8
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Summary of compared algorithms",
+      "headers": [
+        "Name",
+        "Feature",
+        "Summary"
+      ],
+      "rows": [
+        [
+          "PeCGA",
+          "Modifies CGA by using the <br> persistent elitism mechanism",
+          "(a) Only requires a small amount of calculations <br> (b) Needs less physical memory and can run in a microprocessor"
+        ],
+        [
+          "QEA",
+          "Simulates concepts and principles <br> of quantum computing such as <br> qubits and superposition of states",
+          "(a) Uses a single elitist individual (the best solution) <br> (b) The expression format of the $Q$ bit population enables us to inject randomness <br> into each individual, and can also be used to breed promising solutions"
+        ],
+        [
+          "PSO",
+          "Simulates social behavior such as <br> bird flocking and fish schooling",
+          "(a) Uses multi elitist individuals (the best solution and personal best solutions) <br> (b) Constants $c_{1}$ and $c_{2}$ are very important for protecting population diversity"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Condition and objective of each kind of experiment",
+      "headers": [
+        "Name",
+        "Condition",
+        "Objective"
+      ],
+      "rows": [
+        [
+          "Reliability",
+          100300,
+          "To test the reliability (or repeatability) of the proposed algorithms for a specified dataset"
+        ],
+        [
+          "Adaptability",
+          300,
+          "To test the adaptability of the proposed algorithms for different test datasets"
+        ],
+        [
+          "Time Complexity",
+          300,
+          300
+        ],
+        [
+          "",
+          10708,
+          "To test the computation time of the proposed algorithms under the fitness threshold termination condition"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Success rate of EpsGA",
+      "headers": [
+        "Types",
+        "",
+        "Uncorrelated <br> datasets (\\%)",
+        "Weakly <br> correlated <br> datasets (\\%)",
+        "Strongly <br> correlated <br> datasets (\\%)"
+      ],
+      "rows": [
+        [
+          "PeCGA",
+          "Max",
+          100.0,
+          100.0,
+          100.0
+        ],
+        [
+          "QEA",
+          "Max",
+          100.0,
+          95.0,
+          100.0
+        ],
+        [
+          "",
+          "Mean",
+          100.0,
+          100.0,
+          100.0
+        ],
+        [
+          "",
+          "Min",
+          100.0,
+          100.0,
+          100.0
+        ],
+        [
+          "",
+          "Std",
+          100.0,
+          93.0,
+          72.0
+        ],
+        [
+          "PSO",
+          "Max",
+          35.0,
+          36.0,
+          60.0
+        ],
+        [
+          "",
+          "Mean",
+          93.0,
+          97.0,
+          100.0
+        ],
+        [
+          "",
+          "Min",
+          91.0,
+          93.0,
+          98.0
+        ],
+        [
+          "",
+          "Std",
+          97.0,
+          98.0,
+          95.0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Success rate of EpsCGA",
+      "headers": [
+        "Types",
+        "",
+        "Uncorrelated <br> datasets (\\%)",
+        "Weakly <br> correlated <br> datasets (\\%)",
+        "Strongly <br> correlated <br> datasets (\\%)"
+      ],
+      "rows": [
+        [
+          "PeCGA",
+          "Max",
+          100.0,
+          100.0,
+          100.0
+        ],
+        [
+          "QEA",
+          "Max",
+          100.0,
+          98.0,
+          100.0
+        ],
+        [
+          "PSO",
+          "Max",
+          80.0,
+          92.0,
+          99.0
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Computation time for uncorrelated datasets",
+      "headers": [
+        "Algorithm",
+        "Computation time (s)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Max",
+          "Mean",
+          "Min",
+          "Std"
+        ],
+        [
+          "EpsGA",
+          38.594,
+          36.989,
+          35.203,
+          0.865
+        ],
+        [
+          "EpsCGA",
+          140.687,
+          137.431,
+          134.843,
+          1.424
+        ],
+        [
+          "PeCGA",
+          0.64,
+          0.575,
+          0.484,
+          0.042
+        ],
+        [
+          "QEA",
+          96.062,
+          93.224,
+          90.36,
+          1.399
+        ],
+        [
+          "PSO",
+          104.125,
+          102.542,
+          101.094,
+          1.049
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 Computation time for weakly correlated datasets",
+      "headers": [
+        "Algorithm",
+        "Computation time (s)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Max",
+          "Mean",
+          "Min",
+          "Std"
+        ],
+        [
+          "EpsGA",
+          59.828,
+          51.851,
+          40.344,
+          8.012
+        ],
+        [
+          "EpsCGA",
+          204.328,
+          177.675,
+          140.5,
+          25.226
+        ],
+        [
+          "PeCGA",
+          0.938,
+          0.701,
+          0.531,
+          0.14
+        ],
+        [
+          "QEA",
+          146.547,
+          122.96,
+          91.094,
+          19.982
+        ],
+        [
+          "PSO",
+          164.203,
+          138.489,
+          114.828,
+          20.78
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 Computation time for strongly correlated datasets",
+      "headers": [
+        "Algorithm",
+        "Computation time (s)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Max",
+          "Mean",
+          "Min",
+          "Std"
+        ],
+        [
+          "EpsGA",
+          54.062,
+          44.235,
+          32.703,
+          6.976
+        ],
+        [
+          "EpsCGA",
+          172.547,
+          147.4,
+          103.0,
+          22.689
+        ],
+        [
+          "PeCGA",
+          0.844,
+          0.7,
+          0.469,
+          0.115
+        ],
+        [
+          "QEA",
+          139.469,
+          119.728,
+          66.5,
+          20.927
+        ],
+        [
+          "PSO",
+          146.375,
+          123.697,
+          99.078,
+          17.473
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "10",
+      "table_title": "Table 10 Computation time for classical datasets",
+      "headers": [
+        "Types",
+        "",
+        "Computation time (s)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Max",
+          "Mean",
+          "Min",
+          "Std"
+        ],
+        [
+          1,
+          "EpsGA",
+          0.062,
+          0.018,
+          0.015,
+          0.009
+        ],
+        [
+          "",
+          "EpsCGA",
+          0.078,
+          0.031,
+          0.015,
+          0.014
+        ],
+        [
+          "",
+          "PeCGA",
+          0.031,
+          0.016,
+          0.015,
+          0.002
+        ],
+        [
+          "",
+          "QEA",
+          0.046,
+          0.017,
+          0.015,
+          0.004
+        ],
+        [
+          "",
+          "PSO",
+          0.031,
+          0.017,
+          0.015,
+          0.004
+        ],
+        [
+          7,
+          "EpsGA",
+          0.046,
+          0.017,
+          0.015,
+          0.005
+        ],
+        [
+          "",
+          "EpsCGA",
+          0.078,
+          0.026,
+          0.015,
+          0.018
+        ],
+        [
+          "",
+          "PeCGA",
+          0.031,
+          0.016,
+          0.015,
+          0.003
+        ],
+        [
+          "",
+          "QEA",
+          0.046,
+          0.018,
+          0.015,
+          0.005
+        ],
+        [
+          "",
+          "PSO",
+          0.031,
+          0.019,
+          0.015,
+          0.006
+        ],
+        [
+          8,
+          "EpsGA",
+          0.031,
+          0.016,
+          0.015,
+          0.002
+        ],
+        [
+          "",
+          "EpsCGA",
+          0.125,
+          0.026,
+          0.015,
+          0.02
+        ],
+        [
+          "",
+          "PeCGA",
+          0.281,
+          0.016,
+          0.015,
+          0.03
+        ],
+        [
+          "",
+          "QEA",
+          0.031,
+          0.016,
+          0.015,
+          0.004
+        ],
+        [
+          "",
+          "PSO",
+          0.031,
+          0.017,
+          0.015,
+          0.004
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    }
+  ]
+}

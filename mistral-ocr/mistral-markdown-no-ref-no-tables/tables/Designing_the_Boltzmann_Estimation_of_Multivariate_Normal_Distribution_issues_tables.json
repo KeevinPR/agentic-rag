@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2015/Designing the Boltzmann Estimation of Multivariate Normal Distribution issues.md",
+    "filename": "Designing the Boltzmann Estimation of Multivariate Normal Distribution issues.md",
+    "title": "Designing the Boltzmann Estimation of Multivariate Normal Distribution issues",
+    "year": "2015"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "BENCHMARK MINIMIZATION PROBLEMS [2], [4], [14]. LEFT: UNIMODAL FUNCTIONS. RIGHT: MULTIMODAL FUNCTIONS. FURTHER DETAILS IN SECTION V.",
+      "headers": [
+        "$\\mathcal{F}$ Name",
+        "Domain",
+        "$\\mathcal{F}$ Name",
+        "Domain"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{F}_{1}$ Sphere",
+          "$[-600,300]^{d}$",
+          "$\\mathcal{F}_{9}$ Rosenbrock",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{2}$ Different Powers",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{10}$ Ackley",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          1.2,
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{11}$ Griewangk",
+          "$[-600,300]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{4}$ Trid",
+          "$[-d^{*}, d^{2}]^{d}$",
+          8,
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{5}$ Zakharov",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{13}$ Bohachevsky",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{6}$ Ellipsoid",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{14}$ Rastrigin",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{7}$ Cigar Tablet",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{15}$ Drop Wave",
+          "$[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{8}$ Two Axes",
+          "$[-20,10]^{d}$",
+          "$\\mathcal{F}_{16}$ Salomon",
+          "$[-100,50]^{d}$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "COMPARISON BETWEEN BEMNA AND AMALGAM METHODS IN 30 DIMENSIONS. THE WINNER IS MARKED IN BOLOFACE ACCORDING TO A NON-PARAMETRIC BODTSTRAP TEST. FURTHER DETAILS IN SECTION V.",
+      "headers": [
+        "$\\mathcal{F}$",
+        "BEMNA",
+        "AMaLGaM",
+        "$\\rho$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{F}_{1}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.76e-9 $\\pm 1.02 \\mathrm{e}-9$",
+          "8.55e-9 $\\pm 1.10 \\mathrm{e}-9$",
+          "$3.20 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          5.264,
+          8.294,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{2}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.39e-9 $\\pm 1.12 \\mathrm{e}-9$",
+          "6.59e-9 $\\pm 2.20 \\mathrm{e}-9$",
+          "1.00e-4"
+        ],
+        [
+          "",
+          2.774,
+          4.864,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{3}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.88e-9 $\\pm 9.72 \\mathrm{e}-10$",
+          "8.40e-9 $\\pm 1.20 \\mathrm{e}-9$",
+          "3.09e-2"
+        ],
+        [
+          "",
+          4.254,
+          7.354,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{4}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.84e-9 $\\pm 9.19 \\mathrm{e}-10$",
+          "8.17e-9 $\\pm 1.27 \\mathrm{e}-9$",
+          "3.20e-3"
+        ],
+        [
+          "",
+          5.414,
+          8.704,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{5}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.89e-9 $\\pm 1.01 \\mathrm{e}-9$",
+          "8.17e-9 $\\pm 1.07 \\mathrm{e}-9$",
+          "1.20e-3"
+        ],
+        [
+          "",
+          4.304,
+          7.444,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{6}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.10e-9 $\\pm 8.05 \\mathrm{e}-10$",
+          "8.39e-9 $\\pm 1.12 \\mathrm{e}-9$",
+          "6.00e-4"
+        ],
+        [
+          "",
+          5.704,
+          9.144,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{7}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.88e-9 $\\pm 1.08 \\mathrm{e}-9$",
+          "8.50e-9 $\\pm 1.29 \\mathrm{e}-9$",
+          "1.30e-1"
+        ],
+        [
+          "",
+          5.934,
+          9.294,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{8}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.19e-9 $\\pm 8.00 \\mathrm{e}-10$",
+          "8.38e-9 $\\pm 1.20 \\mathrm{e}-9$",
+          "4.00e-4"
+        ],
+        [
+          "",
+          5.914,
+          1.015,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{9}$",
+          98.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "7.97e-2 $\\pm 5.64 \\mathrm{e}-1$",
+          "8.49e-9 $\\pm 1.14 \\mathrm{e}-9$",
+          "$1.19 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          1.735,
+          2.705,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{10}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.33e-9 $\\pm 6.06 \\mathrm{e}-10$",
+          "9.02e-9 $\\pm 6.58 \\mathrm{e}-10$",
+          "1.67e-2"
+        ],
+        [
+          "",
+          6.964,
+          1.125,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{11}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.08e-9 $\\pm 8.95 \\mathrm{e}-10$",
+          "8.34e-9 $\\pm 1.20 \\mathrm{e}-9$",
+          "1.60e-3"
+        ],
+        [
+          "",
+          4.804,
+          7.874,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{12}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.98e-9 $\\pm 8.77 \\mathrm{e}-10$",
+          "8.33e-9 $\\pm 1.12 \\mathrm{e}-9$",
+          "1.70e-3"
+        ],
+        [
+          "",
+          3.724,
+          6.354,
+          "1.00e-4"
+        ],
+        [
+          "$\\mathcal{F}_{13}$",
+          92.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "5.85e-2 $\\pm 2.20 \\mathrm{e}-1$",
+          "8.42e-9 $\\pm 1.16 \\mathrm{e}-9$",
+          "5.83e-2"
+        ],
+        [
+          "",
+          6.824,
+          7.784,
+          "$3.21 \\mathrm{e}-1$"
+        ],
+        [
+          "$\\mathcal{F}_{14}$",
+          0.0,
+          2.0,
+          ""
+        ],
+        [
+          "",
+          1.462,
+          1.37,
+          "1.00e-4"
+        ],
+        [
+          "",
+          3.005,
+          3.005,
+          1.0
+        ],
+        [
+          "$\\mathcal{F}_{15}$",
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "",
+          "1.33e-1 $\\pm 8.07 \\mathrm{e}-2$",
+          "2.08e-1 $\\pm 1.09 \\mathrm{e}-1$",
+          "1.00e-4"
+        ],
+        [
+          "",
+          3.005,
+          3.005,
+          1.0
+        ],
+        [
+          "$\\mathcal{F}_{16}$",
+          0.0,
+          0.0,
+          ""
+        ],
+        [
+          "",
+          "1.64e-1 $\\pm 6.29 \\mathrm{e}-2$",
+          "3.63e-1 $\\pm 8.75 \\mathrm{e}-2$",
+          "1.00e-4"
+        ],
+        [
+          "",
+          3.005,
+          3.005,
+          1.0
+        ]
+      ],
+      "row_count": 48,
+      "column_count": 4
+    }
+  ]
+}

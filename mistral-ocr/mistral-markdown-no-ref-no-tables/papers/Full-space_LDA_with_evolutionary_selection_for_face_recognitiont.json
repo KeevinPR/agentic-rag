@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/Full-space LDA with evolutionary selection for face recognitiont.md",
+    "filename": "Full-space LDA with evolutionary selection for face recognitiont.md",
+    "title": "Full-space LDA with evolutionary selection for face recognitiont",
+    "year": "2006"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] K. Fukunaga: Introduction to statistical pattern recognition, Academic Press, Boston, 2nd edition, 1990.\n[2] H. Yu and J. Yang: A direct lda algorithm for highdimensional data with application to face recognition. Pattern Recognition, 2001.\n[3] L. Chen, H. Liao, M. Ko, J. Lin, and G. Yu.:A new ldabased face recognition system which can solve the samll sample size problem. Pattern Recognition, 2000.\n[4] J. Yang and J.Yang : Optimal FLD algorithm for facial feature extraction, SPIE Proceedings of the Intelligent Robots and Computer Vision XX: Algorithms,Techniques, and Active Vision, vol. 4572, pp. 438-444, 2001.\n[5] X.Wang and X.Tang: Dual-space linear discrminant analysis for face recognition, Proceeding of CVPR'04, vol.2.pp.564-569, 2004.\n[6] P.N. Belhumeur, J. Hespanha, and D.J. Kriegman.: Eigenfaces vs. fisherfaces: Recognition using class specific linear projection. IEEE Trans. on PAMI, 19(7):711-720, 1997.\n[7] Thomaz, C.E and Gillies, D.F.: A Maximum Uncertainty LDA-Based Approach for Limited Sample Size Problems With Application to Face Recognition. Computer Graphics and Image Processing, 2005. SIBGRAPI 2005 Page(s):89-96\n[8] Larrañaga P, Lozano JA: Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic Publishers; 2001.\n[9] Saeys Y, Degroeve S, Aeyels D, Van de Peer Y, Rouzé P: Fast feature selection using a simple Estimation of Distribution Algorithm: A case study on splice site prediction. Bioinformatics 2003, 19(Suppl 2):II179-II188.\n[10] Muhlenbein H: The equation for response to selection and its use for prediction. Evol Comput 1997, 5:303-346.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "K. Fukunaga: Introduction to statistical pattern recognition, Academic Press, Boston, 2nd edition, 1990."
+      },
+      {
+        "ref_id": "2",
+        "text": "H. Yu and J. Yang: A direct lda algorithm for highdimensional data with application to face recognition. Pattern Recognition, 2001."
+      },
+      {
+        "ref_id": "3",
+        "text": "L. Chen, H. Liao, M. Ko, J. Lin, and G. Yu.:A new ldabased face recognition system which can solve the samll sample size problem. Pattern Recognition, 2000."
+      },
+      {
+        "ref_id": "4",
+        "text": "J. Yang and J.Yang : Optimal FLD algorithm for facial feature extraction, SPIE Proceedings of the Intelligent Robots and Computer Vision XX: Algorithms,Techniques, and Active Vision, vol. 4572, pp. 438-444, 2001."
+      },
+      {
+        "ref_id": "5",
+        "text": "X.Wang and X.Tang: Dual-space linear discrminant analysis for face recognition, Proceeding of CVPR'04, vol.2.pp.564-569, 2004."
+      },
+      {
+        "ref_id": "6",
+        "text": "P.N. Belhumeur, J. Hespanha, and D.J. Kriegman.: Eigenfaces vs. fisherfaces: Recognition using class specific linear projection. IEEE Trans. on PAMI, 19(7):711-720, 1997."
+      },
+      {
+        "ref_id": "7",
+        "text": "Thomaz, C.E and Gillies, D.F.: A Maximum Uncertainty LDA-Based Approach for Limited Sample Size Problems With Application to Face Recognition. Computer Graphics and Image Processing, 2005. SIBGRAPI 2005 Page(s):89-96"
+      },
+      {
+        "ref_id": "8",
+        "text": "Larrañaga P, Lozano JA: Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic Publishers; 2001."
+      },
+      {
+        "ref_id": "9",
+        "text": "Saeys Y, Degroeve S, Aeyels D, Van de Peer Y, Rouzé P: Fast feature selection using a simple Estimation of Distribution Algorithm: A case study on splice site prediction. Bioinformatics 2003, 19(Suppl 2):II179-II188."
+      },
+      {
+        "ref_id": "10",
+        "text": "Muhlenbein H: The equation for response to selection and its use for prediction. Evol Comput 1997, 5:303-346."
+      }
+    ],
+    "reference_count": 10,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparison of recognition result with Fisherface, DLDA, NLDA, Full-space LDA and proposed method",
+      "headers": [
+        "Method",
+        "Number <br> of <br> features",
+        "Recognition performance",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          39,
+          0.875,
+          0.815
+        ],
+        [
+          "NLDA",
+          39,
+          0.9,
+          0.835
+        ],
+        [
+          "DLDA",
+          39,
+          0.8875,
+          0.795
+        ],
+        [
+          "Full-space LDA",
+          78,
+          0.9125,
+          0.85
+        ],
+        [
+          "EDA+Full-space",
+          59,
+          0.9875,
+          0.955
+        ],
+        [
+          "LDA",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 shows the comparative tuning and testing performance of Fisherface, DLDA, NLDA, Full-space LDA and EDA+Full-space LDA. One can see that EDA+Full-space LDA outperforms the other LDA methods. The optimal number of eigenvectors be selected in the range and null subspace of $S_{W}$ is presented in Table 2.",
+      "headers": [
+        "Method",
+        "Number <br> eigenvectors <br> ranger subspace",
+        "of Number <br> eigenvector <br> null subspace",
+        "of <br> in <br> in <br> null subspace"
+      ],
+      "rows": [
+        [
+          "Full-space LDA",
+          80,
+          39,
+          ""
+        ],
+        [
+          "EDA+Full-space",
+          35,
+          24,
+          ""
+        ],
+        [
+          "LDA",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    }
+  ]
+}

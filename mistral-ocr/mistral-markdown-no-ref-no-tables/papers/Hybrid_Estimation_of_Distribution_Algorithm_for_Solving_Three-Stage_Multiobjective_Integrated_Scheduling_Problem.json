@@ -1,0 +1,679 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Hybrid Estimation of Distribution Algorithm for Solving Three-Stage Multiobjective Integrated Scheduling Problem.md",
+    "filename": "Hybrid Estimation of Distribution Algorithm for Solving Three-Stage Multiobjective Integrated Scheduling Problem.md",
+    "title": "Hybrid Estimation of Distribution Algorithm for Solving Three-Stage Multiobjective Integrated Scheduling Problem",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] N. Salahi and M. A. Jafari, \"Energy-performance as a driver for optimal production planning,\" Applied Energy, vol. 174, no. 15, pp. 88-100, 2016.\n[2] J. M. Bloemhof, P. Beek, L. Hordijka et al., \"Interactions between operational research and environmental management,\" European Journal of Operation Research, vol. 85, no. 2, pp. 229-243, 1995.\n[3] G. May, M. Taisch, B. Stahl et al., \"Toward energy efficient manufacturing: a study on practices and viewpoint of the industry,\" Competitive Manufacturing for Innovative Products and Services, vol. 8, 2012.\n[4] Y. Liu and A. Tiwari, \"An investigation into minimising total energy consumption and total completion time in a flexible job shop for recycling carbon fiber reinforced Polymer,\" Procedia CIRP, vol. 29, no. 3, pp. 722-727, 2015.\n[5] Q. Zhu, J. F. Lu, A. Mayyas et al., \"Production energy optimization using low dynamic programming, a decision support tool for sustainable manufacturing,\" Journal of Cleaner Production, vol. 15, no. 2, pp. 135-147, 2014.\n[6] K. Geng, C. Ye, Z. h. Dai, and L. Liu, \"Bi-objective re-Entrant hybrid flow shop scheduling considering energy consumption cost under time-of-use electricity tariffs,\" Complexity, vol. 2020, no. 1, pp. 1-17, 2020.\n[7] B.-H. Zhou and C.-Y. Shen, \"Multi-objective optimization of material delivery for mixed model assembly lines with energy consideration,\" Journal of Cleaner Production, vol. 192, no. 1, pp. 293-305, 2018.\n[8] C. Koulamas and G. J. Kyparisis, \"The three-stage assembly flowshop scheduling problem,\" Computers \\& Operations Research, vol. 28, no. 7, pp. 689-704, 2001.\n[9] S. Hatami, S. Ebrahimnejad, M. R. Tavakkoli et al., \"Two metaheuristics for three-stage assembly flowshop scheduling with sequence-dependent setup times,\" International Journal of Advanced Manufacturing Technology, vol. 50, no. 12, pp. 1153-1164, 2010.\n[10] A. Maleki and I. Seyedi, \"A three-stage assembly flow shop scheduling problem with blocking and sequence-dependent setup times,\" Journal of Industrial Engineering International, vol. 8, no. 1, pp. 1-7, 2012.\n[11] S. C. Campos and J. E. C. Arroyo, \"NSGA-II with iterated greedy for a bi-objective three-stage assembly flowshop scheduling problem, Conference on Genetic \\& Evolutionary Computation,\" ACM, vol. 12, no. 1, pp. 429-436, 2014.\n[12] C. Deng, B. Qian, R. Hu et al., \"Rule-based hybrid EDA for three-stage assembly integrated scheduling problem with job batches transportation problem,\" Control and Decision, vol. 35, no. 10, pp. 2507-2513, 2020.\n[13] J. N. D. Gupta, \"Two-stage, hybrid flowshop scheduling problem,\" Journal of the Operational Research Society, vol. 39, no. 4, pp. 359-364, 1988.\n[14] J. Y. Ding, S. Song, and C. Wu, \"Carbon-efficient scheduling of flow shops by multi-objective optimization,\" European Journal of Operational Research, vol. 248, no. 3, pp. 758-771, 2015.\n[15] J. Yan, L. Li, F. Zhao, F. Zhang, and Q. Zhao, \"A multi-level optimization approach for energy-efficient flexible flow shop scheduling,\" Journal of Cleaner Production, vol. 137, no. 1, pp. 1543-1552, 2016.\n[16] D. Tang, M. Dai, M. A. Salido, and A. Giret, \"Energy-efficient dynamic scheduling for a flexible flow shop using an improved particle swarm optimization,\" Computers in Industry, vol. 81, no. 1, pp. 82-95, 2016.\n[17] R. Zhang and R. Chiong, \"Solving the energy-efficient job shop scheduling problem: a multi-objective genetic algorithm with enhanced local search for minimizing the total weighted tardiness and total energy consumption,\" Journal of Cleaner Production, vol. 112, no. 7, pp. 3361-3375, 2015.\n[18] X. Zheng, S. Zhou, R. Xu et al., \"Energy-efficient scheduling for multi-objective two-stage flow shop using a hybrid ant colony optimisation algorithm,\" International Journal of Production Research, vol. 58, no. 13, pp. 1-18, 2020.\n[19] C. Lu, L. Gao, X. Li, Q. Pan, and Q. Wang, \"Energy-efficient permutation flow shop scheduling problem using a hybrid multi-objective backtracking search algorithm,\" Journal of Cleaner Production, vol. 144, no. 6, pp. 228-238, 2017.\n[20] M. Dai, D. Tang, A. Giret, and M. A. Salido, \"Multi-objective optimization for energy-efficient flexible job shop scheduling problem with transportation constraints,\" Robotics and Computer-Integrated Manufacturing, vol. 59, no. 1, pp. 143157, 2019.\n[21] Y. Tanimizu and K. Amano, \"Integrated production and transportation scheduling for multi-objective green supply chain network design,\" Procedia CIRP, vol. 57, no. 12, pp. 152-157, 2016.\n[22] Z. Guo, L. Shi, L. Chen, and Y. Liang, \"A harmony searchbased memetic optimization model for integrated production and transportation scheduling in MTO manufacturing,\" Omega, vol. 66, no. 2, pp. 327-343, 2017.\n[23] Z. Liu, S. Guo, and L. Wang, \"Integrated green scheduling optimization of flexible job shop and crane transportation considering comprehensive energy consumption,\" Journal of Cleaner Production, vol. 211, no. 20, pp. 765-786, 2019.\n[24] Y. Kuo, \"Using simulated annealing to minimize fuel consumption for the time-dependent vehicle routing problem,\" Computers \\& Industrial Engineering, vol. 59, no. 1, pp. 157165, 2010.\n[25] E. Demir, T. Bektaş, and G. Laporte, \"An adaptive large neighborhood search heuristic for the pollution-routing problem,\" European Journal of Operational Research, vol. 223, no. 2, pp. 346-359, 2012.\n[26] M. Salehi, M. Jalalian, and M. M. Vali Siar, \"Green transportation scheduling with speed control: trade-off between total transportation cost and carbon emission,\" Computers \\& Industrial Engineering, vol. 113, no. 3, pp. 392-404, 2017.\n[27] J.-Q. Li, Y. Du, K.-Z. Gao et al., \"A hybrid iterated greedy algorithm for a crane transportation flexible job shop problem,\" IEEE Transactions on Automation Science and Engineering, vol. 99, no. 1, pp. 1-18, 2021.\n[28] J. Q. Li, Y. Q. Han, P. Y. Duan et al., \"Meta-heuristic algorithm for solving vehicle routing problems with time windows and synchronized visit constraints in prefabricated systems,\" Journal of Cleaner Production, vol. 250, no. 2, pp. 223-356, 2019.\n[29] J. Li, Z.-M. Liu, C. Li, and Z. Zheng, \"Improved artificial immune system algorithm for type-2 fuzzy flexible job shop scheduling problem,\" IEEE Transactions on Fuzzy Systems, vol. 99, no. 1, pp. 1-191, 2020.\n[30] Z.-w. Sun and X.-s. Gu, \"A novel hybrid estimation of distribution algorithm for solving hybrid flowshop scheduling problem with unrelated parallel machine,\" Journal of Central South University, vol. 24, no. 8, pp. 1779-1788, 2017.\n\n[31] B. Qian, Z.-c. Li, and R. Hu, \"A copula-based hybrid estimation of distribution algorithm for m-machine reentrant permutation flow-shop scheduling problem,\" Applied Soft Computing, vol. 61, no. 3, pp. 921-934, 2017.\n[32] X. Wang, K. Xing, X. Li, and J. Luo, \"An estimation of distribution algorithm for scheduling problem of flexible manufacturing systems using Petri nets,\" Applied Mathematical Modelling, vol. 55, no. 6, pp. 776-788, 2018.\n[33] Z. C. Li, B. Qian, R. Hu, L. L. Chang, and J. B. Yang, \"An elitist nondominated sorting hybrid algorithm for multi-objective flexible job-shop scheduling problem with sequence-dependent setups,\" Knowledge-Based Systems, vol. 173, no. 6, pp. 83-112, 2019.\n[34] M. Dai, Z. Zhang, A. Giret, and M. A. Salido, \"An enhanced estimation of distribution algorithm for energy-efficient jobshop scheduling problems with transportation constraints,\" Sustainability, vol. 11, no. 11, pp. 3085-3098, 2019.\n[35] Z. J. Yang, Z. Wang, Y. Wang et al., \"Two-stage estimation of distribution algorithm to solve multi-vehicle carpooling problem,\" Journal of Transportation Systems Engineering and Information Technology, vol. 16, no. 2, pp. 164-168, 2016.\n[36] H. Mokhtari and A. Hasani, \"An energy-efficient multi-objective optimization for flexible job-shop scheduling problem,\" Computers \\& Chemical Engineering, vol. 104, no. 4, pp. 339-352, 2017.\n[37] M. B. Yildirim and G. Mouzon, \"Single-machine sustainable production planning to minimize total energy consumption and total completion time using a multiple objective genetic algorithm,\" IEEE Transactions on Engineering Management, vol. 59, no. 4, pp. 585-597, 2012.\n[38] M. Dal, D. Tang, A. Giret et al., \"Energy-efficient scheduling for a flexible flow shop using an improved genetic-simulated annealing algorithm,\" Robotics and Computer Integrated Manufacturing, vol. 29, no. 9, pp. 418-429, 2016.\n[39] A. Palmer, The Development to Fan Integrated Routing and Carbon Dioxide Emissions Model for Goods Vehicles, Cranfield University, School of Management, Cranfield, UK, 2007.\n[40] L. Kara, B. Y. Kara, and M. K. Yetis, \"Energy minimizing vehicle routing problem,\" International Conference on Combinatorial Optimization and Applications, vol. 105, no. 5, pp. 916-1024, 2007.\n[41] Q.-K. Pan and R. Ruiz, \"An estimation of distribution algorithm for lot-streaming flow shop problems with setup times,\" Omega, vol. 40, no. 2, pp. 166-180, 2012.\n[42] H. Ishibuchi, T. Yoshida, and T. Murata, \"Balance between genetic search and local search in memetic algorithms for multiobjective permutation flowshop scheduling,\" IEEE Transactions on Evolutionary Computation, vol. 7, no. 2, pp. 204-223, 2003.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "N. Salahi and M. A. Jafari, \"Energy-performance as a driver for optimal production planning,\" Applied Energy, vol. 174, no. 15, pp. 88-100, 2016."
+      },
+      {
+        "ref_id": "2",
+        "text": "J. M. Bloemhof, P. Beek, L. Hordijka et al., \"Interactions between operational research and environmental management,\" European Journal of Operation Research, vol. 85, no. 2, pp. 229-243, 1995."
+      },
+      {
+        "ref_id": "3",
+        "text": "G. May, M. Taisch, B. Stahl et al., \"Toward energy efficient manufacturing: a study on practices and viewpoint of the industry,\" Competitive Manufacturing for Innovative Products and Services, vol. 8, 2012."
+      },
+      {
+        "ref_id": "4",
+        "text": "Y. Liu and A. Tiwari, \"An investigation into minimising total energy consumption and total completion time in a flexible job shop for recycling carbon fiber reinforced Polymer,\" Procedia CIRP, vol. 29, no. 3, pp. 722-727, 2015."
+      },
+      {
+        "ref_id": "5",
+        "text": "Q. Zhu, J. F. Lu, A. Mayyas et al., \"Production energy optimization using low dynamic programming, a decision support tool for sustainable manufacturing,\" Journal of Cleaner Production, vol. 15, no. 2, pp. 135-147, 2014."
+      },
+      {
+        "ref_id": "6",
+        "text": "K. Geng, C. Ye, Z. h. Dai, and L. Liu, \"Bi-objective re-Entrant hybrid flow shop scheduling considering energy consumption cost under time-of-use electricity tariffs,\" Complexity, vol. 2020, no. 1, pp. 1-17, 2020."
+      },
+      {
+        "ref_id": "7",
+        "text": "B.-H. Zhou and C.-Y. Shen, \"Multi-objective optimization of material delivery for mixed model assembly lines with energy consideration,\" Journal of Cleaner Production, vol. 192, no. 1, pp. 293-305, 2018."
+      },
+      {
+        "ref_id": "8",
+        "text": "C. Koulamas and G. J. Kyparisis, \"The three-stage assembly flowshop scheduling problem,\" Computers \\& Operations Research, vol. 28, no. 7, pp. 689-704, 2001."
+      },
+      {
+        "ref_id": "9",
+        "text": "S. Hatami, S. Ebrahimnejad, M. R. Tavakkoli et al., \"Two metaheuristics for three-stage assembly flowshop scheduling with sequence-dependent setup times,\" International Journal of Advanced Manufacturing Technology, vol. 50, no. 12, pp. 1153-1164, 2010."
+      },
+      {
+        "ref_id": "10",
+        "text": "A. Maleki and I. Seyedi, \"A three-stage assembly flow shop scheduling problem with blocking and sequence-dependent setup times,\" Journal of Industrial Engineering International, vol. 8, no. 1, pp. 1-7, 2012."
+      },
+      {
+        "ref_id": "11",
+        "text": "S. C. Campos and J. E. C. Arroyo, \"NSGA-II with iterated greedy for a bi-objective three-stage assembly flowshop scheduling problem, Conference on Genetic \\& Evolutionary Computation,\" ACM, vol. 12, no. 1, pp. 429-436, 2014."
+      },
+      {
+        "ref_id": "12",
+        "text": "C. Deng, B. Qian, R. Hu et al., \"Rule-based hybrid EDA for three-stage assembly integrated scheduling problem with job batches transportation problem,\" Control and Decision, vol. 35, no. 10, pp. 2507-2513, 2020."
+      },
+      {
+        "ref_id": "13",
+        "text": "J. N. D. Gupta, \"Two-stage, hybrid flowshop scheduling problem,\" Journal of the Operational Research Society, vol. 39, no. 4, pp. 359-364, 1988."
+      },
+      {
+        "ref_id": "14",
+        "text": "J. Y. Ding, S. Song, and C. Wu, \"Carbon-efficient scheduling of flow shops by multi-objective optimization,\" European Journal of Operational Research, vol. 248, no. 3, pp. 758-771, 2015."
+      },
+      {
+        "ref_id": "15",
+        "text": "J. Yan, L. Li, F. Zhao, F. Zhang, and Q. Zhao, \"A multi-level optimization approach for energy-efficient flexible flow shop scheduling,\" Journal of Cleaner Production, vol. 137, no. 1, pp. 1543-1552, 2016."
+      },
+      {
+        "ref_id": "16",
+        "text": "D. Tang, M. Dai, M. A. Salido, and A. Giret, \"Energy-efficient dynamic scheduling for a flexible flow shop using an improved particle swarm optimization,\" Computers in Industry, vol. 81, no. 1, pp. 82-95, 2016."
+      },
+      {
+        "ref_id": "17",
+        "text": "R. Zhang and R. Chiong, \"Solving the energy-efficient job shop scheduling problem: a multi-objective genetic algorithm with enhanced local search for minimizing the total weighted tardiness and total energy consumption,\" Journal of Cleaner Production, vol. 112, no. 7, pp. 3361-3375, 2015."
+      },
+      {
+        "ref_id": "18",
+        "text": "X. Zheng, S. Zhou, R. Xu et al., \"Energy-efficient scheduling for multi-objective two-stage flow shop using a hybrid ant colony optimisation algorithm,\" International Journal of Production Research, vol. 58, no. 13, pp. 1-18, 2020."
+      },
+      {
+        "ref_id": "19",
+        "text": "C. Lu, L. Gao, X. Li, Q. Pan, and Q. Wang, \"Energy-efficient permutation flow shop scheduling problem using a hybrid multi-objective backtracking search algorithm,\" Journal of Cleaner Production, vol. 144, no. 6, pp. 228-238, 2017."
+      },
+      {
+        "ref_id": "20",
+        "text": "M. Dai, D. Tang, A. Giret, and M. A. Salido, \"Multi-objective optimization for energy-efficient flexible job shop scheduling problem with transportation constraints,\" Robotics and Computer-Integrated Manufacturing, vol. 59, no. 1, pp. 143157, 2019."
+      },
+      {
+        "ref_id": "21",
+        "text": "Y. Tanimizu and K. Amano, \"Integrated production and transportation scheduling for multi-objective green supply chain network design,\" Procedia CIRP, vol. 57, no. 12, pp. 152-157, 2016."
+      },
+      {
+        "ref_id": "22",
+        "text": "Z. Guo, L. Shi, L. Chen, and Y. Liang, \"A harmony searchbased memetic optimization model for integrated production and transportation scheduling in MTO manufacturing,\" Omega, vol. 66, no. 2, pp. 327-343, 2017."
+      },
+      {
+        "ref_id": "23",
+        "text": "Z. Liu, S. Guo, and L. Wang, \"Integrated green scheduling optimization of flexible job shop and crane transportation considering comprehensive energy consumption,\" Journal of Cleaner Production, vol. 211, no. 20, pp. 765-786, 2019."
+      },
+      {
+        "ref_id": "24",
+        "text": "Y. Kuo, \"Using simulated annealing to minimize fuel consumption for the time-dependent vehicle routing problem,\" Computers \\& Industrial Engineering, vol. 59, no. 1, pp. 157165, 2010."
+      },
+      {
+        "ref_id": "25",
+        "text": "E. Demir, T. Bektaş, and G. Laporte, \"An adaptive large neighborhood search heuristic for the pollution-routing problem,\" European Journal of Operational Research, vol. 223, no. 2, pp. 346-359, 2012."
+      },
+      {
+        "ref_id": "26",
+        "text": "M. Salehi, M. Jalalian, and M. M. Vali Siar, \"Green transportation scheduling with speed control: trade-off between total transportation cost and carbon emission,\" Computers \\& Industrial Engineering, vol. 113, no. 3, pp. 392-404, 2017."
+      },
+      {
+        "ref_id": "27",
+        "text": "J.-Q. Li, Y. Du, K.-Z. Gao et al., \"A hybrid iterated greedy algorithm for a crane transportation flexible job shop problem,\" IEEE Transactions on Automation Science and Engineering, vol. 99, no. 1, pp. 1-18, 2021."
+      },
+      {
+        "ref_id": "28",
+        "text": "J. Q. Li, Y. Q. Han, P. Y. Duan et al., \"Meta-heuristic algorithm for solving vehicle routing problems with time windows and synchronized visit constraints in prefabricated systems,\" Journal of Cleaner Production, vol. 250, no. 2, pp. 223-356, 2019."
+      },
+      {
+        "ref_id": "29",
+        "text": "J. Li, Z.-M. Liu, C. Li, and Z. Zheng, \"Improved artificial immune system algorithm for type-2 fuzzy flexible job shop scheduling problem,\" IEEE Transactions on Fuzzy Systems, vol. 99, no. 1, pp. 1-191, 2020."
+      },
+      {
+        "ref_id": "30",
+        "text": "Z.-w. Sun and X.-s. Gu, \"A novel hybrid estimation of distribution algorithm for solving hybrid flowshop scheduling problem with unrelated parallel machine,\" Journal of Central South University, vol. 24, no. 8, pp. 1779-1788, 2017."
+      },
+      {
+        "ref_id": "31",
+        "text": "B. Qian, Z.-c. Li, and R. Hu, \"A copula-based hybrid estimation of distribution algorithm for m-machine reentrant permutation flow-shop scheduling problem,\" Applied Soft Computing, vol. 61, no. 3, pp. 921-934, 2017."
+      },
+      {
+        "ref_id": "32",
+        "text": "X. Wang, K. Xing, X. Li, and J. Luo, \"An estimation of distribution algorithm for scheduling problem of flexible manufacturing systems using Petri nets,\" Applied Mathematical Modelling, vol. 55, no. 6, pp. 776-788, 2018."
+      },
+      {
+        "ref_id": "33",
+        "text": "Z. C. Li, B. Qian, R. Hu, L. L. Chang, and J. B. Yang, \"An elitist nondominated sorting hybrid algorithm for multi-objective flexible job-shop scheduling problem with sequence-dependent setups,\" Knowledge-Based Systems, vol. 173, no. 6, pp. 83-112, 2019."
+      },
+      {
+        "ref_id": "34",
+        "text": "M. Dai, Z. Zhang, A. Giret, and M. A. Salido, \"An enhanced estimation of distribution algorithm for energy-efficient jobshop scheduling problems with transportation constraints,\" Sustainability, vol. 11, no. 11, pp. 3085-3098, 2019."
+      },
+      {
+        "ref_id": "35",
+        "text": "Z. J. Yang, Z. Wang, Y. Wang et al., \"Two-stage estimation of distribution algorithm to solve multi-vehicle carpooling problem,\" Journal of Transportation Systems Engineering and Information Technology, vol. 16, no. 2, pp. 164-168, 2016."
+      },
+      {
+        "ref_id": "36",
+        "text": "H. Mokhtari and A. Hasani, \"An energy-efficient multi-objective optimization for flexible job-shop scheduling problem,\" Computers \\& Chemical Engineering, vol. 104, no. 4, pp. 339-352, 2017."
+      },
+      {
+        "ref_id": "37",
+        "text": "M. B. Yildirim and G. Mouzon, \"Single-machine sustainable production planning to minimize total energy consumption and total completion time using a multiple objective genetic algorithm,\" IEEE Transactions on Engineering Management, vol. 59, no. 4, pp. 585-597, 2012."
+      },
+      {
+        "ref_id": "38",
+        "text": "M. Dal, D. Tang, A. Giret et al., \"Energy-efficient scheduling for a flexible flow shop using an improved genetic-simulated annealing algorithm,\" Robotics and Computer Integrated Manufacturing, vol. 29, no. 9, pp. 418-429, 2016."
+      },
+      {
+        "ref_id": "39",
+        "text": "A. Palmer, The Development to Fan Integrated Routing and Carbon Dioxide Emissions Model for Goods Vehicles, Cranfield University, School of Management, Cranfield, UK, 2007."
+      },
+      {
+        "ref_id": "40",
+        "text": "L. Kara, B. Y. Kara, and M. K. Yetis, \"Energy minimizing vehicle routing problem,\" International Conference on Combinatorial Optimization and Applications, vol. 105, no. 5, pp. 916-1024, 2007."
+      },
+      {
+        "ref_id": "41",
+        "text": "Q.-K. Pan and R. Ruiz, \"An estimation of distribution algorithm for lot-streaming flow shop problems with setup times,\" Omega, vol. 40, no. 2, pp. 166-180, 2012."
+      },
+      {
+        "ref_id": "42",
+        "text": "H. Ishibuchi, T. Yoshida, and T. Murata, \"Balance between genetic search and local search in memetic algorithms for multiobjective permutation flowshop scheduling,\" IEEE Transactions on Evolutionary Computation, vol. 7, no. 2, pp. 204-223, 2003."
+      }
+    ],
+    "reference_count": 42,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameter level.",
+      "headers": [
+        "Parameter",
+        "Level",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "Popsize",
+          30,
+          40,
+          50,
+          60
+        ],
+        [
+          "$\\eta$",
+          0.3,
+          0.4,
+          0.5,
+          0.6
+        ],
+        [
+          "$\\gamma$",
+          0.1,
+          0.2,
+          0.3,
+          0.4
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Orthogonal table and average statistics.",
+      "headers": [
+        "Parameter combination",
+        "Level",
+        "",
+        "",
+        "AVG $\\times 10$"
+      ],
+      "rows": [
+        [
+          "",
+          "Popsize",
+          "$\\eta$",
+          "$y$",
+          ""
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0.501
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          0.447
+        ],
+        [
+          3,
+          1,
+          3,
+          3,
+          0.393
+        ],
+        [
+          4,
+          1,
+          4,
+          4,
+          0.299
+        ],
+        [
+          5,
+          2,
+          1,
+          2,
+          0.375
+        ],
+        [
+          6,
+          2,
+          2,
+          3,
+          0.491
+        ],
+        [
+          7,
+          2,
+          3,
+          4,
+          0.386
+        ],
+        [
+          8,
+          2,
+          4,
+          1,
+          0.293
+        ],
+        [
+          9,
+          3,
+          1,
+          3,
+          0.607
+        ],
+        [
+          10,
+          3,
+          2,
+          4,
+          0.583
+        ],
+        [
+          11,
+          3,
+          3,
+          1,
+          0.412
+        ],
+        [
+          12,
+          3,
+          4,
+          2,
+          0.286
+        ],
+        [
+          13,
+          4,
+          1,
+          4,
+          0.456
+        ],
+        [
+          14,
+          4,
+          2,
+          1,
+          0.486
+        ],
+        [
+          15,
+          4,
+          3,
+          2,
+          0.363
+        ],
+        [
+          16,
+          4,
+          4,
+          3,
+          0.368
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "The response value of parameters.",
+      "headers": [
+        "Level",
+        "Popsize",
+        "$\\eta$",
+        "$y$"
+      ],
+      "rows": [
+        [
+          1,
+          0.41,
+          0.485,
+          0.423
+        ],
+        [
+          2,
+          0.386,
+          "$\\mathbf{0 . 5 0 2}$",
+          0.368
+        ],
+        [
+          3,
+          "$\\mathbf{0 . 4 7 2}$",
+          0.389,
+          "$\\mathbf{0 . 4 6 5}$"
+        ],
+        [
+          4,
+          0.419,
+          0.312,
+          0.431
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Comparison of HEDA_VNS with HMOBSA and GA-GSO-GTHS.",
+      "headers": [
+        "No.",
+        "P.M.T",
+        "HMOBSA",
+        "",
+        "GA-GSO-GTHS",
+        "",
+        "HEDA_VNS",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "R.N",
+          "N.N",
+          "R.N",
+          "N.N",
+          "R.N",
+          "N.N"
+        ],
+        [
+          1,
+          232,
+          0.2,
+          0.5,
+          0.55,
+          1.3,
+          0.47,
+          1.25
+        ],
+        [
+          2,
+          322,
+          0.05,
+          0.1,
+          0.5,
+          0.97,
+          0.52,
+          1.3
+        ],
+        [
+          3,
+          332,
+          0.02,
+          0.05,
+          0.35,
+          1.35,
+          0.8,
+          2.15
+        ],
+        [
+          4,
+          442,
+          0.05,
+          0.3,
+          0.75,
+          1.55,
+          0.6,
+          1.5
+        ],
+        [
+          5,
+          453,
+          0.07,
+          0.02,
+          0.35,
+          1.15,
+          0.68,
+          1.8
+        ],
+        [
+          6,
+          533,
+          0.03,
+          0.01,
+          0.27,
+          0.45,
+          0.81,
+          1.6
+        ],
+        [
+          7,
+          543,
+          0.05,
+          0.15,
+          0.52,
+          0.85,
+          0.75,
+          1.55
+        ],
+        [
+          8,
+          553,
+          0.15,
+          0.35,
+          0.13,
+          0.65,
+          0.8,
+          1.95
+        ],
+        [
+          9,
+          563,
+          0.02,
+          0.05,
+          0.15,
+          0.35,
+          0.92,
+          2.05
+        ],
+        [
+          10,
+          643,
+          0.0,
+          0.0,
+          0.13,
+          0.35,
+          0.95,
+          2.2
+        ],
+        [
+          11,
+          653,
+          0.05,
+          0.1,
+          0.27,
+          0.5,
+          0.86,
+          2.05
+        ],
+        [
+          12,
+          663,
+          0.02,
+          0.05,
+          0.22,
+          0.65,
+          0.9,
+          2.2
+        ],
+        [
+          13,
+          644,
+          0.03,
+          0.1,
+          0.28,
+          0.5,
+          0.83,
+          1.95
+        ],
+        [
+          14,
+          654,
+          0.02,
+          0.05,
+          0.32,
+          0.85,
+          0.78,
+          1.9
+        ],
+        [
+          15,
+          664,
+          0.0,
+          0.0,
+          0.11,
+          0.35,
+          0.92,
+          2.65
+        ],
+        [
+          16,
+          754,
+          0.0,
+          0.0,
+          0.16,
+          0.3,
+          0.95,
+          2.8
+        ],
+        [
+          17,
+          764,
+          0.02,
+          0.05,
+          0.24,
+          0.45,
+          0.93,
+          2.25
+        ],
+        [
+          18,
+          774,
+          0.03,
+          0.05,
+          0.12,
+          0.35,
+          0.93,
+          2.05
+        ],
+        [
+          19,
+          884,
+          0.0,
+          0.0,
+          0.25,
+          0.95,
+          0.95,
+          2.6
+        ],
+        [
+          20,
+          994,
+          0.0,
+          0.0,
+          0.1,
+          0.25,
+          0.95,
+          1.85
+        ],
+        [
+          21,
+          995,
+          0.05,
+          0.15,
+          0.15,
+          0.2,
+          0.93,
+          1.7
+        ],
+        [
+          22,
+          10105,
+          0.02,
+          0.05,
+          0.08,
+          0.15,
+          0.92,
+          2.05
+        ],
+        [
+          23,
+          10108,
+          0.0,
+          0.0,
+          0.03,
+          0.1,
+          0.96,
+          1.6
+        ],
+        [
+          24,
+          15155,
+          0.0,
+          0.0,
+          0.02,
+          0.05,
+          0.95,
+          1.95
+        ],
+        [
+          25,
+          151510,
+          0.0,
+          0.0,
+          0.01,
+          0.05,
+          0.96,
+          1.55
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 8
+    }
+  ]
+}

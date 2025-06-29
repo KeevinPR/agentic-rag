@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/Approaching the quadratic assignment problem with kernels of mallows models under the hamming distance.md",
+    "filename": "Approaching the quadratic assignment problem with kernels of mallows models under the hamming distance.md",
+    "title": "Approaching the quadratic assignment problem with kernels of mallows models under the hamming distance",
+    "year": "2019"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] J. Ceberio. Solving permutation problems with estimation of distribution algorithms and extensions thereof. PhD thesis, UPV/EHU, 2014.\n[2] J. Ceberio, B. Calvo, A. Mendiburu, and J. Lozano. Multi-objectivising combinatorial optimization problems by means of elementary landscape decompositions. Evolutionary computation, pages 1-21, 2018.\n[3] J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano. A review of distances for the mallows and generalized mallows estimation of distribution algorithms. Computational Optimization and Applications, 62(2):545-564, Nov 2015.\n[4] Z. Drezner, P. M. Hahn, and E. D. Taillard. Recent advances for the quadratic assignment problem with special emphasis on instances that are difficult for meta-heuristic methods. Annals of Operations research, 139(1):65-94, 2005.\n[5] E. Irurozki, B. Calvo, and J. A. Lozano. Mallows and generalized mallows model for matchings. Bernoulli, 25(2):1160-1188, 052019.\n[6] G. Lebanon and Y. Mao. Non-parametric modeling of partially ranked data. Journal of Machine Learning Research, 9(Oct):2401-2429, 2008.\n${ }^{1}$ Supplementary material with all the results as well as source code is available for the interested reader to download at https://github.com/EtorArza/GECCO2019",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "J. Ceberio. Solving permutation problems with estimation of distribution algorithms and extensions thereof. PhD thesis, UPV/EHU, 2014."
+      },
+      {
+        "ref_id": "2",
+        "text": "J. Ceberio, B. Calvo, A. Mendiburu, and J. Lozano. Multi-objectivising combinatorial optimization problems by means of elementary landscape decompositions. Evolutionary computation, pages 1-21, 2018."
+      },
+      {
+        "ref_id": "3",
+        "text": "J. Ceberio, E. Irurozki, A. Mendiburu, and J. A. Lozano. A review of distances for the mallows and generalized mallows estimation of distribution algorithms. Computational Optimization and Applications, 62(2):545-564, Nov 2015."
+      },
+      {
+        "ref_id": "4",
+        "text": "Z. Drezner, P. M. Hahn, and E. D. Taillard. Recent advances for the quadratic assignment problem with special emphasis on instances that are difficult for meta-heuristic methods. Annals of Operations research, 139(1):65-94, 2005."
+      },
+      {
+        "ref_id": "5",
+        "text": "E. Irurozki, B. Calvo, and J. A. Lozano. Mallows and generalized mallows model for matchings. Bernoulli, 25(2):1160-1188, 052019."
+      },
+      {
+        "ref_id": "6",
+        "text": "G. Lebanon and Y. Mao. Non-parametric modeling of partially ranked data. Journal of Machine Learning Research, 9(Oct):2401-2429, 2008."
+      }
+    ],
+    "reference_count": 6,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Summary of results",
+      "headers": [
+        "$\\boldsymbol{n}$",
+        "number of instances",
+        "reached the best known",
+        "surpassed the best known",
+        "CPU time interval (s)"
+      ],
+      "rows": [
+        [
+          "$[5,20)$",
+          67,
+          "$100.0 \\%$",
+          "$0.0 \\%$",
+          "$[4,12]$"
+        ],
+        [
+          "$[20,40)$",
+          91,
+          "$83.5 \\%$",
+          "$4.4 \\%$",
+          "$[12,33]$"
+        ],
+        [
+          "$[40,75)$",
+          46,
+          "$47.8 \\%$",
+          "$0.0 \\%$",
+          "$[31,77]$"
+        ],
+        [
+          "$[75,125)$",
+          39,
+          "$5.1 \\%$",
+          "$0.0 \\%$",
+          "$[71,194]$"
+        ],
+        [
+          "$[125,175)$",
+          24,
+          "$83.3 \\%$",
+          "$79.2 \\%$",
+          "$[156,540]$"
+        ],
+        [
+          175256,
+          21,
+          "$95.2 \\%$",
+          "$95.2 \\%$",
+          "$[60,1004]$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    }
+  ]
+}

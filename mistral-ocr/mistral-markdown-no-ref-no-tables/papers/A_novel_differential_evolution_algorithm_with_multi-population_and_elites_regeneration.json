@@ -1,0 +1,1458 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/A novel differential evolution algorithm with multi-population and elites regeneration.md",
+    "filename": "A novel differential evolution algorithm with multi-population and elites regeneration.md",
+    "title": "A novel differential evolution algorithm with multi-population and elites regeneration",
+    "year": "2024"
+  },
+  "references": {
+    "header": "# References",
+    "content": "1. Storm R. and Price K., \"Differential Evolution-A simple and efficient adaptive scheme for global optimization over continuous spaces,\" International Computer Science Institute Technical Report, Tech. Rep. TR-95-012, 1995.\n2. Storm R., Price K., Differential evolution-a simple and efficient heuristic for global optimization over continuous spaces, J. Global Optim. 1997; 11 (4): 341-359.\n3. Price K., Storm R., and Lampinen J., \"Differential evolution: a practical approach to global optimization\", Heidelberg: Springer; 2005.\n4. Jena C., Basu M., Panigrahi C.K., Differential evolution with Gaussian mutation for combined heat and power economic dispatch, Soft Comput. 2016; 20 (2): 681-688.\n5. Mlakar U., Fister I., Brest J., Potoc'nik B., Multi-objective differential evolution for feature selection in facial expression recognition systems, Expert Syst. Appl. 2017; 89: 129-137.\n6. Qi J., Xu B., Xue Y., Wang K., Sun Y., Knowledge based differential evolution for cloud computing service composition, J. Ambient Intell. Human. Comput. 2018; 9: 565-574.\n7. Lin L., Zhu M., Efficient tracking of moving target based on an improved fast differential evolution algorithm, IEEE Access PP 2018; 6:1-1.\n8. Das S., Mullick S.S., Suganthan P.N., Recent advances in differential evolution-an updated survey, Swarm Evolut. Comput. 2016; 27: 1-30.\n9. Zhong, Xuxu Duan, Meijun Zhang, Xiao Cheng, Peng..A hybrid differential evolution based on gainingsharing knowledge algorithm and harris hawks optimization. .PLoS One,2021; 16(4): e0250951.\n10. Li X., Yin M., Modified differential evolution with self-adaptive parameters method, J. Combin. Optim. 2014; 31 (2): 546-576.\n11. Wang Y., Li X H., Huang T., Li L., Differential evolution based on covariance matrix learning and bimodal distribution parameter setting, Appl. Soft Comput. 2014; 18: 232-247.\n12. Mohamed AW, Hadi AA, Jambi KM. Novel mutation strategy for enhancing SHADE and LSHADE algorithms for global numerical optimization. Swarm and Evolutionary Computation. 2019; 50:100455.\n13. Das S., Abraham A., Chakraborty U.K., Konar A., Differential evolution using a neighborhood based mutation operator, IEEE Trans. Evol. Comput. 2009; 13 (3): 526-553.\n14. Larraanaga P., Lozano J.A., Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2001.\n15. Liang X., Chen H., Lozano J.A., A Boltzmann-based estimation of distribution algorithm for a general resource scheduling model, IEEE Trans. Evol. Comput. 2015; 19 (6): 793-806.\n16. Zhou A., Sun J., Zhang Q., An estimation of distribution algorithm with cheap and expensive local search methods, IEEE Trans. Evol. Comput. 2015; 19 (6): 807-822.\n17. Hauschild M. Pelikan, An introduction and survey of estimation of distribution algorithms, Swarm Evol. Comput. 2011; 1 (3): 111-128.\n18. Das S., Suganthan P.N., Differential evolution: a survey of the state-of-the-art, IEEE Trans. Evol. Comput. 2011; 15 (1): 4-31.\n19. Das S., Mullick S.S., Suganthan P.N., Recent advances in differential evolution-an updated survey, Swarm Evolut. Comput. 2016; 27: 1-30.\n20. Al-Dabbagh R.D., Neri F., Idris N., Baba M.S., Algorithm design issues in adaptive differential evolution: review and taxonomy, Swarm Evolut. Comput. 2018; 43: 284-311.\n21. Zhang J., Sanderson A.C., JADE: adaptive differential evolution with optional external archive, IEEE Trans. Evol. Comput. 2009; 13 (5): 945-958.\n22. Qin A. K. and Suganthan P. N., \"Self-adaptive differential evolution algorithm for numerical optimization,\" in Proc. IEEE CEC, 2005,pp. 1785-1791.\n23. Qin A. K., Huang V. L., and Suganthan P. N., \"Differential evolution algorithm with strategy adaptation for global numerical optimization,\" IEEE Trans. Evol. Comput., 2009; 13 (2): 398-417.\n24. Brest J., Greiner S., Boskovic B., Mernik M., Zumer V., Self-adapting control parameters in differential evolution: a comparative study on numerical bench- 481 mark problems, IEEE Trans. Evol. Comput. 2006; 10: 646-657.\n25. Gong W., Cai Z., Ling C. X. and Li H., \"Enhanced Differential Evolution With Adaptive Strategies for Numerical Optimization,\" in IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics), 2011; 41, (2): 397-413. https://doi.org/10.1109/TSMCB.2010.205636? PMID: 20837448\n\n26. Zhong W., Liu J., Xue M., and Jiao L., \"A multiagent genetic algorithm for global numerical optimization,\" IEEE Trans. Syst., Man, Cybern. B, Cybern., 2004 34, (2): 1128-1141. https://doi.org/10.1109/tsmcb. 2003.821456 PMID: 15376858\n27. Tanabe R., Fukunaga A., Success-history based parameter adaptation for differential evolution, in: Proceedings of the IEEE Congresson Evolutionary Computation 2013, 2013: 71-78.\n28. Tanabe R., Fukunaga A., Improving the Search Performance of SHADE Using Linear Population Size Reduction, in Proc. IEEE CEC, 2014, pp. 1658-1665.\n29. Zhenyu Meng;Cheng Yang.Hip-DEHistorical population based mutation strategy in differential evolution with parameter adaptive mechanism.Information Sciences,2021; 562: 44-77.\n30. Xxa C, Lei T B, Yza C, et al. NFDDE: A novelty-hybrid-fitness driving differential evolution algorithm. Information Sciences, 2021; 579:33-54.\n31. Wang Xianpeng, and Tang L.An adaptive multi-population differential evolution algorithm for continuous multi-objective optimization. Information Sciences, 2016:124-141.\n32. Wu G, Shen X, Li H, Chen H, Lin A, Suganthan P. Ensemble of differential evolution variants. Information Sciences. 2018; 423:172-186\n33. Wang Y., Li X H., Huang T., Li L., Differential evolution based on covariance matrixlearning and bimodal distribution parameter setting, Appl. Soft Comput. 2014; 18: 232-247.\n34. Mallipeddi R., Suganthan P.N., Pan Q.K., Tasgetiren M.F., Differential evolution algorithm with ensemble of parameters and mutation strategies, Appl. Soft Comput. 2011; 11 (2): 1679-1696.\n35. Li Xiaoyu, Wang Lei, Jiang Qiaoyong, Li Ning, Differential evolution algorithm with multi-population cooperation and multi-strategy integration, Neurocomputing, Volume 421, 2021, Pages 285-302.\n36. Deng L B, Zhang L L, Fu N, et al. ERG-DE: An Elites Regeneration Framework for Differential Evolution. Information Sciences, 2020; 539:81-103.\n37. Tian M, Gao X, Yan X. Performance-driven adaptive differential evolution with neighborhood topology for numerical optimization. Knowledge-Based Systems, 2019; 188:105008.\n38. Bing Dong Zhou Aand Guixu Zhang, \"A hybrid estimation of distribution algorithm with differential evolution for global optimization,\" 2016 IEEE Symposium Series on Computational Intelligence (SSCI), Athens, Greece, 2016, pp. 1-7.\n39. Zhao Fuqing, Shao Zhongshi, Wang Junbiao, and Zhang Chuck. 'A Hybrid Differential Evolution and Estimation of Distribution Algorithm Based on Neighbourhood Search for Job Shop Scheduling Problems'. International Journal of Production Research 54, no. 4 (16 February 2016): 1039-60.\n40. Fan Debin, Lee Jaewan. A Hybrid Estimation of Distribution Algorithm with Differential Evolution based on Self-adaptive Strategy. J. Internet Comput. Serv. 2021.\n41. Li Yintong, Han Tong, Tang Shangqin, Huang Changqiang, Zhou Huan, Wang Yuan, An improved differential evolution by hybridizing with estimation-of-distribution algorithm, Information Sciences, Volume 619, 2023, Pages 439-456.\n42. Feoktistov V., Differential Evolution: in Search of Solutions, Springer-verlag, Berlin,Germany, 2006.\n43. Glover F., Laguna M., Tabu Search Background, Springer, US, 1997.\n44. Liang J.J., Qu B.Y., Suganthan P.N., Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective realparameter numerical optimization.\n45. Karmakar Bishal et al. CMA-ES with exponential based multiplicative covariance matrix adaptation for global optimization, Swarm and Evolutionary Computation. 2023; 79.\n46. Awad Noor H., Ali Mostafa Z., Suganthan Ponnuthurai N., Ensemble of parameters in a sinusoidal differential evolution with niching-based population reduction, Swarm and Evolutionary Computation. 2018; 39.\n47. García S., Molina D., Lozano M., Herrera F., A study on the use of non-parametrictests for analyzing the evolutionary algorithms' behavior: a case study on theCEC'2005 special session on real parameter optimization, J. Heuristics 2009; 15: 617-644.\n48. Z. Li, Q. Zhang, An efficient rank-1 update for Cholesky CMA-ES using auxiliary evolution path, in: 2017 IEEE Congress on Evolutionary Computation, CEC, IEEE, 2017, pp. 913-920.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Storm R. and Price K., \"Differential Evolution-A simple and efficient adaptive scheme for global optimization over continuous spaces,\" International Computer Science Institute Technical Report, Tech. Rep. TR-95-012, 1995."
+      },
+      {
+        "ref_id": "2",
+        "text": "Storm R., Price K., Differential evolution-a simple and efficient heuristic for global optimization over continuous spaces, J. Global Optim. 1997; 11 (4): 341-359."
+      },
+      {
+        "ref_id": "3",
+        "text": "Price K., Storm R., and Lampinen J., \"Differential evolution: a practical approach to global optimization\", Heidelberg: Springer; 2005."
+      },
+      {
+        "ref_id": "4",
+        "text": "Jena C., Basu M., Panigrahi C.K., Differential evolution with Gaussian mutation for combined heat and power economic dispatch, Soft Comput. 2016; 20 (2): 681-688."
+      },
+      {
+        "ref_id": "5",
+        "text": "Mlakar U., Fister I., Brest J., Potoc'nik B., Multi-objective differential evolution for feature selection in facial expression recognition systems, Expert Syst. Appl. 2017; 89: 129-137."
+      },
+      {
+        "ref_id": "6",
+        "text": "Qi J., Xu B., Xue Y., Wang K., Sun Y., Knowledge based differential evolution for cloud computing service composition, J. Ambient Intell. Human. Comput. 2018; 9: 565-574."
+      },
+      {
+        "ref_id": "7",
+        "text": "Lin L., Zhu M., Efficient tracking of moving target based on an improved fast differential evolution algorithm, IEEE Access PP 2018; 6:1-1."
+      },
+      {
+        "ref_id": "8",
+        "text": "Das S., Mullick S.S., Suganthan P.N., Recent advances in differential evolution-an updated survey, Swarm Evolut. Comput. 2016; 27: 1-30."
+      },
+      {
+        "ref_id": "9",
+        "text": "Zhong, Xuxu Duan, Meijun Zhang, Xiao Cheng, Peng..A hybrid differential evolution based on gainingsharing knowledge algorithm and harris hawks optimization. .PLoS One,2021; 16(4): e0250951."
+      },
+      {
+        "ref_id": "10",
+        "text": "Li X., Yin M., Modified differential evolution with self-adaptive parameters method, J. Combin. Optim. 2014; 31 (2): 546-576."
+      },
+      {
+        "ref_id": "11",
+        "text": "Wang Y., Li X H., Huang T., Li L., Differential evolution based on covariance matrix learning and bimodal distribution parameter setting, Appl. Soft Comput. 2014; 18: 232-247."
+      },
+      {
+        "ref_id": "12",
+        "text": "Mohamed AW, Hadi AA, Jambi KM. Novel mutation strategy for enhancing SHADE and LSHADE algorithms for global numerical optimization. Swarm and Evolutionary Computation. 2019; 50:100455."
+      },
+      {
+        "ref_id": "13",
+        "text": "Das S., Abraham A., Chakraborty U.K., Konar A., Differential evolution using a neighborhood based mutation operator, IEEE Trans. Evol. Comput. 2009; 13 (3): 526-553."
+      },
+      {
+        "ref_id": "14",
+        "text": "Larraanaga P., Lozano J.A., Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2001."
+      },
+      {
+        "ref_id": "15",
+        "text": "Liang X., Chen H., Lozano J.A., A Boltzmann-based estimation of distribution algorithm for a general resource scheduling model, IEEE Trans. Evol. Comput. 2015; 19 (6): 793-806."
+      },
+      {
+        "ref_id": "16",
+        "text": "Zhou A., Sun J., Zhang Q., An estimation of distribution algorithm with cheap and expensive local search methods, IEEE Trans. Evol. Comput. 2015; 19 (6): 807-822."
+      },
+      {
+        "ref_id": "17",
+        "text": "Hauschild M. Pelikan, An introduction and survey of estimation of distribution algorithms, Swarm Evol. Comput. 2011; 1 (3): 111-128."
+      },
+      {
+        "ref_id": "18",
+        "text": "Das S., Suganthan P.N., Differential evolution: a survey of the state-of-the-art, IEEE Trans. Evol. Comput. 2011; 15 (1): 4-31."
+      },
+      {
+        "ref_id": "19",
+        "text": "Das S., Mullick S.S., Suganthan P.N., Recent advances in differential evolution-an updated survey, Swarm Evolut. Comput. 2016; 27: 1-30."
+      },
+      {
+        "ref_id": "20",
+        "text": "Al-Dabbagh R.D., Neri F., Idris N., Baba M.S., Algorithm design issues in adaptive differential evolution: review and taxonomy, Swarm Evolut. Comput. 2018; 43: 284-311."
+      },
+      {
+        "ref_id": "21",
+        "text": "Zhang J., Sanderson A.C., JADE: adaptive differential evolution with optional external archive, IEEE Trans. Evol. Comput. 2009; 13 (5): 945-958."
+      },
+      {
+        "ref_id": "22",
+        "text": "Qin A. K. and Suganthan P. N., \"Self-adaptive differential evolution algorithm for numerical optimization,\" in Proc. IEEE CEC, 2005,pp. 1785-1791."
+      },
+      {
+        "ref_id": "23",
+        "text": "Qin A. K., Huang V. L., and Suganthan P. N., \"Differential evolution algorithm with strategy adaptation for global numerical optimization,\" IEEE Trans. Evol. Comput., 2009; 13 (2): 398-417."
+      },
+      {
+        "ref_id": "24",
+        "text": "Brest J., Greiner S., Boskovic B., Mernik M., Zumer V., Self-adapting control parameters in differential evolution: a comparative study on numerical bench- 481 mark problems, IEEE Trans. Evol. Comput. 2006; 10: 646-657."
+      },
+      {
+        "ref_id": "25",
+        "text": "Gong W., Cai Z., Ling C. X. and Li H., \"Enhanced Differential Evolution With Adaptive Strategies for Numerical Optimization,\" in IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics), 2011; 41, (2): 397-413. https://doi.org/10.1109/TSMCB.2010.205636? PMID: 20837448"
+      },
+      {
+        "ref_id": "26",
+        "text": "Zhong W., Liu J., Xue M., and Jiao L., \"A multiagent genetic algorithm for global numerical optimization,\" IEEE Trans. Syst., Man, Cybern. B, Cybern., 2004 34, (2): 1128-1141. https://doi.org/10.1109/tsmcb. 2003.821456 PMID: 15376858"
+      },
+      {
+        "ref_id": "27",
+        "text": "Tanabe R., Fukunaga A., Success-history based parameter adaptation for differential evolution, in: Proceedings of the IEEE Congresson Evolutionary Computation 2013, 2013: 71-78."
+      },
+      {
+        "ref_id": "28",
+        "text": "Tanabe R., Fukunaga A., Improving the Search Performance of SHADE Using Linear Population Size Reduction, in Proc. IEEE CEC, 2014, pp. 1658-1665."
+      },
+      {
+        "ref_id": "29",
+        "text": "Zhenyu Meng;Cheng Yang.Hip-DEHistorical population based mutation strategy in differential evolution with parameter adaptive mechanism.Information Sciences,2021; 562: 44-77."
+      },
+      {
+        "ref_id": "30",
+        "text": "Xxa C, Lei T B, Yza C, et al. NFDDE: A novelty-hybrid-fitness driving differential evolution algorithm. Information Sciences, 2021; 579:33-54."
+      },
+      {
+        "ref_id": "31",
+        "text": "Wang Xianpeng, and Tang L.An adaptive multi-population differential evolution algorithm for continuous multi-objective optimization. Information Sciences, 2016:124-141."
+      },
+      {
+        "ref_id": "32",
+        "text": "Wu G, Shen X, Li H, Chen H, Lin A, Suganthan P. Ensemble of differential evolution variants. Information Sciences. 2018; 423:172-186"
+      },
+      {
+        "ref_id": "33",
+        "text": "Wang Y., Li X H., Huang T., Li L., Differential evolution based on covariance matrixlearning and bimodal distribution parameter setting, Appl. Soft Comput. 2014; 18: 232-247."
+      },
+      {
+        "ref_id": "34",
+        "text": "Mallipeddi R., Suganthan P.N., Pan Q.K., Tasgetiren M.F., Differential evolution algorithm with ensemble of parameters and mutation strategies, Appl. Soft Comput. 2011; 11 (2): 1679-1696."
+      },
+      {
+        "ref_id": "35",
+        "text": "Li Xiaoyu, Wang Lei, Jiang Qiaoyong, Li Ning, Differential evolution algorithm with multi-population cooperation and multi-strategy integration, Neurocomputing, Volume 421, 2021, Pages 285-302."
+      },
+      {
+        "ref_id": "36",
+        "text": "Deng L B, Zhang L L, Fu N, et al. ERG-DE: An Elites Regeneration Framework for Differential Evolution. Information Sciences, 2020; 539:81-103."
+      },
+      {
+        "ref_id": "37",
+        "text": "Tian M, Gao X, Yan X. Performance-driven adaptive differential evolution with neighborhood topology for numerical optimization. Knowledge-Based Systems, 2019; 188:105008."
+      },
+      {
+        "ref_id": "38",
+        "text": "Bing Dong Zhou Aand Guixu Zhang, \"A hybrid estimation of distribution algorithm with differential evolution for global optimization,\" 2016 IEEE Symposium Series on Computational Intelligence (SSCI), Athens, Greece, 2016, pp. 1-7."
+      },
+      {
+        "ref_id": "39",
+        "text": "Zhao Fuqing, Shao Zhongshi, Wang Junbiao, and Zhang Chuck. 'A Hybrid Differential Evolution and Estimation of Distribution Algorithm Based on Neighbourhood Search for Job Shop Scheduling Problems'. International Journal of Production Research 54, no. 4 (16 February 2016): 1039-60."
+      },
+      {
+        "ref_id": "40",
+        "text": "Fan Debin, Lee Jaewan. A Hybrid Estimation of Distribution Algorithm with Differential Evolution based on Self-adaptive Strategy. J. Internet Comput. Serv. 2021."
+      },
+      {
+        "ref_id": "41",
+        "text": "Li Yintong, Han Tong, Tang Shangqin, Huang Changqiang, Zhou Huan, Wang Yuan, An improved differential evolution by hybridizing with estimation-of-distribution algorithm, Information Sciences, Volume 619, 2023, Pages 439-456."
+      },
+      {
+        "ref_id": "42",
+        "text": "Feoktistov V., Differential Evolution: in Search of Solutions, Springer-verlag, Berlin,Germany, 2006."
+      },
+      {
+        "ref_id": "43",
+        "text": "Glover F., Laguna M., Tabu Search Background, Springer, US, 1997."
+      },
+      {
+        "ref_id": "44",
+        "text": "Liang J.J., Qu B.Y., Suganthan P.N., Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective realparameter numerical optimization."
+      },
+      {
+        "ref_id": "45",
+        "text": "Karmakar Bishal et al. CMA-ES with exponential based multiplicative covariance matrix adaptation for global optimization, Swarm and Evolutionary Computation. 2023; 79."
+      },
+      {
+        "ref_id": "46",
+        "text": "Awad Noor H., Ali Mostafa Z., Suganthan Ponnuthurai N., Ensemble of parameters in a sinusoidal differential evolution with niching-based population reduction, Swarm and Evolutionary Computation. 2018; 39."
+      },
+      {
+        "ref_id": "47",
+        "text": "García S., Molina D., Lozano M., Herrera F., A study on the use of non-parametrictests for analyzing the evolutionary algorithms' behavior: a case study on theCEC'2005 special session on real parameter optimization, J. Heuristics 2009; 15: 617-644."
+      },
+      {
+        "ref_id": "48",
+        "text": "Z. Li, Q. Zhang, An efficient rank-1 update for Cholesky CMA-ES using auxiliary evolution path, in: 2017 IEEE Congress on Evolutionary Computation, CEC, IEEE, 2017, pp. 913-920."
+      }
+    ],
+    "reference_count": 48,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 presents the average rankings of the proposed algorithms after conducting the Friedman test using CEC2014, including JADE as the baseline algorithm. The best rankings are highlighted in bold, and the second best rankings are indicated by underlining. From the table, it can be observed that the p -values computed by the Friedman test are less than 0.05 in",
+      "headers": [
+        "Algorithm",
+        "30D",
+        "50D",
+        "100D",
+        "Mean Ranking",
+        "Rank"
+      ],
+      "rows": [
+        [
+          "EBJADE",
+          1.67,
+          1.63,
+          1.7,
+          1.67,
+          1
+        ],
+        [
+          "EBJADEwithoutERG",
+          2.73,
+          2.53,
+          2.38,
+          2.55,
+          2
+        ],
+        [
+          "JADE",
+          2.65,
+          2.7,
+          2.52,
+          2.62,
+          3
+        ],
+        [
+          "ord",
+          2.95,
+          3.13,
+          3.4,
+          3.16,
+          4
+        ],
+        [
+          "Friedman-p-value",
+          0.0,
+          0.0,
+          0.0,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Wilcoxon's test results for EBJADE algorithms and other algorithms using CEC2014 functions for $\\mathrm{D}=30,50$ and 100.",
+      "headers": [
+        "Dimension",
+        "Algorithms",
+        "$\\mathbf{R}^{+}$",
+        "$\\mathbf{R}^{-}$",
+        "$\\boldsymbol{p}$-value",
+        "Dec."
+      ],
+      "rows": [
+        [
+          "30-D",
+          "EBJADE vs EBJADEwithoutERG",
+          283,
+          17,
+          "$\\mathbf{0 . 0 0 0}$",
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs JADE",
+          207,
+          69,
+          "$\\mathbf{0 . 0 3 6}$",
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs ord",
+          264,
+          61,
+          "$\\mathbf{0 . 0 0 6}$",
+          "$+$"
+        ],
+        [
+          "50-D",
+          "EBJADE vs EBJADEwithoutERG",
+          289,
+          62,
+          "$\\mathbf{0 . 0 0 4}$",
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs JADE",
+          316.5,
+          34.5,
+          "$\\mathbf{0 . 0 0 0}$",
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs ord",
+          287,
+          91,
+          "$\\mathbf{0 . 0 1 9}$",
+          "$+$"
+        ],
+        [
+          "100-D",
+          "EBJADE vs EBJADEwithoutERG",
+          299,
+          107,
+          "$\\mathbf{0 . 0 2 9}$",
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs JADE",
+          290,
+          116,
+          "$\\mathbf{0 . 0 4 8}$",
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs ord",
+          379,
+          27,
+          "$\\mathbf{0 . 0 0 0}$",
+          "$+$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "The computation results of EBJADE with different settings of $\\delta_{1}$ and ng for 30 benchmark functions with 50 experimental runs.",
+      "headers": [
+        "$\\mathrm{D}=30$",
+        "EBJADE <br> $\\boldsymbol{\\delta}_{\\mathbf{1}}=\\mathbf{0 . 1 5}$",
+        "EBJADE <br> $\\boldsymbol{\\delta}_{\\mathbf{1}}=\\mathbf{0 . 2}$",
+        "EBJADE <br> $\\boldsymbol{\\delta}_{\\mathbf{1}}=\\mathbf{0 . 2 5}$",
+        "EBJADE <br> $\\boldsymbol{\\delta}_{\\mathbf{1}}=\\mathbf{0 . 3}$",
+        "EBJADE <br> $\\mathbf{n g}=\\mathbf{1 0}$",
+        "EBJADE <br> $\\mathbf{n g}=\\mathbf{3 0}$",
+        "EBJADE <br> $\\mathbf{n g}=\\mathbf{5 0}$",
+        "EBJADE <br> $\\mathbf{n g}=\\mathbf{8 0}$",
+        "EBJADE <br> STD"
+      ],
+      "rows": [
+        [
+          1,
+          "$9.75 \\mathrm{e}+02$",
+          4.0202,
+          "$5.06 \\mathrm{e}+02$",
+          "$6.25 \\mathrm{e}+02$",
+          "$7.04 \\mathrm{e}+02$",
+          "$9.41 \\mathrm{e}+02$",
+          "$8.82 \\mathrm{e}+02$",
+          "$7.24 \\mathrm{e}+02$",
+          "$7.66 \\mathrm{e}+02$"
+        ],
+        [
+          2,
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$1.70 \\mathrm{e}-11$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          0.0
+        ],
+        [
+          3,
+          "2.89e-01",
+          "$9.34 \\mathrm{e}+00$",
+          "$5.59 \\mathrm{e}+00$",
+          "$9.19 \\mathrm{e}+00$",
+          "$4.51 \\mathrm{e}+00$",
+          "$6.71 \\mathrm{e}+00$",
+          "$4.83 \\mathrm{e}+00$",
+          "$4.69 \\mathrm{e}+00$",
+          "$7.16 \\mathrm{e}-01$"
+        ],
+        [
+          4,
+          "$9.60 \\mathrm{e}-29$",
+          "$1.27 \\mathrm{e}+00$",
+          "6.11e-29",
+          "$9.36 \\mathrm{e}-29$",
+          "$3.81 \\mathrm{e}-28$",
+          "$1.84 \\mathrm{e}-28$",
+          "$1.27 \\mathrm{e}+00$",
+          "$1.17 \\mathrm{e}-28$",
+          "$1.55 \\mathrm{e}-28$"
+        ],
+        [
+          5,
+          "$2.03 \\mathrm{e}+01$",
+          "$2.00 \\mathrm{e}+01$",
+          "$2.00 \\mathrm{e}+01$",
+          "$2.00 \\mathrm{e}+01$",
+          "$2.00 \\mathrm{e}+01$",
+          "$2.00 \\mathrm{e}+01$",
+          "$2.00 \\mathrm{e}+01$",
+          "$2.00 \\mathrm{e}+01$",
+          2.0001
+        ],
+        [
+          6,
+          "$1.02 \\mathrm{e}+01$",
+          "$9.95 \\mathrm{e}+00$",
+          "$1.04 \\mathrm{e}+01$",
+          "$1.03 \\mathrm{e}+01$",
+          "$9.97 \\mathrm{e}+00$",
+          "$1.04 \\mathrm{e}+01$",
+          "$9.92 \\mathrm{e}+00$",
+          "$1.02 \\mathrm{e}+01$",
+          9.58
+        ],
+        [
+          7,
+          "$0.00 \\mathrm{e}+00$",
+          "$1.48 \\mathrm{e}-04$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$1.53 \\mathrm{e}-09$",
+          "$4.43 \\mathrm{e}-04$",
+          "$5.66 \\mathrm{e}-14$",
+          "$1.34 \\mathrm{e}-09$",
+          0.0
+        ],
+        [
+          8,
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          "$0.00 \\mathrm{e}+00$",
+          0.0
+        ],
+        [
+          9,
+          "$2.36 \\mathrm{e}+01$",
+          "$2.24 \\mathrm{e}+01$",
+          "$2.27 \\mathrm{e}+01$",
+          "$2.21 \\mathrm{e}+01$",
+          "$2.19 \\mathrm{e}+01$",
+          "$2.20 \\mathrm{e}+01$",
+          "$2.26 \\mathrm{e}+01$",
+          "$2.22 \\mathrm{e}+01$",
+          2.1501
+        ],
+        [
+          10,
+          "2.50e-03",
+          "$6.25 \\mathrm{e}-03$",
+          "$3.75 \\mathrm{e}-03$",
+          "$4.16 \\mathrm{e}-03$",
+          "$8.33 \\mathrm{e}-03$",
+          "$8.33 \\mathrm{e}-03$",
+          "$9.99 \\mathrm{e}-03$",
+          "$8.33 \\mathrm{e}-03$",
+          "$4.58 \\mathrm{e}-03$"
+        ],
+        [
+          11,
+          "$1.65 \\mathrm{e}+03$",
+          1.5103,
+          "$1.52 \\mathrm{e}+03$",
+          "$1.53 \\mathrm{e}+03$",
+          "$1.54 \\mathrm{e}+03$",
+          "$1.52 \\mathrm{e}+03$",
+          "$1.54 \\mathrm{e}+03$",
+          "$1.52 \\mathrm{e}+03$",
+          "$1.52 \\mathrm{e}+03$"
+        ],
+        [
+          12,
+          "$2.68 \\mathrm{e}-01$",
+          "$1.65 \\mathrm{e}-01$",
+          "$1.88 \\mathrm{e}-01$",
+          "$1.74 \\mathrm{e}-01$",
+          "$1.73 \\mathrm{e}-01$",
+          "$1.73 \\mathrm{e}-01$",
+          "$1.68 \\mathrm{e}-01$",
+          "1.63e-01",
+          "$1.64 \\mathrm{e}-01$"
+        ],
+        [
+          13,
+          "$2.07 \\mathrm{e}-01$",
+          "$2.10 \\mathrm{e}-01$",
+          "$2.06 \\mathrm{e}-01$",
+          "$2.09 \\mathrm{e}-01$",
+          "$1.96 \\mathrm{e}-01$",
+          "$2.06 \\mathrm{e}-01$",
+          "$2.06 \\mathrm{e}-01$",
+          "1.94e-01",
+          "$1.99 \\mathrm{e}-01$"
+        ],
+        [
+          14,
+          "$2.45 \\mathrm{e}-01$",
+          "$2.28 \\mathrm{e}-01$",
+          "2.24e-01",
+          "$2.26 \\mathrm{e}-01$",
+          "$2.34 \\mathrm{e}-01$",
+          "$2.34 \\mathrm{e}-01$",
+          "$2.33 \\mathrm{e}-01$",
+          "$2.34 \\mathrm{e}-01$",
+          "$2.28 \\mathrm{e}-01$"
+        ],
+        [
+          15,
+          "$2.99 \\mathrm{e}+00$",
+          2.28,
+          "$2.36 \\mathrm{e}+00$",
+          "$2.42 \\mathrm{e}+00$",
+          "$2.31 \\mathrm{e}+00$",
+          "$2.34 \\mathrm{e}+00$",
+          "$2.32 \\mathrm{e}+00$",
+          "$2.35 \\mathrm{e}+00$",
+          "$2.37 \\mathrm{e}+00$"
+        ],
+        [
+          16,
+          "$9.51 \\mathrm{e}+00$",
+          "$9.53 \\mathrm{e}+00$",
+          "$9.48 \\mathrm{e}+00$",
+          "$9.46 \\mathrm{e}+00$",
+          "$9.37 \\mathrm{e}+00$",
+          "$9.33 \\mathrm{e}+00$",
+          "$9.34 \\mathrm{e}+00$",
+          "$9.40 \\mathrm{e}+00$",
+          9.28
+        ],
+        [
+          17,
+          1.1403,
+          "$8.77 \\mathrm{e}+03$",
+          "$1.18 \\mathrm{e}+03$",
+          "$1.23 \\mathrm{e}+03$",
+          "$1.16 \\mathrm{e}+03$",
+          "$4.42 \\mathrm{e}+03$",
+          "$9.44 \\mathrm{e}+03$",
+          "$1.80 \\mathrm{e}+04$",
+          "$1.22 \\mathrm{e}+03$"
+        ],
+        [
+          18,
+          "$1.10 \\mathrm{e}+02$",
+          "$8.01 \\mathrm{e}+01$",
+          "$7.21 \\mathrm{e}+01$",
+          6.4801,
+          "$8.37 \\mathrm{e}+01$",
+          "$7.70 \\mathrm{e}+01$",
+          "$8.31 \\mathrm{e}+01$",
+          "$1.61 \\mathrm{e}+02$",
+          "$8.49 \\mathrm{e}+01$"
+        ],
+        [
+          19,
+          "$4.70 \\mathrm{e}+00$",
+          "$4.80 \\mathrm{e}+00$",
+          "$4.88 \\mathrm{e}+00$",
+          4.58,
+          "$4.88 \\mathrm{e}+00$",
+          "$4.66 \\mathrm{e}+00$",
+          "$4.72 \\mathrm{e}+00$",
+          "$4.82 \\mathrm{e}+00$",
+          "$4.80 \\mathrm{e}+00$"
+        ],
+        [
+          20,
+          "$1.38 \\mathrm{e}+03$",
+          "$1.54 \\mathrm{e}+03$",
+          "$1.35 \\mathrm{e}+03$",
+          "$2.33 \\mathrm{e}+03$",
+          "$1.86 \\mathrm{e}+03$",
+          "$1.73 \\mathrm{e}+03$",
+          1.1603,
+          "$1.62 \\mathrm{e}+03$",
+          "$1.17 \\mathrm{e}+03$"
+        ],
+        [
+          21,
+          "$5.23 \\mathrm{e}+02$",
+          "$1.09 \\mathrm{e}+03$",
+          "$9.25 \\mathrm{e}+02$",
+          "$2.06 \\mathrm{e}+03$",
+          "$3.26 \\mathrm{e}+02$",
+          "$7.78 \\mathrm{e}+02$",
+          "$6.45 \\mathrm{e}+03$",
+          "$3.67 \\mathrm{e}+03$",
+          2.9002
+        ],
+        [
+          22,
+          "$1.48 \\mathrm{e}+02$",
+          "$1.15 \\mathrm{e}+02$",
+          "$1.16 \\mathrm{e}+02$",
+          "$1.29 \\mathrm{e}+02$",
+          "$1.20 \\mathrm{e}+02$",
+          1.0902,
+          "$1.31 \\mathrm{e}+02$",
+          "$1.17 \\mathrm{e}+02$",
+          "$1.27 \\mathrm{e}+02$"
+        ],
+        [
+          23,
+          "$2.90 \\mathrm{e}+02$",
+          "$2.90 \\mathrm{e}+02$",
+          "$2.90 \\mathrm{e}+02$",
+          "$2.90 \\mathrm{e}+02$",
+          "$2.90 \\mathrm{e}+02$",
+          "$2.90 \\mathrm{e}+02$",
+          "$2.90 \\mathrm{e}+02$",
+          "$2.90 \\mathrm{e}+02$",
+          2.9002
+        ],
+        [
+          24,
+          "$2.01 \\mathrm{e}+02$",
+          "$2.01 \\mathrm{e}+02$",
+          "$2.01 \\mathrm{e}+02$",
+          "$2.01 \\mathrm{e}+02$",
+          "$2.01 \\mathrm{e}+02$",
+          "$2.01 \\mathrm{e}+02$",
+          "$2.01 \\mathrm{e}+02$",
+          "$2.01 \\mathrm{e}+02$",
+          2.0102
+        ],
+        [
+          25,
+          "$2.09 \\mathrm{e}+02$",
+          "$2.09 \\mathrm{e}+02$",
+          "$2.08 \\mathrm{e}+02$",
+          "$2.08 \\mathrm{e}+02$",
+          "$2.09 \\mathrm{e}+02$",
+          "$2.09 \\mathrm{e}+02$",
+          "$2.09 \\mathrm{e}+02$",
+          "$2.09 \\mathrm{e}+02$",
+          2.0802
+        ],
+        [
+          26,
+          "$1.00 \\mathrm{e}+02$",
+          "$1.00 \\mathrm{e}+02$",
+          "$1.00 \\mathrm{e}+02$",
+          "$1.00 \\mathrm{e}+02$",
+          "$1.00 \\mathrm{e}+02$",
+          "$1.00 \\mathrm{e}+02$",
+          "$1.00 \\mathrm{e}+02$",
+          "$1.00 \\mathrm{e}+02$",
+          1.0002
+        ],
+        [
+          27,
+          "$3.75 \\mathrm{e}+02$",
+          "$3.75 \\mathrm{e}+02$",
+          "$3.81 \\mathrm{e}+02$",
+          "$3.83 \\mathrm{e}+02$",
+          "$3.76 \\mathrm{e}+02$",
+          "$3.79 \\mathrm{e}+02$",
+          "$3.81 \\mathrm{e}+02$",
+          "$3.78 \\mathrm{e}+02$",
+          3.7302
+        ],
+        [
+          28,
+          "$4.23 \\mathrm{e}+02$",
+          "$4.23 \\mathrm{e}+02$",
+          "$4.19 \\mathrm{e}+02$",
+          4.1902,
+          "$4.21 \\mathrm{e}+02$",
+          "$4.26 \\mathrm{e}+02$",
+          "$4.24 \\mathrm{e}+02$",
+          "$4.25 \\mathrm{e}+02$",
+          "$4.22 \\mathrm{e}+02$"
+        ],
+        [
+          29,
+          "$1.09 \\mathrm{e}+07$",
+          "$1.13 \\mathrm{e}+07$",
+          "$1.06 \\mathrm{e}+07$",
+          "$1.03 \\mathrm{e}+07$",
+          "$9.51 \\mathrm{e}+06$",
+          "$9.93 \\mathrm{e}+06$",
+          "$1.05 \\mathrm{e}+07$",
+          9.4606,
+          "$1.04 \\mathrm{e}+07$"
+        ],
+        [
+          30,
+          "$8.03 \\mathrm{e}+02$",
+          "$7.31 \\mathrm{e}+02$",
+          "$7.90 \\mathrm{e}+02$",
+          7.2002,
+          "$8.25 \\mathrm{e}+02$",
+          "$8.22 \\mathrm{e}+02$",
+          "$8.54 \\mathrm{e}+02$",
+          "$7.63 \\mathrm{e}+02$",
+          "$7.55 \\mathrm{e}+02$"
+        ],
+        [
+          "$+/-1-$",
+          "$9 / 21 / 0$",
+          "$8 / 21 / 1$",
+          "$3 / 26 / 1$",
+          "$5 / 22 / 3$",
+          "$5 / 24 / 1$",
+          "$6 / 23 / 1$",
+          "$7 / 23 / 0$",
+          "$7 / 22 / 1$",
+          "$-/-1-$"
+        ]
+      ],
+      "row_count": 31,
+      "column_count": 10
+    },
+    {
+      "table_number": "4",
+      "table_title": "The computation results of EBJADE with different settings of pt for 30 benchmark functions with 50 experimental runs.",
+      "headers": [
+        "$\\mathrm{D}=30$",
+        "EBJADE <br> $\\mathrm{pt}=0.05$",
+        "EBJADE <br> $\\mathrm{pt}=0.1$",
+        "EBJADE <br> $\\mathrm{pt}=0.15$",
+        "EBJADE <br> $\\mathrm{pt}=0.2$",
+        "EBJADE <br> $\\mathrm{pt}=0.25$",
+        "EBJADE <br> STD"
+      ],
+      "rows": [
+        [
+          1,
+          "$1.91 \\mathrm{E}+03$",
+          "$1.28 \\mathrm{E}+03$",
+          5.0602,
+          "$1.12 \\mathrm{E}+03$",
+          "$5.63 \\mathrm{E}+02$",
+          7.6602
+        ],
+        [
+          2,
+          "$1.77 \\mathrm{E}-08$",
+          "$0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00$",
+          "$1.40 \\mathrm{E}-14$",
+          "$0.00 \\mathrm{E}+00$",
+          0.0
+        ],
+        [
+          3,
+          "$1.04 \\mathrm{E}+01$",
+          "$1.94 \\mathrm{E}+01$",
+          "$5.59 \\mathrm{E}+00$",
+          "$1.00 \\mathrm{E}+01$",
+          "$8.40 \\mathrm{E}+00$",
+          "7.16E-01"
+        ],
+        [
+          4,
+          "$6.12 \\mathrm{E}-28$",
+          "$1.13 \\mathrm{E}-28$",
+          "6.11E-29",
+          "$1.27 \\mathrm{E}+00$",
+          "$1.06 \\mathrm{E}-28$",
+          "$1.55 \\mathrm{E}-28$"
+        ],
+        [
+          5,
+          "$2.00 \\mathrm{E}+01$",
+          "$2.00 \\mathrm{E}+01$",
+          "$2.00 \\mathrm{E}+01$",
+          "$2.00 \\mathrm{E}+01$",
+          "$2.00 \\mathrm{E}+01$",
+          2.0001
+        ],
+        [
+          6,
+          "$9.24 \\mathrm{E}+00$",
+          9.01,
+          "$1.04 \\mathrm{E}+01$",
+          "$9.29 \\mathrm{E}+00$",
+          "$9.36 \\mathrm{E}+00$",
+          "$9.58 \\mathrm{E}+00$"
+        ],
+        [
+          7,
+          "$5.45 \\mathrm{E}-04$",
+          "$2.46 \\mathrm{E}-04$",
+          "$0.00 \\mathrm{E}+00$",
+          "$1.16 \\mathrm{E}-10$",
+          "$2.41 \\mathrm{E}-13$",
+          0.0
+        ],
+        [
+          8,
+          "$0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00$",
+          "$0.00 \\mathrm{E}+00$",
+          0.0
+        ],
+        [
+          9,
+          "$2.40 \\mathrm{E}+01$",
+          "$2.30 \\mathrm{E}+01$",
+          "$2.27 \\mathrm{E}+01$",
+          "$2.24 \\mathrm{E}+01$",
+          "$2.15 \\mathrm{E}+01$",
+          2.1501
+        ],
+        [
+          10,
+          "$1.08 \\mathrm{E}-02$",
+          "$1.04 \\mathrm{E}-02$",
+          "3.75E-03",
+          "$1.04 \\mathrm{E}-02$",
+          "$4.16 \\mathrm{E}-03$",
+          "$4.58 \\mathrm{E}-03$"
+        ],
+        [
+          11,
+          1.5103,
+          "$1.50 \\mathrm{E}+03$",
+          "$1.52 \\mathrm{E}+03$",
+          "$1.57 \\mathrm{E}+03$",
+          "$1.52 \\mathrm{E}+03$",
+          "$1.52 \\mathrm{E}+03$"
+        ],
+        [
+          12,
+          "$1.66 \\mathrm{E}-01$",
+          "$1.62 \\mathrm{E}-01$",
+          "$1.88 \\mathrm{E}-01$",
+          "1.58E-01",
+          "$1.73 \\mathrm{E}-01$",
+          "$1.64 \\mathrm{E}-01$"
+        ],
+        [
+          13,
+          "$2.09 \\mathrm{E}-01$",
+          "$2.04 \\mathrm{E}-01$",
+          "$2.06 \\mathrm{E}-01$",
+          "$2.07 \\mathrm{E}-01$",
+          "$2.01 \\mathrm{E}-01$",
+          "1.99E-01"
+        ],
+        [
+          14,
+          "$2.52 \\mathrm{E}-01$",
+          "$2.45 \\mathrm{E}-01$",
+          "2.24E-01",
+          "$2.29 \\mathrm{E}-01$",
+          "$2.39 \\mathrm{E}-01$",
+          "$2.28 \\mathrm{E}-01$"
+        ],
+        [
+          15,
+          "$2.43 \\mathrm{E}+00$",
+          "$2.34 \\mathrm{E}+00$",
+          "$2.36 \\mathrm{E}+00$",
+          "$2.35 \\mathrm{E}+00$",
+          2.34,
+          "$2.37 \\mathrm{E}+00$"
+        ],
+        [
+          16,
+          "$9.31 \\mathrm{E}+00$",
+          "$9.38 \\mathrm{E}+00$",
+          "$9.48 \\mathrm{E}+00$",
+          "$9.31 \\mathrm{E}+00$",
+          "$9.34 \\mathrm{E}+00$",
+          9.28
+        ],
+        [
+          17,
+          "$1.28 \\mathrm{E}+03$",
+          "$1.36 \\mathrm{E}+03$",
+          1.1803,
+          "$1.29 \\mathrm{E}+03$",
+          "$3.39 \\mathrm{E}+04$",
+          "$1.22 \\mathrm{E}+03$"
+        ],
+        [
+          18,
+          "$1.20 \\mathrm{E}+02$",
+          "$1.21 \\mathrm{E}+02$",
+          7.2101,
+          "$9.75 \\mathrm{E}+01$",
+          "$9.32 \\mathrm{E}+01$",
+          "$8.49 \\mathrm{E}+01$"
+        ],
+        [
+          19,
+          "$4.96 \\mathrm{E}+00$",
+          "$4.95 \\mathrm{E}+00$",
+          "$4.88 \\mathrm{E}+00$",
+          "$4.74 \\mathrm{E}+00$",
+          4.79,
+          "$4.80 \\mathrm{E}+00$"
+        ],
+        [
+          20,
+          "$1.53 \\mathrm{E}+03$",
+          "$1.98 \\mathrm{E}+03$",
+          "$1.35 \\mathrm{E}+03$",
+          "$1.84 \\mathrm{E}+03$",
+          1.0803,
+          "$1.17 \\mathrm{E}+03$"
+        ],
+        [
+          21,
+          "$5.83 \\mathrm{E}+03$",
+          "$3.73 \\mathrm{E}+03$",
+          "$9.25 \\mathrm{E}+02$",
+          "$3.16 \\mathrm{E}+03$",
+          "$1.13 \\mathrm{E}+03$",
+          2.9002
+        ],
+        [
+          22,
+          "$1.46 \\mathrm{E}+02$",
+          "$1.07 \\mathrm{E}+02$",
+          "$1.16 \\mathrm{E}+02$",
+          1.0602,
+          "$1.18 \\mathrm{E}+02$",
+          "$1.27 \\mathrm{E}+02$"
+        ],
+        [
+          23,
+          "$2.90 \\mathrm{E}+02$",
+          "$2.90 \\mathrm{E}+02$",
+          "$2.90 \\mathrm{E}+02$",
+          "$2.90 \\mathrm{E}+02$",
+          "$2.90 \\mathrm{E}+02$",
+          2.9002
+        ],
+        [
+          24,
+          "$2.01 \\mathrm{E}+02$",
+          "$2.01 \\mathrm{E}+02$",
+          "$2.01 \\mathrm{E}+02$",
+          "$2.01 \\mathrm{E}+02$",
+          "$2.01 \\mathrm{E}+02$",
+          2.0102
+        ],
+        [
+          25,
+          "$2.08 \\mathrm{E}+02$",
+          "$2.09 \\mathrm{E}+02$",
+          "$2.08 \\mathrm{E}+02$",
+          "$2.09 \\mathrm{E}+02$",
+          "$2.09 \\mathrm{E}+02$",
+          2.0802
+        ],
+        [
+          26,
+          "$1.00 \\mathrm{E}+02$",
+          "$1.00 \\mathrm{E}+02$",
+          "$1.00 \\mathrm{E}+02$",
+          "$1.00 \\mathrm{E}+02$",
+          "$1.00 \\mathrm{E}+02$",
+          1.0002
+        ],
+        [
+          27,
+          "$3.74 \\mathrm{E}+02$",
+          3.6602,
+          "$3.81 \\mathrm{E}+02$",
+          "$3.75 \\mathrm{E}+02$",
+          "$3.81 \\mathrm{E}+02$",
+          "$3.73 \\mathrm{E}+02$"
+        ],
+        [
+          28,
+          "$4.22 \\mathrm{E}+02$",
+          "$4.20 \\mathrm{E}+02$",
+          4.1902,
+          "$4.22 \\mathrm{E}+02$",
+          "$4.23 \\mathrm{E}+02$",
+          "$4.22 \\mathrm{E}+02$"
+        ],
+        [
+          29,
+          "$1.20 \\mathrm{E}+07$",
+          "$1.17 \\mathrm{E}+07$",
+          "$1.06 \\mathrm{E}+07$",
+          "$1.05 \\mathrm{E}+07$",
+          "$1.08 \\mathrm{E}+07$",
+          1.0407
+        ],
+        [
+          30,
+          "$9.16 \\mathrm{E}+02$",
+          "$8.97 \\mathrm{E}+02$",
+          "$7.90 \\mathrm{E}+02$",
+          "$8.18 \\mathrm{E}+02$",
+          "$8.06 \\mathrm{E}+02$",
+          7.5502
+        ],
+        [
+          "$+1=/-$",
+          "$21 / 7 / 2$",
+          "$16 / 10 / 4$",
+          "$12 / 11 / 7$",
+          "$19 / 6 / 5$",
+          "$14 / 12 / 4$",
+          "$-/-/-$"
+        ]
+      ],
+      "row_count": 31,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "The computation results of EBJADE with different settings of NP.",
+      "headers": [
+        "Dimension\\NP",
+        "$\\mathbf{5 0}$",
+        "$\\mathbf{1 0 0}$",
+        "$\\mathbf{1 5 0}$",
+        "$\\mathbf{2 0 0}$",
+        "$\\mathbf{3 0 0}$",
+        "$\\mathbf{4 0 0}$",
+        "Friedman-p-value"
+      ],
+      "rows": [
+        [
+          "30-D",
+          3.93,
+          "$\\mathbf{3 . 0 2}$",
+          3.2,
+          3.33,
+          3.55,
+          3.97,
+          0.163
+        ],
+        [
+          "50-D",
+          4.17,
+          3.45,
+          3.45,
+          "$\\mathbf{3 . 2 0}$",
+          3.42,
+          3.32,
+          0.326
+        ],
+        [
+          "100-D",
+          4.58,
+          3.73,
+          3.18,
+          3.32,
+          3.23,
+          "$\\mathbf{2 . 9 5}$",
+          0.007
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 8
+    },
+    {
+      "table_number": "6",
+      "table_title": "The computation results of EBJADE with different settings of scale parameters.",
+      "headers": [
+        "Dimension\\scale parameters",
+        "$\\mathbf{0 . 0 0 1}$",
+        "$\\mathbf{0 . 0 0 5}$",
+        "$\\mathbf{0 . 0 1}$",
+        "$\\mathbf{0 . 0 5}$",
+        "Friedman-p-value"
+      ],
+      "rows": [
+        [
+          "30-D",
+          2.38,
+          "$\\mathbf{1 . 8 8}$",
+          3.05,
+          2.68,
+          0.001
+        ],
+        [
+          "50-D",
+          2.82,
+          2.38,
+          "$\\mathbf{1 . 8 8}$",
+          2.92,
+          0.002
+        ],
+        [
+          "100-D",
+          2.57,
+          2.7,
+          2.55,
+          "$\\mathbf{2 . 1 8}$",
+          0.409
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Parameter settings.",
+      "headers": [
+        "Algorithms",
+        "Parameters initial settings"
+      ],
+      "rows": [
+        [
+          "EBJADE",
+          "$\\mathrm{NP}=100,200,400, \\mu \\mathrm{CR}=\\mu \\mathrm{F}=0.5, \\mathrm{c}=0.1, \\mathrm{pt}=0.3, \\delta_{\\mathrm{t}}=0.1, \\gamma=\\sigma^{2}=0.005,0.01,0.05$"
+        ],
+        [
+          "CoDE",
+          "$\\mathrm{NP}=30,[\\mathrm{~F}=1.0, \\mathrm{CR}=0.1],[\\mathrm{F}=1.0, \\mathrm{CR}=0.9],[\\mathrm{F}=0.8, \\mathrm{CR}=0.2]$"
+        ],
+        [
+          "jDE",
+          "$\\mathrm{NP}=100 ; \\tau 1=\\tau 2=0.1 ; \\mathrm{Fl}=0.1 ; \\mathrm{Fu}=0.9$"
+        ],
+        [
+          "SaJADE",
+          "$\\mathrm{NP}=100,200,400, \\mu \\mathrm{~F}=\\mu \\mathrm{CR}=\\mu_{\\mathrm{s}}=0.5 ; \\mathrm{c}=0.1 ; \\mathrm{p}=0.05$"
+        ],
+        [
+          "EPSDE",
+          "$\\mathrm{NP}=50 ; \\mathrm{F} \\in[0.4,0.9]$ and $\\mathrm{CR} \\in[0.1,0.9]$ with stepsize $=0.1$"
+        ],
+        [
+          "SHADE",
+          "$\\mathrm{NP}=100, \\mu \\mathrm{CR}=\\mu \\mathrm{F}=0.5, \\mathrm{H}=100, \\mathrm{c}=0.1, \\mathrm{p}=0.2$"
+        ],
+        [
+          "L-SHADE",
+          "$\\mathrm{NP}=18 \\times \\mathrm{D}, \\mu \\mathrm{CR}=\\mu \\mathrm{F}=0.5, \\mathrm{H}=100, \\mathrm{c}=0.1, \\mathrm{p}=0.2$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    },
+    {
+      "table_number": "8",
+      "table_title": "Average ranks for all algorithms across all problems for $\\mathrm{D}=30,50$, and 100 using CEC2014.",
+      "headers": [
+        "Algorithm",
+        "30D",
+        "50D",
+        "100D",
+        "Mean Ranking",
+        "Rank"
+      ],
+      "rows": [
+        [
+          "L-SHADE",
+          2.4,
+          2.68,
+          2.4,
+          2.49,
+          1
+        ],
+        [
+          "EBJADE",
+          3.57,
+          2.83,
+          2.57,
+          2.99,
+          2
+        ],
+        [
+          "SHADE",
+          3.2,
+          2.98,
+          3.18,
+          3.12,
+          3
+        ],
+        [
+          "SaJADE",
+          4.13,
+          3.45,
+          3.53,
+          3.7,
+          4
+        ],
+        [
+          "jDE",
+          4.87,
+          5.27,
+          4.5,
+          4.88,
+          5
+        ],
+        [
+          "EPSDE",
+          3.98,
+          5.13,
+          5.32,
+          4.81,
+          6
+        ],
+        [
+          "coDE",
+          5.17,
+          5.65,
+          6.5,
+          5.77,
+          7
+        ],
+        [
+          "Friedman-p-value",
+          0.0,
+          0.0,
+          0.0,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "9",
+      "table_title": "Wilcoxon's test results for EBJADE algorithms and other state-of-the-art DE variants using CEC2014 functions.",
+      "headers": [
+        "Dimension",
+        "Algorithms",
+        "$\\mathbf{R}^{+}$",
+        "$\\mathbf{R}^{-}$",
+        "$\\boldsymbol{p}$-value",
+        "Dec."
+      ],
+      "rows": [
+        [
+          "30-D",
+          "EBJADE vs jDE",
+          212,
+          166,
+          0.581,
+          "$=$"
+        ],
+        [
+          "",
+          "EBJADE vs SaJADE",
+          227,
+          98,
+          0.083,
+          "$=$"
+        ],
+        [
+          "",
+          "EBJADE vs coDE",
+          250.5,
+          127.5,
+          0.14,
+          "$=$"
+        ],
+        [
+          "",
+          "EBJADE vs EPSDE",
+          254,
+          97,
+          0.046,
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs SHADE",
+          83.5,
+          192.5,
+          0.097,
+          "$=$"
+        ],
+        [
+          "",
+          "EBJADE vs L-SHADE",
+          99,
+          252,
+          0.052,
+          "$=$"
+        ],
+        [
+          "50-D",
+          "EBJADE vs jDE",
+          289,
+          62,
+          0.004,
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs SaJADE",
+          254,
+          124,
+          0.118,
+          "$=$"
+        ],
+        [
+          "",
+          "EBJADE vs coDE",
+          361,
+          45,
+          0.0,
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs EPSDE",
+          328,
+          50,
+          0.001,
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs SHADE",
+          247,
+          104,
+          0.069,
+          "$=$"
+        ],
+        [
+          "",
+          "EBJADE vs L-SHADE",
+          132.5,
+          218.5,
+          0.275,
+          "$=$"
+        ],
+        [
+          "100-D",
+          "EBJADE vs jDE",
+          353,
+          82,
+          0.002,
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs SaJADE",
+          298,
+          108,
+          0.031,
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs coDE",
+          413,
+          22,
+          0.0,
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs EPSDE",
+          378,
+          28,
+          0.0,
+          "$+$"
+        ],
+        [
+          "",
+          "EBJADE vs SHADE",
+          275,
+          121,
+          0.062,
+          "$=$"
+        ],
+        [
+          "",
+          "EBJADE vs L-SHADE",
+          139,
+          267,
+          0.154,
+          "$=$"
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 6
+    },
+    {
+      "table_number": "10",
+      "table_title": "Wilcoxon's test results for EBJADE algorithms and other state-of-the-art CEA-ES algorithms using CEC2014 functions.",
+      "headers": [
+        "Dimension",
+        "Algorithms",
+        "$\\mathbf{R}^{+}$",
+        "$\\mathbf{R}^{-}$",
+        "$\\boldsymbol{p}$-value",
+        "Dec."
+      ],
+      "rows": [
+        [
+          "50-D",
+          "EBJADE vs CMAES",
+          312,
+          153,
+          0.102,
+          "$=$"
+        ],
+        [
+          "",
+          "EBJADE vs ICMAESILS",
+          138,
+          213,
+          0.341,
+          "$=$"
+        ],
+        [
+          "100-D",
+          "EBJADE vs CMAES",
+          263,
+          202,
+          0.53,
+          "$=$"
+        ],
+        [
+          "",
+          "EBJADE vs ICMAESILS",
+          187,
+          238,
+          0.51,
+          "$=$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    }
+  ]
+}

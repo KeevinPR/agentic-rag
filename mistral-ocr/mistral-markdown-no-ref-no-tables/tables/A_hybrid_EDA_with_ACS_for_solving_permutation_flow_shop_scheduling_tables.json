@@ -1,0 +1,731 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/A hybrid EDA with ACS for solving permutation flow shop scheduling.md",
+    "filename": "A hybrid EDA with ACS for solving permutation flow shop scheduling.md",
+    "title": "A hybrid EDA with ACS for solving permutation flow shop scheduling",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Example illustrating the pheromone-generating rule and the solution construction rule",
+      "headers": [
+        "Position",
+        "Job",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          3,
+          1,
+          2,
+          5,
+          4
+        ],
+        [
+          1,
+          110,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          110,
+          100,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          110,
+          110,
+          100,
+          1,
+          1
+        ],
+        [
+          4,
+          110,
+          110,
+          110,
+          100,
+          1
+        ],
+        [
+          5,
+          110,
+          110,
+          110,
+          110,
+          100
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Experimental parameters",
+      "headers": [
+        "Parameters",
+        "Levels",
+        "Total levels"
+      ],
+      "rows": [
+        [
+          "$q_{\\text {high }}-q_{\\text {low }}$",
+          "$0.98-0.68,0.96-066,0.92-0.62,0.88-0.58$,",
+          6
+        ],
+        [
+          "$f$-size",
+          "$0,84-0.54,0.8-0.5$",
+          6
+        ],
+        [
+          "Jump-rate",
+          "$0,1,4,9,14,18$",
+          8
+        ],
+        [
+          "",
+          "Total parameter combinations",
+          288
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 ANOVA table for testing the significance of the three parameters",
+      "headers": [
+        "Source of variance",
+        "Sum of squares",
+        "$d f$",
+        "Mean squares",
+        "$F$",
+        "Significance"
+      ],
+      "rows": [
+        [
+          1,
+          0.049,
+          5,
+          0.01,
+          0.014,
+          1.0
+        ],
+        [
+          "V2 $(f$-size $)$",
+          154.917,
+          5,
+          30.983,
+          44.4,
+          "$0.00^{\\circ}$"
+        ],
+        [
+          "V3 (Jump-rate)",
+          6.395,
+          7,
+          0.914,
+          1.309,
+          0.241
+        ],
+        [
+          12,
+          3.461,
+          25,
+          0.138,
+          0.198,
+          1.0
+        ],
+        [
+          13,
+          0.531,
+          35,
+          0.015,
+          0.022,
+          1.0
+        ],
+        [
+          23,
+          15.966,
+          35,
+          0.456,
+          0.654,
+          0.942
+        ],
+        [
+          123,
+          2.245,
+          175,
+          0.013,
+          0.018,
+          1.0
+        ],
+        [
+          "Error",
+          "$2,210.692$",
+          3168,
+          0.698,
+          "",
+          ""
+        ],
+        [
+          "Total",
+          "$2,394.256$",
+          3455,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Results of Duncan's test for different filter sizes",
+      "headers": [
+        "$f$-size",
+        "Average ARP",
+        "Subsets",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          1,
+          2
+        ],
+        [
+          18,
+          0.6436,
+          "A",
+          ""
+        ],
+        [
+          14,
+          0.6493,
+          "A",
+          ""
+        ],
+        [
+          9,
+          0.6499,
+          "A",
+          ""
+        ],
+        [
+          4,
+          0.6614,
+          "A",
+          ""
+        ],
+        [
+          1,
+          0.6743,
+          "A",
+          ""
+        ],
+        [
+          "None",
+          1.2232,
+          "",
+          "B"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Computational results of M-MMAS, PACO, and EDA $_{\\text {ACS }}\\left(t_{30}\\right)$",
+      "headers": [
+        "Test problems",
+        "M-MMAS",
+        "PACO",
+        "EDA $_{\\text {ACS }}$"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0.11,
+          0.2,
+          0.04
+        ],
+        [
+          "$20 \\times 10$",
+          0.15,
+          0.32,
+          0.07
+        ],
+        [
+          "$20 \\times 20$",
+          0.09,
+          0.31,
+          0.1
+        ],
+        [
+          "$50 \\times 5$",
+          0.02,
+          0.08,
+          0.02
+        ],
+        [
+          "$50 \\times 10$",
+          1.3,
+          0.9,
+          0.75
+        ],
+        [
+          "$50 \\times 20$",
+          2.1,
+          1.46,
+          1.25
+        ],
+        [
+          "$100 \\times 5$",
+          0.03,
+          0.04,
+          0.06
+        ],
+        [
+          "$100 \\times 10$",
+          0.46,
+          0.35,
+          0.39
+        ],
+        [
+          "$100 \\times 20$",
+          2.59,
+          2.17,
+          1.55
+        ],
+        [
+          "$200 \\times 10$",
+          0.37,
+          0.26,
+          0.24
+        ],
+        [
+          "$200 \\times 20$",
+          2.34,
+          2,
+          1.58
+        ],
+        [
+          "$500 \\times 20$",
+          1.06,
+          0.98,
+          0.81
+        ],
+        [
+          "Average",
+          0.885,
+          0.756,
+          0.572
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Computational results of M-MMAS, PACO, and EDA $_{\\text {ACS }}\\left(t_{90}\\right)$",
+      "headers": [
+        "Test problems",
+        "M-MMAS",
+        "PACO",
+        "EDA $_{\\text {ACS }}$"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0.08,
+          0.08,
+          0.0
+        ],
+        [
+          "$20 \\times 10$",
+          0.09,
+          0.09,
+          0.07
+        ],
+        [
+          "$20 \\times 20$",
+          0.07,
+          0.07,
+          0.06
+        ],
+        [
+          "$50 \\times 5$",
+          0.02,
+          0.02,
+          0.01
+        ],
+        [
+          "$50 \\times 10$",
+          1.14,
+          1.14,
+          0.74
+        ],
+        [
+          "$50 \\times 20$",
+          2.06,
+          2.06,
+          1.1
+        ],
+        [
+          "$100 \\times 5$",
+          0.02,
+          0.02,
+          0.04
+        ],
+        [
+          "$100 \\times 10$",
+          0.42,
+          0.42,
+          0.28
+        ],
+        [
+          "$100 \\times 20$",
+          2.5,
+          2.5,
+          1.45
+        ],
+        [
+          "$200 \\times 10$",
+          0.32,
+          0.32,
+          0.18
+        ],
+        [
+          "$200 \\times 20$",
+          2.18,
+          2.18,
+          1.43
+        ],
+        [
+          "$500 \\times 20$",
+          1.09,
+          1.09,
+          0.73
+        ],
+        [
+          "Average",
+          0.833,
+          0.833,
+          0.508
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 Computational results of M-MMAS, PACO, and $\\mathrm{EDA}_{\\text {ACS }}\\left(t_{90}\\right)$",
+      "headers": [
+        "Test problems",
+        "M-MMAS",
+        "PACO",
+        "$\\mathrm{EDA}_{\\text {ACS }}$"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0.04,
+          0.18,
+          0.0
+        ],
+        [
+          "$20 \\times 10$",
+          0.07,
+          0.24,
+          0.04
+        ],
+        [
+          "$20 \\times 20$",
+          0.06,
+          0.18,
+          0.04
+        ],
+        [
+          "$50 \\times 5$",
+          0.02,
+          0.05,
+          0
+        ],
+        [
+          "$50 \\times 10$",
+          1.08,
+          0.81,
+          0.63
+        ],
+        [
+          "$50 \\times 20$",
+          1.93,
+          1.41,
+          1.01
+        ],
+        [
+          "$100 \\times 5$",
+          0.02,
+          0.02,
+          0.04
+        ],
+        [
+          "$100 \\times 10$",
+          0.39,
+          0.29,
+          0.24
+        ],
+        [
+          "$100 \\times 20$",
+          2.42,
+          1.93,
+          1.3
+        ],
+        [
+          "$200 \\times 10$",
+          0.3,
+          0.23,
+          0.18
+        ],
+        [
+          "$200 \\times 20$",
+          2.15,
+          1.82,
+          1.39
+        ],
+        [
+          "$500 \\times 20$",
+          1.02,
+          0.85,
+          0.69
+        ],
+        [
+          "Average",
+          0.792,
+          0.668,
+          0.463
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 Results of the paired samples $t$ test for M-MMAS, PACO, and EDA $_{\\text {ACS }}$ under different computation times",
+      "headers": [
+        "Time",
+        "Algorithm",
+        "Paired differences",
+        "",
+        "",
+        "",
+        "$t$",
+        "Significance"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Mean",
+          "SEM",
+          95,
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "Lower",
+          "Upper",
+          "",
+          ""
+        ],
+        [
+          "$t_{50}{ }^{a}$",
+          "M-MMAS-EDA ${ }_{\\text {ACS }}$",
+          0.31,
+          0.11091,
+          0.0659,
+          0.5541,
+          2.795,
+          0.017
+        ],
+        [
+          "",
+          "PACO-EDA ${ }_{\\text {ACS }}$",
+          0.18083,
+          0.05442,
+          0.06106,
+          0.30061,
+          3.323,
+          0.007
+        ],
+        [
+          "$t_{60}$",
+          "M-MMAS-EDA ${ }_{\\text {ACS }}$",
+          0.325,
+          0.11198,
+          0.07853,
+          0.57147,
+          2.902,
+          0.014
+        ],
+        [
+          "",
+          "PACO-EDA ${ }_{\\text {ACS }}$",
+          0.1825,
+          0.04838,
+          0.07601,
+          0.28899,
+          3.772,
+          0.003
+        ],
+        [
+          "$t_{90}$",
+          "M-MMAS-EDA ${ }_{\\text {ACS }}$",
+          0.32833,
+          0.11471,
+          0.07587,
+          0.5808,
+          2.862,
+          0.015
+        ],
+        [
+          "",
+          "PACO-EDA ${ }_{\\text {ACS }}$",
+          0.20417,
+          0.05501,
+          0.08308,
+          0.32525,
+          3.711,
+          0.003
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 8
+    },
+    {
+      "table_number": "10",
+      "table_title": "Table 10 Computational results of HGA_RMA, PSOvns, NEGAvns, and $\\mathrm{EDA}_{\\text {ACS }}$",
+      "headers": [
+        "Test problems",
+        "NEGAvns",
+        "HGA_RMA",
+        "PSOvns",
+        "EDA $_{\\text {ACS }}$"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0,
+          0.04,
+          0.03,
+          0
+        ],
+        [
+          "$20 \\times 10$",
+          0.01,
+          0.02,
+          0.02,
+          0.01
+        ],
+        [
+          "$20 \\times 20$",
+          0.02,
+          0.05,
+          0.05,
+          0.01
+        ],
+        [
+          "$50 \\times 5$",
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "$50 \\times 10$",
+          0.82,
+          0.72,
+          0.57,
+          0.6
+        ],
+        [
+          "$50 \\times 20$",
+          1.08,
+          0.99,
+          1.36,
+          0.9
+        ],
+        [
+          "$100 \\times 5$",
+          0,
+          0.01,
+          0,
+          0.04
+        ],
+        [
+          "$100 \\times 10$",
+          0.14,
+          0.16,
+          0.18,
+          0.21
+        ],
+        [
+          "$100 \\times 20$",
+          1.4,
+          1.3,
+          1.45,
+          1.25
+        ],
+        [
+          "$200 \\times 10$",
+          0.16,
+          0.14,
+          0.18,
+          0.12
+        ],
+        [
+          "$200 \\times 20$",
+          1.25,
+          1.26,
+          1.35,
+          1.3
+        ],
+        [
+          "$500 \\times 20$",
+          0.71,
+          0.69,
+          "$-^{\\mathrm{a}}$",
+          0.65
+        ],
+        [
+          "Average",
+          0.466,
+          0.448,
+          0.472,
+          0.424
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 5
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/An Estimation of Distribution Algorithm Guided by Mean Shift.md",
+    "filename": "An Estimation of Distribution Algorithm Guided by Mean Shift.md",
+    "title": "An Estimation of Distribution Algorithm Guided by Mean Shift",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Test Instance",
+        "Search Space"
+      ],
+      "rows": [
+        [
+          "$f_{1}(x)=\\sum_{i=1}^{d}\\left(x^{i}\\right)^{2}$",
+          "$[-100,100]^{d}$"
+        ],
+        [
+          "$f_{3}(x)=\\sum_{i=1}^{d}\\left(\\sum_{j=1}^{s} x^{j}\\right)^{2}$",
+          "$[-100,100]^{d}$"
+        ],
+        [
+          "$f_{5}(x)=\\sum_{i=1}^{d-1}\\left[100\\left(x^{i+1}-\\left(x^{i}\\right)^{2}\\right)^{2}+\\left(x^{i}-1\\right)^{2}\\right]$",
+          "$[-30,30]^{d}$"
+        ],
+        [
+          "$f_{6}(x)=\\sum_{i=1}^{d}\\left[x^{i}+0.5\\right]^{2}$",
+          "$[-100,100]^{d}$"
+        ],
+        [
+          "$f_{7}(x)=\\sum_{i=1}^{n} i\\left(x^{i}\\right)^{4}+\\operatorname{rand}[0,1)$",
+          "$[-1.28,1.28]^{d}$"
+        ],
+        [
+          "$f_{9}(x)=\\sum_{i=1}^{d}\\left[\\left(x^{i}\\right)^{2}-10 \\cos \\left(2 \\pi x^{i}\\right)+10\\right]$",
+          "$[-5.12,5.12]^{d}$"
+        ],
+        [
+          "$f_{10}(x)=-20 \\exp \\left(-0.2 \\sqrt{\\frac{1}{2} \\sum_{i=1}^{d}\\left(x^{i}\\right)^{2}}\\right)-\\exp \\left(\\frac{1}{d} \\sum_{i=1}^{d} \\cos \\left(2 \\pi x^{i}\\right)\\right)+20+e$",
+          "$[-32,32]^{d}$"
+        ],
+        [
+          "$f_{11}(x)=\\frac{1}{4000} \\sum_{i=1}^{d}\\left(x^{i}\\right)^{2} \\prod_{i=1}^{d} \\cos \\left(\\frac{x^{i}}{\\sqrt{i}}\\right)+1$",
+          "$[-600,600]^{d}$"
+        ],
+        [
+          "$f_{12}(x)=\\frac{\\pi}{d}\\left\\{10 \\sin ^{2}\\left(\\pi y^{i}\\right)+\\sum_{i=1}^{d-1}\\left(y^{i}-1\\right)^{2}\\left[1+10 \\sin ^{2}\\left(\\pi y^{i}+1\\right)\\right]+\\left(y^{d}-1\\right)^{2}\\right\\}+\\sum_{i=1}^{d} u\\left(x^{i}, 10,100,4\\right)$",
+          "$[-50,50]^{d}$"
+        ],
+        [
+          "where $y^{i}=1+\\frac{1}{2}\\left(x^{i}+1\\right)$, and $u\\left(x^{i}, a, k, m\\right)= \\begin{cases}k\\left(x^{i}-a\\right)^{m} & x^{i}>a \\\\ 0 & -a \\leq x^{i} \\leq a \\\\ k\\left(-x^{i}-a\\right)^{m} & x^{i}<-a\\end{cases}$",
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "MEDIAN,STD. VALUES OF THE RESULTS OBTAINED BY THE TWO COMPARISON ALGORITHMS AFTER 500, 1000, AND 1500 GENERATIONS OVER 20 RUNS FOR ALL THE TEST INSTANCES.",
+      "headers": [
+        "",
+        "generation $=500$",
+        "",
+        "generation $=1000$",
+        "",
+        "generation $=1500$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "EDA/LS-MS",
+          "EDA/LS",
+          "EDA/LS-MS",
+          "EDA/LS",
+          "EDA/LS-MS",
+          "EDA/LS"
+        ],
+        [
+          "$f_{1}$",
+          "2.78e-33 $\\pm 6.01 \\mathrm{e}-020$",
+          "$6.74 \\mathrm{e}-24 \\pm 3.81 \\mathrm{e}-24$",
+          "1.11e-65 $\\pm 3.13 \\mathrm{e}-66$",
+          "$2.34 \\mathrm{e}-65 \\pm 2.77 \\mathrm{e}-65$",
+          "$8.72 \\mathrm{e}-66 \\pm 1.88 \\mathrm{e}-66$",
+          "1.35e-99 $\\pm 1.31 \\mathrm{e}-99$"
+        ],
+        [
+          "$f_{2}$",
+          "1.11e-15 $\\pm 1.07 \\mathrm{e}-09$",
+          "$6.64 \\mathrm{e}-12 \\pm 2.02 \\mathrm{e}-12$",
+          "3.31e-44 $\\pm 1.07 \\mathrm{e}-30$",
+          "$1.22 \\mathrm{e}-31 \\pm 5.15 \\mathrm{e}-32$",
+          "$6.32 \\mathrm{e}-48 \\pm 5.55 \\mathrm{e}-44$",
+          "5.04e-48 $\\pm 1.73 \\mathrm{e}-48$"
+        ],
+        [
+          "$f_{3}$",
+          "2.25e-02 $\\pm 1.24 \\mathrm{e}-01$",
+          "$2.18 \\mathrm{e}+02 \\pm 1.73 \\mathrm{e}+02$",
+          "1.51e-36 $\\pm 2.80 \\mathrm{e}-33$",
+          "$2.60 \\mathrm{e}-31 \\pm 2.93 \\mathrm{e}-02$",
+          "1.18e-36 $\\pm 8.38 \\mathrm{e}-36$",
+          "$2.90 \\mathrm{e}-36 \\pm 6.27 \\mathrm{e}-34$"
+        ],
+        [
+          "$f_{4}$",
+          "1.27e-102 $\\pm 1.38 \\mathrm{e}-00$",
+          "$1.40 \\mathrm{e}-07 \\pm 3.93 \\mathrm{e}-08$",
+          "5.99e-103 $\\pm 6.29 \\mathrm{e}-16$",
+          "$1.32 \\mathrm{e}-20 \\pm 5.55 \\mathrm{e}-21$",
+          "2.21e-103 $\\pm 6.12 \\mathrm{e}-16$",
+          "$1.56 \\mathrm{e}-31 \\pm 8.17 \\mathrm{e}-32$"
+        ],
+        [
+          "$f_{5}$",
+          "3.66e-10 $\\pm 4.69 \\mathrm{e}-06$",
+          "$9.69 \\mathrm{e}-07 \\pm 7.80 \\mathrm{e}-03$",
+          "$4.81 \\mathrm{e}-29 \\pm 5.14 \\mathrm{e}-29$",
+          "3.67e-29 $\\pm 2.81 \\mathrm{e}-29$",
+          "$3.09 \\mathrm{e}-29 \\pm 2.52 \\mathrm{e}-29$",
+          "3.05e-29 $\\pm 2.06 \\mathrm{e}-29$"
+        ],
+        [
+          "$f_{6}$",
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "$f_{7}$",
+          "4.39e-03 $\\pm 2.41 \\mathrm{e}-03$",
+          "$6.44 \\mathrm{e}-03 \\pm 2.86 \\mathrm{e}-03$",
+          "3.13e-03 $\\pm 1.03 \\mathrm{e}-03$",
+          "$5.05 \\mathrm{e}-03 \\pm 1.30 \\mathrm{e}-03$",
+          "2.44e-03 $\\pm 9.62 \\mathrm{e}-04$",
+          "$3.70 \\mathrm{e}-03 \\pm 8.62 \\mathrm{e}-04$"
+        ],
+        [
+          "$f_{8}$",
+          "1.82e-12 $\\pm 2.22 \\mathrm{e}-06$",
+          "$7.00 \\mathrm{e}-11 \\pm 3.16 \\mathrm{e}-06$",
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "$f_{9}$",
+          0.0,
+          "$7.96 \\mathrm{e}+00 \\pm 3.30 \\mathrm{e}+00$",
+          0.0,
+          "$2.98 \\mathrm{e}+00 \\pm 2.37 \\mathrm{e}+00$",
+          0.0,
+          0.0
+        ],
+        [
+          "$f_{10}$",
+          "6.84e-14 $\\pm 2.07 \\mathrm{e}-11$",
+          "$8.30 \\mathrm{e}-13 \\pm 1.78 \\mathrm{e}-13$",
+          "$7.99 \\mathrm{e}-15 \\pm 1.74 \\mathrm{e}-15$",
+          "4.44e-15 $\\pm 0.00 \\mathrm{e}+00$",
+          "$7.99 \\mathrm{e}-15 \\pm 0.00 \\mathrm{e}+00$",
+          "4.44e-15 $\\pm 0.00 \\mathrm{e}+00$"
+        ],
+        [
+          "$f_{11}$",
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "$f_{12}$",
+          "1.57e-32 $\\pm 2.81 \\mathrm{e}-48$",
+          "$1.67 \\mathrm{e}-25 \\pm 5.22 \\mathrm{e}-26$",
+          "1.57e-32 $\\pm 2.81 \\mathrm{e}-48$",
+          "1.57e-32 $\\pm 2.81 \\mathrm{e}-48$",
+          "1.57e-32 $\\pm 2.81 \\mathrm{e}-48$",
+          "1.57e-32 $\\pm 2.81 \\mathrm{e}-48$"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 7
+    },
+    {
+      "table_number": "III",
+      "table_title": "MEAN $\\pm$ STD. VALUES OF THE RESULTS OBTAINED BY EDA/LS-MS AFTER 2, 000 GENERATIONS OVER 20 RUNS FOR ALL THE TEST INSTANCES WITH DIFFERENT VALUES OF $(s=10,15,20$, AND AN ADAPTIVE VALUE $)$.",
+      "headers": [
+        "",
+        "10",
+        "20",
+        "30",
+        "adaptive"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "$\\mathbf{1 . 8 6 5 e - 0 6 6} \\pm 2.087 \\mathrm{e}-066$",
+          "$3.582 \\mathrm{e}-066 \\pm 4.225 \\mathrm{e}-066$",
+          "$3.322 \\mathrm{e}-066 \\pm 3.159 \\mathrm{e}-066$",
+          "$3.450 \\mathrm{e}-066 \\pm 4.064 \\mathrm{e}-066$"
+        ],
+        [
+          "$f_{2}$",
+          "$\\mathbf{1 . 6 8 6 e - 0 4 6} \\pm 1.408 \\mathrm{e}-044$",
+          "$1.710 \\mathrm{e}-046 \\pm 1.289 \\mathrm{e}-044$",
+          "$3.248 \\mathrm{e}-046 \\pm 5.395 \\mathrm{e}-044$",
+          "$3.580 \\mathrm{e}-046 \\pm 5.552 \\mathrm{e}-044$"
+        ],
+        [
+          "$f_{3}$",
+          "$\\mathbf{2 . 9 2 2 e - 0 3 4} \\pm 2.849 \\mathrm{e}-034$",
+          "$2.179 \\mathrm{e}-033 \\pm 2.397 \\mathrm{e}-036$",
+          "$7.847 \\mathrm{e}-034 \\pm 4.143 \\mathrm{e}-034$",
+          "$7.727 \\mathrm{e}-033 \\pm 5.184 \\mathrm{e}-036$"
+        ],
+        [
+          "$f_{4}$",
+          "$2.399 \\mathrm{e}-103 \\pm 1.283 \\mathrm{e}-015$",
+          "$6.241 \\mathrm{e}-103 \\pm 5.369 \\mathrm{e}-015$",
+          "$3.572 \\mathrm{e}-103 \\pm 2.746 \\mathrm{e}-016$",
+          "$\\mathbf{2 . 3 7 2 e - 1 0 3} \\pm 1.358 \\mathrm{e}-014$"
+        ],
+        [
+          "$f_{5}$",
+          "$\\mathbf{2 . 5 0 2 e - 0 2 9} \\pm 3.255 \\mathrm{e}-029$",
+          "$2.836 \\mathrm{e}-029 \\pm 3.223 \\mathrm{e}-029$",
+          "$2.787 \\mathrm{e}-029 \\pm 3.948 \\mathrm{e}-029$",
+          "$3.006 \\mathrm{e}-029 \\pm 2.621 \\mathrm{e}-029$"
+        ],
+        [
+          "$f_{6}$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$"
+        ],
+        [
+          "$f_{7}$",
+          "$1.638 \\mathrm{e}-003 \\pm 1.467 \\mathrm{e}-003$",
+          "$1.726 \\mathrm{e}-003 \\pm 1.712 \\mathrm{e}-003$",
+          "$\\mathbf{4 . 0 1 0 e - 0 0 4} \\pm 3.844 \\mathrm{e}-004$",
+          "$5.634 \\mathrm{e}-004 \\pm 6.016 \\mathrm{e}-004$"
+        ],
+        [
+          "$f_{8}$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 9.095 \\mathrm{e}-014$",
+          "$9.095 \\mathrm{e}-014 \\pm 9.095 \\mathrm{e}-014$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 4.067 \\mathrm{e}-013$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 4.067 \\mathrm{e}-013$"
+        ],
+        [
+          "$f_{9}$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$"
+        ],
+        [
+          "$f_{10}$",
+          "$8.349 \\mathrm{e}-015 \\pm 7.994 \\mathrm{e}-015$",
+          "$7.994 \\mathrm{e}-015 \\pm 7.994 \\mathrm{e}-015$",
+          "$\\mathbf{1 . 5 8 9 e - 0 1 5} \\pm 0.000 \\mathrm{e}+000$",
+          "$7.994 \\mathrm{e}-015 \\pm 0.000 \\mathrm{e}+000$"
+        ],
+        [
+          "$f_{11}$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$",
+          "$9.856 \\mathrm{e}-004 \\pm 1.602 \\mathrm{e}-003$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 0.000 \\mathrm{e}+000$",
+          "$\\mathbf{0 . 0 0 0 e + 0 0 0} \\pm 3.324 \\mathrm{e}-003$"
+        ],
+        [
+          "$f_{12}$",
+          "$1.571 \\mathrm{e}-032 \\pm 1.571 \\mathrm{e}-032$",
+          "$1.571 \\mathrm{e}-032 \\pm 1.571 \\mathrm{e}-032$",
+          "$\\mathbf{2 . 8 0 8 e - 0 4 8} \\pm 2.808 \\mathrm{e}-048$",
+          "$\\mathbf{2 . 8 0 8 e - 0 4 8} \\pm 2.808 \\mathrm{e}-048$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    }
+  ]
+}

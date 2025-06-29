@@ -1,0 +1,888 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Differential Evolution with Estimation of Distribution for Worst-Case Scenario Optimization.md",
+    "filename": "Differential Evolution with Estimation of Distribution for Worst-Case Scenario Optimization.md",
+    "title": "Differential Evolution with Estimation of Distribution for Worst-Case Scenario Optimization",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Sinha, A.; Lu, Z.; Deb, K.; Malo, P. Bilevel optimization based on iterative approximation of multiple mappings. J. Heuristics 2017, 26, 1-35. [CrossRef]\n2. Antoniou, M.; Korošec, P. Multilevel Optimisation. Optimization under Uncertainty with Applications to Aerospace Engineering; Springer: Cham, Switzerland, 2021; pp. 307-331.\n3. Feng, Y.; Hongwei, L.; Shuisheng, Z.; Sanyang, L. A smoothing trust-region Newton-CG method for minimax problem. Appl. Math. Comput. 2008, 199, 581-589. [CrossRef]\n4. Montemanni, R.; Gambardella, L.M.; Donati, A.V. A branch and bound algorithm for the robust shortest path problem with interval data. Oper. Res. Lett. 2004, 32, 225-232. [CrossRef]\n5. Aissi, H.; Bazgan, C.; Vanderpooten, D. Min-max and min-max regret versions of combinatorial optimization problems: A survey. Eur. J. Oper. Res. 2009, 197, 427-438. [CrossRef]\n6. Barbosa, H.J. A coevolutionary genetic algorithm for constrained optimization. In Proceedings of the 1999 Congress on Evolutionary Computation-CEC99 (Cat. No. 99TH8406), Washington, DC, USA, 6-9 July 1999; IEEE: Piscataway, NJ, USA; 3, pp. 1605-1611.\n7. Shi, Y.; Krohling, R.A. Co-evolutionary particle swarm optimization to solve min-max problems. In Proceedings of the 2002 Congress on Evolutionary Computation. CEC'02 (Cat. No. 02TH8600), Honolulu, HI, USA, 12-17 May 2002; IEEE: Piscataway, NJ, USA; Volume 2, pp. 1682-1687.\n8. Vasile, M. On the solution of min-max problems in robust optimization. In Proceedings of the EVOLVE 2014 International Conference, A Bridge between Probability, Set Oriented Numerics, and Evolutionary Computing, Beijing, China, 1-4 July 2014.\n9. Chen, R.B.; Chang, S.P.; Wang, W.; Tung, H.C.; Wong, W.K. Minimax optimal designs via particle swarm optimization methods. Stat. Comput. 2015, 25, 975-988. [CrossRef]\n10. Antoniou, M.; Papa, G. Solving min-max optimisation problems by means of bilevel evolutionary algorithms: A preliminary study. In Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion, Cancun, Mexico, 8-12 July 2020; pp. 187-188.\n11. Angelo, J.S.; Krempser, E.; Barbosa, H.J. Differential evolution for bilevel programming. In Proceedings of the 2013 IEEE Congress on Evolutionary Computation, Cancun, Mexico, 20-23 June 2013; IEEE: Piscataway, NJ, USA; pp. 470-477.\n12. He, X.; Zhou, Y.; Chen, Z. Evolutionary bilevel optimization based on covariance matrix adaptation. IEEE Trans. Evol. Comput. 2018, 23, 258-272. [CrossRef]\n13. Qiu, Y.; Xu, J.X.; Xu, Y.; Tan, K.C. A new differential evolution algorithm for minimax optimization in robust design. IEEE Trans. Cybern. 2017, 48, 1355-1368. [CrossRef] [PubMed]\n14. Zhou, A.; Zhang, Q. A surrogate-assisted evolutionary algorithm for minimax optimization. In Proceedings of the IEEE Congress on Evolutionary Computation, Barcelona, Spain, 18-23 July 2010; IEEE: Piscataway, NJ, USA; pp. 1-7.\n15. Marzat, J.; Walter, E.; Piet-Lahanier, H. Worst-case global optimization of black-box functions through Kriging and relaxation. J. Glob. Optim. 2013, 55, 707-727. [CrossRef]\n16. Wang, H.; Feng, L.; Jin, Y.; Doherty, J. Surrogate-Assisted Evolutionary Multitasking for Expensive Minimax Optimization in Multiple Scenarios. IEEE Comput. Intell. Mag. 2021, 16, 34-48. [CrossRef]\n17. Storn, R.; Price, K. Differential evolution-a simple and efficient heuristic for global optimization over continuous spaces. J. Glob. Optim. 1997, 11, 341-359. [CrossRef]\n18. Larranaga, P. A review on estimation of distribution algorithms. In Estimation of Distribution Algorithms; Springer: Boston, MA, USA, 2002; pp. 57-100.\n19. Zhao, F.; Shao, Z.; Wang, J.; Zhang, C. A hybrid differential evolution and estimation of distribution algorithm based on neighbourhood search for job shop scheduling problems. Int. J. Prod. Res. 2016, 54, 1039-1060. [CrossRef]\n\n20. Hao, R.; Zhang, J.; Xin, B.; Chen, C.; Dou, L. A hybrid differential evolution and estimation of distribution algorithm for the multi-point dynamic aggregation problem. In Proceedings of the Genetic and Evolutionary Computation Conference Companion, Kyoto, Japan, 15-19 July 2018; pp. 251-252.\n21. Wang, G.; Ma, L. The estimation of particle swarm distribution algorithm with sensitivity analysis for solving nonlinear bilevel programming problems. IEEE Access 2020, 8, 137133-137149. [CrossRef]\n22. Gorissen, B.L.; Yanukoğlu, İ.; den Hertog, D. A practical guide to robust optimization. Omega 2015, 53, 124-137. [CrossRef]\n23. Available online: https://www.mathworks.com/help/stats/mvnrnd.html (accessed on 3 August 2021).\n24. Rustem, B.; Howe, M. Algorithms for Worst-Case Design and Applications to Risk Management; Princeton University Press: Princeton, NJ, USA, 2009.\n25. Jensen, M.T. A new look at solving minimax problems with coevolutionary genetic algorithms. In Metaheuristics: Computer Decision-Making; Springer: Boston, MA, USA, 2003; pp. 369-384.\n26. Wilcoxon, F. Individual comparisons by ranking methods. Biom. Bull. 1945, 1, 80-83. [CrossRef]\n27. Marzat, J.; Walter, E.; Piet-Lahanier, H. A new expected-improvement algorithm for continuous minimax optimization. J. Glob. Optim. 2016, 64, 785-802. [CrossRef]\n28. Brown, B.; Singh, T. Minimax design of vibration absorbers for linear damped systems. J. Sound Vib. 2011, 330, 2437-2448. [CrossRef]",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Sinha, A.; Lu, Z.; Deb, K.; Malo, P. Bilevel optimization based on iterative approximation of multiple mappings. J. Heuristics 2017, 26, 1-35. [CrossRef]"
+      },
+      {
+        "ref_id": "2",
+        "text": "Antoniou, M.; Korošec, P. Multilevel Optimisation. Optimization under Uncertainty with Applications to Aerospace Engineering; Springer: Cham, Switzerland, 2021; pp. 307-331."
+      },
+      {
+        "ref_id": "3",
+        "text": "Feng, Y.; Hongwei, L.; Shuisheng, Z.; Sanyang, L. A smoothing trust-region Newton-CG method for minimax problem. Appl. Math. Comput. 2008, 199, 581-589. [CrossRef]"
+      },
+      {
+        "ref_id": "4",
+        "text": "Montemanni, R.; Gambardella, L.M.; Donati, A.V. A branch and bound algorithm for the robust shortest path problem with interval data. Oper. Res. Lett. 2004, 32, 225-232. [CrossRef]"
+      },
+      {
+        "ref_id": "5",
+        "text": "Aissi, H.; Bazgan, C.; Vanderpooten, D. Min-max and min-max regret versions of combinatorial optimization problems: A survey. Eur. J. Oper. Res. 2009, 197, 427-438. [CrossRef]"
+      },
+      {
+        "ref_id": "6",
+        "text": "Barbosa, H.J. A coevolutionary genetic algorithm for constrained optimization. In Proceedings of the 1999 Congress on Evolutionary Computation-CEC99 (Cat. No. 99TH8406), Washington, DC, USA, 6-9 July 1999; IEEE: Piscataway, NJ, USA; 3, pp. 1605-1611."
+      },
+      {
+        "ref_id": "7",
+        "text": "Shi, Y.; Krohling, R.A. Co-evolutionary particle swarm optimization to solve min-max problems. In Proceedings of the 2002 Congress on Evolutionary Computation. CEC'02 (Cat. No. 02TH8600), Honolulu, HI, USA, 12-17 May 2002; IEEE: Piscataway, NJ, USA; Volume 2, pp. 1682-1687."
+      },
+      {
+        "ref_id": "8",
+        "text": "Vasile, M. On the solution of min-max problems in robust optimization. In Proceedings of the EVOLVE 2014 International Conference, A Bridge between Probability, Set Oriented Numerics, and Evolutionary Computing, Beijing, China, 1-4 July 2014."
+      },
+      {
+        "ref_id": "9",
+        "text": "Chen, R.B.; Chang, S.P.; Wang, W.; Tung, H.C.; Wong, W.K. Minimax optimal designs via particle swarm optimization methods. Stat. Comput. 2015, 25, 975-988. [CrossRef]"
+      },
+      {
+        "ref_id": "10",
+        "text": "Antoniou, M.; Papa, G. Solving min-max optimisation problems by means of bilevel evolutionary algorithms: A preliminary study. In Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion, Cancun, Mexico, 8-12 July 2020; pp. 187-188."
+      },
+      {
+        "ref_id": "11",
+        "text": "Angelo, J.S.; Krempser, E.; Barbosa, H.J. Differential evolution for bilevel programming. In Proceedings of the 2013 IEEE Congress on Evolutionary Computation, Cancun, Mexico, 20-23 June 2013; IEEE: Piscataway, NJ, USA; pp. 470-477."
+      },
+      {
+        "ref_id": "12",
+        "text": "He, X.; Zhou, Y.; Chen, Z. Evolutionary bilevel optimization based on covariance matrix adaptation. IEEE Trans. Evol. Comput. 2018, 23, 258-272. [CrossRef]"
+      },
+      {
+        "ref_id": "13",
+        "text": "Qiu, Y.; Xu, J.X.; Xu, Y.; Tan, K.C. A new differential evolution algorithm for minimax optimization in robust design. IEEE Trans. Cybern. 2017, 48, 1355-1368. [CrossRef] [PubMed]"
+      },
+      {
+        "ref_id": "14",
+        "text": "Zhou, A.; Zhang, Q. A surrogate-assisted evolutionary algorithm for minimax optimization. In Proceedings of the IEEE Congress on Evolutionary Computation, Barcelona, Spain, 18-23 July 2010; IEEE: Piscataway, NJ, USA; pp. 1-7."
+      },
+      {
+        "ref_id": "15",
+        "text": "Marzat, J.; Walter, E.; Piet-Lahanier, H. Worst-case global optimization of black-box functions through Kriging and relaxation. J. Glob. Optim. 2013, 55, 707-727. [CrossRef]"
+      },
+      {
+        "ref_id": "16",
+        "text": "Wang, H.; Feng, L.; Jin, Y.; Doherty, J. Surrogate-Assisted Evolutionary Multitasking for Expensive Minimax Optimization in Multiple Scenarios. IEEE Comput. Intell. Mag. 2021, 16, 34-48. [CrossRef]"
+      },
+      {
+        "ref_id": "17",
+        "text": "Storn, R.; Price, K. Differential evolution-a simple and efficient heuristic for global optimization over continuous spaces. J. Glob. Optim. 1997, 11, 341-359. [CrossRef]"
+      },
+      {
+        "ref_id": "18",
+        "text": "Larranaga, P. A review on estimation of distribution algorithms. In Estimation of Distribution Algorithms; Springer: Boston, MA, USA, 2002; pp. 57-100."
+      },
+      {
+        "ref_id": "19",
+        "text": "Zhao, F.; Shao, Z.; Wang, J.; Zhang, C. A hybrid differential evolution and estimation of distribution algorithm based on neighbourhood search for job shop scheduling problems. Int. J. Prod. Res. 2016, 54, 1039-1060. [CrossRef]"
+      },
+      {
+        "ref_id": "20",
+        "text": "Hao, R.; Zhang, J.; Xin, B.; Chen, C.; Dou, L. A hybrid differential evolution and estimation of distribution algorithm for the multi-point dynamic aggregation problem. In Proceedings of the Genetic and Evolutionary Computation Conference Companion, Kyoto, Japan, 15-19 July 2018; pp. 251-252."
+      },
+      {
+        "ref_id": "21",
+        "text": "Wang, G.; Ma, L. The estimation of particle swarm distribution algorithm with sensitivity analysis for solving nonlinear bilevel programming problems. IEEE Access 2020, 8, 137133-137149. [CrossRef]"
+      },
+      {
+        "ref_id": "22",
+        "text": "Gorissen, B.L.; Yanukoğlu, İ.; den Hertog, D. A practical guide to robust optimization. Omega 2015, 53, 124-137. [CrossRef]"
+      },
+      {
+        "ref_id": "23",
+        "text": "Available online: https://www.mathworks.com/help/stats/mvnrnd.html (accessed on 3 August 2021)."
+      },
+      {
+        "ref_id": "24",
+        "text": "Rustem, B.; Howe, M. Algorithms for Worst-Case Design and Applications to Risk Management; Princeton University Press: Princeton, NJ, USA, 2009."
+      },
+      {
+        "ref_id": "25",
+        "text": "Jensen, M.T. A new look at solving minimax problems with coevolutionary genetic algorithms. In Metaheuristics: Computer Decision-Making; Springer: Boston, MA, USA, 2003; pp. 369-384."
+      },
+      {
+        "ref_id": "26",
+        "text": "Wilcoxon, F. Individual comparisons by ranking methods. Biom. Bull. 1945, 1, 80-83. [CrossRef]"
+      },
+      {
+        "ref_id": "27",
+        "text": "Marzat, J.; Walter, E.; Piet-Lahanier, H. A new expected-improvement algorithm for continuous minimax optimization. J. Glob. Optim. 2016, 64, 785-802. [CrossRef]"
+      },
+      {
+        "ref_id": "28",
+        "text": "Brown, B.; Singh, T. Minimax design of vibration absorbers for linear damped systems. J. Sound Vib. 2011, 330, 2437-2448. [CrossRef]"
+      }
+    ],
+    "reference_count": 28,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Control parameters used in the reported results.",
+      "headers": [
+        "",
+        "Upper-Level",
+        "Lower-Level"
+      ],
+      "rows": [
+        [
+          "Population size",
+          "$\\max \\left(n_{x}+n_{y}, 5\\right) * 2$",
+          "$\\max \\left(n_{y}, 5\\right) * 2$"
+        ],
+        [
+          "Crossover",
+          0.9,
+          0.9
+        ],
+        [
+          "Mutation",
+          "uniformly $(0.2,0.8)$",
+          "uniformly $(0.2,0.8)$"
+        ],
+        [
+          "Desired Accuracy",
+          "$1 \\times 10^{-5}$",
+          "$1 \\times 10^{-5}$"
+        ],
+        [
+          "Maximum Number of Generations",
+          "-",
+          10
+        ],
+        [
+          "Maximum Number of Function Evaluations",
+          5000,
+          "-"
+        ],
+        [
+          "Maximum Number of Improvement Generations",
+          30,
+          "-"
+        ],
+        [
+          "Least Improvement",
+          "$1 \\times 10^{-5}$",
+          "-"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Accuracy comparison of the different instances of the algorithm over the 30 runs.",
+      "headers": [
+        "Problems",
+        "",
+        "$\\beta=0$",
+        "$\\beta=0.5$",
+        "$\\beta=0.8$"
+      ],
+      "rows": [
+        [
+          "$f_{1}$",
+          "Mean",
+          "$3.45 \\times 10^{-1}$",
+          "$2.77 \\times 10^{-5}$",
+          "$2.29 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "Median",
+          "$9.49 \\times 10^{-2}$",
+          "$3.33 \\times 10^{-5}$",
+          "$3.33 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "Std",
+          "$6.55 \\times 10^{-1}$",
+          "$3.43 \\times 10^{-5}$",
+          "$1.53 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "NA",
+          "$>0.05$"
+        ],
+        [
+          "",
+          "Median FEs",
+          20115,
+          28300,
+          46535
+        ],
+        [
+          "$f_{2}$",
+          "Mean",
+          "$1.11 \\times 10^{-1}$",
+          "$1.25 \\times 10^{-3}$",
+          "$1.28 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          "Median",
+          "$4.96 \\times 10^{-2}$",
+          "$5.53 \\times 10^{-6}$",
+          "$5.79 \\times 10^{-6}$"
+        ],
+        [
+          "",
+          "Std",
+          "$5.38 \\times 10^{-1}$",
+          "$4.27 \\times 10^{-3}$",
+          "$5.43 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "NA",
+          "$>0.05$"
+        ],
+        [
+          "",
+          "Median FEs",
+          20665,
+          16180,
+          17140
+        ],
+        [
+          "$f_{3}$",
+          "Mean",
+          "$1.64 \\times 10^{0}$",
+          "$2.27 \\times 10^{-3}$",
+          "$2.35 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "Median",
+          "$9.51 \\times 10^{-1}$",
+          "$1.86 \\times 10^{-5}$",
+          "$2.47 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "Std",
+          "$2.29 \\times 10^{0}$",
+          "$1.30 \\times 10^{-2}$",
+          "$8.35 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "NA",
+          "$>0.05$"
+        ],
+        [
+          "",
+          "Median FEs",
+          27535,
+          39830,
+          46785
+        ],
+        [
+          "$f_{4}$",
+          "Mean",
+          "$3.49 \\times 10^{-1}$",
+          "$2.93 \\times 10^{-5}$",
+          "$1.64 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          "Median",
+          "$2.27 \\times 10^{-1}$",
+          "$2.03 \\times 10^{-5}$",
+          "$3.39 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "Std",
+          "$4.49 \\times 10^{-1}$",
+          "$4.41 \\times 10^{-5}$",
+          "$8.88 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "NA",
+          "$>0.05$"
+        ],
+        [
+          "",
+          "Median FEs",
+          19940,
+          26478,
+          40516
+        ],
+        [
+          "$f_{5}$",
+          "Mean",
+          "$6.23 \\times 10^{-2}$",
+          "$9.95 \\times 10^{-4}$",
+          "$8.43 \\times 10^{-6}$"
+        ],
+        [
+          "",
+          "Median",
+          "$2.63 \\times 10^{-2}$",
+          "$2.99 \\times 10^{-4}$",
+          "$8.55 \\times 10^{-7}$"
+        ],
+        [
+          "",
+          "Std",
+          "$1.05 \\times 10^{-1}$",
+          "$4.18 \\times 10^{-3}$",
+          "$5.08 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "$>0.05$",
+          "NA"
+        ],
+        [
+          "",
+          "Median FEs",
+          38694,
+          78444,
+          97506
+        ]
+      ],
+      "row_count": 25,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Cont.",
+      "headers": [
+        "Problems",
+        "",
+        "$\\beta=0$",
+        "$\\beta=0.5$",
+        "$\\beta=0.8$"
+      ],
+      "rows": [
+        [
+          "$f_{6}$",
+          "Mean",
+          "$2.16 \\times 10^{-1}$",
+          "$1.96 \\times 10^{-3}$",
+          "$1.19 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "Median",
+          "$1.62 \\times 10^{-1}$",
+          "$7.86 \\times 10^{-6}$",
+          "$6.33 \\times 10^{-6}$"
+        ],
+        [
+          "",
+          "Std",
+          "$2.67 \\times 10^{-1}$",
+          "$6.74 \\times 10^{-3}$",
+          "$6.50 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "$>0.05$",
+          "NA"
+        ],
+        [
+          "",
+          "Median FEs",
+          55740,
+          69798,
+          77356
+        ],
+        [
+          "$f_{7}$",
+          "Mean",
+          "$5.57 \\times 10^{-1}$",
+          "$7.90 \\times 10^{-2}$",
+          "$7.90 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "Median",
+          "$4.76 \\times 10^{-1}$",
+          "$7.90 \\times 10^{-2}$",
+          "$7.90 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "Std",
+          "$3.75 \\times 10^{-1}$",
+          "$1.34 \\times 10^{-4}$",
+          "$9.54 \\times 10^{-6}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "NA",
+          "$\\leq \\mathbf{0 . 0 5}$"
+        ],
+        [
+          "",
+          "Median FEs",
+          143580,
+          360460,
+          541940
+        ],
+        [
+          "$f_{8}$",
+          "Mean",
+          "$9.27 \\times 10^{-6}$",
+          "$3.03 \\times 10^{-6}$",
+          "$3.34 \\times 10^{-6}$"
+        ],
+        [
+          "",
+          "Median",
+          "$6.16 \\times 10^{-6}$",
+          "$1.17 \\times 10^{-6}$",
+          "$2.12 \\times 10^{-6}$"
+        ],
+        [
+          "",
+          "Std",
+          "$1.99 \\times 10^{-5}$",
+          "$3.24 \\times 10^{-6}$",
+          "$3.23 \\times 10^{-6}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "NA",
+          "$>0.05$"
+        ],
+        [
+          "",
+          "Median FEs",
+          9120,
+          8150,
+          8070
+        ],
+        [
+          "$f_{9}$",
+          "Mean",
+          "$0.00 \\times 10^{0}$",
+          "$0.00 \\times 10^{0}$",
+          "$2.96 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          "Median",
+          "$0.00 \\times 10^{0}$",
+          "$0.00 \\times 10^{0}$",
+          "$0.00 \\times 10^{0}$"
+        ],
+        [
+          "",
+          "Std",
+          "$0.00 \\times 10^{0}$",
+          "$0.00 \\times 10^{0}$",
+          "$1.62 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "NaN",
+          "NA",
+          "$>0.05$"
+        ],
+        [
+          "",
+          "Median FEs",
+          3435,
+          3935,
+          3715
+        ],
+        [
+          "$f_{10}$",
+          "Mean",
+          "$7.54 \\times 10^{-6}$",
+          "$8.03 \\times 10^{-8}$",
+          "$8.74 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          "Median",
+          "$2.86 \\times 10^{-7}$",
+          "$2.98 \\times 10^{-7}$",
+          "$2.95 \\times 10^{-7}$"
+        ],
+        [
+          "",
+          "Std",
+          "$3.60 \\times 10^{-5}$",
+          "$4.96 \\times 10^{-7}$",
+          "$4.79 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "NA",
+          "$>0.05$",
+          "$>0.05$"
+        ],
+        [
+          "",
+          "FEs",
+          4435,
+          3995,
+          3880
+        ],
+        [
+          "$f_{11}$",
+          "Mean",
+          "$5.11 \\times 10^{-3}$",
+          "$3.62 \\times 10^{-3}$",
+          "$1.43 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "Median",
+          "$1.79 \\times 10^{-3}$",
+          "$2.95 \\times 10^{-4}$",
+          "$1.14 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "Std",
+          "$7.44 \\times 10^{-3}$",
+          "$8.06 \\times 10^{-3}$",
+          "$1.25 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$>0.05$",
+          "NA",
+          "$\\leq \\mathbf{0 . 0 5}$"
+        ],
+        [
+          "",
+          "FEs",
+          21965,
+          30480,
+          33485
+        ],
+        [
+          "$f_{12}$",
+          "Mean",
+          "$3.72 \\times 10^{-1}$",
+          "$5.21 \\times 10^{-1}$",
+          "$7.05 \\times 10^{-1}$"
+        ],
+        [
+          "",
+          "Median",
+          "$2.25 \\times 10^{-1}$",
+          "$4.77 \\times 10^{-1}$",
+          "$7.43 \\times 10^{-1}$"
+        ],
+        [
+          "",
+          "Std",
+          "$5.98 \\times 10^{-1}$",
+          "$5.23 \\times 10^{-1}$",
+          "$1.42 \\times 10^{-1}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "NA",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "$\\leq \\mathbf{0 . 0 5}$"
+        ],
+        [
+          "",
+          "Median FEs",
+          14945,
+          15795,
+          28210
+        ],
+        [
+          "$f_{13}$",
+          "Mean",
+          "$3.99 \\times 10^{-2}$",
+          "$2.42 \\times 10^{-2}$",
+          "$1.98 \\times 10^{-1}$"
+        ],
+        [
+          "",
+          "Median",
+          "$6.51 \\times 10^{-2}$",
+          "$1.82 \\times 10^{-4}$",
+          "$1.07 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "Std",
+          "$7.29 \\times 10^{-1}$",
+          "$1.21 \\times 10^{-1}$",
+          "$1.04 \\times 10^{0}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq \\mathbf{0 . 0 5}$",
+          "$>0.05$",
+          "NA"
+        ],
+        [
+          "",
+          "Median FEs",
+          22430,
+          56880,
+          61525
+        ]
+      ],
+      "row_count": 40,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "MSE Comparison with MMDE over 30 runs and $10^{4}$ FEs.",
+      "headers": [
+        "Problems",
+        "",
+        "$\\beta=0.5$",
+        "MMDE"
+      ],
+      "rows": [
+        [
+          "$f_{8}$",
+          "Mean",
+          "$2.0234 \\times 10^{-5}$",
+          "$2.6618 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "Median",
+          "$1.8269 \\times 10^{-7}$",
+          "$9.5487 \\times 10^{-6}$"
+        ],
+        [
+          "",
+          "Std",
+          "$7.5060 \\times 10^{-5}$",
+          "$6.1841 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "NA",
+          "$\\leq 0.05$"
+        ],
+        [
+          "$f_{9}$",
+          "Mean",
+          "$2.5849 \\times 10^{-1}$",
+          "$3.3719 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          "Median",
+          "$0.0000 \\times 10^{0}$",
+          "$0.0000 \\times 10^{0}$"
+        ],
+        [
+          "",
+          "Std",
+          "$9.6251 \\times 10^{-1}$",
+          "$1.1081 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "NA",
+          "$>0.05$"
+        ],
+        [
+          "$f_{10}$",
+          "Mean",
+          "$1.0029 \\times 10^{0}$",
+          "$5.1712 \\times 10^{-1}$"
+        ],
+        [
+          "",
+          "Median",
+          "$0.0000 \\times 10^{0}$",
+          "$0.0000 \\times 10^{0}$"
+        ],
+        [
+          "",
+          "Std",
+          "$2.8499 \\times 10^{0}$",
+          "$2.4408 \\times 10^{0}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "NA",
+          "$\\leq 0.05$"
+        ],
+        [
+          "$f_{11}$",
+          "Mean",
+          "$3.3428 \\times 10^{-1}$",
+          "$7.9495 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          "Median",
+          "$5.5485 \\times 10^{-2}$",
+          "$8.8027 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "Std",
+          "$8.7588 \\times 10^{-1}$",
+          "$1.4876 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq 0.05$",
+          "NA"
+        ],
+        [
+          "$f_{12}$",
+          "Mean",
+          "$8.1786 \\times 10^{-3}$",
+          "$1.1339 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "Median",
+          "$9.6258 \\times 10^{-5}$",
+          "$2.1344 \\times 10^{-6}$"
+        ],
+        [
+          "",
+          "Std",
+          "$1.9804 \\times 10^{-2}$",
+          "$3.2300 \\times 10^{-5}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq 0.05$",
+          "NA"
+        ],
+        [
+          "$f_{13}$",
+          "Mean",
+          "$5.0537 \\times 10^{-2}$",
+          "$5.5425 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          "Median",
+          "$1.9716 \\times 10^{-2}$",
+          "$2.7037 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          "Std",
+          "$7.7093 \\times 10^{-2}$",
+          "$7.7943 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$\\leq 0.05$",
+          "NA"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Statistical comparison with MMDE over 30 runs and $10^{4}$ FEs for the engineering application.",
+      "headers": [
+        "Problems",
+        "",
+        "$\\beta=0.5$",
+        "MMDE"
+      ],
+      "rows": [
+        [
+          "$\\operatorname{Acc}\\left(J_{\\text {minmax }}\\right)$",
+          "Mean",
+          "$1.7100 \\times 10^{-1}$",
+          "$1.0472 \\times 10^{-1}$"
+        ],
+        [
+          "",
+          "Median",
+          "$6.4784 \\times 10^{-2}$",
+          "$9.9247 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "Std",
+          "$2.6084 \\times 10^{-1}$",
+          "$6.0458 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "NA",
+          "$>0.05$"
+        ],
+        [
+          "$\\operatorname{MSE}(x)$",
+          "Mean",
+          "$1.4668 \\times 10^{-2}$",
+          "$7.6533 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          "Median",
+          "$6.4275 \\times 10^{-4}$",
+          "$3.6815 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          "Std",
+          "$5.1909 \\times 10^{-2}$",
+          "$7.6206 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          "$p$-value",
+          "$>0.05$",
+          "NA"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    }
+  ]
+}

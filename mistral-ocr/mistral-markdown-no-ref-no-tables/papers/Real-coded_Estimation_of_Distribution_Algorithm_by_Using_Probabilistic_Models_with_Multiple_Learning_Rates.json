@@ -1,0 +1,635 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Real-coded Estimation of Distribution Algorithm by Using Probabilistic Models with Multiple Learning Rates.md",
+    "filename": "Real-coded Estimation of Distribution Algorithm by Using Probabilistic Models with Multiple Learning Rates.md",
+    "title": "Real-coded Estimation of Distribution Algorithm by Using Probabilistic Models with Multiple Learning Rates",
+    "year": "2011"
+  },
+  "references": {
+    "header": "## Reference",
+    "content": "[1] Müehlenbein, H. and Paass, G.: From recombination of genes to the estimation of distributions I. Binary parameters., Parallel Problem Solving from Nature, pp. 178-187 (1996)\n[2] Larranaga, P. and Lozano, J. A. e.: Estimation of Distribution Algorithm, Kluwer Academic Publishers (2002)\n[3] Pelikan, M., Goldberg, D. E., and Lobo, F.: A survey of optimization by building and using probabilistic models., Technical report, Computational Optimization and Applications, 21(1), 5-20. Also IlliGAL Report, No. 99018 (2002)\n[4] Shumeet B.:Population-Based Incremental Learning: A Method for Integrating Genetic Search Based Function Optimization and Competitive Learning. Technical Report CMU-CS-94-163, Carnegie Mellon University (1994)\n[5] Jeremy S. De Bonet, Jr. Charles L. Isbell, and Paul Viola.: MIMIC: Finding Optima by Estimating Probability Densities. Advance in Neural Information Processing Systems, Vol. 9, pp. 424-430 (1997)\n[6] Martin P., David E. Goldberg, and Erick Cantú-Paz. BOA: The Bayesian Optimization Algorithm. Proc. Genetic and Evolutionary Computation Conference 1999, pp. 525-532 (1999)\n[7] Stephan Rudlof and Mario Köeppen.: Stochastic Hill Climbing with Learning by Vectors of Normal Distributions. Online Workshop on SOFT COMPUTING (1996)\n[8] P. Bosman and D. Thierens.: Continuous Iterated Density Estimation Evolutionary Algorithms Within The IDEA Framework. Proceedings of the OBUPM Workshop at the 2000 Genetic and Evolutionary Computation Conference, pp. 197-200 (2000)\n[9] Sebag, M. and Ducoulombier, A.: Extending population-based incremental learning to continuous search spaces, Proc. of the Parallel Problem Solving from Nature - PPSN V, pp. 418-427 (1998)\n[10] Goldberg, D. E.: Optimization and Machine Learning, Addison-Wesley Publishing Company (1989)\n[11] V. Scott G. and Darrell W. : Serial and Parallel Genetic Algorithms as Function Optimizers, Proceedings of the Fifth International Conference on Genetic Algorithms, pp. 177-183 (1993)\n[12] Higo, T. and Takadama, K.: Maintaining Multiple Populations with Different Diversities for Evolutionary Optimization Based on Probability Models, Information and Media Technologies, Vol. 3, No. 2, pp. 362-374 (2008)\n[13] Higo, T.: Research on the Importance Sampling Method for Evolutionary Algorithms Based on Probability Models, Ph.D. thesis, Tokyo Institute of Technology (2008)\n[14] Tomoyuki, H., Mitsunori, M., Masaki, S., Hisashi, S., Shigeyoshi, T., Jack, D.: Distributed Probabilistic Model-Building Genetic Algorithm, Proceedings of the 2003 Genetic and Evolutionary Computation Conference (2003)\n[15] Shigenobu, K.: The Frontiers of Real-coded Genetic Algorithms, Transactions of the Japanese Society for Artifical Intelligence Vol. 24 No. 1 SP-N, pp. 147-162 (2009)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Müehlenbein, H. and Paass, G.: From recombination of genes to the estimation of distributions I. Binary parameters., Parallel Problem Solving from Nature, pp. 178-187 (1996)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Larranaga, P. and Lozano, J. A. e.: Estimation of Distribution Algorithm, Kluwer Academic Publishers (2002)"
+      },
+      {
+        "ref_id": "3",
+        "text": "Pelikan, M., Goldberg, D. E., and Lobo, F.: A survey of optimization by building and using probabilistic models., Technical report, Computational Optimization and Applications, 21(1), 5-20. Also IlliGAL Report, No. 99018 (2002)"
+      },
+      {
+        "ref_id": "4",
+        "text": "Shumeet B.:Population-Based Incremental Learning: A Method for Integrating Genetic Search Based Function Optimization and Competitive Learning. Technical Report CMU-CS-94-163, Carnegie Mellon University (1994)"
+      },
+      {
+        "ref_id": "5",
+        "text": "Jeremy S. De Bonet, Jr. Charles L. Isbell, and Paul Viola.: MIMIC: Finding Optima by Estimating Probability Densities. Advance in Neural Information Processing Systems, Vol. 9, pp. 424-430 (1997)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Martin P., David E. Goldberg, and Erick Cantú-Paz. BOA: The Bayesian Optimization Algorithm. Proc. Genetic and Evolutionary Computation Conference 1999, pp. 525-532 (1999)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Stephan Rudlof and Mario Köeppen.: Stochastic Hill Climbing with Learning by Vectors of Normal Distributions. Online Workshop on SOFT COMPUTING (1996)"
+      },
+      {
+        "ref_id": "8",
+        "text": "P. Bosman and D. Thierens.: Continuous Iterated Density Estimation Evolutionary Algorithms Within The IDEA Framework. Proceedings of the OBUPM Workshop at the 2000 Genetic and Evolutionary Computation Conference, pp. 197-200 (2000)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Sebag, M. and Ducoulombier, A.: Extending population-based incremental learning to continuous search spaces, Proc. of the Parallel Problem Solving from Nature - PPSN V, pp. 418-427 (1998)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Goldberg, D. E.: Optimization and Machine Learning, Addison-Wesley Publishing Company (1989)"
+      },
+      {
+        "ref_id": "11",
+        "text": "V. Scott G. and Darrell W. : Serial and Parallel Genetic Algorithms as Function Optimizers, Proceedings of the Fifth International Conference on Genetic Algorithms, pp. 177-183 (1993)"
+      },
+      {
+        "ref_id": "12",
+        "text": "Higo, T. and Takadama, K.: Maintaining Multiple Populations with Different Diversities for Evolutionary Optimization Based on Probability Models, Information and Media Technologies, Vol. 3, No. 2, pp. 362-374 (2008)"
+      },
+      {
+        "ref_id": "13",
+        "text": "Higo, T.: Research on the Importance Sampling Method for Evolutionary Algorithms Based on Probability Models, Ph.D. thesis, Tokyo Institute of Technology (2008)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Tomoyuki, H., Mitsunori, M., Masaki, S., Hisashi, S., Shigeyoshi, T., Jack, D.: Distributed Probabilistic Model-Building Genetic Algorithm, Proceedings of the 2003 Genetic and Evolutionary Computation Conference (2003)"
+      },
+      {
+        "ref_id": "15",
+        "text": "Shigenobu, K.: The Frontiers of Real-coded Genetic Algorithms, Transactions of the Japanese Society for Artifical Intelligence Vol. 24 No. 1 SP-N, pp. 147-162 (2009)"
+      }
+    ],
+    "reference_count": 15,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test functions",
+      "headers": [
+        "Function <br> Name",
+        "Formula ( $S$ is design variable domain)",
+        "Dependency",
+        "Feature"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "$\\sum_{i=1}^{n} x_{i}^{2} \\quad S=[-5.12,5.12]^{n}$",
+          "No",
+          "most basic function"
+        ],
+        [
+          "Ellipsoid",
+          "$\\sum_{i=1}^{n}\\left(1000^{i-1 / n-1} x_{i}\\right)^{2} \\quad S=[-5.12,5.12]^{n}$",
+          "",
+          "weaker ill-scaled single-peak function"
+        ],
+        [
+          "$k$-tablet",
+          "$\\sum_{i=1}^{k} x_{i}^{2}+\\sum_{i=k+1}^{n}\\left(100 x_{i}\\right)^{2} \\quad(k=n / 4) \\quad S=[-5.12,5.12]^{n}$",
+          "",
+          "stronger ill-scaled single-peak function"
+        ],
+        [
+          "Ackley",
+          "$\\begin{aligned} & 20-20 \\exp \\left(-0.2 \\sqrt{1 / n} \\sum_{i=1}^{n} x_{i}^{2}\\right)+e \\\\ & -\\exp \\left(1 / n \\sum_{i=1}^{n} \\cos \\left(2 \\pi x_{i}\\right)\\right) \\quad S=[-32.768,32.768]^{n} \\end{aligned}$",
+          "",
+          "weaker multi-peak function"
+        ],
+        [
+          -1.0,
+          "$\\begin{aligned} & 10 n+\\sum_{i=1}^{n}\\left(\\left(x_{i}-1.0\\right)^{2}-10 \\cos \\left(2 \\pi\\left(x_{i}-1.0\\right)\\right)\\right) \\\\ & S=[-5.12,5.12]^{n} \\end{aligned}$",
+          "",
+          "stronger multi-peak function"
+        ],
+        [
+          "Bohachevsky",
+          "$\\begin{aligned} & \\sum_{i=1}^{n-1}\\left(x_{i}^{2}+2 x_{i+1}^{2}-0.3 \\cos \\left(3 \\pi x_{i}\\right)-0.4 \\cos \\left(4 \\pi x_{i+1}\\right)\\right. \\\\ & +0.7) \\quad S=[-5.12,5.12]^{n} \\end{aligned}$",
+          "",
+          "weaker multi-peak function"
+        ],
+        [
+          "Griewank",
+          "$1.0+\\sum_{i=1}^{n} \\frac{x_{i}^{2}}{4000}-\\prod_{i=1}^{n}\\left(\\cos \\left(\\frac{x_{i}}{4 x_{i}}\\right)\\right) \\quad S=[-512,512]^{n}$",
+          "Yes",
+          "same as above"
+        ],
+        [
+          "Ridge",
+          "$\\sum_{i=1}^{n}\\left(\\sum_{j=1}^{i} x_{j}\\right)^{2} \\quad S=[-64,64]^{n}$",
+          "",
+          "the good area is along straight line"
+        ],
+        [
+          "Rosenbrock -Chain",
+          "$\\sum_{i=1}^{n-1}\\left(100\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(x_{i}-1.0\\right)^{2}\\right) \\quad S=[-2.048,2.048]^{n}$",
+          "",
+          "strong dependence is between adjoined variables"
+        ],
+        [
+          "Rosenbrock -Star",
+          "$\\sum_{i=1}^{n-1}\\left(100\\left(x_{1}-x_{i}^{2}\\right)^{2}+\\left(x_{i}-1.0\\right)^{2}\\right) \\quad S=[-2.048,2.048]^{n}$",
+          "",
+          "strong dependence is between $x_{1}$ and other variables"
+        ],
+        [
+          "Schaffer",
+          "$\\begin{aligned} & \\sum_{i=1}^{n-1}\\left(x_{i}^{2}+x_{i+1}^{2}\\right)^{0.25} \\times\\left(\\sin ^{2}\\left(50\\left(x_{i}^{2}+x_{i+1}^{2}\\right)^{0.1}\\right)+1.0\\right) \\\\ & S=[-100,100]^{n} \\end{aligned}$",
+          "",
+          "suboptimal solutions are in a circular pattern"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Parameters of RMM",
+      "headers": [
+        "Couple of probabilistic <br> model and populations $L$",
+        "$4,6,8,10$"
+      ],
+      "rows": [
+        [
+          "Search points generated by <br> one probabilistic model $C$",
+          "$5,10,15,20,25,30$"
+        ],
+        [
+          "Cutting rate $K$",
+          "$0.75,0.66,0.50$,"
+        ],
+        [
+          "Maximum learning rate $\\beta_{1}$",
+          "$0.33,0.25,0.20$"
+        ],
+        [
+          "Minimum learning rate $\\beta_{L}$",
+          "$0.001,0.002, \\cdots, 0.009$"
+        ],
+        [
+          "",
+          "$0.01,0.02, \\cdots, 0.09$"
+        ],
+        [
+          "",
+          "$0.10,0.15, \\cdots, 0.50$"
+        ],
+        [
+          "",
+          "same as above"
+        ],
+        [
+          "",
+          "(only $\\beta_{1}>\\beta_{L}$)"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Parameters of DPMBGA",
+      "headers": [
+        "Search points",
+        "512"
+      ],
+      "rows": [
+        [
+          "Cutting rate",
+          0.25
+        ],
+        [
+          "Elites",
+          1
+        ],
+        [
+          "Islands",
+          32
+        ],
+        [
+          "Rate of immigration",
+          0.0625
+        ],
+        [
+          "Interval of immigration",
+          5
+        ],
+        [
+          "Archive size",
+          100
+        ],
+        [
+          "Amplification Rate",
+          2.0
+        ],
+        [
+          "Mutation rate",
+          0.05
+        ],
+        [
+          "Independent component",
+          "ON (if the function"
+        ],
+        [
+          "analysis",
+          "with dependency)"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Parameters of PBILc",
+      "headers": [
+        "Search points $P$",
+        "$20,40, \\cdots, 300$"
+      ],
+      "rows": [
+        [
+          "Cutting rate $K$",
+          "The same cutting rate"
+        ],
+        [
+          "",
+          2
+        ],
+        [
+          "Learning rate $\\alpha$",
+          "The same maximum learning"
+        ],
+        [
+          "",
+          2
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Results",
+      "headers": [
+        "Func.",
+        "RMM",
+        "PBILc",
+        "DPMBGA",
+        "$\\mathrm{REX}^{\\text {star }}$"
+      ],
+      "rows": [
+        [
+          "Sph.",
+          "$3.4 \\times 10^{3}$",
+          "$\\mathbf{2 . 8} \\times \\mathbf{1 0}^{\\mathbf{3}}$",
+          "$1.3 \\times 10^{5}$",
+          "$6.9 \\times 10^{3}$"
+        ],
+        [
+          "Elli.",
+          "$1.0 \\times 10^{4}$",
+          "$3.3 \\times 10^{4}$",
+          "$1.7 \\times 10^{5}$",
+          "$\\mathbf{8 . 5} \\times \\mathbf{1 0}^{\\mathbf{3}}$"
+        ],
+        [
+          "$k$-tab.",
+          "$\\mathbf{8 . 4} \\times \\mathbf{1 0}^{\\mathbf{3}}$",
+          "$3.0 \\times 10^{4}$",
+          "$1.6 \\times 10^{5}$",
+          "$1.1 \\times 10^{4}$"
+        ],
+        [
+          "Ackl.",
+          "$\\mathbf{6 . 9} \\times \\mathbf{1 0}^{\\mathbf{3}}$",
+          "$7.7 \\times 10^{3}$",
+          "$2.7 \\times 10^{5}$",
+          "$1.4 \\times 10^{4}$"
+        ],
+        [
+          "Rast.",
+          "$\\mathbf{1 . 2} \\times \\mathbf{1 0}^{\\mathbf{5}}$",
+          "$1.4 \\times 10^{5}$",
+          "$6.0 \\times 10^{5}$",
+          "$\\mathbf{1 . 2} \\times \\mathbf{1 0}^{\\mathbf{5}}$"
+        ],
+        [
+          "Schw.",
+          "$\\mathbf{1 . 1} \\times \\mathbf{1 0}^{\\mathbf{5}}$",
+          "$1.4 \\times 10^{6}$",
+          "$8.0 \\times 10^{5}$",
+          "(No Data)"
+        ],
+        [
+          "Boha.",
+          "$6.4 \\times 10^{3}$",
+          "$\\mathbf{6 . 2} \\times \\mathbf{1 0}^{\\mathbf{3}}$",
+          "$1.6 \\times 10^{5}$",
+          "$1.5 \\times 10^{4}$"
+        ],
+        [
+          "Grie.",
+          "$\\mathbf{5 . 8} \\times \\mathbf{1 0}^{\\mathbf{3}}$",
+          "$8.6 \\times 10^{3}$",
+          "$3.0 \\times 10^{5}$",
+          "(No Data)"
+        ],
+        [
+          "Ridg.",
+          "$\\mathbf{5 . 4} \\times \\mathbf{1 0}^{\\mathbf{4}}$",
+          "$9.1 \\times 10^{4}$",
+          "$3.5 \\times 10^{5}$",
+          "(No Data)"
+        ],
+        [
+          "$\\mathrm{R}_{\\text {Chain }}$",
+          "$1.3 \\times 10^{5}$",
+          "-",
+          "$9.5 \\times 10^{5}$",
+          "$\\mathbf{4 . 7} \\times \\mathbf{1 0}^{\\mathbf{4}}$"
+        ],
+        [
+          "$\\mathrm{R}_{\\text {Star }}$",
+          "$6.3 \\times 10^{4}$",
+          "-",
+          "$4.5 \\times 10^{5}$",
+          "$\\mathbf{5 . 5} \\times \\mathbf{1 0}^{\\mathbf{4}}$"
+        ],
+        [
+          "Scha.",
+          "$\\mathbf{5 . 4} \\times \\mathbf{1 0}^{\\mathbf{4}}$",
+          "$9.4 \\times 10^{4}$",
+          "-",
+          "$7.7 \\times 10^{4}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "The best parameters of RMM",
+      "headers": [
+        "Function",
+        "$L$",
+        "$C$",
+        "$K$",
+        "$\\beta_{1}$",
+        "$\\beta_{L}$"
+      ],
+      "rows": [
+        [
+          "Sphe.",
+          4,
+          5,
+          0.33,
+          0.25,
+          0.2
+        ],
+        [
+          "Elli.",
+          10,
+          5,
+          0.33,
+          0.45,
+          0.35
+        ],
+        [
+          "$k$-tab.",
+          8,
+          5,
+          0.33,
+          0.3,
+          0.25
+        ],
+        [
+          "Ackl.",
+          4,
+          5,
+          0.33,
+          0.35,
+          0.15
+        ],
+        [
+          "Rast.",
+          4,
+          5,
+          0.5,
+          0.01,
+          0.009
+        ],
+        [
+          "Schw.",
+          10,
+          10,
+          0.66,
+          0.25,
+          0.2
+        ],
+        [
+          "Boha.",
+          8,
+          5,
+          0.25,
+          0.35,
+          0.2
+        ],
+        [
+          "Grie.",
+          6,
+          5,
+          0.33,
+          0.45,
+          0.25
+        ],
+        [
+          "Ridg.",
+          4,
+          5,
+          0.5,
+          0.5,
+          0.05
+        ],
+        [
+          "$\\mathrm{R}_{\\text {Chain }}$",
+          4,
+          5,
+          0.5,
+          0.5,
+          0.04
+        ],
+        [
+          "$\\mathrm{R}_{\\text {Star }}$",
+          4,
+          10,
+          0.25,
+          0.5,
+          0.05
+        ],
+        [
+          "Scha.",
+          6,
+          10,
+          0.25,
+          0.3,
+          0.25
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "7",
+      "table_title": "Number of probabilistic models and search capability",
+      "headers": [
+        "Function",
+        "$L=4$",
+        "$L=6$",
+        "$L=8$",
+        "$L=10$"
+      ],
+      "rows": [
+        [
+          "Rast.",
+          2020,
+          2020,
+          2020,
+          "$\\mathbf{2 0 / 2 0}$"
+        ],
+        [
+          "",
+          "$1.5 \\times 10^{6}$",
+          "$1.3 \\times 10^{6}$",
+          "$1.2 \\times 10^{6}$",
+          "$\\mathbf{1 . 1} \\times \\mathbf{1 0}^{\\mathbf{6}}$"
+        ],
+        [
+          "Schw.",
+          820,
+          1320,
+          1620,
+          "$\\mathbf{1 9 / 2 0}$"
+        ],
+        [
+          "",
+          "$1.3 \\times 10^{5}$",
+          "$1.4 \\times 10^{5}$",
+          "$1.4 \\times 10^{5}$",
+          "$\\mathbf{1 . 4} \\times \\mathbf{1 0}^{\\mathbf{7}}$"
+        ],
+        [
+          "Ridg.",
+          "$\\mathbf{2 0 / 2 0}$",
+          "$0 / 20$",
+          "$0 / 20$",
+          "$0 / 20$"
+        ],
+        [
+          "",
+          "$\\mathbf{2 0} \\times \\mathbf{1 0}^{\\mathbf{6}}$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\mathrm{R}_{\\text {Chain }}$",
+          "$\\mathbf{2 0 / 2 0}$",
+          2020,
+          2020,
+          2020
+        ],
+        [
+          "",
+          "$\\mathbf{9 . 4} \\times \\mathbf{1 0}^{\\mathbf{8}}$",
+          "$1.0 \\times 10^{6}$",
+          "$1.8 \\times 10^{6}$",
+          "$2.8 \\times 10^{6}$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "8",
+      "table_title": "The best 10 performance parameters in single-peak functions",
+      "headers": [
+        "Function",
+        "Dependency",
+        "$L$",
+        "$C$",
+        "$K$",
+        "$\\beta_{1}$",
+        "$\\beta_{L}$"
+      ],
+      "rows": [
+        [
+          "Sphe.",
+          "",
+          46,
+          5,
+          "$0.20 \\sim 0.33$",
+          "$0.20-0.50$",
+          "$0.10 \\sim 0.40$"
+        ],
+        [
+          "Elli.",
+          "No",
+          "$4 \\sim 10$",
+          5,
+          "$0.33 \\sim 0.66$",
+          "$0.25 \\sim 0.50$",
+          "$0.15 \\sim 0.45$"
+        ],
+        [
+          "$k$-tab.",
+          "",
+          "$4 \\sim 10$",
+          5,
+          "$0.33 \\sim 0.66$",
+          "$0.30 \\sim 0.50$",
+          "$0.15 \\sim .35$"
+        ],
+        [
+          "Ridg.",
+          "",
+          4,
+          510,
+          "$0.25 \\sim 0.66$",
+          "$0.35 \\sim 0.50$",
+          "$0.03 \\sim 0.10$"
+        ],
+        [
+          "$\\mathrm{R}_{\\text {Chain }}$",
+          "Yes",
+          4,
+          510,
+          "$0.33 \\sim 0.66$",
+          "$0.40 \\sim 0.50$",
+          "$0.02 \\sim 0.05$"
+        ],
+        [
+          "$\\mathrm{R}_{\\text {Star }}$",
+          "",
+          4,
+          1015,
+          "$0.20 \\sim 0.33$",
+          "$0.45 \\sim 0.50$",
+          "$0.03 \\sim 0.06$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Bayesian networks for interpretable machine learning and optimization.md",
+    "filename": "Bayesian networks for interpretable machine learning and optimization.md",
+    "title": "Bayesian networks for interpretable machine learning and optimization",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] M.I. Jordan, T.M. Mitchell, Machine learning: Trends, perspectives, and prospects, Science 349 (2015) 255-260.\n[2] D. Castelvecchi, Can we open the black box of AI?, Nat. News 538 (2016) 20.\n[3] C. Rudin, Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead, Nat. Mach. Intell. 1 (2019) $200-215$.\n[4] B. Goodman, S. Flaxman, European union regulations on algorithmic decisionmaking and a \"right to explanation\", AI Mag. 38 (2017) 50-57.\n[5] A. Jobin, M. Ienca, E. Vayena, The global landscape of AI ethics guidelines, Nat. Mach. Intell. 1 (2019) 389-399.\n[6] E. Tjoa, C. Guan, A survey on explainable artificial intelligence (XAI): Toward medical XAI, IEEE Trans. Neural Networks Learn. Syst. (2020).\n[7] D. Szafron, P. Lu, R. Greiner, D.S. Wishart, B. Poulin, R. Eisner, Z. Lu, J. Anvik, C. Macdonell, A. Fyshe, et al., Proteome analyst: Custom predictions with explanations in a web-based tool for high-throughput proteome annotations, Nucl. Acids Res. 32 (2004) W365-W371.\n[8] V. Dhar, D. Chou, F. Provent, Discovering interesting patterns for investment decision making with GLOWER: A genetic learner overlaid with entropy reduction, Data Min. Knowl. Disc. 4 (2000) 251-280.\n[9] J. Zhu, A. Liapis, S. Risi, R. Bidarra, G.M. Youngblood, Explainable AI for designers: A human-centered perspective on mixed-initiative co-creation, in: 2018 IEEE Conference on Computational Intelligence and Games, IEEE, pp. 18 .\n[10] K. Sachs, O. Perez, D. Pe'er, D.A. Lauffenburger, G.P. Nolan, Causal proteinsignaling networks derived from multiparameter single-cell data, Science 308 (2005) 523-529.\n[11] D. Gunning, Explainable artificial intelligence (XAI), Technical Report DARPA-BAA-16-53, DARPA, 2016..\n[12] W. Samek, T. Wiegand, K.-R. Müller, Explainable artificial intelligence: Understanding, visualizing and interpreting deep learning models, arXiv preprint arXiv:1708.08296 (2017).\n[13] R. Guidotti, A. Monreale, S. Ruggieri, F. Turini, F. Giannotti, D. Pedreschi, A survey of methods for explaining black box models, ACM Comput. Surv. 51 (2018) 1-42.\n[14] Z.C. Lipton, The mythos of model interpretability, Queue 16 (2018) 31-57.\n[15] F. Doshi-Velez, B. Kim, Towards a rigorous science of interpretable machine learning, arXiv preprint arXiv:1702.08608 (2017).\n[16] A.B. Arrieta, N. Díaz-Rodríguez, J. Del Ser, A. Bennetot, S. Tabik, A. Barbado, S. García, S. Gil-López, D. Molina, R. Benjamins, et al., Explainable artificial intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI, Inf. Fus. 58 (2020) 82-115.\n[17] W.J. Murdoch, C. Singh, K. Kumbier, R. Abbasi-Asl, B. Yu, Definitions, methods, and applications in interpretable machine learning, Proc. Nat. Acad. Sci. 116 (2019) 22071-22080.\n[18] A. Preece, D. Harborne, D. Braines, R. Tomsett, S. Chakraborty, Stakeholders in explainable AI, arXiv preprint arXiv:1810.00184 (2018).\n[19] M.T. Ribeiro, S. Singh, C. Guestrin, Why should I trust you? Explaining the predictions of any classifier, in: Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pp. $1135-1144$.\n[20] J. Huysmans, K. Dejaeger, C. Mues, J. Vanthienen, B. Baesens, An empirical evaluation of the comprehensibility of decision table, tree and rule based predictive models, Decis. Support Syst. 51 (2011) 141-154.\n[21] A.A. Freitas, Comprehensible classification models: A position paper, ACM SIGKDD Explorations Newsletter 15 (2014) 1-10.\n[22] D.J. Hand, Classifier technology and the illusion of progress, Stat. Sci. (2006) $1-14$.\n[23] E.T. Jaynes, Probability Theory: The Logic of Science, Cambridge University Press, 2003.\n[24] J. Pearl, Probabilistic Reasoning in Intelligent Systems, Morgan Kaufmann, 1988.\n[25] D. Koller, N. Friedman, Probabilistic Graphical Models: Principles and Techniques, MIT Press, 2009.\n[26] M. Maathuis, M. Drton, S. Lauritzen, M. Wainwright, Handbook of Graphical Models, CRC Press, 2019.\n[27] D. Heckerman, E. Horvitz, K. Ng, B. Nathwani, Towards normative expert systems: Part I, Pathfinder Project, Methods Inf. Med. 31 (1992) 90-105.\n[28] S. Andreassen, F.V. Jensen, S.K. Andersen, B. Falck, U. Kjætrulff, M. Woldhye, A. Sørensen, A. Rosenfalck, F. Jensen, MUNDI: An expert EMC Assistant, in: Computer-aided Electromyography and Expert Systems, Pergamon Press, 1989, pp. 255-277.\n[29] M.A. Shwe, B. Middleton, D.E. Heckerman, M. Henrion, E.J. Horvitz, H.P. Lehmann, G.F. Cooper, Probabilistic diagnosis using a reformulation of the INTERNIST-1/QMR knowledge base, Methods Inf. Med. 30 (1991) 241-255.\n[30] A. Rajkomar, J. Dean, I. Kohane, Machine learning in medicine, New Engl. J. Med. 380 (2019) 1347-1358.\n[31] A. Dannenberg, A. Shapiro, J. Fries, Enhancement of clinical predictive ability by computer consultation, Methods Inf. Med. 18 (1979) 10-14.\n[32] R.L. Teach, E.H. Shortliffe, An analysis of physician attitudes regarding computer-based clinical consultation systems, Comput. Biomed. Res. 14 (1981) 542-558.\n[33] B.G. Buchanan, E.H. Shortliffe, Rule-based expert systems: The MYCIN Experiments of the Stanford Heuristic Programming Project, AddisonWesley, 1984.\n[34] W.J. Clancey, Use of MYCIN's rules for tutoring, Rule-Based Expert Systems. Addison-Wesley, Reading 20 (1984).\n[35] A. Tversky, D. Kahneman, Judgment under uncertainty: Heuristics and biases, Science 185 (1974) 1124-1131.\n[36] P.C. Wason, P.N. Johnson-Laird, Psychology of Reasoning: Structure and Content, volume 86, Harvard University Press, 1972.\n[37] C. Lacave, F.J. Diez, A review of explanation methods for Bayesian networks, Knowledge Eng. Rev. 17 (2002) 107-127.\n[38] E.-G. Talbi, Metaheuristics, Wiley, From Design to Implementation, 2009.\n[39] H. Mühlenbein, G. Paall, From recombination of genes to the estimation of distributions. I. Binary parameters, in: Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature, pp. 178-187.\n[40] P.A. Bosman, D. Thierens, Linkage information processing in distribution estimation algorithms, in: Proceedings of the Genetic and Evolutionary Computation Conference, volume I, pp. 60-67.\n[41] P. Larrañaga, J.A. Lozano (Eds.), Estimation of Distribution Algorithms: A new Tool for Evolutionary Computation, Springer, 2001.\n[42] J.A. Lozano, P. Larrañaga, I. Issa, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, volume 192, Springer, 2006.\n\n[43] C. Bielza, P. Larrañaga, Data-Driven Computational Neuroscience: Machine Learning and Statistical Models, Cambridge University Press, 2020.\n[44] G.F. Cooper, The computational complexity of probabilistic inference using Bayesian belief networks, Artif. Intell. 42 (1990) 393-405.\n[45] J.S. Shimony, Finding MAPs for belief networks is NP-hard, Artif. Intell. 68 (1994) 399-410.\n[46] S. Arnborg, D. Corneil, A. Proskurowski, Complexity of finding embeddings in a k-tree, SIAM J, Algebraic Discrete Methods 8 (1987) 277-284.\n[47] S. Lauritzen, D. Spiegelhalter, Local computations with probabilities on graphical structures and their application to expert systems, J. R. Stat. Soc. Ser. B (Methodol.) 50 (1988) 157-224.\n[48] A. Darwiche, A differential approach to inference in Bayesian networks, J. ACM 50 (2003) 280-305.\n[49] P. Dagum, M. Luby, Approximating probabilistic inference in Bayesian belief networks is NP-hard, Artif. Intell. 60 (1993) 141-153.\n[50] M. Henrion, Propagating uncertainty in Bayesian networks by probabilistic logic sampling, in: Uncertainty in Artificial Intelligence 2, pp. 149-163.\n[51] R. Fung, K.-C. Chang, Weighing and integrating evidence for stochastic simulation in Bayesian networks, in: Uncertainty in Artificial Intelligence, North-Holland, 1990, pp. 209-219.\n[52] R. Shachter, M. Peot, Simulation approaches to general probabilistic inference on belief networks, in: Uncertainty in Artificial Intelligence 5, North-Holland, 1990, pp. 221-231.\n[53] B. Mihaljević, P. Larrañaga, R. Benavides-Piccione, J. Defelipe, C. Bielza, Computing basal dendrite branches in human and mouse hippocampal CA1 pyramidal neurons with Bayesian networks, Scientific Reports 10 (2020) 10592.\n[54] D. Heckerman, D.M. Chickering, C. Meek, R. Rounthwaite, C. Kadie, Dependency networks for inference, collaborative filtering, and data visualization, J. Mach. Learn. Res. 1 (2000) 49-75.\n[55] M. Henrion, M.J. Druzdzel, Uncertainty in Artificial Intelligence, Elsevier, 1991, pp. 17-32.\n[56] I. Good, Weight of evidence: A brief survey, with discussion, Bayesian Stat. 2 (1985) 249-270.\n[57] D. Madigan, K. Mosurski, R.G. Almond, Graphical explanation in belief networks, Journal of Computational and Graphical Statistics 6 (1997) 160-181.\n[58] G.F. Cooper, NESTOR: A Computer-Based Medical Diagnostic Aid That Integrates Causal and Probabilistic Knowledge, Ph.D. thesis, Stanford, 1984.\n[59] H.J. Suermondt, Explanation in Bayesian Belief Networks, Ph.D. thesis, Stanford, 1993.\n[60] P. Lipton, Inference to the Best Explanation, Routledge. 2003.\n[61] S.E. Shimony, Explanation, irrelevance and statistical independence, in: Proceedings of the Ninth National Conference on Artificial intelligenceVolume 1, pp. 482-487.\n[62] J. Kwoithour, Most frugal explanations in Bayesian networks, Artif. Intell. 218 (2015) 56-73.\n[63] M.J. Flores, J.A. Gámez, S. Moral, Abductive inference in Bayesian networks: Finding a partition of the explanation space, in: European Conference on Symbolic and Quantitative Approaches to Reasoning and Uncertainty, Springer, pp. 63-75.\n[64] C. Yuan, H. Lim, T.-C. Lu, Most relevant explanation in Bayesian networks, J. Artif. Intell. Res. 42 (2011) 309-352.\n[65] J.N. Schupbach, J. Sprenger, The logic of explanatory power, Phil. Sci. 78 (2011) 105-127.\n[66] V. Crupi, K. Tentori, A second look at the logic of explanatory power, with two novel representation theorems, Phil. Sci. 79 (2012) 365-385.\n[67] L.M. De Campos, J.A. Gámez, S. Moral, Simplifying explanations in Bayesian belief networks, International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems 9 (2001) 461-489.\n[68] D.H. Glass, Coherence, explanation, and hypothesis selection, The British Journal for the Philosophy of Science (2018), Asyl63.\n[69] C. Glymour, Probability and the explanatory virtues, British J. Phil. Sci. 66 (2015) 591-604.\n[70] P. Spirtes, C. Glymour, An algorithm for fast recovery of sparse causal graphs, Soci. Sci. Comput. Rev. 90 (1991) 62-72.\n[71] C. Aliferis, A. Statnikov, I. Tsamardinos, S. Mani, X. Koutsoukos, Local causal and Markov blanket induction for causal discovery and feature selection for classification, Part I: Algorithms and empirical evaluation, J. Mach. Learn. Res. 11 (2010) 171-234.\n[72] C. Aliferis, A. Statnikov, I. Tsamardinos, S. Mani, X. Koutsoukos, Local causal and Markov blanket induction for causal discovery and feature selection for classification, Part II: Analysis and extensions, J. Mach. Learn. Res. 11 (2010) 235-284.\n[73] D. Margaritis, Learning Bayesian Network Model Structure from Data, Ph.D. thesis, Carnegie-Melliot University, 2003.\n[74] F. Glover, M. Laguna, Tahn Search, in: P.M. Pardalos, D.-Z. Du, R.L. Graham (Eds.), Handbook of Combinatorial Optimization, Springer, 2013, pp. 32613362.\n[75] P. Larrañaga, M. Poza, Y. Yurramendi, R. Murga, C. Kuijpers, Structure learning of Bayesian networks by genetic algorithms: A performance analysis of control parameters, IEEE Trans. Pattern Anal. Mach. Intell. 18 (1996) 912926.\n[76] G. Schwarz, Estimating the dimension of a model, Ann. Stat. 6 (1978) 461464.\n[77] A.P. Dempster, N.M. Laird, D.B. Rubin, Maximum likelihood from incomplete data via the EM algorithm, J. R. Stat. Soc. Ser. B (Methodol.) 39 (1977) 1-38.\n[78] C. Bielza, P. Larrañaga, Discrete Bayesian network classifiers: A survey, ACM Comput. Surv. 47 (2014).\n[79] B. Mihaljević, C. Bielza, P. Larrañaga, Inclassify: Learning Bayesian network classifiers, B J. 10 (2018) 455-468.\n[80] N. Friedman, D. Geiger, M. Goldszmidt, Bayesian network classifiers, Mach. Learn. 29 (1997) 131-163.\n[81] M. Minsky, Steps toward artificial intelligence, Trans. Inst. Radio Engrs. 49 (1961) 8-30.\n[82] M. Sahami, Learning limited dependence Bayesian classifiers, in: Proceedings of the 2nd International Conference on Knowledge Discovery and Data Mining, volume 98, pp. 335-338.\n[83] F. Pernkopf, P. O'Leary, Floating search algorithm for structure learning of Bayesian network classifiers, Pattern Recogn. Lett. 24 (2003) 2839-2848.\n[84] M. Jaeger, Probabilistic classifiers and the concept they recognize, in: Proceedings of the 20th International Conference on Machine Learning ICML, 2003, pp. 266-273.\n[85] G. Varando, C. Bielza, P. Larrañaga, Decision boundary for discrete Bayesian network classifiers, J. Mach. Learn. Res. 16 (2015) 2725-2749.\n[86] E.J. Keogh, M.J. Pazzani, Learning the structure of augmented Bayesian classifiers, Int. J. Artif. Intell. Tools 11 (2002) 587-601.\n[87] M. Pazzani, Constructive induction of Cartesian product attributes, in: Proceedings of the Information, Statistics and Induction in Science Conference, pp. 66-77.\n[88] I. Guyon, A. Elisseeff, An introduction to variable and feature selection, J. Mach. Learn. Res. 3 (2003) 1157-1182.\n[89] C. Chow, C. Liu, Approximating discrete probability distributions with dependence trees, IEEE Trans. Inf. Theory 14 (1968) 462-467.\n[90] C. Bielza, G. Li, P. Larra naga, Multi-dimensional classification with Bayesian networks, Int. J. Approximate Reasoning 52 (2011) 705-727.\n[91] S. Gil-Regue, C. Bielza, P. Larrañaga, Multi-dimensional Bayesian network classifiers: A survey, Artif. Intell. Rev. (2020) 1-41.\n[92] T. Dean, K. Kanazawa, A model for reasoning about persistence and causation, Comput. Intell. 5 (1989) 142-150.\n[93] K.P. Murphy, Dynamic Bayesian Networks: Representation, Inference and Learning, Ph.D. thesis, University of California at Berkeley, 2002.\n[94] N. Friedman, R. Murphy, S. Russell, Learning the structure of dynamic probabilistic networks, in: Proceedings of the 14th Conference on Uncertainty in Artificial Intelligence, Morgan Kaufmann, pp. 139-147.\n[95] F. Taroni, C. Aitken, P. Garbolino, A. Biedermann, Bayesian Networks and Probabilistic Inference in Forensic Science, Wiley, 2006.\n[96] R. Neapolitan, Learning Bayesian networks, Prentice Hall, 2004.\n[97] J. Cai, Y. Xiao, Bearing fault diagnosis method based on the generalized $S$ transform time-frequency spectrum de-noised by singular value decomposition, Proc. Inst. Mech. Eng. Part C: J. Mech. Eng. Sci. 233 (2019) 2467-2477.\n[98] C. Bielza, P. Larrañaga, Bayesian networks in neuroscience: A survey, Front. Comput. Neurosci. 8 (2014) 131.\n[99] D. Silberberg, N.P. Anand, K. Michels, R.N. Kalaria, Brain and other nervous system disorders across the lifespan - global challenges and opportunities, Nature 527 (2015) 5151-5154.\n[100] E.R. Walker, R.E. McGee, R.G. Druss, Mortality in mental disorders and global disease burden implications: A systematic review and meta-analysis, JAMA Psychiatry 72 (2015) 334-341.\n[101] J. Olesen, Q. Gustavsson, M. Svensson, H. Wittchen, B. Jonson, The economic cost of brain disorders in Europe, Eur. J. Neurol. 19 (2012) 155-162.\n[102] M.D. Hurd, P. Martorell, A. Delavande, K.J. Mullen, K.M. Langa, Monetary costs of dementia in the United States, N. Engl. J. Med. 368 (2013) 1326-1334.\n[103] Z.J. Huang, L. Luo, It takes the world to understand the brain, Science 350 (2015) 42-44.\n[104] H. Markram, The Human Brain Project, Sci. Am. 306 (2012) 50-55.\n[105] K. Amunts, C. Ebell, J. Muller, M. Telefont, A. Knoll, T. Lippert, The human brain project: Creating a European research infrastructure to decode the human brain, Neuron 92 (2016) 574-581.\n[106] T.R. Insel, S.C. Landis, F.S. Collins, The NIH BRAIN initiative, Science 340 (2013) 687-688.\n[107] S. Grillner, N. Ip, C. Koch, W. Koroshetz, H. Okano, M. Polachek, M. Poo, T.J. Sejnowski, Worldwide initiatives to advance brain research, Nat. Neurosci. 19 (2016) 1118-1122.\n[108] G.A. Asceli, L. Alonso-Nanclares, S.A. Anderson, G. Bartenuevo, B. BenavidesPiccione, A. Burkhalter, G. Buzsáki, B. Cauli, J. Defelipe, A. Fatén, D. Feldmeyer, G. Fishell, Y. Fregnac, T.F. Freund, D. Gardner, E.P. Gardner, J.H. Goldberg, M. Helmstaedter, S. Hertrin, F. Karube, Z.F. Kivcárday, B. Lambolez, D.A. Lewis, O. Marin, H. Markram, A. Muñoz, A. Packer, C.C.H. Petersen, K.S. Rockland, J. Rossier, B. Rudy, P. Somogyi, J.F. Staiger, G. Tamas, A.M. Thomson, M. Toledo-Rodriguez, Y. Wang, D.C. West, R. Yuste, Petilla terminology: Nomenclature of features of GABAergic interneurons of the cerebral cortex, Nat. Rev. Neurosci. 9 (2008) 557-568.\n[109] J. Defelipe, Chandelier cells and epilepsy, Brain 122 (1999) 1807-1822.\n[110] R.F. Hunt, K.M. Girskis, J.L. Rubenstein, A. Alvarez-Buylla, S.C. Baraban, GABA progenitors grafted into the adult epileptic brain control seizures and abnormal behavior, Nat. Neurosci. 16 (2013) 692.\n[111] J. Rubenstein, M.M. Merzenich, Model of autism: Increased ratio of excitation/inhibition in key neural systems, Genes Brain Behav. 2 (2003) 255-267.\n[112] A.A. Curley, D.A. Lewis, Cortical basket cell dysfunction in schizophrenia, J. Physiol. 590 (2012) 715-724.\n\n[113] D.A. Lewis, The chandelier neuron in schizophrenia, Dev. Neurobiol. 71 (2011) 118-127.\n[114] M. Inan, T.J. Petros, S.A. Anderson, Losing your inhibition: Linking cortical GABAergic interneurons to schizophrenia, Neurobiol. Disease 53 (2013) 3648.\n[115] D. Joshi, J.M. Fullerton, C.S. Weickert, Elevated ErbB4 mRNA is related to interneuron deficit in prefrontal cortex in schizophrenia, J. Psychiatr. Res. 53 (2014) 125-132.\n[116] H. Zeng, J.R. Sanes, Neuronal cell-type classification: Challenges, opportunities and the path forward, Nat. Rev. Neurosci. 18 (2017) 530-546.\n[117] R. Yuste, M. Hawrylycz, N. Aalling, A. Aguilar-Falles, D. Arendt, R.A. Arnedillo, G.A. Ascoli, C. Bielza, V. Bokharaie, T.B. Bergmann, et al., A community-based transcriptionist classification and nomenclature of neocortical cell types, Nat. Neurosci. (2020) 1-13.\n[118] B. Mihaljević, P. Larrañaga, R. Benavides-Piccione, S. Hill, J. DeFelipe, C. Bielza, Towards a supervised classification of neocortical interneuron morphologies, BMC Bioinf. 19 (2018) 511.\n[119] B. Tasic, V. Menon, T.N. Nguyen, T.K. Kim, T. Jarsky, Z. Yao, B. Levi, L.T. Gray, S. A. Sorensen, T. Dolbeare, D. Bertagnolli, J. Goldy, N. Shapovalova, S. Parry, C. Lee, K. Smith, A. Bernard, L. Madisen, S.M. Sunkin, M. Hawrylycz, C. Koch, H. Zeng, Adult mouse cortical cell taxonomy revealed by single cell transcriptomics, Nat. Neurosci. 19 (2016) 335-346.\n[120] B. Cauli, E. Audinat, B. Lambolez, M.C. Angulo, N. Ropert, K. Tsuzuki, S. Hestrin, J. Rossier, Molecular and physiological diversity of cortical nonpyramidal cells, J. Neurosci. 17 (1997) 3894-3906.\n[121] H. Markram, E. Muller, S. Ramaswamy, M. Reimann, M. Abdellah, C. Sanchez, A. Adamaki, L. Alonso-Nanclares, N. Antille, S. Araever, G. Kahou, T. Berger, A. Bilgili, N. Buncic, A. Chalimonurfa, G. Chindemi, J.-D. Courcol, F. Delalondre, V. Delattre, S. Druckmann, R. Dumuse, J. Dynes, S. Eilemann, E. Gal, M. Gevaert, J.-P. Chobril, A. Gidon, J. Graham, A. Gupta, V. Haenel, E. Hay, T. Heinis, J. Hernando, M. Hines, L. Kanari, D. Keller, J. Kenyon, G. Khazen, Y. Kim, J. King, Z. Kisvarday, P. Kumbhar, S. Lasserre, J.-V. Le Be, B. Magalhaes, A. MercháltPerre, J. Meystre, B. Morrice, J. Muller, A. Munoz-Cespedes, S. Muralidhar, K. Muthurasa, D. Nachhaur, T. Newton, M. Nolte, A. Ovcharenko, J. Palacios, L. Pastor, R. Perin, R. Ranjan, I. Riachi, J.-R. Rodriguez, J. Riquelme, C. Rössert, K. Sfyrakis, Y. Shi, J. Shillcock, G. Silberberg, R. Silva, F. Taubeed, M. Tclefont, M. Toledo-Rodriguez, T. Tränkler, W. Van Geit, J. Díaz, R. Walker, Y. Wang, S. Zaninetta, J. DeFelipe, S. Hill, I. Segev, F. Schürmann, Reconstruction and simulation of neocortical microcircuitry, Cell 163 (2015) 456-492.\n[122] H. Markram, M. Toledo-Rodriguez, Y. Wang, A. Gupta, G. Silberberg, C. Wu, Interneurons of the neocortical inhibitory system, Nat. Rev. Neurosci. 5 (2004) 793-807.\n[123] J. DeFelipe, P.L. López-Cruz, R. Benavides-Piccione, C. Bielza, P. Larra naga, S. Anderson, A. Burkhalter, B. Cauli, A. Fairén, D. Feldmeyer, G. Fishell, D. Fitzpatrick, T.P. Freund, G. González-Burgos, S. Hestrin, S. Hill, P.R. Hof, J. Huang, E.G. Jones, Y. Kawaguchi, Z. Kisvárday, Y. Kubota, D.A. Lewis, O. Marin, H. Markram, C.J. McBain, H.S. Meyer, H. Monyer, S.B. Nelson, K. Rockland, J. Rossier, J.L.R. Robenstein, B. Rudy, M. Scanziani, G.M. Shepherd, C.C. Sherwood, J.F. Staiger, G. Tamás, A. Thomson, Y. Wang, R. Yuste, G.A. Ascoli, New insights into the classification and nomenclature of cortical GABAergic interneurons, Nat. Rev. Neurosci. 14 (2013) 202-216.\n[124] D. Feldmeyer, G. Qi, V. Emmenegger, J.F. Staiger, Inhibitory interneurons and their circuit motifs in the many layers of the barrel cortex, Neuroscience 368 (2018) 132-151.\n[125] R. Tremblay, S. Lee, B. Rudy, GABAergic interneurons in the neocortex: From cellular properties to circuits, Neuron 91 (2016) 260-292.\n[126] R. Armañanzas, G.A. Ascoli, Towards the automatic classification of neurons, Trends Neurosci. 38 (2015) 307-318.\n[127] F.A.C. Azevedo, L.R.B. Carvalho, L.T. Grinberg, J.M. Farfel, R.E.L. Ferretti, R.E.P. Leite, W.J. Filho, R. Lent, S. Herculano-Houzel, Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain, J. Comparat. Neurol. 513 (2009) 532-541.\n[128] O. Sporns, Networks of the Brain, MIT Press, 2011.\n[129] J. DeFelipe, J. Fair nas, The pyramidal neuron of the cerebral cortex: Morphological and chemical characteristics of the synaptic inputs, Prog. Neurobiol. 39 (1992) 563-607.\n[130] E. White, Cortical Circuits: Synaptic Organization of the Cerebral Cortex Structure, Function, and Theory, Birkhäuser, 1989..\n[131] A. Peters, E.G. Jones, Cerebral Cortex: Volume 1: Cellular Components of the Cerebral Cortex, Plenum Press, 1984..\n[132] J. DeFelipe, Cortical interneurons: From Cajal to 2001, Prog. Brain Res. 130 (2002) 215-238.\n[133] B. Mihaljević, R. Benavides-Piccione, C. Bielza, P. Larrañaga, J. DeFelipe, Classification of GABAergic interneurons by leading neuroscientists, Scientific Data 6 (2019) 1-6.\n[134] B. Mihaljević, R. Benavides-Piccione, C. Bielza, J. DeFelipe, P. Larrañaga, Bayesian network classifiers for categorizing cortical GABAergic interneurons, Neuroinformatics 13 (2015) 192-208.\n[135] B. Mihaljević, C. Bielza, R. Benavides-Piccione, J. DeFelipe, P. Larrañaga, Multidimensional classification of GABAergic interneurons with Bayesian network-modeled label uncertainty, Front. Comput. Neurosci. 8 (2014) 150.\n[136] B. Mihaljević, R. Benavides-Piccione, L. Guerra, J. DeFelipe, P. Larrañaga, C. Bielza, Classifying GABAergic interneurons with semi-supervised projected model-based clustering, Artif. Intell. Med. 65 (2015) 49-59.\n[137] P.L. López-Cruz, P. Larrañaga, J. DeFelipe, C. Bielza, Bayesian network modeling of the consensus between experts: An application to neuron classification, Int. J. Approximate Reasoning 55 (2014) 3-22.\n[138] H. Borchani, C. Bielza, P. Marti, P. Larrañaga, Markov blanket-based approach for learning multi-dimensional Bayesian network classifiers: An application to predict the European Quality of Life-5 Dimensions, EQ-5D) from the 39item Parkinson's Disease Questionnaire (PDQ-39, J. Biomed. Inform. 45 (2012) 1175-1184.\n[139] D.E. Donohue, G.A. Ascoli, A comparative computer simulation of dendritic morphology, PLoS Computational Biology 4 (2008) e1000089.\n[140] S. Loengs-Sanchez, P. Larrañaga, C. Bielza, A directional-linear Bayesian network and its application for clustering and simulation of neural somas, IEEE Access 7 (2019) 69907-69921.\n[141] W.W. Cohen, Fast effective rule induction, in: Proceedings of the Twelfth International Conference on Machine Learning, Morgan Kaufmann, 1995, pp. 115-123.\n[142] P. Larrañaga, D. Atienza, J. Diaz-Rozo, A. Oghechie, C.E. Puerto-Santana, C. Bielza, Industrial Applications of Machine Learning, CRC Press, 2018.\n[143] L. Page, S. Brin, R. Motwani, T. Winograd, The PageRank citation ranking: Bringing order to the web, Technical Report, Stanford Inbidab, 1999.\n[144] D.F. Gleich, PageRank beyond the Web, SIAM Rev. 57 (2015) 321-363.\n[145] J.H. Holland, Adaptation in Natural and Artificial Systems, University of Michigan Press, 1975.\n[146] I. Rechenberg, Evolutionstrategie: Optimierung technischer Systeme nach Prinzipien der biologischen Evolution, Frommann-Holzboog, 1973..\n[147] L.J. Fogel, A.J. Owens, M.J. Walsh, Artificial Intelligence through Simulated Evolution, John Wiley \\& Sons, New York, 1966.\n[148] J.R. Koza, Genetic programming: On the programming of computers by means of natural selection, The MIT Press, 1992.\n[149] P. Larrañaga, H. Karshenas, C. Bielza, R. Santana, A review on evolutionary algorithms in Bayesian network learning and inference tasks, Inf. Sci. 233 (2013) 109-125.\n[150] D.E. Goldberg, The Design of Innovation: Lessons from and for Competent Genetic Algorithms, Kluwer Academic Press, 2002.\n[151] M. Pelikan, D.E. Goldberg, F. Lobo, A survey of optimization by building and using probabilistic models, Comput. Optim. Appl. 21 (2002) 5-20.\n[152] R. Armañanzas, Y. Saeyo, I. Inza, M. Garcia-Torres, C. Bielza, Y. van de Peer, P. Larrañaga, Peakbin selection in mass spectrometry data using a consensus approach with estimation of distribution algorithms, IEEE/ACM Trans. Comput. Biol. Bioinf. 8 (2010) 760-774.\n[153] S. Baluja, Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning, Technical Report CMU-CS-94-163, Carnegie Mellon University, 1994.\n[154] G.R. Harik, F.G. Lobo, D.E. Goldberg, The compact genetic algorithm, IEEE Trans. Evol. Comput. 3 (1999) 287-297.\n[155] J.S. De Bonet, C.L. Isbell, P. Viola, MIMIC: Finding optima by estimating probability densities, in: Proceedings of the 9th International Conference on Neural Information Processing Systems, MIT Press, 1996, pp. 424-430.\n[156] R. Etxeberria, P. Larrañaga, Global optimization using Bayesian networks, in: Proceedings of the Second Symposium on Artificial Intelligence (CIMAF-99), pp. 151-173.\n[157] M. Pelikan, D.E. Goldberg, E. Cantó-Paz, et al., ROA: The Bayesian optimization algorithm, in: Proceedings of the genetic and evolutionary computation conference, volume 1, pp. 525-532..\n[158] P. Larrañaga, H. Karshenas, C. Bielza, R. Santana, A review on probabilistic graphical models in evolutionary computation, J. Heurist. 18 (2012) 795-819.\n[159] R. Santana, R. Armañanzas, C. Bielza, P. Larrañaga, Network measures for information extraction in evolutionary algorithms, Int. J. Comput. Intell. Syst. 6 (2013) 1163-1188.\n[160] N. Krasnogor, B. Blackburne, E.K. Burke, J.D. Hirst, Algorithms for protein structure prediction, in: Parallel Problem Solving from Nature, volume 2439 of Lecture Notes in Computer Science, Springer Verlag, 2002, pp. 769-778..\n[161] K. Deb, A. Pratap, S. Agarwal, T. Meyarivan, A fast and elitist multiobjective genetic algorithm: NSGA-II, IEEE Trans. Evol. Comput. 6 (2002) 182-197.\n[162] H. Karshenas, R. Santana, C. Bielza, P. Larrañaga, Multiobjective estimation of distribution algorithm based on joint modeling of objectives and variables, IEEE Trans. Evol. Comput. 18 (2013) 519-542.\n[163] J. Schäfer, K. Strimmer, A shrinkage approach to large-scale covariance matrix estimation and implications for functional genomics, Statist. Appl. Genet. Mol. Biol. 4 (2005).\n[164] S. Huband, P. Kingston, L. Barone, L. While, A review of multiobjective test problems and a scalable test problem toolkit, IEEE Trans. Evol. Comput. 10 (2006) 477-506.\n[165] Bojan Mihaljević, Pedro Larrañaga, Concha Bielza, Comparing the Electrophysiology and Morphology of Human and Mouse Layer 2/3 Pyramidal Neurons With Bayesian Networks, Frontiers in Neuroinformatics 15 (2021), https://doi.org/10.3389/fninf.2021.580873, In press.\n\n![img-14.jpeg](img-14.jpeg)\n\nBojan Mihaljević recieved his B.Sc. degree in Computer Science and Management from the Diego Portales University in 2010. He obtained a M.Sc. degree in Artificial Intelligence in 2013 and a Ph.D. degree in Artificial Intelligence in 2018, both from from the Universidad Politécnica de Madrid (UPM). Since 2018, he has been a post-doc researcher at the UPM, working on the Human Brain Project. He is currently an Assistant Professor at Departamento de Matemáticas, Universidad Autónoma de Madrid.\n![img-15.jpeg](img-15.jpeg)\n\nConcha Bielza received the M.S. degree in mathematics from the Universidad Complutense de Madrid, Madrid, Spain, in 1989, and the Ph.D. degree in computer science from the Universidad Politécnica de Madrid, Madrid, in 1996, where she has been a Full Professor of statistics and operations research with the Departamento de Inteligencia Artificial, since 2010. She has supervised 12 Ph.D. theses. She has published more than 100 papers in impact factor journals. Her research interests are primarily in the areas of probabilistic graphical models, decision analysis, metaheuristics for optimization, data mining, classification models, and real applications, such as biomedicine, bioinformatics, neuroscience, andindustry. She received the 2014 UPM Research Prize and the Extraordinary Doctorate Award.\n![img-16.jpeg](img-16.jpeg)\n\nPedro Larrañaga received the M.Sc. degree in mathematics (statistics) from the University ofValladolid and the Ph.D. degree in computer science from the University of the Basque Country. His academic career has been developed at the University of the Basque Country at several faculty ranks, as an Assistant Professor, from 1985 to 1998, as an Associate Professor, from 1998 to 2004, and as a Full Professor, from 2004 to 2007. He earned the Habilitation qualification for Full Professor, in 2003. He has been a Full Professor in computer science and artificial intelligence with the Technical University of Madrid (UPM), since 2007. His research interests are primarily in the areas of probabilistic graphical models, metaheuristics for optimization, data mining, classification models, and real applications, such as biomedicine, bioinformatics, and neuroscience. He has supervised more than 25 Ph . D. theses. He has published more than 200 papers in impact factor journals. He has been an ECCAI Fellow, since 2012, and a Fellow of the Academia Europaea, since 2018. He received the 2013 Spanish National Prize in computer science and the Prize of the Spanish Association for Artificial Intelligence,in 2018. He received the Excellence Award from the University of the Basque Country.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "M.I. Jordan, T.M. Mitchell, Machine learning: Trends, perspectives, and prospects, Science 349 (2015) 255-260."
+      },
+      {
+        "ref_id": "2",
+        "text": "D. Castelvecchi, Can we open the black box of AI?, Nat. News 538 (2016) 20."
+      },
+      {
+        "ref_id": "3",
+        "text": "C. Rudin, Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead, Nat. Mach. Intell. 1 (2019) $200-215$."
+      },
+      {
+        "ref_id": "4",
+        "text": "B. Goodman, S. Flaxman, European union regulations on algorithmic decisionmaking and a \"right to explanation\", AI Mag. 38 (2017) 50-57."
+      },
+      {
+        "ref_id": "5",
+        "text": "A. Jobin, M. Ienca, E. Vayena, The global landscape of AI ethics guidelines, Nat. Mach. Intell. 1 (2019) 389-399."
+      },
+      {
+        "ref_id": "6",
+        "text": "E. Tjoa, C. Guan, A survey on explainable artificial intelligence (XAI): Toward medical XAI, IEEE Trans. Neural Networks Learn. Syst. (2020)."
+      },
+      {
+        "ref_id": "7",
+        "text": "D. Szafron, P. Lu, R. Greiner, D.S. Wishart, B. Poulin, R. Eisner, Z. Lu, J. Anvik, C. Macdonell, A. Fyshe, et al., Proteome analyst: Custom predictions with explanations in a web-based tool for high-throughput proteome annotations, Nucl. Acids Res. 32 (2004) W365-W371."
+      },
+      {
+        "ref_id": "8",
+        "text": "V. Dhar, D. Chou, F. Provent, Discovering interesting patterns for investment decision making with GLOWER: A genetic learner overlaid with entropy reduction, Data Min. Knowl. Disc. 4 (2000) 251-280."
+      },
+      {
+        "ref_id": "9",
+        "text": "J. Zhu, A. Liapis, S. Risi, R. Bidarra, G.M. Youngblood, Explainable AI for designers: A human-centered perspective on mixed-initiative co-creation, in: 2018 IEEE Conference on Computational Intelligence and Games, IEEE, pp. 18 ."
+      },
+      {
+        "ref_id": "10",
+        "text": "K. Sachs, O. Perez, D. Pe'er, D.A. Lauffenburger, G.P. Nolan, Causal proteinsignaling networks derived from multiparameter single-cell data, Science 308 (2005) 523-529."
+      },
+      {
+        "ref_id": "11",
+        "text": "D. Gunning, Explainable artificial intelligence (XAI), Technical Report DARPA-BAA-16-53, DARPA, 2016.."
+      },
+      {
+        "ref_id": "12",
+        "text": "W. Samek, T. Wiegand, K.-R. Müller, Explainable artificial intelligence: Understanding, visualizing and interpreting deep learning models, arXiv preprint arXiv:1708.08296 (2017)."
+      },
+      {
+        "ref_id": "13",
+        "text": "R. Guidotti, A. Monreale, S. Ruggieri, F. Turini, F. Giannotti, D. Pedreschi, A survey of methods for explaining black box models, ACM Comput. Surv. 51 (2018) 1-42."
+      },
+      {
+        "ref_id": "14",
+        "text": "Z.C. Lipton, The mythos of model interpretability, Queue 16 (2018) 31-57."
+      },
+      {
+        "ref_id": "15",
+        "text": "F. Doshi-Velez, B. Kim, Towards a rigorous science of interpretable machine learning, arXiv preprint arXiv:1702.08608 (2017)."
+      },
+      {
+        "ref_id": "16",
+        "text": "A.B. Arrieta, N. Díaz-Rodríguez, J. Del Ser, A. Bennetot, S. Tabik, A. Barbado, S. García, S. Gil-López, D. Molina, R. Benjamins, et al., Explainable artificial intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI, Inf. Fus. 58 (2020) 82-115."
+      },
+      {
+        "ref_id": "17",
+        "text": "W.J. Murdoch, C. Singh, K. Kumbier, R. Abbasi-Asl, B. Yu, Definitions, methods, and applications in interpretable machine learning, Proc. Nat. Acad. Sci. 116 (2019) 22071-22080."
+      },
+      {
+        "ref_id": "18",
+        "text": "A. Preece, D. Harborne, D. Braines, R. Tomsett, S. Chakraborty, Stakeholders in explainable AI, arXiv preprint arXiv:1810.00184 (2018)."
+      },
+      {
+        "ref_id": "19",
+        "text": "M.T. Ribeiro, S. Singh, C. Guestrin, Why should I trust you? Explaining the predictions of any classifier, in: Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pp. $1135-1144$."
+      },
+      {
+        "ref_id": "20",
+        "text": "J. Huysmans, K. Dejaeger, C. Mues, J. Vanthienen, B. Baesens, An empirical evaluation of the comprehensibility of decision table, tree and rule based predictive models, Decis. Support Syst. 51 (2011) 141-154."
+      },
+      {
+        "ref_id": "21",
+        "text": "A.A. Freitas, Comprehensible classification models: A position paper, ACM SIGKDD Explorations Newsletter 15 (2014) 1-10."
+      },
+      {
+        "ref_id": "22",
+        "text": "D.J. Hand, Classifier technology and the illusion of progress, Stat. Sci. (2006) $1-14$."
+      },
+      {
+        "ref_id": "23",
+        "text": "E.T. Jaynes, Probability Theory: The Logic of Science, Cambridge University Press, 2003."
+      },
+      {
+        "ref_id": "24",
+        "text": "J. Pearl, Probabilistic Reasoning in Intelligent Systems, Morgan Kaufmann, 1988."
+      },
+      {
+        "ref_id": "25",
+        "text": "D. Koller, N. Friedman, Probabilistic Graphical Models: Principles and Techniques, MIT Press, 2009."
+      },
+      {
+        "ref_id": "26",
+        "text": "M. Maathuis, M. Drton, S. Lauritzen, M. Wainwright, Handbook of Graphical Models, CRC Press, 2019."
+      },
+      {
+        "ref_id": "27",
+        "text": "D. Heckerman, E. Horvitz, K. Ng, B. Nathwani, Towards normative expert systems: Part I, Pathfinder Project, Methods Inf. Med. 31 (1992) 90-105."
+      },
+      {
+        "ref_id": "28",
+        "text": "S. Andreassen, F.V. Jensen, S.K. Andersen, B. Falck, U. Kjætrulff, M. Woldhye, A. Sørensen, A. Rosenfalck, F. Jensen, MUNDI: An expert EMC Assistant, in: Computer-aided Electromyography and Expert Systems, Pergamon Press, 1989, pp. 255-277."
+      },
+      {
+        "ref_id": "29",
+        "text": "M.A. Shwe, B. Middleton, D.E. Heckerman, M. Henrion, E.J. Horvitz, H.P. Lehmann, G.F. Cooper, Probabilistic diagnosis using a reformulation of the INTERNIST-1/QMR knowledge base, Methods Inf. Med. 30 (1991) 241-255."
+      },
+      {
+        "ref_id": "30",
+        "text": "A. Rajkomar, J. Dean, I. Kohane, Machine learning in medicine, New Engl. J. Med. 380 (2019) 1347-1358."
+      },
+      {
+        "ref_id": "31",
+        "text": "A. Dannenberg, A. Shapiro, J. Fries, Enhancement of clinical predictive ability by computer consultation, Methods Inf. Med. 18 (1979) 10-14."
+      },
+      {
+        "ref_id": "32",
+        "text": "R.L. Teach, E.H. Shortliffe, An analysis of physician attitudes regarding computer-based clinical consultation systems, Comput. Biomed. Res. 14 (1981) 542-558."
+      },
+      {
+        "ref_id": "33",
+        "text": "B.G. Buchanan, E.H. Shortliffe, Rule-based expert systems: The MYCIN Experiments of the Stanford Heuristic Programming Project, AddisonWesley, 1984."
+      },
+      {
+        "ref_id": "34",
+        "text": "W.J. Clancey, Use of MYCIN's rules for tutoring, Rule-Based Expert Systems. Addison-Wesley, Reading 20 (1984)."
+      },
+      {
+        "ref_id": "35",
+        "text": "A. Tversky, D. Kahneman, Judgment under uncertainty: Heuristics and biases, Science 185 (1974) 1124-1131."
+      },
+      {
+        "ref_id": "36",
+        "text": "P.C. Wason, P.N. Johnson-Laird, Psychology of Reasoning: Structure and Content, volume 86, Harvard University Press, 1972."
+      },
+      {
+        "ref_id": "37",
+        "text": "C. Lacave, F.J. Diez, A review of explanation methods for Bayesian networks, Knowledge Eng. Rev. 17 (2002) 107-127."
+      },
+      {
+        "ref_id": "38",
+        "text": "E.-G. Talbi, Metaheuristics, Wiley, From Design to Implementation, 2009."
+      },
+      {
+        "ref_id": "39",
+        "text": "H. Mühlenbein, G. Paall, From recombination of genes to the estimation of distributions. I. Binary parameters, in: Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature, pp. 178-187."
+      },
+      {
+        "ref_id": "40",
+        "text": "P.A. Bosman, D. Thierens, Linkage information processing in distribution estimation algorithms, in: Proceedings of the Genetic and Evolutionary Computation Conference, volume I, pp. 60-67."
+      },
+      {
+        "ref_id": "41",
+        "text": "P. Larrañaga, J.A. Lozano (Eds.), Estimation of Distribution Algorithms: A new Tool for Evolutionary Computation, Springer, 2001."
+      },
+      {
+        "ref_id": "42",
+        "text": "J.A. Lozano, P. Larrañaga, I. Issa, E. Bengoetxea (Eds.), Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms, volume 192, Springer, 2006."
+      },
+      {
+        "ref_id": "43",
+        "text": "C. Bielza, P. Larrañaga, Data-Driven Computational Neuroscience: Machine Learning and Statistical Models, Cambridge University Press, 2020."
+      },
+      {
+        "ref_id": "44",
+        "text": "G.F. Cooper, The computational complexity of probabilistic inference using Bayesian belief networks, Artif. Intell. 42 (1990) 393-405."
+      },
+      {
+        "ref_id": "45",
+        "text": "J.S. Shimony, Finding MAPs for belief networks is NP-hard, Artif. Intell. 68 (1994) 399-410."
+      },
+      {
+        "ref_id": "46",
+        "text": "S. Arnborg, D. Corneil, A. Proskurowski, Complexity of finding embeddings in a k-tree, SIAM J, Algebraic Discrete Methods 8 (1987) 277-284."
+      },
+      {
+        "ref_id": "47",
+        "text": "S. Lauritzen, D. Spiegelhalter, Local computations with probabilities on graphical structures and their application to expert systems, J. R. Stat. Soc. Ser. B (Methodol.) 50 (1988) 157-224."
+      },
+      {
+        "ref_id": "48",
+        "text": "A. Darwiche, A differential approach to inference in Bayesian networks, J. ACM 50 (2003) 280-305."
+      },
+      {
+        "ref_id": "49",
+        "text": "P. Dagum, M. Luby, Approximating probabilistic inference in Bayesian belief networks is NP-hard, Artif. Intell. 60 (1993) 141-153."
+      },
+      {
+        "ref_id": "50",
+        "text": "M. Henrion, Propagating uncertainty in Bayesian networks by probabilistic logic sampling, in: Uncertainty in Artificial Intelligence 2, pp. 149-163."
+      },
+      {
+        "ref_id": "51",
+        "text": "R. Fung, K.-C. Chang, Weighing and integrating evidence for stochastic simulation in Bayesian networks, in: Uncertainty in Artificial Intelligence, North-Holland, 1990, pp. 209-219."
+      },
+      {
+        "ref_id": "52",
+        "text": "R. Shachter, M. Peot, Simulation approaches to general probabilistic inference on belief networks, in: Uncertainty in Artificial Intelligence 5, North-Holland, 1990, pp. 221-231."
+      },
+      {
+        "ref_id": "53",
+        "text": "B. Mihaljević, P. Larrañaga, R. Benavides-Piccione, J. Defelipe, C. Bielza, Computing basal dendrite branches in human and mouse hippocampal CA1 pyramidal neurons with Bayesian networks, Scientific Reports 10 (2020) 10592."
+      },
+      {
+        "ref_id": "54",
+        "text": "D. Heckerman, D.M. Chickering, C. Meek, R. Rounthwaite, C. Kadie, Dependency networks for inference, collaborative filtering, and data visualization, J. Mach. Learn. Res. 1 (2000) 49-75."
+      },
+      {
+        "ref_id": "55",
+        "text": "M. Henrion, M.J. Druzdzel, Uncertainty in Artificial Intelligence, Elsevier, 1991, pp. 17-32."
+      },
+      {
+        "ref_id": "56",
+        "text": "I. Good, Weight of evidence: A brief survey, with discussion, Bayesian Stat. 2 (1985) 249-270."
+      },
+      {
+        "ref_id": "57",
+        "text": "D. Madigan, K. Mosurski, R.G. Almond, Graphical explanation in belief networks, Journal of Computational and Graphical Statistics 6 (1997) 160-181."
+      },
+      {
+        "ref_id": "58",
+        "text": "G.F. Cooper, NESTOR: A Computer-Based Medical Diagnostic Aid That Integrates Causal and Probabilistic Knowledge, Ph.D. thesis, Stanford, 1984."
+      },
+      {
+        "ref_id": "59",
+        "text": "H.J. Suermondt, Explanation in Bayesian Belief Networks, Ph.D. thesis, Stanford, 1993."
+      },
+      {
+        "ref_id": "60",
+        "text": "P. Lipton, Inference to the Best Explanation, Routledge. 2003."
+      },
+      {
+        "ref_id": "61",
+        "text": "S.E. Shimony, Explanation, irrelevance and statistical independence, in: Proceedings of the Ninth National Conference on Artificial intelligenceVolume 1, pp. 482-487."
+      },
+      {
+        "ref_id": "62",
+        "text": "J. Kwoithour, Most frugal explanations in Bayesian networks, Artif. Intell. 218 (2015) 56-73."
+      },
+      {
+        "ref_id": "63",
+        "text": "M.J. Flores, J.A. Gámez, S. Moral, Abductive inference in Bayesian networks: Finding a partition of the explanation space, in: European Conference on Symbolic and Quantitative Approaches to Reasoning and Uncertainty, Springer, pp. 63-75."
+      },
+      {
+        "ref_id": "64",
+        "text": "C. Yuan, H. Lim, T.-C. Lu, Most relevant explanation in Bayesian networks, J. Artif. Intell. Res. 42 (2011) 309-352."
+      },
+      {
+        "ref_id": "65",
+        "text": "J.N. Schupbach, J. Sprenger, The logic of explanatory power, Phil. Sci. 78 (2011) 105-127."
+      },
+      {
+        "ref_id": "66",
+        "text": "V. Crupi, K. Tentori, A second look at the logic of explanatory power, with two novel representation theorems, Phil. Sci. 79 (2012) 365-385."
+      },
+      {
+        "ref_id": "67",
+        "text": "L.M. De Campos, J.A. Gámez, S. Moral, Simplifying explanations in Bayesian belief networks, International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems 9 (2001) 461-489."
+      },
+      {
+        "ref_id": "68",
+        "text": "D.H. Glass, Coherence, explanation, and hypothesis selection, The British Journal for the Philosophy of Science (2018), Asyl63."
+      },
+      {
+        "ref_id": "69",
+        "text": "C. Glymour, Probability and the explanatory virtues, British J. Phil. Sci. 66 (2015) 591-604."
+      },
+      {
+        "ref_id": "70",
+        "text": "P. Spirtes, C. Glymour, An algorithm for fast recovery of sparse causal graphs, Soci. Sci. Comput. Rev. 90 (1991) 62-72."
+      },
+      {
+        "ref_id": "71",
+        "text": "C. Aliferis, A. Statnikov, I. Tsamardinos, S. Mani, X. Koutsoukos, Local causal and Markov blanket induction for causal discovery and feature selection for classification, Part I: Algorithms and empirical evaluation, J. Mach. Learn. Res. 11 (2010) 171-234."
+      },
+      {
+        "ref_id": "72",
+        "text": "C. Aliferis, A. Statnikov, I. Tsamardinos, S. Mani, X. Koutsoukos, Local causal and Markov blanket induction for causal discovery and feature selection for classification, Part II: Analysis and extensions, J. Mach. Learn. Res. 11 (2010) 235-284."
+      },
+      {
+        "ref_id": "73",
+        "text": "D. Margaritis, Learning Bayesian Network Model Structure from Data, Ph.D. thesis, Carnegie-Melliot University, 2003."
+      },
+      {
+        "ref_id": "74",
+        "text": "F. Glover, M. Laguna, Tahn Search, in: P.M. Pardalos, D.-Z. Du, R.L. Graham (Eds.), Handbook of Combinatorial Optimization, Springer, 2013, pp. 32613362."
+      },
+      {
+        "ref_id": "75",
+        "text": "P. Larrañaga, M. Poza, Y. Yurramendi, R. Murga, C. Kuijpers, Structure learning of Bayesian networks by genetic algorithms: A performance analysis of control parameters, IEEE Trans. Pattern Anal. Mach. Intell. 18 (1996) 912926."
+      },
+      {
+        "ref_id": "76",
+        "text": "G. Schwarz, Estimating the dimension of a model, Ann. Stat. 6 (1978) 461464."
+      },
+      {
+        "ref_id": "77",
+        "text": "A.P. Dempster, N.M. Laird, D.B. Rubin, Maximum likelihood from incomplete data via the EM algorithm, J. R. Stat. Soc. Ser. B (Methodol.) 39 (1977) 1-38."
+      },
+      {
+        "ref_id": "78",
+        "text": "C. Bielza, P. Larrañaga, Discrete Bayesian network classifiers: A survey, ACM Comput. Surv. 47 (2014)."
+      },
+      {
+        "ref_id": "79",
+        "text": "B. Mihaljević, C. Bielza, P. Larrañaga, Inclassify: Learning Bayesian network classifiers, B J. 10 (2018) 455-468."
+      },
+      {
+        "ref_id": "80",
+        "text": "N. Friedman, D. Geiger, M. Goldszmidt, Bayesian network classifiers, Mach. Learn. 29 (1997) 131-163."
+      },
+      {
+        "ref_id": "81",
+        "text": "M. Minsky, Steps toward artificial intelligence, Trans. Inst. Radio Engrs. 49 (1961) 8-30."
+      },
+      {
+        "ref_id": "82",
+        "text": "M. Sahami, Learning limited dependence Bayesian classifiers, in: Proceedings of the 2nd International Conference on Knowledge Discovery and Data Mining, volume 98, pp. 335-338."
+      },
+      {
+        "ref_id": "83",
+        "text": "F. Pernkopf, P. O'Leary, Floating search algorithm for structure learning of Bayesian network classifiers, Pattern Recogn. Lett. 24 (2003) 2839-2848."
+      },
+      {
+        "ref_id": "84",
+        "text": "M. Jaeger, Probabilistic classifiers and the concept they recognize, in: Proceedings of the 20th International Conference on Machine Learning ICML, 2003, pp. 266-273."
+      },
+      {
+        "ref_id": "85",
+        "text": "G. Varando, C. Bielza, P. Larrañaga, Decision boundary for discrete Bayesian network classifiers, J. Mach. Learn. Res. 16 (2015) 2725-2749."
+      },
+      {
+        "ref_id": "86",
+        "text": "E.J. Keogh, M.J. Pazzani, Learning the structure of augmented Bayesian classifiers, Int. J. Artif. Intell. Tools 11 (2002) 587-601."
+      },
+      {
+        "ref_id": "87",
+        "text": "M. Pazzani, Constructive induction of Cartesian product attributes, in: Proceedings of the Information, Statistics and Induction in Science Conference, pp. 66-77."
+      },
+      {
+        "ref_id": "88",
+        "text": "I. Guyon, A. Elisseeff, An introduction to variable and feature selection, J. Mach. Learn. Res. 3 (2003) 1157-1182."
+      },
+      {
+        "ref_id": "89",
+        "text": "C. Chow, C. Liu, Approximating discrete probability distributions with dependence trees, IEEE Trans. Inf. Theory 14 (1968) 462-467."
+      },
+      {
+        "ref_id": "90",
+        "text": "C. Bielza, G. Li, P. Larra naga, Multi-dimensional classification with Bayesian networks, Int. J. Approximate Reasoning 52 (2011) 705-727."
+      },
+      {
+        "ref_id": "91",
+        "text": "S. Gil-Regue, C. Bielza, P. Larrañaga, Multi-dimensional Bayesian network classifiers: A survey, Artif. Intell. Rev. (2020) 1-41."
+      },
+      {
+        "ref_id": "92",
+        "text": "T. Dean, K. Kanazawa, A model for reasoning about persistence and causation, Comput. Intell. 5 (1989) 142-150."
+      },
+      {
+        "ref_id": "93",
+        "text": "K.P. Murphy, Dynamic Bayesian Networks: Representation, Inference and Learning, Ph.D. thesis, University of California at Berkeley, 2002."
+      },
+      {
+        "ref_id": "94",
+        "text": "N. Friedman, R. Murphy, S. Russell, Learning the structure of dynamic probabilistic networks, in: Proceedings of the 14th Conference on Uncertainty in Artificial Intelligence, Morgan Kaufmann, pp. 139-147."
+      },
+      {
+        "ref_id": "95",
+        "text": "F. Taroni, C. Aitken, P. Garbolino, A. Biedermann, Bayesian Networks and Probabilistic Inference in Forensic Science, Wiley, 2006."
+      },
+      {
+        "ref_id": "96",
+        "text": "R. Neapolitan, Learning Bayesian networks, Prentice Hall, 2004."
+      },
+      {
+        "ref_id": "97",
+        "text": "J. Cai, Y. Xiao, Bearing fault diagnosis method based on the generalized $S$ transform time-frequency spectrum de-noised by singular value decomposition, Proc. Inst. Mech. Eng. Part C: J. Mech. Eng. Sci. 233 (2019) 2467-2477."
+      },
+      {
+        "ref_id": "98",
+        "text": "C. Bielza, P. Larrañaga, Bayesian networks in neuroscience: A survey, Front. Comput. Neurosci. 8 (2014) 131."
+      },
+      {
+        "ref_id": "99",
+        "text": "D. Silberberg, N.P. Anand, K. Michels, R.N. Kalaria, Brain and other nervous system disorders across the lifespan - global challenges and opportunities, Nature 527 (2015) 5151-5154."
+      },
+      {
+        "ref_id": "100",
+        "text": "E.R. Walker, R.E. McGee, R.G. Druss, Mortality in mental disorders and global disease burden implications: A systematic review and meta-analysis, JAMA Psychiatry 72 (2015) 334-341."
+      },
+      {
+        "ref_id": "101",
+        "text": "J. Olesen, Q. Gustavsson, M. Svensson, H. Wittchen, B. Jonson, The economic cost of brain disorders in Europe, Eur. J. Neurol. 19 (2012) 155-162."
+      },
+      {
+        "ref_id": "102",
+        "text": "M.D. Hurd, P. Martorell, A. Delavande, K.J. Mullen, K.M. Langa, Monetary costs of dementia in the United States, N. Engl. J. Med. 368 (2013) 1326-1334."
+      },
+      {
+        "ref_id": "103",
+        "text": "Z.J. Huang, L. Luo, It takes the world to understand the brain, Science 350 (2015) 42-44."
+      },
+      {
+        "ref_id": "104",
+        "text": "H. Markram, The Human Brain Project, Sci. Am. 306 (2012) 50-55."
+      },
+      {
+        "ref_id": "105",
+        "text": "K. Amunts, C. Ebell, J. Muller, M. Telefont, A. Knoll, T. Lippert, The human brain project: Creating a European research infrastructure to decode the human brain, Neuron 92 (2016) 574-581."
+      },
+      {
+        "ref_id": "106",
+        "text": "T.R. Insel, S.C. Landis, F.S. Collins, The NIH BRAIN initiative, Science 340 (2013) 687-688."
+      },
+      {
+        "ref_id": "107",
+        "text": "S. Grillner, N. Ip, C. Koch, W. Koroshetz, H. Okano, M. Polachek, M. Poo, T.J. Sejnowski, Worldwide initiatives to advance brain research, Nat. Neurosci. 19 (2016) 1118-1122."
+      },
+      {
+        "ref_id": "108",
+        "text": "G.A. Asceli, L. Alonso-Nanclares, S.A. Anderson, G. Bartenuevo, B. BenavidesPiccione, A. Burkhalter, G. Buzsáki, B. Cauli, J. Defelipe, A. Fatén, D. Feldmeyer, G. Fishell, Y. Fregnac, T.F. Freund, D. Gardner, E.P. Gardner, J.H. Goldberg, M. Helmstaedter, S. Hertrin, F. Karube, Z.F. Kivcárday, B. Lambolez, D.A. Lewis, O. Marin, H. Markram, A. Muñoz, A. Packer, C.C.H. Petersen, K.S. Rockland, J. Rossier, B. Rudy, P. Somogyi, J.F. Staiger, G. Tamas, A.M. Thomson, M. Toledo-Rodriguez, Y. Wang, D.C. West, R. Yuste, Petilla terminology: Nomenclature of features of GABAergic interneurons of the cerebral cortex, Nat. Rev. Neurosci. 9 (2008) 557-568."
+      },
+      {
+        "ref_id": "109",
+        "text": "J. Defelipe, Chandelier cells and epilepsy, Brain 122 (1999) 1807-1822."
+      },
+      {
+        "ref_id": "110",
+        "text": "R.F. Hunt, K.M. Girskis, J.L. Rubenstein, A. Alvarez-Buylla, S.C. Baraban, GABA progenitors grafted into the adult epileptic brain control seizures and abnormal behavior, Nat. Neurosci. 16 (2013) 692."
+      },
+      {
+        "ref_id": "111",
+        "text": "J. Rubenstein, M.M. Merzenich, Model of autism: Increased ratio of excitation/inhibition in key neural systems, Genes Brain Behav. 2 (2003) 255-267."
+      },
+      {
+        "ref_id": "112",
+        "text": "A.A. Curley, D.A. Lewis, Cortical basket cell dysfunction in schizophrenia, J. Physiol. 590 (2012) 715-724."
+      },
+      {
+        "ref_id": "113",
+        "text": "D.A. Lewis, The chandelier neuron in schizophrenia, Dev. Neurobiol. 71 (2011) 118-127."
+      },
+      {
+        "ref_id": "114",
+        "text": "M. Inan, T.J. Petros, S.A. Anderson, Losing your inhibition: Linking cortical GABAergic interneurons to schizophrenia, Neurobiol. Disease 53 (2013) 3648."
+      },
+      {
+        "ref_id": "115",
+        "text": "D. Joshi, J.M. Fullerton, C.S. Weickert, Elevated ErbB4 mRNA is related to interneuron deficit in prefrontal cortex in schizophrenia, J. Psychiatr. Res. 53 (2014) 125-132."
+      },
+      {
+        "ref_id": "116",
+        "text": "H. Zeng, J.R. Sanes, Neuronal cell-type classification: Challenges, opportunities and the path forward, Nat. Rev. Neurosci. 18 (2017) 530-546."
+      },
+      {
+        "ref_id": "117",
+        "text": "R. Yuste, M. Hawrylycz, N. Aalling, A. Aguilar-Falles, D. Arendt, R.A. Arnedillo, G.A. Ascoli, C. Bielza, V. Bokharaie, T.B. Bergmann, et al., A community-based transcriptionist classification and nomenclature of neocortical cell types, Nat. Neurosci. (2020) 1-13."
+      },
+      {
+        "ref_id": "118",
+        "text": "B. Mihaljević, P. Larrañaga, R. Benavides-Piccione, S. Hill, J. DeFelipe, C. Bielza, Towards a supervised classification of neocortical interneuron morphologies, BMC Bioinf. 19 (2018) 511."
+      },
+      {
+        "ref_id": "119",
+        "text": "B. Tasic, V. Menon, T.N. Nguyen, T.K. Kim, T. Jarsky, Z. Yao, B. Levi, L.T. Gray, S. A. Sorensen, T. Dolbeare, D. Bertagnolli, J. Goldy, N. Shapovalova, S. Parry, C. Lee, K. Smith, A. Bernard, L. Madisen, S.M. Sunkin, M. Hawrylycz, C. Koch, H. Zeng, Adult mouse cortical cell taxonomy revealed by single cell transcriptomics, Nat. Neurosci. 19 (2016) 335-346."
+      },
+      {
+        "ref_id": "120",
+        "text": "B. Cauli, E. Audinat, B. Lambolez, M.C. Angulo, N. Ropert, K. Tsuzuki, S. Hestrin, J. Rossier, Molecular and physiological diversity of cortical nonpyramidal cells, J. Neurosci. 17 (1997) 3894-3906."
+      },
+      {
+        "ref_id": "121",
+        "text": "H. Markram, E. Muller, S. Ramaswamy, M. Reimann, M. Abdellah, C. Sanchez, A. Adamaki, L. Alonso-Nanclares, N. Antille, S. Araever, G. Kahou, T. Berger, A. Bilgili, N. Buncic, A. Chalimonurfa, G. Chindemi, J.-D. Courcol, F. Delalondre, V. Delattre, S. Druckmann, R. Dumuse, J. Dynes, S. Eilemann, E. Gal, M. Gevaert, J.-P. Chobril, A. Gidon, J. Graham, A. Gupta, V. Haenel, E. Hay, T. Heinis, J. Hernando, M. Hines, L. Kanari, D. Keller, J. Kenyon, G. Khazen, Y. Kim, J. King, Z. Kisvarday, P. Kumbhar, S. Lasserre, J.-V. Le Be, B. Magalhaes, A. MercháltPerre, J. Meystre, B. Morrice, J. Muller, A. Munoz-Cespedes, S. Muralidhar, K. Muthurasa, D. Nachhaur, T. Newton, M. Nolte, A. Ovcharenko, J. Palacios, L. Pastor, R. Perin, R. Ranjan, I. Riachi, J.-R. Rodriguez, J. Riquelme, C. Rössert, K. Sfyrakis, Y. Shi, J. Shillcock, G. Silberberg, R. Silva, F. Taubeed, M. Tclefont, M. Toledo-Rodriguez, T. Tränkler, W. Van Geit, J. Díaz, R. Walker, Y. Wang, S. Zaninetta, J. DeFelipe, S. Hill, I. Segev, F. Schürmann, Reconstruction and simulation of neocortical microcircuitry, Cell 163 (2015) 456-492."
+      },
+      {
+        "ref_id": "122",
+        "text": "H. Markram, M. Toledo-Rodriguez, Y. Wang, A. Gupta, G. Silberberg, C. Wu, Interneurons of the neocortical inhibitory system, Nat. Rev. Neurosci. 5 (2004) 793-807."
+      },
+      {
+        "ref_id": "123",
+        "text": "J. DeFelipe, P.L. López-Cruz, R. Benavides-Piccione, C. Bielza, P. Larra naga, S. Anderson, A. Burkhalter, B. Cauli, A. Fairén, D. Feldmeyer, G. Fishell, D. Fitzpatrick, T.P. Freund, G. González-Burgos, S. Hestrin, S. Hill, P.R. Hof, J. Huang, E.G. Jones, Y. Kawaguchi, Z. Kisvárday, Y. Kubota, D.A. Lewis, O. Marin, H. Markram, C.J. McBain, H.S. Meyer, H. Monyer, S.B. Nelson, K. Rockland, J. Rossier, J.L.R. Robenstein, B. Rudy, M. Scanziani, G.M. Shepherd, C.C. Sherwood, J.F. Staiger, G. Tamás, A. Thomson, Y. Wang, R. Yuste, G.A. Ascoli, New insights into the classification and nomenclature of cortical GABAergic interneurons, Nat. Rev. Neurosci. 14 (2013) 202-216."
+      },
+      {
+        "ref_id": "124",
+        "text": "D. Feldmeyer, G. Qi, V. Emmenegger, J.F. Staiger, Inhibitory interneurons and their circuit motifs in the many layers of the barrel cortex, Neuroscience 368 (2018) 132-151."
+      },
+      {
+        "ref_id": "125",
+        "text": "R. Tremblay, S. Lee, B. Rudy, GABAergic interneurons in the neocortex: From cellular properties to circuits, Neuron 91 (2016) 260-292."
+      },
+      {
+        "ref_id": "126",
+        "text": "R. Armañanzas, G.A. Ascoli, Towards the automatic classification of neurons, Trends Neurosci. 38 (2015) 307-318."
+      },
+      {
+        "ref_id": "127",
+        "text": "F.A.C. Azevedo, L.R.B. Carvalho, L.T. Grinberg, J.M. Farfel, R.E.L. Ferretti, R.E.P. Leite, W.J. Filho, R. Lent, S. Herculano-Houzel, Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain, J. Comparat. Neurol. 513 (2009) 532-541."
+      },
+      {
+        "ref_id": "128",
+        "text": "O. Sporns, Networks of the Brain, MIT Press, 2011."
+      },
+      {
+        "ref_id": "129",
+        "text": "J. DeFelipe, J. Fair nas, The pyramidal neuron of the cerebral cortex: Morphological and chemical characteristics of the synaptic inputs, Prog. Neurobiol. 39 (1992) 563-607."
+      },
+      {
+        "ref_id": "130",
+        "text": "E. White, Cortical Circuits: Synaptic Organization of the Cerebral Cortex Structure, Function, and Theory, Birkhäuser, 1989.."
+      },
+      {
+        "ref_id": "131",
+        "text": "A. Peters, E.G. Jones, Cerebral Cortex: Volume 1: Cellular Components of the Cerebral Cortex, Plenum Press, 1984.."
+      },
+      {
+        "ref_id": "132",
+        "text": "J. DeFelipe, Cortical interneurons: From Cajal to 2001, Prog. Brain Res. 130 (2002) 215-238."
+      },
+      {
+        "ref_id": "133",
+        "text": "B. Mihaljević, R. Benavides-Piccione, C. Bielza, P. Larrañaga, J. DeFelipe, Classification of GABAergic interneurons by leading neuroscientists, Scientific Data 6 (2019) 1-6."
+      },
+      {
+        "ref_id": "134",
+        "text": "B. Mihaljević, R. Benavides-Piccione, C. Bielza, J. DeFelipe, P. Larrañaga, Bayesian network classifiers for categorizing cortical GABAergic interneurons, Neuroinformatics 13 (2015) 192-208."
+      },
+      {
+        "ref_id": "135",
+        "text": "B. Mihaljević, C. Bielza, R. Benavides-Piccione, J. DeFelipe, P. Larrañaga, Multidimensional classification of GABAergic interneurons with Bayesian network-modeled label uncertainty, Front. Comput. Neurosci. 8 (2014) 150."
+      },
+      {
+        "ref_id": "136",
+        "text": "B. Mihaljević, R. Benavides-Piccione, L. Guerra, J. DeFelipe, P. Larrañaga, C. Bielza, Classifying GABAergic interneurons with semi-supervised projected model-based clustering, Artif. Intell. Med. 65 (2015) 49-59."
+      },
+      {
+        "ref_id": "137",
+        "text": "P.L. López-Cruz, P. Larrañaga, J. DeFelipe, C. Bielza, Bayesian network modeling of the consensus between experts: An application to neuron classification, Int. J. Approximate Reasoning 55 (2014) 3-22."
+      },
+      {
+        "ref_id": "138",
+        "text": "H. Borchani, C. Bielza, P. Marti, P. Larrañaga, Markov blanket-based approach for learning multi-dimensional Bayesian network classifiers: An application to predict the European Quality of Life-5 Dimensions, EQ-5D) from the 39item Parkinson's Disease Questionnaire (PDQ-39, J. Biomed. Inform. 45 (2012) 1175-1184."
+      },
+      {
+        "ref_id": "139",
+        "text": "D.E. Donohue, G.A. Ascoli, A comparative computer simulation of dendritic morphology, PLoS Computational Biology 4 (2008) e1000089."
+      },
+      {
+        "ref_id": "140",
+        "text": "S. Loengs-Sanchez, P. Larrañaga, C. Bielza, A directional-linear Bayesian network and its application for clustering and simulation of neural somas, IEEE Access 7 (2019) 69907-69921."
+      },
+      {
+        "ref_id": "141",
+        "text": "W.W. Cohen, Fast effective rule induction, in: Proceedings of the Twelfth International Conference on Machine Learning, Morgan Kaufmann, 1995, pp. 115-123."
+      },
+      {
+        "ref_id": "142",
+        "text": "P. Larrañaga, D. Atienza, J. Diaz-Rozo, A. Oghechie, C.E. Puerto-Santana, C. Bielza, Industrial Applications of Machine Learning, CRC Press, 2018."
+      },
+      {
+        "ref_id": "143",
+        "text": "L. Page, S. Brin, R. Motwani, T. Winograd, The PageRank citation ranking: Bringing order to the web, Technical Report, Stanford Inbidab, 1999."
+      },
+      {
+        "ref_id": "144",
+        "text": "D.F. Gleich, PageRank beyond the Web, SIAM Rev. 57 (2015) 321-363."
+      },
+      {
+        "ref_id": "145",
+        "text": "J.H. Holland, Adaptation in Natural and Artificial Systems, University of Michigan Press, 1975."
+      },
+      {
+        "ref_id": "146",
+        "text": "I. Rechenberg, Evolutionstrategie: Optimierung technischer Systeme nach Prinzipien der biologischen Evolution, Frommann-Holzboog, 1973.."
+      },
+      {
+        "ref_id": "147",
+        "text": "L.J. Fogel, A.J. Owens, M.J. Walsh, Artificial Intelligence through Simulated Evolution, John Wiley \\& Sons, New York, 1966."
+      },
+      {
+        "ref_id": "148",
+        "text": "J.R. Koza, Genetic programming: On the programming of computers by means of natural selection, The MIT Press, 1992."
+      },
+      {
+        "ref_id": "149",
+        "text": "P. Larrañaga, H. Karshenas, C. Bielza, R. Santana, A review on evolutionary algorithms in Bayesian network learning and inference tasks, Inf. Sci. 233 (2013) 109-125."
+      },
+      {
+        "ref_id": "150",
+        "text": "D.E. Goldberg, The Design of Innovation: Lessons from and for Competent Genetic Algorithms, Kluwer Academic Press, 2002."
+      },
+      {
+        "ref_id": "151",
+        "text": "M. Pelikan, D.E. Goldberg, F. Lobo, A survey of optimization by building and using probabilistic models, Comput. Optim. Appl. 21 (2002) 5-20."
+      },
+      {
+        "ref_id": "152",
+        "text": "R. Armañanzas, Y. Saeyo, I. Inza, M. Garcia-Torres, C. Bielza, Y. van de Peer, P. Larrañaga, Peakbin selection in mass spectrometry data using a consensus approach with estimation of distribution algorithms, IEEE/ACM Trans. Comput. Biol. Bioinf. 8 (2010) 760-774."
+      },
+      {
+        "ref_id": "153",
+        "text": "S. Baluja, Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning, Technical Report CMU-CS-94-163, Carnegie Mellon University, 1994."
+      },
+      {
+        "ref_id": "154",
+        "text": "G.R. Harik, F.G. Lobo, D.E. Goldberg, The compact genetic algorithm, IEEE Trans. Evol. Comput. 3 (1999) 287-297."
+      },
+      {
+        "ref_id": "155",
+        "text": "J.S. De Bonet, C.L. Isbell, P. Viola, MIMIC: Finding optima by estimating probability densities, in: Proceedings of the 9th International Conference on Neural Information Processing Systems, MIT Press, 1996, pp. 424-430."
+      },
+      {
+        "ref_id": "156",
+        "text": "R. Etxeberria, P. Larrañaga, Global optimization using Bayesian networks, in: Proceedings of the Second Symposium on Artificial Intelligence (CIMAF-99), pp. 151-173."
+      },
+      {
+        "ref_id": "157",
+        "text": "M. Pelikan, D.E. Goldberg, E. Cantó-Paz, et al., ROA: The Bayesian optimization algorithm, in: Proceedings of the genetic and evolutionary computation conference, volume 1, pp. 525-532.."
+      },
+      {
+        "ref_id": "158",
+        "text": "P. Larrañaga, H. Karshenas, C. Bielza, R. Santana, A review on probabilistic graphical models in evolutionary computation, J. Heurist. 18 (2012) 795-819."
+      },
+      {
+        "ref_id": "159",
+        "text": "R. Santana, R. Armañanzas, C. Bielza, P. Larrañaga, Network measures for information extraction in evolutionary algorithms, Int. J. Comput. Intell. Syst. 6 (2013) 1163-1188."
+      },
+      {
+        "ref_id": "160",
+        "text": "N. Krasnogor, B. Blackburne, E.K. Burke, J.D. Hirst, Algorithms for protein structure prediction, in: Parallel Problem Solving from Nature, volume 2439 of Lecture Notes in Computer Science, Springer Verlag, 2002, pp. 769-778.."
+      },
+      {
+        "ref_id": "161",
+        "text": "K. Deb, A. Pratap, S. Agarwal, T. Meyarivan, A fast and elitist multiobjective genetic algorithm: NSGA-II, IEEE Trans. Evol. Comput. 6 (2002) 182-197."
+      },
+      {
+        "ref_id": "162",
+        "text": "H. Karshenas, R. Santana, C. Bielza, P. Larrañaga, Multiobjective estimation of distribution algorithm based on joint modeling of objectives and variables, IEEE Trans. Evol. Comput. 18 (2013) 519-542."
+      },
+      {
+        "ref_id": "163",
+        "text": "J. Schäfer, K. Strimmer, A shrinkage approach to large-scale covariance matrix estimation and implications for functional genomics, Statist. Appl. Genet. Mol. Biol. 4 (2005)."
+      },
+      {
+        "ref_id": "164",
+        "text": "S. Huband, P. Kingston, L. Barone, L. While, A review of multiobjective test problems and a scalable test problem toolkit, IEEE Trans. Evol. Comput. 10 (2006) 477-506."
+      },
+      {
+        "ref_id": "165",
+        "text": "Bojan Mihaljević, Pedro Larrañaga, Concha Bielza, Comparing the Electrophysiology and Morphology of Human and Mouse Layer 2/3 Pyramidal Neurons With Bayesian Networks, Frontiers in Neuroinformatics 15 (2021), https://doi.org/10.3389/fninf.2021.580873, In press."
+      }
+    ],
+    "reference_count": 165,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": []
+}

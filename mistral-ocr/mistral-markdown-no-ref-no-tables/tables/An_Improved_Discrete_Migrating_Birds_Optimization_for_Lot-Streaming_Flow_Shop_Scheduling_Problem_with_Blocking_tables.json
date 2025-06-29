@@ -1,0 +1,388 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/An Improved Discrete Migrating Birds Optimization for Lot-Streaming Flow Shop Scheduling Problem with Blocking.md",
+    "filename": "An Improved Discrete Migrating Birds Optimization for Lot-Streaming Flow Shop Scheduling Problem with Blocking.md",
+    "title": "An Improved Discrete Migrating Birds Optimization for Lot-Streaming Flow Shop Scheduling Problem with Blocking",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameter setting",
+      "headers": [
+        "Parameter",
+        "Notation",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Number of jobs",
+          "$n$",
+          "$10,30,50,70,90,110$"
+        ],
+        [
+          "Number of machines",
+          "$m$",
+          "$5,10,20$"
+        ],
+        [
+          "Number of sub-lots",
+          "$l$",
+          16
+        ],
+        [
+          "Processing time of a sublot of job $j$ on machine $t$",
+          "$p_{j, t}$",
+          131
+        ],
+        [
+          "Population size",
+          "$P S$",
+          20
+        ],
+        [
+          "Number of initializing solutions",
+          "$\\beta$",
+          3
+        ],
+        [
+          "Local search rate",
+          "$p l s$",
+          0.6
+        ],
+        [
+          "Independently run times",
+          "$T$",
+          5
+        ],
+        [
+          "Stopping time",
+          "Time $_{\\max }$",
+          "$T \\times n \\times m$ milliseconds"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Performance comparison of EDA, DIWO, MMBO and NMBO algorithms ( $\\mathrm{T}=5$ )",
+      "headers": [
+        "Instances",
+        "EDA",
+        "DIWO",
+        "MMBO",
+        "NMBO",
+        "CUP time"
+      ],
+      "rows": [
+        [
+          "$10 \\times 5$",
+          0.53,
+          0.53,
+          0.51,
+          0.51,
+          0.25
+        ],
+        [
+          "$10 \\times 10$",
+          0.47,
+          0.41,
+          0.45,
+          0.42,
+          0.5
+        ],
+        [
+          "$10 \\times 20$",
+          0.84,
+          0.97,
+          0.58,
+          0.61,
+          1.0
+        ],
+        [
+          "$50 \\times 5$",
+          0.62,
+          0.63,
+          0.94,
+          0.51,
+          1.25
+        ],
+        [
+          "$50 \\times 10$",
+          0.63,
+          0.63,
+          0.61,
+          0.39,
+          2.5
+        ],
+        [
+          "$50 \\times 20$",
+          0.51,
+          0.71,
+          0.63,
+          0.68,
+          5.0
+        ],
+        [
+          "$70 \\times 5$",
+          1.11,
+          0.94,
+          0.85,
+          0.73,
+          1.75
+        ],
+        [
+          "$70 \\times 10$",
+          0.63,
+          0.73,
+          0.71,
+          0.45,
+          3.5
+        ],
+        [
+          "$70 \\times 20$",
+          0.74,
+          0.42,
+          0.41,
+          0.29,
+          7.0
+        ],
+        [
+          "$110 \\times 5$",
+          0.95,
+          0.79,
+          0.85,
+          0.74,
+          2.75
+        ],
+        [
+          "$110 \\times 10$",
+          1.11,
+          1.01,
+          0.85,
+          0.63,
+          5.5
+        ],
+        [
+          "$110 \\times 20$",
+          0.89,
+          0.68,
+          0.53,
+          0.35,
+          11.0
+        ],
+        [
+          "$200 \\times 10$",
+          0.48,
+          0.36,
+          0.25,
+          0.22,
+          10.0
+        ],
+        [
+          "$200 \\times 20$",
+          0.55,
+          0.46,
+          0.39,
+          0.34,
+          20.0
+        ],
+        [
+          "$500 \\times 20$",
+          0.78,
+          0.74,
+          0.65,
+          0.32,
+          50.0
+        ],
+        [
+          "Average",
+          0.72,
+          0.67,
+          0.61,
+          0.48,
+          8.14
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Performance comparison of EDA, DIWO, MMBO and NMBO algorithms ( $\\mathrm{T}=10$ )",
+      "headers": [
+        "Instances",
+        "EDA",
+        "DIWO",
+        "MMBO",
+        "NMBO",
+        "CUP time"
+      ],
+      "rows": [
+        [
+          "$10 \\times 5$",
+          0.44,
+          0.44,
+          0.45,
+          0.45,
+          0.5
+        ],
+        [
+          "$10 \\times 10$",
+          0.33,
+          0.35,
+          0.35,
+          0.24,
+          1.0
+        ],
+        [
+          "$10 \\times 20$",
+          0.69,
+          0.56,
+          0.45,
+          0.38,
+          2.0
+        ],
+        [
+          "$50 \\times 5$",
+          0.48,
+          0.51,
+          0.74,
+          0.44,
+          2.5
+        ],
+        [
+          "$50 \\times 10$",
+          0.51,
+          0.5,
+          0.52,
+          0.36,
+          5.0
+        ],
+        [
+          "$50 \\times 20$",
+          0.34,
+          0.54,
+          0.49,
+          0.23,
+          10.0
+        ],
+        [
+          "$70 \\times 5$",
+          0.76,
+          0.61,
+          0.48,
+          0.26,
+          3.5
+        ],
+        [
+          "$70 \\times 10$",
+          0.49,
+          0.48,
+          0.43,
+          0.27,
+          7.0
+        ],
+        [
+          "$70 \\times 20$",
+          0.52,
+          0.39,
+          0.31,
+          0.22,
+          14.0
+        ],
+        [
+          "$110 \\times 5$",
+          0.61,
+          0.59,
+          0.73,
+          0.48,
+          5.5
+        ],
+        [
+          "$110 \\times 10$",
+          0.74,
+          0.61,
+          0.64,
+          0.46,
+          11.0
+        ],
+        [
+          "$110 \\times 20$",
+          0.56,
+          0.51,
+          0.22,
+          0.24,
+          22.0
+        ],
+        [
+          "$200 \\times 10$",
+          0.33,
+          0.21,
+          0.19,
+          0.11,
+          20.0
+        ],
+        [
+          "$200 \\times 20$",
+          0.39,
+          0.37,
+          0.32,
+          0.26,
+          40.0
+        ],
+        [
+          "$500 \\times 20$",
+          0.52,
+          0.59,
+          0.38,
+          0.16,
+          100.0
+        ],
+        [
+          "Average",
+          0.51,
+          0.48,
+          0.45,
+          0.3,
+          16.27
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 reports the two-side Wilcoxon rank sum tests of iMBO, EDA, DIWO and MMBO algorithms with significant level equal to $5 \\%$. In the Table 4, there are two values, i.e., p value and h value. P is the probability of observing the given result by chance if the null hypothesis is true. When h equals 1 , it indicates that the results obtained by the two compared algorithms are obviously different. When h equals 0 , it denotes that the difference between the two algorithms is not significant at $5 \\%$ significant level. From the Table 4, the h values of the compared algorithms are equal to 1 , and the p values are close to 0 . Thus, it can be demonstrated that iMOB proposed in this paper is significantly different from the other compared algorithms.",
+      "headers": [
+        "(NMBO, EDA)",
+        "",
+        "(NMBO, DIWO)",
+        "",
+        "(NMBO,MMBO)",
+        ""
+      ],
+      "rows": [
+        [
+          "p",
+          "h",
+          "p",
+          "h",
+          "p",
+          "h"
+        ],
+        [
+          "$7.42136 \\mathrm{e}-057$",
+          1,
+          "$3.95713 \\mathrm{e}-061$",
+          1,
+          "$6.96214 \\mathrm{e}-0.32$",
+          1
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/A Novel Graph-Based Estimation of the Distribution Algorithm and its Extension Using Reinforcement Learning.md",
+    "filename": "A Novel Graph-Based Estimation of the Distribution Algorithm and its Extension Using Reinforcement Learning.md",
+    "title": "A Novel Graph-Based Estimation of the Distribution Algorithm and its Extension Using Reinforcement Learning",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Judgment and Processing Functions for the Tileworld System",
+      "headers": [
+        "Function",
+        "Symbol",
+        "Description",
+        "No. of Arguments",
+        "Content of Arguments",
+        ""
+      ],
+      "rows": [
+        [
+          "$J_{1}$",
+          "JF",
+          "Judge Forward",
+          "",
+          1,
+          2
+        ],
+        [
+          "$J_{2}$",
+          "JB",
+          "Judge Backward",
+          5,
+          3,
+          4
+        ],
+        [
+          "$J_{3}$",
+          "JL",
+          "Judge Left",
+          "",
+          5,
+          ""
+        ],
+        [
+          "$J_{4}$",
+          "JR",
+          "Judge Right",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$J_{5}$",
+          "DT",
+          "Judge the Direction of the nearest Tile from the agent",
+          "",
+          1,
+          2
+        ],
+        [
+          "$J_{6}$",
+          "DH",
+          "Judge the Direction of the nearest Hole from the agent",
+          5,
+          35,
+          4
+        ],
+        [
+          "$J_{7}$",
+          "DHT",
+          "Judge the Direction of the nearest Hole from the nearest Tile",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$J_{8}$",
+          "DST",
+          "Judge the Direction of the Second nearest Tile from the agent",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$P_{1}$",
+          "MF",
+          "Move Forward",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$P_{2}$",
+          "TL",
+          "Turn Left",
+          0,
+          "",
+          ""
+        ],
+        [
+          "$P_{3}$",
+          "TR",
+          "Turn Right",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$P_{4}$",
+          "ST",
+          "Stay",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "II",
+      "table_title": "PARAMETER SETTINGS FOR THE TILEWORLD SYSTEM",
+      "headers": [
+        "",
+        "GNP",
+        "GP",
+        "PIPE",
+        "EDP",
+        "Sarsa",
+        "PMBGNP",
+        "RPMBGNP"
+      ],
+      "rows": [
+        [
+          "Population size $M$",
+          300,
+          300,
+          200,
+          1800,
+          "-",
+          1800,
+          1800
+        ],
+        [
+          "- elite ind.",
+          1,
+          1,
+          1,
+          100,
+          "-",
+          100,
+          100
+        ],
+        [
+          "- crossover ind.",
+          120,
+          120,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "- mutation ind.",
+          179,
+          179,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "- promising ind. $N$",
+          "-",
+          "-",
+          1,
+          900,
+          "-",
+          900,
+          900
+        ],
+        [
+          "Tournament size",
+          2,
+          2,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Crossover rate",
+          0.1,
+          0.9,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mutation rate",
+          0.01,
+          0.01,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "learning rate",
+          "-",
+          "-",
+          0.02,
+          0.1,
+          0.2,
+          "-",
+          0.2
+        ],
+        [
+          "Other parameters",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "- PIPE",
+          "(fitness constant) $=1$ (elitist update probability) $=0$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "- Sarsa",
+          "(discount factor) $\\gamma=0.9$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "- PMBGNP",
+          "$\\eta=0.02$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "- RPMBGNP",
+          "(discount factor) $\\gamma=0.9$",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 8
+    },
+    {
+      "table_number": "III",
+      "table_title": "RESULTS OF A SINGLE TileWORD SYSTEM (SimULATION I)",
+      "headers": [
+        "",
+        "Fitness (standard deviation)",
+        "suc\\% ${ }^{1}$",
+        "Rank",
+        "$t$-test $1^{2}$",
+        "RFEs (standard deviation)",
+        "$t$-test 2"
+      ],
+      "rows": [
+        [
+          "GNP",
+          "$586.5 \\pm 69.8$",
+          93.3,
+          3,
+          "$\\begin{aligned} & 2.06 \\mathrm{e}-01 \\\\ & 4.04 \\mathrm{e}-02 \\end{aligned}$",
+          "$56160 \\pm 73983$",
+          "$\\begin{aligned} & \\mathbf{3 . 6 9 e - 0 3} \\\\ & \\mathbf{4 . 8 6 e - 0 2} \\end{aligned}$"
+        ],
+        [
+          "GP",
+          "$478.9 \\pm 151.6$",
+          40.0,
+          5,
+          "$\\begin{aligned} & \\mathbf{4 . 0 3 e - 0 5} \\\\ & \\mathbf{2 . 0 7 e - 0 5} \\end{aligned}$",
+          "$238090 \\pm 90072$",
+          "$\\begin{aligned} & \\mathbf{5 . 8 9 e - 1 4} \\\\ & \\mathbf{9 . 6 4 e - 1 3} \\end{aligned}$"
+        ],
+        [
+          "PIPE",
+          "$191.3 \\pm 18.0$",
+          0.0,
+          9,
+          "$\\begin{aligned} & \\mathbf{1 . 3 4 e - 2 6} \\\\ & \\mathbf{2 . 9 6 e - 3 6} \\end{aligned}$",
+          "$300000 \\pm 0$",
+          "$\\begin{aligned} & \\mathbf{1 . 3 4 e - 5 9} \\\\ & \\mathbf{1 . 1 2 e - 3 5} \\end{aligned}$"
+        ],
+        [
+          "EDP",
+          "$481.3 \\pm 99.9$",
+          76.7,
+          4,
+          "$\\begin{aligned} & \\mathbf{2 . 5 8 e - 0 6} \\\\ & \\mathbf{3 . 3 9 e - 0 8} \\end{aligned}$",
+          "$172720 \\pm 101916$",
+          "$\\begin{aligned} & \\mathbf{2 . 7 4 e - 0 9} \\\\ & \\mathbf{4 . 7 3 e - 0 8} \\end{aligned}$"
+        ],
+        [
+          "Sarsa",
+          "$396.8 \\pm 114.3$",
+          26.7,
+          6,
+          "$\\begin{aligned} & \\mathbf{5 . 1 7 e - 1 0} \\\\ & \\mathbf{1 . 8 5 e - 1 1} \\end{aligned}$",
+          "$268761 \\pm 66519$",
+          "$\\begin{aligned} & \\mathbf{5 . 5 2 e - 1 9} \\\\ & \\mathbf{3 . 0 9 e - 1 8} \\end{aligned}$"
+        ],
+        [
+          "PMBGNP",
+          "$608.5 \\pm 54.4$",
+          100.0,
+          2,
+          "-",
+          "$12600 \\pm 2865$",
+          "-"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "$4.32 \\mathrm{e}-01$",
+          "",
+          "$\\mathbf{4 . 2 8 e - 0 5}$"
+        ],
+        [
+          "RPMBGNP",
+          "$617.4 \\pm 20.2$",
+          100.0,
+          1,
+          "-",
+          "$28320 \\pm 18137$",
+          "-"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "-",
+          "",
+          "-"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "IV",
+      "table_title": "RESULTS OF TEN TileWORD SYSTEMS (SimULATION II)",
+      "headers": [
+        "",
+        "Fitness (std. dev.)",
+        "DT",
+        "perc.\\%",
+        "Rank",
+        "$t$-test"
+      ],
+      "rows": [
+        [
+          "GNP",
+          "$4171.4 \\pm 692.0$",
+          "$23.0 \\pm 3.8$",
+          76.6,
+          3,
+          "$\\begin{aligned} & 2.06 \\mathrm{e}-01 \\\\ & \\mathbf{1 . 2 0 e - 0 4} \\end{aligned}$"
+        ],
+        [
+          "GP",
+          "$3356.3 \\pm 679.2$",
+          "$17.6 \\pm 3.5$",
+          58.7,
+          6,
+          "$\\begin{aligned} & \\mathbf{2 . 4 4 e - 0 6} \\\\ & \\mathbf{2 . 0 4 e - 1 2} \\end{aligned}$"
+        ],
+        [
+          "PIPE",
+          "$2267.4 \\pm 338.0$",
+          "$11.5 \\pm 2.4$",
+          38.4,
+          9,
+          "$\\begin{aligned} & \\mathbf{3 . 0 5 e - 1 5} \\\\ & \\mathbf{1 . 1 2 e - 2 1} \\end{aligned}$"
+        ],
+        [
+          "EDP",
+          "$3619.7 \\pm 653.3$",
+          "$18.3 \\pm 4.0$",
+          61.0,
+          5,
+          "$\\begin{aligned} & \\mathbf{4 . 0 9 e - 0 5} \\\\ & \\mathbf{4 . 0 4 e - 1 1} \\end{aligned}$"
+        ],
+        [
+          "Sarsa",
+          "$3719.2 \\pm 1106.2$",
+          "$18.9 \\pm 5.1$",
+          62.9,
+          4,
+          "$\\begin{aligned} & \\mathbf{1 . 7 2 e - 0 2} \\\\ & \\mathbf{2 . 6 8 e - 0 5} \\end{aligned}$"
+        ],
+        [
+          "PMBGNP",
+          "$4384.1 \\pm 735.5$",
+          "$24.2 \\pm 3.7$",
+          80.7,
+          2,
+          "-"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$\\mathbf{7 . 2 0 e - 0 3}$"
+        ],
+        [
+          "RPMBGNP",
+          "$4820.2 \\pm 495.0$",
+          "$26.5 \\pm 2.2$",
+          88.4,
+          1,
+          "-"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "V",
+      "table_title": "COMPUTATION TIME IN SIMULATION II OF THE TileWORLD SYSTEM",
+      "headers": [
+        "",
+        "GNP",
+        "GP",
+        "PIPE",
+        "EDP",
+        "Sarsa",
+        "PMBGNP",
+        "RPMBGNP"
+      ],
+      "rows": [
+        [
+          "Computation Time <br> (Unit: sec.)",
+          367.3,
+          696.9,
+          760.0,
+          1081.2,
+          284.6,
+          429.5,
+          482.0
+        ],
+        [
+          "Rank",
+          2,
+          5,
+          6,
+          7,
+          1,
+          3,
+          4
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    },
+    {
+      "table_number": "VI",
+      "table_title": "Fitness Results in New EnVironments of the TileWorld System",
+      "headers": [
+        "",
+        "GNP",
+        "GP",
+        "PIPE",
+        "EDP",
+        "Sarsa",
+        "PMBGNP",
+        "RPMBGNP"
+      ],
+      "rows": [
+        [
+          "Change tile positions",
+          "$\\pm 282.8$",
+          1376.4,
+          1148.4,
+          1435.0,
+          1903.8,
+          "$\\begin{aligned} & 2466.8 \\\\ & \\pm 823.3 \\end{aligned}$",
+          "$\\begin{aligned} & 2770.8 \\\\ & \\pm 944.9 \\end{aligned}$"
+        ],
+        [
+          "Change tile and hole positions",
+          "$\\begin{aligned} & 552.0 \\\\ & \\pm 860.1 \\end{aligned}$",
+          "$\\begin{aligned} & 219.0 \\\\ & \\pm 830.0 \\end{aligned}$",
+          "$\\begin{aligned} & 203.8 \\\\ & \\pm 786.6 \\end{aligned}$",
+          "$\\begin{aligned} & 244.2 \\\\ & \\pm 850.6 \\end{aligned}$",
+          "$\\begin{aligned} & 324.4 \\\\ & \\pm 641.4 \\end{aligned}$",
+          "$\\begin{aligned} & 594.8 \\\\ & \\pm 833.8 \\end{aligned}$",
+          "$\\begin{aligned} & 650.0 \\\\ & \\pm 918.6 \\end{aligned}$"
+        ],
+        [
+          "Rank",
+          3,
+          6,
+          7,
+          5,
+          4,
+          2,
+          1
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 8
+    }
+  ]
+}

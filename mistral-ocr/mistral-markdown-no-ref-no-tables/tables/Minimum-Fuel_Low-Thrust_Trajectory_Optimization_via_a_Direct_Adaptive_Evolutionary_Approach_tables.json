@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Minimum-Fuel Low-Thrust Trajectory Optimization via a Direct Adaptive Evolutionary Approach.md",
+    "filename": "Minimum-Fuel Low-Thrust Trajectory Optimization via a Direct Adaptive Evolutionary Approach.md",
+    "title": "Minimum-Fuel Low-Thrust Trajectory Optimization via a Direct Adaptive Evolutionary Approach",
+    "year": "2024"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Orbital elements of initial and final orbits",
+      "headers": [
+        "",
+        "Initial orbit",
+        "Final orbit"
+      ],
+      "rows": [
+        [
+          "$a$",
+          38000,
+          11700
+        ],
+        [
+          "e",
+          0.05,
+          0.2
+        ],
+        [
+          "$i$",
+          "$70^{\\circ}$",
+          "$40^{\\circ}$"
+        ],
+        [
+          "$\\Omega$",
+          "$175^{\\circ}$",
+          "$255^{\\circ}$"
+        ],
+        [
+          "$\\omega$",
+          "$195^{\\circ}$",
+          "$330^{\\circ}$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "Characteristics of transfer trajectories for each maximum thrust limit",
+      "headers": [
+        "$T_{\\max }[N]$",
+        "Rev.",
+        "$t_{f}[\\mathrm{~h}]$",
+        "$E_{a}[k m]$",
+        "$E_{e}$",
+        "$E_{i}[d e g]$",
+        "$E_{\\Omega}[d e g]$",
+        "$E_{\\omega}[d e g]$"
+      ],
+      "rows": [
+        [
+          1.0,
+          246,
+          2172.7043,
+          8.8369,
+          "$1.9189 \\mathrm{e}-4$",
+          "$9.7558 \\mathrm{e}-3$",
+          "$7.6068 \\mathrm{e}-3$",
+          "$1.5612 \\mathrm{e}-2$"
+        ],
+        [
+          1.7,
+          156,
+          1368.9828,
+          5.0644,
+          "$6.4373 \\mathrm{e}-5$",
+          "$2.3831 \\mathrm{e}-3$",
+          "$8.6188 \\mathrm{e}-2$",
+          "$4.0312 \\mathrm{e}-3$"
+        ],
+        [
+          2.4,
+          118,
+          1040.2255,
+          5.4856,
+          "$4.9598 \\mathrm{e}-5$",
+          "$6.2228 \\mathrm{e}-3$",
+          "$2.7771 \\mathrm{e}-3$",
+          "$2.3147 \\mathrm{e}-3$"
+        ],
+        [
+          3.1,
+          94,
+          811.6097,
+          7.9372,
+          "$3.5017 \\mathrm{e}-5$",
+          "$4.8484 \\mathrm{e}-3$",
+          "$1.0696 \\mathrm{e}-3$",
+          "$3.0198 \\mathrm{e}-3$"
+        ],
+        [
+          3.8,
+          80,
+          684.2225,
+          4.6495,
+          "$1.8960 \\mathrm{e}-6$",
+          "$1.8065 \\mathrm{e}-3$",
+          "$9.2294 \\mathrm{e}-3$",
+          "$3.3466 \\mathrm{e}-4$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 8
+    },
+    {
+      "table_number": "III",
+      "table_title": "Comparison of the algorithms' performance in 30 runs",
+      "headers": [
+        "",
+        "Adaptive approach",
+        "",
+        "Non-adaptive approach",
+        ""
+      ],
+      "rows": [
+        [
+          "$T_{\\max }[N]$",
+          "FR",
+          "RBP",
+          "FR",
+          "RBP"
+        ],
+        [
+          1,
+          "$73.33 \\%$",
+          "$0.000 e+00$",
+          "$36.67 \\%$",
+          "$3.197 e+01$"
+        ],
+        [
+          1.7,
+          "$86.67 \\%$",
+          "$0.000 e+00$",
+          "$53.33 \\%$",
+          "$6.649 e+00$"
+        ],
+        [
+          2.4,
+          "$93.33 \\%$",
+          "$3.704 e-08$",
+          "$66.67 \\%$",
+          "$0.000 e+00$"
+        ],
+        [
+          3.1,
+          "$100 \\%$",
+          "$4.432 e-09$",
+          "$83.33 \\%$",
+          "$0.000 e+00$"
+        ],
+        [
+          3.8,
+          "$100 \\%$",
+          "$0.000 e+00$",
+          "$96.67 \\%$",
+          "$1.447 e+01$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    }
+  ]
+}

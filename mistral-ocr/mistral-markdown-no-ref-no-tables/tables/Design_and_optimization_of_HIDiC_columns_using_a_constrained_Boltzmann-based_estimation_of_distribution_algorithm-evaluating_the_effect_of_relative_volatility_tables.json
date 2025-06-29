@@ -1,0 +1,789 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Design and optimization of HIDiC columns using a constrained Boltzmann-based estimation of distribution algorithm-evaluating the effect of relative volatility.md",
+    "filename": "Design and optimization of HIDiC columns using a constrained Boltzmann-based estimation of distribution algorithm-evaluating the effect of relative volatility.md",
+    "title": "Design and optimization of HIDiC columns using a constrained Boltzmann-based estimation of distribution algorithm-evaluating the effect of relative volatility",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Nomenclature",
+        ""
+      ],
+      "rows": [
+        [
+          "TAC (USD/Year)",
+          "Total annual cost"
+        ],
+        [
+          "SR",
+          "Rectifying section"
+        ],
+        [
+          "SS",
+          "Stripping section"
+        ],
+        [
+          "$\\Delta T_{\\text {SR-SS }}$ (K)",
+          "Temperature driving force"
+        ],
+        [
+          "NT",
+          "Total number of stages"
+        ],
+        [
+          "CR",
+          "Compression ratio"
+        ],
+        [
+          "RR",
+          "Reflux ratio"
+        ],
+        [
+          "$Q_{\\text {int }}(\\mathrm{kJ} / \\mathrm{h})$",
+          "Heat integrated"
+        ],
+        [
+          "$N_{\\text {SR }}$",
+          "Number of stages at SR"
+        ],
+        [
+          "$N_{\\text {SS }}$",
+          "Number of stages at SS"
+        ],
+        [
+          "$X_{\\text {purity }}$ (mol fraction)",
+          "Purity, mol fraction"
+        ],
+        [
+          "$X_{\\text {recovery }}$ (mol fraction)",
+          "Recovery, mol fraction"
+        ],
+        [
+          "COP (USD/Year)",
+          "Operation costs"
+        ],
+        [
+          "CC (USD/Year)",
+          "Capital costs"
+        ],
+        [
+          "$Q_{i}(k J / h)$",
+          "Heat integrated at stage $i$"
+        ],
+        [
+          "$A_{i}\\left(\\mathrm{~m}^{2}\\right)$",
+          "Heat transfer area per stage $i$"
+        ],
+        [
+          "$Q_{f}(k J / h)$",
+          "Total heat duty integrated"
+        ],
+        [
+          "$A_{i}\\left(\\mathrm{~m}^{2}\\right)$",
+          "Total heat transfer area"
+        ],
+        [
+          "$Q_{R}(k J / h)$",
+          "Reboiler duty"
+        ],
+        [
+          "$Q_{\\text {comp }}(k J / h)$",
+          "Compressor duty"
+        ],
+        [
+          "$Q_{\\text {cons-HIDIC }}(k J / h)$",
+          "Reboiler duty plus compressor duty of the HIDiC"
+        ],
+        [
+          "$Q_{\\text {R-CONV }}(k J / h)$",
+          "Reboiler duty of conventional sequence"
+        ],
+        [
+          "$\\eta$",
+          "Thermodynamic efficiency"
+        ],
+        [
+          "$W_{\\text {purity }}$",
+          "Factor of penalization per purity"
+        ],
+        [
+          "$W_{\\text {recovery }}$",
+          "Factor of penalization per recovery"
+        ],
+        [
+          "$W_{\\text {num_pen }}$",
+          "Factor of penalization per number of penalizations"
+        ],
+        [
+          "C",
+          "Compressor"
+        ],
+        [
+          "T.V.",
+          "Throttling valve"
+        ],
+        [
+          "$\\mathrm{CO}_{2}$-Emiss (Ton/h)",
+          "Carbon dioxide emissions"
+        ]
+      ],
+      "row_count": 29,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Case study.",
+      "headers": [
+        "Mixture",
+        "Relative volatility"
+      ],
+      "rows": [
+        [
+          1,
+          2.4
+        ],
+        [
+          2,
+          2.11
+        ],
+        [
+          "M3 (n-heptane/cyclohexane)",
+          1.68
+        ],
+        [
+          "M4 (n-butanol/isobutanol)",
+          1.44
+        ],
+        [
+          "M5 (n-octane/toluene)",
+          1.38
+        ],
+        [
+          "M6 (n-octane/ethylbenzene)",
+          1.248
+        ],
+        [
+          "M7 (ethylbenzene/o-xylene)",
+          1.23
+        ],
+        [
+          "M8 (benzene/1,1,1-trichloroethane)",
+          1.2
+        ],
+        [
+          "M9 (m-xylene/o-xylene)",
+          1.12
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Limits of optimization variables.",
+      "headers": [
+        "Mixture",
+        "NT",
+        "CR",
+        "RR"
+      ],
+      "rows": [
+        [
+          1,
+          "$20-60$",
+          "$1.1-10$",
+          "$1.5-20$"
+        ],
+        [
+          2,
+          "$20-60$",
+          "$1.1-10$",
+          "$1.5-20$"
+        ],
+        [
+          3,
+          "$28-68$",
+          "$1.1-10$",
+          "$1.5-20$"
+        ],
+        [
+          4,
+          "$48-88$",
+          "$1.1-10$",
+          "$1.5-20$"
+        ],
+        [
+          5,
+          "$48-88$",
+          "$1.1-10$",
+          "$8-25$"
+        ],
+        [
+          6,
+          "$70-110$",
+          "$1.1-5$",
+          "$8-25$"
+        ],
+        [
+          7,
+          "$70-110$",
+          "$1.1-5$",
+          "$8-25$"
+        ],
+        [
+          8,
+          "$74-114$",
+          "$1.1-5$",
+          "$20-70$"
+        ],
+        [
+          9,
+          "$102-142$",
+          "$1.1-5$",
+          "$65-90$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results of the optimization process, best HIDiC design for each case study.",
+      "headers": [
+        "Case study",
+        "Optimization variables",
+        "",
+        "",
+        "Constraints (targets)",
+        "",
+        "TAC"
+      ],
+      "rows": [
+        [
+          "",
+          "NT",
+          "CR",
+          "RR",
+          "Recovery",
+          "Purity",
+          "(USD/year)"
+        ],
+        [
+          1,
+          28,
+          2.15,
+          0.22,
+          0.9949,
+          0.9949,
+          531022.04
+        ],
+        [
+          2,
+          28,
+          1.99,
+          0.27,
+          0.9949,
+          0.995,
+          768770.52
+        ],
+        [
+          3,
+          56,
+          1.86,
+          0.38,
+          0.9949,
+          0.9949,
+          803937.05
+        ],
+        [
+          4,
+          72,
+          1.76,
+          0.084,
+          0.9953,
+          0.995,
+          1164170.08
+        ],
+        [
+          5,
+          72,
+          1.29,
+          4.18,
+          0.995,
+          0.995,
+          1527817.29
+        ],
+        [
+          6,
+          74,
+          1.34,
+          9.63,
+          0.9951,
+          0.9952,
+          2730126.2
+        ],
+        [
+          7,
+          78,
+          1.46,
+          2.55,
+          0.9947,
+          0.9953,
+          2421000.0
+        ],
+        [
+          8,
+          82,
+          1.35,
+          6.63,
+          0.9947,
+          0.9947,
+          2613605.0
+        ],
+        [
+          9,
+          138,
+          1.56,
+          4.25,
+          0.9953,
+          0.9953,
+          5678124.8
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Requirements of compression ratio as a function of relative volatility.",
+      "headers": [
+        "",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "M9"
+      ],
+      "rows": [
+        [
+          "Relative volatility",
+          2.4,
+          2.11,
+          1.68,
+          1.44,
+          1.38,
+          1.248,
+          1.23,
+          1.2,
+          1.12
+        ],
+        [
+          "$\\mathrm{CR}_{\\text {min }}$",
+          1.61,
+          1.56,
+          1.37,
+          1.36,
+          1.25,
+          1.28,
+          1.34,
+          1.29,
+          1.41
+        ],
+        [
+          "$\\mathrm{CR}_{\\text {real }}$",
+          2.15,
+          1.99,
+          1.86,
+          1.76,
+          1.29,
+          1.34,
+          1.46,
+          1.35,
+          1.56
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 10
+    },
+    {
+      "table_number": "5",
+      "table_title": "Design and operation variables of the best HIDiC configurations and the corresponding conventional columns.",
+      "headers": [
+        "",
+        "M1",
+        "",
+        "M2",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Conventional",
+          "HIDiC",
+          "Conventional",
+          "HIDiC"
+        ],
+        [
+          "NT",
+          28,
+          28,
+          28,
+          28
+        ],
+        [
+          "RR",
+          1.68,
+          0.22,
+          2.78,
+          0.27
+        ],
+        [
+          "CR",
+          "-",
+          2.15,
+          "-",
+          1.99
+        ],
+        [
+          "Recovery",
+          0.9949,
+          0.9949,
+          0.9952,
+          0.9949
+        ],
+        [
+          "Purity",
+          0.9949,
+          0.9949,
+          0.9952,
+          0.995
+        ],
+        [
+          "$Q_{R}$",
+          4375889.3015,
+          1534376.91,
+          15815250,
+          1043286.64
+        ],
+        [
+          "$Q_{\\text {comp }}$",
+          "-",
+          738895.52,
+          "-",
+          1153724.86
+        ],
+        [
+          "$Q_{o n}$",
+          "-",
+          6947979.94,
+          "-",
+          15016716.68
+        ],
+        [
+          "$A_{t}$",
+          "-",
+          225.67,
+          "-",
+          524.16
+        ],
+        [
+          "$\\eta$",
+          14.0,
+          46.0,
+          3.2,
+          32.9
+        ],
+        [
+          "$\\mathrm{CO}_{2}$-Emiss",
+          3206.93,
+          1187.79,
+          8576,
+          1190.3
+        ],
+        [
+          "",
+          3,
+          "",
+          6,
+          ""
+        ],
+        [
+          "",
+          "Conventional",
+          "HIDiC",
+          "Conventional",
+          "HIDiC"
+        ],
+        [
+          "NT",
+          72,
+          72,
+          74,
+          74
+        ],
+        [
+          "RR",
+          9.2,
+          4.18,
+          23.56,
+          9.63
+        ],
+        [
+          "CR",
+          "-",
+          1.29,
+          "-",
+          1.34
+        ],
+        [
+          "Recovery",
+          0.9953,
+          0.995,
+          0.9949,
+          0.9951
+        ],
+        [
+          "Purity",
+          0.9953,
+          0.995,
+          0.9949,
+          0.9952
+        ],
+        [
+          "$Q_{R}$",
+          17205759.79,
+          8023030.5976,
+          40513398.75,
+          16941201.86
+        ],
+        [
+          "$Q_{\\text {comp }}$",
+          "-",
+          733201.66,
+          "-",
+          1701190.44
+        ],
+        [
+          "$Q_{o n}$",
+          "-",
+          12375056.82,
+          "-",
+          22449708.05
+        ],
+        [
+          "$A_{t}$",
+          "-",
+          1228.55,
+          "-",
+          1154.05
+        ],
+        [
+          "$\\eta$",
+          4.0,
+          9.2,
+          1.2,
+          3.8
+        ],
+        [
+          "$\\mathrm{CO}_{2}$-Emiss",
+          9335.43,
+          4741.68,
+          21840.1,
+          9289.95
+        ],
+        [
+          "",
+          7,
+          "",
+          8,
+          ""
+        ],
+        [
+          "",
+          "Conventional",
+          "HIDiC",
+          "Conventional",
+          "HIDiC"
+        ],
+        [
+          "NT",
+          78,
+          78,
+          82,
+          82
+        ],
+        [
+          "RR",
+          13.2,
+          2.55,
+          24,
+          6.63
+        ],
+        [
+          "CR",
+          "-",
+          1.46,
+          "-",
+          1.35
+        ],
+        [
+          "Recovery",
+          0.9953,
+          0.9947,
+          0.9948,
+          0.9948
+        ],
+        [
+          "Purity",
+          0.995,
+          0.9953,
+          0.9948,
+          0.9947
+        ],
+        [
+          "$Q_{R}$",
+          25448924.92,
+          3984716.82,
+          27967688.1,
+          9304639.36
+        ],
+        [
+          "$Q_{\\text {comp }}$",
+          "-",
+          2391899.12,
+          "-",
+          1999288
+        ],
+        [
+          "$Q_{o n}$",
+          "-",
+          38744388.24,
+          "-",
+          37736458.94
+        ],
+        [
+          "$A_{t}$",
+          "-",
+          1884.17,
+          "-",
+          3157.04
+        ],
+        [
+          "$\\eta$",
+          2.3,
+          11.0,
+          2.1,
+          9.6
+        ],
+        [
+          "$\\mathrm{CO}_{2}$-Emiss",
+          12996.23,
+          3250.04,
+          14254.6044,
+          5761.7068
+        ],
+        [
+          "",
+          "",
+          9,
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Conventional",
+          "",
+          "HIDiC"
+        ],
+        [
+          "NT",
+          "",
+          138,
+          "",
+          138
+        ],
+        [
+          "RR",
+          "",
+          33.92,
+          "",
+          4.25
+        ],
+        [
+          "CR",
+          "",
+          "-",
+          "",
+          1.56
+        ],
+        [
+          "Recovery",
+          "",
+          0.9953,
+          "",
+          0.995
+        ],
+        [
+          "Purity",
+          "",
+          0.9953,
+          "",
+          0.995
+        ],
+        [
+          "$Q_{R}$",
+          "",
+          72176583.6,
+          "",
+          1017917.75
+        ],
+        [
+          "$Q_{\\text {comp }}$",
+          "",
+          "-",
+          "",
+          8575761.36
+        ],
+        [
+          "$Q_{o n}$",
+          "",
+          "-",
+          "",
+          124253110.63
+        ],
+        [
+          "$A_{t}$",
+          "",
+          "-",
+          "",
+          3837.27
+        ],
+        [
+          "$\\eta$",
+          "",
+          0.9,
+          "",
+          8.9
+        ],
+        [
+          "$\\mathrm{CO}_{2}$-Emiss",
+          "",
+          32677.86,
+          "",
+          4889.72
+        ]
+      ],
+      "row_count": 51,
+      "column_count": 5
+    }
+  ]
+}

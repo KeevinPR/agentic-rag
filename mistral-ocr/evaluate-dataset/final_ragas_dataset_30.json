@@ -1,0 +1,496 @@
+{
+  "metadata": {
+    "generation_date": "2025-06-01 19:14:45",
+    "total_papers_processed": 30,
+    "total_questions": 30,
+    "statistics": {
+      "total_papers": 30,
+      "successful": 30,
+      "failed_content": 0,
+      "failed_generation": 0,
+      "total_questions": 30
+    }
+  },
+  "questions": [
+    {
+      "question": "What are the fundamental trade-offs inherent in search algorithms between exploration (searching broadly) and exploitation (focusing on promising regions), and how do these trade-offs impact the algorithm's ability to find optimal solutions?",
+      "contexts": [],
+      "ground_truth": "Search algorithms face a fundamental trade-off between exploring the search space broadly to discover potentially better solutions and exploiting the knowledge gained so far by focusing on promising regions.  Excessive exploration can waste resources by investigating unpromising areas, while excessive exploitation can lead to premature convergence to a local optimum, missing the global optimum. Balancing exploration and exploitation is crucial for the algorithm's effectiveness in finding the optimal solution, as it allows the algorithm to efficiently navigate the search space while avoiding getting stuck in suboptimal regions. An algorithm must adapt its exploration/exploitation balance throughout the search process to improve its chances of finding the best solution.",
+      "paper_id": "Enhance Continuous Estimation of Distribution Algorithm by Variance Enlargement and Reflecting Sampling",
+      "paper_title": "Enhance Continuous Estimation of Distribution Algorithm by Variance Enlargement and Reflecting Sampling",
+      "paper_year": "2016",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2016/Enhance Continuous Estimation of Distribution Algorithm by Variance Enlargement and Reflecting Sampling.md",
+      "question_type": "definition",
+      "complexity": "basic",
+      "topics": [
+        "search"
+      ],
+      "generated_at": "2025-06-01 19:14:46",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "What practical considerations should practitioners keep in mind when selecting an Estimation of Distribution Algorithm (EDA) for evolving artificial neural networks, specifically concerning computational cost and scalability to larger, more complex network architectures?",
+      "contexts": [],
+      "ground_truth": "When selecting an EDA for neuroevolution, practitioners should carefully consider the computational cost associated with maintaining and updating the probability distribution, as this can quickly become prohibitive for large networks. Algorithms that efficiently approximate the distribution, such as those leveraging factorized representations, may offer better scalability. It's also important to consider the trade-off between exploration and exploitation; EDAs that overly focus on exploitation may prematurely converge to suboptimal solutions, especially in complex search spaces. Finally, the choice of encoding scheme for network topologies and weights significantly impacts the EDA's effectiveness, so careful consideration should be given to selecting a representation that facilitates efficient exploration and exploitation of the search space.",
+      "paper_id": "Toward an estimation of distribution algorithm for the evolution of artificial neural networks",
+      "paper_title": "Toward an Estimation of Distribution Algorithm for the Evolution of Artificial Neural Networks",
+      "paper_year": "2010",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2010/Toward an estimation of distribution algorithm for the evolution of artificial neural networks.md",
+      "question_type": "comparison",
+      "complexity": "medium",
+      "topics": [
+        "search"
+      ],
+      "generated_at": "2025-06-01 19:14:48",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Under what conditions does an Estimation of Distribution Algorithm (EDA) guarantee convergence to a global optimum, and how does the structure of the probabilistic model employed affect the algorithm's ability to escape local optima and explore the search space effectively, particularly in the context of NP-complete problems such as the Steiner tree problem?",
+      "contexts": [],
+      "ground_truth": "Guaranteeing global convergence for EDAs is challenging, often requiring strong assumptions about the problem landscape and the probabilistic model. If the probabilistic model can represent the true distribution of optimal solutions and the algorithm maintains sufficient exploration, convergence can be proven, though this is rarely achievable in practice for complex problems. The structure of the probabilistic model directly impacts exploration versus exploitation; a more complex model can potentially capture dependencies and lead to better solutions, but can also overfit the current population, trapping the algorithm in local optima. The trade-off between model complexity and exploration is crucial, especially for NP-complete problems where the search space grows exponentially.",
+      "paper_id": "An improved EDA for solving Steiner tree problem",
+      "paper_title": "SPECIAL ISSUE PAPER",
+      "paper_year": "2015",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2015/An improved EDA for solving Steiner tree problem.md",
+      "question_type": "process",
+      "complexity": "advanced",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:14:50",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "What are the trade-offs between using a Genetic Algorithm (GA) and an Estimation of Distribution Algorithm (EDA) for optimization?",
+      "contexts": [],
+      "ground_truth": "GAs rely on crossover and mutation operators to explore the search space, which can be effective but sometimes inefficient. EDAs, on the other hand, build a probabilistic model of promising solutions and sample from it, potentially leading to faster convergence in some cases. However, EDAs can be more computationally expensive due to the model building process, and their performance is highly dependent on the accuracy of the probabilistic model; if the model is poor, the algorithm may converge to a suboptimal solution. Thus, GAs are generally more robust, while EDAs can be faster if the problem structure aligns well with the model.",
+      "paper_id": "An enhanced Kalman filtering and historical learning mechanism driven estimation of distribution algorithm",
+      "paper_title": "An enhanced Kalman filtering and historical learning mechanism driven estimation of distribution algorithm",
+      "paper_year": "2024",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2024/An enhanced Kalman filtering and historical learning mechanism driven estimation of distribution algorithm.md",
+      "question_type": "advantage",
+      "complexity": "basic",
+      "topics": [
+        "evolutionary"
+      ],
+      "generated_at": "2025-06-01 19:14:52",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "What are the key implementation considerations for representing and manipulating sensor coverage schemes in a genetic algorithm designed to maximize the lifetime of a wireless sensor network with range-adjustable sensors? Specifically, how would you encode the activation status and sensing range of each sensor in the network within an individual's genome, and what data structures or techniques would be most effective for efficiently evaluating the coverage provided by a given scheme during the fitness evaluation process?",
+      "contexts": [],
+      "ground_truth": "A viable approach is to represent each sensor's state (active/inactive) and range as a discrete value or a tuple within the genome, where the index of the value corresponds to a specific sensor.  A bit string could represent activation (1 for active, 0 for inactive), and an integer array could represent the chosen sensing range for each active sensor.  For efficient coverage evaluation, a grid-based spatial indexing structure or a k-d tree could be used to quickly identify targets within the sensing range of each active sensor.  Boolean matrix operations can then efficiently determine the overall coverage of targets by the active sensor set.  Careful design of the genome and coverage evaluation method is crucial for balancing computational cost and solution quality.",
+      "paper_id": "Maximizing Lifetime of Range-Adjustable Wireless Sensor Networks  A Neighborhood-Based Estimation of Distribution Algorithm",
+      "paper_title": "Maximizing Lifetime of Range-Adjustable Wireless Sensor Networks: A Neighborhood-Based Estimation of Distribution Algorithm",
+      "paper_year": "2021",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2021/Maximizing Lifetime of Range-Adjustable Wireless Sensor Networks  A Neighborhood-Based Estimation of Distribution Algorithm.md",
+      "question_type": "challenge",
+      "complexity": "medium",
+      "topics": [
+        "genetic"
+      ],
+      "generated_at": "2025-06-01 19:14:54",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "What metrics are most appropriate for evaluating the effectiveness of a grammar-based evolutionary algorithm that aims to infer and exploit problem structure, especially considering the algorithm's ability to balance exploration and exploitation?",
+      "contexts": [],
+      "ground_truth": "Evaluating such an algorithm requires a multifaceted approach. Beyond standard optimization metrics like best-so-far fitness and convergence speed, metrics should quantify the quality of the inferred grammar itself. This includes the grammar's compression rate (how well it represents the population's structure), the accuracy with which the grammar predicts fitness improvements, and the diversity of schemata within the grammar. Furthermore, tracking the frequency of schema usage during evolution can reveal whether the algorithm is effectively exploiting the inferred structure while maintaining sufficient exploration to avoid premature convergence.  A combination of these metrics provides a comprehensive view of the algorithm's performance in inferring and leveraging problem structure.",
+      "paper_id": "Inferring and Exploiting Problem Structure with Schema Grammar",
+      "paper_title": "Inferring and Exploiting Problem Structure with Schema Grammar",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/Inferring and Exploiting Problem Structure with Schema Grammar.md",
+      "question_type": "application",
+      "complexity": "advanced",
+      "topics": [
+        "evolutionary"
+      ],
+      "generated_at": "2025-06-01 19:14:55",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "What are the fundamental advantages of using model-based optimization techniques compared to non-model-based approaches in the context of sensor data processing?",
+      "contexts": [],
+      "ground_truth": "Model-based optimization leverages prior knowledge of the system's underlying physics or behavior to guide the search for optimal solutions. This allows for more efficient and accurate optimization, particularly when dealing with noisy or limited data, because the model constrains the solution space. By contrast, non-model-based methods treat the system as a black box, requiring extensive data exploration and potentially leading to suboptimal solutions, especially when data is scarce. Incorporating prior knowledge often leads to faster convergence and better generalization capabilities for model-based approaches.",
+      "paper_id": "Model-Based Position and Reflectivity Estimation of Fiber Bragg Grating Sensor Arrays",
+      "paper_title": "Model-Based Position and Reflectivity Estimation of Fiber Bragg Grating Sensor Arrays",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/Model-Based Position and Reflectivity Estimation of Fiber Bragg Grating Sensor Arrays.md",
+      "question_type": "theory",
+      "complexity": "basic",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:14:57",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "How can practitioners effectively apply Estimation of Distribution Algorithms (EDAs) in resource scheduling problems where task deadlines are a critical factor, and what are the key implementation considerations to ensure that the EDA's exploration and exploitation strategies are aligned with minimizing total tardiness while meeting hard deadlines?",
+      "contexts": [],
+      "ground_truth": "Practitioners can apply EDAs by first representing the scheduling problem as a probabilistic model that captures dependencies between task assignments and resource allocation. Key implementation considerations include designing a suitable probability distribution that reflects the problem's structure, such as Gaussian or Bayesian networks, and adapting the EDA's exploration to efficiently search the solution space. Prioritizing operators that reduce tardiness, like swapping tasks or reassigning resources based on deadline proximity, is vital. Additionally, integrating local search methods to refine solutions and incorporating repair mechanisms to handle infeasible solutions violating hard deadlines are crucial for practical application and performance.",
+      "paper_id": "A Deadline-Aware Estimation of Distribution Algorithm for Resource Scheduling in Fog Computing Systems",
+      "paper_title": "A Deadline-Aware Estimation of Distribution Algorithm for Resource Scheduling in Fog Computing Systems",
+      "paper_year": "2019",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2019/A Deadline-Aware Estimation of Distribution Algorithm for Resource Scheduling in Fog Computing Systems.md",
+      "question_type": "implementation",
+      "complexity": "medium",
+      "topics": [
+        "genetic"
+      ],
+      "generated_at": "2025-06-01 19:14:58",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "What theoretical guarantees exist regarding the convergence rate of Estimation of Distribution Algorithms (EDAs) when applied to combinatorial optimization problems like subcarrier and relay assignment in cognitive radio networks, considering the interplay between the probability density estimation method used within the EDA and the structure of the objective function's landscape?",
+      "contexts": [],
+      "ground_truth": "While EDAs offer advantages over traditional evolutionary algorithms, rigorous convergence rate guarantees are often difficult to obtain, especially for complex combinatorial problems.  Convergence analysis typically involves bounding the error between the EDA's population distribution and the optimal solution's distribution. The convergence rate is highly dependent on the specific EDA variant (e.g., univariate vs. multivariate density estimation), the smoothness and modality of the objective function (sum capacity in this case), and the ability of the EDA to accurately capture dependencies between variables (subcarriers and relays). Theoretical bounds may exist under simplifying assumptions about the objective function (e.g., convexity or submodularity) or the EDA's density estimation method (e.g., assuming a specific parametric family), but these are often not directly applicable to real-world cognitive radio scenarios. Furthermore, the mixing time of the underlying Markov chain induced by the EDA's update rule is a key factor, and bounding this mixing time can be challenging for complex problem structures.",
+      "paper_id": "EDA-based Joint Power",
+      "paper_title": "EDA-based Joint Power, Subcarrier Allocation and Relay Assignment Scheme for Multiuser Relaying in OFDMA-based Cognitive Radio Systems",
+      "paper_year": "2011",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2011/EDA-based Joint Power.md",
+      "question_type": "evaluation",
+      "complexity": "advanced",
+      "topics": [
+        "genetic"
+      ],
+      "generated_at": "2025-06-01 19:15:01",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "What are the trade-offs between using Genetic Algorithms (GAs) and Estimation of Distribution Algorithms (EDAs) for optimization problems like table ordering?",
+      "contexts": [],
+      "ground_truth": "Genetic Algorithms rely on bio-inspired operators like crossover and mutation to evolve solutions, which can be effective but sometimes slow to converge. Estimation of Distribution Algorithms, on the other hand, learn a probabilistic model of promising solutions and sample new solutions from this model. This can lead to faster convergence if the model accurately captures the problem structure. However, EDAs can be more computationally expensive per iteration due to the model learning process and might struggle with highly complex, multimodal problems where building an accurate probabilistic model is difficult.  The choice depends on the problem's complexity and the computational resources available.",
+      "paper_id": "Optimal row and column ordering to improve table interpretation using estimation of distribution algorithms",
+      "paper_title": "Optimal row and column ordering to improve table interpretation using estimation of distribution algorithms",
+      "paper_year": "2011",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2011/Optimal row and column ordering to improve table interpretation using estimation of distribution algorithms.md",
+      "question_type": "relationship",
+      "complexity": "basic",
+      "topics": [
+        "evolutionary"
+      ],
+      "generated_at": "2025-06-01 19:15:03",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "What are the key implementation considerations when using an Estimation of Distribution Algorithm (EDA) for solving the Steiner Tree Problem, specifically focusing on how to represent the probabilistic model of elite trees and how to efficiently sample from this model to generate new candidate trees?",
+      "contexts": [],
+      "ground_truth": "When implementing an EDA for the Steiner Tree Problem, a critical consideration is how to represent the probabilistic model of the elite trees. This model should capture the common characteristics of good Steiner trees, such as frequently occurring edges or subtrees. One approach is to use a probability matrix where each entry represents the likelihood of a specific edge being included in an optimal solution. Efficient sampling from this probabilistic model is crucial for generating new candidate trees. Techniques like Monte Carlo sampling or specialized graph sampling algorithms that respect the probabilities in the model are often used. The choice of sampling method directly impacts the diversity and quality of the generated trees, affecting the overall performance of the EDA. Balancing exploration (sampling diverse trees) and exploitation (sampling trees similar to elites) is a key challenge.",
+      "paper_id": "An Estimation of Distribution Algorithm for Steiner Tree Problem",
+      "paper_title": "An Estimation of Distribution Algorithm for Steiner Tree Problem",
+      "paper_year": "2013",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2013/An Estimation of Distribution Algorithm for Steiner Tree Problem.md",
+      "question_type": "definition",
+      "complexity": "medium",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:15:05",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "What metrics are most appropriate for evaluating the performance of an evolutionary algorithm designed for real-time dynamic scheduling problems, and how should these metrics be weighted to reflect the relative importance of different objectives?",
+      "contexts": [],
+      "ground_truth": "In real-time dynamic scheduling problems, relevant metrics include solution quality (e.g., makespan, total tardiness, resource utilization), computational time, stability (i.e., how much the schedule changes with each new event), and robustness (i.e., performance under uncertainty). Weights assigned to each metric should reflect the specific priorities of the application; for example, in safety-critical systems, solution quality and robustness may be prioritized over computational time. Furthermore, the evaluation should consider the trade-offs between metrics, and benchmarks should involve comparison against existing online and offline algorithms using standardized problem instances and performance profiles. The performance must be measured in terms of how the algorithm adapts to the dynamic environment, not just static performance.",
+      "paper_id": "An online method for the real-time aircraft arrival sequencing and scheduling problem",
+      "paper_title": "An Online Method for the Real-time Aircraft Arrival Sequencing and Scheduling Problem",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/An online method for the real-time aircraft arrival sequencing and scheduling problem.md",
+      "question_type": "comparison",
+      "complexity": "advanced",
+      "topics": [
+        "evolutionary"
+      ],
+      "generated_at": "2025-06-01 19:15:07",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "What are the fundamental trade-offs between maintaining population diversity and enforcing constraint satisfaction when using evolutionary algorithms to solve constrained optimization problems?",
+      "contexts": [],
+      "ground_truth": "Maintaining population diversity is crucial for exploring the search space and avoiding premature convergence, while constraint satisfaction ensures that solutions are feasible. Enforcing constraints too strictly can reduce diversity, leading to suboptimal solutions. Conversely, prioritizing diversity at the expense of constraint satisfaction can result in many infeasible solutions. Effective constraint-handling techniques must balance these competing objectives to find high-quality, feasible solutions, often by dynamically adjusting the selective pressure towards feasibility as the search progresses.",
+      "paper_id": "Search Space Reduction Model with Trigonometric Function for Linear Equality Constraint-handling  The Case of Portfolio Replication Problem",
+      "paper_title": "Search Space Reduction Model with Trigonometric Function for Linear Equality Constraint-handling: The Case of Portfolio Replication Problem",
+      "paper_year": "2019",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2019/Search Space Reduction Model with Trigonometric Function for Linear Equality Constraint-handling  The Case of Portfolio Replication Problem.md",
+      "question_type": "process",
+      "complexity": "basic",
+      "topics": [
+        "evolutionary"
+      ],
+      "generated_at": "2025-06-01 19:15:08",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "How can practitioners determine when to favor Estimation of Distribution Algorithms (EDAs) over Genetic Algorithms (GAs) in real-world optimization problems, considering the trade-offs between model complexity and solution quality?",
+      "contexts": [],
+      "ground_truth": "EDAs are generally favored over GAs when preserving building blocks or dependencies within solutions is critical for performance. If crossover and mutation in GAs disrupt promising partial solutions, EDAs can be more effective by explicitly modeling and maintaining the distribution of high-quality solutions. However, EDAs, especially those with bivariate or multiple dependency models, can have significantly higher computational complexity and memory requirements compared to GAs. Practitioners should consider the problem's structure, available computational resources, and the importance of preserving solution dependencies when deciding between EDAs and GAs; if quick and approximate solutions are sufficient and dependencies are weak, GAs may be preferable due to their simplicity and lower overhead.",
+      "paper_id": "A new estimation of distribution algorithm based on learning automata",
+      "paper_title": "A New Estimation of Distribution Algorithm based on Learning Automata",
+      "paper_year": "2005",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2005/A new estimation of distribution algorithm based on learning automata.md",
+      "question_type": "advantage",
+      "complexity": "medium",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:15:11",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "What theoretical guarantees, if any, exist regarding the convergence rate of Estimation of Distribution Algorithms (EDAs) when applied to non-convex, high-dimensional objective functions, particularly concerning the relationship between the chosen probabilistic model (e.g., Gaussian, Bayesian network) and the resulting convergence behavior, and how do these guarantees scale with the number of sensors or spectral distortions present in the fiber Bragg grating (FBG) sensor network?",
+      "contexts": [],
+      "ground_truth": "Theoretical guarantees for EDAs in non-convex, high-dimensional spaces are limited and often depend heavily on the specific probabilistic model used to represent the population distribution. For Gaussian models, convergence rates can be related to the smoothness and strong convexity properties of the objective function, which are unlikely to hold in general for FBG sensor network applications due to spectral distortions. Bayesian network-based EDAs offer greater flexibility but introduce complexity in learning the network structure, making theoretical analysis more challenging. The convergence scales poorly with increasing sensors or spectral distortions, as the search space expands combinatorially, leading to slower convergence and potential entrapment in local optima. Ultimately, rigorous convergence proofs are often intractable, necessitating empirical validation and careful algorithm design tailored to the specific problem characteristics.",
+      "paper_id": "Distortion Tolerant Method for Fiber Bragg Grating Sensor Network Using Estimation of Distribution Algorithm and Convolutional Neural Network",
+      "paper_title": "Distortion Tolerant Method for Fiber Bragg Grating Sensor Network Using Estimation of Distribution Algorithm and Convolutional Neural Network",
+      "paper_year": "2024",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2024/Distortion Tolerant Method for Fiber Bragg Grating Sensor Network Using Estimation of Distribution Algorithm and Convolutional Neural Network.md",
+      "question_type": "challenge",
+      "complexity": "advanced",
+      "topics": [
+        "evolutionary"
+      ],
+      "generated_at": "2025-06-01 19:15:14",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "What distinguishes Estimation of Distribution Algorithms (EDAs) from traditional Genetic Algorithms (GAs) in the context of optimization, and what are the trade-offs involved in choosing one over the other?",
+      "contexts": [],
+      "ground_truth": "EDAs explicitly learn and sample from a probability distribution of promising solutions, while GAs rely on crossover and mutation operators. EDAs can be more effective in complex search spaces by modeling dependencies between variables, potentially leading to faster convergence. However, EDAs can be computationally expensive to build and maintain the probability distribution, whereas GAs are generally simpler to implement. Therefore, GAs might be preferred for simpler problems or when computational resources are limited, while EDAs are suitable for complex problems where capturing dependencies is crucial.",
+      "paper_id": "A Boltzmann-Based Estimation of Distribution Algorithm for a General Resource Scheduling Model",
+      "paper_title": "A Boltzmann-Based Estimation of Distribution Algorithm for a General Resource Scheduling Model",
+      "paper_year": "2015",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2015/A Boltzmann-Based Estimation of Distribution Algorithm for a General Resource Scheduling Model.md",
+      "question_type": "application",
+      "complexity": "basic",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:15:15",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "What are the key implementation challenges when integrating 'promising relations', derived from causal scores, into the initialization and reproduction phases of an Estimation of Distribution Algorithm (EDA) for Bayesian network structure learning?",
+      "contexts": [],
+      "ground_truth": "Integrating promising relations into EDA initialization and reproduction involves several challenges.  First, efficiently calculating and storing causal scores for all possible relations becomes computationally expensive with increasing numbers of variables.  Second, balancing the exploration of the search space with the exploitation of promising relations is critical to avoid premature convergence to suboptimal solutions; this requires careful tuning of parameters that control the influence of promising relations.  Third, the representation of Bayesian network structures within the EDA and the encoding of promising relations must be compatible and efficiently processed during crossover and mutation operations. Finally, handling potential inconsistencies or cycles introduced by the promising relations requires robust cycle detection and resolution mechanisms during individual generation.",
+      "paper_id": "Experimental comparisons with respect to the usage of the promising relations in EDA-based causal discovery",
+      "paper_title": "Experimental comparisons with respect to the usage of the promising relations in EDA-based causal discovery",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/Experimental comparisons with respect to the usage of the promising relations in EDA-based causal discovery.md",
+      "question_type": "theory",
+      "complexity": "medium",
+      "topics": [
+        "search"
+      ],
+      "generated_at": "2025-06-01 19:15:17",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "What metrics are most appropriate for evaluating the performance of a hybrid optimization algorithm that combines multiple search strategies, beyond simply the best solution found and convergence speed?",
+      "contexts": [],
+      "ground_truth": "Evaluating hybrid optimization algorithms necessitates a multifaceted approach beyond basic metrics. Researchers should consider solution quality metrics like hypervolume, which assesses both convergence and diversity across multiple objectives in multi-objective optimization problems. The Inverted Generational Distance (IGD) can quantify the distance from the obtained Pareto front to the true Pareto front, measuring both proximity and diversity. Additionally, algorithm robustness should be evaluated using statistical tests (e.g., Friedman test with post-hoc analysis) across multiple independent runs to determine the consistency of performance and the significance of any observed improvements compared to baseline algorithms. Finally, computational cost metrics, such as the number of function evaluations or CPU time normalized by problem complexity, are crucial to understand the trade-off between solution quality and efficiency.",
+      "paper_id": "An Island Based Hybrid Evolutionary Algorithm for Optimization",
+      "paper_title": "An Island Based Hybrid Evolutionary Algorithm for Optimization",
+      "paper_year": "2008",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2008/An Island Based Hybrid Evolutionary Algorithm for Optimization.md",
+      "question_type": "implementation",
+      "complexity": "advanced",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:15:19",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "What are the fundamental trade-offs between exploration and exploitation in search algorithms for optimization problems, and how does the balance between them affect the algorithm's ability to find globally optimal solutions?",
+      "contexts": [],
+      "ground_truth": "Exploration refers to the algorithm's ability to investigate new and potentially promising regions of the search space, while exploitation focuses on refining solutions within a known promising region.  Excessive exploration can lead to wasted computational resources on unpromising areas, while excessive exploitation can cause the algorithm to become trapped in local optima. A good search algorithm must carefully balance these two aspects to efficiently navigate the search space and increase the likelihood of finding the global optimum.  The ideal balance often depends on the specific characteristics of the problem being solved, such as the ruggedness of the search space and the computational resources available.",
+      "paper_id": "An New Estimation of Distribution Algorithm Based Edge Histogram Model for Flexible Job-Shop Problem",
+      "paper_title": "An New Estimation of Distribution Algorithm Based Edge Histogram Model for Flexible Job-Shop Problem",
+      "paper_year": "2011",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2011/An New Estimation of Distribution Algorithm Based Edge Histogram Model for Flexible Job-Shop Problem.md",
+      "question_type": "evaluation",
+      "complexity": "basic",
+      "topics": [
+        "search"
+      ],
+      "generated_at": "2025-06-01 19:15:21",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "What practical considerations should practitioners keep in mind when choosing between maximizing likelihood and maximizing AUC when fitting logistic regression models using estimation of distribution algorithms (EDAs)?",
+      "contexts": [],
+      "ground_truth": "When maximizing likelihood, the focus is on calibrating the model to accurately predict probabilities, which is crucial when reliable probability estimates are needed, such as in risk assessment. Conversely, maximizing AUC prioritizes the model's ability to discriminate between classes, which is beneficial when ranking instances or identifying high-risk cases. Practitioners should consider the relative importance of accurate probability estimation versus accurate ranking for their specific application. It's also important to note that EDAs allow for optimizing both objectives simultaneously, potentially leading to a Pareto front of solutions offering different trade-offs between calibration and discrimination.",
+      "paper_id": "Optimizing logistic regression coefficients for discrimination and calibration using estimation of distribution algorithms",
+      "paper_title": "Optimizing logistic regression coefficients for discrimination and calibration using estimation of distribution algorithms",
+      "paper_year": "2008",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2008/Optimizing logistic regression coefficients for discrimination and calibration using estimation of distribution algorithms.md",
+      "question_type": "relationship",
+      "complexity": "medium",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:15:22",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Under what conditions can we provide theoretical guarantees on the convergence rate of an Estimation of Distribution Algorithm (EDA) when combined with a local search procedure, given that the local search may introduce dependencies between solutions sampled in different generations, and how does the choice of the probability distribution used in the EDA influence this convergence?",
+      "contexts": [],
+      "ground_truth": "Theoretical convergence rate guarantees for EDAs are often derived under assumptions of Markovianity and independence between generations, which are violated when a local search procedure is incorporated. If the local search explores a limited neighborhood such that the induced dependencies decay sufficiently rapidly over generations, and if the probability distribution used in the EDA (e.g., Gaussian, Bayesian network) accurately captures the underlying structure of the search space, then convergence guarantees may be possible, although proving this is challenging. The choice of distribution influences the convergence rate since a distribution that closely models the problem's structure allows the EDA to efficiently sample promising regions of the search space, leading to faster convergence, but also affects the ability to maintain diversity. Furthermore, the complexity of the distribution affects the sampling and updating efficiency of the EDA.",
+      "paper_id": "Estimation of the Distribution Algorithm With a Stochastic Local Search for Uncertain Capacitated Arc Routing Problems",
+      "paper_title": "Estimation of Distribution Algorithm with Stochastic Local Search for Uncertain Capacitated Arc Routing Problems",
+      "paper_year": "2016",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2016/Estimation of the Distribution Algorithm With a Stochastic Local Search for Uncertain Capacitated Arc Routing Problems.md",
+      "question_type": "definition",
+      "complexity": "advanced",
+      "topics": [
+        "search"
+      ],
+      "generated_at": "2025-06-01 19:15:25",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "How does performance compare between Estimation of Distribution Algorithms (EDAs) and Genetic Algorithms (GAs) in optimization problems, particularly in the context of multi-agent systems?",
+      "contexts": [],
+      "ground_truth": "EDAs build a probabilistic model of promising solutions and sample new solutions from that model, whereas GAs rely on selection, crossover, and mutation operators. EDAs can be more efficient in problems where dependencies between variables are strong because they explicitly model these dependencies. However, GAs might be simpler to implement and can be effective when the problem landscape is not well understood or when the dependencies are weaker. A key trade-off is that EDAs require estimating a probability distribution, which can be computationally expensive for high-dimensional problems, while GAs may converge slower.",
+      "paper_id": "A Deadlock-Free Hybrid Estimation of Distribution Algorithm for Cooperative Multi-UAV Task Assignment With Temporally Coupled Constraints",
+      "paper_title": "YANXIANG FENG",
+      "paper_year": "2023",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2023/A Deadlock-Free Hybrid Estimation of Distribution Algorithm for Cooperative Multi-UAV Task Assignment With Temporally Coupled Constraints.md",
+      "question_type": "comparison",
+      "complexity": "basic",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:15:26",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "What are the key implementation considerations when using differential evolution (DE) for sampling in the latent space of a multiobjective estimation of distribution algorithm (EDA), specifically concerning mutation strategy and parameter tuning, to ensure efficient exploration of the Pareto set?",
+      "contexts": [],
+      "ground_truth": "When implementing DE for latent space sampling, developers should carefully choose the mutation strategy (e.g., DE/rand/1, DE/best/1) and tune parameters like the scaling factor (F) and crossover rate (CR). The mutation strategy dictates how parent solutions are combined to create mutant vectors, affecting exploration and exploitation balance. The scaling factor controls the magnitude of the difference vector used in mutation, influencing step size. The crossover rate determines the probability of inheriting components from the mutant vector versus the parent vector, balancing diversity and convergence. Adaptive parameter control mechanisms can be explored to dynamically adjust F and CR during the search, enhancing robustness across different problem characteristics.",
+      "paper_id": "Sampling in Latent Space for a Mulitiobjective Estimation of Distribution Algorithm",
+      "paper_title": "Sampling in Latent Space for a Mulitiobjective Estimation of Distribution Algorithm",
+      "paper_year": "2016",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2016/Sampling in Latent Space for a Mulitiobjective Estimation of Distribution Algorithm.md",
+      "question_type": "process",
+      "complexity": "medium",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:15:28",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "What metrics are most appropriate for evaluating the long-term evolutionary performance of Estimation of Distribution Algorithms (EDAs) beyond simple convergence speed and final solution quality, especially when dealing with noisy or dynamic fitness landscapes?",
+      "contexts": [],
+      "ground_truth": "When evaluating EDAs in complex environments, researchers should consider metrics that capture robustness, adaptability, and diversity maintenance. Robustness can be measured by the algorithm's ability to maintain performance under varying levels of noise, quantified by the average performance degradation across different noise intensities. Adaptability can be assessed by measuring the algorithm's response time and performance recovery rate after environmental changes, perhaps using metrics like the inverse generation time to reach a pre-defined performance threshold after a change. Population diversity can be quantified using measures like entropy or variance of the solutions in the population, ensuring that the EDA explores a broad range of solutions and avoids premature convergence. Finally, the algorithm's ability to maintain a balance between exploration and exploitation can be assessed by tracking the ratio of new solutions generated to the number of improved solutions over time.",
+      "paper_id": "Bayesian networks for interpretable machine learning and optimization",
+      "paper_title": "Bayesian networks for interpretable machine learning and optimization",
+      "paper_year": "2021",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2021/Bayesian networks for interpretable machine learning and optimization.md",
+      "question_type": "advantage",
+      "complexity": "advanced",
+      "topics": [
+        "evolutionary"
+      ],
+      "generated_at": "2025-06-01 19:15:30",
+      "generation_style": "evaluation_metrics"
+    },
+    {
+      "question": "What are the fundamental trade-offs between exploration and exploitation in optimization algorithms, and why is balancing these two critical for finding global optima, particularly in complex search spaces?",
+      "contexts": [],
+      "ground_truth": "Exploration involves searching new, potentially promising regions of the search space, while exploitation focuses on refining solutions in areas already identified as good. Insufficient exploration can lead to premature convergence to a local optimum, missing the true global optimum. Conversely, excessive exploration can prevent the algorithm from efficiently converging to a good solution. Balancing exploration and exploitation is crucial because it allows the algorithm to both discover promising areas and effectively refine solutions within those areas, increasing the likelihood of finding the global optimum in complex search spaces.",
+      "paper_id": "Research of Batch Scheduling with Arrival Time Based on Estimation of Distribution Algorithm",
+      "paper_title": "Research of Batch Scheduling with Arrival Time Based on Estimation of Distribution Algorithm",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/Research of Batch Scheduling with Arrival Time Based on Estimation of Distribution Algorithm.md",
+      "question_type": "challenge",
+      "complexity": "basic",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:15:32",
+      "generation_style": "conceptual_deep"
+    },
+    {
+      "question": "How can practitioners effectively integrate Constraint Programming (CP) repair operations within Estimation of Distribution Algorithms (EDAs) like the Bivariate Marginal Distribution Algorithm (BMDA) to handle infeasible solutions in complex configuration design problems, and what practical considerations should guide this integration?",
+      "contexts": [],
+      "ground_truth": "Integrating CP repair operations with EDAs involves using CP solvers to modify infeasible solutions generated by the EDA into feasible ones that still retain characteristics of the original solution.  The key is to define constraints derived from the problem's physics and engineering requirements within the CP solver. When an EDA generates an infeasible solution (e.g., components colliding), the CP solver minimally alters the design variables (e.g., component positions or types) to satisfy the constraints.  Practical considerations include balancing the computational cost of the CP solver with the EDA's search efficiency, selecting appropriate CP modeling techniques to ensure solver performance, and designing repair strategies that avoid introducing bias into the EDA's population diversity.",
+      "paper_id": "Configuration Design of Mechanical Assemblies using an Estimation of Distribution Algorithm and Constraint Programming",
+      "paper_title": "Configuration Design of Mechanical Assemblies using an Estimation of Distribution Algorithm and Constraint Programming",
+      "paper_year": "2019",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2019/Configuration Design of Mechanical Assemblies using an Estimation of Distribution Algorithm and Constraint Programming.md",
+      "question_type": "application",
+      "complexity": "medium",
+      "topics": [
+        "optimization"
+      ],
+      "generated_at": "2025-06-01 19:15:34",
+      "generation_style": "practical_application"
+    },
+    {
+      "question": "Under what conditions can we provide theoretical guarantees on the convergence rate of Estimation of Distribution Algorithms (EDAs) employing constructive repair/improvement operators, particularly considering the computational complexity introduced by the repair/improvement process and its impact on maintaining population diversity?",
+      "contexts": [],
+      "ground_truth": "Theoretical convergence guarantees for EDAs with repair/improvement operators are challenging due to the operator's complex interaction with the probability model. Convergence rate analysis typically involves bounding the probability of generating the optimal solution or demonstrating convergence to a global optimum in the limit. The complexity of the repair/improvement operator affects the overall time complexity of each iteration, potentially slowing down convergence. Furthermore, the operator can influence population diversity; if it consistently biases solutions towards a specific region, premature convergence may occur. Thus, guarantees require analyzing the operator's impact on both solution quality and population diversity, often necessitating assumptions about the problem structure and the operator's behavior.",
+      "paper_id": "An Estimation of Distribution Algorithm with Efficient Constructive RepairImprovement Operator for the Dynamic Weapon-Target Assignment",
+      "paper_title": "An Estimation of Distribution Algorithm with Efficient Constructive Repair/Improvement Operator for the Dynamic Weapon-Target Assignment",
+      "paper_year": "2012",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2012/An Estimation of Distribution Algorithm with Efficient Constructive RepairImprovement Operator for the Dynamic Weapon-Target Assignment.md",
+      "question_type": "theory",
+      "complexity": "advanced",
+      "topics": [
+        "evolutionary"
+      ],
+      "generated_at": "2025-06-01 19:15:36",
+      "generation_style": "theoretical_foundation"
+    },
+    {
+      "question": "How does performance compare between using a deadlock prevention policy versus a deadlock detection and recovery strategy in a flexible assembly system?",
+      "contexts": [],
+      "ground_truth": "Deadlock prevention avoids deadlocks altogether by enforcing constraints on resource allocation, which can lead to predictable but potentially less optimal performance due to restricted resource utilization. In contrast, deadlock detection and recovery allows deadlocks to occur and then resolves them, potentially achieving higher resource utilization but at the cost of occasional system downtime and overhead for detection and recovery procedures. Deadlock prevention is preferable when system downtime is unacceptable, while detection and recovery might be chosen when maximizing throughput is the primary goal and occasional interruptions are tolerable. The best approach depends on the specific application's priorities and tolerance for interruptions.",
+      "paper_id": "Deadlock-Free Scheduling of Flexible Assembly Systems Based on Petri Nets and Local Search",
+      "paper_title": "Deadlock-Free Scheduling of Flexible Assembly Systems Based on Petri Nets and Local Search",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/Deadlock-Free Scheduling of Flexible Assembly Systems Based on Petri Nets and Local Search.md",
+      "question_type": "implementation",
+      "complexity": "basic",
+      "topics": [
+        "search"
+      ],
+      "generated_at": "2025-06-01 19:15:37",
+      "generation_style": "comparative_analysis"
+    },
+    {
+      "question": "What are the key implementation considerations when combining Differential Evolution (DE) and Estimation of Distribution Algorithm (EDA) for optimizing Photonic Crystal Fiber (PCF) designs, particularly focusing on the transition criteria between the DE and EDA phases and the handling of population diversity?",
+      "contexts": [],
+      "ground_truth": "When combining DE and EDA, a crucial aspect is defining the transition criteria between the two algorithms. This might involve monitoring the convergence rate of DE and switching to EDA when the improvement stagnates. Maintaining population diversity is also essential; DE can sometimes lead to premature convergence, so EDA's probabilistic model building should be carefully tuned to explore new regions while preserving promising solutions found by DE. Balancing exploration and exploitation is key to achieving optimal PCF designs.",
+      "paper_id": "Design of ultra-low and ultra-flattened dispersion single mode photonic crystal fiber by DE EDA algorithm",
+      "paper_title": "Design of ultra-low and ultra-flattened dispersion single mode photonic crystal fiber by DE/EDA algorithm",
+      "paper_year": "2009",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2009/Design of ultra-low and ultra-flattened dispersion single mode photonic crystal fiber by DE EDA algorithm.md",
+      "question_type": "evaluation",
+      "complexity": "medium",
+      "topics": [
+        "search"
+      ],
+      "generated_at": "2025-06-01 19:15:39",
+      "generation_style": "implementation_focused"
+    },
+    {
+      "question": "What metrics are most appropriate for evaluating the robustness and adaptability of an evolutionary algorithm designed for stochastic hybrid flow shop scheduling problems, beyond just minimizing makespan?",
+      "contexts": [],
+      "ground_truth": "Beyond minimizing makespan, evaluating evolutionary algorithms for stochastic hybrid flow shop scheduling necessitates assessing robustness and adaptability. Relevant metrics include: (1) Solution stability, measured by the standard deviation of makespan across multiple simulation runs with varying stochastic inputs; (2) Regret, quantifying the difference between the realized makespan and the expected makespan under perfect information; (3) Sensitivity to parameter changes, assessed by observing the algorithm's performance under different parameter settings (e.g., population size, mutation rate); and (4) Computational time to achieve a satisfactory solution under different levels of stochasticity, highlighting the algorithm's scalability and real-time applicability.",
+      "paper_id": "An estimation of distribution algorithm for hybrid flow shop scheduling under stochastic processing times",
+      "paper_title": "An estimation of distribution algorithm for hybrid flow shop scheduling under stochastic processing times",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/An estimation of distribution algorithm for hybrid flow shop scheduling under stochastic processing times.md",
+      "question_type": "relationship",
+      "complexity": "advanced",
+      "topics": [
+        "evolutionary"
+      ],
+      "generated_at": "2025-06-01 19:15:41",
+      "generation_style": "evaluation_metrics"
+    }
+  ]
+}

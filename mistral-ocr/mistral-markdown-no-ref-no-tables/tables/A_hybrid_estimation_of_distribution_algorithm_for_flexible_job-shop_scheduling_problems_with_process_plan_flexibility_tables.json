@@ -1,0 +1,1077 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/A hybrid estimation of distribution algorithm for flexible job-shop scheduling problems with process plan flexibility.md",
+    "filename": "A hybrid estimation of distribution algorithm for flexible job-shop scheduling problems with process plan flexibility.md",
+    "title": "A hybrid estimation of distribution algorithm for flexible job-shop scheduling problems with process plan flexibility",
+    "year": "2018"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 An FJSP-PPF example",
+      "headers": [
+        "Operations <br> Job, Precedence",
+        "Processing time machines",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$M_{1}$",
+          "$M_{2}$",
+          "$M_{3}$",
+          "$M_{4}$"
+        ],
+        [
+          "Process Plan A",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$O_{1,1}$",
+          2,
+          4,
+          3,
+          5
+        ],
+        [
+          "$O_{1,2}$",
+          4,
+          4,
+          "-",
+          3
+        ],
+        [
+          "$O_{1,3}$",
+          3,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$O_{2,1}$",
+          3,
+          "-",
+          3,
+          3
+        ],
+        [
+          "$O_{2,2}$",
+          "",
+          5,
+          6,
+          2
+        ],
+        [
+          "$O_{2,3}$",
+          2,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$O_{3,1}$",
+          "",
+          2,
+          3,
+          3
+        ],
+        [
+          "$O_{3,2}$",
+          1,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$O_{3,3}$",
+          "",
+          3,
+          3,
+          "-"
+        ],
+        [
+          "$O_{4,1}$",
+          6,
+          4,
+          5,
+          5
+        ],
+        [
+          "$O_{4,2}$",
+          2,
+          4,
+          3,
+          5
+        ],
+        [
+          "$O_{4,3}$",
+          4,
+          4,
+          "-",
+          3
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Process plan B",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$O_{1,3}$",
+          3,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$O_{1,1}$",
+          2,
+          4,
+          3,
+          5
+        ],
+        [
+          "$O_{1,2}$",
+          4,
+          4,
+          "-",
+          3
+        ],
+        [
+          "$O_{2,1}$",
+          3,
+          "-",
+          3,
+          3
+        ],
+        [
+          "$O_{2,3}$",
+          2,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$O_{2,2}$",
+          "",
+          5,
+          6,
+          2
+        ],
+        [
+          "$O_{3,2}$",
+          1,
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$O_{3,1}$",
+          "",
+          2,
+          3,
+          3
+        ],
+        [
+          "$O_{3,3}$",
+          "",
+          3,
+          3,
+          "-"
+        ],
+        [
+          "$O_{4,3}$",
+          4,
+          4,
+          "-",
+          3
+        ],
+        [
+          "$O_{4,2}$",
+          2,
+          4,
+          3,
+          5
+        ],
+        [
+          "$O_{4,1}$",
+          6,
+          4,
+          5,
+          5
+        ]
+      ],
+      "row_count": 29,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "12",
+        "1",
+        "13",
+        "2",
+        "16",
+        "14",
+        "8",
+        "3",
+        "4",
+        "15",
+        "9",
+        "17",
+        "18",
+        "10",
+        "11",
+        "5",
+        "6",
+        "7"
+      ],
+      "rows": [
+        [
+          4,
+          5,
+          8,
+          14,
+          15,
+          9,
+          10,
+          12,
+          1,
+          2,
+          3,
+          11,
+          16,
+          6,
+          17,
+          13,
+          7,
+          18
+        ],
+        [
+          4,
+          1,
+          16,
+          5,
+          12,
+          8,
+          13,
+          17,
+          2,
+          6,
+          3,
+          18,
+          14,
+          7,
+          9,
+          15,
+          10,
+          11
+        ],
+        [
+          14,
+          12,
+          16,
+          13,
+          1,
+          15,
+          4,
+          5,
+          2,
+          6,
+          7,
+          17,
+          18,
+          3,
+          8,
+          9,
+          10,
+          11
+        ],
+        [
+          12,
+          8,
+          4,
+          16,
+          17,
+          18,
+          14,
+          5,
+          15,
+          6,
+          7,
+          1,
+          2,
+          9,
+          3,
+          10,
+          13,
+          11
+        ],
+        [
+          14,
+          8,
+          1,
+          9,
+          12,
+          15,
+          4,
+          10,
+          16,
+          11,
+          13,
+          5,
+          2,
+          17,
+          18,
+          3,
+          6,
+          7
+        ],
+        [
+          4,
+          12,
+          14,
+          8,
+          13,
+          9,
+          16,
+          17,
+          1,
+          15,
+          2,
+          10,
+          18,
+          3,
+          11,
+          5,
+          6,
+          7
+        ],
+        [
+          14,
+          1,
+          4,
+          12,
+          5,
+          8,
+          9,
+          6,
+          16,
+          2,
+          13,
+          10,
+          15,
+          11,
+          3,
+          17,
+          7,
+          18
+        ],
+        [
+          4,
+          1,
+          5,
+          6,
+          12,
+          13,
+          8,
+          9,
+          10,
+          16,
+          14,
+          15,
+          11,
+          2,
+          7,
+          17,
+          18,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          12,
+          5,
+          14,
+          16,
+          17,
+          8,
+          9,
+          18,
+          6,
+          7,
+          10,
+          15,
+          11,
+          13
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 18
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "qth",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "$\\sim m-1$"
+      ],
+      "rows": [
+        [
+          "$\\sigma_{1}$",
+          14,
+          12,
+          15,
+          16,
+          8,
+          9,
+          1,
+          2,
+          13,
+          4,
+          17,
+          3,
+          18,
+          10,
+          5,
+          11,
+          6,
+          7
+        ],
+        [
+          "$V_{q}\\left(\\sigma_{1}, \\sigma_{0}\\right)$",
+          13,
+          11,
+          12,
+          12,
+          7,
+          7,
+          0,
+          0,
+          7,
+          1,
+          6,
+          0,
+          5,
+          3,
+          0,
+          2,
+          0,
+          "$\\sim \\sum 86$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 19
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "qth",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "rows": [
+        [
+          "$\\sigma_{2}$",
+          14,
+          15,
+          16,
+          8,
+          9,
+          1,
+          2,
+          4,
+          12
+        ],
+        [
+          "$V_{q}\\left(\\sigma_{2}, \\sigma_{0}\\right)$",
+          13,
+          13,
+          13,
+          7,
+          7,
+          0,
+          0,
+          1,
+          6
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 10
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "$\\sim m-1$"
+      ],
+      "rows": [
+        [
+          13,
+          17,
+          3,
+          18,
+          10,
+          5,
+          11,
+          6,
+          7
+        ],
+        [
+          6,
+          6,
+          0,
+          5,
+          3,
+          0,
+          2,
+          0,
+          "$\\sim \\sum 82$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        ""
+      ],
+      "rows": [
+        [
+          14,
+          12,
+          15,
+          16,
+          8,
+          9,
+          1,
+          2,
+          13,
+          4,
+          17,
+          3,
+          18,
+          10,
+          5,
+          11,
+          6,
+          7,
+          "Kendall-tau distance $=86$"
+        ],
+        [
+          14,
+          15,
+          16,
+          8,
+          9,
+          1,
+          2,
+          4,
+          12,
+          13,
+          17,
+          3,
+          18,
+          10,
+          5,
+          11,
+          6,
+          7,
+          "Kendall-tau distance $=82$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 19
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Comparison of results with standard benchmarking datasets",
+      "headers": [
+        "Intervals",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Instances",
+          "Trials",
+          "$[0,0.051)$",
+          "$[0.051,0.101)$",
+          "$[0.101,0.151)$",
+          "$[0.151,0.201)$",
+          "$[0.201,0.251)$",
+          "$[0.251,0.301)$",
+          "Outliers"
+        ],
+        [
+          "abz",
+          150,
+          118,
+          19,
+          7,
+          6,
+          0,
+          0,
+          9
+        ],
+        [
+          "ft",
+          90,
+          67,
+          19,
+          3,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          "la",
+          1200,
+          986,
+          200,
+          14,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          "orb",
+          300,
+          229,
+          66,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "swv",
+          600,
+          595,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "yn",
+          120,
+          111,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 9
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 A systematical approach used for determining an instance of the FJSP-PPF",
+      "headers": [
+        "Number of jobs ( $n$ )",
+        "Randomly [ 2, 50 ]"
+      ],
+      "rows": [
+        [
+          "Number of process plans $(p)$",
+          24
+        ],
+        [
+          "Number of machines $(m)$",
+          210
+        ],
+        [
+          "Number of operations $n_{i}$ for the job $i$",
+          210
+        ],
+        [
+          "$m_{i}$ (machine for the $n_{i}$ operation)",
+          1
+        ],
+        [
+          "processing times",
+          199
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Comparison of the results",
+      "headers": [
+        "Size of the instance",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Algorithm",
+          "Small",
+          "Medium <br> mean(std)",
+          "Large",
+          "Global performance"
+        ],
+        [
+          "NSGA",
+          "$1.727(3.838)$",
+          "$0.520(0.405)$",
+          "$0.404(0.283)$",
+          "$0.777(2.056)$"
+        ],
+        [
+          "NSGA-II",
+          "$1.597(3.420)$",
+          "$0.513(0.419)$",
+          "$0.408(0.314)$",
+          "$0.744(1.841)$"
+        ],
+        [
+          "w-EDA",
+          "$0.973(1.442)$",
+          "$0.391(0.268)$",
+          "$0.290(0.220)$",
+          "$0.493(0.816)$"
+        ],
+        [
+          "MEDA for the FJSP-PPF",
+          "$0.457(0.384)$",
+          "$0.332(0.266)$",
+          "$0.232(0.161)$",
+          "$0.315(0.278)$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Distribution of the results",
+      "headers": [
+        "Intervals",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Algorithm",
+          "$[0,3)$",
+          "$[3,6)$",
+          "$[6,9)$",
+          "$[9,12)$",
+          "$[12,15)$",
+          "$[15,18)$",
+          "$[18,21)$",
+          "$[21,24)$",
+          "$[24,27)$"
+        ],
+        [
+          "NSGA",
+          2914,
+          28,
+          12,
+          23,
+          8,
+          1,
+          2,
+          11,
+          1
+        ],
+        [
+          "NSGA-II",
+          2909,
+          39,
+          10,
+          21,
+          9,
+          0,
+          9,
+          0,
+          3
+        ],
+        [
+          "w-EDA",
+          2970,
+          17,
+          6,
+          6,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "MEDA for the FJSP-PPF",
+          3000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 10
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 Component parts of an automotive instrument panel",
+      "headers": [
+        "Part number",
+        "Part name"
+      ],
+      "rows": [
+        [
+          1,
+          "Crash pad main assembly"
+        ],
+        [
+          2,
+          "Side facia panel"
+        ],
+        [
+          3,
+          "Crash pad defroster nozzle"
+        ],
+        [
+          4,
+          "Glove box mounting bracket"
+        ],
+        [
+          5,
+          "Glove box upper cover"
+        ],
+        [
+          6,
+          "Glove box"
+        ],
+        [
+          7,
+          "Cluster assembly"
+        ],
+        [
+          8,
+          "Cluster facia panel"
+        ],
+        [
+          9,
+          "Center facia panel support bracket"
+        ],
+        [
+          10,
+          "Lower crash pad center facia panel"
+        ],
+        [
+          11,
+          "Ash tray"
+        ],
+        [
+          12,
+          "Steering column shroud"
+        ],
+        [
+          13,
+          "Lower crash pad support bracket"
+        ],
+        [
+          14,
+          "Crash pad lower cover bracket"
+        ],
+        [
+          15,
+          "Crash pad lower cover"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 2
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 Comparison of results between recent algorithms",
+      "headers": [
+        "Size of the production order",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Algorithm",
+          "Small",
+          "Medium <br> mean(std)",
+          "Large",
+          "Global performance",
+          ""
+        ],
+        [
+          45,
+          "$1.412(1.746)$",
+          "$0.576(0.336)$",
+          "$0.528(0.814)$",
+          "$0.770(1.136)$",
+          ""
+        ],
+        [
+          0.53,
+          "$1.478(1.888)$",
+          "$0.575(0.344)$",
+          "$0.538(0.874)$",
+          "$0.792(1.223)$",
+          ""
+        ],
+        [
+          "MEDA for the FJSP-PPF",
+          "$1.466(1.825)$",
+          "$0.572(0.344)$",
+          "$0.545(0.949)$",
+          "$0.791(1.223)$",
+          ""
+        ],
+        [
+          32,
+          "$1.511(1.907)$",
+          "$0.594(0.342)$",
+          "$0.536(0.898)$",
+          "$0.804(1.243)$",
+          ""
+        ],
+        [
+          0.33,
+          "$1.488(1.892)$",
+          "$0.578(0.339)$",
+          "$0.542(0.895)$",
+          "$0.797(1.233)$",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    }
+  ]
+}

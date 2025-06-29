@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2007/Wrapper discretization by means of estimation of distribution algorithms.md",
+    "filename": "Wrapper discretization by means of estimation of distribution algorithms.md",
+    "title": "Wrapper discretization by means of estimation of distribution algorithms",
+    "year": "2007"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 ANOVA Results",
+      "headers": [
+        "Source",
+        "Type III Sum of Squares",
+        "df",
+        "Mean Square",
+        "F",
+        "Sig."
+      ],
+      "rows": [
+        [
+          "Corrected Model",
+          17009148,
+          26,
+          654198,
+          1652463,
+          0
+        ],
+        [
+          "Intercept",
+          1925586675,
+          1,
+          19255867,
+          4863912,
+          0
+        ],
+        [
+          "$\\alpha$",
+          8954943,
+          2,
+          4477471,
+          11309813,
+          0
+        ],
+        [
+          "$\\beta$",
+          4814908,
+          2,
+          2407454,
+          6081079,
+          0
+        ],
+        [
+          "$\\gamma$",
+          1824063,
+          2,
+          912032,
+          2303735,
+          0
+        ],
+        [
+          "$\\alpha \\beta$",
+          872673,
+          4,
+          218168,
+          551079,
+          0
+        ],
+        [
+          "$\\alpha \\gamma$",
+          137746,
+          4,
+          34437,
+          86985,
+          0
+        ],
+        [
+          "$\\beta \\gamma$",
+          196554,
+          4,
+          49138,
+          124121,
+          0
+        ],
+        [
+          "$\\alpha \\beta \\gamma$",
+          208261,
+          8,
+          26033,
+          65757,
+          0
+        ],
+        [
+          "Error",
+          96202,
+          243,
+          396,
+          "",
+          ""
+        ],
+        [
+          "Total",
+          1942692025,
+          270,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Corrected Total",
+          17105350,
+          269,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "UCI Datasets",
+      "headers": [
+        "\\#",
+        "Data Set",
+        "Num. Class Values",
+        "Num. Variables",
+        "Num. Instances"
+      ],
+      "rows": [
+        [
+          1,
+          "Balance",
+          3,
+          4,
+          625
+        ],
+        [
+          2,
+          "Bupa",
+          2,
+          6,
+          246
+        ],
+        [
+          3,
+          "Hayes",
+          3,
+          4,
+          160
+        ],
+        [
+          4,
+          "Image",
+          7,
+          20,
+          2310
+        ],
+        [
+          5,
+          "Ionosphere",
+          2,
+          35,
+          351
+        ],
+        [
+          6,
+          "Iris",
+          3,
+          4,
+          150
+        ],
+        [
+          7,
+          "Liver",
+          2,
+          6,
+          345
+        ],
+        [
+          8,
+          "Pima",
+          2,
+          8,
+          768
+        ],
+        [
+          9,
+          "Vehicle",
+          4,
+          19,
+          846
+        ],
+        [
+          10,
+          "Wine",
+          3,
+          13,
+          179
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Summary of the estimated predictive accuracy with 2 bins. Classical unsupervised approaches compared with WEDA",
+      "headers": [
+        "",
+        "Equal <br> Frequency",
+        "Equal <br> Width",
+        "K Means",
+        "Unsupervised <br> Monothetic <br> Contrast",
+        "WEDA <br> +C4.5",
+        "WEDA <br> + k-NN",
+        "WEDA + <br> Naive <br> Bayes"
+      ],
+      "rows": [
+        [
+          1,
+          "$73.02 \\pm 2.99$",
+          "$73.02 \\pm 2.99$",
+          "$77.50 \\pm 3.37$",
+          "$\\mathbf{7 7 . 8 2} \\pm \\mathbf{4 . 0 7}$",
+          "$77.64 \\pm 2.58$",
+          "$77.75 \\pm 0.41$",
+          "$77.40 \\pm 1.07$"
+        ],
+        [
+          2,
+          "$\\mathbf{6 6 . 3 8} \\pm \\mathbf{3 . 1 4}$",
+          "$56.23 \\pm 3.75$",
+          "$57.68 \\pm 1.21$",
+          "$58.84 \\pm 2.63$",
+          "$57.10 \\pm 0.70$",
+          "$58.14 \\pm 1.33$",
+          "$58.44 \\pm 0.59$"
+        ],
+        [
+          3,
+          "$56.45 \\pm 8.06$",
+          "$37.73 \\pm 5.79$",
+          "$51.85 \\pm 6.05$",
+          "$31.73 \\pm 5.80$",
+          "$\\mathbf{6 0 . 2 4} \\pm \\mathbf{2 . 3 9}$",
+          "$46.94 \\pm 4.11$",
+          "$57.60 \\pm 1.24$"
+        ],
+        [
+          4,
+          "$67.75 \\pm 0.83$",
+          "$71.17 \\pm 2.29$",
+          "$72.77 \\pm 1.26$",
+          "$72.42 \\pm 1.66$",
+          "$\\mathbf{9 2 . 1 5} \\pm \\mathbf{0 . 4 1}$",
+          "$91.38 \\pm 0.57$",
+          "$88.08 \\pm 0.27$"
+        ],
+        [
+          5,
+          "$66.49 \\pm 22.81$",
+          "$68.23 \\pm 26.54$",
+          "$63.08 \\pm 22.83$",
+          "$65.64 \\pm 22.93$",
+          "$90.52 \\pm 0.85$",
+          "$87.35 \\pm 0.52$",
+          "$\\mathbf{9 6 . 0 2} \\pm \\mathbf{0 . 6 1}$"
+        ],
+        [
+          6,
+          "$76.00 \\pm 2.81$",
+          "$73.99 \\pm 5.96$",
+          "$78.67 \\pm 3.80$",
+          "$78.67 \\pm 5.05$",
+          "$\\mathbf{9 5 . 4 7} \\pm \\mathbf{0 . 2 7}$",
+          "$95.20 \\pm 0.42$",
+          "$94.80 \\pm 0.00$"
+        ],
+        [
+          7,
+          "$\\mathbf{6 8 . 1 2} \\pm \\mathbf{8 . 3 9}$",
+          "$55.36 \\pm 4.15$",
+          "$56.23 \\pm 6.59$",
+          "$57.10 \\pm 4.53$",
+          "$57.71 \\pm 1.13$",
+          "$58.32 \\pm 1.64$",
+          "$60.33 \\pm 4.13$"
+        ],
+        [
+          8,
+          "$72.26 \\pm 3.39$",
+          "$68.49 \\pm 4.74$",
+          "$72.53 \\pm 1.83$",
+          "$74.15 \\pm 1.57$",
+          "$\\mathbf{7 4 . 5 3} \\pm \\mathbf{0 . 4 0}$",
+          "$73.62 \\pm 0.41$",
+          "$73.22 \\pm 0.53$"
+        ],
+        [
+          9,
+          "$45.68 \\pm 3.94$",
+          "$39.78 \\pm 2.87$",
+          "$43.28 \\pm 3.87$",
+          "$42.51 \\pm 2.66$",
+          "$66.36 \\pm 1.37$",
+          "$\\mathbf{6 6 . 3 8} \\pm \\mathbf{1 . 0 0}$",
+          "$61.34 \\pm 1.02$"
+        ],
+        [
+          10,
+          "$96.11 \\pm 3.85$",
+          "$88.55 \\pm 4.43$",
+          "$93.75 \\pm 6.75$",
+          "$93.17 \\pm 6.84$",
+          "$94.05 \\pm 1.03$",
+          "$94.87 \\pm 0.98$",
+          "$\\mathbf{9 6 . 3 8} \\pm \\mathbf{1 . 4 5}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 8
+    },
+    {
+      "table_number": "4",
+      "table_title": "Summary of the estimated predictive accuracy. Supervised approaches compared with WEDA",
+      "headers": [
+        "",
+        "Fayyad Irani <br> Entropy",
+        "CAIM",
+        "WEDA",
+        "WEDA",
+        "WEDA +"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          4.5,
+          "+ k-NN",
+          "Naive Bayes"
+        ],
+        [
+          1,
+          "$73.02 \\pm 2.99$",
+          "$73.02 \\pm 2.99$",
+          "$77.64 \\pm 2.58$",
+          "$\\mathbf{7 7 . 7 5} \\pm \\mathbf{0 . 4 1}$",
+          "$77.40 \\pm 1.07$"
+        ],
+        [
+          2,
+          "$52.17 \\pm 8.20$",
+          "$\\mathbf{6 2 . 9 0} \\pm \\mathbf{6 . 8 4}$",
+          "$57.10 \\pm 0.70$",
+          "$58.14 \\pm 1.33$",
+          "$58.44 \\pm 0.59$"
+        ],
+        [
+          3,
+          "$60.14 \\pm 2.56$",
+          "$53.87 \\pm 4.50$",
+          "$\\mathbf{6 0 . 2 4} \\pm \\mathbf{2 . 3 9}$",
+          "$46.94 \\pm 4.11$",
+          "$57.60 \\pm 1.24$"
+        ],
+        [
+          4,
+          "$88.48 \\pm 0.18$",
+          "$80.35 \\pm 3.31$",
+          "$\\mathbf{9 2 . 1 5} \\pm \\mathbf{0 . 4 1}$",
+          "$91.38 \\pm 0.57$",
+          "$88.08 \\pm 0.27$"
+        ],
+        [
+          5,
+          "$88.91 \\pm 3.87$",
+          "$89.75 \\pm 4.74$",
+          "$90.52 \\pm 0.85$",
+          "$87.35 \\pm 0.52$",
+          "$\\mathbf{9 6 . 0 2} \\pm \\mathbf{0 . 6 1}$"
+        ],
+        [
+          6,
+          "$93.33 \\pm 2.36$",
+          "$69.53 \\pm 2.58$",
+          "$\\mathbf{9 5 . 4 7} \\pm \\mathbf{0 . 2 7}$",
+          "$95.20 \\pm 0.42$",
+          "$94.80 \\pm 0.00$"
+        ],
+        [
+          7,
+          "$58.28 \\pm 0.68$",
+          "$\\mathbf{6 1 . 1 9} \\pm \\mathbf{4 . 3 0}$",
+          "$57.71 \\pm 1.13$",
+          "$58.32 \\pm 1.64$",
+          "$60.33 \\pm 4.13$"
+        ],
+        [
+          8,
+          "$\\mathbf{7 5 . 7 6} \\pm \\mathbf{3 . 5 8}$",
+          "$72.91 \\pm 5.02$",
+          "$74.53 \\pm 0.40$",
+          "$73.62 \\pm 0.41$",
+          "$73.22 \\pm 0.53$"
+        ],
+        [
+          9,
+          "$61.26 \\pm 4.02$",
+          "$46.55 \\pm 1.61$",
+          "$66.36 \\pm 1.37$",
+          "$\\mathbf{6 6 . 3 8} \\pm \\mathbf{1 . 0 0}$",
+          "$61.34 \\pm 1.02$"
+        ],
+        [
+          10,
+          "$98.24 \\pm 2.63$",
+          "$\\mathbf{9 8 . 2 4} \\pm \\mathbf{2 . 6 3}$",
+          "$94.05 \\pm 1.03$",
+          "$94.87 \\pm 0.98$",
+          "$96.38 \\pm 1.45$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 6
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2007/Ambient Cardiac Expert A Cardiac Patient Monitoring System using Genetic and Clinical Knowledge Fusion.md",
+    "filename": "Ambient Cardiac Expert A Cardiac Patient Monitoring System using Genetic and Clinical Knowledge Fusion.md",
+    "title": "Ambient Cardiac Expert A Cardiac Patient Monitoring System using Genetic and Clinical Knowledge Fusion",
+    "year": "2007"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Clinical Data Attributes",
+      "headers": [
+        "Feature <br> ID",
+        "Clinical Parameters",
+        "Unit"
+      ],
+      "rows": [
+        [
+          "$\\mathbf{1}$",
+          "Age",
+          "Years"
+        ],
+        [
+          "$\\mathbf{2}$",
+          "Gender",
+          1
+        ],
+        [
+          "$\\mathbf{3}$",
+          "Chest Pain Type",
+          1
+        ],
+        [
+          "",
+          "",
+          2
+        ],
+        [
+          "",
+          "",
+          "Value 3: Non- <br> Angina Pain"
+        ],
+        [
+          "",
+          "",
+          4
+        ],
+        [
+          "$\\mathbf{4}$",
+          "Resting Blood",
+          "mm hg"
+        ],
+        [
+          "Pressure",
+          "",
+          ""
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:"
+        ],
+        [
+          5,
+          "Resting <br> Electrocardiographic <br> Results",
+          "Value 0: Normal <br> Value 1: Having ST- <br> T Wave <br> Abnormality (T <br> Wave Inversions <br> And/Or ST <br> Elevation Or <br> Depression Of $>$ <br> 0.05 mv ) <br> Value 2: Showing <br> Probable Or Definite <br> Left Ventricular <br> Hypertrophy By <br> Estes' Criteria"
+        ],
+        [
+          6,
+          "Maximum Heart Rate <br> Achieved",
+          ""
+        ],
+        [
+          7,
+          "Exercise Induced <br> Angina",
+          10
+        ],
+        [
+          8,
+          "ST Depression <br> Induced By Exercise <br> Relative To Rest",
+          ""
+        ],
+        [
+          9,
+          "The Slope of The Peak <br> Exercise ST Segment",
+          123
+        ],
+        [
+          10,
+          "Number of Major <br> Vessels",
+          "$(0-3)$"
+        ],
+        [
+          11,
+          "Serum Cholesterol",
+          "$\\mathrm{mg} / \\mathrm{dl}$"
+        ],
+        [
+          12,
+          120,
+          "$\\mathrm{mg} / \\mathrm{dl}$ <br> $(1=$ True; $0=$ False $)$"
+        ],
+        [
+          13,
+          "Thal",
+          367
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Individual SVM Classification Accuracy",
+      "headers": [
+        "Kernel Type",
+        "Genetic",
+        "Clinical"
+      ],
+      "rows": [
+        [
+          "Linear",
+          91.67,
+          87.5
+        ],
+        [
+          "Polynomial",
+          91.67,
+          87.89
+        ],
+        [
+          "RBF",
+          50,
+          71.76
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

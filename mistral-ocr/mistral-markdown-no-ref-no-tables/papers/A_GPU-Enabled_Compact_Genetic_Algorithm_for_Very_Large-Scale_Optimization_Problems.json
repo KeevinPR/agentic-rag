@@ -1,0 +1,838 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/A GPU-Enabled Compact Genetic Algorithm for Very Large-Scale Optimization Problems.md",
+    "filename": "A GPU-Enabled Compact Genetic Algorithm for Very Large-Scale Optimization Problems.md",
+    "title": "A GPU-Enabled Compact Genetic Algorithm for Very Large-Scale Optimization Problems",
+    "year": "2020"
+  },
+  "references": {
+    "header": "# References",
+    "content": "1. CPLEX IBM ILOG, User's Manual for CPLEX. Available online: https://www.ibm.com/support/ knowledgecenter/SSSA5P_12.7.1/ilog.odms.cplex.help/CPLEX/homepages/usrmancplex.html (accessed on 1 April 2020).\n2. Gurobi Optimization Inc. Gurobi Optimizer Reference Manual. Available online: https://www.gurobi.com/ wp-content/plugins/hd_documentations/documentation/9.0/refman.pdf (accessed on 1 April 2020).\n3. Makhorin, A. GLPK (GNU Linear Programming Kit). Available online: https://www.gnu.org/software/ glpk/ (accessed on 1 April 2020).\n4. Deb, K.; Myburgh, C. A population-based fast algorithm for a billion-dimensional resource allocation problem with integer variables. Eur. J. Oper. Res. 2017, 261, 460-474. [CrossRef]\n5. Omidvar, M.N.; Li, X. Evolutionary large-scale global optimization: An introduction. In Proceedings of the Genetic and Evolutionary Computation Conference Companion, Berlin, Germany, 15-19 July 2017; pp. 807-827.\n6. Deb, K.; Myburgh, C. Breaking the billion-variable barrier in real-world optimization using a customized evolutionary algorithm. In Proceedings of the Genetic and Evolutionary Computation Conference, Denver, CO, USA, 20-24 July 2016; pp. 653-660.\n7. Neri, F.; Iacca, G.; Mininno, E. Compact Optimization. In Handbook of Optimization: From Classical to Modern Approach; Springer: New York, NY, USA, 2013; pp. 337-364.\n8. Lozano, J.A.; Larra naga, P.; Inza, I.; Bengoetxea, E. Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms; Springer: New York, NY, USA, 2006; Volume 192.\n9. Harik, G.R.; Lobo, F.G.; Goldberg, D.E. The compact genetic algorithm. IEEE Trans. Evol. Comput. 1999, 3, 287-297. [CrossRef]\n10. Ahn, C.W.; Ramakrishna, R.S. Elitism-based compact genetic algorithms. IEEE Trans. Evol. Comput. 2003, 7, 367-385.\n11. Mininno, E.; Cupertino, F.; Naso, D. Real-Valued Compact Genetic Algorithms for Embedded Microcontroller Optimization. IEEE Trans. Evol. Comput. 2008, 12, 203-219. [CrossRef]\n\n12. Corno, F.; Reorda, M.S.; Squillero, G. The Selfish Gene Algorithm: A New Evolutionary Optimization Strategy. In ACM Symposium on Applied Computing; ACM: New York, NY, USA, 1998; pp. 349-355.\n13. Mininno, E.; Neri, F.; Cupertino, F.; Naso, D. Compact differential evolution. IEEE Trans. Evol. Comput. 2011, 15, 32-54. [CrossRef]\n14. Iacca, G.; Caraffini, F.; Neri, F. Compact Differential Evolution Light: High Performance Despite Limited Memory Requirement and Modest Computational Overhead. J. Comput. Sci. Technol. 2012, 27, 1056-1076. [CrossRef]\n15. Mallipeddi, R.; Iacca, G.; Suganthan, P.N.; Neri, F.; Mininno, E. Ensemble strategies in Compact Differential Evolution. In Proceedings of the Congress on Evolutionary Computation, New Orleans, LA, USA, 5-8 June 2011; pp. 1972-1977.\n16. Iacca, G.; Mallipeddi, R.; Mininno, E.; Neri, F.; Suganthan, P.N. Super-fit and population size reduction in compact Differential Evolution. In Proceedings of the Workshop on Memetic Computing, Paris, France, 11-15 April 2011; pp. 1-8.\n17. Iacca, G.; Mallipeddi, R.; Mininno, E.; Neri, F.; Suganthan, P.N. Global supervision for compact Differential Evolution. In Proceedings of the Symposium on Differential Evolution, Paris, France, 11-15 April 2011; pp. 1-8.\n18. Iacca, G.; Neri, F.; Mininno, E. Opposition-Based Learning in Compact Differential Evolution. In Proceedings of the Conference on the Applications of Evolutionary Computation, Dublin, Ireland, 27-29 April 2011; pp. 264-273.\n19. Iacca, G.; Mininno, E.; Neri, F. Composed compact differential evolution. Evol. Intell. 2011, 4, 17-29. [CrossRef]\n20. Neri, F.; Iacca, G.; Mininno, E. Disturbed Exploitation compact Differential Evolution for limited memory optimization problems. Inf. Sci. 2011, 181, 2469-2487. [CrossRef]\n21. Iacca, G.; Neri, F.; Mininno, E. Noise analysis compact differential evolution. Int. J. Syst. Sci. 2012, 43, 1248-1267. [CrossRef]\n22. Neri, F.; Mininno, E.; Iacca, G. Compact Particle Swarm Optimization. Inf. Sci. 2013, 239, 96-121. [CrossRef]\n23. Iacca, G.; Neri, F.; Mininno, E. Compact Bacterial Foraging Optimization. In Swarm and Evolutionary Computation; Springer: Berlin/Heidelberg, Germany, 2012; pp. 84-92.\n24. Yang, Z.; Li, K.; Guo, Y. A new compact teaching-learning-based optimization method. In International Conference on Intelligent Computing; Springer: Cham, Switzerland, 2014; pp. 717-726.\n25. Dao, T.K.; Pan, T.S.; Nguyen, T.T.; Chu, S.C.; Pan, J.S. A Compact Flower Pollination Algorithm Optimization. In Proceedings of the International Conference on Computing Measurement Control and Sensor Network, Matsue, Japan, 20-22 May 2016; pp. 76-79.\n26. Tighzert, L.; Fonlupt, C.; Mendil, B. A set of new compact firefly algorithms. Swarm Evol. Comput. 2018, 40, 92-115. [CrossRef]\n27. Dao, T.K.; Chu, S.C.; Shieh, C.S.; Horng, M.F. Compact artificial bee colony. In Proceedings of the International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems, Kaohsiung, Taiwan, 3-6 June 2014; pp. 96-105.\n28. Banitalebi, A.; Aziz, M.I.A.; Bahar, A.; Aziz, Z.A. Enhanced compact artificial bee colony. Inf. Sci. 2015, 298, 491-511. [CrossRef]\n29. Jewajinda, Y. Covariance matrix compact differential evolution for embedded intelligence. In Proceedings of the IEEE Region 10 Symposium, Bali, Indonesia, 9-11 May 2016; pp. 349-354.\n30. Neri, F.; Mininno, E. Memetic compact differential evolution for Cartesian robot control. IEEE Comput. Intell. Mag. 2010, 5, 54-65. [CrossRef]\n31. Iacca, G.; Caraffini, F.; Neri, F. Memory-saving memetic computing for path-following mobile robots. Appl. Soft Comput. 2013, 13, 2003-2016. [CrossRef]\n32. Iacca, G.; Caraffini, F.; Neri, F.; Mininno, E. Robot Base Disturbance Optimization with Compact Differential Evolution Light. In Conference on the Applications of Evolutionary Computation; Springer: Berlin/Heidelberg, Germany, 2012; pp. 285-294.\n33. Gallagher, J.C.; Vigraham, S.; Kramer, G. A family of compact genetic algorithms for intrinsic evolvable hardware. IEEE Trans. Evol. Comput. 2004, 8, 111-126. [CrossRef]\n34. Yang, Z.; Li, K.; Guo, Y.; Ma, H.; Zheng, M. Compact real-valued teaching-learning based optimization with the applications to neural network training. Knowl. -Based Syst. 2018, 159, 51-62. [CrossRef]\n\n35. Dao, T.K.; Pan, T.S.; Nguyen, T.T.; Chu, S.C. A compact artificial bee colony optimization for topology control scheme in wireless sensor networks. J. Inf. Hiding Multimed. Signal Process. 2015, 6, 297-310.\n36. Prugel-Bennett, A. Benefits of a Population: Five Mechanisms That Advantage Population-Based Algorithms. IEEE Trans. Evol. Comput. 2010, 14, 500-517. [CrossRef]\n37. Caraffini, F.; Neri, F.; Passow, B.N.; Iacca, G. Re-sampled inheritance search: High performance despite the simplicity. Soft Comput. 2013, 17, 2235-2256. [CrossRef]\n38. Iacca, G.; Caraffini, F. Compact Optimization Algorithms with Re-Sampled Inheritance. In Conference on the Applications of Evolutionary Computation; Springer: Cham, Switzerland, 2019; pp. 523-534.\n39. Hansen, N.; Müller, S.D.; Koumoutsakos, P. Reducing the time complexity of the derandomized evolution strategy with covariance matrix adaptation (CMA-ES). Evol. Comput. 2003, 11, 1-18. [CrossRef]\n40. Loshchilov, I.; Glasmachers, T.; Beyer, H.G. Large scale black-box optimization by limited-memory matrix adaptation. IEEE Trans. Evol. Computat. 2018, 23, 353-358. [CrossRef]\n41. Halman, N.; Kellerer, H.; Strusevich, V.A. Approximation schemes for non-separable non-linear boolean programming problems under nested knapsack constraints. Eur. J. Oper. Res. 2018, 270, 435-447. [CrossRef]\n42. Caraffini, F.; Neri, F.; Iacca, G. Large scale problems in practice: the effect of dimensionality on the interaction among variables. In Conference on the Applications of Evolutionary Computation; Springer: Cham, Switzerland, 2017; pp. 636-652.\n43. Schaffer, J.; Eshelman, L. On crossover as an evolutionarily viable strategy. In Proceedings of the International Conference on Genetic Algorithms, San Diego, CA, USA, 13-16 July 1991; pp. 61-68.\n44. Goldberg, D.E.; Sastry, K.; Llorà, X. Toward routine billion-variable optimization using genetic algorithms. Complexity 2007, 12, 27-29. [CrossRef]\n45. Wang, Z.; Hutter, F.; Zoghi, M.; Matheson, D.; de Feitas, N. Bayesian optimization in a billion dimensions via random embeddings. J. Artif. Intell. Res. 2016, 35, 361-387. [CrossRef]\n46. Iturriaga, S.; Nesmachnow, S. Solving very large optimization problems (up to one billion variables) with a parallel evolutionary algorithm in CPU and GPU. In Proceedings of the IEEE International Conference on P2P, Parallel, Grid, Cloud and Internet Computing, Victoria, BC, Canada, 12-14 November 2012; pp. 267-272.\n47. Xinchao, Z. Simulated annealing algorithm with adaptive neighborhood. Appl. Soft Comput. 2011, 11, 1827-1836. [CrossRef]\n48. Iacca, G. Distributed optimization in wireless sensor networks: an island-model framework. Soft Comput. 2013, 17, 2257-2277. [CrossRef]\n49. Whitley, D. Next generation genetic algorithms: A user's guide and tutorial. In Handb. Metaheuristics; Springer: Cham, Switzerland, 2019; pp. 245-274.\n50. Varadarajan, S.; Whitley, D. The massively parallel mixing genetic algorithm for the traveling salesman problem. In Proceedings of the Genetic and Evolutionary Computation Conference, Prague, Czech Republic, 13-17 July 2019; pp. 872-879.\n(C) 2020 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (http:// creativecommons.org/licenses/by/4.0/).",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "CPLEX IBM ILOG, User's Manual for CPLEX. Available online: https://www.ibm.com/support/ knowledgecenter/SSSA5P_12.7.1/ilog.odms.cplex.help/CPLEX/homepages/usrmancplex.html (accessed on 1 April 2020)."
+      },
+      {
+        "ref_id": "2",
+        "text": "Gurobi Optimization Inc. Gurobi Optimizer Reference Manual. Available online: https://www.gurobi.com/ wp-content/plugins/hd_documentations/documentation/9.0/refman.pdf (accessed on 1 April 2020)."
+      },
+      {
+        "ref_id": "3",
+        "text": "Makhorin, A. GLPK (GNU Linear Programming Kit). Available online: https://www.gnu.org/software/ glpk/ (accessed on 1 April 2020)."
+      },
+      {
+        "ref_id": "4",
+        "text": "Deb, K.; Myburgh, C. A population-based fast algorithm for a billion-dimensional resource allocation problem with integer variables. Eur. J. Oper. Res. 2017, 261, 460-474. [CrossRef]"
+      },
+      {
+        "ref_id": "5",
+        "text": "Omidvar, M.N.; Li, X. Evolutionary large-scale global optimization: An introduction. In Proceedings of the Genetic and Evolutionary Computation Conference Companion, Berlin, Germany, 15-19 July 2017; pp. 807-827."
+      },
+      {
+        "ref_id": "6",
+        "text": "Deb, K.; Myburgh, C. Breaking the billion-variable barrier in real-world optimization using a customized evolutionary algorithm. In Proceedings of the Genetic and Evolutionary Computation Conference, Denver, CO, USA, 20-24 July 2016; pp. 653-660."
+      },
+      {
+        "ref_id": "7",
+        "text": "Neri, F.; Iacca, G.; Mininno, E. Compact Optimization. In Handbook of Optimization: From Classical to Modern Approach; Springer: New York, NY, USA, 2013; pp. 337-364."
+      },
+      {
+        "ref_id": "8",
+        "text": "Lozano, J.A.; Larra naga, P.; Inza, I.; Bengoetxea, E. Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms; Springer: New York, NY, USA, 2006; Volume 192."
+      },
+      {
+        "ref_id": "9",
+        "text": "Harik, G.R.; Lobo, F.G.; Goldberg, D.E. The compact genetic algorithm. IEEE Trans. Evol. Comput. 1999, 3, 287-297. [CrossRef]"
+      },
+      {
+        "ref_id": "10",
+        "text": "Ahn, C.W.; Ramakrishna, R.S. Elitism-based compact genetic algorithms. IEEE Trans. Evol. Comput. 2003, 7, 367-385."
+      },
+      {
+        "ref_id": "11",
+        "text": "Mininno, E.; Cupertino, F.; Naso, D. Real-Valued Compact Genetic Algorithms for Embedded Microcontroller Optimization. IEEE Trans. Evol. Comput. 2008, 12, 203-219. [CrossRef]"
+      },
+      {
+        "ref_id": "12",
+        "text": "Corno, F.; Reorda, M.S.; Squillero, G. The Selfish Gene Algorithm: A New Evolutionary Optimization Strategy. In ACM Symposium on Applied Computing; ACM: New York, NY, USA, 1998; pp. 349-355."
+      },
+      {
+        "ref_id": "13",
+        "text": "Mininno, E.; Neri, F.; Cupertino, F.; Naso, D. Compact differential evolution. IEEE Trans. Evol. Comput. 2011, 15, 32-54. [CrossRef]"
+      },
+      {
+        "ref_id": "14",
+        "text": "Iacca, G.; Caraffini, F.; Neri, F. Compact Differential Evolution Light: High Performance Despite Limited Memory Requirement and Modest Computational Overhead. J. Comput. Sci. Technol. 2012, 27, 1056-1076. [CrossRef]"
+      },
+      {
+        "ref_id": "15",
+        "text": "Mallipeddi, R.; Iacca, G.; Suganthan, P.N.; Neri, F.; Mininno, E. Ensemble strategies in Compact Differential Evolution. In Proceedings of the Congress on Evolutionary Computation, New Orleans, LA, USA, 5-8 June 2011; pp. 1972-1977."
+      },
+      {
+        "ref_id": "16",
+        "text": "Iacca, G.; Mallipeddi, R.; Mininno, E.; Neri, F.; Suganthan, P.N. Super-fit and population size reduction in compact Differential Evolution. In Proceedings of the Workshop on Memetic Computing, Paris, France, 11-15 April 2011; pp. 1-8."
+      },
+      {
+        "ref_id": "17",
+        "text": "Iacca, G.; Mallipeddi, R.; Mininno, E.; Neri, F.; Suganthan, P.N. Global supervision for compact Differential Evolution. In Proceedings of the Symposium on Differential Evolution, Paris, France, 11-15 April 2011; pp. 1-8."
+      },
+      {
+        "ref_id": "18",
+        "text": "Iacca, G.; Neri, F.; Mininno, E. Opposition-Based Learning in Compact Differential Evolution. In Proceedings of the Conference on the Applications of Evolutionary Computation, Dublin, Ireland, 27-29 April 2011; pp. 264-273."
+      },
+      {
+        "ref_id": "19",
+        "text": "Iacca, G.; Mininno, E.; Neri, F. Composed compact differential evolution. Evol. Intell. 2011, 4, 17-29. [CrossRef]"
+      },
+      {
+        "ref_id": "20",
+        "text": "Neri, F.; Iacca, G.; Mininno, E. Disturbed Exploitation compact Differential Evolution for limited memory optimization problems. Inf. Sci. 2011, 181, 2469-2487. [CrossRef]"
+      },
+      {
+        "ref_id": "21",
+        "text": "Iacca, G.; Neri, F.; Mininno, E. Noise analysis compact differential evolution. Int. J. Syst. Sci. 2012, 43, 1248-1267. [CrossRef]"
+      },
+      {
+        "ref_id": "22",
+        "text": "Neri, F.; Mininno, E.; Iacca, G. Compact Particle Swarm Optimization. Inf. Sci. 2013, 239, 96-121. [CrossRef]"
+      },
+      {
+        "ref_id": "23",
+        "text": "Iacca, G.; Neri, F.; Mininno, E. Compact Bacterial Foraging Optimization. In Swarm and Evolutionary Computation; Springer: Berlin/Heidelberg, Germany, 2012; pp. 84-92."
+      },
+      {
+        "ref_id": "24",
+        "text": "Yang, Z.; Li, K.; Guo, Y. A new compact teaching-learning-based optimization method. In International Conference on Intelligent Computing; Springer: Cham, Switzerland, 2014; pp. 717-726."
+      },
+      {
+        "ref_id": "25",
+        "text": "Dao, T.K.; Pan, T.S.; Nguyen, T.T.; Chu, S.C.; Pan, J.S. A Compact Flower Pollination Algorithm Optimization. In Proceedings of the International Conference on Computing Measurement Control and Sensor Network, Matsue, Japan, 20-22 May 2016; pp. 76-79."
+      },
+      {
+        "ref_id": "26",
+        "text": "Tighzert, L.; Fonlupt, C.; Mendil, B. A set of new compact firefly algorithms. Swarm Evol. Comput. 2018, 40, 92-115. [CrossRef]"
+      },
+      {
+        "ref_id": "27",
+        "text": "Dao, T.K.; Chu, S.C.; Shieh, C.S.; Horng, M.F. Compact artificial bee colony. In Proceedings of the International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems, Kaohsiung, Taiwan, 3-6 June 2014; pp. 96-105."
+      },
+      {
+        "ref_id": "28",
+        "text": "Banitalebi, A.; Aziz, M.I.A.; Bahar, A.; Aziz, Z.A. Enhanced compact artificial bee colony. Inf. Sci. 2015, 298, 491-511. [CrossRef]"
+      },
+      {
+        "ref_id": "29",
+        "text": "Jewajinda, Y. Covariance matrix compact differential evolution for embedded intelligence. In Proceedings of the IEEE Region 10 Symposium, Bali, Indonesia, 9-11 May 2016; pp. 349-354."
+      },
+      {
+        "ref_id": "30",
+        "text": "Neri, F.; Mininno, E. Memetic compact differential evolution for Cartesian robot control. IEEE Comput. Intell. Mag. 2010, 5, 54-65. [CrossRef]"
+      },
+      {
+        "ref_id": "31",
+        "text": "Iacca, G.; Caraffini, F.; Neri, F. Memory-saving memetic computing for path-following mobile robots. Appl. Soft Comput. 2013, 13, 2003-2016. [CrossRef]"
+      },
+      {
+        "ref_id": "32",
+        "text": "Iacca, G.; Caraffini, F.; Neri, F.; Mininno, E. Robot Base Disturbance Optimization with Compact Differential Evolution Light. In Conference on the Applications of Evolutionary Computation; Springer: Berlin/Heidelberg, Germany, 2012; pp. 285-294."
+      },
+      {
+        "ref_id": "33",
+        "text": "Gallagher, J.C.; Vigraham, S.; Kramer, G. A family of compact genetic algorithms for intrinsic evolvable hardware. IEEE Trans. Evol. Comput. 2004, 8, 111-126. [CrossRef]"
+      },
+      {
+        "ref_id": "34",
+        "text": "Yang, Z.; Li, K.; Guo, Y.; Ma, H.; Zheng, M. Compact real-valued teaching-learning based optimization with the applications to neural network training. Knowl. -Based Syst. 2018, 159, 51-62. [CrossRef]"
+      },
+      {
+        "ref_id": "35",
+        "text": "Dao, T.K.; Pan, T.S.; Nguyen, T.T.; Chu, S.C. A compact artificial bee colony optimization for topology control scheme in wireless sensor networks. J. Inf. Hiding Multimed. Signal Process. 2015, 6, 297-310."
+      },
+      {
+        "ref_id": "36",
+        "text": "Prugel-Bennett, A. Benefits of a Population: Five Mechanisms That Advantage Population-Based Algorithms. IEEE Trans. Evol. Comput. 2010, 14, 500-517. [CrossRef]"
+      },
+      {
+        "ref_id": "37",
+        "text": "Caraffini, F.; Neri, F.; Passow, B.N.; Iacca, G. Re-sampled inheritance search: High performance despite the simplicity. Soft Comput. 2013, 17, 2235-2256. [CrossRef]"
+      },
+      {
+        "ref_id": "38",
+        "text": "Iacca, G.; Caraffini, F. Compact Optimization Algorithms with Re-Sampled Inheritance. In Conference on the Applications of Evolutionary Computation; Springer: Cham, Switzerland, 2019; pp. 523-534."
+      },
+      {
+        "ref_id": "39",
+        "text": "Hansen, N.; Müller, S.D.; Koumoutsakos, P. Reducing the time complexity of the derandomized evolution strategy with covariance matrix adaptation (CMA-ES). Evol. Comput. 2003, 11, 1-18. [CrossRef]"
+      },
+      {
+        "ref_id": "40",
+        "text": "Loshchilov, I.; Glasmachers, T.; Beyer, H.G. Large scale black-box optimization by limited-memory matrix adaptation. IEEE Trans. Evol. Computat. 2018, 23, 353-358. [CrossRef]"
+      },
+      {
+        "ref_id": "41",
+        "text": "Halman, N.; Kellerer, H.; Strusevich, V.A. Approximation schemes for non-separable non-linear boolean programming problems under nested knapsack constraints. Eur. J. Oper. Res. 2018, 270, 435-447. [CrossRef]"
+      },
+      {
+        "ref_id": "42",
+        "text": "Caraffini, F.; Neri, F.; Iacca, G. Large scale problems in practice: the effect of dimensionality on the interaction among variables. In Conference on the Applications of Evolutionary Computation; Springer: Cham, Switzerland, 2017; pp. 636-652."
+      },
+      {
+        "ref_id": "43",
+        "text": "Schaffer, J.; Eshelman, L. On crossover as an evolutionarily viable strategy. In Proceedings of the International Conference on Genetic Algorithms, San Diego, CA, USA, 13-16 July 1991; pp. 61-68."
+      },
+      {
+        "ref_id": "44",
+        "text": "Goldberg, D.E.; Sastry, K.; Llorà, X. Toward routine billion-variable optimization using genetic algorithms. Complexity 2007, 12, 27-29. [CrossRef]"
+      },
+      {
+        "ref_id": "45",
+        "text": "Wang, Z.; Hutter, F.; Zoghi, M.; Matheson, D.; de Feitas, N. Bayesian optimization in a billion dimensions via random embeddings. J. Artif. Intell. Res. 2016, 35, 361-387. [CrossRef]"
+      },
+      {
+        "ref_id": "46",
+        "text": "Iturriaga, S.; Nesmachnow, S. Solving very large optimization problems (up to one billion variables) with a parallel evolutionary algorithm in CPU and GPU. In Proceedings of the IEEE International Conference on P2P, Parallel, Grid, Cloud and Internet Computing, Victoria, BC, Canada, 12-14 November 2012; pp. 267-272."
+      },
+      {
+        "ref_id": "47",
+        "text": "Xinchao, Z. Simulated annealing algorithm with adaptive neighborhood. Appl. Soft Comput. 2011, 11, 1827-1836. [CrossRef]"
+      },
+      {
+        "ref_id": "48",
+        "text": "Iacca, G. Distributed optimization in wireless sensor networks: an island-model framework. Soft Comput. 2013, 17, 2257-2277. [CrossRef]"
+      },
+      {
+        "ref_id": "49",
+        "text": "Whitley, D. Next generation genetic algorithms: A user's guide and tutorial. In Handb. Metaheuristics; Springer: Cham, Switzerland, 2019; pp. 245-274."
+      },
+      {
+        "ref_id": "50",
+        "text": "Varadarajan, S.; Whitley, D. The massively parallel mixing genetic algorithm for the traveling salesman problem. In Proceedings of the Genetic and Evolutionary Computation Conference, Prague, Czech Republic, 13-17 July 2019; pp. 872-879."
+      }
+    ],
+    "reference_count": 50,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Variables and functions used in the binary cGAs.",
+      "headers": [
+        "Name",
+        "Description"
+      ],
+      "rows": [
+        [
+          "problemSize",
+          "Problem dimensionality (scalar)"
+        ],
+        [
+          "virtualPopulation",
+          "Virtual population (scalar)"
+        ],
+        [
+          "PV",
+          "Probability Vector (vector)"
+        ],
+        [
+          "trial",
+          "Solution sampled from PV (vector)"
+        ],
+        [
+          "elite",
+          "Best solution found so far (vector)"
+        ],
+        [
+          "fitnessTrial",
+          "Fitness of trial (scalar or vector)"
+        ],
+        [
+          "fitnessElite",
+          "Fitness of elite (scalar or vector)"
+        ],
+        [
+          "winner",
+          10
+        ],
+        [
+          "generateTrial()",
+          "Sample trial from PV (return a solution)"
+        ],
+        [
+          "evaluate()",
+          "Evaluate a solution (return its fitness)"
+        ],
+        [
+          "compete()",
+          "Compare two solutions (return winner)"
+        ],
+        [
+          "updatePV()",
+          "Update PV (return PV)"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Data type and size for the binary cGAs.",
+      "headers": [
+        "Data",
+        "cGA-Base",
+        "",
+        "cGA-A100",
+        "",
+        "cGA-A1",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Type",
+          "Size",
+          "Type",
+          "Size",
+          "Type",
+          "Size"
+        ],
+        [
+          "PV",
+          32,
+          "problemSize",
+          32,
+          "problemSize",
+          32,
+          "problemSize"
+        ],
+        [
+          "trial",
+          "Bool",
+          "problemSize",
+          "Bool",
+          "problemSize",
+          "Bool",
+          "problemSize"
+        ],
+        [
+          "elite",
+          "Bool",
+          "problemSize",
+          "Bool",
+          "problemSize",
+          "Bool",
+          "problemSize"
+        ],
+        [
+          "fitnessTrial",
+          32,
+          1,
+          8,
+          100,
+          32,
+          1
+        ],
+        [
+          "fitnessElite",
+          32,
+          1,
+          8,
+          100,
+          32,
+          1
+        ],
+        [
+          "winner",
+          32,
+          1,
+          "Bool",
+          100,
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Variables and functions used in the discrete cGA.",
+      "headers": [
+        "Name",
+        "Description"
+      ],
+      "rows": [
+        [
+          "N",
+          "Number of objects (scalar)"
+        ],
+        [
+          "W",
+          "Crucible sizes (vector)"
+        ],
+        [
+          "$\\eta$",
+          "Desired efficiency (scalar)"
+        ],
+        [
+          "H",
+          "Number of heats to achieve $(\\eta)$ (scalar)"
+        ],
+        [
+          "copies",
+          "Copies to be cast for each object (vector)"
+        ],
+        [
+          "weights",
+          "Weights (vector)"
+        ],
+        [
+          "virtualPopulation",
+          "Virtual population (scalar)"
+        ],
+        [
+          "PV",
+          "Probability Vector (vector)"
+        ],
+        [
+          "trial",
+          "Solution sampled from PV (vector)"
+        ],
+        [
+          "elite",
+          "Best solution found so far (vector)"
+        ],
+        [
+          "copiesTrial",
+          "Copies cast by trial (vector)"
+        ],
+        [
+          "heatsTrial",
+          "Available space in the heats of trial (vector)"
+        ],
+        [
+          "fitnessTrial",
+          "Fitness of trial (scalar)"
+        ],
+        [
+          "fitnessElite",
+          "Fitness of elite (scalar)"
+        ],
+        [
+          "winner",
+          10
+        ],
+        [
+          "estimateH()",
+          "Estimate the value of $H$ based on $\\eta$, copies, weights and W (return $H$ )"
+        ],
+        [
+          "smartInitialization()",
+          "Initialize elite and PV (return elite and PV)"
+        ],
+        [
+          "initializeElite()",
+          "Initialize elite (return elite)"
+        ],
+        [
+          "inhibitor()",
+          "Blocks the unusable elements of PV (return PV)"
+        ],
+        [
+          "initializePV()",
+          "Initialize PV (return PV)"
+        ],
+        [
+          "generateTrial()",
+          "Sample trial from PV and apply to it mutations and crossover"
+        ],
+        [
+          "newTrial()",
+          "Sample trial from PV (return trial and heatsTrial)"
+        ],
+        [
+          "mutationOne()",
+          "Repair trial with respect to the equality constraints"
+        ],
+        [
+          "mutationTwo()",
+          "Repair trial with respect to the inequality constraints"
+        ],
+        [
+          "crossover()",
+          "Operate a heat-wise crossover between trial and elite"
+        ],
+        [
+          "evaluate()",
+          "Evaluate a solution (return its fitness)"
+        ],
+        [
+          "compete()",
+          "Compare two solutions (return winner)"
+        ],
+        [
+          "updatePV()",
+          "Update PV (return PV)"
+        ]
+      ],
+      "row_count": 28,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Synchronous binary cGAs: comparison on the OneMax problem (mean across 10 runs, std. dev. in parentheses). The symbol '-' indicates data not provided in [46].",
+      "headers": [
+        "",
+        "cGA-Sync [46]",
+        "",
+        "",
+        "",
+        "cGA-Base [Ours]",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          8,
+          32,
+          1,
+          1,
+          8,
+          32,
+          1,
+          "",
+          ""
+        ],
+        [
+          "Time (s)",
+          "600 ( - )",
+          "10,680 (-)",
+          "49,140(-)",
+          "348,000(-)",
+          "52.022 (1.552)",
+          "256.923(2.169)",
+          "969.419 (5.971)",
+          "9085.140 (1136.925)",
+          "",
+          ""
+        ],
+        [
+          "Fitness (\\%)",
+          "82.5 (-)",
+          "79.1(-)",
+          "74.1(-)",
+          "62.3 (-)",
+          "51.192 (0.0570)",
+          "50.750(0.0194)",
+          "50.634(0.0053)",
+          "50.525 (0.0012)",
+          "",
+          ""
+        ],
+        [
+          "Iterations",
+          "50,000 (-)",
+          "50,000 (-)",
+          "50,000 (-)",
+          "50,000 (-)",
+          50000,
+          50000,
+          50000,
+          16000,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 11
+    },
+    {
+      "table_number": "6",
+      "table_title": "Parameters used for the casting scheduling problem. Note that the crucible size, $W$, and the weights are in common for all the problem dimensionalities, therefore the only parameter that changes across dimensionalities is the number of copies per object.",
+      "headers": [
+        "Size",
+        "W",
+        "",
+        "",
+        "",
+        "",
+        "$[500,650]$",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Object id",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        [
+          "",
+          "weights",
+          79,
+          66,
+          31,
+          26,
+          44,
+          35,
+          88,
+          9,
+          57,
+          22
+        ],
+        [
+          100,
+          "copies",
+          12560,
+          12562,
+          12517,
+          12567,
+          12562,
+          12172,
+          12076,
+          12052,
+          12017,
+          12012
+        ],
+        [
+          10,
+          "",
+          125600,
+          125620,
+          125170,
+          125670,
+          125620,
+          121720,
+          120760,
+          120520,
+          120170,
+          120120
+        ],
+        [
+          10,
+          "",
+          1255980,
+          1256200,
+          1251700,
+          1256700,
+          1256200,
+          1217200,
+          1207600,
+          1205200,
+          1201700,
+          1201200
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 12
+    },
+    {
+      "table_number": "7",
+      "table_title": "Casting scheduling problem: number of solution evaluations to reach the optimum, number of heat updates, and execution times (mean across 10 runs, std. dev. in parentheses). The results for the PILP algorithm are taken from Table 6 in [4]; the symbol '-' indicates data not provided.",
+      "headers": [
+        "Algorithm",
+        "Size",
+        "Solution evalue",
+        "Heat Update",
+        "Total Time (s)",
+        "Initialization(s) (s)",
+        "generateTrial(s) (s)",
+        "evaluation(s) (s)",
+        "computer(s) (s)",
+        "update(s) (s)"
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          "20.2 (9.249)",
+          451027.2145724751,
+          360703114.444,
+          57112.827,
+          35470713.993,
+          "0.0656 (0.0958)",
+          "0.0431 (0.0813)",
+          "0.173 (0.266)"
+        ],
+        [
+          "",
+          1,
+          "18.1 (7.687)",
+          "3,300,602.6 (28,057.973)",
+          2538747445.0527,
+          387579.796,
+          "2499.556 (398.775)",
+          "0.0444 (0.0386)",
+          "0.0230 (0.031)",
+          "0.558 (0.315)"
+        ],
+        [
+          "",
+          10,
+          "29.3 (14.423)",
+          "33,720,256.6 (867,688.014)",
+          "29,785.986 (6790.176)",
+          "460.459 (136.859)",
+          "29,322.144 (6679.297)",
+          "0.177 (0.0883)",
+          "0.0910 (0.0626)",
+          "3.101 (1.367)"
+        ],
+        [
+          "PILP [s]",
+          100,
+          103217,
+          8807564167494,
+          260.6,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "",
+          1,
+          108015,
+          913458012048330,
+          3089,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "",
+          10,
+          110415,
+          97690343919038115,
+          4207124,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 10
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A1. Results of the cGA on the discrete and continuous OneMax problem.",
+      "headers": [
+        "",
+        "Discrete cGA",
+        "",
+        "",
+        "",
+        "Continuous cGA",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          6,
+          12,
+          1,
+          1,
+          6,
+          12,
+          1
+        ],
+        [
+          "Time (s)",
+          "72.463 (2.038)",
+          "395.806 (3.985)",
+          "1958.932 (485.963)",
+          "13,143.343 (3201.053)",
+          "156.647 (1.487)",
+          "985.936 (118.716)",
+          "3366.755 (20.297)",
+          "20,895.386 (4131.433)"
+        ],
+        [
+          "Fitness (\\%)",
+          "50.926 (0.0250)",
+          "50.658 (0.008)",
+          "50.579 (0.002)",
+          "50.515 (0.0005)",
+          "50.870 (0.039)",
+          "50.102 (0.024)",
+          "50.034 (0.0072)",
+          "50.0055 (0.0003)"
+        ],
+        [
+          "Iterations",
+          5000,
+          5000,
+          5000,
+          1000,
+          5000,
+          5000,
+          5000,
+          1000
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A2. Parameter settings for the cGA applied to the continuous OneMax problem.",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "virtualPopulation",
+          100
+        ],
+        [
+          "$F$",
+          0.7
+        ],
+        [
+          "$C R$ (binomial)",
+          0.5
+        ],
+        [
+          "$C R$ (exponential)",
+          0.9
+        ],
+        [
+          "invariant",
+          300
+        ],
+        [
+          "resetPR",
+          0.5
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    }
+  ]
+}

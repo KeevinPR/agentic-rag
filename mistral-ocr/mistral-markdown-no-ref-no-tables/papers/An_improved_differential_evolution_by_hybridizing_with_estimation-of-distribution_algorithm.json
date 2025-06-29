@@ -1,0 +1,804 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/An improved differential evolution by hybridizing with estimation-of-distribution algorithm.md",
+    "filename": "An improved differential evolution by hybridizing with estimation-of-distribution algorithm.md",
+    "title": "An improved differential evolution by hybridizing with estimation-of-distribution algorithm",
+    "year": "2022"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] K. De Jong, Evolutionary computation, in: Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion, ACM, New York, NY, USA, 2020: pp. 327-342. 10.1145/3377929.3389871.\n[2] A.W. Mohamed, A.A. Hadi, A.K. Mohamed, Differential evolution mutations: taxonomy, comparison and convergence analysis, IEEE Access. 9 (2021) 68629-68662, https://doi.org/10.1109/ACCESS.2021.3077242.\n[3] K.M. Sallam, M.A. Hossain, R.K. Chakrabortty, M.J. Ryan, An improved gaining-sharing knowledge algorithm for parameter extraction of photovoltaic models, Energy Convers. Manage. 237 (2021), https://doi.org/10.1016/j.enconman.2021.114030 114030.\n[4] N.H. Awad, M.Z. Ali, J. Liang, B.Y. Qu, P.N. Suganthan, Problem definitions and evaluation criteria for the CEC 2017 special session and competition on real-parameter optimization, 2016.\n[5] N.H. Awad, M.Z. Ali, J. Liang, B.Y. Qu, P.N. Suganthan, Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective real-parameter numerical optimization, 2013.\n[6] P.N.S.G.W. R. Mallipeddi, Problem definitions and evaluation criteria for the CEC 2010 Competition on Constrained Real-Parameter Optimization, 2010. http://www3.ntu.edu.sg/home/epmsugan/index_files/CEC10-Const/TR-April-2010.pdf.\n[7] A.W. Mohamed, A.A. Hadi, A.K. Mohamed, P. Agrawal, A. Kumar, P.N. Suganthan, Problem Definitions and Evaluation Criteria for the CEC 2021 Special Session and Competition on Single Objective Bound Constrained Numerical Optimization, 2020.\n[8] R. Storn, K. Price, Differential evolution - A simple and efficient heuristic for global optimization over continuous spaces, J. Global Optimiz. 11 (1997) 341-359, https://doi.org/10.1023/A:1008202821328.\n[9] J. Teo, Exploring dynamic self-adaptive populations in differential evolution, Soft Comput. 10 (2006) 673-686, https://doi.org/10.1007/s00500-005-0537-1.\n[10] J. Brest, S. Greiner, B. Bošković, M. Mernik, V. Zumer, Self-adapting control parameters in differential evolution: A comparative study on numerical benchmark problems, IEEE Trans. Evol. Comput. 10 (2006) 646-657, https://doi.org/10.1109/TEVC.2006.872133.\n[11] J. Zhang, A.C. Sanderson, JADE: adaptive differential evolution with optional external archive, IEEE Trans. Evol. Comput. 13 (2009) 945-958, https://doi. org/10.1109/TEVC.2009.2014613.\n[12] R. Tanabe, A. Fukunaga, Success-history based parameter adaptation for Differential Evolution, in: 2013 IEEE Congress on Evolutionary Computation, CEC 2013, 2013: pp. 71-78. 10.1109/CEC.2013.6557555.\n[13] R. Tanabe, A.S. Fukunaga, Improving the search performance of SHADE using linear population size reduction, in: 2014 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2014: pp. 1658-1665. 10.1109/CEC.2014.6900380.\n[14] J. Brest, M.S. Maučec, B. Bošković, IL-SHADE: Improved L-SHADE algorithm for single objective real-parameter optimization, in: 2016 IEEE Congress on Evolutionary Computation, CEC 2016, 2016: pp. 1188-1195. 10.1109/CEC.2016.7743922.\n[15] N.H. Awad, M.Z. Ali, P.N. Suganthan, R.G. Reynolds, An ensemble sinusoidal parameter adaptation incorporated with L-SHADE for solving CEC2014 benchmark problems, in: 2016 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2016: pp. 2958-2965. 10.1109/CEC.2016.7744163.\n[16] P. Ochoa, O. Castillo, J. Soria, High-speed interval type-2 fuzzy system for dynamic crossover parameter adaptation in differential evolution and its application to controller optimization, Int. J. Fuzzy Syst. 22 (2020) 414-427, https://doi.org/10.1007/s40815-019-00723-w.\n[17] P. Ochoa, O. Castillo, P. Melin, J. Soria, Differential evolution with shadowed and general type-2 fuzzy systems for dynamic parameter adaptation in optimal design of fuzzy controllers, Axioms 10 (2021) 194, https://doi.org/10.3390/axioms10030194.\n[18] J. Sun, X. Liu, T. Back, Z. Xu, Learning adaptive differential evolution algorithm from optimization experiences by policy gradient, IEEE Trans. Evol. Comput. 25 (2021) 666-680, https://doi.org/10.1109/TEVC.2021.3060811.\n[19] P. Bujok, J. Tvrdik, R. Polakova, Evaluating the performance of SHADE with competing strategies on CEC 2014 single-parameter test suite, in: 2016 IEEE Congress on Evolutionary Computation, CEC 2016, IEEE, 2016: pp. 5002-5009. 10.1109/CEC.2016.7748322.\n[20] J. Brest, M.S. Maucec, B. Boskovic, Single objective real-parameter optimization: Algorithm JSO, in: 2017 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2017: pp. 1311-1318. 10.1109/CEC.2017.7969456.\n[21] V. Stanovov, S. Akhmedova, E. Semenkin, LSHADE Algorithm with Rank-Based Selective Pressure Strategy for Solving CEC 2017 Benchmark Problems, in: 2018 IEEE Congress on Evolutionary Computation, CEC 2018 - Proceedings, IEEE, 2018: pp. 1-8. 10.1109/CEC.2018.8477977.\n[22] A.W. Mohamed, A.A. Hadi, K.M. Jambi, Novel mutation strategy for enhancing SHADE and LSHADE algorithms for global numerical optimization, Swarm Evol. Comput. 50 (2019), https://doi.org/10.1016/j.swevo.2018.10.006 100455.\n[23] X. Xia, L. Tong, Y. Zhang, X. Xu, H. Yang, L. Gui, Y. Li, K. Li, NFDDE: a novelty-hybrid-fitness driving differential evolution algorithm, Inform. Sci. 579 (2021) 33-54, https://doi.org/10.1016/j.ins.2021.07.082.\n[24] V. Stanovov, S. Akhmedova, E. Semenkin, NL-SHADE-RSP Algorithm with Adaptive Archive and Selective Pressure for CEC 2021 Numerical Optimization, in: 2021 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2021: pp. 809-816. 10.1109/CEC45853.2021.9504959.\n\n[25] A. Kumar, P.P. Biswas, P.N. Suganthan, Differential evolution with orthogonal array-based initialization and a novel selection strategy, Swarm Evol. Comput. 68 (2022), https://doi.org/10.1016/j.swevo.2021.101010 101010.\n[26] Z. Zeng, Z. Hong, H. Zhang, M. Zhang, C. Chen, Improving differential evolution using a best discarded vector selection strategy, Inform. Sci. 609 (2022) 353-375, https://doi.org/10.1016/j.ins.2022.07.075.\n[27] Z. Cao, Z. Wang, Y. Fu, H. Jia, F. Tian, An adaptive differential evolution framework based on population feature information, Inform. Sci. 608 (2022) 1416-1440, https://doi.org/10.1016/j.ins.2022.07.043.\n[28] N.H. Awad, M.Z. Ali, P.N. Suganthan, Ensemble sinusoidal differential covariance matrix adaptation with Euclidean neighborhood for solving CEC2017 benchmark problems, in: 2017 IEEE Congress on Evolutionary Computation, CEC 2017 - Proceedings, 2017: pp. 372-379. 10.1109/CEC.2017.7969336.\n[29] A.W. Mohamed, A.A. Hadi, A.M. Fattouh, K.M. Jambi, LSHADE with semi-parameter adaptation hybrid with CMA-ES for solving CEC 2017 benchmark problems, in: 2017 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2017: pp. 145-152. 10.1109/CEC.2017.7969307.\n[30] A.A. Hadi, A.W. Mohamed, K.M. Jambi, Single-Objective Real-Parameter Optimization: Enhanced LSHADE-SPACMA Algorithm, in: Studies in Computational Intelligence, 2021: pp. 103-121. 10.1007/978-3-030-58930-1_7.\n[31] A.W. Mohamed, A.K. Mohamed, Adaptive guided differential evolution algorithm with novel mutation for numerical optimization, Int. J. Mach. Learn. Cybernet. 10 (2019) 253-277, https://doi.org/10.1007/s13042-017-0711-7.\n[32] G. Zhang, Y. Shi, H.S.E. Strategy, for Solving Single Objective Bound Constrained Problems, in,, IEEE Congress on Evolutionary Computation (CEC), IEEE 2018 (2018) 1-7, https://doi.org/10.1109/CEC.2018.8477908.\n[33] A.W. Mohamed, A.A. Hadi, P. Agrawal, K.M. Sallam, A.K. Mohamed, Gaining-Sharing Knowledge Based Algorithm with Adaptive Parameters Hybrid with IMODE Algorithm for Solving CEC 2021 Benchmark Problems, in: 2021 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2021: pp. 841848. 10.1109/CEC45853.2021.9504814.\n[34] F. Zhao, H. Bao, L. Wang, X. He, Jonrinaldi, A hybrid cooperative differential evolution assisted by CMA-ES with local search mechanism, Neural Computing and Applications. 34 (2022) 7173-7197. 10.1007/s00521-021-06849-z.\n[35] P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, 2002. http://www.amazon.ca/exec/obidos/ redirect?tag=citeulike09-20\\&path=ASIN/0792374665.\n[36] A. Zhou, J. Sun, Q. Zhang, An estimation of distribution algorithm with cheap and expensive local search methods, IEEE Trans. Evol. Comput. 19 (2015) 807-822, https://doi.org/10.1109/TEVC.2014.2387433.\n[37] S. Pang, W. Li, H. He, Z. Shan, X. Wang, An EDA-GA hybrid algorithm for multi-objective task scheduling in cloud computing, IEEE Access. 7 (2019) 146379-146389, https://doi.org/10.1109/ACCESS.2019.2946216.\n[38] Z. Ren, Y. Liang, L. Wang, A. Zhang, B. Pang, B. Li, Anisotropic adaptive variance scaling for Gaussian estimation of distribution algorithm, Knowl. Based Syst. 146 (2018) 142-151, https://doi.org/10.1016/j.knosys.2018.02.001.\n[39] X. Wang, H. Zhao, T. Han, Z. Wei, Y. Liang, Y. Li, A gaussian estimation of distribution algorithm with random walk strategies and its application in optimal missile guidance handover for multi-UCAV in over-the-horizon air combat, IEEE Access. 7 (2019) 43298-43317, https://doi.org/10.1109/ ACCESS. 2019.2908262.\n[40] Y. Liang, Z. Ren, X. Yao, Z. Feng, A. Chen, W. Guo, Enhancing gaussian estimation of distribution algorithm by exploiting evolution direction with archive, IEEE Trans. Cybernet. 50 (2020) 140-152, https://doi.org/10.1109/TCYB.2018.2869567.\n[41] L. Tang, X. Song, J. Liu, C. Liu, An estimation of distribution algorithm with filtering and learning, IEEE Trans. Automat. Sci. Eng. 18 (2021) 1478-1491, https://doi.org/10.1109/TASE.2020.3019694.\n[42] C. Wang, H. Ma, G. Chen, S. Hartmann, Using an estimation of distribution algorithm to achieve multitasking semantic web service composition, IEEE Trans. Evol. Comput. (2022) 1-15, https://doi.org/10.1109/TEVC.2022.3170899.\n[43] M. Hollander, D.A. Wolfe, E. Chicken, Nonparametric statistical methods, Wiley (2015), https://doi.org/10.1002/9781119196037.\n[44] Y. Li, T. Han, H. Zhou, S. Tang, H. Zhao, A novel adaptive L-SHADE algorithm and its application in UAV swarm resource configuration problem, Inform. Sci. 606 (2022) 350-367, https://doi.org/10.1016/j.ins.2022.05.058.\n[45] J.M. Davenport, Approximations of the critical region of the friedman statistic, Commun. Statist. Theory Methods 9 (1980) 571-595, https://doi.org/ $10.1080 / 03610928008827904$.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "K. De Jong, Evolutionary computation, in: Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion, ACM, New York, NY, USA, 2020: pp. 327-342. 10.1145/3377929.3389871."
+      },
+      {
+        "ref_id": "2",
+        "text": "A.W. Mohamed, A.A. Hadi, A.K. Mohamed, Differential evolution mutations: taxonomy, comparison and convergence analysis, IEEE Access. 9 (2021) 68629-68662, https://doi.org/10.1109/ACCESS.2021.3077242."
+      },
+      {
+        "ref_id": "3",
+        "text": "K.M. Sallam, M.A. Hossain, R.K. Chakrabortty, M.J. Ryan, An improved gaining-sharing knowledge algorithm for parameter extraction of photovoltaic models, Energy Convers. Manage. 237 (2021), https://doi.org/10.1016/j.enconman.2021.114030 114030."
+      },
+      {
+        "ref_id": "4",
+        "text": "N.H. Awad, M.Z. Ali, J. Liang, B.Y. Qu, P.N. Suganthan, Problem definitions and evaluation criteria for the CEC 2017 special session and competition on real-parameter optimization, 2016."
+      },
+      {
+        "ref_id": "5",
+        "text": "N.H. Awad, M.Z. Ali, J. Liang, B.Y. Qu, P.N. Suganthan, Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective real-parameter numerical optimization, 2013."
+      },
+      {
+        "ref_id": "6",
+        "text": "P.N.S.G.W. R. Mallipeddi, Problem definitions and evaluation criteria for the CEC 2010 Competition on Constrained Real-Parameter Optimization, 2010. http://www3.ntu.edu.sg/home/epmsugan/index_files/CEC10-Const/TR-April-2010.pdf."
+      },
+      {
+        "ref_id": "7",
+        "text": "A.W. Mohamed, A.A. Hadi, A.K. Mohamed, P. Agrawal, A. Kumar, P.N. Suganthan, Problem Definitions and Evaluation Criteria for the CEC 2021 Special Session and Competition on Single Objective Bound Constrained Numerical Optimization, 2020."
+      },
+      {
+        "ref_id": "8",
+        "text": "R. Storn, K. Price, Differential evolution - A simple and efficient heuristic for global optimization over continuous spaces, J. Global Optimiz. 11 (1997) 341-359, https://doi.org/10.1023/A:1008202821328."
+      },
+      {
+        "ref_id": "9",
+        "text": "J. Teo, Exploring dynamic self-adaptive populations in differential evolution, Soft Comput. 10 (2006) 673-686, https://doi.org/10.1007/s00500-005-0537-1."
+      },
+      {
+        "ref_id": "10",
+        "text": "J. Brest, S. Greiner, B. Bošković, M. Mernik, V. Zumer, Self-adapting control parameters in differential evolution: A comparative study on numerical benchmark problems, IEEE Trans. Evol. Comput. 10 (2006) 646-657, https://doi.org/10.1109/TEVC.2006.872133."
+      },
+      {
+        "ref_id": "11",
+        "text": "J. Zhang, A.C. Sanderson, JADE: adaptive differential evolution with optional external archive, IEEE Trans. Evol. Comput. 13 (2009) 945-958, https://doi. org/10.1109/TEVC.2009.2014613."
+      },
+      {
+        "ref_id": "12",
+        "text": "R. Tanabe, A. Fukunaga, Success-history based parameter adaptation for Differential Evolution, in: 2013 IEEE Congress on Evolutionary Computation, CEC 2013, 2013: pp. 71-78. 10.1109/CEC.2013.6557555."
+      },
+      {
+        "ref_id": "13",
+        "text": "R. Tanabe, A.S. Fukunaga, Improving the search performance of SHADE using linear population size reduction, in: 2014 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2014: pp. 1658-1665. 10.1109/CEC.2014.6900380."
+      },
+      {
+        "ref_id": "14",
+        "text": "J. Brest, M.S. Maučec, B. Bošković, IL-SHADE: Improved L-SHADE algorithm for single objective real-parameter optimization, in: 2016 IEEE Congress on Evolutionary Computation, CEC 2016, 2016: pp. 1188-1195. 10.1109/CEC.2016.7743922."
+      },
+      {
+        "ref_id": "15",
+        "text": "N.H. Awad, M.Z. Ali, P.N. Suganthan, R.G. Reynolds, An ensemble sinusoidal parameter adaptation incorporated with L-SHADE for solving CEC2014 benchmark problems, in: 2016 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2016: pp. 2958-2965. 10.1109/CEC.2016.7744163."
+      },
+      {
+        "ref_id": "16",
+        "text": "P. Ochoa, O. Castillo, J. Soria, High-speed interval type-2 fuzzy system for dynamic crossover parameter adaptation in differential evolution and its application to controller optimization, Int. J. Fuzzy Syst. 22 (2020) 414-427, https://doi.org/10.1007/s40815-019-00723-w."
+      },
+      {
+        "ref_id": "17",
+        "text": "P. Ochoa, O. Castillo, P. Melin, J. Soria, Differential evolution with shadowed and general type-2 fuzzy systems for dynamic parameter adaptation in optimal design of fuzzy controllers, Axioms 10 (2021) 194, https://doi.org/10.3390/axioms10030194."
+      },
+      {
+        "ref_id": "18",
+        "text": "J. Sun, X. Liu, T. Back, Z. Xu, Learning adaptive differential evolution algorithm from optimization experiences by policy gradient, IEEE Trans. Evol. Comput. 25 (2021) 666-680, https://doi.org/10.1109/TEVC.2021.3060811."
+      },
+      {
+        "ref_id": "19",
+        "text": "P. Bujok, J. Tvrdik, R. Polakova, Evaluating the performance of SHADE with competing strategies on CEC 2014 single-parameter test suite, in: 2016 IEEE Congress on Evolutionary Computation, CEC 2016, IEEE, 2016: pp. 5002-5009. 10.1109/CEC.2016.7748322."
+      },
+      {
+        "ref_id": "20",
+        "text": "J. Brest, M.S. Maucec, B. Boskovic, Single objective real-parameter optimization: Algorithm JSO, in: 2017 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2017: pp. 1311-1318. 10.1109/CEC.2017.7969456."
+      },
+      {
+        "ref_id": "21",
+        "text": "V. Stanovov, S. Akhmedova, E. Semenkin, LSHADE Algorithm with Rank-Based Selective Pressure Strategy for Solving CEC 2017 Benchmark Problems, in: 2018 IEEE Congress on Evolutionary Computation, CEC 2018 - Proceedings, IEEE, 2018: pp. 1-8. 10.1109/CEC.2018.8477977."
+      },
+      {
+        "ref_id": "22",
+        "text": "A.W. Mohamed, A.A. Hadi, K.M. Jambi, Novel mutation strategy for enhancing SHADE and LSHADE algorithms for global numerical optimization, Swarm Evol. Comput. 50 (2019), https://doi.org/10.1016/j.swevo.2018.10.006 100455."
+      },
+      {
+        "ref_id": "23",
+        "text": "X. Xia, L. Tong, Y. Zhang, X. Xu, H. Yang, L. Gui, Y. Li, K. Li, NFDDE: a novelty-hybrid-fitness driving differential evolution algorithm, Inform. Sci. 579 (2021) 33-54, https://doi.org/10.1016/j.ins.2021.07.082."
+      },
+      {
+        "ref_id": "24",
+        "text": "V. Stanovov, S. Akhmedova, E. Semenkin, NL-SHADE-RSP Algorithm with Adaptive Archive and Selective Pressure for CEC 2021 Numerical Optimization, in: 2021 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2021: pp. 809-816. 10.1109/CEC45853.2021.9504959."
+      },
+      {
+        "ref_id": "25",
+        "text": "A. Kumar, P.P. Biswas, P.N. Suganthan, Differential evolution with orthogonal array-based initialization and a novel selection strategy, Swarm Evol. Comput. 68 (2022), https://doi.org/10.1016/j.swevo.2021.101010 101010."
+      },
+      {
+        "ref_id": "26",
+        "text": "Z. Zeng, Z. Hong, H. Zhang, M. Zhang, C. Chen, Improving differential evolution using a best discarded vector selection strategy, Inform. Sci. 609 (2022) 353-375, https://doi.org/10.1016/j.ins.2022.07.075."
+      },
+      {
+        "ref_id": "27",
+        "text": "Z. Cao, Z. Wang, Y. Fu, H. Jia, F. Tian, An adaptive differential evolution framework based on population feature information, Inform. Sci. 608 (2022) 1416-1440, https://doi.org/10.1016/j.ins.2022.07.043."
+      },
+      {
+        "ref_id": "28",
+        "text": "N.H. Awad, M.Z. Ali, P.N. Suganthan, Ensemble sinusoidal differential covariance matrix adaptation with Euclidean neighborhood for solving CEC2017 benchmark problems, in: 2017 IEEE Congress on Evolutionary Computation, CEC 2017 - Proceedings, 2017: pp. 372-379. 10.1109/CEC.2017.7969336."
+      },
+      {
+        "ref_id": "29",
+        "text": "A.W. Mohamed, A.A. Hadi, A.M. Fattouh, K.M. Jambi, LSHADE with semi-parameter adaptation hybrid with CMA-ES for solving CEC 2017 benchmark problems, in: 2017 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2017: pp. 145-152. 10.1109/CEC.2017.7969307."
+      },
+      {
+        "ref_id": "30",
+        "text": "A.A. Hadi, A.W. Mohamed, K.M. Jambi, Single-Objective Real-Parameter Optimization: Enhanced LSHADE-SPACMA Algorithm, in: Studies in Computational Intelligence, 2021: pp. 103-121. 10.1007/978-3-030-58930-1_7."
+      },
+      {
+        "ref_id": "31",
+        "text": "A.W. Mohamed, A.K. Mohamed, Adaptive guided differential evolution algorithm with novel mutation for numerical optimization, Int. J. Mach. Learn. Cybernet. 10 (2019) 253-277, https://doi.org/10.1007/s13042-017-0711-7."
+      },
+      {
+        "ref_id": "32",
+        "text": "G. Zhang, Y. Shi, H.S.E. Strategy, for Solving Single Objective Bound Constrained Problems, in,, IEEE Congress on Evolutionary Computation (CEC), IEEE 2018 (2018) 1-7, https://doi.org/10.1109/CEC.2018.8477908."
+      },
+      {
+        "ref_id": "33",
+        "text": "A.W. Mohamed, A.A. Hadi, P. Agrawal, K.M. Sallam, A.K. Mohamed, Gaining-Sharing Knowledge Based Algorithm with Adaptive Parameters Hybrid with IMODE Algorithm for Solving CEC 2021 Benchmark Problems, in: 2021 IEEE Congress on Evolutionary Computation (CEC), IEEE, 2021: pp. 841848. 10.1109/CEC45853.2021.9504814."
+      },
+      {
+        "ref_id": "34",
+        "text": "F. Zhao, H. Bao, L. Wang, X. He, Jonrinaldi, A hybrid cooperative differential evolution assisted by CMA-ES with local search mechanism, Neural Computing and Applications. 34 (2022) 7173-7197. 10.1007/s00521-021-06849-z."
+      },
+      {
+        "ref_id": "35",
+        "text": "P. Larrañaga, J.A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, 2002. http://www.amazon.ca/exec/obidos/ redirect?tag=citeulike09-20\\&path=ASIN/0792374665."
+      },
+      {
+        "ref_id": "36",
+        "text": "A. Zhou, J. Sun, Q. Zhang, An estimation of distribution algorithm with cheap and expensive local search methods, IEEE Trans. Evol. Comput. 19 (2015) 807-822, https://doi.org/10.1109/TEVC.2014.2387433."
+      },
+      {
+        "ref_id": "37",
+        "text": "S. Pang, W. Li, H. He, Z. Shan, X. Wang, An EDA-GA hybrid algorithm for multi-objective task scheduling in cloud computing, IEEE Access. 7 (2019) 146379-146389, https://doi.org/10.1109/ACCESS.2019.2946216."
+      },
+      {
+        "ref_id": "38",
+        "text": "Z. Ren, Y. Liang, L. Wang, A. Zhang, B. Pang, B. Li, Anisotropic adaptive variance scaling for Gaussian estimation of distribution algorithm, Knowl. Based Syst. 146 (2018) 142-151, https://doi.org/10.1016/j.knosys.2018.02.001."
+      },
+      {
+        "ref_id": "39",
+        "text": "X. Wang, H. Zhao, T. Han, Z. Wei, Y. Liang, Y. Li, A gaussian estimation of distribution algorithm with random walk strategies and its application in optimal missile guidance handover for multi-UCAV in over-the-horizon air combat, IEEE Access. 7 (2019) 43298-43317, https://doi.org/10.1109/ ACCESS. 2019.2908262."
+      },
+      {
+        "ref_id": "40",
+        "text": "Y. Liang, Z. Ren, X. Yao, Z. Feng, A. Chen, W. Guo, Enhancing gaussian estimation of distribution algorithm by exploiting evolution direction with archive, IEEE Trans. Cybernet. 50 (2020) 140-152, https://doi.org/10.1109/TCYB.2018.2869567."
+      },
+      {
+        "ref_id": "41",
+        "text": "L. Tang, X. Song, J. Liu, C. Liu, An estimation of distribution algorithm with filtering and learning, IEEE Trans. Automat. Sci. Eng. 18 (2021) 1478-1491, https://doi.org/10.1109/TASE.2020.3019694."
+      },
+      {
+        "ref_id": "42",
+        "text": "C. Wang, H. Ma, G. Chen, S. Hartmann, Using an estimation of distribution algorithm to achieve multitasking semantic web service composition, IEEE Trans. Evol. Comput. (2022) 1-15, https://doi.org/10.1109/TEVC.2022.3170899."
+      },
+      {
+        "ref_id": "43",
+        "text": "M. Hollander, D.A. Wolfe, E. Chicken, Nonparametric statistical methods, Wiley (2015), https://doi.org/10.1002/9781119196037."
+      },
+      {
+        "ref_id": "44",
+        "text": "Y. Li, T. Han, H. Zhou, S. Tang, H. Zhao, A novel adaptive L-SHADE algorithm and its application in UAV swarm resource configuration problem, Inform. Sci. 606 (2022) 350-367, https://doi.org/10.1016/j.ins.2022.05.058."
+      },
+      {
+        "ref_id": "45",
+        "text": "J.M. Davenport, Approximations of the critical region of the friedman statistic, Commun. Statist. Theory Methods 9 (1980) 571-595, https://doi.org/ $10.1080 / 03610928008827904$."
+      }
+    ],
+    "reference_count": 45,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameter settings for seven algorithms.",
+      "headers": [
+        "Algorithm",
+        "Parameter settings"
+      ],
+      "rows": [
+        [
+          "IDE-EDA",
+          "$N P_{\\text {init }}=75-O^{(2 / 3)}, k=3, H=5, N P_{\\text {max }}=4, r^{\\text {err }}=1, \\tau=0.9$."
+        ],
+        [
+          "AAVS-EDA",
+          38.0
+        ],
+        [
+          "LSHADE-RSP",
+          21.0
+        ],
+        [
+          "RW-GEDA",
+          39.0
+        ],
+        [
+          "HSES",
+          "$\\lambda=$ round(3-ln $D)+80$, at first step of HS-ES: $M=200, N=100, I=20$ and $c c=0.96$, at fourth step of HS-ES: $M=200, N=160$ $(D=10,30) ; M=450, N=360(D=50)$ as in [32]."
+        ],
+        [
+          "APGSE-IMODE",
+          33.0
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Influence of the parameter $\\tau$ on the performance of IDE-EDA. $\\left(F E \\lambda_{\\max }=300000\\right)$.",
+      "headers": [
+        "No.",
+        "",
+        "$\\tau=0.1$",
+        "$\\tau=0.2$",
+        "$\\tau=0.3$",
+        "$\\tau=0.4$",
+        "$\\tau=0.5$",
+        "$\\tau=0.6$",
+        "$\\tau=0.7$",
+        "$\\tau=0.8$",
+        "$\\tau=0.9$",
+        "$\\tau=1.0$"
+      ],
+      "rows": [
+        [
+          7,
+          "Mean",
+          3.8201,
+          3.8601,
+          3.8801,
+          3.8701,
+          3.7701,
+          3.8401,
+          3.8801,
+          3.8501,
+          3.8801,
+          3.8501
+        ],
+        [
+          "",
+          "Rank",
+          2,
+          6,
+          9,
+          7,
+          1,
+          3,
+          10,
+          4,
+          8,
+          5
+        ],
+        [
+          16,
+          "Mean",
+          2.9301,
+          4.0901,
+          2.5201,
+          3.5201,
+          3.7601,
+          1.7301,
+          2.2901,
+          2.0201,
+          1.6901,
+          1.8601
+        ],
+        [
+          "",
+          "Rank",
+          7,
+          10,
+          6,
+          8,
+          9,
+          2,
+          5,
+          4,
+          1,
+          3
+        ],
+        [
+          26,
+          "Mean",
+          9.2202,
+          9.2302,
+          9.1502,
+          9.0302,
+          9.1902,
+          9.1102,
+          8.9602,
+          8.9902,
+          8.9202,
+          8.9202
+        ],
+        [
+          "",
+          "Rank",
+          9,
+          10,
+          7,
+          5,
+          8,
+          6,
+          3,
+          4,
+          1,
+          2
+        ],
+        [
+          30,
+          "Mean",
+          1.9703,
+          1.9703,
+          1.9703,
+          1.9703,
+          1.9603,
+          1.9703,
+          1.9703,
+          1.9703,
+          1.9603,
+          1.9703
+        ],
+        [
+          "",
+          "Rank",
+          8,
+          3,
+          5,
+          6,
+          2,
+          10,
+          9,
+          7,
+          1,
+          4
+        ],
+        [
+          "Mean",
+          "Rank",
+          6.5,
+          7.25,
+          6.75,
+          6.5,
+          5,
+          5.25,
+          6.75,
+          4.75,
+          2.75,
+          3.5
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 12
+    },
+    {
+      "table_number": "3",
+      "table_title": "The Wilcoxon signed-rank test results for IDE-EDA and six competitors $(\\alpha=0.05)$.",
+      "headers": [
+        "$\\mathrm{R}(+/-) \\approx$",
+        "100",
+        "300",
+        "500",
+        "Total"
+      ],
+      "rows": [
+        [
+          "IDE-EDA vs AAVS-EDA",
+          "$20 / 3 / 6$",
+          "$13 / 10 / 6$",
+          "$13 / 9 / 7$",
+          "$46 / 22 / 19$"
+        ],
+        [
+          "IDE-EDA vs EB-LSHADE",
+          "$9 / 4 / 16$",
+          "$11 / 6 / 12$",
+          "$13 / 8 / 8$",
+          "$33 / 18 / 36$"
+        ],
+        [
+          "IDE-EDA vs ELSHADE-SPACMA",
+          "$9 / 4 / 16$",
+          "$15 / 3 / 11$",
+          "$12 / 6 / 11$",
+          "$36 / 13 / 38$"
+        ],
+        [
+          "IDE-EDA vs JSO",
+          "$12 / 3 / 14$",
+          "$18 / 3 / 8$",
+          "$15 / 5 / 9$",
+          "$45 / 11 / 31$"
+        ],
+        [
+          "IDE-EDA vs LSHADE-RSP",
+          "$3 / 1 / 25$",
+          "$6 / 1 / 22$",
+          "$6 / 8 / 15$",
+          "$15 / 10 / 62$"
+        ],
+        [
+          "IDE-EDA vs RW-GEDA",
+          "$22 / 0 / 7$",
+          "$20 / 1 / 8$",
+          "$21 / 3 / 5$",
+          "$63 / 4 / 20$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Rankings derived by the Friedman test for the results on the IEEE CEC 2018 test suite $(\\alpha=0.05)$.",
+      "headers": [
+        "Algorithm",
+        "100",
+        "300",
+        "500",
+        "Mean Ranking",
+        "Rank"
+      ],
+      "rows": [
+        [
+          "IDE-EDA",
+          3.03,
+          "$\\mathbf{3 . 0 9}$",
+          "$\\mathbf{3 . 1 4}$",
+          "$\\mathbf{3 . 0 9}$",
+          "$\\mathbf{1}$"
+        ],
+        [
+          "AAVS-EDA",
+          5.0,
+          3.86,
+          4.07,
+          4.31,
+          6
+        ],
+        [
+          "EB-LSHADE",
+          3.64,
+          3.86,
+          4.31,
+          3.94,
+          5
+        ],
+        [
+          "ELSHADE-SPACMA",
+          3.69,
+          4.16,
+          3.76,
+          3.87,
+          3
+        ],
+        [
+          "JSO",
+          3.71,
+          4.29,
+          4.14,
+          4.05,
+          4
+        ],
+        [
+          "LSHADE-RSP",
+          "$\\mathbf{2 . 8 8}$",
+          3.38,
+          3.21,
+          3.16,
+          2
+        ],
+        [
+          "RW-GEDA",
+          6.05,
+          5.36,
+          5.38,
+          5.6,
+          7
+        ],
+        [
+          "Friedman-p-value",
+          "$2.00 \\mathrm{E}-10$",
+          "$8.79 \\mathrm{E}-04$",
+          "$6.85 \\mathrm{E}-04$",
+          "N/A",
+          "N/A"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "5",
+      "table_title": "Code for calculating the time $T_{0}$.",
+      "headers": [
+        "Input: iteration $=1,000,000$",
+        ""
+      ],
+      "rows": [
+        [
+          "Output: $T_{0}$",
+          ""
+        ],
+        [
+          1.0,
+          ""
+        ],
+        [
+          2.0,
+          ""
+        ],
+        [
+          3.0,
+          ""
+        ],
+        [
+          4.0,
+          ""
+        ],
+        [
+          5.0,
+          ""
+        ],
+        [
+          6.0,
+          ""
+        ],
+        [
+          7.0,
+          ""
+        ],
+        [
+          8.0,
+          ""
+        ],
+        [
+          9.0,
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 2
+    },
+    {
+      "table_number": "6",
+      "table_title": "Computational complexities of IDE-EDA and six competitors.",
+      "headers": [
+        "Algorithm",
+        "$\\bar{T}_{2} / \\mathrm{s}$",
+        "",
+        "",
+        "$\\left(\\bar{T}_{2}-T_{1}\\right) / T_{0}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          100,
+          300,
+          500,
+          100,
+          300,
+          500
+        ],
+        [
+          "IDE-EDA",
+          0.54282,
+          1.0361,
+          1.65923,
+          43.93008,
+          69.82731,
+          97.20672
+        ],
+        [
+          "AAVS-EDA",
+          0.16668,
+          0.52491,
+          1.04715,
+          8.76097,
+          22.03061,
+          39.97706
+        ],
+        [
+          "EB-LSHADE",
+          0.88823,
+          1.25433,
+          1.8081,
+          76.22601,
+          90.23242,
+          111.12588
+        ],
+        [
+          "ELSHADE-SPACMA",
+          0.66203,
+          1.08634,
+          1.78693,
+          55.07628,
+          74.52514,
+          109.14714
+        ],
+        [
+          "jSO",
+          0.61642,
+          0.92187,
+          1.42058,
+          50.81212,
+          59.14642,
+          74.89273
+        ],
+        [
+          "LSHADE-RSP",
+          0.39432,
+          0.66194,
+          1.12168,
+          30.04565,
+          34.84339,
+          46.94486
+        ],
+        [
+          "RW-GEDA",
+          0.37563,
+          0.8706,
+          1.48904,
+          28.29825,
+          54.35258,
+          81.29417
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "7",
+      "table_title": "Results derived by the Wilcoxon signed-rank test between IDE-EDA and six competitors $(\\alpha=0.05)$.",
+      "headers": [
+        "$R(\\cdot \\cdot / \\sim \\mid \\cdot \\mid)$",
+        "Bias $(000)$",
+        "Shift $(010)$",
+        "Bias and shift $(110)$",
+        "Shift and rotation $(011)$",
+        "Bias, shift, and rotation (111)"
+      ],
+      "rows": [
+        [
+          "IDE-EDA vs AAVS-EDA",
+          "$7 / 0 / 3$",
+          "$8 / 1 / 1$",
+          "$6 / 2 / 2$",
+          "$5 / 3 / 2$",
+          "$4 / 4 / 2$"
+        ],
+        [
+          "IDE-EDA vs APGSK-IMODE",
+          "$0 / 5 / 5$",
+          "$1 / 4 / 5$",
+          "$2 / 4 / 4$",
+          "$5 / 3 / 2$",
+          "$5 / 2 / 3$"
+        ],
+        [
+          "IDE-EDA vs EB-LSHADE",
+          "$0 / 3 / 7$",
+          "$1 / 4 / 5$",
+          "$1 / 5 / 4$",
+          "$3 / 2 / 5$",
+          "$3 / 2 / 5$"
+        ],
+        [
+          "IDE-EDA vs ELSHADE-SPACMA",
+          "$1 / 4 / 5$",
+          "$0 / 5 / 5$",
+          "$0 / 5 / 5$",
+          "$2 / 2 / 6$",
+          "$2 / 2 / 6$"
+        ],
+        [
+          "IDE-EDA vs HSES",
+          "$5 / 1 / 4$",
+          "$7 / 2 / 1$",
+          "$7 / 2 / 1$",
+          "$8 / 1 / 1$",
+          "$7 / 1 / 2$"
+        ],
+        [
+          "IDE-EDA vs RW-GEDA",
+          "$0 / 5 / 5$",
+          "$7 / 0 / 3$",
+          "$7 / 0 / 3$",
+          "$9 / 0 / 1$",
+          "$9 / 0 / 1$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "8",
+      "table_title": "Rankings of IDE-EDA and six competitors in the IEEE CEC 2021 test suite (20D) obtained by the Friedman test $(\\alpha=0.05)$.",
+      "headers": [
+        "Algorithms",
+        "Bias",
+        "Shift",
+        "Bias and shift",
+        "Shift and rotation",
+        "Bias, shift, and rotation"
+      ],
+      "rows": [
+        [
+          "IDE-EDA",
+          4.2,
+          3.75,
+          3.8,
+          2.65,
+          2.8
+        ],
+        [
+          "AAVS-EDA",
+          5.75,
+          4.9,
+          4.35,
+          3.7,
+          3.35
+        ],
+        [
+          "APGSK-IMODE",
+          2.3,
+          2.2,
+          2.5,
+          3.25,
+          3.3
+        ],
+        [
+          "EB-LSHADE",
+          3.65,
+          2.9,
+          3.1,
+          2.95,
+          3.2
+        ],
+        [
+          "ELSHADE-SPACMA",
+          3.45,
+          2.95,
+          2.95,
+          3.45,
+          3.35
+        ],
+        [
+          "HSES",
+          5.9,
+          5.1,
+          5.1,
+          5.6,
+          5.6
+        ],
+        [
+          "RW-GEDA",
+          2.75,
+          6.2,
+          6.2,
+          6.4,
+          6.4
+        ],
+        [
+          "Friedman-p-value",
+          "$3.21 \\mathrm{E}-06$",
+          "$2.69 \\mathrm{E}-05$",
+          "$1.52 \\mathrm{E}-04$",
+          "$4.61 \\mathrm{E}-05$",
+          "$9.41 \\mathrm{E}-05$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/Information Fusion in Offspring Generation- A Case Study in Gene Expression Programming.md",
+    "filename": "Information Fusion in Offspring Generation- A Case Study in Gene Expression Programming.md",
+    "title": "Information Fusion in Offspring Generation- A Case Study in Gene Expression Programming",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "+",
+        "-",
+        "x1",
+        "x2",
+        "5",
+        "10"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Primitive",
+          "Probability",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "+",
+          0.5,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "-",
+          0.1,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          1,
+          0.1,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          2,
+          0.3,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Constant",
+          0.1,
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "+",
+        "-",
+        "x1",
+        "x2",
+        "5",
+        "10"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Primitive",
+          "Probability",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "+",
+          0.2,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "-",
+          0.2,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          1,
+          0.2,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          2,
+          0.2,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Constant",
+          0.2,
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "+",
+        "-",
+        "x1",
+        "x2",
+        "5",
+        "10"
+      ],
+      "rows": [
+        [
+          "mutation",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "+",
+          "-",
+          1,
+          2,
+          5,
+          10
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    },
+    {
+      "table_number": "1",
+      "table_title": "Parameter settings.",
+      "headers": [
+        "parameter name",
+        "parameter value"
+      ],
+      "rows": [
+        [
+          "population size",
+          20
+        ],
+        [
+          "generation",
+          200
+        ],
+        [
+          "head length",
+          50
+        ],
+        [
+          "RNC range",
+          "$[-25,25]$"
+        ],
+        [
+          "RNC length",
+          15
+        ],
+        [
+          "max arity",
+          3
+        ],
+        [
+          "selection algorithm",
+          "Tournament"
+        ],
+        [
+          "tournament size",
+          5
+        ],
+        [
+          "random seed",
+          "$[0,50)$"
+        ],
+        [
+          "learning rate",
+          0.4
+        ],
+        [
+          "EDA individual ratio",
+          0.1
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Operators.",
+      "headers": [
+        "operator name",
+        "math formula"
+      ],
+      "rows": [
+        [
+          "multiply",
+          "$\\mathrm{x}^{\\mathrm{a}} \\mathrm{y}$"
+        ],
+        [
+          "add",
+          "$\\mathrm{x} \\mathrm{xy}$"
+        ],
+        [
+          "sub",
+          "$\\mathrm{x}-\\mathrm{y}$"
+        ],
+        [
+          "ternary_add",
+          "$\\mathrm{x}+\\mathrm{y}+\\mathrm{z}$"
+        ],
+        [
+          "ternary_sub",
+          "$\\mathrm{x}-\\mathrm{y}-\\mathrm{z}$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Experimental datasets.",
+      "headers": [
+        "dataset_name",
+        "instances",
+        "features"
+      ],
+      "rows": [
+        [
+          195,
+          159,
+          16
+        ],
+        [
+          197,
+          8192,
+          22
+        ],
+        [
+          227,
+          8192,
+          13
+        ],
+        [
+          5272000,
+          67,
+          15
+        ],
+        [
+          529,
+          3848,
+          5
+        ],
+        [
+          542,
+          60,
+          16
+        ],
+        [
+          5571,
+          475,
+          4
+        ],
+        [
+          560,
+          252,
+          15
+        ],
+        [
+          561,
+          209,
+          8
+        ],
+        [
+          666,
+          508,
+          11
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "4",
+      "table_title": "Experimental results obtained by four comparison algorithms.",
+      "headers": [
+        "",
+        "$G E P_{G}$",
+        "$G E P_{H M}$",
+        "$G E P_{H S P}$",
+        "$G E P_{H P}$"
+      ],
+      "rows": [
+        [
+          "$\\mathbf{1 9 5}$ auto price",
+          6272555,
+          5976027,
+          6055014,
+          "$\\mathbf{5 8 9 1 6 8 0}$"
+        ],
+        [
+          "$\\mathbf{1 9 7}$ cpu_act",
+          109.7618,
+          "$\\mathbf{9 7 . 4 0 0 9 5}$",
+          98.33862,
+          98.50997
+        ],
+        [
+          "$\\mathbf{2 2 7}$ cpu_small",
+          55.64986,
+          73.70299,
+          "$\\mathbf{5 4 . 9 9 5 4 4}$",
+          59.25873
+        ],
+        [
+          2000,
+          14138.55,
+          15927.73,
+          14510.95,
+          "$\\mathbf{1 3 4 7 2 . 3}$"
+        ],
+        [
+          "$\\mathbf{5 2 9}$ pollen",
+          2.414881,
+          2.414881,
+          "$\\mathbf{2 . 3 1 8 9 4 9}$",
+          2.349986
+        ],
+        [
+          "$\\mathbf{5 4 2}$ pollution",
+          1309.173,
+          "$\\mathbf{1 2 2 9 . 2 3 7}$",
+          1294.513,
+          1279.198
+        ],
+        [
+          1,
+          6717743,
+          5673621,
+          "$\\mathbf{4 2 3 0 6 9 6}$",
+          6316790
+        ],
+        [
+          "$\\mathbf{5 6 0}$ bodyfat",
+          0.411286,
+          0.411286,
+          "$\\mathbf{0 . 4 0 6 3 9 8}$",
+          0.411286
+        ],
+        [
+          "$\\mathbf{5 6 1}$ cpu",
+          1304.742,
+          1385.123,
+          1416.459,
+          "$\\mathbf{1 2 5 8 . 4 1 4}$"
+        ],
+        [
+          "$\\mathbf{6 6 6}$ rmftsa_ladata",
+          3.657152,
+          "$\\mathbf{3 . 5 6 6 5 8 2}$",
+          3.639322,
+          3.698454
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "List of abbreviations.",
+      "headers": [
+        "Abbreviation",
+        "Full name"
+      ],
+      "rows": [
+        [
+          "$G A$",
+          "Genetic Algorithm"
+        ],
+        [
+          "$G P$",
+          "Genetic Programming"
+        ],
+        [
+          "$P H P E$",
+          "Probabilistic Incremental Program Evolution"
+        ],
+        [
+          "$P D P E$",
+          "Probabilistic Developmental Program Evolu-"
+        ],
+        [
+          "",
+          "lution"
+        ],
+        [
+          "$E C G A$",
+          "Extended Compact Genetic Programming"
+        ],
+        [
+          "$E C G P$",
+          "Extended Compact Genetic Algorithm"
+        ],
+        [
+          "$G E P$",
+          "Gene Expression Programming"
+        ],
+        [
+          "$E D A$",
+          "Estimation of distribution"
+        ],
+        [
+          "$G E P_{G}$",
+          "GA based GEP"
+        ],
+        [
+          "$G E P_{H}$",
+          "GA-EDA Hybrid GEP"
+        ],
+        [
+          "$G E P_{H M}$",
+          "GA-EDA Hybrid GEP with Maximum Sampling Strategy"
+        ],
+        [
+          "$G E P_{H P}$",
+          "GA-EDA Hybrid GEP with Probabilistic"
+        ],
+        [
+          "",
+          "Sampling Strategy"
+        ],
+        [
+          "$G E P_{H S P}$",
+          "GA-EDA Hybrid GEP with Probabilistic"
+        ],
+        [
+          "",
+          "Sampling Strategy and Fitness Standardiza-"
+        ],
+        [
+          "",
+          "tion"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 2
+    }
+  ]
+}

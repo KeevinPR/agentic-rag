@@ -1,0 +1,1075 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/ESTHER  Joint Camera Self-calibration and Automatic Radial Distortion Correction from Tracking of Walking Humans.md",
+    "filename": "ESTHER  Joint Camera Self-calibration and Automatic Radial Distortion Correction from Tracking of Walking Humans.md",
+    "title": "ESTHER  Joint Camera Self-calibration and Automatic Radial Distortion Correction from Tracking of Walking Humans",
+    "year": "2019"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] K.-H. Lee, J.-N. Hwang, and S.-I. Chen, \"Model-based vehicle localization based on 3-D constrained multiple-kernel tracking,\" IEEE Trans. Circuits Syst. Video Technol., vol. 25, no. 1, pp. 38-50, Jan. 2014.\n[2] K.-H. Lee, J.-N. Hwang, J.-Y. Yu, and K.-Z. Lee, \"Vehicle tracking iterative by Kalman-based constrained multiple-kernel and 3-D model-based localization,\" in Proc. IEEE Int. Symp. Circuits Syst. (ISCAS), May 2013, pp. 2396-2399.\n[3] Y.-S. Lin, K.-H. Lo, H.-T. Chen, and J.-H. Chuang, \"Vanishing pointbased image transforms for enhancement of probabilistic occupancy mapbased people localization,\" IEEE Trans. Image Process., vol. 23, no. 12, pp. 5586-5598, Dec. 2014.\n[4] Z. Tang, R. Gu, and J.-N. Hwang, \"Joint multi-view people tracking and pose estimation for 3D scene reconstruction,\" in Proc. IEEE Int. Conf. Multimedia Expo (ICME), Jul. 2018, pp. 1-6.\n[5] B. Caprile and V. Torre, \"Using vanishing points for camera calibration,\" Int. J. Comput. Vis., vol. 4, no. 2, pp. 127-139, 1990.\n[6] D. Liebowitz, A. Criminisi, and A. Zisserman, \"Creating architectural models from images,\" EuroGraphics, vol. 18, no. 3, pp. 39-50, 1999.\n[7] J. Deutscher, M. Isard, and J. MacCormick, \"Automatic camera calibration from a single manhattan image,\" in Proc. Eur. Conf. Comput. Vis. (ECCV), 2002, pp. 175-188.\n[8] F. Lv, T. Zhao, and R. Nevatia, \"Self-calibration of a camera from video of a walking human,\" in Proc. IEEE Int. Conf. Pattern Recognit. (ICPR), vol. 1, Aug. 2002, pp. 562-567.\n[9] F.-J. Lv, T. Zhao, and R. Nevatia, \"Camera calibration from video of a walking human,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 9, no. 9, pp. 1513-1518, Sep. 2006.\n[10] N. Krahmioever and P. R. S. Mendonça, \"Autocalibration from tracks of walking people,\" in Proc. Conf. Brit. Mach. Vis. (BMVC), 2006.\n[11] I. Junejo and H. Foroosh, \"Robust auto-calibration from pedestrians,\" in Proc. IEEE Int. Conf. Adv. Video Signal Based Surveill. (AVSS), Nov. 2006, pp. 92-97.\n[12] Q. Wu, T.-C. Shao, and T. Chen, \"Robust self-calibration from single image using RANSAC,\" in Advances in Visual Computing. Berlin, Germany: Springer, 2007, pp. 230-237.\n[13] W. Kusakunniran, H. Li, and J. Zhang, \"A direct method to self-calibrate a surveillance camera by observing a walking pedestrian,\" in Proc. Int. Conf. Digit. Image Comput., Techn. Appl. (DICTA), 2009, pp. 250-255.\n[14] J. Liu, R. T. Collins, and Y. Liu, \"Surveillance camera autocalibration based on pedestrian height distributions,\" in Proc. Brit. Mach. Vis. Conf. (BMVC), 2011.\n[15] S. Huang, X. Ying, J. Rong, Z. Shang, and H. Zha, \"Camera calibration from periodic motion of a pedestrian,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2016, pp. 3025-3033.\n[16] G. M. Brouwers, M. H. Zwemer, and R. G. Wijnhoven, \"Automatic calibration of stationary surveillance cameras in the wild,\" in Proc. Eur. Conf. Comput. Vis. (ECCV), 2016, pp. 743-759.\n[17] G. Führ and C. R. Jung, \"Camera self-calibration based on nonlinear optimization and applications in surveillance systems,\" IEEE Trans. Circuits Syst. Video Technol., vol. 27, no. 5, pp. 1132-1142, May 2014.\n[18] Z. Tang, Y.-S. Lin, K.-H. Lee, J.-N. Hwang, J.-H. Chuang, and Z. Fang, \"Camera self-calibration from tracking of moving persons,\" in Proc. Int. Conf. Pattern Recognit. (ICPR), Dec. 2016, pp. 260-265.\n[19] R. Mohedano and N. Garcia, \"Capabilities and limitations of mono-camera pedestrian-based autocalibration,\" in Proc. IEEE Int. Conf. Image Process. (ICIP), Sep. 2010, pp. 4705-4708.\n[20] F. Devernay and O. D. Faugeras, \"Automatic calibration and removal of distortion from scenes of structured environments,\" Proc. SPIE, vol. 2567, pp. 62-73, Sep. 1995.\n[21] J. H. Brito, R. Angst, K. Köser, and M. Pollefeys, \"Radial distortion selfcalibration,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2013, pp. 1368-1375.\n[22] C. Wu, \"Critical configurations for radial distortion self-calibration,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2014, pp. 25-32.\n[23] K.-H. Lee, J.-N. Hwang, and S.-I. Chen, \"Model-based vehicle localization based on three-dimensional constrained multiple-kernel tracking,\" IEEE Trans. Circuits Syst. Video Technol., vol. 25, no. 1, pp. 38-50, Jun. 2014.\n[24] P. Larranaga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, 2nd ed. Norwell, MA, USA: Kluwer, 2002.\n[25] M. Hauschild and M. Pelikan, \"An introduction and survey of estimation of distribution algorithms,\" Swarm Evol. Comput., vol. 1, no. 3, pp. 111-128, 2011.\n[26] Z. Tang, J.-N. Hwang, Y.-S. Lin, and J.-H. Chuang, \"Multiple-kernel adaptive segmentation and tracking (MAST) for robust object tracking,\" in Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP), Mar. 2016, pp. 1115-1119.\n[27] Y.-G. Lee, Z. Tang, and J.-N. Hwang, \"Online-learning-based human tracking across non-overlapping cameras,\" IEEE Trans. Circuits Syst. Video Technol., vol. 28, no. 10, pp. 2870-2883, Oct. 2017.\n[28] P. L. St-Charles, G. A. Bilodeau, and R. Bergevin, \"SuBSENSE: A universal change detection method with local adaptive sensitivity,\" IEEE Trans. Image Process., vol. 24, no. 1, pp. 359-373, Jan. 2015.\n[29] T. Chen, A. D. Bimbo, F. Pernici, and G. Serra, \"Accurate self-calibration of two cameras by observations of a moving person on a ground plane,\" in Proc. IEEE Int. Conf. Adv. Video Signal Based Surveill. (AVSS), Sep. 2007, pp. 129-134.\n[30] K. P. Murphy, Machine Learning: A Probabilistic Perspective. Cambridge, MA, USA: MIT Press, 2012.\n[31] M. Grant and S. Boyd. CVX: MATLAB Software for Disciplined Convex Programming. Accessed: Jan. 4, 2016. [Online]. Available: http://stanford.edu/_boyd/cvx\n[32] H. Poosegger et al., \"Unsupervised calibration of camera networks and virtual PTZ cameras,\" in Proc. Workshop Comput. Vis. Winter (CVWW), vol. 13, 2012.\n[33] F. Fleuret, J. Berclaz, R. Lengagne, and P. Fua, \"Multi-camera people tracking with a probabilistic occupancy map,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 30, no. 2, pp. 267-282, Feb. 2008.\n[34] L. Leal-Taixé, A. Milan, I. Reid, S. Roth, and K. Schindler. (Apr. 2015). \"MOTChallenge 2015: Towards a benchmark for multi-target tracking.\" [Online]. Available: https://arxiv.org/abs/1504.01942\n[35] J. Liu, R. T. Collins, and Y. Liu, \"Robust autocalibration for a surveillance camera network,\" in Proc. IEEE Workshop Appl. Comput. Vis. (WACV), Jan. 2013, pp. 433-440.\n[36] J. F. Henriques, R. Caseiro, P. Martins, and J. Batista, \"High-speed tracking with kernelized correlation filters,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 37, no. 3, pp. 583-596, Mar. 2015.\n[37] S. Zhang, W. Lu, W. Xing, and L. Zhang, \"Learning scale-adaptive tight correlation filter for object tracking,\" IEEE Trans. Cybern., to be published.\n\n[38] S. Zhang, W. Lu, W. Xing, and L. Zhang, \"Using fuzzy least squares support vector machine with metric learning for object tracking,\" Pattern Recognit., vol. 84, pp. 112-125, Dec. 2018.\n[39] Z. Tang, G. Wang, H. Xiao, A. Zheng, and J.-N. Hwang, \"Single-camera and inter-camera vehicle tracking and 3D speed estimation based on fusion of visual and semantic features,\" in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recogn. Workshops (CVPRW), Jun. 2018, pp. 108-115.\n[40] K. Bernardin and R. Stiefelhagen, \"Evaluating multiple object tracking performance: The CLEAR MOT metrics,\" Image Video Process., vol. 2008, no. 1, pp. 1-10, 2008.\n[41] G. Führ and C. R. Jung, \"Combining patch matching and detection for robust pedestrian tracking in monocular calibrated cameras,\" Pattern Recognit. Lett., vol. 39, pp. 11-20, Apr. 2014.\n[42] H. Pirsjavash, D. Ramanan, and C. C. Fowlkes, \"Globally-optimal greedy algorithms for tracking a variable number of objects,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jan. 2011, pp. 1201-1208.\n[43] L. Leal-Taixé, G. Pons-Moll, and B. Rosenhahn, \"Everybody needs somebody: Modeling social and grouping behavior on a linear programming multiple people tracker,\" in Proc. IEEE Int. Conf. Comput. Vis. Workshops (ICCVW), Nov. 2011, pp. 120-127.\n![img-11.jpeg](img-11.jpeg)\n\nZHENG TANG (S'16) received the B.Sc. (Eng.) degree (Hons.) in telecommunications engineering with management from a joint program between the Beijing University of Posts and Telecommunications, Beijing, China, and the Queen Mary University of London, London, U.K., in 2014, and the M.S. degree in electrical engineering from the University of Washington, Seattle, WA, USA, in 2016, where he is currently pursuing the Ph.D. degree in electrical and computer engineering.\nFrom 2014 to 2018, he was a Research Assistant with the Information Processing Lab, University of Washington. Since 2018, he has been an Intelligent Video Analytics Intern with NVIDIA.\nMr. Tang received the Finalist IBM Best Student Paper Award and the Finalist Intel Best Student Paper Award at the 2016 International Conference on Pattern Recognition. He led the team from the University of Washington to win the Track 2 (AI City Applications) of the 2017 IEEE Smart World NVIDIA AI City Challenge. His team was the winner of the Track 1 (Traffic Flow Analysis) and the Track 3 (Multi-camera Vehicle Detection and Reidentification) in the AI City Challenge Workshop at the 2018 IEEE Conference on Computer Vision and Pattern Recognition.\n![img-12.jpeg](img-12.jpeg)\n\nYEN-SHUO LIN received the B.S. degree in electronic engineering from Chang Gung University, Taoyuan, Taiwan, in 2009, the M.S. degree in space science from National Central University, Taoyuan, in 2011, and the Ph.D. degree in computer science from National Chiao Tung University, Hsinchu, Taiwan, in 2016.\nHe has been a Software Engineer with Applied Materials, Inc., since 2017. His research interests include computer vision, machine learning, deep learning, and pattern recognition.\n![img-13.jpeg](img-13.jpeg)\n\nKUAN-HUI LEE received the B.S. degree from National Taiwan Ocean University, Keelung, Taiwan, in 2003, the M.S. degree from the National Cheng Kung University, Tainan, Taiwan, in 2005, and the Ph.D. degree from the University of Washington, Seattle, WA, USA, in 2015, all in electrical engineering.\nFrom 2007 to 2009, he was with HTC Corporation, where he was involved in developing multimedia applications on smart phones. He has been a Research Scientist with the Toyota Research Institute, since 2016. His current research interests include computer vision and machine learning for autonomous driving.\n![img-14.jpeg](img-14.jpeg)\n\nJENQ-NENG HWANG (F'01) received the B.S. and M.S. degrees in electrical engineering from National Taiwan University, Taipei, Taiwan, in 1981 and 1983, respectively, and the Ph.D. degree from the University of Southern California. In 1989, he joined the Department of Electrical and Computer Engineering (ECE), University of Washington, Seattle, WA, USA, where he has been promoted to Full Professor, in 1999. He was the Associate Chair for Research, from 2003 to 2005 and from 2011 to 2015. He is currently the Associate Chair for Global Affairs and International Development with the ECE Department. He is the Founder and the Co-Director of the Information Processing Lab., which received several AI City Challenges Awards. He has written more than 330 journals, conference papers, and book chapters in the areas of machine learning, multimedia signal processing, and multimedia system integration and networking. He has authored a textbook Multimedia Networking: From Theory to Practice (Cambridge University Press). He has close working relationship with the industry on multimedia signal processing and multimedia networking.\n\nDr. Hwang is currently a Founding Member of the Multimedia Signal Processing Technical Committee of the IEEE Signal Processing Society. He is also a member of the Multimedia Technical Committee of the IEEE Communication Society and the Multimedia Signal Processing Technical Committee of the IEEE Signal Processing Society. He received the 1995 IEEE Signal Processing Society's Best Journal Paper Award. He was the Program Co-Chair of the ICASSP 1998 and the ISCAS 2009. He has served as the Program Co-Chair of the IEEE ICME 2016. He is currently on the Editorial Board of the ZTE Communications, ETRI, IJDMB, and JSPS journals. He was the Society's Representative of the IEEE Neural Network Council, from 1996 to 2000. He has served as an Associate Editor for the IEEE T-SP, T-NN, T-CSVT, T-IP, and the IEEE Signal Processing Magazine.\n![img-15.jpeg](img-15.jpeg)\n\nJEN-HUI CHUANG (SM'06) received the B.S. degree in electrical engineering from National Taiwan University, Taipei, Taiwan, in 1980, the M.S. degree in electrical and computer engineering from the University of California at Santa Barbara, Santa Barbara, CA, USA, in 1983, and the Ph.D. degree in electrical and computer engineering from the University of Illinois at UrbanaChampaign, Urbana, IL, USA, in 1991.\n\nSince then, he has been on the faculty of the Department of Computer and Information Science, National Chiao Tung University (NCTU). From 2004 to 2005, he was the Chairman of the Department of Computer and Information Science, NCTU. From 2006 to 2007, he was the Vice Dean of the College of Computer Science. He is currently serving as the Dean of the College of Computer Science, and also the Director of the Computer Vision Research Center, NCTU. His research interests include signal and image processing, computer vision and pattern recognition, robotics, and potential-based 3-D modeling. He was the President of the Chinese Image Processing and Pattern Recognition Society, from 2015 to 2016, and has served as the Governing Board Member of the International Association of Pattern Recognition, from 2013 to 2016. He is currently serving as a Governing Board Member of the IEEE Taipei Chapter. He has served as an Associate Editor of Signal Processing, from 2005 to 2010, and has been an Associate Editor of the Journal of Information and Science and Engineering, since 2009.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "K.-H. Lee, J.-N. Hwang, and S.-I. Chen, \"Model-based vehicle localization based on 3-D constrained multiple-kernel tracking,\" IEEE Trans. Circuits Syst. Video Technol., vol. 25, no. 1, pp. 38-50, Jan. 2014."
+      },
+      {
+        "ref_id": "2",
+        "text": "K.-H. Lee, J.-N. Hwang, J.-Y. Yu, and K.-Z. Lee, \"Vehicle tracking iterative by Kalman-based constrained multiple-kernel and 3-D model-based localization,\" in Proc. IEEE Int. Symp. Circuits Syst. (ISCAS), May 2013, pp. 2396-2399."
+      },
+      {
+        "ref_id": "3",
+        "text": "Y.-S. Lin, K.-H. Lo, H.-T. Chen, and J.-H. Chuang, \"Vanishing pointbased image transforms for enhancement of probabilistic occupancy mapbased people localization,\" IEEE Trans. Image Process., vol. 23, no. 12, pp. 5586-5598, Dec. 2014."
+      },
+      {
+        "ref_id": "4",
+        "text": "Z. Tang, R. Gu, and J.-N. Hwang, \"Joint multi-view people tracking and pose estimation for 3D scene reconstruction,\" in Proc. IEEE Int. Conf. Multimedia Expo (ICME), Jul. 2018, pp. 1-6."
+      },
+      {
+        "ref_id": "5",
+        "text": "B. Caprile and V. Torre, \"Using vanishing points for camera calibration,\" Int. J. Comput. Vis., vol. 4, no. 2, pp. 127-139, 1990."
+      },
+      {
+        "ref_id": "6",
+        "text": "D. Liebowitz, A. Criminisi, and A. Zisserman, \"Creating architectural models from images,\" EuroGraphics, vol. 18, no. 3, pp. 39-50, 1999."
+      },
+      {
+        "ref_id": "7",
+        "text": "J. Deutscher, M. Isard, and J. MacCormick, \"Automatic camera calibration from a single manhattan image,\" in Proc. Eur. Conf. Comput. Vis. (ECCV), 2002, pp. 175-188."
+      },
+      {
+        "ref_id": "8",
+        "text": "F. Lv, T. Zhao, and R. Nevatia, \"Self-calibration of a camera from video of a walking human,\" in Proc. IEEE Int. Conf. Pattern Recognit. (ICPR), vol. 1, Aug. 2002, pp. 562-567."
+      },
+      {
+        "ref_id": "9",
+        "text": "F.-J. Lv, T. Zhao, and R. Nevatia, \"Camera calibration from video of a walking human,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 9, no. 9, pp. 1513-1518, Sep. 2006."
+      },
+      {
+        "ref_id": "10",
+        "text": "N. Krahmioever and P. R. S. Mendonça, \"Autocalibration from tracks of walking people,\" in Proc. Conf. Brit. Mach. Vis. (BMVC), 2006."
+      },
+      {
+        "ref_id": "11",
+        "text": "I. Junejo and H. Foroosh, \"Robust auto-calibration from pedestrians,\" in Proc. IEEE Int. Conf. Adv. Video Signal Based Surveill. (AVSS), Nov. 2006, pp. 92-97."
+      },
+      {
+        "ref_id": "12",
+        "text": "Q. Wu, T.-C. Shao, and T. Chen, \"Robust self-calibration from single image using RANSAC,\" in Advances in Visual Computing. Berlin, Germany: Springer, 2007, pp. 230-237."
+      },
+      {
+        "ref_id": "13",
+        "text": "W. Kusakunniran, H. Li, and J. Zhang, \"A direct method to self-calibrate a surveillance camera by observing a walking pedestrian,\" in Proc. Int. Conf. Digit. Image Comput., Techn. Appl. (DICTA), 2009, pp. 250-255."
+      },
+      {
+        "ref_id": "14",
+        "text": "J. Liu, R. T. Collins, and Y. Liu, \"Surveillance camera autocalibration based on pedestrian height distributions,\" in Proc. Brit. Mach. Vis. Conf. (BMVC), 2011."
+      },
+      {
+        "ref_id": "15",
+        "text": "S. Huang, X. Ying, J. Rong, Z. Shang, and H. Zha, \"Camera calibration from periodic motion of a pedestrian,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2016, pp. 3025-3033."
+      },
+      {
+        "ref_id": "16",
+        "text": "G. M. Brouwers, M. H. Zwemer, and R. G. Wijnhoven, \"Automatic calibration of stationary surveillance cameras in the wild,\" in Proc. Eur. Conf. Comput. Vis. (ECCV), 2016, pp. 743-759."
+      },
+      {
+        "ref_id": "17",
+        "text": "G. Führ and C. R. Jung, \"Camera self-calibration based on nonlinear optimization and applications in surveillance systems,\" IEEE Trans. Circuits Syst. Video Technol., vol. 27, no. 5, pp. 1132-1142, May 2014."
+      },
+      {
+        "ref_id": "18",
+        "text": "Z. Tang, Y.-S. Lin, K.-H. Lee, J.-N. Hwang, J.-H. Chuang, and Z. Fang, \"Camera self-calibration from tracking of moving persons,\" in Proc. Int. Conf. Pattern Recognit. (ICPR), Dec. 2016, pp. 260-265."
+      },
+      {
+        "ref_id": "19",
+        "text": "R. Mohedano and N. Garcia, \"Capabilities and limitations of mono-camera pedestrian-based autocalibration,\" in Proc. IEEE Int. Conf. Image Process. (ICIP), Sep. 2010, pp. 4705-4708."
+      },
+      {
+        "ref_id": "20",
+        "text": "F. Devernay and O. D. Faugeras, \"Automatic calibration and removal of distortion from scenes of structured environments,\" Proc. SPIE, vol. 2567, pp. 62-73, Sep. 1995."
+      },
+      {
+        "ref_id": "21",
+        "text": "J. H. Brito, R. Angst, K. Köser, and M. Pollefeys, \"Radial distortion selfcalibration,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2013, pp. 1368-1375."
+      },
+      {
+        "ref_id": "22",
+        "text": "C. Wu, \"Critical configurations for radial distortion self-calibration,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2014, pp. 25-32."
+      },
+      {
+        "ref_id": "23",
+        "text": "K.-H. Lee, J.-N. Hwang, and S.-I. Chen, \"Model-based vehicle localization based on three-dimensional constrained multiple-kernel tracking,\" IEEE Trans. Circuits Syst. Video Technol., vol. 25, no. 1, pp. 38-50, Jun. 2014."
+      },
+      {
+        "ref_id": "24",
+        "text": "P. Larranaga and J. A. Lozano, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation, 2nd ed. Norwell, MA, USA: Kluwer, 2002."
+      },
+      {
+        "ref_id": "25",
+        "text": "M. Hauschild and M. Pelikan, \"An introduction and survey of estimation of distribution algorithms,\" Swarm Evol. Comput., vol. 1, no. 3, pp. 111-128, 2011."
+      },
+      {
+        "ref_id": "26",
+        "text": "Z. Tang, J.-N. Hwang, Y.-S. Lin, and J.-H. Chuang, \"Multiple-kernel adaptive segmentation and tracking (MAST) for robust object tracking,\" in Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP), Mar. 2016, pp. 1115-1119."
+      },
+      {
+        "ref_id": "27",
+        "text": "Y.-G. Lee, Z. Tang, and J.-N. Hwang, \"Online-learning-based human tracking across non-overlapping cameras,\" IEEE Trans. Circuits Syst. Video Technol., vol. 28, no. 10, pp. 2870-2883, Oct. 2017."
+      },
+      {
+        "ref_id": "28",
+        "text": "P. L. St-Charles, G. A. Bilodeau, and R. Bergevin, \"SuBSENSE: A universal change detection method with local adaptive sensitivity,\" IEEE Trans. Image Process., vol. 24, no. 1, pp. 359-373, Jan. 2015."
+      },
+      {
+        "ref_id": "29",
+        "text": "T. Chen, A. D. Bimbo, F. Pernici, and G. Serra, \"Accurate self-calibration of two cameras by observations of a moving person on a ground plane,\" in Proc. IEEE Int. Conf. Adv. Video Signal Based Surveill. (AVSS), Sep. 2007, pp. 129-134."
+      },
+      {
+        "ref_id": "30",
+        "text": "K. P. Murphy, Machine Learning: A Probabilistic Perspective. Cambridge, MA, USA: MIT Press, 2012."
+      },
+      {
+        "ref_id": "31",
+        "text": "M. Grant and S. Boyd. CVX: MATLAB Software for Disciplined Convex Programming. Accessed: Jan. 4, 2016. [Online]. Available: http://stanford.edu/_boyd/cvx"
+      },
+      {
+        "ref_id": "32",
+        "text": "H. Poosegger et al., \"Unsupervised calibration of camera networks and virtual PTZ cameras,\" in Proc. Workshop Comput. Vis. Winter (CVWW), vol. 13, 2012."
+      },
+      {
+        "ref_id": "33",
+        "text": "F. Fleuret, J. Berclaz, R. Lengagne, and P. Fua, \"Multi-camera people tracking with a probabilistic occupancy map,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 30, no. 2, pp. 267-282, Feb. 2008."
+      },
+      {
+        "ref_id": "34",
+        "text": "L. Leal-Taixé, A. Milan, I. Reid, S. Roth, and K. Schindler. (Apr. 2015). \"MOTChallenge 2015: Towards a benchmark for multi-target tracking.\" [Online]. Available: https://arxiv.org/abs/1504.01942"
+      },
+      {
+        "ref_id": "35",
+        "text": "J. Liu, R. T. Collins, and Y. Liu, \"Robust autocalibration for a surveillance camera network,\" in Proc. IEEE Workshop Appl. Comput. Vis. (WACV), Jan. 2013, pp. 433-440."
+      },
+      {
+        "ref_id": "36",
+        "text": "J. F. Henriques, R. Caseiro, P. Martins, and J. Batista, \"High-speed tracking with kernelized correlation filters,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 37, no. 3, pp. 583-596, Mar. 2015."
+      },
+      {
+        "ref_id": "37",
+        "text": "S. Zhang, W. Lu, W. Xing, and L. Zhang, \"Learning scale-adaptive tight correlation filter for object tracking,\" IEEE Trans. Cybern., to be published."
+      },
+      {
+        "ref_id": "38",
+        "text": "S. Zhang, W. Lu, W. Xing, and L. Zhang, \"Using fuzzy least squares support vector machine with metric learning for object tracking,\" Pattern Recognit., vol. 84, pp. 112-125, Dec. 2018."
+      },
+      {
+        "ref_id": "39",
+        "text": "Z. Tang, G. Wang, H. Xiao, A. Zheng, and J.-N. Hwang, \"Single-camera and inter-camera vehicle tracking and 3D speed estimation based on fusion of visual and semantic features,\" in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recogn. Workshops (CVPRW), Jun. 2018, pp. 108-115."
+      },
+      {
+        "ref_id": "40",
+        "text": "K. Bernardin and R. Stiefelhagen, \"Evaluating multiple object tracking performance: The CLEAR MOT metrics,\" Image Video Process., vol. 2008, no. 1, pp. 1-10, 2008."
+      },
+      {
+        "ref_id": "41",
+        "text": "G. Führ and C. R. Jung, \"Combining patch matching and detection for robust pedestrian tracking in monocular calibrated cameras,\" Pattern Recognit. Lett., vol. 39, pp. 11-20, Apr. 2014."
+      },
+      {
+        "ref_id": "42",
+        "text": "H. Pirsjavash, D. Ramanan, and C. C. Fowlkes, \"Globally-optimal greedy algorithms for tracking a variable number of objects,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jan. 2011, pp. 1201-1208."
+      },
+      {
+        "ref_id": "43",
+        "text": "L. Leal-Taixé, G. Pons-Moll, and B. Rosenhahn, \"Everybody needs somebody: Modeling social and grouping behavior on a linear programming multiple people tracker,\" in Proc. IEEE Int. Conf. Comput. Vis. Workshops (ICCVW), Nov. 2011, pp. 120-127."
+      }
+    ],
+    "reference_count": 43,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Details of experimental video sequences.",
+      "headers": [
+        "Seq. \\#",
+        "Dataset",
+        "Res. (pix.)",
+        "$\\begin{gathered} \\mathrm{Rt} \\\\ \\text { (fps) } \\end{gathered}$",
+        "Len. <br> (s)",
+        "No. of objects"
+      ],
+      "rows": [
+        [
+          1.0,
+          32,
+          "$1280 \\times 960$",
+          15,
+          400,
+          20
+        ],
+        [
+          2.0,
+          32,
+          "$1280 \\times 960$",
+          15,
+          60,
+          10
+        ],
+        [
+          3.0,
+          33,
+          "$360 \\times 288$",
+          25,
+          200,
+          8
+        ],
+        [
+          "4. PETS09-S2L1",
+          34,
+          "$768 \\times 576$",
+          7,
+          114,
+          19
+        ],
+        [
+          "5. AVG-TownCentre",
+          34,
+          "$1920 \\times 1080$",
+          2.5,
+          225,
+          226
+        ],
+        [
+          "6. Soccer-S1",
+          "Ours",
+          "$2048 \\times 1536$",
+          25,
+          120,
+          16
+        ],
+        [
+          "7. Soccer-S2",
+          "Ours",
+          "$2048 \\times 1536$",
+          25,
+          120,
+          16
+        ],
+        [
+          "8. Soccer-S3",
+          "Ours",
+          "$1280 \\times 720$",
+          25,
+          120,
+          16
+        ],
+        [
+          "9. Soccer-S4",
+          "Ours",
+          "$2048 \\times 1536$",
+          25,
+          120,
+          16
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Experimental comparison of camera calibration.",
+      "headers": [
+        "Seq. \\# \\& Method",
+        "$\\begin{gathered} \\Delta f \\\\ \\text { (pix.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta c_{u} \\\\ \\text { (pix.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta c_{e} \\\\ \\text { (pix.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta \\gamma \\\\ \\text { (deg.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta \\beta \\\\ \\text { (deg.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta t_{Z} \\\\ \\text { (mm) } \\end{gathered}$"
+      ],
+      "rows": [
+        [
+          "1 - ESTHER",
+          121.5,
+          23.3,
+          12.7,
+          1.04,
+          0.39,
+          80
+        ],
+        [
+          "1 - Tang et al. [18]",
+          124.6,
+          19.2,
+          16.0,
+          1.82,
+          1.17,
+          78
+        ],
+        [
+          "1 - Brouwers et al. [16]",
+          179.0,
+          43.9,
+          14.8,
+          1.14,
+          0.22,
+          62
+        ],
+        [
+          "1 - Liu et al. [14]",
+          347.0,
+          43.9,
+          14.8,
+          "N/A*",
+          "N/A*",
+          "N/A*"
+        ],
+        [
+          "1 - Liu et al. [35]",
+          229.0,
+          43.9,
+          14.8,
+          "N/A*",
+          "N/A*",
+          "N/A*"
+        ],
+        [
+          "1 - Wu et al. [12]",
+          251.9,
+          43.9,
+          14.8,
+          8.68,
+          3.94,
+          "N/A*"
+        ],
+        [
+          "1 - Lv et al. [8]",
+          392.7,
+          43.9,
+          14.8,
+          15.01,
+          5.47,
+          "N/A*"
+        ],
+        [
+          "2 - ESTHER",
+          126.5,
+          15.1,
+          13.7,
+          2.61,
+          1.57,
+          97
+        ],
+        [
+          "2 - Tang et al. [18]",
+          126.8,
+          19.0,
+          11.2,
+          2.9,
+          1.18,
+          115
+        ],
+        [
+          "2 - Brouwers et al. [16]",
+          265.0,
+          41.2,
+          18.0,
+          0.27,
+          0.33,
+          790
+        ],
+        [
+          "2 - Wu et al. [12]",
+          362.0,
+          41.2,
+          18.0,
+          6.45,
+          2.64,
+          "N/A*"
+        ],
+        [
+          "2 - Lv et al. [8]",
+          520.3,
+          41.2,
+          18.0,
+          8.93,
+          3.98,
+          "N/A*"
+        ],
+        [
+          "3 - ESTHER",
+          11.5,
+          4.5,
+          2.9,
+          2.78,
+          2.07,
+          116
+        ],
+        [
+          "3 - Tang et al. [18]",
+          13.1,
+          5.3,
+          2.8,
+          3.49,
+          1.75,
+          112
+        ],
+        [
+          "3 - Brouwers et al. [16]",
+          43.0,
+          11.5,
+          9.6,
+          2.91,
+          0.63,
+          520
+        ],
+        [
+          "3 - Wu et al. [12]",
+          28.6,
+          11.5,
+          9.6,
+          7.3,
+          3.04,
+          "N/A*"
+        ],
+        [
+          "3 - Lv et al. [8]",
+          34.6,
+          11.5,
+          9.6,
+          11.69,
+          2.07,
+          "N/A*"
+        ],
+        [
+          "4 - ESTHER",
+          52.2,
+          13.8,
+          6.0,
+          2.46,
+          1.45,
+          294
+        ],
+        [
+          "4 - Tang et al. [18]",
+          51.8,
+          12.0,
+          7.9,
+          1.84,
+          1.75,
+          327
+        ],
+        [
+          "4 - Führ et al. [17]",
+          52.0,
+          59.8,
+          5.4,
+          "N/A*",
+          "N/A*",
+          "N/A*"
+        ],
+        [
+          "4 - Wu et al. [12]",
+          60.5,
+          59.8,
+          5.4,
+          2.77,
+          1.92,
+          "N/A*"
+        ],
+        [
+          "4. Lv et al. [8]",
+          89.6,
+          59.8,
+          5.4,
+          7.56,
+          3.29,
+          "N/A*"
+        ],
+        [
+          "5 - ESTHER",
+          158.5,
+          24.9,
+          13.9,
+          3.17,
+          1.89,
+          176
+        ],
+        [
+          "5 - Tang et al. [18]",
+          200.1,
+          25.4,
+          16.2,
+          3.06,
+          2.24,
+          175
+        ],
+        [
+          "5 - Führ et al. [17]",
+          197.1,
+          0.5,
+          0.5,
+          "N/A*",
+          "N/A*",
+          "N/A*"
+        ],
+        [
+          "5 - Wu et al. [12]",
+          253.6,
+          0.5,
+          0.5,
+          4.96,
+          4.17,
+          "N/A*"
+        ],
+        [
+          "5 - Lv et al. [8]",
+          280.0,
+          0.5,
+          0.5,
+          9.41,
+          6.82,
+          "N/A*"
+        ],
+        [
+          "6 - ESTHER",
+          185.2,
+          14.6,
+          21.1,
+          3.14,
+          1.26,
+          86
+        ],
+        [
+          "6 - Tang et al. [18]",
+          240.7,
+          34.4,
+          24.5,
+          6.68,
+          4.1,
+          193
+        ],
+        [
+          "6 - Wu et al. [12]",
+          258.7,
+          62.8,
+          27.2,
+          8.11,
+          5.21,
+          "N/A*"
+        ],
+        [
+          "6 - Lv et al. [8]",
+          292.5,
+          62.8,
+          27.2,
+          15.72,
+          8.47,
+          "N/A*"
+        ],
+        [
+          "7 - ESTHER",
+          191.3,
+          22.1,
+          17.6,
+          2.01,
+          1.53,
+          121
+        ],
+        [
+          "7 - Tang et al. [18]",
+          249.5,
+          30.5,
+          38.8,
+          4.95,
+          3.26,
+          149
+        ],
+        [
+          "7 - Wu et al. [12]",
+          278.2,
+          61.2,
+          24.1,
+          7.91,
+          4.9,
+          "N/A*"
+        ],
+        [
+          "7 - Lv et al. [8]",
+          311.5,
+          61.2,
+          24.1,
+          15.46,
+          7.41,
+          "N/A*"
+        ],
+        [
+          "8 - ESTHER",
+          123.3,
+          4.9,
+          9.6,
+          1.8,
+          0.92,
+          119
+        ],
+        [
+          "8 - Tang et al. [18]",
+          131.1,
+          18.7,
+          13.0,
+          2.73,
+          1.79,
+          197
+        ],
+        [
+          "8 - Wu et al. [12]",
+          132.9,
+          43.3,
+          14.5,
+          6.85,
+          2.17,
+          "N/A*"
+        ],
+        [
+          "8 - Lv et al. [8]",
+          178.4,
+          43.3,
+          14.5,
+          8.12,
+          4.89,
+          "N/A*"
+        ],
+        [
+          "9 - ESTHER",
+          219.5,
+          16.5,
+          19.3,
+          2.33,
+          1.49,
+          162
+        ],
+        [
+          "9 - Tang et al. [18]",
+          260.0,
+          38.7,
+          22.9,
+          3.77,
+          2.38,
+          226
+        ],
+        [
+          "9 - Wu et al. [12]",
+          258.7,
+          57.6,
+          30.6,
+          7.19,
+          4.75,
+          "N/A*"
+        ],
+        [
+          "9 - Lv et al. [8]",
+          293.3,
+          57.6,
+          30.6,
+          14.83,
+          8.54,
+          "N/A*"
+        ]
+      ],
+      "row_count": 43,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Experimental comparison of radial distortion correction.",
+      "headers": [
+        "Seq. \\# \\& Method",
+        "$k_{1}$",
+        "$k_{2}$"
+      ],
+      "rows": [
+        [
+          "1 - Ground truth",
+          "$-0.374$",
+          0.159
+        ],
+        [
+          "1 - ESTHER",
+          "$-0.383$",
+          0.176
+        ],
+        [
+          "1 - ESTHER (MWA)",
+          "$-0.346$",
+          0.119
+        ],
+        [
+          "2 - Ground truth",
+          "$-0.365$",
+          0.131
+        ],
+        [
+          "2 - ESTHER",
+          "$-0.327$",
+          0.117
+        ],
+        [
+          "2 - ESTHER (MWA)",
+          "$-0.479$",
+          0.198
+        ],
+        [
+          "5 - Ground truth",
+          "$-0.602$",
+          4.702
+        ],
+        [
+          "5 - ESTHER",
+          "$-0.595$",
+          4.73
+        ],
+        [
+          "5 - ESTHER (MWA)",
+          "$-0.579$",
+          4.685
+        ],
+        [
+          "6 - Ground truth",
+          "$-0.312$",
+          0.098
+        ],
+        [
+          "6 - ESTHER",
+          "$-0.316$",
+          0.102
+        ],
+        [
+          "6 - ESTHER (MWA)",
+          "$-0.348$",
+          0.124
+        ],
+        [
+          "7 - Ground truth",
+          "$-0.308$",
+          0.101
+        ],
+        [
+          "7 - ESTHER",
+          "$-0.322$",
+          0.107
+        ],
+        [
+          "7 - ESTHER (MWA)",
+          "$-0.351$",
+          0.119
+        ],
+        [
+          "8 - Ground truth",
+          "$-0.469$",
+          0.225
+        ],
+        [
+          "8 - ESTHER",
+          "$-0.509$",
+          0.241
+        ],
+        [
+          "8 - ESTHER (MWA)",
+          "$-0.593$",
+          0.278
+        ],
+        [
+          "9 - Ground truth",
+          "$-0.304$",
+          0.097
+        ],
+        [
+          "9 - ESTHER",
+          "$-0.319$",
+          0.103
+        ],
+        [
+          "9 - ESTHER (MWA)",
+          "$-0.346$",
+          0.119
+        ]
+      ],
+      "row_count": 21,
+      "column_count": 3
+    },
+    {
+      "table_number": "4",
+      "table_title": "Ablation study of the proposed framework.",
+      "headers": [
+        "Method",
+        "",
+        "",
+        "",
+        "$\\begin{gathered} \\Delta f \\\\ \\text { (pix.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta c_{u} \\\\ \\text { (pix.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta c_{v} \\\\ \\text { (pix.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta y_{f} \\\\ \\text { (deg.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta \\beta \\\\ \\text { (deg.) } \\end{gathered}$",
+        "$\\begin{gathered} \\Delta t_{2} \\\\ \\text { (mm) } \\end{gathered}$",
+        "$\\Delta k_{1}$",
+        "$\\Delta k_{2}$",
+        "$\\begin{gathered} \\mathrm{E}\\left(d_{x f}^{X}+d_{x f}^{Y}\\right) \\\\ \\text { (pix.) } \\end{gathered}$",
+        "$\\begin{gathered} \\mathrm{E}\\left(\\Delta H_{x f}\\right) \\\\ \\text { (\\%) } \\end{gathered}$"
+      ],
+      "rows": [
+        [
+          "EDA",
+          "EDA",
+          "LLR",
+          "MSC",
+          121.5,
+          23.3,
+          12.7,
+          1.64,
+          0.39,
+          50,
+          0.009,
+          0.017,
+          "1.06e-3",
+          1.47
+        ],
+        [
+          "LM",
+          "EDA",
+          "LLR",
+          "MSC",
+          128.4,
+          26.8,
+          13.0,
+          1.27,
+          0.94,
+          47,
+          0.058,
+          0.032,
+          "2.06e-1",
+          1.92
+        ],
+        [
+          "EDA",
+          "LM",
+          "LLR",
+          "MSC",
+          129.7,
+          31.2,
+          17.5,
+          1.85,
+          1.11,
+          58,
+          0.03,
+          0.021,
+          "2.95e-3",
+          1.43
+        ],
+        [
+          "LM",
+          "LM",
+          "LLR",
+          "MSC",
+          132.9,
+          33.4,
+          16.3,
+          2.03,
+          0.72,
+          72,
+          0.049,
+          0.029,
+          "7.17e-1",
+          2.05
+        ],
+        [
+          "N/A",
+          "EDA",
+          "LLR",
+          "MSC",
+          124.6,
+          19.2,
+          16.0,
+          1.82,
+          1.17,
+          78,
+          "N/A*",
+          "N/A*",
+          "5.69e-3",
+          6.09
+        ],
+        [
+          "EDA",
+          "N/A",
+          "LLR",
+          "MSC",
+          167.3,
+          34.1,
+          16.2,
+          3.94,
+          2.94,
+          "N/A*",
+          0.051,
+          0.042,
+          3.69,
+          1.9
+        ],
+        [
+          "N/A",
+          "N/A",
+          "LLR",
+          "MSC",
+          185.1,
+          43.9,
+          14.8,
+          5.06,
+          3.26,
+          "N/A*",
+          "N/A*",
+          "N/A*",
+          4.65,
+          5.81
+        ],
+        [
+          "N/A",
+          "N/A",
+          "RANSAC",
+          "MSC",
+          207.5,
+          43.9,
+          14.8,
+          6.22,
+          3.63,
+          "N/A*",
+          "N/A*",
+          "N/A*",
+          3.12,
+          4.97
+        ],
+        [
+          "N/A",
+          "N/A",
+          "LLR",
+          "RANSAC",
+          261.6,
+          43.9,
+          14.8,
+          8.99,
+          3.46,
+          "N/A*",
+          "N/A*",
+          "N/A*",
+          5.0,
+          8.02
+        ],
+        [
+          "N/A",
+          "N/A",
+          "RANSAC",
+          "RANSAC",
+          351.9,
+          43.9,
+          14.8,
+          8.68,
+          3.94,
+          "N/A*",
+          "N/A*",
+          "N/A*",
+          4.21,
+          5.91
+        ],
+        [
+          "N/A",
+          "N/A",
+          "N/A",
+          "MSC",
+          409.3,
+          43.9,
+          14.8,
+          9.69,
+          4.32,
+          "N/A*",
+          "N/A*",
+          "N/A*",
+          8.1,
+          6.4
+        ],
+        [
+          "N/A",
+          "N/A",
+          "LLR",
+          "N/A",
+          430.0,
+          43.9,
+          14.8,
+          9.95,
+          4.28,
+          "N/A*",
+          "N/A*",
+          "N/A*",
+          5.83,
+          5.79
+        ],
+        [
+          "N/A",
+          "N/A",
+          "N/A",
+          "N/A",
+          382.7,
+          43.9,
+          14.8,
+          15.01,
+          5.47,
+          "N/A*",
+          "N/A*",
+          "N/A*",
+          6.11,
+          7.13
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 14
+    },
+    {
+      "table_number": "5",
+      "table_title": "Experimental comparison of single-camera MOT in MOTA (\\%).",
+      "headers": [
+        "Method",
+        "PETS09-S2L1",
+        "AVG-TownCentre"
+      ],
+      "rows": [
+        [
+          340,
+          81.5,
+          46.1
+        ],
+        [
+          240,
+          75.2,
+          41.8
+        ],
+        [
+          "Führ et al. [17] opt.",
+          55.3,
+          44.9
+        ],
+        [
+          "Führ et al. [17] init.",
+          51.4,
+          19.9
+        ],
+        [
+          42,
+          58.1,
+          38.0
+        ],
+        [
+          45,
+          77.3,
+          35.9
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    }
+  ]
+}

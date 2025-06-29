@@ -1,0 +1,577 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/Language model based interactive estimation of distribution algorithm.md",
+    "filename": "Language model based interactive estimation of distribution algorithm.md",
+    "title": "Language model based interactive estimation of distribution algorithm",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Notation.",
+      "headers": [
+        "Notation",
+        "Formula",
+        "Used by",
+        "Usage"
+      ],
+      "rows": [
+        [
+          "Document",
+          "$\\boldsymbol{d}_{\\mathrm{i}}=\\left(w_{i k, 1}, w_{i k, 2}, \\ldots\\right)$",
+          "User",
+          "Evaluation"
+        ],
+        [
+          "Semantic Vector",
+          "$\\boldsymbol{x}=\\left(x_{1}, x_{2}, \\ldots, x_{n}\\right)$",
+          "",
+          "Measurement of item/individual similarity"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Attributes adopted by key-value decimal encoding.",
+      "headers": [
+        "Attribute name",
+        "Number of values"
+      ],
+      "rows": [
+        [
+          "Country",
+          156
+        ],
+        [
+          "Genres",
+          28
+        ],
+        [
+          "Rating",
+          10
+        ],
+        [
+          "Votes",
+          187
+        ],
+        [
+          "Year",
+          14
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Example of a movie in decimal encoding.",
+      "headers": [
+        "Attribute",
+        "Country",
+        "Genres",
+        "Rating",
+        "Votes",
+        "Year"
+      ],
+      "rows": [
+        [
+          "Phenotype",
+          "us",
+          "Drama",
+          8,
+          4638,
+          1989
+        ],
+        [
+          "Decimal encoding string",
+          0,
+          5,
+          7,
+          3,
+          10
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Example of a book in term-based decimal encoding.",
+      "headers": [
+        "Word",
+        "$\\cdots$",
+        "1980",
+        "Time",
+        "Gay",
+        "Epidemic",
+        "Disease",
+        "$\\cdots$"
+      ],
+      "rows": [
+        [
+          "Word frequency",
+          "$\\cdots$",
+          2,
+          19,
+          6,
+          12,
+          9,
+          "$\\cdots$"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 8
+    },
+    {
+      "table_number": "5",
+      "table_title": "Hit rates for sixteen expected solutions.",
+      "headers": [
+        "Ranking",
+        "LMIEDA-TDE",
+        "IGA-KVDE",
+        "IGA-TDE",
+        "IGA-SVRE",
+        "PSIEDADE-KVDE",
+        "L-SVRE",
+        "5-SVRE",
+        "Group"
+      ],
+      "rows": [
+        [
+          67598,
+          97,
+          67,
+          100,
+          "$37 \\%$",
+          60,
+          50,
+          47,
+          "Movie"
+        ],
+        [
+          70469,
+          100,
+          97,
+          97,
+          60,
+          60,
+          60,
+          67,
+          "Movie"
+        ],
+        [
+          76465,
+          100,
+          77,
+          3,
+          43,
+          47,
+          60,
+          43,
+          "Movie"
+        ],
+        [
+          102421,
+          100,
+          80,
+          100,
+          53,
+          53,
+          47,
+          53,
+          "Movie"
+        ],
+        [
+          160546,
+          100,
+          80,
+          100,
+          37,
+          43,
+          40,
+          43,
+          "Movie"
+        ],
+        [
+          262521,
+          100,
+          0,
+          100,
+          50,
+          57,
+          53,
+          43,
+          "Movie"
+        ],
+        [
+          335448,
+          100,
+          30,
+          100,
+          77,
+          60,
+          50,
+          47,
+          "Movie"
+        ],
+        [
+          355712,
+          100,
+          87,
+          100,
+          60,
+          50,
+          43,
+          60,
+          "Movie"
+        ],
+        [
+          48532,
+          100,
+          38,
+          72,
+          52,
+          53,
+          56,
+          36,
+          "Book"
+        ],
+        [
+          65918,
+          100,
+          52,
+          100,
+          22,
+          36,
+          20,
+          20,
+          "Book"
+        ],
+        [
+          177918,
+          100,
+          44,
+          100,
+          20,
+          20,
+          16,
+          26,
+          "Book"
+        ],
+        [
+          298313,
+          100,
+          46,
+          100,
+          50,
+          47,
+          36,
+          48,
+          "Book"
+        ],
+        [
+          299313,
+          100,
+          38,
+          100,
+          52,
+          60,
+          56,
+          36,
+          "Book"
+        ],
+        [
+          310313,
+          100,
+          32,
+          100,
+          46,
+          50,
+          44,
+          42,
+          "Book"
+        ],
+        [
+          395532,
+          100,
+          32,
+          52,
+          46,
+          50,
+          44,
+          42,
+          "Book"
+        ],
+        [
+          760918,
+          100,
+          56,
+          100,
+          18,
+          36,
+          30,
+          20,
+          "Book"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 9
+    },
+    {
+      "table_number": "6",
+      "table_title": "Mean and standard deviation of search time (s) in subjective comparative experiments with sixteen expected solutions.",
+      "headers": [
+        "Ranking",
+        "LMIEDA-TDE",
+        "IGA-TDE",
+        "L-SVRE",
+        "Group"
+      ],
+      "rows": [
+        [
+          67598,
+          "$\\mathbf{9 6 5 . 6 2 ( 2 9 3 . 3 7 )}$",
+          "$1037.89(382.48)$",
+          "$* 50 \\% * *$",
+          "Movie"
+        ],
+        [
+          70469,
+          "$1646.05(345.78)$",
+          "$\\mathbf{1 4 9 8 . 3 ( 3 7 2 . 7 )}$",
+          "$2339.01(946.87)$",
+          "Movie"
+        ],
+        [
+          76465,
+          "$\\mathbf{1 3 3 4 . 7 4 ( 3 6 6 . 9 3 )}$",
+          "$1402.4(396.02)$",
+          "$2561.43(1315.74)^{* *}$",
+          "Movie"
+        ],
+        [
+          102421,
+          "$\\mathbf{3 1 8 6 7 ( 9 3 . 1 9 )}$",
+          "$353.67(146.49)$",
+          "$* 47 \\% * *$",
+          "Movie"
+        ],
+        [
+          160546,
+          "$\\mathbf{1 5 3 2 . 2 3 ( 4 5 7 . 2 3 )}$",
+          "$1459.51(322.29)$",
+          "$* 40 \\% * *$",
+          "Movie"
+        ],
+        [
+          262521,
+          "$\\mathbf{9 0 1 . 3 8 ( 2 8 6 . 4 7 )}$",
+          "$1297.47(414.59)^{* *}$",
+          "$* 53 \\% * *$",
+          "Movie"
+        ],
+        [
+          335448,
+          "$\\mathbf{8 9 7 . 9 3 ( 3 4 7 . 8 9 )}$",
+          "$1251.66(441.76)^{* *}$",
+          "$* 50 \\% * *$",
+          "Movie"
+        ],
+        [
+          355712,
+          "$\\mathbf{1 4 2 0 . 8 2 ( 3 8 7 . 4 9 )}$",
+          "$1824.61(549.19)^{* *}$",
+          "$* 43 \\% * *$",
+          "Movie"
+        ],
+        [
+          48532,
+          "$\\mathbf{1 5 5 9 . 4 5 ( 2 7 6 . 4 9 )}$",
+          "$2154.52(404.3)^{* *}$",
+          "$* 55 \\% * *$",
+          "Book"
+        ],
+        [
+          65918,
+          "$\\mathbf{4 6 2 . 2 5 ( 1 2 9 . 7 1 )}$",
+          "$483.17(185.95)$",
+          "$* 25 \\% * *$",
+          "Book"
+        ],
+        [
+          177918,
+          "$\\mathbf{2 7 7 . 2 3 ( 7 0 . 9 3 )}$",
+          "$350.1(140.16)^{* *}$",
+          "$* 30 \\% * *$",
+          "Book"
+        ],
+        [
+          299313,
+          "$\\mathbf{1 3 7 . 5 3 ( 3 1 . 6 6 )}$",
+          "$157.86(41.48)^{* *}$",
+          "$1055.93(580.4)^{* *}$",
+          "Book"
+        ],
+        [
+          298313,
+          "$\\mathbf{3 5 8 . 5 4 ( 7 1 . 7 )}$",
+          "$590.32(207.44)^{* *}$",
+          "$1272.28(687.65)^{* *}$",
+          "Book"
+        ],
+        [
+          310313,
+          "$681.32(139.72)$",
+          "$869.49(218.77)$",
+          "$\\mathbf{5 3 6 . 3 4 ( 3 9 8 . 2 4 )}$",
+          "Book"
+        ],
+        [
+          395532,
+          "$\\mathbf{1 6 1 4 . 1 6 ( 2 8 0 . 4 3 )}$",
+          "$2265.32(593.73)^{* *}$",
+          "$* 50 \\% * *$",
+          "Book"
+        ],
+        [
+          760918,
+          "$\\mathbf{4 1 3 . 5 1 ( 9 8 . 0 6 )}$",
+          "$482.24(181.21)^{* *}$",
+          "$* 30 \\% * *$",
+          "Book"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Mean and standard deviation of DCC in subjective comparative experiments with sixteen expected solutions.",
+      "headers": [
+        "Ranking",
+        "LMIEDA-TDE",
+        "IGA-TDE",
+        "L-SVRE",
+        "Group"
+      ],
+      "rows": [
+        [
+          "$48 / 532$",
+          "$\\mathbf{7 8 . 2 2 ( 7 . 2 )}$",
+          "$91.05(9.33)^{* *}$",
+          "$* 55 \\% * *$",
+          "Movie"
+        ],
+        [
+          "$65 / 918$",
+          "$32.37(5.72)$",
+          "$\\mathbf{3 0 . 9 ( 0 7 ( . 1 8 )}$",
+          "$* 25 \\%$",
+          "Movie"
+        ],
+        [
+          "$177 / 918$",
+          "$\\mathbf{2 4 . 1 1 ( 3 . 0 7 )}$",
+          "$26.97(7.09)$",
+          "$* 30 \\% * *$",
+          "Movie"
+        ],
+        [
+          "$298 / 313$",
+          "$\\mathbf{2 6 . 6 8 ( 3 . 0 9 )}$",
+          "$38.32(8.64)^{* *}$",
+          "$57.25(26.84)^{* *}$",
+          "Movie"
+        ],
+        [
+          "$299 / 313$",
+          "$20.81(2.5)$",
+          "$\\mathbf{1 8 . 0 7 ( 3 . 1 2 )}$",
+          "$48.28(23.35)$",
+          "Movie"
+        ],
+        [
+          "$310 / 313$",
+          "$42.21(5.4)$",
+          "$48.97(8.24)$",
+          "$\\mathbf{3 4 . 6 ( 1 8 . 3 5 )}$",
+          "Movie"
+        ],
+        [
+          "$395 / 532$",
+          "$\\mathbf{7 6 . 1 1 ( 8 . 9 4 )}$",
+          "$93.51(16.3)^{* *}$",
+          "$* 50 \\% * *$",
+          "Movie"
+        ],
+        [
+          "$760 / 918$",
+          "$\\mathbf{2 8 . 7 7 ( 4 . 7 )}$",
+          "$28.78(8.42)$",
+          "$* 30 \\% * *$",
+          "Movie"
+        ],
+        [
+          "$67 / 598$",
+          "$\\mathbf{4 6 . 9 1 ( 1 0 . 1 7 )}$",
+          "$47.08(15.24)$",
+          "$* 50 \\% * *$",
+          "Book"
+        ],
+        [
+          "$70 / 469$",
+          "$65.96(10.4)$",
+          "$\\mathbf{6 1 . 4 2 ( 1 2 . 2 3 )}$",
+          "$73.24(40.3)$",
+          "Book"
+        ],
+        [
+          "$76 / 465$",
+          "$60.47(12.58)$",
+          "$\\mathbf{6 0 . 0 7 ( 1 4 . 8 1 )}$",
+          "$84.68(40.92)$",
+          "Book"
+        ],
+        [
+          "$102 / 421$",
+          "$\\mathbf{1 6 . 1 5 ( 4 . 2 1 )}$",
+          "$16.8(6.52)$",
+          "$* 47 \\% * *$",
+          "Book"
+        ],
+        [
+          "$160 / 546$",
+          "$64.6(16.46)$",
+          "$\\mathbf{6 0 . 9 4 ( 1 2 . 1 6 )}$",
+          "$* 40 \\% * *$",
+          "Book"
+        ],
+        [
+          "$262 / 521$",
+          "$\\mathbf{4 2 . 9 8 ( 1 0 . 7 )}$",
+          "$55.07(14.53)^{* *}$",
+          "$* 53 \\% * *$",
+          "Book"
+        ],
+        [
+          "$335 / 448$",
+          "$\\mathbf{4 4 . 8 4 ( 1 3 . 1 2 )}$",
+          "$57.68(15.56)^{* *}$",
+          "$* 50 \\% * *$",
+          "Book"
+        ],
+        [
+          "$355 / 712$",
+          "$\\mathbf{6 4 . 4 2 ( 1 3 . 1 4 )}$",
+          "$76.4(16.02)^{* *}$",
+          "$* 43 \\% * *$",
+          "Book"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Improved Hybrid Differential Evolution-Estimation of Distribution Algorithm with Feasibility Rules for NLPMINLP Engineering Optimization Problems.md",
+    "filename": "Improved Hybrid Differential Evolution-Estimation of Distribution Algorithm with Feasibility Rules for NLPMINLP Engineering Optimization Problems.md",
+    "title": "Improved Hybrid Differential Evolution-Estimation of Distribution Algorithm with Feasibility Rules for NLPMINLP Engineering Optimization Problems",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Statistical results of different methods for Problem 1",
+      "headers": [
+        "Methods",
+        "Best",
+        "Mean",
+        "Worst",
+        "Std. dev.",
+        "NFE"
+      ],
+      "rows": [
+        [
+          "CGA",
+          1.74831,
+          1.77197,
+          1.78584,
+          "$1.12200 \\times 10^{-2}$",
+          "$9.000 \\times 10^{5}$"
+        ],
+        [
+          "MNPGA",
+          1.72823,
+          1.79265,
+          1.99341,
+          "$7.47130 \\times 10^{-2}$",
+          "$8.000 \\times 10^{4}$"
+        ],
+        [
+          "CPSO",
+          1.72802,
+          1.74883,
+          1.78214,
+          "$1.29260 \\times 10^{-2}$",
+          "$2.000 \\times 10^{5}$"
+        ],
+        [
+          "CDE",
+          1.73346,
+          1.76816,
+          1.82411,
+          "$2.21940 \\times 10^{-2}$",
+          "$2.048 \\times 10^{5}$"
+        ],
+        [
+          "DELC",
+          1.72485,
+          1.72485,
+          1.72485,
+          "$4.10000 \\times 10^{-13}$",
+          "$2.000 \\times 10^{4}$"
+        ],
+        [
+          "IHDE-EDA",
+          1.72485,
+          1.72485,
+          1.72485,
+          "$6.77522 \\times 10^{-14}$",
+          "$1.800 \\times 10^{4}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Statistical results of different methods for Problem 2",
+      "headers": [
+        "Methods",
+        "Best",
+        "Mean",
+        "Worst",
+        "Std. dev.",
+        "NFE"
+      ],
+      "rows": [
+        [
+          "CGA",
+          "$1.27048 \\times 10^{-2}$",
+          "$1.27690 \\times 10^{-2}$",
+          "$1.28220 \\times 10^{-2}$",
+          "$3.93900 \\times 10^{-5}$",
+          "$9.000 \\times 10^{5}$"
+        ],
+        [
+          "MNPGA",
+          "$1.26810 \\times 10^{-2}$",
+          "$1.27420 \\times 10^{-2}$",
+          "$1.29730 \\times 10^{-2}$",
+          "$5.90000 \\times 10^{-5}$",
+          "$8.000 \\times 10^{4}$"
+        ],
+        [
+          "CPSO",
+          "$1.26747 \\times 10^{-2}$",
+          "$1.27300 \\times 10^{-2}$",
+          "$1.29240 \\times 10^{-2}$",
+          "$5.19850 \\times 10^{-5}$",
+          "$2.000 \\times 10^{3}$"
+        ],
+        [
+          "CDE",
+          "$1.26702 \\times 10^{-2}$",
+          "$1.27030 \\times 10^{-2}$",
+          "$1.27900 \\times 10^{-2}$",
+          "$2.70000 \\times 10^{-5}$",
+          "$2.048 \\times 10^{3}$"
+        ],
+        [
+          "DELC",
+          "$1.26652 \\times 10^{-2}$",
+          "$1.26653 \\times 10^{-2}$",
+          "$1.26656 \\times 10^{-2}$",
+          "$1.30000 \\times 10^{-7}$",
+          "$2.000 \\times 10^{4}$"
+        ],
+        [
+          "IHDE-EDA",
+          "$1.26652 \\times 10^{-2}$",
+          "$1.26652 \\times 10^{-2}$",
+          "$1.26652 \\times 10^{-2}$",
+          "$1.59867 \\times 10^{-9}$",
+          "$1.925 \\times 10^{4}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Statistical results of different methods for Problem 3",
+      "headers": [
+        "Methods",
+        "NFE/NRC"
+      ],
+      "rows": [
+        [
+          "GA",
+          2251760
+        ],
+        [
+          "M-SIMPSA",
+          25753697
+        ],
+        [
+          "MI-HDE",
+          50976100
+        ],
+        [
+          "MDE",
+          40550100
+        ],
+        [
+          "R-PSO",
+          1500090
+        ],
+        [
+          "IHDE-EDA",
+          14500100
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Statistical results of different methods for STCOB problem",
+      "headers": [
+        "Methods",
+        "600 s",
+        "",
+        "",
+        "1200 s",
+        "",
+        "",
+        "1800 s",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Mean",
+          "",
+          "Variance",
+          "Mean",
+          "",
+          "Variance",
+          "Mean",
+          "",
+          "Variance"
+        ],
+        [
+          "GA",
+          14.13,
+          "",
+          0.943,
+          13.694,
+          "",
+          0.392,
+          13.515,
+          "",
+          0.214
+        ],
+        [
+          "OPSO",
+          13.507,
+          "",
+          0.48,
+          13.23,
+          "",
+          0.244,
+          13.021,
+          "",
+          0.073
+        ],
+        [
+          "MI-HDE",
+          13.107,
+          "",
+          0.149,
+          12.901,
+          "",
+          0.074,
+          12.857,
+          "",
+          0.027
+        ],
+        [
+          "IHDE-EDA",
+          13.069,
+          "",
+          0.167,
+          12.855,
+          "",
+          0.037,
+          12.828,
+          "",
+          0.019
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 10
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 An optimized schedule for STOMB problem",
+      "headers": [
+        "Scheduling time slots",
+        "Start time/day",
+        "End time/day",
+        "Added tanks",
+        "Tanks for p1",
+        "Tanks for p2",
+        "Emptied tanks",
+        "Crude oil in p1",
+        "Crude oil in p2",
+        "Flow in p1 /t $\\cdot \\mathrm{h}^{-1}$",
+        "Flow in p2 <br> $\\mathrm{t} \\cdot \\mathrm{h}^{-1}$",
+        "Sulfur conc. $\\times 10^{8}$"
+      ],
+      "rows": [
+        [
+          1,
+          0,
+          1.81,
+          15,
+          1,
+          15,
+          1,
+          "$\\mathrm{O}_{\\mathrm{A}}$",
+          "$\\mathrm{O}_{\\mathrm{F}}$",
+          344,
+          156,
+          1384
+        ],
+        [
+          2,
+          1.81,
+          7.86,
+          2,
+          2,
+          15,
+          2,
+          "$\\mathrm{O}_{\\mathrm{A}}$",
+          "$\\mathrm{O}_{\\mathrm{F}}$",
+          344,
+          156,
+          1384
+        ],
+        [
+          3,
+          7.86,
+          9.6,
+          5,
+          5,
+          15,
+          5,
+          "$\\mathrm{O}_{\\mathrm{B}}$",
+          "$\\mathrm{O}_{\\mathrm{F}}$",
+          240,
+          260,
+          1467
+        ],
+        [
+          4,
+          9.6,
+          11.18,
+          4,
+          4,
+          15,
+          15,
+          "$\\mathrm{O}_{\\mathrm{B}}$",
+          "$\\mathrm{O}_{\\mathrm{F}}$",
+          240,
+          260,
+          1467
+        ],
+        [
+          5,
+          11.18,
+          12.78,
+          14,
+          4,
+          14,
+          14,
+          "$\\mathrm{O}_{\\mathrm{B}}$",
+          "$\\mathrm{O}_{\\mathrm{F}}$",
+          240,
+          260,
+          1467
+        ],
+        [
+          6,
+          12.78,
+          13.12,
+          12,
+          4,
+          12,
+          4,
+          "$\\mathrm{O}_{\\mathrm{B}}$",
+          "$\\mathrm{O}_{\\mathrm{E}}$",
+          201,
+          299,
+          816
+        ],
+        [
+          7,
+          13.12,
+          15.56,
+          3,
+          3,
+          12,
+          12,
+          "$\\mathrm{O}_{\\mathrm{B}}$",
+          "$\\mathrm{O}_{\\mathrm{E}}$",
+          201,
+          299,
+          816
+        ],
+        [
+          8,
+          15.56,
+          16.96,
+          13,
+          3,
+          13,
+          13,
+          "$\\mathrm{O}_{\\mathrm{B}}$",
+          "$\\mathrm{O}_{\\mathrm{E}}$",
+          201,
+          299,
+          816
+        ],
+        [
+          9,
+          16.96,
+          17.32,
+          10,
+          3,
+          10,
+          3,
+          "$\\mathrm{O}_{\\mathrm{B}}$",
+          "$\\mathrm{O}_{\\mathrm{O}}$",
+          177,
+          323,
+          657
+        ],
+        [
+          10,
+          17.32,
+          20.03,
+          9,
+          9,
+          10,
+          10,
+          "$\\mathrm{O}_{\\mathrm{C}}$",
+          "$\\mathrm{O}_{\\mathrm{O}}$",
+          236,
+          264,
+          1628
+        ],
+        [
+          11,
+          20.03,
+          20.85,
+          11,
+          9,
+          11,
+          9,
+          "$\\mathrm{O}_{\\mathrm{C}}$",
+          "$\\mathrm{O}_{\\mathrm{O}}$",
+          236,
+          264,
+          1628
+        ],
+        [
+          12,
+          20.85,
+          22.62,
+          8,
+          8,
+          11,
+          8,
+          "$\\mathrm{O}_{\\mathrm{C}}$",
+          "$\\mathrm{O}_{\\mathrm{O}}$",
+          236,
+          264,
+          1628
+        ],
+        [
+          13,
+          22.62,
+          24.38,
+          6,
+          6,
+          11,
+          6,
+          "$\\mathrm{O}_{\\mathrm{C}}$",
+          "$\\mathrm{O}_{\\mathrm{O}}$",
+          236,
+          264,
+          1628
+        ],
+        [
+          14,
+          24.38,
+          27.92,
+          7,
+          7,
+          11,
+          7,
+          "$\\mathrm{O}_{\\mathrm{C}}$",
+          "$\\mathrm{O}_{\\mathrm{O}}$",
+          236,
+          264,
+          1628
+        ],
+        [
+          15,
+          27.92,
+          28.12,
+          16,
+          16,
+          11,
+          11,
+          "$\\mathrm{O}_{\\mathrm{A}}$",
+          "$\\mathrm{O}_{\\mathrm{O}}$",
+          147,
+          353,
+          710
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 12
+    }
+  ]
+}

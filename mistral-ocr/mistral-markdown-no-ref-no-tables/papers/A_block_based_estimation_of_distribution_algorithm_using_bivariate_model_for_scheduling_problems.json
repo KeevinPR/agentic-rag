@@ -1,0 +1,1446 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/A block based estimation of distribution algorithm using bivariate model for scheduling problems.md",
+    "filename": "A block based estimation of distribution algorithm using bivariate model for scheduling problems.md",
+    "title": "A block based estimation of distribution algorithm using bivariate model for scheduling problems",
+    "year": "2014"
+  },
+  "references": {
+    "header": "## References",
+    "content": "Ahmadizar F (2012) A new ant colony algorithm for makespan minimization in permutation flow shops. Comput Ind Eng 63(2):355-361\nBagchi TP (1999) Multiobjective Scheduling by Genetic Algorithms. Kluwer, Boston\nBaker KR (1974) Introduction to sequencing and scheduling. Wiley, New York\nBaker KR (1975) A comparative study of flow-shop algorithms. Oper Res 23(1):62-73\nBaluja S (1994) Population based incremental learning: a method for integrating genetic search based function optimization and competitive learning. Technical Report No. CMU-CS-94-163, Carnegie Mellon University, Pittsburgh, Pennsylvania, USA\nCeberio J, Irurozki E, Mendiburu A, Lozano J (2012) A review on estimation of distribution algorithms in permutation-based combinatorial optimization problems. Prog Artif Intell 1(1):103-117\nChang PC, Chen SH, Fan CY (2008a) Mining gene structures to inject artificial chromosomes for genetic algorithm in single machine scheduling problems. Appl Soft Comput J 8(1):767-777\nChang PC, Chen SH, Fan CY, Chan CL (2008b) Genetic algorithm integrated with artificial chromosomes for multi-objective flow-shop scheduling problems. Appl Math Comput 205(2):550-561\nChang PC, Huang WH, Ting CJ (2010) Self-evolving Artificial Immune System via Developing T and B Cell for Permutation Flow-shop Scheduling Problems. Proceedings of World Academy of Science, Engineering and Technology 65:822-827\nChang PC, Huang WH, Ting CJ (2011) A hybrid genetic-immune algorithm with improved lifespan and elite antigen for flow-shop scheduling problems. Int J Prod Res 49(17):5207-5230\nChen SH, Chen MC (2013) Addressing the advantages of using ensemble probabilistic models in estimation of distribution algorithms for scheduling problems. Int J Prod Econ 141(1):24-33\nChen YM, Chen MC, Chang PC, Chen SH (2012) Extended artificial chromosome genetic algorithm for permutation flowshop scheduling problems. Comput Ind Eng 62(2):536-545\n\nCosta WE, Goldbarg MC, Goldbarg EG (2012) New VNS heuristic for total owtime owshop scheduling problem. Expert Syst Appl 39(9):8149-8161\nDong X, Chen P, Huang HK, Nowak M (2013) A multi-restart iterated local search algorithm for the permutation flow-shop problem minimizing total flow time. Comput Oper Res 40(2):627-632\nGarey MR, Johnson DS (1979) Computers and Intractibility: a Guide to the Theory of NP-Completeness. Freeman, San Francisco\nHarik GR, Lobo FG, Goldberg DE (1999) The compact genetic algorithm. IEEE Trans Evolut Comput 3(4):523-528\nLarrañaga PJ, Lozano A (2002) Estimation of distribution algorithms: A new tool for evolutionary computation. Kluwer Academic Publishers, Boston\nLian Z, Gu X, Jiao B (2006) A similar particle swarm optimization algorithm for permutation flow-shop scheduling to minimize makespan. Appl Math Comput 175(1):773-785\nLiu HC, Gao L, Pan QK (2011) A hybrid particle swarm optimization with estimation of distribution algorithm for solving permutation flow-shop scheduling problem. Expert Syst Appl 38(4):4348-4360l\nPaul TK, Iba H (2002) Linear and Combinatorial Optimizations by Estimation of Distribution Algorithms. 9th MPS Symposium on Evolutionary Computation, IPSJ Symposium, Japan, pp 99-106\nPen QK, Ruiz R (2012) Local search methods for the flow-shop scheduling problem with flowtime minimization. Eur J Oper Res 222(1):3143\nReeves CR (1995) A genetic algorithm for flow-shop sequencing. Comput Oper Res 22(1):5-13\nTasgetiren MF, Pan QK, Suganthan PN, Chen AH (2011) A discrete artificial bee colony algorithm for the total flowtime minimization in permutation flow-shops. Inf Sci 181(1):3459-3475\nTsutsui S (2002) Probabilistic model-building genetic algorithms in permutation representation domain using edge histogram. Lect Notes Comput Sci 2439:224-233\nTsutsui S, Pelikan M, Goldberg DE (2006) Node Histogram vs. Edge Histogram: a Comparison of PMBGAs in Permutation Domains. Missouri Estimation of Distribution Algorithms Laboratory, MEDAL Report No. 2006009, July\nTzeng YR, Chen CL, Chen CL (2012) A hybrid EDA with ACS for solving permutation flow-shop scheduling. Int J Adv Manuf Technol 60:1139-1147\nZhang Q (2004) On Stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm. IEEE Trans Evol Comput 8(1):80-93",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Ahmadizar F (2012) A new ant colony algorithm for makespan minimization in permutation flow shops. Comput Ind Eng 63(2):355-361"
+      },
+      {
+        "ref_id": "2",
+        "text": "Bagchi TP (1999) Multiobjective Scheduling by Genetic Algorithms. Kluwer, Boston"
+      },
+      {
+        "ref_id": "3",
+        "text": "Baker KR (1974) Introduction to sequencing and scheduling. Wiley, New York"
+      },
+      {
+        "ref_id": "4",
+        "text": "Baker KR (1975) A comparative study of flow-shop algorithms. Oper Res 23(1):62-73"
+      },
+      {
+        "ref_id": "5",
+        "text": "Baluja S (1994) Population based incremental learning: a method for integrating genetic search based function optimization and competitive learning. Technical Report No. CMU-CS-94-163, Carnegie Mellon University, Pittsburgh, Pennsylvania, USA"
+      },
+      {
+        "ref_id": "6",
+        "text": "Ceberio J, Irurozki E, Mendiburu A, Lozano J (2012) A review on estimation of distribution algorithms in permutation-based combinatorial optimization problems. Prog Artif Intell 1(1):103-117"
+      },
+      {
+        "ref_id": "7",
+        "text": "Chang PC, Chen SH, Fan CY (2008a) Mining gene structures to inject artificial chromosomes for genetic algorithm in single machine scheduling problems. Appl Soft Comput J 8(1):767-777"
+      },
+      {
+        "ref_id": "8",
+        "text": "Chang PC, Chen SH, Fan CY, Chan CL (2008b) Genetic algorithm integrated with artificial chromosomes for multi-objective flow-shop scheduling problems. Appl Math Comput 205(2):550-561"
+      },
+      {
+        "ref_id": "9",
+        "text": "Chang PC, Huang WH, Ting CJ (2010) Self-evolving Artificial Immune System via Developing T and B Cell for Permutation Flow-shop Scheduling Problems. Proceedings of World Academy of Science, Engineering and Technology 65:822-827"
+      },
+      {
+        "ref_id": "10",
+        "text": "Chang PC, Huang WH, Ting CJ (2011) A hybrid genetic-immune algorithm with improved lifespan and elite antigen for flow-shop scheduling problems. Int J Prod Res 49(17):5207-5230"
+      },
+      {
+        "ref_id": "11",
+        "text": "Chen SH, Chen MC (2013) Addressing the advantages of using ensemble probabilistic models in estimation of distribution algorithms for scheduling problems. Int J Prod Econ 141(1):24-33"
+      },
+      {
+        "ref_id": "12",
+        "text": "Chen YM, Chen MC, Chang PC, Chen SH (2012) Extended artificial chromosome genetic algorithm for permutation flowshop scheduling problems. Comput Ind Eng 62(2):536-545"
+      },
+      {
+        "ref_id": "13",
+        "text": "Costa WE, Goldbarg MC, Goldbarg EG (2012) New VNS heuristic for total owtime owshop scheduling problem. Expert Syst Appl 39(9):8149-8161"
+      },
+      {
+        "ref_id": "14",
+        "text": "Dong X, Chen P, Huang HK, Nowak M (2013) A multi-restart iterated local search algorithm for the permutation flow-shop problem minimizing total flow time. Comput Oper Res 40(2):627-632"
+      },
+      {
+        "ref_id": "15",
+        "text": "Garey MR, Johnson DS (1979) Computers and Intractibility: a Guide to the Theory of NP-Completeness. Freeman, San Francisco"
+      },
+      {
+        "ref_id": "16",
+        "text": "Harik GR, Lobo FG, Goldberg DE (1999) The compact genetic algorithm. IEEE Trans Evolut Comput 3(4):523-528"
+      },
+      {
+        "ref_id": "17",
+        "text": "Larrañaga PJ, Lozano A (2002) Estimation of distribution algorithms: A new tool for evolutionary computation. Kluwer Academic Publishers, Boston"
+      },
+      {
+        "ref_id": "18",
+        "text": "Lian Z, Gu X, Jiao B (2006) A similar particle swarm optimization algorithm for permutation flow-shop scheduling to minimize makespan. Appl Math Comput 175(1):773-785"
+      },
+      {
+        "ref_id": "19",
+        "text": "Liu HC, Gao L, Pan QK (2011) A hybrid particle swarm optimization with estimation of distribution algorithm for solving permutation flow-shop scheduling problem. Expert Syst Appl 38(4):4348-4360l"
+      },
+      {
+        "ref_id": "20",
+        "text": "Paul TK, Iba H (2002) Linear and Combinatorial Optimizations by Estimation of Distribution Algorithms. 9th MPS Symposium on Evolutionary Computation, IPSJ Symposium, Japan, pp 99-106"
+      },
+      {
+        "ref_id": "21",
+        "text": "Pen QK, Ruiz R (2012) Local search methods for the flow-shop scheduling problem with flowtime minimization. Eur J Oper Res 222(1):3143"
+      },
+      {
+        "ref_id": "22",
+        "text": "Reeves CR (1995) A genetic algorithm for flow-shop sequencing. Comput Oper Res 22(1):5-13"
+      },
+      {
+        "ref_id": "23",
+        "text": "Tasgetiren MF, Pan QK, Suganthan PN, Chen AH (2011) A discrete artificial bee colony algorithm for the total flowtime minimization in permutation flow-shops. Inf Sci 181(1):3459-3475"
+      },
+      {
+        "ref_id": "24",
+        "text": "Tsutsui S (2002) Probabilistic model-building genetic algorithms in permutation representation domain using edge histogram. Lect Notes Comput Sci 2439:224-233"
+      },
+      {
+        "ref_id": "25",
+        "text": "Tsutsui S, Pelikan M, Goldberg DE (2006) Node Histogram vs. Edge Histogram: a Comparison of PMBGAs in Permutation Domains. Missouri Estimation of Distribution Algorithms Laboratory, MEDAL Report No. 2006009, July"
+      },
+      {
+        "ref_id": "26",
+        "text": "Tzeng YR, Chen CL, Chen CL (2012) A hybrid EDA with ACS for solving permutation flow-shop scheduling. Int J Adv Manuf Technol 60:1139-1147"
+      },
+      {
+        "ref_id": "27",
+        "text": "Zhang Q (2004) On Stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm. IEEE Trans Evol Comput 8(1):80-93"
+      }
+    ],
+    "reference_count": 27,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Probability Matrix",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$\\mathbf{P}_{1}$",
+          "$\\mathbf{P}_{2}$",
+          "$\\mathbf{P}_{3}$",
+          "$\\mathbf{P}_{4}$",
+          "$\\mathbf{P}_{5}$"
+        ],
+        [
+          "$J_{1}$",
+          "$1 / 5$",
+          "$1 / 5$",
+          "$3 / 5$",
+          0,
+          0
+        ],
+        [
+          "$J_{2}$",
+          0,
+          "$1 / 5$",
+          0,
+          "$4 / 5$",
+          0
+        ],
+        [
+          "$J_{3}$",
+          "$1 / 5$",
+          0,
+          "$2 / 5$",
+          0,
+          "$2 / 5$"
+        ],
+        [
+          "$J_{4}$",
+          0,
+          "$3 / 5$",
+          0,
+          "$1 / 5$",
+          "$1 / 5$"
+        ],
+        [
+          "$J_{5}$",
+          "$3 / 5$",
+          0,
+          0,
+          0,
+          "$2 / 5$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Position,",
+        "Position,",
+        "Position,",
+        "Position,",
+        "Position,"
+      ],
+      "rows": [
+        [
+          "Job,",
+          2.1,
+          3.1,
+          1.1,
+          2.1,
+          2.1
+        ],
+        [
+          "Job,",
+          2.1,
+          1.1,
+          3.1,
+          2.1,
+          2.1
+        ],
+        [
+          "Job,",
+          2.1,
+          2.1,
+          1.1,
+          3.1,
+          2.1
+        ],
+        [
+          "Job,",
+          1.1,
+          3.1,
+          1.1,
+          2.1,
+          3.1
+        ],
+        [
+          "Job,",
+          3.1,
+          1.1,
+          4.1,
+          1.1,
+          1.1
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Performance comparison on Taillard's instances",
+      "headers": [
+        "Ins.",
+        "opt",
+        "BBEDA",
+        "",
+        "HGIA",
+        "",
+        "PSO-Lian",
+        "",
+        "AC2GA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Min",
+          "Error_rate (\\%)",
+          "Min",
+          "Error_rate (\\%)",
+          "Min",
+          "Error_rate (\\%)",
+          "Min",
+          "Error_rate (\\%)"
+        ],
+        [
+          5,
+          1235,
+          1235,
+          0.0,
+          1235,
+          0.0,
+          1235,
+          0.73,
+          1235,
+          0.0
+        ],
+        [
+          10,
+          1108,
+          1108,
+          0.0,
+          1108,
+          0.0,
+          1108,
+          0.0,
+          1108,
+          0.0
+        ],
+        [
+          20,
+          1591,
+          1595,
+          0.25,
+          1598,
+          0.44,
+          1617,
+          0.57,
+          1617,
+          1.63
+        ],
+        [
+          30,
+          2178,
+          2179,
+          0.05,
+          2186,
+          0.37,
+          2196,
+          0.73,
+          2196,
+          0.83
+        ],
+        [
+          50,
+          3065,
+          3091,
+          0.85,
+          3111,
+          1.5,
+          3171,
+          3.52,
+          3171,
+          3.46
+        ],
+        [
+          60,
+          3696,
+          3836,
+          3.79,
+          3823,
+          3.44,
+          3910,
+          5.98,
+          3910,
+          5.79
+        ],
+        [
+          70,
+          5322,
+          5322,
+          0.0,
+          5328,
+          0.11,
+          5324,
+          0.38,
+          5324,
+          0.04
+        ],
+        [
+          80,
+          5845,
+          5845,
+          0.0,
+          5848,
+          0.05,
+          5893,
+          0.99,
+          5893,
+          0.82
+        ],
+        [
+          "Avg.",
+          "",
+          "",
+          0.62,
+          "",
+          0.74,
+          "",
+          1.61,
+          "",
+          1.57
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 10
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 ANOVA results on the error rate of the final solutions obtained by the algorithms listed in Table 1 on the 8 instances",
+      "headers": [
+        "Source",
+        "DF",
+        "SS",
+        "MS",
+        "F",
+        "P"
+      ],
+      "rows": [
+        [
+          "Algorithms",
+          3,
+          "$6.745 \\times 10^{-4}$",
+          "$2.248 \\times 10^{-4}$",
+          6.87,
+          0.002
+        ],
+        [
+          "Instance",
+          7,
+          "$7.4926 \\times 10^{-3}$",
+          "$1.0704 \\times 10^{-3}$",
+          32.73,
+          0.0
+        ],
+        [
+          "Error",
+          21,
+          "$6.868 \\times 10^{-4}$",
+          "$3.27 \\times 10^{-5}$",
+          "",
+          ""
+        ],
+        [
+          "Total",
+          31,
+          "$8.8539 \\times 10^{-3}$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Performance comparison on Reeves's instances",
+      "headers": [
+        "Ins.",
+        "n, m",
+        "opt",
+        "BBEDA",
+        "",
+        "SGA",
+        "",
+        "AC2GA",
+        "",
+        "HGIA",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "Min",
+          "Error_rate (\\%)",
+          "Min",
+          "Error_rate (\\%)",
+          "Min",
+          "Error_rate (\\%)",
+          "Min",
+          "Error_rate (\\%)"
+        ],
+        [
+          1,
+          205,
+          1247,
+          1247,
+          0.0,
+          1249,
+          0.16,
+          1249,
+          0.16,
+          1247,
+          0.0
+        ],
+        [
+          3,
+          205,
+          1109,
+          1109,
+          0.0,
+          1111,
+          0.18,
+          1109,
+          0.0,
+          1109,
+          0.0
+        ],
+        [
+          5,
+          205,
+          1242,
+          1242,
+          0.0,
+          1245,
+          0.24,
+          1245,
+          0.24,
+          1245,
+          0.24
+        ],
+        [
+          7,
+          2010,
+          1566,
+          1566,
+          0.0,
+          1583,
+          1.09,
+          1566,
+          0.0,
+          1566,
+          0.0
+        ],
+        [
+          9,
+          2010,
+          1537,
+          1537,
+          0.0,
+          1565,
+          1.82,
+          1537,
+          0.0,
+          1537,
+          0.0
+        ],
+        [
+          11,
+          2010,
+          1431,
+          1431,
+          0.0,
+          1456,
+          1.75,
+          1431,
+          0.0,
+          1431,
+          0.0
+        ],
+        [
+          13,
+          2015,
+          1930,
+          1930,
+          0.0,
+          1970,
+          2.07,
+          1930,
+          0.0,
+          1932,
+          0.1
+        ],
+        [
+          15,
+          2015,
+          1950,
+          1950,
+          0.0,
+          1990,
+          2.05,
+          1951,
+          0.05,
+          1951,
+          0.05
+        ],
+        [
+          17,
+          2015,
+          1902,
+          1902,
+          0.0,
+          1960,
+          3.05,
+          1902,
+          0.0,
+          1924,
+          1.16
+        ],
+        [
+          19,
+          3010,
+          2093,
+          2099,
+          0.29,
+          2162,
+          3.3,
+          2099,
+          0.29,
+          2103,
+          0.48
+        ],
+        [
+          21,
+          3010,
+          2017,
+          2036,
+          0.94,
+          2064,
+          2.33,
+          2021,
+          0.2,
+          2046,
+          1.44
+        ],
+        [
+          23,
+          3010,
+          2011,
+          2020,
+          0.45,
+          2075,
+          3.18,
+          2021,
+          0.5,
+          2020,
+          0.45
+        ],
+        [
+          25,
+          3015,
+          2513,
+          2530,
+          0.68,
+          2623,
+          4.38,
+          2515,
+          0.08,
+          2530,
+          0.68
+        ],
+        [
+          27,
+          3015,
+          2373,
+          2379,
+          0.25,
+          2461,
+          3.71,
+          2387,
+          0.59,
+          2394,
+          0.88
+        ],
+        [
+          29,
+          3015,
+          2287,
+          2292,
+          0.22,
+          2392,
+          4.59,
+          2289,
+          0.09,
+          2301,
+          0.61
+        ],
+        [
+          31,
+          5010,
+          3045,
+          3056,
+          0.36,
+          3207,
+          5.32,
+          3101,
+          1.84,
+          3077,
+          1.05
+        ],
+        [
+          33,
+          5010,
+          3114,
+          3114,
+          0.0,
+          3162,
+          1.54,
+          3131,
+          0.55,
+          3115,
+          0.03
+        ],
+        [
+          35,
+          5010,
+          3277,
+          3277,
+          0.0,
+          3280,
+          0.09,
+          3277,
+          0.0,
+          3277,
+          0.0
+        ],
+        [
+          37,
+          7020,
+          4951,
+          5111,
+          3.23,
+          5251,
+          6.06,
+          5190,
+          4.83,
+          5084,
+          2.69
+        ],
+        [
+          39,
+          7020,
+          5087,
+          5189,
+          2.01,
+          5301,
+          4.21,
+          5285,
+          3.89,
+          5150,
+          1.24
+        ],
+        [
+          41,
+          7020,
+          4960,
+          5115,
+          4.26,
+          5263,
+          6.11,
+          5164,
+          4.11,
+          5097,
+          2.76
+        ],
+        [
+          "Avg.",
+          "",
+          "",
+          "",
+          0.6,
+          "",
+          2.73,
+          "",
+          0.83,
+          "",
+          0.66
+        ]
+      ],
+      "row_count": 23,
+      "column_count": 11
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Performance comparison on Taillard's instances based on Chen and Chen (2013)",
+      "headers": [
+        "Instance",
+        "EHBSA",
+        "EHBSA",
+        "NHBSA",
+        "NHBSA",
+        "PRE",
+        "JED",
+        "SG",
+        "eSG",
+        "BBE"
+      ],
+      "rows": [
+        [
+          "",
+          "WT",
+          "WO",
+          "WT",
+          "WO",
+          "DA",
+          "A",
+          "GA",
+          "GA",
+          "DA"
+        ],
+        [
+          1,
+          0.3,
+          1.41,
+          1.27,
+          1.49,
+          1.2,
+          1.16,
+          1.2,
+          1.16,
+          0.02
+        ],
+        [
+          2,
+          0.05,
+          0.49,
+          0.27,
+          0.31,
+          0.88,
+          0.49,
+          0.46,
+          0.36,
+          0.25
+        ],
+        [
+          3,
+          1.3,
+          3.04,
+          0.71,
+          1.23,
+          2.04,
+          1.73,
+          1.19,
+          0.5,
+          0.0
+        ],
+        [
+          4,
+          0.19,
+          1.81,
+          0.22,
+          1.17,
+          0.78,
+          0.7,
+          0.9,
+          0.48,
+          0.21
+        ],
+        [
+          5,
+          0.51,
+          1.17,
+          0.96,
+          1.17,
+          0.82,
+          1.21,
+          0.92,
+          0.7,
+          0.24
+        ],
+        [
+          6,
+          0.0,
+          1.26,
+          0.53,
+          1.13,
+          1.06,
+          1.54,
+          1.36,
+          1,
+          0.14
+        ],
+        [
+          11,
+          0.53,
+          1.52,
+          0.58,
+          1.11,
+          0.95,
+          0.56,
+          0.82,
+          0.71,
+          0.27
+        ],
+        [
+          12,
+          0.88,
+          3.09,
+          0.81,
+          1.16,
+          1.24,
+          1.1,
+          0.53,
+          0.28,
+          0.77
+        ],
+        [
+          13,
+          1.1,
+          2.08,
+          1.18,
+          1.77,
+          1.53,
+          1.5,
+          1.18,
+          0.82,
+          0.83
+        ],
+        [
+          14,
+          0.37,
+          2.27,
+          0.65,
+          1.26,
+          1.31,
+          1.15,
+          0.77,
+          0.87,
+          0.34
+        ],
+        [
+          15,
+          0.44,
+          0.99,
+          0.58,
+          1.23,
+          0.98,
+          0.93,
+          0.84,
+          0.66,
+          0.75
+        ],
+        [
+          16,
+          0.55,
+          1.56,
+          0.73,
+          1.32,
+          0.87,
+          1.5,
+          0.9,
+          0.61,
+          0.78
+        ],
+        [
+          41,
+          3.5,
+          9.18,
+          3.74,
+          4.51,
+          3.57,
+          3.61,
+          2.95,
+          3,
+          2.39
+        ],
+        [
+          42,
+          3.52,
+          8.97,
+          3.88,
+          4.98,
+          2.34,
+          3.3,
+          3.16,
+          2.75,
+          1.66
+        ],
+        [
+          43,
+          4.16,
+          10.68,
+          4.29,
+          4.25,
+          3.38,
+          3.9,
+          3.13,
+          2.74,
+          2.47
+        ],
+        [
+          44,
+          1.81,
+          7.2,
+          1.72,
+          1.66,
+          1.3,
+          1.98,
+          1.4,
+          1.05,
+          0.32
+        ],
+        [
+          45,
+          3.72,
+          9.34,
+          3.58,
+          2.42,
+          3.09,
+          3.84,
+          3.29,
+          2.15,
+          1.64
+        ],
+        [
+          46,
+          2.69,
+          7.47,
+          2.9,
+          4.22,
+          2.36,
+          3,
+          2.75,
+          2.35,
+          0.99
+        ],
+        [
+          81,
+          8.18,
+          14.51,
+          7.84,
+          8.8,
+          5.53,
+          5.85,
+          5.96,
+          5.46,
+          3.81
+        ],
+        [
+          82,
+          6.51,
+          13.05,
+          5.84,
+          6.35,
+          4.02,
+          4.05,
+          4.02,
+          3.37,
+          3.6
+        ],
+        [
+          83,
+          6.46,
+          12.26,
+          5.81,
+          6.44,
+          3.77,
+          3.91,
+          3.81,
+          3.29,
+          3.28
+        ],
+        [
+          84,
+          5.82,
+          11.98,
+          5.15,
+          5.32,
+          2.95,
+          3.67,
+          3.44,
+          3.19,
+          2.62
+        ],
+        [
+          85,
+          6.8,
+          12.45,
+          6.52,
+          7.4,
+          3.97,
+          4.46,
+          4.4,
+          4.05,
+          3.27
+        ],
+        [
+          86,
+          6.81,
+          12.43,
+          6.68,
+          7.45,
+          4.27,
+          4.58,
+          4.41,
+          3.99,
+          3.3
+        ],
+        [
+          "Avg.",
+          2.76,
+          6.26,
+          2.77,
+          3.26,
+          2.26,
+          2.49,
+          2.24,
+          1.9,
+          1.42
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 10
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 ANOVA results on the error rate of the final solutions obtained by the algorithms listed in Table 4 on the 24 Instances",
+      "headers": [
+        "Source",
+        "DF",
+        "SS",
+        "MS",
+        "F",
+        "P"
+      ],
+      "rows": [
+        [
+          "Algorithms",
+          8,
+          "$3.7459 \\times 10^{-2}$",
+          "$4.6823 \\times 10^{-3}$",
+          30.71,
+          0.0
+        ],
+        [
+          "Instance",
+          23,
+          "$9.8077 \\times 10^{-2}$",
+          "$4.2642 \\times 10^{-3}$",
+          27.96,
+          0.0
+        ],
+        [
+          "Error",
+          184,
+          "$2.8058 \\times 10^{-2}$",
+          "$1.525 \\times 10^{-4}$",
+          "",
+          ""
+        ],
+        [
+          "Total",
+          215,
+          "$1.63594 \\times 10^{-1}$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Average error rate comparison on Taillard's instances with AC1 or AC2",
+      "headers": [
+        "Instance",
+        "n, m",
+        "EDA (\\%)",
+        "BBEDA-AC1 (\\%)",
+        "BBEDA-AC2 (\\%)"
+      ],
+      "rows": [
+        [
+          5,
+          205,
+          4.62,
+          1.18,
+          0.9
+        ],
+        [
+          10,
+          205,
+          6.6,
+          2.02,
+          2.37
+        ],
+        [
+          20,
+          2010,
+          6.74,
+          2.3,
+          3.28
+        ],
+        [
+          30,
+          2020,
+          7.63,
+          3.19,
+          3.93
+        ],
+        [
+          50,
+          5010,
+          10.84,
+          5.24,
+          5.25
+        ],
+        [
+          60,
+          5020,
+          15.42,
+          9.22,
+          10.02
+        ],
+        [
+          70,
+          1005,
+          3.76,
+          1.29,
+          0.97
+        ],
+        [
+          80,
+          10010,
+          7.08,
+          5.22,
+          4.9
+        ],
+        [
+          "Avg.",
+          "",
+          7.84,
+          3.71,
+          3.95
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Min error rate comparison on Taillard's instances",
+      "headers": [
+        "Instance",
+        "n, m",
+        "EDA (\\%)",
+        "BBEDA-AC1 (\\%)",
+        "BBEDA-AC2 (\\%)"
+      ],
+      "rows": [
+        [
+          5,
+          205,
+          3.24,
+          0.73,
+          0.49
+        ],
+        [
+          10,
+          205,
+          4.96,
+          0.63,
+          1.08
+        ],
+        [
+          20,
+          2010,
+          5.47,
+          1.51,
+          1.7
+        ],
+        [
+          30,
+          2020,
+          5.46,
+          1.61,
+          2.62
+        ],
+        [
+          50,
+          5010,
+          10.21,
+          3.88,
+          3.46
+        ],
+        [
+          60,
+          5020,
+          14.1,
+          5.68,
+          6.85
+        ],
+        [
+          70,
+          1005,
+          3.31,
+          0.45,
+          0.38
+        ],
+        [
+          80,
+          10010,
+          6.14,
+          3.83,
+          2.86
+        ],
+        [
+          "Avg.",
+          "",
+          6.61,
+          2.29,
+          2.43
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 Performance comparison on Taillard's instances with local search",
+      "headers": [
+        "Instance",
+        "n, m",
+        "EDA+LS (\\%)",
+        "BBEDA- <br> AC1+LS (\\%)",
+        "BBEDA- <br> AC2+LS (\\%)"
+      ],
+      "rows": [
+        [
+          5,
+          205,
+          0.75,
+          0.55,
+          0.58
+        ],
+        [
+          10,
+          205,
+          0.33,
+          0.23,
+          0.15
+        ],
+        [
+          20,
+          2010,
+          1.76,
+          2.06,
+          1.45
+        ],
+        [
+          30,
+          2020,
+          3.12,
+          1.77,
+          2.15
+        ],
+        [
+          50,
+          5010,
+          2.59,
+          2.7,
+          2.4
+        ],
+        [
+          60,
+          5020,
+          6.76,
+          6.55,
+          7.26
+        ],
+        [
+          70,
+          1005,
+          0.15,
+          0.18,
+          0.18
+        ],
+        [
+          80,
+          10010,
+          0.67,
+          0.66,
+          0.66
+        ],
+        [
+          "Avg.",
+          "",
+          2.02,
+          1.84,
+          1.85
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 Min error rate comparison on Taillard's instance with local search",
+      "headers": [
+        "Instance",
+        "n, m",
+        "EDA+LS <br> $(\\%)$",
+        "BBEDA- <br> AC1+LS (\\%)",
+        "BBEDA- <br> AC2+LS (\\%)"
+      ],
+      "rows": [
+        [
+          5,
+          205,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          10,
+          205,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          20,
+          2010,
+          1.13,
+          1.19,
+          0.88
+        ],
+        [
+          30,
+          2020,
+          1.7,
+          0.41,
+          0.83
+        ],
+        [
+          50,
+          5010,
+          1.57,
+          1.89,
+          1.73
+        ],
+        [
+          60,
+          5020,
+          4.98,
+          4.46,
+          5.87
+        ],
+        [
+          70,
+          1005,
+          0.09,
+          0.11,
+          0.0
+        ],
+        [
+          80,
+          10010,
+          0.21,
+          0.14,
+          0.53
+        ],
+        [
+          "Avg.",
+          "",
+          1.21,
+          1.03,
+          1.23
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    }
+  ]
+}

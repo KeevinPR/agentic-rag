@@ -1,0 +1,1126 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Estimation of Distribution Algorithm for Energy-Efficient Scheduling in Turning Processes.md",
+    "filename": "Estimation of Distribution Algorithm for Energy-Efficient Scheduling in Turning Processes.md",
+    "title": "Estimation of Distribution Algorithm for Energy-Efficient Scheduling in Turning Processes",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$i$",
+        "Index of jobs, $i \\in\\{1,2 \\cdots, n\\}$"
+      ],
+      "rows": [
+        [
+          "$j$",
+          "Index of stages, $j \\in\\{1,2 \\cdots, S\\}$"
+        ],
+        [
+          "$k$",
+          "Index of machines, $k \\in\\{1,2, \\cdots, M\\}$"
+        ],
+        [
+          "$t$",
+          "Index of event points, $t \\in\\{1,2, \\cdots, n\\}$"
+        ],
+        [
+          "$l$",
+          "Index of spindle speed levels, $l \\in\\{1,2, \\cdots, \\mathrm{~L}\\}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$K_{j}$",
+        "Set of machines in stage $j$"
+      ],
+      "rows": [
+        [
+          "$N_{i k}$",
+          "Set of spindle speed levels where job $i$ can be processed on machine $k$"
+        ],
+        [
+          "$M v$",
+          "Positive constant large enough"
+        ],
+        [
+          "$n_{k l}^{s}$",
+          "Spindle speed of machine $k$ at level $l$"
+        ],
+        [
+          "$V_{i k}^{v}$",
+          "Total removed volume for $O_{i k}$"
+        ],
+        [
+          "$a p_{i k}$",
+          "Depth of cutting for $O_{i k}$"
+        ],
+        [
+          "$f_{i k}$",
+          "Feed rate for $O_{i k}$"
+        ],
+        [
+          "$d_{i}^{0}$",
+          "Semi-product diameter for $O_{i k}$"
+        ],
+        [
+          "$C_{i k}^{V}$",
+          "Coefficients of cutting force for $O_{i k}$"
+        ],
+        [
+          "$K_{l k}^{V}$",
+          "Coefficients of cutting force for $O_{i k}$"
+        ],
+        [
+          "$E_{k l}^{S}$",
+          "Power consumption for starting machine for $O_{i k}$"
+        ],
+        [
+          "$E_{k l}^{D}$",
+          "Power consumption for stopping machine for $O_{i k}$"
+        ],
+        [
+          "$P_{k l}^{0}$",
+          "Power of machine $k$ running without load at speed level $l$"
+        ],
+        [
+          "$T_{k k}^{d}$",
+          "Transport time between machine $k$ and machine $k^{\\prime}$"
+        ],
+        [
+          "$b_{k}^{m}$",
+          "Additional load loss coefficient of machine $k$"
+        ],
+        [
+          "$a$",
+          "Weight of energy consumption"
+        ],
+        [
+          "$T C E_{0}$",
+          "Normalizing parameter of energy consumption"
+        ],
+        [
+          "$C \\max _{0}$",
+          "Normalizing parameter of makespan"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 2
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$S_{k t}$",
+        "Start time of the event $t$ at machine $k$"
+      ],
+      "rows": [
+        [
+          "$F_{k t}$",
+          "Finish time of the event $t$ at machine $k$"
+        ],
+        [
+          "Cmax",
+          "Maximum completion time, i.e., makespan"
+        ],
+        [
+          "TCE",
+          "Energy consumption"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Orthogonal experiment of EDA.",
+      "headers": [
+        "Combination",
+        "Level",
+        "",
+        "",
+        "AOV"
+      ],
+      "rows": [
+        [
+          "",
+          "Psize",
+          "$\\eta \\%$",
+          "$a^{x}$",
+          ""
+        ],
+        [
+          1,
+          80,
+          30,
+          0.1,
+          0.9239
+        ],
+        [
+          2,
+          30,
+          20,
+          0.3,
+          0.9237
+        ],
+        [
+          3,
+          80,
+          10,
+          0.3,
+          0.9229
+        ],
+        [
+          4,
+          30,
+          30,
+          0.2,
+          0.9243
+        ],
+        [
+          5,
+          50,
+          30,
+          0.3,
+          0.9239
+        ],
+        [
+          6,
+          80,
+          20,
+          0.2,
+          0.9239
+        ],
+        [
+          7,
+          50,
+          20,
+          0.1,
+          0.9233
+        ],
+        [
+          8,
+          50,
+          10,
+          0.2,
+          0.923
+        ],
+        [
+          9,
+          30,
+          10,
+          0.1,
+          0.9232
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 compares the results obtained by the proposed EDA and that solved by GAMS/Dicopt solver for the MINLP model. It shows that, for small-scale problems, Dicopt solver outperforms the proposed EDA in both objectives during the acceptable time. For medium scale cases, the Dicopt solver takes much more time than the proposed EDA, but it produces a tiny improvement in the weighted target. For large-scale cases, the proposed EDA is absolutely superior over the Dicopt solver which cannot provide a feasible solution for the limited memory of the computer.",
+      "headers": [
+        "Solving <br> Methods",
+        "Small Scale",
+        "",
+        "",
+        "",
+        "Medium Scale",
+        "",
+        "",
+        "",
+        "Large Scale",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Cmax <br> (h)",
+          "TEC <br> (MJ)",
+          "Z (\\%)",
+          "Time (s)",
+          "Cmax <br> (h)",
+          "TEC <br> (MJ)",
+          "Z (\\%)",
+          "Time (s)",
+          "Cmax <br> (h)",
+          "TEC <br> (MJ)",
+          "Z (\\%)",
+          "Time (s)"
+        ],
+        [
+          "MINLP",
+          0.91,
+          23.4,
+          83.54,
+          0.66,
+          4.22,
+          275.33,
+          92.47,
+          "$4.2 \\times 10^{3}$",
+          "out of memory",
+          "",
+          "",
+          "$>7.2 \\times 10^{4}$"
+        ],
+        [
+          "EDA",
+          0.92,
+          23.4,
+          83.71,
+          10.0,
+          4.05,
+          280.08,
+          93.13,
+          80.0,
+          5.56,
+          1223.2,
+          90.57,
+          180.0
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 13
+    },
+    {
+      "table_number": "3",
+      "table_title": "Two objectives under different weights.",
+      "headers": [
+        "Weights",
+        "TEC (MJ)",
+        "Cmax (h)"
+      ],
+      "rows": [
+        [
+          0.8,
+          1223.2,
+          5.56
+        ],
+        [
+          0.6,
+          1228.5,
+          5.54
+        ],
+        [
+          0.5,
+          1234.0,
+          5.5
+        ],
+        [
+          0.4,
+          1240.6,
+          5.45
+        ],
+        [
+          0.2,
+          1243.1,
+          5.43
+        ],
+        [
+          0,
+          1248.5,
+          5.41
+        ],
+        [
+          "Relative difference",
+          "$2.03 \\%$",
+          "$2.76 \\%$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "4",
+      "table_title": "Descriptive statistics.",
+      "headers": [
+        "Opt <br> Goals",
+        "Opt <br> Schemes",
+        "Weighted Objectives",
+        "",
+        "Cmax",
+        "",
+        "TEC",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Mean (\\%)",
+          "Std. Deviation",
+          "Mean (s)",
+          "Std. Deviation",
+          "Mean (KJ)",
+          "Std. Deviation"
+        ],
+        [
+          "Obj_C",
+          "Opt_S",
+          0.9182,
+          0.0009,
+          20138.03,
+          114.48,
+          1088720.23,
+          595.05
+        ],
+        [
+          "",
+          "Opt_o",
+          0.9766,
+          0.0009,
+          24327.1,
+          115.38,
+          1127157.8,
+          808.95
+        ],
+        [
+          "",
+          "Total",
+          0.9474,
+          0.0293,
+          22232.57,
+          2115.28,
+          1107939.02,
+          19393.75
+        ],
+        [
+          "Obj_e",
+          "Opt_S",
+          1.5976,
+          0.0043,
+          112651.53,
+          570.03,
+          1071912.0,
+          0.0
+        ],
+        [
+          "",
+          "Opt_o",
+          1.7903,
+          0.0036,
+          134722.73,
+          475.01,
+          1111200.0,
+          0.0
+        ],
+        [
+          "",
+          "Total",
+          1.694,
+          0.0972,
+          123687.13,
+          11140.88,
+          1091556.0,
+          19809.78
+        ],
+        [
+          "Obj_t",
+          "Opt_S",
+          0.9212,
+          0.0015,
+          20388.53,
+          172.42,
+          1090310.33,
+          617.99
+        ],
+        [
+          "",
+          "Opt_o",
+          0.9794,
+          0.002,
+          24503.33,
+          236.15,
+          1129263.87,
+          1082.78
+        ],
+        [
+          "",
+          "Total",
+          0.9503,
+          0.0294,
+          22445.93,
+          2084.87,
+          1109787.1,
+          19660.57
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 8
+    },
+    {
+      "table_number": "5",
+      "table_title": "Multivariate tests of weighted objectives.",
+      "headers": [
+        "",
+        "Effect",
+        "Value",
+        "F",
+        "Hypothesis <br> df",
+        "Error df",
+        "Sig.",
+        "Partial Eta <br> Squared"
+      ],
+      "rows": [
+        [
+          "Objs",
+          "Pillai's Trace",
+          1.0,
+          1050284.622,
+          2.0,
+          57.0,
+          0.0,
+          1.0
+        ],
+        [
+          "",
+          "Wilks' Lambda",
+          0.0,
+          1050284.622,
+          2.0,
+          57.0,
+          0.0,
+          1.0
+        ],
+        [
+          "",
+          "Hotelling's Trace",
+          36852.092,
+          1050284.622,
+          2.0,
+          57.0,
+          0.0,
+          1.0
+        ],
+        [
+          "",
+          "Roy's Largest Root",
+          36852.092,
+          1050284.622,
+          2.0,
+          57.0,
+          0.0,
+          1.0
+        ],
+        [
+          "Objs * <br> methods",
+          "Pillai's Trace",
+          0.997,
+          8518.901,
+          2.0,
+          57.0,
+          0.0,
+          0.997
+        ],
+        [
+          "",
+          "Wilks' Lambda",
+          0.003,
+          8518.901,
+          2.0,
+          57.0,
+          0.0,
+          0.997
+        ],
+        [
+          "",
+          "Hotelling's Trace",
+          298.909,
+          8518.901,
+          2.0,
+          57.0,
+          0.0,
+          0.997
+        ],
+        [
+          "",
+          "Roy's Largest Root",
+          298.909,
+          8518.901,
+          2.0,
+          57.0,
+          0.0,
+          0.997
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 8
+    },
+    {
+      "table_number": "6",
+      "table_title": "Between-subjects effects on weighted objectives.",
+      "headers": [
+        "Source",
+        "Type III Sum <br> of Squares",
+        "df",
+        "Mean Square",
+        "F",
+        "Sig.",
+        "Partial Eta <br> Squared"
+      ],
+      "rows": [
+        [
+          "Intercept",
+          257.993,
+          1,
+          257.993,
+          "$36,964,741.896$",
+          0.0,
+          1.0
+        ],
+        [
+          "Methods",
+          0.478,
+          1,
+          0.478,
+          "$68,527.167$",
+          0.0,
+          0.999
+        ],
+        [
+          "Error",
+          0.0,
+          58,
+          "$6.979 \\times 10^{-6}$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A1. Parameters of machine.",
+      "headers": [
+        "Level",
+        "Speed (rpm)",
+        "$E^{\\mathbf{s}}(\\mathrm{J})$",
+        "$E^{\\mathbf{D}}(\\mathrm{J})$",
+        "$T^{\\mathbf{s}}(\\mathbf{s})$",
+        "$T^{\\mathbf{D}}(\\mathbf{s})$",
+        "$P^{\\mathbf{D}}(\\mathbf{w})$"
+      ],
+      "rows": [
+        [
+          1,
+          31.5,
+          16.9,
+          8,
+          0.02,
+          0.01,
+          855
+        ],
+        [
+          2,
+          45,
+          47.3,
+          43,
+          0.05,
+          0.05,
+          950
+        ],
+        [
+          3,
+          63,
+          212,
+          203,
+          0.2,
+          0.19,
+          1060
+        ],
+        [
+          4,
+          90,
+          1017,
+          419,
+          1,
+          0.4,
+          1010
+        ],
+        [
+          5,
+          125,
+          1569,
+          453,
+          1.73,
+          0.5,
+          910
+        ],
+        [
+          6,
+          180,
+          2122,
+          463,
+          2.38,
+          0.52,
+          890
+        ],
+        [
+          7,
+          250,
+          3179,
+          527,
+          3.49,
+          0.58,
+          910
+        ],
+        [
+          8,
+          355,
+          4065,
+          547,
+          4.45,
+          0.59,
+          920
+        ],
+        [
+          9,
+          500,
+          4800,
+          576,
+          4.92,
+          0.61,
+          975
+        ],
+        [
+          10,
+          710,
+          6003,
+          696,
+          5.61,
+          0.65,
+          1070
+        ],
+        [
+          11,
+          1000,
+          7811,
+          813,
+          6.9,
+          0.72,
+          1115
+        ],
+        [
+          12,
+          1400,
+          9809,
+          837,
+          8.67,
+          0.74,
+          1130
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A2. Transport time (s).",
+      "headers": [
+        "Time",
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "rows": [
+        [
+          1,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        [
+          2,
+          6,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          3,
+          7,
+          6,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          4,
+          8,
+          7,
+          6,
+          5,
+          6,
+          7
+        ],
+        [
+          5,
+          9,
+          8,
+          7,
+          6,
+          5,
+          6
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A3. Parameters of rolls.",
+      "headers": [
+        "Type",
+        "Material",
+        "Number",
+        "D (mm)",
+        "Length (mm)",
+        "$d^{\\mathbf{0}}(\\mathbf{m m})$",
+        "$t^{I}(\\mathbf{m i n})$",
+        "$t^{\\mathbf{o}}(\\mathbf{m i n})$"
+      ],
+      "rows": [
+        [
+          1,
+          12,
+          8,
+          66,
+          1550,
+          72,
+          0.65,
+          0.43
+        ],
+        [
+          2,
+          12,
+          8,
+          76,
+          1620,
+          83,
+          0.72,
+          0.48
+        ],
+        [
+          3,
+          12,
+          6,
+          85,
+          1750,
+          92,
+          1.05,
+          0.7
+        ],
+        [
+          4,
+          451,
+          6,
+          140,
+          1526,
+          150,
+          1.15,
+          0.77
+        ],
+        [
+          5,
+          451,
+          6,
+          236,
+          1758,
+          248,
+          1.42,
+          0.95
+        ],
+        [
+          6,
+          451,
+          6,
+          246,
+          1846,
+          260,
+          1.5,
+          1.0
+        ],
+        [
+          7,
+          15,
+          4,
+          202,
+          1550,
+          213,
+          1.32,
+          0.88
+        ],
+        [
+          8,
+          15,
+          4,
+          336,
+          1620,
+          350,
+          1.85,
+          1.23
+        ],
+        [
+          9,
+          "$45^{\\text {a }}$ steel",
+          2,
+          425,
+          1720,
+          442,
+          2.08,
+          1.39
+        ],
+        [
+          10,
+          "$45^{\\text {a }}$ steel",
+          2,
+          550,
+          1720,
+          570,
+          2.35,
+          1.57
+        ],
+        [
+          11,
+          328,
+          4,
+          360,
+          1660,
+          375,
+          1.94,
+          1.29
+        ],
+        [
+          12,
+          40,
+          4,
+          430,
+          1520,
+          446,
+          2.02,
+          1.35
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 8
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A4. Parameters of rough turning.",
+      "headers": [
+        "Type",
+        "ap (mm)",
+        "$f(\\mathrm{~mm} / \\mathrm{r})$",
+        "$v^{*}(\\mathrm{~m} / \\mathrm{min})$",
+        "Optional Level"
+      ],
+      "rows": [
+        [
+          1,
+          2.75,
+          0.3,
+          140.3,
+          910
+        ],
+        [
+          2,
+          3.25,
+          0.3,
+          136.8,
+          9
+        ],
+        [
+          3,
+          3.25,
+          0.3,
+          136.8,
+          9
+        ],
+        [
+          4,
+          4.7,
+          0.4,
+          95.4,
+          67
+        ],
+        [
+          5,
+          5.6,
+          0.5,
+          85.9,
+          45
+        ],
+        [
+          6,
+          6.6,
+          0.5,
+          83.8,
+          45
+        ],
+        [
+          7,
+          5.1,
+          0.5,
+          106.5,
+          56
+        ],
+        [
+          8,
+          6.5,
+          0.6,
+          96.4,
+          4
+        ],
+        [
+          9,
+          7.9,
+          0.7,
+          88.7,
+          3
+        ],
+        [
+          10,
+          9.4,
+          0.8,
+          81.9,
+          2
+        ],
+        [
+          11,
+          7,
+          0.6,
+          95.3,
+          34
+        ],
+        [
+          12,
+          7.5,
+          0.6,
+          94.3,
+          3
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": "Table A5. Parameters of fine turning.",
+      "headers": [
+        "Type",
+        "ap (mm)",
+        "$f(\\mathrm{~mm} / \\mathrm{r})$",
+        "$v^{*}(\\mathrm{~m} / \\mathrm{min})$",
+        "Optional Level"
+      ],
+      "rows": [
+        [
+          1,
+          0.25,
+          0.1,
+          250.4,
+          1112
+        ],
+        [
+          2,
+          0.25,
+          0.1,
+          250.4,
+          11
+        ],
+        [
+          3,
+          0.25,
+          0.1,
+          250.4,
+          11
+        ],
+        [
+          4,
+          0.3,
+          0.15,
+          224.6,
+          9
+        ],
+        [
+          5,
+          0.4,
+          0.15,
+          215.1,
+          78
+        ],
+        [
+          6,
+          0.4,
+          0.15,
+          215.1,
+          78
+        ],
+        [
+          7,
+          0.4,
+          0.15,
+          215.1,
+          8
+        ],
+        [
+          8,
+          0.5,
+          0.2,
+          196.4,
+          6
+        ],
+        [
+          9,
+          0.6,
+          0.2,
+          191.1,
+          56
+        ],
+        [
+          10,
+          0.6,
+          0.25,
+          182.8,
+          45
+        ],
+        [
+          11,
+          0.5,
+          0.2,
+          196.4,
+          6
+        ],
+        [
+          12,
+          0.5,
+          0.2,
+          196.4,
+          56
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    }
+  ]
+}

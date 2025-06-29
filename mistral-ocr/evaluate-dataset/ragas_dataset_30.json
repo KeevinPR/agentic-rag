@@ -1,0 +1,518 @@
+{
+  "metadata": {
+    "generation_date": "2025-05-31 16:48:02",
+    "total_papers_processed": 30,
+    "total_questions": 30,
+    "statistics": {
+      "total_papers": 30,
+      "successful": 30,
+      "failed_content": 0,
+      "failed_generation": 0,
+      "total_questions": 30
+    },
+    "last_update": "2025-05-31 16:48:02"
+  },
+  "questions": [
+    {
+      "question": "How do you handle memory constraints when storing probability models in high-dimensional personalized search problems using Estimation of Distribution Algorithms (EDAs)?",
+      "contexts": [],
+      "ground_truth": "In high-dimensional personalized search problems, memory constraints for storing probability models in EDAs can be addressed through several methods.  One approach is to use simplified probabilistic models that require less memory, such as assuming independence between variables.  Another technique involves dimensionality reduction methods, like feature selection or principal component analysis, to reduce the number of variables in the model. Furthermore, distributed or parallel computing architectures can be employed to distribute the memory load across multiple machines. Finally, approximation techniques, such as using sparse matrix representations or data compression, can help in efficiently storing and manipulating the probability models within the given memory limits.",
+      "paper_id": "PM-IEDA- Dual probabilistic Model Assisted Interactive Estimation of Distribution Algorithm for Personalized Search",
+      "paper_title": "DPM-IEDA: Dual Probabilistic Model Assisted Interactive Estimation of Distribution Algorithm for Personalized Search",
+      "paper_year": "2019",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2019/PM-IEDA- Dual probabilistic Model Assisted Interactive Estimation of Distribution Algorithm for Personalized Search.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "scalability",
+        "high-dimensional problems"
+      ],
+      "generated_at": "2025-05-31 16:48:04"
+    },
+    {
+      "question": "How do island-based metaheuristic algorithms maintain population diversity, and why is this important for solving complex optimization problems like berth scheduling?",
+      "contexts": [],
+      "ground_truth": "Island-based metaheuristic algorithms maintain population diversity by dividing the population into subpopulations (islands) and applying different search strategies on each island. This approach allows each island to explore different areas of the search space, preventing premature convergence to local optima. Maintaining diversity is crucial in complex optimization problems like berth scheduling because the solution space is vast and multimodal, with many potential suboptimal solutions. By exploring different regions concurrently, the algorithm increases its chances of finding a global or near-global optimum. In this paper, the Universal Island-based Metaheuristic Algorithm (UIMA) uses different metaheuristics (EA, PSO, EDA, DE) on each island to enhance exploration and exploitation of the search space.",
+      "paper_id": "Berth scheduling at marine container terminals A universal island-based metaheuristic approach",
+      "paper_title": "Berth scheduling at marine container terminals <br> A universal island-based metaheuristic approach",
+      "paper_year": "2020",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2020/Berth scheduling at marine container terminals A universal island-based metaheuristic approach.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "island-based algorithms",
+        "metaheuristics",
+        "optimization"
+      ],
+      "generated_at": "2025-05-31 16:48:07"
+    },
+    {
+      "question": "How does the choice of probability distribution family affect the performance of Estimation of Distribution Algorithms?",
+      "contexts": [],
+      "ground_truth": "The choice of probability distribution family significantly impacts EDA performance by determining how well the model captures the underlying structure of the problem.  Different distributions, like Gaussians or mixtures of Gaussians, can represent varying degrees of variable dependencies. If the chosen distribution poorly approximates the true distribution of promising solutions, the EDA may converge slowly or to a suboptimal solution. For example, using a unimodal Gaussian on a multimodal problem can limit exploration, while a more flexible distribution can better adapt to complex landscapes. The computational cost of learning and sampling from different distributions also affects the overall efficiency.",
+      "paper_id": "Study of Via Optimization Problem Based on Estimation of Distribution Algorithm",
+      "paper_title": "Study of Via Optimization Problem Based on Estimation of Distribution Algorithm",
+      "paper_year": "2019",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2019/Study of Via Optimization Problem Based on Estimation of Distribution Algorithm.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "probabilistic models"
+      ],
+      "generated_at": "2025-05-31 16:48:08"
+    },
+    {
+      "question": "How does the Estimation of Distribution Algorithm (EDA) differ from the Genetic Algorithm (GA) in the context of structural damage identification, particularly concerning convergence rate and local search ability?",
+      "contexts": [],
+      "ground_truth": "The Estimation of Distribution Algorithm (EDA) differs from the Genetic Algorithm (GA) by replacing crossover and mutation operators with sampling from a probabilistic distribution, which allows for a more efficient search for the optimal solution. Unlike GA, which involves complex selection, crossover, and mutation operations leading to a slow convergence rate, EDA leverages statistical learning theory to overcome these drawbacks. Specifically, EDA demonstrates a stronger learning ability and evolutionary orientation, improving the global optimization ability compared to GA. Furthermore, EDA provides statistics of every objective and variable in each generation, offering a confidence level for the updated results, which is a unique advantage over GA.",
+      "paper_id": "Damage identification of single-layer cylindrical latticed shells based on the model updating technique",
+      "paper_title": "Damage identification of single-layer cylindrical latticed shells based on the model updating technique",
+      "paper_year": "2022",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2022/Damage identification of single-layer cylindrical latticed shells based on the model updating technique.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "optimization algorithms",
+        "damage identification",
+        "estimation of distribution algorithm",
+        "genetic algorithm"
+      ],
+      "generated_at": "2025-05-31 16:48:10"
+    },
+    {
+      "question": "How do prediction-based algorithms, like the one proposed in this paper, balance convergence and diversity when applied to dynamic multiobjective optimization problems?",
+      "contexts": [],
+      "ground_truth": "Prediction-based algorithms in dynamic multiobjective optimization attempt to balance convergence and diversity by using historical information to anticipate future Pareto-optimal fronts (POFs) or Pareto-optimal sets (POSs). They enhance convergence by relocating solutions based on predicted changes, while diversity is maintained through mechanisms like random sampling or mutation to explore new regions. The effectiveness depends on the accuracy of the prediction model and the ability to adapt to unforeseen environmental changes. In this paper, diversity is maintained by classifying decision variables into principal and nonprincipal groups and by using the probability distribution of decision variables to generate solutions.",
+      "paper_id": "Novel Prediction Strategies for Dynamic Multiobjective Optimization",
+      "paper_title": "Novel Prediction Strategies for Dynamic Multiobjective Optimization",
+      "paper_year": "2020",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2020/Novel Prediction Strategies for Dynamic Multiobjective Optimization.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "dynamic multiobjective optimization",
+        "prediction-based algorithms",
+        "convergence",
+        "diversity"
+      ],
+      "generated_at": "2025-05-31 16:48:12"
+    },
+    {
+      "question": "What are the key differences between the Estimation of Distribution Algorithm (EDA) and Genetic Algorithm (GA) in the context of multi-objective optimization, particularly regarding the handling of crossover and mutation operators?",
+      "contexts": [],
+      "ground_truth": "In multi-objective optimization, both Estimation of Distribution Algorithms (EDAs) and Genetic Algorithms (GAs) are used, but they differ in how new candidate solutions are generated; EDAs build a probabilistic model from the best-selected individuals of previous iterations to sample a new population, effectively learning and adapting the search distribution, whereas GAs use crossover and mutation operators to create new individuals, directly manipulating the solution space based on parent solutions. The paper mentions that unlike GAs, EDAs generate new individuals without crossover and mutation, relying instead on the probability distribution estimated from selected individuals. This difference affects how each algorithm explores and exploits the search space.",
+      "paper_id": "Estimation of Distribution Algorithm for Resource Allocation in Green Cooperative Cognitive Radio Sensor Networks",
+      "paper_title": "Astimation of Distribution Algorithm for Resource Allocation in Green Cooperative Cognitive Radio Sensor Networks",
+      "paper_year": "2013",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2013/Estimation of Distribution Algorithm for Resource Allocation in Green Cooperative Cognitive Radio Sensor Networks.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "estimation-of-distribution algorithm",
+        "genetic algorithm",
+        "multi-objective optimization"
+      ],
+      "generated_at": "2025-05-31 16:48:14"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) address the exploration-exploitation trade-off compared to Genetic Algorithms (GAs)?",
+      "contexts": [],
+      "ground_truth": "EDAs and GAs handle the exploration-exploitation trade-off differently; GAs rely on crossover and mutation for exploration but can disrupt promising building blocks, while EDAs use probabilistic models learned from promising solutions to generate new individuals, emphasizing exploitation of learned dependencies.  However, EDAs can suffer from premature convergence if the probabilistic model becomes too restrictive, limiting exploration.  The SEDA algorithm attempts to balance this by switching between EDA (exploitation) and GA (exploration) phases based on switching criteria related to population diversity and solution improvement stagnation.  This allows SEDA to leverage the strengths of both approaches, potentially avoiding local optima and maintaining a broader search space.",
+      "paper_id": "Estimation of Distribution Algorithm Incorporating Switching",
+      "paper_title": "Estimation of Distribution Algorithm Incorporating Switching",
+      "paper_year": "2010",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2010/Estimation of Distribution Algorithm Incorporating Switching.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "estimation of distribution algorithm",
+        "genetic algorithm",
+        "exploration-exploitation"
+      ],
+      "generated_at": "2025-05-31 16:48:15"
+    },
+    {
+      "question": "How do mixture models, such as the mixture of factor analyzers (MFA) used in this paper, help to address premature convergence in estimation of distribution algorithms (EDAs)?",
+      "contexts": [],
+      "ground_truth": "Mixture models in EDAs address premature convergence by modeling complex distributions through a combination of simpler component distributions, allowing for a more accurate representation of the search space. By clustering similar individuals into subpopulations, MFA can capture local areas of the true distribution more effectively than single distribution models. This approach maintains population diversity, allowing the algorithm to explore multiple promising regions and escape local optima. Each component in the mixture focuses on a different part of the search space, preventing the algorithm from converging to a single, potentially suboptimal solution too quickly, as evidenced by the better performance of MFA compared to single factor analyzers in the paper's experiments.",
+      "paper_id": "Evolutionary optimization by distribution estimation with mixtures of factor Analyzers",
+      "paper_title": "Evolutionary Optimization by Distribution Estimation with Mixtures of Factor Analyzers",
+      "paper_year": "2002",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2002/Evolutionary optimization by distribution estimation with mixtures of factor Analyzers.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "estimation of distribution algorithms",
+        "mixture models",
+        "premature convergence"
+      ],
+      "generated_at": "2025-05-31 16:48:17"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) use a probability function to represent individuals in a population, and how does this differ from the chromosome encoding method used in Genetic Algorithms (GAs)?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) represent individuals using a probability function that is updated each generation based on the selected best individuals, effectively modeling the distribution of promising solutions. This contrasts with Genetic Algorithms (GAs), which use a chromosome encoding method where each individual is represented by a string of genes directly encoding the solution variables. The probability function in EDAs guides the generation of new solutions by sampling from the learned distribution, while GAs rely on crossover and mutation operators to evolve the population's chromosomes. The paper uses a constraints-encoding method to adjust the encoding bounds of the variables to reduce infeasible individuals.",
+      "paper_id": "Optimization of machining parameters using estimation of distribution algorithms",
+      "paper_title": "Optimization of Machining Parameters Using Estimation of Distribution Algorithms",
+      "paper_year": "2009",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2009/Optimization of machining parameters using estimation of distribution algorithms.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "Estimation of Distribution Algorithms",
+        "Genetic Algorithms",
+        "Probability Models",
+        "Encoding Methods"
+      ],
+      "generated_at": "2025-05-31 16:48:19"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) overcome the parameter tuning challenges associated with crossover and mutation operators in traditional Genetic Algorithms (GAs)?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) address the parameter tuning challenges of Genetic Algorithms (GAs) by eliminating the need for crossover and mutation operators. Instead of directly manipulating population members, EDAs estimate the joint probability distribution of promising solutions and sample from this distribution to generate new populations. This approach leverages population statistics, shifting the focus from operator tuning to probabilistic model learning, thereby simplifying the optimization process.",
+      "paper_id": "Peakbin Selection in Mass Spectrometry Data Using a Consensus Approach with Estimation of Distribution Algorithms",
+      "paper_title": "Peakbin Selection in Mass Spectrometry Data Using a Consensus Approach with Estimation of Distribution Algorithms",
+      "paper_year": "2011",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2011/Peakbin Selection in Mass Spectrometry Data Using a Consensus Approach with Estimation of Distribution Algorithms.md",
+      "question_type": "conceptual",
+      "complexity": "simple",
+      "topics": [
+        "estimation of distribution algorithms",
+        "genetic algorithms",
+        "parameter tuning"
+      ],
+      "generated_at": "2025-05-31 16:48:20"
+    },
+    {
+      "question": "How does the high-level search strategy in hyper-heuristics, particularly evolutionary algorithms, estimate the distribution of heuristics, and what is the significance of this estimation?",
+      "contexts": [],
+      "ground_truth": "In hyper-heuristics, the high-level search strategy, often an evolutionary algorithm, estimates the distribution of promising heuristics in the search space by tracking their performance. This estimation, inspired by EDAs, involves assigning probabilities to different heuristics based on their success in improving solutions over iterations. The significance lies in enabling the algorithm to prioritize and select heuristics that are more likely to lead to better solutions, effectively guiding the search process towards global optima. For instance, the EA-HH approach uses a credit matrix to store fitness improvements from each heuristic and updates a probability vector to reflect their distribution.",
+      "paper_id": "An evolutionary algorithm based hyper-heuristic framework for the set packing problem",
+      "paper_title": "An evolutionary algorithm based hyper-heuristic framework for the set packing problem",
+      "paper_year": "2019",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2019/An evolutionary algorithm based hyper-heuristic framework for the set packing problem.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "hyper-heuristics",
+        "evolutionary algorithms",
+        "estimation of distribution"
+      ],
+      "generated_at": "2025-05-31 16:48:22"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) leverage probabilistic models to guide the search for optimal solutions in complex optimization problems?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) replace traditional crossover and mutation operators with probabilistic models learned from a population of promising solutions. These models capture the statistical relationships between variables in the solution space, guiding the generation of new candidate solutions by sampling from the learned probability distribution. By iteratively updating the probabilistic model based on the elite individuals, EDAs can effectively explore the search space and converge towards optimal or near-optimal solutions, as demonstrated by the hybrid EDA approach detailed in the paper for solving flexible job shop scheduling problems.",
+      "paper_id": "A Hybrid Estimation-of-Distribution Algorithm for Scheduling Flexible Job Shop With Limited Buffers Based on Petri Nets",
+      "paper_title": "A Hybrid Estimation-of-Distribution Algorithm for Scheduling Flexible Job Shop With Limited Buffers Based on Petri Nets",
+      "paper_year": "2020",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2020/A Hybrid Estimation-of-Distribution Algorithm for Scheduling Flexible Job Shop With Limited Buffers Based on Petri Nets.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithm"
+      ],
+      "generated_at": "2025-05-31 16:48:24"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) extract distribution information from a population, and what advantages does this approach offer compared to traditional evolutionary algorithms like Differential Evolution (DE)?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) extract distribution information by building probabilistic models of promising solutions and sampling new solutions from these models, rather than directly manipulating individuals through crossover and mutation as in Differential Evolution (DE). This approach allows EDAs to explicitly capture dependencies between decision variables, which can be advantageous for problems with complex variable interactions. However, EDAs can suffer from high computational cost due to the model building process and may struggle if the chosen probabilistic model inadequately represents the problem's structure. In contrast, DE utilizes vector differences to guide the search and does not explicitly model variable dependencies.",
+      "paper_id": "Information fusion in offspring generation  A case study in DE and EDA",
+      "paper_title": "Information fusion in offspring generation: A case study in DE and EDA",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/Information fusion in offspring generation  A case study in DE and EDA.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithm",
+        "differential evolution",
+        "probabilistic model"
+      ],
+      "generated_at": "2025-05-31 16:48:26"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) leverage probability models to guide the search for optimal solutions in complex optimization problems?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) use probability models to capture the distribution of promising solutions in the search space. These models, which can be univariate, bivariate, or multivariate, describe the relationships between variables and guide the generation of new candidate solutions by sampling from the learned distribution. As the algorithm progresses, the probability model is updated with information from better solutions, effectively focusing the search on promising regions. This approach allows EDAs to exploit global information and historical data to efficiently explore the solution space, particularly in nonlinear optimization and variable coupling problems.",
+      "paper_id": "Restricted Boltzmann Machine-Assisted Estimation of Distribution Algorithm for Complex Problems",
+      "paper_title": "Research Article",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/Restricted Boltzmann Machine-Assisted Estimation of Distribution Algorithm for Complex Problems.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "probability models",
+        "optimization"
+      ],
+      "generated_at": "2025-05-31 16:48:27"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) differ fundamentally from Genetic Algorithms (GAs) in their approach to optimization?",
+      "contexts": [],
+      "ground_truth": "Estimation of Distribution Algorithms (EDAs) differ from Genetic Algorithms (GAs) by replacing crossover and mutation operators with probabilistic model building. EDAs select superior candidate solutions and estimate a probability distribution from these solutions, then generate new candidates by sampling from this estimated distribution, effectively learning and exploiting the problem's structure. In contrast, GAs rely on crossover and mutation to explore the search space without explicitly building a probabilistic model. The paper uses Univariate Marginal Distribution Algorithm (UMDA) and Population-Based Incremental Learning Algorithm (PBILA) as examples of EDAs.",
+      "paper_id": "Hybrid estimation of distribution algorithms for solving a keyboard layout problem",
+      "paper_title": "Hybrid estimation of distribution algorithms for solving a keyboard layout problem",
+      "paper_year": "2018",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2018/Hybrid estimation of distribution algorithms for solving a keyboard layout problem.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "estimation of distribution algorithms",
+        "genetic algorithms"
+      ],
+      "generated_at": "2025-05-31 16:48:29"
+    },
+    {
+      "question": "How does the performance of Differential Evolution (DE) depend on dynamically adjusting the ability to avoid local optima versus providing larger steps during different stages of evolution?",
+      "contexts": [],
+      "ground_truth": "The performance of DE is heavily influenced by its ability to dynamically balance exploration and exploitation throughout the evolutionary process. Early stages benefit from larger steps to broadly explore the search space and avoid premature convergence to local optima. Later stages require finer adjustments to exploit promising regions and refine solutions, thus avoiding local optima and improving convergence speed. The balance between exploration and exploitation is often managed through adaptive parameter control and mutation strategies that adjust the step size and search direction based on the current state of the population.",
+      "paper_id": "A novel differential evolution algorithm with multi-population and elites regeneration",
+      "paper_title": "A novel differential evolution algorithm with multi-population and elites regeneration",
+      "paper_year": "2024",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2024/A novel differential evolution algorithm with multi-population and elites regeneration.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Differential Evolution",
+        "optimization",
+        "local optima",
+        "exploitation",
+        "exploration"
+      ],
+      "generated_at": "2025-05-31 16:48:30"
+    },
+    {
+      "question": "How do population-based parameter optimization algorithms, such as Genetic Algorithms (GA) and Differential Evolution (DE), mimic biological evolution to search for optimal solutions in ecological modeling?",
+      "contexts": [],
+      "ground_truth": "Population-based parameter optimization algorithms draw inspiration from biological evolution by maintaining a population of candidate solutions that evolve over generations. These algorithms typically involve processes like selection, where fitter individuals are more likely to be chosen for reproduction, crossover, where genetic material is exchanged between individuals to create new offspring, and mutation, where random changes are introduced to the offspring's characteristics. Through these processes, the population gradually converges towards optimal parameter values that improve the model's performance, as measured by a fitness function.",
+      "paper_id": "The experimental study of population-based parameter optimization algorithms on rule-based ecological modelling",
+      "paper_title": "The Experimental Study of Population-based Parameter Optimization Algorithms on Rule-based Ecological Modelling",
+      "paper_year": "2012",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2012/The experimental study of population-based parameter optimization algorithms on rule-based ecological modelling.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "evolutionary algorithms",
+        "parameter optimization",
+        "ecological modelling"
+      ],
+      "generated_at": "2025-05-31 16:48:32"
+    },
+    {
+      "question": "How do Estimation of Distribution Algorithms (EDAs) address the limitations of traditional crossover operators in Genetic Algorithms (GAs) when applied to problems like protein structure prediction, where complex interactions between variables are crucial?",
+      "contexts": [],
+      "ground_truth": "EDAs address the limitations of crossover operators in GAs by replacing them with probabilistic models that explicitly learn and represent dependencies between variables. Unlike crossover, which can disrupt beneficial combinations, EDAs capture statistical relationships from selected solutions and use them to generate new, promising solutions. This allows EDAs to effectively handle problems with complex variable interactions, like protein folding, by preserving and exploiting relevant substructures. For instance, EDAs can model the likelihood of specific residue contacts based on the context of neighboring residues, avoiding the random disruption inherent in crossover.",
+      "paper_id": "Protein Folding in Simplified Models With Estimation of Distribution Algorithms",
+      "paper_title": "Protein Folding in Simplified Models With Estimation of Distribution Algorithms",
+      "paper_year": "2008",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2008/Protein Folding in Simplified Models With Estimation of Distribution Algorithms.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "Estimation of distribution algorithm (EDAs)",
+        "genetic algorithms",
+        "protein folding"
+      ],
+      "generated_at": "2025-05-31 16:48:35"
+    },
+    {
+      "question": "How does the factorization in Tree-EDA handle variable dependencies compared to UMDA?",
+      "contexts": [],
+      "ground_truth": "Tree-EDA captures bivariate dependencies between variables using a tree structure, where each variable depends on at most one parent variable. The joint probability distribution is factorized as a product of conditional probabilities given the parent. In contrast, UMDA assumes all variables are independent, so the joint probability is simply the product of univariate marginal probabilities. Tree-EDA aims to model more complex interactions, while UMDA uses a simpler, less computationally expensive model.",
+      "paper_id": "Adding Probabilistic Dependencies to the Search of Protein Side Chain Configurations Using EDAs",
+      "paper_title": "Adding Probabilistic Dependencies to the Search of Protein Side Chain Configurations Using EDAs",
+      "paper_year": "2008",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2008/Adding Probabilistic Dependencies to the Search of Protein Side Chain Configurations Using EDAs.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "probabilistic models"
+      ],
+      "generated_at": "2025-05-31 16:48:36"
+    },
+    {
+      "question": "How do parallel implementations of Gene Expression Programming based on Estimation of Distribution Algorithm handle the model learning phase?",
+      "contexts": [],
+      "ground_truth": "Parallel implementations of GEP-EDA, like the asynchronous distributed approach described in the paper, typically divide the population into subpopulations across multiple processors. Each processor evolves its subpopulation independently, including the EDA's probability model learning phase, which involves calculating statistical probabilities for operators. To maintain diversity and prevent premature convergence, processors periodically exchange individuals, updating their local probability models based on the received information from other subpopulations. This exchange of information allows for a more robust exploration of the search space.",
+      "paper_id": "Asynchronous Distributed Parallel Gene Expression Programming Based on Estimation of Distribution Algorithm",
+      "paper_title": "Asynchronous Distributed Parallel Gene Expression Programming based on Estimation of Distribution Algorithm",
+      "paper_year": "2008",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2008/Asynchronous Distributed Parallel Gene Expression Programming Based on Estimation of Distribution Algorithm.md",
+      "question_type": "conceptual",
+      "complexity": "medium",
+      "topics": [
+        "parallel computing",
+        "gene expression programming",
+        "estimation of distribution algorithm"
+      ],
+      "generated_at": "2025-05-31 16:48:37"
+    },
+    {
+      "question": "How does the UMDA algorithm, as applied to the web service selection problem, address the exploration-exploitation trade-off inherent in evolutionary algorithms?",
+      "contexts": [],
+      "ground_truth": "The UMDA algorithm addresses the exploration-exploitation trade-off by using a probabilistic model to guide the search. Exploration is maintained through the initial random sampling of the population and the probabilistic selection of services, allowing for diverse combinations. Exploitation is achieved by updating the probability distributions based on the fitness of selected individuals, biasing the search towards more promising regions of the solution space. The selection mechanism, such as the sorting algorithm, further refines this balance by prioritizing high-fitness solutions while retaining some diversity.",
+      "paper_id": "Global Optimal Selection of Web Composite Services Based on UMDA",
+      "paper_title": "Global Optimal Selection of Web Composite Services Based on UMDA",
+      "paper_year": "2012",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2012/Global Optimal Selection of Web Composite Services Based on UMDA.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "UMDA",
+        "exploration-exploitation",
+        "web service selection"
+      ],
+      "generated_at": "2025-05-31 16:48:39"
+    },
+    {
+      "question": "How does the estimation of distribution algorithm (EDA) leverage probability models to guide the search process in optimization problems, and what are the key steps involved in building and updating these models?",
+      "contexts": [],
+      "ground_truth": "The estimation of distribution algorithm (EDA) uses probability models to explicitly estimate the distribution of promising solutions within the search space. These models are built based on the statistical information gathered from elite individuals in the population. The algorithm iteratively samples the probability model to generate new individuals, effectively focusing the search on regions with high potential. The model is then updated using the newly generated elite individuals, reflecting the evolution of the population and refining the search direction towards better solutions.",
+      "paper_id": "An effective estimation of distribution algorithm for the flexible job-shop scheduling problem with fuzzy processing time",
+      "paper_title": "An effective estimation of distribution algorithm for the flexible job-shop scheduling problem with fuzzy processing time",
+      "paper_year": "2013",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2013/An effective estimation of distribution algorithm for the flexible job-shop scheduling problem with fuzzy processing time.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "estimation of distribution algorithm",
+        "probability model",
+        "optimization"
+      ],
+      "generated_at": "2025-05-31 16:48:41"
+    },
+    {
+      "question": "What are the key differences between Estimation of Distribution Algorithms (EDAs) and Genetic Algorithms (GAs), and in what types of problems do EDAs typically outperform GAs?",
+      "contexts": [],
+      "ground_truth": "EDAs differ from GAs primarily in how they generate new populations; EDAs use an estimated probability distribution learned from the current population, replacing crossover and mutation operators found in GAs. EDAs are expected to work well in problems where preservation of building blocks corresponding to the low-order schemata is important. The paper's experiments show that the presented maxent-based EDA performs better than a GA on deceptive trap functions and NK landscapes, suggesting that EDAs can be more effective when dealing with problems involving epistasis and interactions between variables. The algorithm's performance is sensitive to the choice of schemata, which influences its ability to capture relevant problem structures.",
+      "paper_id": "An Estimation of Distribution Algorithm Based on Maximum Entropy",
+      "paper_title": "An Estimation of Distribution Algorithm Based on Maximum Entropy",
+      "paper_year": "2004",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2004/An Estimation of Distribution Algorithm Based on Maximum Entropy.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "estimation of distribution algorithms",
+        "genetic algorithms",
+        "building block hypothesis",
+        "performance comparison"
+      ],
+      "generated_at": "2025-05-31 16:48:43"
+    },
+    {
+      "question": "How do permutation-based EDAs like RBOP handle the constraint that each element appears exactly once in the permutation?",
+      "contexts": [],
+      "ground_truth": "Permutation-based EDAs, such as RBOP, inherently maintain the constraint that each element appears exactly once by employing specialized sampling and update mechanisms tailored for permutations. RBOP uses binary relations to represent characteristics of permutation problems and constructs a Bayesian network to sample new permutations. During the sampling stage, RBOP ensures that each element is included exactly once by removing edges connected to previously sampled nodes, preventing duplicates and maintaining the permutation property. This differs from integer or real-valued EDAs, which may require additional repair mechanisms to enforce permutation constraints.",
+      "paper_id": "Relational Bayesian Optimization for Permutation",
+      "paper_title": "Relational Bayesian Optimization for Permutation",
+      "paper_year": "2023",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2023/Relational Bayesian Optimization for Permutation.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "combinatorial optimization"
+      ],
+      "generated_at": "2025-05-31 16:48:44"
+    },
+    {
+      "question": "How do permutation-based algorithms like the Discrete Artificial Bee Colony (DABC) algorithm handle the constraint that each job appears exactly once in a permutation flowshop scheduling problem?",
+      "contexts": [],
+      "ground_truth": "Permutation-based algorithms, such as the DABC, maintain the constraint of each job appearing exactly once by using permutation representations directly.  The algorithm uses operators like insert and swap, which inherently preserve the permutation structure. Initialization strategies, like using the NEH heuristic, also start with valid permutations, and subsequent search operations maintain this validity. The DABC algorithm leverages tournament selection and local search procedures that operate on permutations, ensuring feasibility at each step while exploring the solution space for the minimum total flowtime.",
+      "paper_id": "A discrete artificial bee colony algorithm for the total flowtime minimization in permutation flow shops",
+      "paper_title": "A discrete artificial bee colony algorithm for the total flowtime minimization in permutation flow shops",
+      "paper_year": "2011",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2011/A discrete artificial bee colony algorithm for the total flowtime minimization in permutation flow shops.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "combinatorial optimization"
+      ],
+      "generated_at": "2025-05-31 16:48:46"
+    },
+    {
+      "question": "How do the probabilistic models used in Estimation of Distribution Algorithms (EDAs) capture and represent the relationships between variables in the problem being optimized?",
+      "contexts": [],
+      "ground_truth": "In EDAs, probabilistic models capture variable relationships by estimating the distribution of promising solutions. These models, such as Bayesian networks or factorized distributions, represent dependencies between variables using conditional probabilities. For example, a model might learn that certain variable values tend to occur together in high-quality solutions, allowing the EDA to sample new solutions that reflect these learned dependencies. The strength of the dependencies influences the probability of sampling specific variable combinations, effectively guiding the search towards promising regions of the solution space.",
+      "paper_id": "An enhanced estimation of distribution algorithm with problem-specific knowledge for distributed no-wait flowshop group scheduling problems",
+      "paper_title": "An enhanced estimation of distribution algorithm with problem-specific knowledge for distributed no-wait flowshop group scheduling problems",
+      "paper_year": "2024",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2024/An enhanced estimation of distribution algorithm with problem-specific knowledge for distributed no-wait flowshop group scheduling problems.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "estimation of distribution algorithms",
+        "probabilistic models",
+        "optimization"
+      ],
+      "generated_at": "2025-05-31 16:48:48"
+    },
+    {
+      "question": "What are the key differences between Estimation of Distribution Algorithms (EDAs) and Evolutionary Algorithms (EAs), and what advantages do EDAs offer over EAs in the context of optimization problems?",
+      "contexts": [],
+      "ground_truth": "EDAs differ from EAs by building a probabilistic model of promising solutions and sampling new individuals from this model, instead of using crossover and mutation operators. EDAs can overcome limitations of EAs, such as the breaking of building blocks during recombination and poor performance in high-dimensional problems. The advantage of EDAs is that the search process is guided by a probabilistic model, offering explanatory and transparent characteristics. This allows EDAs to extract global statistical information from superior individuals to guide the search, potentially leading to better solutions, especially in complex, high-dimensional optimization scenarios.",
+      "paper_id": "A Fast Elitism Gaussian Estimation of Distribution Algorithm and Application for PID Optimization",
+      "paper_title": "Research Article",
+      "paper_year": "2014",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2014/A Fast Elitism Gaussian Estimation of Distribution Algorithm and Application for PID Optimization.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "estimation of distribution algorithms",
+        "evolutionary algorithms",
+        "optimization"
+      ],
+      "generated_at": "2025-05-31 16:48:49"
+    },
+    {
+      "question": "What conditional independence assumptions does the conditional probability tree model enforce in this paper, and what is the justification for these assumptions in the context of program evolution?",
+      "contexts": [],
+      "ground_truth": "The conditional probability tree used in this paper assumes that the probability of a symbol at a node in the program tree depends only on the symbol of its parent node. This means that each probabilistic variable has only one dependent variable, representing the symbol of the parent node. The justification is based on the assumption that probabilistic dependency is strong between a parent node and its child nodes, reflecting a hierarchical structure in program syntax. This simplification allows for efficient learning and generation of program structures while capturing essential dependencies.",
+      "paper_id": "Probabilistic distribution models for EDA-based GP",
+      "paper_title": "Probabilistic Distribution Models for EDA-based GP",
+      "paper_year": "2005",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2005/Probabilistic distribution models for EDA-based GP.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "probabilistic models"
+      ],
+      "generated_at": "2025-05-31 16:48:51"
+    },
+    {
+      "question": "How do you adapt continuous EDAs for mixed integer programming problems, given that EDAs are typically designed for continuous search spaces?",
+      "contexts": [],
+      "ground_truth": "Adapting continuous EDAs for mixed-integer programming problems often involves discretizing the continuous variables or using penalty functions to guide the search toward integer solutions. One approach is to map the continuous variables to discrete values using rounding or thresholding techniques.  Alternatively, hybrid methods combine continuous EDAs with local search algorithms designed for integer programming, using the EDA to explore the overall search space and the local search to refine solutions in the discrete domain.  Specific techniques include branch and bound methods guided by the EDA's probability model or using a continuous relaxation of the integer constraints within the EDA's evaluation function. The effectiveness of these adaptations depends heavily on the specific problem structure and the chosen discretization or penalty strategy.",
+      "paper_id": "Uncertain resource leveling problem",
+      "paper_title": "Uncertain resource leveling problem",
+      "paper_year": "2017",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2017/Uncertain resource leveling problem.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "combinatorial optimization",
+        "discrete optimization"
+      ],
+      "generated_at": "2025-05-31 16:48:53"
+    },
+    {
+      "question": "What are the key differences in the underlying approach between the Exhaustive Search DC Placement (ESDCP) algorithm and the Estimation of Data center Placement (EoDCP) Algorithm for solving the data center placement problem?",
+      "contexts": [],
+      "ground_truth": "The Exhaustive Search DC Placement (ESDCP) algorithm analyzes every possible data center (DC) placement combination to find the optimal solution that minimizes power consumption, but its computational time increases exponentially with network size. In contrast, the Estimation of Data Center Placement (EoDCP) algorithm, based on the Estimation of Distribution Algorithm (EDA), uses an iterative probabilistic approach to explore promising DC placement candidates in an evolving population, which reduces complexity and computational time compared to ESDCP. While ESDCP provides the optimal solution, EoDCP aims to find a near-optimal solution with significantly lower computational cost, making it more practical for larger networks.",
+      "paper_id": "Power Aware Data Center Placement in WDM Optical Networks",
+      "paper_title": "Power Aware Data Center Placement in WDM Optical Networks",
+      "paper_year": "2021",
+      "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown-no-ref-no-tables/2021/Power Aware Data Center Placement in WDM Optical Networks.md",
+      "question_type": "conceptual",
+      "complexity": "complex",
+      "topics": [
+        "data center placement",
+        "optimization algorithms",
+        "estimation of distribution algorithm"
+      ],
+      "generated_at": "2025-05-31 16:48:54"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/Fast single individual haplotyping method using GPGPU.md",
+    "filename": "Fast single individual haplotyping method using GPGPU.md",
+    "title": "Fast single individual haplotyping method using GPGPU",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": "5",
+      "table_title": "Running time of original PEATH and PEATH/G-64 for the fosmid dataset.",
+      "headers": [
+        "GPGPU",
+        "Running time (s)"
+      ],
+      "rows": [
+        [
+          "CPU i9-9980XE",
+          5107.92
+        ],
+        [
+          "CPU i9-9980XE (using 20 threads)",
+          1730.895
+        ],
+        [
+          950,
+          385.624
+        ],
+        [
+          1050,
+          337.721
+        ],
+        [
+          1660,
+          109.282
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "6",
+      "table_title": "Running time of original PEATH and PEATH/G-128 for the HuRef dataset.",
+      "headers": [
+        "GPGPU",
+        "Running time (s)"
+      ],
+      "rows": [
+        [
+          "CPU i9-9980XE",
+          16941.53
+        ],
+        [
+          950,
+          3533.565
+        ],
+        [
+          1050,
+          3243.925
+        ],
+        [
+          1660,
+          667.362
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    }
+  ]
+}

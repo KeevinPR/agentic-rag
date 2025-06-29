@@ -1,0 +1,68 @@
+# Choosing the Right Algorithm With Hints From Complexity Theory (Hot-off-the-Press Track at GECCO 2022) 
+
+Shouda Wang<br>Laboratoire d'Informatique (LIX),<br>CNRS, École Polytechnique, Institute<br>Polytechnique de Paris Palaiseau, France
+
+Weijie Zheng<br>Department of Computer Science and Engineering<br>Southern University of Science and<br>Technology<br>Shenzhen, China
+
+Benjamin Doerr<br>Laboratoire d'Informatique (LIX),<br>CNRS, École Polytechnique, Institute<br>Polytechnique de Paris<br>Palaiseau, France
+
+## ABSTRACT
+
+Choosing a suitable algorithm from the myriads of different search heuristics is difficult when faced with a novel optimization problem. In this work, we argue that the purely academic question of what could be the best possible algorithm in a certain broad class of black-box optimizers can give fruitful indications in which direction to search for good established optimization heuristics. We demonstrate this approach on the recently proposed DLB benchmark, for which the only known results are $O\left(n^{3}\right)$ runtimes for several classic evolutionary algorithms and an $O\left(n^{2} \log n\right)$ runtime for an estimation-of-distribution algorithm. Our finding that the unary unbiased black-box complexity is only $O\left(n^{2}\right)$ suggests the Metropolis algorithm as an interesting candidate and we prove that it solves the DLB problem in quadratic time. Since we also prove that better runtimes cannot be obtained in the class of unary unbiased algorithms, we shift our attention to algorithms that use the information of more parents to generate new solutions. An artificial algorithm of this type having an $O(n \log n)$ runtime leads to the result that the significance-based compact genetic algorithm (sig-cGA) can solve the DLB problem also in time $O(n \log n)$.
+
+This paper for the Hot-of-the-Press track at GECCO 2022 summarizes the work Shouda Wang, Weijie Zheng, Benjamin Doerr: Choosing the Right Algorithm With Hints From Complexity Theory, IJCAI 2021: 1697-1703 [11].
+
+## CCS CONCEPTS
+
+- Theory of computation $\rightarrow$ Theory of randomized search heuristics; Random search heuristics.
+
+
+## KEYWORDS
+
+Runtime analysis, complexity theory, Metropolis algorithm
+
+[^0]
+## SUMMARY OF OUR RESULTS
+
+Randomized search heuristics such as hillclimbers, evolutionary algorithms, ant colony optimizers, or estimation-of-distribution algorithms (EDAs) have been very successful in solving optimization problems for which no established problem-specific algorithm exists. As such, they are applied massively to novel problems for which some understanding of the problem and the desired solution exists, but little algorithmic expertise.
+
+When faced with a novel optimization problem, one has the choice between a large number of established heuristics. Which of them to use is a difficult question. Since implementing a heuristic and adjusting it to the problem to be solved can be very timeconsuming, ideally one does not want to experiment with too many different heuristics. For that reason, a theory-guided prior suggestion could be very helpful. This is what we aim at in this work. We note that the theory of randomized search heuristics has helped to understand these algorithms, has given suggestions for parameter settings, and has even proposed new operators and algorithms, but we are not aware of direct attempts to aid the initial choice of the basic algorithm to be used (as with experimental work, there always is the indirect approach to study the existing results and try to distill from them some general rule which algorithms perform well on which problems, but in particular for the theory domain it is not clear how effective this approach is at the moment).
+
+What we propose in this work is a heuristic approach building on the notion of black-box complexity, first introduced by Droste, Jansen, Tinnefeld, and Wegener [8]. In very simple words, the (unrestricted) black-box complexity of an optimization problem is the performance of the best black-box optimizer for this problem. It is thus a notion not referring to a particular class of search heuristics. Black-box complexity has been used successfully to obtain universal lower bounds. Knowing that the black-box complexity of the Needle problem is exponential [8], we immediately know that no genetic algorithm, ant colony optimizer, or EDA can solve the Needle problem in subexponential time. With a more positive perspective, black-box complexity has been used to invent new algorithms. Noting that the two-ary unbiased black-box complexity of OneMax is lower than the unary one [4], a novel crossover-based evolutionary algorithm was developed in [2]. Building on the result that the $\lambda$-parallel black-box complexity of the OneMax problem is only $O\left(\frac{n \lambda}{\log \lambda}+n \log n\right)$ [1], dynamic, self-adjusting, and self-adapting EAs obtaining this runtime have been constructed [1, 3, 7].
+
+In this work, we also aim at profiting from the guidance of black-box results, however not by designing new algorithms, but
+
+
+[^0]:    Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored. For all other uses, contact the owner/author(s).
+    GECCO '22 Companion, July 9-13, 2022, Boston, MA, USA
+    (c) 2022 Copyright held by the owner/author(s).
+
+    ACM ISBN 978-1-4503-9268-6/22/07.
+    https://doi.org/10.1145/3520304.3534069
+
+by giving an indication which of the existing algorithms could be useful for a particular problem. In simple words, what we propose is trying to find out which classes of black-box algorithms contain fast algorithms for the problem at hand. These algorithms may well be artificial as we use them only to determine the direction in which to search for a good established algorithm for our problem. Only once we are sufficiently optimistic that a certain property of black-box algorithms is helpful for our problem, we regard the established heuristics in this class and see if one of them indeed has a good performance.
+
+To show that this abstract heuristic approach towards selecting a good algorithm can indeed be successful, we regard the DeceivingLeadingBlocks (DLB) problem recently proposed by Lehre and Nguyen [9]. Lehre and Nguyen conducted rigorous runtime analyses of several classic evolutionary algorithms, all leading to runtime guarantees of order $O\left(n^{3}\right)$ with optimal parameter choices. For the EDA univariate marginal distribution algorithm (UMDA), a runtime guarantee of $O\left(n^{2} \log n\right)$ was proven in [6]. No other proven upper bounds on runtimes of randomized search heuristics on the DLB problem existed prior to this work. With only these results from only two prior works, it is safe to call the DLB problem relatively novel and thus an interesting object for our investigation.
+
+Finding more efficient randomized search heuristics: We note that the classic algorithms regarded in [9] are all elitist evolutionary algorithms or non-elitist algorithms with parameter settings that let them imitate an elitist behavior. To obtain a first indication whether it is worth investigating truly non-elitist algorithms for this problem, we show two results. (i) We prove that the $(1+1)$ elitist unbiased black-box complexity of the DLB problem is $\Omega\left(n^{3}\right)$. (ii) We show that there is a simple, artificial, $(1+1)$-type non-elitist unbiased black-box algorithm solving the DLB problem in quadratic time. These two findings motivate us to analyze the existing $(1+1)$ type non-elitist heuristics. Among them, we find that the Metropolis algorithm [10] with a suitable temperature also optimizes DLB in time $O\left(n^{2}\right)$. We note that there are very few runtime analyses on the Metropolis algorithm, so it is clear that a synopsis of the existing runtime analysis literature would not have easily suggested this algorithm.
+
+To direct our search for possible further runtime improvements, we first show that the unary unbiased black-box complexity of DLB is at least quadratic. Consequently, if we want to stay in the realm of unbiased algorithms (which we do) and improve beyond quadratic runtimes, then we necessarily have to regard algorithms that generate offspring using the information from at least two parents. That this is possible, at least in principle, follows from our next result, which is an artificial crossover-based algorithm that solves DLB in time $O(n \log n)$. While, together with the previously shown lower bound, it is clear that this performance relies on the fact that offspring are generated from the information of more than one parent, the working principles of this algorithm also include a learning aspect. Such learning mechanisms are rarely found in standard evolutionary algorithms, but are the heart of EDAs with their main goal of learning a distribution that allows sampling good solutions. Note that the distribution in an EDA carries information from many previously generated solutions, hence EDAs necessarily generate new solutions based on the information of many parents. For these reasons, we focus on EDAs. We do not find a classic EDA
+for which we can prove that it solves the DLB problem in subquadratic time, but we succeed for the significance-based EDA [5] and we show that it optimizes the DLB problem in an expected runtime of $O(n \log n)$.
+
+Overall, these results demonstrate that our heuristic theoryguided approach towards selecting good algorithms for a novel problem can indeed be helpful. We note in particular that the previous works on the DLB problem have not detected that the Metropolis algorithm is an interesting candidate for solving this problem. To avoid a possible misunderstanding, let us stress that our target is to find an established search heuristic for our optimization problem, not a new problem-specific algorithm, since we hope to profit from the known strengths of this algorithm such as robustness to noise and dynamic changes of the problem data, reusability for similar problems, and adjustability to restricted instance classes.
+
+We note that the results and methods used in this works lie purely in the theory domain. We therefore followed the traditional approach of regarding benchmark problems simple enough that they can be rigorously analyzed with mathematical means. In return, we obtain proven results for infinite numbers of problem instances, which hopefully extend in spirit also to problems which are too complicated to be analyzed with mathematical means. We believe, though, that our basic approach of (i) trying to find a very good algorithm, chosen from all possible black-box optimization algorithms, to solve a given problem or to overcome a particular difficulty and then (ii) using this artificial and problem-specific algorithm as an indicator for which established search heuristics could be promising, can also be followed by experimental methods and by non-rigorous intuitive considerations.
+
+## REFERENCES
+
+[1] Golnaz Badkobeh, Per Kristian Lehre, and Dirk Sudholt. 2014. Unbiased BlackBox Complexity of Parallel Search. In Parallel Problem Solving from Nature, PPSN 2014 Springer, 892-901.
+[2] Benjamin Doerr, Carola Doerr, and Franziska Ebel. 2015. From black-box complexity to designing new genetic algorithms. Theoretical Computer Science 567 (2015), 87-104.
+[3] Benjamin Doerr, Christian Gießen, Carsten Witt, and Jing Yang. 2019. The (1 + $\lambda$ ) evolutionary algorithm with self-adjusting mutation rate. Algorithmica 81 (2019), $593-631$.
+[4] Benjamin Doerr, Daniel Johannsen, Timo Kötzing, Per Kristian Lehre, Markus Wagner, and Carola Winzen. 2011. Faster black-box algorithms through higher arity operators. In Foundations of Genetic Algorithms, FUGA 2011. ACM, 163-172.
+[5] Benjamin Doerr and Martin S. Krejca. 2020. Significance-based estimation-ofdistribution algorithms. IEEE Transactions on Evolutionary Computation 24 (2020), $1025-1034$.
+[6] Benjamin Doerr and Martin S. Krejca. 2020. The univariate marginal distribution algorithm copes well with deception and epistasis. In Evolutionary Computation in Combinatorial Optimization, EveCOP 2020. Springer, 51-66.
+[7] Benjamin Doerr, Carsten Witt, and Jing Yang. 2021. Runtime analysis for selfadaptive mutation rates. Algorithmica 83 (2021), 1012-1053.
+[8] Stefan Droste, Thomas Jansen, Karsten Tinnefeld, and Ingo Wegener. 2002. A New Framework for the Valuation of Algorithms for Black-Box Optimization. In Foundations of Genetic Algorithms, FUGA 2002. Morgan Kasfinann, 253-270.
+[9] Per Kristian Lehre and Phan Trung Hai Nguyen. 2019. On the limitations of the univariate marginal distribution algorithm to deception and where bivariate EDAs might help. In Foundations of Genetic Algorithms, FUGA 2019. ACM, 154168.
+[10] Nicholas Metropolis, Arianna W. Rosenbluth, Marshall N. Rosenbluth, Augusta H. Teller, and Edward Teller. 1953. Equation of State Calculations by Fast Computing Machines. The Journal of Chemical Physics 21 (1953), 1087-1092.
+[11] Shouda Wang, Weijie Zheng, and Benjamin Doerr. 2021. Choosing the right algorithm with hints from complexity theory. In International Joint Conference on Artificial Intelligence, IJCAI 2021. ijcai.org, 1697-1703.

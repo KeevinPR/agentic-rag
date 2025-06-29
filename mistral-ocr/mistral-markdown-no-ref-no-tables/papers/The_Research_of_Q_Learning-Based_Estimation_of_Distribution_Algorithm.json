@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/The Research of Q Learning-Based Estimation of Distribution Algorithm.md",
+    "filename": "The Research of Q Learning-Based Estimation of Distribution Algorithm.md",
+    "title": "The Research of Q Learning-Based Estimation of Distribution Algorithm",
+    "year": "2011"
+  },
+  "references": {
+    "header": "# REFERENCES",
+    "content": "[1] Sergios T, Konstantinos K. Pattern Recognition, Second Edition [M]. San Diego: Academic Press. 2003.\n[2] Dasgupta D, ,Forrest S. Artificial immune systems and their applications [M]. Berlin: Spring-Verlag 1998\n[3] Slowinski R, Hapke M. Scheduling under fuzziness [M]. New York: Physica-Verlag, 2000.\n[4] Seber G A R Linear regression analysis [M]. New York: John Wiley, 1977.\n[5] Deng J L. Introduction to grey system theory (J]. The Journal of Grey System, 1989, 1(1):",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Sergios T, Konstantinos K. Pattern Recognition, Second Edition [M]. San Diego: Academic Press. 2003."
+      },
+      {
+        "ref_id": "2",
+        "text": "Dasgupta D, ,Forrest S. Artificial immune systems and their applications [M]. Berlin: Spring-Verlag 1998"
+      },
+      {
+        "ref_id": "3",
+        "text": "Slowinski R, Hapke M. Scheduling under fuzziness [M]. New York: Physica-Verlag, 2000."
+      },
+      {
+        "ref_id": "4",
+        "text": "Seber G A R Linear regression analysis [M]. New York: John Wiley, 1977."
+      },
+      {
+        "ref_id": "5",
+        "text": "Deng J L. Introduction to grey system theory (J]. The Journal of Grey System, 1989, 1(1):"
+      }
+    ],
+    "reference_count": 5,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Function",
+        "GA",
+        "UMDA",
+        "PBIL",
+        "MIMIC",
+        "$\\begin{aligned} & \\text { $\\beta- } \\\\ & \\text { QEDA } \\end{aligned}$",
+        "$\\begin{aligned} & \\text { M- } \\\\ & \\text { QEDA } \\end{aligned}$"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          22,
+          27,
+          29,
+          31,
+          42,
+          50
+        ],
+        [
+          "Quadric",
+          23,
+          17,
+          31,
+          24,
+          45,
+          50
+        ],
+        [
+          "Schaffer",
+          11,
+          11,
+          27,
+          12,
+          40,
+          50
+        ],
+        [
+          "Griewank",
+          28,
+          24,
+          34,
+          29,
+          45,
+          50
+        ],
+        [
+          "Rosenbrock",
+          14,
+          31,
+          49,
+          28,
+          46,
+          50
+        ],
+        [
+          "Rastrigin",
+          19,
+          21,
+          35,
+          14,
+          44,
+          50
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The results of the algorithm is run 50 times the mean, standard deviation and worst values",
+      "headers": [
+        "Function",
+        "GA",
+        "",
+        "UMD <br> A",
+        "PBIL",
+        "MIMIC",
+        "$\\begin{gathered} \\text { $\\beta-$ } \\\\ \\text { QED } \\\\ \\text { A } \\end{gathered}$",
+        "$\\begin{gathered} \\text { M- } \\\\ \\text { QC } \\\\ \\text { D } \\\\ \\text { A } \\end{gathered}$"
+      ],
+      "rows": [
+        [
+          "Sp he re",
+          "average",
+          "$\\begin{aligned} & 1.1200 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 9.200 \\\\ & \\text { 0E- } \\\\ & \\text { 04 } \\end{aligned}$",
+          "$\\begin{aligned} & 8.4000 \\\\ & \\text { E-04 } \\end{aligned}$",
+          "$\\begin{aligned} & 4.5600 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 3.200 \\\\ & \\text { 0E-04 } \\end{aligned}$",
+          0
+        ],
+        [
+          "",
+          "Standard deviation",
+          "$\\begin{aligned} & 1.0029 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 1.006 \\\\ & \\text { 9E- } \\\\ & \\text { 03 } \\end{aligned}$",
+          "$\\begin{aligned} & 9.9714 \\\\ & \\text { E-04 } \\end{aligned}$",
+          "$\\begin{aligned} & 1.9290 \\\\ & \\text { E-02 } \\end{aligned}$",
+          "$\\begin{aligned} & 7.406 \\\\ & \\text { 6E-04 } \\end{aligned}$",
+          0
+        ],
+        [
+          "",
+          "Worst value",
+          "$\\begin{aligned} & 2.0000 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 2.000 \\\\ & \\text { 0E- } \\\\ & \\text { 03 } \\end{aligned}$",
+          "$\\begin{aligned} & 2.0000 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 1.2800 \\\\ & \\text { E-01 } \\end{aligned}$",
+          "$\\begin{aligned} & 2.000 \\\\ & \\text { 0E-03 } \\end{aligned}$",
+          0
+        ],
+        [
+          "Q $\\begin{aligned} & \\text { us } \\\\ & \\text { dti } \\\\ & \\text { c } \\end{aligned}$",
+          "Average <br> Standard deviation",
+          "$\\begin{aligned} & 0.5166 \\\\ & 2.5801 \\end{aligned}$",
+          "$\\begin{aligned} & 1.136 \\\\ & 5 \\\\ & 6 \\end{aligned}$",
+          0.1091,
+          0.3731,
+          "$\\begin{aligned} & 0.028 \\\\ & 7 \\end{aligned}$",
+          0
+        ],
+        [
+          "",
+          "Worst value",
+          "$\\begin{aligned} & 18.3680 \\\\ & 5.7299 \\end{aligned}$",
+          "$\\begin{aligned} & 23.24 \\\\ & 70 \\end{aligned}$",
+          0.287,
+          7.715,
+          "$\\begin{aligned} & 0.287 \\\\ & 0 \\end{aligned}$",
+          0
+        ],
+        [
+          "$\\begin{aligned} & \\text { Sc } \\\\ & \\text { ha } \\\\ & \\text { ffe } \\end{aligned}$",
+          "average <br> Standard deviation",
+          "$\\begin{aligned} & 5.7299 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 3.196 \\\\ & 7 E- \\\\ & 03 \\end{aligned}$",
+          "$\\begin{aligned} & 5.5335 \\\\ & \\text { E-04 } \\end{aligned}$",
+          "$\\begin{aligned} & 4.1733 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 3.814 \\\\ & 5 E- \\\\ & \\text { OS } \\end{aligned}$",
+          "$\\begin{aligned} & 0 \\\\ & 0 \\end{aligned}$"
+        ],
+        [
+          "r",
+          "Standard deviation",
+          "$\\begin{aligned} & 5.0882 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 4.141 \\\\ & 8 \\mathrm{E}- \\\\ & 03 \\end{aligned}$",
+          "$\\begin{aligned} & 1.5937 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 4.9006 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 7.706 \\\\ & 4 \\mathrm{E}-05 \\end{aligned}$",
+          0
+        ],
+        [
+          "",
+          "Worst value",
+          "$\\begin{aligned} & 1.2625 \\\\ & \\text { E-02 } \\end{aligned}$",
+          "$\\begin{aligned} & 1.419 \\\\ & 3 \\mathrm{E}- \\\\ & 02 \\end{aligned}$",
+          "$\\begin{aligned} & 9.5638 \\\\ & \\text { E-03 } \\end{aligned}$",
+          "$\\begin{aligned} & 1.8953 \\\\ & \\text { E-02 } \\end{aligned}$",
+          "$\\begin{aligned} & 1.907 \\\\ & 2 \\mathrm{E}-04 \\end{aligned}$",
+          0
+        ],
+        [
+          "$\\begin{aligned} & \\text { Gr } \\\\ & \\text { se } \\\\ & \\text { wa } \\\\ & \\text { ok } \\end{aligned}$",
+          "average <br> Standard deviation",
+          "$\\begin{aligned} & 0.3550 \\\\ & 0.4045 \\end{aligned}$",
+          "$\\begin{aligned} & 0.462 \\\\ & 0.457 \\\\ & 2 \\end{aligned}$",
+          0.2582,
+          0.3478,
+          "$\\begin{aligned} & 0.080 \\\\ & 7 \\end{aligned}$",
+          0
+        ],
+        [
+          "",
+          "Worst value",
+          0.8068,
+          "$\\begin{aligned} & 1.164 \\\\ & 5 \\end{aligned}$",
+          0.8068,
+          1.04,
+          "$\\begin{aligned} & 0.806 \\\\ & 8 \\end{aligned}$",
+          0
+        ],
+        [
+          "$\\begin{aligned} & \\text { R } \\\\ & \\text { os } \\\\ & \\text { en } \\\\ & \\text { br } \\\\ & \\text { oc } \\\\ & \\text { k } \\end{aligned}$",
+          "average <br> Standard deviation",
+          "$\\begin{aligned} & 5.9197 \\\\ & 7.7090 \\end{aligned}$",
+          "$\\begin{aligned} & 0.581 \\\\ & 1.451 \\end{aligned}$",
+          0.0038,
+          1.3108,
+          "$\\begin{aligned} & 0.015 \\\\ & 2 \\end{aligned}$",
+          0
+        ],
+        [
+          "",
+          "Worst value",
+          19.5757,
+          "$\\begin{aligned} & 7.753 \\\\ & 8 \\end{aligned}$",
+          0.1881,
+          19.5757,
+          "$\\begin{aligned} & 0.195 \\\\ & 7 \\end{aligned}$",
+          0
+        ],
+        [
+          "$\\begin{aligned} & \\text { Ra } \\\\ & \\text { str } \\end{aligned}$",
+          "average",
+          9.3978,
+          "$\\begin{aligned} & 3.420 \\\\ & 6 \\end{aligned}$",
+          0.119,
+          2.3572,
+          "$\\begin{aligned} & 0.047 \\\\ & 6 \\end{aligned}$",
+          0
+        ],
+        [
+          "$\\begin{aligned} & \\text { qj } \\\\ & \\text { n } \\end{aligned}$",
+          "Standard deviation",
+          14.5125,
+          "$\\begin{aligned} & 6.213 \\\\ & 3 \\end{aligned}$",
+          0.1836,
+          5.6836,
+          "$\\begin{aligned} & 0.130 \\\\ & 2 \\end{aligned}$",
+          0
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:"
+        ],
+        [
+          "",
+          "Worst value",
+          79.9851,
+          "$\\begin{aligned} & 20.78 \\\\ & 51 \\end{aligned}$",
+          0.3967,
+          20.0,
+          "$\\begin{aligned} & 0.396 \\\\ & 7 \\end{aligned}$",
+          0
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 8
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 The average running time of each algorithm",
+      "headers": [
+        "function",
+        "GA",
+        "UMDA",
+        "PBIL",
+        "MIMIC",
+        "$\\begin{aligned} & \\text { ® } \\\\ & \\text { QEDA } \\end{aligned}$",
+        "$\\begin{aligned} & \\text { M- } \\\\ & \\text { QEDA } \\end{aligned}$"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          1.0913,
+          1.4806,
+          1.3759,
+          7.5172,
+          1.3169,
+          0.6519
+        ],
+        [
+          "Quadric",
+          1.1619,
+          2.1466,
+          1.2916,
+          10.0963,
+          1.1741,
+          0.6056
+        ],
+        [
+          "Schaffer",
+          1.0669,
+          0.3894,
+          0.2441,
+          0.9788,
+          0.2641,
+          0.1656
+        ],
+        [
+          "Griewank",
+          0.8034,
+          0.8894,
+          0.5781,
+          3.1812,
+          0.6056,
+          0.3887
+        ],
+        [
+          "Rosenbrock",
+          1.2272,
+          1.2347,
+          0.1844,
+          8.6994,
+          1.1469,
+          0.5784
+        ],
+        [
+          "Rastrigin",
+          1.1497,
+          1.9047,
+          1.0859,
+          13.7091,
+          1.2369,
+          0.9159
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    }
+  ]
+}

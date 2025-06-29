@@ -1,0 +1,584 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/A hybrid estimation of distribution algorithm for the offline 2D variable-sized bin packing problem.md",
+    "filename": "A hybrid estimation of distribution algorithm for the offline 2D variable-sized bin packing problem.md",
+    "title": "A hybrid estimation of distribution algorithm for the offline 2D variable-sized bin packing problem",
+    "year": "2024"
+  },
+  "references": {
+    "header": "# References",
+    "content": "Alvarez-Valdes R, Parreño F, Tamarit JM (2012) A GRASP/Path Relinking algorithm for two- and three-dimensional multiple bin-size bin packing problems. Comput Oper Res 40(12):3081-3090. https://doi.org/10.1016/j.cor.2012.03.016\nAlves CJ, De Carvalho MV (2007) Accelerating column generation for variable sized bin-packing problems. Eur J Oper Res 183(3):1333-1352\nBaker BS, Coffman EG, Rivest RL (1980) Orthogonal packing in two dimensions. SIAM J Comput 9(4):846-855\nBaldi MM, Crainic TG, Perboli G, Tadei R (2014) Branch-and-price and beam search algorithms for the Variable Cost and Size Bin Packing Problem with optional rectangles. Ann Oper Res 222(1):125-141\nBang-Jansen J, Larsen R (2012) Efficient algorithms for real-life instances of the variable size bin packing problem. Comput Oper Res 39(11):2848-2857\nBelov G, Scheithauser G (2002) A cutting plane algorithm for the one dimensional cutting stock problem with multiple stock lengths. Eur J Oper Res 141(2):274-294\nBlum C, Hemmelmayr V, Hernández H, Schmid V (2010) Hybrid algorithms for the variable sized bin packing problem. LNCS 6373:16-30\nBorgulya I (2019) An EDA for the 2D knapsack problem with guillotine constraint. CEJOR 27:329356. https://doi.org/10.1007/s10100-018-0551-x\n\nBorgulya I (2021) A hybrid evolutionary algorithm for the offline Bin Packing Problem. CEJOR 29:425-445. https://doi.org/10.1007/s10100-020-00695-5\nBuljubašić M, Vasquez M (2016) Consistent neighborhood search for one-dimensional bin packing and two-dimensional vector packing. Comput Oper Res 76:12-21\nBurke EK, Kendall G, Whitwell G (2004) A new placement heuristic for the orthogonal stock-cutting problem. Oper Res 52:655-671\nCai Y, Huaping C, Rui X, Hao S, Xueping L (2013) An estimation of distribution algorithm for the 3D bin packing problem with various bin sizes. LNCS 8206:401-408\nChu C, La R (2001) Variable-sized bin packing: tight absolute worst-case performance ratios for four approximation algorithms. SIAM J Comput 30:2069-2083\nCorreia I, Gouveia L, Saldanha-da-Gama F (2008) Solving the variable size bin packing problem with discretized formulations. Comput Oper Res 35:2103-2113\nCrainic TG, Perboli G, Tadei R (2008) Extreme point-based heuristics for three-dimensional bin packing. Informs J Comput 20(3):368-384\nCrainic TG, Perboli G, Rei W, Tadei R (2011) Efficient lower bounds and heuristics for the variable cost and size bin packing problem. Comput Oper Res 38(11):1474-1482\nEpstein L, Levin A (2012) Bin packing with general cost structures. Math Program 132(1-2):355-391\nFalkenauer E (1996) A hybrid grouping genetic algorithm for bin packing. J Heuristics 2:5-30\nFriesen DK, Langston MA (1986) Variable-sized bin packing. SIAM J Comput 15(1):222-230\nGarey M, Johnson D (1979) Computers and intractability: a guide to the theory of NP-completeness. W.H. Freeman, San Francisco\n\nHaouari M, Serairi M (2009) Heuristics for the variable sized bin-packing problem. Comput Oper Res 36:2877-2884\nHaouari M, Serairi M (2011) Relaxations and exact solution of the variable sized bin packing problem. Comput Optim Appl 48:345-368\nHemmelmayr V, Schmid V, Blum C (2012) Variable neighbourhood search for the variable sized bin packing problem. Comput Oper Res 39:1097-1108\nHopper E (2000) Two-dimensional Packing Utilising Evolutionary Algorithms and Other Meta-heuristic Methods, Ph.D. Thesis, University of Wales, Cardiff School of Engineering\nHopper E, Turton BCH (2002) An empirical study of meta-heuristics applied to 2D rectangular bin pack-ing-part I. Studia Inform Universalis 2:77-92\n\nKang J, Park S (2003) Algorithms for the variable sized bin packing problem. Eur J Oper Res 147(2):365-372\nLiu Y, Chu C, Wang K (2011) A dynamic programming-based heuristic for the variable sized two-dimensional bin packing problem. Int J Prod Res 49(13):3815-3831\nMaiza M, Labed A, Radjef MS (2012) Efficient algorithms for the offline variable sized bin-packing problem. J Glob Optim. https://doi.org/10.1007/s10898-012-9989-x\nMartello S, Pisinger D, Vigo D (2000) The three-dimensional bin packing problem. Oper Res 48(2):256-267\nMonaci M (2001) Algorithms for packing and scheduling problems, Ph.D. Thesis, Università di Bologna, Bologna\nOrtmann FG, Ntene N, Van Vuuren JH (2010) New and improved level heuristics for the rectangular strip packing and variable-sized bin packing problems. Eur J Oper Res 203:306-315\nPisinger D, Sigurd M (2005) The two-dimensional bin packing problem with variable bin sizes and costs. Discrete Optim 2:154-167\nQuiroz-Castellanos M, Cruz-Reyes L, Torres-Jimenez J, Gómez C, Héctor S, Huacuja JF, Alvim ACF (2015) A grouping genetic algorithm with controlled gene transmission for the bin packing problem. Comput Oper Res 55:52-64\nWang PY (1983) Two algorithms for constrained two-dimensional cutting stock problems. Oper Res 31:573-586\nWei L, Oon WC, Zhu W, Lim A (2013) A goal-driven approach to the 2D bin packing and variable-sized bin packing problems. Eur J Oper Res 224:110-121\n\nPublisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Alvarez-Valdes R, Parreño F, Tamarit JM (2012) A GRASP/Path Relinking algorithm for two- and three-dimensional multiple bin-size bin packing problems. Comput Oper Res 40(12):3081-3090. https://doi.org/10.1016/j.cor.2012.03.016"
+      },
+      {
+        "ref_id": "2",
+        "text": "Alves CJ, De Carvalho MV (2007) Accelerating column generation for variable sized bin-packing problems. Eur J Oper Res 183(3):1333-1352"
+      },
+      {
+        "ref_id": "3",
+        "text": "Baker BS, Coffman EG, Rivest RL (1980) Orthogonal packing in two dimensions. SIAM J Comput 9(4):846-855"
+      },
+      {
+        "ref_id": "4",
+        "text": "Baldi MM, Crainic TG, Perboli G, Tadei R (2014) Branch-and-price and beam search algorithms for the Variable Cost and Size Bin Packing Problem with optional rectangles. Ann Oper Res 222(1):125-141"
+      },
+      {
+        "ref_id": "5",
+        "text": "Bang-Jansen J, Larsen R (2012) Efficient algorithms for real-life instances of the variable size bin packing problem. Comput Oper Res 39(11):2848-2857"
+      },
+      {
+        "ref_id": "6",
+        "text": "Belov G, Scheithauser G (2002) A cutting plane algorithm for the one dimensional cutting stock problem with multiple stock lengths. Eur J Oper Res 141(2):274-294"
+      },
+      {
+        "ref_id": "7",
+        "text": "Blum C, Hemmelmayr V, Hernández H, Schmid V (2010) Hybrid algorithms for the variable sized bin packing problem. LNCS 6373:16-30"
+      },
+      {
+        "ref_id": "8",
+        "text": "Borgulya I (2019) An EDA for the 2D knapsack problem with guillotine constraint. CEJOR 27:329356. https://doi.org/10.1007/s10100-018-0551-x"
+      },
+      {
+        "ref_id": "9",
+        "text": "Borgulya I (2021) A hybrid evolutionary algorithm for the offline Bin Packing Problem. CEJOR 29:425-445. https://doi.org/10.1007/s10100-020-00695-5"
+      },
+      {
+        "ref_id": "10",
+        "text": "Buljubašić M, Vasquez M (2016) Consistent neighborhood search for one-dimensional bin packing and two-dimensional vector packing. Comput Oper Res 76:12-21"
+      },
+      {
+        "ref_id": "11",
+        "text": "Burke EK, Kendall G, Whitwell G (2004) A new placement heuristic for the orthogonal stock-cutting problem. Oper Res 52:655-671"
+      },
+      {
+        "ref_id": "12",
+        "text": "Cai Y, Huaping C, Rui X, Hao S, Xueping L (2013) An estimation of distribution algorithm for the 3D bin packing problem with various bin sizes. LNCS 8206:401-408"
+      },
+      {
+        "ref_id": "13",
+        "text": "Chu C, La R (2001) Variable-sized bin packing: tight absolute worst-case performance ratios for four approximation algorithms. SIAM J Comput 30:2069-2083"
+      },
+      {
+        "ref_id": "14",
+        "text": "Correia I, Gouveia L, Saldanha-da-Gama F (2008) Solving the variable size bin packing problem with discretized formulations. Comput Oper Res 35:2103-2113"
+      },
+      {
+        "ref_id": "15",
+        "text": "Crainic TG, Perboli G, Tadei R (2008) Extreme point-based heuristics for three-dimensional bin packing. Informs J Comput 20(3):368-384"
+      },
+      {
+        "ref_id": "16",
+        "text": "Crainic TG, Perboli G, Rei W, Tadei R (2011) Efficient lower bounds and heuristics for the variable cost and size bin packing problem. Comput Oper Res 38(11):1474-1482"
+      },
+      {
+        "ref_id": "17",
+        "text": "Epstein L, Levin A (2012) Bin packing with general cost structures. Math Program 132(1-2):355-391"
+      },
+      {
+        "ref_id": "18",
+        "text": "Falkenauer E (1996) A hybrid grouping genetic algorithm for bin packing. J Heuristics 2:5-30"
+      },
+      {
+        "ref_id": "19",
+        "text": "Friesen DK, Langston MA (1986) Variable-sized bin packing. SIAM J Comput 15(1):222-230"
+      },
+      {
+        "ref_id": "20",
+        "text": "Garey M, Johnson D (1979) Computers and intractability: a guide to the theory of NP-completeness. W.H. Freeman, San Francisco"
+      },
+      {
+        "ref_id": "21",
+        "text": "Haouari M, Serairi M (2009) Heuristics for the variable sized bin-packing problem. Comput Oper Res 36:2877-2884"
+      },
+      {
+        "ref_id": "22",
+        "text": "Haouari M, Serairi M (2011) Relaxations and exact solution of the variable sized bin packing problem. Comput Optim Appl 48:345-368"
+      },
+      {
+        "ref_id": "23",
+        "text": "Hemmelmayr V, Schmid V, Blum C (2012) Variable neighbourhood search for the variable sized bin packing problem. Comput Oper Res 39:1097-1108"
+      },
+      {
+        "ref_id": "24",
+        "text": "Hopper E (2000) Two-dimensional Packing Utilising Evolutionary Algorithms and Other Meta-heuristic Methods, Ph.D. Thesis, University of Wales, Cardiff School of Engineering"
+      },
+      {
+        "ref_id": "25",
+        "text": "Hopper E, Turton BCH (2002) An empirical study of meta-heuristics applied to 2D rectangular bin pack-ing-part I. Studia Inform Universalis 2:77-92"
+      },
+      {
+        "ref_id": "26",
+        "text": "Kang J, Park S (2003) Algorithms for the variable sized bin packing problem. Eur J Oper Res 147(2):365-372"
+      },
+      {
+        "ref_id": "27",
+        "text": "Liu Y, Chu C, Wang K (2011) A dynamic programming-based heuristic for the variable sized two-dimensional bin packing problem. Int J Prod Res 49(13):3815-3831"
+      },
+      {
+        "ref_id": "28",
+        "text": "Maiza M, Labed A, Radjef MS (2012) Efficient algorithms for the offline variable sized bin-packing problem. J Glob Optim. https://doi.org/10.1007/s10898-012-9989-x"
+      },
+      {
+        "ref_id": "29",
+        "text": "Martello S, Pisinger D, Vigo D (2000) The three-dimensional bin packing problem. Oper Res 48(2):256-267"
+      },
+      {
+        "ref_id": "30",
+        "text": "Monaci M (2001) Algorithms for packing and scheduling problems, Ph.D. Thesis, Università di Bologna, Bologna"
+      },
+      {
+        "ref_id": "31",
+        "text": "Ortmann FG, Ntene N, Van Vuuren JH (2010) New and improved level heuristics for the rectangular strip packing and variable-sized bin packing problems. Eur J Oper Res 203:306-315"
+      },
+      {
+        "ref_id": "32",
+        "text": "Pisinger D, Sigurd M (2005) The two-dimensional bin packing problem with variable bin sizes and costs. Discrete Optim 2:154-167"
+      },
+      {
+        "ref_id": "33",
+        "text": "Quiroz-Castellanos M, Cruz-Reyes L, Torres-Jimenez J, Gómez C, Héctor S, Huacuja JF, Alvim ACF (2015) A grouping genetic algorithm with controlled gene transmission for the bin packing problem. Comput Oper Res 55:52-64"
+      },
+      {
+        "ref_id": "34",
+        "text": "Wang PY (1983) Two algorithms for constrained two-dimensional cutting stock problems. Oper Res 31:573-586"
+      },
+      {
+        "ref_id": "35",
+        "text": "Wei L, Oon WC, Zhu W, Lim A (2013) A goal-driven approach to the 2D bin packing and variable-sized bin packing problems. Eur J Oper Res 224:110-121"
+      },
+      {
+        "ref_id": "36",
+        "text": "Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations."
+      }
+    ],
+    "reference_count": 36,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "2",
+      "table_title": "Table 2 shows the names of the test sets (set), the number of rectangles in the instances $(n)$, the number of instances in the set (inst). At the average results we see the average utilization rate of the instances in the set $(\\mu)$, the average of the standard deviation of $\\mu(S D)$ and the average number of used bins in the solutions of the instances (bin_n). At the best results we see the average best utilization rate of the instances in the set $(\\mu b)$ and the average number of used bins in the best solutions of the instances ( $b b i n \\_n$ ). First we realised in Table 2 that the algorithm could reach the same $\\mu$ result of an instance with different numbers of bins. So the average number of the used bins is very rarely an integer number.",
+      "headers": [
+        "Set",
+        "Inst",
+        "N",
+        "$\\lambda=0.85$",
+        "$\\lambda=0.9$",
+        "$\\lambda=0.95$",
+        "$\\lambda=0.99$"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          2900,
+          "$\\mathbf{0 . 9 7 7}$",
+          0.95,
+          0.89,
+          0.846
+        ],
+        [
+          2,
+          1,
+          900,
+          0.948,
+          0.936,
+          "$\\mathbf{0 . 9 6 8}$",
+          0.881
+        ],
+        [
+          400,
+          25,
+          "$20-100$",
+          0.957,
+          "$\\mathbf{0 . 9 6 0}$",
+          0.941,
+          0.904
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The average results on the test sets",
+      "headers": [
+        "Set",
+        "$n$",
+        "Inst",
+        "Average results",
+        "",
+        "",
+        "Best results",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "$\\mu$",
+          "$S D$",
+          "bin_n",
+          "$\\mu b$",
+          "bbin_n"
+        ],
+        [
+          1,
+          2900,
+          1,
+          0.915,
+          0.04,
+          643.7,
+          0.979,
+          597
+        ],
+        [
+          2,
+          800,
+          1,
+          0.948,
+          0.03,
+          86.2,
+          0.961,
+          83
+        ],
+        [
+          1,
+          100,
+          5,
+          0.997,
+          0.0,
+          9.6,
+          0.997,
+          9.6
+        ],
+        [
+          2,
+          100,
+          5,
+          0.995,
+          0.0,
+          11.1,
+          0.995,
+          10.2
+        ],
+        [
+          3,
+          150,
+          5,
+          0.995,
+          0.0,
+          15.4,
+          0.995,
+          13.2
+        ],
+        [
+          "PS",
+          "$20-100$",
+          500,
+          0.942,
+          0.02,
+          20.8,
+          0.978,
+          18.6
+        ],
+        [
+          "Nice",
+          "$25-500$",
+          170,
+          0.937,
+          0.03,
+          4.7,
+          0.974,
+          3.8
+        ],
+        [
+          "Path",
+          "$25-500$",
+          170,
+          0.918,
+          0.04,
+          4.9,
+          0.969,
+          4.2
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 8
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Comparison of the results on the test sets",
+      "headers": [
+        "Set",
+        "Average results",
+        "",
+        "",
+        "",
+        "Best results",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "SC",
+          "SCR",
+          "GRASP/PR",
+          "VBEA",
+          "",
+          "VBEA",
+          "",
+          "GDA",
+          ""
+        ],
+        [
+          "",
+          "$\\mu$",
+          "$\\mu$",
+          "$\\mu$",
+          "$\\mu$",
+          "bin_n",
+          "$\\mu b$",
+          "bbin_n",
+          "$\\mu b$",
+          "bbin_n"
+        ],
+        [
+          1,
+          0.844,
+          0.844,
+          "-",
+          0.915,
+          643.7,
+          0.979,
+          597,
+          0.897,
+          390.0
+        ],
+        [
+          2,
+          0.9,
+          0.9,
+          "-",
+          0.948,
+          86.2,
+          0.961,
+          83,
+          0.933,
+          64.0
+        ],
+        [
+          1,
+          0.955,
+          0.955,
+          "-",
+          0.997,
+          9.6,
+          0.997,
+          9.6,
+          0.984,
+          6.2
+        ],
+        [
+          2,
+          0.908,
+          0.908,
+          "-",
+          0.995,
+          11.1,
+          0.995,
+          10.2,
+          0.936,
+          7.8
+        ],
+        [
+          3,
+          0.939,
+          0.939,
+          "-",
+          0.995,
+          15.4,
+          0.995,
+          13.2,
+          0.96,
+          9.8
+        ],
+        [
+          "PS",
+          0.821,
+          0.819,
+          0.9,
+          0.942,
+          20.8,
+          0.978,
+          18.6,
+          0.898,
+          16.0
+        ],
+        [
+          "Nice",
+          0.831,
+          0.829,
+          "-",
+          0.937,
+          4.7,
+          0.974,
+          3.8,
+          0.955,
+          4.8
+        ],
+        [
+          "Path",
+          0.853,
+          0.852,
+          "-",
+          0.918,
+          4.9,
+          0.969,
+          4.2,
+          0.957,
+          5.2
+        ],
+        [
+          "Avg",
+          0.883,
+          0.883,
+          "",
+          0.956,
+          "",
+          0.981,
+          "",
+          0.944,
+          ""
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 10
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Running times of the methods on the test sets",
+      "headers": [
+        "Set",
+        "Average time <br> seconds (UCT time)",
+        "",
+        "",
+        "",
+        "Best time <br> seconds (UCT <br> time)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "VBEA",
+          "SC",
+          "SCR",
+          "GRASP/PR",
+          "GDA",
+          "VBEA",
+          ""
+        ],
+        [
+          1,
+          295.9,
+          3.9,
+          4.4,
+          "-",
+          225.9,
+          275.1,
+          ""
+        ],
+        [
+          2,
+          68.6,
+          0.2,
+          0.2,
+          "-",
+          8.97,
+          37.8,
+          ""
+        ],
+        [
+          1,
+          3.8,
+          0.0,
+          0.0,
+          "-",
+          0.1,
+          0.4,
+          ""
+        ],
+        [
+          2,
+          69.2,
+          0.0,
+          0.0,
+          "-",
+          0.57,
+          1.0,
+          ""
+        ],
+        [
+          3,
+          11.7,
+          0.0,
+          0.0,
+          "-",
+          0.2,
+          1.0,
+          ""
+        ],
+        [
+          "PS",
+          8.8,
+          0.0,
+          0.0,
+          6.4,
+          25.4,
+          0.7,
+          ""
+        ],
+        [
+          "Nice",
+          23.6,
+          0.0,
+          0.0,
+          "-",
+          28.4,
+          1.9,
+          ""
+        ],
+        [
+          "Path",
+          24.5,
+          0.0,
+          0.0,
+          "-",
+          29.4,
+          2.0,
+          ""
+        ],
+        [
+          "Avg.:",
+          55.8,
+          0.5,
+          0.6,
+          "",
+          93,
+          40.1,
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 8
+    }
+  ]
+}

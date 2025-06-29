@@ -1,0 +1,859 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/A restarted estimation of distribution algorithm for solving sudoku puzzles.md",
+    "filename": "A restarted estimation of distribution algorithm for solving sudoku puzzles.md",
+    "title": "A restarted estimation of distribution algorithm for solving sudoku puzzles",
+    "year": "2012"
+  },
+  "references": {
+    "header": "## Bibliography",
+    "content": "[1] P. Babu, K. Pelckmans, P. Stoica and J. Li, Linear systems, sparse solutions, and sudoku, IEEE Signal Process. Lett. 17 (2010), 40-42.\n[2] A. Bartlett and A. Langville, An integer programming model for the sudoku problem, J. Online Math. Appl. 8 (2008), article ID 1798.\n[3] T. Booth, Exponential convergence on a continuous Monte Carlo transport problem, Nucl. Sci. Eng. 127 (1997), 338-345.\n[4] A. Das and B. K. Chakrabati (Eds.), Quantum Annealing and Related Optimization Methods, Lecture Notes in Physics 679, Springer-Verlag, Heidelberg, 2005.\n[5] E. Gobet and S. Maire, A spectral Monte Carlo method for the Poisson equation, Monte Carlo Methods Appl. 10 (2004), 275-285.\n[6] J. Halton, Sequential Monte Carlo, Proc. Camb. Phil. Soc. 58 (1962), 57-78.\n[7] A. Inkala, AI Escargot - The Most Difficult Sudoku Puzzle, Bertrams Print on Demand, 2007.\n[8] P. Larranaga and J. A. Lozano (Eds.), Estimation of Distribution Algorithms, A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2002.\n[9] K. H. Lee, S. W. Baek and K. W. Kim, Inverse radiation analysis using repulsive particle swarm optimization, Int. J. Heat Mass Transfer 51 (2008), 2772-2783.\n\n[10] R. Lewis, Metaheuristic can solve sudoku puzzles, J. Heuristics 13 (2007), 387-401.\n[11] J. A. Lozano, P. Larranaga, I. Inaki and E. Bengoetxea (Eds.), Towards a New Evolutionary Computation, Advances on Estimation of Distribution Algorithms, Springer, 2006.\n[12] S. Maire, Reducing variance using iterated control variates, J. Stat. Comput. Simul. 73 (2003), 1-29.\n[13] T. K. Moon, J. H. Gunther and J. Kupin, Sinkhorn solves Sudoku, IEEE Trans. Inform. Theory 55 (2009), 1741-1746.\n[14] M. Perez and T. Marwala, Stochastic optimization approaches for solving sudoku, preprint (2008), http://arxiv.org/abs/0805.0697.\n[15] R. G. Reynolds, An introduction to cultural algorithms, in: Proceedings of the 3rd Annual Conference on Evolutionary Programming, World Scientific Publishing (1994), 131-139.\n[16] G. Santos-Garcia and M. Palomino, Solving sudoku puzzles with rewriting rules, Electron. Notes Theor. Comput. Sci. 17 (2007), 79-83.\n\nReceived July 20, 2011; accepted February 16, 2012.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "P. Babu, K. Pelckmans, P. Stoica and J. Li, Linear systems, sparse solutions, and sudoku, IEEE Signal Process. Lett. 17 (2010), 40-42."
+      },
+      {
+        "ref_id": "2",
+        "text": "A. Bartlett and A. Langville, An integer programming model for the sudoku problem, J. Online Math. Appl. 8 (2008), article ID 1798."
+      },
+      {
+        "ref_id": "3",
+        "text": "T. Booth, Exponential convergence on a continuous Monte Carlo transport problem, Nucl. Sci. Eng. 127 (1997), 338-345."
+      },
+      {
+        "ref_id": "4",
+        "text": "A. Das and B. K. Chakrabati (Eds.), Quantum Annealing and Related Optimization Methods, Lecture Notes in Physics 679, Springer-Verlag, Heidelberg, 2005."
+      },
+      {
+        "ref_id": "5",
+        "text": "E. Gobet and S. Maire, A spectral Monte Carlo method for the Poisson equation, Monte Carlo Methods Appl. 10 (2004), 275-285."
+      },
+      {
+        "ref_id": "6",
+        "text": "J. Halton, Sequential Monte Carlo, Proc. Camb. Phil. Soc. 58 (1962), 57-78."
+      },
+      {
+        "ref_id": "7",
+        "text": "A. Inkala, AI Escargot - The Most Difficult Sudoku Puzzle, Bertrams Print on Demand, 2007."
+      },
+      {
+        "ref_id": "8",
+        "text": "P. Larranaga and J. A. Lozano (Eds.), Estimation of Distribution Algorithms, A New Tool for Evolutionary Computation, Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "9",
+        "text": "K. H. Lee, S. W. Baek and K. W. Kim, Inverse radiation analysis using repulsive particle swarm optimization, Int. J. Heat Mass Transfer 51 (2008), 2772-2783."
+      },
+      {
+        "ref_id": "10",
+        "text": "R. Lewis, Metaheuristic can solve sudoku puzzles, J. Heuristics 13 (2007), 387-401."
+      },
+      {
+        "ref_id": "11",
+        "text": "J. A. Lozano, P. Larranaga, I. Inaki and E. Bengoetxea (Eds.), Towards a New Evolutionary Computation, Advances on Estimation of Distribution Algorithms, Springer, 2006."
+      },
+      {
+        "ref_id": "12",
+        "text": "S. Maire, Reducing variance using iterated control variates, J. Stat. Comput. Simul. 73 (2003), 1-29."
+      },
+      {
+        "ref_id": "13",
+        "text": "T. K. Moon, J. H. Gunther and J. Kupin, Sinkhorn solves Sudoku, IEEE Trans. Inform. Theory 55 (2009), 1741-1746."
+      },
+      {
+        "ref_id": "14",
+        "text": "M. Perez and T. Marwala, Stochastic optimization approaches for solving sudoku, preprint (2008), http://arxiv.org/abs/0805.0697."
+      },
+      {
+        "ref_id": "15",
+        "text": "R. G. Reynolds, An introduction to cultural algorithms, in: Proceedings of the 3rd Annual Conference on Evolutionary Programming, World Scientific Publishing (1994), 131-139."
+      },
+      {
+        "ref_id": "16",
+        "text": "G. Santos-Garcia and M. Palomino, Solving sudoku puzzles with rewriting rules, Electron. Notes Theor. Comput. Sci. 17 (2007), 79-83."
+      }
+    ],
+    "reference_count": 16,
+    "pattern_matched": "(?:^|\\n)#+\\s*Bibliography\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "",
+        "8",
+        "6",
+        "7",
+        "",
+        "4",
+        "",
+        "2"
+      ],
+      "rows": [
+        [
+          4,
+          "",
+          2,
+          3,
+          "",
+          "",
+          "",
+          9,
+          ""
+        ],
+        [
+          3,
+          7,
+          "",
+          "",
+          2,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          4,
+          "",
+          "",
+          "",
+          5,
+          ""
+        ],
+        [
+          8,
+          9,
+          "",
+          2,
+          5,
+          1,
+          "",
+          6,
+          7
+        ],
+        [
+          "",
+          1,
+          "",
+          "",
+          "",
+          3,
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          9,
+          "",
+          "",
+          7,
+          3
+        ],
+        [
+          "",
+          3,
+          "",
+          "",
+          "",
+          5,
+          2,
+          "",
+          1
+        ],
+        [
+          7,
+          "",
+          5,
+          "",
+          3,
+          2,
+          9,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "permutations",
+        "",
+        "pre-computation",
+        "",
+        "both optimizations",
+        ""
+      ],
+      "rows": [
+        [
+          "$\\alpha$",
+          "success",
+          "rounds",
+          "success",
+          "rounds",
+          "success",
+          "rounds"
+        ],
+        [
+          0.99,
+          98,
+          574,
+          100,
+          522,
+          100,
+          188
+        ],
+        [
+          0.9,
+          82,
+          67,
+          96,
+          60,
+          100,
+          25
+        ],
+        [
+          0.7,
+          42,
+          25,
+          71,
+          22,
+          100,
+          9
+        ],
+        [
+          0.5,
+          11,
+          17,
+          35,
+          14,
+          100,
+          6
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "2",
+        "4",
+        "",
+        "",
+        "7",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          6,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          3,
+          6,
+          8,
+          "",
+          4,
+          1,
+          5
+        ],
+        [
+          4,
+          3,
+          1,
+          "",
+          "",
+          5,
+          "",
+          "",
+          ""
+        ],
+        [
+          5,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          3,
+          2
+        ],
+        [
+          7,
+          9,
+          "",
+          "",
+          "",
+          "",
+          "",
+          6,
+          ""
+        ],
+        [
+          2,
+          "",
+          9,
+          7,
+          1,
+          "",
+          8,
+          "",
+          ""
+        ],
+        [
+          "",
+          4,
+          "",
+          "",
+          9,
+          3,
+          "",
+          "",
+          ""
+        ],
+        [
+          3,
+          1,
+          "",
+          "",
+          "",
+          4,
+          7,
+          5,
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$\\alpha$",
+        "success",
+        "iterations"
+      ],
+      "rows": [
+        [
+          0.99,
+          99,
+          277
+        ],
+        [
+          0.9,
+          81,
+          37
+        ],
+        [
+          0.7,
+          61,
+          14
+        ],
+        [
+          0.5,
+          43,
+          8
+        ],
+        [
+          0.3,
+          26,
+          7
+        ],
+        [
+          0.1,
+          12,
+          7
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "1",
+        "",
+        "7",
+        "",
+        "8",
+        "9",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          3,
+          8,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          9,
+          "",
+          "",
+          5,
+          6,
+          "",
+          ""
+        ],
+        [
+          "",
+          9,
+          "",
+          "",
+          7,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          3,
+          1,
+          "",
+          "",
+          "",
+          "",
+          2,
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          4,
+          5,
+          "",
+          "",
+          8,
+          ""
+        ],
+        [
+          "",
+          5,
+          "",
+          "",
+          6,
+          2,
+          4,
+          9,
+          ""
+        ],
+        [
+          6,
+          7,
+          3,
+          "",
+          4,
+          9,
+          "",
+          5,
+          1
+        ],
+        [
+          "",
+          4,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          3
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "A",
+        "B",
+        ""
+      ],
+      "rows": [
+        [
+          "A",
+          "A",
+          "",
+          "A",
+          "A",
+          "A",
+          "",
+          "",
+          ""
+        ],
+        [
+          "B",
+          "A",
+          "A",
+          "A",
+          "B",
+          "A",
+          "A",
+          "",
+          "A"
+        ],
+        [
+          "A",
+          "A",
+          "",
+          "A",
+          "A",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "",
+          "A",
+          ""
+        ],
+        [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "",
+          "",
+          "A",
+          "A"
+        ],
+        [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A"
+        ],
+        [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A"
+        ],
+        [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 describes this behavior for the previous hard puzzle. It gives the number of successes among 1000 attempts of resolution and the average total execution time in seconds. Four methods are compared: without restart, when we restart with one fixed zone at a time out of 3,9 or 27 zones which are, respectively, the $3 \\times 3$ blocks on the first diagonal, all the $3 \\times 3$ blocks and all the columns, rows and $3 \\times 3$ blocks. The estimation of mean time of success (ETS) of the algorithm is also given.",
+      "headers": [
+        "method",
+        "number of <br> successes",
+        "time",
+        "ETS"
+      ],
+      "rows": [
+        [
+          "no partial restart",
+          89,
+          0.198,
+          2.225
+        ],
+        [
+          13,
+          474,
+          0.614,
+          1.295
+        ],
+        [
+          19,
+          619,
+          1.113,
+          1.798
+        ],
+        [
+          127,
+          906,
+          1.694,
+          1.869
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "27 zones",
+        "",
+        "9 zones",
+        "",
+        "3 zones",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "success",
+          "time",
+          "success",
+          "time",
+          "success",
+          "time"
+        ],
+        [
+          "very easy",
+          1000,
+          0.046,
+          1000,
+          0.049,
+          1000,
+          0.047
+        ],
+        [
+          "easy",
+          1000,
+          0.113,
+          994,
+          0.129,
+          982,
+          0.104
+        ],
+        [
+          "medium",
+          959,
+          1.015,
+          884,
+          0.718,
+          659,
+          0.502
+        ],
+        [
+          "hard",
+          811,
+          2.394,
+          563,
+          1.451,
+          365,
+          0.726
+        ],
+        [
+          "fiendish",
+          605,
+          3.458,
+          336,
+          1.831,
+          221,
+          0.824
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        "7",
+        "",
+        "9",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          3,
+          "",
+          "",
+          2,
+          "",
+          "",
+          "",
+          8
+        ],
+        [
+          "",
+          "",
+          9,
+          6,
+          "",
+          "",
+          5,
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          5,
+          3,
+          "",
+          "",
+          9,
+          "",
+          ""
+        ],
+        [
+          "",
+          1,
+          "",
+          "",
+          8,
+          "",
+          "",
+          "",
+          2
+        ],
+        [
+          6,
+          "",
+          "",
+          "",
+          "",
+          4,
+          "",
+          "",
+          ""
+        ],
+        [
+          3,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          1,
+          ""
+        ],
+        [
+          "",
+          4,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          7
+        ],
+        [
+          "",
+          "",
+          7,
+          "",
+          "",
+          "",
+          3,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "number of <br> tested zones",
+        "number of <br> successes",
+        "CPU time"
+      ],
+      "rows": [
+        [
+          3,
+          0,
+          1.251
+        ],
+        [
+          9,
+          1,
+          2.857
+        ],
+        [
+          27,
+          9,
+          7.045
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

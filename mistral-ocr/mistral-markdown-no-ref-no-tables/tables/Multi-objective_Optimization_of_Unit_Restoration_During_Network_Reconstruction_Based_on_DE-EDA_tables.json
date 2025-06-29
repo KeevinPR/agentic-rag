@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/Multi-objective Optimization of Unit Restoration During Network Reconstruction Based on DE-EDA.md",
+    "filename": "Multi-objective Optimization of Unit Restoration During Network Reconstruction Based on DE-EDA.md",
+    "title": "Multi-objective Optimization of Unit Restoration During Network Reconstruction Based on DE-EDA",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "PARAMETER SETTINGS OF DE-EDA",
+      "headers": [
+        "$N P$",
+        "$G_{\\max }$",
+        "$F$",
+        "CR",
+        "$p_{r}^{\\min }$",
+        "$p_{r}^{\\max }$",
+        "H",
+        "$\\beta$"
+      ],
+      "rows": [
+        [
+          20,
+          20,
+          0.3,
+          0.3,
+          0.2,
+          0.9,
+          20,
+          0.95
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 8
+    },
+    {
+      "table_number": "II",
+      "table_title": "MERICs OF DE-EDA AND NSGA-II",
+      "headers": [
+        "algorithm",
+        "GD index",
+        "SP index"
+      ],
+      "rows": [
+        [
+          "DE-EDA",
+          0.203,
+          0.532
+        ],
+        [
+          "NSGA-II",
+          0.858,
+          0.694
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 shows the partial Pareto optimal solution and the corresponding objective function values that passed the elite check. The column of the network solution in the table represents that when Dijkstra is used to search for the target grid, the line weights use different values. Network scheme 1 represents $V_{n+1} \\in(0,1 / 3]$, and the line weight is assigned to the restoration weight; Network scheme 2 represents $V_{n+1} \\in(1 / 3,2 / 3]$, and the line weight is assigned to the restoration time; Network frame scheme 3 represents $V_{n+1} \\in(2 / 3,1)$, and the line assignment is the network topology relationship.",
+      "headers": [
+        "scheme",
+        "Units restoration <br> order",
+        "Network <br> scheme",
+        "f 1",
+        "f 2",
+        "f 3"
+      ],
+      "rows": [
+        [
+          1,
+          213222327,
+          2,
+          38.489,
+          13,
+          -1.859
+        ],
+        [
+          2,
+          223221327,
+          1,
+          30.18,
+          11,
+          -1.812
+        ],
+        [
+          3,
+          223132227,
+          3,
+          36.3,
+          10,
+          -1.627
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 6
+    }
+  ]
+}

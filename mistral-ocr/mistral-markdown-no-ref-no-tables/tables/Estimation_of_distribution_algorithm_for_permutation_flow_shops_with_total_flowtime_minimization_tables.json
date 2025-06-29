@@ -1,0 +1,765 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Estimation of distribution algorithm for permutation flow shops with total flowtime minimization.md",
+    "filename": "Estimation of distribution algorithm for permutation flow shops with total flowtime minimization.md",
+    "title": "Estimation of distribution algorithm for permutation flow shops with total flowtime minimization",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "$\\pi_{A}$",
+        "2",
+        "5",
+        "3",
+        "7",
+        "4",
+        "6",
+        "1"
+      ],
+      "rows": [
+        [
+          "$\\pi_{A}$",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\stackrel{\\text { ® }}{ }$"
+        ],
+        [
+          "",
+          "",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          "$\\stackrel{\\text { ® }}{-}$",
+          "$\\leftarrow$",
+          "$\\leftarrow$",
+          "$\\leftarrow$",
+          "$\\leftarrow$",
+          "$\\leftarrow$",
+          "$\\stackrel{\\text { ® }}{-}$"
+        ],
+        [
+          "",
+          "",
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          0,
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\stackrel{\\text { ® }}{-}$",
+          "$\\leftarrow$",
+          "$\\leftarrow$",
+          "$\\leftarrow$",
+          "$\\leftarrow$"
+        ],
+        [
+          "",
+          "",
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          4,
+          0,
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\stackrel{\\text { ® }}{-}$",
+          "$\\leftarrow$",
+          "$\\leftarrow$"
+        ],
+        [
+          "",
+          "",
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          5,
+          0,
+          "$\\uparrow$",
+          "$\\stackrel{\\text { ® }}{-}$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$"
+        ],
+        [
+          "",
+          "",
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          6,
+          0,
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\stackrel{\\text { ® }}{-}$",
+          "$\\leftarrow$"
+        ],
+        [
+          "",
+          "",
+          1,
+          2,
+          2,
+          2,
+          3,
+          4,
+          4
+        ],
+        [
+          7,
+          0,
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\stackrel{\\text { ® }}{-}$",
+          "$\\uparrow$",
+          "$\\uparrow$",
+          "$\\uparrow$"
+        ],
+        [
+          "",
+          "",
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 9
+    },
+    {
+      "table_number": "1",
+      "table_title": "Performance comparisons between PEDA and JEDA (no local search hybridized).",
+      "headers": [
+        "Problem",
+        "JEDA",
+        "PEDA"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          4.78,
+          "$\\mathbf{3 . 6 5}$"
+        ],
+        [
+          "$20 \\times 10$",
+          3.42,
+          "$\\mathbf{2 . 9 8}$"
+        ],
+        [
+          "$20 \\times 20$",
+          2.19,
+          "$\\mathbf{1 . 8 2}$"
+        ],
+        [
+          "$50 \\times 5$",
+          3.21,
+          "$\\mathbf{2 . 9 4}$"
+        ],
+        [
+          "$50 \\times 10$",
+          3.5,
+          "$\\mathbf{2 . 9 9}$"
+        ],
+        [
+          "$50 \\times 20$",
+          3.38,
+          "$\\mathbf{2 . 2 1}$"
+        ],
+        [
+          "$100 \\times 5$",
+          2.76,
+          "$\\mathbf{2 . 1 8}$"
+        ],
+        [
+          "$100 \\times 10$",
+          2.58,
+          "$\\mathbf{1 . 6 1}$"
+        ],
+        [
+          "$100 \\times 20$",
+          1.88,
+          "$\\mathbf{1 . 1 0}$"
+        ],
+        [
+          "Average",
+          3.08,
+          "$\\mathbf{2 . 3 9}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Performance comparisons on Taillard benchmark instances.",
+      "headers": [
+        "Problem",
+        "ILS",
+        "DDERLS",
+        "JHEDA",
+        "PHEDA"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0.026,
+          0.045,
+          0.026,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$20 \\times 10$",
+          0.047,
+          0.007,
+          0.015,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$20 \\times 20$",
+          0.017,
+          0.02,
+          0.011,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$50 \\times 5$",
+          0.542,
+          1.021,
+          0.343,
+          "$\\mathbf{0 . 2 0 1}$"
+        ],
+        [
+          "$50 \\times 10$",
+          0.505,
+          0.998,
+          0.418,
+          "$\\mathbf{0 . 3 5 2}$"
+        ],
+        [
+          "$50 \\times 20$",
+          0.571,
+          0.811,
+          0.431,
+          "$\\mathbf{0 . 3 8 0}$"
+        ],
+        [
+          "$100 \\times 5$",
+          0.861,
+          2.398,
+          0.358,
+          "$\\mathbf{0 . 2 8 0}$"
+        ],
+        [
+          "$100 \\times 10$",
+          1.003,
+          2.358,
+          0.574,
+          "$\\mathbf{0 . 4 3 9}$"
+        ],
+        [
+          "$100 \\times 20$",
+          1.231,
+          1.812,
+          0.665,
+          "$\\mathbf{0 . 2 9 1}$"
+        ],
+        [
+          "Average",
+          0.534,
+          1.052,
+          0.316,
+          "$\\mathbf{0 . 2 1 6}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Performance comparisons between PHEDA and HGAYT.",
+      "headers": [
+        "Instance",
+        "PHEDA",
+        "",
+        "HGAYT",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "ARPD",
+          "$t(\\mathrm{~s})$",
+          "ARPD",
+          "$t(\\mathrm{~s})$"
+        ],
+        [
+          "$50 \\times 5$",
+          0.196,
+          15,
+          "$\\mathbf{0 . 1 9 2}$",
+          16.55
+        ],
+        [
+          "$50 \\times 10$",
+          "$\\mathbf{0 . 2 7 6}$",
+          30,
+          0.329,
+          40.33
+        ],
+        [
+          "$50 \\times 20$",
+          "$\\mathbf{0 . 2 8 7}$",
+          70,
+          0.318,
+          82.23
+        ],
+        [
+          "$100 \\times 5$",
+          "$\\mathbf{0 . 1 9 6}$",
+          80,
+          0.274,
+          94.17
+        ],
+        [
+          "$100 \\times 10$",
+          "$\\mathbf{0 . 3 5 1}$",
+          200,
+          0.458,
+          251.62
+        ],
+        [
+          "$100 \\times 20$",
+          "$\\mathbf{0 . 1 4 2}$",
+          500,
+          0.419,
+          588.86
+        ],
+        [
+          "Average",
+          "$\\mathbf{0 . 2 4 1}$",
+          149.2,
+          0.332,
+          178.96
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Best known solutions for the first 90 Taillard benchmark instances.",
+      "headers": [
+        "Instance",
+        "Solutions",
+        "Algorithms"
+      ],
+      "rows": [
+        [
+          1,
+          14033,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          2,
+          15151,
+          "MMMAS,PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          3,
+          13301,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          4,
+          15447,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          5,
+          13529,
+          "MMMAS,PACO,PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          6,
+          13123,
+          "PACO,PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          7,
+          13548,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          8,
+          13948,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          9,
+          14295,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          10,
+          12943,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          11,
+          20911,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          12,
+          22440,
+          "MMMAS,PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          13,
+          19833,
+          "MMMAS,PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          14,
+          18710,
+          "PSOvns,HCPSO,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          15,
+          18641,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          16,
+          19245,
+          "MMMAS,PACO,HCPSO,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          17,
+          18363,
+          "PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          18,
+          20241,
+          "MMMAS,PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          19,
+          20330,
+          "MMMAS,PACO,PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          20,
+          21320,
+          "MMMAS,PSOvns,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          21,
+          33623,
+          "MMMAS,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          22,
+          31587,
+          "HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          23,
+          33920,
+          "MMMAS,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          24,
+          31661,
+          "HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          25,
+          34557,
+          "HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          26,
+          32564,
+          "HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          27,
+          32922,
+          "PACO,HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          28,
+          32412,
+          "HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          29,
+          33600,
+          "HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ],
+        [
+          30,
+          32262,
+          "HCPSO,HGA,JVNS,JHEDA,ILS, PHEDA,DDERLS,IGRIS,HGAYT"
+        ]
+      ],
+      "row_count": 30,
+      "column_count": 3
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 shows that PEDA outperforms JEDA for each group as well as the average on the nine groups, which implies that the incorporation of LCS for good \"genes\" mining leverages PEDA with high effectiveness. Good \"genes\" inherited by offspring individuals with the probability $\\lambda=0.8$ can maintain the population diversity.",
+      "headers": [
+        "Problem",
+        "PEDA_GM",
+        "PEDA"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          5.08,
+          "$\\mathbf{3 . 1 2}$"
+        ],
+        [
+          "$20 \\times 10$",
+          3.96,
+          "$\\mathbf{2 . 5 1}$"
+        ],
+        [
+          "$20 \\times 20$",
+          2.93,
+          "$\\mathbf{1 . 3 3}$"
+        ],
+        [
+          "$50 \\times 5$",
+          4.26,
+          "$\\mathbf{3 . 1 8}$"
+        ],
+        [
+          "$50 \\times 10$",
+          4.14,
+          "$\\mathbf{3 . 3 6}$"
+        ],
+        [
+          "$50 \\times 20$",
+          3.63,
+          "$\\mathbf{1 . 8 8}$"
+        ],
+        [
+          "$100 \\times 5$",
+          3.21,
+          "$\\mathbf{1 . 9 2}$"
+        ],
+        [
+          "$100 \\times 10$",
+          2.96,
+          "$\\mathbf{1 . 3 4}$"
+        ],
+        [
+          "$100 \\times 20$",
+          2.1,
+          "$\\mathbf{1 . 0 3}$"
+        ],
+        [
+          "Average",
+          3.59,
+          "$\\mathbf{2 . 1 9}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 illustrates that the effectiveness of PHEDA is much better than that of PHEDA_GM. According to Tables 5 and 6 , it can be concluded that the proposed PRODUCTION is much more effective than PRODUCTION_GM, which adopts the main ideas of GM given by Zhang et al. (2005). In PRODUCTION, all the offspring individuals are generated from different seeds, which are selected from the current population by the roulette method. And, PRODUCTION only considers the LCS between the seed individual and the best solution found so far as good \"genes\", which are inherited by the off-",
+      "headers": [
+        "Problem",
+        "PHEDA_GM",
+        "PHEDA"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0.035,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$20 \\times 10$",
+          0.063,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$20 \\times 20$",
+          0.079,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$50 \\times 5$",
+          0.428,
+          "$\\mathbf{0 . 1 7 5}$"
+        ],
+        [
+          "$50 \\times 10$",
+          0.461,
+          "$\\mathbf{0 . 3 1 1}$"
+        ],
+        [
+          "$50 \\times 20$",
+          0.692,
+          "$\\mathbf{0 . 3 5 9}$"
+        ],
+        [
+          "$100 \\times 5$",
+          0.529,
+          "$\\mathbf{0 . 2 8 0}$"
+        ],
+        [
+          "$100 \\times 10$",
+          0.634,
+          "$\\mathbf{0 . 4 0 1}$"
+        ],
+        [
+          "$100 \\times 20$",
+          0.786,
+          "$\\mathbf{0 . 2 3 9}$"
+        ],
+        [
+          "Average",
+          0.412,
+          "$\\mathbf{0 . 1 9 6}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "7",
+      "table_title": "Performance comparisons between PHEDA_IG and PHEDA (local search hybridized).",
+      "headers": [
+        "Problem",
+        "PHEDA_IG",
+        "PHEDA"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          "$\\mathbf{0}$",
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$20 \\times 10$",
+          "$\\mathbf{0}$",
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$20 \\times 20$",
+          0.017,
+          "$\\mathbf{0}$"
+        ],
+        [
+          "$50 \\times 5$",
+          0.243,
+          "$\\mathbf{0 . 1 8 4}$"
+        ],
+        [
+          "$50 \\times 10$",
+          0.459,
+          "$\\mathbf{0 . 3 3 1}$"
+        ],
+        [
+          "$50 \\times 20$",
+          0.612,
+          "$\\mathbf{0 . 3 9 5}$"
+        ],
+        [
+          "$100 \\times 5$",
+          0.309,
+          "$\\mathbf{0 . 2 8 0}$"
+        ],
+        [
+          "$100 \\times 10$",
+          0.513,
+          "$\\mathbf{0 . 4 0 8}$"
+        ],
+        [
+          "$100 \\times 20$",
+          0.392,
+          "$\\mathbf{0 . 2 6 7}$"
+        ],
+        [
+          "Average",
+          0.283,
+          "$\\mathbf{0 . 2 0 7}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    }
+  ]
+}

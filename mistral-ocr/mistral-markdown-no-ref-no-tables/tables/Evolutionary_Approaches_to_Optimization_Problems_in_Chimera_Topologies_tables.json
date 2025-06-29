@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Evolutionary Approaches to Optimization Problems in Chimera Topologies.md",
+    "filename": "Evolutionary Approaches to Optimization Problems in Chimera Topologies.md",
+    "title": "Evolutionary Approaches to Optimization Problems in Chimera Topologies",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Number of instances (out of 1000) for which the ground state was found in $r \\%$ of the runs. For Tree-EDA and Tree-EDA ${ }^{+}, 100$ runs were executed. For all other algorithms, 250.",
+      "headers": [
+        "$r(\\%)$",
+        "1P-CX",
+        "U-CX",
+        "BW-CX",
+        "FDA",
+        "Tree",
+        "Tree-r"
+      ],
+      "rows": [
+        [
+          0.25,
+          991,
+          935,
+          940,
+          543,
+          821,
+          832
+        ],
+        [
+          1,
+          982,
+          881,
+          878,
+          322,
+          821,
+          832
+        ],
+        [
+          10,
+          868,
+          480,
+          471,
+          45,
+          474,
+          462
+        ],
+        [
+          25,
+          645,
+          188,
+          199,
+          4,
+          218,
+          212
+        ],
+        [
+          50,
+          274,
+          37,
+          38,
+          1,
+          65,
+          63
+        ],
+        [
+          75,
+          54,
+          6,
+          4,
+          0,
+          12,
+          13
+        ],
+        [
+          90,
+          13,
+          1,
+          0,
+          0,
+          3,
+          2
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 summarizes the results of the pair-wise tests for all instances. In the table, cell $(r, c)$ indicates the number of instances for which algorithm in row $r$ was significantly better than algorithm in column $c$. For example, algorithm 1PCXGA was significantly better than FDA for the 1000 instances. From the analysis of Table 2 it is clear that 1PCX-GA significantly outperforms all other algorithms. There are not significant differences between the pair of algorithms (uCX-GA,BWCX-GA) and the pair (Tree-EDA,Tree-EDA ${ }^{+}$). This",
+      "headers": [
+        "Alg.",
+        "1P-CX",
+        "U-CX",
+        "BW-CX",
+        "FDA",
+        "Tree",
+        "Tree-r"
+      ],
+      "rows": [
+        [
+          "1P-CX",
+          "-",
+          862,
+          858,
+          1000,
+          671,
+          707
+        ],
+        [
+          "U-CX",
+          0,
+          "-",
+          0,
+          973,
+          33,
+          31
+        ],
+        [
+          "BW-CX",
+          0,
+          0,
+          "-",
+          974,
+          39,
+          41
+        ],
+        [
+          "FDA",
+          0,
+          0,
+          0,
+          "-",
+          0,
+          0
+        ],
+        [
+          "Tree",
+          2,
+          201,
+          196,
+          980,
+          "-",
+          0
+        ],
+        [
+          "Tree-r",
+          2,
+          182,
+          173,
+          971,
+          0,
+          "-"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Correlation between the descriptors of the instance and success rate of the EAs. Correlations that were not found significant for $p=0.01$ are underlined.",
+      "headers": [
+        "Descriptors",
+        "1P-CX",
+        "U-CX",
+        "BW-CX",
+        "FDA",
+        "Tree",
+        "Tree-r"
+      ],
+      "rows": [
+        [
+          "GRstate",
+          -0.21,
+          -0.17,
+          -0.17,
+          -0.14,
+          -0.17,
+          -0.18
+        ],
+        [
+          "dJ+dh_RES",
+          0.3,
+          0.22,
+          0.22,
+          "$\\underline{0.07}$",
+          0.16,
+          0.16
+        ],
+        [
+          1,
+          0.16,
+          0.11,
+          0.12,
+          "$\\underline{0.03}$",
+          0.12,
+          0.12
+        ],
+        [
+          1,
+          0.2,
+          0.17,
+          0.17,
+          0.08,
+          0.19,
+          0.18
+        ],
+        [
+          2,
+          0.19,
+          0.13,
+          0.12,
+          -0.0,
+          "$\\underline{0.07}$",
+          "$\\underline{0.07}$"
+        ],
+        [
+          2,
+          "$\\underline{0.05}$",
+          "$\\underline{0.02}$",
+          "$\\underline{0.02}$",
+          0.0,
+          "$\\underline{0.06}$",
+          "$\\underline{0.04}$"
+        ],
+        [
+          "H_SCORE",
+          -0.15,
+          -0.13,
+          -0.13,
+          -0.07,
+          -0.17,
+          -0.15
+        ],
+        [
+          "NOISE_SCR",
+          -0.32,
+          -0.27,
+          -0.27,
+          -0.09,
+          -0.2,
+          -0.19
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    }
+  ]
+}

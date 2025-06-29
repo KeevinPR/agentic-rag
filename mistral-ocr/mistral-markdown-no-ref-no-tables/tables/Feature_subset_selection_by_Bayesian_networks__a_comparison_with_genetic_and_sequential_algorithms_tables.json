@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2001/Feature subset selection by Bayesian networks  a comparison with genetic and sequential algorithms.md",
+    "filename": "Feature subset selection by Bayesian networks  a comparison with genetic and sequential algorithms.md",
+    "title": "Feature subset selection by Bayesian networks  a comparison with genetic and sequential algorithms",
+    "year": "2001"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Details of experimental domains",
+      "headers": [
+        "Domain",
+        "Number of <br> instances",
+        "Number of <br> classes",
+        "Number of features and <br> their types"
+      ],
+      "rows": [
+        [
+          "Ionosphere",
+          351,
+          2,
+          "$34(34-\\mathrm{C})$"
+        ],
+        [
+          "Horse-colic",
+          368,
+          2,
+          "$22(15-\\mathrm{D}, 7-\\mathrm{C})$"
+        ],
+        [
+          "Soybean-large",
+          683,
+          19,
+          "$35(35-\\mathrm{C})$"
+        ],
+        [
+          "Anneal",
+          898,
+          6,
+          "$38(6-\\mathrm{D}, 32-\\mathrm{C})$"
+        ],
+        [
+          "Image",
+          2310,
+          7,
+          "$19(19-\\mathrm{C})$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Accuracy percentages of the NB classifier on real datasets without feature selection and using exposed five FSS methods",
+      "headers": [
+        "Domain",
+        "Without FSS",
+        "SFS",
+        "SBE",
+        "GA-o",
+        "GA-u",
+        "FSS-EBNA"
+      ],
+      "rows": [
+        [
+          "Ionosphere",
+          "$84.84 \\pm 3.12^{\\dagger}$",
+          "$90.25 \\pm 1.58^{*}$",
+          "$91.39 \\pm 2.68$",
+          "$91.17 \\pm 3.19$",
+          "$90.97 \\pm 2.56^{*}$",
+          "$92.40 \\pm 2.04$"
+        ],
+        [
+          "Horse-colic",
+          "$78.97 \\pm 2.98^{\\dagger}$",
+          "$83.31 \\pm 1.98$",
+          "$82.12 \\pm 2.41^{*}$",
+          "$83.43 \\pm 2.82$",
+          "$83.51 \\pm 1.47$",
+          "$83.93 \\pm 1.58$"
+        ],
+        [
+          "Soybean-large",
+          "$81.96 \\pm 3.46^{\\dagger}$",
+          "$86.38 \\pm 3.30^{*}$",
+          "$87.78 \\pm 3.90^{*}$",
+          "$85.64 \\pm 4.06^{\\dagger}$",
+          "$86.09 \\pm 4.37^{\\dagger}$",
+          "$88.64 \\pm 1.70$"
+        ],
+        [
+          "Anneal",
+          "$93.01 \\pm 3.13^{*}$",
+          "$86.72 \\pm 2.09^{\\dagger}$",
+          "$92.49 \\pm 2.94^{*}$",
+          "$92.95 \\pm 2.67^{*}$",
+          "$93.13 \\pm 2.56$",
+          "$94.10 \\pm 3.00$"
+        ],
+        [
+          "Image",
+          "$79.95 \\pm 1.52^{\\dagger}$",
+          "$88.65 \\pm 1.21$",
+          "$88.82 \\pm 1.74$",
+          "$88.67 \\pm 2.48$",
+          "$89.12 \\pm 1.56$",
+          "$88.98 \\pm 0.98$"
+        ],
+        [
+          "Average",
+          83.74,
+          87.06,
+          88.52,
+          88.37,
+          88.56,
+          89.53
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Cardinalities of finally selected features subsets for the NB classifier on real datasets without feature selection and using exposed five FSS methods",
+      "headers": [
+        "Domain",
+        "Without <br> FSS",
+        "SFS",
+        "SBE",
+        "GA-o",
+        "GA-u",
+        "FSS-EBNA"
+      ],
+      "rows": [
+        [
+          "Ionosphere",
+          34,
+          "$6.00 \\pm 1.41$",
+          "$21.30 \\pm 3.80$",
+          "$15.00 \\pm 2.36$",
+          "$12.66 \\pm 1.03$",
+          "$13.40 \\pm 2.11$"
+        ],
+        [
+          "Horse-colic",
+          22,
+          "$6.00 \\pm 2.74$",
+          "$11.20 \\pm 2.65$",
+          "$5.00 \\pm 2.82$",
+          "$4.60 \\pm 1.75$",
+          "$6.10 \\pm 1.85$"
+        ],
+        [
+          "Soybean-large",
+          35,
+          "$12.70 \\pm 2.71$",
+          "$23.50 \\pm 2.75$",
+          "$19.00 \\pm 2.09$",
+          "$19.16 \\pm 2.31$",
+          "$18.90 \\pm 2.76$"
+        ],
+        [
+          "Anneal",
+          38,
+          "$5.50 \\pm 2.32$",
+          "$33.60 \\pm 2.91$",
+          "$21.66 \\pm 2.66$",
+          "$19.50 \\pm 2.25$",
+          "$20.50 \\pm 3.13$"
+        ],
+        [
+          "Image",
+          19,
+          "$5.60 \\pm 1.57$",
+          "$9.40 \\pm 1.95$",
+          "$8.00 \\pm 1.41$",
+          "$8.00 \\pm 1.09$",
+          "$8.00 \\pm 0.66$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Mean stop-generation for GAs and FSS-EBNA",
+      "headers": [
+        "Domain",
+        "GA-o",
+        "GA-u",
+        "FSS-EBNA"
+      ],
+      "rows": [
+        [
+          "Ionosphere",
+          "$3.50 \\pm 0.84^{\\dagger}$",
+          "$3.10 \\pm 0.56^{\\dagger}$",
+          "$1.80 \\pm 0.42$"
+        ],
+        [
+          "Horse-colic",
+          "$3.20 \\pm 1.13^{+}$",
+          "$3.40 \\pm 0.51^{\\dagger}$",
+          "$2.40 \\pm 0.69$"
+        ],
+        [
+          "Soybean-large",
+          "$3.30 \\pm 0.82^{+}$",
+          "$3.60 \\pm 0.51^{\\dagger}$",
+          "$2.50 \\pm 0.70$"
+        ],
+        [
+          "Anneal",
+          "$3.80 \\pm 0.42^{\\dagger}$",
+          "$3.20 \\pm 0.44^{\\dagger}$",
+          "$1.80 \\pm 0.42$"
+        ],
+        [
+          "Image",
+          "$3.60 \\pm 0.84$",
+          "$3.70 \\pm 0.48$",
+          "$3.50 \\pm 0.42$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    }
+  ]
+}

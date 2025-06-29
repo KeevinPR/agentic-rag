@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/SSGA & EDA Based Feature Selection and Weighting for Face Recognition.md",
+    "filename": "SSGA & EDA Based Feature Selection and Weighting for Face Recognition.md",
+    "title": "SSGA & EDA Based Feature Selection and Weighting for Face Recognition",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "56",
+        "78",
+        "89",
+        "95",
+        "34"
+      ],
+      "rows": [
+        [
+          45,
+          34,
+          12,
+          4,
+          76
+        ],
+        [
+          16,
+          23,
+          45,
+          67,
+          178
+        ],
+        [
+          76,
+          45,
+          32,
+          29,
+          88
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "0.01",
+        "0.4",
+        "0.77",
+        "0.54",
+        "0.5"
+      ],
+      "rows": [
+        [
+          0.91,
+          0.3,
+          0.02,
+          0.0,
+          0.8
+        ],
+        [
+          0.62,
+          0.5,
+          0.45,
+          0.34,
+          0.6
+        ],
+        [
+          0.22,
+          0.43,
+          0.11,
+          0.87,
+          0.2
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "0",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "rows": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "0",
+        "0",
+        "89",
+        "95",
+        "34"
+      ],
+      "rows": [
+        [
+          45,
+          0,
+          0,
+          0,
+          76
+        ],
+        [
+          16,
+          23,
+          0,
+          0,
+          178
+        ],
+        [
+          0,
+          0,
+          0,
+          29,
+          0
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "I",
+      "table_title": "shows the performance comparison of the five methods on our subset of the FRGC dataset. For FRGC dataset, the results show that Eigen- $\\mathrm{GEFeW}_{\\text {SSGA }}$ and Eigen$\\mathrm{GEFeW}_{\\text {EDA }}$ significantly outperform the baseline method in terms of accuracy. Eigen- $\\mathrm{GEFeW}_{\\text {EDA }}$ provides the best result in terms of accuracy though it uses almost the entire feature set. While Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$ used only $49.58 \\%$ of the features, Eigenface ${ }_{\\text {Baseline, }}$, Eigen- $\\mathrm{GEFeS}_{\\text {SSGA, }}$ and Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$ fall in the same equivalent class with respect to accuracy. In general, the results indicate that EDA-based feature selection and weighting performs better than the corresponding SSGA.",
+      "headers": [
+        "Method <br> (for FRGC)",
+        "Average \\% <br> Features Used",
+        "Average <br> Accuracy",
+        "Best <br> Accuracy"
+      ],
+      "rows": [
+        [
+          "Eigenface $_{\\text {Baseline }}$",
+          100,
+          87.14,
+          87.14
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeS}_{\\text {SSGA }}$",
+          52,
+          86.67,
+          87.85
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeW}_{\\text {SSGA }}$",
+          88,
+          91.42,
+          92.5
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$",
+          49.58,
+          87.05,
+          88.21
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeW}_{\\text {EDA }}$",
+          98.33,
+          93.19,
+          94.64
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "shows the performance comparison of the five methods on our subset of the FERET dataset. The results indicate that Eigen- $\\mathrm{GEFeS}_{\\text {SSGA }}$ and Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$ instances fall into the same equivalence class in terms of accuracy. The percentage of features used for Eigen$\\mathrm{GEFeS}_{\\text {SSGA }}$ and Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$ is $51.79 \\%$ and $44.88 \\%$, respectively. The overall results of the four instances shown in Table II indicate that EDA-based feature selection and weighting performs better than the corresponding SSGA.",
+      "headers": [
+        "Method <br> (for FERET)",
+        "Average \\% <br> Features Used",
+        "Average <br> Accuracy",
+        "Best <br> Accuracy"
+      ],
+      "rows": [
+        [
+          "Eigenface $_{\\text {Baseline }}$",
+          100,
+          75.31,
+          75.31
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeS}_{\\text {SSGA }}$",
+          51.79,
+          75.67,
+          76.56
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeW}_{\\text {SSGA }}$",
+          88.59,
+          77.59,
+          78.24
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$",
+          44.88,
+          75.72,
+          76.99
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeW}_{\\text {EDA }}$",
+          98.14,
+          78.91,
+          79.91
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "shows the performance comparison of the five methods on our subset of the ESSEX dataset. Once again Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$ performs better than Eigen- $\\mathrm{GEFeS}_{\\text {SSGA }}$ in terms of accuracy. However, the feature reduction of Eigen$\\mathrm{GEFeS}_{\\text {SSGA }}$ is significantly lower than Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$. Eigen- $\\mathrm{GEFeS}_{\\text {SSGA }}$ used only $36.21 \\%$ features. It reduces the features needed by approximately two thirds while obtaining better accuracy than the corresponding baseline method. Similar to the results reported for FRGC and FERET datasets, Eigen- $\\mathrm{GEFeW}_{\\text {EDA }}$ provides the best result in terms of accuracy. In general, the results indicate that EDA-based feature selection and weighting performs better than the corresponding SSGA.",
+      "headers": [
+        "Method <br> (for ESSEX)",
+        "Average \\% <br> Features Used",
+        "Average <br> Accuracy",
+        "Best <br> Accuracy"
+      ],
+      "rows": [
+        [
+          "Eigenface $_{\\text {Baseline }}$",
+          100,
+          92.41,
+          92.41
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeS}_{\\text {SSGA }}$",
+          36.21,
+          97.57,
+          97.91
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeW}_{\\text {SSGA }}$",
+          95.77,
+          98.06,
+          98.32
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$",
+          43.55,
+          97.74,
+          98.32
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeW}_{\\text {EDA }}$",
+          98.33,
+          98.37,
+          98.71
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "IV",
+      "table_title": "EXPERIMENTAL RESULTS FOR EIGENFACE, EIGEN-GEFES AND EIGENGEFEW Yale DATASET",
+      "headers": [
+        "Method <br> (for Yale)",
+        "Average \\% <br> Features Used",
+        "Average <br> Accuracy",
+        "Best <br> Accuracy"
+      ],
+      "rows": [
+        [
+          "Eigenface $_{\\text {Baseline }}$",
+          100,
+          100,
+          100
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeS}_{\\text {SSGA }}$",
+          7.89,
+          100,
+          100
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeW}_{\\text {SSGA }}$",
+          64.07,
+          100,
+          100
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeS}_{\\text {EDA }}$",
+          6.22,
+          100,
+          100
+        ],
+        [
+          "Eigen- $\\mathrm{GEFeW}_{\\text {EDA }}$",
+          67.63,
+          100,
+          100
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    }
+  ]
+}

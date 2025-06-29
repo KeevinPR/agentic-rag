@@ -1,0 +1,318 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/Motif Discovery Using Evolutionary Algorithms.md",
+    "filename": "Motif Discovery Using Evolutionary Algorithms.md",
+    "title": "Motif Discovery Using Evolutionary Algorithms",
+    "year": "2009"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "COMPARISON OF THE KNOWN BINDING SITES OF S. CEREVISIAE AND THE PREDICTION RESULTS GIVEN BY TS-BFO.",
+      "headers": [
+        "Family",
+        "Known motifs (motif length)",
+        "TS-BFO (rank)"
+      ],
+      "rows": [
+        [
+          1,
+          7,
+          1
+        ],
+        [
+          "GATA",
+          6,
+          1
+        ],
+        [
+          "",
+          8,
+          1
+        ],
+        [
+          "PDR",
+          10,
+          2
+        ],
+        [
+          "",
+          8,
+          3
+        ],
+        [
+          "MCB",
+          6,
+          2
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          2,
+          9,
+          1
+        ],
+        [
+          1,
+          9,
+          1
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "COMPARISON OF THE KNOWN BINDING SITES OF S.cerevisiae AND THE PREDICTION RESULTS GIVEN BY DE/EDA.",
+      "headers": [
+        "Family",
+        "Known motifs (motif length)",
+        "DE/EDA (fitness)"
+      ],
+      "rows": [
+        [
+          1,
+          77,
+          "TTACCCG (0.89) <br> CGTGTTA (0.87)"
+        ],
+        [
+          "GATA",
+          6,
+          0.93
+        ],
+        [
+          "PDR",
+          8108,
+          "TCCGTGGA (0.93) <br> TTCCGCGGAA (0.91) <br> TCCGCGGA (0.91)"
+        ],
+        [
+          "MCB",
+          6,
+          0.95
+        ],
+        [
+          1,
+          5,
+          1.0
+        ],
+        [
+          2,
+          9,
+          0.86
+        ],
+        [
+          1,
+          99,
+          "GTACCTCAA (1.00) <br> GCTGAACCT (0.94)"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "COMPARISONS OF TS-BFO PREDICTED MOTIFS WITH DIFFERENT METHODS FOR hml03r.",
+      "headers": [
+        "Length",
+        "TSBFOMD (rank)",
+        "Other methods"
+      ],
+      "rows": [
+        [
+          6,
+          121,
+          "TCTGTC -MotifSampler TTCCCT -QuickScore AGGGAA -QuickScore"
+        ],
+        [
+          7,
+          1,
+          "AGACAGA -MotifSampler"
+        ],
+        [
+          10,
+          31,
+          "TGACTCTGTCCC -MEME3 <br> GACAAAGGGAA -MEME"
+        ],
+        [
+          13,
+          1,
+          "TGAGCAAACAAAATAAATAC <br> -MEME"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "IV",
+      "table_title": "COMPARISONS OF DE/EDA PREDICTED MOTIFS WITH DIFFERENT",
+      "headers": [
+        "Length",
+        "DE/EDA (fitness)",
+        "Other methods"
+      ],
+      "rows": [
+        [
+          6,
+          "TCTGAA (1.00) AAGCTT (0.97)",
+          "N/A <br> GAAGCTTTCTT -MITRA"
+        ],
+        [
+          7,
+          0.93,
+          "CATACAGGCTGGTCTGCTG -GLAM"
+        ],
+        [
+          8,
+          "TCTGAAAT (0.91) AGAGAAAG (0.93) <br> AATATTTA (0.91) <br> AGAGAAAG (0.93)",
+          "N/A <br> AAAGAGAAAG <br> -SeSiMCMC <br> AAATATTTA -Improbizer <br> AAAGAGAAAG <br> -SeSiMCMC"
+        ],
+        [
+          9,
+          "AGACAAAGG (0.90) <br> ACACAGGGA (0.88)",
+          "AGTGCAGACAAAGGGAAA <br> -MEME <br> TGCAGACAAAGGGAATA <br> -MEME"
+        ],
+        [
+          10,
+          "TCTCTGTCCC (0.87) <br> AGGGAAAACA (0.85)",
+          "TGACTCTGTCCC -MEME3 <br> TGTGGAGAAAACA <br> -AlignACE"
+        ],
+        [
+          13,
+          0.83,
+          "TGAGCAAACAAAATAA <br> -MEME"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "V",
+      "table_title": "COMPARISONS OF THE PREDICTED MOTIFS WITH DIFFERENT METHODS FOR $y s t 04 r$ BY TS-BFO.",
+      "headers": [
+        "length",
+        "TSBFOMD(rank)",
+        "Other methods"
+      ],
+      "rows": [
+        [
+          6,
+          1,
+          "GATTCCTATA -MITRA"
+        ],
+        [
+          7,
+          5,
+          "TTTCTGGC -GLAM"
+        ],
+        [
+          8,
+          2,
+          "GCTTCCACTA -MITRA"
+        ],
+        [
+          "",
+          4,
+          "CGGGATTCCTC -MEME"
+        ],
+        [
+          9,
+          "",
+          "CGGGATTCCT -AlignACE"
+        ],
+        [
+          "",
+          "",
+          "CGGGATTCCTCTA -Consensus"
+        ],
+        [
+          10,
+          "",
+          -3
+        ],
+        [
+          "",
+          1,
+          "TTTTCTGGCA -Weeder"
+        ],
+        [
+          "",
+          4,
+          "CTGGCATCCA -AlignACE"
+        ],
+        [
+          "",
+          "",
+          "CTGGCATCCAGT -MotifSampler"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "VI",
+      "table_title": "COMPARISONS OF THE PREDICTED MOTIFS WITH DIFFERENT METHODS FOR $y s t 04 r$ BY DE/EDA.",
+      "headers": [
+        "length",
+        "DE/EDA (fitness)",
+        "Other methods"
+      ],
+      "rows": [
+        [
+          6,
+          0.98,
+          "GATTCCTATA -MITRA"
+        ],
+        [
+          "",
+          0.93,
+          "TCCAGAAA -GLAM"
+        ],
+        [
+          7,
+          0.96,
+          "ACTTGCA"
+        ],
+        [
+          "",
+          "",
+          "-(oligo)dyad-analysis"
+        ],
+        [
+          8,
+          0.910714,
+          "GCTTCCACTA -MITRA"
+        ],
+        [
+          "",
+          "",
+          "CGGGATTCCTC -MEME"
+        ],
+        [
+          9,
+          0.91,
+          "TTTTCTGGCA -Weeder"
+        ],
+        [
+          10,
+          0.86,
+          "CTGGCATCCA -AlignACE"
+        ],
+        [
+          "",
+          0.86,
+          "TTTTCTGGCA -Weeder"
+        ],
+        [
+          11,
+          0.83,
+          "CTGGCATCCA -AlignACE"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    }
+  ]
+}

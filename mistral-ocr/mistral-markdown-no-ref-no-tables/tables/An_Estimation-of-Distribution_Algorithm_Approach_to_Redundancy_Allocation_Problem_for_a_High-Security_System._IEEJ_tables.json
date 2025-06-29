@@ -1,0 +1,577 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/An Estimation-of-Distribution Algorithm Approach to Redundancy Allocation Problem for a High-Security System. IEEJ.md",
+    "filename": "An Estimation-of-Distribution Algorithm Approach to Redundancy Allocation Problem for a High-Security System. IEEJ.md",
+    "title": "An Estimation-of-Distribution Algorithm Approach to Redundancy Allocation Problem for a High-Security System. IEEJ",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Relationship between reliability, availability and maintainability",
+      "headers": [
+        "Reliability",
+        "Availability",
+        "Maintainability"
+      ],
+      "rows": [
+        [
+          "Increase",
+          "Increase",
+          "Constant"
+        ],
+        [
+          "Decrease",
+          "Decrease",
+          "Constant"
+        ],
+        [
+          "Constant",
+          "Increase",
+          "Increase"
+        ],
+        [
+          "Constant",
+          "Decrease",
+          "Decrease"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Safety Control System Component Function",
+      "headers": [
+        "Model",
+        "Function"
+      ],
+      "rows": [
+        [
+          67,
+          "CPU"
+        ],
+        [
+          65,
+          "CPU"
+        ],
+        [
+          42,
+          "EXPANSION I/O"
+        ],
+        [
+          82,
+          "EXPANSION BACKPLANE"
+        ],
+        [
+          207,
+          "POWER SUPPLY"
+        ],
+        [
+          2,
+          "DUPLEX UNIT"
+        ],
+        [
+          13,
+          "CONTROLLER LINK"
+        ],
+        [
+          21,
+          "ETHERNET UNIT"
+        ],
+        [
+          102,
+          "ANALOG INPUT"
+        ],
+        [
+          261,
+          "DIGITAL INPUT"
+        ],
+        [
+          102,
+          "ANALOG INPUT"
+        ],
+        [
+          291,
+          "DIGITAL INPUT"
+        ],
+        [
+          261,
+          "DIGITAL OUTPUT"
+        ],
+        [
+          291,
+          "DIGITAL OUTPUT"
+        ],
+        [
+          8090,
+          "POWER SUPPLY"
+        ],
+        [
+          8240,
+          "POWER SUPPLY"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Safety Control System MTTR AND MTTF",
+      "headers": [
+        "Model",
+        "MTTF",
+        "MTTR"
+      ],
+      "rows": [
+        [
+          67,
+          260000,
+          4
+        ],
+        [
+          65,
+          271000,
+          4
+        ],
+        [
+          42,
+          427800,
+          4
+        ],
+        [
+          82,
+          940000,
+          4
+        ],
+        [
+          207,
+          135000,
+          4
+        ],
+        [
+          2,
+          608300,
+          4
+        ],
+        [
+          13,
+          206000,
+          4
+        ],
+        [
+          21,
+          366180,
+          4
+        ],
+        [
+          102,
+          156160,
+          4
+        ],
+        [
+          261,
+          149000,
+          4
+        ],
+        [
+          102,
+          309640,
+          4
+        ],
+        [
+          291,
+          941000,
+          4
+        ],
+        [
+          261,
+          408000,
+          4
+        ],
+        [
+          291,
+          111600,
+          4
+        ],
+        [
+          8090,
+          135000,
+          4
+        ],
+        [
+          8240,
+          135000,
+          4
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 3
+    },
+    {
+      "table_number": "4",
+      "table_title": "Cost and Number OF Components for Each Model in The System",
+      "headers": [
+        "Model",
+        "Price",
+        "No."
+      ],
+      "rows": [
+        [
+          67,
+          10577.0,
+          1
+        ],
+        [
+          65,
+          6907.56,
+          14
+        ],
+        [
+          42,
+          2921.16,
+          8
+        ],
+        [
+          82,
+          2395.8,
+          16
+        ],
+        [
+          207,
+          1028.28,
+          48
+        ],
+        [
+          2,
+          3744.84,
+          8
+        ],
+        [
+          13,
+          2708.64,
+          16
+        ],
+        [
+          21,
+          1515.36,
+          8
+        ],
+        [
+          102,
+          2921.16,
+          16
+        ],
+        [
+          261,
+          889.68,
+          1
+        ],
+        [
+          102,
+          1640.76,
+          32
+        ],
+        [
+          291,
+          1177.44,
+          31
+        ],
+        [
+          261,
+          429.99,
+          4
+        ],
+        [
+          291,
+          1143.12,
+          12
+        ],
+        [
+          8090,
+          179.82,
+          45
+        ],
+        [
+          8240,
+          408.24,
+          45
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "Availability Results",
+      "headers": [
+        "No.",
+        "EDA",
+        "PSO",
+        "Tabu Search"
+      ],
+      "rows": [
+        [
+          1,
+          "$1-1.11 \\times 10^{-4}$",
+          "$1-0.93 \\times 10^{-4}$",
+          "$1-0.31 \\times 10^{-3}$"
+        ],
+        [
+          2,
+          "$1-1.11 \\times 10^{-4}$",
+          "$1-1.35 \\times 10^{-3}$",
+          "$1-1.28 \\times 10^{-3}$"
+        ],
+        [
+          3,
+          "$1-0.70 \\times 10^{-4}$",
+          "$1-0.95 \\times 10^{-3}$",
+          "$1-1.29 \\times 10^{-3}$"
+        ],
+        [
+          4,
+          "$1-1.27 \\times 10^{-4}$",
+          "$1-0.59 \\times 10^{-3}$",
+          "$1-0.21 \\times 10^{-3}$"
+        ],
+        [
+          5,
+          "$1-1.00 \\times 10^{-4}$",
+          "$1-1.27 \\times 10^{-3}$",
+          "$1-1.81 \\times 10^{-3}$"
+        ],
+        [
+          6,
+          "$1-1.20 \\times 10^{-4}$",
+          "$1-0.61 \\times 10^{-3}$",
+          "$1-2.10 \\times 10^{-3}$"
+        ],
+        [
+          7,
+          "$1-0.60 \\times 10^{-4}$",
+          "$1-0.59 \\times 10^{-3}$",
+          "$1-1.81 \\times 10^{-3}$"
+        ],
+        [
+          8,
+          "$1-1.70 \\times 10^{-4}$",
+          "$1-0.61 \\times 10^{-3}$",
+          "$1-2.10 \\times 10^{-3}$"
+        ],
+        [
+          9,
+          "$1-1.50 \\times 10^{-4}$",
+          "$1-0.50 \\times 10^{-3}$",
+          "$1-2.01 \\times 10^{-3}$"
+        ],
+        [
+          10,
+          "$1-1.00 \\times 10^{-4}$",
+          "$1-0.59 \\times 10^{-3}$",
+          "$1-1.10 \\times 10^{-3}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Cost Results",
+      "headers": [
+        "No.",
+        "EDA",
+        "PSO",
+        "Tabu Search"
+      ],
+      "rows": [
+        [
+          1,
+          1144067.9,
+          853186.3,
+          1177931.45
+        ],
+        [
+          2,
+          982071.94,
+          855471.19,
+          1036990.36
+        ],
+        [
+          3,
+          1051356.34,
+          848393.41,
+          1200015.23
+        ],
+        [
+          4,
+          1112440.9,
+          894512.84,
+          944042.41
+        ],
+        [
+          5,
+          1098293.4,
+          862558.47,
+          848393.41
+        ],
+        [
+          6,
+          1124810.52,
+          821541.16,
+          777933.41
+        ],
+        [
+          7,
+          1054624.02,
+          822508.81,
+          848983.87
+        ],
+        [
+          8,
+          1017172.8,
+          826677.75,
+          730625.92
+        ],
+        [
+          9,
+          984769.67,
+          849461.44,
+          790681.59
+        ],
+        [
+          10,
+          1029975.31,
+          838545.44,
+          1178889.04
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Convergence results of 50 runs",
+      "headers": [
+        "Method",
+        "Maximum <br> (best)",
+        "Minimum <br> (worst)",
+        "Mean",
+        "Standard <br> deviation"
+      ],
+      "rows": [
+        [
+          "EDA",
+          "$1-1.15 \\times 10^{-6}$",
+          "$1-1.50 \\times 10^{-3}$",
+          "$1-0.33 \\times 10^{-6}$",
+          "$4.61 \\times 10^{-3}$"
+        ],
+        [
+          "PSO",
+          "$1-1.10 \\times 10^{-3}$",
+          "$1-1.36 \\times 10^{-2}$",
+          "$1-0.69 \\times 10^{-3}$",
+          "$3.64 \\times 10^{-4}$"
+        ],
+        [
+          "TS",
+          "$1-0.29 \\times 10^{-3}$",
+          "$1-0.43 \\times 10^{-2}$",
+          "$1-1.14 \\times 10^{-3}$",
+          "$7.21 \\times 10^{-4}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "8",
+      "table_title": "Notations",
+      "headers": [
+        "Nomenclature",
+        ""
+      ],
+      "rows": [
+        [
+          "$S$",
+          "Number of subsystems in the system"
+        ],
+        [
+          "$n$",
+          "Number of components in the subsystem"
+        ],
+        [
+          "$r_{i j}$",
+          "Reliability of each component $j$ in subsystem $i$"
+        ],
+        [
+          "$m_{i j}$",
+          "Maintainability of each component $j$ in subsystem $i$"
+        ],
+        [
+          "$a_{i j}$",
+          "Availability of each component $j$ in subsystem $i$"
+        ],
+        [
+          "$A$",
+          "System availability"
+        ],
+        [
+          "$w_{i j}$",
+          "Weight of each component $j$ in subsystem $i$"
+        ],
+        [
+          "$c_{i j}$",
+          "Cost of each component in $j$ subsystem $i$"
+        ],
+        [
+          "$x_{i j}$",
+          "Number of components in $j$ subsystem $i$"
+        ],
+        [
+          "$C$",
+          "Upper limit on the cost of the system"
+        ],
+        [
+          "$W$",
+          "Upper limit on the weight of the system"
+        ],
+        [
+          "$c_{u t r r_{n}}$",
+          "Component $j$ repair cost of subsystem $i$"
+        ],
+        [
+          "$W$",
+          "Upper limit on the weight of the system"
+        ],
+        [
+          "$R_{i}$",
+          "Reliability of subsystem $i$"
+        ],
+        [
+          "$M_{i}$",
+          "Maintainability of subsystem $i$"
+        ],
+        [
+          "$a_{i}, b_{i}$",
+          "Coefficient of functional relationship between manufacturing cost and MTTR of component $i$"
+        ],
+        [
+          "$p l$",
+          "Probability distribution"
+        ],
+        [
+          "$D_{i}^{\\text {calornd }}$",
+          1
+        ],
+        [
+          "$\\operatorname{eraf}(x)$",
+          "Fitness function for EDA"
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 2
+    }
+  ]
+}

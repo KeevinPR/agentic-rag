@@ -1,0 +1,1529 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/A two-stage approach for multicast-oriented virtual network function placement.md",
+    "filename": "A two-stage approach for multicast-oriented virtual network function placement.md",
+    "title": "A two-stage approach for multicast-oriented virtual network function placement",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "List of the main abbreviations",
+        ""
+      ],
+      "rows": [
+        [
+          2,
+          "2-dimensional problem-specific solution encoding"
+        ],
+        [
+          "ABF",
+          "Average best fitness"
+        ],
+        [
+          "ACT",
+          "Average computational time"
+        ],
+        [
+          "CAPEX",
+          "Capital expenditure"
+        ],
+        [
+          "EA",
+          "Evolutionary algorithm"
+        ],
+        [
+          "EDA",
+          "Estimation of distribution algorithm"
+        ],
+        [
+          "FPVU",
+          "Flexible probability vector update"
+        ],
+        [
+          "GA",
+          "Genetic algorithm"
+        ],
+        [
+          "ILP",
+          "Integer linear programming"
+        ],
+        [
+          "INPLD-PV",
+          "Inner-path location dependency PV"
+        ],
+        [
+          "IPL-PV",
+          "Initial placement location PV"
+        ],
+        [
+          "ITPLD-PV",
+          "Inter-path location dependency PV"
+        ],
+        [
+          "MILP",
+          "Mixed integer linear programming"
+        ],
+        [
+          "MVNFP",
+          "Multicast-oriented VNF placement"
+        ],
+        [
+          "nEDA",
+          "Novel estimation of distribution algorithm"
+        ],
+        [
+          "NFV",
+          "Network function virtualization"
+        ],
+        [
+          "NSP",
+          "Network service provider"
+        ],
+        [
+          "OPEX",
+          "Operational expense"
+        ],
+        [
+          "PSO",
+          "Particle swarm optimization"
+        ],
+        [
+          "PV",
+          "Probability vector"
+        ],
+        [
+          "QoS",
+          "Quality of service"
+        ],
+        [
+          "SDN",
+          "Software defined networking"
+        ],
+        [
+          "SFC",
+          "Service function chain"
+        ],
+        [
+          "TS-M",
+          "Two-stage approach for the MVNFP problem"
+        ],
+        [
+          "VNF",
+          "Virtual network function"
+        ],
+        [
+          "VNFP",
+          "VNF placement"
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Summary of the main notations in problem formulation.",
+      "headers": [
+        "Notation",
+        "Definition",
+        "Notation",
+        "Definition"
+      ],
+      "rows": [
+        [
+          "$B(e)$",
+          "Available bandwidth of link $e$",
+          "$E_{P \\mid-1}^{e}$",
+          "Link set of the subpath from the node hosting $f_{i P i}$ to destination $t_{i}$ along Path $(i)$"
+        ],
+        [
+          "$B W$",
+          "Set of bandwidth requirements",
+          "$F$",
+          "Set of ordered VNFs"
+        ],
+        [
+          "$b w_{j, j+1}$",
+          "Bandwidth requirement between VNFs $f_{j}$ and $f_{j+1}$",
+          "G",
+          "Communications network"
+        ],
+        [
+          "$C_{D}$",
+          "Cost of the average end-to-end delay along all paths in $G_{M}$",
+          "$G_{M}$",
+          "Multicast tree constructed for hosting a given SFC"
+        ],
+        [
+          "$C_{B}$",
+          "Cost of the compute resource consumed for hosting $F$ over $G_{M}$",
+          "MSR",
+          "Multicast service request"
+        ],
+        [
+          "$D_{\\text {pro }}\\left(v_{k}^{i}, f_{i}\\right)$",
+          "Processing delay incurred if a data-flow is processed by VNF $f_{j}$, where $f_{j}$ is hosted by node $v_{k}^{i}$",
+          "Path $(i)$",
+          "Path from source $s$ to destination $t_{i}$"
+        ],
+        [
+          "$D_{\\text {PPB }}(e)$",
+          "Propagation delay of link $e$",
+          "$R_{f}$",
+          "Compute resource consumed for hosting VNF $f$"
+        ],
+        [
+          "$D_{P P B}^{B P}(\\operatorname{Path}(i))$",
+          "The total propagation delay along Path $(i)$ after all VNFs in SFC $F$ are placed",
+          "$R_{v}$",
+          "Available compute resource of node $v$"
+        ],
+        [
+          "$D_{P P B}^{B P}(\\operatorname{Path}(i))$",
+          "The total propagation delay along Path $(i)$ before mapping SFC $F$",
+          "$s$",
+          "Source node"
+        ],
+        [
+          "$E$",
+          "Link set of $G$",
+          "$T$",
+          "Set of destination nodes"
+        ],
+        [
+          "$E_{M}$",
+          "Link set of $G_{M}$",
+          "$U(v)$",
+          "Set of VNFs placed on node $v$"
+        ],
+        [
+          "$E^{i}$",
+          "Link set of Path $(i)$",
+          "$V$",
+          "Node set of $G$"
+        ],
+        [
+          "$E_{j-1}^{i}$",
+          "Link set of the sub-path from $s$ to the node hosting $f_{1}$ along Path $(i)$",
+          "$V_{M}$",
+          "Node set of $G_{M}$"
+        ],
+        [
+          "$E_{j-j+1}^{i}$",
+          "Link set of the sub-path between the nodes hosting $f_{j}$ and $f_{j+1}$ along Path $(i)$",
+          "$V^{i}$",
+          "Node set of Path $(i)$"
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Summary of the main notations in the proposed two-stage approach.",
+      "headers": [
+        "Notation",
+        "Definition",
+        "Notation",
+        "Definition"
+      ],
+      "rows": [
+        [
+          "$E S$",
+          "Set of elitist solutions",
+          "$\\boldsymbol{p}_{i}^{E S}$",
+          "Probability matrix containing all probabilistic information about selecting location loc $_{i, 1}$ to host $f_{1}$"
+        ],
+        [
+          "$\\operatorname{loc}_{i, j}^{A}$",
+          "ID of the node where $f_{j} \\in F$ is to be placed in Path(i)",
+          "$\\rho_{i u, j j}^{(t(i))}$",
+          "Probability of selecting the $n$th node in Path(i) to host $f_{1}$, given that $f_{1}$ is placed on the $m$ th node in Path $(i-1)$"
+        ],
+        [
+          "$N_{\\text {pop }}$",
+          "Population size",
+          "Path(max)",
+          "The longest path among all paths"
+        ],
+        [
+          "$N_{\\text {loc }}$",
+          "Number of iterations",
+          "$\\boldsymbol{W}^{E S}$",
+          "Weight set for updating INPLD-PV"
+        ],
+        [
+          "$\\boldsymbol{P}^{E S}$",
+          "INPLD-PV",
+          "$\\omega_{i, j}^{E S(i, j, m)}$",
+          "Number of the $n$th node in Path(i) selected to host $f_{j}$, given that $f_{j-1}$ is placed on the $m$ th node in Path(i)"
+        ],
+        [
+          "$\\rho_{i u, u}^{E S(i, j)}$",
+          "Probability of selecting the $n$th node in Path(i) to host $f_{j}$, given that $f_{j-1}$ is placed on the $m$ th node in Path(i)",
+          "",
+          1
+        ],
+        [
+          "$\\boldsymbol{P}^{E S}$",
+          "IPL-PV",
+          "$\\boldsymbol{W}^{E S}$",
+          "Weight set for updating ITPLD-PV"
+        ],
+        [
+          "$p_{k}^{E S}$",
+          "Probability of selecting the $k$ th node of $V^{1}$ to host $f_{1}$",
+          "$\\omega_{i, j}^{E S(i, m)}$",
+          "Number of the $n$th node in Path(i) selected to host $f_{1}$, given that $f_{1}$ is placed on the $m$ th node in Path $(i-1)$"
+        ],
+        [
+          "$\\boldsymbol{P}^{E S}$",
+          "ITPLD-PV",
+          "$Y_{k}$",
+          "A solution to VNFP in $G_{M}$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "$f_{1}$",
+        "$f_{2}$",
+        "$f_{3}$"
+      ],
+      "rows": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          2,
+          3,
+          5
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "$f_{1}$",
+        "$f_{2}$",
+        "$f_{3}$"
+      ],
+      "rows": [
+        [
+          1,
+          3,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          5,
+          7
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$f_{1}$",
+        "$f_{2}$",
+        "$f_{3}$"
+      ],
+      "rows": [
+        [
+          "$w_{k}^{p}$",
+          1,
+          2
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "$w_{k}^{p}$",
+        "$w_{k}^{d p}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          1,
+          "$v_{1}^{1}$",
+          "$v_{2}^{1}$",
+          "$v_{3}^{1}$",
+          "$v_{4}^{1}$"
+        ],
+        [
+          "$w_{k}^{p}$",
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Test instances and their parameters.",
+      "headers": [
+        "Instance ID",
+        "Instance name",
+        "Nodes",
+        "Links",
+        "Destinations",
+        "VNFs in SFC"
+      ],
+      "rows": [
+        [
+          -1,
+          "Dfn",
+          58,
+          87,
+          8,
+          4
+        ],
+        [
+          -2,
+          50,
+          50,
+          88,
+          7,
+          6
+        ],
+        [
+          -3,
+          "Kentucky",
+          754,
+          895,
+          9,
+          5
+        ],
+        [
+          -4,
+          "Sun",
+          27,
+          102,
+          4,
+          4
+        ],
+        [
+          -5,
+          "Tata",
+          145,
+          186,
+          5,
+          6
+        ],
+        [
+          -6,
+          "Tinet",
+          53,
+          89,
+          5,
+          6
+        ],
+        [
+          -7,
+          1,
+          50,
+          123,
+          7,
+          5
+        ],
+        [
+          -8,
+          2,
+          50,
+          128,
+          6,
+          4
+        ],
+        [
+          -9,
+          1001,
+          100,
+          463,
+          8,
+          5
+        ],
+        [
+          -10,
+          1002,
+          100,
+          405,
+          7,
+          4
+        ],
+        [
+          -11,
+          1501,
+          150,
+          466,
+          7,
+          5
+        ],
+        [
+          -12,
+          1502,
+          150,
+          419,
+          7,
+          4
+        ],
+        [
+          -13,
+          2001,
+          200,
+          444,
+          9,
+          4
+        ],
+        [
+          -14,
+          2002,
+          200,
+          456,
+          9,
+          5
+        ],
+        [
+          -15,
+          2501,
+          250,
+          727,
+          9,
+          5
+        ],
+        [
+          -16,
+          2502,
+          250,
+          665,
+          9,
+          4
+        ],
+        [
+          -17,
+          3001,
+          300,
+          987,
+          9,
+          4
+        ],
+        [
+          -18,
+          3002,
+          300,
+          990,
+          9,
+          4
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Description of the five state-of-the-art EAs.",
+      "headers": [
+        "Algorithm",
+        "Author",
+        "Description"
+      ],
+      "rows": [
+        [
+          "IEPBIL",
+          0.51,
+          "The integer-encoding population based incremental learning algorithm that tackles the unicast-oriented VNFP problem with delay constraint."
+        ],
+        [
+          "RA-GA",
+          0.59,
+          "The resource allocation genetic algorithm for unicast-oriented VNFP, where load balancing is taken into account."
+        ],
+        [
+          "AP-ACO",
+          0.6,
+          "The ant colony optimization based on adaptive parameter setting. AP-ACO is proposed to address the resource utilization problem in virtual machine (VM) placement. Note that VM placement considers how VMs are economically placed on physical machines, which is similar to the unicast-oriented VNFP problem."
+        ],
+        [
+          "SSA",
+          0.61,
+          "The salp swarm algorithm mimicking the swarming behavior of salps in oceans. SSA has been successfully applied in a variety of areas, such as feature selection [67], engineering optimization [68] and VM placement [69]."
+        ],
+        [
+          "CGA",
+          0.62,
+          "The cultural genetic algorithm proposed to handle medium and large-scale unicast-oriented VNFP problem, where the best candidate solutions are regarded as knowledge."
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "Results of ABF values (Best results are in bold).",
+      "headers": [
+        "Algorithm",
+        "I-1",
+        "I-2",
+        "I-3",
+        "I-4",
+        "I-5",
+        "I-6",
+        "I-7",
+        "I-8",
+        "I-9"
+      ],
+      "rows": [
+        [
+          "nEDA",
+          93.69,
+          204.17,
+          600.41,
+          339.19,
+          223.23,
+          310.76,
+          340.17,
+          152.06,
+          417.46
+        ],
+        [
+          "IEPBIL",
+          163.13,
+          660.29,
+          933.19,
+          345.43,
+          500.01,
+          850.7,
+          834.1,
+          257.78,
+          691.38
+        ],
+        [
+          "RA-GA",
+          217.65,
+          651.11,
+          946.52,
+          408.33,
+          489.56,
+          808.42,
+          851.33,
+          321.36,
+          791.43
+        ],
+        [
+          "AP-ACO",
+          276.78,
+          571.16,
+          968.07,
+          605.81,
+          334.47,
+          1167.37,
+          1145.53,
+          251.74,
+          856.66
+        ],
+        [
+          "SSA",
+          349.42,
+          1167.73,
+          1000.69,
+          680.87,
+          628.85,
+          1082.57,
+          1162.71,
+          381.6,
+          905.02
+        ],
+        [
+          "CGA",
+          296.76,
+          969.26,
+          957.53,
+          655.98,
+          516.53,
+          1054.91,
+          890.56,
+          344.19,
+          815.76
+        ],
+        [
+          "Algorithm",
+          -10,
+          -11,
+          -12,
+          -13,
+          -14,
+          -15,
+          -16,
+          -17,
+          -18
+        ],
+        [
+          "nEDA",
+          373.93,
+          856.71,
+          417.5,
+          715.13,
+          755.41,
+          623.64,
+          488.4,
+          568.52,
+          388.45
+        ],
+        [
+          "IEPBIL",
+          475.24,
+          1355.24,
+          840.58,
+          1157.44,
+          1199.42,
+          1083.18,
+          883.41,
+          811.96,
+          624.99
+        ],
+        [
+          "RA-GA",
+          503.49,
+          1366.77,
+          872.99,
+          1162.66,
+          1239.72,
+          1057.82,
+          894.99,
+          853.84,
+          673.25
+        ],
+        [
+          "AP-ACO",
+          575.0,
+          1682.77,
+          1317.74,
+          1572.22,
+          1554.46,
+          1423.79,
+          1243.41,
+          1010.32,
+          732.98
+        ],
+        [
+          "SSA",
+          649.21,
+          1639.66,
+          1391.91,
+          1634.5,
+          1319.67,
+          1384.01,
+          1228.63,
+          982.02,
+          760.37
+        ],
+        [
+          "CGA",
+          641.22,
+          1544.83,
+          959.68,
+          1244.48,
+          1373.03,
+          1173.87,
+          899.48,
+          891.38,
+          686.85
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 10
+    },
+    {
+      "table_number": "6",
+      "table_title": "Results of $t$-test.",
+      "headers": [
+        "Alg. 1 $\\leftrightarrow$ Alg. 2",
+        "I-1",
+        "I-2",
+        "I-3",
+        "I-4",
+        "I-5",
+        "I-6",
+        "I-7",
+        "I-8",
+        "I-9"
+      ],
+      "rows": [
+        [
+          "nEDA $\\leftrightarrow$ IEPBIL",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$\\sim$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "nEDA $\\leftrightarrow$ RA-GA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "nEDA $\\leftrightarrow$ AP-ACO",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "nEDA $\\leftrightarrow$ SSA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "nEDA $\\leftrightarrow$ CGA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "Alg. 1 $\\leftrightarrow$ Alg. 2",
+          -10,
+          -11,
+          -12,
+          -13,
+          -14,
+          -15,
+          -16,
+          -17,
+          -18
+        ],
+        [
+          "nEDA $\\leftrightarrow$ IEPBIL",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "nEDA $\\leftrightarrow$ RA-GA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "nEDA $\\leftrightarrow$ AP-ACO",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "nEDA $\\leftrightarrow$ SSA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "nEDA $\\leftrightarrow$ CGA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 10
+    },
+    {
+      "table_number": "7",
+      "table_title": "Rankings of six evolutionary algorithms.",
+      "headers": [
+        "Algorithm",
+        "nEDA",
+        "IEPBIL",
+        "RA-GA",
+        "AP-ACO",
+        "SSA",
+        "CGA"
+      ],
+      "rows": [
+        [
+          "Average rank",
+          1,
+          2.39,
+          2.94,
+          4.61,
+          5.61,
+          4.44
+        ],
+        [
+          "Position",
+          1,
+          2,
+          3,
+          5,
+          6,
+          4
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": "11",
+      "table_title": "Table 11 shows the Student's $t$-test results of the six algorithms. TS-M outperforms SFMP, TSA, ANMP, ACMP, and MMTC in 15 instances except I-3, I-5, and I-13. TS-M is statistically",
+      "headers": [
+        "Algorithm",
+        "I-1",
+        "I-2",
+        "I-3",
+        "I-4",
+        "I-5",
+        "I-6",
+        "I-7",
+        "I-8",
+        "I-9"
+      ],
+      "rows": [
+        [
+          "nEDA",
+          45.53,
+          15.59,
+          175.03,
+          22.31,
+          50.75,
+          8.16,
+          15.98,
+          21.67,
+          34.81
+        ],
+        [
+          "IEPBIL",
+          44.31,
+          14.45,
+          111.15,
+          18.46,
+          37.35,
+          15.04,
+          13.98,
+          10.82,
+          27.4
+        ],
+        [
+          "RA-GA",
+          47.71,
+          12.43,
+          91.42,
+          14.6,
+          23.45,
+          8.25,
+          12.22,
+          9.57,
+          16.39
+        ],
+        [
+          "AP-ACO",
+          15.53,
+          16.93,
+          60.47,
+          7.04,
+          18.66,
+          7.7,
+          10.02,
+          9.91,
+          14.49
+        ],
+        [
+          "SSA",
+          10.03,
+          12.38,
+          38.35,
+          6.28,
+          12.43,
+          8.37,
+          10.41,
+          7.5,
+          13.14
+        ],
+        [
+          "CGA",
+          29.28,
+          8.32,
+          105.74,
+          15.95,
+          25.21,
+          5.7,
+          7.83,
+          7.04,
+          13.15
+        ],
+        [
+          "Algorithm",
+          -10,
+          -11,
+          -12,
+          -13,
+          -14,
+          -15,
+          -16,
+          -17,
+          -18
+        ],
+        [
+          "nEDA",
+          49.81,
+          13.84,
+          27.63,
+          34.63,
+          24.74,
+          37.12,
+          36.88,
+          32.71,
+          39.16
+        ],
+        [
+          "IEPBIL",
+          45.53,
+          12.91,
+          21.45,
+          24.94,
+          21.39,
+          29.39,
+          25.8,
+          25.24,
+          21.46
+        ],
+        [
+          "RA-GA",
+          53.31,
+          11.26,
+          12.71,
+          16.04,
+          18.03,
+          20.12,
+          16.47,
+          16.02,
+          16.27
+        ],
+        [
+          "AP-ACO",
+          15.01,
+          11.91,
+          10.24,
+          12.56,
+          15.04,
+          17.77,
+          13.03,
+          13.37,
+          14.73
+        ],
+        [
+          "SSA",
+          11.89,
+          11.06,
+          10.63,
+          13.26,
+          14.49,
+          16.83,
+          13.21,
+          13.12,
+          13.17
+        ],
+        [
+          "CGA",
+          41.6,
+          7.6,
+          8.8,
+          11.58,
+          11.77,
+          13.93,
+          12.54,
+          12.62,
+          13.31
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 10
+    },
+    {
+      "table_number": "9",
+      "table_title": "Description of the five state-of-the-art approximation and heuristic algorithms.",
+      "headers": [
+        "Algorithm",
+        "Author",
+        "Description"
+      ],
+      "rows": [
+        [
+          "SFMP",
+          0.39,
+          "The heuristic algorithm for the static service function multicast <br> problem. The propagation delay is regarded as the link cost <br> in our experiment. If the shortest path between an access <br> point and its associated node hosting VNF(s) does not satisfy <br> Inequality (6), we replace it with a randomly selected link with <br> sufficient bandwidth."
+        ],
+        [
+          "TSA",
+          0.12,
+          "The two-stage heuristic algorithm for the service function tree <br> embedding problem. Since the original TSA does not specify <br> what the link cost is, we use propagation delay as the link cost. <br> Besides, bandwidth was not considered before. So, we randomly <br> choose feasible links to replace illegal ones. The original TSA <br> does not consider the overloading problem. In our experiment, <br> we randomly select feasible nodes when overloading occurs."
+        ],
+        [
+          "ANMP",
+          0.37,
+          "The approximation algorithm for the NFV-enabled multicast <br> problem in the mobile edge cloud environment. The propaga- <br> tion delay is used as the link cost. We randomly select feasible <br> links to replace those who do not meet Inequalities (3) and (6)."
+        ],
+        [
+          "ACMP",
+          0.8,
+          "The approximation algorithm for the least-cost single NFV- <br> enabled multicast problem. The original ACMP does not take <br> Inequality (6) into account when finding an auxiliary directed <br> acyclic graph. In our experiment, any link without sufficient <br> bandwidth is replaced with a randomly selected one with <br> enough bandwidth."
+        ],
+        [
+          "MMTC",
+          0.14,
+          "The heuristic algorithm for multi-source multicast routing prob- <br> lem in NFV. The original MMTC regards bandwidth consumption <br> as link cost, where Inequalities (3) and (6) were not considered. <br> In our experiment, links that cannot meet the above bandwidth <br> constraints are replaced with those with enough bandwidth."
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "10",
+      "table_title": "Results of average cost values (Best results are in bold).",
+      "headers": [
+        "Algorithm",
+        "I-1",
+        "I-2",
+        "I-3",
+        "I-4",
+        "I-5",
+        "I-6",
+        "I-7",
+        "I-8",
+        "I-9"
+      ],
+      "rows": [
+        [
+          "T5-M",
+          "$\\mathbf{9 3 . 6 9}$",
+          "$\\mathbf{2 0 4 . 1 7}$",
+          "$\\mathbf{6 0 0 . 4 1}$",
+          "$\\mathbf{3 3 9 . 1 9}$",
+          "$\\mathbf{2 2 3 . 2 3}$",
+          "$\\mathbf{3 1 0 . 7 6}$",
+          "$\\mathbf{3 4 0 . 1 7}$",
+          "$\\mathbf{1 5 2 . 0 6}$",
+          "$\\mathbf{4 1 7 . 4 6}$"
+        ],
+        [
+          "SFMP",
+          235.22,
+          325.75,
+          671.34,
+          1200.23,
+          235.87,
+          597.21,
+          605.75,
+          275.28,
+          745.88
+        ],
+        [
+          "TSA",
+          237.11,
+          361.64,
+          623.62,
+          655.1,
+          307.83,
+          540.23,
+          580.1,
+          204.8,
+          611.48
+        ],
+        [
+          "ANMP",
+          163.86,
+          343.97,
+          649.62,
+          654.51,
+          330.27,
+          652.67,
+          720.03,
+          266.91,
+          611.25
+        ],
+        [
+          "ACMP",
+          156.89,
+          269.01,
+          720.92,
+          687.11,
+          259.4,
+          404.9,
+          870.0,
+          175.18,
+          1047.52
+        ],
+        [
+          "MMTC",
+          143.12,
+          234.12,
+          740.77,
+          1205.49,
+          265.55,
+          439.6,
+          888.99,
+          267.68,
+          1390.17
+        ],
+        [
+          "Algorithm",
+          -10,
+          -11,
+          -12,
+          -13,
+          -14,
+          -15,
+          -16,
+          -17,
+          -18
+        ],
+        [
+          "T5-M",
+          "$\\mathbf{3 7 3 . 9 3}$",
+          "$\\mathbf{8 5 6 . 7 1}$",
+          "$\\mathbf{4 1 7 . 5 0}$",
+          "$\\mathbf{7 1 5 . 1 3}$",
+          "$\\mathbf{7 5 5 . 4 1}$",
+          "$\\mathbf{6 2 3 . 6 4}$",
+          "$\\mathbf{4 8 8 . 4 0}$",
+          "$\\mathbf{5 6 8 . 5 2}$",
+          "$\\mathbf{3 8 8 . 4 5}$"
+        ],
+        [
+          "SFMP",
+          703.81,
+          992.36,
+          677.18,
+          1375.06,
+          1218.75,
+          911.54,
+          712.57,
+          700.75,
+          619.91
+        ],
+        [
+          "TSA",
+          544.0,
+          977.91,
+          699.29,
+          893.22,
+          820.41,
+          863.09,
+          703.91,
+          683.0,
+          550.37
+        ],
+        [
+          "ANMP",
+          508.09,
+          919.24,
+          1055.09,
+          944.15,
+          912.09,
+          786.66,
+          775.94,
+          784.77,
+          574.0
+        ],
+        [
+          "ACMP",
+          532.82,
+          1099.58,
+          1281.87,
+          1108.8,
+          1570.82,
+          1249.91,
+          998.0,
+          907.99,
+          1014.51
+        ],
+        [
+          "MMTC",
+          1661.19,
+          3031.15,
+          2835.71,
+          2963.33,
+          2296.19,
+          2698.51,
+          2533.44,
+          1568.67,
+          2163.16
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 10
+    },
+    {
+      "table_number": "111",
+      "table_title": "Results of $t$-test.",
+      "headers": [
+        "Alg. 1 $\\leftrightarrow$ Alg. 2",
+        "I-1",
+        "I-2",
+        "I-3",
+        "I-4",
+        "I-5",
+        "I-6",
+        "I-7",
+        "I-8",
+        "I-9"
+      ],
+      "rows": [
+        [
+          "TS-M $\\leftrightarrow$ SFMP",
+          "+",
+          "+",
+          "+",
+          "+",
+          "$\\sim$",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "TS-M $\\leftrightarrow$ TSA",
+          "+",
+          "+",
+          "$\\sim$",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "TS-M $\\leftrightarrow$ ANMP",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "TS-M $\\leftrightarrow$ ACMP",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "TS-M $\\leftrightarrow$ MMTC",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "Alg. 1 $\\leftrightarrow$ Alg. 2",
+          -10,
+          -11,
+          -12,
+          -13,
+          -14,
+          -15,
+          -16,
+          -17,
+          -18
+        ],
+        [
+          "TS-M $\\leftrightarrow$ SFMP",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "TS-M $\\leftrightarrow$ TSA",
+          "+",
+          "+",
+          "+",
+          "$\\sim$",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "TS-M $\\leftrightarrow$ ANMP",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "TS-M $\\leftrightarrow$ ACMP",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "TS-M $\\leftrightarrow$ MMTC",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 10
+    },
+    {
+      "table_number": "12",
+      "table_title": "Rankings of six approximation and heuristic algorithms.",
+      "headers": [
+        "Algorithm",
+        "TS-M",
+        "SFMP",
+        "TSA",
+        "ANMP",
+        "ACMP",
+        "MMTC"
+      ],
+      "rows": [
+        [
+          "Average rank",
+          1,
+          3.94,
+          3.17,
+          3.61,
+          4.11,
+          5.17
+        ],
+        [
+          "Position",
+          1,
+          4,
+          2,
+          3,
+          5,
+          6
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    }
+  ]
+}

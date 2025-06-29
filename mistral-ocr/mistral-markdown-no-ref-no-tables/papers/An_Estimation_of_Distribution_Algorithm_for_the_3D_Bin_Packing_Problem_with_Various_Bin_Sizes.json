@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2013/An Estimation of Distribution Algorithm for the 3D Bin Packing Problem with Various Bin Sizes.md",
+    "filename": "An Estimation of Distribution Algorithm for the 3D Bin Packing Problem with Various Bin Sizes.md",
+    "title": "An Estimation of Distribution Algorithm for the 3D Bin Packing Problem with Various Bin Sizes",
+    "year": "2013"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Hifi, M., Kacem, I., Nègre, S., et al.: A linear programming approach for the threedimensional bin-packing problem. Electronic Notes in Discrete Mathematics 36, $993-1000(2010)$\n2. Martello, S., Pisinger, D., Vigo, D.: The three-dimensional bin packing problem. Operations Research 48(2), 256-267 (2000)\n3. Lim, A., Rodrigues, B., Yang, Y.: 3-d container packing heuristics. Applied Intelligence 22(2), 125-134 (2005)\n4. Lodi, A., Martello, S., Vigo, D.: Tspack: a unified tabu search code for multidimensional bin packing problems. Annals of Operations Research 131(1-4), 203-213 (2004)\n5. Crainic, T., Perboli, G., Tadei, R.: TS2PACK: A two-level tabu search for the threedimensional bin packing problem. European Journal of Operational Research 195(3), $744-760(2009)$\n6. Wang, H.F., Chen, Y.J.: A hybrid genetic algorithm for 3d bin packing problems. In: 2010 IEEE Fifth International Conference on Bio-Inspired Computing: Theories and Applications (BIC-TA), pp. 703-707. IEEE (2010)\n7. Wu, Y., Li, W.K., Goh, M., Souza, R.: Three-dimensional bin packing problem with variable bin height. European Journal of Operational Research 202(2), $347-355(2010)$\n8. Henrion, M.: Propagating uncertainty in bayesian networks by probabilistic logic sampling. In: Uncertainty in Artificial Intelligence, vol. 2, pp. 149-163 (1988)\n9. Mühlenbein, H.: The equation for response to selection and its use for prediction. Evolutionary Computation 5(3), 303-346 (1997)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Hifi, M., Kacem, I., Nègre, S., et al.: A linear programming approach for the threedimensional bin-packing problem. Electronic Notes in Discrete Mathematics 36, $993-1000(2010)$"
+      },
+      {
+        "ref_id": "2",
+        "text": "Martello, S., Pisinger, D., Vigo, D.: The three-dimensional bin packing problem. Operations Research 48(2), 256-267 (2000)"
+      },
+      {
+        "ref_id": "3",
+        "text": "Lim, A., Rodrigues, B., Yang, Y.: 3-d container packing heuristics. Applied Intelligence 22(2), 125-134 (2005)"
+      },
+      {
+        "ref_id": "4",
+        "text": "Lodi, A., Martello, S., Vigo, D.: Tspack: a unified tabu search code for multidimensional bin packing problems. Annals of Operations Research 131(1-4), 203-213 (2004)"
+      },
+      {
+        "ref_id": "5",
+        "text": "Crainic, T., Perboli, G., Tadei, R.: TS2PACK: A two-level tabu search for the threedimensional bin packing problem. European Journal of Operational Research 195(3), $744-760(2009)$"
+      },
+      {
+        "ref_id": "6",
+        "text": "Wang, H.F., Chen, Y.J.: A hybrid genetic algorithm for 3d bin packing problems. In: 2010 IEEE Fifth International Conference on Bio-Inspired Computing: Theories and Applications (BIC-TA), pp. 703-707. IEEE (2010)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Wu, Y., Li, W.K., Goh, M., Souza, R.: Three-dimensional bin packing problem with variable bin height. European Journal of Operational Research 202(2), $347-355(2010)$"
+      },
+      {
+        "ref_id": "8",
+        "text": "Henrion, M.: Propagating uncertainty in bayesian networks by probabilistic logic sampling. In: Uncertainty in Artificial Intelligence, vol. 2, pp. 149-163 (1988)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Mühlenbein, H.: The equation for response to selection and its use for prediction. Evolutionary Computation 5(3), 303-346 (1997)"
+      }
+    ],
+    "reference_count": 9,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparison of space utilization percentage among three approaches",
+      "headers": [
+        "Instances GA average GA best EDA average EDA best CPLEX CPLEX gap",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$12-1$",
+          0.73,
+          0.73,
+          0.53,
+          0.71,
+          0.73,
+          0
+        ],
+        [
+          "$12-2$",
+          0.82,
+          0.85,
+          0.59,
+          0.67,
+          0.85,
+          0
+        ],
+        [
+          "$12-3$",
+          0.49,
+          0.49,
+          0.47,
+          0.49,
+          0.49,
+          0
+        ],
+        [
+          "$12-4$",
+          0.27,
+          0.45,
+          0.19,
+          0.45,
+          0.45,
+          0
+        ],
+        [
+          "$12-5$",
+          0.66,
+          0.66,
+          0.49,
+          0.66,
+          0.66,
+          0
+        ],
+        [
+          "$20-1$",
+          0.77,
+          0.82,
+          0.7,
+          0.82,
+          0.58,
+          "$99 \\%$"
+        ],
+        [
+          "$20-2$",
+          0.76,
+          0.77,
+          0.67,
+          0.77,
+          0.62,
+          "$99 \\%$"
+        ],
+        [
+          "$20-3$",
+          0.77,
+          0.8,
+          0.66,
+          0.78,
+          0.63,
+          "$99 \\%$"
+        ],
+        [
+          "$20-4$",
+          0.68,
+          0.72,
+          0.6,
+          0.77,
+          0.7,
+          "$98 \\%$"
+        ],
+        [
+          "$20-5$",
+          0.71,
+          0.73,
+          0.72,
+          0.88,
+          0.65,
+          "$99 \\%$"
+        ],
+        [
+          "$50-1$",
+          0.69,
+          0.78,
+          0.74,
+          0.83,
+          "-",
+          "-"
+        ],
+        [
+          "$50-2$",
+          0.7,
+          0.76,
+          0.74,
+          0.83,
+          "-",
+          "-"
+        ],
+        [
+          "$50-3$",
+          0.68,
+          0.73,
+          0.75,
+          0.85,
+          "-",
+          "-"
+        ],
+        [
+          "$50-4$",
+          0.72,
+          0.76,
+          0.73,
+          0.8,
+          "-",
+          "-"
+        ],
+        [
+          "$50-5$",
+          0.62,
+          0.7,
+          0.66,
+          0.75,
+          "-",
+          "-"
+        ],
+        [
+          "$78-1$",
+          0.65,
+          0.68,
+          0.7,
+          0.74,
+          "-",
+          "-"
+        ],
+        [
+          "$78-2$",
+          0.66,
+          0.69,
+          0.71,
+          0.74,
+          "-",
+          "-"
+        ],
+        [
+          "$78-3$",
+          0.65,
+          0.68,
+          0.74,
+          0.82,
+          "-",
+          "-"
+        ],
+        [
+          "$78-4$",
+          0.67,
+          0.7,
+          0.7,
+          0.74,
+          "-",
+          "-"
+        ],
+        [
+          "$78-5$",
+          0.67,
+          0.72,
+          0.72,
+          0.79,
+          "-",
+          "-"
+        ]
+      ],
+      "row_count": 20,
+      "column_count": 7
+    }
+  ]
+}

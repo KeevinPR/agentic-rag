@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2000/Feature Subset Selection by Bayesian network-based optimization.md",
+    "filename": "Feature Subset Selection by Bayesian network-based optimization.md",
+    "title": "Feature Subset Selection by Bayesian network-based optimization",
+    "year": "2000"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Details of experimental domains. $\\mathrm{C}=$ continuous. $\\mathrm{N}=$ nominal",
+      "headers": [
+        "Domain",
+        "Number of instances",
+        "Number of classes",
+        "Number of features"
+      ],
+      "rows": [
+        [
+          1,
+          351,
+          2,
+          "$34(34-\\mathrm{C})$"
+        ],
+        [
+          "(2) Horse-colic",
+          368,
+          2,
+          "$22(15-\\mathrm{N}, 7-\\mathrm{C})$"
+        ],
+        [
+          3,
+          898,
+          6,
+          "$38(32-\\mathrm{C}, 6-\\mathrm{N})$"
+        ],
+        [
+          424,
+          1000,
+          10,
+          "$24(24-\\mathrm{N})$"
+        ],
+        [
+          5,
+          2310,
+          7,
+          "$19(19-\\mathrm{C})$"
+        ],
+        [
+          621,
+          2500,
+          2,
+          "$21(21-\\mathrm{C})$"
+        ],
+        [
+          "(7) Sick-euthyroid",
+          3163,
+          2,
+          "$25(7-\\mathrm{C}, 18-\\mathrm{N})$"
+        ],
+        [
+          8,
+          3196,
+          2,
+          "$36(36-\\mathrm{N})$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "A comparison of accuracy percentages of ID3 with and without FSS-EBNA",
+      "headers": [
+        "Domain",
+        "ID3 without FSS",
+        "ID3 \\& FSS-EBNA",
+        "p-value"
+      ],
+      "rows": [
+        [
+          1,
+          "$87.97 \\pm 3.68$",
+          "$88.77 \\pm 1.99$",
+          0.35
+        ],
+        [
+          "(2) Horse-colic",
+          "$78.42 \\pm 4.16$",
+          "$83.65 \\pm 1.57$",
+          0.01
+        ],
+        [
+          3,
+          "$99.42 \\pm 0.55$",
+          "$99.40 \\pm 0.50$",
+          0.99
+        ],
+        [
+          424,
+          "$58.21 \\pm 1.73$",
+          "$71.40 \\pm 1.72$",
+          0.0
+        ],
+        [
+          5,
+          "$95.52 \\pm 0.60$",
+          "$95.73 \\pm 0.86$",
+          0.95
+        ],
+        [
+          621,
+          "$79.32 \\pm 1.11$",
+          "$79.32 \\pm 1.11$",
+          1.0
+        ],
+        [
+          "(7) Sick-euthyroid",
+          "$96.78 \\pm 0.36$",
+          "$96.78 \\pm 0.41$",
+          1.0
+        ],
+        [
+          8,
+          "$98.93 \\pm 0.40$",
+          "$99.05 \\pm 0.39$",
+          0.93
+        ],
+        [
+          "Average",
+          86.81,
+          89.06,
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "A comparison of accuracy percentages of NB with and without FSS-EBNA",
+      "headers": [
+        "Domain",
+        "NB without FSS",
+        "NB \\& FSS-EBNA",
+        "p-value"
+      ],
+      "rows": [
+        [
+          1,
+          "$84.84 \\pm 3.12$",
+          "$92.40 \\pm 2.04$",
+          0.0
+        ],
+        [
+          "(2) Horse-colic",
+          "$78.97 \\pm 2.96$",
+          "$83.53 \\pm 1.58$",
+          0.01
+        ],
+        [
+          3,
+          "$93.01 \\pm 3.13$",
+          "$94.10 \\pm 3.00$",
+          0.1
+        ],
+        [
+          424,
+          "$72.53 \\pm 0.91$",
+          "$72.78 \\pm 0.67$",
+          0.96
+        ],
+        [
+          5,
+          "$79.95 \\pm 1.52$",
+          "$90.01 \\pm 1.83$",
+          0.0
+        ],
+        [
+          621,
+          "$79.48 \\pm 0.82$",
+          "$93.42 \\pm 0.90$",
+          0.0
+        ],
+        [
+          "(7) Sick-euthyroid",
+          "$84.77 \\pm 2.70$",
+          "$96.14 \\pm 0.65$",
+          0.0
+        ],
+        [
+          8,
+          "$87.22 \\pm 1.79$",
+          "$94.23 \\pm 0.35$",
+          0.0
+        ],
+        [
+          "Average",
+          83.48,
+          89.57,
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Cardinalities of selected feature subsets for ID3 with and without FSS-EBNA. It must be taken into account that ID3 carries out an embedded FSS and it can discard some of the available features in the construction of the decision tree. The third column shows the full set cardinality",
+      "headers": [
+        "Domain",
+        "ID3 without FSS",
+        "ID3 \\& FSS-EBNA",
+        "Full set"
+      ],
+      "rows": [
+        [
+          1,
+          "$9.00 \\pm 1.15$",
+          "$6.50 \\pm 1.17$",
+          34
+        ],
+        [
+          "(2) Horse-colic",
+          "$10.60 \\pm 1.17$",
+          "$3.30 \\pm 1.25$",
+          22
+        ],
+        [
+          3,
+          "$10.00 \\pm 1.15$",
+          "$8.70 \\pm 1.22$",
+          38
+        ],
+        [
+          424,
+          "$24.00 \\pm 0.00$",
+          "$7.00 \\pm 0.82$",
+          24
+        ],
+        [
+          5,
+          "$11.50 \\pm 1.17$",
+          "$5.70 \\pm 1.05$",
+          19
+        ],
+        [
+          621,
+          "$9.00 \\pm 0.00$",
+          "$9.00 \\pm 0.00$",
+          21
+        ],
+        [
+          "(7) Sick-euthyroid",
+          "$9.40 \\pm 1.17$",
+          "$4.00 \\pm 0.66$",
+          25
+        ],
+        [
+          8,
+          "$26.50 \\pm 2.01$",
+          "$21.20 \\pm 2.09$",
+          36
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Cardinalities of selected feature subsets for NB with and without FSS-EBNA. It must be taken into account that when no FSS is applied to NB, it uses the full feature set to induce the classification model",
+      "headers": [
+        "Domain",
+        "NB without FSS $=$ Full set",
+        "NB \\& FSS-EBNA"
+      ],
+      "rows": [
+        [
+          1,
+          34,
+          "$13.40 \\pm 2.11$"
+        ],
+        [
+          "(2) Horse-colic",
+          22,
+          "$6.10 \\pm 1.85$"
+        ],
+        [
+          3,
+          38,
+          "$20.50 \\pm 3.13$"
+        ],
+        [
+          424,
+          24,
+          "$11.20 \\pm 1.61$"
+        ],
+        [
+          5,
+          19,
+          "$7.10 \\pm 0.73$"
+        ],
+        [
+          621,
+          21,
+          "$9.00 \\pm 0.00$"
+        ],
+        [
+          "(7) Sick-euthyroid",
+          25,
+          "$9.80 \\pm 2.09$"
+        ],
+        [
+          8,
+          36,
+          "$17.30 \\pm 2.58$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "6",
+      "table_title": "Generation in which stopped each of the ten runs of the $5 \\times 2 \\mathrm{cv}$ procedure. It must be noted that the subset returned by the algorithm was the best subset of the previous generation respect the stop. The initial generation is considered as ' 0 '",
+      "headers": [
+        "Domain",
+        "ID3 \\& FSS-EBNA",
+        "NB \\& FSS-EBNA"
+      ],
+      "rows": [
+        [
+          1,
+          "$2,2,2,2,2,1,2,1,2,1$",
+          "$1,1,2,2,2,2,2,2,2,2$"
+        ],
+        [
+          "(2) Horse-colic",
+          "$2,2,2,3,3,2,2,2,1,1$",
+          "$4,2,2,2,2,2,3,2,3,2$"
+        ],
+        [
+          3,
+          "$1,1,1,1,1,1,1,1,1,1$",
+          "$2,2,2,2,1,2,1,2,2,2$"
+        ],
+        [
+          424,
+          "$2,2,2,2,2,2,2,2,2,2$",
+          "$3,3,2,3,3,3,3,3,2,2$"
+        ],
+        [
+          5,
+          "$2,1,2,3,1,1,2,2,2,2$",
+          "$4,4,4,3,3,3,3,4,4,3$"
+        ],
+        [
+          621,
+          "$1,1,1,1,1,1,1,1,1,1$",
+          "$3,2,3,2,3,2,3,3,2,2$"
+        ],
+        [
+          "(7) Sick-euthyroid",
+          "$2,2,1,1,2,2,3,2,2,2$",
+          "$4,4,4,3,5,2,4,2,3,4$"
+        ],
+        [
+          8,
+          "$5,5,4,4,4,4,4,4,4,4$",
+          "$3,3,3,4,4,3,3,4,3,4$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "7",
+      "table_title": "CPU times, in seconds, for FSS-EBNA. Reported numbers reflect the average times and standard deviation for the ten folds of $5 \\times 2 \\mathrm{cv}$",
+      "headers": [
+        "Domain",
+        "ID3 \\& FSS-EBNA",
+        "NB \\& FSS-EBNA"
+      ],
+      "rows": [
+        [
+          1,
+          "$23,105 \\pm 4830$",
+          "$2466 \\pm 842$"
+        ],
+        [
+          "(2) Horse-colic",
+          "$28,021 \\pm 5331$",
+          "$2901 \\pm 698$"
+        ],
+        [
+          3,
+          "$24,127 \\pm 724$",
+          "$5213 \\pm 873$"
+        ],
+        [
+          424,
+          "$64,219 \\pm 4536$",
+          "$6333 \\pm 1032$"
+        ],
+        [
+          5,
+          "$103,344 \\pm 24,675$",
+          "$15,243 \\pm 1675$"
+        ],
+        [
+          621,
+          "$78,218 \\pm 1322$",
+          "$14,361 \\pm 1545$"
+        ],
+        [
+          "(7) Sick-euthyroid",
+          "$48,766 \\pm 9433$",
+          "$15,541 \\pm 3786$"
+        ],
+        [
+          8,
+          "$104,229 \\pm 9278$",
+          "$16,106 \\pm 2768$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    }
+  ]
+}

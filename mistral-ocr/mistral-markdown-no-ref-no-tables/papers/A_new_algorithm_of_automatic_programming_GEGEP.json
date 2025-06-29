@@ -1,0 +1,474 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/A new algorithm of automatic programming GEGEP.md",
+    "filename": "A new algorithm of automatic programming GEGEP.md",
+    "title": "A new algorithm of automatic programming GEGEP",
+    "year": "2006"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Ferreira, C. Gene Expression Programming: a New Adaptive Algorithm for Solving Problems. Complex Systems, 13, 2(2001), 87-129.\n2. Ferreira C. Gene expression programming[M] . Portugal, An- gra do Heroismo ,2002.\n3. Ferreira C. Gene expression programming in problem solving [A]. 6th Online World Conference on Soft Computing in Indu- strial Applications[C] . 2001.\n4. Xin Li, Chi Zhou, Weimin Xiao, Peter C. Nelson. Prefix Gene Expression Programming. Genetic and Evolutionary Computa- tion Conference (GECCO)'05, Washington, DC, USA., June 25-29, 2005,\n5. P. Larra'naga and J.A. Lozano. Estimation of distribution alg- orithms. A new tool for evolutionary computation. Kluwer Ac- ademic Publishers, 2001.\n6. Zhao CY, Yuan XG , Sun JB. Application of Genetic Progr- amming to Predicting the Amount of Gas Emitted from Coal Face [J]. Journal of Basic Science and Engineering. 1999,7(4): 387-392.\n7. Li Q, Cai ZH, Zhu L, Zhao SY. Application of Gene Expr- ession Programming in Predicting the Amount of Gas Emitted from Coal Face[J].Journal of Basic Science and Engineering. 2004.3(12).49-54.\n8. CAI Zhihua, JIANG Siwei, Zhu Li , GUO Yuanyuan . A Novel Algorithm of Gene Expression Programming Based on Simul-ated Annealing. International Symposium on Intelligence C-omputation \\& Applications [C], 2005.605-610",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Ferreira, C. Gene Expression Programming: a New Adaptive Algorithm for Solving Problems. Complex Systems, 13, 2(2001), 87-129."
+      },
+      {
+        "ref_id": "2",
+        "text": "Ferreira C. Gene expression programming[M] . Portugal, An- gra do Heroismo ,2002."
+      },
+      {
+        "ref_id": "3",
+        "text": "Ferreira C. Gene expression programming in problem solving [A]. 6th Online World Conference on Soft Computing in Indu- strial Applications[C] . 2001."
+      },
+      {
+        "ref_id": "4",
+        "text": "Xin Li, Chi Zhou, Weimin Xiao, Peter C. Nelson. Prefix Gene Expression Programming. Genetic and Evolutionary Computa- tion Conference (GECCO)'05, Washington, DC, USA., June 25-29, 2005,"
+      },
+      {
+        "ref_id": "5",
+        "text": "P. Larra'naga and J.A. Lozano. Estimation of distribution alg- orithms. A new tool for evolutionary computation. Kluwer Ac- ademic Publishers, 2001."
+      },
+      {
+        "ref_id": "6",
+        "text": "Zhao CY, Yuan XG , Sun JB. Application of Genetic Progr- amming to Predicting the Amount of Gas Emitted from Coal Face [J]. Journal of Basic Science and Engineering. 1999,7(4): 387-392."
+      },
+      {
+        "ref_id": "7",
+        "text": "Li Q, Cai ZH, Zhu L, Zhao SY. Application of Gene Expr- ession Programming in Predicting the Amount of Gas Emitted from Coal Face[J].Journal of Basic Science and Engineering. 2004.3(12).49-54."
+      },
+      {
+        "ref_id": "8",
+        "text": "CAI Zhihua, JIANG Siwei, Zhu Li , GUO Yuanyuan . A Novel Algorithm of Gene Expression Programming Based on Simul-ated Annealing. International Symposium on Intelligence C-omputation \\& Applications [C], 2005.605-610"
+      }
+    ],
+    "reference_count": 8,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameter Setting for GEGEP",
+      "headers": [
+        "Evolutionary generation",
+        "100000",
+        "One-point recombination rate",
+        "0.3"
+      ],
+      "rows": [
+        [
+          "Population size",
+          80,
+          "Two-point recombination rate",
+          0.3
+        ],
+        [
+          "Mutation rate of homeotic gene",
+          0.044,
+          "IS transposition rate",
+          0.1
+        ],
+        [
+          "Mutation rate of conventional genes",
+          0.044,
+          "RIS transposition rate",
+          0.1
+        ],
+        [
+          "Gene recombination rate",
+          0.1,
+          "Gene transposition rate",
+          0.1
+        ],
+        [
+          "Conventional gene Numbers",
+          4,
+          "Homeotic gene's head length",
+          4
+        ],
+        [
+          "Conventional genes' head length",
+          2,
+          "Homeotic gene's body length",
+          20
+        ],
+        [
+          "Conventional genes' body length",
+          15,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison of fitting results by GP ,GEP and GEGEP",
+      "headers": [
+        "sample",
+        "$\\mathbf{x}_{1}$ <br> $(\\mathbf{m})$",
+        "$\\mathbf{x}_{2}$ <br> $(\\mathbf{m})$",
+        "$\\mathbf{x}_{3}$ <br> $\\left(\\mathbf{m}^{3} / \\mathbf{t}\\right)$",
+        "$\\mathbf{x}_{4}$ <br> $(\\mathbf{m})$",
+        "$\\mathbf{x}_{5}$ <br> $(\\mathbf{m} / \\mathbf{d})$",
+        "$\\mathbf{x}_{6}$ <br> $(\\mathbf{t} / \\mathbf{d})$",
+        "Calculation result of $\\mathbf{y}$ <br> $\\left(\\mathbf{m}^{3} / \\mathbf{m i n}\\right)$",
+        "",
+        "",
+        "",
+        "Relative error of $\\mathbf{Y}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Y",
+          "GP",
+          "GEP",
+          "GEGEP",
+          "GP",
+          "GEP",
+          "GEGEP"
+        ],
+        [
+          1,
+          408,
+          2.0,
+          1.92,
+          20,
+          4.42,
+          1825,
+          3.34,
+          3.18,
+          3.27,
+          3.37,
+          0.048,
+          0.02,
+          0.00885
+        ],
+        [
+          2,
+          411,
+          2.0,
+          2.15,
+          22,
+          4.16,
+          1527,
+          2.97,
+          2.79,
+          3.29,
+          2.93,
+          0.061,
+          0.108,
+          0.0142
+        ],
+        [
+          3,
+          420,
+          1.8,
+          2.14,
+          19,
+          4.13,
+          1751,
+          3.56,
+          3.89,
+          3.47,
+          3.56,
+          0.092,
+          0.024,
+          "1.62E-05"
+        ],
+        [
+          4,
+          432,
+          2.3,
+          2.58,
+          17,
+          4.67,
+          2078,
+          3.62,
+          3.46,
+          3.71,
+          3.71,
+          0.044,
+          0.026,
+          0.02398
+        ],
+        [
+          5,
+          456,
+          2.2,
+          2.4,
+          20,
+          4.51,
+          2104,
+          4.17,
+          3.98,
+          4.1,
+          4.15,
+          0.046,
+          0.018,
+          0.00579
+        ],
+        [
+          6,
+          516,
+          2.8,
+          3.22,
+          12,
+          3.45,
+          2242,
+          4.6,
+          4.78,
+          4.68,
+          4.64,
+          0.039,
+          0.017,
+          0.00913
+        ],
+        [
+          7,
+          527,
+          2.5,
+          2.8,
+          11,
+          3.28,
+          1979,
+          4.92,
+          4.88,
+          5.03,
+          4.98,
+          0.008,
+          0.022,
+          0.01178
+        ],
+        [
+          8,
+          531,
+          2.9,
+          3.35,
+          13,
+          3.68,
+          2288,
+          4.78,
+          4.38,
+          4.84,
+          4.87,
+          0.084,
+          0.012,
+          0.01833
+        ],
+        [
+          9,
+          550,
+          2.9,
+          3.61,
+          14,
+          4.02,
+          2325,
+          5.23,
+          5.1,
+          5.19,
+          5.21,
+          0.025,
+          0.008,
+          0.00291
+        ],
+        [
+          10,
+          563,
+          3.0,
+          3.68,
+          12,
+          3.53,
+          2410,
+          5.56,
+          5.78,
+          5.42,
+          5.57,
+          0.04,
+          0.024,
+          0.00102
+        ],
+        [
+          11,
+          590,
+          5.9,
+          4.21,
+          18,
+          2.85,
+          3139,
+          7.24,
+          7.09,
+          7.35,
+          7.24,
+          0.021,
+          0.015,
+          0.00056
+        ],
+        [
+          12,
+          604,
+          6.2,
+          4.03,
+          16,
+          2.64,
+          3354,
+          7.8,
+          8.15,
+          7.49,
+          7.78,
+          0.045,
+          0.04,
+          0.00291
+        ],
+        [
+          13,
+          607,
+          6.1,
+          4.34,
+          17,
+          2.77,
+          3087,
+          7.68,
+          7.36,
+          7.58,
+          7.68,
+          0.042,
+          0.013,
+          "3.1E-05"
+        ],
+        [
+          14,
+          634,
+          6.5,
+          4.8,
+          15,
+          2.92,
+          3620,
+          8.51,
+          8.91,
+          8.3,
+          8.52,
+          0.047,
+          0.024,
+          0.00105
+        ],
+        [
+          15,
+          640,
+          6.3,
+          4.67,
+          15,
+          2.75,
+          3412,
+          7.95,
+          7.43,
+          7.94,
+          7.98,
+          0.065,
+          0.001,
+          0.00428
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 14
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison of predicted results by GP,GEP and GEGEP",
+      "headers": [
+        "sample",
+        "$\\mathbf{x}_{1}$ <br> $(\\mathbf{m})$",
+        "$\\mathbf{x}_{2}$ <br> $(\\mathbf{m})$",
+        "$\\mathbf{x}_{3}$ <br> $\\left(\\mathbf{m}^{3} / \\mathbf{t}\\right.$ <br> )",
+        "$\\mathbf{x}_{4}$ <br> $(\\mathbf{m})$",
+        "$\\mathbf{x}_{5}$ <br> $(\\mathbf{m} / \\mathbf{d})$",
+        "$\\mathbf{x}_{6}$ <br> $(\\mathbf{t} / \\mathbf{d})$",
+        "Calculation result of $\\mathbf{y}$ <br> $\\left(\\mathbf{m}^{3} / \\mathbf{m i n}\\right)$",
+        "",
+        "",
+        "",
+        "Relative error of $\\mathbf{Y}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Y",
+          "GP",
+          "GEP",
+          "GEGEP",
+          "GP",
+          "GEP",
+          "GEGEP"
+        ],
+        [
+          16,
+          450,
+          2.2,
+          2.43,
+          16,
+          4.32,
+          1996,
+          4.06,
+          4.32,
+          4.11,
+          4.01,
+          0.064,
+          0.012,
+          0.01268
+        ],
+        [
+          17,
+          544,
+          2.7,
+          3.16,
+          13,
+          3.81,
+          2207,
+          4.92,
+          5.15,
+          4.93,
+          4.91,
+          0.046,
+          0.002,
+          0.00105
+        ],
+        [
+          18,
+          629,
+          6.4,
+          4.62,
+          19,
+          2.8,
+          3456,
+          8.04,
+          7.79,
+          8.01,
+          7.8,
+          0.031,
+          0.004,
+          0.03037
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 14
+    }
+  ]
+}

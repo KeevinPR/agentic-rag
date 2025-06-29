@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/QoS-based service provision schemes and plan durability in service composition.md",
+    "filename": "QoS-based service provision schemes and plan durability in service composition.md",
+    "title": "QoS-based service provision schemes and plan durability in service composition",
+    "year": "2008"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Example of multi-level availability",
+      "headers": [
+        "Service Instance A",
+        ""
+      ],
+      "rows": [
+        [
+          "Time of Day",
+          "Availability"
+        ],
+        [
+          "$06: 01-18: 00$",
+          "Base availability"
+        ],
+        [
+          "$18: 01-00: 00$",
+          "$+3 \\%$"
+        ],
+        [
+          "$00: 01-06: 00$",
+          "$+5 \\%$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Example of cost-processing time dependency",
+      "headers": [
+        "Service Instance A",
+        ""
+      ],
+      "rows": [
+        [
+          "Cost",
+          "Processing Time"
+        ],
+        [
+          "Base cost",
+          "Base processing time"
+        ],
+        [
+          "$+3 \\%$",
+          "$-5 \\%$"
+        ],
+        [
+          "$+5 \\%$",
+          "$-8 \\%$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Example of partnership",
+      "headers": [
+        "$10 \\%$ discount in cost when these instances collaborate",
+        ""
+      ],
+      "rows": [
+        [
+          "Service Provider",
+          "Constraint on Instances"
+        ],
+        [
+          "A",
+          "Any instance"
+        ],
+        [
+          "B",
+          "Any instance of abstract service X"
+        ],
+        [
+          "C",
+          11
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Example of personal rating rules for time and availability",
+      "headers": [
+        "Time",
+        "",
+        "Availability",
+        ""
+      ],
+      "rows": [
+        [
+          "Event",
+          "Action",
+          "Event",
+          "Action"
+        ],
+        [
+          "- $T_{3}$ delivered $>T_{4}$ published + f",
+          1,
+          "- Not available first time",
+          1
+        ],
+        [
+          "- $T_{4}$ published $+\\mathrm{f} \\leq T_{3}$ delivered $\\leq$",
+          0.25,
+          "- Not available next time",
+          2
+        ],
+        [
+          "$T_{4}$ published - f",
+          "",
+          "",
+          ""
+        ],
+        [
+          "- $T_{3}$ delivered $<T_{4}$ published - f",
+          1,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Metrics for control flow construct-QoS pairs",
+      "headers": [
+        "QoS",
+        "Sequence",
+        "Switch",
+        "Fork",
+        "Loop"
+      ],
+      "rows": [
+        [
+          "Time (T)",
+          "$\\sum_{i=1}^{m} T\\left(t_{i}\\right)$",
+          "$\\sum_{i=1}^{n} p_{a i} * T\\left(t_{i}\\right)$",
+          "$\\operatorname{Max}\\left\\{T\\left(t_{i}\\right)_{i \\in\\{1 \\ldots p\\}}\\right\\}$",
+          "$k * T(t)$"
+        ],
+        [
+          "Cost (C)",
+          "$\\sum_{i=1}^{m} C\\left(t_{i}\\right)$",
+          "$\\sum_{i=1}^{n} p_{a i} * C\\left(t_{i}\\right)$",
+          "$\\sum_{i=1}^{n} C\\left(t_{i}\\right)$",
+          "$k * C(t)$"
+        ],
+        [
+          "Availability (A)",
+          "$\\prod_{i=1}^{m} A\\left(t_{i}\\right)$",
+          "$\\sum_{i=1}^{n} p_{a i} * A\\left(t_{i}\\right)$",
+          "$\\prod_{i=1}^{n} A\\left(t_{i}\\right)$",
+          "$A(t)^{k}$"
+        ],
+        [
+          "Reliability (R)",
+          "$\\prod_{i=1}^{m} R\\left(t_{i}\\right)$",
+          "$\\sum_{i=1}^{n} p_{a i} * R\\left(t_{i}\\right)$",
+          "$\\prod_{i=1}^{n} R\\left(t_{i}\\right)$",
+          "$R(t)^{k}$"
+        ],
+        [
+          "Rating (P)",
+          "$\\prod_{i=1}^{m} P\\left(t_{i}\\right)$",
+          "$\\sum_{i=1}^{n} p_{a i} * P\\left(t_{i}\\right)$",
+          "$\\prod_{i=1}^{n} P\\left(t_{i}\\right)$",
+          "$P(t)^{k}$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    }
+  ]
+}

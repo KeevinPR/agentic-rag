@@ -1,0 +1,586 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/An Adaptive Evolutionary Multi-Objective Estimation of Distribution Algorithm and Its Application to Multi-UAV Path Planning.md",
+    "filename": "An Adaptive Evolutionary Multi-Objective Estimation of Distribution Algorithm and Its Application to Multi-UAV Path Planning.md",
+    "title": "An Adaptive Evolutionary Multi-Objective Estimation of Distribution Algorithm and Its Application to Multi-UAV Path Planning",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparison results of AEMO-EDA with three multi-objective optimization algorithms.",
+      "headers": [
+        "Problems",
+        "$M$",
+        "Max Gen",
+        "Max Pop",
+        "NSGA-III",
+        "NSGAIII-GBFE",
+        "RVEA",
+        "AEMO-EDA"
+      ],
+      "rows": [
+        [
+          1,
+          3,
+          350,
+          600,
+          "$8.937 \\times 10^{-4}$",
+          "$3.212 \\times 10^{-4}$",
+          "$8.385 \\times 10^{-4}$",
+          "$4.342 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$2.621 \\times 10^{-2}$",
+          "$1.365 \\times 10^{-2}$",
+          "$6.281 \\times 10^{-3}$",
+          "$5.238 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$1.033 \\times 10^{-2}$",
+          "$5.832 \\times 10^{-3}$",
+          "$9.364 \\times 10^{-3}$",
+          "$3.178 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$5.088 \\times 10^{-2}$",
+          "$1.309 \\times 10^{-2}$",
+          "$7.391 \\times 10^{-3}$",
+          "$2.601 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$1.240 \\times 10^{-1}$",
+          "$1.977 \\times 10^{-2}$",
+          "$4.015 \\times 10^{-2}$",
+          "$3.623 \\times 10^{-2}$"
+        ],
+        [
+          2,
+          3,
+          350,
+          600,
+          "$1.794 \\times 10^{-3}$",
+          "$5.401 \\times 10^{-4}$",
+          "$3.149 \\times 10^{-4}$",
+          "$2.451 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$9.211 \\times 10^{-3}$",
+          "$7.389 \\times 10^{-3}$",
+          "$5.104 \\times 10^{-3}$",
+          "$4.257 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$2.093 \\times 10^{-2}$",
+          "$5.407 \\times 10^{-3}$",
+          "$7.324 \\times 10^{-3}$",
+          "$8.013 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$7.817 \\times 10^{-2}$",
+          "$1.849 \\times 10^{-2}$",
+          "$2.175 \\times 10^{-2}$",
+          "$7.451 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$9.221 \\times 10^{-2}$",
+          "$1.089 \\times 10^{-2}$",
+          "$3.596 \\times 10^{-2}$",
+          "$1.911 \\times 10^{-2}$"
+        ],
+        [
+          3,
+          3,
+          350,
+          600,
+          "$5.133 \\times 10^{-4}$",
+          "$5.062 \\times 10^{-4}$",
+          "$3.321 \\times 10^{-4}$",
+          "$6.148 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$7.603 \\times 10^{-4}$",
+          "$2.075 \\times 10^{-3}$",
+          "$4.205 \\times 10^{-3}$",
+          "$1.202 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$4.471 \\times 10^{-2}$",
+          "$5.912 \\times 10^{-3}$",
+          "$6.630 \\times 10^{-3}$",
+          "$1.958 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$1.068 \\times 10^{-2}$",
+          "$9.079 \\times 10^{-3}$",
+          "$1.370 \\times 10^{-2}$",
+          "$8.171 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$7.138 \\times 10^{-2}$",
+          "$4.137 \\times 10^{-2}$",
+          "$3.095 \\times 10^{-2}$",
+          "$1.503 \\times 10^{-2}$"
+        ],
+        [
+          4,
+          3,
+          350,
+          600,
+          "$1.614 \\times 10^{-4}$",
+          "$6.121 \\times 10^{-4}$",
+          "$3.128 \\times 10^{-4}$",
+          "$2.982 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$1.926 \\times 10^{-3}$",
+          "$9.379 \\times 10^{-4}$",
+          "$5.112 \\times 10^{-3}$",
+          "$3.884 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$2.093 \\times 10^{-2}$",
+          "$5.407 \\times 10^{-3}$",
+          "$7.324 \\times 10^{-3}$",
+          "$8.013 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$9.831 \\times 10^{-2}$",
+          "$9.849 \\times 10^{-3}$",
+          "$2.175 \\times 10^{-2}$",
+          "$1.591 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$1.209 \\times 10^{-1}$",
+          "$5.349 \\times 10^{-2}$",
+          "$3.512 \\times 10^{-2}$",
+          "$4.928 \\times 10^{-2}$"
+        ],
+        [
+          1,
+          3,
+          350,
+          600,
+          "$7.977 \\times 10^{-4}$",
+          "$4.277 \\times 10^{-4}$",
+          "$2.361 \\times 10^{-4}$",
+          "$3.189 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$5.021 \\times 10^{-3}$",
+          "$4.325 \\times 10^{-3}$",
+          "$1.013 \\times 10^{-2}$",
+          "$2.218 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$1.033 \\times 10^{-2}$",
+          "$5.832 \\times 10^{-3}$",
+          "$9.364 \\times 10^{-3}$",
+          "$3.178 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$8.148 \\times 10^{-2}$",
+          "$1.309 \\times 10^{-2}$",
+          "$4.391 \\times 10^{-2}$",
+          "$2.601 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$3.218 \\times 10^{-1}$",
+          "$7.907 \\times 10^{-2}$",
+          "$4.265 \\times 10^{-2}$",
+          "$3.623 \\times 10^{-2}$"
+        ],
+        [
+          2,
+          3,
+          350,
+          600,
+          "$1.724 \\times 10^{-3}$",
+          "$6.491 \\times 10^{-4}$",
+          "$8.579 \\times 10^{-4}$",
+          "$6.851 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$9.031 \\times 10^{-3}$",
+          "$8.319 \\times 10^{-3}$",
+          "$5.151 \\times 10^{-3}$",
+          "$2.253 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$2.723 \\times 10^{-2}$",
+          "$7.412 \\times 10^{-3}$",
+          "$1.374 \\times 10^{-2}$",
+          "$8.013 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$8.254 \\times 10^{-2}$",
+          "$6.819 \\times 10^{-2}$",
+          "$8.144 \\times 10^{-3}$",
+          "$1.610 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$1.241 \\times 10^{-1}$",
+          "$6.609 \\times 10^{-2}$",
+          "$2.456 \\times 10^{-2}$",
+          "$1.911 \\times 10^{-2}$"
+        ],
+        [
+          3,
+          3,
+          350,
+          600,
+          "$9.312 \\times 10^{-4}$",
+          "$7.217 \\times 10^{-4}$",
+          "$3.395 \\times 10^{-4}$",
+          "$4.310 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          5,
+          500,
+          900,
+          "$7.231 \\times 10^{-3}$",
+          "$1.351 \\times 10^{-2}$",
+          "$6.201 \\times 10^{-3}$",
+          "$5.862 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          8,
+          750,
+          1200,
+          "$3.834 \\times 10^{-2}$",
+          "$5.804 \\times 10^{-3}$",
+          "$9.471 \\times 10^{-3}$",
+          "$3.104 \\times 10^{-3}$"
+        ],
+        [
+          "",
+          10,
+          1000,
+          1600,
+          "$7.038 \\times 10^{-2}$",
+          "$3.279 \\times 10^{-2}$",
+          "$2.041 \\times 10^{-2}$",
+          "$1.651 \\times 10^{-2}$"
+        ],
+        [
+          "",
+          15,
+          1400,
+          2000,
+          "$1.040 \\times 10^{-1}$",
+          "$2.387 \\times 10^{-2}$",
+          "$4.833 \\times 10^{-2}$",
+          "$5.203 \\times 10^{-2}$"
+        ]
+      ],
+      "row_count": 35,
+      "column_count": 8
+    },
+    {
+      "table_number": "3",
+      "table_title": "UAV parameter setting.",
+      "headers": [
+        "$Z_{\\max } / m$",
+        "$\\theta_{\\max } /\\left({ }^{\\circ}\\right)$",
+        "$h_{\\max } / m$",
+        "$h_{\\text {sade }} / m$",
+        "$d_{\\text {sade }} / m$"
+      ],
+      "rows": [
+        [
+          100,
+          30,
+          120,
+          75,
+          15
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Environmental threat parameter setting.",
+      "headers": [
+        "Enemy Threats",
+        "Coordinate $/ m$",
+        "$d_{\\min } / m$",
+        "$d_{\\max } / m$"
+      ],
+      "rows": [
+        [
+          1,
+          "$[4400,5200]$",
+          800,
+          1300
+        ],
+        [
+          1,
+          "$[3600,8400]$",
+          640,
+          1040
+        ],
+        [
+          2,
+          "$[8400,2800]$",
+          880,
+          1430
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "AEMO-EDA related parameter settings.",
+      "headers": [
+        "Meaning",
+        "Symbol",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Number of UAVs",
+          "$T$",
+          "$[2,4]$"
+        ],
+        [
+          "Population size",
+          "$N$",
+          "$[500,1000]$"
+        ],
+        [
+          "Number of optimization objectives",
+          "$M$",
+          4
+        ],
+        [
+          "Number of UAV trajectory segments",
+          "$H$",
+          30
+        ],
+        [
+          "Maximum number of iterations",
+          "$t_{\\max }$",
+          "$[350,700]$"
+        ],
+        [
+          "Mean estimated minimum selection rate",
+          "$s r_{\\min }$",
+          0.15
+        ],
+        [
+          "Mean estimated maximum selection rate",
+          "$s r_{\\max }$",
+          0.35
+        ],
+        [
+          "Learning rate of covariance matrix",
+          "$c_{\\lambda}$",
+          0.24
+        ],
+        [
+          "Equilibrium influence parameter for the",
+          "$\\theta$",
+          0.12
+        ],
+        [
+          "number of iterations",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 3
+    },
+    {
+      "table_number": "5",
+      "table_title": "The IGD values for different mean selection rate parameter settings.",
+      "headers": [
+        "",
+        "$s r_{\\max }=0.15$",
+        "$s r_{\\max }=0.3$",
+        "$s r_{\\max }=0.45$",
+        "$s r_{\\max }=0.6$",
+        "$s r_{\\max }=0.75$",
+        "$s r_{\\max }=0.9$"
+      ],
+      "rows": [
+        [
+          "$s r_{\\min }=0.15$",
+          "$5.103 \\times 10^{-2}$",
+          "$3.794 \\times 10^{-2}$",
+          "$5.806 \\times 10^{-3}$",
+          "$7.973 \\times 10^{-3}$",
+          "$9.539 \\times 10^{-3}$",
+          "$7.163 \\times 10^{-2}$"
+        ],
+        [
+          "$s r_{\\min }=0.3$",
+          "-",
+          "$6.315 \\times 10^{-2}$",
+          "$2.178 \\times 10^{-2}$",
+          "$8.179 \\times 10^{-3}$",
+          "$8.503 \\times 10^{-3}$",
+          "$8.724 \\times 10^{-2}$"
+        ],
+        [
+          "$s r_{\\min }=0.45$",
+          "-",
+          "-",
+          "$6.639 \\times 10^{-2}$",
+          "$1.925 \\times 10^{-2}$",
+          "$6.755 \\times 10^{-2}$",
+          "$2.342 \\times 10^{-1}$"
+        ],
+        [
+          "$s r_{\\min }=0.6$",
+          "-",
+          "-",
+          "-",
+          "$9.411 \\times 10^{-2}$",
+          "$8.772 \\times 10^{-2}$",
+          "$5.901 \\times 10^{-1}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 7
+    },
+    {
+      "table_number": "6",
+      "table_title": "Performance evaluation indicators comparison results.",
+      "headers": [
+        "Algorithm",
+        "HV",
+        "IGD",
+        "$\\operatorname{time}_{\\text {avg }} / s$"
+      ],
+      "rows": [
+        [
+          "AEMO-EDA",
+          "$3.4273 \\times 10^{-1}$",
+          "$5.1769 \\times 10^{-3}$",
+          11.034
+        ],
+        [
+          "RVEA",
+          "$9.1885 \\times 10^{-2}$",
+          "$3.6153 \\times 10^{-2}$",
+          9.788
+        ],
+        [
+          "NSGA-III",
+          "$1.8748 \\times 10^{-1}$",
+          "$9.7354 \\times 10^{-3}$",
+          12.531
+        ],
+        [
+          "NSGAIII-GBFE",
+          "$3.1497 \\times 10^{-1}$",
+          "$8.5411 \\times 10^{-3}$",
+          13.265
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    }
+  ]
+}

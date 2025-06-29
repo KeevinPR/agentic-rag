@@ -1,0 +1,591 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/Histogram-Based Estimation of Distribution Algorithm  A Competent Method for Continuous Optimization.md",
+    "filename": "Histogram-Based Estimation of Distribution Algorithm  A Competent Method for Continuous Optimization.md",
+    "title": "Histogram-Based Estimation of Distribution Algorithm  A Competent Method for Continuous Optimization",
+    "year": "2008"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] Larrañaga P, Lozano J A. Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer Academic Publishers, 2002.\n[2] Pelikan M. Hierarchical Bayesian Optimization Algorithm: Toward A New Generation of Evolutionary Algorithms. Springer-Verlag, 2005.\n[3] Očenášek J. Parallel estimation of distribution algorithms [Dissertation]. Brno University of Technology, 2002.\n[4] Larrañaga P, Etxeberria R, Lozano J A, Peña J M. Optimization by learning and simulation of Bayesian and Gaussian networks. Technical Report EHU-KZAA-IK-4/99, University of the Basque Country, 1999.\n[5] Larrañaga P, Etxeberria R, Lozano J A, Peña J M. Optimization in continuous domains by learning and simulation of Gaussian networks. In Proc. the Genetic and Evolutionary Computation Conference, Las Vegas, Nevada, 2000, pp.201-204.\n[6] Sebag M, Ducolombier A. Extending Population-Based Incremental Learning to Continuous Search Spaces. Parallel Problem Solving from Nature - PPSN V, Springer-Verlag, 1998, pp.418-427.\n[7] Larrañaga P, Lozano J A, Bengoetxea E. Estimation of Distribution Algorithms based on multivariate normal and Gaussian networks. Technical report KZZA-IK-1-01, University of the Basque Country, 2001.\n[8] Bosman P, Thierens D. Expanding from Discrete to Continuous Estimation of Distribution Algorithms: IDEA. Parallel Problem Solving From Nature - PPSN VI, 2000, pp.767776 .\n[9] Ahn C W. Real-coded Bayesian optimization algorithm. In Proc. Advances in Evolutionary Algorithms: Theory, Design and Practice, 2006, pp.85-124.\n[10] Tsutsui S, Pelikan M, Goldberg D E. Evolutionary algorithm using marginal histogram models in continuous domain. In Proc. the 2001 Genetic and Evolutionary Computation Conference Workshop, San Francisco, CA, 2001, pp.230-233.\n[11] Petri K, Petri M. Information-theoretically optimal histogram density estimation. HIIT Technical Reports 2006-2, Helsinki Institute for Information Technology, 2006.\n[12] Pelikan M, David E G, Tsutsui S. Combining the strengths of the Bayesian optimization algorithm and adaptive evolution strategies. IlliGAL Report No. 2001023, 2001.\n[13] Yuan B, Gallagher M. Playing in continuous spaces: Some analysis and extension of population-based incremental learning. In Proc. IEEE Congress on Evolutionary Computation, 2003, pp.443-450.\n[14] Ding N, Zhou S, Sun Z. Optimizing continuous problems using estimation of distribution algorithms based on histogram model. In Proc. the 6th Conference of Simulated Evolution and Learning, Hefei, China, 2006, pp.545-552.\n[15] Bosman P, Thierens D. Continuous iterated density estimation evolutionary algorithms within the IDEA framework. In Proc. the Optimization by Building and Using Probabilistic Models OBUPM Workshop at GECCO-2000, San Francisco, California, 2000, pp.197-200.\n[16] Lu Q, Yao X. Clustering and learning Gaussian distribution for continuous optimization. IEEE Transactions on Systems, Man and Cybernetics-Part C, 2005, 35(2): 195-204.\n![img-2.jpeg](img-2.jpeg)\n\nNan Ding is an undergraduate student of the Department of Electronic Engineering at Tsinghua University, Beijing, China. His research interest mainly focuses on machine learning, probabilistic graphical models and evolutionary computation.\n\nShu-De Zhou is a Ph.D. candidate in State Key Lab of Intelligent Technology and Systems, Department of Computer Science and Technology, Tsinghua University. He received his B.S. degree from Xidian University in 2003. His research interest mainly focuses on evolutionary computation.\n![img-2.jpeg](img-2.jpeg)\n\nZeng-Qi Sun is a professor in State Key Lab of Intelligent Technology and Systems, Department of Computer Science and Technology, Tsinghua University. His research interests include robotics, intelligent control, evolutionary computation, fuzzy system and neural networks.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Larrañaga P, Lozano J A. Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "2",
+        "text": "Pelikan M. Hierarchical Bayesian Optimization Algorithm: Toward A New Generation of Evolutionary Algorithms. Springer-Verlag, 2005."
+      },
+      {
+        "ref_id": "3",
+        "text": "Očenášek J. Parallel estimation of distribution algorithms [Dissertation]. Brno University of Technology, 2002."
+      },
+      {
+        "ref_id": "4",
+        "text": "Larrañaga P, Etxeberria R, Lozano J A, Peña J M. Optimization by learning and simulation of Bayesian and Gaussian networks. Technical Report EHU-KZAA-IK-4/99, University of the Basque Country, 1999."
+      },
+      {
+        "ref_id": "5",
+        "text": "Larrañaga P, Etxeberria R, Lozano J A, Peña J M. Optimization in continuous domains by learning and simulation of Gaussian networks. In Proc. the Genetic and Evolutionary Computation Conference, Las Vegas, Nevada, 2000, pp.201-204."
+      },
+      {
+        "ref_id": "6",
+        "text": "Sebag M, Ducolombier A. Extending Population-Based Incremental Learning to Continuous Search Spaces. Parallel Problem Solving from Nature - PPSN V, Springer-Verlag, 1998, pp.418-427."
+      },
+      {
+        "ref_id": "7",
+        "text": "Larrañaga P, Lozano J A, Bengoetxea E. Estimation of Distribution Algorithms based on multivariate normal and Gaussian networks. Technical report KZZA-IK-1-01, University of the Basque Country, 2001."
+      },
+      {
+        "ref_id": "8",
+        "text": "Bosman P, Thierens D. Expanding from Discrete to Continuous Estimation of Distribution Algorithms: IDEA. Parallel Problem Solving From Nature - PPSN VI, 2000, pp.767776 ."
+      },
+      {
+        "ref_id": "9",
+        "text": "Ahn C W. Real-coded Bayesian optimization algorithm. In Proc. Advances in Evolutionary Algorithms: Theory, Design and Practice, 2006, pp.85-124."
+      },
+      {
+        "ref_id": "10",
+        "text": "Tsutsui S, Pelikan M, Goldberg D E. Evolutionary algorithm using marginal histogram models in continuous domain. In Proc. the 2001 Genetic and Evolutionary Computation Conference Workshop, San Francisco, CA, 2001, pp.230-233."
+      },
+      {
+        "ref_id": "11",
+        "text": "Petri K, Petri M. Information-theoretically optimal histogram density estimation. HIIT Technical Reports 2006-2, Helsinki Institute for Information Technology, 2006."
+      },
+      {
+        "ref_id": "12",
+        "text": "Pelikan M, David E G, Tsutsui S. Combining the strengths of the Bayesian optimization algorithm and adaptive evolution strategies. IlliGAL Report No. 2001023, 2001."
+      },
+      {
+        "ref_id": "13",
+        "text": "Yuan B, Gallagher M. Playing in continuous spaces: Some analysis and extension of population-based incremental learning. In Proc. IEEE Congress on Evolutionary Computation, 2003, pp.443-450."
+      },
+      {
+        "ref_id": "14",
+        "text": "Ding N, Zhou S, Sun Z. Optimizing continuous problems using estimation of distribution algorithms based on histogram model. In Proc. the 6th Conference of Simulated Evolution and Learning, Hefei, China, 2006, pp.545-552."
+      },
+      {
+        "ref_id": "15",
+        "text": "Bosman P, Thierens D. Continuous iterated density estimation evolutionary algorithms within the IDEA framework. In Proc. the Optimization by Building and Using Probabilistic Models OBUPM Workshop at GECCO-2000, San Francisco, California, 2000, pp.197-200."
+      },
+      {
+        "ref_id": "16",
+        "text": "Lu Q, Yao X. Clustering and learning Gaussian distribution for continuous optimization. IEEE Transactions on Systems, Man and Cybernetics-Part C, 2005, 35(2): 195-204."
+      }
+    ],
+    "reference_count": 16,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Simple Problem to Test the Hill-Climbing Ability of the sur-HEDA",
+      "headers": [
+        "Formulation",
+        "Dim",
+        "Domain",
+        "Type",
+        "Optimum"
+      ],
+      "rows": [
+        [
+          "$y=x^{2}$",
+          1,
+          "$[0,10]$",
+          "Max",
+          100
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Test Functions",
+      "headers": [
+        "",
+        "Dim",
+        "Domain",
+        "Type",
+        "Optimum"
+      ],
+      "rows": [
+        [
+          "Schwefel ${ }^{(1)}$",
+          5,
+          "$[-2,2]$",
+          "Min",
+          0
+        ],
+        [
+          "Griewank",
+          10,
+          "$[-5,5]$",
+          "Min",
+          0
+        ],
+        [
+          "Two-Peak ${ }^{(1)}$",
+          10,
+          "$[0,12]$",
+          "Min",
+          0
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparison Between HEDA and sur-HEDA in Finding Optimal Area",
+      "headers": [
+        "",
+        "",
+        "Population Size",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          10,
+          "",
+          50,
+          "",
+          100,
+          "",
+          200,
+          ""
+        ],
+        [
+          "",
+          "",
+          "OPT\\#",
+          "MNE",
+          "OPT\\#",
+          "MNE",
+          "OPT\\#",
+          "MNE",
+          "OPT\\#",
+          "MNE"
+        ],
+        [
+          "sHEDA",
+          "Schwefel ${ }^{(1)}$",
+          10,
+          21056.3,
+          20,
+          4741.3,
+          20,
+          2607.5,
+          20,
+          3221.4
+        ],
+        [
+          "",
+          "Griewank",
+          19,
+          8625.3,
+          20,
+          9005.7,
+          20,
+          6164.3,
+          20,
+          5709.4
+        ],
+        [
+          "",
+          "Two-Peak ${ }^{(1)}$",
+          8,
+          16596.5,
+          20,
+          6140.0,
+          20,
+          6330.1,
+          20,
+          4213.1
+        ],
+        [
+          "sur-HEDA",
+          "Schwefel ${ }^{(1)}$",
+          20,
+          421.2,
+          20,
+          651.4,
+          20,
+          1193.1,
+          20,
+          1914.3
+        ],
+        [
+          "",
+          "Griewank",
+          20,
+          1199.0,
+          20,
+          2574.2,
+          20,
+          4251.2,
+          20,
+          5212.7
+        ],
+        [
+          "",
+          "Two-Peak ${ }^{(1)}$",
+          20,
+          26500.3,
+          20,
+          4180.7,
+          20,
+          5432.2,
+          20,
+          8556.1
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    },
+    {
+      "table_number": "4",
+      "table_title": "Test Functions",
+      "headers": [
+        "",
+        "Dim",
+        "Domain",
+        "Type",
+        "Optimum"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          30,
+          "$[-100,100]$",
+          "Min",
+          0
+        ],
+        [
+          "Sumcan",
+          10,
+          "$[-0.16,0.16]$",
+          "Max",
+          "$10^{5}$"
+        ],
+        [
+          "Two-peak ${ }^{(2)}$",
+          5,
+          "$[-100,100]$",
+          "Max",
+          10.1053
+        ],
+        [
+          "Three-peak",
+          5,
+          "$[-100,100]$",
+          "Max",
+          10.1053
+        ],
+        [
+          "Schwefel ${ }^{(2)}$",
+          30,
+          "$[-500,500]$",
+          "Min",
+          -12569.5
+        ],
+        [
+          "Note: The superscript on Schwefel ${ }^{(2)}$ and Two-peak ${ }^{(2)}$ is",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "used to distinguish from those homonymous functions in",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Experimental Results for the Sphere Function",
+      "headers": [
+        "",
+        "Best",
+        "Mean",
+        "Std."
+      ],
+      "rows": [
+        [
+          "UMDA $_{c}$",
+          "$\\mathbf{1 . 8 8} \\times \\mathbf{0}^{-\\mathbf{1 6}}$",
+          "$\\mathbf{3 . 2 4} \\times \\mathbf{1 0}^{-\\mathbf{0 1 6}}$",
+          "$\\mathbf{5 . 5 9} \\times \\mathbf{1 0}^{-\\mathbf{1 7}}$"
+        ],
+        [
+          "CEGDA",
+          "$3.38 \\times 10^{-8}$",
+          "$3.41 \\times 10^{-6}$",
+          "$8.40 \\times 10^{-7}$"
+        ],
+        [
+          "shr-HEDA",
+          "$4.3624 \\times 10^{-2}$",
+          3.147,
+          2.815
+        ],
+        [
+          "sur-shr-HEDA",
+          "$1.87 \\times 10^{-11}$",
+          "$2.25 \\times 10^{-11}$",
+          "$3.54 \\times 10^{-12}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Experimental Results for the Sumcan Function",
+      "headers": [
+        "",
+        "Best",
+        "Mean",
+        "Std."
+      ],
+      "rows": [
+        [
+          "UMDA $_{c}$",
+          698.72,
+          221.771,
+          116.101
+        ],
+        [
+          "CEGDA",
+          99834.5,
+          99748.1,
+          63.2197
+        ],
+        [
+          "shr-HEDA",
+          12912.1,
+          1426.9,
+          4136.6
+        ],
+        [
+          "sur-shr-HEDA",
+          "$\\mathbf{1 0 0 0 0 0}$",
+          "$\\mathbf{1 0 0 0 0 0}$",
+          "$\\mathbf{0}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Experimental Results for the Two-Peak ${ }^{(2)}$ Function",
+      "headers": [
+        "",
+        "Best",
+        "Mean",
+        "Std."
+      ],
+      "rows": [
+        [
+          "UMDA $_{c}$",
+          "$\\mathbf{1 0 . 1 0 5 3}$",
+          9.6327,
+          0.1073
+        ],
+        [
+          "CEGDA",
+          "$\\mathbf{1 0 . 1 0 5 3}$",
+          10.0999,
+          "$5.92 \\times 10^{-3}$"
+        ],
+        [
+          "shr-HEDA",
+          "$\\mathbf{1 0 . 1 0 5 3}$",
+          6.3526,
+          3.4585
+        ],
+        [
+          "sur-shr-HEDA",
+          "$\\mathbf{1 0 . 1 0 5 3}$",
+          "$\\mathbf{1 0 . 1 0 5 3}$",
+          "$\\mathbf{0}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Experimental Results for the Three-Peak Function",
+      "headers": [
+        "",
+        "Best",
+        "Mean",
+        "Std."
+      ],
+      "rows": [
+        [
+          "UMDA $_{c}$",
+          5.1877,
+          4.7331,
+          0.7406
+        ],
+        [
+          "CEGDA",
+          "$\\mathbf{1 0 . 1 0 5 3}$",
+          "$\\mathbf{1 0 . 1 0 4 8}$",
+          "$\\mathbf{7 . 9 9} \\times \\mathbf{1 0}^{-\\mathbf{4}}$"
+        ],
+        [
+          "shr-HEDA",
+          6.6848,
+          4.2462,
+          1.3622
+        ],
+        [
+          "sur-shr-HEDA",
+          "$\\mathbf{1 0 . 1 0 5 3}$",
+          8.9503,
+          2.2063
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "9",
+      "table_title": "Experimental Results for the Schwefel ${ }^{(2)}$ Function",
+      "headers": [
+        "",
+        "Best",
+        "Mean",
+        "Std."
+      ],
+      "rows": [
+        [
+          "UMDA $_{c}$",
+          -5928.24,
+          -5424.81,
+          202.437
+        ],
+        [
+          "CEGDA",
+          -8712.31,
+          -5922.54,
+          1893.51
+        ],
+        [
+          "shr-HEDA",
+          "$\\mathbf{- 1 2 5 6 9 . 5}$",
+          -12560.2,
+          10.512
+        ],
+        [
+          "sur-shr-HEDA",
+          "$\\mathbf{- 1 2 5 6 9 . 5}$",
+          "$\\mathbf{- 1 2 5 6 8 . 6}$",
+          "$\\mathbf{0 . 7 2 3}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "10",
+      "table_title": "Test Functions with Many Optima",
+      "headers": [
+        "",
+        "Dim",
+        "Domain",
+        "Type",
+        "Optimum"
+      ],
+      "rows": [
+        [
+          "Griewank",
+          30,
+          "$[-600,600]$",
+          "Min",
+          0
+        ],
+        [
+          "Rastrigin",
+          30,
+          "$[-5.12,5.12]$",
+          "Min",
+          0
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "11",
+      "table_title": "Experimental Results for the Griewank Function",
+      "headers": [
+        "",
+        "Best",
+        "Mean",
+        "Std."
+      ],
+      "rows": [
+        [
+          "shr-HEDA",
+          0.0276,
+          0.0581,
+          0.0335
+        ],
+        [
+          "sur-shr-HEDA",
+          "$\\mathbf{1 . 1 1 0} \\times \\mathbf{1 0}^{-\\mathbf{1 6}}$",
+          "$\\mathbf{1 . 8 8 7} \\times \\mathbf{1 0}^{-\\mathbf{1 6}}$",
+          "$\\mathbf{5 . 3 6 3} \\times \\mathbf{1 0}^{-\\mathbf{1 7}}$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "12",
+      "table_title": "Experimental Results for the Rastrigin Function",
+      "headers": [
+        "",
+        "Best",
+        "Mean",
+        "Std."
+      ],
+      "rows": [
+        [
+          "shr-HEDA",
+          "$2.152 \\times 10^{-4}$",
+          0.7966,
+          1.1296
+        ],
+        [
+          "sur-shr-HEDA",
+          "$\\mathbf{0}$",
+          "$\\mathbf{0}$",
+          "$\\mathbf{0}$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    }
+  ]
+}

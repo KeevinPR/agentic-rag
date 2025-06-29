@@ -1,0 +1,838 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2015/An Estimation of Distribution Algorithm based on the Natural Gradient and the Boltzmann Distribution.md",
+    "filename": "An Estimation of Distribution Algorithm based on the Natural Gradient and the Boltzmann Distribution.md",
+    "title": "An Estimation of Distribution Algorithm based on the Natural Gradient and the Boltzmann Distribution",
+    "year": "2015"
+  },
+  "references": {
+    "header": "## 8. REFERENCES",
+    "content": "[1] Y. Akimoto, A. Auger, and N. Hansen. Comparison-Based Natural Gradient Optimization in High Dimension. In Genetic and Evolutionary Computation Conference, Vancouver, Canada, July 2014. ACM.\n[2] S. Amari. Natural Gradient Works Efficiently in Learning. Neural Computation, 10(2):251-276, Feb. 1998.\n[3] S. Amari and H. Nagaoka. Methods of Information Geometry, volume 191 of Translations of Mathematical Monographs. Oxford University Press, 2000.\n[4] L. Arnold, A. Auger, N. Hansen, and Y. Ollivier. Information-Geometric Optimization Algorithms: A Unifying Picture via Invariance Principles. Technical report, Cornell University Library, 2011.\n[5] K. Arwini and C. Dodson. Information Geometry: Near Randomness and Near Independence. Number 1953 in Lecture Notes in Mathematics. Springer, 2008.\n[6] H. Beyer. Convergence Analysis of Evolutionary Algorithms that are based on the Paradigm of Information Geometry. Evolutionary Computation, 22(4):679-709, Dec. 2014.\n[7] P. A. N. Bosman, J. Grahl, and D. Thierens. Benchmarking Parameter-free Amalgam on Functions with and Without Noise. Evololutionary Computation, 21(3):445-469, Sept. 2013.\n[8] T. Friedrich, N. Hebbinghaus, and F. Neumann. Comparison of Simple Diversity Mechanisms on Plateau Functions. Theoretical Computer Science, 410(26):2455-2462, June 2009.\n[9] T. Glasmachers, T. Schaul, Y. Sun, D. Wierstra, and J. Schmidhuber. Exponential Natural Evolution Strategies. In Genetic and Evolutionary Computation Conference, 2010.\n[10] M. Jamil and X.-S. Yang. A Literature Survey of Benchmark Functions for Global Optimization Problems. CoRR, abs/1308.4008, 2013.\n[11] P. Larrañaga and J. A. Lozano, editors. Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer, Boston, MA, 2002.\n[12] A. B. Owen. Monte Carlo Theory, Methods and Examples. In progress, available online, 2013.\n[13] P. Pošǐk. Preventing Premature Convergence in a Simple EDA via Global Step Size Setting. In G. Rudolph, T. Jansen, N. Beume, S. Lucas, and C. Poloni, editors, PPSN X, volume 5199 of Lecture Notes in Computer Science, pages 549-558. Springer Berlin Heidelberg, 2008.\n[14] C. Robert and G. Casella. Monte Carlo Statistical Methods. Springer-Verlag, Secaucus, NJ, USA, 2005.\n[15] T. Schaul. Benchmarking Exponential Natural Evolution Strategies on the Noiseless and Noisy Black-box Optimization Testbeds. In Workshop, Genetic and Evolutionary Computation Conference, Philadelphia, PA, 2012.\n[16] M. Črepinšek, S. Liu, and M. Mernik. Exploration and Exploitation in Evolutionary Algorithms: A Survey. ACM Comput. Surv., 45(3):35:1-35:33, July 2013.\n[17] D. Wierstra, T. Schaul, T. Glasmachers, Y. Sun, J. Peters, and J. Schmidhuber. Natural Evolution Strategies. Journal of Machine Learning Research, 15:949-980, 2014.\n[18] S. Yi, D. Wierstra, T. Schaul, and J. Schmidhuber. Stochastic Search Using the Natural Gradient. In Proceedings of the ICML, pages 1161-1168, New York, NY, USA, 2009. ACM.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Y. Akimoto, A. Auger, and N. Hansen. Comparison-Based Natural Gradient Optimization in High Dimension. In Genetic and Evolutionary Computation Conference, Vancouver, Canada, July 2014. ACM."
+      },
+      {
+        "ref_id": "2",
+        "text": "S. Amari. Natural Gradient Works Efficiently in Learning. Neural Computation, 10(2):251-276, Feb. 1998."
+      },
+      {
+        "ref_id": "3",
+        "text": "S. Amari and H. Nagaoka. Methods of Information Geometry, volume 191 of Translations of Mathematical Monographs. Oxford University Press, 2000."
+      },
+      {
+        "ref_id": "4",
+        "text": "L. Arnold, A. Auger, N. Hansen, and Y. Ollivier. Information-Geometric Optimization Algorithms: A Unifying Picture via Invariance Principles. Technical report, Cornell University Library, 2011."
+      },
+      {
+        "ref_id": "5",
+        "text": "K. Arwini and C. Dodson. Information Geometry: Near Randomness and Near Independence. Number 1953 in Lecture Notes in Mathematics. Springer, 2008."
+      },
+      {
+        "ref_id": "6",
+        "text": "H. Beyer. Convergence Analysis of Evolutionary Algorithms that are based on the Paradigm of Information Geometry. Evolutionary Computation, 22(4):679-709, Dec. 2014."
+      },
+      {
+        "ref_id": "7",
+        "text": "P. A. N. Bosman, J. Grahl, and D. Thierens. Benchmarking Parameter-free Amalgam on Functions with and Without Noise. Evololutionary Computation, 21(3):445-469, Sept. 2013."
+      },
+      {
+        "ref_id": "8",
+        "text": "T. Friedrich, N. Hebbinghaus, and F. Neumann. Comparison of Simple Diversity Mechanisms on Plateau Functions. Theoretical Computer Science, 410(26):2455-2462, June 2009."
+      },
+      {
+        "ref_id": "9",
+        "text": "T. Glasmachers, T. Schaul, Y. Sun, D. Wierstra, and J. Schmidhuber. Exponential Natural Evolution Strategies. In Genetic and Evolutionary Computation Conference, 2010."
+      },
+      {
+        "ref_id": "10",
+        "text": "M. Jamil and X.-S. Yang. A Literature Survey of Benchmark Functions for Global Optimization Problems. CoRR, abs/1308.4008, 2013."
+      },
+      {
+        "ref_id": "11",
+        "text": "P. Larrañaga and J. A. Lozano, editors. Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Kluwer, Boston, MA, 2002."
+      },
+      {
+        "ref_id": "12",
+        "text": "A. B. Owen. Monte Carlo Theory, Methods and Examples. In progress, available online, 2013."
+      },
+      {
+        "ref_id": "13",
+        "text": "P. Pošǐk. Preventing Premature Convergence in a Simple EDA via Global Step Size Setting. In G. Rudolph, T. Jansen, N. Beume, S. Lucas, and C. Poloni, editors, PPSN X, volume 5199 of Lecture Notes in Computer Science, pages 549-558. Springer Berlin Heidelberg, 2008."
+      },
+      {
+        "ref_id": "14",
+        "text": "C. Robert and G. Casella. Monte Carlo Statistical Methods. Springer-Verlag, Secaucus, NJ, USA, 2005."
+      },
+      {
+        "ref_id": "15",
+        "text": "T. Schaul. Benchmarking Exponential Natural Evolution Strategies on the Noiseless and Noisy Black-box Optimization Testbeds. In Workshop, Genetic and Evolutionary Computation Conference, Philadelphia, PA, 2012."
+      },
+      {
+        "ref_id": "16",
+        "text": "M. Črepinšek, S. Liu, and M. Mernik. Exploration and Exploitation in Evolutionary Algorithms: A Survey. ACM Comput. Surv., 45(3):35:1-35:33, July 2013."
+      },
+      {
+        "ref_id": "17",
+        "text": "D. Wierstra, T. Schaul, T. Glasmachers, Y. Sun, J. Peters, and J. Schmidhuber. Natural Evolution Strategies. Journal of Machine Learning Research, 15:949-980, 2014."
+      },
+      {
+        "ref_id": "18",
+        "text": "S. Yi, D. Wierstra, T. Schaul, and J. Schmidhuber. Stochastic Search Using the Natural Gradient. In Proceedings of the ICML, pages 1161-1168, New York, NY, USA, 2009. ACM."
+      }
+    ],
+    "reference_count": 18,
+    "pattern_matched": "(?:^|\\n)#+\\s*\\d+\\.\\s*REFERENCES?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$\\mathcal{F}$",
+        "NAME",
+        "U/M",
+        "$\\mathcal{F}\\left(\\vec{x}^{s}\\right)$",
+        "$\\vec{x}_{i}$",
+        "DOMAIN"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{F}_{1}$",
+          "Sphere",
+          "U",
+          0,
+          0,
+          "$x_{i} \\in[-600,300]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{2}$",
+          1.2,
+          "U",
+          0,
+          0,
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{3}$",
+          "Trid",
+          "U",
+          "$\\Lambda_{f}$",
+          "$\\Lambda_{s}$",
+          "$x_{i} \\in\\left[-d^{2}, d^{2}\\right]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{4}$",
+          "Zakharov",
+          "U",
+          0,
+          0,
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{5}$",
+          "Ellipsoid",
+          "U",
+          0,
+          0,
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{6}$",
+          "Cigar Tablet",
+          "U",
+          0,
+          0,
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{7}$",
+          "Two Axes",
+          "U",
+          0,
+          0,
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{8}$",
+          "Exponential",
+          "U",
+          "$-1$",
+          0,
+          "$x_{i} \\in[-1,0.5]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{9}$",
+          "Rosenbrock",
+          "M",
+          0,
+          1,
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{10}$",
+          "Ackley",
+          "M",
+          0,
+          0,
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{11}$",
+          "Griewangk",
+          "M",
+          0,
+          0,
+          "$x_{i} \\in[-600,300]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{12}$",
+          "Cos. Mixture",
+          "M",
+          "$-0.1 d$",
+          0,
+          "$x_{i} \\in[-1,0.5]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{13}$",
+          -1,
+          "M",
+          0,
+          "$-1$",
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{14}$",
+          -2,
+          "M",
+          0,
+          1,
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{15}$",
+          8,
+          "M",
+          0,
+          "$-1$",
+          "$x_{i} \\in[-20,10]^{d}$"
+        ],
+        [
+          "$\\mathcal{F}_{16}$",
+          "Bohachevsky",
+          "M",
+          0,
+          0,
+          "$x_{i} \\in[-20,10]^{d}$"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    },
+    {
+      "table_number": "1",
+      "table_title": "Search domain, modality (U/M), global minimum and names of the test problems [10]. The expressions $\\Lambda_{f}=-d(d+4)(d-1) / 6$ and $\\Lambda_{s}=i(d+1-i)$ are taken when $\\mathcal{F}_{3}$ is in use.",
+      "headers": [
+        "$\\mathcal{F}$",
+        "NAGEDA",
+        "xNES",
+        "$\\rho$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{F}_{1}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.05e-9 $\\pm 8.00 \\mathrm{e}+10$",
+          "8.81e-9 $\\pm 1.09 \\mathrm{e}-9$",
+          "$1.95 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$3.62 \\mathrm{e}+4 \\pm 2.51 \\mathrm{e}+2$",
+          "$5.98 \\mathrm{e}+4 \\pm 5.81 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{2}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.95e-9 $\\pm 9.47 \\mathrm{e}+10$",
+          "8.97e-9 $\\pm 9.25 \\mathrm{e}+10$",
+          "$8.96 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.94 \\mathrm{e}+4 \\pm 3.52 \\mathrm{e}+2$",
+          "$5.60 \\mathrm{e}+4 \\pm 6.00 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{3}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.87e-9 $\\pm 7.82 \\mathrm{e}+10$",
+          "9.03e-9 $\\pm 8.15 \\mathrm{e}+10$",
+          "$3.14 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$3.73 \\mathrm{e}+4 \\pm 3.08 \\mathrm{e}+2$",
+          "$6.19 \\mathrm{e}+4 \\pm 4.63 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{4}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.76e-9 $\\pm 9.38 \\mathrm{e}+10$",
+          "9.07e-9 $\\pm 7.20 \\mathrm{e}+10$",
+          "$6.80 \\mathrm{e}-2$"
+        ],
+        [
+          "",
+          "$2.98 \\mathrm{e}+4 \\pm 4.04 \\mathrm{e}+2$",
+          "$6.80 \\mathrm{e}+4 \\pm 3.11 \\mathrm{e}+3$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{5}$",
+          100.0,
+          94.0,
+          ""
+        ],
+        [
+          "",
+          "8.72e-9 $\\pm 1.09 \\mathrm{e}-9$",
+          "$1.58 \\mathrm{e}-8 \\pm 3.38 \\mathrm{e}-8$",
+          "$1.22 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$3.84 \\mathrm{e}+4 \\pm 2.83 \\mathrm{e}+2$",
+          "$1.31 \\mathrm{e}+5 \\pm 0.00 \\mathrm{e}+0$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{6}$",
+          100.0,
+          0.0,
+          ""
+        ],
+        [
+          "",
+          "9.02e-9 $\\pm 8.39 \\mathrm{e}+10$",
+          "$2.61 \\mathrm{e}+0 \\pm 3.74 \\mathrm{e}+0$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "",
+          "$3.99 \\mathrm{e}+4 \\pm 3.53 \\mathrm{e}+2$",
+          "$3.00 \\mathrm{e}+5 \\pm 0.00 \\mathrm{e}+0$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{7}$",
+          100.0,
+          0.0,
+          ""
+        ],
+        [
+          "",
+          "8.84e-9 $\\pm 1.06 \\mathrm{e}-9$",
+          "$1.05 \\mathrm{e}+2 \\pm 6.16 \\mathrm{e}+1$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "",
+          "$3.97 \\mathrm{e}+4 \\pm 3.49 \\mathrm{e}+2$",
+          "$3.00 \\mathrm{e}+5 \\pm 0.00 \\mathrm{e}+0$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{8}$",
+          100.0,
+          74.0,
+          ""
+        ],
+        [
+          "",
+          "8.90e-9 $\\pm 1.02 \\mathrm{e}-9$",
+          "$1.58 \\mathrm{e}-1 \\pm 2.70 \\mathrm{e}-1$",
+          "$2.00 \\mathrm{e}-4$"
+        ],
+        [
+          "",
+          "$2.13 \\mathrm{e}+4 \\pm 2.22 \\mathrm{e}+2$",
+          "$1.40 \\mathrm{e}+5 \\pm 0.00 \\mathrm{e}+0$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{9}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.75e-9 $\\pm 9.96 \\mathrm{e}+10$",
+          "$9.13 \\mathrm{e}-9 \\pm 8.32 \\mathrm{e}+10$",
+          "$3.96 \\mathrm{e}-2$"
+        ],
+        [
+          "",
+          "$1.18 \\mathrm{e}+5 \\pm 3.76 \\mathrm{e}+3$",
+          "$1.06 \\mathrm{e}+5 \\pm 5.37 \\mathrm{e}+3$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{10}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.26e-9 $\\pm 6.02 \\mathrm{e}+10$",
+          "$9.50 \\mathrm{e}-9 \\pm 5.06 \\mathrm{e}+10$",
+          "$3.40 \\mathrm{e}-2$"
+        ],
+        [
+          "",
+          "$5.49 \\mathrm{e}+4 \\pm 2.68 \\mathrm{e}+2$",
+          "$9.13 \\mathrm{e}+4 \\pm 5.62 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{11}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.52e-9 $\\pm 1.09 \\mathrm{e}-9$",
+          "$9.11 \\mathrm{e}-9 \\pm 6.95 \\mathrm{e}+10$",
+          "$3.00 \\mathrm{e}-3$"
+        ],
+        [
+          "",
+          "$3.67 \\mathrm{e}+4 \\pm 3.38 \\mathrm{e}+2$",
+          "$5.39 \\mathrm{e}+4 \\pm 4.30 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{12}$",
+          100.0,
+          28.0,
+          ""
+        ],
+        [
+          "",
+          "8.91e-9 $\\pm 1.05 \\mathrm{e}-9$",
+          "$1.70 \\mathrm{e}+0 \\pm 2.07 \\mathrm{e}+0$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "",
+          "$2.89 \\mathrm{e}+4 \\pm 6.58 \\mathrm{e}+2$",
+          "$2.38 \\mathrm{e}+5 \\pm 0.00 \\mathrm{e}+0$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{13}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.76e-9 $\\pm 9.62 \\mathrm{e}+10$",
+          "$9.09 \\mathrm{e}-9 \\pm 7.72 \\mathrm{e}+10$",
+          "$6.61 \\mathrm{e}-2$"
+        ],
+        [
+          "",
+          "$2.65 \\mathrm{e}+4 \\pm 1.20 \\mathrm{e}+3$",
+          "$4.39 \\mathrm{e}+4 \\pm 4.71 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{14}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.99e-9 $\\pm 8.97 \\mathrm{e}+10$",
+          "$8.89 \\mathrm{e}-9 \\pm 9.86 \\mathrm{e}+10$",
+          "$5.71 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.92 \\mathrm{e}+4 \\pm 2.82 \\mathrm{e}+2$",
+          "$4.93 \\mathrm{e}+4 \\pm 4.85 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{15}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.12e-9 $\\pm 8.55 \\mathrm{e}+10$",
+          "$8.91 \\mathrm{e}-9 \\pm 8.95 \\mathrm{e}+10$",
+          "$2.28 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.91 \\mathrm{e}+4 \\pm 1.56 \\mathrm{e}+3$",
+          "$4.81 \\mathrm{e}+4 \\pm 4.41 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{16}$",
+          100.0,
+          82.0,
+          ""
+        ],
+        [
+          "",
+          "8.94e-9 $\\pm 7.49 \\mathrm{e}+10$",
+          "$1.52 \\mathrm{e}-1 \\pm 3.51 \\mathrm{e}-1$",
+          "$3.50 \\mathrm{e}-3$"
+        ],
+        [
+          "",
+          "$3.64 \\mathrm{e}+4 \\pm 3.88 \\mathrm{e}+2$",
+          "$1.06 \\mathrm{e}+5 \\pm 0.00 \\mathrm{e}+0$",
+          "$1.00 \\mathrm{e}-4$"
+        ]
+      ],
+      "row_count": 48,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison between NAGEDA (our approach) and xNES methods in 30 dimensions. The winner is marked in boldface according to a nonparametric bootstrap test. Further details in section 6.",
+      "headers": [
+        "$\\mathcal{F}$",
+        "NAGEDA",
+        "iAMaLGaM",
+        "$\\rho$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{F}_{1}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.05e-9 $\\pm 8.00 \\mathrm{e}+10$",
+          "8.88e-9 $\\pm 8.03 \\mathrm{e}+10$",
+          "$2.85 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$3.62 \\mathrm{e}+4 \\pm 2.51 \\mathrm{e}+2$",
+          "$3.85 \\mathrm{e}+4 \\pm 5.11 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{2}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.95e-9 $\\pm 9.47 \\mathrm{e}+10$",
+          "8.92e-9 $\\pm 1.00 \\mathrm{e}-9$",
+          "$8.69 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.94 \\mathrm{e}+4 \\pm 3.52 \\mathrm{e}+2$",
+          "$3.15 \\mathrm{e}+4 \\pm 4.52 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{3}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.87e-9 $\\pm 7.82 \\mathrm{e}+10$",
+          "8.65e-9 $\\pm 1.18 \\mathrm{e}-9$",
+          "$2.65 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$3.73 \\mathrm{e}+4 \\pm 3.08 \\mathrm{e}+2$",
+          "$4.01 \\mathrm{e}+4 \\pm 6.22 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{4}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.76e-9 $\\pm 9.38 \\mathrm{e}+10$",
+          "8.87e-9 $\\pm 8.47 \\mathrm{e}+10$",
+          "$5.23 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.98 \\mathrm{e}+4 \\pm 4.04 \\mathrm{e}+2$",
+          "$3.31 \\mathrm{e}+4 \\pm 4.61 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{5}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.72e-9 $\\pm 1.09 \\mathrm{e}-9$",
+          "9.05e-9 $\\pm 7.94 \\mathrm{e}+10$",
+          "$8.26 \\mathrm{e}-2$"
+        ],
+        [
+          "",
+          "$3.84 \\mathrm{e}+4 \\pm 2.83 \\mathrm{e}+2$",
+          "$4.54 \\mathrm{e}+4 \\pm 1.94 \\mathrm{e}+3$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{6}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.02e-9 $\\pm 8.39 \\mathrm{e}+10$",
+          "8.88e-9 $\\pm 8.19 \\mathrm{e}+10$",
+          "$3.75 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$3.99 \\mathrm{e}+4 \\pm 3.53 \\mathrm{e}+2$",
+          "$4.70 \\mathrm{e}+4 \\pm 2.00 \\mathrm{e}+3$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{7}$",
+          100.0,
+          "",
+          ""
+        ],
+        [
+          "",
+          "8.84e-9 $\\pm 1.06 \\mathrm{e}-9$",
+          "8.93e-9 $\\pm 9.44 \\mathrm{e}+10$",
+          "$6.29 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$3.97 \\mathrm{e}+4 \\pm 3.49 \\mathrm{e}+2$",
+          "$5.45 \\mathrm{e}+4 \\pm 2.13 \\mathrm{e}+3$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{8}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.90e-9 $\\pm 1.02 \\mathrm{e}-9$",
+          "8.75e-9 $\\pm 8.18 \\mathrm{e}+10$",
+          "$4.18 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.13 \\mathrm{e}+4 \\pm 2.22 \\mathrm{e}+2$",
+          "$2.25 \\mathrm{e}+4 \\pm 4.12 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{9}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.75e-9 $\\pm 9.96 \\mathrm{e}+10$",
+          "8.87e-9 $\\pm 9.31 \\mathrm{e}+10$",
+          "$5.25 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$1.18 \\mathrm{e}+5 \\pm 3.76 \\mathrm{e}+3$",
+          "$1.07 \\mathrm{e}+5 \\pm 7.64 \\mathrm{e}+3$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{10}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.26e-9 $\\pm 6.02 \\mathrm{e}+10$",
+          "9.51e-9 $\\pm 3.73 \\mathrm{e}+10$",
+          "$1.44 \\mathrm{e}-2$"
+        ],
+        [
+          "",
+          "$5.49 \\mathrm{e}+4 \\pm 2.68 \\mathrm{e}+2$",
+          "$5.19 \\mathrm{e}+4 \\pm 5.14 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{11}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.52e-9 $\\pm 1.09 \\mathrm{e}-9$",
+          "8.83e-9 $\\pm 8.75 \\mathrm{e}+10$",
+          "$1.19 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$3.67 \\mathrm{e}+4 \\pm 3.38 \\mathrm{e}+2$",
+          "$3.51 \\mathrm{e}+4 \\pm 4.79 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{12}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.91e-9 $\\pm 1.05 \\mathrm{e}-9$",
+          "8.88e-9 $\\pm 9.15 \\mathrm{e}+10$",
+          "$8.68 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.89 \\mathrm{e}+4 \\pm 6.58 \\mathrm{e}+2$",
+          "$3.22 \\mathrm{e}+4 \\pm 1.42 \\mathrm{e}+4$",
+          "$1.18 \\mathrm{e}-1$"
+        ],
+        [
+          "$\\mathcal{F}_{13}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.76e-9 $\\pm 9.62 \\mathrm{e}+10$",
+          "8.79e-9 $\\pm 1.06 \\mathrm{e}-9$",
+          "$9.00 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.65 \\mathrm{e}+4 \\pm 1.20 \\mathrm{e}+3$",
+          "$2.56 \\mathrm{e}+4 \\pm 4.30 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{14}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.99e-9 $\\pm 8.97 \\mathrm{e}+10$",
+          "8.82e-9 $\\pm 1.00 \\mathrm{e}-9$",
+          "$3.64 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.92 \\mathrm{e}+4 \\pm 2.82 \\mathrm{e}+2$",
+          "$2.86 \\mathrm{e}+4 \\pm 4.59 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{15}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "9.12e-9 $\\pm 8.55 \\mathrm{e}+10$",
+          "8.88e-9 $\\pm 8.47 \\mathrm{e}+10$",
+          "$1.53 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$2.91 \\mathrm{e}+4 \\pm 1.56 \\mathrm{e}+3$",
+          "$2.80 \\mathrm{e}+4 \\pm 4.38 \\mathrm{e}+2$",
+          "$1.00 \\mathrm{e}-4$"
+        ],
+        [
+          "$\\mathcal{F}_{16}$",
+          100.0,
+          100.0,
+          ""
+        ],
+        [
+          "",
+          "8.94e-9 $\\pm 7.49 \\mathrm{e}+10$",
+          "9.08e-9 $\\pm 7.07 \\mathrm{e}+10$",
+          "$3.45 \\mathrm{e}-1$"
+        ],
+        [
+          "",
+          "$3.64 \\mathrm{e}+4 \\pm 3.88 \\mathrm{e}+2$",
+          "$4.54 \\mathrm{e}+4 \\pm 2.10 \\mathrm{e}+4$",
+          "$3.90 \\mathrm{e}-3$"
+        ]
+      ],
+      "row_count": 48,
+      "column_count": 4
+    }
+  ]
+}

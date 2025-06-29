@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/A Novel Energy Management Strategy for Plug-in Hybrid Electric Buses Based on Model Predictive Control and Estimation of Distribution Algorithm.md",
+    "filename": "A Novel Energy Management Strategy for Plug-in Hybrid Electric Buses Based on Model Predictive Control and Estimation of Distribution Algorithm.md",
+    "title": "A Novel Energy Management Strategy for Plug-in Hybrid Electric Buses Based on Model Predictive Control and Estimation of Distribution Algorithm",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Main PANAMETERS OF THE VEHICLE",
+      "headers": [
+        "Parameter",
+        "Symbol",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Rolling resistance coefficient",
+          "$f_{r}$",
+          0.019
+        ],
+        [
+          "Aerodynamic drag coefficient",
+          "$C_{D}$",
+          0.6
+        ],
+        [
+          "Windward area",
+          "$A$",
+          "$6.05 \\mathrm{~m}^{2}$"
+        ],
+        [
+          "Gross mass",
+          "$m_{c}$",
+          16500
+        ],
+        [
+          "Tire rolling radius",
+          "$r_{\\mathrm{w}}$",
+          0.512
+        ],
+        [
+          "Air density",
+          "$\\rho$",
+          "$1.293 \\mathrm{~kg} / \\mathrm{m}^{3}$"
+        ],
+        [
+          "Acceleration of gravity",
+          "$g$",
+          "$9.8 \\mathrm{~m} / \\mathrm{s}^{2}$"
+        ],
+        [
+          "Rotating mass correction coefficient",
+          "$\\delta$",
+          1.02
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "Predictive Performance Evaluation Indices Over WVCITY Cycle",
+      "headers": [
+        "Predictive horizons",
+        "RMSE $(\\mathrm{km} / \\mathrm{h})$",
+        "MAE $(\\mathrm{km} / \\mathrm{h})$"
+      ],
+      "rows": [
+        [
+          5,
+          1.388,
+          1.275
+        ],
+        [
+          10,
+          3.325,
+          3.152
+        ],
+        [
+          15,
+          6.583,
+          6.292
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "RePRESENTATION OF THE POPULATION MATRIX M",
+      "headers": [
+        "",
+        "1",
+        "2",
+        "$-$",
+        "$N_{p}$"
+      ],
+      "rows": [
+        [
+          "Population <br> Population",
+          2,
+          0,
+          "$-$",
+          10
+        ],
+        [
+          1,
+          6,
+          22,
+          "$-$",
+          16
+        ],
+        [
+          2,
+          0,
+          10,
+          "$-$",
+          28
+        ],
+        [
+          3,
+          "$-$",
+          "$-$",
+          "$-$",
+          "$-$"
+        ],
+        [
+          "$-$ Individual $L$",
+          10,
+          10,
+          "$-$",
+          40
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "V",
+      "table_title": "CONTROL PERFORMANCE COMPARISON OVER CYCLE-BASED DRIVING",
+      "headers": [
+        "Control <br> strategy",
+        "Fuel <br> consu <br> mption <br> (L)",
+        "Electric <br> consumption <br> $(\\mathrm{kWh})^{*}$",
+        "Final <br> SOC",
+        "Total cost <br> (CNY)",
+        "Decrease <br> (\\%)"
+      ],
+      "rows": [
+        [
+          "CDCS",
+          4.13,
+          15.83,
+          0.3041,
+          39.509,
+          "-"
+        ],
+        [
+          "ECMS",
+          3.8,
+          15.781,
+          0.306,
+          37.324,
+          5.53
+        ],
+        [
+          "Proposed <br> strategy",
+          3.54,
+          15.766,
+          0.3065,
+          35.623,
+          9.84
+        ],
+        [
+          "DP",
+          3.11,
+          15.939,
+          0.3,
+          32.966,
+          16.56
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "VI",
+      "table_title": "EVALUATION RESULTS OF ALGORITHMIC PERFORMANCE",
+      "headers": [
+        "Methods",
+        "Total <br> cost <br> (CNY)",
+        "Reduction <br> (\\%)",
+        "Computational <br> time (s)",
+        "Reduction <br> (\\%)"
+      ],
+      "rows": [
+        [
+          "Traditional <br> MPC",
+          37.47,
+          "---",
+          421,
+          "---"
+        ],
+        [
+          "Proposed <br> strategy",
+          35.623,
+          "$4.93 \\%$",
+          289,
+          "$31.35 \\%$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "VII",
+      "table_title": "TECHNICAL DESCRIPTION OF THE MODULES",
+      "headers": [
+        "Module",
+        "Description"
+      ],
+      "rows": [
+        [
+          -8108,
+          294002.53
+        ],
+        [
+          -7831,
+          -18896
+        ],
+        [
+          -85122,
+          "2 full high-speed CAN interfaces (up to 8 Mbit/s)"
+        ],
+        [
+          522,
+          1.5
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "PerformAnCE COMPARISON BETWEEN SiMULATION AND HIL TESTS",
+      "headers": [
+        "Method",
+        "Items",
+        "Simulation",
+        "HIL test",
+        "Deviation"
+      ],
+      "rows": [
+        [
+          "CDCS",
+          "Total",
+          39.509,
+          40.469,
+          "$2.5 \\%$"
+        ],
+        [
+          "ECMS",
+          "",
+          37.324,
+          39.007,
+          "$4.5 \\%$"
+        ],
+        [
+          "Proposed strategy",
+          "(CNY)",
+          35.623,
+          37.266,
+          "$4.6 \\%$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    }
+  ]
+}

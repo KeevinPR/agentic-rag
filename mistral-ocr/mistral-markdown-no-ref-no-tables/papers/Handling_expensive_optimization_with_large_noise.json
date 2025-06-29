@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Handling expensive optimization with large noise.md",
+    "filename": "Handling expensive optimization with large noise.md",
+    "title": "Handling expensive optimization with large noise",
+    "year": "2011"
+  },
+  "references": {
+    "header": "## 8. REFERENCES",
+    "content": "[1] D. V. Arnold and H.-G. Beyer. Efficiency and mutation strength adaptation of the (mu/mul_lambda)-es in a noisy environment. In Parallel Problem Solving from Nature, volume 1917 of LNCS, pages 39-48. Springer, 2000.\n\n![img-1.jpeg](img-1.jpeg)\n\nFigure 2: Convergence rate of UH-CMA in various cases. Cases with Bernoulli noise are not handled properly by the optimization tool.\n[2] D. V. Arnold and H.-G. Beyer. A general noise model and its effects on evolution strategy performance. IEEE Transactions on Evolutionary Computation, 10(4):380-391, 2006.\n[3] Dirk V. Arnold and Hans-Georg Beyer. Evolution strategies with cumulative step length adaptation on the noisy parabolic ridge. Natural Computing: an international journal, 7(4):555-587, 2008.\n[4] Anne Auger, Steffen Finck, Nikolaus Hansen, and Raymond Ros. BBOB 2009: Comparison Tables of All Algorithms on All Noisy Functions. Technical Report RT-0384, INRIA, 042010.\n[5] S.N. Bernstein. On a modification of chebyshev's inequality and of the error formula of laplace. Original publication: Ann. Sci. Inst. Sav. Ukraine, Sect. Math. 1, 3(1):38-49, 1924.\n[6] S.N. Bernstein. The Theory of Probabilities. Gostehizdat Publishing House, Moscow, 1946.\n[7] H.-G. Beyer. The Theory of Evolutions Strategies. Springer, Heidelberg, 2001.\n[8] Kathryn Chaloner. Bayesian design for estimating the turning point of a quadratic regression. Communications in Statistics-Theory and Methods, 18(4):1385-1400, 1989.\n[9] H. Chernoff. A measure of asymptotic efficiency for tests of a hypothesis based on the sum of observations. Annals of Math. Stat., 23:493-509, 1952.\n[10] R. Coulom. Source code for qlr, March 2010. http://remi.coulom.free.fr/QLR/.\n[11] L. Devroye, L. Györfi, and G. Lugosi. A probabilistic Theory of Pattern Recognition. Springer, 1997.\n[12] Ellinor Fackle Fornius. Optimal Design of Experiments for the Quadratic Logistic Model. PhD thesis, Department of Statistics, Stockholm University, 2008.\n[13] J. M. Fitzpatrick and J. J. Grefenstette. Genetic algorithms in noisy environments. Machine Learning, 3:101-120, 1988.\n[14] Ulrich Hammel and Thomas Bäck. Evolution strategies on noisy functions: How to improve convergence properties. In Yuval Davidor, Hans-Paul Schwefel, and Reinhard Männer, editors, Parallel Problem Solving From Nature, volume 866 of LNCS, pages 159-168, Jerusalem, 1994. Springer.\n[15] N. Hansen. Personal communication.\n[16] N. Hansen. Source code for UH-CMA, June 2008. Version 3.\nhttp://www.lri.fr/ hansen/cmaesintro.html.\n\n![img-2.jpeg](img-2.jpeg)\n![img-3.jpeg](img-3.jpeg)\n\nFigure 3: Convergence rate of QLR in various cases. On the X-axis: the number of evaluations; on the Y-axis: $\\mathbb{E}\\left(\\left|x_{n}\\right\\rangle-\\mathbb{E} f\\left(x^{*}\\right)\\right.$. Both are in log-scale to emphasize the exponent. The noisy fitnesses tested are of the form $B\\left(\\|x\\|^{p}+c\\right)$ (top: $p=1$, bottom: $p=2$, left: $c=0$, right: $c=1 / 2$ ).\n[17] Nikolaus Hansen, Andre Niederberger, Lino Guzzella, and Petros Koumoutsakos. A Method for Handling Uncertainty in Evolutionary Optimization with an Application to Feedback Control of Combustion. IEEE Transactions on Evolutionary Computation, 2009.\n[18] Verena Heidrich-Meisner and Christian Igel. Hoeffding and Bernstein races for selecting policies in evolutionary direct policy search. In ICML '09: Proceedings of the 26th Annual International Conference on Machine Learning, pages 401-408, New York, NY, USA, 2009. ACM.\n[19] W. Hoeffding. Probability inequalities for sums of bounded random variables. Journal of the American Statistical Association, 58:13-30, 1963.\n[20] Mohamed Jebalia and Anne Auger. On multiplicative noise models for stochastic search. In Parallel Problem Solving From Nature, Dortmund, Germany, 2008.\n[21] André I. Khuri, Bhramar Mukherjee, Bikas K. Sinha, and Malay Ghosh. Design issues for generalized linear models: A review. Statistical Science, 21(3):376-399, 2006.\n[22] T.L. Lai and H. Robbins. Asymptotically efficient adaptive allocation rules. Advances in Applied Mathematics, 6:4-22, 1985.\n[23] Volodymyr Mnih, Csaba Szepesvári, and Jean-Yves Audibert. Empirical Bernstein stopping. In ICML '08: Proceedings of the 25th international conference on Machine learning, pages 672-679, New York, NY, USA, 2008. ACM.\n[24] P. Rolet and O. Teytaud. Bandit-based estimation of distribution algorithms for noisy optimization: Rigorous runtime analysis. In Proceedings of International Conference on Learning and Intelligent Optimization (LION), 2009.\n[25] Philippe Rolet. Elements for Learning and Optimizing Expensive Fuctions. PhD thesis, Université Paris Sud, 2010.\n[26] Philippe Rolet and Olivier Teytaud. Adaptive Noisy Optimization. In EvoStar 2010, 2010.\n[27] Andrew I. Schein and Lyle H. Hungar. Active learning for logistic regression: An evaluation. Machine Learning, 68(3):235-265, 2007.\n[28] Olivier Teytaud and Anne Auger. On the adaptation of the noise level for stochastic optimization. In IEEE Congress on Evolutionary Computation, Singapore, 2007.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "D. V. Arnold and H.-G. Beyer. Efficiency and mutation strength adaptation of the (mu/mul_lambda)-es in a noisy environment. In Parallel Problem Solving from Nature, volume 1917 of LNCS, pages 39-48. Springer, 2000."
+      },
+      {
+        "ref_id": "2",
+        "text": "D. V. Arnold and H.-G. Beyer. A general noise model and its effects on evolution strategy performance. IEEE Transactions on Evolutionary Computation, 10(4):380-391, 2006."
+      },
+      {
+        "ref_id": "3",
+        "text": "Dirk V. Arnold and Hans-Georg Beyer. Evolution strategies with cumulative step length adaptation on the noisy parabolic ridge. Natural Computing: an international journal, 7(4):555-587, 2008."
+      },
+      {
+        "ref_id": "4",
+        "text": "Anne Auger, Steffen Finck, Nikolaus Hansen, and Raymond Ros. BBOB 2009: Comparison Tables of All Algorithms on All Noisy Functions. Technical Report RT-0384, INRIA, 042010."
+      },
+      {
+        "ref_id": "5",
+        "text": "S.N. Bernstein. On a modification of chebyshev's inequality and of the error formula of laplace. Original publication: Ann. Sci. Inst. Sav. Ukraine, Sect. Math. 1, 3(1):38-49, 1924."
+      },
+      {
+        "ref_id": "6",
+        "text": "S.N. Bernstein. The Theory of Probabilities. Gostehizdat Publishing House, Moscow, 1946."
+      },
+      {
+        "ref_id": "7",
+        "text": "H.-G. Beyer. The Theory of Evolutions Strategies. Springer, Heidelberg, 2001."
+      },
+      {
+        "ref_id": "8",
+        "text": "Kathryn Chaloner. Bayesian design for estimating the turning point of a quadratic regression. Communications in Statistics-Theory and Methods, 18(4):1385-1400, 1989."
+      },
+      {
+        "ref_id": "9",
+        "text": "H. Chernoff. A measure of asymptotic efficiency for tests of a hypothesis based on the sum of observations. Annals of Math. Stat., 23:493-509, 1952."
+      },
+      {
+        "ref_id": "10",
+        "text": "R. Coulom. Source code for qlr, March 2010. http://remi.coulom.free.fr/QLR/."
+      },
+      {
+        "ref_id": "11",
+        "text": "L. Devroye, L. Györfi, and G. Lugosi. A probabilistic Theory of Pattern Recognition. Springer, 1997."
+      },
+      {
+        "ref_id": "12",
+        "text": "Ellinor Fackle Fornius. Optimal Design of Experiments for the Quadratic Logistic Model. PhD thesis, Department of Statistics, Stockholm University, 2008."
+      },
+      {
+        "ref_id": "13",
+        "text": "J. M. Fitzpatrick and J. J. Grefenstette. Genetic algorithms in noisy environments. Machine Learning, 3:101-120, 1988."
+      },
+      {
+        "ref_id": "14",
+        "text": "Ulrich Hammel and Thomas Bäck. Evolution strategies on noisy functions: How to improve convergence properties. In Yuval Davidor, Hans-Paul Schwefel, and Reinhard Männer, editors, Parallel Problem Solving From Nature, volume 866 of LNCS, pages 159-168, Jerusalem, 1994. Springer."
+      },
+      {
+        "ref_id": "15",
+        "text": "N. Hansen. Personal communication."
+      },
+      {
+        "ref_id": "16",
+        "text": "N. Hansen. Source code for UH-CMA, June 2008. Version 3."
+      },
+      {
+        "ref_id": "17",
+        "text": "Nikolaus Hansen, Andre Niederberger, Lino Guzzella, and Petros Koumoutsakos. A Method for Handling Uncertainty in Evolutionary Optimization with an Application to Feedback Control of Combustion. IEEE Transactions on Evolutionary Computation, 2009."
+      },
+      {
+        "ref_id": "18",
+        "text": "Verena Heidrich-Meisner and Christian Igel. Hoeffding and Bernstein races for selecting policies in evolutionary direct policy search. In ICML '09: Proceedings of the 26th Annual International Conference on Machine Learning, pages 401-408, New York, NY, USA, 2009. ACM."
+      },
+      {
+        "ref_id": "19",
+        "text": "W. Hoeffding. Probability inequalities for sums of bounded random variables. Journal of the American Statistical Association, 58:13-30, 1963."
+      },
+      {
+        "ref_id": "20",
+        "text": "Mohamed Jebalia and Anne Auger. On multiplicative noise models for stochastic search. In Parallel Problem Solving From Nature, Dortmund, Germany, 2008."
+      },
+      {
+        "ref_id": "21",
+        "text": "André I. Khuri, Bhramar Mukherjee, Bikas K. Sinha, and Malay Ghosh. Design issues for generalized linear models: A review. Statistical Science, 21(3):376-399, 2006."
+      },
+      {
+        "ref_id": "22",
+        "text": "T.L. Lai and H. Robbins. Asymptotically efficient adaptive allocation rules. Advances in Applied Mathematics, 6:4-22, 1985."
+      },
+      {
+        "ref_id": "23",
+        "text": "Volodymyr Mnih, Csaba Szepesvári, and Jean-Yves Audibert. Empirical Bernstein stopping. In ICML '08: Proceedings of the 25th international conference on Machine learning, pages 672-679, New York, NY, USA, 2008. ACM."
+      },
+      {
+        "ref_id": "24",
+        "text": "P. Rolet and O. Teytaud. Bandit-based estimation of distribution algorithms for noisy optimization: Rigorous runtime analysis. In Proceedings of International Conference on Learning and Intelligent Optimization (LION), 2009."
+      },
+      {
+        "ref_id": "25",
+        "text": "Philippe Rolet. Elements for Learning and Optimizing Expensive Fuctions. PhD thesis, Université Paris Sud, 2010."
+      },
+      {
+        "ref_id": "26",
+        "text": "Philippe Rolet and Olivier Teytaud. Adaptive Noisy Optimization. In EvoStar 2010, 2010."
+      },
+      {
+        "ref_id": "27",
+        "text": "Andrew I. Schein and Lyle H. Hungar. Active learning for logistic regression: An evaluation. Machine Learning, 68(3):235-265, 2007."
+      },
+      {
+        "ref_id": "28",
+        "text": "Olivier Teytaud and Anne Auger. On the adaptation of the noise level for stochastic optimization. In IEEE Congress on Evolutionary Computation, Singapore, 2007."
+      }
+    ],
+    "reference_count": 28,
+    "pattern_matched": "(?:^|\\n)#+\\s*\\d+\\.\\s*REFERENCES?\\s*\\n"
+  },
+  "tables": []
+}

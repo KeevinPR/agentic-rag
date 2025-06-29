@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2007/Bayesian inference in estimation of distribution algorithms.md",
+    "filename": "Bayesian inference in estimation of distribution algorithms.md",
+    "title": "Bayesian inference in estimation of distribution algorithms",
+    "year": "2007"
+  },
+  "tables": [
+    {
+      "table_number": "IV",
+      "table_title": "TEST FUNCTIONS USED IN THE EXPERIMENTS",
+      "headers": [
+        "Name",
+        "Function"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "$\\begin{aligned} & f_{S_{p b}}(\\mathbf{x})=\\sum_{i=1}^{n} x_{i}^{2} \\\\ & -5.12 \\leq x_{i} \\leq 5.12, f_{S_{p b}}\\left(\\mathbf{x}^{*}\\right)=0 \\end{aligned}$"
+        ],
+        [
+          "Rastrigin",
+          "$\\begin{aligned} & f_{R_{R s i}}(\\mathbf{x})=\\sum_{i=1}^{n}\\left(x_{i}^{2}-1\\right)\\left(x_{i}^{2}-10 \\cos \\left(2 \\pi x_{i}\\right)+10\\right) \\\\ & -5 \\leq x_{i} \\leq 5, f_{R_{R s i}}\\left(\\mathbf{x}^{*}\\right)=0 \\end{aligned}$"
+        ],
+        [
+          "Rosenbrock",
+          "$\\begin{aligned} & f_{R_{R s i}}(\\mathbf{x})=\\sum_{i=1}^{n-1}\\left(x_{i}^{2}-x_{i+1}\\right)^{2}+\\left(x_{i}-1\\right)^{2} \\\\ & -2 \\leq x_{i} \\leq 2, f_{R_{r s i}}\\left(\\mathbf{x}^{*}\\right)=0 \\end{aligned}$"
+        ],
+        [
+          "Griewangk",
+          "$\\begin{aligned} & f_{G r i}(\\mathbf{x})=\\sum_{i=1}^{n} \\frac{x_{i}^{2}}{4000}-\\prod_{i=1}^{n} \\cos \\left(\\frac{x_{i}}{a^{2}}\\right)+1 \\\\ & -600 \\leq x_{i} \\leq 600, f_{G r i}\\left(\\mathbf{x}^{*}\\right)=0 \\end{aligned}$"
+        ],
+        [
+          "Ackle",
+          "$\\begin{aligned} & f_{A c k}(\\mathbf{x})=-20 \\exp \\left(-0.2 \\sqrt{\\frac{1}{30} \\sum_{i=1}^{n} x_{i}^{2}}\\right) \\\\ &-\\exp \\left(\\frac{1}{30} \\sum_{i=1}^{n} \\cos 2 \\pi x_{i}\\right)+20+e \\\\ & -15 \\leq x_{i} \\leq 30, f_{A c k}\\left(\\mathbf{x}^{*}\\right)=0 \\end{aligned}$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "V",
+      "table_title": "PERFORMANCE RESULTS ON 10D VERSIONS OF THE TEST FUNCTIONS.",
+      "headers": [
+        "Function",
+        "UMDA Mean (Std)",
+        "BayEDA Mean (Std)"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "$9.63 \\mathrm{E}-09(2.36 \\mathrm{E}-09)$",
+          "$1.18 \\mathrm{E}-08(2.63 \\mathrm{E}-09)$"
+        ],
+        [
+          "Rastrigin",
+          "$7.12 \\mathrm{E}-06(8.15 \\mathrm{E}-06)$",
+          "$1.56 \\mathrm{E}-05(2.16 \\mathrm{E}-05)$"
+        ],
+        [
+          "Rosenbrock",
+          "$8.21 \\mathrm{E}+01(2.04 \\mathrm{E}-02)$",
+          "$8.21 \\mathrm{E}+01(2.41 \\mathrm{E}-02)$"
+        ],
+        [
+          "Gnewangk",
+          "$7.54 \\mathrm{E}-14(2.45 \\mathrm{E}-14)$",
+          "$1.08 \\mathrm{E}-13(2.86 \\mathrm{E}-14)$"
+        ],
+        [
+          "Ackleys",
+          "$1.96 \\mathrm{E}-08(2.75 \\mathrm{E}-09)$",
+          "$2.11 \\mathrm{E}-08(3.42 \\mathrm{E}-09)$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    }
+  ]
+}

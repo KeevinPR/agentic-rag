@@ -1,0 +1,663 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/Migrating Birds Optimization for Lot-streaming flow shop scheduling problem.md",
+    "filename": "Migrating Birds Optimization for Lot-streaming flow shop scheduling problem.md",
+    "title": "Migrating Birds Optimization for Lot-streaming flow shop scheduling problem",
+    "year": "2019"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] Y. Y. Han, D. W. Gong, Y. C. Jin, Q. K. Pan, \"Evolutionary multiobjective blocking lot-Streaming flow shop scheduling with machine breakdowns,\" IEEE Transactions on Cybernetics, Vol. 49, No. 1, pp. 184-198, 2019.\n[2] Q. K. Pan, M. F. Tasgetiren, P. N. Suganthan, et al, \"A discrete artificial bee colony algorithm for the lot-streaming flow shop scheduling problem,\" Computer Engineering \\& Applications, Vol. 181, No. 12, pp. 2455-2468, 2011.\n[3] H. Y. Sang, Q. K. Pan, P. Y. Duan, et al, \"An effective discrete invasive weed optimization algorithm for lot-streaming flowshop scheduling problems,\" Journal of Intelligent Manufacturing, No. 2, pp. 1-13, 2015.\n[4] Q. K. Pan, R. Ruiz, \"An estimation of distribution algorithm for lot-streaming flow shop problems with setup times,\" Omega, Vol.40, No.2, pp. 166-180, 2012.\n[5] E. Duman, M. Uysal, A. F. Alkaya, \"Migrating Birds Optimization: A New Meta-heuristic Approach and Its Application to the Quadratic Assignment Problem,\" Information Sciences, Vol. 217, pp. 254-263, 2011.\n[6] V. Tongur, E.Ülker, \"Migrating Birds Optimization for Flow Shop Sequencing Problem,\" Journal of Computer \\& Communications, Vol. 02, No. 4, pp. 142-147, 2014.\n[7] Q. K. Pan, Y. Dong, \"An improved migrating birds optimisation for a hybrid flowshop scheduling with total flowtime minimization,\" Information Sciences, Vol. 277, No. 2, pp. 643$655,2014$.\n[8] S. Niroomand, A.Hadi-Vencheh, \"Modified migrating birds optimization algorithm for closed loop layout with exact distances in flexible manufacturing systems,\" Expert Systems with Applications, Vol. 42, No. 19, pp. 6586-6597, 2015.\n[9] M. Nawaz, E. Emory Enscore, I.Ham, \"A heuristic algorithm for the $m$-machine, $n$-job flow-shop sequencing problem,\" Omega, Vol. 11, No. 1, pp. 91-95, 1983.\n[10] D. P.Ronconi, \"A note on constructive heuristics for the flowshop problem with blocking,\" International Journal of Production Economics, Vol. 87, No. 1, pp. 39-48, 2004.\n[11] D. W. Gong, Y. Y. Han, J. Y. Sun. \"A Hybrid Discrete Artificial Bee Colony Algorithm for Multi-objective Blocking LotStreaming Flow Shop Scheduling Problem\" Knowledge-Based Systems, Vol. 148, pp. 115-130, 2018.\n[12] V. P. S. Rawat, M. Cusan, A. Deshpande, et al, \"Two new robust genetic algorithms for the flowshop scheduling problem,\" Omega, Vol. 34, No. 5, 461-476, 2006.\n[13] Y. Zhang, \"Hybrid genetic algorithm for permutation flowshop scheduling problems with total flowtime minimization,\" European Journal of Operational Research, Vol. 196, No. 3, pp. 869-876, 2009.\n[14] Y. Y. Han, D. W. Gong, X. Y Sun, \"A discrete artificial bee colony algorithm incorporating differential evolution for flow shop scheduling problem with blocking,\" Engineering Optimization, Vol. 47, No. 7, pp. 927-946, 2015.\n[15] S.H. Yoon, J. Ventura, \"An application of genetic algorithms to lot-streaming flow shop scheduling,\" IIE Transactions, Vol. 34, No. 9, pp. 779-787, 2002.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Y. Y. Han, D. W. Gong, Y. C. Jin, Q. K. Pan, \"Evolutionary multiobjective blocking lot-Streaming flow shop scheduling with machine breakdowns,\" IEEE Transactions on Cybernetics, Vol. 49, No. 1, pp. 184-198, 2019."
+      },
+      {
+        "ref_id": "2",
+        "text": "Q. K. Pan, M. F. Tasgetiren, P. N. Suganthan, et al, \"A discrete artificial bee colony algorithm for the lot-streaming flow shop scheduling problem,\" Computer Engineering \\& Applications, Vol. 181, No. 12, pp. 2455-2468, 2011."
+      },
+      {
+        "ref_id": "3",
+        "text": "H. Y. Sang, Q. K. Pan, P. Y. Duan, et al, \"An effective discrete invasive weed optimization algorithm for lot-streaming flowshop scheduling problems,\" Journal of Intelligent Manufacturing, No. 2, pp. 1-13, 2015."
+      },
+      {
+        "ref_id": "4",
+        "text": "Q. K. Pan, R. Ruiz, \"An estimation of distribution algorithm for lot-streaming flow shop problems with setup times,\" Omega, Vol.40, No.2, pp. 166-180, 2012."
+      },
+      {
+        "ref_id": "5",
+        "text": "E. Duman, M. Uysal, A. F. Alkaya, \"Migrating Birds Optimization: A New Meta-heuristic Approach and Its Application to the Quadratic Assignment Problem,\" Information Sciences, Vol. 217, pp. 254-263, 2011."
+      },
+      {
+        "ref_id": "6",
+        "text": "V. Tongur, E.Ülker, \"Migrating Birds Optimization for Flow Shop Sequencing Problem,\" Journal of Computer \\& Communications, Vol. 02, No. 4, pp. 142-147, 2014."
+      },
+      {
+        "ref_id": "7",
+        "text": "Q. K. Pan, Y. Dong, \"An improved migrating birds optimisation for a hybrid flowshop scheduling with total flowtime minimization,\" Information Sciences, Vol. 277, No. 2, pp. 643$655,2014$."
+      },
+      {
+        "ref_id": "8",
+        "text": "S. Niroomand, A.Hadi-Vencheh, \"Modified migrating birds optimization algorithm for closed loop layout with exact distances in flexible manufacturing systems,\" Expert Systems with Applications, Vol. 42, No. 19, pp. 6586-6597, 2015."
+      },
+      {
+        "ref_id": "9",
+        "text": "M. Nawaz, E. Emory Enscore, I.Ham, \"A heuristic algorithm for the $m$-machine, $n$-job flow-shop sequencing problem,\" Omega, Vol. 11, No. 1, pp. 91-95, 1983."
+      },
+      {
+        "ref_id": "10",
+        "text": "D. P.Ronconi, \"A note on constructive heuristics for the flowshop problem with blocking,\" International Journal of Production Economics, Vol. 87, No. 1, pp. 39-48, 2004."
+      },
+      {
+        "ref_id": "11",
+        "text": "D. W. Gong, Y. Y. Han, J. Y. Sun. \"A Hybrid Discrete Artificial Bee Colony Algorithm for Multi-objective Blocking LotStreaming Flow Shop Scheduling Problem\" Knowledge-Based Systems, Vol. 148, pp. 115-130, 2018."
+      },
+      {
+        "ref_id": "12",
+        "text": "V. P. S. Rawat, M. Cusan, A. Deshpande, et al, \"Two new robust genetic algorithms for the flowshop scheduling problem,\" Omega, Vol. 34, No. 5, 461-476, 2006."
+      },
+      {
+        "ref_id": "13",
+        "text": "Y. Zhang, \"Hybrid genetic algorithm for permutation flowshop scheduling problems with total flowtime minimization,\" European Journal of Operational Research, Vol. 196, No. 3, pp. 869-876, 2009."
+      },
+      {
+        "ref_id": "14",
+        "text": "Y. Y. Han, D. W. Gong, X. Y Sun, \"A discrete artificial bee colony algorithm incorporating differential evolution for flow shop scheduling problem with blocking,\" Engineering Optimization, Vol. 47, No. 7, pp. 927-946, 2015."
+      },
+      {
+        "ref_id": "15",
+        "text": "S.H. Yoon, J. Ventura, \"An application of genetic algorithms to lot-streaming flow shop scheduling,\" IIE Transactions, Vol. 34, No. 9, pp. 779-787, 2002."
+      }
+    ],
+    "reference_count": 15,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "notation",
+        "meaning"
+      ],
+      "rows": [
+        [
+          "$j$",
+          "job index, $j=1,2, \\ldots, n$"
+        ],
+        [
+          "$t$",
+          "machine index, $t=1,2, \\ldots, m$"
+        ],
+        [
+          "$\\pi$",
+          "a job sequence"
+        ],
+        [
+          "$\\Pi$",
+          "the set of all sequences, $\\Pi=\\left\\{\\pi_{1}, \\pi_{2}, \\ldots, \\pi_{m}\\right\\}$"
+        ],
+        [
+          "$P S$",
+          "the population size"
+        ],
+        [
+          "$\\pi(j)$",
+          "the $j$-th job of sequence $\\pi$"
+        ],
+        [
+          "$w_{e(j)}$",
+          "the total number of sub-lots of job $\\pi(j)$"
+        ],
+        [
+          "$e$",
+          "the $e$-th sub-lot with each being indexed by $e=1,2, \\ldots, w_{e(j)}$"
+        ],
+        [
+          "$\\pi(j), e$",
+          "the $e$-th sub-lot of job $\\pi(j)$"
+        ],
+        [
+          "$p_{e(j), t}$",
+          "the processing time of each sub-lot of job $\\pi(j)$ on machine $t$"
+        ],
+        [
+          "$C_{e(j), t, e}$",
+          "the completion time of the $e$-th sub-lot of job $\\pi(j)$ on <br> machines $t$"
+        ],
+        [
+          "$S_{e(j), t, e}$",
+          "the start time of the $e$-th sub-lot of job $\\pi(j)$ on machines $t$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    },
+    {
+      "table_number": "I",
+      "table_title": "PARAMETER SETTINGS",
+      "headers": [
+        "Parameter",
+        "Notation",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Number of jobs",
+          "$n$",
+          105070110200500
+        ],
+        [
+          "Number of machines",
+          "$m$",
+          "$5,10,20$"
+        ],
+        [
+          "Number of sub-lots",
+          "$w$",
+          16
+        ],
+        [
+          "Processing time",
+          "$p_{p_{1,3,4}}$",
+          131
+        ],
+        [
+          "Population size",
+          "PS",
+          20
+        ],
+        [
+          "Number of initializing solutions",
+          "$\\beta$",
+          3
+        ],
+        [
+          "local search rate",
+          "$p l o$",
+          0.6
+        ],
+        [
+          "stopping time",
+          "Time $_{\\text {max }}$",
+          "$T=n+m$ milliseconds"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "PERFORMANCE COMPARISON OF EDA, DIWO, MMBO AND NMBO ALGORITHMS ( $T=5$ )",
+      "headers": [
+        "Instances",
+        "EDA",
+        "DIWO",
+        "MMBO",
+        "NMBO",
+        "time"
+      ],
+      "rows": [
+        [
+          "$10 \\times 5$",
+          0.49,
+          0.68,
+          0.47,
+          0.4,
+          0.25
+        ],
+        [
+          "$10 \\times 10$",
+          0.77,
+          0.63,
+          0.32,
+          0.74,
+          0.5
+        ],
+        [
+          "$10 \\times 20$",
+          0.02,
+          0.32,
+          0.33,
+          0.9,
+          1.0
+        ],
+        [
+          "$50 \\times 5$",
+          1.04,
+          0.64,
+          0.35,
+          0.16,
+          1.25
+        ],
+        [
+          "$50 \\times 10$",
+          0.56,
+          0.64,
+          0.56,
+          0.38,
+          2.5
+        ],
+        [
+          "$50 \\times 20$",
+          1.23,
+          0.89,
+          0.99,
+          0.51,
+          5.0
+        ],
+        [
+          "$70 \\times 5$",
+          0.92,
+          0.78,
+          0.73,
+          0.13,
+          1.75
+        ],
+        [
+          "$70 \\times 10$",
+          0.93,
+          0.46,
+          0.62,
+          0.89,
+          3.5
+        ],
+        [
+          "$70 \\times 20$",
+          0.96,
+          0.45,
+          0.29,
+          0.45,
+          7.0
+        ],
+        [
+          "$110 \\times 5$",
+          1.54,
+          0.9,
+          0.66,
+          0.52,
+          2.75
+        ],
+        [
+          "$110 \\times 10$",
+          0.96,
+          0.82,
+          0.72,
+          0.36,
+          5.5
+        ],
+        [
+          "$110 \\times 20$",
+          1.56,
+          0.66,
+          0.62,
+          0.38,
+          11.0
+        ],
+        [
+          "$200 \\times 10$",
+          0.67,
+          0.32,
+          0.25,
+          0.32,
+          10.0
+        ],
+        [
+          "$200 \\times 20$",
+          1.01,
+          0.17,
+          0.92,
+          0.47,
+          20.0
+        ],
+        [
+          "$500 \\times 20$",
+          1.67,
+          1.44,
+          1.36,
+          0.71,
+          50.0
+        ],
+        [
+          "average",
+          0.96,
+          0.65,
+          0.61,
+          0.49,
+          8.14
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    },
+    {
+      "table_number": "III",
+      "table_title": "PERFORMANCE COMPARISON OF EDA, DIWO, MMBO AND NMBO ALGORITHMS ( $T=15$ )",
+      "headers": [
+        "Instances",
+        "EDA",
+        "DIWO",
+        "MMBO",
+        "NMBO",
+        "time"
+      ],
+      "rows": [
+        [
+          "$10 \\times 5$",
+          0.01,
+          0.02,
+          0.05,
+          0.18,
+          0.5
+        ],
+        [
+          "$10 \\times 10$",
+          0.72,
+          0.52,
+          0.43,
+          0.34,
+          1.0
+        ],
+        [
+          "$10 \\times 20$",
+          0.03,
+          0.76,
+          0.3,
+          0.56,
+          2.0
+        ],
+        [
+          "$50 \\times 5$",
+          0.93,
+          0.56,
+          0.38,
+          0.11,
+          2.5
+        ],
+        [
+          ":--",
+          ":--",
+          ":--",
+          ":--",
+          ":--",
+          ":--"
+        ],
+        [
+          "$50 \\times 10$",
+          0.48,
+          0.18,
+          0.19,
+          0.14,
+          5.0
+        ],
+        [
+          "$50 \\times 20$",
+          0.59,
+          0.24,
+          0.12,
+          0.16,
+          10.0
+        ],
+        [
+          "$70 \\times 5$",
+          0.34,
+          0.18,
+          0.15,
+          0.09,
+          3.5
+        ],
+        [
+          "$70 \\times 10$",
+          0.95,
+          0.23,
+          0.19,
+          0.18,
+          7.0
+        ],
+        [
+          "$70 \\times 20$",
+          0.67,
+          0.29,
+          0.17,
+          0.18,
+          14.0
+        ],
+        [
+          "$110 \\times 5$",
+          0.74,
+          0.14,
+          0.55,
+          0.68,
+          5.5
+        ],
+        [
+          "$110 \\times 10$",
+          0.86,
+          0.45,
+          1.06,
+          0.3,
+          11.0
+        ],
+        [
+          "$110 \\times 20$",
+          0.18,
+          0.23,
+          0.55,
+          0.75,
+          22.0
+        ],
+        [
+          "$200 \\times 10$",
+          0.94,
+          0.2,
+          0.16,
+          0.08,
+          20.0
+        ],
+        [
+          "$200 \\times 20$",
+          0.74,
+          0.86,
+          0.52,
+          0.17,
+          40.0
+        ],
+        [
+          "$500 \\times 20$",
+          0.5,
+          0.79,
+          0.5,
+          0.3,
+          100.0
+        ],
+        [
+          "average",
+          0.59,
+          0.38,
+          0.35,
+          0.28,
+          16.27
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 6
+    },
+    {
+      "table_number": "IV",
+      "table_title": "PERFORMANCE COMPARISON OF EDA, DIWO, MMBO AND NMBO ALGORITHMS ( $T=30$ )",
+      "headers": [
+        "Instances",
+        "EDA",
+        "DIWO",
+        "MMBO",
+        "NMBO",
+        "time"
+      ],
+      "rows": [
+        [
+          "$10 \\times 5$",
+          0.01,
+          0.02,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$",
+          1.5
+        ],
+        [
+          "$10 \\times 10$",
+          0.22,
+          0.31,
+          0.37,
+          "$\\mathbf{0 . 1 2}$",
+          3.0
+        ],
+        [
+          "$10 \\times 20$",
+          "$\\mathbf{0 . 0 2}$",
+          0.23,
+          0.1,
+          0.25,
+          6.0
+        ],
+        [
+          "$50 \\times 5$",
+          0.46,
+          0.45,
+          0.32,
+          "$\\mathbf{0 . 1 2}$",
+          7.5
+        ],
+        [
+          "$50 \\times 10$",
+          0.3,
+          0.07,
+          "$\\mathbf{0 . 0 4}$",
+          0.07,
+          15.0
+        ],
+        [
+          "$50 \\times 20$",
+          0.29,
+          0.01,
+          "$\\mathbf{0 . 0 0}$",
+          0.01,
+          30.0
+        ],
+        [
+          "$70 \\times 5$",
+          0.23,
+          "$\\mathbf{0 . 0 7}$",
+          0.15,
+          "$\\mathbf{0 . 0 7}$",
+          10.5
+        ],
+        [
+          "$70 \\times 10$",
+          0.67,
+          0.3,
+          "$\\mathbf{0 . 2 1}$",
+          0.3,
+          21.0
+        ],
+        [
+          "$70 \\times 20$",
+          0.26,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$",
+          0.01,
+          42.0
+        ],
+        [
+          "$110 \\times 5$",
+          0.12,
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$",
+          "$\\mathbf{0 . 0 0}$",
+          16.5
+        ],
+        [
+          "$110 \\times 10$",
+          0.62,
+          0.42,
+          0.51,
+          "$\\mathbf{0 . 2 0}$",
+          33.0
+        ],
+        [
+          "$110 \\times 20$",
+          0.81,
+          0.28,
+          "$\\mathbf{0 . 1 8}$",
+          0.27,
+          66.0
+        ],
+        [
+          "$200 \\times 10$",
+          0.67,
+          0.32,
+          0.25,
+          "$\\mathbf{0 . 1 0}$",
+          60.0
+        ],
+        [
+          "$200 \\times 20$",
+          0.18,
+          0.28,
+          "$\\mathbf{0 . 0 4}$",
+          0.07,
+          120.0
+        ],
+        [
+          "$500 \\times 20$",
+          0.38,
+          "$\\mathbf{0 . 1 5}$",
+          0.3,
+          "$\\mathbf{0 . 1 5}$",
+          300.0
+        ],
+        [
+          "average",
+          0.35,
+          0.19,
+          0.16,
+          "$\\mathbf{0 . 1 2}$",
+          48.8
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    },
+    {
+      "table_number": "V",
+      "table_title": "reports the two-side Wilcoxon rank sum tests of NMBO, EDA, DIWO and MMBO algorithms with significant level equal to $5 \\%$. In the tables 45 , there are two values, i.e, $p$ value and $h$ value. P is the probability of observing the given result by chance if the null hypothesis is true. When $h$ equals 1 , it indicates that the results obtained by the two compared algorithms are obviously different. When $h$ equals 0 , it denotes that the difference between the two algorithms is not significant at $5 \\%$ significant level. From the Table V, we can see that NMOB proposed in this paper is significantly different from the other compared algorithms.",
+      "headers": [
+        "(NMBO, EDA)",
+        "",
+        "(NMBO, DIWO)",
+        "",
+        "(NMBO, MMBO)",
+        ""
+      ],
+      "rows": [
+        [
+          "$p$",
+          "$h$",
+          "$p$",
+          "$h$",
+          "$p$",
+          "$h$"
+        ],
+        [
+          "$\\mathbf{4 . 1 4 2 1 1 c - 0 5 3}$",
+          "$\\mathbf{1}$",
+          "$\\mathbf{5 . 6 8 9 2 1 c - 0 5 6}$",
+          "$\\mathbf{1}$",
+          "$\\mathbf{8 . 3 6 9 8 1 c - 0 2 3}$",
+          "$\\mathbf{1}$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2002/Evolutionary optimization by distribution estimation with mixtures of factor Analyzers.md",
+    "filename": "Evolutionary optimization by distribution estimation with mixtures of factor Analyzers.md",
+    "title": "Evolutionary optimization by distribution estimation with mixtures of factor Analyzers",
+    "year": "2002"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "shows the comparative results to other EDAs. Except the eMCMC selection method ( $N=1000$ ), all experiments use a population of 2000 individuals, from which the best 1000 solutions are selected to estimate the distribution. The MFA $(M=10, q=5)$ with eMCMC selection have better performances than those of other EDAs and conventional style MFA.",
+      "headers": [
+        "",
+        "Rosenbrock $\\left(-10.0 \\leq x_{t} \\leq 10.0\\right)$",
+        "",
+        "Griewank $\\left(-600.0 \\leq x_{t} \\leq 600.0\\right)$",
+        ""
+      ],
+      "rows": [
+        [
+          "Algorithm",
+          "Mean $\\pm$ Stdev",
+          "\\# Evaluation",
+          "Mean $\\pm$ Stdev",
+          "\\# Evaluation"
+        ],
+        [
+          "UMDA $_{c}$",
+          "$8.7204 \\pm 0.0382$",
+          301850,
+          "$6.0783 \\times 10^{-2} \\pm 0.0193$",
+          301850
+        ],
+        [
+          "MIMIC $_{c}$",
+          "$8.7141 \\pm 0.0164$",
+          301850,
+          "$7.3994 \\times 10^{-2} \\pm 0.0286$",
+          301850
+        ],
+        [
+          "EGNA $_{B I C}$",
+          "$8.8217 \\pm 0.16$",
+          268067,
+          "$3.9271 \\times 10^{-2} \\pm 0.0243$",
+          301850
+        ],
+        [
+          "EGNA $_{B G e}$",
+          "$8.6807 \\pm 0.0587$",
+          164519,
+          "$7.6389 \\times 10^{-2} \\pm 0.0293$",
+          301850
+        ],
+        [
+          "EGNA $_{e s}$",
+          "$8.7366 \\pm 0.0223$",
+          301850,
+          "$5.6840 \\times 10^{-2} \\pm 0.0382$",
+          301850
+        ],
+        [
+          "MFA $_{\\text {half }}$",
+          "$8.7048 \\pm 2.5806$",
+          300000,
+          "$7.7586 \\times 10^{-3} \\pm 0.0082$",
+          300000
+        ],
+        [
+          "MFA $_{\\text {eMOMC }}$",
+          "$2.5184 \\pm 1.2037$",
+          300000,
+          "$1.0870 \\times 10^{-3} \\pm 0.0010$",
+          300000
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    }
+  ]
+}

@@ -1,0 +1,1586 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/Protein Folding in Simplified Models With Estimation of Distribution Algorithms.md",
+    "filename": "Protein Folding in Simplified Models With Estimation of Distribution Algorithms.md",
+    "title": "Protein Folding in Simplified Models With Estimation of Distribution Algorithms",
+    "year": "2008"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] C. Levinthal, \"Are there pathways for protein folding?,\" J. Chem. Phys., vol. 65, pp. 44-45, 1968.\n[2] K. A. Dill, \"Theory for the folding and stability of globular proteins,\" Biochemistry, vol. 24, no. 6, pp. 1501-1509, 1985.\n[3] H. S. Chan and E. Bornberg-Bauer, \"Perspectives on protein evolution from simple exact models,\" Appl. Bioinformatics, vol. 1, no. 3, pp. $121-144,2002$.\n[4] G. Chikenji, Y. Fujitsuka, and S. Takada, \"Shaping up the protein folding funnel by local interaction: Lesson from a structure prediction study,\" in Proc. Natl. Acad. Sci. (PNAS), 2006, vol. 103, no. 9, pp. $3141-3146$.\n[5] A. Gupta, J. Manuch, and L. Stacho, \"Structure-approximating inverse protein folding problem in 2D HP model,\" J. Comput. Biol., vol. 12, no. 10, pp. 1328-1345, 2005.\n[6] H. Cejtin, J. Edler, A. Gottlieb, R. Helling, H. Li, J. Philbin, N. Wingreen, and C. Tang, \"Fast tree search for enumeration of a lattice model of protein folding,\" J. Chem. Phys., vol. 116, pp. 121-144, 2002.\n[7] H. Abe and H. Wako, \"Analyses of simulations of three-dimensional lattice proteins in comparison with a simplified statistical mechanical model of protein folding,\" Phys. Rev. E. Statist., Nonlinear, and Soft Matter Phys., vol. 74, p. 011913, 2006.\n[8] F. P. Huard, C. M. Deane, and G. R. Wood, \"Modelling sequential protein folding under kinetic control,\" Bioinformatics, vol. 22, no. 14, pp. 203-210, 2006.\n[9] S. C. Kou, J. Oh, and W. H. Wong, \"A study of density of states and ground states in hydrophobic-hydrophilic protein folding models by equi-energy sampling,\" J. Chem. Phys., vol. 124, pp. 244903(1-244903(11), 2006.\n[10] P. Crescenzi, D. Goldman, C. H. Papadimitriou, A. Piccolboni, and M. Yannakakis, \"On the complexity of protein folding,\" J. Comput. Biol., vol. 5, no. 3, pp. 423-466, 1998.\n[11] B. Berger and T. Leight, \"Protein folding in the hydrophobic-hydrophilic (HP) model is NP-complete,\" J. Comput. Biol., vol. 5, no. 1, pp. 27-40, 1998.\n[12] W. E. Hart and S. C. Istrail, \"Fast protein folding in the hydrophobichydrophilic model within three-eights of optimal,\" J. Comput. Biol., vol. 3, no. 1, pp. 53-96, 1996.\n[13] U. Bastolla, H. Frauenkron, E. Gerstner, P. Grassberger, and W. Nadler, \"Testing a new Monte Carlo algorithm for protein folding,\" Proteins: Structure, Function, and Genetics, vol. 32, pp. 52-66, 1998.\n[14] T. C. Beutler and K. A. Dill, \"A fast conformational search strategy for finding low energy structures of model proteins,\" Protein Sci., vol. 5, pp. 2037-2043, 1996.\n[15] R. König and T. Dandekar, \"Improving genetic algorithms for protein folding simulations by systematic crossover,\" Biosystems, vol. 50, pp. $17-25,1999$.\n[16] N. Krasnogor, W. E. Hart, J. Smith, and D. A. Pelta, \"Protein structure prediction with evolutionary algorithms,\" in Proc. Genetic Evol. Comput. Conf., W. Banzhaf, J. Daida, A. E. Eiben, M. H. Garzon, V. Honavar, M. Jakiela, and R. E. Smith, Eds., Orlando, Florida, USA, 1999, vol. 2, pp. 1596-1601.\n\n[17] N. Krasnogor, B. Blackburne, E. K. Burke, and J. D. Hirst, \"Multimeme algorithms for protein structure prediction,\" in Parallel Problem Solving from Nature-PPSN VII, ser. Lecture Notes in Computer Science, J. J. Merelo, P. Adamidis, H. G. Beyer, J. L. Fernandez-Villacañas, and H. P. Schwefel, Eds. Granada, Spain: Springer Verlag, 2002, vol. 2439, pp. 769-778.\n[18] A. Shinygelska, R. A. Hernández, and H. H. Hoos, \"An ant colony optimization algorithm for the 2D HP protein folding problem,\" in Proc. 3rd Int. Workshop on Ant Algorithms, 2002, pp. 40-53.\n[19] R. Unger and J. Moult, \"Genetic algorithms for protein folding simulations,\" J. Molecular Biol., vol. 231, pp. 75-81, 1993.\n[20] J. Blazewicz, K. Dill, P. Lukasiak, and M. Milostan, \"A tabu search strategy for finding low energy structures of proteins in HP-model,\" Comput. Methods in Sci. Technol., vol. 10, pp. 7-19, 2004.\n[21] C. Cotta, \"Protein structure prediction using evolutionary algorithms hybridized with backtracking,\" in Artificial Neural Nets Problem Solving Methods, ser. Lecture Notes in Computer Science, J. Mira and J. R. Alvarez, Eds. Berlin, Germany: Springer Verlag, 2003, vol. 2687, pp. 321-328.\n[22] V. Cutello, G. Morelli, G. Nicosia, and M. Pavone, \"Immune algorithms with aging operators for the string folding problem and the protein folding problem,\" in Proc. 5th Eur. Conf. Comput. Combinatorial Optim., EvoCop-2005, G. R. Raidl and J. Gottlieb, Eds., 2005, vol. 3448, Lecture Notes in Computer Science, pp. 80-90.\n[23] V. Cutello, G. Nicosia, M. Pavone, and J. Timmis, \"An immune algorithm for protein structure prediction on lattice models,\" IEEE Trans. Evol. Comput., vol. 11, no. 1, pp. 101-117, Feb. 2007.\n[24] M. D. T. Hoque, M. Chetty, and L. S. Dooley, \"A new guided genetic algorithm for 2d hydrophobic-hydrophilic model to predict protein folding,\" in Proc. 2005 Congr. Evol. Comput., CEC-2005, Edinburgh, U.K., 2005, pp. 259-266.\n[25] H.-P. Hsu, V. Mehra, W. Nadler, and P. Grassberger, \"Growth algorithms for lattice heteropolymers at low temperatures,\" J. Chem. Phys., vol. 118, no. 1, pp. 444-451, 2003.\n[26] D. Pelta and N. Krasnogor, \"Multimeme algorithms using fuzzy logic based memes for protein structure prediction,\" in Recent Advances in Memetic Algorithms, ser. Studies in Fuzziness and Soft Computing, W. H. William, N. Krasnogor, and J. E. Smith, Eds. New York: Springer, 2004, pp. 49-64.\n[27] R. Santana, P. Larrañaga, and J. A. Lozano, \"Protein folding in 2-dimensional lattices with estimation of distribution algorithms,\" in Proc. 1st Int. Symp. Biol. Medical Data Anal., 2004, vol. 3337, Lecture Notes in Computer Science, pp. 388-398.\n[28] A. Shinygelska and H. H. Hoos, \"An improved ant colony optimization algorithm for the 2D HP protein folding problem,\" in Advances in Artificial Intelligence, ser. Lecture Notes in Computer Science, Y. Xiang and B. Chaib-draa, Eds. Berlin, Germany: Springer-Verlag, 2003, vol. 2671, pp. 400-417.\n[29] J. Smith, \"The co-evolution of memetic algorithms for protein structure prediction,\" in Recent Advances in Memetic Algorithms, ser. Studies in Fuzziness and Soft Computing, W. H. William, N. Krasnogor, and J. E. Smith, Eds. New York: Springer, 2004, pp. 105-128.\n[30] J. Song, J. Cheng, T. T. Zheng, and J. Mao, \"A novel genetic algorithm for HP model protein folding,\" in Proc. 6th Int. Conf. Parallel Distrib. Comput., Appl. Technol. (PDCAT-2005), 2005, pp. 935-937.\n[31] G. W. Greenwood and J.-M. Shin, \"On the evolutionary search for solutions to the protein folding problem,\" in Evolutionary Computation in Bioinformatics, G. B. Fogel and D. W. Corne, Eds. San Mateo, CA: Morgan Kaufmann, 2002, pp. 115-136.\n[32] K. Ginalski, N. V. Grishin, A. Godzik, and L. Rychlewski, \"Practical lessons from protein structure prediction,\"Nucleid Acids Research, vol. 33, no. 6, pp. 1874-1891, 2005.\n[33] S. Duarte-Flores and J. E. Smith, \"Study of fitness landscapes for the HP model of protein structure prediction,\" in Proc. 2003 Congr. Evol. Comput., CEC-2003, R. Sarker, R. Reynolds, H. Abbass, K. C. Tan, B. McKay, D. Essam, and T. Gedeon, Eds., 2003, pp. 2338-2345, IEEE Press.\n[34] ., P. Larrañaga and J. A. Lozano, Eds., Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Norwell, MA: Kluwer, 2002.\n[35] J. A. Lozano, P. Larrañaga, I. Inza, and E. Bengoetxea, Eds., Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms. Berlin, Germany: Springer-Verlag, 2006.\n[36] H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. Binary parameters,\" in Parallel Problem Solving from Nature-PPSN IV, H.-M. Voigt, W. Ebeling, I. Rechenberg, and H.-P. Schwefel, Eds. Berlin, Germany: Springer-Verlag, 1996, vol. 1141, LNCS, pp. 178-187.\n[37] M. Pelikan, D. E. Goldberg, and F. Lobo, \"A survey of optimization by building and using probabilistic models,\" Comput. Optim. Appl., vol. 21, no. 1, pp. 5-20, 2002.\n[38] V. S. Pande, A. Y. Grosberg, T. Tanaka, and D. S. Rokhsar, \"Protein folding pathways: Is a \"new view\" needed?,\" Current Opinion in Structural Biology, vol. 8, no. 1, pp. 68-79, 1998.\n[39] J. N. Onuchic and P. G. Wolynes, \"Theory of protein folding,\" Current Opinion in Structural Biology, vol. 14, pp. 70-75, 2004.\n[40] D. Baker, \"A surprising simplicity to protein folding,\" Nature, vol. 405, pp. 39-42, 2000.\n[41] J. E. Shea, J. N. Onuchic, and C. L. Brooks, \"Exploring the origins of topological frustration: Design of a minimally frustrated model of fragment b of protein a,\" in Proc. Natl. Acad. Sci. (PNAS), 1999, vol. 96, no. 22, pp. 12512-12517.\n[42] L. Kallel, B. Naudts, and R. Reeves, \"Properties of fitness functions and search landscapes,\" in Theoretical Aspects of Evolutionary Computing, L. Kallel, B. Naudts, and A. Rogers, Eds. Berlin, Germany: SpringerVerlag, 2000, pp. 177-208.\n[43] J. N. Onuchic, H. Nymeyer, A. E. Garcia, J. Chahine, and N. D. Socci, \"The energy landscape theory of protein folding: Insights into folding mechanisms and scenarios,\" Adv. Protein Chem., vol. 53, pp. 87-152, 2000.\n[44] L. L. Chavez, J. N. Onuchic, and C. Clementi, \"Quantifying the roughness on the free energy landscape: Entropic bottlenecks and protein folding rates,\" J. Amer. Chem. Soc., vol. 126, no. 27, pp. 8426-8432, 2004.\n[45] R. L. Dunbrack, \"Rotamer libraries in the 21st century,\" Current Opinion in Structural Biol., vol. 12, pp. 431-440, 2002.\n[46] G. A. Lazar, J. R. Desjarlais, and T. M. Handel, \"De novo protein design of the hydrophobic core of ubiquitin,\" Protein Science, vol. 6, pp. $1167-1178,1997$.\n[47] C. M. Kraemer-Pecore, A. M. Wollacott, and J. R. Desjarlais, \"Computational protein design,\" Current Opinion in Chem. Biol., vol. 5, pp. 690-695, 2001.\n[48] C. A. Robl, C. E. M. Strauss, K. Misura, and D. Baker, \"Protein structure prediction using Rosetta,\" Methods in Enzymology, vol. 383, pp. 66-93, 2004.\n[49] Y. Cui, W. H. Wong, E. Bornberg-Bauer, and H. S. Chan, \"Recombinatoric exploration of novel folded structures: A heteropolymer-based model of protein evolutionary landscapes,\" in Proc. Natl. Acad. Sci. , 2002, vol. 99, no. 2, pp. 809-814.\n[50] V. Cutello, G. Nicosia, and M. Pavone, \"An immune algorithm with hyper-macromutations for the Dill's 2d hydrophobic-hydrophilic model,\" in Proc. 2004 Congr. Evol. Comput., CEC-2004, Portland, OR, 2004, vol. 1, pp. 1074-1080.\n[51] J. D. Hirst, \"The evolutionary landscape of functional model proteins,\" Protein Eng., vol. 12, pp. 721-726, 1999.\n[52] N. Metropolis, A. Rosenbluth, A. Teller, and E. Teller, \"Equations of state calculations by fast computing machines,\" J. Chem. Phys., vol. 21, pp. 1087-1091, 1953.\n[53] M. Khimasia and P. Coveney, \"Protein structure prediction as a hard optimization problem: The genetic algorithm approach,\" Molecular Simulation, vol. 19, pp. 205-226, 1997.\n[54] U. H. E. Hansmann and Y. Okamoto, \"New Monte Carlo algorithms for protein folding,\" Current Opinion in Structural Biol., vol. 9, pp. 177-181, 1999.\n[55] S. Liang and W. H. Wong, \"Evolutionary Monte Carlo for protein folding simulation,\" J. Chem. Phys., vol. 115, pp. 3374-3380, 2001.\n[56] H. Frauenkron, U. Bastolla, E. Gerstner, P. Grassberger, and W. Nadler, \"New Monte Carlo algorithm for protein folding,\" Phys. Rev. Lett., vol. 80, no. 4, pp. 3149-3153, 1998.\n[57] H.-P. Hsu, V. Mehra, and P. Grassberger, \"Structure optimization in an off-lattice protein model,\" Phys. Rev. E, vol. 68, no. 2, p. 4, 2003.\n[58] P. Grassberger, \"Sequential Monte Carlo methods for protein folding,\" in Proc. NIC Symp. 2004, D. Wolf, G. Münster, and M. Kremer, Eds., 2004, vol. 20, John von Neumann-Institut für Computing (NIC), pp. $1-10$.\n[59] C. A. Voigt, D. B. Gordon, and S. L. Mayo, \"Trading accuracy for speed: A quantitative comparison of search algorithms in protein sequence design,\" J. Molecular Biol., vol. 299, no. 3, pp. 799-803, 2000.\n[60] P. Larrañaga, B. Calvo, R. Santana, C. Bielza, J. Galdiano, I. Inza, J. A. Lozano, R. Armañanzas, G. Santafé, A. Pérez, and V. Robles, \"Machine learning in bioinformatics,\" Briefings in Bioinformatics, vol. 7, pp. 86-112, 2006.\n[61] R. Santana, P. Larrañaga, and J. A. Lozano, \"Side chain placement using estimation of distribution algorithms,\" Artif. Intell. Med. vol. 39, no. 1, pp. 49-63, 2007. [Online]. Available: http://www.sciencedirect.com/science/article/B6T4K-4KF785F-1/2/ d65e9d9d9552eO1ssc57d7\\&a349a4\\&\n[62] R. Santana, P. Larrañaga, and J. A. Lozano, \"Combining variable neighborhood search and estimation of distribution algorithms in the protein side chain placement problem,\" J. Heuristics, 2007, accepted for publication.\n\n[63] A. Schug and W. Wenzel, \"An evolutionary strategy for all-atom folding on the 60 -amino-acid bacterial ribosomal protein L20,\" Biophys. J., vol. 9, pp. 4273-4280, 2006.\n[64] J. T. Pedersen and J. Moult, \"Protein folding simulation with genetic algorithms and a detailed molecular description,\" J. Molecular Biol., vol. 269, pp. 240-259, 1997.\n[65] S. Bahuja and S. Davies, \"Using optimal dependency-trees for combinatorial optimization: Learning the structure of the search space,\" in Proc. 14th Int. Conf. Mach. Learning, 1997, pp. 30-38.\n[66] H. Mühlenbein, T. Mahnig, and A. Ochoa, \"Schemata, distributions and graphical models in evolutionary optimization,\" J. Heuristics, vol. 5, no. 2, pp. 213-247, 1999.\n[67] P. Larrañaga, \"An introduction to probabilistic graphical models,\" in Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Norwell, MA: Kluwer, 2002, pp. 25-54.\n[68] S. Bahuja, \"Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning,\" Carnegie Mellon Univ., Pittsburgh, PA, Tech. Rep. CMU-CS-94-163, 1994.\n[69] G. R. Harik, F. G. Lobo, and D. E. Goldberg, \"The compact genetic algorithm,\" IEEE Trans. Evol. Comput., vol. 3, no. 4, pp. 287-297, Nov. 1999.\n[70] J. S. De Bonet, C. L. Isbell, and P. Viola, \"MIMIC: Finding optima by estimating probability densities,\" in Adv. Neural Inf. Process. Syst., M. C. Mozer, M. I. Jordan, and T. Petsche, Eds. Cambridge, MA: MIT Press, 1997, vol. 9, pp. 424-430.\n[71] G. Harik, \"Linkage learning via probabilistic modeling in the EcGA,\" Univ. Illinois at Urbana-Champaign, Illinois Genetic Algorithms Lab., Urbana, IL, IlliGAL Rep. 99010, 1999.\n[72] R. Etxeberria and P. Larrañaga, \"Global optimization using Bayesian networks,\" in Proc. 2nd Symp. Artif. Intell. (CIMAF-99), A. Ochoa, M. R. Soto, and R. Santana, Eds., Habana, Cuba, 1999, pp. 151-173.\n[73] M. Pelikan, D. E. Goldberg, and E. Cantii-Paz, \"BOA: The Bayesian optimization algorithm,\" in Proc. Genetic and Evol. Comput. Conf., GECCO-1999, W. Banzhaf, J. Daida, A. E. Eiben, M. H. Garzon, V. Honavar, M. Jakiela, and R. E. Smith, Eds., Orlando, FL, 1999, pp. $525-532$.\n[74] H. Mühlenbein and T. Mahnig, \"Evolutionary synthesis of Bayesian networks for optimization,\" in Advances in Evolutionary Synthesis of Intelligent Agents, M. Patel, V. Honavar, and K. Balakrishnan, Eds. Cambridge, MA: MIT Press, 2001, pp. 429-455.\n[75] C. K. Chow and C. N. Liu, \"Approximating discrete probability distributions with dependence trees,\" IEEE Trans. Inf. Theory, vol. 14, no. 3, pp. 462-467, May 1968.\n[76] M. Henrion, \"Propagating uncertainty in Bayesian networks by probabilistic logic sampling,\" in Proc. 2nd Ann. Conf. Uncertainty in Artif. Intell., J. F. Lemmer and L. N. Kanal, Eds., 1988, pp. 149-164.\n[77] M. Meila, \"Learning mixtures of trees,\" Ph.D. dissertation, Massachusetts Institute of Technology, Cambridge, MA, 1999.\n[78] R. Santana, A. Ochoa, and M. R. Soto, \"The mixture of trees factorized distribution algorithm,\" in Proc. Genetic and Evol. Comput. Conf., GECCO-2001, L. Spector, E. Goodman, A. Wu, W. Langdon, H. Voigt, M. Gen, S. Sen, M. Dorigo, S. Pezeshk, M. Garzon, and E. Burke, Eds., San Francisco, CA, 2001, pp. 543-550.\n[79] N. Lesh, M. Mitzenmacher, and S. Whitesides, \"A complete and effective move set for simplified protein folding,\" Mitsubishi Electric Res. Lab., Tech. Rep. TR-2003-03, Feb. 2003.\n[80] R. Bonneau, I. Ruczinski, J. Tsai, and D. Baker, \"Contact order and ab initio protein structure prediction,\" Protein Science, vol. 11, pp. 1937-1944, 2002.\n[81] R. Santana, P. Larrañaga, and J. A. Lozano, \"The role of a priori information in the minimization of contact potentials by means of estimation of distribution algorithms,\" in Proc. 5th Eur. Conf. Evol. Comput., Mach. Learn. Data Mining in Bioinformatics, E. Marchiori, J. H. Moore, and J. C. Rajapakse, Eds., 2007, vol. 4447, Lecture Notes in Computer Science, pp. 247-257.\n[82] R. Blanco, P. Larrañaga, I. Inza, and B. Sierra, \"Selection of highly accurate genes for cancer classification by estimation of distribution algorithms,\" in Proc. Workshop Bayesian Models in Medicine Held within AIME 2001, 2001, pp. 29-34.\n[83] Y. Saeys, S. Degroeve, D. Aeyels, Y. Van de Peer, and P. Rouzé, \"Fast feature selection using a simple estimation of distribution algorithm: A case study on splice site prediction,\" Bioinformatics, vol. 19, no. 2, pp. ii179-ii188, 2003.\n[84] Y. Saeys, S. Degroeve, D. Aeyels, P. Rouzé, and Y. Van de Peer, \"Feature selection for splice site prediction: A new method using EDAbased feature ranking,\" BMC Bioinformatics, vol. 5, pp. 64-75, 2004.\n[85] J. Peña, J. A. Lozano, and P. Larrañaga, \"Unsupervised learning of Bayesian networks via estimation of distribution algorithms: An application to gene expression data clustering,\" Int. J. Uncertainty, Fazziness and Knowledge-Based Syst., vol. 12, no. 1, pp. 63-82, 2004.\n[86] D. Baker, \"Protein structure prediction and structural genomics,\" Science, vol. 294, pp. 93-96, 2001.\n[87] B. Naudts and L. Kallel, \"A comparison of predictive measures of problem difficulty in evolutionary algorithms,\" IEEE Trans. Evol. Comput., vol. 4, no. 1, pp. 1-15, Apr. 2000.\n![img-12.jpeg](img-12.jpeg)\n\nRoberto Santana received the B.S. degree in computer science and the Ph.D. degree in mathematics from the University of Havana, Havana, Cuba, in 1996 and 2005, respectively, and the Ph.D. degree in computer science from the University of the Basque Country, Guipuzcoa, Spain, in 2006.\n\nHe is a Postdoctoral Researcher at the University of the Basque Country. His main research interests are evolutionary computation, probabilistic graphical models, and bioinformatics.\n![img-13.jpeg](img-13.jpeg)\n\nPedro Larrañaga received the M.S. degree in mathematics from the University of Valladolid, Valladolid, Spain, in 1981, and the Ph.D. degree in computer science from the University of the Basque Country, Guipuzcoa, Spain, in 1995.\n\nHe is a Professor of Computer Science and Artificial Intelligence at the Technical University of Madrid. He has published over 40 refereed journal papers. His main research interests are in the areas of evolutionary computation, machine learning, probabilistic graphical models, and bioinformatics.\n![img-14.jpeg](img-14.jpeg)\n\nJosé A. Lozano (M'04) received the B.S. degrees in mathematics and computer science and the Ph.D. degree from the University of the Basque Country, Guipuzcoa, Spain, in 1991, 1992, and 1998, respectively.\n\nSince 1999, he has been an Associate Professor of Computer Science at the University of the Basque Country. He has edited three books and has published over 25 refereed journal papers. His main research interests are evolutionary computation, machine learning, probabilistic graphical models, and bioinformatics.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "C. Levinthal, \"Are there pathways for protein folding?,\" J. Chem. Phys., vol. 65, pp. 44-45, 1968."
+      },
+      {
+        "ref_id": "2",
+        "text": "K. A. Dill, \"Theory for the folding and stability of globular proteins,\" Biochemistry, vol. 24, no. 6, pp. 1501-1509, 1985."
+      },
+      {
+        "ref_id": "3",
+        "text": "H. S. Chan and E. Bornberg-Bauer, \"Perspectives on protein evolution from simple exact models,\" Appl. Bioinformatics, vol. 1, no. 3, pp. $121-144,2002$."
+      },
+      {
+        "ref_id": "4",
+        "text": "G. Chikenji, Y. Fujitsuka, and S. Takada, \"Shaping up the protein folding funnel by local interaction: Lesson from a structure prediction study,\" in Proc. Natl. Acad. Sci. (PNAS), 2006, vol. 103, no. 9, pp. $3141-3146$."
+      },
+      {
+        "ref_id": "5",
+        "text": "A. Gupta, J. Manuch, and L. Stacho, \"Structure-approximating inverse protein folding problem in 2D HP model,\" J. Comput. Biol., vol. 12, no. 10, pp. 1328-1345, 2005."
+      },
+      {
+        "ref_id": "6",
+        "text": "H. Cejtin, J. Edler, A. Gottlieb, R. Helling, H. Li, J. Philbin, N. Wingreen, and C. Tang, \"Fast tree search for enumeration of a lattice model of protein folding,\" J. Chem. Phys., vol. 116, pp. 121-144, 2002."
+      },
+      {
+        "ref_id": "7",
+        "text": "H. Abe and H. Wako, \"Analyses of simulations of three-dimensional lattice proteins in comparison with a simplified statistical mechanical model of protein folding,\" Phys. Rev. E. Statist., Nonlinear, and Soft Matter Phys., vol. 74, p. 011913, 2006."
+      },
+      {
+        "ref_id": "8",
+        "text": "F. P. Huard, C. M. Deane, and G. R. Wood, \"Modelling sequential protein folding under kinetic control,\" Bioinformatics, vol. 22, no. 14, pp. 203-210, 2006."
+      },
+      {
+        "ref_id": "9",
+        "text": "S. C. Kou, J. Oh, and W. H. Wong, \"A study of density of states and ground states in hydrophobic-hydrophilic protein folding models by equi-energy sampling,\" J. Chem. Phys., vol. 124, pp. 244903(1-244903(11), 2006."
+      },
+      {
+        "ref_id": "10",
+        "text": "P. Crescenzi, D. Goldman, C. H. Papadimitriou, A. Piccolboni, and M. Yannakakis, \"On the complexity of protein folding,\" J. Comput. Biol., vol. 5, no. 3, pp. 423-466, 1998."
+      },
+      {
+        "ref_id": "11",
+        "text": "B. Berger and T. Leight, \"Protein folding in the hydrophobic-hydrophilic (HP) model is NP-complete,\" J. Comput. Biol., vol. 5, no. 1, pp. 27-40, 1998."
+      },
+      {
+        "ref_id": "12",
+        "text": "W. E. Hart and S. C. Istrail, \"Fast protein folding in the hydrophobichydrophilic model within three-eights of optimal,\" J. Comput. Biol., vol. 3, no. 1, pp. 53-96, 1996."
+      },
+      {
+        "ref_id": "13",
+        "text": "U. Bastolla, H. Frauenkron, E. Gerstner, P. Grassberger, and W. Nadler, \"Testing a new Monte Carlo algorithm for protein folding,\" Proteins: Structure, Function, and Genetics, vol. 32, pp. 52-66, 1998."
+      },
+      {
+        "ref_id": "14",
+        "text": "T. C. Beutler and K. A. Dill, \"A fast conformational search strategy for finding low energy structures of model proteins,\" Protein Sci., vol. 5, pp. 2037-2043, 1996."
+      },
+      {
+        "ref_id": "15",
+        "text": "R. König and T. Dandekar, \"Improving genetic algorithms for protein folding simulations by systematic crossover,\" Biosystems, vol. 50, pp. $17-25,1999$."
+      },
+      {
+        "ref_id": "16",
+        "text": "N. Krasnogor, W. E. Hart, J. Smith, and D. A. Pelta, \"Protein structure prediction with evolutionary algorithms,\" in Proc. Genetic Evol. Comput. Conf., W. Banzhaf, J. Daida, A. E. Eiben, M. H. Garzon, V. Honavar, M. Jakiela, and R. E. Smith, Eds., Orlando, Florida, USA, 1999, vol. 2, pp. 1596-1601."
+      },
+      {
+        "ref_id": "17",
+        "text": "N. Krasnogor, B. Blackburne, E. K. Burke, and J. D. Hirst, \"Multimeme algorithms for protein structure prediction,\" in Parallel Problem Solving from Nature-PPSN VII, ser. Lecture Notes in Computer Science, J. J. Merelo, P. Adamidis, H. G. Beyer, J. L. Fernandez-Villacañas, and H. P. Schwefel, Eds. Granada, Spain: Springer Verlag, 2002, vol. 2439, pp. 769-778."
+      },
+      {
+        "ref_id": "18",
+        "text": "A. Shinygelska, R. A. Hernández, and H. H. Hoos, \"An ant colony optimization algorithm for the 2D HP protein folding problem,\" in Proc. 3rd Int. Workshop on Ant Algorithms, 2002, pp. 40-53."
+      },
+      {
+        "ref_id": "19",
+        "text": "R. Unger and J. Moult, \"Genetic algorithms for protein folding simulations,\" J. Molecular Biol., vol. 231, pp. 75-81, 1993."
+      },
+      {
+        "ref_id": "20",
+        "text": "J. Blazewicz, K. Dill, P. Lukasiak, and M. Milostan, \"A tabu search strategy for finding low energy structures of proteins in HP-model,\" Comput. Methods in Sci. Technol., vol. 10, pp. 7-19, 2004."
+      },
+      {
+        "ref_id": "21",
+        "text": "C. Cotta, \"Protein structure prediction using evolutionary algorithms hybridized with backtracking,\" in Artificial Neural Nets Problem Solving Methods, ser. Lecture Notes in Computer Science, J. Mira and J. R. Alvarez, Eds. Berlin, Germany: Springer Verlag, 2003, vol. 2687, pp. 321-328."
+      },
+      {
+        "ref_id": "22",
+        "text": "V. Cutello, G. Morelli, G. Nicosia, and M. Pavone, \"Immune algorithms with aging operators for the string folding problem and the protein folding problem,\" in Proc. 5th Eur. Conf. Comput. Combinatorial Optim., EvoCop-2005, G. R. Raidl and J. Gottlieb, Eds., 2005, vol. 3448, Lecture Notes in Computer Science, pp. 80-90."
+      },
+      {
+        "ref_id": "23",
+        "text": "V. Cutello, G. Nicosia, M. Pavone, and J. Timmis, \"An immune algorithm for protein structure prediction on lattice models,\" IEEE Trans. Evol. Comput., vol. 11, no. 1, pp. 101-117, Feb. 2007."
+      },
+      {
+        "ref_id": "24",
+        "text": "M. D. T. Hoque, M. Chetty, and L. S. Dooley, \"A new guided genetic algorithm for 2d hydrophobic-hydrophilic model to predict protein folding,\" in Proc. 2005 Congr. Evol. Comput., CEC-2005, Edinburgh, U.K., 2005, pp. 259-266."
+      },
+      {
+        "ref_id": "25",
+        "text": "H.-P. Hsu, V. Mehra, W. Nadler, and P. Grassberger, \"Growth algorithms for lattice heteropolymers at low temperatures,\" J. Chem. Phys., vol. 118, no. 1, pp. 444-451, 2003."
+      },
+      {
+        "ref_id": "26",
+        "text": "D. Pelta and N. Krasnogor, \"Multimeme algorithms using fuzzy logic based memes for protein structure prediction,\" in Recent Advances in Memetic Algorithms, ser. Studies in Fuzziness and Soft Computing, W. H. William, N. Krasnogor, and J. E. Smith, Eds. New York: Springer, 2004, pp. 49-64."
+      },
+      {
+        "ref_id": "27",
+        "text": "R. Santana, P. Larrañaga, and J. A. Lozano, \"Protein folding in 2-dimensional lattices with estimation of distribution algorithms,\" in Proc. 1st Int. Symp. Biol. Medical Data Anal., 2004, vol. 3337, Lecture Notes in Computer Science, pp. 388-398."
+      },
+      {
+        "ref_id": "28",
+        "text": "A. Shinygelska and H. H. Hoos, \"An improved ant colony optimization algorithm for the 2D HP protein folding problem,\" in Advances in Artificial Intelligence, ser. Lecture Notes in Computer Science, Y. Xiang and B. Chaib-draa, Eds. Berlin, Germany: Springer-Verlag, 2003, vol. 2671, pp. 400-417."
+      },
+      {
+        "ref_id": "29",
+        "text": "J. Smith, \"The co-evolution of memetic algorithms for protein structure prediction,\" in Recent Advances in Memetic Algorithms, ser. Studies in Fuzziness and Soft Computing, W. H. William, N. Krasnogor, and J. E. Smith, Eds. New York: Springer, 2004, pp. 105-128."
+      },
+      {
+        "ref_id": "30",
+        "text": "J. Song, J. Cheng, T. T. Zheng, and J. Mao, \"A novel genetic algorithm for HP model protein folding,\" in Proc. 6th Int. Conf. Parallel Distrib. Comput., Appl. Technol. (PDCAT-2005), 2005, pp. 935-937."
+      },
+      {
+        "ref_id": "31",
+        "text": "G. W. Greenwood and J.-M. Shin, \"On the evolutionary search for solutions to the protein folding problem,\" in Evolutionary Computation in Bioinformatics, G. B. Fogel and D. W. Corne, Eds. San Mateo, CA: Morgan Kaufmann, 2002, pp. 115-136."
+      },
+      {
+        "ref_id": "32",
+        "text": "K. Ginalski, N. V. Grishin, A. Godzik, and L. Rychlewski, \"Practical lessons from protein structure prediction,\"Nucleid Acids Research, vol. 33, no. 6, pp. 1874-1891, 2005."
+      },
+      {
+        "ref_id": "33",
+        "text": "S. Duarte-Flores and J. E. Smith, \"Study of fitness landscapes for the HP model of protein structure prediction,\" in Proc. 2003 Congr. Evol. Comput., CEC-2003, R. Sarker, R. Reynolds, H. Abbass, K. C. Tan, B. McKay, D. Essam, and T. Gedeon, Eds., 2003, pp. 2338-2345, IEEE Press."
+      },
+      {
+        "ref_id": "34",
+        "text": "., P. Larrañaga and J. A. Lozano, Eds., Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Norwell, MA: Kluwer, 2002."
+      },
+      {
+        "ref_id": "35",
+        "text": "J. A. Lozano, P. Larrañaga, I. Inza, and E. Bengoetxea, Eds., Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms. Berlin, Germany: Springer-Verlag, 2006."
+      },
+      {
+        "ref_id": "36",
+        "text": "H. Mühlenbein and G. Paaß, \"From recombination of genes to the estimation of distributions I. Binary parameters,\" in Parallel Problem Solving from Nature-PPSN IV, H.-M. Voigt, W. Ebeling, I. Rechenberg, and H.-P. Schwefel, Eds. Berlin, Germany: Springer-Verlag, 1996, vol. 1141, LNCS, pp. 178-187."
+      },
+      {
+        "ref_id": "37",
+        "text": "M. Pelikan, D. E. Goldberg, and F. Lobo, \"A survey of optimization by building and using probabilistic models,\" Comput. Optim. Appl., vol. 21, no. 1, pp. 5-20, 2002."
+      },
+      {
+        "ref_id": "38",
+        "text": "V. S. Pande, A. Y. Grosberg, T. Tanaka, and D. S. Rokhsar, \"Protein folding pathways: Is a \"new view\" needed?,\" Current Opinion in Structural Biology, vol. 8, no. 1, pp. 68-79, 1998."
+      },
+      {
+        "ref_id": "39",
+        "text": "J. N. Onuchic and P. G. Wolynes, \"Theory of protein folding,\" Current Opinion in Structural Biology, vol. 14, pp. 70-75, 2004."
+      },
+      {
+        "ref_id": "40",
+        "text": "D. Baker, \"A surprising simplicity to protein folding,\" Nature, vol. 405, pp. 39-42, 2000."
+      },
+      {
+        "ref_id": "41",
+        "text": "J. E. Shea, J. N. Onuchic, and C. L. Brooks, \"Exploring the origins of topological frustration: Design of a minimally frustrated model of fragment b of protein a,\" in Proc. Natl. Acad. Sci. (PNAS), 1999, vol. 96, no. 22, pp. 12512-12517."
+      },
+      {
+        "ref_id": "42",
+        "text": "L. Kallel, B. Naudts, and R. Reeves, \"Properties of fitness functions and search landscapes,\" in Theoretical Aspects of Evolutionary Computing, L. Kallel, B. Naudts, and A. Rogers, Eds. Berlin, Germany: SpringerVerlag, 2000, pp. 177-208."
+      },
+      {
+        "ref_id": "43",
+        "text": "J. N. Onuchic, H. Nymeyer, A. E. Garcia, J. Chahine, and N. D. Socci, \"The energy landscape theory of protein folding: Insights into folding mechanisms and scenarios,\" Adv. Protein Chem., vol. 53, pp. 87-152, 2000."
+      },
+      {
+        "ref_id": "44",
+        "text": "L. L. Chavez, J. N. Onuchic, and C. Clementi, \"Quantifying the roughness on the free energy landscape: Entropic bottlenecks and protein folding rates,\" J. Amer. Chem. Soc., vol. 126, no. 27, pp. 8426-8432, 2004."
+      },
+      {
+        "ref_id": "45",
+        "text": "R. L. Dunbrack, \"Rotamer libraries in the 21st century,\" Current Opinion in Structural Biol., vol. 12, pp. 431-440, 2002."
+      },
+      {
+        "ref_id": "46",
+        "text": "G. A. Lazar, J. R. Desjarlais, and T. M. Handel, \"De novo protein design of the hydrophobic core of ubiquitin,\" Protein Science, vol. 6, pp. $1167-1178,1997$."
+      },
+      {
+        "ref_id": "47",
+        "text": "C. M. Kraemer-Pecore, A. M. Wollacott, and J. R. Desjarlais, \"Computational protein design,\" Current Opinion in Chem. Biol., vol. 5, pp. 690-695, 2001."
+      },
+      {
+        "ref_id": "48",
+        "text": "C. A. Robl, C. E. M. Strauss, K. Misura, and D. Baker, \"Protein structure prediction using Rosetta,\" Methods in Enzymology, vol. 383, pp. 66-93, 2004."
+      },
+      {
+        "ref_id": "49",
+        "text": "Y. Cui, W. H. Wong, E. Bornberg-Bauer, and H. S. Chan, \"Recombinatoric exploration of novel folded structures: A heteropolymer-based model of protein evolutionary landscapes,\" in Proc. Natl. Acad. Sci. , 2002, vol. 99, no. 2, pp. 809-814."
+      },
+      {
+        "ref_id": "50",
+        "text": "V. Cutello, G. Nicosia, and M. Pavone, \"An immune algorithm with hyper-macromutations for the Dill's 2d hydrophobic-hydrophilic model,\" in Proc. 2004 Congr. Evol. Comput., CEC-2004, Portland, OR, 2004, vol. 1, pp. 1074-1080."
+      },
+      {
+        "ref_id": "51",
+        "text": "J. D. Hirst, \"The evolutionary landscape of functional model proteins,\" Protein Eng., vol. 12, pp. 721-726, 1999."
+      },
+      {
+        "ref_id": "52",
+        "text": "N. Metropolis, A. Rosenbluth, A. Teller, and E. Teller, \"Equations of state calculations by fast computing machines,\" J. Chem. Phys., vol. 21, pp. 1087-1091, 1953."
+      },
+      {
+        "ref_id": "53",
+        "text": "M. Khimasia and P. Coveney, \"Protein structure prediction as a hard optimization problem: The genetic algorithm approach,\" Molecular Simulation, vol. 19, pp. 205-226, 1997."
+      },
+      {
+        "ref_id": "54",
+        "text": "U. H. E. Hansmann and Y. Okamoto, \"New Monte Carlo algorithms for protein folding,\" Current Opinion in Structural Biol., vol. 9, pp. 177-181, 1999."
+      },
+      {
+        "ref_id": "55",
+        "text": "S. Liang and W. H. Wong, \"Evolutionary Monte Carlo for protein folding simulation,\" J. Chem. Phys., vol. 115, pp. 3374-3380, 2001."
+      },
+      {
+        "ref_id": "56",
+        "text": "H. Frauenkron, U. Bastolla, E. Gerstner, P. Grassberger, and W. Nadler, \"New Monte Carlo algorithm for protein folding,\" Phys. Rev. Lett., vol. 80, no. 4, pp. 3149-3153, 1998."
+      },
+      {
+        "ref_id": "57",
+        "text": "H.-P. Hsu, V. Mehra, and P. Grassberger, \"Structure optimization in an off-lattice protein model,\" Phys. Rev. E, vol. 68, no. 2, p. 4, 2003."
+      },
+      {
+        "ref_id": "58",
+        "text": "P. Grassberger, \"Sequential Monte Carlo methods for protein folding,\" in Proc. NIC Symp. 2004, D. Wolf, G. Münster, and M. Kremer, Eds., 2004, vol. 20, John von Neumann-Institut für Computing (NIC), pp. $1-10$."
+      },
+      {
+        "ref_id": "59",
+        "text": "C. A. Voigt, D. B. Gordon, and S. L. Mayo, \"Trading accuracy for speed: A quantitative comparison of search algorithms in protein sequence design,\" J. Molecular Biol., vol. 299, no. 3, pp. 799-803, 2000."
+      },
+      {
+        "ref_id": "60",
+        "text": "P. Larrañaga, B. Calvo, R. Santana, C. Bielza, J. Galdiano, I. Inza, J. A. Lozano, R. Armañanzas, G. Santafé, A. Pérez, and V. Robles, \"Machine learning in bioinformatics,\" Briefings in Bioinformatics, vol. 7, pp. 86-112, 2006."
+      },
+      {
+        "ref_id": "61",
+        "text": "R. Santana, P. Larrañaga, and J. A. Lozano, \"Side chain placement using estimation of distribution algorithms,\" Artif. Intell. Med. vol. 39, no. 1, pp. 49-63, 2007. [Online]. Available: http://www.sciencedirect.com/science/article/B6T4K-4KF785F-1/2/ d65e9d9d9552eO1ssc57d7\\&a349a4\\&"
+      },
+      {
+        "ref_id": "62",
+        "text": "R. Santana, P. Larrañaga, and J. A. Lozano, \"Combining variable neighborhood search and estimation of distribution algorithms in the protein side chain placement problem,\" J. Heuristics, 2007, accepted for publication."
+      },
+      {
+        "ref_id": "63",
+        "text": "A. Schug and W. Wenzel, \"An evolutionary strategy for all-atom folding on the 60 -amino-acid bacterial ribosomal protein L20,\" Biophys. J., vol. 9, pp. 4273-4280, 2006."
+      },
+      {
+        "ref_id": "64",
+        "text": "J. T. Pedersen and J. Moult, \"Protein folding simulation with genetic algorithms and a detailed molecular description,\" J. Molecular Biol., vol. 269, pp. 240-259, 1997."
+      },
+      {
+        "ref_id": "65",
+        "text": "S. Bahuja and S. Davies, \"Using optimal dependency-trees for combinatorial optimization: Learning the structure of the search space,\" in Proc. 14th Int. Conf. Mach. Learning, 1997, pp. 30-38."
+      },
+      {
+        "ref_id": "66",
+        "text": "H. Mühlenbein, T. Mahnig, and A. Ochoa, \"Schemata, distributions and graphical models in evolutionary optimization,\" J. Heuristics, vol. 5, no. 2, pp. 213-247, 1999."
+      },
+      {
+        "ref_id": "67",
+        "text": "P. Larrañaga, \"An introduction to probabilistic graphical models,\" in Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Norwell, MA: Kluwer, 2002, pp. 25-54."
+      },
+      {
+        "ref_id": "68",
+        "text": "S. Bahuja, \"Population-based incremental learning: A method for integrating genetic search based function optimization and competitive learning,\" Carnegie Mellon Univ., Pittsburgh, PA, Tech. Rep. CMU-CS-94-163, 1994."
+      },
+      {
+        "ref_id": "69",
+        "text": "G. R. Harik, F. G. Lobo, and D. E. Goldberg, \"The compact genetic algorithm,\" IEEE Trans. Evol. Comput., vol. 3, no. 4, pp. 287-297, Nov. 1999."
+      },
+      {
+        "ref_id": "70",
+        "text": "J. S. De Bonet, C. L. Isbell, and P. Viola, \"MIMIC: Finding optima by estimating probability densities,\" in Adv. Neural Inf. Process. Syst., M. C. Mozer, M. I. Jordan, and T. Petsche, Eds. Cambridge, MA: MIT Press, 1997, vol. 9, pp. 424-430."
+      },
+      {
+        "ref_id": "71",
+        "text": "G. Harik, \"Linkage learning via probabilistic modeling in the EcGA,\" Univ. Illinois at Urbana-Champaign, Illinois Genetic Algorithms Lab., Urbana, IL, IlliGAL Rep. 99010, 1999."
+      },
+      {
+        "ref_id": "72",
+        "text": "R. Etxeberria and P. Larrañaga, \"Global optimization using Bayesian networks,\" in Proc. 2nd Symp. Artif. Intell. (CIMAF-99), A. Ochoa, M. R. Soto, and R. Santana, Eds., Habana, Cuba, 1999, pp. 151-173."
+      },
+      {
+        "ref_id": "73",
+        "text": "M. Pelikan, D. E. Goldberg, and E. Cantii-Paz, \"BOA: The Bayesian optimization algorithm,\" in Proc. Genetic and Evol. Comput. Conf., GECCO-1999, W. Banzhaf, J. Daida, A. E. Eiben, M. H. Garzon, V. Honavar, M. Jakiela, and R. E. Smith, Eds., Orlando, FL, 1999, pp. $525-532$."
+      },
+      {
+        "ref_id": "74",
+        "text": "H. Mühlenbein and T. Mahnig, \"Evolutionary synthesis of Bayesian networks for optimization,\" in Advances in Evolutionary Synthesis of Intelligent Agents, M. Patel, V. Honavar, and K. Balakrishnan, Eds. Cambridge, MA: MIT Press, 2001, pp. 429-455."
+      },
+      {
+        "ref_id": "75",
+        "text": "C. K. Chow and C. N. Liu, \"Approximating discrete probability distributions with dependence trees,\" IEEE Trans. Inf. Theory, vol. 14, no. 3, pp. 462-467, May 1968."
+      },
+      {
+        "ref_id": "76",
+        "text": "M. Henrion, \"Propagating uncertainty in Bayesian networks by probabilistic logic sampling,\" in Proc. 2nd Ann. Conf. Uncertainty in Artif. Intell., J. F. Lemmer and L. N. Kanal, Eds., 1988, pp. 149-164."
+      },
+      {
+        "ref_id": "77",
+        "text": "M. Meila, \"Learning mixtures of trees,\" Ph.D. dissertation, Massachusetts Institute of Technology, Cambridge, MA, 1999."
+      },
+      {
+        "ref_id": "78",
+        "text": "R. Santana, A. Ochoa, and M. R. Soto, \"The mixture of trees factorized distribution algorithm,\" in Proc. Genetic and Evol. Comput. Conf., GECCO-2001, L. Spector, E. Goodman, A. Wu, W. Langdon, H. Voigt, M. Gen, S. Sen, M. Dorigo, S. Pezeshk, M. Garzon, and E. Burke, Eds., San Francisco, CA, 2001, pp. 543-550."
+      },
+      {
+        "ref_id": "79",
+        "text": "N. Lesh, M. Mitzenmacher, and S. Whitesides, \"A complete and effective move set for simplified protein folding,\" Mitsubishi Electric Res. Lab., Tech. Rep. TR-2003-03, Feb. 2003."
+      },
+      {
+        "ref_id": "80",
+        "text": "R. Bonneau, I. Ruczinski, J. Tsai, and D. Baker, \"Contact order and ab initio protein structure prediction,\" Protein Science, vol. 11, pp. 1937-1944, 2002."
+      },
+      {
+        "ref_id": "81",
+        "text": "R. Santana, P. Larrañaga, and J. A. Lozano, \"The role of a priori information in the minimization of contact potentials by means of estimation of distribution algorithms,\" in Proc. 5th Eur. Conf. Evol. Comput., Mach. Learn. Data Mining in Bioinformatics, E. Marchiori, J. H. Moore, and J. C. Rajapakse, Eds., 2007, vol. 4447, Lecture Notes in Computer Science, pp. 247-257."
+      },
+      {
+        "ref_id": "82",
+        "text": "R. Blanco, P. Larrañaga, I. Inza, and B. Sierra, \"Selection of highly accurate genes for cancer classification by estimation of distribution algorithms,\" in Proc. Workshop Bayesian Models in Medicine Held within AIME 2001, 2001, pp. 29-34."
+      },
+      {
+        "ref_id": "83",
+        "text": "Y. Saeys, S. Degroeve, D. Aeyels, Y. Van de Peer, and P. Rouzé, \"Fast feature selection using a simple estimation of distribution algorithm: A case study on splice site prediction,\" Bioinformatics, vol. 19, no. 2, pp. ii179-ii188, 2003."
+      },
+      {
+        "ref_id": "84",
+        "text": "Y. Saeys, S. Degroeve, D. Aeyels, P. Rouzé, and Y. Van de Peer, \"Feature selection for splice site prediction: A new method using EDAbased feature ranking,\" BMC Bioinformatics, vol. 5, pp. 64-75, 2004."
+      },
+      {
+        "ref_id": "85",
+        "text": "J. Peña, J. A. Lozano, and P. Larrañaga, \"Unsupervised learning of Bayesian networks via estimation of distribution algorithms: An application to gene expression data clustering,\" Int. J. Uncertainty, Fazziness and Knowledge-Based Syst., vol. 12, no. 1, pp. 63-82, 2004."
+      },
+      {
+        "ref_id": "86",
+        "text": "D. Baker, \"Protein structure prediction and structural genomics,\" Science, vol. 294, pp. 93-96, 2001."
+      },
+      {
+        "ref_id": "87",
+        "text": "B. Naudts and L. Kallel, \"A comparison of predictive measures of problem difficulty in evolutionary algorithms,\" IEEE Trans. Evol. Comput., vol. 4, no. 1, pp. 1-15, Apr. 2000."
+      }
+    ],
+    "reference_count": 87,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "The DENSITY of the Different ENERGY LEVELS $H P_{f}$ and $F P_{f}$ CORRESPONDING TO the HP and Functional Model Protein of Sequence HHH P P P P P H",
+      "headers": [
+        "HHHPHPPPPPH",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$H(\\mathbf{x})$",
+          "$-4$",
+          "$-3$",
+          "$-2$",
+          "$-1$",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          "invalid",
+          "total"
+        ],
+        [
+          "$H P_{f}$",
+          0,
+          0,
+          16,
+          1428,
+          9581,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8658,
+          19683
+        ],
+        [
+          "$F P_{f}$",
+          2,
+          0,
+          426,
+          490,
+          3407,
+          3376,
+          2020,
+          912,
+          350,
+          42,
+          8658,
+          19683
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 13
+    },
+    {
+      "table_number": "II",
+      "table_title": "Marginal Probability Distributions for $\\left(X_{3}, X_{4}, X_{5}\\right)$ CALCULATED From the Boltzmann Distributions for HP and the Functional Model Protein for Sequence HHHPPPPPPH",
+      "headers": [
+        "",
+        "$p_{H P}\\left(x_{3}, x_{4}, x_{5}\\right)$",
+        "",
+        "",
+        "$p_{F P}\\left(x_{3}, x_{4}, x_{5}\\right)$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Seq",
+          "$0--$",
+          "$1--$",
+          "$2--$",
+          "$0--$",
+          "$1--$",
+          "$2--$"
+        ],
+        [
+          "$-00$",
+          0.0,
+          0.057,
+          0.069,
+          0.0,
+          0.091,
+          0.151
+        ],
+        [
+          "$-01$",
+          0.035,
+          0.036,
+          0.038,
+          0.009,
+          0.029,
+          0.033
+        ],
+        [
+          "$-02$",
+          0.035,
+          0.036,
+          0.035,
+          0.009,
+          0.029,
+          0.026
+        ],
+        [
+          "$-10$",
+          0.029,
+          0.034,
+          0.035,
+          0.021,
+          0.026,
+          0.027
+        ],
+        [
+          "$-11$",
+          0.038,
+          0.04,
+          0.038,
+          0.033,
+          0.034,
+          0.033
+        ],
+        [
+          "$-12$",
+          0.035,
+          0.034,
+          0.029,
+          0.027,
+          0.025,
+          0.021
+        ],
+        [
+          "$-20$",
+          0.035,
+          0.036,
+          0.035,
+          0.026,
+          0.026,
+          0.009
+        ],
+        [
+          "$-21$",
+          0.038,
+          0.036,
+          0.035,
+          0.034,
+          0.03,
+          0.009
+        ],
+        [
+          "$-22$",
+          0.069,
+          0.057,
+          0.0,
+          0.151,
+          0.091,
+          0.0
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 7
+    },
+    {
+      "table_number": "III",
+      "table_title": "Univariate APPROXIMATION OF THE Marginal Probability of $\\left(X_{3}, X_{4}, X_{5}\\right)$ Calculated From the Boltzmann Distributions for HP and Functional Model Protein for Sequence HHHPHPPPPPH",
+      "headers": [
+        "",
+        "$p_{H P}\\left(x_{3}, x_{4}, x_{5}\\right)$",
+        "",
+        "",
+        "$p_{F P}\\left(x_{3}, x_{4}, x_{5}\\right)$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Seq",
+          "$0--$",
+          "$1--$",
+          "$2--$",
+          "$0--$",
+          "$1--$",
+          "$2--$"
+        ],
+        [
+          "$-00$",
+          0.036,
+          0.042,
+          0.036,
+          0.044,
+          0.029,
+          0.044
+        ],
+        [
+          "$-01$",
+          0.036,
+          "$\\underline{0.042}$",
+          0.036,
+          0.029,
+          0.019,
+          0.029
+        ],
+        [
+          "$-02$",
+          0.036,
+          0.042,
+          0.036,
+          0.044,
+          0.029,
+          0.044
+        ],
+        [
+          "$-10$",
+          0.033,
+          0.038,
+          0.033,
+          "$\\underline{0.054}$",
+          0.035,
+          "$\\underline{0.054}$"
+        ],
+        [
+          "$-11$",
+          0.033,
+          0.039,
+          0.033,
+          0.035,
+          0.023,
+          0.035
+        ],
+        [
+          "$-12$",
+          0.033,
+          0.038,
+          0.033,
+          "$\\underline{0.054}$",
+          0.035,
+          "$\\underline{0.054}$"
+        ],
+        [
+          "$-20$",
+          0.036,
+          0.042,
+          0.036,
+          0.044,
+          0.029,
+          0.044
+        ],
+        [
+          "$-21$",
+          0.036,
+          "$\\underline{0.042}$",
+          0.036,
+          0.029,
+          0.019,
+          0.029
+        ],
+        [
+          "$-22$",
+          0.036,
+          0.042,
+          0.036,
+          0.029,
+          0.029,
+          0.044
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 7
+    },
+    {
+      "table_number": "IV",
+      "table_title": "HP Instances Used in the Experiments. The Search Space of Each InSTANCE is $2^{n}$, WHERE $n$ IS THE SIZE OF THE INSTANCE",
+      "headers": [
+        "inst.",
+        "size",
+        "$H\\left(\\mathbf{x}^{s}\\right)$",
+        "sequence"
+      ],
+      "rows": [
+        [
+          "$s 1$",
+          20,
+          "$-9$",
+          "НРНРРННРННРНРННРРНРН"
+        ],
+        [
+          "$s 2$",
+          24,
+          "$-9$",
+          "ННРРНРРНРРНРРНРРНРРНРРНН"
+        ],
+        [
+          "$s 3$",
+          25,
+          "$-8$",
+          "РРНРРННР ${ }^{4}$ ННР ${ }^{4}$ ННР ${ }^{4}$ НН"
+        ],
+        [
+          "$s 4$",
+          36,
+          "$-14$",
+          "$P^{5}$ ННРРННР ${ }^{5} H^{7}$ РРННР ${ }^{4}$ ННРРНРР"
+        ],
+        [
+          "$s 5$",
+          48,
+          "$-23$",
+          "РРНРРННРРННР ${ }^{5} H^{10} P^{6}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "ННРРННРРНРРН ${ }^{5}$"
+        ],
+        [
+          "$s 6$",
+          50,
+          "$-21$",
+          "ННРНРНРНРН ${ }^{4} P H P^{5} H P^{5} H P^{4}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "$H P^{5} H P^{5} H P H^{4}(P H)^{4} H$"
+        ],
+        [
+          "$s 7$",
+          60,
+          "$-36$",
+          "РРН ${ }^{5} P H^{8} P^{3} H^{10} P H P^{3}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "$H^{12} P^{4} H^{6} P H H P H P$"
+        ],
+        [
+          "$s 8$",
+          64,
+          "$-42$",
+          "$H^{12} P H P H(P P H H)^{2} P P H(P P H H)^{2}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "РРН $\\left(\\right.$ РРНН $\\left)^{2}\\right.$ РРНРНРН $\\left.^{12}\\right.$"
+        ],
+        [
+          "$s 9$",
+          85,
+          "$-53$",
+          "$H^{4} P^{4} H^{12} P^{6} H^{12} P^{3} H^{12} P^{3}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "$H^{12} P^{3} H P^{2} H^{2} P^{2} H^{2} P^{2} H P H$"
+        ],
+        [
+          "$s 10$",
+          100,
+          "$-48$",
+          "$P^{6} H P H^{2} P^{5} H^{3} P H^{5} P H^{2} P^{4} H^{2}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "$P^{2} H^{2} P H^{5} P H^{10} P H^{2} P H^{7}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "$P^{11} H^{7} P^{2} H P H^{3} P^{6} H P H$"
+        ],
+        [
+          "$s 11$",
+          100,
+          "$-50$",
+          "$P^{3} H^{2} P^{2} H^{4} P^{2} H^{3} P H^{2} P H^{2} P H^{4}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "$P^{8} H^{6} P^{2} H^{6} P^{8} H P H^{2} P H^{11} P^{2}$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "$H^{3} P H^{2} P H P^{2} H P H^{3} P^{6} H^{3}$"
+        ]
+      ],
+      "row_count": 20,
+      "column_count": 4
+    },
+    {
+      "table_number": "V",
+      "table_title": "Functional Model Protein Instances",
+      "headers": [
+        "inst.",
+        "$H(\\mathbf{x})$",
+        "sequence"
+      ],
+      "rows": [
+        [
+          "$s f 1$",
+          "$-20$",
+          "РНРРНРРНННРРРНРРНРРНРНН"
+        ],
+        [
+          "$s f 2$",
+          "$-17$",
+          "РНРРНРРННННРРРРНРРНРРН"
+        ],
+        [
+          "$s f 3$",
+          "$-16$",
+          "НРНРНРННРРРНРРРНРРНРРНН"
+        ],
+        [
+          "$s f 4$",
+          "$-20$",
+          "НННРНННРРННРРРРНРРНННН"
+        ],
+        [
+          "$s f 5$",
+          "$-17$",
+          "РНРРРРРРНРННРНРННННРНРН"
+        ],
+        [
+          "$s f 6$",
+          "$-13$",
+          "ННРНРРНРРРРРРРРРННН"
+        ],
+        [
+          "$s f 7$",
+          "$-26$",
+          "РНРННРНННННРРНННРННННН"
+        ],
+        [
+          "$s f 8$",
+          "$-16$",
+          "НРНРРРНННРРРРРРРНРНРННН"
+        ],
+        [
+          "$s f 9$",
+          "$-15$",
+          "РНРННРННРННРНРНРНРРРРРРН"
+        ],
+        [
+          "$s f 10$",
+          "$-14$",
+          "НРНРНРРРРРННРРРНРНРНРННН"
+        ],
+        [
+          "$s f 11$",
+          "$-15$",
+          "РНРРНННРНРРНРННРНРРРРРН"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 3
+    },
+    {
+      "table_number": "VII",
+      "table_title": "Statistical Information Extracted From $k$-Order Markov",
+      "headers": [
+        "$k$",
+        "$p\\left(\\mathbf{x}_{\\text {opt }}\\right)$",
+        "$\\max (p(\\mathbf{x}))$",
+        "$\\operatorname{mean}(p(\\mathbf{x}))$",
+        "$\\min (p(\\mathbf{x}))$",
+        "$N\\left(p(\\mathbf{x})>p\\left(\\mathbf{x}_{\\text {opt }}\\right)\\right)$"
+      ],
+      "rows": [
+        [
+          0,
+          "$9.6546 \\mathrm{e}^{-27}$",
+          "$2.0721 \\mathrm{e}^{-20}$",
+          "$1.2853 \\mathrm{e}^{-22}$",
+          "$2.9364 \\mathrm{e}^{-36}$",
+          952
+        ],
+        [
+          1,
+          "$6.8792 \\mathrm{e}^{-23}$",
+          "$2.1155 \\mathrm{e}^{-11}$",
+          "$9.8979 \\mathrm{e}^{-14}$",
+          "$9.0532 \\mathrm{e}^{-37}$",
+          4952
+        ],
+        [
+          2,
+          0,
+          "$1.7751 \\mathrm{e}^{-06}$",
+          "$4.0864 \\mathrm{e}^{-09}$",
+          "$1.9233 \\mathrm{e}^{-30}$",
+          5375
+        ],
+        [
+          3,
+          0,
+          "$1.4889 \\mathrm{e}^{-05}$",
+          "$4.4991 \\mathrm{e}^{-08}$",
+          "$1.9347 \\mathrm{e}^{-27}$",
+          5375
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "Results Achieved by Different Search Heuristics FOR THE HP InSTANCES",
+      "headers": [
+        "",
+        "BestEDA",
+        "GA",
+        "MMA",
+        "ACO",
+        "NewACO",
+        "PERM"
+      ],
+      "rows": [
+        [
+          "inst.",
+          "$H(\\mathbf{x})$",
+          "$H(\\mathbf{x})$",
+          "$H(\\mathbf{x})$",
+          "$H(\\mathbf{x})$",
+          "$H(\\mathbf{x})$",
+          "$H(\\mathbf{x})$"
+        ],
+        [
+          "$s 1$",
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$"
+        ],
+        [
+          "$s 2$",
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$",
+          "$-9$"
+        ],
+        [
+          "$s 3$",
+          "$-8$",
+          "$-8$",
+          "$-8$",
+          "$-8$",
+          "$-8$",
+          "$-8$"
+        ],
+        [
+          "$s 4$",
+          "$-14$",
+          "$-14$",
+          "$-14$",
+          "$-14$",
+          "$-14$",
+          "$-14$"
+        ],
+        [
+          "$s 5$",
+          "$-23$",
+          "$-22$",
+          "$-22$",
+          "$-23$",
+          "$-23$",
+          "$-23$"
+        ],
+        [
+          "$s 6$",
+          "$-21$",
+          "$-21$",
+          "",
+          "$-21$",
+          "$-21$",
+          "$-21$"
+        ],
+        [
+          "$s 7$",
+          "$-35$",
+          "$-34$",
+          "",
+          "$-34$",
+          "$-36$",
+          "$-36$"
+        ],
+        [
+          "$s 8$",
+          "$-42$",
+          "$-37$",
+          "",
+          "$-32$",
+          "$-42$",
+          "$-38$"
+        ],
+        [
+          "$s 9$",
+          "$-52$",
+          "",
+          "",
+          "",
+          "$-51$",
+          "$-53$"
+        ],
+        [
+          "$s 10$",
+          "$-47$",
+          "",
+          "",
+          "",
+          "$-47$",
+          "$-48$"
+        ],
+        [
+          "$s 11$",
+          "$-48$",
+          "",
+          "",
+          "",
+          "$-47$",
+          "$-50$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 7
+    },
+    {
+      "table_number": "IX",
+      "table_title": "Results of the EDAs, the Hybrid GA, and the IA in the Three-Dimensional Lattice",
+      "headers": [
+        "",
+        "hybrid GA",
+        "",
+        "IA",
+        "",
+        "MK-EDA $_{2}$",
+        "",
+        "TreeEDA",
+        "",
+        "MT-EDA $_{4}$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$H(\\mathbf{x})$",
+          "mean $\\pm \\sigma$",
+          "$H(\\mathbf{x})$",
+          "mean $\\pm \\sigma$",
+          "$H(\\mathbf{x})$",
+          "mean $\\pm \\sigma$",
+          "$H(\\mathbf{x})$",
+          "mean $\\pm \\sigma$",
+          "$H(\\mathbf{x})$",
+          "mean $\\pm \\sigma$"
+        ],
+        [
+          "$s 1$",
+          "$-11$",
+          "$-9.84 \\pm 0.86$",
+          "$-11$",
+          "$-10.90 \\pm 0.32$",
+          "$-11$",
+          "$-11.00 \\pm 0.00$",
+          "$-11$",
+          "$-11.00 \\pm 0.00$",
+          "$-11$",
+          "$-11.00 \\pm 0.00$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$-11$",
+          "$-11.00 \\pm 0.00$",
+          "$-11$",
+          "$-10.96 \\pm 0.04$",
+          "$-11$",
+          "$-11.00 \\pm 0.00$"
+        ],
+        [
+          "$s 2$",
+          "$-11$",
+          "$-10.00 \\pm 0.87$",
+          "$-13$",
+          "$-12.22 \\pm 0.65$",
+          "$-13$",
+          "$-12.94 \\pm 0.09$",
+          "$-13$",
+          "$-12.86 \\pm 0.16$",
+          "$-13$",
+          "$-12.70 \\pm 0.50$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$-13$",
+          "$-13.00 \\pm 0.00$",
+          "$-13$",
+          "$-12.96 \\pm 0.04$",
+          "$-13$",
+          "$-13.00 \\pm 0.00$"
+        ],
+        [
+          "$s 3$",
+          "$-9$",
+          "$-8.64 \\pm 0.69$",
+          "$-9$",
+          "$-8.88 \\pm 0.48$",
+          "$-9$",
+          "$-8.94 \\pm 0.06$",
+          "$-9$",
+          "$-8.90 \\pm 0.09$",
+          "$-9$",
+          "$-8.98 \\pm 0.02$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$-9$",
+          "$-8.96 \\pm 0.04$",
+          "$-9$",
+          "$-8.98 \\pm 0.02$",
+          "$-9$",
+          "$-8.98 \\pm 0.02$"
+        ],
+        [
+          "$s 4$",
+          "$-18$",
+          "$-13.72 \\pm 1.41$",
+          "$-18$",
+          "$-16.08 \\pm 1.02$",
+          "$-18$",
+          "$-15.66 \\pm 1.54$",
+          "$-18$",
+          "$-16.34 \\pm 0.51$",
+          "$-18$",
+          "$-16.32 \\pm 0.10$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$-18$",
+          "$-15.48 \\pm 0.83$",
+          "$-17$",
+          "$-15.00 \\pm 0.86$",
+          "$-18$",
+          "$-15.02 \\pm 0.88$"
+        ],
+        [
+          "$s 5$",
+          "$-28$",
+          "$-18.90 \\pm 2.08$",
+          "$-28$",
+          "$-24.82 \\pm 0.71$",
+          "$-22$",
+          "$-19.66 \\pm 1.37$",
+          "$-27$",
+          "$-23.62 \\pm 1.83$",
+          "$-23$",
+          "$-18.44 \\pm 1.60$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$-24$",
+          "$-20.52 \\pm 1.15$",
+          "$-24$",
+          "$-20.68 \\pm 1.65$",
+          "$-24$",
+          "$-20.22 \\pm 2.30$"
+        ],
+        [
+          "$s 6$",
+          "$-22$",
+          "$-19.06 \\pm 1.46$",
+          "$-23$",
+          "$-22.08 \\pm 1.43$",
+          "$-30$",
+          "$-26.30 \\pm 2.26$",
+          "$-30$",
+          "$-26.00 \\pm 2.82$",
+          "$-28$",
+          "$-26.70 \\pm 1.97$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$-26$",
+          "$-23.38 \\pm 1.30$",
+          "$-26$",
+          "$-22.08 \\pm 2.48$",
+          "$-24$",
+          "$-22.54 \\pm 1.27$"
+        ],
+        [
+          "$s 7$",
+          "$-38$",
+          "$-32.28 \\pm 3.09$",
+          "$-41$",
+          "$-39.02 \\pm 0.50$",
+          "$-37$",
+          "$-32.66 \\pm 3.13$",
+          "$-37$",
+          "$-32.94 \\pm 1.53$",
+          "$-35$",
+          "$-31.72 \\pm 2.98$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$-38$",
+          "$-33.84 \\pm 2.91$",
+          "$-38$",
+          "$-33.10 \\pm 3.11$",
+          "$-38$",
+          "$-32.46 \\pm 3.03$"
+        ],
+        [
+          "$s 8$",
+          "$-36$",
+          "$-30.84 \\pm 2.55$",
+          "$-42$",
+          "$-39.07 \\pm 1.20$",
+          "$-42$",
+          "$-36.66 \\pm 4.02$",
+          "$-44$",
+          "$-34.70 \\pm 6.87$",
+          "$-37$",
+          "$-32.24 \\pm 2.47$"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "$-40$",
+          "$-34.66 \\pm 2.60$",
+          "$-34$",
+          "$-30.82 \\pm 2.97$",
+          "$-37$",
+          "$-30.96 \\pm 2.47$"
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 11
+    },
+    {
+      "table_number": "X",
+      "table_title": "Results of the EDAs and the Hybrid GA in the Three-Dimensional Lattice",
+      "headers": [
+        "",
+        "hybrid GA",
+        "",
+        "MK-EDA $_{2}$",
+        "",
+        "Tree-EDA",
+        "",
+        "MT-EDA $_{4}$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$H(\\mathbf{x})$",
+          "mean $\\pm \\sigma$",
+          "$H(\\mathbf{x})$",
+          "mean $\\pm \\sigma$",
+          "$H(\\mathbf{x})$",
+          "mean $\\pm \\sigma$",
+          "$H(\\mathbf{x})$",
+          "mean $\\pm \\sigma$"
+        ],
+        [
+          "$s 1$",
+          "$-11$",
+          "$-10.52 \\pm 0.54$",
+          "$-11$",
+          "$-10.82 \\pm 0.38$",
+          "$-11$",
+          "$-10.68 \\pm 0.51$",
+          "$-11$",
+          "$-10.84 \\pm 0.37$"
+        ],
+        [
+          "$s 2$",
+          "$-13$",
+          "$-11.28 \\pm 0.90$",
+          "$-13$",
+          "$-12.02 \\pm 0.94$",
+          "$-13$",
+          "$-11.30 \\pm 0.85$",
+          "$-13$",
+          "$-11.88 \\pm 0.93$"
+        ],
+        [
+          "$s 3$",
+          "$-9$",
+          "$-8.54 \\pm 0.64$",
+          "$-9$",
+          "$-8.96 \\pm 0.19$",
+          "$-9$",
+          "$-8.92 \\pm 0.27$",
+          "$-9$",
+          "$-9.00 \\pm 0.00$"
+        ],
+        [
+          "$s 4$",
+          "$-18$",
+          "$-15.76 \\pm 1.05$",
+          "$-18$",
+          "$-16.40 \\pm 0.80$",
+          "$-18$",
+          "$-16.24 \\pm 0.83$",
+          "$-18$",
+          "$-16.50 \\pm 0.96$"
+        ],
+        [
+          "$s 5$",
+          "$-28$",
+          "$-24.60 \\pm 1.57$",
+          "$-29$",
+          "$-27.24 \\pm 0.92$",
+          "$-29$",
+          "$-26.88 \\pm 0.93$",
+          "$-29$",
+          "$-27.06 \\pm 1.08$"
+        ],
+        [
+          "$s 6$",
+          "$-26$",
+          "$-23.02 \\pm 1.48$",
+          "$-29$",
+          "$-25.70 \\pm 1.26$",
+          "$-31$",
+          "$-25.94 \\pm 1.58$",
+          "$-28$",
+          "$-25.74 \\pm 1.22$"
+        ],
+        [
+          "$s 7$",
+          "$-49$",
+          "$-41.18 \\pm 2.75$",
+          "$-49$",
+          "$-46.30 \\pm 2.04$",
+          "$-49$",
+          "$-43.78 \\pm 3.10$",
+          "$-48$",
+          "$-42.00 \\pm 6.76$"
+        ],
+        [
+          "$s 8$",
+          "$-46$",
+          "$-40.40 \\pm 2.50$",
+          "$-52$",
+          "$-46.78 \\pm 2.28$",
+          "$-49$",
+          "$-43.72 \\pm 2.43$",
+          "$-50$",
+          "$-45.64 \\pm 2.03$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 9
+    },
+    {
+      "table_number": "XI",
+      "table_title": "Results of the EDAs and the IA for the Functional Model Protem in the Two-Dimensional Lattice. $S$ : Percentage of Times the Best Solution Has Been Found, $\\bar{g}$ : Average Number of Fitness Evaluations Needed to Find the Optimum",
+      "headers": [
+        "",
+        "IA Elitism Aging",
+        "",
+        "IA Pure Aging",
+        "",
+        "IA Memory Cell",
+        "",
+        "$\\mathrm{MK}-\\mathrm{EDA}_{2}$",
+        "",
+        "Tree-EDA",
+        "",
+        "MT-EDA $_{4}$",
+        ""
+      ],
+      "rows": [
+        [
+          "inst.",
+          "$S$",
+          "f",
+          "$S$",
+          "f",
+          "$S$",
+          "f",
+          "$S$",
+          "f",
+          "$S$",
+          "f",
+          "$S$",
+          "f"
+        ],
+        [
+          "$s f 1$",
+          100,
+          45563,
+          100,
+          32647.73,
+          100,
+          38586.63,
+          100,
+          25799.3,
+          100,
+          29841.2,
+          100,
+          86111.8
+        ],
+        [
+          "$s f 2$",
+          100,
+          40389.47,
+          100,
+          17526.73,
+          100,
+          28434.9,
+          100,
+          20593.1,
+          100,
+          22023.5,
+          100,
+          50699.4
+        ],
+        [
+          "$s f 3$",
+          3.33,
+          1194332,
+          56.67,
+          2403985.3,
+          43.33,
+          2583300.8,
+          100,
+          140802,
+          100,
+          997618,
+          100,
+          835909
+        ],
+        [
+          "$s f 4$",
+          100,
+          168227.83,
+          100,
+          128015.1,
+          100,
+          130849,
+          100,
+          108118,
+          100,
+          371789,
+          100,
+          795390
+        ],
+        [
+          "$s f 5$",
+          100,
+          17667.9,
+          100,
+          12095.33,
+          100,
+          20834.46,
+          100,
+          242947,
+          100,
+          55772.6,
+          100,
+          197156
+        ],
+        [
+          "$s f 6$",
+          83.33,
+          2732830,
+          100,
+          332938.5,
+          100,
+          483126.76,
+          100,
+          197156,
+          100,
+          61577.6,
+          100,
+          197156
+        ],
+        [
+          "$s f 7$",
+          40,
+          127829.83,
+          100,
+          584179.8,
+          46.67,
+          588057.5,
+          86.67,
+          3566200,
+          63.33,
+          4277590,
+          80,
+          3433060
+        ],
+        [
+          "$s f 8$",
+          100,
+          149415.4,
+          100,
+          38262.6,
+          100,
+          42562.53,
+          100,
+          1373380,
+          100,
+          147938,
+          100,
+          901361
+        ],
+        [
+          "$s f 9$",
+          10,
+          377108,
+          100,
+          281720.8,
+          93.33,
+          907962.4,
+          70,
+          3418170,
+          100,
+          2136650,
+          100,
+          155722
+        ],
+        [
+          "$s f 10$",
+          100,
+          587811,
+          100,
+          104155.4,
+          100,
+          100085.43,
+          100,
+          518495,
+          100,
+          57652.1,
+          100,
+          159415
+        ],
+        [
+          "$s f 11$",
+          93.33,
+          174583.82,
+          100,
+          27743.7,
+          100,
+          71903.1,
+          100,
+          14621.7,
+          100,
+          11927.1,
+          100,
+          37708.8
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 13
+    }
+  ]
+}

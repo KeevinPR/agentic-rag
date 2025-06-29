@@ -1,0 +1,530 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2007/Adaptive estimated maximum-entropy distribution model.md",
+    "filename": "Adaptive estimated maximum-entropy distribution model.md",
+    "title": "Adaptive estimated maximum-entropy distribution model",
+    "year": "2007"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The adaptive functions notation",
+      "headers": [
+        "Notation",
+        "Description"
+      ],
+      "rows": [
+        [
+          "$f_{\\text {max }}$",
+          "Maximum scaled fitness value"
+        ],
+        [
+          "$f_{\\text {min }}$",
+          "Minimum scaled fitness value"
+        ],
+        [
+          "$f_{t}$",
+          "Average fitness at generation $t$"
+        ],
+        [
+          "$f_{s}, t$",
+          "Average fitness of selected population at generation $t$"
+        ],
+        [
+          "$f_{\\text {max }}^{\\prime}$",
+          "Maximum scaled fitness in selected population at generation $t$"
+        ],
+        [
+          "$f_{\\text {min }}^{\\prime}$",
+          "Minimum scaled fitness in selected population at generation $t$"
+        ],
+        [
+          "$p_{z}$",
+          "Threshold weight of constraints"
+        ],
+        [
+          "$p_{\\eta}$",
+          "Threshold weight of selected population"
+        ],
+        [
+          "$p_{z \\text { max }}$",
+          "Maximum threshold value of $p_{z}$"
+        ],
+        [
+          "$p_{z \\text { min }}$",
+          "Minimum threshold value of $p_{z}$"
+        ],
+        [
+          "$p_{\\eta \\text { max }}$",
+          "Maximum threshold value of $p_{\\eta}$"
+        ],
+        [
+          "$p_{\\eta \\text { min }}$",
+          "Minimum threshold value of $p_{\\eta}$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "The UCI data sets",
+      "headers": [
+        "Data sets",
+        "Instances",
+        "Attributes",
+        "Classes"
+      ],
+      "rows": [
+        [
+          "contact-lenses",
+          24,
+          4,
+          3
+        ],
+        [
+          "credit-a",
+          690,
+          15,
+          2
+        ],
+        [
+          "diabetes",
+          768,
+          8,
+          2
+        ],
+        [
+          "glass",
+          214,
+          9,
+          7
+        ],
+        [
+          "iris",
+          150,
+          4,
+          3
+        ],
+        [
+          "labour",
+          57,
+          16,
+          2
+        ],
+        [
+          "mushroom",
+          8124,
+          22,
+          2
+        ],
+        [
+          "segment",
+          2310,
+          19,
+          7
+        ],
+        [
+          "sonar",
+          208,
+          60,
+          2
+        ],
+        [
+          "soybean",
+          683,
+          35,
+          19
+        ],
+        [
+          "splice",
+          3190,
+          62,
+          3
+        ],
+        [
+          "vote",
+          435,
+          16,
+          2
+        ],
+        [
+          "vowel*",
+          990,
+          10,
+          11
+        ],
+        [
+          "weather",
+          14,
+          4,
+          2
+        ],
+        [
+          "zoo*",
+          101,
+          17,
+          7
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "The best fitness and the run-time on 15 data sets",
+      "headers": [
+        "Data sets",
+        "GA",
+        "",
+        "GauED",
+        "",
+        "MEED",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Fitness",
+          "Time (s)",
+          "Fitness",
+          "Time (s)",
+          "Fitness",
+          "Time (s)"
+        ],
+        [
+          "contact-lenses",
+          22.94,
+          1.89,
+          24.67,
+          2.16,
+          24.81,
+          1.85
+        ],
+        [
+          "credit-a",
+          562.44,
+          104.7,
+          693.18,
+          119.57,
+          695.94,
+          92.91
+        ],
+        [
+          "diabetes",
+          354.43,
+          76.02,
+          387.06,
+          85.95,
+          394.85,
+          67.08
+        ],
+        [
+          "glass",
+          81.5,
+          64.39,
+          80.8,
+          71.37,
+          85.92,
+          51.33
+        ],
+        [
+          "iris",
+          355.18,
+          11.23,
+          361.9,
+          12.8,
+          363.19,
+          9.94
+        ],
+        [
+          "labour",
+          33.47,
+          9.35,
+          41.44,
+          9.98,
+          41.44,
+          6.46
+        ],
+        [
+          "mushroom",
+          7314.78,
+          1546.86,
+          9016.59,
+          1745.88,
+          9113.99,
+          1403.09
+        ],
+        [
+          "segment",
+          1428.47,
+          1235.3,
+          1307.66,
+          1287.73,
+          1384.82,
+          916.87
+        ],
+        [
+          "sonar",
+          113.97,
+          113.41,
+          129.41,
+          123.23,
+          129.25,
+          94.62
+        ],
+        [
+          "soybean",
+          65.37,
+          1261.37,
+          63.73,
+          1329.66,
+          69.11,
+          907.45
+        ],
+        [
+          "splice",
+          1762.93,
+          1973.88,
+          1859.11,
+          2292.89,
+          1903.68,
+          2107.8
+        ],
+        [
+          "vote",
+          914.35,
+          59.22,
+          914.97,
+          73.03,
+          914.74,
+          50.87
+        ],
+        [
+          "vowel",
+          140.74,
+          500.57,
+          122.24,
+          567.34,
+          154.77,
+          383.02
+        ],
+        [
+          "weather",
+          20.13,
+          0.86,
+          20.02,
+          0.83,
+          20.13,
+          0.12
+        ],
+        [
+          "zoo",
+          55.68,
+          39.08,
+          55.28,
+          39.34,
+          55.62,
+          28.68
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "The error rate on 15 data sets",
+      "headers": [
+        "Data sets",
+        "$k$-means",
+        "",
+        "GA",
+        "",
+        "GauED",
+        "",
+        "MEED",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Mean",
+          "Std. dev.",
+          "Mean",
+          "Std. dev.",
+          "Mean",
+          "Std. dev.",
+          "Mean",
+          "Std. dev."
+        ],
+        [
+          "contact-lenses",
+          0.27,
+          0.14,
+          0.38,
+          0.08,
+          0.43,
+          0.02,
+          0.38,
+          0.04
+        ],
+        [
+          "credit-a",
+          0.68,
+          0.06,
+          0.36,
+          0.07,
+          0.31,
+          0.0,
+          0.31,
+          0.01
+        ],
+        [
+          "diabetes",
+          0.95,
+          0.0,
+          0.38,
+          0.08,
+          0.35,
+          0.0,
+          0.41,
+          0.13
+        ],
+        [
+          "glass",
+          0.31,
+          0.0,
+          0.6,
+          0.06,
+          0.55,
+          0.09,
+          0.51,
+          0.08
+        ],
+        [
+          "iris",
+          0.69,
+          0.0,
+          0.18,
+          0.1,
+          0.12,
+          0.01,
+          0.12,
+          0.0
+        ],
+        [
+          "labour",
+          0.29,
+          0.02,
+          0.29,
+          0.22,
+          0.09,
+          0.0,
+          0.09,
+          0.0
+        ],
+        [
+          "mushroom",
+          0.6,
+          0.02,
+          0.4,
+          0.14,
+          0.29,
+          0.13,
+          0.29,
+          0.13
+        ],
+        [
+          "segment",
+          0.99,
+          0.01,
+          0.55,
+          0.13,
+          0.37,
+          0.06,
+          0.4,
+          0.05
+        ],
+        [
+          "sonar",
+          0.98,
+          0.01,
+          0.53,
+          0.02,
+          0.49,
+          0.04,
+          0.5,
+          0.04
+        ],
+        [
+          "soybean",
+          0.06,
+          0.05,
+          0.54,
+          0.1,
+          0.38,
+          0.04,
+          0.34,
+          0.04
+        ],
+        [
+          "splice",
+          0.73,
+          0.03,
+          0.56,
+          0.07,
+          0.51,
+          0.07,
+          0.52,
+          0.06
+        ],
+        [
+          "vote",
+          0.14,
+          0.0,
+          0.35,
+          0.18,
+          0.18,
+          0.11,
+          0.13,
+          0.0
+        ],
+        [
+          "vowel",
+          0.99,
+          0.0,
+          0.75,
+          0.03,
+          0.72,
+          0.03,
+          0.73,
+          0.04
+        ],
+        [
+          "weather",
+          0.17,
+          0.13,
+          0.37,
+          0.08,
+          0.36,
+          0.0,
+          0.36,
+          0.0
+        ],
+        [
+          "zoo",
+          0.2,
+          0.02,
+          0.36,
+          0.2,
+          0.12,
+          0.03,
+          0.12,
+          0.05
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 9
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/Continuous Optimization based-on Boosting Gaussian Mixture Model.md",
+    "filename": "Continuous Optimization based-on Boosting Gaussian Mixture Model.md",
+    "title": "Continuous Optimization based-on Boosting Gaussian Mixture Model",
+    "year": "2006"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] H. Mühlenbein and G. Paaß. \"From recombination of genes to the estimation of distributions I. Binary parameters,\" Parallel Problem Solving from Nature - PPSN V, pages 178-187. Springer, 1998\n[2] G.R. Harik, F.G. Lobo, and D.E. Goldberg, \"The compact genetic algorithm,\" in Proceedings of the International Conference on Evolutionary Computation (ICEC) 1998, pp. 523-528\n[3] M. Sebag and A. Ducoulombier, \"Extending populationbased incremental learning to continuous search spaces,\" in Parallel Problem Solving from Nature-PPSN V, 1998, pp. $418-427$.\n[4] P.A.N. Bosman and D. Thierens, \"Advancing continuous IDEA's with mixture distributions and factorization selection metrics,\" in Proc. Optimization by Building and Using Probabilistic Models (OBUPM) Workshop at the Genetic and Ecolutionary Computation Conf. (GECCO- 2001), M. Pelikan and K. Sastry, Eds., San Francisco, CA, 2001, pp. 208-212.\n[5] Qiang Lu and Xin Yao. \"Clustering and Learning Gaussian Distribution for Continuous Optimization\", in IEEE Transactions on Systems,Man and Cybernetics-PART C:Applications and Reviews,VOL.35,NO.2,May 2005.\n[6] M. Pelikan and D. E. Goldberg, \"Genetic algorithms, clustering, and the breaking of symmetry,\" in Proc. Parallel Problem Solving from Nature- PPSN VI, Paris, France, 2000, pp. 385-394.\n[7] L. Xu, \"Rival penalized competitive learning, finite mixture, and multisets clustering,\" in Proc. Int. Joint Conf. Neural Networks, vol.II, pp. 2525-2530, 1997.\n[8] Xubo Song, Kun Yang and Misha Pavel, \"Density Boosting for Gaussian Mixtures,\" ICONIP, pp. 508-515, 2004.\n[9] L. Mason, J. Baxter, P. Bartlett, \"Boosting Algorithm as Gradient Descent in function space,\" Advances in Neural Information Processing Systems12, pp. 512-518, 1999.\n[10] S. Rosset and E. Segal, \"Boosting density estimation,\" Advances in Neural Information Processing Systems 15, 2002.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "H. Mühlenbein and G. Paaß. \"From recombination of genes to the estimation of distributions I. Binary parameters,\" Parallel Problem Solving from Nature - PPSN V, pages 178-187. Springer, 1998"
+      },
+      {
+        "ref_id": "2",
+        "text": "G.R. Harik, F.G. Lobo, and D.E. Goldberg, \"The compact genetic algorithm,\" in Proceedings of the International Conference on Evolutionary Computation (ICEC) 1998, pp. 523-528"
+      },
+      {
+        "ref_id": "3",
+        "text": "M. Sebag and A. Ducoulombier, \"Extending populationbased incremental learning to continuous search spaces,\" in Parallel Problem Solving from Nature-PPSN V, 1998, pp. $418-427$."
+      },
+      {
+        "ref_id": "4",
+        "text": "P.A.N. Bosman and D. Thierens, \"Advancing continuous IDEA's with mixture distributions and factorization selection metrics,\" in Proc. Optimization by Building and Using Probabilistic Models (OBUPM) Workshop at the Genetic and Ecolutionary Computation Conf. (GECCO- 2001), M. Pelikan and K. Sastry, Eds., San Francisco, CA, 2001, pp. 208-212."
+      },
+      {
+        "ref_id": "5",
+        "text": "Qiang Lu and Xin Yao. \"Clustering and Learning Gaussian Distribution for Continuous Optimization\", in IEEE Transactions on Systems,Man and Cybernetics-PART C:Applications and Reviews,VOL.35,NO.2,May 2005."
+      },
+      {
+        "ref_id": "6",
+        "text": "M. Pelikan and D. E. Goldberg, \"Genetic algorithms, clustering, and the breaking of symmetry,\" in Proc. Parallel Problem Solving from Nature- PPSN VI, Paris, France, 2000, pp. 385-394."
+      },
+      {
+        "ref_id": "7",
+        "text": "L. Xu, \"Rival penalized competitive learning, finite mixture, and multisets clustering,\" in Proc. Int. Joint Conf. Neural Networks, vol.II, pp. 2525-2530, 1997."
+      },
+      {
+        "ref_id": "8",
+        "text": "Xubo Song, Kun Yang and Misha Pavel, \"Density Boosting for Gaussian Mixtures,\" ICONIP, pp. 508-515, 2004."
+      },
+      {
+        "ref_id": "9",
+        "text": "L. Mason, J. Baxter, P. Bartlett, \"Boosting Algorithm as Gradient Descent in function space,\" Advances in Neural Information Processing Systems12, pp. 512-518, 1999."
+      },
+      {
+        "ref_id": "10",
+        "text": "S. Rosset and E. Segal, \"Boosting density estimation,\" Advances in Neural Information Processing Systems 15, 2002."
+      }
+    ],
+    "reference_count": 10,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Settings for the five functions",
+      "headers": [
+        "",
+        "Dim",
+        "Domain",
+        "Type",
+        "Optimum"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          30,
+          "$[-100,100]$",
+          "Min",
+          0
+        ],
+        [
+          "SumCan",
+          10,
+          "$[-0.16,0.16]$",
+          "Max",
+          100000
+        ],
+        [
+          "TwoPeaks",
+          5,
+          "$[-100,100]$",
+          "Max",
+          10.1053
+        ],
+        [
+          "ThreePeaks",
+          5,
+          "$[-100,100]$",
+          "Max",
+          10.1053
+        ],
+        [
+          "Shekel",
+          4,
+          "$[0,10]$",
+          "Max",
+          10.1053
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Settings for the test EDAs",
+      "headers": [
+        "Algorithms",
+        "Population.",
+        "Selection."
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          1000,
+          500
+        ],
+        [
+          "EGNA",
+          1000,
+          500
+        ],
+        [
+          "CEGDA",
+          2000,
+          500
+        ],
+        [
+          "BGMMEDA",
+          600,
+          300
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Experimental Results (Sphere)",
+      "headers": [
+        "Algorithm",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          200,
+          "$1.88 \\mathrm{e}-16$",
+          "$3.24 \\mathrm{e}-16$",
+          "$5.59 \\mathrm{e}-17$"
+        ],
+        [
+          "EGNA",
+          200,
+          "$5.86 \\mathrm{e}-10$",
+          "$1.20 \\mathrm{e}-9$",
+          "$3.40 \\mathrm{e}-9$"
+        ],
+        [
+          "CEGDA",
+          100,
+          "$3.38 \\mathrm{e}-8$",
+          "$3.41 \\mathrm{e}-6$",
+          "$8.40 \\mathrm{e}-7$"
+        ],
+        [
+          "BGMMEDA",
+          100,
+          "$8.32 \\mathrm{e}-12$",
+          0.00161,
+          0.00564
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Experimental Results (SumCan)",
+      "headers": [
+        "Algorithm",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          200,
+          698.72,
+          221.771,
+          116.101
+        ],
+        [
+          "EGNA",
+          200,
+          100000,
+          100000,
+          0
+        ],
+        [
+          "CEGDA",
+          100,
+          99834.5,
+          99748.1,
+          63.2197
+        ],
+        [
+          "BGMMEDA",
+          100,
+          99925,
+          99875,
+          24.174
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Experimental Results (TwoPeaks)",
+      "headers": [
+        "Algorithm",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          400,
+          10.1053,
+          9.6327,
+          0.1073
+        ],
+        [
+          "EGNA",
+          400,
+          10.1053,
+          9.8324,
+          0.0828
+        ],
+        [
+          "CEGDA",
+          200,
+          10.1053,
+          10.0999,
+          "$5.92 \\mathrm{e}-3$"
+        ],
+        [
+          "BGMMEDA",
+          100,
+          10.1053,
+          10.1053,
+          "$6.37 \\mathrm{e}-5$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Experimental Results (ThreePeaks)",
+      "headers": [
+        "Algorithm",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          400,
+          5.05266,
+          5.05266,
+          "$8.88 \\mathrm{e}-16$"
+        ],
+        [
+          "EGNA",
+          400,
+          5.05266,
+          5.05266,
+          "$8.88 \\mathrm{e}-16$"
+        ],
+        [
+          "CEGDA",
+          200,
+          10.1053,
+          10.1048,
+          "$7.99 \\mathrm{e}-4$"
+        ],
+        [
+          "BGMMEDA",
+          100,
+          10.1053,
+          10.103,
+          0.01022
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Experimental Results (Shekel)",
+      "headers": [
+        "Algorithm",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          400,
+          5.1877,
+          4.7331,
+          0.7406
+        ],
+        [
+          "EGNA",
+          400,
+          8.2036,
+          4.9691,
+          0.7786
+        ],
+        [
+          "CEGDA",
+          200,
+          10.1033,
+          10.1033,
+          "$8.88 \\mathrm{e}-15$"
+        ],
+        [
+          "BGMMEDA",
+          100,
+          10.1033,
+          10.1031,
+          "$8.91 \\mathrm{e}-4$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    }
+  ]
+}

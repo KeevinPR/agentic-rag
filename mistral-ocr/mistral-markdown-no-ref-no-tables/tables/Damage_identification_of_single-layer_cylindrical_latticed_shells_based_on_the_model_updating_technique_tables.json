@@ -1,0 +1,541 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Damage identification of single-layer cylindrical latticed shells based on the model updating technique.md",
+    "filename": "Damage identification of single-layer cylindrical latticed shells based on the model updating technique.md",
+    "title": "Damage identification of single-layer cylindrical latticed shells based on the model updating technique",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Geometric and material parameters of the members",
+      "headers": [
+        "Member section $h \\times b \\times t$ (mm)",
+        "Density $\\left(\\mathrm{kg} / \\mathrm{m}^{3}\\right)$",
+        "Elastic modulus (GPa)",
+        "Poisson's ratio",
+        "Yield strength (MPa)",
+        "Ultimate strength (MPa)"
+      ],
+      "rows": [
+        [
+          "$30 \\times 50 \\times 1.5$",
+          7850,
+          207.35,
+          0.3,
+          369.25,
+          488.85
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Damage severity of members corresponding to multiple damage conditions",
+      "headers": [
+        "Scenarios",
+        "Damaged <br> member",
+        "Damage coefficient $\\alpha$",
+        "Noise"
+      ],
+      "rows": [
+        [
+          -1,
+          5,
+          0.8,
+          "-"
+        ],
+        [
+          -2,
+          5,
+          0.5,
+          "-"
+        ],
+        [
+          -3,
+          521,
+          "$0.5(5), 0.8(21)$",
+          "-"
+        ],
+        [
+          -4,
+          521,
+          "$0.5(5), 0.8(21)$",
+          "$10 \\%$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Values of $J_{1}$ and $J_{2}$ in 100 generations during model updating",
+      "headers": [
+        "Number of generations",
+        "MS-1",
+        "",
+        "MS-2",
+        "",
+        "MS-3",
+        "",
+        "MS-4",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$J_{1}$",
+          "$J_{2}\\left(\\times 10^{3}\\right)$",
+          "$J_{1}$",
+          "$J_{2}\\left(\\times 10^{3}\\right)$",
+          "$J_{1}$",
+          "$J_{2}\\left(\\times 10^{3}\\right)$",
+          "$J_{1}$",
+          "$J_{2}\\left(\\times 10^{3}\\right)$"
+        ],
+        [
+          1,
+          861.94,
+          37.33,
+          41.94,
+          3.36,
+          41.89,
+          3.3,
+          40.61,
+          3.23
+        ],
+        [
+          5,
+          "$1.42 \\times 10^{3}$",
+          88.54,
+          59.12,
+          4.0,
+          35.94,
+          2.88,
+          48.57,
+          3.84
+        ],
+        [
+          10,
+          "$1.09 \\times 10^{4}$",
+          196.23,
+          "$1.32 \\times 10^{3}$",
+          16.28,
+          73.47,
+          8.52,
+          54.44,
+          6.32
+        ],
+        [
+          15,
+          "$2.09 \\times 10^{13}$",
+          61.61,
+          "$4.11 \\times 10^{6}$",
+          36.83,
+          80.35,
+          5.47,
+          69.81,
+          8.93
+        ],
+        [
+          20,
+          "$1.03 \\times 10^{14}$",
+          56.15,
+          "$7.23 \\times 10^{13}$",
+          0.83,
+          97.52,
+          9.63,
+          121.59,
+          15.49
+        ],
+        [
+          50,
+          "$2.92 \\times 10^{19}$",
+          55.98,
+          "$7.23 \\times 10^{13}$",
+          0.83,
+          "$1.85 \\times 10^{3}$",
+          81.26,
+          "$1.24 \\times 10^{3}$",
+          64.51
+        ],
+        [
+          80,
+          "$2.92 \\times 10^{19}$",
+          55.98,
+          "$7.23 \\times 10^{13}$",
+          0.83,
+          "$5.28 \\times 10^{19}$",
+          16.68,
+          "$8.63 \\times 10^{18}$",
+          14.14
+        ],
+        [
+          100,
+          "$2.92 \\times 10^{19}$",
+          55.98,
+          "$7.23 \\times 10^{13}$",
+          0.83,
+          "$5.28 \\times 10^{19}$",
+          16.68,
+          "$8.63 \\times 10^{18}$",
+          14.14
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 9
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Natural frequencies corresponding to multiple damage conditions (Hz)",
+      "headers": [
+        "Order",
+        "Initial state",
+        "MS-1",
+        "",
+        "MS-2",
+        "",
+        "MS-3",
+        "",
+        "MS-4",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "True value",
+          "Updating result",
+          "True value",
+          "Updating result",
+          "True value",
+          "Updating result",
+          "True value",
+          "Updating result"
+        ],
+        [
+          1,
+          15.116,
+          15.092,
+          15.046,
+          15.067,
+          14.965,
+          15.041,
+          14.881,
+          14.249,
+          14.767
+        ],
+        [
+          2,
+          29.026,
+          28.968,
+          28.557,
+          28.888,
+          27.733,
+          28.806,
+          28.088,
+          28.584,
+          27.8
+        ],
+        [
+          3,
+          34.339,
+          34.238,
+          34.598,
+          34.122,
+          33.665,
+          34.105,
+          34.559,
+          34.872,
+          34.083
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 10
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Members with low damage coefficients during model updating",
+      "headers": [
+        "MS-1",
+        "",
+        "MS-2",
+        "",
+        "MS-3",
+        "",
+        "MS-4",
+        ""
+      ],
+      "rows": [
+        [
+          "Member",
+          "$\\alpha$",
+          "Member",
+          "$\\alpha$",
+          "Member",
+          "$\\alpha$",
+          "Member",
+          "$\\alpha$"
+        ],
+        [
+          5,
+          0.7939,
+          5,
+          0.4937,
+          5,
+          0.4659,
+          5,
+          0.4891
+        ],
+        [
+          51,
+          0.8258,
+          58,
+          0.6202,
+          67,
+          0.6096,
+          21,
+          0.7174
+        ],
+        [
+          12,
+          0.8428,
+          25,
+          0.6992,
+          68,
+          0.699,
+          6,
+          0.7371
+        ],
+        [
+          11,
+          0.8521,
+          1,
+          0.7095,
+          60,
+          0.7655,
+          60,
+          0.7869
+        ],
+        [
+          43,
+          0.8585,
+          63,
+          0.7514,
+          21,
+          0.8358,
+          71,
+          0.8557
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 8
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Statistics of the damage identification accuracies based on the FE data",
+      "headers": [
+        "Scenarios",
+        "Maximum <br> value (\\%)",
+        "Minimum <br> value (\\%)",
+        "Mean value (\\%)",
+        "Standard <br> deviation <br> $\\left(\\times 10^{-19}\\right)$"
+      ],
+      "rows": [
+        [
+          -1,
+          100.0,
+          82.58,
+          95.37,
+          6.64
+        ],
+        [
+          -2,
+          99.79,
+          62.02,
+          92.51,
+          5.33
+        ],
+        [
+          -3,
+          99.65,
+          60.96,
+          92.43,
+          1.27
+        ],
+        [
+          -4,
+          99.1,
+          73.71,
+          90.54,
+          3.13
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Damage severity of members in different test scenarios",
+      "headers": [
+        "Scenarios",
+        "Damage level",
+        "Cutting depth/ <br> member height",
+        "Damage <br> coefficient <br> $\\alpha$"
+      ],
+      "rows": [
+        [
+          -1,
+          "-",
+          0,
+          1.0
+        ],
+        [
+          -2,
+          "Slight",
+          "$1 / 4$",
+          0.66
+        ],
+        [
+          -3,
+          "Medium",
+          "$1 / 2$",
+          0.5
+        ],
+        [
+          -4,
+          "Heavy",
+          "$3 / 4$",
+          0.34
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 Natural frequencies of the shell model obtained by ARTeMIS Model",
+      "headers": [
+        "Scenarios",
+        "Frequencies $(\\mathrm{Hz})$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3
+        ],
+        [
+          -1,
+          10.946,
+          20.535,
+          22.3
+        ],
+        [
+          -2,
+          10.946,
+          20.535,
+          22.3
+        ],
+        [
+          -3,
+          10.944,
+          20.536,
+          22.301
+        ],
+        [
+          -4,
+          10.876,
+          20.486,
+          22.227
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 Natural frequencies of the analytical model obtained by model updating $(\\mathrm{Hz})$",
+      "headers": [
+        "Scenarios",
+        "Frequencies (Hz)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3
+        ],
+        [
+          -1,
+          10.638,
+          20.559,
+          24.45
+        ],
+        [
+          -2,
+          10.2,
+          19.735,
+          23.205
+        ],
+        [
+          -3,
+          9.941,
+          18.792,
+          24.076
+        ],
+        [
+          -4,
+          9.304,
+          18.238,
+          21.658
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "10",
+      "table_title": "Table 10 Statistics of the damage identification accuracies based on the laboratory data",
+      "headers": [
+        "Scenarios",
+        "Maximum <br> value (\\%)",
+        "Minimum <br> value (\\%)",
+        "Mean value (\\%)",
+        "Standard <br> deviation"
+      ],
+      "rows": [
+        [
+          -2,
+          99.85,
+          70.44,
+          89.59,
+          0.0718
+        ],
+        [
+          -3,
+          99.59,
+          62.48,
+          86.1,
+          0.0697
+        ],
+        [
+          -4,
+          98.57,
+          55.62,
+          82.26,
+          0.1009
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    }
+  ]
+}

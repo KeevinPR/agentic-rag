@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Training multilayer perceptrons with a Gaussian Artificial Immune System.md",
+    "filename": "Training multilayer perceptrons with a Gaussian Artificial Immune System.md",
+    "title": "Training multilayer perceptrons with a Gaussian Artificial Immune System",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Characteristic of the Datasets",
+      "headers": [
+        "Dataset",
+        "\\# Instances",
+        "\\# Attributes",
+        "\\# Classes",
+        "Architecture"
+      ],
+      "rows": [
+        [
+          "Iris",
+          150,
+          4,
+          3,
+          "$4: 2: 3$"
+        ],
+        [
+          "Ionosphere",
+          350,
+          34,
+          2,
+          "$34: 3: 2$"
+        ],
+        [
+          "Pima",
+          768,
+          8,
+          2,
+          "$8: 3: 2$"
+        ],
+        [
+          "Sonar",
+          208,
+          60,
+          2,
+          "$60: 5: 2$"
+        ],
+        [
+          "Wine",
+          178,
+          13,
+          3,
+          "$13: 2: 3$"
+        ],
+        [
+          "Glass",
+          214,
+          9,
+          6,
+          "$9: 5: 6$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "NEURAL NETWORKS' PERFORMANCE ON TEST DATASETS",
+      "headers": [
+        "Dataset",
+        "GAIS",
+        "opt-aiNet",
+        "IDEA",
+        "PSO"
+      ],
+      "rows": [
+        [
+          "Iris",
+          "$\\mathbf{9 7 . 4} \\pm \\mathbf{0 . 6}$",
+          "$96.1 \\pm 0.4 *$",
+          "$97.2 \\pm 0.8$",
+          "$95.4 \\pm 0.8 *$"
+        ],
+        [
+          "Ionosphere",
+          "$\\mathbf{9 1 . 7} \\pm \\mathbf{0 . 9}$",
+          "$89.6 \\pm 1.0 *$",
+          "$90.4 \\pm 0.6 *$",
+          "$87.1 \\pm 0.9 *$"
+        ],
+        [
+          "Pima",
+          "$\\mathbf{7 6 . 3} \\pm \\mathbf{1 . 2}$",
+          "$74.7 \\pm 1.3 *$",
+          "$73.9 \\pm 1.2 *$",
+          "$73.3 \\pm 1.4 *$"
+        ],
+        [
+          "Sonar",
+          "$\\mathbf{8 1 . 6} \\pm \\mathbf{1 . 4}$",
+          "$79.2 \\pm 1.2 *$",
+          "$80.2 \\pm 1.1 *$",
+          "$78.7 \\pm 1.1 *$"
+        ],
+        [
+          "Wine",
+          "$\\mathbf{9 8 . 3} \\pm \\mathbf{0 . 6}$",
+          "$97.9 \\pm 0.5 *$",
+          "$\\mathbf{9 8 . 3} \\pm \\mathbf{0 . 8}$",
+          "$96.1 \\pm 0.9 *$"
+        ],
+        [
+          "Glass",
+          "$\\mathbf{6 6 . 2} \\pm \\mathbf{1 . 1}$",
+          "$64.3 \\pm 0.9 *$",
+          "$64.9 \\pm 0.7 *$",
+          "$62.8 \\pm 0.8 *$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "III",
+      "table_title": "RESULTS PRODUCED BY FOUR DIPFERENT NEURAL NETWORKS Obtained in a Single Run for GAIS, For the IRIS, Ionosphere AND Pima DATA",
+      "headers": [
+        "Classifier",
+        "Iris",
+        "Ionosphere",
+        "Pima"
+      ],
+      "rows": [
+        [
+          1,
+          "$98.6 \\pm 0.9$",
+          "$94.3 \\pm 0.8$",
+          "$78.2 \\pm 1.3$"
+        ],
+        [
+          2,
+          "$98.2 \\pm 1.1$",
+          "$94.1 \\pm 1.1$",
+          "$76.6 \\pm 0.9$"
+        ],
+        [
+          3,
+          "$97.6 \\pm 0.7$",
+          "$92.4 \\pm 1.3$",
+          "$76.8 \\pm 1.1$"
+        ],
+        [
+          4,
+          "$95.1 \\pm 1.2$",
+          "$91.1 \\pm 0.8$",
+          "$75.2 \\pm 0.7$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "IV",
+      "table_title": "RESULTS PRODUCED BY FOUR DIFFERENT NEURAL NETWORKS",
+      "headers": [
+        "Classifier",
+        "Sonar",
+        "Wine",
+        "Glass"
+      ],
+      "rows": [
+        [
+          1,
+          "$84.1 \\pm 0.9$",
+          "$99.3 \\pm 1.1$",
+          "$68.7 \\pm 1.3$"
+        ],
+        [
+          2,
+          "$83.6 \\pm 1.2$",
+          "$97.8 \\pm 0.8$",
+          "$67.2 \\pm 1.1$"
+        ],
+        [
+          3,
+          "$83.0 \\pm 1.3$",
+          "$97.3 \\pm 0.8$",
+          "$65.8 \\pm 0.9$"
+        ],
+        [
+          4,
+          "$81.2 \\pm 0.8$",
+          "$97.2 \\pm 0.9$",
+          "$65.1 \\pm 1.1$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    }
+  ]
+}

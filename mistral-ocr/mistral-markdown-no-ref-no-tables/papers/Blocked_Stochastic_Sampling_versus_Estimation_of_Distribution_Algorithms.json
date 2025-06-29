@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2002/Blocked Stochastic Sampling versus Estimation of Distribution Algorithms.md",
+    "filename": "Blocked Stochastic Sampling versus Estimation of Distribution Algorithms.md",
+    "title": "Blocked Stochastic Sampling versus Estimation of Distribution Algorithms",
+    "year": "2002"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] Th. Bäck and H.-P. Schwefel. An overview of evolutionary algorithms for parameteroptimization. Evolutionary Computation, 1:1-24, 1993.\n[2] S. Chib and B. Carlin. On MCMC sampling in hierarchical longitudinal models. Statistics and Computing, 9:17-26, 1999.\n[3] S. Geman and D. Geman. Stochastic relaxation, Gibbs distributions, and Bayesian restoration of images. IEEE transactions on pattern analysis and Machine Intelligence, (6):721741, 1984.\n[4] S. Kirpatrick, C. D. Jr. Gelatt, and M. P. Vecchi. Optimization by simulated annealing. Science, 220:671-680, May 1983.\n[5] Jun S. Liu, A. Kong, and W.H. Wong. Covariance structure of the Gibbs sampler with applications to the comparisons of estimators and augmentation schemes. Biometrika, 81:27-40, 1994.\n[6] H. Mühlenbein and T. Mahnig. Theoretical Aspects of Evolutionary Computing, chapter Evolutionary Algorithms: From Recombination to Search Distributions, pages 137-176. Springer Verlag, Berlin, 2000.\n[7] Heinz Mühlenbein and Thilo Mahnig. Convergence theory and applications of the Factorized Distribution Algorithm. Journal of Computing and Information Technology, 7(1):19-32, 1998.\n[8] Heinz Mühlenbein and Thilo Mahnig. Evolutionary computation and beyond. In Y. Uesaka, P. Kanerva, and H. Asoh, editors, Foundations of Real-World Intelligence, pages 123188. CSLI Publications, Stanford, California, 2001.\n[9] Heinz Mühlenbein, Thilo Mahnig, and Alberto Ochoa. Schemata, distributions and graphical models in evolutionary optimization. Journal of Heuristics, 5(2):213-247, 1999.\n[10] Heinz Mühlenbein and J. Zimmermann. Size of neighborhood more important than temperature for stochastic local search. In Proceedings of the 2000 Congress on Evolutionary Computation CEC00, pages 1017-1024, La Jolla Marriott Hotel La Jolla, California, USA, 2000. IEEE Press.\n[11] J.G. Propp and D.B. Wilson. Exact sampling with coupled markov chains and applications to statistical mechanics. Random structures and Algorithms, (9):223-252, 1996.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Th. Bäck and H.-P. Schwefel. An overview of evolutionary algorithms for parameteroptimization. Evolutionary Computation, 1:1-24, 1993."
+      },
+      {
+        "ref_id": "2",
+        "text": "S. Chib and B. Carlin. On MCMC sampling in hierarchical longitudinal models. Statistics and Computing, 9:17-26, 1999."
+      },
+      {
+        "ref_id": "3",
+        "text": "S. Geman and D. Geman. Stochastic relaxation, Gibbs distributions, and Bayesian restoration of images. IEEE transactions on pattern analysis and Machine Intelligence, (6):721741, 1984."
+      },
+      {
+        "ref_id": "4",
+        "text": "S. Kirpatrick, C. D. Jr. Gelatt, and M. P. Vecchi. Optimization by simulated annealing. Science, 220:671-680, May 1983."
+      },
+      {
+        "ref_id": "5",
+        "text": "Jun S. Liu, A. Kong, and W.H. Wong. Covariance structure of the Gibbs sampler with applications to the comparisons of estimators and augmentation schemes. Biometrika, 81:27-40, 1994."
+      },
+      {
+        "ref_id": "6",
+        "text": "H. Mühlenbein and T. Mahnig. Theoretical Aspects of Evolutionary Computing, chapter Evolutionary Algorithms: From Recombination to Search Distributions, pages 137-176. Springer Verlag, Berlin, 2000."
+      },
+      {
+        "ref_id": "7",
+        "text": "Heinz Mühlenbein and Thilo Mahnig. Convergence theory and applications of the Factorized Distribution Algorithm. Journal of Computing and Information Technology, 7(1):19-32, 1998."
+      },
+      {
+        "ref_id": "8",
+        "text": "Heinz Mühlenbein and Thilo Mahnig. Evolutionary computation and beyond. In Y. Uesaka, P. Kanerva, and H. Asoh, editors, Foundations of Real-World Intelligence, pages 123188. CSLI Publications, Stanford, California, 2001."
+      },
+      {
+        "ref_id": "9",
+        "text": "Heinz Mühlenbein, Thilo Mahnig, and Alberto Ochoa. Schemata, distributions and graphical models in evolutionary optimization. Journal of Heuristics, 5(2):213-247, 1999."
+      },
+      {
+        "ref_id": "10",
+        "text": "Heinz Mühlenbein and J. Zimmermann. Size of neighborhood more important than temperature for stochastic local search. In Proceedings of the 2000 Congress on Evolutionary Computation CEC00, pages 1017-1024, La Jolla Marriott Hotel La Jolla, California, USA, 2000. IEEE Press."
+      },
+      {
+        "ref_id": "11",
+        "text": "J.G. Propp and D.B. Wilson. Exact sampling with coupled markov chains and applications to statistical mechanics. Random structures and Algorithms, (9):223-252, 1996."
+      }
+    ],
+    "reference_count": 11,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Different versions of the Gibbs Sampling algorithm For the $f_{\\text {deceptive }}$ Function.",
+      "headers": [
+        "$n$",
+        "$\\beta$",
+        "Local",
+        "Random",
+        "Neighborhood"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "trans.",
+          "$s$",
+          "trans."
+        ],
+        [
+          12,
+          1,
+          528,
+          2,
+          524
+        ],
+        [
+          12,
+          2,
+          1142,
+          4,
+          538
+        ],
+        [
+          12,
+          3,
+          5174,
+          5,
+          705
+        ],
+        [
+          18,
+          1,
+          1863,
+          3,
+          2478
+        ],
+        [
+          18,
+          2,
+          2289,
+          3,
+          1775
+        ],
+        [
+          18,
+          3,
+          10022,
+          5,
+          2428
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "shows the results of population based heuristics. By far the best results are obtained by FDA. The results of $U M D A$ and $L F D A$ are very similar. This indicates that the network computed by $L F D A$ is too small and does not capture the real interactions [9].",
+      "headers": [
+        "$n$",
+        "Alg.",
+        "Pop",
+        "$T$",
+        "succ.",
+        "Ave.gen.",
+        "eval"
+      ],
+      "rows": [
+        [
+          12,
+          "$U M D A$",
+          100,
+          0.1,
+          100,
+          7.4,
+          828
+        ],
+        [
+          18,
+          "$U M D A$",
+          100,
+          0.1,
+          100,
+          88.7,
+          8877
+        ],
+        [
+          12,
+          "$L F D A$",
+          100,
+          0.1,
+          100,
+          11,
+          1187
+        ],
+        [
+          18,
+          "$L F D A$",
+          100,
+          0.1,
+          100,
+          87.2,
+          8737
+        ],
+        [
+          12,
+          "$F D A$",
+          100,
+          0.1,
+          100,
+          1.4,
+          236
+        ],
+        [
+          18,
+          "$F D A$",
+          100,
+          0.1,
+          100,
+          2.4,
+          338
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "III",
+      "table_title": "Example function $F_{\\text {Block }}(x, B)$",
+      "headers": [
+        "",
+        "$x=(10111011001)$",
+        "",
+        "",
+        "",
+        "$x=(00110000000)$",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$B$",
+          1,
+          2,
+          3,
+          4,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "$G(x, B)$",
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          "$F_{\\text {Block }}(x, B)$",
+          15,
+          17,
+          18,
+          18,
+          21,
+          22,
+          21,
+          20
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 9
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Results for the function $F_{\\text {Block }}$.",
+      "headers": [
+        "$n$",
+        "$B$",
+        "Alg.",
+        "Trunc.",
+        "Ave.gen.",
+        "eval"
+      ],
+      "rows": [
+        [
+          40,
+          20,
+          "$G S$",
+          "",
+          "",
+          281
+        ],
+        [
+          40,
+          35,
+          "$G S$",
+          "",
+          "",
+          373
+        ],
+        [
+          40,
+          20,
+          "$L F D A$",
+          0.1,
+          12.3,
+          1321
+        ],
+        [
+          40,
+          35,
+          "$L F D A$",
+          0.1,
+          31.1,
+          3179
+        ],
+        [
+          40,
+          20,
+          "$U M D A$",
+          0.02,
+          17.2,
+          894
+        ],
+        [
+          40,
+          35,
+          "$U M D A$",
+          0.02,
+          39.2,
+          1971
+        ],
+        [
+          40,
+          20,
+          "$U M D A$",
+          0.1,
+          12.1,
+          1300
+        ],
+        [
+          40,
+          35,
+          "$U M D A$",
+          0.1,
+          30.1,
+          3078
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "V",
+      "table_title": "Results for the function $F_{\\text {Block }}, B=n-5$.",
+      "headers": [
+        "$n$",
+        "Alg.",
+        "Trunc.",
+        "Ave.gen.",
+        "eval"
+      ],
+      "rows": [
+        [
+          50,
+          "$G S$",
+          "",
+          "",
+          934
+        ],
+        [
+          100,
+          "$G S$",
+          "",
+          "",
+          4397
+        ],
+        [
+          200,
+          "$G S$",
+          "",
+          "",
+          18755
+        ],
+        [
+          300,
+          "$G S$",
+          "",
+          "",
+          43054
+        ],
+        [
+          50,
+          "$U M D A$",
+          0.02,
+          66.2,
+          3292
+        ],
+        [
+          100,
+          "$U M D A$",
+          0.02,
+          339.7,
+          16698
+        ],
+        [
+          200,
+          "$U M D A$",
+          0.02,
+          1553.1,
+          76153
+        ],
+        [
+          300,
+          "$U M D A$",
+          0.02,
+          3617.4,
+          177302
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 5
+    },
+    {
+      "table_number": "VI",
+      "table_title": "presents the results achieved in the optimization of this function. In this case no all the runs were successful and the table includes the success rate (succ.) achieved in the 100 runs. The population size used for the UMDA and LFDA were the same as before. The truncation parameter for the UMDA was $T=0.02$, and for the LFDA $T=0.1$. As it can be seen, the performance of the GS for this function is as good as in the case of the $F_{\\text {Block }}$ function. The existence of a hierarchy does not make any change in its behavior. For this function the LFDA reaches the optimum more times and with less function evaluations than the UMDA. The LFDA is able",
+      "headers": [
+        "$n$",
+        "$k$",
+        "$B$",
+        "Alg.",
+        "Ave.gen.",
+        "succ.",
+        "eval"
+      ],
+      "rows": [
+        [
+          40,
+          4,
+          5,
+          "GS",
+          "",
+          100,
+          107
+        ],
+        [
+          40,
+          4,
+          9,
+          "GS",
+          "",
+          100,
+          190
+        ],
+        [
+          40,
+          4,
+          5,
+          "$U M D A$",
+          194.3,
+          100,
+          9570
+        ],
+        [
+          40,
+          4,
+          9,
+          "$U M D A$",
+          667.8,
+          96,
+          32773
+        ],
+        [
+          40,
+          4,
+          5,
+          "$L F D A$",
+          6.4,
+          100,
+          733
+        ],
+        [
+          40,
+          4,
+          9,
+          "$L F D A$",
+          21.3,
+          100,
+          2214
+        ],
+        [
+          40,
+          8,
+          4,
+          "GS",
+          "",
+          100,
+          112
+        ],
+        [
+          40,
+          8,
+          4,
+          "$U M D A$",
+          1998.2,
+          35,
+          97960
+        ],
+        [
+          40,
+          8,
+          4,
+          "$L F D A$",
+          67.6,
+          100,
+          6797
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "VII",
+      "table_title": "Results for the function $D F_{B l o c k}^{h}, n=40, k=4, B=9$",
+      "headers": [
+        "Alg.",
+        "$p$",
+        "$\\beta$",
+        "Ave.gen.",
+        "succ.",
+        "eval"
+      ],
+      "rows": [
+        [
+          "$G S$",
+          1,
+          "$\\infty$",
+          "",
+          0,
+          0
+        ],
+        [
+          "$G S$",
+          1,
+          1.16,
+          "",
+          100,
+          1171
+        ],
+        [
+          "$G S$",
+          5,
+          0.51,
+          "",
+          1,
+          499200
+        ],
+        [
+          "$B G S$",
+          1,
+          "$\\infty$",
+          "",
+          97,
+          198598
+        ],
+        [
+          "$B G S$",
+          5,
+          "$\\infty$",
+          "",
+          93,
+          221591
+        ],
+        [
+          "$L F D A$",
+          1,
+          "",
+          890.9,
+          9,
+          88298
+        ],
+        [
+          "$L F D A$",
+          5,
+          "",
+          577.3,
+          6,
+          57256
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    }
+  ]
+}

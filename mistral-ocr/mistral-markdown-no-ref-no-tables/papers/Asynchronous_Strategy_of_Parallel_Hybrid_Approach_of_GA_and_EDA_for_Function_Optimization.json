@@ -1,0 +1,574 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Asynchronous Strategy of Parallel Hybrid Approach of GA and EDA for Function Optimization.md",
+    "filename": "Asynchronous Strategy of Parallel Hybrid Approach of GA and EDA for Function Optimization.md",
+    "title": "Asynchronous Strategy of Parallel Hybrid Approach of GA and EDA for Function Optimization",
+    "year": "2012"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] L. Changhe, and Y. Shengxiang, An Island Based Hybrid Evolutionary Algorithm for Optimization, Simulated Evolution and Learning, LNCS, vol. 5361, pp. 180-189, 2008.\n[2] H. Mühlenbein, and G. Paa From recombination in genes to the estimation of dis- tribution 1, binary parameters, Lecture Notes in Computer Science 1411, Parallel Problem Solving from Nature, 1996.\n[3] T. Niknam, B. Amiri, J. Olamaei, and A. Arefi, An Efficient Hybrid Evolutionary Optimization Algorithm based on PSO and SA for clustering, JZU SC. A , vol 10, No 4, 512-519, 2008.\n[4] T. Tometzki, and S. Engell, Hybrid evolutionary optimization of two-stage stochastic integer programming problems, An empirical investigation, Evol Comput, Winter 17(4) 511-526, 2009.\n[5] R. Salomon, Re-evaluating genetic algorithm performance under coordinate rotation of benchmark func- tions. a survey of some theoretical and practical aspects of genetic algorithms, ELSEVIER, Biosystems 39, 263278, 1996.\n[6] S. M. Said, and M. Nakamura, A Hierarchical Hybrid Evolutionary Computation for Continuous Function Optimization, IJNGC, Vol. 3, No 1, 2012.\n[7] J.C. Bezdek, and N.R. Pal, Some new indexes of cluster validity, IEEE Trans. Syst. Man. Cybern., vol. 28, pp. 301315,1998.\n[8] G. W. Milligan, and M.C. Cooper, An examination of procedures for determining the number of clusters in a data set, Psychometrika, vol. 50, pp. 159-179,1985.\n[9] S. S. Abdelwahed, M. F. Hassan, M. A. Sultan, Parallel asynchronous algorithms for optimal control of large scale dynamic systems, J. Optimal Control applications and methods. 18, 1997.\n[10] C. Grosan, and A. Abraham Hybrid evolutionary algorithms: methodologies, architectures, and reviews In: Grosan C, Abraham A, Ishibuchi H, editors. Hybrid evolutionary algorithms. Berlin, Heidelberg: Springer; p. 117, 2007.\n[11] J. Ocenasek, Parallel estimation of distribution algorithms, Ph.D. thesis, Brno University of Technology, 2002.\n[12] A. Mendiburu-Alberro, Parallel implementation of estimation of distribution algorithms based on proba- bilistic graphical models. application to chemical calibration models, Ph.D. thesis, The University of the Basque Country, 2006.\n[13] P. Larranaga, and J. A. Lozano, Estimation of Distribution Algorithms, Kluwer Academic Publishers, 2002.\n[14] L. Davis, Handbook of Genetic Algorithms, Van Nostrand Reinhold, New York, 1991.\n[15] G. W. Milligan, Clustering validation: Results and implications for applied analyses, In P. Arabie, L.J. Hubert and G. De Soete (Eds.), Clustering and Classification, Singapore: World Scientific, pp 341-375, 1996.\n[16] Ray and R. H. Turi, Determination of number of clusters in K-means clustering and application in colour image segmentation, (invited paper) in N R Pal, A K De and J Das (eds), Proceedings of the 4th International Conference on Advances in Pattern Recognition and Digital Techniques (ICAPRDT'99), Calcutta, India, Narosa Publishing House, New Delhi, India, ISBN: 81-7319-347-9, pp 137-143, 2729 December, 1999.\n[17] C. Gagne, and M. Parizeau, A Robust Master-Slave Distribution Architecture for Evolutionary Computations, Proc of Genetic and Evolutionary Computation Conference, Late Breaking, pp. 80-87, 2003.\n[18] S. M. Said, and M. Nakamura, Parallel Enhanced Hybrid Evolutionary Algorithm for Continuous Function Optimization, Proc of 7th International Conference on P2P, Parallel, Grid, Cloud and Internet Computing, Victoria, Canada, (Accepted), 2012.\n[19] K. Price, Differential evolution vs. the functions of the second $I C E O$, In Proceedings of the IEEE International Congress on Evolutionary Computation, pages 153157, 1997.\n[20] M. Golub and L. Budin An Asynchronous Model of Global Parallel Genetic Algorithms, 2nd ICSC Symposium on Engineering of Intelligent Systems EIS2000, pp 353359, 2000.\n[21] S. Finck, N. Hansen, R. Ros, and A. Auger, Realparameter black-box optimization benchmarking 2009: Presentation of the noiseless functions, Technical Report 2009/20, Research Center PPE, 2009, Updated February 2010.\n[22] N. Hansen, A. Auger, S. Finck, and R. Ros Realparameter black-box optimization benchmarking 2010: Experimental setup, Technical Report RR-7215, INRIA, 2010.\n[23] N. Hansen, S. Finck, R. Ros, and A. Auger, Realparameter black-box optimization benchmarking 2009: Noiseless functions definitions, Technical Report RR-6829, INRIA, 2009, Updated February 2010.\n\nTable I\nERT ON $f_{1}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009\n\n| $\\Delta f_{\\text {OBS }}$ | 1 e 1 | 1 e 0 | 1e-1 | 1e-3 | 1e-5 | 1e-7 | $\\#$ succ |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| f1 | 11 | 12 | 12 | 12 | 12 | 12 | 15/15 |\n| ASYNCH | 38 (26) | 691 (179) | 1210 (349) | 2150 (561) | 4088 (137) | 1.3e4(171) | 15/15 |\n| SYNCH | 4.5 (4) | 531 (167) | 1001 (343) | 1889 (513) | 3919 (135) | 1.9e4 (344) | 15/15 |\n| GA | 9.3 (6) | 575 (181) | 984 (349) | 1864 (656) | 3829 (177) | 2.4e4 (344) | 6/15 |\n\nTable II\nERT ON $f_{2}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009\n\n| $\\Delta f_{\\text {OBS }}$ | 1 e 1 | 1 e 0 | 1e-1 | 1e-3 | 1e-5 | 1e-7 | $\\#$ succ |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| f2 | 83 | 87 | 88 | 90 | 92 | 94 | 15/15 |\n| ASYNCH | 235 (134) | 523 (231) | 882 (300) | 2925 (922) | 4908 (107) ${ }^{* 2}$ | 9594 (2500) ${ }^{*}$ | 10/15 |\n| SYNCH | 194 (127) | 515 (140) | 833 (406) | 4479 (1170) | 8046 (1602) | 2.4e4 (344) | 4/15 |\n| GA | 153 (136) | 507 (127) | 658 (106) | 6183 (5033) | $\\infty$ | $\\infty$ Ie6 | 0/15 |\n\nTable III\nERT ON $f_{3}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009\n\n| $\\Delta f_{\\text {OBS }}$ | 1 e 1 | 1 e 0 | 1e-1 | 1e-3 | 1e-5 | 1e-7 | $\\#$ succ |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| f3 | 716 | 1622 | 1637 | 1646 | 1650 | 1654 | 15/15 |\n| ASYNCH | 177 (17) | 39 (34) | 94 (66) | 119 (61) | 254 (127) | 439 (25) | 14/15 |\n| SYNCH | 22 (11) | 49 (33) | 93 (71) | 150 (133) | 404 (63) | 528 (61) | 7/15 |\n| GA | 18 (14) | 73 (47) | 113 (135) | 220 (220) | 4028 (6220) | $\\infty$ Ie6 | 0/15 |\n\nTable IV\nERT ON $f_{4}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009\n\n| $\\Delta f_{\\text {OBS }}$ | 1 e 1 | 1 e 0 | 1e-1 | 1e-3 | 1e-5 | 1e-7 | $\\#$ succ |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| f4 | 809 | 1633 | 1688 | 1817 | 1886 | 1903 | 15/15 |\n| ASYNCH | 11 (10) | 80 (72) | 100 (77) | 158 (103) | 326 (104) ${ }^{* 2}$ | 397 (62) | 11/15 |\n| SYNCH | 29 (26) | 80 (55) | 183 (118) | 231 (134) | 390 (40) | 755 (117) | 5/15 |\n| GA | 14 (26) | 71 (54) | 181 (144) | 511 (150) | $\\infty$ | $\\infty$ Ie6 | 0/15 |\n\nTable V\nERT ON $f_{5}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009\n\n| $\\Delta f_{\\text {OBS }}$ | 1 e 1 | 1 e 0 | 1e-1 | 1e-3 | 1e-5 | 1e-7 | $\\#$ succ |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| f5 | 10 | 10 | 10 | 10 | 10 | 10 | 15/15 |\n| ASYNCH | 2028 (851) | 2675 (1511) | 3061 (1309) | 3177 (1230) | 3254 (1281) | 3313 (1244) | 15/15 |\n| SYNCH | 1070 (751) | 2709 (507) | 3063 (439) | 3218 (565) | 3293 (512) | 3368 (753) | 15/15 |\n| GA | 1044 (1000) | 2971 (1274) | 3375 (1130) | 3507 (1240) | 3598 (1248) | 3654 (1170) | 15/15 |\n\nTable VI\nERT ON $f_{6}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009\n\n| $\\Delta f_{\\text {OBS }}$ | 1 e 1 | 1 e 0 | 1e-1 | 1e-3 | 1e-5 | 1e-7 | $\\#$ succ |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| f6 | 114 | 214 | 281 | 580 | 1038 | 1332 | 15/15 |\n| ASYNCH | 30 (90) | 166 (100) | 428 (560) | 1562 (1254) | 6743 (6596) | $\\infty$ Ie6 | 0/15 |\n| SYNCH | 94 (63) | 147 (118) | 234 (127) | 1818 (1097) | $\\infty$ | $\\infty$ Ie6 | 0/15 |\n| GA | 124 (102) | 170 (104) | 377 (330) | 2.4e4 (344) | $\\infty$ | $\\infty$ Ie6 | 0/15 |\n\nTable VII\nERT ON $f_{7}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009\n\n| $\\Delta f_{\\text {OBS }}$ | 1 e 1 | 1 e 0 | 1e-1 | 1e-3 | 1e-5 | 1e-7 | $\\#$ succ |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| f7 | 224 | 324 | 1171 | 1572 | 1572 | 1597 | 15/15 |\n| ASYNCH | 210 (136) | 410 (301) | 513 (402) | 1400 (1204) | 1400 (1228) | 1393 (1219) | 6/15 |\n| SYNCH | 227 (145) | 409 (150) | 670 (502) | 2099 (2142) | 2099 (2144) | 2073 (2130) | 4/15 |\n| GA | 335 (240) | 484 (550) | 783 (622) | $\\infty$ | $\\infty$ | $\\infty$ Ie6 | 0/15 |\n\nTable VIII\nERT ON $f_{8}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009\n\n| $\\Delta f_{\\text {OBS }}$ | 1 e 1 | 1 e 0 | 1e-1 | 1e-3 | 1e-5 | 1e-7 | $\\#$ succ |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| f8 | 73 | 273 | 336 | 391 | 410 | 422 | 15/15 |\n| ASYNCH | 213 (377) | 740 (640) | 2640 (3155) | 1.8e4 (344) | $\\infty$ | $\\infty$ Ie6 | 0/15 |\n| SYNCH | 202 (46) | 542 (659) | 2157 (2562) | 1.2e4 (344) | $\\infty$ | $\\infty$ Ie6 | 0/15 |\n| GA | 180 (57) | 385 (137) | 898 (955) | 8410 (6053) | $\\infty$ | $\\infty$ Ie6 | 0/15 |\n\n![img-2.jpeg](img-2.jpeg)\n\nFigure 5. Ratio of EJET for ASYNCH over EJET for SYNCH versus $\\log _{10}(\\Delta f)$ in $2:>, 3: \\leq, 5: \\mathrm{s}, 10:>, 20: \\leq, 40-\\mathrm{D}: \\leq$. Ratios $<10^{0}$ indicate an advantage of ASYNCH, smaller values are always better. The line becomes dashed when for any algorithm the EJET exceeds thrice the median of the trial-wise overall number of $f$-evaluations for the same algorithm on this function. Filled symbols indicate the best achieved $\\Delta f$-value of one algorithm (EJET is undefined to the right). The dashed line continues as the fraction of successful trials of the other algorithm, where 0 means $0 \\%$ and the $y$-axis limits mean $100 \\%$, values below zero for ASYNCH. The line ends when no algorithm reaches $\\Delta f$ anymore. The number of successful trials is given, only if it was in $\\{1 \\ldots 9\\}$ for ASYNCH ( $1^{\\text {st }}$ number) and non-zero for SYNCH ( $2^{\\text {nd }}$ number). Results are significant with $p=0.05$ for one star and $p=10^{-d / *}$ otherwise, with Bonferroni correction within each figure.\n\n![img-3.jpeg](img-3.jpeg)\n\nFigure 6. Bootstrapped empirical cumulative distribution of the number of objective function evaluations divided by dimension (FEvals/D) for 50 targets in $10^{(-6-2)}$ for all functions and subgroups in 5-D. The \"best 2009\" line corresponds to the best EJLT observed during BBOB 2009 for each single target.\n\n![img-4.jpeg](img-4.jpeg)\n\nFigure 7. Bootstrapped empirical cumulative distribution of the number of objective function evaluations divided by dimension (FEvals/D) for 50 targets in $10^{(-6,2)}$ for all functions and subgroups in 20-D. The \"best 2009\" line corresponds to the best EJLT observed during BBOB 2009 for each single target.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "L. Changhe, and Y. Shengxiang, An Island Based Hybrid Evolutionary Algorithm for Optimization, Simulated Evolution and Learning, LNCS, vol. 5361, pp. 180-189, 2008."
+      },
+      {
+        "ref_id": "2",
+        "text": "H. Mühlenbein, and G. Paa From recombination in genes to the estimation of dis- tribution 1, binary parameters, Lecture Notes in Computer Science 1411, Parallel Problem Solving from Nature, 1996."
+      },
+      {
+        "ref_id": "3",
+        "text": "T. Niknam, B. Amiri, J. Olamaei, and A. Arefi, An Efficient Hybrid Evolutionary Optimization Algorithm based on PSO and SA for clustering, JZU SC. A , vol 10, No 4, 512-519, 2008."
+      },
+      {
+        "ref_id": "4",
+        "text": "T. Tometzki, and S. Engell, Hybrid evolutionary optimization of two-stage stochastic integer programming problems, An empirical investigation, Evol Comput, Winter 17(4) 511-526, 2009."
+      },
+      {
+        "ref_id": "5",
+        "text": "R. Salomon, Re-evaluating genetic algorithm performance under coordinate rotation of benchmark func- tions. a survey of some theoretical and practical aspects of genetic algorithms, ELSEVIER, Biosystems 39, 263278, 1996."
+      },
+      {
+        "ref_id": "6",
+        "text": "S. M. Said, and M. Nakamura, A Hierarchical Hybrid Evolutionary Computation for Continuous Function Optimization, IJNGC, Vol. 3, No 1, 2012."
+      },
+      {
+        "ref_id": "7",
+        "text": "J.C. Bezdek, and N.R. Pal, Some new indexes of cluster validity, IEEE Trans. Syst. Man. Cybern., vol. 28, pp. 301315,1998."
+      },
+      {
+        "ref_id": "8",
+        "text": "G. W. Milligan, and M.C. Cooper, An examination of procedures for determining the number of clusters in a data set, Psychometrika, vol. 50, pp. 159-179,1985."
+      },
+      {
+        "ref_id": "9",
+        "text": "S. S. Abdelwahed, M. F. Hassan, M. A. Sultan, Parallel asynchronous algorithms for optimal control of large scale dynamic systems, J. Optimal Control applications and methods. 18, 1997."
+      },
+      {
+        "ref_id": "10",
+        "text": "C. Grosan, and A. Abraham Hybrid evolutionary algorithms: methodologies, architectures, and reviews In: Grosan C, Abraham A, Ishibuchi H, editors. Hybrid evolutionary algorithms. Berlin, Heidelberg: Springer; p. 117, 2007."
+      },
+      {
+        "ref_id": "11",
+        "text": "J. Ocenasek, Parallel estimation of distribution algorithms, Ph.D. thesis, Brno University of Technology, 2002."
+      },
+      {
+        "ref_id": "12",
+        "text": "A. Mendiburu-Alberro, Parallel implementation of estimation of distribution algorithms based on proba- bilistic graphical models. application to chemical calibration models, Ph.D. thesis, The University of the Basque Country, 2006."
+      },
+      {
+        "ref_id": "13",
+        "text": "P. Larranaga, and J. A. Lozano, Estimation of Distribution Algorithms, Kluwer Academic Publishers, 2002."
+      },
+      {
+        "ref_id": "14",
+        "text": "L. Davis, Handbook of Genetic Algorithms, Van Nostrand Reinhold, New York, 1991."
+      },
+      {
+        "ref_id": "15",
+        "text": "G. W. Milligan, Clustering validation: Results and implications for applied analyses, In P. Arabie, L.J. Hubert and G. De Soete (Eds.), Clustering and Classification, Singapore: World Scientific, pp 341-375, 1996."
+      },
+      {
+        "ref_id": "16",
+        "text": "Ray and R. H. Turi, Determination of number of clusters in K-means clustering and application in colour image segmentation, (invited paper) in N R Pal, A K De and J Das (eds), Proceedings of the 4th International Conference on Advances in Pattern Recognition and Digital Techniques (ICAPRDT'99), Calcutta, India, Narosa Publishing House, New Delhi, India, ISBN: 81-7319-347-9, pp 137-143, 2729 December, 1999."
+      },
+      {
+        "ref_id": "17",
+        "text": "C. Gagne, and M. Parizeau, A Robust Master-Slave Distribution Architecture for Evolutionary Computations, Proc of Genetic and Evolutionary Computation Conference, Late Breaking, pp. 80-87, 2003."
+      },
+      {
+        "ref_id": "18",
+        "text": "S. M. Said, and M. Nakamura, Parallel Enhanced Hybrid Evolutionary Algorithm for Continuous Function Optimization, Proc of 7th International Conference on P2P, Parallel, Grid, Cloud and Internet Computing, Victoria, Canada, (Accepted), 2012."
+      },
+      {
+        "ref_id": "19",
+        "text": "K. Price, Differential evolution vs. the functions of the second $I C E O$, In Proceedings of the IEEE International Congress on Evolutionary Computation, pages 153157, 1997."
+      },
+      {
+        "ref_id": "20",
+        "text": "M. Golub and L. Budin An Asynchronous Model of Global Parallel Genetic Algorithms, 2nd ICSC Symposium on Engineering of Intelligent Systems EIS2000, pp 353359, 2000."
+      },
+      {
+        "ref_id": "21",
+        "text": "S. Finck, N. Hansen, R. Ros, and A. Auger, Realparameter black-box optimization benchmarking 2009: Presentation of the noiseless functions, Technical Report 2009/20, Research Center PPE, 2009, Updated February 2010."
+      },
+      {
+        "ref_id": "22",
+        "text": "N. Hansen, A. Auger, S. Finck, and R. Ros Realparameter black-box optimization benchmarking 2010: Experimental setup, Technical Report RR-7215, INRIA, 2010."
+      },
+      {
+        "ref_id": "23",
+        "text": "N. Hansen, S. Finck, R. Ros, and A. Auger, Realparameter black-box optimization benchmarking 2009: Noiseless functions definitions, Technical Report RR-6829, INRIA, 2009, Updated February 2010."
+      }
+    ],
+    "reference_count": 23,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "ERT ON $f_{1}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009",
+      "headers": [
+        "$\\Delta f_{\\text {OBS }}$",
+        "1 e 1",
+        "1 e 0",
+        "1e-1",
+        "1e-3",
+        "1e-5",
+        "1e-7",
+        "$\\#$ succ"
+      ],
+      "rows": [
+        [
+          1,
+          11,
+          12,
+          12,
+          12,
+          12,
+          12,
+          1515
+        ],
+        [
+          "ASYNCH",
+          3826,
+          691179,
+          1210349,
+          2150561,
+          4088137,
+          1.34171,
+          1515
+        ],
+        [
+          "SYNCH",
+          4.54,
+          531167,
+          1001343,
+          1889513,
+          3919135,
+          1.94344,
+          1515
+        ],
+        [
+          "GA",
+          9.36,
+          575181,
+          984349,
+          1864656,
+          3829177,
+          2.44344,
+          615
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "II",
+      "table_title": "ERT ON $f_{2}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009",
+      "headers": [
+        "$\\Delta f_{\\text {OBS }}$",
+        "1 e 1",
+        "1 e 0",
+        "1e-1",
+        "1e-3",
+        "1e-5",
+        "1e-7",
+        "$\\#$ succ"
+      ],
+      "rows": [
+        [
+          2,
+          83,
+          87,
+          88,
+          90,
+          92,
+          94,
+          1515
+        ],
+        [
+          "ASYNCH",
+          235134,
+          523231,
+          882300,
+          2925922,
+          4908107,
+          95942500,
+          1015
+        ],
+        [
+          "SYNCH",
+          194127,
+          515140,
+          833406,
+          44791170,
+          80461602,
+          2.44344,
+          415
+        ],
+        [
+          "GA",
+          153136,
+          507127,
+          658106,
+          61835033,
+          "$\\infty$",
+          6,
+          15
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "III",
+      "table_title": "ERT ON $f_{3}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009",
+      "headers": [
+        "$\\Delta f_{\\text {OBS }}$",
+        "1 e 1",
+        "1 e 0",
+        "1e-1",
+        "1e-3",
+        "1e-5",
+        "1e-7",
+        "$\\#$ succ"
+      ],
+      "rows": [
+        [
+          3,
+          716,
+          1622,
+          1637,
+          1646,
+          1650,
+          1654,
+          1515
+        ],
+        [
+          "ASYNCH",
+          17717,
+          3934,
+          9466,
+          11961,
+          254127,
+          43925,
+          1415
+        ],
+        [
+          "SYNCH",
+          2211,
+          4933,
+          9371,
+          150133,
+          40463,
+          52861,
+          715
+        ],
+        [
+          "GA",
+          1814,
+          7347,
+          113135,
+          220220,
+          40286220,
+          6,
+          15
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "IV",
+      "table_title": "ERT ON $f_{4}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009",
+      "headers": [
+        "$\\Delta f_{\\text {OBS }}$",
+        "1 e 1",
+        "1 e 0",
+        "1e-1",
+        "1e-3",
+        "1e-5",
+        "1e-7",
+        "$\\#$ succ"
+      ],
+      "rows": [
+        [
+          4,
+          809,
+          1633,
+          1688,
+          1817,
+          1886,
+          1903,
+          1515
+        ],
+        [
+          "ASYNCH",
+          1110,
+          8072,
+          10077,
+          158103,
+          326104,
+          39762,
+          1115
+        ],
+        [
+          "SYNCH",
+          2926,
+          8055,
+          183118,
+          231134,
+          39040,
+          755117,
+          515
+        ],
+        [
+          "GA",
+          1426,
+          7154,
+          181144,
+          511150,
+          "$\\infty$",
+          6,
+          15
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "V",
+      "table_title": "ERT ON $f_{5}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009",
+      "headers": [
+        "$\\Delta f_{\\text {OBS }}$",
+        "1 e 1",
+        "1 e 0",
+        "1e-1",
+        "1e-3",
+        "1e-5",
+        "1e-7",
+        "$\\#$ succ"
+      ],
+      "rows": [
+        [
+          5,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          1515
+        ],
+        [
+          "ASYNCH",
+          2028851,
+          26751511,
+          30611309,
+          31771230,
+          32541281,
+          33131244,
+          1515
+        ],
+        [
+          "SYNCH",
+          1070751,
+          2709507,
+          3063439,
+          3218565,
+          3293512,
+          3368753,
+          1515
+        ],
+        [
+          "GA",
+          10441000,
+          29711274,
+          33751130,
+          35071240,
+          35981248,
+          36541170,
+          1515
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "VI",
+      "table_title": "ERT ON $f_{6}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009",
+      "headers": [
+        "$\\Delta f_{\\text {OBS }}$",
+        "1 e 1",
+        "1 e 0",
+        "1e-1",
+        "1e-3",
+        "1e-5",
+        "1e-7",
+        "$\\#$ succ"
+      ],
+      "rows": [
+        [
+          6,
+          114,
+          214,
+          281,
+          580,
+          1038,
+          1332,
+          1515
+        ],
+        [
+          "ASYNCH",
+          3090,
+          166100,
+          428560,
+          15621254,
+          67436596,
+          6,
+          15
+        ],
+        [
+          "SYNCH",
+          9463,
+          147118,
+          234127,
+          18181097,
+          "$\\infty$",
+          6,
+          15
+        ],
+        [
+          "GA",
+          124102,
+          170104,
+          377330,
+          2.44344,
+          "$\\infty$",
+          6,
+          15
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "VII",
+      "table_title": "ERT ON $f_{7}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009",
+      "headers": [
+        "$\\Delta f_{\\text {OBS }}$",
+        "1 e 1",
+        "1 e 0",
+        "1e-1",
+        "1e-3",
+        "1e-5",
+        "1e-7",
+        "$\\#$ succ"
+      ],
+      "rows": [
+        [
+          7,
+          224,
+          324,
+          1171,
+          1572,
+          1572,
+          1597,
+          1515
+        ],
+        [
+          "ASYNCH",
+          210136,
+          410301,
+          513402,
+          14001204,
+          14001228,
+          13931219,
+          615
+        ],
+        [
+          "SYNCH",
+          227145,
+          409150,
+          670502,
+          20992142,
+          20992144,
+          20732130,
+          415
+        ],
+        [
+          "GA",
+          335240,
+          484550,
+          783622,
+          "$\\infty$",
+          "$\\infty$",
+          6,
+          15
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "VIII",
+      "table_title": "ERT ON $f_{8}$ IN 5-D OVER ERT ${ }_{\\text {BEST }}$ OBSAINED IN BBOB 2009",
+      "headers": [
+        "$\\Delta f_{\\text {OBS }}$",
+        "1 e 1",
+        "1 e 0",
+        "1e-1",
+        "1e-3",
+        "1e-5",
+        "1e-7",
+        "$\\#$ succ"
+      ],
+      "rows": [
+        [
+          8,
+          73,
+          273,
+          336,
+          391,
+          410,
+          422,
+          1515
+        ],
+        [
+          "ASYNCH",
+          213377,
+          740640,
+          26403155,
+          1.84344,
+          "$\\infty$",
+          6,
+          15
+        ],
+        [
+          "SYNCH",
+          20246,
+          542659,
+          21572562,
+          1.24344,
+          "$\\infty$",
+          6,
+          15
+        ],
+        [
+          "GA",
+          18057,
+          385137,
+          898955,
+          84106053,
+          "$\\infty$",
+          6,
+          15
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2005/Continuous optimization based-on greedy estimation of GMM.md",
+    "filename": "Continuous optimization based-on greedy estimation of GMM.md",
+    "title": "Continuous optimization based-on greedy estimation of GMM",
+    "year": "2005"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] H. Mühlenbein and G. Paaß. \"From recombination of genes to the estimation of distributions I. Binary parameters,\" Parallel Problem Solving from Nature - PPSN V, pages 178-187. Springer, 1998\n[2] M. Pelikan, D.E. Goldberg, and F. Lobo. \"A survey of optimization by building and using probabilistic models,\" IlliGAL Tech. Rep. $99018 ., 1999$\n[3] H. Mühlenbein, \"The equation for response to selection and its use\n\nfor prediction,\" Evolut. Comput., vol. 5, pp. 303-346, 1998.\n[4] M. Pelikan and H. Mühlenbein, \"The bivariate marginal distribution algorithm,\"Adv. Soft Comput.-Eng. Design and Manuf., pp. 521-535,1999.\n[5] M. Pelikan, D. E. Goldberg, and E. Cantú-Paz, \"BOA: The Bayesian optimization algorithm,\" in Proc. Genetic and Evolutionary Computation Conf. (GECCO-99), vol. I, 1999, pp. 525-532.\n[6] G.R. Harik, F.G. Lobo, and D.E. Goldberg, \"The compact genetic algorithm,\" in Proceedings of the International Confervce on Evolutionary Computation (ICEC) 1998, pp. 523-528\n[7] J. S. D. Bonet, C. L. Isbell, and P. Viola, \"MIMIC: Finding optima by estimating probability densities,\" Adv. Neural Inform. Process. Syst., vol. 9, p. 424, 1997.\n[8] M. Sebag and A. Ducoulombier, \"Extending population-based incremental learning to continuous search spaces,\" in Parallel Problem Solving from Nature-PPSN V, 1998, pp. 418-427.\n[9] S. Rudlof and M.Köppen, \"Stochastic hill climbing by vectors of normal distributions,\" in Proc. 1st OnlineWorkshop on Soft Computing (WSC1), Nagoya, Japan, 1996.\n[10] I. Servet, L. Trave-Masouyes, D. Stern, Telephone network traffic overloading diagnosis and evolutionary computation techniques. In Proceedings of the Third European Conference on Artificial Evolution (AE'97). 1997, pp. 137-144.\n[11] P. Larrañaga, R. Etxeberria, J.A. Lozano and J.M. Peña, \"Optimization in continuous domains by learning and simulation of Gaussian networks,\" in Proc. 2000 Genetic and Evolutionary Computation Conf. Workshop Program, pp. 201-204, 2000.\n[12] H. Mühlenbein, T. Mahnig, and O. Rodriguez. \"Schemata, distributions and graphical models in evolutionary optimization\".in Journal of Heuristics, 5:215-247, 1999\n[13] P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña, \"Optimization by Learning and Simulation of Bayesian and Gaussian Networks,\" Dept. Comput. Sci. Artific. Intell., Univ. Basque Country, Tech. Rep. EHUKZAA- IK-4/99, 1999.\n[14] P. A. N. Bosman and D. Thierens, \"Expanding from discrete to continuous estimation of distribution algorithms: The IDEA,\" in Paralle Problem Solving from Nature-PPSN VI, M. Schoenauer, K. Deb, G. Rudolph, X. Yao, E. Lutton, J. J. Merelo, and H.-P. Schwefel, Eds. New York: Springer-Verlag, 2000, pp. 767-776.\n[15] P. A. N. Bosman and D. Thierens, \"Advancing continuous IDEA's with mixture distributions and factorization selection metrics,\" in Proc. Optimization by Building and Using Probabilistic Models (OBUPM) Workshop at the Genetic and Ecolutionary Computation Conf. (GECCO- 2001), M. Pelikan and K. Sastry, Eds., San Francisco, CA, 2001, pp. 208-212.\n[16] Qiang Lu and Xin Yao. \"Clustering and Learning Gaussian Distribution for Continuous Optimization\", in IEEE Transactions on Systems,Man and Cybernetics-PART C:Applications and Reviews, VOL.35,NO.2,May 2005.\n[17] M. Pelikan and D. E. Goldberg, \"Genetic algorithms, clustering, and the breaking of symmetry,\" in Proc. Parallel Problem Solving from Nature-PPSN VI, Paris, France, 2000, pp. 385-394.\n[18] M. Gallagher, M. Frearn, and T. Downs. Real-valued evolutionary optimization using a flexible probability density estimator. In W. Banzhaf, J. Daida, A.E. Eiben, M.H. Garzon, V. Honavar, M. Jakiela, and R.E. Smith, editors, Proceedings of the GECCO-1999 Genetic and Evolutionary Computation Conference, pages 840846. Morgan Kaufmann Publishers, 1999\n[19] L. Xu, \"Rival penalized competitive learning, finite mixture, and multisets clustering,\" in Proc. Int. Joint Conf. Neural Networks, vol.II, pp. 2525-2530, 1997.\n[20] NIKOS V. and ARISTIDIS L., \"A Greedy EM Algorithm for Gaussian Mixture Learning\", in Neural Processing Letters 15:\n\n77-87, 2002.\n[21] Li, J. Q. and Barron, A. R., \"Mixture density estimation\", In Advances in Neural Information Processing Systems 12, The MIT Press, 2000.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "H. Mühlenbein and G. Paaß. \"From recombination of genes to the estimation of distributions I. Binary parameters,\" Parallel Problem Solving from Nature - PPSN V, pages 178-187. Springer, 1998"
+      },
+      {
+        "ref_id": "2",
+        "text": "M. Pelikan, D.E. Goldberg, and F. Lobo. \"A survey of optimization by building and using probabilistic models,\" IlliGAL Tech. Rep. $99018 ., 1999$"
+      },
+      {
+        "ref_id": "3",
+        "text": "H. Mühlenbein, \"The equation for response to selection and its use"
+      },
+      {
+        "ref_id": "4",
+        "text": "M. Pelikan and H. Mühlenbein, \"The bivariate marginal distribution algorithm,\"Adv. Soft Comput.-Eng. Design and Manuf., pp. 521-535,1999."
+      },
+      {
+        "ref_id": "5",
+        "text": "M. Pelikan, D. E. Goldberg, and E. Cantú-Paz, \"BOA: The Bayesian optimization algorithm,\" in Proc. Genetic and Evolutionary Computation Conf. (GECCO-99), vol. I, 1999, pp. 525-532."
+      },
+      {
+        "ref_id": "6",
+        "text": "G.R. Harik, F.G. Lobo, and D.E. Goldberg, \"The compact genetic algorithm,\" in Proceedings of the International Confervce on Evolutionary Computation (ICEC) 1998, pp. 523-528"
+      },
+      {
+        "ref_id": "7",
+        "text": "J. S. D. Bonet, C. L. Isbell, and P. Viola, \"MIMIC: Finding optima by estimating probability densities,\" Adv. Neural Inform. Process. Syst., vol. 9, p. 424, 1997."
+      },
+      {
+        "ref_id": "8",
+        "text": "M. Sebag and A. Ducoulombier, \"Extending population-based incremental learning to continuous search spaces,\" in Parallel Problem Solving from Nature-PPSN V, 1998, pp. 418-427."
+      },
+      {
+        "ref_id": "9",
+        "text": "S. Rudlof and M.Köppen, \"Stochastic hill climbing by vectors of normal distributions,\" in Proc. 1st OnlineWorkshop on Soft Computing (WSC1), Nagoya, Japan, 1996."
+      },
+      {
+        "ref_id": "10",
+        "text": "I. Servet, L. Trave-Masouyes, D. Stern, Telephone network traffic overloading diagnosis and evolutionary computation techniques. In Proceedings of the Third European Conference on Artificial Evolution (AE'97). 1997, pp. 137-144."
+      },
+      {
+        "ref_id": "11",
+        "text": "P. Larrañaga, R. Etxeberria, J.A. Lozano and J.M. Peña, \"Optimization in continuous domains by learning and simulation of Gaussian networks,\" in Proc. 2000 Genetic and Evolutionary Computation Conf. Workshop Program, pp. 201-204, 2000."
+      },
+      {
+        "ref_id": "12",
+        "text": "H. Mühlenbein, T. Mahnig, and O. Rodriguez. \"Schemata, distributions and graphical models in evolutionary optimization\".in Journal of Heuristics, 5:215-247, 1999"
+      },
+      {
+        "ref_id": "13",
+        "text": "P. Larrañaga, R. Etxeberria, J. A. Lozano, and J. M. Peña, \"Optimization by Learning and Simulation of Bayesian and Gaussian Networks,\" Dept. Comput. Sci. Artific. Intell., Univ. Basque Country, Tech. Rep. EHUKZAA- IK-4/99, 1999."
+      },
+      {
+        "ref_id": "14",
+        "text": "P. A. N. Bosman and D. Thierens, \"Expanding from discrete to continuous estimation of distribution algorithms: The IDEA,\" in Paralle Problem Solving from Nature-PPSN VI, M. Schoenauer, K. Deb, G. Rudolph, X. Yao, E. Lutton, J. J. Merelo, and H.-P. Schwefel, Eds. New York: Springer-Verlag, 2000, pp. 767-776."
+      },
+      {
+        "ref_id": "15",
+        "text": "P. A. N. Bosman and D. Thierens, \"Advancing continuous IDEA's with mixture distributions and factorization selection metrics,\" in Proc. Optimization by Building and Using Probabilistic Models (OBUPM) Workshop at the Genetic and Ecolutionary Computation Conf. (GECCO- 2001), M. Pelikan and K. Sastry, Eds., San Francisco, CA, 2001, pp. 208-212."
+      },
+      {
+        "ref_id": "16",
+        "text": "Qiang Lu and Xin Yao. \"Clustering and Learning Gaussian Distribution for Continuous Optimization\", in IEEE Transactions on Systems,Man and Cybernetics-PART C:Applications and Reviews, VOL.35,NO.2,May 2005."
+      },
+      {
+        "ref_id": "17",
+        "text": "M. Pelikan and D. E. Goldberg, \"Genetic algorithms, clustering, and the breaking of symmetry,\" in Proc. Parallel Problem Solving from Nature-PPSN VI, Paris, France, 2000, pp. 385-394."
+      },
+      {
+        "ref_id": "18",
+        "text": "M. Gallagher, M. Frearn, and T. Downs. Real-valued evolutionary optimization using a flexible probability density estimator. In W. Banzhaf, J. Daida, A.E. Eiben, M.H. Garzon, V. Honavar, M. Jakiela, and R.E. Smith, editors, Proceedings of the GECCO-1999 Genetic and Evolutionary Computation Conference, pages 840846. Morgan Kaufmann Publishers, 1999"
+      },
+      {
+        "ref_id": "19",
+        "text": "L. Xu, \"Rival penalized competitive learning, finite mixture, and multisets clustering,\" in Proc. Int. Joint Conf. Neural Networks, vol.II, pp. 2525-2530, 1997."
+      },
+      {
+        "ref_id": "20",
+        "text": "NIKOS V. and ARISTIDIS L., \"A Greedy EM Algorithm for Gaussian Mixture Learning\", in Neural Processing Letters 15:"
+      },
+      {
+        "ref_id": "21",
+        "text": "Li, J. Q. and Barron, A. R., \"Mixture density estimation\", In Advances in Neural Information Processing Systems 12, The MIT Press, 2000."
+      }
+    ],
+    "reference_count": 21,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$\\boldsymbol{i}$",
+        "$\\boldsymbol{a}_{\\boldsymbol{j}}, \\boldsymbol{j}=1, \\ldots, 4$",
+        "",
+        "",
+        "$c_{i}$"
+      ],
+      "rows": [
+        [
+          1,
+          2,
+          2,
+          2,
+          0.1
+        ],
+        [
+          2,
+          4,
+          4,
+          4,
+          0.2
+        ],
+        [
+          3,
+          8,
+          8,
+          8,
+          0.2
+        ],
+        [
+          4,
+          6,
+          6,
+          6,
+          0.4
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "I",
+      "table_title": "Settings For The Test Functions",
+      "headers": [
+        "Functions",
+        "Dim",
+        "Domain",
+        "Type",
+        "Optimum"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          30,
+          "$[-100,100]$",
+          "Min",
+          0
+        ],
+        [
+          "SumCan",
+          10,
+          "$[-0.16,0.16]$",
+          "Max",
+          100000
+        ],
+        [
+          "TwoPeaks",
+          5,
+          "$[-100,100]$",
+          "Max",
+          10.1053
+        ],
+        [
+          "ThreePeaks",
+          5,
+          "$[-100,100]$",
+          "Max",
+          10.1053
+        ],
+        [
+          "Shekel $(n=5)$",
+          4,
+          "$[0,10]$",
+          "Max",
+          10.1033
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "EXPERIMENTAL Settings For The Test Algorithms",
+      "headers": [
+        "Algorithms",
+        "Population",
+        "Selecion"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          1000,
+          500
+        ],
+        [
+          "EGNA",
+          1000,
+          500
+        ],
+        [
+          "CEGDA",
+          2000,
+          500
+        ],
+        [
+          "GEMEDA",
+          1000,
+          500
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "EXPERIMENTAL RESULTS FOR THE SPHERE FUNCTION",
+      "headers": [
+        "Algorithms",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          200,
+          "$1.88 \\mathrm{e}-016$",
+          "$3.24 \\mathrm{e}-016$",
+          "$5.59 \\mathrm{e}-017$"
+        ],
+        [
+          "EGNA",
+          200,
+          "$5.86 \\mathrm{e}-010$",
+          "$1.20 \\mathrm{e}-009$",
+          "$3.40 \\mathrm{e}-009$"
+        ],
+        [
+          "CEGDA",
+          100,
+          "$3.38 \\mathrm{e}-008$",
+          "$3.41 \\mathrm{e}-006$",
+          "$8.40 \\mathrm{e}-007$"
+        ],
+        [
+          "GEMEDA",
+          200,
+          "$1.01 \\mathrm{e}-013$",
+          "$1.31 \\mathrm{e}-013$",
+          "$2.15 \\mathrm{e}-014$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "IV",
+      "table_title": "EXPERIMENTAL RESULTS FOR THE SumCAN Function",
+      "headers": [
+        "Algorithms",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          200,
+          698.72,
+          221.771,
+          116.101
+        ],
+        [
+          "EGNA",
+          200,
+          100000,
+          100000,
+          0
+        ],
+        [
+          "CEGDA",
+          100,
+          99834.5,
+          99748.1,
+          63.2197
+        ],
+        [
+          "GEMEDA",
+          100,
+          99996.827,
+          99995.308,
+          0.765
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "V",
+      "table_title": "EXPERIMENTAL Results For The TwoPeaks Function",
+      "headers": [
+        "Algorithms",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          400,
+          10.1053,
+          9.6327,
+          0.1073
+        ],
+        [
+          "EGNA",
+          400,
+          10.1053,
+          9.8324,
+          0.0828
+        ],
+        [
+          "CEGDA",
+          200,
+          10.1053,
+          10.0999,
+          "$5.92 \\mathrm{e}-003$"
+        ],
+        [
+          "GEMEDA",
+          100,
+          10.1053,
+          10.1002,
+          0.0166
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "VI",
+      "table_title": "EXPERIMENTAL Results For The ThreePeaks Function",
+      "headers": [
+        "Algorithms",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          400,
+          5.05266,
+          5.05266,
+          "$8.88 \\mathrm{e}-016$"
+        ],
+        [
+          "EGNA",
+          400,
+          5.05266,
+          5.05266,
+          "$8.88 \\mathrm{e}-016$"
+        ],
+        [
+          "CEGDA",
+          200,
+          10.1053,
+          10.1048,
+          "$7.99 \\mathrm{e}-004$"
+        ],
+        [
+          "GEMEDA",
+          100,
+          10.1053,
+          10.0988,
+          0.01854
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "VII",
+      "table_title": "EXPERIMENTAL Results For The SheKel Function",
+      "headers": [
+        "Algorithms",
+        "Gen",
+        "Best",
+        "Mean",
+        "Std"
+      ],
+      "rows": [
+        [
+          "UMDAc",
+          400,
+          5.1877,
+          4.7331,
+          0.7406
+        ],
+        [
+          "EGNA",
+          400,
+          8.2036,
+          4.9691,
+          0.7786
+        ],
+        [
+          "CEGDA",
+          200,
+          10.1033,
+          10.1033,
+          "$8.8818 \\mathrm{e}-015$"
+        ],
+        [
+          "GEMEDA",
+          100,
+          10.1033,
+          10.094,
+          0.04227
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    }
+  ]
+}

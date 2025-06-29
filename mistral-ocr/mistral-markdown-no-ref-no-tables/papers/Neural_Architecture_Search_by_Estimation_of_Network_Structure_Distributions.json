@@ -1,0 +1,641 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Neural Architecture Search by Estimation of Network Structure Distributions.md",
+    "filename": "Neural Architecture Search by Estimation of Network Structure Distributions.md",
+    "title": "Neural Architecture Search by Estimation of Network Structure Distributions",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] Y. LeCun, Y. Bengio, and G. Hinton, \"Deep learning,\" Nature, vol. 521, no. 7553, pp. 436-444, May 2015.\n[2] K. He, X. Zhang, S. Ren, and J. Sun, \"Deep residual learning for image recognition,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2016, pp. 770-778.\n[3] G. Huang, Z. Liu, L. Van Der Maaten, and K. Q. Weinberger, \"Densely connected convolutional networks,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jul. 2017, pp. 2261-2269.\n[4] L.-C. Chen, G. Papandreou, I. Kokkinos, K. Murphy, and A. L. Yuille, \"DeepLab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected CRFs,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 40, no. 4, pp. 834-848, Apr. 2018.\n[5] S. Ren, K. He, R. Giesnick, and J. Sun, \"Faster R-CNN: Towards real-time object detection with region proposal networks,\" in Proc. Adv. Neural Inf. Process. Syst., 2015, pp. 91-99.\n[6] Z. C. Lipton, \"The mythos of model interpretability,\" in Proc. ICML Workshop Human Interpretability Mach. Learn. (WHI), 2016, pp. 1-28.\n[7] A. S. Charles, \"Interpreting deep learning: The machine learning rorschach test?\" 2018, arXiv:1806.00148. [Online]. Available: http://arxiv.org/abs/1806.00148\n[8] G. Montavon, W. Samek, and K.-R. Müller, \"Methods for interpreting and understanding deep neural networks,\" Digit. Signal Process., vol. 73, pp. 1-15, Feb. 2018.\n[9] A. Nguyen, J. Yosinski, and J. Clune, \"Deep neural networks are easily fooled: High confidence predictions for unrecognizable images,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2015, pp. 427-436.\n[10] K. He, X. Zhang, S. Ren, and J. Sun, \"Identity mappings in deep residual networks,\" in Proc. Eur. Conf. Comput. Vis. (ECCV), 2016, pp. 630-645.\n[11] K. Weiss, T. M. Khoshgoftaar, and D. Wang, \"A survey of transfer learning,\" J. Big Data, vol. 3, no. 1, p. 9, 2016.\n[12] A. Muravev, J. Raitoharju, and M. Gabbouj, \"On the layer selection in small-scale deep networks,\" in Proc. 7th Eur. Workshop Vis. Inf. Process. (EUVIP), Nov. 2018.\n[13] T. Tommasi, N. Patricia, B. Caputo, and T. Tuytelaars, \"A deeper look at dataset bias,\" in Domain Adaptation in Computer Vision Applications, G. Csurka, Ed. Cham, Switzerland: Springer, 2017, pp. 37-55, doi: 10.1007/978-3-319-58347-1_2\n[14] D. Whitley, T. Starkweather, and C. Bogart, \"Genetic algorithms and neural networks: Optimizing connections and connectivity,\" Parallel Comput., vol. 14, no. 3, pp. 347-361, Aug. 1990.\n[15] X. Yao, \"Evolving artificial neural networks,\" Proc. IEEE, vol. 87, no. 9, pp. 1423-1447, Sep. 1999.\n[16] K. O. Stanley and R. Miikkulainen, \"Evolving neural networks through augmenting topologies,\" Evol. Comput., vol. 10, no. 2, pp. 99-127, 2002.\n[17] K. O. Stanley, D. B. D'Ambrosio, and J. Gauci, \"A hypercube-based encoding for evolving large-scale neural networks,\" Artif. Life, vol. 15, no. 2, pp. 185-212, Apr. 2009.\n[18] S. Kiranyaz, T. Ince, A. Yildirim, and M. Gabbouj, \"Evolutionary artificial neural networks by multi-dimensional particle swarm optimization,\" Neural Netw., vol. 22, no. 10, pp. 1448-1462, Dec. 2009.\n[19] D. Floreano, P. Dürr, and C. Mattiussi, \"Neuroevolution: From architectures to learning,\" Evol. Intell., vol. 1, no. 1, pp. 47-62, Mar. 2008.\n[20] L. Xie and A. Yuille, \"Genetic CNN,\" in Proc. IEEE Int. Conf. Comput. Vis. (ICCV), Oct. 2017, pp. 1388-1397.\n[21] E. Real, S. Moore, A. Selle, S. Saxena, Y. L. Suematsu, J. Tan, Q. Le, and A. Kurakin, \"Large-scale evolution of image classifiers,\" in Proc. Int. Conf. Mach. Learn. (ICML), 2017, pp. 2902-2911.\n[22] H. Zhang, S. Kiranyaz, and M. Gabbouj, \"Finding better topologies for deep convolutional neural networks by evolution,\" 2018, arXiv:1809.03242. [Online]. Available: http://arxiv.org/abs/1809.03242\n[23] E. Real, A. Aggarwal, Y. Huang, and Q. V. Le, \"Regularized evolution for image classifier architecture search,\" Proc. AAAI Conf. Artif. Intell., vol. 33, 2019, pp. 4780-4789.\n\n[24] Y. Sun, B. Xue, M. Zhang, and G. G. Yen, \"Evolving deep convolutional neural networks for image classification,\" IEEE Trans. Evol. Comput., vol. 24, no. 2, pp. 394-407, Apr. 2020.\n[25] B. Zoph and Q. V. Le, \"Neural architecture search with reinforcement learning,\" in Int. Conf. Learn. Represent. (ICLR), 2017, pp. 1-16.\n[26] B. Zoph, V. Vasudevan, J. Shlens, and Q. V. Le, \"Learning transferable architectures for scalable image recognition,\" in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit., Jun. 2018, pp. 8697-8710.\n[27] H. Pham, M. Y. Guan, B. Zoph, Q. V. Le, and J. Dean, \"Efficient neural architecture search via parameter sharing,\" in Proc. 35th Int. Conf. Mach. Learn. (PMLR), 2018, pp. 4095-4104.\n[28] C. Liu, B. Zoph, M. Neumann, and J. Shlens, \"Progressive neural architecture search,\" in Proc. Eur. Conf. Comput. Vis. (ECCV). Cham, Switzerland: Springer, 2018, pp. 19-35.\n[29] T. Elsken, J. H. Metzen, and F. Hutter, \"Efficient multi-objective neural architecture search via lamarckian evolution,\" in Proc. Int. Conf. Learn. Represent. (ICLR), 2019, pp. 1-23.\n[30] H. Liu, K. Simonyan, and Y. Yang, \"DARTS: Differentiable architecture search,\" in Int. Conf. Learn. Represent. (ICLR), 2019, pp. 1-13.\n[31] K. Yu, C. Sciuto, M. Jaggi, C. Musat, and M. Salzmann, \"Evaluating the search phase of neural architecture search,\" 2019, arXiv:1902.08142. [Online]. Available: http://arxiv.org/abs/1902.08142\n[32] S. Baluja, Population-Based Incremental Learning: A Method for Integrating Genetic Search Based Function Optimization and Competitive Learning. Pittsburgh, PA, USA: Carnegie Mellon Univ., 1994.\n[33] H. Mühlenbein, \"The equation for response to selection and its use for prediction,\" Evol. Comput., vol. 5, no. 3, pp. 303-346, Sep. 1997, doi: 10.1162/eeco.1997.5.3.303.\n[34] D. E. Rumelhart, G. E. Hinton, and R. J. Williams, \"Learning representations by back-propagating errors,\" in Neurocomputing: Foundations of Research, J. A. Anderson and E. Rosenfeld, Eds. Cambridge, MA, USA: MIT Press, 1988, pp. 696-699. [Online]. Available: http://dl.acm.org/citation.cfm?id=65669.104451\n[35] T. Back, U. Hammel, and H.-P. Schwefel, \"Evolutionary computation: Comments on the history and current state,\" IEEE Trans. Evol. Comput., vol. 1, no. 1, pp. 3-17, Apr. 1997.\n[36] S. Luke, Essentials Metaheuristics, 2nd ed. Lulu, 2013. [Online]. Available: http://cs.gmu.edu/ sean/book/metaheuristics/\n[37] F. Gomez and R. Miikkulainen, \"Incremental evolution of complex general behavior,\" Adapt. Behav., vol. 5, nos. 3-4, pp. 317-342, Jan. 1997.\n[38] X. Yao and Y. Liu, \"A new evolutionary system for evolving artificial neural networks,\" IEEE Trans. Neural Netw., vol. 8, no. 3, pp. 694-713, May 1997.\n[39] F. J. Gomez and R. Miikkulainen, \"Solving non-Markovian control tasks with neuroevolution,\" in Proc. 16th Int. Joint Conf. Artif. Intell., vol. 2, 1999, pp. 1356-1361.\n[40] K. O. Stanley, \"Compositional pattern producing networks: A novel abstraction of development,\" Genetic Program. Evolvable Mach., vol. 8, no. 2, pp. 131-162, Jun. 2007.\n[41] S. Risi and K. O. Stanley, \"An enhanced hypercube-based encoding for evolving the placement, density, and connectivity of neurons,\" Artif. Life, vol. 18, no. 4, pp. 331-363, Oct. 2012.\n[42] D. B. D’Ambrosio, J. Gauci, and K. O. Stanley, \"HyperNEAT: The first five years,\" in Growing Adaptive Machines. Berlin, Germany: Springer, 2014, pp. 159-185.\n[43] R. Miikkulainen, J. Liang, E. Meyerson, A. Rawal, D. Fink, O. Francon, B. Raju, H. Shahrzad, A. Navruzyan, N. Duffy, and B. Hodjat, \"Evolving deep neural networks,\" in Artificial Intelligence in the Age of Neural Networks and Brain Computing. New York, NY, USA: Academic, 2019, pp. 293-312.\n[44] Y. Sun, B. Xue, M. Zhang, and G. G. Yen, \"Completely automated CNN architecture design based on blocks,\" IEEE Trans. Neural Netw. Learn. Syst., vol. 31, no. 4, pp. 1242-1254, Apr. 2020. [Online]. Available: https://ieeexplore.ieee.org/document/8742788/\n[45] S. Kiranyaz, T. Ince, A. Iosifidis, and M. Gabbouj, \"Progressive operational perceptions,\" Neurocomputing, vol. 224, pp. 142-154, Feb. 2017.\n[46] S. Kiranyaz, T. Ince, A. Iosifidis, and M. Gabbouj, \"Operational neural networks,\" 2019, arXiv:1902.11106. [Online]. Available: http://arxiv.org/abs/1902.11106\n[47] D. T. Tran, S. Kiranyaz, M. Gabbouj, and A. Iosifidis, \"Heterogeneous multilayer generalized operational perception,\" IEEE Trans. Neural Netw. Learn. Syst., vol. 31, no. 3, pp. 710-724, Mar. 2020. [Online]. Available: http://arxiv.org/abs/1804.05093\n[48] A. Brock, T. Lim, J. M. Ritchie, and N. Weston, \"Smash: One-shot model architecture search through hypernetworks,\" in Proc. Workshop MetaLearn. (MetaLearn), 2017, pp. 1-21.\n[49] T. Elsken, J.-H. Metzen, and F. Hutter, \"Simple and efficient architecture search for convolutional neural networks,\" in 6th Int. Conf. Learn. Represent. (ICLR), 2018, pp. 1-15.\n[50] A.-C. Cheng, C. Hubert Lin, D.-C. Juan, W. Wei, and M. Sun, \"InstaNAS: Instance-aware neural architecture search,\" 2018, arXiv:1811.10201. [Online]. Available: http://arxiv.org/abs/1811.10201\n[51] K. Kandasamy, W. Neiswanger, J. Schneider, B. Poczos, and E. P. Xing, \"Neural architecture search with Bayesian optimisation and optimal transport,\" in Proc. Adv. Neural Inf. Process. Syst., 2018, pp. 2016-2025. [Online]. Available: http://papers.nips.cc/paper/7472-neural-architecture-search-with-bayesian-optimisation-and-optimal-transport.pdf\n[52] F. Paolo Casale, J. Gordon, and N. Fusi, \"Probabilistic neural architecture search,\" 2019, arXiv:1902.05116. [Online]. Available: http://arxiv.org/abs/1902.05116\n[53] M. Pelikan, D. E. Goldberg, and F. G. Lobo, \"A survey of optimization by building and using probabilistic models,\" Comput. Optim. Appl., vol. 21, no. 1, pp. 5-20, 2002, doi: 10.1023/A:1013500812258.\n[54] M. Hauschild and M. Pelikan, \"An introduction and survey of estimation of distribution algorithms,\" Swarm Evol. Comput., vol. 1, no. 3, pp. 111-128, Sep. 2011. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S2210650211000435\n[55] J. Gorodkin, \"Comparing two K-category assignments by a K-category correlation coefficient,\" Comput. Biol. Chem., vol. 28, nos. 5-6, pp. 367-374, Dec. 2004.\n[56] Q. Zhang, \"On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm,\" IEEE Trans. Evol. Comput., vol. 8, no. 1, pp. 80-93, Feb. 2004.\n[57] T. Friedrich, T. Kötzing, and M. S. Krejca, \"EDAs cannot be balanced and stable,\" in Proc. Genetic Evol. Comput. Conf., Jul. 2016, pp. 1139-1146, doi: $10.1145 / 2908812.2908895$.\n[58] F. Glover and M. Laguna, \"Tabu search,\" in Handbook of Combinatorial Optimization, D.-Z. Du and P. M. Pardalos, Eds. Boston, MA, USA: Springer, 1998, pp. 2093-2229, doi: 10.1007/978-1-4613-0303-9_33.\n[59] J. J. Hull, \"A database for handwritten text recognition research,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 16, no. 5, pp. 550-554, May 1994.\n[60] A. Krizhevsky and G. Hinton, \"Learning multiple layers of features from tiny images,\" Dept. Comput. Sci., Univ. Toronto, Toronto, ON, Canada, Tech. Rep. TR-2009, 2009.\n[61] K. He, X. Zhang, S. Ren, and J. Sun, \"Delving deep into rectifiers: Surpassing human-level performance on ImageNet classification,\" in Proc. IEEE Int. Conf. Comput. Vis. (ICCV), Dec. 2015, pp. 1026-1034.\n[62] O. K. Oyedotun, A. E. R. Shabayek, D. Aouada, and B. Ottersten, \"Improving the capacity of very deep networks with maxout units,\" in Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP), Apr. 2018, pp. 2971-2975.\n[63] G. Larsson, M. Maire, and G. Shakhnarovich, \"FractalNet: Ultra-deep neural networks without residuals,\" in Proc. Int. Conf. Learn. Represent. (ICLR), 2017, pp. 1-11.\n[64] X. Gastaldi, \"Shake-shake regularization of 3-branch residual networks,\" in Int. Conf. Learn. Represent. (ICLR) Workshop, 2017, pp. 1-5.\n[65] S. Zagoruyko and N. Komodakis, \"Wide residual networks,\" in Proc. Brit. Mach. Vis. Conf., 2016, pp. 1-12.\n[66] B. Baker, O. Gupta, N. Naik, and R. Raskar, \"Designing neural network architectures using reinforcement learning,\" in Proc. 5th Int. Conf. Learn. Represent. (ICLR), 2017, pp. 1-18.\n[67] Z. Lu, I. Whalen, V. Boddeti, Y. Dhebar, K. Deb, E. Goodman, and W. Banzhaf, \"NSGA-NET: A multi-objective genetic algorithm for neural architecture search,\" in Proc. Genetic Evol. Comput. Conf. (GECCO), 2019, pp. 419-427.\n[68] R. Luo, F. Tian, T. Qin, E. Chen, and T.-Y. Liu, \"Neural architecture optimization,\" in Proc. Adv. Neural Inf. Process. Syst., 2018, pp. 7816-7827. [Online]. Available: http://papers.nips.cc/paper/8007-neural-architectureoptimization\n[69] L. Li, K. Jamieson, G. DeSalvo, A. Rostamizadeh, and A. Talwalkar, \"Hyperband: A novel bandit-based approach to hyperparameter optimization,\" J. Mach. Learn. Res., vol. 18, no. 185, pp. 1-52, 2018. [Online]. Available: http://jmlr.org/papers/v18/16-558.html\n[70] H. Yu and H. Peng, \"Cyclic differentiable architecture search,\" 2020, arXiv:2006.10724. [Online]. Available: http://arxiv.org/abs/2006. 10724\n\n![img-4.jpeg](img-4.jpeg)\n\nANTON MURAVEV (Member, IEEE) received the B.Sc. and M.Sc. degrees in computer science from Tomsk Polytechnic University, Tomsk, Russia, in 2013 and 2015, respectively, and the M.Sc. degree in information technology from the Tampere University of Technology, in 2016. He is currently pursuing the Ph.D. degree with Tampere University, Tampere, Finland. His research interests include deep learning, pattern recognition, and evolutionary computation.\n![img-5.jpeg](img-5.jpeg)\n\nJENNI RAITOHARJU (Member, IEEE) received the Ph.D. degree from the Tampere University of Technology, Finland, in 2017. She currently works as the Senior Research Scientist of The Finnish Environment Institute, Jyväskylä. She has coauthored 23 international journal articles and 32 papers in international conferences. Her research interests include machine learning and pattern recognition methods along with applications in biomonitoring and autonomous systems. She leads two research projects funded by the Academy of Finland focusing on automatic taxa identification. She is also the Chair of Young Academy Finland, for the period 2019-2021.\n![img-6.jpeg](img-6.jpeg)\n\nMONCEF GABBOUI (Fellow, IEEE) received the M.S. and Ph.D. degrees in electrical engineering from Purdue University, in 1986 and 1989, respectively. He is currently a Professor of signal processing with the Department of Computing Sciences, Tampere University, Tampere, Finland. He was the Academy of Finland Professor from 2011 to 2015. His research interests include big data analytics, multimedia content-based analysis, indexing and retrieval, artificial intelligence, machine learning, pattern recognition, nonlinear signal and image processing and analysis, voice conversion, and video processing and coding. He is a member of the Academia Europaea and the Finnish Academy of Science and Letters. He has served as an Associate Editor and a Guest Editor for many IEEE and international journals.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Y. LeCun, Y. Bengio, and G. Hinton, \"Deep learning,\" Nature, vol. 521, no. 7553, pp. 436-444, May 2015."
+      },
+      {
+        "ref_id": "2",
+        "text": "K. He, X. Zhang, S. Ren, and J. Sun, \"Deep residual learning for image recognition,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2016, pp. 770-778."
+      },
+      {
+        "ref_id": "3",
+        "text": "G. Huang, Z. Liu, L. Van Der Maaten, and K. Q. Weinberger, \"Densely connected convolutional networks,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jul. 2017, pp. 2261-2269."
+      },
+      {
+        "ref_id": "4",
+        "text": "L.-C. Chen, G. Papandreou, I. Kokkinos, K. Murphy, and A. L. Yuille, \"DeepLab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected CRFs,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 40, no. 4, pp. 834-848, Apr. 2018."
+      },
+      {
+        "ref_id": "5",
+        "text": "S. Ren, K. He, R. Giesnick, and J. Sun, \"Faster R-CNN: Towards real-time object detection with region proposal networks,\" in Proc. Adv. Neural Inf. Process. Syst., 2015, pp. 91-99."
+      },
+      {
+        "ref_id": "6",
+        "text": "Z. C. Lipton, \"The mythos of model interpretability,\" in Proc. ICML Workshop Human Interpretability Mach. Learn. (WHI), 2016, pp. 1-28."
+      },
+      {
+        "ref_id": "7",
+        "text": "A. S. Charles, \"Interpreting deep learning: The machine learning rorschach test?\" 2018, arXiv:1806.00148. [Online]. Available: http://arxiv.org/abs/1806.00148"
+      },
+      {
+        "ref_id": "8",
+        "text": "G. Montavon, W. Samek, and K.-R. Müller, \"Methods for interpreting and understanding deep neural networks,\" Digit. Signal Process., vol. 73, pp. 1-15, Feb. 2018."
+      },
+      {
+        "ref_id": "9",
+        "text": "A. Nguyen, J. Yosinski, and J. Clune, \"Deep neural networks are easily fooled: High confidence predictions for unrecognizable images,\" in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Jun. 2015, pp. 427-436."
+      },
+      {
+        "ref_id": "10",
+        "text": "K. He, X. Zhang, S. Ren, and J. Sun, \"Identity mappings in deep residual networks,\" in Proc. Eur. Conf. Comput. Vis. (ECCV), 2016, pp. 630-645."
+      },
+      {
+        "ref_id": "11",
+        "text": "K. Weiss, T. M. Khoshgoftaar, and D. Wang, \"A survey of transfer learning,\" J. Big Data, vol. 3, no. 1, p. 9, 2016."
+      },
+      {
+        "ref_id": "12",
+        "text": "A. Muravev, J. Raitoharju, and M. Gabbouj, \"On the layer selection in small-scale deep networks,\" in Proc. 7th Eur. Workshop Vis. Inf. Process. (EUVIP), Nov. 2018."
+      },
+      {
+        "ref_id": "13",
+        "text": "T. Tommasi, N. Patricia, B. Caputo, and T. Tuytelaars, \"A deeper look at dataset bias,\" in Domain Adaptation in Computer Vision Applications, G. Csurka, Ed. Cham, Switzerland: Springer, 2017, pp. 37-55, doi: 10.1007/978-3-319-58347-1_2"
+      },
+      {
+        "ref_id": "14",
+        "text": "D. Whitley, T. Starkweather, and C. Bogart, \"Genetic algorithms and neural networks: Optimizing connections and connectivity,\" Parallel Comput., vol. 14, no. 3, pp. 347-361, Aug. 1990."
+      },
+      {
+        "ref_id": "15",
+        "text": "X. Yao, \"Evolving artificial neural networks,\" Proc. IEEE, vol. 87, no. 9, pp. 1423-1447, Sep. 1999."
+      },
+      {
+        "ref_id": "16",
+        "text": "K. O. Stanley and R. Miikkulainen, \"Evolving neural networks through augmenting topologies,\" Evol. Comput., vol. 10, no. 2, pp. 99-127, 2002."
+      },
+      {
+        "ref_id": "17",
+        "text": "K. O. Stanley, D. B. D'Ambrosio, and J. Gauci, \"A hypercube-based encoding for evolving large-scale neural networks,\" Artif. Life, vol. 15, no. 2, pp. 185-212, Apr. 2009."
+      },
+      {
+        "ref_id": "18",
+        "text": "S. Kiranyaz, T. Ince, A. Yildirim, and M. Gabbouj, \"Evolutionary artificial neural networks by multi-dimensional particle swarm optimization,\" Neural Netw., vol. 22, no. 10, pp. 1448-1462, Dec. 2009."
+      },
+      {
+        "ref_id": "19",
+        "text": "D. Floreano, P. Dürr, and C. Mattiussi, \"Neuroevolution: From architectures to learning,\" Evol. Intell., vol. 1, no. 1, pp. 47-62, Mar. 2008."
+      },
+      {
+        "ref_id": "20",
+        "text": "L. Xie and A. Yuille, \"Genetic CNN,\" in Proc. IEEE Int. Conf. Comput. Vis. (ICCV), Oct. 2017, pp. 1388-1397."
+      },
+      {
+        "ref_id": "21",
+        "text": "E. Real, S. Moore, A. Selle, S. Saxena, Y. L. Suematsu, J. Tan, Q. Le, and A. Kurakin, \"Large-scale evolution of image classifiers,\" in Proc. Int. Conf. Mach. Learn. (ICML), 2017, pp. 2902-2911."
+      },
+      {
+        "ref_id": "22",
+        "text": "H. Zhang, S. Kiranyaz, and M. Gabbouj, \"Finding better topologies for deep convolutional neural networks by evolution,\" 2018, arXiv:1809.03242. [Online]. Available: http://arxiv.org/abs/1809.03242"
+      },
+      {
+        "ref_id": "23",
+        "text": "E. Real, A. Aggarwal, Y. Huang, and Q. V. Le, \"Regularized evolution for image classifier architecture search,\" Proc. AAAI Conf. Artif. Intell., vol. 33, 2019, pp. 4780-4789."
+      },
+      {
+        "ref_id": "24",
+        "text": "Y. Sun, B. Xue, M. Zhang, and G. G. Yen, \"Evolving deep convolutional neural networks for image classification,\" IEEE Trans. Evol. Comput., vol. 24, no. 2, pp. 394-407, Apr. 2020."
+      },
+      {
+        "ref_id": "25",
+        "text": "B. Zoph and Q. V. Le, \"Neural architecture search with reinforcement learning,\" in Int. Conf. Learn. Represent. (ICLR), 2017, pp. 1-16."
+      },
+      {
+        "ref_id": "26",
+        "text": "B. Zoph, V. Vasudevan, J. Shlens, and Q. V. Le, \"Learning transferable architectures for scalable image recognition,\" in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit., Jun. 2018, pp. 8697-8710."
+      },
+      {
+        "ref_id": "27",
+        "text": "H. Pham, M. Y. Guan, B. Zoph, Q. V. Le, and J. Dean, \"Efficient neural architecture search via parameter sharing,\" in Proc. 35th Int. Conf. Mach. Learn. (PMLR), 2018, pp. 4095-4104."
+      },
+      {
+        "ref_id": "28",
+        "text": "C. Liu, B. Zoph, M. Neumann, and J. Shlens, \"Progressive neural architecture search,\" in Proc. Eur. Conf. Comput. Vis. (ECCV). Cham, Switzerland: Springer, 2018, pp. 19-35."
+      },
+      {
+        "ref_id": "29",
+        "text": "T. Elsken, J. H. Metzen, and F. Hutter, \"Efficient multi-objective neural architecture search via lamarckian evolution,\" in Proc. Int. Conf. Learn. Represent. (ICLR), 2019, pp. 1-23."
+      },
+      {
+        "ref_id": "30",
+        "text": "H. Liu, K. Simonyan, and Y. Yang, \"DARTS: Differentiable architecture search,\" in Int. Conf. Learn. Represent. (ICLR), 2019, pp. 1-13."
+      },
+      {
+        "ref_id": "31",
+        "text": "K. Yu, C. Sciuto, M. Jaggi, C. Musat, and M. Salzmann, \"Evaluating the search phase of neural architecture search,\" 2019, arXiv:1902.08142. [Online]. Available: http://arxiv.org/abs/1902.08142"
+      },
+      {
+        "ref_id": "32",
+        "text": "S. Baluja, Population-Based Incremental Learning: A Method for Integrating Genetic Search Based Function Optimization and Competitive Learning. Pittsburgh, PA, USA: Carnegie Mellon Univ., 1994."
+      },
+      {
+        "ref_id": "33",
+        "text": "H. Mühlenbein, \"The equation for response to selection and its use for prediction,\" Evol. Comput., vol. 5, no. 3, pp. 303-346, Sep. 1997, doi: 10.1162/eeco.1997.5.3.303."
+      },
+      {
+        "ref_id": "34",
+        "text": "D. E. Rumelhart, G. E. Hinton, and R. J. Williams, \"Learning representations by back-propagating errors,\" in Neurocomputing: Foundations of Research, J. A. Anderson and E. Rosenfeld, Eds. Cambridge, MA, USA: MIT Press, 1988, pp. 696-699. [Online]. Available: http://dl.acm.org/citation.cfm?id=65669.104451"
+      },
+      {
+        "ref_id": "35",
+        "text": "T. Back, U. Hammel, and H.-P. Schwefel, \"Evolutionary computation: Comments on the history and current state,\" IEEE Trans. Evol. Comput., vol. 1, no. 1, pp. 3-17, Apr. 1997."
+      },
+      {
+        "ref_id": "36",
+        "text": "S. Luke, Essentials Metaheuristics, 2nd ed. Lulu, 2013. [Online]. Available: http://cs.gmu.edu/ sean/book/metaheuristics/"
+      },
+      {
+        "ref_id": "37",
+        "text": "F. Gomez and R. Miikkulainen, \"Incremental evolution of complex general behavior,\" Adapt. Behav., vol. 5, nos. 3-4, pp. 317-342, Jan. 1997."
+      },
+      {
+        "ref_id": "38",
+        "text": "X. Yao and Y. Liu, \"A new evolutionary system for evolving artificial neural networks,\" IEEE Trans. Neural Netw., vol. 8, no. 3, pp. 694-713, May 1997."
+      },
+      {
+        "ref_id": "39",
+        "text": "F. J. Gomez and R. Miikkulainen, \"Solving non-Markovian control tasks with neuroevolution,\" in Proc. 16th Int. Joint Conf. Artif. Intell., vol. 2, 1999, pp. 1356-1361."
+      },
+      {
+        "ref_id": "40",
+        "text": "K. O. Stanley, \"Compositional pattern producing networks: A novel abstraction of development,\" Genetic Program. Evolvable Mach., vol. 8, no. 2, pp. 131-162, Jun. 2007."
+      },
+      {
+        "ref_id": "41",
+        "text": "S. Risi and K. O. Stanley, \"An enhanced hypercube-based encoding for evolving the placement, density, and connectivity of neurons,\" Artif. Life, vol. 18, no. 4, pp. 331-363, Oct. 2012."
+      },
+      {
+        "ref_id": "42",
+        "text": "D. B. D’Ambrosio, J. Gauci, and K. O. Stanley, \"HyperNEAT: The first five years,\" in Growing Adaptive Machines. Berlin, Germany: Springer, 2014, pp. 159-185."
+      },
+      {
+        "ref_id": "43",
+        "text": "R. Miikkulainen, J. Liang, E. Meyerson, A. Rawal, D. Fink, O. Francon, B. Raju, H. Shahrzad, A. Navruzyan, N. Duffy, and B. Hodjat, \"Evolving deep neural networks,\" in Artificial Intelligence in the Age of Neural Networks and Brain Computing. New York, NY, USA: Academic, 2019, pp. 293-312."
+      },
+      {
+        "ref_id": "44",
+        "text": "Y. Sun, B. Xue, M. Zhang, and G. G. Yen, \"Completely automated CNN architecture design based on blocks,\" IEEE Trans. Neural Netw. Learn. Syst., vol. 31, no. 4, pp. 1242-1254, Apr. 2020. [Online]. Available: https://ieeexplore.ieee.org/document/8742788/"
+      },
+      {
+        "ref_id": "45",
+        "text": "S. Kiranyaz, T. Ince, A. Iosifidis, and M. Gabbouj, \"Progressive operational perceptions,\" Neurocomputing, vol. 224, pp. 142-154, Feb. 2017."
+      },
+      {
+        "ref_id": "46",
+        "text": "S. Kiranyaz, T. Ince, A. Iosifidis, and M. Gabbouj, \"Operational neural networks,\" 2019, arXiv:1902.11106. [Online]. Available: http://arxiv.org/abs/1902.11106"
+      },
+      {
+        "ref_id": "47",
+        "text": "D. T. Tran, S. Kiranyaz, M. Gabbouj, and A. Iosifidis, \"Heterogeneous multilayer generalized operational perception,\" IEEE Trans. Neural Netw. Learn. Syst., vol. 31, no. 3, pp. 710-724, Mar. 2020. [Online]. Available: http://arxiv.org/abs/1804.05093"
+      },
+      {
+        "ref_id": "48",
+        "text": "A. Brock, T. Lim, J. M. Ritchie, and N. Weston, \"Smash: One-shot model architecture search through hypernetworks,\" in Proc. Workshop MetaLearn. (MetaLearn), 2017, pp. 1-21."
+      },
+      {
+        "ref_id": "49",
+        "text": "T. Elsken, J.-H. Metzen, and F. Hutter, \"Simple and efficient architecture search for convolutional neural networks,\" in 6th Int. Conf. Learn. Represent. (ICLR), 2018, pp. 1-15."
+      },
+      {
+        "ref_id": "50",
+        "text": "A.-C. Cheng, C. Hubert Lin, D.-C. Juan, W. Wei, and M. Sun, \"InstaNAS: Instance-aware neural architecture search,\" 2018, arXiv:1811.10201. [Online]. Available: http://arxiv.org/abs/1811.10201"
+      },
+      {
+        "ref_id": "51",
+        "text": "K. Kandasamy, W. Neiswanger, J. Schneider, B. Poczos, and E. P. Xing, \"Neural architecture search with Bayesian optimisation and optimal transport,\" in Proc. Adv. Neural Inf. Process. Syst., 2018, pp. 2016-2025. [Online]. Available: http://papers.nips.cc/paper/7472-neural-architecture-search-with-bayesian-optimisation-and-optimal-transport.pdf"
+      },
+      {
+        "ref_id": "52",
+        "text": "F. Paolo Casale, J. Gordon, and N. Fusi, \"Probabilistic neural architecture search,\" 2019, arXiv:1902.05116. [Online]. Available: http://arxiv.org/abs/1902.05116"
+      },
+      {
+        "ref_id": "53",
+        "text": "M. Pelikan, D. E. Goldberg, and F. G. Lobo, \"A survey of optimization by building and using probabilistic models,\" Comput. Optim. Appl., vol. 21, no. 1, pp. 5-20, 2002, doi: 10.1023/A:1013500812258."
+      },
+      {
+        "ref_id": "54",
+        "text": "M. Hauschild and M. Pelikan, \"An introduction and survey of estimation of distribution algorithms,\" Swarm Evol. Comput., vol. 1, no. 3, pp. 111-128, Sep. 2011. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S2210650211000435"
+      },
+      {
+        "ref_id": "55",
+        "text": "J. Gorodkin, \"Comparing two K-category assignments by a K-category correlation coefficient,\" Comput. Biol. Chem., vol. 28, nos. 5-6, pp. 367-374, Dec. 2004."
+      },
+      {
+        "ref_id": "56",
+        "text": "Q. Zhang, \"On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm,\" IEEE Trans. Evol. Comput., vol. 8, no. 1, pp. 80-93, Feb. 2004."
+      },
+      {
+        "ref_id": "57",
+        "text": "T. Friedrich, T. Kötzing, and M. S. Krejca, \"EDAs cannot be balanced and stable,\" in Proc. Genetic Evol. Comput. Conf., Jul. 2016, pp. 1139-1146, doi: $10.1145 / 2908812.2908895$."
+      },
+      {
+        "ref_id": "58",
+        "text": "F. Glover and M. Laguna, \"Tabu search,\" in Handbook of Combinatorial Optimization, D.-Z. Du and P. M. Pardalos, Eds. Boston, MA, USA: Springer, 1998, pp. 2093-2229, doi: 10.1007/978-1-4613-0303-9_33."
+      },
+      {
+        "ref_id": "59",
+        "text": "J. J. Hull, \"A database for handwritten text recognition research,\" IEEE Trans. Pattern Anal. Mach. Intell., vol. 16, no. 5, pp. 550-554, May 1994."
+      },
+      {
+        "ref_id": "60",
+        "text": "A. Krizhevsky and G. Hinton, \"Learning multiple layers of features from tiny images,\" Dept. Comput. Sci., Univ. Toronto, Toronto, ON, Canada, Tech. Rep. TR-2009, 2009."
+      },
+      {
+        "ref_id": "61",
+        "text": "K. He, X. Zhang, S. Ren, and J. Sun, \"Delving deep into rectifiers: Surpassing human-level performance on ImageNet classification,\" in Proc. IEEE Int. Conf. Comput. Vis. (ICCV), Dec. 2015, pp. 1026-1034."
+      },
+      {
+        "ref_id": "62",
+        "text": "O. K. Oyedotun, A. E. R. Shabayek, D. Aouada, and B. Ottersten, \"Improving the capacity of very deep networks with maxout units,\" in Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP), Apr. 2018, pp. 2971-2975."
+      },
+      {
+        "ref_id": "63",
+        "text": "G. Larsson, M. Maire, and G. Shakhnarovich, \"FractalNet: Ultra-deep neural networks without residuals,\" in Proc. Int. Conf. Learn. Represent. (ICLR), 2017, pp. 1-11."
+      },
+      {
+        "ref_id": "64",
+        "text": "X. Gastaldi, \"Shake-shake regularization of 3-branch residual networks,\" in Int. Conf. Learn. Represent. (ICLR) Workshop, 2017, pp. 1-5."
+      },
+      {
+        "ref_id": "65",
+        "text": "S. Zagoruyko and N. Komodakis, \"Wide residual networks,\" in Proc. Brit. Mach. Vis. Conf., 2016, pp. 1-12."
+      },
+      {
+        "ref_id": "66",
+        "text": "B. Baker, O. Gupta, N. Naik, and R. Raskar, \"Designing neural network architectures using reinforcement learning,\" in Proc. 5th Int. Conf. Learn. Represent. (ICLR), 2017, pp. 1-18."
+      },
+      {
+        "ref_id": "67",
+        "text": "Z. Lu, I. Whalen, V. Boddeti, Y. Dhebar, K. Deb, E. Goodman, and W. Banzhaf, \"NSGA-NET: A multi-objective genetic algorithm for neural architecture search,\" in Proc. Genetic Evol. Comput. Conf. (GECCO), 2019, pp. 419-427."
+      },
+      {
+        "ref_id": "68",
+        "text": "R. Luo, F. Tian, T. Qin, E. Chen, and T.-Y. Liu, \"Neural architecture optimization,\" in Proc. Adv. Neural Inf. Process. Syst., 2018, pp. 7816-7827. [Online]. Available: http://papers.nips.cc/paper/8007-neural-architectureoptimization"
+      },
+      {
+        "ref_id": "69",
+        "text": "L. Li, K. Jamieson, G. DeSalvo, A. Rostamizadeh, and A. Talwalkar, \"Hyperband: A novel bandit-based approach to hyperparameter optimization,\" J. Mach. Learn. Res., vol. 18, no. 185, pp. 1-52, 2018. [Online]. Available: http://jmlr.org/papers/v18/16-558.html"
+      },
+      {
+        "ref_id": "70",
+        "text": "H. Yu and H. Peng, \"Cyclic differentiable architecture search,\" 2020, arXiv:2006.10724. [Online]. Available: http://arxiv.org/abs/2006. 10724"
+      }
+    ],
+    "reference_count": 70,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparison of the error rates (full training mode) on USPS dataset.",
+      "headers": [
+        "Model",
+        "Test error (\\%)",
+        "Parameter count",
+        "Model depth",
+        "Search time (GPU hours)"
+      ],
+      "rows": [
+        [
+          -62,
+          2.34,
+          169,
+          54,
+          "N/A"
+        ],
+        [
+          -62,
+          2.19,
+          169,
+          54,
+          "N/A"
+        ],
+        [
+          16,
+          2.49,
+          77,
+          9,
+          64.0
+        ],
+        [
+          32,
+          2.25,
+          305,
+          9,
+          64.0
+        ],
+        [
+          8,
+          2.64,
+          12,
+          10,
+          6.4
+        ],
+        [
+          16,
+          2.25,
+          46,
+          10,
+          6.4
+        ],
+        [
+          32,
+          2.25,
+          182,
+          10,
+          6.4
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison of best discovered architectures by their test accuracy (full training mode) on CIFAR-100 dataset.",
+      "headers": [
+        "Model <br> Source",
+        "Layer <br> Count",
+        "32 channels",
+        "",
+        "64 channels",
+        "",
+        "128 channels",
+        "",
+        "256 channels",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Acc.",
+          "Par.",
+          "Acc.",
+          "Par.",
+          "Acc.",
+          "Par.",
+          "Acc.",
+          "Par."
+        ],
+        [
+          "Initialization",
+          5,
+          0.4898,
+          131,
+          0.5835,
+          513,
+          0.6419,
+          2.0,
+          0.6846,
+          8.1
+        ],
+        [
+          "Random uniform",
+          15,
+          0.5794,
+          223,
+          0.6621,
+          879,
+          0.72,
+          3.5,
+          0.7499,
+          13.9
+        ],
+        [
+          "ASED",
+          10,
+          0.5659,
+          224,
+          0.6582,
+          886,
+          0.7102,
+          3.5,
+          0.7483,
+          14.1
+        ],
+        [
+          "ASED + Prob Cap",
+          8,
+          0.5483,
+          190,
+          0.633,
+          751,
+          0.6963,
+          3.0,
+          0.7442,
+          11.9
+        ],
+        [
+          "ASED + Full Inversion",
+          12,
+          0.5827,
+          268,
+          0.6728,
+          1.1,
+          0.7297,
+          4.2,
+          0.7729,
+          16.9
+        ],
+        [
+          "ASED + Partial Inversion",
+          11,
+          0.5748,
+          236,
+          0.6641,
+          932,
+          0.7249,
+          3.7,
+          0.7652,
+          14.8
+        ],
+        [
+          -2,
+          16,
+          0.6396,
+          419,
+          0.6872,
+          1.7,
+          0.7282,
+          6.6,
+          0.7485,
+          26.5
+        ],
+        [
+          -3,
+          13,
+          0.6194,
+          367,
+          0.6689,
+          1.5,
+          0.7068,
+          5.8,
+          0.7315,
+          23.2
+        ],
+        [
+          -2,
+          15,
+          0.6461,
+          392,
+          0.6984,
+          1.6,
+          0.7398,
+          6.2,
+          0.761,
+          24.8
+        ],
+        [
+          -3,
+          11,
+          0.6092,
+          251,
+          0.6678,
+          1.0,
+          0.7084,
+          3.9,
+          0.7348,
+          15.8
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 10
+    },
+    {
+      "table_number": "3",
+      "table_title": "Test performance comparison of established and automatically discovered architectures on CIFAR-100 dataset.",
+      "headers": [
+        "Method",
+        "Accuracy (\\%)",
+        "Parameter count",
+        "Model depth",
+        "Search cost (GPU days)"
+      ],
+      "rows": [
+        [
+          63,
+          76.7,
+          38.6,
+          21,
+          "N/A"
+        ],
+        [
+          -64,
+          84.2,
+          26.2,
+          26,
+          "N/A"
+        ],
+        [
+          "Wide ResNet 28-10 [65]",
+          80.4,
+          36.5,
+          28,
+          "N/A"
+        ],
+        [
+          -3,
+          82.8,
+          25.6,
+          190,
+          "N/A"
+        ],
+        [
+          20,
+          70.9,
+          "-",
+          17,
+          17
+        ],
+        [
+          66,
+          72.9,
+          11.2,
+          9,
+          100
+        ],
+        [
+          21,
+          77.0,
+          40.4,
+          "$\\geq 13$",
+          "$\\geq 2600$"
+        ],
+        [
+          48,
+          79.4,
+          16,
+          211,
+          1.5
+        ],
+        [
+          49,
+          76.6,
+          22.3,
+          30,
+          1
+        ],
+        [
+          "NSGA-NET-128 [67]",
+          79.3,
+          3.3,
+          21,
+          8
+        ],
+        [
+          "NSGA-NET-256 [67]",
+          80.2,
+          11.6,
+          21,
+          8
+        ],
+        [
+          28,
+          80.5,
+          3.2,
+          15,
+          225
+        ],
+        [
+          27,
+          80.6,
+          4.6,
+          25,
+          0.45
+        ],
+        [
+          30,
+          82.5,
+          3.3,
+          "-",
+          4
+        ],
+        [
+          68,
+          84.3,
+          10.8,
+          30,
+          200
+        ],
+        [
+          "ASED (best)",
+          77.3,
+          16.9,
+          12,
+          20
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2007/Estimation of distribution algorithm based on probabilistic grammar with latent annotations.md",
+    "filename": "Estimation of distribution algorithm based on probabilistic grammar with latent annotations.md",
+    "title": "Estimation of distribution algorithm based on probabilistic grammar with latent annotations",
+    "year": "2007"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "MAIN PARAMETERS FOR PAGE.",
+      "headers": [
+        "Variable",
+        "Meaning",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$M$",
+          "Population size",
+          "-"
+        ],
+        [
+          "$G$",
+          "Generations to run",
+          "-"
+        ],
+        [
+          "$h$",
+          "The number of annotations",
+          "-"
+        ],
+        [
+          "$P_{s}$",
+          "Selection rate",
+          0.1
+        ],
+        [
+          "$P_{c}$",
+          "Elite rate",
+          0.1
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "Obtained PRObABILITIES OF PAGE $(h=8)$ AND PCFG-GP. We SELECTED THE RULE WITH THE HIGHEST PROBABILITIES FROM A START SYMBOL (GRAY RULES).",
+      "headers": [
+        "Production rule (PAGE)",
+        "Probability $(x, \\beta)$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{S}[1]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[0]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow d \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7] \\mathcal{S}[7]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow a \\mathcal{S}[0]$",
+          0.305
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow a \\mathcal{S}[3]$",
+          0.395
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow a \\mathcal{S}[4]$",
+          0.0744
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow b \\mathcal{S}[3] \\mathcal{S}[3]$",
+          0.0306
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow c \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3]$",
+          0.0865
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow d \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3] \\mathcal{S}[3]$",
+          0.0421
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow x$",
+          0.0393
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow x$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow a \\mathcal{S}[0]$",
+          0.9
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow a \\mathcal{S}[0]$",
+          0.393
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow a \\mathcal{S}[3]$",
+          0.223
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow a \\mathcal{S}[4]$",
+          0.363
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow b \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.352
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow c \\mathcal{S}[3] \\mathcal{S}[3]$",
+          0.356
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow d \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[3] \\mathcal{S}[2]$",
+          0.023
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow x$",
+          0.0117
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow a \\mathcal{S}[0] \\mathcal{S}[0] \\mathcal{S}[6]$",
+          0.998
+        ],
+        [
+          "Production rule (PCFG-GP)",
+          "Probability $(x, \\beta)$"
+        ],
+        [
+          "$\\mathcal{S}$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S} \\rightarrow x$",
+          0.6
+        ],
+        [
+          "$\\mathcal{S} \\rightarrow a \\mathcal{S}$",
+          0.1
+        ],
+        [
+          "$\\mathcal{S} \\rightarrow b \\mathcal{S} \\mathcal{S}$",
+          0.1
+        ],
+        [
+          "$\\mathcal{S} \\rightarrow c \\mathcal{S} \\mathcal{S} \\mathcal{S}$",
+          0.1
+        ],
+        [
+          "$\\mathcal{S} \\rightarrow d \\mathcal{S} \\mathcal{S} \\mathcal{S}$",
+          0.09
+        ]
+      ],
+      "row_count": 27,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "Estimated PRObABILITIES IN PAGE $(h=8)$. BECAUSE OF SPACE LIMITATION, RULES WITH PROBABILITIES SMALLER THAN 0.01 ARE OMITTEO.",
+      "headers": [
+        "Production Rate (PAGE)",
+        "Probability $(\\% \\mid \\beta)$"
+      ],
+      "rows": [
+        [
+          "$\\mathcal{S}[2]$",
+          0.055
+        ],
+        [
+          "$\\mathcal{S}[4]$",
+          0.132
+        ],
+        [
+          "$\\mathcal{S}[5]$",
+          0.174
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow \\alpha_{A} \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow \\lambda$",
+          0.0218
+        ],
+        [
+          "$\\mathcal{S}[1] \\rightarrow 0.95$",
+          0.978
+        ],
+        [
+          "$\\mathcal{S}[2] \\rightarrow \\alpha_{A} \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow \\lambda$",
+          0.972
+        ],
+        [
+          "$\\mathcal{S}[3] \\rightarrow 0.95$",
+          0.0277
+        ],
+        [
+          "$\\mathcal{S}[4] \\rightarrow \\alpha_{A} \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[5] \\rightarrow \\alpha_{A} \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6] \\mathcal{S}[6]$",
+          1.0
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow \\alpha_{A} \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.3
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow \\alpha_{A} \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4] \\mathcal{S}[4]$",
+          0.26
+        ],
+        [
+          "$\\mathcal{S}[6] \\rightarrow \\alpha_{A} \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2] \\mathcal{S}[2]$",
+          0.44
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow \\lambda$",
+          0.986
+        ],
+        [
+          "$\\mathcal{S}[7] \\rightarrow 0.95$",
+          0.0136
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 2
+    }
+  ]
+}

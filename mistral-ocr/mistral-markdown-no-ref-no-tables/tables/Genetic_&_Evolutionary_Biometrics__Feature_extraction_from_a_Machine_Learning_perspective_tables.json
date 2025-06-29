@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Genetic & Evolutionary Biometrics  Feature extraction from a Machine Learning perspective.md",
+    "filename": "Genetic & Evolutionary Biometrics  Feature extraction from a Machine Learning perspective.md",
+    "title": "Genetic & Evolutionary Biometrics  Feature extraction from a Machine Learning perspective",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "presents the results of Experiment I. The first column denotes the method used and the number of FE evaluations that were performed. The second column represents the results of applying the corresponding method to FRGC-100a. The third column represents the results of how well the $30 \\mathrm{FE}^{\\mathrm{n}} \\mathrm{s}$ generalized on FRGC-100b, and the final column represents the results of how well the $30 \\mathrm{FE} * \\mathrm{~s}$ generalized on FRGC-100b. For these columns, the first number represents the average recognition accuracy and the second number represents the average computational complexity.",
+      "headers": [
+        "TABLE I: TRAINING AND GENERALIZING ON THE FRGC DATASET",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Method",
+          -100,
+          "FRGC-100b Opt-Gen Acc (Comp)",
+          "FRGC-100b Val-Gen Acc (Comp)"
+        ],
+        [
+          "Baseline",
+          "0.980 (10379.0)",
+          "N/A",
+          "0.980 (10379.0)"
+        ],
+        [
+          "$\\operatorname{GEFE}_{\\mathrm{ML}}(1000 \\mathrm{e})$",
+          "1.000 (5897.8)",
+          "0.983 (5897.8)",
+          "0.991 (5362.7)"
+        ],
+        [
+          "$\\operatorname{GEFE}_{\\mathrm{ML}}(2000 \\mathrm{e})$",
+          "1.000 (5371.95)",
+          "0.976 (5371.95)",
+          "0.985 (5217.9)"
+        ],
+        [
+          "$\\operatorname{GEFE}_{\\mathrm{ML}}(3000 \\mathrm{e})$",
+          "1.000 (5681.5)",
+          "0.978 (5681.5)",
+          "0.987 (6347. 2)"
+        ],
+        [
+          "$\\operatorname{GEFE}_{\\mathrm{ML}}(4000 \\mathrm{e})$",
+          "1.000 (5526.9)",
+          "0.983 (5526.9)",
+          "0.988 (5870.7)"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "GENERALIZING ON MORPH DATASET",
+      "headers": [
+        "Method",
+        "MORPH-500 <br> Opt-Gen <br> Acc (Comp)",
+        "MORPH-500 <br> Val-Gen <br> Acc (Comp)"
+      ],
+      "rows": [
+        [
+          "Baseline",
+          "N/A",
+          "0.432 (10379.0)"
+        ],
+        [
+          "$\\operatorname{GEFE}_{\\mathrm{ML}}(1000 \\mathrm{e})$",
+          "0.268 (5897.8)",
+          "0.313 (5362.7)"
+        ],
+        [
+          "$\\operatorname{GEFE}_{\\mathrm{ML}}(2000 \\mathrm{e})$",
+          "0.251 (5371.95)",
+          "0.304 (5217.9)"
+        ],
+        [
+          "$\\operatorname{GEFE}_{\\mathrm{ML}}(3000 \\mathrm{e})$",
+          "0.256 (5681.5)",
+          "0.310 (6347. 2)"
+        ],
+        [
+          "$\\operatorname{GEFE}_{\\mathrm{ML}}(4000 \\mathrm{e})$",
+          2565526.9,
+          "0.319 (5870.7)"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    }
+  ]
+}

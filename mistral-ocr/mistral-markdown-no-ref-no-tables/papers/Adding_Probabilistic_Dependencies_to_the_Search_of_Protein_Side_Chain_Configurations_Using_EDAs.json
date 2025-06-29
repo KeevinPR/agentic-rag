@@ -1,0 +1,588 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/Adding Probabilistic Dependencies to the Search of Protein Side Chain Configurations Using EDAs.md",
+    "filename": "Adding Probabilistic Dependencies to the Search of Protein Side Chain Configurations Using EDAs.md",
+    "title": "Adding Probabilistic Dependencies to the Search of Protein Side Chain Configurations Using EDAs",
+    "year": "2008"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Baluja, S., Davies, S.: Using optimal dependency-trees for combinatorial optimization: Learning the structure of the search space. In: Proceedings of the 14th International Conference on Machine Learning, pp. 30-38. Morgan Kaufmann, San Francisco (1997)\n2. Belda, I., Madurga, S., Llorá, X., Martinell, M., Tarragó, T., Piqueras, M., Nicolás, E., Giralt, E.: ENPDA: An evolutionary structure-based de novo peptide design algorithm. Journal of Computer-Aided Molecular Design 19(8), 585-601 (2005)\n3. Canutescu, A.A., Shelenkov, A.A., Dunbrack, R.L.: A graph-theory algorithm for rapid protein side-chain prediction. Protein Science 12, 2001-2014 (2003)\n4. Chow, C.K., Liu, C.N.: Approximating discrete probability distributions with dependence trees. IEEE Transactions on Information Theory 14(3), 462-467 (1968)\n5. De Maeyer, M., Desmet, J., Lasters, I.: The dead-end elimination theorem: Mathematical aspects, implementation, optimization, evaluation, and performance. Methods in Molecular Biology 143, 265-304 (2000)\n6. Dunbrack, R.L.: Rotamer libraries in the 21st century. Current Opinion in Structural Biology 12, 431-440 (2002)\n7. Echegoyen, C., Lozano, J.A., Santana, R., Larrañaga, P.: Exact Bayesian network learning in estimation of distribution algorithms. In: Proceedings of the 2007 Congress on Evolutionary Computation CEC 2007, pp. 1051-1058. IEEE Press, Los Alamitos (2007)\n8. Henrion, M.: Propagating uncertainty in Bayesian networks by probabilistic logic sampling. In: Lemmer, J.F., Kanal, L.N. (eds.) Proceedings of the Second Annual Conference on Uncertainty in Artificial Intelligence, pp. 149-164. Elsevier, Amsterdam (1988)\n9. Hsu, J.C.: Multiple Comparisons: Theory and Methods. Chapman and Hall, Boca Raton (1996)\n10. Koehl, P., Delarue, M.: Building protein lattice models using self consistent mean field theory. Journal of Chemical Physics 108, 9540-9549 (1998)\n\n11. Larrañaga, P., Calvo, B., Santana, R., Bielza, C., Galdiano, J., Inza, I., Lozano, J.A., Armañanzas, R., Santafé, G., Pérez, A., Robles, V.: Machine learning in bioinformatics. Briefings in Bioinformatics 7, 86-112 (2006)\n12. Larrañaga, P., Lozano, J.A. (eds.): Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic Publishers, Boston (2002)\n13. Lee, C., Subbiah, S.: Prediction of protein side-chain conformation by packing optimization. Journal of Molecular Biology 217, 373-388 (1991)\n14. Lozano, J.A., Larrañaga, P., Inza, I., Bengoetxea, E. (eds.): Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms. Springer, Heidelberg (2006)\n15. Mühlenbein, H., Paaß, G.: From recombination of genes to the estimation of distributions I. Binary parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)\n16. Pelikan, M., Mühlenbein, H.: The bivariate marginal distribution algorithm. In: Roy, R., Furuhashi, T., Chawdhry, P. (eds.) Advances in Soft Computing - Engineering Design and Manufacturing, London, pp. 521-535. Springer, Heidelberg (1999)\n17. Pierce, N.A., Winfree, E.: Protein design is NP-hard. Protein Engineering 15(10), $779-782(2002)$\n18. Santana, R., Larrañaga, P., Lozano, J.A.: The role of a priori information in the minimization of contact potentials by means of estimation of distribution algorithms. In: Marchiori, E., Moore, J.H., Rajapakse, J.C. (eds.) EvoBIO 2007. LNCS, vol. 4447, pp. 247-257. Springer, Heidelberg (2007)\n19. Santana, R., Larrañaga, P., Lozano, J.A.: Side chain placement using estimation of distribution algorithms. Artificial Intelligence in Medicine 39(1), 49-63 (2007)\n20. Santana, R., Larrañaga, P., Lozano, J.A.: Combining variable neighborhood search and estimation of distribution algorithms in the protein side chain placement problem. Journal of Heuristics (to appear, 2008)\n21. Santana, R., Larrañaga, P., Lozano, J.A.: Protein folding in simplified models with estimation of distribution algorithms. IEEE Transactions on Evolutionary Computation (to appear, 2008)\n22. Santana, R., Ochoa, A., Soto, M.R.: The mixture of trees factorized distribution algorithm. In: Spector, L., Goodman, E., Wu, A., Langdon, W., Voigt, H., Gen, M., Sen, S., Dorigo, M., Pezeshk, S., Garzon, M., Burke, E. (eds.) Proceedings of the Genetic and Evolutionary Computation Conference GECCO 2001, pp. 543-550. Morgan Kaufmann Publishers, San Francisco (2001)\n23. Yanover, C., Weiss, Y.: Approximate inference and protein-folding. In: Becker, S., Thrun, S., Obermayer, K. (eds.) Advances in Neural Information Processing Systems 15, pp. 1457-1464. MIT Press, Cambridge (2003)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Baluja, S., Davies, S.: Using optimal dependency-trees for combinatorial optimization: Learning the structure of the search space. In: Proceedings of the 14th International Conference on Machine Learning, pp. 30-38. Morgan Kaufmann, San Francisco (1997)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Belda, I., Madurga, S., Llorá, X., Martinell, M., Tarragó, T., Piqueras, M., Nicolás, E., Giralt, E.: ENPDA: An evolutionary structure-based de novo peptide design algorithm. Journal of Computer-Aided Molecular Design 19(8), 585-601 (2005)"
+      },
+      {
+        "ref_id": "3",
+        "text": "Canutescu, A.A., Shelenkov, A.A., Dunbrack, R.L.: A graph-theory algorithm for rapid protein side-chain prediction. Protein Science 12, 2001-2014 (2003)"
+      },
+      {
+        "ref_id": "4",
+        "text": "Chow, C.K., Liu, C.N.: Approximating discrete probability distributions with dependence trees. IEEE Transactions on Information Theory 14(3), 462-467 (1968)"
+      },
+      {
+        "ref_id": "5",
+        "text": "De Maeyer, M., Desmet, J., Lasters, I.: The dead-end elimination theorem: Mathematical aspects, implementation, optimization, evaluation, and performance. Methods in Molecular Biology 143, 265-304 (2000)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Dunbrack, R.L.: Rotamer libraries in the 21st century. Current Opinion in Structural Biology 12, 431-440 (2002)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Echegoyen, C., Lozano, J.A., Santana, R., Larrañaga, P.: Exact Bayesian network learning in estimation of distribution algorithms. In: Proceedings of the 2007 Congress on Evolutionary Computation CEC 2007, pp. 1051-1058. IEEE Press, Los Alamitos (2007)"
+      },
+      {
+        "ref_id": "8",
+        "text": "Henrion, M.: Propagating uncertainty in Bayesian networks by probabilistic logic sampling. In: Lemmer, J.F., Kanal, L.N. (eds.) Proceedings of the Second Annual Conference on Uncertainty in Artificial Intelligence, pp. 149-164. Elsevier, Amsterdam (1988)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Hsu, J.C.: Multiple Comparisons: Theory and Methods. Chapman and Hall, Boca Raton (1996)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Koehl, P., Delarue, M.: Building protein lattice models using self consistent mean field theory. Journal of Chemical Physics 108, 9540-9549 (1998)"
+      },
+      {
+        "ref_id": "11",
+        "text": "Larrañaga, P., Calvo, B., Santana, R., Bielza, C., Galdiano, J., Inza, I., Lozano, J.A., Armañanzas, R., Santafé, G., Pérez, A., Robles, V.: Machine learning in bioinformatics. Briefings in Bioinformatics 7, 86-112 (2006)"
+      },
+      {
+        "ref_id": "12",
+        "text": "Larrañaga, P., Lozano, J.A. (eds.): Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic Publishers, Boston (2002)"
+      },
+      {
+        "ref_id": "13",
+        "text": "Lee, C., Subbiah, S.: Prediction of protein side-chain conformation by packing optimization. Journal of Molecular Biology 217, 373-388 (1991)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Lozano, J.A., Larrañaga, P., Inza, I., Bengoetxea, E. (eds.): Towards a New Evolutionary Computation: Advances on Estimation of Distribution Algorithms. Springer, Heidelberg (2006)"
+      },
+      {
+        "ref_id": "15",
+        "text": "Mühlenbein, H., Paaß, G.: From recombination of genes to the estimation of distributions I. Binary parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)"
+      },
+      {
+        "ref_id": "16",
+        "text": "Pelikan, M., Mühlenbein, H.: The bivariate marginal distribution algorithm. In: Roy, R., Furuhashi, T., Chawdhry, P. (eds.) Advances in Soft Computing - Engineering Design and Manufacturing, London, pp. 521-535. Springer, Heidelberg (1999)"
+      },
+      {
+        "ref_id": "17",
+        "text": "Pierce, N.A., Winfree, E.: Protein design is NP-hard. Protein Engineering 15(10), $779-782(2002)$"
+      },
+      {
+        "ref_id": "18",
+        "text": "Santana, R., Larrañaga, P., Lozano, J.A.: The role of a priori information in the minimization of contact potentials by means of estimation of distribution algorithms. In: Marchiori, E., Moore, J.H., Rajapakse, J.C. (eds.) EvoBIO 2007. LNCS, vol. 4447, pp. 247-257. Springer, Heidelberg (2007)"
+      },
+      {
+        "ref_id": "19",
+        "text": "Santana, R., Larrañaga, P., Lozano, J.A.: Side chain placement using estimation of distribution algorithms. Artificial Intelligence in Medicine 39(1), 49-63 (2007)"
+      },
+      {
+        "ref_id": "20",
+        "text": "Santana, R., Larrañaga, P., Lozano, J.A.: Combining variable neighborhood search and estimation of distribution algorithms in the protein side chain placement problem. Journal of Heuristics (to appear, 2008)"
+      },
+      {
+        "ref_id": "21",
+        "text": "Santana, R., Larrañaga, P., Lozano, J.A.: Protein folding in simplified models with estimation of distribution algorithms. IEEE Transactions on Evolutionary Computation (to appear, 2008)"
+      },
+      {
+        "ref_id": "22",
+        "text": "Santana, R., Ochoa, A., Soto, M.R.: The mixture of trees factorized distribution algorithm. In: Spector, L., Goodman, E., Wu, A., Langdon, W., Voigt, H., Gen, M., Sen, S., Dorigo, M., Pezeshk, S., Garzon, M., Burke, E. (eds.) Proceedings of the Genetic and Evolutionary Computation Conference GECCO 2001, pp. 543-550. Morgan Kaufmann Publishers, San Francisco (2001)"
+      },
+      {
+        "ref_id": "23",
+        "text": "Yanover, C., Weiss, Y.: Approximate inference and protein-folding. In: Becker, S., Thrun, S., Obermayer, K. (eds.) Advances in Neural Information Processing Systems 15, pp. 1457-1464. MIT Press, Cambridge (2003)"
+      }
+    ],
+    "reference_count": 23,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Results achieved by UMDA, Tree-EDA and Tree-EDA ${ }^{r}$ for the selected instances",
+      "headers": [
+        "",
+        "",
+        "",
+        "UMDA",
+        "",
+        "",
+        "Tree-EDA",
+        "",
+        "",
+        "Tree-EDA ${ }^{r}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "pdb id",
+          "size",
+          "exp.",
+          "best",
+          "$S$",
+          "mean",
+          "best",
+          "$S$",
+          "mean",
+          "best",
+          "$S$",
+          "mean"
+        ],
+        [
+          1,
+          75,
+          50,
+          626.41,
+          1,
+          627.25,
+          626.12,
+          7,
+          627.53,
+          626.12,
+          24,
+          626.56
+        ],
+        [
+          1,
+          146,
+          "",
+          754.93,
+          1,
+          760.02,
+          754.3,
+          1,
+          760.88,
+          753.38,
+          26,
+          754.05
+        ],
+        [
+          1,
+          185,
+          "",
+          727.37,
+          2,
+          750.51,
+          725.83,
+          1,
+          739.73,
+          725.5,
+          18,
+          729.94
+        ],
+        [
+          1,
+          208,
+          "",
+          939.94,
+          1,
+          947.77,
+          934.79,
+          1,
+          945.74,
+          934.01,
+          12,
+          935.62
+        ],
+        [
+          13,
+          318,
+          "",
+          1626.09,
+          1,
+          1639.0,
+          1617.7,
+          1,
+          1653.47,
+          1611.76,
+          1,
+          1625.08
+        ],
+        [
+          11,
+          144,
+          "",
+          861.92,
+          1,
+          870.34,
+          856.88,
+          4,
+          860.76,
+          856.84,
+          33,
+          856.92
+        ],
+        [
+          1,
+          241,
+          "",
+          925.9,
+          1,
+          943.09,
+          890.85,
+          1,
+          924.32,
+          875.2,
+          1,
+          886.86
+        ],
+        [
+          1,
+          207,
+          "",
+          972.11,
+          1,
+          988.21,
+          960.73,
+          2,
+          980.09,
+          959.17,
+          1,
+          965.53
+        ],
+        [
+          "pdblnqe",
+          189,
+          "",
+          570.29,
+          1,
+          593.49,
+          563.36,
+          1,
+          588.67,
+          563.3,
+          16,
+          566.7
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 12
+    },
+    {
+      "table_number": "2",
+      "table_title": "Results achieved by UMDA, Tree-EDA and Tree-EDA ${ }^{r}$ for the selected instances",
+      "headers": [
+        "",
+        "",
+        "",
+        "UMDA",
+        "",
+        "",
+        "Tree-EDA",
+        "",
+        "",
+        "Tree-EDA ${ }^{r}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "pdb id",
+          "size",
+          "exp.",
+          "best",
+          "$S$",
+          "mean",
+          "best",
+          "$S$",
+          "mean",
+          "best",
+          "$S$",
+          "mean"
+        ],
+        [
+          1,
+          353,
+          30,
+          1703.73,
+          1,
+          1722.79,
+          1701.61,
+          1,
+          1716.8,
+          1695.16,
+          5,
+          1699.57
+        ],
+        [
+          14,
+          288,
+          "",
+          875.77,
+          1,
+          884.79,
+          868.92,
+          1,
+          880.96,
+          867.01,
+          3,
+          872.16
+        ],
+        [
+          12,
+          281,
+          "",
+          1839.67,
+          1,
+          1847.65,
+          1829.95,
+          1,
+          1841.83,
+          1823.87,
+          2,
+          1829.18
+        ],
+        [
+          161,
+          454,
+          "",
+          1936.92,
+          1,
+          1958.89,
+          1942.94,
+          1,
+          1992.96,
+          1911.46,
+          1,
+          1918.09
+        ],
+        [
+          16,
+          365,
+          "",
+          1681.67,
+          1,
+          1694.86,
+          1681.93,
+          1,
+          1703.08,
+          1673.47,
+          1,
+          1680.59
+        ],
+        [
+          160,
+          123,
+          "",
+          537.42,
+          3,
+          540.78,
+          536.69,
+          1,
+          540.68,
+          535.14,
+          6,
+          536.41
+        ],
+        [
+          1,
+          294,
+          "",
+          1100.51,
+          1,
+          1121.42,
+          1089.81,
+          1,
+          1105.23,
+          1088.8,
+          8,
+          1092.9
+        ],
+        [
+          1,
+          239,
+          "",
+          989.51,
+          3,
+          993.92,
+          988.82,
+          1,
+          1004.05,
+          987.13,
+          1,
+          990.61
+        ],
+        [
+          1,
+          240,
+          "",
+          735.75,
+          1,
+          749.53,
+          732.96,
+          1,
+          751.41,
+          732.01,
+          4,
+          735.82
+        ],
+        [
+          1,
+          265,
+          "",
+          806.53,
+          1,
+          823.58,
+          801.38,
+          1,
+          815.62,
+          800.07,
+          3,
+          800.95
+        ],
+        [
+          13,
+          206,
+          "",
+          785.56,
+          1,
+          795.11,
+          784.95,
+          1,
+          794.09,
+          782.98,
+          7,
+          785.68
+        ],
+        [
+          14,
+          227,
+          "",
+          825.64,
+          1,
+          830.12,
+          816.96,
+          1,
+          824.09,
+          815.84,
+          8,
+          817.45
+        ],
+        [
+          180,
+          229,
+          "",
+          1036.9,
+          1,
+          1040.45,
+          1034.96,
+          1,
+          1039.07,
+          1034.77,
+          9,
+          1035.15
+        ],
+        [
+          1,
+          288,
+          "",
+          1538.37,
+          1,
+          1546.85,
+          1531.8,
+          1,
+          1536.2,
+          1530.18,
+          5,
+          1532.12
+        ],
+        [
+          1,
+          285,
+          "",
+          1518.1,
+          1,
+          1545.51,
+          1510.21,
+          1,
+          1534.77,
+          1504.7,
+          3,
+          1510.91
+        ],
+        [
+          13,
+          289,
+          "",
+          1600.16,
+          1,
+          1625.67,
+          1592.75,
+          1,
+          1616.81,
+          1584.68,
+          2,
+          1598.96
+        ],
+        [
+          18,
+          329,
+          "",
+          957.08,
+          1,
+          964.5,
+          942.69,
+          3,
+          954.67,
+          942.62,
+          16,
+          943.56
+        ],
+        [
+          1,
+          268,
+          "",
+          935.95,
+          1,
+          967.32,
+          926.16,
+          1,
+          941.13,
+          926.16,
+          12,
+          927.22
+        ],
+        [
+          1,
+          350,
+          "",
+          1125.04,
+          1,
+          1135.0,
+          1120.77,
+          1,
+          1132.27,
+          1117.76,
+          1,
+          1119.78
+        ],
+        [
+          1,
+          164,
+          "",
+          858.67,
+          1,
+          867.24,
+          856.62,
+          1,
+          860.97,
+          855.56,
+          5,
+          856.98
+        ]
+      ],
+      "row_count": 21,
+      "column_count": 12
+    }
+  ]
+}

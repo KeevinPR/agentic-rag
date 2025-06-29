@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/A review of estimation of distribution algorithms in bioinformatics.md",
+    "filename": "A review of estimation of distribution algorithms in bioinformatics.md",
+    "title": "A review of estimation of distribution algorithms in bioinformatics",
+    "year": "2008"
+  },
+  "tables": [
+    {
+      "table_number": "2",
+      "table_title": "EDAs taxonomy",
+      "headers": [
+        "Statistical order",
+        "Advantages",
+        "Disadvantages",
+        "Examples"
+      ],
+      "rows": [
+        [
+          "Univariate",
+          "Simplest and fastest <br> Suited for high cardinality problems <br> Scalable",
+          "Ignore feature dependencies Bad performance for deceptive problems",
+          19941996.1999
+        ],
+        [
+          "Bivariate (statistics of order two)",
+          "Able to represent low order dependencies <br> Suited for many problems <br> Graphically inquire the induced models",
+          "Possibly ignore some feature dependencies <br> Slower than univariate EDAs",
+          "MIMIC (De Bonet et al., 1996) <br> Dependency trees EDA (Baluja and Davies, 1997) BMDA <br> (Pelikan and Mühlenbein, 1999) <br> Tree-EDA/Mixture of distributions <br> EDA (Santana et al., 1999)"
+        ],
+        [
+          "Multivariate (statistics of order greater than two)",
+          "Parameter learning (only interaction model parameters)",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Suited for problems with known underlying model <br> Structure+parameter learning (interaction model \\& parameters of the model)",
+          "Possibly ignore complex feature dependencies Higher memory requirements than bivariate",
+          "FDA (Mühlenbein et al., 1999) <br> Markov network-based EDA (Shakya and McCall, 2007)"
+        ],
+        [
+          "",
+          "Maximum power of generalization Flexibility to introduce user dependencies Online study of the induced dependencies",
+          "Highest computation time <br> Highest memory requirements",
+          "EcGA (Harik et al., 1999) <br> EBNA <br> (Etxeberria and Larrañaga, 1999) <br> BOA/hBOA (Pelikan et al., 1999, <br> 2005) <br> Dependency networks EDA <br> (Gámez et al., 2007)"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    }
+  ]
+}

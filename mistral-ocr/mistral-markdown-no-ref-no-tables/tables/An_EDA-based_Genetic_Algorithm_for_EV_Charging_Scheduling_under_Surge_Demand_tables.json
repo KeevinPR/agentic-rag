@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/An EDA-based Genetic Algorithm for EV Charging Scheduling under Surge Demand.md",
+    "filename": "An EDA-based Genetic Algorithm for EV Charging Scheduling under Surge Demand.md",
+    "title": "An EDA-based Genetic Algorithm for EV Charging Scheduling under Surge Demand",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Details Of Selected Data Set",
+      "headers": [
+        "Data Item",
+        "Value"
+      ],
+      "rows": [
+        [
+          "The number of CSs",
+          34
+        ],
+        [
+          "The charge devices of each CS",
+          5
+        ],
+        [
+          "The charging voltage of charge devices",
+          "$500 \\mathrm{~V}-750 \\mathrm{~V}$"
+        ],
+        [
+          "The total number of EV that are intending to use the",
+          1000
+        ],
+        [
+          "charge service in a certain time duration",
+          ""
+        ],
+        [
+          "The number of EVs that can arrive the neatest CS with",
+          899
+        ],
+        [
+          "its remaining battery power",
+          101
+        ],
+        [
+          "The number of EVs that use the batteries exchanging",
+          ""
+        ],
+        [
+          "service",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "Settings Of Obiect Function and Algorithms",
+      "headers": [
+        "Variable",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Objective function",
+          ""
+        ],
+        [
+          "$a_{v i}$",
+          0
+        ],
+        [
+          "$\\omega_{n \\in[1,3]}$",
+          "$[0.3,0.4,0.3]$"
+        ],
+        [
+          "$Q_{m}$",
+          40000
+        ],
+        [
+          "$D_{m}$",
+          3000
+        ],
+        [
+          "Genetic algorithm",
+          ""
+        ],
+        [
+          "mutation rate $m$",
+          0.3
+        ],
+        [
+          "crossover rate $r$",
+          0.7
+        ],
+        [
+          "population size $P$",
+          200
+        ],
+        [
+          "maximum iteration number $T$",
+          2006253000
+        ],
+        [
+          "EDA-based genetic algorithm",
+          ""
+        ],
+        [
+          "iteration times of sampling $E T_{c}$",
+          25
+        ],
+        [
+          "iteration times of sampling $E T$",
+          75500
+        ],
+        [
+          "coefficient $\\theta$",
+          1
+        ],
+        [
+          "the number of sampling $s_{n}$",
+          1
+        ],
+        [
+          "maximum iteration number $T$",
+          2006253000
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "EXPERIMENTAL RESULTS",
+      "headers": [
+        "Case",
+        "Algorithm of Experiments",
+        "Number of Iteration",
+        "Times of EDA sampling",
+        "Iteration <br> Number <br> of Conver- <br> gence",
+        "Fitness",
+        "Average of queuing time (minute)",
+        "Average of idle time (minute)",
+        "Number of charged EV within an hour",
+        "Time consuming (second)"
+      ],
+      "rows": [
+        [
+          1,
+          "Customeroriented FCFS",
+          "-",
+          "-",
+          "-",
+          0.755,
+          80.8,
+          3.0,
+          478,
+          0.15
+        ],
+        [
+          "",
+          "Supplieroriented greedy Scheduling",
+          "-",
+          "-",
+          "-",
+          0.681,
+          77.1,
+          1.26,
+          503,
+          0.15
+        ],
+        [
+          2,
+          "Genetic algorithmbased random FCFS",
+          200,
+          "-",
+          52,
+          0.605,
+          35.1,
+          12.3,
+          633,
+          411.5
+        ],
+        [
+          "",
+          "Genetic algorithmbased random scheduling",
+          200,
+          "-",
+          "-",
+          0.498,
+          31.8,
+          8.9,
+          659,
+          513
+        ],
+        [
+          "",
+          "Genetic algorithmbased greedy Scheduling",
+          200,
+          "-",
+          30,
+          0.32,
+          25.1,
+          4.16,
+          729,
+          519
+        ],
+        [
+          3,
+          "EDA-based genetic algorithm",
+          200,
+          3,
+          "-",
+          0.258,
+          21.6,
+          3.0,
+          769,
+          1195
+        ],
+        [
+          "",
+          "EDA-based genetic algorithm",
+          625,
+          20,
+          "-",
+          0.266,
+          21.8,
+          3.2,
+          763,
+          2664
+        ],
+        [
+          "",
+          "EDA-based genetic algorithm",
+          3000,
+          20,
+          "-",
+          0.214,
+          19.1,
+          2.06,
+          784,
+          21287
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    }
+  ]
+}

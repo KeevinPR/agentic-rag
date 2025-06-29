@@ -1,0 +1,672 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Recursion-Based Biases in Stochastic Grammar Model Genetic Programming.md",
+    "filename": "Recursion-Based Biases in Stochastic Grammar Model Genetic Programming.md",
+    "title": "Recursion-Based Biases in Stochastic Grammar Model Genetic Programming",
+    "year": "2016"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] S. Baluja and R. Caruana, \"Removing the genetics from the standard genetic algorithm,\" in The International Conference on Machine Learning 1995 (ML-95), A. Prieditis and S. Russel, Eds. San Mateo, CA: Morgan Kaufmann, 1995, pp. 38-46.\n[2] J. A. L. P. Larranaga, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Norwell, MA, USA: Kluwer Academic Publishers, 2001.\n[3] J. R. Koza, Genetic Programming: On the Programming of Computers by Means of Natural Selection. Cambride, MA, USA: MIT press, 1992.\n[4] Y. Shan, R. I. McKay, D. Essam, and H. A. Abbass, \"A survey of probabilistic model building genetic programming,\" in Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, ser. Studies in Computational Intelligence. Springer Berlin Heidelberg, 2006, vol. 33, ch. 6, pp. 121-160.\n[5] H. Iba, Y. Hasegawa, and T. K. Paul, Applied Genetic Programming and Machine Learning, ser. CRC Complex and Enterprise Systems Engineering. CRC Press, Aug. 2009.\n[6] K. Kim, Y. Shan, N. X. Hoai, and R. McKay, \"Probabilistic model building in genetic programming: A critical review,\" Genetic Programming and Evolvable Machines, pp. 1-53, Sep 2013.\n[7] K. Yanai and H. Iba, \"Probabilistic distribution models for EDA-based GP,\" in GECCO 2005: Proceedings of the 2005 conference on Genetic and evolutionary computation, vol. 2. Washington DC, USA: ACM Press, 25-29 Jun. 2005, pp. 1775-1776.\n[8] K. Sastry and D. E. Goldberg, \"Probabilistic model building and competent genetic programming,\" Genetic Programming Theory and Practice, pp. 205-220, 2003.\n[9] O. Roux and C. Foulupt, \"Ant programming: or how to use ants for automatic programming,\" in Proceedings of the Second International Conference on Ant Algorithms (ANTS2000), Brussels, Belgium, Sep. 2000, pp. 121-129.\n[10] R. P. Salustowicz and J. Schmidhuber, \"Probabilistic Incremental Program Evolution,\" Evolutionary Computation, vol. 5, no. 2, pp. 123-141, 1997.\n[11] Y. Shan, R. I. McKay, R. Baxter, H. Abbass, D. Essam, and H. X. Nguyen, \"Grammar model-based program evolution,\" in Proceedings of the 2004 IEEE Congress on Evolutionary Computation. Portland, Oregon, USA: IEEE Press, 20-23 Jun. 2004, pp. 478-485.\n[12] C. Keber and M. G. Schuster, \"Option valuation with generalized ant programming,\" in GECCO 2002: Proceedings of the Genetic and Evolutionary Computation Conference. Newyork, USA: Morgan Kaufmann Publishers, 9-13 Jul. 2002, pp. 74-81.\n[13] H. A. Abbass, X. Hoai, and R. I. McKay, \"AntTAG: A new method to compose computer programs using colonies of ants,\" in Proceedings of the 2002 IEEE Congress on Evolutionary Computation, vol. 2. Honolulu, HI, USA: IEEE Press, 2002, pp. 1654-1659.\n[14] A. Ratle and M. Sebag, \"Avoiding the bloat with probabilistic grammarguided genetic programming,\" in Artificial Evolution 5th International Conference, Evolution Artificielle, EA 2001, ser. Lecture Notes in Computer Science, vol. 2310. Creusot, France: Springer Verlag, 29-31 Oct. 2001, pp. 255-266.\n[15] R. Poli and N. F. McPhee, \"A linear estimation-of-distribution gp system,\" in Proceedings of the 11th European conference on Genetic Programming, EuroGP 2008, ser. Lecture Notes in Computer Science, vol. 4971. Naples, Italy: Springer-Verlag, 26-28 Mar. 2008, pp. 206217.\n[16] M. Looks, B. Goertzel, and C. Pennachin, \"Learning computer programs with the Bayesian optimization algorithm,\" in Proceedings of the 2005 conference on Genetic and evolutionary computation, ser. GECCO '05, vol. 1. Washington DC, USA: ACM Press, 25-29 Jun. 2005, pp. 747748.\n[17] J. Clegg, \"Combining cartesian genetic programming with an estimation of distribution algorithm,\" in GECCO '08: Proceedings of the 10th annual conference on Genetic and evolutionary computation. Atlanta, GA, USA: ACM, 12-16 Jul. 2008, pp. 1333-1334.\n[18] P. A. Whigham, \"Grammatical bias for evolutionary learning,\" Ph.D. dissertation, School of Computer Science, University College, University of New South Wales, Australian Defence Force Academy, Canberra, Australia, 1996.\n[19] D. Koller and N. Friedman, Probabilistic Graphical Models: Principles and Techniques. The MIT Press, 2009.\n[20] K. Kim and R. I. B. McKay, \"Stochastic diversity loss and scalability in estimation of distribution genetic programming,\" IEEE Transactions on Evolutionary Computation, vol. 17, no. 3, pp. 301-320, Jun. 2013.\n[21] C. Manning and H. Schutze, Foundations of Statistical Natural Language Processing. Cambridge, MA, USA: MIT Press, 1999.\n[22] Z. Chi and S. Geman, \"Estimation of probabilistic context-free grammars,\" Computational Linguistics, vol. 24, no. 2, pp. 299-305, 1998.\n[23] Z. Chi, \"Statistical properties of probabilistic context-free grammars,\" Computational Linguistics, vol. 25, no. 1, pp. 131-160, 1999.\n\n[24] T. L. Booth and R. A. Thompson, \"Applying probability measures to abstract languages,\" IEEE Transactions on Computers, vol. C-22, pp. $442-450,1973$.\n[25] K. B. Athreya and P. E. Ney, Branching Processes. Springer Berlin Heidelberg, 1972.\n[26] M. I. Miller and J. A. O’Sullivan, \"Entropies and combinatorics of random branching processes and context-free languages,\" IEEE Transactions on Information Theory, vol. 38, no. 4, pp. 1292-1310, Jul. 1992.\n[27] K. Kim, N. X. Hoai, and R. I. B. McKay, \"Implicit bias in grammarbased estimation of distribution genetic programming: The effects of recursive structure,\" in Proceedings of the IEEE Congress on Evolutionary Computation. Brisbane, Australia: IEEE Press, June 10-15 2012, pp. 1751-1758.\n[28] Y. Hasegawa and H. Iba, \"A Bayesian network approach to program generation,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 6, pp. 750-764, Dec. 2008.\n[29] R. I. B. McKay, N. Hoai, P. Whigham, Y. Shan, and M. O’Neill, \"Grammar-based genetic programming: A survey,\" Genetic Programming and Evolvable Machines, vol. 11, no. 3-4 (10th Anniversary Special Issue), pp. 365-396, 1 Sept 2010. [Online]. Available: http://sc.snu.ac.kr/PAPERS/gpem_giec.pdf\n[30] Y. Shan, R. I. McKay, H. A. Abbass, and D. Essam, \"Program evolution with explicit learning: a new framework for program automatic synthesis,\" in Proceedings of the 2003 IEEE Congress on Evolutionary Computation, CEC2003, University of New South Wales. Canberra, Australia: IEEE Press, 8-12 Dec. 2003, pp. 1639-1646.\n[31] Y. Hasegawa and H. Iba, \"Latent variable model for estimation of distribution algorithm based on a probabilistic context-free grammar,\" IEEE Transactions on Evolutionary Computation, vol. 13, no. 4, pp. 858-878, Aug. 2009.\n[32] J. L. Olmo, J. R. Romero, and S. Ventura, \"A grammar based ant programming algorithm for mining classification rules,\" in Proceedings of 2010 IEEE Congress on Evolutionary Computation (CEC 2010). Barcelona, Spain: IEEE Press, 18-23 Jul. 2010, pp. 225-232.\n[33] S. Shirakawa, S. Ogino, and T. Nagao, \"Dynamic ant programming for automatic construction of programs,\" IEEE Transactions on Electrical and Electronic Engineering, vol. 3, no. 5, pp. 540-548, Sep. 2008.\n[34] M. Boryczka and Z. J. Czech, \"Solving approximation problems by ant colony programming,\" in GECCO 2002: Proceedings of the Genetic and Evolutionary Computation Conference. New York, USA: Morgan Kaufmann Publishers, 9-13 Jul. 2002, p. 133.\n[35] S. A. Rojas and P. J. Bentley, \"A grid-based ant colony system for automatic program synthesis,\" in Late Breaking Papers at the 2004 Genetic and Evolutionary Computation Conference, Seattle, Washington, USA, 26 Jul. 2004.\n[36] M. Dorigo and T. Stützle, Ant Colony Optimization. Cambridge, MA: MIT Press, 2004.\n[37] P. Whigham, \"Inductive bias and genetic programming,\" in Genetic Algorithms in Engineering Systems: Innovations and Applications, 1995. GALESIA First International Conference on (Conf. Publ. No. 414). Sheffield, UK: IEEE, 12-14 Sep 1995, pp. 461-466.\n[38] Y. Shan, R. I. McKay, D. Essam, and J. Liu, \"Modularity and position independence in EDA-GP,\" in Proceedings of The Second Asian-Pacific Workshop on Genetic Programming, Cairns, Australia, 2004.\n[39] S. Silva, P. J. N. Silva, and E. Costa, \"Resource-limited genetic programming: Replacing tree depth limits,\" in Adaptive and Natural Computing Algorithms. Coimbra, Portugal: Springer Vienna, 2005, pp. 243-246.\n[40] E. Crane and N. McPhee, \"The effects of size and depth limits on tree based genetic programming,\" in Genetic Programming Theory and Practice III, ser. Genetic Programming. Springer US, 2006, vol. 9, pp. $223-240$.\n[41] N. McPhee, A. Jarvis, and E. Crane, \"On the strength of size limits in linear genetic programming,\" in Genetic and Evolutionary Computation GECCO 2004, ser. Lecture Notes in Computer Science. Springer Berlin Heidelberg, 2004, vol. 3103, pp. 593-604.\n[42] B. J. Ross, \"Logic-based genetic programming with definite clause translation grammars,\" New Generation Computing, vol. 19, no. 4, pp. $313-337,2001$.\n[43] P. A. Whigham, \"Grammatically-based genetic programming,\" in Proceedings of the Workshop on Genetic Programming: From Theory to Real-World Applications, Tahoe City, California, USA, 9 Jul. 1995, pp. $33-41$.\n[44] W. B. Langdon and R. Poli, \"An analysis of the MAX problem in genetic programming,\" in Genetic Programming 1997: Proceedings of the Second International Conference on Genetic Programming, CA, USA, 13-16Jul. 1997, pp. 222-230.\n[45] B. Punch, D. Zongker, and E. Goodman, \"The royal tree problem, a benchmark for single and multi-population genetic programming,\" Advances in genetic programming, vol. 2, pp. 299-316, 1996.\n[46] A. Tsakonas, \"A comparison of classification accuracy of four genetic programming-evolved intelligent structures,\" Information Sciences, vol. 176, no. 6, pp. 691-724, Mar. 2006.\n[47] Y. Shan, \"Program distribution estimation with grammar models,\" Ph.D. dissertation, University of New South Wales, Australia, 2005.\n[48] Y. Shan, R. McKay, R. Baxter, H. Abbass, D. Essam, and H. Nguyen., \"Grammar model-based program evolution,\" in Proceedings. IEEE Congress on Evolutionary Computation. Portland, USA: IEEE Press, June 2004, pp. 478-485.\n[49] Y. Shan, R. I. McKay, H. A. Abbass, and D. Essam, \"Program evolution with explicit learning: a new framework for program automatic synthesis,\" in Proceedings, IEEE Congress on Evolutionary Computation, University College, University of New South Wales, Australia. Canberra, Australia: IEEE Press, Dec 2003, pp. 1639-1646.\n[50] Y. Hasegawa and H. Iba, \"Estimation of distribution algorithm based on probabilistic grammar with latent annotations,\" in Proceedings of the 2007 IEEE Congress on Evolutionary Computation, IEEE Computational Intelligence Society. Singapore: IEEE Press, 25-28 Sep. 2007, pp. 1043-1050.\n[51] , \"Latent variable model for estimation of distribution algorithm based on a probabilistic context-free grammar,\" IEEE Transactions on Evolutionary Computation, vol. 13, no. 4, pp. 858-878, 2009.\n![img-5.jpeg](img-5.jpeg)\n\nKangil Kim received his BSc in Computer Science from the Korea Advanced Institute of Science and Technology in 2006, and PhD from Seoul National University in 2012. He is working as a senior researcher in natural language processing group of Electoronics and Telecommunications Research Institute in Korea from 2012. His research interests include artificial intelligence, evolutionary computation, machine learning, and natural language processing.\n![img-6.jpeg](img-6.jpeg)\n\nBob McKay received his BSc from the Australian National University in 1971, and his PhD in theory of computation from the University of Bristol, UK, in 1976. He has worked in CSIRO and the University of New South Wales, before joining Seoul National University, Korea, in 2005. Following his retirement in 2015, he subsequently joined the Australian National University His research interests lie in intelligent systems, evolutionary computation and ecological modelling.\n![img-7.jpeg](img-7.jpeg)\n\nNguyen Xuan Hoai received his PhD in Computer Science from the University of New South Wales, Australia in 2005. He worked in Le Quy Don Technical University, Vietnam, then Seoul National University, Korea, before being appointed as an associate professor in computer science at Hanoi University, Vietnam, in 2010. His research interests include evolutionary computation, in particular genetic programming, and statistical machine learning.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "S. Baluja and R. Caruana, \"Removing the genetics from the standard genetic algorithm,\" in The International Conference on Machine Learning 1995 (ML-95), A. Prieditis and S. Russel, Eds. San Mateo, CA: Morgan Kaufmann, 1995, pp. 38-46."
+      },
+      {
+        "ref_id": "2",
+        "text": "J. A. L. P. Larranaga, Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. Norwell, MA, USA: Kluwer Academic Publishers, 2001."
+      },
+      {
+        "ref_id": "3",
+        "text": "J. R. Koza, Genetic Programming: On the Programming of Computers by Means of Natural Selection. Cambride, MA, USA: MIT press, 1992."
+      },
+      {
+        "ref_id": "4",
+        "text": "Y. Shan, R. I. McKay, D. Essam, and H. A. Abbass, \"A survey of probabilistic model building genetic programming,\" in Scalable Optimization via Probabilistic Modeling: From Algorithms to Applications, ser. Studies in Computational Intelligence. Springer Berlin Heidelberg, 2006, vol. 33, ch. 6, pp. 121-160."
+      },
+      {
+        "ref_id": "5",
+        "text": "H. Iba, Y. Hasegawa, and T. K. Paul, Applied Genetic Programming and Machine Learning, ser. CRC Complex and Enterprise Systems Engineering. CRC Press, Aug. 2009."
+      },
+      {
+        "ref_id": "6",
+        "text": "K. Kim, Y. Shan, N. X. Hoai, and R. McKay, \"Probabilistic model building in genetic programming: A critical review,\" Genetic Programming and Evolvable Machines, pp. 1-53, Sep 2013."
+      },
+      {
+        "ref_id": "7",
+        "text": "K. Yanai and H. Iba, \"Probabilistic distribution models for EDA-based GP,\" in GECCO 2005: Proceedings of the 2005 conference on Genetic and evolutionary computation, vol. 2. Washington DC, USA: ACM Press, 25-29 Jun. 2005, pp. 1775-1776."
+      },
+      {
+        "ref_id": "8",
+        "text": "K. Sastry and D. E. Goldberg, \"Probabilistic model building and competent genetic programming,\" Genetic Programming Theory and Practice, pp. 205-220, 2003."
+      },
+      {
+        "ref_id": "9",
+        "text": "O. Roux and C. Foulupt, \"Ant programming: or how to use ants for automatic programming,\" in Proceedings of the Second International Conference on Ant Algorithms (ANTS2000), Brussels, Belgium, Sep. 2000, pp. 121-129."
+      },
+      {
+        "ref_id": "10",
+        "text": "R. P. Salustowicz and J. Schmidhuber, \"Probabilistic Incremental Program Evolution,\" Evolutionary Computation, vol. 5, no. 2, pp. 123-141, 1997."
+      },
+      {
+        "ref_id": "11",
+        "text": "Y. Shan, R. I. McKay, R. Baxter, H. Abbass, D. Essam, and H. X. Nguyen, \"Grammar model-based program evolution,\" in Proceedings of the 2004 IEEE Congress on Evolutionary Computation. Portland, Oregon, USA: IEEE Press, 20-23 Jun. 2004, pp. 478-485."
+      },
+      {
+        "ref_id": "12",
+        "text": "C. Keber and M. G. Schuster, \"Option valuation with generalized ant programming,\" in GECCO 2002: Proceedings of the Genetic and Evolutionary Computation Conference. Newyork, USA: Morgan Kaufmann Publishers, 9-13 Jul. 2002, pp. 74-81."
+      },
+      {
+        "ref_id": "13",
+        "text": "H. A. Abbass, X. Hoai, and R. I. McKay, \"AntTAG: A new method to compose computer programs using colonies of ants,\" in Proceedings of the 2002 IEEE Congress on Evolutionary Computation, vol. 2. Honolulu, HI, USA: IEEE Press, 2002, pp. 1654-1659."
+      },
+      {
+        "ref_id": "14",
+        "text": "A. Ratle and M. Sebag, \"Avoiding the bloat with probabilistic grammarguided genetic programming,\" in Artificial Evolution 5th International Conference, Evolution Artificielle, EA 2001, ser. Lecture Notes in Computer Science, vol. 2310. Creusot, France: Springer Verlag, 29-31 Oct. 2001, pp. 255-266."
+      },
+      {
+        "ref_id": "15",
+        "text": "R. Poli and N. F. McPhee, \"A linear estimation-of-distribution gp system,\" in Proceedings of the 11th European conference on Genetic Programming, EuroGP 2008, ser. Lecture Notes in Computer Science, vol. 4971. Naples, Italy: Springer-Verlag, 26-28 Mar. 2008, pp. 206217."
+      },
+      {
+        "ref_id": "16",
+        "text": "M. Looks, B. Goertzel, and C. Pennachin, \"Learning computer programs with the Bayesian optimization algorithm,\" in Proceedings of the 2005 conference on Genetic and evolutionary computation, ser. GECCO '05, vol. 1. Washington DC, USA: ACM Press, 25-29 Jun. 2005, pp. 747748."
+      },
+      {
+        "ref_id": "17",
+        "text": "J. Clegg, \"Combining cartesian genetic programming with an estimation of distribution algorithm,\" in GECCO '08: Proceedings of the 10th annual conference on Genetic and evolutionary computation. Atlanta, GA, USA: ACM, 12-16 Jul. 2008, pp. 1333-1334."
+      },
+      {
+        "ref_id": "18",
+        "text": "P. A. Whigham, \"Grammatical bias for evolutionary learning,\" Ph.D. dissertation, School of Computer Science, University College, University of New South Wales, Australian Defence Force Academy, Canberra, Australia, 1996."
+      },
+      {
+        "ref_id": "19",
+        "text": "D. Koller and N. Friedman, Probabilistic Graphical Models: Principles and Techniques. The MIT Press, 2009."
+      },
+      {
+        "ref_id": "20",
+        "text": "K. Kim and R. I. B. McKay, \"Stochastic diversity loss and scalability in estimation of distribution genetic programming,\" IEEE Transactions on Evolutionary Computation, vol. 17, no. 3, pp. 301-320, Jun. 2013."
+      },
+      {
+        "ref_id": "21",
+        "text": "C. Manning and H. Schutze, Foundations of Statistical Natural Language Processing. Cambridge, MA, USA: MIT Press, 1999."
+      },
+      {
+        "ref_id": "22",
+        "text": "Z. Chi and S. Geman, \"Estimation of probabilistic context-free grammars,\" Computational Linguistics, vol. 24, no. 2, pp. 299-305, 1998."
+      },
+      {
+        "ref_id": "23",
+        "text": "Z. Chi, \"Statistical properties of probabilistic context-free grammars,\" Computational Linguistics, vol. 25, no. 1, pp. 131-160, 1999."
+      },
+      {
+        "ref_id": "24",
+        "text": "T. L. Booth and R. A. Thompson, \"Applying probability measures to abstract languages,\" IEEE Transactions on Computers, vol. C-22, pp. $442-450,1973$."
+      },
+      {
+        "ref_id": "25",
+        "text": "K. B. Athreya and P. E. Ney, Branching Processes. Springer Berlin Heidelberg, 1972."
+      },
+      {
+        "ref_id": "26",
+        "text": "M. I. Miller and J. A. O’Sullivan, \"Entropies and combinatorics of random branching processes and context-free languages,\" IEEE Transactions on Information Theory, vol. 38, no. 4, pp. 1292-1310, Jul. 1992."
+      },
+      {
+        "ref_id": "27",
+        "text": "K. Kim, N. X. Hoai, and R. I. B. McKay, \"Implicit bias in grammarbased estimation of distribution genetic programming: The effects of recursive structure,\" in Proceedings of the IEEE Congress on Evolutionary Computation. Brisbane, Australia: IEEE Press, June 10-15 2012, pp. 1751-1758."
+      },
+      {
+        "ref_id": "28",
+        "text": "Y. Hasegawa and H. Iba, \"A Bayesian network approach to program generation,\" IEEE Transactions on Evolutionary Computation, vol. 12, no. 6, pp. 750-764, Dec. 2008."
+      },
+      {
+        "ref_id": "29",
+        "text": "R. I. B. McKay, N. Hoai, P. Whigham, Y. Shan, and M. O’Neill, \"Grammar-based genetic programming: A survey,\" Genetic Programming and Evolvable Machines, vol. 11, no. 3-4 (10th Anniversary Special Issue), pp. 365-396, 1 Sept 2010. [Online]. Available: http://sc.snu.ac.kr/PAPERS/gpem_giec.pdf"
+      },
+      {
+        "ref_id": "30",
+        "text": "Y. Shan, R. I. McKay, H. A. Abbass, and D. Essam, \"Program evolution with explicit learning: a new framework for program automatic synthesis,\" in Proceedings of the 2003 IEEE Congress on Evolutionary Computation, CEC2003, University of New South Wales. Canberra, Australia: IEEE Press, 8-12 Dec. 2003, pp. 1639-1646."
+      },
+      {
+        "ref_id": "31",
+        "text": "Y. Hasegawa and H. Iba, \"Latent variable model for estimation of distribution algorithm based on a probabilistic context-free grammar,\" IEEE Transactions on Evolutionary Computation, vol. 13, no. 4, pp. 858-878, Aug. 2009."
+      },
+      {
+        "ref_id": "32",
+        "text": "J. L. Olmo, J. R. Romero, and S. Ventura, \"A grammar based ant programming algorithm for mining classification rules,\" in Proceedings of 2010 IEEE Congress on Evolutionary Computation (CEC 2010). Barcelona, Spain: IEEE Press, 18-23 Jul. 2010, pp. 225-232."
+      },
+      {
+        "ref_id": "33",
+        "text": "S. Shirakawa, S. Ogino, and T. Nagao, \"Dynamic ant programming for automatic construction of programs,\" IEEE Transactions on Electrical and Electronic Engineering, vol. 3, no. 5, pp. 540-548, Sep. 2008."
+      },
+      {
+        "ref_id": "34",
+        "text": "M. Boryczka and Z. J. Czech, \"Solving approximation problems by ant colony programming,\" in GECCO 2002: Proceedings of the Genetic and Evolutionary Computation Conference. New York, USA: Morgan Kaufmann Publishers, 9-13 Jul. 2002, p. 133."
+      },
+      {
+        "ref_id": "35",
+        "text": "S. A. Rojas and P. J. Bentley, \"A grid-based ant colony system for automatic program synthesis,\" in Late Breaking Papers at the 2004 Genetic and Evolutionary Computation Conference, Seattle, Washington, USA, 26 Jul. 2004."
+      },
+      {
+        "ref_id": "36",
+        "text": "M. Dorigo and T. Stützle, Ant Colony Optimization. Cambridge, MA: MIT Press, 2004."
+      },
+      {
+        "ref_id": "37",
+        "text": "P. Whigham, \"Inductive bias and genetic programming,\" in Genetic Algorithms in Engineering Systems: Innovations and Applications, 1995. GALESIA First International Conference on (Conf. Publ. No. 414). Sheffield, UK: IEEE, 12-14 Sep 1995, pp. 461-466."
+      },
+      {
+        "ref_id": "38",
+        "text": "Y. Shan, R. I. McKay, D. Essam, and J. Liu, \"Modularity and position independence in EDA-GP,\" in Proceedings of The Second Asian-Pacific Workshop on Genetic Programming, Cairns, Australia, 2004."
+      },
+      {
+        "ref_id": "39",
+        "text": "S. Silva, P. J. N. Silva, and E. Costa, \"Resource-limited genetic programming: Replacing tree depth limits,\" in Adaptive and Natural Computing Algorithms. Coimbra, Portugal: Springer Vienna, 2005, pp. 243-246."
+      },
+      {
+        "ref_id": "40",
+        "text": "E. Crane and N. McPhee, \"The effects of size and depth limits on tree based genetic programming,\" in Genetic Programming Theory and Practice III, ser. Genetic Programming. Springer US, 2006, vol. 9, pp. $223-240$."
+      },
+      {
+        "ref_id": "41",
+        "text": "N. McPhee, A. Jarvis, and E. Crane, \"On the strength of size limits in linear genetic programming,\" in Genetic and Evolutionary Computation GECCO 2004, ser. Lecture Notes in Computer Science. Springer Berlin Heidelberg, 2004, vol. 3103, pp. 593-604."
+      },
+      {
+        "ref_id": "42",
+        "text": "B. J. Ross, \"Logic-based genetic programming with definite clause translation grammars,\" New Generation Computing, vol. 19, no. 4, pp. $313-337,2001$."
+      },
+      {
+        "ref_id": "43",
+        "text": "P. A. Whigham, \"Grammatically-based genetic programming,\" in Proceedings of the Workshop on Genetic Programming: From Theory to Real-World Applications, Tahoe City, California, USA, 9 Jul. 1995, pp. $33-41$."
+      },
+      {
+        "ref_id": "44",
+        "text": "W. B. Langdon and R. Poli, \"An analysis of the MAX problem in genetic programming,\" in Genetic Programming 1997: Proceedings of the Second International Conference on Genetic Programming, CA, USA, 13-16Jul. 1997, pp. 222-230."
+      },
+      {
+        "ref_id": "45",
+        "text": "B. Punch, D. Zongker, and E. Goodman, \"The royal tree problem, a benchmark for single and multi-population genetic programming,\" Advances in genetic programming, vol. 2, pp. 299-316, 1996."
+      },
+      {
+        "ref_id": "46",
+        "text": "A. Tsakonas, \"A comparison of classification accuracy of four genetic programming-evolved intelligent structures,\" Information Sciences, vol. 176, no. 6, pp. 691-724, Mar. 2006."
+      },
+      {
+        "ref_id": "47",
+        "text": "Y. Shan, \"Program distribution estimation with grammar models,\" Ph.D. dissertation, University of New South Wales, Australia, 2005."
+      },
+      {
+        "ref_id": "48",
+        "text": "Y. Shan, R. McKay, R. Baxter, H. Abbass, D. Essam, and H. Nguyen., \"Grammar model-based program evolution,\" in Proceedings. IEEE Congress on Evolutionary Computation. Portland, USA: IEEE Press, June 2004, pp. 478-485."
+      },
+      {
+        "ref_id": "49",
+        "text": "Y. Shan, R. I. McKay, H. A. Abbass, and D. Essam, \"Program evolution with explicit learning: a new framework for program automatic synthesis,\" in Proceedings, IEEE Congress on Evolutionary Computation, University College, University of New South Wales, Australia. Canberra, Australia: IEEE Press, Dec 2003, pp. 1639-1646."
+      },
+      {
+        "ref_id": "50",
+        "text": "Y. Hasegawa and H. Iba, \"Estimation of distribution algorithm based on probabilistic grammar with latent annotations,\" in Proceedings of the 2007 IEEE Congress on Evolutionary Computation, IEEE Computational Intelligence Society. Singapore: IEEE Press, 25-28 Sep. 2007, pp. 1043-1050."
+      },
+      {
+        "ref_id": "51",
+        "text": ", \"Latent variable model for estimation of distribution algorithm based on a probabilistic context-free grammar,\" IEEE Transactions on Evolutionary Computation, vol. 13, no. 4, pp. 858-878, 2009."
+      }
+    ],
+    "reference_count": 51,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Grammars for Benchmark Problems (E0: Starting Symbol)",
+      "headers": [
+        "Symbolic Regression",
+        "",
+        "",
+        "Max",
+        "",
+        "",
+        "Royal Tree",
+        ""
+      ],
+      "rows": [
+        [
+          0,
+          "$\\rightarrow$",
+          "X",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 8
+    },
+    {
+      "table_number": "II",
+      "table_title": "PARAMETER SETTINGS FOR EXPERIMENTS",
+      "headers": [
+        "Common Parameters",
+        "Problem-dependent Parameters"
+      ],
+      "rows": [
+        [
+          "Genotype",
+          "derivation tree Derivation depth limit"
+        ],
+        [
+          "Population",
+          1000
+        ],
+        [
+          "Generations",
+          200
+        ],
+        [
+          "Runs",
+          30
+        ],
+        [
+          "Selection",
+          "truncation"
+        ],
+        [
+          "Ratios",
+          306090100
+        ],
+        [
+          "Update",
+          "max. likelihood"
+        ],
+        [
+          "Sampling",
+          "ancestral"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "Final Generation Mean Best Fitness of Scalar SG-GP, 30 Runs (Simple Grammars, No SElection)",
+      "headers": [
+        "Problem",
+        "Uncorrected <br> Bias",
+        "Finite <br> Inverse Bias",
+        "Bounded <br> Inverse Bias"
+      ],
+      "rows": [
+        [
+          0,
+          "$0.64 \\pm 0.07$",
+          "$0.64 \\pm 0.04$",
+          "$0.24 \\pm 0.08$"
+        ],
+        [
+          16,
+          "$1.18 \\pm 1.03$",
+          "$1.33 \\pm 1.00$",
+          "$6.34 \\pm 1.82$"
+        ],
+        [
+          384,
+          "$2.14 \\pm 1.78$",
+          "$2.66 \\pm 2.95$",
+          "$73.6 \\pm 18.0$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Complex Grammars for Benchmark Problems (E0: Starting SYMBOL)",
+      "headers": [
+        "Symbolic Regression",
+        "Max",
+        "",
+        "Royal Tree",
+        ""
+      ],
+      "rows": [
+        [
+          0,
+          0,
+          "",
+          0,
+          ""
+        ],
+        [
+          0,
+          "$\\rightarrow$",
+          0,
+          "$\\rightarrow$",
+          0
+        ],
+        [
+          "$\\rightarrow$ E0 - E0",
+          "$\\rightarrow$",
+          0,
+          "$\\rightarrow$",
+          0
+        ],
+        [
+          11,
+          "$\\rightarrow$",
+          1,
+          "$\\rightarrow$",
+          11
+        ],
+        [
+          11,
+          "",
+          "",
+          "$\\rightarrow$",
+          1
+        ],
+        [
+          "$\\rightarrow$ X",
+          "",
+          "",
+          "$\\rightarrow$",
+          "X"
+        ],
+        [
+          1,
+          1,
+          "",
+          1,
+          ""
+        ],
+        [
+          0,
+          "$\\rightarrow$",
+          11,
+          "$\\rightarrow$",
+          0
+        ],
+        [
+          "$\\rightarrow$ E0 - E0",
+          "$\\rightarrow$",
+          11,
+          "$\\rightarrow$",
+          0
+        ],
+        [
+          11,
+          "$\\rightarrow$",
+          "X",
+          "$\\rightarrow$",
+          11
+        ],
+        [
+          11,
+          "",
+          "",
+          "$\\rightarrow$",
+          1
+        ],
+        [
+          "$\\rightarrow$ X",
+          "",
+          "",
+          "$\\rightarrow$",
+          "X"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 5
+    },
+    {
+      "table_number": "V",
+      "table_title": "Final Generation Mean Best Fitness of Scalar SG-GP, 30 Runs (COMPLEX GRAMMARS, NO SELECTION)",
+      "headers": [
+        "Problem",
+        "Uncorrected <br> Bias",
+        "Bounded <br> Inverse Bias"
+      ],
+      "rows": [
+        [
+          0,
+          "$0.63 \\pm 0.04$",
+          "$0.23 \\pm 0.11$"
+        ],
+        [
+          16,
+          "$1.36 \\pm 1.00$",
+          "$8.33 \\pm 2.20$"
+        ],
+        [
+          6144,
+          "$2.6 \\pm 1.5$",
+          "$69.3 \\pm 30.9$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    },
+    {
+      "table_number": "VI",
+      "table_title": "Final Generation Mean Best Fitness of Scalar SG-GP, 30 Runs (Simple Grammars. $\\rho$ : Selection Ratio;",
+      "headers": [
+        "Problem ( $\\theta$ : max fitness)",
+        "Uncorrected Bias",
+        "",
+        "Bounded Inverse Bias",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Final Gen.",
+          "$\\alpha$",
+          "Final Gen.",
+          "$\\alpha$"
+        ],
+        [
+          "Regression <br> ( $\\theta: 0$ )",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\rho=30 \\%$",
+          "$0.56 \\pm 0.00$",
+          0.24,
+          "$0.01 \\pm 0.05$",
+          0.0
+        ],
+        [
+          "$\\rho=60 \\%$",
+          "$0.56 \\pm 0.00$",
+          0.25,
+          "$0.56 \\pm 0.00$",
+          0.02
+        ],
+        [
+          "$\\rho=90 \\%$",
+          "$0.62 \\pm 0.05$",
+          0.25,
+          "$0.64 \\pm 0.02$",
+          0.17
+        ],
+        [
+          "Max",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$(\\theta: 16)$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\rho=30 \\%$",
+          "$6.40 \\pm 0.44$",
+          6.75,
+          "$8.00 \\pm 0.00$",
+          14.68
+        ],
+        [
+          "$\\rho=60 \\%$",
+          "$6.00 \\pm 0.45$",
+          6.6,
+          "$8.00 \\pm 0.00$",
+          15.47
+        ],
+        [
+          "$\\rho=90 \\%$",
+          "$4.68 \\pm 0.63$",
+          6.6,
+          "$15.73 \\pm 1.44$",
+          16.0
+        ],
+        [
+          "Royal tree <br> ( $\\theta: 384)$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\rho=30 \\%$",
+          "$32.0 \\pm 0.0$",
+          78.5,
+          "$126.5 \\pm 17.17$",
+          185.3
+        ],
+        [
+          "$\\rho=60 \\%$",
+          "$4.0 \\pm 0.0$",
+          78.5,
+          "$3.1 \\pm 2.5$",
+          102.2
+        ],
+        [
+          "$\\rho=90 \\%$",
+          "$4.0 \\pm 0.0$",
+          78.5,
+          "$1.0 \\pm 0.0$",
+          85.3
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 5
+    },
+    {
+      "table_number": "VII",
+      "table_title": "Final Generation Mean Best Fitness of Scalar SG-GP, 30 Runs (COMPLEX GRAMMARS. $\\rho$ : SELECTION RATIO;",
+      "headers": [
+        "Problem ( $\\theta$ : max fitness)",
+        "Uncorrected Bias",
+        "",
+        "Bounded Inverse Bias",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Final Gen.",
+          "$\\alpha$",
+          "Final Gen.",
+          "$\\alpha$"
+        ],
+        [
+          "Regression <br> ( $\\theta: 0$ )",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\rho=30 \\%$",
+          "$0.56 \\pm 0.00$",
+          0.25,
+          "$0.51 \\pm 0.09$",
+          0.0
+        ],
+        [
+          "$\\rho=60 \\%$",
+          "$0.56 \\pm 0.00$",
+          0.25,
+          "$0.56 \\pm 0.00$",
+          0.05
+        ],
+        [
+          "$\\rho=90 \\%$",
+          "$0.62 \\pm 0.05$",
+          0.25,
+          "$0.62 \\pm 0.05$",
+          0.17
+        ],
+        [
+          "Max <br> ( $\\theta: 16)$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\rho=30 \\%$",
+          "$6.38 \\pm 0.54$",
+          8.66,
+          "$8.00 \\pm 0.00$",
+          15.8
+        ],
+        [
+          "$\\rho=60 \\%$",
+          "$5.98 \\pm 0.57$",
+          8.66,
+          "$8.00 \\pm 0.00$",
+          15.87
+        ],
+        [
+          "$\\rho=90 \\%$",
+          "$4.72 \\pm 0.49$",
+          8.66,
+          "$15.27 \\pm 1.82$",
+          16.0
+        ],
+        [
+          "Royal tree <br> ( $\\theta: 6144)$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\rho=30 \\%$",
+          "$6.0 \\pm 0.2$",
+          80.6,
+          "$308.7 \\pm 231.8$",
+          494.0
+        ],
+        [
+          "$\\rho=60 \\%$",
+          "$5.4 \\pm 1.1$",
+          80.6,
+          "$142.5 \\pm 233.5$",
+          241.9
+        ],
+        [
+          "$\\rho=90 \\%$",
+          "$4.3 \\pm 1.4$",
+          80.6,
+          "$12.3 \\pm 3.0$",
+          85.4
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 5
+    }
+  ]
+}

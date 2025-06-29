@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/Bio-control in mushroom farming using a Markov network EDA.md",
+    "filename": "Bio-control in mushroom farming using a Markov network EDA.md",
+    "title": "Bio-control in mushroom farming using a Markov network EDA",
+    "year": "2008"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] A. Fenton, R.L. Gwynn, A. Gupta, R. Norman, J.P. Fairbairn, and P.J. Hudson. Optimal application strategies for entomopathogenic nematodes: integrating theoretical and empirical approaches. Journal of Applied Ecology 2002 39,481-492.\n[2] P. M. Godley, D. E. Cairns, and J. Cowie. Directed intervention crossover applied to bio-control scheduling. In IEEE CEC 2007: Proceedings of the IEEE Congress On Evolutionary Computation, 2007.\n[3] P. M. Godley, D. E. Cairns, and J. Cowie. Maximising the efficiency of bio-control application utilising genetic algorithms. In EFITA / WCCA 2007: Proceedings of the 6th Biennial Conference of European Federation of IT in Agriculture, Glasgow, Scotland, UK, 2007. Glasgow Caledonian University.\n[4] Paul M. Godley and Julie Cowie and David E. Cairns, Novel Genetic Algorithm Approaches for Time-Series Problems, Doctoral Symposium on Engineering\n\nStochastic Local Search Algorithms pp47-51, IRIDIA, 2007 ISSN: 1781-3794\n[5] Siddhartha Shakya, John McCall. Optimization by Estimation of Distribution with DEUM Framework Based on Markov Random Fields. International Journal of Automation and Computing.04(3),July 2007,262272.\n[6] Andrei Petrovski, Siddhartha Shakya, John McCall. Optimising Cancer Chemotherapy Using an Estimation of Distribution Algorithm and Genetic Algorithms. GECCO'06, July 08-12, 2006, Seattle, WA, USA.\n[7] A Petrovski, J. McCall, Multi-objective Optimization of Cancer Chemotherapy Using Evolutionary Algorithms, in E. Zitzler, K. Deb, L. Thiele, C.A. Coello Coello, D.Corne, (eds) Proc. EMO Conference, Zurich. Springer-Verlag, pp 531-545, Berlin, 2001\n[8] Siddhartha Shakya, John McCall and Deryck Brown. Using a Markov network model in a univariate EDA: an empirical cost-benefit analysis. in GECCO 2005, 2005, Washington,DC,USA\n[9] John McCall, Andrei Petrovski, Siddhartha Shakya, Evolutionary Algorithms for Cancer Chemotherapy Optimisation, in G. B. Fogel , D. W. Corne , Y. Pan (Eds) Computational Intelligence in Bioinformatics. Chapter 12 pp265-294, Wiley-IEEE Press, New York, NY, USA, 2007.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "A. Fenton, R.L. Gwynn, A. Gupta, R. Norman, J.P. Fairbairn, and P.J. Hudson. Optimal application strategies for entomopathogenic nematodes: integrating theoretical and empirical approaches. Journal of Applied Ecology 2002 39,481-492."
+      },
+      {
+        "ref_id": "2",
+        "text": "P. M. Godley, D. E. Cairns, and J. Cowie. Directed intervention crossover applied to bio-control scheduling. In IEEE CEC 2007: Proceedings of the IEEE Congress On Evolutionary Computation, 2007."
+      },
+      {
+        "ref_id": "3",
+        "text": "P. M. Godley, D. E. Cairns, and J. Cowie. Maximising the efficiency of bio-control application utilising genetic algorithms. In EFITA / WCCA 2007: Proceedings of the 6th Biennial Conference of European Federation of IT in Agriculture, Glasgow, Scotland, UK, 2007. Glasgow Caledonian University."
+      },
+      {
+        "ref_id": "4",
+        "text": "Paul M. Godley and Julie Cowie and David E. Cairns, Novel Genetic Algorithm Approaches for Time-Series Problems, Doctoral Symposium on Engineering"
+      },
+      {
+        "ref_id": "5",
+        "text": "Siddhartha Shakya, John McCall. Optimization by Estimation of Distribution with DEUM Framework Based on Markov Random Fields. International Journal of Automation and Computing.04(3),July 2007,262272."
+      },
+      {
+        "ref_id": "6",
+        "text": "Andrei Petrovski, Siddhartha Shakya, John McCall. Optimising Cancer Chemotherapy Using an Estimation of Distribution Algorithm and Genetic Algorithms. GECCO'06, July 08-12, 2006, Seattle, WA, USA."
+      },
+      {
+        "ref_id": "7",
+        "text": "A Petrovski, J. McCall, Multi-objective Optimization of Cancer Chemotherapy Using Evolutionary Algorithms, in E. Zitzler, K. Deb, L. Thiele, C.A. Coello Coello, D.Corne, (eds) Proc. EMO Conference, Zurich. Springer-Verlag, pp 531-545, Berlin, 2001"
+      },
+      {
+        "ref_id": "8",
+        "text": "Siddhartha Shakya, John McCall and Deryck Brown. Using a Markov network model in a univariate EDA: an empirical cost-benefit analysis. in GECCO 2005, 2005, Washington,DC,USA"
+      },
+      {
+        "ref_id": "9",
+        "text": "John McCall, Andrei Petrovski, Siddhartha Shakya, Evolutionary Algorithms for Cancer Chemotherapy Optimisation, in G. B. Fogel , D. W. Corne , Y. Pan (Eds) Computational Intelligence in Bioinformatics. Chapter 12 pp265-294, Wiley-IEEE Press, New York, NY, USA, 2007."
+      }
+    ],
+    "reference_count": 9,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameters",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Population size",
+          50
+        ],
+        [
+          "Maximum generations",
+          200
+        ],
+        [
+          "Crossover probability",
+          1
+        ],
+        [
+          "Mutation probability",
+          0.05
+        ],
+        [
+          "Cooling rate $\\left(\\mathrm{DEUM}_{\\mathrm{d}}\\right.$ only)",
+          0.01
+        ],
+        [
+          "Intervention penalty, P",
+          50
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Mean fitnesses at $\\mathbf{5 0}$ generations",
+      "headers": [
+        "",
+        "UC GA",
+        "CalEB",
+        "TInSSel",
+        "DEUM $_{\\text {d }}$"
+      ],
+      "rows": [
+        [
+          "Mean",
+          2403.7,
+          2341.5,
+          2307.2,
+          2377.5
+        ],
+        [
+          "Std. Dev.",
+          144.8,
+          152.8,
+          153.0,
+          162.2
+        ],
+        [
+          "Std. Err.",
+          6.48,
+          6.84,
+          6.84,
+          7.25
+        ],
+        [
+          "$\\mathbf{9 5 \\%}$ conf.",
+          12.73,
+          13.43,
+          13.44,
+          14.21
+        ],
+        [
+          "$\\mathbf{9 9 \\%}$ conf.",
+          16.75,
+          17.68,
+          17.69,
+          18.71
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Table 3: Mean fitnesses at $\\mathbf{1 0 0}$ generations",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "UC GA",
+          "CalEB",
+          "TInSSel",
+          "DEUM $_{\\mathrm{d}}$"
+        ],
+        [
+          "Mean",
+          2305.3,
+          2180.1,
+          2145.9,
+          2136.7
+        ],
+        [
+          "Std. Dev.",
+          133.2,
+          124.9,
+          120.2,
+          141.0
+        ],
+        [
+          "Std. Err.",
+          5.95,
+          5.59,
+          5.37,
+          6.3
+        ],
+        [
+          "$\\mathbf{9 5 \\%}$ conf.",
+          11.7,
+          10.98,
+          10.56,
+          12.35
+        ],
+        [
+          "$\\mathbf{9 9 \\%}$ conf.",
+          15.4,
+          14.45,
+          13.89,
+          16.25
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Mean fitnesses at 200 generations",
+      "headers": [
+        "",
+        "UC GA",
+        "CalEB",
+        "TInSSel",
+        "DEUM $_{\\mathrm{d}}$"
+      ],
+      "rows": [
+        [
+          "Mean",
+          2156.9,
+          2018.5,
+          1983.0,
+          1927.2
+        ],
+        [
+          "Std. Dev.",
+          117.3,
+          70.4,
+          72.9,
+          69.9
+        ],
+        [
+          "Std. Err.",
+          5.24,
+          3.15,
+          3.26,
+          3.13
+        ],
+        [
+          "$\\mathbf{9 5 \\%}$ conf.",
+          10.3,
+          6.18,
+          6.4,
+          6.13
+        ],
+        [
+          "$\\mathbf{9 9 \\%}$ conf.",
+          13.56,
+          8.14,
+          8.43,
+          8.09
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 shows mean best solution values, standard deviations, standard error on the mean and $95 \\%$ and $99 \\%$ confidence intervals for each algorithm at generation 200 (convergence) when M is 50 (i.e. no initialisation control). In Table 5 we make a statistical comparison of performance at generations 100 and 200 using a Wilcoxon rank-sum test. At generation 100, there is no significant difference in the mean fitness of the best solutions found by DEUM $_{d}$ and TInSSel, at a $95 \\%$ confidence level. DEUM $_{d}$ does however outperform CalEB and UC GA in terms of fitness. However, the schedules generated by TInSSel at this stage are more practical. At convergence (generation 200), with no initialisation control, DEUM $_{\\mathrm{d}}$ significantly outperforms all of the other approaches.",
+      "headers": [
+        "",
+        "$D E U M_{d}$ vs. <br> Uniform",
+        "$D E U M_{d}$ vs. <br> CalEB",
+        "$D E U M_{d}$ vs. <br> TInSSel"
+      ],
+      "rows": [
+        [
+          "Gene $=100$",
+          19.441,
+          5.157,
+          1.115
+        ],
+        [
+          "Gene $=200$",
+          37.62,
+          20.578,
+          12.353
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    }
+  ]
+}

@@ -1,0 +1,852 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Improved estimation of distribution algorithm for the problem of single-machine scheduling with deteriorating jobs and different due dates.md",
+    "filename": "Improved estimation of distribution algorithm for the problem of single-machine scheduling with deteriorating jobs and different due dates.md",
+    "title": "Improved estimation of distribution algorithm for the problem of single-machine scheduling with deteriorating jobs and different due dates",
+    "year": "2014"
+  },
+  "references": {
+    "header": "# References",
+    "content": "Aickehin U, Burke EK, Li J (2007) An estimation of distribution algorithm with intelligent local search for rule-based nurse rostering. J Oper Res Soc 58:1574-1585\nAickehin U, Li J (2007) An estimation of distribution algorithm for nurse scheduling. Ann Oper Res 155:289309\nAkker JM, Diepen G, Hoogeveen JA (2010) Minimizing total weighted tardiness on a single machine with release dates and equal-length jobs. J Sched 13:561-576\nAkturk MS, Ilhan T (2011) Single CNC machine scheduling with controllable processing times to minimize total weighted tardiness. Comput Oper Res 38:771-781\nBachman A, Cheng TCE, Janiak A, Ng CT (2002) Scheduling start time dependent jobs to minimize the total weighted completion time. J Oper Res Soc 53:688-693\nBen-Daya M, Al-Fawzan M (1996) A simulated annealing approach for the one-machine mean tardiness scheduling problem. Eur J Oper Res 93:61-67\nBozejko W (2010) Parallel path relinking method for the single machine total weighted tardiness problem with sequence-dependent setups. J Intell Manuf 21:777-785\nBrowne S, Yechiali U (1990) Scheduling deteriorating jobs on a single processor. Oper Res 38:495-498\nCheng TCE, Ding Q (1998) The complexity of single machine scheduling with release times. Inf Process Lett $65: 75-79$\nCheng TCE, Ding Q (2001) Single machine scheduling with step-deteriorating processing times. Eur J Oper Res 134:623-630\nCheng TCE, Lee WC, Wu CC (2010) Single-machine scheduling with deteriorating functions for job processing times. Appl Math Model 34:4171-4178\nDu J, Leung JYT (1990) Minimizing total tardiness on one machine is NP-hard. Math Oper Res 15:483-495\nFarahani MH, Hosseini L (2013) Minimizing cycle time in single machine scheduling with start time-dependent processing times. Int J Adv Manuf Technol 64:1479-1486\nGraham RL, Lawler EL, Lenstra JK (1979) Optimization and approximation in the deterministic sequencing and scheduling: a survey. Ann Discret Math 5:287-326\nGupta JND, Gupta SK (1988) Single facility scheduling with integer processing times. Comput Ind Eng $14: 387-393$\nHolsenback JE, Russell RM (1992) A heuristic algorithm for sequencing on one machine to minimize total tardiness. J Oper Res Soc 43:53-62\nJarboui B, Eddaly M, Siarry P (2009) An estimation of distribution algorithm for minimizing the total flowtime in permutation flowshop scheduling problem. Comput Oper Res 36:2638-2646\nKirlik G, Oguz C (2012) A variable neighborhood search for minimizing total weighted tardiness with sequence dependent setup times on a single machine. Comput Oper Res 39:1506-1520\nLai PJ, Lee WC (2010) Single-machine scheduling with a integer deterioration function. Inf Process Lett $110: 455-459$\nLai PJ, Lee WC, Chen HH (2011) Scheduling with deteriorating jobs and past-sequence-dependent setup times. Int J Adv Manuf Technol 54:737-741\nLee WC, Wu CC, Chung YH (2008) Scheduling deteriorating jobs on a single machine with release times. Comput Ind Eng 54:441-452\nMazdeh MM, Nakhjavani AK, Zareei A (2010) Minimizing total weighted tardiness with drop dead dates in single machine scheduling problem. Int J Ind Eng Prod Res 21:89-95\nMeng J, Yu J, Lu X (2012) Scheduling deteriorating jobs with a common due window on a single machine. Inf Technol J 11:392-395\nMühlenbein H, Paaß G (1996) From recombination of genes to the estimation of distributions I. Binary parameters. In: Lecture notes in computer science: parallel problem solving from nature-PPSN IV, vol 1411. Springer, Berlin, pp 178-187\n\nOzturkoglu Y, Bulfin RL (2011) A unique integer mathematical model for scheduling deteriorating jobs with rate-modifying activities on a single machine. Int J Adv Manuf Technol 57:753-762\nPan Q, Ruiz R (2012) An estimation of distribution algorithm for lot-streaming flow shop problems with setup times. Omega 40:166-180\nRussell RM, Holsenback JE (1997) Evaluation of greedy, myopic and less-greedy heuristics for the single machine, total tardiness problem. J Oper Res Soc 48:640-646\nShah R, Reed P (2011) Comparative analysis of multiobjective evolutionary algorithms for random and correlated instances of multiobjective d-dimensional knapsack problems. Eur J Oper Res 211:466-479\nToksan DM, Guner E (2009) Parallel machine earliness/tardiness scheduling problem under the effects of position based learning and linear/integer deterioration. Comput Oper Res 36:2394-2417\n\nWang L, Fang C (2012) An effective estimation of distribution algorithm for the multi-mode resourceconstrained project scheduling problem. Comput Oper Res 39:449-460\nYin Y, Cheng TCE, Xu D, Wu CC (2012) Common due date assignment and scheduling with a rate-modifying activity to minimize the due date, earliness, tardiness, holding, and batch delivery cost. Comput Ind Eng $63: 223-234$\nYin Y, Xu D (2011) Some single-machine scheduling problems with general effects of learning and deterioration. Comput Math Appl 61:100-108",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Aickehin U, Burke EK, Li J (2007) An estimation of distribution algorithm with intelligent local search for rule-based nurse rostering. J Oper Res Soc 58:1574-1585"
+      },
+      {
+        "ref_id": "2",
+        "text": "Aickehin U, Li J (2007) An estimation of distribution algorithm for nurse scheduling. Ann Oper Res 155:289309"
+      },
+      {
+        "ref_id": "3",
+        "text": "Akker JM, Diepen G, Hoogeveen JA (2010) Minimizing total weighted tardiness on a single machine with release dates and equal-length jobs. J Sched 13:561-576"
+      },
+      {
+        "ref_id": "4",
+        "text": "Akturk MS, Ilhan T (2011) Single CNC machine scheduling with controllable processing times to minimize total weighted tardiness. Comput Oper Res 38:771-781"
+      },
+      {
+        "ref_id": "5",
+        "text": "Bachman A, Cheng TCE, Janiak A, Ng CT (2002) Scheduling start time dependent jobs to minimize the total weighted completion time. J Oper Res Soc 53:688-693"
+      },
+      {
+        "ref_id": "6",
+        "text": "Ben-Daya M, Al-Fawzan M (1996) A simulated annealing approach for the one-machine mean tardiness scheduling problem. Eur J Oper Res 93:61-67"
+      },
+      {
+        "ref_id": "7",
+        "text": "Bozejko W (2010) Parallel path relinking method for the single machine total weighted tardiness problem with sequence-dependent setups. J Intell Manuf 21:777-785"
+      },
+      {
+        "ref_id": "8",
+        "text": "Browne S, Yechiali U (1990) Scheduling deteriorating jobs on a single processor. Oper Res 38:495-498"
+      },
+      {
+        "ref_id": "9",
+        "text": "Cheng TCE, Ding Q (1998) The complexity of single machine scheduling with release times. Inf Process Lett $65: 75-79$"
+      },
+      {
+        "ref_id": "10",
+        "text": "Cheng TCE, Ding Q (2001) Single machine scheduling with step-deteriorating processing times. Eur J Oper Res 134:623-630"
+      },
+      {
+        "ref_id": "11",
+        "text": "Cheng TCE, Lee WC, Wu CC (2010) Single-machine scheduling with deteriorating functions for job processing times. Appl Math Model 34:4171-4178"
+      },
+      {
+        "ref_id": "12",
+        "text": "Du J, Leung JYT (1990) Minimizing total tardiness on one machine is NP-hard. Math Oper Res 15:483-495"
+      },
+      {
+        "ref_id": "13",
+        "text": "Farahani MH, Hosseini L (2013) Minimizing cycle time in single machine scheduling with start time-dependent processing times. Int J Adv Manuf Technol 64:1479-1486"
+      },
+      {
+        "ref_id": "14",
+        "text": "Graham RL, Lawler EL, Lenstra JK (1979) Optimization and approximation in the deterministic sequencing and scheduling: a survey. Ann Discret Math 5:287-326"
+      },
+      {
+        "ref_id": "15",
+        "text": "Gupta JND, Gupta SK (1988) Single facility scheduling with integer processing times. Comput Ind Eng $14: 387-393$"
+      },
+      {
+        "ref_id": "16",
+        "text": "Holsenback JE, Russell RM (1992) A heuristic algorithm for sequencing on one machine to minimize total tardiness. J Oper Res Soc 43:53-62"
+      },
+      {
+        "ref_id": "17",
+        "text": "Jarboui B, Eddaly M, Siarry P (2009) An estimation of distribution algorithm for minimizing the total flowtime in permutation flowshop scheduling problem. Comput Oper Res 36:2638-2646"
+      },
+      {
+        "ref_id": "18",
+        "text": "Kirlik G, Oguz C (2012) A variable neighborhood search for minimizing total weighted tardiness with sequence dependent setup times on a single machine. Comput Oper Res 39:1506-1520"
+      },
+      {
+        "ref_id": "19",
+        "text": "Lai PJ, Lee WC (2010) Single-machine scheduling with a integer deterioration function. Inf Process Lett $110: 455-459$"
+      },
+      {
+        "ref_id": "20",
+        "text": "Lai PJ, Lee WC, Chen HH (2011) Scheduling with deteriorating jobs and past-sequence-dependent setup times. Int J Adv Manuf Technol 54:737-741"
+      },
+      {
+        "ref_id": "21",
+        "text": "Lee WC, Wu CC, Chung YH (2008) Scheduling deteriorating jobs on a single machine with release times. Comput Ind Eng 54:441-452"
+      },
+      {
+        "ref_id": "22",
+        "text": "Mazdeh MM, Nakhjavani AK, Zareei A (2010) Minimizing total weighted tardiness with drop dead dates in single machine scheduling problem. Int J Ind Eng Prod Res 21:89-95"
+      },
+      {
+        "ref_id": "23",
+        "text": "Meng J, Yu J, Lu X (2012) Scheduling deteriorating jobs with a common due window on a single machine. Inf Technol J 11:392-395"
+      },
+      {
+        "ref_id": "24",
+        "text": "Mühlenbein H, Paaß G (1996) From recombination of genes to the estimation of distributions I. Binary parameters. In: Lecture notes in computer science: parallel problem solving from nature-PPSN IV, vol 1411. Springer, Berlin, pp 178-187"
+      },
+      {
+        "ref_id": "25",
+        "text": "Ozturkoglu Y, Bulfin RL (2011) A unique integer mathematical model for scheduling deteriorating jobs with rate-modifying activities on a single machine. Int J Adv Manuf Technol 57:753-762"
+      },
+      {
+        "ref_id": "26",
+        "text": "Pan Q, Ruiz R (2012) An estimation of distribution algorithm for lot-streaming flow shop problems with setup times. Omega 40:166-180"
+      },
+      {
+        "ref_id": "27",
+        "text": "Russell RM, Holsenback JE (1997) Evaluation of greedy, myopic and less-greedy heuristics for the single machine, total tardiness problem. J Oper Res Soc 48:640-646"
+      },
+      {
+        "ref_id": "28",
+        "text": "Shah R, Reed P (2011) Comparative analysis of multiobjective evolutionary algorithms for random and correlated instances of multiobjective d-dimensional knapsack problems. Eur J Oper Res 211:466-479"
+      },
+      {
+        "ref_id": "29",
+        "text": "Toksan DM, Guner E (2009) Parallel machine earliness/tardiness scheduling problem under the effects of position based learning and linear/integer deterioration. Comput Oper Res 36:2394-2417"
+      },
+      {
+        "ref_id": "30",
+        "text": "Wang L, Fang C (2012) An effective estimation of distribution algorithm for the multi-mode resourceconstrained project scheduling problem. Comput Oper Res 39:449-460"
+      },
+      {
+        "ref_id": "31",
+        "text": "Yin Y, Cheng TCE, Xu D, Wu CC (2012) Common due date assignment and scheduling with a rate-modifying activity to minimize the due date, earliness, tardiness, holding, and batch delivery cost. Comput Ind Eng $63: 223-234$"
+      },
+      {
+        "ref_id": "32",
+        "text": "Yin Y, Xu D (2011) Some single-machine scheduling problems with general effects of learning and deterioration. Comput Math Appl 61:100-108"
+      }
+    ],
+    "reference_count": 32,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Performance of the algorithms",
+      "headers": [
+        "$\\lambda$",
+        "$b$",
+        "$R$",
+        "$n=10$",
+        "",
+        "",
+        "",
+        "$n=11$",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "AER",
+          "",
+          "CPU Time (s)",
+          "",
+          "AER",
+          "",
+          "CPU Time (s)",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "IEDA",
+          "NBR",
+          "IEDA",
+          "CPLEX",
+          "IEDA",
+          "NBR",
+          "IEDA",
+          "CPLEX"
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.0,
+          0.0,
+          4.14,
+          68.38,
+          0.0,
+          4.24,
+          5.32,
+          172.52
+        ],
+        [
+          "",
+          "",
+          0.5,
+          0.0,
+          12.45,
+          4.59,
+          366.25,
+          2.06,
+          8.39,
+          5.65,
+          564.14
+        ],
+        [
+          "",
+          "",
+          0.9,
+          0.0,
+          4.12,
+          4.54,
+          12.22,
+          4.09,
+          6.16,
+          5.68,
+          1844.28
+        ],
+        [
+          "",
+          0.3,
+          0.1,
+          0.26,
+          8.28,
+          5.67,
+          89.87,
+          0.0,
+          6.87,
+          5.36,
+          4024.13
+        ],
+        [
+          "",
+          "",
+          0.5,
+          0.0,
+          1.4,
+          6.04,
+          62.78,
+          0.0,
+          4.25,
+          4.76,
+          434.63
+        ],
+        [
+          "",
+          "",
+          0.9,
+          0.0,
+          7.39,
+          4.06,
+          1007.19,
+          0.0,
+          4.41,
+          4.28,
+          142.98
+        ],
+        [
+          "",
+          0.5,
+          0.1,
+          0.0,
+          5.44,
+          4.43,
+          209.3,
+          0.0,
+          2.67,
+          5.35,
+          10086.81
+        ],
+        [
+          "",
+          "",
+          0.5,
+          0.0,
+          3.88,
+          4.06,
+          609.76,
+          0.0,
+          5.55,
+          4.86,
+          4519.09
+        ],
+        [
+          "",
+          "",
+          0.9,
+          0.0,
+          6.81,
+          4.0,
+          91.34,
+          4.85,
+          8.85,
+          4.18,
+          83.92
+        ],
+        [
+          0.3,
+          0.1,
+          0.1,
+          2.33,
+          8.3,
+          3.96,
+          46.72,
+          0.0,
+          7.74,
+          4.53,
+          2455.61
+        ],
+        [
+          "",
+          "",
+          0.5,
+          1.01,
+          2.09,
+          4.18,
+          16.03,
+          3.91,
+          11.4,
+          6.71,
+          499.27
+        ],
+        [
+          "",
+          "",
+          0.9,
+          3.03,
+          6.85,
+          4.79,
+          33.91,
+          5.4,
+          9.78,
+          4.31,
+          26.23
+        ],
+        [
+          "",
+          0.3,
+          0.1,
+          0.0,
+          4.44,
+          4.68,
+          474.41,
+          0.0,
+          3.66,
+          8.85,
+          199.14
+        ],
+        [
+          "",
+          "",
+          0.5,
+          0.71,
+          6.48,
+          4.75,
+          349.63,
+          0.0,
+          7.3,
+          4.39,
+          71.64
+        ],
+        [
+          "",
+          "",
+          0.9,
+          0.0,
+          4.11,
+          4.82,
+          630.58,
+          0.0,
+          18.75,
+          4.36,
+          623.3
+        ],
+        [
+          "",
+          0.5,
+          0.1,
+          0.0,
+          6.82,
+          4.79,
+          154.14,
+          0.0,
+          4.42,
+          6.14,
+          430.42
+        ],
+        [
+          "",
+          "",
+          0.5,
+          0.0,
+          2.37,
+          4.67,
+          1256.11,
+          0.0,
+          10.47,
+          5.79,
+          1643.86
+        ],
+        [
+          "",
+          "",
+          0.9,
+          0.0,
+          0.98,
+          4.5,
+          243.94,
+          0.0,
+          9.97,
+          6.87,
+          6451.34
+        ],
+        [
+          0.5,
+          0.1,
+          0.1,
+          0.54,
+          8.94,
+          4.56,
+          47.25,
+          0.95,
+          5.98,
+          6.26,
+          653.38
+        ],
+        [
+          "",
+          "",
+          0.5,
+          0.0,
+          3.88,
+          3.82,
+          95.3,
+          0.26,
+          7.81,
+          7.04,
+          18024.72
+        ],
+        [
+          "",
+          "",
+          0.9,
+          4.16,
+          4.49,
+          4.71,
+          11.69,
+          4.78,
+          6.72,
+          6.46,
+          442.3
+        ],
+        [
+          "",
+          0.3,
+          0.1,
+          0.0,
+          5.03,
+          5.15,
+          249.31,
+          0.0,
+          2.82,
+          9.64,
+          2682.92
+        ],
+        [
+          "",
+          "",
+          0.5,
+          0.0,
+          1.04,
+          4.34,
+          280.06,
+          0.0,
+          3.54,
+          8.75,
+          461.89
+        ],
+        [
+          "",
+          "",
+          0.9,
+          0.0,
+          7.59,
+          4.31,
+          45.63,
+          0.71,
+          10.17,
+          6.95,
+          2759.47
+        ],
+        [
+          "",
+          0.5,
+          0.1,
+          0.0,
+          14.74,
+          4.48,
+          81.53,
+          0.0,
+          7.17,
+          4.48,
+          19095.72
+        ],
+        [
+          "",
+          "",
+          0.5,
+          0.0,
+          8.58,
+          4.31,
+          260.94,
+          0.0,
+          4.29,
+          7.34,
+          2650.26
+        ],
+        [
+          "",
+          "",
+          0.9,
+          0.0,
+          6.07,
+          3.9,
+          1618.86,
+          0.0,
+          14.1,
+          9.5,
+          1892.49
+        ]
+      ],
+      "row_count": 29,
+      "column_count": 11
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Performance of the algorithms for the large scale of problem",
+      "headers": [
+        "$\\lambda$",
+        "$b$",
+        "$R$",
+        "The average error rate",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "$n=10$",
+          "$n=30$",
+          "$n=50$",
+          "$n=70$",
+          "$n=90$"
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.0,
+          6.96,
+          26.71,
+          21.07,
+          13.85
+        ],
+        [
+          "",
+          "",
+          0.5,
+          12.45,
+          16.2,
+          20.73,
+          21.63,
+          27.36
+        ],
+        [
+          "",
+          "",
+          0.9,
+          4.12,
+          21.78,
+          20.52,
+          20.24,
+          23.52
+        ],
+        [
+          "",
+          0.3,
+          0.1,
+          8.02,
+          4.9,
+          31.95,
+          23.6,
+          29.69
+        ],
+        [
+          "",
+          "",
+          0.5,
+          1.4,
+          18.55,
+          36.46,
+          49.53,
+          24.68
+        ],
+        [
+          "",
+          "",
+          0.9,
+          7.39,
+          8.06,
+          27.76,
+          19.92,
+          21.23
+        ],
+        [
+          "",
+          0.5,
+          0.1,
+          5.44,
+          22.57,
+          34.21,
+          69.62,
+          27.96
+        ],
+        [
+          "",
+          "",
+          0.5,
+          3.88,
+          17.82,
+          30.35,
+          8.79,
+          35.35
+        ],
+        [
+          "",
+          "",
+          0.9,
+          6.81,
+          6.75,
+          12.45,
+          24.92,
+          35.15
+        ],
+        [
+          0.3,
+          0.1,
+          0.1,
+          5.97,
+          3.36,
+          17.56,
+          19.41,
+          22.52
+        ],
+        [
+          "",
+          "",
+          0.5,
+          1.08,
+          10.94,
+          19.7,
+          27.27,
+          29.08
+        ],
+        [
+          "",
+          "",
+          0.9,
+          3.82,
+          37.06,
+          31.6,
+          24.64,
+          21.53
+        ],
+        [
+          "",
+          0.3,
+          0.1,
+          4.44,
+          15.89,
+          14.49,
+          30.56,
+          35.97
+        ],
+        [
+          "",
+          "",
+          0.5,
+          5.77,
+          16.48,
+          9.08,
+          24.18,
+          29.87
+        ],
+        [
+          "",
+          "",
+          0.9,
+          4.11,
+          34.18,
+          31.7,
+          32.77,
+          26.6
+        ],
+        [
+          "",
+          0.5,
+          0.1,
+          6.82,
+          16.81,
+          26.54,
+          22.33,
+          33.69
+        ],
+        [
+          "",
+          "",
+          0.5,
+          2.37,
+          43.47,
+          10.87,
+          7.67,
+          40.36
+        ],
+        [
+          "",
+          "",
+          0.9,
+          0.98,
+          22.02,
+          29.17,
+          25.85,
+          18.17
+        ],
+        [
+          0.5,
+          0.1,
+          0.1,
+          8.4,
+          13.71,
+          9.46,
+          12.96,
+          28.15
+        ],
+        [
+          "",
+          "",
+          0.5,
+          3.88,
+          7.05,
+          17.55,
+          20.5,
+          22.9
+        ],
+        [
+          "",
+          "",
+          0.9,
+          0.33,
+          4.45,
+          27.48,
+          10.82,
+          18.63
+        ],
+        [
+          "",
+          0.3,
+          0.1,
+          5.03,
+          14.38,
+          24.77,
+          24.49,
+          27.36
+        ],
+        [
+          "",
+          "",
+          0.5,
+          1.04,
+          15.68,
+          19.78,
+          19.82,
+          25.72
+        ],
+        [
+          "",
+          "",
+          0.9,
+          7.59,
+          17.51,
+          15.22,
+          24.48,
+          28.08
+        ],
+        [
+          "",
+          0.5,
+          0.1,
+          14.74,
+          11.03,
+          15.15,
+          28.85,
+          22.68
+        ],
+        [
+          "",
+          "",
+          0.5,
+          8.58,
+          2.76,
+          56.82,
+          18.2,
+          26.27
+        ],
+        [
+          "",
+          "",
+          0.9,
+          6.07,
+          11.61,
+          25.39,
+          64.63,
+          24.13
+        ],
+        [
+          "Average",
+          "",
+          "",
+          5.2,
+          15.63,
+          23.83,
+          25.87,
+          26.69
+        ]
+      ],
+      "row_count": 29,
+      "column_count": 8
+    }
+  ]
+}

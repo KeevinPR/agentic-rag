@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Hybrid optimization for charge planning problem in twin strands continuous casting production.md",
+    "filename": "Hybrid optimization for charge planning problem in twin strands continuous casting production.md",
+    "title": "Hybrid optimization for charge planning problem in twin strands continuous casting production",
+    "year": "2021"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Four groups of order data",
+      "headers": [
+        "Case",
+        "$i$",
+        "$D_{i}$",
+        "$G_{i} / t$",
+        "$\\left(W_{i}^{\\min }-W_{i}^{\\max }\\right) / \\mathrm{mm}$",
+        "$S_{i}$"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          6,
+          12.47,
+          "$1132-1269$",
+          "\\{JL6103E5, GL6102E1, ...\\}"
+        ],
+        [
+          "",
+          "...",
+          "...",
+          "...",
+          "...",
+          "..."
+        ],
+        [
+          "",
+          20,
+          15,
+          24.16,
+          "$1723-1970$",
+          "\\{JT6103D1, IL6205D2, ...\\}"
+        ],
+        [
+          2,
+          1,
+          8,
+          17.09,
+          "$900-1095$",
+          "\\{IV7105G1, JX1140E5, ...\\}"
+        ],
+        [
+          "",
+          "...",
+          "...",
+          "...",
+          "...",
+          "..."
+        ],
+        [
+          "",
+          50,
+          9,
+          30.52,
+          "$1450-1730$",
+          "\\{IV8106G2, JU1150H1, ...\\}"
+        ],
+        [
+          3,
+          1,
+          25,
+          19.87,
+          "$951-1098$",
+          "\\{IV4355E5, JU1150H1, ...\\}"
+        ],
+        [
+          "",
+          "...",
+          "...",
+          "...",
+          "...",
+          "..."
+        ],
+        [
+          "",
+          100,
+          3,
+          27.48,
+          "$1495-1658$",
+          "\\{IV4355E5, JU1250H1, ...\\}"
+        ],
+        [
+          4,
+          1,
+          10,
+          23.29,
+          "$1214-1380$",
+          "\\{EU6814A6, EU6810A6, ...\\}"
+        ],
+        [
+          "",
+          "...",
+          "...",
+          "...",
+          "...",
+          "..."
+        ],
+        [
+          "",
+          200,
+          8,
+          16.24,
+          "$1819-2030$",
+          "\\{GV4924E1, IV5937E1, ...\\}"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Results of proposed algorithm and manual method",
+      "headers": [
+        "Case",
+        "Condition",
+        "Method",
+        "Number of charges",
+        "Number of scale pairs",
+        "Surplus/t",
+        "Upgrading cost",
+        "Computing time/s"
+      ],
+      "rows": [
+        [
+          1,
+          "Sam.",
+          "Man_sam",
+          16,
+          7,
+          512.92,
+          29,
+          "$\\geq 120$"
+        ],
+        [
+          "",
+          "",
+          "Alg_sam",
+          15,
+          6,
+          233.83,
+          22,
+          3
+        ],
+        [
+          "",
+          "Dif.",
+          "Man_dif",
+          15,
+          6,
+          233.83,
+          22,
+          "$\\geq 120$"
+        ],
+        [
+          "",
+          "",
+          "Alg_dif",
+          15,
+          5,
+          233.83,
+          22,
+          5
+        ],
+        [
+          2,
+          "Sam.",
+          "Man_sam",
+          40,
+          12,
+          1108.24,
+          59,
+          "$\\geq 300$"
+        ],
+        [
+          "",
+          "",
+          "Alg_sam",
+          38,
+          11,
+          495.5,
+          46,
+          19
+        ],
+        [
+          "",
+          "Dif.",
+          "Man_dif",
+          39,
+          11,
+          801.47,
+          53,
+          "$\\geq 300$"
+        ],
+        [
+          "",
+          "",
+          "Alg_dif",
+          38,
+          10,
+          495.5,
+          46,
+          24
+        ],
+        [
+          3,
+          "Sam.",
+          "Man_sam",
+          80,
+          17,
+          1326.52,
+          87,
+          "$\\geq 600$"
+        ],
+        [
+          "",
+          "",
+          "Alg_sam",
+          78,
+          16,
+          761.91,
+          73,
+          46
+        ],
+        [
+          "",
+          "Dif.",
+          "Man_dif",
+          79,
+          15,
+          1059.26,
+          74,
+          "$\\geq 600$"
+        ],
+        [
+          "",
+          "",
+          "Alg_dif",
+          77,
+          14,
+          462.75,
+          66,
+          59
+        ],
+        [
+          4,
+          "Sam.",
+          "Man_sam",
+          166,
+          19,
+          3198.24,
+          99,
+          "$\\geq 1200$"
+        ],
+        [
+          "",
+          "",
+          "Alg_sam",
+          162,
+          18,
+          2003.59,
+          92,
+          87
+        ],
+        [
+          "",
+          "Dif.",
+          "Man_dif",
+          161,
+          16,
+          1701.92,
+          91,
+          "$\\geq 1200$"
+        ],
+        [
+          "",
+          "",
+          "Alg_dif",
+          158,
+          14,
+          809.83,
+          81,
+          106
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 8
+    }
+  ]
+}

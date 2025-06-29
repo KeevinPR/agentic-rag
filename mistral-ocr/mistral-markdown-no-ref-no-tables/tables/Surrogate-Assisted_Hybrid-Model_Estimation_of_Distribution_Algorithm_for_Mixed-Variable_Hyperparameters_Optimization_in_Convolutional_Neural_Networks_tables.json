@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/Surrogate-Assisted Hybrid-Model Estimation of Distribution Algorithm for Mixed-Variable Hyperparameters Optimization in Convolutional Neural Networks.md",
+    "filename": "Surrogate-Assisted Hybrid-Model Estimation of Distribution Algorithm for Mixed-Variable Hyperparameters Optimization in Convolutional Neural Networks.md",
+    "title": "Surrogate-Assisted Hybrid-Model Estimation of Distribution Algorithm for Mixed-Variable Hyperparameters Optimization in Convolutional Neural Networks",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Settings of Mixed-Variable Encoding for Widely Seen Hyperparameters When Designing CNNs",
+      "headers": [
+        "Hyperparameters",
+        "Available Choices",
+        "Encoding Way",
+        "Search Space After <br> Encoding",
+        "Initialization Range <br> Space"
+      ],
+      "rows": [
+        [
+          "Number of kernels in convolution layer",
+          "$\\{1,2,3, \\ldots,+\\infty\\}$",
+          "continuous variable",
+          "$\\{1,+\\infty)$",
+          "$[64,512]$"
+        ],
+        [
+          "Number of neurons in fully connected layer",
+          "$\\{1,2,3, \\ldots,+\\infty\\}$",
+          "continuous variable",
+          "$\\{1,+\\infty)$",
+          "$[64,1024]$"
+        ],
+        [
+          "Kernel size of the convolution layer",
+          "$\\{3 \\times 3,5 \\times 5,7 \\times 7,9 \\times 9\\}$",
+          "discrete variable",
+          "$\\{0,1,2,3\\}$",
+          "$\\{0,1,2,3\\}$"
+        ],
+        [
+          "Kind of activation function",
+          "$\\{$ Relu, Sigmoid, Tanh $\\}$",
+          "discrete variable",
+          "$\\{0,1,2\\}$",
+          "$\\{0,1,2\\}$"
+        ],
+        [
+          "Kind of pooling layer",
+          "$\\{$ Max-pooling, Average-pooling $\\}$",
+          "discrete variable",
+          "$\\{0,1\\}$",
+          "$\\{0,1\\}$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "II",
+      "table_title": "Comparisons With State-of-the-Art Methods on CIFAR10 and CIFAR100",
+      "headers": [
+        "Methods",
+        "Network Models",
+        "CIFAR10",
+        "CIFAR100",
+        "\\# Parameters",
+        "GPU days"
+      ],
+      "rows": [
+        [
+          "",
+          208,
+          91.25,
+          "-",
+          0.27,
+          "-"
+        ],
+        [
+          "",
+          1108,
+          93.57,
+          74.84,
+          1.7,
+          "-"
+        ],
+        [
+          "",
+          12028,
+          92.07,
+          72.18,
+          10.2,
+          "-"
+        ],
+        [
+          "",
+          -10,
+          95.49,
+          77.72,
+          0.8,
+          "-"
+        ],
+        [
+          "Manually-design CNNs",
+          -46,
+          93.34,
+          71.95,
+          20.04,
+          "-"
+        ],
+        [
+          "",
+          47,
+          90.7,
+          61.4,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          48,
+          91.19,
+          64.32,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          49,
+          92.4,
+          67.66,
+          "-",
+          "-"
+        ],
+        [
+          "",
+          -50,
+          92.75,
+          66.29,
+          1.3,
+          "-"
+        ],
+        [
+          "",
+          51,
+          94.76,
+          77.51,
+          22.9,
+          "-"
+        ],
+        [
+          "",
+          11,
+          93.99,
+          "-",
+          2.5,
+          22400
+        ],
+        [
+          "Non-EC-based CNN optimization approaches",
+          52,
+          93.08,
+          72.86,
+          "-",
+          100
+        ],
+        [
+          "",
+          53,
+          95.77,
+          "-",
+          23.4,
+          10
+        ],
+        [
+          "",
+          "Block-QNN-S [54]",
+          95.62,
+          79.35,
+          6.1,
+          90
+        ],
+        [
+          "",
+          -13,
+          94.6,
+          "-",
+          5.4,
+          2750
+        ],
+        [
+          "",
+          -13,
+          "-",
+          77.0,
+          40.4,
+          2750
+        ],
+        [
+          "",
+          14,
+          96.37,
+          "-",
+          "-",
+          300
+        ],
+        [
+          "EC-based CNN optimization approaches",
+          -19,
+          94.02,
+          "-",
+          1.68,
+          27
+        ],
+        [
+          "",
+          -23,
+          96.78,
+          "-",
+          2.9,
+          35
+        ],
+        [
+          "",
+          -23,
+          "-",
+          79.47,
+          4.1,
+          40
+        ],
+        [
+          "",
+          -24,
+          95.7,
+          "-",
+          "-",
+          27
+        ],
+        [
+          "",
+          -24,
+          "-",
+          79.15,
+          "-",
+          36
+        ],
+        [
+          "",
+          -225,
+          94.7,
+          77.98,
+          "-",
+          8.5
+        ],
+        [
+          "",
+          55,
+          92.9,
+          70.97,
+          "-",
+          817
+        ],
+        [
+          "",
+          "SHEDA-CNN",
+          96.36,
+          "-",
+          10.88,
+          0.58
+        ],
+        [
+          "",
+          "SHEDA-CNN",
+          "-",
+          78.84,
+          18.64,
+          0.97
+        ]
+      ],
+      "row_count": 26,
+      "column_count": 6
+    },
+    {
+      "table_number": "III",
+      "table_title": "Comparisons Among Different Variants of the Proposed Algorithm",
+      "headers": [
+        "Variants",
+        "CIFAR10",
+        "",
+        "",
+        "CIFAR100",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Accuracy",
+          "\\# Parameters",
+          "GPU days",
+          "Accuracy",
+          "\\# Parameters",
+          "GPU days"
+        ],
+        [
+          "SHEDA-CNN",
+          96.36,
+          10.88,
+          0.58,
+          78.84,
+          18.64,
+          0.97
+        ],
+        [
+          "SHEDA-w/o-OI-CNN",
+          "$95.85(+)$",
+          8.49,
+          0.6,
+          "$77.06(+)$",
+          12.31,
+          1.05
+        ],
+        [
+          "SHEDA-w/o-AHL-CNN",
+          "$96.27(\\mathrm{e})$",
+          8.43,
+          0.54,
+          "$78.65(\\mathrm{e})$",
+          11.2,
+          1.03
+        ],
+        [
+          "SHEDA-w/o-SME-CNN",
+          "$96.15(\\mathrm{e})$",
+          7.98,
+          4,
+          "$78.44(\\mathrm{e})$",
+          10.23,
+          5
+        ],
+        [
+          "SHEDA-w/o-MLDG-CNN",
+          "$96.16(\\mathrm{e})$",
+          10.8,
+          0.62,
+          "$78.48(\\mathrm{e})$",
+          11.07,
+          1.02
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Comparisons With SHEDA Variants With DIFERENT SAMPLING NUMBER",
+      "headers": [
+        "Variants",
+        "Accuracy",
+        "\\# Parameters",
+        "GPU days"
+      ],
+      "rows": [
+        [
+          "$S N=300$ (original)",
+          "$\\mathbf{9 6 . 3 6}$",
+          10.88,
+          0.58
+        ],
+        [
+          "$S N=100$",
+          "$95.78(+)$",
+          "$\\mathbf{5 . 2 1 M}$",
+          "$\\mathbf{0 . 4 7}$"
+        ],
+        [
+          "$S N=200$",
+          "$95.82(+)$",
+          7.79,
+          0.52
+        ],
+        [
+          "$S N=400$",
+          "$96.10(\\mathrm{e})$",
+          6.12,
+          0.58
+        ],
+        [
+          "$S N=500$",
+          "$96.26(\\mathrm{e})$",
+          8.48,
+          0.61
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "V",
+      "table_title": "Comparisons With SHEDA Variants Using the Different Number of Individuals for Updating Probabilistic Models",
+      "headers": [
+        "Variants",
+        "Accuracy",
+        "\\# Parameters",
+        "GPU days"
+      ],
+      "rows": [
+        [
+          "$N_{b}=0.45 \\times N_{\\text {arch }}$",
+          "$\\mathbf{9 6 . 3 6}$",
+          10.88,
+          0.58
+        ],
+        [
+          "$N_{b}=0.3 \\times N_{\\text {arch }}$",
+          "$96.22(\\mathrm{\\sim})$",
+          8.43,
+          "$\\mathbf{0 . 4 8}$"
+        ],
+        [
+          "$N_{b}=0.4 \\times N_{\\text {arch }}$",
+          "$96.13(\\mathrm{\\sim})$",
+          8.91,
+          0.54
+        ],
+        [
+          "$N_{b}=0.5 \\times N_{\\text {arch }}$",
+          "$95.86(\\mathrm{\\div})$",
+          "$\\mathbf{7 . 9 0 M}$",
+          0.58
+        ],
+        [
+          "$N_{b}=0.6 \\times N_{\\text {arch }}$",
+          "$95.68(\\mathrm{\\div})$",
+          9.11,
+          0.61
+        ],
+        [
+          "$N_{b}=0.7 \\times N_{\\text {arch }}$",
+          "$95.65(\\mathrm{\\div})$",
+          8.98,
+          0.58
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "VI",
+      "table_title": "Results of the AD Diagnosis in Terms of the Number of True Positive, True Negative, False Positive, and False Negative, ACCURACY, the NUMBer of Parameters, and GPU Days",
+      "headers": [
+        "Methods",
+        "\\#TP",
+        "\\#TN",
+        "\\#FP",
+        "\\#FN",
+        "Acc- <br> uracy",
+        "\\# Para.",
+        "GPU <br> days"
+      ],
+      "rows": [
+        [
+          20,
+          250,
+          132,
+          3,
+          2,
+          98.71,
+          "$\\mathbf{2 . 9 3 M}$",
+          "-"
+        ],
+        [
+          110,
+          250,
+          "$\\mathbf{1 3 3}$",
+          3,
+          "$\\mathbf{1}$",
+          98.97,
+          10.78,
+          "-"
+        ],
+        [
+          "SHEDA-CNN",
+          "$\\mathbf{2 5 2}$",
+          "$\\mathbf{1 3 3}$",
+          "$\\mathbf{1}$",
+          "$\\mathbf{1}$",
+          "$\\mathbf{9 9 . 4 8}$",
+          4.18,
+          1.18
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 8
+    }
+  ]
+}

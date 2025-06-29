@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2020/A Gaussian Process Assisted Offline Estimation of Multivariate Gaussian Distribution Algorithm.md",
+    "filename": "A Gaussian Process Assisted Offline Estimation of Multivariate Gaussian Distribution Algorithm.md",
+    "title": "A Gaussian Process Assisted Offline Estimation of Multivariate Gaussian Distribution Algorithm",
+    "year": "2020"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "OPTIMIZATION RESULTS OF THE ORDINARY KRIGING ASSISTED OFFLINE ALGORITHM ON THE 5 BENCHMARK PROBLEMS.",
+      "headers": [
+        "Problem",
+        "Ackley",
+        "Rosenbrock",
+        "Griewank",
+        "Rastrigin",
+        "Ellipsoid"
+      ],
+      "rows": [
+        [
+          "Average",
+          20.2151,
+          2161.2103,
+          39.1689,
+          207.9319,
+          66.6535
+        ],
+        [
+          "Std",
+          0.6642,
+          2546.1635,
+          20.974,
+          32.0897,
+          24.9303
+        ],
+        [
+          "Best",
+          18.5103,
+          150.5413,
+          10.3185,
+          158.7313,
+          33.2107
+        ],
+        [
+          "Worst",
+          20.8897,
+          10576.656,
+          91.9052,
+          289.2027,
+          110.3896
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "II",
+      "table_title": "OPTIMIZATION RESULTS OF THE BLIND KRIGING ASSISTED OFFLINE ALGORITHM ON THE 5 BENCHMARK PROBLEMS",
+      "headers": [
+        "Problem",
+        "Ackley",
+        "Rosenbrock",
+        "Griewank",
+        "Rastrigin",
+        "Ellipsoid"
+      ],
+      "rows": [
+        [
+          "Average",
+          20.6856,
+          1192.8667,
+          4.2368,
+          "fail",
+          12.0913
+        ],
+        [
+          "Std",
+          1.0509,
+          888.8773,
+          2.5377,
+          "fail",
+          10.513
+        ],
+        [
+          "Best",
+          17.3134,
+          151.9561,
+          1.57,
+          "fail",
+          0.342
+        ],
+        [
+          "Worst",
+          21.9584,
+          3298.6181,
+          9.2648,
+          "fail",
+          35.9545
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_number": "III",
+      "table_title": "COMPARISON WITH TWO VERSION GPEME ON THE FIVE BENCHMARK PROBLEMS",
+      "headers": [
+        "Problem",
+        "Ackley",
+        "Rosenbrock",
+        "Griewank",
+        "Rastrigin",
+        "Ellipsoid"
+      ],
+      "rows": [
+        [
+          "Our method (Blind Kriging)",
+          "$20.7 \\pm 1.1$",
+          "$1192.9 \\pm 888.8$",
+          "$4.2 \\pm 2.5$",
+          "fail",
+          "$12.1 \\pm 10.5$"
+        ],
+        [
+          "GPEME online",
+          "$13.8 \\pm 2.5$",
+          "$186.0 \\pm 66.9$",
+          "$27.2 \\pm 11.3$",
+          "$71.5 \\pm 12.7$",
+          "$37.8 \\pm 15.3$"
+        ],
+        [
+          "GPEME offline",
+          "$19.2 \\pm 0.5$",
+          "$625.6 \\pm 196.7$",
+          "$103.6 \\pm 31.4$",
+          "$102.5 \\pm 16.6$",
+          "$129.8 .0 \\pm 34.3$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 6
+    }
+  ]
+}

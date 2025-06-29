@@ -1,0 +1,839 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/A hybrid EDA with ACS for solving permutation flow shop scheduling.md",
+    "filename": "A hybrid EDA with ACS for solving permutation flow shop scheduling.md",
+    "title": "A hybrid EDA with ACS for solving permutation flow shop scheduling",
+    "year": "2012"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Garey MR, Johnson DS, Sethi R (1976) The complexity of flow shop and job shop scheduling. Math Oper Res 1(2):117-129\n2. Mühlenbein H, Paaß G (1996) From recombination of genes to the estimation of distributions I. Binary parameters. In: Ebeling W, Rechenberg I, Voight H-M et al (eds) Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature-PPSN 4. Springer, Heidelberg, pp 178-187\n3. Dorigo M, Gambardella LM (1997) Ant colony system: a cooperative learning approach to the travelling salesman problem. IEEE T Evolut Comput 1:53-66\n4. Santana R, Larrañaga P, Lozano JA (2009) Research topics in discrete estimation of distribution algorithms. Memetic Comput 1 (1):35-54\n5. Wang L, Fang C (2012) An effective estimation of distribution algorithm for the multi-mode resource-constrained project scheduling problem. Comput Oper Res 39(2):449-460\n6. Jarboui B, Eddaly M, Siarry P (2009) An estimation of distribution algorithm for minimizing the total flowtime in permutation flowshop scheduling problems. Comput Oper Res 36(9):2638-2646\n7. Blum C (2005) Ant colony optimization: introduction and recent trends. Phys Life Rev 2(4):353-373\n8. Liao CJ, Juan HC (2007) An ant colony optimization for singlemachine tardiness scheduling with sequence-dependent setups. Comput Oper Res 34(7):1899-1909\n9. Srinivasa Raghavan NR, Venkataramana M (2009) Parallel processor scheduling for minimizing total weighted tardiness using ant colony optimization. Int J Adv Manuf Technol 41:986996\n10. Stützle T (1998) An ant approach to the flow shop problem. Proceedings of the 6th European Congress on Intelligent Techniques \\& Soft Computing, vol 3, Aachen, Germany, pp $1560-1564$\n11. Ying KC, Liao CJ (2004) An ant colony system for permutation flow-shop sequencing. Comput Oper Res 31(5):791-801\n12. Mirabi M (2011) Ant colony optimization technique for the sequence-dependent flowshop scheduling problem. Int J Adv Manuf Technol 55(1-4):317-326\n13. Ying KC, Lin SW (2006) Multiprocessor task scheduling multistage hybrid flow-shops: an ant colony system approach. Int J Prod Res 44:3161-3177\n14. Alaykýran K, Engin O, Döyen A (2007) Using ant colony optimization to solve hybrid flow shop scheduling problems. Int J Adv Manuf Technol 35:541-550\n15. Huang RH, Yang CL (2008) Ant colony system for job shop scheduling with time windows. Int J Adv Manuf Technol 39:151157\n16. Berrichi A, Yalaoui F, Amodeo L, Mezghiche M (2010) Biobjective ant colony optimization approach to optimize production and maintenance scheduling. Comput Oper Res 37 (9):1584-1596\n17. Graham RL, Lawler EL, Lenstra JK, Kan AHGR (1979) Optimization and approximation in deterministic sequencing and scheduling: a survey. Ann Discrete Math 5:287-326\n18. Rad SF, Ruiz R, Boroojerdian N (2009) New high performing heuristics for minimizing makespan in permutation flowshops. Omega 37(2):331-345\n19. Taillard E (1990) Some efficient heuristic methods for the flow shop sequencing problem. Europ J Oper Res 47(1):65-74\n\n20. Ruiz R, Stutzle T (2007) A simple and effective iterated greedy algorithm for the permutation flowshop scheduling problem. Europ J Oper Res 177(3):2033-2049\n21. Taillard E (1993) Benchmarks for basic scheduling problems. Europ J Oper Res 64(2):278-285\n22. Ruiz R, Maroto C, Alcaraz J (2006) Two new robust genetic algorithms for the flowshop scheduling problem. Omega 34 (5):461-476\n23. Zobolas GI, Tarantilis CD, Ioannou G (2009) Minimizing makespan in permutation flow shop scheduling problems using a hybrid metaheuristic algorithm. Comput Oper Res 36(4):1249-1267\n24. Peace GS (1993) Taugchi methods: a hands-on approach. Addison-Wesley, Reading, MA\n25. Rajendran C, Ziegler H (2004) Ant-colony algorithms for permutation flowshop scheduling to minimize makespan/total flowtime of jobs. Eur J Oper Res 155(2):426-438",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Garey MR, Johnson DS, Sethi R (1976) The complexity of flow shop and job shop scheduling. Math Oper Res 1(2):117-129"
+      },
+      {
+        "ref_id": "2",
+        "text": "Mühlenbein H, Paaß G (1996) From recombination of genes to the estimation of distributions I. Binary parameters. In: Ebeling W, Rechenberg I, Voight H-M et al (eds) Lecture Notes in Computer Science 1411: Parallel Problem Solving from Nature-PPSN 4. Springer, Heidelberg, pp 178-187"
+      },
+      {
+        "ref_id": "3",
+        "text": "Dorigo M, Gambardella LM (1997) Ant colony system: a cooperative learning approach to the travelling salesman problem. IEEE T Evolut Comput 1:53-66"
+      },
+      {
+        "ref_id": "4",
+        "text": "Santana R, Larrañaga P, Lozano JA (2009) Research topics in discrete estimation of distribution algorithms. Memetic Comput 1 (1):35-54"
+      },
+      {
+        "ref_id": "5",
+        "text": "Wang L, Fang C (2012) An effective estimation of distribution algorithm for the multi-mode resource-constrained project scheduling problem. Comput Oper Res 39(2):449-460"
+      },
+      {
+        "ref_id": "6",
+        "text": "Jarboui B, Eddaly M, Siarry P (2009) An estimation of distribution algorithm for minimizing the total flowtime in permutation flowshop scheduling problems. Comput Oper Res 36(9):2638-2646"
+      },
+      {
+        "ref_id": "7",
+        "text": "Blum C (2005) Ant colony optimization: introduction and recent trends. Phys Life Rev 2(4):353-373"
+      },
+      {
+        "ref_id": "8",
+        "text": "Liao CJ, Juan HC (2007) An ant colony optimization for singlemachine tardiness scheduling with sequence-dependent setups. Comput Oper Res 34(7):1899-1909"
+      },
+      {
+        "ref_id": "9",
+        "text": "Srinivasa Raghavan NR, Venkataramana M (2009) Parallel processor scheduling for minimizing total weighted tardiness using ant colony optimization. Int J Adv Manuf Technol 41:986996"
+      },
+      {
+        "ref_id": "10",
+        "text": "Stützle T (1998) An ant approach to the flow shop problem. Proceedings of the 6th European Congress on Intelligent Techniques \\& Soft Computing, vol 3, Aachen, Germany, pp $1560-1564$"
+      },
+      {
+        "ref_id": "11",
+        "text": "Ying KC, Liao CJ (2004) An ant colony system for permutation flow-shop sequencing. Comput Oper Res 31(5):791-801"
+      },
+      {
+        "ref_id": "12",
+        "text": "Mirabi M (2011) Ant colony optimization technique for the sequence-dependent flowshop scheduling problem. Int J Adv Manuf Technol 55(1-4):317-326"
+      },
+      {
+        "ref_id": "13",
+        "text": "Ying KC, Lin SW (2006) Multiprocessor task scheduling multistage hybrid flow-shops: an ant colony system approach. Int J Prod Res 44:3161-3177"
+      },
+      {
+        "ref_id": "14",
+        "text": "Alaykýran K, Engin O, Döyen A (2007) Using ant colony optimization to solve hybrid flow shop scheduling problems. Int J Adv Manuf Technol 35:541-550"
+      },
+      {
+        "ref_id": "15",
+        "text": "Huang RH, Yang CL (2008) Ant colony system for job shop scheduling with time windows. Int J Adv Manuf Technol 39:151157"
+      },
+      {
+        "ref_id": "16",
+        "text": "Berrichi A, Yalaoui F, Amodeo L, Mezghiche M (2010) Biobjective ant colony optimization approach to optimize production and maintenance scheduling. Comput Oper Res 37 (9):1584-1596"
+      },
+      {
+        "ref_id": "17",
+        "text": "Graham RL, Lawler EL, Lenstra JK, Kan AHGR (1979) Optimization and approximation in deterministic sequencing and scheduling: a survey. Ann Discrete Math 5:287-326"
+      },
+      {
+        "ref_id": "18",
+        "text": "Rad SF, Ruiz R, Boroojerdian N (2009) New high performing heuristics for minimizing makespan in permutation flowshops. Omega 37(2):331-345"
+      },
+      {
+        "ref_id": "19",
+        "text": "Taillard E (1990) Some efficient heuristic methods for the flow shop sequencing problem. Europ J Oper Res 47(1):65-74"
+      },
+      {
+        "ref_id": "20",
+        "text": "Ruiz R, Stutzle T (2007) A simple and effective iterated greedy algorithm for the permutation flowshop scheduling problem. Europ J Oper Res 177(3):2033-2049"
+      },
+      {
+        "ref_id": "21",
+        "text": "Taillard E (1993) Benchmarks for basic scheduling problems. Europ J Oper Res 64(2):278-285"
+      },
+      {
+        "ref_id": "22",
+        "text": "Ruiz R, Maroto C, Alcaraz J (2006) Two new robust genetic algorithms for the flowshop scheduling problem. Omega 34 (5):461-476"
+      },
+      {
+        "ref_id": "23",
+        "text": "Zobolas GI, Tarantilis CD, Ioannou G (2009) Minimizing makespan in permutation flow shop scheduling problems using a hybrid metaheuristic algorithm. Comput Oper Res 36(4):1249-1267"
+      },
+      {
+        "ref_id": "24",
+        "text": "Peace GS (1993) Taugchi methods: a hands-on approach. Addison-Wesley, Reading, MA"
+      },
+      {
+        "ref_id": "25",
+        "text": "Rajendran C, Ziegler H (2004) Ant-colony algorithms for permutation flowshop scheduling to minimize makespan/total flowtime of jobs. Eur J Oper Res 155(2):426-438"
+      }
+    ],
+    "reference_count": 25,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Example illustrating the pheromone-generating rule and the solution construction rule",
+      "headers": [
+        "Position",
+        "Job",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          3,
+          1,
+          2,
+          5,
+          4
+        ],
+        [
+          1,
+          110,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          110,
+          100,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          110,
+          110,
+          100,
+          1,
+          1
+        ],
+        [
+          4,
+          110,
+          110,
+          110,
+          100,
+          1
+        ],
+        [
+          5,
+          110,
+          110,
+          110,
+          110,
+          100
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Experimental parameters",
+      "headers": [
+        "Parameters",
+        "Levels",
+        "Total levels"
+      ],
+      "rows": [
+        [
+          "$q_{\\text {high }}-q_{\\text {low }}$",
+          "$0.98-0.68,0.96-066,0.92-0.62,0.88-0.58$,",
+          6
+        ],
+        [
+          "$f$-size",
+          "$0,84-0.54,0.8-0.5$",
+          6
+        ],
+        [
+          "Jump-rate",
+          "$0,1,4,9,14,18$",
+          8
+        ],
+        [
+          "",
+          "Total parameter combinations",
+          288
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 ANOVA table for testing the significance of the three parameters",
+      "headers": [
+        "Source of variance",
+        "Sum of squares",
+        "$d f$",
+        "Mean squares",
+        "$F$",
+        "Significance"
+      ],
+      "rows": [
+        [
+          1,
+          0.049,
+          5,
+          0.01,
+          0.014,
+          1.0
+        ],
+        [
+          "V2 $(f$-size $)$",
+          154.917,
+          5,
+          30.983,
+          44.4,
+          "$0.00^{\\circ}$"
+        ],
+        [
+          "V3 (Jump-rate)",
+          6.395,
+          7,
+          0.914,
+          1.309,
+          0.241
+        ],
+        [
+          12,
+          3.461,
+          25,
+          0.138,
+          0.198,
+          1.0
+        ],
+        [
+          13,
+          0.531,
+          35,
+          0.015,
+          0.022,
+          1.0
+        ],
+        [
+          23,
+          15.966,
+          35,
+          0.456,
+          0.654,
+          0.942
+        ],
+        [
+          123,
+          2.245,
+          175,
+          0.013,
+          0.018,
+          1.0
+        ],
+        [
+          "Error",
+          "$2,210.692$",
+          3168,
+          0.698,
+          "",
+          ""
+        ],
+        [
+          "Total",
+          "$2,394.256$",
+          3455,
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Results of Duncan's test for different filter sizes",
+      "headers": [
+        "$f$-size",
+        "Average ARP",
+        "Subsets",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          1,
+          2
+        ],
+        [
+          18,
+          0.6436,
+          "A",
+          ""
+        ],
+        [
+          14,
+          0.6493,
+          "A",
+          ""
+        ],
+        [
+          9,
+          0.6499,
+          "A",
+          ""
+        ],
+        [
+          4,
+          0.6614,
+          "A",
+          ""
+        ],
+        [
+          1,
+          0.6743,
+          "A",
+          ""
+        ],
+        [
+          "None",
+          1.2232,
+          "",
+          "B"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Computational results of M-MMAS, PACO, and EDA $_{\\text {ACS }}\\left(t_{30}\\right)$",
+      "headers": [
+        "Test problems",
+        "M-MMAS",
+        "PACO",
+        "EDA $_{\\text {ACS }}$"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0.11,
+          0.2,
+          0.04
+        ],
+        [
+          "$20 \\times 10$",
+          0.15,
+          0.32,
+          0.07
+        ],
+        [
+          "$20 \\times 20$",
+          0.09,
+          0.31,
+          0.1
+        ],
+        [
+          "$50 \\times 5$",
+          0.02,
+          0.08,
+          0.02
+        ],
+        [
+          "$50 \\times 10$",
+          1.3,
+          0.9,
+          0.75
+        ],
+        [
+          "$50 \\times 20$",
+          2.1,
+          1.46,
+          1.25
+        ],
+        [
+          "$100 \\times 5$",
+          0.03,
+          0.04,
+          0.06
+        ],
+        [
+          "$100 \\times 10$",
+          0.46,
+          0.35,
+          0.39
+        ],
+        [
+          "$100 \\times 20$",
+          2.59,
+          2.17,
+          1.55
+        ],
+        [
+          "$200 \\times 10$",
+          0.37,
+          0.26,
+          0.24
+        ],
+        [
+          "$200 \\times 20$",
+          2.34,
+          2,
+          1.58
+        ],
+        [
+          "$500 \\times 20$",
+          1.06,
+          0.98,
+          0.81
+        ],
+        [
+          "Average",
+          0.885,
+          0.756,
+          0.572
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Computational results of M-MMAS, PACO, and EDA $_{\\text {ACS }}\\left(t_{90}\\right)$",
+      "headers": [
+        "Test problems",
+        "M-MMAS",
+        "PACO",
+        "EDA $_{\\text {ACS }}$"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0.08,
+          0.08,
+          0.0
+        ],
+        [
+          "$20 \\times 10$",
+          0.09,
+          0.09,
+          0.07
+        ],
+        [
+          "$20 \\times 20$",
+          0.07,
+          0.07,
+          0.06
+        ],
+        [
+          "$50 \\times 5$",
+          0.02,
+          0.02,
+          0.01
+        ],
+        [
+          "$50 \\times 10$",
+          1.14,
+          1.14,
+          0.74
+        ],
+        [
+          "$50 \\times 20$",
+          2.06,
+          2.06,
+          1.1
+        ],
+        [
+          "$100 \\times 5$",
+          0.02,
+          0.02,
+          0.04
+        ],
+        [
+          "$100 \\times 10$",
+          0.42,
+          0.42,
+          0.28
+        ],
+        [
+          "$100 \\times 20$",
+          2.5,
+          2.5,
+          1.45
+        ],
+        [
+          "$200 \\times 10$",
+          0.32,
+          0.32,
+          0.18
+        ],
+        [
+          "$200 \\times 20$",
+          2.18,
+          2.18,
+          1.43
+        ],
+        [
+          "$500 \\times 20$",
+          1.09,
+          1.09,
+          0.73
+        ],
+        [
+          "Average",
+          0.833,
+          0.833,
+          0.508
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 Computational results of M-MMAS, PACO, and $\\mathrm{EDA}_{\\text {ACS }}\\left(t_{90}\\right)$",
+      "headers": [
+        "Test problems",
+        "M-MMAS",
+        "PACO",
+        "$\\mathrm{EDA}_{\\text {ACS }}$"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0.04,
+          0.18,
+          0.0
+        ],
+        [
+          "$20 \\times 10$",
+          0.07,
+          0.24,
+          0.04
+        ],
+        [
+          "$20 \\times 20$",
+          0.06,
+          0.18,
+          0.04
+        ],
+        [
+          "$50 \\times 5$",
+          0.02,
+          0.05,
+          0
+        ],
+        [
+          "$50 \\times 10$",
+          1.08,
+          0.81,
+          0.63
+        ],
+        [
+          "$50 \\times 20$",
+          1.93,
+          1.41,
+          1.01
+        ],
+        [
+          "$100 \\times 5$",
+          0.02,
+          0.02,
+          0.04
+        ],
+        [
+          "$100 \\times 10$",
+          0.39,
+          0.29,
+          0.24
+        ],
+        [
+          "$100 \\times 20$",
+          2.42,
+          1.93,
+          1.3
+        ],
+        [
+          "$200 \\times 10$",
+          0.3,
+          0.23,
+          0.18
+        ],
+        [
+          "$200 \\times 20$",
+          2.15,
+          1.82,
+          1.39
+        ],
+        [
+          "$500 \\times 20$",
+          1.02,
+          0.85,
+          0.69
+        ],
+        [
+          "Average",
+          0.792,
+          0.668,
+          0.463
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 Results of the paired samples $t$ test for M-MMAS, PACO, and EDA $_{\\text {ACS }}$ under different computation times",
+      "headers": [
+        "Time",
+        "Algorithm",
+        "Paired differences",
+        "",
+        "",
+        "",
+        "$t$",
+        "Significance"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Mean",
+          "SEM",
+          95,
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "Lower",
+          "Upper",
+          "",
+          ""
+        ],
+        [
+          "$t_{50}{ }^{a}$",
+          "M-MMAS-EDA ${ }_{\\text {ACS }}$",
+          0.31,
+          0.11091,
+          0.0659,
+          0.5541,
+          2.795,
+          0.017
+        ],
+        [
+          "",
+          "PACO-EDA ${ }_{\\text {ACS }}$",
+          0.18083,
+          0.05442,
+          0.06106,
+          0.30061,
+          3.323,
+          0.007
+        ],
+        [
+          "$t_{60}$",
+          "M-MMAS-EDA ${ }_{\\text {ACS }}$",
+          0.325,
+          0.11198,
+          0.07853,
+          0.57147,
+          2.902,
+          0.014
+        ],
+        [
+          "",
+          "PACO-EDA ${ }_{\\text {ACS }}$",
+          0.1825,
+          0.04838,
+          0.07601,
+          0.28899,
+          3.772,
+          0.003
+        ],
+        [
+          "$t_{90}$",
+          "M-MMAS-EDA ${ }_{\\text {ACS }}$",
+          0.32833,
+          0.11471,
+          0.07587,
+          0.5808,
+          2.862,
+          0.015
+        ],
+        [
+          "",
+          "PACO-EDA ${ }_{\\text {ACS }}$",
+          0.20417,
+          0.05501,
+          0.08308,
+          0.32525,
+          3.711,
+          0.003
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 8
+    },
+    {
+      "table_number": "10",
+      "table_title": "Table 10 Computational results of HGA_RMA, PSOvns, NEGAvns, and $\\mathrm{EDA}_{\\text {ACS }}$",
+      "headers": [
+        "Test problems",
+        "NEGAvns",
+        "HGA_RMA",
+        "PSOvns",
+        "EDA $_{\\text {ACS }}$"
+      ],
+      "rows": [
+        [
+          "$20 \\times 5$",
+          0,
+          0.04,
+          0.03,
+          0
+        ],
+        [
+          "$20 \\times 10$",
+          0.01,
+          0.02,
+          0.02,
+          0.01
+        ],
+        [
+          "$20 \\times 20$",
+          0.02,
+          0.05,
+          0.05,
+          0.01
+        ],
+        [
+          "$50 \\times 5$",
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "$50 \\times 10$",
+          0.82,
+          0.72,
+          0.57,
+          0.6
+        ],
+        [
+          "$50 \\times 20$",
+          1.08,
+          0.99,
+          1.36,
+          0.9
+        ],
+        [
+          "$100 \\times 5$",
+          0,
+          0.01,
+          0,
+          0.04
+        ],
+        [
+          "$100 \\times 10$",
+          0.14,
+          0.16,
+          0.18,
+          0.21
+        ],
+        [
+          "$100 \\times 20$",
+          1.4,
+          1.3,
+          1.45,
+          1.25
+        ],
+        [
+          "$200 \\times 10$",
+          0.16,
+          0.14,
+          0.18,
+          0.12
+        ],
+        [
+          "$200 \\times 20$",
+          1.25,
+          1.26,
+          1.35,
+          1.3
+        ],
+        [
+          "$500 \\times 20$",
+          0.71,
+          0.69,
+          "$-^{\\mathrm{a}}$",
+          0.65
+        ],
+        [
+          "Average",
+          0.466,
+          0.448,
+          0.472,
+          0.424
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 5
+    }
+  ]
+}

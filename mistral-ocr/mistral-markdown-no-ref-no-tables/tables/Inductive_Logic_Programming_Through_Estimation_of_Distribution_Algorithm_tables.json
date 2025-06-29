@@ -1,0 +1,343 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Inductive Logic Programming Through Estimation of Distribution Algorithm.md",
+    "filename": "Inductive Logic Programming Through Estimation of Distribution Algorithm.md",
+    "title": "Inductive Logic Programming Through Estimation of Distribution Algorithm",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "BC",
+        "$\\mathrm{h}(\\mathrm{A}, \\mathrm{B}):-$",
+        "$\\mathrm{p}(\\mathrm{A}, \\mathrm{C})$",
+        "$\\mathrm{q}(\\mathrm{B}, \\mathrm{C})$",
+        "$\\mathrm{r}(\\mathrm{C}, \\mathrm{D})$"
+      ],
+      "rows": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          "$\\mathrm{~b}(\\mathrm{~A}, \\mathrm{~B}):-$",
+          "",
+          "",
+          "$\\mathrm{r}(\\mathrm{C}, \\mathrm{D})$"
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          "$\\mathrm{~b}(\\mathrm{~A}, \\mathrm{~B}):-$",
+          "$\\mathrm{p}(\\mathrm{A}, \\mathrm{C})$",
+          "$\\mathrm{q}(\\mathrm{B}, \\mathrm{C})$",
+          ""
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "I",
+      "table_title": "CPT FOR THE LITERAL $l_{0}$",
+      "headers": [
+        "",
+        "$l_{1}$",
+        "$l_{2}$",
+        "$\\mathrm{P}\\left(l_{1}=\\mathrm{T} ; l_{1}, l_{2}\\right)$"
+      ],
+      "rows": [
+        [
+          1,
+          "T",
+          "F",
+          0.75
+        ],
+        [
+          2,
+          "T",
+          "F",
+          0.5
+        ],
+        [
+          3,
+          "F",
+          "T",
+          0.5
+        ],
+        [
+          4,
+          "F",
+          "F",
+          0.1
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "CONFIGURATION OF EDA-ILP AND GA-ILP",
+      "headers": [
+        "-",
+        "Alzheimers-amine",
+        "",
+        "Carcinogenesis",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "EDA-ILP",
+          "GA-ILP",
+          "EDA-ILP",
+          "GA-ILP"
+        ],
+        [
+          "gen_num",
+          500,
+          500,
+          100,
+          100
+        ],
+        [
+          "pop_size",
+          20,
+          20,
+          10,
+          10
+        ],
+        [
+          "num_cls",
+          3,
+          3,
+          1,
+          1
+        ],
+        [
+          "$\\lambda$",
+          0.005,
+          "doesn't apply",
+          0.01,
+          "doesn't apply"
+        ],
+        [
+          123,
+          "$0.5: 0.5: 0.1 *$",
+          "doesn't apply",
+          "$0.1: 0.1: 0.1 *$",
+          "doesn't apply"
+        ],
+        [
+          "mut_prob",
+          "doesn't apply",
+          0.75,
+          "doesn't apply",
+          0.6
+        ],
+        [
+          "cross_prob",
+          "doesn't apply",
+          0.05,
+          "doesn't apply",
+          0.05
+        ],
+        [
+          "tour_size",
+          "doesn't apply",
+          2,
+          "doesn't apply",
+          2
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 5
+    },
+    {
+      "table_number": "III",
+      "table_title": "EDA-ILP x ALEPH",
+      "headers": [
+        "",
+        "EDA-ILP",
+        "",
+        "",
+        "",
+        "Aleph",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Acc.",
+          "\\#Cls.",
+          "\\#Lit.",
+          "T(s).",
+          "Acc.",
+          "\\#Cls.",
+          "\\#Lit.",
+          "T(s)."
+        ],
+        [
+          "Alz.",
+          73.5,
+          3,
+          7.2,
+          45.7,
+          69.7,
+          7,
+          3.4,
+          56.6
+        ],
+        [
+          "Carc.",
+          61.8,
+          1,
+          3.6,
+          9.5,
+          62.7,
+          4.7,
+          1.8,
+          5.8
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 9
+    },
+    {
+      "table_number": "IV",
+      "table_title": "tEDA-ILP FOR CARCINOGENESIS",
+      "headers": [
+        "tEDA-ILP",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "-",
+          "Acc.",
+          "\\#Cls.",
+          "\\#Lit.",
+          "T(s).",
+          ""
+        ],
+        [
+          "Carc.",
+          68.5,
+          3,
+          2.3,
+          14.0,
+          ""
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    },
+    {
+      "table_number": "V",
+      "table_title": "EDA-ILP x GA-ILP",
+      "headers": [
+        "",
+        "EDA-ILP",
+        "",
+        "",
+        "",
+        "GA-ILP",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Acc.",
+          "\\#Cls.",
+          "\\#Lit.",
+          "T(s).",
+          "Acc.",
+          "\\#Cls.",
+          "\\#Lit.",
+          "T(s)."
+        ],
+        [
+          "Alz.",
+          73.5,
+          3,
+          7.2,
+          45.7,
+          71.3,
+          3,
+          9.8,
+          50.8
+        ],
+        [
+          "Carc.",
+          61.8,
+          1,
+          3.6,
+          9.5,
+          57.75,
+          1,
+          6.8,
+          28.8
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 9
+    },
+    {
+      "table_number": "VI",
+      "table_title": "tEDA-ILP $\\times$ tGA-ILP",
+      "headers": [
+        "tEDA-ILP",
+        "",
+        "",
+        "",
+        "tGA-ILP",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Acc.",
+          "\\#Cls.",
+          "\\#Lit.",
+          "T(s).",
+          "Acc.",
+          "\\#Cls.",
+          "\\#Lit.",
+          "T(s)."
+        ],
+        [
+          "The accuracy obtained by tEDA-ILP is statistically significant when compared to the tGA-ILP. Note that the theories founded by tEDA-ILP use less literals when compared to the theories founded by tGA-ILP. Additionally, tEDA-ILP uses less time to obtain its results. As occurred for the other cases, one can say that the Bayesian networks explore the search space more efficiently when compared to the \"traditional\" search present in the standard GAs.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    }
+  ]
+}

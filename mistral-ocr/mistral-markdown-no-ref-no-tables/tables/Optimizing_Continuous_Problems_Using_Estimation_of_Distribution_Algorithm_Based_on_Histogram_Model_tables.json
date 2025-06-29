@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2006/Optimizing Continuous Problems Using Estimation of Distribution Algorithm Based on Histogram Model.md",
+    "filename": "Optimizing Continuous Problems Using Estimation of Distribution Algorithm Based on Histogram Model.md",
+    "title": "Optimizing Continuous Problems Using Estimation of Distribution Algorithm Based on Histogram Model",
+    "year": "2006"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test functions",
+      "headers": [
+        "Function name",
+        "Formulation",
+        "Domain",
+        "Optimal solution"
+      ],
+      "rows": [
+        [
+          "Schwefel",
+          "$\\sum_{i=2}^{n}\\left(\\left(x_{i}-x_{i}^{2}\\right)^{2}-\\left(x_{i}-1\\right)^{2}\\right)$",
+          "$[-2,2]^{5}$",
+          "$[1,1,1, \\ldots, 1]$"
+        ],
+        [
+          "Rastrigin",
+          "$10 n+\\sum_{i=1}^{n}\\left(x_{i}^{2}-10 \\cos \\left(2 \\pi x_{i}\\right)\\right)$",
+          "$[-5,5]^{20}$",
+          "$[0,0,0, \\ldots, 0]$"
+        ],
+        [
+          "Griewank",
+          "$\\sum_{i=1}^{n} \\frac{x_{i}^{2}}{4000}-\\prod_{1}^{n} \\cos \\left(\\frac{x_{i}}{\\sqrt{i}}\\right)+1$",
+          "$[-5,5]^{10}$",
+          "$[0,0,0, \\ldots, 0]$"
+        ],
+        [
+          "Two-peak",
+          "$5 n-\\sum_{i=1}^{n} f_{i}$, twopeak $f_{i}[5]$",
+          "$[0,12]^{20}$",
+          "$[1,1,1, \\ldots, 1]$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Convergence property of HEDA in solving Rosenbrock function",
+      "headers": [
+        "100",
+        "",
+        "200",
+        "",
+        "400",
+        "",
+        "800",
+        ""
+      ],
+      "rows": [
+        [
+          "OPT\\#",
+          "MNE",
+          "OPT\\#",
+          "MNE",
+          "OPT\\#",
+          "MNE",
+          "OPT\\#",
+          "MNE"
+        ],
+        [
+          1,
+          29232.6,
+          2,
+          18625.4,
+          0,
+          "---",
+          1,
+          62816.0
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 8
+    }
+  ]
+}

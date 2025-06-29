@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/A knowledge-based constructive estimation of distribution algorithm for bi-objective portfolio optimization with cardinality constraints.md",
+    "filename": "A knowledge-based constructive estimation of distribution algorithm for bi-objective portfolio optimization with cardinality constraints.md",
+    "title": "A knowledge-based constructive estimation of distribution algorithm for bi-objective portfolio optimization with cardinality constraints",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Experimental configurations of each algorithm.",
+      "headers": [
+        "Algorithm",
+        "Parameter name",
+        "Parameter value"
+      ],
+      "rows": [
+        [
+          "RAR-GA",
+          "crossover probability <br> mutation probability",
+          "$\\begin{aligned} & 1.00 \\\\ & 0.01 \\end{aligned}$"
+        ],
+        [
+          "P-EDA",
+          "EDA model pruning threshold",
+          "EMNA $l b_{i} / 2$"
+        ],
+        [
+          "Kmean-GA",
+          "crossover probability mutation probability",
+          "$\\begin{aligned} & 0.5 \\\\ & 0.01 \\end{aligned}$"
+        ],
+        [
+          "KC-EDA",
+          "pheromone value interval <br> volatilization rate $\\rho$ <br> increasing rate $\\xi$ <br> threshold value Th <br> maximum number Top <br> smoothing parameter $\\eta$",
+          "$\\begin{aligned} & {[1,100]} \\\\ & 0.05 \\\\ & 10^{3} \\\\ & 10 \\\\ & 10 \\\\ & 0.25 \\end{aligned}$"
+        ],
+        [
+          "",
+          "maximum trying time $T$",
+          "$\\begin{aligned} & 100 \\text { for }[0,1 / 2 \\text { Gen }] \\\\ & 10 \\text { for }[1 / 2 \\text { Gen, } 3 / 4 \\text { Gen }] \\\\ & 0 \\text { for }[3 / 4 \\text { Gen, Gen] } \\end{aligned}$"
+        ],
+        [
+          "Common parameters",
+          "population size Pop <br> maximum generations Gen",
+          "$\\begin{aligned} & 200 \\\\ & 200 \\text { for SZ50 } \\\\ & 400 \\text { for SZ180 } \\\\ & 600 \\text { for SZ380 } \\end{aligned}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison of the HV values among the RAR-GA without grouping constraint (no GC), P-EDA without grouping constraint (no GC), KC-EDA without grouping constraint (no GC), Kmean-GA with grouping constraint (GC) and KC-EDA with grouping constraint (GC).",
+      "headers": [
+        "Dataset",
+        "K",
+        "RAR-GA (no GC)",
+        "P-EDA (no GC)",
+        "KC-EDA (no GC)",
+        "Dataset",
+        "K",
+        "Kmean-GA (GC)",
+        "KC-EDA (GC)"
+      ],
+      "rows": [
+        [
+          50,
+          10,
+          0.23749,
+          0.22543,
+          0.22289,
+          50,
+          10,
+          0.29562,
+          0.2226
+        ],
+        [
+          "",
+          20,
+          0.2401,
+          0.22893,
+          0.22821,
+          "",
+          20,
+          0.30316,
+          0.22788
+        ],
+        [
+          "",
+          30,
+          0.24451,
+          0.23594,
+          0.2355,
+          "",
+          30,
+          0.30921,
+          0.23522
+        ],
+        [
+          180,
+          10,
+          1.6098,
+          1.5194,
+          1.4886,
+          180,
+          10,
+          2.3237,
+          1.5055
+        ],
+        [
+          "",
+          20,
+          1.6584,
+          1.5674,
+          1.553,
+          "",
+          20,
+          2.5613,
+          1.5648
+        ],
+        [
+          "",
+          30,
+          1.7325,
+          1.6512,
+          1.6435,
+          "",
+          30,
+          2.6714,
+          1.656
+        ],
+        [
+          380,
+          10,
+          2.4561,
+          2.2718,
+          2.1986,
+          380,
+          10,
+          2.5866,
+          2.4946
+        ],
+        [
+          "",
+          20,
+          2.5289,
+          2.3593,
+          2.3092,
+          "",
+          20,
+          3.9125,
+          2.6181
+        ],
+        [
+          "",
+          30,
+          2.6543,
+          2.5326,
+          2.4769,
+          "",
+          30,
+          4.069,
+          2.78
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 9
+    }
+  ]
+}

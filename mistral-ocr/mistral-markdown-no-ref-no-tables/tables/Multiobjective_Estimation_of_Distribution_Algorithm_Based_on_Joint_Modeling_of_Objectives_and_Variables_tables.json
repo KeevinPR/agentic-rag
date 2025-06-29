@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Multiobjective Estimation of Distribution Algorithm Based on Joint Modeling of Objectives and Variables.md",
+    "filename": "Multiobjective Estimation of Distribution Algorithm Based on Joint Modeling of Objectives and Variables.md",
+    "title": "Multiobjective Estimation of Distribution Algorithm Based on Joint Modeling of Objectives and Variables",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "SUMMARY OF THE MULTI-ORJECTIVE EDAs WITH THEIR RANKING METHODS AND PROBABILISTIC MODELS USED TO SEARCH IN THE SPACE OF CANDIDATE SOLUTION.",
+      "headers": [
+        "Name",
+        "Probabilistic Model",
+        "Mixture",
+        "Hybridized",
+        "Ranking Method",
+        "External Archive"
+      ],
+      "rows": [
+        [
+          35,
+          "Bayesian network",
+          "",
+          "",
+          "Pareto dominance, Pareto strength, Domination count",
+          "$\\cdot$"
+        ],
+        [
+          36,
+          "Bayesian network",
+          "",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          37,
+          "Univariate distribution, Tree-structured distribution",
+          "$\\cdot$",
+          "",
+          "Domination count, Spread in objective space",
+          ""
+        ],
+        [
+          "SDR-AVS-MIDEA [38]",
+          "Multivariate Gaussian distribution",
+          "$\\cdot$",
+          "",
+          "Domination count, Spread in objective space",
+          "$\\cdot$"
+        ],
+        [
+          39,
+          "Gaussian and Cauchy kernel",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          40,
+          "Geometric distribution with uniform noise",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          "$\\cdot$"
+        ],
+        [
+          41,
+          "Bayesian network",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          42,
+          "Marginal product model",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          43,
+          "Univariate marginal product model",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          "$\\cdot$"
+        ],
+        [
+          -44,
+          "Product of Gaussian Bayesian networks",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Domination count, Modified crowding distance",
+          ""
+        ],
+        [
+          -13,
+          "Linear combination of principal components with Gaussian noise",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          45,
+          "RBM network",
+          "$\\cdot$",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          -46,
+          "Univariate Gaussian distribution",
+          "$\\cdot$",
+          "",
+          "Hypervolume indicator",
+          ""
+        ],
+        [
+          47,
+          "Univariate Gaussian distribution",
+          "$\\cdot$",
+          "",
+          "Hypervolume indicator estimation",
+          ""
+        ],
+        [
+          48,
+          "Bayesian network",
+          "",
+          "",
+          "$\\epsilon$-Pareto dominance, Domination count",
+          ""
+        ],
+        [
+          -49,
+          "Gaussian Bayesian network",
+          "",
+          "",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          50,
+          "Bayesian network",
+          "",
+          "$\\cdot$",
+          "Pareto dominance",
+          "$\\cdot$"
+        ],
+        [
+          51,
+          "Univariate distribution",
+          "$\\cdot$",
+          "$\\cdot$",
+          "Weighted sum",
+          ""
+        ],
+        [
+          -52,
+          "Univariate Gaussian distribution",
+          "",
+          "$\\cdot$",
+          "Pareto dominance, Crowding distance",
+          ""
+        ],
+        [
+          53,
+          "RBM network",
+          "$\\cdot$",
+          "$\\cdot$",
+          "Pareto dominance, Crowding distance, Probabilistic dominance",
+          ""
+        ],
+        [
+          54,
+          "RBM network",
+          "",
+          "$\\cdot$",
+          "Pareto dominance, Crowding distance Decomposition with Tchebycheff method",
+          ""
+        ],
+        [
+          55,
+          "Univariate distribution",
+          "",
+          "$\\cdot$",
+          "Decomposition with Tchebycheff method",
+          ""
+        ]
+      ],
+      "row_count": 22,
+      "column_count": 6
+    },
+    {
+      "table_number": "III",
+      "table_title": "shows the statistical analysis of the results for the algorithms with different ranking methods on each of the MOPs with different numbers of objectives. The nonparametric Friedman test [89] is used to check for the statistical differences of the algorithm performance. When the null hypothesis that all the algorithms have an equal average rank",
+      "headers": [
+        "No. Objectives",
+        "3",
+        "5",
+        "7",
+        "10",
+        "15",
+        "20"
+      ],
+      "rows": [
+        [
+          "No. Variables",
+          16,
+          16,
+          16,
+          15,
+          16,
+          21
+        ],
+        [
+          "Population Size",
+          50,
+          100,
+          150,
+          200,
+          250,
+          300
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": "IV",
+      "table_title": "Characteristics of the Unconstrained MOPs used in CEC09 BENCHMARK.",
+      "headers": [
+        "Name",
+        "No. Objectives",
+        "No. Variables",
+        "$F^{*}$ Size"
+      ],
+      "rows": [
+        [
+          1,
+          2,
+          30,
+          1000
+        ],
+        [
+          2,
+          2,
+          30,
+          1000
+        ],
+        [
+          3,
+          2,
+          30,
+          1000
+        ],
+        [
+          4,
+          2,
+          30,
+          1000
+        ],
+        [
+          5,
+          2,
+          30,
+          21
+        ],
+        [
+          6,
+          2,
+          30,
+          1000
+        ],
+        [
+          7,
+          2,
+          30,
+          1000
+        ],
+        [
+          8,
+          3,
+          30,
+          10000
+        ],
+        [
+          9,
+          3,
+          30,
+          10000
+        ],
+        [
+          10,
+          3,
+          30,
+          10000
+        ],
+        [
+          2,
+          5,
+          30,
+          5000
+        ],
+        [
+          3,
+          5,
+          30,
+          5000
+        ],
+        [
+          1,
+          5,
+          30,
+          5000
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    }
+  ]
+}

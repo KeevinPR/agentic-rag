@@ -1,0 +1,967 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Multi-marker tagging single nucleotide polymorphism selection using estimation of distribution algorithms.md",
+    "filename": "Multi-marker tagging single nucleotide polymorphism selection using estimation of distribution algorithms.md",
+    "title": "Multi-marker tagging single nucleotide polymorphism selection using estimation of distribution algorithms",
+    "year": "2010"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] Goodman JE, Mechanic LE, Luke BT, Ambs S, Chanock S, Harris CC. Exploring SNP-SNP interactions and colon cancer risk using polymorphism interaction analysis. Journal of Cancer 2006;118(7):1790-7.\n[2] Mechanic LE, Luke BT, Goodman JE, Chanock S, Harris CC. Polymorphism interaction analysis (PIA): a method for investigating complex gene-gene interactions. BMC Bioinformatics 2008;9(146):1790-7.\n[3] Heidema AG, Boer JMA, Nagelkerke N, Mariman ECM, van der A DL, Feskens EJM. The challenge for genetic epidemiologists: how to analyze large numbers of SNPs in relation to complex diseases. BMC Genetics 2006;7(23).\n[4] The International HapMap Consortium. A second generation human haplotype map of over 3.1 million snps. Nature 2007;449(7164):851-61.\n\n\n[^0]:    ${ }^{1}$ Tree-EDA software is available at http://www.sc.ebu.es/ccwbayes/software/ EDATagger.html.\n\n[5] Manolio TA, Brooks LD, Collins FS. A HapMap harvest of insights into the genetics of common disease. The Journal of Clinical Investigation 2008;118(5):1590-605.\n[6] Montpetit A, Nelis M, Laflamme P, Magi R, Ke X, Remm M, et al. An evaluation of the performance of tag SNPs derived from HapMap in a Caucasian population. PLoS Genetics 2007;2(3):e27.\n[7] de Bakker PIW, Yelensky R, Pe'er I, Gabriel SB, Daly MJ, Altshuler D. Efficiency and power in genetic association studies. Nature Genetics 2005;37:1217-23.\n[8] Balba V, Halldorsson BV, Schwartz R, Clark AG. Istrail S. Haplotypes and informative SNP selection algorithms: don't block out information. In: Proceedings of the seventh annual international conference on research in computational molecular biology RECOMB'03. New York, NY, USA: ACM; 2003. p. 19-27.\n[9] Choi A, Zaitlen N, Han B, Pipatavisawat K, Darwiche A, Eskin E. Efficient genome wide tagging by reduction to SAT. In: Crandall KA, Lagergren J, editors. Proceedings of the 8th International Workshop Algorithms in Bioinformatics WABI-2008, volume 5251 of Lectures Notes in Bioinformatics. Heidelberg: Springer; 2008. p. 135-47.\n[10] Lee PH, Shatkay H. Bntagger: improved tagging SNP selection using Bayesian networks. Bioinformatics 2006;22(14):e211-9.\n[11] Phuong TM, Lin Z, Altman RB. Choosing SNPs using feature selection. Journal of Bioinformatics and Computational Biology 2006;4(2):241-57.\n[12] Barrett JC, Fry B, Maller J, Daly MJ. Haploview: analysis and visualization of ld and haplotype maps. Bioinformatics 2005;21(2):263-5.\n[13] Selman B, Levesque H, Mitchell D. A new method for solving hard satisfiability problems. In: CORPORATE American Association for Artificial Intelligence, editor. Proceedings of the 10th National Conference on Artificial Intelligence (AAAI-92), San Jose, CA, USA, 1992. Menlo Park, CA, USA: American Association for Artificial Intelligence. p. 440-6.\n[14] Greenspan G, Geiger D. High density linkage disequilibrium mapping using models of haplotype block variation. Bioinformatics 2004;20(Suppl 1):i13744.\n[15] Xing EP, Sharan R, Jordan MI. Bayesian haplo-type inference via the Dirichlet process. In: Proceedings of the twenty-first international conference on Machine learning (ICML-04), New York, NY, USA: ACM; 2004. p. 879-86.\n[16] Larrañaga P, Lozano JA, editors. Estimation of distribution algorithms. A new tool for evolutionary computation. Boston/Dordrecht/London: Kluwer Academic Publishers; 2002.\n[17] Lozano JA, Larrañaga P, Inza I, Bengoetxea E, editors. Towards a new evolutionary computation: advances on estimation of distribution algorithms. Springer; 2006.\n[18] Mühlenbein H, Paaß G. From recombination of genes to the estimation of distributions I. Binary parameters. In: Voigt H-M, Ebeling W, Rechenberg I, Schwefel H-P, editors. Parallel Problem Solving from Nature-PPSN IV, volume 1141 of Lectures Notes in Computer Science, Berlin. Springer; 1996, p. 178-87.\n[19] Pelikan M, Sastry K, Cantú-Paz E, editors. Scalable optimization via probabilistic modeling: from algorithms to applications. Studies in computational intelligence. Springer; 2006.\n[20] Goldberg DE. Genetic algorithms in search, optimization, and machine learning. Reading, MA: Addison-Wesley; 1989.\n[21] Holland JH. Adaptation in natural and artificial systems: an introductory analysis with applications to biology, control, and artificial intelligence. Ann Arbor, MI: University of Michigan Press; 1975.\n[22] Armafanzas R, Inza I, Santana R, Saeys Y, Flores JL, Lozano JA, et al. A review of estimation of distribution algorithms in bioinformatics. BioData Mining 2008;1(6). doi:10.1186/1756-0381-1-6.\n[23] Larrañaga P, Calvo B, Santana R, Bielza C, Galdiano J, Inza I, et al. Machine learning in bioinformatics. Briefings in Bioinformatics 2006;7:86-112.\n[24] Harik GR, Lobo FG, Goldberg DE. The compact genetic algorithm. IEEE Transactions on Evolutionary Computation 1999;3(4):287-97.\n[25] Baluja S. Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning. Technical Report CMU-CS-94-163, Carnegie Mellon University, Pittsburgh, PA; 1994.\n[26] De Bonet JS, Isbell CL, Viola P. MIMIC: finding optima by estimating probability densities. In: Mozer MC, Jordan MI, Petsche T, editors. Advances in neural information processing systems, vol. 9. Cambridge: The MIT Press; 1997. p. $424-30$.\n[27] Pelikan M, Mühlenbein H. The bivariate marginal distribution algorithm. In: Roy R, Furuhashi T, Chawdhry PK, editors. Advances in soft computingengineering design and manufacturing. London: Springer; 1999. p. 521-35. ISBN 1-85233-062-7.\n[28] Santana R, Ochoa A, Soto MR. The mixture of trees factorized distribution algorithm. In: Spector L, Goodman E, Wu A, Langdon WR, Voigt HM, Gen M, Sen S, Dorigo M, Pezeslik S, Garzon M, Burke E, editors. Proceedings of the Genetic and Evolutionary Computation Conference GECCO-2001. San Francisco, CA: Morgan Kaufmann Publishers; 2001. p. 543-50.\n[29] Etseberria R, Larrañaga P. Global optimization using Bayesian networks. In: Ochoa A, Soto MR, Santana R, editors. Proceedings of the Second Symposium on Artificial Intelligence (CIMAF-99), Havana, Cuba: Editorial Academia; 1999. p. 151-73. ISBN 959-02-024101.\n[30] Larrañaga P, Etseberria R, Lozano JA, Peña JM. Optimization by learning and simulation of Bayesian and Gaussian networks. Technical Report EHU-6D6A-1K-4/99, Department of Computer Science and Artificial Intelligence, University of the Basque Country; 1999.\n[31] Pelikan M. Hierarchical Bayesian Optimization Algorithm. Toward a New Generation of Evolutionary Algorithms, volume 170 of Studies in Fuzziness and Soft Computing. Springer; 2005.\n[32] Pearl J. Probabilistic reasoning in intelligent systems: networks of plausible inference. San Mateo, California: Morgan Kaufmann; 1988.\n[33] Baluja S, Davies S. Using optimal dependency-trees for combinatorial optimization: learning the structure of the search space. In: Fisher DH, editor. Proceedings of the 14th International Conference on Machine Learning. San Francisco, CA, USA: Morgan Kaufmann; 1997. p. 30-8.\n[34] Chow CK, Liu CN. Approximating discrete probability distributions with dependence trees. IEEE Transactions on Information Theory 1968;14(3): $462-7$.\n[35] Henrion M. Propagating uncertainty in Bayesian networks by probabilistic logic sampling. In: Lemmer JF, Kanal LN, editors. Proceedings of the Second Annual Conference on Uncertainty in Artificial Intelligence. Elsevier; 1988. p. $149-64$.\n[36] Mühlenbein H, Malmig T, Ochoa A. Schemata, distributions and graphical models in evolutionary optimization. Journal of Heuristics 1999;5(2):213-47.\n[37] Ochoa A, Soto MR, Santana R, Madera J, Jorge N. The factorized distribution algorithm and the junction tree: a learning perspective. In: Ochoa A, Soto MR, Santana R, editors. Proceedings of the Second Symposium on Artificial Intelligence (CIMAF-99), Havana, Cuba, March 1999. Havana, Cuba: Editorial Academia. p. 368-77. ISBN 959-02-024101.\n[38] Baluja S. Incorporating a priori knowledge in probabilistic-model based optimization. In: Pelikan M, Sastry K, Cantú-Paz E, editors. Scalable optimization via probabilistic modeling: from algorithms to applications, studies in computational intelligence. Springer; 2006. p. 205-22.\n[39] Santana R, Larrañaga P, Lozano JA. The role of a priori information in the minimization of contact potentials by means of estimation of distribution algorithms. In: Marchiori E, Moore JH, Rajapakse JC, editors. Proceedings of the Fifth European Conference on Evolutionary Computation, Machine Learning and Data Mining in Bioinformatics, volume 4447 of Lecture Notes in Computer Science. Valencia, Spain: Springer; 2007. p. 247-57.\n[40] Hauschild M, Pelikan M. Enhancing efficiency of hierarchical BOA via distancebased model restrictions. MEDAL Report No. 2008007, Missouri Estimation of Distribution Algorithms Laboratory (MEDAL); April 2008.\n[41] Hauschild M, Pelikan M, Sastry K, Goldberg DE. Using previous models to bias structural learning in the hierarchical BOA. MEDAL Report No. 2008003, Missouri Estimation of Distribution Algorithms Laboratory (MEDAL); 2008.\n[42] Santana R, Larrañaga P, Lozano JA. Adding probabilistic dependencies to the search of protein side chain configurations using EDAs. In: Rudolph G, Jansen T, Lucas S, Poloni C, Beume N, editors. Parallel Problem Solving from NaturePPSN X, volume 5199 of Lecture Notes in Computer Science. Dortmund, Germany: Springer; 2008. p. 1120-9.\n[43] Soto MR, Ochoa A. A factorized distribution algorithm based on polytrees. In: Proceedings of the 2000 Congress on Evolutionary Computation CEC-2000, La Jolla Marriott Hotel La Jolla, California, USA, 6-9 July 2000. Piscataway, NJ, USA: IEEE Press. p. 232-7.\n[44] Gabriel SB, Schaffner SF, Nguyen H, Moore JM, Roy J, Blumenstiel B, et al. The structure of haplotype blocks in the human genome. Science 2002;296:2225-9.\n[45] Lozano JA, Sagarna R, Larrañaga P. Parallel estimation of distribution algorithms. In: Larrañaga P, Lozano JA, editors. Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation, Boston/Dordrecht/London: Kluwer Academic Publishers; 2002. p. 125-42.\n[46] Mendiburu A, Lozano J, Miguel-Alonso J. Parallel implementation of EDAs based on probabilistic graphical models. IEEE Transactions on Evolutionary Computation 2005;9(4):406-23.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Goodman JE, Mechanic LE, Luke BT, Ambs S, Chanock S, Harris CC. Exploring SNP-SNP interactions and colon cancer risk using polymorphism interaction analysis. Journal of Cancer 2006;118(7):1790-7."
+      },
+      {
+        "ref_id": "2",
+        "text": "Mechanic LE, Luke BT, Goodman JE, Chanock S, Harris CC. Polymorphism interaction analysis (PIA): a method for investigating complex gene-gene interactions. BMC Bioinformatics 2008;9(146):1790-7."
+      },
+      {
+        "ref_id": "3",
+        "text": "Heidema AG, Boer JMA, Nagelkerke N, Mariman ECM, van der A DL, Feskens EJM. The challenge for genetic epidemiologists: how to analyze large numbers of SNPs in relation to complex diseases. BMC Genetics 2006;7(23)."
+      },
+      {
+        "ref_id": "4",
+        "text": "The International HapMap Consortium. A second generation human haplotype map of over 3.1 million snps. Nature 2007;449(7164):851-61."
+      },
+      {
+        "ref_id": "5",
+        "text": "Manolio TA, Brooks LD, Collins FS. A HapMap harvest of insights into the genetics of common disease. The Journal of Clinical Investigation 2008;118(5):1590-605."
+      },
+      {
+        "ref_id": "6",
+        "text": "Montpetit A, Nelis M, Laflamme P, Magi R, Ke X, Remm M, et al. An evaluation of the performance of tag SNPs derived from HapMap in a Caucasian population. PLoS Genetics 2007;2(3):e27."
+      },
+      {
+        "ref_id": "7",
+        "text": "de Bakker PIW, Yelensky R, Pe'er I, Gabriel SB, Daly MJ, Altshuler D. Efficiency and power in genetic association studies. Nature Genetics 2005;37:1217-23."
+      },
+      {
+        "ref_id": "8",
+        "text": "Balba V, Halldorsson BV, Schwartz R, Clark AG. Istrail S. Haplotypes and informative SNP selection algorithms: don't block out information. In: Proceedings of the seventh annual international conference on research in computational molecular biology RECOMB'03. New York, NY, USA: ACM; 2003. p. 19-27."
+      },
+      {
+        "ref_id": "9",
+        "text": "Choi A, Zaitlen N, Han B, Pipatavisawat K, Darwiche A, Eskin E. Efficient genome wide tagging by reduction to SAT. In: Crandall KA, Lagergren J, editors. Proceedings of the 8th International Workshop Algorithms in Bioinformatics WABI-2008, volume 5251 of Lectures Notes in Bioinformatics. Heidelberg: Springer; 2008. p. 135-47."
+      },
+      {
+        "ref_id": "10",
+        "text": "Lee PH, Shatkay H. Bntagger: improved tagging SNP selection using Bayesian networks. Bioinformatics 2006;22(14):e211-9."
+      },
+      {
+        "ref_id": "11",
+        "text": "Phuong TM, Lin Z, Altman RB. Choosing SNPs using feature selection. Journal of Bioinformatics and Computational Biology 2006;4(2):241-57."
+      },
+      {
+        "ref_id": "12",
+        "text": "Barrett JC, Fry B, Maller J, Daly MJ. Haploview: analysis and visualization of ld and haplotype maps. Bioinformatics 2005;21(2):263-5."
+      },
+      {
+        "ref_id": "13",
+        "text": "Selman B, Levesque H, Mitchell D. A new method for solving hard satisfiability problems. In: CORPORATE American Association for Artificial Intelligence, editor. Proceedings of the 10th National Conference on Artificial Intelligence (AAAI-92), San Jose, CA, USA, 1992. Menlo Park, CA, USA: American Association for Artificial Intelligence. p. 440-6."
+      },
+      {
+        "ref_id": "14",
+        "text": "Greenspan G, Geiger D. High density linkage disequilibrium mapping using models of haplotype block variation. Bioinformatics 2004;20(Suppl 1):i13744."
+      },
+      {
+        "ref_id": "15",
+        "text": "Xing EP, Sharan R, Jordan MI. Bayesian haplo-type inference via the Dirichlet process. In: Proceedings of the twenty-first international conference on Machine learning (ICML-04), New York, NY, USA: ACM; 2004. p. 879-86."
+      },
+      {
+        "ref_id": "16",
+        "text": "Larrañaga P, Lozano JA, editors. Estimation of distribution algorithms. A new tool for evolutionary computation. Boston/Dordrecht/London: Kluwer Academic Publishers; 2002."
+      },
+      {
+        "ref_id": "17",
+        "text": "Lozano JA, Larrañaga P, Inza I, Bengoetxea E, editors. Towards a new evolutionary computation: advances on estimation of distribution algorithms. Springer; 2006."
+      },
+      {
+        "ref_id": "18",
+        "text": "Mühlenbein H, Paaß G. From recombination of genes to the estimation of distributions I. Binary parameters. In: Voigt H-M, Ebeling W, Rechenberg I, Schwefel H-P, editors. Parallel Problem Solving from Nature-PPSN IV, volume 1141 of Lectures Notes in Computer Science, Berlin. Springer; 1996, p. 178-87."
+      },
+      {
+        "ref_id": "19",
+        "text": "Pelikan M, Sastry K, Cantú-Paz E, editors. Scalable optimization via probabilistic modeling: from algorithms to applications. Studies in computational intelligence. Springer; 2006."
+      },
+      {
+        "ref_id": "20",
+        "text": "Goldberg DE. Genetic algorithms in search, optimization, and machine learning. Reading, MA: Addison-Wesley; 1989."
+      },
+      {
+        "ref_id": "21",
+        "text": "Holland JH. Adaptation in natural and artificial systems: an introductory analysis with applications to biology, control, and artificial intelligence. Ann Arbor, MI: University of Michigan Press; 1975."
+      },
+      {
+        "ref_id": "22",
+        "text": "Armafanzas R, Inza I, Santana R, Saeys Y, Flores JL, Lozano JA, et al. A review of estimation of distribution algorithms in bioinformatics. BioData Mining 2008;1(6). doi:10.1186/1756-0381-1-6."
+      },
+      {
+        "ref_id": "23",
+        "text": "Larrañaga P, Calvo B, Santana R, Bielza C, Galdiano J, Inza I, et al. Machine learning in bioinformatics. Briefings in Bioinformatics 2006;7:86-112."
+      },
+      {
+        "ref_id": "24",
+        "text": "Harik GR, Lobo FG, Goldberg DE. The compact genetic algorithm. IEEE Transactions on Evolutionary Computation 1999;3(4):287-97."
+      },
+      {
+        "ref_id": "25",
+        "text": "Baluja S. Population-based incremental learning: a method for integrating genetic search based function optimization and competitive learning. Technical Report CMU-CS-94-163, Carnegie Mellon University, Pittsburgh, PA; 1994."
+      },
+      {
+        "ref_id": "26",
+        "text": "De Bonet JS, Isbell CL, Viola P. MIMIC: finding optima by estimating probability densities. In: Mozer MC, Jordan MI, Petsche T, editors. Advances in neural information processing systems, vol. 9. Cambridge: The MIT Press; 1997. p. $424-30$."
+      },
+      {
+        "ref_id": "27",
+        "text": "Pelikan M, Mühlenbein H. The bivariate marginal distribution algorithm. In: Roy R, Furuhashi T, Chawdhry PK, editors. Advances in soft computingengineering design and manufacturing. London: Springer; 1999. p. 521-35. ISBN 1-85233-062-7."
+      },
+      {
+        "ref_id": "28",
+        "text": "Santana R, Ochoa A, Soto MR. The mixture of trees factorized distribution algorithm. In: Spector L, Goodman E, Wu A, Langdon WR, Voigt HM, Gen M, Sen S, Dorigo M, Pezeslik S, Garzon M, Burke E, editors. Proceedings of the Genetic and Evolutionary Computation Conference GECCO-2001. San Francisco, CA: Morgan Kaufmann Publishers; 2001. p. 543-50."
+      },
+      {
+        "ref_id": "29",
+        "text": "Etseberria R, Larrañaga P. Global optimization using Bayesian networks. In: Ochoa A, Soto MR, Santana R, editors. Proceedings of the Second Symposium on Artificial Intelligence (CIMAF-99), Havana, Cuba: Editorial Academia; 1999. p. 151-73. ISBN 959-02-024101."
+      },
+      {
+        "ref_id": "30",
+        "text": "Larrañaga P, Etseberria R, Lozano JA, Peña JM. Optimization by learning and simulation of Bayesian and Gaussian networks. Technical Report EHU-6D6A-1K-4/99, Department of Computer Science and Artificial Intelligence, University of the Basque Country; 1999."
+      },
+      {
+        "ref_id": "31",
+        "text": "Pelikan M. Hierarchical Bayesian Optimization Algorithm. Toward a New Generation of Evolutionary Algorithms, volume 170 of Studies in Fuzziness and Soft Computing. Springer; 2005."
+      },
+      {
+        "ref_id": "32",
+        "text": "Pearl J. Probabilistic reasoning in intelligent systems: networks of plausible inference. San Mateo, California: Morgan Kaufmann; 1988."
+      },
+      {
+        "ref_id": "33",
+        "text": "Baluja S, Davies S. Using optimal dependency-trees for combinatorial optimization: learning the structure of the search space. In: Fisher DH, editor. Proceedings of the 14th International Conference on Machine Learning. San Francisco, CA, USA: Morgan Kaufmann; 1997. p. 30-8."
+      },
+      {
+        "ref_id": "34",
+        "text": "Chow CK, Liu CN. Approximating discrete probability distributions with dependence trees. IEEE Transactions on Information Theory 1968;14(3): $462-7$."
+      },
+      {
+        "ref_id": "35",
+        "text": "Henrion M. Propagating uncertainty in Bayesian networks by probabilistic logic sampling. In: Lemmer JF, Kanal LN, editors. Proceedings of the Second Annual Conference on Uncertainty in Artificial Intelligence. Elsevier; 1988. p. $149-64$."
+      },
+      {
+        "ref_id": "36",
+        "text": "Mühlenbein H, Malmig T, Ochoa A. Schemata, distributions and graphical models in evolutionary optimization. Journal of Heuristics 1999;5(2):213-47."
+      },
+      {
+        "ref_id": "37",
+        "text": "Ochoa A, Soto MR, Santana R, Madera J, Jorge N. The factorized distribution algorithm and the junction tree: a learning perspective. In: Ochoa A, Soto MR, Santana R, editors. Proceedings of the Second Symposium on Artificial Intelligence (CIMAF-99), Havana, Cuba, March 1999. Havana, Cuba: Editorial Academia. p. 368-77. ISBN 959-02-024101."
+      },
+      {
+        "ref_id": "38",
+        "text": "Baluja S. Incorporating a priori knowledge in probabilistic-model based optimization. In: Pelikan M, Sastry K, Cantú-Paz E, editors. Scalable optimization via probabilistic modeling: from algorithms to applications, studies in computational intelligence. Springer; 2006. p. 205-22."
+      },
+      {
+        "ref_id": "39",
+        "text": "Santana R, Larrañaga P, Lozano JA. The role of a priori information in the minimization of contact potentials by means of estimation of distribution algorithms. In: Marchiori E, Moore JH, Rajapakse JC, editors. Proceedings of the Fifth European Conference on Evolutionary Computation, Machine Learning and Data Mining in Bioinformatics, volume 4447 of Lecture Notes in Computer Science. Valencia, Spain: Springer; 2007. p. 247-57."
+      },
+      {
+        "ref_id": "40",
+        "text": "Hauschild M, Pelikan M. Enhancing efficiency of hierarchical BOA via distancebased model restrictions. MEDAL Report No. 2008007, Missouri Estimation of Distribution Algorithms Laboratory (MEDAL); April 2008."
+      },
+      {
+        "ref_id": "41",
+        "text": "Hauschild M, Pelikan M, Sastry K, Goldberg DE. Using previous models to bias structural learning in the hierarchical BOA. MEDAL Report No. 2008003, Missouri Estimation of Distribution Algorithms Laboratory (MEDAL); 2008."
+      },
+      {
+        "ref_id": "42",
+        "text": "Santana R, Larrañaga P, Lozano JA. Adding probabilistic dependencies to the search of protein side chain configurations using EDAs. In: Rudolph G, Jansen T, Lucas S, Poloni C, Beume N, editors. Parallel Problem Solving from NaturePPSN X, volume 5199 of Lecture Notes in Computer Science. Dortmund, Germany: Springer; 2008. p. 1120-9."
+      },
+      {
+        "ref_id": "43",
+        "text": "Soto MR, Ochoa A. A factorized distribution algorithm based on polytrees. In: Proceedings of the 2000 Congress on Evolutionary Computation CEC-2000, La Jolla Marriott Hotel La Jolla, California, USA, 6-9 July 2000. Piscataway, NJ, USA: IEEE Press. p. 232-7."
+      },
+      {
+        "ref_id": "44",
+        "text": "Gabriel SB, Schaffner SF, Nguyen H, Moore JM, Roy J, Blumenstiel B, et al. The structure of haplotype blocks in the human genome. Science 2002;296:2225-9."
+      },
+      {
+        "ref_id": "45",
+        "text": "Lozano JA, Sagarna R, Larrañaga P. Parallel estimation of distribution algorithms. In: Larrañaga P, Lozano JA, editors. Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation, Boston/Dordrecht/London: Kluwer Academic Publishers; 2002. p. 125-42."
+      },
+      {
+        "ref_id": "46",
+        "text": "Mendiburu A, Lozano J, Miguel-Alonso J. Parallel implementation of EDAs based on probabilistic graphical models. IEEE Transactions on Evolutionary Computation 2005;9(4):406-23."
+      }
+    ],
+    "reference_count": 46,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Details of the SNP problem benchmark.",
+      "headers": [
+        "Name",
+        "n",
+        "$n^{\\prime}$",
+        "nPairs",
+        "nTriples"
+      ],
+      "rows": [
+        [
+          10.0,
+          556,
+          502,
+          2716,
+          796782
+        ],
+        [
+          10.0,
+          433,
+          381,
+          3324,
+          909938
+        ],
+        [
+          10.0,
+          441,
+          406,
+          2711,
+          658370
+        ],
+        [
+          10.0,
+          630,
+          502,
+          1561,
+          476061
+        ],
+        [
+          13.0,
+          745,
+          711,
+          7294,
+          3385226
+        ],
+        [
+          13.0,
+          635,
+          594,
+          5907,
+          2324625
+        ],
+        [
+          13.0,
+          636,
+          595,
+          6392,
+          2497352
+        ],
+        [
+          13.0,
+          792,
+          726,
+          3524,
+          1471646
+        ],
+        [
+          14.0,
+          895,
+          851,
+          7918,
+          4164642
+        ],
+        [
+          14.0,
+          643,
+          601,
+          6324,
+          2187202
+        ],
+        [
+          14.0,
+          561,
+          512,
+          5232,
+          1709585
+        ],
+        [
+          14.0,
+          951,
+          870,
+          4947,
+          2548920
+        ],
+        [
+          112.0,
+          922,
+          873,
+          9215,
+          5808697
+        ],
+        [
+          112.0,
+          1015,
+          976,
+          11330,
+          7680843
+        ],
+        [
+          112.0,
+          997,
+          955,
+          7870,
+          5364780
+        ],
+        [
+          112.0,
+          1298,
+          1192,
+          5712,
+          4332098
+        ],
+        [
+          113.0,
+          1054,
+          1004,
+          14535,
+          10133619
+        ],
+        [
+          113.0,
+          903,
+          864,
+          16384,
+          9224261
+        ],
+        [
+          113.0,
+          829,
+          793,
+          15262,
+          7233779
+        ],
+        [
+          113.0,
+          1135,
+          1026,
+          5478,
+          3301762
+        ],
+        [
+          123.0,
+          934,
+          886,
+          6550,
+          4253145
+        ],
+        [
+          123.0,
+          881,
+          763,
+          9331,
+          5680830
+        ],
+        [
+          123.0,
+          836,
+          687,
+          5746,
+          2993247
+        ],
+        [
+          123.0,
+          904,
+          834,
+          5523,
+          3120904
+        ],
+        [
+          131.0,
+          1026,
+          957,
+          7617,
+          5137622
+        ],
+        [
+          131.0,
+          1018,
+          920,
+          7290,
+          4394708
+        ],
+        [
+          131.0,
+          993,
+          893,
+          7367,
+          4317602
+        ],
+        [
+          131.0,
+          1137,
+          951,
+          5174,
+          3228853
+        ],
+        [
+          213.0,
+          648,
+          616,
+          5635,
+          2183354
+        ],
+        [
+          213.0,
+          519,
+          494,
+          5354,
+          1478774
+        ],
+        [
+          213.0,
+          562,
+          529,
+          5250,
+          1759928
+        ],
+        [
+          213.0,
+          846,
+          722,
+          3979,
+          1642158
+        ],
+        [
+          232.0,
+          521,
+          454,
+          4644,
+          1377633
+        ],
+        [
+          232.0,
+          596,
+          516,
+          3406,
+          1126619
+        ],
+        [
+          232.0,
+          573,
+          496,
+          3188,
+          1076740
+        ],
+        [
+          232.0,
+          724,
+          532,
+          1986,
+          634306
+        ],
+        [
+          321.0,
+          594,
+          550,
+          5082,
+          1808674
+        ],
+        [
+          321.0,
+          695,
+          647,
+          6332,
+          2705717
+        ],
+        [
+          321.0,
+          682,
+          621,
+          5317,
+          2282908
+        ],
+        [
+          321.0,
+          981,
+          856,
+          3579,
+          1820721
+        ]
+      ],
+      "row_count": 40,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Results achieved by SAT Tagger, Tagger and Tree-EDA for the 40 SNP problem instances.",
+      "headers": [
+        "Name",
+        "SAT Tagger",
+        "Tagger",
+        "",
+        "",
+        "Tree-EDA",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Pairwise",
+          -2,
+          "aggr-2M-3M",
+          "Best",
+          "nbest",
+          "Mean",
+          "Worst"
+        ],
+        [
+          10.0,
+          159,
+          161,
+          126,
+          126,
+          101,
+          2,
+          102.6,
+          104
+        ],
+        [
+          10.0,
+          99,
+          100,
+          92,
+          92,
+          81,
+          4,
+          82.1,
+          84
+        ],
+        [
+          10.0,
+          104,
+          104,
+          89,
+          89,
+          69,
+          1,
+          70.5,
+          72
+        ],
+        [
+          10.0,
+          301,
+          301,
+          247,
+          249,
+          201,
+          5,
+          201.8,
+          204
+        ],
+        [
+          13.0,
+          113,
+          118,
+          98,
+          103,
+          79,
+          1,
+          82.6,
+          85
+        ],
+        [
+          13.0,
+          103,
+          105,
+          92,
+          93,
+          71,
+          2,
+          72.4,
+          74
+        ],
+        [
+          13.0,
+          101,
+          103,
+          91,
+          91,
+          76,
+          2,
+          78.4,
+          82
+        ],
+        [
+          13.0,
+          235,
+          239,
+          199,
+          196,
+          154,
+          1,
+          156.8,
+          160
+        ],
+        [
+          14.0,
+          167,
+          169,
+          141,
+          143,
+          126,
+          2,
+          128.8,
+          131
+        ],
+        [
+          14.0,
+          122,
+          125,
+          106,
+          108,
+          91,
+          2,
+          93.2,
+          96
+        ],
+        [
+          14.0,
+          121,
+          122,
+          106,
+          106,
+          87,
+          1,
+          90.9,
+          93
+        ],
+        [
+          14.0,
+          269,
+          270,
+          223,
+          226,
+          183,
+          1,
+          186.9,
+          190
+        ],
+        [
+          112.0,
+          181,
+          185,
+          141,
+          144,
+          116,
+          1,
+          118.1,
+          120
+        ],
+        [
+          112.0,
+          165,
+          167,
+          137,
+          134,
+          110,
+          1,
+          113.8,
+          116
+        ],
+        [
+          112.0,
+          190,
+          193,
+          156,
+          157,
+          121,
+          1,
+          126.9,
+          132
+        ],
+        [
+          112.0,
+          449,
+          452,
+          340,
+          345,
+          256,
+          2,
+          260.0,
+          265
+        ],
+        [
+          113.0,
+          183,
+          185,
+          146,
+          153,
+          121,
+          1,
+          123.8,
+          125
+        ],
+        [
+          113.0,
+          109,
+          112,
+          92,
+          94,
+          73,
+          2,
+          75.1,
+          77
+        ],
+        [
+          113.0,
+          105,
+          108,
+          87,
+          89,
+          69,
+          3,
+          70.6,
+          72
+        ],
+        [
+          113.0,
+          365,
+          366,
+          289,
+          288,
+          229,
+          1,
+          233.1,
+          237
+        ],
+        [
+          123.0,
+          196,
+          199,
+          161,
+          158,
+          132,
+          1,
+          134.5,
+          140
+        ],
+        [
+          123.0,
+          248,
+          249,
+          222,
+          223,
+          197,
+          1,
+          199.8,
+          203
+        ],
+        [
+          123.0,
+          288,
+          289,
+          257,
+          256,
+          227,
+          1,
+          229.6,
+          234
+        ],
+        [
+          123.0,
+          255,
+          260,
+          208,
+          211,
+          162,
+          1,
+          165.0,
+          166
+        ],
+        [
+          131.0,
+          225,
+          229,
+          175,
+          175,
+          150,
+          2,
+          152.2,
+          154
+        ],
+        [
+          131.0,
+          268,
+          270,
+          230,
+          229,
+          178,
+          1,
+          182.1,
+          186
+        ],
+        [
+          131.0,
+          260,
+          260,
+          223,
+          224,
+          176,
+          3,
+          177.8,
+          181
+        ],
+        [
+          131.0,
+          467,
+          467,
+          374,
+          375,
+          298,
+          2,
+          300.6,
+          304
+        ],
+        [
+          213.0,
+          128,
+          133,
+          107,
+          108,
+          81,
+          2,
+          83.3,
+          86
+        ],
+        [
+          213.0,
+          100,
+          101,
+          80,
+          81,
+          65,
+          4,
+          65.8,
+          67
+        ],
+        [
+          213.0,
+          110,
+          111,
+          95,
+          95,
+          76,
+          1,
+          78.1,
+          80
+        ],
+        [
+          213.0,
+          328,
+          328,
+          267,
+          270,
+          208,
+          1,
+          212.5,
+          216
+        ],
+        [
+          232.0,
+          138,
+          139,
+          124,
+          125,
+          106,
+          2,
+          107.4,
+          109
+        ],
+        [
+          232.0,
+          199,
+          199,
+          166,
+          167,
+          131,
+          1,
+          132.7,
+          135
+        ],
+        [
+          232.0,
+          194,
+          195,
+          166,
+          169,
+          132,
+          1,
+          135.5,
+          140
+        ],
+        [
+          232.0,
+          401,
+          402,
+          345,
+          343,
+          277,
+          2,
+          278.6,
+          280
+        ],
+        [
+          321.0,
+          132,
+          133,
+          112,
+          111,
+          87,
+          1,
+          89.2,
+          91
+        ],
+        [
+          321.0,
+          158,
+          158,
+          130,
+          131,
+          99,
+          1,
+          101.0,
+          103
+        ],
+        [
+          321.0,
+          164,
+          167,
+          134,
+          134,
+          108,
+          1,
+          109.8,
+          111
+        ],
+        [
+          321.0,
+          364,
+          365,
+          283,
+          287,
+          226,
+          1,
+          230.7,
+          234
+        ]
+      ],
+      "row_count": 41,
+      "column_count": 9
+    }
+  ]
+}

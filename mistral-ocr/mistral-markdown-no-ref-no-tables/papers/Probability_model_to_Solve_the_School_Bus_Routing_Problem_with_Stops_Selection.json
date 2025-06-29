@@ -1,0 +1,1209 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Probability model to Solve the School Bus Routing Problem with Stops Selection.md",
+    "filename": "Probability model to Solve the School Bus Routing Problem with Stops Selection.md",
+    "title": "Probability model to Solve the School Bus Routing Problem with Stops Selection",
+    "year": "2016"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. B. Minocha and S. Tripathi, \"Solving School Bus Routing Problem Using Hybrid Genetic Algorithm: A Case Study,\" in Proceedings of the Second International Conference on Soft Computing for Problem Solving (SocProS 2012), vol. 236, B. Babu, A. Nagar, K. Deep, M. Pant, J. Bansal, K. Ray, et al., Eds. Springer India, 2012, pp.93-103.\n2. P. Schittekat, J. Kinable, K. Sörensen, M. Sevaux, F. Spieksma and J. Springael, \"A metaheuristic for the school bus routing problem with bus stop selection,\" European Journal of Operational Research, vol. 229, pp. 518-528, 2013.\n3. H. Niu, \"Application of Genetic Algorithm to Optimize Transit Schedule under Time-Dependent Demand,\" in Computational Intelligence for Traffic and Mobility, vol. 8, W. Wang and G. Wets, Eds. Atlantis Press, 2013, pp. 71-88.\n4. O. Díaz-Parra, J. Ruiz-Vanoye, M. Buenabad-Arias and A. Canepa-Saenz, \"Vertical Transfer Algorithm for the School Bus Routing Problem,\" in Transactions on Computational Science XXI, vol. 8160, M. Gavrilova, C. Tan and A. Abraham, Eds. Springer Berlin Heidelberg, 2013, pp. 211-229.\n5. J. Euchi, and R. Mraihi, \"The urban bus routing problem in the Tunisian case by the hybrid artificial ant colony algorithm,\" Swarm and Evolutionary Computation, vol. 2, pp. 15-24, 2012.\n6. J. Pacheco, R. Caballero, M. Laguna, and J. Molina, \"Bi-Objective Bus Routing: An Application to School Buses in Rural Areas,\" Transportation Science, vol. 47(3), pp. 397-411, 2013.\n7. J. Park, and B.I. Kim, \"The school bus routing problem: A review,\" European Journal of Operational Research, vol. 202(2), pp. 311-319, 2010.\n8. L. Wang, S. Wang, Y. Xu, G. Zhou and M. Liu, \"A bi-population based estimation of distribution algorithm for the flexible job-shop scheduling problem,\" Computers and Industrial Engineering, vol. 62, pp. 917-926, 2012.\n9. C. Prins, \"A simple and effective evolutionary algorithm for the vehicle routing problem,\" Computers \\& Operations Research, vol. 31(12), pp. 1985-2002, 2004.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "B. Minocha and S. Tripathi, \"Solving School Bus Routing Problem Using Hybrid Genetic Algorithm: A Case Study,\" in Proceedings of the Second International Conference on Soft Computing for Problem Solving (SocProS 2012), vol. 236, B. Babu, A. Nagar, K. Deep, M. Pant, J. Bansal, K. Ray, et al., Eds. Springer India, 2012, pp.93-103."
+      },
+      {
+        "ref_id": "2",
+        "text": "P. Schittekat, J. Kinable, K. Sörensen, M. Sevaux, F. Spieksma and J. Springael, \"A metaheuristic for the school bus routing problem with bus stop selection,\" European Journal of Operational Research, vol. 229, pp. 518-528, 2013."
+      },
+      {
+        "ref_id": "3",
+        "text": "H. Niu, \"Application of Genetic Algorithm to Optimize Transit Schedule under Time-Dependent Demand,\" in Computational Intelligence for Traffic and Mobility, vol. 8, W. Wang and G. Wets, Eds. Atlantis Press, 2013, pp. 71-88."
+      },
+      {
+        "ref_id": "4",
+        "text": "O. Díaz-Parra, J. Ruiz-Vanoye, M. Buenabad-Arias and A. Canepa-Saenz, \"Vertical Transfer Algorithm for the School Bus Routing Problem,\" in Transactions on Computational Science XXI, vol. 8160, M. Gavrilova, C. Tan and A. Abraham, Eds. Springer Berlin Heidelberg, 2013, pp. 211-229."
+      },
+      {
+        "ref_id": "5",
+        "text": "J. Euchi, and R. Mraihi, \"The urban bus routing problem in the Tunisian case by the hybrid artificial ant colony algorithm,\" Swarm and Evolutionary Computation, vol. 2, pp. 15-24, 2012."
+      },
+      {
+        "ref_id": "6",
+        "text": "J. Pacheco, R. Caballero, M. Laguna, and J. Molina, \"Bi-Objective Bus Routing: An Application to School Buses in Rural Areas,\" Transportation Science, vol. 47(3), pp. 397-411, 2013."
+      },
+      {
+        "ref_id": "7",
+        "text": "J. Park, and B.I. Kim, \"The school bus routing problem: A review,\" European Journal of Operational Research, vol. 202(2), pp. 311-319, 2010."
+      },
+      {
+        "ref_id": "8",
+        "text": "L. Wang, S. Wang, Y. Xu, G. Zhou and M. Liu, \"A bi-population based estimation of distribution algorithm for the flexible job-shop scheduling problem,\" Computers and Industrial Engineering, vol. 62, pp. 917-926, 2012."
+      },
+      {
+        "ref_id": "9",
+        "text": "C. Prins, \"A simple and effective evolutionary algorithm for the vehicle routing problem,\" Computers \\& Operations Research, vol. 31(12), pp. 1985-2002, 2004."
+      }
+    ],
+    "reference_count": 9,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Comparative results for 5 potential stops",
+      "headers": [
+        "id",
+        "stop",
+        "stud",
+        "cap",
+        "wd",
+        "GA",
+        "EDA"
+      ],
+      "rows": [
+        [
+          1,
+          5,
+          25,
+          25,
+          5,
+          140.99,
+          140.99
+        ],
+        [
+          2,
+          5,
+          25,
+          50,
+          5,
+          161.31,
+          161.31
+        ],
+        [
+          3,
+          5,
+          25,
+          25,
+          10,
+          181.27,
+          181.27
+        ],
+        [
+          4,
+          5,
+          25,
+          50,
+          10,
+          194.01,
+          194.01
+        ],
+        [
+          5,
+          5,
+          25,
+          25,
+          20,
+          133.3,
+          133.3
+        ],
+        [
+          6,
+          5,
+          25,
+          50,
+          20,
+          106.0,
+          106.0
+        ],
+        [
+          7,
+          5,
+          25,
+          25,
+          40,
+          36.77,
+          36.77
+        ],
+        [
+          8,
+          5,
+          25,
+          50,
+          40,
+          47.15,
+          47.15
+        ],
+        [
+          9,
+          5,
+          50,
+          25,
+          5,
+          285.8,
+          285.8
+        ],
+        [
+          10,
+          5,
+          50,
+          50,
+          5,
+          197.61,
+          197.61
+        ],
+        [
+          11,
+          5,
+          50,
+          25,
+          10,
+          203.99,
+          203.99
+        ],
+        [
+          12,
+          5,
+          50,
+          50,
+          10,
+          214.64,
+          214.64
+        ],
+        [
+          13,
+          5,
+          50,
+          25,
+          20,
+          129.89,
+          129.89
+        ],
+        [
+          14,
+          5,
+          50,
+          50,
+          20,
+          94.39,
+          94.39
+        ],
+        [
+          15,
+          5,
+          50,
+          25,
+          40,
+          19.95,
+          19.95
+        ],
+        [
+          16,
+          5,
+          50,
+          50,
+          40,
+          30.86,
+          30.86
+        ],
+        [
+          17,
+          5,
+          100,
+          25,
+          5,
+          361.17,
+          361.17
+        ],
+        [
+          18,
+          5,
+          100,
+          50,
+          5,
+          302.2,
+          302.2
+        ],
+        [
+          19,
+          5,
+          100,
+          25,
+          10,
+          295.74,
+          295.74
+        ],
+        [
+          20,
+          5,
+          100,
+          50,
+          10,
+          237.61,
+          237.61
+        ],
+        [
+          21,
+          5,
+          100,
+          25,
+          20,
+          155.9,
+          155.9
+        ],
+        [
+          22,
+          5,
+          100,
+          50,
+          20,
+          158.53,
+          158.53
+        ],
+        [
+          23,
+          5,
+          100,
+          25,
+          40,
+          59.98,
+          75.77
+        ],
+        [
+          24,
+          5,
+          100,
+          50,
+          40,
+          46.74,
+          55.28
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 provides information on the results when there are 10 potential stops. From Table 2 can see how the probability model is able to detect competitive sequences and sometimes getting less time than the genetic algorithm.",
+      "headers": [
+        "id",
+        "stop",
+        "stud",
+        "cap",
+        "wd",
+        "GA",
+        "EDA"
+      ],
+      "rows": [
+        [
+          25,
+          10,
+          50,
+          25,
+          5,
+          253.18,
+          "$\\mathbf{2 5 1 . 9 2}$"
+        ],
+        [
+          26,
+          10,
+          50,
+          50,
+          5,
+          332.09,
+          "$\\mathbf{3 0 7 . 7 9}$"
+        ],
+        [
+          27,
+          10,
+          50,
+          25,
+          10,
+          275.34,
+          "$\\mathbf{2 7 1 . 7 4}$"
+        ],
+        [
+          28,
+          10,
+          50,
+          50,
+          10,
+          325.27,
+          "$\\mathbf{2 9 9 . 0 4}$"
+        ],
+        [
+          29,
+          10,
+          50,
+          25,
+          20,
+          109.82,
+          109.82
+        ],
+        [
+          30,
+          10,
+          50,
+          50,
+          20,
+          195.99,
+          "$\\mathbf{1 5 5 . 3 2}$"
+        ],
+        [
+          31,
+          10,
+          50,
+          25,
+          40,
+          33.25,
+          33.25
+        ],
+        [
+          32,
+          10,
+          50,
+          50,
+          40,
+          67.21,
+          67.21
+        ],
+        [
+          33,
+          10,
+          100,
+          25,
+          5,
+          401.14,
+          "$\\mathbf{4 0 6 . 0 8}$"
+        ],
+        [
+          34,
+          10,
+          100,
+          50,
+          5,
+          312.15,
+          "$\\mathbf{2 9 7 . 3 1}$"
+        ],
+        [
+          35,
+          10,
+          100,
+          25,
+          10,
+          "$\\mathbf{4 0 3 . 3 1}$",
+          407.72
+        ],
+        [
+          36,
+          10,
+          100,
+          50,
+          10,
+          306.42,
+          "$\\mathbf{3 0 5 . 1 2}$"
+        ],
+        [
+          37,
+          10,
+          100,
+          25,
+          20,
+          "$\\mathbf{2 0 1 . 6 3}$",
+          226.59
+        ],
+        [
+          38,
+          10,
+          100,
+          50,
+          20,
+          200.85,
+          200.85
+        ],
+        [
+          39,
+          10,
+          100,
+          25,
+          40,
+          90.9,
+          90.9
+        ],
+        [
+          40,
+          10,
+          100,
+          50,
+          40,
+          54.33,
+          54.33
+        ],
+        [
+          41,
+          10,
+          200,
+          25,
+          5,
+          732.62,
+          732.62
+        ],
+        [
+          42,
+          10,
+          200,
+          50,
+          5,
+          504.18,
+          504.18
+        ],
+        [
+          43,
+          10,
+          200,
+          25,
+          10,
+          517.64,
+          517.64
+        ],
+        [
+          44,
+          10,
+          200,
+          50,
+          10,
+          "$\\mathbf{4 9 0 . 0 6}$",
+          492.43
+        ],
+        [
+          45,
+          10,
+          200,
+          25,
+          20,
+          390.8,
+          390.8
+        ],
+        [
+          46,
+          10,
+          200,
+          50,
+          20,
+          284.12,
+          "$\\mathbf{2 8 3 . 5 6}$"
+        ],
+        [
+          47,
+          10,
+          200,
+          25,
+          40,
+          122.06,
+          122.06
+        ],
+        [
+          48,
+          10,
+          200,
+          50,
+          40,
+          81.73,
+          81.73
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 details the results when there are 20 potential stops. According to the Table 3, the probability model is able to detect competitive sequences and many occasions getting less time than the genetic algorithm.",
+      "headers": [
+        "id",
+        "stop",
+        "stud",
+        "cap",
+        "wd",
+        "GA",
+        "EDA"
+      ],
+      "rows": [
+        [
+          49,
+          20,
+          100,
+          25,
+          5,
+          713.64,
+          "$\\mathbf{6 5 9 . 5 1}$"
+        ],
+        [
+          50,
+          20,
+          100,
+          50,
+          5,
+          671.19,
+          "$\\mathbf{6 0 1 . 8 5}$"
+        ],
+        [
+          51,
+          20,
+          100,
+          25,
+          10,
+          "$\\mathbf{5 3 5 . 1 7}$",
+          559.42
+        ],
+        [
+          52,
+          20,
+          100,
+          50,
+          10,
+          558.57,
+          "$\\mathbf{4 9 4 . 5 0}$"
+        ],
+        [
+          53,
+          20,
+          100,
+          25,
+          20,
+          385.9,
+          "$\\mathbf{3 8 1 . 3 4}$"
+        ],
+        [
+          54,
+          20,
+          100,
+          50,
+          20,
+          223.88,
+          "$\\mathbf{2 2 0 . 3 2}$"
+        ],
+        [
+          55,
+          20,
+          100,
+          25,
+          40,
+          108.15,
+          108.15
+        ],
+        [
+          56,
+          20,
+          100,
+          50,
+          40,
+          46.74,
+          46.74
+        ],
+        [
+          57,
+          20,
+          200,
+          25,
+          5,
+          966.16,
+          "$\\mathbf{9 3 8 . 7 4}$"
+        ],
+        [
+          58,
+          20,
+          200,
+          50,
+          5,
+          657.03,
+          "$\\mathbf{6 0 9 . 3 3}$"
+        ],
+        [
+          59,
+          20,
+          200,
+          25,
+          10,
+          750.58,
+          "$\\mathbf{7 2 4 . 6 5}$"
+        ],
+        [
+          60,
+          20,
+          200,
+          50,
+          10,
+          630.02,
+          "$\\mathbf{6 1 5 . 5 4}$"
+        ],
+        [
+          61,
+          20,
+          200,
+          25,
+          20,
+          608.72,
+          "$\\mathbf{5 5 9 . 4 0}$"
+        ],
+        [
+          62,
+          20,
+          200,
+          50,
+          20,
+          341.25,
+          "$\\mathbf{3 1 8 . 4 9}$"
+        ],
+        [
+          63,
+          20,
+          200,
+          25,
+          40,
+          "$\\mathbf{1 5 3 . 7 5}$",
+          154.58
+        ],
+        [
+          64,
+          20,
+          200,
+          50,
+          40,
+          78.93,
+          78.93
+        ],
+        [
+          65,
+          20,
+          400,
+          25,
+          5,
+          1329.41,
+          1329.41
+        ],
+        [
+          66,
+          20,
+          400,
+          50,
+          5,
+          836.29,
+          "$\\mathbf{8 0 7 . 8 2}$"
+        ],
+        [
+          67,
+          20,
+          400,
+          25,
+          10,
+          1007.8,
+          1007.8
+        ],
+        [
+          68,
+          20,
+          400,
+          50,
+          10,
+          719.19,
+          "$\\mathbf{6 7 2 . 5 5}$"
+        ],
+        [
+          69,
+          20,
+          400,
+          25,
+          20,
+          "$\\mathbf{9 1 8 . 3 1}$",
+          920.04
+        ],
+        [
+          70,
+          20,
+          400,
+          50,
+          20,
+          460.24,
+          "$\\mathbf{4 2 5 . 9 4}$"
+        ],
+        [
+          71,
+          20,
+          400,
+          25,
+          40,
+          280.07,
+          280.07
+        ],
+        [
+          72,
+          20,
+          400,
+          50,
+          40,
+          "$\\mathbf{1 1 8 . 3 3}$",
+          122.49
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "Comparative results for 40 potential stops",
+      "headers": [
+        "id",
+        "stop",
+        "stud",
+        "cap",
+        "wd",
+        "GA",
+        "EDA"
+      ],
+      "rows": [
+        [
+          73,
+          40,
+          200,
+          25,
+          5,
+          1414.2,
+          "$\\mathbf{1 3 5 1 . 8 4}$"
+        ],
+        [
+          74,
+          40,
+          200,
+          50,
+          5,
+          1254.45,
+          "$\\mathbf{1 1 8 3 . 6 0}$"
+        ],
+        [
+          75,
+          40,
+          200,
+          25,
+          10,
+          1191.57,
+          "$\\mathbf{1 0 8 7 . 1 4}$"
+        ],
+        [
+          76,
+          40,
+          200,
+          50,
+          10,
+          916.95,
+          "$\\mathbf{8 5 8 . 1 4}$"
+        ],
+        [
+          77,
+          40,
+          200,
+          25,
+          20,
+          584.5,
+          "$\\mathbf{5 4 7 . 9 8}$"
+        ],
+        [
+          78,
+          40,
+          200,
+          50,
+          20,
+          429.42,
+          "$\\mathbf{3 8 3 . 7 3}$"
+        ],
+        [
+          79,
+          40,
+          200,
+          25,
+          40,
+          "$\\mathbf{1 6 0 . 3 5}$",
+          163.88
+        ],
+        [
+          80,
+          40,
+          200,
+          50,
+          40,
+          111.3,
+          111.3
+        ],
+        [
+          81,
+          40,
+          400,
+          25,
+          5,
+          1775.8,
+          "$\\mathbf{1 7 0 3 . 8 6}$"
+        ],
+        [
+          82,
+          40,
+          400,
+          50,
+          5,
+          1523.28,
+          "$\\mathbf{1 4 6 2 . 3 0}$"
+        ],
+        [
+          83,
+          40,
+          400,
+          25,
+          10,
+          1222.86,
+          "$\\mathbf{1 2 0 5 . 6 2}$"
+        ],
+        [
+          84,
+          40,
+          400,
+          50,
+          10,
+          1310.81,
+          "$\\mathbf{1 2 1 1 . 9 3}$"
+        ],
+        [
+          85,
+          40,
+          400,
+          25,
+          20,
+          957.39,
+          "$\\mathbf{9 1 9 . 5 0}$"
+        ],
+        [
+          86,
+          40,
+          400,
+          50,
+          20,
+          726.32,
+          "$\\mathbf{6 7 9 . 6 7}$"
+        ],
+        [
+          87,
+          40,
+          400,
+          25,
+          40,
+          299.85,
+          299.85
+        ],
+        [
+          88,
+          40,
+          400,
+          50,
+          40,
+          "$\\mathbf{1 0 6 . 9 3}$",
+          107.14
+        ],
+        [
+          89,
+          40,
+          800,
+          25,
+          5,
+          2982.74,
+          "$\\mathbf{2 9 8 0 . 9 9}$"
+        ],
+        [
+          90,
+          40,
+          800,
+          50,
+          5,
+          1823.2,
+          "$\\mathbf{1 7 2 1 . 5 3}$"
+        ],
+        [
+          91,
+          40,
+          800,
+          25,
+          10,
+          2527.08,
+          "$\\mathbf{2 4 5 8 . 1 4}$"
+        ],
+        [
+          92,
+          40,
+          800,
+          50,
+          10,
+          1398.47,
+          "$\\mathbf{1 3 4 8 . 7 2}$"
+        ],
+        [
+          93,
+          40,
+          800,
+          25,
+          20,
+          1672.09,
+          "$\\mathbf{1 6 6 2 . 7 0}$"
+        ],
+        [
+          94,
+          40,
+          800,
+          50,
+          20,
+          1048.45,
+          "$\\mathbf{1 0 1 5 . 1 4}$"
+        ],
+        [
+          95,
+          40,
+          800,
+          25,
+          40,
+          451.63,
+          451.63
+        ],
+        [
+          96,
+          40,
+          800,
+          50,
+          40,
+          342.94,
+          "$\\mathbf{3 3 7 . 2 8}$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 provides the results when there are 80 potential stops. From Table 5 can see how the probability model is able to detect competitive sequences and almost always getting less time than the genetic algorithm.",
+      "headers": [
+        "id",
+        "stop",
+        "stud",
+        "cap",
+        "wd",
+        "GA",
+        "EDA"
+      ],
+      "rows": [
+        [
+          97,
+          80,
+          400,
+          25,
+          5,
+          3183.28,
+          "$\\mathbf{2 9 7 1 . 7 6}$"
+        ],
+        [
+          98,
+          80,
+          400,
+          50,
+          5,
+          3206.93,
+          "$\\mathbf{3 0 3 7 . 0 8}$"
+        ],
+        [
+          99,
+          80,
+          400,
+          25,
+          10,
+          2308.92,
+          "$\\mathbf{2 2 1 5 . 6 7}$"
+        ],
+        [
+          100,
+          80,
+          400,
+          50,
+          10,
+          1751.58,
+          "$\\mathbf{1 7 2 8 . 2 0}$"
+        ],
+        [
+          101,
+          80,
+          400,
+          25,
+          20,
+          1228.6,
+          "$\\mathbf{1 1 8 0 . 8 8}$"
+        ],
+        [
+          102,
+          80,
+          400,
+          50,
+          20,
+          765.17,
+          "$\\mathbf{7 5 3 . 6 8}$"
+        ],
+        [
+          103,
+          80,
+          400,
+          25,
+          40,
+          277.24,
+          "$\\mathbf{2 7 5 . 9 5}$"
+        ],
+        [
+          104,
+          80,
+          400,
+          50,
+          40,
+          "$\\mathbf{1 6 4 . 8 4}$",
+          165.01
+        ],
+        [
+          105,
+          80,
+          800,
+          25,
+          5,
+          3792.85,
+          "$\\mathbf{3 7 0 8 . 1 8}$"
+        ],
+        [
+          106,
+          80,
+          800,
+          50,
+          5,
+          3119.84,
+          "$\\mathbf{3 0 3 3 . 8 1}$"
+        ],
+        [
+          107,
+          80,
+          800,
+          25,
+          10,
+          2777.51,
+          "$\\mathbf{2 7 1 3 . 7 5}$"
+        ],
+        [
+          108,
+          80,
+          800,
+          50,
+          10,
+          2225.75,
+          "$\\mathbf{2 1 5 8 . 8 7}$"
+        ],
+        [
+          109,
+          80,
+          800,
+          25,
+          20,
+          2037.22,
+          "$\\mathbf{1 9 6 4 . 9 1}$"
+        ],
+        [
+          110,
+          80,
+          800,
+          50,
+          20,
+          1292.76,
+          "$\\mathbf{1 1 8 3 . 4 4}$"
+        ],
+        [
+          111,
+          80,
+          800,
+          25,
+          40,
+          "$\\mathbf{4 8 0 . 2 4}$",
+          485.03
+        ],
+        [
+          112,
+          80,
+          800,
+          50,
+          40,
+          271.94,
+          "$\\mathbf{2 7 1 . 7 7}$"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 7
+    },
+    {
+      "table_number": "6",
+      "table_title": "Hypothesis testing between algorithms",
+      "headers": [
+        "Stops",
+        "t-test",
+        "t- <br> critical",
+        "$\\mu \\mathrm{GA}$",
+        "$\\mu \\mathrm{EDA}$",
+        "$\\sigma \\mathrm{GA}$",
+        "$\\sigma \\mathrm{EDA}$"
+      ],
+      "rows": [
+        [
+          5,
+          0.037,
+          0.063,
+          158.16,
+          159.17,
+          94.43,
+          93.34
+        ],
+        [
+          10,
+          0.036,
+          0.063,
+          278.59,
+          276.75,
+          175.77,
+          175.09
+        ],
+        [
+          "$\\mathbf{2 0}$",
+          "$\\mathbf{0 . 1 9 9 +}$",
+          0.063,
+          545.81,
+          526.57,
+          336.92,
+          330.88
+        ],
+        [
+          "$\\mathbf{4 0}$",
+          "$\\mathbf{0 . 1 9 1 +}$",
+          0.063,
+          1093.02,
+          1052.23,
+          744.19,
+          730.02
+        ],
+        [
+          "$\\mathbf{8 0}$",
+          "$\\mathbf{0 . 1 5 5 +}$",
+          0.0632,
+          1805.29,
+          1740.5,
+          1205.1,
+          1157.52
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/An Interactive Estimation of the Distribution Algorithm Integrated with Surrogate-Assisted Fitness.md",
+    "filename": "An Interactive Estimation of the Distribution Algorithm Integrated with Surrogate-Assisted Fitness.md",
+    "title": "An Interactive Estimation of the Distribution Algorithm Integrated with Surrogate-Assisted Fitness",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Literature on the EDA probability model and surrogate-assisted fitness evaluation.",
+      "headers": [
+        "References",
+        "Algorithms",
+        "Problems"
+      ],
+      "rows": [
+        [
+          0.13,
+          "DE/AEDA",
+          "Differential evolution strategy and adaptive learning rate mechanism are integrated into EDA"
+        ],
+        [
+          -0.14,
+          "HMEDA",
+          "Mallows distribution probability model"
+        ],
+        [
+          -15,
+          "QCEDA",
+          "Probability model uses a distance-based ranking model and the moth-flame algorithm."
+        ],
+        [
+          0.16,
+          "RBF-IEDA",
+          "Surrogate-assisted fitness evaluation-based RBF"
+        ],
+        [
+          0.17,
+          "APL-IEC",
+          "Algorithmic probability IEC"
+        ],
+        [
+          0.18,
+          "LMIEDA",
+          "Language model-based IEDA"
+        ],
+        [
+          0.19,
+          "RBM-EDA",
+          "Surrogate-assisted fitness evaluation-based RBM"
+        ],
+        [
+          "Dewancker, I. et al. [20]",
+          "Active Utility Function Preference Learning",
+          "Utility function learning"
+        ],
+        [
+          21,
+          "AEDA",
+          "EDA plus a lottery procedure, an elitism strategy, and a neighborhood search"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "The meanings of variables.",
+      "headers": [
+        "$N$",
+        "Population size"
+      ],
+      "rows": [
+        [
+          "$X_{i}$",
+          "Individual $i$ in the population"
+        ],
+        [
+          "$x_{i}$",
+          "The $i$-th decision variable of individual $X$"
+        ],
+        [
+          "$c$",
+          "Number of decision variables"
+        ],
+        [
+          "$x_{i, i_{h}}$",
+          "The $i_{m}$-th attribute value of decision variable $x_{i}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Cont.",
+      "headers": [
+        "$m$",
+        "Number of attribute values"
+      ],
+      "rows": [
+        [
+          "$P$",
+          "Set of individual attribute values"
+        ],
+        [
+          "$X_{x}$",
+          "Optimal individual (specific individual)"
+        ],
+        [
+          "$U(p)$",
+          "Utility function of attribute $p$"
+        ],
+        [
+          "$N c$",
+          "Number of user evaluations of individuals"
+        ],
+        [
+          "$\\tilde{f}\\left(X_{i}\\right)$",
+          "Fitness value of individual $X_{i}$"
+        ],
+        [
+          "$t\\left(X_{j}\\right)$",
+          "Evaluation time for individual $X_{j}$"
+        ],
+        [
+          "$\\mu\\left(x_{i}=x_{i, i_{h}}\\right)$",
+          "Phenotypic similarity when the value of decision variable $x_{i}$ is $x_{i, i_{h}}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "The metric values obtained using SAF-IEDA when $\\lambda=2.3$.",
+      "headers": [
+        "Users",
+        "Evolutionary <br> Generation",
+        "Fitness of <br> Top-Nc",
+        "$D_{\\text {NBS }}$",
+        "Runtime (s)",
+        "NOS",
+        "SR (\\%)"
+      ],
+      "rows": [
+        [
+          1,
+          "$7.7(1.033)$",
+          "$95.70(3.561)$",
+          "$4.33(0.687)$",
+          "$181.30(20.548)$",
+          "$167(11.253)$",
+          "$96.24(0.405)$"
+        ],
+        [
+          2,
+          "$7.3(0.816)$",
+          "$94.56(2.351)$",
+          "$5.71(0.592)$",
+          "$188.56(22.562)$",
+          "$162(13.052)$",
+          "$95.62(0.561)$"
+        ],
+        [
+          3,
+          "$7.0(0.876)$",
+          "$95.21(2.803)$",
+          "$4.04(0.754)$",
+          "$179.63(19.554)$",
+          "$165(12.455)$",
+          "$96.53(0.684)$"
+        ],
+        [
+          4,
+          "$7.4(0.948)$",
+          "$96.89(3.149)$",
+          "$4.31(0.653)$",
+          "$168.37(18.615)$",
+          "$182(14.027)$",
+          "$96.37(0.515)$"
+        ],
+        [
+          5,
+          "$7.0(0.994)$",
+          "$96.43(3.153)$",
+          "$3.65(0.626)$",
+          "$175.48(18.327)$",
+          "$172(13.587)$",
+          "$95.75(0.632)$"
+        ],
+        [
+          6,
+          "$7.6(0.949)$",
+          "$95.82(2.362)$",
+          "$4.28(0.654)$",
+          "$187.56(22.355)$",
+          "$166(14.396)$",
+          "$95.83(0.426)$"
+        ],
+        [
+          7,
+          "$7.4(0.843)$",
+          "$96.87(3.257)$",
+          "$5.23(0.735)$",
+          "$194.25(22.452)$",
+          "$189(12.473)$",
+          "$95.85(0.654)$"
+        ],
+        [
+          8,
+          "$7.5(0.738)$",
+          "$97.02(1.758)$",
+          "$3.36(0.593)$",
+          "$186.56(20.354)$",
+          "$192(12.951)$",
+          "$96.58(0.488)$"
+        ],
+        [
+          9,
+          "$7.7(0.865)$",
+          "$96.26(2.354)$",
+          "$4.56(0.827)$",
+          "$179.19(24.228)$",
+          "$176(11.558)$",
+          "$95.51(0.584)$"
+        ],
+        [
+          10,
+          "$7.3(0.952)$",
+          "$97.28(12.528)$",
+          "$4.27(0.774)$",
+          "$167.63(15.736)$",
+          "$187(13.825)$",
+          "$96.46(0.752)$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 7
+    },
+    {
+      "table_number": "4",
+      "table_title": "The results of Wilcoxon signed-rank test.",
+      "headers": [
+        "Algorithms",
+        "Evolutionary <br> Generation",
+        "Fitness of <br> Top-Nc",
+        "$D_{\\text {NBS }}$",
+        "Runtime (s)",
+        "NOS",
+        "SR (\\%)"
+      ],
+      "rows": [
+        [
+          "IGA vs. SAF-IEDA",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "Kano-IGA vs. SAF-IEDA",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "BP-IGA vs. SAF-IEDA",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        [
+          "RBF-IEDA vs. SAF-IEDA",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Analysis of evolutionary indicators using different methods.",
+      "headers": [
+        "Independent Sample Test $p$-Value (Two-Sided)",
+        "Evolutionary Generation",
+        "Fitness of Top-Nc",
+        "$D_{\\text {NBS }}$",
+        "Runtime (s)",
+        "NOS"
+      ],
+      "rows": [
+        [
+          "",
+          "SAF-IEDA",
+          "SAF-IEDA",
+          "SAF-IEDA",
+          "SAF-IEDA",
+          "SAF-IEDA"
+        ],
+        [
+          "Kano-IGA",
+          0.018,
+          0.023,
+          0.028,
+          0.017,
+          0.001
+        ],
+        [
+          "BP-IGA",
+          0.037,
+          0.033,
+          0.02,
+          0.003,
+          0.012
+        ],
+        [
+          "RBF-IEDA",
+          0.028,
+          0.032,
+          0.042,
+          0.035,
+          0.014
+        ],
+        [
+          "IGA",
+          0.013,
+          0.028,
+          0.039,
+          0.016,
+          0.028
+        ],
+        [
+          "Levene test for equality of variances",
+          "$\\{0.352,0.637$,",
+          "$\\{0.385,0.417$,",
+          "$\\{0.753,0.525$,",
+          "$\\{0259,0.450$,",
+          "$\\{0.204,0.198$,"
+        ],
+        [
+          "",
+          0.256382,
+          "0.228, 0.673\\}",
+          "0.257, 0.702\\}",
+          "0.441, 0.335\\}",
+          "0.657, 0.284\\}"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    }
+  ]
+}

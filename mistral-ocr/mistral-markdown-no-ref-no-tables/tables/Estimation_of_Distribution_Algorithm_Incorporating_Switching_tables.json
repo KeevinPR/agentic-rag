@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Estimation of Distribution Algorithm Incorporating Switching.md",
+    "filename": "Estimation of Distribution Algorithm Incorporating Switching.md",
+    "title": "Estimation of Distribution Algorithm Incorporating Switching",
+    "year": "2010"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Operation of processes in SEDA.",
+      "headers": [
+        "step",
+        "process"
+      ],
+      "rows": [
+        [
+          1,
+          "Set $t=0$, randomly generate initial population $P(0)$, <br> clear the switching flag."
+        ],
+        [
+          2,
+          "Select a set of promising individuals $S(t)$ from $P(t)$."
+        ],
+        [
+          3,
+          "Construct the Bayesian network $B$ on $S(t)$."
+        ],
+        [
+          4,
+          "Generate a set of new individuals $O(t)$ according to <br> distribution $p(X)$ based on $B$."
+        ],
+        [
+          5,
+          9.0
+        ],
+        [
+          6,
+          "Select a set of promising individuals $Q(t)$ from $P(t)$."
+        ],
+        [
+          7,
+          "Create a new population $Q^{\\prime}(t)$ by applying crossover <br> to $Q(t)$."
+        ],
+        [
+          8,
+          "Create a new population $P(t+1)$ by applying mutation <br> to $Q^{\\prime}(t)$, set $t=t+1$."
+        ],
+        [
+          9,
+          10.0
+        ],
+        [
+          10,
+          "If the switching flag is cleared and the switching cri- <br> terion (EDA $\\rightarrow$ GA) is satisfied, set the switching flag. <br> If the switching flag is set and the switching criterion <br> (GA $\\rightarrow$ EDA) is satisfied, clear the switching flag."
+        ],
+        [
+          11,
+          "If the switching flag is cleared, return to step 2. <br> If the switching flag is set, return to step 6."
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    }
+  ]
+}

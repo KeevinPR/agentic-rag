@@ -1,0 +1,36 @@
+/* Make the logo bigger */
+.cl-logo {
+    max-height: none !important;
+    height: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 2rem !important;
+}
+
+/* Enlarge starter cards/buttons */
+.cl-starter,
+.cl-starter-card,
+.cl-starter__button {
+    font-size: 1.3rem !important;
+    padding: 2rem 2.5rem !important;
+    min-width: 260px !important;
+    min-height: 100px !important;
+    border-radius: 1.5rem !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cl-starter__icon,
+.cl-starter-card__icon {
+    width: 48px !important;
+    height: 48px !important;
+    margin-bottom: 0.5rem !important;
+}
+
+img[src*="logo"] {
+    height: auto !important;
+    width: auto !important;
+    max-height: 300px !important;
+    /* increase from 120px */
+    max-width: 100% !important;
+}

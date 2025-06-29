@@ -1,0 +1,290 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/Bayesian Optimization Algorithm for the Non-unique Oligonucleotide Probe Selection Problem.md",
+    "filename": "Bayesian Optimization Algorithm for the Non-unique Oligonucleotide Probe Selection Problem.md",
+    "title": "Bayesian Optimization Algorithm for the Non-unique Oligonucleotide Probe Selection Problem",
+    "year": "2009"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Sample Target-probe incidence matrix",
+      "headers": [
+        "",
+        "$p_{1}$",
+        "$p_{2}$",
+        "$p_{3}$",
+        "$p_{4}$",
+        "$p_{5}$"
+      ],
+      "rows": [
+        [
+          "$t_{1}$",
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          "$t_{2}$",
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          "$t_{3}$",
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Coverage function table: $C$ has been caculated based on the DRC definition, and $C^{\\prime}$ based on the SDRC definition",
+      "headers": [
+        "",
+        "$p_{1}$",
+        "$p_{2}$",
+        "$p_{3}$",
+        "$p_{4}$",
+        "$p_{5}$",
+        "$p_{6}$"
+      ],
+      "rows": [
+        [
+          "$t_{1}$",
+          "$\\frac{c_{\\min }}{3}$",
+          "$\\frac{c_{\\min }}{3}$",
+          0,
+          "$\\frac{c_{\\min }}{3}$",
+          0,
+          "$\\frac{c_{\\min }}{3}$"
+        ],
+        [
+          "$t_{2}$",
+          "$\\frac{c_{\\min }}{3}$",
+          0,
+          "$\\frac{c_{\\min }}{3}$",
+          0,
+          0,
+          "$\\frac{c_{\\min }}{3}$"
+        ],
+        [
+          "$t_{3}$",
+          0,
+          "$\\frac{c_{\\min }}{5}$",
+          "$\\frac{c_{\\min }}{5}$",
+          "$\\frac{c_{\\min }}{5}$",
+          "$\\frac{c_{\\min }}{5}$",
+          "$\\frac{c_{\\min }}{5}$"
+        ],
+        [
+          "$t_{4}$",
+          0,
+          0,
+          "$\\frac{c_{\\min }}{3}$",
+          "$\\frac{c_{\\min }}{3}$",
+          "$\\frac{c_{\\min }}{3}$",
+          0
+        ],
+        [
+          "$C^{\\prime}$",
+          "$\\frac{c_{\\min }}{3}$",
+          "$\\frac{c_{\\min }}{3}$",
+          "$\\frac{c_{\\min }}{3}$",
+          "$\\frac{c_{\\min }}{3}$",
+          "$\\frac{c_{\\min }}{3}$",
+          "$\\frac{c_{\\min }}{3}$"
+        ],
+        [
+          "$C^{\\prime}$",
+          "$\\frac{c_{\\min }}{12}$",
+          "$\\frac{c_{\\min }}{20}$",
+          "$\\frac{c_{\\min }}{12}$",
+          "$\\frac{c_{\\min }}{20}$",
+          "$\\frac{c_{\\min }}{12}$",
+          "$\\frac{37 c_{\\min }}{60}$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "Separation function table: $S$ has been calculated based on the DRC definition, and $S^{\\prime}$ based on the SDRC definition",
+      "headers": [
+        "",
+        "$p_{1}$",
+        "$p_{2}$",
+        "$p_{3}$",
+        "$p_{4}$",
+        "$p_{5}$",
+        "$p_{6}$"
+      ],
+      "rows": [
+        [
+          "$t_{12}$",
+          0,
+          "$\\frac{s_{\\text {min }}}{3}$",
+          "$\\frac{s_{\\text {min }}}{3}$",
+          "$\\frac{s_{\\text {min }}}{3}$",
+          0,
+          0
+        ],
+        [
+          "$t_{13}$",
+          "$\\frac{s_{\\text {min }}}{3}$",
+          0,
+          "$\\frac{s_{\\text {min }}}{3}$",
+          0,
+          "$\\frac{s_{\\text {min }}}{3}$",
+          0
+        ],
+        [
+          "$t_{14}$",
+          "$\\frac{s_{\\text {min }}}{5}$",
+          "$\\frac{s_{\\text {min }}}{5}$",
+          "$\\frac{s_{\\text {min }}}{5}$",
+          0,
+          "$\\frac{s_{\\text {min }}}{5}$",
+          "$\\frac{s_{\\text {min }}}{5}$"
+        ],
+        [
+          "$t_{23}$",
+          "$\\frac{s_{\\text {min }}}{4}$",
+          "$\\frac{s_{\\text {min }}}{4}$",
+          0,
+          "$\\frac{s_{\\text {min }}}{4}$",
+          "$\\frac{s_{\\text {min }}}{4}$",
+          0
+        ],
+        [
+          "$t_{24}$",
+          "$\\frac{s_{\\text {min }}}{4}$",
+          0,
+          0,
+          "$\\frac{s_{\\text {min }}}{4}$",
+          "$\\frac{s_{\\text {min }}}{4}$",
+          "$\\frac{s_{\\text {min }}}{4}$"
+        ],
+        [
+          "$t_{34}$",
+          0,
+          "$\\frac{s_{\\text {min }}}{2}$",
+          0,
+          0,
+          0,
+          "$\\frac{s_{\\text {min }}}{2}$"
+        ],
+        [
+          "$S$",
+          "$\\frac{s_{\\text {min }}}{3}$",
+          "$\\frac{s_{\\text {min }}}{2}$",
+          "$\\frac{s_{\\text {min }}}{3}$",
+          "$\\frac{s_{\\text {min }}}{3}$",
+          "$\\frac{s_{\\text {min }}}{3}$",
+          "$\\frac{s_{\\text {min }}}{2}$"
+        ],
+        [
+          "$S^{\\prime}$",
+          "$\\frac{31 s_{\\text {min }}}{30}$",
+          "$\\frac{77 s_{\\text {min }}}{60}$",
+          "$\\frac{13 s_{\\text {min }}}{15}$",
+          "$\\frac{5 s_{\\text {min }}}{6}$",
+          "$\\frac{31 s_{\\text {min }}}{30}$",
+          "$\\frac{10 s_{\\text {min }}}{20}$"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Comparison between BOA+DRC and ILP, OCP, and DRC-GA: Number of datasets for which our approach has obtained results better or worse than or equal to methods ILP, OCP, and DRC-GA. In the column average, the average of improvements of our approach (illustrated in last three columns of Table 4) is presented.",
+      "headers": [
+        "",
+        "Worse Equal",
+        "",
+        "Better Average",
+        ""
+      ],
+      "rows": [
+        [
+          "ILP",
+          2,
+          0,
+          8,
+          "$-3.36$"
+        ],
+        [
+          "OCP",
+          5,
+          0,
+          7,
+          "$-0.33$"
+        ],
+        [
+          "GA-DRC",
+          0,
+          5,
+          7,
+          "$-0.36$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Cardinality of minimal probe set for DRC+BOA: the experiment was repeated in order to investigate the effect of increasing the dependency parameter $(k)$. By gen in the table, we mean the number of iterative steps of BOA to converge.",
+      "headers": [
+        "Set",
+        "$k=2$",
+        "$k=3$",
+        "$k=4$"
+      ],
+      "rows": [
+        [
+          1,
+          50226,
+          50217,
+          50219
+        ],
+        [
+          2,
+          49021,
+          49020,
+          49015
+        ],
+        [
+          3,
+          53324,
+          53319,
+          53317
+        ],
+        [
+          4,
+          53720,
+          53717,
+          53722
+        ],
+        [
+          5,
+          52816,
+          52813,
+          52815
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    }
+  ]
+}

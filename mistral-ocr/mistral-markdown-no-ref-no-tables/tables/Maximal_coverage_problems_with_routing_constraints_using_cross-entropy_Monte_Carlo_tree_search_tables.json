@@ -1,0 +1,419 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2024/Maximal coverage problems with routing constraints using cross-entropy Monte Carlo tree search.md",
+    "filename": "Maximal coverage problems with routing constraints using cross-entropy Monte Carlo tree search.md",
+    "title": "Maximal coverage problems with routing constraints using cross-entropy Monte Carlo tree search",
+    "year": "2024"
+  },
+  "tables": [
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The parameters of CE-MCTS and drone hardware setup",
+      "headers": [
+        "Parameter",
+        "Description",
+        "Value"
+      ],
+      "rows": [
+        [
+          "$\\rho$",
+          "Elites rate",
+          0.02
+        ],
+        [
+          "$\\alpha$",
+          "Adaption rate",
+          0.1
+        ],
+        [
+          "$k$",
+          "CEM termination",
+          5
+        ],
+        [
+          "Altitude",
+          "Flight altitude",
+          "$1(\\mathrm{~m})$"
+        ],
+        [
+          "$\\omega_{\\max }$",
+          "Limitation of angular velocity",
+          "$35\\left({ }^{\\circ} / \\mathrm{s}\\right)$"
+        ],
+        [
+          "$v_{\\max }$",
+          "Limitation of linear velocity",
+          "$1(\\mathrm{~m} / \\mathrm{s})$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 The mean of successful search time in EX2",
+      "headers": [
+        "Location",
+        "CE-MCTS",
+        "EAMC",
+        "GCB"
+      ],
+      "rows": [
+        [
+          "$\\# 1$",
+          "$\\mathbf{5 3 . 6 3}$ (s)",
+          "-",
+          63.97
+        ],
+        [
+          "$\\# 2$",
+          "$\\mathbf{6 8 . 2 2}$",
+          89.2,
+          76.52
+        ],
+        [
+          "$\\# 3$",
+          84.01,
+          "$\\mathbf{7 4 . 1 1}$",
+          88.23
+        ],
+        [
+          "$\\# 4$",
+          93.09,
+          "$\\mathbf{5 7 . 9 9}$",
+          109.37
+        ],
+        [
+          "$\\# 5$",
+          41.21,
+          "$\\mathbf{3 7 . 8 5}$",
+          59.6
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 The mean of failed search time in EX2",
+      "headers": [
+        "Location",
+        "CE-MCTS",
+        "EAMC",
+        "GCB"
+      ],
+      "rows": [
+        [
+          "$\\# 1$",
+          "-",
+          108.4,
+          "-"
+        ],
+        [
+          "$\\# 2$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\# 3$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\# 4$",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "$\\# 5$",
+          "-",
+          "-",
+          107.24
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 The success rate for detection results of EX2",
+      "headers": [
+        "Location",
+        "CE-MCTS (\\%)",
+        "EAMC (\\%)",
+        "GCB (\\%)"
+      ],
+      "rows": [
+        [
+          1,
+          100,
+          0,
+          100
+        ],
+        [
+          2,
+          100,
+          100,
+          100
+        ],
+        [
+          3,
+          100,
+          100,
+          100
+        ],
+        [
+          4,
+          100,
+          100,
+          100
+        ],
+        [
+          5,
+          100,
+          100,
+          40
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 The average flight time",
+      "headers": [
+        "",
+        "CE-MCTS",
+        "EAMC",
+        "GCB"
+      ],
+      "rows": [
+        [
+          "Mean (s)",
+          "$\\mathbf{6 8 . 0 3}$",
+          73.51,
+          85.26
+        ],
+        [
+          "Std",
+          21.17,
+          25.24,
+          18.83
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 The coverage results of EX3-2 in MAP4 under cardinality case $^{4}$",
+      "headers": [
+        "",
+        "Generation",
+        "1",
+        "10",
+        "15",
+        "Result"
+      ],
+      "rows": [
+        [
+          420,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          16,
+          0.9232,
+          "$\\mathbf{0 . 9 4 3 1}$",
+          "$\\mathbf{0 . 9 4 3 1}$",
+          "$\\mathbf{0 . 9 4 3 1}$"
+        ],
+        [
+          "EAMC",
+          15,
+          0.9113,
+          "$\\mathbf{0 . 9 4 3 1}$",
+          "$\\mathbf{0 . 9 4 3 1}$",
+          "$\\mathbf{0 . 9 4 3 1}$"
+        ],
+        [
+          "GCB",
+          "$*$",
+          "$\\mathbf{0 . 9 2 5 0}$",
+          "-",
+          "-",
+          0.925
+        ],
+        [
+          430,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          15,
+          0.9937,
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "$\\mathbf{0 . 9 9 4 9}$"
+        ],
+        [
+          "EAMC",
+          15,
+          0.9733,
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "$\\mathbf{0 . 9 9 4 9}$"
+        ],
+        [
+          "GCB",
+          "$*$",
+          "$\\mathbf{0 . 9 9 4 9}$",
+          "-",
+          "-",
+          0.9949
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 The coverage results of EX3-2 in MAP4 under routing case",
+      "headers": [
+        "",
+        "Generation",
+        "1",
+        "10",
+        "15",
+        "Result"
+      ],
+      "rows": [
+        [
+          41000,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          14,
+          "$\\mathbf{0 . 6 6 8 9}$",
+          "$\\mathbf{0 . 6 7 4 8}$",
+          "-",
+          "$\\mathbf{0 . 6 7 4 8}$"
+        ],
+        [
+          "EAMC",
+          24,
+          0.601,
+          0.6623,
+          "$\\mathbf{0 . 6 7 4 8}$",
+          "$\\mathbf{0 . 6 7 4 8}$"
+        ],
+        [
+          "GCB",
+          "$*$",
+          0.5186,
+          "-",
+          "-",
+          0.5186
+        ],
+        [
+          42000,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          19,
+          "$\\mathbf{0 . 9 3 1 1}$",
+          "$\\mathbf{0 . 9 4 4 0}$",
+          "$\\mathbf{0 . 9 4 4 0}$",
+          "$\\mathbf{0 . 9 4 4 0}$"
+        ],
+        [
+          "EAMC",
+          21,
+          0.916,
+          0.9434,
+          "$\\mathbf{0 . 9 4 4 0}$",
+          "$\\mathbf{0 . 9 4 4 0}$"
+        ],
+        [
+          "GCB",
+          "$*$",
+          0.8867,
+          "-",
+          "-",
+          0.8867
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 The computation time result of EX4 and the unit is seconds",
+      "headers": [
+        "",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "rows": [
+        [
+          1000,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CE-MCTS",
+          286.2,
+          381.7,
+          469.3,
+          643.9,
+          806.1
+        ],
+        [
+          "EAMC",
+          13.4,
+          14.3,
+          17.7,
+          25.9,
+          32.1
+        ],
+        [
+          "GCB",
+          0.2,
+          0.2,
+          0.2,
+          0.3,
+          0.3
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    }
+  ]
+}

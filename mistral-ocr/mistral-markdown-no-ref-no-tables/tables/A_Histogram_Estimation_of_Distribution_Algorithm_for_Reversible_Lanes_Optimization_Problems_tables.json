@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/A Histogram Estimation of Distribution Algorithm for Reversible Lanes Optimization Problems.md",
+    "filename": "A Histogram Estimation of Distribution Algorithm for Reversible Lanes Optimization Problems.md",
+    "title": "A Histogram Estimation of Distribution Algorithm for Reversible Lanes Optimization Problems",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "PARSHUPTIES SETTINGS",
+      "headers": [
+        "Acconetive",
+        "G",
+        "M",
+        "m",
+        "$\\alpha$",
+        "$n_{i}$",
+        "$n_{p}$"
+      ],
+      "rows": [
+        [
+          "HEDA",
+          100,
+          200,
+          50,
+          0.5,
+          "$/$",
+          "$/$"
+        ],
+        [
+          "GA",
+          100,
+          200,
+          "$/$",
+          "$/$",
+          0.7,
+          0.07
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": "II",
+      "table_title": "NUMBER AL. TRAFFE NOTWORF DATA",
+      "headers": [
+        "Roadway",
+        "$\\underline{t 2}$",
+        "$\\underline{\\boldsymbol{x}}_{\\boldsymbol{o}}$",
+        "$\\boldsymbol{n}_{\\boldsymbol{o}}$"
+      ],
+      "rows": [
+        [
+          2,
+          0.06,
+          10,
+          4
+        ],
+        [
+          17,
+          0.04,
+          2.5,
+          1
+        ],
+        [
+          35,
+          0.05,
+          5,
+          2
+        ],
+        [
+          410,
+          0.1,
+          10,
+          4
+        ],
+        [
+          614,
+          0.02,
+          5,
+          2
+        ],
+        [
+          811,
+          0.08,
+          2.5,
+          1
+        ],
+        [
+          917,
+          0.03,
+          7.5,
+          3
+        ],
+        [
+          1215,
+          0.02,
+          5,
+          2
+        ],
+        [
+          1319,
+          0.04,
+          5,
+          2
+        ],
+        [
+          1622,
+          0.05,
+          5,
+          2
+        ],
+        [
+          1820,
+          0.05,
+          7.5,
+          3
+        ],
+        [
+          2123,
+          0.04,
+          7.5,
+          3
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "O-D Path M-19IY",
+      "headers": [
+        "",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "rows": [
+        [
+          0,
+          "",
+          0.9,
+          0.29,
+          0.93,
+          0.8,
+          0.87,
+          0.99,
+          0.02,
+          3.04
+        ],
+        [
+          1,
+          0.21,
+          "",
+          0.77,
+          0.28,
+          0.51,
+          0.06,
+          0.61,
+          0.1,
+          3.44
+        ],
+        [
+          2,
+          0.8,
+          0.58,
+          "",
+          0.16,
+          0.68,
+          0.85,
+          0.08,
+          0.79,
+          3.05
+        ],
+        [
+          3,
+          0.67,
+          0.42,
+          0.44,
+          "",
+          0.75,
+          0.7,
+          0.74,
+          0.92,
+          3.09
+        ],
+        [
+          4,
+          0.24,
+          0.87,
+          1.0,
+          0.36,
+          "",
+          0.07,
+          0.12,
+          0.25,
+          3.98
+        ],
+        [
+          5,
+          0.95,
+          0.47,
+          0.44,
+          0.97,
+          0.56,
+          "",
+          0.36,
+          0.43,
+          3.71
+        ],
+        [
+          6,
+          0.11,
+          0.39,
+          0.09,
+          0.08,
+          0.3,
+          0.18,
+          "",
+          0.91,
+          3.94
+        ],
+        [
+          7,
+          0.73,
+          0.76,
+          0.01,
+          0.08,
+          0.39,
+          0.56,
+          0.1,
+          "",
+          3.59
+        ],
+        [
+          8,
+          0.55,
+          0.63,
+          0.18,
+          0.71,
+          0.47,
+          0.94,
+          0.57,
+          0.19,
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 10
+    },
+    {
+      "table_number": "IV",
+      "table_title": "shows the number of lanes in 24 roadways and their actual traffic flow after optimization. As mentioned earlier, it is quite clear that node 8 collect a large amount of traffic demands. This kind of asymmetric O-D demands will cause asymmetric flow. To be specific, roadway 16 and 21 connect to node 8 directly. Thus these two roadways have to carry a relatively larger traffic burden. As expected, the optimization results show that the roadways towards to node 8 receive more lanes than the roadways away from node 8 . Another noteworthy issue is that roadway 4 has no flow path through, which indicates in the fourth decision variable is complete irrelevant in the RLOP optimization. One of possible reason is that the free flow time cost $t_{0}^{0}$ of road 4 and road 10 is much larger compare to other roads, when considering path planning most drivers will avoid this road and make the flow in this road nearly reduce to 0 . In fact, this example gives us an inspiration, once there are some emergency situations cause specific road section congest, this congestion status will increase the free flow time cost immediately. In that case, applying reversible lanes problem optimization could get an optimal assignment, which could relieve the traffic congestion dynamically.",
+      "headers": [
+        "Roadway",
+        "$\\boldsymbol{n}_{\\boldsymbol{o}}$",
+        "$\\boldsymbol{x}_{\\boldsymbol{o}}$",
+        "Roadway",
+        "$\\boldsymbol{n}_{\\boldsymbol{o}}$",
+        "$\\boldsymbol{x}_{\\boldsymbol{o}}$"
+      ],
+      "rows": [
+        [
+          0,
+          5,
+          5.83,
+          2,
+          3,
+          2.84
+        ],
+        [
+          1,
+          1,
+          3.69,
+          7,
+          1,
+          3.11
+        ],
+        [
+          3,
+          3,
+          8.99,
+          5,
+          1,
+          4.04
+        ],
+        [
+          4,
+          7,
+          0.0,
+          10,
+          1,
+          1.0
+        ],
+        [
+          6,
+          3,
+          13.54,
+          14,
+          1,
+          4.82
+        ],
+        [
+          8,
+          1,
+          1.96,
+          11,
+          1,
+          1.72
+        ],
+        [
+          9,
+          4,
+          7.18,
+          17,
+          2,
+          2.64
+        ],
+        [
+          12,
+          1,
+          5.4,
+          15,
+          3,
+          5.84
+        ],
+        [
+          13,
+          3,
+          4.38,
+          19,
+          1,
+          2.3
+        ],
+        [
+          16,
+          3,
+          14.16,
+          22,
+          1,
+          2.22
+        ],
+        [
+          18,
+          5,
+          10.28,
+          20,
+          1,
+          3.3
+        ],
+        [
+          21,
+          5,
+          13.69,
+          23,
+          1,
+          2.03
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 6
+    },
+    {
+      "table_number": "V",
+      "table_title": "Optimal Fitness and Wilcoxon Rank-Out Results in 10 Instances of HEDA and GA",
+      "headers": [
+        "NET",
+        "O-D PAR <br> DeMANDS",
+        "HEDA",
+        "GA",
+        "Rank <br> $\\mathrm{St} / \\mathrm{M}$"
+      ],
+      "rows": [
+        [
+          "$[9,24]$",
+          18,
+          "$2.9488 \\pm 4.73 \\mathrm{e}-05$",
+          "$2.9490 \\pm 2.23 \\mathrm{e}-03$",
+          "$5.7 \\mathrm{e}-08$"
+        ],
+        [
+          "",
+          36,
+          "$3.7256 \\pm 4.84 \\mathrm{e}-04$",
+          "$3.7262 \\pm 1.47 \\mathrm{e}-03$",
+          "$3.9 \\mathrm{e}-07$"
+        ],
+        [
+          "",
+          54,
+          "$4.9808 \\pm 7.23 \\mathrm{e}-05$",
+          "$4.9815 \\pm 5.40 \\mathrm{e}-03$",
+          "$3.9 \\mathrm{e}-08$"
+        ],
+        [
+          "",
+          72,
+          "$5.4556 \\pm 1.68 \\mathrm{e}-04$",
+          "$5.4575 \\pm 2.39 \\mathrm{e}-02$",
+          "$4.7 \\mathrm{e}-07$"
+        ],
+        [
+          "$[16,48]$",
+          54,
+          "$9.3799 \\pm 4.13 \\mathrm{e}-02$",
+          "$9.4510 \\pm 7.58 \\mathrm{e}-02$",
+          "$8.1 \\mathrm{e}-11$"
+        ],
+        [
+          "",
+          72,
+          "$11.0552 \\pm 1.99 \\mathrm{e}-02$",
+          "$11.1249 \\pm 8.85 \\mathrm{e}-02$",
+          "$9.9 \\mathrm{e}-11$"
+        ],
+        [
+          "",
+          144,
+          "$16.4214 \\pm 2.87 \\mathrm{e}-01$",
+          "$16.6487 \\pm 2.34 \\mathrm{e}-01$",
+          "$8.9 \\mathrm{e}-10$"
+        ],
+        [
+          "",
+          176,
+          "$19.4237 \\pm 1.23 \\mathrm{e}-01$",
+          "$19.7042 \\pm 2.84 \\mathrm{e}-01$",
+          "$5.0 \\mathrm{e}-11$"
+        ],
+        [
+          "",
+          208,
+          "$20.7905 \\pm 1.23 \\mathrm{e}-01$",
+          "$21.1431 \\pm 3.03 \\mathrm{e}-01$",
+          "$3.3 \\mathrm{e}-11$"
+        ],
+        [
+          "",
+          240,
+          "$27.6578 \\pm 2.89 \\mathrm{e}-01$",
+          "$27.9900 \\pm 5.59 \\mathrm{e}-01$",
+          "$5.5 \\mathrm{e}-08$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 5
+    }
+  ]
+}

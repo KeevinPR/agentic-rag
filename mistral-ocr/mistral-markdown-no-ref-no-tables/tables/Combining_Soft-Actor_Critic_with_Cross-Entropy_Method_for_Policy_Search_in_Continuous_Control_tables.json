@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Combining Soft-Actor Critic with Cross-Entropy Method for Policy Search in Continuous Control.md",
+    "filename": "Combining Soft-Actor Critic with Cross-Entropy Method for Policy Search in Continuous Control.md",
+    "title": "Combining Soft-Actor Critic with Cross-Entropy Method for Policy Search in Continuous Control",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "MuJoCo OPENAI Gym EnViRONMENTS [23]",
+      "headers": [
+        "Environment",
+        "State Dimensions",
+        "Action Dimensions"
+      ],
+      "rows": [
+        [
+          -3,
+          11,
+          3
+        ],
+        [
+          -3,
+          17,
+          6
+        ],
+        [
+          -3,
+          17,
+          6
+        ],
+        [
+          -3,
+          111,
+          8
+        ],
+        [
+          -3,
+          376,
+          17
+        ],
+        [
+          -2,
+          376,
+          17
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "HYPERPARAMETER VALUES",
+      "headers": [
+        "Hyper-parameter",
+        "CEM-SAC",
+        "SAC",
+        "CEM-TD3"
+      ],
+      "rows": [
+        [
+          "Population size",
+          10,
+          "N/A",
+          10
+        ],
+        [
+          "Alpha",
+          0.05,
+          0.05,
+          "N/A"
+        ],
+        [
+          "Batch size",
+          256,
+          256,
+          100
+        ],
+        [
+          "Actor learning rate",
+          "",
+          "$1 e^{-} 3$",
+          ""
+        ],
+        [
+          "Critic learning rate",
+          "",
+          "$1 e^{-} 3$",
+          ""
+        ],
+        [
+          "Gamma",
+          "",
+          0.99,
+          ""
+        ],
+        [
+          "Optimizers",
+          "",
+          "Adam",
+          ""
+        ],
+        [
+          "Buffer size",
+          "",
+          1000000,
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "Final PERFormance of CEM-SAC, CEM-TD3, SAC, and CEM.",
+      "headers": [
+        "",
+        "CEM-SAC (ours)",
+        "",
+        "CEM-TD3",
+        "",
+        "SAC",
+        "",
+        "CEM",
+        ""
+      ],
+      "rows": [
+        [
+          "Environment",
+          "Mean",
+          "SD",
+          "Mean",
+          "SD",
+          "Mean",
+          "SD",
+          "Mean",
+          "SD"
+        ],
+        [
+          -3,
+          3543.06,
+          303.548,
+          3687.163,
+          137.589,
+          3406.688,
+          419.595,
+          1034.035,
+          33.317
+        ],
+        [
+          "Walker2d-v3",
+          4893.221,
+          414.913,
+          4492.048,
+          377.041,
+          4461.056,
+          629.585,
+          988.697,
+          161.123
+        ],
+        [
+          -3,
+          12393.059,
+          1353.351,
+          10389.799,
+          1003.154,
+          11491.836,
+          1798.925,
+          2893.837,
+          914.66
+        ],
+        [
+          -3,
+          6280.306,
+          292.451,
+          3745.099,
+          907.568,
+          5643.622,
+          680.005,
+          949.163,
+          56.111
+        ],
+        [
+          -3,
+          5779.767,
+          163.132,
+          213.375,
+          0.84,
+          5415.815,
+          734.711,
+          213.522,
+          0.846
+        ],
+        [
+          -2,
+          195598.457,
+          38089.379,
+          29716.539,
+          6.109,
+          164047.701,
+          30366.302,
+          29716.976,
+          5.367
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 9
+    }
+  ]
+}

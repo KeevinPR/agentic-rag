@@ -1,0 +1,669 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Damage identification of single-layer cylindrical latticed shells based on the model updating technique.md",
+    "filename": "Damage identification of single-layer cylindrical latticed shells based on the model updating technique.md",
+    "title": "Damage identification of single-layer cylindrical latticed shells based on the model updating technique",
+    "year": "2022"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Bao Y, Li H, Sun X et al (2012) Compressive sampling-based data loss recovery for wireless sensor networks used in civil structural health monitoring. Struct Health Monit 12(1):78-95\n2. Zhang Z, Luo Y (2017) Restoring method for missing data of spatial structural stress monitoring based on correlation. Mech Syst Signal Process 91:266-277\n3. Farrar CR, Doebling SW, Nix DA (2001) Vibration-based structural damage identification. Philos Trans R Soc A 359:131-149\n4. Magalhães F, Cunha A, Caetano E (2012) Vibration based structural health monitoring of an arch bridge: from automated OMA to damage detection. Mech Syst Signal Process 28:212-228\n5. Fugate ML, Sohn H, Farrar CR (2001) Vibration-based damage detection using statistical process control. Mech Syst Signal Process 15(4):707-721\n6. Shadan F, Khoshnoudian F, Esfandiari A (2016) A frequency response-based structural damage identification using model updating method. Struct Control Health Monit 23(2):286-302\n7. Fan W, Qiao P (2010) Vibration-based damage identification methods: a review and comparative study. Struct Health Monit 10(1):83-111\n8. Nair KK, Kiremidjian AS, Law KH (2006) Time series-based damage detection and localization algorithm with application to the ASCE benchmark structure. J Sound Vib 291(1-2):349-368\n9. Grande E, Imbimbo M (2012) A data-driven approach for damage detection: An application to the ASCE steel benchmark structure. J Civ Struct Heal Monit 2(2):73-85\n10. Zhang T, Biswal S, Wang Y (2019) SHMnet: condition assessment of bolted connection with beyond human-level performance. Struct Health Monit 19(4):1188-1201\n11. Ozevin D (2010) Geometry-based spatial acoustic source location for spaced structures. Struct Health Monit 10(5):503-510\n12. Sodano HA (2007) Development of an automated eddy current structural health monitoring technique with an extended sensing region for corrosion detection. Struct Health Monit 6(2):111-119\n13. Rainieri C, Fabbrocino G, Verderame GM (2013) Non-destructive characterization and dynamic identification of a modern heritage building for serviceability seismic analyses. NDT\\&E Int 60:17-31\n14. Ying W, Hong H (2013) Damage identification of slab-girder structures: experimental studies. J Civ Struct Health Monit 3(2):93-103\n15. Li Y, Ma L, Li S et al (2016) Two-step damage detection method for large and complex structures. In: International conference in communications, signal processing, and systems 2016, vol 423, pp 419-429\n16. Hao H, Xia Y (2002) Vibration-based damage detection of structures by genetic algorithm. J Comput Civ Eng 16(3):222-229\n17. Masoumi M, Jamshidi E (2015) Damage diagnosis in steel structures with different noise levels via optimization algorithms. Int J Steel Struct 15(3):557-565\n18. Sun G, Liu C, Zhang S et al (2014) Three-step damage identification method based on dynamic characteristics. Trans Tianjin Univ 20(5):379-384\n19. Avci O, Abdeljaber O, Kiranyaz S et al (2021) A review of vibra-tion-based damage detection in civil structures: from traditional methods to machine learning and deep learning applications. Mech Syst Signal Process 147:107077\n20. Li J, Hao H (2014) Substructure damage identification based on wavelet-domain response reconstruction. Struct Health Monit 13(4):389-405\n21. Guo T, Wu L, Wang C et al (2019) Damage detection in a novel deep-learning framework: a robust method for feature extraction. Struct Health Monit 19(2):424-442\n22. Zhang Z, Sun C (2020) Multi-site structural damage identification using a multi-label classification scheme of machine learning. Measurement 154:107473\n23. Larranga P, Lozano JA (2001) Estimation of distribution algorithms: a new tool for evolutionary computation. Kluwer Academic Publishers, New York\n24. Wang Y, Zhang T (2013) Finite element model updating using estimation of distribution algorithm. In: SHMII-6 2013: Proceedings of the 6th international conference on structural health monitoring of intelligent infrastructure, Hong Kong Polytechnic University, Hong Kong, pp 1-8\n25. Santana R, Bielza C, Larranaga P et al (2010) Mateda-2.0: estimation of distribution algorithms in MATLAB. J Stat Softw 35(7):1-30\n26. Xu Y, Nikitas G, Zhang T et al (2019) Support condition monitoring of offshore wind turbines using model updating techniques. Struct Health Monit 19(4):1017-1031\n27. Han Q, Wang C, Xu Y et al (2020) Mechanical performance of AH joints and influence on the stability behaviour of single-layer cylindrical shells. Thin Walled Struct 146:217-232\n28. Doebling SW, Hemez FM, Peterson LD et al (1997) Improved damage location accuracy using strain energy based on mode selection criteria. AIAA J 35(4):693-699\n29. Brehm M, Zabel V, Bucher C (2010) An automatic mode pairing strategy using an enhanced modal assurance criterion based on modal strain energies. J Sound Vib 329(25):5375-5392\n30. Selesnick IW, Burrus CS (1998) Generalized digital Butterworth filter design. IEEE Trans Signal Process 46(6):1688-1694\n\nPublisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Bao Y, Li H, Sun X et al (2012) Compressive sampling-based data loss recovery for wireless sensor networks used in civil structural health monitoring. Struct Health Monit 12(1):78-95"
+      },
+      {
+        "ref_id": "2",
+        "text": "Zhang Z, Luo Y (2017) Restoring method for missing data of spatial structural stress monitoring based on correlation. Mech Syst Signal Process 91:266-277"
+      },
+      {
+        "ref_id": "3",
+        "text": "Farrar CR, Doebling SW, Nix DA (2001) Vibration-based structural damage identification. Philos Trans R Soc A 359:131-149"
+      },
+      {
+        "ref_id": "4",
+        "text": "Magalhães F, Cunha A, Caetano E (2012) Vibration based structural health monitoring of an arch bridge: from automated OMA to damage detection. Mech Syst Signal Process 28:212-228"
+      },
+      {
+        "ref_id": "5",
+        "text": "Fugate ML, Sohn H, Farrar CR (2001) Vibration-based damage detection using statistical process control. Mech Syst Signal Process 15(4):707-721"
+      },
+      {
+        "ref_id": "6",
+        "text": "Shadan F, Khoshnoudian F, Esfandiari A (2016) A frequency response-based structural damage identification using model updating method. Struct Control Health Monit 23(2):286-302"
+      },
+      {
+        "ref_id": "7",
+        "text": "Fan W, Qiao P (2010) Vibration-based damage identification methods: a review and comparative study. Struct Health Monit 10(1):83-111"
+      },
+      {
+        "ref_id": "8",
+        "text": "Nair KK, Kiremidjian AS, Law KH (2006) Time series-based damage detection and localization algorithm with application to the ASCE benchmark structure. J Sound Vib 291(1-2):349-368"
+      },
+      {
+        "ref_id": "9",
+        "text": "Grande E, Imbimbo M (2012) A data-driven approach for damage detection: An application to the ASCE steel benchmark structure. J Civ Struct Heal Monit 2(2):73-85"
+      },
+      {
+        "ref_id": "10",
+        "text": "Zhang T, Biswal S, Wang Y (2019) SHMnet: condition assessment of bolted connection with beyond human-level performance. Struct Health Monit 19(4):1188-1201"
+      },
+      {
+        "ref_id": "11",
+        "text": "Ozevin D (2010) Geometry-based spatial acoustic source location for spaced structures. Struct Health Monit 10(5):503-510"
+      },
+      {
+        "ref_id": "12",
+        "text": "Sodano HA (2007) Development of an automated eddy current structural health monitoring technique with an extended sensing region for corrosion detection. Struct Health Monit 6(2):111-119"
+      },
+      {
+        "ref_id": "13",
+        "text": "Rainieri C, Fabbrocino G, Verderame GM (2013) Non-destructive characterization and dynamic identification of a modern heritage building for serviceability seismic analyses. NDT\\&E Int 60:17-31"
+      },
+      {
+        "ref_id": "14",
+        "text": "Ying W, Hong H (2013) Damage identification of slab-girder structures: experimental studies. J Civ Struct Health Monit 3(2):93-103"
+      },
+      {
+        "ref_id": "15",
+        "text": "Li Y, Ma L, Li S et al (2016) Two-step damage detection method for large and complex structures. In: International conference in communications, signal processing, and systems 2016, vol 423, pp 419-429"
+      },
+      {
+        "ref_id": "16",
+        "text": "Hao H, Xia Y (2002) Vibration-based damage detection of structures by genetic algorithm. J Comput Civ Eng 16(3):222-229"
+      },
+      {
+        "ref_id": "17",
+        "text": "Masoumi M, Jamshidi E (2015) Damage diagnosis in steel structures with different noise levels via optimization algorithms. Int J Steel Struct 15(3):557-565"
+      },
+      {
+        "ref_id": "18",
+        "text": "Sun G, Liu C, Zhang S et al (2014) Three-step damage identification method based on dynamic characteristics. Trans Tianjin Univ 20(5):379-384"
+      },
+      {
+        "ref_id": "19",
+        "text": "Avci O, Abdeljaber O, Kiranyaz S et al (2021) A review of vibra-tion-based damage detection in civil structures: from traditional methods to machine learning and deep learning applications. Mech Syst Signal Process 147:107077"
+      },
+      {
+        "ref_id": "20",
+        "text": "Li J, Hao H (2014) Substructure damage identification based on wavelet-domain response reconstruction. Struct Health Monit 13(4):389-405"
+      },
+      {
+        "ref_id": "21",
+        "text": "Guo T, Wu L, Wang C et al (2019) Damage detection in a novel deep-learning framework: a robust method for feature extraction. Struct Health Monit 19(2):424-442"
+      },
+      {
+        "ref_id": "22",
+        "text": "Zhang Z, Sun C (2020) Multi-site structural damage identification using a multi-label classification scheme of machine learning. Measurement 154:107473"
+      },
+      {
+        "ref_id": "23",
+        "text": "Larranga P, Lozano JA (2001) Estimation of distribution algorithms: a new tool for evolutionary computation. Kluwer Academic Publishers, New York"
+      },
+      {
+        "ref_id": "24",
+        "text": "Wang Y, Zhang T (2013) Finite element model updating using estimation of distribution algorithm. In: SHMII-6 2013: Proceedings of the 6th international conference on structural health monitoring of intelligent infrastructure, Hong Kong Polytechnic University, Hong Kong, pp 1-8"
+      },
+      {
+        "ref_id": "25",
+        "text": "Santana R, Bielza C, Larranaga P et al (2010) Mateda-2.0: estimation of distribution algorithms in MATLAB. J Stat Softw 35(7):1-30"
+      },
+      {
+        "ref_id": "26",
+        "text": "Xu Y, Nikitas G, Zhang T et al (2019) Support condition monitoring of offshore wind turbines using model updating techniques. Struct Health Monit 19(4):1017-1031"
+      },
+      {
+        "ref_id": "27",
+        "text": "Han Q, Wang C, Xu Y et al (2020) Mechanical performance of AH joints and influence on the stability behaviour of single-layer cylindrical shells. Thin Walled Struct 146:217-232"
+      },
+      {
+        "ref_id": "28",
+        "text": "Doebling SW, Hemez FM, Peterson LD et al (1997) Improved damage location accuracy using strain energy based on mode selection criteria. AIAA J 35(4):693-699"
+      },
+      {
+        "ref_id": "29",
+        "text": "Brehm M, Zabel V, Bucher C (2010) An automatic mode pairing strategy using an enhanced modal assurance criterion based on modal strain energies. J Sound Vib 329(25):5375-5392"
+      },
+      {
+        "ref_id": "30",
+        "text": "Selesnick IW, Burrus CS (1998) Generalized digital Butterworth filter design. IEEE Trans Signal Process 46(6):1688-1694"
+      }
+    ],
+    "reference_count": 30,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Geometric and material parameters of the members",
+      "headers": [
+        "Member section $h \\times b \\times t$ (mm)",
+        "Density $\\left(\\mathrm{kg} / \\mathrm{m}^{3}\\right)$",
+        "Elastic modulus (GPa)",
+        "Poisson's ratio",
+        "Yield strength (MPa)",
+        "Ultimate strength (MPa)"
+      ],
+      "rows": [
+        [
+          "$30 \\times 50 \\times 1.5$",
+          7850,
+          207.35,
+          0.3,
+          369.25,
+          488.85
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Damage severity of members corresponding to multiple damage conditions",
+      "headers": [
+        "Scenarios",
+        "Damaged <br> member",
+        "Damage coefficient $\\alpha$",
+        "Noise"
+      ],
+      "rows": [
+        [
+          -1,
+          5,
+          0.8,
+          "-"
+        ],
+        [
+          -2,
+          5,
+          0.5,
+          "-"
+        ],
+        [
+          -3,
+          521,
+          "$0.5(5), 0.8(21)$",
+          "-"
+        ],
+        [
+          -4,
+          521,
+          "$0.5(5), 0.8(21)$",
+          "$10 \\%$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Values of $J_{1}$ and $J_{2}$ in 100 generations during model updating",
+      "headers": [
+        "Number of generations",
+        "MS-1",
+        "",
+        "MS-2",
+        "",
+        "MS-3",
+        "",
+        "MS-4",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$J_{1}$",
+          "$J_{2}\\left(\\times 10^{3}\\right)$",
+          "$J_{1}$",
+          "$J_{2}\\left(\\times 10^{3}\\right)$",
+          "$J_{1}$",
+          "$J_{2}\\left(\\times 10^{3}\\right)$",
+          "$J_{1}$",
+          "$J_{2}\\left(\\times 10^{3}\\right)$"
+        ],
+        [
+          1,
+          861.94,
+          37.33,
+          41.94,
+          3.36,
+          41.89,
+          3.3,
+          40.61,
+          3.23
+        ],
+        [
+          5,
+          "$1.42 \\times 10^{3}$",
+          88.54,
+          59.12,
+          4.0,
+          35.94,
+          2.88,
+          48.57,
+          3.84
+        ],
+        [
+          10,
+          "$1.09 \\times 10^{4}$",
+          196.23,
+          "$1.32 \\times 10^{3}$",
+          16.28,
+          73.47,
+          8.52,
+          54.44,
+          6.32
+        ],
+        [
+          15,
+          "$2.09 \\times 10^{13}$",
+          61.61,
+          "$4.11 \\times 10^{6}$",
+          36.83,
+          80.35,
+          5.47,
+          69.81,
+          8.93
+        ],
+        [
+          20,
+          "$1.03 \\times 10^{14}$",
+          56.15,
+          "$7.23 \\times 10^{13}$",
+          0.83,
+          97.52,
+          9.63,
+          121.59,
+          15.49
+        ],
+        [
+          50,
+          "$2.92 \\times 10^{19}$",
+          55.98,
+          "$7.23 \\times 10^{13}$",
+          0.83,
+          "$1.85 \\times 10^{3}$",
+          81.26,
+          "$1.24 \\times 10^{3}$",
+          64.51
+        ],
+        [
+          80,
+          "$2.92 \\times 10^{19}$",
+          55.98,
+          "$7.23 \\times 10^{13}$",
+          0.83,
+          "$5.28 \\times 10^{19}$",
+          16.68,
+          "$8.63 \\times 10^{18}$",
+          14.14
+        ],
+        [
+          100,
+          "$2.92 \\times 10^{19}$",
+          55.98,
+          "$7.23 \\times 10^{13}$",
+          0.83,
+          "$5.28 \\times 10^{19}$",
+          16.68,
+          "$8.63 \\times 10^{18}$",
+          14.14
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 9
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Natural frequencies corresponding to multiple damage conditions (Hz)",
+      "headers": [
+        "Order",
+        "Initial state",
+        "MS-1",
+        "",
+        "MS-2",
+        "",
+        "MS-3",
+        "",
+        "MS-4",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "True value",
+          "Updating result",
+          "True value",
+          "Updating result",
+          "True value",
+          "Updating result",
+          "True value",
+          "Updating result"
+        ],
+        [
+          1,
+          15.116,
+          15.092,
+          15.046,
+          15.067,
+          14.965,
+          15.041,
+          14.881,
+          14.249,
+          14.767
+        ],
+        [
+          2,
+          29.026,
+          28.968,
+          28.557,
+          28.888,
+          27.733,
+          28.806,
+          28.088,
+          28.584,
+          27.8
+        ],
+        [
+          3,
+          34.339,
+          34.238,
+          34.598,
+          34.122,
+          33.665,
+          34.105,
+          34.559,
+          34.872,
+          34.083
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 10
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Members with low damage coefficients during model updating",
+      "headers": [
+        "MS-1",
+        "",
+        "MS-2",
+        "",
+        "MS-3",
+        "",
+        "MS-4",
+        ""
+      ],
+      "rows": [
+        [
+          "Member",
+          "$\\alpha$",
+          "Member",
+          "$\\alpha$",
+          "Member",
+          "$\\alpha$",
+          "Member",
+          "$\\alpha$"
+        ],
+        [
+          5,
+          0.7939,
+          5,
+          0.4937,
+          5,
+          0.4659,
+          5,
+          0.4891
+        ],
+        [
+          51,
+          0.8258,
+          58,
+          0.6202,
+          67,
+          0.6096,
+          21,
+          0.7174
+        ],
+        [
+          12,
+          0.8428,
+          25,
+          0.6992,
+          68,
+          0.699,
+          6,
+          0.7371
+        ],
+        [
+          11,
+          0.8521,
+          1,
+          0.7095,
+          60,
+          0.7655,
+          60,
+          0.7869
+        ],
+        [
+          43,
+          0.8585,
+          63,
+          0.7514,
+          21,
+          0.8358,
+          71,
+          0.8557
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 8
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 Statistics of the damage identification accuracies based on the FE data",
+      "headers": [
+        "Scenarios",
+        "Maximum <br> value (\\%)",
+        "Minimum <br> value (\\%)",
+        "Mean value (\\%)",
+        "Standard <br> deviation <br> $\\left(\\times 10^{-19}\\right)$"
+      ],
+      "rows": [
+        [
+          -1,
+          100.0,
+          82.58,
+          95.37,
+          6.64
+        ],
+        [
+          -2,
+          99.79,
+          62.02,
+          92.51,
+          5.33
+        ],
+        [
+          -3,
+          99.65,
+          60.96,
+          92.43,
+          1.27
+        ],
+        [
+          -4,
+          99.1,
+          73.71,
+          90.54,
+          3.13
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Table 7 Damage severity of members in different test scenarios",
+      "headers": [
+        "Scenarios",
+        "Damage level",
+        "Cutting depth/ <br> member height",
+        "Damage <br> coefficient <br> $\\alpha$"
+      ],
+      "rows": [
+        [
+          -1,
+          "-",
+          0,
+          1.0
+        ],
+        [
+          -2,
+          "Slight",
+          "$1 / 4$",
+          0.66
+        ],
+        [
+          -3,
+          "Medium",
+          "$1 / 2$",
+          0.5
+        ],
+        [
+          -4,
+          "Heavy",
+          "$3 / 4$",
+          0.34
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "8",
+      "table_title": "Table 8 Natural frequencies of the shell model obtained by ARTeMIS Model",
+      "headers": [
+        "Scenarios",
+        "Frequencies $(\\mathrm{Hz})$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3
+        ],
+        [
+          -1,
+          10.946,
+          20.535,
+          22.3
+        ],
+        [
+          -2,
+          10.946,
+          20.535,
+          22.3
+        ],
+        [
+          -3,
+          10.944,
+          20.536,
+          22.301
+        ],
+        [
+          -4,
+          10.876,
+          20.486,
+          22.227
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "9",
+      "table_title": "Table 9 Natural frequencies of the analytical model obtained by model updating $(\\mathrm{Hz})$",
+      "headers": [
+        "Scenarios",
+        "Frequencies (Hz)",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3
+        ],
+        [
+          -1,
+          10.638,
+          20.559,
+          24.45
+        ],
+        [
+          -2,
+          10.2,
+          19.735,
+          23.205
+        ],
+        [
+          -3,
+          9.941,
+          18.792,
+          24.076
+        ],
+        [
+          -4,
+          9.304,
+          18.238,
+          21.658
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "10",
+      "table_title": "Table 10 Statistics of the damage identification accuracies based on the laboratory data",
+      "headers": [
+        "Scenarios",
+        "Maximum <br> value (\\%)",
+        "Minimum <br> value (\\%)",
+        "Mean value (\\%)",
+        "Standard <br> deviation"
+      ],
+      "rows": [
+        [
+          -2,
+          99.85,
+          70.44,
+          89.59,
+          0.0718
+        ],
+        [
+          -3,
+          99.59,
+          62.48,
+          86.1,
+          0.0697
+        ],
+        [
+          -4,
+          98.57,
+          55.62,
+          82.26,
+          0.1009
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    }
+  ]
+}

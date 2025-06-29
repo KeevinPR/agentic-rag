@@ -1,0 +1,592 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Dynamic Optimization of Chemical Engineering Problems Using Affinity Propagation Based Estimation of Distribution Algorithm.md",
+    "filename": "Dynamic Optimization of Chemical Engineering Problems Using Affinity Propagation Based Estimation of Distribution Algorithm.md",
+    "title": "Dynamic Optimization of Chemical Engineering Problems Using Affinity Propagation Based Estimation of Distribution Algorithm",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "PARAMITERS SETTING",
+      "headers": [
+        "GA",
+        "PSO",
+        "EDA-G",
+        "AffEDA"
+      ],
+      "rows": [
+        [
+          "Migration",
+          "Initial inertia",
+          "Truncation",
+          "Truncation"
+        ],
+        [
+          0.2,
+          0.9,
+          0.3,
+          0.3
+        ],
+        [
+          "Crossover",
+          "Final inertia",
+          "Elitism",
+          "Elite count:"
+        ],
+        [
+          0.8,
+          0.4,
+          "Population:",
+          10
+        ],
+        [
+          "Elite Count:",
+          "acceleration",
+          10,
+          ""
+        ],
+        [
+          10,
+          12,
+          "",
+          ""
+        ],
+        [
+          "",
+          "acceleration",
+          "",
+          ""
+        ],
+        [
+          "",
+          22,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "II",
+      "table_title": "COMPARISONS BETWEEN AFFEDA AND REFERENCES FOR CASE 1",
+      "headers": [
+        "Method",
+        "Time interval",
+        "Global optimal"
+      ],
+      "rows": [
+        [
+          10,
+          "",
+          0.6105
+        ],
+        [
+          11,
+          10,
+          0.61
+        ],
+        [
+          11,
+          20,
+          0.6104
+        ],
+        [
+          "Trigonometric Differential",
+          10,
+          0.61
+        ],
+        [
+          7,
+          20,
+          0.6104
+        ],
+        [
+          "",
+          50,
+          0.6107
+        ],
+        [
+          "AffEDA",
+          10,
+          0.6101
+        ],
+        [
+          "",
+          20,
+          0.6105
+        ],
+        [
+          "",
+          "$\\mathbf{5 0}$",
+          "$\\mathbf{0 . 6 1 0 7}$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "RESULTS COMPARISON BETWEEN AFFEDA AND OTHER ALGORITHMS FOR CASE 1",
+      "headers": [
+        "",
+        "",
+        "GA",
+        "PSO",
+        "EDA-G",
+        "AffEDA"
+      ],
+      "rows": [
+        [
+          10,
+          "best",
+          0.6101,
+          0.6098,
+          0.6101,
+          0.6101
+        ],
+        [
+          "",
+          "worst",
+          0.6093,
+          0.6001,
+          0.6101,
+          0.6101
+        ],
+        [
+          "",
+          "mean",
+          0.6098,
+          0.6082,
+          0.6101,
+          0.6101
+        ],
+        [
+          "",
+          "robust",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          "",
+          "$\\mathrm{A}_{\\text {eff }}$",
+          "$98 \\%$",
+          "$75 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          20,
+          "best",
+          0.6102,
+          0.6063,
+          0.6105,
+          0.6105
+        ],
+        [
+          "",
+          "worst",
+          0.6075,
+          0.6006,
+          0.6105,
+          0.6105
+        ],
+        [
+          "",
+          "mean",
+          0.609,
+          0.6033,
+          0.6105,
+          0.6105
+        ],
+        [
+          "",
+          "robust",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          "",
+          "$\\mathrm{A}_{\\text {eff }}$",
+          "$98 \\%$",
+          "$71 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          50,
+          "best",
+          0.6068,
+          0.6023,
+          0.6107,
+          0.6107
+        ],
+        [
+          "",
+          "worst",
+          0.6026,
+          0.5564,
+          0.6107,
+          0.6107
+        ],
+        [
+          "",
+          "mean",
+          0.6051,
+          0.5971,
+          0.6107,
+          0.6107
+        ],
+        [
+          "",
+          "robust",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          "",
+          "$\\mathrm{A}_{\\text {eff }}$",
+          "$96 \\%$",
+          "$67 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 6
+    },
+    {
+      "table_number": "IV",
+      "table_title": "COMPARISONS BETWEEN AFFEDA AND REFERENCES FOR CASE 2",
+      "headers": [
+        "Method",
+        "",
+        "Time interval",
+        "Global optimal"
+      ],
+      "rows": [
+        [
+          10,
+          "",
+          "",
+          0.129
+        ],
+        [
+          11,
+          16,
+          0.1253,
+          ""
+        ],
+        [
+          "AffEDA",
+          10,
+          0.1201,
+          ""
+        ],
+        [
+          "",
+          20,
+          0.1196,
+          ""
+        ],
+        [
+          "",
+          50,
+          0.1199,
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "V",
+      "table_title": "COMPARISONS BETWEEN AFFEDA AND OTHER ALGORITHMS FOR CASE 2",
+      "headers": [
+        "",
+        "",
+        "GA",
+        "PSO",
+        "EDA-G",
+        "AffEDA"
+      ],
+      "rows": [
+        [
+          10,
+          "best",
+          0.1206,
+          0.1202,
+          0.1202,
+          0.1201
+        ],
+        [
+          "",
+          "worst",
+          0.1321,
+          0.1215,
+          0.1213,
+          0.1215
+        ],
+        [
+          "",
+          "mean",
+          0.1237,
+          0.1207,
+          0.1205,
+          0.1205
+        ],
+        [
+          "",
+          "robust",
+          "$56 \\%$",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          "",
+          "$\\mathrm{A}_{\\text {eff }}$",
+          "$48 \\%$",
+          "$106 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          20,
+          "best",
+          0.1207,
+          0.1198,
+          0.1198,
+          0.1196
+        ],
+        [
+          "",
+          "worst",
+          0.1344,
+          0.1215,
+          0.1205,
+          0.1202
+        ],
+        [
+          "",
+          "mean",
+          0.124,
+          0.1205,
+          0.12,
+          0.1201
+        ],
+        [
+          "",
+          "robust",
+          "$44 \\%$",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          50,
+          "$\\mathrm{A}_{\\text {eff }}$",
+          "$31 \\%$",
+          "$92 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          "",
+          "best",
+          0.1268,
+          0.1201,
+          0.1199,
+          0.1199
+        ],
+        [
+          "",
+          "worst",
+          0.1953,
+          0.1222,
+          0.1202,
+          0.1201
+        ],
+        [
+          "",
+          "mean",
+          0.1383,
+          0.1211,
+          0.1201,
+          0.12
+        ],
+        [
+          "",
+          "robust",
+          "$28 \\%$",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          "",
+          "$\\mathrm{A}_{\\text {eff }}$",
+          "$17 \\%$",
+          "$81 \\%$",
+          "$98 \\%$",
+          "$99 \\%$"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 6
+    },
+    {
+      "table_number": "VI",
+      "table_title": "COMPARISONS BETWEEN AFFEDA AND REFERENCES FOR CASE 3",
+      "headers": [
+        "Method",
+        "",
+        "Time interval",
+        "Global optimal"
+      ],
+      "rows": [
+        [
+          33,
+          20,
+          "32.4249-32.4541",
+          ""
+        ],
+        [
+          32,
+          45,
+          32.5928,
+          ""
+        ],
+        [
+          7,
+          45,
+          32.6845,
+          ""
+        ],
+        [
+          7,
+          45,
+          32.6843,
+          ""
+        ],
+        [
+          "AffEDA",
+          45,
+          32.669,
+          ""
+        ],
+        [
+          "",
+          150,
+          32.6685,
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "VII",
+      "table_title": "COMPARISONS BETWEEN AFFEDA AND OTHER ALGORITHMS FOR CASE 3",
+      "headers": [
+        "n=45",
+        "",
+        "GA",
+        "PSO",
+        "EDA-G",
+        "AffEDA"
+      ],
+      "rows": [
+        [
+          "",
+          "best",
+          32.4725,
+          32.536,
+          32.6603,
+          32.669
+        ],
+        [
+          "",
+          "worst",
+          31.1243,
+          29.7593,
+          32.5364,
+          32.5454
+        ],
+        [
+          "",
+          "mean",
+          31.987,
+          31.6352,
+          32.5771,
+          32.627
+        ],
+        [
+          "",
+          "robust",
+          "$88 \\%$",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          150,
+          "$\\mathrm{A}_{\\text {eff }}$",
+          "$77 \\%$",
+          "$112 \\%$",
+          "$92 \\%$",
+          "$94 \\%$"
+        ],
+        [
+          "",
+          "best",
+          32.6542,
+          32.2353,
+          32.6643,
+          32.6685
+        ],
+        [
+          "",
+          "worst",
+          31.1115,
+          30.3731,
+          32.5436,
+          32.5235
+        ],
+        [
+          "",
+          "mean",
+          32.2205,
+          31.9377,
+          32.6244,
+          32.6446
+        ],
+        [
+          "",
+          "robust",
+          "$60 \\%$",
+          "$100 \\%$",
+          "$100 \\%$",
+          "$100 \\%$"
+        ],
+        [
+          "",
+          "$\\mathrm{A}_{\\text {eff }}$",
+          "$39 \\%$",
+          "$51 \\%$",
+          "$78 \\%$",
+          "$67 \\%$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 6
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2008/Linkages Detection in Histogram-Based Estimation of Distribution Algorithm.md",
+    "filename": "Linkages Detection in Histogram-Based Estimation of Distribution Algorithm.md",
+    "title": "Linkages Detection in Histogram-Based Estimation of Distribution Algorithm",
+    "year": "2008"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Parameter Settings of the 4 Algorithms",
+      "headers": [
+        "Parameter Settings",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Maximal evaluation number $=3 \\times 10^{5}$"
+        ],
+        [
+          "",
+          "Population size $=375$"
+        ],
+        [
+          "",
+          "Select-rate $=20 \\%$"
+        ],
+        [
+          "",
+          "Maximal evaluation number $=3 \\times 10^{5}$"
+        ],
+        [
+          "",
+          "Population size $=375$"
+        ],
+        [
+          "",
+          "Select-rate $=20 \\%$"
+        ],
+        [
+          "",
+          "Maximal evaluation number $=3 \\times 10^{5}$, Select rate $=20 \\%$"
+        ],
+        [
+          "",
+          "Population size $=375$, Mutation rate $=5 \\%$"
+        ],
+        [
+          "",
+          "Bins number $=99$, Surrounding factor $=10 \\%$"
+        ],
+        [
+          "",
+          "Maximal evaluation number $=3 \\times 10^{5}$, Select rate $=20 \\%$"
+        ],
+        [
+          "",
+          "Population size $=375$, Mutation rate $=5 \\%$"
+        ],
+        [
+          "",
+          "Bins number $=99$, Surrounding factor $=10 \\%$"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Problem Descriptions",
+      "headers": [
+        "",
+        "Representation"
+      ],
+      "rows": [
+        [
+          "Sphere",
+          "$F(\\bar{y})=\\sum_{i=0}^{l-1} y_{i}^{2}$"
+        ],
+        [
+          "",
+          "where $X_{0}=y_{0}, X_{i}=y_{i}+X_{i-1}$"
+        ],
+        [
+          -2,
+          "$F(\\bar{y})=\\sum_{i=0}^{l-1}\\left[\\left(y_{i}^{2}-y_{0}\\right)^{2}+\\left(y_{i}-1\\right)^{2}\\right]$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Experimental Results",
+      "headers": [
+        "",
+        "",
+        "Best Case",
+        "Mean Value",
+        "Standard Dev."
+      ],
+      "rows": [
+        [
+          "",
+          "UMDA $_{\\text {c }}$",
+          "2.816e-84",
+          "1.276e-83",
+          "1.064e-83"
+        ],
+        [
+          "",
+          "IDEA-G",
+          "3.423e-161",
+          "2.562e-160",
+          "2.992e-160"
+        ],
+        [
+          "",
+          "sur-shr-HEDA",
+          "5.872e-15",
+          "6.753e-15",
+          "7.698e-16"
+        ],
+        [
+          "",
+          "dHEDA",
+          "5.104e-19",
+          "7.496e-19",
+          "1.304e-19"
+        ],
+        [
+          "",
+          "UMDA $_{\\text {c }}$",
+          8.635,
+          5.798,
+          2.403
+        ],
+        [
+          "",
+          "IDEA-G",
+          66199,
+          12805,
+          20704
+        ],
+        [
+          "",
+          "sur-shr-HEDA",
+          99998,
+          93973,
+          22016
+        ],
+        [
+          "",
+          "dHEDA",
+          "$10^{5}$",
+          "$10^{5}$",
+          "2.031e-2"
+        ],
+        [
+          "",
+          "UMDA $_{\\text {c }}$",
+          "$-11622.8$",
+          "$-10637.5$",
+          6.2892
+        ],
+        [
+          "",
+          "IDEA-G",
+          "$-5277.4$",
+          "$-4719.6$",
+          2.9762
+        ],
+        [
+          "",
+          "sur-shr-HEDA",
+          "$-12569.5$",
+          "$-12569.4$",
+          "1.458e-1"
+        ],
+        [
+          "",
+          "dHEDA",
+          "$-12569.5$",
+          "$-12569.5$",
+          "1.415e-7"
+        ],
+        [
+          "",
+          "UMDA $_{\\text {c }}$",
+          "8.131e-5",
+          "2.576e-2",
+          "1.984e-2"
+        ],
+        [
+          "",
+          "IDEA-G",
+          "4.324e-5",
+          "1.543e-2",
+          "1.652e-1"
+        ],
+        [
+          "",
+          "sur-shr-HEDA",
+          "3.793e-19",
+          "3.145e-4",
+          "1.403e-2"
+        ],
+        [
+          "",
+          "dHEDA",
+          "1.987e-21",
+          "3.161e-8",
+          "1.426e-7"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Problem Descriptions",
+      "headers": [
+        "",
+        "Representation"
+      ],
+      "rows": [
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          "Schwefel",
+          "Schwefel $\\left(x_{1}, \\ldots x_{n}\\right)=\\sum_{i=1}^{n}\\left[\\left(x_{1}-x_{i}^{2}\\right)^{2}+\\left(1-x_{i}\\right)^{2}\\right]$"
+        ],
+        [
+          "Rosenbrock",
+          "Rosenbrock $\\left(x_{1}, \\ldots x_{n}\\right)=\\sum_{i=1}^{n-1}\\left[100 \\cdot\\left(x_{i+1}-x_{i}^{2}\\right)^{2}+\\left(1-x_{i}\\right)^{2}\\right]$"
+        ],
+        [
+          "",
+          "Domain"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Experimental Results",
+      "headers": [
+        "",
+        "",
+        "CM-MEDA",
+        "MEDA"
+      ],
+      "rows": [
+        [
+          "",
+          "Best",
+          0.1775,
+          1.7321
+        ],
+        [
+          -1,
+          "Mean",
+          0.276,
+          3.4524
+        ],
+        [
+          "",
+          "Std.",
+          0.0801,
+          0.7483
+        ],
+        [
+          "",
+          "Best",
+          "$3.879 \\mathrm{e}-11$",
+          0.0319
+        ],
+        [
+          -2,
+          "Mean",
+          0.0015,
+          0.0571
+        ],
+        [
+          "",
+          "Std.",
+          0.0057,
+          0.0112
+        ],
+        [
+          "",
+          "Best",
+          "$1.320 \\mathrm{e}-10$",
+          0.0378
+        ],
+        [
+          "Schwefel",
+          "Mean",
+          0.0152,
+          0.0682
+        ],
+        [
+          "",
+          "Std.",
+          0.0359,
+          0.0184
+        ],
+        [
+          "",
+          "Best",
+          6.5271,
+          4.2003
+        ],
+        [
+          "Rosenbrock",
+          "Mean",
+          7.216,
+          8.0493
+        ],
+        [
+          "",
+          "Std.",
+          0.3181,
+          1.4204
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 4
+    }
+  ]
+}

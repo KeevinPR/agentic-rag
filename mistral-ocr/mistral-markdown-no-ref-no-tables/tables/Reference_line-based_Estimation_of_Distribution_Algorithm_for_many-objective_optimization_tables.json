@@ -1,0 +1,797 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2017/Reference line-based Estimation of Distribution Algorithm for many-objective optimization.md",
+    "filename": "Reference line-based Estimation of Distribution Algorithm for many-objective optimization.md",
+    "title": "Reference line-based Estimation of Distribution Algorithm for many-objective optimization",
+    "year": "2017"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "The features of the Pareto-optimal fronts in the test problems.",
+      "headers": [
+        "Test problem",
+        "Features of Pareto optimal front"
+      ],
+      "rows": [
+        [
+          1,
+          "Linear, multi-modal"
+        ],
+        [
+          2,
+          "Concave"
+        ],
+        [
+          3,
+          "Concave, multi-modal"
+        ],
+        [
+          4,
+          "Concave, biased"
+        ],
+        [
+          1,
+          "Mixed, biased"
+        ],
+        [
+          2,
+          "Convex, disconnected, multi-modal, non-separable"
+        ],
+        [
+          3,
+          "Linear, degenerate, non-separable"
+        ],
+        [
+          4,
+          "Concave, multi-modal"
+        ],
+        [
+          5,
+          "Concave, deceptive"
+        ],
+        [
+          6,
+          "Concave, non-separable"
+        ],
+        [
+          7,
+          "Concave, biased"
+        ],
+        [
+          8,
+          "Concave, biased, non-separable"
+        ],
+        [
+          9,
+          "Concave, biased, multi-modal, deceptive, non-separable"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "The setting of divisions and the corresponding population size with different number of the objectives.",
+      "headers": [
+        "\\# of Objectives $(m)$",
+        "Division $(p)$",
+        "Population size $(N)$"
+      ],
+      "rows": [
+        [
+          5,
+          5,
+          126
+        ],
+        [
+          8,
+          32,
+          156
+        ],
+        [
+          10,
+          32,
+          275
+        ],
+        [
+          15,
+          21,
+          135
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    },
+    {
+      "table_number": "3",
+      "table_title": "The settings for crossover and mutation.",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Probability of SBX",
+          1.0
+        ],
+        [
+          "Probability of polynomial mutation",
+          "$1 / n$"
+        ],
+        [
+          "Distribution index of crossover",
+          20
+        ],
+        [
+          "Distribution index of mutation",
+          20
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "IGD results of MaOEDA/RL, RM-MEDA, and MBN-EDA over DTLZ1, DTLZ2, DTLZ3, and DTLZ4 test problems with $5-, 8-, 10-$, and 15 objective. Each compared algorithm is independently performed 20 runs, and the best median IGD results are highlighted in bold face. The symbols \" + ,\" \" \", \" and \"-\" denote whether the IGD results of the proposed MaOEDA/RL are statistically better than, equal to, and worse than that of the corresponding peer competitors with a significant level 5\\%, respectively.",
+      "headers": [
+        "",
+        "$m$",
+        "MaOEDA/RL",
+        "RM-MEDA",
+        "MBN-EDA"
+      ],
+      "rows": [
+        [
+          1,
+          5,
+          "1.872E-02",
+          "$2.982 \\mathrm{E}-02(\\cdot)$",
+          "$2.128 \\mathrm{E}-02(\\cdot)$"
+        ],
+        [
+          "",
+          8,
+          "$1.219 \\mathrm{E}-02$",
+          "$3.214 \\mathrm{E}-01(\\cdot)$",
+          "$5.223 \\mathrm{E}-03(\\cdot)$"
+        ],
+        [
+          "",
+          10,
+          "$2.146 \\mathrm{E}-03$",
+          "$1.434 \\mathrm{E}+00(\\cdot)$",
+          "$4.672 \\mathrm{E}-01(\\cdot)$"
+        ],
+        [
+          "",
+          15,
+          "$2.516 \\mathrm{E}-03$",
+          "$1.426 \\mathrm{E}+00(\\cdot)$",
+          "$3.956 \\mathrm{E}-01(\\cdot)$"
+        ],
+        [
+          2,
+          5,
+          "$8.147 \\mathrm{E}-03$",
+          "$9.058 \\mathrm{E}-03(\\cdot)$",
+          "$1.270 \\mathrm{E}-03(\\cdot)$"
+        ],
+        [
+          "",
+          8,
+          "$9.575 \\mathrm{E}-03$",
+          "$5.469 \\mathrm{E}-03(\\cdot)$",
+          "$2.785 \\mathrm{E}-02(\\cdot)$"
+        ],
+        [
+          "",
+          10,
+          "$1.758 \\mathrm{E}-03$",
+          "$7.563 \\mathrm{E}-03(\\cdot)$",
+          "$4.052 \\mathrm{E}-03(\\cdot)$"
+        ],
+        [
+          "",
+          15,
+          "$3.124 \\mathrm{E}-03$",
+          "$8.467 \\mathrm{E}-03(\\cdot)$",
+          "$5.332 \\mathrm{E}-03(\\cdot)$"
+        ],
+        [
+          3,
+          5,
+          "$1.419 \\mathrm{E}-02$",
+          "$4.218 \\mathrm{E}-01(\\cdot)$",
+          "$3.157 \\mathrm{E}-01(\\cdot)$"
+        ],
+        [
+          "",
+          8,
+          "$4.522 \\mathrm{E}-02$",
+          "$4.915 \\mathrm{E}-02(\\cdot)$",
+          "$6.527 \\mathrm{E}-02(\\cdot)$"
+        ],
+        [
+          "",
+          10,
+          "$1.759 \\mathrm{E}-03$",
+          "$5.649 \\mathrm{E}-02(\\cdot)$",
+          "$2.087 \\mathrm{E}-02(\\cdot)$"
+        ],
+        [
+          "",
+          15,
+          "$3.123 \\mathrm{E}-03$",
+          "$6.325 \\mathrm{E}-02(\\cdot)$",
+          "$2.108 \\mathrm{E}-02(\\cdot)$"
+        ],
+        [
+          4,
+          5,
+          "$3.570 \\mathrm{E}-02$",
+          "$8.491 \\mathrm{E}-02(\\cdot)$",
+          "$9.340 \\mathrm{E}-02(\\cdot)$"
+        ],
+        [
+          "",
+          8,
+          "$6.787 \\mathrm{E}-03$",
+          "$7.577 \\mathrm{E}-02(\\cdot)$",
+          "$6.431 \\mathrm{E}-03(\\cdot)$"
+        ],
+        [
+          "",
+          10,
+          "$2.193 \\mathrm{E}-03$",
+          "$2.522 \\mathrm{E}-03(\\cdot)$",
+          "$3.132 \\mathrm{E}-03(\\cdot)$"
+        ],
+        [
+          "",
+          15,
+          "$3.382 \\mathrm{E}-03$",
+          "$4.638 \\mathrm{E}-03(\\cdot)$",
+          "$3.786 \\mathrm{E}-03(\\cdot)$"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "HV results of MaOEDA/RL, RM-MEDA, and MBN-EDA over DTLZ1, DTLZ2, DTLZ3, and DTLZ4 test problems with $5-, 8$-, 10-, and 15-objective. Each compared algorithm is independently performed 20 runs, and the best median HV results are highlighted in bold face. The symbols \" + , \" \", \" and \"-\" denote whether the HV results of the proposed MaOEDA/RL are statistically better than, equal to, and worse than that of the corresponding peer competitors with a significant level 5\\%, respectively.",
+      "headers": [
+        "",
+        "$m$",
+        "MaOEDA/RL",
+        "RM-MEDA",
+        "MBN-EDA"
+      ],
+      "rows": [
+        [
+          1,
+          5,
+          0.9821,
+          "$0.9323(\\cdot)$",
+          "$0.9810(\\cdot)$"
+        ],
+        [
+          "",
+          8,
+          0.991,
+          "$0.0000(\\cdot)$",
+          "$0.8321(\\cdot)$"
+        ],
+        [
+          "",
+          10,
+          0.994,
+          "$0.0000(\\cdot)$",
+          "$0.0000(\\cdot)$"
+        ],
+        [
+          "",
+          15,
+          0.9877,
+          "$0.0000(\\cdot)$",
+          "$0.0000(\\cdot)$"
+        ],
+        [
+          2,
+          5,
+          0.9999,
+          "$0.9982(\\cdot)$",
+          "$0.9341(\\cdot)$"
+        ],
+        [
+          "",
+          8,
+          0.9999,
+          "$0.4555(\\cdot)$",
+          "$0.9838(\\cdot)$"
+        ],
+        [
+          "",
+          10,
+          0.9998,
+          "$0.3289(\\cdot)$",
+          "$0.8717(\\cdot)$"
+        ],
+        [
+          "",
+          15,
+          0.9993,
+          "$0.4716(\\cdot)$",
+          "$0.9101(\\cdot)$"
+        ],
+        [
+          3,
+          5,
+          0.9993,
+          "$0.7438(\\cdot)$",
+          "$0.9876(\\cdot)$"
+        ],
+        [
+          "",
+          8,
+          0.979,
+          "$0.0000(\\cdot)$",
+          "$0.0000(\\cdot)$"
+        ],
+        [
+          "",
+          10,
+          0.9999,
+          "$0.0000(\\cdot)$",
+          "$0.0000(\\cdot)$"
+        ],
+        [
+          "",
+          15,
+          0.9991,
+          "$0.0000(\\cdot)$",
+          "$0.0000(\\cdot)$"
+        ],
+        [
+          4,
+          5,
+          0.9319,
+          "$0.8893(\\cdot)$",
+          "$0.9217(\\cdot)$"
+        ],
+        [
+          "",
+          8,
+          0.9811,
+          "$0.9554(\\cdot)$",
+          "$0.9710(\\cdot)$"
+        ],
+        [
+          "",
+          10,
+          0.9997,
+          "$0.9993(\\cdot)$",
+          "$0.9977(\\cdot)$"
+        ],
+        [
+          "",
+          15,
+          0.9999,
+          "$0.9992(\\cdot)$",
+          "$0.9992(\\cdot)$"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Problem",
+        "\\# of Objective",
+        "Grid division"
+      ],
+      "rows": [
+        [
+          1,
+          "$5,8,10,15$",
+          "$9,7,11,11$"
+        ],
+        [
+          2,
+          "$5,8,10,15$",
+          "$11,11,10,11$"
+        ],
+        [
+          3,
+          "$5,8,10,15$",
+          "$9,11,7,7$"
+        ],
+        [
+          4,
+          "$5,8,10,15$",
+          "$10,7,9,11$"
+        ],
+        [
+          5,
+          "$5,8,10,15$",
+          "$11,11,11,9$"
+        ],
+        [
+          6,
+          "$5,8,10,15$",
+          "$10,9,11,9$"
+        ],
+        [
+          7,
+          "$5,8,10,15$",
+          "$7,7,11,9$"
+        ],
+        [
+          8,
+          "$5,8,10,15$",
+          "$11,9,10,11$"
+        ],
+        [
+          9,
+          "$5,8,10,15$",
+          "$11,11,11,9$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 3
+    },
+    {
+      "table_number": "7",
+      "table_title": "HV results of MaOEDA/RL, NSGA-III, GrEA, HypE, and MOEA/D on WFG1-WFG9 test problems with 5-, 8-, 10-, and 15-objective. Each compared algorithm is independently performed 20 runs, and the best median HV results are highlighted in bold face. The symbols \" + , \" $=$ \", and \"-\" denote whether the HV results of the proposed MaOEDA/RL are statistically better than, equal to, and worse than that of the corresponding peer competitors with a significant level 5\\%, respectively.",
+      "headers": [
+        "",
+        "$m$",
+        "MaOEDA/RL",
+        "NSGA-III",
+        "GrEA",
+        "HypE",
+        "MOEA/D"
+      ],
+      "rows": [
+        [
+          1,
+          5,
+          "8.1472E-01",
+          "9.3211E-01(-)",
+          "6.4322E-01(+)",
+          "2.7855E-01(+)",
+          "9.5750E-01(-)"
+        ],
+        [
+          "",
+          8,
+          "9.6496E-01",
+          "9.1340E-01(+)",
+          "9.0759E-01(+)",
+          "5.4694E-01(+)",
+          "9.0582E-01(+)"
+        ],
+        [
+          "",
+          10,
+          "9.6953E-01",
+          "8.4096E-01(+)",
+          "3.1026E-01(+)",
+          "4.0088E-02(+)",
+          "9.4458E-01(+)"
+        ],
+        [
+          "",
+          15,
+          "9.4533E-01",
+          "8.3636E-01(+)",
+          "4.7829E-01(+)",
+          "8.4675E-03(+)",
+          "8.9462E-01(+)"
+        ],
+        [
+          2,
+          5,
+          "9.5022E-01",
+          "8.2346E-01(+)",
+          "9.7132E-02(+)",
+          "6.9483E-01(+)",
+          "8.4072E-01(+)"
+        ],
+        [
+          "",
+          8,
+          "7.6552E-01",
+          "7.9520E-01(-)",
+          "6.4631E-01(+)",
+          "7.0936E-01(+)",
+          "5.6782E-01( + )"
+        ],
+        [
+          "",
+          10,
+          "7.8260E-01",
+          "9.7558E-01(-)",
+          "9.6238E-01(-)",
+          "7.4963E-01(+)",
+          "9.9454E-01(-)"
+        ],
+        [
+          "",
+          15,
+          "7.1982E-01",
+          "7.9038E-01(-)",
+          "9.5234E-01(-)",
+          "5.9507E-01(+)",
+          "9.6913E-01(-)"
+        ],
+        [
+          3,
+          5,
+          "9.9613E-01",
+          "9.6190E-01(-)",
+          "9.1334E-01(+)",
+          "8.0007E-01(+)",
+          "8.6869E-01( + )"
+        ],
+        [
+          "",
+          8,
+          "7.7917E-01",
+          "7.8528E-01(-)",
+          "6.5408E-01(+)",
+          "6.0198E-01(+)",
+          "7.4815E-01( + )"
+        ],
+        [
+          "",
+          10,
+          "6.4951E-01",
+          "6.2528E-01(-)",
+          "6.0187E-01(+)",
+          "1.2390E-01(+)",
+          "6.2325E-01( + )"
+        ],
+        [
+          "",
+          15,
+          "6.4327E-01",
+          "5.6635E-01(+)",
+          "5.7974E-01(+)",
+          "5.8788E-02(+)",
+          "6.2365E-01(-)"
+        ],
+        [
+          4,
+          5,
+          "9.0005E-01",
+          "9.4205E-01(-)",
+          "9.5613E-01(-)",
+          "7.8025E-01(+)",
+          "9.4479E-01(-)"
+        ],
+        [
+          "",
+          8,
+          "9.6455E-01",
+          "9.0272E-01(+)",
+          "8.2119E-01(+)",
+          "8.1126E-02(+)",
+          "7.4469E-01( + )"
+        ],
+        [
+          "",
+          10,
+          "8.6752E-01",
+          "7.9006E-01(+)",
+          "6.4474E-01(+)",
+          "4.3599E-02(+)",
+          "5.9538E-01( + )"
+        ],
+        [
+          "",
+          15,
+          "7.1577E-01",
+          "7.8331E-01(+)",
+          "5.4342E-01(+)",
+          "2.7506E-02(+)",
+          "3.5799E-01( + )"
+        ],
+        [
+          5,
+          5,
+          "9.2939E-01",
+          "8.1763E-01(+)",
+          "8.1158E-01(+)",
+          "5.3283E-01(+)",
+          "9.3900E-01(-)"
+        ],
+        [
+          "",
+          8,
+          "7.7571E-01",
+          "7.9483E-01(-)",
+          "8.7594E-01(-)",
+          "6.2248E-01(+)",
+          "6.4432E-01( + )"
+        ],
+        [
+          "",
+          10,
+          "8.8391E-01",
+          "8.2598E-01(+)",
+          "8.3914E-01(+)",
+          "2.5366E-01(+)",
+          "5.3683E-01( + )"
+        ],
+        [
+          "",
+          15,
+          "8.0213E-01",
+          "8.0120E-01(-)",
+          "7.1181E-01(+)",
+          "1.5036E-02(+)",
+          "3.7874E-01( + )"
+        ],
+        [
+          6,
+          5,
+          "9.7838E-01",
+          "9.7975E-01(-)",
+          "9.0488E-01(+)",
+          "6.0284E-01(+)",
+          "8.4431E-01( + )"
+        ],
+        [
+          "",
+          8,
+          "9.2885E-01",
+          "8.0101E-01(+)",
+          "8.5516E-02(+)",
+          "4.3887E-01(+)",
+          "7.1122E-01( + )"
+        ],
+        [
+          "",
+          10,
+          "8.5995E-01",
+          "8.5037E-01(+)",
+          "8.5933E-01(-)",
+          "4.3294E-02(+)",
+          "6.3284E-01( + )"
+        ],
+        [
+          "",
+          15,
+          "8.3141E-01",
+          "8.5269E-01(-)",
+          "7.7053E-01(+)",
+          "2.5226E-02(+)",
+          "4.5396E-01( + )"
+        ],
+        [
+          7,
+          5,
+          "9.8798E-01",
+          "9.6309E-01(+)",
+          "8.8517E-01(+)",
+          "6.7973E-01(+)",
+          "9.8712E-01(-)"
+        ],
+        [
+          "",
+          8,
+          "9.0472E-01",
+          "9.0372E-01(-)",
+          "8.5944E-01(+)",
+          "5.7672E-01(+)",
+          "8.9092E-01( + )"
+        ],
+        [
+          "",
+          10,
+          "8.8499E-01",
+          "8.4639E-01(+)",
+          "8.1858E-01(+)",
+          "4.5930E-02(+)",
+          "5.8109E-01( + )"
+        ],
+        [
+          "",
+          15,
+          "8.3576E-01",
+          "8.6573E-01(-)",
+          "7.9172E-01(+)",
+          "3.0985E-02(+)",
+          "3.1785E-01( + )"
+        ],
+        [
+          8,
+          5,
+          "8.8651E-01",
+          "8.1755E-01(+)",
+          "7.1269E-01(+)",
+          "4.2431E-02(+)",
+          "8.1815E-01( + )"
+        ],
+        [
+          "",
+          8,
+          "8.0033E-01",
+          "8.3470E-01(-)",
+          "8.3138E-01(-)",
+          "6.0471E-02(+)",
+          "8.0336E-01(-)"
+        ],
+        [
+          "",
+          10,
+          "8.3222E-01",
+          "7.2493E-01(+)",
+          "7.7672E-01(+)",
+          "3.3228E-02(+)",
+          "4.2684E-01( + )"
+        ],
+        [
+          "",
+          15,
+          "8.2378E-01",
+          "7.1342E-01(+)",
+          "7.4198E-01(+)",
+          "2.4417E-02(+)",
+          "2.7479E-01( + )"
+        ],
+        [
+          9,
+          5,
+          "9.5163E-01",
+          "9.8305E-01(-)",
+          "9.2033E-01(+)",
+          "7.3786E-01(+)",
+          "9.8406E-01(-)"
+        ],
+        [
+          "",
+          8,
+          "8.8187E-01",
+          "8.5552E-01(+)",
+          "7.0110E-01(+)",
+          "3.2601E-02(+)",
+          "8.9464E-01(-)"
+        ],
+        [
+          "",
+          10,
+          "8.2617E-01",
+          "7.1271E-01(+)",
+          "7.8000E-01(+)",
+          "2.7937E-02(+)",
+          "4.8844E-01( + )"
+        ],
+        [
+          "",
+          15,
+          "7.4124E-01",
+          "6.3940E-01(+)",
+          "7.0578E-01(+)",
+          "9.9595E-13( + )",
+          "3.0149E-01( + )"
+        ],
+        [
+          "$+/-1-$",
+          "",
+          "",
+          20610,
+          3015,
+          3600,
+          2637
+        ]
+      ],
+      "row_count": 37,
+      "column_count": 7
+    }
+  ]
+}

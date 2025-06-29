@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/Trajectory optimization of space vehicle in rendezvous proximity operation with evolutionary feasibility conserving techniques.md",
+    "filename": "Trajectory optimization of space vehicle in rendezvous proximity operation with evolutionary feasibility conserving techniques.md",
+    "title": "Trajectory optimization of space vehicle in rendezvous proximity operation with evolutionary feasibility conserving techniques",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 contains the parameters for close-range space rendezvous mission considered in the experiments. Note that the specified initial mass, reference area, and the drag coefficient stands for both target and chaser within the simulation. Since the main aim of the experiments is to analyze the robustness of the presented approach and evaluating the practicality of the schemes for interpolation, several initial conditions",
+      "headers": [
+        "Parameter",
+        "Value",
+        "",
+        "",
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Semi-major axis",
+          "a",
+          12500,
+          "Initial mass",
+          "$m_{0}$",
+          170
+        ],
+        [
+          "Inclination",
+          1,
+          "$10^{\\circ}$",
+          "Thrust limit",
+          "$T$",
+          "$\\pm 120 \\mathrm{~N}$"
+        ],
+        [
+          "Eccentricity",
+          "e",
+          0.4,
+          "Specific impulse",
+          "$I_{s p}$",
+          300
+        ],
+        [
+          "Right ascension",
+          "$\\Omega$",
+          "$15^{\\circ}$",
+          "Final distance",
+          "$\\sigma_{r}$",
+          10
+        ],
+        [
+          "Arg. of perigee",
+          "$\\omega$",
+          "$65^{\\circ}$",
+          "Final velocity",
+          "$\\sigma_{z}$",
+          "$0.1 \\mathrm{~m} / \\mathrm{s}$"
+        ],
+        [
+          "True anomaly",
+          "$v$",
+          "$230^{\\circ}$",
+          "Drag coefficient",
+          "$C_{D}$",
+          2
+        ],
+        [
+          "Total Time",
+          "$t_{f}$",
+          5,
+          "Reference area",
+          "A",
+          "$3 \\mathrm{~m}^{2}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "2",
+      "table_title": "Initial values for state vector.",
+      "headers": [
+        "",
+        "Relative distance",
+        "",
+        "",
+        "Relative velocity",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$C_{1}$",
+          "$\\bar{r}_{i}=\\left\\{+1300+500\\right.$",
+          "$-1500\\}$",
+          "m",
+          "$\\bar{r}_{i}=\\{-2.9$",
+          "$-1.2$",
+          "$+1.7\\} \\mathrm{m} / \\mathrm{s}$"
+        ],
+        [
+          "$C_{2}$",
+          "$\\bar{r}_{i}=\\{+800$",
+          "$-1500$",
+          "$+1250\\}$",
+          "m",
+          "$\\bar{r}_{i}=\\{+7.3$",
+          "$+6.8+1.1\\}$ m/s"
+        ],
+        [
+          "$C_{3}$",
+          "$\\bar{r}_{i}=\\{-120$",
+          "$+2700$",
+          "$+1430\\}$",
+          "m",
+          "$\\bar{r}_{i}=\\{+1.5$",
+          "$-12.1 \\quad-5.4\\}$ m/s"
+        ],
+        [
+          "$C_{4}$",
+          "$\\bar{r}_{i}=\\{-560$",
+          "$-320$",
+          "$-1790\\}$",
+          "m",
+          "$\\bar{r}_{i}=\\{-2.1$",
+          "$+4.3 \\quad-14.8\\}$ m/s"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 7
+    },
+    {
+      "table_number": "3",
+      "table_title": "High quality solutions (top ten) for fuel-optimal transfers in close-range space rendezvous.",
+      "headers": [
+        "$\\mathrm{C}_{1}$",
+        "",
+        "",
+        "$\\mathrm{C}_{2}$",
+        "",
+        "",
+        "$\\mathrm{C}_{3}$",
+        "",
+        "",
+        "$\\mathrm{C}_{4}$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$m_{f}$",
+          "Map.",
+          "$N_{e}$",
+          "$m_{f}$",
+          "Map.",
+          "$N_{e}$",
+          "$m_{f}$",
+          "Map.",
+          "$N_{e}$",
+          "$m_{f}$",
+          "Map.",
+          "$N_{e}$"
+        ],
+        [
+          1.81272,
+          "BS",
+          18,
+          2.41731,
+          "BS",
+          18,
+          1.59422,
+          "BS",
+          18,
+          2.56913,
+          "BS",
+          18
+        ],
+        [
+          1.82008,
+          "BS",
+          19,
+          2.41991,
+          "BS",
+          21,
+          1.59428,
+          "BS",
+          19,
+          2.57063,
+          "LD",
+          18
+        ],
+        [
+          1.82061,
+          "BS",
+          20,
+          2.4247,
+          "BS",
+          21,
+          1.59774,
+          "BD",
+          19,
+          2.573,
+          "BD",
+          17
+        ],
+        [
+          1.82092,
+          "LS",
+          18,
+          2.53698,
+          "BD",
+          18,
+          1.59804,
+          "BS",
+          21,
+          2.57338,
+          "LD",
+          18
+        ],
+        [
+          1.82363,
+          "BS",
+          19,
+          2.53884,
+          "BD",
+          21,
+          1.60652,
+          "LS",
+          18,
+          2.57483,
+          "BS",
+          21
+        ],
+        [
+          1.8334,
+          "BS",
+          18,
+          2.54913,
+          "LD",
+          18,
+          1.61041,
+          "BS",
+          19,
+          2.57642,
+          "LS",
+          18
+        ],
+        [
+          1.83557,
+          "LD",
+          18,
+          2.55159,
+          "BS",
+          20,
+          1.61129,
+          "BS",
+          18,
+          2.57704,
+          "BD",
+          18
+        ],
+        [
+          1.83562,
+          "BS",
+          19,
+          2.55721,
+          "BS",
+          19,
+          1.61427,
+          "BS",
+          19,
+          2.57757,
+          "LS",
+          19
+        ],
+        [
+          1.83741,
+          "BS",
+          19,
+          2.56299,
+          "LD",
+          21,
+          1.62225,
+          "BS",
+          20,
+          2.57796,
+          "BS",
+          18
+        ],
+        [
+          1.83764,
+          "BS",
+          17,
+          2.56483,
+          "LD",
+          20,
+          1.63085,
+          "BS",
+          17,
+          2.57864,
+          "LD",
+          21
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 12
+    },
+    {
+      "table_number": "4",
+      "table_title": "Fuel mass $\\left(m_{f}\\right)$ corresponding to the best obtained solutions.",
+      "headers": [
+        "",
+        "$C_{1}$",
+        "",
+        "$C_{2}$",
+        "",
+        "$C_{3}$",
+        "",
+        "$C_{4}$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "$m_{f}$",
+          "$N_{p}$",
+          "$m_{f}$",
+          "$N_{p}$",
+          "$m_{f}$",
+          "$N_{p}$",
+          "$m_{f}$",
+          "$N_{p}$"
+        ],
+        [
+          "Shape preserving",
+          1.81272,
+          18,
+          2.41731,
+          18,
+          1.59422,
+          18,
+          2.56913,
+          18
+        ],
+        [
+          "Catmull-Rom",
+          1.84521,
+          20,
+          2.64096,
+          18,
+          1.65746,
+          19,
+          2.69233,
+          18
+        ],
+        [
+          "Not-a-Knot",
+          1.92706,
+          17,
+          2.92966,
+          20,
+          1.93098,
+          18,
+          3.05119,
+          19
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 9
+    }
+  ]
+}

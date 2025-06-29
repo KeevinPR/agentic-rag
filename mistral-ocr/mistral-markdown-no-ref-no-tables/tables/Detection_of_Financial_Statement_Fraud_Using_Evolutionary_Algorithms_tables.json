@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Detection of Financial Statement Fraud Using Evolutionary Algorithms.md",
+    "filename": "Detection of Financial Statement Fraud Using Evolutionary Algorithms.md",
+    "title": "Detection of Financial Statement Fraud Using Evolutionary Algorithms",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "Active",
+        "$V_{1}$",
+        "",
+        "$V_{2}$",
+        "",
+        "$\\cdots$",
+        "$V_{n}$",
+        ""
+      ],
+      "rows": [
+        [
+          "$R_{1}$",
+          1,
+          4,
+          0,
+          1,
+          1,
+          "$\\cdots$",
+          0,
+          1
+        ],
+        [
+          "$R_{2}$",
+          0,
+          0,
+          1,
+          2,
+          1,
+          "$\\cdots$",
+          4,
+          1
+        ],
+        [
+          "",
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$",
+          "$\\vdots$"
+        ],
+        [
+          "$R_{m}$",
+          1,
+          1,
+          0,
+          3,
+          0,
+          "$\\cdots$",
+          3,
+          0
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 9
+    },
+    {
+      "table_number": "1",
+      "table_title": "Financial variable definitions. The assignment of the financial variables and SAS No. 99 red flags into Fraud Triangle categories was based on the work of Feroz et al. (2000) and Skousen et al. (2009).",
+      "headers": [
+        "Variable",
+        "Definition",
+        "Red Flag(s) <br> (Fraud Triangle Category)",
+        "Significant $\\boldsymbol{p}$ value in Literature"
+      ],
+      "rows": [
+        [
+          "SCHANGE",
+          "Change in Sales",
+          "Rapid growth or unusual profitability (Pressure)",
+          "--"
+        ],
+        [
+          "ROA",
+          "Return on Assets",
+          "High degree of competition or declining profit margins",
+          1998
+        ],
+        [
+          "CATA",
+          "Cash Flows to Earnings Growth",
+          "Operating losses (Pressure)",
+          "--"
+        ],
+        [
+          "ROE",
+          "Return on Equity",
+          "High degree of competition or declining profit margins (Pressure)",
+          "--"
+        ],
+        [
+          "GPM",
+          "Gross Profit Margin",
+          "High degree of competition or declining profit margins (Pressure)",
+          "--"
+        ],
+        [
+          "LEV",
+          "Leverage",
+          "Need to obtain additional debt or equity financing",
+          1995
+        ],
+        [
+          "ACHANGE",
+          "Change in Assets",
+          "Rapid growth or unusual profitability",
+          0.2009
+        ],
+        [
+          "FREEC",
+          "Free Cash Flow",
+          "Recurring negative cash flows from operations",
+          0.2009
+        ],
+        [
+          "FINANCE",
+          "Demand for Financing",
+          "Need to obtain additional debt or equity financing",
+          0.2009
+        ],
+        [
+          "INVSAL",
+          "Inventory to Sales",
+          "Declines in customer demand (Pressure)",
+          "--"
+        ],
+        [
+          "SALTA",
+          "Sales to Assets",
+          "High degree of competition or declining profit margins",
+          1995
+        ],
+        [
+          "RECEIVABLE",
+          "Change in Receivables",
+          "Accounts based on significant estimates; Significant, unusual, or highly complex transactions",
+          0.2011
+        ],
+        [
+          "INVENTORY",
+          "Change in Inventory",
+          "Accounts based on significant estimates; Significant, unusual, or highly complex transactions",
+          0.20111998
+        ],
+        [
+          "MARKETDOM",
+          "Market Domination",
+          "A strong financial presence or ability to dominate a certain industry sector (Opportunity)",
+          "--"
+        ],
+        [
+          "DIFFAUD",
+          "Difficult to Audit Transactions",
+          "Significant, unusual, or highly complex transactions (Opportunity)",
+          "--"
+        ],
+        [
+          "UROE",
+          "Unusual Return on Equity",
+          "A strong financial presence or ability to dominate a certain industry sector (Opportunity)",
+          "--"
+        ],
+        [
+          "TACC",
+          "Total Accruals",
+          "Aggressive or unrealistic forecasts; Interest by management in employing inappropriate means to minimize reported earnings for tax (Rationalization)",
+          "--"
+        ],
+        [
+          "$C A C C$",
+          "Current <br> Accruals",
+          "Aggressive or unrealistic forecasts; Interest by management in employing inappropriate means to minimize reported earnings for tax (Rationalization)",
+          "$--$"
+        ],
+        [
+          ":--:",
+          ":--:",
+          ":--:",
+          ":--:"
+        ]
+      ],
+      "row_count": 19,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Summary statistics for the GA and MARLEDA. Each statistic is stated as a percentage.",
+      "headers": [
+        "Model",
+        "Training",
+        "",
+        "",
+        "",
+        "",
+        "Validation",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Accuracy",
+          "",
+          "",
+          "ActiveRules",
+          "ActiveVars",
+          "Accuracy",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Max",
+          "Mean",
+          "Min",
+          "",
+          "",
+          "Max",
+          "Mean",
+          "Min"
+        ],
+        [
+          "GA",
+          77.24,
+          75.47,
+          73.37,
+          60.5,
+          50.9,
+          75.56,
+          63.75,
+          58.7
+        ],
+        [
+          "MARLEDA",
+          77.43,
+          74.26,
+          71.22,
+          66.5,
+          49.11,
+          73.33,
+          64.46,
+          52.08
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 9
+    },
+    {
+      "table_number": "3",
+      "table_title": "Supplemental classification statistics for the GA and MARLEDA. The following statistics are stated as percentages: Sensitivity, Specificity, Precision, and Recall.",
+      "headers": [
+        "Model",
+        "Validation (Total - 10 Folds; 458 <br> Observations)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Sensitivity",
+          "Specificity",
+          "Precision",
+          "Recall"
+        ],
+        [
+          "GA",
+          66.38,
+          61.14,
+          63.07,
+          64.52
+        ],
+        [
+          "MARLEDA",
+          68.12,
+          60.7,
+          63.41,
+          65.57
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    }
+  ]
+}

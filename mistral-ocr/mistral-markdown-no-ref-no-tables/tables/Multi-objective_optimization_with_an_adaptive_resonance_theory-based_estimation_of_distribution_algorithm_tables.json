@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2013/Multi-objective optimization with an adaptive resonance theory-based estimation of distribution algorithm.md",
+    "filename": "Multi-objective optimization with an adaptive resonance theory-based estimation of distribution algorithm.md",
+    "title": "Multi-objective optimization with an adaptive resonance theory-based estimation of distribution algorithm",
+    "year": "2013"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Parameters of the algorithms used in the experiments",
+      "headers": [
+        "Common parameters (if applicable)",
+        ""
+      ],
+      "rows": [
+        [
+          "Population size ( $n_{\\text {pop }}$ )",
+          "$250 \\cdot 10^{\\frac{30}{2}-1}$"
+        ],
+        [
+          "MARTEDA",
+          ""
+        ],
+        [
+          2,
+          0.05
+        ],
+        [
+          "Initial standard deviations $(\\varphi)$",
+          0.01
+        ],
+        [
+          "Selection percentile $(\\alpha)$",
+          0.3
+        ],
+        [
+          "$\\hat{P}_{t}$ to $N^{*}$ ratio $(\\gamma)$",
+          0.5
+        ],
+        [
+          "Substitution percentile $(\\omega)$",
+          0.25
+        ],
+        [
+          "MONEDA",
+          ""
+        ],
+        [
+          "Number of initial GNG nodes $\\left(N_{0}\\right)$",
+          2
+        ],
+        [
+          "Maximum edge age $\\left(v_{\\max }\\right)$",
+          40
+        ],
+        [
+          "Best node learning rate $\\left(\\varepsilon_{\\mathrm{b}}\\right)$",
+          0.1
+        ],
+        [
+          "Neighboring nodes learning rate $\\left(\\varepsilon_{\\mathrm{v}}\\right)$",
+          0.05
+        ],
+        [
+          "Insertion error decrement rate $\\left(\\delta_{\\mathrm{I}}\\right)$",
+          0.1
+        ],
+        [
+          "General error decrement rate $\\left(\\delta_{\\mathrm{G}}\\right)$",
+          0.1
+        ],
+        [
+          "Accumulated error threshold $(\\rho)$",
+          0.2
+        ],
+        [
+          "Selection percentile $(\\alpha)$",
+          0.3
+        ],
+        [
+          "$\\hat{\\mathscr{P}}_{t}$ to $N_{\\max }$ ratio $(\\gamma)$",
+          0.5
+        ],
+        [
+          "Substitution percentile $(\\omega)$",
+          0.25
+        ],
+        [
+          "Naïve MIDEA",
+          ""
+        ],
+        [
+          "Selection percentile $(\\tau)$",
+          0.3
+        ],
+        [
+          "Diversity percentile $(\\delta)$",
+          15
+        ],
+        [
+          "Number of parents of a variable $(\\kappa)$",
+          2
+        ],
+        [
+          "Maximum number of clusters",
+          "$\\lceil 0.5\\lfloor\\tau n_{\\text {pop }}\\rfloor$"
+        ],
+        [
+          "Threshold for the leader algorithm",
+          0.1
+        ],
+        [
+          "SMS-EMOA",
+          ""
+        ],
+        [
+          "Distribution index for SBX $\\left(\\eta_{c}\\right)$",
+          15
+        ],
+        [
+          "Dist. index for polyn. mutation $\\left(\\eta_{m}\\right)$",
+          20
+        ],
+        [
+          "MrBOA",
+          ""
+        ],
+        [
+          "Selection portion $(\\tau)$",
+          0.3
+        ],
+        [
+          "Number of parents of a variable",
+          5
+        ],
+        [
+          "Number of mixture components",
+          3
+        ],
+        [
+          "Threshold of leader algorithm",
+          0.3
+        ],
+        [
+          "MOEA/D",
+          ""
+        ],
+        [
+          "Number of subproblems $(N)$",
+          "$300 M$"
+        ],
+        [
+          "Number of the weight vectors in the neighborhood of weight vector $(T)$",
+          "$0.1 N$"
+        ],
+        [
+          "Max. num. of solutions replaced $\\left(n_{r}\\right)$",
+          "$0.01 N$"
+        ],
+        [
+          "Parent solution selection prob. $(\\delta)$",
+          0.9
+        ],
+        [
+          "NSGA-II",
+          ""
+        ],
+        [
+          "Tournament selection size",
+          5
+        ],
+        [
+          "Number of parent individuals",
+          "$\\left\\lfloor 0.3 n_{\\text {pop }}\\right\\rfloor$"
+        ],
+        [
+          "Number of offspring individuals",
+          "$\\left\\lfloor 0.25 n_{\\text {pop }}\\right\\rfloor$"
+        ],
+        [
+          "Crossover probability $\\left(p_{c}\\right)$",
+          0.7
+        ],
+        [
+          "Distribution index for SBX $\\left(\\eta_{c}\\right)$",
+          15
+        ],
+        [
+          "Mutation probability $\\left(p_{m}\\right)$",
+          "$\\frac{1}{n_{\\text {pop }}}$"
+        ],
+        [
+          "Dist. index for polyn. mutation $\\left(\\eta_{m}\\right)$",
+          20
+        ],
+        [
+          "Monte Carlo sample size (for $M>3$ )",
+          "$10^{4}$"
+        ]
+      ],
+      "row_count": 46,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 (continued)",
+      "headers": [
+        "RM-MEDA",
+        ""
+      ],
+      "rows": [
+        [
+          "Selection portion",
+          0.3
+        ],
+        [
+          "Number of LPCA clusters",
+          "$\\frac{10}{3} M$"
+        ],
+        [
+          "Maximum training steps in LPCA",
+          "$\\frac{20}{3} M$"
+        ],
+        [
+          "Extension rate",
+          0.25
+        ],
+        [
+          "HypE",
+          ""
+        ],
+        [
+          "-Variation operators as in NSGA-II-",
+          ""
+        ],
+        [
+          "$\\quad$ Monte Carlo sample size (for $M>3$ )",
+          "$10^{4}$"
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    }
+  ]
+}

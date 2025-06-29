@@ -1,0 +1,612 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Learning Ensembles of Neural Networks by Means of a Bayesian Artificial Immune System.md",
+    "filename": "Learning Ensembles of Neural Networks by Means of a Bayesian Artificial Immune System.md",
+    "title": "Learning Ensembles of Neural Networks by Means of a Bayesian Artificial Immune System",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "",
+      "headers": [
+        "SET OF CANDIDATE ACTIVATION FUNCTIONS",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Function ID",
+          "Function",
+          "Expression"
+        ],
+        [
+          "$f_{0}$",
+          "Null function",
+          "$y=0$"
+        ],
+        [
+          "$f_{1}$",
+          "Hyperbolic tangent",
+          "$y=\\tan \\mathrm{h}(x)$"
+        ],
+        [
+          "$f_{2}$",
+          "Cosine",
+          "$y=\\cos (x)$"
+        ],
+        [
+          "$f_{3}$",
+          "Sine",
+          "$y=\\sin (x)$"
+        ],
+        [
+          "$f_{4}$",
+          "Hyperbolic sine",
+          "$y=\\sin \\mathrm{h}(x)$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "OUTPUTS FOR TWO CLASSIFIERS",
+      "headers": [
+        "",
+        "$A b_{m}$ correct",
+        "$A b_{m}$ incorrect"
+      ],
+      "rows": [
+        [
+          "$A b_{i}$ correct",
+          "$N^{11}$",
+          "$N^{10}$"
+        ],
+        [
+          "$A b_{i}$ incorrect",
+          "$N^{01}$",
+          "$N^{00}$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "III",
+      "table_title": "Characteristics of the Datasets",
+      "headers": [
+        "Dataset",
+        "\\# Instances",
+        "\\# Attributes",
+        "\\# Classes"
+      ],
+      "rows": [
+        [
+          "WDBC",
+          569,
+          30,
+          2
+        ],
+        [
+          "Bupa",
+          345,
+          6,
+          2
+        ],
+        [
+          "Ionosphere",
+          350,
+          34,
+          2
+        ],
+        [
+          "Pima",
+          768,
+          8,
+          2
+        ],
+        [
+          "Sonar",
+          208,
+          60,
+          2
+        ],
+        [
+          "Card",
+          690,
+          15,
+          2
+        ],
+        [
+          "Vote",
+          435,
+          16,
+          2
+        ],
+        [
+          "Hepatitis",
+          155,
+          19,
+          2
+        ],
+        [
+          "Iris",
+          155,
+          4,
+          3
+        ],
+        [
+          "Wine",
+          178,
+          13,
+          3
+        ],
+        [
+          "Glass",
+          214,
+          10,
+          6
+        ],
+        [
+          "Satellite",
+          6435,
+          36,
+          6
+        ],
+        [
+          "Letter",
+          20000,
+          16,
+          26
+        ],
+        [
+          "Soybean",
+          683,
+          35,
+          19
+        ],
+        [
+          "Image",
+          2310,
+          19,
+          7
+        ],
+        [
+          "Vehicle",
+          946,
+          18,
+          4
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 4
+    },
+    {
+      "table_number": "IV",
+      "table_title": "AVERAGE PERFORMANCE OF THE BEST NEURAL NETWORK OVER 30",
+      "headers": [
+        "Dataset",
+        "Accuracy (\\%)",
+        "No. of neurons"
+      ],
+      "rows": [
+        [
+          "WDBC",
+          "$98.2 \\pm 0.6$",
+          5.2
+        ],
+        [
+          "Bupa",
+          "$73.8 \\pm 1.7$",
+          3.9
+        ],
+        [
+          "Ionosphere",
+          "$93.8 \\pm 1.3$",
+          5.2
+        ],
+        [
+          "Pima",
+          "$79.1 \\pm 1.5$",
+          3.6
+        ],
+        [
+          "Sonar",
+          "$84.7 \\pm 2.1$",
+          6.1
+        ],
+        [
+          "Card",
+          "$83.4 \\pm 1.2$",
+          5.7
+        ],
+        [
+          "Vote",
+          "$96.3 \\pm 0.9$",
+          7.3
+        ],
+        [
+          "Hepatitis",
+          "$82.5 \\pm 1.2$",
+          8.5
+        ],
+        [
+          "Iris",
+          "$97.6 \\pm 0.9$",
+          3.2
+        ],
+        [
+          "Wine",
+          "$98.7 \\pm 1.4$",
+          5.4
+        ],
+        [
+          "Glass",
+          "$67.3 \\pm 3.2$",
+          7.1
+        ],
+        [
+          "Satellite",
+          "$86.9 \\pm 3.7$",
+          9.3
+        ],
+        [
+          "Letter",
+          "$79.2 \\pm 4.4$",
+          7.6
+        ],
+        [
+          "Soybean",
+          "$92.1 \\pm 1.6$",
+          5.2
+        ],
+        [
+          "Image",
+          "$95.9 \\pm 1.8$",
+          4.8
+        ],
+        [
+          "Vehicle",
+          "$77.4 \\pm 2.2$",
+          6.5
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 3
+    },
+    {
+      "table_number": "V",
+      "table_title": "AVERAGE CLASSIFICATION RATE OF THE ENSEMBLES",
+      "headers": [
+        "Dataset",
+        "Accuracy <br> $(\\%)$",
+        "Generated <br> Components",
+        "Selected <br> Components",
+        "Gain (\\%)"
+      ],
+      "rows": [
+        [
+          "WDBC",
+          "$98.7 \\pm 1.1$",
+          8.6,
+          3.4,
+          0.5
+        ],
+        [
+          "Bupa",
+          "$76.2 \\pm 2.1$",
+          15.2,
+          9.7,
+          2.4
+        ],
+        [
+          "Ionosphere",
+          "$97.1 \\pm 2.3$",
+          19.7,
+          10.7,
+          3.3
+        ],
+        [
+          "Pima",
+          "$81.8 \\pm 1.7$",
+          12.1,
+          7.3,
+          2.7
+        ],
+        [
+          "Sonar",
+          "$86.4 \\pm 2.9$",
+          17.4,
+          12.8,
+          1.7
+        ],
+        [
+          "Card",
+          "$87.6 \\pm 0.9$",
+          16.9,
+          11.6,
+          4.2
+        ],
+        [
+          "Vote",
+          "$97.2 \\pm 1.6$",
+          11.3,
+          7.7,
+          0.9
+        ],
+        [
+          "Hepatitis",
+          "$84.1 \\pm 2.2$",
+          13.7,
+          6.9,
+          1.6
+        ],
+        [
+          "Iris",
+          "$98.8 \\pm 1.3$",
+          6.7,
+          6.4,
+          1.2
+        ],
+        [
+          "Wine",
+          "$99.3 \\pm 1.2$",
+          7.5,
+          5.9,
+          0.6
+        ],
+        [
+          "Glass",
+          "$73.6 \\pm 2.7$",
+          18.1,
+          10.8,
+          6.3
+        ],
+        [
+          "Satellite",
+          "$89.7 \\pm 3.4$",
+          19.2,
+          14.5,
+          2.8
+        ],
+        [
+          "Letter",
+          "$81.5 \\pm 3.7$",
+          21.8,
+          13.6,
+          2.3
+        ],
+        [
+          "Soybean",
+          "$96.9 \\pm 1.1$",
+          8.9,
+          7.7,
+          4.8
+        ],
+        [
+          "Image",
+          "$97.8 \\pm 2.0$",
+          7.2,
+          6.8,
+          1.9
+        ],
+        [
+          "Vehicle",
+          "$81.3 \\pm 3.1$",
+          15.3,
+          8.2,
+          3.9
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": "VI",
+      "table_title": "AVERAGE ENSEMBLE DIVERSITY CONSIDERING 30",
+      "headers": [
+        "Dataset",
+        "Diversity",
+        "Dataset",
+        "Diversity"
+      ],
+      "rows": [
+        [
+          "WDBC",
+          0.08,
+          "Iris",
+          0.19
+        ],
+        [
+          "Bupa",
+          0.28,
+          "Wine",
+          0.16
+        ],
+        [
+          "Ionosphere",
+          0.24,
+          "Glass",
+          0.26
+        ],
+        [
+          "Pima",
+          0.29,
+          "Satellite",
+          0.29
+        ],
+        [
+          "Sonar",
+          0.35,
+          "Letter",
+          0.34
+        ],
+        [
+          "Card",
+          0.31,
+          "Soybean",
+          0.37
+        ],
+        [
+          "Vote",
+          0.33,
+          "Image",
+          0.22
+        ],
+        [
+          "Hepatitis",
+          0.26,
+          "Vehicle",
+          0.32
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "VII",
+      "table_title": "AVERAGE CLASSIFICATION RATE OVER 30 EXECUTIons. THE NUMBER UNDER PARENTIRESIS",
+      "headers": [
+        "Dataset",
+        "BAIS",
+        "EENCL",
+        "Coevolution",
+        "BOA",
+        "AIS"
+      ],
+      "rows": [
+        [
+          "WDBC",
+          "$98.7(3.4)$",
+          "$97.2(9.6)$",
+          "$96.6(10)$ *",
+          "$98.1(11.3)$",
+          "$97.7(7.5)$ *"
+        ],
+        [
+          "BUPA",
+          "$76.2(9.7)$",
+          "$75.7(17.8)$",
+          "$76.1(10)$",
+          "$74.4(12.5)$ *",
+          "$75.3(8.2)$ *"
+        ],
+        [
+          "Ionosphere",
+          "$97.1(10.7)$",
+          "$94.5(23.4)$ *",
+          "$93.8(10)$ *",
+          "$94.9(10.4)$ *",
+          "$95.6(9.6)$ *"
+        ],
+        [
+          "Pima",
+          "$81.8(7.3)$",
+          "$77.6(16.7)$ *",
+          "$78.3(10)$ *",
+          "$78.4(13.1)$ *",
+          "$79.2(11.3)$ *"
+        ],
+        [
+          "Sonar",
+          "$86.4(12.8)$",
+          "$86.3(19.2)$",
+          "$79.6(10)$ *",
+          "$84.9(11.8)$ *",
+          "$85.7(14.8)$"
+        ],
+        [
+          "Card",
+          "$87.6(11.6)$",
+          "$86.1(13.4)$ *",
+          "$86.2(10)$ *",
+          "$84.5(15.2)$ *",
+          "$87.2(10.6)$"
+        ],
+        [
+          "Vote",
+          "$96.3(7.7)$",
+          "$94.7(14.3)$ *",
+          "$93.4(10)$ *",
+          "$93.7(14.6)$ *",
+          "$95.9(12.3)$"
+        ],
+        [
+          "Hepatitis",
+          "$84.1(6.9)$",
+          "$83.8(11.6)$",
+          "$82.5(10)$ *",
+          "$81.8(9.7)$ *",
+          "$82.8(10.4)$ *"
+        ],
+        [
+          "Iris",
+          "$98.8(6.4)$",
+          "$98.2(18.5)$",
+          "$97.6(10)$ *",
+          "$97.9(13.8)$ *",
+          "$97.5(14.6)$ *"
+        ],
+        [
+          "Wine",
+          "$99.3(5.9)$",
+          "$98.1(16.2)$ *",
+          "$97.7(10)$ *",
+          "$98.2(14.6)$ *",
+          "$98.6(12.4)$"
+        ],
+        [
+          "Glass",
+          "$73.6(10.8)$",
+          "$69.6(19.6)$ *",
+          "$66.2(10)$ *",
+          "$71.9(12.1)$ *",
+          "$70.3(17.1)$ *"
+        ],
+        [
+          "Satellite",
+          "$89.7(14.5)$",
+          "$87.1(12.7)$ *",
+          "$88.2(10)$ *",
+          "$88.9(15.1)$",
+          "$87.4(11.6)$ *"
+        ],
+        [
+          "Letter",
+          "$82.5(13.6)$",
+          "$76.8(24.2)$ *",
+          "$79.5(10)$ *",
+          "$78.1(22.4)$ *",
+          "$80.0(14.5)$ *"
+        ],
+        [
+          "Soybean",
+          "$96.9(7.7)$",
+          "$94.2(13.4)$ *",
+          "$94.5(10)$ *",
+          "$95.3(9.8)$ *",
+          "$94.7(11.2)$ *"
+        ],
+        [
+          "Image",
+          "$97.8(6.8)$",
+          "$96.7(9.4)$ *",
+          "$97.3(10)$",
+          "$96.9(5.7)$ *",
+          "$97.6(11.1)$"
+        ],
+        [
+          "Vehicle",
+          "$81.3(8.2)$",
+          "$77.9(15.2)$ *",
+          "$76.4(10)$ *",
+          "$79.2(7.6)$ *",
+          "$80.8(9.7)$ *"
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 6
+    }
+  ]
+}

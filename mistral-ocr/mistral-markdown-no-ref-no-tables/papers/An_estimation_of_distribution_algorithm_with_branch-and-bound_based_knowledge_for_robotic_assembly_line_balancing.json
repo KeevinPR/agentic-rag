@@ -1,0 +1,618 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/An estimation of distribution algorithm with branch-and-bound based knowledge for robotic assembly line balancing.md",
+    "filename": "An estimation of distribution algorithm with branch-and-bound based knowledge for robotic assembly line balancing.md",
+    "title": "An estimation of distribution algorithm with branch-and-bound based knowledge for robotic assembly line balancing",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## References",
+    "content": "1. Boysen N, Fliedner M, Scholl A (2008) Assembly line balancing: which model to use when? Int J Prod Econ 111(2):509-528\n2. Boysenaab N, Fliedner M, Scholl A (2007) A classification of assembly line balancing problems. Eur J Oper Res 183(2):674-693\n3. Becker C, Scholl A (2006) A survey on problems and methods in generalized assembly line balancing. Eur J Oper Res 168(3):694-715\n4. Rubinovitz J, Bukchin J, Lenz E (1993) RALB—a heuristic algorithm for design and balancing of robotic assembly lines. CIRP Ann Manuf Technol 42(1):497-500\n5. Bukchin J, Tzur M (2000) Design of flexible assembly line to minimize equipment cost. IIE Trans 32(7):585-598\n6. Tsai D-M, Yao M-J (1993) A line-balance-based capacity planning procedure for series-type robotic assembly line. Int J Prod Res 31(8):1901-1920\n7. Kim H, Park S (1995) A strong cutting plane algorithm for the robotic assembly line balancing problem. Int J Prod Res 33(8):2311-2323\n8. Levitin G, Rubinovitz J, Shnits B (2006) A genetic algorithm for robotic assembly line balancing. Eur J Oper Res 168(3):811-825\n9. Scholl A, Becker C (2006) State-of-the-art exact and heuristic solution procedures for simple assembly line balancing. Eur J Oper Res 168(3):666-693\n10. Gao J, Sun L, Wang L, Gen M (2009) An efficient approach for type II robotic assembly line balancing problems. Comput Ind Eng 56(3):1065-1080\n11. Nilakantan JM, Ponnambalam SG, Jawahar N, Kanagaraj G (2015) Bio-inspired search algorithms to solve robotic assembly line balancing problems. Neural Comput Appl 26(6):1379-1393\n12. Li Z, Janardhanan MN, Nielsen P, Tang Q (2018) Mathematical models and simulated annealing algorithms for the robotic assembly line balancing problem. Assem Autom 38(4):420-436\n13. Li Z, Dey N, Ashour AS, Tang Q (2018) Discrete cuckoo search algorithms for two-sided robotic assembly line balancing problem. Neural Comput Appl 30(9):2685-2696\n14. Li Z, Janardhanan MN, Ashour AS, Dey N (2019) Mathematical models and migrating birds optimization for robotic U-shaped assembly line balancing problem. Neural Comput Appl. https:// doi.org/10.1007/s00521-018-3957-4\n15. Nilakantan JM, Li Z, Tang Q, Nielsen P (2017) Multi-objective co-operative co-evolutionary algorithm for minimizing carbon footprint and maximizing line efficiency in robotic assembly line systems. J Clean Prod 156:124-136\n16. Zhang Z, Tang Q, Li Z, Zhang L (2019) Modelling and optimisation of energy-efficient U-shaped robotic assembly line balancing problems. Int J Prod Res 57(17):5520-5537\n17. Zhang Z, Tang Q, Zhang L (2019) Mathematical model and grey wolf optimization for low-carbon and low-noise U-shaped robotic assembly line balancing problem. J Clean Prod 215:744-756\n18. Larrañaga P, Lozano JA (2001) Estimation of distribution algorithms: a new tool for evolutionary computation. Springer Science \\& Business Media, Berlin\n19. Fang C, Kolisch R, Wang L, Mu C (2015) An estimation of distribution algorithm and new computational results for the stochastic resource-constrained project scheduling problem. Flex Serv Manuf J 27(4):585-605\n20. Wang Y, Chen W (2019) A decomposition-based hybrid estimation of distribution algorithm for practical mean-cvar portfolio optimization. In: International conference on intelligent computing, Nanchang, pp 38-50\n21. Wu C, Wang L (2018) A multi-model estimation of distribution algorithm for energy efficient scheduling under cloud computing system. J Parallel Distrib Comput 117:63-72\n22. Wang S-Y, Wang L (2016) An estimation of distribution algo-rithm-based memetic algorithm for the distributed assembly permutation flow-shop scheduling problem. IEEE Trans Syst Man Cybern 46(1):139-149\n23. Wang L, Wang S, Zheng X (2016) A hybrid estimation of distribution algorithm for unrelated parallel machine scheduling with sequence-dependent setup times. IEEE/CAA J Autom Sin 3(3):235-246\n24. Grahl J (2008) Estimation of distribution algorithms in logistics: analysis, design, and application. Dissertation, University of Mannheim, Mannheim\n25. Lipowski A, Lipowska D (2012) Roulette-wheel selection via stochastic acceptance. Phys A 391(6):2193-2196\n26. Baluja S (1994) Population-based incremental learning. A method for integrating genetic search based function optimization and\n\ncompetitive learning. Carnegie-Mellon University, Pittsburgh, Pennsylvania\n27. Cheng R, He C, Jin Y, Yao X (2018) Model-based evolutionary algorithms: a short survey. Complex Intell Syst 4:283-292\n28. Scholl A (1995) Data of assembly line balancing problems. Darmstadt Technical University, Department of Business Administration, Economics and Law, Institute for Business Studies (BWL)\n29. Montgomery DC (2017) Design and analysis of experiments. Wiley, New York\n\nPublisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Boysen N, Fliedner M, Scholl A (2008) Assembly line balancing: which model to use when? Int J Prod Econ 111(2):509-528"
+      },
+      {
+        "ref_id": "2",
+        "text": "Boysenaab N, Fliedner M, Scholl A (2007) A classification of assembly line balancing problems. Eur J Oper Res 183(2):674-693"
+      },
+      {
+        "ref_id": "3",
+        "text": "Becker C, Scholl A (2006) A survey on problems and methods in generalized assembly line balancing. Eur J Oper Res 168(3):694-715"
+      },
+      {
+        "ref_id": "4",
+        "text": "Rubinovitz J, Bukchin J, Lenz E (1993) RALB—a heuristic algorithm for design and balancing of robotic assembly lines. CIRP Ann Manuf Technol 42(1):497-500"
+      },
+      {
+        "ref_id": "5",
+        "text": "Bukchin J, Tzur M (2000) Design of flexible assembly line to minimize equipment cost. IIE Trans 32(7):585-598"
+      },
+      {
+        "ref_id": "6",
+        "text": "Tsai D-M, Yao M-J (1993) A line-balance-based capacity planning procedure for series-type robotic assembly line. Int J Prod Res 31(8):1901-1920"
+      },
+      {
+        "ref_id": "7",
+        "text": "Kim H, Park S (1995) A strong cutting plane algorithm for the robotic assembly line balancing problem. Int J Prod Res 33(8):2311-2323"
+      },
+      {
+        "ref_id": "8",
+        "text": "Levitin G, Rubinovitz J, Shnits B (2006) A genetic algorithm for robotic assembly line balancing. Eur J Oper Res 168(3):811-825"
+      },
+      {
+        "ref_id": "9",
+        "text": "Scholl A, Becker C (2006) State-of-the-art exact and heuristic solution procedures for simple assembly line balancing. Eur J Oper Res 168(3):666-693"
+      },
+      {
+        "ref_id": "10",
+        "text": "Gao J, Sun L, Wang L, Gen M (2009) An efficient approach for type II robotic assembly line balancing problems. Comput Ind Eng 56(3):1065-1080"
+      },
+      {
+        "ref_id": "11",
+        "text": "Nilakantan JM, Ponnambalam SG, Jawahar N, Kanagaraj G (2015) Bio-inspired search algorithms to solve robotic assembly line balancing problems. Neural Comput Appl 26(6):1379-1393"
+      },
+      {
+        "ref_id": "12",
+        "text": "Li Z, Janardhanan MN, Nielsen P, Tang Q (2018) Mathematical models and simulated annealing algorithms for the robotic assembly line balancing problem. Assem Autom 38(4):420-436"
+      },
+      {
+        "ref_id": "13",
+        "text": "Li Z, Dey N, Ashour AS, Tang Q (2018) Discrete cuckoo search algorithms for two-sided robotic assembly line balancing problem. Neural Comput Appl 30(9):2685-2696"
+      },
+      {
+        "ref_id": "14",
+        "text": "Li Z, Janardhanan MN, Ashour AS, Dey N (2019) Mathematical models and migrating birds optimization for robotic U-shaped assembly line balancing problem. Neural Comput Appl. https:// doi.org/10.1007/s00521-018-3957-4"
+      },
+      {
+        "ref_id": "15",
+        "text": "Nilakantan JM, Li Z, Tang Q, Nielsen P (2017) Multi-objective co-operative co-evolutionary algorithm for minimizing carbon footprint and maximizing line efficiency in robotic assembly line systems. J Clean Prod 156:124-136"
+      },
+      {
+        "ref_id": "16",
+        "text": "Zhang Z, Tang Q, Li Z, Zhang L (2019) Modelling and optimisation of energy-efficient U-shaped robotic assembly line balancing problems. Int J Prod Res 57(17):5520-5537"
+      },
+      {
+        "ref_id": "17",
+        "text": "Zhang Z, Tang Q, Zhang L (2019) Mathematical model and grey wolf optimization for low-carbon and low-noise U-shaped robotic assembly line balancing problem. J Clean Prod 215:744-756"
+      },
+      {
+        "ref_id": "18",
+        "text": "Larrañaga P, Lozano JA (2001) Estimation of distribution algorithms: a new tool for evolutionary computation. Springer Science \\& Business Media, Berlin"
+      },
+      {
+        "ref_id": "19",
+        "text": "Fang C, Kolisch R, Wang L, Mu C (2015) An estimation of distribution algorithm and new computational results for the stochastic resource-constrained project scheduling problem. Flex Serv Manuf J 27(4):585-605"
+      },
+      {
+        "ref_id": "20",
+        "text": "Wang Y, Chen W (2019) A decomposition-based hybrid estimation of distribution algorithm for practical mean-cvar portfolio optimization. In: International conference on intelligent computing, Nanchang, pp 38-50"
+      },
+      {
+        "ref_id": "21",
+        "text": "Wu C, Wang L (2018) A multi-model estimation of distribution algorithm for energy efficient scheduling under cloud computing system. J Parallel Distrib Comput 117:63-72"
+      },
+      {
+        "ref_id": "22",
+        "text": "Wang S-Y, Wang L (2016) An estimation of distribution algo-rithm-based memetic algorithm for the distributed assembly permutation flow-shop scheduling problem. IEEE Trans Syst Man Cybern 46(1):139-149"
+      },
+      {
+        "ref_id": "23",
+        "text": "Wang L, Wang S, Zheng X (2016) A hybrid estimation of distribution algorithm for unrelated parallel machine scheduling with sequence-dependent setup times. IEEE/CAA J Autom Sin 3(3):235-246"
+      },
+      {
+        "ref_id": "24",
+        "text": "Grahl J (2008) Estimation of distribution algorithms in logistics: analysis, design, and application. Dissertation, University of Mannheim, Mannheim"
+      },
+      {
+        "ref_id": "25",
+        "text": "Lipowski A, Lipowska D (2012) Roulette-wheel selection via stochastic acceptance. Phys A 391(6):2193-2196"
+      },
+      {
+        "ref_id": "26",
+        "text": "Baluja S (1994) Population-based incremental learning. A method for integrating genetic search based function optimization and"
+      },
+      {
+        "ref_id": "27",
+        "text": "Cheng R, He C, Jin Y, Yao X (2018) Model-based evolutionary algorithms: a short survey. Complex Intell Syst 4:283-292"
+      },
+      {
+        "ref_id": "28",
+        "text": "Scholl A (1995) Data of assembly line balancing problems. Darmstadt Technical University, Department of Business Administration, Economics and Law, Institute for Business Studies (BWL)"
+      },
+      {
+        "ref_id": "29",
+        "text": "Montgomery DC (2017) Design and analysis of experiments. Wiley, New York"
+      }
+    ],
+    "reference_count": 29,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Parameter values",
+      "headers": [
+        "Parameters",
+        "Factor level",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          "$\\alpha$",
+          0.04,
+          0.16,
+          0.28,
+          0.4
+        ],
+        [
+          "$\\beta$",
+          0.01,
+          0.08,
+          0.15,
+          0.22
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Orthogonal array and ARVs",
+      "headers": [
+        "Experiment <br> number",
+        "Factor <br> level",
+        "",
+        "",
+        "ARV (\\%)"
+      ],
+      "rows": [
+        [
+          "",
+          "$\\alpha$",
+          "$\\beta$",
+          "",
+          ""
+        ],
+        [
+          1,
+          1,
+          1,
+          1.13,
+          ""
+        ],
+        [
+          2,
+          1,
+          2,
+          0.8,
+          ""
+        ],
+        [
+          3,
+          1,
+          3,
+          0.79,
+          ""
+        ],
+        [
+          4,
+          1,
+          4,
+          0.88,
+          ""
+        ],
+        [
+          5,
+          2,
+          1,
+          1.12,
+          ""
+        ],
+        [
+          6,
+          2,
+          2,
+          0.73,
+          ""
+        ],
+        [
+          7,
+          2,
+          3,
+          0.84,
+          ""
+        ],
+        [
+          8,
+          2,
+          4,
+          0.9,
+          ""
+        ],
+        [
+          9,
+          3,
+          1,
+          1.14,
+          ""
+        ],
+        [
+          10,
+          3,
+          2,
+          0.69,
+          ""
+        ],
+        [
+          11,
+          3,
+          3,
+          0.75,
+          ""
+        ],
+        [
+          12,
+          3,
+          4,
+          0.87,
+          ""
+        ],
+        [
+          13,
+          4,
+          1,
+          1.13,
+          ""
+        ],
+        [
+          14,
+          4,
+          2,
+          0.78,
+          ""
+        ],
+        [
+          15,
+          4,
+          3,
+          0.79,
+          ""
+        ],
+        [
+          16,
+          4,
+          4,
+          0.78,
+          ""
+        ]
+      ],
+      "row_count": 17,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Comparisons of EDA-BB with EDAnBB and EDAnLS",
+      "headers": [
+        "$N$",
+        "$M$",
+        "EDA-BB",
+        "EDAnBB",
+        "",
+        "EDAnLS",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "$\\overline{R P D}$",
+          "$\\overline{R P D}$",
+          "$p$ value",
+          "$\\overline{R P D}$",
+          "$p$ value"
+        ],
+        [
+          25,
+          3,
+          0.0,
+          0.0,
+          "$-$",
+          0.0,
+          "$-$"
+        ],
+        [
+          "",
+          4,
+          0.0,
+          0.0,
+          0.171,
+          0.003,
+          0.0
+        ],
+        [
+          "",
+          6,
+          0.0,
+          0.0,
+          "$-$",
+          0.0,
+          "$-$"
+        ],
+        [
+          "",
+          9,
+          0.0,
+          0.0,
+          "$-$",
+          0.001,
+          0.081
+        ],
+        [
+          35,
+          4,
+          0.0,
+          0.0,
+          "$-$",
+          0.002,
+          0.0
+        ],
+        [
+          "",
+          5,
+          0.0,
+          0.0,
+          "$-$",
+          0.013,
+          0.0
+        ],
+        [
+          "",
+          7,
+          0.0,
+          0.003,
+          0.003,
+          0.01,
+          0.0
+        ],
+        [
+          "",
+          12,
+          0.01,
+          0.0,
+          0.998,
+          0.029,
+          0.001
+        ],
+        [
+          53,
+          5,
+          0.0,
+          0.0,
+          0.081,
+          0.013,
+          0.0
+        ],
+        [
+          "",
+          7,
+          0.0,
+          0.0,
+          "$-$",
+          0.005,
+          0.0
+        ],
+        [
+          "",
+          10,
+          0.0,
+          0.033,
+          0.0,
+          0.001,
+          0.081
+        ],
+        [
+          "",
+          14,
+          0.0,
+          0.029,
+          0.0,
+          0.012,
+          0.0
+        ],
+        [
+          70,
+          7,
+          0.0,
+          0.002,
+          0.002,
+          0.014,
+          0.0
+        ],
+        [
+          "",
+          10,
+          0.0,
+          0.002,
+          0.171,
+          0.02,
+          0.0
+        ],
+        [
+          "",
+          14,
+          0.0,
+          0.016,
+          0.0,
+          0.004,
+          0.021
+        ],
+        [
+          "",
+          19,
+          0.0,
+          0.014,
+          0.0,
+          0.003,
+          0.31
+        ],
+        [
+          89,
+          8,
+          0.0,
+          0.016,
+          0.0,
+          0.005,
+          0.0
+        ],
+        [
+          "",
+          12,
+          0.0,
+          0.001,
+          0.295,
+          0.009,
+          0.0
+        ],
+        [
+          "",
+          16,
+          0.0,
+          0.001,
+          0.208,
+          0.009,
+          0.0
+        ],
+        [
+          "",
+          21,
+          0.0,
+          0.009,
+          0.0,
+          0.006,
+          0.013
+        ],
+        [
+          111,
+          9,
+          0.0,
+          0.018,
+          0.0,
+          0.011,
+          0.0
+        ],
+        [
+          "",
+          13,
+          0.0,
+          0.038,
+          0.0,
+          0.001,
+          0.151
+        ],
+        [
+          "",
+          17,
+          0.0,
+          0.029,
+          0.0,
+          0.011,
+          0.0
+        ],
+        [
+          "",
+          22,
+          0.0,
+          0.041,
+          0.0,
+          0.006,
+          0.065
+        ],
+        [
+          148,
+          10,
+          0.0,
+          0.037,
+          0.0,
+          0.026,
+          0.0
+        ],
+        [
+          "",
+          14,
+          0.0,
+          0.067,
+          0.0,
+          0.006,
+          0.027
+        ],
+        [
+          "",
+          21,
+          0.0,
+          0.08,
+          0.0,
+          0.006,
+          0.002
+        ],
+        [
+          "",
+          29,
+          0.0,
+          0.075,
+          0.0,
+          0.005,
+          0.023
+        ],
+        [
+          297,
+          19,
+          0.0,
+          0.04,
+          0.0,
+          0.004,
+          0.04
+        ],
+        [
+          "",
+          29,
+          0.0,
+          0.065,
+          0.0,
+          0.005,
+          0.025
+        ],
+        [
+          "",
+          38,
+          0.0,
+          0.07,
+          0.0,
+          0.003,
+          0.07
+        ],
+        [
+          "",
+          50,
+          0.0,
+          0.065,
+          0.0,
+          0.008,
+          0.028
+        ]
+      ],
+      "row_count": 33,
+      "column_count": 7
+    }
+  ]
+}

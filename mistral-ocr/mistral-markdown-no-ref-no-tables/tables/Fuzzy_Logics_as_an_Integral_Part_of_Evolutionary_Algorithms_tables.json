@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/Fuzzy Logics as an Integral Part of Evolutionary Algorithms.md",
+    "filename": "Fuzzy Logics as an Integral Part of Evolutionary Algorithms.md",
+    "title": "Fuzzy Logics as an Integral Part of Evolutionary Algorithms",
+    "year": "2019"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Fuzzy Rules for Defining $\\alpha$ Using Linguistic Inputs",
+      "headers": [
+        "Rule",
+        "",
+        "Iteration Number",
+        "Improvement <br> Factor",
+        "",
+        "$\\alpha(t)$"
+      ],
+      "rows": [
+        [
+          1,
+          "IF",
+          "SMALL",
+          "NEGATIVE",
+          "THEN",
+          "SMALL"
+        ],
+        [
+          2,
+          "",
+          "SMALL",
+          "ZERO",
+          "",
+          "MEDIUM"
+        ],
+        [
+          3,
+          "",
+          "SMALL",
+          "POSITIVE",
+          "",
+          "MEDIUM"
+        ],
+        [
+          4,
+          "",
+          "MEDIUM",
+          "NEGATIVE",
+          "",
+          "SMALL"
+        ],
+        [
+          5,
+          "",
+          "MEDIUM",
+          "ZERO",
+          "",
+          "MEDIUM"
+        ],
+        [
+          6,
+          "",
+          "MEDIUM",
+          "POSITIVE",
+          "",
+          "LARGE"
+        ],
+        [
+          7,
+          "",
+          "LARGE",
+          "NEGATIVE",
+          "",
+          "SMALL"
+        ],
+        [
+          8,
+          "",
+          "LARGE",
+          "ZERO",
+          "",
+          "MEDIUM"
+        ],
+        [
+          9,
+          "",
+          "LARGE",
+          "POSITIVE",
+          "",
+          "LARGE"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 6
+    },
+    {
+      "table_number": "II",
+      "table_title": "Comparison of EDA Using FLC and Simple EDA (Without FLC)",
+      "headers": [
+        "Algorithm",
+        "Population/ <br> Distribution <br> Function",
+        "Objective <br> Function (Best)"
+      ],
+      "rows": [
+        [
+          "EDA $(\\alpha=0.05)$ <br> EDA $(\\alpha=0.1)$ <br> EDA $(\\alpha=0.5)$",
+          "240/DF1 (0.6:0.4)",
+          "$\\begin{gathered} 0.99536 \\\\ 1.00740 \\\\ 1.00953 \\end{gathered}$"
+        ],
+        [
+          "EDA $(\\alpha=0.05)$ <br> EDA $(\\alpha=0.1)$ <br> EDA $(\\alpha=0.5)$",
+          "240/DF2 (0.8:0.2)",
+          "$\\begin{gathered} 1.00720 \\\\ 1.00953 \\\\ 1.00948 \\end{gathered}$"
+        ],
+        [
+          "EDA with FLC <br> Approach $1\\left(\\mathrm{IMP}_{2}\\right)$",
+          "240/DF1 (0.6:0.4) <br> 240/DF2 (0.8:0.2) <br> 120/DF1 (0.6:0.4) <br> 120/DF2 (0.8:0.2)",
+          "$\\begin{gathered} 1.00953 \\\\ 1.00953 \\\\ 1.00948 \\\\ 1.00953 \\end{gathered}$"
+        ],
+        [
+          "Approach $2\\left(\\mathrm{IMP}_{B}\\right)$",
+          "240/DF1 (0.6:0.4) <br> 240/DF2 (0.8:0.2) <br> 120/DF1 (0.6:0.4) <br> 120/DF2 (0.8:0.2)",
+          "$\\begin{gathered} 1.00953 \\\\ 1.00953 \\\\ 1.00947 \\\\ 1.00953 \\end{gathered}$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 3
+    }
+  ]
+}

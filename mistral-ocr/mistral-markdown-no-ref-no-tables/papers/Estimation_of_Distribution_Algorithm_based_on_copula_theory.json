@@ -1,0 +1,961 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2010/Estimation of Distribution Algorithm Based on Copula Theory.md",
+    "filename": "Estimation of Distribution Algorithm Based on Copula Theory.md",
+    "title": "Estimation of Distribution Algorithm Based on Copula Theory",
+    "year": "2010"
+  },
+  "references": {
+    "header": "# References",
+    "content": "[1] Larranaga, P., Lozano, J.A.: Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic Publishers, Boston (2002)\n[2] Baluja, S.: Population-Based Incremental Learning: A Method for Integrating Genetic Search Based Function Optimization and Competitive Learning. Citeseer (1994), doi: 10.1.1.9.8084\n[3] Baluja, S.: An Empirical Comparison of Seven Iterative and Evolutionary Function Optimization Heuristics. Technical Report CMU-CS-95-193, Computer Science Department, Carnegie Mellon University (1995)\n[4] Hohfeld, M., Rudolph, G.: Towards a Theory of Population Based Incremental Learning. In: Proc. of the 4th International Conference on Evolutionary Computation, pp. $1-5(1997)$\n[5] Cristina, G., Lozano, J.A., Larranaga, P.: Analyzing the PBIL Algorithm by means of Discrete Dynamical Systems. Complex Syst. 12(4), 465-479 (2001)\n[6] Muhlenbein, H., Paaß, G.: From recombination of genes to the estimation of distributions I. Binary Parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)\n[7] Muhlenbein, H.: The Equation for Response to Selection and its use for Prediction. Evol. Comput. 5(3), 303-346 (1997)\n[8] Shapiro, J.L.: Drift and Scaling in Estimation of Distribution Algorithms. Evol. Comput. 13(1), 99-123 (2005)\n[9] Harik, G.R., Lobo, F.G., Goldberg, D.E.: The compact genetic algorithm. In: Proc. IEEE Conf. Evol Computation, Indianapolis, USA, pp. 523-528 (1998)\n[10] De Bonet, J.S., Isbell, C.L., Viola, P.: MIMIC: Finding optima by estimation probability densities. In: Becker, S. (ed.) Advances in Neural Information Processing Systems, pp. 424-430. MIT Press, Cambridge (1997)\n[11] Baluja, S., Davies, S.: Using optimal dependency-trees for combinatorial optimization: learning the structure of the search space. In: Proc. of the 14th international conference on machine learning, pp. 30-38. Morgan Kaufmann, San Francisco (1977)\n[12] Pelican, M., Muhlenbein, H.: The birandom variable marginal distribution algorithm. In: Furuhashi, T. (ed.) Advances in Soft Computing-Engineering Design and Manufacturing, pp. 521-535. Springer, London (1999)\n[13] Pelikan, M., Muhlenbein, H.: Marginal Distributions in Evolutionary Algorithms. In: Proc. of the International Conference on Genetic Algorithms, pp. 90-95. Technical University of Brno, Brno (1998)\n[14] Harik, G.: Linkage Learning via Probabilistic Modeling in the ECGA, Illigal Rep. No.99010, Illinois Genetic Algorithms Lab., University of Illinois, UrbanaChampaign, Illinois (1999)\n[15] Muhlenbein, H., Mahnig, T.: FDA- a scalable evolutionary algorithm for the optimization of additively decomposed functions. Evolu. Comput. 7(4), 353-376 (1999)\n\n[16] Muhlenbein, H., Mahnig, T.: Convergence Theory and Applications of the Factorized Distribution Algorithm. Journal of Comput and Information Technology 7(1), 19-32 (1999)\n[17] Muhlenbein, H., Mahnig, T.: The Factorized Distribution Algorithm for Additively Decomposable Functions. In: Second Symposium on Artificial Intelligence. Adaptive Systems. CIMAF 1999, La Habana, pp. 301-313 (1999)\n[18] Muhlenbein, H., Mahnig, T.: Evolutionary algorithms: From recombination to search distributions. In: Kallel, L., Naudts, B., Rogers, A. (eds.) Theoretical Aspects of Evolutionary Computating., pp. 137-176. Springer, London (2001)\n[19] Muhlenbein, H., Mahnig, T., Ochoa, A. R.: Distributions and Graphical Models in Evolutionary Optimization. J. Heuristics 5, 215-247 (1999)\n[20] Pelikan, M., Goldberg, D.E., Cantu-Paz, E.: BOA: the Bayesian optimization algorithm. In: Proc. Genetic and Evolutionary Computation Conference (GECCO 1999), Orlando, FL, pp. 525-532 (1999)\n[21] Pelikan M.: A Simple Implementation of Bayesian Optimization Algorithms in C++(Version 1.0). Illegal Report No. 99011, Illinois Genetic Algorithms Laboratory, University of Illinois at Urbana-Champaign, Urbana, Illinois (1999)\n[22] Pelikan, M., Goldberg, D.E., Cantu-Paz, E.: Bayesian Optimization Algorithm, Population Sizing, and Time to Convergence. IlleGAL Report No. 2000001, Illinois Genetic Algorithms Laboratory, University of Illinois at Urbana Champaign, Urbanan, Illinois (2000)\n[23] Pelikan, M.: Hierarchical Bayesian Optimization Algorithm: Toward a New Generation of Evolutionary Algorithms. Springer, New York (2005)\n[24] Gao, Y., Culberson, J.: Space Complexity of Estimation of Distribution Algorithms. Evol. Comput. 13(1), 125-143 (2005)\n[25] Pelikan, M., Sastry, K., Goldberg, D. E.: Scalability of the Bayesian Optimization Algorithm. International Journal of Approximate Reasoning 31(3), 221-258 (2002)\n[26] Sebag, M., Ducoulombier, A.: Extending population-based incremental learning to continuous search spaces. In: Eiben, A.E., Bäck, T., Schoenauer, M., Schwefel, H.-P. (eds.) PPSN 1998. LNCS, vol. 1498, pp. 418-427. Springer, Heidelberg (1998)\n[27] Larranaga, P., Etxeberria, R., Lozano, J.A., Pena, J.M.: Optimization in continuous domains by learning and simulation of Gaussian networks. In: Proc. 2000 Genetic and Evolutionary Computation Conf. Workshop Program, Las Vegas, Nevada, pp. 201204 (2000)\n[28] Rudlof, S., Koppen, M.: Stochastic Hill Climbing by Vectors of Normal Distributions. In: Proc. of the first online workshop on soft computing(WSC1), Nagoya, Japan (1996)\n[29] Larrañaga, P., Lozano, J.A., Bengoetxea, E.: Estimation of Distribution Algorithms based on multivariate normal and Gaussian networks. Technical Report KZZA-IK-101 of the Department of Computer Science and Artificial Intelligence, University of the Basque Country, Spain (2001)\n[30] Larranaga, P., Etxeberria, R., Lozano, J.A., Pena, J.M.: Optimization in continuous domains by learning and simulation of Gaussian networks. In: Proc. of the Genetic and Evolutionary Computation Conference, GECCO 2000, Las Vegas, Nevada, USA, July 8-12, pp. 201-204. Morgan Kaufmann, San Francisco (2000)\n[31] Bosman, P.A.N., Thierena, D.: Expanding from Discrete to Continuous Estimation of Distribution Algorithms: the IDEA. In: Deb, K., Rudolph, G., Lutton, E., Merelo, J.J., Schoenauer, M., Schwefel, H.-P., Yao, X. (eds.) PPSN 2000. LNCS, vol. 1917, pp. 767-776. Springer, Heidelberg (2000)\n\n[32] Nelsen, R.B.: An introduction to copulas, 2nd edn. Springer, New York (2006)\n[33] Whelan, N.: Sampling from Archimedean Copulas (2004), http://home.golden.net/ annaw/Niall/papers/Archimedean.pdf (Accessed January 1, 2009)\n[34] Strelen, J.C., Nassaj, F.: Analysis and generation of random vectors with copulas. In: Henderson, S.G., Biller, B., Hsieh, M.H., Shortle, J., Tew, J.D., Barton, R.R. (eds.) Proc. of the 2007 Winter Simulation Conference (WSC 2007), Washington, DC, USA, pp. 488-496 (2007)\n[35] Wang, L.F., Zeng, J.C., Hong, Y.: Estimation of Distribution Based on Copula Theory. In: IEEE CEC 2009, Trondheim, Norway, May 18-21, pp. 1057-1063 (2009)\n[36] Wang, L.F., Zeng, J.C., Hong, Y.: Estimation of Distribution Based on Archimedean Copulas. In: ACM SIGEVO GEC 2009, Shaihai, China, June 12-14, pp. 993-996 (2009)\n[37] Wang, L.F., Zeng, J.C., Hong, Y.: Estimation of Distribution Algorithm Modeling and Sampling by means of Copula. Submitted to: Chinese journal of computers (in Chinese) (2009)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Larranaga, P., Lozano, J.A.: Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic Publishers, Boston (2002)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Baluja, S.: Population-Based Incremental Learning: A Method for Integrating Genetic Search Based Function Optimization and Competitive Learning. Citeseer (1994), doi: 10.1.1.9.8084"
+      },
+      {
+        "ref_id": "3",
+        "text": "Baluja, S.: An Empirical Comparison of Seven Iterative and Evolutionary Function Optimization Heuristics. Technical Report CMU-CS-95-193, Computer Science Department, Carnegie Mellon University (1995)"
+      },
+      {
+        "ref_id": "4",
+        "text": "Hohfeld, M., Rudolph, G.: Towards a Theory of Population Based Incremental Learning. In: Proc. of the 4th International Conference on Evolutionary Computation, pp. $1-5(1997)$"
+      },
+      {
+        "ref_id": "5",
+        "text": "Cristina, G., Lozano, J.A., Larranaga, P.: Analyzing the PBIL Algorithm by means of Discrete Dynamical Systems. Complex Syst. 12(4), 465-479 (2001)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Muhlenbein, H., Paaß, G.: From recombination of genes to the estimation of distributions I. Binary Parameters. In: Ebeling, W., Rechenberg, I., Voigt, H.-M., Schwefel, H.-P. (eds.) PPSN 1996. LNCS, vol. 1141, pp. 178-187. Springer, Heidelberg (1996)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Muhlenbein, H.: The Equation for Response to Selection and its use for Prediction. Evol. Comput. 5(3), 303-346 (1997)"
+      },
+      {
+        "ref_id": "8",
+        "text": "Shapiro, J.L.: Drift and Scaling in Estimation of Distribution Algorithms. Evol. Comput. 13(1), 99-123 (2005)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Harik, G.R., Lobo, F.G., Goldberg, D.E.: The compact genetic algorithm. In: Proc. IEEE Conf. Evol Computation, Indianapolis, USA, pp. 523-528 (1998)"
+      },
+      {
+        "ref_id": "10",
+        "text": "De Bonet, J.S., Isbell, C.L., Viola, P.: MIMIC: Finding optima by estimation probability densities. In: Becker, S. (ed.) Advances in Neural Information Processing Systems, pp. 424-430. MIT Press, Cambridge (1997)"
+      },
+      {
+        "ref_id": "11",
+        "text": "Baluja, S., Davies, S.: Using optimal dependency-trees for combinatorial optimization: learning the structure of the search space. In: Proc. of the 14th international conference on machine learning, pp. 30-38. Morgan Kaufmann, San Francisco (1977)"
+      },
+      {
+        "ref_id": "12",
+        "text": "Pelican, M., Muhlenbein, H.: The birandom variable marginal distribution algorithm. In: Furuhashi, T. (ed.) Advances in Soft Computing-Engineering Design and Manufacturing, pp. 521-535. Springer, London (1999)"
+      },
+      {
+        "ref_id": "13",
+        "text": "Pelikan, M., Muhlenbein, H.: Marginal Distributions in Evolutionary Algorithms. In: Proc. of the International Conference on Genetic Algorithms, pp. 90-95. Technical University of Brno, Brno (1998)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Harik, G.: Linkage Learning via Probabilistic Modeling in the ECGA, Illigal Rep. No.99010, Illinois Genetic Algorithms Lab., University of Illinois, UrbanaChampaign, Illinois (1999)"
+      },
+      {
+        "ref_id": "15",
+        "text": "Muhlenbein, H., Mahnig, T.: FDA- a scalable evolutionary algorithm for the optimization of additively decomposed functions. Evolu. Comput. 7(4), 353-376 (1999)"
+      },
+      {
+        "ref_id": "16",
+        "text": "Muhlenbein, H., Mahnig, T.: Convergence Theory and Applications of the Factorized Distribution Algorithm. Journal of Comput and Information Technology 7(1), 19-32 (1999)"
+      },
+      {
+        "ref_id": "17",
+        "text": "Muhlenbein, H., Mahnig, T.: The Factorized Distribution Algorithm for Additively Decomposable Functions. In: Second Symposium on Artificial Intelligence. Adaptive Systems. CIMAF 1999, La Habana, pp. 301-313 (1999)"
+      },
+      {
+        "ref_id": "18",
+        "text": "Muhlenbein, H., Mahnig, T.: Evolutionary algorithms: From recombination to search distributions. In: Kallel, L., Naudts, B., Rogers, A. (eds.) Theoretical Aspects of Evolutionary Computating., pp. 137-176. Springer, London (2001)"
+      },
+      {
+        "ref_id": "19",
+        "text": "Muhlenbein, H., Mahnig, T., Ochoa, A. R.: Distributions and Graphical Models in Evolutionary Optimization. J. Heuristics 5, 215-247 (1999)"
+      },
+      {
+        "ref_id": "20",
+        "text": "Pelikan, M., Goldberg, D.E., Cantu-Paz, E.: BOA: the Bayesian optimization algorithm. In: Proc. Genetic and Evolutionary Computation Conference (GECCO 1999), Orlando, FL, pp. 525-532 (1999)"
+      },
+      {
+        "ref_id": "21",
+        "text": "Pelikan M.: A Simple Implementation of Bayesian Optimization Algorithms in C++(Version 1.0). Illegal Report No. 99011, Illinois Genetic Algorithms Laboratory, University of Illinois at Urbana-Champaign, Urbana, Illinois (1999)"
+      },
+      {
+        "ref_id": "22",
+        "text": "Pelikan, M., Goldberg, D.E., Cantu-Paz, E.: Bayesian Optimization Algorithm, Population Sizing, and Time to Convergence. IlleGAL Report No. 2000001, Illinois Genetic Algorithms Laboratory, University of Illinois at Urbana Champaign, Urbanan, Illinois (2000)"
+      },
+      {
+        "ref_id": "23",
+        "text": "Pelikan, M.: Hierarchical Bayesian Optimization Algorithm: Toward a New Generation of Evolutionary Algorithms. Springer, New York (2005)"
+      },
+      {
+        "ref_id": "24",
+        "text": "Gao, Y., Culberson, J.: Space Complexity of Estimation of Distribution Algorithms. Evol. Comput. 13(1), 125-143 (2005)"
+      },
+      {
+        "ref_id": "25",
+        "text": "Pelikan, M., Sastry, K., Goldberg, D. E.: Scalability of the Bayesian Optimization Algorithm. International Journal of Approximate Reasoning 31(3), 221-258 (2002)"
+      },
+      {
+        "ref_id": "26",
+        "text": "Sebag, M., Ducoulombier, A.: Extending population-based incremental learning to continuous search spaces. In: Eiben, A.E., Bäck, T., Schoenauer, M., Schwefel, H.-P. (eds.) PPSN 1998. LNCS, vol. 1498, pp. 418-427. Springer, Heidelberg (1998)"
+      },
+      {
+        "ref_id": "27",
+        "text": "Larranaga, P., Etxeberria, R., Lozano, J.A., Pena, J.M.: Optimization in continuous domains by learning and simulation of Gaussian networks. In: Proc. 2000 Genetic and Evolutionary Computation Conf. Workshop Program, Las Vegas, Nevada, pp. 201204 (2000)"
+      },
+      {
+        "ref_id": "28",
+        "text": "Rudlof, S., Koppen, M.: Stochastic Hill Climbing by Vectors of Normal Distributions. In: Proc. of the first online workshop on soft computing(WSC1), Nagoya, Japan (1996)"
+      },
+      {
+        "ref_id": "29",
+        "text": "Larrañaga, P., Lozano, J.A., Bengoetxea, E.: Estimation of Distribution Algorithms based on multivariate normal and Gaussian networks. Technical Report KZZA-IK-101 of the Department of Computer Science and Artificial Intelligence, University of the Basque Country, Spain (2001)"
+      },
+      {
+        "ref_id": "30",
+        "text": "Larranaga, P., Etxeberria, R., Lozano, J.A., Pena, J.M.: Optimization in continuous domains by learning and simulation of Gaussian networks. In: Proc. of the Genetic and Evolutionary Computation Conference, GECCO 2000, Las Vegas, Nevada, USA, July 8-12, pp. 201-204. Morgan Kaufmann, San Francisco (2000)"
+      },
+      {
+        "ref_id": "31",
+        "text": "Bosman, P.A.N., Thierena, D.: Expanding from Discrete to Continuous Estimation of Distribution Algorithms: the IDEA. In: Deb, K., Rudolph, G., Lutton, E., Merelo, J.J., Schoenauer, M., Schwefel, H.-P., Yao, X. (eds.) PPSN 2000. LNCS, vol. 1917, pp. 767-776. Springer, Heidelberg (2000)"
+      },
+      {
+        "ref_id": "32",
+        "text": "Nelsen, R.B.: An introduction to copulas, 2nd edn. Springer, New York (2006)"
+      },
+      {
+        "ref_id": "33",
+        "text": "Whelan, N.: Sampling from Archimedean Copulas (2004), http://home.golden.net/ annaw/Niall/papers/Archimedean.pdf (Accessed January 1, 2009)"
+      },
+      {
+        "ref_id": "34",
+        "text": "Strelen, J.C., Nassaj, F.: Analysis and generation of random vectors with copulas. In: Henderson, S.G., Biller, B., Hsieh, M.H., Shortle, J., Tew, J.D., Barton, R.R. (eds.) Proc. of the 2007 Winter Simulation Conference (WSC 2007), Washington, DC, USA, pp. 488-496 (2007)"
+      },
+      {
+        "ref_id": "35",
+        "text": "Wang, L.F., Zeng, J.C., Hong, Y.: Estimation of Distribution Based on Copula Theory. In: IEEE CEC 2009, Trondheim, Norway, May 18-21, pp. 1057-1063 (2009)"
+      },
+      {
+        "ref_id": "36",
+        "text": "Wang, L.F., Zeng, J.C., Hong, Y.: Estimation of Distribution Based on Archimedean Copulas. In: ACM SIGEVO GEC 2009, Shaihai, China, June 12-14, pp. 993-996 (2009)"
+      },
+      {
+        "ref_id": "37",
+        "text": "Wang, L.F., Zeng, J.C., Hong, Y.: Estimation of Distribution Algorithm Modeling and Sampling by means of Copula. Submitted to: Chinese journal of computers (in Chinese) (2009)"
+      }
+    ],
+    "reference_count": 37,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "No.",
+        "$x$",
+        "fitness"
+      ],
+      "rows": [
+        [
+          1,
+          1010,
+          100
+        ],
+        [
+          2,
+          1100,
+          144
+        ],
+        [
+          3,
+          100,
+          16
+        ],
+        [
+          4,
+          11,
+          9
+        ],
+        [
+          5,
+          101,
+          25
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "No.",
+        "$x$",
+        "fitness"
+      ],
+      "rows": [
+        [
+          1,
+          10,
+          4
+        ],
+        [
+          2,
+          101,
+          25
+        ],
+        [
+          3,
+          100,
+          16
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          5,
+          101,
+          25
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 The convergence of copula-EDA and PBILc, the maximal generation is 1000",
+      "headers": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          "cEDA",
+          500,
+          0.2,
+          0.05,
+          "$10^{-5}$",
+          5050,
+          50.7
+        ],
+        [
+          "",
+          "PBILc",
+          500,
+          0.2,
+          0,
+          "$10^{-5}$",
+          5050,
+          405.66
+        ],
+        [
+          "$F_{2}$",
+          "cEDA",
+          500,
+          0.2,
+          0.05,
+          "$10^{-5}$",
+          4650,
+          43.369
+        ],
+        [
+          "",
+          "PBILc",
+          500,
+          0.2,
+          0,
+          "$10^{-5}$",
+          5050,
+          421.12
+        ],
+        [
+          "$F_{3}$",
+          "cEDA",
+          500,
+          0.2,
+          0.05,
+          "$10^{-5}$",
+          5050,
+          17.6
+        ],
+        [
+          "",
+          "PBILc",
+          500,
+          0.2,
+          0,
+          "$10^{-5}$",
+          5050,
+          396.42
+        ],
+        [
+          "$F_{4}$",
+          "cEDA",
+          100,
+          0.2,
+          0.05,
+          "$10^{-5}$",
+          5050,
+          28.791
+        ],
+        [
+          "",
+          "PBILc",
+          100,
+          0.2,
+          0,
+          "$10^{-5}$",
+          5050,
+          841.4
+        ],
+        [
+          "$F_{5}$",
+          "cEDA",
+          100,
+          0.2,
+          0.05,
+          "$10^{-5}$",
+          5050,
+          222.76
+        ],
+        [
+          "",
+          "PBILc",
+          100,
+          0.2,
+          0,
+          "$10^{-5}$",
+          5050,
+          560.86
+        ],
+        [
+          "$F_{6}$",
+          "cEDA",
+          100,
+          0.2,
+          0.05,
+          "$10^{-5}$",
+          5050,
+          76.8
+        ],
+        [
+          "",
+          "PBILc",
+          100,
+          0.2,
+          0,
+          "$10^{-5}$",
+          5050,
+          493.6
+        ],
+        [
+          "$F_{7}$",
+          "cEDA",
+          100,
+          0.2,
+          0.05,
+          "$10^{-3}$",
+          4450,
+          69.386
+        ],
+        [
+          "",
+          "PBILc",
+          100,
+          0.2,
+          0,
+          "$10^{-3}$",
+          3250,
+          905.593
+        ],
+        [
+          "$F_{8}$",
+          "cEDA",
+          100,
+          0.2,
+          0.05,
+          "$10^{-5}$",
+          5050,
+          25.25
+        ],
+        [
+          "",
+          "PBILc",
+          100,
+          0.2,
+          0,
+          "$10^{-5}$",
+          5050,
+          664.3
+        ],
+        [
+          "$F_{9}$",
+          "cEDA",
+          100,
+          0.2,
+          0.05,
+          "$10^{-5}$",
+          5050,
+          21.306
+        ],
+        [
+          "",
+          "PBILc",
+          100,
+          0.2,
+          0,
+          "$10^{-5}$",
+          4150,
+          644.195
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 8
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The state of different algorithm after 50 runs",
+      "headers": [
+        "",
+        "copula_EDA",
+        "PBILc",
+        "",
+        "PBILcM",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Mean $\\pm$ Std",
+          "Mean $\\pm$ Std",
+          "",
+          "Mean $\\pm$ Std",
+          ""
+        ],
+        [
+          "$F_{1}$",
+          "$-9.7229 \\mathrm{e}+6 \\pm 1.5966 \\mathrm{e}+4$",
+          "$-9.9473 \\mathrm{e}+6 \\pm 3.1487 \\mathrm{e}+4$",
+          "",
+          "$-4.4996 \\mathrm{e}+5 \\pm 4.4091 \\mathrm{e}+5$",
+          ""
+        ],
+        [
+          "$F_{2}$",
+          "$-9.4549 \\mathrm{e}+6 \\pm 1.3826 \\mathrm{e}+3$",
+          "$-9.9403 \\mathrm{e}+6 \\pm 3.1134 \\mathrm{e}+4$",
+          "",
+          "$-3.8927 \\mathrm{e}+5 \\pm 3.7505 \\mathrm{e}+5$",
+          ""
+        ],
+        [
+          "$F_{3}$",
+          "$-9.8119 \\mathrm{e}+6 \\pm 1.1698 \\mathrm{e}+3$",
+          "$-9.9519 \\mathrm{e}+6 \\pm 2.0524 \\mathrm{e}+4$",
+          "",
+          "$-9.4466 \\mathrm{e}+4 \\pm 6.6105 \\mathrm{e}+4$",
+          ""
+        ],
+        [
+          "$F_{4}$",
+          "$3.6721 \\mathrm{e}-12 \\pm 2.6923 \\mathrm{e}-12$",
+          "$7.8393 \\mathrm{e}-12$",
+          "$\\pm 8.4951 \\mathrm{e}-12$",
+          0.2069,
+          "$\\pm 0.8377$"
+        ],
+        [
+          "$F_{5}$",
+          "$0.9000 \\pm 3.0600 \\mathrm{e}-11$",
+          0.9,
+          "$\\pm 3.3826 \\mathrm{e}-14$",
+          0.9,
+          "$\\pm 2.0910 \\mathrm{e}-5$"
+        ],
+        [
+          "$F_{6}$",
+          "$8.3590 \\mathrm{e}-14 \\pm 5.7045 \\mathrm{e}-14$",
+          "$2.2464 \\mathrm{e}-12$",
+          "$\\pm 2.6022 \\mathrm{e}-12$",
+          "$5.8463 \\mathrm{e}-4$",
+          "$\\pm 6.0017 \\mathrm{e}-4$"
+        ],
+        [
+          "$F_{7}$",
+          "$0.1596 \\pm 0.7787$",
+          35.1368,
+          "$\\pm 58.5155$",
+          0.3105,
+          "$\\pm 0.2903$"
+        ],
+        [
+          "$F_{8}$",
+          "$-1.0000 \\pm 4.4546 \\mathrm{e}-14$",
+          "$-1.0000$",
+          "$\\pm 3.6992 \\mathrm{e}-13$",
+          "$-0.9907$",
+          "$\\pm 0.0388$"
+        ],
+        [
+          "$F_{9}$",
+          "$3.0000 \\pm 9.9700 \\mathrm{e}-9$",
+          7.86,
+          "$\\pm 10.4784$",
+          3.0116,
+          "$\\pm 0.0206$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Experimental results of Archimedean copula-EDAs",
+      "headers": [
+        "Test <br> Function",
+        "Copula",
+        "Convergence <br> Rate",
+        "Convergence <br> Generation"
+      ],
+      "rows": [
+        [
+          "$F_{1}$",
+          "$C_{1}$",
+          "$50 / 50$",
+          13.74
+        ],
+        [
+          "",
+          "$C_{2}$",
+          "$50 / 50$",
+          13.06
+        ],
+        [
+          "$F_{2}$",
+          "$C_{1}$",
+          "$50 / 50$",
+          13.68
+        ],
+        [
+          "",
+          "$C_{2}$",
+          "$50 / 50$",
+          13.14
+        ],
+        [
+          "$F_{3}$",
+          "$C_{1}$",
+          "$50 / 50$",
+          4.8
+        ],
+        [
+          "",
+          "$C_{2}$",
+          "$50 / 50$",
+          11.72
+        ],
+        [
+          "$F_{4}$",
+          "$C_{1}$",
+          "$50 / 50$",
+          16.28
+        ],
+        [
+          "",
+          "$C_{2}$",
+          "$50 / 50$",
+          16.7
+        ],
+        [
+          "$F_{5}$",
+          "$C_{1}$",
+          "$50 / 50$",
+          75.78
+        ],
+        [
+          "",
+          "$C_{2}$",
+          "$50 / 50$",
+          76.78
+        ],
+        [
+          "$F_{6}$",
+          "$C_{1}$",
+          "$50 / 50$",
+          43.68
+        ],
+        [
+          "",
+          "$C_{2}$",
+          "$50 / 50$",
+          28.74
+        ],
+        [
+          "$F_{7}$",
+          "$C_{1}$",
+          "$47 / 50$",
+          55.5957
+        ],
+        [
+          "",
+          "$C_{2}$",
+          "$50 / 50$",
+          32.86
+        ],
+        [
+          "$F_{8}$",
+          "$C_{1}$",
+          "$50 / 50$",
+          14.96
+        ],
+        [
+          "",
+          "$C_{2}$",
+          "$50 / 50$",
+          15.12
+        ],
+        [
+          "$F_{9}$",
+          "$C_{1}$",
+          "$48 / 50$",
+          12.2083
+        ],
+        [
+          "",
+          "$C_{2}$",
+          "$50 / 50$",
+          12.26
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 The comparison among cEDA and other algorithms on Sumcan function",
+      "headers": [
+        "Algorithm",
+        "Selection rate",
+        "$\\sigma$",
+        "F1",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "mean",
+          "StdVar",
+          "min",
+          "max"
+        ],
+        [
+          "$\\begin{aligned} & \\mathrm{UMDA}_{v}^{D} \\\\ & \\mathrm{MIMIC}_{v}{ }^{G} \\\\ & \\mathrm{EGNA}_{i e} \\\\ & \\mathrm{EGNA}_{\\text {BGe }} \\\\ & \\text { ES } \\end{aligned}$",
+          "",
+          "",
+          "$\\begin{gathered} -53460 \\\\ -58775 \\\\ -100000 \\\\ -100000 \\\\ -5910 \\end{gathered}$",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\mathrm{cEDA}_{\\mathrm{PG}}$",
+          0.5,
+          0.02,
+          "$-30.2775$",
+          3.4345,
+          "$-37.9727$",
+          "$-26.2 .83$"
+        ],
+        [
+          "",
+          0.5,
+          0.05,
+          "$-12.5174$",
+          1.4837,
+          "$-15.7628$",
+          "$-11.0210$"
+        ],
+        [
+          "",
+          0.2,
+          "B",
+          "$-60770$",
+          27564,
+          -99866,
+          -6390.9
+        ],
+        [
+          "",
+          0.2,
+          "B",
+          "$-1074.6$",
+          482.2301,
+          "$-2168.2$",
+          "$-513.8331$"
+        ],
+        [
+          "",
+          0.5,
+          "C",
+          "$-184.0976$",
+          52.964,
+          "$-235.0931$",
+          "$-46.0561$"
+        ],
+        [
+          "",
+          "$1 / 3$",
+          "C",
+          "$-561.7312$",
+          178.8254,
+          "$-764.9960$",
+          "$-114.3033$"
+        ],
+        [
+          "",
+          0.2,
+          "C",
+          -9910.3,
+          2692.9,
+          "$-12511$",
+          "$-2786.9$"
+        ],
+        [
+          "",
+          0.2,
+          "C",
+          -2089.4,
+          587.4801,
+          "$-2784.2$",
+          "$-547.5289$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 The comparison among cEDA and other algorithms on Schwefel function",
+      "headers": [
+        "Algorithm",
+        "Selection rate",
+        "$\\sigma$",
+        "F2",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "mean",
+          "StdVar",
+          "min",
+          "max"
+        ],
+        [
+          "$\\begin{aligned} & \\text { UMDA }{ }_{c}^{\\mathrm{TT}} \\\\ & \\text { MIMIC }{ }_{c}^{\\mathrm{G}} \\\\ & \\text { EGNA }{ }_{\\mathrm{ee}} \\\\ & \\text { EGNA }{ }_{\\mathrm{BGe}} \\\\ & \\text { ES } \\end{aligned}$",
+          "",
+          "",
+          "$\\begin{gathered} 0.13754 \\\\ 0.13397 \\\\ 0.09914 \\\\ 0.0250 \\\\ 0 \\end{gathered}$",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\mathrm{cEDA}_{\\mathrm{PG}}$",
+          0.5,
+          0.02,
+          4.0743,
+          0.8572,
+          2.8008,
+          5.3325
+        ],
+        [
+          "",
+          0.5,
+          0.05,
+          0.0097,
+          0.0032,
+          0.0061,
+          0.0167
+        ],
+        [
+          "",
+          0.2,
+          "B",
+          "$2.3833 \\times 10^{-4}$",
+          "$\\begin{gathered} 5.2429 \\times \\\\ 10^{-5} \\end{gathered}$",
+          "$\\begin{gathered} 1.2190 \\times \\\\ 10^{-4} \\end{gathered}$",
+          "$3.6281 \\times 10^{-4}$"
+        ],
+        [
+          "",
+          0.2,
+          "B",
+          0.1478,
+          0.0259,
+          0.1066,
+          0.1954
+        ],
+        [
+          "",
+          0.5,
+          "C",
+          "$8.2443 \\times 10^{-4}$",
+          0.0019,
+          "$\\begin{gathered} 1.0471 \\times \\\\ 10^{-4} \\end{gathered}$",
+          0.0063
+        ],
+        [
+          "",
+          "$1 / 3$",
+          "C",
+          "$1.8707 \\times 0^{-5}$",
+          "$\\begin{gathered} 4.6817 \\times \\\\ 10^{-5} \\end{gathered}$",
+          "$\\begin{gathered} 2.8442 \\times \\\\ 10^{-6} \\end{gathered}$",
+          "$\\begin{gathered} 1.5194 \\times \\\\ 10^{-4} \\end{gathered}$"
+        ],
+        [
+          "",
+          0.2,
+          "C",
+          "$3.0034 \\times 10^{-7}$",
+          "$\\begin{gathered} 7.3179 \\times \\\\ 10^{-7} \\end{gathered}$",
+          "$\\begin{gathered} 4.0579 \\times \\\\ 10^{-8} \\end{gathered}$",
+          "$\\begin{gathered} 2.3825 \\times \\\\ 10^{-6} \\end{gathered}$"
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "6",
+      "table_title": "Table 6 The comparison among cEDA and other algorithms on Griewank function",
+      "headers": [
+        "Algorithm",
+        "Selection <br> rate",
+        "$\\sigma$",
+        "F3",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "mean",
+          "StdVar",
+          "min",
+          "max"
+        ],
+        [
+          "$\\begin{aligned} & \\text { UMDA }_{\\mathrm{c}}^{\\mathrm{TT}} \\\\ & \\text { MIMIC }_{\\mathrm{c}}^{\\mathrm{G}} \\\\ & \\text { EGNA }_{\\mathrm{ee}} \\\\ & \\text { EGNA }_{\\mathrm{BGe}} \\\\ & \\text { ES } \\end{aligned}$",
+          "",
+          "",
+          "$\\begin{gathered} 0.011076 \\\\ 0.007794 \\\\ 0.008175 \\\\ 0.012605 \\\\ 0.034477 \\end{gathered}$",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\mathrm{cEDA}_{\\mathrm{PG}}$",
+          0.5,
+          0.02,
+          1.0796,
+          0.1977,
+          0.6106,
+          1.2775
+        ],
+        [
+          "",
+          0.5,
+          0.05,
+          0.5489,
+          0.3694,
+          0.2215,
+          1.4507
+        ],
+        [
+          "",
+          0.2,
+          "B",
+          0.0046,
+          0.0151,
+          0,
+          0.0857
+        ],
+        [
+          "",
+          0.2,
+          "B",
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "",
+          0.5,
+          "C",
+          "$1.3192 \\times 10^{-9}$",
+          "$\\begin{gathered} 3.1529 \\times \\\\ 10^{-9} \\end{gathered}$",
+          "$\\begin{gathered} 1.2085 \\times \\\\ 10^{-10} \\end{gathered}$",
+          "$\\begin{gathered} 1.0288 \\times \\\\ 10^{-8} \\end{gathered}$"
+        ],
+        [
+          "",
+          "$1 / 3$",
+          "C",
+          "$4.2966 \\times 10^{-14}$",
+          "$\\begin{gathered} 1.0565 \\times \\\\ 10^{-15} \\end{gathered}$",
+          "$\\begin{gathered} 7.2164 \\times \\\\ 10^{-15} \\end{gathered}$",
+          "$\\begin{gathered} 3.4361 \\times \\\\ 10^{-13} \\end{gathered}$"
+        ],
+        [
+          "",
+          0.2,
+          "C",
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    }
+  ]
+}

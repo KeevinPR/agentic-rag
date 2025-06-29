@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/An EDA-based Genetic Algorithm for EV Charging Scheduling under Surge Demand.md",
+    "filename": "An EDA-based Genetic Algorithm for EV Charging Scheduling under Surge Demand.md",
+    "title": "An EDA-based Genetic Algorithm for EV Charging Scheduling under Surge Demand",
+    "year": "2022"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] Long, T., Jia, Q. S., Wang, G., \\& Yang, Y. (2021). Efficient Real-Time EV Charging Scheduling via Ordinal Optimization. IEEE Transactions on Smart Grid.\n[2] Das, R., Wang, Y., Busawon, K., Putrus, G., \\& Neaimeh, M. (2021). Real-time multi-objective optimisation for electric vehicle charging management. Journal of Cleaner Production, 292, 126066.\n[3] Rahman, M. M., Al-Ammar, E. A., Das, H. S., \\& Ko, W. (2020). Comprehensive impact analysis of electric vehicle charging scheduling on load-duration curve. Computers \\& Electrical Engineering, 85, 106673.\n[4] Jin, J., \\& Xu, Y. (2020). Optimal policy characterization enhanced actorcritic approach for electric vehicle charging scheduling in a power distribution network. IEEE Transactions on Smart Grid, 12(2), 14161428.\n[5] Mukherjee, J. C., \\& Gupta, A. (2016). Distributed charge scheduling of plug-in electric vehicles using inter-aggregator collaboration. IEEE Transactions on Smart Grid, 8(1), 331-341.\n[6] Li, H., Wan, Z., \\& He, H. (2019). Constrained EV charging scheduling based on safe deep reinforcement learning. IEEE Transactions on Smart Grid, 11(3), 2427-2439.\n[7] Qian, T., Shao, C., Wang, X., \\& Shahidehpour, M. (2019). Deep reinforcement learning for EV charging navigation by coordinating smart grid and intelligent transportation system. IEEE Transactions on Smart Grid, 11(2), 1714-1723.\n\nTABLE III\nEXPERIMENTAL RESULTS\n\n| Case | Algorithm of Experiments | Number of Iteration | Times of EDA sampling | Iteration <br> Number <br> of Conver- <br> gence | Fitness | Average of queuing time (minute) | Average of idle time (minute) | Number of charged EV within an hour | Time consuming (second) |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| Case 1 | Customeroriented FCFS | - | - | - | 0.755 | 80.8 | 3.0 | 478 | 0.15 |\n|  | Supplieroriented greedy Scheduling | - | - | - | 0.681 | 77.1 | 1.26 | 503 | 0.15 |\n| Case 2 | Genetic algorithmbased random FCFS | 200 | - | 52 | 0.605 | 35.1 | 12.3 | 633 | 411.5 |\n|  | Genetic algorithmbased random scheduling | 200 | - | - | 0.498 | 31.8 | 8.90 | 659 | 513 |\n|  | Genetic algorithmbased greedy Scheduling | 200 | - | 30 | 0.320 | 25.1 | 4.16 | 729 | 519 |\n| Case 3 | EDA-based genetic algorithm | 200 | 3 | - | 0.258 | 21.6 | 3.0 | 769 | 1195 |\n|  | EDA-based genetic algorithm | 625 | 20 | - | 0.266 | 21.8 | 3.2 | 763 | 2664 |\n|  | EDA-based genetic algorithm | 3000 | 20 | - | 0.214 | 19.1 | 2.06 | 784 | 21287 |\n\n[8] Li, S., Hu, W., Cao, D., Dragičević, T., Huang, Q., Chen, Z., \\& Blaubjerg, F. (2021). Electric vehicle charging management based on deep reinforcement learning. Journal of Modern Power Systems and Clean Energy.\n[9] Chang, F., Chen, T., Su, W., \\& Alsafasfeh, Q. (2020). Control of battery charging based on reinforcement learning and long short-term memory networks. Computers \\& Electrical Engineering, 85, 106670.\n[10] García-Álvarez, J., González, M. A., \\& Vela, C. R. (2018). Metaheuristics for solving a real-world electric vehicle charging scheduling problem. Applied Soft Computing, 65, 292-306.\n[11] Basset, M. (2021). Hybrid Heuristic and Metaheuristic for Solving Electric Vehicle Charging Scheduling Problem. In Evolutionary Computation in Combinatorial Optimization: 21st European Conference, EvoCOP 2021, Held as Part of EvoStar 2021, Virtual Event, April 7-9, 2021, Proceedings (Vol. 12692, p. 219). Springer Nature.\n[12] Wang, C., Guo, C., \\& Zuo, X. (2021). Solving multi-depot electric vehicle scheduling problem by column generation and genetic algorithm. Applied Soft Computing, 112, 107774.\n[13] Milas, N. T., Mourtzis, D. A., Giotakos, P. I., \\& Tatakis, E. C. (2020, September). Two-Layer Genetic Algorithm for the Charge Scheduling of Electric Vehicles. In 2020 22nd European Conference on Power Electronics and Applications (EPE’20 ECCE Europe) (pp. P-1). IEEE.\n[14] Hou, S., Jiang, C., Yang, Y., \\& Xiao, W. (2020, December). Electric Vehicle Charging Scheduling Strategy based on Genetic Algorithm. In Journal of Physics: Conference Series (Vol. 1693, No. 1, p. 012104). IOP Publishing.\n[15] Yin, W. J., \\& Ming, Z. F. (2021). Electric vehicle charging and discharging scheduling strategy based on local search and competitive learning\nparticle swarm optimization algorithm. Journal of Energy Storage, 42, 102966.\n[16] Zhang, X., Wang, Z., \\& Lu, Z. (2022). Multi-objective load dispatch for microgrid with electric vehicles using modified gravitational search and particle swarm optimization algorithm. Applied Energy, 306, 118018.\n[17] Bai, X., Wang, Z., Zou, L., Liu, H., Sun, Q., \\& Alsaadi, F. E. (2021). Electric vehicle charging station planning with dynamic prediction of elastic charging demand: a hybrid particle swarm optimization algorithm. Complex \\& Intelligent Systems, 1-12.\n[18] Wang, N., Li, B., Duan, Y., \\& Jia, S. (2021). A multi-energy scheduling strategy for orderly charging and discharging of electric vehicles based on multi-objective particle swarm optimization. Sustainable Energy Technologies and Assessments, 44, 101037.\n[19] Garcia Álvarez, J., González, M. Á., Rodriguez Vela, C., \\& Varela, R. (2018). Electric vehicle charging scheduling by an enhanced artificial bee colony algorithm. Energies, 11(10), 2752.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Long, T., Jia, Q. S., Wang, G., \\& Yang, Y. (2021). Efficient Real-Time EV Charging Scheduling via Ordinal Optimization. IEEE Transactions on Smart Grid."
+      },
+      {
+        "ref_id": "2",
+        "text": "Das, R., Wang, Y., Busawon, K., Putrus, G., \\& Neaimeh, M. (2021). Real-time multi-objective optimisation for electric vehicle charging management. Journal of Cleaner Production, 292, 126066."
+      },
+      {
+        "ref_id": "3",
+        "text": "Rahman, M. M., Al-Ammar, E. A., Das, H. S., \\& Ko, W. (2020). Comprehensive impact analysis of electric vehicle charging scheduling on load-duration curve. Computers \\& Electrical Engineering, 85, 106673."
+      },
+      {
+        "ref_id": "4",
+        "text": "Jin, J., \\& Xu, Y. (2020). Optimal policy characterization enhanced actorcritic approach for electric vehicle charging scheduling in a power distribution network. IEEE Transactions on Smart Grid, 12(2), 14161428."
+      },
+      {
+        "ref_id": "5",
+        "text": "Mukherjee, J. C., \\& Gupta, A. (2016). Distributed charge scheduling of plug-in electric vehicles using inter-aggregator collaboration. IEEE Transactions on Smart Grid, 8(1), 331-341."
+      },
+      {
+        "ref_id": "6",
+        "text": "Li, H., Wan, Z., \\& He, H. (2019). Constrained EV charging scheduling based on safe deep reinforcement learning. IEEE Transactions on Smart Grid, 11(3), 2427-2439."
+      },
+      {
+        "ref_id": "7",
+        "text": "Qian, T., Shao, C., Wang, X., \\& Shahidehpour, M. (2019). Deep reinforcement learning for EV charging navigation by coordinating smart grid and intelligent transportation system. IEEE Transactions on Smart Grid, 11(2), 1714-1723."
+      },
+      {
+        "ref_id": "8",
+        "text": "Li, S., Hu, W., Cao, D., Dragičević, T., Huang, Q., Chen, Z., \\& Blaubjerg, F. (2021). Electric vehicle charging management based on deep reinforcement learning. Journal of Modern Power Systems and Clean Energy."
+      },
+      {
+        "ref_id": "9",
+        "text": "Chang, F., Chen, T., Su, W., \\& Alsafasfeh, Q. (2020). Control of battery charging based on reinforcement learning and long short-term memory networks. Computers \\& Electrical Engineering, 85, 106670."
+      },
+      {
+        "ref_id": "10",
+        "text": "García-Álvarez, J., González, M. A., \\& Vela, C. R. (2018). Metaheuristics for solving a real-world electric vehicle charging scheduling problem. Applied Soft Computing, 65, 292-306."
+      },
+      {
+        "ref_id": "11",
+        "text": "Basset, M. (2021). Hybrid Heuristic and Metaheuristic for Solving Electric Vehicle Charging Scheduling Problem. In Evolutionary Computation in Combinatorial Optimization: 21st European Conference, EvoCOP 2021, Held as Part of EvoStar 2021, Virtual Event, April 7-9, 2021, Proceedings (Vol. 12692, p. 219). Springer Nature."
+      },
+      {
+        "ref_id": "12",
+        "text": "Wang, C., Guo, C., \\& Zuo, X. (2021). Solving multi-depot electric vehicle scheduling problem by column generation and genetic algorithm. Applied Soft Computing, 112, 107774."
+      },
+      {
+        "ref_id": "13",
+        "text": "Milas, N. T., Mourtzis, D. A., Giotakos, P. I., \\& Tatakis, E. C. (2020, September). Two-Layer Genetic Algorithm for the Charge Scheduling of Electric Vehicles. In 2020 22nd European Conference on Power Electronics and Applications (EPE’20 ECCE Europe) (pp. P-1). IEEE."
+      },
+      {
+        "ref_id": "14",
+        "text": "Hou, S., Jiang, C., Yang, Y., \\& Xiao, W. (2020, December). Electric Vehicle Charging Scheduling Strategy based on Genetic Algorithm. In Journal of Physics: Conference Series (Vol. 1693, No. 1, p. 012104). IOP Publishing."
+      },
+      {
+        "ref_id": "15",
+        "text": "Yin, W. J., \\& Ming, Z. F. (2021). Electric vehicle charging and discharging scheduling strategy based on local search and competitive learning"
+      },
+      {
+        "ref_id": "16",
+        "text": "Zhang, X., Wang, Z., \\& Lu, Z. (2022). Multi-objective load dispatch for microgrid with electric vehicles using modified gravitational search and particle swarm optimization algorithm. Applied Energy, 306, 118018."
+      },
+      {
+        "ref_id": "17",
+        "text": "Bai, X., Wang, Z., Zou, L., Liu, H., Sun, Q., \\& Alsaadi, F. E. (2021). Electric vehicle charging station planning with dynamic prediction of elastic charging demand: a hybrid particle swarm optimization algorithm. Complex \\& Intelligent Systems, 1-12."
+      },
+      {
+        "ref_id": "18",
+        "text": "Wang, N., Li, B., Duan, Y., \\& Jia, S. (2021). A multi-energy scheduling strategy for orderly charging and discharging of electric vehicles based on multi-objective particle swarm optimization. Sustainable Energy Technologies and Assessments, 44, 101037."
+      },
+      {
+        "ref_id": "19",
+        "text": "Garcia Álvarez, J., González, M. Á., Rodriguez Vela, C., \\& Varela, R. (2018). Electric vehicle charging scheduling by an enhanced artificial bee colony algorithm. Energies, 11(10), 2752."
+      }
+    ],
+    "reference_count": 19,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "Details Of Selected Data Set",
+      "headers": [
+        "Data Item",
+        "Value"
+      ],
+      "rows": [
+        [
+          "The number of CSs",
+          34
+        ],
+        [
+          "The charge devices of each CS",
+          5
+        ],
+        [
+          "The charging voltage of charge devices",
+          "$500 \\mathrm{~V}-750 \\mathrm{~V}$"
+        ],
+        [
+          "The total number of EV that are intending to use the",
+          1000
+        ],
+        [
+          "charge service in a certain time duration",
+          ""
+        ],
+        [
+          "The number of EVs that can arrive the neatest CS with",
+          899
+        ],
+        [
+          "its remaining battery power",
+          101
+        ],
+        [
+          "The number of EVs that use the batteries exchanging",
+          ""
+        ],
+        [
+          "service",
+          ""
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "Settings Of Obiect Function and Algorithms",
+      "headers": [
+        "Variable",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Objective function",
+          ""
+        ],
+        [
+          "$a_{v i}$",
+          0
+        ],
+        [
+          "$\\omega_{n \\in[1,3]}$",
+          "$[0.3,0.4,0.3]$"
+        ],
+        [
+          "$Q_{m}$",
+          40000
+        ],
+        [
+          "$D_{m}$",
+          3000
+        ],
+        [
+          "Genetic algorithm",
+          ""
+        ],
+        [
+          "mutation rate $m$",
+          0.3
+        ],
+        [
+          "crossover rate $r$",
+          0.7
+        ],
+        [
+          "population size $P$",
+          200
+        ],
+        [
+          "maximum iteration number $T$",
+          2006253000
+        ],
+        [
+          "EDA-based genetic algorithm",
+          ""
+        ],
+        [
+          "iteration times of sampling $E T_{c}$",
+          25
+        ],
+        [
+          "iteration times of sampling $E T$",
+          75500
+        ],
+        [
+          "coefficient $\\theta$",
+          1
+        ],
+        [
+          "the number of sampling $s_{n}$",
+          1
+        ],
+        [
+          "maximum iteration number $T$",
+          2006253000
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 2
+    },
+    {
+      "table_number": "III",
+      "table_title": "EXPERIMENTAL RESULTS",
+      "headers": [
+        "Case",
+        "Algorithm of Experiments",
+        "Number of Iteration",
+        "Times of EDA sampling",
+        "Iteration <br> Number <br> of Conver- <br> gence",
+        "Fitness",
+        "Average of queuing time (minute)",
+        "Average of idle time (minute)",
+        "Number of charged EV within an hour",
+        "Time consuming (second)"
+      ],
+      "rows": [
+        [
+          1,
+          "Customeroriented FCFS",
+          "-",
+          "-",
+          "-",
+          0.755,
+          80.8,
+          3.0,
+          478,
+          0.15
+        ],
+        [
+          "",
+          "Supplieroriented greedy Scheduling",
+          "-",
+          "-",
+          "-",
+          0.681,
+          77.1,
+          1.26,
+          503,
+          0.15
+        ],
+        [
+          2,
+          "Genetic algorithmbased random FCFS",
+          200,
+          "-",
+          52,
+          0.605,
+          35.1,
+          12.3,
+          633,
+          411.5
+        ],
+        [
+          "",
+          "Genetic algorithmbased random scheduling",
+          200,
+          "-",
+          "-",
+          0.498,
+          31.8,
+          8.9,
+          659,
+          513
+        ],
+        [
+          "",
+          "Genetic algorithmbased greedy Scheduling",
+          200,
+          "-",
+          30,
+          0.32,
+          25.1,
+          4.16,
+          729,
+          519
+        ],
+        [
+          3,
+          "EDA-based genetic algorithm",
+          200,
+          3,
+          "-",
+          0.258,
+          21.6,
+          3.0,
+          769,
+          1195
+        ],
+        [
+          "",
+          "EDA-based genetic algorithm",
+          625,
+          20,
+          "-",
+          0.266,
+          21.8,
+          3.2,
+          763,
+          2664
+        ],
+        [
+          "",
+          "EDA-based genetic algorithm",
+          3000,
+          20,
+          "-",
+          0.214,
+          19.1,
+          2.06,
+          784,
+          21287
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 10
+    }
+  ]
+}

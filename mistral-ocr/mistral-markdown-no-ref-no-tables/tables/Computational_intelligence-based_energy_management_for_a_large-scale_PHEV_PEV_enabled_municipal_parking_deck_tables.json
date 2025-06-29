@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Computational intelligence-based energy management for a large-scale PHEV PEV enabled municipal parking deck.md",
+    "filename": "Computational intelligence-based energy management for a large-scale PHEV PEV enabled municipal parking deck.md",
+    "title": "Computational intelligence-based energy management for a large-scale PHEV PEV enabled municipal parking deck",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "US standard electric vehicle charging level.",
+      "headers": [
+        "",
+        "Voltage (VAC)",
+        "Current (A)",
+        "Power (kV A)",
+        "Phase"
+      ],
+      "rows": [
+        [
+          1,
+          120,
+          12,
+          1.44,
+          "Single"
+        ],
+        [
+          2,
+          "$208 / 240$",
+          32,
+          "$6.7 / 7.7$",
+          "Single"
+        ],
+        [
+          3,
+          240,
+          70,
+          16.8,
+          "Three"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_number": "2",
+      "table_title": "Comparison on EDA and PSO.",
+      "headers": [
+        "",
+        "Average CPU <br> time $(\\mathrm{s})$",
+        "Average fitness <br> value",
+        "Standard deviation of fitness <br> value $(\\%)$"
+      ],
+      "rows": [
+        [
+          "EDA",
+          2.98,
+          34.3,
+          0.79
+        ],
+        [
+          "PSO",
+          14.2,
+          28.01,
+          0.95
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Comparisons on PSO, EDA, IPM, and GA.",
+      "headers": [
+        "Method",
+        "Fitness values",
+        "Computation time (s)",
+        "Pros",
+        "Cons"
+      ],
+      "rows": [
+        [
+          "PSO",
+          28.01,
+          14.2,
+          "Fewer parameters <br> Easy to handle constraints Good for multi-objective problem",
+          "Relatively low quality solution Time-consuming Relatively slow convergence rate"
+        ],
+        [
+          "EDA",
+          34.3,
+          2.98,
+          "Good for complex system Little dimension limit Avoid premature convergence Good for multi-objective problem",
+          "Moderate computation cost Moderate local search ability Need statistical background"
+        ],
+        [
+          "IPM",
+          34.26,
+          0.9,
+          "Fast <br> Relatively easy to Implement Good for large-scale problem",
+          "Only search for local minima May fail to find global optima Need to compute derivatives"
+        ],
+        [
+          "GA",
+          28.07,
+          16.7,
+          "Built-in matlab toolbox Useful for complex or loosely defined problems No need to compute derivatives Good for multi-objective problem",
+          "Progressive slower improvement Need many parameters to adjust Need mutation and crossover Computationally expensive"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    }
+  ]
+}

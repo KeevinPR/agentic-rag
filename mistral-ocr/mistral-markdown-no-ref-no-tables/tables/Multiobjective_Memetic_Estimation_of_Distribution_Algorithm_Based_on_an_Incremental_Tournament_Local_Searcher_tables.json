@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Multiobjective Memetic Estimation of Distribution Algorithm Based on an Incremental Tournament Local Searcher.md",
+    "filename": "Multiobjective Memetic Estimation of Distribution Algorithm Based on an Incremental Tournament Local Searcher.md",
+    "title": "Multiobjective Memetic Estimation of Distribution Algorithm Based on an Incremental Tournament Local Searcher",
+    "year": "2014"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Test instances.",
+      "headers": [
+        "Instance",
+        "Variable",
+        "Objectives",
+        "Number of evaluations"
+      ],
+      "rows": [
+        [
+          1,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\\\ f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\sqrt{f_{1}(\\mathbf{x}) / g(\\mathbf{x})}\\right] \\\\ g(\\mathbf{x})=1+9\\left(\\sum_{i=2}^{n} x_{i}\\right) /(n-1) \\end{gathered}$",
+          50000
+        ],
+        [
+          2,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\\\ f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\left(f_{1}(\\mathbf{x}) / g(\\mathbf{x})\\right)^{2}\\right] \\\\ g(\\mathbf{x})=1+9\\left(\\sum_{i=2}^{n} x_{i}\\right) /(n-1) \\end{gathered}$",
+          50000
+        ],
+        [
+          3,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\\\ f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\sqrt{f_{1}(\\mathbf{x}) / g(\\mathbf{x})}-f_{1}(\\mathbf{x}) / g(\\mathbf{x}) \\sin \\left(10 \\pi x_{1}\\right)\\right] \\\\ g(\\mathbf{x})=1+9\\left(\\sum_{i=2}^{n} x_{i}\\right) /(n-1) \\end{gathered}$",
+          50000
+        ],
+        [
+          4,
+          "$\\begin{gathered} x_{1 \\in[0,1]} \\\\ x_{2 \\in[-5,5]} \\\\ i=2, \\ldots, 10 \\end{gathered}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\\\ f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\sqrt{f_{1}(\\mathbf{x}) / g(\\mathbf{x})}\\right] \\\\ g(\\mathbf{x})=1+10(n-1)+\\sum_{i=2}^{n}\\left[x_{i}^{2}-10 \\cos \\left(4 \\pi x_{i}\\right)\\right] \\end{gathered}$",
+          50000
+        ],
+        [
+          6,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=10 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=1-\\exp \\left(-4 x_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\left(f_{1}(\\mathbf{x}) / g(\\mathbf{x})\\right)^{2}\\right] \\\\ g(\\mathbf{x})=1+9\\left[\\left(\\sum_{i=2}^{n} x_{i}\\right) /(9)\\right]^{0.25} \\end{gathered}$",
+          50000
+        ],
+        [
+          2,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=12 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\cos \\left(0.5 \\pi x_{2}\\right)(1+g) \\\\ f_{2}(\\mathbf{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\sin \\left(0.5 \\pi x_{2}\\right)(1+g) \\\\ f_{3}(\\mathbf{x})=\\sin \\left(0.5 \\pi x_{1}\\right)(1+g) \\\\ & g(\\mathbf{x})=\\sum_{i=1}^{n}\\left(x_{i}-0.5\\right)^{2} \\end{aligned}$",
+          50000
+        ],
+        [
+          4,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=12 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=\\cos \\left(0.5 \\pi x_{1}{ }^{\\mathrm{n}}\\right) \\cos \\left(0.5 \\pi x_{2}{ }^{\\mathrm{n}}\\right)(1+g) \\\\ f_{2}(\\mathbf{x})=\\cos \\left(0.5 \\pi x_{1}{ }^{\\mathrm{n}}\\right) \\sin \\left(0.5 \\pi x_{2}{ }^{\\mathrm{n}}\\right)(1+g) \\\\ f_{3}(\\mathbf{x})=\\sin \\left(0.5 \\pi x_{1}{ }^{\\mathrm{n}}\\right)(1+g) \\\\ & g(\\mathbf{x})=\\sum_{i=1}^{n}\\left(x_{i}-0.5\\right)^{2} \\quad \\alpha=100 \\end{aligned}$",
+          50000
+        ],
+        [
+          6,
+          "$\\begin{gathered} {[0,1]^{\\mathrm{n}}} \\\\ n=22 \\\\ \\mathbf{x}_{M}=[0,1]^{20} \\end{gathered}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\\\ f_{2}(\\mathbf{x})=x_{2} \\\\ g\\left(\\mathbf{x}_{M}\\right)=1+0.45 \\sum x_{i} \\\\ h=3-f_{2} /(1+g)\\left(1+\\sin \\left(3 \\pi f_{1}\\right)\\right)-f_{3} /(1+g)\\left(1+\\sin \\left(3 \\pi f_{2}\\right)\\right) \\end{gathered}$",
+          50000
+        ],
+        [
+          1,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\\\ g(\\mathbf{x})=1+9\\left(\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right) /(n-1) \\end{gathered}$",
+          15000
+        ],
+        [
+          2,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\\\ g(\\mathbf{x})=1+9\\left(\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right) /(n-1) \\end{gathered}$",
+          15000
+        ],
+        [
+          3,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=1-\\exp \\left(-4 x_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\left(f_{1}(\\mathbf{x}) / g(\\mathbf{x})\\right)^{2}\\right] \\\\ g(\\mathbf{x})=1+9\\left[\\left(\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2}\\right) / 9\\right]^{0.25} \\end{aligned}$",
+          100000
+        ],
+        [
+          4,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\cos \\left(0.5 \\pi x_{2}\\right)(1+g) \\\\ f_{2}(\\mathbf{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\sin \\left(0.5 \\pi x_{2}\\right)(1+g) \\\\ f_{3}(\\mathbf{x})=\\sin \\left(0.5 \\pi x_{1}\\right)(1+g) \\\\ & g(\\mathbf{x})=\\sum_{i=2}^{n}\\left(x_{i}-x_{1}\\right)^{2} \\end{aligned}$",
+          35000
+        ],
+        [
+          5,
+          "$\\begin{aligned} & {[0,1]^{\\mathrm{n}}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\\\ g(\\mathbf{x})=1+9\\left(\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right) /(n-1) \\end{gathered}$",
+          15000
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 4
+    },
+    {
+      "table_number": "I",
+      "table_title": "Continued.",
+      "headers": [
+        "Instance",
+        "Variable",
+        "Objectives",
+        "Number of evaluations"
+      ],
+      "rows": [
+        [
+          6,
+          "$\\begin{aligned} & {[0,1]^{n}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\quad f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\left(f_{1}(\\mathbf{x}) / g(\\mathbf{x})\\right)^{2}\\right] \\\\ g(\\mathbf{x})=1+9\\left(\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right) /(n-1) \\end{gathered}$",
+          15000
+        ],
+        [
+          7,
+          "$\\begin{aligned} & {[0,1]^{n}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=1-\\exp \\left(-4 x_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\left(f_{1}(\\mathbf{x}) / g(\\mathbf{x})\\right)^{2}\\right] \\\\ g(\\mathbf{x})=1+9\\left(\\left(\\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}\\right) / 9\\right)^{0.25} \\end{aligned}$",
+          100000
+        ],
+        [
+          8,
+          "$\\begin{aligned} & {[0,1]^{n}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\cos \\left(0.5 \\pi x_{2}\\right)(1+g) \\\\ f_{2}(\\mathbf{x})=\\cos \\left(0.5 \\pi x_{1}\\right) \\sin \\left(0.5 \\pi x_{2}\\right)(1+g) \\\\ f_{3}(\\mathbf{x})=\\sin \\left(0.5 \\pi x_{1}\\right)(1+g) \\\\ g(\\mathbf{x})=\\sum_{i=1}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2} \\end{aligned}$",
+          35000
+        ],
+        [
+          9,
+          "$\\begin{gathered} {[0,1] \\times[0,10]^{n-1}} \\\\ n=30 \\end{gathered}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\quad f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\sqrt{f_{1}(\\mathbf{x}) / g(\\mathbf{x})}\\right] \\\\ g(\\mathbf{x})=0.00025 \\sum_{i=2}^{n}\\left(x_{i}^{2}-x_{1}\\right)^{2}-\\prod_{i=2}^{n} \\cos \\left(\\left(x_{i}^{2}\\right) / \\sqrt{i-1}\\right)+2 \\end{gathered}$",
+          100000
+        ],
+        [
+          10,
+          "$\\begin{aligned} & {[0,1] \\times[0,10]^{n-1}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\quad f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\sqrt{f_{1}(\\mathbf{x}) / g(\\mathbf{x})}\\right] \\\\ g(\\mathbf{x})=1+10(n-1)+\\sum_{i=2}^{n}\\left[\\left(x_{i}^{2}-x_{1}\\right)^{2}-10 \\cos \\left(2 \\pi\\left(x_{i}^{2}-x_{1}\\right)\\right)\\right] \\end{aligned}$",
+          100000
+        ],
+        [
+          1,
+          "$\\begin{aligned} & {[0,1]^{n}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=x_{1} \\quad f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\sqrt{f_{1}(\\mathbf{x}) / g(\\mathbf{x})}\\right] \\\\ g(\\mathbf{x})=1+9\\left(\\sum_{i=2}^{n}\\left(100 \\sin \\left(\\pi x_{i}\\right)-x_{i}\\right)^{2}\\right) /(n-1) \\end{gathered}$",
+          30000
+        ],
+        [
+          2,
+          "$\\begin{aligned} & {[0,1]^{n}} \\\\ & n=30 \\end{aligned}$",
+          "$\\begin{gathered} f_{1}(\\mathbf{x})=1-\\exp \\left(-4 x_{1}\\right) \\sin ^{6}\\left(6 \\pi x_{1}\\right) \\\\ f_{2}(\\mathbf{x})=g(\\mathbf{x})\\left[1-\\left(f_{1}(\\mathbf{x}) / g(\\mathbf{x})\\right)^{2}\\right] \\\\ g(\\mathbf{x})=1+9\\left[\\left(\\sum_{i=2}^{n}\\left(6\\left(\\sin \\pi x_{i}-x_{1}\\right)\\right)^{2}\\right) / 9\\right]^{0.25} \\end{aligned}$",
+          60000
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Indexes of the different algorithms.",
+      "headers": [
+        "Index",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rows": [
+        [
+          "Algorithms",
+          "MMEDA",
+          "RM-MEDA",
+          3,
+          "PCX-NSGA-II"
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "The $\\varepsilon$ values for different test instances.",
+      "headers": [
+        "ZDT1",
+        "$[0.0075,0.0075]$",
+        "DTLZ2",
+        "$[0.045,0.045,0.03]$",
+        "F4",
+        "$[0.045,0.045,0.03]$",
+        "F10",
+        "$[0.0075,0.0075]$"
+      ],
+      "rows": [
+        [
+          2,
+          "$[0.0075,0.0075]$",
+          3,
+          "$[0.045,0.045,0.03]$",
+          5,
+          "$[0.0075,0.0075]$",
+          1,
+          "$[0.0075,0.0075]$"
+        ],
+        [
+          3,
+          "$[0.0025,0.0035]$",
+          4,
+          "$[0.045,0.045,0.03]$",
+          6,
+          "$[0.0075,0.0075]$",
+          2,
+          "$[0.0075,0.0075]$"
+        ],
+        [
+          4,
+          "$[0.0075,0.0075]$",
+          6,
+          "$[0.035,0.035,0.035]$",
+          7,
+          "$[0.0075,0.0075]$",
+          3,
+          "$[0.0075,0.0075]$"
+        ],
+        [
+          6,
+          "$[0.0075,0.0075]$",
+          1,
+          "$[0.0075,0.0075]$",
+          8,
+          "$[0.045,0.045,0.03]$",
+          "",
+          ""
+        ],
+        [
+          1,
+          "$[0.02,0.02,0.05]$",
+          2,
+          "$[0.0075,0.0075]$",
+          9,
+          "$[0.0075,0.0075]$",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 8
+    }
+  ]
+}

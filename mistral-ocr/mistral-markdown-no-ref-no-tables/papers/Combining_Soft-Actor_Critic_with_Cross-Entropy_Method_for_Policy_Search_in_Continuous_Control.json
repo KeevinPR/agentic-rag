@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Combining Soft-Actor Critic with Cross-Entropy Method for Policy Search in Continuous Control.md",
+    "filename": "Combining Soft-Actor Critic with Cross-Entropy Method for Policy Search in Continuous Control.md",
+    "title": "Combining Soft-Actor Critic with Cross-Entropy Method for Policy Search in Continuous Control",
+    "year": "2022"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] N. D. Nguyen, T. T. Nguyen, H. Nguyen, and S. Nahavandi, \"Review, analyze, and design a comprehensive deep reinforcement learning framework,\" CoRR, vol. abs/2002.11883, 2020. [Online]. Available: https://arxiv.org/abs/2002.11883\n[2] S. Khadka and K. Tumer, \"Evolution-guided policy gradient in reinforcement learning,\" in NeurIPS, 2018.\n[3] A. Pourchot and O. Sigaud, \"CEM-RL: Combining evolutionary and gradient-based methods for policy search,\" in ICLR, 2019.\n[4] T. Salimans, J. Ho, X. Chen, S. Sidor, and I. Sutskever, \"Evolution strategies as a scalable alternative to reinforcement learning,\" 2017.\n[5] D. Wierstra, T. Schaul, J. Peters, and J. Schmidhuber, \"Natural evolution strategies,\" in Proceedings of the IEEE Congress on Evolutionary Computation (CEC), 2008.\n[6] N. Maheswaranathan, L. Metz, G. Tucker, D. Choi, and J. SohlDickstein, \"Guided evolutionary strategies: augmenting random search with surrogate gradients,\" in ICML, 2019.\n[7] M. P. Deisenroth, G. Neumann, and J. Peters, \"A survey on policy search for robotics,\" Found. Trends Robotics, vol. 2, no. 1-2, pp. 1-142, 2013.\n[8] K. I. Chatzilygeroudis, V. Vassiliades, F. Stulp, S. Calinon, and J. Mouret, \"A survey on policy search algorithms for learning robot controllers in a handful of trials,\" IEEE Trans. Robotics, vol. 36, no. 2, pp. 328-347, 2020.\n[9] A. Ilyas, L. Engstrom, S. Santurkar, D. Tsipras, F. Janoos, L. Rudolph, and A. Madry, \"A closer look at deep policy gradients,\" in ICLR, 2020.\n[10] R. S. Sutton and A. G. Barto, Reinforcement Learning: An Introduction, 2nd ed. The MIT Press, 2018.\n[11] D. P. Kingma and J. Ba, \"Adam: A method for stochastic optimization,\" in ICLR, 2015.\n[12] T. P. Lillicrap, J. J. Hunt, A. Pritzel, N. Heess, T. Erez, Y. Tassa, D. Silver, and D. Wierstra, \"Continuous control with deep reinforcement learning,\" in ICLR, 2016.\n[13] J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov, \"Proximal policy optimization algorithms,\" CoRR, vol. abs/1707.06347, 2017. [Online]. Available: http://arxiv.org/abs/1707.06347\n[14] Z. Wang, V. Bapst, N. Heess, V. Mnih, R. Munos, K. Kavukcuoglu, and N. de Freitas, \"Sample efficient actor-critic with experience replay,\" in ICLR, 2017.\n[15] S. Fujimoto, H. van Hoof, and D. Meger, \"Addressing function approximation error in actor-critic methods,\" in International Conference on Machine Learning (ICML), 2018.\n[16] P. Henderson, R. Islam, P. Bachman, J. Pineau, D. Precup, and D. Meger, \"Deep reinforcement learning that matters,\" in Proceedings of the ThirtySecond AAAI Conference on Artificial Intelligence, (AAAI-18), 2018.\n[17] T. Haarnoja, A. Zhou, P. Abbeel, and S. Levine, \"Soft Actor-Critic: Offpolicy maximum entropy deep reinforcement learning with a stochastic actor,\" in ICML, 2018.\n[18] J. Achiam, \"Spinning Up in Deep Reinforcement Learning,\" 2018.\n[19] A. E. Eiben and J. E. Smith, What Is an Evolutionary Algorithm? Berlin, Heidelberg: Springer Berlin Heidelberg, 2015, pp. 25-48.\n[20] R. Rubinstein, \"The cross-entropy method for combinatorial and continuous optimization,\" Methodology and computing in applied probability, vol. 1, no. 2, pp. 127-190, 1999.\n[21] K. Suri, X. Q. Shi, K. N. Plataniotis, and Y. A. Lawryshyn, \"Evolve to control: Evolution-based soft actor-critic for scalable reinforcement learning,\" CoRR, vol. abs/2007.13690, 2020. [Online]. Available: https://arxiv.org/abs/2007.13690\n[22] E. Todorov, T. Erez, and Y. Tassa, \"Mujoco: A physics engine for model-based control,\" in 2012 IEEE/RSJ International Conference on Intelligent Robots and Systems. IEEE, 2012, pp. 5026-5033.\n[23] G. Brockman, V. Cheung, L. Pettersson, J. Schneider, L. Schulman, J. Tang, and W. Zaremba, \"OpenAI Gym,\" CoRR, vol. abs/1606.01540, 2016. [Online]. Available: http://arxiv.org/abs/1606.01540\n[24] J. Weng, H. Chen, D. Yan, K. You, A. Duburcq, M. Zhang, H. Su, and J. Zhu, \"Tianshou: a highly modularized deep reinforcement learning library,\" arXiv preprint arXiv:2107.14171, 2021.\n[25] K. Choromanski, A. Pacchiano, J. Parker-Holder, Y. Tang, and V. Sindhwani, \"From complexity to simplicity: Adaptive es-active subspaces for blackbox optimization,\" in NeurIPS, 2019, pp. 10 299-10 309.\n[26] P. Vicol, L. Metz, and J. Sohl-Dickstein, \"Unbiased gradient estimation in unrolled computation graphs with persistent evolution strategies,\" in ICML 2021. PMLR, 2021, pp. 10 553-10 563.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "N. D. Nguyen, T. T. Nguyen, H. Nguyen, and S. Nahavandi, \"Review, analyze, and design a comprehensive deep reinforcement learning framework,\" CoRR, vol. abs/2002.11883, 2020. [Online]. Available: https://arxiv.org/abs/2002.11883"
+      },
+      {
+        "ref_id": "2",
+        "text": "S. Khadka and K. Tumer, \"Evolution-guided policy gradient in reinforcement learning,\" in NeurIPS, 2018."
+      },
+      {
+        "ref_id": "3",
+        "text": "A. Pourchot and O. Sigaud, \"CEM-RL: Combining evolutionary and gradient-based methods for policy search,\" in ICLR, 2019."
+      },
+      {
+        "ref_id": "4",
+        "text": "T. Salimans, J. Ho, X. Chen, S. Sidor, and I. Sutskever, \"Evolution strategies as a scalable alternative to reinforcement learning,\" 2017."
+      },
+      {
+        "ref_id": "5",
+        "text": "D. Wierstra, T. Schaul, J. Peters, and J. Schmidhuber, \"Natural evolution strategies,\" in Proceedings of the IEEE Congress on Evolutionary Computation (CEC), 2008."
+      },
+      {
+        "ref_id": "6",
+        "text": "N. Maheswaranathan, L. Metz, G. Tucker, D. Choi, and J. SohlDickstein, \"Guided evolutionary strategies: augmenting random search with surrogate gradients,\" in ICML, 2019."
+      },
+      {
+        "ref_id": "7",
+        "text": "M. P. Deisenroth, G. Neumann, and J. Peters, \"A survey on policy search for robotics,\" Found. Trends Robotics, vol. 2, no. 1-2, pp. 1-142, 2013."
+      },
+      {
+        "ref_id": "8",
+        "text": "K. I. Chatzilygeroudis, V. Vassiliades, F. Stulp, S. Calinon, and J. Mouret, \"A survey on policy search algorithms for learning robot controllers in a handful of trials,\" IEEE Trans. Robotics, vol. 36, no. 2, pp. 328-347, 2020."
+      },
+      {
+        "ref_id": "9",
+        "text": "A. Ilyas, L. Engstrom, S. Santurkar, D. Tsipras, F. Janoos, L. Rudolph, and A. Madry, \"A closer look at deep policy gradients,\" in ICLR, 2020."
+      },
+      {
+        "ref_id": "10",
+        "text": "R. S. Sutton and A. G. Barto, Reinforcement Learning: An Introduction, 2nd ed. The MIT Press, 2018."
+      },
+      {
+        "ref_id": "11",
+        "text": "D. P. Kingma and J. Ba, \"Adam: A method for stochastic optimization,\" in ICLR, 2015."
+      },
+      {
+        "ref_id": "12",
+        "text": "T. P. Lillicrap, J. J. Hunt, A. Pritzel, N. Heess, T. Erez, Y. Tassa, D. Silver, and D. Wierstra, \"Continuous control with deep reinforcement learning,\" in ICLR, 2016."
+      },
+      {
+        "ref_id": "13",
+        "text": "J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov, \"Proximal policy optimization algorithms,\" CoRR, vol. abs/1707.06347, 2017. [Online]. Available: http://arxiv.org/abs/1707.06347"
+      },
+      {
+        "ref_id": "14",
+        "text": "Z. Wang, V. Bapst, N. Heess, V. Mnih, R. Munos, K. Kavukcuoglu, and N. de Freitas, \"Sample efficient actor-critic with experience replay,\" in ICLR, 2017."
+      },
+      {
+        "ref_id": "15",
+        "text": "S. Fujimoto, H. van Hoof, and D. Meger, \"Addressing function approximation error in actor-critic methods,\" in International Conference on Machine Learning (ICML), 2018."
+      },
+      {
+        "ref_id": "16",
+        "text": "P. Henderson, R. Islam, P. Bachman, J. Pineau, D. Precup, and D. Meger, \"Deep reinforcement learning that matters,\" in Proceedings of the ThirtySecond AAAI Conference on Artificial Intelligence, (AAAI-18), 2018."
+      },
+      {
+        "ref_id": "17",
+        "text": "T. Haarnoja, A. Zhou, P. Abbeel, and S. Levine, \"Soft Actor-Critic: Offpolicy maximum entropy deep reinforcement learning with a stochastic actor,\" in ICML, 2018."
+      },
+      {
+        "ref_id": "18",
+        "text": "J. Achiam, \"Spinning Up in Deep Reinforcement Learning,\" 2018."
+      },
+      {
+        "ref_id": "19",
+        "text": "A. E. Eiben and J. E. Smith, What Is an Evolutionary Algorithm? Berlin, Heidelberg: Springer Berlin Heidelberg, 2015, pp. 25-48."
+      },
+      {
+        "ref_id": "20",
+        "text": "R. Rubinstein, \"The cross-entropy method for combinatorial and continuous optimization,\" Methodology and computing in applied probability, vol. 1, no. 2, pp. 127-190, 1999."
+      },
+      {
+        "ref_id": "21",
+        "text": "K. Suri, X. Q. Shi, K. N. Plataniotis, and Y. A. Lawryshyn, \"Evolve to control: Evolution-based soft actor-critic for scalable reinforcement learning,\" CoRR, vol. abs/2007.13690, 2020. [Online]. Available: https://arxiv.org/abs/2007.13690"
+      },
+      {
+        "ref_id": "22",
+        "text": "E. Todorov, T. Erez, and Y. Tassa, \"Mujoco: A physics engine for model-based control,\" in 2012 IEEE/RSJ International Conference on Intelligent Robots and Systems. IEEE, 2012, pp. 5026-5033."
+      },
+      {
+        "ref_id": "23",
+        "text": "G. Brockman, V. Cheung, L. Pettersson, J. Schneider, L. Schulman, J. Tang, and W. Zaremba, \"OpenAI Gym,\" CoRR, vol. abs/1606.01540, 2016. [Online]. Available: http://arxiv.org/abs/1606.01540"
+      },
+      {
+        "ref_id": "24",
+        "text": "J. Weng, H. Chen, D. Yan, K. You, A. Duburcq, M. Zhang, H. Su, and J. Zhu, \"Tianshou: a highly modularized deep reinforcement learning library,\" arXiv preprint arXiv:2107.14171, 2021."
+      },
+      {
+        "ref_id": "25",
+        "text": "K. Choromanski, A. Pacchiano, J. Parker-Holder, Y. Tang, and V. Sindhwani, \"From complexity to simplicity: Adaptive es-active subspaces for blackbox optimization,\" in NeurIPS, 2019, pp. 10 299-10 309."
+      },
+      {
+        "ref_id": "26",
+        "text": "P. Vicol, L. Metz, and J. Sohl-Dickstein, \"Unbiased gradient estimation in unrolled computation graphs with persistent evolution strategies,\" in ICML 2021. PMLR, 2021, pp. 10 553-10 563."
+      }
+    ],
+    "reference_count": 26,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "MuJoCo OPENAI Gym EnViRONMENTS [23]",
+      "headers": [
+        "Environment",
+        "State Dimensions",
+        "Action Dimensions"
+      ],
+      "rows": [
+        [
+          -3,
+          11,
+          3
+        ],
+        [
+          -3,
+          17,
+          6
+        ],
+        [
+          -3,
+          17,
+          6
+        ],
+        [
+          -3,
+          111,
+          8
+        ],
+        [
+          -3,
+          376,
+          17
+        ],
+        [
+          -2,
+          376,
+          17
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "HYPERPARAMETER VALUES",
+      "headers": [
+        "Hyper-parameter",
+        "CEM-SAC",
+        "SAC",
+        "CEM-TD3"
+      ],
+      "rows": [
+        [
+          "Population size",
+          10,
+          "N/A",
+          10
+        ],
+        [
+          "Alpha",
+          0.05,
+          0.05,
+          "N/A"
+        ],
+        [
+          "Batch size",
+          256,
+          256,
+          100
+        ],
+        [
+          "Actor learning rate",
+          "",
+          "$1 e^{-} 3$",
+          ""
+        ],
+        [
+          "Critic learning rate",
+          "",
+          "$1 e^{-} 3$",
+          ""
+        ],
+        [
+          "Gamma",
+          "",
+          0.99,
+          ""
+        ],
+        [
+          "Optimizers",
+          "",
+          "Adam",
+          ""
+        ],
+        [
+          "Buffer size",
+          "",
+          1000000,
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "III",
+      "table_title": "Final PERFormance of CEM-SAC, CEM-TD3, SAC, and CEM.",
+      "headers": [
+        "",
+        "CEM-SAC (ours)",
+        "",
+        "CEM-TD3",
+        "",
+        "SAC",
+        "",
+        "CEM",
+        ""
+      ],
+      "rows": [
+        [
+          "Environment",
+          "Mean",
+          "SD",
+          "Mean",
+          "SD",
+          "Mean",
+          "SD",
+          "Mean",
+          "SD"
+        ],
+        [
+          -3,
+          3543.06,
+          303.548,
+          3687.163,
+          137.589,
+          3406.688,
+          419.595,
+          1034.035,
+          33.317
+        ],
+        [
+          "Walker2d-v3",
+          4893.221,
+          414.913,
+          4492.048,
+          377.041,
+          4461.056,
+          629.585,
+          988.697,
+          161.123
+        ],
+        [
+          -3,
+          12393.059,
+          1353.351,
+          10389.799,
+          1003.154,
+          11491.836,
+          1798.925,
+          2893.837,
+          914.66
+        ],
+        [
+          -3,
+          6280.306,
+          292.451,
+          3745.099,
+          907.568,
+          5643.622,
+          680.005,
+          949.163,
+          56.111
+        ],
+        [
+          -3,
+          5779.767,
+          163.132,
+          213.375,
+          0.84,
+          5415.815,
+          734.711,
+          213.522,
+          0.846
+        ],
+        [
+          -2,
+          195598.457,
+          38089.379,
+          29716.539,
+          6.109,
+          164047.701,
+          30366.302,
+          29716.976,
+          5.367
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 9
+    }
+  ]
+}

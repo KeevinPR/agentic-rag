@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/Parameter estimation for empirical and semi-empirical models in a direct ethanol fuel cell.md",
+    "filename": "Parameter estimation for empirical and semi-empirical models in a direct ethanol fuel cell.md",
+    "title": "Parameter estimation for empirical and semi-empirical models in a direct ethanol fuel cell",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$F$",
+        "Constant of Faraday ( $96485 \\mathrm{C} \\mathrm{mol}^{-1}$ )."
+      ],
+      "rows": [
+        [
+          "$R$",
+          "Gas constant ( $\\mathrm{J} \\mathrm{K}^{-1} \\mathrm{~mol}^{-1}$ )."
+        ],
+        [
+          "$T$",
+          "Temperature (K)."
+        ],
+        [
+          "$E_{\\text {cell }}$",
+          "Voltage of the DEFC (V)."
+        ],
+        [
+          "$E_{\\text {Ocell }}$",
+          "Standard potential for the DEFC overall reaction (V)."
+        ],
+        [
+          "$J_{m i}$",
+          "Exchange current at reference concentration in the anode $\\left(\\mathrm{A} \\mathrm{cm}^{-2}\\right)$."
+        ],
+        [
+          "$J_{o c}$",
+          "Exchange current at reference concentration in the cathode $\\left(\\mathrm{A} \\mathrm{cm}^{-2}\\right)$."
+        ],
+        [
+          "$J$",
+          "Current density ( $\\mathrm{A} \\mathrm{cm}^{-2}$ )."
+        ],
+        [
+          "$J_{\\text {lim }}$",
+          "Limit current density ( $\\mathrm{A} \\mathrm{cm}^{-2}$ )."
+        ],
+        [
+          "$\\alpha_{a}$",
+          "Electronic transfer coefficient at the anode catalyst surface."
+        ],
+        [
+          "$\\alpha_{c}$",
+          "Electronic transfer coefficient at the cathode catalyst surface."
+        ],
+        [
+          "$C_{\\text {EtoH }}$",
+          "Ethanol concentration ( $\\mathrm{mol} \\mathrm{cm}^{-3}$ )."
+        ],
+        [
+          "$C_{\\text {EtoH }}^{\\text {ref }}$",
+          "Reference ethanol concentration (mol $\\mathrm{cm}^{-3}$ )."
+        ],
+        [
+          "$C_{0}$",
+          "Oxygen concentration ( $\\mathrm{mol} \\mathrm{cm}^{-3}$ )."
+        ],
+        [
+          "$C_{0}^{\\text {ref }}$",
+          "Reference oxygen concentration (mol $\\mathrm{cm}^{-3}$ )."
+        ],
+        [
+          "$N$",
+          "Order of reaction at the anode."
+        ],
+        [
+          "$N_{O}$",
+          "Order of reaction at the cathode."
+        ],
+        [
+          "$k_{\\text {eff }}$",
+          "Mass transport coefficients for the cathode."
+        ],
+        [
+          "$k_{o}$,",
+          "Mass transport coefficients for the anode."
+        ],
+        [
+          "$E_{O}^{*}$",
+          "Empirical coefficient (V)."
+        ],
+        [
+          "$b_{\\text {cell }}$",
+          "Empirical coefficient ( $\\mathrm{V} \\mathrm{dec}^{-1}$ )"
+        ],
+        [
+          "$C_{1}$",
+          "Empirical coefficient (V)"
+        ],
+        [
+          "$C_{2}$",
+          "Empirical coefficient $\\left(\\mathrm{cm}^{2} \\mathrm{~A}^{-1}\\right)$"
+        ],
+        [
+          "Re",
+          "Empirical coefficient ( $\\Omega \\mathrm{cm}^{2}$ )"
+        ]
+      ],
+      "row_count": 23,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Search space: lower and upper bounds.",
+      "headers": [
+        "Parameters",
+        "$\\alpha_{d}$",
+        "$\\alpha_{c}$",
+        "$\\frac{C_{O}^{o f}}{C_{O}^{f}}$",
+        "$\\frac{C_{O}^{o f}}{C_{O}^{f}}$",
+        "$k_{1}$",
+        "$k_{2}$",
+        "$R_{0}$",
+        "$k_{1 o}$",
+        "H"
+      ],
+      "rows": [
+        [
+          "Lower",
+          0.5,
+          0.5,
+          "$0.5 \\times^{-12}$",
+          "$0.5 \\times^{-12}$",
+          10,
+          1.0,
+          0.01,
+          10.0,
+          3000
+        ],
+        [
+          "Upper",
+          1.5,
+          1.5,
+          "$1.5 \\times^{-12}$",
+          "$1.5 \\times^{-12}$",
+          13.0,
+          3.0,
+          3.0,
+          15,
+          3500
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 10
+    },
+    {
+      "table_number": "2",
+      "table_title": "Search space: lower and upper bounds.",
+      "headers": [
+        "Parameters",
+        "$E_{o}^{*}$",
+        "$b$",
+        "$R_{0}$",
+        "$C_{1}$",
+        "$C_{2}$"
+      ],
+      "rows": [
+        [
+          "Lower",
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "Upper",
+          0.5,
+          0.2,
+          1.0,
+          0.14,
+          "$1 / J_{0 m}$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 6
+    },
+    {
+      "table_number": "3",
+      "table_title": "Result for parameter estimation using the semi-empirical model at $42^{\\circ} \\mathrm{C}-42^{\\circ} \\mathrm{C}$ (anode-cathode).",
+      "headers": [
+        "",
+        "$\\alpha_{0}$",
+        "$\\alpha_{C}$",
+        "$f_{0,0}^{\\text {ref }}$",
+        "$f_{0, c}^{\\text {ref }}$",
+        "$k_{1}$",
+        "$k_{2}$",
+        "$R_{0}$",
+        "$k_{0 c}$",
+        "H",
+        "SAE"
+      ],
+      "rows": [
+        [
+          "",
+          1.20476,
+          1.17952,
+          "$0.94389 \\times^{-12}$",
+          "$1.43081 \\times^{-12}$",
+          11.539,
+          2.5415,
+          1.2905,
+          11.037,
+          3322.2,
+          0.27594
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 11
+    },
+    {
+      "table_number": "4",
+      "table_title": "Results of estimation.",
+      "headers": [
+        "",
+        "$E_{n}^{\\mathrm{a}}$",
+        "$b_{\\text {ref }}$",
+        "$R_{n}$",
+        "$C_{1}$",
+        "$C_{2}$",
+        "$S A E$"
+      ],
+      "rows": [
+        [
+          "$25^{\\circ} \\mathrm{C}$",
+          0.1884,
+          0.11046,
+          0.8349,
+          0.86182,
+          36.477,
+          0.42098
+        ],
+        [
+          "$60^{\\circ} \\mathrm{C}$",
+          0.16119,
+          0.1321,
+          0.98073,
+          0.46815,
+          17.742,
+          0.66425
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Result for parameter estimation using the semi-empirical model at $60^{\\circ} \\mathrm{C}$.",
+      "headers": [
+        "$\\alpha_{a}$",
+        "$\\alpha_{c}$",
+        "$\\beta_{a, c}^{o l g}$",
+        "$\\beta_{a, c}^{o l g}$",
+        "$k_{1}$",
+        "$k_{2}$",
+        "$R_{0}$",
+        "$k_{0 c}$",
+        "H",
+        "SAE"
+      ],
+      "rows": [
+        [
+          0.89356,
+          0.93056,
+          "$1.0820 \\times^{-12}$",
+          "$1.3166 \\times^{-12}$",
+          11.279,
+          2.0345,
+          2.4715,
+          13.769,
+          3023.3,
+          0.34618
+        ]
+      ],
+      "row_count": 1,
+      "column_count": 10
+    }
+  ]
+}

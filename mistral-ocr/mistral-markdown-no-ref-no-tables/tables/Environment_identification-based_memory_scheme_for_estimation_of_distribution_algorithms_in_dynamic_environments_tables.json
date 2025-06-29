@@ -1,0 +1,645 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Environment identification-based memory scheme for estimation of distribution algorithms in dynamic environments.md",
+    "filename": "Environment identification-based memory scheme for estimation of distribution algorithms in dynamic environments.md",
+    "title": "Environment identification-based memory scheme for estimation of distribution algorithms in dynamic environments",
+    "year": "2011"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 The $F_{\\mathrm{CMF}}$ value of UMDA, UMDA(LC + BC), EI-MUMDA, RUMDA, and RUMDA(LC + BC) over 50 runs on DDUFs in three types of dynamic environments",
+      "headers": [
+        "DDUF",
+        "Environmental type",
+        "UMDA",
+        "UMDA(LC + BC)",
+        "EI-MUMDA",
+        "RUMDA",
+        "RUMDA(LC + BC)"
+      ],
+      "rows": [
+        [
+          1,
+          "Cyclic",
+          72.52,
+          92.92,
+          98.25,
+          87.59,
+          86.16
+        ],
+        [
+          "",
+          "Cyclic with noise",
+          57.93,
+          92.46,
+          95.25,
+          87.62,
+          86.15
+        ],
+        [
+          "",
+          "Random",
+          50.64,
+          89.2,
+          89.23,
+          87.6,
+          86.13
+        ],
+        [
+          2,
+          "Cyclic",
+          52.14,
+          86.01,
+          96.39,
+          73.97,
+          71.02
+        ],
+        [
+          "",
+          "Cyclic with noise",
+          29.09,
+          85.07,
+          89.74,
+          73.9,
+          70.95
+        ],
+        [
+          "",
+          "Random",
+          19.24,
+          76.67,
+          76.91,
+          73.95,
+          71.0
+        ],
+        [
+          3,
+          "Cyclic",
+          51.45,
+          69.37,
+          77.09,
+          54.78,
+          53.32
+        ],
+        [
+          "",
+          "Cyclic with noise",
+          38.06,
+          70.82,
+          72.75,
+          54.7,
+          53.34
+        ],
+        [
+          "",
+          "Random",
+          33.04,
+          66.02,
+          66.18,
+          54.76,
+          53.38
+        ]
+      ],
+      "row_count": 9,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 The Wilcoxon rank sum test results of comparing EI-MUMDA with MPBIL, MPBIL2r, and RIGA on DDUFs in different environments, where \" + \" means significantly better, \" - \" means significantly worse, and \" $\\sim$ \" means statistically equivalent",
+      "headers": [
+        "",
+        "$\\rho$",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          1,
+          "",
+          "",
+          "",
+          2,
+          "",
+          "",
+          "",
+          3,
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          0.1,
+          0.2,
+          0.5,
+          1.0,
+          0.1,
+          0.2,
+          0.5,
+          1.0,
+          0.1,
+          0.2,
+          0.5,
+          1.0
+        ],
+        [
+          "Cyclic environment",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "EI-MUMDA versus MPBIL",
+          "$\\sim$",
+          "$\\sim$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          -2,
+          "$\\sim$",
+          "$\\sim$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "EI-MUMDA versus RIGA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "Cyclic environment with noise",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "EI-MUMDA versus MPBIL",
+          "$\\sim$",
+          "$\\sim$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          -2,
+          "$+$",
+          "$\\sim$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "EI-MUMDA versus RIGA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ],
+        [
+          "Random environment",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "EI-MUMDA versus MPBIL",
+          "-",
+          "-",
+          "$+$",
+          "-",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "-"
+        ],
+        [
+          -2,
+          "-",
+          "-",
+          "$+$",
+          "-",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "-"
+        ],
+        [
+          "EI-MUMDA versus RIGA",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$",
+          "$+$"
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 13
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 The average difference of the $F_{\\mathrm{CMF}}$ values between EIMUMDA and RUMDA over 50 runs in three types of environments with different $\\tau$ and $\\rho$",
+      "headers": [
+        "",
+        "$\\rho$",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          0.1,
+          0.2,
+          0.5,
+          1.0
+        ],
+        [
+          "Cyclic environment",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\tau=200$",
+          30.55,
+          30.29,
+          28.88,
+          29.94
+        ],
+        [
+          "$\\tau=500$",
+          23.26,
+          22.53,
+          22.86,
+          22.98
+        ],
+        [
+          "$\\tau=1,000$",
+          12.96,
+          12.37,
+          13.15,
+          13.17
+        ],
+        [
+          "$\\tau=2,000$",
+          16.15,
+          5.67,
+          6.21,
+          6.27
+        ],
+        [
+          "Cyclic environment with noise",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\tau=200$",
+          23.0,
+          20.44,
+          20.95,
+          21.65
+        ],
+        [
+          "$\\tau=500$",
+          20.61,
+          17.99,
+          20.86,
+          22.07
+        ],
+        [
+          "$\\tau=1,000$",
+          11.28,
+          8.92,
+          12.33,
+          12.83
+        ],
+        [
+          "$\\tau=2,000$",
+          5.21,
+          3.71,
+          5.99,
+          6.09
+        ],
+        [
+          "Random environment",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$\\tau=200$",
+          4.26,
+          -0.06,
+          -1.85,
+          29.76
+        ],
+        [
+          "$\\tau=500$",
+          12.73,
+          2.59,
+          -5.78,
+          23.01
+        ],
+        [
+          "$\\tau=1,000$",
+          9.67,
+          2.86,
+          -8.94,
+          13.19
+        ],
+        [
+          "$\\tau=2,000$",
+          4.73,
+          1.66,
+          -7.07,
+          6.27
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 The average difference of $F_{\\mathrm{CMF}}$ values between EI-MUMDA and RUMDA over 50 runs in cyclic environments with noise with different $p_{\\mathrm{n}}$ and $\\rho$",
+      "headers": [
+        "",
+        "$\\rho$",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          0.1,
+          0.2,
+          0.5,
+          1.0
+        ],
+        [
+          "$p_{\\mathrm{n}}=0.01$",
+          11.25,
+          8.71,
+          12.32,
+          12.8
+        ],
+        [
+          "$p_{\\mathrm{n}}=0.02$",
+          10.59,
+          7.77,
+          11.92,
+          12.19
+        ],
+        [
+          "$p_{\\mathrm{n}}=0.05$",
+          8.64,
+          5.7,
+          9.21,
+          9.43
+        ],
+        [
+          "$p_{\\mathrm{n}}=0.1$",
+          5.65,
+          2.34,
+          3.83,
+          3.89
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 The average difference of $F_{\\mathrm{CMP}}$ values between EI-MUMDA and RUMDA over 50 runs in three types of environments with different $N_{\\text {pop }}$ and $\\rho$",
+      "headers": [
+        "",
+        "$\\rho$",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          0.1,
+          0.2,
+          0.5,
+          1.0
+        ],
+        [
+          "Cyclic environment",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$N_{\\text {pop }}=20$",
+          5.15,
+          4.57,
+          6.34,
+          6.42
+        ],
+        [
+          "$N_{\\text {pop }}=50$",
+          7.21,
+          5.86,
+          7.8,
+          7.93
+        ],
+        [
+          "$N_{\\text {pop }}=100$",
+          13.08,
+          12.52,
+          12.91,
+          13.14
+        ],
+        [
+          "$N_{\\text {pop }}=200$",
+          22.17,
+          21.89,
+          21.5,
+          21.58
+        ],
+        [
+          "Cyclic environment with noise",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$N_{\\text {pop }}=20$",
+          4.79,
+          3.01,
+          5.77,
+          6.1
+        ],
+        [
+          "$N_{\\text {pop }}=50$",
+          6.07,
+          3.73,
+          7.4,
+          7.64
+        ],
+        [
+          "$N_{\\text {pop }}=100$",
+          11.4,
+          8.69,
+          12.28,
+          12.84
+        ],
+        [
+          "$N_{\\text {pop }}=200$",
+          19.9,
+          17.96,
+          18.99,
+          20.83
+        ],
+        [
+          "Random environment",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$N_{\\text {pop }}=20$",
+          4.67,
+          2.32,
+          -3.53,
+          6.39
+        ],
+        [
+          "$N_{\\text {pop }}=50$",
+          5.77,
+          1.89,
+          -7.87,
+          7.98
+        ],
+        [
+          "$N_{\\text {pop }}=100$",
+          9.63,
+          2.89,
+          -8.94,
+          13.16
+        ],
+        [
+          "$N_{\\text {pop }}=200$",
+          12.99,
+          3.18,
+          -6.17,
+          21.56
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 5
+    }
+  ]
+}

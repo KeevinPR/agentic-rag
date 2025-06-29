@@ -1,0 +1,1557 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2021/Cooperative hybrid evolutionary algorithm for large scale multi-stage multi-product batch plants scheduling problem.md",
+    "filename": "Cooperative hybrid evolutionary algorithm for large scale multi-stage multi-product batch plants scheduling problem.md",
+    "title": "Cooperative hybrid evolutionary algorithm for large scale multi-stage multi-product batch plants scheduling problem",
+    "year": "2021"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] C.A. Méndez, J. Cerdá, I.E. Grossmann, I. Harjunkoski, M. Fahl, State-of-the-art review of optimization methods for short-term scheduling of batch processes, Comput. Chem. Eng. 30 (6-7) (2006) 913-946,\n[2] F.M. Novara, J.M. Novas, G.P. Henning, A novel constraint programming model for large-scale scheduling problems in multiproduct multistage batch plants: Limited resources and campaign-based operation, Comput. Chem. Eng. 93 (2016) 101-117,\n[3] S. Velec, C.T. Maravelias, Multiple and nonuniform time grids in discrete-time MIP models for chemical production scheduling, Comput. Chem. Eng. 53 (2013) 70-85.\n[4] J.M. Pinto, I.E. Grossmann, A continuous time mixed integer linear programming model for short term scheduling of multistage batch plants, Ind. Eng. Chem. Res. 34 (9) (1995) 3037-3051.\n[5] J.M. Pinto, I.E. Grossmann, An alternate MILP model for short-term scheduling of batch plants with preordering constraints, Ind. Eng. Chem. Res. 35 (1) (1996) 338-342,\n[6] S. Gupta, I.A. Karimi, An improved MILP formulation for scheduling multiproduct, multistage batch plants, Ind. Eng. Chem. Res. 42 (11) (2003) 2365-2380.\n[7] P.A. Marchetti, J. Cerdá, An approximate mathematical framework for resource-constrained multistage batch scheduling, Chem. Eng. Sci. 64 (11) (2009) 2733-2748.\n[8] P.M. Castro, I. Harjunkoski, I.E. Grossmann, Optimal short-term scheduling of large-scale multistage batch plants, Ind. Eng. Chem. Res. 48 (24) (2009) 1100211016,\n[9] P.M. Castro, I. Harjunkoski, I.E. Grossmann, Greedy algorithm for scheduling batch plants with sequence-dependent changeovers, AIChE J. 57 (2) (2011) 373-387.\n[10] P.M. Castro, I.E. Grossmann, A.Q. Novais, Two new continuous-time models for the scheduling of multistage batch plants with sequence dependent changeovers, Ind. Eng. Chem. Res. 45 (18) (2006) 6210-6226,\n[11] L.J. Zeballos, J.M. Novas, G.P. Henning, A CP formulation for scheduling multiproduct multistage batch plants, Comput. Chem. Eng. 35 (12) (2011) 2973-2989.\n[12] F.M. Novara, J.M. Novas, G.P. Henning, A comprehensive CP approach for the scheduling of resource-constrained multiproduct multistage batch plants Comput. Aided Chem. Eng. 32 (2013) 589-594, https://doi.org/:10.1016/B978-0-444-03234-0.50099-3,\n[13] Y. He, L.-W. Hui, Genetic algorithm for large-size multi-stage batch plant scheduling, Chem. Eng. Sci. 62 (5) (2007) 1504-1523,\n[14] B. Shi, L.-X. Yan, W. Wu, Rule-based scheduling of single-stage multiproduct batch plants with parallel units, Ind. Eng. Chem. Res. 51 (25) (2012) 85358549,\n[15] B. Shi, X. Qian, S. Sun, L. Yan, Rule-based scheduling of multi-stage multiproduct batch plants with parallel units, Chin. J. Chem. Eng. 25 (8) (2017) 1022-1036,\n[16] I. Ali, A. Ali, A research survey : review of flexible job shop scheduling techniques, Intl. Trans. in Op. Res. 23 (2016) 551-591, https://doi.org/10.1111 / itor. 12199,\n[17] L. Lin, M. Gen, Hybrid evolutionary optimization with learning for production scheduling: state-of-the-art survey on algorithms and applications, Int. J. Prod. Res 56 (2018) 193-223, https://doi.org/10.1080/00207543.2018.1437268,\n[18] G. Vilcot, J.-C. Billaut, A tabu search algorithm for solving a multicriteria flexible job shop scheduling problem, Int. J. Prod. Res. 49 (23) (2011) 69639980,\n[19] H. Na, J. Park, Multi-level job scheduling in a flexible job shop environment, Int. J. Prod. Res. 52 (13) (2014) 3877-3887,\n[20] Y. Yuan, H. Xu, Flexible job shop scheduling using hybrid differential evolution algorithms, Comput. Ind. Eng. 65 (2) (2013) 246-260,\n[21] X. Shao, W. Liu, Q. Liu, C. Zhang, Hybrid discrete particle swarm optimization for multi-objective flexible job-shop scheduling problem, Int. J. Adv. Manuf. Technol. 67 (9-12) (2013) 2885-2901,\n[22] K.Z. Gao, P.N. Suganthan, Q.K. Pan, T.J. Chua, T.X. Cai, C.S. Chong, Discrete harmony search algorithm for flexible job shop scheduling problem with multiple objectives, J. Intell. Manuf. 27 (2) (2016) 363-374,\n[23] L. Wang, S. Wang, Y.e. Xu, G. Zhou, M. Liu, A bi-population based estimation of distribution algorithm for the flexible job-shop scheduling problem, Comput. Ind. Eng. 62 (4) (2012) 917-926,\n[24] R. Pérez-Rodríguez, A. Hernández-Aguirre, A hybrid estimation of distribution algorithm for flexible job-shop scheduling problems with process plan flexibility, Appl. Intell., 48 (2018) 3707-3734. https://doi.org/0.1007/s10489-018-1160-z,\n[25] M. Amiri, M. Zandieh, M. Yazdani, A. Bagheri, A variable neighborhood search algorithm for the flexible job-shop scheduling problem, Int. J. Prod. Res. 7543 (2010), https://doi.org/10.1080/00207540903855743,\n[26] J. Gao, L. Sun, M. Gen, A hybrid genetic and variable neighborhood descent algorithm for flexible job shop scheduling problems, Comput. Oper. Res. 35 (9) (2008) 2892-2907,\n[27] O. Sobrejko, L. Mönch, Heuristic approaches for scheduling jobs in large-scale flexible job shops, Comput. Oper. Res. 68 (2016) 97-109,\n[28] E.S. Nicoara, F.G. Filip, N. Paraschiv, Simulation-based optimization using genetic algorithms for multi-objective flexible JSSP, Int. J. Prod. Res 20 (2011) 333-344,\n[29] J. Xiong, X.u. Tan, K.-W. Yang, L.-N. Xing, Y.-w. Chen, A hybrid multiobjective evolutionary approach for flexible job-shop scheduling problems, Math. Probl. Eng. 2012 (2012) 1-27,\n[30] P.-H. Lu, M.-C. Wu, H. Tan, Y.-H. Peng, C.-F. Chen, A genetic algorithm embedded with a concise chromosome representation for distributed and flexible job-shop scheduling problems, J. Intell. Manuf. 29 (1) (2018) $19-34$.\n[31] L. De Giovanni, F. Pezzella, An improved genetic algorithm for the distributed and flexible job-shop scheduling problem, Eur. J. Oper. Res. 200 (2) (2010) $395-408$.\n[32] M.A. Porter, K.A. De Jong, A cooperative coevolutionary approach to function optimization, in: Y. Davidor, H.-.-P. Schwefel, R. Männer (Eds.), Parallel Probl. Solving from Nat. - PPSN III, Springer, Berlin Heidelberg, Berlin, Heidelberg, 1994, pp. 249-257, https://doi.org/10.1007/5-540-58484-6_269,\n[33] F. vandenBergh, A.P. Engelbrecht, A cooperative approach to particle swarm optimization, IEEE Trans. Evol. Computat. 8 (3) (2004) 225-239,\n\n[34] Z. Yang, K.e. Tang, X. Yao, Large scale evolutionary optimization using cooperative coevolution, Inf. Sci. 178 (15) (2008) 2985-2999.\n[35] M.N. Omidvar, X. Li, Z. Yang, X. Yao, Cooperative co-evolution for large scale optimization through more frequent random grouping, IEEE Congr. Evol. Comput. (CEC), IEEE 2010 (2010) 1-8, https://doi.org/10.1109/ CEC.2010.5586127.\n[36] M.N. Omidvar, X. Li, S. Member, Cooperative Co-evolution with Delta Grouping for Large Scale Non-separable Function Optimization, in: 2010 IEEE Congr. Evol. Comput. (CEC), IEEE, 2010: pp. 1-8. https://doi.org/10.1109/ CEC.2010.5585979.\n[37] M.N. Omidvar, X. Li, Y. Mei, X. Yao, Cooperative co-evolution with differential grouping for large scale optimization, IEEE Trans. Evol. Comput. 18 (2014) 378-393. https://doi.org/10.1109/TEVC.2013.2281543.\n[38] X. Li, S. Member, X. Yao, Cooperatively coevolving particle swarms for large scale optimization, IEEE Trans. Evol. Comput. 16 (2012) 210-224, https://doi. org/10.1109/TEVC.2011.2112662.\n[39] W. Chen, T. Weise, Z. Yang, K. Tang, Large-scale global optimization using cooperative coevolution with variable interaction learning, in: R. Schaefer, C. Cotta, J. Kołodziej, G. Rudolph (Eds.), Parallel Probl. Solving from Nature, PPSN XI, Springer Berlin Heidelberg, Berlin, Heidelberg, 2010: pp. 300-309. https://doi.org/10.1007/978-3-642-15871-1_31.\n[40] Lu Sun, Lin Lin, Haojie Li, Mitsuo Gen, Large scale flexible scheduling optimization by a distributed evolutionary algorithm, Comput. Ind. Eng. 128 (2019) 894-904.\n[41] Ming-Gang Dong, Ning Wang, A novel hybrid differential evolution approach to scheduling of large-scale zero-wait batch processes with setup times, Comput. Chem. Eng. 45 (2012) 72-83.\n[42] H. Chen, J. Ihlow, C. Lehmann, A genetic algorithm for flexible job-shop scheduling, IEEE Int. Conf. Robot. Autom., IEEE 1999 (1999) 1120-1125.\n[43] K. Price, R.M. Storn, J.A. Lampinen, Differential evolution: A practical approach to global optimization, Springer Berlin Heidelberg, Berlin, Heidelberg, 2005. https://doi.org/10.1007/3-540-31306-0.\n![img-11.jpeg](img-11.jpeg)\n\nYuxin Han was born in 1990. He received the B.E. degree in automation from East China University of Science and Technology in 2013. He is pursuing the Ph.D. degree in Department of Automation, ECUST. His main search area includes intelligent optimization and scheduling methods of batch plants.\n![img-12.jpeg](img-12.jpeg)\n\nXingsheng Gu received the B.S. degree from Nanjing Institute of Chemical Technology in 1982, M.S. and Ph. D. degree from East China University of Chemical Technology in 1988 and 1993, respectively. He is currently a professor at School of Information Science and Engineering, East China University of Science and Technology. His research interests include planning and scheduling for process industry, modeling, control and optimization for industry processes, intelligent optimization, faults detection and diagnosis, etc.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "C.A. Méndez, J. Cerdá, I.E. Grossmann, I. Harjunkoski, M. Fahl, State-of-the-art review of optimization methods for short-term scheduling of batch processes, Comput. Chem. Eng. 30 (6-7) (2006) 913-946,"
+      },
+      {
+        "ref_id": "2",
+        "text": "F.M. Novara, J.M. Novas, G.P. Henning, A novel constraint programming model for large-scale scheduling problems in multiproduct multistage batch plants: Limited resources and campaign-based operation, Comput. Chem. Eng. 93 (2016) 101-117,"
+      },
+      {
+        "ref_id": "3",
+        "text": "S. Velec, C.T. Maravelias, Multiple and nonuniform time grids in discrete-time MIP models for chemical production scheduling, Comput. Chem. Eng. 53 (2013) 70-85."
+      },
+      {
+        "ref_id": "4",
+        "text": "J.M. Pinto, I.E. Grossmann, A continuous time mixed integer linear programming model for short term scheduling of multistage batch plants, Ind. Eng. Chem. Res. 34 (9) (1995) 3037-3051."
+      },
+      {
+        "ref_id": "5",
+        "text": "J.M. Pinto, I.E. Grossmann, An alternate MILP model for short-term scheduling of batch plants with preordering constraints, Ind. Eng. Chem. Res. 35 (1) (1996) 338-342,"
+      },
+      {
+        "ref_id": "6",
+        "text": "S. Gupta, I.A. Karimi, An improved MILP formulation for scheduling multiproduct, multistage batch plants, Ind. Eng. Chem. Res. 42 (11) (2003) 2365-2380."
+      },
+      {
+        "ref_id": "7",
+        "text": "P.A. Marchetti, J. Cerdá, An approximate mathematical framework for resource-constrained multistage batch scheduling, Chem. Eng. Sci. 64 (11) (2009) 2733-2748."
+      },
+      {
+        "ref_id": "8",
+        "text": "P.M. Castro, I. Harjunkoski, I.E. Grossmann, Optimal short-term scheduling of large-scale multistage batch plants, Ind. Eng. Chem. Res. 48 (24) (2009) 1100211016,"
+      },
+      {
+        "ref_id": "9",
+        "text": "P.M. Castro, I. Harjunkoski, I.E. Grossmann, Greedy algorithm for scheduling batch plants with sequence-dependent changeovers, AIChE J. 57 (2) (2011) 373-387."
+      },
+      {
+        "ref_id": "10",
+        "text": "P.M. Castro, I.E. Grossmann, A.Q. Novais, Two new continuous-time models for the scheduling of multistage batch plants with sequence dependent changeovers, Ind. Eng. Chem. Res. 45 (18) (2006) 6210-6226,"
+      },
+      {
+        "ref_id": "11",
+        "text": "L.J. Zeballos, J.M. Novas, G.P. Henning, A CP formulation for scheduling multiproduct multistage batch plants, Comput. Chem. Eng. 35 (12) (2011) 2973-2989."
+      },
+      {
+        "ref_id": "12",
+        "text": "F.M. Novara, J.M. Novas, G.P. Henning, A comprehensive CP approach for the scheduling of resource-constrained multiproduct multistage batch plants Comput. Aided Chem. Eng. 32 (2013) 589-594, https://doi.org/:10.1016/B978-0-444-03234-0.50099-3,"
+      },
+      {
+        "ref_id": "13",
+        "text": "Y. He, L.-W. Hui, Genetic algorithm for large-size multi-stage batch plant scheduling, Chem. Eng. Sci. 62 (5) (2007) 1504-1523,"
+      },
+      {
+        "ref_id": "14",
+        "text": "B. Shi, L.-X. Yan, W. Wu, Rule-based scheduling of single-stage multiproduct batch plants with parallel units, Ind. Eng. Chem. Res. 51 (25) (2012) 85358549,"
+      },
+      {
+        "ref_id": "15",
+        "text": "B. Shi, X. Qian, S. Sun, L. Yan, Rule-based scheduling of multi-stage multiproduct batch plants with parallel units, Chin. J. Chem. Eng. 25 (8) (2017) 1022-1036,"
+      },
+      {
+        "ref_id": "16",
+        "text": "I. Ali, A. Ali, A research survey : review of flexible job shop scheduling techniques, Intl. Trans. in Op. Res. 23 (2016) 551-591, https://doi.org/10.1111 / itor. 12199,"
+      },
+      {
+        "ref_id": "17",
+        "text": "L. Lin, M. Gen, Hybrid evolutionary optimization with learning for production scheduling: state-of-the-art survey on algorithms and applications, Int. J. Prod. Res 56 (2018) 193-223, https://doi.org/10.1080/00207543.2018.1437268,"
+      },
+      {
+        "ref_id": "18",
+        "text": "G. Vilcot, J.-C. Billaut, A tabu search algorithm for solving a multicriteria flexible job shop scheduling problem, Int. J. Prod. Res. 49 (23) (2011) 69639980,"
+      },
+      {
+        "ref_id": "19",
+        "text": "H. Na, J. Park, Multi-level job scheduling in a flexible job shop environment, Int. J. Prod. Res. 52 (13) (2014) 3877-3887,"
+      },
+      {
+        "ref_id": "20",
+        "text": "Y. Yuan, H. Xu, Flexible job shop scheduling using hybrid differential evolution algorithms, Comput. Ind. Eng. 65 (2) (2013) 246-260,"
+      },
+      {
+        "ref_id": "21",
+        "text": "X. Shao, W. Liu, Q. Liu, C. Zhang, Hybrid discrete particle swarm optimization for multi-objective flexible job-shop scheduling problem, Int. J. Adv. Manuf. Technol. 67 (9-12) (2013) 2885-2901,"
+      },
+      {
+        "ref_id": "22",
+        "text": "K.Z. Gao, P.N. Suganthan, Q.K. Pan, T.J. Chua, T.X. Cai, C.S. Chong, Discrete harmony search algorithm for flexible job shop scheduling problem with multiple objectives, J. Intell. Manuf. 27 (2) (2016) 363-374,"
+      },
+      {
+        "ref_id": "23",
+        "text": "L. Wang, S. Wang, Y.e. Xu, G. Zhou, M. Liu, A bi-population based estimation of distribution algorithm for the flexible job-shop scheduling problem, Comput. Ind. Eng. 62 (4) (2012) 917-926,"
+      },
+      {
+        "ref_id": "24",
+        "text": "R. Pérez-Rodríguez, A. Hernández-Aguirre, A hybrid estimation of distribution algorithm for flexible job-shop scheduling problems with process plan flexibility, Appl. Intell., 48 (2018) 3707-3734. https://doi.org/0.1007/s10489-018-1160-z,"
+      },
+      {
+        "ref_id": "25",
+        "text": "M. Amiri, M. Zandieh, M. Yazdani, A. Bagheri, A variable neighborhood search algorithm for the flexible job-shop scheduling problem, Int. J. Prod. Res. 7543 (2010), https://doi.org/10.1080/00207540903855743,"
+      },
+      {
+        "ref_id": "26",
+        "text": "J. Gao, L. Sun, M. Gen, A hybrid genetic and variable neighborhood descent algorithm for flexible job shop scheduling problems, Comput. Oper. Res. 35 (9) (2008) 2892-2907,"
+      },
+      {
+        "ref_id": "27",
+        "text": "O. Sobrejko, L. Mönch, Heuristic approaches for scheduling jobs in large-scale flexible job shops, Comput. Oper. Res. 68 (2016) 97-109,"
+      },
+      {
+        "ref_id": "28",
+        "text": "E.S. Nicoara, F.G. Filip, N. Paraschiv, Simulation-based optimization using genetic algorithms for multi-objective flexible JSSP, Int. J. Prod. Res 20 (2011) 333-344,"
+      },
+      {
+        "ref_id": "29",
+        "text": "J. Xiong, X.u. Tan, K.-W. Yang, L.-N. Xing, Y.-w. Chen, A hybrid multiobjective evolutionary approach for flexible job-shop scheduling problems, Math. Probl. Eng. 2012 (2012) 1-27,"
+      },
+      {
+        "ref_id": "30",
+        "text": "P.-H. Lu, M.-C. Wu, H. Tan, Y.-H. Peng, C.-F. Chen, A genetic algorithm embedded with a concise chromosome representation for distributed and flexible job-shop scheduling problems, J. Intell. Manuf. 29 (1) (2018) $19-34$."
+      },
+      {
+        "ref_id": "31",
+        "text": "L. De Giovanni, F. Pezzella, An improved genetic algorithm for the distributed and flexible job-shop scheduling problem, Eur. J. Oper. Res. 200 (2) (2010) $395-408$."
+      },
+      {
+        "ref_id": "32",
+        "text": "M.A. Porter, K.A. De Jong, A cooperative coevolutionary approach to function optimization, in: Y. Davidor, H.-.-P. Schwefel, R. Männer (Eds.), Parallel Probl. Solving from Nat. - PPSN III, Springer, Berlin Heidelberg, Berlin, Heidelberg, 1994, pp. 249-257, https://doi.org/10.1007/5-540-58484-6_269,"
+      },
+      {
+        "ref_id": "33",
+        "text": "F. vandenBergh, A.P. Engelbrecht, A cooperative approach to particle swarm optimization, IEEE Trans. Evol. Computat. 8 (3) (2004) 225-239,"
+      },
+      {
+        "ref_id": "34",
+        "text": "Z. Yang, K.e. Tang, X. Yao, Large scale evolutionary optimization using cooperative coevolution, Inf. Sci. 178 (15) (2008) 2985-2999."
+      },
+      {
+        "ref_id": "35",
+        "text": "M.N. Omidvar, X. Li, Z. Yang, X. Yao, Cooperative co-evolution for large scale optimization through more frequent random grouping, IEEE Congr. Evol. Comput. (CEC), IEEE 2010 (2010) 1-8, https://doi.org/10.1109/ CEC.2010.5586127."
+      },
+      {
+        "ref_id": "36",
+        "text": "M.N. Omidvar, X. Li, S. Member, Cooperative Co-evolution with Delta Grouping for Large Scale Non-separable Function Optimization, in: 2010 IEEE Congr. Evol. Comput. (CEC), IEEE, 2010: pp. 1-8. https://doi.org/10.1109/ CEC.2010.5585979."
+      },
+      {
+        "ref_id": "37",
+        "text": "M.N. Omidvar, X. Li, Y. Mei, X. Yao, Cooperative co-evolution with differential grouping for large scale optimization, IEEE Trans. Evol. Comput. 18 (2014) 378-393. https://doi.org/10.1109/TEVC.2013.2281543."
+      },
+      {
+        "ref_id": "38",
+        "text": "X. Li, S. Member, X. Yao, Cooperatively coevolving particle swarms for large scale optimization, IEEE Trans. Evol. Comput. 16 (2012) 210-224, https://doi. org/10.1109/TEVC.2011.2112662."
+      },
+      {
+        "ref_id": "39",
+        "text": "W. Chen, T. Weise, Z. Yang, K. Tang, Large-scale global optimization using cooperative coevolution with variable interaction learning, in: R. Schaefer, C. Cotta, J. Kołodziej, G. Rudolph (Eds.), Parallel Probl. Solving from Nature, PPSN XI, Springer Berlin Heidelberg, Berlin, Heidelberg, 2010: pp. 300-309. https://doi.org/10.1007/978-3-642-15871-1_31."
+      },
+      {
+        "ref_id": "40",
+        "text": "Lu Sun, Lin Lin, Haojie Li, Mitsuo Gen, Large scale flexible scheduling optimization by a distributed evolutionary algorithm, Comput. Ind. Eng. 128 (2019) 894-904."
+      },
+      {
+        "ref_id": "41",
+        "text": "Ming-Gang Dong, Ning Wang, A novel hybrid differential evolution approach to scheduling of large-scale zero-wait batch processes with setup times, Comput. Chem. Eng. 45 (2012) 72-83."
+      },
+      {
+        "ref_id": "42",
+        "text": "H. Chen, J. Ihlow, C. Lehmann, A genetic algorithm for flexible job-shop scheduling, IEEE Int. Conf. Robot. Autom., IEEE 1999 (1999) 1120-1125."
+      },
+      {
+        "ref_id": "43",
+        "text": "K. Price, R.M. Storn, J.A. Lampinen, Differential evolution: A practical approach to global optimization, Springer Berlin Heidelberg, Berlin, Heidelberg, 2005. https://doi.org/10.1007/3-540-31306-0."
+      }
+    ],
+    "reference_count": 43,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Appendices",
+        ""
+      ],
+      "rows": [
+        [
+          "Indexes",
+          ""
+        ],
+        [
+          "i, $\\bar{i}$",
+          "Order;"
+        ],
+        [
+          "$j$",
+          "Unit;"
+        ],
+        [
+          "$s, s^{\\prime}$",
+          "Stage;"
+        ],
+        [
+          "Variables",
+          ""
+        ],
+        [
+          "$Z_{i j}$",
+          1
+        ],
+        [
+          "$Z F_{i j}$",
+          1
+        ],
+        [
+          "$X_{i j s}$",
+          1
+        ],
+        [
+          "$T_{i s}$",
+          "start time of order $i$ in stage $s$;"
+        ],
+        [
+          "MS",
+          "make-span;"
+        ],
+        [
+          "Sets",
+          ""
+        ],
+        [
+          "I",
+          "Set of orders;"
+        ],
+        [
+          "J",
+          "Set of units;"
+        ]
+      ],
+      "row_count": 13,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Parameters of benchmark examples.",
+      "headers": [
+        "Instances",
+        "Problem size ( $\\mathbf{I}:=\\mathbf{J}:=\\mathbf{S}$ )",
+        "Group SetS $_{\\mathbf{0}}$",
+        "SetS $_{\\mathbf{1}}$",
+        "$\\boldsymbol{J}_{\\mathbf{s p}}$",
+        "$\\boldsymbol{J}_{\\mathbf{s c}}$",
+        "$\\boldsymbol{\\beta}$"
+      ],
+      "rows": [
+        [
+          1,
+          "$15 \\times 6 \\times 2$",
+          "$\\{3,5,15\\}$",
+          "$\\{2\\}$",
+          0.9,
+          0.1,
+          0.2
+        ],
+        [
+          2,
+          "$10 \\times 8 \\times 4$",
+          "$\\{5,10\\}$",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          3,
+          "$16 \\times 8 \\times 2$",
+          "$\\{4,8,16\\}$",
+          "$\\{2\\}$",
+          "",
+          "",
+          ""
+        ],
+        [
+          4,
+          "$30 \\times 17 \\times 6$",
+          "$\\{5,15,30\\}$",
+          "$\\{2,4,6\\}$",
+          "",
+          "",
+          ""
+        ],
+        [
+          5,
+          "$50 \\times 17 \\times 6$",
+          "$\\{5,10,25,50\\}$",
+          "$\\{2,4,6\\}$",
+          "",
+          "",
+          ""
+        ],
+        [
+          6,
+          "$50 \\times 12 \\times 6$",
+          "$\\{5,10,25,50\\}$",
+          "$\\{2,4,6\\}$",
+          "",
+          "",
+          ""
+        ],
+        [
+          7,
+          "$50 \\times 20 \\times 5$",
+          "$\\{5,10,25,50\\}$",
+          "$\\{2,3,5\\}$",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Results comparison of this work without local search.",
+      "headers": [
+        "Ins.",
+        "CPU(s)",
+        "GA",
+        "",
+        "",
+        "DE",
+        "",
+        "",
+        "dcEA",
+        "",
+        "",
+        "CHEA",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd."
+        ],
+        [
+          11,
+          300,
+          342,
+          367.0,
+          15.88,
+          275,
+          306.2,
+          24.08,
+          259,
+          280.75,
+          19.53,
+          235,
+          235,
+          0.0
+        ],
+        [
+          12,
+          300,
+          508,
+          584.34,
+          59.18,
+          413,
+          469.6,
+          31.79,
+          367,
+          433.02,
+          37.63,
+          252,
+          253.5,
+          0.87
+        ],
+        [
+          13,
+          300,
+          417,
+          484.43,
+          46.5,
+          275,
+          310.95,
+          37.99,
+          241,
+          257.56,
+          12.19,
+          210,
+          213.95,
+          3.2
+        ],
+        [
+          14,
+          1000,
+          30.22,
+          34.33,
+          2.47,
+          30.91,
+          33.22,
+          2.05,
+          25.36,
+          26.28,
+          0.71,
+          20.136,
+          20.37,
+          0.1
+        ],
+        [
+          15,
+          1000,
+          42.87,
+          43.08,
+          0.11,
+          57.87,
+          58.15,
+          0.75,
+          37.01,
+          38.7,
+          1.0,
+          29.443,
+          30.07,
+          0.44
+        ],
+        [
+          16,
+          3600,
+          "-a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          995,
+          1061.3,
+          64.65
+        ],
+        [
+          17,
+          3600,
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          "- a",
+          545,
+          556.65,
+          7.86
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 14
+    },
+    {
+      "table_number": "3",
+      "table_title": "Results comparison of this work with local search.",
+      "headers": [
+        "Ins.",
+        "CPU(s)",
+        "DA",
+        "bGA",
+        "",
+        "",
+        "",
+        "hDE",
+        "",
+        "",
+        "",
+        "dcEA/LS",
+        "",
+        "",
+        "",
+        "",
+        "CHEA",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "Opt.",
+          "Avg.",
+          "",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "",
+          "Sd.",
+          "",
+          "Opt.",
+          "Avg.",
+          "",
+          "Sd."
+        ],
+        [
+          11,
+          600,
+          235,
+          293,
+          299.6,
+          "",
+          4.22,
+          241,
+          246,
+          "",
+          11.5,
+          235,
+          "",
+          318.85,
+          "",
+          47.77,
+          235,
+          "",
+          235,
+          0.0
+        ],
+        [
+          12,
+          600,
+          252,
+          442,
+          468.56,
+          "",
+          31.73,
+          268,
+          306,
+          "",
+          48.84,
+          266,
+          "",
+          276.1,
+          "",
+          4.54,
+          252,
+          "",
+          252,
+          0.0
+        ],
+        [
+          13,
+          600,
+          207,
+          298,
+          345.88,
+          "",
+          40.21,
+          232,
+          248.33,
+          "",
+          20.91,
+          216,
+          "",
+          238.95,
+          "",
+          10.54,
+          207,
+          "",
+          209.3,
+          0.85
+        ],
+        [
+          14,
+          1000,
+          20.168,
+          29.77,
+          31.69,
+          "",
+          1.39,
+          29.51,
+          30.72,
+          "",
+          1.3,
+          23.47,
+          "",
+          24.73,
+          "",
+          0.51,
+          20.106,
+          "",
+          20.31,
+          0.12
+        ],
+        [
+          15,
+          2000,
+          30.053,
+          34.984,
+          39.09,
+          "",
+          3.54,
+          33.98,
+          34.703,
+          "",
+          1.1,
+          32.322,
+          "",
+          34.74,
+          "",
+          1.01,
+          29.131,
+          "",
+          29.87,
+          0.63
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 20
+    },
+    {
+      "table_number": "4",
+      "table_title": "Influence of number of archive A and B.",
+      "headers": [
+        "$[\\mathrm{A}]$",
+        "$[\\mathrm{B}]=0$",
+        "",
+        "",
+        "$[\\mathrm{B}]=5$",
+        "",
+        "",
+        "$[\\mathrm{B}]=10$",
+        "",
+        "",
+        "$[\\mathrm{B}]=20$",
+        "",
+        "",
+        "$[\\mathrm{B}]=30$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd."
+        ],
+        [
+          0,
+          "-",
+          "-",
+          "-",
+          32.061,
+          32.127,
+          0.043,
+          32.317,
+          32.517,
+          0.156,
+          31.757,
+          32.233,
+          0.308,
+          32.21,
+          32.639,
+          0.265
+        ],
+        [
+          1,
+          30.637,
+          31.391,
+          0.545,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          5,
+          30.302,
+          30.946,
+          0.447,
+          29.735,
+          30.057,
+          0.253,
+          29.131,
+          29.87,
+          0.53,
+          29.433,
+          29.939,
+          0.367,
+          29.712,
+          30.111,
+          0.298
+        ],
+        [
+          10,
+          30.286,
+          30.961,
+          0.453,
+          30.259,
+          31.139,
+          0.709,
+          30.184,
+          30.762,
+          0.547,
+          29.923,
+          30.62,
+          0.456,
+          30.244,
+          31.211,
+          0.4
+        ],
+        [
+          20,
+          30.297,
+          30.997,
+          0.398,
+          30.607,
+          31.546,
+          0.603,
+          30.313,
+          31.099,
+          0.564,
+          30.612,
+          31.418,
+          0.608,
+          30.531,
+          31.458,
+          0.481
+        ],
+        [
+          30,
+          30.068,
+          31.044,
+          0.456,
+          29.94,
+          31.465,
+          1.012,
+          30.688,
+          31.222,
+          0.432,
+          30.814,
+          31.596,
+          0.707,
+          31.062,
+          31.735,
+          0.693
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 16
+    },
+    {
+      "table_number": "5",
+      "table_title": "Influence of parameters $\\mathrm{s}_{\\mathrm{L}}$ and group size.",
+      "headers": [
+        "$\\mathrm{s}_{\\mathrm{L}}$",
+        "$\\mathbf{S}_{\\mathbf{L}} \\times\\{5,10,25,50\\}$",
+        "",
+        "",
+        "$\\mathbf{S}_{\\mathbf{L}} \\times\\{5,10\\}$",
+        "",
+        "",
+        "$\\mathbf{S}_{\\mathbf{L}} \\times\\{10,25\\}$",
+        "",
+        "",
+        "$\\mathbf{S}_{\\mathbf{L}} \\times\\{25,50\\}$",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          2,
+          72.897,
+          77.055,
+          10.761,
+          71.185,
+          86.581,
+          16.45,
+          79.555,
+          120.51,
+          59.726,
+          79.161,
+          88.2923,
+          22.128,
+          "",
+          ""
+        ],
+        [
+          4,
+          45.32,
+          46.358,
+          2.06,
+          54.898,
+          59.313,
+          2.324,
+          51.635,
+          55.8386,
+          4.624,
+          48.561,
+          50.4613,
+          3.748,
+          "",
+          ""
+        ],
+        [
+          6,
+          30.126,
+          30.436,
+          0.236,
+          35.781,
+          38.942,
+          2.228,
+          35.781,
+          38.1598,
+          1.952,
+          30.982,
+          31.5272,
+          0.467,
+          "",
+          ""
+        ],
+        [
+          24,
+          56.063,
+          58.396,
+          4.87,
+          61.336,
+          65.273,
+          1.669,
+          60.073,
+          63.4371,
+          3.443,
+          60.049,
+          62.1104,
+          3.625,
+          "",
+          ""
+        ],
+        [
+          46,
+          30.006,
+          30.334,
+          0.21,
+          36.613,
+          39.005,
+          1.395,
+          34.693,
+          35.7447,
+          0.764,
+          30.977,
+          31.8217,
+          0.364,
+          "",
+          ""
+        ],
+        [
+          246,
+          29.131,
+          29.87,
+          0.53,
+          36.696,
+          40.178,
+          2.331,
+          35.931,
+          36.7938,
+          0.574,
+          30.963,
+          31.428,
+          0.283,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 15
+    },
+    {
+      "table_number": "6",
+      "table_title": "Influence of parameters LR and DR.",
+      "headers": [
+        "LR",
+        "DR $=0.00$",
+        "",
+        "",
+        "DR $=0.01$",
+        "",
+        "",
+        "DR $=0.05$",
+        "",
+        "",
+        "DR $=0.10$",
+        "",
+        "",
+        "DR $=0.20$",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd."
+        ],
+        [
+          0.01,
+          30.396,
+          30.706,
+          0.303,
+          30.027,
+          30.384,
+          0.307,
+          30.061,
+          30.424,
+          0.491,
+          29.954,
+          30.336,
+          0.414,
+          30.246,
+          30.622,
+          0.419
+        ],
+        [
+          0.05,
+          29.986,
+          30.738,
+          0.798,
+          30.087,
+          30.415,
+          0.333,
+          30.393,
+          30.693,
+          0.391,
+          30.378,
+          30.662,
+          0.234,
+          30.154,
+          30.606,
+          0.493
+        ],
+        [
+          0.1,
+          31.029,
+          31.399,
+          0.389,
+          30.183,
+          30.501,
+          0.253,
+          29.894,
+          30.332,
+          0.309,
+          29.131,
+          29.87,
+          0.53,
+          29.802,
+          30.211,
+          0.365
+        ],
+        [
+          0.2,
+          30.556,
+          31.115,
+          0.416,
+          30.436,
+          30.693,
+          0.218,
+          29.823,
+          30.257,
+          0.295,
+          30.203,
+          30.591,
+          0.241,
+          30.35,
+          30.672,
+          0.213
+        ],
+        [
+          0.3,
+          30.637,
+          31.457,
+          0.598,
+          30.072,
+          30.765,
+          0.328,
+          30.164,
+          30.644,
+          0.315,
+          29.716,
+          30.472,
+          0.415,
+          30.383,
+          30.804,
+          0.229
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 16
+    },
+    {
+      "table_number": "7",
+      "table_title": "Probabilistic vector of $p_{G, D}^{\\prime}$ and $p_{G, D}^{\\prime}$ for instance I5.",
+      "headers": [
+        "Iteration",
+        "LR",
+        "$\\mathrm{DR}=\\mathbf{0}$",
+        "",
+        "$\\mathrm{DR}=\\mathbf{0 . 0 1}$",
+        "",
+        "$\\mathrm{DR}=\\mathbf{0 . 0 5}$",
+        "",
+        "$\\mathrm{DR}=\\mathbf{0 . 1 0}$",
+        "",
+        "$\\mathrm{DR}=\\mathbf{0 . 2 0}$",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "$p_{G, D}^{\\prime}$",
+          "$p_{G, D}^{\\prime}$",
+          "$p_{G, D}^{\\prime}$",
+          "$p_{G, D}^{\\prime}$",
+          "$p_{G, D}^{\\prime}$",
+          "$p_{G, D}^{\\prime}$",
+          "$p_{G, D}^{\\prime}$",
+          "$p_{G, D}^{\\prime}$",
+          "$p_{G, D}^{\\prime}$",
+          "$p_{G, D}^{\\prime}$"
+        ],
+        [
+          "$t=100$",
+          0.01,
+          0.185,
+          0.815,
+          0.716,
+          0.284,
+          0.513,
+          0.487,
+          0.508,
+          0.492,
+          0.524,
+          0.476
+        ],
+        [
+          "",
+          0.05,
+          0.997,
+          0.003,
+          0.344,
+          0.656,
+          0.75,
+          0.25,
+          0.65,
+          0.35,
+          0.55,
+          0.45
+        ],
+        [
+          "",
+          0.1,
+          0.75,
+          0.25,
+          0.256,
+          0.955,
+          0.751,
+          0.249,
+          0.611,
+          0.389,
+          0.667,
+          0.333
+        ],
+        [
+          "",
+          0.2,
+          1.0,
+          0.0,
+          0.96,
+          0.04,
+          0.1,
+          0.9,
+          0.833,
+          0.167,
+          0.65,
+          0.35
+        ],
+        [
+          "",
+          0.3,
+          1.0,
+          0.0,
+          0.74,
+          0.26,
+          0.183,
+          0.817,
+          0.482,
+          0.518,
+          0.58,
+          0.42
+        ],
+        [
+          "$t=500$",
+          0.01,
+          0.003,
+          0.997,
+          0.75,
+          0.25,
+          0.583,
+          0.417,
+          0.545,
+          0.455,
+          0.5,
+          0.5
+        ],
+        [
+          "",
+          0.05,
+          1.0,
+          0.0,
+          0.123,
+          0.877,
+          0.75,
+          0.25,
+          0.667,
+          0.333,
+          0.48,
+          0.52
+        ],
+        [
+          "",
+          0.1,
+          0.761,
+          0.239,
+          0.115,
+          0.885,
+          0.833,
+          0.167,
+          0.7,
+          0.3,
+          0.667,
+          0.333
+        ],
+        [
+          "",
+          0.2,
+          1.0,
+          0.0,
+          0.976,
+          0.024,
+          0.1,
+          0.9,
+          0.833,
+          0.167,
+          0.551,
+          0.449
+        ],
+        [
+          "",
+          0.3,
+          1.0,
+          0.0,
+          0.984,
+          0.016,
+          0.071,
+          0.929,
+          0.475,
+          0.525,
+          0.47,
+          0.53
+        ],
+        [
+          "$t=1000$",
+          0.01,
+          0.0,
+          1.0,
+          0.75,
+          0.25,
+          0.55,
+          0.45,
+          0.545,
+          0.455,
+          0.495,
+          0.505
+        ],
+        [
+          "",
+          0.05,
+          1.0,
+          0.0,
+          0.083,
+          0.917,
+          0.35,
+          0.65,
+          0.667,
+          0.333,
+          0.48,
+          0.52
+        ],
+        [
+          "",
+          0.1,
+          0.8,
+          0.2,
+          0.046,
+          0.954,
+          0.833,
+          0.167,
+          0.65,
+          0.35,
+          0.467,
+          0.533
+        ],
+        [
+          "",
+          0.2,
+          1.0,
+          0.0,
+          0.976,
+          0.024,
+          0.1,
+          0.9,
+          0.833,
+          0.167,
+          0.45,
+          0.55
+        ],
+        [
+          "",
+          0.3,
+          1.0,
+          0.0,
+          0.984,
+          0.016,
+          0.071,
+          0.929,
+          0.491,
+          0.509,
+          0.44,
+          0.56
+        ]
+      ],
+      "row_count": 16,
+      "column_count": 12
+    },
+    {
+      "table_number": "8",
+      "table_title": "Influence of critical path based local search.",
+      "headers": [
+        "Ins.",
+        "CPU(s)",
+        "dcEA/LS",
+        "",
+        "",
+        "CHEA $_{1}$",
+        "",
+        "",
+        "CHEA",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd.",
+          "Opt.",
+          "Avg.",
+          "Sd."
+        ],
+        [
+          1,
+          600,
+          235,
+          318.85,
+          47.77,
+          235,
+          235,
+          0.0,
+          235,
+          235,
+          0.0
+        ],
+        [
+          2,
+          600,
+          266,
+          276.1,
+          4.54,
+          252,
+          253.1,
+          0.79,
+          252,
+          252,
+          0.0
+        ],
+        [
+          3,
+          600,
+          216,
+          238.95,
+          10.54,
+          210,
+          213.85,
+          3.11,
+          207,
+          209.3,
+          0.85
+        ],
+        [
+          4,
+          1000,
+          23.47,
+          24.73,
+          0.51,
+          20.136,
+          20.32,
+          0.95,
+          20.106,
+          20.31,
+          0.12
+        ],
+        [
+          5,
+          2000,
+          32.322,
+          34.74,
+          1.01,
+          29.443,
+          29.88,
+          0.32,
+          29.131,
+          29.87,
+          0.63
+        ],
+        [
+          6,
+          5000,
+          1080,
+          1119.9,
+          33.06,
+          995,
+          1061.3,
+          64.65,
+          978,
+          993.3,
+          7.66
+        ],
+        [
+          7,
+          5000,
+          "- *",
+          "- *",
+          "- *",
+          545,
+          556.65,
+          7.86,
+          534,
+          541.3,
+          7.67
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 11
+    },
+    {
+      "table_number": "9",
+      "table_title": "Average computational time of each iteration.",
+      "headers": [
+        "Ins.",
+        "CPU time(s)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "GA",
+          "hGA",
+          "DE",
+          "hDE",
+          "dcEA",
+          "dcEA/LS",
+          "CHEA $_{1}$",
+          "CHEA",
+          "",
+          ""
+        ],
+        [
+          1,
+          0.31,
+          0.5,
+          0.26,
+          0.45,
+          0.4,
+          0.8,
+          0.3,
+          0.61,
+          "",
+          ""
+        ],
+        [
+          2,
+          0.32,
+          0.51,
+          0.27,
+          0.52,
+          0.44,
+          0.95,
+          0.33,
+          0.6,
+          "",
+          ""
+        ],
+        [
+          3,
+          0.41,
+          0.79,
+          0.42,
+          0.8,
+          0.59,
+          1.07,
+          0.45,
+          0.82,
+          "",
+          ""
+        ],
+        [
+          4,
+          0.49,
+          0.82,
+          0.45,
+          0.85,
+          0.61,
+          1.1,
+          0.51,
+          0.89,
+          "",
+          ""
+        ],
+        [
+          5,
+          1.01,
+          2.02,
+          1.05,
+          2.06,
+          1.32,
+          2.51,
+          1.12,
+          2.03,
+          "",
+          ""
+        ],
+        [
+          6,
+          1.3,
+          2.22,
+          1.33,
+          2.33,
+          1.5,
+          2.89,
+          1.2,
+          2.39,
+          "",
+          ""
+        ],
+        [
+          7,
+          1.34,
+          2.35,
+          1.4,
+          2.37,
+          1.59,
+          3.07,
+          1.27,
+          2.43,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 11
+    }
+  ]
+}

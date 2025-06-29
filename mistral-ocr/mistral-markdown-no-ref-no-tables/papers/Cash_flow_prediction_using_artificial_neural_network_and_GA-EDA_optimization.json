@@ -1,0 +1,925 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2019/Cash flow prediction using artificial neural network and GA-EDA optimization.md",
+    "filename": "Cash flow prediction using artificial neural network and GA-EDA optimization.md",
+    "title": "Cash flow prediction using artificial neural network and GA-EDA optimization",
+    "year": "2019"
+  },
+  "references": {
+    "header": "## References",
+    "content": "Almond, B., \\& Remer, R. S. (1979). Models for present-worth analysis of selected industrial cash flow patterns. Engineering and Process Economics, 4(4), 455-466.\nAndrawis, R. R., Atiya, A. F., \\& El-Shishiny, H. (2011). Forecast combinations of computational intelligence and linear models for the NN5 time series forecasting competition. International Journal of Forecasting, 27(3), 672-688.\nBec, F., \\& Mogliani, M. (2015). Nowcasting French GDP in real-time with surveys and \"blocked\" regressions: Combining forecasts or pooling information? International Journal of Forecasting, 31(4), 1021-1042.\nBlanc, S. M., \\& Setzer, T. (2015). Analytical debiasing of corporate cash flow forecasts. European Journal of Operational Research, 243(3), 1004-1015.\nChen, H. L., O'Brien, W. J., \\& Herbsman, Z. J. (2005). Assessing the accuracy of cash flow models: the significance of payment conditions. Journal of Construction Engineering and Management, $131(6), 669-676$.\n\nCheng, M. Y., \\& Roy, A. F. (2011). Evolutionary fuzzy decision model for cash flow prediction using time-dependent support vector machines. International Journal of Project Management, 29(1), 56-65.\nCheng, M. Y., Tsai, H. C., \\& Liu, C. L. (2009). Artificial intelligence approaches to achieve strategic control over project cash flows. Automation in Construction, 18(4), 386-393.\nCheng, M. Y., Tsai, H. C., \\& Sudjono, E. (2010). Evolutionary fuzzy hybrid neural network for project cash flow control. Engineering Applications of Artificial Intelligence, 23(4), 604-613.\nGhysels, E., \\& Ozkan, N. (2015). Real-time forecasting of the US federal government budget: A simple mixed frequency data regression approach. International Journal of Forecasting, 31(4), 10091020 .\nHolland, J. H., \\& Goldberg, D. (1989). Genetic algorithms in search, optimization and machine learning. Massachusetts: Addison-Wesley.\nHwee, N. G., \\& Tiong, R. L. (2002). Model on cash flow forecasting and risk analysis for contracting firms. International Journal of Project Management, 20(5), 351-363.\nKao, L. J., Chiu, C. C., Lu, C. J., \\& Yang, J. L. (2013). Integration of nonlinear independent component analysis and support vector regression for stock price forecasting. Neurocomputing, 99, 534542 .\nKhosrowshahi, F., \\& Kaka, A. P. (2007). A decision support model for construction cash flow management. Computer-Aided Civil and Infrastructure Engineering, 22(7), 527-539.\nLarrañaga, P., \\& Lozano, J. A. (Eds.). (2001). Estimation of distribution algorithms: A new tool for evolutionary computation (Vol. 2). Springer Science \\& Business Media.\nLi, Y., Moutinho, L., Opong, K. K., \\& Pang, Y. (2015). Cash flow forecast for South African firms. Review of Development Finance, 5(1), 24-33.\nMühlenbein, H. (1997). The equation for response to selection and its use for prediction. Evolutionary Computation, 5(3), 303-346.\nNamazi, M., Shokrolahi, A., \\& Maharluie, M. S. (2016). Detecting and ranking cash flow risk factors via artificial neural networks technique. Journal of Business Research, 69(5), 1801-1806.\nRussell, J. S. (1991). Contractor failure: analysis. Journal of Performance of Constructed Facilities, $5(3), 163-180$.\nSon, H., Kim, C., \\& Kim, C. (2012). Hybrid principal component analysis and support vector machine model for predicting the cost performance of commercial building projects using pre-project planning variables. Automation in Construction, 27, 60-66.\nTouran, A., Atgun, M., \\& Bhurisith, I. (2004). Analysis of the United States Department of Transportation prompt pay provisions. Journal of Construction Engineering and Management, 130(5), 719725 .\nVenkatesh, K., Ravi, V., Prinzie, A., \\& Van den Poel, D. (2014). Cash demand forecasting in ATMs by clustering and neural networks. European Journal of Operational Research, 232(2), 383-392.\nXiong, T., Bao, Y., \\& Hu, Z. (2013). Beyond one-step-ahead forecasting: evaluation of alternative multi-step-ahead forecasting models for crude oil prices. Energy Economics, 40, 405-415.\n![img-14.jpeg](img-14.jpeg)\n(C) 2018 by the authors; licensee Growing Science, Canada. This is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC-BY) license (http://creativecommons.org/licenses/by/4.0/).",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Almond, B., \\& Remer, R. S. (1979). Models for present-worth analysis of selected industrial cash flow patterns. Engineering and Process Economics, 4(4), 455-466."
+      },
+      {
+        "ref_id": "2",
+        "text": "Andrawis, R. R., Atiya, A. F., \\& El-Shishiny, H. (2011). Forecast combinations of computational intelligence and linear models for the NN5 time series forecasting competition. International Journal of Forecasting, 27(3), 672-688."
+      },
+      {
+        "ref_id": "3",
+        "text": "Bec, F., \\& Mogliani, M. (2015). Nowcasting French GDP in real-time with surveys and \"blocked\" regressions: Combining forecasts or pooling information? International Journal of Forecasting, 31(4), 1021-1042."
+      },
+      {
+        "ref_id": "4",
+        "text": "Blanc, S. M., \\& Setzer, T. (2015). Analytical debiasing of corporate cash flow forecasts. European Journal of Operational Research, 243(3), 1004-1015."
+      },
+      {
+        "ref_id": "5",
+        "text": "Chen, H. L., O'Brien, W. J., \\& Herbsman, Z. J. (2005). Assessing the accuracy of cash flow models: the significance of payment conditions. Journal of Construction Engineering and Management, $131(6), 669-676$."
+      },
+      {
+        "ref_id": "6",
+        "text": "Cheng, M. Y., \\& Roy, A. F. (2011). Evolutionary fuzzy decision model for cash flow prediction using time-dependent support vector machines. International Journal of Project Management, 29(1), 56-65."
+      },
+      {
+        "ref_id": "7",
+        "text": "Cheng, M. Y., Tsai, H. C., \\& Liu, C. L. (2009). Artificial intelligence approaches to achieve strategic control over project cash flows. Automation in Construction, 18(4), 386-393."
+      },
+      {
+        "ref_id": "8",
+        "text": "Cheng, M. Y., Tsai, H. C., \\& Sudjono, E. (2010). Evolutionary fuzzy hybrid neural network for project cash flow control. Engineering Applications of Artificial Intelligence, 23(4), 604-613."
+      },
+      {
+        "ref_id": "9",
+        "text": "Ghysels, E., \\& Ozkan, N. (2015). Real-time forecasting of the US federal government budget: A simple mixed frequency data regression approach. International Journal of Forecasting, 31(4), 10091020 ."
+      },
+      {
+        "ref_id": "10",
+        "text": "Holland, J. H., \\& Goldberg, D. (1989). Genetic algorithms in search, optimization and machine learning. Massachusetts: Addison-Wesley."
+      },
+      {
+        "ref_id": "11",
+        "text": "Hwee, N. G., \\& Tiong, R. L. (2002). Model on cash flow forecasting and risk analysis for contracting firms. International Journal of Project Management, 20(5), 351-363."
+      },
+      {
+        "ref_id": "12",
+        "text": "Kao, L. J., Chiu, C. C., Lu, C. J., \\& Yang, J. L. (2013). Integration of nonlinear independent component analysis and support vector regression for stock price forecasting. Neurocomputing, 99, 534542 ."
+      },
+      {
+        "ref_id": "13",
+        "text": "Khosrowshahi, F., \\& Kaka, A. P. (2007). A decision support model for construction cash flow management. Computer-Aided Civil and Infrastructure Engineering, 22(7), 527-539."
+      },
+      {
+        "ref_id": "14",
+        "text": "Larrañaga, P., \\& Lozano, J. A. (Eds.). (2001). Estimation of distribution algorithms: A new tool for evolutionary computation (Vol. 2). Springer Science \\& Business Media."
+      },
+      {
+        "ref_id": "15",
+        "text": "Li, Y., Moutinho, L., Opong, K. K., \\& Pang, Y. (2015). Cash flow forecast for South African firms. Review of Development Finance, 5(1), 24-33."
+      },
+      {
+        "ref_id": "16",
+        "text": "Mühlenbein, H. (1997). The equation for response to selection and its use for prediction. Evolutionary Computation, 5(3), 303-346."
+      },
+      {
+        "ref_id": "17",
+        "text": "Namazi, M., Shokrolahi, A., \\& Maharluie, M. S. (2016). Detecting and ranking cash flow risk factors via artificial neural networks technique. Journal of Business Research, 69(5), 1801-1806."
+      },
+      {
+        "ref_id": "18",
+        "text": "Russell, J. S. (1991). Contractor failure: analysis. Journal of Performance of Constructed Facilities, $5(3), 163-180$."
+      },
+      {
+        "ref_id": "19",
+        "text": "Son, H., Kim, C., \\& Kim, C. (2012). Hybrid principal component analysis and support vector machine model for predicting the cost performance of commercial building projects using pre-project planning variables. Automation in Construction, 27, 60-66."
+      },
+      {
+        "ref_id": "20",
+        "text": "Touran, A., Atgun, M., \\& Bhurisith, I. (2004). Analysis of the United States Department of Transportation prompt pay provisions. Journal of Construction Engineering and Management, 130(5), 719725 ."
+      },
+      {
+        "ref_id": "21",
+        "text": "Venkatesh, K., Ravi, V., Prinzie, A., \\& Van den Poel, D. (2014). Cash demand forecasting in ATMs by clustering and neural networks. European Journal of Operational Research, 232(2), 383-392."
+      },
+      {
+        "ref_id": "22",
+        "text": "Xiong, T., Bao, Y., \\& Hu, Z. (2013). Beyond one-step-ahead forecasting: evaluation of alternative multi-step-ahead forecasting models for crude oil prices. Energy Economics, 40, 405-415."
+      }
+    ],
+    "reference_count": 22,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$A C F$",
+        "Actual data Cash Flow",
+        "$N E T$",
+        "Overall input signal"
+      ],
+      "rows": [
+        [
+          "$\\boldsymbol{e}$",
+          "Exponential function",
+          "$P C F$",
+          "Prediction Cash Flow"
+        ],
+        [
+          "$E I I N N$",
+          "Evolutionary Hybrid Neural Network",
+          "$w$",
+          "Weight"
+        ],
+        [
+          "Error",
+          "The algorithm's error",
+          "$x$",
+          "Input neuron"
+        ],
+        [
+          "$F(N E T)$",
+          "The activation function",
+          "Superscript",
+          ""
+        ],
+        [
+          "gen",
+          "Chromosome",
+          "$E D A$",
+          "Estimation of Distribution Algorithm"
+        ],
+        [
+          "LR",
+          "Incremental ratio",
+          "$G A$",
+          "Genetic Algorithm"
+        ],
+        [
+          "$M$",
+          "Mid-point",
+          "Subscript",
+          ""
+        ],
+        [
+          "Mean_error",
+          "The average error",
+          "$i$",
+          "The period"
+        ],
+        [
+          "MSE",
+          "Mean Square Error",
+          "$\\operatorname{tr}$",
+          "Train"
+        ],
+        [
+          "$N$",
+          "The number of population",
+          "$t s$",
+          "Test"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 4
+    },
+    {
+      "table_number": "1",
+      "table_title": "The algorithm's parameters",
+      "headers": [
+        "Parameters",
+        "Values"
+      ],
+      "rows": [
+        [
+          "No. of output neurons",
+          1
+        ],
+        [
+          "No. of hidden layers neurons",
+          10
+        ],
+        [
+          "Activation function slope",
+          "ICA"
+        ],
+        [
+          "Crossover rate",
+          0.9
+        ],
+        [
+          "Mutation rate for GA",
+          0.05
+        ],
+        [
+          "Recome percent for GA",
+          0.05
+        ],
+        [
+          "Population size",
+          150
+        ],
+        [
+          "Iteration set",
+          100
+        ],
+        [
+          "Max Generations",
+          20
+        ],
+        [
+          "Learning Rate for EDA",
+          0.3
+        ],
+        [
+          "Amount of mutation to affect the probability vector for EDA",
+          10
+        ],
+        [
+          "Participation Function for GA-EDA",
+          "dynamic"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "The MAPE, MSE, and RMSE parameters for GA (without exact value) trained ANN",
+      "headers": [
+        "ANN_GA(without exact value)",
+        "",
+        "Criteria",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "MAPE",
+          "MSE",
+          "RMSE"
+        ],
+        [
+          "",
+          1,
+          0.041679842,
+          3546858110,
+          59555.50445
+        ],
+        [
+          "",
+          2,
+          0.142588934,
+          45553927688,
+          213433.6611
+        ],
+        [
+          "",
+          3,
+          0.062991577,
+          9680497589,
+          98389.51971
+        ],
+        [
+          "",
+          4,
+          0.189402537,
+          94598447310,
+          307568.6059
+        ],
+        [
+          "",
+          5,
+          0.18182084,
+          97847359773,
+          312805.6262
+        ],
+        [
+          "",
+          6,
+          0.085736957,
+          22305525403,
+          149350.3445
+        ],
+        [
+          "",
+          7,
+          0.174533491,
+          76739030392,
+          277018.1048
+        ],
+        [
+          "",
+          8,
+          0.136675119,
+          49941710495,
+          223476.4204
+        ],
+        [
+          "",
+          9,
+          0.129224219,
+          58885879172,
+          242664.1283
+        ],
+        [
+          "",
+          10,
+          0.101219845,
+          31655972298,
+          177921.2531
+        ],
+        [
+          "",
+          11,
+          0.175507339,
+          75365641334,
+          274528.0338
+        ],
+        [
+          "",
+          12,
+          0.187669016,
+          87180517296,
+          295263.471
+        ],
+        [
+          "",
+          "average",
+          0.134087476,
+          1.9054614,
+          13803848.45
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "The MAPE, MSE, and RMSE parameters for GA (with exact value) trained ANN",
+      "headers": [
+        "ANN_GA(with exact value)",
+        "",
+        "Criteria",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "MAPE",
+          "MSE",
+          "RMSE"
+        ],
+        [
+          "",
+          1,
+          0.048114659,
+          2519589418,
+          50195.51194
+        ],
+        [
+          "",
+          2,
+          0.007403851,
+          103494579.7,
+          10173.22858
+        ],
+        [
+          "",
+          3,
+          0.022230126,
+          565054432.4,
+          23770.87361
+        ],
+        [
+          "",
+          4,
+          0.054239375,
+          2361580306,
+          48596.09352
+        ],
+        [
+          "",
+          5,
+          0.047425921,
+          2540511016,
+          50403.48218
+        ],
+        [
+          "",
+          6,
+          0.012436251,
+          144887765,
+          12036.93337
+        ],
+        [
+          "",
+          7,
+          0.049519164,
+          2685424112,
+          51821.07787
+        ],
+        [
+          "",
+          8,
+          0.079470728,
+          5316773570,
+          72916.20924
+        ],
+        [
+          "",
+          9,
+          0.06889683,
+          4014650843,
+          63361.27242
+        ],
+        [
+          "",
+          10,
+          0.045902995,
+          1801035851,
+          42438.61274
+        ],
+        [
+          "",
+          11,
+          0.033582089,
+          1429116227,
+          37803.65362
+        ],
+        [
+          "",
+          12,
+          0.0077026,
+          133401510.9,
+          11549.95718
+        ],
+        [
+          "",
+          "average",
+          0.039743716,
+          1967959969,
+          44361.69484
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "The MAPE, MSE, and RMSE parameters for EDA (without exact value) trained ANN",
+      "headers": [
+        "ANN_EDA(without exact value)",
+        "",
+        "Criteria",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "MAPE",
+          "MSE",
+          "RMSE"
+        ],
+        [
+          "",
+          1,
+          0.074715978,
+          11861072824,
+          108908.5526
+        ],
+        [
+          "",
+          2,
+          0.188113879,
+          45662887489,
+          213688.7631
+        ],
+        [
+          "",
+          3,
+          0.224645835,
+          66517000913,
+          257908.9004
+        ],
+        [
+          "",
+          4,
+          0.177642177,
+          51780089050,
+          227552.3875
+        ],
+        [
+          "",
+          5,
+          0.143838549,
+          39034373908,
+          197571.1869
+        ],
+        [
+          "",
+          6,
+          0.181503874,
+          48306741054,
+          219787.9457
+        ],
+        [
+          "",
+          7,
+          0.179232608,
+          52902203598,
+          230004.7904
+        ],
+        [
+          "",
+          8,
+          0.196756652,
+          63492911221,
+          251977.9975
+        ],
+        [
+          "",
+          9,
+          0.169921943,
+          46958848640,
+          216699.9046
+        ],
+        [
+          "",
+          10,
+          0.159912574,
+          48151808905,
+          219435.2043
+        ],
+        [
+          "",
+          11,
+          0.163669962,
+          42709485414,
+          206662.7335
+        ],
+        [
+          "",
+          12,
+          0.163070495,
+          34264400777,
+          185106.458
+        ],
+        [
+          "",
+          "average",
+          0.168585377,
+          45970151983,
+          214406.5111
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "The MAPE, MSE, and RMSE parameters for EDA (with exact value) trained ANN",
+      "headers": [
+        "ANN_EDA(with exact value)",
+        "",
+        "",
+        "Criteria",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "MAPE",
+          "MSE",
+          "RMSE"
+        ],
+        [
+          "",
+          1,
+          0.043923647,
+          8443428378,
+          91888.12969
+        ],
+        [
+          "",
+          2,
+          0.048931279,
+          3009258475,
+          54856.70857
+        ],
+        [
+          "",
+          3,
+          0.108537175,
+          30777099835,
+          175434.0327
+        ],
+        [
+          "",
+          4,
+          0.075667491,
+          8174295083,
+          90411.80832
+        ],
+        [
+          "",
+          5,
+          0.048708481,
+          2983159962,
+          54618.3116
+        ],
+        [
+          "",
+          6,
+          0.031619535,
+          1229581347,
+          35065.38674
+        ],
+        [
+          "",
+          7,
+          0.042647331,
+          4078202830,
+          63860.80824
+        ],
+        [
+          "",
+          8,
+          0.048100119,
+          5818894399,
+          76281.678
+        ],
+        [
+          "",
+          9,
+          0.125652819,
+          32045479813,
+          179012.513
+        ],
+        [
+          "",
+          10,
+          0.02707253,
+          915203943.3,
+          30252.33782
+        ],
+        [
+          "",
+          11,
+          0.029127234,
+          2365608157,
+          48637.518
+        ],
+        [
+          "",
+          12,
+          0.081257739,
+          9007801686,
+          94909.43939
+        ],
+        [
+          "",
+          "average",
+          0.059270448,
+          9070667826,
+          95240.05368
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "The MAPE, MSE, and RMSE parameters for hybrid GA-EDA trained ANN with diving the population with exact value",
+      "headers": [
+        "ANN_GA-EDA(with dividing and with ex-",
+        "",
+        "",
+        "Criteria",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "M",
+          "MSE"
+        ],
+        [
+          "",
+          1,
+          0.058943566,
+          3750417182,
+          61240.64975
+        ],
+        [
+          "",
+          2,
+          0.051069955,
+          3014160827,
+          54901.37364
+        ],
+        [
+          "",
+          3,
+          0.024629783,
+          629586290,
+          25091.55814
+        ],
+        [
+          "",
+          4,
+          0.043476555,
+          1974109762,
+          44430.955
+        ],
+        [
+          "",
+          5,
+          0.035170143,
+          1057787699,
+          32523.64831
+        ],
+        [
+          "",
+          6,
+          0.048416327,
+          1830647896,
+          42786.07128
+        ],
+        [
+          "",
+          7,
+          0.058804285,
+          2619115099,
+          51177.29085
+        ],
+        [
+          "",
+          8,
+          0.037469463,
+          1819133056,
+          42651.29607
+        ],
+        [
+          "",
+          9,
+          0.043193119,
+          1877564252,
+          43330.86951
+        ],
+        [
+          "",
+          10,
+          0.094134291,
+          6504039686,
+          80647.62666
+        ],
+        [
+          "",
+          11,
+          0.029435327,
+          906796466.5,
+          30113.06139
+        ],
+        [
+          "",
+          12,
+          0.034613112,
+          1249885728,
+          35353.72298
+        ],
+        [
+          "",
+          "average",
+          0.046612994,
+          2269436995,
+          47638.60824
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "The MAPE, MSE, and RMSE parameters for hybrid GA-EDA trained ANN without diving the population with exact value",
+      "headers": [
+        "ANN_GA-EDA(without dividing and with exact value)",
+        "Criteria",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "MAPE",
+          "MSE",
+          "RMSE"
+        ],
+        [
+          "",
+          1,
+          0.012404422,
+          219431197.7,
+          14813.21024
+        ],
+        [
+          "",
+          2,
+          0.028038437,
+          866619729.1,
+          29438.40568
+        ],
+        [
+          "",
+          3,
+          0.028523653,
+          956693514.9,
+          30930.46257
+        ],
+        [
+          "",
+          4,
+          0.026807543,
+          844264231.9,
+          29056.22535
+        ],
+        [
+          "",
+          5,
+          0.012429593,
+          183168032.8,
+          13533.95851
+        ],
+        [
+          "",
+          6,
+          0.024143924,
+          1086956116,
+          32969.01751
+        ],
+        [
+          "",
+          7,
+          0.011249668,
+          179079926.1,
+          13382.0748
+        ],
+        [
+          "",
+          8,
+          0.027985553,
+          1371326488,
+          37031.42569
+        ],
+        [
+          "",
+          9,
+          "1.15922E-05",
+          467.7679126,
+          21.62794287
+        ],
+        [
+          "",
+          10,
+          0.035414872,
+          1974921815,
+          44440.09243
+        ],
+        [
+          "",
+          11,
+          0.039348992,
+          2073246005,
+          45532.91123
+        ],
+        [
+          "",
+          12,
+          0.015659642,
+          297766521.3,
+          17255.91265
+        ],
+        [
+          "",
+          "average",
+          0.021834824,
+          837789503.8,
+          28944.59369
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 5
+    }
+  ]
+}

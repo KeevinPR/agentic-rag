@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Genetic & Evolutionary Biometrics  Hybrid feature selection and weighting for a multi-modal biometric system.md",
+    "filename": "Genetic & Evolutionary Biometrics  Hybrid feature selection and weighting for a multi-modal biometric system.md",
+    "title": "Genetic & Evolutionary Biometrics  Hybrid feature selection and weighting for a multi-modal biometric system",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "Procedure GEC $\\{$"
+      ],
+      "rows": [
+        [
+          "$\\mathrm{t}=0 ;$"
+        ],
+        [
+          "Initialize(Pop(t));"
+        ],
+        [
+          "Evaluate (Pop(t));"
+        ],
+        [
+          "while(Stopping Condition Not Satisfied) $\\}$"
+        ],
+        [
+          "Parents(t) = Select_Parents(Pop(t));"
+        ],
+        [
+          "Offspring(t) = Reproduce(Parents(t));"
+        ],
+        [
+          "Evaluate(Offspring(t));"
+        ],
+        [
+          1
+        ],
+        [
+          "$\\mathrm{t}=t+1 ;$"
+        ],
+        [
+          "$\\}$"
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 1
+    },
+    {
+      "table_number": "I",
+      "table_title": "GENETIC \\& EVOLUTIONARY FUSION RESULTS",
+      "headers": [
+        "Modality",
+        "Method",
+        "Accuracy"
+      ],
+      "rows": [
+        [
+          "Face + Periocular $_{\\mathrm{C}}$",
+          "$\\mathrm{GEF}_{0.70,0.30}$",
+          "$100.00 \\%$"
+        ],
+        [
+          "Face + Periocular $_{\\mathrm{LR}}$",
+          "$\\mathrm{GEF}_{0.655,0.135,0.210}$",
+          "$100.00 \\%$"
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 3
+    },
+    {
+      "table_number": "II",
+      "table_title": "GEFeWS ${ }_{\\text {ML }}$ Optimization and GENERALIZATION ReSults",
+      "headers": [
+        "Modality",
+        "Method",
+        "FRGC-105 <br> Optimization <br> Acc. (\\% feat)",
+        "FRGC-99 <br> Opt-Gen <br> Acc. (\\% feat)",
+        "FRGC-99 <br> Val-Gen <br> Acc. (\\% feat)"
+      ],
+      "rows": [
+        [
+          "Face-Only",
+          "Baseline <br> GEFeWS $_{\\text {ML }}\\left(\\right.$ Face $_{\\mathrm{L}}$ )",
+          "$\\begin{aligned} & 0.981(100.0 \\%) \\\\ & 0.996(34.4 \\%) \\end{aligned}$",
+          "$\\overline{0.975(34.4 \\%)}$",
+          "$\\begin{aligned} & 0.990(100.0 \\%)^{*} \\\\ & 0.985(45.0 \\%) \\end{aligned}$"
+        ],
+        [
+          "Periocular-Only",
+          "Baseline <br> GEFeWS $_{\\text {ML }}\\left(\\right.$ Periocular $_{\\mathrm{C}}$ ) <br> GEFeWS $_{\\text {ML }}\\left(\\right.$ Periocular $_{\\mathrm{LR}}$ )",
+          "$\\begin{aligned} & 0.943(100.0 \\%) \\\\ & 0.956(36.7 \\%) \\\\ & 0.962(37.3 \\%) \\end{aligned}$",
+          "$\\overline{0.872(36.7 \\%)}$ <br> 0.862(37.3\\%)",
+          "$\\begin{aligned} & 0.879(100.0 \\%)^{*} \\\\ & 0.874(46.0 \\%) \\\\ & 0.871(46.5 \\%) \\end{aligned}$"
+        ],
+        [
+          "Face + Periocular",
+          "Baseline <br> GEFeWS $_{\\text {ML }}\\left(\\right.$ Face $_{\\mathrm{L}}$, Periocular $_{\\mathrm{C}}$ ) <br> GEFeWS $_{\\text {ML }}\\left(\\right.$ Face $_{\\mathrm{L}}$, Periocular $_{\\mathrm{LR}}$ )",
+          "$\\begin{aligned} & 0.990(100.0 \\%) \\\\ & 1.000(38.2 \\%) \\\\ & 1.000(38.9 \\%) \\end{aligned}$",
+          "$\\overline{0.994(38.2 \\%)}$ <br> 0.992(38.9\\%)",
+          "$\\begin{aligned} & 0.990(100.0 \\%)^{*} \\\\ & 0.994(41.6 \\%) \\\\ & 0.994(43.9 \\%) \\end{aligned}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 5
+    }
+  ]
+}

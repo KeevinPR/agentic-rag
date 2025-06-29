@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2022/Drought prediction in the Yunnan-Guizhou Plateau of China by coupling the estimation of distribution algorithm and the extreme learning machine.md",
+    "filename": "Drought prediction in the Yunnan-Guizhou Plateau of China by coupling the estimation of distribution algorithm and the extreme learning machine.md",
+    "title": "Drought prediction in the Yunnan-Guizhou Plateau of China by coupling the estimation of distribution algorithm and the extreme learning machine",
+    "year": "2022"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$D_{O} / D_{p}$",
+        "Observed/predicted drought duration"
+      ],
+      "rows": [
+        [
+          "EDA",
+          "Estimation of distribution algorithm"
+        ],
+        [
+          "EDA-ELM",
+          "Estimation of distribution algorithm-optimized extreme learning machine"
+        ],
+        [
+          "ELM",
+          "Extreme learning machine"
+        ],
+        [
+          "ENSO",
+          "El Niño and the Southern Oscillation"
+        ],
+        [
+          "$E_{\\mathrm{NS}}$",
+          "Nash-Sutcliffe coefficient"
+        ],
+        [
+          "GA",
+          "Genetic algorithm"
+        ],
+        [
+          "GA-ELM",
+          "Genetic algorithm-optimized ELM"
+        ],
+        [
+          "MAE",
+          "Mean absolute error"
+        ],
+        [
+          "RMSE",
+          "Root mean square error"
+        ],
+        [
+          "RE $_{S} / \\mathrm{RE}_{D}$",
+          "Relative errors of drought severity and duration"
+        ],
+        [
+          "SLFN",
+          "Single-hidden-layer feedforward neural network"
+        ],
+        [
+          "SPEI",
+          "Standardized Precipitation Evapotranspiration Index"
+        ],
+        [
+          "$S_{O} / S_{p}$",
+          "Observed/predicted drought severity"
+        ],
+        [
+          "WI",
+          "Willmott's index"
+        ]
+      ],
+      "row_count": 14,
+      "column_count": 2
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Drought-driving circulation index selected by RIC-CMIDFS algorithm",
+      "headers": [
+        "Drought Indices",
+        "Circulation Indexes"
+      ],
+      "rows": [
+        [
+          -3,
+          "$\\mathrm{C1}_{5}, \\mathrm{C2}_{6}, \\mathrm{C3}_{8}, \\mathrm{C2}_{5}, \\mathrm{C1}_{9}, \\mathrm{C1}_{14}$"
+        ],
+        [
+          -6,
+          "$\\mathrm{C1}_{7}, \\mathrm{C1}_{9}, \\mathrm{C4}_{22}, \\mathrm{C5}_{21}, \\mathrm{C6}_{22}, \\mathrm{C7}_{21}$"
+        ],
+        [
+          -12,
+          "$\\mathrm{C1}_{9}, \\mathrm{C5}_{3}, \\mathrm{C1}_{12}, \\mathrm{C8}_{24}, \\mathrm{C2}_{3}$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 Statistics of performance indicators for different models in the testing period",
+      "headers": [
+        "Drought index",
+        "Prediction model",
+        "CORR",
+        "RMSE",
+        "MAE",
+        "WI",
+        "$E_{\\mathrm{NS}}$"
+      ],
+      "rows": [
+        [
+          -3,
+          "EDA-ELM",
+          0.944,
+          0.341,
+          0.254,
+          0.974,
+          0.906
+        ],
+        [
+          "",
+          "GA-ELM",
+          0.901,
+          0.47,
+          0.345,
+          0.946,
+          0.821
+        ],
+        [
+          "",
+          "ANFIS",
+          0.773,
+          0.711,
+          0.555,
+          0.861,
+          0.59
+        ],
+        [
+          "",
+          "ELM",
+          0.636,
+          0.882,
+          0.717,
+          0.644,
+          0.369
+        ],
+        [
+          -6,
+          "EDA-ELM",
+          0.922,
+          0.479,
+          0.385,
+          0.956,
+          0.839
+        ],
+        [
+          "",
+          "GA-ELM",
+          0.854,
+          0.577,
+          0.448,
+          0.928,
+          0.767
+        ],
+        [
+          "",
+          "ANFIS",
+          0.757,
+          0.73,
+          0.558,
+          0.868,
+          0.626
+        ],
+        [
+          "",
+          "ELM",
+          0.649,
+          0.974,
+          0.794,
+          0.607,
+          0.335
+        ],
+        [
+          -12,
+          "EDA-ELM",
+          0.913,
+          0.5,
+          0.386,
+          0.951,
+          0.833
+        ],
+        [
+          "",
+          "GA-ELM",
+          0.849,
+          0.648,
+          0.499,
+          0.909,
+          0.719
+        ],
+        [
+          "",
+          "ANFIS",
+          0.796,
+          0.764,
+          0.632,
+          0.843,
+          0.609
+        ],
+        [
+          "",
+          "ELM",
+          0.619,
+          0.959,
+          0.817,
+          0.718,
+          0.384
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 7
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Total execution time of different models during the model training and testing periods",
+      "headers": [
+        "Drought indices",
+        "Predictive model",
+        "Time (s)"
+      ],
+      "rows": [
+        [
+          -3,
+          "EDA-ELM",
+          722.16
+        ],
+        [
+          "",
+          "GA-ELM",
+          503.27
+        ],
+        [
+          "",
+          "ANFIS",
+          209.33
+        ],
+        [
+          "",
+          "ELM",
+          109.31
+        ],
+        [
+          -6,
+          "EDA-ELM",
+          698.5
+        ],
+        [
+          "",
+          "GA-ELM",
+          512.2
+        ],
+        [
+          "",
+          "ANFIS",
+          198.78
+        ],
+        [
+          "",
+          "ELM",
+          100.18
+        ],
+        [
+          -12,
+          "EDA-ELM",
+          744.13
+        ],
+        [
+          "",
+          "GA-ELM",
+          528.26
+        ],
+        [
+          "",
+          "ANFIS",
+          215.96
+        ],
+        [
+          "",
+          "ELM",
+          117.68
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 3
+    }
+  ]
+}

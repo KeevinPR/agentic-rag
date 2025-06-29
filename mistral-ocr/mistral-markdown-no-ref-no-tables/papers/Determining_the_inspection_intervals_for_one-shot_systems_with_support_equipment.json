@@ -1,0 +1,867 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2018/Determining the inspection intervals for one-shot systems with support equipment.md",
+    "filename": "Determining the inspection intervals for one-shot systems with support equipment.md",
+    "title": "Determining the inspection intervals for one-shot systems with support equipment",
+    "year": "2018"
+  },
+  "references": {
+    "header": "## References",
+    "content": "[1] Nakagawa T, Mizutani S. A summary of maintenance policies for a finite interval. Reliab Eng Syst Safety 2009;94:89-96.\n[2] Nakagawa T, Mizutani S, Chen M. A summary of periodic and random inspection policies. Reliab Eng Syst Safety 2010;95:906-11.\n[3] Hariga MA. A maintenance inspection model for a single machine with general failure distribution. Microelectron Reliab 1996;36:353-8.\n[4] Chelbi A, Ait-Kadi D. An optimal inspection strategy for randomly failing equipment. Reliab Eng Syst Safety 1999;63:127-31.\n[5] Huysh KT, Barros A, Bévroguer C, Castro IT. A periodic inspection and replacement policy for systems subject to competing failure modes due to degradation and traumatic events. Reliab Eng Syst Safety 2011;4:497-508.\n[6] Van der Weide JAM, Pandey MD. A stochastic alternating renewal process model for unavailability analysis of standby safety equipment. Reliab Eng Syst Safety 2015;139:97-104.\n[7] Cui L, Zhao X, Shen J, Xu Y. An availability model for storage products under periodical inspections. Int J Reliab, Qual Safety Engineering 2010;17:89-103.\n[8] Ito K, Nakagawa T. Optimal inspection policies for a system in storage. Comput Math Appl 1992;24:87-90.\n[9] Ito K, Nakagawa T. An optimal inspection policy for a storage system with high reliability. Microelectron Reliab 1995;35:875-82.\n[10] Ito K, Nakagawa T. An optimal inspection policy for a storage system with three types of hazard rate functions. J Oper Res Soc Jpn 1995;38:423-31.\n[11] Ito K, Nakagawa T. Optimal inspection policies for a storage system with degradation at periodic tests. Math Comput Model 2000;31:191-5.\n[12] Ito K, Nakagawa T, Nishi K. Extended optimal inspection policies for a system in storage. Math Comput Model 1995;22:83-7.\n[13] Badia FG, Berrade MD, Campos CA. Optimization of inspection interval based on cost. J Appl Probab 2001;38:872-81.\n[14] Ten WoldeM, Ghabbar AA. Optimizing inspection intervals-reliability and availability in terms of a Cost model: a case study on rail way carriers. Reliab Eng Syst Safety 2013;114:137-47.\n[15] Zhao J, Chan AHC, Roberts C, Madelin KB. Reliability evaluation and optimization of imperfect inspections for a component with multi-defects. Reliab Eng Syst Safety 2007;92:65-73.\n[16] Yun WY, Han YJ, Kim HW. Simulation-based inspection policies for a one-shot system in storage over a finite time span. Commun Stat-Simul Comput 2013;43:1979-2003.\n[17] Yun WY, Han YJ, Kim HW. Simulation-based inspection policies for a one-shot system. In: Yamamoto H, Qian C, Cui L, Dohi T, editors. Proceeding 5th Asia-Pacific international symposium on advanced reliability and maintenance modeling; 2012 November 1-3. Taiwan: McGraw-Hill; 2012. p. 621-8.\n[18] Yun WY, Han YJ, Kim HW. Optimal inspection policies for a one-shot system with two types of units. In: Proceedings of the 9th international conference on intelligent manufacturing and logistics systems. Shanghai, China; 2013. p. 136-41. February 27-March 2.\n[19] Yun WY, Liu L, Han YJ. Metahearintic-based inspection intervals for a one-shot system with two Types of units. J Mech Sci Technol 2014;28:3947-55.\n[20] Yun WY, Liu L, Han YJ, Rhee DW, Han CG. Optimal inspection schedules for one-shot systems with two types of units. In: Proceedings of the 2013 international conference on quality, reliability, risk, maintenance, and safety engineering, Sichuan, China; 2013 July15-18.\n[21] Yun WY, Liu L, Han YJ, Rhee DW, Han CG. Simulation-based optimal inspection schedules for one-shot systems with two types of units. In: Proceedings of the 17th international conference on industrial engineering: theory, application and practice, Busan, Korea; 2013 October 6-9.\n[22] Rausand M, Høyland A. System reliability theory: models, statistical methods, and applications. 2nd ed. Canada: Wiley-Interscience; 2003.\n[23] Banks J, Carson JS II, Nelson BL, Nicol DM. Discrete-event system simulation. 4th ed. New Jersey: Prentice-Hall; 2005.\n[24] Law AM. Simulation modeling \\& analysis. 4th ed. New York: McGraw-Hill; 2007.\n[25] Lee JY, Han YJ, Yun WY, Bin JG. Simulation-based risk analysis of integrated power system. J Korean Inst Ind Eng 2016;42:151-64.\n[26] Han YJ. Optimal RAM design and maintenance schedule for a multi-unit system (doctoral thesis). Busan, South Korea: Pusan National University; 2015.\n[27] Han YJ, Yun WY. Joint optimization problem of RAM design and PM intervals for a multi-unit system. In: Proceedings of the 3rd international conference on materials and reliability, Jeju, Korea; 2015 November 23-25.\n[28] Miihlenbein H, Bendisch J, Voigt H-M. From recombination of genes to the estimation of distributions II. continuous Parameters. In: Proceedings of the 4th conference on parallel problem solving from nature. 1996 September. Berlin: Springer; 1996. p. $188-97$.\n[29] Su W, Chow MY. Performance evaluation of an EDA-based large-scale plug-in hybrid electric Vehicle charging algorithm. IEEE Trans Smart Grid 2012;3:308-15.\n[30] Hauschild M, Pelikan M. An introduction and survey of estimation of distribution algorithms. Swarm Evol Comput 2011;1:111-28.\n[31] Harik G. Linkage learning via probabilistic modeling in the ECGA. University of Illinois; 1999. January Technical Report No.: 99010, IIIGAL.\n[32] Sastry K, Goldberg DE, Llorà X. Towards billion-bit optimization via parallel estimation of distribution algorithm. In: GECCO 2007: Proceedings of the 9th annual conference on genetic and evolutionary computation. New York: AMC; 2007. p. 577-84.\n[33] Larrahaga P, Lozano JA. Estimation of distribution algorithms: a new tool for evolutionary computation. 2nd ed. Boston: Kluwer Academic; 2001.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Nakagawa T, Mizutani S. A summary of maintenance policies for a finite interval. Reliab Eng Syst Safety 2009;94:89-96."
+      },
+      {
+        "ref_id": "2",
+        "text": "Nakagawa T, Mizutani S, Chen M. A summary of periodic and random inspection policies. Reliab Eng Syst Safety 2010;95:906-11."
+      },
+      {
+        "ref_id": "3",
+        "text": "Hariga MA. A maintenance inspection model for a single machine with general failure distribution. Microelectron Reliab 1996;36:353-8."
+      },
+      {
+        "ref_id": "4",
+        "text": "Chelbi A, Ait-Kadi D. An optimal inspection strategy for randomly failing equipment. Reliab Eng Syst Safety 1999;63:127-31."
+      },
+      {
+        "ref_id": "5",
+        "text": "Huysh KT, Barros A, Bévroguer C, Castro IT. A periodic inspection and replacement policy for systems subject to competing failure modes due to degradation and traumatic events. Reliab Eng Syst Safety 2011;4:497-508."
+      },
+      {
+        "ref_id": "6",
+        "text": "Van der Weide JAM, Pandey MD. A stochastic alternating renewal process model for unavailability analysis of standby safety equipment. Reliab Eng Syst Safety 2015;139:97-104."
+      },
+      {
+        "ref_id": "7",
+        "text": "Cui L, Zhao X, Shen J, Xu Y. An availability model for storage products under periodical inspections. Int J Reliab, Qual Safety Engineering 2010;17:89-103."
+      },
+      {
+        "ref_id": "8",
+        "text": "Ito K, Nakagawa T. Optimal inspection policies for a system in storage. Comput Math Appl 1992;24:87-90."
+      },
+      {
+        "ref_id": "9",
+        "text": "Ito K, Nakagawa T. An optimal inspection policy for a storage system with high reliability. Microelectron Reliab 1995;35:875-82."
+      },
+      {
+        "ref_id": "10",
+        "text": "Ito K, Nakagawa T. An optimal inspection policy for a storage system with three types of hazard rate functions. J Oper Res Soc Jpn 1995;38:423-31."
+      },
+      {
+        "ref_id": "11",
+        "text": "Ito K, Nakagawa T. Optimal inspection policies for a storage system with degradation at periodic tests. Math Comput Model 2000;31:191-5."
+      },
+      {
+        "ref_id": "12",
+        "text": "Ito K, Nakagawa T, Nishi K. Extended optimal inspection policies for a system in storage. Math Comput Model 1995;22:83-7."
+      },
+      {
+        "ref_id": "13",
+        "text": "Badia FG, Berrade MD, Campos CA. Optimization of inspection interval based on cost. J Appl Probab 2001;38:872-81."
+      },
+      {
+        "ref_id": "14",
+        "text": "Ten WoldeM, Ghabbar AA. Optimizing inspection intervals-reliability and availability in terms of a Cost model: a case study on rail way carriers. Reliab Eng Syst Safety 2013;114:137-47."
+      },
+      {
+        "ref_id": "15",
+        "text": "Zhao J, Chan AHC, Roberts C, Madelin KB. Reliability evaluation and optimization of imperfect inspections for a component with multi-defects. Reliab Eng Syst Safety 2007;92:65-73."
+      },
+      {
+        "ref_id": "16",
+        "text": "Yun WY, Han YJ, Kim HW. Simulation-based inspection policies for a one-shot system in storage over a finite time span. Commun Stat-Simul Comput 2013;43:1979-2003."
+      },
+      {
+        "ref_id": "17",
+        "text": "Yun WY, Han YJ, Kim HW. Simulation-based inspection policies for a one-shot system. In: Yamamoto H, Qian C, Cui L, Dohi T, editors. Proceeding 5th Asia-Pacific international symposium on advanced reliability and maintenance modeling; 2012 November 1-3. Taiwan: McGraw-Hill; 2012. p. 621-8."
+      },
+      {
+        "ref_id": "18",
+        "text": "Yun WY, Han YJ, Kim HW. Optimal inspection policies for a one-shot system with two types of units. In: Proceedings of the 9th international conference on intelligent manufacturing and logistics systems. Shanghai, China; 2013. p. 136-41. February 27-March 2."
+      },
+      {
+        "ref_id": "19",
+        "text": "Yun WY, Liu L, Han YJ. Metahearintic-based inspection intervals for a one-shot system with two Types of units. J Mech Sci Technol 2014;28:3947-55."
+      },
+      {
+        "ref_id": "20",
+        "text": "Yun WY, Liu L, Han YJ, Rhee DW, Han CG. Optimal inspection schedules for one-shot systems with two types of units. In: Proceedings of the 2013 international conference on quality, reliability, risk, maintenance, and safety engineering, Sichuan, China; 2013 July15-18."
+      },
+      {
+        "ref_id": "21",
+        "text": "Yun WY, Liu L, Han YJ, Rhee DW, Han CG. Simulation-based optimal inspection schedules for one-shot systems with two types of units. In: Proceedings of the 17th international conference on industrial engineering: theory, application and practice, Busan, Korea; 2013 October 6-9."
+      },
+      {
+        "ref_id": "22",
+        "text": "Rausand M, Høyland A. System reliability theory: models, statistical methods, and applications. 2nd ed. Canada: Wiley-Interscience; 2003."
+      },
+      {
+        "ref_id": "23",
+        "text": "Banks J, Carson JS II, Nelson BL, Nicol DM. Discrete-event system simulation. 4th ed. New Jersey: Prentice-Hall; 2005."
+      },
+      {
+        "ref_id": "24",
+        "text": "Law AM. Simulation modeling \\& analysis. 4th ed. New York: McGraw-Hill; 2007."
+      },
+      {
+        "ref_id": "25",
+        "text": "Lee JY, Han YJ, Yun WY, Bin JG. Simulation-based risk analysis of integrated power system. J Korean Inst Ind Eng 2016;42:151-64."
+      },
+      {
+        "ref_id": "26",
+        "text": "Han YJ. Optimal RAM design and maintenance schedule for a multi-unit system (doctoral thesis). Busan, South Korea: Pusan National University; 2015."
+      },
+      {
+        "ref_id": "27",
+        "text": "Han YJ, Yun WY. Joint optimization problem of RAM design and PM intervals for a multi-unit system. In: Proceedings of the 3rd international conference on materials and reliability, Jeju, Korea; 2015 November 23-25."
+      },
+      {
+        "ref_id": "28",
+        "text": "Miihlenbein H, Bendisch J, Voigt H-M. From recombination of genes to the estimation of distributions II. continuous Parameters. In: Proceedings of the 4th conference on parallel problem solving from nature. 1996 September. Berlin: Springer; 1996. p. $188-97$."
+      },
+      {
+        "ref_id": "29",
+        "text": "Su W, Chow MY. Performance evaluation of an EDA-based large-scale plug-in hybrid electric Vehicle charging algorithm. IEEE Trans Smart Grid 2012;3:308-15."
+      },
+      {
+        "ref_id": "30",
+        "text": "Hauschild M, Pelikan M. An introduction and survey of estimation of distribution algorithms. Swarm Evol Comput 2011;1:111-28."
+      },
+      {
+        "ref_id": "31",
+        "text": "Harik G. Linkage learning via probabilistic modeling in the ECGA. University of Illinois; 1999. January Technical Report No.: 99010, IIIGAL."
+      },
+      {
+        "ref_id": "32",
+        "text": "Sastry K, Goldberg DE, Llorà X. Towards billion-bit optimization via parallel estimation of distribution algorithm. In: GECCO 2007: Proceedings of the 9th annual conference on genetic and evolutionary computation. New York: AMC; 2007. p. 577-84."
+      },
+      {
+        "ref_id": "33",
+        "text": "Larrahaga P, Lozano JA. Estimation of distribution algorithms: a new tool for evolutionary computation. 2nd ed. Boston: Kluwer Academic; 2001."
+      }
+    ],
+    "reference_count": 33,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Events of objects.",
+      "headers": [
+        "Object",
+        "Event type",
+        "Event description"
+      ],
+      "rows": [
+        [
+          "Simulation",
+          "START",
+          "Start the simulation"
+        ],
+        [
+          "",
+          "END",
+          "Stop the simulation when the simulation clock equals the length of the simulation"
+        ],
+        [
+          "Function (one-shot devices, support equipment)",
+          "EMPTY",
+          "No event"
+        ],
+        [
+          "",
+          "functionActivated",
+          "Activate the function to operate"
+        ],
+        [
+          "",
+          "functionDeactivated",
+          "Deactivate the function"
+        ],
+        [
+          "",
+          "eleDown",
+          "Notice the function that the element has failed"
+        ],
+        [
+          "",
+          "eleFixed",
+          "Notice the function that the element repair has finished"
+        ],
+        [
+          "",
+          "IsFail",
+          "Check whether the function fails or not"
+        ],
+        [
+          "Element",
+          "EMPTY",
+          "No event"
+        ],
+        [
+          "",
+          "Activated",
+          "Activate the elements to operate"
+        ],
+        [
+          "",
+          "deActivated",
+          "Deactivate the element"
+        ],
+        [
+          "",
+          "BREAKDOWN",
+          "Make the element fail"
+        ],
+        [
+          "",
+          "ENDFIX",
+          "Repair the failed element to ensure it can work normally"
+        ],
+        [
+          "Maintenance",
+          "PM",
+          "Start the system inspection"
+        ],
+        [
+          "",
+          "ENDPM",
+          "Finish the inspection for one system"
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 3
+    },
+    {
+      "table_number": "2",
+      "table_title": "Statistics about system performance.",
+      "headers": [
+        "Name",
+        "Description"
+      ],
+      "rows": [
+        [
+          "totDownTime",
+          "Total time of element or function in the failure state over a certain period of time"
+        ],
+        [
+          "totRunTime",
+          "Total time of element or function in the working state over a certain period of time"
+        ],
+        [
+          "numBreak",
+          "Mean failure times of element or function"
+        ],
+        [
+          "numRepair $\\left(N R^{e}\\right.$, and $\\left.N R^{e}{ }_{1}\\right)$",
+          "Mean repair times of element"
+        ],
+        [
+          "numDoPM (TI and TI)",
+          "Total number of inspection times during system life cycle"
+        ],
+        [
+          "aviFireSys",
+          "Number of functioning systems"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Failure and repair distributions and repair costs of Type 1 units of one-shot devices.",
+      "headers": [
+        "Unit",
+        "Failure distribution",
+        "Scale parameter",
+        "Shape parameter",
+        "Repair distribution",
+        "Scale parameter",
+        "Shape parameter",
+        "Repair cost (KRW)"
+      ],
+      "rows": [
+        [
+          "$A$",
+          "Exponential",
+          300000,
+          "-",
+          "Exponential",
+          12,
+          "-",
+          4000
+        ],
+        [
+          "$B$",
+          "Exponential",
+          250000,
+          "-",
+          "Exponential",
+          12,
+          "-",
+          3500
+        ],
+        [
+          "$C$",
+          "Exponential",
+          300000,
+          "-",
+          "Exponential",
+          10,
+          "-",
+          3000
+        ],
+        [
+          "$D$",
+          "Weibull",
+          250000,
+          1.5,
+          "Exponential",
+          10,
+          "-",
+          3500
+        ],
+        [
+          "$E$",
+          "Weibull",
+          300000,
+          1.5,
+          "Exponential",
+          10,
+          "-",
+          3500
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 8
+    },
+    {
+      "table_number": "4",
+      "table_title": "Replacement distributions, lifetimes, and replacement costs of Type 2 units of one-shot devices.",
+      "headers": [
+        "Unit",
+        "Life cycle <br> (year)",
+        "Replacement <br> distribution",
+        "Scale <br> parameter",
+        "Replacement <br> cost (KRW)"
+      ],
+      "rows": [
+        [
+          "$F$",
+          10,
+          "Exponential",
+          9,
+          4000
+        ],
+        [
+          "$G$",
+          14,
+          "Exponential",
+          9,
+          4000
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Failure and repair distributions and repair costs of support equipment units.",
+      "headers": [
+        "Unit",
+        "Failure distribution",
+        "Scale parameter",
+        "Shape parameter",
+        "Repair distribution",
+        "Scale parameter",
+        "Shape parameter",
+        "Repair cost (KRW)"
+      ],
+      "rows": [
+        [
+          "$H$",
+          "Exponential",
+          70000,
+          "-",
+          "Exponential",
+          8,
+          "-",
+          2000
+        ],
+        [
+          "$I$",
+          "Exponential",
+          60000,
+          "-",
+          "Exponential",
+          8,
+          "-",
+          1500
+        ],
+        [
+          "$J$",
+          "Exponential",
+          70000,
+          "-",
+          "Exponential",
+          10,
+          "-",
+          2000
+        ],
+        [
+          "$K$",
+          "Weibull",
+          60000,
+          1.5,
+          "Exponential",
+          8,
+          "-",
+          1500
+        ],
+        [
+          "$L$",
+          "Weibull",
+          70000,
+          1.5,
+          "Exponential",
+          10,
+          "-",
+          2000
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 8
+    },
+    {
+      "table_number": "6",
+      "table_title": "Average interval availability and standard deviation.",
+      "headers": [
+        "Number of groups",
+        "Average interval availability",
+        "Standard deviation"
+      ],
+      "rows": [
+        [
+          1,
+          0.7516,
+          0.0651
+        ],
+        [
+          5,
+          0.8139,
+          0.1352
+        ],
+        [
+          10,
+          0.8257,
+          0.1393
+        ],
+        [
+          20,
+          0.8345,
+          0.1425
+        ],
+        [
+          50,
+          0.8395,
+          0.1469
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "7",
+      "table_title": "Life cycle costs for different cost rates and numbers of groups.",
+      "headers": [
+        "Cost rate",
+        "Life cycle cost (in millions)",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          50,
+          20,
+          10,
+          5,
+          1
+        ],
+        [
+          "$11 / 7$",
+          "$16,895.63$",
+          "$16,007.88$",
+          "$15,243.12$",
+          "$14,169.70$",
+          "$12,560.26$"
+        ],
+        [
+          1,
+          "$11,784.27$",
+          "$11,160.98$",
+          "$10,751.84$",
+          8903.03,
+          5162.34
+        ],
+        [
+          0.1,
+          1296.25,
+          1249.21,
+          1202.98,
+          961.08,
+          730.61
+        ],
+        [
+          0.01,
+          248.84,
+          245.5,
+          237.07,
+          210.22,
+          175.78
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 6
+    },
+    {
+      "table_number": "8",
+      "table_title": "Improvements in average interval availability when support equipment failure is not considered.",
+      "headers": [
+        "Number of <br> groups",
+        "Average interval availability",
+        "",
+        "Improvement"
+      ],
+      "rows": [
+        [
+          "",
+          "Support equipment <br> can fail",
+          "Support equipment <br> cannot fail",
+          ""
+        ],
+        [
+          1,
+          0.7516,
+          0.783,
+          "$+3.14 \\%$"
+        ],
+        [
+          5,
+          0.8139,
+          0.8334,
+          "$+1.95 \\%$"
+        ],
+        [
+          10,
+          0.8257,
+          0.8341,
+          "$+0.84 \\%$"
+        ],
+        [
+          20,
+          0.8345,
+          0.8381,
+          "$+0.36 \\%$"
+        ],
+        [
+          50,
+          0.8395,
+          0.8413,
+          "$+0.18 \\%$"
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 4
+    },
+    {
+      "table_number": "9",
+      "table_title": "Improvement of the average interval availability for five groups.",
+      "headers": [
+        "Increment",
+        "Average interval availability",
+        "Improvement"
+      ],
+      "rows": [
+        [
+          "$0 \\%$",
+          0.8139,
+          "-"
+        ],
+        [
+          "$15 \\%$",
+          0.8194,
+          "$+0.55 \\%$"
+        ],
+        [
+          "$30 \\%$",
+          0.8238,
+          "$+0.99 \\%$"
+        ],
+        [
+          "$45 \\%$",
+          0.8295,
+          "$+1.56 \\%$"
+        ],
+        [
+          "$100 \\%$",
+          0.8334,
+          "$+1.95 \\%$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 3
+    },
+    {
+      "table_number": "10",
+      "table_title": "Life cycle costs for different system rates and different number of groups.",
+      "headers": [
+        "System <br> rate",
+        "Number of <br> support <br> equipment",
+        "Life cycle cost (in millions)",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          50,
+          20,
+          10,
+          5,
+          1
+        ],
+        [
+          1,
+          500,
+          16414.71,
+          15334.57,
+          14503.08,
+          11915.83,
+          11178.56
+        ],
+        [
+          5,
+          100,
+          16612.08,
+          15683.02,
+          15042.49,
+          12883.81,
+          11708.64
+        ],
+        [
+          10,
+          50,
+          16895.63,
+          16007.88,
+          15243.12,
+          13169.7,
+          12360.26
+        ],
+        [
+          20,
+          25,
+          16569.84,
+          15423.1,
+          14644.79,
+          12328.43,
+          11146.43
+        ],
+        [
+          25,
+          20,
+          16828.49,
+          15693.8,
+          15033.19,
+          12998.82,
+          11714.27
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 7
+    },
+    {
+      "table_number": "11",
+      "table_title": "Performance comparison between the Hybrid EDA-based algorithm and exhaustive method.",
+      "headers": [
+        "Item",
+        "Methods",
+        "Value",
+        "Gap (\\%)"
+      ],
+      "rows": [
+        [
+          "Expected life cycle <br> cost",
+          "Exhaustive method",
+          "$61,150,880$",
+          "$-0.343 \\%$"
+        ],
+        [
+          "",
+          "Hybrid EDA-based algorithm",
+          "$60,941,060$",
+          ""
+        ],
+        [
+          "Inspection points",
+          "Exhaustive method",
+          15,
+          "$0 \\%$"
+        ],
+        [
+          "",
+          "Hybrid EDA-based algorithm",
+          15,
+          ""
+        ],
+        [
+          "Average interval <br> availability",
+          "Exhaustive method",
+          0.7264,
+          "$-0.192 \\%$"
+        ],
+        [
+          "",
+          "Hybrid EDA-based algorithm",
+          0.725,
+          ""
+        ],
+        [
+          "Computation time <br> (s)",
+          "Exhaustive method",
+          23.16,
+          "$+0.561 \\%$"
+        ],
+        [
+          "",
+          "Hybrid EDA-based algorithm",
+          23.29,
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 4
+    },
+    {
+      "table_number": "12",
+      "table_title": "Comparison results for different numbers of groups.",
+      "headers": [
+        "Number of <br> groups",
+        "Method",
+        "Total number of <br> inspection <br> points",
+        "Computation <br> time (min)"
+      ],
+      "rows": [
+        [
+          1,
+          "Hybrid EDA-based algorithm",
+          21,
+          782
+        ],
+        [
+          "",
+          "General EDA",
+          27,
+          421
+        ],
+        [
+          "",
+          "Heuristic algorithm",
+          37,
+          222
+        ],
+        [
+          5,
+          "Hybrid EDA-based algorithm",
+          26,
+          804
+        ],
+        [
+          "",
+          "General EDA",
+          36,
+          449
+        ],
+        [
+          "",
+          "Heuristic algorithm",
+          47,
+          239
+        ],
+        [
+          10,
+          "Hybrid EDA-based algorithm",
+          30,
+          798
+        ],
+        [
+          "",
+          "General EDA",
+          42,
+          450
+        ],
+        [
+          "",
+          "Heuristic algorithm",
+          57,
+          264
+        ],
+        [
+          20,
+          "Hybrid EDA-based algorithm",
+          33,
+          809
+        ],
+        [
+          "",
+          "General EDA",
+          44,
+          454
+        ],
+        [
+          "",
+          "Heuristic algorithm",
+          59,
+          266
+        ],
+        [
+          50,
+          "Hybrid EDA-based algorithm",
+          39,
+          827
+        ],
+        [
+          "",
+          "General EDA",
+          47,
+          461
+        ],
+        [
+          "",
+          "Heuristic algorithm",
+          60,
+          272
+        ]
+      ],
+      "row_count": 15,
+      "column_count": 4
+    }
+  ]
+}

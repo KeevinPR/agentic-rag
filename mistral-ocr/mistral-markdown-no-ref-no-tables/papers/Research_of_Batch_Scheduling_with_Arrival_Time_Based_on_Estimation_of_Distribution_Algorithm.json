@@ -1,0 +1,366 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2014/Research of Batch Scheduling with Arrival Time Based on Estimation of Distribution Algorithm.md",
+    "filename": "Research of Batch Scheduling with Arrival Time Based on Estimation of Distribution Algorithm.md",
+    "title": "Research of Batch Scheduling with Arrival Time Based on Estimation of Distribution Algorithm",
+    "year": "2014"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] Li Xiao Lin. Research on Scheduling Batch Processing Machines in Paralled[D]. University of Science and Technology of China,2011.\n[2] S. Wbster and K.R. Baker. Scheduling groups of jobs on a single machine. Operations Research[J], 43(1995),692-703.\n[3] S..Albersand P. Brueker. The complexity of one machine batching problem. Discrete Applied Mathematics [J], 46(1993),87-107.\n[4] P. Baptiste. Batching identical jobs[J]. Mathematical Methods of Operations Research, 52(2000),355-367.\n[5] C.Y. Lee, R. Uzsoy and L.A. Martin-Vega, Efficient algorithms for scheduling semiconductor burn in operations. OperationsResearch[J], 40(1992),764-775.\n[6] Ikura Y, Gimple M. Efficient scheduling algorithms for a single batch processing machine [J]. Operations Research Letters, 1986, 5(2): 61-65.\n[7] WANG Shuan-shi, CHEN Hua-ping, CHENG Ba-yi. Minimizing makespan on a single batch processing machine with non-identical job sizes using ant colony optimization. Journal of Management Science In China,2009,12(6): 72-82.\n[8] Xu R, Chen H P, Li X P. Makespan minimization on single batch-processing machine via ant colony optimization[J]. Computers \\& Operations Research, 2012, 39(3): 582-593.\n[9] XU Rui, CHEN Hua-ping, ZHU Jun-hong. Research on batch scheduling problem with job release time based on max-minant system. Journal of Systems Engineering,2001,26(4):474-484.\n[10] ZHOU Shu-De, SUN Zeng-Qi. A Survey on Estimation of Distribution Algorithms[J]. Acta Automation Sinica, 2007,33(2):113-121.\n[11] He Xiao-juan. Estimation of Distribution Algorithm and It's Application in Scheduling Problem Solving[D]. Lanzhou University of Technology.\n[12] Naeem M, Lee D. Estimation of Distribution algorithm for sensor selection problems[C].Radio and Wireless Symposium, 2010 IEEE. Washington, DC: IEEE, 2010:388-391.\n[13] LIUXin-liang, ZHANG Tao, GUO Bo. Model of spare parts optimization based on estimation of distribution algorithms[J]. SYSTEMS ENGINEERING-THEORY \\&PRACTICE, 2009(2).\n[14] DOU Li-Hua, WANG Gao-peng, Chen Jie etc. A hybrid algorithm of computing cannonball dispersion evenness[J]. CONTROL THEROY \\& APPLICATION,2009, 26(6):624-628.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Li Xiao Lin. Research on Scheduling Batch Processing Machines in Paralled[D]. University of Science and Technology of China,2011."
+      },
+      {
+        "ref_id": "2",
+        "text": "S. Wbster and K.R. Baker. Scheduling groups of jobs on a single machine. Operations Research[J], 43(1995),692-703."
+      },
+      {
+        "ref_id": "3",
+        "text": "S..Albersand P. Brueker. The complexity of one machine batching problem. Discrete Applied Mathematics [J], 46(1993),87-107."
+      },
+      {
+        "ref_id": "4",
+        "text": "P. Baptiste. Batching identical jobs[J]. Mathematical Methods of Operations Research, 52(2000),355-367."
+      },
+      {
+        "ref_id": "5",
+        "text": "C.Y. Lee, R. Uzsoy and L.A. Martin-Vega, Efficient algorithms for scheduling semiconductor burn in operations. OperationsResearch[J], 40(1992),764-775."
+      },
+      {
+        "ref_id": "6",
+        "text": "Ikura Y, Gimple M. Efficient scheduling algorithms for a single batch processing machine [J]. Operations Research Letters, 1986, 5(2): 61-65."
+      },
+      {
+        "ref_id": "7",
+        "text": "WANG Shuan-shi, CHEN Hua-ping, CHENG Ba-yi. Minimizing makespan on a single batch processing machine with non-identical job sizes using ant colony optimization. Journal of Management Science In China,2009,12(6): 72-82."
+      },
+      {
+        "ref_id": "8",
+        "text": "Xu R, Chen H P, Li X P. Makespan minimization on single batch-processing machine via ant colony optimization[J]. Computers \\& Operations Research, 2012, 39(3): 582-593."
+      },
+      {
+        "ref_id": "9",
+        "text": "XU Rui, CHEN Hua-ping, ZHU Jun-hong. Research on batch scheduling problem with job release time based on max-minant system. Journal of Systems Engineering,2001,26(4):474-484."
+      },
+      {
+        "ref_id": "10",
+        "text": "ZHOU Shu-De, SUN Zeng-Qi. A Survey on Estimation of Distribution Algorithms[J]. Acta Automation Sinica, 2007,33(2):113-121."
+      },
+      {
+        "ref_id": "11",
+        "text": "He Xiao-juan. Estimation of Distribution Algorithm and It's Application in Scheduling Problem Solving[D]. Lanzhou University of Technology."
+      },
+      {
+        "ref_id": "12",
+        "text": "Naeem M, Lee D. Estimation of Distribution algorithm for sensor selection problems[C].Radio and Wireless Symposium, 2010 IEEE. Washington, DC: IEEE, 2010:388-391."
+      },
+      {
+        "ref_id": "13",
+        "text": "LIUXin-liang, ZHANG Tao, GUO Bo. Model of spare parts optimization based on estimation of distribution algorithms[J]. SYSTEMS ENGINEERING-THEORY \\&PRACTICE, 2009(2)."
+      },
+      {
+        "ref_id": "14",
+        "text": "DOU Li-Hua, WANG Gao-peng, Chen Jie etc. A hybrid algorithm of computing cannonball dispersion evenness[J]. CONTROL THEROY \\& APPLICATION,2009, 26(6):624-628."
+      }
+    ],
+    "reference_count": 14,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Grade Classification of Cases",
+      "headers": [
+        "Factors",
+        "Grades"
+      ],
+      "rows": [
+        [
+          "n (number of workpieces)",
+          "$20,40,60,80,100$"
+        ],
+        [
+          "r (range of arrival time of workpiece)",
+          "$0.5,1.0,1.5,2.0$"
+        ],
+        [
+          "S (machine capacity)",
+          5
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Comparison of Solution Qualities of Each Algorithm",
+      "headers": [
+        "n",
+        "R",
+        "IcGA",
+        "cGA",
+        "MMAS-BSJR",
+        "MMAS1",
+        "MMAS2",
+        "AS"
+      ],
+      "rows": [
+        [
+          "",
+          0.5,
+          "$1.481^{*}$",
+          2.6,
+          1.504,
+          1.597,
+          1.518,
+          1.953
+        ],
+        [
+          "",
+          1.0,
+          "$1.170^{*}$",
+          2.06,
+          1.179,
+          1.202,
+          1.196,
+          1.292
+        ],
+        [
+          20,
+          1.5,
+          "$1.012^{*}$",
+          1.49,
+          1.028,
+          1.08,
+          1.056,
+          1.135
+        ],
+        [
+          "",
+          2.0,
+          "$1.001^{*}$",
+          1.28,
+          1.007,
+          1.071,
+          1.033,
+          1.14
+        ],
+        [
+          "",
+          "average",
+          "$1.166^{*}$",
+          1.857,
+          1.179,
+          1.237,
+          1.2,
+          1.38
+        ],
+        [
+          "",
+          0.5,
+          "$1.790^{*}$",
+          4.171,
+          1.82,
+          1.938,
+          1.794,
+          2.0
+        ],
+        [
+          "",
+          1.0,
+          "$1.201^{*}$",
+          2.4,
+          1.215,
+          1.228,
+          1.203,
+          1.33
+        ],
+        [
+          40,
+          1.5,
+          "$1.017^{*}$",
+          1.92,
+          1.057,
+          1.066,
+          1.056,
+          1.129
+        ],
+        [
+          "",
+          2.0,
+          "$1.006^{*}$",
+          1.58,
+          1.014,
+          1.036,
+          1.025,
+          1.082
+        ],
+        [
+          "",
+          "average",
+          "$1.256^{*}$",
+          2.517,
+          1.277,
+          1.317,
+          1.27,
+          1.385
+        ],
+        [
+          "",
+          0.5,
+          "$2.004^{*}$",
+          5.309,
+          2.008,
+          2.034,
+          2.007,
+          2.218
+        ],
+        [
+          "",
+          1.0,
+          "$1.206^{*}$",
+          3.099,
+          1.247,
+          1.258,
+          1.248,
+          1.32
+        ],
+        [
+          60,
+          1.5,
+          "$1.022^{*}$",
+          2.066,
+          1.029,
+          1.039,
+          1.028,
+          1.059
+        ],
+        [
+          "",
+          2.0,
+          "$1.002^{*}$",
+          1.653,
+          1.01,
+          1.022,
+          1.013,
+          1.053
+        ],
+        [
+          "",
+          "average",
+          "$1.309^{*}$",
+          3.031,
+          1.324,
+          1.338,
+          1.324,
+          1.413
+        ],
+        [
+          "",
+          0.5,
+          2.137,
+          5.349,
+          2.117,
+          2.297,
+          "$2.091^{*}$",
+          2.249
+        ],
+        [
+          "",
+          1.0,
+          "$1.236^{*}$",
+          3.099,
+          1.253,
+          1.265,
+          1.25,
+          1.298
+        ],
+        [
+          80,
+          1.5,
+          "$1.024^{*}$",
+          2.066,
+          1.031,
+          1.03,
+          1.026,
+          1.067
+        ],
+        [
+          "",
+          2.0,
+          "$1.003^{*}$",
+          1.636,
+          1.01,
+          1.015,
+          1.012,
+          1.051
+        ],
+        [
+          "",
+          "average",
+          "$1.350^{*}$",
+          3.038,
+          1.353,
+          1.402,
+          1.345,
+          1.416
+        ],
+        [
+          "",
+          0.5,
+          2.255,
+          5.431,
+          "$2.238^{*}$",
+          2.324,
+          2.246,
+          2.404
+        ],
+        [
+          "",
+          1.0,
+          "$1.260^{*}$",
+          3.257,
+          1.267,
+          1.297,
+          1.279,
+          1.337
+        ],
+        [
+          100,
+          1.5,
+          "$1.019^{*}$",
+          2.153,
+          1.035,
+          1.041,
+          1.032,
+          1.054
+        ],
+        [
+          "",
+          2.0,
+          "$1.005^{*}$",
+          1.752,
+          1.005,
+          1.011,
+          1.007,
+          1.024
+        ],
+        [
+          "",
+          "average",
+          "$1.384^{*}$",
+          3.148,
+          1.386,
+          1.418,
+          1.391,
+          1.455
+        ]
+      ],
+      "row_count": 25,
+      "column_count": 8
+    }
+  ]
+}

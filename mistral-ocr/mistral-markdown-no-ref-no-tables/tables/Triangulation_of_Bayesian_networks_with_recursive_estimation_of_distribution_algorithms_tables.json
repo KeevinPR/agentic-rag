@@ -1,0 +1,703 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2009/Triangulation of Bayesian networks with recursive estimation of distribution algorithms.md",
+    "filename": "Triangulation of Bayesian networks with recursive estimation of distribution algorithms.md",
+    "title": "Triangulation of Bayesian networks with recursive estimation of distribution algorithms",
+    "year": "2009"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Possible orderings of 4 nodes",
+      "headers": [
+        "$1-1234$",
+        "$7-2134$",
+        "$13-3124$",
+        "$19-4123$"
+      ],
+      "rows": [
+        [
+          "$2-1243$",
+          "$8-2143$",
+          "$14-3142$",
+          "$20-4132$"
+        ],
+        [
+          "$3-1324$",
+          "$9-2314$",
+          "$15-3214$",
+          "$21-4213$"
+        ],
+        [
+          "$4-1342$",
+          "$10-2341$",
+          "$16-3241$",
+          "$22-4231$"
+        ],
+        [
+          "$5-1423$",
+          "$11-2413$",
+          "$17-3412$",
+          "$23-4312$"
+        ],
+        [
+          "$6-1432$",
+          "$12-2431$",
+          "$18-3421$",
+          "$24-4321$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "I. Initial order of the best individual of the last cache ( $m=16$ genes). In this recursive <br> level, the genes $9,3,6,16,12,15,4$ and 7 are already fixed.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          5,
+          9,
+          2,
+          3,
+          6,
+          16,
+          13,
+          12,
+          14,
+          11,
+          15,
+          1,
+          4,
+          8,
+          7,
+          10,
+          "",
+          "",
+          ""
+        ],
+        [
+          "II. Genes selected to evolve in the execution of the REDA in the next recursion level <br> (or recursive call).",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          2,
+          "",
+          "",
+          14,
+          "",
+          "",
+          "",
+          "",
+          1,
+          "",
+          "",
+          "",
+          10,
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "III. Genes fixed in the next recursive call.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          5,
+          "",
+          "",
+          "",
+          13,
+          "",
+          "",
+          "",
+          11,
+          "",
+          "",
+          "",
+          "",
+          8,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "IV. Relative ordering of the fixed genes in the best individual of the last cache.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          5,
+          9,
+          3,
+          "",
+          6,
+          16,
+          "",
+          13,
+          12,
+          "",
+          11,
+          "",
+          15,
+          "",
+          4,
+          "",
+          8,
+          "",
+          7
+        ],
+        [
+          "V. Beta individual proposed by the EDA.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          10,
+          "",
+          "",
+          "",
+          14,
+          "",
+          "",
+          "",
+          1,
+          "",
+          "",
+          "",
+          "",
+          2,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "VI. Gamma individual using the IV step that is finally evaluated.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          5,
+          9,
+          10,
+          3,
+          6,
+          16,
+          "",
+          13,
+          12,
+          14,
+          "",
+          11,
+          "",
+          15,
+          1,
+          "",
+          4,
+          "",
+          7
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 19
+    },
+    {
+      "table_number": "2",
+      "table_title": "Value of $N$ for each REDA",
+      "headers": [
+        "$M$",
+        "MIMIC $_{c}$",
+        "UMDA $_{c}$",
+        "MIMIC $_{d}$",
+        "UMDA $_{d}$"
+      ],
+      "rows": [
+        [
+          100,
+          90,
+          24,
+          24,
+          50
+        ],
+        [
+          500,
+          120,
+          370,
+          370,
+          120
+        ]
+      ],
+      "row_count": 2,
+      "column_count": 5
+    },
+    {
+      "table_number": "3",
+      "table_title": "Average results of 50 executions for sparse and EDAs",
+      "headers": [
+        "",
+        "MIMIC $_{c}$",
+        "UMDA $_{c}$",
+        "Best MIMIC $_{c}$",
+        "Best UMDA $_{c}$"
+      ],
+      "rows": [
+        [
+          "$M=100$",
+          "$26.79 \\pm 2.35$",
+          "$26.80 \\pm 2.34$",
+          23.48,
+          23.48
+        ],
+        [
+          "$M=500$",
+          "$27.55 \\pm 0.23$",
+          "$27.43 \\pm 0.33$",
+          26.65,
+          26.26
+        ],
+        [
+          "",
+          "MIMIC $_{d}$",
+          "UMDA $_{d}$",
+          "Best MIMIC $_{d}$",
+          "Best UMDA $_{d}$"
+        ],
+        [
+          "$M=100$",
+          "$27.61 \\pm 1.61$",
+          "$26.55 \\pm 0.90$",
+          24.2,
+          24.38
+        ],
+        [
+          "$M=500$",
+          "$27.72 \\pm 0.63$",
+          "$23.35 \\pm 0.09$",
+          25.73,
+          22.66
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "4",
+      "table_title": "Average results of 50 executions for dense and EDAs",
+      "headers": [
+        "",
+        "MIMIC $_{c}$",
+        "UMDA $_{c}$",
+        "Best MIMIC $_{c}$",
+        "Best UMDA $_{c}$"
+      ],
+      "rows": [
+        [
+          "$M=100$",
+          "$58.31 \\pm 2.11$",
+          "$58.03 \\pm 2.08$",
+          55.04,
+          54.01
+        ],
+        [
+          "$M=500$",
+          "$56.65 \\pm 2.53$",
+          "$56.50 \\pm 1.80$",
+          53.04,
+          53.22
+        ],
+        [
+          "",
+          "MIMIC $_{d}$",
+          "UMDA $_{d}$",
+          "Best MIMIC $_{d}$",
+          "Best UMDA $_{d}$"
+        ],
+        [
+          "$M=100$",
+          "$55.16 \\pm 2.80$",
+          "$56.10 \\pm 2.72$",
+          51.87,
+          52.75
+        ],
+        [
+          "$M=500$",
+          "$54.27 \\pm 2.79$",
+          "$53.78 \\pm 1.86$",
+          51.85,
+          51.81
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "5",
+      "table_title": "Average results of 50 executions for sparse and REDAs",
+      "headers": [
+        "",
+        "MIMIC $_{c}$",
+        "UMDA $_{c}$",
+        "Best MIMIC $_{c}$",
+        "Best UMDA $_{c}$"
+      ],
+      "rows": [
+        [
+          "$M=100$",
+          "$23.28 \\pm 0.43$",
+          "$23.42 \\pm 0.35$",
+          22.67,
+          22.63
+        ],
+        [
+          "$M=500$",
+          "$23.01 \\pm 0.09$",
+          "$23.20 \\pm 0.24$",
+          22.66,
+          22.66
+        ],
+        [
+          "",
+          "MIMIC $_{d}$",
+          "UMDA $_{d}$",
+          "Best MIMIC $_{d}$",
+          "Best UMDA $_{d}$"
+        ],
+        [
+          "$M=100$",
+          "$23.28 \\pm 0.17$",
+          "$23.23 \\pm 0.20$",
+          22.63,
+          22.66
+        ],
+        [
+          "$M=500$",
+          "$23.30 \\pm 0.25$",
+          "$23.15 \\pm 0.22$",
+          22.61,
+          22.64
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "6",
+      "table_title": "Average results of 50 executions for dense and REDAs",
+      "headers": [
+        "",
+        "MIMIC $_{c}$",
+        "UMDA $_{c}$",
+        "Best MIMIC $_{c}$",
+        "Best UMDA $_{c}$"
+      ],
+      "rows": [
+        [
+          "$M=100$",
+          "$53.09 \\pm 1.13$",
+          "$53.04 \\pm 1.05$",
+          51.15,
+          51.15
+        ],
+        [
+          "$M=500$",
+          "$52.73 \\pm 1.58$",
+          "$52.70 \\pm 1.44$",
+          50.88,
+          50.88
+        ],
+        [
+          "",
+          "MIMIC $_{d}$",
+          "UMDA $_{d}$",
+          "Best MIMIC $_{d}$",
+          "Best UMDA $_{d}$"
+        ],
+        [
+          "$M=100$",
+          "$53.04 \\pm 0.85$",
+          "$52.88 \\pm 1.19$",
+          50.88,
+          50.99
+        ],
+        [
+          "$M=500$",
+          "$52.75 \\pm 0.73$",
+          "$52.62 \\pm 1.31$",
+          50.89,
+          50.88
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_number": "7",
+      "table_title": "Average results of 50 executions for Medianus I, Medianus II and REDAs",
+      "headers": [
+        "",
+        "UMDA $_{r}$",
+        "UMDA $_{d}$",
+        "Best UMDA $_{r}$",
+        "Best UMDA $_{d}$"
+      ],
+      "rows": [
+        [
+          "Medianus I and $M=100$",
+          "$23.36 \\pm 0.23$",
+          "$23.35 \\pm 0.21$",
+          22.63,
+          22.63
+        ],
+        [
+          "Medianus I and $M=500$",
+          "$23.30 \\pm 0.19$",
+          "$23.22 \\pm 0.10$",
+          22.63,
+          22.63
+        ],
+        [
+          "Medianus II and $M=100$",
+          "$21.78 \\pm 0.66$",
+          "$21.32 \\pm 0.63$",
+          20.54,
+          20.46
+        ],
+        [
+          "Medianus II and $M=500$",
+          "$21.41 \\pm 0.45$",
+          "$21.16 \\pm 0.40$",
+          20.45,
+          20.45
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 5
+    },
+    {
+      "table_number": "8",
+      "table_title": "Results of several triangulation techniques for Medianus I",
+      "headers": [
+        "",
+        "Average",
+        "Best"
+      ],
+      "rows": [
+        [
+          "Random elimination",
+          41.66,
+          27.75
+        ],
+        [
+          "Lexicographic search",
+          30.29,
+          23.44
+        ],
+        [
+          "Maximum cardinality",
+          29.0,
+          23.63
+        ],
+        [
+          "Minimum size heuristic",
+          23.27,
+          22.71
+        ],
+        [
+          "Minimum weight heuristic",
+          22.99,
+          22.94
+        ],
+        [
+          "Minimum fill heuristic",
+          23.14,
+          22.71
+        ],
+        [
+          "Annealing (best control scheme)",
+          22.71,
+          22.63
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    },
+    {
+      "table_number": "9",
+      "table_title": "Results of several triangulation techniques for Medianus II",
+      "headers": [
+        "",
+        "Average",
+        "Best"
+      ],
+      "rows": [
+        [
+          "Random elimination",
+          46.35,
+          29.28
+        ],
+        [
+          "Lexicographic search",
+          30.59,
+          22.28
+        ],
+        [
+          "Maximum cardinality",
+          29.17,
+          22.38
+        ],
+        [
+          "Minimum size heuristic",
+          22.19,
+          20.5
+        ],
+        [
+          "Minimum weight heuristic",
+          20.65,
+          20.65
+        ],
+        [
+          "Minimum fill heuristic",
+          21.78,
+          20.57
+        ],
+        [
+          "Annealing (best control scheme)",
+          20.54,
+          20.49
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 3
+    }
+  ]
+}

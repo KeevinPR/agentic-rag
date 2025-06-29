@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/FRAT a fuzzy rule based adaptive technique for intelligent placement of UAV-mounted base station.md",
+    "filename": "FRAT a fuzzy rule based adaptive technique for intelligent placement of UAV-mounted base station.md",
+    "title": "FRAT a fuzzy rule based adaptive technique for intelligent placement of UAV-mounted base station",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Comparison of the proposed and existing approaches",
+      "headers": [
+        "Ref. <br> no.",
+        "Objective",
+        "Maintained <br> $\\mathfrak{I}$ threshold <br> at MU",
+        "Constraint of <br> the $\\zeta$ is included",
+        "Constraint of <br> the $\\phi$ is <br> included",
+        "Constraint of <br> the $\\psi$ is <br> included",
+        "is <br> Reduced"
+      ],
+      "rows": [
+        [
+          "",
+          "Optimized user clustering and resource allocation to <br> reduce the number of UmBSs deployed",
+          "Y",
+          "N",
+          "N",
+          "Y",
+          "Y"
+        ],
+        [
+          "",
+          "Balancing of traffic load to reduce the number of <br> UmBSs deployed",
+          "Y",
+          "N",
+          "N",
+          "N",
+          "Y"
+        ],
+        [
+          "",
+          "Provide on demand network connectivity in hotspot <br> event",
+          "Y",
+          "N",
+          "N",
+          "N",
+          "N"
+        ],
+        [
+          "",
+          "Optimize UmBSs location and transmit power to <br> reduce the number of UmBSs to be deployed",
+          "Y",
+          "N",
+          "N",
+          "Y",
+          "Y"
+        ],
+        [
+          "",
+          "Reduce the number of UmBSs to be deployed under <br> the constraint of coverage area and data rate",
+          "Y",
+          "N",
+          "N",
+          "Y",
+          "Y"
+        ],
+        [
+          "",
+          "Increase the capacity of TBS by deploying multiple <br> UmBSs",
+          "Y",
+          "N",
+          "N",
+          "N",
+          "N"
+        ],
+        [
+          "",
+          "Demonstrate the impact of coverage and capacity on <br> the number of UmBSs deployed",
+          "N",
+          "Y",
+          "N",
+          "Y",
+          "N"
+        ],
+        [
+          "",
+          "Increase the network throughput with the <br> deployment of minimum number of UmBSs",
+          "Y",
+          "N",
+          "N",
+          "N",
+          "Y"
+        ],
+        [
+          "",
+          3,
+          "Y",
+          "N",
+          "N",
+          "Y",
+          "Y"
+        ],
+        [
+          "",
+          "provide on-demand coverage with minimum number <br> of UmBSs deployment",
+          "Y",
+          "Y",
+          "N",
+          "Y",
+          "Y"
+        ],
+        [
+          "",
+          "Increase the coverage area with minimum number of <br> UmBSs using spiral algorithm",
+          "Y",
+          "Y",
+          "N",
+          "N",
+          "Y"
+        ],
+        [
+          "This <br> paper",
+          "Increase the number of MUs serve with minimum <br> number of UmBSs while ensuring required QoS",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 7
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 Summary of symbol used and their implications",
+      "headers": [
+        "Symbol",
+        "Implications"
+      ],
+      "rows": [
+        [
+          "",
+          "Set of ground MUs"
+        ],
+        [
+          "$\\mathcal{N}$",
+          "Set of initial deployment locations of UmBSs"
+        ],
+        [
+          "$x_{j}, y_{j}$",
+          "Position coordinates of $j$ th MU"
+        ],
+        [
+          "$f_{c}$",
+          "Carrier frequency"
+        ],
+        [
+          "$\\mathcal{L}_{i j}$",
+          "Pathloss between the $i$ th UmBS and $j$ th MU"
+        ],
+        [
+          "$\\theta_{i j}$",
+          "Elevation angle between $i$ th UmBS and $j$ th MU"
+        ],
+        [
+          "$\\mathfrak{T}$",
+          "Signal to Interference plus Noise Ratio"
+        ],
+        [
+          "$\\mathcal{P}_{t, i}$",
+          "Transmit power of $i$ th UmBS"
+        ],
+        [
+          "$r_{i j}$",
+          "Separation between $i$ th UmBS and $j$ th MU"
+        ],
+        [
+          "$\\mathcal{B}_{i}$",
+          "Bandwidth of the $i$ th UmBS"
+        ],
+        [
+          "$\\Re_{i}$",
+          "Attainable data rate from the ith UmBS"
+        ],
+        [
+          "$\\mathrm{x}_{\\mathrm{i}}, \\mathrm{y}_{\\mathrm{i}}$",
+          "Ground projection of $i$ th UmBS"
+        ],
+        [
+          "$\\mathrm{h}_{\\mathrm{i}}$",
+          "Height of $i$ th UmBS"
+        ],
+        [
+          "$\\mu, v$",
+          "Environment dependent parameters"
+        ],
+        [
+          "$\\rho_{\\text {LoS }}, \\rho_{\\text {NLoS }}$",
+          "Probability of LoS and NLoS connectivity"
+        ],
+        [
+          "$\\Delta_{i j}$",
+          "Horizontal distance between $i$ th UmBS and $j$ th MU"
+        ],
+        [
+          "$\\alpha_{\\text {LoS }}, \\alpha_{\\text {NLoS }}$",
+          "Attenuation factors of LoS and NLoS components"
+        ],
+        [
+          "$\\phi$",
+          "Minimum number of MUs to be served by single UmBS"
+        ],
+        [
+          "$\\psi$",
+          "Maximum number of MUs can be served by single UmBS"
+        ],
+        [
+          "$\\mathcal{M}_{i}$",
+          "UmBS deployment status indicator"
+        ],
+        [
+          "$\\mathcal{T}_{i j}$",
+          "indicator for MU and UmBS association"
+        ],
+        [
+          "$\\zeta$",
+          "Maximum percentage of MUs to be unserved"
+        ],
+        [
+          "$R_{i}$",
+          "Data rate required by single MU"
+        ],
+        [
+          "$P c$",
+          "Crossover Probability"
+        ],
+        [
+          "$P m$",
+          "Mutation Probability"
+        ],
+        [
+          "$N p$",
+          "Random Permutation"
+        ],
+        [
+          "$\\mathcal{H}_{i j}$",
+          "Channel power gain between the $i$ th UmBS and $j$ th MU"
+        ],
+        [
+          "$\\Omega$",
+          "Per unit distance channel power gain"
+        ],
+        [
+          "$\\gamma$",
+          "Path loss exponent"
+        ],
+        [
+          "$\\mathrm{C}_{\\text {max }}$",
+          "Maximum coverage radius"
+        ]
+      ],
+      "row_count": 30,
+      "column_count": 2
+    },
+    {
+      "table_number": "5",
+      "table_title": "Table 5 Simulation parameters",
+      "headers": [
+        "Parameter name",
+        "Parameter value"
+      ],
+      "rows": [
+        [
+          "Service area",
+          "$1000 * 1000 \\mathrm{~m}^{2}$"
+        ],
+        [
+          "Per unit distance channel power gain $(\\Omega)$",
+          111
+        ],
+        [
+          "Attainable data rate from the ith UmBS $\\left(\\left(\\Re_{i}\\right)\\right.$",
+          100
+        ],
+        [
+          "Bandwidth of the ith UmBSs $\\left(\\mathcal{B}_{i}\\right)$",
+          "$25,50,75 \\mathrm{MHz}$"
+        ],
+        [
+          "Path loss exponent $(\\gamma)$",
+          26
+        ],
+        [
+          "SINR threshold $\\left(\\mathfrak{T}_{\\min }\\right)$",
+          12
+        ],
+        [
+          "Background noise power $\\left(\\sigma^{2}\\right)$",
+          -30
+        ],
+        [
+          "Transmit power of the ith UmBS $\\left(\\mathcal{P}_{r, i}\\right)$",
+          "$30 \\mathrm{dBW}[1]$"
+        ],
+        [
+          "Total Number of MUs",
+          "$40-200$"
+        ],
+        [
+          "Data rate required by single MU $R_{i}$",
+          5
+        ],
+        [
+          "Height of UmBSs $\\left(h_{i}\\right)$",
+          "$40-200 \\mathrm{~m}$"
+        ],
+        [
+          "Distance measure for proximity",
+          "Euclidian distance"
+        ]
+      ],
+      "row_count": 12,
+      "column_count": 2
+    }
+  ]
+}

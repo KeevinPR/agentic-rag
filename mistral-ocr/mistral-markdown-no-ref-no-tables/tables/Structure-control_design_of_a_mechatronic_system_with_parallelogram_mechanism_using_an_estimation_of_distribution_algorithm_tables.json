@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2016/Structure-control design of a mechatronic system with parallelogram mechanism using an estimation of distribution algorithm.md",
+    "filename": "Structure-control design of a mechatronic system with parallelogram mechanism using an estimation of distribution algorithm.md",
+    "title": "Structure-control design of a mechatronic system with parallelogram mechanism using an estimation of distribution algorithm",
+    "year": "2016"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Kinematic and dynamic parameters of the parallelogram linkage system.",
+      "headers": [
+        "$m_{1}=2[\\mathrm{~kg}]$",
+        "$m_{2}=0.5[\\mathrm{~kg}]$",
+        "$m_{3}=2[\\mathrm{~kg}]$",
+        "$m_{4}=2[\\mathrm{~kg}]$"
+      ],
+      "rows": [
+        [
+          "$L_{1}=0.3[\\mathrm{~m}]$",
+          "$L_{2}=0.15[\\mathrm{~m}]$",
+          "$L_{3}=0.3[\\mathrm{~m}]$",
+          "$L_{4}=0.4[\\mathrm{~m}]$"
+        ],
+        [
+          "$l_{c 1}=0.15[\\mathrm{~m}]$",
+          "$l_{c 1}=0.075[\\mathrm{~m}]$",
+          "$l_{c 3}=0.15[\\mathrm{~m}]$",
+          "$l_{c 4}=0.075[\\mathrm{~m}]$"
+        ],
+        [
+          "$I_{1}=0.0226\\left[\\mathrm{~kg} \\cdot \\mathrm{~m}^{2}\\right]$",
+          "$I_{2}=0.00641\\left[\\mathrm{~kg} \\cdot \\mathrm{~m}^{2}\\right]$",
+          "$I_{3}=0.0226\\left[\\mathrm{~kg} \\cdot \\mathrm{~m}^{2}\\right]$",
+          "$I_{4}=0.0226\\left[\\mathrm{~kg} \\cdot \\mathrm{~m}^{2}\\right]$"
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Paths considered for testing the proposal.",
+      "headers": [
+        "$X_{1}(t)=\\delta x+R \\cos (\\omega t)$,",
+        "Circle path"
+      ],
+      "rows": [
+        [
+          "$Y_{1}(t)=\\delta y+R \\sin (\\omega t)$,",
+          "$\\delta x=0.4, \\delta y=0.3, \\omega=1, R=0.05$"
+        ],
+        [
+          "$X_{2}(t)=\\delta x+a \\cos (3 \\omega t) \\cos (\\omega t)$,",
+          "Three petal flower"
+        ],
+        [
+          "$Y_{2}(t)=\\delta y+a \\cos (3 \\omega t) \\sin (\\omega t)$,",
+          "$\\delta x=0.4, \\delta y=0.3, \\omega=1, a=0.05$"
+        ],
+        [
+          "$X_{3}(t)=\\delta x+(b-a \\cos (\\omega t)) \\cos (\\omega t)$,",
+          "Snail Pascal"
+        ],
+        [
+          "$Y_{3}(t)=\\delta y+(b-a \\cos (\\omega t)) \\sin (\\omega t)$,",
+          "$\\delta x=0.47, \\delta y=0.3, a=0.06, b=0.02$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "3",
+      "table_title": "Initial and final designs for a typical run, for each of the paths. The values are taken as the best solution known in the first generation and the best solution at the end of the optimization process.",
+      "headers": [
+        "Path",
+        "$L_{1}$",
+        "$L_{2}$",
+        "$L_{4}$",
+        "$k_{1}^{p}$",
+        "$k_{2}^{p}$",
+        "$k_{1}^{f}$",
+        "$k_{2}^{f}$",
+        "$k_{1}^{D}$",
+        "$k_{2}^{D}$",
+        "$f_{\\text {obj }}$"
+      ],
+      "rows": [
+        [
+          "Circle Initial",
+          0.9,
+          0.0888,
+          0.614,
+          1177.7,
+          1912.3,
+          1995.5,
+          1986.4,
+          1215.4,
+          741.89,
+          38.798
+        ],
+        [
+          "Circle Final",
+          0.583,
+          0.148,
+          0.496,
+          2000,
+          150.15,
+          2000,
+          2000,
+          41.972,
+          11.646,
+          48.842
+        ],
+        [
+          "Three Petal Ini.",
+          0.202,
+          0.199,
+          0.37,
+          1208.6,
+          203.94,
+          1969.2,
+          1834.4,
+          28.576,
+          44.614,
+          48.975
+        ],
+        [
+          "Three Petal Final",
+          0.286,
+          0.182,
+          0.401,
+          2000,
+          788.27,
+          2000,
+          1982.6,
+          32.432,
+          64.44,
+          49.397
+        ],
+        [
+          "Snail Pascal Ini.",
+          0.568,
+          0.159,
+          0.451,
+          373.21,
+          1768.8,
+          919.46,
+          559.11,
+          420.98,
+          662.06,
+          45.509
+        ],
+        [
+          "Snail Pascal Final",
+          0.638,
+          0.155,
+          0.528,
+          2000,
+          1810.1,
+          2000,
+          1951,
+          52.778,
+          476.67,
+          49.226
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 11
+    }
+  ]
+}

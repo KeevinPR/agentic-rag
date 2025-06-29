@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/Mutation in Compressed Encoding in Estimation of Distribution Algorithm.md",
+    "filename": "Mutation in Compressed Encoding in Estimation of Distribution Algorithm.md",
+    "title": "Mutation in Compressed Encoding in Estimation of Distribution Algorithm",
+    "year": "2012"
+  },
+  "references": {
+    "header": "## REFERENCES",
+    "content": "[1] D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison- Wesley, 1989.\n[2] T.K. Paul and H. Bua, \"Linear and Combinatorial Optimizations by Estimation of Distribution Algorithms,\" Proceedings of 9th MPS Symposium on Evolutionary Computation, IPSJ, 2002.\n[3] O. Watchanupaporn, N. Soonthornphisaj, and W. Suwannik, \"A Performance Analysis of Compressed Compact Genetic Algorithm,\" ECTI Transactions on Computer and Information Technology, vol. 2, no. 1, 2006, pp. 16-24.\n[4] N. Kanasol, W. Suwannik, and P. Chongstivatana, \"Solving One-Million-Bit Problems Using LZWGA,\" Proceedings of International Symposium on Communications and Information Technologies (ISCIT), 2006, pp. 32-36.\n[5] H. Handa, \"Estimation of Distribution Algorithms with Mutation,\" Evolutionary Computation in Combinatorial Optimization, 2005.\n[6] Q. Zhang, J. Sun, and E. Tsang, \"Combinations of Estimation of Distribution Algorithms and Other Techniques,\" International Journal of Automation and Computing, 2007, pp. 273-280.\n[7] G.R. Harik, F.G. Lobo, and D.E. Goldberg, \"The Compact Genetic Algorithm,\" IEEE Transaction on Evolutionary Computation, vol. 3, no. 4, 1999, pp. 287-297.\n[8] K. Sastry, D.E. Goldberg, and X. Llorá, \"Towards billion bit optimization via parallel estimation of distribution algorithm,\" Genetic and Evolutionary Computation Conference, 2007, pp. 577-584.\n[9] T.A. Welch, \"A Technique for High-Performance Data Compression,\" IEEE Computer, vol. 17, no. 6, 1984, pp. 8-19.\n[10] J.S. De Bonet, C.L. Isbell, and P. Viola, \"MIMIC: Finding Optima by Estimating Probability Densities,\" Advances in Neural Information Processing Systems, vol. 9, MIT Press, Cambridge, 1997, pp. 424-430.",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "D.E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison- Wesley, 1989."
+      },
+      {
+        "ref_id": "2",
+        "text": "T.K. Paul and H. Bua, \"Linear and Combinatorial Optimizations by Estimation of Distribution Algorithms,\" Proceedings of 9th MPS Symposium on Evolutionary Computation, IPSJ, 2002."
+      },
+      {
+        "ref_id": "3",
+        "text": "O. Watchanupaporn, N. Soonthornphisaj, and W. Suwannik, \"A Performance Analysis of Compressed Compact Genetic Algorithm,\" ECTI Transactions on Computer and Information Technology, vol. 2, no. 1, 2006, pp. 16-24."
+      },
+      {
+        "ref_id": "4",
+        "text": "N. Kanasol, W. Suwannik, and P. Chongstivatana, \"Solving One-Million-Bit Problems Using LZWGA,\" Proceedings of International Symposium on Communications and Information Technologies (ISCIT), 2006, pp. 32-36."
+      },
+      {
+        "ref_id": "5",
+        "text": "H. Handa, \"Estimation of Distribution Algorithms with Mutation,\" Evolutionary Computation in Combinatorial Optimization, 2005."
+      },
+      {
+        "ref_id": "6",
+        "text": "Q. Zhang, J. Sun, and E. Tsang, \"Combinations of Estimation of Distribution Algorithms and Other Techniques,\" International Journal of Automation and Computing, 2007, pp. 273-280."
+      },
+      {
+        "ref_id": "7",
+        "text": "G.R. Harik, F.G. Lobo, and D.E. Goldberg, \"The Compact Genetic Algorithm,\" IEEE Transaction on Evolutionary Computation, vol. 3, no. 4, 1999, pp. 287-297."
+      },
+      {
+        "ref_id": "8",
+        "text": "K. Sastry, D.E. Goldberg, and X. Llorá, \"Towards billion bit optimization via parallel estimation of distribution algorithm,\" Genetic and Evolutionary Computation Conference, 2007, pp. 577-584."
+      },
+      {
+        "ref_id": "9",
+        "text": "T.A. Welch, \"A Technique for High-Performance Data Compression,\" IEEE Computer, vol. 17, no. 6, 1984, pp. 8-19."
+      },
+      {
+        "ref_id": "10",
+        "text": "J.S. De Bonet, C.L. Isbell, and P. Viola, \"MIMIC: Finding Optima by Estimating Probability Densities,\" Advances in Neural Information Processing Systems, vol. 9, MIT Press, Cambridge, 1997, pp. 424-430."
+      }
+    ],
+    "reference_count": 10,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": "I",
+      "table_title": "EXPERIMENTAL PARAMETERS",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Population size",
+          1000
+        ],
+        [
+          "Problem size",
+          800
+        ],
+        [
+          "LZW chromosome length",
+          800
+        ],
+        [
+          "Maximum evaluations",
+          50000
+        ],
+        [
+          "Mutation rate",
+          "$0.00,0.05,0.10,0.15$"
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 2
+    },
+    {
+      "table_number": "II",
+      "table_title": "AVERAGE BEST FITNESS",
+      "headers": [
+        "Problem",
+        "Algorithm",
+        "Mutation Rate",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          0.0,
+          0.05,
+          0.1,
+          0.15
+        ],
+        [
+          "Trap",
+          "cGA",
+          575,
+          553,
+          526,
+          498
+        ],
+        [
+          "",
+          "LZWcGA",
+          768,
+          795,
+          791,
+          787
+        ],
+        [
+          "4-Peak",
+          "cGA",
+          50,
+          31,
+          26,
+          23
+        ],
+        [
+          "",
+          "LZWcGA",
+          1387,
+          1449,
+          1420,
+          1395
+        ],
+        [
+          "6-Peak",
+          "cGA",
+          47,
+          28,
+          25,
+          22
+        ],
+        [
+          "",
+          "LZWcGA",
+          1463,
+          1498,
+          1488,
+          1488
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 6
+    },
+    {
+      "table_number": "III",
+      "table_title": "ANALYSIS RESULTS",
+      "headers": [
+        "Ratio",
+        "cGA",
+        "LZWcGA"
+      ],
+      "rows": [
+        [
+          "Construction",
+          0.048,
+          0.787
+        ],
+        [
+          "Destruction",
+          0.226,
+          0.188
+        ],
+        [
+          2,
+          0.148,
+          1.228
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

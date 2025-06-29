@@ -1,0 +1,787 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2012/A restarted estimation of distribution algorithm for solving sudoku puzzles.md",
+    "filename": "A restarted estimation of distribution algorithm for solving sudoku puzzles.md",
+    "title": "A restarted estimation of distribution algorithm for solving sudoku puzzles",
+    "year": "2012"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "",
+        "8",
+        "6",
+        "7",
+        "",
+        "4",
+        "",
+        "2"
+      ],
+      "rows": [
+        [
+          4,
+          "",
+          2,
+          3,
+          "",
+          "",
+          "",
+          9,
+          ""
+        ],
+        [
+          3,
+          7,
+          "",
+          "",
+          2,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          4,
+          "",
+          "",
+          "",
+          5,
+          ""
+        ],
+        [
+          8,
+          9,
+          "",
+          2,
+          5,
+          1,
+          "",
+          6,
+          7
+        ],
+        [
+          "",
+          1,
+          "",
+          "",
+          "",
+          3,
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          9,
+          "",
+          "",
+          7,
+          3
+        ],
+        [
+          "",
+          3,
+          "",
+          "",
+          "",
+          5,
+          2,
+          "",
+          1
+        ],
+        [
+          7,
+          "",
+          5,
+          "",
+          3,
+          2,
+          9,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "permutations",
+        "",
+        "pre-computation",
+        "",
+        "both optimizations",
+        ""
+      ],
+      "rows": [
+        [
+          "$\\alpha$",
+          "success",
+          "rounds",
+          "success",
+          "rounds",
+          "success",
+          "rounds"
+        ],
+        [
+          0.99,
+          98,
+          574,
+          100,
+          522,
+          100,
+          188
+        ],
+        [
+          0.9,
+          82,
+          67,
+          96,
+          60,
+          100,
+          25
+        ],
+        [
+          0.7,
+          42,
+          25,
+          71,
+          22,
+          100,
+          9
+        ],
+        [
+          0.5,
+          11,
+          17,
+          35,
+          14,
+          100,
+          6
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "2",
+        "4",
+        "",
+        "",
+        "7",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          6,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          3,
+          6,
+          8,
+          "",
+          4,
+          1,
+          5
+        ],
+        [
+          4,
+          3,
+          1,
+          "",
+          "",
+          5,
+          "",
+          "",
+          ""
+        ],
+        [
+          5,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          3,
+          2
+        ],
+        [
+          7,
+          9,
+          "",
+          "",
+          "",
+          "",
+          "",
+          6,
+          ""
+        ],
+        [
+          2,
+          "",
+          9,
+          7,
+          1,
+          "",
+          8,
+          "",
+          ""
+        ],
+        [
+          "",
+          4,
+          "",
+          "",
+          9,
+          3,
+          "",
+          "",
+          ""
+        ],
+        [
+          3,
+          1,
+          "",
+          "",
+          "",
+          4,
+          7,
+          5,
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "$\\alpha$",
+        "success",
+        "iterations"
+      ],
+      "rows": [
+        [
+          0.99,
+          99,
+          277
+        ],
+        [
+          0.9,
+          81,
+          37
+        ],
+        [
+          0.7,
+          61,
+          14
+        ],
+        [
+          0.5,
+          43,
+          8
+        ],
+        [
+          0.3,
+          26,
+          7
+        ],
+        [
+          0.1,
+          12,
+          7
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "1",
+        "",
+        "7",
+        "",
+        "8",
+        "9",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          3,
+          8,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          9,
+          "",
+          "",
+          5,
+          6,
+          "",
+          ""
+        ],
+        [
+          "",
+          9,
+          "",
+          "",
+          7,
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          3,
+          1,
+          "",
+          "",
+          "",
+          "",
+          2,
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          4,
+          5,
+          "",
+          "",
+          8,
+          ""
+        ],
+        [
+          "",
+          5,
+          "",
+          "",
+          6,
+          2,
+          4,
+          9,
+          ""
+        ],
+        [
+          6,
+          7,
+          3,
+          "",
+          4,
+          9,
+          "",
+          5,
+          1
+        ],
+        [
+          "",
+          4,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          3
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "A",
+        "B",
+        ""
+      ],
+      "rows": [
+        [
+          "A",
+          "A",
+          "",
+          "A",
+          "A",
+          "A",
+          "",
+          "",
+          ""
+        ],
+        [
+          "B",
+          "A",
+          "A",
+          "A",
+          "B",
+          "A",
+          "A",
+          "",
+          "A"
+        ],
+        [
+          "A",
+          "A",
+          "",
+          "A",
+          "A",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "",
+          "A",
+          ""
+        ],
+        [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "",
+          "",
+          "A",
+          "A"
+        ],
+        [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A"
+        ],
+        [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A"
+        ],
+        [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A"
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": "3",
+      "table_title": "Table 3 describes this behavior for the previous hard puzzle. It gives the number of successes among 1000 attempts of resolution and the average total execution time in seconds. Four methods are compared: without restart, when we restart with one fixed zone at a time out of 3,9 or 27 zones which are, respectively, the $3 \\times 3$ blocks on the first diagonal, all the $3 \\times 3$ blocks and all the columns, rows and $3 \\times 3$ blocks. The estimation of mean time of success (ETS) of the algorithm is also given.",
+      "headers": [
+        "method",
+        "number of <br> successes",
+        "time",
+        "ETS"
+      ],
+      "rows": [
+        [
+          "no partial restart",
+          89,
+          0.198,
+          2.225
+        ],
+        [
+          13,
+          474,
+          0.614,
+          1.295
+        ],
+        [
+          19,
+          619,
+          1.113,
+          1.798
+        ],
+        [
+          127,
+          906,
+          1.694,
+          1.869
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "",
+        "27 zones",
+        "",
+        "9 zones",
+        "",
+        "3 zones",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          "success",
+          "time",
+          "success",
+          "time",
+          "success",
+          "time"
+        ],
+        [
+          "very easy",
+          1000,
+          0.046,
+          1000,
+          0.049,
+          1000,
+          0.047
+        ],
+        [
+          "easy",
+          1000,
+          0.113,
+          994,
+          0.129,
+          982,
+          0.104
+        ],
+        [
+          "medium",
+          959,
+          1.015,
+          884,
+          0.718,
+          659,
+          0.502
+        ],
+        [
+          "hard",
+          811,
+          2.394,
+          563,
+          1.451,
+          365,
+          0.726
+        ],
+        [
+          "fiendish",
+          605,
+          3.458,
+          336,
+          1.831,
+          221,
+          0.824
+        ]
+      ],
+      "row_count": 6,
+      "column_count": 7
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "1",
+        "",
+        "",
+        "",
+        "",
+        "7",
+        "",
+        "9",
+        ""
+      ],
+      "rows": [
+        [
+          "",
+          3,
+          "",
+          "",
+          2,
+          "",
+          "",
+          "",
+          8
+        ],
+        [
+          "",
+          "",
+          9,
+          6,
+          "",
+          "",
+          5,
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          5,
+          3,
+          "",
+          "",
+          9,
+          "",
+          ""
+        ],
+        [
+          "",
+          1,
+          "",
+          "",
+          8,
+          "",
+          "",
+          "",
+          2
+        ],
+        [
+          6,
+          "",
+          "",
+          "",
+          "",
+          4,
+          "",
+          "",
+          ""
+        ],
+        [
+          3,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          1,
+          ""
+        ],
+        [
+          "",
+          4,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          7
+        ],
+        [
+          "",
+          "",
+          7,
+          "",
+          "",
+          "",
+          3,
+          "",
+          ""
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 9
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "number of <br> tested zones",
+        "number of <br> successes",
+        "CPU time"
+      ],
+      "rows": [
+        [
+          3,
+          0,
+          1.251
+        ],
+        [
+          9,
+          1,
+          2.857
+        ],
+        [
+          27,
+          9,
+          7.045
+        ]
+      ],
+      "row_count": 3,
+      "column_count": 3
+    }
+  ]
+}

@@ -1,0 +1,853 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2011/Optimal row and column ordering to improve table interpretation using estimation of distribution algorithms.md",
+    "filename": "Optimal row and column ordering to improve table interpretation using estimation of distribution algorithms.md",
+    "title": "Optimal row and column ordering to improve table interpretation using estimation of distribution algorithms",
+    "year": "2011"
+  },
+  "references": {
+    "header": "## References",
+    "content": "Banfield, R., Raferty, A.: Model-based Gaussian and non-Gaussian clustering. Biometrics 49, 803-822 (1992)\n\nBengoetxea, E., Larrañaga, P., Bloch, I., Perchant, A., Boeres, C.: Learning and simulation of Bayesian networks applied to inexact graph matching. Pattern Recognit. 35(12), 2867-2880 (2002)\nBertin, J.: Graphics and Graphic Information Processing. Walter de Gruyter, Berlin (1981)\nBielza, C., Fernández, J., Larrañaga, P., Bengoetxea, E.: Multidimensional statistical analysis of the parameterization of a genetic algorithm for the optimal ordering of tables. Expert Syst. Appl. 48(4)\nCabrera, J., McDougall, A.: Statistical Consulting. Springer, New York (2002)\nCesar, J., Bengoetxea, E., Bloch, I., Larrañaga, P.: Inexact graph matching for model-based recognition: Evaluation and comparison of optimization algorithms. Pattern Recognit. 38(11), 2099-2113 (2005)\nConsortium, E.: Elvira: An environment for creating and using probabilistic graphical models. In: Proceedings of the 1st European Workshop on Probabilistic Graphical Models, pp. 222-230. Cuenca, Spain (2002)\nde Bonet, J., Isbell, C., Viola, P.: MIMIC: Finding optima by estimating probability densities. In: Mozer, M.J.M., Petsche, T. (eds.), Advances in Neural Information Processing Systems, vol. 9, pp. 424-431. Cambridge, MA (1997)\n\nEtxeberria, R., Larrañaga, P.: Global optimization with Bayesian networks. In: Special Session on Distributions and Evolutionary Optimization, pp. 332-339. II Symposium on Artificial Intelligence, CIMAF99, La Habana, Cuba (1999)\nFriedman, J., Rafsky, L.: Multivariate generalizations of the Wald-Wolfowitz and Smirnov two-sample tests. Ann. Stat. 7, 679-717 (1979)\nFriendly, M.: Corrgramms: Exploratory displays for correlation matrices. Am. Stat. 56(4), 316-324 (2002)\nGarcia, C., Perez, D., Campos, V., Marti, R.: Variable neighborhood search for the linear ordering problem. Comput. Oper. Res. 33(12), 3549-3565 (2006)\nGómez, M., Bielza, C.: Node deletion sequences in influence diagrams using genetic algorithms. Stat. Comput. 14, 181-198 (2004)\nHenrion, M.: Propagating uncertainty in Bayesian networks by probabilistic logic sampling. In: Lemmer, J., Kanal, L. (eds.) Uncertainty in Artificial Intelligence. vol. 2, pp. 149-163. North-Holland, Amsterdam (1988)\nInza, I., Larrañaga, P., Etxeberria, R., Sierra, B.: Feature subset selection by Bayesian networks based optimization. Artif. Intell. 123(1-3), 157-184 (2000)\nKohavi, R., John, G.: Wrappers for feature subset selection. Artif. Intell. 97(1-2), 273-324 (1997)\nKoschat, M.: A case for simple tables. Am. Stat. 59(1), 31-40 (2005)\nLangley, P., Sage, S.: Induction of selective Bayesian classifiers. In: Proceedings of the 10th Conference on Uncertainty in Artificial Intelligence, pp. 399-406. Seattle, WA (1994)\nLarrañaga, P., Etxeberria, R., Lozano, J.A., Peña, J.M.: Optimization in continuous domains by learning and simulation of Gaussian networks. In: Proceedings of the Workshop in Optimization by Building and Using Probabilistic Models, pp. 201-204. A Workshop within the 2000 Genetic and Evolutionary Computation Conference, GECCO 2000, Las Vegas, Nevada, USA (2000)\nLarrañaga, P., Kuijpers, C.M.H., Murga, R.H., Inza, I., Dizdarevich, S.: Evolutionary algorithms for the travelling salesman problem: A review of representations and operators. Artif. Intell. Rev. 13, 120170 (1999)\nLarrañaga, P., Kuijpers, C.M.H., Murga, R.H., Yurramendi, Y.: Searching for the best ordering in the structure learning of Bayesian networks. IEEE Trans. Syst. Man Cybern. 41(4), 487-493 (1996)\nLarrañaga, P., Lozano, J.A.: Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic, Amsterdam (2001)\nLiu, K., Feng, J., Young, S.: PowerMV: A software environment for molecular viewing, descriptor generation, data analysis and hit evaluation J. Chem. Inf. Model. 45(2), 515-522 (2005)\nMiller, G.: The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychol. Rev. 62, 81-97 (1956)\nMinsky, M.: Steps toward artificial intelligence. Trans. Inst. Radio Eng. 49, 8-30 (1961)\nMühlenbein, H.: The equation for response to selection and its use for prediction. Evol. Comput. 5(3), 303-346 (1998)\nNiermann, S.: Optimizing the ordering of tables with evolutionary computation. Am. Stat. 59(1), 41-46 (2005)\n\nNiermann, S.: Letters to the editor. Am. Stat. 59, 354 (2005)\nPearl, J.: Probabilistic Reasoning in Intelligent Systems. Morgan Kaufmann, Palo Alto (1988)\nSchwarz, G.: Estimating the dimension of a model. Ann. Stat. 7(2), 461-464 (1978)\nShachter, R., Kenley, C.: Gaussian influence diagrams. Manag. Sci. 35(5), 527-550 (1989)\nWalker, H., Durost, W.: Statistical Tables: Their Structure and Use. Bureau of Publications, Teachers College, Columbia University, New York (1936)",
+    "references": [
+      {
+        "ref_id": "1",
+        "text": "Banfield, R., Raferty, A.: Model-based Gaussian and non-Gaussian clustering. Biometrics 49, 803-822 (1992)"
+      },
+      {
+        "ref_id": "2",
+        "text": "Bengoetxea, E., Larrañaga, P., Bloch, I., Perchant, A., Boeres, C.: Learning and simulation of Bayesian networks applied to inexact graph matching. Pattern Recognit. 35(12), 2867-2880 (2002)"
+      },
+      {
+        "ref_id": "3",
+        "text": "Bertin, J.: Graphics and Graphic Information Processing. Walter de Gruyter, Berlin (1981)"
+      },
+      {
+        "ref_id": "4",
+        "text": "Bielza, C., Fernández, J., Larrañaga, P., Bengoetxea, E.: Multidimensional statistical analysis of the parameterization of a genetic algorithm for the optimal ordering of tables. Expert Syst. Appl. 48(4)"
+      },
+      {
+        "ref_id": "5",
+        "text": "Cabrera, J., McDougall, A.: Statistical Consulting. Springer, New York (2002)"
+      },
+      {
+        "ref_id": "6",
+        "text": "Cesar, J., Bengoetxea, E., Bloch, I., Larrañaga, P.: Inexact graph matching for model-based recognition: Evaluation and comparison of optimization algorithms. Pattern Recognit. 38(11), 2099-2113 (2005)"
+      },
+      {
+        "ref_id": "7",
+        "text": "Consortium, E.: Elvira: An environment for creating and using probabilistic graphical models. In: Proceedings of the 1st European Workshop on Probabilistic Graphical Models, pp. 222-230. Cuenca, Spain (2002)"
+      },
+      {
+        "ref_id": "8",
+        "text": "Etxeberria, R., Larrañaga, P.: Global optimization with Bayesian networks. In: Special Session on Distributions and Evolutionary Optimization, pp. 332-339. II Symposium on Artificial Intelligence, CIMAF99, La Habana, Cuba (1999)"
+      },
+      {
+        "ref_id": "9",
+        "text": "Friedman, J., Rafsky, L.: Multivariate generalizations of the Wald-Wolfowitz and Smirnov two-sample tests. Ann. Stat. 7, 679-717 (1979)"
+      },
+      {
+        "ref_id": "10",
+        "text": "Friendly, M.: Corrgramms: Exploratory displays for correlation matrices. Am. Stat. 56(4), 316-324 (2002)"
+      },
+      {
+        "ref_id": "11",
+        "text": "Garcia, C., Perez, D., Campos, V., Marti, R.: Variable neighborhood search for the linear ordering problem. Comput. Oper. Res. 33(12), 3549-3565 (2006)"
+      },
+      {
+        "ref_id": "12",
+        "text": "Gómez, M., Bielza, C.: Node deletion sequences in influence diagrams using genetic algorithms. Stat. Comput. 14, 181-198 (2004)"
+      },
+      {
+        "ref_id": "13",
+        "text": "Henrion, M.: Propagating uncertainty in Bayesian networks by probabilistic logic sampling. In: Lemmer, J., Kanal, L. (eds.) Uncertainty in Artificial Intelligence. vol. 2, pp. 149-163. North-Holland, Amsterdam (1988)"
+      },
+      {
+        "ref_id": "14",
+        "text": "Inza, I., Larrañaga, P., Etxeberria, R., Sierra, B.: Feature subset selection by Bayesian networks based optimization. Artif. Intell. 123(1-3), 157-184 (2000)"
+      },
+      {
+        "ref_id": "15",
+        "text": "Kohavi, R., John, G.: Wrappers for feature subset selection. Artif. Intell. 97(1-2), 273-324 (1997)"
+      },
+      {
+        "ref_id": "16",
+        "text": "Koschat, M.: A case for simple tables. Am. Stat. 59(1), 31-40 (2005)"
+      },
+      {
+        "ref_id": "17",
+        "text": "Langley, P., Sage, S.: Induction of selective Bayesian classifiers. In: Proceedings of the 10th Conference on Uncertainty in Artificial Intelligence, pp. 399-406. Seattle, WA (1994)"
+      },
+      {
+        "ref_id": "18",
+        "text": "Larrañaga, P., Etxeberria, R., Lozano, J.A., Peña, J.M.: Optimization in continuous domains by learning and simulation of Gaussian networks. In: Proceedings of the Workshop in Optimization by Building and Using Probabilistic Models, pp. 201-204. A Workshop within the 2000 Genetic and Evolutionary Computation Conference, GECCO 2000, Las Vegas, Nevada, USA (2000)"
+      },
+      {
+        "ref_id": "19",
+        "text": "Larrañaga, P., Kuijpers, C.M.H., Murga, R.H., Inza, I., Dizdarevich, S.: Evolutionary algorithms for the travelling salesman problem: A review of representations and operators. Artif. Intell. Rev. 13, 120170 (1999)"
+      },
+      {
+        "ref_id": "20",
+        "text": "Larrañaga, P., Kuijpers, C.M.H., Murga, R.H., Yurramendi, Y.: Searching for the best ordering in the structure learning of Bayesian networks. IEEE Trans. Syst. Man Cybern. 41(4), 487-493 (1996)"
+      },
+      {
+        "ref_id": "21",
+        "text": "Larrañaga, P., Lozano, J.A.: Estimation of Distribution Algorithms. A New Tool for Evolutionary Computation. Kluwer Academic, Amsterdam (2001)"
+      },
+      {
+        "ref_id": "22",
+        "text": "Liu, K., Feng, J., Young, S.: PowerMV: A software environment for molecular viewing, descriptor generation, data analysis and hit evaluation J. Chem. Inf. Model. 45(2), 515-522 (2005)"
+      },
+      {
+        "ref_id": "23",
+        "text": "Miller, G.: The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychol. Rev. 62, 81-97 (1956)"
+      },
+      {
+        "ref_id": "24",
+        "text": "Minsky, M.: Steps toward artificial intelligence. Trans. Inst. Radio Eng. 49, 8-30 (1961)"
+      },
+      {
+        "ref_id": "25",
+        "text": "Mühlenbein, H.: The equation for response to selection and its use for prediction. Evol. Comput. 5(3), 303-346 (1998)"
+      },
+      {
+        "ref_id": "26",
+        "text": "Niermann, S.: Optimizing the ordering of tables with evolutionary computation. Am. Stat. 59(1), 41-46 (2005)"
+      },
+      {
+        "ref_id": "27",
+        "text": "Niermann, S.: Letters to the editor. Am. Stat. 59, 354 (2005)"
+      },
+      {
+        "ref_id": "28",
+        "text": "Pearl, J.: Probabilistic Reasoning in Intelligent Systems. Morgan Kaufmann, Palo Alto (1988)"
+      },
+      {
+        "ref_id": "29",
+        "text": "Schwarz, G.: Estimating the dimension of a model. Ann. Stat. 7(2), 461-464 (1978)"
+      },
+      {
+        "ref_id": "30",
+        "text": "Shachter, R., Kenley, C.: Gaussian influence diagrams. Manag. Sci. 35(5), 527-550 (1989)"
+      },
+      {
+        "ref_id": "31",
+        "text": "Walker, H., Durost, W.: Statistical Tables: Their Structure and Use. Bureau of Publications, Teachers College, Columbia University, New York (1936)"
+      }
+    ],
+    "reference_count": 31,
+    "pattern_matched": "(?:^|\\n)#+\\s*References?\\s*\\n"
+  },
+  "tables": [
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "(a) Bertin table",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Characteristics",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ],
+        [
+          "High School",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Agricult. Coop.",
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          "Railway Station",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "One-Room-School",
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          "Veterinary",
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          "No Doctor",
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          "No Water Supply",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          "Police Station",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "Land Reallocation",
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "row_count": 10,
+      "column_count": 17
+    },
+    {
+      "table_number": null,
+      "table_title": null,
+      "headers": [
+        "ID",
+        "BEDS",
+        "RBEDS",
+        "OUTV",
+        "ADM",
+        "SIR",
+        "H95",
+        "K95",
+        "TR",
+        "H96",
+        "K96",
+        "FEM"
+      ],
+      "rows": [
+        [
+          1,
+          220,
+          26,
+          0,
+          5954,
+          9500,
+          793,
+          617,
+          0,
+          768,
+          590,
+          146
+        ],
+        [
+          2,
+          493,
+          0,
+          44542,
+          12345,
+          8910,
+          80,
+          47,
+          0,
+          65,
+          49,
+          52
+        ],
+        [
+          3,
+          962,
+          28,
+          721546,
+          37662,
+          23860,
+          69,
+          155,
+          0,
+          107,
+          219,
+          109
+        ],
+        [
+          4,
+          788,
+          32,
+          209145,
+          22316,
+          7772,
+          108,
+          49,
+          1,
+          97,
+          44,
+          138
+        ],
+        [
+          5,
+          726,
+          0,
+          58263,
+          26029,
+          20128,
+          132,
+          76,
+          0,
+          150,
+          77,
+          104
+        ],
+        [
+          6,
+          1048,
+          0,
+          181245,
+          37126,
+          22203,
+          80,
+          0,
+          1,
+          75,
+          0,
+          179
+        ],
+        [
+          7,
+          565,
+          0,
+          0,
+          18653,
+          13468,
+          62,
+          19,
+          0,
+          67,
+          24,
+          37
+        ],
+        [
+          8,
+          192,
+          0,
+          0,
+          6333,
+          6314,
+          1421,
+          840,
+          0,
+          1373,
+          727,
+          149
+        ],
+        [
+          9,
+          634,
+          0,
+          133578,
+          28164,
+          15022,
+          178,
+          68,
+          0,
+          173,
+          77,
+          154
+        ],
+        [
+          10,
+          788,
+          0,
+          0,
+          26215,
+          2363,
+          126,
+          45,
+          0,
+          133,
+          48,
+          237
+        ],
+        [
+          11,
+          1071,
+          36,
+          284564,
+          39630,
+          28659,
+          245,
+          68,
+          0,
+          233,
+          70,
+          191
+        ],
+        [
+          12,
+          1314,
+          41,
+          0,
+          41493,
+          22314,
+          239,
+          155,
+          0,
+          232,
+          119,
+          212
+        ],
+        [
+          13,
+          212,
+          0,
+          9275,
+          7803,
+          10523,
+          102,
+          284,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          14,
+          829,
+          0,
+          13250,
+          29832,
+          25346,
+          136,
+          62,
+          0,
+          168,
+          53,
+          125
+        ],
+        [
+          15,
+          103,
+          0,
+          130767,
+          5441,
+          17736,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          543,
+          35,
+          307372,
+          7538,
+          3300,
+          14,
+          13,
+          0,
+          22,
+          20,
+          10
+        ],
+        [
+          17,
+          1232,
+          52,
+          357425,
+          24875,
+          6295,
+          28,
+          12,
+          1,
+          27,
+          10,
+          85
+        ],
+        [
+          18,
+          152,
+          152,
+          0,
+          1050,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          19,
+          236,
+          0,
+          0,
+          4938,
+          2998,
+          7,
+          10,
+          0,
+          10,
+          3,
+          33
+        ],
+        [
+          20,
+          575,
+          20,
+          289584,
+          14645,
+          4338,
+          16,
+          8,
+          0,
+          21,
+          3,
+          18
+        ],
+        [
+          21,
+          678,
+          30,
+          544529,
+          16071,
+          3722,
+          3,
+          0,
+          1,
+          12,
+          0,
+          52
+        ],
+        [
+          22,
+          213,
+          0,
+          14855,
+          8526,
+          7215,
+          29,
+          3,
+          0,
+          22,
+          3,
+          56
+        ],
+        [
+          23,
+          250,
+          60,
+          0,
+          549,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          24,
+          417,
+          120,
+          0,
+          728,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 12
+    },
+    {
+      "table_number": "1",
+      "table_title": "Table 1 Dimensions and characteristics of the tables",
+      "headers": [
+        "Table",
+        "$R \\times C$",
+        "Initial $S$",
+        "Our best $S$"
+      ],
+      "rows": [
+        [
+          4,
+          "$18 \\times 32$",
+          1936,
+          330
+        ],
+        [
+          8,
+          "$36 \\times 32$",
+          3952,
+          474
+        ],
+        [
+          32,
+          "$72 \\times 64$",
+          16096,
+          978
+        ],
+        [
+          128,
+          "$144 \\times 128$",
+          64960,
+          1986
+        ],
+        [
+          "Hospitals",
+          "$24 \\times 11$",
+          529,
+          299.27
+        ]
+      ],
+      "row_count": 5,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Table 2 EDA parameters and their possible values",
+      "headers": [
+        "Parameter",
+        "Possible values"
+      ],
+      "rows": [
+        [
+          "EDA type",
+          "discrete, continuous"
+        ],
+        [
+          "EDA complexity",
+          "univariate, bivariate,"
+        ],
+        [
+          "",
+          "multivariate"
+        ],
+        [
+          "Individual representation",
+          123
+        ],
+        [
+          "Elitism",
+          "yes, no"
+        ],
+        [
+          "Population size",
+          "$\\alpha R C, 2 \\alpha R C$"
+        ],
+        [
+          "Selection size",
+          2
+        ],
+        [
+          "",
+          4
+        ]
+      ],
+      "row_count": 8,
+      "column_count": 2
+    },
+    {
+      "table_number": "4",
+      "table_title": "Table 4 Most probable configurations of EDA parameters for Bertin128 for obtaining a stress value between 1986 and 2555. The other configurations have a probability very close to 0",
+      "headers": [
+        "Explanation",
+        "",
+        "",
+        "Results",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "EDA type",
+          "Indiv. represent.",
+          "Elitism",
+          "Probability",
+          "$\\bar{S} \\pm s d$",
+          "Best stress (times)"
+        ],
+        [
+          "Continuous",
+          3,
+          "no",
+          0.023288,
+          "$2633.58 \\pm 428.95$",
+          "$1988(2)$"
+        ],
+        [
+          "Continuous",
+          1,
+          "no",
+          0.020293,
+          "$2135.68 \\pm 122.42$",
+          "$1986(38)$"
+        ],
+        [
+          "Continuous",
+          3,
+          "yes",
+          0.006449,
+          "$2779.33 \\pm 768.80$",
+          "$1988(4)$"
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 6
+    }
+  ]
+}

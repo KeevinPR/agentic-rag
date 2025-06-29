@@ -1,0 +1,524 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2003/Fast feature selection using a simple estimation of distribution algorithm  a case study on splice site prediction.md",
+    "filename": "Fast feature selection using a simple estimation of distribution algorithm  a case study on splice site prediction.md",
+    "title": "Fast feature selection using a simple estimation of distribution algorithm  a case study on splice site prediction",
+    "year": "2003"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Class distribution of the unbalanced datasets",
+      "headers": [
+        "Dataset",
+        "\\# Positives",
+        "\\# Negatives",
+        "\\# Total"
+      ],
+      "rows": [
+        [
+          "400AG.test.50",
+          277,
+          18516,
+          18793
+        ],
+        [
+          "400AG.holdout.50",
+          263,
+          20886,
+          21149
+        ],
+        [
+          "400GT.test.50",
+          309,
+          16077,
+          16386
+        ],
+        [
+          "400GT.holdout.50",
+          239,
+          14937,
+          15176
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 4
+    },
+    {
+      "table_number": "2",
+      "table_title": "Acceptor prediction : evaluation of FSS on a balanced holdout set (400AG.holdout.2000)",
+      "headers": [
+        "Algorithm",
+        "\\# Features",
+        "CC",
+        "q9 ratio"
+      ],
+      "rows": [
+        [
+          "NBM",
+          150,
+          31.26,
+          90.94
+        ],
+        [
+          "SBE",
+          80,
+          29.89,
+          90.51
+        ],
+        [
+          "",
+          40,
+          29.63,
+          90.82
+        ],
+        [
+          "",
+          "Max",
+          32.89,
+          91.93
+        ],
+        [
+          "NBM",
+          150,
+          "$32.25 \\pm 0.41$",
+          "$91.75 \\pm 0.16$"
+        ],
+        [
+          "EDA",
+          80,
+          "$31.55 \\pm 0.77$",
+          "$91.55 \\pm 0.47$"
+        ],
+        [
+          "",
+          40,
+          "$28.18 \\pm 0.35$",
+          "$89.15 \\pm 0.35$"
+        ],
+        [
+          "",
+          "Unconstrained",
+          "$33.18 \\pm 0.22$",
+          "$92.19 \\pm 0.18$"
+        ],
+        [
+          "LSVM",
+          150,
+          32.6,
+          91.83
+        ],
+        [
+          "SBE",
+          80,
+          32.3,
+          91.52
+        ],
+        [
+          "",
+          40,
+          29.86,
+          90.31
+        ],
+        [
+          "",
+          "Max",
+          33.52,
+          92.57
+        ],
+        [
+          "LSVM",
+          150,
+          "$34.03 \\pm 0.43$",
+          "$92.55 \\pm 0.28$"
+        ],
+        [
+          "EDA",
+          80,
+          "$33.04 \\pm 0.64$",
+          "$92.32 \\pm 0.35$"
+        ],
+        [
+          "",
+          40,
+          "$29.47 \\pm 0.47$",
+          "$90.32 \\pm 0.48$"
+        ],
+        [
+          "",
+          "Unconstrained",
+          "$34.65 \\pm 0.43$",
+          "$92.62 \\pm 0.44$"
+        ],
+        [
+          "PSVM",
+          150,
+          34.49,
+          92.05
+        ],
+        [
+          "SBE",
+          80,
+          32.47,
+          91.57
+        ],
+        [
+          "",
+          40,
+          28.57,
+          90.0
+        ],
+        [
+          "",
+          "Max",
+          35.77,
+          93.3
+        ],
+        [
+          "PSVM",
+          150,
+          "$34.73 \\pm 0.84$",
+          "$92.68 \\pm 0.49$"
+        ],
+        [
+          "EDA",
+          80,
+          "$30.64 \\pm 0.44$",
+          "$90.75 \\pm 0.36$"
+        ],
+        [
+          "",
+          40,
+          "$26.82 \\pm 0.81$",
+          "$88.51 \\pm 0.84$"
+        ],
+        [
+          "",
+          "Unconstrained",
+          "$36.24 \\pm 0.52$",
+          "$93.42 \\pm 0.35$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 4
+    },
+    {
+      "table_number": "3",
+      "table_title": "Acceptor prediction : evaluation of FSS on an unbalanced holdout set (400AG.holdout.50)",
+      "headers": [
+        "Algorithm",
+        "\\# Features",
+        "CC",
+        "q9 ratio"
+      ],
+      "rows": [
+        [
+          "NBM",
+          150,
+          33.57,
+          92.25
+        ],
+        [
+          "SBE",
+          80,
+          32.2,
+          92.0
+        ],
+        [
+          "",
+          40,
+          30.04,
+          90.38
+        ],
+        [
+          "",
+          "Max",
+          34.2,
+          92.87
+        ],
+        [
+          "NBM",
+          150,
+          "$35.19 \\pm 0.11$",
+          "$93.07 \\pm 0.10$"
+        ],
+        [
+          "EDA",
+          80,
+          "$33.49 \\pm 0.54$",
+          "$92.37 \\pm 0.59$"
+        ],
+        [
+          "",
+          40,
+          "$30.06 \\pm 0.37$",
+          "$90.17 \\pm 0.51$"
+        ],
+        [
+          "",
+          "Unconstrained",
+          "$35.97 \\pm 0.25$",
+          "$93.14 \\pm 0.20$"
+        ],
+        [
+          "LSVM",
+          150,
+          34.95,
+          92.43
+        ],
+        [
+          "SBE",
+          80,
+          33.2,
+          91.92
+        ],
+        [
+          "",
+          40,
+          31.32,
+          91.36
+        ],
+        [
+          "",
+          "Max",
+          34.99,
+          92.68
+        ],
+        [
+          "LSVM",
+          150,
+          "$36.88 \\pm 0.56$",
+          "$93.25 \\pm 0.46$"
+        ],
+        [
+          "EDA",
+          80,
+          "$35.04 \\pm 0.18$",
+          "$92.57 \\pm 0.19$"
+        ],
+        [
+          "",
+          40,
+          "$31.72 \\pm 0.44$",
+          "$91.37 \\pm 0.40$"
+        ],
+        [
+          "",
+          "Unconstrained",
+          "$38.34 \\pm 0.32$",
+          "$93.31 \\pm 0.38$"
+        ],
+        [
+          "PSVM",
+          150,
+          35.02,
+          92.57
+        ],
+        [
+          "SBE",
+          80,
+          32.94,
+          91.35
+        ],
+        [
+          "",
+          40,
+          28.66,
+          88.75
+        ],
+        [
+          "",
+          "Max",
+          37.46,
+          93.77
+        ],
+        [
+          "PSVM",
+          150,
+          "$36.20 \\pm 0.41$",
+          "$92.98 \\pm 0.37$"
+        ],
+        [
+          "EDA",
+          80,
+          "$32.46 \\pm 0.79$",
+          "$91.39 \\pm 0.80$"
+        ],
+        [
+          "",
+          40,
+          "$27.49 \\pm 0.49$",
+          "$88.47 \\pm 0.49$"
+        ],
+        [
+          "",
+          "Unconstrained",
+          "$38.29 \\pm 0.38$",
+          "$93.94 \\pm 0.26$"
+        ]
+      ],
+      "row_count": 24,
+      "column_count": 4
+    },
+    {
+      "table_number": "4",
+      "table_title": "Comparisons of the running times for constrained subsets on a Linux cluster (5 dual-processors at 1.2 Ghz)",
+      "headers": [
+        "Algorithm",
+        "\\# Features",
+        "\\# Evaluations",
+        "Average \\# Features",
+        "Time on 400AG.holdout. 2000",
+        "Time on 400AG.holdout. 50"
+      ],
+      "rows": [
+        [
+          "NBM",
+          150,
+          68875,
+          294.4,
+          34,
+          158
+        ],
+        [
+          "SBE",
+          80,
+          76960,
+          275.98,
+          36,
+          209
+        ],
+        [
+          "",
+          40,
+          79380,
+          269.48,
+          37,
+          211
+        ],
+        [
+          "NBM",
+          150,
+          67100,
+          150,
+          20,
+          46
+        ],
+        [
+          "EDA",
+          80,
+          67100,
+          80,
+          9,
+          21
+        ],
+        [
+          "",
+          40,
+          67100,
+          40,
+          5,
+          11
+        ],
+        [
+          "LSVM",
+          150,
+          68875,
+          294.4,
+          215,
+          238
+        ],
+        [
+          "SBE",
+          80,
+          76960,
+          275.98,
+          219,
+          252
+        ],
+        [
+          "",
+          40,
+          79380,
+          269.48,
+          220,
+          254
+        ],
+        [
+          "LSVM",
+          150,
+          67100,
+          150,
+          38,
+          59
+        ],
+        [
+          "EDA",
+          80,
+          67100,
+          80,
+          17,
+          27
+        ],
+        [
+          "",
+          40,
+          67100,
+          40,
+          14,
+          19
+        ],
+        [
+          "PSVM",
+          150,
+          13875,
+          296.26,
+          911,
+          6202
+        ],
+        [
+          "SBE",
+          80,
+          15520,
+          277.68,
+          942,
+          6324
+        ],
+        [
+          "",
+          40,
+          16020,
+          271.03,
+          948,
+          6340
+        ],
+        [
+          "PSVM",
+          150,
+          13510,
+          150,
+          454,
+          1648
+        ],
+        [
+          "EDA",
+          80,
+          13510,
+          80,
+          248,
+          938
+        ],
+        [
+          "",
+          40,
+          13510,
+          40,
+          152,
+          616
+        ]
+      ],
+      "row_count": 18,
+      "column_count": 6
+    }
+  ]
+}

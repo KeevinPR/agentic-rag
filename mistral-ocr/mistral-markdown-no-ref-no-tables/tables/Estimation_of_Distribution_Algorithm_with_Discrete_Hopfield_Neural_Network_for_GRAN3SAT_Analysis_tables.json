@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2023/Estimation of Distribution Algorithm with Discrete Hopfield Neural Network for GRAN3SAT Analysis.md",
+    "filename": "Estimation of Distribution Algorithm with Discrete Hopfield Neural Network for GRAN3SAT Analysis.md",
+    "title": "Estimation of Distribution Algorithm with Discrete Hopfield Neural Network for GRAN3SAT Analysis",
+    "year": "2023"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Main parameters of GRAN3SAT $T_{D H N N}$.",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Different proportions of negative literals $\\left(P_{N}\\right)$",
+          "$0.1,0.3,0.5,0.7,0.9$"
+        ],
+        [
+          "Number of neurons( $N N$ )",
+          "$6 \\leq \\mathrm{NN} \\leq 100$"
+        ],
+        [
+          "Activation function",
+          7
+        ],
+        [
+          "Number of neuron combination",
+          100
+        ],
+        [
+          "Relaxation rate",
+          27
+        ],
+        [
+          "Number of learn and test trial",
+          100
+        ],
+        [
+          "Tolerance value",
+          0.0017
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 2
+    },
+    {
+      "table_number": "2",
+      "table_title": "List of main parameters in the indicator.",
+      "headers": [
+        "Parameter",
+        "Explanation."
+      ],
+      "rows": [
+        [
+          "$f_{N C}$",
+          "Maximum fitness achieved"
+        ],
+        [
+          "$f_{i}$",
+          "Current fitness achieved"
+        ],
+        [
+          "$W_{W A N}$",
+          "Satisfactory synaptic weights"
+        ],
+        [
+          "$W_{t}$",
+          "Number of local minimum solution"
+        ],
+        [
+          "$v_{w}$",
+          "Current number of weights"
+        ],
+        [
+          "$v_{w c}$",
+          "$v_{w c}=v_{\\text {comb }}$"
+        ],
+        [
+          "$\\varepsilon_{\\text {min }}$",
+          "Minimum energy value"
+        ],
+        [
+          "$\\varepsilon_{f}$",
+          "Final energy function value"
+        ],
+        [
+          "$v_{G}$",
+          "Number of global solutions"
+        ],
+        [
+          "$v_{t}$",
+          "Number of testing trials"
+        ],
+        [
+          "$v_{t c}$",
+          "$v_{t c}=v_{t} \\cdot v_{\\text {combmax }}$"
+        ]
+      ],
+      "row_count": 11,
+      "column_count": 2
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "file_path": "/Users/id05309/Documents/tfm/mistral/mistral-markdown/2001/Continuous Estimation of Distribution Algorithms with Probabilistic Principal.md",
+    "filename": "Continuous Estimation of Distribution Algorithms with Probabilistic Principal.md",
+    "title": "Continuous Estimation of Distribution Algorithms with Probabilistic Principal",
+    "year": "2001"
+  },
+  "tables": [
+    {
+      "table_number": "1",
+      "table_title": "Characteristics of the functions and parameter settings used in the experiments",
+      "headers": [
+        "Function",
+        "Ackley",
+        "Rastrigin",
+        "Test 1",
+        "Test 2",
+        "Test 3",
+        "Test 4",
+        "Test 5",
+        "Test 6"
+      ],
+      "rows": [
+        [
+          "Dimension",
+          "$20-100$",
+          "$20-100$",
+          10,
+          10,
+          10,
+          100,
+          100,
+          100
+        ],
+        [
+          "\\#Max_Eval",
+          "-",
+          "-",
+          300000,
+          300000,
+          300000,
+          200000,
+          200000,
+          200000
+        ],
+        [
+          "Type",
+          "Min",
+          "Min",
+          "Max",
+          "Min",
+          "Min",
+          "Max",
+          "Max",
+          "Max"
+        ],
+        [
+          "Optimum",
+          0,
+          0,
+          "$10^{5}$",
+          0,
+          0,
+          "$10^{7}$",
+          "$10^{7}$",
+          "$10^{7}$"
+        ],
+        [
+          "Pop_Size",
+          1000,
+          10000,
+          10000,
+          2000,
+          2000,
+          2000,
+          2000,
+          800
+        ],
+        [
+          "Selection Rate",
+          0.1,
+          0.1,
+          0.01,
+          0.1,
+          0.1,
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          "\\#Latent_Variables",
+          1,
+          1,
+          5,
+          1,
+          1,
+          10,
+          20,
+          1
+        ]
+      ],
+      "row_count": 7,
+      "column_count": 9
+    },
+    {
+      "table_number": "2",
+      "table_title": "Best fitness values averaged on 100 runs for the test function 1, 2, and 3. Total running time for the PPCA-based approach is also given.",
+      "headers": [
+        "Methods",
+        "UMDA $_{n}^{12}$",
+        "$\\operatorname{MIMIC}_{n}^{12}$",
+        "EGNA $_{8}$",
+        "EGNA $_{\\text {BG }}$",
+        "ES",
+        "PPCA",
+        ""
+      ],
+      "rows": [
+        [
+          "Functions",
+          "Mean",
+          "Mean",
+          "Mean",
+          "Mean",
+          "Mean",
+          "Mean",
+          "Total Time"
+        ],
+        [
+          1,
+          53460,
+          58775,
+          100000,
+          100000,
+          5910,
+          94063.01,
+          25.34
+        ],
+        [
+          2,
+          0.13754,
+          0.13397,
+          0.09914,
+          0.025,
+          0,
+          "$3.68 \\times 10^{-9}$",
+          6.01
+        ],
+        [
+          3,
+          0.011076,
+          0.007794,
+          0.008175,
+          0.012605,
+          0.034477,
+          0,
+          5.71
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 8
+    },
+    {
+      "table_number": "3",
+      "table_title": "Best fitness values averaged on 20 runs for the test function 4,5 , and 6 with the standard deviation. Relative time of IDEA and PPCA is also given.",
+      "headers": [
+        "Methods",
+        "$(10+50)$-ES",
+        "PBIL $_{n}$",
+        "IDEA",
+        "",
+        "PPCA",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "Functions",
+          "Mean $\\pm$ Stdev",
+          "Mean $\\pm$ Stdev",
+          "Mean",
+          "RT",
+          "Mean $\\pm$ Stdev",
+          "",
+          "RT",
+          "Total Time"
+        ],
+        [
+          4,
+          "$2.91 \\pm 0.45$",
+          "$4.76 \\pm 0.78$",
+          7.5,
+          44.32,
+          "$7.83 \\pm 0.75$",
+          "",
+          6.91,
+          102.05
+        ],
+        [
+          5,
+          "$7.56 \\pm 1.52$",
+          "$11.18 \\pm 1.36$",
+          27.73,
+          4.95,
+          "$18.23 \\pm 1.54$",
+          "",
+          2.34,
+          769.05
+        ],
+        [
+          6,
+          "$399.07 \\pm 6.97$",
+          "$4803 \\pm 4986$",
+          9999999.96,
+          130.17,
+          "$9997761.50 \\pm 1161.42$",
+          "",
+          15.86,
+          19.8
+        ]
+      ],
+      "row_count": 4,
+      "column_count": 9
+    }
+  ]
+}
