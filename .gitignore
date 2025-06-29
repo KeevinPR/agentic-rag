@@ -9,8 +9,8 @@ cat <<EOF > .gitignore
 !chainlit/
 !chainlit/**
 
-!mistral/
-!mistral/**
+!mistral-ocr/
+!mistral-ocr/**
 
 # Ignore local Git backup folder (you renamed .git → .git_backup)
 chainlit/.git_backup/
@@ -22,9 +22,9 @@ chainlit/.git_backup/
 
 # Also ignore environments inside them
 chainlit/env/
-mistral/conda_env/
-mistral/eda-rag-db
-mistral/scrape
+mistral-ocr/conda_env/
+mistral-ocr/eda-rag-db
+mistral-ocr/scrape
 __pycache__/
 *.pyc
 .DS_Store

@@ -1,0 +1,345 @@
+[
+    {
+        "title": "Fast feature selection using a simple estimation of distribution algorithm: a case study on splice site prediction",
+        "authors": "Saeys, Yvan Degroeve, Sven Aeyels, Dirk Van de Peer, Yves Rouze, Pierre",
+        "description": "Motivation: Feature subset selection is an important preprocessing step for classification. In biology, where structures or processes are described by a large number of features, the elimination of irrelevant and redundant information in a reasonable amount of time has a number of advantages. It enables the classification system to achieve good or even better solutions with a restricted subset of features, allows for a faster classification, and it helps the human expert focus on a relevant subset of features, hence providing useful biological knowledge.",
+        "paper_link": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=edas&SrcAuth=WosAPI&KeyUT=WOS:000207434300022&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "year": "2003"
+    },
+    {
+        "title": "Optimization in continuous domain by real-coded estimation of distribution algorithm",
+        "authors": "Paul, TK Iba, H",
+        "description": "Finding global optima in the continuous domain is challenging for Genetic Algorithms (GAs). Traditional GAs use either binary-coded or real-coded representation of the variables, but there is a trade-off between these two encoding methods. Recombination operators for binary-coded GAs are simple to design, but the length of the string representing an individual would be huge if the number of design variables is larger; whereas, in real-coded GAs the length of an individual would be shorter, but the design of crossover and mutation operators are difficult, and sometimes they lead to premature convergence. To alleviate the problems of these two methods of encoding, real-coded Estimation of Distribution Algorithms (EDAs), which replace the recombination operators of GAs with estimation and sampling of the probability density function of the variables at each generation, have been proposed. In this paper, we show how real-coded EDAs can be applied to the optimization of multivariate functions in continuous domain and present the experimental results of three bench-mark functions produced by our proposed algorithm. In comparison with others EDAs, our proposed method obtains encouraging accuracy and efficiency.",
+        "paper_link": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=edas&SrcAuth=WosAPI&KeyUT=WOS:000221600700027&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "year": "2003"
+    },
+    {
+        "title": "An hybrid neural/genetic approach to continuous multi-objective optimization problems",
+        "authors": "Costa, M Minisci, E Pasero, E",
+        "description": "Evolutionary algorithms perform optimization using the information derived from a population of sample solution points. Recent developments in this field regard optimization as the evolutionary process of an explicit, probabilistic model of the search space. The algorithms derived on the basis of this new philosophy maintain every feature of the classic evolutionary algorithms, but are able to overcome some drawbacks. In this paper an evolutionary multi-objective optimization tool based on an estimation of distribution algorithm is proposed. It uses the ranking method of non-dominated sorting genetic algorithm-II and the Parzen estimator to approximate the probability density of solutions lying on the Pareto front. The proposed algorithm has been applied to different types of test case problems and results show good performance of the overall optimization procedure in terms of the number of function evaluations.",
+        "paper_link": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=edas&SrcAuth=WosAPI&KeyUT=WOS:000188006800006&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "year": "2003"
+    },
+    {
+        "title": "Reinforcement learning estimation of distribution algorithm",
+        "authors": "Paul, TK Iba, H",
+        "description": "This paper proposes an algorithm for combinatorial optimizations that uses reinforcement learning and estimation of joint probability distribution of promising solutions to generate a new population of solutions. We call it Reinforcement Learning Estimation of Distribution Algorithm (RELEDA). For the estimation of the joint probability distribution we consider each variable as univariate. Then we update the probability of each variable by applying reinforcement learning method. Though we consider variables independent of one another, the proposed method can solve problems of highly correlated variables. To compare the efficiency of our proposed algorithm with other Estimation of Distribution Algorithms (EDAs) we provide the experimental results of the two problems: four peaks problem and bipolar function.",
+        "paper_link": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=edas&SrcAuth=WosAPI&KeyUT=WOS:000185074300002&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "year": "2003"
+    },
+    {
+        "title": "MOPED: A multi-objective Parzen-based estimation of distribution algorithm for continuous problems",
+        "authors": "Costa, M Minisci, E",
+        "description": "An evolutionary multi-objective optimization tool based on an estimation of distribution algorithm is proposed. The algorithm uses the ranking method of non-dominated sorting genetic algorithm-II and the Parzen estimator to approximate the probability density of solutions lying on the Pareto front. The proposed algorithm has been applied to different types of test case problems and results show good performance of the overall optimization procedure in terms of the number of function evaluations. An alternative spreading technique that uses the Parzen estimator in the objective function space is proposed as well. When this technique is used, achieved results appear to be qualitatively equivalent to those previously obtained by adopting the crowding distance described in non-dominated sorting genetic algorithm-II.",
+        "paper_link": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=edas&SrcAuth=WosAPI&KeyUT=WOS:000184815500020&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "year": "2003"
+    },
+    {
+        "title": "Design of multithreaded estimation of distribution algorithms",
+        "authors": "Ocenasek, J, Schwarz, J and Pelikan, M",
+        "description": "Estimation of Distribution Algorithms (EDAs) use a probabilistic model of promising solutions found so far to obtain new candidate solutions of an optimization problem. This paper focuses on the design of parallel EDAs. More specifically, the paper describes a method for parallel construction of Bayesian networks with local structures in form of decision trees in the Mixed Bayesian Optimization Algorithm. The proposed Multithreaded Mixed Bayesian Optimization Algorithm (MMBOA) is intended for implementation on a cluster of workstations that communicate by Message Passing Interface (MPI). Communication latencies between workstations are eliminated by multithreaded processing, so in each workstation the high-priority model-building thread, which is communication demanding, can be overlapped by low-priority model sampling thread when necessary. High performance of MMBOA is verified via simulation in TRANSIM tool.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074300001",
+        "year": "2003"
+    },
+    {
+        "title": "Learning semi naive Bayes structures by estimation of distribution algorithms",
+        "authors": "Robles, V, Larra\u00f1aga, P, Herves, V",
+        "description": "Recent work in supervised learning has shown that a surprisingly simple Bayesian classifier called naive Bayes is competitive with state of the art classifiers. This simple approach stands from assumptions of conditional independence among features given the class. Improvements in accuracy of naive Bayes has been demonstrated by a number of approaches, collectively named semi naive Bayes classifiers. Semi naive Bayes classifiers are usually based on the search of specific values or structures. The learning process of these classifiers is usually based on greedy search algorithms. In this paper we propose to learn these semi naive Bayes structures through estimation of distribution algorithms, which are non-deterministic, stochastic heuristic search strategies. Experimental tests have been done with 21 data sets from the UCI repository.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000187551600023",
+        "year": "2003"
+    },
+    {
+        "title": "Hybridization of estimation of distribution algorithms with a repair method for solving constraint satisfaction problems",
+        "authors": "Handa, H",
+        "description": "Estimation of Distribution Algorithms (EDAs) are new promising methods in the field of genetic and evolutionary algorithms. In the case of conventional Genetic and Evolutionary Algorithm studies to apply Constraint Satisfaction Problems (CSPs), it is well-known that the incorporation of the domain knowledge in the CSPs is quite effective. In this paper, we propose a hybridization method (memetic algorithm) of Estimation of Distribution Algorithms with a repair method. Experimental results on general CSPs tell us the effectiveness of the proposed method.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074200110",
+        "year": "2003"
+    },
+    {
+        "title": "The structure of evolutionary exploration: On crossover, buildings blocks, and estimation-of-distribution algorithms",
+        "authors": "Toussaint, M",
+        "description": "Correlations between alleles after selection are an important source of information. Such correlations should be exploited for further search and thereby constitute the building blocks of evolutionary exploration. With this background we analyze the structure of the offspring probability distribution, or exploration distribution, for a simple GA with mutation only and a crossover GA and Compare them to Estimation-Of-Distribution Algorithms (EDAs). This will allow a precise characterization of the structure of exploration w.r.t. correlations in the search distribution for these algorithms. We find that crossover transforms, depending on the crossover mask, mutual information between loci into entropy. In total, it can only decrease such,mutual information. In contrast, the objective of EDAs is to estimate the correlations between loci and exploit this information during exploration. This may lead to an effective increase of mutual information in the exploration distribution, what we define correlated exploration.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074300017",
+        "year": "2003"
+    },
+    {
+        "title": "Learning Bayesian networks in the space of structures by estimation of distribution algorithms",
+        "authors": "Blanco, R, Inza, I and Larra\u00f1ga, P",
+        "description": "The induction of the optimal Bayesian network structure is NP-hard, justifying the use of search heuristics. Two novel population-based stochastic search approaches, univariate marginal distribution algorithm (UMDA) and population-based incremental learning (PBIL), are used to learn a Bayesian network structure from a database of cases in a score + search framework. A comparison with a genetic algorithm (GA) approach is performed using three different scores: penalized maximum likelihood, marginal likelihood, and information-theory-based entropy. Experimental results show the interesting capabilities of both novel approaches with respect to the score value and the number of generations needed to converge. (C) 2003 Wiley Periodicals, Inc.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000180769900006",
+        "year": "2003"
+    },
+    {
+        "title": "Variable search space for software testing",
+        "authors": "Sagarna, R and Lozano, JA",
+        "description": "Testing is an essential phase in the software life cycle. One of the most important tasks testing involves is the automatic generation of the test inputs. The field of Evolutionary Testing aims at solving this task by means of combinatorial optimization search methods.|An Evolutionary Testing based approach to the automatic generation of test cases is presented. The developed approach considers variable search regions in which appropriate test inputs are sought. The search is performed by means of an emerging set of evolutionary algorithms called Estimation of Distribution Algorithms. The experimental results obtained show this approach as a promising option for tackling this problem.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189460400138",
+        "year": "2003"
+    },
+    {
+        "title": "Program evolution with explicit learning",
+        "authors": "Shan, Y, McKay, RI, Essam, D",
+        "description": "In Genetic Programming (GP) and most other evolutionary computing approaches, the knowledge learned during the evolutionary processing is implicitly encoded in the population. A small family of approaches, known as Estimation of Distribution Algorithms, learn this knowledge directly in the form of probability distributions. In this research, we proposed a new approach for program synthesis - Program Evolution with Explicit Learning (PEEL), belonging to this family. PEEL learns probability distributions from previous generations and stochastically generates new populations according to this distribution. PEEL is intrinsically different from GP systems because it abandons conventional GP genetic operators and does not maintain a population. On the benchmark problems we have studied, this approach shows at least comparable performance to GP.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221532900222",
+        "year": "2003"
+    },
+    {
+        "title": "Estimation of Bayesian network algorithm with GA searching for better network structure",
+        "authors": "Handa, H and Katai, O",
+        "description": "Estimation of Bayesian Network Algorithms which adopt Bayesian Networks as the probabilistic model were one of the most sophisticated algorithms in the Estimation of Distribution Algorithms. However the estimation of Bayesian Network is key topic of this algorithm, conventional EBNAs adopt greedy. searches to search for better network structures. In this paper, we propose a new EBNA which adopts Genetic Algorithm to search the structure of Bayesian Network. In order to reduce the computational complexity of estimating better network structures, we elaborates the fitness function of the GA module, based upon the synchronicity of specific pattern in the selected individuals. Several computational simulations on multidimensional knapsack problems show us the effectiveness of the proposed method.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189460400104",
+        "year": "2003"
+    },
+    {
+        "title": "Estimating distributions in genetic algorithms",
+        "authors": "Dikmen, O, Akin, HL and Alpaydin, E",
+        "description": "The canonical operators of genetic algorithms, i.e., mutation and crossover, have nondeterministic effects on the population. They use information from only one or two fit individuals and risk deforming the chromosomes of fit individuals and cause an interruption in the progression. Estimation of Distribution Algorithms (EDAs) use probabilistic models rather than mutation and crossover, to guide the progression of genetic algorithms by placing a density over all fit individuals and sampling from this density. EDA therefore makes better use of the fitness information of the previous generation and promise faster convergence without losing any schemata. We consider parametric, nonparametric, and semiparametric models for density estimation in the EDA template with continuous genes. We compare these methods with standard backpropagation and GA proper in the problem of training a multilayer perceptron which is a complex nonlinear estimator. Our results indicate that our algorithms perform definitely better than the proper genetic algorithm (GA) on every problem and can find better solutions than those of backpropagation in training a MLP.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000188096800065",
+        "year": "2003"
+    },
+    {
+        "title": "Optimization in continuous domain by real-coded estimation of distribution algorithm",
+        "authors": "Paul, TK and Iba, H",
+        "description": "Finding global optima in the continuous domain is challenging for Genetic Algorithms (GAs). Traditional GAs use either binary-coded or real-coded representation of the variables, but there is a trade-off between these two encoding methods. Recombination operators for binary-coded GAs are simple to design, but the length of the string representing an individual would be huge if the number of design variables is larger; whereas, in real-coded GAs the length of an individual would be shorter, but the design of crossover and mutation operators are difficult, and sometimes they lead to premature convergence. To alleviate the problems of these two methods of encoding, real-coded Estimation of Distribution Algorithms (EDAs), which replace the recombination operators of GAs with estimation and sampling of the probability density function of the variables at each generation, have been proposed. In this paper, we show how real-coded EDAs can be applied to the optimization of multivariate functions in continuous domain and present the experimental results of three bench-mark functions produced by our proposed algorithm. In comparison with others EDAs, our proposed method obtains encouraging accuracy and efficiency.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221600700027",
+        "year": "2003"
+    },
+    {
+        "title": "Elitism-based compact genetic algorithms",
+        "authors": "Ahn, CW and Ramakrishna, RS",
+        "description": "This paper describes two elitism-based compact genetic algorithms (cGAs)-persistent elitist compact genetic algorithm (pe-cGA), and nonpersistent elitist compact genetic algorithm (ne-cGA). The aim is to design efficient compact-type GAs by treating them as estimation of distribution algorithms ( I EDAs) for solving difficult optimization problems without compromising on memory and computation costs. The idea is to deal with issues connected with lack of memory-inherent disadvantage of cGAs-by allowing a selection pressure that is high enough to offset the disruptive effect of uniform crossover. The point is to properly reconcile the cGA with elitism. The pe-cGA finds a near optimal solution (i.e., a winner) that is maintained as long as other solutions (i.e., competitors) generated from probability vectors are no better. It attempts to adaptively alter the selection pressure according to the degree of problem difficulty by employing only the pair-wise tournament selection strategy. Moreover, it incorporates the equivalent model of the (1 + 1) evolution strategy (ES) with self-adaptive mutation. The pe-cGA, apart from providing a high performance, also reveals the hidden connection between EDAs (e.g., cGA) and ESs (e.g., (1 + 1)-ES). On the other hand, the ne-cGA further improves the performance of the pe-cGA by, avoiding strong elitism that may lead to premature convergence. The ne-cGA comes with all the benefits of the pe-cGA. In addition, it maintains genetic diversity as a bonus. This paper also proposes an analytic model for investigating convergence enhancement (i.e., speedup).|Experimental results show that the proposed algorithms, ne-cGA in particular, generally exhibit a better quality of solution and a higher rate of convergence for most of the problems than do the existing cGA, sGA, and (1 + 1) -ES. The speedup model has been verified by experiments. The results also show that an adequate alleviation of elitism further improves the solution quality, as well as the convergence speed.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000184819400004",
+        "year": "2003"
+    },
+    {
+        "title": "Design of multithreaded estimation of distribution algorithms",
+        "authors": "Ocenasek, J, Schwarz, J and Pelikan, M",
+        "description": "Estimation of Distribution Algorithms (EDAs) use a probabilistic model of promising solutions found so far to obtain new candidate solutions of an optimization problem. This paper focuses on the design of parallel EDAs. More specifically, the paper describes a method for parallel construction of Bayesian networks with local structures in form of decision trees in the Mixed Bayesian Optimization Algorithm. The proposed Multithreaded Mixed Bayesian Optimization Algorithm (MMBOA) is intended for implementation on a cluster of workstations that communicate by Message Passing Interface (MPI). Communication latencies between workstations are eliminated by multithreaded processing, so in each workstation the high-priority model-building thread, which is communication demanding, can be overlapped by low-priority model sampling thread when necessary. High performance of MMBOA is verified via simulation in TRANSIM tool.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074300001",
+        "year": "2003"
+    },
+    {
+        "title": "Learning semi naive Bayes structures by estimation of distribution algorithms",
+        "authors": "Robles, V, Larra\u00f1aga, P, Herves, V",
+        "description": "Recent work in supervised learning has shown that a surprisingly simple Bayesian classifier called naive Bayes is competitive with state of the art classifiers. This simple approach stands from assumptions of conditional independence among features given the class. Improvements in accuracy of naive Bayes has been demonstrated by a number of approaches, collectively named semi naive Bayes classifiers. Semi naive Bayes classifiers are usually based on the search of specific values or structures. The learning process of these classifiers is usually based on greedy search algorithms. In this paper we propose to learn these semi naive Bayes structures through estimation of distribution algorithms, which are non-deterministic, stochastic heuristic search strategies. Experimental tests have been done with 21 data sets from the UCI repository.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000187551600023",
+        "year": "2003"
+    },
+    {
+        "title": "Hybridization of estimation of distribution algorithms with a repair method for solving constraint satisfaction problems",
+        "authors": "Handa, H",
+        "description": "Estimation of Distribution Algorithms (EDAs) are new promising methods in the field of genetic and evolutionary algorithms. In the case of conventional Genetic and Evolutionary Algorithm studies to apply Constraint Satisfaction Problems (CSPs), it is well-known that the incorporation of the domain knowledge in the CSPs is quite effective. In this paper, we propose a hybridization method (memetic algorithm) of Estimation of Distribution Algorithms with a repair method. Experimental results on general CSPs tell us the effectiveness of the proposed method.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074200110",
+        "year": "2003"
+    },
+    {
+        "title": "The structure of evolutionary exploration: On crossover, buildings blocks, and estimation-of-distribution algorithms",
+        "authors": "Toussaint, M",
+        "description": "Correlations between alleles after selection are an important source of information. Such correlations should be exploited for further search and thereby constitute the building blocks of evolutionary exploration. With this background we analyze the structure of the offspring probability distribution, or exploration distribution, for a simple GA with mutation only and a crossover GA and Compare them to Estimation-Of-Distribution Algorithms (EDAs). This will allow a precise characterization of the structure of exploration w.r.t. correlations in the search distribution for these algorithms. We find that crossover transforms, depending on the crossover mask, mutual information between loci into entropy. In total, it can only decrease such,mutual information. In contrast, the objective of EDAs is to estimate the correlations between loci and exploit this information during exploration. This may lead to an effective increase of mutual information in the exploration distribution, what we define correlated exploration.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074300017",
+        "year": "2003"
+    },
+    {
+        "title": "Learning Bayesian networks in the space of structures by estimation of distribution algorithms",
+        "authors": "Blanco, R, Inza, I and Larra\u00f1ga, P",
+        "description": "The induction of the optimal Bayesian network structure is NP-hard, justifying the use of search heuristics. Two novel population-based stochastic search approaches, univariate marginal distribution algorithm (UMDA) and population-based incremental learning (PBIL), are used to learn a Bayesian network structure from a database of cases in a score + search framework. A comparison with a genetic algorithm (GA) approach is performed using three different scores: penalized maximum likelihood, marginal likelihood, and information-theory-based entropy. Experimental results show the interesting capabilities of both novel approaches with respect to the score value and the number of generations needed to converge. (C) 2003 Wiley Periodicals, Inc.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000180769900006",
+        "year": "2003"
+    },
+    {
+        "title": "Variable search space for software testing",
+        "authors": "Sagarna, R and Lozano, JA",
+        "description": "Testing is an essential phase in the software life cycle. One of the most important tasks testing involves is the automatic generation of the test inputs. The field of Evolutionary Testing aims at solving this task by means of combinatorial optimization search methods.|An Evolutionary Testing based approach to the automatic generation of test cases is presented. The developed approach considers variable search regions in which appropriate test inputs are sought. The search is performed by means of an emerging set of evolutionary algorithms called Estimation of Distribution Algorithms. The experimental results obtained show this approach as a promising option for tackling this problem.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189460400138",
+        "year": "2003"
+    },
+    {
+        "title": "Program evolution with explicit learning",
+        "authors": "Shan, Y, McKay, RI, Essam, D",
+        "description": "In Genetic Programming (GP) and most other evolutionary computing approaches, the knowledge learned during the evolutionary processing is implicitly encoded in the population. A small family of approaches, known as Estimation of Distribution Algorithms, learn this knowledge directly in the form of probability distributions. In this research, we proposed a new approach for program synthesis - Program Evolution with Explicit Learning (PEEL), belonging to this family. PEEL learns probability distributions from previous generations and stochastically generates new populations according to this distribution. PEEL is intrinsically different from GP systems because it abandons conventional GP genetic operators and does not maintain a population. On the benchmark problems we have studied, this approach shows at least comparable performance to GP.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221532900222",
+        "year": "2003"
+    },
+    {
+        "title": "Estimation of Bayesian network algorithm with GA searching for better network structure",
+        "authors": "Handa, H and Katai, O",
+        "description": "Estimation of Bayesian Network Algorithms which adopt Bayesian Networks as the probabilistic model were one of the most sophisticated algorithms in the Estimation of Distribution Algorithms. However the estimation of Bayesian Network is key topic of this algorithm, conventional EBNAs adopt greedy. searches to search for better network structures. In this paper, we propose a new EBNA which adopts Genetic Algorithm to search the structure of Bayesian Network. In order to reduce the computational complexity of estimating better network structures, we elaborates the fitness function of the GA module, based upon the synchronicity of specific pattern in the selected individuals. Several computational simulations on multidimensional knapsack problems show us the effectiveness of the proposed method.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189460400104",
+        "year": "2003"
+    },
+    {
+        "title": "Estimating distributions in genetic algorithms",
+        "authors": "Dikmen, O, Akin, HL and Alpaydin, E",
+        "description": "The canonical operators of genetic algorithms, i.e., mutation and crossover, have nondeterministic effects on the population. They use information from only one or two fit individuals and risk deforming the chromosomes of fit individuals and cause an interruption in the progression. Estimation of Distribution Algorithms (EDAs) use probabilistic models rather than mutation and crossover, to guide the progression of genetic algorithms by placing a density over all fit individuals and sampling from this density. EDA therefore makes better use of the fitness information of the previous generation and promise faster convergence without losing any schemata. We consider parametric, nonparametric, and semiparametric models for density estimation in the EDA template with continuous genes. We compare these methods with standard backpropagation and GA proper in the problem of training a multilayer perceptron which is a complex nonlinear estimator. Our results indicate that our algorithms perform definitely better than the proper genetic algorithm (GA) on every problem and can find better solutions than those of backpropagation in training a MLP.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000188096800065",
+        "year": "2003"
+    },
+    {
+        "title": "Optimization in continuous domain by real-coded estimation of distribution algorithm",
+        "authors": "Paul, TK and Iba, H",
+        "description": "Finding global optima in the continuous domain is challenging for Genetic Algorithms (GAs). Traditional GAs use either binary-coded or real-coded representation of the variables, but there is a trade-off between these two encoding methods. Recombination operators for binary-coded GAs are simple to design, but the length of the string representing an individual would be huge if the number of design variables is larger; whereas, in real-coded GAs the length of an individual would be shorter, but the design of crossover and mutation operators are difficult, and sometimes they lead to premature convergence. To alleviate the problems of these two methods of encoding, real-coded Estimation of Distribution Algorithms (EDAs), which replace the recombination operators of GAs with estimation and sampling of the probability density function of the variables at each generation, have been proposed. In this paper, we show how real-coded EDAs can be applied to the optimization of multivariate functions in continuous domain and present the experimental results of three bench-mark functions produced by our proposed algorithm. In comparison with others EDAs, our proposed method obtains encouraging accuracy and efficiency.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221600700027",
+        "year": "2003"
+    },
+    {
+        "title": "Elitism-based compact genetic algorithms",
+        "authors": "Ahn, CW and Ramakrishna, RS",
+        "description": "This paper describes two elitism-based compact genetic algorithms (cGAs)-persistent elitist compact genetic algorithm (pe-cGA), and nonpersistent elitist compact genetic algorithm (ne-cGA). The aim is to design efficient compact-type GAs by treating them as estimation of distribution algorithms ( I EDAs) for solving difficult optimization problems without compromising on memory and computation costs. The idea is to deal with issues connected with lack of memory-inherent disadvantage of cGAs-by allowing a selection pressure that is high enough to offset the disruptive effect of uniform crossover. The point is to properly reconcile the cGA with elitism. The pe-cGA finds a near optimal solution (i.e., a winner) that is maintained as long as other solutions (i.e., competitors) generated from probability vectors are no better. It attempts to adaptively alter the selection pressure according to the degree of problem difficulty by employing only the pair-wise tournament selection strategy. Moreover, it incorporates the equivalent model of the (1 + 1) evolution strategy (ES) with self-adaptive mutation. The pe-cGA, apart from providing a high performance, also reveals the hidden connection between EDAs (e.g., cGA) and ESs (e.g., (1 + 1)-ES). On the other hand, the ne-cGA further improves the performance of the pe-cGA by, avoiding strong elitism that may lead to premature convergence. The ne-cGA comes with all the benefits of the pe-cGA. In addition, it maintains genetic diversity as a bonus. This paper also proposes an analytic model for investigating convergence enhancement (i.e., speedup).|Experimental results show that the proposed algorithms, ne-cGA in particular, generally exhibit a better quality of solution and a higher rate of convergence for most of the problems than do the existing cGA, sGA, and (1 + 1) -ES. The speedup model has been verified by experiments. The results also show that an adequate alleviation of elitism further improves the solution quality, as well as the convergence speed.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000184819400004",
+        "year": "2003"
+    },
+    {
+        "title": "Design of multithreaded estimation of distribution algorithms",
+        "authors": "Ocenasek, J, Schwarz, J and Pelikan, M",
+        "description": "Estimation of Distribution Algorithms (EDAs) use a probabilistic model of promising solutions found so far to obtain new candidate solutions of an optimization problem. This paper focuses on the design of parallel EDAs. More specifically, the paper describes a method for parallel construction of Bayesian networks with local structures in form of decision trees in the Mixed Bayesian Optimization Algorithm. The proposed Multithreaded Mixed Bayesian Optimization Algorithm (MMBOA) is intended for implementation on a cluster of workstations that communicate by Message Passing Interface (MPI). Communication latencies between workstations are eliminated by multithreaded processing, so in each workstation the high-priority model-building thread, which is communication demanding, can be overlapped by low-priority model sampling thread when necessary. High performance of MMBOA is verified via simulation in TRANSIM tool.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074300001",
+        "year": "2003"
+    },
+    {
+        "title": "Learning semi naive Bayes structures by estimation of distribution algorithms",
+        "authors": "Robles, V, Larra\u00f1aga, P, Herves, V",
+        "description": "Recent work in supervised learning has shown that a surprisingly simple Bayesian classifier called naive Bayes is competitive with state of the art classifiers. This simple approach stands from assumptions of conditional independence among features given the class. Improvements in accuracy of naive Bayes has been demonstrated by a number of approaches, collectively named semi naive Bayes classifiers. Semi naive Bayes classifiers are usually based on the search of specific values or structures. The learning process of these classifiers is usually based on greedy search algorithms. In this paper we propose to learn these semi naive Bayes structures through estimation of distribution algorithms, which are non-deterministic, stochastic heuristic search strategies. Experimental tests have been done with 21 data sets from the UCI repository.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000187551600023",
+        "year": "2003"
+    },
+    {
+        "title": "Hybridization of estimation of distribution algorithms with a repair method for solving constraint satisfaction problems",
+        "authors": "Handa, H",
+        "description": "Estimation of Distribution Algorithms (EDAs) are new promising methods in the field of genetic and evolutionary algorithms. In the case of conventional Genetic and Evolutionary Algorithm studies to apply Constraint Satisfaction Problems (CSPs), it is well-known that the incorporation of the domain knowledge in the CSPs is quite effective. In this paper, we propose a hybridization method (memetic algorithm) of Estimation of Distribution Algorithms with a repair method. Experimental results on general CSPs tell us the effectiveness of the proposed method.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074200110",
+        "year": "2003"
+    },
+    {
+        "title": "The structure of evolutionary exploration: On crossover, buildings blocks, and estimation-of-distribution algorithms",
+        "authors": "Toussaint, M",
+        "description": "Correlations between alleles after selection are an important source of information. Such correlations should be exploited for further search and thereby constitute the building blocks of evolutionary exploration. With this background we analyze the structure of the offspring probability distribution, or exploration distribution, for a simple GA with mutation only and a crossover GA and Compare them to Estimation-Of-Distribution Algorithms (EDAs). This will allow a precise characterization of the structure of exploration w.r.t. correlations in the search distribution for these algorithms. We find that crossover transforms, depending on the crossover mask, mutual information between loci into entropy. In total, it can only decrease such,mutual information. In contrast, the objective of EDAs is to estimate the correlations between loci and exploit this information during exploration. This may lead to an effective increase of mutual information in the exploration distribution, what we define correlated exploration.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074300017",
+        "year": "2003"
+    },
+    {
+        "title": "Learning Bayesian networks in the space of structures by estimation of distribution algorithms",
+        "authors": "Blanco, R, Inza, I and Larra\u00f1ga, P",
+        "description": "The induction of the optimal Bayesian network structure is NP-hard, justifying the use of search heuristics. Two novel population-based stochastic search approaches, univariate marginal distribution algorithm (UMDA) and population-based incremental learning (PBIL), are used to learn a Bayesian network structure from a database of cases in a score + search framework. A comparison with a genetic algorithm (GA) approach is performed using three different scores: penalized maximum likelihood, marginal likelihood, and information-theory-based entropy. Experimental results show the interesting capabilities of both novel approaches with respect to the score value and the number of generations needed to converge. (C) 2003 Wiley Periodicals, Inc.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000180769900006",
+        "year": "2003"
+    },
+    {
+        "title": "Variable search space for software testing",
+        "authors": "Sagarna, R and Lozano, JA",
+        "description": "Testing is an essential phase in the software life cycle. One of the most important tasks testing involves is the automatic generation of the test inputs. The field of Evolutionary Testing aims at solving this task by means of combinatorial optimization search methods.|An Evolutionary Testing based approach to the automatic generation of test cases is presented. The developed approach considers variable search regions in which appropriate test inputs are sought. The search is performed by means of an emerging set of evolutionary algorithms called Estimation of Distribution Algorithms. The experimental results obtained show this approach as a promising option for tackling this problem.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189460400138",
+        "year": "2003"
+    },
+    {
+        "title": "Program evolution with explicit learning",
+        "authors": "Shan, Y, McKay, RI, Essam, D",
+        "description": "In Genetic Programming (GP) and most other evolutionary computing approaches, the knowledge learned during the evolutionary processing is implicitly encoded in the population. A small family of approaches, known as Estimation of Distribution Algorithms, learn this knowledge directly in the form of probability distributions. In this research, we proposed a new approach for program synthesis - Program Evolution with Explicit Learning (PEEL), belonging to this family. PEEL learns probability distributions from previous generations and stochastically generates new populations according to this distribution. PEEL is intrinsically different from GP systems because it abandons conventional GP genetic operators and does not maintain a population. On the benchmark problems we have studied, this approach shows at least comparable performance to GP.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221532900222",
+        "year": "2003"
+    },
+    {
+        "title": "Estimation of Bayesian network algorithm with GA searching for better network structure",
+        "authors": "Handa, H and Katai, O",
+        "description": "Estimation of Bayesian Network Algorithms which adopt Bayesian Networks as the probabilistic model were one of the most sophisticated algorithms in the Estimation of Distribution Algorithms. However the estimation of Bayesian Network is key topic of this algorithm, conventional EBNAs adopt greedy. searches to search for better network structures. In this paper, we propose a new EBNA which adopts Genetic Algorithm to search the structure of Bayesian Network. In order to reduce the computational complexity of estimating better network structures, we elaborates the fitness function of the GA module, based upon the synchronicity of specific pattern in the selected individuals. Several computational simulations on multidimensional knapsack problems show us the effectiveness of the proposed method.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189460400104",
+        "year": "2003"
+    },
+    {
+        "title": "Estimating distributions in genetic algorithms",
+        "authors": "Dikmen, O, Akin, HL and Alpaydin, E",
+        "description": "The canonical operators of genetic algorithms, i.e., mutation and crossover, have nondeterministic effects on the population. They use information from only one or two fit individuals and risk deforming the chromosomes of fit individuals and cause an interruption in the progression. Estimation of Distribution Algorithms (EDAs) use probabilistic models rather than mutation and crossover, to guide the progression of genetic algorithms by placing a density over all fit individuals and sampling from this density. EDA therefore makes better use of the fitness information of the previous generation and promise faster convergence without losing any schemata. We consider parametric, nonparametric, and semiparametric models for density estimation in the EDA template with continuous genes. We compare these methods with standard backpropagation and GA proper in the problem of training a multilayer perceptron which is a complex nonlinear estimator. Our results indicate that our algorithms perform definitely better than the proper genetic algorithm (GA) on every problem and can find better solutions than those of backpropagation in training a MLP.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000188096800065",
+        "year": "2003"
+    },
+    {
+        "title": "Optimization in continuous domain by real-coded estimation of distribution algorithm",
+        "authors": "Paul, TK and Iba, H",
+        "description": "Finding global optima in the continuous domain is challenging for Genetic Algorithms (GAs). Traditional GAs use either binary-coded or real-coded representation of the variables, but there is a trade-off between these two encoding methods. Recombination operators for binary-coded GAs are simple to design, but the length of the string representing an individual would be huge if the number of design variables is larger; whereas, in real-coded GAs the length of an individual would be shorter, but the design of crossover and mutation operators are difficult, and sometimes they lead to premature convergence. To alleviate the problems of these two methods of encoding, real-coded Estimation of Distribution Algorithms (EDAs), which replace the recombination operators of GAs with estimation and sampling of the probability density function of the variables at each generation, have been proposed. In this paper, we show how real-coded EDAs can be applied to the optimization of multivariate functions in continuous domain and present the experimental results of three bench-mark functions produced by our proposed algorithm. In comparison with others EDAs, our proposed method obtains encouraging accuracy and efficiency.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221600700027",
+        "year": "2003"
+    },
+    {
+        "title": "Elitism-based compact genetic algorithms",
+        "authors": "Ahn, CW and Ramakrishna, RS",
+        "description": "This paper describes two elitism-based compact genetic algorithms (cGAs)-persistent elitist compact genetic algorithm (pe-cGA), and nonpersistent elitist compact genetic algorithm (ne-cGA). The aim is to design efficient compact-type GAs by treating them as estimation of distribution algorithms ( I EDAs) for solving difficult optimization problems without compromising on memory and computation costs. The idea is to deal with issues connected with lack of memory-inherent disadvantage of cGAs-by allowing a selection pressure that is high enough to offset the disruptive effect of uniform crossover. The point is to properly reconcile the cGA with elitism. The pe-cGA finds a near optimal solution (i.e., a winner) that is maintained as long as other solutions (i.e., competitors) generated from probability vectors are no better. It attempts to adaptively alter the selection pressure according to the degree of problem difficulty by employing only the pair-wise tournament selection strategy. Moreover, it incorporates the equivalent model of the (1 + 1) evolution strategy (ES) with self-adaptive mutation. The pe-cGA, apart from providing a high performance, also reveals the hidden connection between EDAs (e.g., cGA) and ESs (e.g., (1 + 1)-ES). On the other hand, the ne-cGA further improves the performance of the pe-cGA by, avoiding strong elitism that may lead to premature convergence. The ne-cGA comes with all the benefits of the pe-cGA. In addition, it maintains genetic diversity as a bonus. This paper also proposes an analytic model for investigating convergence enhancement (i.e., speedup).|Experimental results show that the proposed algorithms, ne-cGA in particular, generally exhibit a better quality of solution and a higher rate of convergence for most of the problems than do the existing cGA, sGA, and (1 + 1) -ES. The speedup model has been verified by experiments. The results also show that an adequate alleviation of elitism further improves the solution quality, as well as the convergence speed.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000184819400004",
+        "year": "2003"
+    },
+    {
+        "title": "Design of multithreaded estimation of distribution algorithms",
+        "authors": "Ocenasek, J, Schwarz, J and Pelikan, M",
+        "description": "Estimation of Distribution Algorithms (EDAs) use a probabilistic model of promising solutions found so far to obtain new candidate solutions of an optimization problem. This paper focuses on the design of parallel EDAs. More specifically, the paper describes a method for parallel construction of Bayesian networks with local structures in form of decision trees in the Mixed Bayesian Optimization Algorithm. The proposed Multithreaded Mixed Bayesian Optimization Algorithm (MMBOA) is intended for implementation on a cluster of workstations that communicate by Message Passing Interface (MPI). Communication latencies between workstations are eliminated by multithreaded processing, so in each workstation the high-priority model-building thread, which is communication demanding, can be overlapped by low-priority model sampling thread when necessary. High performance of MMBOA is verified via simulation in TRANSIM tool.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074300001",
+        "year": "2003"
+    },
+    {
+        "title": "Learning semi naive Bayes structures by estimation of distribution algorithms",
+        "authors": "Robles, V, Larra\u00f1aga, P, Herves, V",
+        "description": "Recent work in supervised learning has shown that a surprisingly simple Bayesian classifier called naive Bayes is competitive with state of the art classifiers. This simple approach stands from assumptions of conditional independence among features given the class. Improvements in accuracy of naive Bayes has been demonstrated by a number of approaches, collectively named semi naive Bayes classifiers. Semi naive Bayes classifiers are usually based on the search of specific values or structures. The learning process of these classifiers is usually based on greedy search algorithms. In this paper we propose to learn these semi naive Bayes structures through estimation of distribution algorithms, which are non-deterministic, stochastic heuristic search strategies. Experimental tests have been done with 21 data sets from the UCI repository.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000187551600023",
+        "year": "2003"
+    },
+    {
+        "title": "Hybridization of estimation of distribution algorithms with a repair method for solving constraint satisfaction problems",
+        "authors": "Handa, H",
+        "description": "Estimation of Distribution Algorithms (EDAs) are new promising methods in the field of genetic and evolutionary algorithms. In the case of conventional Genetic and Evolutionary Algorithm studies to apply Constraint Satisfaction Problems (CSPs), it is well-known that the incorporation of the domain knowledge in the CSPs is quite effective. In this paper, we propose a hybridization method (memetic algorithm) of Estimation of Distribution Algorithms with a repair method. Experimental results on general CSPs tell us the effectiveness of the proposed method.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074200110",
+        "year": "2003"
+    },
+    {
+        "title": "The structure of evolutionary exploration: On crossover, buildings blocks, and estimation-of-distribution algorithms",
+        "authors": "Toussaint, M",
+        "description": "Correlations between alleles after selection are an important source of information. Such correlations should be exploited for further search and thereby constitute the building blocks of evolutionary exploration. With this background we analyze the structure of the offspring probability distribution, or exploration distribution, for a simple GA with mutation only and a crossover GA and Compare them to Estimation-Of-Distribution Algorithms (EDAs). This will allow a precise characterization of the structure of exploration w.r.t. correlations in the search distribution for these algorithms. We find that crossover transforms, depending on the crossover mask, mutual information between loci into entropy. In total, it can only decrease such,mutual information. In contrast, the objective of EDAs is to estimate the correlations between loci and exploit this information during exploration. This may lead to an effective increase of mutual information in the exploration distribution, what we define correlated exploration.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000185074300017",
+        "year": "2003"
+    },
+    {
+        "title": "Learning Bayesian networks in the space of structures by estimation of distribution algorithms",
+        "authors": "Blanco, R, Inza, I and Larra\u00f1ga, P",
+        "description": "The induction of the optimal Bayesian network structure is NP-hard, justifying the use of search heuristics. Two novel population-based stochastic search approaches, univariate marginal distribution algorithm (UMDA) and population-based incremental learning (PBIL), are used to learn a Bayesian network structure from a database of cases in a score + search framework. A comparison with a genetic algorithm (GA) approach is performed using three different scores: penalized maximum likelihood, marginal likelihood, and information-theory-based entropy. Experimental results show the interesting capabilities of both novel approaches with respect to the score value and the number of generations needed to converge. (C) 2003 Wiley Periodicals, Inc.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000180769900006",
+        "year": "2003"
+    },
+    {
+        "title": "Variable search space for software testing",
+        "authors": "Sagarna, R and Lozano, JA",
+        "description": "Testing is an essential phase in the software life cycle. One of the most important tasks testing involves is the automatic generation of the test inputs. The field of Evolutionary Testing aims at solving this task by means of combinatorial optimization search methods.|An Evolutionary Testing based approach to the automatic generation of test cases is presented. The developed approach considers variable search regions in which appropriate test inputs are sought. The search is performed by means of an emerging set of evolutionary algorithms called Estimation of Distribution Algorithms. The experimental results obtained show this approach as a promising option for tackling this problem.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189460400138",
+        "year": "2003"
+    },
+    {
+        "title": "Program evolution with explicit learning",
+        "authors": "Shan, Y, McKay, RI, Essam, D",
+        "description": "In Genetic Programming (GP) and most other evolutionary computing approaches, the knowledge learned during the evolutionary processing is implicitly encoded in the population. A small family of approaches, known as Estimation of Distribution Algorithms, learn this knowledge directly in the form of probability distributions. In this research, we proposed a new approach for program synthesis - Program Evolution with Explicit Learning (PEEL), belonging to this family. PEEL learns probability distributions from previous generations and stochastically generates new populations according to this distribution. PEEL is intrinsically different from GP systems because it abandons conventional GP genetic operators and does not maintain a population. On the benchmark problems we have studied, this approach shows at least comparable performance to GP.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221532900222",
+        "year": "2003"
+    },
+    {
+        "title": "Estimation of Bayesian network algorithm with GA searching for better network structure",
+        "authors": "Handa, H and Katai, O",
+        "description": "Estimation of Bayesian Network Algorithms which adopt Bayesian Networks as the probabilistic model were one of the most sophisticated algorithms in the Estimation of Distribution Algorithms. However the estimation of Bayesian Network is key topic of this algorithm, conventional EBNAs adopt greedy. searches to search for better network structures. In this paper, we propose a new EBNA which adopts Genetic Algorithm to search the structure of Bayesian Network. In order to reduce the computational complexity of estimating better network structures, we elaborates the fitness function of the GA module, based upon the synchronicity of specific pattern in the selected individuals. Several computational simulations on multidimensional knapsack problems show us the effectiveness of the proposed method.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189460400104",
+        "year": "2003"
+    },
+    {
+        "title": "Estimating distributions in genetic algorithms",
+        "authors": "Dikmen, O, Akin, HL and Alpaydin, E",
+        "description": "The canonical operators of genetic algorithms, i.e., mutation and crossover, have nondeterministic effects on the population. They use information from only one or two fit individuals and risk deforming the chromosomes of fit individuals and cause an interruption in the progression. Estimation of Distribution Algorithms (EDAs) use probabilistic models rather than mutation and crossover, to guide the progression of genetic algorithms by placing a density over all fit individuals and sampling from this density. EDA therefore makes better use of the fitness information of the previous generation and promise faster convergence without losing any schemata. We consider parametric, nonparametric, and semiparametric models for density estimation in the EDA template with continuous genes. We compare these methods with standard backpropagation and GA proper in the problem of training a multilayer perceptron which is a complex nonlinear estimator. Our results indicate that our algorithms perform definitely better than the proper genetic algorithm (GA) on every problem and can find better solutions than those of backpropagation in training a MLP.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000188096800065",
+        "year": "2003"
+    },
+    {
+        "title": "Optimization in continuous domain by real-coded estimation of distribution algorithm",
+        "authors": "Paul, TK and Iba, H",
+        "description": "Finding global optima in the continuous domain is challenging for Genetic Algorithms (GAs). Traditional GAs use either binary-coded or real-coded representation of the variables, but there is a trade-off between these two encoding methods. Recombination operators for binary-coded GAs are simple to design, but the length of the string representing an individual would be huge if the number of design variables is larger; whereas, in real-coded GAs the length of an individual would be shorter, but the design of crossover and mutation operators are difficult, and sometimes they lead to premature convergence. To alleviate the problems of these two methods of encoding, real-coded Estimation of Distribution Algorithms (EDAs), which replace the recombination operators of GAs with estimation and sampling of the probability density function of the variables at each generation, have been proposed. In this paper, we show how real-coded EDAs can be applied to the optimization of multivariate functions in continuous domain and present the experimental results of three bench-mark functions produced by our proposed algorithm. In comparison with others EDAs, our proposed method obtains encouraging accuracy and efficiency.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221600700027",
+        "year": "2003"
+    },
+    {
+        "title": "Elitism-based compact genetic algorithms",
+        "authors": "Ahn, CW and Ramakrishna, RS",
+        "description": "This paper describes two elitism-based compact genetic algorithms (cGAs)-persistent elitist compact genetic algorithm (pe-cGA), and nonpersistent elitist compact genetic algorithm (ne-cGA). The aim is to design efficient compact-type GAs by treating them as estimation of distribution algorithms ( I EDAs) for solving difficult optimization problems without compromising on memory and computation costs. The idea is to deal with issues connected with lack of memory-inherent disadvantage of cGAs-by allowing a selection pressure that is high enough to offset the disruptive effect of uniform crossover. The point is to properly reconcile the cGA with elitism. The pe-cGA finds a near optimal solution (i.e., a winner) that is maintained as long as other solutions (i.e., competitors) generated from probability vectors are no better. It attempts to adaptively alter the selection pressure according to the degree of problem difficulty by employing only the pair-wise tournament selection strategy. Moreover, it incorporates the equivalent model of the (1 + 1) evolution strategy (ES) with self-adaptive mutation. The pe-cGA, apart from providing a high performance, also reveals the hidden connection between EDAs (e.g., cGA) and ESs (e.g., (1 + 1)-ES). On the other hand, the ne-cGA further improves the performance of the pe-cGA by, avoiding strong elitism that may lead to premature convergence. The ne-cGA comes with all the benefits of the pe-cGA. In addition, it maintains genetic diversity as a bonus. This paper also proposes an analytic model for investigating convergence enhancement (i.e., speedup).|Experimental results show that the proposed algorithms, ne-cGA in particular, generally exhibit a better quality of solution and a higher rate of convergence for most of the problems than do the existing cGA, sGA, and (1 + 1) -ES. The speedup model has been verified by experiments. The results also show that an adequate alleviation of elitism further improves the solution quality, as well as the convergence speed.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000184819400004",
+        "year": "2003"
+    }
+]

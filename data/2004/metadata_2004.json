@@ -1,0 +1,828 @@
+[
+    {
+        "title": "Estimation of distribution algorithms without explicit selections",
+        "authors": "Munetomo, M",
+        "description": "This paper proposes estimation of distribution algorithms without explicit selections by introducing assignment functions in their probabilistic model building process. Estimation of distribution algorithms build a probabilistic model from a selected population of promising solutions, which is employed to generate offsprings of the next generation. Instead employing selections, our model employ",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000227679300015",
+        "year": "2004"
+    },
+    {
+        "title": "On the convergence of a class of estimation of distribution algorithms",
+        "authors": "Zhang, QF and M\u00fchlenbein, H",
+        "description": "We investigate the global convergence of estimation of distribution algorithms (EDAs). In EDAs, the distribution is estimated from a set of selected elements, i.e., the parent set, and then the estimated distribution model is used to generate new elements. In this paper, we prove that: 1) if the distribution of the new elements matches that of the parent set exactly, the algorithms will converge to the global optimum under three widely used selection schemes and 2) a factorized distribution algorithm converges globally under proportional selection.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000220968200004",
+        "year": "2004"
+    },
+    {
+        "title": "Unsupervised learning of Bayesian networks via estimation of distribution algorithms:: An application to gene expression data clustering",
+        "authors": "Pe\u00f1a, JM, Lozano, JA and Larra\u00f1aga, P",
+        "description": "This paper proposes using estimation of distribution algorithms for unsupervised learning of Bayesian networks, directly as well as within the framework of the Bayesian structural EM algorithm. Both approaches are empirically evaluated in synthetic and real data. Specifically, the evaluation in real data consists in the application of this paper's proposals to gene expression data clustering, i.e., the identification of clusters of genes with similar expression profiles across samples, for the leukemia database. The validation of the clusters of genes that are identified suggests that these may be biologically meaningful.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000220231200005",
+        "year": "2004"
+    },
+    {
+        "title": "Learning Bayesian networks in the space of orderings with estimation of distribution algorithms",
+        "authors": "Romero, T, Larra\u00f1aga, P and Sierra, B",
+        "description": "The search for the optimal ordering of a set of variables in order to solve a computational problem is a difficulty that can appear in several circumstances. One of these situations is the automatic learning of a network structure, for example, a Bayesian Network structure (BN) starting from a dataset. Searching in the space of structures is often unmanageable, especially if the number of variables is high. Popular heuristic approaches, like Cooper and Herskovits's K2 algorithm, depend on a given ordering of variables. Estimation of Distribution Algorithms (EDAs) are a new paradigm for Evolutionary Computation that have been used as a search engine in the BN structure learning problem. In this paper, we will use two different EDAs to obtain not the best structure, but the optimal ordering of variables for the K2 algorithm: UMDA and MIMIC, both of them in discrete and continuous domains. We will also check whether the individual representation and its relation to the corresponding ordering play important roles, and whether MIMIC outperforms the results of UMDA.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222729300005",
+        "year": "2004"
+    },
+    {
+        "title": "Protein folding in 2-dimensional lattices with estimation of distribution algorithms",
+        "authors": "Santana, R, Larra\u00f1aga, P and Lozano, JA",
+        "description": "This paper introduces a new type of evolutionary computation algorithm based on probability distributions for the solution of two simplified protein folding models. The relationship of the introduced algorithm with previous evolutionary methods used for protein folding is discussed. A number of experiments for difficult instances of the models under analysis is presented. For the instances considered, the algorithm is shown to outperform previous evolutionary optimization methods.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226129700039",
+        "year": "2004"
+    },
+    {
+        "title": "Mutation can improve the search capability of estimation of distribution algorithms",
+        "authors": "Handa, H",
+        "description": "The Estimation of Distribution Algorithms are a class of evolutionary algorithms which adopt probabilistic models to reproduce the genetic information of the next generation, instead of conventional crossover and mutation operations. In this paper, we propose new EDAs which incorporate mutation operator to conventional EDAs in order to keep the diversities in EDA populations. Experiments results shown in this paper confirm us the effectiveness of the proposed methods.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600041",
+        "year": "2004"
+    },
+    {
+        "title": "Heuristic based sampling in estimation of distribution algorithms:: An initial approach",
+        "authors": "de la Ossa, L, G\u00e1mez, JA and Puerta, JM",
+        "description": "Estimation of Distribution Algorithms (EDAs) are a kind of evolutionary algorithms where classical genetic operators are replaced by the estimation of a probabilistic model and its simulation in order to generate the next population. With this work we tackle, in a preliminary way, how to incorporate specific heuristic knowledge in the sampling phase. We propose two ways to do it and evaluate them experimentally through the classical knapsack problem.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222638300038",
+        "year": "2004"
+    },
+    {
+        "title": "GA-EDA: Hybrid evolutionary algorithm using genetic and estimation of distribution algorithms",
+        "authors": "Pe\u00f1a, JM, Robles, V, P\u00e9rez, MS",
+        "description": "Evolutionary techniques are one of the most successful paradigms in the field of optimization. In this paper we present a new approach, named GAEDA, which is a new hybrid algorithm based on genetic and estimation of distribution algorithms. The original objective is to get benefits from both approaches. In order to perform an evaluation of this new approach a selection of synthetic optimizations problems have been proposed together with two real-world cases. Experimental results show the correctness of our new approach.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221714200038",
+        "year": "2004"
+    },
+    {
+        "title": "PolyEDA: Combining estimation of distribution algorithms and linear inequality constraints",
+        "authors": "Grahl, J and Rothlauf, F",
+        "description": "Estimation of distribution algorithms (EDAs) are population-based heuristic search methods that use probabilistic models of good solutions to guide their search. When applied to constrained optimization problems, most evolutionary algorithms use special techniques for handling invalid solutions. This paper presents PolyEDA, a new EDA approach that is able to directly consider linear inequality constraints by using Gibbs sampling. Gibbs sampling allows us to sample new individuals inside the boundaries of the polyhedral search space described using a set of linear inequality constraints by iteratively constructing a density approximation that lies entirely inside the polyhedron. Gibbs sampling prevents the creation of infeasible solutions. Thus, no additional techniques for handling infeasible solutions are needed in PolyEDA. Due to its ability to consider linear inequality constraints, PolyEDA can be used for highly constrained optimization problems, where even the generation of valid solutions is a non-trivial task. Results for different variants of a constrained Rosenbrock problem show a higher performance of PolyEDA in comparison to a standard EDA using rejection sampling.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225101200114",
+        "year": "2004"
+    },
+    {
+        "title": "Multiple-deme parallel estimation of distribution algorithms: Basic framework and application",
+        "authors": "Ahn, CW, Goldberg, DE and Ramakrishna, RS",
+        "description": "This paper presents a basic framework that facilitates the development of new multiple-deme parallel estimation of distribution algorithms (PEDAs). The aim is to carry over the migration effect that arises in multiple-deme parallel genetic algorithms (PGAs) into probability distribution of EDAs. The idea is to employ two kinds of probability vector (PV): one each for resident and immigrant candidates. The distribution of crossbred individuals (that virtually exist on both kinds of PV) is then utilized by a new type of crossover, the PV-wise crossover. A multiple-deme parallel population-based incremental learning ((PBIL)-B-2) scheme is proposed as an application. The (PBIL)-B-2 scheme closely follows the proposed framework that includes a new learning strategy (i.e., PV update rule). Experimental results show that (PBIL)-B-2 generally exhibits solutions that compare favourably with those computed by an existing PGA with multiple demes, thereby supporting the validity of the proposed framework for designing multiple-deme PEDAs.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221559200071",
+        "year": "2004"
+    },
+    {
+        "title": "Constrained optimization problem solving using estimation of distribution algorithms",
+        "authors": "Simionescu, PA, Beale, DG and Dozier, GV",
+        "description": "Two variants of Estimation of Distribution Algorithm (EDA) are tested against solving several continuous optimization problems with constraints. Numerical experiments are conducted and comparison is made between constraint handling using several types of penalty and repair operators in case of both elitist and non-elitist implementations of the EDA's. Graphical display and animations of representative runs of the best and worst performers proved useful in enhancing the understanding of how such algorithms work.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222818400041",
+        "year": "2004"
+    },
+    {
+        "title": "On the convergence of a factorized distribution algorithm with truncation selection",
+        "authors": "Zhang, QF",
+        "description": "We investigate the global convergence of a factorized distribution algorithm (FDA) with truncation selection. Like conventional genetic algorithms, FDAs maintain and successively improve a population of solutions. In FDAs a distribution model is built based on the statistical information extracted from a set of selected solutions in the current population, and then the model thus built is used to generate new solutions for the next generation. The variable-dependence structure of the distribution model in FDAs is determined by the variable-interaction structure of the objective function. We prove that the FDA with truncation selection converges globally for optimization of a class of additively decomposable functions (ADF). Our results imply that the utilization of appropriately selected dependence relationships is sufficient to guarantee the global convergence of estimation of distribution algorithms (EDAs) for optimization of ADFs. (c) 2004 Wiley Periodicals, Inc.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226746400004",
+        "year": "2004"
+    },
+    {
+        "title": "Gene selection for cancer classification using wrapper approaches",
+        "authors": "Blanco, R, Larra\u00f1aga, P, Sierra, B",
+        "description": "Despite the fact that cancer classification has considerably improved, nowadays a general method that classifies known types of cancer has not yet been developed. In this work, we propose the use of supervised classification techniques, coupled with feature subset selection algorithms, to automatically perform this classification in gene expression datasets. Due to the large number of features of gene expression datasets, the search of a highly accurate combination of features is done by means of the new Estimation of Distribution Algorithms paradigm. In order to assess the accuracy level of the proposed approach, the naive-Bayes classification algorithm is employed in a wrapper form. Promising results are achieved, in addition to a considerable reduction in the number of genes. Stating the optimal selection of genes as a search task, an automatic and robust choice in the genes finally selected is performed, in contrast to previous works that research the same types of problems.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226440800001",
+        "year": "2004"
+    },
+    {
+        "title": "A study of the effects of dimensionality on stochastic hill climbers and estimation of distribution algorithms",
+        "authors": "Grosset, L, Le Riche, R and Haftka, RT",
+        "description": "One of the most important features of an optimization method is its response to an increase in the number of variables, n. Random stochastic hill climber (SHC) and univariate marginal distribution algorithms (UMDA) are two fundamentally different stochastic optimizers. SHC proceeds with local perturbations while UMDA infers and uses a global probability density. The response to dimensionality of the two methods is compared both numerically and theoretically on unimodal functions. SHC response is O(n ln n), while UMDA response ranges from O(root(n) ln(n)) to O(n ln(n)). On two test problems whose sizes go up to 7(200), SHC is faster than UMDA.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221502600003",
+        "year": "2004"
+    },
+    {
+        "title": "Model-based search for combinatorial optimization: A critical survey",
+        "authors": "Zlochin, M, Birattari, M, Dorigo, M",
+        "description": "In this paper we introduce model-based search as a unifying framework accommodating some recently proposed metaheuristics for combinatorial optimization such as ant colony optimization, stochastic gradient ascent, cross-entropy and estimation of distribution methods. We discuss similarities as well as distinctive features of each method and we propose some extensions.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000223535200017",
+        "year": "2004"
+    },
+    {
+        "title": "On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm",
+        "authors": "Zhang, QF",
+        "description": "This paper aims to study the advantages of using higher order statistics in estimation distribution of algorithms (EDAs). We study two EDAs with two-tournament selection for discrete optimization problems. One is the univariate marginal distribution algorithm (UMDA) using only first-order statistics and the other is the factorized distribution algorithm (FDA) using higher order statistics. We introduce the heuristic functions and the limit models of these two algorithms and analyze stability of these limit models. It is shown that the limit model of UMDA can be trapped at any local optimal solution for some initial probability models. However, degenerate probability density functions (pdfs) at some local optimal solutions are unstable in the limit model of FDA. In particular, the degenerate pdf at the global optimal solution is the unique asymptotically stable point in the limit model of FDA for the optimization of an additively decomposable function. Our results suggest that using higher order statistics could improve the chance of finding the global optimal solution.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189357300006",
+        "year": "2004"
+    },
+    {
+        "title": "Feature selection for splice site prediction:: A new method using EDA-based feature ranking -: art. no. 64",
+        "authors": "Saeys, Y, Degroeve, S, Van de Peer, Y",
+        "description": "Background: The identification of relevant biological features in large and complex datasets is an important step towards gaining insight in the processes underlying the data. Other advantages of feature selection include the ability of the classification system to attain good or even better solutions using a restricted subset of features, and a faster classification. Thus, robust methods for fast feature selection are of key importance in extracting knowledge from complex biological data.|Results: In this paper we present a novel method for feature subset selection applied to splice site prediction, based on estimation of distribution algorithms, a more general framework of genetic algorithms. From the estimated distribution of the algorithm, a feature ranking is derived. Afterwards this ranking is used to iteratively discard features. We apply this technique to the problem of splice site prediction, and show how it can be used to gain insight into the underlying biological process of splicing.|Conclusion: We show that this technique proves to be more robust than the traditional use of estimation of distribution algorithms for feature selection: instead of returning a single best subset of features ( as they normally do) this method provides a dynamical view of the feature selection process, like the traditional sequential wrapper methods. However, the method is faster than the traditional techniques, and scales better to datasets described by a large number of features.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222504600001",
+        "year": "2004"
+    },
+    {
+        "title": "Distribution tree-building real-valued evolutionary algorithm",
+        "authors": "Pos\u00edk, P",
+        "description": "This article describes a new model of probability density function and its use in estimation of distribution algorithms. The new model, the distribution tree, has interesting properties and can form a solid basis for further improvements which will make it even more competitive. Several comparative experiments on continuous real-valued optimization problems were carried out and the results are promising. It outperformed the genetic algorithm using the traditional crossover operator several times, in the majority of the remaining experiments it was comparable to the genetic algorithm performance.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300038",
+        "year": "2004"
+    },
+    {
+        "title": "Learning probabilistic tree grammars for Genetic Programming",
+        "authors": "Bosman, PAN and de Jong, ED",
+        "description": "Genetic Programming (GP) provides evolutionary methods for problems with tree representations. A recent development in Genetic Algorithms (GAs) has led to principled algorithms called Estimation-of-Distribution Algorithms (EDAs). EDAs identify and exploit structural features of a problem's structure during optimization. Here, we investigate the use of a specific EDA for GP. We develop a probabilistic model that employs transformations of production rules in a context-free grammar to represent local structures. The results of performing experiments on two benchmark problems demonstrate the feasibility of the approach.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300020",
+        "year": "2004"
+    },
+    {
+        "title": "Evolutionary continuous optimization by distribution estimation with variational Bayesian independent component analyzers mixture model",
+        "authors": "Cho, DY and Zhang, BT",
+        "description": "In evolutionary continuous optimization by building and using probabilistic models, the multivariate Gaussian distribution and their variants or extensions such as the mixture of Gaussians have been used popularly. However, this Gaussian assumption is often violated in many real problems. In this paper, we propose a new continuous estimation of distribution algorithms (EDAs) with the variational Bayesian independent component analyzers mixture model (vbICA-MM) for allowing any distribution to be modeled. We examine how this sophisticated density estimation technique has influence on the performance of the optimization by employing the same selection and population alternation schemes used in the previous EDAs. Our experimental results support that the presented EDAs achieve better performance than previous EDAs with ICA and Gaussian mixture- or kernel-based approaches.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300022",
+        "year": "2004"
+    },
+    {
+        "title": "Migration of probability models instead of individuals:: An alternative when applying the island model to EDAs",
+        "authors": "delaOssa, L, G\u00e1mez, JA and Puerta, JM",
+        "description": "In this work we experiment with the application of island models to Estimation of Distribution Algorithms (EDAs) in the field of combinatorial optimization. This study is motivated by the success obtained by these models when applied to other meta-heuristics (such as genetic algorithms, simulated annealing or VNS) and by the use of a compact representation of the population that make EDAs through probability distributions. This fact can be exploited during information interchange among islands. In this work we experiment with two types of island-based EDAs: (1) migration of individuals, and (2) migration of probability models. Also, two alternatives are studied for the phase of model combinations: assigning constant weights to inner and incoming models or assigning adaptive weights based-on their fitness. The proposed algorithms are tested over a suite of four combinatorial optimization problems.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300025",
+        "year": "2004"
+    },
+    {
+        "title": "Parallel Stochastic search for protein secondary structure prediction",
+        "authors": "Robles, V, P\u00e9rez, MS, Larra\u00f1aga, P",
+        "description": "Prediction of the secondary structure of a protein from its aminoacid sequence remains an important and difficult task. Up to this moment, three generations of Protein Secondary Structure Algorithms have been defined: The first generation is based on statistical information over single aminoacids, the second generation is based on windows of aminoacids -typically 11-21 aminoacids - and the third generation is based on the usage of evolutionary information. In this paper we propose the usage of naive Bayes and Interval Estimation Naive Bayes (IENB) - a new semi naive Bayes approach - as suitable third generation methods for Protein Secondary Structure Prediction (PSSP). One of the main stages of IENB is based on a heuristic optimization, carried out by estimation of distribution algorithms (EDAs). EDAs are non-deterministic, stochastic and heuristic search strategies that belong to the evolutionary computation approaches. These algorithms under complex problems, like Protein Secondary Structure Prediction, require intensive calculation. This paper also introduces a parallel variant of IENB called PIENB (Parallel Interval Estimation Naive Bayes).",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221559200149",
+        "year": "2004"
+    },
+    {
+        "title": "Bayesian methods to estimate future load in web farms",
+        "authors": "Pe\u00f1a, JM, Robles, V, P\u00e9rez, MS",
+        "description": "Web Farms are clustered systems designed to provide high availability and high performance web services. A web farm is a group of replicated HTTP servers that reply web requests forwarded by a single point of access to the service. To deal with this task the point of access executes a load balancing algorithm to distribute web request among the group of servers. The present algorithms provides a short-term dynamic configuration for this operation, but some corrective actions (granting different session priorities or distributed WAN forwarding) cannot be achieved without a long-term estimation of the future web load. On this paper we propose a method to forecast web service work load. Our approach also includes an innovative segmentation method for the web pages using EDAs (estimation of distribution algorithms) and the application of semi-naive Bayes classifiers to predict future web load several minutes before. All our analysis has been performed using real data from a world-wide academic portal.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221807000022",
+        "year": "2004"
+    },
+    {
+        "title": "Updating the probability vector using MRF technique for a Univariate EDA",
+        "authors": "Shakya, SK, McCall, JAW and Brown, DF",
+        "description": "In this paper, we propose a new technique to update a probability vector [1] for Estimation of Distribution Algorithms (EDA)[15]. We present a novel algorithm belonging to the general class of EDA which we call Distribution Estimation using Markov Random Fields (DEUM). In common with other EDAs, DEUM uses a population of chromosomes to build a probabilistic model of good solutions. The model is then used to update the probability vector which is sampled to generate further populations, replacing the function of recombinative operators in a traditional genetic algorithm. DEUM uses Markov Random Field (MRF) modelling [3] to estimate the probabilistic relationship between allele values and fitness and iteratively refine a probability vector to generate better solutions. We present experimental results on the performance of DEUM and make comparisons with other algorithms in the Univariate EDA class. Our experiments show that MRF modelling provides a significant advantage over other approaches on problems where univariate algorithms are typically used.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225469300002",
+        "year": "2004"
+    },
+    {
+        "title": "Memetic optimization of video chain designs",
+        "authors": "Ali, W and Topchy, A",
+        "description": "Improving image quality is the backbone of highly competitive display industry. Contemporary video processing system design is a challenging optimization problem. Generally, several video algorithms must be sequentially applied to real-time video data. Overall image quality depends on the nonlinear interactions between multiple design parameters: variable settings for each module (algorithm), the amount of data being transferred in the video processing chain as well as the order of the cascading modules. Unfortunately, no systematic techniques are currently available to configure the video chain without lengthy trial and error process. We propose a rapid and reliable method for optimization of composite video processing systems based on genetic algorithm coupled with local search heuristics. Video system configuration is evolved toward the best image quality, driven by an objective video quality metric. We analyze several local search approaches, including hill-climbing, simplex and estimation-of-distribution algorithms. Experimental study demonstrates superior performance of memetic strategies over the conventional genetic algorithm. We obtain novel and practical video chain solutions that are typically not attainable by regular design process.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600101",
+        "year": "2004"
+    },
+    {
+        "title": "Performance comparison between parallel GA based on linkage identification and parallel Bayesian optimization algorithm",
+        "authors": "Murao, N, Munetomo, M and Akama, K",
+        "description": "Genetic Algorithms (GAs) are considered robust optimization algorithms which can solve wide-spectrum of difficult problems such as combinatorial optimization problems. Still, there are some GA-difficult problems which cannot ensure tight linkage in encoding strings. In such problems, crossovers cannot perform effectively on loosely encoded strings due to building block disruptions. Recently, a series of advanced techniques in evolutionary computations have been proposed to solve such GA-difficult problems. As one of these techniques, linkage identification checks nonlinearity caused by bit-wise perturbations for pairs of loci. Another advanced technique is Estimation of Distribution Algorithms (EDAs) which estimates probabilistic distribution for populations, and the Bayesian Optimization Algorithm (BOA) is the most sophisticated method in the EDAs. These methods can solve GA-difficult problem, paying additional computational cost. Therefore, parallel versions of these techniques, parallel GA based on linkage identification and parallel BOA, are studied to reduce computation time. In this paper, we compare performance of the parallel GA based on linkage identification with that of parallel BOA in actual parallel computing environment From the results, we consider relations between performance of the algorithms and the characteristics of the problems to be solved. Finally, we make discussions on the problem domains which algorithm performs more efficiently.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000227836700025",
+        "year": "2004"
+    },
+    {
+        "title": "Estimation of distribution algorithms without explicit selections",
+        "authors": "Munetomo, M",
+        "description": "This paper proposes estimation of distribution algorithms without explicit selections by introducing assignment functions in their probabilistic model building process. Estimation of distribution algorithms build a probabilistic model from a selected population of promising solutions, which is employed to generate offsprings of the next generation. Instead employing selections, our model employ",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000227679300015",
+        "year": "2004"
+    },
+    {
+        "title": "On the convergence of a class of estimation of distribution algorithms",
+        "authors": "Zhang, QF and M\u00fchlenbein, H",
+        "description": "We investigate the global convergence of estimation of distribution algorithms (EDAs). In EDAs, the distribution is estimated from a set of selected elements, i.e., the parent set, and then the estimated distribution model is used to generate new elements. In this paper, we prove that: 1) if the distribution of the new elements matches that of the parent set exactly, the algorithms will converge to the global optimum under three widely used selection schemes and 2) a factorized distribution algorithm converges globally under proportional selection.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000220968200004",
+        "year": "2004"
+    },
+    {
+        "title": "Unsupervised learning of Bayesian networks via estimation of distribution algorithms:: An application to gene expression data clustering",
+        "authors": "Pe\u00f1a, JM, Lozano, JA and Larra\u00f1aga, P",
+        "description": "This paper proposes using estimation of distribution algorithms for unsupervised learning of Bayesian networks, directly as well as within the framework of the Bayesian structural EM algorithm. Both approaches are empirically evaluated in synthetic and real data. Specifically, the evaluation in real data consists in the application of this paper's proposals to gene expression data clustering, i.e., the identification of clusters of genes with similar expression profiles across samples, for the leukemia database. The validation of the clusters of genes that are identified suggests that these may be biologically meaningful.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000220231200005",
+        "year": "2004"
+    },
+    {
+        "title": "Learning Bayesian networks in the space of orderings with estimation of distribution algorithms",
+        "authors": "Romero, T, Larra\u00f1aga, P and Sierra, B",
+        "description": "The search for the optimal ordering of a set of variables in order to solve a computational problem is a difficulty that can appear in several circumstances. One of these situations is the automatic learning of a network structure, for example, a Bayesian Network structure (BN) starting from a dataset. Searching in the space of structures is often unmanageable, especially if the number of variables is high. Popular heuristic approaches, like Cooper and Herskovits's K2 algorithm, depend on a given ordering of variables. Estimation of Distribution Algorithms (EDAs) are a new paradigm for Evolutionary Computation that have been used as a search engine in the BN structure learning problem. In this paper, we will use two different EDAs to obtain not the best structure, but the optimal ordering of variables for the K2 algorithm: UMDA and MIMIC, both of them in discrete and continuous domains. We will also check whether the individual representation and its relation to the corresponding ordering play important roles, and whether MIMIC outperforms the results of UMDA.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222729300005",
+        "year": "2004"
+    },
+    {
+        "title": "Protein folding in 2-dimensional lattices with estimation of distribution algorithms",
+        "authors": "Santana, R, Larra\u00f1aga, P and Lozano, JA",
+        "description": "This paper introduces a new type of evolutionary computation algorithm based on probability distributions for the solution of two simplified protein folding models. The relationship of the introduced algorithm with previous evolutionary methods used for protein folding is discussed. A number of experiments for difficult instances of the models under analysis is presented. For the instances considered, the algorithm is shown to outperform previous evolutionary optimization methods.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226129700039",
+        "year": "2004"
+    },
+    {
+        "title": "Mutation can improve the search capability of estimation of distribution algorithms",
+        "authors": "Handa, H",
+        "description": "The Estimation of Distribution Algorithms are a class of evolutionary algorithms which adopt probabilistic models to reproduce the genetic information of the next generation, instead of conventional crossover and mutation operations. In this paper, we propose new EDAs which incorporate mutation operator to conventional EDAs in order to keep the diversities in EDA populations. Experiments results shown in this paper confirm us the effectiveness of the proposed methods.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600041",
+        "year": "2004"
+    },
+    {
+        "title": "Heuristic based sampling in estimation of distribution algorithms:: An initial approach",
+        "authors": "de la Ossa, L, G\u00e1mez, JA and Puerta, JM",
+        "description": "Estimation of Distribution Algorithms (EDAs) are a kind of evolutionary algorithms where classical genetic operators are replaced by the estimation of a probabilistic model and its simulation in order to generate the next population. With this work we tackle, in a preliminary way, how to incorporate specific heuristic knowledge in the sampling phase. We propose two ways to do it and evaluate them experimentally through the classical knapsack problem.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222638300038",
+        "year": "2004"
+    },
+    {
+        "title": "GA-EDA:: Hybrid evolutionary algorithm using genetic and estimation of distribution algorithms",
+        "authors": "Pe\u00f1a, JM, Robles, V, P\u00e9rez, MS",
+        "description": "Evolutionary techniques are one of the most successful paradigms in the field of optimization. In this paper we present a new approach, named GAEDA, which is a new hybrid algorithm based on genetic and estimation of distribution algorithms. The original objective is to get benefits from both approaches. In order to perform an evaluation of this new approach a selection of synthetic optimizations problems have been proposed together with two real-world cases. Experimental results show the correctness of our new approach.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221714200038",
+        "year": "2004"
+    },
+    {
+        "title": "PolyEDA: Combining estimation of distribution algorithms and linear inequality constraints",
+        "authors": "Grahl, J and Rothlauf, F",
+        "description": "Estimation of distribution algorithms (EDAs) are population-based heuristic search methods that use probabilistic models of good solutions to guide their search. When applied to constrained optimization problems, most evolutionary algorithms use special techniques for handling invalid solutions. This paper presents PolyEDA, a new EDA approach that is able to directly consider linear inequality constraints by using Gibbs sampling. Gibbs sampling allows us to sample new individuals inside the boundaries of the polyhedral search space described using a set of linear inequality constraints by iteratively constructing a density approximation that lies entirely inside the polyhedron. Gibbs sampling prevents the creation of infeasible solutions. Thus, no additional techniques for handling infeasible solutions are needed in PolyEDA. Due to its ability to consider linear inequality constraints, PolyEDA can be used for highly constrained optimization problems, where even the generation of valid solutions is a non-trivial task. Results for different variants of a constrained Rosenbrock problem show a higher performance of PolyEDA in comparison to a standard EDA using rejection sampling.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225101200114",
+        "year": "2004"
+    },
+    {
+        "title": "Multiple-deme parallel estimation of distribution algorithms: Basic framework and application",
+        "authors": "Ahn, CW, Goldberg, DE and Ramakrishna, RS",
+        "description": "This paper presents a basic framework that facilitates the development of new multiple-deme parallel estimation of distribution algorithms (PEDAs). The aim is to carry over the migration effect that arises in multiple-deme parallel genetic algorithms (PGAs) into probability distribution of EDAs. The idea is to employ two kinds of probability vector (PV): one each for resident and immigrant candidates. The distribution of crossbred individuals (that virtually exist on both kinds of PV) is then utilized by a new type of crossover, the PV-wise crossover. A multiple-deme parallel population-based incremental learning ((PBIL)-B-2) scheme is proposed as an application. The (PBIL)-B-2 scheme closely follows the proposed framework that includes a new learning strategy (i.e., PV update rule). Experimental results show that (PBIL)-B-2 generally exhibits solutions that compare favourably with those computed by an existing PGA with multiple demes, thereby supporting the validity of the proposed framework for designing multiple-deme PEDAs.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221559200071",
+        "year": "2004"
+    },
+    {
+        "title": "Constrained optimization problem solving using estimation of distribution algorithms",
+        "authors": "Simionescu, PA, Beale, DG and Dozier, GV",
+        "description": "Two variants of Estimation of Distribution Algorithm (EDA) are tested against solving several continuous optimization problems with constraints. Numerical experiments are conducted and comparison is made between constraint handling using several types of penalty and repair operators in case of both elitist and non-elitist implementations of the EDA's. Graphical display and animations of representative runs of the best and worst performers proved useful in enhancing the understanding of how such algorithms work.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222818400041",
+        "year": "2004"
+    },
+    {
+        "title": "On the convergence of a factorized distribution algorithm with truncation selection",
+        "authors": "Zhang, QF",
+        "description": "We investigate the global convergence of a factorized distribution algorithm (FDA) with truncation selection. Like conventional genetic algorithms, FDAs maintain and successively improve a population of solutions. In FDAs a distribution model is built based on the statistical information extracted from a set of selected solutions in the current population, and then the model thus built is used to generate new solutions for the next generation. The variable-dependence structure of the distribution model in FDAs is determined by the variable-interaction structure of the objective function. We prove that the FDA with truncation selection converges globally for optimization of a class of additively decomposable functions (ADF). Our results imply that the utilization of appropriately selected dependence relationships is sufficient to guarantee the global convergence of estimation of distribution algorithms (EDAs) for optimization of ADFs. (c) 2004 Wiley Periodicals, Inc.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226746400004",
+        "year": "2004"
+    },
+    {
+        "title": "Gene selection for cancer classification using wrapper approaches",
+        "authors": "Blanco, R, Larra\u00f1aga, P, Sierra, B",
+        "description": "Despite the fact that cancer classification has considerably improved, nowadays a general method that classifies known types of cancer has not yet been developed. In this work, we propose the use of supervised classification techniques, coupled with feature subset selection algorithms, to automatically perform this classification in gene expression datasets. Due to the large number of features of gene expression datasets, the search of a highly accurate combination of features is done by means of the new Estimation of Distribution Algorithms paradigm. In order to assess the accuracy level of the proposed approach, the naive-Bayes classification algorithm is employed in a wrapper form. Promising results are achieved, in addition to a considerable reduction in the number of genes. Stating the optimal selection of genes as a search task, an automatic and robust choice in the genes finally selected is performed, in contrast to previous works that research the same types of problems.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226440800001",
+        "year": "2004"
+    },
+    {
+        "title": "A study of the effects of dimensionality on stochastic hill climbers and estimation of distribution algorithms",
+        "authors": "Grosset, L, Le Riche, R and Haftka, RT",
+        "description": "One of the most important features of an optimization method is its response to an increase in the number of variables, n. Random stochastic hill climber (SHC) and univariate marginal distribution algorithms (UMDA) are two fundamentally different stochastic optimizers. SHC proceeds with local perturbations while UMDA infers and uses a global probability density. The response to dimensionality of the two methods is compared both numerically and theoretically on unimodal functions. SHC response is O(n ln n), while UMDA response ranges from O(root(n) ln(n)) to O(n ln(n)). On two test problems whose sizes go up to 7(200), SHC is faster than UMDA.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221502600003",
+        "year": "2004"
+    },
+    {
+        "title": "Model-based search for combinatorial optimization: A critical survey",
+        "authors": "Zlochin, M, Birattari, M, Dorigo, M",
+        "description": "In this paper we introduce model-based search as a unifying framework accommodating some recently proposed metaheuristics for combinatorial optimization such as ant colony optimization, stochastic gradient ascent, cross-entropy and estimation of distribution methods. We discuss similarities as well as distinctive features of each method and we propose some extensions.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000223535200017",
+        "year": "2004"
+    },
+    {
+        "title": "On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm",
+        "authors": "Zhang, QF",
+        "description": "This paper aims to study the advantages of using higher order statistics in estimation distribution of algorithms (EDAs). We study two EDAs with two-tournament selection for discrete optimization problems. One is the univariate marginal distribution algorithm (UMDA) using only first-order statistics and the other is the factorized distribution algorithm (FDA) using higher order statistics. We introduce the heuristic functions and the limit models of these two algorithms and analyze stability of these limit models. It is shown that the limit model of UMDA can be trapped at any local optimal solution for some initial probability models. However, degenerate probability density functions (pdfs) at some local optimal solutions are unstable in the limit model of FDA. In particular, the degenerate pdf at the global optimal solution is the unique asymptotically stable point in the limit model of FDA for the optimization of an additively decomposable function. Our results suggest that using higher order statistics could improve the chance of finding the global optimal solution.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189357300006",
+        "year": "2004"
+    },
+    {
+        "title": "Feature selection for splice site prediction:: A new method using EDA-based feature ranking -: art. no. 64",
+        "authors": "Saeys, Y, Degroeve, S, Van de Peer, Y",
+        "description": "Background: The identification of relevant biological features in large and complex datasets is an important step towards gaining insight in the processes underlying the data. Other advantages of feature selection include the ability of the classification system to attain good or even better solutions using a restricted subset of features, and a faster classification. Thus, robust methods for fast feature selection are of key importance in extracting knowledge from complex biological data.|Results: In this paper we present a novel method for feature subset selection applied to splice site prediction, based on estimation of distribution algorithms, a more general framework of genetic algorithms. From the estimated distribution of the algorithm, a feature ranking is derived. Afterwards this ranking is used to iteratively discard features. We apply this technique to the problem of splice site prediction, and show how it can be used to gain insight into the underlying biological process of splicing.|Conclusion: We show that this technique proves to be more robust than the traditional use of estimation of distribution algorithms for feature selection: instead of returning a single best subset of features ( as they normally do) this method provides a dynamical view of the feature selection process, like the traditional sequential wrapper methods. However, the method is faster than the traditional techniques, and scales better to datasets described by a large number of features.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222504600001",
+        "year": "2004"
+    },
+    {
+        "title": "Distribution tree-building real-valued evolutionary algorithm",
+        "authors": "Pos\u00edk, P",
+        "description": "This article describes a new model of probability density function and its use in estimation of distribution algorithms. The new model, the distribution tree, has interesting properties and can form a solid basis for further improvements which will make it even more competitive. Several comparative experiments on continuous real-valued optimization problems were carried out and the results are promising. It outperformed the genetic algorithm using the traditional crossover operator several times, in the majority of the remaining experiments it was comparable to the genetic algorithm performance.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300038",
+        "year": "2004"
+    },
+    {
+        "title": "Learning probabilistic tree grammars for Genetic Programming",
+        "authors": "Bosman, PAN and de Jong, ED",
+        "description": "Genetic Programming (GP) provides evolutionary methods for problems with tree representations. A recent development in Genetic Algorithms (GAs) has led to principled algorithms called Estimation-of-Distribution Algorithms (EDAs). EDAs identify and exploit structural features of a problem's structure during optimization. Here, we investigate the use of a specific EDA for GP. We develop a probabilistic model that employs transformations of production rules in a context-free grammar to represent local structures. The results of performing experiments on two benchmark problems demonstrate the feasibility of the approach.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300020",
+        "year": "2004"
+    },
+    {
+        "title": "Evolutionary continuous optimization by distribution estimation with variational Bayesian independent component analyzers mixture model",
+        "authors": "Cho, DY and Zhang, BT",
+        "description": "In evolutionary continuous optimization by building and using probabilistic models, the multivariate Gaussian distribution and their variants or extensions such as the mixture of Gaussians have been used popularly. However, this Gaussian assumption is often violated in many real problems. In this paper, we propose a new continuous estimation of distribution algorithms (EDAs) with the variational Bayesian independent component analyzers mixture model (vbICA-MM) for allowing any distribution to be modeled. We examine how this sophisticated density estimation technique has influence on the performance of the optimization by employing the same selection and population alternation schemes used in the previous EDAs. Our experimental results support that the presented EDAs achieve better performance than previous EDAs with ICA and Gaussian mixture- or kernel-based approaches.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300022",
+        "year": "2004"
+    },
+    {
+        "title": "Migration of probability models instead of individuals:: An alternative when applying the island model to EDAs",
+        "authors": "delaOssa, L, G\u00e1mez, JA and Puerta, JM",
+        "description": "In this work we experiment with the application of island models to Estimation of Distribution Algorithms (EDAs) in the field of combinatorial optimization. This study is motivated by the success obtained by these models when applied to other meta-heuristics (such as genetic algorithms, simulated annealing or VNS) and by the use of a compact representation of the population that make EDAs through probability distributions. This fact can be exploited during information interchange among islands. In this work we experiment with two types of island-based EDAs: (1) migration of individuals, and (2) migration of probability models. Also, two alternatives are studied for the phase of model combinations: assigning constant weights to inner and incoming models or assigning adaptive weights based-on their fitness. The proposed algorithms are tested over a suite of four combinatorial optimization problems.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300025",
+        "year": "2004"
+    },
+    {
+        "title": "Parallel Stochastic search for protein secondary structure prediction",
+        "authors": "Robles, V, P\u00e9rez, MS, Larra\u00f1aga, P",
+        "description": "Prediction of the secondary structure of a protein from its aminoacid sequence remains an important and difficult task. Up to this moment, three generations of Protein Secondary Structure Algorithms have been defined: The first generation is based on statistical information over single aminoacids, the second generation is based on windows of aminoacids -typically 11-21 aminoacids - and the third generation is based on the usage of evolutionary information. In this paper we propose the usage of naive Bayes and Interval Estimation Naive Bayes (IENB) - a new semi naive Bayes approach - as suitable third generation methods for Protein Secondary Structure Prediction (PSSP). One of the main stages of IENB is based on a heuristic optimization, carried out by estimation of distribution algorithms (EDAs). EDAs are non-deterministic, stochastic and heuristic search strategies that belong to the evolutionary computation approaches. These algorithms under complex problems, like Protein Secondary Structure Prediction, require intensive calculation. This paper also introduces a parallel variant of IENB called PIENB (Parallel Interval Estimation Naive Bayes).",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221559200149",
+        "year": "2004"
+    },
+    {
+        "title": "Bayesian methods to estimate future load in web farms",
+        "authors": "Pe\u00f1a, JM, Robles, V, P\u00e9rez, MS",
+        "description": "Web Farms are clustered systems designed to provide high availability and high performance web services. A web farm is a group of replicated HTTP servers that reply web requests forwarded by a single point of access to the service. To deal with this task the point of access executes a load balancing algorithm to distribute web request among the group of servers. The present algorithms provides a short-term dynamic configuration for this operation, but some corrective actions (granting different session priorities or distributed WAN forwarding) cannot be achieved without a long-term estimation of the future web load. On this paper we propose a method to forecast web service work load. Our approach also includes an innovative segmentation method for the web pages using EDAs (estimation of distribution algorithms) and the application of semi-naive Bayes classifiers to predict future web load several minutes before. All our analysis has been performed using real data from a world-wide academic portal.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221807000022",
+        "year": "2004"
+    },
+    {
+        "title": "Updating the probability vector using MRF technique for a Univariate EDA",
+        "authors": "Shakya, SK, McCall, JAW and Brown, DF",
+        "description": "In this paper, we propose a new technique to update a probability vector [1] for Estimation of Distribution Algorithms (EDA)[15]. We present a novel algorithm belonging to the general class of EDA which we call Distribution Estimation using Markov Random Fields (DEUM). In common with other EDAs, DEUM uses a population of chromosomes to build a probabilistic model of good solutions. The model is then used to update the probability vector which is sampled to generate further populations, replacing the function of recombinative operators in a traditional genetic algorithm. DEUM uses Markov Random Field (MRF) modelling [3] to estimate the probabilistic relationship between allele values and fitness and iteratively refine a probability vector to generate better solutions. We present experimental results on the performance of DEUM and make comparisons with other algorithms in the Univariate EDA class. Our experiments show that MRF modelling provides a significant advantage over other approaches on problems where univariate algorithms are typically used.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225469300002",
+        "year": "2004"
+    },
+    {
+        "title": "Memetic optimization of video chain designs",
+        "authors": "Ali, W and Topchy, A",
+        "description": "Improving image quality is the backbone of highly competitive display industry. Contemporary video processing system design is a challenging optimization problem. Generally, several video algorithms must be sequentially applied to real-time video data. Overall image quality depends on the nonlinear interactions between multiple design parameters: variable settings for each module (algorithm), the amount of data being transferred in the video processing chain as well as the order of the cascading modules. Unfortunately, no systematic techniques are currently available to configure the video chain without lengthy trial and error process. We propose a rapid and reliable method for optimization of composite video processing systems based on genetic algorithm coupled with local search heuristics. Video system configuration is evolved toward the best image quality, driven by an objective video quality metric. We analyze several local search approaches, including hill-climbing, simplex and estimation-of-distribution algorithms. Experimental study demonstrates superior performance of memetic strategies over the conventional genetic algorithm. We obtain novel and practical video chain solutions that are typically not attainable by regular design process.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600101",
+        "year": "2004"
+    },
+    {
+        "title": "Performance comparison between parallel GA based on linkage identification and parallel Bayesian optimization algorithm",
+        "authors": "Murao, N, Munetomo, M and Akama, K",
+        "description": "Genetic Algorithms (GAs) are considered robust optimization algorithms which can solve wide-spectrum of difficult problems such as combinatorial optimization problems. Still, there are some GA-difficult problems which cannot ensure tight linkage in encoding strings. In such problems, crossovers cannot perform effectively on loosely encoded strings due to building block disruptions. Recently, a series of advanced techniques in evolutionary computations have been proposed to solve such GA-difficult problems. As one of these techniques, linkage identification checks nonlinearity caused by bit-wise perturbations for pairs of loci. Another advanced technique is Estimation of Distribution Algorithms (EDAs) which estimates probabilistic distribution for populations, and the Bayesian Optimization Algorithm (BOA) is the most sophisticated method in the EDAs. These methods can solve GA-difficult problem, paying additional computational cost. Therefore, parallel versions of these techniques, parallel GA based on linkage identification and parallel BOA, are studied to reduce computation time. In this paper, we compare performance of the parallel GA based on linkage identification with that of parallel BOA in actual parallel computing environment From the results, we consider relations between performance of the algorithms and the characteristics of the problems to be solved. Finally, we make discussions on the problem domains which algorithm performs more efficiently.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000227836700025",
+        "year": "2004"
+    },
+    {
+        "title": "History information based optimization of additively decomposed function with constraints",
+        "authors": "Ren, QS, Zeng, J and Qi, FH",
+        "description": "In this paper, we propose a modified estimation of distribution algorithm HCFA (History information based Constraint Factorization Algorithm) to solve the optimization problem of additively decomposed function with constraints. It is based on factorized distribution instead of penalty function and any transformation to a linear model or others. The history information is used and good results can be achieved with small population size. The feasibility of the new algorithm is also given.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226644400056",
+        "year": "2004"
+    },
+    {
+        "title": "An Estimation of Distribution Algorithm Based on Maximum Entropy",
+        "authors": "Wright, A, Poli, R, Pulavarty, S",
+        "description": "Estimation of distribution algorithms (EDA) are similar to genetic algorithms except that they replace crossover and mutation with sampling from an estimated probability distribution. We develop a framework for estimation of distribution algorithms based on the principle of maximum entropy and the conservation of schema frequencies. An algorithm of this type gives better performance than a standard genetic algorithm (CA) on a number of standard test problems involving deception and epistasis (i.e. Trap and NK).",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600030",
+        "year": "2004"
+    },
+    {
+        "title": "Hybrid Estimation of Distribution Algorithm for Multiobjective Knapsack Problem",
+        "authors": "Li, H, Zhang, QF, Ford, JA",
+        "description": "We propose a hybrid estimation of distribution algorithm (MOHEDA) for solving the multiobjective 0/1 knapsack problem (MOKP). Local search based on weighted sum method is proposed, and random repair method (RRM) is used to handle the constraints. Moreover, for the purpose of diversity preservation, a new and fast clustering method, called stochastic clustering method (SCM), is also introduced for mixture-based modelling. The experimental results indicate that MO-HEDA outperforms several other state-of-the-art algorithms.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189502600015",
+        "year": "2004"
+    },
+    {
+        "title": "Estimation of distribution algorithms without explicit selections",
+        "authors": "Munetomo, M",
+        "description": "This paper proposes estimation of distribution algorithms without explicit selections by introducing assignment functions in their probabilistic model building process. Estimation of distribution algorithms build a probabilistic model from a selected population of promising solutions, which is employed to generate offsprings of the next generation. Instead employing selections, our model employ",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000227679300015",
+        "year": "2004"
+    },
+    {
+        "title": "On the convergence of a class of estimation of distribution algorithms",
+        "authors": "Zhang, QF and M\u00fchlenbein, H",
+        "description": "We investigate the global convergence of estimation of distribution algorithms (EDAs). In EDAs, the distribution is estimated from a set of selected elements, i.e., the parent set, and then the estimated distribution model is used to generate new elements. In this paper, we prove that: 1) if the distribution of the new elements matches that of the parent set exactly, the algorithms will converge to the global optimum under three widely used selection schemes and 2) a factorized distribution algorithm converges globally under proportional selection.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000220968200004",
+        "year": "2004"
+    },
+    {
+        "title": "Unsupervised learning of Bayesian networks via estimation of distribution algorithms:: An application to gene expression data clustering",
+        "authors": "Pe\u00f1a, JM, Lozano, JA and Larra\u00f1aga, P",
+        "description": "This paper proposes using estimation of distribution algorithms for unsupervised learning of Bayesian networks, directly as well as within the framework of the Bayesian structural EM algorithm. Both approaches are empirically evaluated in synthetic and real data. Specifically, the evaluation in real data consists in the application of this paper's proposals to gene expression data clustering, i.e., the identification of clusters of genes with similar expression profiles across samples, for the leukemia database. The validation of the clusters of genes that are identified suggests that these may be biologically meaningful.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000220231200005",
+        "year": "2004"
+    },
+    {
+        "title": "Learning Bayesian networks in the space of orderings with estimation of distribution algorithms",
+        "authors": "Romero, T, Larra\u00f1aga, P and Sierra, B",
+        "description": "The search for the optimal ordering of a set of variables in order to solve a computational problem is a difficulty that can appear in several circumstances. One of these situations is the automatic learning of a network structure, for example, a Bayesian Network structure (BN) starting from a dataset. Searching in the space of structures is often unmanageable, especially if the number of variables is high. Popular heuristic approaches, like Cooper and Herskovits's K2 algorithm, depend on a given ordering of variables. Estimation of Distribution Algorithms (EDAs) are a new paradigm for Evolutionary Computation that have been used as a search engine in the BN structure learning problem. In this paper, we will use two different EDAs to obtain not the best structure, but the optimal ordering of variables for the K2 algorithm: UMDA and MIMIC, both of them in discrete and continuous domains. We will also check whether the individual representation and its relation to the corresponding ordering play important roles, and whether MIMIC outperforms the results of UMDA.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222729300005",
+        "year": "2004"
+    },
+    {
+        "title": "Protein folding in 2-dimensional lattices with estimation of distribution algorithms",
+        "authors": "Santana, R, Larra\u00f1aga, P and Lozano, JA",
+        "description": "This paper introduces a new type of evolutionary computation algorithm based on probability distributions for the solution of two simplified protein folding models. The relationship of the introduced algorithm with previous evolutionary methods used for protein folding is discussed. A number of experiments for difficult instances of the models under analysis is presented. For the instances considered, the algorithm is shown to outperform previous evolutionary optimization methods.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226129700039",
+        "year": "2004"
+    },
+    {
+        "title": "Mutation can improve the search capability of estimation of distribution algorithms",
+        "authors": "Handa, H",
+        "description": "The Estimation of Distribution Algorithms are a class of evolutionary algorithms which adopt probabilistic models to reproduce the genetic information of the next generation, instead of conventional crossover and mutation operations. In this paper, we propose new EDAs which incorporate mutation operator to conventional EDAs in order to keep the diversities in EDA populations. Experiments results shown in this paper confirm us the effectiveness of the proposed methods.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600041",
+        "year": "2004"
+    },
+    {
+        "title": "Heuristic based sampling in estimation of distribution algorithms:: An initial approach",
+        "authors": "de la Ossa, L, G\u00e1mez, JA and Puerta, JM",
+        "description": "Estimation of Distribution Algorithms (EDAs) are a kind of evolutionary algorithms where classical genetic operators are replaced by the estimation of a probabilistic model and its simulation in order to generate the next population. With this work we tackle, in a preliminary way, how to incorporate specific heuristic knowledge in the sampling phase. We propose two ways to do it and evaluate them experimentally through the classical knapsack problem.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222638300038",
+        "year": "2004"
+    },
+    {
+        "title": "GA-EDA:: Hybrid evolutionary algorithm using genetic and estimation of distribution algorithms",
+        "authors": "Pe\u00f1a, JM, Robles, V, P\u00e9rez, MS",
+        "description": "Evolutionary techniques are one of the most successful paradigms in the field of optimization. In this paper we present a new approach, named GAEDA, which is a new hybrid algorithm based on genetic and estimation of distribution algorithms. The original objective is to get benefits from both approaches. In order to perform an evaluation of this new approach a selection of synthetic optimizations problems have been proposed together with two real-world cases. Experimental results show the correctness of our new approach.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221714200038",
+        "year": "2004"
+    },
+    {
+        "title": "PolyEDA: Combining estimation of distribution algorithms and linear inequality constraints",
+        "authors": "Grahl, J and Rothlauf, F",
+        "description": "Estimation of distribution algorithms (EDAs) are population-based heuristic search methods that use probabilistic models of good solutions to guide their search. When applied to constrained optimization problems, most evolutionary algorithms use special techniques for handling invalid solutions. This paper presents PolyEDA, a new EDA approach that is able to directly consider linear inequality constraints by using Gibbs sampling. Gibbs sampling allows us to sample new individuals inside the boundaries of the polyhedral search space described using a set of linear inequality constraints by iteratively constructing a density approximation that lies entirely inside the polyhedron. Gibbs sampling prevents the creation of infeasible solutions. Thus, no additional techniques for handling infeasible solutions are needed in PolyEDA. Due to its ability to consider linear inequality constraints, PolyEDA can be used for highly constrained optimization problems, where even the generation of valid solutions is a non-trivial task. Results for different variants of a constrained Rosenbrock problem show a higher performance of PolyEDA in comparison to a standard EDA using rejection sampling.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225101200114",
+        "year": "2004"
+    },
+    {
+        "title": "Multiple-deme parallel estimation of distribution algorithms: Basic framework and application",
+        "authors": "Ahn, CW, Goldberg, DE and Ramakrishna, RS",
+        "description": "This paper presents a basic framework that facilitates the development of new multiple-deme parallel estimation of distribution algorithms (PEDAs). The aim is to carry over the migration effect that arises in multiple-deme parallel genetic algorithms (PGAs) into probability distribution of EDAs. The idea is to employ two kinds of probability vector (PV): one each for resident and immigrant candidates. The distribution of crossbred individuals (that virtually exist on both kinds of PV) is then utilized by a new type of crossover, the PV-wise crossover. A multiple-deme parallel population-based incremental learning ((PBIL)-B-2) scheme is proposed as an application. The (PBIL)-B-2 scheme closely follows the proposed framework that includes a new learning strategy (i.e., PV update rule). Experimental results show that (PBIL)-B-2 generally exhibits solutions that compare favourably with those computed by an existing PGA with multiple demes, thereby supporting the validity of the proposed framework for designing multiple-deme PEDAs.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221559200071",
+        "year": "2004"
+    },
+    {
+        "title": "Constrained optimization problem solving using estimation of distribution algorithms",
+        "authors": "Simionescu, PA, Beale, DG and Dozier, GV",
+        "description": "Two variants of Estimation of Distribution Algorithm (EDA) are tested against solving several continuous optimization problems with constraints. Numerical experiments are conducted and comparison is made between constraint handling using several types of penalty and repair operators in case of both elitist and non-elitist implementations of the EDA's. Graphical display and animations of representative runs of the best and worst performers proved useful in enhancing the understanding of how such algorithms work.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222818400041",
+        "year": "2004"
+    },
+    {
+        "title": "On the convergence of a factorized distribution algorithm with truncation selection",
+        "authors": "Zhang, QF",
+        "description": "We investigate the global convergence of a factorized distribution algorithm (FDA) with truncation selection. Like conventional genetic algorithms, FDAs maintain and successively improve a population of solutions. In FDAs a distribution model is built based on the statistical information extracted from a set of selected solutions in the current population, and then the model thus built is used to generate new solutions for the next generation. The variable-dependence structure of the distribution model in FDAs is determined by the variable-interaction structure of the objective function. We prove that the FDA with truncation selection converges globally for optimization of a class of additively decomposable functions (ADF). Our results imply that the utilization of appropriately selected dependence relationships is sufficient to guarantee the global convergence of estimation of distribution algorithms (EDAs) for optimization of ADFs. (c) 2004 Wiley Periodicals, Inc.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226746400004",
+        "year": "2004"
+    },
+    {
+        "title": "Gene selection for cancer classification using wrapper approaches",
+        "authors": "Blanco, R, Larra\u00f1aga, P, Sierra, B",
+        "description": "Despite the fact that cancer classification has considerably improved, nowadays a general method that classifies known types of cancer has not yet been developed. In this work, we propose the use of supervised classification techniques, coupled with feature subset selection algorithms, to automatically perform this classification in gene expression datasets. Due to the large number of features of gene expression datasets, the search of a highly accurate combination of features is done by means of the new Estimation of Distribution Algorithms paradigm. In order to assess the accuracy level of the proposed approach, the naive-Bayes classification algorithm is employed in a wrapper form. Promising results are achieved, in addition to a considerable reduction in the number of genes. Stating the optimal selection of genes as a search task, an automatic and robust choice in the genes finally selected is performed, in contrast to previous works that research the same types of problems.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226440800001",
+        "year": "2004"
+    },
+    {
+        "title": "A study of the effects of dimensionality on stochastic hill climbers and estimation of distribution algorithms",
+        "authors": "Grosset, L, Le Riche, R and Haftka, RT",
+        "description": "One of the most important features of an optimization method is its response to an increase in the number of variables, n. Random stochastic hill climber (SHC) and univariate marginal distribution algorithms (UMDA) are two fundamentally different stochastic optimizers. SHC proceeds with local perturbations while UMDA infers and uses a global probability density. The response to dimensionality of the two methods is compared both numerically and theoretically on unimodal functions. SHC response is O(n ln n), while UMDA response ranges from O(root(n) ln(n)) to O(n ln(n)). On two test problems whose sizes go up to 7(200), SHC is faster than UMDA.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221502600003",
+        "year": "2004"
+    },
+    {
+        "title": "Model-based search for combinatorial optimization: A critical survey",
+        "authors": "Zlochin, M, Birattari, M, Dorigo, M",
+        "description": "In this paper we introduce model-based search as a unifying framework accommodating some recently proposed metaheuristics for combinatorial optimization such as ant colony optimization, stochastic gradient ascent, cross-entropy and estimation of distribution methods. We discuss similarities as well as distinctive features of each method and we propose some extensions.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000223535200017",
+        "year": "2004"
+    },
+    {
+        "title": "On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm",
+        "authors": "Zhang, QF",
+        "description": "This paper aims to study the advantages of using higher order statistics in estimation distribution of algorithms (EDAs). We study two EDAs with two-tournament selection for discrete optimization problems. One is the univariate marginal distribution algorithm (UMDA) using only first-order statistics and the other is the factorized distribution algorithm (FDA) using higher order statistics. We introduce the heuristic functions and the limit models of these two algorithms and analyze stability of these limit models. It is shown that the limit model of UMDA can be trapped at any local optimal solution for some initial probability models. However, degenerate probability density functions (pdfs) at some local optimal solutions are unstable in the limit model of FDA. In particular, the degenerate pdf at the global optimal solution is the unique asymptotically stable point in the limit model of FDA for the optimization of an additively decomposable function. Our results suggest that using higher order statistics could improve the chance of finding the global optimal solution.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189357300006",
+        "year": "2004"
+    },
+    {
+        "title": "Feature selection for splice site prediction:: A new method using EDA-based feature ranking -: art. no. 64",
+        "authors": "Saeys, Y, Degroeve, S, Van de Peer, Y",
+        "description": "Background: The identification of relevant biological features in large and complex datasets is an important step towards gaining insight in the processes underlying the data. Other advantages of feature selection include the ability of the classification system to attain good or even better solutions using a restricted subset of features, and a faster classification. Thus, robust methods for fast feature selection are of key importance in extracting knowledge from complex biological data.|Results: In this paper we present a novel method for feature subset selection applied to splice site prediction, based on estimation of distribution algorithms, a more general framework of genetic algorithms. From the estimated distribution of the algorithm, a feature ranking is derived. Afterwards this ranking is used to iteratively discard features. We apply this technique to the problem of splice site prediction, and show how it can be used to gain insight into the underlying biological process of splicing.|Conclusion: We show that this technique proves to be more robust than the traditional use of estimation of distribution algorithms for feature selection: instead of returning a single best subset of features ( as they normally do) this method provides a dynamical view of the feature selection process, like the traditional sequential wrapper methods. However, the method is faster than the traditional techniques, and scales better to datasets described by a large number of features.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222504600001",
+        "year": "2004"
+    },
+    {
+        "title": "Distribution tree-building real-valued evolutionary algorithm",
+        "authors": "Pos\u00edk, P",
+        "description": "This article describes a new model of probability density function and its use in estimation of distribution algorithms. The new model, the distribution tree, has interesting properties and can form a solid basis for further improvements which will make it even more competitive. Several comparative experiments on continuous real-valued optimization problems were carried out and the results are promising. It outperformed the genetic algorithm using the traditional crossover operator several times, in the majority of the remaining experiments it was comparable to the genetic algorithm performance.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300038",
+        "year": "2004"
+    },
+    {
+        "title": "Learning probabilistic tree grammars for Genetic Programming",
+        "authors": "Bosman, PAN and de Jong, ED",
+        "description": "Genetic Programming (GP) provides evolutionary methods for problems with tree representations. A recent development in Genetic Algorithms (GAs) has led to principled algorithms called Estimation-of-Distribution Algorithms (EDAs). EDAs identify and exploit structural features of a problem's structure during optimization. Here, we investigate the use of a specific EDA for GP. We develop a probabilistic model that employs transformations of production rules in a context-free grammar to represent local structures. The results of performing experiments on two benchmark problems demonstrate the feasibility of the approach.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300020",
+        "year": "2004"
+    },
+    {
+        "title": "Evolutionary continuous optimization by distribution estimation with variational Bayesian independent component analyzers mixture model",
+        "authors": "Cho, DY and Zhang, BT",
+        "description": "In evolutionary continuous optimization by building and using probabilistic models, the multivariate Gaussian distribution and their variants or extensions such as the mixture of Gaussians have been used popularly. However, this Gaussian assumption is often violated in many real problems. In this paper, we propose a new continuous estimation of distribution algorithms (EDAs) with the variational Bayesian independent component analyzers mixture model (vbICA-MM) for allowing any distribution to be modeled. We examine how this sophisticated density estimation technique has influence on the performance of the optimization by employing the same selection and population alternation schemes used in the previous EDAs. Our experimental results support that the presented EDAs achieve better performance than previous EDAs with ICA and Gaussian mixture- or kernel-based approaches.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300022",
+        "year": "2004"
+    },
+    {
+        "title": "Migration of probability models instead of individuals:: An alternative when applying the island model to EDAs",
+        "authors": "delaOssa, L, G\u00e1mez, JA and Puerta, JM",
+        "description": "In this work we experiment with the application of island models to Estimation of Distribution Algorithms (EDAs) in the field of combinatorial optimization. This study is motivated by the success obtained by these models when applied to other meta-heuristics (such as genetic algorithms, simulated annealing or VNS) and by the use of a compact representation of the population that make EDAs through probability distributions. This fact can be exploited during information interchange among islands. In this work we experiment with two types of island-based EDAs: (1) migration of individuals, and (2) migration of probability models. Also, two alternatives are studied for the phase of model combinations: assigning constant weights to inner and incoming models or assigning adaptive weights based-on their fitness. The proposed algorithms are tested over a suite of four combinatorial optimization problems.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300025",
+        "year": "2004"
+    },
+    {
+        "title": "Parallel Stochastic search for protein secondary structure prediction",
+        "authors": "Robles, V, P\u00e9rez, MS, Larra\u00f1aga, P",
+        "description": "Prediction of the secondary structure of a protein from its aminoacid sequence remains an important and difficult task. Up to this moment, three generations of Protein Secondary Structure Algorithms have been defined: The first generation is based on statistical information over single aminoacids, the second generation is based on windows of aminoacids -typically 11-21 aminoacids - and the third generation is based on the usage of evolutionary information. In this paper we propose the usage of naive Bayes and Interval Estimation Naive Bayes (IENB) - a new semi naive Bayes approach - as suitable third generation methods for Protein Secondary Structure Prediction (PSSP). One of the main stages of IENB is based on a heuristic optimization, carried out by estimation of distribution algorithms (EDAs). EDAs are non-deterministic, stochastic and heuristic search strategies that belong to the evolutionary computation approaches. These algorithms under complex problems, like Protein Secondary Structure Prediction, require intensive calculation. This paper also introduces a parallel variant of IENB called PIENB (Parallel Interval Estimation Naive Bayes).",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221559200149",
+        "year": "2004"
+    },
+    {
+        "title": "Bayesian methods to estimate future load in web farms",
+        "authors": "Pe\u00f1a, JM, Robles, V, P\u00e9rez, MS",
+        "description": "Web Farms are clustered systems designed to provide high availability and high performance web services. A web farm is a group of replicated HTTP servers that reply web requests forwarded by a single point of access to the service. To deal with this task the point of access executes a load balancing algorithm to distribute web request among the group of servers. The present algorithms provides a short-term dynamic configuration for this operation, but some corrective actions (granting different session priorities or distributed WAN forwarding) cannot be achieved without a long-term estimation of the future web load. On this paper we propose a method to forecast web service work load. Our approach also includes an innovative segmentation method for the web pages using EDAs (estimation of distribution algorithms) and the application of semi-naive Bayes classifiers to predict future web load several minutes before. All our analysis has been performed using real data from a world-wide academic portal.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221807000022",
+        "year": "2004"
+    },
+    {
+        "title": "Updating the probability vector using MRF technique for a Univariate EDA",
+        "authors": "Shakya, SK, McCall, JAW and Brown, DF",
+        "description": "In this paper, we propose a new technique to update a probability vector [1] for Estimation of Distribution Algorithms (EDA)[15]. We present a novel algorithm belonging to the general class of EDA which we call Distribution Estimation using Markov Random Fields (DEUM). In common with other EDAs, DEUM uses a population of chromosomes to build a probabilistic model of good solutions. The model is then used to update the probability vector which is sampled to generate further populations, replacing the function of recombinative operators in a traditional genetic algorithm. DEUM uses Markov Random Field (MRF) modelling [3] to estimate the probabilistic relationship between allele values and fitness and iteratively refine a probability vector to generate better solutions. We present experimental results on the performance of DEUM and make comparisons with other algorithms in the Univariate EDA class. Our experiments show that MRF modelling provides a significant advantage over other approaches on problems where univariate algorithms are typically used.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225469300002",
+        "year": "2004"
+    },
+    {
+        "title": "Memetic optimization of video chain designs",
+        "authors": "Ali, W and Topchy, A",
+        "description": "Improving image quality is the backbone of highly competitive display industry. Contemporary video processing system design is a challenging optimization problem. Generally, several video algorithms must be sequentially applied to real-time video data. Overall image quality depends on the nonlinear interactions between multiple design parameters: variable settings for each module (algorithm), the amount of data being transferred in the video processing chain as well as the order of the cascading modules. Unfortunately, no systematic techniques are currently available to configure the video chain without lengthy trial and error process. We propose a rapid and reliable method for optimization of composite video processing systems based on genetic algorithm coupled with local search heuristics. Video system configuration is evolved toward the best image quality, driven by an objective video quality metric. We analyze several local search approaches, including hill-climbing, simplex and estimation-of-distribution algorithms. Experimental study demonstrates superior performance of memetic strategies over the conventional genetic algorithm. We obtain novel and practical video chain solutions that are typically not attainable by regular design process.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600101",
+        "year": "2004"
+    },
+    {
+        "title": "Performance comparison between parallel GA based on linkage identification and parallel Bayesian optimization algorithm",
+        "authors": "Murao, N, Munetomo, M and Akama, K",
+        "description": "Genetic Algorithms (GAs) are considered robust optimization algorithms which can solve wide-spectrum of difficult problems such as combinatorial optimization problems. Still, there are some GA-difficult problems which cannot ensure tight linkage in encoding strings. In such problems, crossovers cannot perform effectively on loosely encoded strings due to building block disruptions. Recently, a series of advanced techniques in evolutionary computations have been proposed to solve such GA-difficult problems. As one of these techniques, linkage identification checks nonlinearity caused by bit-wise perturbations for pairs of loci. Another advanced technique is Estimation of Distribution Algorithms (EDAs) which estimates probabilistic distribution for populations, and the Bayesian Optimization Algorithm (BOA) is the most sophisticated method in the EDAs. These methods can solve GA-difficult problem, paying additional computational cost. Therefore, parallel versions of these techniques, parallel GA based on linkage identification and parallel BOA, are studied to reduce computation time. In this paper, we compare performance of the parallel GA based on linkage identification with that of parallel BOA in actual parallel computing environment From the results, we consider relations between performance of the algorithms and the characteristics of the problems to be solved. Finally, we make discussions on the problem domains which algorithm performs more efficiently.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000227836700025",
+        "year": "2004"
+    },
+    {
+        "title": "History information based optimization of additively decomposed function with constraints",
+        "authors": "Ren, QS, Zeng, J and Qi, FH",
+        "description": "In this paper, we propose a modified estimation of distribution algorithm HCFA (History information based Constraint Factorization Algorithm) to solve the optimization problem of additively decomposed function with constraints. It is based on factorized distribution instead of penalty function and any transformation to a linear model or others. The history information is used and good results can be achieved with small population size. The feasibility of the new algorithm is also given.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226644400056",
+        "year": "2004"
+    },
+    {
+        "title": "An Estimation of Distribution Algorithm Based on Maximum Entropy",
+        "authors": "Wright, A, Poli, R, Pulavarty, S",
+        "description": "Estimation of distribution algorithms (EDA) are similar to genetic algorithms except that they replace crossover and mutation with sampling from an estimated probability distribution. We develop a framework for estimation of distribution algorithms based on the principle of maximum entropy and the conservation of schema frequencies. An algorithm of this type gives better performance than a standard genetic algorithm (CA) on a number of standard test problems involving deception and epistasis (i.e. Trap and NK).",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600030",
+        "year": "2004"
+    },
+    {
+        "title": "Hybrid Estimation of Distribution Algorithm for Multiobjective Knapsack Problem",
+        "authors": "Li, H, Zhang, QF, Ford, JA",
+        "description": "We propose a hybrid estimation of distribution algorithm (MOHEDA) for solving the multiobjective 0/1 knapsack problem (MOKP). Local search based on weighted sum method is proposed, and random repair method (RRM) is used to handle the constraints. Moreover, for the purpose of diversity preservation, a new and fast clustering method, called stochastic clustering method (SCM), is also introduced for mixture-based modelling. The experimental results indicate that MO-HEDA outperforms several other state-of-the-art algorithms.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189502600015",
+        "year": "2004"
+    },
+    {
+        "title": "Empirical investigations on parallelized linkage indentification",
+        "authors": "Munetomo, M, Murao, N and Akama, K",
+        "description": "To solve GA-difficult problems in which we cannot ensure tight linkage in their encoding, advanced methods such as linkage identification techniques and estimation of distribution algorithms work effectively although they need some additional computational cost. The computation time can be reduced by employing parallel computers and several approaches have been proposed for their parallelized algorithms. This paper presents empirical results on parallelization of the linkage identification compared to that of an estimation of distribution algorithm.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300033",
+        "year": "2004"
+    },
+    {
+        "title": "Estimation of distribution algorithms without explicit selections",
+        "authors": "Munetomo, M",
+        "description": "This paper proposes estimation of distribution algorithms without explicit selections by introducing assignment functions in their probabilistic model building process. Estimation of distribution algorithms build a probabilistic model from a selected population of promising solutions, which is employed to generate offsprings of the next generation. Instead employing selections, our model employ",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000227679300015",
+        "year": "2004"
+    },
+    {
+        "title": "On the convergence of a class of estimation of distribution algorithms",
+        "authors": "Zhang, QF and M\u00fchlenbein, H",
+        "description": "We investigate the global convergence of estimation of distribution algorithms (EDAs). In EDAs, the distribution is estimated from a set of selected elements, i.e., the parent set, and then the estimated distribution model is used to generate new elements. In this paper, we prove that: 1) if the distribution of the new elements matches that of the parent set exactly, the algorithms will converge to the global optimum under three widely used selection schemes and 2) a factorized distribution algorithm converges globally under proportional selection.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000220968200004",
+        "year": "2004"
+    },
+    {
+        "title": "Unsupervised learning of Bayesian networks via estimation of distribution algorithms:: An application to gene expression data clustering",
+        "authors": "Pe\u00f1a, JM, Lozano, JA and Larra\u00f1aga, P",
+        "description": "This paper proposes using estimation of distribution algorithms for unsupervised learning of Bayesian networks, directly as well as within the framework of the Bayesian structural EM algorithm. Both approaches are empirically evaluated in synthetic and real data. Specifically, the evaluation in real data consists in the application of this paper's proposals to gene expression data clustering, i.e., the identification of clusters of genes with similar expression profiles across samples, for the leukemia database. The validation of the clusters of genes that are identified suggests that these may be biologically meaningful.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000220231200005",
+        "year": "2004"
+    },
+    {
+        "title": "Learning Bayesian networks in the space of orderings with estimation of distribution algorithms",
+        "authors": "Romero, T, Larra\u00f1aga, P and Sierra, B",
+        "description": "The search for the optimal ordering of a set of variables in order to solve a computational problem is a difficulty that can appear in several circumstances. One of these situations is the automatic learning of a network structure, for example, a Bayesian Network structure (BN) starting from a dataset. Searching in the space of structures is often unmanageable, especially if the number of variables is high. Popular heuristic approaches, like Cooper and Herskovits's K2 algorithm, depend on a given ordering of variables. Estimation of Distribution Algorithms (EDAs) are a new paradigm for Evolutionary Computation that have been used as a search engine in the BN structure learning problem. In this paper, we will use two different EDAs to obtain not the best structure, but the optimal ordering of variables for the K2 algorithm: UMDA and MIMIC, both of them in discrete and continuous domains. We will also check whether the individual representation and its relation to the corresponding ordering play important roles, and whether MIMIC outperforms the results of UMDA.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222729300005",
+        "year": "2004"
+    },
+    {
+        "title": "Protein folding in 2-dimensional lattices with estimation of distribution algorithms",
+        "authors": "Santana, R, Larra\u00f1aga, P and Lozano, JA",
+        "description": "This paper introduces a new type of evolutionary computation algorithm based on probability distributions for the solution of two simplified protein folding models. The relationship of the introduced algorithm with previous evolutionary methods used for protein folding is discussed. A number of experiments for difficult instances of the models under analysis is presented. For the instances considered, the algorithm is shown to outperform previous evolutionary optimization methods.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226129700039",
+        "year": "2004"
+    },
+    {
+        "title": "Mutation can improve the search capability of estimation of distribution algorithms",
+        "authors": "Handa, H",
+        "description": "The Estimation of Distribution Algorithms are a class of evolutionary algorithms which adopt probabilistic models to reproduce the genetic information of the next generation, instead of conventional crossover and mutation operations. In this paper, we propose new EDAs which incorporate mutation operator to conventional EDAs in order to keep the diversities in EDA populations. Experiments results shown in this paper confirm us the effectiveness of the proposed methods.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600041",
+        "year": "2004"
+    },
+    {
+        "title": "Heuristic based sampling in estimation of distribution algorithms:: An initial approach",
+        "authors": "de la Ossa, L, G\u00e1mez, JA and Puerta, JM",
+        "description": "Estimation of Distribution Algorithms (EDAs) are a kind of evolutionary algorithms where classical genetic operators are replaced by the estimation of a probabilistic model and its simulation in order to generate the next population. With this work we tackle, in a preliminary way, how to incorporate specific heuristic knowledge in the sampling phase. We propose two ways to do it and evaluate them experimentally through the classical knapsack problem.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222638300038",
+        "year": "2004"
+    },
+    {
+        "title": "GA-EDA:: Hybrid evolutionary algorithm using genetic and estimation of distribution algorithms",
+        "authors": "Pe\u00f1a, JM, Robles, V, P\u00e9rez, MS",
+        "description": "Evolutionary techniques are one of the most successful paradigms in the field of optimization. In this paper we present a new approach, named GAEDA, which is a new hybrid algorithm based on genetic and estimation of distribution algorithms. The original objective is to get benefits from both approaches. In order to perform an evaluation of this new approach a selection of synthetic optimizations problems have been proposed together with two real-world cases. Experimental results show the correctness of our new approach.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221714200038",
+        "year": "2004"
+    },
+    {
+        "title": "PolyEDA: Combining estimation of distribution algorithms and linear inequality constraints",
+        "authors": "Grahl, J and Rothlauf, F",
+        "description": "Estimation of distribution algorithms (EDAs) are population-based heuristic search methods that use probabilistic models of good solutions to guide their search. When applied to constrained optimization problems, most evolutionary algorithms use special techniques for handling invalid solutions. This paper presents PolyEDA, a new EDA approach that is able to directly consider linear inequality constraints by using Gibbs sampling. Gibbs sampling allows us to sample new individuals inside the boundaries of the polyhedral search space described using a set of linear inequality constraints by iteratively constructing a density approximation that lies entirely inside the polyhedron. Gibbs sampling prevents the creation of infeasible solutions. Thus, no additional techniques for handling infeasible solutions are needed in PolyEDA. Due to its ability to consider linear inequality constraints, PolyEDA can be used for highly constrained optimization problems, where even the generation of valid solutions is a non-trivial task. Results for different variants of a constrained Rosenbrock problem show a higher performance of PolyEDA in comparison to a standard EDA using rejection sampling.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225101200114",
+        "year": "2004"
+    },
+    {
+        "title": "Multiple-deme parallel estimation of distribution algorithms: Basic framework and application",
+        "authors": "Ahn, CW, Goldberg, DE and Ramakrishna, RS",
+        "description": "This paper presents a basic framework that facilitates the development of new multiple-deme parallel estimation of distribution algorithms (PEDAs). The aim is to carry over the migration effect that arises in multiple-deme parallel genetic algorithms (PGAs) into probability distribution of EDAs. The idea is to employ two kinds of probability vector (PV): one each for resident and immigrant candidates. The distribution of crossbred individuals (that virtually exist on both kinds of PV) is then utilized by a new type of crossover, the PV-wise crossover. A multiple-deme parallel population-based incremental learning ((PBIL)-B-2) scheme is proposed as an application. The (PBIL)-B-2 scheme closely follows the proposed framework that includes a new learning strategy (i.e., PV update rule). Experimental results show that (PBIL)-B-2 generally exhibits solutions that compare favourably with those computed by an existing PGA with multiple demes, thereby supporting the validity of the proposed framework for designing multiple-deme PEDAs.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221559200071",
+        "year": "2004"
+    },
+    {
+        "title": "Constrained optimization problem solving using estimation of distribution algorithms",
+        "authors": "Simionescu, PA, Beale, DG and Dozier, GV",
+        "description": "Two variants of Estimation of Distribution Algorithm (EDA) are tested against solving several continuous optimization problems with constraints. Numerical experiments are conducted and comparison is made between constraint handling using several types of penalty and repair operators in case of both elitist and non-elitist implementations of the EDA's. Graphical display and animations of representative runs of the best and worst performers proved useful in enhancing the understanding of how such algorithms work.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222818400041",
+        "year": "2004"
+    },
+    {
+        "title": "On the convergence of a factorized distribution algorithm with truncation selection",
+        "authors": "Zhang, QF",
+        "description": "We investigate the global convergence of a factorized distribution algorithm (FDA) with truncation selection. Like conventional genetic algorithms, FDAs maintain and successively improve a population of solutions. In FDAs a distribution model is built based on the statistical information extracted from a set of selected solutions in the current population, and then the model thus built is used to generate new solutions for the next generation. The variable-dependence structure of the distribution model in FDAs is determined by the variable-interaction structure of the objective function. We prove that the FDA with truncation selection converges globally for optimization of a class of additively decomposable functions (ADF). Our results imply that the utilization of appropriately selected dependence relationships is sufficient to guarantee the global convergence of estimation of distribution algorithms (EDAs) for optimization of ADFs. (c) 2004 Wiley Periodicals, Inc.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226746400004",
+        "year": "2004"
+    },
+    {
+        "title": "Gene selection for cancer classification using wrapper approaches",
+        "authors": "Blanco, R, Larra\u00f1aga, P, Sierra, B",
+        "description": "Despite the fact that cancer classification has considerably improved, nowadays a general method that classifies known types of cancer has not yet been developed. In this work, we propose the use of supervised classification techniques, coupled with feature subset selection algorithms, to automatically perform this classification in gene expression datasets. Due to the large number of features of gene expression datasets, the search of a highly accurate combination of features is done by means of the new Estimation of Distribution Algorithms paradigm. In order to assess the accuracy level of the proposed approach, the naive-Bayes classification algorithm is employed in a wrapper form. Promising results are achieved, in addition to a considerable reduction in the number of genes. Stating the optimal selection of genes as a search task, an automatic and robust choice in the genes finally selected is performed, in contrast to previous works that research the same types of problems.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226440800001",
+        "year": "2004"
+    },
+    {
+        "title": "A study of the effects of dimensionality on stochastic hill climbers and estimation of distribution algorithms",
+        "authors": "Grosset, L, Le Riche, R and Haftka, RT",
+        "description": "One of the most important features of an optimization method is its response to an increase in the number of variables, n. Random stochastic hill climber (SHC) and univariate marginal distribution algorithms (UMDA) are two fundamentally different stochastic optimizers. SHC proceeds with local perturbations while UMDA infers and uses a global probability density. The response to dimensionality of the two methods is compared both numerically and theoretically on unimodal functions. SHC response is O(n ln n), while UMDA response ranges from O(root(n) ln(n)) to O(n ln(n)). On two test problems whose sizes go up to 7(200), SHC is faster than UMDA.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221502600003",
+        "year": "2004"
+    },
+    {
+        "title": "Model-based search for combinatorial optimization: A critical survey",
+        "authors": "Zlochin, M, Birattari, M, Dorigo, M",
+        "description": "In this paper we introduce model-based search as a unifying framework accommodating some recently proposed metaheuristics for combinatorial optimization such as ant colony optimization, stochastic gradient ascent, cross-entropy and estimation of distribution methods. We discuss similarities as well as distinctive features of each method and we propose some extensions.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000223535200017",
+        "year": "2004"
+    },
+    {
+        "title": "On stability of fixed points of limit models of univariate marginal distribution algorithm and factorized distribution algorithm",
+        "authors": "Zhang, QF",
+        "description": "This paper aims to study the advantages of using higher order statistics in estimation distribution of algorithms (EDAs). We study two EDAs with two-tournament selection for discrete optimization problems. One is the univariate marginal distribution algorithm (UMDA) using only first-order statistics and the other is the factorized distribution algorithm (FDA) using higher order statistics. We introduce the heuristic functions and the limit models of these two algorithms and analyze stability of these limit models. It is shown that the limit model of UMDA can be trapped at any local optimal solution for some initial probability models. However, degenerate probability density functions (pdfs) at some local optimal solutions are unstable in the limit model of FDA. In particular, the degenerate pdf at the global optimal solution is the unique asymptotically stable point in the limit model of FDA for the optimization of an additively decomposable function. Our results suggest that using higher order statistics could improve the chance of finding the global optimal solution.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189357300006",
+        "year": "2004"
+    },
+    {
+        "title": "Feature selection for splice site prediction:: A new method using EDA-based feature ranking -: art. no. 64",
+        "authors": "Saeys, Y, Degroeve, S, Van de Peer, Y",
+        "description": "Background: The identification of relevant biological features in large and complex datasets is an important step towards gaining insight in the processes underlying the data. Other advantages of feature selection include the ability of the classification system to attain good or even better solutions using a restricted subset of features, and a faster classification. Thus, robust methods for fast feature selection are of key importance in extracting knowledge from complex biological data.|Results: In this paper we present a novel method for feature subset selection applied to splice site prediction, based on estimation of distribution algorithms, a more general framework of genetic algorithms. From the estimated distribution of the algorithm, a feature ranking is derived. Afterwards this ranking is used to iteratively discard features. We apply this technique to the problem of splice site prediction, and show how it can be used to gain insight into the underlying biological process of splicing.|Conclusion: We show that this technique proves to be more robust than the traditional use of estimation of distribution algorithms for feature selection: instead of returning a single best subset of features ( as they normally do) this method provides a dynamical view of the feature selection process, like the traditional sequential wrapper methods. However, the method is faster than the traditional techniques, and scales better to datasets described by a large number of features.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222504600001",
+        "year": "2004"
+    },
+    {
+        "title": "Distribution tree-building real-valued evolutionary algorithm",
+        "authors": "Pos\u00edk, P",
+        "description": "This article describes a new model of probability density function and its use in estimation of distribution algorithms. The new model, the distribution tree, has interesting properties and can form a solid basis for further improvements which will make it even more competitive. Several comparative experiments on continuous real-valued optimization problems were carried out and the results are promising. It outperformed the genetic algorithm using the traditional crossover operator several times, in the majority of the remaining experiments it was comparable to the genetic algorithm performance.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300038",
+        "year": "2004"
+    },
+    {
+        "title": "Learning probabilistic tree grammars for Genetic Programming",
+        "authors": "Bosman, PAN and de Jong, ED",
+        "description": "Genetic Programming (GP) provides evolutionary methods for problems with tree representations. A recent development in Genetic Algorithms (GAs) has led to principled algorithms called Estimation-of-Distribution Algorithms (EDAs). EDAs identify and exploit structural features of a problem's structure during optimization. Here, we investigate the use of a specific EDA for GP. We develop a probabilistic model that employs transformations of production rules in a context-free grammar to represent local structures. The results of performing experiments on two benchmark problems demonstrate the feasibility of the approach.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300020",
+        "year": "2004"
+    },
+    {
+        "title": "Evolutionary continuous optimization by distribution estimation with variational Bayesian independent component analyzers mixture model",
+        "authors": "Cho, DY and Zhang, BT",
+        "description": "In evolutionary continuous optimization by building and using probabilistic models, the multivariate Gaussian distribution and their variants or extensions such as the mixture of Gaussians have been used popularly. However, this Gaussian assumption is often violated in many real problems. In this paper, we propose a new continuous estimation of distribution algorithms (EDAs) with the variational Bayesian independent component analyzers mixture model (vbICA-MM) for allowing any distribution to be modeled. We examine how this sophisticated density estimation technique has influence on the performance of the optimization by employing the same selection and population alternation schemes used in the previous EDAs. Our experimental results support that the presented EDAs achieve better performance than previous EDAs with ICA and Gaussian mixture- or kernel-based approaches.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300022",
+        "year": "2004"
+    },
+    {
+        "title": "Migration of probability models instead of individuals:: An alternative when applying the island model to EDAs",
+        "authors": "delaOssa, L, G\u00e1mez, JA and Puerta, JM",
+        "description": "In this work we experiment with the application of island models to Estimation of Distribution Algorithms (EDAs) in the field of combinatorial optimization. This study is motivated by the success obtained by these models when applied to other meta-heuristics (such as genetic algorithms, simulated annealing or VNS) and by the use of a compact representation of the population that make EDAs through probability distributions. This fact can be exploited during information interchange among islands. In this work we experiment with two types of island-based EDAs: (1) migration of individuals, and (2) migration of probability models. Also, two alternatives are studied for the phase of model combinations: assigning constant weights to inner and incoming models or assigning adaptive weights based-on their fitness. The proposed algorithms are tested over a suite of four combinatorial optimization problems.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300025",
+        "year": "2004"
+    },
+    {
+        "title": "Parallel Stochastic search for protein secondary structure prediction",
+        "authors": "Robles, V, P\u00e9rez, MS, Larra\u00f1aga, P",
+        "description": "Prediction of the secondary structure of a protein from its aminoacid sequence remains an important and difficult task. Up to this moment, three generations of Protein Secondary Structure Algorithms have been defined: The first generation is based on statistical information over single aminoacids, the second generation is based on windows of aminoacids -typically 11-21 aminoacids - and the third generation is based on the usage of evolutionary information. In this paper we propose the usage of naive Bayes and Interval Estimation Naive Bayes (IENB) - a new semi naive Bayes approach - as suitable third generation methods for Protein Secondary Structure Prediction (PSSP). One of the main stages of IENB is based on a heuristic optimization, carried out by estimation of distribution algorithms (EDAs). EDAs are non-deterministic, stochastic and heuristic search strategies that belong to the evolutionary computation approaches. These algorithms under complex problems, like Protein Secondary Structure Prediction, require intensive calculation. This paper also introduces a parallel variant of IENB called PIENB (Parallel Interval Estimation Naive Bayes).",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221559200149",
+        "year": "2004"
+    },
+    {
+        "title": "Bayesian methods to estimate future load in web farms",
+        "authors": "Pe\u00f1a, JM, Robles, V, P\u00e9rez, MS",
+        "description": "Web Farms are clustered systems designed to provide high availability and high performance web services. A web farm is a group of replicated HTTP servers that reply web requests forwarded by a single point of access to the service. To deal with this task the point of access executes a load balancing algorithm to distribute web request among the group of servers. The present algorithms provides a short-term dynamic configuration for this operation, but some corrective actions (granting different session priorities or distributed WAN forwarding) cannot be achieved without a long-term estimation of the future web load. On this paper we propose a method to forecast web service work load. Our approach also includes an innovative segmentation method for the web pages using EDAs (estimation of distribution algorithms) and the application of semi-naive Bayes classifiers to predict future web load several minutes before. All our analysis has been performed using real data from a world-wide academic portal.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000221807000022",
+        "year": "2004"
+    },
+    {
+        "title": "Updating the probability vector using MRF technique for a Univariate EDA",
+        "authors": "Shakya, SK, McCall, JAW and Brown, DF",
+        "description": "In this paper, we propose a new technique to update a probability vector [1] for Estimation of Distribution Algorithms (EDA)[15]. We present a novel algorithm belonging to the general class of EDA which we call Distribution Estimation using Markov Random Fields (DEUM). In common with other EDAs, DEUM uses a population of chromosomes to build a probabilistic model of good solutions. The model is then used to update the probability vector which is sampled to generate further populations, replacing the function of recombinative operators in a traditional genetic algorithm. DEUM uses Markov Random Field (MRF) modelling [3] to estimate the probabilistic relationship between allele values and fitness and iteratively refine a probability vector to generate better solutions. We present experimental results on the performance of DEUM and make comparisons with other algorithms in the Univariate EDA class. Our experiments show that MRF modelling provides a significant advantage over other approaches on problems where univariate algorithms are typically used.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225469300002",
+        "year": "2004"
+    },
+    {
+        "title": "Memetic optimization of video chain designs",
+        "authors": "Ali, W and Topchy, A",
+        "description": "Improving image quality is the backbone of highly competitive display industry. Contemporary video processing system design is a challenging optimization problem. Generally, several video algorithms must be sequentially applied to real-time video data. Overall image quality depends on the nonlinear interactions between multiple design parameters: variable settings for each module (algorithm), the amount of data being transferred in the video processing chain as well as the order of the cascading modules. Unfortunately, no systematic techniques are currently available to configure the video chain without lengthy trial and error process. We propose a rapid and reliable method for optimization of composite video processing systems based on genetic algorithm coupled with local search heuristics. Video system configuration is evolved toward the best image quality, driven by an objective video quality metric. We analyze several local search approaches, including hill-climbing, simplex and estimation-of-distribution algorithms. Experimental study demonstrates superior performance of memetic strategies over the conventional genetic algorithm. We obtain novel and practical video chain solutions that are typically not attainable by regular design process.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600101",
+        "year": "2004"
+    },
+    {
+        "title": "Performance comparison between parallel GA based on linkage identification and parallel Bayesian optimization algorithm",
+        "authors": "Murao, N, Munetomo, M and Akama, K",
+        "description": "Genetic Algorithms (GAs) are considered robust optimization algorithms which can solve wide-spectrum of difficult problems such as combinatorial optimization problems. Still, there are some GA-difficult problems which cannot ensure tight linkage in encoding strings. In such problems, crossovers cannot perform effectively on loosely encoded strings due to building block disruptions. Recently, a series of advanced techniques in evolutionary computations have been proposed to solve such GA-difficult problems. As one of these techniques, linkage identification checks nonlinearity caused by bit-wise perturbations for pairs of loci. Another advanced technique is Estimation of Distribution Algorithms (EDAs) which estimates probabilistic distribution for populations, and the Bayesian Optimization Algorithm (BOA) is the most sophisticated method in the EDAs. These methods can solve GA-difficult problem, paying additional computational cost. Therefore, parallel versions of these techniques, parallel GA based on linkage identification and parallel BOA, are studied to reduce computation time. In this paper, we compare performance of the parallel GA based on linkage identification with that of parallel BOA in actual parallel computing environment From the results, we consider relations between performance of the algorithms and the characteristics of the problems to be solved. Finally, we make discussions on the problem domains which algorithm performs more efficiently.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000227836700025",
+        "year": "2004"
+    },
+    {
+        "title": "History information based optimization of additively decomposed function with constraints",
+        "authors": "Ren, QS, Zeng, J and Qi, FH",
+        "description": "In this paper, we propose a modified estimation of distribution algorithm HCFA (History information based Constraint Factorization Algorithm) to solve the optimization problem of additively decomposed function with constraints. It is based on factorized distribution instead of penalty function and any transformation to a linear model or others. The history information is used and good results can be achieved with small population size. The feasibility of the new algorithm is also given.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000226644400056",
+        "year": "2004"
+    },
+    {
+        "title": "Real-Coded Bayesian Optimization Algorithm  Bringing the Strength of BOA into the Continuous World",
+        "authors": "Ahn, CW, Ramakrishna, RS and Goldberg, DE",
+        "description": "This paper describes a continuous estimation of distribution algorithm (EDA) to solve decomposable, real-valued optimization problems quickly, accurately, and reliably. This is the real-coded Bayesian optimization algorithm (rBOA). The objective is to bring the strength of (discrete) BOA to bear upon the area of real-valued optimization. That is, the rBOA must properly decompose a problem, efficiently fit each subproblem, and effectively exploit the results so that correct linkage learning even on nonlinearity and probabilistic building-block crossover (PBBC) are performed for real-valued multivariate variables. The idea is to perform a Bayesian factorization of a mixture of probability distributions, find maximal connected subgraphs (i.e. substructures) of the Bayesian factorization graph (i.e., the structure of a probabilistic model), independently fit each substructure by a mixture distribution estimated from clustering results in the corresponding partial-string space (i.e., subspace, subproblem), and draw the offspring by an independent subspace-based sampling. Experimental results show that the rBOA finds, with a sublinear scale-up behavior for decomposable problems, a solution that is superior in quality to that found by a mixed iterative density-estimation evolutionary algorithm (mIDEA) as the problem size grows. Moreover, the rBOA generally outperforms the mIDEA on well-known benchmarks for real-valued optimization.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225101200086",
+        "year": "2004"
+    },
+    {
+        "title": "An Estimation of Distribution Algorithm Based on Maximum Entropy",
+        "authors": "Wright, A, Poli, R, Pulavarty, S",
+        "description": "Estimation of distribution algorithms (EDA) are similar to genetic algorithms except that they replace crossover and mutation with sampling from an estimated probability distribution. We develop a framework for estimation of distribution algorithms based on the principle of maximum entropy and the conservation of schema frequencies. An algorithm of this type gives better performance than a standard genetic algorithm (CA) on a number of standard test problems involving deception and epistasis (i.e. Trap and NK).",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000225040600030",
+        "year": "2004"
+    },
+    {
+        "title": "Hybrid Estimation of Distribution Algorithm for Multiobjective Knapsack Problem",
+        "authors": "Li, H, Zhang, QF, Ford, JA",
+        "description": "We propose a hybrid estimation of distribution algorithm (MOHEDA) for solving the multiobjective 0/1 knapsack problem (MOKP). Local search based on weighted sum method is proposed, and random repair method (RRM) is used to handle the constraints. Moreover, for the purpose of diversity preservation, a new and fast clustering method, called stochastic clustering method (SCM), is also introduced for mixture-based modelling. The experimental results indicate that MO-HEDA outperforms several other state-of-the-art algorithms.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000189502600015",
+        "year": "2004"
+    },
+    {
+        "title": "Empirical investigations on parallelized linkage indentification",
+        "authors": "Munetomo, M, Murao, N and Akama, K",
+        "description": "To solve GA-difficult problems in which we cannot ensure tight linkage in their encoding, advanced methods such as linkage identification techniques and estimation of distribution algorithms work effectively although they need some additional computational cost. The computation time can be reduced by employing parallel computers and several approaches have been proposed for their parallelized algorithms. This paper presents empirical results on parallelization of the linkage identification compared to that of an estimation of distribution algorithm.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000224103300033",
+        "year": "2004"
+    },
+    {
+        "title": "Voronoi-based estimation of distribution algorithm for multi-objective optimization",
+        "authors": "Okabe, T, Jin, Y, Sendhoff, B, Olhofer, M",
+        "description": "The distribution of the Pareto-optimal solutions often has a clear structure. To adapt evolutionary algorithms to the structure of a multi-objective optimization problem, either an adaptive representation or adaptive genetic operators should be employed. In this paper, we suggest an estimation of distribution algorithm for solving multi-objective optimization, which is able to adjust its reproduction process to the problem structure. For this purpose, a new algorithm called Voronoi-based Estimation of Distribution Algorithm (VEDA) is proposed. In VEDA, a Voronoi diagram is used to construct stochastic models, based on which new offspring will be generated. Empirical comparisons of the VEDA with other estimation of distribution algorithms (EDAs) and the popular NSGA-II algorithm are carried out. In addition, representation of Pareto-optimal solutions using a mathematical model rather than a solution set is also discussed.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000222818400221",
+        "year": "2004"
+    },
+    {
+        "title": "Hybrid Estimation of Distribution Algorithm for Global Optimization",
+        "authors": "Zhang, QF, Sun, JY, Tsang, E, Ford, J",
+        "description": "This paper introduces a new hybrid evolutionary algorithm (EA) for continuous global optimization problems, called estimation of distribution algorithm with local search (EDA/L). Like other EAs, EDA/L maintains and improves a population of solutions in the feasible region. Initial candidate solutions are generated by uniform design, these solutions evenly scatter over the feasible solution region. To generate a new population, a marginal histogram model is built based on the global statistical information extracted from the current population and then new solutions are sampled from the model thus built. The incomplete simplex method applies to every new solution generated by uniform design or sampled from the histogram model. Unconstrained optimization by diagonal quadratic approximation applies to several selected resultant solutions of the incomplete simplex method at each generation. We study the effectiveness of main components of EDA/L. The experimental results demonstrate that EDA/L is better than four other recent EAs in terms of the solution quality and the computational cost.",
+        "paper_link": "https://www.webofscience.com/wos/woscc/full-record/WOS:000223976100006",
+        "year": "2004"
+    }
+]
