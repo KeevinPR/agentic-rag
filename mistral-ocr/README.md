@@ -10,7 +10,7 @@ This folder contains all scripts for data extraction, processing, and chunking u
 - **Database Setup**: The `eda-rag-db/` subfolder contains the Docker setup for launching a PostgreSQL database with the pgvector extension, used as the vector database backend for the Agentic RAG system.
 
 ## ⚙️ Usage Notes
-- **Path Configuration**: Many scripts require you to specify input/output directories. For portability, use the centralized `config.py` to avoid hardcoded absolute paths.
+- **Path Configuration**: Many scripts require you to specify input/output directories.
 - **Environment**: Install dependencies from `environment.yml` to ensure all scripts run smoothly.
 - **Data Storage**: Processed data, chunked markdown, and intermediate files are stored in subfolders according to the pipeline stage.
 
