@@ -16,8 +16,6 @@ This folder contains all scripts for data extraction, processing, and chunking u
 
 ## 🗄️ Subfolders
 - `eda-rag-db/`: Docker setup for the pgvector database backend
-- `chunked-markdown-*`: Various chunking strategies and outputs
-- `evaluate-dataset/`, `scrape/`, etc.: Additional utilities and data pipelines
 
 ## 📝 Typical Workflow
 1. Place your raw PDFs in the appropriate data directory
