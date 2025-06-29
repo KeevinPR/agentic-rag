@@ -8,10 +8,14 @@ from PIL import Image
 import io
 
 # Config
-api_key = "DUb09JqF91eRXOZkCUd3rPCIjp9DUse2"
+api_key = "XXX"  # Replace with your Mistral API key
 client = Mistral(api_key=api_key)
-data_dir = Path("/Users/id05309/Documents/tfm/data")
-output_dir = Path("/Users/id05309/Documents/tfm/mistral/mistral-markdown")
+
+# Get the script directory and build relative paths
+script_dir = Path(__file__).parent.absolute()
+repo_root = script_dir.parent  # Go up one level to repo root
+data_dir = repo_root / "data"
+output_dir = repo_root / "mistral" / "mistral-markdown"
 images_dir = output_dir / "images"
 output_dir.mkdir(parents=True, exist_ok=True)
 images_dir.mkdir(parents=True, exist_ok=True)
