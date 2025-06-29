@@ -34,5 +34,3 @@ Centralized repository for source documents:
 - **Format**: PDF files that get processed by the OCR pipeline
 
 ---
-
-*Built for efficient document processing and intelligent information retrieval.* 
