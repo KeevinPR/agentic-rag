@@ -6,18 +6,22 @@ cat <<EOF > .gitignore
 !.gitignore
 
 # Allow specific folders and their contents
+!README.md
 !chainlit/
 !chainlit/**
 
 !mistral-ocr/
 !mistral-ocr/**
 
+!data/
+!data/**
+
 # Ignore local Git backup folder (you renamed .git → .git_backup)
 chainlit/.git_backup/
 
 # Ignore config files and secrets
 *.env
-.env
+# .env
 .env.local
 
 # Also ignore environments inside them
