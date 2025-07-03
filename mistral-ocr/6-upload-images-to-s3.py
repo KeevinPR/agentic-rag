@@ -3,16 +3,20 @@ import boto3
 from pathlib import Path
 import os
 from urllib.parse import urljoin
+from dotenv import load_dotenv
 
-# AWS Configuration
-AWS_ACCESS_KEY_ID = "AKIASBQDP3FKA65CJZ6A"
-AWS_SECRET_ACCESS_KEY = "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"
-AWS_REGION = "eu-west-1"
+# Load environment variables from .env file
+load_dotenv()
+
+# AWS Configuration - Loaded from environment variables
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+AWS_REGION = os.getenv("AWS_REGION")
 S3_BUCKET_NAME = "tfm-figures"
 
 # File paths
-INPUT_FILE = "/Users/id05309/Documents/tfm/mistral/chunked-markdown/all_papers_data_metadata_cleaned.json"
-OUTPUT_FILE = "/Users/id05309/Documents/tfm/mistral/chunked-markdown/all_papers_data_metadata_with_s3.json"
+INPUT_FILE = "/Users/id05309/Documents/agentic-rag/mistral/chunked-markdown/all_papers_data_metadata_cleaned.json"
+OUTPUT_FILE = "/Users/id05309/Documents/agentic-rag/mistral/chunked-markdown/all_papers_data_metadata_with_s3.json"
 
 
 def setup_s3_client():
@@ -83,9 +87,7 @@ def process_images():
                 for placeholder, image_filename in chunk["metadata"]["images"].items():
                     # Construct the local path to the image
                     # Assuming images are in the same directory as the markdown files
-                    image_path = (
-                        f"/Users/id05309/Documents/tfm/data/{paper_id}/{image_filename}"
-                    )
+                    image_path = f"/Users/id05309/Documents/agentic-rag/data/{paper_id}/{image_filename}"
 
                     if os.path.exists(image_path):
                         # Upload to S3 and get URL

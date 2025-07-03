@@ -1068,8 +1068,9 @@ def _generate_enhanced_output(
     if not results:
         return json.dumps(
             {
-                "summary": "No relevant results found. Try refining your query.",
+                "summary": "No relevant results found in the academic paper database. This query might benefit from web search to find external sources or recent research, especially for author-specific queries or topics not covered in the local database.",
                 "results": [],
+                "suggestion": "Try using enhanced_web_search_tool for this query, particularly for author-specific research or recent developments."
             }
         )
 
@@ -1187,101 +1188,190 @@ async def enhanced_web_search_tool(query: str) -> str:
     🌐 Enhanced web search with improved result formatting and analysis.
 
     Features:
-    - Semantic result clustering
-    - Enhanced relevance scoring
+    - Academic-optimized query preprocessing
+    - Sophisticated author name and year detection
+    - Enhanced relevance scoring for research content
     - Academic source prioritization
-    - Query term highlighting
+    - Smart query term highlighting
     """
     try:
         logger.info("🌐 Processing enhanced web search: %s", query)
 
+        # Academic query preprocessing
+        optimized_query = _preprocess_academic_query(query)
+        logger.info(f"🎓 Optimized query: {optimized_query}")
+
         tavily_search = TavilySearch(
-            max_results=8,  # Increased for better coverage
+            max_results=10,  # Increased for better academic coverage
             include_raw_content=True,
         )
-        results = await tavily_search.ainvoke(query)
+        
+        # Try both original and optimized query for best results
+        results = await tavily_search.ainvoke(optimized_query)
 
+        if not results.get("results"):
+            # Fallback to original query if optimized query returns no results
+            logger.info("🔄 Fallback to original query")
+            results = await tavily_search.ainvoke(query)
+            
         if not results.get("results"):
             return "🔍 No web results found for your query."
 
-        return _format_enhanced_web_results(results, query)
+        return _format_enhanced_web_results(results, query, optimized_query)
 
     except Exception as e:
         logger.error("🌐 Enhanced web search failed: %s", e, exc_info=True)
         return f"🚨 Web search failed: {e.__class__.__name__}"
 
 
-def _format_enhanced_web_results(results: Dict, query: str) -> str:
-    """🎨 Format web search results with enhanced styling."""
+def _preprocess_academic_query(query: str) -> str:
+    """🎓 Preprocess queries for better academic search results."""
+    
+    # Extract author names and years
+    author_year_pattern = r'(\w+)\s*\((\d{4})\)'
+    author_matches = re.findall(author_year_pattern, query)
+    
+    processed_query = query
+    
+    # Enhance author queries
+    for author, year in author_matches:
+        # Add publication-specific terms
+        processed_query += f' "{author}" "{year}" publication paper research'
+    
+    # Add academic context terms for better results
+    if any(term in query.lower() for term in ['algorithm', 'distribution', 'optimization', 'evolution']):
+        processed_query += ' research paper academic publication'
+    
+    return processed_query.strip()
 
-    out_lines = ["🌐 **Enhanced Web Search Results**\n"]
+
+def _format_enhanced_web_results(results: Dict, original_query: str, optimized_query: str = None) -> str:
+    """🎨 Format web search results with enhanced academic styling."""
+
+    out_lines = ["🌐 **Enhanced Academic Web Search Results**\n"]
 
     # Add quick answer with enhanced formatting
     answer = results.get("answer")
     if answer:
         out_lines.append(f"💡 **Key Insight:** {answer}\n")
 
-    # Enhanced query term highlighting
-    terms = [re.escape(t.lower()) for t in query.split() if len(t) > 2]
-    highlight_pattern = re.compile(r"\b(" + "|".join(terms) + r")\b", flags=re.I)
+    # Enhanced query term highlighting for academic content
+    terms = _extract_academic_terms(original_query)
+    highlight_pattern = re.compile(r"\b(" + "|".join([re.escape(t) for t in terms]) + r")\b", flags=re.I)
 
     # Process and rank results
     search_results = results["results"]
 
-    # Prioritize academic/research sources
-    def source_priority(result):
+    # Enhanced academic source prioritization
+    def academic_source_priority(result):
         url = result.get("url", "").lower()
-        if any(
-            domain in url
-            for domain in ["scholar.google", "ieee", "acm.org", "arxiv", "researchgate"]
-        ):
-            return 0  # Highest priority
-        elif any(domain in url for domain in ["edu", "gov"]):
-            return 1  # High priority
+        title = result.get("title", "").lower()
+        content = result.get("content", "").lower()
+        
+        # Highest priority: Direct academic sources
+        if any(domain in url for domain in ["scholar.google", "ieee", "acm.org", "arxiv", "researchgate", "springer", "sciencedirect", "jstor"]):
+            return 0
+        
+        # High priority: Educational and government sources
+        elif any(domain in url for domain in ["edu", "gov", "nih.gov", "ncbi"]):
+            return 1
+        
+        # Medium priority: Content with academic indicators
+        elif any(indicator in title + content for indicator in ["research", "paper", "study", "journal", "conference", "proceedings"]):
+            return 2
+        
+        # Normal priority: Other sources
         else:
-            return 2  # Normal priority
+            return 3
 
-    # Sort by source priority, then by score
+    # Sort by academic priority, then by score
     sorted_results = sorted(
-        search_results, key=lambda x: (source_priority(x), -x.get("score", 0))
+        search_results, key=lambda x: (academic_source_priority(x), -x.get("score", 0))
     )
 
-    for idx, res in enumerate(sorted_results[:6], 1):  # Limit to top 6
+    for idx, res in enumerate(sorted_results[:8], 1):  # Show top 8 for academic queries
         title = res.get("title", "No title")
         url = res.get("url", "No URL")
         content = res.get("content", "No content")
         score = res.get("score", 0)
 
-        # Enhanced content processing
+        # Enhanced content processing for academic content
         content = " ".join(content.split())
         snippet = textwrap.shorten(content, width=WRAP_WIDTH, placeholder="…")
 
-        # Apply highlighting
+        # Apply academic highlighting
         title_highlighted = highlight_pattern.sub(r"**\1**", title)
         snippet_highlighted = highlight_pattern.sub(r"**\1**", snippet)
 
-        # Academic source indicator
-        source_indicator = (
-            "🎓"
-            if source_priority(res) == 0
-            else "🏛️"
-            if source_priority(res) == 1
-            else "🔗"
-        )
+        # Academic source indicators with more detail
+        priority = academic_source_priority(res)
+        if priority == 0:
+            source_indicator = "🎓"
+            source_type = "Academic Source"
+        elif priority == 1:
+            source_indicator = "🏛️"
+            source_type = "Educational/Gov"
+        elif priority == 2:
+            source_indicator = "📄"
+            source_type = "Research Content"
+        else:
+            source_indicator = "🔗"
+            source_type = "General Source"
 
         out_lines.append(
-            f"### {source_indicator} Result {idx} (Relevance: {score:.2f})\n"
+            f"### {source_indicator} Result {idx} - {source_type} (Relevance: {score:.2f})\n"
             f"**{title_highlighted}**\n\n"
             f"{snippet_highlighted}\n\n"
             f"🔗 [{url}]({url})\n"
         )
 
-    # Add search metadata
+    # Add enhanced search metadata
     response_time = results.get("response_time")
+    total_results = len(search_results)
+    academic_sources = sum(1 for r in search_results if academic_source_priority(r) <= 1)
+    
+    metadata_lines = [
+        f"\n📊 **Search Metadata:**",
+        f"- Total results: {total_results}",
+        f"- Academic sources: {academic_sources}/{total_results}",
+    ]
+    
     if response_time:
-        out_lines.append(f"\n⚡ *Search completed in {response_time:.2f} seconds*")
+        metadata_lines.append(f"- Response time: {response_time:.2f}s")
+        
+    if optimized_query and optimized_query != original_query:
+        metadata_lines.append(f"- Query optimization applied")
+    
+    out_lines.extend(metadata_lines)
 
     return "\n".join(out_lines)
+
+
+def _extract_academic_terms(query: str) -> List[str]:
+    """🎓 Extract terms for highlighting in academic contexts."""
+    
+    terms = []
+    
+    # Extract all words but with academic-aware filtering
+    words = re.findall(r'\b\w+\b', query)
+    
+    for word in words:
+        # Include shorter academic terms that are important
+        if len(word) >= 2:  # Reduced from 3 to catch "EDA"
+            # Skip very common words but keep academic terms
+            if word.lower() not in {'how', 'are', 'the', 'and', 'or', 'to', 'in', 'for', 'with', 'of'}:
+                terms.append(word)
+    
+    # Extract author names and years specifically
+    author_year_matches = re.findall(r'(\w+)\s*\((\d{4})\)', query)
+    for author, year in author_year_matches:
+        terms.extend([author, year])
+    
+    # Extract specific patterns like abbreviations in quotes or caps
+    abbrev_matches = re.findall(r'\b[A-Z]{2,}\b', query)
+    terms.extend(abbrev_matches)
+    
+    return list(set(terms))  # Remove duplicates
 
 
 # ===== ENHANCED TOOLS LIST =====
