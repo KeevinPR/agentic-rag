@@ -1,6 +1,8 @@
 """
 Phase 1: Chainlit application using LangGraph's create_react_agent.
 This is a side-by-side implementation to migrate from custom graph approach.
+
+THIS SCRIPT ENABLES TOKEN-BY-TOKEN STREAMING.
 """
 
 import logging
@@ -27,7 +29,9 @@ from prompts import (
     GEMINI_EDA_PROMPT_REACT_AGENT,  # NEW: For create_react_agent
     GEMINI_EDA_PROMPT_ULTIMATE,  # ULTIMATE: Best hybrid prompt
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V2,  # OPTIMIZED: For create_react_agent
+    GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V4,
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_THINK,
+    GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V6,
 )  # Use the updated system prompt
 
 # NEW: Import LangGraph's prebuilt agent
@@ -81,7 +85,7 @@ async def on_chat_start():
     agent = create_react_agent(
         model=llm,
         tools=tools,
-        prompt=GEMINI_EDA_PROMPT_REACT_OPTIMIZED_THINK,  # <-- Use the optimized multimodal prompt
+        prompt=GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V6,  # <-- Use the optimized multimodal prompt
         checkpointer=memory,  # <-- Use the persistent PostgreSQL memory
         version="v2",
         debug=True,
@@ -142,7 +146,7 @@ def _clean_response_content(content: str) -> str:
 
 @cl.on_message
 async def on_message(message: cl.Message):
-    """Handle incoming user messages using create_react_agent"""
+    """Handle incoming user messages using create_react_agent with proper streaming"""
     agent = cl.user_session.get("agent")
     config = cl.user_session.get("config")
 
@@ -154,7 +158,7 @@ async def on_message(message: cl.Message):
 
     logger.info(f"👤 USER MESSAGE: {message.content}")
 
-    # --- NEW: Multimodal Input Processing ---
+    # --- Multimodal Input Processing ---
     content_parts: List[Union[str, Dict[str, Any]]] = [
         {"type": "text", "text": message.content}
     ]
@@ -166,13 +170,11 @@ async def on_message(message: cl.Message):
         ]
         if image_elements:
             logger.info(f"🖼️ Found {len(image_elements)} image(s) in the message.")
-            # --- NEW: Send feedback message to UI ---
             await cl.Message(
                 content=f"Processing {len(image_elements)} image(s) with your message...",
                 author="System",
             ).send()
             for el in image_elements:
-                # For user-uploaded files, Chainlit provides a path. We must read the file from this path.
                 if el.path:
                     try:
                         with open(el.path, "rb") as image_file:
@@ -193,144 +195,143 @@ async def on_message(message: cl.Message):
                             f"Error reading image file from path {el.path}: {e}"
                         )
 
-    # create_react_agent expects messages in this format.
-    # We construct a HumanMessage that can contain multiple parts (text and images).
+    # create_react_agent expects messages in this format
     input_messages = {"messages": [HumanMessage(content=content_parts)]}
 
-    # Set up callback handler for streaming (same as existing implementation)
+    # Use LangchainCallbackHandler for tool call visibility, but NOT for final answer streaming
+    # We'll handle final answer streaming manually using cl.Message.stream_token()
     cb_handler = cl.LangchainCallbackHandler(
-        stream_final_answer=False,
+        stream_final_answer=False,  # We handle this manually
         _schema_format="streaming_events",
     )
 
-    # Enhanced config for create_react_agent
+    # Enhanced config for create_react_agent (with callback handler for tool visibility)
     enhanced_config = {
         **config,
         "callbacks": [cb_handler],
         "run_name": "EDA Research Agent",
-        # Optional: Add recursion limit for safety
         "recursion_limit": 20,
     }
 
     try:
         logger.info(f"🚀 PROCESSING with create_react_agent: {message.content}")
 
-        final_response = None
+        # Create an empty message that we'll stream into
+        msg = cl.Message(content="")
+
         tool_calls_count = 0
+        final_response_content = ""
 
         # Stream through the agent execution
         async for chunk in agent.astream(input_messages, config=enhanced_config):
             logger.info(f"📦 CHUNK RECEIVED: {list(chunk.keys())}")
 
-            # Add handling for 'agent' key
+            # Handle different chunk types
             if "agent" in chunk:
                 agent_output = chunk["agent"]
-                logger.info(f"🤖 AGENT OUTPUT TYPE: {type(agent_output)}")
                 logger.info(f"🤖 AGENT OUTPUT: {agent_output}")
 
-                # Case 1: agent_output is an AIMessage directly
-                if isinstance(agent_output, AIMessage):
-                    if (
-                        hasattr(agent_output, "content")
-                        and isinstance(agent_output.content, str)
-                        and agent_output.content.strip()
-                        and not getattr(agent_output, "tool_calls", None)
-                    ):
-                        final_response = _clean_response_content(agent_output.content)
-                        logger.info(
-                            f"✅ FINAL RESPONSE FROM AGENT: {final_response[:100]}..."
-                        )
-                # Case 2: agent_output is a dict with 'messages'
-                elif isinstance(agent_output, dict) and "messages" in agent_output:
+                # Check if this chunk contains messages
+                if isinstance(agent_output, dict) and "messages" in agent_output:
                     messages = agent_output["messages"]
                     if messages:
                         last_message = messages[-1]
                         if (
+                            hasattr(last_message, "tool_calls")
+                            and last_message.tool_calls
+                        ):
+                            tool_calls_count += len(last_message.tool_calls)
+                            logger.info(
+                                f"🔧 Tool calls: {[call['name'] for call in last_message.tool_calls]}"
+                            )
+                        elif (
                             hasattr(last_message, "content")
                             and isinstance(last_message.content, str)
                             and last_message.content.strip()
                             and not getattr(last_message, "tool_calls", None)
                         ):
-                            final_response = _clean_response_content(
-                                last_message.content
-                            )
-                            logger.info(
-                                f"✅ FINAL RESPONSE FROM AGENT MESSAGES: {final_response[:100]}..."
-                            )
+                            # This is the final response from agent chunk - stream it token by token
+                            new_content = _clean_response_content(last_message.content)
 
-            # The agent returns the full conversation state
+                            # Only stream new content (avoiding duplicates)
+                            if new_content != final_response_content:
+                                # Calculate the difference and stream new tokens
+                                if len(new_content) > len(final_response_content):
+                                    new_tokens = new_content[
+                                        len(final_response_content) :
+                                    ]
+
+                                    # Stream the new tokens
+                                    for token in new_tokens:
+                                        await msg.stream_token(token)
+
+                                    final_response_content = new_content
+                                    logger.info(
+                                        f"✅ STREAMING: Added {len(new_tokens)} new tokens from agent chunk"
+                                    )
+
             elif "messages" in chunk:
                 messages = chunk["messages"]
                 if messages:
                     last_message = messages[-1]
                     logger.info(f"🤖 LAST MESSAGE TYPE: {type(last_message).__name__}")
 
-                    # Count tool calls
                     if hasattr(last_message, "tool_calls") and last_message.tool_calls:
                         tool_calls_count += len(last_message.tool_calls)
                         logger.info(
                             f"🔧 Tool calls: {[call['name'] for call in last_message.tool_calls]}"
                         )
 
-                    # Check if this is the final AI response (no tool calls)
                     elif (
                         hasattr(last_message, "content")
                         and isinstance(last_message.content, str)
                         and last_message.content.strip()
                         and not getattr(last_message, "tool_calls", None)
                     ):
-                        # Always update final_response with the latest AI content
-                        final_response = _clean_response_content(last_message.content)
-                        logger.info(
-                            f"✅ FINAL RESPONSE UPDATED: {final_response[:100]}..."
-                        )
+                        # This is the final response - stream it token by token
+                        new_content = _clean_response_content(last_message.content)
 
-        # Send the final response
-        if final_response:
-            await cl.Message(content=final_response, author="Assistant").send()
+                        # Only stream new content (avoiding duplicates)
+                        if new_content != final_response_content:
+                            # Calculate the difference and stream new tokens
+                            if len(new_content) > len(final_response_content):
+                                new_tokens = new_content[len(final_response_content) :]
+
+                                # Stream the new tokens
+                                for token in new_tokens:
+                                    await msg.stream_token(token)
+
+                                final_response_content = new_content
+                                logger.info(
+                                    f"✅ STREAMING: Added {len(new_tokens)} new tokens"
+                                )
+
+        # Final update to the message
+        if final_response_content:
+            msg.content = final_response_content
+            await msg.update()
             logger.info(
-                f"✅ Response sent successfully. Tool calls made: {tool_calls_count}"
+                f"✅ FINAL RESPONSE COMPLETE: {len(final_response_content)} characters streamed"
             )
         else:
-            # Fallback: Extract the last AI message from the final chunk
-            logger.warning("⚠️ No final response found - checking final chunk")
-            if "messages" in chunk:
-                messages = chunk["messages"]
-                for msg in reversed(messages):
-                    if (
-                        hasattr(msg, "content")
-                        and isinstance(msg.content, str)
-                        and msg.content.strip()
-                        and not getattr(msg, "tool_calls", None)
-                    ):
-                        final_response = _clean_response_content(msg.content)
-                        await cl.Message(
-                            content=final_response, author="Assistant"
-                        ).send()
-                        logger.info(
-                            f"🔄 Fallback response sent: {final_response[:100]}..."
-                        )
-                        break
-                else:
-                    # Ultimate fallback
-                    await cl.Message(
-                        content="I processed your request but couldn't generate a proper response. Please try again.",
-                        author="Assistant",
-                    ).send()
-                    logger.warning("⚠️ No valid response found in any message")
-            else:
-                await cl.Message(
-                    content="I processed your request but couldn't generate a proper response. Please try again.",
-                    author="Assistant",
-                ).send()
-                logger.warning("⚠️ No messages found in final chunk")
+            # Fallback if no final response was detected
+            await msg.stream_token(
+                "I apologize, but I couldn't generate a proper response. Please try again."
+            )
+            await msg.update()
+            logger.warning("⚠️ No final response detected - sent fallback message")
+
+        logger.info(
+            f"✅ Agent execution finished. Total tool calls made: {tool_calls_count}"
+        )
 
     except Exception as e:
         logger.error(f"❌ Error in create_react_agent execution: {e}", exc_info=True)
-        await cl.Message(
-            content=f"I apologize, but I encountered an error: {str(e)}",
-            author="Assistant",
-        ).send()
+        error_msg = cl.Message(content="")
+        error_text = f"I apologize, but I encountered an error: {str(e)}"
+        for token in error_text:
+            await error_msg.stream_token(token)
+        await error_msg.update()
 
 
 @cl.set_starters
@@ -356,6 +357,6 @@ async def set_starters(user: Optional[cl.User] = None):
 
 
 if __name__ == "__main__":
-    # The app is designed to be run with: chainlit run app_react.py
-    logger.info("🆕 Starting create_react_agent implementation (Phase 1)")
+    # The app is designed to be run with: chainlit run app_react_streaming.py
+    logger.info("🆕 Starting create_react_agent implementation with STREAMING ENABLED")
     pass

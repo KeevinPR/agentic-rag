@@ -68,7 +68,18 @@ LLM_CONFIG_GOOGLE = {
     "timeout": 60,
     "api_key_env": "GOOGLE_API_KEY",
 }
-
+LLM_CONFIG_GOOGLE_THINKING = {
+    "provider": "google",
+    "model": "gemini-2.5-flash-lite-preview-06-17",
+    "temperature": 0.5,
+    "max_tokens": 8192,
+    "timeout": 60,
+    "api_key_env": "GOOGLE_API_KEY",
+    "thinking_config": {
+        "thinking_budget": -1,  # -1 for dynamic thinking, or set specific token budget
+        "include_thoughts": True  # Set to True to see the model's reasoning process
+    }
+}
 # ChatAnthropic configuration (commented out)
 # LLM_CONFIG = {
 #     "model_name": "claude-3-haiku-20240307",
@@ -88,7 +99,7 @@ SEARCH_CONFIG = {
     "rerank_threshold": 3,
     "rrf_k": 60,
     "cross_encoder": {
-        "model_name": "cross-encoder/ms-marco-MiniLM-L6-v2",
+        # "model_name": "cross-encoder/ms-marco-MiniLM-L-6-v2", # Commented out to use Jina API reranker
         "min_candidates": 3,  # Minimum number of candidates to trigger reranking
         "score_threshold": 0.5,  # Minimum score to consider a result relevant
     },

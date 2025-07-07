@@ -18,6 +18,8 @@ import re
 import textwrap
 from typing import List, Optional, Dict, Any, Tuple
 from unidecode import unidecode
+import os
+import httpx
 
 from langchain_core.tools import tool
 from langchain_tavily import TavilySearch
@@ -30,13 +32,13 @@ from utils import (
 from prompts import (
     SQL_GENERATION_PROMPT,
 )
-from sentence_transformers import CrossEncoder
+# from sentence_transformers import CrossEncoder # This should be commented out.
 from pydantic import BaseModel
 
 logger = logging.getLogger(__name__)
 
-# Initialize the cross-encoder model once
-cross_encoder = CrossEncoder(SEARCH_CONFIG["cross_encoder"]["model_name"])
+# This line is causing the error and will be commented out.
+# cross_encoder = CrossEncoder(SEARCH_CONFIG["cross_encoder"]["model_name"])
 
 # Constants for web search formatting
 WRAP_WIDTH = 1000
@@ -871,51 +873,111 @@ def _parse_metadata(metadata) -> Dict:
 async def _perform_query_aware_reranking(
     query: str, candidate_docs: List[Dict]
 ) -> List[Dict]:
-    """🧠 Cross-encoder reranking with a fixed threshold for robustness."""
+    """🧠 Reranks documents using the Jina AI Reranker API for higher accuracy."""
 
-    threshold = 0.5  # Fixed threshold for simplicity and robustness
+    jina_api_key = os.environ.get("JINA_API_KEY")
+    if not jina_api_key:
+        logger.warning("🧠 JINA_API_KEY not found in .env. Skipping cloud reranking.")
+        return candidate_docs
+
+    api_url = "https://api.jina.ai/v1/rerank"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {jina_api_key}",
+    }
+
+    # The Jina API expects a list of strings for documents.
+    # See: https://jina.ai/news/how-to-build-article-recommendations-with-jina-reranker-api-only/
+    documents_to_rerank = [
+        f"{doc.get('metadata_context', '')}{doc['content']}" for doc in candidate_docs
+    ]
+
+    payload = {
+        "query": query,
+        "documents": documents_to_rerank,
+        "top_n": len(documents_to_rerank),
+        "model": "jina-reranker-v2-base-multilingual",  # Powerful multilingual model
+    }
 
     try:
-        # Prepare reranking pairs with enhanced context
-        rerank_pairs = [
-            (query, f"{doc['metadata_context']}{doc['content']}")
-            for doc in candidate_docs
-        ]
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            response = await client.post(api_url, headers=headers, json=payload)
+            response.raise_for_status()  # Raises an exception for 4XX/5XX responses
 
-        # Get reranking scores with timeout
-        rerank_scores = await asyncio.wait_for(
-            asyncio.to_thread(cross_encoder.predict, rerank_pairs), timeout=30.0
+        api_results = response.json()["results"]
+
+        # Create a map of the original document index to its new relevance score
+        rerank_scores = {res["index"]: res["relevance_score"] for res in api_results}
+
+        # Update candidate docs with the new scores from the API
+        for i, doc in enumerate(candidate_docs):
+            if i in rerank_scores:
+                doc["rerank_score"] = rerank_scores[i]
+
+        # Sort documents by the new relevance score, highest first
+        reranked_docs = sorted(
+            [doc for doc in candidate_docs if "rerank_score" in doc],
+            key=lambda x: x["rerank_score"],
+            reverse=True,
         )
 
-        # Apply scores and filter
-        filtered_docs = []
-        for i, doc in enumerate(candidate_docs):
-            score = float(rerank_scores[i])
-            doc["rerank_score"] = score
+        logger.info(
+            f"🧠 Jina Reranking complete. Re-ordered {len(reranked_docs)} documents."
+        )
+        return reranked_docs
 
-            if score >= threshold:
-                filtered_docs.append(doc)
-
-        if filtered_docs:
-            result = sorted(
-                filtered_docs, key=lambda x: x["rerank_score"], reverse=True
-            )
-            logger.info(
-                f"🧠 Reranking: {len(result)}/{len(candidate_docs)} above threshold {threshold}"
-            )
-            return result
-        else:
-            # If no results above threshold, return all with scores
-            logger.info(
-                f"🧠 No results above threshold {threshold}, returning all with scores"
-            )
-            return sorted(
-                candidate_docs, key=lambda x: x.get("rerank_score", 0), reverse=True
-            )
-
+    except httpx.HTTPStatusError as e:
+        logger.error(
+            f"🧠 Jina API request failed with status {e.response.status_code}: {e.response.text}"
+        )
+        return candidate_docs  # Return original order on API failure
     except Exception as e:
-        logger.error(f"🧠 Reranking failed: {e}")
+        logger.error(f"🧠 An unexpected error occurred during reranking: {e}")
         return candidate_docs
+
+    # --- OLD LOCAL RERANKER CODE (COMMENTED OUT) ---
+    # threshold = 0.5  # Fixed threshold for simplicity and robustness
+    # try:
+    #     # Prepare reranking pairs with enhanced context
+    #     rerank_pairs = [
+    #         (query, f"{doc['metadata_context']}{doc['content']}")
+    #         for doc in candidate_docs
+    #     ]
+    #
+    #     # Get reranking scores with timeout
+    #     rerank_scores = await asyncio.wait_for(
+    #         asyncio.to_thread(cross_encoder.predict, rerank_pairs), timeout=30.0
+    #     )
+    #
+    #     # Apply scores and filter
+    #     filtered_docs = []
+    #     for i, doc in enumerate(candidate_docs):
+    #         score = float(rerank_scores[i])
+    #         doc["rerank_score"] = score
+    #
+    #         if score >= threshold:
+    #             filtered_docs.append(doc)
+    #
+    #     if filtered_docs:
+    #         result = sorted(
+    #             filtered_docs, key=lambda x: x["rerank_score"], reverse=True
+    #         )
+    #         logger.info(
+    #             f"🧠 Reranking: {len(result)}/{len(candidate_docs)} above threshold {threshold}"
+    #         )
+    #         return result
+    #     else:
+    #         # If no results above threshold, return all with scores
+    #         logger.info(
+    #             f"🧠 No results above threshold {threshold}, returning all with scores"
+    #         )
+    #         return sorted(
+    #             candidate_docs, key=lambda x: x.get("rerank_score", 0), reverse=True
+    #         )
+    #
+    # except Exception as e:
+    #     logger.error(f"🧠 Reranking failed: {e}")
+    #     return candidate_docs
 
 
 def _select_diverse_results(candidate_docs: List[Dict], final_count: int) -> List[Dict]:

@@ -9,11 +9,13 @@ import re
 import textwrap
 from typing import List, Optional, Dict, Any, Tuple
 from unidecode import unidecode
+import httpx
+import os
 
 from langchain_core.tools import tool
 from langchain_tavily import TavilySearch
 import asyncio
-from config import SEARCH_CONFIG
+from config import SEARCH_CONFIG, LLM_CONFIG_GOOGLE
 from utils import (
     init_vector_stores,
     get_pg_pool,
@@ -21,13 +23,12 @@ from utils import (
 from prompts import (
     SQL_GENERATION_PROMPT,
 )
-from sentence_transformers import CrossEncoder
 from pydantic import BaseModel
 
 logger = logging.getLogger(__name__)
 
 # Initialize the cross-encoder model once
-cross_encoder = CrossEncoder(SEARCH_CONFIG["cross_encoder"]["model_name"])
+# cross_encoder = CrossEncoder(SEARCH_CONFIG["cross_encoder"]["model_name"])
 
 # Constants for web search formatting
 WRAP_WIDTH = 1000  # ~8-10 tweet-lengths
@@ -36,630 +37,6 @@ MAX_LIMIT = 50
 QUERY_TIMEOUT = 30
 
 
-# @tool
-# async def hybrid_search_tool(
-#     query: str,
-#     paper_title: Optional[str] = None,
-#     algorithm_names: Optional[List[str]] = None,
-#     is_latex_query: Optional[bool] = False,
-# ) -> str:
-#     """
-#      Enhanced hybrid semantic and algorithm search tool for the academic paper database.
-#     Uses RRF (Reciprocal Rank Fusion) with cross-encoder re-ranking for improved relevance.
-
-#     Args:
-#         query: The search query
-#         paper_title: Optional paper title to filter results to a specific paper (determined by LLM)
-#         algorithm_names: Only specific algorithm names contained in user query such as UMDA, PBIL, *EDA* etc. (determined by LLM)
-#         is_latex_query: User asking for formulas or equations (determined by LLM)
-
-#     Use this tool for:
-#     - General, open-ended, or semantic searches about EDAs
-#     - Questions containing formulas or algorithms
-#     - Paper-specific content searches when paper_id or paper_title is provided
-#     - Detailed content analysis of specific papers
-
-#     Examples:
-#     - "What are the main types of EDAs?"
-#     - "Explain the concept of Estimation of Distribution Algorithms"
-#     - "Show me the LaTeX code for UMDA"
-#     - "Can you expand the concept XX in paper YY?" (paper_id or paper_title)
-#     """
-#     try:
-#         logger.info(f"Starting enhanced hybrid search with query: {query}")
-#         if paper_title:
-#             logger.info(f"Filtering results to paper_title: {paper_title}")
-
-#         vector_store = init_vector_stores()
-
-#         # Use fixed weights for better reliability
-#         num_results: int = 10
-#         enable_reranking: bool = True
-#         semantic_weight = 0.8  # Higher weight for semantic search
-#         fts_weight = 0.2  # Lower weight for full-text search
-#         logger.info(
-#             f"Using fixed weights: semantic={semantic_weight:.2f}, fts={fts_weight:.2f}"
-#         )
-
-#         # Step 2: Enhanced Retrieval (retrieve more candidates for re-ranking)
-#         initial_candidates = min(
-#             num_results * SEARCH_CONFIG["initial_candidates_multiplier"],
-#             SEARCH_CONFIG["max_candidates"],
-#         )
-
-#         all_embedding_docs = {}
-#         all_fts_rows = []
-
-#         # Get database pool (reused)
-#         pool = await get_pg_pool()
-
-#         filter_dict = {}
-#         if paper_title:
-#             filter_dict["title"] = paper_title
-
-#         # Vector similarity search with paper filtering
-#         embedding_results = vector_store.similarity_search_with_score(
-#             f"query: {query}", k=initial_candidates, filter=filter_dict
-#         )
-#         # embedding_results = vector_store.similarity_search_with_score(
-#         #     query, k=initial_candidates, filter=filter_dict
-#         # )
-#         logger.info(f"Found {len(embedding_results)} results from vector search")
-#         for doc, score in embedding_results:
-#             chunk_id = doc.metadata["chunk_id"]
-#             # Apply paper filtering if specified
-#             if (
-#                 chunk_id not in all_embedding_docs
-#                 or score > all_embedding_docs[chunk_id][1]
-#             ):
-#                 all_embedding_docs[chunk_id] = (doc, score)
-
-#         # IMPROVED FTS SEARCH with better query processing and error handling
-#         await _perform_fts_search(
-#             pool,
-#             query,
-#             algorithm_names,
-#             is_latex_query,
-#             paper_title,
-#             initial_candidates,
-#             all_fts_rows,
-#         )
-
-#         logger.info(f"Found {len(all_embedding_docs)} unique vector results")
-#         logger.info(f"Found {len(all_fts_rows)} unique FTS results")
-
-#         # Step 3: RRF Scoring with Dynamic Weights
-#         logger.info("Calculating enhanced RRF scores...")
-#         embedding_ranks = {
-#             chunk_id: idx
-#             for idx, (chunk_id, _) in enumerate(all_embedding_docs.items())
-#         }
-#         fts_ranks = {row["id"]: idx for idx, row in enumerate(all_fts_rows)}
-
-#         rrf_k = SEARCH_CONFIG["rrf_k"]
-#         all_chunk_ids = set(all_embedding_docs.keys()) | set(fts_ranks.keys())
-#         rrf_scores = {}
-
-#         for chunk_id in all_chunk_ids:
-#             rank_embedding = embedding_ranks.get(chunk_id)
-#             rank_fts = fts_ranks.get(chunk_id)
-#             score = 0
-#             if rank_embedding is not None:
-#                 score += semantic_weight / (rrf_k + rank_embedding + 1)
-#             if rank_fts is not None:
-#                 score += fts_weight / (rrf_k + rank_fts + 1)
-#             rrf_scores[chunk_id] = score
-
-#         # Step 4: Get initial top candidates
-#         initial_top_chunks = sorted(
-#             rrf_scores.items(), key=lambda x: x[1], reverse=True
-#         )[:initial_candidates]
-#         initial_candidate_ids = [cid for cid, _ in initial_top_chunks]
-
-#         # Prepare candidate documents with improved error handling
-#         candidate_docs = await _prepare_candidate_docs(
-#             initial_top_chunks, all_embedding_docs, all_fts_rows
-#         )
-
-#         # Step 5: Cross-Encoder Re-ranking with better error handling
-#         if (
-#             enable_reranking
-#             and len(candidate_docs) >= SEARCH_CONFIG["cross_encoder"]["min_candidates"]
-#         ):
-#             candidate_docs = await _perform_reranking(query, candidate_docs)
-
-#         # Step 6: Select final results
-#         final_count = min(SEARCH_CONFIG["final_results_count"], len(candidate_docs))
-#         final_chunk_ids = [doc["id"] for doc in candidate_docs[:final_count]]
-
-#         results = []
-
-#         logger.info(
-#             f"Selecting top {final_count} results from {len(candidate_docs)} candidates"
-#         )
-#         for i, doc in enumerate(candidate_docs[:final_count]):
-#             score_info = f"RRF:{doc.get('score', 0):.3f}"
-#             if "rerank_score" in doc:
-#                 score_info += f", Rerank:{doc['rerank_score']:.3f}"
-
-#             logger.info(f"Result {i + 1}: {score_info}")
-
-#             formatted_content = f"Chunk {i + 1}:\n{doc['content']}\n"
-#             results.append(
-#                 {
-#                     "content": formatted_content,
-#                     "metadata": doc["metadata"],
-#                     "score": doc.get("rerank_score", doc.get("score", 0.0)),
-#                 }
-#             )
-
-#         # Step 7: Formula processing with improved placeholder handling
-#         await _process_formula_placeholders(results)
-
-#         # Step 8: Generate final output
-#         total_chars = sum(len(str(r)) for r in results)
-#         logger.info(
-#             f"Enhanced search complete: {len(results)} results, {total_chars} chars total"
-#         )
-
-#         final_output = (
-#             "Here are the top search results for your query:\n\n"
-#             + "\n".join([r["content"] for r in results])
-#         )
-
-#         _append_chunk_ids_to_json(query, initial_candidate_ids, final_chunk_ids)
-
-#         return final_output
-
-#     except Exception as e:
-#         logger.error(f"Error in enhanced hybrid_search_tool: {str(e)}", exc_info=True)
-#         raise
-
-
-# def _prepare_tsquery_term(term):
-#     """Prepare a term for use in PostgreSQL tsquery, handling phrases and special characters."""
-#     import re
-
-#     # Remove special characters that could break tsquery
-#     term = re.sub(r"[^\w\s]", " ", term)
-
-#     # Split multi-word terms and join with &
-#     words = [word.strip() for word in term.split() if word.strip()]
-
-#     if len(words) == 0:
-#         return None
-#     elif len(words) == 1:
-#         return words[0]
-#     else:
-#         # For phrases, join individual words with & to require all words
-#         return "(" + " & ".join(words) + ")"
-
-
-# async def _perform_fts_search(
-#     pool,
-#     query,
-#     algorithm_names,
-#     is_latex_query,
-#     paper_title,
-#     initial_candidates,
-#     all_fts_rows,
-# ):
-#     """Improved FTS search with better query processing and fallback strategies."""
-
-#     # Build common filter clauses
-#     formula_filter = (
-#         "AND cmetadata->>'contains_formula' = 'true'" if is_latex_query else ""
-#     )
-#     paper_filter = ""
-#     if paper_title:
-#         # Escape single quotes in paper title to prevent SQL injection
-#         escaped_title = paper_title.replace("'", "''")
-#         paper_filter = f"AND cmetadata->>'title' = '{escaped_title}'"
-
-#     if algorithm_names:
-#         prepared_terms = []
-#         for name in algorithm_names:
-#             term = _prepare_tsquery_term(name)
-#             if term:
-#                 prepared_terms.append(term)
-
-#         if prepared_terms:
-#             fts_query = " & ".join(prepared_terms)
-#             await _fts_algorithm_search_hybrid(
-#                 pool,
-#                 prepared_terms,
-#                 formula_filter,
-#                 paper_filter,
-#                 initial_candidates,
-#                 all_fts_rows,
-#             )
-
-#     # Strategy 2: Enhanced query-based search with multiple fallbacks
-#     await _fts_query_search(
-#         pool, query, formula_filter, paper_filter, initial_candidates, all_fts_rows
-#     )
-
-
-# def _filter_common_algorithm_names(algorithm_names):
-#     """Filter out overly common terms that don't provide discriminative value."""
-#     # Define terms that are too common in your EDA database
-#     OVERLY_COMMON_TERMS = {
-#         "eda",
-#         "edas",
-#         "estimation",
-#         "distribution",
-#         "algorithms",
-#         "estimation of distribution algorithms",
-#         "evolutionary",
-#         "optimization",
-#         "probabilistic",
-#         "model",
-#         "models",
-#     }
-
-#     filtered = []
-#     for name in algorithm_names:
-#         kw_lower = name.strip().lower()
-#         # Skip if it's an overly common term
-#         if kw_lower not in OVERLY_COMMON_TERMS:
-#             # Also skip very short terms (less than 3 characters) as they're often not useful
-#             if len(kw_lower) >= 3:
-#                 filtered.append(name.strip())
-
-#     logger.info(f"Filtered keywords: {len(algorithm_names)} -> {len(filtered)}")
-#     return filtered
-
-
-# async def _fts_algorithm_search_hybrid(
-#     pool,
-#     algorithm_names,
-#     formula_filter,
-#     paper_filter,
-#     initial_candidates,
-#     all_fts_rows,
-# ):
-#     """Perform FTS using provided algorithm names."""
-#     try:
-#         filtered_names = _filter_common_algorithm_names(algorithm_names)
-
-#         if not filtered_names:
-#             logger.info("No useful algorithm names after filtering, skipping search")
-#             return
-
-#         fts_query = " | ".join(
-#             term
-#             for term in (_prepare_tsquery_term(n) for n in filtered_names)
-#             if term is not None
-#         )
-
-#         logger.info(f"Performing algorithm FTS search: {fts_query}")
-
-#         async with pool.acquire() as conn:
-#             fts_rows = await conn.fetch(
-#                 f"""
-#                 SELECT id, document, cmetadata,
-#                     rank() OVER (
-#                         ORDER BY ts_rank_cd(
-#                         to_tsvector('english', document),
-#                         to_tsquery('english', $1)
-#                         ) DESC
-#                     ) AS fts_rank
-#                 FROM eda_rag_data_augmented_e5.langchain_pg_embedding
-#                 WHERE to_tsvector('english', document)
-#                     @@ to_tsquery('english', $1)
-#                     {formula_filter}
-#                     {paper_filter}
-#                 ORDER BY fts_rank ASC
-#                 LIMIT $2;
-#                 """,
-#                 fts_query,
-#                 initial_candidates,
-#             )
-
-#             logger.info(f"Algorithm FTS search returned {len(fts_rows)} results")
-#             _merge_fts_results(fts_rows, all_fts_rows)
-
-#     except Exception as e:
-#         logger.warning(f"Algorithm FTS search failed with query '{fts_query}': {e}")
-
-
-# async def _fts_query_search(
-#     pool, query, formula_filter, paper_filter, initial_candidates, all_fts_rows
-# ):
-#     """Perform FTS search using the raw query with multiple fallback strategies."""
-
-#     if not query.strip():
-#         return
-
-#     async with pool.acquire() as conn:
-#         # Strategy A: websearch_to_tsquery (most flexible)
-#         fts_rows = await _try_websearch_fts(
-#             conn, query, formula_filter, paper_filter, initial_candidates
-#         )
-
-#         if fts_rows:
-#             logger.info(f"Websearch FTS returned {len(fts_rows)} results")
-#             _merge_fts_results(fts_rows, all_fts_rows)
-#             return
-
-#         # Strategy B: plainto_tsquery (handles phrases better)
-#         fts_rows = await _try_plainto_fts(
-#             conn, query, formula_filter, paper_filter, initial_candidates
-#         )
-
-#         if fts_rows:
-#             logger.info(f"Plainto FTS returned {len(fts_rows)} results")
-#             _merge_fts_results(fts_rows, all_fts_rows)
-#             return
-
-#         # Strategy C: Token-based strict query (last resort)
-#         fts_rows = await _try_token_based_fts(
-#             conn, query, formula_filter, paper_filter, initial_candidates
-#         )
-
-#         if fts_rows:
-#             logger.info(f"Token-based FTS returned {len(fts_rows)} results")
-#             _merge_fts_results(fts_rows, all_fts_rows)
-
-
-# async def _try_websearch_fts(conn, query, formula_filter, paper_filter, limit):
-#     """Try websearch_to_tsquery approach."""
-#     try:
-#         return await conn.fetch(
-#             f"""
-#             SELECT id, document, cmetadata,
-#                 rank() OVER (
-#                     ORDER BY ts_rank_cd(
-#                     to_tsvector('english', document),
-#                     websearch_to_tsquery('english', $1)
-#                     ) DESC
-#                 ) AS fts_rank
-#             FROM eda_rag_data_augmented_e5.langchain_pg_embedding
-#             WHERE to_tsvector('english', document)
-#                 @@ websearch_to_tsquery('english', $1)
-#             {formula_filter}
-#             {paper_filter}
-#             ORDER BY fts_rank ASC
-#             LIMIT $2;
-#             """,
-#             query,
-#             limit,
-#         )
-#     except Exception as e:
-#         logger.warning(f"websearch_to_tsquery failed: {e}")
-#         return []
-
-
-# async def _try_plainto_fts(conn, query, formula_filter, paper_filter, limit):
-#     """Try plainto_tsquery approach - good for phrase queries."""
-#     try:
-#         return await conn.fetch(
-#             f"""
-#             SELECT id, document, cmetadata,
-#                 rank() OVER (
-#                     ORDER BY ts_rank_cd(
-#                     to_tsvector('english', document),
-#                     plainto_tsquery('english', $1)
-#                     ) DESC
-#                 ) AS fts_rank
-#             FROM eda_rag_data_augmented_e5.langchain_pg_embedding
-#             WHERE to_tsvector('english', document)
-#                 @@ plainto_tsquery('english', $1)
-#             {formula_filter}
-#             {paper_filter}
-#             ORDER BY fts_rank ASC
-#             LIMIT $2;
-#             """,
-#             query,
-#             limit,
-#         )
-#     except Exception as e:
-#         logger.warning(f"plainto_tsquery failed: {e}")
-#         return []
-
-
-# async def _try_token_based_fts(conn, query, formula_filter, paper_filter, limit):
-#     """Fallback token-based FTS with improved stop word handling."""
-#     try:
-#         # Enhanced stop words list
-#         stop_words = {
-#             "what",
-#             "are",
-#             "is",
-#             "the",
-#             "of",
-#             "and",
-#             "or",
-#             "to",
-#             "in",
-#             "for",
-#             "with",
-#             "how",
-#             "why",
-#             "when",
-#             "who",
-#             "which",
-#             "whose",
-#             "can",
-#             "you",
-#             "show",
-#             "me",
-#             "explain",
-#             "describe",
-#             "find",
-#             "get",
-#             "give",
-#             "tell",
-#         }
-
-#         fts_terms = []
-#         for term in query.lower().split():
-#             # More aggressive cleaning
-#             clean_term = "".join(c for c in term if c.isalnum())
-#             if (
-#                 clean_term
-#                 and len(clean_term) > 2
-#                 and clean_term not in stop_words
-#                 and not clean_term.isdigit()  # Skip pure numbers
-#             ):
-#                 # Use prefix matching for better recall
-#                 fts_terms.append(f"{clean_term}:*")
-
-#         if not fts_terms:
-#             logger.info("No valid tokens for FTS search")
-#             return []
-
-#         # Use OR logic instead of AND for better recall
-#         tsquery_str = " | ".join(fts_terms)
-#         logger.info(f"Token-based FTS query: {tsquery_str}")
-
-#         return await conn.fetch(
-#             f"""
-#             SELECT id, document, cmetadata,
-#                 rank() OVER (
-#                     ORDER BY ts_rank_cd(
-#                     to_tsvector('english', document),
-#                     to_tsquery('english', $1)
-#                     ) DESC
-#                 ) AS fts_rank
-#             FROM eda_rag_data_augmented_e5.langchain_pg_embedding
-#             WHERE to_tsvector('english', document)
-#                 @@ to_tsquery('english', $1)
-#             {formula_filter}
-#             {paper_filter}
-#             ORDER BY fts_rank ASC
-#             LIMIT $2;
-#             """,
-#             tsquery_str,
-#             limit,
-#         )
-#     except Exception as e:
-#         logger.warning(f"Token-based FTS failed: {e}")
-#         return []
-
-
-# def _merge_fts_results(new_rows, all_fts_rows):
-#     """Merge new FTS results into the main list, avoiding duplicates."""
-#     existing_ids = {row["id"] for row in all_fts_rows}
-#     for row in new_rows:
-#         if row["id"] not in existing_ids:
-#             all_fts_rows.append(row)
-#             existing_ids.add(row["id"])
-
-
-# async def _prepare_candidate_docs(initial_top_chunks, all_embedding_docs, all_fts_rows):
-#     """Prepare candidate documents with improved error handling."""
-#     candidate_docs = []
-
-#     for chunk_id, rrf_score in initial_top_chunks:
-#         doc, _ = all_embedding_docs.get(chunk_id, (None, None))
-
-#         if doc:
-#             metadata_context = _extract_metadata_context(doc.metadata)
-#             candidate_docs.append(
-#                 {
-#                     "id": chunk_id,
-#                     "content": doc.page_content,
-#                     "metadata_context": metadata_context,
-#                     "metadata": doc.metadata,
-#                     "score": rrf_score,
-#                     "source": "vector",
-#                 }
-#             )
-#         else:
-#             # Try to find in FTS results
-#             row = next((r for r in all_fts_rows if r["id"] == chunk_id), None)
-#             if row:
-#                 metadata = _parse_metadata(row["cmetadata"])
-#                 metadata_context = _extract_metadata_context(metadata)
-
-#                 candidate_docs.append(
-#                     {
-#                         "id": chunk_id,
-#                         "content": row["document"],
-#                         "metadata_context": metadata_context,
-#                         "metadata": metadata,
-#                         "score": rrf_score,
-#                         "source": "fts",
-#                     }
-#                 )
-
-#     return candidate_docs
-
-
-# def _extract_metadata_context(metadata):
-#     """Extract useful context from metadata."""
-#     if not isinstance(metadata, dict):
-#         return ""
-
-#     context_parts = []
-#     if "source" in metadata:
-#         context_parts.append(f"Source: {metadata['source']}")
-#     if "title" in metadata:
-#         context_parts.append(f"Title: {metadata['title']}")
-
-#     return "\n".join(context_parts) + ("\n" if context_parts else "")
-
-
-# def _parse_metadata(metadata):
-#     """Safely parse metadata that might be a string or dict."""
-#     if isinstance(metadata, dict):
-#         return metadata
-#     elif isinstance(metadata, str):
-#         try:
-#             return json.loads(metadata)
-#         except json.JSONDecodeError:
-#             logger.warning(f"Could not parse metadata as JSON: {metadata}")
-#             return {}
-#     else:
-#         return {}
-
-
-# async def _perform_reranking(query, candidate_docs):
-#     """Perform cross-encoder reranking with improved error handling."""
-#     logger.info("Performing cross-encoder re-ranking...")
-
-#     try:
-#         # Prepare pairs for the reranker
-#         rerank_pairs = [(query, doc["content"]) for doc in candidate_docs]
-
-#         # Get scores from cross-encoder with timeout protection
-#         rerank_scores = await asyncio.wait_for(
-#             asyncio.to_thread(cross_encoder.predict, rerank_pairs),
-#             timeout=30.0,  # 30 second timeout
-#         )
-
-#         # Process reranking results
-#         filtered_docs = []
-#         for i, doc in enumerate(candidate_docs):
-#             score = float(rerank_scores[i])
-#             print(score)
-#             if score >= SEARCH_CONFIG["cross_encoder"]["score_threshold"]:
-#                 doc["rerank_score"] = score
-#                 filtered_docs.append(doc)
-
-#         # Use filtered results if available, otherwise keep original
-#         if filtered_docs:
-#             result_docs = sorted(
-#                 filtered_docs, key=lambda x: x["rerank_score"], reverse=True
-#             )
-#             logger.info(
-#                 f"Cross-encoder re-ranking complete. Filtered to {len(result_docs)} relevant results"
-#             )
-#             return result_docs
-#         else:
-#             logger.info(
-#                 "No results met the relevance threshold, using original ranking"
-#             )
-#             return candidate_docs
-
-
-#     except asyncio.TimeoutError:
-#         logger.warning("Cross-encoder reranking timed out, using original ranking")
-#         return candidate_docs
-#     except Exception as e:
-#         logger.error(f"Cross-encoder reranking failed: {e}, using original ranking")
-#         return candidate_docs
 @tool
 async def hybrid_search_tool(
     raw_user_query: str,  # Add raw user query parameter
@@ -707,8 +84,8 @@ async def hybrid_search_tool(
         num_results = 5
 
         # Fixed weights based on Anthropic contextual embeddings best practices
-        semantic_weight = 0.8
-        fts_weight = 0.2
+        semantic_weight = 0
+        fts_weight = 1
 
         logger.info(
             f"Retrieval strategy: {semantic_candidates} semantic + {fts_candidates} FTS -> {final_rerank_candidates} rerank -> {num_results} final"
@@ -1219,22 +596,49 @@ def _parse_metadata(metadata):
 async def _perform_reranking(query, candidate_docs):
     """
     Improved cross-encoder reranking with better score handling.
+    Now uses Jina AI API instead of local CrossEncoder.
+    The old implementation is commented out below for reference.
     """
-    logger.info("Performing cross-encoder re-ranking...")
+    logger.info("Performing reranking using Jina AI API...")
+    jina_api_key = os.getenv("JINA_API_KEY")
+    if not jina_api_key:
+        logger.warning(
+            "JINA_API_KEY not found. Skipping reranking. For better results, please set the JINA_API_KEY environment variable."
+        )
+        return candidate_docs
 
     try:
-        # Prepare pairs for the reranker (query should be the original user intent)
-        rerank_pairs = [(query, doc["content"]) for doc in candidate_docs]
+        documents = [doc["content"] for doc in candidate_docs]
 
-        # Get scores from cross-encoder with timeout protection
-        rerank_scores = await asyncio.wait_for(
-            asyncio.to_thread(cross_encoder.predict, rerank_pairs),
-            timeout=30.0,
-        )
+        async with httpx.AsyncClient() as client:
+            response = await client.post(
+                "https://api.jina.ai/v1/rerank",
+                headers={
+                    "Authorization": f"Bearer {jina_api_key}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": "jina-reranker-v2-base-en",
+                    "query": query,
+                    "documents": documents,
+                    "top_n": len(documents),
+                },
+                timeout=30.0,
+            )
+            response.raise_for_status()
+            rerank_results = response.json()["results"]
 
         # Apply reranking scores to all documents
         for i, doc in enumerate(candidate_docs):
-            doc["rerank_score"] = float(rerank_scores[i])
+            # Find the corresponding result
+            res = next(
+                (r for r in rerank_results if r["index"] == i),
+                None,
+            )
+            if res:
+                doc["rerank_score"] = res["relevance_score"]
+            else:
+                doc["rerank_score"] = 0.0  # Should not happen if top_n is set correctly
 
         # Sort by rerank score (highest first)
         candidate_docs.sort(key=lambda x: x["rerank_score"], reverse=True)
@@ -1254,12 +658,59 @@ async def _perform_reranking(query, candidate_docs):
             logger.info("No docs above threshold, returning all reranked results")
             return candidate_docs
 
-    except asyncio.TimeoutError:
-        logger.warning("Cross-encoder reranking timed out, using original ranking")
+    except httpx.TimeoutException:
+        logger.warning("Jina AI reranking timed out, using original ranking")
+        return candidate_docs
+    except httpx.HTTPStatusError as e:
+        logger.error(
+            f"Jina AI reranking failed with HTTP status {e.response.status_code}: {e.response.text}, using original ranking"
+        )
         return candidate_docs
     except Exception as e:
-        logger.error(f"Cross-encoder reranking failed: {e}, using original ranking")
+        logger.error(f"Jina AI reranking failed: {e}, using original ranking")
         return candidate_docs
+
+    # --- OLD CrossEncoder logic is preserved below for reference ---
+    # logger.info("Performing cross-encoder re-ranking...")
+    #
+    # try:
+    #     # Prepare pairs for the reranker (query should be the original user intent)
+    #     rerank_pairs = [(query, doc["content"]) for doc in candidate_docs]
+    #
+    #     # Get scores from cross-encoder with timeout protection
+    #     rerank_scores = await asyncio.wait_for(
+    #         asyncio.to_thread(cross_encoder.predict, rerank_pairs),
+    #         timeout=30.0,
+    #     )
+    #
+    #     # Apply reranking scores to all documents
+    #     for i, doc in enumerate(candidate_docs):
+    #         doc["rerank_score"] = float(rerank_scores[i])
+    #
+    #     # Sort by rerank score (highest first)
+    #     candidate_docs.sort(key=lambda x: x["rerank_score"], reverse=True)
+    #
+    #     # Optional: Filter out very low relevance scores (adjust threshold as needed)
+    #     score_threshold = 0.5  # More lenient threshold to avoid over-filtering
+    #     filtered_docs = [
+    #         doc for doc in candidate_docs if doc["rerank_score"] >= score_threshold
+    #     ]
+    #
+    #     if filtered_docs:
+    #         logger.info(
+    #             f"Reranking complete: {len(filtered_docs)}/{len(candidate_docs)} above threshold {score_threshold}"
+    #         )
+    #         return filtered_docs
+    #     else:
+    #         logger.info("No docs above threshold, returning all reranked results")
+    #         return candidate_docs
+    #
+    # except asyncio.TimeoutError:
+    #     logger.warning("Cross-encoder reranking timed out, using original ranking")
+    #     return candidate_docs
+    # except Exception as e:
+    #     logger.error(f"Cross-encoder reranking failed: {e}, using original ranking")
+    #     return candidate_docs
 
 
 async def _process_formula_placeholders(results):
@@ -1676,6 +1127,7 @@ async def paper_database_tool(
     algorithm_names: Optional[List[str]] = None,
     paper_titles: Optional[List[str]] = None,
     author_surnames: Optional[List[str]] = None,
+    paper_ids: Optional[List[int]] = None,
     year: Optional[str] = None,
     paper_url: Optional[str] = None,
     count: bool = False,
@@ -1694,6 +1146,7 @@ async def paper_database_tool(
         algorithm_names: Optional list of algorithm names to filter by
         paper_titles: Optional list of paper titles to filter by
         author_surnames: Optional list of author surnames to filter by
+        paper_ids: Optional list of paper IDs to get specific papers and their URLs (useful for getting references from search results)
         year: Optional publication year to filter by
         paper_url: Optional paper URL to filter by
         count: Only if user is asking for a specific count of results (mutually exclusive with data)
@@ -1753,6 +1206,7 @@ async def paper_database_tool(
             algorithm_names=algorithm_names,
             paper_titles=paper_titles,
             author_surnames=author_surnames,
+            paper_ids=paper_ids,
             year=year,
             paper_url=paper_url,
             return_count_only=count,
@@ -1768,13 +1222,11 @@ async def paper_database_tool(
         # Generate SQL using LLM
         llm_prompt = SQL_GENERATION_PROMPT.format(**enhanced_params)
 
-        from langchain_nvidia_ai_endpoints import ChatNVIDIA
+        from langchain_google_genai import ChatGoogleGenerativeAI
 
-        llm = ChatNVIDIA(
-            model="meta/llama-3.3-70b-instruct",
-            temperature=0,
-            max_tokens=4096,
-            timeout=60,
+        llm = ChatGoogleGenerativeAI(
+            model=LLM_CONFIG_GOOGLE["model"],
+            temperature=LLM_CONFIG_GOOGLE["temperature"],
         )
 
         structured_sql_llm = llm.with_structured_output(SQLQuery)
