@@ -1318,7 +1318,7 @@ def _preprocess_academic_query(query: str) -> str:
 
 
 def _format_enhanced_web_results(
-    results: Dict, original_query: str, optimized_query: str = None
+    results: Dict, original_query: str, optimized_query: Optional[str] = None
 ) -> str:
     """🎨 Format web search results with enhanced academic styling."""
 
