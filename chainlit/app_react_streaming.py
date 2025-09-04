@@ -10,6 +10,7 @@ from typing import Optional, List, Dict, Any, Union
 import chainlit as cl
 from langchain_core.messages import HumanMessage, AIMessage
 import base64
+import re
 
 # Import existing modular components (reusing existing structure)
 from config import LOGGING_CONFIG, DB_CONNECTION
@@ -32,6 +33,10 @@ from prompts import (
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V4,
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_THINK,
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V6,
+    GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V7,
+    GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V8,
+    GEMINI_EDA_PROMPT_REACT_OPTIMIZED_FINAL,
+    GEMINI_EDA_PROMPT_REACT_OPTIMIZED_FINAL_TEST,
 )  # Use the updated system prompt
 
 # NEW: Import LangGraph's prebuilt agent
@@ -85,7 +90,7 @@ async def on_chat_start():
     agent = create_react_agent(
         model=llm,
         tools=tools,
-        prompt=GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V6,  # <-- Use the optimized multimodal prompt
+        prompt=GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V8,  # <-- Use the optimized multimodal prompt
         checkpointer=memory,  # <-- Use the persistent PostgreSQL memory
         version="v2",
         debug=True,
@@ -117,20 +122,24 @@ async def on_chat_start():
 @cl.on_chat_end
 async def on_chat_end():
     """Clean up resources when the chat session ends"""
-    try:
-        memory_cm = cl.user_session.get("memory_cm")
-        if memory_cm:
-            logger.info("🔌 Closing PostgreSQL memory context manager...")
-            await memory_cm.__aexit__(None, None, None)
-            logger.info("✅ PostgreSQL memory context manager closed successfully.")
-    except Exception as e:
-        logger.error(f"Error during chat end cleanup: {e}")
+    # Don't close the connection here - let it persist for the session
+    logger.info(
+        "Chat session ended, but keeping connection alive for potential reconnection"
+    )
+    pass
 
 
 @cl.on_stop
 async def on_stop():
     """Clean up resources when the application stops"""
     try:
+        # Close the memory context manager here
+        memory_cm = cl.user_session.get("memory_cm")
+        if memory_cm:
+            logger.info("🔌 Closing PostgreSQL memory context manager...")
+            await memory_cm.__aexit__(None, None, None)
+            logger.info("✅ PostgreSQL memory context manager closed successfully.")
+
         await close_pg_pool()
         logger.info("Application shutdown complete")
     except Exception as e:
