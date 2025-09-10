@@ -13,10 +13,11 @@ import base64
 import re
 
 # Import existing modular components (reusing existing structure)
-from config import LOGGING_CONFIG, DB_CONNECTION
+from config import LOGGING_CONFIG, DB_CONNECTION, DEMO_CONFIG
 from tools import hybrid_search_tool, paper_database_tool, web_search_tool
 from toolsv2 import enhanced_hybrid_search_tool, enhanced_web_search_tool
 from utils import init_llm, get_config, close_pg_pool
+from auth_demo import demo_auth
 
 # from tools import create_tools_with_llm
 from prompts import (
@@ -64,9 +65,72 @@ tools = [
 ]
 
 
+@cl.password_auth_callback
+def auth_callback(username: str, password: str):
+    """Callback de autenticación para demo temporal"""
+    
+    # Obtener IP del cliente (si está disponible)
+    client_ip = getattr(cl.context, 'client_ip', 'unknown')
+    
+    # Autenticar con el manager de demo
+    session_data = demo_auth.authenticate(username, password, client_ip)
+    
+    if session_data:
+        logger.info(f"✅ Usuario demo autenticado: {username} desde IP: {client_ip}")
+        
+        return cl.User(
+            identifier=session_data["user_id"],
+            metadata={
+                "session_id": session_data["session_id"],
+                "role": session_data["role"],
+                "permissions": session_data["permissions"],
+                "rate_limit": session_data["rate_limit"]
+            }
+        )
+    else:
+        logger.warning(f"❌ Intento de login fallido: {username} desde IP: {client_ip}")
+        return None
+
+
 @cl.on_chat_start
 async def on_chat_start():
     """Initialize the chat session with create_react_agent"""
+    
+    # Validar usuario autenticado
+    user = cl.user_session.get("user")
+    if not user:
+        await cl.Message(
+            content="❌ Error de autenticación. Por favor, vuelve a iniciar sesión.",
+            author="Sistema"
+        ).send()
+        return
+    
+    # Validar sesión activa
+    session_id = user.metadata.get("session_id")
+    if session_id:
+        session_data = demo_auth.validate_session(session_id)
+        if not session_data:
+            await cl.Message(
+                content="⏰ Tu sesión ha expirado. Por favor, vuelve a iniciar sesión.",
+                author="Sistema"
+            ).send()
+            return
+    
+    # Mostrar información de sesión demo
+    role = user.metadata.get("role", "unknown")
+    rate_limit = user.metadata.get("rate_limit", 0)
+    
+    await cl.Message(
+        content=f"""🎯 **Sesión Demo Activa**
+        
+**Usuario:** {user.identifier}
+**Rol:** {role}
+**Consultas por hora:** {rate_limit}
+**Válida hasta:** {DEMO_CONFIG['expires_at']}
+
+¡Bienvenido al sistema RAG de EDAs! Puedes hacer preguntas sobre algoritmos de estimación de distribución.""",
+        author="Sistema"
+    ).send()
 
     logger.info("🚀 Initializing create_react_agent with PostgreSQL memory...")
 
@@ -122,11 +186,18 @@ async def on_chat_start():
 @cl.on_chat_end
 async def on_chat_end():
     """Clean up resources when the chat session ends"""
+    # Cerrar sesión de usuario
+    user = cl.user_session.get("user")
+    if user:
+        session_id = user.metadata.get("session_id")
+        if session_id:
+            demo_auth.logout(session_id)
+            logger.info(f"Usuario {user.identifier} desconectado")
+    
     # Don't close the connection here - let it persist for the session
     logger.info(
         "Chat session ended, but keeping connection alive for potential reconnection"
     )
-    pass
 
 
 @cl.on_stop
