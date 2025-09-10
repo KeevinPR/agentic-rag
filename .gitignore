@@ -19,7 +19,9 @@ cat <<EOF > .gitignore
 # Ignore local Git backup folder (you renamed .git → .git_backup)
 chainlit/.git_backup/
 .chainlit/
-.env/
+.venv/
+chainlit/.venv/*
+chainlit/.chainlit/
 # Ignore config files and secrets
 *.env
 # .env
