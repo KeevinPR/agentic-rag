@@ -6,6 +6,7 @@ import unicodedata
 import re
 from typing import List, Dict, Any, Optional
 from langchain_core.messages import BaseMessage, HumanMessage, AIMessage
+from langchain_aws import ChatBedrockConverse
 from config import CONTEXT_CONFIG
 from pydantic import SecretStr
 from unidecode import unidecode
@@ -265,17 +266,47 @@ def init_vector_stores():
 
 def init_llm():
     """
-    Initialize the language model - Support both Anthropic Claude and ChatNvidia
+    Initialize the language model - Support Anthropic Claude, ChatNvidia, Google, and AWS Bedrock
     """
-    from config import LLM_CONFIG, LLM_CONFIG_NVIDIA, LLM_CONFIG_GOOGLE
+    from config import LLM_CONFIG, LLM_CONFIG_NVIDIA, LLM_CONFIG_GOOGLE, LLM_CONFIG_BEDROCK
     import os
 
     # Determine which provider to use
-    # You can set USE_NVIDIA=true in environment to switch providers
+    # You can set USE_NVIDIA=true, USE_GOOGLE=true, or USE_ANTHROPIC=true in environment to switch providers
     use_nvidia = os.getenv("USE_NVIDIA", "false").lower() == "true"
     use_google = os.getenv("USE_GOOGLE", "false").lower() == "true"
+    use_anthropic = os.getenv("USE_ANTHROPIC", "false").lower() == "true"
 
-    if use_google:
+    if use_anthropic:
+        # Use AWS Bedrock with Claude Sonnet 4
+        config = LLM_CONFIG_BEDROCK
+        model_id = os.getenv("BEDROCK_MODEL_ID", config["model_id"])
+        region = os.getenv("AWS_REGION", config["region"])
+        max_tokens = int(os.getenv("MAX_TOKENS", str(config["max_tokens"])))
+        temperature = float(os.getenv("TEMPERATURE", str(config["temperature"])))
+
+        logger.info(f"🤖 Initializing AWS Bedrock Claude with model: {model_id} in region: {region}")
+        
+        llm = ChatBedrockConverse(
+            model_id=model_id,
+            region_name=region,
+        ).bind(
+            # parámetros de generación por defecto
+            max_tokens=max_tokens,
+            temperature=temperature,
+        )
+
+        # (OPCIONAL) razonamiento extendido (pensamiento) — COSTE extra
+        if os.getenv("ENABLE_EXTENDED_THINKING", "false").lower() == "true":
+            budget = int(os.getenv("THINKING_BUDGET_TOKENS", "1024"))
+            # Bedrock/Anthropic: se pasa en additional_model_request_fields
+            llm = llm.bind(
+                additional_model_request_fields={
+                    "thinking": {"type": "enabled", "budget_tokens": budget}
+                }
+            )
+        return llm
+    elif use_google:
         # Use ChatGoogleGenerativeAI
         from langchain_google_genai import ChatGoogleGenerativeAI
 
