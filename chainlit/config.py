@@ -80,6 +80,16 @@ LLM_CONFIG_GOOGLE_THINKING = {
         "include_thoughts": True  # Set to True to see the model's reasoning process
     }
 }
+
+# AWS Bedrock Configuration for Claude Sonnet 4
+LLM_CONFIG_BEDROCK = {
+    "provider": "bedrock",
+    "model_id": "anthropic.claude-sonnet-4-20250514-v1:0",
+    "region": "us-east-1",
+    "temperature": 0.2,
+    "max_tokens": 1024,
+    "timeout": 60,
+}
 # ChatAnthropic configuration (commented out)
 # LLM_CONFIG = {
 #     "model_name": "claude-3-haiku-20240307",
