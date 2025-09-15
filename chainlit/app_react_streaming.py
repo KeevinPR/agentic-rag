@@ -67,16 +67,30 @@ tools = [
 
 @cl.password_auth_callback
 def auth_callback(username: str, password: str):
-    """Callback de autenticación para demo temporal"""
+    """Authentication callback for temporary demo"""
     
-    # Obtener IP del cliente (si está disponible)
-    client_ip = getattr(cl.context, 'client_ip', 'unknown')
+    # Get client IP from Nginx headers
+    import os
+    client_ip = 'unknown'
+    try:
+        # Try to get the real IP from headers passed by Nginx
+        if hasattr(cl.context, 'request'):
+            headers = getattr(cl.context.request, 'headers', {})
+            client_ip = (
+                headers.get('X-Real-IP') or 
+                headers.get('X-Forwarded-For', '').split(',')[0].strip() or
+                headers.get('X-Client-IP') or
+                getattr(cl.context.request, 'client', {}).get('host', 'unknown')
+            )
+    except Exception as e:
+        logger.debug(f"Could not get client IP: {e}")
+        client_ip = 'unknown'
     
-    # Autenticar con el manager de demo
+    # Authenticate with demo manager
     session_data = demo_auth.authenticate(username, password, client_ip)
     
     if session_data:
-        logger.info(f"✅ Usuario demo autenticado: {username} desde IP: {client_ip}")
+        logger.info(f"✅ Demo user authenticated: {username} from IP: {client_ip}")
         
         return cl.User(
             identifier=session_data["user_id"],
@@ -88,7 +102,7 @@ def auth_callback(username: str, password: str):
             }
         )
     else:
-        logger.warning(f"❌ Intento de login fallido: {username} desde IP: {client_ip}")
+        logger.warning(f"❌ Failed login attempt: {username} from IP: {client_ip}")
         return None
 
 
@@ -96,40 +110,40 @@ def auth_callback(username: str, password: str):
 async def on_chat_start():
     """Initialize the chat session with create_react_agent"""
     
-    # Validar usuario autenticado
+    # Validate authenticated user
     user = cl.user_session.get("user")
     if not user:
         await cl.Message(
-            content="❌ Error de autenticación. Por favor, vuelve a iniciar sesión.",
-            author="Sistema"
+            content="❌ Authentication error. Please log in again.",
+            author="System"
         ).send()
         return
     
-    # Validar sesión activa
+    # Validate active session
     session_id = user.metadata.get("session_id")
     if session_id:
         session_data = demo_auth.validate_session(session_id)
         if not session_data:
             await cl.Message(
-                content="⏰ Tu sesión ha expirado. Por favor, vuelve a iniciar sesión.",
-                author="Sistema"
+                content="⏰ Your session has expired. Please log in again.",
+                author="System"
             ).send()
             return
     
-    # Mostrar información de sesión demo
+    # Show demo session information
     role = user.metadata.get("role", "unknown")
     rate_limit = user.metadata.get("rate_limit", 0)
     
     await cl.Message(
-        content=f"""🎯 **Sesión Demo Activa**
+        content=f"""🎯 **Active Demo Session**
         
-**Usuario:** {user.identifier}
-**Rol:** {role}
-**Consultas por hora:** {rate_limit}
-**Válida hasta:** {DEMO_CONFIG['expires_at']}
+**User:** {user.identifier}
+**Role:** {role}
+**Queries per hour:** {rate_limit}
+**Valid until:** {DEMO_CONFIG['expires_at']}
 
-¡Bienvenido al sistema RAG de EDAs! Puedes hacer preguntas sobre algoritmos de estimación de distribución.""",
-        author="Sistema"
+Welcome to the EDA RAG system! You can ask questions about Estimation of Distribution Algorithms.""",
+        author="System"
     ).send()
 
     logger.info("🚀 Initializing create_react_agent with PostgreSQL memory...")
@@ -186,13 +200,13 @@ async def on_chat_start():
 @cl.on_chat_end
 async def on_chat_end():
     """Clean up resources when the chat session ends"""
-    # Cerrar sesión de usuario
+    # Close user session
     user = cl.user_session.get("user")
     if user:
         session_id = user.metadata.get("session_id")
         if session_id:
             demo_auth.logout(session_id)
-            logger.info(f"Usuario {user.identifier} desconectado")
+            logger.info(f"User {user.identifier} disconnected")
     
     # Don't close the connection here - let it persist for the session
     logger.info(
