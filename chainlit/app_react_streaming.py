@@ -11,6 +11,7 @@ import chainlit as cl
 from langchain_core.messages import HumanMessage, AIMessage
 import base64
 import re
+import time
 
 # Import existing modular components (reusing existing structure)
 from config import LOGGING_CONFIG, DB_CONNECTION, DEMO_CONFIG
@@ -18,6 +19,8 @@ from tools import hybrid_search_tool, paper_database_tool, web_search_tool
 from toolsv2 import enhanced_hybrid_search_tool, enhanced_web_search_tool
 from utils import init_llm, get_config, close_pg_pool
 from auth_demo import demo_auth
+from warmup import get_warmup_manager, stop_warmup_manager
+from cache import get_response_cache, is_cacheable_query, clear_response_cache
 
 # from tools import create_tools_with_llm
 from prompts import (
@@ -36,6 +39,7 @@ from prompts import (
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V6,
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V7,
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V8,
+    GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V8_EFFICIENT,
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_FINAL,
     GEMINI_EDA_PROMPT_REACT_OPTIMIZED_FINAL_TEST,
 )  # Use the updated system prompt
@@ -168,7 +172,7 @@ Welcome to the EDA RAG system! You can ask questions about Estimation of Distrib
     agent = create_react_agent(
         model=llm,
         tools=tools,
-        prompt=GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V8,  # <-- Use the optimized multimodal prompt
+        prompt=GEMINI_EDA_PROMPT_REACT_OPTIMIZED_V8_EFFICIENT,  # <-- Use the EFFICIENT prompt
         checkpointer=memory,  # <-- Use the persistent PostgreSQL memory
         version="v2",
         debug=True,
@@ -193,8 +197,18 @@ Welcome to the EDA RAG system! You can ask questions about Estimation of Distrib
     config = {"configurable": {"thread_id": thread_id}}
     cl.user_session.set("config", config)
 
+    # ⚡ Initialize and start warmup manager for Bedrock
+    warmup_manager = get_warmup_manager(llm)
+    cl.user_session.set("warmup_manager", warmup_manager)
+    
+    # Start the warmup scheduler in the background
+    import asyncio
+    warmup_task = asyncio.create_task(warmup_manager.start_warmup_scheduler())
+    cl.user_session.set("warmup_task", warmup_task)
+
     logger.info("✅ create_react_agent initialized successfully")
     logger.info(f"📊 Tools available: {[tool.name for tool in tools]}")
+    logger.info("🔥 Bedrock warmup manager started")
 
 
 @cl.on_chat_end
@@ -208,6 +222,15 @@ async def on_chat_end():
             demo_auth.logout(session_id)
             logger.info(f"User {user.identifier} disconnected")
     
+    # Stop warmup manager for this session
+    warmup_manager = cl.user_session.get("warmup_manager")
+    if warmup_manager:
+        warmup_manager.stop_warmup_scheduler()
+    
+    warmup_task = cl.user_session.get("warmup_task")
+    if warmup_task:
+        warmup_task.cancel()
+
     # Don't close the connection here - let it persist for the session
     logger.info(
         "Chat session ended, but keeping connection alive for potential reconnection"
@@ -225,6 +248,12 @@ async def on_stop():
             await memory_cm.__aexit__(None, None, None)
             logger.info("✅ PostgreSQL memory context manager closed successfully.")
 
+        # Stop global warmup manager
+        stop_warmup_manager()
+        
+        # Clear response cache
+        clear_response_cache()
+        
         await close_pg_pool()
         logger.info("Application shutdown complete")
     except Exception as e:
@@ -241,16 +270,47 @@ def _clean_response_content(content: str) -> str:
 @cl.on_message
 async def on_message(message: cl.Message):
     """Handle incoming user messages using create_react_agent with proper streaming"""
+    # ⏱️ TIMING: Start del request completo
+    start_time = time.time()
+    logger.info(f"⏱️ [TIMING] REQUEST START: {time.strftime('%H:%M:%S')} - User message: {message.content}")
+    
     agent = cl.user_session.get("agent")
     config = cl.user_session.get("config")
+    warmup_manager = cl.user_session.get("warmup_manager")
 
     if not agent or not config:
         await cl.Message(
             content="Error: Session not properly initialized. Please refresh."
         ).send()
         return
+    
+    # ⚡ Ensure model is warm before processing request
+    if warmup_manager:
+        await warmup_manager.ensure_warm()
 
     logger.info(f"👤 USER MESSAGE: {message.content}")
+
+    # ⚡ Check cache for repeated queries (only for simple, cacheable queries)
+    cache = get_response_cache()
+    cached_response = None
+    
+    if is_cacheable_query(message.content):
+        cached_response = cache.get(message.content)
+        if cached_response:
+            # Return cached response immediately
+            cache_msg = cl.Message(content="")
+            
+            # Stream the cached response token by token for consistency
+            for token in cached_response:
+                await cache_msg.stream_token(token)
+            
+            await cache_msg.update()
+            
+            # ⏱️ TIMING: Cache hit
+            end_time = time.time()
+            total_time = end_time - start_time
+            logger.info(f"⏱️ [TIMING] CACHE HIT: {total_time:.2f}s - Returned cached response")
+            return
 
     # --- Multimodal Input Processing ---
     content_parts: List[Union[str, Dict[str, Any]]] = [
@@ -308,6 +368,11 @@ async def on_message(message: cl.Message):
     }
 
     try:
+        # ⏱️ TIMING: Antes de llamar al agente
+        agent_start_time = time.time()
+        prep_time = agent_start_time - start_time
+        logger.info(f"⏱️ [TIMING] PREP COMPLETE: {prep_time:.2f}s - Starting agent processing")
+        
         logger.info(f"🚀 PROCESSING with create_react_agent: {message.content}")
 
         # Create an empty message that we'll stream into
@@ -315,9 +380,17 @@ async def on_message(message: cl.Message):
 
         tool_calls_count = 0
         final_response_content = ""
+        first_chunk_time = None
+        first_tool_time = None
+        first_response_time = None
 
         # Stream through the agent execution
         async for chunk in agent.astream(input_messages, config=enhanced_config):
+            # ⏱️ TIMING: Primer chunk recibido
+            if first_chunk_time is None:
+                first_chunk_time = time.time()
+                time_to_first_chunk = first_chunk_time - agent_start_time
+                logger.info(f"⏱️ [TIMING] FIRST CHUNK: {time_to_first_chunk:.2f}s after agent start")
             logger.info(f"📦 CHUNK RECEIVED: {list(chunk.keys())}")
 
             # Handle different chunk types
@@ -334,6 +407,12 @@ async def on_message(message: cl.Message):
                             hasattr(last_message, "tool_calls")
                             and last_message.tool_calls
                         ):
+                            # ⏱️ TIMING: Primera tool call
+                            if first_tool_time is None:
+                                first_tool_time = time.time()
+                                time_to_first_tool = first_tool_time - agent_start_time
+                                logger.info(f"⏱️ [TIMING] FIRST TOOL CALL: {time_to_first_tool:.2f}s after agent start")
+                            
                             tool_calls_count += len(last_message.tool_calls)
                             logger.info(
                                 f"🔧 Tool calls: {[call['name'] for call in last_message.tool_calls]}"
@@ -344,6 +423,12 @@ async def on_message(message: cl.Message):
                             and last_message.content.strip()
                             and not getattr(last_message, "tool_calls", None)
                         ):
+                            # ⏱️ TIMING: Primera respuesta final
+                            if first_response_time is None:
+                                first_response_time = time.time()
+                                time_to_first_response = first_response_time - agent_start_time
+                                logger.info(f"⏱️ [TIMING] FIRST RESPONSE: {time_to_first_response:.2f}s after agent start")
+                            
                             # This is the final response from agent chunk - stream it token by token
                             new_content = _clean_response_content(last_message.content)
 
@@ -371,6 +456,12 @@ async def on_message(message: cl.Message):
                     logger.info(f"🤖 LAST MESSAGE TYPE: {type(last_message).__name__}")
 
                     if hasattr(last_message, "tool_calls") and last_message.tool_calls:
+                        # ⏱️ TIMING: Primera tool call (en caso de que no se haya detectado antes)
+                        if first_tool_time is None:
+                            first_tool_time = time.time()
+                            time_to_first_tool = first_tool_time - agent_start_time
+                            logger.info(f"⏱️ [TIMING] FIRST TOOL CALL: {time_to_first_tool:.2f}s after agent start")
+                        
                         tool_calls_count += len(last_message.tool_calls)
                         logger.info(
                             f"🔧 Tool calls: {[call['name'] for call in last_message.tool_calls]}"
@@ -382,6 +473,12 @@ async def on_message(message: cl.Message):
                         and last_message.content.strip()
                         and not getattr(last_message, "tool_calls", None)
                     ):
+                        # ⏱️ TIMING: Primera respuesta final (en caso de que no se haya detectado antes)
+                        if first_response_time is None:
+                            first_response_time = time.time()
+                            time_to_first_response = first_response_time - agent_start_time
+                            logger.info(f"⏱️ [TIMING] FIRST RESPONSE: {time_to_first_response:.2f}s after agent start")
+                        
                         # This is the final response - stream it token by token
                         new_content = _clean_response_content(last_message.content)
 
@@ -400,10 +497,20 @@ async def on_message(message: cl.Message):
                                     f"✅ STREAMING: Added {len(new_tokens)} new tokens"
                                 )
 
+        # ⏱️ TIMING: Request completo terminado
+        end_time = time.time()
+        total_time = end_time - start_time
+        agent_time = end_time - agent_start_time
+        
         # Final update to the message
         if final_response_content:
             msg.content = final_response_content
             await msg.update()
+            
+            # ⚡ Cache the response if it's cacheable
+            if is_cacheable_query(message.content) and len(final_response_content) > 50:
+                cache.put(message.content, final_response_content)
+            
             logger.info(
                 f"✅ FINAL RESPONSE COMPLETE: {len(final_response_content)} characters streamed"
             )
@@ -414,6 +521,27 @@ async def on_message(message: cl.Message):
             )
             await msg.update()
             logger.warning("⚠️ No final response detected - sent fallback message")
+
+        # ⏱️ TIMING: Resumen completo de tiempos
+        logger.info(f"⏱️ [TIMING SUMMARY] TOTAL REQUEST: {total_time:.2f}s")
+        logger.info(f"⏱️ [TIMING SUMMARY] PREP TIME: {prep_time:.2f}s")
+        logger.info(f"⏱️ [TIMING SUMMARY] AGENT TIME: {agent_time:.2f}s")
+        if first_chunk_time:
+            logger.info(f"⏱️ [TIMING SUMMARY] TIME TO FIRST CHUNK: {first_chunk_time - agent_start_time:.2f}s")
+        if first_tool_time:
+            logger.info(f"⏱️ [TIMING SUMMARY] TIME TO FIRST TOOL: {first_tool_time - agent_start_time:.2f}s")
+        if first_response_time:
+            logger.info(f"⏱️ [TIMING SUMMARY] TIME TO FIRST RESPONSE: {first_response_time - agent_start_time:.2f}s")
+
+        # 📊 Performance metrics
+        tokens_per_second = len(final_response_content) / agent_time if agent_time > 0 else 0
+        logger.info(f"📊 [METRICS] RESPONSE LENGTH: {len(final_response_content)} chars")
+        logger.info(f"📊 [METRICS] THROUGHPUT: {tokens_per_second:.1f} chars/sec")
+        logger.info(f"📊 [METRICS] TOOL CALLS: {tool_calls_count}")
+        
+        # 💾 Cache statistics
+        cache_stats = cache.stats()
+        logger.info(f"💾 [CACHE] Entries: {cache_stats['total_entries']}, Hits: {cache_stats['total_hits']}")
 
         logger.info(
             f"✅ Agent execution finished. Total tool calls made: {tool_calls_count}"
