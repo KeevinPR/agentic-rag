@@ -104,10 +104,10 @@ ENHANCED_SEARCH_CONFIG = {
     # },
     "multi_strategy": {
         "enabled": True,
-        "semantic_candidates": 25,
-        "fts_candidates": 15,
-        "rerank_candidates": 20,
-        "final_results": 5,
+        "semantic_candidates": 10,
+        "fts_candidates": 12,
+        "rerank_candidates": 10,
+        "final_results": 1,
         "diversity_threshold": 0.85,
     },
 }
@@ -241,7 +241,27 @@ async def enhanced_hybrid_search_tool(
             processed_results, len(all_embedding_docs), len(all_fts_rows)
         )
 
-        # Step 13: Log Enhanced Search Metadata
+        # Step 13: Apply Context Enhancement (Industry Standard RAG Improvement)
+        try:
+            from context_enhancement import enhance_rag_response
+            # Convert processed results to format expected by context enhancer
+            search_results = []
+            for result in processed_results:
+                search_results.append({
+                    'id': result.get('id', ''),
+                    'content': result.get('content', ''),
+                    'metadata': result.get('metadata', {}),
+                    'score': result.get('score', 0.0)
+                })
+            
+            # Apply context-aware enhancement
+            output = enhance_rag_response(search_results, raw_user_query)
+            
+        except Exception as e:
+            logger.warning(f"Context enhancement failed, using standard output: {e}")
+            # Fallback to standard output if enhancement fails
+
+        # Step 14: Log Enhanced Search Metadata
         _log_enhanced_search_metadata(llm_query, top_candidates, final_results)
 
         return output
